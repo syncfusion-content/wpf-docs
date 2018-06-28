@@ -330,7 +330,7 @@ Description
 
 <tr>
 <td>
-[SfTreeGrid.AllowDragginRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html)
+[SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html)
 </td>
 <td>
 Gets or sets whether end-users can drag the nodes in SfTreeGrid.
