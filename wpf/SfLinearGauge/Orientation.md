@@ -17,17 +17,16 @@ The `LinearGauge` control supports horizontal and vertical orientations. By defa
 
     <gauge:SfLinearGauge Orientation="Vertical">
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242"
+    ScaleBarSize="10" MinorTicksPerInterval="3">
 
-                </gauge:LinearScale>
+    </gauge:LinearScale>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 

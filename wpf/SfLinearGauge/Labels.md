@@ -21,15 +21,14 @@ The foreground of the label is customized by setting the `LabelStroke` of the li
 
     <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="Purple"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" />
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="Purple"
+    ScaleBarSize="10" MinorTicksPerInterval="3" />
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -69,21 +68,19 @@ The label font can be customized using the `LabelSize`, `FontFamily`, and `FontS
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale FontFamily="Monotype Corsiva" 
-                                   FontSize="15" FontStyle="Italic" LabelOffset="15"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242" LabelSize="20"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
+    <gauge:LinearScale FontFamily="Monotype Corsiva"  FontSize="15" FontStyle="Italic" LabelOffset="15"
+    ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242" LabelSize="20"
+    ScaleBarSize="10" MinorTicksPerInterval="3">
 
-                </gauge:LinearScale>
+    </gauge:LinearScale>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -126,24 +123,23 @@ The label font can be customized using the `LabelSize`, `FontFamily`, and `FontS
 The labels in the scale can be placed above or below the linear scale by choosing the following options available in the `LabelPosition` property. The default value of `LabelPosition` property is below.
 
 1.	Above
+
 2.	Below (Default)
 
 {% tabs %}
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale LabelPosition="Above"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242" 
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" />
+    <gauge:LinearScale LabelPosition="Above"ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+    MinorTickStroke="Gray" LabelStroke="#424242"  ScaleBarSize="10" MinorTicksPerInterval="3" />
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -187,18 +183,16 @@ The `LabelPostfix` property allows to postfix the values to scale labels.
 
 {% highlight xml %}
 
-      <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale Minimum="0" Maximum="50"  LabelPostfix="%" Interval="10"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="0" />
+    <gauge:LinearScale Minimum="0" Maximum="50"  LabelPostfix="%" Interval="10" ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242"
+    ScaleBarSize="10" MinorTicksPerInterval="0" />
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -246,24 +240,22 @@ The `LabelPrefix` property allows to prefix the values to scale labels.
 
     <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale Minimum="0" Maximum="50"  LabelPrefix="$" Interval="10"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242" 
-                                   ScaleBarSize="10" MinorTicksPerInterval="0">
+    <gauge:LinearScale Minimum="0" Maximum="50"  LabelPrefix="$" Interval="10"  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242" 
+    ScaleBarSize="10" MinorTicksPerInterval="0">
 
-                </gauge:LinearScale>
+    </gauge:LinearScale>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfLinearGauge sfLinearGauge = new SfLinearGauge();
+           SfLinearGauge sfLinearGauge = new SfLinearGauge();
 
             LinearScale linearScale = new LinearScale();
 
@@ -306,19 +298,17 @@ Labels visibility can be customized using the `LabelVisibility` property of line
 
     <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale TickPosition="Cross" LabelVisibility="Collapsed"
-                                    MajorTickSize="20" MinorTickSize="9"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Black"
-                                   MinorTickStroke="Black" LabelStroke="#424242"
-                                   ScaleBarSize="40" MinorTicksPerInterval="3">
+    <gauge:LinearScale TickPosition="Cross" LabelVisibility="Collapsed" MajorTickSize="20" MinorTickSize="9"
+    ScaleBarStroke="#E0E0E0" MajorTickStroke="Black" MinorTickStroke="Black" LabelStroke="#424242"
+    ScaleBarSize="40" MinorTicksPerInterval="3">
 
-                </gauge:LinearScale>
+    </gauge:LinearScale>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
