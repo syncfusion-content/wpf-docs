@@ -13,7 +13,7 @@ Follow the below steps to define the row template,
 	* Define data template for the [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html) property.
 	* Then add [TemplateViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html) to the [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDefinition.html). 
 
-N> You can bind the row data using the Data.PropertyName (where data is the underlying object bound).
+You can bind the row data using the Data.PropertyName (where data is the underlying object bound).
 
 {% tabs %}
 {% highlight xaml %}
