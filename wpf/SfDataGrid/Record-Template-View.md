@@ -1,6 +1,6 @@
 #RecordTemplateView
 
-SfDataGrid provides support to represent the additional information in a custom view, below each row using [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html). You can expand or collapse RowTemplate view by using an expander in a row or programmatically. You can load any WPF controls to show more information below every row using [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html).
+SfDataGrid provides support to represent the additional information in a custom view, below each row using [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html) property. You can expand or collapse RowTemplate view by using an expander in a row or programmatically. You can load any WPF controls to show more information below every row using [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html) property.
 
 ![](Record_Template_View_images/Record-TemplateView_Img1.png)
 
@@ -119,7 +119,7 @@ You can define Record Template View using [DetailsViewDefinition](http://help.sy
 
 ## Defining RowTemplateSelector
 
-You can use [DataTemplateSelector](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx) to set custom template view for particular row based on data. You can set different templates to each row by using [TemplateViewDefinition.RowTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplateSelector.html)
+You can use [DataTemplateSelector](https://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx) class to set custom template view for particular row based on data. You can set different templates to each row by using [TemplateViewDefinition.RowTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplateSelector.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -278,7 +278,7 @@ Arrange the template for the ViewPortHeight when [RowTemplate](http://help.syncf
 
 ## Keyboard Navigation support for DetailsViewTemplate
 
-In SfDataGrid, by Default, you can navigate from parent row to DetailsViewTemplate and vice versa using Tab key. You can also restrict tab key navigation from parent to DetailsViewTemplate by setting [TemplateViewDefinition.TemplateNavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~TemplateNavigationMode.html) to `ExcludeTemplateRow`.
+In SfDataGrid, by Default, you can navigate from parent row to DetailsViewTemplate and vice versa using Tab key. You can also restrict tab key navigation from parent to DetailsViewTemplate by setting [TemplateViewDefinition.TemplateNavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~TemplateNavigationMode.html) property value to `ExcludeTemplateRow`.
 
 {% tabs %}
 {% highlight xaml %}
