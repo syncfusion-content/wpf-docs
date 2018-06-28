@@ -1835,23 +1835,6 @@ Syncfusion.Shared.WPF
 </tr>
 </table>
 
-## SpellChecker
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.Shared.WPF
-</td>
-<td> 
-Syncfusion.Shared.WPF
-</td>
-</tr>
-</table>
-
 ## SplitButton
 
 <table>
