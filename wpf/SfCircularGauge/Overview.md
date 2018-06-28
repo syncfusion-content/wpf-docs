@@ -17,8 +17,11 @@ The [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfu
 The [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) is a composite UI element with the following subparts:
 
 * Scales
+
 * Ranges
+
 * Pointers
+
 * Header
 
 The circular gauge control is highly customizable with variety of simple APIs to modify its basic look and feel. You can position the ranges, ticks, labels, and range pointers as needed.

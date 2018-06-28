@@ -23,15 +23,23 @@ A needle pointer contains two parts, a needle and a pointer cap, that can be pla
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="NeedlePointer"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="NeedlePointer"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -61,23 +69,34 @@ The appearance of the needle pointer can be customized using the `NeedlePointerT
 The `NeedlePointerType` is an `enum` property that includes the following options:
 
 1.	Rectangle
+
 2.	Triangle
+
 3.	Tapered
+
 4.	Arrow
 
 {% tabs %}
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -111,22 +130,30 @@ The length of a needle is controlled using the `NeedleLengthFactor` property. Th
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle" NeedlePointerStroke="DeepSkyBlue" PointerCapDiameter="20" PointerCapStroke="DeepSkyBlue"
-                                               NeedleLengthFactor="0.5" NeedlePointerStrokeThickness="10"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle" NeedlePointerStroke="DeepSkyBlue"     PointerCapDiameter="20" PointerCapStroke="DeepSkyBlue"
+    NeedleLengthFactor="0.5" NeedlePointerStrokeThickness="10"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 CircularScale mainscale = new CircularScale();
 
@@ -164,17 +191,25 @@ The visibility of the needle pointer can be set using the `NeedlePointerVisibili
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
 
-        {% endhighlight %}
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -205,14 +240,22 @@ The range pointer is an accenting line or shaded background range that can be pl
 {% highlight xml %}
 
     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="RangePointer" Value="50" />
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="RangePointer" Value="50" />
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -246,15 +289,23 @@ The range pointer’s UI is customized using the `RangePointerStroke` and `Range
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="RangePointer" Value="50" RangePointerStroke="DarkCyan" RangePointerStrokeThickness="20"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="RangePointer" Value="50" RangePointerStroke="DarkCyan" RangePointerStrokeThickness="20"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -293,14 +344,22 @@ The `RangePointerVisibility` property is used to set the visibility of the range
 {% highlight xml %}
 
     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer RangePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer RangePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+                    
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -331,23 +390,34 @@ The `RangePointer` can be placed inside or outside the scale by the following tw
 
 You can place the range pointer by selecting one of the options available in the `RangePointerPosition` property. They are:
 1.	Inside (Default)
+
 2.	Outside
+
 3.	Cross
+
 4.	Custom
 
 {% tabs %}
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale RangePointerPosition="Outside">
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="RangePointer" RangePointerStroke="HotPink" Value="60"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale RangePointerPosition="Outside">
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="RangePointer" RangePointerStroke="HotPink" Value="60"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -383,15 +453,23 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale RangePointerPosition="Custom" RangePointerOffset="0.5">
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="RangePointer" RangePointerStroke="HotPink" Value="60"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale RangePointerPosition="Custom" RangePointerOffset="0.5">
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="RangePointer" RangePointerStroke="HotPink" Value="60"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -429,15 +507,23 @@ In symbol pointer, the value is pointed out using a symbol on the scale. The sym
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale>
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="SymbolPointer"  Value="60"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="SymbolPointer"  Value="60"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -471,16 +557,24 @@ You can modify the stroke of the symbol by changing the `SymbolPointerStroke` pr
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale>
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="SymbolPointer"  Value="60" SymbolPointerStroke="Red"
-                                               SymbolPointerHeight="20" SymbolPointerWidth="20"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="SymbolPointer"  Value="60" SymbolPointerStroke="Red"
+     SymbolPointerHeight="20" SymbolPointerWidth="20"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+            
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -520,15 +614,23 @@ The visibility of the symbol pointer can be set using the `SymbolPointerVisibili
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale>
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer SymbolPointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer SymbolPointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -560,21 +662,29 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 
 {% highlight xml %}
 
-        <gauge:SfCircularGauge>
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
-                                               NeedlePointerType="Tapered" PointerCapStroke="#39B2C6" />
-                        <gauge:CircularPointer PointerType="RangePointer"  Value="100"/>
-                        <gauge:CircularPointer PointerType="SymbolPointer"  Value="50" Symbol="Pentagon"
-                                               SymbolPointerHeight="20" SymbolPointerWidth="20"
-                                               SymbolPointerStroke="#39B2C6"/>
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge>
 
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
+     NeedlePointerType="Tapered" PointerCapStroke="#39B2C6" />
+
+    <gauge:CircularPointer PointerType="RangePointer"  Value="100"/>
+
+    <gauge:CircularPointer PointerType="SymbolPointer"  Value="50" Symbol="Pentagon"
+     SymbolPointerHeight="20" SymbolPointerWidth="20" SymbolPointerStroke="#39B2C6"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -640,19 +750,26 @@ The `EnableAnimation` property is a Boolean property that enables or disables th
 
 {% highlight xml %}
 
-       <gauge:SfCircularGauge>
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale Radius="150" >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
-                                               NeedlePointerType="Triangle" PointerCapStroke="#39B2C6" PointerCapDiameter="20"/>
-                        <gauge:CircularPointer PointerType="RangePointer"  Value="100" RangePointerStroke="#39B2C6"/>
+    <gauge:SfCircularGauge>
 
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-        </gauge:SfCircularGauge>
+    <gauge:CircularScale Radius="150" >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
+    NeedlePointerType="Triangle" PointerCapStroke="#39B2C6" PointerCapDiameter="20"/>
+
+    <gauge:CircularPointer PointerType="RangePointer"  Value="100" RangePointerStroke="#39B2C6"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 

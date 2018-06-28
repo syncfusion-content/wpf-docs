@@ -18,21 +18,29 @@ The `StartValue` and `EndValue` properties determine the overall range of the ci
 {% highlight xml %}
 
     <gauge:SfCircularGauge  HeaderAlignment="Bottom">
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale StartAngle="270" SweepAngle="360" StartValue="0" EndValue="360"
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale StartAngle="270" SweepAngle="360" StartValue="0" EndValue="360"
                                      Interval="20" MinorTicksPerInterval="0" >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- SfCircularGauge sfCircularGauge = new SfCircularGauge();
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 CircularScale circularScale = new CircularScale();
 
@@ -71,14 +79,22 @@ The color and thickness of the rim can be set by using the `RimStroke` and `RimS
 {% highlight xml %}
 
     <gauge:SfCircularGauge>
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale RadiusFactor="1" RimStrokeThickness="40" RimStroke="SkyBlue" >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale RadiusFactor="1" RimStrokeThickness="40" RimStroke="SkyBlue" >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -122,21 +138,29 @@ The value for `RadiusFactor` should be specified in offset value.
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale RadiusFactor="0.7" RimStrokeThickness="30" >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale RadiusFactor="0.7" RimStrokeThickness="30" >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+                
+    </gauge:SfCircularGauge.Scales>
+
     </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 CircularScale circularScale = new CircularScale();
 
@@ -166,14 +190,22 @@ You can set the `Radius` of rim in pixel value.
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge  HeaderAlignment="Bottom">
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale Radius ="100" >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge  HeaderAlignment="Bottom">
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale Radius ="100" >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
     </gauge:SfCircularGauge>
 
 {% endhighlight %}
