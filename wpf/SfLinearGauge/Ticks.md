@@ -19,19 +19,23 @@ By setting the `MajorTickStroke` and `MinorTickStroke` properties, the stroke of
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale MajorTickSize="20" MinorTickSize="9"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="SkyBlue"
-                                   MinorTickStroke="Brown" LabelStroke="#424242"
-                                   MinorTickStrokeThickness="1" MajorTickStrokeThickness="2"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" />
+    <gauge:LinearScale MajorTickSize="20" MinorTickSize="9"
 
-            </gauge:SfLinearGauge.MainScale>
+    ScaleBarStroke="#E0E0E0" MajorTickStroke="SkyBlue"
 
-        </gauge:SfLinearGauge>
+    MinorTickStroke="Brown" LabelStroke="#424242"
+
+    MinorTickStrokeThickness="1" MajorTickStrokeThickness="2"
+
+    ScaleBarSize="10" MinorTicksPerInterval="3" />
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -74,7 +78,9 @@ By setting the `MajorTickStroke` and `MinorTickStroke` properties, the stroke of
 The ticks in the scale can be placed above, below, or in between the scale by choosing one of the following options available in the `TickPosition` property:
 
 1.	Above
+
 2.	Below (Default)
+
 3.	Cross
 
 {% tabs %}
@@ -83,17 +89,17 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
     <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale TickPosition="Cross"
-                                   MajorTickSize="20" MinorTickSize="9"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Black"
-                                   MinorTickStroke="Black" LabelStroke="#424242"
-                                   ScaleBarSize="40" MinorTicksPerInterval="3" />
+    <gauge:LinearScale TickPosition="Cross" MajorTickSize="20" MinorTickSize="9"
 
-            </gauge:SfLinearGauge.MainScale>
+    ScaleBarStroke="#E0E0E0" MajorTickStroke="Black" MinorTickStroke="Black" LabelStroke="#424242"
 
-        </gauge:SfLinearGauge>
+    ScaleBarSize="40" MinorTicksPerInterval="3" />
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -137,17 +143,19 @@ The `Interval` property is used to calculate the tick counts for a scale. Like t
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="4" />
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-            </gauge:SfLinearGauge.MainScale>
+    MinorTickStroke="Gray" LabelStroke="#424242"
 
-        </gauge:SfLinearGauge>
+    ScaleBarSize="10" MinorTicksPerInterval="4" />
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 

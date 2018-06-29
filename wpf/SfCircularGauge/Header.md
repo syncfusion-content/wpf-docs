@@ -23,9 +23,9 @@ The `GaugeHeader` is an object that can be used to set a unique header for the 
 
     <gauge:SfCircularGauge.GaugeHeader>
 
-     <TextBlock Text="Temperature (K)"
+    <TextBlock Text="Temperature (K)"
 
-    Height="40" Width="100"
+     Height="40" Width="100"
 
      FontSize="13" Foreground="Black"/>
 
@@ -92,14 +92,23 @@ The gauge header can be positioned by using the `HeaderAlignment` property. The
 It includes the following options:
 
 * Left
+
 * Right
+
 * Top
+
 * Bottom
+
 * Center
+
 * TopLeft
+
 * TopRight
+
 * BottomLeft
+
 * BottomRight
+
 * Custom
 
 {% tabs %}
@@ -110,13 +119,13 @@ It includes the following options:
 
     <gauge:SfCircularGauge.GaugeHeader>
 
-     <TextBlock Text="Temperature (K)"
+    <TextBlock Text="Temperature (K)"
 
      Height="40" Width="100"
 
-      FontSize="13" Foreground="Black"/>
+     FontSize="13" Foreground="Black"/>
 
-     </gauge:SfCircularGauge.GaugeHeader>
+    </gauge:SfCircularGauge.GaugeHeader>
 
     <gauge:SfCircularGauge.Scales>
 
@@ -184,11 +193,11 @@ The `GaugeHeaderPosition` property is used to place header in the circular gauge
 
     <gauge:SfCircularGauge.GaugeHeader>
 
-     <TextBlock Text="Temperature (K)"
+    <TextBlock Text="Temperature (K)"
 
-      Height="40" Width="100"
+     Height="40" Width="100"
 
-      FontSize="13" Foreground="Black"/>
+     FontSize="13" Foreground="Black"/>
 
     </gauge:SfCircularGauge.GaugeHeader>
 
@@ -202,9 +211,9 @@ The `GaugeHeaderPosition` property is used to place header in the circular gauge
 
     </gauge:CircularScale.Pointers>
 
-     </gauge:CircularScale>
+    </gauge:CircularScale>
 
-     </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
     </gauge:SfCircularGauge>
 
@@ -257,19 +266,33 @@ You can customize the header’s text by using the `FontFamily`, `FontStyle`, `F
 {% highlight xml %}
 
     <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.6"
-    FontFamily="Monotype Corsiva" FontSize="15"
+
+     FontFamily="Monotype Corsiva" FontSize="15"
+
      FontStyle="Italic"  Foreground="Blue">
-     <gauge:SfCircularGauge.GaugeHeader>
+
+    <gauge:SfCircularGauge.GaugeHeader>
+
     <TextBlock Text="Temperature (K)"
+
      Height="40" Width="100" />
-     </gauge:SfCircularGauge.GaugeHeader>
+
+    </gauge:SfCircularGauge.GaugeHeader>
+
     <gauge:SfCircularGauge.Scales>
+
     <gauge:CircularScale >
+
     <gauge:CircularScale.Pointers>
+
     <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
     </gauge:CircularScale.Pointers>
+
     </gauge:CircularScale>
-     </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge.Scales>
+
     /gauge:SfCircularGauge>
 
 {% endhighlight %}

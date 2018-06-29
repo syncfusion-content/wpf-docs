@@ -23,20 +23,23 @@ The length, stroke, and stroke thickness of a tick are set using the `TickLength
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale     MinorTicksPerInterval="3"
-                                            TickLength="20"
-                                            TickStroke="Brown"  
-                                            TickStrokeThickness="2"                                             
-                                            SmallTickStroke="White"
-                                            >
-                     <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:SfCircularGauge >
 
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
+            
+    <gauge:CircularScale     MinorTicksPerInterval="3"     TickLength="20" TickStroke="Brown"  
+     TickStrokeThickness="2"  SmallTickStroke="White">
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
     </gauge:SfCircularGauge>
 
 {% endhighlight %}
@@ -75,20 +78,23 @@ mainscale.Pointers.Add(circularPointer);
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale     MinorTicksPerInterval="3"
-                                            SmallTickLength="10"
-                                            SmallTickStroke="Blue"  
-                                            SmallTickStrokeThickness="2"                                             
-                                            >
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
+    <gauge:SfCircularGauge >
 
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale     MinorTicksPerInterval="3"      SmallTickLength="10" SmallTickStroke="Blue"   SmallTickStrokeThickness="2"  >
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -129,23 +135,28 @@ The `TickShape` is an enum property that provides an option to select shape of t
 {% highlight xml %}
 
      <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale  TickShape="Triangle"
-                                      MinorTicksPerInterval="3"
-                                      TickStroke="Blue"
-                                      SmallTickStroke="Blue">
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
+
+     <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  TickShape="Triangle" MinorTicksPerInterval="3" TickStroke="Blue" SmallTickStroke="Blue">
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
     </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-  SfCircularGauge sfCircularGauge = new SfCircularGauge();
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 CircularScale mainscale = new CircularScale();
 
@@ -182,19 +193,25 @@ The major and minor ticks can be positioned far away from the rim using the foll
 {% highlight xml %}
 
     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale  TickPosition="Custom"
-                                      MinorTicksPerInterval="3"
-                                      MinorTickOffset="0.5"
-                                      MajorTickOffset="0.5">
-                   <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-     </gauge:SfCircularGauge>
 
-        {% endhighlight %}
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  TickPosition="Custom"   MinorTicksPerInterval="3" MinorTickOffset="0.5"
+     MajorTickOffset="0.5">
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+            
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -227,8 +244,11 @@ sfCircularGauge.Scales.Add(mainscale);
     2. Placing the ticks inside the scale, outside the scale, or across the scale by selecting one of the options available in the `TickPosition` property. They are:
 
 1.	Inside (Default)
+
 2.	Outside
+
 3.	Cross
+
 4.	Custom
 
 {% tabs %}
@@ -236,16 +256,22 @@ sfCircularGauge.Scales.Add(mainscale);
 {% highlight xml %}
 
     <gauge:SfCircularGauge >
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale  TickPosition="Outside"
-                                      MinorTicksPerInterval="3"
-                                      Radius="200">
-                   <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                    </gauge:CircularScale.Pointers>
-                    </gauge:CircularScale>
-            </gauge:SfCircularGauge.Scales>
-        </gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  TickPosition="Outside"  MinorTicksPerInterval="3" Radius="200">
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    /gauge:SfCircularGauge>
 
 {% endhighlight %}
 

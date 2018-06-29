@@ -15,16 +15,17 @@ The `MainScale` is a linear scale integrates ticks, labels, ranges, and pointers
 
 {% highlight xml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
                                                
-                               <gauge:LinearScale  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                                   MinorTickStroke="Gray" LabelStroke="#424242"                       
-                                                   ScaleBarSize="10" MinorTicksPerInterval="3"/>
-            </gauge:SfLinearGauge.MainScale>
+    <gauge:LinearScale  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray" MinorTickStroke="Gray" LabelStroke="#424242"   
 
-        </gauge:SfLinearGauge>
+    ScaleBarSize="10" MinorTicksPerInterval="3"/>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 
 {% endhighlight %}
@@ -64,16 +65,17 @@ To change the minimum and maximum values of a linear scale, use the `Minimum` an
 
 {% highlight xml %}
 
-        <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale   ScaleBarSize="30"  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                     MinorTickStroke="Gray" LabelStroke="#424242"/>
+    <gauge:LinearScale   ScaleBarSize="30"  ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-            </gauge:SfLinearGauge.MainScale>
+    MinorTickStroke="Gray" LabelStroke="#424242"/>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -110,18 +112,17 @@ The `Interval` property allows to set intervals for scale. The default value of 
 
 {% highlight xml %}
 
-       <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale Minimum="0" Maximum="500" Interval="100"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10"/>
+    <gauge:LinearScale Minimum="0" Maximum="500" Interval="100" ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-            </gauge:SfLinearGauge.MainScale>
+    MinorTickStroke="Gray" LabelStroke="#424242" ScaleBarSize="10"/>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -165,15 +166,17 @@ You can customize the color, length, size, and position of the `LinearScale` usi
 
     <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarBorderBrush="Red"  ScaleBarStroke="Blue" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242" ScaleBarBorderThickness="3"
-                                   ScaleBarSize="20" MinorTicksPerInterval="3" />
+    <gauge:LinearScale ScaleBarBorderBrush="Red"  ScaleBarStroke="Blue" MajorTickStroke="Gray"
 
-            </gauge:SfLinearGauge.MainScale>
+    MinorTickStroke="Gray" LabelStroke="#424242" ScaleBarBorderThickness="3"
 
-        </gauge:SfLinearGauge>
+    ScaleBarSize="20" MinorTicksPerInterval="3" />
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -215,18 +218,17 @@ You can set the scale position to its forward and backward using the `ScalePosit
 
 {% highlight xml %}
 
-      <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleDirection="Backward"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3"/>
+    <gauge:LinearScale ScaleDirection="Backward" ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
 
-            </gauge:SfLinearGauge.MainScale>
+    MinorTickStroke="Gray" LabelStroke="#424242"  ScaleBarSize="10" MinorTicksPerInterval="3"/>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -266,20 +268,25 @@ You can set the scale position using the `ScaleBarPositionFactor` property. Firs
 
 {% highlight xml %}
 
-       <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale  ElementsPositionMode="Custom"
-                                   ScaleBarPositionFactor="0.5" TickPositionFactor="0.443"
-                                   ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                    MinorTickSize="9" MajorTickSize="15"
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" />
+    <gauge:LinearScale  ElementsPositionMode="Custom"
 
-            </gauge:SfLinearGauge.MainScale>
+    ScaleBarPositionFactor="0.5" TickPositionFactor="0.443"
 
-        </gauge:SfLinearGauge>
+    ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+
+    MinorTickStroke="Gray" LabelStroke="#424242"
+
+    MinorTickSize="9" MajorTickSize="15"
+
+    ScaleBarSize="10" MinorTicksPerInterval="3" />
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 

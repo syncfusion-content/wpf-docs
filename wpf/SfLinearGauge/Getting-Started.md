@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to configure the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control in a real-time scenario and provides a walk-through on its customization features.
+This section explains the steps required to configure the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control in a real-time scenario and provides a walk-through on its customization features.
 
 ## Adding gauge references
 
@@ -16,7 +16,7 @@ Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls)
 
 ### Initialize gauge
 
-Import  the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) namespace to your respective Window as in the following.
+Import  the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) namespace to your respective Window as in the following.
 
 {% tabs %}
 
@@ -34,13 +34,13 @@ using Syncfusion.UI.Xaml.Gauges;
 
 {% endtabs %}
 
-You can initialize an empty [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control.
+You can initialize an empty [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control.
 
 {% tabs %}
 
 {% highlight xml %}
 
-       <gauge:SfLinearGauge/>
+    <gauge:SfLinearGauge/>
 
 {% endhighlight %}
 
@@ -56,7 +56,7 @@ this.Content = sfLinearGauge;
 
 ### Configuring scale
 
-You can configure the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearScale.html) elements using the following APIs available in the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control:
+You can configure the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearScale.html) elements using the following APIs available in the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.LinearGauge.html) control:
 
 •	ScaleDirection
 
@@ -78,19 +78,17 @@ You can configure the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/
 
 {% highlight xml %}
 
-        <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"                                
-                                   ScaleBarSize="10" MinorTicksPerInterval="3">
-                    
-                </gauge:LinearScale>
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
+    MinorTickStroke="Gray" LabelStroke="#424242"                                
+    ScaleBarSize="10" MinorTicksPerInterval="3"/>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -114,7 +112,6 @@ You can configure the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/
 
             sfLinearGauge.MainScale = linearScale;
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -127,28 +124,27 @@ The scale values can be categorized using the start and end values in `LinearRan
 
 {% highlight xml %}
 
-        <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale>
-                      <gauge:LinearScale.Ranges>
+    <gauge:LinearScale>
 
-                        <gauge:LinearRange StartValue="0" EndValue="40"
-                                           RangeStroke="#27BEB7"  StartWidth="10"
-                                           EndWidth="10" RangeOffset="0.4" />
+    <gauge:LinearScale.Ranges>
 
-                        <gauge:LinearRange StartValue="40" EndValue="100"
-                                           RangeStroke="LightCyan" RangeOffset="0.4"
-                                           StartWidth="10"  EndWidth="10"/>
+    <gauge:LinearRange StartValue="0" EndValue="40" RangeStroke="#27BEB7"  StartWidth="10"
+    EndWidth="10" RangeOffset="0.4" />
 
-                    </gauge:LinearScale.Ranges>
+    <gauge:LinearRange StartValue="40" EndValue="100" RangeStroke="LightCyan" RangeOffset="0.4"
+    StartWidth="10"  EndWidth="10"/>
 
-                </gauge:LinearScale>
+    </gauge:LinearScale.Ranges>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:LinearScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -204,25 +200,24 @@ The scale values can be categorized using the start and end values in `LinearRan
 
 {% highlight xml %}
  
-         <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale>
+    <gauge:LinearScale>
 
-                    <gauge:LinearScale.Pointers>
+    <gauge:LinearScale.Pointers>
 
-                        <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
-                                             SymbolPointerHeight="10" SymbolPointerWidth="10"
-                                              SymbolPointerPosition="Below" SymbolPointerStroke="#757575"/>
+    <gauge:LinearPointer PointerType="SymbolPointer" Value="60"SymbolPointerHeight="10" SymbolPointerWidth="10"
+    SymbolPointerPosition="Below" SymbolPointerStroke="#757575"/>
 
-                    </gauge:LinearScale.Pointers>
+    </gauge:LinearScale.Pointers>
 
-                </gauge:LinearScale>
+    </gauge:LinearScale>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -263,24 +258,24 @@ The scale values can be categorized using the start and end values in `LinearRan
 
 {% highlight xml %}
 
-        <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale>
+    <gauge:LinearScale>
 
-                    <gauge:LinearScale.Pointers>
+    <gauge:LinearScale.Pointers>
                         
-                        <gauge:LinearPointer PointerType="BarPointer" Value="50" BarPointerStroke="#757575"
-                                             BarPointerStrokeThickness="10"/>
+    <gauge:LinearPointer PointerType="BarPointer" Value="50" BarPointerStroke="#757575"
+    BarPointerStrokeThickness="10"/>
 
-                    </gauge:LinearScale.Pointers>
+    </gauge:LinearScale.Pointers>
 
-                </gauge:LinearScale>
+    </gauge:LinearScale>
 
-            </gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.MainScale>
 
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
@@ -304,7 +299,6 @@ The scale values can be categorized using the start and end values in `LinearRan
 
             sfLinearGauge.MainScale = linearScale;
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -315,53 +309,46 @@ The following code example is the complete code of the previous configurations.
 
 {% highlight xml %}
 
-       <Window x:Class="Gauge_GettingStarted.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Gauge_GettingStarted"
-        mc:Ignorable="d"
-        xmlns:gauge ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf">
-        <Grid>
+    <Window x:Class="Gauge_GettingStarted.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Gauge_GettingStarted"
+    mc:Ignorable="d"
+    xmlns:gauge ="clr-namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfGauge.Wpf">
+    <Grid>
 
-           <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"                               
-                                   ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
+    <gauge:LinearScale ScaleBarStroke="#E0E0E0" MajorTickStroke="Gray"MinorTickStroke="Gray" LabelStroke="#424242"         ScaleBarSize="10" MinorTicksPerInterval="3" ScaleBarLength="300">
 
-                    <gauge:LinearScale.Pointers>
+    <gauge:LinearScale.Pointers>
 
-                        <gauge:LinearPointer PointerType="SymbolPointer" Value="60"
-                                             SymbolPointerHeight="10" SymbolPointerWidth="10"
-                                              SymbolPointerPosition="Below" SymbolPointerStroke="#757575"/>
+    <gauge:LinearPointer PointerType="SymbolPointer" Value="60"SymbolPointerHeight="10" SymbolPointerWidth="10"
+    SymbolPointerPosition="Below" SymbolPointerStroke="#757575"/>
 
-                        <gauge:LinearPointer PointerType="BarPointer" Value="50" BarPointerStroke="#757575"
-                                             BarPointerStrokeThickness="10"/>
+    <gauge:LinearPointer PointerType="BarPointer" Value="50" BarPointerStroke="#757575" BarPointerStrokeThickness="10"/>
 
-                    </gauge:LinearScale.Pointers>
+    </gauge:LinearScale.Pointers>
 
-                    <gauge:LinearScale.Ranges>
+    <gauge:LinearScale.Ranges>
 
-                        <gauge:LinearRange StartValue="0" EndValue="40"
-                                           RangeStroke="#27BEB7"  StartWidth="10"
-                                           EndWidth="10" RangeOffset="0.4" />
+    <gauge:LinearRange StartValue="0" EndValue="40" RangeStroke="#27BEB7"  StartWidth="10"
+    EndWidth="10" RangeOffset="0.4" />
 
-                        <gauge:LinearRange StartValue="40" EndValue="100"
-                                           RangeStroke="LightCyan" RangeOffset="0.4"
-                                           StartWidth="10"  EndWidth="10"/>
+    <gauge:LinearRange StartValue="40" EndValue="100"RangeStroke="LightCyan" RangeOffset="0.4"
+    StartWidth="10"  EndWidth="10"/>
 
+    </gauge:LinearScale.Ranges>
 
-                    </gauge:LinearScale.Ranges>
+    </gauge:LinearScale>
 
-                </gauge:LinearScale>
+    </gauge:SfLinearGauge.MainScale>
 
-            </gauge:SfLinearGauge.MainScale>
-
-        </gauge:SfLinearGauge>
+    </gauge:SfLinearGauge>
 
     </Grid>
 

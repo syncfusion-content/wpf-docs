@@ -1633,9 +1633,9 @@ Syncfusion.SfSpreadsheet.WPF
 </tr>
 </table>
 
-### Exporting SfSpreadsheet to Excel, PDF
+### Import Chart, Sparklines from Excel to SfSpreadsheet
 
-For exporting SfSpreadsheet to excel or pdf, the following references need to be added in your application.
+For Importing Chart or Sparklines in SfSpreadsheet, the following references need to be added in your application.
 
 <table>
 <tr>
@@ -1649,12 +1649,14 @@ Syncfusion.ExcelChartToImageConverter.WPF <br/>
 Syncfusion.SfChart.WPF
 </td>
 <td> 
-Syncfusion.SfSpreadsheet.WPF
+Syncfusion.SfSpreadsheetHelper.WPF
 </td>
 </tr>
 </table> 
 
-### Include chart in SfSpreadsheet
+### Exporting SfSpreadsheet to PDF
+
+For exporting SfSpreadsheet to pdf, the following references need to be added in your application.
 
 <table>
 <tr>
@@ -1819,23 +1821,6 @@ Syncfusion.SfChart.WPF
 </table>
 
 ## SkinManager
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.Shared.WPF
-</td>
-<td> 
-Syncfusion.Shared.WPF
-</td>
-</tr>
-</table>
-
-## SpellChecker
 
 <table>
 <tr>
