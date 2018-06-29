@@ -276,13 +276,11 @@ private void TreeGrid_CellToolTipOpening(object sender, Syncfusion.UI.Xaml.TreeG
 {% endhighlight %}
 {% endtabs %}
 
-## Row Drag-and-Drop
+## Row drag-and-drop
 
-### Overview
+### Enabling drag-and-drop
 
-#### Enabling Drag-and-Drop
-
-You can allow end-users to drag-and-drop the rows in SfTreeGrid, between two SfTreeGrid's by setting [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#) to `true`.  It's also possible to drag-and-drop from SfTreeGrid to any other control. 
+You can drag-and-drop the rows in the SfTreeGrid and between two SfTreeGrid controls by setting the [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#) properties to `true`.  It is also possible to drag-and-drop from the SfTreeGrid to any other control. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -302,21 +300,21 @@ sfTreeGrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-While dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop at the bottom of node, it will be added below the node and if you are dropping over the node, it will be added as child of that node.
+When dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop on the bottom of node, it will be added below the node. If dropping over the node, it will be added as a child of that node.
 
 ![](Interactive-Features_images/DragandDropDemo.gif)
 
-N> Row Drag-and-Drop for SfTreeGrid support provided from Volume 2 2018 release (v16.2.0.41).
+N> Row drag-and-drop for the SfTreeGrid support is provided from Volume 2 2018 release (v16.2.0.41).
 
-#### Dragging Multiple Nodes
+### Dragging multiple nodes
 
-SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting SfTreeGrid.SelectionMode as `Multiple` or `Extended`.
+The SfTreeGrid allows you to drag multiple selected nodes by setting the SfTreeGrid.SelectionMode as `Multiple` or `Extended`.
 
 ![](Interactive-Features_images/InteractiveFeatures_img8.png)
 
-### Drag-and-Drop Options
+## Drag-and-drop options
 
-The SfTreeGrid control has below set of API's which is allow to control the drag-and-drop options manually.
+The SfTreeGrid control has the following properties to control the drag-and-drop options manually.
 
 <table>
 <tr>
@@ -333,7 +331,7 @@ Description
 [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html)
 </td>
 <td>
-Gets or sets whether end-users can drag the nodes in SfTreeGrid.
+Gets or sets whether the end user can drag the nodes or not.
 </td>
 </tr>
 
@@ -342,7 +340,7 @@ Gets or sets whether end-users can drag the nodes in SfTreeGrid.
 [SfTreeGrid.AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#)
 </td>
 <td>
-Gets or sets whether end-users can drop the nodes in SfTreeGrid.
+Gets or sets whether the end user can drop the nodes or not.
 </td>
 </tr>
 
@@ -351,7 +349,7 @@ Gets or sets whether end-users can drop the nodes in SfTreeGrid.
 [SfTreeGrid.RowDragDropTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropTemplate.html)
 </td>
 <td>
-Gets or sets the custom Row Drag Popup data template.
+Gets or sets the custom row drag pop-up data template.
 </td>
 </tr>
 
@@ -360,7 +358,7 @@ Gets or sets the custom Row Drag Popup data template.
 [SfTreeGrid.RowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html)
 </td>
 <td>
-Gets or sets whether end-users can expand the collapsed nodes while dragging. 
+Gets or sets whether the end user can expand the collapsed nodes while dragging or not. 
 </td>
 </tr>
 
@@ -372,9 +370,9 @@ Gets or sets whether end-users can expand the collapsed nodes while dragging.
 Gets or sets the time delay for expanding the collapsed nodes while dragging. 
 </td>
 </tr>
-
 </table>
 
+Events for row drag-and-drop operations are as follows.
 
 <table>
 <tr>
@@ -391,7 +389,7 @@ Description
 [SfTreeGrid.RowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html)
 </td>
 <td>
-This event occurs when drag-and-drop operation is started.  
+Occurs when drag-and-drop operations are started.  
 </td>
 </tr>
 
@@ -400,7 +398,7 @@ This event occurs when drag-and-drop operation is started.
 [SfTreeGrid.RowDragDropController.DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragOver_EV.html)
 </td>
 <td>
-This event occurs continuously while node is dragged within the drop target's(SfTreeGrid) boundary.   
+Occurs continuously when the node is dragged within the drop target (SfTreeGrid) boundary.   
 </td>
 </tr>
 
@@ -409,7 +407,7 @@ This event occurs continuously while node is dragged within the drop target's(Sf
 [SfTreeGrid.RowDragDropController.DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragLeave_EV.html)
 </td>
 <td>
-This event occurs when node is dragged out of the drop target's(SfTreeGrid) boundary. 
+Occurs when the node is dragged out of the drop target (SfTreeGrid) boundary. 
 </td>
 </tr>
 
@@ -418,7 +416,7 @@ This event occurs when node is dragged out of the drop target's(SfTreeGrid) boun
 [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html)
 </td>
 <td>
-This event occurs while dropping the record in drop target (SfTreeGrid).
+Occurs while dropping the record in drop target (SfTreeGrid).
 </td>
 </tr>
 
@@ -427,22 +425,20 @@ This event occurs while dropping the record in drop target (SfTreeGrid).
 [SfTreeGrid.RowDragDropController.Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Dropped_EV.html)
 </td>
 <td>
-This event occurs when nodes are dropped in drop target(SfTreeGrid). 
+Occurs when the nodes are dropped in drop target(SfTreeGrid). 
 </td>
 </tr>
 
 </table>
 
-### Drag-and-Drop between TreeGrids
+## Drag-and-drop between TreeGrids
 
-SfTreeGrid provides built in support for Drag-and-Drop nodes between SfTreeGrid's. The following image illustrate to implement the drag-and-drop nodes between SfTreeGrid's. 
+The SfTreeGrid provides built-in support for drag-and-drop nodes between the SfTreeGrid controls.  
 
-<Screenshot-Gif>
-
-Follow the below steps to implement drag-and-drop between SfTreeGrid's. 
+Follow the steps to implement drag-and-drop between the SfTreeGrid controls: 
 
 1. Add the SfTreeGrid controls to your project.
-2. Set [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#) API's to `true` to enable the drag-and-drop functionality in both SfTreeGrid controls.
+2. Set the [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#) properties to `true` to enable drag-and-drop functionalities in both the SfTreeGrid controls.
 
 {% tabs %}
 {% highlight xaml %}
@@ -464,13 +460,13 @@ Follow the below steps to implement drag-and-drop between SfTreeGrid's.
 {% endhighlight %}
 {% endtabs %}
 
-3. Now you can drag-and-drop nodes between both SfTreeGrid controls. You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DRAGAN~1-710537123.zip).
+3. Now, you can drag-and-drop nodes between both the SfTreeGrid controls. You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DRAGAN~1-710537123.zip).
 
-### Customizing Row Drag-and-Drop
+## Customizing row drag-and-drop
 
-#### Auto Expanding the Node on Drag Over
+### Auto expanding the node on drag over
 
-While dragging over the tree node, if drop position set as 'Drop as child', SfTreeGrid can auto expand the corresponding tree node by setting [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html) as `true`. It is also possible to control the delay in expanding the node when drag over using [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html) property. Its default value is 3 sec.
+When dragging over the tree node if the drop position is set as `Drop as child`, the SfTreeGrid can auto expand the corresponding tree node by setting the [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html) to `true`. It is also possible to control the delay by expanding the node when dragging over the rows by using the [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html) property. Its default value is 3 sec.
 
 {% tabs %}
 {% highlight c# %}
@@ -481,9 +477,9 @@ treeGrid.RowDragDropController.AutoExpandDelay = new TimeSpan(0, 0, 2);
 {% endhighlight %}
 {% endtabs %}
 
-#### Customizing Default Drag UI
+### Customizing default drag UI
 
-You can customize the default drag UI by setting [SfTreeGrid.RowDragDropTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropTemplate.html) as your customized Data Template. 
+You can customize the default drag UI by setting the [SfTreeGrid.RowDragDropTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropTemplate.html) to your customized data template. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -493,12 +489,12 @@ You can customize the default drag UI by setting [SfTreeGrid.RowDragDropTemplate
 					   AllowDrop="True" 
 					   ChildPropertyName="ReportsTo" 
 					   ItemsSource="{Binding Employees}" 
-					   RowDragDropTemplate="{StaticResource  SampleDragDropTemplate}>
+					   RowDragDropTemplate="{StaticResource  SampleDragDropTemplate}">
 					   
 {% endhighlight %}
 {% endtabs %}
 
-Resources should have DataTemplate definition which we have mentioned in RowDragDropTemplate. 
+Resources should have DataTemplate definition as mentioned in the RowDragDropTemplate. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -512,9 +508,9 @@ Resources should have DataTemplate definition which we have mentioned in RowDrag
 {% endhighlight %}
 {% endtabs %}
 
-#### Disable the Dragging of Certain Node
+### Disable dragging of certain node
 
-You can disable the dragging functionality of specific nodes. To handle this, you need to raise the [SfTreeGrid.RowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event.  
+You can disable dragging functionality of some specific nodes by using the [SfTreeGrid.RowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -532,9 +528,9 @@ private void RowDragDropController_DragStart(object sender, Syncfusion.UI.Xaml.T
 {% endhighlight %}
 {% endtabs %}
 
-#### Disable Drop Over Certain Node
+### Disable drop over certain node
 
-You can disable the dropping functionality of specific nodes. To handle this, you need to raise the [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
+You can disable dropping functionality of some specific nodes by using the [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
 
 {% tabs %}
 {% highlight c# %}
@@ -552,9 +548,9 @@ private void RowDragDropController_Drop(object sender, TreeGridRowDropEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-#### Disable Default Drag UI
+### Disable default drag UI
 
-You can disable the dropping functionality of specific nodes. To handle this, you need to raise the [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
+You can disable dropping functionality of some specific nodes by using the [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
 
 {% tabs %}
 {% highlight c# %}
