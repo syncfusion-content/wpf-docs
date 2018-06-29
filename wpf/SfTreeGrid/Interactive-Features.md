@@ -425,7 +425,7 @@ Occurs while dropping the record in drop target (SfTreeGrid).
 [SfTreeGrid.RowDragDropController.Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Dropped_EV.html)
 </td>
 <td>
-Occurs when the nodes are dropped in drop target(SfTreeGrid). 
+Occurs when the nodes dropped within the SfTreeGrid. 
 </td>
 </tr>
 
