@@ -127,7 +127,7 @@ You can bind the ItemsSource from ViewModel to **GridComboBoxColumn or GridMulti
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="DataGrid"
                                AutoGenerateColumns="False"
-                               ItemsSource="{Binding Orderlist}"
+                               ItemsSource="{Binding OrderList}"
                                NavigationMode="Cell">
           <syncfusion:GridComboBoxColumn AllowEditing="True" 
                                          MappingName="Country"
@@ -171,7 +171,7 @@ You can load the **ComboBox** inside the **GridTemplateColumn** and bind the Ite
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="DataGrid"
                         AutoGenerateColumns="False"
-               ItemsSource="{Binding Orderlist}"                        
+               ItemsSource="{Binding OrderList}"                        
                        NavigationMode="Cell">
     <syncfusion:SfDataGrid.Columns>
           <syncfusion:GridTemplateColumn MappingName="Country" syncfusion:FocusManagerHelper.WantsKeyInput="True">
