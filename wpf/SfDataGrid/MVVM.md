@@ -1,3 +1,12 @@
+---
+layout: post
+title: MVVM approach in SfDataGrid
+description: How to bind the items in the SfDataGrid using MVVM
+platform: wpf
+control: SfDataGrid
+documentation: ug
+---
+
 # MVVM
 
 This section will demonstrate how to bind the items in the SfDataGrid using MVVM.
