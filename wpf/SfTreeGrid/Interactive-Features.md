@@ -278,9 +278,7 @@ private void TreeGrid_CellToolTipOpening(object sender, Syncfusion.UI.Xaml.TreeG
 
 ## Row drag-and-drop
 
-### Enabling drag-and-drop
-
-You can drag-and-drop the rows in the SfTreeGrid and between two SfTreeGrid controls by setting the [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#) properties to `true`.  It is also possible to drag-and-drop from the SfTreeGrid to any other control. 
+SfTreeGrid have built-in support for the row drag-and-drop. You can drag-and-drop the rows in the SfTreeGrid and between two SfTreeGrid controls by setting the [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#) properties to `true`.  It is also possible to drag-and-drop from the SfTreeGrid to any other control. 
 
 {% tabs %}
 {% highlight xaml %}
