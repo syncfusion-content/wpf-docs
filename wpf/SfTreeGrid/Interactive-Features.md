@@ -304,7 +304,7 @@ When dropping, the dragged node(s) can be added above or below or as a child nod
 
 N> Row drag-and-drop for the SfTreeGrid support is provided from Volume 2 2018 release (v16.2.0.41).
 
-### Dragging multiple nodes
+## Dragging multiple nodes
 
 The SfTreeGrid allows you to drag multiple selected nodes by setting the SfTreeGrid.SelectionMode as `Multiple` or `Extended`.
 
