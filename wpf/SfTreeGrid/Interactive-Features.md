@@ -396,7 +396,7 @@ Occurs when drag-and-drop operations are started.
 [SfTreeGrid.RowDragDropController.DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragOver_EV.html)
 </td>
 <td>
-Occurs continuously when the node is dragged within the drop target (SfTreeGrid) boundary.   
+Occurs continuously when the node is dragged within the SfTreeGrid's boundary.   
 </td>
 </tr>
 
@@ -405,7 +405,7 @@ Occurs continuously when the node is dragged within the drop target (SfTreeGrid)
 [SfTreeGrid.RowDragDropController.DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragLeave_EV.html)
 </td>
 <td>
-Occurs when the node is dragged out of the drop target (SfTreeGrid) boundary. 
+Occurs when the node is dragged out of the SfTreeGrid's boundary. 
 </td>
 </tr>
 
@@ -414,7 +414,7 @@ Occurs when the node is dragged out of the drop target (SfTreeGrid) boundary.
 [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html)
 </td>
 <td>
-Occurs while dropping the record in drop target (SfTreeGrid).
+Occurs when dropping the node within SfTreeGrid.
 </td>
 </tr>
 
