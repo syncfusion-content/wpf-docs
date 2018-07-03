@@ -887,7 +887,7 @@ DockingManager.SetHeader(content1, "SolutionExplorer");
 
 DockingManager.SetHeader(content2, "ToolBox");
 
-//Disable the Auto hide dunctionality
+//Disable the Auto hide functionality
 
 DockingManager.SetCanAutoHide(content1, false);
 

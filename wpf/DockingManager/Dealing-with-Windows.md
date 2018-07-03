@@ -1469,7 +1469,7 @@ The Splitter of the dock window can be customized using the SplitterSize and Spl
 
 DockingManager dock = new DockingManager();
 
-//For Splitter cutomization
+//For Splitter customization
 
 dock.UseDocumentContainer = true;
 
@@ -1969,7 +1969,7 @@ DockingManager.SetHeader(content1, "Document Window");
 
 DockingManager.SetState(content1, DockState.Document);
 
-//To collapse the default context menu in Dockument window
+//To collapse the default context menu in Document window
 
 DockingManager.SetCollapseDefaultContextMenuItemsInDocumentTab(content1, true);
 
@@ -2018,7 +2018,7 @@ DockingManager.SetHeader(content1, "Float Window");
 
 DockingManager.SetState(content1, DockState.Float);
 
-//To collapse the default context menu in Dockument window
+//To collapse the default context menu in Document window
 
 DockingManager.SetCollapseDefaultContextMenuItemsInFloat(content1, true);
 

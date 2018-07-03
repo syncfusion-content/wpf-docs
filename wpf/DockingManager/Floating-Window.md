@@ -137,7 +137,7 @@ Taskbar displays the icon of running applications for the purpose of switching b
 			
 DockingManager dock = new DockingManager();
 
-//Show Floatin Windows icons in TaskBar
+//Show Floating Windows icons in TaskBar
 
 dock.ShowFloatWindowInTaskbar = true;
 			
@@ -208,7 +208,7 @@ To enable or disable the taskbar support for particular window, use the attached
 			
 DockingManager dock = new DockingManager();
 
-//Show Floatin Windows icons in TaskBar
+//Show Floating Windows icons in TaskBar
 
 dock.ShowFloatWindowInTaskbar = true;
 			
