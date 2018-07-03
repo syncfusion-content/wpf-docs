@@ -109,8 +109,8 @@ You can customize appearance of the tooltip of a particular column by setting th
 The ToolTipTemplate receives the underlying data object as DataContext by default. You can set the [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundToolTip.html) to `true` to change the DataContext of the tooltip template where it sets the DataContext as DataContextHelper. The [TreeGridDataContextHelper](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html) has the following properties to reuse the same template for all the columns: 
 
  <ul>  
- <li><b> [Record:](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Record.html) </b> Gets the underlying data record of a row which has the cell.  </li>
- <li><b> [Value:](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Value.html)  </b> Gets the underlying value of a cell. </li> 
+ <li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Record.html"><b>Record:</b></a> Gets the underlying data record of a row which has the cell.  </li>
+ <li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Value.html"><b>Value:</b></a> Gets the underlying value of a cell. </li> 
  </ul>
 
 {% tabs %}
@@ -248,11 +248,11 @@ You can get the sample [here](http://www.syncfusion.com/downloads/support/direct
 The [CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellToolTipOpening_EV.html) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [TreeGridCellToolTipOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
 
 <ul>
-<li> [Column:](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html) Gets the hovered cell column in the SfTreeGrid.</li>
-<li> [Node:](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs~Node.html) Gets the hovered cell node.</li>
-<li> [Record:](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Record.html) Gets the data context of hovered cell.</li>
-<li> [RowColumnIndex:](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~RowColumnIndex.html) Gets the row and column index of the hovered cell.</li>
-<li> [ToolTip:](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~ToolTip.html) Gets the tooltip of the hovered cells.</li>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html">Column:</a> Gets the hovered cell column in the SfTreeGrid.</li>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs~Node.html">Node:</a> Gets the hovered cell node.</li>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Record.html">Record:</a> Gets the data context of hovered cell.</li>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~RowColumnIndex.html">RowColumnIndex:</a> Gets the row and column index of the hovered cell.</li>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~ToolTip.html">ToolTip:</a> Gets the tooltip of the hovered cells.</li>
 </ul>
 
 {% tabs %}
@@ -304,13 +304,13 @@ When dropping, the dragged node(s) can be added above or below or as a child nod
 
 N> Row drag-and-drop for the SfTreeGrid support is provided from Volume 2 2018 release (v16.2.0.41).
 
-## Dragging multiple nodes
+### Dragging multiple nodes
 
 The SfTreeGrid allows you to drag multiple selected nodes by setting the SfTreeGrid.SelectionMode as `Multiple` or `Extended`.
 
 ![](Interactive-Features_images/InteractiveFeatures_img8.png)
 
-## Drag-and-drop options
+### Drag-and-drop options
 
 The SfTreeGrid control has the following properties to control the drag-and-drop options manually.
 
@@ -429,7 +429,7 @@ Occurs when the nodes dropped within the SfTreeGrid.
 
 </table>
 
-## Drag-and-drop between TreeGrids
+### Drag-and-drop between TreeGrids
 
 The SfTreeGrid provides built-in support for drag-and-drop nodes between the SfTreeGrid controls.  
 
@@ -460,7 +460,7 @@ Follow the steps to implement drag-and-drop between the SfTreeGrid controls:
 
 3. Now, you can drag-and-drop nodes between both the SfTreeGrid controls. You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DRAGAN~1-710537123.zip).
 
-## Customizing row drag-and-drop
+### Customizing row drag-and-drop
 
 ### Auto expanding the node on drag over
 
