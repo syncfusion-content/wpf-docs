@@ -52,4 +52,26 @@ Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 
 {%endhighlight%}
 
+{%highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+dock.DockFill = true;
+dock.UseInteropCompatibilityMode = true;
+dock.Name = "DockingManager1";
+
+WebBrowser web1 = new WebBrowser();
+web1.Name = "Web1";
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(web1);
+
+//Adding control to the window
+
+Content = dock;
+
+{%endhighlight%}
+
 {% endtabs %}

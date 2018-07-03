@@ -34,7 +34,63 @@ To dock 4 children of a DockingManager in 4 different sides, then use `SideInDoc
 
 <ContentControl syncfusion:DockingManager.Header="Docking Bottom"  syncfusion:DockingManager.SideInDockedMode="Bottom" />
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+			
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+ContentControl content3 = new ContentControl();
+
+ContentControl content4 = new ContentControl();
+		
+//Set header of each Content Control
+
+DockingManager.SetHeader(content1, "Docking Left");
+
+DockingManager.SetHeader(content2, "Docking Top");
+
+DockingManager.SetHeader(content3, "Docking Right");
+
+DockingManager.SetHeader(content4, "Docking Bottom");
+
+//Set Dock left
+
+DockingManager.SetSideInDockedMode(content1, DockSide.Left);
+
+//Set Dock Top
+
+DockingManager.SetSideInDockedMode(content2, DockSide.Top);
+
+//Set Dock Right
+
+DockingManager.SetSideInDockedMode(content3, DockSide.Right);
+
+//Set Dock Bottom
+
+DockingManager.SetSideInDockedMode(content4, DockSide.Bottom);
+	
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+dock.Children.Add(content3);
+
+dock.Children.Add(content4);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -73,7 +129,79 @@ Also to set as Tabbed Window, the window should aware of a Target window name. T
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
                 syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>      
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+			
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+ContentControl content3 = new ContentControl();
+			
+ContentControl content4 = new ContentControl();
+
+ContentControl content5 = new ContentControl();
+
+//Set header of each Content Control
+
+DockingManager.SetHeader(content1, "Targeted Window");
+
+DockingManager.SetHeader(content2, "Top");
+
+DockingManager.SetHeader(content3, "Right");
+
+DockingManager.SetHeader(content4, "Left");
+
+DockingManager.SetHeader(content5, "Tabbed");
+
+content1.Name = "DockingWindow1";
+
+//Targeted to Docking Window1 on Top Side
+
+DockingManager.SetSideInDockedMode(content2, DockSide.Top);
+
+DockingManager.SetTargetNameInDockedMode(content2, "DockingWindow1");
+
+//Targeted to DockingWindow1 on Right Side
+
+DockingManager.SetSideInDockedMode(content3, DockSide.Right);
+
+DockingManager.SetTargetNameInDockedMode(content3, "DockingWindow1");
+
+//Targeted to DockingWindow1 on Left Side
+
+DockingManager.SetSideInDockedMode(content4, DockSide.Left);
+
+DockingManager.SetTargetNameInDockedMode(content4, "DockingWindow1");
+
+//Targeted to DockingWindow to tab
+
+DockingManager.SetSideInDockedMode(content5, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(content5, "DockingWindow1");
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+dock.Children.Add(content3);
+
+dock.Children.Add(content4);
+
+dock.Children.Add(content5);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -97,6 +225,7 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager MaximizeButtonEnabled="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer"/>
@@ -105,7 +234,39 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+//enable the MaximizeButtonEnabled for enable maximizing feature of Docking Window
+
+dock.MaximizeButtonEnabled = true;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+			
+//Set header of each Content Control
+
+DockingManager.SetHeader(content1, "Solution Explorer");
+
+DockingManager.SetHeader(content2, "Toolbox");
+			
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+		
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -123,7 +284,37 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 {% highlight XAML %}
 <syncfusion:DockingManager MaximizeButtonEnabled="True" MaximizeMode="FullScreen"/>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+//set MaximizeButtonEnabled for enable maximizing feature of Docking Window
+
+dock.MaximizeButtonEnabled = true;
+
+//Helps to change the maximization behavior of DockingWindow
+
+dock.MaximizeMode = MaximizeMode.FullScreen;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+			
+//Set header of each Content Control
+
+DockingManager.SetHeader(content1, "Solution Explorer");
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+			
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -139,6 +330,7 @@ To enable minimizing feature of DockingWindow, set `MinimizeButtonEnabled` to `T
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="SyncDockingManager" MinimizeButtonEnabled="True">
 
 <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"/>
@@ -147,7 +339,39 @@ To enable minimizing feature of DockingWindow, set `MinimizeButtonEnabled` to `T
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+//set MinimizeButtonEnabled for enable minimizing feature of Docking Window
+
+dock.MinimizeButtonEnabled = true;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+			
+//Set header of each Content Control
+
+DockingManager.SetHeader(content1, "Solution Explorer");
+
+DockingManager.SetHeader(content2, "Toolbox");
+			
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+		
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -162,6 +386,7 @@ DockingManager provides two attached property named `CanMaximize` and `CanMinimi
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager MaximizeButtonEnabled="True" MinimizeButtonEnabled="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.CanMinimize="False" />
@@ -170,7 +395,51 @@ DockingManager provides two attached property named `CanMaximize` and `CanMinimi
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+//set MinimizeButtonEnabled for enable minimizing feature of Docking Window
+
+dock.MinimizeButtonEnabled = true;
+
+//set MaximizeButtonEnabled for enable maximizing feature of Docking Window
+
+dock.MaximizeButtonEnabled = true;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+			
+//Set header of each Content Control
+
+DockingManager.SetHeader(content1, "Solution Explorer");
+
+DockingManager.SetHeader(content2, "Toolbox");
+
+//Restrict the Minimize option
+
+DockingManager.SetCanMinimize(content1, false);
+
+//Restrict the Maximize option
+
+DockingManager.SetCanMaximize(content2, false);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+		
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -187,12 +456,7 @@ The DockWindow Header can be highlighted when the mouse is hovered on an active 
 
 {% highlight XAML %}
 
-
 <syncfusion:DockingManager x:Name="SyncDockingManager" IsEnableHotTracking="True"/>
-
-
-
-
 
 {% endhighlight %}
 
@@ -206,12 +470,43 @@ The `CanDock` property can help to enable or disable the docking functionality b
 
 {% highlight XAML %}
 
-
 <ContentControl syncfusion:DockingManager.CanDock="False" />
 
+{% endhighlight %}
 
+{% highlight C# %}
 
+//Creating instance of DockingManager
+			
+DockingManager dock = new DockingManager();
 
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+//Set header
+
+DockingManager.SetHeader(content1, "SolutionExplorer");
+
+DockingManager.SetHeader(content2, "Toolbox");
+
+//To disable the docking functionality
+
+DockingManager.SetCanDock(content1, true);
+
+DockingManager.SetCanDock(content2, false);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -230,7 +525,35 @@ The `CanDock` property can help to enable or disable the docking functionality b
 <!--NoHeader enabled to this child-->
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.NoHeader="True" /> 
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+			
+DockingManager dock = new DockingManager();
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+//Set No header
+
+DockingManager.SetNoHeader(content1, true);
+
+DockingManager.SetHeader(content2, "Toolbox");
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 

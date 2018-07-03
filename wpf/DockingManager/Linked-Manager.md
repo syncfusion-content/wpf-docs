@@ -28,7 +28,6 @@ Source Docking Manager
 
 </syncfusion:DockingManager>
 
-
 {% endhighlight %}
 
 {% endtabs %}

@@ -39,7 +39,49 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+			
+DockingManager dock = new DockingManager();
+			
+//Set the tabs of the docked window at different sides
+
+dock.DockTabAlignment = Dock.Left;
+						
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+content1.Name = "Content1";
+
+content2.Name = "Content2";
+
+//Set Header
+
+DockingManager.SetHeader(content1, "Item1");
+
+DockingManager.SetHeader(content2, "Item2");
+
+//Tabbed Window
+
+DockingManager.SetSideInDockedMode(content2, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(content2, "Content1");
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -54,6 +96,7 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Right">
 
 <ContentControl syncfusion:DockingManager.Header="Item1"  x:Name="Content1"/>  
@@ -63,6 +106,50 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>
 				
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Creating instance of DockingManager
+			
+DockingManager dock = new DockingManager();
+			
+//Set the tabs of the docked window at different sides
+
+dock.DockTabAlignment = Dock.Right;
+						
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+content1.Name = "Content1";
+
+content2.Name = "Content2";
+
+//Set Header
+
+DockingManager.SetHeader(content1, "Item1");
+
+DockingManager.SetHeader(content2, "Item2");
+
+//Tabbed Window
+
+DockingManager.SetSideInDockedMode(content2, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(content2, "Content1");
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -89,9 +176,52 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+			
+DockingManager dock = new DockingManager();
+			
+//Set the tabs of the docked window at different sides
+
+dock.DockTabAlignment = Dock.Top;
+						
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+content1.Name = "Content1";
+
+content2.Name = "Content2";
+
+//Set Header
+
+DockingManager.SetHeader(content1, "Item1");
+
+DockingManager.SetHeader(content2, "Item2");
+
+//Tabbed Window
+
+DockingManager.SetSideInDockedMode(content2, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(content2, "Content1");
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
+
 
 {% endtabs %}
 
@@ -107,6 +237,7 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseActive">
 
 <ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" />  
@@ -121,7 +252,61 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+			
+DockingManager dock = new DockingManager();
+
+//To close the active element of Tabbed window.
+
+dock.CloseTabs = CloseTabsMode.CloseActive;
+						
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+ContentControl content3 = new ContentControl();
+
+content1.Name = "Content1";
+
+content2.Name = "Content2";
+
+content3.Name = "Content3";
+
+//Set Header
+
+DockingManager.SetHeader(content1, "Item1");
+
+DockingManager.SetHeader(content2, "Item2");
+
+DockingManager.SetHeader(content3, "Item3");
+
+//Tabbed Window
+
+DockingManager.SetSideInDockedMode(content2, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(content2, "Content1");
+
+DockingManager.SetSideInDockedMode(content3, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(content3, "Content1");
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+dock.Children.Add(content3);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -132,6 +317,7 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseAll">
 
 <ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1"/>  
@@ -146,6 +332,61 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Creating instance of DockingManager
+			
+DockingManager dock = new DockingManager();
+
+//To close all the Tabbed window.
+
+dock.CloseTabs = CloseTabsMode.CloseAll;
+						
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+ContentControl content3 = new ContentControl();
+
+content1.Name = "Content1";
+
+content2.Name = "Content2";
+
+content3.Name = "Content3";
+
+//Set Header
+
+DockingManager.SetHeader(content1, "Item1");
+
+DockingManager.SetHeader(content2, "Item2");
+
+DockingManager.SetHeader(content3, "Item3");
+
+//Tabbed Window
+
+DockingManager.SetSideInDockedMode(content2, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(content2, "Content1");
+
+DockingManager.SetSideInDockedMode(content3, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(content3, "Content1");
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+dock.Children.Add(content3);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 

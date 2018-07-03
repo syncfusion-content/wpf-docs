@@ -29,6 +29,42 @@ By default, the document state window is in TDI mode, that display child as tabb
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+dock.UseDocumentContainer = true;
+
+//Tabbed Document Interface.
+
+dock.ContainerMode = DocumentContainerMode.TDI;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+DockingManager.SetHeader(content1, "Document1");
+
+DockingManager.SetHeader(content2, "Document2");
+
+DockingManager.SetState(content2, DockState.Document);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
@@ -47,6 +83,44 @@ To make the document child window as MDI document, set the `ContainerMode` as `M
 <ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Document2" syncfusion:DockingManager.State="Document"/> 
 
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+dock.UseDocumentContainer = true;
+
+//Tabbed Document Interface.
+
+dock.ContainerMode = DocumentContainerMode.MDI;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+DockingManager.SetHeader(content1, "Document1");
+
+DockingManager.SetHeader(content2, "Document2");
+
+DockingManager.SetState(content1, DockState.Document);
+
+DockingManager.SetState(content2, DockState.Document);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -382,6 +456,40 @@ To enable or disable closing functionality of the MDI windows, set `CanClose` an
 
 {%endhighlight%}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+dock.UseDocumentContainer = true;
+
+//Tabbed Document Interface.
+
+dock.ContainerMode = DocumentContainerMode.MDI;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+DockingManager.SetHeader(content1, "Item1");
+
+DockingManager.SetState(content1, DockState.Document);
+
+//To enable or disable closing functionality of the MDI windows
+
+DockingManager.SetCanClose(content1, false);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+//Adding control to the window
+
+Content = dock;
+
+{%endhighlight%}
+
 {% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img12.jpeg)
@@ -446,6 +554,55 @@ The TDI document index can be changed by dragging and dropping it like Visual St
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+dock.UseDocumentContainer = true;
+
+dock.IsTDIDragDropEnabled = true;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+ContentControl content3 = new ContentControl();
+
+//Set Header
+
+DockingManager.SetHeader(content1, "Document1");
+
+DockingManager.SetHeader(content2, "Document2");
+
+DockingManager.SetHeader(content3, "Document3");
+
+//Set State
+
+DockingManager.SetState(content1, DockState.Document);
+
+DockingManager.SetState(content2, DockState.Document);
+
+DockingManager.SetState(content3, DockState.Document);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+dock.Children.Add(content3);
+
+//Adding control to the window
+
+Content = dock;
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Customizing Close Menu
@@ -469,6 +626,57 @@ Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the 
                 syncfusion:DockingManager.ShowCloseAllMenuItem="False"
                 syncfusion:DockingManager.ShowCloseAllButThisMenuItem="False"/>             
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+dock.UseDocumentContainer = true;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+ContentControl content2 = new ContentControl();
+
+//Set Header
+
+DockingManager.SetHeader(content1, "Item1");
+
+DockingManager.SetHeader(content2, "Item2");
+
+//Set State
+
+DockingManager.SetState(content1, DockState.Document);
+
+DockingManager.SetState(content2, DockState.Document);
+
+//Closing Customization
+
+DockingManager.SetShowCloseMenuItem(content1, false);
+
+DockingManager.SetShowCloseAllMenuItem(content1, false);
+
+DockingManager.SetShowCloseAllButThisMenuItem(content1, false);
+
+DockingManager.SetShowCloseMenuItem(content2, false);
+
+DockingManager.SetShowCloseAllMenuItem(content2, false);
+
+DockingManager.SetShowCloseAllButThisMenuItem(content2, false);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -544,6 +752,42 @@ To disabling Tab Groups, set TabGroupEnabled as `False`. So it does not display 
 <syncfusion:DockingManager TabGroupEnabled="False" />
 
 {%endhighlight %}
+
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+dock.UseDocumentContainer = true;
+
+//Disable the Vertical and Horizontal Tab Grouping feature
+
+dock.TabGroupEnabled = false;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+ContentControl content2 = new ContentControl();
+
+//Set Header
+DockingManager.SetHeader(content1, "Item1");
+DockingManager.SetHeader(content2, "Item2");
+
+//Set State
+DockingManager.SetState(content1, DockState.Document);
+DockingManager.SetState(content2, DockState.Document);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+dock.Children.Add(content2);
+
+//Adding control to the window
+
+Content = dock;
+
+{%endhighlight %}
  
 {% endtabs %}
 
@@ -560,6 +804,39 @@ TDI document of DockingManager can be changed to Float while dragging its TDI he
 <ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document" />
 
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+dock.UseDocumentContainer = true;
+
+//For TDI Document dragging
+
+dock.IsVS2010DraggingEnabled = true;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+//Set Header
+DockingManager.SetHeader(content1, "Item1");
+
+//Set State
+
+DockingManager.SetState(content1, DockState.Document);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
@@ -580,6 +857,39 @@ To enable the functionality of editing the TDI document header when double click
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+dock.UseDocumentContainer = true;
+
+//For Editing Document Header
+
+dock.EnableDocumentTabHeaderEdit = true;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+//Set Header
+DockingManager.SetHeader(content1, "Item1");
+
+//Set State
+
+DockingManager.SetState(content1, DockState.Document);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+//Adding control to the window
+
+Content = dock;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Hiding TDI Header
@@ -595,6 +905,41 @@ To hide the TDI document header when a single document child present in a Dockin
 <ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.State="Document" />
 
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager dock = new DockingManager();
+
+//For Header hiding
+
+dock.HideTDIHeaderOnSingleChild = true;
+
+//For Editing Document Header
+
+dock.EnableDocumentTabHeaderEdit = true;
+
+//Create the instance of ContentControl
+
+ContentControl content1 = new ContentControl();
+
+//Set Header
+DockingManager.SetHeader(content1, "Item1");
+
+//Set State
+
+DockingManager.SetState(content1, DockState.Document);
+
+//Add content controls to child of DockingManager
+
+dock.Children.Add(content1);
+
+//Adding control to the window
+
+Content = dock;
 
 {% endhighlight %}
 
