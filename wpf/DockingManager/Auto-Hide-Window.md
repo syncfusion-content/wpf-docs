@@ -35,72 +35,15 @@ AutoHidden window can be placed in four different sides such as Top, Bottom, Lef
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-content1.Name = "AutoHideWindow1";
-
-content2.Name = "AutoHideWindow2";
-
-content3.Name = "AutoHideWindow3";
-
-content4.Name = "AutoHideWindow4";
-
-
-//Set header
-
-DockingManager.SetHeader(content1, "Top");
-
-DockingManager.SetHeader(content2, "Left");
-
-DockingManager.SetHeader(content3, "Right");
-
-DockingManager.SetHeader(content4, "Bottom");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-DockingManager.SetState(content2, DockState.AutoHidden);
-
-DockingManager.SetState(content3, DockState.AutoHidden);
-
-DockingManager.SetState(content4, DockState.AutoHidden);
-
 //To place the auto hidden children in four different sides
 
-DockingManager.SetSideInDockedMode(content1, DockSide.Top);
+DockingManager.SetSideInDockedMode(autoHideWindow1, DockSide.Top);
 
-DockingManager.SetSideInDockedMode(content2, DockSide.Left);
+DockingManager.SetSideInDockedMode(autoHideWindow2, DockSide.Left);
 
-DockingManager.SetSideInDockedMode(content3, DockSide.Right);
+DockingManager.SetSideInDockedMode(autoHideWindow3, DockSide.Right);
 
-DockingManager.SetSideInDockedMode(content4, DockSide.Bottom);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetSideInDockedMode(autoHideWindow4, DockSide.Bottom);
 
 {% endhighlight %}
 
@@ -142,71 +85,23 @@ The AutoHideWindow can be placed on a required target window through the `Target
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-ContentControl content5 = new ContentControl();
-
-content1.Name = "AutoHideWindow1";
-			
-//Set header
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "Server Explorer");
-
-DockingManager.SetHeader(content3, "ToolBox");
-
-DockingManager.SetHeader(content4, "Output");
-
-DockingManager.SetHeader(content5, "Properties");
-
-DockingManager.SetState(content4, DockState.AutoHidden);
-
 //To place the auto hidden children in four different sides
 
-DockingManager.SetSideInDockedMode(content2, DockSide.Bottom);
+DockingManager.SetSideInDockedMode(autoHideWindow2, DockSide.Bottom);
 
-DockingManager.SetTargetNameInDockedMode(content2, "AutoHideWindow1");
+DockingManager.SetTargetNameInDockedMode(autoHideWindow2, "AutoHideWindow1");
 
-DockingManager.SetSideInDockedMode(content3, DockSide.Right);
+DockingManager.SetSideInDockedMode(autoHideWindow3, DockSide.Right);
 
-DockingManager.SetTargetNameInDockedMode(content3, "AutoHideWindow1");
+DockingManager.SetTargetNameInDockedMode(autoHideWindow3, "AutoHideWindow1");
 
-DockingManager.SetSideInDockedMode(content4, DockSide.Bottom);
+DockingManager.SetSideInDockedMode(autoHideWindow4, DockSide.Bottom);
 
-DockingManager.SetTargetNameInDockedMode(content4, "AutoHideWindow1");
+DockingManager.SetTargetNameInDockedMode(autoHideWindow4, "AutoHideWindow1");
 
-DockingManager.SetSideInDockedMode(content5, DockSide.Tabbed);
+DockingManager.SetSideInDockedMode(autoHideWindow5, DockSide.Tabbed);
 
-DockingManager.SetTargetNameInDockedMode(content5, "AutoHideWindow1");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-dock.Children.Add(content5);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetTargetNameInDockedMode(autoHideWindow5, "AutoHideWindow1");
 
 {% endhighlight %}
 
@@ -237,44 +132,18 @@ The side panel and side panel header can be customized by applying its Backgroun
 {% endhighlight %}
 
 {% highlight C# %}
-
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
 			
 //Set Customization colors
 
-dock.SidePanelBackground = new SolidColorBrush(Colors.Brown);
+SyncDockingManager.SidePanelBackground = new SolidColorBrush(Colors.Brown);
 
-dock.SidePanelBorderBrush = new SolidColorBrush(Colors.Yellow);
+SyncDockingManager.SidePanelBorderBrush = new SolidColorBrush(Colors.Yellow);
 
-dock.SideItemsBackground = new SolidColorBrush(Colors.Green);
+SyncDockingManager.SideItemsBackground = new SolidColorBrush(Colors.Green);
 
-dock.SideItemsBorderBrush = new SolidColorBrush(Colors.Violet);
+SyncDockingManager.SideItemsBorderBrush = new SolidColorBrush(Colors.Violet);
 
-dock.SidePanelBorderThickness = new Thickness(2, 2, 2, 2);
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.SidePanelBorderThickness = new Thickness(2, 2, 2, 2);
 
 {% endhighlight %}
 
@@ -304,39 +173,11 @@ The SideTabItem can be customized using the attached properties `SideTabItemFore
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-			
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
 //SideTabItem customization  
 
 DockingManager.SetSideTabItemBackground(content1, (new SolidColorBrush(Colors.Pink)));
 			
 DockingManager.SetSideTabItemForeground(content1, (new SolidColorBrush(Colors.Blue)));
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-DockingManager.SetState(content2, DockState.Dock);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-			
-//Adding control to the window
-
-Content = dock;
 
 {% endhighlight %}
 
@@ -382,98 +223,15 @@ The `EnableScrollableSidePanel` feature is used to provide scroll support when A
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //For Scroll Support
 
 dock.EnableScrollableSidePanel = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-ContentControl content5 = new ContentControl();
-
-ContentControl content6 = new ContentControl();
-
-ContentControl content7 = new ContentControl();
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
-DockingManager.SetHeader(content3, "Output");
-
-DockingManager.SetHeader(content4, "Class view");
-
-DockingManager.SetHeader(content5, "Server Explorer");
-
-DockingManager.SetHeader(content6, "Team Explorer");
-
-DockingManager.SetHeader(content7, "ErrorList");
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-DockingManager.SetState(content2, DockState.AutoHidden);
-
-DockingManager.SetState(content3, DockState.AutoHidden);
-
-DockingManager.SetState(content4, DockState.AutoHidden);
-
-DockingManager.SetState(content5, DockState.AutoHidden);
-
-DockingManager.SetState(content6, DockState.AutoHidden);
-
-DockingManager.SetState(content7, DockState.AutoHidden);
-
-DockingManager.SetSideInDockedMode(content1, DockSide.Bottom);
-
-DockingManager.SetSideInDockedMode(content2, DockSide.Bottom);
-
-DockingManager.SetSideInDockedMode(content3, DockSide.Bottom);
-
-DockingManager.SetSideInDockedMode(content4, DockSide.Bottom);
-
-DockingManager.SetSideInDockedMode(content5, DockSide.Bottom);
-
-DockingManager.SetSideInDockedMode(content6, DockSide.Bottom);
-
-DockingManager.SetSideInDockedMode(content7, DockSide.Bottom);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-dock.Children.Add(content5);
-
-dock.Children.Add(content6);
-
-dock.Children.Add(content7);
-
-//Adding control to the window
-
-Content = dock;
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img6.jpeg)
-
 
 
 ## Changing pinning behavior
@@ -500,53 +258,9 @@ Auto Hidden Tabbed window provides two different pinning behaviors `AutoHideActi
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //To auto-hide current active element of tabbed dock window
 
 DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideActive;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-content1.Name = "SolutionExplorer";
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
-DockingManager.SetHeader(content3, "Output");
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-DockingManager.SetState(content2, DockState.AutoHidden);
-
-DockingManager.SetState(content3, DockState.AutoHidden);
-
-DockingManager.SetSideInDockedMode(content1, DockSide.Left);
-		
-DockingManager.SetSideInDockedMode(content2, DockSide.Left);
-
-DockingManager.SetTargetNameInDockedMode(content3, "SolutionExplorer");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-			
-//Adding control to the window
-
-Content = dock;
 
 {% endhighlight %}
 
@@ -575,55 +289,9 @@ Content = dock;
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
 //To auto-hide current active element of tabbed dock window
 		
 DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideGroup;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-content1.Name = "SolutionExplorer";
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
-DockingManager.SetHeader(content3, "Output");
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-DockingManager.SetState(content2, DockState.AutoHidden);
-
-DockingManager.SetState(content3, DockState.AutoHidden);
-
-DockingManager.SetSideInDockedMode(content3, DockSide.Left);
-
-DockingManager.SetTargetNameInDockedMode(content3, "SolutionExplorer");
-
-DockingManager.SetSideInDockedMode(content2, DockSide.Left);
-
-DockingManager.SetTargetNameInDockedMode(content2, "SolutionExplorer");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-			
-//Adding control to the window
-
-Content = dock;
 
 {% endhighlight %}
 
@@ -648,27 +316,9 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-			
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
 //Set Animation delay
 
-DockingManager.SetAnimationDelay(content1, new Duration(TimeSpan.FromMilliseconds(100)));
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-			
-Content = dock;
+DockingManager.SetAnimationDelay(autoHideWindow1, new Duration(TimeSpan.FromMilliseconds(100)));
 
 {% endhighlight %}
 
@@ -696,29 +346,9 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //Set AnimationMode
 
 DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Fade;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-			
-Content = dock;
 
 {% endhighlight %}
 
@@ -740,29 +370,9 @@ Content = dock;
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //Set AnimationMode
 
 DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Scale;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-			
-Content = dock;
 
 {% endhighlight %}
 
@@ -784,29 +394,9 @@ Content = dock;
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //Set AnimationMode
 
 DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Slide;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-			
-Content = dock;
 
 {% endhighlight %}
 
@@ -830,27 +420,9 @@ The Pin button that performs Auto Hide functionality can be visible by default. 
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //Set Visibility
 
-dock.AutoHideVisibility = false;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.AutoHideVisibility = false;
 
 {% endhighlight %}
 
@@ -871,41 +443,15 @@ To enable or disable the AutoHide functionality for a specific child in the Dock
 
 {% endhighlight %}
 
-{% highlight XAML %}
-
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-			
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
+{% highlight C# %}
 
 //Disable the Auto hide functionality
 
-DockingManager.SetCanAutoHide(content1, false);
+DockingManager.SetCanAutoHide(autoHideWindow1, false);
 
 //Enable the Auto hide functionality
 
-DockingManager.SetCanAutoHide(content2, true);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-			
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCanAutoHide(autoHideWindow2, true);
 
 {% endhighlight %}
 
@@ -1015,27 +561,7 @@ On mouse over the AutoHidden tab, the auto hide animation starts. To disable thi
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-dock.IsAnimationEnabledOnMouseOver = false;
-
-//Create the instance of ContentControl
-			
-ContentControl content1 = new ContentControl();
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetState(content1, DockState.AutoHidden);
-
-//Add content controls to child of DockingManager
-			
-dock.Children.Add(content1);
-
-//Adding control to the window
-			
-Content = dock;
+SyncDockingManager.IsAnimationEnabledOnMouseOver = false;
 
 {% endhighlight %}
 

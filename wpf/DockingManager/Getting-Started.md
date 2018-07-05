@@ -31,8 +31,6 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -51,7 +49,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 //Creating instance of DockingManager
 
-DockingManager dock = new DockingManager();
+DockingManager SyncDockingManager = new DockingManager();
 
 {% endhighlight %}
 
@@ -82,38 +80,18 @@ DockingManager can accept any control as its children. Here five content control
 {% endhighlight %}
 
 {% highlight C# %}
-
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-ContentControl content5 = new ContentControl();
 			
 //Add content controls as child of DockingManager
 
-dock.Children.Add(content1);
+dock.Children.Add(dockWindow1);
 
-dock.Children.Add(content2);
+dock.Children.Add(dockWindow2);
 
-dock.Children.Add(content3);
+dock.Children.Add(dockWindow3);
 
-dock.Children.Add(content4);
+dock.Children.Add(dockWindow4);
 
-dock.Children.Add(content5);
-
-//Adding control to the window
-
-Content = dock;
+dock.Children.Add(dockWindow5);
 
 {% endhighlight %}
 
@@ -148,50 +126,18 @@ DockingManger provides with an attached property `Header` that helps to set the 
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-ContentControl content5 = new ContentControl();
-
 //Set header of each Content Control
 
-DockingManager.SetHeader(content1, "SolutionExplorer");
+DockingManager.SetHeader(dockWindow1, "Solution Explorer");
 
-DockingManager.SetHeader(content2, "ToolBox");
+DockingManager.SetHeader(dockWindow2, "Toolbox");
 
-DockingManager.SetHeader(content3, "Properties");
+DockingManager.SetHeader(dockWindow3, "Properties");
 
-DockingManager.SetHeader(content4, "Output");
+DockingManager.SetHeader(dockWindow4, "Output");
 
-DockingManager.SetHeader(content5, "StartPage");
+DockingManager.SetHeader(dockWindow5, "StartPage");
 			
-//Add content controls as child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-dock.Children.Add(content5);
-
-//Adding control to the window
-
-Content = dock;
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -228,65 +174,17 @@ Also enable the Document Container for the Document view by setting the `UseDocu
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-ContentControl content5 = new ContentControl();
-
-//Set header of each Content Control
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
-DockingManager.SetHeader(content3, "Properties");
-
-DockingManager.SetHeader(content4, "Output");
-
-DockingManager.SetHeader(content4, "StartPage");
-
 //Set State
 			
-DockingManager.SetState(content1, DockState.Dock);
+DockingManager.SetState(dockWindow1, DockState.Dock);
 
-DockingManager.SetState(content2, DockState.AutoHidden);
+DockingManager.SetState(dockWindow2, DockState.AutoHidden);
 
-DockingManager.SetState(content3, DockState.Float);
+DockingManager.SetState(dockWindow3, DockState.Float);
 
-DockingManager.SetState(content4, DockState.Dock);
+DockingManager.SetState(dockWindow4, DockState.Dock);
 
-DockingManager.SetState(content5, DockState.Document);
-
-//For Document State
-
-dock.UseDocumentContainer = true;
-			
-//Add content controls as child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-dock.Children.Add(content5);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetState(dockWindow5, DockState.Document);
 
 {% endhighlight %}
 
@@ -306,6 +204,7 @@ The side property's `Tabbed` option is used to tab a window on another window. T
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer"
@@ -327,79 +226,17 @@ The side property's `Tabbed` option is used to tab a window on another window. T
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-ContentControl content5 = new ContentControl();
-
-//Set header of each Content Control
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
-DockingManager.SetHeader(content3, "Properties");
-
-DockingManager.SetHeader(content4, "Output");
-
-DockingManager.SetHeader(content5, "StartPage");
-
-//Set State
-			
-DockingManager.SetState(content1, DockState.Dock);
-
-DockingManager.SetState(content2, DockState.AutoHidden);
-
-DockingManager.SetState(content3, DockState.Float);
-
-DockingManager.SetState(content4, DockState.Dock);
-
-DockingManager.SetState(content5, DockState.Document);
-
-//For Document State
-
-dock.UseDocumentContainer = true;
-			
-//Add content controls as child of DockingManager
-
-//Set ContentControl name for Tabbed Dock Mode
-
-content1.Name = "SolutionExplorer";
+dockWindow1.Name = "SolutionExplorer";
 
 //Set Dock Mode
 
-DockingManager.SetSideInDockedMode(content1, DockSide.Right);
+DockingManager.SetSideInDockedMode(dockWindow1, DockSide.Right);
 
 //For Tabbed Mode
 
-DockingManager.SetSideInDockedMode(content4, DockSide.Tabbed);
+DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Tabbed);
 
-DockingManager.SetTargetNameInDockedMode(content4, "SolutionExplorer");
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-dock.Children.Add(content5);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetTargetNameInDockedMode(dockdockWindow2, "SolutionExplorer");
 
 {% endhighlight %}
 
@@ -433,72 +270,12 @@ The `PersistState` feature of the DockingManager helps to save the current layou
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
 //Set PersistState for save the current layout of the DockingManager automatically
 			
-dock.PersistState = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-ContentControl content5 = new ContentControl();
-
-//Set header of each Content Control
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
-DockingManager.SetHeader(content3, "Properties");
-
-DockingManager.SetHeader(content4, "Output");
-
-DockingManager.SetHeader(content5, "StartPage");
-
-//Set State
-			
-DockingManager.SetState(content1, DockState.Dock);
-
-DockingManager.SetState(content2, DockState.AutoHidden);
-
-DockingManager.SetState(content3, DockState.Float);
-
-DockingManager.SetState(content4, DockState.Dock);
-
-DockingManager.SetState(content5, DockState.Document);
-
-//For Document State
-
-dock.UseDocumentContainer = true;
-			
-//Add content controls as child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-dock.Children.Add(content5);
-
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.PersistState = true;
 
 {% endhighlight %}
-
+ 
 {% endtabs %}
 
 The saved state can be reload by calling the `LoadDockState` method, whenever it is required to load the states.
@@ -508,7 +285,6 @@ The saved state can be reload by calling the `LoadDockState` method, whenever it
 {% highlight C# %}
 
 this.SyncDockingManager.LoadDockState();
-
 
 {% endhighlight %}
 
@@ -547,10 +323,6 @@ x:Class="WpfApplication7.MainWindow"
 
 Title="MainWindow" Height="350" Width="525" />
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -583,73 +355,9 @@ Title="MainWindow" Height="350" Width="525" />
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Set PersistState for save the current layout of the DockingManager automatically
-			
-dock.PersistState = true;
-
 //Set VisualStyle
 			
-SfSkinManager.SetVisualStyle(dock,VisualStyles.VisualStudio2013);
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-ContentControl content5 = new ContentControl();
-
-//Set header of each Content Control
-
-DockingManager.SetHeader(content1, "SolutionExplorer");
-
-DockingManager.SetHeader(content2, "ToolBox");
-
-DockingManager.SetHeader(content3, "Properties");
-
-DockingManager.SetHeader(content4, "Output");
-
-DockingManager.SetHeader(content5, "StartPage");
-
-//Set State
-			
-DockingManager.SetState(content1, DockState.Dock);
-
-DockingManager.SetState(content2, DockState.AutoHidden);
-
-DockingManager.SetState(content3, DockState.Float);
-
-DockingManager.SetState(content4, DockState.Dock);
-
-DockingManager.SetState(content5, DockState.Document);
-
-//For Document State
-
-dock.UseDocumentContainer = true;
-			
-//Add content controls as child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-dock.Children.Add(content5);
-
-//Adding control to the window
-
-Content = dock;
+SfSkinManager.SetVisualStyle(SyncDockingManager,VisualStyles.VisualStudio2013);
 
 {% endhighlight %}
 

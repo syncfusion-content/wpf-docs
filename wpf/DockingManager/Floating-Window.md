@@ -26,31 +26,9 @@ Floating window is like a Popup and it has some limitation in resizing. To avoid
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-dock.UseNativeFloatWindow = true;
-			
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-			
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
 //Set State
 
-DockingManager.SetState(content1, DockState.Float);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-			
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetState(float1, DockState.Float);
 
 {% endhighlight %}
 
@@ -77,31 +55,7 @@ The float window is rolled up to top using the property `IsRollUpTopProperty`. T
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-dock.IsRollupFloatWindow = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-			
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Float);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-			
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.IsRollupFloatWindow = true;
 
 {% endhighlight %}
 
@@ -133,48 +87,10 @@ Taskbar displays the icon of running applications for the purpose of switching b
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //Show Floating Windows icons in TaskBar
 
-dock.ShowFloatWindowInTaskbar = true;
-			
-dock.UseNativeFloatWindow = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Content = "No items to display in toolbox";
-
-content2.Content = "Loading failed";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "ToolBox");
-
-DockingManager.SetHeader(content2, "Solution Explorer");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Float);
-
-DockingManager.SetState(content2, DockState.Float);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content1);
-			
-//Adding control to the window
-
-Content = dock;
-
+SyncDockingManager.ShowFloatWindowInTaskbar = true;
+		
 {% endhighlight %}
 
 {% endtabs %}
@@ -204,51 +120,9 @@ To enable or disable the taskbar support for particular window, use the attached
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Show Floating Windows icons in TaskBar
-
-dock.ShowFloatWindowInTaskbar = true;
-			
-dock.UseNativeFloatWindow = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Content = "No items to display in toolbox";
-
-content2.Content = "Loading failed";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "ToolBox");
-
-DockingManager.SetHeader(content2, "Solution Explorer");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Float);
-
-DockingManager.SetState(content2, DockState.Float);
-
 //To enable or disable the taskbar support for particular window
 
-DockingManager.SetShowInTaskbar(content1, false);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-			
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetShowInTaskbar(float1, false);
 
 {% endhighlight %}
 
@@ -287,44 +161,14 @@ The `CanFloat` property helps to enable or disable the floating functionality by
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Content = "No items to display in toolbox";
-
-content2.Content = "Loading failed";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "ToolBox");
-
-DockingManager.SetHeader(content2, "Solution Explorer");
-
 //To Enable the Float Functionality 
 
-DockingManager.SetCanFloat(content1, true);
+DockingManager.SetCanFloat(float1, true);
 
 //To disable the Float Functionality
 
-DockingManager.SetCanFloat(content2, false);
+DockingManager.SetCanFloat(float2, false);
 			
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -351,31 +195,9 @@ The float window changes its state to `Dock` when double click its header by def
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
 //To disable float functionality for the specific child
 
-DockingManager.SetNoDock(content1, true);
-
-DockingManager.SetState(content1, DockState.Float);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetNoDock(float1, true);
 
 {% endhighlight %}
 
@@ -400,35 +222,9 @@ The float window provides Maximization support for better usability and it is on
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-dock.UseNativeFloatWindow = true;
-			
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-			
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Float);
-
 //Set Float Window Maximization support
 
 DockingManager.SetCanFloatMaximize(content1, true);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
 
 {% endhighlight %}
 
@@ -483,61 +279,17 @@ Float window can be snapped with the edge of another float window and moving all
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
+SyncDockingManager.EnableSnappingFloatWindow = true;
 			
-DockingManager dock = new DockingManager();
-
-dock.EnableSnappingFloatWindow = true;
-			
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-ContentControl content4 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Dock1");
-
-DockingManager.SetHeader(content2, "Dock2");
-
-DockingManager.SetHeader(content3, "Dock3");
-
-DockingManager.SetHeader(content4, "Dock4");
-
-//Set State
-
-DockingManager.SetState(content3, DockState.Float);
-
-DockingManager.SetState(content4, DockState.Float);
-
 //Set AllowSnap
 
-DockingManager.SetAllowSnap(content1, true);
+DockingManager.SetAllowSnap(float1, true);
 
-DockingManager.SetAllowSnap(content2, true);
+DockingManager.SetAllowSnap(float2, true);
 
-DockingManager.SetAllowSnap(content3, true);
+DockingManager.SetAllowSnap(float3, true);
 
-DockingManager.SetAllowSnap(content4, true);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-dock.Children.Add(content4);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetAllowSnap(float4, true);
 
 {% endhighlight %}
 

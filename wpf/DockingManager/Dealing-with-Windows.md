@@ -20,7 +20,6 @@ DockingManager1.ActiveWindow = Content1;
 
 DockingManager1.ActivateWindow("Content1");
 
-
 {% endhighlight %}
 
 {% highlight VB %}
@@ -233,8 +232,6 @@ DockingManager.SetState(Content1, DockState.Float);
 
 DockingManager.SetState(Content1, DockState.Document);
 
-
-
 {% endhighlight %}
 
 {% highlight VB %}
@@ -445,44 +442,10 @@ The float window allows to dock another float window inside it by default. This 
 {% endhighlight %}
 
 {% highlight C# %}
-
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Name = "Content1";
-		
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-DockingManager.SetHeader(content2, "Item2");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Float);
-
-DockingManager.SetState(content2, DockState.Float);
             
 //To restrict docking on another float window
 
-DockingManager.SetCanDockonFloat(content1, false);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCanDockonFloat(floatWindow1, false);
 
 {% endhighlight %}
 
@@ -509,31 +472,9 @@ DockingManager allows to dock the children in different sides using the DragProv
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-		
-//Set Header
-
-DockingManager.SetHeader(content1, "Document");
-
 //To restrict docking by drag providers
 
-DockingManager.SetDockAbility(content1, DockAbility.Horizontal);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetDockAbility(floatWindow1, DockAbility.Horizontal);
 
 {% endhighlight %}
 
@@ -565,31 +506,9 @@ Content = dock;
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-		
-//Set Header
-
-DockingManager.SetHeader(content1, "Document");
-
 //To restrict docking by drag providers
 
-DockingManager.SetDockAbility(content1, DockAbility.Vertical);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetDockAbility(floatWindow1, DockAbility.Vertical);
 
 {% endhighlight %}
 
@@ -621,45 +540,11 @@ A Docking window can be customized using the property HeaderBackground, Selected
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //Customization
 
-dock.SelectedHeaderBackground = new SolidColorBrush(Colors.Red);
+SyncDockingManager.SelectedHeaderBackground = new SolidColorBrush(Colors.Red);
 
-dock.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOrchid);
-						
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-content1.Name = "Content1";
-		
-//Set Header
-
-DockingManager.SetHeader(content1, "Dock1");
-
-DockingManager.SetHeader(content2, "Dock2");
-
-DockingManager.SetHeader(content3, "Dock3");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-/Adding control to the window
-
-Content = dock;
+SyncDockingManager.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOrchid);
 
 {% endhighlight %}
 
@@ -692,57 +577,19 @@ The float window can be customized by setting FloatWindowHeaderBackground, Float
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
 //Customization for Float Window
 
-dock.FloatWindowHeaderBackground = new SolidColorBrush(Colors.Brown);
+SyncDockingManager.FloatWindowHeaderBackground = new SolidColorBrush(Colors.Brown);
 
-dock.FloatWindowHeaderForeground = new SolidColorBrush(Colors.Blue);
+SyncDockingManager.FloatWindowHeaderForeground = new SolidColorBrush(Colors.Blue);
 
-dock.FloatWindowMouseOverBorderBrush = new SolidColorBrush(Colors.Orange);
+SyncDockingManager.FloatWindowMouseOverBorderBrush = new SolidColorBrush(Colors.Orange);
 
-dock.FloatWindowSelectedHeaderBackground = new SolidColorBrush(Colors.Pink);
+SyncDockingManager.FloatWindowSelectedHeaderBackground = new SolidColorBrush(Colors.Pink);
 
-dock.FloatWindowBorderBrush = new SolidColorBrush(Colors.Red);
+SyncDockingManager.FloatWindowBorderBrush = new SolidColorBrush(Colors.Red);
 
-dock.FloatWindowSelectedBorderBrush = new SolidColorBrush(Colors.Violet);
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-ContentControl content3 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Float");
-
-DockingManager.SetHeader(content2, "Float1");
-
-DockingManager.SetHeader(content3, "Float2");
-
-DockingManager.SetState(content1, DockState.Float);
-
-DockingManager.SetState(content2, DockState.Float);
-
-DockingManager.SetState(content3, DockState.Float);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-dock.Children.Add(content3);
-
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.FloatWindowSelectedBorderBrush = new SolidColorBrush(Colors.Violet);
 
 {% endhighlight %}
 
@@ -772,29 +619,9 @@ The attached property `CanDrag` that helps to enable or disable the dragging fun
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
 //Restrict drag
 
-DockingManager.SetCanDrag(content1, false);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCanDrag(floatWindow1, false);
 
 {% endhighlight %}
 
@@ -818,29 +645,9 @@ To drag child window in Shadow mode, set the DraggingType property of DockingMan
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
 //For Shadow effect dragging
 
-dock.DraggingType = DraggingType.ShadowDragging;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.DraggingType = DraggingType.ShadowDragging;
 
 {% endhighlight %}
 
@@ -868,29 +675,9 @@ To drag child window in Border mode, set the DraggingType property of DockingMan
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
 //For Shadow effect dragging
 
-dock.DraggingType = DraggingType.BorderDragging;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.DraggingType = DraggingType.BorderDragging;
 
 {% endhighlight %}
 
@@ -922,47 +709,11 @@ DockingManager allows to resize the dock and float windows by default. To restri
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Name = "Content1";
-
-content2.Name = "Content2";
-	
-//Set Header
-
-DockingManager.SetHeader(content1, "DockWindow");
-
-DockingManager.SetHeader(content2, "FloatWindow");
-			
-//Set State
-
-DockingManager.SetState(content1, DockState.Dock);
-
-DockingManager.SetState(content2, DockState.Float);
-
 //Restrict resizing window
 
-DockingManager.SetCanResizeInDockedState(content1, false);
+DockingManager.SetCanResizeInDockedState(dockWindow1, false);
 
-DockingManager.SetCanResizeInFloatState(content2, false);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCanResizeInFloatState(floatWindow1, false);
 
 {% endhighlight %}
 
@@ -987,47 +738,11 @@ To restrict resizing width for the Dock windows set the property `CanResizeWidth
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Name = "Content1";
-
-content2.Name = "Content2";
-	
-//Set Header
-
-DockingManager.SetHeader(content1, "DockWindow");
-
-DockingManager.SetHeader(content2, "FloatWindow");
-			
-//Set State
-
-DockingManager.SetState(content1, DockState.Dock);
-
-DockingManager.SetState(content2, DockState.Float);
-
 //Restrict width resizing of window
 			
-DockingManager.SetCanResizeWidthInDockedState(content1, false);
+DockingManager.SetCanResizeWidthInDockedState(dockWindow1, false);
 
-DockingManager.SetCanResizeWidthInFloatState(content2, false);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCanResizeWidthInFloatState(floatWindow1, false);
 
 {% endhighlight %}
 
@@ -1051,47 +766,11 @@ To restrict resizing the height for the float and dock window respectively, set 
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Name = "Content1";
-
-content2.Name = "Content2";
-	
-//Set Header
-
-DockingManager.SetHeader(content1, "DockWindow");
-
-DockingManager.SetHeader(content2, "FloatWindow");
-			
-//Set State
-
-DockingManager.SetState(content1, DockState.Dock);
-
-DockingManager.SetState(content2, DockState.Float);
-
 //Restrict height resizing of window
 			
-DockingManager.SetCanResizeHeightInDockedState(content1, false);
+DockingManager.SetCanResizeHeightInDockedState(dockWindow1, false);
 
-DockingManager.SetCanResizeHeightInFloatState(content2, false);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCanResizeHeightInFloatState(floatWindow1, false);
 
 {% endhighlight %}
 
@@ -1115,47 +794,11 @@ To set the desired maximum width for the float and dock windows respectively, se
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Name = "Content1";
-
-content2.Name = "Content2";
-	
-//Set Header
-
-DockingManager.SetHeader(content1, "DockWindow");
-
-DockingManager.SetHeader(content2, "FloatWindow");
-			
-//Set State
-
-DockingManager.SetState(content1, DockState.Dock);
-
-DockingManager.SetState(content2, DockState.Float);
-
 //Set Maximum width of window
 
-DockingManager.SetDesiredMaxWidthInDockedMode(content1,1000);
+DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow1,1000);
 
-DockingManager.SetDesiredMaxWidthInFloatingMode(content2,600);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetDesiredMaxWidthInFloatingMode(floatWindow1,600);
 
 {% endhighlight %}
 
@@ -1181,50 +824,13 @@ To set the maximum height for the float and dock windows respectively, set their
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-content1.Name = "Content1";
-
-content2.Name = "Content2";
-	
-//Set Header
-
-DockingManager.SetHeader(content1, "DockWindow");
-
-DockingManager.SetHeader(content2, "FloatWindow");
-			
-//Set State
-
-DockingManager.SetState(content1, DockState.Dock);
-
-DockingManager.SetState(content2, DockState.Float);
-
 //Set Maximum height of window
 
-DockingManager.SetDesiredMaxHeightInDockedMode(content1,700);
+DockingManager.SetDesiredMaxHeightInDockedMode(dockWindow1,700);
 
-DockingManager.SetDesiredMaxHeightInFloatingMode(content2,200);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetDesiredMaxHeightInFloatingMode(floatWindow1,200);
 
 {% endhighlight %}
-
 
 {% endtabs %}
 
@@ -1256,32 +862,11 @@ The desired height and width can be set for the Dock windows through the propert
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-
 //Set width and height of dock window
 
-DockingManager.SetDesiredHeightInDockedMode(content1,400);
+DockingManager.SetDesiredHeightInDockedMode(dockWindow1,400);
 
-DockingManager.SetDesiredWidthInDockedMode(content1, 300);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetDesiredWidthInDockedMode(dockWindow2, 300);
 
 {% endhighlight %}
 
@@ -1304,39 +889,9 @@ To size the float window based on the children window size, set the property `Si
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Float);
-
 //Set Float window size
 			
-DockingManager.SetSizetoContentInFloat(content1,true);
-
-content1.Width = 100;
-
-content1.Height = 24;
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetSizetoContentInFloat(floatWindow1,true);
 
 {% endhighlight %}
 
@@ -1362,35 +917,9 @@ To size the Dock window based on the children window size, set the property `Siz
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
 //Set dock window size
 						
-DockingManager.SetSizetoContentInDock(content1,true);
-
-content1.Width = 100;
-
-content1.Height = 24;
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetSizetoContentInDock(dockWindow1,true);
 
 {% endhighlight %}
 
@@ -1414,31 +943,9 @@ To load the child window initially with an absolute size, set the property DockF
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
 //For Absolute sizing
 
 DockingManager.SetDockFillMode(content1, DockFillModes.Absolute);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
 
 {% endhighlight %}
 
@@ -1465,35 +972,11 @@ The Splitter of the dock window can be customized using the SplitterSize and Spl
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
 //For Splitter customization
 
-dock.UseDocumentContainer = true;
+SyncDockingManager.SplitterBackground = new SolidColorBrush(Colors.Brown);
 
-dock.SplitterBackground = new SolidColorBrush(Colors.Brown);
-
-dock.SplitterSize = 10;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.SplitterSize = 10;
 
 {% endhighlight %}
 
@@ -1520,29 +1003,9 @@ To arrange the dock windows to a whole available space in the DockingManager, se
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
+//Dock windows arranged to a whole available space
 
-dock.DockFill = true;
-			
-//Create the instance of ContentControl
-			
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-
-//Set Header
-			
-DockingManager.SetHeader(content1, "Item1");
-
-//Add content controls to child of DockingManager
-			
-dock.Children.Add(content1);
-
-//Adding control to the window
-			
-Content = dock;
+SyncDockingManager.DockFill = true;
 
 {% endhighlight %}
 
@@ -1569,39 +1032,15 @@ And when DockFill functionality is enabled, DockingManager changes the DockWindo
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
+SyncDockingManager.UseDocumentContainer = true;
 
-DockingManager dock = new DockingManager();
-
-dock.UseDocumentContainer = true;
-
-dock.DockFill = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-DockingManager.SetHeader(content2, "Item2");
+SyncDockingManager.DockFill = true;
 
 //Set State
 
-DockingManager.SetState(content1, DockState.Document);
+DockingManager.SetState(dockWindow1, DockState.Document);
 
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetState(document1, DockState.Document);
 
 {% endhighlight %}
 
@@ -1618,7 +1057,7 @@ To restrict the behavior of changing the DockWindow to AutoHide when DockFill is
 
 {% highlight XAML %}
 
-<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" DockFill="True" DockFillDocumentMode="Normal">        
+<syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True" DockFill="True" DockFillDocumentMode="Normal">        
 
 <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1"/>   
 
@@ -1631,42 +1070,7 @@ To restrict the behavior of changing the DockWindow to AutoHide when DockFill is
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-dock.UseDocumentContainer = true;
-
-dock.DockFill = true;
-
-dock.DockFillDocumentMode = DockFillDocumentMode.Normal;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-ContentControl content2 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-DockingManager.SetHeader(content2, "Item2");
-
-
-//Set State
-
-DockingManager.SetState(content2, DockState.Document);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-dock.Children.Add(content2);
-
-//Adding control to the window
-
-Content = dock;
+SyncDockingManager.DockFillDocumentMode = DockFillDocumentMode.Normal;
 
 {% endhighlight %}
 
@@ -1705,45 +1109,25 @@ DockingManager allows to add  CustomContextMenuItems for Dock and Float windows 
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
 //For Custom ContextMenu
 
 CustomMenuItemCollection collection = new CustomMenuItemCollection();
 
-CustomMenuItem menu1 = new CustomMenuItem();
+CustomMenuItem item1 = new CustomMenuItem();
 
-CustomMenuItem menu2 = new CustomMenuItem();
+CustomMenuItem item2 = new CustomMenuItem();
 
-menu1.Header = "CustomItem1";
+item1.Header = "CustomItem1";
 
-menu2.Header = "CustomItem2";
+item2.Header = "CustomItem2";
 
-collection.Add(new CustomMenuItem() { Header = menu1 });
+collection.Add(new CustomMenuItem() { Header = item1 });
 
-collection.Add(new CustomMenuItem() { Header = menu2 });
+collection.Add(new CustomMenuItem() { Header = item22 });
 						 
 //Set ContextMenuItems
 
-DockingManager.SetCustomMenuItems(content1, collection);
-			
-//Set Header
-
-DockingManager.SetHeader(content1, "Dock1");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCustomMenuItems(dockWindow1, collection);
 
 {% endhighlight %}
 
@@ -1782,16 +1166,6 @@ The custom context menu items can be added in addition to default ContextMenu it
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-			
-DockingManager dock = new DockingManager();
-
-dock.UseDocumentContainer = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
 //For Custom ContextMenu
 
 DocumentTabItemMenuItemCollection collection = new DocumentTabItemMenuItemCollection();
@@ -1811,26 +1185,11 @@ collection.Add(new CustomMenuItem() { Header = item2 });
 //Set ContextMenuItems
 
 DockingManager.SetDocumentTabItemContextMenuItems(content1, collection);
-			
-//Set Header
-
-DockingManager.SetHeader(content1, "Dock1");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Document);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
 
 {% endhighlight %}
 
 {% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img24.jpeg)
 
 
@@ -1855,28 +1214,7 @@ To collapse the default context menu, set the property `CollapseDefaultContextMe
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-dock.CollapseDefaultContextMenuItems = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Item1");
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
-
+DockingManager1.CollapseDefaultContextMenuItems = true;
 
 {% endhighlight %}
 
@@ -1899,33 +1237,9 @@ To collapse the default context menu in Dock state window, set the property `Col
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-//Set Header
-
-DockingManager.SetHeader(content1, "DockWindow");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Dock);
-
 //To collapse the default context menu in Dock state window
 
-DockingManager.SetCollapseDefaultContextMenuItemsInDock(content1, true);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCollapseDefaultContextMenuItemsInDock(dockWindow1, true);
 
 {% endhighlight %}
 
@@ -1949,37 +1263,9 @@ To collapse the default context menu in Document state window, set the property 
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-dock.UseDocumentContainer = true;
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Document Window");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Document);
-
 //To collapse the default context menu in Document window
 
-DockingManager.SetCollapseDefaultContextMenuItemsInDocumentTab(content1, true);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCollapseDefaultContextMenuItemsInDocumentTab(document1, true);
 
 {% endhighlight%}
 
@@ -2000,35 +1286,9 @@ To collapse the default context menu in Float state window, set the property `Co
 
 {% highlight C# %}
 
-//Creating instance of DockingManager
-
-DockingManager dock = new DockingManager();
-
-//Create the instance of ContentControl
-
-ContentControl content1 = new ContentControl();
-
-content1.Name = "Content1";
-
-//Set Header
-
-DockingManager.SetHeader(content1, "Float Window");
-
-//Set State
-
-DockingManager.SetState(content1, DockState.Float);
-
 //To collapse the default context menu in Document window
 
-DockingManager.SetCollapseDefaultContextMenuItemsInFloat(content1, true);
-
-//Add content controls to child of DockingManager
-
-dock.Children.Add(content1);
-
-//Adding control to the window
-
-Content = dock;
+DockingManager.SetCollapseDefaultContextMenuItemsInFloat(floatWindow1, true);
 
 {% endhighlight %}
 
@@ -2059,7 +1319,6 @@ To add a client control in the DockingManager, set an attached property `ClientC
 <ContentControl syncfusion:DockingManager.Header="Bottom" syncfusion:DockingManager.SideInDockedMode="Bottom"/>
 
 </syncfusion:DockingManager>
-
 
 {% endhighlight %}
 
