@@ -326,7 +326,7 @@ Description
 
 <tr>
 <td>
-[SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html)
+{{'[SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html)' | markdownify }}
 </td>
 <td>
 Gets or sets whether the end user can drag the nodes or not.
@@ -335,7 +335,7 @@ Gets or sets whether the end user can drag the nodes or not.
 
 <tr>
 <td>
-[SfTreeGrid.AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#)
+{{'[SfTreeGrid.AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#)' | markdownify }}
 </td>
 <td>
 Gets or sets whether the end user can drop the nodes or not.
@@ -344,7 +344,7 @@ Gets or sets whether the end user can drop the nodes or not.
 
 <tr>
 <td>
-[SfTreeGrid.RowDragDropTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropTemplate.html)
+{{'[SfTreeGrid.RowDragDropTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropTemplate.html)' | markdownify }}
 </td>
 <td>
 Gets or sets the custom row drag pop-up data template.
@@ -353,7 +353,7 @@ Gets or sets the custom row drag pop-up data template.
 
 <tr>
 <td>
-[SfTreeGrid.RowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html)
+{{'[SfTreeGrid.RowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html)' | markdownify }}
 </td>
 <td>
 Gets or sets whether the end user can expand the collapsed nodes while dragging or not. 
@@ -362,7 +362,7 @@ Gets or sets whether the end user can expand the collapsed nodes while dragging 
 
 <tr>
 <td>
-[SfTreeGrid.RowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html)
+{{'[SfTreeGrid.RowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html)' | markdownify }}
 </td>
 <td>
 Gets or sets the time delay for expanding the collapsed nodes while dragging. 
@@ -384,7 +384,7 @@ Description
 
 <tr>
 <td>
-[SfTreeGrid.RowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html)
+{{'[SfTreeGrid.RowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html)' | markdownify }}
 </td>
 <td>
 Occurs when drag-and-drop operations are started.  
@@ -393,7 +393,7 @@ Occurs when drag-and-drop operations are started.
 
 <tr>
 <td>
-[SfTreeGrid.RowDragDropController.DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragOver_EV.html)
+{{'[SfTreeGrid.RowDragDropController.DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragOver_EV.html)' | markdownify }}
 </td>
 <td>
 Occurs continuously when the node is dragged within the SfTreeGrid's boundary.   
@@ -402,7 +402,7 @@ Occurs continuously when the node is dragged within the SfTreeGrid's boundary.
 
 <tr>
 <td>
-[SfTreeGrid.RowDragDropController.DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragLeave_EV.html)
+{{'[SfTreeGrid.RowDragDropController.DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragLeave_EV.html)' | markdownify }}
 </td>
 <td>
 Occurs when the node is dragged out of the SfTreeGrid's boundary. 
@@ -411,7 +411,7 @@ Occurs when the node is dragged out of the SfTreeGrid's boundary.
 
 <tr>
 <td>
-[SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html)
+{{'[SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html)' | markdownify }}
 </td>
 <td>
 Occurs when dropping the node within SfTreeGrid.
@@ -420,7 +420,7 @@ Occurs when dropping the node within SfTreeGrid.
 
 <tr>
 <td>
-[SfTreeGrid.RowDragDropController.Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Dropped_EV.html)
+{{'[SfTreeGrid.RowDragDropController.Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Dropped_EV.html)' | markdownify }}
 </td>
 <td>
 Occurs when the nodes dropped within the SfTreeGrid. 
