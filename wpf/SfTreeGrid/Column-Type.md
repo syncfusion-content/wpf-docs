@@ -1718,9 +1718,9 @@ public class ItemsSourceSelector : IItemsSourceSelector
 
 The following screenshot illustrates the different ShipCity ItemsSource bound to each row of the ComboBox based on the Country Name.
 
-![](Column-Types_images/Column-Types_img33.png)
+![](ColumnTypes_images/ColumnTypes_img33.png)
 
-![](Column-Types_images/Column-Types_img34.png)
+![](ColumnTypes_images/ColumnTypes_img34.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsDemo834486903.zip).
 
