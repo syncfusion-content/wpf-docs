@@ -9,7 +9,7 @@ documentation: UG
 
 # Working with PDF Layers
 
-The layer support in PDF viewer, allows the user to toggle the visibility of individual and group of layers in the PDF document to view, print, save and export as image.
+The layer support in PDF viewer allows users to toggle the visibility of individual and group of layers in the PDF document to view, print, save, and export as image.
 
 ## Toggling the visibility of a PDF layer
 
@@ -19,13 +19,13 @@ To toggle the visibility of PDF layers individually, click the eye icon associat
 
 ## Toggling the visibility of the group of layers
 
-To toggle the visibility of a group of PDF layers, click on the eye icon associated with the parent layer in the layers pane. 
+To toggle the visibility of a group of PDF layers, click the eye icon associated with parent layer in the layers pane.  
 
 ![](Layers_images/Layers_img2.png)
 
 ## Disabling the layers
 
-You can disable the display of the layers present in PDF document by setting the EnableLayers property to false. The following code example illustrates the same.
+You can disable the display of the layers present in the PDF document by setting the EnableLayers property to false. Refer to the following code example.
 
 {% tabs %}
 {% highlight C# %}
@@ -53,7 +53,7 @@ End Sub
 {% endtabs %}
 
 
-You can also achieve the same in XAML using the DependencyProperty of the same as illustrated below.
+You can also achieve the same in XAML using the DependencyProperty illustrated as follows.
 
 
 {% highlight xaml %}
