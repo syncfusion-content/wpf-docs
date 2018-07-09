@@ -158,7 +158,7 @@ The `Interval` property allows to set intervals for scale. The default value of 
 
 ## Scale customization
 
-You can customize the color, length, size, and position of the `LinearScale` using the `ScaleBarStroke`, `ScaleBarLength`, `ScaleBarSize`, `ScaleBarBorderThickness`, and `ScaleBarBorderBrush` properties, respectively.
+You can customize the color, length, size, and position of the `LinearScale` using the `ScaleBarStroke`, `ScaleBarBorderThickness`, and `ScaleBarBorderBrush` properties, respectively.
 
 {% tabs %}
 
