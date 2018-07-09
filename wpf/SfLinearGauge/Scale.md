@@ -210,12 +210,12 @@ You can customize the color, length, size, and position of the `LinearScale` usi
 
 ![](Scale_images/Scale_img4.png)
 
-## Size customization
+### Size customization
 
-Size of the scale can be customized with the help of two properties such as `ScaleBarSize` and `ScaleBarLength`.
+Size of the scale can be customized using the following two properties.
 
-* ScaleBarSize - Size of the scale bar (i.e height in case of landscape orientation) of the scale bar can be customized.
-* ScaleBarLength - Length of the scale bar (i.e width in case of landscape orientation) can be customized.
+* `ScaleBarSize` - Customizes the size of the scale bar (i.e height in case of landscape orientation).
+* `ScaleBarLength` - Customizes the length of the scale bar (i.e width in case of landscape orientation).
 
 {% tabs %}
 
