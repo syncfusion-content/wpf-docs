@@ -210,6 +210,63 @@ You can customize the color, length, size, and position of the `LinearScale` usi
 
 ![](Scale_images/Scale_img4.png)
 
+## Size customization
+
+Size of the scale can be customized with the help of two properties such as `ScaleBarSize` and `ScaleBarLength`.
+
+* ScaleBarSize - Size of the scale bar (i.e height in case of landscape orientation) of the scale bar can be customized.
+* ScaleBarLength - Length of the scale bar (i.e width in case of landscape orientation) can be customized.
+
+{% tabs %}
+
+{% highlight xml %}
+
+ <Gauges:SfLinearGauge Background="AliceBlue" BorderBrush="Black" 
+                          BorderThickness="1"
+                              Height="300" Width="500">
+
+ <Gauges:SfLinearGauge.MainScale>
+         <Gauges:LinearScale ScaleBarStroke="Blue" ScaleBarSize="50" 
+                  ScaleBarLength="350">
+        </Gauges:LinearScale>
+ </Gauges:SfLinearGauge.MainScale>
+            
+ </Gauges:SfLinearGauge>    
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            sfLinearGauge.Background = new SolidColorBrush(Colors.AliceBlue);
+
+            sfLinearGauge.BorderBrush = new SolidColorBrush(Colors.Black);
+
+            sfLinearGauge.BorderThickness = new Thickness(1);
+
+            sfLinearGauge.Height = 300;
+
+            sfLinearGauge.Width=500;
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.ScaleBarStroke = new SolidColorBrush(Colors.Blue);
+           
+            linearScale.ScaleBarSize = 50;
+
+            linearScale.ScaleBarLength = 350;
+           
+            sfLinearGauge.MainScale = linearScale;
+
+            grid.Children.Add(sfLinearGauge);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Scale_images/Scale_img7.png)
+
 ## Setting scale direction
 
 You can set the scale position to its forward and backward using the `ScalePosition` property.
