@@ -87,7 +87,7 @@ Selected objects can be deleted by <kdb> Delete </kdb> and In-built Delete comma
         /// <param name="args"></param>
         private void MainWindow_ItemDeletingEvent(object sender, DiagramPreviewEventArgs args)
         {
-            //For Deleting Node Without its Delependent Connector
+            //For Deleting Node Without its Dependent Connector
 
             (args as ItemDeletingEventArgs).DeleteDependentConnector = false;
         }
