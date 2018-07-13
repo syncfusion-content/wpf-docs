@@ -57,7 +57,7 @@ PathFractionCollection patch = new PathFractionCollection();
 
 FractionValue fraction = new FractionValue() { Fraction = 0, Value=1 };
 
-patchf.Add(fraction);
+patch.Add(fraction);
 
 carousel.OpacityFraction = patch[0].Value;
 
@@ -70,7 +70,7 @@ carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "I
 Dim carousel As Carousel = New Carousel
 Dim patch As PathFractionCollection = New PathFractionCollection
 Dim fraction As FractionValue = New FractionValue
-patch.Add(fractionvalue)
+patch.Add(fraction)
 carousel.OpacityFraction = patch(0).Value
 
 carousel.ItemsSource = New ObservableCollection(Of String)() From { _
