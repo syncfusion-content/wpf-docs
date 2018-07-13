@@ -237,6 +237,7 @@ The default filter condition is Begins With, the below filter conditions are ava
 <li>Begins With</li>
 <li>Ends With</li>
 <li>Contains</li>
+<li>Does Not Contain</li>
 <li>Empty</li>
 <li>Not Empty</li> 
 </ol>
@@ -434,7 +435,7 @@ public MainWindow()
 {% endtabs %}
 
 ### Customizing filter options for particular columns 
-By default, TextBox editor will display the string related conditions like Begins With, Ends With, Contains, Empty, Not Empty filter row conditions in drop down. The below code shows how to display the custom filter row conditions in TextBox editor by overriding the [OpenFilterOptionPopup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell~OpenFilterOptionPopup.html) method in a [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html) class.
+By default, TextBox editor will display the string related conditions like Begins With, Ends With, Contains, Does Not Contain, Empty, Not Empty filter row conditions in drop down. The below code shows how to display the custom filter row conditions in TextBox editor by overriding the [OpenFilterOptionPopup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell~OpenFilterOptionPopup.html) method in a [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html) class.
 
 {% tabs %}
 {% highlight c# %}
