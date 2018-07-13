@@ -53,13 +53,13 @@ Please find the code snippet for the same:
 
 Carousel carousel = new Carousel() { Margin = new Thickness(4,4,4,4), RadiusX = 220, RadiusY = -100, ScaleFraction=0.60 };
 
-PathFractionCollection patchfract = new PathFractionCollection();
+PathFractionCollection patch = new PathFractionCollection();
 
-FractionValue fractionvalue = new FractionValue() { Fraction = 0, Value=1 };
+FractionValue fraction = new FractionValue() { Fraction = 0, Value=1 };
 
-patchfract.Add(fractionvalue);
+patchf.Add(fraction);
 
-carousel.OpacityFraction = patchfract[0].Value;
+carousel.OpacityFraction = patch[0].Value;
 
 carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
 
@@ -68,10 +68,10 @@ carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "I
 {% highlight VB %}
 
 Dim carousel As Carousel = New Carousel
-Dim patchfract As PathFractionCollection = New PathFractionCollection
-Dim fractionvalue As FractionValue = New FractionValue
-patchfract.Add(fractionvalue)
-carousel.OpacityFraction = patchfract(0).Value
+Dim patch As PathFractionCollection = New PathFractionCollection
+Dim fraction As FractionValue = New FractionValue
+patch.Add(fractionvalue)
+carousel.OpacityFraction = patch(0).Value
 
 carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 	"Item1", _
@@ -124,19 +124,19 @@ Please find the code snippet below:
 
 Carousel carousel = new Carousel() { SkewAngleXEnabled = true, SkewAngleYEnabled = true };
 
-PathFractionCollection patchfract = new PathFractionCollection();
+PathFractionCollection patch = new PathFractionCollection();
 
 FractionValue fractionvalue1 = new FractionValue() { Fraction = 0, Value=1 };
 
 FractionValue fractionvalue2 = new FractionValue() { Fraction = 1, Value = 0.5 };
 
-patchfract.Add(fractionvalue1);
+patch.Add(fractionvalue1);
 
-patchfract.Add(fractionvalue2);
+patch.Add(fractionvalue2);
 
-carousel.OpacityFractions.Add(patchfract[0]);
+carousel.OpacityFractions.Add(patch[0]);
 
-carousel.OpacityFractions.Add(patchfract[1]);
+carousel.OpacityFractions.Add(patch[1]);
 
 carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
 
@@ -150,19 +150,19 @@ carousel.SkewAngleYEnabled = true
 
 carousel.SkewAngleXEnabled = true
 
-Dim patchfract As PathFractionCollection = New PathFractionCollection
+Dim patch As PathFractionCollection = New PathFractionCollection
 
 Dim fractionvalue1 As FractionValue = New FractionValue
 
 Dim fractionvalue2 As FractionValue = New FractionValue
 
-patchfract.Add(fractionvalue1)
+patch.Add(fractionvalue1)
 
-patchfract.Add(fractionvalue2)
+patch.Add(fractionvalue2)
 
-carousel.OpacityFractions.Add(patchfract(0))
+carousel.OpacityFractions.Add(patch(0))
 
-carousel.OpacityFractions.Add(patchfract(1))
+carousel.OpacityFractions.Add(patch(1))
 
 carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 	"Item1", _
