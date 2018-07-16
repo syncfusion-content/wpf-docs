@@ -9,7 +9,7 @@ documentation: ug
 
 # MVVM
 
-This section will demonstrate how to bind the items in the SfDataGrid using MVVM.
+This section explains various MVVM requirements using SfDataGrid.
 
 ## Bind the SelectedItem property of SfDataGrid
 
