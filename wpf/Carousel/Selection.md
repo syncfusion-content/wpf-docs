@@ -27,7 +27,27 @@ SelectedItem is a property in the Carousel that stores the currently selected Ca
 
 {% highlight C# %}
 
+Carousel carousel = new Carousel();
+carousel.Items.Add(new CarouselItem() { Content = "1", Name="item1" });
+carousel.Items.Add(new CarouselItem() { Content = "2", Name = "item2" });
+carousel.Items.Add(new CarouselItem() { Content = "3", Name = "item3" });
+carousel.Items.Add(new CarouselItem() { Content = "4", Name = "item4" });
+carousel.Items.Add(new CarouselItem() { Content = "5", Name = "item5" });
+
 carousel.SelectedItem = item3;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim carousel As Carousel = New Carousel
+carousel.Items.Add(New CarouselItem)
+carousel.Items.Add(New CarouselItem)
+carousel.Items.Add(New CarouselItem)
+carousel.Items.Add(New CarouselItem)
+carousel.Items.Add(New CarouselItem)
+
+carousel.SelectedItem = item3
 
 {% endhighlight %}
 
@@ -65,7 +85,7 @@ IsSelected is a Boolean property in the CarouselItem which is used to select a p
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
 <syncfusion:Carousel x:Name="carousel">
 
