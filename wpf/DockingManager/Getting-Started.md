@@ -17,7 +17,7 @@ There are several ways to add Syncfusion control in to the Visual Studio WPF pro
 * Create a WPF project in Visual Studio and refer to the following assemblies.
 1. Syncfusion.Tools.Wpf
 2. Syncfusion.Shared.Wpf
-* Include an XML namespace for the above assemblies to the Main window.
+* Include an namespace for the above assemblies to the Main window.
 
 {% tabs %}
 
@@ -31,7 +31,11 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+using Syncfusion.Windows.Tools.Controls;
 
 {% endhighlight %}
 
@@ -45,7 +49,13 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 <syncfusion:DockingManager x:Name="SyncDockingManager" />
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Creating instance of DockingManager
+
+DockingManager SyncDockingManager = new DockingManager();
 
 {% endhighlight %}
 
@@ -73,7 +83,31 @@ DockingManager can accept any control as its children. Here five content control
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+ContentControl SolutionExplorer= new ContentControl();
+
+ContentControl ToolBox = new ContentControl();
+
+ContentControl Properties = new ContentControl();
+
+ContentControl Output = new ContentControl();
+
+ContentControl StartPage = new ContentControl();
+
+//Add content controls as child of DockingManager
+
+dock.Children.Add(SolutionExplorer);
+
+dock.Children.Add(ToolBox);
+
+dock.Children.Add(Properties);
+
+dock.Children.Add(Output);
+
+dock.Children.Add(StartPage);
 
 {% endhighlight %}
 
@@ -98,14 +132,28 @@ DockingManger provides with an attached property `Header` that helps to set the 
 
 <ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties" />
 
-<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"/>
+<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Output"/>
 
 <ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page" />
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
 
+//Set header of each Content Control
+
+DockingManager.SetHeader(SolutionExplorer, "Solution Explorer");
+
+DockingManager.SetHeader(ToolBox, "Toolbox");
+
+DockingManager.SetHeader(Properties, "Properties");
+
+DockingManager.SetHeader(Properties, "Output");
+
+DockingManager.SetHeader(StartPage, "StartPage");
+			
 {% endhighlight %}
 
 {% endtabs %}
@@ -123,6 +171,7 @@ Also enable the Document Container for the Document view by setting the `UseDocu
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
 
 <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer" />
@@ -137,7 +186,25 @@ Also enable the Document Container for the Document view by setting the `UseDocu
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+// Enable UseDocumentContainer to have a document state windows
+
+SyncDockingManager.UseDocumentContainer = true;
+
+//Set State
+
+DockingManager.SetState(SolutionExplorer, DockState.Dock);
+
+DockingManager.SetState(ToolBox, DockState.AutoHidden);
+
+DockingManager.SetState(Properties, DockState.Float);
+
+DockingManager.SetState(Output, DockState.Dock);
+
+DockingManager.SetState(StartPage, DockState.Document);
 
 {% endhighlight %}
 
@@ -157,6 +224,7 @@ The side property's `Tabbed` option is used to tab a window on another window. T
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer"
@@ -174,7 +242,19 @@ The side property's `Tabbed` option is used to tab a window on another window. T
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+// Dock at right side
+
+DockingManager.SetSideInDockedMode(SolutionExplorer, DockSide.Right);
+
+// For Tabbed Mode
+
+DockingManager.SetTargetNameInDockedMode(Output, "SolutionExplorer");
+
+DockingManager.SetSideInDockedMode(Output, DockSide.Tabbed);
 
 {% endhighlight %}
 
@@ -204,10 +284,14 @@ The `PersistState` feature of the DockingManager helps to save the current layou
 
 </syncfusion:DockingManager>
 
-
-
 {% endhighlight %}
 
+{% highlight C# %}
+			
+SyncDockingManager.PersistState = true;
+
+{% endhighlight %}
+ 
 {% endtabs %}
 
 The saved state can be reload by calling the `LoadDockState` method, whenever it is required to load the states.
@@ -217,7 +301,6 @@ The saved state can be reload by calling the `LoadDockState` method, whenever it
 {% highlight C# %}
 
 this.SyncDockingManager.LoadDockState();
-
 
 {% endhighlight %}
 
@@ -237,7 +320,7 @@ DockingManager supports various visual styles by using the `SfSkinManager`. To a
 1. Syncfusion.SfSkinManager.Wpf
 2. Syncfusion.Themes.VisualStudio2013.Wpf
 
-* Include an XML namespace for the `SfSkinManager` assembly to the MainWindow.
+* Include an namespace for the `SfSkinManager` assembly to the MainWindow.
 {% tabs %}
 
 {% highlight XAML %}
@@ -256,9 +339,11 @@ x:Class="WpfApplication7.MainWindow"
 
 Title="MainWindow" Height="350" Width="525" />
 
+{% endhighlight %}
 
+{% highlight C# %}
 
-
+using Syncfusion.SfSkinManager;
 
 {% endhighlight %}
 
@@ -288,9 +373,13 @@ Title="MainWindow" Height="350" Width="525" />
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
 
-
+//Set VisualStyle
+			
+SfSkinManager.SetVisualStyle(SyncDockingManager,VisualStyles.VisualStudio2013);
 
 {% endhighlight %}
 

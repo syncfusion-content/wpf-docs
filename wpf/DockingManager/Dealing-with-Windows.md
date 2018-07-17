@@ -20,7 +20,6 @@ DockingManager1.ActiveWindow = Content1;
 
 DockingManager1.ActivateWindow("Content1");
 
-
 {% endhighlight %}
 
 {% highlight VB %}
@@ -233,8 +232,6 @@ DockingManager.SetState(Content1, DockState.Float);
 
 DockingManager.SetState(Content1, DockState.Document);
 
-
-
 {% endhighlight %}
 
 {% highlight VB %}
@@ -344,25 +341,23 @@ DockingManager1.ExecuteRestore(Content1, DockState.Float)
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
+
+// For windows in Document state
+dockingManager.CloseButtonClick += Docking_CloseButtonClick;
+
+// For windows in Float, Dock and AutoHidden state
+dockingManager.WindowClosing += Docking_WindowClosing;
 
 private void dockingManager_CloseButtonClick(object sender, CloseButtonEventArgs e)
 
 {
-
-// For windows in Document state
 
 }
 
 private void dockingManager_WindowClosing(object sender, WindowClosingEventArgs e)
 
 {
-
-// For windows in Float, Dock and AutoHidden state
 
 }
 
@@ -444,7 +439,14 @@ The float window allows to dock another float window inside it by default. This 
 
 {% endhighlight %}
 
+{% highlight C# %}
+            
+DockingManager.SetCanDockonFloat(Item1, false);
+
+{% endhighlight %}
+
 {% endtabs %}
+
 ## Restricting Docking by Drag Providers
 
 DockingManager allows to dock the children in different sides using the DragProviders. To restrict dock ability of the dock children to any particular side, set the property `DockAbility` with the required values.
@@ -465,19 +467,19 @@ DockingManager allows to dock the children in different sides using the DragProv
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+DockingManager.SetDockAbility(window1, DockAbility.Horizontal);
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img7.jpeg)
 
-
-
-
-
 * Setting DockAbility as Vertical  – Restrict the children to dock only on Vertical side by providing the Vertical Drag providers
 
-
 {% tabs %}
-
 
 {%highlight XAML %}
 
@@ -489,6 +491,11 @@ DockingManager allows to dock the children in different sides using the DragProv
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager.SetDockAbility(window1, DockAbility.Vertical);
 
 {% endhighlight %}
 
@@ -501,10 +508,10 @@ DockingManager allows to dock the children in different sides using the DragProv
 
 A Docking window can be customized using the property HeaderBackground, SelectedHeaderBackground, HeaderMouseHoverBackground with the desired brush values respectively.
 
-
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager SelectedHeaderBackground="Red" HeaderBackground="Brown" HeaderMouseOverBackground="DarkOrchid"  >
 
 <ContentControl syncfusion:DockingManager.Header="Dock"/>
@@ -515,6 +522,15 @@ A Docking window can be customized using the property HeaderBackground, Selected
 
 </syncfusion:DockingManager> 
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+SyncDockingManager.SelectedHeaderBackground = new SolidColorBrush(Colors.Red);
+
+SyncDockingManager.HeaderBackground = new SolidColorBrush(Colors.Brown);
+
+SyncDockingManager.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOrchid);
 
 {% endhighlight %}
 
@@ -532,7 +548,7 @@ The float window can be customized by setting FloatWindowHeaderBackground, Float
 {% highlight XAML %}
 
 <syncfusion:DockingManager FloatWindowHeaderBackground="Brown" FloatWindowHeaderForeground="Blue"
-                           FloatWindowMouseOverBorderBrush="Orange" FloatWindowSelectedHeaderBackground="pink"
+                           FloatWindowMouseOverBorderBrush="Orange" FloatWindowSelectedHeaderBackground="Pink"
                            FloatWindowBorderBrush="Red" FloatWindowSelectedBorderBrush="BlueViolet" >
 
 <ContentControl syncfusion:DockingManager.Header="Float" syncfusion:DockingManager.State="Float"/>
@@ -543,17 +559,30 @@ The float window can be customized by setting FloatWindowHeaderBackground, Float
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+SyncDockingManager.FloatWindowHeaderBackground = new SolidColorBrush(Colors.Brown);
+
+SyncDockingManager.FloatWindowHeaderForeground = new SolidColorBrush(Colors.Blue);
+
+SyncDockingManager.FloatWindowMouseOverBorderBrush = new SolidColorBrush(Colors.Orange);
+
+SyncDockingManager.FloatWindowSelectedHeaderBackground = new SolidColorBrush(Colors.Pink);
+
+SyncDockingManager.FloatWindowBorderBrush = new SolidColorBrush(Colors.Red);
+
+SyncDockingManager.FloatWindowSelectedBorderBrush = new SolidColorBrush(Colors.BlueViolet);
 
 {% endhighlight %}
 
 {% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img10.jpeg)
 
 
 ## Enable/Disable Dragging a Window
-
-
-
 
 The attached property `CanDrag` that helps to enable or disable the dragging functionality of a window by setting its value as True or False respectively. By default its value is `True`, to disable this functionality turn its value to `False`.
 
@@ -567,7 +596,11 @@ The attached property `CanDrag` that helps to enable or disable the dragging fun
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+DockingManager.SetCanDrag(Item1, false);
 
 {% endhighlight %}
 
@@ -580,13 +613,18 @@ To drag child window in Shadow mode, set the DraggingType property of DockingMan
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="DockingManager1" DraggingType="ShadowDragging"  >      
 
 <ContentControl syncfusion:DockingManager.Header="Item1"/>
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+SyncDockingManager.DraggingType = DraggingType.ShadowDragging;
 
 {% endhighlight %}
 
@@ -609,6 +647,12 @@ To drag child window in Border mode, set the DraggingType property of DockingMan
 <ContentControl syncfusion:DockingManager.Header="Item1"/>    
 
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SyncDockingManager.DraggingType = DraggingType.BorderDragging;
 
 {% endhighlight %}
 
@@ -636,9 +680,13 @@ DockingManager allows to resize the dock and float windows by default. To restri
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
 
+DockingManager.SetCanResizeInDockedState(Content1, false);
 
+DockingManager.SetCanResizeInFloatState(Content2, false);
 
 {% endhighlight %}
 
@@ -659,9 +707,13 @@ To restrict resizing width for the Dock windows set the property `CanResizeWidth
 <ContentControl syncfusion:DockingManager.Header="Floatwindow" x:Name="Content2"
                 syncfusion:DockingManager.State="Float" syncfusion:DockingManager.CanResizeWidthInFloatState="False"/>
 
+{% endhighlight %}
 
+{% highlight C# %}
+		
+DockingManager.SetCanResizeWidthInDockedState(Content1, false);
 
-
+DockingManager.SetCanResizeWidthInFloatState(Content2, false);
 
 {% endhighlight %}
 
@@ -674,11 +726,20 @@ To restrict resizing the height for the float and dock window respectively, set 
 {% tabs %}
 
 {% highlight XAML %}
+
 <ContentControl syncfusion:DockingManager.Header="Dockwindow" x:Name="Content1"
                 syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.CanResizeHeightInDockedState="False"/>
 
 <ContentControl syncfusion:DockingManager.Header="Floatwindow" x:Name="Content2"
                 syncfusion:DockingManager.State="Float" syncfusion:DockingManager.CanResizeHeightInFloatState="False"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+		
+DockingManager.SetCanResizeHeightInDockedState(Content1, false);
+
+DockingManager.SetCanResizeHeightInFloatState(Content2, false);
 
 {% endhighlight %}
 
@@ -698,7 +759,13 @@ To set the desired maximum width for the float and dock windows respectively, se
 <ContentControl syncfusion:DockingManager.Header="Floatwindow"
                 syncfusion:DockingManager.State="Float" syncfusion:DockingManager.DesiredMaxWidthInFloatingMode="600"/>                     
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+DockingManager.SetDesiredMaxWidthInDockedMode(dockWindow1,1000);
+
+DockingManager.SetDesiredMaxWidthInFloatingMode(floatWindow1,600);
 
 {% endhighlight %}
 
@@ -713,11 +780,20 @@ To set the maximum height for the float and dock windows respectively, set their
 {% tabs %}
 
 {% highlight XAML %}
+
 <ContentControl syncfusion:DockingManager.Header="Dockwindow"
                 syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.DesiredMaxHeightInDockedMode="300"/>
 
 <ContentControl syncfusion:DockingManager.Header="Floatwindow"
                 syncfusion:DockingManager.State="Float" syncfusion:DockingManager.DesiredMaxHeightInFloatingMode="200"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager.SetDesiredMaxHeightInDockedMode(dockWindow1,700);
+
+DockingManager.SetDesiredMaxHeightInFloatingMode(floatWindow1,200);
 
 {% endhighlight %}
 
@@ -747,6 +823,13 @@ The desired height and width can be set for the Dock windows through the propert
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager.SetDesiredHeightInDockedMode(Content1,400);
+
+DockingManager.SetDesiredWidthInDockedMode(Content1, 300);
 
 {% endhighlight %}
 
@@ -767,22 +850,34 @@ To size the float window based on the children window size, set the property `Si
 
 {% endhighlight %}
 
+{% highlight C# %}
+		
+DockingManager.SetSizetoContentInFloat(Content1,true);
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img16.jpeg)
-
 
 To size the Dock window based on the children window size, set the property `SizeToContentInDock` property for the child window as True. By default, its value is False.
 
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="DockingManager1" >
 
 <ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1"
                 syncfusion:DockingManager.SizetoContentInDock="True" Width="100" Height="24"/>
 
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+			
+DockingManager.SetSizetoContentInDock(Content1,true);
 
 {% endhighlight %}
 
@@ -801,6 +896,12 @@ To load the child window initially with an absolute size, set the property DockF
 
 <ContentControl syncfusion:DockingManager.Header="Item1"  
                 syncfusion:DockingManager.DockFillMode="Absolute"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager.SetDockFillMode(content1, DockFillModes.Absolute);
 
 {% endhighlight %}
 
@@ -825,7 +926,16 @@ The Splitter of the dock window can be customized using the SplitterSize and Spl
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SyncDockingManager.SplitterBackground = new SolidColorBrush(Colors.Brown);
+
+SyncDockingManager.SplitterSize = 10;
+
+{% endhighlight %}
+
 {% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img19.jpeg)
 
 
@@ -842,6 +952,12 @@ To arrange the dock windows to a whole available space in the DockingManager, se
 <ContentControl syncfusion:DockingManager.Header="Item1"/>             
 
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SyncDockingManager.DockFill = true;
 
 {% endhighlight %}
 
@@ -864,10 +980,22 @@ And when DockFill functionality is enabled, DockingManager changes the DockWindo
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+SyncDockingManager.UseDocumentContainer = true;
+
+SyncDockingManager.DockFill = true;
+
+DockingManager.SetState(dockWindow1, DockState.Document);
+
+DockingManager.SetState(document1, DockState.Document);
 
 {% endhighlight %}
 
 {% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img21.jpeg)
 
 
@@ -878,7 +1006,8 @@ To restrict the behavior of changing the DockWindow to AutoHide when DockFill is
 {% tabs %}
 
 {% highlight XAML %}
-<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" DockFill="True" DockFillDocumentMode="Normal">        
+
+<syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True" DockFill="True" DockFillDocumentMode="Normal">        
 
 <ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1"/>   
 
@@ -887,10 +1016,16 @@ To restrict the behavior of changing the DockWindow to AutoHide when DockFill is
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+SyncDockingManager.DockFillDocumentMode = DockFillDocumentMode.Normal;
 
 {% endhighlight %}
 
 {% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img22.jpeg)
 
 
@@ -919,6 +1054,26 @@ DockingManager allows to add  CustomContextMenuItems for Dock and Float windows 
 <ContentControl syncfusion:DockingManager.Header="Item1"/> 
 	               
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+CustomMenuItemCollection collection = new CustomMenuItemCollection();
+
+CustomMenuItem item1 = new CustomMenuItem();
+
+CustomMenuItem item2 = new CustomMenuItem();
+
+item1.Header = "CustomItem1";
+
+item2.Header = "CustomItem2";
+
+collection.Add(item1);
+
+collection.Add(item2);
+
+DockingManager.SetCustomMenuItems(DockingManager1, collection);
 
 {% endhighlight %}
 
@@ -953,11 +1108,30 @@ The custom context menu items can be added in addition to default ContextMenu it
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+DocumentTabItemMenuItemCollection collection = new DocumentTabItemMenuItemCollection();
+
+CustomMenuItem item1 = new CustomMenuItem();
+
+CustomMenuItem item2 = new CustomMenuItem();
+
+item1.Header = "CustomItem1";
+
+item2.Header = "CustomItem2";
+
+collection.Add(item1);
+
+collection.Add(item2);
+						 
+DockingManager.SetDocumentTabItemContextMenuItems(DockingManager1, collection);
 
 {% endhighlight %}
 
 {% endtabs %}
+
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img24.jpeg)
 
 
@@ -978,11 +1152,16 @@ To collapse the default context menu, set the property `CollapseDefaultContextMe
 
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" CollapseDefaultContextMenuItems="True"/>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+DockingManager1.CollapseDefaultContextMenuItems = true;
 
 {% endhighlight %}
 
 {% endtabs %}
+
 To collapse the default context menu in Dock state window, set the property `CollapseDefaultContextMenuInDock` as True. By default, its value is False.
 
 {% tabs %}
@@ -996,7 +1175,11 @@ To collapse the default context menu in Dock state window, set the property `Col
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+DockingManager.SetCollapseDefaultContextMenuItemsInDock(Content1, true);
 
 {% endhighlight %}
 
@@ -1018,6 +1201,12 @@ To collapse the default context menu in Document state window, set the property 
 
 {% endhighlight%}
 
+{% highlight C# %}
+
+DockingManager.SetCollapseDefaultContextMenuItemsInDocumentTab(Content1, true);
+
+{% endhighlight%}
+
 {% endtabs %}
 
 To collapse the default context menu in Float state window, set the property `CollapseDefaultContextMenuInFloat` as True. By default, its value is False.
@@ -1025,10 +1214,17 @@ To collapse the default context menu in Float state window, set the property `Co
 {% tabs %}
 
 {% highlight XAML %}
+
 <ContentControl syncfusion:DockingManager.Header="DockWindow"
                 syncfusion:DockingManager.State="Float"
                 syncfusion:DockingManager.CollapseDefaultContextMenuItemsInFloat="True"/>
 
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager.SetCollapseDefaultContextMenuItemsInFloat(Content1, true);
 
 {% endhighlight %}
 
@@ -1060,6 +1256,11 @@ To add a client control in the DockingManager, set an attached property `ClientC
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager1.ClientControl = new TextBlock() { Text = "ClientControl", Width = 100, Height = 23, Background = Brushes.Black, Foreground = Brushes.White };
 
 {% endhighlight %}
 

@@ -28,7 +28,6 @@ Source Docking Manager
 
 </syncfusion:DockingManager>
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -213,12 +212,52 @@ In Nested DockingManager, the whole DockingManager can be dragged and dropped in
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+DockingManager DockingManager1 = new DockingManager() { UseDocumentContainer = true};            
+
+ContentControl content1 = new ContentControl() { Name = "Content1" };
+
+DockingManager.SetHeader(content1, "Dock1");
+
+DockingManager DockingManager2 = new DockingManager() { UseDocumentContainer = true };
+
+DockingManager.SetHeader(DockingManager2, "Dock2");
+
+DockingManager.SetSideInDockedMode(DockingManager2, DockSide.Left);
+
+ContentControl content2 = new ContentControl() { Name = "Content2" };
+
+DockingManager.SetHeader(content2, "Dock2");
+
+DockingManager.SetDesiredWidthInDockedMode(content2, 600);
+
+DockingManager2.Children.Add(content2);
+
+DockingManager DockingManager3 = new DockingManager() { UseDocumentContainer = true };
+
+DockingManager.SetHeader(DockingManager3, "Dock3");
+
+DockingManager.SetSideInDockedMode(DockingManager3, DockSide.Bottom);
+
+ContentControl content3 = new ContentControl() { Name = "Content3" };
+
+DockingManager.SetHeader(content3, "Dock3");
+
+DockingManager.SetDesiredWidthInDockedMode(content3, 600);
+
+DockingManager3.Children.Add(content3);
+
+DockingManager1.Children.Add(content1);
+
+DockingManager1.Children.Add(DockingManager2);
+
+DockingManager1.Children.Add(DockingManager3);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](LinkedManager_images/LinkedManager_img2.jpeg)
-
-
