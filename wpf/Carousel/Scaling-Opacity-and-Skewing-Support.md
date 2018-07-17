@@ -51,11 +51,27 @@ Please find the code snippet for the same:
 
 {% highlight C# %}
 
+Carousel carousel = new Carousel() { Margin = new Thickness(4,4,4,4), RadiusX = 220, RadiusY = -100, ScaleFraction=0.60 };
+
+PathFractionCollection patch = new PathFractionCollection();
+
+FractionValue fraction = new FractionValue() { Fraction = 0, Value=1 };
+
+patch.Add(fraction);
+
+carousel.OpacityFraction = patch[0].Value;
+
 carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Dim carousel As Carousel = New Carousel
+Dim patch As PathFractionCollection = New PathFractionCollection
+Dim fraction As FractionValue = New FractionValue
+patch.Add(fraction)
+carousel.OpacityFraction = patch(0).Value
 
 carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 	"Item1", _
@@ -106,11 +122,47 @@ Please find the code snippet below:
 
 {% highlight C# %}
 
+Carousel carousel = new Carousel() { SkewAngleXEnabled = true, SkewAngleYEnabled = true };
+
+PathFractionCollection patch = new PathFractionCollection();
+
+FractionValue fractionvalue1 = new FractionValue() { Fraction = 0, Value=1 };
+
+FractionValue fractionvalue2 = new FractionValue() { Fraction = 1, Value = 0.5 };
+
+patch.Add(fractionvalue1);
+
+patch.Add(fractionvalue2);
+
+carousel.OpacityFractions.Add(patch[0]);
+
+carousel.OpacityFractions.Add(patch[1]);
+
 carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Dim carousel As Carousel = New Carousel
+
+carousel.SkewAngleYEnabled = true
+
+carousel.SkewAngleXEnabled = true
+
+Dim patch As PathFractionCollection = New PathFractionCollection
+
+Dim fractionvalue1 As FractionValue = New FractionValue
+
+Dim fractionvalue2 As FractionValue = New FractionValue
+
+patch.Add(fractionvalue1)
+
+patch.Add(fractionvalue2)
+
+carousel.OpacityFractions.Add(patch(0))
+
+carousel.OpacityFractions.Add(patch(1))
 
 carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 	"Item1", _
