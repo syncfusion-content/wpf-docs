@@ -43,11 +43,7 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 {% highlight C# %}
 
-//Tabbed Window
-
-DockingManager.SetSideInDockedMode(tabbedWindow1, DockSide.Tabbed);
-
-DockingManager.SetTargetNameInDockedMode(tabbedWindow2, "TabbedWindow1");
+DockingManager1.DockTabAlignment = Dock.Left;
 
 {% endhighlight %}
 
@@ -77,11 +73,7 @@ DockingManager.SetTargetNameInDockedMode(tabbedWindow2, "TabbedWindow1");
 
 {% highlight C# %}
 
-//Tabbed Window
-
-DockingManager.SetSideInDockedMode(tabbedWindow2, DockSide.Tabbed);
-
-DockingManager.SetTargetNameInDockedMode(tabbedWindow2, "TabbedWindow1");
+DockingManager1.DockTabAlignment = Dock.Right;
 
 {% endhighlight %}
 
@@ -112,8 +104,6 @@ DockingManager.SetTargetNameInDockedMode(tabbedWindow2, "TabbedWindow1");
 
 {% highlight C# %}
 			
-//Set the tabs of the docked window at different sides
-
 SyncDockingManager.DockTabAlignment = Dock.Top;
 
 {% endhighlight %}

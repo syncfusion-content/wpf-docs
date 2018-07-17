@@ -22,7 +22,7 @@ DockingManager allows to host a WindowsForm control as a Docking Child. Here a W
 
 </syncfusion:DockingManager> 
 
-{%endhighlight%}
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -30,19 +30,13 @@ WebBrowser web1 = new WebBrowser();
 
 web1.Name = "Web1";
 
-//Add content controls to child of DockingManager
-
 dock.Children.Add(web1);
-
-{%endhighlight%}
-
-{% endtabs %}
-
-{%highlight C#%}
 
 Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](HostingWindowsFormcontrolasawindow_images/HostingWindowsFormcontrolasawindow_img1.jpeg)
 
@@ -54,7 +48,7 @@ Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 
 {% tabs %}
 
-{%highlight XAML %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockFill="True" UseInteropCompatibilityMode="True">
 
@@ -62,14 +56,12 @@ Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 
 </syncfusion:DockingManager>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight C# %}
+{% highlight C# %}
 
-//set UseInteropCompatibilityMode property
+DockingManager1.UseInteropCompatibilityMode = true;
 
-dock.UseInteropCompatibilityMode = true;
-
-{%endhighlight%}
+{% endhighlight %}
 
 {% endtabs %}

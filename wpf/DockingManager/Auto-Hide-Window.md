@@ -37,21 +37,19 @@ AutoHidden window can be placed in four different sides such as Top, Bottom, Lef
 
 //To place the auto hidden children in four different sides
 
-DockingManager.SetSideInDockedMode(autoHideWindow1, DockSide.Top);
+DockingManager.SetSideInDockedMode(AutoHideWindow1, DockSide.Top);
 
-DockingManager.SetSideInDockedMode(autoHideWindow2, DockSide.Left);
+DockingManager.SetSideInDockedMode(AutoHideWindow2, DockSide.Left);
 
-DockingManager.SetSideInDockedMode(autoHideWindow3, DockSide.Right);
+DockingManager.SetSideInDockedMode(AutoHideWindow3, DockSide.Right);
 
-DockingManager.SetSideInDockedMode(autoHideWindow4, DockSide.Bottom);
+DockingManager.SetSideInDockedMode(AutoHideWindow4, DockSide.Bottom);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Auto-Hide-Window_images/Auto-Hide-Window_img2.jpeg)
-
-
 
 The AutoHideWindow can be placed on a required target window through the `TargetNameInDockedMode` property of the DockingManager. DockingWindow will auto hidden in place according to its Parent position, if any target exist. For example: Here "Output" docked at bottom of "SolutionExplorer" which docked at left side. While auto hiding Output window, it will auto hide at left due to it's TargetWindow side.
 
@@ -63,21 +61,21 @@ The AutoHideWindow can be placed on a required target window through the `Target
 
 <ContentControl syncfusion:DockingManager.Header="SolutionExplorer" x:Name="SolutionExplorer"/>
 
-<ContentControl syncfusion:DockingManager.Header="Server Explorer"
+<ContentControl x:Name="ServerExplorer" syncfusion:DockingManager.Header="Server Explorer"
                 syncfusion:DockingManager.SideInDockedMode="Bottom"
-                syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+                syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer" />
 
-<ContentControl syncfusion:DockingManager.Header="ToolBox"
+<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="ToolBox"
                 syncfusion:DockingManager.SideInDockedMode="Right"
-                syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+                syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer" />
 
-<ContentControl syncfusion:DockingManager.Header="Output"
+<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"
                 syncfusion:DockingManager.SideInDockedMode="Bottom"
-                syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+                syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer" />
 
-<ContentControl syncfusion:DockingManager.Header="Properties"
+<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
-                syncfusion:DockingManager.TargetNameInDockedMode="AutoHideWindow1" />
+                syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer" />
 
 </syncfusion:DockingManager>
 
@@ -85,23 +83,21 @@ The AutoHideWindow can be placed on a required target window through the `Target
 
 {% highlight C# %}
 
-//To place the auto hidden children in four different sides
+DockingManager.SetSideInDockedMode(ServerExplorer, DockSide.Bottom);
 
-DockingManager.SetSideInDockedMode(autoHideWindow2, DockSide.Bottom);
+DockingManager.SetTargetNameInDockedMode(ServerExplorer, "SolutionExplorer");
 
-DockingManager.SetTargetNameInDockedMode(autoHideWindow2, "AutoHideWindow1");
+DockingManager.SetSideInDockedMode(ToolBox, DockSide.Right);
 
-DockingManager.SetSideInDockedMode(autoHideWindow3, DockSide.Right);
+DockingManager.SetTargetNameInDockedMode(ToolBox, "SolutionExplorer");
 
-DockingManager.SetTargetNameInDockedMode(autoHideWindow3, "AutoHideWindow1");
+DockingManager.SetSideInDockedMode(Output, DockSide.Bottom);
 
-DockingManager.SetSideInDockedMode(autoHideWindow4, DockSide.Bottom);
+DockingManager.SetTargetNameInDockedMode(Output, "SolutionExplorer");
 
-DockingManager.SetTargetNameInDockedMode(autoHideWindow4, "AutoHideWindow1");
+DockingManager.SetSideInDockedMode(Properties, DockSide.Tabbed);
 
-DockingManager.SetSideInDockedMode(autoHideWindow5, DockSide.Tabbed);
-
-DockingManager.SetTargetNameInDockedMode(autoHideWindow5, "AutoHideWindow1");
+DockingManager.SetTargetNameInDockedMode(Properties, "SolutionExplorer");
 
 {% endhighlight %}
 
@@ -225,7 +221,7 @@ The `EnableScrollableSidePanel` feature is used to provide scroll support when A
 
 //For Scroll Support
 
-dock.EnableScrollableSidePanel = true;
+dockingManager.EnableScrollableSidePanel = true;
 
 {% endhighlight %}
 
@@ -244,7 +240,7 @@ Auto Hidden Tabbed window provides two different pinning behaviors `AutoHideActi
 
 {% highlight XAML %}
 
-<syncfusion:DockingManager x:Name="DockingManager" AutoHideTabsMode="AutoHideActive">
+<syncfusion:DockingManager x:Name="dockingManager" AutoHideTabsMode="AutoHideActive">
 
 <ContentControl syncfusion:DockingManager.Header="SolutionExplorer" />
 
@@ -260,7 +256,7 @@ Auto Hidden Tabbed window provides two different pinning behaviors `AutoHideActi
 
 //To auto-hide current active element of tabbed dock window
 
-DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideActive;
+dockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideActive;
 
 {% endhighlight %}
 
@@ -275,7 +271,7 @@ DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideActive;
 
 {% highlight XAML %}
 
-<syncfusion:DockingManager x:Name="DockingManager" AutoHideTabsMode="AutoHideGroup">
+<syncfusion:DockingManager x:Name="dockingManager" AutoHideTabsMode="AutoHideGroup">
 
 <ContentControl syncfusion:DockingManager.Header="SolutionExplorer" />
 
@@ -291,7 +287,7 @@ DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideActive;
 
 //To auto-hide current active element of tabbed dock window
 		
-DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideGroup;
+dockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideGroup;
 
 {% endhighlight %}
 
@@ -318,7 +314,7 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 //Set Animation delay
 
-DockingManager.SetAnimationDelay(autoHideWindow1, new Duration(TimeSpan.FromMilliseconds(100)));
+Docking.SetAnimationDelay(autoHideWindow1, new Duration(TimeSpan.FromMilliseconds(100)));
 
 {% endhighlight %}
 
@@ -327,8 +323,6 @@ DockingManager.SetAnimationDelay(autoHideWindow1, new Duration(TimeSpan.FromMill
 ### Making different animation for AutoHideWindow
 
 DockingManager supports three different built–in animations while auto-hiding the windows such as `Fade`, `scale` and `slide` that can be set through the property `AutoHideAnimationMode`.
-
-
 
 `Fade` – AutoHideWindow fades while auto hiding
 
@@ -348,7 +342,7 @@ DockingManager supports three different built–in animations while auto-hiding 
 
 //Set AnimationMode
 
-DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Fade;
+Docking.AutoHideAnimationMode = AutoHideAnimationMode.Fade;
 
 {% endhighlight %}
 
@@ -372,7 +366,7 @@ DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Fade;
 
 //Set AnimationMode
 
-DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Scale;
+Docking.AutoHideAnimationMode = AutoHideAnimationMode.Scale;
 
 {% endhighlight %}
 
@@ -396,7 +390,7 @@ DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Scale;
 
 //Set AnimationMode
 
-DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Slide;
+Docking.AutoHideAnimationMode = AutoHideAnimationMode.Slide;
 
 {% endhighlight %}
 
@@ -447,11 +441,11 @@ To enable or disable the AutoHide functionality for a specific child in the Dock
 
 //Disable the Auto hide functionality
 
-DockingManager.SetCanAutoHide(autoHideWindow1, false);
+DockingManager.SetCanAutoHide(SolutionExplorer, false);
 
 //Enable the Auto hide functionality
 
-DockingManager.SetCanAutoHide(autoHideWindow2, true);
+DockingManager.SetCanAutoHide(ToolBox, true);
 
 {% endhighlight %}
 

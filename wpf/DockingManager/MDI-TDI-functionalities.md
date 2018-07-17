@@ -31,16 +31,19 @@ By default, the document state window is in TDI mode, that display child as tabb
 
 {% highlight C# %}
 
-//Tabbed Document Interface.
+SyncDockingManager.UseDocumentContainer = true;
 
 SyncDockingManager.ContainerMode = DocumentContainerMode.TDI;
+
+DockingManager.SetState(Document1, DockState.Document);
+
+DockingManager.SetState(Document2, DockState.Document);
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
-
 
 To make the document child window as MDI document, set the `ContainerMode` as `MDI`
 
@@ -305,7 +308,7 @@ DockingManager allows to set the different layout for the MDI windows with the d
 
 {% tabs %}
 
-{%highlight c#%}
+{% highlight C# %}
 
 void DocumentContainer_Loaded(object sender, RoutedEventArgs e)
 {
@@ -400,9 +403,7 @@ To enable or disable closing functionality of the MDI windows, set `CanClose` an
 
 {% highlight C# %}
 
-//To enable or disable closing functionality of the MDI windows
-
-DockingManager.SetCanClose(document1, false);
+DockingManager.SetCanClose(Content1, false);
 
 {%endhighlight%}
 
@@ -472,8 +473,6 @@ The TDI document index can be changed by dragging and dropping it like Visual St
 
 {% highlight C# %}
 
-//enable drag 
-
 SyncDockingManager.IsTDIDragDropEnabled = true;
 
 {% endhighlight %}
@@ -507,17 +506,17 @@ Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the 
 
 //Closing Customization
 
-DockingManager.SetShowCloseMenuItem(document1, false);
+DockingManager.SetShowCloseMenuItem(Item1, false);
 
-DockingManager.SetShowCloseAllMenuItem(document1, false);
+DockingManager.SetShowCloseAllMenuItem(Item1, false);
 
-DockingManager.SetShowCloseAllButThisMenuItem(document1, false);
+DockingManager.SetShowCloseAllButThisMenuItem(Item1, false);
 
-DockingManager.SetShowCloseMenuItem(document2, false);
+DockingManager.SetShowCloseMenuItem(Item2, false);
 
-DockingManager.SetShowCloseAllMenuItem(document2, false);
+DockingManager.SetShowCloseAllMenuItem(Item2, false);
 
-DockingManager.SetShowCloseAllButThisMenuItem(document2, false);
+DockingManager.SetShowCloseAllButThisMenuItem(Item2, false);
 
 {% endhighlight %}
 
@@ -596,8 +595,6 @@ To disabling Tab Groups, set TabGroupEnabled as `False`. So it does not display 
 
 {% highlight C# %}
 
-//Disable the Vertical and Horizontal Tab Grouping feature
-
 SyncDockingManager.TabGroupEnabled = false;
 
 {%endhighlight %}
@@ -622,8 +619,6 @@ TDI document of DockingManager can be changed to Float while dragging its TDI he
 
 {% highlight C# %}
 
-//For TDI Document dragging
-
 SyncDockingManager.IsVS2010DraggingEnabled = true;
 
 {% endhighlight %}
@@ -646,8 +641,6 @@ To enable the functionality of editing the TDI document header when double click
 {% endhighlight %}
 
 {% highlight C# %}
-
-//For Editing Document Header
 
 SyncDockingManager.EnableDocumentTabHeaderEdit = true;
 
@@ -672,8 +665,6 @@ To hide the TDI document header when a single document child present in a Dockin
 {% endhighlight %}
 
 {% highlight C# %}
-
-//For Header hiding
 
 SyncDockingManager.HideTDIHeaderOnSingleChild = true;
 

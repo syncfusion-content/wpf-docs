@@ -23,9 +23,11 @@ The five sides that can be docked are
 * Tabbed
 
 To dock 4 children of a DockingManager in 4 different sides, then use `SideInDockedMode` property with the required values.
+
 {% tabs %}
 
 {% highlight XAML %}
+
 <ContentControl syncfusion:DockingManager.Header="Docking Left" syncfusion:DockingManager.SideInDockedMode= "Left" />
 
 <ContentControl syncfusion:DockingManager.Header="Docking Top"  syncfusion:DockingManager.SideInDockedMode= "Top"/>
@@ -38,19 +40,19 @@ To dock 4 children of a DockingManager in 4 different sides, then use `SideInDoc
 
 {% highlight C# %}
 
-//Set Dock left
+//Dock at Left
 
 DockingManager.SetSideInDockedMode(dockWindow1, DockSide.Left);
 
-//Set Dock Top
+//Dock at Top
 
 DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Top);
 
-//Set Dock Right
+//Dock at Right
 
 DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Right);
 
-//Set Dock Bottom
+//Dock at Bottom
 
 DockingManager.SetSideInDockedMode(dockWindow4, DockSide.Bottom);
 
@@ -97,29 +99,21 @@ Also to set as Tabbed Window, the window should aware of a Target window name. T
 
 dockWindow1.Name = "DockingWindow1";
 
-//Targeted to Docking Window1 on Top Side
+DockingManager.SetTargetNameInDockedMode(dockWindow2, "DockingWindow1");
 
 DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Top);
 
-DockingManager.SetTargetNameInDockedMode(dockWindow2, "DockingWindow1");
-
-//Targeted to DockingWindow1 on Right Side
+DockingManager.SetTargetNameInDockedMode(dockWindow3, "DockingWindow1");
 
 DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Right);
 
-DockingManager.SetTargetNameInDockedMode(dockWindow3, "DockingWindow1");
-
-//Targeted to DockingWindow1 on Left Side
+DockingManager.SetTargetNameInDockedMode(dockWindow4, "DockingWindow1");
 
 DockingManager.SetSideInDockedMode(dockWindow4, DockSide.Left);
 
-DockingManager.SetTargetNameInDockedMode(dockWindow4, "DockingWindow1");
-
-//Targeted to DockingWindow to tab
+DockingManager.SetTargetNameInDockedMode(dockWindow5, "DockingWindow1");
 
 DockingManager.SetSideInDockedMode(dockWindow5, DockSide.Tabbed);
-
-DockingManager.SetTargetNameInDockedMode(dockWindow5, "DockingWindow1");
 
 {% endhighlight %}
 
@@ -156,8 +150,6 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 
 {% highlight C# %}
 
-//enable the MaximizeButtonEnabled for enable maximizing feature of Docking Window
-
 SyncDockingManager.MaximizeButtonEnabled = true;
 
 {% endhighlight %}
@@ -180,11 +172,7 @@ SyncDockingManager.MaximizeButtonEnabled = true;
 
 {% highlight C# %}
 
-//set MaximizeButtonEnabled for enable maximizing feature of Docking Window
-
 SyncDockingManager.MaximizeButtonEnabled = true;
-
-//Helps to change the maximization behavior of DockingWindow
 
 SyncDockingManager.MaximizeMode = MaximizeMode.FullScreen;
 
@@ -215,8 +203,6 @@ To enable minimizing feature of DockingWindow, set `MinimizeButtonEnabled` to `T
 
 {% highlight C# %}
 
-//set MinimizeButtonEnabled for enable minimizing feature of Docking Window
-
 SyncDockingManager.MinimizeButtonEnabled = true;
 
 {% endhighlight %}
@@ -245,21 +231,17 @@ DockingManager provides two attached property named `CanMaximize` and `CanMinimi
 
 {% highlight C# %}
 
-//set MinimizeButtonEnabled for enable minimizing feature of Docking Window
-
 SyncDockingManager.MinimizeButtonEnabled = true;
-
-//set MaximizeButtonEnabled for enable maximizing feature of Docking Window
 
 SyncDockingManager.MaximizeButtonEnabled = true;
 
-//Restrict the Minimize option
+//Restrict the minimize option for Solution Explorer window
 
-DockingManager.SetCanMinimize(dockWindow1, false);
+DockingManager.SetCanMinimize(SolutionExplorer, false);
 
-//Restrict the Maximize option
+//Restrict the maximize option Toolbox window
 
-DockingManager.SetCanMaximize(dockWindow2, false);
+DockingManager.SetCanMaximize(Toolbox, false);
 
 {% endhighlight %}
 
@@ -302,11 +284,7 @@ The `CanDock` property can help to enable or disable the docking functionality b
 
 {% highlight C# %}
 
-//To disable the docking functionality
-
-DockingManager.SetCanDock(dockWindow1, true);
-
-DockingManager.SetCanDock(dockWindow2, false);
+DockingManager.SetCanDock(dockWindow1, false);
 
 {% endhighlight %}
 
@@ -329,9 +307,7 @@ DockingManager.SetCanDock(dockWindow2, false);
 
 {% highlight C# %}
 
-//Set No header
-
-DockingManager.SetNoHeader(dockWindow1, true);
+DockingManager.SetNoHeader(SolutionExplorer, true);
 
 {% endhighlight %}
 

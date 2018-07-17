@@ -16,7 +16,7 @@ Floating window is like a Popup and it has some limitation in resizing. To avoid
 
 {% highlight XAML %}
 
-<syncfusion:DockingManager UseNativeFloatWindow="True">
+<syncfusion:DockingManager x:Name="SyncDockingManager" UseNativeFloatWindow="True">
 
 <ContentControl syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Float"/>
 
@@ -26,9 +26,7 @@ Floating window is like a Popup and it has some limitation in resizing. To avoid
 
 {% highlight C# %}
 
-//Set State
-
-DockingManager.SetState(float1, DockState.Float);
+SyncDockingManager.UseNativeFloatWindow = true;
 
 {% endhighlight %}
 
@@ -87,7 +85,7 @@ Taskbar displays the icon of running applications for the purpose of switching b
 
 {% highlight C# %}
 
-//Show Floating Windows icons in TaskBar
+SyncDockingManager.UseNativeFloatWindow = true;
 
 SyncDockingManager.ShowFloatWindowInTaskbar = true;
 		
@@ -120,9 +118,11 @@ To enable or disable the taskbar support for particular window, use the attached
 
 {% highlight C# %}
 
-//To enable or disable the taskbar support for particular window
+SyncDockingManager.UseNativeFloatWindow = true;
 
-DockingManager.SetShowInTaskbar(float1, false);
+SyncDockingManager.ShowFloatWindowInTaskbar = true;
+
+DockingManager.SetShowInTaskbar(Toolbox, false);
 
 {% endhighlight %}
 
@@ -163,11 +163,11 @@ The `CanFloat` property helps to enable or disable the floating functionality by
 
 //To Enable the Float Functionality 
 
-DockingManager.SetCanFloat(float1, true);
+DockingManager.SetCanFloat(Item1, true);
 
 //To disable the Float Functionality
 
-DockingManager.SetCanFloat(float2, false);
+DockingManager.SetCanFloat(Item2, false);
 			
 {% endhighlight %}
 
@@ -195,9 +195,7 @@ The float window changes its state to `Dock` when double click its header by def
 
 {% highlight C# %}
 
-//To disable float functionality for the specific child
-
-DockingManager.SetNoDock(float1, true);
+DockingManager.SetNoDock(Content1, true);
 
 {% endhighlight %}
 
@@ -222,9 +220,9 @@ The float window provides Maximization support for better usability and it is on
 
 {% highlight C# %}
 
-//Set Float Window Maximization support
+SyncDockingManager.UseNativeFloatWindow = true;
 
-DockingManager.SetCanFloatMaximize(content1, true);
+DockingManager.SetCanFloatMaximize(Content1, true);
 
 {% endhighlight %}
 
@@ -281,15 +279,13 @@ Float window can be snapped with the edge of another float window and moving all
 
 SyncDockingManager.EnableSnappingFloatWindow = true;
 			
-//Set AllowSnap
+DockingManager.SetAllowSnap(Dock1, true);
 
-DockingManager.SetAllowSnap(float1, true);
+DockingManager.SetAllowSnap(Dock2, true);
 
-DockingManager.SetAllowSnap(float2, true);
+DockingManager.SetAllowSnap(Dock3, true);
 
-DockingManager.SetAllowSnap(float3, true);
-
-DockingManager.SetAllowSnap(float4, true);
+DockingManager.SetAllowSnap(Dock4, true);
 
 {% endhighlight %}
 

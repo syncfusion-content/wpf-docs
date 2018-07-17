@@ -17,7 +17,7 @@ There are several ways to add Syncfusion control in to the Visual Studio WPF pro
 * Create a WPF project in Visual Studio and refer to the following assemblies.
 1. Syncfusion.Tools.Wpf
 2. Syncfusion.Shared.Wpf
-* Include an XML namespace for the above assemblies to the Main window.
+* Include an namespace for the above assemblies to the Main window.
 
 {% tabs %}
 
@@ -30,6 +30,12 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.Windows.Tools.Controls;
 
 {% endhighlight %}
 
@@ -80,18 +86,28 @@ DockingManager can accept any control as its children. Here five content control
 {% endhighlight %}
 
 {% highlight C# %}
-			
+
+ContentControl SolutionExplorer= new ContentControl();
+
+ContentControl ToolBox = new ContentControl();
+
+ContentControl Properties = new ContentControl();
+
+ContentControl Output = new ContentControl();
+
+ContentControl StartPage = new ContentControl();
+
 //Add content controls as child of DockingManager
 
-dock.Children.Add(dockWindow1);
+dock.Children.Add(SolutionExplorer);
 
-dock.Children.Add(dockWindow2);
+dock.Children.Add(ToolBox);
 
-dock.Children.Add(dockWindow3);
+dock.Children.Add(Properties);
 
-dock.Children.Add(dockWindow4);
+dock.Children.Add(Output);
 
-dock.Children.Add(dockWindow5);
+dock.Children.Add(StartPage);
 
 {% endhighlight %}
 
@@ -116,7 +132,7 @@ DockingManger provides with an attached property `Header` that helps to set the 
 
 <ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties" />
 
-<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"/>
+<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Output"/>
 
 <ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page" />
 
@@ -128,15 +144,15 @@ DockingManger provides with an attached property `Header` that helps to set the 
 
 //Set header of each Content Control
 
-DockingManager.SetHeader(dockWindow1, "Solution Explorer");
+DockingManager.SetHeader(SolutionExplorer, "Solution Explorer");
 
-DockingManager.SetHeader(dockWindow2, "Toolbox");
+DockingManager.SetHeader(ToolBox, "Toolbox");
 
-DockingManager.SetHeader(dockWindow3, "Properties");
+DockingManager.SetHeader(Properties, "Properties");
 
-DockingManager.SetHeader(dockWindow4, "Output");
+DockingManager.SetHeader(Properties, "Output");
 
-DockingManager.SetHeader(dockWindow5, "StartPage");
+DockingManager.SetHeader(StartPage, "StartPage");
 			
 {% endhighlight %}
 
@@ -174,17 +190,21 @@ Also enable the Document Container for the Document view by setting the `UseDocu
 
 {% highlight C# %}
 
+// Enable UseDocumentContainer to have a document state windows
+
+SyncDockingManager.UseDocumentContainer = true;
+
 //Set State
-			
-DockingManager.SetState(dockWindow1, DockState.Dock);
 
-DockingManager.SetState(dockWindow2, DockState.AutoHidden);
+DockingManager.SetState(SolutionExplorer, DockState.Dock);
 
-DockingManager.SetState(dockWindow3, DockState.Float);
+DockingManager.SetState(ToolBox, DockState.AutoHidden);
 
-DockingManager.SetState(dockWindow4, DockState.Dock);
+DockingManager.SetState(Properties, DockState.Float);
 
-DockingManager.SetState(dockWindow5, DockState.Document);
+DockingManager.SetState(Output, DockState.Dock);
+
+DockingManager.SetState(StartPage, DockState.Document);
 
 {% endhighlight %}
 
@@ -226,17 +246,15 @@ The side property's `Tabbed` option is used to tab a window on another window. T
 
 {% highlight C# %}
 
-dockWindow1.Name = "SolutionExplorer";
+// Dock at right side
 
-//Set Dock Mode
+DockingManager.SetSideInDockedMode(SolutionExplorer, DockSide.Right);
 
-DockingManager.SetSideInDockedMode(dockWindow1, DockSide.Right);
+// For Tabbed Mode
 
-//For Tabbed Mode
+DockingManager.SetTargetNameInDockedMode(Output, "SolutionExplorer");
 
-DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Tabbed);
-
-DockingManager.SetTargetNameInDockedMode(dockdockWindow2, "SolutionExplorer");
+DockingManager.SetSideInDockedMode(Output, DockSide.Tabbed);
 
 {% endhighlight %}
 
@@ -269,8 +287,6 @@ The `PersistState` feature of the DockingManager helps to save the current layou
 {% endhighlight %}
 
 {% highlight C# %}
-
-//Set PersistState for save the current layout of the DockingManager automatically
 			
 SyncDockingManager.PersistState = true;
 
@@ -304,7 +320,7 @@ DockingManager supports various visual styles by using the `SfSkinManager`. To a
 1. Syncfusion.SfSkinManager.Wpf
 2. Syncfusion.Themes.VisualStudio2013.Wpf
 
-* Include an XML namespace for the `SfSkinManager` assembly to the MainWindow.
+* Include an namespace for the `SfSkinManager` assembly to the MainWindow.
 {% tabs %}
 
 {% highlight XAML %}
@@ -322,6 +338,12 @@ xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion
 x:Class="WpfApplication7.MainWindow"
 
 Title="MainWindow" Height="350" Width="525" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.SfSkinManager;
 
 {% endhighlight %}
 
