@@ -31,15 +31,19 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Left">
 
-<ContentControl  syncfusion:DockingManager.Header="Item1" x:Name="Content1" />
+<ContentControl  syncfusion:DockingManager.Header="Item1" x:Name="TabbedWindow1" />
 	
-<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
+<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="TabbedWindow2"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
-				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/> 
+				syncfusion:DockingManager.TargetNameInDockedMode="TabbedWindow1"/> 
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+DockingManager1.DockTabAlignment = Dock.Left;
 
 {% endhighlight %}
 
@@ -54,15 +58,22 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Right">
 
-<ContentControl syncfusion:DockingManager.Header="Item1"  x:Name="Content1"/>  
+<ContentControl syncfusion:DockingManager.Header="Item1"  x:Name="TabbedWindow1"/>  
 
-<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
+<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="TabbedWindow2"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
-				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>
+				syncfusion:DockingManager.TargetNameInDockedMode="TabbedWindow1"/>
 				
 </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager1.DockTabAlignment = Dock.Right;
 
 {% endhighlight %}
 
@@ -81,15 +92,19 @@ The tabs of the Docked window are placed at the bottom, by default. To place the
 
 <syncfusion:DockingManager x:Name="DockingManager1" DockTabAlignment="Top">
 
-<ContentControl  syncfusion:DockingManager.Header="Item1" x:Name="Content1"/> 
+<ContentControl  syncfusion:DockingManager.Header="Item1" x:Name="TabbedWindow1"/> 
 
-<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
+<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="TabbedWindow2"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
-				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
+				syncfusion:DockingManager.TargetNameInDockedMode="TabbedWindow1"/>  
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+			
+SyncDockingManager.DockTabAlignment = Dock.Top;
 
 {% endhighlight %}
 
@@ -107,21 +122,28 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseActive">
 
-<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1" />  
+<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="TabbedWindow1" />  
 
-<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
+<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="TabbedWindow2"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
-				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
+				syncfusion:DockingManager.TargetNameInDockedMode="TabbedWindow1"/>  
 
-<ContentControl syncfusion:DockingManager.Header="Item3" x:Name="Content3"
+<ContentControl syncfusion:DockingManager.Header="Item3" x:Name="TabbedWindow3"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
-				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>                         
+				syncfusion:DockingManager.TargetNameInDockedMode="TabbedWindow1"/>                         
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//To close the active element of Tabbed window.
+
+SyncDockingManager.CloseTabs = CloseTabsMode.CloseActive;
 
 {% endhighlight %}
 
@@ -132,20 +154,28 @@ Tabbed window provides two different closing behaviors. They are CloseActive and
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseAll">
 
-<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="Content1"/>  
+<ContentControl syncfusion:DockingManager.Header="Item1" x:Name="TabbedWindow1"/>  
 
-<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="Content2"
+<ContentControl syncfusion:DockingManager.Header="Item2" x:Name="TabbedWindow2"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
-				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>  
+				syncfusion:DockingManager.TargetNameInDockedMode="TabbedWindow1"/>  
 
-<ContentControl syncfusion:DockingManager.Header="Item3" x:Name="Content3"
+<ContentControl syncfusion:DockingManager.Header="Item3" x:Name="TabbedWindow3"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
-				syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>                         
+				syncfusion:DockingManager.TargetNameInDockedMode="TabbedWindow1"/>                         
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+//To close all the Tabbed window.
+
+SyncDockingManager.CloseTabs = CloseTabsMode.CloseAll;
 
 {% endhighlight %}
 

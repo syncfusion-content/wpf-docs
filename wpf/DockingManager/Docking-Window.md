@@ -23,9 +23,11 @@ The five sides that can be docked are
 * Tabbed
 
 To dock 4 children of a DockingManager in 4 different sides, then use `SideInDockedMode` property with the required values.
+
 {% tabs %}
 
 {% highlight XAML %}
+
 <ContentControl syncfusion:DockingManager.Header="Docking Left" syncfusion:DockingManager.SideInDockedMode= "Left" />
 
 <ContentControl syncfusion:DockingManager.Header="Docking Top"  syncfusion:DockingManager.SideInDockedMode= "Top"/>
@@ -34,7 +36,25 @@ To dock 4 children of a DockingManager in 4 different sides, then use `SideInDoc
 
 <ContentControl syncfusion:DockingManager.Header="Docking Bottom"  syncfusion:DockingManager.SideInDockedMode="Bottom" />
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+//Dock at Left
+
+DockingManager.SetSideInDockedMode(dockWindow1, DockSide.Left);
+
+//Dock at Top
+
+DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Top);
+
+//Dock at Right
+
+DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Right);
+
+//Dock at Bottom
+
+DockingManager.SetSideInDockedMode(dockWindow4, DockSide.Bottom);
 
 {% endhighlight %}
 
@@ -73,7 +93,27 @@ Also to set as Tabbed Window, the window should aware of a Target window name. T
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
                 syncfusion:DockingManager.TargetNameInDockedMode="DockingWindow1"/>      
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+dockWindow1.Name = "DockingWindow1";
+
+DockingManager.SetTargetNameInDockedMode(dockWindow2, "DockingWindow1");
+
+DockingManager.SetSideInDockedMode(dockWindow2, DockSide.Top);
+
+DockingManager.SetTargetNameInDockedMode(dockWindow3, "DockingWindow1");
+
+DockingManager.SetSideInDockedMode(dockWindow3, DockSide.Right);
+
+DockingManager.SetTargetNameInDockedMode(dockWindow4, "DockingWindow1");
+
+DockingManager.SetSideInDockedMode(dockWindow4, DockSide.Left);
+
+DockingManager.SetTargetNameInDockedMode(dockWindow5, "DockingWindow1");
+
+DockingManager.SetSideInDockedMode(dockWindow5, DockSide.Tabbed);
 
 {% endhighlight %}
 
@@ -97,6 +137,7 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager MaximizeButtonEnabled="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer"/>
@@ -105,7 +146,11 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+SyncDockingManager.MaximizeButtonEnabled = true;
 
 {% endhighlight %}
 
@@ -123,7 +168,13 @@ To enable maximizing feature of Docking Window, set `MaximizeButtonEnabled` to `
 {% highlight XAML %}
 <syncfusion:DockingManager MaximizeButtonEnabled="True" MaximizeMode="FullScreen"/>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+SyncDockingManager.MaximizeButtonEnabled = true;
+
+SyncDockingManager.MaximizeMode = MaximizeMode.FullScreen;
 
 {% endhighlight %}
 
@@ -139,6 +190,7 @@ To enable minimizing feature of DockingWindow, set `MinimizeButtonEnabled` to `T
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager x:Name="SyncDockingManager" MinimizeButtonEnabled="True">
 
 <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"/>
@@ -147,7 +199,11 @@ To enable minimizing feature of DockingWindow, set `MinimizeButtonEnabled` to `T
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+SyncDockingManager.MinimizeButtonEnabled = true;
 
 {% endhighlight %}
 
@@ -162,6 +218,7 @@ DockingManager provides two attached property named `CanMaximize` and `CanMinimi
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager MaximizeButtonEnabled="True" MinimizeButtonEnabled="True">
 
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.CanMinimize="False" />
@@ -170,7 +227,21 @@ DockingManager provides two attached property named `CanMaximize` and `CanMinimi
 
 </syncfusion:DockingManager>
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+SyncDockingManager.MinimizeButtonEnabled = true;
+
+SyncDockingManager.MaximizeButtonEnabled = true;
+
+//Restrict the minimize option for Solution Explorer window
+
+DockingManager.SetCanMinimize(SolutionExplorer, false);
+
+//Restrict the maximize option Toolbox window
+
+DockingManager.SetCanMaximize(Toolbox, false);
 
 {% endhighlight %}
 
@@ -187,12 +258,13 @@ The DockWindow Header can be highlighted when the mouse is hovered on an active 
 
 {% highlight XAML %}
 
-
 <syncfusion:DockingManager x:Name="SyncDockingManager" IsEnableHotTracking="True"/>
 
+{% endhighlight %}
 
+{% highlight C# %}
 
-
+SyncDockingManager.IsEnableHotTracking = true;
 
 {% endhighlight %}
 
@@ -206,12 +278,13 @@ The `CanDock` property can help to enable or disable the docking functionality b
 
 {% highlight XAML %}
 
-
 <ContentControl syncfusion:DockingManager.CanDock="False" />
 
+{% endhighlight %}
 
+{% highlight C# %}
 
-
+DockingManager.SetCanDock(dockWindow1, false);
 
 {% endhighlight %}
 
@@ -230,7 +303,11 @@ The `CanDock` property can help to enable or disable the docking functionality b
 <!--NoHeader enabled to this child-->
 <ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.NoHeader="True" /> 
 
+{% endhighlight %}
 
+{% highlight C# %}
+
+DockingManager.SetNoHeader(SolutionExplorer, true);
 
 {% endhighlight %}
 

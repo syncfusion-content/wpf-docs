@@ -262,6 +262,7 @@ The style of the pin button of the Dock window can customized using the `AwlButt
 {% tabs %}
 
 {% highlight XAML %}
+
 <syncfusion:DockingManager  x:Name="DockingManager1">
 
 <syncfusion:DockingManager.AwlButtonTemplate>
@@ -296,20 +297,13 @@ The style of the pin button of the Dock window can customized using the `AwlButt
 
 </syncfusion:DockingManager>
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img14.jpeg)
 
-
-
 ### CloseButtonTemplate
-
 
 The close button for the Docked window can be customized using the `CloseButtonTemplate` and can be used to get or set the control template for the close button for the windows of DockingManager with TargetType as ToggleButton.
 
@@ -347,21 +341,15 @@ syncfusion:DockingManager.Header="Child2"/>
 
 </syncfusion:DockingManager>
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img15.jpeg)
 
-
 ### MenuButtonTemplate
 
 The context menu button appearance in the Dock window header can be customized using `MenuButtonTemplate` property by setting with the Target Type as ToggleButton.
-
 
 {% tabs %}
 
@@ -405,16 +393,11 @@ The context menu button appearance in the Dock window header can be customized u
 
 </syncfusion:DockingManager>
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img16.jpeg)
-
 
 ### MinimizeButton Template
 
@@ -456,16 +439,11 @@ The minimize button for the dock window can be customized using the `MinimizeBut
 
 </syncfusion:DockingManager>
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](StylingandTemplates_images/StylingandTemplates_img17.jpeg)
-
 
 ### MaximizeButtonTemplate
 
@@ -507,10 +485,6 @@ The maximize button for the dock window can be customized using the `MaximizeBut
 <ContentControl syncfusion:DockingManager.Header="Child2"/>
 
 </syncfusion:DockingManager>
-
-
-
-
 
 {% endhighlight %}
 
@@ -564,10 +538,6 @@ The Restore button for the dock window can be customized using the `RestoreButto
 <ContentControl syncfusion:DockingManager.Header="Child5" syncfusion:DockingManager.State="Dock"/>
 
 </syncfusion:DockingManager>
-
-
-
-
 
 {% endhighlight %}
 
@@ -665,10 +635,6 @@ DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingMa
 </Grid>
 
 </Window>
-
-
-
-
 
 {% endhighlight %}
 
@@ -914,9 +880,6 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 </Syncfusion:DockingManager>
 
 
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -983,8 +946,6 @@ The NativeFloatWindow of DockingManager can be customized using the `NativeWindo
 
 </Syncfusion:DockingManager>
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -1038,10 +999,6 @@ The template of the SideTabItem of the DockingManager can be customized using th
 </Border>
 
 </ControlTemplate>
-
-
-
-
 
 {% endhighlight %}
 
@@ -1205,10 +1162,6 @@ The BottomDragProvider is used to dock the children of the Docking in the bottom
 
 </syncfusion:DockingManager>
 
-
-
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -1250,10 +1203,6 @@ The LeftDragProvider is used to dock the dock window to the left side and it can
 <ContentControl syncfusion:DockingManager.Header="Child1" syncfusion:DockingManager.State="Dock"/>
 
 </syncfusion:DockingManager> 
-
-
-
-
 
 {% endhighlight %}
 
@@ -1298,8 +1247,6 @@ To dock the DockWindow to the right side, RightDragProvider is used. It can be c
 
 </syncfusion:DockingManager>
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -1342,8 +1289,6 @@ To dock the DockWindow at top, the TopDragProvider is used. It can be customized
 <ContentControl syncfusion:DockingManager.Header="Child1" syncfusion:DockingManager.State="Dock"/>
 
 </syncfusion:DockingManager>
-
-
 
 {% endhighlight %}
 
@@ -1388,8 +1333,6 @@ CenterDragProvider is used to dock the children of the DockingManager at the cen
 
 </syncfusion:DockingManager>
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -1424,8 +1367,6 @@ Document state in DockingManager used the DocumentTabControl and its style can b
 <ContentControl syncfusion:DockingManager.Header="Child3" syncfusion:DockingManager.State="Document"/>
 
 </syncfusion:DockingManager>
-
-
 
 {% endhighlight %}
 
@@ -1555,10 +1496,6 @@ TabControl inside the Tabbed DockWindow can be customized using `TabControlStyle
 </ContentControl>
 
 </Syncfusion:DockingManager>
-
-
-
-
 
 {% endhighlight %}
 
