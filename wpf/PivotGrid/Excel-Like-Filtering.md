@@ -9,11 +9,11 @@ documentation: ug
 
 # Excel-like Filtering
 
-PivotGrid control provides excel-like sorting and filtering features applied to a PivotItem. We can enable or disable the excel-like sorting and filtering pop-up in PivotGrid by setting the `AllowMultiFunctionalSortFilter` property of Grouping Bar in PivotGrid control.
+The pivot grid control provides Excel-like sorting and filtering features applied to a pivot item. You can enable or disable the Excel-like sorting and filtering pop-up in the pivot grid by setting the `AllowMultiFunctionalSortFilter` property of grouping bar in the pivot grid control.
 
-To do so, define the PivotGrid control and raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside the `GroupingBar_Loaded()` event set the value for the `AllowMultiFunctionalSortFilter` property to "true".
+To do so, define the pivot grid control and raise the loaded event for pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for the grouping bar. Inside the `GroupingBar_Loaded()` event, set the value of the `AllowMultiFunctionalSortFilter` property to "true".
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -65,23 +65,23 @@ public partial class MainWindow: Window {
 
 ![](Excel-Like-Filtering-images/Excel like Filter Popup.png)
 
-## Various features of MultiFunctional Pop-up
+## Various features of multifunctional pop-up
 
 **Sort A to Z**
 
-It can be used to sort the corresponding PivotItem in the *Ascending order*.
+It can be used to sort the corresponding pivot item in the ascending order.
 
 **Sort Z to A**
 
-It can be used to sort the corresponding PivotItem in the *Descending order*.
+It can be used to sort the corresponding pivot item in the descending order.
 
 **Clear filters**
 
-It is used to clear all the filter changes applied to the corresponding PivotItem and could bring back the PivotGrid to the normal state.
+The clear filters are used to clear all filter changes applied to the corresponding pivot item and bring back the pivot grid to the normal state.
 
-**Label Filters**
+**Label filters**
 
-It is used to filter the PivotGrid based on the PivotItem filter labels. It can be done by using the various options which are listed below.
+The label filters are used to filter the pivot item filter labels of the pivot grid by using the following various options.
 
 * Equals
 * Does not equals
@@ -102,9 +102,9 @@ It is used to filter the PivotGrid based on the PivotItem filter labels. It can 
 
 _Label Filter window for filtering "Alberta" in State_
 
-**Value Filters**
+**Value filters**
 
-It is used to filter the PivotGrid based on the PivotItem field values. It can be done by using the various options which are listed below.
+The value filters are used to filter the pivot item field values of the pivot grid by using the following various options.
 
 * Equals
 * Does not equals

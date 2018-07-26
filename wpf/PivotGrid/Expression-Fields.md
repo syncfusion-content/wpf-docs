@@ -9,11 +9,11 @@ documentation: ug
 
 # Expression Fields
 
-PivotGrid provides support to add expression fields and handles other features similar to normal fields. It is possible to add the new expression field information by using the `AllowedFields` class in PivotGrid control and we need to make use of the below mentioned property to load the allowed fields in PivotGrid.
+The pivot grid supports adding expression fields and handles other features similar to normal fields. You can add new expression field information by using the `AllowedFields` class in the pivot grid control and you can use the following property to load the allowed fields in the pivot grid:
 
-* **LoadWithDefaultPropertyFields** - Gets or sets a value indicating whether PivotGrid control load with default property fields for expression support.
+* **LoadWithDefaultPropertyFields**: Gets or sets a value indicating whether the pivot grid control loads with default property fields for expression support.
 
-This property can be defined either in *XAML* and *Code-behind*. For *XAML*, refer to the following code sample.
+This property can be defined either in XAML or code-behind. For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -37,7 +37,7 @@ This property can be defined either in *XAML* and *Code-behind*. For *XAML*, ref
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -80,11 +80,11 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-## Creating the Expression Fields
+## Creating the expression fields
 
-`FieldInfo` class is used to create the expression fields which will be added in the `AllowedFields` collection of PivotGrid control. It can be done either in *XAML* or in *Code-behind*.
+`FieldInfo` class is used to create the expression fields that are added to the `AllowedFields` collection of pivot grid control. This can be done either in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -112,7 +112,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For **Code-behind**, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

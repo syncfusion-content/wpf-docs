@@ -9,11 +9,11 @@ documentation: ug
 
 # Custom Summary
 
-PivotGrid enables us to set the custom summaries for the PivotItem values at both load time and runtime (using PivotComputationInfo dialog).
+The pivot grid enables you to set the custom summaries for the PivotItem values at both load time and runtime (using pivot computation info dialog).
 
-For creating a custom SummaryBase class, add a new class and inherit the abstract class `SummaryBase`. Implement your summary logics by overriding Combine(), CombineSummary(),GetResult(), GetInstance(), Reset() methods.
+To create a custom SummaryBase class, add a new class and inherit the abstract class `SummaryBase`. Implement your summary logics by overriding Combine(), CombineSummary(), GetResult(), GetInstance(), and Reset() methods.
 
-Please refer below code sample.
+Refer to the following code sample.
 
  {% highlight C# %}
 
@@ -76,11 +76,11 @@ public class MyCustomSummaryBase2: SummaryBase {
 
  {% endhighlight %}
 
-## Defining Custom Summary in Load time
+## Defining custom summary in load time
 
-We can define our own custom SummaryBase to PivotCalculations in PivotGrid by setting the instance of the custom summary in `Summary` property. And this custom summary can be used only if we set `SummaryType` of that PivotCalculation as "Custom". It can be done through *XAML* or *Code-behind*.
+You can define your own custom SummaryBase to PivotCalculations in pivot grid by setting the instance of the custom summary in the `Summary` property. This custom summary can be used only if you set the `SummaryType` of that PivotCalculation as "Custom". It can be done through XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -112,7 +112,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -153,13 +153,13 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-## Defining Custom Summary in Runtime
+## Defining custom summary in runtime
 
-Create an object for all the custom SummaryBase class and set the add object's to PivotSchemaDesigner's `CustomSummaryBaseCollection` property. Hence this property is an ObservableCollection type of SummaryBase that enable the user to add more than one class object. Each object is considered as a unique custom SummaryBase. 
+Create an object for all the custom SummaryBase class and set the add objects to the `CustomSummaryBaseCollection` property of the pivot schema designer. This property is an ObservableCollection type of SummaryBase that enables users to add more than one class object. Each object is considered as a unique custom SummaryBase.
 
-Using the CustomSummaryBaseCollection, we set the summary for the respective columns by its `Summary` property.
+Using the `CustomSummaryBaseCollection` property, you can set the summary for the respective columns by its `Summary` property.
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -180,7 +180,6 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-To set custom summary at runtime, double-click Items from the PivotSchemaDesigner which will pop-up the *PivotComputationInformation* dialog box.
-In the *Summarize Value by* combo-box, you can select the pre-defined custom summaries based on your requirement.
+To set custom summary at runtime, double-click the items from the pivot schema designer that will pop-up the pivot computation information dialog box. In the summarize value by combo box, you can select the predefined custom summaries as required.
 
 ![](RunTime-custom-summary-images/PivotGrid with custom summaries.png)

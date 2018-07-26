@@ -9,11 +9,11 @@ documentation: ug
 
 # Restrict Auto Resizing of Row Header
 
-PivotGrid provides support for restricting the row header items from being stretched when there are too many PivotCalculation items in the Data Header Area. When the *ShowFields* button located in the Data Header Area of the Grouping Bar is clicked, the *PivotComputation List* window appears with the PivotCalculation fields.
+The pivot grid supports restricting the row header items from being stretched when there are too many PivotCalculation items in the data header area. When you click the **ShowFields** button in the data header area of the grouping bar, the pivot computation list window appears with the PivotCalculation fields.
 
-The `AllowRowHeaderAreaAutoSizing` property is set to "false", in-order to display the Computation button (ShowFields button) and to restrict the row header items from being stretched when more items are added to the Computation Area. By default, this property is set to "true". It can be defined both in *XAML* and *Code-behind*.
+The `AllowRowHeaderAreaAutoSizing` property is set to "false" to display the computation button (ShowFields button) and restrict the row header items from being stretched when more items are added to the computation area. By default, this property is set to "true", and it can be defined both in XAML and code-behind.
 
-If through *XAML*, please refer the below code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -37,7 +37,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

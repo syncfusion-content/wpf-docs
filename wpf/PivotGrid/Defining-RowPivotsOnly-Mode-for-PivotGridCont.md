@@ -9,13 +9,13 @@ documentation: ug
 
 # RowPivotsOnly Mode
 
-RowPivotsOnly mode allows the PivotGrid to display only the column values.
+RowPivotsOnly mode allows the pivot grid to display only the column values.
 
-When displaying the PivotGrid in RowPivotsOnly mode, it shows the row header cells and column header cells as the value cells. Also it supports column filtering, column sorting, and so on.
+When displaying the pivot grid in RowPivotsOnly mode, it shows the row header cells and column header cells as value cells. Also, it supports column filtering, column sorting, and so on.
 
-The `RowPivotsOnly` property is used to achieve this and it can be mentioned either in *XAML* or *Code-behind*.
+The `RowPivotsOnly` property is used to achieve this and it can be mentioned in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -42,7 +42,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For **Code-behind**, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

@@ -9,9 +9,9 @@ documentation: ug
 
 # Deferred Scrolling
 
-Support has been provided to improve the scrolling performance of pivot grid by updating the data only when the user releases the thumb on scrolling. It can be achieved by `EnableDeferredScrolling` property of pivot grid control.
+A support has been provided to improve the scrolling performance of pivot grid by updating the data only when user releases the thumb on scrolling. This can be achieved by the `EnableDeferredScrolling` property of the pivot grid control.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -36,7 +36,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

@@ -9,29 +9,29 @@ documentation: ug
 
 # Custom Calculations
 
-**CalculationType** is an enumerator defined in the PivotComputationInfo class which is used to specify the type of the calculation. The various calculation types that are used for performing calculations are as follows:
+**CalculationType** is an enumerator defined in the PivotComputationInfo class that is used to specify the type of calculation. The various types of calculations are:
 
-* **NoCalculation** - Remove the custom calculations and restore to original values (default value). Display the Pivot values as default value.
-* **PercentageOfGrandTotal** - Displays a value cell as a percentage of grand total of all value cells of PivotEngine.
-* **PercentageOfColumnTotal** - Displays all value cells in each column as a percentage of its corresponding column total.
-* **PercentageOfRowTotal** - Displays all value cells in each row as a percentage of its corresponding row total.
-* **PercentageOfParentColumnTotal** - Displays a value cell as a percentage of parent column item values.
-* **PercentageOfParentRowTotal** - Displays a value cell as a percentage of parent row item values.
-* **PercentageOfParentTotal** - Displays a value cell as a percentage of Base Field (Parent Row/Column Total).
-* **Index** - Displays a value cell as an index value based on PivotEngine generation.
-* **Formula** - Displays a calculation based on a well formed algebraic expression involving other calculations.
-* **PercentageOf** - Displays values as a percentage of the value of the Base item in the Base field.
-* **DifferenceFrom** - Displays values as the difference from the value of the Base item in the Base field.
-* **PercentageOfDifferenceFrom** - Displays values as the percentage difference from the value of the Base item in the Base field.
-* **RunningTotalIn** - Displays the value for successive items in the Base field as a running total.
-* **PercentageOfRunningTotalIn** - Calculates the value for successive items in the Base field that are displayed as a running total as a percentage.
-* **RankSmallestToLargest** - Displays the rank of selected values in a specific field, listing the smallest item in the field as 1, and each larger value will have a higher rank value.
-* **RankLargestToSmallest** - Displays the rank of selected values in a specific field, listing the largest item in the field as 1, and each smaller value will have a higher rank value.
-* **Distinct** - Displays the subtotals based on the distinct values of BaseItem defined for calculation item.
+* **NoCalculation**: Removes the custom calculations and restores to original values (default value). Displays the pivot values as default value.
+* **PercentageOfGrandTotal**: Displays a value cell as a percentage of grand total of all value cells of PivotEngine.
+* **PercentageOfColumnTotal**: Displays all value cells in each column as a percentage of its corresponding column total.
+* **PercentageOfRowTotal**: Displays all value cells in each row as a percentage of its corresponding row total.
+* **PercentageOfParentColumnTotal**: Displays a value cell as a percentage of parent column item values.
+* **PercentageOfParentRowTotal**: Displays a value cell as a percentage of parent row item values.
+* **PercentageOfParentTotal**: Displays a value cell as a percentage of base field (parent row/column total).
+* **Index**: Displays a value cell as an index value based on PivotEngine generation.
+* **Formula**: Displays a calculation based on a well formed algebraic expression involving other calculations.
+* **PercentageOf**: Displays values as a percentage of the value of the base item in the base field.
+* **DifferenceFrom**: Displays values as the difference from the value of the base item in the base field.
+* **PercentageOfDifferenceFrom**: Displays values as the percentage difference from the value of the base item in the base field.
+* **RunningTotalIn**: Displays the value for successive items in the base field as a running total.
+* **PercentageOfRunningTotalIn**: Calculates the value for successive items in the base field that are displayed as a running total as a percentage.
+* **RankSmallestToLargest**: Displays the rank of selected values in a specific field and lists the smallest item in the field as 1 and each larger value as a higher rank value.
+* **RankLargestToSmallest**: Displays the rank of selected values in a specific field and lists the largest item in the field as 1 and each smaller value as a higher rank value.
+* **Distinct**: Displays the subtotals based on the distinct values of BaseItem defined for the calculation item.
 
-`CalculationType` property is used to achieve this requirement. It can be set for the corresponding PivotCalculation item through `PivotComputationInfo` class. It can be set either through *XAML* or through *Code-behind*.
+To achieve this, the `CalculationType` property is set for the corresponding pivot calculation item through the `PivotComputationInfo` class. It can be set through XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -54,7 +54,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For **Code-behind**, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -97,11 +97,9 @@ public partial class MainWindow: Window {
 
 ![](Calculation-Type-images/PivotGrid shows percentageofcolumntotal calculation type.png)
 
-## Providing expression field calculation for Summaries
+## Providing expression field calculation for summaries
 
-To provide calculated field support to summary cells in PivotGrid and to make it behave accordingly, despite any options provided in summaries such as sum, count, max, min, and so on.
-
-It can be achieved by setting the calculation type as "Formula" and by specifying the appropriate formula. Please refer the below code samples and screen-shots.
+To provide a calculated field support to summary cells in the pivot grid and make it behave accordingly when options such as sum, count, maximum, and minimum are provided in summaries, set the calculation type to "Formula" and specify the appropriate formula. Refer to the following code samples and screenshots.
 
 {% highlight xaml %}
 

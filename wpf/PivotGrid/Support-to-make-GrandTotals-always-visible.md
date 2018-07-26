@@ -9,11 +9,11 @@ documentation: ug
 
 # Grand Total Row Visibility
 
-PivotGrid provides support to make the grand total row always visible in RowPivotsOnly mode.
+The pivot grid provides support to make the grand total row always visible in RowPivotsOnly mode.
 
-It can be achieved by using the `GrandTotalRowAlwaysVisible` property of PivotGrid control. This property can be defined either in *XAML* or *Code-behind*.
+This can be achieved by using the `GrandTotalRowAlwaysVisible` property of the pivot grid control. This property can be defined either in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -39,7 +39,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
