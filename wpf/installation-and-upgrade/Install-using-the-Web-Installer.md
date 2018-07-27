@@ -10,9 +10,9 @@ documentation: ug
 
 # Installation using Web Installer
 
-The following procedure illustrates how to install Essential Studio Platform Online Installer setup. 
+The following procedure illustrates how to install Essential Studio for WPF Online Installer. 
 
-1.  Double-click the Syncfusion Essential Studio Platform Online Installer setup file. The Setup Wizard opens and extracts the package automatically.
+1.  Double-click the Syncfusion WPF Online Installer setup file. The Setup Wizard opens and extracts the package automatically.
 
     ![](WebInstaller/Step-by-Step-Installation_img1.png)
 
