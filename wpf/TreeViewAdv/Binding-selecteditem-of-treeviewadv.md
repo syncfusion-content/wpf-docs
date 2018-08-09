@@ -16,13 +16,13 @@ Users can get the SelectedItem using SelectedTreeItem property in order to enabl
 
 <table>
 <tr>
-<td>
-**Property**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-SelectedTreeItem<br/><br/></td><td>
-This can be used to bind the Selected TreeView Item to a property of MVVM sample.<br/><br/></td></tr>
+SelectedTreeItem</td><td>
+This can be used to bind the Selected TreeView Item to a property of MVVM sample.</td></tr>
 </table>
 
 **Samples Location:**
