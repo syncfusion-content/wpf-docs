@@ -29,5 +29,5 @@ This can be used to bind the Selected TreeView Item to a property of MVVM sample
 
 The samples are located in the following location:
 
-[TreeView_SelectedTreeIndex.Zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TreeView_SelectedTreeIndex-1903198893)
+[TreeView_SelectedTreeIndex.Zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TreeView_SelectedTreeIndex_Demo-1906907709)
 
