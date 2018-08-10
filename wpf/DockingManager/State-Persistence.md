@@ -298,3 +298,4 @@ reader.Close()
 {% endtabs %}
 
 
+N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.
