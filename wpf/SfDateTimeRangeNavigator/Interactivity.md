@@ -9,11 +9,11 @@ documentation: ug
 
 # Interactivity
 
-SfDateTimeRangeNavigator provides interactive features such as zooming, panning. The navigator has a resizable scrollbar which is used to zoom in large amount of data and also helps to navigate to particular timespan by moving the scrollbar. 
+The date-time range navigator control provides interactive features such as zooming and panning. This control has a resizable scrollbar, which is used to zoom in large amount of data and navigate to particular timespan by moving the scroll bar.
 
-The ZoomPosition and ZoomFactor of the chart axis can be bind with the SfDateTimeRangeNavigator.
+The ZoomPosition and ZoomFactor properties of the chart axis can be bound with the SfDateTimeRangeNavigator.
 
-## Property
+## Properties
 
 <table>
 <tr>
@@ -23,47 +23,47 @@ Description</th></tr>
 <tr>
 <td>
 ZoomPosition</td><td>
-Represents the ZoomPosition of the Selected Range in the Navigator</td></tr>
+Represents the zoom position of the selected range.</td></tr>
 <tr>
 <td>
 ZoomFactor</td><td>
-Represent the ZoomFactor of the Selected Range in the Navigator</td></tr>
+Represents the zoom factor of the selected range.</td></tr>
 <tr>
 <td>
 SelectedData</td><td>
-Used to get the selected data between a selected range in the Navigator</td></tr>
+Gets the selected data between selected ranges.</td></tr>
 <tr>
 <td>
 ShowGridLines</td><td>
-Used to show the gridlines inside the content of a Navigator</td></tr>
+Shows the gridlines inside the content.</td></tr>
 <tr>
 <td>
 Minimum</td><td>
-Used to set the minimum or starting range of the Navigator</td></tr>
+Sets the minimum or starting range of the navigator.</td></tr>
 <tr>
 <td>
 Maximum</td><td>
-Used to set the maximum or ending range of the Navigator</td></tr>
+Sets the maximum or ending range of the navigator.</td></tr>
 <tr>
 <td>
 ViewRangeStart</td><td>
-Used to get the Start value of the Selected range of the Navigator</td></tr>
+Gets the start value of the selected range.</td></tr>
 <tr>
 <td>
 ViewRangeEnd</td><td>
-Used to get the End value of the Selected range of the Navigator</td></tr>
+Gets the end value of the selected range.</td></tr>
 <tr>
 <td>
 EnableDeferredUpdate</td><td>
-Used to enable deferred scrolling and panning.</td></tr>
+Enables deferred scrolling and panning.</td></tr>
 <tr>
 <td>
 DeferredUpdateDelay</td><td>
-Gets or sets the delay value, when EnableDeferredUpdate is enabled.</td></tr>
+Gets or sets the delay value when the EnableDeferredUpdate is enabled.</td></tr>
 </table>
 
 
-## Event
+## Events
 
 <table>
 <tr>
@@ -74,8 +74,8 @@ Description</th></tr>
 <tr>
 <td>
 ValueChanged</td><td>
-ValueChanged(Object sender, EventArgs e)</td><td>
-This event is triggered when the position of the scrollbar changed</td></tr>
+ValueChanged (Object sender, EventArgs e)</td><td>
+This event is triggered when the position of the scrollbar is changed</td></tr>
 </table>
 
 {% tabs %}
@@ -188,23 +188,18 @@ chart.Series.Add(candleSeries);
 
 {% endtabs %}
 
-The following is the screenshot of SfDateTimeRangeNavigator selecting one Quarter of data.
+The following screenshot illustrates selecting one quarter of data.
 
 ![](Interactivity_images/Interactivity_img1.png)
 
-SfDateTimeRangeNavigator selecting  one Quarter of data
-{:.caption}
-
-The following is the screenshot of SfDateTimeRangeNavigator after zooming into weeks of data from 6 months of data.
+The following screenshot illustrates the control after zooming into weeks of data from 6 months of data.
 
 ![](Interactivity_images/Interactivity_img2.png)
 
-SfDateTimeRangeNavigator after zooming into weeks of data from 6 months of data
-{:.caption}
 
-## ThumbStyle Customization
+## Thumb style customization
 
-SfDateTimeRangeNavigator provides many properties to customize the elements such as Upper, Lower bar and Left, Right thumb, etc.,
+The date-time range navigator control provides the following properties to customize the elements such as upper bar, lower bar, left thumb, and right thumb.
 
 <table>
 <tr>
@@ -214,19 +209,19 @@ Description</th></tr>
 <tr>
 <td>
 LeftThumbStyle</td><td>
-Used to define the style for left thumb of the Navigator</td></tr>
+Defines the style for the left thumb of the navigator.</td></tr>
 <tr>
 <td>
 RightThumbStyle</td><td>
-Used to define the style for right thumb of the Navigator</td></tr>
+Defines the style for the right thumb of the navigator.</td></tr>
 <tr>
 <td>
 LineStyle</td><td>
-Used to define the style for line in the left or right thumb</td></tr>
+Defines the style for line in the left or right thumb.</td></tr>
 <tr>
 <td>
 SymbolTemplate</td><td>
-Used to define the style for symbol placed in the left or right thumb</td></tr>
+Defines the style for symbol placed in the left or right thumb.</td></tr>
 </table>
 
 {% tabs %}
@@ -289,11 +284,11 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-The following is the screenshot of SfDateTimeRangeNavigator with customized Right thumb.
+The following screenshot illustrates the control after customizing the right thumb.
 
 ![](Interactivity_images/Interactivity_img3.png)
 
-## Higher and Lower bar customization
+## Higher and lower bars customization
 
 <table>
 <tr>
@@ -303,17 +298,17 @@ Description</th></tr>
 <tr>
 <td>
 HigherBarGridLineStyle</td><td>
-Used to define the style for upper labels bar gridlines.</td></tr>
+Defines the style for gridlines of upper labels bar.</td></tr>
 <tr>
 <td>
 LowerBarGridLineStyle</td><td>
-Used to define the style for lower labels bar gridlines.</td></tr>
+Defines the style for gridlines of lower labels bar.</td></tr>
 <tr>
 <td>
 HigherBarTickLineStyle</td><td>
-Used to define the style for upper labels bar ticklines.</td></tr>
+Defines the style for ticklines of upper labels bar.</td></tr>
 <tr>
 <td>
 LowerBarTickLineStyle</td><td>
-Used to define the style for lower labels bar ticklines.</td></tr>
+Defines the style for ticklines of lower labels bar.</td></tr>
 </table>
