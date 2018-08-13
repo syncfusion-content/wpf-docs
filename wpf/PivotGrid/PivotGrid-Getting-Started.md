@@ -68,7 +68,7 @@ Add the following dependency assemblies to your WPF application. To add them to 
 N> You can also get the assemblies by browsing to the default assembly location
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}
 
-Then, add a grid container in MainWindow.xaml file to hold the pivot grid control created and added from code-behind lately.
+Then, add a grid container in MainWindow.xaml file to hold the pivot grid control created and added from code-behind.
 
 {% highlight XAML %}
 
