@@ -58,7 +58,7 @@ Architecture of Items
 
 ### Dimension Element
 
-A simple [dimension](http://msdn.microsoft.com/en-us/library/microsoft.analysisservices.dimension.aspx) object is composed of basic information such as Name, Hierarchy, Level and Members. We can create the dimension element by specifying its name and providing the hierarchy and level name. 
+A simple [dimension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.analysisservices.dimension?redirectedfrom=MSDN&view=sqlserver-2016) object is composed of basic information such as Name, Hierarchy, Level and Members. We can create the dimension element by specifying its name and providing the hierarchy and level name. 
 
 The dimension element will contain the hierarchical details and information about each included level elements in that hierarchy. A hierarchy can have any number of level elements and the level elements can have any number of members and the member elements can have any number of child members.
 
