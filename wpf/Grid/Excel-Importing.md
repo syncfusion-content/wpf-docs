@@ -19,6 +19,16 @@ Essential Grid WPF provides an in-built support for Excel Importing. This featur
 * Improving Performance—Excel Importing feature supports the virtualization. By using this you can optimize the performance.
 * Run-time Features—Imports the comments from the excel worksheet to GridControl.
 
+The following assemblies are needs to be added for Excel import in gridControl.
+
+* Syncfusion.Grid.WPF
+* Syncfusion.GridCommon.WPF
+* Syncfusion.GridConverter.WPF
+* Syncfusion.Linq.Base
+* Syncfusion.XlsIO.Base
+
+N> You must added `Syncfusion.GridConverter.WPF` dll in your sample and you can find the `GridModelImportExtensions` class and it's method under the namespace `Syncfusion.Windows.Controls.Grid.Converter`.
+
 ## Use Case Scenarios
 
 This feature can be used to view the Excel workbook into applications with the same set of styles and to edit the data in run time. You can also view the Excel workbook into web application with the same set of styles and borders.
