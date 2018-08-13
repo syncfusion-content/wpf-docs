@@ -11,9 +11,9 @@ documentation: ug
 
 Series are the data points plotted in the rectangular co-ordinate system.
 
-## Point Label
+## Point label
 
-Point label provides information about the data point. Data point can be added to a series by using the following code sample:
+Point label provides information about the data point. Data point can be added to a series by using the following code sample.
 
 {% tabs %}
 
@@ -52,13 +52,13 @@ Next i
 
 {% endtabs %}
 
-The following screenshot shows an OlapChart with Point Labels enabled:
+The following screenshot shows an OLAP chart with point labels enabled.
 
 ![](Series_images/Series_img1.png)
 
-## Color Customization
+## Color customization
 
-You can set a custom color for each series in the OlapChart. To apply different colors to different series iterate through the series and apply the custom brush to the series.
+You can set a custom color for each series in the OLAP chart. To apply different colors to different series iterate through the series, apply the custom brush to the series.
 
 {% tabs %}
 
@@ -76,9 +76,9 @@ Me.olapChart.Series(0).Interior = Brushes.Orange
 
 {% endtabs %}
 
-## Border Customization
+## Border customization
 
-You can customize the thickness of the series border of an OlapChart by using the following code sample:
+You can customize the thickness of series border of the OLAP chart by using the following code sample.
 
 {% tabs %}
 
@@ -98,25 +98,25 @@ Me.olapChart.Series(0).StrokeThickness = 4
 
 {% endtabs %}
 
-N> The behavior of the series border will vary for different chart types. The following illustration describes them in detail.
+N> The behavior of the series border varies for different chart types. The following illustration describes them in detail.
 
-The series border is applied for the first series of a Column chart by using the **StrokeThickness** property. Notice that the first series element is surrounded with the applied border.
+The series border is applied to the first series of a column chart by using the `StrokeThickness` property. Now, the first series element is surrounded with applied border.
 
 ![](Series_images/Series_img2.png)
 
-Notice the variation. The same series border property is applied for a series in the Line chart. Instead of creating a 4 pixel width border it increases the thickness of the particular series line.
+Notice the variation. The same series border property is applied to a series in the line chart. Instead of creating a 4 pixel width border it increases the thickness of the particular series line.
 
 ![](Series_images/Series_img3.png)
 
-Since, you know that the Pie chart renders everything in a single series each block in the Pie chart known as segments will have the border applied on them. This is described in the following illustration:
+The pie chart renders everything in a single series; each block in the pie chart known as segments. The border will be applied on each segments. This is ilustrated in the following screenshot.
 
 ![](Series_images/Series_img4.png)
 
-## Custom Data Templates
+## Custom data templates
 
-Series can be customized with user-defined data templates. The following sample usage describes how to apply a data template to the series in an OlapChart.
+Series can be customized with user-defined data templates. The following sample usage describes how to apply a data template to series in the OLAP chart.
 
-The following data template will be used to customize the series:
+The following data template can be used to customize the series.
 
 {% tabs %}
 
@@ -160,15 +160,15 @@ Next i
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
 
 ## Event
 
-**ChartMouseEventArgs** are the arguments returned when the mouse events are triggered by the ChartSeries. **ChartMouseEventArgs** return the segment on which the mouse events are triggered along with the default mouse event args. This event args can be used to perform customization of a segment when a mouse event is encountered. The segment returns different values that can be used to perform calculations or operations.
+**ChartMouseEventArgs** are the arguments returned when the mouse events are triggered by the ChartSeries. **ChartMouseEventArgs** return the segment on which the mouse events are triggered along with default mouse event args. This event args can be used to customize a segment when the mouse event is encountered. The segment returns different values that are used to perform calculations or operations.
 
-The following code sample demonstrates how the **ChartMouseEventArgs** can be used to retrieve information on the ChartSeries segment:
+The following code sample demonstrates how the **ChartMouseEventArgs** can be used to retrieve information on the ChartSeries segment.
 
 {% tabs %}
 
@@ -207,16 +207,16 @@ End Sub
 
 {% endseealso %}
 
-## Chart Animation
+## Chart animation
 
-Animations can be added in the OlapChart control. It can be achieved through the following properties:
+Animations can be added to the OLAP chart control. This can be achieved through the following properties:
 
-* **SeriesAnimateOption** - Gets or sets animation for each series
-* **SeriesAnimateOneByOne** - Gets or sets whether each series animate one by one. By default false.
-* **EnableSeriesAnimation** - Gets or sets whether enable animation for each series.
-* **SeriesAnimationDuration** - Gets or sets the animation duration for each series.
+* **SeriesAnimateOption**: Gets or sets animation for each series.
+* **SeriesAnimateOneByOne**: Gets or sets whether each series animate one by one. By default, it is false.
+* **EnableSeriesAnimation**: Gets or sets whether the animation for each series is enabled.
+* **SeriesAnimationDuration**: Gets or sets the animation duration for each series.
 
-We can use the following code sample for enabling Chart animations: 
+The following code sample is used for enabling chart animations.
 
 {% tabs %}
 
@@ -249,19 +249,19 @@ this.olapChart.SeriesAnimationDuration = new TimeSpan(1);
 
 {% endtabs %}
 
-The following illustration shows the Chart Animations:
+The following illustration shows the chart animations.
 
 ![](Series_images/Series_img6.png)
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OLAPChart.WPF\Samples\Appearance\Chart Animations Demo\
 
-## Pie Chart Customization
+## Pie chart customization
 
-We can set the explode index, explode radius, and enable or disable the series effects for the each series in a Pie chart.
+You can set the explode index and explode radius and enable or disable the series effects for each series in the pie chart.
 
-The following code sample demonstrates the customization each series of the Pie chart.
+The following code sample demonstrates the customization of each series in the pie chart.
 
 {% highlight c# %}
 
@@ -298,10 +298,10 @@ foreach (ChartSeries series in this. olapchart.Series)
     
 {% endhighlight %}
   
-The following illustration shows the customization:
+The following illustration shows the customization.
 
 ![](Series_images/Series_img7.png)
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OLAPChart.WPF\Samples\Chart Types\Pie Chart Demo

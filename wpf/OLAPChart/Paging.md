@@ -9,19 +9,19 @@ documentation: ug
 
 # Paging in OLAP Chart
 
-Paging in OlapChart provides you the support to load and render large amount of data without any performance constraint.  
+Paging in the OLAP chart supports you to load and render the large amount of data without any performance constraint.
 
-OlapPager (User Control) is included and bound with the OlapDataManager object of the respective OlapPager (User Control) is included and bound with the OlapDataManager object of the respective OlapChart. To enable paging, set the **"EnablePaging"** property to true.
+A OLAP pager (user control) is included and bound with the OlapDataManager object of the OLAP chart. To enable paging, set the `EnablePaging` property to true.
 
-When you process large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by using the UI options in OlapPager. You can also change the page size and other pager settings at run-time by using **PageSetting** window.
+When you process the large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options in the OLAP pager. You can also change the page size and other pager settings at runtime by using the **PageSetting** window.
 
-Include the following Syncfusion assembly from the installed location in-order to add the OlapPager (User Control) with OlapChart.
+Include the following Syncfusion assembly from the installed location to add the OLAP pager (User Control) with OLAP chart.
 
 * Syncfusion.OlapShared.Wpf
 
-N> You can also get the assemblies by browsing to the Default Assembly Location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
+N> You can also get the assemblies by browsing to the default assembly location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
-**ENABLE PAGING THROUGH XAML**
+**Enable paging through XAML**
 
 {% highlight xaml %}    
 
@@ -47,7 +47,7 @@ N> You can also get the assemblies by browsing to the Default Assembly Location:
 
 {% endhighlight %}
  
-**ENABLE PAGING THROUGH REPORT:**
+**Enable paging through report**
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ End Namespace
 
 ![](Paging_images/Paging_img2.png)
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Paging
 

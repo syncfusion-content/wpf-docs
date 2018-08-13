@@ -9,22 +9,22 @@ documentation: ug
 
 # Zooming Support in OLAP Chart
 
-OlapChart for WPF allows you to zoom into a narrower range within the OlapChart.
+The OLAP chart of WPF allows you to zoom in to a narrower range within the OLAP chart.
 
-In the zooming mode, a zooming toolkit is displayed at the top-left corner of the OlapChart. Using the buttons in the zooming toolkit, ChartSeries can be zoomed in, out, reset or closed.
+In the zooming mode, a zooming toolkit is displayed at the top-left corner of the OLAP chart. Using the buttons in the zooming toolkit, ChartSeries can be zoomed in, out, reset, or closed.
 
 ![](Zooming-and-scrolling_images/Zooming-and-scrolling_img1.png)
 
-The visibility of the zooming toolkit or the individual buttons in the toolkit can be controlled by using the following properties:
+The visibility of the zooming toolkit or individual buttons in the toolkit can be controlled by using the following properties:
 
 _Property_
 
-* **ZoomInButtonVisibility** - Gets or sets the zoom in button visibility.
-* **ZoomOutButtonVisibility** - Gets or sets the zoom out button visibility.
-* **ZoomCloseButtonVisibility** - Gets or sets the zoom close button visibility.
-* **ZoomResetButtonVisibility** - Gets or sets the zoom reset button visibility.
+* **ZoomInButtonVisibility**: Gets or sets the zoom in button visibility.
+* **ZoomOutButtonVisibility**: Gets or sets the zoom out button visibility.
+* **ZoomCloseButtonVisibility**: Gets or sets the zoom close button visibility.
+* **ZoomResetButtonVisibility**: Gets or sets the zoom reset button visibility.
 
-The following code sample illustrates the above settings:
+The following code sample illustrates the above settings.
 
 {% tabs %}
 
@@ -63,6 +63,6 @@ ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart, Visibility.Visible)
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Zooming and Scrolling\Zooming and Scrolling Demo

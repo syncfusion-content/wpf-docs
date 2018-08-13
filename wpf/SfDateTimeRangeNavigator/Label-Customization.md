@@ -9,11 +9,11 @@ documentation: ug
 
 # Label Customization
 
-The SfDateTimeRangeNavigator helps the user to visualize large data in a simplified manner. The timespan of the data is represented in the Higher Level Bar and Lower Level Bar. The timespan in default calculated smartly and provide the suitable DateTime format and Interval for the given data.
+The date-time range navigator control helps users to visualize large data in a simplified manner. The timespan of data is represented in the higher level bar and lower level bar. The timespan calculates data smartly and provides suitable date-time format and interval, by default.
 
-User can also set the Interval which they think suitable for their data, this can be done by using Interval Property as in below code snippet. 
+Users can also set the interval as needed for their data. This can be done by using the Interval property as demonstrated in the following code sample. 
 
-## Property
+**Properties**
 
 <table>
 <tr>
@@ -22,12 +22,12 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Intervals</td><td>
-Used to set the Interval type which need to be displayed in the Navigator</td></tr>
+Interval</td><td>
+Sets the interval type that needs to be displayed in the navigator.</td></tr>
 <tr>
 <td>
 LabelsPosition</td><td>
-Gets or Sets string collection to set the label format for the navigator labels.</td></tr>
+Gets or sets string collection to set the label format for the navigator labels.</td></tr>
 </table>
 
 {% tabs %}
@@ -112,15 +112,11 @@ rangeNavigator.Content = chart;
 
 {% endtabs %}
 
-Following is the screenshot of showing only Quarter and Month intervals in the Navigator
+The following screenshot illustrates only Quarter and Month intervals in the navigator.
 
 ![](Label-Customization_images/Label-Customization_img1.png)
 
-Quarter and Month intervals in the Navigator
-{:.caption}
-
-
-## The Interval has the following types 
+The interval can be set in the following types: 
 
 * Year
 * Quarter
@@ -129,11 +125,9 @@ Quarter and Month intervals in the Navigator
 * Day
 * Hour
 
+The auto timespan format simplifies the visual representation of data when zooming in with the following formats:
 
-
-The auto timespan format simplifies the visual representation of data while zooming in with the below formats.
-
-_List of Intervals_
+**Intervals**
 
 <table>
 <tr>
@@ -143,31 +137,31 @@ Examples</th></tr>
 <tr>
 <td>
 HourInterval</td><td>
-7/21/2011 12:00:00 AM -> 12 AM7/21/2011 12:00:00 AM -> 12A</td></tr>
+7/21/2011 12:00:00 AM > 12 AM7/21/2011 12:00:00 AM > 12A</td></tr>
 <tr>
 <td>
 DayInterval</td><td>
-7/21/2011 12:00:00 AM -> Thursday, July 21, 20117/21/2011 12:00:00 AM -> Thu, Jul 21, 20117/21/2011 12:00:00 AM -> Thursday, 217/21/2011 12:00:00 AM -> Thu, 21</td></tr>
+7/21/2011 12:00:00 AM > Thursday, July 21, 20117/21/2011 12:00:00 AM > Thu, Jul 21, 20117/21/2011 12:00:00 AM > Thursday, 217/21/2011 12:00:00 AM > Thu, 21</td></tr>
 <tr>
 <td>
 WeekInterval</td><td>
-7/21/2011 12:00:00 AM -> Week 29, July, 20117/21/2011 12:00:00 AM -> Week 29, Jul, 20117/21/2011 12:00:00 AM -> Week 297/21/2011 12:00:00 AM -> W29</td></tr>
+7/21/2011 12:00:00 AM > Week 29, July, 20117/21/2011 12:00:00 AM > Week 29, Jul, 20117/21/2011 12:00:00 AM > Week 297/21/2011 12:00:00 AM > W29</td></tr>
 <tr>
 <td>
 MonthInterval</td><td>
-7/21/2011 12:00:00 AM -> July, 20117/21/2011 12:00:00 AM -> July7/21/2011 12:00:00 AM -> Jul7/21/2011 12:00:00 AM -> J</td></tr>
+7/21/2011 12:00:00 AM > July, 20117/21/2011 12:00:00 AM > July7/21/2011 12:00:00 AM > Jul7/21/2011 12:00:00 AM > J</td></tr>
 <tr>
 <td>
 QuarterInterval</td><td>
-7/21/2011 12:00:00 AM -> Quarter 3, 20117/21/2011 12:00:00 AM -> Quarter 37/21/2011 12:00:00 AM -> Q3, 20117/21/2011 12:00:00 AM -> Q3</td></tr>
+7/21/2011 12:00:00 AM > Quarter 3, 20117/21/2011 12:00:00 AM > Quarter 37/21/2011 12:00:00 AM > Q3, 20117/21/2011 12:00:00 AM > Q3</td></tr>
 <tr>
 <td>
 YearInterval</td><td>
-7/21/2011 12:00:00 AM -> 2011</td></tr>
+7/21/2011 12:00:00 AM > 2011</td></tr>
 </table>
 
 
-## Label Style Customization
+**Label style customization**
 
 <table>
 <tr>
@@ -177,15 +171,15 @@ Description</th></tr>
 <tr>
 <td>
 LabelBarStyle</td><td>
-Label Style can be customized using the LabelBarStyle property and this can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.</td></tr>
+Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.</td></tr>
 <tr>
 <td>
 SelectedLabelStyle</td><td>
-Used to define the Label Style for labels in the selected region.</td></tr>
+Defines the label style for labels in the selected region.</td></tr>
 <tr>
 <td>
 LabelsPosition</td><td>
-Used to position the upper and lower labels inside or outside of the label bar.</td></tr>
+Positions the upper and lower labels inside or outside the label bar.</td></tr>
 </table>
 
  {% tabs %}
@@ -243,11 +237,6 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-Following is the screenshot of Label HorizontalAlignment set to left.
+The following screenshot illustrates setting the Label HorizontalAlignment to left.
 
 ![](Label-Customization_images/Label-Customization_img2.png)
-
-Label HorizontalAlignment set to left
-{:.caption}
-
-
