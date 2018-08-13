@@ -279,6 +279,7 @@ When the DateTime type value is bound to the {{ '[GridColumn](http://help.syncfu
 <li>Begins With</li> 
 <li>Ends With</li> 
 <li>Contains</li> 
+<li>Does Not Contain</li>
 <li>Empty</li> 
 <li>Not Empty</li>
 <li>Null</li> 

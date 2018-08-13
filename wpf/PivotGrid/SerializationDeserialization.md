@@ -192,7 +192,7 @@ Methods table
     <tr>
     <td>
     Deserialize()</td><td>
-    Deserializes the pivot grid from the saved XML file using the open file dialog.</td><td>
+    Deserialize the pivot grid from the saved XML file using the open file dialog.</td><td>
     -</td><td>
     void</td></tr>
     <tr>
@@ -204,7 +204,7 @@ Methods table
     <tr>
     <td>
     Deserialize(string filename)</td><td>
-    Deserializes the pivot grid from the specified XML file.</td><td>
+    Deserialize the pivot grid from the specified XML file.</td><td>
     string fileName</td><td>
     void</td></tr>
     <tr>
@@ -216,7 +216,7 @@ Methods table
     <tr>
     <td>
     Deserialize(string XmlString)</td><td>
-    Deserializes the XML string format in the pivot grid control.</td><td>
+    Deserialize the XML string format in the pivot grid control.</td><td>
     string XmlString</td><td>
     void</td></tr>
     </table>

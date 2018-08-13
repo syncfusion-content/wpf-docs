@@ -65,7 +65,7 @@ public partial class MainWindow: Window {
 
 ![](Excel-Like-Filtering-images/Excel like Filter Popup.png)
 
-## Various features of multifunctional pop-up
+## Various features of MultiFunctional pop-up
 
 **Sort A to Z**
 
