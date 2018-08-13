@@ -7,13 +7,13 @@ control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# ToolTip Support
+# Tooltip Support
 
-DateTimeRangeNavigator control provides ToolTip support for Sliders. Sliders are used to select a particular region of data in the DateTimeRangeNavigator control. ToolTips for sliders show the selected start and end date time values. You can even view exact date values to the precision of milliseconds.
+The date-time range navigator control provides tooltip support to sliders. Sliders are used to select a particular region of data in the control. Tooltips for sliders show the selected start and end date-time values. You can view the exact date values with the milliseconds precision.
 
 ## Properties
 
-The following properties are used to customize the ToolTip Settings for the DateTimeRangeNavigator control.
+The following properties are used to customize the tooltip settings:
 
 ### Property
 
@@ -29,7 +29,7 @@ Shows or hides the tooltip.</td></tr>
 <tr>
 <td>
 ToolTipLabelFormat</td><td>
-Sets the date time label format for the tooltip.</td></tr>
+Sets the date-time label format for the tooltip.</td></tr>
 <tr>
 <td>
 LeftToolTipTemplate</td><td>
@@ -90,6 +90,3 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {% endtabs %}
 
 ![](ToolTip-Support_images/ToolTip-Support_img1.png)
-
-DateTimeRangeNavigator with tooltip
-{:.caption}
