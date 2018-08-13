@@ -9,11 +9,11 @@ documentation: ug
 
 # Overview
 
-The SfDateTimeRangeNavigator is a time bound Data Visualization control. Its purpose is to allow scrolling and navigation through large periods of time. The control can be easily combined with other controls such as Chart, GridView, etc. to create rich and powerful dashboards.
+The date-time range navigator control is a time bound data visualization control. Its purpose is to allow scrolling and navigation through large periods of time. This control can be easily combined with other controls such as chart and grid view to create rich and powerful dashboards.
 
-## Key Features
+## Key features
 
-* Supports Interactive Zooming and Scrolling through large data.
-* Smart Label calculation while Zooming.
-* Select a particular region through large period of time.
+* Supports interactive features such as zooming and scrolling through large data.
+* Calculates smart labels when zooming.
+* Allows users to select a particular region in large period of time.
 * Gets the data from a selected region. 
