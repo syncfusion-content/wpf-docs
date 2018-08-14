@@ -24,7 +24,6 @@ The following assemblies are needs to be added for importing the Excel to GridCo
 * Syncfusion.Grid.WPF
 * Syncfusion.GridCommon.WPF
 * Syncfusion.GridConverter.WPF
-* Syncfusion.Linq.Base
 * Syncfusion.XlsIO.Base
 
 ## Use Case Scenarios
