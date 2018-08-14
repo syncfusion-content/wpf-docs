@@ -155,11 +155,13 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
 
 ### Canceling a Ribbon commands
 
-when the commands are executing in to the SfSpreadsheetRibbon, the [commandexecuting] (http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.Helpers.CommandExecutionEventArgs.html) event is invoked.
+By invoking [CommandExecuting] (http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.Helpers.CommandExecutionEventArgs.html) Event, user can cancel the Ribbon commands. The `CommandExecutingEvent` is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.Helpers`.
 
-To cancel the ribbon commands execution code snippet is given below,
-
-The `CommandExecutingEvent` is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.Helpers`.
+{% tabs %}
+{% highlight xaml%}
+<syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
