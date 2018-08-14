@@ -152,3 +152,30 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+### Canceling a Ribbon commands
+
+By invoking [CommandExecuting] (http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.Helpers.CommandExecutionEventArgs.html) Event, user can cancel the Ribbon commands. The `CommandExecutingEvent` is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.Helpers`.
+
+{% tabs %}
+{% highlight xaml%}
+<syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+this.ribbon.Commands.CommandExecuting += Commands_CommandExecuting;
+
+void Commands_CommandExecuting(object sender, CommandExecutingEventArgs args)
+{
+	//stops copy button command execution.
+	if(args.CommandName == "Copy")
+	{
+		//set the bool value is true.
+		//the operation is not performed as you mentioned in CommandName
+		args.cancel = true;
+	}
+}
+{% endhighlight %}
+{% endtabs %}
