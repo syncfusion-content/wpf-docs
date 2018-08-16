@@ -7,7 +7,7 @@ control: SfHeatMap
 documentation: ug
 ---
 
-#Items Mapping
+# Items Mapping
 
 External data source can be mapped with HeatMap using `ItemsMapping` property. It supports 2 kind of data source.
 
