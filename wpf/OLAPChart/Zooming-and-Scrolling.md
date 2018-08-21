@@ -9,7 +9,7 @@ documentation: ug
 
 # Zooming Support in OLAP Chart
 
-The OLAP chart of WPF allows you to zoom in to a narrower range within the OLAP chart.
+The OLAP chart for WPF allows you to zoom in to a narrower range within the OLAP chart.
 
 In the zooming mode, a zooming toolkit is displayed at the top-left corner of the OLAP chart. Using the buttons in the zooming toolkit, ChartSeries can be zoomed in, out, reset, or closed.
 

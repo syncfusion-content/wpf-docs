@@ -9,7 +9,7 @@ documentation: ug
 
 # Watermark
 
-The OLAP chart of WPF supports watermark feature that is used to show text, image, or both as a watermark inside the chart area.
+The OLAP chart for WPF supports watermark feature that is used to show text, image, or both as a watermark inside the chart area.
 
 There are many customization options available for the watermarked content. The content can be aligned both horizontally and vertically, and the font style of the content can be changed. The interior of the content can be customized and the opacity can also be varied.
 
