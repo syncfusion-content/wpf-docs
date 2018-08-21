@@ -11,7 +11,7 @@ documentation: ug
 
 The chart palette is a pre-defined collection of a set of colors that can be applied to a chart series. The OLAP chart supports 23 chart palettes, which is used to provide rich look for your business applications.
 
-The folowing are the available palettes in the OLAP chart control:
+The following are the available palettes in the OLAP chart control:
 
 * Default
 * DefaultAlpha

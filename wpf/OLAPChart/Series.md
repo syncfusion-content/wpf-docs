@@ -108,7 +108,7 @@ Notice the variation. The same series border property is applied to a series in 
 
 ![](Series_images/Series_img3.png)
 
-The pie chart renders everything in a single series; each block in the pie chart known as segments. The border will be applied on each segments. This is ilustrated in the following screenshot.
+The pie chart renders everything in a single series; each block in the pie chart known as segments. The border will be applied on each segments. This is illustrated in the following screenshot.
 
 ![](Series_images/Series_img4.png)
 
