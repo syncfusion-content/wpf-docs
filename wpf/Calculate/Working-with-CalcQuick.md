@@ -119,6 +119,8 @@ set the [AutoCalc](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfu
 [RefreshAllCalculations](https://help.syncfusion.com/cr/cref_files/windowsforms/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcQuickBase~RefreshAllCalculations.html) method of `CalcQuickBase` forces the recalculation of all variables registered with the `CalcQuickBase` object. 
 This has to be done after the `AutoCalc` property has been set to `True`, so that the dependencies between variables can be monitored.
 
+Below example shows the computation of formula or expressions using `ParseAndCompute` method of `CalcQuickBase`.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -141,6 +143,37 @@ calcQuick.RefreshAllCalculations();
 
 //Changing the variable "C" value to "3",
 calcQuick["C"] = "3"; 
+
+//Output result after the change of variable "C",
+var Output = calcQuick["result"];
+
+{% endhighlight %}
+{% endtabs %}
+
+Below example shows the computation of formula or expressions without using `ParseAndCompute` method of `CalcQuickBase`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Initialize,
+CalcQuickBase calcQuick = new CalcQuickBase();
+
+//Registering keys with values,
+calcQuick["A"] = "5";
+calcQuick["B"] = "6";
+calcQuick["C"] = "11";
+
+//Computing in built formulas,
+calcQuick["result"] = "=[A]+[B]+[C]";
+
+//Setting the Auto calculation mode,
+calcQuick.AutoCalc = true;
+
+//Changing the variable "C" value to "3",
+calcQuick["C"] = "3";
+
+//To recompute formulas stored in CalcQuickBase object,
+calcQuick.RefreshAllCalculations();
 
 //Output result after the change of variable "C",
 var Output = calcQuick["result"];
