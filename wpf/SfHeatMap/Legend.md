@@ -7,10 +7,10 @@ control: SfHeatMap
 documentation: ug
 ---
 
-#Legend
+# Legend
 Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
 
-##Create Legend
+## Create Legend
 Legend can be created with color mapping as shown below,
 
 {% highlight xaml %}
@@ -30,14 +30,14 @@ Resultant legend will be like following image,
 
 ![](Images/Legend.png)
 
-##Legend Mode
+## Legend Mode
 There are two modes for Legend
 
 * Gradient
 * List
 
 
-###Gradient:
+### Gradient:
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="Gradient" 
@@ -46,7 +46,7 @@ There are two modes for Legend
 
 ![](Images/Legend_Gradient.png)
 
-###List:
+### List:
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend
 	LegendMode="List" 
@@ -55,12 +55,12 @@ There are two modes for Legend
 
 ![](Images/Legend_List.png)
 
-##Orientation
+## Orientation
 There are 2 types of Orientation, applicable for Gradient and List Mode
 * Horizontal
 * Vertical
 
-###Horizontal:
+### Horizontal:
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="List" 
@@ -70,7 +70,7 @@ There are 2 types of Orientation, applicable for Gradient and List Mode
 
 ![](Images/Legend_Horizontal.png)
 
-###Vertical:
+### Vertical:
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="List" 
