@@ -9,9 +9,9 @@ documentation: ug
 
 # Chart Palette
 
-Chart Palette is a pre-defined collection of a set of colors that can be applied to a chart series. OlapChart comes with a support of 23 chart palette, which can be used to provide a rich look for your business applications.
+The chart palette is a pre-defined collection of a set of colors that can be applied to a chart series. The OLAP chart supports 23 chart palettes, which is used to provide rich look for your business applications.
 
-The available palettes in the OlapChart control are as follows:
+The following are the available palettes in the OLAP chart control:
 
 * Default
 * DefaultAlpha
@@ -37,7 +37,7 @@ The available palettes in the OlapChart control are as follows:
 * MixedFantasy
 * Custom
 
-The following code sample shows how to apply a palette to an OlapChart:
+The following code sample shows how to apply a palette to the OLAP chart.
 
 {% tabs %}
 
@@ -55,23 +55,23 @@ Me.olapChart.ColorModel.Palette = CType(System.Enum.Parse(GetType(Syncfusion.Win
 
 {% endtabs %}
 
-The following image shows before and after applying the *EarthTone* palette:
+The following image shows before and after applying the *EarthTone* palette.
 
 ![](Palette_images/Palette_img1.png)
 
-## Custom Palette
+## Custom palette
 
-Custom palettes can be applied to an OlapChart by setting the _“Interior”_ property with the custom brush to each series in the OlapChart.
+Custom palettes can be applied to the OLAP chart by setting the _“Interior”_ property with custom brush to each series in the OLAP chart.
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
 
-## Excel-like Palette
+## Excel-like palette
 
-Excel-like palettes are very useful in displaying the OlapChart in business applications. 
+Excel-like palettes are used to display the OLAP chart in business applications.
 
-The following type of excel like palettes are available:
+The following are the available types of Excel-like palettes:
 
 **GrayScale, BlueScale**
 
@@ -89,7 +89,7 @@ The following type of excel like palettes are available:
 
 ![](Palette_images/Palette_img5.png)
 
-The following code sample show how you can apply excel like palettes.
+The following code sample shows how to apply Excel-like palettes.
 
 ### Grayscale
 

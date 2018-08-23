@@ -9,16 +9,16 @@ documentation: ug
 
 # Key Performance Indicator (KPI)
 
-KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPIs calculations.
+KPI is a collection of calculations that are associated with a measure group in a cube, which is used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPIs calculations.
 
-The following are the different types of Indicators:
+The following are the different types of indicators:
 
-* KPI Goal
-* KPI Status
-* KPI Trend
-* KPI Value
+* KPI goal
+* KPI status
+* KPI trend
+* KPI value
 
-The KPI elements can be defined in the OlapReport in the following way:
+The KPI elements can be defined in the OLAP report in the following way.
 
 {% tabs %}
 
