@@ -9,34 +9,34 @@ documentation: ug
 
 # Chart Types
 
-OlapChart supports 16 different types of Charts as follows:
+The OLAP chart supports the following 16 types of charts:
 
 * Column
-* StackingColumn
-* StackingColumn100
+* Stacking column
+* Stacking column 100
 * Bar
-* StackingBar
-* StackingBar100
+* Stacking bar
+* Stacking bar 100
 * Area
-* StackingArea
-* SplineArea
-* StepArea
+* Stacking area
+* Spline area
+* Step area
 * Line
 * Spline
-* RotatedSpline
-* StepLine
+* Rotated spline
+* Step line
 * Scatter
 * Pie
 
-N> Chart type must be set before invoking the DataBind() method. Whenever you change the Chart type, you need to call the DataBind() method to get the changes reflected.
+N> Chart type must be set before invoking the DataBind() method. Whenever you change the chart type, you need to call the DataBind() method to get the changes reflected.
 
-## Column Chart
+## Column chart
 
 Column chart is the most basic type of all charts. Column charts are widely used for comparison analysis.
 
 ![](Chart-types_images/Chart-types_img1.png)
 
-The following code sample shows how to select a simple Column chart:
+The following code sample shows how to select a simple column chart.
 
 {% tabs %}
 
@@ -62,17 +62,17 @@ olapChart.ChartType = ChartTypes.Column
 
 {% endtabs %}
 
-A sample demo is available at the following location:  
+A sample demo is available at the following location.  
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
-## Stacking Column Chart
+## Stacking column chart
 
-Stacking Column Chart is a simple form of chart, which contains segments in each series. This chart type is widely used for proportional analysis over a particular period of time.
+The stacking column chart is a simple form of chart, which contains segments in each series. This chart type is widely used for proportional analysis over a particular period of time.
 
 ![](Chart-types_images/Chart-types_img2.png)
 
-The following code sample shows how to select a Stacking Column chart:
+The following code sample shows how to select a stacking column chart.
 
 {% tabs %}
 
@@ -98,17 +98,17 @@ olapChart.ChartType = ChartTypes.StackingColumn
 
 {% endtabs %}
 
-A sample demo is available at the following location:  
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
-## Stacking Column 100 Chart
+## Stacking column 100 chart
 
-Stacking Column 100 Chart is a simple form of chart.  Similar to the Stacking Column chart, the Stacking Column 100 chart contains segments in each series added so that each series is equated to 100%. This chart type is widely used for proportional analysis over a particular period of time.
+Stacking column 100 chart is a simple form of chart. Like stacking column chart, the stacking column 100 chart also contains segments in each series, which is added to equate each series to 100%. This chart type is widely used for proportional analysis over a particular period of time.
 
 ![](Chart-types_images/Chart-types_img3.png)
 
-The following code sample shows how to select a Stacking Column 100 chart:
+The following code sample shows how to select a stacking column 100 chart.
 
 {% tabs %}
 
@@ -134,17 +134,17 @@ olapChart.ChartType = ChartTypes.StackingColumn100
 
 {% endtabs %}
 
-A sample demo is available at the following location:  
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
-## Bar Chart
+## Bar chart
 
-Bar Chart is the same as the Column chart, the variation is it is rotated 90 degrees in the clockwise direction. This chart type is widely used for comparison analysis over a particular period of time.
+The bar chart is same as the column chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for comparison analysis over a particular period of time.
 
 ![](Chart-types_images/Chart-types_img4.png)
 
-The following code sample shows how to select a Bar chart:
+The following code sample shows how to select a bar chart.
 
 {% tabs %}
 
@@ -170,17 +170,17 @@ olapChart.ChartType = ChartTypes.Bar
 
 {% endtabs %}
 
-A sample demo is available at the following location: 
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
-## Stacking Bar Chart
+## Stacking bar chart
 
-Stacking Bar Chart is the same as the Stacking Column chart, the variation is it is rotated 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
+Stacking bar chart functions same as the stacking column chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
 
 ![](Chart-types_images/Chart-types_img5.png)
 
-The following code sample shows how to select a Stacking Bar chart:
+The following code sample shows how to select a stacking bar chart.
 
 {% tabs %}
 
@@ -206,17 +206,17 @@ olapChart.ChartType = ChartTypes.StackingBar
 
 {% endtabs %}
 
-A sample demo is available at the following location: 
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
-## Stacking Bar 100 Chart
+## Stacking bar 100 chart
 
-Stacking Bar 100 Chart is the same as the Stacking Column 100 chart, the variation is it is rotated 90 degree in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
+The stacking bar 100 chart functions same as the stacking column 100 chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
 
 ![](Chart-types_images/Chart-types_img6.png)
 
-The following code sample shows how to select a Stacking Bar 100 chart:
+The following code sample shows how to select a stacking bar 100 chart.
 
 {% tabs %}
 
@@ -242,17 +242,17 @@ olapChart.ChartType = ChartTypes.StackingBar100
 
 {% endtabs %}
 
-A sample demo is available at the following location: 
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
-## Area Chart
+## Area chart
 
-Area Chart fills the quantitative data over a period of time. It is mainly used to compare the quantity plotted over two or more series.
+The area chart fills the quantitative data over a period of time. It is mainly used to compare the quantity plotted over two or more series.
 
 ![](Chart-types_images/Chart-types_img7.png)
 
-The following code sample shows how to select an Area chart:
+The following code sample shows how to select an area chart.
 
 {% tabs %}
 
@@ -278,17 +278,17 @@ olapChart.ChartType = ChartTypes.Area
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
-## Stacking Area Chart
+## Stacking area chart
 
-Stacking Area Chart fills the quantitative data over a period of time just like the line Area chart. The variation in the StackingArea is while plotting the series. Each series is plotted on the top of the previous series rather than starting from 0 of the horizontal axis. It is mainly used to compare the quantity plotted over two or more series.
+The stacking area chart fills the quantitative data over a period of time just like the line area chart, but it differs by the plotting method. In the stacking area chart, each series is plotted on the top of the previous series rather than starting from 0 of the horizontal axis. It is mainly used to compare the quantity plotted over two or more series.
 
 ![](Chart-types_images/Chart-types_img8.png)
 
-The following code sample shows how to select a Stacking Area chart:
+The following code sample shows how to select a stacking area chart.
 
 {% tabs %}
 
@@ -314,17 +314,17 @@ olapChart.ChartType = ChartTypes.StackingArea
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
-## Spline Area Chart
+## Spline area chart
 
-Spline Area Chart is usually used in the case of approximating the intervals by using spline curve. It is often used when data points are in limited number.
+The spline area chart is usually used in the case of approximating the intervals by using the spline curve. It is often used when data points are in limited number.
 
 ![](Chart-types_images/Chart-types_img9.png)
 
-The following code sample shows how to select a Spline Area chart:
+The following code sample shows how to select a spline area chart.
 
 {% tabs %}
 
@@ -350,17 +350,17 @@ olapChart.ChartType = ChartTypes.SplineArea
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
-## Step Area Chart
+## Step area chart
 
-In the Step Area Chart, the points are plotted instead of a straight line tracing the shortest path between points; the values are connected by continuous vertical and horizontal lines. 
+In the step area chart, the points are plotted instead of a straight line tracing the shortest path between points. The values are connected by continuous vertical and horizontal lines.
 
 ![](Chart-types_images/Chart-types_img10.png)
 
-The following code sample shows how to select a Step Area chart:
+The following code sample shows how to select a step area chart.
 
 {% tabs %}
 
@@ -386,17 +386,17 @@ olapChart.ChartType = ChartTypes.StepArea
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
-## Line Chart
+## Line chart
 
-Line Chart is a simple form of chart, which connects a series of data points. Usually, it is used for Trend analysis, Forecasting, or in the case of large data points.
+The line chart is a simple form of chart, which connects a series of data points. Usually, it is used for Trend analysis, Forecasting, or in the case of large data points.
 
 ![](Chart-types_images/Chart-types_img11.png)
 
-The following code sample shows how to select a Line chart:
+The following code sample shows how to select a line chart.
 
 {% tabs %}
 
@@ -422,17 +422,17 @@ olapChart.ChartType = ChartTypes.Line
 
 {% endtabs %}
  
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
-## Spline Chart
+## Spline chart
 
-Spline Chart is a simple form of chart, which connects the series of data points with an arc rather than a straight line. 
+The spline chart is a simple form of chart, which connects the series of data points with an arc rather than a straight line. 
 
 ![](Chart-types_images/Chart-types_img12.png)
 
-The following code sample shows how to select a Spline chart:
+The following code sample shows how to select a spline chart.
 
 {% tabs %}
 
@@ -458,17 +458,17 @@ olapChart.ChartType = ChartTypes.Spline
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
-## Rotated Spline Chart
+## Rotated spline chart
 
-Rotated Spline Chart is similar to the Spline chart, but is rotated 90 degrees in the clockwise direction.
+The rotated spline chart is similar to the spline chart, but it can be rotated to 90 degrees in the clockwise direction.
 
 ![](Chart-types_images/Chart-types_img13.png)
 
-The following code sample shows how to select a Rotated Spline chart.
+The following code sample shows how to select a rotated spline chart.
 
 {% tabs %}
 
@@ -494,17 +494,17 @@ olapChart.ChartType = ChartTypes.RotatedSpline
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
-## Step Line Chart
+## Step line chart
 
-Step Line Chart is another form of chart, which connects the series of data points by using horizontal and vertical lines.
+The step line chart is another form of chart, which connects the series of data points by using horizontal and vertical lines.
 
 ![](Chart-types_images/Chart-types_img14.png)
 
-The following code sample shows how to select a Step Line chart:
+The following code sample shows how to select a step line chart.
 
 {% tabs %}
 
@@ -530,17 +530,17 @@ olapChart.ChartType = ChartTypes.StepLine
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
-## Scatter Chart
+## Scatter chart
 
-Scatter Chart is a collection of points plotted in the rectangular co-ordinate system. It is often used in relationship analysis upto one independent variable.
+The scatter chart is a collection of points plotted in the rectangular co-ordinate system. It is often used in relationship analysis upto one independent variable.
 
 ![](Chart-types_images/Chart-types_img15.png)
 
-The following code sample shows how to select a Scatter chart:
+The following code sample shows how to select a scatter chart.
 
 {% tabs %} 
 
@@ -566,17 +566,17 @@ olapChart.ChartType = ChartTypes.Scatter
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Types\Scatter Chart Demo
 
-## Pie Chart
+## Pie chart
 
-Pie Chart renders the data points in segments. It is capable of rendering only one series at a time. Usually, it is used for proportional analysis for a small set of data points.
+The pie chart renders the data points in segments. It can render only one series at a time. Usually, it is used for proportional analysis for a small set of data points.
 
 ![](Chart-types_images/Chart-types_img16.png)
 
-The following code sample shows how to select a Pie chart:
+The following code sample shows how to select a pie chart.
 
 {% tabs %}
 
@@ -602,7 +602,7 @@ olapChart.ChartType = ChartTypes.Pie
 
 {% endtabs %}
 
-N> Pie Chart should not be used for Comparison analysis of large data points, because it is harder for people to estimate angles rather than distance.
+N> The pie chart should not be used for comparison analysis of large data points, because it is harder for people to estimate angles rather than distance.
 
 A sample demo is available at the following location:
 
