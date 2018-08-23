@@ -9,9 +9,9 @@ documentation: ug
 
 # Data Binding
 
-## Binding OlapChart to Offline Cube
+## Binding OLAP chart to offline cube
 
-To connect an OLAP Cube available in local machine, set the physical path of the Cube set in the connection string. The following code sample illustrates the same.
+To connect to an OLAP cube available in the local machine, set the physical path of the cube set in the connection string. The following code sample illustrates the same.
 
 {% highlight c# %}
 
@@ -20,9 +20,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding OlapChart to Cube in local SQL Server
+## Binding OLAP chart to cube in local SQL Server
 
-To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code sample illustrates the same.
+To connect to the OLAP cube available in SQL Server Analysis Service in the local machine, set the server name and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates the same.
 
 {% highlight c# %}
 
@@ -31,9 +31,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding OlapChart to Cube in online SQL Server
+## Binding OLAP chart to cube in online SQL Server
 
-To connect an OLAP Cube available in SQL Server Analysis Service in online server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code sample illustrates the same.
+To connect to the OLAP cube available in SQL Server Analysis Service in the online server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates the same.
 
 {% highlight c# %}
 
@@ -42,9 +42,9 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding OlapChart to Cube in online Mondrian Server
+## Binding OLAP chart to cube in online Mondrian Server
 
-To connect an OLAP Cube available in Mondrian Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code sample illustrates the same.
+To connect to the OLAP cube available in the Mondrian Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates the same.
 
 {% highlight c# %}
 
@@ -54,9 +54,9 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-## Binding OlapChart to Cube in online ActivePivot Server
+## Binding OLAP chart to cube in online ActivePivot Server
 
-To connect an OLAP Cube available in ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code sample illustrates the same.
+To connect to the OLAP cube available in the ActivePivot Server through **XML/A**, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code sample illustrates the same.
 
 {% highlight c# %}
 
