@@ -9,9 +9,9 @@ documentation: ug
 
 # Display Options
 
-PivotGrid control provides support for the PivotComputationInfo to display calculation values in preferred areas of the PivotGrid using the `DisplayOption` property.
+The pivot grid control provides support for the PivotComputationInfo to display calculation values in preferred areas of the pivot grid using the `DisplayOption` property.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -35,7 +35,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -79,30 +79,30 @@ public partial class MainWindow: Window {
 
 **All**
 
-It is used to display the calculation values in all the columns of the PivotGrid.
+Displays the calculation values in all columns of the pivot grid.
 
 ![](Display-options-Images/PivotComputationinfo using All option.png)
 
 **Summary**
 
-Data actually present in the PivotEngine but displays the calculation values only in the summary columns of the PivotGrid.
+Data actually presents in the PivotEngine, but displays the calculation values only in the summary columns of the pivot grid.
 
 ![](Display-options-Images/PivotComputationinfo using summary option.png)
 
 **Calculations**
 
-Data actually present in the PivotEngine but displays the calculation values only in the calculation columns other than summary and grand total of the PivotGrid.
+Data actually presents in the PivotEngine, but displays the calculation values only in the calculation columns and does not display in the summary and grand total columns of the pivot grid.
 
 ![](Display-options-Images/PivotComputationinfo using Calculations option.png)
 
 **GrandTotal**
 
-Data actually present in the PivotEngine but displays the calculation values only in the grand total columns of the PivotGrid.
+Data actually presents in the PivotEngine, but displays the calculation values only in the grand total columns of the pivot grid.
 
 ![](Display-options-Images/PivotComputationinfo using Grand Totals option.png)
 
 **None**
 
-Data actually present in the PivotEngine but hides all the calculation values in all the columns of the PivotGrid.
+Data actually presents in the PivotEngine, but hides all the calculation values in all columns of the pivot grid.
 
 ![](Display-options-Images/PivotComputationinfo using none option.png)

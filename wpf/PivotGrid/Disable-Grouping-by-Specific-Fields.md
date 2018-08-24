@@ -9,17 +9,17 @@ documentation: ug
 
 # Prevent Grouping of Specific Pivot Item
 
-PivotGrid control allows to prevent the drag and drop of certain PivotItems either in PivotSchemaDesigner or Grouping Bar.
+The pivot grid control allows preventing the drag and drop of certain pivot items in the pivot schema designer or grouping bar.
 
 **AllowRunTimeGroupByField**
 
-We can able to prevent the grouping (i.e., drag-drop) for specific PivotItem using `AllowRunTimeGroupByField` property of PivotItem. It can be defined both in *XAML* and *Code-behind*.
+You can prevent the grouping (i.e., drag and drop) for specific pivot item using the `AllowRunTimeGroupByField` property. It can be defined both in XAML and code-behind.
 
 **ShowDisabledGroupBackground**
 
-We can able to provide enabled or disabled background color for corresponding Grouping Bar item which prevents the grouping using `ShowDisabledGroupBackground` property of PivotItem. It can be defined both in *XAML* and *Code-behind*.
+You can provide enabled or disabled background color for corresponding grouping bar item that prevents grouping using the `ShowDisabledGroupBackground` property of the pivot item. It can be defined both in XAML and code-behind.
 
-If setting both the properties through *XAML*, please refer the below code sample.
+If setting both the properties through XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -42,7 +42,7 @@ If setting both the properties through *XAML*, please refer the below code sampl
 
 {% endhighlight %}
 
-Else if setting both the properties through *Code-behind*, please refer the below code sample.
+If setting both the properties through code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

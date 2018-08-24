@@ -9,13 +9,13 @@ documentation: ug
 
 # Selection
 
-PivotGrid provides support to select entire row or column as well as group of cells with or without header cells based on your requirement. It is similar to cell selection in Microsoft Excel.
+The pivot grid supports selecting entire row or column and group of cells with or without header cells. It is similar to cell selection in the Microsoft Excel.
 
-## Cell Selection
+## Cell selection
 
-The `AllowSelection` property can be used to achieve selection behavior in PivotGrid. It can be done either through *XAML* or *Code-behind*.
+The `AllowSelection` property is used to achieve selection behavior in the pivot grid. It can be done through XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -40,7 +40,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -85,23 +85,23 @@ public partial class MainWindow: Window {
 
 ![](Selection-Images/PivotGrid shows selected cells.png)
 
-### To select a Row
+### To select a row
 
-It is possible to select a whole row in PivotGrid by clicking on the specific row header and we could select multiple rows by clicking on one row header and dragging it through the other row headers as per our requirement.
+You can select a whole row in the pivot grid by clicking the specific row header and you can select multiple rows by clicking a row header and dragging it through the other row headers as per requirement.
 
 ![](Selection-Images/PivotGrid shows selection of multiple rows.png)
 
-### To select a Column
+### To select a column
 
-It is possible to select a whole column in PivotGrid by clicking on the specific column header and we could select multiple columns by clicking on one column header and dragging it through the other column headers as per our requirement.
+You can select a whole column in the pivot grid by clicking the specific column header and you can select multiple columns by clicking a column header and dragging it through the other column headers as per requirement.
 
 ![](Selection-Images/PivotGrid shows selection of multiple columns.png)
 
-## Cell Selection With Headers
+## Cell selection with headers
 
-The `AllowSelectionWithHeaders` property can be used to achieve the selection behavior along with headers. It can be achieved through *XAML* or *Code-behind*.
+The `AllowSelectionWithHeaders` property is used to achieve the selection behavior along with headers. It can be achieved through XAML or code-behind.
 
-If through *XAML*, please refer the below code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -126,7 +126,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through *Code-behind*, please refer the below code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

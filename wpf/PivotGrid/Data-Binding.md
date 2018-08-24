@@ -9,15 +9,15 @@ documentation: ug
 
 # Data Binding
 
-## Binding PivotGrid to List
+## Binding pivot grid to list
 
-PivotGrid allows binding a list based collection as its ItemSource. Please refer this topic Binding a data source to PivotGridControl to know more.
+The pivot grid allows binding a list based collection as its item source. Refer to this topic [Binding a data source to pivot grid control](https://help.syncfusion.com/wpf/pivotgrid/pivotgrid-getting-started#binding-a-datasource-to-pivotgridcontrol) to learn more.
 
-## Binding PivotGrid to DataTable
+## Binding pivot grid to data table
 
-PivotGrid allows binding a DataSet from the DataTable as its ItemSource.
+The pivot grid allows binding a DataSet from the data table as its item source.
 
-To do so, initially we need to create a connection to our database. Then we need to retrieve and store the required data to a DataSet through SQL queries. Please refer the below code sample.
+To do so, initially you should create a connection to the database. Then, retrieve and store the required data to a DataSet through SQL queries. Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -38,9 +38,9 @@ public static DataView GetOrderDetails() {
 
 {% endhighlight %}
 
-Then bind the DataSet as ItemSource to the PivotGrid by invoking the appropriate method. It can be done through *XAML* or *Code-behind*.
+Then, bind the DataSet as ItemSource to the pivot grid by invoking the appropriate method. It can be done through XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -68,7 +68,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

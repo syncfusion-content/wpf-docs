@@ -9,9 +9,9 @@ documentation: ug
 
 # State Persistence
 
-PivotGrid allows us to maintain the collapsed or expanded state when the corresponding schema items changed. This can be achieved using the `StatePersistence` property of the PivotGrid control.
+The pivot grid allows you to maintain the collapsed or expanded state when the corresponding schema items are changed. This can be achieved using the `StatePersistence` property of the pivot grid control.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -36,7 +36,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

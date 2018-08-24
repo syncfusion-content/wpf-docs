@@ -9,9 +9,9 @@ documentation: ug
 
 # Hiding Fields in Pivot Schema Designer
 
-It is possible to hide the unnecessary fields from the PivotTable Field List using `ShowDisplayFieldsOnly` property.
+You can hide the unnecessary fields from the pivot table field list using the `ShowDisplayFieldsOnly` property.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -42,7 +42,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-Behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

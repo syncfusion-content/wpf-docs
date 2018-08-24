@@ -9,25 +9,25 @@ documentation: ug
 
 # Export Option in Pivot Grid
 
-PivotGrid provides an option to export its content to various formats. It provides the following exporting options.
+The pivot grid provides an option to export its content to various formats. It provides the following exporting options.
 
-* Excel format - Cell and PivotTable mode
-* Word format
+* Microsoft Excel format - Cell and pivot table mode
+* Microsoft Word format
 * PDF format
 * CSV format
 
 ## Export to Excel
 
-PivotGrid can be exported to an excel document using Syncfusion XlsIO libraries. It consist of two exporting modes listed below and it is possible to switch the exporting modes using the `ExportMode` property.
+The pivot grid can be exported to an Excel document using Syncfusion XlsIO libraries. It consists of two exporting modes, and you can switch from one mode to another mode using the `ExportMode` property.
 
-* **Pivot Table** - It exports the PivotGrid directly as a PivotTable like in Microsoft Excel.
-* **Cell** - It exports the PivotGrid as an individual cell values.
+* **Pivot Table**: Exports the pivot grid directly as a pivot table like in Microsoft Excel.
+* **Cell**: Exports the pivot grid as individual cell values.
 
-To export the PivotGrid contents to Excel, add **Syncfusion.PivotGridConverter.Wpf.dll** and **Syncfusion.XlsIO.Base** assemblies to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** in-order to access the `GridExcelExport` class.
+To export the pivot grid contents to Excel, add **Syncfusion.PivotGridConverter.Wpf.dll** and **Syncfusion.XlsIO.Base** assemblies to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** to access the `GridExcelExport` class.
 
-Now define the PivotGrid control and bind the data source along with PivotRows, PivotColumns and PivotCalculations. Create an instance of `GridExcelExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
+Now, define the pivot grid control and bind the data source along with pivot rows, pivot columns, and pivot calculations. Create an instance of `GridExcelExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -60,11 +60,11 @@ Excel Export in Cell Mode
 
 ## Export to Word
 
-To export the PivotGrid contents to Word, add the **Syncfusion.PivotGridConverter.Wpf.dll** assembly to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** in-order to access the `GridWordExport` class.
+To export the pivot grid contents to Word, add the **Syncfusion.PivotGridConverter.Wpf.dll** assembly to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** to access the `GridWordExport` class.
 
-Now define the PivotGrid control and bind the data source along with PivotRows, PivotColumns and PivotCalculations. Create an instance for `GridWordExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
+Now, define the pivot grid control and bind the data source along with pivot rows, pivot columns, and pivot calculations. Create an instance for `GridWordExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
 
-Please refer the below code sample:
+Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -88,11 +88,11 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 ## Export to PDF
 
-To export the PivotGrid contents to PDF, add **Syncfusion.PivotGridConverter.Wpf.dll** assembly to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** in-order to access the `GridPdfExport` class.
+To export the pivot grid contents to PDF, add **Syncfusion.PivotGridConverter.Wpf.dll** assembly to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** to access the `GridPdfExport` class.
 
-Now define the PivotGrid control and bind the data source along with PivotRows, PivotColumns and PivotCalculations. Create an instance for `GridPdfExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
+Now, define the pivot grid control and bind the data source along with pivot rows, pivot columns, and pivot calculations. Create an instance for `GridPdfExport` class and then, invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -116,11 +116,11 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 ## Export to CSV
 
-To export the PivotGrid contents to CSV, add the **Syncfusion.PivotGridConverter.Wpf.dll** assembly to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** in order to access the `GridCsvExport` class.
+To export the pivot grid contents to CSV, add the **Syncfusion.PivotGridConverter.Wpf.dll** assembly to your application and include the namespace **Syncfusion.Windows.Controls.PivotGrid.Converter** to access the `GridCsvExport` class.
 
-Now define the PivotGrid control and bind the data source along with PivotRows, PivotColumns and PivotCalculations. Create an instance of `GridCsvExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
+Now, define the pivot grid control and bind the data source along with pivot rows, pivot columns, and pivot calculations. Create an instance of `GridCsvExport` class and then invoke the `Export` method in it. `OpenFileDialog` and `SaveFileDialog` options are used to save the exported file in the preferred location.
 
-Please refer the below code sample:
+Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -143,9 +143,9 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 ![](Exporting-Images/Export to csv.png)
 
-## Threshold Limitations
+## Threshold limitations
 
-The following table represents the number of rows and columns to be taken in account while exporting the PivotGrid control without affecting its performance.
+The following table represents the number of rows and columns to be taken in account while exporting the pivot grid control without affecting its performance.
 
     <table>
         <tr>
