@@ -9,14 +9,14 @@ documentation: ug
 
 # Styles and Templates for Grid Cells
 
-## Cell Styles
+## Cell styles
 
 Column, row, summary, and value cells of a grid can be formatted independently by using the specific style properties as listed below:
 
-* ColumnHeaderCellStyle – Specifies the style for column headers.
-* RowHeaderCellStyle – Specifies the style for row headers.
-* SummaryCellStyle – Specifies the style for summary cells.
-* ValueCellStyle – Specifies the style for value cells.
+* ColumnHeaderCellStyle: Specifies the style for column headers.
+* RowHeaderCellStyle: Specifies the style for row headers.
+* SummaryCellStyle: Specifies the style for summary cells.
+* ValueCellStyle: Specifies the style for value cells.
 
 The following properties of the cell can be customized.
 
@@ -53,11 +53,11 @@ The following properties of the cell can be customized.
     Brush</td></tr>
     </table>
 
-### Defining the cell styles in PivotGrid
+### Defining the cell styles in pivot grid
 
-After defining the PivotGrid control, raise the Loaded event of PivotGrid control. Inside the `PivotGrid_Loaded()` event, set the properties of cell styles of PivotGrid control.
+After defining the pivot grid control, raise the loaded event of pivot grid control. Inside the `PivotGrid_Loaded()` event, set the properties of cell styles of the pivot grid control.
 
-Please refer the below code snippet.
+Refer to the following code snippet.
 
 {% highlight C# %}
 
@@ -87,9 +87,9 @@ public partial class MainWindow: Window {
 
 ![](Styles-and-Templates-images/PivotGrid shows customized styles.png)
 
-## Cell Templates
+## Cell templates
 
-Cell Templates feature of PivotGrid allows you to define the templates to change the appearance of elements, such as column, row, summary, and value cells that are present in the Grid. The style for each element in the Grid should be defined of type `PivotGridTemplateCell`. The customized template can be defined for the following properties of PivotGrid:
+Cell templates feature of pivot grid allows you to define the templates to change the appearance of elements, such as column, row, summary, and value cells that are present in the grid. The style for each element in the grid should be defined of `PivotGridTemplateCell` type. The customized template can be defined for the following properties of pivot grid:
 
 * ColumnHeaderCellStyle
 * RowHeaderCellStyle
@@ -97,15 +97,15 @@ Cell Templates feature of PivotGrid allows you to define the templates to change
 * SummaryCellStyle
 * ValueCellStyle
 
-The expander’s in the Grid can also be customized with any UIElement and it should be named as “PART_Expander” to perform drill-up and drill-down operations.
+The expander’s in the grid can also be customized with any UIElement and it should be named as “PART_Expander” to perform drill-up and drill-down operations.
 
-### Defining Cell Templates in PivotGrid
+### Defining cell templates in pivot grid
 
-After defining the PivotGrid control, define your own style for Row, Column, Value, Summary cells and assign that style to the corresponding property in PivotGrid control.
+After defining the pivot grid control, define your own style for row, column, value, and summary cells and assign that style to the corresponding property in the pivot grid control.
 
-Here, we defined our own style for row header cells by overriding expander icon and cell's TextBlock. After defining the style, we applied that style to `RowHeaderCellStyle` of PivotGrid control.
+Here, the row header cells are defined with our own style by overriding an expander icon and cell's TextBlock. After defining the style, it is applied to `RowHeaderCellStyle` of the pivot grid control.
 
-Please refer the below code snippet.
+Refer to the following code snippet.
 
 {% highlight xaml %}
 

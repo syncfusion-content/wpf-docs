@@ -9,24 +9,22 @@ documentation: ug
 
 # Filtering
 
-Filtered data displays only a subset of data that meets a criteria that you specify and hides data that you do not want to display. **PivotGrid Filters** are automatically re-applied every time when the PivotGrid is refreshed or updated until you remove those Filters. In the PivotGrid, Filters are additive, which means that each additional filter is based on the current filter and further reduces the subset of data. We can apply 'n' number of filtering conditions to the PivotGrid at a time. While applying Filters, a **FilterExpression** has been created and the data is filtered based on that FilterExpression specified.
+Filtered data displays only a subset of data that meets a specified criterion. **Pivot grid filters** are automatically reapplied every time the pivot grid is refreshed or updated until you remove those filters. In the pivot grid, filters are additive, which means that each additional filter is based on the current filter and reduces the subset of data. You can apply 'n' number of filtering conditions to the pivot grid at a time. While applying filters, a **FilterExpression** is created and data is filtered based on that specified FilterExpression.
 
 ## Filtering by FilterExpression
 
-FilterExpression class used to encapsulates the information needed to define a filter. It contains the following properties.
+FilterExpression class is used to encapsulate the information needed to define a filter. It contains the following properties:
 
-Properties
+* **Expression**: Gets or sets the well-formed logical expression that defines this FilterExpression.
+* **Name**: Gets or sets the name of the FilterExpression.
+* **DimensionName**: Gets or sets the dimension name for the FilterExpression.
+* **DimensionHeader**: Gets or sets the dimension header for the FilterExpression.
+* **Format**: Gets or sets the format of FilterExpression.
+* **Evaluator**: Evaluates the given value.
 
-* **Expression** - Gets or sets the well-formed logical expression that defines this FilterExpression.
-* **Name** - Gets or sets the name of this FilterExpression.
-* **DimensionName** - Gets or sets the dimension name for filter expression.
-* **DimensionHeader** - Gets or sets the dimension header for filter expression.
-* **Format** - Gets or sets the format of filter expression.
-* **Evaluator** - Used to evaluate the given value.
+### Defining filters in XAML
 
-### Defining Filters in XAML
-
-Create a new FilterExpression under **PivotGridControl.Filters** class. Please refer the code snippet below.
+Create a new FilterExpression under the **PivotGridControl.Filters** class. Refer to the following code snippet.
 
 {% highlight xaml %}
 
@@ -53,11 +51,11 @@ Create a new FilterExpression under **PivotGridControl.Filters** class. Please r
 
 {% endhighlight %}
 
-### Defining Filters in Code-Behind
+### Defining filters in code-behind
 
-Create a new FilterExpression by using the **FilterExpression** class and add that FilterExpression to **Filters** collection of PivotGrid control.
+Create a new FilterExpression by using the **FilterExpression** class and add that FilterExpression to the **Filters** collection of the pivot grid control.
 
-Please refer the code snippet below.
+Refer to the following code snippet.
 
 {% highlight C# %}
 
@@ -107,9 +105,9 @@ public partial class MainWindow: Window {
 
 ![](Filtering-by-values-images/PivotGrid shows the filtered values.png)
 
-## Filtering by using FilterPopup
+## Filtering by using filter pop-up
 
-Filters can also be applied to PivotGrid control at runtime using **FilterPopup**. This FilterPopup can be opened by clicking the Filter button in the Grouping Bar item. FilterPopup contains the filter list in which we can uncheck the items we need to filter and click OK.
-This in turns, create a FilterExpression on runtime by using the unchecked items and apply the Filters to PivotGrid control.
+Filters can also be applied to pivot grid control at runtime using the filter pop-up. This filter pop-up can be opened by clicking the filter button in the grouping bar item. The filter pop-up contains the filter list in which you can uncheck the items that are to be filtered and click OK.
+This, in turns, creates a FilterExpression at runtime by using the unchecked items and applies the filters to the pivot grid control.
 
 ![](Filtering-by-values-images/PivotGrid with FilterPopup.png)

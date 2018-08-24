@@ -9,23 +9,23 @@ documentation: ug
 
 # Summary Types
 
-PivotGrid summarizes the data for various data types by using the `SummaryType` enumerator. SummaryType should be defined while defining the PivotCalculation using `PivotComputationInfo` class to specify the type of the summary. It holds the following summary types.
+The pivot grid summarizes the data for various data types by using the `SummaryType` enumerator. SummaryType should be defined while defining the pivot calculation using `PivotComputationInfo` class to specify the type of summary. It holds the following summary types.
 
-* **DoubleTotalSum** - Computes the sum of double or integer from PivotValues for corresponding PivotItem
-* **DoubleAverage** - Computes average of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleMaximum** - Computes maximum of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleMinimum** - Computes minimum of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleStandardDeviation** - Computes the standard deviation of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleVariance** - Computes the variance of double or integer from PivotValues for corresponding PivotItem.
-* **Count** - Computes count of double or integer from PivotValues for corresponding PivotItem.
-* **DecimalTotalSum** - Computes the sum of decimal from PivotValues for corresponding PivotItem.
-* **IntTotalSum** - Computes the sum of integer from PivotValues for corresponding PivotItem.
-* **Custom** - Specifies that you are using a custom SummaryBase object to define the calculation.
-* **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the Pivot Computation column if all the values are common.
+* **DoubleTotalSum**: Computes the sum of double or integer in pivot values for corresponding pivot item.
+* **DoubleAverage**: Computes average of double or integer in pivot values for corresponding pivot item.
+* **DoubleMaximum**: Computes maximum of double or integer in pivot values for corresponding pivot item.
+* **DoubleMinimum**: Computes minimum of double or integer in pivot values for corresponding pivot item.
+* **DoubleStandardDeviation**: Computes the standard deviation of double or integer in pivot values for corresponding pivot item.
+* **DoubleVariance**: Computes the variance of double or integer in pivot values for corresponding pivot item.
+* **Count**: Computes count of double or integer from pivot values for corresponding pivot item.
+* **DecimalTotalSum**: Computes the sum of decimal in pivot values for corresponding pivot item.
+* **IntTotalSum**: Computes the sum of integer in pivot values for corresponding pivot item.
+* **Custom**: Specifies that you are using a custom summary base object to define the calculation.
+* **DisplayIfDiscreteValuesEqual**: Displays the aggregated value in the pivot computation column if all the values are common.
 
-`SummaryType` property can be set for the corresponding PivotCalculation item through `PivotComputationInfo` class. It can be set either through *XAML* or through *Code-behind*.
+`SummaryType` property can be set for the corresponding pivot calculation item through `PivotComputationInfo` class. It can be set through XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -48,7 +48,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -92,14 +92,14 @@ public partial class MainWindow: Window {
 
 ![](Summary-Images/PivotGrid shows summary type Double variance.png)
 
-## DisplayIfDiscreteValuesEqual SummaryType in PivotGrid
+## DisplayIfDiscreteValuesEqual summary type in pivot grid
 
-**DisplayIfDiscreteValuesEqual** is a new summary type that has been added to the `SummaryType` enumerator of the PivotGrid control. This summary type displays the aggregated value in the PivotCalculation column if all the values are common, else the default value will be displayed as **'*'**.
-It is also possible to change the default value to any custom string of your choice by using the `PadString` property.
+**DisplayIfDiscreteValuesEqual** is a new summary type added to the `SummaryType` enumerator of the pivot grid control. This summary type displays the aggregated value in the pivot calculation column if all the values are common, else the default value will be displayed as **'*'**.
+You can change the default value to any custom string of your choice by using the `PadString` property.
 
-Set the SummaryType as **DisplayIfDiscreteValuesEqual** along with value for the `PadString` while defining PivotCalculations in PivotGrid control.
+Set the SummaryType as **DisplayIfDiscreteValuesEqual** along with value for the `PadString` while defining pivot calculations in the pivot grid control.
 
-If setting these properties through *XAML*, please refer the below code sample.
+For setting these properties through XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -122,7 +122,7 @@ If setting these properties through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if setting these properties through *Code-behind*, please refer the below code sample.
+For setting these properties through code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

@@ -9,26 +9,26 @@ documentation: ug
 
 # Grouping Bar Context Menu
 
-The Grouping bar context menu consists of the following menu items:
+The grouping bar context menu consists of the following menu items:
 
-* **Reload Data** - Refresh the Grid with the current ItemSource.
-* **Show Field List** - Launches the PivotGrid Field List.
-* **Order** – It is used to change the position of the item present in the Grouping bar. It contains the following sub menu items:
+* **Reload Data**: Refreshes the grid with the current item source.
+* **Show Field List**: Launches the pivot grid field list.
+* **Order**: Changes the position of the item present in the grouping bar. It contains the following submenu items:
 
-* Move to Beginning - Moves the current item to the first position.
-* Move to Left - Moves the current item one step towards its left.
-* Move to Right - Moves the current item one step towards its right.
-* Move to End - Moves the current item to the last position.
-* Smallest to Largest—Arranges the pivot fields based on the field header from first letter to the last.
-* Largest to Smallest—Arranges the pivot fields based on the field header from last letter to the first.
+* Move to Beginning: Moves the current item to the first position.
+* Move to Left: Moves the current item one step toward its left.
+* Move to Right: Moves the current item one step toward its right.
+* Move to End: Moves the current item to the last position.
+* Smallest to Largest: Arranges the pivot fields based on the field header from first letter to the last.
+* Largest to Smallest: Arranges the pivot fields based on the field header from last letter to the first.
 
-* **Calculated field** - Used to add a new calculation field at run time.
+* **Calculated field**: Adds a new calculation field at runtime.
 
-By default, the context menu is enabled in all the areas of the Grouping Bar. `DisableContextMenu` property needs to be set individually for Row, Column and Data Header Area in Grouping Bar in-order to alter its visibility.
+By default, the context menu is enabled in all areas of the grouping bar. The `DisableContextMenu` property should be set individually for row, column, and data header area in the grouping bar to alter their visibility.
 
-After defining the PivotGrid control, raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for Grouping Bar. Inside `GroupingBar_Loaded()` event, set the value for the `DisableContextMenu` property.
+After defining the pivot grid control, raise the loaded event for the pivot grid. Inside the `PivotGrid_Loaded()` event, raise the loaded event for the grouping bar. Inside the `GroupingBar_Loaded()` event, set the value for the `DisableContextMenu` property.
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% highlight C# %}
 

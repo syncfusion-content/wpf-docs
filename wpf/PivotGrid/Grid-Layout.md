@@ -9,11 +9,11 @@ documentation: ug
 
 # Grid Layout
 
-PivotGrid provides support for two different types of layout options with respect to summaries. That is, whether to display the summary data of each PivotItem at the top or at the bottom of value cells.
+The pivot grid supports for two different types of layout options with respect to summaries. That is, whether to display the summary data of each pivot item at the top or at the bottom of value cells.
 
-`GridLayout` property of PivotGrid control is used for this and it can be defined in both *XAML* and *Code-behind*.
+The `GridLayout` property is used to set the layout options, and this can be defined in both XAML and code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -38,7 +38,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -83,18 +83,18 @@ public partial class MainWindow: Window {
 
 **Normal**
 
-Displays the summary data of rows or columns at the end of the value cells.
+Displays the summary data of rows or columns at the end of value cells.
 
 ![](Grid-Layout-Images/PivotGrid with normal layout.png)
 
-**Top Summary**
+**Top summary**
 
-Displays the summary data of rows or columns at the beginning of the value cells.
+Displays the summary data of rows or columns at the beginning of value cells.
 
 ![](Grid-Layout-Images/PivotGrid with top summary layout.png)
 
-**Excel Like Layout**
+**Excel-like layout**
 
-It is used to display the summary cells at the bottom alone and the child members appear below the parent member with some indent space..
+Displays the summary cells at the bottom alone and child members that appear below the parent member with some indent space.
 
 ![](Grid-Layout-Images/PivotGrid with excel like layout.png)

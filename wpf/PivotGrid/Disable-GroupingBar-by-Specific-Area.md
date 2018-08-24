@@ -7,18 +7,18 @@ control: Pivot grid
 documentation: ug
 ---
 
-# Visibility of GroupingBar in Specific Area
+# Visibility of Grouping Bar in Specific Area
 
-PivotGrid supports to define the visibility of the Grouping Bar to some specific areas as mentioned below.
+The pivot grid supports defining the visibility of grouping bar to some specific areas as mentioned below.
 
-* Row Header Area
-* Column Header Area along with Row Header Area.
+* Row header area.
+* Column header area along with row header area.
 
 **EnableRowHeader**
 
-`EnableRowHeader` allows to customize the Grouping Bar by making it visible only in **Row Header Area** but ignoring other areas.
+`EnableRowHeader` allows customizing the grouping bar by making it visible only in **Row Header Area** and ignoring on other areas.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -41,7 +41,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -89,9 +89,9 @@ public partial class MainWindow: Window {
 
 **EnableColumnHeader**
 
-`EnableColumnHeader` allows to customize the Grouping Bar by making it visible only in **Row and Column Header Areas** but ignoring other areas.
+`EnableColumnHeader` allows customizing the grouping bar by making it visible only in **Row and Column Header Areas** but ignoring on other areas.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -114,7 +114,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
