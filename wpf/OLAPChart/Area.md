@@ -9,15 +9,15 @@ documentation: ug
 
 # Area
 
-OlapArea is a ChartArea, which contains the ChartSeries and ChartAxes.
+The OLAP area is a chart area, which contains the chart series and chart axes.
 
-## Adding Chart Header
+## Adding chart header
 
-Chart header is the title of the chart, which is usually displayed at the top center of the ChartArea. The following illustration displays the Chart header displayed in the chart area:
+The chart header is the title of the chart, which is usually displayed at the top center of the chart area. The following illustration displays the chart header displayed in the chart area.
 
 ![](Area_images/Area_img1.png)
 
-In general, ChartSeries contains the ChartArea instance, which can be used to customize the OlapArea. The following code sample describes how to add a chart header to an OlapChart:
+In general, chart series contains a chart area instance, which can be used to customize the OLAP area. The following code sample describes how to add a chart header to an OLAP chart.
 
 {% tabs %}
 
@@ -35,13 +35,13 @@ Me.olapchart1.Series(0).Area.Header = "Simple Report"
 
 {% endtabs %}
    
-N> The series will be available only after the data is bound to the control. In other words, you can access the series property of the OlapChart only after the call to DataBind() is made.
+N> The series will be available only after data is bound to the control. In other words, you can access the series property of the OLAP chart only after the call to DataBind() is made.
 
-## Area Customization
+## Area customization
 
-OlapArea is basically derived from the ChartArea class belonging to the base Chart WPF control. So, it has the advantage of the customization options available in the ChartArea. However, 3D charts and multiple chart areas are not supported in an OlapChart. So, those customizations are not applicable.
+An OLAp area is basically derived from the ChartArea class belonging to the base chart WPF control. So, the customization options are available in the chart area. However, 3D charts and multiple chart areas are not supported in an OLAP chart. So, those customizations are not applicable.
 
-The following are the frequently used customization options that are available in the ChartArea:
+The following are the frequently used customization options that are available in the chart area.
 
 * Background
 * GridBackground
@@ -54,7 +54,7 @@ The following are the frequently used customization options that are available i
 * BorderThickness
 * CornerRadius
 
-OlapArea allows you to customize the border properties. The following code sample explain how these properties can be customized:
+The OLAP area allows you to customize the border properties. The following code sample explains how these properties can be customized.
 
 ### BorderBrush
 

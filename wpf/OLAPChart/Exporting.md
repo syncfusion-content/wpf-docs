@@ -9,15 +9,15 @@ documentation: ug
 
 # Exporting OLAP Chart
 
-OlapChart can be exported into various image and document formats. The following topics illustrate this in detail:
+An OLAP chart can be exported to various image and document formats. The following topics illustrate this in detail:
 
-* Exporting as an Image
-* Exporting to Word Document
-* Exporting to PDF Document
+* Exporting as an image.
+* Exporting to Word document.
+* Exporting to PDF document.
 
-## Exporting as an Image
+## Exporting as an image
 
-OlapChart can be copied to the clipboard or exported as an image. It can be exported in any one of the following image formats:
+The OLAP chart can be copied to the clipboard or exported as an image. It can be exported in any one of the following image formats:
 
 * Bitmap
 * JPG
@@ -29,21 +29,21 @@ OlapChart can be copied to the clipboard or exported as an image. It can be expo
 
 ![](Exporting_images/Exporting_img1.png)
 
-## Exporting to Word Document
+## Exporting to Word document
 
-OlapChart for WPF supports exporting an OlapChart into an Microsoft Word Document. It can also be exported into a Template Word Document file at a position specified by a marker.
+The OLAP chart for WPF supports exporting an OLAP chart to an Microsoft Word document. It can also be exported into a template Word document file at a position specified by a marker.
 
-The following methods are used to export an OlapChart to an Microsoft Word Document:
+The following methods are used to export an OLAP chart to a Microsoft Word document:
 
 ### Methods
 
-* **ExportIntoNewDoc**      - Exports a Chart into a new Word Document file with the specified file name.
-* **ExportIntoTemplateDoc** - Exports a Chart into an existing Word Document file in the default marker string location.
-* **ExportIntoTemplateDoc** - Exports a Chart into an existing Word Document file in the given marker string location.
-* **ExportIntoTemplateDoc** - Exports a Chart into an existing instance of a Word Document in the default marker string location.
-* **ExportIntoTemplateDoc** - Exports a Chart into an existing instance of a Word Document in the marker string location.
+* **ExportIntoNewDoc**: Exports a chart to a new Word document file with specified file name.
+* **ExportIntoTemplateDoc**: Exports a chart to an existing Word document file in the default marker string location.
+* **ExportIntoTemplateDoc**: Exports a chart to an existing Word document file in the given marker string location.
+* **ExportIntoTemplateDoc**: Exports a chart to an existing instance of a Word document in the default marker string location.
+* **ExportIntoTemplateDoc**: Exports a chart to an existing instance of a Word document in the marker string location.
 
-The following code sample illustrate how to export an OlapChart to an Microsoft Word Document:
+The following code sample illustrates how to export an OLAP chart to a Microsoft Word document.
 
 {% tabs %}
 
@@ -79,11 +79,11 @@ olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc", "
 
 ![](Exporting_images/Exporting_img2.png)
 
-## Exporting to a PDF Document
+## Exporting to a PDF document
 
-OlapChart exported into a Word Document can also be inserted into a PDF document. The **ExportIntoNewPDF** method is used for this purpose. 
+The OLAP chart that is exported to a Word document is inserted into a PDF document. The **ExportIntoNewPDF** method is used for this purpose.
 
-The following code sample illustrates how to set this method:
+The following code sample illustrates how to set this method.
 
 {% tabs %}
 
@@ -105,7 +105,7 @@ chartPdfExport.ExportIntoNewPdf("..\..\TemplateDocument\PdfDocument.pdf")
 
 ![](Exporting_images/Exporting_img3.png)
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Exporting\Exporting Chart Demo
 
