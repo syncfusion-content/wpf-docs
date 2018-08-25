@@ -9,25 +9,23 @@ documentation: ug
 
 # Hyperlink Cells
 
-PivotGrid allows Hyperlinking of cells to retrieve a detailed information about a particular cell. PivotGrid generates a separate event called HyperLinkCellClick for the clicked hyperlink cell with and the HyperLinkCellClickEventArgs will return the clicked PivotCellInfo.
+The pivot grid allows hyperlinking of cells to retrieve a detailed information about a particular cell. It generates a separate event called HyperLinkCellClick for the clicked hyperlink cell, and the HyperLinkCellClickEventArgs returns the clicked PivotCellInfo.
 
-**Hyperlink Cell** property can be applied individually to the following cells:
+The `Hyperlink Cell` property can be applied individually to the following cells:
 
-* Column Header
-* Row Header
-* Summary Header
-* Summary Cell
-* Value Cell
+* Column header
+* Row header
+* Summary header
+* Summary cell
+* Value cell
 
 Property
 
-* **IsHyperlinkCell** - Gets or sets whether the to enable or disable the PivotGrid grid cells as hyperlink cells.
+* **IsHyperlinkCell**: Gets or sets whether to enable or disable the grid cells of pivot grid as hyperlink cells.
 
-## Defining the property in PivotGrid
+## Defining the property in pivot grid
 
-It is possible to enable or disable the hyperlink for the cells separately for all Row header, Column header, Summary header and Value cells through **IsHyperlinkCell** property. It can be mentioned in *Code-Behind*.
-
-Please refer the below code snippet.
+You can enable or disable the hyperlink for the cells separately for all row header, column header, summary header, and value cells through the `IsHyperlinkCell` property. It can be mentioned in code-behind.
 
 {% highlight C# %}
 

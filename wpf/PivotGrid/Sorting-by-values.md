@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting by Values
 
-Sorting-by-Values provides the following sort options.
+Sorting-by-Values provides the following sort options:
 
 * Sort all the columns.
 * Sort all columns other than total and grand total columns.
@@ -19,10 +19,10 @@ Sorting-by-Values provides the following sort options.
 
 **Properties:**
 
-* **SortDirection** - Gets or sets the sort order to ascending or descending.
-* **SortOption** - Gets or sets the sorting option as all, none, column sorting, total sorting, or grand total sorting.
+* **SortDirection**: Gets or sets the sort order to ascending or descending.
+* **SortOption**: Gets or sets the sorting option as all, none, column sorting, total sorting, or grand total sorting.
 
-The **SortOption** property of PivotGrid control can be defined both in XAML and Code-behind. Please refer the below code sample and screen-shots.
+The **SortOption** property of pivot grid control can be defined both in XAML and code-behind. Refer to the following code sample and screenshots.
 
 {% highlight xaml %}
 
@@ -89,31 +89,31 @@ public partial class MainWindow: Window {
 
 ## Sorting all the value columns
 
-**All** is used to enable sorting for all the value columns of PivotGrid.
+**All** is used to enable sorting for all the value columns of pivot grid.
 
 ![](Sorting-Images/Sorted PivotGrid when using All option.png)
 
-## Sorting all columns other than Total and GrandTotal columns
+## Sorting all columns other than total and grand total columns
 
-**ColumnSorting** is used to enable sorting for all the value columns other than sub-total and grand total of PivotGrid.
+**ColumnSorting** is used to enable sorting for all the value columns other than subtotal and grand total of the pivot grid.
 
 ![](Sorting-Images/Sorted PivotGrid when using Column sorting option.png)
 
-## Sorting only sub-total columns
+## Sorting only subtotal columns
 
-**TotalSorting** is used to enable sorting only for the sub-total columns of PivotGrid.
+**TotalSorting** is used to enable sorting only for the subtotal columns of pivot grid.
 
 ![](Sorting-Images/Sorted PivotGrid when using Total Sorting.png)
 
 ## Sorting only grand total columns
 
-**GrandTotalSorting** is used to enable sorting only for the grand total columns of PivotGrid.
+**GrandTotalSorting** is used to enable sorting only for the grand total columns of the pivot grid.
 
 ![](Sorting-Images/Sorted PivotGrid when using GrandTotal Sorting option.png)
 
 ## Disable sorting
 
-**None** is the default option and it disables sorting on all the value columns of PivotGrid.
+**None** is the default option and it disables sorting on all the value columns of pivot grid.
 
 ## Multi-column sorting
 

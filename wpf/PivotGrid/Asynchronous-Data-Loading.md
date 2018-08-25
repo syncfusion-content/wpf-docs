@@ -9,9 +9,9 @@ documentation: ug
 
 # Asynchronous Data Loading
 
-The PivotGrid control provides support for loading data in a unique UI thread. That is, the PivotGrid control can perform long running operations asynchronously on a background thread. It also loads asynchronously for every layout change operation, such as filtering, sorting, drag and drop, manipulating the field list, or changing the PivotSchemaDesigner. This can be achieved by setting the `LoadInBackground` property of PivotGrid control.
+The pivot grid control supports loading data in a unique UI thread. That is, it can perform long running operations asynchronously on a background thread. It also loads asynchronously for every layout change operation, such as filtering, sorting, drag and drop, manipulating the field list, or changing the pivot schema designer. This can be achieved by setting the `LoadInBackground` property of the pivot grid control.
 
-The `LoadInBackground` property can be defined either in the *XAML* or in *Code-behind*. For *XAML*, refer to the following code sample.
+The `LoadInBackground` property can be defined in XAML or code-behind. For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -35,7 +35,7 @@ The `LoadInBackground` property can be defined either in the *XAML* or in *Code-
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

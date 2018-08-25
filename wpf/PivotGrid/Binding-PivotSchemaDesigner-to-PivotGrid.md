@@ -9,9 +9,9 @@ documentation: ug
 
 # Binding PivotSchemaDesigner to Pivot Grid
 
-PivotSchemaDesigner can be bound to the PivotGrid with the help of the `PivotControl` property. After creating a PivotGrid, a new PivotSchemaDesigner is created using the `PivotSchemaDesigner` class and bound to the PivotGrid control using `PivotControl` property of PivotSchemaDesigner. This can be achieved either in *XAML* or in *Code-behind*.
+The pivot schema designer can be bound to the pivot grid with the help of the `PivotControl` property. After creating a pivot grid, a new pivot schema designer is created using the `PivotSchemaDesigner` class and bound to the pivot grid control using the `PivotControl` property. This can be achieved either in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -42,7 +42,7 @@ For *XAML*, refer to the following code sample.
     </Grid>
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

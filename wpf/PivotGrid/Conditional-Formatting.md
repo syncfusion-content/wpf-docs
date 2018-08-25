@@ -11,7 +11,7 @@ documentation: ug
 
 Conditional formatting is a process of applying customized styles to any object based on specified conditions.
 
-It can be defined by using the `PivotGridControl.ConditionalFormats`, which is an observable collection of type *PivotGridDataConditionalFormat*. The criteria for filtering the cells are specified by using the `PivotGridDataConditionalFormat.Conditions` property, which is a collection of *PivotGridDataCondition* objects.The style for each *ConditionalFormat* can be specified by using the `PivotGridDataConditionalFormat.CellStyle` property, which should be of type *PivotGridCellStyle*. It can be defined either in *XAML* or in *Code-behind*.
+It can be defined by using the `PivotGridControl.ConditionalFormats`, which is an observable collection of *PivotGridDataConditionalFormat* type. The criteria for filtering the cells are specified by using the `PivotGridDataConditionalFormat.Conditions` property, which is a collection of *PivotGridDataCondition* objects. The style for each *ConditionalFormat* can be specified by using the `PivotGridDataConditionalFormat.CellStyle` property, which should be the *PivotGridCellStyle* type. It can be defined in XAML or code-behind.
 
 For **XAML**, refer to the following code snippet.
 
@@ -63,7 +63,7 @@ For **XAML**, refer to the following code snippet.
 
 {% endhighlight %}
 
-For **Code-behind**, refer to the following code snippet.
+For code-behind, refer to the following code snippet.
 
 {% highlight C# %}
 

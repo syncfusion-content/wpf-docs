@@ -1,26 +1,26 @@
 ---
 layout: post
-title: Hiding Sub-Totals
-description: Hiding sub-totals
+title: Hiding Subtotals
+description: Hiding subtotals
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Hiding Sub-Totals
+# Hiding Subtotals
 
-The sub-total hiding feature is used to show or hide sub-totals in PivotGrid. It provides support to have an abstract view of the data as per our requirement. It provides following levels of hiding.
+The subtotal hiding feature is used to show or hide subtotals in the pivot grid. It provides an abstract view of data as desired and provides the following levels of hiding.
 
-* Hiding all the sub-totals
-* Hiding only the Row sub-totals
-* Hiding only the Column sub-totals
-* Hiding the sub-totals for the specific PivotItem
+* Hiding all the subtotals.
+* Hiding only the row subtotals.
+* Hiding only the column subtotals.
+* Hiding the subtotals for the specific PivotItem.
 
-## Hiding all the sub-totals
+## Hiding all the subtotals
 
-The `ShowSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*.
+The `ShowSubTotals` property is used to hide all subtotals and can be mentioned in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -44,7 +44,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -89,11 +89,11 @@ public partial class MainWindow: Window {
 
 ![](Hiding-SubTotals-images/PivotGrid when sub totals hidden.png)
 
-## Hiding only the Row sub-totals
+## Hiding only the row subtotals
 
-The `ShowRowSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*.
+The `ShowRowSubTotals` property is used to hide the row subtotals and can be mentioned in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -117,7 +117,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -162,11 +162,11 @@ public partial class MainWindow: Window {
 
 ![](Hiding-SubTotals-images/PivotGrid when row sub totals hidden.png)
 
-## Hiding only the Column sub-totals
+## Hiding only the column subtotals
 
-The `ShowColumnSubTotals` property can be used to achieve this requirement and it can be mentioned either in *XAML* or *Code-behind*.
+The `ShowColumnSubTotals` property is used to hide the column subtotals and can be mentioned in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -190,7 +190,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -235,11 +235,11 @@ public partial class MainWindow: Window {
 
 ![](Hiding-SubTotals-images/PivotGrid when column sub totals hidden.png)
 
-## Hiding the sub-totals for the specific PivotItem
+## Hiding the subtotals for the specific pivot item
 
-It can be achieved by setting the `ShowSubTotal` property to false for the specific PivotItem and it can be mentioned either in *XAML* or *Code-behind*. Note that when `ShowSubTotals` property is set to false and setting this property will do nothing.
+You can hide the subtotals for specific pivot item by setting the `ShowSubTotal` property to false, and it can be mentioned in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight XAML %}
 
@@ -263,7 +263,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
- For *Code-behind*, refer to the following code sample.
+ For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

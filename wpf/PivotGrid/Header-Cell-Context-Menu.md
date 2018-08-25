@@ -11,15 +11,15 @@ documentation: ug
 
 Expand/collapse operations can be done at both UI and programmatic level.
 
-## UI Level Expand/Collapse
+## UI level expand/collapse
 
-Header cell context menu will be shown while right-clicking on the expander cell. Expand/collapse operations can be handled through this context menu at the row level and column level individually.
+The header cell context menu will be shown while right-clicking the expander cell. Expand/collapse operations can be handled through this context menu at the row level and column level individually.
 
-**EnableContextMenu** property allows us to enable or disable the context menu for row or column headers alone individually.
+**EnableContextMenu** property allows you to enable or disable the context menu for row or column headers individually.
 
-To do so, define the PivotGrid control and raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, set the visibility of `EnableContextMenu` of each row and column header areas.
+To do so, define the pivot grid control and raise the loaded event for the pivot grid. Inside the `PivotGrid_Loaded()` event, set the visibility of `EnableContextMenu` of each row and column header areas.
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% highlight C# %}
 
@@ -66,9 +66,9 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-## Programmatic Level Expand/Collapse
+## Programmatic level expand/collapse
 
-Programmatically, we can expand/collapse any number of rows or columns. This can be done using the following methods.
+You can expand/collapse any number of rows or columns, programmatically. This can be done using the following methods.
 
     <table>
     <tr>
@@ -80,49 +80,49 @@ Programmatically, we can expand/collapse any number of rows or columns. This can
     <tr>
     <td>
     ExpandRow(string)</td><td>
-    Expands the group for the given row UniqueText.</td><td>
+    Expands the group for the given row unique text.</td><td>
     string </td><td>
     void </td></tr>
     <tr>
     <td>
     ExpandColumn(string)</td><td>
-    Expands the group for the given column UniqueText.</td><td>
+    Expands the group for the given column unique text.</td><td>
     string</td><td>
     void</td></tr>
     <tr>
     <td>
     CollapseRow(string)</td><td>
-    Collapse the group for the given row UniqueText.</td><td>
+    Collapses the group for the given row unique text.</td><td>
     string</td><td>
     void</td></tr>
     <tr>
     <td>
     CollapseColumn(string)</td><td>
-    Collapse the group for the given column UniqueText.</td><td>
+    Collapses the group for the given column unique text.</td><td>
     string</td><td>
     void</td></tr>
     <tr>
     <td>
     {{ '`ExpandRow(List<string>)`' | markdownify }}</td><td>
-    Expands the group for the given list of row UniqueText.</td><td>
+    Expands the group for the given list of row unique text.</td><td>
     {{ '`List<string>`' | markdownify }}</td><td>
     void</td></tr>
     <tr>
     <td>
     {{ '`ExpandColumn(List<string>)`' | markdownify }}</td><td>
-    Expands the group for the given list of column UniqueText.</td><td>
+    Expands the group for the given list of column unique text.</td><td>
     {{ '`List<string>`' | markdownify }}</td><td>
     void</td></tr>
     <tr>
     <td>
     {{ '`CollapseRow(List<string>)`' | markdownify }}</td><td>
-    Collapse the group for the given list of row UniqueText.</td><td>
+    Collapses the group for the given list of row unique text.</td><td>
     {{ '`List<string>`' | markdownify }}</td><td>
     void</td></tr>
     <tr>
     <td>
     {{ '`CollapseColumn(List<string>)`' | markdownify }}</td><td>
-    Collapse the group for the given list of column UniqueText.</td><td>
+    Collapses the group for the given list of column unique text.</td><td>
     {{ '`List<string>`' | markdownify }}</td><td>
     void</td></tr>
     <tr>
@@ -139,11 +139,11 @@ Programmatically, we can expand/collapse any number of rows or columns. This can
     void</td></tr>
     </table>
 
-For programmatically expand/collapse operations in code behind, we can make use of the above mentioned methods respectively as per our requirement. Passing the UniqueText as a parameter, we can expand/collapse one or more columns/rows as per our requirement.
+To expand/collapse operations in code behind programmatically, use the previously mentioned methods as needed. By passing the unique text as a parameter, you can expand/collapse one or more columns/rows as desired.
 
-To do so, define the PivotGrid control and raise the loaded event for PivotGrid. Inside the `PivotGrid_Loaded()` event, use the appropriate methods for expand/collapse operations.
+To do so, define the pivot grid control and raise the loaded event for pivot grid. Inside the `PivotGrid_Loaded()` event, use the appropriate methods for expand/collapse operations.
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% highlight C# %}
 

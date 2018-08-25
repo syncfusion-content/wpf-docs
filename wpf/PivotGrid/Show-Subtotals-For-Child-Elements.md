@@ -7,11 +7,11 @@ control: Pivot grid
 documentation: ug
 ---
 
-# SubTotals For Child Elements
+# SubTotals for Child Elements
 
-By default, PivotGrid will calculate summaries based on the parent nodes available in rows and columns. But now, we can also display subtotals based on the child elements available in rows and columns using `ShowSubTotalsForChildren` property. The property can be set either through *XAML* or through *code-behind*.
+By default, the pivot grid calculates summaries based on the parent nodes available in rows and columns. You can also display the subtotals based on the child elements available in rows and columns using the `ShowSubTotalsForChildren` property. This property can be set through XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -34,7 +34,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For **code-behind**, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

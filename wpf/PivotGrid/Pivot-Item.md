@@ -9,23 +9,21 @@ documentation: ug
 
 # Pivot Item
 
-A PivotItem is a container for items in PivotGrid control. An item in a PivotTable field which provides the information needed to define an item. The items are individual data entries in a field category. The PivotItem object is a member of PivotItems collection. It consists of the following fields.
+A pivot item is a container for items in the pivot grid control. An item in a pivot table field provides the information needed to define an item. The items are individual data entries in a field category. The pivot item object is a member of the pivot items collection and consists of the following fields.
 
-Properties:
+* **FieldHeader**: Gets or sets the title you want to view in the header for the pivot item.
+* **FieldMappingName**: Gets or sets the pivot item property's mapping name.
+* **TotalHeader**: Gets or sets the string you want to append to the pivot item's summary cells.
+* **Comparer**: Gets or sets the IComparer object used for sorting. If this value is null, then sorting will be performed under the assumption that this field is IComparable.
+* **Format**: Gets or sets the format string for the specified field.
+* **ShowSubTotal**: Gets or sets whether the subtotal for this item can be shown or hidden.
+* **AllowRunTimeGroupByField**: Gets or sets a value to enable or disable grouping for the pivot item.
+* **AllowFilter**: Enables or disables filtering for the pivot item.
+* **AllowSort**: Enables or disables sorting for the pivot item.
 
-* **FieldHeader** - Gets or sets the title you want to view in the header for this PivotItem.
-* **FieldMappingName**- Gets or sets the property's mapping name for the PivotItem.
-* **TotalHeader** - Gets or sets the string you want to appended to the PivotItem's summary cells.
-* **Comparer** - Gets or sets the IComparer object used for sorting. If this value is null, then sorting will be performed under the assumption that this field is IComparable.
-* **Format** - Gets or sets the format string for the specified field.
-* **ShowSubTotal** - Gets or sets whether the sub-total for this item can be shown or hidden.
-* **AllowRunTimeGroupByField** - Gets or sets the value to enable/disable grouping for this PivotItem.
-* **AllowFilter** - Gets or sets whether to enable or disable filtering for the PivotItem.
-* **AllowSort** - Gets or sets whether to enable or disable sorting for the PivotItem.
+## Defining pivot item in XAML
 
-## Defining PivotItem in XAML
-
-Create a new PivotItem by using the `PivotGridControl.PivotItem` class. A PivotItem can be either a `PivotRow` or `PivotColumn`. Please refer the code sample below.
+Create a new pivot item by using the `PivotGridControl.PivotItem` class. A pivot item can be either a `PivotRow` or `PivotColumn`. Refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -45,9 +43,9 @@ Create a new PivotItem by using the `PivotGridControl.PivotItem` class. A PivotI
 
 {% endhighlight %}
 
-## Defining Pivot Item in Code-Behind
+## Defining pivot item in code-behind
 
-Include the *Syncfusion.PivotAnalysis.Base* in MainWindow.xaml.cs and then define the PivotItem for row and column. Add the defined PivotItem to PivotRows and PivotColumns collection of PivotGrid control. Please refer the below code sample.
+Include the *Syncfusion.PivotAnalysis.Base* in the MainWindow.xaml.cs file, and then define the pivot item for row and column. Add the defined pivot item to the pivot rows and pivot columns collections of the pivot grid control. Refer to the following code sample.
 
 {% highlight C# %}
 

@@ -9,18 +9,18 @@ documentation: ug
 
 # Context Menu
 
-PivotGrid supports context menu option in Row Pivots Only mode. Following are the options available.
+The pivot grid supports the context menu option in RowPivotsOnly mode. Following are the available options.
 
-* **Allow Filtering** - Enable or disable filtering in the selected PivotComputation column.
-* **Allow Sorting**  - Enable or disable sorting in the selected PivotComputation column.
-* **HideValueColumn** - Hides the selected PivotComputation column.
-* **ClearValueFilters** - To clear the filtered changes in all PivotComputation columns.
-* **ClearValueSorts** - To clear sorted values in all PivotComputation columns.
-* **ShowPivotValueChooser** - Launches the Pivot Value Chooser window to add or remove the items in PivotGrid.
+* **Allow Filtering**: Enables or disables filtering in the selected pivot computation column.
+* **Allow Sorting**: Enables or disables sorting in the selected pivot computation column.
+* **HideValueColumn**: Hides the selected pivot computation column.
+* **ClearValueFilters**: Clears the filtered changes in all pivot computation columns.
+* **ClearValueSorts**: Clears the sorted values in all pivot computation columns.
+* **ShowPivotValueChooser**: Launches the pivot value chooser window to add or remove the items in pivot grid.
 
-The `EnableContextMenu` property is used to display the context menu on right clicking each column.
+The `EnableContextMenu` property is used to display the context menu by right-clicking each column.
 
-To do so, after defining PivotGrid control in RowPivotsOnly mode, raise the loaded event of PivotGrid. Inside the `PivotGrid_Loaded()` event, set the property `EnableContextMenu`.
+To do so, after defining the pivot grid control in RowPivotsOnly mode, raise the loaded event of pivot grid. Inside the `PivotGrid_Loaded()` event, set the `EnableContextMenu` property.
 
 {% highlight C# %}
 

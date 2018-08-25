@@ -9,16 +9,16 @@ documentation: ug
 
 # Grouping Bar
 
-Grouping Bar allows you to slice and dice the fields between column, row, value and filter. Grouping Bar allows us to add, re-arrange, or remove the fields to show data in the PivotGrid exactly the way we want. It consists of the following areas:
+Grouping bar allows you to slice and dice the fields between column, row, value, and filter. This allows you to add, rearrange, or remove the fields to show data in the pivot grid as desired. It consists of the following areas:
 
-* Filter Header Area - which holds the Filter items of PivotGrid control.
-* Data Header Area - which holds the PivotCalculation items of PivotGrid control.
-* Column Header Area - which holds the PivotColumn items of PivotGrid control.
-* Row Header Area - which holds the PivotRow items of PivotGrid control.
+* Filter header area: Holds the filter items of the pivot grid control.
+* Data header area: Holds the pivot calculation items of the pivot grid control.
+* Column header area: Holds the pivot column items of the pivot grid control.
+* Row header area: Holds the pivot row items of the pivot grid control.
 
-By default, Grouping Bar is enabled in PivotGrid control. We can show or hide the Grouping Bar by using the `ShowGroupingBar` property of PivotGrid control. It can be done both in *XAML* or *Code-behind*.
+By default, the grouping bar is enabled in the pivot grid control. You can show or hide it by using the `ShowGroupingBar` property. It can be done both in XAML and code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -36,7 +36,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 

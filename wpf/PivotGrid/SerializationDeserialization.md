@@ -9,11 +9,10 @@ documentation: ug
 
 # Serialization/Deserialization
 
-Serialization can be implemented for applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of PivotGridControl to an XML file and it can be loaded at any time.
+Serialization can be implemented for applications that need to save their data and structure after closed. Serialization supports saving the structure and data of pivot grid control to an XML file and it can be loaded at any time.
 
-The following properties of PivotGrid can be serialized.
+The following are the properties of pivot grid that can be serialized.
 
-List of Properties which gets Serialized
 
     <table>
         <tr>
@@ -169,13 +168,13 @@ List of Properties which gets Serialized
         </tr>
     </table>
 
-## Using the Serialization/Deserialization in PivotGrid
+## Using the serialization/deserialization in pivot grid
 
-On Serialization, expand, and collapse state of PivotGrid cells are maintained. So while de-serializing, the item source specified for the Grid should be as same as that when used in Serialization. This can be ignored by setting IgnoreExpandCollapseOnSerialization property of PivotGrid control to False.
+On serialization, the expand and collapse states of pivot grid cells are maintained. So when deserializing, the item source specified for the grid should be same as the item source used in serialization. This can be ignored by setting the `IgnoreExpandCollapseOnSerialization` property of pivot grid control to "False".
 
-The following are the methods which has been used in PivotGrid for serialization/deserialization.
+The following are the methods used in pivot grid for serialization/deserialization.
 
-Methods Table
+Methods table
 
     <table>
     <tr>
@@ -187,44 +186,44 @@ Methods Table
     <tr>
     <td>
     Serialize()</td><td>
-    Serializes the PivotGrid into XML file format using the save file dialog</td><td>
+    Serializes the pivot grid into an XML file format using the save file dialog.</td><td>
     -</td><td>
     void</td></tr>
     <tr>
     <td>
     Deserialize()</td><td>
-    Deserialize the PivotGrid from the saved XML file using the open file dialog</td><td>
+    Deserialize the pivot grid from the saved XML file using the open file dialog.</td><td>
     -</td><td>
     void</td></tr>
     <tr>
     <td>
     Serialize(string fileName)</td><td>
-    Serializes the PivotGrid into XML file format and saves it in the specified location</td><td>
+    Serializes the pivot grid into an XML file format and saves it in the specified location.</td><td>
     string fileName</td><td>
     void</td></tr>
     <tr>
     <td>
     Deserialize(string filename)</td><td>
-    Deserialize the PivotGrid from the specified XML file</td><td>
+    Deserialize the pivot grid from the specified XML file.</td><td>
     string fileName</td><td>
     void</td></tr>
     <tr>
     <td>
     SerializedXmlString()</td><td>
-    Serializes some specific properties in PivotGridControl into string format.</td><td>
+    Serializes some specific properties of pivot grid control in string format.</td><td>
     -</td><td>
     string</td></tr>
     <tr>
     <td>
     Deserialize(string XmlString)</td><td>
-    De-serializes the XML string format into PivotGridControl.</td><td>
+    Deserialize the XML string format in the pivot grid control.</td><td>
     string XmlString</td><td>
     void</td></tr>
     </table>
 
 ### Serialization
 
-After defining a PivotGrid control, call the Serialize() method in separate event handler. Please refer the below code snippet.
+After defining a pivot grid control, call the Serialize() method in the separate event handler. Refer to the following code snippet.
 
 {% highlight C# %}
 
@@ -247,9 +246,9 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-### De-Serialization
+### Deserialization
 
-After defining a PivotGrid control, call the De-Serialize() method in separate event handler. Please refer the below code snippet.
+After defining a pivot grid control, call the De-Serialize() method in the separate event handler. Refer to the following code snippet.
 
 {% highlight C# %}
 

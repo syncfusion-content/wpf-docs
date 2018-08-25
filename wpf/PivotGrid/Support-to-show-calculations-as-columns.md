@@ -9,11 +9,11 @@ documentation: ug
 
 # Display Calculations in Column Headers
 
-PivotGrid provides support to show the calculation values either in column or in row. It can be achieved either by using the `ShowCalculationsAsColumns` property of PivotGrid control or through simple uncheck/check option in PivotSchemaDesigner.
+The pivot grid provides support to show the calculation values in column or row. This can be achieved by using the `ShowCalculationsAsColumns` property of pivot grid control or through simple uncheck or check option in the pivot schema designer.
 
 ## Setting ShowCalculationsAsColumns property through code
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -38,7 +38,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -81,8 +81,8 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-## Setting ShowCalculationsAsColumns property through PivotSchemaDesigner
+## Setting ShowCalculationsAsColumns property through pivot schema designer
 
-We can enable or disable the `ShowCalculationsAsColumns` property through the "Show Calculations as column" checkbox of PivotSchemaDesigner. In-order to view the calculation values in row, uncheck the "Show Calculations as column" checkbox.
+You can enable or disable the `ShowCalculationsAsColumns` property through the "Show Calculations as column" checkbox of the pivot schema designer. To view the calculation values in row, uncheck the "Show Calculations as column" checkbox.
 
 ![](PivotSchemaDesigner-Images/Layout section.png)

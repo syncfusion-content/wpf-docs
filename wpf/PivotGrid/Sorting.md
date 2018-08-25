@@ -9,13 +9,13 @@ documentation: ug
 
 # Sorting
 
-Sorting enables you to quickly visualize and understand your data better, organize, find the data that you want and ultimately make more effective decisions. By default, PivotGrid holds built-in Comparers for all data types so that it will populate the data in ascending/descending order according to its data type. You can also define your own custom Comparer in order to view the data based on your requirement.
+Sorting enables you to quickly visualize, understand, organize, and find data that you want. By default, the pivot grid holds built-in comparers for all data types so that it will populate data in ascending/descending order according to its data type. You can also define your own custom comparer to view the data.
 
-**Sorting using Custom Comparer**
+**Sorting using custom comparer**
 
-Sorting the data with your own custom Comparer can be achieved by defining your custom Comparer and initializing its instance to the `Comparer` property of the corresponding PivotItem.
+Sorting the data with your own custom comparer can be achieved by defining the custom comparer and initializing its instance to the `Comparer` property of the corresponding PivotItem.
 
-For example, we have defined a custom `ReverseOrderComparer` for the PivotItem. Please find the appropriate code sample below.
+For example, a custom `ReverseOrderComparer` is defined for the PivotItem. Find the following appropriate code sample.
 
 {% highlight C# %}
 
@@ -37,7 +37,7 @@ public class ReverseOrderComparer: IComparer
 
 {% endhighlight %}
 
-In order to apply this comparer to PivotItem, we have created an instance for the `ReverseOrderComparer` and assigned it to the `Comparer` property of the *Product* PivotItem. Please refer the below code sample.
+To apply this comparer to PivotItem, an instance for the `ReverseOrderComparer` is created and assigned it to the `Comparer` property of the *Product* PivotItem. Refer to the following code sample.
 
 {% highlight C# %}
 
