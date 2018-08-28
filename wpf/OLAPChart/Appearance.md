@@ -9,19 +9,19 @@ documentation: ug
 
 # Appearance
 
-OlapChart provides support to customize the chart appearance. You can customize the Chart Style, Legend Style, Border and Background Style, Point Label Style and Label Style of the Primary and the Secondary Axes.
+The OLAP chart supports customizing the appearance of charts. You can customize the chart style, legend style, border and background style, point label style, and label style of the primary and secondary axes.
 
-## Chart Style and Legends   
+## Chart style and legends
 
-OlapChart provides options to set the Chart Type, Chart Color, Chart Legend Position, Chart Legend and Legend Check Box visibility.
+The OLAP chart provides options to set the chart type, chart color, chart legend position, chart legend, and legend check box visibility:
 
-* **ChartType** - Sets the chart type for the OlapChart control.
-* **ColorModel.Palette** - Specifies the chart color for the OlapChart control.
-* **Legend.Visibility** - Specifies the visibility of the chart legend.
-* **Legend.CheckBoxVisibility** - Specifies the visibility of the chart legend check box.
-* **ChartDockPanel.SetDock** - Specifies the position of the Chart Legend.
+* **ChartType**: Sets the chart type for the OLAP chart control.
+* **ColorModel.Palette**: Specifies the chart color for the OLAP chart control.
+* **Legend.Visibility**: Specifies the visibility of the chart legend.
+* **Legend.CheckBoxVisibility**: Specifies the visibility of the chart legend check box.
+* **ChartDockPanel.SetDock**: Specifies the position of the chart legend.
 
-The following code sample illustrate how to customize the Chart Style and Legends:
+The following code sample illustrates how to customize the chart style and legends.
 
 {% tabs %}
 
@@ -69,16 +69,16 @@ ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Floating)
 
 ![](Appearance_images/Appearance_img1.png)
 
-## Chart Border and Background Style
+## Chart border and background style
 
-OlapChart provides options to set the Chart Border and the Background Style.
+The OLAP chart provides options to set the chart border and background style:
 
-* **BorderThickness** - Sets the border thickness for the OlapChart control.
-* **BorderBrush** - Specifies the border color for the OlapChart control.
-* **Background** - Specifies the background color for the OlapChart control.
-* **GridBackground** - Specifies the interior background color for the OlapChart control.
+* **BorderThickness**: Sets the border thickness for the OLAP chart control.
+* **BorderBrush**: Specifies the border color for the OLAP chart control.
+* **Background**: Specifies the background color for the OLAP chart control.
+* **GridBackground**: Specifies the interior background color for the OLAP chart control.
 
-The following code sample illustrate how to customize the Chart Border and the Background Style:
+The following code sample illustrates how to customize the chart border and the background style.
 
 {% tabs %}
 
@@ -108,9 +108,9 @@ Me.olapChart.GridBackground = Brushes.LightGray
  
 ![](Appearance_images/Appearance_img2.png)
 
-## Chart Points Labels
+## Chart points labels
 
-OlapChart provides support to customize the labels and the symbols of the chart points. This is illustrated in the following code sample:
+The OLAP chart supports customizing the labels and symbols of chart points. This is illustrated in the following code sample.
 
 {% tabs %}
 
@@ -149,19 +149,19 @@ Next series
 
 ![](Appearance_images/Appearance_img3.png)
 
-## Chart Axis Labels
+## Chart axis labels
 
-OlapChart provides support to customize the labels of the Primary and the Secondary Axes.
+The OLAP chart supports customizing the labels of primary and secondary axes.
 
-### Customizing the Font Style of the Primary Axis
+### Customizing the font style of the primary axis
 
-OlapChart provides support to dynamically change the Font Family, Font Color and Font Weight for the Labels of the Primary Axis.
+Dynamically change the font family, font color, and font weight for labels of the primary axis:
 
-* **PrimaryAxis.LabelFontFamily** - Specifies the font family for the label of the Primary Axis.
-* **PrimaryAxis.LabelForeground** - Specifies the font color for the label of the Primary Axis.
-* **PrimaryAxis.LabelFontWeight** - Specifies the font weight for the label of the Primary Axis.
+* **PrimaryAxis.LabelFontFamily**: Specifies the font family for the label of the primary axis.
+* **PrimaryAxis.LabelForeground**: Specifies the font color for the label of the primary axis.
+* **PrimaryAxis.LabelFontWeight**: Specifies the font weight for the label of the primary axis.
 
-The following code sample illustrate how to customize the font style of the Primary Axis:
+The following code sample illustrates how to customize the font style of the primary axis.
 
 {% tabs %}
 
@@ -189,15 +189,15 @@ Me.olapChart.PrimaryAxis.LabelFontWeight = FontWeights.Bold
 
 {% endtabs %}
  
-### Customizing the Font Style of the Secondary Axis
+### Customizing the font style of the secondary axis
 
-OlapChart provides support to dynamically change the Font Family, Font Color and Font Weight for the Labels of the Secondary Axis.
+Dynamically change the font family, font color, and font weight for labels of the secondary axis.
 
-* **SecondaryAxis.LabelFontFamily** - Specifies the font family for the label of the Secondary Axis.
-* **SecondaryAxis.LabelForeground** - Specifies the font color for the label of the Secondary Axis.
-* **SecondaryAxis.LabelFontWeight** - Specifies the font weight for the label of the Secondary Axis.
+* **SecondaryAxis.LabelFontFamily**: Specifies the font family for the label of the secondary axis.
+* **SecondaryAxis.LabelForeground**: Specifies the font color for the label of the secondary axis.
+* **SecondaryAxis.LabelFontWeight**: Specifies the font weight for the label of the secondary axis.
 
-The following code sample illustrate how to customize the font style of the Secondary Axis:
+The following code sample illustrates how to customize the font style of the secondary axis.
 
 {% tabs %}
 
@@ -227,6 +227,6 @@ Me.olapChart.SecondaryAxis.LabelFontWeight = FontWeights.Bold
 
 ![](Appearance_images/Appearance_img4.png)
 
-A sample demo is available at the following location:  
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapChart.WPF\Samples\Chart Appearance\Appearance

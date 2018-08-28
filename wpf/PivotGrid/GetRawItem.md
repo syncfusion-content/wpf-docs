@@ -9,9 +9,9 @@ documentation: ug
 
 # GetRawItem
 
-GetRawItemFor method is used to obtain the list of raw items for value cell, total cell or grand total cell in PivotGrid.
+GetRawItemFor method is used to obtain the list of raw items for value cell, total cell, or grand total cell in the pivot grid.
 
-To achieve this, define the PivotGrid control and enable the hyperlink option of the value and summary cells using `IsHyperlinkCell` property. Then, invoke the hyperlink cell click event and call the `GetRawItemFor` method as illustrated below.
+To achieve this, define the pivot grid control and enable the hyperlink option of the value and summary cells using the `IsHyperlinkCell` property. Then, invoke the hyperlink cell click event and call the `GetRawItemFor` method as illustrated in the following code snippet.
 
 {% highlight C# %}
 

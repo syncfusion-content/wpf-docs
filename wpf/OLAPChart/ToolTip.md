@@ -9,9 +9,9 @@ documentation: ug
 
 # Tooltip
 
-OlapChart provides the series information (such as measure, primary x-axis and y-axis values, and series name) through series tooltip, when the mouse pointer is moved over Chart points.
+The OLAP chart provides the series information such as measure, primary x-axis and y-axis values, and series name through the series tooltip, when the mouse pointer is moved over chart points.
 
-The following code sample shows how to disable the series tooltip using the **ShowToolTip** property.
+The following code sample shows how to disable the series tooltip using the `ShowToolTip` property.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Me.olapChart.Series(0).ShowToolTip = False
   
 ![](Tooltip_images/Tooltip_img1.png)
   
-The following code sample shows how to enable the series tooltip using the **ShowToolTip** property.
+The following code sample shows how to enable the series tooltip using the `ShowToolTip` property.
 
 {% tabs %}
 

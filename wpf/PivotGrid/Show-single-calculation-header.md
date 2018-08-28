@@ -9,9 +9,9 @@ documentation: ug
 
 # Single Calculation Header
 
-By default, PivotGrid will not show the calculation headers when there is only one PivotCalculation. But we can now show the calculation headers even when there is only one PivotCalculation using the `ShowSingleCalculationHeader` property of PivotGrid control.
+By default, the pivot grid does not show the calculation headers when there is only one PivotCalculation. To show the calculation headers even when there is only one PivotCalculation, use the `ShowSingleCalculationHeader` property of pivot grid control.
 
-Please refer the below code sample below.
+Refer to the following code sample.
 
 {% highlight C# %}
 

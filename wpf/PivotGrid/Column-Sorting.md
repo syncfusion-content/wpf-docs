@@ -9,23 +9,23 @@ documentation: ug
 
 # Column Sorting in Pivot Grid
 
-PivotGrid control provides sorting option for the calculation columns in PivotGrid in RowPivotsOnly mode. This can be enabled or disabled using `AllowSort` property of `PivotComputationInfo` in PivotGrid control.
+The pivot grid control provides a sorting option for calculation columns in RowPivotsOnly mode. This can be enabled or disabled using the `AllowSort` property of `PivotComputationInfo`.
 
 Property
 
-* **AllowSort** - This property is used to enable or disable the sorting option for column pivots.
+* **AllowSort**: Enables or disables the sorting option for column pivots.
 
 Method
 
-* **ApplySavedValueSorts** - When RowPivotsOnly is true, this method sorts the pivot based on the information furnished through the arguments.
+* **ApplySavedValueSorts**: When RowPivotsOnly is true, this method sorts the pivot based on the information furnished through the arguments.
 
-## Defining the Property in PivotGrid
+## Defining the property in pivot grid
 
-After defining the PivotGrid control with PivotRows and PivotCalculations, set the `SortOption` property of PivotGrid control to "All", in-order to sort all the value columns. Then, set the property `AllowSort` to "true" for the appropriate calculation items as per your requirement.
+After defining the pivot grid control with pivot rows and pivot calculations, set the `SortOption` property to "All" for sorting all the value columns. Then, set the `AllowSort` property to "true" for the appropriate calculation items.
 
-The property `AllowSort` can be mentioned either in *XAML* or *Code-behind*. 
+The `AllowSort` property can be mentioned in XAML or code-behind.
 
-For *XAML*, refer to the following code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -53,7 +53,7 @@ For *XAML*, refer to the following code sample.
 
 {% endhighlight %}
 
-For *Code-behind*, refer to the following code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
@@ -74,11 +74,11 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-## Defining the Method in PivotGrid
+## Defining the method in pivot grid
 
-After defining the PivotGrid control with PivotRows and PivotCalculations, set the `SortOption` property of PivotGrid control to "All", in-order to sort all the value columns. Then, set the property `AllowSort` to "true" for the appropriate calculation items as per your requirement.
+After defining the pivot grid control with pivot rows and pivot calculations, set the `SortOption` property to "All" for sorting all the value columns. Then, set the `AllowSort` property to "true" for appropriate calculation items.
 
-Create the list of column to be sorted along with the corresponding sorting direction and invoke the `ApplySavedValueSort()` method for applying sorting to those columns.
+Create a list of column to be sorted along with the corresponding sorting direction and invoke the `ApplySavedValueSort()` method for applying sorting to those columns.
 
 Refer to the following code sample.
 
@@ -109,6 +109,6 @@ public partial class MainWindow: Window {
 
 ![](Features-in-RowPivotsOnly-images/Sorting option enabled in PivotGrid.png)
 
-## Multi-Column Sorting
+## Multi-column sorting
 
-Please refer the [link here](http://help.syncfusion.com/wpf/pivotgrid/multi-column-sorting#multi-column-sorting-in-row-pivots-only-mode-of-pivotgrid-control).
+Refer to the [link here](http://help.syncfusion.com/wpf/pivotgrid/multi-column-sorting#multi-column-sorting-in-row-pivots-only-mode-of-pivotgrid-control).

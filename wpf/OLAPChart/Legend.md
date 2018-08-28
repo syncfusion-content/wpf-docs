@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend
 
-Legends are used to display the name of the data series. The ChartLegend can be added to an OlapChart by adding the ChartLegend of the Chart WPF, which is found under the Syncfusion.Windows.Chart namespace. The following code sample explain how to add a legend to an OlapChart:
+Legends are used to display the name of data series. The chart legend can be added to an OLAP chart by adding the chart legend of the chart WPF, which is found under the Syncfusion.Windows.Chart namespace. The following code sample explains how to add a legend to an OLAP chart.
 
 {% tabs %}
 
@@ -37,9 +37,9 @@ Me.olapChart.Legend = New ChartLegend()
 
 ![](Legend_images/Legend_img1.png)
 
-## Show/Hide Legend
+## Show/hide legend
 
-The ChartLegend has a **Visibility** property using which you can show or hide the ChartLegend in an OlapChart. The following code sample show how you can collapse the visibility of the ChartLegend:
+The chart legend has a `Visibility` property using which you can show or hide the chart legend in the OLAP chart. The following code sample shows how you can collapse the visibility of the chart legend.
 
 {% tabs %}
 
@@ -67,9 +67,9 @@ Me.olapChart.Legend.Visibility = System.Windows.Visibility.Collapsed
 
 ![](Legend_images/Legend_img2.png)
 
-## Visibility Customization
+## Visibility customization
 
-The visibility of the legend check box can be toggled by using the *CheckBoxVisibility* property in the ChartLegend. The following code sample shows how to toggle the visibility of the check box in the legend of an OlapChart:
+The visibility of the legend check box can be toggled by using the `CheckBoxVisibility` property in the chart legend. The following code sample shows how to toggle the visibility of check box in the legend of the OLAP chart.
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ Me.olapChart.Legend.CheckBoxVisibility = System.Windows.Visibility.Collapsed
 
 {% endtabs %}
 
-The visibility of the legend icon can be toggled by using the *IconVisibility* property in the ChartLegend. The following code sample shows how to toggle the visibility of the icons in an OlapChart legend:
+The visibility of the legend icon can be toggled by using the `IconVisibility` property in the chart legend. The following code sample shows how to toggle the visibility of icons in the OLAP chart legend.
 
 {% tabs %}
 
@@ -121,9 +121,9 @@ Me.olapChart.Legend.IconVisibility = System.Windows.Visibility.Collapsed
 
 {% endtabs %}
 
-## Dock Position
+## Dock position
 
-ChartLegend contains an enum property called ChartDock, which has the following values **Floating**, **Right**, **Left**, **Top** and **Bottom**. You can choose the required docking position to dock the legend. The following code sample explain how to set the docking position for an OlapChart legend: 
+The chart legend contains an enum property called ChartDock, which has the following values **Floating**, **Right**, **Left**, **Top**, and **Bottom**. You can choose the required docking position to dock the legend. The following code sample explains how to set the docking position for the OLAP chart legend.
 
 {% tabs %}
 
@@ -141,9 +141,9 @@ ChartDockPanel.SetDock(Me.olapChart.Legend, ChartDock.Right)
 
 {% endtabs %}
 
-## Row/Column Setting
+## Row/column setting
 
-You can use the **RowsCount** and **ColumnsCount** property to create the rows or the columns of an OlapChart legend. The **RowsCount** and **ColumnsCount** will internally be used to create a Grid layout control to place the legends. The following code sample shows how to set the number of rows or columns in an legend:
+You can use the `RowsCount` and `ColumnsCount` property to create the rows or columns of the OLAP chart legend. The **RowsCount** and **ColumnsCount** will be used internally to create a grid layout control to place the legends. The following code sample shows how to set the number of rows or columns in an legend.
 
 {% tabs %}
 
@@ -172,9 +172,9 @@ Me.olapChart.Legend.ColumnsCount = 2
 
 {% endtabs %}
 
-N> The **RowsCount** and **ColumnsCount** are used to create the rows and the columns in the Grid layout control, which is used to place the legends. If you give extra row or column count than the legend availability then it will display empty spaces to fill the structure of the grid. The following illustration explains this in detail.
+N> The **RowsCount** and **ColumnsCount** are used to create the rows and columns in the grid layout control, which is used to place the legends. If you give extra row or column count than the legend availability, it will display empty spaces to fill the structure of the grid. The following illustration explains this in detail.
 
-The following chart has only one legend, but we have set RowsCount = 2 and ColumnsCount = 2. Therefore, the resultant legend will appear as follows: 
+The following chart has only one legend, but the RowsCount and ColumnsCount are set as 2. Therefore, the resultant legend will appear as follows:
 
 **Legend with RowsCount=2, ColumnsCount=2 and ChartDock.Top**
 ![](Legend_images/Legend_img3.png)

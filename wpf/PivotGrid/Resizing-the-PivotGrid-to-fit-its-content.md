@@ -9,11 +9,11 @@ documentation: ug
 
 # Resizing the Pivot Grid
 
-PivotGrid provides support for resizing the Grid to fit its content while expanding and collapsing the groups. The Grid will be resized after refreshing the page.
+The pivot grid supports resizing the grid to fit its content while expanding and collapsing the groups. The grid will be resized after refreshing the page.
 
-The `ResizePivotGridToFit` property is used for this requirement and it can be defined in both *XAML* and *Code-behind*.
+The `ResizePivotGridToFit` property is used to resize the grid, and it can be defined in both XAML and code-behind.
 
-If through *XAML*, please refer the below code sample.
+For XAML, refer to the following code sample.
 
 {% highlight xaml %}
 
@@ -38,7 +38,7 @@ If through *XAML*, please refer the below code sample.
 
 {% endhighlight %}
 
-Else if through **Code-behind**, please refer the below code sample.
+For code-behind, refer to the following code sample.
 
 {% highlight C# %}
 
