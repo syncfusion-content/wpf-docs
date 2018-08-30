@@ -22,7 +22,7 @@ You should get the private Syncfusion WPF NuGet feed URL to install or upgrade t
 
 2. Click the Copy URL label under WPF platform to copy the Syncfusion WPF platform NuGet feed to clipboard or directly use the following URL: 
 
-    [http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf](http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf) 
+    [https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf](https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf) 
 
     ![](NuGet_Packages_Images/img1.png)
 
@@ -40,7 +40,7 @@ You should get the private Syncfusion WPF NuGet feed URL to install or upgrade t
 
     **Name:** Name of the package listed in the available package sources.
     **Source:** Syncfusion WPF NuGet Feed URL      
-    [http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf](http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf).
+    [https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf](https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf).
 
 5.	Click the **Update** button to add the name and source details to package sources. 
 
@@ -87,7 +87,7 @@ To reference the Syncfusion WPF component using the Package Manager Console as N
     Install-Package Syncfusion.Chart.WPF46
 
     #install specified package in default project with specified Package Source
-    Install-Package Syncfusion.Chart.WPF46-Source “http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
+    Install-Package Syncfusion.Chart.WPF46-Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
 
     #install specified package in specified project 
     Install-Package Syncfusion.Chart.WPF46-ProjectName SyncfusionDemoApplication
@@ -117,7 +117,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     **For example:**
 
     ~~~
-    nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
+    nuget.exe Sources Add –Name “Syncfusion Source” –Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
     ~~~
 
 ### NuGet installation
@@ -141,7 +141,7 @@ nuget.exe install “Syncfusion.Chart.WPF46"
 nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
 #install specific Syncfusion NuGet package with specific Syncfusion Package Source
-nuget.exe install “Syncfusion.Chart.WPF46”  –Source “http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
+nuget.exe install “Syncfusion.Chart.WPF46”  –Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
 ~~~
 
 ## Upgrading NuGet packages
@@ -184,7 +184,7 @@ To update the installed Syncfusion WPF NuGet packages using the Package Manager 
     Update-Package Syncfusion.Chart.WPF46
 
     #Update specified package in default project with specified Package Source
-    Update-Package Syncfusion.Chart.WPF46 –Source “http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
+    Update-Package Syncfusion.Chart.WPF46 –Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
 
     #Update specified package in specified project 
     Update-Package Syncfusion.Chart.WPF46 -ProjectName SyncfusionDemoApplication
@@ -221,7 +221,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update “C:\Users\SyncfusionApplication\package.config”
 
     #Update all NuGet packages from specified Packages Source
-    nuget update -Source “http://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
+    nuget update -Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
     ~~~
 
    
