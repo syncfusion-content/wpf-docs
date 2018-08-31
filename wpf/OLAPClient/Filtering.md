@@ -9,23 +9,23 @@ documentation: ug
 
 # Filtering
 
-## Filtering by Member
+## Filtering by member
 
-After clicking Split Button of a dimension, Member Editor Dialog opens through which members are filtered by checking and unchecking the check boxes corresponding to the members. On clicking the "OK" button, based on the selected members in the Member Editor Dialog, OlapReport gets updated and refreshes the OlapGrid and OlapChart controls. The "Cancel" button is used for canceling the selection.
+After clicking the split button of a dimension, the member editor dialog opens through which members are filtered by checking and unchecking the check boxes corresponding to members. By clicking OK, the OLAP report gets updated and refreshes the OLAP grid and OLAP chart controls based on the selected members in the member editor dialog. The Cancel button is used for canceling the selection.
 
 ![](Filtering_images/Filtering_img1.png)
 
-The above filter illustrates that the members "France" and "Germany", along with "New South Wales" and "Queensland" are filtered from the Grid and Chart view.
+The above filter illustrates that the members "France" and "Germany" along with "New South Wales" and "Queensland" are filtered from the grid and chart views.
 
-## Filtering by Value
+## Filtering by value
 
-The Filter tab in the Filtering and Sorting dialog box of OlapClient provides the options to specify custom filters on the multidimensional data. It enables the user to filter the rows and columns of the selected Measure.
+The filter tab in the filtering and sorting dialog box provides the options to specify custom filters on the multidimensional data. It enables users to filter the rows and columns of the selected measure.
 
-* **Column Filter** - Column Filter will check each and every row of a column against the filter condition, if and only if all the rows of that column satisfy the condition, the column will be included in the result set else that column will be filtered.
+* **Column filter**: Column filter checks each and every row of a column against the filter condition. The column will be included in the result set only if all the rows of that column satisfy the condition; otherwise, the column will be filtered.
 
-* **Row Filter** - Row Filter will check each and every column of a row against the filter condition if and only if all the columns of that row satisfy the condition, the row will be included in the result set else that row will be filtered.
+* **Row filter**: Row filter checks each and every column of a row against the filter condition. The row will be included in the result set only if all the columns of that row satisfy the condition; otherwise, the row will be filtered.
 
-Filtering and Sorting dialog for rows/columns can be opened by clicking on the corresponding icon in the toolbar.
+Filtering and Sorting dialog for rows/columns can be opened by clicking the corresponding icon in the toolbar.
 
 ![](Filtering_images/Filtering_img2.png)
 
@@ -37,23 +37,23 @@ Filtering by row
 Filtering by column
 {:.caption}
 
-The following screenshot displays the Filter tab in Filtering and Sorting dialog.
+The following screenshot displays the filter tab in Filtering and Sorting dialog.
 
 ![](Filtering_images/Filtering_img4.png)
 
-The options in the Filtering tab are as follows:
+The options in the filtering tab are as follows:
 
-**Filter Empty Rows/Columns** – By this option, user can filter the appearance of empty rows/columns in the result set.
+**Filter empty rows/columns**: Filters the empty rows or columns appeared in the result set.
 
-**Filter 1 and Filter 2** - User can apply two filter expressions to a report at the same time. The options in the Filter group box are as follows:
+**Filter 1 and Filter 2**: You can apply two filter expressions to a report at the same time. The options in the filter group box are as follows:
 
-* **Condition** – The user can choose any one condition that he wants to appear in the filter expression.
-* **Filter On** – The user can choose any one Measure element from the list, on which the user wish to apply the filter.
-* **Value** – The user needs to enter the conditional value for the expression.
+* **Condition**: You can choose any one condition required to appear in the filter expression.
+* **Filter on**: You can choose any one measure element from the list, on which you want to apply the filter.
+* **Value**: Enter the conditional value for the expression.
 
-User can toggle the visibility of the Filter and Sort buttons in the OlapClient toolbar by using the "ShowFilterSortButtons" property. 
+You can toggle the visibility of the filter and sort buttons in the OLAP client toolbar by using the `ShowFilterSortButtons` property.
 
-{% tabs %} 
+{% tabs %}
 
 {% highlight c# %}  
 
@@ -69,15 +69,15 @@ Me.olapClient1.ShowFilterSortButtons = False
  
 {% endtabs %}
 
-## Subset Filter
+## Subset filter
 
-Subset Filter is used to filter the number of records in the result set. Subset filter will get a numeric number as input and restrict the number of records within that count. We can specify the subset filter for both row and column.
+Subset filter is used to filter the number of records in the result set. The subset filter gets a numeric number as input and restricts the number of records within that count. You can specify the subset filter for both the row and column.
 
 ![](Filtering_images/Filtering_img6.png)
 
 ![](Filtering_images/Filtering_img5.png)
 
-Users can toggle the visibility of Subset Filter by using the "ShowSubsetFilters" property.
+Users can toggle the visibility of subset filter by using the `ShowSubsetFilters` property.
 
 {% tabs %}
 

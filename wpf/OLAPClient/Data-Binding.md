@@ -9,9 +9,9 @@ documentation: ug
 
 # Data Binding
 
-## Binding OlapClient to Offline Cube
+## Binding OLAP client to offline cube
 
-To connect an OLAP Cube available in local machine, set the physical path of the Cube set in the connection string. The following code example illustrates the same.
+To connect to an OLAP cube available in the local machine, set the physical path of the cube set in the connection string. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -35,9 +35,9 @@ Me.olapClient1.DataBind()
 
 {% endtabs %}
 
-## Binding OlapClient to Cube in local SQL Server
+## Binding OLAP client to cube in local SQL Server
 
-To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+To connect to the OLAP cube available in SQL Server Analysis Service in the local machine, set the server name and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -61,9 +61,9 @@ Me.olapClient1.DataBind()
 
 {% endtabs %}
 
-## Binding OlapClient to Cube in online SQL Server
+## Binding OLAP client to cube in online SQL Server
 
-To connect an OLAP Cube available in SQL Server Analysis Service in online server through XML/A, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+To connect to the OLAP cube available in SQL Server Analysis Service in the online server through XML/A, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -87,9 +87,9 @@ Me.olapClient1.DataBind()
 
 {% endtabs %}
 
-## Binding OlapClient to Cube in online Mondrian Server
+## Binding OLAP client to cube in online Mondrian Server
 
-To connect an OLAP Cube available in Mondrian Server through XML/A, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+To connect to the OLAP cube available in Mondrian Server through XML/A, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates the same.
 
 {% tabs %}
 
@@ -115,9 +115,9 @@ Me.olapClient1.DataBind()
 
 {% endtabs %}
 
-## Binding OlapClient to Cube in online ActivePivot Server
+## Binding OLAP client to cube in online ActivePivot Server
 
-To connect an OLAP Cube available in ActivePivot Server through XML/A, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
+To connect to the OLAP cube available in ActivePivot Server through XML/A, set the host server link and database name in the connection string. If you have any credentials to connect your cube, then set the user ID and password attributes accordingly. The following code example illustrates the same.
 
 {% tabs %}
 
