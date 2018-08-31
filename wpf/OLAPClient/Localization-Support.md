@@ -9,21 +9,21 @@ documentation: ug
 
 # Localization Support
 
-Localization is the key feature for providing IT solutions targeted at global users. Essential BI OLAP Client for WPF allows user to localize the control to a specific locale. The following document briefly explains the step by step procedure to localize an OLAP Client for WPF control.
+Localization is the key feature for providing software solutions targeted at global users. Essential BI OLAP client for WPF allows users to localize the control to a specific locale. The following document briefly explains the step by step procedure to localize an OLAP client for the WPF control.
 
 
 ![](Localization-Support_images/Localization-Support_img1.png)
 
 
 
-### Localizing an OLAP Client in an Application
+### Localizing the OLAP client in an application
 
-The OLAP Client for WPF supports “resx” based localization. The following steps need to be performed, in order to localize the control.
+The OLAP client for WPF supports “resx” based localization. The following steps should be performed to localize the control.
 
-* Translation
-* Resource File and File name conventions
-* <SupportedCultures> Tag inclusion into the project file
-* Specifying the CurrentUICulture
+* Translation.
+* Resource file and file name conventions.
+* <SupportedCultures> tag inclusion into the project file.
+* Specifying the CurrentUICulture.
 
 {% seealso %}
 
@@ -33,11 +33,11 @@ Getting Started
 
 ### Translation
 
-The first step in localization is translating the strings that can be localized to the destination locale. Basically, OlapClient.WPF contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize those assemblies as well. The following tables contain the Localization Keys and the Strings to be localized for OlapClient.WPF, OlapChart.WPF, OlapGrid.WPF, OlapShared.WPF and OlapTools.WPF assemblies. Translate the second column in each table, which contains the strings to be localized to the target locale. 
+The first step in localization is translating the strings that can be localized to the destination locale. Basically, OlapClient.WPF contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize those assemblies. The following tables contain the localization keys and strings to be localized for OlapClient.WPF, OlapChart.WPF, OlapGrid.WPF, OlapShared.WPF, and OlapTools.WPF assemblies. Translate the second column in each table, which contains the strings to be localized to the target locale.
 
-N> Localization Key field should be same for the all locales. Do not translate it.
+N> Localization key field should be same for all locales. Do not translate it.
 
-### Localization Strings Table for OlapClient.WPF
+### Localization strings table for OlapClient.WPF
 
 
 <table>
@@ -275,12 +275,12 @@ OlapClient_Toolbar_SortingRow_ToolTip</td><td>
 Sorting Row</td></tr>
 </table>
 
-### Localization Strings Table for OlapChart.WPF
+### Localization strings table for OlapChart.WPF
 
 <table>
 <tr>
 <th>
-Localization Key</th><th>
+Localization key</th><th>
 Strings to be localized</th></tr>
 <tr>
 <td>
@@ -416,12 +416,12 @@ OlapChart_Dialog_YValueAsLabelContent</td><td>
 Y Value</td></tr>
 </table>
 
-### Localization Strings Table for OlapGrid.WPF
+### Localization strings table for OlapGrid.WPF
 
 <table>
 <tr>
 <th>
-Localization Key</th><th>
+Localization key</th><th>
 Strings to be localized</th></tr>
 <tr>
 <td>
@@ -513,12 +513,12 @@ OlapGrid_Value_Tooltip</td><td>
 Values :</td></tr>
 </table>
 
-### Localization Strings Table for OlapShared.WPF
+### Localization strings table for OlapShared.WPF
 
 <table>
 <tr>
 <th>
-Localization Key</th><th>
+Localization key</th><th>
 Strings to be localized</th></tr>
 <tr>
 <td>
@@ -602,12 +602,12 @@ OlapTools_FilterSorting_FilterCondition</td><td>
 Condition</td></tr>
 </table>
 
-### Localization Strings Table for OlapTools.WPF
+### Localization strings table for OlapTools.WPF
 
 <table>
 <tr>
 <td>
-Localization Key</td><td>
+Localization key</td><td>
 Strings to be localized</td></tr>
 <tr>
 <td>
@@ -652,22 +652,22 @@ Max number of records to be displayed.</td></tr>
 </table>
 
 
-## Resource File and File Name Conventions
+## Resource file and file name conventions
 
 After translating the strings that can be localized, perform the following in the application:
 
-1. Right-click the project file to create a new folder in the project. 
-2. Select Add-> New Folder.
-3. Re-name the folder as Resources. 
+1. Right-click the project file to create a new folder in the project.
+2. Select Add > New Folder.
+3. Rename the folder as Resources.
 
 
 
-   N> The folder name should strictly be Resources.
+N> The folder name should strictly be Resources.
 
 
 
 4. Now, right-click the Resources folder to create a new resource file in the Visual Studio project file.
-5. Navigate to Add -> New Item.
+5. Navigate to Add > New Item.
 
 
 
@@ -675,13 +675,13 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-6. The Add New Item dialog displays.
+The Add New Item dialog displays as follows.
 
    ![](Localization-Support_images/Localization-Support_img3.png)
 
 
 
-7. Select Resources File from the list. Name the resource file: Syncfusion.OlapClient.WPF.fr-FR.resx then click Add.
+6. Select resources file from the list. Name the resource file: Syncfusion.OlapClient.WPF.fr-FR.resx and then click Add.
 
 
 
@@ -693,13 +693,13 @@ After translating the strings that can be localized, perform the following in th
    * Syncfusion.OlapClient.WPF.ja-JP.resx
    * Syncfusion.OlapClient.WPF.it-IT.resx
 
-   Similarly, for OlapChart.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapChart.WPF.fr-FR.resx.
+   Similarly, for OlapChart.WPF assembly, add one more new resource file. Name the resource file as Syncfusion.OlapChart.WPF.fr-FR.resx.
 
-   For OlapGrid.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapGrid.WPF.fr-FR.resx.
+   For OlapGrid.WPF assembly, add one more new resource file. Name the resource file as Syncfusion.OlapGrid.WPF.fr-FR.resx.
 
-   For OlapShared.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapShared.WPF.fr-FR.resx.
+   For OlapShared.WPF assembly, add one more new resource file. Name the resource file as Syncfusion.OlapShared.WPF.fr-FR.resx.
 
-   For OlapTools.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapTools.WPF.fr-FR.resx.
+   For OlapTools.WPF assembly, add one more new resource file. Name the resource file as Syncfusion.OlapTools.WPF.fr-FR.resx.
 
    Now, the new resource file is included successfully.
 
@@ -709,28 +709,28 @@ After translating the strings that can be localized, perform the following in th
 
    
 
-## &lt;SupportedCultures&gt; Tag Inclusion into the Project File
+## &lt;SupportedCultures&gt; Tag inclusion into the project file
 
-In Silverlight, we need to specify the list of supported cultures using the <SupportedCultures> tag in the project file. To specify the supported cultures in a project file, perform the following steps: 
+In Silverlight, you should specify the list of supported cultures using the <SupportedCultures> tag in the project file. To specify the supported cultures in a project file, perform the following steps:
 
-1. Go to Solution Explorer, Right-click the project file and select Unload.
-2. Again, right click the project file and select Edit. Now, the project files will appear in the XML editor in Visual Studio.
-3. Find the tag <SupportedCultures> and then specify the culture code, which is already appended in the resource file name.
+1. Go to Solution Explorer, right-click the project file and select Unload.
+2. Again, right-click the project file and select Edit. Now, the project files will appear in the XML editor in Visual Studio.
+3. Find the tag <SupportedCultures>, and then specify the culture code, which is already appended in the resource file name.
 
    Example: <SupportedCultures>fr-FR<SupportedCultures>
 
-   You can specify multiple cultures as well, by using the (;) semi-colon operator to separate the culture codes.
+   You can specify multiple cultures by using the (;) semicolon operator to separate the culture codes.
 
    Example:<SupportedCultures>en-US;fr;fr-FR;ru;ru-RU;</SupportedCultures>
 
-4. Now, right click the project name and select Reload.
+4. Now, right-click the project name and select Reload.
 
    
 Now, the supported cultures are included in the project file.
 
 ## Specifying the CurrentUICulture
 
-Now, you need to specify the CurrentUICulture of the application. We can specify the CurrentUICulture either from Application_Startup in App.xaml.cs or from the constructor on the MainPage (If you are specifying the current culture on the main page, then make sure, this is assigned before calling the InitializeComponent method). The following code snippets describe the two variations.
+Now, you should specify the CurrentUICulture of the application. You can specify the CurrentUICulture either from Application_Startup in App.xaml.cs or from the constructor on the MainPage (If you are specifying the current culture on the main page, then make sure, this is assigned before calling the InitializeComponent method). The following code snippets describe the two variations.
 
 {% tabs %}
 {% highlight C# %} 
