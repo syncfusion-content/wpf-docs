@@ -584,11 +584,11 @@ In TDI document, new tab group can be created by dragging the TabItem into the D
 
 ## TabGroup creation through mouse interaction 
 
-DockAbility of document items can be restricted by setting TabSwitchSection property as `ActiveFiles`.  Also, user can create TabGroup at desired position in the document area with the help of drag provider like VisualStudio.
+In DockingManager, new tab group can be created at top, left, right and bottom side in the document area through mouse interaction. To enable this functionalities in DockingManager, the `TabSwitchSection` property should be set as `ActiveFiles` for document items and `ActiveToolWindows` for dock items.
 
 ### ActiveFiles mode
 
-When setting the TabSwitchSection as `ActiveFiles` for document panel, dock ability has been restricted and it always placed as a document window whenever it drag and drop.
+DockAbility of document items can be restricted by setting TabSwitchSection property as `ActiveFiles`.  Also, user can create TabGroup at desired position in the document area with the help of drag provider like VisualStudio.
 
 {% tabs %}
 
