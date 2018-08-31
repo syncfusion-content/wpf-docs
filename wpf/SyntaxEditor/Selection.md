@@ -70,9 +70,7 @@ CTRL + A<br/><br/></td><td>
 Selects the entire document.<br/><br/></td></tr>
 </table>
 
-## Touch Selection
-
-Selection using Touch 
+## Selection using Touch 
 
 User can do selection by double touch the desired word. Selection pointers will be displayed at start and end position of the selected content. 
 
@@ -82,5 +80,7 @@ User can do selection by double touch the desired word. Selection pointers will 
 User can extend the selection by dragging the selection pointers. The following screenshot shows the extend selection of selected content.
 
 ![](Selection-Images/selection-img2.jpeg)
+
+When selection goes beyond viewport of EditControl, scrollviewer will be automatically bring new contents to the view and text selection will happen to those contents.
 
 
