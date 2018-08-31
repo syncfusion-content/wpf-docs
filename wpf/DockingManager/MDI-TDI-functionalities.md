@@ -525,15 +525,15 @@ DockingManager.SetShowCloseAllButThisMenuItem(Item2, false);
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img14.jpeg)
 
 
-## Grouping Document Tab Group
+# Creating Document Tab Group
 
 TDI document can be grouped like VisualStudio. It can be grouped by drag and Drop and also using the options in context menu items.
 
-### Creating TabGroup using ContextMenu option
+## TabGroup creation using ContextMenu option
 
 In DockingManager, new tab group can be created at horizontal or vertical side in the document area using `ContextMenu` option.
 
-#### Creating Vertical Tab Group 
+### Creating Vertical Tab Group 
 
 To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method `CreateVerticalTabGroup(UIElement)` of the DocumentContainer.
 
@@ -553,7 +553,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateVerticalTabGroup(
 
 {% endtabs %}
 
-#### Creating Horizontal Tab Group 
+### Creating Horizontal Tab Group 
 
 To create a horizontal tab group in the Tabbed document, select the "New Horizontal Tab Group context menu item and also it can be created programmatically by calling the method `CreateHorizontalTabGroup(UIElement)` of the DocumentContainer.
 
@@ -573,7 +573,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateHorizontalTabGrou
 
 {% endtabs %}
 
-#### Adding Tab in a Group 
+### Adding Tab in a Group 
 
 In TDI document, new tab group can be created by dragging the TabItem into the Document area and click the "New Tab Group" menu item from context menu item.
 
@@ -582,11 +582,11 @@ In TDI document, new tab group can be created by dragging the TabItem into the D
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
 
-### Creating TabGroup through mouse interaction without using ContextMenu option
+## TabGroup creation through mouse interaction 
 
-In DockingManager, new tab group can be created at top, left, right and bottom side in the document area through mouse interaction. To enable this functionalities in DockingManager, the `TabSwitchSection` property should be set as `ActiveFiles` for document items and `ActiveToolWindows` for dock items.
+DockAbility of document items can be restricted by setting TabSwitchSection property as `ActiveFiles`.  Also, user can create TabGroup at desired position in the document area with the help of drag provider like VisualStudio.
 
-#### ActiveFiles mode
+### ActiveFiles mode
 
 When setting the TabSwitchSection as `ActiveFiles` for document panel, dock ability has been restricted and it always placed as a document window whenever it drag and drop.
 
@@ -610,9 +610,9 @@ When setting the TabSwitchSection as `ActiveFiles` for document panel, dock abil
 
 ![](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
 
-#### ActiveToolWindows mode
+### ActiveToolWindows mode
 
-When setting the TabSwitchSection as ActiveToolWindows for Dock Panel. It can be docked in the Top, Bottom, Right and Left as a Dock or Document Window when drag and drop it on the TDI Manager based on the position of the window placed in the DragProvider. 
+Dock window can be moved to both dock and document state in the document area by setting TabSwitchSection property as `ActiveToolWindows`. It can be achieved with the help of drag provider based on its cursor position at respective side. If cursor was positioned at outer half, it will be moved to dock state and to document state when it placed at inner half. User can easily differentiate it with the help of DockPreview.
 
 {% tabs %}
 
@@ -642,7 +642,7 @@ Document window creation at left side:
 
 N> These functionalities will effect only when `IsVs2010DraggingEnabled` property of DockingManager is true.
 
-### Disable TabGroups
+## Disable TabGroups
 
 Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property `TabGroupEnabled` in DockingManager. 
  
