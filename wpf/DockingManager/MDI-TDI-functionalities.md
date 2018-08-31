@@ -529,7 +529,11 @@ DockingManager.SetShowCloseAllButThisMenuItem(Item2, false);
 
 TDI document can be grouped like VisualStudio. It can be grouped by drag and Drop and also using the options in context menu items.
 
-### Creating Vertical Tab Group 
+### Creating TabGroup using ContextMenu option
+
+In DockingManager, new tab group can be created at horizontal or vertical side in the document area using `ContextMenu` option.
+
+#### Creating Vertical Tab Group 
 
 To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method `CreateVerticalTabGroup(UIElement)` of the DocumentContainer.
 
@@ -549,7 +553,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateVerticalTabGroup(
 
 {% endtabs %}
 
-### Creating Horizontal Tab Group 
+#### Creating Horizontal Tab Group 
 
 To create a horizontal tab group in the Tabbed document, select the "New Horizontal Tab Group context menu item and also it can be created programmatically by calling the method `CreateHorizontalTabGroup(UIElement)` of the DocumentContainer.
 
@@ -569,7 +573,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateHorizontalTabGrou
 
 {% endtabs %}
 
-### Adding Tab in a Group 
+#### Adding Tab in a Group 
 
 In TDI document, new tab group can be created by dragging the TabItem into the Document area and click the "New Tab Group" menu item from context menu item.
 
@@ -578,6 +582,65 @@ In TDI document, new tab group can be created by dragging the TabItem into the D
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
 
+### Creating TabGroup through mouse interaction without using ContextMenu option
+
+In DockingManager, new tab group can be created at top, left, right and bottom side in the document area through mouse interaction. To enable this functionalities in DockingManager, the `TabSwitchSection` property should be set as `ActiveFiles` for document items and `ActiveToolWindows` for dock items.
+
+#### ActiveFiles mode
+
+When setting the TabSwitchSection as `ActiveFiles` for document panel, dock ability has been restricted and it always placed as a document window whenever it drag and drop.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" IsVS2010DraggingEnabled="True">  
+
+<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>   
+
+<ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Item2" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/> 
+
+<ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Item3" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
+
+#### ActiveToolWindows mode
+
+When setting the TabSwitchSection as ActiveToolWindows for Dock Panel. It can be docked in the Top, Bottom, Right and Left as a Dock or Document Window when drag and drop it on the TDI Manager based on the position of the window placed in the DragProvider. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" IsVS2010DraggingEnabled="True">    
+
+<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>   
+
+<ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Item2" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/> 
+
+<ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Item3" syncfusion:DockingManager.DesiredWidthInDockedMode="200" syncfusion:DockingManager.DesiredHeightInDockedMode="50" syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.TabSwitchSection="ActiveToolWindows"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Dock window creation at left side:
+
+![](MDI_TDIfunctionalities_images/DockWindowCreation_Left.png)
+
+Document window creation at left side:
+
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Left.png)
+
+N> These functionalities will effect only when `IsVs2010DraggingEnabled` property of DockingManager is true.
 
 ### Disable TabGroups
 
