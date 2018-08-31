@@ -9,12 +9,12 @@ documentation: ug
 
 # Storing and Retrieving Report as Stream
 
-The OLAP Client allows the user to store the current session as a stream anywhere and also the user can load the saved stream to populate the controls. By this, the OLAP Client can be used as OLAP Report Creator and OLAP ReportViewer where a user can create a report set and push it to the server and the user can view the reports.
+The OLAP client allows users to store the current session as a stream anywhere and load the saved stream to populate the controls. By this, the OLAP client can be used as an OLAP report creator and OLAP report viewer, where a user can create a report set and push it to the server. The user can also view the reports.
 
-The following code describes getting the report as stream:
+The following code describes getting the report as stream.
 
 {% tabs %}
-{% highlight C# %}   
+{% highlight C# %}
 
 
 
@@ -36,7 +36,7 @@ Dim stream As Stream = Me.olapClient1.GetReportStream()
 {% endtabs %}
 
 
-The following code will illustrate how to load a stream to OLAP Client: 
+The following code illustrates how to load a stream to OLAP client.
 
 {% tabs %}
 {% highlight C# %}  
@@ -62,9 +62,9 @@ Me.olapClient1.LoadReportStream(reportStream)
 {% endtabs %}
 
 
-The following sample code describes the storing of the stream in database and retrieving the report as stream from the database and loading the Stream to OLAP Client.
+The following sample code describes storing of stream in the database, retrieving a report as stream from the database, and loading the stream to the OLAP client.
 
-Storing Report as a Stream to the database:
+The following code illustrates storing report as a stream to the database.
 
 {% tabs %}
 {% highlight C# %}  
@@ -257,7 +257,7 @@ con.Close()
 
 
 
-Samples which demonstrate this feature is available in the following sample installation location.
+Samples that demonstrate this feature is available in the following sample installation location.
 
 &lt;Install Location&gt;\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapClient.WPF\Samples\OLAP Client\
 

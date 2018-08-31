@@ -9,9 +9,9 @@ documentation: ug
 
 # Report Serialization
 
-This feature allows the user to store the current session as a stream anywhere and also user can load the saved stream back to populate the OlapClient control.
+This feature allows users to store the current session as a stream anywhere and load the saved stream back to populate the OLAP client control.
 
-The following code sample describes to get the report as stream.
+The following code sample describes getting the report as stream.
 
 {% tabs %}
 
@@ -29,7 +29,7 @@ Dim stream As Stream = Me.olapClient1.GetReportStream()
 
 {% endtabs %}
 
-The following code sample illustrates to load the report which is in stream type to OlapClient. 
+The following code sample illustrates loading the report which is in stream type to OLAP client.
 
 {% tabs %}
 
@@ -47,12 +47,12 @@ Me.olapClient1.LoadReportStream(reportStream)
  
 {% endtabs %}
 
-The following code sample describes 
+The following code sample describes
 
  * storing of the report as stream in database and 
- * retrieving the report as stream from the database and loading it back to OlapClient.
+ * retrieving the report as stream from the database and loading it back to OLAP client.
 
-**STORING REPORT AS STREAM IN DATABASE**
+**Storing report as stream in database**
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ End If
 
 {% endtabs %}
 
-**LOADING REPORT AS STREAM FROM DATABASE**
+**Loading report as stream from database**
 
 {% tabs %}
 
@@ -149,6 +149,6 @@ con.Close()
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapClient.WPF\Samples\Serialization\Report Serialization

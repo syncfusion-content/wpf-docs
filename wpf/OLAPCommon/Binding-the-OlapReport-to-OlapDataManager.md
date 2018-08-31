@@ -9,9 +9,9 @@ documentation: ug
 
 # Binding the OLAP Report to OLAP Data Manager
 
-Once the report is created, the report is set to the current report property of the OlapDataManager. Further data processing, query creation and cell set creation starts from the OlapDataManager.
+After creating the report, it is set to the current report property of the OLAP data manager. Further, data processing, query creation, and cell set creation are started from the OLAP data manager.
 
-Binding the OlapReport in OlapDataManager.
+Binding the OLAP report to the OLAP data manager.
 
 
 
