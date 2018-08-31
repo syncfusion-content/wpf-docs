@@ -9,9 +9,9 @@ documentation: ug
 
 # Data Binding
 
-## Binding OlapGauge to Offline cube
+## Binding an OLAP gauge to offline cube
 
-To connect an OLAP cube available in the local machine, the physical path of the cube should be specified in the connection string. The following code snippet illustrates the same.
+To connect to an OLAP cube available in the local machine, the physical path of the cube should be specified in the connection string. The following code snippet illustrates the same.
 
 {% highlight c# %}
 
@@ -20,11 +20,11 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-## Binding OlapGauge to cube in local SQL server
+## Binding OLAP gauge to cube in local SQL Server
 
-To connect an OLAP cube available in SQL server Analysis Service in local machine, the server name and database name should be specified in the connection string. The following code example illustrates the same.
+To connect to the OLAP cube available in SQL Server Analysis Service in the local machine, the server name and database name should be specified in the connection string. The following code example illustrates the same.
 
-N> If any credentials are maintained to connect the cube, then the “User ID” and “Password” attributes should also be mentioned accordingly.
+N> If any credentials are maintained to connect the cube, then the user ID and password attributes should be mentioned accordingly.
 
 {% tabs %}
 
@@ -44,11 +44,11 @@ Dim DataManager As New OlapDataManager(connectionString)
 
 {% endtabs %}
 
-## Binding OlapGauge to cube in online SQL server
+## Binding OLAP gauge to cube in online SQL Server
 
-To connect an OLAP cube available in SQL server Analysis Service in online server through **XML/A**, host server link and database name should be specified in the connection string. The following code example illustrates the same.
+To connect to the OLAP cube available in SQL server Analysis Service in the online server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
 
-N> If any credentials are maintained to connect the cube, then the “User ID” and “Password” attributes should also be mentioned accordingly.
+N> If any credentials are maintained to connect the cube, then the user ID and password attributes should be mentioned accordingly.
 
 {% tabs %}
 
@@ -68,11 +68,11 @@ Dim DataManager As New OlapDataManager(connectionString)
 
 {% endtabs %}
 
-## Binding OlapGauge to cube in online Mondrian server
+## Binding OLAP gauge to cube in online Mondrian server
 
-To connect an OLAP cube available in Mondrian server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
+To connect to the OLAP cube available in Mondrian server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
 
-N> If any credentials are maintained to connect the cube, then the “User ID” and “Password” attributes should also be mentioned accordingly.
+N> If any credentials are maintained to connect the cube, then the user ID and password attributes should be mentioned accordingly.
 
 {% tabs %}
 
@@ -94,11 +94,11 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endtabs %}
 
-## Binding OlapGauge to cube in online ActivePivot server
+## Binding OLAP gauge to cube in online ActivePivot Server
 
-To connect an OLAP cube available in ActivePivot server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
+To connect to the OLAP cube available in ActivePivot server through **XML/A**, the host server link and database name should be specified in the connection string. The following code example illustrates the same.
 
-N> If any credentials are maintained to connect the cube, then the “User ID” and “Password” attributes should also be mentioned accordingly.
+N> If any credentials are maintained to connect the cube, then the user ID and password attributes should be mentioned accordingly.
 
 {% tabs %}
 

@@ -9,15 +9,15 @@ documentation: ug
 
 # Localization of string resource
 
-Localization deals with customizing data and resources for specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by OlapClient control.
+Localization deals with customizing data and resources for specific culture or language. The built-in localization and globalization mechanism in WPF allows you to localize any string resource used by the OLAP client control.
 
-We need to create and place the resource files in a separate location inside in the user application. Then we can access to the culture specific resources from the current application assembly.
+You can create and place the resource files in a separate location in the user application. Then, you can access the culture specific resources from the current application assembly.
 
-For this, first create a resource file for our OlapClient control and translate the strings to your culture. Basically, OlapClient contains control assemblies such as OlapChart.WPF, OlapGrid.WPF and Tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize the necessary strings available in those assemblies as well. Once it is translated, you might use the resources in your projects by setting corresponding culture in your application.
+For this, first create a resource file for our OLAP client control and translate the strings to your culture. Basically, the OLAP client contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and Tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize the necessary strings available in those assemblies. Once it is translated, you might use the resources in your projects by setting the corresponding culture in your application.
 
 ![](Localization_images/Localization_img1.png)
 
-Please refer the below code sample.
+Refer to the following code sample.
 
 {% tabs %}
 
@@ -42,9 +42,9 @@ End Sub
  
 {% endtabs %}
  
-## RTL Support
+## RTL support
 
-RTL support for OlapClient is used to display the content from right to left by setting the "FlowDirection" property to "RightToLeft". The following code sample explains how to set this property.
+RTL support for OLAP client is used to display the content from right to left by setting the `FlowDirection` property to "RightToLeft". The following code sample explains how to set this property.
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ Me.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 ![](Localization_images/Localization_img2.png)
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapClient.WPF\Samples\Localization\Localization
 
