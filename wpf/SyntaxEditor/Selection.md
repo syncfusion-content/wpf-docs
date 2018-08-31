@@ -81,6 +81,6 @@ User can extend the selection by dragging the selection pointers. The following 
 
 ![](Selection-Images/selection-img2.jpeg)
 
-When selection goes beyond viewport of EditControl, scrollviewer will be automatically bring new contents to the view and text selection will happen to those contents.
+When selection goes beyond viewport of EditControl, ScrollViewer will be automatically bring new contents to the view and text selection will happen to those contents.
 
 
