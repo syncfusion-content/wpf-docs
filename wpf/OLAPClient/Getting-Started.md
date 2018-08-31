@@ -10,19 +10,19 @@ documentation: ug
 # Getting Started
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use the components.
 
-This section covers the information required to create a simple OlapClient bound to OLAP data source.
+This section covers the information required to create a simple OLAP client bound to the OLAP data source.
 
 ## Through Visual Studio
 
-Open the Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
+Open the Visual Studio IDE and navigate to File > New > Project > WPF application (inside Visual C# templates) to create a new WPF application.
 
-Once the WPF application is created, go to View menu and select Toolbox option. Now the Toolbox will appear inside Visual Studio IDE. From the Visual Studio Toolbox, drag and drop the OlapClient under **Syncfusion BI WPF** tag. It will automatically add the required assemblies into the application. 
+After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. From the Visual Studio Toolbox, drag the OLAP client under the **Syncfusion BI WPF** tag. It will automatically add the required assemblies to the application.
    
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-Add a **Name** to the OlapClient component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP client component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -38,7 +38,7 @@ Add a **Name** to the OlapClient component for accessing it through code-behind 
 		
 {% endhighlight %}
 
-Include the following namespace in the code-behind for using OlapDataManger in the application. The **OlapDataManager** class contains the connection details, current report, cube name, cube schema and PivotEngine for rendering the OlapClient control.
+Include the following namespace in the code-behind for using OlapDataManger in the application. The **OlapDataManager** class contains the connection details, current report, cube name, cube schema, and pivot engine for rendering the OLAP client control.
 
    * Syncfusion.Olap.Manager
 
@@ -90,15 +90,15 @@ End Namespace
 
 {% endtabs %}		
  
-Run the application and the following output will be generated.
+Run the application. The following output will be generated.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-## Through Expression Blend
+## Through expression blend
 
-Open Blend for Visual Studio and navigate to File > New project > WPF > WPF Application to create a new WPF application.
+Open Blend for Visual Studio and navigate to File > New project > WPF > WPF application to create a new WPF application.
 
-Select the **Project** tab available in the left corner of the Blend IDE, right click on the **References** and select **Add Reference**. Now browse and add the following Syncfusion assemblies to the project.
+Select the **Project** tab available in the left-corner of the Blend IDE, right-click the **References** and select **Add Reference**. Now, browse and add the following Syncfusion assemblies to the project.
 
 * Syncfusion.Grid.Wpf
 * Syncfusion.Olap.Base
@@ -110,13 +110,13 @@ Select the **Project** tab available in the left corner of the Blend IDE, right 
 * Syncfusion.OlapShared.Wpf
 * Syncfusion.OlapTools.Wpf
 
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
+N> You can also get the assemblies by browsing to the default assembly location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;\
 
-On adding the above assemblies, the OlapClient control will be added under the **Assets** tab automatically. Now choose the **Assets** tab, drag and drop the OlapClient to the designer.
+On adding the above assemblies, the OLAP client control will be added under the **Assets** tab automatically. Now, choose the **Assets** tab and drag the OLAP client to the designer.
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-Add a **Name** to the OlapClient component for accessing it through code-behind as shown in the following code sample.
+Add a **Name** to the OLAP client component for accessing it through code-behind as shown in the following code sample.
 
 {% highlight xaml %}
 
@@ -185,15 +185,15 @@ End Namespace
 
 {% endtabs %}
 
-Run the application and the following output will be generated.
+Run the application. The following output will be generated.
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-## Through Code-Behind
+## Through code-behind
 
-Open the Visual Studio IDE and navigate to File > New > Project > WPF Application (inside Visual C# Templates) to create a new WPF application.
+Open the Visual Studio IDE and go to File > New > Project > WPF application (inside Visual C# Templates) to create a new WPF application.
 
-To add the dependency assemblies within the application, right-click on **References** and select **Add Reference**. Then add the following Syncfusion assemblies manually to the project from the installed location.
+To add the dependency assemblies within the application, right-click the **References** and select **Add Reference**. Then, add the following Syncfusion assemblies manually to the project from the installed location.
 
 * Syncfusion.Chart.WPF
 * Syncfusion.Shared.WPF
@@ -209,9 +209,9 @@ To add the dependency assemblies within the application, right-click on **Refere
 * Syncfusion.OlapTools.WPF
 * Syncfusion.Tools.WPF
 
-N> You can also get the assemblies by browsing to the Default Assembly Location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;{framework version&gt;\
+N> You can also get the assemblies by browsing to the default assembly location {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;{framework version&gt;\
 
-Include the following namespaces in code-behind for using OlapClient and OlapDataManger in the application.
+Include the following namespaces in code-behind for using OLAP client and OlapDataManger in the application.
 
 * Syncfusion.Olap.Manager
 * Syncfusion.Windows.Client.Olap
@@ -272,6 +272,6 @@ End Namespace
 
 {% endtabs %}
    
-Run the application and the following output will be generated.
+Run the application. The following output will be generated.
 
 ![](Getting-Started_images/Getting-Started_img5.png)

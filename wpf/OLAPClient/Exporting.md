@@ -9,26 +9,20 @@ documentation: ug
 
 # Exporting OLAP Chart and OLAP Grid to various forms
 
-When creating OlapReport in OlapClient, the report will be visualized in OlapChart and OlapGrid. OlapClient has the option to export the current view of the OlapChart and OlapGrid to various forms.
+When creating an OLAP report in the OLAP client, the report will be visualized in the OLAP chart and OLAP grid. The OLAP client has an option to export the current view of the OLAP chart and OLAP grid to various forms.
 
-## Exporting OlapChart
+## Exporting OLAP chart
 
-The current view of the OlapChart can be exported to the following forms:
+The current view of the OLAP chart can be exported to Microsoft Word, PDF, and image and printed as well.
 
-* Word
-* PDF
-* Image
+You can perform these exports in two ways:
 
-and it can be printed as well.
+* Through OLAP chart toolbar.
+* Through API's.
 
-The user can perform these exports in two ways:
+### Through OLAP chart toolbar menu
 
-1. Through OlapChart Toolbar
-2. Through API's
-
-### Through OlapChart Toolbar menu
-
-By clicking the respective icons in the OlapChart toolbar, the user can export the OlapChart to the corresponding mode.
+By clicking the respective icons in the OLAP chart toolbar, You can export the OLAP chart to the corresponding mode.
 
 ![](Exporting_images/Exporting_img1.png)
 
@@ -44,7 +38,7 @@ Description</th></tr>
 
 </td><td>
 Export to Image</td><td>
-Export the current view of the OlapChart as Image</td></tr>
+Export the current view of the OLAP chart as image</td></tr>
 
 <tr>
 <td>
@@ -52,14 +46,14 @@ Export the current view of the OlapChart as Image</td></tr>
 
 </td><td>
 Export to Word</td><td>
-Export the current view of the OlapChart to Word document</td></tr>
+Export the current view of the OLAP chart to a Word document.</td></tr>
 <tr>
 <td>
 {{ '![](Exporting_images/Exporting_img5.png)' | markdownify }}
 
 </td><td>
 Export to PDF</td><td>
-Export the current view of the OlapChart to PDF</td></tr>
+Export the current view of the OLAP chart to PDF.</td></tr>
 
 <tr>
 <td>
@@ -67,14 +61,14 @@ Export the current view of the OlapChart to PDF</td></tr>
 
 </td><td>
 Print</td><td>
-Print the current view of the OlapChart</td></tr>
+Print the current view of the OLAP chart.</td></tr>
 </table> 
 
 ### Through API
 
-User can achieve the Export feature of OlapChart by using the following API's. The following code sample illustrates to Export the OlapChart into corresponding format,
+You can achieve the export feature of OLAP chart by using the following API's. The following code sample illustrates exporting the OLAP chart into corresponding format.
 
-#### Word Export
+#### Word export
 
 {% tabs %}
 
@@ -111,7 +105,7 @@ End If
 
 {% endtabs %}
 
-#### PDF Export
+#### PDF export
 
 {% tabs %}
 
@@ -148,7 +142,7 @@ End If
 
 {% endtabs %}
 
-#### Image Export
+#### Image export
 
 {% tabs %}
 
@@ -209,23 +203,23 @@ End If
 
 {% endtabs %}
 
-## Exporting OlapGrid
+## Exporting OLAP grid
 
-The current view of the OlapGrid can be exported to the following forms:
+The current view of the OLAP grid can be exported to the following forms:
 
-* Word
+* Microsoft Word
 * PDF
-* Excel 
+* Microsoft Excel
 * CSV
 
 The user can perform these exports in two ways:
 
-1. Through OlapGrid Toolbar
-2. Through API's
+1. Through OLAP grid toolbar.
+2. Through API's.
 
-### Through OlapGrid Toolbar menu
+### Through OLAP grid toolbar menu
 
-By clicking the respective Export buttons in the OlapGrid toolbar, the user can export OlapGrid to the corresponding format.
+By clicking the respective export buttons in the OLAP grid toolbar, the user can export OLAP grid to the corresponding format.
 
 ![](Exporting_images/Exporting_img6.png)
 
@@ -241,33 +235,33 @@ Description</th></tr>
 
 </td><td>
 Export to Excel</td><td>
-Export the OlapGrid to Excel document.</td></tr>
+Export the OLAP grid to an Excel document.</td></tr>
 <tr>
 <td>
 {{ '![](Exporting_images/Exporting_img8.png)' | markdownify }}
 
 </td><td>
 Export to Word</td><td>
-Export the OlapGrid to Word document.</td></tr>
+Export the OLAP grid to a Word document.</td></tr>
 <tr>
 <td> 
 {{ '![](Exporting_images/Exporting_img9.png)' | markdownify }}
 
 </td><td>
 Export to PDF</td><td>
-Export the OlapGrid to PDF document.</td></tr>
+Export the OLAP grid to a PDF document.</td></tr>
 <tr>
 <td>
 {{ '![](Exporting_images/Exporting_img10.png)' | markdownify }}
 
 </td><td>
 Export to CSV</td><td>
-Export the OlapGrid to CSV document.</td></tr>
+Export the OLAP grid to a CSV document.</td></tr>
 </table> 
 
 ### Through API
 
-User can achieve the Export feature of OlapGrid by using the following API's. The following code sample illustrates to Export the OlapGrid into corresponding format,
+You can achieve the export feature of OLAP grid by using the following API's. The following code sample illustrates exporting the OLAP grid into corresponding format.
 
 #### Excel export
 
@@ -306,7 +300,7 @@ End If
 
 {% endtabs %}
 
-#### Word Export
+#### Word export
 
 {% tabs %}
 
@@ -343,7 +337,7 @@ End If
 
 {% endtabs %}
 
-#### PDF Export
+#### PDF export
 
 {% tabs %}
 
@@ -380,7 +374,7 @@ End If
 
 {% endtabs %}
 
-#### CSV Export
+#### CSV export
 
 {% tabs %}
 
