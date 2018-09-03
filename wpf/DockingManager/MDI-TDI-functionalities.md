@@ -584,11 +584,11 @@ In TDI document, new tab group can be created by dragging the TabItem into the D
 
 ## TabGroup creation through mouse interaction 
 
-In DockingManager, new tab group can be created at top, left, right and bottom side in the document area through mouse interaction. To enable this functionalities in DockingManager, the `TabSwitchSection` property should be set as `ActiveFiles` for document items and `ActiveToolWindows` for dock items.
+In the docking manager, a new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. To enable this functionality, set the TabSwitchSection attached property as ActiveFiles for document items, and ActiveToolWindows for dock items.
 
 ### ActiveFiles mode
 
-DockAbility of document items can be restricted by setting TabSwitchSection property as `ActiveFiles`.  Also, user can create TabGroup at desired position in the document area with the help of drag provider like VisualStudio.
+Moving document items to a docked state can be restricted by setting the TabSwitchSection attached property as ActiveFiles. Users can also create a tab group at a side in the document area with the help of a drag provider similar to the one in Visual Studio.
 
 {% tabs %}
 
@@ -608,11 +608,15 @@ DockAbility of document items can be restricted by setting TabSwitchSection prop
 
 {% endtabs %}
 
+The following screenshot shows a tab group being created at the top of the document area.
+
 ![](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
+
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
 
 ### ActiveToolWindows mode
 
-Dock window can be moved to both dock and document state in the document area by setting TabSwitchSection property as `ActiveToolWindows`. It can be achieved with the help of drag provider based on its cursor position at respective side. If cursor was positioned at outer half, it will be moved to dock state and to document state when it placed at inner half. User can easily differentiate it with the help of DockPreview.
+Dock items can be moved to both docked and document states in the document area by setting the TabSwitchSection attached property to ActiveToolWindows, which turns on the active tool windows mode. This mode enables a drag provider that will appear based on the cursor position near the sides of an item. If the cursor is positioned at the outer half of the docking hints, the item will move to the docked state. If the cursor is at the inner half, the item will move to the document state. 
 
 {% tabs %}
 
@@ -632,15 +636,19 @@ Dock window can be moved to both dock and document state in the document area by
 
 {% endtabs %}
 
-Dock window creation at left side:
+The following screenshot shows moving an item to a docked state at the right side of the document area.
 
-![](MDI_TDIfunctionalities_images/DockWindowCreation_Left.png)
+![](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
 
-Document window creation at left side:
+![](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
 
-![](MDI_TDIfunctionalities_images/TabGroupCreation_Left.png)
+The following screenshot shows moving an item to the document state at the right side of the document area.
 
-N> These functionalities will effect only when `IsVs2010DraggingEnabled` property of DockingManager is true.
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
+
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
+
+N> These functionalities will take effect only when the `IsVs2010DraggingEnabled` property of DockingManager is true.
 
 ## Disable TabGroups
 
