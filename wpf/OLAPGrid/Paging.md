@@ -9,19 +9,19 @@ documentation: ug
 
 # Paging
 
-Paging in OlapGrid provides you the support to load and render large amount of data without any performance constraint.  
+Paging in the OLAP grid supports loading and rendering large amounts of data without any performance constraints.
 
-OlapPager (User Control) is included and bound with the OlapDataManager object of the respective OlapGrid. To enable paging, set the **EnablePaging** property to true.
+The OLAP pager (user control) is included and bound with the OlapDataManager object of the respective OLAP grid. To enable paging, set the `EnablePaging` property to true.
 
-When you process large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by using the UI options in OlapPager. You can also change the page size and other pager settings at run-time by using **PageSetting** window.
+When you process a large cell set, it is split into several segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options in the OLAP pager. You can also change the page size and other pager settings at runtime by using the **PageSetting** window.
 
-Include the following Syncfusion assembly from the installed location in-order to add the OlapPager (User Control) with OlapGrid.
+Include the following Syncfusion assembly from the installed location to add the OLAP pager with OLAP grid:
 
 * Syncfusion.OlapShared.Wpf
 
-N> You can also get the assemblies by browsing to the Default Assembly Location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\\{framework version}\
+N> You can also get the assemblies by browsing to the default assembly location: {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\{version number}\precompiledassemblies\\{version number}\\{framework version}\
 
-**ENABLE PAGING THROUGH XAML**
+**Enable paging through XAML**
 
 {% highlight xaml %}
 			
@@ -47,7 +47,7 @@ N> You can also get the assemblies by browsing to the Default Assembly Location:
 				
 {% endhighlight %}
 
-**ENABLE PAGING THROUGH REPORT:**
+**Enable paging through report:**
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ End Namespace
 
 ![](Paging_images/Paging_img2.png)
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Paging
 

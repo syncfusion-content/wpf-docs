@@ -9,11 +9,11 @@ documentation: ug
 
 # ToolTip
 
-OlapGrid can additionally display the member information within a tooltip when the mouse pointer is moved over the header cells or value cells of the OlapGrid control.
+The OLAP grid can additionally display the member information within a tooltip when the mouse pointer is moved over the header cells or value cells of the OLAP grid control.
 
-## Header Tooltip
+## Header tooltip
 
-OlapGrid provides drill down information through the header cell tooltip for hierarchical dimensions, enabling efficient preview of data before drilling down. It can be enabled using the following property of OlapGrid.
+The OLAP grid provides drill-down information through the header cell tooltip for hierarchical dimensions by enabling efficient preview of data before drilling down. It can be enabled using the following property of the OLAP grid.
 
 {% tabs %}
   
@@ -35,9 +35,9 @@ Me.OlapGrid1.ShowHeaderCellsToolTip = True
 
 ![](ToolTip_images/ToolTip_img1.png)
 
-## Value Cell Tooltip
+## Value cell tooltip
 
-OlapGrid provides cell information (Measure, Column Header, Row Header and Value Cell) when the mouse pointer is hovered on the value cells. It can be enabled using the following property of OlapGrid.
+The OLAP grid provides cell information (measure, column header, row header, and value cell) when the mouse pointer is hovered over the value cells. This can be enabled using the following property of the OLAP grid.
 
 {% tabs %}
   

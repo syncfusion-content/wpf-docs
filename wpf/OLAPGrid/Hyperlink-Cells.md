@@ -9,16 +9,16 @@ documentation: ug
 
 # Hyperlink Cells
 
-OlapGrid allows hyperlinking of cells to retrieve a detailed information about a particular cell. OlapGrid generates a separate event called **"LinkClick"** for the clicked hyperlink cell and the **"LinkLabelClickEventHander"** will return the clicked OlapGridCellInfo.
+The OLAP grid allows hyperlinking of cells to retrieve a detailed information about a particular cell. The OLAP grid generates a separate event called **"LinkClick"** for the clicked hyperlink cell and the **"LinkLabelClickEventHander"** will return the clicked OlapGridCellInfo.
 
-Hyperlink cell’s property can be applied to the following regions:
+The hyperlink cell’s property can be applied to the following regions:
 
-* Column Header 
-* Row Header 
-* Value Cell 
-* Summary Cell
+* Column header
+* Row header
+* Value cell
+* Summary cell
 
-It is possible to enable or disable the hyperlink options separately for all row header, column header, summary header and value cells through the **"IsHyperlinkCell"** property. Please refer the below code sample.
+It is possible to enable or disable the hyperlink options separately for all row header, column header, summary header, and value cells through the `IsHyperlinkCell` property. Refer to the following code sample.
 
 {% tabs %}
 
@@ -104,7 +104,7 @@ End Sub
 
 ![](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Appearance\Hyperlink Cell 
 

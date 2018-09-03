@@ -9,13 +9,13 @@ documentation: ug
 
 # Exporting
 
-The OlapGrid can be exported to Excel, Word, PDF and CSV file formats. In-order to perform exporting operation add the following assembly along with the default assemblies in the reference folder.
+The OLAP grid can be exported to Microsoft Excel, Microsoft Word, PDF, and CSV file formats. To perform exporting operation, add the following assembly along with default assemblies in the reference folder.
 
 * Syncfusion.OlapGridConverter.Wpf 
  
-The OlapGrid can be exported using the following methods.
+The OLAP grid can be exported using the following methods.
 
-**Excel Export**
+**Excel export**
  
 {% tabs %}
   
@@ -59,7 +59,7 @@ End If
 
 ![Excel Export](Exporting_images/Export_img1.png)
 
-**Word Export**
+**Word export**
 
 {% tabs %}
   
@@ -103,7 +103,7 @@ End If
 
 ![Word Export](Exporting_images/Export_img2.png)
 
-**PDF Export**
+**PDF export**
 
 {% tabs %}
  
@@ -148,7 +148,7 @@ End If
 
 ![](Exporting_images/Export_img3.png)
 
-**CSV Export**
+**CSV export**
 
 {% tabs %}
   
@@ -192,6 +192,6 @@ End If
 
 ![](Exporting_images/Export_img4.png)
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid

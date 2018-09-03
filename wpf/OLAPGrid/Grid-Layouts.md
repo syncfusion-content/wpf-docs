@@ -9,19 +9,19 @@ documentation: ug
 
 # Layouts
 
-The position of summary cells in OlapGrid can be customized with the help of Grid layouts. It can be either positioned at the top or bottom of each parent member. 
+The position of summary cells in the OLAP grid can be customized with the help of grid layouts. It can be positioned at the top or bottom of each parent member.
 
-The following are the five different kinds of layouts supported by OlapGrid:
+The following are the five different types of layouts supported by the OLAP grid:
 
-* Normal Layout
-* Excel Like Layout
-* Excel Like Layout with Member Properties
-* Normal Top Summary and
-* No Summaries Layout
+* Normal layout.
+* Excel-like layout.
+* Excel-like layout with member properties.
+* Normal top summary.
+* No summaries layout.
 
-**Normal Layout**
+**Normal layout**
 
-Normal Layout is the default layout of OlapGrid in which the summary cells are positioned at the bottom of each parent member and the child member appears adjacent to it.
+Normal layout is the default layout of OLAP grid. In normal layout, the summary cells are positioned at the bottom of each parent member and the child members are positioned adjacent to it.
 
 {% tabs %}
   
@@ -43,9 +43,9 @@ Me.OlapGrid1.Layout = GridLayout.Normal
 
 ![](Grid-Layouts_images/Grid-Layouts_img1.png)
 
-**Excel Like Layout**
+**Excel-like layout**
 
-In the Excel-like layout, the summary cells are positioned at the bottom alone and the child members appear below the parent member with some indent space.
+In the Excel-like layout, the summary cells are positioned at the bottom alone and the child members are positioned below the parent member with some indent space.
 
 {% tabs %}
   
@@ -67,11 +67,11 @@ Me.OlapGrid1.Layout = GridLayout.ExceLikeLayout
 
 ![](Grid-Layouts_images/Grid-Layouts_img2.png)
 
-**Excel Like Layout with Member Properties**
+**Excel-like layout with member properties**
 
-This kind of layout is used to display member properties along with dimension members. The properties appear adjacent to each member.
+This layout is used to display member properties along with dimension members. These properties appear adjacent to each member.
 
-N> This layout is applicable only for member having properties defined in OLAP Cube. Those members are bound to OlapGrid through OlapReport.
+N> This layout is applicable only for members having properties defined in the OLAP cube and those members are bound to the OLAP grid through the OLAP report.
 
 {% tabs %}
   
@@ -93,9 +93,9 @@ Me.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties
 
 ![](Grid-Layouts_images/Grid-Layouts_img3.png)
 
-**Normal Top Summary Layout**
+**Normal top summary layout**
 
-In Normal Top Summary layout, the summary cells are positioned at the top of each parent member and the child member appears adjacent to it.
+In normal top summary layout, the summary cells are positioned at the top of each parent member and the child members are positioned adjacent to it.
 
 {% tabs %}
   
@@ -117,9 +117,9 @@ Me.OlapGrid1.Layout = GridLayout.NormalTopSummary
 
 ![](Grid-Layouts_images/Grid-Layouts_img4.png)
 
-**No Summaries Layout**
+**No summaries layout**
 
-In No Summaries layout, the summary cells are hidden and the child member appears adjacent to the parent member.
+In no summaries layout, the summary cells are hidden and the child members appear adjacent to the parent member.
 
 {% tabs %}
   
@@ -141,6 +141,6 @@ Me.OlapGrid1.Layout = GridLayout.NoSummaries
 
 ![](Grid-Layouts_images/Grid-Layouts_img5.png)
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Appearance\Grid Layout

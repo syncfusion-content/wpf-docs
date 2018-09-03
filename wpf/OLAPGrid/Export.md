@@ -9,9 +9,9 @@ documentation: ug
 
 # Export
 
-The OlapGrid Data can be exported to Excel, Word and PDF file formats. The OlapGrid data can be exported using the following methods of OlapGrid.
+The OLAP grid data can be exported to Microsoft Excel, Microsoft Word, and PDF file formats. This can be achieved using the following methods of the OLAP grid.
 
-## Excel Export
+## Excel export
 
 {% tabs %}
   {% highlight c# %}
@@ -51,7 +51,7 @@ Me.OlapGrid1.ExportToExcel("fileName")
 
 
 
-## Word Export
+## Word export
 
 {% tabs %}
   {% highlight c# %}
@@ -91,7 +91,7 @@ Me.OlapGrid1.ExportToWord("fileName")
 ![Word Export](Export_images/Export_img2.png)
 
 
-## PDF Export
+## PDF export
 
 {% tabs %}
   {% highlight c# %}
@@ -131,19 +131,19 @@ Me.OlapGrid1.ExportToPdf("fileName")
 ![](Export_images/Export_img3.png)
 
 
-The Format state of Grid is maintained on exported documents. 
+The format state of grid is maintained on exported documents. 
 
 
 
-### Sample Location
+### Sample location
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 ..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid Demo
 
-## CSV Export
+## CSV export
 
-OLAP Grid for WPF provides support to export itself to CSV file format. 
+The OLAP grid for WPF supports exporting itself to the CSV file format.
 
 
 ###  Methods
@@ -168,16 +168,16 @@ void</td></tr>
 <tr>
 <td>
 ExportToCsv(PivotEngine pivotEngine, string filename)</td><td>
-Gets the Pivot Engine and file name for exporting the content to CSV file format with the specified name. </td><td>
+Gets the pivot engine and file name for exporting the content to a CSV file format with the specified name. </td><td>
 pivotEngine as PivotEngine, filename as string</td><td>
 -</td><td>
 void</td></tr>
 </table>
 
 
-## Adding CSV Export for OLAP Grid in an application
+## Adding CSV export for OLAP grid in an application
 
-The GridCsvExport class provides you support for exporting data from OLAP Grid to a CSV file format. Add the following assembly along with the default assemblies in the reference folder: 
+The GridCsvExport class supports for exporting data from OLAP grid to a CSV file format. Add the following assembly along with default assemblies in the reference folder:
 
 * Syncfusion.OlapGridConverter.Wpf
 
@@ -255,7 +255,7 @@ End If
 ![](Export_images/Export_img4.png)
 
 
-### Sample Link
+### Sample link
 
 {Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapGrid.Wpf\Samples\Exporting\Exporting Demo
 
