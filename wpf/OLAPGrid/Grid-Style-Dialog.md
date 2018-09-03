@@ -7,32 +7,32 @@ control: OlapGrid
 documentation: ug
 ---
 
-# Appearance 
+# Appearance
 
-OlapGrid can be formatted by the following way:
+The OLAP grid can be formatted the following ways:
 
-* Style dialog
-* Configuring the properties of cell style
+* Style dialog.
+* Configuring the properties of cell style.
 
-## Style Dialog
+## Style dialog
 
-The OlapGrid style dialog is used to format the cells of the control. Styling can be applied to column header, row header, summary cell and value cell. The following properties of header and summary cells can be formatted:
+The OLAP grid style dialog is used to format the cells of the control. Styling can be applied to column headers, row headers, summary cells, and value cells. The following properties of headers and summary cells can be formatted:
 
-* Background Color
-* Foreground Color
-* Font Name 
-* Font Size
+* Background color
+* Foreground color
+* Font name
+* Font size
 
 The following are the properties of value cells that can be formatted:
 
-* Font Name
-* Font Style
-* Font Color
-* Font Size
+* Font name
+* Font style
+* Font color
+* Font size
 
 ![Grid Style Dialog](Grid-Style-Dialog_images/Grid-Style-Dialog_img1.png)
 
-The following code sample will launch the OlapGrid style dialog:
+The following code sample will launch the OLAP grid style dialog.
 
 {% tabs %}
   
@@ -54,15 +54,15 @@ Me.OlapGrid1.ShowStyleDialog()
 
 ## Configuring the properties of cell style
 
-The following properties lets the OlapGrid cell to be customized, so that the OlapGrid appears in a custom style rather than the default one.
+The following properties allow the OLAP grid cell to be customized, so that it appears in a custom style rather than the default one.
 
-* **Background** - Gets or sets the background color of cell.
-* **FontFamily** - Gets or sets the font family of cell.
-* **FontSize** - Gets or sets the font size of cell.
-* **FontWeight** - Gets or sets the font weigh of cell.
-* **Foreground** - Gets or sets the foreground color of cell.
+* **Background**: Gets or sets the background color of the cell.
+* **FontFamily**: Gets or sets the font family of the cell.
+* **FontSize**: Gets or sets the font size of the cell.
+* **FontWeight**: Gets or sets the font weight of the cell.
+* **Foreground**: Gets or sets the foreground color of the cell.
 
-The column, row, summary and value cells of OlapGrid can be formatted independently using the following properties.
+The column, row, summary, and value cells of OLAP grid can be formatted independently using the following properties.
 
 * ColumnHeaderStyle
 * RowHeaderStyle
@@ -96,7 +96,7 @@ Me.OlapGrid1.SummaryColumnStyle.Background = New SolidColorBrush(Color.FromRgb(2
 
 {% endtabs %}
 
-The value cell text alignment can be changed using the following property of OlapGrid,
+The value cell text alignment can be changed using the following property of the OLAP grid.
 
 {% tabs %}
 
@@ -118,7 +118,7 @@ Me.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center
 
 ![](Grid-Style-Dialog_images/Grid-Style-Dialog_img2.png)
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid
 

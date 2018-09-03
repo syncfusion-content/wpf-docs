@@ -9,7 +9,7 @@ documentation: ug
 
 # Freeze Headers
 
-OlapGrid provides built-in support to freeze the column and row headers. This is achieved by setting the **"FreezeHeaders"** property of OlapGrid to **"true"**.
+The OLAP grid provides built-in support to freeze the column and row headers. This can be achieved by setting the `FreezeHeaders` property of OLAP grid to **"true"**.
 
 {% tabs %}
   
@@ -38,7 +38,7 @@ Me.OlapGrid1.FreezeHeaders = True
 
 ![](Freeze-Headers_images/Freeze-Headers_img1.png)
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 {system drive:}\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Appearance\Frozen Header
 
