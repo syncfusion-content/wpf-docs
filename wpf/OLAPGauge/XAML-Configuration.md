@@ -9,22 +9,22 @@ documentation: ug
 
 # XAML Configuration
 
-XAML configuration is one of the important features of OlapGauge, as it helps the user to configure the control entirely through XAML by eliminating the required code in code behind.
+XAML configuration is one of the important features of the OLAP gauge, as it helps users to configure the control entirely through XAML by eliminating the required code in code behind.
 
 ## Properties
 
-* **DataSource.ConnectionString** - Specifies the connection string of the data manager.
-* **DataSource.ConnectionName** - Specifies the connection name, which is available in App.Config file of the application.
-* **DataSource.DataManagerName** - Specifies the data manager name.
-* **SharedDataManagerName** - Specifies the data manager name, which is available in shared data manager collection.
-* **ReportName** - Species the name of OlapReport.
-* **CurrentCubeName** - Specifies the current cube name of the OlapReport.
-* **CategoricalAxis** - Specifies the categorical axis of the OlapReport.
-* **SeriesAxis** - Specifies the series axis of the OlapReport.
-* **SlicerAxis** - Specifies the slicer axis of the OlapReport.
-* **CalculatedMembers** - Specifies the calculated members of the OlapReport.
+* **DataSource.ConnectionString**: Specifies the connection string of the data manager.
+* **DataSource.ConnectionName**: Specifies the connection name, which is available in the App.Config file of the application.
+* **DataSource.DataManagerName**: Specifies the data manager name.
+* **SharedDataManagerName**: Specifies the data manager name, which is available in the shared data manager collection.
+* **ReportName**: Species the name of the OLAP report.
+* **CurrentCubeName**: Specifies the current cube name of the OLAP report.
+* **CategoricalAxis**: Specifies the categorical axis of the OLAP report.
+* **SeriesAxis**: Specifies the series axis of the OLAP report.
+* **SlicerAxis**: Specifies the slicer axis of the OLAP report.
+* **CalculatedMembers**: Specifies the calculated members of the OLAP report.
 
-The following code snippet illustrates about adding an OlapReport to OlapGauge in design time:
+The following code snippet illustrates about adding an OLAP report to OLAP gauge in design time.
 
 {% tabs %}
 
@@ -52,6 +52,6 @@ The following code snippet illustrates about adding an OlapReport to OlapGauge i
 
 ![](XAML-Configuration_images/XAML-Configuration_img1.png)
 
-A demo sample is available at the following location:
+A demo sample is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGauge.WPF\Samples\Defining Reports\XAML Configuration\

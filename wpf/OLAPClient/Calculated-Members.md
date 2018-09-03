@@ -9,7 +9,7 @@ documentation: ug
 
 # Calculated Members and Measures
 
-This feature allows users to define Measures and Members as they wish using Calculated Member Editor. The Calculated Member Editor can be opened just by clicking the respective icon available in the OlapClient toolbar. The icon will be visible only on setting **IsCalculatedMembersEnabled** property to true.
+This feature allows users to define measures and members using the calculated member editor. The calculated member editor can be opened just by clicking the respective icon available in the OLAP client toolbar. The icon will be visible only by setting the `IsCalculatedMembersEnabled` property to true.
 
 ![](Calculated-Members_images/Calculated-Members_img1.png)
 
@@ -38,7 +38,7 @@ Me.olapClient1.IsCalculatedMembersEnabled = True 
 
 {% endtabs %}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapClient.WPF\Samples\Product Showcase\CalculatedMembers
 

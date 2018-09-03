@@ -9,9 +9,9 @@ documentation: ug
 
 # Drill-Through
 
-Drill-Through retrieves raw data that are used to create a specified cell in a Cube. Drill-Through action can be enable/disable using the **EnableDrillThrough** property.
+Drill-through retrieves raw data that are used to create a specified cell in a cube. You can enable or disable the drill-through action using the `EnableDrillThrough` property.
 
-The following code sample explains you on how to enable the drill-through option in your application.
+The following code sample explains how to enable the drill-through option in your application.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ Attribute Hierarchy Selector
 Grid with drill-through information
 {:.caption}
 
-A sample demo is available at the following location:
+A sample demo is available at the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapClient.WPF\Samples\Product Showcase\Drill Through
 

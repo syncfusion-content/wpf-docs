@@ -9,7 +9,7 @@ documentation: ug
 
 # OLAP Grid
 
-The OLAP grid is an easily configurable, presentation-quality business control that reads OLAP data source to create multi-dimensional views for analysing and satisfying business user needs.
+The OLAP grid is an easily configurable, presentation-quality business control that reads OLAP data source to create multi-dimensional views for analyzing and satisfying business user needs.
 
 ## Key features
 
