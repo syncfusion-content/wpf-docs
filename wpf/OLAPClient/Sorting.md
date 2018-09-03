@@ -9,12 +9,12 @@ documentation: ug
 
 # Sorting of Rows and Columns
 
-The Sorting tab in the Filtering and Sorting dialog box provides the option to sort the results by rows/columns, either in ascending or descending order.
+The sorting tab in the Filtering and Sorting dialog box provides an option to sort the results by rows or columns in ascending or descending order.
 
-* **Column Sorting** - Column sorting will sort the columns in the result set, based on the column total of each column.
-* **Row Sorting** - Row sorting will sort the rows in the result set, based on the row total of each row.
+* **Column sorting**: Sorts the columns in the result set based on the column total of each column.
+* **Row sorting**: Sorts the rows in the result set based on the row total of each row.
 
-Filtering and Sorting dialog box for rows/columns can be opened by clicking the corresponding icon in the toolbar.
+Filtering and Sorting dialog box for rows or columns can be opened by clicking the corresponding icon in the toolbar.
 
 ![](Sorting_images/Sorting_img1.png)
 
@@ -26,17 +26,17 @@ Sorting by row
 Sorting by column
 {:.caption}
 
-The following screenshot displays the Sorting tab in Filtering and Sorting dialog box.
+The following screenshot displays the sorting tab in the Filtering and Sorting dialog box.
 
 ![](Sorting_images/Sorting_img3.png)
 
-The options in the Sorting tab are as follows, 
+The options in the sorting tab are as follows:
 
-* **Sorting On**: Display the list of Measure elements to choose one to set that as the key field.
-* **Ascending or Descending**: Specify the sorting order.
-* **Preserve Hierarchy**: Sort the records without changing the hierarchy order.
+* **Sorting on**: Displays the list of measure elements to choose one to set as the key field.
+* **Ascending or descending**: Specifies the sorting order.
+* **Preserve hierarchy**: Sorts the records without changing the hierarchy order.
 
-User can toggle the visibility of the Filter and Sort buttons in the OlapClient toolbar by using the "ShowFilterSortButtons" property. 
+To toggle the visibility of the filter and sort buttons in the OLAP client toolbar, use the `ShowFilterSortButtons` property.
 
 {% tabs %} 
 

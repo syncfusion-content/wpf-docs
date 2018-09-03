@@ -9,17 +9,17 @@ documentation: ug
 
 # Toolbars
 
-Three toolbars are there in OLAP Client to provide the number of options to perform the different operations.
+There are three toolbars in the OLAP client to provide the number of options to perform the different operations.
 
-## OLAP Client Tool Bar
+## OLAP client toolbar
 
-This toolbar contains menus to invoke the particular operation of OLAP Client.
+This toolbar contains menus to invoke the particular operation of OLAP client.
 
 ![](Tool-Bar-support_images/Tool-Bar-support_img1.png)
 
 
 
-### Toolbar Table
+### Toolbar table
 
 <table>
 <tr>
@@ -35,7 +35,7 @@ Reference Link</th></tr>
 
 </td><td>
 Connection option</td><td>
-Displays the Connection option dialog to connect to the server or Offline cube</td><td>
+Displays the Connection option dialog to connect to the server or offline cube.</td><td>
 Connection option</td></tr>
 <tr>
 <td>
@@ -44,7 +44,7 @@ Connection option</td></tr>
 
 </td><td>
 New Report</td><td>
-Create a new session to create the report</td><td>
+Create a new session to create a report.</td><td>
 New Report</td></tr>
 <tr>
 <td>
@@ -53,7 +53,7 @@ New Report</td></tr>
 
 </td><td>
 Load Report</td><td>
-Load the reports from the saved XML file</td><td>
+Load the reports from the saved XML file.</td><td>
 Load Report</td></tr>
 <tr>
 <td>
@@ -62,7 +62,7 @@ Load Report</td></tr>
 
 </td><td>
 Save Report</td><td>
-Save the current session as an XML file</td><td>
+Save the current session as an XML file.</td><td>
 Save Report</td></tr>
 <tr>
 <td>
@@ -71,7 +71,7 @@ Save Report</td></tr>
 
 </td><td>
 Save As Report</td><td>
-Save a copy of the current session as an XML file</td><td>
+Save a copy of the current session as an XML file.</td><td>
 Save As Report</td></tr>
 <tr>
 <td>
@@ -80,7 +80,7 @@ Save As Report</td></tr>
 
 </td><td>
 Add Report</td><td>
-Add a new report to the current report set</td><td>
+Add a new report to the current report set.</td><td>
 Add Report</td></tr>
 <tr>
 <td>
@@ -89,7 +89,7 @@ Add Report</td></tr>
 
 </td><td>
 Remove Report</td><td>
-Remove the selected report from the current report set</td><td>
+Remove the selected report from the current report set.</td><td>
 Remove Report</td></tr>
 <tr>
 <td>
@@ -98,7 +98,7 @@ Remove Report</td></tr>
 
 </td><td>
 Rename Report</td><td>
-Rename the selected report in the current report set</td><td>
+Rename the selected report in the current report set.</td><td>
 Rename Report</td></tr>
 <tr>
 <td>
@@ -107,7 +107,7 @@ Rename Report</td></tr>
 
 </td><td>
 Report list</td><td>
-Displays the reports in the current report set</td><td>
+Displays the reports in the current report set.</td><td>
 Report list</td></tr>
 <tr>
 <td>
@@ -116,7 +116,7 @@ Report list</td></tr>
 
 </td><td>
 Toggle Pivot</td><td>
-Toggle the axis of the selected report</td><td>
+Toggle the axis of the selected report.</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -125,7 +125,7 @@ Toggle the axis of the selected report</td><td>
 
 </td><td>
 Show/Hide expanders</td><td>
-Show/Hide the expanders of the Chart and Grid control of the selected report</td><td>
+Show/hide the expanders of the chart and grid control of the selected report.</td><td>
 -</td></tr>
 <tr>
 <td>
@@ -133,8 +133,8 @@ Show/Hide the expanders of the Chart and Grid control of the selected report</td
 
 
 </td><td>
-Column Filter</td><td>
-Displays the Filter dialog window to filter the Column Elements in the selected report</td><td>
+Column filter</td><td>
+Displays the Filter dialog window to filter the column elements in the selected report.</td><td>
 Column Filter</td></tr>
 <tr>
 <td>
@@ -143,7 +143,7 @@ Column Filter</td></tr>
 
 </td><td>
 Row Filter</td><td>
-Displays the Filer dialog window to filter the Row Elements in the selected report</td><td>
+Displays the Filer dialog window to filter the row elements in the selected report.</td><td>
 Row Filter</td></tr>
 <tr>
 <td>
@@ -152,7 +152,7 @@ Row Filter</td></tr>
 
 </td><td>
 Sorting Column</td><td>
-Displays the Sorting dialog window to sort the Column Elements in the selected report</td><td>
+Displays the Sorting dialog window to sort the column elements in the selected report.</td><td>
 Sorting Column</td></tr>
 <tr>
 <td>
@@ -161,22 +161,22 @@ Sorting Column</td></tr>
 
 </td><td>
 Sorting Row</td><td>
-Displays the Sorting dialog window to sort the Row Elements in the selected report</td><td>
+Displays the Sorting dialog window to sort the row elements in the selected report.</td><td>
 Sorting Row</td></tr>
 </table> 
 
 
-## OLAP Chart Tool Bar
+## OLAP chart toolbar
 
-By using the menus in the OLAP ChartToolBar, the user can customize the appearance and style of the chart. And also the user can change the type of the chart.
+By using the menus in the OLAP chart toolbar, user can customize the appearance and style of the chart. User can also change the type of the chart.
 
 ![](Tool-Bar-support_images/Tool-Bar-support_img17.png)
 
 
 
-The following is the list of options in the OLAP Chart Tool Bar.
+The following is the list of options in the OLAP chart toolbar.
 
-### List of options in the_ _OLAP Chart Tool Bar
+### List of options in the_ _OLAP chart toolbar
 
 <table>
 <tr>
@@ -190,16 +190,16 @@ Description</th></tr>
 
 
 </td><td>
-Chart Appearance</td><td>
-Displays the Chart appearance dialog widow to change the chart appearance</td></tr>
+Chart appearance</td><td>
+Displays the chart appearance dialog window to change the chart appearance.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img19.png)' | markdownify }}
 
 
 </td><td>
-Show Legend</td><td>
-Show/Hide the legend of the chart</td></tr>
+Show legend</td><td>
+Show/hide the legend of the chart.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img20.png)' | markdownify }}
@@ -207,15 +207,15 @@ Show/Hide the legend of the chart</td></tr>
 
 </td><td>
 Chart Color Palette</td><td>
-Displays the list of Color palettes to change the current Color of the chart</td></tr>
+Displays the list of color palettes to change the current color of the chart.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img21.png)' | markdownify }}
 
 
 </td><td>
-Chart Types</td><td>
-Displays the list of chart types to change the current chart</td></tr>
+Chart types</td><td>
+Displays the list of chart types to change the current chart.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img22.png)' | markdownify }}
@@ -223,7 +223,7 @@ Displays the list of chart types to change the current chart</td></tr>
 
 </td><td>
 Export Chart</td><td>
-Exports the current visual of the chart as Image</td></tr>
+Exports the current visual of the chart as image.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img23.png)' | markdownify }}
@@ -231,7 +231,7 @@ Exports the current visual of the chart as Image</td></tr>
 
 </td><td>
 Print</td><td>
-Prints the current visual of the chart</td></tr>
+Prints the current visual of the chart.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img24.png)' | markdownify }}
@@ -239,7 +239,7 @@ Prints the current visual of the chart</td></tr>
 
 </td><td>
 Print mode</td><td>
-Used to fix the area of the chart to be printed</td></tr>
+Fixes the area of the chart to be printed.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img25.png)' | markdownify }}
@@ -247,7 +247,7 @@ Used to fix the area of the chart to be printed</td></tr>
 
 </td><td>
 Export to word</td><td>
-Export the current visual of the chart to Word</td></tr>
+Exports the current visual of the chart to Word.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img26.png)' | markdownify }}
@@ -255,21 +255,21 @@ Export the current visual of the chart to Word</td></tr>
 
 </td><td>
 Export to PDF</td><td>
-Export the current visual of the chart to PDF</td></tr>
+Exports the current visual of the chart to PDF.</td></tr>
 </table>
 
 
-## OLAP Grid Tool Bar
+## OLAP grid toolbar
 
-By using the menus in the OLAP Grid Tool Bar, the user can customize the appearance and style of the Grid.
+By using the menus in the OLAP grid toolbar, users can customize the appearance and style of the grid.
 
 ![](Tool-Bar-support_images/Tool-Bar-support_img27.png)
 
 
 
-The following are the options in the OLAP Grid Tool Bar.
+The following are the options in the OLAP grid toolbar.
 
-### List of options in the_ _OLAP Grid Tool Bar
+### List of options in the_ _OLAP grid toolbar
 
 <table>
 <tr>
@@ -284,7 +284,7 @@ Description</td></tr>
 
 </td><td>
 Grid Style</td><td>
-Displays the Grid Style Dialog to change the current style of the Grid</td></tr>
+Displays the Grid Style dialog to change the current style of the grid.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img29.png)' | markdownify }}
@@ -292,7 +292,7 @@ Displays the Grid Style Dialog to change the current style of the Grid</td></tr>
 
 </td><td>
 Show header tooltip</td><td>
-Show/Hide the Header cell tool tip.</td></tr>
+Show/hide the header cell tooltip.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img30.png)' | markdownify }}
@@ -300,23 +300,23 @@ Show/Hide the Header cell tool tip.</td></tr>
 
 </td><td>
 Show value cell tooltip</td><td>
-Show/Hide the value cell tool tip.</td></tr>
+Show/hide the value cell tooltip.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img31.png)' | markdownify }}
 
 
 </td><td>
-Freeze Headers</td><td>
-Freeze the Header cells of the Grid</td></tr>
+Freeze headers</td><td>
+Freeze the header cells of the grid.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img32.png)' | markdownify }}
 
 
 </td><td>
-Grid Layout</td><td>
-Lists different types of grid layout to change the current layout</td></tr>
+Grid layout</td><td>
+Lists different types of grid layout to change the current layout.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img33.png)' | markdownify }}
@@ -324,7 +324,7 @@ Lists different types of grid layout to change the current layout</td></tr>
 
 </td><td>
 Export to Excel</td><td>
-Export the Grid to Excel</td></tr>
+Export the grid to Excel.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img34.png)' | markdownify }}
@@ -332,7 +332,7 @@ Export the Grid to Excel</td></tr>
 
 </td><td>
 Export to word</td><td>
-Export the Grid to Word</td></tr>
+Export the grid to Word.</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img35.png)' | markdownify }}
@@ -340,38 +340,38 @@ Export the Grid to Word</td></tr>
 
 </td><td>
 Export to PDF</td><td>
-Export the Grid to PDF</td></tr>
-</table> 
+Export the grid to PDF.</td></tr>
+</table>
 
 
-## Show/Hide Toolbar Options
+## Show/hide toolbar options
 
-It allows you to show/hide the OLAP Client toolbar options in an application.
+It allows you to show/hide the OLAP client toolbar options in an application.
 
 
 ### Properties
 
-* **ShowConnectOptionButton** - Gets or sets a value indicating whether to show/hide Connection option.
-* **ShowNewReportButton** - Gets or sets a value indicating whether to show/hide New Report option.
-* **ShowAddReportButton** - Gets or sets a value indicating whether to show/hide Add Report option. 
-* **ShowLoadReportButton** - Gets or sets a value indicating whether to show/hide Load Report option.
-* **ShowSaveReportButton** - Gets or sets a value indicating whether to show/hide Save Report option. 
-* **ShowSaveAsReportButton** - Gets or sets a value indicating whether to show/hide SaveAs Report option.
-* **ShowRemoveReportButton** - Gets or sets a value indicating whether to show/hide Remove Report option.
-* **ShowRenameReportButton** - Gets or sets a value indicating whether to show/hide Rename Report option.
-* **ShowToggleButton** - Gets or sets a value indicating whether to show/hide Toggle Report option.
-* **ShowExpandersButton** - Gets or sets a value indicating whether to show/hide Expanders option.
-* **ShowFilterColumnButton** - Gets or sets a value indicating whether to show/hide Filter column option.
-* **ShowFilterRowButton** - Gets or sets a value indicating whether to show/hide Filter row option.
-* **ShowSortingColumnButton** - Gets or sets a value indicating whether to show/hide Sorting column option.
-* **ShowSortingRowButton** - Gets or sets a value indicating whether to show/hide Sorting row option.
-* **ShowReportList** - Gets or sets a value indicating whether to show/hide Report List option.
-* **ShowMdxButton** - Gets or sets a value indicating whether to show/hide MDX query dialog option.
-* **IsVirtualKpiEnabled** - Gets or sets a value indicating whether to show/hide Virtual KPI option.
-* **IsCalculatedMembersEnabled** - Gets or sets a value indicating whether to show/hide Calculated Members option.
+* **ShowConnectOptionButton**: Gets or sets a value indicating whether to show/hide a connection option.
+* **ShowNewReportButton**: Gets or sets a value indicating whether to show/hide a new report option.
+* **ShowAddReportButton**: Gets or sets a value indicating whether to show/hide an add report option. 
+* **ShowLoadReportButton**: Gets or sets a value indicating whether to show/hide a load report option.
+* **ShowSaveReportButton**: Gets or sets a value indicating whether to show/hide a save report option.
+* **ShowSaveAsReportButton**: Gets or sets a value indicating whether to show/hide a SaveAs report option.
+* **ShowRemoveReportButton**: Gets or sets a value indicating whether to show/hide a remove report option.
+* **ShowRenameReportButton**: Gets or sets a value indicating whether to show/hide a rename report option.
+* **ShowToggleButton**: Gets or sets a value indicating whether to show/hide a toggle report option.
+* **ShowExpandersButton**: Gets or sets a value indicating whether to show/hide an expanders option.
+* **ShowFilterColumnButton**: Gets or sets a value indicating whether to show/hide a filter column option.
+* **ShowFilterRowButton**: Gets or sets a value indicating whether to show/hide a filter row option.
+* **ShowSortingColumnButton**: Gets or sets a value indicating whether to show/hide a sorting column option.
+* **ShowSortingRowButton**: Gets or sets a value indicating whether to show/hide a sorting row option.
+* **ShowReportList**: Gets or sets a value indicating whether to show/hide a report list option.
+* **ShowMdxButton**: Gets or sets a value indicating whether to show/hide an MDX query dialog option.
+* **IsVirtualKpiEnabled**: Gets or sets a value indicating whether to show/hide a virtual KPI option.
+* **IsCalculatedMembersEnabled**: Gets or sets a value indicating whether to show/hide a calculated members option.
 
 
-Adding/Removing OLAP Client toolbar options in an application
+Adding or removing an OLAP client toolbar options in an application.
 
 {% tabs %}
 {% highlight C# %}  
@@ -412,7 +412,7 @@ this.olapClient1.OlapClientToolBar.ShowConnectOptionButton = false;
 {% endtabs %}
 
 
-### Sample Link
+### Sample link
 
 {Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapClient.Wpf\Samples\Appearance\OlapClientCustomizationDemo
 
