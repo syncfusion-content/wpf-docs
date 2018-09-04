@@ -9,9 +9,9 @@ documentation: ug
 
 # Conditional Formatting
 
-Conditional formatting allows you to format the Grid cells based on a certain condition. 
+Conditional formatting allows you to format the grid cells based on a certain condition.
  
-Conditional formatting can be specified through the **"OlapGrid.ConditionalFormats"** property. This is an observable collection, into which you can add required number of formatters of type **"OlapGridDataConditionalFormat"**. Using the **"OlapGridDataConditionalFormat"** class, you can specify the filter criteria for the cells and the style to be applied for the filtered cells. Once these specifications are defined, the given styles are applied to only those cells that satisfy the condition specified. The filter criteria are specified by the **OlapGridDataConditionalFormat.Conditions** property, which is a collection of OlapGridDataCondition objects. The style for each ConditionalFormat can be specified using **OlapGridDataConditionalFormat.CellStyle** property which should be of type OlapGridCellStyle.
+Conditional formatting can be specified through the `OlapGrid.ConditionalFormats` property. This is an observable collection, into which you can add required number of formatters of type **"OlapGridDataConditionalFormat"**. Using the **"OlapGridDataConditionalFormat"** class, you can specify the filter criteria for cells and the style to be applied for filtered cells. After these specifications are defined, the given styles are applied to only those cells that satisfy the specified condition. The filter criteria are specified by the `OlapGridDataConditionalFormat.Conditions` property, which is a collection of OlapGridDataCondition objects. The style for each ConditionalFormat can be specified using the `OlapGridDataConditionalFormat.CellStyle` property which should be of OlapGridCellStyle type.
 
 The following code sample shows how to add conditional formats.
 
@@ -99,7 +99,7 @@ Me.olapgrid1.DataBind()
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img1.png)
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Appearance\Conditional Formatting
 
