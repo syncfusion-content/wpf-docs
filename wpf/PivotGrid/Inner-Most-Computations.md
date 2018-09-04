@@ -1,8 +1,8 @@
 ---
+layout: post
 title: Inner Most Computations
 description: Display grid with inner most computations
-platform: wpflayout: post
-
+platform: wpf
 control: Pivot grid
 documentation: ug
 ---
