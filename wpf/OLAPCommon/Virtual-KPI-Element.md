@@ -9,27 +9,27 @@ documentation: ug
 
 # Virtual Key Performance Indicator (KPI) Element
 
-Key performance indicators can be virtually defined during run time. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is very useful when users want to define KPIs at run time and also minimize the time necessary to create KPIs. 
+KPI can be virtually defined during runtime. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is useful when users want to define KPIs at runtime and also minimize the time necessary to create KPIs.
 
 ### Properties
 
-* **Name** - Gets or sets the name for VirtualKpiElement.
-* **KpiValueExpression** - Gets or sets the value which indicates the value expression for VirtualKpiElement.
-* **KpiGoalExpression** - Gets or sets the value which indicates the goal expression for VirtualKpiElement.
-* **KpiStatusExpression** - Gets or sets the value which indicates the status expression for VirtualKpiElement.
-* **KpiTrendExpression** - Gets or sets the value which indicates the trend expression for VirtualKpiElement.
-* **KpiTrendGraphic** - Gets or sets the name of the graphic used to represent the result of the trend expression.
-* **KpiStatusGraphic** - Gets or sets the name of the graphic used to represent the result of the status expression.
+* **Name**: Gets or sets the name for VirtualKpiElement.
+* **KpiValueExpression**: Gets or sets the value which indicates the value expression for VirtualKpiElement.
+* **KpiGoalExpression**: Gets or sets the value which indicates the goal expression for VirtualKpiElement.
+* **KpiStatusExpression**: Gets or sets the value which indicates the status expression for VirtualKpiElement.
+* **KpiTrendExpression**: Gets or sets the value which indicates the trend expression for VirtualKpiElement.
+* **KpiTrendGraphic**: Gets or sets the name of the graphic used to represent the result of the trend expression.
+* **KpiStatusGraphic**: Gets or sets the name of the graphic used to represent the result of the status expression.
 
 
-### OlapReport Class Properties
+### OlapReport class properties
 
-* **VirtualKpiElements** - Gets or sets the collection of VirtualKpiElement.
+* **VirtualKpiElements**: Gets or sets the collection of VirtualKpiElement.
 
 
-## Adding Virtual KPI Element to the OlapReport
+## Adding virtual KPI element to the OlapReport
 
-OLAP Report Definition with VirtualKpiElement
+OLAP report definition with VirtualKpiElement
 
 {% tabs %}
 {% highlight c# %}

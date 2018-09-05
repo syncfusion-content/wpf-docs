@@ -9,7 +9,7 @@ documentation: ug
 
 # OLAP Data Manager
 
-OlapDataManager is the most important class in the whole OLAP Base. All the information transfers from the control to OLAP base will happen through this class and this will retain the current state of the base objects. The connection is established in the Data provider of the OLAP Base, but the information required in establishing the connection is given to the data provider through the OlapDataManager. 
+OlapDataManager is the most important class in the whole OLAP base. All the information are transferred from the control to OLAP base through this class and this will retain the current state of the base objects. The connection is established in the data provider of the OLAP base, but the information required in establishing the connection is given to the data provider through the OlapDataManager.
 
 
 ### Constructors
@@ -32,14 +32,14 @@ Void</td><td>
 <tr>
 <td>
 OlapDataManager(string)</td><td>
-Accepts the connection string as argument and passes it to the Data Provider to establish the connection with data source.</td><td>
+Accepts the connection string as an argument and passes it to the data provider to establish the connection with data source.</td><td>
 String</td><td>
 Void</td><td>
 -</td></tr>
 <tr>
 <td>
 OlapDataManager(AdomdDataProvider)</td><td>
-Accepts the Data Provider as argument and processes the cube that is connected with the given data provider.</td><td>
+Accepts the data provider as an argument and processes the cube that is connected with the given data provider.</td><td>
 AdomdDataProvider</td><td>
 Void</td><td>
 -</td></tr>
@@ -48,7 +48,7 @@ Void</td><td>
 
 ## Establishing connection with the SSAS server
 
-The following code snippet describes establishing connection with the server:
+The following code snippet describes establishing connection with the server.
 
 {% tabs %}
 {% highlight c# %}
@@ -70,9 +70,9 @@ OlapDataManager olapDataManager = New OlapDataManager("DataSource=localhost; Ini
 
 
 
-## Establishing Connection with the SSAS server through Data Provider
+## Establishing connection with the SSAS server through data provider
 
-The following code snippet describes establishing connection with the server:
+The following code snippet describes establishing connection with the server.
 
 {% tabs %}
 {% highlight c# %}
@@ -98,7 +98,7 @@ Dim olapDataManager As OlapDataManager = New OlapDataManager(dataProvider) 
 
 ## Establishing connection with the offline cube
 
-The following code snippet describes establishing connection with the offline cube:
+The following code snippet describes establishing connection with the offline cube.
 
 {% tabs %}
 {% highlight c# %}
@@ -120,17 +120,17 @@ OlapDataManager olapDataManager = New OlapDataManager("Data Source = C:\\ Common
 {% endtabs %}
 
 
-## Establishing connection with XMLA Server:
+## Establishing connection with XMLA Server
 
-XML for Analysis (XMLA) is a standard that allows the client applications to transfer multi-dimensional or OLAP data sources, which is available in the Mondrian Server. The back and forth communication is done using the web standards – HTTP, SOAP, and XML.  The query language used is MDX, is most widely supported for reporting from multi-dimensional data stores.
-
-
-
-## Connecting to Mondrian Server 
+XML for Analysis (XMLA) is a standard that allows the client applications to transfer multi-dimensional or OLAP data sources, which is available in the Mondrian Server. The back and forth communication is done using the web standards – HTTP, SOAP, and XML. The query language used is MDX, which is most widely supported for reporting from multi-dimensional data stores.
 
 
 
-The following code illustrates how to connect to the Mondrian server:
+## Connecting to Mondrian Server
+
+
+
+The following code illustrates how to connect to the Mondrian Server.
 
 
 {% tabs %}
@@ -168,7 +168,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 ## Connecting to Active Pivot Server 
 
- The following code illustrates how to connect to Active Pivot server:
+ The following code illustrates how to connect to the Active Pivot Server.
 
  {% tabs %}
 {% highlight c# %}
@@ -205,7 +205,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 ## Connecting to SAP Business Warehouse Server 
 
- The following code illustrates how to connect to SAP Business Warehouse server:
+ The following code illustrates how to connect to the SAP Business Warehouse server.
 
  {% tabs %}
 {% highlight c# %}
@@ -242,18 +242,18 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 ###  Properties
 
-* **ConnectionString** - Used to pass the connection string to establish the connection. The user can also get the connection string using this property.
-* **CurrentCellSet** - The user can get the CellSet of their input from here.
-* **CurrentCubeName** - Used to set or get the current cube name. When set, the whole data procession will change to the specified cube name.
-* **CurrentCubeSchema** - The user can get the CubeSchema of the currently connected cube.
-* **CurrentReport** - Used to load an OlapReport or get the currently loaded report.
-* **DataProvider** - Used to set a data provider and get the existing data provider.
-* **IsCurrentReportModified** - Used to get or set the modified status of the currently loaded report.
-* **MdxQuery** - Used to pass the MDX query as input.
-* **PivotEngine** - Used to get the PivotEngine for the given input.
-* **QuerySpecification** - Used to get the MDXQuerySpecification for the given OlapReport.
-* **ReportPath** - Used to get or set the report path to store the report as an XML file.
-* **Reports** - Contains the report collection of the OlapDataManager.
+* **ConnectionString**: Passes the connection string to establish the connection. Users can also get the connection string using this property.
+* **CurrentCellSet**: Gets the CellSet of user's input from here.
+* **CurrentCubeName**: Sets or gets the current cube name. When set, the whole data procession will change to the specified cube name.
+* **CurrentCubeSchema**: Gets the CubeSchema of the currently connected cube.
+* **CurrentReport**: Loads an OlapReport or get the currently loaded report.
+* **DataProvider**: Sets a data provider and gets the existing data provider.
+* **IsCurrentReportModified**: Gets or sets the modified status of the currently loaded report.
+* **MdxQuery**: Passes the MDX query as input.
+* **PivotEngine**: Gets the pivot engine for the given input.
+* **QuerySpecification**: Gets the MDXQuerySpecification for the given OlapReport.
+* **ReportPath**: Gets or sets the report path to store the report as an XML file.
+* **Reports**: Contains the report collection of the OlapDataManager.
 
 
 ### Methods
@@ -283,7 +283,7 @@ OlapDataManager</td><td>
 <tr>
 <td>
 ExecuteCellSet</td><td>
-This is an overloaded method that can be invoked by calling or by passing the MDXQuerySpecification or by passing the MDX query as string. This method will invoke the data processing and will return the processed CellSet, which will be further formatted. </td><td>
+This is an overloaded method that can be invoked by calling or passing the MDXQuerySpecification or by passing the MDX query as a string. This method invokes the data processing and returns the processed CellSet, which will be further formatted.</td><td>
 -</td><td>
 CellSet</td><td>
 ExecuteCellSet</td></tr>
@@ -297,28 +297,28 @@ PivotEngine</td><td>
 <tr>
 <td>
 GetMDXQuery</td><td>
-This method will generate the MDX query from the MDXQuerySpecification and return the query as a string.</td><td>
+This method generates an MDX query from the MDXQuerySpecification and returns the query as a string.</td><td>
 -</td><td>
 string</td><td>
 -</td></tr>
 <tr>
 <td>
 GetReport</td><td>
-This method will return the OlapReport collection by giving the XML report file name as an input.</td><td>
+This method returns the OlapReport collection by giving the XML report file name as an input.</td><td>
 string</td><td>
 OlapReportCollection</td><td>
 -</td></tr>
 <tr>
 <td>
 GetReportAsStream</td><td>
-This method will return the current report collection along with current state of OlapDataManager as a Stream.</td><td>
+This method returns the current report collection along with current state of OlapDataManager as a stream.</td><td>
 -</td><td>
 Stream</td><td>
 GetReportAsStream</td></tr>
 <tr>
 <td>
 LoadOlapDataManager</td><td>
-Will accept the OlapReport as argument and Load the OlapDataManager with the given OlapReport.</td><td>
+Used to accept the OlapReport as an argument and loads the OlapDataManager with the given OlapReport.</td><td>
 OlapReport</td><td>
 Void</td><td>
 LoadOlapDataManager</td></tr>
@@ -332,14 +332,14 @@ Void</td><td>
 <tr>
 <td>
 LoadReportDefinitionFile</td><td>
-Used to get the XML report file as input and load the OlapDataManager with the report in that file.</td><td>
+Used to get the XML report file as an input and load the OlapDataManager with the report in that file.</td><td>
 string</td><td>
 Void</td><td>
 LoadReportDefinitionFile</td></tr>
 <tr>
 <td>
 LoadReportDefinitionFromStream</td><td>
-Used to get a stream as input and read the report from that stream and load the OlapDataManager with that report.</td><td>
+Used to get a stream as an input and read the report from that stream and load the OlapDataManager with that report.</td><td>
 Stream</td><td>
 Void</td><td>
 LoadReportDefinitionFromStream</td></tr>
@@ -360,7 +360,7 @@ Void</td><td>
 <tr>
 <td>
 RemoveReport</td><td>
-Used to get the report name as input and remove that report from report collection.</td><td>
+Used to get the report name as an input and remove that report from the report collection.</td><td>
 string</td><td>
 Void</td><td>
 RemoveReport</td></tr>
@@ -394,13 +394,13 @@ The UseWhereClauseForSlicing property facilitates the user to decide whether the
 
 ### Properties
 
-* **UseWhereClauseForSlicing** - Enables the user to decide whether the MDX Query Parser Engine should consider the ‘Where’ or ‘Select’ clause for slicing operation
+* **UseWhereClauseForSlicing**: Enables users to decide whether the MDX Query Parser Engine should consider the ‘Where’ or ‘Select’ clause for slicing operation.
 
-## Drill Through
+## Drill through
 
 This feature enables the user to drill through any value and see the data which formed the value.
 
-The following code snippet illustrates how to drill through using MDX Query in OlapDataManager:
+The following code snippet illustrates how to drill through using the MDX Query in OlapDataManager.
 
 {% tabs %}
 {% highlight c# %}

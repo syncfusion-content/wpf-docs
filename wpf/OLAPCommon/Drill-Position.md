@@ -9,11 +9,11 @@ documentation: ug
 
 # Drill Position Support for OLAP Report
 
-Drill position enables the user to drill the current position of a selected member in the OlapReport. This will exclude the drilled data of the selected member in other positions by using MDX query.
+Drill position enables users to drill the current position of the selected member in the OLAP report. This excludes the drilled data of the selected member in other positions by using the MDX query.
 
 
 
-The following code illustrates how to achieve drill position support in current report:
+The following code illustrates how to achieve drill position support in the current report.
 
 {% tabs %}
 {% highlight c# %}
