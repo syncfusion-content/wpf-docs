@@ -9,7 +9,7 @@ documentation: ug
 
 # Edit Commands
 
-Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, and so on. The built-in RoutedUICommands can be bound to the edit control by using the Command property of the external controls such as button, menu item, and so on. 
+Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, and so on. The built-in RoutedUICommands can be bound to the edit control by using the **Command property** of the external controls such as button, menu item, and so on. 
 
 <table>
 <tr>
@@ -434,4 +434,4 @@ EditCommands.SelectAll.Execute(Nothing, Me.editcontrol)
 
 {% endtabs %}
 
-N> Please find the [EditControlRoutedUICommand Sample](http://www.syncfusion.com/downloads/support/directtrac/214194/ze/EditControl_Command1758422738.zip) which uses all RoutedUICommands.
+N> This [Sample](http://www.syncfusion.com/downloads/support/directtrac/214194/ze/EditControl_Command1758422738.zip) helps to explain the use cases of RoutedUICommands. 
