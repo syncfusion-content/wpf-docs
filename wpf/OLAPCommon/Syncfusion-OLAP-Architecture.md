@@ -11,9 +11,9 @@ documentation: ug
 
 Syncfusion OLAP architecture allows you to build a full life cycle reporting solution for your enterprise. Here are the important pieces of the architecture:
 
-* OLAP Access Layer - Built on top of ADOMD.NET and provides a high level object model to let you easily define reports.
-* OLAP Controls - Chart, Grid, Gauge, Client for ASP.NET (excluding Gauge), WPF, Silverlight, ASP.NET MVC (Grid only).
-* OLAP Report Builder – RAD (Rapid Application Development) tool lets you select the dimensions you are interested in visualizing and also lets you define the appearance for the Chart and Grid.
+* OLAP access layer: Built on the top of ADOMD.NET and provides a high level object model to define the reports easily.
+* OLAP controls: Chart, grid, gauge, client for ASP.NET (excluding Gauge), WPF, silverlight, and ASP.NET MVC (grid only).
+* OLAP report builder: Rapid Application Development (RAD) tool allows you to select the dimensions you are interested in visualizing and define the appearance for the chart and grid.
 
 
 
@@ -32,11 +32,11 @@ The following screenshot shows how the Syncfusion OLAP components allow you to b
 Syncfusion OLAP Architecture
 {:.caption}
 
-## OLAP Base
+## OLAP base
 
-The OLAP Base is a class library that contains several namespaces and classes to perform data processing operations required by OLAP controls. OLAP base is the processing unit of all Syncfusion OLAP controls. From establishing the connection and retrieving the data, processing it and providing the formatted input for each control, everything is taken care by the OLAP base.
+The OLAP base is a class library that contains several namespaces and classes to perform data processing operations required by OLAP controls. OLAP base is the processing unit of all Syncfusion OLAP controls. For establishing connection and retrieving data, format the input and provide it to each control. This is controlled by the OLAP base.
 
-Syncfusion OLAP controls communicate to the OLAP cube through the OlapDataManager class available in Syncfusion.Olap.Base namespace.
+Syncfusion OLAP controls communicate to the OLAP cube through the OlapDataManager class available in the Syncfusion.Olap.Base namespace.
 
 
 
@@ -51,22 +51,22 @@ OLAP Base Architecture
 
 
 
-N> This class library was organized under Syncfusion.Olap.Base assembly.
+N> This class library was organized under the Syncfusion.Olap.Base assembly.
 
 
-## OLAP Silverlight Base
+## OLAP Silverlight base
 
-OLAP Silverlight Base is a class library, which contains several namespaces and classes to perform data processing operation required by OLAP Silverlight controls. The OlapDataManager retrieves OLAP data and binds the result to an OLAP Control.
+OLAP Silverlight base is a class library, which contains several namespaces and classes to perform data processing operation required by OLAP Silverlight controls. The OlapDataManager retrieves OLAP data and binds the result to an OLAP control.
 
-N> This class library was organized under Syncfusion.OlapSilverlight.Base assembly.
+N> This class library was organized under the Syncfusion.OlapSilverlight.Base assembly.
 
 
-## OLAP Silverlight Base Wrapper
+## OLAP Silverlight base wrapper
 
-The OLAP Silverlight Base Wrapper is a class library, which contains several namespaces and classes. This library helps to perform data conversion between OLAP Silverlight Base and OLAP Base. Data Conversion process is used to achieve the following features: 
+The OLAP Silverlight base wrapper is a class library, which contains several namespaces and classes. This library helps to perform data conversion between OLAP Silverlight base and OLAP base. Data conversion process is used to achieve the following features:
 
-1. Establishing the connection, retrieving data by converting the OLAP Silverlight Base information to OLAP Base information.
-2. Send retrieved data to OLAP Silverlight Base by converting the OLAP Base data to OLAP Silverlight Base data.
+1. Establishing the connection and retrieving data by converting the OLAP Silverlight base information to OLAP base information.
+2. Send retrieved data to OLAP Silverlight base by converting the OLAP base data to OLAP Silverlight base data.
 
 
 
@@ -83,10 +83,8 @@ Data flow in Silverlight
 
 
 
-N> This class library was organized under Syncfusion.OlapSilverlight.BaseWrapper assembly.
+N> This class library was organized under the Syncfusion.OlapSilverlight.BaseWrapper assembly.
 
-### WCF Service
+### WCF service
 
-In order to query the database, OLAP Silverlight controls use WCF Service. The DataProvider property of OlapDataManager performs the service call operations. 
-
-### Creating and connecting a WCF Service.
+To query the database, the OLAP Silverlight controls use the WCF service. The DataProvider property of OlapDataManager performs the service call operations.
