@@ -9,7 +9,7 @@ documentation: ug
 
 # Edit Commands
 
-Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, and so on. The built-in RoutedUICommands can be bound to the edit control by using the **Command property** of the external controls such as button, menu item, and so on. 
+Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, and so on. The built-in RoutedUICommands can be bound to the edit control by using the **Command** property of the external controls such as button, menu item, and so on. 
 
 <table>
 <tr>
@@ -51,11 +51,11 @@ This command helps to outlining support<br/><br/></td></tr>
 <tr>
 <td>
 Undo<br/><br/></td><td>
-This command helps to perform the Undo action.<br/><br/></td></tr>
+This command helps to perform the undo action.<br/><br/></td></tr>
 <tr>
 <td>
 Redo<br/><br/></td><td>
-This command helps to perform the Redo action.<br/><br/></td></tr>
+This command helps to perform the redo action.<br/><br/></td></tr>
 <tr>
 <td>
 Delete<br/><br/></td><td>
@@ -87,7 +87,7 @@ This command helps for search operation.<br/><br/></td></tr>
 <tr>
 <td>
 SearchInSelected<br/><br/></td><td>
-This command helps for Search Text in selected text operation.<br/><br/></td></tr>
+This command helps for search text in selected text operation.<br/><br/></td></tr>
 <tr>
 <td>
 FindAllReferences<br/><br/></td><td>
@@ -119,7 +119,7 @@ This command helps to insert the new line.<br/><br/></td></tr>
 <tr>
 <td>
 AutoIndent<br/><br/></td><td>
-This command helps for Auto indention.<br/><br/></td></tr>
+This command helps for auto indention.<br/><br/></td></tr>
 <tr>
 <td>
 Print<br/><br/></td><td>
@@ -433,5 +433,6 @@ EditCommands.SelectAll.Execute(Nothing, Me.editcontrol)
 {% endhighlight %}
 
 {% endtabs %}
+
 
 N> This [Sample](http://www.syncfusion.com/downloads/support/directtrac/214194/ze/EditControl_Command1758422738.zip) helps to explain the use cases of RoutedUICommands. 
