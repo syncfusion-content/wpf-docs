@@ -9,11 +9,11 @@ documentation: ug
 
 # OLAP Data Provider
 
-The database connectivity related works are all taken care of by this part of the base. Here we are using Microsoft.AnalysisService.AdomdClient data provider. Establishing the connection, checking the state of the connection and closing the connection are basic operations provided by the general data provider, but we need some information beyond this in order to provide the input for our controls.  
+The database connectivity related works are all taken care of by this part of the base. Here, the  Microsoft.AnalysisService.AdomdClient data provider is used. Establishing the connection, checking the state of the connection, and closing the connection are basic operations provided by the general data provider, but some more information is required to provide the input for controls.
 
-This part of the base will get the connection information and establish a connection with the specified data source and retrieve the information from the database and store it in its classes. This part of the base will have the required logic to retrieve the information from the database and store it in the object of class in Data namespace. 
+This part of the base will get the connection information and establish a connection with the specified data source and retrieve the information from the database and store it in its classes. This part of the base has the required logic to retrieve the information from the database and store it in the object of class in data namespace.
 
- All the information about the connected cube will intersect and be stored in object of classes in Data namespace, which are equivalent to the classes in the AdomdClient. This information is required to provide the input for OLAP controls.
+ All the information about the connected cube will intersect and store in the object of classes in the data namespace, which are equivalent to the classes in the AdomdClient. This information is required to provide the input for OLAP controls.
 
 Important class in DataProvider namespace:
 
@@ -26,7 +26,7 @@ The important properties and methods in AdomdDataProvider class are tabulated be
 ###  Properties
 
 * **CatalogName**: Gets the connected database name.
-* **ConnectionString**: Sets or get the connection string.
+* **ConnectionString**: Sets or gets the connection string.
 * **CurrentCellSet**: Gets the currently executed CellSet.
 * **GetCubes**: Gets the information about the cubes in the connected data source.
 
@@ -46,14 +46,14 @@ Reference Link</th></tr>
 <tr>
 <td>
 ExecuteCellSet</td><td>
-Four arguments should be given to invoke this method. The arguments are MDX query as string, drill down state of result set as bool, query append info as bool and finally get the OlapReport. This method will generate the CellSet for the given query or OlapReport.</td><td>
-MDX Query as string, drill down state as bool, Property append status as bool and Current OlapReport of OlapDataManager</td><td>
+Four arguments should be given to invoke this method. The arguments are MDX query as string, drill-down state of result set as bool, query append info as bool, and finally get the OlapReport. This method will generate the CellSet for the given query or OlapReport.</td><td>
+MDX Query as string, drill-down state as bool, property append status as bool and current OlapReport of OlapDataManager.</td><td>
 CellSet</td><td>
 -</td></tr>
 <tr>
 <td>
 GetCubeSchema</td><td>
-This method will get the cube name and intersect the cube to get all the information about the cube and return an object of type CubeSchema, which will contain all the information. CubeSchema is a class in Data namespace.</td><td>
+This method will get the cube name and intersect the cube to get all the information about the cube and return an object of type CubeSchema, which will contain all the information. CubeSchema is a class in data namespace.</td><td>
 Cube Name as string</td><td>
 CubeSchema</td><td>
 -</td></tr>

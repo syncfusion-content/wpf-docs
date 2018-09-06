@@ -9,9 +9,9 @@ documentation: ug
 
 # Drill Replace
 
-Drill Replace displays only the immediate child members and ancestors on drill-down and drill-up respectively.
+Drill replace displays only the immediate child members and ancestors on drill-down and drill-up respectively.
 
-The following code illustrates how to achieve drill replace support in a current report:
+The following code illustrates how to achieve drill replace support in a current report.
 
 {% tabs %}
 {% highlight c# %}
