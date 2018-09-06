@@ -9,9 +9,9 @@ documentation: ug
 
 # Cell Selection
 
-OlapGrid supports excel like cell selection where you can select Grid value cells like in Microsoft Excel. This can be achieved by setting the **"AllowSelection"** property of OlapGrid to true.
+The OLAP grid supports Excel-like cell selection, where you can select grid value cells as in the Microsoft Excel. This can be achieved by setting the `AllowSelection` property of the OLAP grid to true.
 
-On cell selection, an event named **"SelectionChanged"** will be triggered and the **"OlapGridSelectionChangedEventArgs"** will return an IEnumerable collection of column, row and value of the corresponding selected cell. The event argument will also return the cell range and the selection reason like mouse down, mouse move, mouse up etc.  
+On cell selection, an event named **"SelectionChanged"** will be triggered, and the **"OlapGridSelectionChangedEventArgs"** returns an IEnumerable collection of column, row, and value of the corresponding selected cell. The event argument also returns the cell range and selection reason such as mouse down, mouse move, and mouse up.
  
 The following code sample shows how to enable cell selection.
 
@@ -84,7 +84,7 @@ End Sub
 
 ![](Cell-Selection_images/Cell-Selection_img1.png)
 
-A sample demo is available at the following location:  
+A sample demo is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Selection\Cell Selection
 

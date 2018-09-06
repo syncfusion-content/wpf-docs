@@ -9,14 +9,14 @@ documentation: ug
 
 # Key Performance Indicator (KPI)
 
-KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPIs calculations.
+KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how grid applications should display the results of KPI calculations.
 
-The following are the different types of Indicators:
+The following are the different types of indicators:
 
-* KPI Goal
-* KPI Status
-* KPI Trend
-* KPI Value
+* KPI goal
+* KPI status
+* KPI trend
+* KPI value
 
 {% tabs %}
  
@@ -80,7 +80,7 @@ End Function
 
 ![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png)
 
-A sample demo is available at the following location:
+A sample demo is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\OlapGrid.WPF\Samples\Product Showcase\KPI
 

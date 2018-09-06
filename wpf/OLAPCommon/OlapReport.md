@@ -9,45 +9,45 @@ documentation: ug
 
 # OLAP Report
 
-OlapReport is an object that contains information about the cube element that has to be included for processing along its axis position and filter and sorting constraints. OlapReport has categorized the elements based on their characteristics as below:
+The OLAP report is an object that contains information about the cube element that has to be included for processing along its axis position and filter and sorting constraints. The OLAP report has categorized the elements based on their characteristics as follows:
 
-* Dimension Element 
-* Hierarchy Element
-* Level Element
-* Member Elements
-* Measure Element
-* KPI Element
-* NamedSet Element
-* Sort Element
-* Calculated Member
-* Subset Element
-* Summary Element
+* Dimension element
+* Hierarchy element
+* Level element
+* Member elements
+* Measure element
+* KPI element
+* NamedSet element
+* Sort element
+* Calculated member
+* Subset element
+* Summary element
 
-These elements are to get the cube element information from the user. You can create an instance of this element and add the required information about the element to pick that specific element from the database for processing.
+These elements are used to get the cube element information from users. You can create an instance of this element and add the required information about the element to pick that specific element from the database for processing.
 
-These elements come under the following four elements group, which are based on the axis position and filtering constraints.
+These elements are come under the following four elements group, which are based on the axis position and filtering constraints.
 
-* Categorical Elements – contains the elements that has to come under categorical axis
-* Series Elements – contains elements that has to come under series axis
-* Slicer Elements – contains elements that have to come under slicer elements.
-* Filter Elements – contains elements that are subjected to filter.
+* Categorical elements: Contains elements that have to come under categorical axis.
+* Series elements: Contains elements that have to come under series axis.
+* Slicer elements: Contains elements that have to come under slicer elements.
+* Filter elements: Contains elements that are subjected to the filter.
 
-All the elements are internally maintained as Item.
+All the elements are internally maintained as items.
 
 ## Properties
 
-* **CalculatedMembers** - Used to set and get the calculated members of the OlapReport.
-* **CategoricalElements** - Contains the element that are said to be in categorical axis. We can add an element and get the collection of elements that comes under the categorical axis.
-* **CurrentCubeName** - Used to set or get the current cube name of the Report.
-* **FilterElements** - Contains elements that are subjected to Filter constraints and a filter expression along the measure on which the filter expression is built.
-* **Name** - Used to set or get the report name.
-* **SeriesElements** - Contains elements that are said to be in series axis. We can add an element and get the collection of elements that comes under the categorical axis.
-* **ShowEmptyColumnData** - Used to show/hide the empty column in the result set.
-* **ShowEmptyRowData** - Used to show/hide the empty row in the result set.
-* **ShowExpanders** - Used to show/hide the expander buttons in the OLAP control.
-* **SliceElements** - Contains the element that are said to be in slicer axis. We can add an element and get the collection of elements that comes under the categorical axis.
-* **TogglePivot** - Used to swap the elements in the column axis and row axis.
-* **Tag** - Holds the backup information of the OLAP Report.
+* **CalculatedMembers**: Sets and gets the calculated members of the OLAP report.
+* **CategoricalElements**: Contains elements that are said to be in categorical axis. You can add an element and get the collection of elements that comes under the categorical axis.
+* **CurrentCubeName**: Sets or gets the current cube name of the report.
+* **FilterElements**: Contains elements that are subjected to filter constraints and a filter expression along the measure on which the filter expression is built.
+* **Name**: Sets or gets the report name.
+* **SeriesElements**: Contains elements that are said to be in series axis. You can add an element and get the collection of elements that comes under the categorical axis.
+* **ShowEmptyColumnData**: Shows/hides the empty column in the result set.
+* **ShowEmptyRowData**: Shows/hides the empty row in the result set.
+* **ShowExpanders**: Shows/hides the expander buttons in the OLAP control.
+* **SliceElements**: Contains the element that are said to be in slicer axis. You can add an element and get the collection of elements that comes under the categorical axis.
+* **TogglePivot**: Swaps the elements in the column axis and row axis.
+* **Tag**: Holds the backup information of the OLAP report.
 
 ![](OlapReport_images/OlapReport_img1.png)
 
@@ -56,35 +56,35 @@ Architecture of Items
 
 ## Elements of OLAP report
 
-### Dimension Element
+### Dimension element
 
-A simple [dimension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.analysisservices.dimension?redirectedfrom=MSDN&view=sqlserver-2016) object is composed of basic information such as Name, Hierarchy, Level and Members. We can create the dimension element by specifying its name and providing the hierarchy and level name. 
+A simple [dimension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.analysisservices.dimension?redirectedfrom=MSDN&view=sqlserver-2016) object is composed of basic information such as name, hierarchy, level, and members. You can create a dimension element by specifying its name and providing the hierarchy and level name.
 
-The dimension element will contain the hierarchical details and information about each included level elements in that hierarchy. A hierarchy can have any number of level elements and the level elements can have any number of members and the member elements can have any number of child members.
+The dimension element contains the hierarchical details and information about each included level elements in that hierarchy. A hierarchy can have any number of level elements and the level elements can have any number of members and the member elements can have any number of child members.
 
-### Hierarchy Element
+### Hierarchy element
 
-Each element of a dimension could be summarized using a [hierarchy](http://en.wikipedia.org/wiki/Hierarchy). The hierarchy is a series of parent-child relationship, where a parent member represents the consolidation of members which are its children. Parent members can be further aggregated as the children of another parent.
+Each element of a dimension can be summarized using a [hierarchy](http://en.wikipedia.org/wiki/Hierarchy). The hierarchy is a series of parent-child relationship, where a parent member represents the consolidation of members which are its children. Parent members can be further aggregated as the children of another parent.
 
-For example, May 2005 could be summarized into Second Quarter 2005 which in turn would be summarized in the year 2005.
+For example, May 2005 can be summarized into Second Quarter 2005 which in turn would be summarized in the year 2005.
 
-### Level Element
+### Level element
 
 Level element is the child of hierarchy element which contains a set of members, each of which has the same rank within a hierarchy.
 
-### Member Element
+### Member element
 
-Member element represents a member of a level in a cube, the children of a member of level.
+Member element represents a member of level in a cube, the children of a member of level.
 
-### Member Properties
+### Member properties
 
-Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, the number of children, and so on. Member properties are available for all members at a given level.
+Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, the number of children, and so on. The member properties are available for all members at a given level.
 
 ![](Dimension-Element_images/Dimension-Element_img1.png)
 
-The following code will illustrate the creation of different types of dimensions:
+The following code illustrates the creation of different types of dimensions.
 
-### Creating Simple Dimension Element
+### Creating simple dimension element
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
 {% endhighlight  %}
 {% endtabs %}
 
-### Creating Sliced Dimension
+### Creating sliced dimension
 
 
 {% tabs %}
@@ -168,11 +168,11 @@ dimensionElementSlicer.Hierarchy.LevelElements("Category").IncludeAvailableMembe
 {% endhighlight  %}
 {% endtabs %}
 
-## Measure Element
+## Measure element
 
-In a cube, a measure is a set of values that are based on a column in the cube's [fact table](http://msdn.microsoft.com/en-us/library/aa178239(SQL.80).aspx) and are usually numeric. In addition, measures are the central values of a cube that are analyzed. That is, measures are the numeric data of primary interest to end users browsing a cube. The measures you select depend on the types of information end users request. Some common measures are sales, cost, expenditures, and production count.
+In a cube, a measure is a set of values that are based on a column in the cube's [fact table](http://msdn.microsoft.com/en-us/library/aa178239(SQL.80).aspx) and are usually numeric. The measures are the central values of a cube that are analyzed. That is, measures are the numeric data of primary interest to users browsing a cube. You can select measures depend on the types of users request. Some common measures are sales, costs, expenditures, and production count.
 
-We can create a measure element just by specifying its name. The following code will illustrate the creation of a measure element:
+You can create a measure element by specifying its name. The following code illustrates the creation of a measure element.
 
 
 {% tabs %}
@@ -203,18 +203,18 @@ measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sal
 {% endhighlight  %}
 {% endtabs %}
 
-## Key Performance Indicator (KPI) Element
+## Key Performance Indicator (KPI) element
 
-Key Performance Indicator (KPI) is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of Multidimensional Expressions (MDX) or calculated members. The KPIs also have an additional metadata that provides information about how client applications should display the results of the KPI's calculations.
+KPI is a collection of calculations that are associated with a measure group in a cube used to evaluate business success. Typically, these calculations are a combination of Multidimensional Expressions (MDX) or calculated members. The KPIs also have an additional metadata that provides information about how client applications should display the results of the KPI's calculations.
 
-### The different types of KPI Indicators are:
+The different types of KPI indicators are:
 
-* KPI Goal
-* KPI Status
-* KPI Trend
-* KPI Value
+* KPI goal
+* KPI status
+* KPI trend
+* KPI value
 
-We can create a KPI element by specifying its name and giving details of the indicator that are included in the element. 
+You can create a KPI element by specifying its name and giving details of the indicator that are included in the element.
 
 {% tabs %}
 {% highlight c# %}
@@ -246,11 +246,11 @@ kpiElement.Elements.Add(New KpiElement With {.Name =
 {% endhighlight  %}
 {% endtabs %}
 
-## NamedSet Element
+## NamedSet element
 
-A named set is a collection of tuples and members, which can be defined and saved as a part of the cube definition. Named set records reside inside the sets folder, which is under a dimension element. These elements can be dragged to Categories/Series/Slicer axis of Axes Element Builder. To help make working with a lengthy, complex, or commonly used expression easier, Multidimensional Expressions (MDX) lets you to define a named set.
+A named set is a collection of tuples and members, which can be defined and saved as a part of the cube definition. Named set records reside inside the sets folder, which is under a dimension element. These elements can be dragged to categories/series/slicer axis of the axes element builder. To work with a lengthy, complex, or commonly used expression easier, Multidimensional Expressions (MDX) allows you to define a named set.
 
-The following code will describe the creation of a Named set Element:
+The following code describes the creation of a named set element.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,16 +278,16 @@ dimensionElementRow.Name = "Negative Margin Products"
 {% endhighlight  %}
 {% endtabs %}
 
-## Sort Element
+## Sort element
 
-The result set can be sorted by using the SortElement. We can create Sort elements and add it to the OlapReport. There are four types of sorting orders. They are:
+The result set can be sorted by using the SortElement. You can create sort elements and add it to the OLAP report. There are four types of sorting orders. They are:
 
-* ASC – Sort the elements in ascending order.
-* BASC – Sort the elements in ascending order by breaking the Hierarchy.
-* DESC – Sort the elements in Descending order.
-* BDESC – Sort the elements in Descending order by breaking the Hierarchy.
+* ASC: Sort the elements in ascending order.
+* BASC: Sort the elements in ascending order by breaking the hierarchy.
+* DESC: Sort the elements in descending order.
+* BDESC: Sort the elements in descending order by breaking the hierarchy.
 
-The following report will illustrate the creation of Sort element:
+The following report illustrates the creation of sort element.
 
 {% tabs %}
 {% highlight c# %}
@@ -307,36 +307,36 @@ sortElement.Element.UniqueName = "[Measures].[Internet Sales Amount]"
 {% endhighlight  %}
 {% endtabs %}
 
-## Calculated Member
+## Calculated member
 
-Calculated Members are the customized measures or dimension members created with the cube. The values are calculated at run-time. It is a user defined Element. The two types of calculated members are as follows:
+Calculated members are the customized measures or dimension members created with the cube. The values are calculated at runtime. It is a user defined element. The two types of calculated members are as follows:
 
-1. Calculated Measure – Calculated member created from a measure element
-2. Calculated Dimension – Calculated member created from a dimension
-
-
-
-### Calculated Member to be defined in OlapReport requires the following definitions:
-
-* Name – Name of the calculated member
-* Expression – Expression to form the calculated member
-* Measure/Dimension Element – You should add a measure or dimension element from which the calculated member should be created.
-
-### The following steps will explain how to create and add a calculated member in an OlapReport
-
-1. Create the dimension measure or dimension element from which the calculated member has to be created.
-2. Create the calculated member by giving the name and expression.
-3. Add the element created in Step 1 to the calculated member.
-4. Once the calculated member is defined, add that member to the calculated member collection in an OlapReport.
-5. Add the newly created calculated members in the categorical or series axis of an OlapReport.
+1. Calculated measure: Creates a calculated member from a measure element.
+2. Calculated dimension: Creates a calculated member from a dimension.
 
 
 
-### The following code snippet will describe the creation and addition of a calculated member in OlapReport:
+**Calculated member to be defined in OLAP report requires the following definitions**
+
+* Name: Name of the calculated member.
+* Expression: Expression to form the calculated member.
+* Measure/dimension element: You should add a measure or dimension element from which the calculated member should be created.
+
+The following steps explain how to create and add a calculated member in an OLAP report.
+
+1. Create a dimension measure or dimension element from which the calculated member has to be created.
+2. Create a calculated member by giving the name and expression.
+3. Add the created dimension element to the calculated member.
+4. After defining the calculated member, add that member to the calculated member collection in the OLAP report.
+5. Add the newly created calculated members in the categorical or series axis of the OLAP report.
 
 
 
-### Calculated Measure
+The following code snippet describes the creation and addition of a calculated member in the OLAP report.
+
+
+
+### Calculated measure
 
 
 {% tabs %}
@@ -377,7 +377,7 @@ olapReport.CalculatedMembers.Add(calculatedMeasure)
 {% endhighlight  %}
 {% endtabs %}
 
-### Calculated Dimension
+### Calculated dimension
 
 {% tabs %}
 {% highlight c# %}
@@ -433,11 +433,11 @@ olapReport.CalculatedMembers.Add(calculateDimension)
 {% endhighlight  %}
 {% endtabs %}
 
-## Subset Element
+## Subset element
 
-Subset Elements are used to filter the result set by their count. It will just filter the number records and number of fields in the result set.
+Subset elements are used to filter the result set by their count. It filters the number of records and number of fields in the result set.
 
-The following codes will illustrate the creation of a Subset Element:
+The following codes illustrate the creation of a subset element.
 
 {% tabs %}
 {% highlight c# %}
@@ -470,12 +470,12 @@ olapReport.SeriesElements.SubSetElement = subSetElementRow
 {% endhighlight  %}
 {% endtabs %}
 
-## Filtering slicer elements by range 
+## Filtering slicer elements by range
 
-This feature enables you to specify a range for filter elements in the slicer field. You have to specify the start and end value to set the range. Multiple ranges can be added for the filter elements in slicer field. 
+This feature enables you to specify a range for filter elements in the slicer field. You have to specify the start and end values to set the range. Multiple ranges can be added to filter elements in the slicer field.
 
 
-### Class Table
+### Class table
 
 <table>
 <tr>
@@ -485,11 +485,11 @@ Description </th></tr>
 <tr>
 <td>
 SlicerRangeFiltersInfo</td><td>
-Used to filter values from one range to another. Unique name of the member element for start and end value need to be specified. The name of the member element can also be specified for start and end value when customer builds the unique name*.</td></tr>
+Used to filter values from one range to another. Unique name of the member element for start and end values need to be specified. The name of the member element can also be specified for start and end values when customer builds the unique name*.</td></tr>
 </table>
 
 
-* Name of the member element can be specified only when name is formed with dimension name, hierarchy name and level name.  
+* Name of the member element can be specified only when name is formed with dimension name, hierarchy name, and level name.
 
 
 
@@ -511,28 +511,28 @@ Unique name for start and end value.</td></tr>
 <tr>
 <td>
 SlicerRangeFiltersInfo(string dimensionName, string hierarchyName, string levelName, string startValueName, string endValueName</td><td>
-Initializes SlicerRangeFiltersInfo with name of dimension, hierarchy, level, star value and end value.  </td><td>
-Name for dimension, hierarchy, level, start value and end value.</td></tr>
+Initializes SlicerRangeFiltersInfo with name of dimension, hierarchy, level, star value, and end value.</td><td>
+Name for dimension, hierarchy, level, start value, and end value.</td></tr>
 </table>
 
 
 ### Properties
 
-Following table consists of SlicerRangeFiltersInfo class’s property:
+Following table consists of SlicerRangeFiltersInfo class’s property.
 
-* **DimensionName** - Specify the dimension name
-* **HierarchyName** - Specify the hierarchy name
-* **LevelName** - Specify the level name
-* **StartValue** - Specify the unique name or name of the member element
-* **EndValue** - Specify the unique name or name of the member element
+* **DimensionName**: Specifies the dimension name.
+* **HierarchyName**: Specifies the hierarchy name.
+* **LevelName**: Specifies the level name.
+* **StartValue**: Specifies the unique name or name of the member element.
+* **EndValue**: Specifies the unique name or name of the member element.
 
-* Name of the member element can be specified only when the name is formed with dimension name, hierarchy name and level name. 
+* Name of the member element can be specified only when the name is formed with dimension name, hierarchy name, and level name.
 
-### Adding a range for the filter elements in slicer field:
+### Adding a range for filter elements in the slicer field
 
-There are two methods to add range for the filter elements in a slicer field.
+There are two methods to add a range for filter elements in the slicer field.
 
-In the first method, you can specify the unique name for start and end value. The following code illustrates this:  
+In the first method, you can specify the unique name for start and end values. The following code illustrates this:  
 
 {% tabs %}
 {% highlight c# %}
@@ -576,20 +576,20 @@ olapReport.SlicerRangeFilters.Add(New SlicerRangeFiltersInfo With {.Dimension
 
 ![C:/Documents and Settings/jananit/Local Settings/Temporary Internet Files/Content.Word/After appying range filter.png](Filtering-slicer-elements-by-range_images/Filtering-slicer-elements-by-range_img2.png)
 
-## Creating the OlapReport
+## Creating the OLAP report
 
 To create a report:
 
-1. Instantiate a new object for OlapReport.
-2. Create the required elements like dimension element, measure elements.
-3. Add the created element in the desired axis (Column or Categorical, Row or Series, Filter or Slicer) elements. 
-4. Then bind the created report to the OlapDataManager using the SetCurrentReport() method or assign the report to OlapDataManager’s current report property.
+1. Instantiate a new object for the OLAP report.
+2. Create the required elements like dimension element and measure element.
+3. Add the created element in the desired axis (column or categorical, row or series, and filter or slicer) elements.
+4. Then, bind the created report to the OlapDataManager using the SetCurrentReport() method or assign the report to OlapDataManager’s current report property.
 
-### Sample Reports for OLAP data
+### Sample reports for OLAP data
 
 This section gives you the code snippet to generate different types of report for OlapDataManager.
 
-### Simple Report
+### Simple report
 
 
 {% tabs %}
@@ -966,7 +966,7 @@ olapReport.SeriesElements.Add(dimensionElementRow,excludedRowElement)
 
 
 
-### Ordered Report
+### Ordered report
 
 
 {% tabs %}
@@ -1084,7 +1084,7 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 {% endhighlight  %}
 {% endtabs %}
 
-### Report with Filter
+### Report with filter
 
 {% tabs %}
 
@@ -1200,7 +1200,7 @@ olapReport.FilterElements.Add(New Item With {.ElementValue = filterElement})
 {% endhighlight  %}
 {% endtabs %}
 
-### Report with subset 
+### Report with subset
 
 
 {% tabs %}
@@ -1649,7 +1649,7 @@ dimensionElementRow.Hierarchy.LevelElements("Fiscal Year"). MemberElements(0).Ch
 {% endtabs %}
 
 
-### Report with Top count Filter
+### Report with top count filter
 
 
 {% tabs %}
@@ -1766,7 +1766,7 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 {% endhighlight  %}
 {% endtabs %}
 
-### Report with Named set
+### Report with named set
 
 
 {% tabs %}
@@ -2049,7 +2049,7 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 {% endhighlight  %}
 {% endtabs %}
 
-### Report with KPI Element
+### Report with KPI element
 
 
 {% tabs %}

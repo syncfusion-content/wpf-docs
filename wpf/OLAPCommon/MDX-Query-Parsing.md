@@ -9,17 +9,17 @@ documentation: ug
 
 # MDX Query Parsing
 
-## MDX Query binding with drill up and drill down operations
+## MDX Query binding with drill-up and drill-down operations
 
 
-This feature provides support for the drill up and drill down operations for BI components such as BI Grid, BI Chart, and BI Client in order to view the OLAP data through different levels using an MDX query instead of the OlapReport class. Previously, the drill up and drill down operations were supported by the OlapReport class only.
+This feature provides support for drill-up and drill-down operations for BI components such as BI grid, BI chart, and BI client to view the OLAP data through different levels using an MDX query instead of the OlapReport class. Previously, the drill-up and drill-down operations were supported by the OlapReport class only.
 
 
 ### Properties
 
-* **AllowMdxToReportParse** - Gets or sets a value indicating whether to parse the given MDX into the OlapReport class or not. The default value is true.
+* **AllowMdxToReportParse**: Gets or sets a value indicating whether to parse the given MDX into the OlapReport class or not. The default value is true.
 
-### Sample Links
+### Sample links
 
 
 
@@ -47,14 +47,12 @@ OlapClient [Silverlight]
 
 &lt;InstalledDrive&gt;:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\BI\Silverlight\OlapClient.Silverlight\ProductShowcase\MDXQueryDemo
 
-## Adding MDX Query binding with drill up and drill down operations to an Application 
-
-
+## Adding MDX Query binding with drill-up and drill-down operations to an application
 
 The following code samples are used to enable and disable the MDX to OLAP parsing and processing of an MDX query into OLAP data.
 
 {% tabs %}
-{% highlight c# %}  
+{% highlight c# %}
 
      //Enable MDX to OLAP parsing.
 
