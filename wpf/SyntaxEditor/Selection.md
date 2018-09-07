@@ -9,78 +9,77 @@ documentation: ug
 
 # Text Selection
 
-SyntaxEditor supports selection of content through UI interactions such as Mouse, Keyboard and Touch. 
+The `SyntaxEditor` control supports the selection of content through mouse, keyboard, and touch interactions. 
 
 ## Selection using Mouse
 
-User can do selection using mouse by clicking on the desired position and drag the selection to desired line position. Selection of content can be extended through Keyboard selection. This will be explained in Keyboard selection section.
+User can select text using the mouse by clicking on a position and dragging the selection to the desired line position. 
 
-## Selection using Keyword with shortcuts
+## Selection using Keyboard with shortcuts
 
-The following keyboard shortcuts are supported by SyntaxEditor for selection.
+The following keyboard shortcuts are supported for content selection.
 
 <table>
 <tr>
 <td>
-Selection Shortcut<br/><br/></td><td>
+Selection Shortcut Keys<br/><br/></td><td>
 Description<br/><br/></td></tr>
 <tr>
 <td>
-SHIFT + Right Arrow<br/><br/></td><td>
-Extends selection to one position forward.<br/><br/></td></tr>
+Shift + Right arrow<br/><br/></td><td>
+Extends selection one position forward.<br/><br/></td></tr>
 <tr>
 <td>
-SHIFT + Left Arrow<br/><br/></td><td>
-Extends selection to one position backward.<br/><br/></td></tr>
+Shift + Left arrow<br/><br/></td><td>
+Extends selection one position backward.<br/><br/></td></tr>
 <tr>
 <td>
-SHIFT + Down Arrow<br/><br/></td><td>
-Extends selection to the same position at next line.<br/><br/></td></tr>
+Shift + Down arrow<br/><br/></td><td>
+Extends selection to the same position on the next line.<br/><br/></td></tr>
 <tr>
 <td>
-SHIFT + Up Arrow<br/><br/></td><td>
-Extends selection to the same position at previous line.<br/><br/></td></tr>
+Shift + Up arrow<br/><br/></td><td>
+Extends selection to the same position on the previous line.<br/><br/></td></tr>
 <tr>
 <td>
-SHIFT + Home<br/><br/></td><td>
-Extends selection to start of the current line.<br/><br/></td></tr>
+Shift + Home<br/><br/></td><td>
+Extends selection to the start of the current line.<br/><br/></td></tr>
 <tr>
 <td>
-SHIFT + End<br/><br/></td><td>
-Extends selection to end of the current line.<br/><br/></td></tr>
+Shift + End<br/><br/></td><td>
+Extends selection to the end of the current line.<br/><br/></td></tr>
 <tr>
 <td>
-CTRL + SHIFT + Home<br/><br/></td><td>
+Ctrl + Shift + Home<br/><br/></td><td>
 Extends selection to the document start position.<br/><br/></td></tr>
 <tr>
 <td>
-CTRL + SHIFT + End<br/><br/></td><td>
+Ctrl + Shift + End<br/><br/></td><td>
 Extends selection to the document end position.<br/><br/></td></tr>
 <tr>
 <td>
-CTRL + SHIFT + Right<br/><br/></td><td>
+Ctrl + Shift + Right arrow<br/><br/></td><td>
 Extends selection to the current word end position.<br/><br/></td></tr>
 <tr>
 <td>
-CTRL + SHIFT + Left<br/><br/></td><td>
+Ctrl + Shift + Left arrow<br/><br/></td><td>
 Extends selection to the current word start position.<br/><br/></td></tr>
 <tr>
 <td>
-CTRL + A<br/><br/></td><td>
+Ctrl + A<br/><br/></td><td>
 Selects the entire document.<br/><br/></td></tr>
 </table>
 
 ## Selection using Touch 
 
-User can do selection by double touch the desired word. Selection pointers will be displayed at start and end position of the selected content. 
+Users can select text by double-tapping the desired word. Selection pointers will be displayed at the start and end positions of the selected content. 
 
-![](Selection-Images/selection-img1.jpeg)
+![](Selection-Images/selection-img1.png)
 
 
-User can extend the selection by dragging the selection pointers. The following screenshot shows the extend selection of selected content.
+Users can extend the selection by dragging the selection pointers. The following screenshot shows an extended selection of content.
 
-![](Selection-Images/selection-img2.jpeg)
+![](Selection-Images/selection-img2.png)
 
-When selection goes beyond viewport of EditControl, ScrollViewer will be automatically bring new contents to the view and text selection will happen to those contents.
-
+When a selection goes beyond the view port of the SyntaxEditor control, a scroll viewer will automatically bring new content into the view and the text selection will extend to that content.
 
