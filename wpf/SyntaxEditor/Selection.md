@@ -9,7 +9,7 @@ documentation: ug
 
 # Text Selection
 
-The syntax editor component supports the selection of content through mouse, keyboard, and touch interactions. 
+The `SyntaxEditor` control supports the selection of content through mouse, keyboard, and touch interactions. 
 
 ## Selection using Mouse
 
@@ -22,23 +22,23 @@ The following keyboard shortcuts are supported for content selection.
 <table>
 <tr>
 <td>
-Selection Shortcut<br/><br/></td><td>
+Selection Shortcut Keys<br/><br/></td><td>
 Description<br/><br/></td></tr>
 <tr>
 <td>
-Shift + Right arrow key<br/><br/></td><td>
+Shift + Right arrow<br/><br/></td><td>
 Extends selection one position forward.<br/><br/></td></tr>
 <tr>
 <td>
-Shift + Left arrow key<br/><br/></td><td>
+Shift + Left arrow<br/><br/></td><td>
 Extends selection one position backward.<br/><br/></td></tr>
 <tr>
 <td>
-Shift + Down arrow key<br/><br/></td><td>
+Shift + Down arrow<br/><br/></td><td>
 Extends selection to the same position on the next line.<br/><br/></td></tr>
 <tr>
 <td>
-Shift + Up arrow key<br/><br/></td><td>
+Shift + Up arrow<br/><br/></td><td>
 Extends selection to the same position on the previous line.<br/><br/></td></tr>
 <tr>
 <td>
@@ -58,11 +58,11 @@ Ctrl + Shift + End<br/><br/></td><td>
 Extends selection to the document end position.<br/><br/></td></tr>
 <tr>
 <td>
-Ctrl + Shift + Right arrow key<br/><br/></td><td>
+Ctrl + Shift + Right arrow<br/><br/></td><td>
 Extends selection to the current word end position.<br/><br/></td></tr>
 <tr>
 <td>
-Ctrl + Shift + Left arrow key<br/><br/></td><td>
+Ctrl + Shift + Left arrow<br/><br/></td><td>
 Extends selection to the current word start position.<br/><br/></td></tr>
 <tr>
 <td>
@@ -74,12 +74,12 @@ Selects the entire document.<br/><br/></td></tr>
 
 Users can select text by double-tapping the desired word. Selection pointers will be displayed at the start and end positions of the selected content. 
 
-![](Selection-Images/selection-img1.jpeg)
+![](Selection-Images/selection-img1.png)
 
 
 Users can extend the selection by dragging the selection pointers. The following screenshot shows an extended selection of content.
 
-![](Selection-Images/selection-img2.jpeg)
+![](Selection-Images/selection-img2.png)
 
-When a selection goes beyond the view port of the syntax editor control, a scroll viewer will automatically bring new content into the view and the text selection will extend to that content.
+When a selection goes beyond the view port of the SyntaxEditor control, a scroll viewer will automatically bring new content into the view and the text selection will extend to that content.
 
