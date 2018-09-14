@@ -30,6 +30,8 @@ This section illustrates how to add ReportWriter to the WPF application. It incl
    * Syncfusion.SfMaps.Wpf
    * Syncfusion.Shared.Wpf
    * Syncfusion.XlsIO.Base
+
+   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\Assemblies
    
 4. Set the following properties of ReportWriter.   
 
