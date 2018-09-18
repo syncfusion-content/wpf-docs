@@ -204,15 +204,15 @@ private OlapReport CreateReport()
     dimensionElementColumn.Name = "Customer";
     dimensionElementColumn.AddLevel("Customer Geography", "Country");
 
-    VirtualKpiElement Virtualkpi = new VirtualKpiElement();
-    Virtualkpi.Name = "Growth in Order Quantity";
-    Virtualkpi.KpiGoalExpression = "[Measures].[Order Quantity]";
-    Virtualkpi.KpiStatusExpression = "Case When [Measures].[Order Quantity] > 1 Then 1 Else -1 End";
-    Virtualkpi.KpiTrendExpression = "Case When IsEmpty ( ParallelPeriod ( [Date].[Fiscal].[Fiscal Year], 1, [Date].[Fiscal].CurrentMember ) ) Then 0  Else -1 End";
-    Virtualkpi.KpiValueExpression = "[Measures].[Order Quantity]";
+    VirtualKpiElement kpiElement = new VirtualKpiElement();
+    kpiElement.Name = "Growth in Order Quantity";
+    kpiElement.KpiGoalExpression = "[Measures].[Order Quantity]";
+    kpiElement.KpiStatusExpression = "Case When [Measures].[Order Quantity] > 1 Then 1 Else -1 End";
+    kpiElement.KpiTrendExpression = "Case When IsEmpty ( ParallelPeriod ( [Date].[Fiscal].[Fiscal Year], 1, [Date].[Fiscal].CurrentMember ) ) Then 0  Else -1 End";
+    kpiElement.KpiValueExpression = "[Measures].[Order Quantity]";
 
     ValueElements valueElementGroup = new ValueElements();
-    valueElementGroup.VirtualKpiElements.Add(Virtualkpi);
+    valueElementGroup.VirtualKpiElements.Add(kpiElement);
     valueElementGroup.Add(new ValueElement { Name = "Order Quantity" });
     valueElementGroup.Add(new ValueElement { Name = "Growth in Order Quantity", IsKPI = true, ShowKPIGoal = false, ShowKPIStatus = false, ShowKPIValue = false });
     valueElementGroup.Add(new ValueElement { Name = "Customer Count" });
@@ -241,15 +241,15 @@ Private Function CreateReport() As OlapReport
     dimensionElementColumn.Name = "Customer"
     dimensionElementColumn.AddLevel("Customer Geography", "Country")
 
-    Dim Virtualkpi As New VirtualKpiElement()
-    Virtualkpi.Name = "Growth in Order Quantity"
-    Virtualkpi.KpiGoalExpression = "[Measures].[Order Quantity]"
-    Virtualkpi.KpiStatusExpression = "Case When [Measures].[Order Quantity] > 1 Then 1 Else -1 End"
-    Virtualkpi.KpiTrendExpression = "Case When IsEmpty ( ParallelPeriod ( [Date].[Fiscal].[Fiscal Year], 1, [Date].[Fiscal].CurrentMember ) ) Then 0  Else -1 End"
-    Virtualkpi.KpiValueExpression = "[Measures].[Order Quantity]"
+    Dim kpiElement As New VirtualKpiElement()
+    kpiElement.Name = "Growth in Order Quantity"
+    kpiElement.KpiGoalExpression = "[Measures].[Order Quantity]"
+    kpiElement.KpiStatusExpression = "Case When [Measures].[Order Quantity] > 1 Then 1 Else -1 End"
+    kpiElement.KpiTrendExpression = "Case When IsEmpty ( ParallelPeriod ( [Date].[Fiscal].[Fiscal Year], 1, [Date].[Fiscal].CurrentMember ) ) Then 0  Else -1 End"
+    kpiElement.KpiValueExpression = "[Measures].[Order Quantity]"
 
     Dim valueElementGroup As New ValueElements()
-    valueElementGroup.VirtualKpiElements.Add(Virtualkpi)
+    valueElementGroup.VirtualKpiElements.Add(kpiElement)
     valueElementGroup.Add(New ValueElement With {.Name = "Order Quantity"})
     valueElementGroup.Add(New ValueElement With {.Name = "Growth in Order Quantity", .IsKPI = True, .ShowKPIGoal = False, .ShowKPIStatus = False, .ShowKPIValue = False})
     valueElementGroup.Add(New ValueElement With {.Name = "Customer Count"})
