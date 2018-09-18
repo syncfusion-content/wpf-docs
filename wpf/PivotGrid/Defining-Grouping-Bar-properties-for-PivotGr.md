@@ -83,7 +83,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/PivotGrid with customized .png)
+![](Grouping-Bar-Images/PivotGrid with customized grouping bar.png)
 
 **ItemsBackground**
 
