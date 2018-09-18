@@ -56,7 +56,7 @@ private OlapReport CreateReport()
     ValueElements valueElementGroup = new ValueElements();
     valueElementGroup.Add(new ValueElement { Name = "Sales Amount" });
     valueElementGroup.Add(new ValueElement { Name = "Revenue", IsKPI = true });
-    valueElementGroup.Add(new ValueElement { Name = "Order Qunatity" });
+    valueElementGroup.Add(new ValueElement { Name = "Order Quantity" });
     valueElementGroup.Add(new ValueElement { Name = "Growth in Customer Base", IsKPI = true });
 
     olapReport.CategoricalElements.Add(dimensionElementColumn);
@@ -181,3 +181,88 @@ End Function
 {% endtabs %}
 
 ![](CustomOrder-Measures-KPIs-images/customized_kpi.png)
+
+## Adding and customizing VirtualKPIs
+
+The Virtual KPIs can be added to the property `VirtualKpiElements` of the **ValueElement** instance and then specified in the required order. The following code snippet illustrates the usage of the property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+private OlapReport CreateReport()
+{
+    OlapReport olapReport = new OlapReport();
+    olapReport.CurrentCubeName = "Adventure Works";
+    olapReport.DisplayMeasuresInDesiredOrder = true;
+
+    DimensionElement dimensionElementRow = new DimensionElement();
+    dimensionElementRow.Name = "Date";
+    dimensionElementRow.AddLevel("Fiscal", "Fiscal");
+
+    DimensionElement dimensionElementColumn = new DimensionElement();
+    dimensionElementColumn.Name = "Customer";
+    dimensionElementColumn.AddLevel("Customer Geography", "Country");
+
+    VirtualKpiElement Virtualkpi = new VirtualKpiElement();
+    Virtualkpi.Name = "Growth in Order Quantity";
+    Virtualkpi.KpiGoalExpression = "[Measures].[Order Quantity]";
+    Virtualkpi.KpiStatusExpression = "Case When [Measures].[Order Quantity] > 1 Then 1 Else -1 End";
+    Virtualkpi.KpiTrendExpression = "Case When IsEmpty ( ParallelPeriod ( [Date].[Fiscal].[Fiscal Year], 1, [Date].[Fiscal].CurrentMember ) ) Then 0  Else -1 End";
+    Virtualkpi.KpiValueExpression = "[Measures].[Order Quantity]";
+
+    ValueElements valueElementGroup = new ValueElements();
+    valueElementGroup.VirtualKpiElements.Add(Virtualkpi);
+    valueElementGroup.Add(new ValueElement { Name = "Order Quantity" });
+    valueElementGroup.Add(new ValueElement { Name = "Growth in Order Quantity", IsKPI = true, ShowKPIGoal = false, ShowKPIStatus = false, ShowKPIValue = false });
+    valueElementGroup.Add(new ValueElement { Name = "Customer Count" });
+
+    olapReport.CategoricalElements.Add(dimensionElementColumn);
+    olapReport.CategoricalElements.Add(valueElementGroup);
+    olapReport.SeriesElements.Add(dimensionElementRow);
+
+    return olapReport;
+}
+
+{# endhighlight #}
+
+{# highlight vb #}
+
+Private Function CreateReport() As OlapReport
+    Dim olapReport As New OlapReport()
+    olapReport.CurrentCubeName = "Adventure Works"
+    olapReport.DisplayMeasuresInDesiredOrder = True
+
+    Dim dimensionElementRow As New DimensionElement()
+    dimensionElementRow.Name = "Date"
+    dimensionElementRow.AddLevel("Fiscal", "Fiscal")
+
+    Dim dimensionElementColumn As New DimensionElement()
+    dimensionElementColumn.Name = "Customer"
+    dimensionElementColumn.AddLevel("Customer Geography", "Country")
+
+    Dim Virtualkpi As New VirtualKpiElement()
+    Virtualkpi.Name = "Growth in Order Quantity"
+    Virtualkpi.KpiGoalExpression = "[Measures].[Order Quantity]"
+    Virtualkpi.KpiStatusExpression = "Case When [Measures].[Order Quantity] > 1 Then 1 Else -1 End"
+    Virtualkpi.KpiTrendExpression = "Case When IsEmpty ( ParallelPeriod ( [Date].[Fiscal].[Fiscal Year], 1, [Date].[Fiscal].CurrentMember ) ) Then 0  Else -1 End"
+    Virtualkpi.KpiValueExpression = "[Measures].[Order Quantity]"
+
+    Dim valueElementGroup As New ValueElements()
+    valueElementGroup.VirtualKpiElements.Add(Virtualkpi)
+    valueElementGroup.Add(New ValueElement With {.Name = "Order Quantity"})
+    valueElementGroup.Add(New ValueElement With {.Name = "Growth in Order Quantity", .IsKPI = True, .ShowKPIGoal = False, .ShowKPIStatus = False, .ShowKPIValue = False})
+    valueElementGroup.Add(New ValueElement With {.Name = "Customer Count"})
+
+    olapReport.CategoricalElements.Add(dimensionElementColumn)
+    olapReport.CategoricalElements.Add(valueElementGroup)
+    olapReport.SeriesElements.Add(dimensionElementRow)
+
+    Return olapReport
+End Function
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](CustomOrder-Measures-KPIs-images/adding_customizing_virtualkpi.png)
