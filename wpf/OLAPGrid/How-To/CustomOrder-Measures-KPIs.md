@@ -224,9 +224,9 @@ private OlapReport CreateReport()
     return olapReport;
 }
 
-{# endhighlight #}
+{% endhighlight %}
 
-{# highlight vb #}
+{% highlight vb %}
 
 Private Function CreateReport() As OlapReport
     Dim olapReport As New OlapReport()
