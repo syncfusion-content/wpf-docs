@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom ordering of Measures and KPIs
-description: How to custom order of measures, KPIs in a given OLAP report that gets tabulated in OlapGrid.
+title: Displaying Measures and KPIs in desired order
+description: Displaying the measures, KPIs in a given OLAP report that gets tabulated in OlapGrid.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Custom ordering of Measures and KPIs
+# Displaying Measures and KPIs in desired order
 
 ## Enabling custom ordering
 
@@ -31,7 +31,7 @@ olapReport.DisplayMeasuresInDesiredOrder = True
 
 ## Specifying the desired order
 
-For defining the custom order of Measures and KPIs, the element name value is set to the data type of **ValueElements** instance to any of the OLAP report axis. The KPIs are denoted by enabling the property `IsKPI` to true. The following code snippet illustrates the specifications need to be done in the OLAP report.
+For defining the desired order of Measures and KPIs, the element name value is set to the data type of **ValueElements** instance to any of the OLAP report axis. The KPIs are denoted by enabling the property `IsKPI` to true. The following code snippet illustrates the specifications need to be done in the OLAP report.
 
 {% tabs %}
 
@@ -102,18 +102,18 @@ End Function
 
 {% endtabs %}
 
-![](CustomOrder-Measures-KPIs-images/custom_ordered_measures_kpis.png)
+![](Displaying-Measures-and-KPIs-in-desired-order-images/custom_ordered_measures_kpis.png)
 
-## Customizing the KPIs
+## Customizing the visiblity of KPI element
 
-By default, for any given KPI its Value, Goal, Status and Trend gets displayed all together. This can be also be customized by using the following properties.
+By default, for any given KPI its Value, Goal, Status and Trend gets displayed all together. This can be customized by using the following properties.
 
 * `ShowKPIGoal` - Gets or sets a value indicating whether to display the given KPI's goal element.
 * `ShowKPIStatus` - Gets or sets a value indicating whether to display the given KPI's status element.
 * `ShowKPITrend` - Gets or sets a value indicating whether to display the given KPI's trend element.
 * `ShowKPIValue` - Gets or sets a value indicating whether to display the given KPI's value element.
 
-The following code snippet illustrates how to customize the KPI elements.
+The following code snippet illustrates how to customize visibility the KPI elements.
 
 {% tabs %}
 
@@ -180,11 +180,11 @@ End Function
 
 {% endtabs %}
 
-![](CustomOrder-Measures-KPIs-images/customized_kpi.png)
+![](Displaying-Measures-and-KPIs-in-desired-order-images/customized_kpi.png)
 
 ## Adding and customizing VirtualKPIs
 
-The Virtual KPIs can be added to the property `VirtualKpiElements` of the **ValueElement** instance and then specified in the required order. The following code snippet illustrates the usage of the property.
+The Virtual KPIs can be added to the property `VirtualKpiElements` of the **ValueElement** instance and then specified in the desired order. The following code snippet illustrates the usage of the property.
 
 {% tabs %}
 
@@ -265,4 +265,4 @@ End Function
 
 {% endtabs %}
 
-![](CustomOrder-Measures-KPIs-images/adding_customizing_virtualkpi.png)
+![](Displaying-Measures-and-KPIs-in-desired-order-images/adding_customizing_virtualkpi.png)
