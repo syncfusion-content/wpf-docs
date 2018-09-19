@@ -35,6 +35,8 @@ You can create a simple application through the Visual Studio Designer with the 
    * Syncfusion.SfSkinManager.Wpf
    * Syncfusion.Shared.Wpf
    * Syncfusion.Tools.Wpf
+
+   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\Assemblies
    
 4. For creating ReportDesigner using code in Xaml.cs
    

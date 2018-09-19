@@ -44,7 +44,7 @@ You can create a simple application through the Visual Studio Designer with the 
    * Syncfusion.Tools.Wpf
    * Syncfusion.XlsIO.Base
    
-   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
+   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\Assemblies
    
 5. Add the following code for creating ReportViewer using code.
 
