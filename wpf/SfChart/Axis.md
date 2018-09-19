@@ -2748,6 +2748,33 @@ chart.Annotations.Add(annotation);
 
 ![](Axis_images/AnnotationRange.png)
 
+## Inversing Axis
+
+Axis can be inversed using the [`IsInversed`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~IsInversedProperty.html#) property of axis. Default value of [`IsInversed`] property is [`False`].
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+<chart:NumericalAxis IsInversed="True"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.Chart.SecondaryAxis.IsInversed = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/InversedAxis.png)
+
+
 ## Customizing the Intervals
 
 [`ChartAxis`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) calculates the range and intervals automatically based on the data points. The axis range and interval can be defined using the [`Minimum`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Minimum.html#), [`Maximum`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Maximum.html#) and [`Interval`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Interval.html#) properties.
