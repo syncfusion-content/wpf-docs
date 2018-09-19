@@ -7,18 +7,27 @@ control: Carousel
 documentation: ug
 ---
 
-# Getting Started
+# Getting started
+
+This section describes how to design a `Carousel` control in a WPF application and overview of its basic functionalities.
 
 ## Structure of the Carousel Control
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-
-##   Adding carousel to an application
+# Creating simple application with Carousel
 
 The Carousel control can be added to an application by using Visual Studio and Blend.
 
-### Creating a Carousel control in C#
+You can create the WPF application with Carousel control as follows:
+
+1. [Creating project](#creating-the-project)
+2. [Adding control via designer](#adding-control-via-designer)
+3. [Adding control manually in code](#adding-control-manually-in-code)
+4. [Adding Carousel Items](#adding-carousel-items)
+5. [Adding images into Carousel](#adding-images-into-carousel)
+
+### Creating the project
 
 The steps to create a Carousel control by using Visual Studio in C# are as follows:
 
@@ -28,27 +37,32 @@ The steps to create a Carousel control by using Visual Studio in C# are as follo
 
    ![](Getting-Started_images/Getting-Started_img4.jpeg)
 
-3.  On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
-   
-    ![](Getting-Started_images/Getting-Started_img5.png)
+## Adding control via designer
 
-4.	Add the following reference with the sample project:
-    1.	Syncfusion.Shared.WPF.dll
+Carousel control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+
+* Syncfusion.Shared.WPF.dll
 
     ![](Getting-Started_images/Getting-Started_img6.jpeg)
 
-5.	Click the C# file, to open the C# file and add the carousel control to the application. Here is the code to create the carousel control in C#:
+	![](Getting-Started_images/Getting-Started_img2.jpeg)
+
+## Adding control manually in code
+
+To add control manually in C#, follow the given steps:
+
+**Step 1** - Add the following required assembly **Syncfusion.Shared.WPF.dll** references to the project:
+
+**Step 2** - Include the namespaces **Syncfusion.Windows.Shared**
+
+**Step 3** - Create `Carousel` control instance and add it to the Window.
 
 {% tabs %}
 
 {% highlight C# %}
 
 Carousel carousel = new Carousel();
-carousel.Items.Add(new CarouselItem(){Content="1"});
-carousel.Items.Add(new CarouselItem(){Content="2"});
-carousel.Items.Add(new CarouselItem(){Content="3"});
-carousel.Items.Add(new CarouselItem(){Content="4"});
-carousel.Items.Add(new CarouselItem(){Content="5"});
+
 this.LayoutRoot.Children.Add(carousel);
 
 {% endhighlight %}
@@ -56,44 +70,44 @@ this.LayoutRoot.Children.Add(carousel);
 {% highlight VB %}
 
 Dim carousel As New Carousel()
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "1" _
-})
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "2" _
-})
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "3" _
-})
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "4" _
-})
-carousel.Items.Add(New CarouselItem() With { _
-	Key .Content = "5" _
-})
+
 Me.LayoutRoot.Children.Add(carousel)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-###     Creating Carousel control using XAML
+## Adding Carousel Items
 
+The below code show how carousel items can be added in carousel via code behind.
 
-Follow the below steps to add Carousel by using Visual Studio in XAML.
+{% tabs %}
 
-1. Create a new application in Visual Studio.
+{% highlight C# %}
 
-2. In the Visual Studio Toolbox, click Syncfusion Toolbox tab and select Carousel.
+carousel.Items.Add(new CarouselItem(){Content="1"});
+carousel.Items.Add(new CarouselItem(){Content="2"});
+carousel.Items.Add(new CarouselItem(){Content="3"});
+carousel.Items.Add(new CarouselItem(){Content="4"});
+carousel.Items.Add(new CarouselItem(){Content="5"});
 
-3. Drag and Drop the Carousel to design view, in order to add the Carousel control to your application.
+{% endhighlight %}
 
-4. In the properties window, customize the properties of the Carousel.
+{% highlight VB %}
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+carousel.Items.Add(New CarouselItem() With { Key .Content = "1" })
+carousel.Items.Add(New CarouselItem() With { Key .Content = "2" })
+carousel.Items.Add(New CarouselItem() With { Key .Content = "3" })
+carousel.Items.Add(New CarouselItem() With { Key .Content = "4" })
+carousel.Items.Add(New CarouselItem() With { Key .Content = "5" })
 
+{% endhighlight %}
 
-The below code shows how Carousel can be added to an application by using Visual Studio in XAML
+{% endtabs %}
+
+## Adding images into Carousel
+
+The below code shows how Carousel can be added to an application using Visual Studio in XAML and code behind
 
 {% tabs %}
 
@@ -293,6 +307,7 @@ Dim image4 As Image = New Image
 Dim image5 As Image = New Image
 Dim image6 As Image = New Image
 Dim image7 As Image = New Image
+
 Dim bitimg1 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/1.png", UriKind.RelativeOrAbsolute))
 Dim bitimg2 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/2.png", UriKind.RelativeOrAbsolute))
 Dim bitimg3 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/3.png", UriKind.RelativeOrAbsolute))
@@ -301,6 +316,7 @@ Dim bitimg5 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/5
 Dim bitimg6 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/6.png", UriKind.RelativeOrAbsolute))
 Dim bitimg6 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/7.png", UriKind.RelativeOrAbsolute))
 Dim bitimg8 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/8.png", UriKind.RelativeOrAbsolute))
+
 image.Source = CType(bitimg1,ImageSource)
 image1.Source = CType(bitimg2,ImageSource)
 image2.Source = CType(bitimg3,ImageSource)
@@ -309,6 +325,7 @@ image4.Source = CType(bitimg5,ImageSource)
 image5.Source = CType(bitimg6,ImageSource)
 image6.Source = CType(bitimg7,ImageSource)
 image7.Source = CType(bitimg8,ImageSource)
+
 Dim viewbox1 As Viewbox = New Viewbox
 Dim viewbox2 As Viewbox = New Viewbox
 Dim viewbox3 As Viewbox = New Viewbox
@@ -317,6 +334,7 @@ Dim viewbox5 As Viewbox = New Viewbox
 Dim viewbox6 As Viewbox = New Viewbox
 Dim viewbox7 As Viewbox = New Viewbox
 Dim viewbox8 As Viewbox = New Viewbox
+
 viewbox1.Child = image
 viewbox2.Child = image1
 viewbox3.Child = image2
@@ -325,6 +343,7 @@ viewbox5.Child = image4
 viewbox6.Child = image5
 viewbox7.Child = image6
 viewbox8.Child = image7
+
 carousel.Items.Add(New CarouselItem)
 carousel.Items.Add(New CarouselItem)
 carousel.Items.Add(New CarouselItem)
@@ -338,6 +357,4 @@ carousel.Items.Add(New CarouselItem)
 
 {% endtabs %}
 
-
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
-
