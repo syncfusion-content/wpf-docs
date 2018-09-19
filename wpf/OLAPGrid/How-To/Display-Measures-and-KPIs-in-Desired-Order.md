@@ -123,7 +123,7 @@ End Function
 
 {% endtabs %}
 
-![Displaying measures and KPIs in desired order](Displaying-Measures-and-KPIs-in-Desired-Order_images/Displaying-measures-and-KPIs-desired-order.png)
+![Displaying measures and KPIs in desired order](Display-Measures-and-KPIs-in-Desired-Order_images/Displaying-measures-and-KPIs-desired-order.png)
 
 ## Hiding individual elements of KPI
 
@@ -172,4 +172,4 @@ valueElements.Elements.Add(New ValueElement With {.Name = "Growth in Order", .Is
 
 {% endtabs %}
 
-![Hiding elements of KPI](Displaying-Measures-and-KPIs-in-Desired-Order_images/Hiding-elements-of-KPI.png)
+![Hiding elements of KPI](Display-Measures-and-KPIs-in-Desired-Order_images/Hiding-elements-of-KPI.png)
