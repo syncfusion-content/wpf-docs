@@ -18,16 +18,14 @@ The `DocumentLanguage` property in the EditControl class enables the users to se
 {% tabs %}
 
 {% highlight XAML %}
-<sfedit:EditControl x:Name="editControl" DocumentLanguage="CSharp" DocumentSource="C:\Source.cs" FontSize="13"/>
 
+<sfedit:EditControl x:Name="editControl" DocumentLanguage="CSharp" DocumentSource="C:\Source.cs" FontSize="13"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 editControl.DocumentLanguage = Languages.CSharp;
-
-
 
 {% endhighlight %}
 
@@ -36,5 +34,3 @@ editControl.DocumentLanguage = Languages.CSharp;
 The following image displays the EditControl displaying contents.
 
 ![](Supported-Languages_images/Supported-Languages_img1.jpeg)
-
-
