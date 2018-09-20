@@ -9,11 +9,13 @@ documentation: ug
 
 # DateTime Patterns
 
-You can customize the display format of the date in the DateTimeEdit control by using the Pattern and CustomPattern properties.
+The DateTime `Pattern` helps you to specify the date-time display pattern for the `DateTimeEdit` control.
+
+The display format of the date in the `DateTimeEdit` control can be customized by the `Pattern` and `CustomPattern` properties.
 
 ## Pattern
 
-The date patterns supported by the DateTimeEdit control can be classified into the following eleven patterns: 
+The `DateTimeEdit` control supports the following patterns: 
 
 * LongDate 
 * LongTime 
@@ -27,24 +29,107 @@ The date patterns supported by the DateTimeEdit control can be classified into t
 * RFC1123 
 * YearMonth 
 
-The pattern is set by using the Pattern property. The following code snippet illustrates how to set the pattern as ShortDate:
+The pattern is set by using the Pattern property. The following code snippet illustrates how to set the patterns:
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
+
+<!--Setting ShortDate Pattern-->
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate"></syncfusion:DateTimeEdit>
 
+<!--Setting LongDate Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="LongDate"></syncfusion:DateTimeEdit>
+
+<!--Setting LongTime Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="LongTime"></syncfusion:DateTimeEdit>
+
+<!--Setting ShortTime Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortTime"></syncfusion:DateTimeEdit>
+
+<!--Setting FullDateTime Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="FullDateTime"></syncfusion:DateTimeEdit>
+
+<!--Setting MonthDay Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="MonthDay"></syncfusion:DateTimeEdit>
+
+<!--Setting ShortableDateTime Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortableDateTime"></syncfusion:DateTimeEdit>
+
+<!--Setting UniversalShortableDateTime Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="UniversalShortableDateTime"></syncfusion:DateTimeEdit>
+
+<!--Setting RFC1123 Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="RFC1123"></syncfusion:DateTimeEdit>
+
+<!--Setting YearMonth Pattern-->
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="YearMonth"></syncfusion:DateTimeEdit>
+
 {% endhighlight  %}
 
-{% highlight c# %}
+{% highlight C# %}
 
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new  Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);//Setting predefined patterndateTimeEdit.Pattern = DateTimePattern.ShortDate;
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new  Syncfusion.Windows.Shared.DateTimeEdit();
+
+dateTimeEdit.Width = 200;
+
+dateTimeEdit.Height = 25;
+
+dateTimeEdit.DateTime = new DateTime(2010, 07, 15);
+
+//Setting predefined ShortDate pattern
+
+dateTimeEdit.Pattern = DateTimePattern.ShortDate;
+
+//Setting predefined ShortTime pattern
+
+dateTimeEdit.Pattern = DateTimePattern.ShortTime;
+
+//Setting predefined LongDate pattern
+
+dateTimeEdit.Pattern = DateTimePattern.LongDate;
+
+//Setting predefined LongTime pattern
+
+dateTimeEdit.Pattern = DateTimePattern.LongTime;
+
+//Setting predefined FullDateTime pattern
+
+dateTimeEdit.Pattern = DateTimePattern.FullDateTime;
+
+//Setting predefined MonthDay pattern
+
+dateTimeEdit.Pattern = DateTimePattern.MonthDay;
+
+//Setting predefined ShortableDateTime pattern
+
+dateTimeEdit.Pattern = DateTimePattern.ShortableDateTime;
+
+//Setting predefined UniversalShortableDateTime pattern
+
+dateTimeEdit.Pattern = DateTimePattern.UniversalShortableDateTime;
+
+//Setting predefined RFC1123 pattern
+
+dateTimeEdit.Pattern = DateTimePattern.RFC1123;
+
+//Setting predefined YearMonth pattern
+
+dateTimeEdit.Pattern = DateTimePattern.YearMonth;
 
 {% endhighlight  %}
 
 {% endtabs %} 
-
 
 ![](DateTime-Patterns_images/DateTime-Patterns_img1.png)
 
@@ -69,7 +154,9 @@ dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
 dateTimeEdit.Pattern = DateTimePattern.CustomPattern;
 
 //Setting Custom Pattern
+
 dateTimeEdit.CustomPattern = "MM/dd/yy hh:mm:ss";
+
 this.LayoutRoot.Children.Add(dateTimeEdit);
 
 {% endhighlight %}
@@ -78,4 +165,4 @@ this.LayoutRoot.Children.Add(dateTimeEdit);
 
 ![](DateTime-Patterns_images/DateTime-Patterns_img2.png)
 
-N> CustomPattern support can be enabled by setting the Pattern property to the DateTimePattern.CustomPattern.
+N>CustomPattern support can be enabled by setting the Pattern property to the DateTimePattern.CustomPattern.
