@@ -181,4 +181,4 @@ Value field of SfDatePicker is localized
 ![](Localization_images/localization-img2.png)
 
 Display text "Choose Date" is localized to ar-SA culture
-{:.caption
+{:.caption}
