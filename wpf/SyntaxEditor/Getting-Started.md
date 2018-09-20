@@ -145,7 +145,7 @@ editControl.LoadFile();
 
 {% highlight VB %}
 
-editControl.LoadFile
+editControl.LoadFile()
 
 {% endhighlight %}
 
@@ -172,7 +172,7 @@ editControl.SaveFile();
 
 {% highlight VB %}
 
-editControl.SaveFile
+editControl.SaveFile()
 
 {% endhighlight %}
 
