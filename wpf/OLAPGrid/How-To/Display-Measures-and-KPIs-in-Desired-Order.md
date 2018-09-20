@@ -9,9 +9,9 @@ documentation: ug
 
 # Displaying Measures and KPIs in Desired Order
 
-By default, the measure items and KPI items are separately grouped and displayed one after another in OlapGrid control. In order to display them in the desired order, `DisplayMeasuresInDesiredOrder` property of OlapReport need to be set as `true` and the elements of measures and KPIs need to be defined by using the `ValueElements` object.
+By default, the measure items and KPI items are separately grouped and displayed one after another in the OLAP grid control. To display them in the desired order, the `DisplayMeasuresInDesiredOrder` property of the OLAP report should be set to `true` and the elements of measures and KPIs should be defined by using the `ValueElements` object.
 
-Refer to the below code sample to display the measures and KPIs in the desired order.
+Refer to the following code sample to display the measures and KPIs in the desired order.
 
 {% tabs %}
 
@@ -127,14 +127,14 @@ End Function
 
 ## Hiding individual elements of KPI
 
-The individual elements of KPI like value, goal, status and trend can be hidden using the following properties.
+The individual elements of KPI such as value, goal, status, and trend can be hidden using the following properties.
 
-* `ShowKPIValue` - Indicates whether to display the KPI's value element.
-* `ShowKPIGoal` - Indicates whether to display the KPI's goal element.
-* `ShowKPIStatus` - Indicates whether to display the KPI's status element.
-* `ShowKPITrend` - Indicates whether to display the KPI's trend element.
+* `ShowKPIValue`: Indicates whether to display the KPI's value element.
+* `ShowKPIGoal`: Indicates whether to display the KPI's goal element.
+* `ShowKPIStatus`: Indicates whether to display the KPI's status element.
+* `ShowKPITrend`: Indicates whether to display the KPI's trend element.
 
-Refer to the below code snippet to hide the value and goal elements of "Revenue" KPIs.
+Refer to the following code snippet to hide the value and goal elements of "Revenue" KPIs.
 
 {% tabs %}
 
