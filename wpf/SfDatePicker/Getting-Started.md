@@ -158,6 +158,10 @@ Dim datepicker As SfDatePicker = New SfDatePicker()
 
 datepicker.SetValueOnLostFocus = True
 
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Localization support
 
 Localization is the process of making application as multi-lingual, by formatting the content according to cultures.
