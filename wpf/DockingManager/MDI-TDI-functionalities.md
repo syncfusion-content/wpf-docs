@@ -525,9 +525,13 @@ DockingManager.SetShowCloseAllButThisMenuItem(Item2, false);
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img14.jpeg)
 
 
-## Grouping Document Tab Group
+# Creating Document Tab Group
 
 TDI document can be grouped like VisualStudio. It can be grouped by drag and Drop and also using the options in context menu items.
+
+## TabGroup creation using ContextMenu option
+
+In DockingManager, new tab group can be created at horizontal or vertical side in the document area using `ContextMenu` option.
 
 ### Creating Vertical Tab Group 
 
@@ -578,8 +582,75 @@ In TDI document, new tab group can be created by dragging the TabItem into the D
 
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
 
+## TabGroup creation through mouse interaction 
 
-### Disable TabGroups
+In the docking manager, a new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. To enable this functionality, set the TabSwitchSection attached property as ActiveFiles for document items, and ActiveToolWindows for dock items.
+
+### ActiveFiles mode
+
+Moving document items to a docked state can be restricted by setting the TabSwitchSection attached property as ActiveFiles. Users can also create a tab group at a side in the document area with the help of a drag provider similar to the one in Visual Studio.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" IsVS2010DraggingEnabled="True">  
+
+<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>   
+
+<ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Item2" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/> 
+
+<ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Item3" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot shows a tab group being created at the top of the document area.
+
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
+
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
+
+### ActiveToolWindows mode
+
+Dock items can be moved to both docked and document states in the document area by setting the TabSwitchSection attached property to ActiveToolWindows, which turns on the active tool windows mode. This mode enables a drag provider that will appear based on the cursor position near the sides of an item. If the cursor is positioned at the outer half of the docking hints, the item will move to the docked state. If the cursor is at the inner half, the item will move to the document state. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True" IsVS2010DraggingEnabled="True">    
+
+<ContentControl x:Name="Content1" syncfusion:DockingManager.Header="Item1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/>   
+
+<ContentControl x:Name="Content2" syncfusion:DockingManager.Header="Item2" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.TabSwitchSection="ActiveFiles"/> 
+
+<ContentControl x:Name="Content3" syncfusion:DockingManager.Header="Item3" syncfusion:DockingManager.DesiredWidthInDockedMode="200" syncfusion:DockingManager.DesiredHeightInDockedMode="50" syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.TabSwitchSection="ActiveToolWindows"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot shows moving an item to a docked state at the right side of the document area.
+
+![](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
+
+![](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
+
+The following screenshot shows moving an item to the document state at the right side of the document area.
+
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
+
+![](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
+
+N> These functionalities will take effect only when the `IsVs2010DraggingEnabled` property of DockingManager is true.
+
+## Disable TabGroups
 
 Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property `TabGroupEnabled` in DockingManager. 
  
