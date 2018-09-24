@@ -11,7 +11,7 @@ documentation: ug
 
 The TileView control provides support to handle a large amount of data through built-in virtualization features. While virtualization is enabled, it maintains only the items in the view port of the TileView control, which speeds up the loading time. Virtualization support can be enabled by setting the `IsVirtualizing` property to true in the TileView control.
 
-Once virtualization is enabled for the TileView control, it only creates item containers based on the RowCount and ColumnCount. Further items are created on demand based on the mouse wheel or based on the scroll offset changed in the scroll viewer.
+Once virtualization is enabled for the TileView control, it only creates item containers based on the `RowCount` and `ColumnCount`. Further items are created on demand based on the mouse wheel or based on the scroll offset changed in the scroll viewer.
 
 {% tabs %}
 
