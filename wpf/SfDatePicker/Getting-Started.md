@@ -128,6 +128,39 @@ The SelectorFormatString property used to specify format for the DateSelector
 
 ![](Features_images/Features_img2.png)
 
+### To set selected value in SfDatePicker on focus lost
+
+Enable `SetValueOnLostFocus` property to apply selected value of the `SfDateSelector` in `SfDatePicker` on its lost focus. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfDatePicker x:Name="DatePicker" SetValueOnLostFocus="True" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfDatePicker datepicker = new SfDatePicker();
+
+// Enabling SetValueOnLostFocus
+
+datepicker.SetValueOnLostFocus = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim datepicker As SfDatePicker = New SfDatePicker()
+    
+' Enabling SetValueOnLostFocus
+
+datepicker.SetValueOnLostFocus = True
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Localization support
 

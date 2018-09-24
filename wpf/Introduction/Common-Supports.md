@@ -178,31 +178,31 @@ Syncfusion.Diagram.wpf.dll</td><td>
 <tr>
 <td>
 Syncfusion.OlapChart.WPF.dll</td><td>
-{{ '[Syncfusion.OlapChart.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapChart.WPF1658884162.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapChart.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapChart.WPF1784490155.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapGrid.WPF.dll</td><td>
-{{ '[Syncfusion.OlapGrid.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGrid.WPF2142660258.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapGrid.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGrid.WPF-1780476966.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapClient.WPF.dll</td><td>
-{{ '[Syncfusion.OlapClient.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapClient.WPF1717995959.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapClient.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapClient.WPF800223558.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapGauge.WPF.dll</td><td>
-{{ '[Syncfusion.OlapGauge.wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGauge.wpf2074147713.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapGauge.wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapGauge.wpf-703450722.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapShared.WPF.dll</td><td>
-{{ '[Syncfusion.OlapShared.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapShared.WPF1945924551.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapShared.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapShared.WPF892025005.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapTools.WPF.dll</td><td>
-{{ '[Syncfusion.OlapTools.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapTools.WPF1987370456.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.OlapTools.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapTools.WPF1635487656.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.PivotAnalysis.WPF.dll</td><td>
-{{ '[Syncfusion.PivotAnalysis.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PivotAnalysis.Wpf-1995417678.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.PivotAnalysis.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PivotAnalysis.Wpf1519720402.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfGrid.WPF.dll</td><td>
