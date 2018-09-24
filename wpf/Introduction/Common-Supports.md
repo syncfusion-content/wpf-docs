@@ -154,11 +154,11 @@ Resource file (.resx)</th></tr>
 <tr>
 <td>
 Syncfusion.Tools.wpf.dll</td><td>
-{{ '[Syncfusion.Tools.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Tools.Wpf-1056696086.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Tools.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Tools.Wpf441372344.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Shared.wpf.dll</td><td>
-{{ '[Syncfusion.Shared.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Shared.Wpf-27502575.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.Shared.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Shared.Wpf1050714761.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.ReportViewer.wpf.dll.</td><td>
