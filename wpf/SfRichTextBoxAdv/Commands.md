@@ -795,7 +795,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply line spacing for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The line spacing value to beapplied for current selection.</p>
+<p>The line spacing value to be applied for current selection.</p>
 </td>
 </tr>
 <tr>
@@ -971,7 +971,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply right indent for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The right indent value to be applied for cuurent selection.</p>
+<p>The right indent value to be applied for current selection.</p>
 </td>
 </tr>
 <tr>
@@ -1343,7 +1343,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply table alignment for the selected table in a `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The table alignenment value to be applied for the selected table.</p>
+<p>The table alignment value to be applied for the selected table.</p>
 </td>
 </tr>
 <tr>
