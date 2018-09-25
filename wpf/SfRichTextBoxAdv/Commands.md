@@ -49,7 +49,6 @@ The following code example demonstrates how to bind commands for applying charac
 The following table contains the list of available UI Commands in SfRichTextBoxAdv.
 
 <table style="border-collapse: collapse; border: none;">
-<tbody>
 <thead>
 <td style="width: 198.0pt; border: solid windowtext 1.0pt; padding: 0pt 5.4pt 0pt 5.4pt;" width="264">
 <p style="margin-bottom: .0001pt; line-height: normal;">Command Name</p>
@@ -1449,5 +1448,4 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p style="margin-bottom: .0001pt; line-height: normal;">NA</p>
 </td>
 </tr>
-</tbody>
 </table>
