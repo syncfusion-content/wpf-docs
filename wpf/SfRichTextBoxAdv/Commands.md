@@ -76,7 +76,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>AfterSpacingCommand</p>
 </td>
 <td width="217">
-<p>Represents the command change the after spacing value for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+<p>Represents the command to change the after spacing value for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
 <p>The after spacing value to apply.</p>
@@ -156,7 +156,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to apply cell content alignment for the selected table cells in a `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The value to be applied for cell content alignement.</p>
+<p>The value to be applied for cell content alignment.</p>
 </td>
 </tr>
 <tr>
@@ -175,7 +175,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CellRightMarginCommand</p>
 </td>
 <td width="217">
-<p>Represents the command to chnage the value of right margin for the selected table cell in a `SfRichTextBoxAdv` control.</p>
+<p>Represents the command to change the value of right margin for the selected table cell in a `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
 <p>The value to apply for the right margin of selected cell.</p>
@@ -1394,7 +1394,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ToggleHighlightColorCommand</p>
 </td>
 <td width="217">
-<p>Represents the command that toggle highlight color` for the selected contents in a `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that toggle highlight color for the selected contents in a `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
 <p>NA</p>
