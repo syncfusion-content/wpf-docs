@@ -53,7 +53,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Export without outlines	
 
-By default, all the children in the tree grid will be exported in expanded state. You can disable the outlines in Excel by setting the [AllowOutlingGroups](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions~AllowOutliningGroups.html) property to false in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html) class.
+By default, all the children in the tree grid will be exported in expanded state. You can disable the outlines in Excel by setting the [AllowOutliningGroups](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions~AllowOutliningGroups.html) property to false in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html) class.
 
 {% tabs %}
 {% highlight c# %}
