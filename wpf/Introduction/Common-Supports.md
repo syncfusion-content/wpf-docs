@@ -162,11 +162,11 @@ Syncfusion.Shared.wpf.dll</td><td>
 <tr>
 <td>
 Syncfusion.ReportViewer.wpf.dll.</td><td>
-{{ '[Syncfusion.ReportViewer.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportViewer.Wpf-968258381.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.ReportViewer.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportViewer.Wpf-1945952232.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.ReportDesigner.wpf.dll</td><td>
-{{ '[Syncfusion.ReportDesigner.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportDesigner.Wpf-1942587845.zip)' | markdownify }}</td></tr>
+{{ '[Syncfusion.ReportDesigner.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.ReportDesigner.Wpf-1041727457.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfSchedule.WPF.dll</td><td>

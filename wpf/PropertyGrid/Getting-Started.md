@@ -447,3 +447,25 @@ Following are the steps to add the PropertyGrid control by using Blend.
    6. Drag the PropertyGrid control to Design View.
 
 ![](Getting-Started_images/Getting-Started_img14.png)
+
+## ToolTip
+
+ToolTips are used to show the information about the segment, when you mouse over on the segment.  You can show or hide the tooltip for the properties in the PropertyGrid by handling EnableToolTip Property. By default, `EnableToolTip` property is set to true.
+
+{% tabs %}
+
+{% highlight c# %}
+
+// to hide the tooltip for the properties
+this.propertygrid1.EnableToolTip = false;  
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+' to hide the tooltip for the properties
+Me.propertygrid1.EnableToolTip = False
+
+{% endhighlight %}
+
+{% endtabs %}

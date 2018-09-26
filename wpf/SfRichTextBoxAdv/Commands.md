@@ -43,3 +43,1405 @@ The following code example demonstrates how to bind commands for applying charac
 {% endhighlight %}
 
 {% endtabs %}
+
+## List of available Commands
+
+The following table contains the list of available UI Commands in SfRichTextBoxAdv.
+
+<table>
+<thead>
+<td width="264">
+<p>Command Name</p>
+</td>
+<td width="217">
+<p>Description</p>
+</td>
+<td width="152">
+<p>Command parameter (optional)</p>
+</td>
+</thead>
+<tr>
+<td width="264">
+<p>AddToDictionaryCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to add the selected spelling error word or specified word into the custom dictionary.</p>
+</td>
+<td width="152">
+<p>The custom word to add into dictionary.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>AfterSpacingCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to change the after spacing value for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The after spacing value to apply.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>AutoFitTableCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to fits the columns width of selected table in `SfRichTextBoxAdv` control based on type `AutoFitType`.</p>
+</td>
+<td width="152">
+<p>The `AutoFitType` to fit the columns of the table.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>BackSpaceKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform Backspace shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>BaselineAlignmentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to change `BaselineAlignment` for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>`BaselineAlignment` value to apply for the selected contents.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>BeforeSpacingCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to change the value of before spacing for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The before spacing value to apply.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>BoldCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to toggle the bold format for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CellBottomMarginCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to change bottom margin for the selected table cell in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The value to apply for the bottom margin of selected cell.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CellContentAlignmentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to apply cell content alignment for the selected table cells in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The value to be applied for cell content alignment.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CellLeftMarginCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to change left margin for the selected table cell in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The value to apply for the left margin of selected cell.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CellRightMarginCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to change the value of right margin for the selected table cell in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The value to apply for the right margin of selected cell.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CellSpacingCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to apply cell spacing for the selected table in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The cell spacing value to apply for the selected table.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CellTopMarginCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to apply top margin for the selected table cell in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The value to apply for the top margin of selected cell.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CellVerticalAlignmentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to apply vertical alignment for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>`CellVerticalAlignment` value to apply for the selected contents.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ChangeAllSpellingCommand</p>
+</td>
+<td width="217">
+<p>Represents the command, that all occurrences of any misspelled word at the current position to be changed.</p>
+</td>
+<td width="152">
+<p>The word to be replaced for all occurrences of misspelled word.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ChangeSpellingCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that any misspelled word at the current position to be changed.</p>
+</td>
+<td width="152">
+<p>The word to be replaced for immediate occurrence of misspelled word.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CheckSpellingCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that the document in a `SfRichTextBoxAdv` control be checked for spelling mistakes.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlDownKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Down shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlEndKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + End shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlHomeKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Home shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlLeftKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Left shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlRightKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Right shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlShiftDownKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Shift + Down shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlShiftEndKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Shift + End shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlShiftHomeKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Shift + Home shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlShiftLeftKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Shit + Left shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlShiftRightKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Shift + Right shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlShiftUpKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Shift + Up shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ControlUpKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to perform CTRL + Up shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CopyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that selected contents in a `SfRichTextBoxAdv` control be copied into the clipboard.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CopyHyperlinkCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that any hyperlink at the current position be copied.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>CutCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that the selected contents in a `SfRichTextBoxAdv` control be moved to the clipboard.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DecreaseFontSizeCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to decrease font size for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The value to applied for the font size.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DecreaseIndentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to decrease the left indent for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DefaultCellBottomMarginCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to apply bottom margin for the selected table in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The cell bottom margin value need to be set for current selected table.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DefaultCellLeftMarginCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to apply left margin for the selected table in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The cell left margin value need to be set for current selected table.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DefaultCellRightMarginCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to apply right margin for the selected table in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The cell right margin value need to be set for current selected table.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DefaultCellTopMarginCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to apply top margin for the selected table in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The cell top margin value need to be set for current selected table.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DeleteAllCommentsCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that to delete all comments in the document.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DeleteColumnCommand</p>
+</td>
+<td width="217">
+<p>Represents the command to delete the entire column of a table at current position in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DeleteCommentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that any comment at the current position be deleted.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DeleteKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Delete shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DeleteRowCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that delete the entire row of the table at current position in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DeleteTableCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that delete the entire table at current position in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>DownKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Down shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>EndKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform End shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>EnterKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Enter shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>FirstLineIndentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply first line indent for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The value need to be set for first line indent of current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>FontColorCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply font color for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The font color value to be applied for current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>FontFamilyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply font family for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The font family value to be applied for current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>FontSizeCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply font size for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The font size value to be applied for current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>HighlightColorCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply `HighlightColor` for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The highlight color value to be applied for current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>HomeKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Home shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>IgnoreAllSpellingErrorsCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that that all occurrences of any misspelled word at the current position be ignored.</p>
+</td>
+<td width="152">
+<p>The misspelled word to be ignored.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>IncreaseFontSizeCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that increase font size for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The value to be applied for font size.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>IncreaseIndentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that increase indent for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>InsertBreakCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that inserts a break at current position in `SfRichTextBoxAdv` control</p>
+</td>
+<td width="152">
+<p>The break type to be inserted</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>InsertColumnCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that insert a column at current position in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The `ColumnPlacement` value to insert column.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>InsertHyperlinkCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that inserts a hyperlink at current position in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The hyperlink to be inserted.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>InsertPictureCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that inserts a picture at current position in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The picture to be inserted.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>InsertRowCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that insert a row at current position in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The `RowPlacement` value to insert row.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>InsertTableCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that inserts a table at current position in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The row and column count to insert.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ItalicCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that toggle the italic format for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>LayoutTypeCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that the change the layout type in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The layout type to set.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>LeftIndentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply left indent for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The left indent value to be set for selected contents.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>LeftKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Left shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>LineSpacingCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply line spacing for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The line spacing value to be set for current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>LineSpacingTypeCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply `LineSpacingType` for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The line spacing type value to be set for current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>MergeSelectedCellsCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that merge the currently selected cells in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>NavigateHyperlinkCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that any hyperlink at the current position be navigated.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>NewCommentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that adds a comment at the current position.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>NewDocumentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that creates a new document in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>NextCommentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform navigation to any next comment in the document.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>OpenDocumentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that open an existing document in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>PageDownKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform PageDown shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>PageFitCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that the changes `PageFitType` in a `SfRichTextBoxAdv` control be changed.</p>
+</td>
+<td width="152">
+<p>The `PageFitType` value for the document in pages view.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>PageUpKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform PageUp shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>PasteCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that the clipboard contents be pasted in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>PreviousCommentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform navigation to any previous comment in the document.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>PrintDocumentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that print the document in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>RedoCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that the last undone operation in a `SfRichTextBoxAdv` control be redone.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>RemoveHyperlinkCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that any hyperlink at the current position be removed.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>RightIndentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply right indent for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The right indent value to be set for selected contents.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>RightKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Right shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>SaveAsDocumentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that save the document in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>SaveDocumentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that save the document in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>SelectAllCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that the entire document in a `SfRichTextBoxAdv` control be selected.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>SelectCellCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that selects the current cell from a table in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>SelectColumnCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that selects the entire current column from a table in a `SfRichTextBoxAdv`.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>SelectRowCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that selects the entire current row from a table in a `SfRichTextBoxAdv`.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>SelectTableCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that selects the current table in a `SfRichTextBoxAdv`.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShiftDownKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Shift + Down shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShiftEndKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Shift + End shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShiftEnterKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Shift + Enter shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShiftHomeKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Shift + Home shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShiftLeftKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Shift + Left shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShiftRightKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Shift + Right shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShiftTabKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Shift + Tab shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShiftUpKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Shift + Up shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowBordersAndShadingDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the borders and shading dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowCellOptionsDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the cell options dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowCommentsCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the comments in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowEncryptDocumentDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the encrypt document dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowFindAndReplaceDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the find and replace dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">&nbsp;</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowFontDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the font dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowHyperlinkDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the hyperlink dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowInsertTableDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the insert table dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowListDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the list dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowOptionsPaneCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the options pane in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowParagraphDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the paragraph dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowSpellingPaneCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the spelling pane in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowTableDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the table dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ShowTableOptionsDialogCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that shows the table options dialog in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>SpaceKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Space shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>StrikeThroughCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply `StrikeThrough` for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The strike through value to be set for current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>TabKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Tab shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>TableAlignmentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply table alignment for the selected table in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>`TableAlignment` value to apply for the selected table.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>TableLeftIndentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply left indent for the selected table in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The left indent value to be set for selected table.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>TextAlignmentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply text alignment for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The text alignment value to be set for current selection.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ToggleBaselineAlignmentCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that toggles baseline alignment for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>`BaselineAlignment` value to apply for the selected contents.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ToggleBeforeSpacingCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that toggle before spacing for the selected paragraphs in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ToggleHighlightColorCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that toggle highlight color for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>ToggleUnderlineCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that toggle underline for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The `Underline` value to be toggled.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>UnderlineCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that apply underline for the selected contents in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>The `Underline` value to be applied.</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>UndoCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that the last edit operation in a `SfRichTextBoxAdv` control be undone.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td width="264">
+<p>UpKeyCommand</p>
+</td>
+<td width="217">
+<p>Represents the command that perform Up shortcut operation in a `SfRichTextBoxAdv` control.</p>
+</td>
+<td width="152">
+<p>NA</p>
+</td>
+</tr>
+</table>
