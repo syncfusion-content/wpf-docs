@@ -220,7 +220,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ChangeAllSpellingCommand</p>
 </td>
 <td width="217">
-<p>Represents the command, that all occurrences of any misspelled word at the current position to be changed.</p>
+<p>Represents the command that all occurrences of any misspelled word at the current position to be changed.</p>
 </td>
 <td width="152">
 <p>The word to be replaced for all occurrences of misspelled word.</p>
