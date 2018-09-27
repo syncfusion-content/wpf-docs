@@ -946,7 +946,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>RedoCommand</p>
 </td>
 <td>
-<p>Represents the command that the last undone operation in `SfRichTextBoxAdv` control be redone.</p>
+<p>Represents the command that redo the last undo operation in `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1428,7 +1428,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>UndoCommand</p>
 </td>
 <td>
-<p>Represents the command that the last edit operation in `SfRichTextBoxAdv` control be undone.</p>
+<p>Represents the command that undo the last edit operation in `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
