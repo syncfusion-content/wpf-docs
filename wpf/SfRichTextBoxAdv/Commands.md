@@ -66,7 +66,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>AddToDictionaryCommand</p>
 </td>
 <td width="217">
-<p>Represents the command to add the selected spelling error word or specified word into the custom dictionary.</p>
+<p>Represents the command to add the selected or specified custom word into the custom dictionary.</p>
 </td>
 <td width="152">
 <p>The custom word to add into dictionary.</p>
@@ -242,7 +242,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CheckSpellingCommand</p>
 </td>
 <td width="217">
-<p>Represents the command that the document in `SfRichTextBoxAdv` control be checked for spelling mistakes.</p>
+<p>Represents the command that checks spelling mistakes in the document of `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
 <p>NA</p>
