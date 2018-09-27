@@ -80,7 +80,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to change the after spacing value for the selected paragraphs in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The after spacing value to be applied for current selection.</p>
+<p>The after spacing value to be applied for selected paragraph.</p>
 </td>
 </tr>
 <tr>
@@ -113,7 +113,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to change `BaselineAlignment` for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The baseline alignment value to be applied for current selection.</p>
+<p>The baseline alignment value to be applied for selected text.</p>
 </td>
 </tr>
 <tr>
@@ -179,7 +179,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to change the value of right margin for the selected table cell in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The right margin value to be applied for the current selected cell.</p>
+<p>The right margin value to be applied for the selected cell.</p>
 </td>
 </tr>
 <tr>
@@ -421,7 +421,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to decrease font size for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The font size value to be applied for the current selection.</p>
+<p>The font size value to be applied for the selected text.</p>
 </td>
 </tr>
 <tr>
@@ -586,7 +586,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply first line indent for the selected paragraphs in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The first line indent&nbsp;value to be applied for the current selection.</p>
+<p>The first line indent&nbsp;value to be applied for the selected paragraph.</p>
 </td>
 </tr>
 <tr>
@@ -597,7 +597,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply font color for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The font color value to be applied for current selection.</p>
+<p>The font color value to be applied for selected text.</p>
 </td>
 </tr>
 <tr>
@@ -608,7 +608,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply font family for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The font family value to be applied for current selection.</p>
+<p>The font family value to be applied for selected text.</p>
 </td>
 </tr>
 <tr>
@@ -619,7 +619,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply font size for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The font size value to be applied for current selection.</p>
+<p>The font size value to be applied for selected text.</p>
 </td>
 </tr>
 <tr>
@@ -630,7 +630,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply `HighlightColor` for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The highlight color value to be applied for current selection.</p>
+<p>The highlight color value to be applied for selected text.</p>
 </td>
 </tr>
 <tr>
@@ -663,7 +663,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that increase font size for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The font size value to be applied for the current selection.</p>
+<p>The font size value to be applied for the selected text.</p>
 </td>
 </tr>
 <tr>
@@ -773,7 +773,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply left indent for the selected paragraphs in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The left indent value to be&nbsp;applied for current selection.</p>
+<p>The left indent value to be&nbsp;applied for selected paragraph.</p>
 </td>
 </tr>
 <tr>
@@ -795,7 +795,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply line spacing for the selected paragraphs in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The line spacing value to be applied for current selection.</p>
+<p>The line spacing value to be applied for selected paragraph.</p>
 </td>
 </tr>
 <tr>
@@ -806,7 +806,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply `LineSpacingType` for the selected paragraphs in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The line spacing type value to be applied for current selection.</p>
+<p>The line spacing type value to be applied for selected paragraph.</p>
 </td>
 </tr>
 <tr>
@@ -971,7 +971,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply right indent for the selected paragraphs in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The right indent value to be applied for current selection.</p>
+<p>The right indent value to be applied for selected paragraph.</p>
 </td>
 </tr>
 <tr>
@@ -1321,7 +1321,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply `StrikeThrough` for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The strike through value to be applied for current selection.</p>
+<p>The strike through value to be applied for selected text.</p>
 </td>
 </tr>
 <tr>
@@ -1365,7 +1365,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply text alignment for the selected paragraphs in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The text alignment value to be applied for current selection.</p>
+<p>The text alignment value to be applied for selected paragraph.</p>
 </td>
 </tr>
 <tr>
@@ -1376,7 +1376,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that toggles baseline alignment for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The baseline alignment value to be applied for current selection.</p>
+<p>The baseline alignment value to be applied for selected text.</p>
 </td>
 </tr>
 <tr>
@@ -1409,7 +1409,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that toggle underline for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The `Underline` value to be toggled for current selection.</p>
+<p>The `Underline` value to be toggled for selected text.</p>
 </td>
 </tr>
 <tr>
@@ -1420,7 +1420,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that apply underline for the selected contents in `SfRichTextBoxAdv` control.</p>
 </td>
 <td width="152">
-<p>The `Underline` value to be applied for current selection.</p>
+<p>The `Underline` value to be applied for selected text.</p>
 </td>
 </tr>
 <tr>
