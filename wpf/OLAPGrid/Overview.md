@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| OlapGrid | Wpf | Syncfusion
-description: overview
+title: Overview of OLAP Grid Control for WPF | Syncfusion
+description: The olap grid control is used to visualize the multi-dimensional data from OLAP data source in tabular format.
 platform: wpf
 control: OlapGrid
 documentation: ug

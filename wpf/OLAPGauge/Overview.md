@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview for OLAP Gauge
-description: Overview for OLAP Gauge
+title: Overview of OLAP Gauge Control for WPF | Syncfusion
+description: The olag gauge control is used to highlight the busines information in executive dashboards and report cards.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
