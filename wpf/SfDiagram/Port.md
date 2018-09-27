@@ -610,7 +610,7 @@ public NodeViewModel AddNode(double offsetX, double offsetY, string shape, doubl
 {% endtabs %}
 ![](Port_images/DockPort.png)
 
-For more information, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
+For more information, refer to [Draw Connectors](/wpf/sfdiagram/tools#drawing-tools:connectors "Draw Connectors").
 
 ## Padding
 
@@ -766,4 +766,4 @@ The appearance of DockPort can be customized using `ConnectorGeometryStyle` prop
 
 ## Constraints
 
-The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/Constraints#port-constraints "Port Constraints").
+The `Constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/wpf/sfdiagram/constraints#port-constraints "Port Constraints").

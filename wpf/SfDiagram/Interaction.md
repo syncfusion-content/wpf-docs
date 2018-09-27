@@ -327,7 +327,7 @@ QuickCommand can be aligned relative to boundaries of the Node or segments of th
 * `HorizontalAlignment` and `VerticalAlignment`properties are used to align the quick commands for horizontal and vertical positions.
 * `Margin` is an absolute value used to add some blank space in any one of its four sides.
 
-The Alignment of QuickCommand is similar  to [Annotation Alignment](/wpf/sfdiagram/Annotation#alignment "Alignment").   
+The Alignment of QuickCommand is similar  to [Annotation Alignment](/wpf/sfdiagram/annotation#alignment "Alignment").   
 
 ## Automatic Port creation
 
@@ -508,8 +508,8 @@ public class CustomDiagram : SfDiagram
 
  Defines the connection with diagramming elements when the connector enters vicinity area of the diagramming elements.
 
-For more information about HitPadding for Node, refer to [Hit Padding](/wpf/sfdiagram/Node#hit-padding "Hit Padding").
-For more information about HitPadding for Connector, refer to [Hit Padding](/wpf/sfdiagram/Connector#hit-hadding "Hit Padding").
+For more information about HitPadding for Node, refer to [Hit Padding](/wpf/sfdiagram/node#hit-padding "Hit Padding").
+For more information about HitPadding for Connector, refer to [Hit Padding](/wpf/sfdiagram/connector#hit-hadding "Hit Padding").
 
 ## Zoom pan 
 
@@ -662,7 +662,7 @@ The following table illustrates List of Commands with key Gesture.
 | Ctrl + Shift + ] | BringFront | Brings the selected element to front over all the other overlapped elements. |
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
 
-To add custom commands, configure or modify key/mouse gesture through [Command Manager](/wpf/sfdiagram/Commands#command-manager "Command Manager");
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/wpf/sfdiagram/commands#command-manager "Command Manager");
 
 ## Deletion
 
