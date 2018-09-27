@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: Overview
+title: Overview of OLAP Chart Control for WPF | Syncfusion
+description: The olap chart control is used to visualize the multi-dimensional data from OLAP data source in graphical format.
 platform: wpf
 control: OLAP Chart
 documentation: ug
