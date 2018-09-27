@@ -223,6 +223,14 @@ Syncfusion.Spreadsheet.Wpf.dll</td><td>
 <td>
 Syncfusion.Grid.WPF.dll</td><td>
 {{ '[Syncfusion.Grid.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Grid.Wpf1812217710.zip)' | markdownify }}</td></tr>
+<tr>
+<td>
+Syncfusion.SfRichTextBoxAdv.WPF.dll</td><td>
+{{ '[Syncfusion.SfRichTextBoxAdv.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579.zip)' | markdownify }}</td></tr>
+<tr>
+<td>
+Syncfusion.SfRichTextRibbon.WPF.dll</td><td>
+{{ '[Syncfusion.SfRichTextRibbon.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579.zip)' | markdownify }}</td></tr>
 </table>
 
 
