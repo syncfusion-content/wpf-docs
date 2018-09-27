@@ -15,7 +15,7 @@ Nodes are graphical objects used to visually represent the geometrical informati
 
 ## Shapes
 
-We have provided some basic built-in shapes as ResourceDictionary.For more information, refer to [Shapes](/wpf/sfdiagram/Shapes). 
+We have provided some basic built-in shapes as ResourceDictionary.For more information, refer to [Shapes](/wpf/sfdiagram/shapes). 
 
 ## Create Node
 
@@ -64,17 +64,17 @@ Now,Node would be like this,
 
 ### Add Node from stencil
 
-Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to [Stencil](/wpf/sfdiagram/Stencil "Stencil").
+Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
 
 ### Create Node through data source
 
 Nodes can be generated automatically with the information provided through data source.For more information about data source, 
 
-refer to [Data Source](/wpf/sfdiagram/DataSource "DataSource").
+refer to [Data Source](/wpf/sfdiagram/datasource "DataSource").
 
 ### Draw Nodes
 
-Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to [Draw Nodes](/wpf/sfdiagram/Tools#drawing-tools:shapes "Draw Nodes").
+Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to [Draw Nodes](/wpf/sfdiagram/tools#drawing-tools:shapes "Draw Nodes").
 
 ## Position
 
@@ -256,7 +256,7 @@ To explore about selection and selection related events , refer to [Selection](/
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
 * The Node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/Node#position "Position").
+* Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/wpf/sfdiagram/node#position "Position").
 
 * `NodeChangedEvent` will notify the `RotateAngle` changes with their old and new values.Along with that, this event will give information about iteraction State. To explore about arguments, please refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
@@ -270,4 +270,4 @@ To explore about selection and selection related events , refer to [Selection](/
 
 ## Constraints
 
-The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/Constraints#node-constraints "Node Constraints").
+The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/wpf/sfdiagram/constraints#node-constraints "Node Constraints").
