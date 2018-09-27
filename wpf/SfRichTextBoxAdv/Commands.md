@@ -110,7 +110,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>BaselineAlignmentCommand</p>
 </td>
 <td>
-<p>Represents the command to change `BaselineAlignment` for the selected&nbsp;text.</p>
+<p>Represents the command to change `BaselineAlignment` for the selected text.</p>
 </td>
 <td>
 <p>The baseline alignment value to be applied.</p>
@@ -132,7 +132,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>BoldCommand</p>
 </td>
 <td>
-<p>Represents the command to toggle the bold&nbsp;style for the selected&nbsp;text.</p>
+<p>Represents the command to toggle the bold style for the selected text.</p>
 </td>
 <td>
 <p>NA</p>
@@ -220,7 +220,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ChangeAllSpellingCommand</p>
 </td>
 <td>
-<p>Represents the command that changes all occurrences of&nbsp;a selected misspelled word.</p>
+<p>Represents the command that changes all occurrences of a selected misspelled word.</p>
 </td>
 <td>
 <p>The word to be replaced.</p>
@@ -231,7 +231,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ChangeSpellingCommand</p>
 </td>
 <td>
-<p>Represents the command that&nbsp;changes the selected misspelled word.</p>
+<p>Represents the command that changes the selected misspelled word.</p>
 </td>
 <td>
 <p>The word to be replaced.</p>
@@ -286,7 +286,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlLeftKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "CTRL + LEFT" key in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that perform navigation for "CTRL + LEFT" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -374,7 +374,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlUpKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "CTRL + UP" key in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that perform navigation for "CTRL + UP" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -407,7 +407,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CutCommand</p>
 </td>
 <td>
-<p>Represents the command that removes&nbsp;selected contents&nbsp;from `SfRichTextBoxAdv` control and copies the same to clipboard.</p>
+<p>Represents the command that removes selected contents from `SfRichTextBoxAdv` control and copies the same to clipboard.</p>
 </td>
 <td>
 <p>NA</p>
@@ -418,7 +418,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DecreaseFontSizeCommand</p>
 </td>
 <td>
-<p>Represents the command to decrease font size for the selected&nbsp;text.</p>
+<p>Represents the command to decrease font size for the selected text.</p>
 </td>
 <td>
 <p>The font size value to be applied.</p>
@@ -572,7 +572,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>EnterKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform action for "ENTER" keyl.</p>
+<p>Represents the command that perform action for "ENTER" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -594,7 +594,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>FontColorCommand</p>
 </td>
 <td>
-<p>Represents the command that apply font color for the selected&nbsp;text.</p>
+<p>Represents the command that apply font color for the selected text.</p>
 </td>
 <td>
 <p>The font color value to be applied.</p>
@@ -616,7 +616,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>FontSizeCommand</p>
 </td>
 <td>
-<p>Represents the command that apply font size for the selected&nbsp;text.</p>
+<p>Represents the command that apply font size for the selected text.</p>
 </td>
 <td>
 <p>The font size value to be applied.</p>
@@ -627,7 +627,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>HighlightColorCommand</p>
 </td>
 <td>
-<p>Represents the command that apply `HighlightColor` for the selected&nbsp;text.</p>
+<p>Represents the command that apply `HighlightColor` for the selected text.</p>
 </td>
 <td>
 <p>The highlight color value to be applied.</p>
@@ -660,7 +660,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>IncreaseFontSizeCommand</p>
 </td>
 <td>
-<p>Represents the command that increase font size for the selected&nbsp;text.</p>
+<p>Represents the command that increase font size for the selected text.</p>
 </td>
 <td>
 <p>The font size value to be applied.</p>
@@ -748,7 +748,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ItalicCommand</p>
 </td>
 <td>
-<p>Represents the command that toggle the italic format for the selected&nbsp;text.</p>
+<p>Represents the command that toggle the italic format for the selected text.</p>
 </td>
 <td>
 <p>NA</p>
@@ -759,7 +759,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>LayoutTypeCommand</p>
 </td>
 <td>
-<p>Represents the command that the change the layout type&nbsp;of `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that the change the layout type of `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>The layout type to be set for SfRichTextBoxAdv.</p>
@@ -913,7 +913,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>PasteCommand</p>
 </td>
 <td>
-<p>Represents the command that&nbsp;paste the clipboard contents into `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that paste the clipboard contents into `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -935,7 +935,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>PrintDocumentCommand</p>
 </td>
 <td>
-<p>Represents the command that print the document in&nbsp;`SfRichTextBoxAdv` control.</p>
+<p>Represents the command that print the document in `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1012,7 +1012,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SelectAllCommand</p>
 </td>
 <td>
-<p>Represents the command that&nbsp;selects all the content in `SfRichTextBoxAdv`.</p>
+<p>Represents the command that selects all the content in `SfRichTextBoxAdv`.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1318,7 +1318,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>StrikeThroughCommand</p>
 </td>
 <td>
-<p>Represents the command that apply `StrikeThrough` for the selected&nbsp;text in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that apply `StrikeThrough` for the selected text in `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>The strike through value to be applied.</p>
@@ -1395,7 +1395,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ToggleHighlightColorCommand</p>
 </td>
 <td>
-<p>Represents the command that toggle highlight color for the selected&nbsp;text.</p>
+<p>Represents the command that toggle highlight color for the selected text.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1406,7 +1406,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ToggleUnderlineCommand</p>
 </td>
 <td>
-<p>Represents the command that toggle underline for the selected&nbsp;text.</p>
+<p>Represents the command that toggle underline for the selected text.</p>
 </td>
 <td>
 <p>The `Underline` value to be toggled.</p>
@@ -1417,7 +1417,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>UnderlineCommand</p>
 </td>
 <td>
-<p>Represents the command that apply underline for the selected&nbsp;text.</p>
+<p>Represents the command that apply underline for the selected text.</p>
 </td>
 <td>
 <p>The `Underline` value to be applied.</p>
