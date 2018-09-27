@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion ToolBarAdv control for WPF
-description: Features overview of ToolBarAdv control for WPF
+title: Overview of Advanced ToolBar Control | WPF | Syncfusion
+description: The ToolBarAdv control is a container for the group of commands or control which have relative functions.
 platform: wpf
 control: ToolBarAdv
 documentation: ug

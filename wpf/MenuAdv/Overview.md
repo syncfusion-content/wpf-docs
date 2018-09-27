@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| MenuAdv | Wpf | Syncfusion
-description: overview
+title: Overview of Advanced Menu Control | WPF | Syncfusion
+description: MenuAdv control is used to organizae the elements hierarchically that are associated with commands and event handlers.
 platform: wpf
 control: MenuAdv
 documentation: ug
