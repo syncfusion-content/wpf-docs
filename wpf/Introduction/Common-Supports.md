@@ -201,6 +201,14 @@ Syncfusion.OlapTools.WPF.dll</td><td>
 {{ '[Syncfusion.OlapTools.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.OlapTools.WPF1635487656.zip)' | markdownify }}</td></tr>
 <tr>
 <td>
+Syncfusion.PdfViewer.Windows.dll</td><td>
+{{ '[Syncfusion.PdfViewer.Windows.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.Windows1715928907.zip)' | markdownify }}</td></tr>
+<tr>
+<td>
+Syncfusion.PdfViewer.WPF.dll</td><td>
+{{ '[Syncfusion.PdfViewer.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.WPF1353718278.zip)' | markdownify }}</td></tr>
+<tr>
+<td>
 Syncfusion.PivotAnalysis.WPF.dll</td><td>
 {{ '[Syncfusion.PivotAnalysis.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PivotAnalysis.Wpf1519720402.zip)' | markdownify }}</td></tr>
 <tr>
@@ -215,6 +223,14 @@ Syncfusion.Spreadsheet.Wpf.dll</td><td>
 <td>
 Syncfusion.Grid.WPF.dll</td><td>
 {{ '[Syncfusion.Grid.Wpf.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.Grid.Wpf1812217710.zip)' | markdownify }}</td></tr>
+<tr>
+<td>
+Syncfusion.SfRichTextBoxAdv.WPF.dll</td><td>
+{{ '[Syncfusion.SfRichTextBoxAdv.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579.zip)' | markdownify }}</td></tr>
+<tr>
+<td>
+Syncfusion.SfRichTextRibbon.WPF.dll</td><td>
+{{ '[Syncfusion.SfRichTextRibbon.WPF.resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources86404579.zip)' | markdownify }}</td></tr>
 </table>
 
 

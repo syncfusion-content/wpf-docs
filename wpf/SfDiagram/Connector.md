@@ -77,15 +77,15 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 Connectors can be predefined and added to the stencil. You can drop those Connectors into the Diagram, when required. 
 
-For more information about adding Connectors from stencil, refer to [Stencil](/wpf/sfdiagram/Stencil "Stencil").
+For more information about adding Connectors from stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
 
 ### Connectors through data source
 
-Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/wpf/sfdiagram/DataSource "DataSource").
+Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/wpf/sfdiagram/datasource "DataSource").
 
 ### Draw Connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to [Draw Connectors](/wpf/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to [Draw Connectors](/wpf/sfdiagram/tools#drawing-tools:connectors "Draw Connectors").
 
 ## Connect Nodes
 
@@ -572,5 +572,5 @@ diagram.Connectors = lines;
 
 ## Constraints
 
-The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/Constraints#connector-constraints "Connector Constraints").
+The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/constraints#connector-constraints "Connector Constraints").
 
