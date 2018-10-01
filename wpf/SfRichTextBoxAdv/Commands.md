@@ -69,7 +69,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to add the selected or specified custom word into the custom dictionary.</p>
 </td>
 <td>
-<p>The custom word to add into dictionary.</p>
+<p>The custom word to be added.</p>
 </td>
 </tr>
 <tr>
@@ -77,7 +77,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>AfterSpacingCommand</p>
 </td>
 <td>
-<p>Represents the command to change the after spacing for the selected paragraphs.</p>
+<p>Represents the command to apply after spacing for the selected paragraphs.</p>
 </td>
 <td>
 <p>The after spacing value to be applied.</p>
@@ -88,7 +88,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>AutoFitTableCommand</p>
 </td>
 <td>
-<p>Represents the command to fits the columns width of selected table in `SfRichTextBoxAdv` control based on type `AutoFitType`.</p>
+<p>Represents the command that fits the columns width of selected table based on the specified `AutoFitType`.</p>
 </td>
 <td>
 <p>The `AutoFitType` to fit the columns of the table.</p>
@@ -110,7 +110,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>BaselineAlignmentCommand</p>
 </td>
 <td>
-<p>Represents the command to change `BaselineAlignment` for the selected text.</p>
+<p>Represents the command to apply `BaselineAlignment` for the selected text.</p>
 </td>
 <td>
 <p>The baseline alignment value to be applied.</p>
@@ -121,7 +121,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>BeforeSpacingCommand</p>
 </td>
 <td>
-<p>Represents the command to change the before spacing for the selected paragraphs.</p>
+<p>Represents the command to apply before spacing for the selected paragraphs.</p>
 </td>
 <td>
 <p>The before spacing value to be applied.</p>
@@ -132,7 +132,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>BoldCommand</p>
 </td>
 <td>
-<p>Represents the command to toggle the bold style for the selected text.</p>
+<p>Represents the command to toggle bold style for the selected text.</p>
 </td>
 <td>
 <p>NA</p>
@@ -143,7 +143,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CellBottomMarginCommand</p>
 </td>
 <td>
-<p>Represents the command to change bottom margin for the selected table cell.</p>
+<p>Represents the command to apply bottom margin for the selected table cells.</p>
 </td>
 <td>
 <p>The bottom margin value to be applied.</p>
@@ -154,7 +154,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CellContentAlignmentCommand</p>
 </td>
 <td>
-<p>Represents the command to apply content alignment for the selected table cells .</p>
+<p>Represents the command to apply content alignment for the selected table cells.</p>
 </td>
 <td>
 <p>The cell content alignment value to be applied.</p>
@@ -165,7 +165,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CellLeftMarginCommand</p>
 </td>
 <td>
-<p>Represents the command to change left margin for the selected table cell.</p>
+<p>Represents the command to apply left margin for the selected table cells.</p>
 </td>
 <td>
 <p>The left margin value to be applied.</p>
@@ -176,7 +176,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CellRightMarginCommand</p>
 </td>
 <td>
-<p>Represents the command to change the value of right margin for the selected table cell.</p>
+<p>Represents the command to apply right margin for the selected table cells.</p>
 </td>
 <td>
 <p>The right margin value to be applied.</p>
@@ -198,7 +198,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CellTopMarginCommand</p>
 </td>
 <td>
-<p>Represents the command to apply top margin for the selected table cell.</p>
+<p>Represents the command to apply top margin for the selected table cells.</p>
 </td>
 <td>
 <p>The top margin value to be applied.</p>
@@ -209,7 +209,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CellVerticalAlignmentCommand</p>
 </td>
 <td>
-<p>Represents the command to apply vertical alignment for the selected cell.</p>
+<p>Represents the command to apply vertical alignment for the selected table cells.</p>
 </td>
 <td>
 <p>The vertical alignment value to be applied.</p>
@@ -253,7 +253,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlDownKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "CTRL + DOWN" key.</p>
+<p>Represents the command that performs navigation for "CTRL + DOWN" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -264,7 +264,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlEndKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "CTRL + END" key.</p>
+<p>Represents the command that performs navigation for "CTRL + END" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -275,7 +275,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlHomeKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "CTRL + HOME" key.</p>
+<p>Represents the command that performs navigation for "CTRL + HOME" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -286,7 +286,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlLeftKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "CTRL + LEFT" key.</p>
+<p>Represents the command that performs navigation for "CTRL + LEFT" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -297,7 +297,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlRightKeyCommand</p>
 </td>
 <td>
-<p>Represents the command to perform navigation for "CTRL + RIGHT" key .</p>
+<p>Represents the command that performs navigation for "CTRL + RIGHT" key .</p>
 </td>
 <td>
 <p>NA</p>
@@ -308,7 +308,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlShiftDownKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "CTRL + SHIFT + DOWN" key.</p>
+<p>Represents the command that performs selection for "CTRL + SHIFT + DOWN" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -319,7 +319,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlShiftEndKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "CTRL + SHIFT + END" key.</p>
+<p>Represents the command that performs selection for "CTRL + SHIFT + END" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -330,7 +330,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlShiftHomeKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "CTRL + SHIFT + HOME" key.</p>
+<p>Represents the command that performs selection for "CTRL + SHIFT + HOME" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -341,7 +341,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlShiftLeftKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "CTRL + SHIFT + LEFT" key.</p>
+<p>Represents the command that performs selection for "CTRL + SHIFT + LEFT" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -352,7 +352,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlShiftRightKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "CTRL + SHIFT + RIGHT" key.</p>
+<p>Represents the command that performs selection for "CTRL + SHIFT + RIGHT" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -363,7 +363,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlShiftUpKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "CTRL + SHIFT + UP" key.</p>
+<p>Represents the command that performs selection for "CTRL + SHIFT + UP" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -374,7 +374,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ControlUpKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "CTRL + UP" key.</p>
+<p>Represents the command that performs navigation for "CTRL + UP" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -407,7 +407,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>CutCommand</p>
 </td>
 <td>
-<p>Represents the command that removes selected contents from `SfRichTextBoxAdv` control and copies the same to clipboard.</p>
+<p>Represents the command that removes the selected contents from `SfRichTextBoxAdv` control and copies the same to clipboard.</p>
 </td>
 <td>
 <p>NA</p>
@@ -429,7 +429,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DecreaseIndentCommand</p>
 </td>
 <td>
-<p>Represents the command to decrease the left indent for the selected paragraphs.</p>
+<p>Represents the command to decrease left indent for the selected paragraphs.</p>
 </td>
 <td>
 <p>NA</p>
@@ -484,7 +484,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DeleteAllCommentsCommand</p>
 </td>
 <td>
-<p>Represents the command that to delete all comments in the document.</p>
+<p>Represents the command to delete all the comments in the document.</p>
 </td>
 <td>
 <p>NA</p>
@@ -517,7 +517,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DeleteKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform action for "DELETE" key.</p>
+<p>Represents the command that performs action for "DELETE" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -528,7 +528,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DeleteRowCommand</p>
 </td>
 <td>
-<p>Represents the command that delete the selected row of a table.</p>
+<p>Represents the command to delete the selected row of a table.</p>
 </td>
 <td>
 <p>NA</p>
@@ -539,7 +539,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DeleteTableCommand</p>
 </td>
 <td>
-<p>Represents the command that delete the selected table.</p>
+<p>Represents the command to delete the selected table.</p>
 </td>
 <td>
 <p>NA</p>
@@ -550,7 +550,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DownKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "DOWN" key.</p>
+<p>Represents the command that performs navigation for "DOWN" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -561,7 +561,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>EndKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "END" key.</p>
+<p>Represents the command that performs navigation for "END" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -572,7 +572,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>EnterKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform action for "ENTER" key.</p>
+<p>Represents the command that performs action for "ENTER" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -583,7 +583,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>FirstLineIndentCommand</p>
 </td>
 <td>
-<p>Represents the command that apply first line indent for the selected paragraphs.</p>
+<p>Represents the command to apply first line indent for the selected paragraphs.</p>
 </td>
 <td>
 <p>The first line indent value to be applied.</p>
@@ -594,7 +594,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>FontColorCommand</p>
 </td>
 <td>
-<p>Represents the command that apply font color for the selected text.</p>
+<p>Represents the command to apply font color for the selected text.</p>
 </td>
 <td>
 <p>The font color value to be applied.</p>
@@ -605,7 +605,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>FontFamilyCommand</p>
 </td>
 <td>
-<p>Represents the command that apply font family for the selected text.</p>
+<p>Represents the command to apply font family for the selected text.</p>
 </td>
 <td>
 <p>The font family value to be applied.</p>
@@ -616,7 +616,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>FontSizeCommand</p>
 </td>
 <td>
-<p>Represents the command that apply font size for the selected text.</p>
+<p>Represents the command to apply font size for the selected text.</p>
 </td>
 <td>
 <p>The font size value to be applied.</p>
@@ -627,7 +627,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>HighlightColorCommand</p>
 </td>
 <td>
-<p>Represents the command that apply `HighlightColor` for the selected text.</p>
+<p>Represents the command to apply `HighlightColor` for the selected text.</p>
 </td>
 <td>
 <p>The highlight color value to be applied.</p>
@@ -638,7 +638,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>HomeKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "HOME" key.</p>
+<p>Represents the command that performs navigation for "HOME" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -649,7 +649,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>IgnoreAllSpellingErrorsCommand</p>
 </td>
 <td>
-<p>Represents the command that ignores all the occurrence of selected misspelled word.</p>
+<p>Represents the command that ignores all the occurrence of a selected misspelled word.</p>
 </td>
 <td>
 <p>The misspelled word to be ignored.</p>
@@ -660,7 +660,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>IncreaseFontSizeCommand</p>
 </td>
 <td>
-<p>Represents the command that increase font size for the selected text.</p>
+<p>Represents the command to increase font size for the selected text.</p>
 </td>
 <td>
 <p>The font size value to be applied.</p>
@@ -671,7 +671,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>IncreaseIndentCommand</p>
 </td>
 <td>
-<p>Represents the command that increase indent for the selected paragraphs.</p>
+<p>Represents the command to increase indent for the selected paragraphs.</p>
 </td>
 <td>
 <p>NA</p>
@@ -693,7 +693,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>InsertColumnCommand</p>
 </td>
 <td>
-<p>Represents the command that insert a column at selection.</p>
+<p>Represents the command that inserts a column to the selected table.</p>
 </td>
 <td>
 <p>The `ColumnPlacement` value to insert column.</p>
@@ -726,7 +726,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>InsertRowCommand</p>
 </td>
 <td>
-<p>Represents the command that insert a row at selection.</p>
+<p>Represents the command that inserts a row to the selected table.</p>
 </td>
 <td>
 <p>The `RowPlacement` value to insert row.</p>
@@ -740,7 +740,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command that inserts a table at selection.</p>
 </td>
 <td>
-<p>The row and column count to insert.</p>
+<p>The row and column count of the table.</p>
 </td>
 </tr>
 <tr>
@@ -748,7 +748,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ItalicCommand</p>
 </td>
 <td>
-<p>Represents the command that toggle the italic format for the selected text.</p>
+<p>Represents the command to toggle italic style for the selected text.</p>
 </td>
 <td>
 <p>NA</p>
@@ -759,10 +759,10 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>LayoutTypeCommand</p>
 </td>
 <td>
-<p>Represents the command that the change the layout type of `SfRichTextBoxAdv` control.</p>
+<p>Represents the command to change layout type of the `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
-<p>The layout type to be set for SfRichTextBoxAdv.</p>
+<p>The layout type to set for the `SfRichTextBoxAdv` control.</p>
 </td>
 </tr>
 <tr>
@@ -770,7 +770,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>LeftIndentCommand</p>
 </td>
 <td>
-<p>Represents the command that apply left indent for the selected paragraphs.</p>
+<p>Represents the command to apply left indent for the selected paragraphs.</p>
 </td>
 <td>
 <p>The left indent value to be applied.</p>
@@ -781,7 +781,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>LeftKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "LEFT" key.</p>
+<p>Represents the command that performs navigation for "LEFT" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -792,7 +792,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>LineSpacingCommand</p>
 </td>
 <td>
-<p>Represents the command that apply line spacing for the selected paragraphs.</p>
+<p>Represents the command to apply line spacing for the selected paragraphs.</p>
 </td>
 <td>
 <p>The line spacing value to be applied.</p>
@@ -803,10 +803,10 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>LineSpacingTypeCommand</p>
 </td>
 <td>
-<p>Represents the command that apply `LineSpacingType` for the selected paragraphs.</p>
+<p>Represents the command to apply `LineSpacingType` for the selected paragraphs.</p>
 </td>
 <td>
-<p>The line spacing type value to be applied.</p>
+<p>The `LineSpacingType` value to be applied.</p>
 </td>
 </tr>
 <tr>
@@ -814,7 +814,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>MergeSelectedCellsCommand</p>
 </td>
 <td>
-<p>Represents the command that merge the currently selected cells.</p>
+<p>Represents the command that merges the selected table cells.</p>
 </td>
 <td>
 <p>NA</p>
@@ -825,7 +825,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>NavigateHyperlinkCommand</p>
 </td>
 <td>
-<p>Represents the command that any hyperlink at the selection be navigated.</p>
+<p>Represents the command that performs navigation for the selected hyperlink.</p>
 </td>
 <td>
 <p>NA</p>
@@ -858,7 +858,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>NextCommentCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation to any next comment in the document.</p>
+<p>Represents the command that performs navigation to next comment in the document.</p>
 </td>
 <td>
 <p>NA</p>
@@ -869,7 +869,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>OpenDocumentCommand</p>
 </td>
 <td>
-<p>Represents the command that open an existing document in to `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that opens an existing document in the `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -880,7 +880,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>PageDownKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "PAGEDOWN" key.</p>
+<p>Represents the command that performs navigation for "PAGEDOWN" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -891,10 +891,10 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>PageFitCommand</p>
 </td>
 <td>
-<p>Represents the command that the changes `PageFitType` in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command to apply `PageFitType` for the `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
-<p>The `PageFitType` value for the document in pages view.</p>
+<p>The `PageFitType` value to be applied.</p>
 </td>
 </tr>
 <tr>
@@ -902,7 +902,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>PageUpKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "PAGEUP" key.</p>
+<p>Represents the command that performs navigation for "PAGEUP" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -913,7 +913,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>PasteCommand</p>
 </td>
 <td>
-<p>Represents the command that paste the clipboard contents into `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that pastes the content from clipboard to `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -924,7 +924,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>PreviousCommentCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation to any previous comment in the document.</p>
+<p>Represents the command that performs navigation to previous comment in the document.</p>
 </td>
 <td>
 <p>NA</p>
@@ -935,7 +935,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>PrintDocumentCommand</p>
 </td>
 <td>
-<p>Represents the command that print the document in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that prints the document of `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -957,7 +957,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>RemoveHyperlinkCommand</p>
 </td>
 <td>
-<p>Represents the command that any hyperlink at the selection be removed.</p>
+<p>Represents the command that removes the selected hyperlink.</p>
 </td>
 <td>
 <p>NA</p>
@@ -968,7 +968,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>RightIndentCommand</p>
 </td>
 <td>
-<p>Represents the command that apply right indent for the selected paragraphs.</p>
+<p>Represents the command to apply right indent for the selected paragraphs.</p>
 </td>
 <td>
 <p>The right indent value to be applied.</p>
@@ -979,7 +979,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>RightKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "RIGHT" key.</p>
+<p>Represents the command that performs navigation for "RIGHT" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -990,7 +990,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SaveAsDocumentCommand</p>
 </td>
 <td>
-<p>Represents the command that save the document in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that saves the document of `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1001,7 +1001,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SaveDocumentCommand</p>
 </td>
 <td>
-<p>Represents the command that save the document in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that saves the document of `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1012,7 +1012,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SelectAllCommand</p>
 </td>
 <td>
-<p>Represents the command that selects all the content in `SfRichTextBoxAdv`.</p>
+<p>Represents the command that selects all the content of `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1023,7 +1023,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SelectCellCommand</p>
 </td>
 <td>
-<p>Represents the command that selects the current table cell.</p>
+<p>Represents the command that selects the table cell.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1034,7 +1034,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SelectColumnCommand</p>
 </td>
 <td>
-<p>Represents the command that selects the entire current column from a table in `SfRichTextBoxAdv`.</p>
+<p>Represents the command that selects the entire column of a table.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1045,7 +1045,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SelectRowCommand</p>
 </td>
 <td>
-<p>Represents the command that selects the entire current row from a table.</p>
+<p>Represents the command that selects the entire row of a table.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1056,7 +1056,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SelectTableCommand</p>
 </td>
 <td>
-<p>Represents the command that selects the current table.</p>
+<p>Represents the command that selects the table.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1067,7 +1067,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShiftDownKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "SHIFT + DOWN" key.</p>
+<p>Represents the command that performs selection for "SHIFT + DOWN" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1078,7 +1078,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShiftEndKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "SHIFT + END" key.</p>
+<p>Represents the command that performs selection for "SHIFT + END" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1089,7 +1089,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShiftEnterKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform action for "SHIFT + ENTER" key.</p>
+<p>Represents the command that performs action [inserts line break] for "SHIFT + ENTER" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1100,7 +1100,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShiftHomeKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "SHIFT + HOME" key.</p>
+<p>Represents the command that performs selection for "SHIFT + HOME" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1111,7 +1111,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShiftLeftKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "SHIFT + LEFT" key.</p>
+<p>Represents the command that performs selection for "SHIFT + LEFT" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1122,7 +1122,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShiftRightKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "SHIFT + RIGHT" key.</p>
+<p>Represents the command that performs selection for "SHIFT + RIGHT" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1133,7 +1133,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShiftTabKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "SHIFT + TAB" key.</p>
+<p>Represents the command that performs selection for "SHIFT + TAB" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1144,7 +1144,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShiftUpKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform selection for "SHIFT + UP" key.</p>
+<p>Represents the command that performs selection for "SHIFT + UP" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1177,7 +1177,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShowCommentsCommand</p>
 </td>
 <td>
-<p>Represents the command that shows the comments in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command to show or hide comments in the `SfRichTextBoxAdv` control.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1188,7 +1188,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ShowEncryptDocumentDialogCommand</p>
 </td>
 <td>
-<p>Represents the command that shows the encrypt document dialog.</p>
+<p>Represents the command that shows dialog to specify password for opening encrypted Word document.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1201,7 +1201,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <td>
 <p>Represents the command that shows the find and replace dialog.</p>
 </td>
-<td>The Boolean value to determine the dialog should show the find or replace tab.</td>
+<td>The Boolean value to show find or replace tab.</td>
 </tr>
 <tr>
 <td>
@@ -1307,7 +1307,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>SpaceKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform action for "SPACE" key.</p>
+<p>Represents the command that performs action [inserts space] for "SPACE" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1318,7 +1318,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>StrikeThroughCommand</p>
 </td>
 <td>
-<p>Represents the command that apply `StrikeThrough` for the selected text in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command to apply `StrikeThrough` for the selected text.</p>
 </td>
 <td>
 <p>The strike through value to be applied.</p>
@@ -1329,7 +1329,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>TabKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform operation for "TAB" key.</p>
+<p>Represents the command that performs action [inserts tab] for "TAB" key.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1340,7 +1340,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>TableAlignmentCommand</p>
 </td>
 <td>
-<p>Represents the command that apply table alignment for the selected table.</p>
+<p>Represents the command to apply table alignment for the selected table.</p>
 </td>
 <td>
 <p>The table alignment value to be applied.</p>
@@ -1351,7 +1351,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>TableLeftIndentCommand</p>
 </td>
 <td>
-<p>Represents the command that apply left indent for the selected table.</p>
+<p>Represents the command to apply left indent for the selected table.</p>
 </td>
 <td>
 <p>The left indent value to be applied.</p>
@@ -1362,7 +1362,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>TextAlignmentCommand</p>
 </td>
 <td>
-<p>Represents the command that apply text alignment for the selected paragraphs.</p>
+<p>Represents the command to apply text alignment for the selected paragraphs.</p>
 </td>
 <td>
 <p>The text alignment value to be applied.</p>
@@ -1384,7 +1384,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ToggleBeforeSpacingCommand</p>
 </td>
 <td>
-<p>Represents the command that toggle before spacing for the selected paragraphs.</p>
+<p>Represents the command that toggles before spacing for the selected paragraphs.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1395,7 +1395,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ToggleHighlightColorCommand</p>
 </td>
 <td>
-<p>Represents the command that toggle highlight color for the selected text.</p>
+<p>Represents the command that toggles highlight color for the selected text.</p>
 </td>
 <td>
 <p>NA</p>
@@ -1406,10 +1406,10 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>ToggleUnderlineCommand</p>
 </td>
 <td>
-<p>Represents the command that toggle underline for the selected text.</p>
+<p>Represents the command that toggles underline for the selected text.</p>
 </td>
 <td>
-<p>The `Underline` value to be toggled.</p>
+<p>The `Underline` value to be applied.</p>
 </td>
 </tr>
 <tr>
@@ -1417,7 +1417,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>UnderlineCommand</p>
 </td>
 <td>
-<p>Represents the command that apply underline for the selected text.</p>
+<p>Represents the command to apply underline for the selected text.</p>
 </td>
 <td>
 <p>The `Underline` value to be applied.</p>
@@ -1439,7 +1439,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>UpKeyCommand</p>
 </td>
 <td>
-<p>Represents the command that perform navigation for "UP" key.</p>
+<p>Represents the command that performs navigation for "UP" key.</p>
 </td>
 <td>
 <p>NA</p>
