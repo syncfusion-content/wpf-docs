@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| PDF Viewer | Wpf | Syncfusion
-description: overview
+title: Overview| PDF Viewer | WPF | Syncfusion
+description: Overview of PDF viewer for WPF provides details about features supported, prerequisites and compatibility.
 platform: wpf
 control: PDF Viewer
 documentation: ug
