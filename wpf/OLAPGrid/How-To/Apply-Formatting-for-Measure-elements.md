@@ -203,7 +203,7 @@ Refer the below code sample:
 
 ![Displaying measure as fraction format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img8.png)
 
-* `HexaDecimal` - is used to display the cell value as hexa-decimal format.
+* `HexaDecimal` - is used to display the cell value as hexadecimal format.
 
 Refer the below code sample:
 
