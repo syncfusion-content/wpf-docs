@@ -203,7 +203,7 @@ Refer the below code sample:
 
 ![Displaying measure as fraction format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img8.png)
 
-* `HexaDecimal` - is used to display the cell value as hexa decimal format.
+* `HexaDecimal` - is used to display the cell value as hexa-decimal format.
 
 Refer the below code sample:
 
@@ -251,7 +251,7 @@ Refer the below code sample:
 
 ![Displaying measure as decimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img10.png)
 
-* `RoundTrip` -  is used to display the cell value as roundtrip format.
+* `RoundTrip` -  is used to display the cell value as round trip format.
 
 Refer the below code sample:
 
@@ -275,7 +275,7 @@ Refer the below code sample:
 
 ![Displaying measure as round trip format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img11.png)
 
-* `General` - is used to display the cell value as genaral number format.
+* `General` - is used to display the cell value as general number format.
 
 Refer the below code sample:
 
