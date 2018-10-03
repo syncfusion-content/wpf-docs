@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started| PDF Viewer | Wpf | Syncfusion
-description: getting started
+title: Getting Started| PDF Viewer | WPF | Syncfusion
+description: Getting started section will guide through how to use the PDF viewer WPF control in the WPF application, step by step in MVVM pattern.
 platform: wpf
 control: PDF Viewer
 documentation: ug
