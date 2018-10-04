@@ -1,33 +1,35 @@
 ---
 layout: post
-title: Apply Formatting for Measure elements
-description: To apply the formatting for the measure and value elements in olap grid.
+title: Apply Formatting for Measure and Value Elements
+description: To apply formatting for the measure and value elements in olap grid.
 platform: wpf
 control: OlapGrid
 documentation: ug
 ---
 
-# Apply Formatting for Measure elements
+# Apply Formatting for Measure and Value Elements
 
-Olap grid provides the following format type support for the measure element and value element types.
+The values of measure and value element can be formatted by using the `Format` property of corresponding elements. The following types of formats are supported by measure and value elements.
 
-* `Percent` - is used to display the cell value as percentage format.
+* Percent
+* Date
 
-Refer the below code sample:
+## Percent format
+
+This format helps to display the values of measure and value element in percentage format. Refer to the below code sample to format the measure element values in percentage format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Percent });
+this.OlapGrid1.CategoricalElements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Percent });
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Percent})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Percent})
 
 {% endhighlight %}
 
