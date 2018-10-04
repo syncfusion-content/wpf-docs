@@ -11,18 +11,37 @@ documentation: ug
 
 The values of measure and value element can be formatted by using the `Format` property of corresponding elements. The following types of formats are supported by measure and value elements.
 
+* Currency
 * Percent
+* Number
 * Date
+* Scientific
+* Accounting
+* Time
+* Fraction
+* HexaDecimal
+* Decimal
+* RoundTrip
+* General
+* FixedPoint
+* Custom
+* None
+
+N> Suppose you are adding the elements into the ValueElements, You should enable the `DisplayMeasuresInDesiredOrder` property to true which is availble in OlapReport.
 
 ## Percent format
 
-This format helps to display the values of measure and value element in percentage format. Refer to the below code sample to format the measure element values in percentage format.
+This format helps to display the values of measure and value element in percentage format. 
+
+Refer to the below code sample to format the measure element values in percentage format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-this.OlapGrid1.CategoricalElements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Percent });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Percent });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
@@ -30,6 +49,29 @@ this.OlapGrid1.CategoricalElements.Add(new MeasureElement() { ElementName = "Sal
 
 Dim measureElementGroup As New MeasureElements()
 measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Percent})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in percentage format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Percent });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Percent})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -37,23 +79,49 @@ measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sale
 
 ![Displaying measure as percent format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img1.png)
 
-* `Currency` - is used to display the cell value as currency format.
+## Currency format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in currency format. 
+
+Refer to the below code sample to format the measure element values in currency format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Currency });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Currency });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Currency})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Currency})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in currency format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Currency });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Currency})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -61,23 +129,49 @@ Refer the below code sample:
 
 ![Displaying measure as currency format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img2.png)
 
-* `Number` - is used to display the cell value as numeric format.
+## Number format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in numeric format. 
+
+Refer to the below code sample to format the measure element values in number format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Number });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Number });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Number})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Number})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in number format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Number });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Number})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -85,23 +179,49 @@ Refer the below code sample:
 
 ![Displaying measure as number format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img3.png)
 
-* `Date` - is used to display the cell value as date format.
+## Date format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in date format. 
+
+Refer to the below code sample to format the measure element values in date format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Date });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Date });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Date})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Date})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in date format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Date });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Date})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -109,23 +229,49 @@ Refer the below code sample:
 
 ![Displaying measure as date format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img4.png)
 
-* `Scientific` - is used to display the cell value as scientific(exponential) format. 
+## Scientific format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in scientific(exponential) format. 
+
+Refer to the below code sample to format the measure element values in scientific format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Scientific });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Scientific });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Scientific})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Scientific})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in scientific format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Scientific });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Scientific})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -133,23 +279,49 @@ Refer the below code sample:
 
 ![Displaying measure as scientific format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img5.png)
 
-* `Accounting` - is used to display the cell value as accounting format.
+## Accounting format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in accounting format. 
+
+Refer to the below code sample to format the measure element values in accounting format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Accounting });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Accounting });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Accounting})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Accounting})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in accounting format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Accounting });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Accounting})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -157,23 +329,49 @@ Refer the below code sample:
 
 ![Displaying measure as accounting format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img6.png)
 
-* `Time` - is used to display the cell value as time format.
+## Time format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in time format. 
+
+Refer to the below code sample to format the measure element values in time format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Time });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Time });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Time})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Time})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in time format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Time });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Time})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -181,23 +379,49 @@ Refer the below code sample:
 
 ![Displaying measure as time format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img7.png)
 
-* `Fraction` - is used to display the cell value as fraction number format.
+## Fraction format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in fraction number format. 
+
+Refer to the below code sample to format the measure element values in fraction format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Fraction });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Fraction });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Fraction})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Fraction})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in fraction format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Fraction });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Fraction})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -205,47 +429,99 @@ Refer the below code sample:
 
 ![Displaying measure as fraction format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img8.png)
 
-* `HexaDecimal` - is used to display the cell value as hexadecimal format.
+## HexaDecimal format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in hexadecimal format. 
+
+Refer to the below code sample to format the measure element values in hexadecimal format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.HexaDecimal });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.HexaDecimal });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.HexaDecimal})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.HexaDecimal})
+olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Displaying measure as hexa decimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img9.png)
-
-* `Decimal` -  is used to display the cell value as decimal format.
-
-Refer the below code sample:
+Refer to the below code sample to format the value element values in hexadecimal format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Decimal });
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.HexaDecimal });
+olapReport.CategoricalElements.Add(valueElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Decimal})
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.HexaDecimal})
+olapReport.CategoricalElements.Add(valueElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Displaying measure as hexadecimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img9.png)
+
+## Decimal format
+
+This format helps to display the values of measure and value element in decimal format. 
+
+Refer to the below code sample to format the measure element values in decimal format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Decimal });
+olapReport.CategoricalElements.Add(measureElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Decimal})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in decimal format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.Decimal });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Decimal})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -253,23 +529,49 @@ Refer the below code sample:
 
 ![Displaying measure as decimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img10.png)
 
-* `RoundTrip` -  is used to display the cell value as round trip format.
+## RoundTrip format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in round trip format. 
+
+Refer to the below code sample to format the measure element values in round trip format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.RoundTrip });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.RoundTrip });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.RoundTrip})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.RoundTrip})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in round trip format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.RoundTrip });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.RoundTrip})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -277,23 +579,49 @@ Refer the below code sample:
 
 ![Displaying measure as round trip format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img11.png)
 
-* `General` - is used to display the cell value as general number format.
+## General format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in general number format. 
+
+Refer to the below code sample to format the measure element values in general format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.General });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.General });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.General})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.General})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in general format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.General });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.General})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -301,23 +629,49 @@ Refer the below code sample:
 
 ![Displaying measure as general format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img12.png)
 
-* `FixedPoint` - is used to display the cell value as fixed point format.
+## FixedPoint format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in fixed point format. 
+
+Refer to the below code sample to format the measure element values in fixed point format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.FixedPoint });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.FixedPoint });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.FixedPoint})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.FixedPoint})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in fixed point format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.FixedPoint });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.FixedPoint})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -325,23 +679,49 @@ Refer the below code sample:
 
 ![Displaying measure as fixed point format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img13.png)
 
-* `Custom` - is used to display the cell values with its own customer order.
+## Custom format
 
-Refer the below code sample:
+This format helps to display the values of measure and value element in custom format. You can define the format of the values by using the `FormatString` property.
+
+Refer to the below code sample to format the measure element values in custom format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Custom, FormatString = "#0.000" });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Custom, FormatString = "#0.000" });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Custom, .FormatString = "#0.000"})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Custom, .FormatString = "#0.000"})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in custom format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.Custom, FormatString = "#0.000" });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New MeasureElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.Custom, .FormatString = "#0.000"})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
@@ -349,23 +729,49 @@ Refer the below code sample:
 
 ![Displaying measure as custom format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img14.png)
 
-* `None` - is used to displays the actual value from the cube without any formatting the cell value.
+## None format
 
-Refer the below code sample:
+This format helps to displays the actual value from the cube without any formatting the cell value.
+
+Refer to the below code sample to format the measure element values in none format.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    MeasureElements measureElementGroup = new MeasureElements();
-    measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.None });
+MeasureElements measureElementGroup = new MeasureElements();
+measureElementGroup.Elements.Add(new MeasureElement() { ElementName = "Sales Amount", Format = NumberFormat.None });
+olapReport.CategoricalElements.Add(measureElementGroup);
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-	Dim measureElementGroup As New MeasureElements()
-	measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.None})
+Dim measureElementGroup As New MeasureElements()
+measureElementGroup.Elements.Add(New MeasureElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.None})
+olapReport.CategoricalElements.Add(measureElementGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the below code sample to format the value element values in none format.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ValueElements valueElementGroup = new ValueElements();
+valueElementGroup.Elements.Add(new ValueElement() { ElementName = "Sales Amount", Format = NumberFormat.None });
+olapReport.CategoricalElements.Add(valueElementGroup);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Dim valueElementGroup As New ValueElements()
+valueElementGroup.Elements.Add(New ValueElement() With {.ElementName = "Sales Amount", .Format = NumberFormat.None})
+olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endhighlight %}
 
