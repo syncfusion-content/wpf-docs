@@ -27,7 +27,7 @@ The values of measure and value element can be formatted by using the `Format` p
 * Custom
 * None
 
-N> Suppose you are adding the elements into the ValueElements, You should enable the `DisplayMeasuresInDesiredOrder` property to true which is availble in OlapReport.
+N> Suppose you are adding the elements into the ValueElements, You should enable the `DisplayMeasuresInDesiredOrder` property to true which is available in OlapReport.
 
 ## Percent format
 
