@@ -118,13 +118,13 @@ Usage</th><th>
 RowHeight</td><td>
 Gets or sets the height value for all TileViewItems in TileViewControl.</td><td>
 GridLength</td><td>
-All the TileViewitems are created in equal height.</td><td>
+All the TileView items are created in equal height.</td><td>
 <tr>
 <td>
 ColumnWidth</td><td>
 Gets or sets the width value for all TileViewItems in TileViewControl.</td><td>
 GridLength</td><td>
-All the TileViewitems are created in equal width.</td><td>
+All the TileView items are created in equal width.</td><td>
 </table>
 
 
