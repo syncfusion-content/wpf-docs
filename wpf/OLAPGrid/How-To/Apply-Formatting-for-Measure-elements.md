@@ -27,7 +27,7 @@ The values of measure and value element can be formatted by using the `Format` p
 * Custom
 * None
 
-N> Suppose you are adding the elements into the ValueElements, You should enable the `DisplayMeasuresInDesiredOrder` property to true which is available in OlapReport.
+N> To read the[DisplayMeasuresInDesiredOrder](https://help.syncfusion.com/wpf/olapgrid/how-to/display-measures-and-kpis-in-desired-order) section of the documentation for adding the value elements.
 
 ## Percent format
 
