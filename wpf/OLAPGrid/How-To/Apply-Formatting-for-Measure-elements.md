@@ -77,7 +77,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as percent format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img1.png)
+![Displaying measure values in percent format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img1.png)
 
 ## Currency format
 
@@ -127,7 +127,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as currency format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img2.png)
+![Displaying measure values in currency format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img2.png)
 
 ## Number format
 
@@ -177,7 +177,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as number format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img3.png)
+![Displaying measure values in number format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img3.png)
 
 ## Date format
 
@@ -227,7 +227,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as date format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img4.png)
+![Displaying measure values in date format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img4.png)
 
 ## Scientific format
 
@@ -277,7 +277,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as scientific format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img5.png)
+![Displaying measure values in scientific format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img5.png)
 
 ## Accounting format
 
@@ -327,7 +327,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as accounting format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img6.png)
+![Displaying measure values in accounting format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img6.png)
 
 ## Time format
 
@@ -377,7 +377,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as time format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img7.png)
+![Displaying measure values in time format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img7.png)
 
 ## Fraction format
 
@@ -427,7 +427,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as fraction format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img8.png)
+![Displaying measure values in fraction format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img8.png)
 
 ## HexaDecimal format
 
@@ -477,7 +477,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as hexadecimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img9.png)
+![Displaying measure values in hexadecimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img9.png)
 
 ## Decimal format
 
@@ -527,7 +527,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as decimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img10.png)
+![Displaying measure values in decimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img10.png)
 
 ## Round trip format
 
@@ -577,7 +577,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as round trip format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img11.png)
+![Displaying measure values in round trip format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img11.png)
 
 ## General format
 
@@ -627,7 +627,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as general format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img12.png)
+![Displaying measure values in general format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img12.png)
 
 ## Fixed point format
 
@@ -677,7 +677,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as fixed point format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img13.png)
+![Displaying measure values in fixed point format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img13.png)
 
 ## Custom format
 
@@ -727,7 +727,7 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as custom format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img14.png)
+![Displaying measure values in custom format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img14.png)
 
 ## None format
 
@@ -777,4 +777,4 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 {% endtabs %}
 
-![Displaying measure as none format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img15.png)
+![Displaying measure values in none format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img15.png)
