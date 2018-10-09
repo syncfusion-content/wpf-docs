@@ -46,7 +46,7 @@ A text box will be prompted when tapping on the page or requesting text data. En
 
 The following image shows the text annotation being included in the PDF document. 
 
-![](Annotation-images\FreeText-Annotation_1.png)
+![FreeText Annotation](Annotation-images\FreeText-Annotation_1.png)
 
 ## Modifying the color of the text annotation
 
@@ -194,7 +194,7 @@ To modify the thickness of the selected text annotation, modify the value of the
 
 The following image illustrates how to change the border thickness of the text annotation.  
 
-![](Annotation-images\FreeText-Annotation_2.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_2.png)
 
 ### Editing border color of the annotation
 
@@ -202,7 +202,7 @@ The border color of the selected text annotation will be displayed in the border
 
 The following image illustrates how to change the border color of the text annotation included.
 
-![](Annotation-images\FreeText-Annotation_3.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_3.png)
 
 ### Editing background color of the text
 
@@ -210,7 +210,7 @@ Similarly, you can modify the background color of the text.
 
 The following image illustrates how to change the background color of the text annotation included.
 
-![](Annotation-images\FreeText-Annotation_4.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_4.png)
 
 ### Editing opacity of the annotation
 
@@ -218,11 +218,11 @@ The slider control displayed in the Appearance tab allows modifying the opacity 
 
 The following image illustrates how to change the opacity of the text annotation.
 
-![](Annotation-images\FreeText-Annotation_5.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_5.png)
 
 The following screenshot illustrates the completely customized text annotation included in a PDF page.
 
-![](Annotation-images\FreeText-Annotation_6.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_6.png)
 
 ## General tab
 
@@ -230,7 +230,7 @@ You can add or edit the Author and Subject of the text annotation using General 
 
 The following image illustrates the change in Author and Subject of the included text annotation.
 
-![](Annotation-images\FreeText-Annotation_7.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_7.png)
 
 # Editing font properties
 
@@ -240,15 +240,15 @@ N> Double clicking the text box will enable the text editing mode.
 
 The following image illustrates how to change the font size of the text.
 
-![](Annotation-images\FreeText-Annotation_8.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_8.png)
 
 The following image illustrates how to change the font color of the text.
 
-![](Annotation-images\FreeText-Annotation_9.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_9.png)
 
 The following image illustrates the change in font color and font size of the text annotation.
 
-![](Annotation-images\FreeText-Annotation_10.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_10.png)
 
 ## Deleting an annotation
 
@@ -256,7 +256,7 @@ Selecting the delete option from the context menu that is displayed by right-cli
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-![](Annotation-images\FreeText-Annotation_11.png)
+![Text Annotation](Annotation-images\FreeText-Annotation_11.png)
 
 ## Keyboard shortcuts
 

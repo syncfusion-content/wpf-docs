@@ -11,7 +11,7 @@ documentation: ug
 
 The thumbnail navigation support in PDF viewer allows users to view a miniature preview of the PDF pages for fast scrolling and easy navigation purpose.
 
-![](Thumbnail_images\Thumbnail-Navigation_1.png)
+![Thumbnail navigation](Thumbnail_images\Thumbnail-Navigation_1.png)
 
 ## Displaying page thumbnails
 
@@ -45,7 +45,7 @@ End Sub
 
 Page thumbnails size is enlarged and reduced using the zoom out and zoom in buttons in the Page Thumbnails pane, and also using the magnification slider. 
 
-![](Thumbnail_images\Thumbnail-Navigation_2.png)
+![Thumbnail navigation](Thumbnail_images\Thumbnail-Navigation_2.png)
 
 ## Disabling thumbnails 
 
