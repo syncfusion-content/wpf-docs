@@ -9,7 +9,7 @@ documentation: ug
 
 # Apply Formatting for Measure and Value Elements
 
-The values of measure and value element can be formatted by using the `Format` property of corresponding elements. The following types of formats are supported by measure and value elements.
+The values of measure and value element can be formatted by using the `Format` property of corresponding elements. The following are the format types supported by measure and value elements:
 
 * Currency
 * Percent
@@ -27,13 +27,13 @@ The values of measure and value element can be formatted by using the `Format` p
 * Custom
 * None
 
-N> To read the[DisplayMeasuresInDesiredOrder](https://help.syncfusion.com/wpf/olapgrid/how-to/display-measures-and-kpis-in-desired-order) section of the documentation for adding the value elements.
+N> To read the [DisplayMeasuresInDesiredOrder](https://help.syncfusion.com/wpf/olapgrid/how-to/display-measures-and-kpis-in-desired-order) section of the documentation for adding the value elements.
 
 ## Percent format
 
-This format helps to display the values of measure and value element in percentage format. 
+This format displays the values of measure and value element in percentage format.
 
-Refer to the below code sample to format the measure element values in percentage format.
+Refer to the following code sample to format the measure element values in percentage format.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in percentage format.
+Refer to the following code sample to format the value element values in percentage format.
 
 {% tabs %}
 
@@ -81,9 +81,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Currency format
 
-This format helps to display the values of measure and value element in currency format. 
+This format displays the values of measure and value element in currency format.
 
-Refer to the below code sample to format the measure element values in currency format.
+Refer to the following code sample to format the measure element values in currency format.
 
 {% tabs %}
 
@@ -105,7 +105,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in currency format.
+Refer to the following code sample to format the value element values in currency format.
 
 {% tabs %}
 
@@ -131,9 +131,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Number format
 
-This format helps to display the values of measure and value element in numeric format. 
+This format displays the values of measure and value element in numeric format.
 
-Refer to the below code sample to format the measure element values in number format.
+Refer to the following code sample to format the measure element values in number format.
 
 {% tabs %}
 
@@ -155,7 +155,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in number format.
+Refer to the following code sample to format the value element values in number format.
 
 {% tabs %}
 
@@ -181,9 +181,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Date format
 
-This format helps to display the values of measure and value element in date format. 
+This format displays the values of measure and value element in date format.
 
-Refer to the below code sample to format the measure element values in date format.
+Refer to the following code sample to format the measure element values in date format.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in date format.
+Refer to the following code sample to format the value element values in date format.
 
 {% tabs %}
 
@@ -231,9 +231,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Scientific format
 
-This format helps to display the values of measure and value element in scientific(exponential) format. 
+This format displays the values of measure and value element in scientific(exponential) format.
 
-Refer to the below code sample to format the measure element values in scientific format.
+Refer to the following code sample to format the measure element values in scientific format.
 
 {% tabs %}
 
@@ -255,7 +255,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in scientific format.
+Refer to the following code sample to format the value element values in scientific format.
 
 {% tabs %}
 
@@ -281,9 +281,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Accounting format
 
-This format helps to display the values of measure and value element in accounting format. 
+This format displays the values of measure and value element in accounting format.
 
-Refer to the below code sample to format the measure element values in accounting format.
+Refer to the following code sample to format the measure element values in accounting format.
 
 {% tabs %}
 
@@ -305,7 +305,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in accounting format.
+Refer to the following code sample to format the value element values in accounting format.
 
 {% tabs %}
 
@@ -331,9 +331,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Time format
 
-This format helps to display the values of measure and value element in time format. 
+This format displays the values of measure and value element in time format.
 
-Refer to the below code sample to format the measure element values in time format.
+Refer to the following code sample to format the measure element values in time format.
 
 {% tabs %}
 
@@ -355,7 +355,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in time format.
+Refer to the following code sample to format the value element values in time format.
 
 {% tabs %}
 
@@ -381,9 +381,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Fraction format
 
-This format helps to display the values of measure and value element in fraction number format. 
+This format displays the values of measure and value element in fraction number format.
 
-Refer to the below code sample to format the measure element values in fraction format.
+Refer to the following code sample to format the measure element values in fraction format.
 
 {% tabs %}
 
@@ -405,7 +405,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in fraction format.
+Refer to the following code sample to format the value element values in fraction format.
 
 {% tabs %}
 
@@ -431,9 +431,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## HexaDecimal format
 
-This format helps to display the values of measure and value element in hexadecimal format. 
+This format displays the values of measure and value element in hexadecimal format.
 
-Refer to the below code sample to format the measure element values in hexadecimal format.
+Refer to the following code sample to format the measure element values in hexadecimal format.
 
 {% tabs %}
 
@@ -455,7 +455,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in hexadecimal format.
+Refer to the following code sample to format the value element values in hexadecimal format.
 
 {% tabs %}
 
@@ -481,9 +481,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Decimal format
 
-This format helps to display the values of measure and value element in decimal format. 
+This format displays the values of measure and value element in decimal format.
 
-Refer to the below code sample to format the measure element values in decimal format.
+Refer to the following code sample to format the measure element values in decimal format.
 
 {% tabs %}
 
@@ -505,7 +505,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in decimal format.
+Refer to the following code sample to format the value element values in decimal format.
 
 {% tabs %}
 
@@ -529,11 +529,11 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ![Displaying measure as decimal format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img10.png)
 
-## RoundTrip format
+## Round trip format
 
-This format helps to display the values of measure and value element in round trip format. 
+This format displays the values of measure and value element in round trip format.
 
-Refer to the below code sample to format the measure element values in round trip format.
+Refer to the following code sample to format the measure element values in round trip format.
 
 {% tabs %}
 
@@ -555,7 +555,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in round trip format.
+Refer to the following code sample to format the value element values in round trip format.
 
 {% tabs %}
 
@@ -581,9 +581,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## General format
 
-This format helps to display the values of measure and value element in general number format. 
+This format displays the values of measure and value element in general number format.
 
-Refer to the below code sample to format the measure element values in general format.
+Refer to the following code sample to format the measure element values in general format.
 
 {% tabs %}
 
@@ -605,7 +605,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in general format.
+Refer to the following code sample to format the value element values in general format.
 
 {% tabs %}
 
@@ -629,11 +629,11 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ![Displaying measure as general format](Apply-Formatting-for-Measure-elements_images/Apply-Formatting-for-Measure-elements_img12.png)
 
-## FixedPoint format
+## Fixed point format
 
-This format helps to display the values of measure and value element in fixed point format. 
+This format displays the values of measure and value element in fixed point format.
 
-Refer to the below code sample to format the measure element values in fixed point format.
+Refer to the following code sample to format the measure element values in fixed point format.
 
 {% tabs %}
 
@@ -655,7 +655,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in fixed point format.
+Refer to the following code sample to format the value element values in fixed point format.
 
 {% tabs %}
 
@@ -681,9 +681,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## Custom format
 
-This format helps to display the values of measure and value element in custom format. You can define the format of the values by using the `FormatString` property.
+This format displays the values of measure and value element in custom format. You can define the format of values by using the `FormatString` property.
 
-Refer to the below code sample to format the measure element values in custom format.
+Refer to the following code sample to format the measure element values in custom format.
 
 {% tabs %}
 
@@ -705,7 +705,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in custom format.
+Refer to the following code sample to format the value element values in custom format.
 
 {% tabs %}
 
@@ -731,9 +731,9 @@ olapReport.CategoricalElements.Add(valueElementGroup)
 
 ## None format
 
-This format helps to displays the actual value from the cube without any formatting the cell value.
+This format displays the actual value from the cube without formatting the cell value.
 
-Refer to the below code sample to format the measure element values in none format.
+Refer to the following code sample to format the measure element values in none format.
 
 {% tabs %}
 
@@ -755,7 +755,7 @@ olapReport.CategoricalElements.Add(measureElementGroup)
 
 {% endtabs %}
 
-Refer to the below code sample to format the value element values in none format.
+Refer to the following code sample to format the value element values in none format.
 
 {% tabs %}
 
