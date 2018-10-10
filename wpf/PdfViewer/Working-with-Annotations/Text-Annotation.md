@@ -114,34 +114,6 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## Setting the border thickness of the text annotation
-
-The border thickness of the text annotation can be customized either at the time of inclusion or after the inclusion. The following code shows how to set thickness of the text annotation at the time of inclusion. The customization of border thickness after inclusion is explained in the later part.
-
-{% tabs %}
-{% highlight C# %}
-
-private void Window_Loaded(object sender, RoutedEventArgs e)
-{
-	PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
-    pdfviewer.Load(pdf);
-  	pdfviewer.FreeTextAnnotationSettings.Borderthickness = 4;
-}
-
-{% endhighlight %}
-
-
-{% highlight vbnet %}
-
-Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
-    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
-    pdfViewer.Load(pdf)
-	pdfviewer.FreeTextAnnotationSettings.Borderthickness = 4
-End Sub
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Setting the font size of the text annotation
 
 The font size of the text annotation can be customized either at the time of inclusion or after the inclusion. The following code shows how to set font size of the text annotation to be included. The customization of font size after inclusion is explained in the later part.
