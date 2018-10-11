@@ -290,7 +290,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 {% endtabs %}
 
-![Axis Rotation angle support in UWP Chart](Axis_images/Axis_img5.jpeg)
+![Axis Rotation angle support in WPF Chart](Axis_images/Axis_img5.jpeg)
 
 **Custom** **Labels**
 
