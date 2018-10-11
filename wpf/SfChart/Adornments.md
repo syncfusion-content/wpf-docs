@@ -730,7 +730,7 @@ public class AdornmentLabelConverter : IValueConverter
 {% endtabs %}
 
 
-![Adornments LabelContentPath support in UWP Chart](Adornments_images/labelcontent.png)
+![Adornments LabelContentPath support in WPF Chart](Adornments_images/labelcontent.png)
 
 
 **Label Rotation**
