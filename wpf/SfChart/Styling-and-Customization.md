@@ -296,7 +296,7 @@ ColumnSeries series = new ColumnSeries()
 
 {% endtabs %}
 
-![SegmentColorPath in UWP Chart](Styling-and-Customization_images/segmentcolor.png)
+![SegmentColorPath in WPF Chart](Styling-and-Customization_images/segmentcolor.png)
 
 N> SegmentColorPath property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType is Area).
 
