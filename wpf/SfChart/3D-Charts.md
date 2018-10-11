@@ -614,7 +614,7 @@ HighlightOnSelection="True"/>
 
 The following screenshot is an example of a SfChart3D with series selection.
 
-![Series selection support in UWP 3D Chart](3D-Charts_images/Charts-3D_img4.png)
+![Series selection support in WPF 3D Chart](3D-Charts_images/Charts-3D_img4.png)
 
 
 
