@@ -321,7 +321,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Sorting x-axis in descending order in WPF Char](sorting_chart_images/linearaxis_sort2.png)
+![Sorting x-axis in descending order in WPF Chart](sorting_chart_images/linearaxis_sort2.png)
 
 **Sorting y axis in ascending order**
 
