@@ -1289,7 +1289,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Trackball templte support for trackball in UWP Chart](Interactive-Features_images/Interactive-Features_img17.jpeg)
+![Trackball templte support for trackball in WPF Chart](Interactive-Features_images/Interactive-Features_img17.jpeg)
 
 
 **Applying** **Palette** **to** **the** **Series** **Label**
