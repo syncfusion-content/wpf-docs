@@ -112,7 +112,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Applying palette to segment in WPF Chart](Styling-and-Customization_images/palette_3.png)
+![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_3.png)
 
 The following code example defined Palette as **AutumnBrights**.
 
@@ -148,7 +148,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Applying palette to segment in WPF Chart](Styling-and-Customization_images/palette_4.png)
+![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_4.png)
 
 
 N> Metro palette is the default palette for both Series and Segment.
