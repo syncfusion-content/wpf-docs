@@ -547,7 +547,7 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![Spline Cardinal support in WPF](Series_images/cardinal.png)
+![Cardinal spline support in WPF Chart](Series_images/cardinal.png)
 
 **Monotonic**
 
@@ -573,7 +573,7 @@ series.SplineType = SplineType.Monotonic;
 
 {% endtabs %}
 
-![Spline Monotonic support in WPF](Series_images/monotonic.png)
+![Monotonic spline support in WPF Chart](Series_images/monotonic.png)
 
 **Clamped**
 
@@ -599,7 +599,7 @@ series.SplineType = SplineType.Clamped;
 
 {% endtabs %}
 
-![Spline Clamped support in WPF](Series_images/clamped.png)
+![Clamped spline support in WPF Chart](Series_images/clamped.png)
 
 
 ### Step Area
