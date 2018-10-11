@@ -61,7 +61,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img2.jpeg)
+![Positioning the scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img2.jpeg)
 
 
 ## Break Position Customization
@@ -122,7 +122,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img3.jpeg)
+![Positioning the scale break based on the data count in WPF Chart](ScaleBreak_images/ScaleBreak_img3.jpeg)
 
 
 ###Scale
@@ -171,7 +171,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img4.jpeg)
+![Positioning the scale break based on the scale in WPF Chart](ScaleBreak_images/ScaleBreak_img4.jpeg)
 
 
 ###Percent
@@ -244,7 +244,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img5.jpeg)
+![Positioning the scale break based on percent in WPF Chart](ScaleBreak_images/ScaleBreak_img5.jpeg)
 
 
 ## Multiple Breaks
@@ -307,7 +307,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img6.jpeg)
+![Multiple scale breaks support in WPF Chart](ScaleBreak_images/ScaleBreak_img6.jpeg)
 
 
 ## Customization
@@ -372,6 +372,6 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img7.jpeg)
+![Customization of scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img7.jpeg)
 
 
