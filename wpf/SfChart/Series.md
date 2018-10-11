@@ -389,7 +389,7 @@ series.ShowZeroBubbles = false;
 
 {% endtabs %}
 
-![ShowZeroBubbles support in WP](Series_images/showBubble_false.png)
+![ShowZeroBubbles support in WPF Chart](Series_images/showBubble_false.png)
 
 ### Scatter
 
@@ -3209,7 +3209,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Interval customization support for histogram series in WPF Char](Series_images/histogram_interval.png)
+![Interval customization support for histogram series in WPF Chart](Series_images/histogram_interval.png)
 
 
 ## Box and Whisker 
@@ -4072,7 +4072,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastStepLineBitmap chart type in UWP](Series_images/faststepline_alias.png)
+![AntiAliasing support for FastStepLineBitmap chart type in WPF](Series_images/faststepline_alias.png)
 
 
 ### Fast Stacking Column
