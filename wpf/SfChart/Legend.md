@@ -397,7 +397,7 @@ chart.Legend = new ChartLegend()
 
 The [`series`](https://help.syncfusion.com/wpf/sfchart/series) can be collapsed, by clicking on the respective legend item,
 
-![](Legend_images/Toggling_1.png)
+![ToggleSeriesVisibility support for legend in WPF Chart](Legend_images/Toggling_1.png)
 
 
 We can also view the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its disabled legend item,

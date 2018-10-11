@@ -1166,7 +1166,7 @@ chart.Behaviors.Add(behavior);
 
 The following screenshot illustrates the trackball label for multiple series, when [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
 
-![](Interactive-Features_images/grouping1.png)
+![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping1.png)
 
 The following screenshot illustrates the trackball label for financial series, when [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
 

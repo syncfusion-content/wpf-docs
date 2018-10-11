@@ -3005,7 +3005,7 @@ The [`NumericalAxis`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Sf
 
 By default the date time range padding is auto.
 
-![](Axis_images/Axis_img61.jpeg)
+![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img61.jpeg)
 
 {% tabs %}
 
@@ -3113,7 +3113,7 @@ The following types are available for [`NumericalAxis`](http://help.syncfusion.c
 
 By default, the default [`RangePadding`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html#) value for [`PrimaryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html#) is Auto and for [`SecondaryAxis`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html#), the default value is Round.
 
-![](Axis_images/Axis_img65.jpeg)
+![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img65.jpeg)
 
 
 **Normal**

@@ -531,7 +531,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_6.png)
+![Standard deviation error bar type in WPF Chart](ErrorBar_images/ErrorBar_6.png)
 
 ### Standard Errors
 

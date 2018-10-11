@@ -16,7 +16,7 @@ SfChart provides `Start` and `End` properties for defining the scale break range
 
 The following image has data points with both greater and smaller magnitude, but the segments with smaller values is not visualized properly.
 
-![](ScaleBreak_images/ScaleBreak_img1.jpeg)
+![Positioning the scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img1.jpeg)
 
 
 Applying scale breaks helps in proper visualization of all the data points.
