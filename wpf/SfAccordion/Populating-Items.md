@@ -437,7 +437,7 @@ Content can be displayed using the `ContentTemplate` property. Content is visibl
 
 ### Customizing content for items
 
-You can customize the content of items by ItemContainerStyle of SfAccordion. The following code example demonstrtes the same.
+You can customize the content of items by ItemContainerStyle of SfAccordion. The following code example demonstrates the same.
 
 {% tabs %}
 
