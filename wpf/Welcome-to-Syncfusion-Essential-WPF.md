@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Studio WPF products
-description: Guide for Syncfusion Essential Studio WPF products
+description: Essential WPF is a comprehensive collection of over 90 enterprise-grade WPF components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.
 platform: wpf
 control: Overview
 documentation: ug
@@ -20,9 +20,9 @@ Essential WPF is a comprehensive collection of over 100+ enterprise-grade WPF co
 
 ## Additional help resources
 
-The [Knowledge Base](http://www.syncfusion.com/kb/wpf) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
+The [Knowledge Base](https://www.syncfusion.com/kb/wpf) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
 
-Similar to the [Knowledge Base](http://www.syncfusion.com/kb/wpf), the [Forum](http://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked in the past.
+Similar to the [Knowledge Base](https://www.syncfusion.com/kb/wpf), the [Forum](https://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked in the past.
 
 ## Create a support incident
 

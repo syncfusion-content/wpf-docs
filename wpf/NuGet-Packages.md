@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF NuGet Packages | Syncfusion
-description: NuGet Packages
+description: This section explains about the installing, managing and upgrading of nuget packages of Syncfusion wpf platform products
 platform: wpf
 control: NuGet Packages
 documentation: ug
@@ -24,7 +24,7 @@ You should get the private Syncfusion WPF NuGet feed URL to install or upgrade t
 
     [https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf](https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf) 
 
-    ![](NuGet_Packages_Images/img1.png)
+    ![WPF nuget url link](NuGet_Packages_Images/img1.png)
 
 3. Now, use this NuGet feed URL to access the Syncfusion NuGet Packages in Visual Studio. 
 
@@ -44,7 +44,7 @@ You should get the private Syncfusion WPF NuGet feed URL to install or upgrade t
 
 5.	Click the **Update** button to add the name and source details to package sources. 
 
-    ![](NuGet_Packages_Images/img2.png)
+    ![WPF nuget package installation using nuget package manager settings](NuGet_Packages_Images/img2.png)
 
 ## Installing NuGet Packages
 
@@ -52,12 +52,12 @@ You should get the private Syncfusion WPF NuGet feed URL to install or upgrade t
 
 The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
 1.	On the **Tools**, menu, NuGet `Package Manager | Manage NuGet Packages for Solution...`
-    ![](NuGet_Packages_Images/img3.png)
+    ![WPF nuget package manager](NuGet_Packages_Images/img3.png)
     Alternatively, right-click on the project/solution in Solution Explorer tab, and choose **Manage NuGet Packages…**
 
 2.	By default, the NuGet.org package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured. 
 
-     ![](NuGet_Packages_Images/img4.png)             
+     ![Selecting one of the syncfusion universal nuget package](NuGet_Packages_Images/img4.png)             
 
 3.	The NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
 
