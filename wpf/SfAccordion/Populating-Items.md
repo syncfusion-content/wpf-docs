@@ -459,11 +459,11 @@ Sets the Style used by AccordionButton.</td><td>
 <tr>
 <td>
 ExpandableContentControlStyle</td><td>
-sets the Style used by ExpandableContentControl.</td><td>
+Sets the Style used by ExpandableContentControl.</td><td>
 <tr>
 <td>
 ItemContainerStyle</td><td>
-sets the Style that is applied to the container element.</td><td>
+Sets the Style that is applied to the container element.</td><td>
 </table>
 
 Here we have provided the animation option, following code example demonstrates the same.
