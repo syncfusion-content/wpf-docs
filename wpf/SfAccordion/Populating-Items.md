@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Items | SfAccordion | WPF | Syncfusion
-description: This section explains about populating items of SfAccordion control and describes SfAccordion properties.
+title: Populating Items of SfAccordion control for WPF
+description: Explains about Populating Items of SfAccordion control for WPF
 platform: WPF
 control: SfAccordion
 documentation: ug
@@ -15,7 +15,7 @@ documentation: ug
 
 SfAccordion accepts `SfAccordionItem` as its children when added directly.
 
-### Adding items to the control
+### Adding items to the control 
 
 Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
@@ -79,7 +79,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 {% endtabs %}
 
-![User can add the items in SfAccordion control by using its Items property](Populating-Items-images/Populating-Items-img1.jpeg)
+![](Populating-Items-images/Populating-Items-img1.jpeg)
 
 ### Setting Header for items
 
@@ -145,7 +145,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 `SfAccordion` control is populated as follows:
 
-![User can set the header of SfAccordionItem by using Header property](Populating-Items-images/Populating-Items-img2.jpeg)
+![](Populating-Items-images/Populating-Items-img2.jpeg)
 
 ### Setting Content for items
 
@@ -226,7 +226,7 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 {% endtabs %}
 
-![User can set the content of SfAccordionItem by using Content property](Populating-Items-images/Populating-Items-img3.jpeg)
+![](Populating-Items-images/Populating-Items-img3.jpeg)
 
 ## Using ItemsSource
 
@@ -362,7 +362,7 @@ Follow the below steps to add the Items through ItemsSource property.
 
 `SfAccordion` control is populated as follows:
 
-![SfAccordion accepts any business object collection using ItemsSource property](Populating-Items-images/Populating-Items-img4.jpeg)
+![](Populating-Items-images/Populating-Items-img4.jpeg)
 
 ### Setting Header for items
 
@@ -378,7 +378,7 @@ Header can be displayed using the property `DisplayMemberPath`. This property is
 
 {% endtabs %}
 
-![Header can be displayed using DisplayMemberPath property.](Populating-Items-images/Populating-Items-img5.jpeg)
+![](Populating-Items-images/Populating-Items-img5.jpeg)
 
 `HeaderTemplate` property can also be used to display the header. `HeaderTemplateSelector` property is also provided to apply header template based on the selection logic. 
 
@@ -404,7 +404,7 @@ Header can be displayed using the property `DisplayMemberPath`. This property is
 
 {% endtabs %}
 
-![Header can be displayed using HeaderTemplate property.](Populating-Items-images/Populating-Items-img6.jpeg)
+![](Populating-Items-images/Populating-Items-img6.jpeg)
 
 ### Setting Content for items
 
@@ -432,183 +432,4 @@ Content can be displayed using the `ContentTemplate` property. Content is visibl
 
 {% endtabs %}
 
-![Content can be displayed using ContentTemplate property.](Populating-Items-images/Populating-Items-img7.jpeg)
-
-
-### Properties
-
-User can customize the `SfAccordion` control based on needs by using the following properties.
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-<tr>
-<td>
-TargetSize</td><td>
-Gets or sets the desired size of the ExpandableContentControl content.</td><td>
-<tr>
-<td>
-Percentage</td><td>
-Sets the relative percentage of the content that is currently visible. Use the percentage property to animate to this size.</td><td>
-<tr>
-<td>
-AccordionButtonStyle</td><td>
-Sets the Style used by AccordionButton.</td><td>
-<tr>
-<td>
-ExpandableContentControlStyle</td><td>
-Sets the Style used by ExpandableContentControl.</td><td>
-<tr>
-<td>
-ItemContainerStyle</td><td>
-Sets the Style that is applied to the container element.</td><td>
-</table>
-
-Here we have provided the animation option, following code example demonstrates the same.
-
-*Step 1:* Provide customization in SfAccordionItem
-
-{% tabs %}
-
-{% highlight XAML %}
-
- <!--  SfAccordionItem Style  -->
- <Style x:Key="Style1"  TargetType="layout:SfAccordionItem">
- <Setter Property="Template">
- <Setter.Value>
- <ControlTemplate TargetType="layout:SfAccordionItem">
- <Grid Background="Blue" HorizontalAlignment="{TemplateBinding HorizontalAlignment}" VerticalAlignment="{TemplateBinding VerticalAlignment}">
- <VisualStateManager.VisualStateGroups>
-
- <!-- ExpansionStates -->
- <VisualStateGroup x:Name="ExpansionStates">
- <VisualStateGroup.Transitions>
- <VisualTransition GeneratedDuration="0"/>
- </VisualStateGroup.Transitions>
- <!-- enable animation-->
- <VisualState x:Name="Collapsed">
- <Storyboard>
- <DoubleAnimationUsingKeyFrames BeginTime="00:00:01" Duration="00:00:10" Storyboard.TargetName="ExpandSite" Storyboard.TargetProperty="(layout:ExpandableContentControl.Percentage)">
- <SplineDoubleKeyFrame KeySpline="0.2,0,0,1" KeyTime="00:00:10.0" Value="0" />
- </DoubleAnimationUsingKeyFrames>
- </Storyboard>
- </VisualState>
- <VisualState x:Name="Expanded">
- <Storyboard>
- <DoubleAnimationUsingKeyFrames BeginTime="00:00:01" Duration="00:00:10" Storyboard.TargetName="ExpandSite" Storyboard.TargetProperty="(layout:ExpandableContentControl.Percentage)">
- <SplineDoubleKeyFrame KeySpline="0.2,0,0,1" KeyTime="00:00:10.0" Value="1" />
- </DoubleAnimationUsingKeyFrames>
- </Storyboard>
- </VisualState>
- </VisualStateGroup>
-
- <!-- ExpansionStates -->
- <VisualStateGroup x:Name="LockedStates">
- <VisualStateGroup.Transitions>
- <VisualTransition GeneratedDuration="0" />
- </VisualStateGroup.Transitions>
- <VisualState x:Name="Locked">
- <Storyboard>
- <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="ExpanderButton" Storyboard.TargetProperty="IsEnabled"> 
- <DiscreteObjectKeyFrame KeyTime="0">
- <DiscreteObjectKeyFrame.Value>
- <sys:Boolean>False</sys:Boolean>
- </DiscreteObjectKeyFrame.Value>
- </DiscreteObjectKeyFrame>
- </ObjectAnimationUsingKeyFrames>
- </Storyboard>
- </VisualState>
- <VisualState x:Name="Unlocked">
- <Storyboard>
- <ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetName="ExpanderButton" Storyboard.TargetProperty="IsEnabled">
- <DiscreteObjectKeyFrame KeyTime="0">
- <DiscreteObjectKeyFrame.Value>
- <sys:Boolean>True</sys:Boolean>
- </DiscreteObjectKeyFrame.Value>
- </DiscreteObjectKeyFrame>
- </ObjectAnimationUsingKeyFrames>
- </Storyboard>
- </VisualState>
- </VisualStateGroup>
- </VisualStateManager.VisualStateGroups>
- <Border x:Name="Background" Padding="{TemplateBinding Padding}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="1,1,1,1">
- <Grid>
- <Grid.RowDefinitions>
- <RowDefinition Height="Auto"  />
- <RowDefinition Height="Auto"  />
- </Grid.RowDefinitions>
- <Grid.ColumnDefinitions>
- <ColumnDefinition Width="Auto" />
- <ColumnDefinition Width="Auto" />
- </Grid.ColumnDefinitions>
-
- <!-- AccordionButton  -->
- <layout:AccordionButton Name="ExpanderButton" Style="{TemplateBinding AccordionButtonStyle}"  Content="{TemplateBinding Header}" ContentTemplate="{TemplateBinding HeaderTemplate}" IsChecked="{TemplateBinding IsSelected}" IsTabStop="True" Grid.Row="0" Padding="0,0,0,0" Margin="0,0,0,0" FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}" FontStretch="{TemplateBinding FontStretch}" FontStyle="{TemplateBinding FontStyle}" FontWeight="{TemplateBinding FontWeight}" Foreground="{TemplateBinding Foreground}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalAlignment}" VerticalAlignment="{TemplateBinding VerticalAlignment}" Background="{TemplateBinding Background}" />
-
- <!-- ExpandableContentControl  -->
- <layout:ExpandableContentControl Name="ExpandSite" Grid.Row="1" IsTabStop="False" Percentage="0"  Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" Margin="0,0,0,0" Style="{TemplateBinding ExpandableContentControlStyle}" FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}" FontStretch="{TemplateBinding FontStretch}" FontStyle="{TemplateBinding FontStyle}" FontWeight="{TemplateBinding FontWeight}" Foreground="{TemplateBinding Foreground}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" HorizontalAlignment="{TemplateBinding HorizontalAlignment}" VerticalAlignment="{TemplateBinding VerticalAlignment}" />
-
- </Grid>
- </Border>
- </Grid>
- </ControlTemplate>
- </Setter.Value>
- </Setter>
- </Style>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-*Step 2:* Apply the Style to SfAccordion using ItemContainerStyle
-
-{% tabs %}
-
-{% highlight XAML %}
-
- <!-- SfAccordion Control -->
-
- <layout:SfAccordion x:Name="accordion1"  HorizontalAlignment="Center" VerticalAlignment="Center"  ItemContainerStyle="{StaticResource Style1}" >
- <layout:SfAccordionItem Header="WindowsForms">
- <Grid  Background="#FFF4F3F2">
- <Grid.RowDefinitions>
- <RowDefinition Height="40"/>
- <RowDefinition Height="40"/>
- <RowDefinition Height="40"/>
- </Grid.RowDefinitions>
- <TextBlock Text="Grids" Margin="10,10,10,2" FontSize="13.333" Grid.Row="0"/>
- <TextBlock Text="Layout" Margin="10,10,10,2" FontSize="13.333" Grid.Row="1"/>
- <TextBlock Text="Data Visualization" Margin="10,10,10,2"  FontSize="13.333" Grid.Row="2"/>
- </Grid>
- </layout:SfAccordionItem>
- <layout:SfAccordionItem Header="WPF">
- <Grid  Background="#FFF4F3F2">
- <Grid.RowDefinitions>
- <RowDefinition Height="40"/> 
- <RowDefinition Height="40"/>
- <RowDefinition Height="40"/>
- </Grid.RowDefinitions>
- <TextBlock Text="Grids" Margin="10,10,10,2" FontSize="13.333" Grid.Row="0"/>
- <TextBlock Text="Layout" Margin="10,10,10,2" FontSize="13.333" Grid.Row="1"/>
- <TextBlock Text="Data Visualization" Margin="10,10,10,2" FontSize="13.333" Grid.Row="2"/>
- </Grid>
- </layout:SfAccordionItem>
- <layout:SfAccordionItem Header="UWP">
- <Grid  Background="#FFF4F3F2">
- <Grid.RowDefinitions>
- <RowDefinition Height="40"/>
- <RowDefinition Height="40"/>
- <RowDefinition Height="40"/>
- </Grid.RowDefinitions>
- <TextBlock Text="Grids" Margin="10,10,10,2" FontSize="13.333" Grid.Row="0"/>
- <TextBlock Text="Layout" Margin="10,10,10,2" FontSize="13.333" Grid.Row="1"/>
- <TextBlock Text="Data Visualization" Margin="10,10,10,2" FontSize="13.333" Grid.Row="2"/>
- </Grid>
- </layout:SfAccordionItem>
- </layout:SfAccordion>
-
-{% endhighlight %}
-
-{% endtabs %}
+![](Populating-Items-images/Populating-Items-img7.jpeg)
