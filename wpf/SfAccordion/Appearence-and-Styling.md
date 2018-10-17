@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Applying Accent Colors
+## Applying Accent Colors
 
 SfAccordion support accent colors to highlight the hot spots of the control. You can customize the accent colors using [AccentBrush](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~AccentBrush.html) property.
 
@@ -21,11 +21,11 @@ accordion.AccentBrush = new SolidColorBrush() { Color = Windows.UI.Colors.Red };
 {% endhighlight %}
 {% endtabs %}
 
-![SfAccordionItem header customized](Appearence-and-Styling-images/Accent-Brush_img1.png)
+![SfAccordionItem header customized](Appearance-and-Styling-images/Accent-Brush_img1.png)
 
 ## AccordionItem Style
 
-You can customize the appearence of accordion item by writing the style of TargetType [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem.html), the edited style can be applied to SfAccordion control by setting SfAccordion.[ItemContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~ItemContainerStyle.html) property.
+You can customize the appearance of accordion item by writing the style of TargetType [SfAccordionItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem.html), the edited style can be applied to SfAccordion control by setting SfAccordion.[ItemContainerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~ItemContainerStyle.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -46,11 +46,11 @@ You can customize the appearence of accordion item by writing the style of Targe
 {% endhighlight %}
 {% endtabs %}
 
-![SfAccordionItem customization](Appearence-and-Styling-images/Accordion-Header-Style_img1.png)
+![SfAccordionItem customization](Appearance-and-Styling-images/Accordion-Header-Style_img1.png)
 
 ## Accordion Expander Style
 
-You can customize the appearence of expander button by writing the style of TargetType [AccordionButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.AccordionButton.html), the edited style can be applied to accordion item by setting [AccordionButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem~AccordionButtonStyle.html) property.
+You can customize the appearance of expander button by writing the style of TargetType [AccordionButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.AccordionButton.html), the edited style can be applied to accordion item by setting [AccordionButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordionItem~AccordionButtonStyle.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -175,7 +175,7 @@ You can customize the appearence of expander button by writing the style of Targ
 {% endhighlight %}
 {% endtabs %}
 
-![Expander button customization](Appearence-and-Styling-images/Expander-Button-Style_img1.png)
+![Expander button customization](Appearance-and-Styling-images/Expander-Button-Style_img1.png)
 
 ## AccordionItem Content Style
 
@@ -240,4 +240,4 @@ You can customize the content control in expanded state by writing the style of 
 {% endhighlight %}
 {% endtabs %}
 
-![Expandable content control customization](Appearence-and-Styling-images/Expandable-Content-Control-Style_img1.png)
+![Expandable content control customization](Appearance-and-Styling-images/Expandable-Content-Control-Style_img1.png)
