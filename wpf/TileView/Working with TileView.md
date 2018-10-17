@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with TileView | TileViewControl | WPF | Syncfusion
-description: 
+description: This section explains how to customize the size of tile view item based on it's states and rows/columns customizataion.
 platform: WPF
 control: TileViewControl
 documentation: ug
