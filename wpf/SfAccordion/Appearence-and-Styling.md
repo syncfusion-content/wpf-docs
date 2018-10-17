@@ -96,3 +96,7 @@ documentation: ug
 
 `AccordionButtonStyle` property is used to style the expander button which contains the header and expander button
 
+## Customizing expandable content control
+
+
+
