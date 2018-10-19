@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview| DocumentContainer | Wpf | Syncfusion
+title: Overview| DocumentContainer | WPF | Syncfusion
 description: overview
 platform: wpf
 control: DocumentContainer
@@ -11,7 +11,7 @@ documentation: ug
 
 A DocumentContainer is a control that is used for holding the documents, controls and panels inside it. Using a DocumentContainer you can create interfaces like MDI and TDI, which can make the end-user to create easily navigable applications. This help section will demonstrate all the important properties of the DocumentContainer that will help the end-user to know about all the available features.
 
-##Features
+## Features
 
 * Provides options for both MDI and TDI container mode.
 * Various window switching styles. CTRL+TAB keyboard shortcut is used to easily navigate through the windows.
