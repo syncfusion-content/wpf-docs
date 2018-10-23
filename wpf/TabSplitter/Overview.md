@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | TabSplitter | wpf | Syncfusion
+title: Overview | TabSplitter | WPF | Syncfusion
 description: overview
 platform: wpf
 control: TabSplitter
@@ -11,12 +11,9 @@ documentation: ug
 
 TabSplitter is similar to VS 2008 style Split view of Tabbed Groups.
 
-###Features
+## Features
 
 * Swapping of two groups
 * Collapse and Expand Tab Groups
 * Toggle between vertical and horizontal layouts
 * Visual Customization of TabSplitter
-
-
-

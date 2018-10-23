@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started| DocumentContainer | Wpf | Syncfusion
+title: Getting Started| DocumentContainer | WPF | Syncfusion
 description: getting started
 platform: wpf
 control: DocumentContainer
@@ -11,13 +11,7 @@ documentation: ug
 
 This section guides you on getting started with DocumentContainer control. It covers the following topics:
 
-
-
-![](Getting-Started_images/Getting-Started_img1.jpeg)
-
-
-
-
+![DocumentContainer control image](Getting-Started_images/Getting-Started_img1.jpeg)
 
 This help section will demonstrate all the important properties of the DocumentContainer that will help the end-user to know about all the available features.
 
@@ -34,33 +28,23 @@ Here are some highlights about our Document Container control.
 
 ## Class Diagram
 
-
 The class diagram for Document Container is illustrated below. 
 
-
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
+![Class diagram for DocumentContainer](Getting-Started_images/Getting-Started_img2.png)
 
 ## Creating Document Container control
 
 There are two possible ways of creating a simple DocumentContainer control. 
 
-### Through Designer
+### Adding control via designer
 
 To create the Document Container control through designer, drag a Document Container control from the toolbox onto the design area.
 
+![DocumentContainer control added via designer](Getting-Started_images/Getting-Started_img3.jpeg)
 
-
-![](Getting-Started_images/Getting-Started_img3.jpeg)
-
-
-
-###Programmatically
+### Adding control manually in code
 
 To create the Document Container programmatically, use the following XAML or C# code.
-
 
 {% tabs %}
 {% highlight xaml %}
@@ -75,5 +59,4 @@ DocumentContainer DocContainer = new DocumentContainer();
 Content = DocContainer;
 {% endhighlight %}
 {% endtabs %}
-
 
