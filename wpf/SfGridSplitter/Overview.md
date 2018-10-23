@@ -11,13 +11,13 @@ documentation: ug
 
 `SfGridSplitter` is a container control helps to split the available space horizontally or vertically with a movable splitter and arrange the visual elements inside it. 
 
-![Explains the overview of SfGridSplitter control](Overview-images/overview.png)
+![WPF GridSplitter resize and collapse](Overview-images/overview.png)
 
-Following are the key features of SfGridSplitter control
+Features 
 
-* Dynamic resizing: Supports available to split the space with movable splitter that helps resize controls on demand.
+* Dynamic resizing: Splits available space with movable splitter that helps resize controls on demand.
 * Expand / Collapse: Supports to expand and collapse splitter controls interactively in UI.
-* Orientation: Supports both horizontal and vertical orientation to Split controls based on user layout.
+* Orientation: Supports both horizontal and vertical orientation to split controls based on user layout.
 
 
 
