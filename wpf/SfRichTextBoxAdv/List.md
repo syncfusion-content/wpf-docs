@@ -14,16 +14,16 @@ The SfRichTextBoxAdv supports both the single-level and multilevel lists similar
 
 Single level means that all the items in the list have the same hierarchy and indentation. It can be a numbered or a bulleted list.
 The following screenshot shows single level bulleted list.
-![](List_images/List_img1.jpeg)
+![Single level bulleted list](List_images/List_img1.jpeg)
 
 The following screenshot shows single level numbered list.
-![](List_images/List_img2.jpeg)
+![Single level numbered list](List_images/List_img2.jpeg)
 
 ## Multilevel List
 
 Multilevel means defining a list within a list where up to nine levels can be defined similar to the Microsoft Word. A multilevel list can be bulleted or numbered and also mixed with numbers, letters, and bullets. For example, one level can be bulleted and next level can be a numbered list inside it.
 The following screenshot shows multilevel list.
-![](List_images/List_img3.jpeg)
+![Multilevel list](List_images/List_img3.jpeg)
 
 ## Adding List
 
@@ -93,6 +93,12 @@ listAdv.AbstractListId = 1;
 // Adds list to the document.
 richTextBoxAdv.Document.Lists.Add(listAdv);
 
+// Add list item 1
+ParagraphAdv paragraphAdv = new ParagraphAdv();
+SpanAdv spanAdv = new SpanAdv() { Text = "List Item 1" };
+paragraphAdv.Inlines.Add(spanAdv);
+richTextBoxAdv.Document.Sections[0].Blocks.Add(paragraphAdv);
+
 // Defines the list format for the paragraph.
 paragraphAdv.ParagraphFormat.ListFormat.ListId = 1;
 paragraphAdv.ParagraphFormat.ListFormat.ListLevelNumber = 0;
@@ -127,6 +133,13 @@ listAdv.AbstractListId = 1
 
 ' Adds list to the document.
 richTextBoxAdv.Document.Lists.Add(listAdv)
+
+' Add list item 1
+Dim paragraphAdv As ParagraphAdv = New ParagraphAdv()
+Dim spanAdv As SpanAdv = New SpanAdv()
+spanAdv.Text = "List Item 1"
+paragraphAdv.Inlines.Add(spanAdv)
+richTextBoxAdv.Document.Sections(0).Blocks.Add(paragraphAdv)
 
 ' Defines the list format for the paragraph.
 paragraphAdv.ParagraphFormat.ListFormat.ListId = 1
