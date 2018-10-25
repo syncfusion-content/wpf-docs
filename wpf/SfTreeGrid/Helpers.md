@@ -11,9 +11,9 @@ documentation: ug
 
 ## IndexResolver
 
-SfTreeGrid has [TreeGridIndexResolver](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html) static class present in Syncfusion.UI.Xaml.TreeGrid namespace that has some extension methods used to resolve from row or column index to node or visible column index and vice versa.
+SfTreeGrid has [TreeGridIndexResolver](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html) static class present in the Syncfusion.UI.Xaml.TreeGrid namespace has some extension methods to resolve from row or column index to node or visible column index and vice-versa.
 
-For example, You can get a node from its row index using [GetNodeAtRowIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver~GetNodeAtRowIndex.html) method.
+For example, you can get a node from its row index using the [GetNodeAtRowIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver~GetNodeAtRowIndex.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -39,7 +39,7 @@ ResolveToNodeIndex(int rowindex)
 
 </td>
 <td>
-Resolves node index from the row index. When row index does not find any records, it returns -1. NodeIndex denotes the index of node in SfTreeGrid.View.Nodes.
+Resolves the node index from the row index. When row index does not find any record, it returns -1. The NodeIndex denotes the index of node in SfTreeGrid.View.Nodes.
 
 </td>
 </tr>
@@ -49,7 +49,7 @@ ResolveToRowIndex(int nodeIndex)
 
 </td>
 <td>
-Resolves row index from the node index associated with SfTreeGrid.View.Nodes. When node index is lesser than 0 it returns the -1.
+Resolves the row index from the node index associated with SfTreeGrid.View.Nodes. When node index is lesser than 0 it returns -1.
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ ResolveToRowIndex(object data)
 
 </td>
 <td>
-Resolves row index from the data associated with SfTreeGrid.View.Nodes. When the given node is not available in the collection it returns -1.
+Resolves the row index from the data associated with SfTreeGrid.View.Nodes. When the given node is not available in the collection, it returns -1.
 </td>
 </tr>
 <tr>
@@ -67,7 +67,7 @@ ResolveToRowIndex(TreeNode node)
 
 </td>
 <td>
-Resolves row index from the node associated with SfTreeGrid.View.Nodes. When the given node is not available in the collection it returns -1.
+Resolves the row index from the node associated with SfTreeGrid.View.Nodes. When the given node is not available in the collection, it returns -1.
 </td>
 </tr>
 <tr>
@@ -76,7 +76,7 @@ ResolveToGridVisibleColumnIndex(int columnIndex)
 
 </td>
 <td>
-Resolves the TreeGridColumn index from the visible column index. It excludes the RowHeader and IndentColumn.
+Resolves the TreeGridColumn index from the visible column index. It excludes row header and indent column.
 </td>
 </tr>
 <tr>
@@ -85,7 +85,7 @@ ResolveToScrollColumnIndex(int gridColumnIndex)
 
 </td>
 <td>
-Resolves column index from the Grid column index associated with SfTreeGrid.Columns. It includes the IndentColumn and RowHeader also.
+Resolves column index from the grid column index associated with SfTreeGrid.Columns. It also includes the indent column and row header also.
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ ResolveToStartColumnIndex()
 
 </td>
 <td>
-Returns start column index of the VisibleColumn.
+Returns the start column index of the VisibleColumn.
 
 </td>
 </tr>
@@ -113,11 +113,11 @@ GetNodeAtRowIndex(int rowIndex)
 
 </td>
 <td>
-Gets the tree node based on the row index
+Gets the tree node based on the row index.
 </td>
 </tr>
 </table>
 
 ## Dispose
 
-This method is associated with relinquishes memory and clears all references associated with the treegrid. When you call this method, it releases all the reference for the treegrid. So, the memory it is occupying using the treegrid is reclaimed. You have to call [SfTreeGrid.Dispose](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~Dispose.html) method to release the memory.
+This method is associated with relinquishes memory and clears all references associated with treegrid. When you call this method, it releases all references for treegrid. So, the memory occupied using treegrid is reclaimed. You should call the [SfTreeGrid.Dispose](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~Dispose.html) method to release the memory.
