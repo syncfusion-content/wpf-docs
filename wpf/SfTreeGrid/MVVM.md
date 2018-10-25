@@ -106,7 +106,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind view model ItemsSource to ComboBox inside template
 
-You can load a combo box inside [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) and bind the ItemsSource from ViewModel to combo box using `ElementName` binding.
+You can load a ComboBox inside [TreeGridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) and bind the ItemsSource from ViewModel to ComboBox using `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
