@@ -209,8 +209,8 @@ private void RowDragDropController_Drop(object sender, Syncfusion.UI.Xaml.TreeGr
                         newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = -1 };
                     else
                     {
-                        var parentkey = parentNode.Item as EmployeeInfo;
-                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parentkey.ID };
+                        var parent = parentNode.Item as EmployeeInfo;
+                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parent.ID };
                     }
                 }
 
@@ -220,8 +220,8 @@ private void RowDragDropController_Drop(object sender, Syncfusion.UI.Xaml.TreeGr
                     if (!treeNode.IsExpanded)
                         AssociatedObject.sfTreeGrid.ExpandNode(treeNode);
                     parentNode = treeNode;
-                    var parentkey = parentNode.Item as EmployeeInfo;
-                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parentkey.ID };
+                    var parent = parentNode.Item as EmployeeInfo;
+                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parent.ID };
 
                 }
                 IList sourceCollection = null;
@@ -352,7 +352,7 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 ## Drag-and-Drop between TreeViewAdv and SfTreeGrid
 
-You can drag and drop the items between tree view and treegrid. For this, you need to wire the [Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) and [DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event from [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html)class.
+You can drag and drop the items between tree view and treegrid. For this, you need to wire the [Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) and [DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event from [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -416,8 +416,8 @@ private void RowDragDropController_Drop(object sender, TreeGridRowDropEventArgs 
                         newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = -1 };
                     else
                     {
-                        var parentkey = parentNode.Item as EmployeeInfo;
-                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parentkey.ID };
+                        var parent = parentNode.Item as EmployeeInfo;
+                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parent.ID };
                     }
                 }
 
@@ -427,8 +427,8 @@ private void RowDragDropController_Drop(object sender, TreeGridRowDropEventArgs 
                     if (!treeNode.IsExpanded)
                         AssociatedObject.sfTreeGrid.ExpandNode(treeNode);
                     parentNode = treeNode;
-                    var parentkey = parentNode.Item as EmployeeInfo;
-                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parentkey.ID };
+                    var parent = parentNode.Item as EmployeeInfo;
+                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parent.ID };
 
                 }
                 IList sourceCollection = null;
@@ -514,11 +514,11 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 # Customizing row drag-and-drop
 
-SfTreeGrid processes row drag and drop operations in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html)class. You can customize the row drag and drop operations by using events in the[SfTreeGrid.RowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html).
+SfTreeGrid processes row drag and drop operations in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class. You can customize the row drag and drop operations by using events in the[SfTreeGrid.RowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html).
 
 ## Auto expand the node on drag over
 
-When drag over the tree node, if drop position is “Drop as child”, then you can auto expand the corresponding tree node by setting [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html)to `true`. It is also possible to control the delay in expanding the node when drag over using [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html) property. Its default value in 3 sec.
+When drag over the tree node, if drop position is “Drop as child”, then you can auto expand the corresponding tree node by setting [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html) to `true`. It is also possible to control the delay in expanding the node when drag over using [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html) property. Its default value in 3 sec.
 
 {% tabs %}
 {% highlight c# %}
@@ -588,7 +588,7 @@ SfTreeGrid provides default UI for drag and drop. However, you can customize the
                                ChildPropertyName="ReportsTo" 
                                ItemsSource="{Binding Employees}"
                                ParentPropertyName="ID"
-                               RowDragDropTemplate="{StaticResource dragdroptemplate}"
+                               RowDragDropTemplate="{StaticResource DragDropTemplate}"
                                SelfRelationRootValue="-1" >
 {% endhighlight %}
 {% endtabs %}

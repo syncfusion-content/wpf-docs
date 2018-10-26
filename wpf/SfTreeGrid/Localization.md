@@ -30,7 +30,7 @@ To localize the treegrid, drag and drop window based on CurrentUICulture using
 
 2.Add the default resource file of SfDataGrid into `Resources` folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF2020296999.zip).
 
-![https://help.syncfusion.com/wpf/sfdatagrid/Localization_images/Localization_img1.png](Localization_images/Localization_img1.jpeg)
+![Localization image](Localization_images/Localization_img1.jpeg)
 
 3.Right-click on the Resources folder, select `Add` and then `NewItem`.
 
@@ -38,11 +38,11 @@ To localize the treegrid, drag and drop window based on CurrentUICulture using
 
 5.The culture name that indicates the name of language and country.
 
-![https://help.syncfusion.com/wpf/sfdatagrid/Localization_images/Localization_img2.png](Localization_images/Localization_img2.jpeg)
+![Localization image1](Localization_images/Localization_img2.jpeg)
 
 6.Now, select Add option to add the resource file in `Resources` folder.
 
-![https://help.syncfusion.com/wpf/sfdatagrid/Localization_images/Localization_img3.png](Localization_images/Localization_img3.jpeg)
+![Localization resource](Localization_images/Localization_img3.jpeg)
 
 7.Add the Name/Value pair in Resource Designer of `Syncfusion.SfGrid.WPF.de.resx` file and change its corresponding value to corresponding culture.
 
@@ -71,7 +71,7 @@ public MainWindow()
 
 You can edit default resource file by adding it to `Resources` folder of your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF-804035924.zip).
 
-![https://help.syncfusion.com/wpf/sfdatagrid/Localization_images/Localization_img6.png](Localization_images/Localization_img6.jpeg)
+![Default resource image](Localization_images/Localization_img6.jpeg)
 
 Now, change the Name/Value pair in Resource Designer of `Syncfusion.SfGrid.WPF.resx` file.
 

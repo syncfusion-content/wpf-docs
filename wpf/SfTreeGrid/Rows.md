@@ -119,7 +119,7 @@ Header row is present in top of the treegrid which has column headers in it. Col
 
 ## Hiding header row
 
-You can hide the header row by setting [SfTreeGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html)as 0 (zero).
+You can hide the header row by setting [SfTreeGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) as 0 (zero).
 
 {% tabs %}
 {% highlight xaml %}
@@ -136,7 +136,7 @@ You can hide the header row by setting [SfTreeGrid.HeaderRowHeight](https://hel
 
 ## Change the orientation of column header text to vertical
 
-Orientation of the treegrid column header text can be changed by editing the control template of the [TreeGridHeaderCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html)and applying `RotateTransform`.
+Orientation of the treegrid column header text can be changed by editing the control template of the [TreeGridHeaderCell](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html) and applying `RotateTransform`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -364,7 +364,7 @@ By default, the `sort icon` appears at the right of the header text. You ca
 
 ## Customize style of header row
 
-You can change the header cell background and foreground for specific column or an entire grid by using [HeaderStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~HeaderStyleProperty.html)property.
+You can change the header cell background and foreground for specific column or an entire grid by using [HeaderStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~HeaderStyleProperty.html) property.
 
 {% tabs %}
 {% highlight xaml %}
