@@ -22,4 +22,3 @@ You can set the visibility of the CloseButton by using the CloseButtonVisibility
 
 
 {% endhighlight %}
-
