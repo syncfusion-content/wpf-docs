@@ -10,7 +10,21 @@ documentation: ug
 # Row Height customization
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) and the other rows height can be changed by setting [SfDataGrid.RowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RowHeight.html) property.
- 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+						ItemsSource="{Binding Orders}" 
+						HeaderRowHeight="50"
+                        RowHeight="30"
+						>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.HeaderRowHeight = 50;
+this.dataGrid.RowHeight = 30;
+{% endhighlight %}
+{% endtabs %}
+
 You can also change the particular row height using [VisualContainer.RowHeights](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VisualContainer~RowHeights.html) property.
 
 
