@@ -439,6 +439,43 @@ void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEv
 {% endhighlight %}
 {% endtabs %}
 
+## ReadOny
+
+You can prevent users from modifying the contents of a treegrid cell by setting the [SfTreeGrid.IsReadOnly ](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.sfgridbase~IsReadOnly.html) property, but the user can able to perform copy and selection operation.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Name="treeGrid"
+            AllowEditing="True"
+            IsReadOnly="True"
+            AutoGenerateColumns="True"
+            ItemsSource="{Binding EmployeeDetails}"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.IsReadOnly = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can enable or disable editing for particular column by setting [TreeGridColumn.IsReadOnly](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~IsReadOnly.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:TreeGridTextColumn  HeaderText="Order ID" 
+                                MappingName="OrderID"
+                                IsReadOnly="True"/>
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.Columns["OrderID"].IsReadOnly = true;
+
+{% endhighlight %}
+
+N> We should set the AllowEditing property to achieve the IsReadOnly behavior.
+[TreeGridColumn.IsReadOnly ](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~IsReadOnly.html)takes higher priority than [SfTreeGrid.IsReadOnly](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.sfgridbase~IsReadOnly.html).
+
 ## Mouse and Keyboard operations for UIElement inside Template
 
 You can directly load edit element using `TreeGridTemplateColumn.CellTemplate` property. In this case, you can provide focus and control to the UIElement inside CellTemplate in the below ways,
