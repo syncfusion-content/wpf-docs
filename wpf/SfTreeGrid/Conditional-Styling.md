@@ -329,7 +329,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Style rows using style using style selector](Conditional-Styling_images/Conditional-Styling_img7.jpeg)
+![Style rows using style selector](Conditional-Styling_images/Conditional-Styling_img7.jpeg)
 
 # Row Header
 
