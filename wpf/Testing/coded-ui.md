@@ -12,29 +12,29 @@ CUIT contains the Coded UI test project. When application does not contain 
 
 Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
 
-![](CodedUI_images/CodedUI_img1.jpeg)
+![WPF Testing Create Coded UI test project](CodedUI_images/CodedUI_img1.jpeg)
 
 
 ## Adding Coded UI Test file
 
 The CUIT file is automatically generated, when create the Coded UI test project. To add another test file, right-click to the test project choose Add, and then select Coded UI Test.
 
-![](CodedUI_images/CodedUI_img2.jpeg)
+![WPF Testing added UI test file](CodedUI_images/CodedUI_img2.jpeg)
 
 
 1.Generate Code for Coded UI Test dialog box is shown after select the Coded UI test file. Choose the Record option shown in the following image, to record the test actions.
 
-![](CodedUI_images/CodedUI_img3.jpeg)
+![WPF Testing showing Record option](CodedUI_images/CodedUI_img3.jpeg)
 
 
 2.After choose the Record Actions, right-click the body of the Coded UI Test file. 
 
-![](CodedUI_images/CodedUI_img4.jpeg)
+![WPF Testing showing body of the Coded UI Test file](CodedUI_images/CodedUI_img4.jpeg)
 
 
 Then choose the Coded UI Test Builder (UI Map), shown at the bottom right side of the window.
 
-![](CodedUI_images/CodedUI_img5.jpeg)
+![WPF Testing showing Record option from UI Map](CodedUI_images/CodedUI_img5.jpeg)
 
 
 3.Start the recording option from UI Map to record the test actions. 
@@ -54,7 +54,7 @@ Recording option can be paused while testing the project.
 
 6.To generate code that replicates the action, choose the Generate Code icon and type a name and description for CUIT method.
 
-![C:/Users/marimuthu.sivalingam/Documents/My Received Files/L_AA40.tmp.PNG](CodedUI_images/CodedUI_img6.jpeg)
+![WPF Testing showing generate Code icon](CodedUI_images/CodedUI_img6.jpeg)
 
 
 7.After the completion of test process, click the Generate Code option from UI Map to generate the test code for project, as it replicates test actions.
@@ -65,7 +65,7 @@ Recording option can be paused while testing the project.
 
 8.Choose the required Method of Description for code generation then click to Add and Generate.
 
-![](CodedUI_images/CodedUI_img7.jpeg)
+![WPF Testing showing Add and Generate](CodedUI_images/CodedUI_img7.jpeg)
 
 
 
@@ -106,10 +106,10 @@ End Sub
 3.Right-click the body of the `CodedUITestMethod` and then select `Generate Code for Coded UI Test` -> Use CUIT builder as shown in the following screenshot:
 
 
-![](CodedUI_images/CodedUI_img8.jpeg)
+![WPF Testing showing Generate code for Coded UI Test](CodedUI_images/CodedUI_img8.jpeg)
 
 
-![](CodedUI_images/CodedUI_img9.jpeg)
+![WPF Testing showing UI Map](CodedUI_images/CodedUI_img9.jpeg)
 
 ## Supported controls
 
@@ -315,7 +315,7 @@ public MainWindow()
 
 5. You can record the actions made on UI elements by clicking Record button on the CodedUITest builder. For example, you can record the action of changing the cell value in SfDataGrid. Click the Pause button to finish the record.
 
-![](CodedUI_images/Features_img1.jpeg)
+![WPF DataGrid showing record the Coded UI Test builder](CodedUI_images/Features_img1.jpeg)
 
 6. Once the record is completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method. Then close the CodedUITestBuilder and you can see the generated code for cell value changed action as follows.
 
@@ -334,10 +334,10 @@ public void RecordedMethod1()
 {% endtabs %}
 
 7. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
-![](CodedUI_images/Features_img2.jpeg)
+![WPF DataGrid showing add assertion](CodedUI_images/Features_img2.jpeg)
 
 8. After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
-![](CodedUI_images/Features_img3.jpeg)
+![WPF DataGrid showing run the Test](CodedUI_images/Features_img3.jpeg)
 
 ### Properties
 
@@ -657,7 +657,7 @@ public MainWindow()
 3. Create a CodedUITest Project, refer [here](https://help.syncfusion.com/wpf/testing/coded-ui).
 4. Now you can drag the Crosshairs on to the UI elements of your WPF SfTreeGrid application and it shows the available properties of the inner UI elements in SfTreeGrid.
 5. You can record the actions made on UI elements by clicking Record button on the CodedUITest builder. For example, you can record the action of changing the cell value in tree grid. Click the Pause button to finish the record.
-![](CodedUI_images/Features_img4.jpeg)
+![WPF TreeGrid showing record the action](CodedUI_images/Features_img4.jpeg)
 
 6. Once the record is completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method. Then close the CodedUITestBuilder and you can see the generated code for cell value changed action as follows.
 {% tabs %}
@@ -681,10 +681,10 @@ public MainWindow()
 {% endtabs %}
 
 7. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
-![](CodedUI_images/Features_img5.jpeg)
+![WPF TreeGrid showing create assertion](CodedUI_images/Features_img5.jpeg)
 
 8. After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
-![](CodedUI_images/Features_img6.jpeg)
+![WPF TreeGrid run the test](CodedUI_images/Features_img6.jpeg)
 
 Properties
 
