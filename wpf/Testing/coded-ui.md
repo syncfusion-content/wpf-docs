@@ -582,7 +582,7 @@ Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
 </td>
 </tr>
 </table>
-**SfGridExtension** assembly must be placed into the following directory based on your visual studio version.
+**SfGridExtension** assembly must be placed into the following directory based on your Visual Studio version.
 <table>
 <tr>
 <td>
@@ -667,7 +667,7 @@ public MainWindow()
     #region Variable Declarations
     WpfText uIHardingText = this.UIWpfWindow.UITreeGridRowControlCustom.UITreeGridCellCustom.UIHardingText;
     WpfEdit uIItemEdit = this.UIWpfWindow.UITreeGridRowControlCustom.UITreeGridCellCustom.UIItemEdit;
-    WpfText uIJeffedarsonText = this.UIWpfWindow.UITreeGridRowControlCustom1.UITreeGridCellCustom.UIJeffersonText;
+    WpfText uIJeffersonText = this.UIWpfWindow.UITreeGridRowControlCustom1.UITreeGridCellCustom.UIJeffersonText;
    #endregion
     // Double-Click 'Harding' label
     Mouse.DoubleClick(uIHardingText, new Point(75, 5));
@@ -1421,7 +1421,7 @@ UseOnDemandPaging
 
 ## GridControl
 
-To test Gridcontrol with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from the below locations.
+To test GridControl with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from the below locations.
 
 <table>
 <tr>
@@ -1556,7 +1556,7 @@ namespace WpfApplication3 
   * Run the sample with CodedUITestBuilder. 
   * To create a CodedUITest Project, refer [here](https://help.syncfusion.com/wpf/testing/coded-ui).
 
-Following are the properties for Gridcontrol,
+Following are the properties for GridControl,
 
 <table>
 <tr>
@@ -1644,7 +1644,7 @@ ColumnCount
 
 This session demonstrates the example codes for how to perform the operation with the HandCode.
 
-#### Handcode for Find GridCell
+#### Hand Code for Find GridCell
 
 {% tabs %}
 {% highlight c# %}
@@ -1675,8 +1675,8 @@ public void CodedUITestMethod1()
     var rowindex = Convert.ToInt16(cell.GetProperty("RowIndex").ToString());
     var columnIndex = Convert.ToInt32(cell.GetProperty("ColumnIndex").ToString());
     Playback.Wait(100);
-    GridCellInfo cellinfo = new GridCellInfo(rowindex, columnIndex, "Grid1");
-    Point point = GetCellPoint(cellinfo, datagrid.WindowHandle);
+    GridCellInfo info = new GridCellInfo(rowindex, columnIndex, "Grid1");
+    Point point = GetCellPoint(info, datagrid.WindowHandle);
     Playback.Wait(50);
     //click the cell for enter into edit mode.
     Mouse.DoubleClick(point);
@@ -1701,8 +1701,8 @@ public void CodedUITestMethod1()
 }
  
  
-//this is the helper method to get the mid point of the givin GridCell
-public Point GetCellPoint(GridCellInfo CellInfo, IntPtr WindowHandle)
+//this is the helper method to get the mid point of the given GridCell
+public Point GetCellPoint(GridCellInfo CellInfo, Intptr WindowHandle)
 {
     int left, top, width, height;
     left = top = width = height = -1;
