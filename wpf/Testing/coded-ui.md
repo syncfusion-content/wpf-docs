@@ -29,7 +29,7 @@ The CUIT file is automatically generated, when create the Coded UI test project.
 
 2.After choose the Record Actions, right-click the body of the Coded UI Test file. 
 
-![WPF Testing showing body of the Coded UI Test file](CodedUI_images/CodedUI_img4.jpeg)
+![WPF Testing showing body of the Coded UI Test file](CodedUI_images/CodedUI_img4.png)
 
 
 Then choose the Coded UI Test Builder (UI Map), shown at the bottom right side of the window.
@@ -106,7 +106,7 @@ End Sub
 3.Right-click the body of the `CodedUITestMethod` and then select `Generate Code for Coded UI Test` -> Use CUIT builder as shown in the following screenshot:
 
 
-![WPF Testing showing Generate code for Coded UI Test](CodedUI_images/CodedUI_img8.jpeg)
+![WPF Testing showing Generate code for Coded UI Test](CodedUI_images/CodedUI_img8.png)
 
 
 ![WPF Testing showing UI Map](CodedUI_images/CodedUI_img9.jpeg)
@@ -1643,11 +1643,9 @@ public void CodedUITestMethod1()
     var rowindex = Convert.ToInt16(cell.GetProperty("RowIndex").ToString());
     var columnIndex = Convert.ToInt32(cell.GetProperty("ColumnIndex").ToString());
     Playback.Wait(100);
-    GridCellInfo info = new GridCellInfo(rowindex, columnIndex, "Grid1");
-    Point point = GetCellPoint(info, datagrid.WindowHandle);
+    GridCellInfo info = new GridCellInfo(rowindex, columnIndex, "Grid1");  
     Playback.Wait(50);
     //click the cell for enter into edit mode.
-    Mouse.DoubleClick(point);
     Playback.Wait(50);
     Keyboard.SendKeys("^(A)"); //select all the text
     Playback.Wait(150);
@@ -1668,24 +1666,5 @@ public void CodedUITestMethod1()
  
 }
  
- 
-//this is the helper method to get the mid point of the given GridCell
-public Point GetCellPoint(GridCellInfo CellInfo, Intptr WindowHandle)
-{
-    int left, top, width, height;
-    left = top = width = height = -1;
- 
-    Utilities.RECT windowRect;
-    if (Utilities.GetWindowRect(WindowHandle, out windowRect))
-    {
-        var cellRect = GridCommunicator.Instance.GetCellBoundingRect(CellInfo);
-        left = (int)cellRect.Left;
-        top = (int)cellRect.Top;
-        width = (int)cellRect.Width;
-        height = (int)cellRect.Height;
-    }
-    return new Point((left + (int)(0.5 * width)), (top + (int)(0.5 * height)));
-}
-
 {% endhighlight %}
 {% endtabs %}
