@@ -212,18 +212,8 @@ TreeView<br/><br/></td><td>
 
 ### Requirement and Configuration
 
-To test SfDataGrid control with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from the below locations.
+To test SfDataGrid control with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip) location.
 
-<table>
-<tr>
-<td>
-SfDataGrid
-</td>
-<td>
-{{'[http://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip)'| markdownify }}
-</td>
-</tr>
-</table>
 1. Open the Extension Project and build it.
 2. You can get the below tabulated assembly from bin folder.
 <table>
@@ -557,18 +547,7 @@ public void Mouse_Click_on_GridHeaderCell()
 
 ### Requirements and Configuration
 
-To test SfTreeGrid control with CUITs, build the Extension Project and place it in the mentioned location. You can get the extension project from the below location.
-
-<table>
-<tr>
-<td>
-SfTreeGrid
-</td>
-<td>
-{{'[http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip)'| markdownify }}
-</td>
-</tr>
-</table>
+To test SfTreeGrid control with CUITs, build the Extension Project and place it in the mentioned location. You can get the extension project from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip) location.
 
 1. Open the extension project and build it.
 2. You can get the below tabulated assembly from bin folder.
@@ -1421,18 +1400,7 @@ UseOnDemandPaging
 
 ## GridControl
 
-To test GridControl with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from the below locations.
-
-<table>
-<tr>
-<td>
-{{'**GridControl**'| markdownify }}
-</td>
-<td>
-{{'[http://www.syncfusion.com/downloads/support/directtrac/186216/ze/GridExtension837392922](http://www.syncfusion.com/downloads/support/directtrac/186216/ze/GridExtension837392922)'| markdownify }}
-</td>
-</tr>
-</table>
+To test GridControl with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project from [this](http://www.syncfusion.com/downloads/support/directtrac/186216/ze/GridExtension837392922) location.
 
 1. Open the Extension Project and build it.
 2. You can get the below tabulated assemblies from bin folder.
