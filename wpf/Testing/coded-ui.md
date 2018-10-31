@@ -6,71 +6,144 @@ platform: wpf
 control: Testing
 documentation: ug
 ---
-# Getting Started with Coded UI Testing
+# Overview
 
-CUIT contains the Coded UI test project. When application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution, choose Add, New Project, and then select either Visual Basic or Visual C#. Next, choose Test, Coded UI Test.
+Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. Our controls support CUITs Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair that is shown in **Coded UI Test Builder**, on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
+Provided here are three levels of support in Coded UI Test automation.
+
+<table>
+<tr>
+<td>
+{{'**Levels**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Level1
+</td>
+<td>
+Record and detect the UI elements when you perform any actions in the control.
+</td>
+</tr>
+<tr>
+<td>
+Level2
+</td>
+<td>
+Provide custom properties for UI elements when you drag the crosshair to any UI element.
+</td>
+</tr>
+<tr>
+<td>
+Level3
+</td>
+<td>
+<b>Coded UI Test Builder</b> generates code from recorded session and custom class is implemented to access custom properties, so the generated code is simplified.
+</td>
+</tr>
+</table>
+
+## Prerequisites and Compatibility
+
+### Prerequisites
+
+The prerequisites are tabulated in the following table.
+
+<table>
+<tr>
+<td>
+.Net Framework
+</td>
+<td>
+4.5,4.5.1,4.6
+</td>
+</tr>
+<tr>
+<td>
+Other Requirement
+</td>
+<td>
+Extension dll and Syncfusion build installed dll’s must be referred as same version.
+</td>
+</tr>
+</table>
+
+### Compatibility
+
+<table>
+<tr>
+<td>
+Visual Studio
+
+</td>
+<td>
+Coded UI provides support only in Visual Studio – 2010, 2012 and 2013 Ultimate and Premium platform. For Visual Studio 2015 and 2017 are support only in Enterprise platform. For more information about the platforms and configurations that are supported by Coded UI tests, refer this {{'[link](https://msdn.microsoft.com/en-us/library/dd380742.aspx#"")'| markdownify }}.
+</td>
+</tr>
+</table>
+
+## Create, Record and Run the tests
+
+### Creating Coded UI Project
+
+CUIT contains the Coded UI test project. When application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution is given below,
+
+  * Choose **Add New Project**. 
+  * Next, select either **Visual Basic** or **Visual C#**.
+  * Next, right-click to the test project choose **Add** and select **Coded UI Test**.
 
 Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
 
-![WPF Testing Create Coded UI test project](CodedUI_images/CodedUI_img1.jpeg)
+![WPF Coded UI create project](CodedUI_images/CodedUI_img1.jpeg)
 
 
-## Adding Coded UI Test file
+### Adding Coded UI Test file
 
-The CUIT file is automatically generated, when create the Coded UI test project. To add another test file, right-click to the test project choose Add, and then select Coded UI Test.
+The CUIT file is automatically generated, when create the Coded UI test project. To add another test file, right-click to the test project choose **Add**, and then select **Coded UI Test**.
 
-![WPF Testing added UI test file](CodedUI_images/CodedUI_img2.jpeg)
-
-
-1.Generate Code for Coded UI Test dialog box is shown after select the Coded UI test file. Choose the Record option shown in the following image, to record the test actions.
-
-![WPF Testing showing Record option](CodedUI_images/CodedUI_img3.jpeg)
+![WPF Coded UI adding test file](CodedUI_images/CodedUI_img2.jpeg)
 
 
-2.After choose the Record Actions, right-click the body of the Coded UI Test file. 
+1.**Generate Code for Coded UI Test** dialog box is shown after select the Coded UI test file. Choose the Record option shown in the following image, to record the test actions.
 
-![WPF Testing showing body of the Coded UI Test file](CodedUI_images/CodedUI_img4.png)
-
-
-Then choose the Coded UI Test Builder (UI Map), shown at the bottom right side of the window.
-
-![WPF Testing showing Record option from UI Map](CodedUI_images/CodedUI_img5.jpeg)
+![WPF Coded UI showing Record option](CodedUI_images/CodedUI_img3.jpeg)
 
 
-3.Start the recording option from UI Map to record the test actions. 
+2.After choose the Record actions, right-click the body of the Coded UI Test file. 
+
+![WPF Coded UI showing test file content](CodedUI_images/CodedUI_img4.png)
 
 
+Then choose the **Coded UI Test Builder** (UI Map), shown at the bottom right side of the window.
 
-### Click to Start the Recording.
-
-Recording option can be paused while testing the project.
-
-
-### Click to Stop the Recording.
-
-4.The Recorded steps are shown by UI Map or by pressing Alt+ S key.
-
-5.To delete actions that recorded by mistake, choose Edit Actions.
-
-6.To generate code that replicates the action, choose the Generate Code icon and type a name and description for CUIT method.
-
-![WPF Testing showing generate Code icon](CodedUI_images/CodedUI_img6.jpeg)
+![WPF Coded UI showing UI Map](CodedUI_images/CodedUI_img5.jpeg)
 
 
-7.After the completion of test process, click the Generate Code option from UI Map to generate the test code for project, as it replicates test actions.
+3.Start the recording option from UI Map to record the test actions and recording option can be paused while testing the project.
 
 
+4.The recorded steps are shown by UI Map or by pressing Alt+ S key.
 
-### Generate Test Code 
+5.To delete actions that recorded by mistake, choose Edit actions.
 
-8.Choose the required Method of Description for code generation then click to Add and Generate.
+6.To generate code that replicates the action, choose the **Generate Code** icon and type a name and description for CUIT method.
 
-![WPF Testing showing Add and Generate](CodedUI_images/CodedUI_img7.jpeg)
+![WPF Coded UI showing generate Code icon](CodedUI_images/CodedUI_img6.jpeg)
+
+
+7.After the completion of test process, click the `Generate Code` option from UI Map to generate the test code for project, as it replicates test actions.
+
+8.Choose the required **Method Description** for code generation then click to Add and Generate.
+
+![WPF Coded UI showing Add and Generate option](CodedUI_images/CodedUI_img7.jpeg)
 
 
 
 
-## Testing application with the Generated Coded UI Tests.
+### Testing recorded steps
 
 Application can be tested with the generated CUIT method.
 
@@ -103,108 +176,108 @@ End Sub
 
 2.Build and run the application that has already been configured. CUIT builder can be opened with the following steps.
 
-3.Right-click the body of the `CodedUITestMethod` and then select `Generate Code for Coded UI Test` -> Use CUIT builder as shown in the following screenshot:
+3.Right-click the body of the `CodedUITestMethod` and then select `Generate Code for Coded UI Test` -> Use `Coded UI Test Builder` as shown in the following screenshot:
 
 
-![WPF Testing showing Generate code for Coded UI Test](CodedUI_images/CodedUI_img8.png)
+![WPF Coded UI showing generate code](CodedUI_images/CodedUI_img8.png)
 
 
-![WPF Testing showing UI Map](CodedUI_images/CodedUI_img9.jpeg)
+![WPF Coded UI showing UI Map](CodedUI_images/CodedUI_img9.jpeg)
 
 ## Supported controls
 
-The following controls are featured in Coded UI Testing Support:
+The following controls are featured in Coded UI testing support:
 
 <table>
 <tr>
 <th>
 Supported Controls<br/><br/></th>
 <th>
-Level<br/><br/></th></tr>
+Levels<br/><br/></th></tr>
 <tr>
 <td>
 AutoComplete<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+3 Levels<br/><br/></td></tr>
 <tr>
 <td>
 CellGrid<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+3 Levels<br/><br/></td></tr>
 <tr>
 <td>
 ComboBoxAdv<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 DataGrid<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+3 Levels<br/><br/></td></tr>
 <tr>
 <td>
 DockingManager<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 DocumentContainer<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 GridData<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 GridControl<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+3 Levels<br/><br/></td></tr>
 <tr>
 <td>
 GridTree<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 PivotGrid<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 PropertyGrid<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 Ribbon<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 SfCalculator<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 SfChart<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 SfDataGrid<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+3 Levels<br/><br/></td></tr>
 <tr>
 <td>
 SfDataPager<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+3 Levels<br/><br/></td></tr>
 <tr>
 <td>
 SfMultiColumnDropDown<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 TabControlExt<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 TileView<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 <tr>
 <td>
 TreeGrid<br/><br/></td><td>
-3 Level<br/><br/></td></tr>
+3 Levels<br/><br/></td></tr>
 <tr>
 <td>
 TreeView<br/><br/></td><td>
-2 Level<br/><br/></td></tr>
+2 Levels<br/><br/></td></tr>
 </table>
 
 
@@ -287,9 +360,9 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPa
 
 ### Steps to work with Coded UI
 
-Follow the steps to create a CodedUITest project and test the SfDataGrid application:
+Follow the steps to create a **Coded UI Test** project and test the SfDataGrid application:
 
-1. Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the Coded UI Test by setting the AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
+1.Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the **Coded UI Test** by setting the **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -302,17 +375,17 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-2. Build the application and launch the .exe file from bin folder.
+2.Build the application and launch the .exe file from bin folder.
 
-3. Create a CodedUITest project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
+3.Create a **Coded UI Test** project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
 
-4. Drag the crosshairs on to the UI elements of your WPF SfDataGrid application. It shows the available properties of the inner UI elements in SfDataGrid.
+4.Drag the crosshairs on to the UI elements of your WPF SfDataGrid application. It shows the available properties of the inner UI elements in SfDataGrid.
 
-5. The actions made on UI elements can be recorded by clicking `Record` on the CodedUITest builder. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
+5.The actions made on UI elements can be recorded by clicking `Record` on the **Coded UI Test builder**. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
 
-![WPF DataGrid showing record the Coded UI Test builder](CodedUI_images/Features_img1.jpeg)
+![WPF datagrid showing pause option](CodedUI_images/Features_img1.jpeg)
 
-6. After recording, click the GenerateCode icon in CodedUITestBuilder to generate a test method then, close the CodedUITestBuilder. You can see the generated code for the cell value changed action.
+6.After recording, click the `Generate Code` icon in **Coded UI Test Builder** to generate a test method then, close the **Coded UI Test Builder**. You can see the generated code for the cell value changed action.
 
 {% tabs %}
 {% highlight c# %}
@@ -328,15 +401,15 @@ public void RecordedMethod1()
 {% endhighlight %}
 {% endtabs %}
 
-7. An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in CodedUITestBuilder.
-![WPF DataGrid showing add assertion](CodedUI_images/Features_img2.jpeg)
+7.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in **Coded UI Test Builder**.
+![WPF datagrid showing add assertion](CodedUI_images/Features_img2.jpeg)
 
-8. After all tests and assertions are created, right-click the Test method and click `Run Tests` to run the test.
-![WPF DataGrid showing run the Test](CodedUI_images/Features_img3.jpeg)
+8.After all tests and assertions are created, right-click the Test method and click `Run Tests` to run the test.
+![WPF datagrid showing run the test](CodedUI_images/Features_img3.jpeg)
 
 ### Properties
 
-The following properties are for each of the UI elements in SfDataGrid.
+The following properties are for each of the UI Elements in SfDataGrid.
 
 <table>
 <tr>
@@ -475,7 +548,7 @@ Default properties
 
 ### How to enable Coded UI Test in SfDataGrid
 
-To enable CUITs, set AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
+To enable CUITs, set **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -490,7 +563,7 @@ public MainWindow()
 
 ### Hand code for CUIT operation
 
-#### Hand code for changing the cell Value 
+#### Hand code for changing the cell value 
 
 {% tabs %}
 {% highlight c# %}
@@ -627,9 +700,9 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPa
 
 ### Steps to work with Coded UI
 
-Follow the steps to create a CodedUITest project and test the tree grid application:
+Follow the steps to create a **Coded UI Test** project and test the tree grid application:
 
-1. Create a new WPF application or open an existing WPF application with tree grid. Enable Coded UI Test in tree grid by setting AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
+1.Create a new WPF application or open an existing WPF application with tree grid. Enable Coded UI Test in tree grid by setting **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -642,13 +715,16 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-2. Build the application and launch the .exe file from the bin folder.
-3. Create a CodedUITest project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
-4. Drag the crosshairs on to the UI elements of your WPF SfTreeGrid application. It shows the available properties of the inner UI elements in SfTreeGrid.
-5. The actions made on the UI elements can be recorded by clicking `Record` in the CodedUITest builder. For example, you can record the action of changing the cell value in tree grid. Click `Pause` to finish the record.
-![WPF TreeGrid showing record the action](CodedUI_images/Features_img4.jpeg)
+2.Build the application and launch the .exe file from the bin folder.
 
-6. After recording, click the `GenerateCode` icon in CodedUITestBuilder to generate a test method then, close the CodedUITestBuilder. You can see the generated code for the cell value changed action.
+3.Create a **Coded UI Test** project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
+
+4.Drag the crosshairs on to the UI elements of your WPF SfTreeGrid application. It shows the available properties of the inner UI elements in SfTreeGrid.
+
+5.The actions made on the UI elements can be recorded by clicking `Record` in the **Coded UI Test** builder. For example, you can record the action of changing the cell value in tree grid. Click `Pause` to finish the record.
+![WPF treegrid showing pause option](CodedUI_images/Features_img4.jpeg)
+
+6.After recording, click the `GenerateCode` icon in **Coded UI Test Builder** to generate a test method then, close the **Coded UI Test Builder**. You can see the generated code for the cell value changed action.
 
 {% tabs %}
 {% highlight c# %}
@@ -670,15 +746,15 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-7. An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (cell) is now listed in the Assertion dialog box. You can add assertion by clicking the `Generate Code` button in CodedUITestBuilder.
-![WPF TreeGrid showing create assertion](CodedUI_images/Features_img5.jpeg)
+7.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (cell) is now listed in the Assertion dialog box. You can add assertion by clicking the `Generate Code` button in **Coded UI Test Builder**.
+![WPF treegrid showing create assertion](CodedUI_images/Features_img5.jpeg)
 
-8. After all tests and assertions are created, right-click the Test method and click Run Tests to run the test.
-![WPF TreeGrid run the test](CodedUI_images/Features_img6.jpeg)
+8.After all tests and assertions are created, right-click the Test method and click **Run Tests** to run the test.
+![WPF treegrid run the test](CodedUI_images/Features_img6.jpeg)
 
 ### Properties
 
-The following properties are for each of the UI elements in SfTreeGrid.
+The following properties are for each of the UI Elements in SfTreeGrid.
 
 <table>
 <tr>
@@ -839,11 +915,9 @@ SfTreeGridExpanderCellPropertyProvider
 
 ## ComboBoxAdv
 
-You can refer and proceed the steps to create the CodedUiTest project mentioned in the following link.
+You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
 
-[https://help.syncfusion.com/wpf/testing/coded-ui](https://help.syncfusion.com/wpf/testing/coded-ui)
-
-The following properties are for ComboBoxAdv control.
+The following properties are for each of the UI Elements in ComboBoxAdv control.
 
 <table>
 <tr>
@@ -874,11 +948,9 @@ Default properties
 
 ## TreeViewAdv
 
-You can refer and proceed the steps to create the CodedUITest project mentioned in the following link.
+You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
 
-[https://help.syncfusion.com/wpf/testing/coded-ui](https://help.syncfusion.com/wpf/testing/coded-ui)
-
-The following properties are for TreeViewAdv control.
+The following properties are for each of the UI Elements in TreeViewAdv control.
 
 <table>
 <tr>
@@ -909,11 +981,9 @@ Default Properties
 
 ## PropertyGrid
 
-You can refer and proceed the steps to create the CodedUITest project mentioned in the following link.
+You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
 
-[https://help.syncfusion.com/wpf/testing/coded-ui](https://help.syncfusion.com/wpf/testing/coded-ui)
-
-The following properties are for PropertyGrid control.
+The following properties are for each of the UI Elements in PropertyGrid control.
 
 <table>
 <tr>
@@ -1040,11 +1110,9 @@ Default properties
 
 ## Ribbon
 
-You can refer and proceed the steps to create the CodedUITest project mentioned in the following link.
+You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
 
-[https://help.syncfusion.com/wpf/testing/coded-ui](https://help.syncfusion.com/wpf/testing/coded-ui)
-
-The following properties are for Ribbon control.
+The following properties are for each of the UI Elements in Ribbon control.
 
 <table>
 <tr>
@@ -1267,11 +1335,9 @@ Default properties
 
 ## SfMultiColumnDropDown
 
-You can refer and proceed the steps to create the CodedUITest project mentioned in the following link.
+You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
 
-[https://help.syncfusion.com/wpf/testing/coded-ui](https://help.syncfusion.com/wpf/testing/coded-ui)
-
-The following properties are for SfMultiColumnDropDown control.
+The following properties are for each of the UI Elements in SfMultiColumnDropDown control.
 
 <table>
 <tr>
@@ -1334,11 +1400,9 @@ ValueMember
 
 ## SfDataPager
 
-You can refer and proceed the steps to create the CodedUITest project mentioned in the following link.
+You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
 
-[https://help.syncfusion.com/wpf/testing/coded-ui](https://help.syncfusion.com/wpf/testing/coded-ui)
-
-The following properties are for SfDataPager control.
+The following properties are for each of the UI Elements in SfDataPager control.
 
 <table>
 <tr>
@@ -1486,8 +1550,9 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPa
 
 To prepare the grid application, follow the steps:
 
-1. Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application, plugin is required. Add a reference to this assembly. 
-2. Open App.xaml file. 
+1.Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application, plugin is required. Add a reference to this assembly. 
+
+2.Open App.xaml file. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1502,7 +1567,7 @@ To prepare the grid application, follow the steps:
 {% endhighlight %}
 {% endtabs %}
 
-3. Change the application to Syncfusion:GridControlTestApplication.
+3.Change the application to Syncfusion:GridControlTestApplication.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1518,7 +1583,7 @@ To prepare the grid application, follow the steps:
 {% endhighlight %}
 {% endtabs %}
 
-4. For the code behind file (App.xaml.cs), make sure to inherit from GridControlTestApplication.
+4.For the code behind file (App.xaml.cs), make sure to inherit from **GridControlTestApplication**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1535,12 +1600,13 @@ namespace WpfApplication3 
 {% endhighlight %}
 {% endtabs %}
 
-5. Build the application for testing.  
-  * Add Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll and Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll in your sample. 
-  * Run the sample with CodedUITestBuilder. 
-  * To create a CodedUITest Project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
+5.Build the application for testing.
 
-The following properties are for GridControl.
+  * Add the **Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll** and **Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll** in your sample. 
+  * Run the sample with **Coded UI Test Builder**. 
+  * To create a **Coded UI Test** Project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
+
+The following properties are for each of the UI Elements in GridControl.
 
 <table>
 <tr>
