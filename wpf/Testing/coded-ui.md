@@ -9,8 +9,8 @@ documentation: ug
 # Overview
 
 Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. Our controls support CUITs Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair that is shown in **Coded UI Test Builder**, on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
-Provided here are three levels of support in Coded UI Test automation.
 
+Provided here are three levels of support in Coded UI Test automation.
 <table>
 <tr>
 <td>
@@ -84,6 +84,137 @@ Coded UI provides support only in Visual Studio – 2010, 2012 and 2013 Ultimate
 </td>
 </tr>
 </table>
+
+## Coded UI Test Extension support
+
+The Coded UI Test(CUIT) extension is a technology manager that tells Coded UI Test to use UI automation for Syncfusion WPF controls.
+
+The following controls are having extension project.
+
+* SfDataGrid
+* SfTreeGrid
+* GridControl
+
+To test the Coded UI supported controls with CUITs, build the Extension project and place in the below mentioned location.
+
+<table>
+<tr>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Compile assemblies</b>
+</td>
+<td>
+<b>Adding Extension assembly</b>
+</td>
+<td>
+<b>Extension Project</b>
+</td>
+</tr>
+<tr>
+<td>
+SfDataGrid
+</td>
+<td>
+SfGrid.WPF 
+</td>
+<td>
+Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
+</td>
+<td>
+You can get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip)'| markdownify }} location.
+</td>
+</tr>
+<tr>
+<td>
+SfTreeGrid
+</td>
+<td>
+SfGrid.WPF 
+</td>
+<td>
+Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
+</td>
+<td>
+You can get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip)'| markdownify }} location.
+</td>
+</tr>
+<tr>
+<td>
+GridControl
+</td>
+<td>
+Grid.WPF
+</td>
+<td>
+Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll
+</td>
+<td>
+You can get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/186216/ze/GridExtension837392922)'| markdownify }} location.
+</td>
+</tr>
+</table>
+
+To run the CUITs, follow the steps:
+
+1. Run the Extension project and build it.
+2. You can get the following tabulated assembly from the bin folder.
+
+The above assembly must be placed in the following directory based on your Visual Studio version.
+
+<table>
+<tr>
+<td>
+{{'**Visual Studio Version**'| markdownify }}
+</td>
+<td>
+{{'**Relative Path**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+2010
+</td>
+<td>
+C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages
+</td>
+</tr>
+<tr>
+<td>
+2012
+</td>
+<td>
+C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\11.0\UITestExtensionPackages
+</td>
+</tr>
+<tr>
+<td>
+2013
+</td>
+<td>
+C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\13.0\UITestExtensionPackages
+</td>
+</tr>
+<tr>
+<td>
+2015
+</td>
+<td>
+C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
+</td>
+</tr>
+<tr>
+<td>
+2017
+</td>
+<td>
+C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPackages
+</td>
+</tr>
+</table>
+
+**NOTE**: Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll should be installed in GAC location. Refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
 
 ## Create, Record and Run the tests
 
@@ -280,132 +411,159 @@ TreeView<br/><br/></td><td>
 2 Levels<br/><br/></td></tr>
 </table>
 
+The following UI Elements for Coded UI supported controls,
+
+<table>
+<tr>
+<td>
+{{'**Controls Name**'| markdownify }}
+</td>
+<td>
+{{'**UI Elements**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+ComboBoxAdv
+</td>
+<td>
+ComboBoxAdv,
+ComboBoxItemAdv
+</td>
+</tr>
+<tr>
+<td>
+TreeViewAdv
+</td>
+<td>
+TreeViewAdv,
+TreeViewItemAdv
+</td>
+</tr>
+<tr>
+<td>
+PropertyGrid
+</td>
+<td>
+PropertyGrid,
+ClearButton,
+DescriptionBorder,
+DescriptionDetailsTextBlock,
+DescriptionNameTextBlock,
+PropertyCategoryViewItem,
+PropertyGridScrollViewer,
+PropertyGridSplitter,
+PropertyItemTextBlock,
+PropertyView,
+PropertyViewItem,
+SearchTextBox,
+ToggleSortButton,
+ToggleGroupButton
+</td>
+</tr>
+<tr>
+<td>
+Ribbon
+</td>
+<td>
+Ribbon,
+RibbonTab,
+RibbonBar,
+RibbonButton,
+RibbonCheckBox,
+RibbonComboBox,
+RibbonComboBoxItem,
+RibbonGallery,
+RibbonGalleryPopup,
+RibbonGalleryItem,
+RibbonMenuGroup,
+RibbonMenuGroupItem,
+RibbonMenuItem,
+DropDownButton,
+SplitButton,
+ApplicationMenu,
+MenuButton,
+SimpleMenuButton,
+SplitMenuButton,
+BackStage,
+BackStageCommandButton,
+BackStageTabItem,
+RibbonToggleButton,
+QATListBox,
+QuickAccessToolBar,
+QuickAccessToolBarDropDown
+</td>
+</tr>
+<tr>
+<td>
+SfMultiColumnDropDown
+</td>
+<td>
+SfMultiColumnDropDownControl
+</td>
+</tr>
+<tr>
+<td>
+SfDataPager
+</td>
+<td>
+SfDataPager
+</td>
+</tr>
+<tr>
+<td>
+SfDataGrid
+</td>
+<td>
+DataGrid,
+GridCell,
+GridHeaderCellControl,
+GridRowHeaderCell,
+GroupDropArea,
+DetailsViewDataGrid,
+GroupDropAreaItem,
+GridStackedHeaderCellControl,
+GridTableSummaryCell,
+GridGroupSummaryCell,
+GridCaptionSummaryCell,
+GridDetailsViewExpanderCellControl,
+GridIndentCell
+</td>
+</tr>
+<tr>
+<td>
+SfTreeGrid
+</td>
+<td>
+TreeGrid,
+TreeGridCell,
+TreeGridHeaderCell,
+TreeGridRowHeaderCell,
+TreeGridStackedHeaderCell,
+TreeGridExpanderCell
+</td>
+</tr>
+<tr>
+<td>
+GridControl
+</td>
+<td>
+GridCell,
+Grid
+</td>
+</tr>
+<tr>
+<td>
+PivotGrid
+</td>
+<td>
+PivotGrid
+</td>
+</tr>
+</table>
+
 
 ## SfDataGrid
-
-### Requirement and configuration
-
-To test the SfDataGrid control with CUITs, build the Extension project and place in the mentioned location. You can get the Extension project from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip) location.
-
-To run the CUITs, follow the steps:
-
-1. Open the Extension project and build it.
-2. You can get the following tabulated assembly from the bin folder.
-
-<table>
-<tr>
-<td>
-SfGrid.WPF 
-</td>
-<td>
-Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
-</td>
-</tr>
-</table>
-
-This assembly must be placed in the following directory based on your Visual Studio version.
-
-<table>
-<tr>
-<td>
-{{'**Visual Studio Version**'| markdownify }}
-</td>
-<td>
-{{'**Relative Path**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-2010
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2012
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\11.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2013
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\13.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2015
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2017
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPackages
-</td>
-</tr>
-</table>
-
-**NOTE**: Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll should be installed in GAC location. Refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
-
-### Steps to work with Coded UI
-
-Follow the steps to create a **Coded UI Test** project and test the SfDataGrid application:
-
-1.Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the **Coded UI Test** by setting the **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
-
-{% tabs %}
-{% highlight c# %}
-using Syncfusion.UI.Xaml.Grid;
-public MainWindow()
-{
- InitializeComponent();
- AutomationPeerHelper.EnableCodedUI = true;
-}
-{% endhighlight %}
-{% endtabs %}
-
-2.Build the application and launch the .exe file from bin folder.
-
-3.Create a **Coded UI Test** project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
-
-4.Drag the crosshairs on to the UI elements of your WPF SfDataGrid application. It shows the available properties of the inner UI elements in SfDataGrid.
-
-5.The actions made on UI elements can be recorded by clicking `Record` on the **Coded UI Test builder**. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
-
-![WPF Coded UI showing pause option](CodedUI_images/Features_img1.jpeg)
-
-6.After recording, click the `Generate Code` icon in **Coded UI Test Builder** to generate a test method then, close the **Coded UI Test Builder**. You can see the generated code for the cell value changed action.
-
-{% tabs %}
-{% highlight c# %}
-public void RecordedMethod1()
-{
-   #region Variable Declarations
-   WpfText uIMEREPText = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom4.UIMEREPText;
-   WpfEdit uIGridCellEdit = this.UIWpfWindow.UISfDataGridCustom.UIGridCellEdit;
-   WpfSfGridCell uIGridCellCustom11 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom11;
-   WpfSfGridCell uIGridCellCustom12 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom12;
-   #endregion
-}
-{% endhighlight %}
-{% endtabs %}
-
-7.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in **Coded UI Test Builder**.
-![WPF Coded UI showing Add Assertion](CodedUI_images/Features_img2.jpeg)
-
-8.After all tests and assertions are created, right-click the Test method and click `Run Tests` to run the test.
-![WPF Coded UI showing Run Tests](CodedUI_images/Features_img3.jpeg)
 
 ### Properties
 
@@ -546,20 +704,54 @@ Default properties
 </tr>
 </table>
 
-### How to enable Coded UI Test in SfDataGrid
+### Steps to work with Coded UI
 
-To enable CUITs, set **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
+Follow the steps to create a **Coded UI Test** project and test the SfDataGrid application:
+
+1.Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the **Coded UI Test** by setting the **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
 public MainWindow()
 {
-  InitializeComponent();
-  AutomationPeerHelper.EnableCodedUI = true;
+ InitializeComponent();
+ AutomationPeerHelper.EnableCodedUI = true;
 }
 {% endhighlight %}
 {% endtabs %}
+
+2.Build the application and launch the .exe file from bin folder.
+
+3.Create a **Coded UI Test** project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
+
+4.Drag the crosshairs on to the UI elements of your WPF SfDataGrid application. It shows the available properties of the inner UI elements in SfDataGrid.
+
+5.The actions made on UI elements can be recorded by clicking `Record` on the **Coded UI Test builder**. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
+
+![WPF Coded UI showing pause option](CodedUI_images/Features_img1.jpeg)
+
+6.After recording, click the `Generate Code` icon in **Coded UI Test Builder** to generate a test method then, close the **Coded UI Test Builder**. You can see the generated code for the cell value changed action.
+
+{% tabs %}
+{% highlight c# %}
+public void RecordedMethod1()
+{
+   #region Variable Declarations
+   WpfText uIMEREPText = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom4.UIMEREPText;
+   WpfEdit uIGridCellEdit = this.UIWpfWindow.UISfDataGridCustom.UIGridCellEdit;
+   WpfSfGridCell uIGridCellCustom11 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom11;
+   WpfSfGridCell uIGridCellCustom12 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom12;
+   #endregion
+}
+{% endhighlight %}
+{% endtabs %}
+
+7.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in **Coded UI Test Builder**.
+![WPF Coded UI showing Add Assertion](CodedUI_images/Features_img2.jpeg)
+
+8.After all tests and assertions are created, right-click the Test method and click `Run Tests` to run the test.
+![WPF Coded UI showing Run Tests](CodedUI_images/Features_img3.jpeg)
 
 ### Hand code for CUIT operation
 
@@ -623,80 +815,81 @@ public void Mouse_Click_on_GridHeaderCell()
 
 ## SfTreeGrid
 
-### Requirements and configuration
+### Properties
 
-To test the SfTreeGrid control with CUITs, build the Extension project and place in the mentioned location. You can get the Extension project from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip) location.
-
-To run the CUITs, follow the steps:
-
-1. Open the Extension project and build it.
-2. You can get the following tabulated assembly from the bin folder.
+The following properties are for each of the UI Elements in SfTreeGrid.
 
 <table>
 <tr>
 <td>
-SfGrid.WPF 
+{{'**UI Elements**'| markdownify }}
 </td>
 <td>
-Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
+{{'**Properties**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+TreeGrid
+</td>
+<td>
+RowCount,
+ColumnCount,
+SelectionMode,
+SelectionUnit,
+SelectionIndex, and
+SelectedItemCount.
+</td>
+</tr>
+<tr>
+<td>
+TreeGridCell
+</td>
+<td>
+CellValue,
+FormattedValue,
+RowIndex,
+ColumnIndex, and
+ColumnName.
+</td>
+</tr>
+<tr>
+<td>
+TreeGridHeaderCell
+</td>
+<td>
+MappingName,
+SortDirection, and
+SortNumberVisibility.
+</td>
+</tr>
+<tr>
+<td>
+TreeGridRowHeaderCell
+</td>
+<td>
+RowErrorMessage,
+RowIndex, and
+State.
+</td>
+</tr>
+<tr>
+<td>
+TreeGridStackedHeaderCell
+</td>
+<td>
+Default properties  
+</td>
+</tr>
+<tr>
+<td>
+TreeGridExpanderCell
+</td>
+<td>
+Default properties  
 </td>
 </tr>
 </table>
-
-This assembly must be placed in the following directory based on your Visual Studio version.
-
-<table>
-<tr>
-<td>
-{{'**Visual Studio Version**'| markdownify }}
-</td>
-<td>
-{{'**Relative Path**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-2010
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2012
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\11.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2013
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\13.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2015
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2017
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPackages
-</td>
-</tr>
-</table>
-
-**NOTE**: Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll should be installed in GAC location. Refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
 
 ### Steps to work with Coded UI
 
@@ -751,85 +944,6 @@ public MainWindow()
 
 8.After all tests and assertions are created, right-click the Test method and click **Run Tests** to run the test.
 ![WPF Coded UI showing Run Tests](CodedUI_images/Features_img6.jpeg)
-
-### Properties
-
-The following properties are for each of the UI Elements in SfTreeGrid.
-
-<table>
-<tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-TreeGrid
-</td>
-<td>
-RowCount,
-ColumnCount,
-SelectionMode,
-SelectionUnit,
-SelectionIndex, and
-SelectedItemCount.
-</td>
-</tr>
-<tr>
-<td>
-TreeGridCell
-</td>
-<td>
-CellValue,
-FormattedValue,
-RowIndex,
-ColumnIndex, and
-ColumnName.
-
-</td>
-</tr>
-<tr>
-<td>
-TreeGridHeaderCell
-</td>
-<td>
-MappingName,
-SortDirection, and
-SortNumberVisibility.
-
-</td>
-</tr>
-<tr>
-<td>
-TreeGridRowHeaderCell
-</td>
-<td>
-RowErrorMessage,
-RowIndex, and
-State.
-
-</td>
-</tr>
-<tr>
-<td>
-TreeGridStackedHeaderCell
-</td>
-<td>
-Default properties  
-</td>
-</tr>
-<tr>
-<td>
-TreeGridExpanderCell
-</td>
-<td>
-Default properties  
-</td>
-</tr>
-</table>
 
 Code generation of the control list is given as follows.
 
@@ -913,429 +1027,7 @@ SfTreeGridExpanderCellPropertyProvider
 </tr>
 </table>
 
-## ComboBoxAdv
-
-You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
-
-The following properties are for each of the UI Elements in ComboBoxAdv control.
-
-<table>
-<tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-ComboBoxAdv
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-ComboBoxItemAdv
-</td>
-<td>
-Default properties
-</td>
-</tr>
-</table>
-
-## TreeViewAdv
-
-You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
-
-The following properties are for each of the UI Elements in TreeViewAdv control.
-
-<table>
-<tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-TreeViewAdv
-</td>
-<td>
-Default Properties
-</td>
-</tr>
-<tr>
-<td>
-TreeViewItemAdv
-</td>
-<td>
-Default Properties
-</td>
-</tr>
-</table>
-
-## PropertyGrid
-
-You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
-
-The following properties are for each of the UI Elements in PropertyGrid control.
-
-<table>
-<tr>
-<td>
-{{'**UI Element**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-PropertyGrid
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-ClearButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-DescriptionBorder
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-DescriptionDetailsTextBlock
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-DescriptionNameTextBlock
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-PropertyCategoryViewItem
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-PropertyGridScrollViewer
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-PropertyGridSplitter
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-PropertyItemTextBlock
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-PropertyView
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-PropertyViewItem
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-SearchTextBox
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-ToggleSortButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-ToggleGroupButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-</table>
-
-## Ribbon
-
-You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
-
-The following properties are for each of the UI Elements in Ribbon control.
-
-<table>
-<tr>
-<td>
-{{'**UI Element**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Ribbon
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonTab
-</td>
-<td>
-Default properties 
-</td>
-</tr>
-<tr>
-<td>
-RibbonBar
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonCheckBox
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonComboBox
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonComboBoxItem
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonGallery
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonGalleryPopup
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonGalleryItem
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonMenuGroup
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonMenuGroupItem
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonMenuItem
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-DropDownButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-SplitButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-ApplicationMenu
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-MenuButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-SimpleMenuButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-SplitMenuButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-BackStage
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-BackStageCommandButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-BackStageTabItem
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-RibbonToggleButton
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-QATListBox
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-QuickAccessToolBar
-</td>
-<td>
-Default properties
-</td>
-</tr>
-<tr>
-<td>
-QuickAccessToolBarDropDown
-</td>
-<td>
-Default properties
-</td>
-</tr>
-</table>
-
 ## SfMultiColumnDropDown
-
-You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
 
 The following properties are for each of the UI Elements in SfMultiColumnDropDown control.
 
@@ -1399,8 +1091,6 @@ ValueMember
 </table>
 
 ## SfDataPager
-
-You can refer and proceed the steps to create the **Coded UI Test** project mentioned in the [link](https://help.syncfusion.com/wpf/testing/coded-ui).
 
 The following properties are for each of the UI Elements in SfDataPager control.
 
@@ -1475,136 +1165,7 @@ UseOnDemandPaging
 
 ## GridControl
 
-To test the GridControl with CUITs, build the Extension project and place in the mentioned location. You can get the Extension project from [this](http://www.syncfusion.com/downloads/support/directtrac/186216/ze/GridExtension837392922) location.
-
-To run the CUITs, follow the steps:
-
-1. Open the Extension project and build it.
-2. You can get the following tabulated assemblies from the bin folder.
-
-<table>
-<tr>
-<td>
-Grid.WPF
-</td>
-<td>
-Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll
-</td>
-</tr>
-</table>
-
-This assembly must be placed into the following directory based on your Visual Studio version.
-
-<table>
-<tr>
-<td>
-{{'**Visual Studio Version**'| markdownify }}
-</td>
-<td>
-{{'**Relative Path**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-2010
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2012
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\11.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2013
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\12.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2015
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPackages
-</td>
-</tr>
-<tr>
-<td>
-2017
-</td>
-<td>
-C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPackages
-</td>
-</tr>
-</table>
-
-### Preparing the Grid application
-
-To prepare the grid application, follow the steps:
-
-1.Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application, plugin is required. Add a reference to this assembly. 
-
-2.Open App.xaml file. 
-
-{% tabs %}
-{% highlight xaml %}
-<Application x:Class="WpfApplication3.App"
-              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-              StartupUri="Window1.xaml">
-     <Application.Resources>
-	 
-     </Application.Resources>
-</Application>
-{% endhighlight %}
-{% endtabs %}
-
-3.Change the application to Syncfusion:GridControlTestApplication.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
-	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-	xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-	StartupUri="Window1.xaml"> 
-	<syncfusion:GridControlTestApplication.Resources> 
-	
-	</syncfusion:GridControlTestApplication.Resources> 
-</syncfusion:GridControlTestApplication>
-{% endhighlight %}
-{% endtabs %}
-
-4.For the code behind file (App.xaml.cs), make sure to inherit from **GridControlTestApplication**.
-
-{% tabs %}
-{% highlight xaml %}
-namespace WpfApplication3 
-{ 
-	/// <summary>
-	/// Interaction logic for App.xaml 
-	/// </summary>
-	public partial class App : GridControlTestApplication 
-	{
-	 
-	} 
-} 
-{% endhighlight %}
-{% endtabs %}
-
-5.Build the application for testing.
-
-  * Add the **Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll** and **Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll** in your sample. 
-  * Run the sample with **Coded UI Test Builder**. 
-  * To create a **Coded UI Test** Project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
+### Properties
 
 The following properties are for each of the UI Elements in GridControl.
 
@@ -1689,6 +1250,66 @@ ColumnCount
 </td>
 </tr>
 </table>
+
+### Preparing the Grid application
+
+To prepare the grid application, follow the steps:
+
+1.Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application, plugin is required. Add a reference to this assembly. 
+
+2.Open App.xaml file. 
+
+{% tabs %}
+{% highlight xaml %}
+<Application x:Class="WpfApplication3.App"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              StartupUri="Window1.xaml">
+     <Application.Resources>
+	 
+     </Application.Resources>
+</Application>
+{% endhighlight %}
+{% endtabs %}
+
+3.Change the application to Syncfusion:GridControlTestApplication.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	StartupUri="Window1.xaml"> 
+	<syncfusion:GridControlTestApplication.Resources> 
+	
+	</syncfusion:GridControlTestApplication.Resources> 
+</syncfusion:GridControlTestApplication>
+{% endhighlight %}
+{% endtabs %}
+
+4.For the code behind file (App.xaml.cs), make sure to inherit from **GridControlTestApplication**.
+
+{% tabs %}
+{% highlight xaml %}
+namespace WpfApplication3 
+{ 
+	/// <summary>
+	/// Interaction logic for App.xaml 
+	/// </summary>
+	public partial class App : GridControlTestApplication 
+	{
+	 
+	} 
+} 
+{% endhighlight %}
+{% endtabs %}
+
+5.Build the application for testing.
+
+  * Add the **Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll** and **Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll** in your sample. 
+  * Run the sample with **Coded UI Test Builder**. 
+  * To create a **Coded UI Test** Project, refer to [here](https://help.syncfusion.com/wpf/testing/coded-ui).
 
 ### Hand code for CUIT operation
 
