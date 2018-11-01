@@ -8,9 +8,10 @@ documentation: ug
 ---
 # Overview
 
-Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. Our controls support CUITs Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair that is shown in **Coded UI Test Builder**, on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
+Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. Our controls support CUITs Coded UI automation that helps you to create automated tests for inner elements and records the sequence of actions. When dragging the crosshair shown in Coded UI Test Builder on UI elements, it shows the properties of the respective UI elements. You can also add assertion for each of the properties.
 
-Provided here are three levels of support in Coded UI Test automation.
+Provided here are the three levels of support in Coded UI Test automation.
+
 <table>
 <tr>
 <td>
@@ -25,7 +26,7 @@ Provided here are three levels of support in Coded UI Test automation.
 Level 1
 </td>
 <td>
-Record and detect the UI elements when you perform any actions in the control.
+Record and detect the UI elements when performing any actions in the control.
 </td>
 </tr>
 <tr>
@@ -33,7 +34,7 @@ Record and detect the UI elements when you perform any actions in the control.
 Level 2
 </td>
 <td>
-Provide custom properties for UI elements when you drag the crosshair to any UI element.
+Provide custom properties for UI elements when dragging the crosshair to any UI element.
 </td>
 </tr>
 <tr>
@@ -41,12 +42,12 @@ Provide custom properties for UI elements when you drag the crosshair to any UI 
 Level 3
 </td>
 <td>
-<b>Coded UI Test Builder</b> generates code from recorded session and custom class is implemented to access custom properties, so the generated code is simplified.
+<b>Coded UI Test Builder</b> generates code from the recorded session and custom class is implemented to access custom properties, so the generated code is simplified.
 </td>
 </tr>
 </table>
 
-## Prerequisites and Compatibility
+## Prerequisites and compatibility
 
 ### Prerequisites
 
@@ -66,7 +67,7 @@ The prerequisites are tabulated in the following table.
 Other Requirement
 </td>
 <td>
-Extension dll and Syncfusion build installed dll’s must be referred as same version.
+Extension dll and Syncfusion build installed dll should be referred as same version.
 </td>
 </tr>
 </table>
@@ -80,22 +81,22 @@ Visual Studio
 
 </td>
 <td>
-Coded UI provides support only in Visual Studio – 2010, 2012 and 2013 Ultimate and Premium platform. For Visual Studio 2015 and 2017 are support only in Enterprise platform. For more information about the platforms and configurations that are supported by Coded UI tests, refer this {{'[link](https://msdn.microsoft.com/en-us/library/dd380742.aspx#"")'| markdownify }}.
+Coded UI provides support only in Visual Studio – 2010, 2012 and 2013 Ultimate and Premium platforms for Visual Studio 2015 and 2017 supported only in Enterprise platform. For more information about the platforms and configurations supported by Coded UI tests, refer to this {{'[link](https://msdn.microsoft.com/en-us/library/dd380742.aspx#"")'| markdownify }}.
 </td>
 </tr>
 </table>
 
-## Coded UI Test Extension support
+## Coded UI Test extension support
 
 The Coded UI Test(CUIT) extension is a technology manager that tells Coded UI Test to use UI automation for Syncfusion WPF controls.
 
-The following controls are having extension project.
+The following controls are having extension project:
 
 * SfDataGrid
 * SfTreeGrid
 * GridControl
 
-To test the Coded UI supported controls with CUITs, build the Extension project and place in the below mentioned location.
+To test the Coded UI supported controls with CUITs, build the Extension project and place in the following mentioned location.
 
 <table>
 <tr>
@@ -123,7 +124,7 @@ SfGrid.WPF
 Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
 </td>
 <td>
-You can get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip)'| markdownify }} location.
+Get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip)'| markdownify }} location.
 </td>
 </tr>
 <tr>
@@ -137,7 +138,7 @@ SfGrid.WPF
 Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
 </td>
 <td>
-You can get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip)'| markdownify }} location.
+Get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip)'| markdownify }} location.
 </td>
 </tr>
 <tr>
@@ -151,7 +152,7 @@ Grid.WPF
 Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll
 </td>
 <td>
-You can get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/186216/ze/GridExtension837392922)'| markdownify }} location.
+Get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/186216/ze/GridExtension837392922)'| markdownify }} location.
 </td>
 </tr>
 </table>
@@ -216,34 +217,32 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPa
 
 N> The Extension package should be installed(For example, **Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll**) in GAC location. Refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
 
-## Create, Record and Run the tests
+## Create, record, and run the tests
 
 ### Creating Coded UI Project
 
-CUIT contains the Coded UI test project. When application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution is given below,
+CUIT contains the Coded UI test project. When application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution is as follows:
 
-  * Choose **Add New Project**. 
-  * Next, select either **Visual Basic** or **Visual C#**.
-  * Next, right-click to the test project choose **Add** and select **Coded UI Test**.
+  * Choose Add New Project. 
+  * Select either Visual Basic or Visual C#.
+  * Right-click the test project, choose Add, and select Coded UI Test.
 
 Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
 
 ![WPF Coded UI create project](CodedUI_images/CodedUI_img1.jpeg)
 
-
 ### Adding Coded UI Test file
 
-The CUIT file is automatically generated, when create the Coded UI test project. To add another test file, right-click to the test project choose **Add**, and then select **Coded UI Test**.
+The CUIT file will be automatically generated, when creating the Coded UI test project. To add another test file, right-click the test project, choose Add, and select Coded UI Test.
 
 ![WPF Coded UI adding test file](CodedUI_images/CodedUI_img2.jpeg)
 
-
-1.**Generate Code for Coded UI Test** dialog box is shown after select the Coded UI test file. Choose the Record option shown in the following image, to record the test actions.
+1. Generate Code for Coded UI Test dialog box is shown after select the Coded UI test file. Choose the Record option shown in the following image, to record the test actions.
 
 ![WPF Coded UI showing Record option](CodedUI_images/CodedUI_img3.jpeg)
 
 
-2.After choose the Record actions, right-click the body of the Coded UI Test file. 
+2. After choose the Record actions, right-click the body of the Coded UI Test file. 
 
 ![WPF Coded UI showing test file content](CodedUI_images/CodedUI_img4.png)
 
@@ -253,9 +252,9 @@ Then choose the **Coded UI Test Builder** (UI Map), shown at the bottom right si
 ![WPF Coded UI showing UI Map](CodedUI_images/CodedUI_img5.jpeg)
 
 
-3.Start the recording option from UI Map to record the test actions and recording option can be paused while testing the project.
+3. Start the recording option from UI Map to record the test actions and recording option can be paused while testing the project.
 
-4.Run the application on which you will be performing UI testing.
+4. Run the application on which you will be performing UI testing.
 
 5.Drag the crosshairs on to the UI elements of your WPF grid control application. It shows the available properties of the inner UI elements in grid control's.
 
