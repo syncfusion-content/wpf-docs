@@ -7,9 +7,9 @@ control: Pivot Grid
 documentation: ug
 ---
 
-# Resizing the Columns and Rows
+# How to resizing the columns and rows in PivotGrid?
 
-PivotGridControl supports resizing of rows and columns dynamically. In this topic the on-demand resizing of rows and columns is discussed.
+PivotGridControl supports resizing of rows and columns dynamically. In this topic, on-demand resizing of rows and columns is discussed.
 
 ## Resizing the columns
 
@@ -136,8 +136,6 @@ End Class
 You can change the row height by click and dragging the resizing cursor at the edge of row header. The resizing cursor appears when you hover the grid line exists between two rows.
 
 To enable the row resizing dynamically, the [`AllowResizeRows`](https://help.syncfusion.com/cr/wpf/Syncfusion.PivotAnalysis.Wpf~Syncfusion.Windows.Controls.PivotGrid.PivotGridControl~AllowResizeRows.html) property should be enabled. The below code snippet shows the resizing of rows in pivot grid is being enabled.
-
-Please refer the beloe code sample.
 
 {% tabs %}
 
