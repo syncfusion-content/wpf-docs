@@ -970,141 +970,6 @@ SfTreeGridExpanderCellPropertyProvider
 </tr>
 </table>
 
-## SfMultiColumnDropDown
-
-The following properties are for each of the UI Elements in the SfMultiColumnDropDown control.
-
-<table>
-<tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="9">
-SfMultiColumnDropDownControl
-</td>
-<td>
-AllowAutoComplete
-</td>
-</tr>
-<tr>
-<td>
-AllowNullInput
-</td>
-</tr>
-<tr>
-<td>
-AllowImmediatePopup
-</td>
-</tr>
-<tr>
-<td>
-AllowIncrementalFiltering
-</td>
-</tr>
-<tr>
-<td>
-AllowCaseSensitiveFiltering
-</td>
-</tr>
-<tr>
-<td>
-AllowSpinOnMouseWheel
-</td>
-</tr>
-<tr>
-<td>
-DisplayMember
-</td>
-</tr>
-<tr>
-<td>
-IsDropDownOpenSelectedIndex
-</td>
-</tr>
-<tr>
-<td>
-ValueMember
-</td>
-</tr>
-</table>
-
-## SfDataPager
-
-The following properties are for each of the UI Elements in the SfDataPager control.
-
-<table>
-<tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="11">
-SfDataPager
-</td>
-<td>
-AccentBackground
-</td>
-</tr>
-<tr>
-<td>
-AccentForeground
-</td>
-</tr>
-<tr>
-<td>
-AutoEllipsisMode
-</td>
-</tr>
-<tr>
-<td>
-AutoEllipsisText
-</td>
-</tr>
-<tr>
-<td>
-DisplayMode
-</td>
-</tr>
-<tr>
-<td>
-EnableGridPaging
-</td>
-</tr>
-<tr>
-<td>
-NumericButtonCount
-</td>
-</tr>
-<tr>
-<td>
-Orientation
-</td>
-</tr>
-<tr>
-<td>
-PageCount
-</td>
-</tr>
-<tr>
-<td>
-PageSize
-</td>
-</tr>
-<tr>
-<td>
-UseOnDemandPaging
-</td>
-</tr>
-</table>
 
 ## GridControl
 
@@ -1314,3 +1179,139 @@ public void CodedUITestMethod1()
  
 {% endhighlight %}
 {% endtabs %}
+
+## SfMultiColumnDropDown
+
+The following properties are for each of the UI Elements in the SfMultiColumnDropDown control.
+
+<table>
+<tr>
+<td>
+{{'**UI Elements**'| markdownify }}
+</td>
+<td>
+{{'**Properties**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="9">
+SfMultiColumnDropDownControl
+</td>
+<td>
+AllowAutoComplete
+</td>
+</tr>
+<tr>
+<td>
+AllowNullInput
+</td>
+</tr>
+<tr>
+<td>
+AllowImmediatePopup
+</td>
+</tr>
+<tr>
+<td>
+AllowIncrementalFiltering
+</td>
+</tr>
+<tr>
+<td>
+AllowCaseSensitiveFiltering
+</td>
+</tr>
+<tr>
+<td>
+AllowSpinOnMouseWheel
+</td>
+</tr>
+<tr>
+<td>
+DisplayMember
+</td>
+</tr>
+<tr>
+<td>
+IsDropDownOpenSelectedIndex
+</td>
+</tr>
+<tr>
+<td>
+ValueMember
+</td>
+</tr>
+</table>
+
+## SfDataPager
+
+The following properties are for each of the UI Elements in the SfDataPager control.
+
+<table>
+<tr>
+<td>
+{{'**UI Elements**'| markdownify }}
+</td>
+<td>
+{{'**Properties**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="11">
+SfDataPager
+</td>
+<td>
+AccentBackground
+</td>
+</tr>
+<tr>
+<td>
+AccentForeground
+</td>
+</tr>
+<tr>
+<td>
+AutoEllipsisMode
+</td>
+</tr>
+<tr>
+<td>
+AutoEllipsisText
+</td>
+</tr>
+<tr>
+<td>
+DisplayMode
+</td>
+</tr>
+<tr>
+<td>
+EnableGridPaging
+</td>
+</tr>
+<tr>
+<td>
+NumericButtonCount
+</td>
+</tr>
+<tr>
+<td>
+Orientation
+</td>
+</tr>
+<tr>
+<td>
+PageCount
+</td>
+</tr>
+<tr>
+<td>
+PageSize
+</td>
+</tr>
+<tr>
+<td>
+UseOnDemandPaging
+</td>
+</tr>
+</table>
