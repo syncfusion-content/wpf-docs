@@ -26,7 +26,7 @@ Provided here are the three levels of support in Coded UI Test automation.
 Level 1
 </td>
 <td>
-Record and detect the UI elements when performing any actions in the control.
+Record and detect the UI elements when performing actions in the control.
 </td>
 </tr>
 <tr>
@@ -227,42 +227,41 @@ CUIT contains the Coded UI test project. When application does not contain 
   * Select either Visual Basic or Visual C#.
   * Right-click the test project, choose Add, and select Coded UI Test.
 
-Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
+Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition does not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
 
 ![WPF Coded UI create project](CodedUI_images/CodedUI_img1.jpeg)
 
 ### Adding Coded UI Test file
 
-The CUIT file will be automatically generated, when creating the Coded UI test project. To add another test file, right-click the test project, choose Add, and select Coded UI Test.
+To add the CUIT file, follow the steps:
+
+1. Create the CUIT project, the CUIT file will be automatically generated. To add another test file, right-click the test project, choose Add, and select Coded UI Test.
 
 ![WPF Coded UI adding test file](CodedUI_images/CodedUI_img2.jpeg)
 
-1. Generate Code for Coded UI Test dialog box is shown after select the Coded UI test file. Choose the Record option shown in the following image, to record the test actions.
+2. `Generate Code for Coded UI Test` dialog box will be shown after selecting the Coded UI test file. Choose `Record` to record the test actions.
 
 ![WPF Coded UI showing Record option](CodedUI_images/CodedUI_img3.jpeg)
 
-
-2. After choose the Record actions, right-click the body of the Coded UI Test file. 
+3. Then, right-click the body of the Coded UI Test file. 
 
 ![WPF Coded UI showing test file content](CodedUI_images/CodedUI_img4.png)
 
-
-Then choose the **Coded UI Test Builder** (UI Map), shown at the bottom right side of the window.
+4. Choose `Coded UI Test Builder` (UI Map) at the bottom right side of the window.
 
 ![WPF Coded UI showing UI Map](CodedUI_images/CodedUI_img5.jpeg)
 
+5. Start the recording option from UI Map to record the test actions and recording option can be paused when testing the project.
 
-3. Start the recording option from UI Map to record the test actions and recording option can be paused while testing the project.
+6. Run the application, on which you will be performing UI testing.
 
-4. Run the application on which you will be performing UI testing.
+7. Drag the crosshairs on to the UI elements of your WPF grid control application. It shows the available properties of the inner UI elements in the grid controls.
 
-5.Drag the crosshairs on to the UI elements of your WPF grid control application. It shows the available properties of the inner UI elements in grid control's.
-
-6.The actions made on UI elements can be recorded by clicking `Record` on the **Coded UI Test builder**. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
+8. The actions made on UI elements can be recorded by clicking `Record` on the `Coded UI Test builder`. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
 
 ![WPF Coded UI showing pause option](CodedUI_images/Features_img1.jpeg)
 
-7.After recording, click the `Generate Code` icon in **Coded UI Test Builder** to generate a test method then, close the **Coded UI Test Builder**. You can see the generated code for the cell value changed action.
+9. Then, click the `Generate Code` icon in `Coded UI Test Builder` to generate a test method. Close the `Coded UI Test Builder`. You can see the generated code for the cell value changed action.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,15 +277,14 @@ public void RecordedMethod1()
 {% endhighlight %}
 {% endtabs %}
 
-8.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in **Coded UI Test Builder**.
+10. An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in `Coded UI Test Builder`.
 ![WPF Coded UI showing Add Assertion](CodedUI_images/Features_img2.jpeg)
-
 
 ### Testing recorded steps
 
-Application can be tested with the generated CUIT method.
+Application can be tested with the generated CUIT method. Follow the procedure to test the recorded steps:
 
-1.Add a test method called CodedUITestProject1.
+1. Add a test method called CodedUITestProject1.
 
 {% tabs %}
 
@@ -313,17 +311,17 @@ End Sub
 
 {% endtabs %}
 
-2.Build and run the application that has already been configured. CUIT builder can be opened with the following steps.
+2. Build and run the application that has already been configured. CUIT builder can be opened with the following steps.
 
-3.Right-click the body of the `CodedUITestMethod` and then select `Run Tests`.
+3. Right-click the body of the `CodedUITestMethod` and select `Run Tests`.
 
 ![WPF Coded UI showing Run Tests](CodedUI_images/CodedUI_RunTests.png)
 
-4.Before running tests, ensure that the test application is launched and the initial states of controls are the same as those at the beginning of the test recording.
+4. Before running tests, ensure that the test application is launched and the initial states of controls are same as at the beginning of the test recording.
 
 ## Supported controls
 
-The following controls are featured in Coded UI testing support:
+The following controls are featured in Coded UI testing support.
 
 <table>
 <tr>
@@ -433,7 +431,7 @@ The following UI Elements for Coded UI supported controls,
 ComboBoxAdv
 </td>
 <td>
-ComboBoxAdv,
+ComboBoxAdv and
 ComboBoxItemAdv
 </td>
 </tr>
@@ -442,7 +440,7 @@ ComboBoxItemAdv
 TreeViewAdv
 </td>
 <td>
-TreeViewAdv,
+TreeViewAdv and
 TreeViewItemAdv
 </td>
 </tr>
@@ -463,7 +461,7 @@ PropertyItemTextBlock,
 PropertyView,
 PropertyViewItem,
 SearchTextBox,
-ToggleSortButton,
+ToggleSortButton, and
 ToggleGroupButton
 </td>
 </tr>
@@ -496,7 +494,7 @@ BackStageCommandButton,
 BackStageTabItem,
 RibbonToggleButton,
 QATListBox,
-QuickAccessToolBar,
+QuickAccessToolBar, and
 QuickAccessToolBarDropDown
 </td>
 </tr>
@@ -532,7 +530,7 @@ GridStackedHeaderCellControl,
 GridTableSummaryCell,
 GridGroupSummaryCell,
 GridCaptionSummaryCell,
-GridDetailsViewExpanderCellControl,
+GridDetailsViewExpanderCellControl, and
 GridIndentCell
 </td>
 </tr>
@@ -545,7 +543,7 @@ TreeGrid,
 TreeGridCell,
 TreeGridHeaderCell,
 TreeGridRowHeaderCell,
-TreeGridStackedHeaderCell,
+TreeGridStackedHeaderCell, and
 TreeGridExpanderCell
 </td>
 </tr>
@@ -712,9 +710,9 @@ Default properties
 
 ### Steps to work with Coded UI
 
-Follow the steps to create a **Coded UI Test** project and test the SfDataGrid application:
+Follow the steps to create a `Coded UI Test` project and test the SfDataGrid application:
 
-1.Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the **Coded UI Test** by setting the **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
+1. Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the `Coded UI Test` by setting AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -727,9 +725,9 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-2.Build the application and launch the .exe file from bin folder.
+2. Build the application and launch the .exe file from bin folder.
 
-3.To create, record and run the tests for Coded UI Test project, you can refer this section **Create, Record and Run the tests**.
+3. Create, record, and run the tests for Coded UI Test project by referring `Create, Record, and Run the tests` section.
 
 ### Hand code for CUIT operation
 
@@ -875,7 +873,7 @@ Default properties  
 
 Follow the steps to create a **Coded UI Test** project and test the tree grid application:
 
-1.Create a new WPF application or open an existing WPF application with tree grid. Enable Coded UI Test in tree grid by setting **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
+1. Create a new WPF application or open an existing WPF application with tree grid. Enable Coded UI Test in tree grid by setting **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -888,11 +886,9 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-2.Build the application and launch the .exe file from the bin folder.
+2. Build the application and launch the .exe file from the bin folder.
 
-3.To create, record and run the tests for Coded UI Test project, you can refer this section **Create, Record and Run the tests**.
-
-Code generation of the control list is given as follows.
+3. Create, record and run the tests for Coded UI Test project by referring `Create, Record, and Run the tests` section.
 
 <table>
 <tr>
@@ -1039,7 +1035,7 @@ ValueMember
 
 ## SfDataPager
 
-The following properties are for each of the UI Elements in SfDataPager control.
+The following properties are for each of the UI Elements in the SfDataPager control.
 
 <table>
 <tr>
@@ -1114,7 +1110,7 @@ UseOnDemandPaging
 
 ### Properties
 
-The following properties are for each of the UI Elements in GridControl.
+The following properties are for each of the UI Elements in the GridControl.
 
 <table>
 <tr>
@@ -1202,9 +1198,9 @@ ColumnCount
 
 To prepare the grid application, follow the steps:
 
-1.Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application, plugin is required. Add a reference to this assembly. 
+1. Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application, plugin is required. Add a reference to this assembly. 
 
-2.Open App.xaml file. 
+2. Open App.xaml file. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1219,7 +1215,7 @@ To prepare the grid application, follow the steps:
 {% endhighlight %}
 {% endtabs %}
 
-3.Change the application to Syncfusion:GridControlTestApplication.
+3. Change the application to Syncfusion:GridControlTestApplication.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1235,7 +1231,7 @@ To prepare the grid application, follow the steps:
 {% endhighlight %}
 {% endtabs %}
 
-4.For the code behind file (App.xaml.cs), make sure to inherit from **GridControlTestApplication**.
+4. For the code behind file (App.xaml.cs), make sure to inherit from **GridControlTestApplication**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1252,11 +1248,11 @@ namespace WpfApplication3 
 {% endhighlight %}
 {% endtabs %}
 
-5.Build the application for testing.
+5. Build the application for testing.
 
-6.Add the **Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll** and **Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll** in your sample. 
+6. Add the **Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll** and **Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll** in your sample. 
 
-7.To create, record and run the tests for Coded UI Test project, you can refer this section **Create, Record and Run the tests**.
+7. To create, record and run the tests for Coded UI Test project, you can refer this section **Create, Record, and Run the tests**.
 
 ### Hand code for CUIT operation
 
