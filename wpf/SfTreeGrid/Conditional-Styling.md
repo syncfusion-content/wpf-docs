@@ -251,7 +251,7 @@ public class StringToImageConverter : IValueConverter
 
 ![Image to cell](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfTreeGridDemo1518968920.zip).
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-load-images-in-a-cell-in-wpf-and-uwp-treegrid/tree/master/WPF).
 
 # Rows
 
