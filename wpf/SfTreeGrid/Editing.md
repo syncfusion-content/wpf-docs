@@ -46,7 +46,7 @@ this.treeGrid.Columns["FirstName"].AllowEditing = true;
 
 N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEditing`
 
-![Editing image](Editing_images/Editing_img1.png)
+![Editing in treegrid WPF](Editing_images/Editing_img1.png)
 
 N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navigation and editing.
 
@@ -512,7 +512,7 @@ You can focus to the particular `UIElement` loaded inside template when cell get
 {% endhighlight %}
 {% endtabs %}
 
-![Mouse and Keyboard image](Editing_images/Editing_img2.png)
+![Mouse and keyboard operation in treegrid cell template WPF](Editing_images/Editing_img2.png)
 
 ## Providing keyboard control to UIElement inside CellTemplate
 
@@ -544,7 +544,7 @@ You can allow UIElement loaded inside CellTemplate to handle keyboard interactio
 {% endhighlight %}
 {% endtabs %}
 
-![Keyboard control image](Editing_images/Editing_img3.png)
+![Keyboard operations in treegrid cell template WPF](Editing_images/Editing_img3.png)
 
 N> Enter and Tab keys are always handled by SfTreeGrid only.
 
