@@ -100,7 +100,7 @@ internal class StyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells with converter in treegrid WPF](Conditional-Styling_images/Conditional-Styling_img1.jpeg)
+![Styling cells with converter in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img1.jpeg)
 
 ## Style cells based on record using converter
 
@@ -143,7 +143,7 @@ internal class StyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells based on record using converter in treegrid WPF](Conditional-Styling_images/Conditional-Styling_img2.jpeg)
+![Styling cells based on record using converter in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img2.jpeg)
 
 ## Style cells using triggers
 
@@ -176,7 +176,7 @@ The record cells ([TreeGridCell](https://help.syncfusion.com/cr/cref_files/wpf/S
 {% endhighlight %}
 {% endtabs %}
 
-![Style Cells using triggers in treegrid WPF](Conditional-Styling_images/Conditional-Styling_img3.jpeg)
+![Style Cells using triggers in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img3.jpeg)
 
 ## Style cells using style selector
 
@@ -215,7 +215,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells using style selector in treegrid WPF](Conditional-Styling_images/Conditional-Styling_img4.jpeg)
+![Styling cells using style selector in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img4.jpeg)
 
 ## Add image to cell
 
@@ -249,7 +249,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Adding image to a cell in treegrid WPF](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
+![Adding image to a cell in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-load-images-in-a-cell-in-wpf-and-uwp-treegrid/tree/master/WPF).
 
@@ -295,7 +295,7 @@ public class StyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Styling rows using converter in treegrid WPF](Conditional-Styling_images/Conditional-Styling_img6.jpeg)
+![Styling rows using converter in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img6.jpeg)
 
 ## Style rows using style selector
 
@@ -329,7 +329,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Styling rows using style selector in treegrid WPF](Conditional-Styling_images/Conditional-Styling_img7.jpeg)
+![Styling rows using style selector in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img7.jpeg)
 
 # Row Header
 
@@ -367,5 +367,5 @@ public class StyleConverter : IValueConverter
 }
 {% endhighlight %}
 
-![Styling the row header in treegrid WPF](Conditional-Styling_images/Conditional-Styling_img8.jpeg)
+![Styling the row header in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img8.jpeg)
 
