@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Localization
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting CurrentUICulture before InitializeComponent() method.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 
 Below application culture changed to German.
 
@@ -28,9 +28,9 @@ To localize the treegrid, drag and drop window based on CurrentUICulture using
 
 1.Create new folder and named as `Resources` in your application. 
 
-2.Add the default resource file of SfDataGrid into `Resources` folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF2020296999.zip).
+2.Add the default resource file of treegrid into `Resources` folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF2020296999.zip).
 
-![Localization image](Localization_images/Localization_img1.jpeg)
+![Default resouce file of WPF treegrid](Localization_images/Localization_img1.jpeg)
 
 3.Right-click on the Resources folder, select `Add` and then `NewItem`.
 
@@ -38,19 +38,19 @@ To localize the treegrid, drag and drop window based on CurrentUICulture using
 
 5.The culture name that indicates the name of language and country.
 
-![Localization image1](Localization_images/Localization_img2.jpeg)
+![Creating a resource file](Localization_images/Localization_img2.jpeg)
 
 6.Now, select Add option to add the resource file in `Resources` folder.
 
-![Localization resource](Localization_images/Localization_img3.jpeg)
+![Adding the created resource file as resource](Localization_images/Localization_img3.jpeg)
 
 7.Add the Name/Value pair in Resource Designer of `Syncfusion.SfGrid.WPF.de.resx` file and change its corresponding value to corresponding culture.
 
-![Localize image](Localization_images/Localization_img4.jpeg)
+![Modifying the resource file as per culture](Localization_images/Localization_img4.jpeg)
 
-![Localization image](Localization_images/Localization_img5.jpeg)
+![WPF treegrid drag and drop window displayed with localized text](Localization_images/Localization_img5.jpeg)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfTreeGridDemo-1657743751.zip).
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-localize-the-drag-and-drop-window-text-in-treegrid/tree/master/WPF).
 
 ## Localize when the resource file is present in different assembly or different namespace
 
@@ -69,13 +69,13 @@ public MainWindow()
 
 ## Edit default culture resource 
 
-You can edit default resource file by adding it to `Resources` folder of your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF-804035924.zip).
+You can edit default resource file by adding it to `Resources` folder of your application where treegrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF-804035924.zip).
 
-![Default resource image](Localization_images/Localization_img6.jpeg)
+![Default resource file](Localization_images/Localization_img6.jpeg)
 
 Now, change the Name/Value pair in Resource Designer of `Syncfusion.SfGrid.WPF.resx` file.
 
-![Localization image](Localization_images/Localization_img7.jpeg)
+![Modifying the default resource file](Localization_images/Localization_img7.jpeg)
 
-![Localization ui image](Localization_images/Localization_img8.jpeg)
+![WPF treegrid shown with modified resource](Localization_images/Localization_img8.jpeg)
 

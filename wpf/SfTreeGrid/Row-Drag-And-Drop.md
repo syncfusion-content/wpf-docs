@@ -7,9 +7,7 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-# Overview
-
-## Enable row drag-and-drop
+#Row drag-and-drop
 
 SfTreeGrid allows row drag and drop within and between controls by setting [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://msdn.microsoft.com/en-us/library/system.windows.uielement.allowdrop(v=vs.110).aspx) properties to true. It is also possible to drag and drop between treegrid and other controls like ListView, TreeView. SfTreeGrid allows dropping when `AllowDrop` is true and allows dragging when `AllowDraggingRows` is true.
 
@@ -30,12 +28,12 @@ sfTreeGrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and drop image](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img1.jpeg)
+![Drag and drop window while dragging in WPF treegrid](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img1.jpeg)
 
 
 While dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you dropped node at the bottom of targeted node, it will be added below the targeted node and if you are dropping over the targeted node, it will be added as child of that targeted node.
 
-![Multiple row drag and drop](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img2.jpeg)
+![Drap and drop row as child](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img2.jpeg)
 
 N> Drag indicators will not be shown when drop position is set as “Drop as child”.
 
@@ -43,7 +41,7 @@ N> Drag indicators will not be shown when drop position is set as “Drop as chi
 
 SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) to `Multiple` or `Extended`.
 
-![Drag multiple nodes](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img3.jpeg)
+![Drag and drop multiple rows](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img3.jpeg)
 
 # Events
 
@@ -346,9 +344,9 @@ private void ListView_PreviewMouseMove(object sender, System.Windows.Input.Mouse
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Drag_Drop_between_TreeGrid_and_ListView-518399594.zip).
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-listview-and-treegrid).
 
-![TreeGrid between ListView](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img4.jpeg)
+![Drag and drop between treeGrid and listview](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img4.jpeg)
 
 ## Drag-and-Drop between TreeViewAdv and SfTreeGrid
 
@@ -508,9 +506,9 @@ private void Treeview_Drop(object sender, DragEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Drag_drop_between_TreeGrid_and_TreeView57960604.zip).
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-treegrid-and-treeviewadv).
 
-![TreeGrid berween TreeView](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img5.jpeg)
+![Drag and drop between treegrid and treeviewadv](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img5.jpeg)
 
 # Customizing row drag-and-drop
 
@@ -593,7 +591,7 @@ SfTreeGrid provides default UI for drag and drop. However, you can customize the
 {% endhighlight %}
 {% endtabs %}
 
-![Customize default UI](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img6.jpeg)
+![Customized drag and drop window](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img6.jpeg)
 
 ## Disable dragging of certain nodes
 
