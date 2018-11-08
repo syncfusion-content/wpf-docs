@@ -342,13 +342,13 @@ Current zoom level</td></tr>
 ## Adding Resource file
 
 * Create a folder names `Resources` in your application.
-* Add default English(“en-US”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.WPF-152493032) (resource) file of `PdfViewerControl` in `Resources` folder named as Syncfusion.PdfViewer.WPF.resx.
+* Add default English (“en-US”) [Resx](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.PdfViewer.WPF-152493032) (resource) file of `PdfViewerControl` in `Resources` folder named as Syncfusion.PdfViewer.WPF.resx.
 * Create a Resx (resource) files and named as Syncfusion.PdfViewer.WPF.[Culture name].resx. For example, Syncfusion.PdfViewer.WPF.fr.resx for French culture. 
 * Add the resource key such as `OpenDocument` and its corresponding localized value in Syncfusion.PdfViewer.WPF.fr.resx file. Refer the below screenshot for the same.
 * Execute the application in the French culture to see the changes.
 
-![](Localization_images/Localization_image2.png)
+![Resource file](Localization_images/Localization_image2.png)
 
 The following screenshot shows the `PdfViewerControl` in French language
 
-![](Localization_images/Localization_image1.png)
+![Localization](Localization_images/Localization_image1.png)
