@@ -1,167 +1,110 @@
 ---
 layout: post
-title: Adding items through Items Source | TabNavigation | wpf | Syncfusion
-description: adding items through items source
-platform: wpf
+title: Adding items through Items Source | TabNavigation | WPF | Syncfusion
+description: This section describes how to add tab navigation items through items source in tab navigation control.
+platform: WPF
 control: TabNavigation
 documentation: ug
 ---
 
-# Adding Items through Items Source
+# Adding Items through ItemsSource
 
-Business object collections can be easily bound to the Tab Navigation control using Items Source property. The following types of collections can be bound:
+Business object collections can be easily bound to the TabNavigation control using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. The following types of collections can be bound:
 
 * Observable Collection 
 * ILIST binding 
 * XML binding 
 
-
-
 ## Observable collection 
 
 {% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}">
-</syncfusion:TabNavigationControl>
-
+{% highlight XAML %}
+<syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}"/>
 {% endhighlight %}
+{% endtabs %}
 
-{% highlight c# %}
-
-public partial class MainPage : UserControl
+{% tabs %}
+{% highlight C# %}
+namespace TabNavigationSample
 {
-    public MainPage()
-    {
-        InitializeComponent();
-        MyCollection = new ObservableCollection<TabNavigationItem>();
-        TabNavigationItem temp;
-        TextBlock block;
-        for (int i = 0; i < 10; i++)
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    { 
+		TabNavigationItem temp;
+        public MainWindow()
         {
-            Temp = new TabNavigationItem();
-            lock = new TextBlock();
-            temp.Header = "Item " +i.ToString();
-            block.Text = "Item " +i.ToString();
-            temp.Content = block;
-            MyCollection.Add(temp);
-        }
-        this.DataContext = this;
-    }
-    public ObservableCollection<TabNavigationItem> MyCollection
-    {
-        get { return (ObservableCollection<TabNavigationItem>)GetValue(MyCollectionProperty); }
-        set { SetValue(MyCollectionProperty, value); 
-    }
+            InitializeComponent();
+			MyCollection = new ObservableCollection<TabNavigationItem>();
+			for (int i = 0; i < 10; i++)
+			{
+				temp = new TabNavigationItem();
+				temp.Header = i;
+				temp.Content= "Item " + i.ToString();
+				MyCollection.Add(temp);
+			}
+			this.DataContext = this;
+		}
+		public ObservableCollection<TabNavigationItem> MyCollection 
+		{
+			get { return (ObservableCollection<TabNavigationItem>)GetValue(MyCollectionProperty); }
+			set { SetValue(MyCollectionProperty, value); 
+		}
+	}
+	// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
+	public static readonly DependencyProperty MyCollectionProperty = DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
+	}
 }
-
-// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
-public static readonly DependencyProperty MyCollectionProperty =
-DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainPage), new PropertyMetadata(null));
-}
-
 {% endhighlight %}
-
-{% highlight vb %}
-
-Partial Public Class MainPage
-Inherits UserControl
-Public Sub New()
-InitializeComponent()
-MyCollection = New ObservableCollection(Of String)()
-For i As Integer = 0 To 9
-MyCollection.Add("Item " & i.ToString())
-Next
-LayoutRoot.DataContext = Me
-End Sub
-Public Property MyCollection() As ObservableCollection(Of String)
-Get
-Return DirectCast(GetValue(MyCollectionProperty), ObservableCollection(Of String))
-End Get
-Set(ByVal value As ObservableCollection(Of String))
-SetValue(MyCollectionProperty, value)
-End Set
-End Property
-
-' Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
-Public Shared ReadOnly MyCollectionProperty As DependencyProperty = DependencyProperty.Register("MyCollection", GetType(ObservableCollection(Of String)), GetType(MainPage), New PropertyMetadata(Nothing))
-End Class
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ## ILIST binding
 
 {% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:TabNavigationControl TransitionEffect="Slide" 
-ItemsSource="{Binding MyCollection}">
-</syncfusion:TabNavigationControl>
-
+{% highlight XAML %}
+<syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}"/>
 {% endhighlight %}
-
-{% highlight c# %}
-
-public partial class MainPage : UserControl
-{
-    public MainPage()
-    {
-        InitializeComponent();
-        MyCollection = new IList<string>();
-        for (int i = 0; i < 10; i++)
-        {
-            MyCollection.Add("Item "+i.ToString());
-        }
-        LayoutRoot.DataContext = this;
-    }
-    public IList<string> MyCollection
-    {
-        get { return (IList<string>)GetValue(MyCollectionProperty); }
-        set { SetValue(MyCollectionProperty, value); }
-    }
-// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
-    public static readonly DependencyProperty MyCollectionProperty =
-    DependencyProperty.Register("MyCollection", typeof(IList<string>), typeof(MainPage), new PropertyMetadata(null));
-}
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Partial Public Class MainPage
-Inherits UserControl
-Public Sub New()
-InitializeComponent()
-MyCollection = New IList(Of String)()
-For i As Integer = 0 To 9
-MyCollection.Add("Item " & i.ToString())
-Next
-LayoutRoot.DataContext = Me
-End Sub
-Public Property MyCollection() As IList(Of String)
-Get
-Return DirectCast(GetValue(MyCollectionProperty), IList(Of String))
-End Get
-Set(ByVal value As IList(Of String))
-SetValue(MyCollectionProperty, value)
-End Set
-End Property
-
-' Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
-Public Shared ReadOnly MyCollectionProperty As DependencyProperty = DependencyProperty.Register("MyCollection", GetType(IList(Of String)), GetType(MainPage), New PropertyMetadata(Nothing))
-End Class
-	
-{% endhighlight %}
-
 {% endtabs %}
 
+{% tabs %}
+{% highlight C#  %}
+namespace TabNavigationSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    { 
+        public MainWindow()
+        {
+            InitializeComponent();
+			TabNavigationItem temp;
+			MyCollection = new List<TabNavigationItem>();
+			for (int i = 0; i < 10; i++)
+			{
+				temp = new TabNavigationItem();
+				temp.Header = i;
+				temp.Content= "Item " + i.ToString();
+				MyCollection.Add(temp);
+			}
+			DataContext = this;
+		}
+		public IList<TabNavigationItem> MyCollection
+		{
+			get { return (IList<TabNavigationItem>)GetValue(MyCollectionProperty); }
+			set { SetValue(MyCollectionProperty, value); }
+		}
+		// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
+		public static readonly DependencyProperty MyCollectionProperty =
+		DependencyProperty.Register("MyCollection", typeof(IList<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
+	}
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## XML binding 
 
 To bind XML data to a TabNavigation control, convert the XML data to a collection like Observable collection or ILIST collection, and then bind the collection by using the ItemsSource property of the TabNavigation control.
 
-![](Adding-items-through-Items-Source_images/Adding-items-through-Items-Source_img1.png)
+![wpf tabnavigation control supports data binding](Adding-items-through-Items-Source_images/Adding-items-through-Items-Source_img1.png)
