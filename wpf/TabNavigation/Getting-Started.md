@@ -10,7 +10,7 @@ documentation: ug
 
 ## Assembly deployment
 
-Refer [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabnavigation) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in any application.
+Refer [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabnavigation) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in WPF application.
 
 ## Creating simple application with TabNavigation
 

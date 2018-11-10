@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | TabNavigation | WPF | Syncfusion
-description: This section describes the appearance and structure of the tab naigation control and its key features.
+description: This section describes the appearance and structure of the tab navigation control and its key features.
 platform: WPF
 control: TabNavigation
 documentation: ug
