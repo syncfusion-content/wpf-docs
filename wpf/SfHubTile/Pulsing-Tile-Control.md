@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pulsing Tile Control | SfPulsingTile | WPF | Syncfusion
-description: This section explains how to configure the pulsing tile zooming functionalities and translation movement
+description: This section explains how to configure the pulsing tile zooming functionalities and translation movement.
 platform: WPF
 control: SfPulsingTile
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 [SfPulsingTile](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile.html) control allows to create a tile similar to Music and Video hub tile in Windows Phone. The content zooms in/out randomly with random translation in X and Y axis.
 
-## Setting Title, Header and Image on Hub Tile
+## Setting Title, Header and Image on Pulsing Tile
 
-You can set the title, header and image on SfHubTile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html), [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) and [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) properties.
+You can set the title, header and image on SfPulsingTile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html), [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) and [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) properties.
 
 {% tabs %}
 {% highlight XAML %}

@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Hub Tile Control | SfHubTile | WPF | Syncfusion
-description: This section explains how to configure the hub tile and animation support.
+description: This section explains how to configure the hub tile and its animation support.
 platform: WPF
 control: SfHubTile
 documentation: ug
 ---
+
 # Hub Tile Control
 
 ## Setting Title, Header and Image on Hub Tile
@@ -14,7 +15,7 @@ You can set the title, header and image on SfHubTile by setting [Title](https://
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile" Title="This is title area." ImageSource="New Mail.png" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="216"/>
+<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile" Title="This is title area. Display your message here." ImageSource="New Mail.png" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="216"/>
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,12 +143,8 @@ You can customize the appearance of title by using [TitleStyle](https://help.syn
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" SecondaryContent="This is SecondaryContent" Width="300" ImageSource="Assets/New Mail.png"  Title="This is title area." Header="HubTile">
-	<syncfusion:SfHubTile.HubTileTransitions>
-		<shared:SlideTransition/>
-		<shared:FadeTransition/>
-	</syncfusion:SfHubTile.HubTileTransitions>
-     <!-- For setting title style -->
+<syncfusion:SfHubTile x:Name="hubTile" Width="300" ImageSource="Assets/New Mail.png"  Title="This is title area." Header="HubTile">
+    <!-- For setting title style -->
 	<syncfusion:SfHubTile.TitleStyle>
     	<Style TargetType="ContentControl">
 			<Setter Property="Foreground" Value="Yellow"/>
@@ -174,7 +171,7 @@ You can customize the secondary content appearance by using [SecondaryContentTem
     <!-- For setting secondary content -->
 	<syncfusion:SfHubTile.SecondaryContentTemplate>
 		<DataTemplate>
-			<TextBlock Text="{Binding}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red"/>
+			<TextBlock Text="{Binding content}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red"/>
 		</DataTemplate>
 	</syncfusion:SfHubTile.SecondaryContentTemplate>
 </syncfusion:SfHubTile>

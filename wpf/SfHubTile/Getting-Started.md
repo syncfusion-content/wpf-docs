@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | SfHubTile | wpf | Syncfusion
-description: How to add SfHubTile control into application
+description: How to add SfHubTile and SfPulsingTile controls into application.
 platform: WPF
 control: SfHubTile
 documentation: ug
@@ -100,9 +100,9 @@ You can set the header for tile by setting [Header](https://help.syncfusion.com/
 {% tabs %}
 {% highlight XAML %}
 <!-- HubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile" Title="This is title area. Display your message here."/>
+<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile"/>
 <!-- Pulsing Tile -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="Pulsing Tile" Foreground="White"/>
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="Pulsing Tile"/>
 {% endhighlight %}
 {% highlight C# %}
 //Setting header for HubTile
@@ -121,13 +121,13 @@ You can set the title for tile by setting [Title](ttps://help.syncfusion.com/cr/
 {% tabs %}
 {% highlight XAML %}
 <!-- HubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Title="This is title area. Display your message here."/>
+<syncfusion:SfHubTile x:Name="hubTile" Title="This is title area."/>
 <!--Pulsing Tile-->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="Pulsing Tile" Title="This is title area."/>
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="This is title area."/>
 {% endhighlight %}
 {% highlight C# %}
 //Setting title for HubTile
-hubTile.Title = "This is title area. Display your message here.";
+hubTile.Title = "This is title area.";
 //Setting title for Pulsing Tile
 pulseTile.Title = "This is title area.";
 {% endhighlight %}
