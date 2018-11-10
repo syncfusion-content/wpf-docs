@@ -366,6 +366,7 @@ public class StyleConverter : IValueConverter
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 ![Styling the row header in WPF treegrid](Conditional-Styling_images/Conditional-Styling_img8.jpeg)
 
