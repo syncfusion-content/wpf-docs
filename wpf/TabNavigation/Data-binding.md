@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adding items through Items Source | TabNavigation | WPF | Syncfusion
-description: This section describes how to add tab navigation items through items source in tab navigation control.
+title: Data binding | TabNavigation | WPF | Syncfusion
+description: This section describes how to add tabnavigation items through items source in tab navigation control.
 platform: WPF
 control: TabNavigation
 documentation: ug
 ---
 
-# Adding Items through ItemsSource
+# Data binding
 
 Business object collections can be easily bound to the TabNavigation control using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. The following types of collections can be bound:
 
@@ -49,11 +49,10 @@ namespace TabNavigationSample
 		public ObservableCollection<TabNavigationItem> MyCollection 
 		{
 			get { return (ObservableCollection<TabNavigationItem>)GetValue(MyCollectionProperty); }
-			set { SetValue(MyCollectionProperty, value); 
-		}
-	}
-	// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
-	public static readonly DependencyProperty MyCollectionProperty = DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
+			set { SetValue(MyCollectionProperty, value); }
+	    }
+		// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
+		public static readonly DependencyProperty MyCollectionProperty = DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
 	}
 }
 {% endhighlight %}
@@ -107,4 +106,4 @@ namespace TabNavigationSample
 
 To bind XML data to a TabNavigation control, convert the XML data to a collection like Observable collection or ILIST collection, and then bind the collection by using the ItemsSource property of the TabNavigation control.
 
-![wpf tabnavigation control supports data binding](Adding-items-through-Items-Source_images/Adding-items-through-Items-Source_img1.png)
+![wpf tabnavigation control supports data binding](Data-binding_images/Adding-items-through-Items-Source_img1.png)

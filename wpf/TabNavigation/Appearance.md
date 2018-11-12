@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Interactive Features | TabNavigation | WPF | Syncfusion
+title: Appearence | TabNavigation | WPF | Syncfusion
 description: This section describes how to customize the visibility of header, navigation button and tab strip on tab navigation control.
 platform: WPF
 control: TabNavigation
 documentation: ug
 ---
 
-# Interactive Features
+# Appearence
 
-## Show/ Hide the Header
+## Show/hide the Header
 
-You can enable/ disable the visibility of header by setting [HeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~HeaderVisibility.html) property of TabNavigationControl.
+You can enable/disable the visibility of header by setting [HeaderVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~HeaderVisibility.html) property of TabNavigationControl.
 
 {% tabs %}
 {% highlight XAML %}
@@ -28,11 +28,12 @@ tabNavigation.HeaderVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf tabnavigation header collapsed](Interactive-Features_images/wpf-tab-navigation-header-visibility.png)
+![wpf tabnavigation header visible](Appearance_images/wpf-tab-navigation-header-visible.png)
+![wpf tabnavigation header collapsed](Appearance_images/wpf-tab-navigation-header-collapsed.png)
 
-## Show/ Hide the Navigation Button
+## Show/hide the NavigationButton
 
-You can enable/ disable the visibility of navigation button by setting [NavigationButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~NavigationButtonVisibility.html) property of TabNavigationControl.
+You can enable/disable the visibility of navigation button by setting [NavigationButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~NavigationButtonVisibility.html) property of TabNavigationControl.
 
 {% tabs %}
 {% highlight XAML %}
@@ -48,11 +49,13 @@ tabNavigation.NavigationButtonVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf tabnavigation navigation button collapsed](Interactive-Features_images/wpf-tabnavigation-navigation-button-visibility.png)
+![wpf tabnavigation navigation button visible](Appearance_images/wpf-tabnavigation-navigation-button-visibility.png)
 
-## Show/ Hide the TabStrip
+![wpf tabnavigation navigation button collapsed](Appearance_images/wpf-tabnavigation-navigation-button-collapsed.png)
 
-You can enable/ disable the visibility of tab strip by setting [TabStripVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~TabStripVisibility.html) property of TabNavigationControl.
+## Show/hide the TabStrip
+
+You can enable/disable the visibility of tab strip by setting [TabStripVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationControl~TabStripVisibility.html) property of TabNavigationControl.
 
 {% tabs %}
 {% highlight XAML %}
@@ -68,9 +71,6 @@ tabNavigation.TabStripVisibility = Visibility.Visible;
 {% endhighlight %}
 {% endtabs %}
 
-![wpf tabnavigation tab strip collapsed](Interactive-Features_images/wpf-tabnavigation-tabstrip-button-visibility.png)
+![wpf tabnavigation tab strip visible](Appearance_images/wpf-tabnavigation-tabstrip-button-visibility.png)
 
-
-
-
-
+![wpf tabnavigation tab strip collapsed](Appearance_images/wpf-tabnavigation-tabstrip-button-collapsed.png)

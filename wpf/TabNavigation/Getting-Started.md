@@ -88,9 +88,9 @@ namespace TabNavigationSample
 {% endhighlight %}
 {% endtabs %}
 
-### Adding TabNavigationItems to the TabNavigation Control
+### Adding Items using TabNavigationItem
 
-The TabNavigationItem is added to the TabNavigation control by using either XAML or C# coding. Use the following lines of code to add a TabNavigationItem to the TabNavigation control. 
+You can populate the TabNavigation control by adding objects directly to the [Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) collection. Items added to the TabNavigation are wrapped in [TabNavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationItem.html) containers.
 
 {% tabs %}
 {% highlight XAML %}
@@ -157,3 +157,8 @@ tabNavigation.Items.Add(item4);
 {% endhighlight %}
 {% endtabs %}
 
+![wpf tabnavigation control supports data binding](Getting-Started_images/wpf-tabnavigation-items-added.png)
+
+### Binding ItemsSource
+
+TabNavigationControl supports binding data to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source. Refer [Data binding](https://help.syncfusion.com/wpf/tabnavigation/data-binding) section for more details.
