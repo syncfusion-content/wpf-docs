@@ -13,7 +13,7 @@ Tab Navigation is a new control for displaying the contents of the control with 
 
 ## Appearance and structure of the control
 
-![wpf tab navigation control structure](Getting-Started_images/Getting-Started_img1.png)
+![wpf tab navigation control structure](Getting-Started_images/wpf-tabnavigation-structure.png)
 
 The following are the key features of this control:
 

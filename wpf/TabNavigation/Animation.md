@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-Transition Effect property is used to set the animation effect for the tabnavigation control. The Transition effect is an enum that contains five values namely:
+Transition Effect property is used to set the animation effect for the tab navigation control. The Transition effect is an enum that contains five values namely:
 
 * Slide – The item/page navigates with slide effect.
 
