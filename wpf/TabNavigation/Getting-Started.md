@@ -162,3 +162,42 @@ tabNavigation.Items.Add(item4);
 ### Binding ItemsSource
 
 TabNavigationControl supports binding data to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source. Refer [Data binding](https://help.syncfusion.com/wpf/tabnavigation/data-binding) section for more details.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}"/>
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+namespace TabNavigationSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    { 
+		TabNavigationItem temp;
+        public MainWindow()
+        {
+            InitializeComponent();
+			MyCollection = new ObservableCollection<TabNavigationItem>();
+			for (int i = 0; i < 10; i++)
+			{
+				temp = new TabNavigationItem();
+				temp.Header = i;
+				temp.Content= "Item " + i.ToString();
+				MyCollection.Add(temp);
+			}
+			this.DataContext = this;
+		}
+		public ObservableCollection<TabNavigationItem> MyCollection 
+		{
+			get { return (ObservableCollection<TabNavigationItem>)GetValue(MyCollectionProperty); }
+			set { SetValue(MyCollectionProperty, value); }
+	    }
+		// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
+		public static readonly DependencyProperty MyCollectionProperty = DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
+	}
+}

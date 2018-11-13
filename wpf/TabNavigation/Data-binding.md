@@ -102,8 +102,88 @@ namespace TabNavigationSample
 {% endhighlight %}
 {% endtabs %}
 
+![wpf tabnavigation control supports data binding](Data-binding_images/Adding-items-through-Items-Source_img1.png)
+
 ## XML binding 
 
 To bind XML data to a TabNavigation control, convert the XML data to a collection like Observable collection or ILIST collection, and then bind the collection by using the ItemsSource property of the TabNavigation control.
 
-![wpf tabnavigation control supports data binding](Data-binding_images/Adding-items-through-Items-Source_img1.png)
+{% tabs %}
+{% highlight XML %}
+<?xml version="1.0" encoding="utf-8" ?>
+<categories>
+  <category name="Syncfusion"/>
+  <category name="WPF"/>
+  <category name="TabNavigationControl"/>
+</categories>
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+namespace TabNavigationSample
+{
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public partial class MainWindow : ChromelessWindow
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+			TabNavigationItem temp;
+			ObservableCollection<TabNavigationItems> categories = new ObservableCollection<TabNavigationItems>();
+			XDocument XMLItemSource = XDocument.Load(@"assets/XMLFile1.xml");
+			categories = this.GetCategories(XMLItemSource.Element("categories"));
+			MyCollection = new ObservableCollection<TabNavigationItem>();
+			for (int i=0;i<categories.Count;i++)
+			{
+				temp = new TabNavigationItem();
+				temp.Header = categories[i].Name.ToString();
+				MyCollection.Add(temp);
+			}
+			DataContext = this;
+			tabNavigation.ItemsSource = MyCollection;
+		}
+
+		//Convert XML data into ObservableCollection
+		private ObservableCollection<TabNavigationItems> GetCategories(XElement xElement)
+		{
+			var item = from category in xElement.Elements("category")  select category;
+			var itemsObservableCollection = new ObservableCollection<TabNavigationItems>();
+			foreach (var itm in item)
+			{
+				var subitm = new TabNavigationItems();
+				subitm.Name = itm.Attribute("name").Value;
+				itemsObservableCollection.Add(subitm);
+			}
+			return itemsObservableCollection;
+		}
+
+		public class TabNavigationItems
+		{
+			public string Name { get; set; }
+		}
+        
+		//For binding object
+		public ObservableCollection<TabNavigationItem> MyCollection
+		{
+			get { return (ObservableCollection<TabNavigationItem>)GetValue(MyCollectionProperty); }
+			set { SetValue(MyCollectionProperty, value); }
+		}
+		// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
+		public static readonly DependencyProperty MyCollectionProperty = DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
+
+	}
+
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}"/>
+{% endhighlight %}
+{% endtabs %}
+
+
