@@ -70,7 +70,7 @@ To bind XML data to a TabNavigation control, convert the XML data to a collectio
 <Books>
   <book>
     <title>XML Developer's Guide</title>
-    <description>An indepth look at creating applications with XML.</description>
+    <description>An indent look at creating applications with XML.</description>
   </book>
   <book>
     <title>Midnight Rain</title>
@@ -78,14 +78,14 @@ To bind XML data to a TabNavigation control, convert the XML data to a collectio
   </book>
   <book>
     <title>Oberon's Legacy</title>
-    <description>In postapocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London. Sequel to Maeve Ascendant.</description>
+    <description>In post apocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London. Sequel to Mae Ascendant.</description>
   </book>
   <book>
     <title>Lover Birds</title>
     <description>When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled.</description>
   </book>
   <book>
-    <title>Splish Splash</title>
+    <title>Split Splash</title>
     <description>A deep sea diver finds true love twenty thousand leagues beneath the sea.</description>
   </book>
 </Books>
