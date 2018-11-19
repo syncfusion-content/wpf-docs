@@ -9,13 +9,9 @@ documentation: ug
 
 # Data binding
 
-Business object collections can be easily bound to the TabNavigation control using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. The following types of collections can be bound:
+Business object collections can be easily bound to the TabNavigation control using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. 
 
-* Observable Collection 
-* ILIST binding 
-* XML binding 
-
-## Observable collection 
+## Binding IEnumerable
 
 {% tabs %}
 {% highlight XAML %}
@@ -58,70 +54,158 @@ namespace TabNavigationSample
 {% endhighlight %}
 {% endtabs %}
 
-## ILIST binding
+![wpf tabnavigation control supports data binding](Data-binding_images/Adding-items-through-Items-Source_img1.png)
+
+## Binding data from XML
+
+To bind XML data to a TabNavigation control, convert the XML data to a collection like Observable collection or ILIST collection, and then bind the collection by using the ItemsSource property of the TabNavigation control.
+
+
+* **Create a xml file**
+
 
 {% tabs %}
-{% highlight XAML %}
-<syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}"/>
+{% highlight XML %}
+<?xml version="1.0" encoding="utf-8" ?>
+<Books>
+  <book>
+    <title>XML Developer's Guide</title>
+    <description>An indepth look at creating applications with XML.</description>
+  </book>
+  <book>
+    <title>Midnight Rain</title>
+    <description>A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world.</description>
+  </book>
+  <book>
+    <title>Oberon's Legacy</title>
+    <description>In postapocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London. Sequel to Maeve Ascendant.</description>
+  </book>
+  <book>
+    <title>Lover Birds</title>
+    <description>When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled.</description>
+  </book>
+  <book>
+    <title>Splish Splash</title>
+    <description>A deep sea diver finds true love twenty thousand leagues beneath the sea.</description>
+  </book>
+</Books>
 {% endhighlight %}
 {% endtabs %}
 
+* **Model.cs**
+
 {% tabs %}
-{% highlight C#  %}
-namespace TabNavigationSample
+{% highlight C# %}
+namespace TabNavigationXMLBinding
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    { 
-        public MainWindow()
-        {
-            InitializeComponent();
-			TabNavigationItem temp;
-			MyCollection = new List<TabNavigationItem>();
-			for (int i = 0; i < 10; i++)
-			{
-				temp = new TabNavigationItem();
-				temp.Header = i;
-				temp.Content= "Item " + i.ToString();
-				MyCollection.Add(temp);
-			}
-			DataContext = this;
-		}
-		public IList<TabNavigationItem> MyCollection
+	public class Model : NotificationObject
+	{
+		public Model()
 		{
-			get { return (IList<TabNavigationItem>)GetValue(MyCollectionProperty); }
-			set { SetValue(MyCollectionProperty, value); }
+
 		}
-		// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
-		public static readonly DependencyProperty MyCollectionProperty =
-		DependencyProperty.Register("MyCollection", typeof(IList<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
+	}
+	public class BookModel : NotificationObject
+	{
+		public BookModel()
+		{
+
+		}
+
+		private string bookName;
+		public string BookName
+		{
+			get
+			{
+				return bookName;
+			}
+			set
+			{
+				bookName = value;
+				this.RaisePropertyChanged("BookName");
+			}
+		}
+
+		private string description;
+		public string Description
+		{
+			get
+			{
+				return description;
+			}
+			set
+			{
+				description = value;
+				this.RaisePropertyChanged("Description");
+			}
+		}
 	}
 }
 {% endhighlight %}
 {% endtabs %}
 
-![wpf tabnavigation control supports data binding](Data-binding_images/Adding-items-through-Items-Source_img1.png)
-
-## XML binding 
-
-To bind XML data to a TabNavigation control, convert the XML data to a collection like Observable collection or ILIST collection, and then bind the collection by using the ItemsSource property of the TabNavigation control.
-
-{% tabs %}
-{% highlight XML %}
-<?xml version="1.0" encoding="utf-8" ?>
-<categories>
-  <category name="WPF Products" content="EssentialStudio WPF edition includes 8 comprehensive products with dozens of components that ease and speed up your development."/>
-  <category name="TabNavigationControl" content="Tab Navigation is a new control for displaying the contents of the control with transition effects. "/>
-  <category name="Rich Text Editor" content="An Editor control which allows all kind of Import/Export functionalities and complete formatting."/>
-</categories>
-{% endhighlight %}
-{% endtabs %}
+* **ViewModel.cs**
 
 {% tabs %}
 {% highlight C# %}
-namespace TabNavigationSample
+namespace TabNavigationXMLBinding
+{
+	public class ViewModel : NotificationObject
+	{
+
+		private ObservableCollection<Model> modelItems;
+		public ObservableCollection<Model> ModelItems
+		{
+			get
+			{
+				return modelItems;
+			}
+
+			set
+			{
+				modelItems = value;
+			}
+		}
+		private ObservableCollection<BookModel> bookModelItems;
+		public ObservableCollection<BookModel> BookModelItems
+		{
+			get
+			{
+				return bookModelItems;
+			}
+
+			set
+			{
+				bookModelItems = value;
+			}
+		}
+		public  ViewModel()
+		{
+			modelItems = new ObservableCollection<Model>();
+			bookModelItems = new ObservableCollection<BookModel>();
+			XDocument xDocument = XDocument.Load(@"assets\Books.xml");
+			IEnumerable<XElement> query = from xElement in xDocument.Descendants("book")
+										  select xElement;
+			foreach (XElement xElement in query)
+			{
+				BookModel bookModel = new BookModel
+				{
+					BookName = xElement.Element("title").Value,
+					Description = xElement.Element("description").Value
+				};
+				bookModelItems.Add(bookModel);
+			}
+		}
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+* **MainWindow.Xaml.cs**
+
+{% tabs %}
+{% highlight C# %}
+namespace TabNavigationXMLBinding
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
@@ -132,52 +216,43 @@ namespace TabNavigationSample
 		{
 			InitializeComponent();
 			TabNavigationItem tab;
-			ObservableCollection<TabNavigationItems> categories = new ObservableCollection<TabNavigationItems>();
-			XDocument XMLItemSource = XDocument.Load(@"assets/XMLFile1.xml");
-			categories = this.GetCategories(XMLItemSource.Element("categories"));
-			MyCollection = new ObservableCollection<TabNavigationItem>();
-			for (int i=0;i<categories.Count;i++)
+			ViewModel view = new ViewModel();
+			BookCollection = new ObservableCollection<TabNavigationItem>();
+			for (int i = 0; i < view.BookModelItems.Count; i++)
 			{
 				tab = new TabNavigationItem();
-				tab.Header = categories[i].Name.ToString();
-				tab.Content = categories[i].Content.ToString();
-				MyCollection.Add(tab);
+				tab.Header = view.BookModelItems[i].BookName;
+				tab.Content = view.BookModelItems[i].Description;
+				BookCollection.Add(tab);
 			}
-			tabNavigation.ItemsSource = MyCollection;
+			this.DataContext = this;
 		}
-		//Convert XML data into ObservableCollection
-		private ObservableCollection<TabNavigationItems> GetCategories(XElement xElement)
+
+		public ObservableCollection<TabNavigationItem> BookCollection
 		{
-			var item = from category in xElement.Elements("category")  select category;
-			var itemsObservableCollection = new ObservableCollection<TabNavigationItems>();
-			foreach (var itm in item)
+			get { return (ObservableCollection<TabNavigationItem>)GetValue(BookCollectionProperty); }
+			set
 			{
-				var subitm = new TabNavigationItems();
-				subitm.Name = itm.Attribute("name").Value;
-				subitm.Content = itm.LastAttribute.Value;
-				itemsObservableCollection.Add(subitm);
+				SetValue(BookCollectionProperty, value);
 			}
-			return itemsObservableCollection;
-		}
-		public class TabNavigationItems
-		{
-			public string Name { get; set; }
-		}
-		//For binding object
-		public ObservableCollection<TabNavigationItem> MyCollection
-		{
-			get { return (ObservableCollection<TabNavigationItem>)GetValue(MyCollectionProperty); }
-			set { SetValue(MyCollectionProperty, value); }
 		}
 		// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
-		public static readonly DependencyProperty MyCollectionProperty = DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
-	}
+		public static readonly DependencyProperty BookCollectionProperty =
+		DependencyProperty.Register("BookCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
+	}	
 }
 {% endhighlight %}
 {% endtabs %}
 
+* **MainWindow.Xaml**
+
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:TabNavigationControl TransitionEffect="Slide"/>
+<Window.DataContext>
+	<local:ViewModel/>
+</Window.DataContext>
+
+<!--TabNavigationControl-->
+<syncfusion:TabNavigationControl x:Name="TabNavigation" Grid.Column="1" Grid.Row="1"  ItemsSource="{Binding BookCollection}"/>
 {% endhighlight %}
 {% endtabs %}
