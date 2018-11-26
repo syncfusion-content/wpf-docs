@@ -7,13 +7,13 @@ control: RightToLeft
 documentation: ug
 ---
 
-# Right To Left
+# Right-to-Left
 
-Right To Left support displays the content from right-to-left direction. 
+Right-to-Left support displays the content from right-to-left direction. 
 
 ## Supported controls
 
-The following controls are featured in Right To Left support.
+The following controls are featured in Right-to-Left support.
 
 <table>
 <tr>
