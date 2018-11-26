@@ -1,29 +1,24 @@
 ---
 layout: post
-title: Multi Line Support | ThefollowingcodeaddstheClickeventhandlertotheButtonAdv | wpf | Syncfusion
+title: Multi Line Support | wpf | Syncfusion
 description: multi line support
 platform: wpf
 control: ButtonAdv
 documentation: ug
 ---
 
-# Multi Line Support
+# Multiline Support
 
-The label displayed on the button can be a line or two, when the property IsMultiLine is set to true. The default value is true.
-
-Multiline support can be enabled by using the following code:
+You can display multiple lines of text in ButtonAdv. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Large" IsMultiLine="False"/>
+<syncfusion:ButtonAdv x:Name="ButtonAdv" IsMultiLine="True"  Width="85" Height="85" IconHeight="35" IconWidth="35" Label="Hello World!" SizeMode="Large" />
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Multi-Line-Support_images/Multi-Line-Support_img1.png)
+![WPF ButtonAdv MultiLine](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
-ButtonAdv control without MultiLine
-{:.caption}
-
-N> This property is applicable only for Large Size Mode Buttons.
+N> This property is applicable only for large size mode buttons.
