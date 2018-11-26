@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multi Line Support | ThefollowingcodeaddstheClickeventhandlertotheButtonAdv | wpf | Syncfusion
+title: Multi Line Support | wpf | Syncfusion
 description: multi line support
 platform: wpf
 control: ButtonAdv
