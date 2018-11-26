@@ -9,7 +9,7 @@ documentation: ug
 
 # Right To Left
 
-Right To Left support to display the content from right-to-left direction. 
+Right To Left support displays the content from right-to-left direction. 
 
 ## Supported controls
 
