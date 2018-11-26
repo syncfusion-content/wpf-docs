@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Right To Left support
+title: Syncfusion Essential WPF controls Right To Left support
 description: To know about  Right To Left supported Syncfusion Essential WPF controls
 platform: wpf
 control: RightToLeft
