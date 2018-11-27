@@ -91,7 +91,7 @@ Click<br/><br/></td><td>
 <td>
 <br/><br/></td><td>
 Kanban<br/><br/></td><td>
-Paning/Scrolling, Dragging<br/><br/></td><td>
+Panning/Scrolling, Dragging<br/><br/></td><td>
 -<br/><br/></td><td>
 Column collapse/expand<br/><br/></td><td>
 Hold to select the card for dragging<br/><br/></td></tr>
@@ -237,7 +237,7 @@ Context Menu<br/><br/></td></tr>
 <td>
 <br/><br/></td><td>
 Docking Manager<br/><br/></td><td>
-Swipe to rearrange Taborder  in Tabbed and Document state windows. <br/><br/></td><td>
+Swipe to rearrange Tab order in Tabbed and Document state windows. <br/><br/></td><td>
 -<br/><br/></td><td>
 Tap to select the active window of DockingManager
 
@@ -702,7 +702,7 @@ NA<br/><br/></td></tr>
 <td>
 REPORTING<br/><br/></td><td>
 Report Viewer<br/><br/></td><td>
-Scolling<br/><br/></td><td>
+Scrolling<br/><br/></td><td>
 -<br/><br/></td><td>
 Click and Select<br/><br/></td><td>
 -<br/><br/></td></tr>
@@ -768,7 +768,7 @@ MISCELLANEOUS<br/><br/></td><td>
 SpellChecker<br/><br/></td><td>
 -<br/><br/></td><td>
 -<br/><br/></td><td>
-Tab to perform the spell check operations in spellcheck dialog window<br/><br/></td><td>
+Tab to perform the spell check operations in spell check dialog window<br/><br/></td><td>
 Hold to open the suggestion context menu<br/><br/></td></tr>
 <tr>
 <td>
