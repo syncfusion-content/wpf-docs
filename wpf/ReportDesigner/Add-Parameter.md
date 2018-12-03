@@ -86,3 +86,66 @@ You can add parameter to the Report Designer using the following steps.
 8. To delete a report parameter, Right-click the report parameter and click Delete. 
 
    ![](Add-Parameter_images/Add-Parameter_img8.png)
+
+# Add a Dataset Query Parameter
+
+ReportDesigner automatically creates a report parameter with default properties for Name, Prompt, and DataType when you add a query parameter in dataset query. 
+
+[How to add dataset](/wpf/ReportDesigner/Add-DataSet)
+Describes how to add dataset in WPF report designer.
+
+1. In the Report Data pane, right click on the Datasets folder and click Add DataSet.
+
+	![](Add-Parameter_images/Add-Parameter_img9.png)
+
+2. In Dataset properties wizard, enter a name for the dataset in the Name field and to select the fields manually from the database, click the Query Designer.
+
+	![](Add-Parameter_images/Add-Parameter_img10.png)
+	
+3. Choose the query in the database view and select the corresponding fields(Employee database) in that query and test the query by clicking Run Query.
+
+	![](Add-Parameter_images/Add-Parameter_img11.png)
+	
+4. Click OK. Then the added fields will display on the query field in Dataset Properties wizard.
+
+	![](Add-Parameter_images/Add-Parameter_img12.png)
+
+5. Click OK to add the dataset in the report data pane. Now drag and drop the table and add the dataset field values to the table.
+
+      ![](Add-Parameter_images/Add-Parameter_img13.png)
+
+6. Right click the dataset and open the dataset(Employee) properties. Add the Transact-SQL WHERE clause as the last line in the query text area and Click OK.
+
+	![](Add-Parameter_images/Add-Parameter_img14.png)
+	
+	The WHERE clause limits the retrieved data to the Employee that is specified by the query parameter @EmployeeID.
+
+		SELECT 
+		[Employee].[BirthDate]
+		,[Employee].[ContactID]
+		,[Employee].[CurrentFlag]
+		,[Employee].[EmployeeID]
+		,[Employee].[Gender]
+		,[Employee].[HireDate]
+		,[Employee].[LoginID]
+		,[Employee].[ManagerID]
+		,[Employee].[MaritalStatus]
+		,[Employee].[ModifiedDate]
+		,[Employee].[NationalIDNumber]
+		,[Employee].[rowguid]
+		,[Employee].[SalariedFlag]
+		,[Employee].[SickLeaveHours]
+		,[Employee].[Title]
+		,[Employee].[VacationHours]
+		FROM 
+		[HumanResources].[Employee]
+		WHERE
+            [Employee].[EmployeeID] = @EmployeeID
+	
+7. The Define Query Parameters dialog box opens and prompts for a value for the query parameter @EmployeeID when we click Run(!) in query designer toolbar. Resultant table data will be displayed based on value provided for parameter in ParameterValue.
+
+	![](Add-Parameter_images/Add-Parameter_img15.png)
+	
+8. Click OK. Now, parameters in dataset query is added in Parameters folder.
+
+	![](Add-Parameter_images/Add-Parameter_img16.png)
