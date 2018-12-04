@@ -148,13 +148,15 @@ You can customize the appearance of title by using [TitleStyle](https://help.syn
 	<syncfusion:SfHubTile.TitleStyle>
     	<Style TargetType="ContentControl">
 			<Setter Property="Foreground" Value="Yellow"/>
+			<Setter Property="FontSize" Value="15"/>
+			<Setter Property="FontFamily" Value="ALGERIAN"/>
 		</Style>
 	</syncfusion:SfHubTile.TitleStyle>
 </syncfusion:SfHubTile>
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hub tile title customization](Appearance-Styling_images/Customizing-Title_img1.png)
+![wpf hub tile title customization](Appearance-Styling_images/wpf-hubtile-title-customization.png)
 
 ### Customizing the Secondary Content
 
@@ -163,7 +165,7 @@ You can customize the secondary content appearance by using [SecondaryContentTem
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" SecondaryContent="This is SecondaryContent" ImageSource="Assets/New Mail.png"  Title="This is title area." Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTile" SecondaryContent="This is SecondaryContent" ImageSource="Assets/New Mail.png" Title="This is title area." Header="HubTile">
 	<syncfusion:SfHubTile.HubTileTransitions>
 		<shared:SlideTransition/>
 		<shared:FadeTransition/>
@@ -171,14 +173,14 @@ You can customize the secondary content appearance by using [SecondaryContentTem
     <!-- For setting secondary content -->
 	<syncfusion:SfHubTile.SecondaryContentTemplate>
 		<DataTemplate>
-			<TextBlock Text="{Binding content}" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red"/>
+			<Image Source="/Assets/HubTile.png" Stretch="Fill" ToolTip="Secondary Content" Margin="-1"/>
 		</DataTemplate>
 	</syncfusion:SfHubTile.SecondaryContentTemplate>
 </syncfusion:SfHubTile>
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hub tile secondary content customization](Appearance-Styling_images/Secondary-Content-Customization_img1.png)
+![wpf hub tile secondary content customization](Appearance-Styling_images/wpf-hubtile-secondary-content-customization.png)
 
 
 
