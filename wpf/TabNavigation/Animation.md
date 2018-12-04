@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Transition effects | TabNavigation | wpf | Syncfusion
-description: transition effects
+title: Animation | TabNavigation | WPF | Syncfusion
+description: This section describes animation effects of tabnavigation control.
 platform: wpf
 control: TabNavigation
 documentation: ug
 ---
 
-# Transition Effects
+# Animation
 
-Transition Effect property is used to set the effect for the Tab navigation control. The Transition effect is an enum that contains five values namely:
+Transition Effect property is used to set the animation effect for the tab navigation control. The Transition effect is an enum that contains five values namely:
 
 * Slide – The item/page navigates with slide effect.
 
