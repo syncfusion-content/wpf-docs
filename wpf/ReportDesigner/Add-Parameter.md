@@ -87,7 +87,7 @@ You can add parameter to the Report Designer using the following steps.
 
    ![Delete parameter](Add-Parameter_images/Add-Parameter_img8.png)
 
-## Add a Dataset Query Parameter
+## Add a query parameter
 
 ReportDesigner automatically creates a report parameter with default properties for Name, Prompt, and DataType when you add a query parameter in dataset query. 
 
