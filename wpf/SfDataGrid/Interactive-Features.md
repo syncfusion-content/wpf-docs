@@ -660,7 +660,7 @@ You can change the appearance of the context menu by customizing the style with 
 
 SfDataGrid allows you to show and hide the Columns from the view at runtime via drag and drop using ColumnChooser. You can enable a column chooser in an application by creating an instance for GridColumnChooserController and assign to SfDataGrid.GridColumnDragDropController.
 
-While dropping columns in ColumnChooser window, the particular column will hided by setting GridColumn.IsHidden as true.
+While dropping columns in ColumnChooser window, the particular column will be hidden by setting GridColumn.IsHidden as true.
 
 {% tabs %}
 {% highlight c# %}
