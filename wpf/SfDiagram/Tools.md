@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Diagram supports to draw shapes, select or pan with click and drag over the Digram.
+title: Syncfusion Diagram supports to draw, select or pan with click and drag action.
 description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
 platform: wpf
 control: SfDiagram
