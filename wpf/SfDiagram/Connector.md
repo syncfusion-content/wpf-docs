@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Draw a line connecting two points, nodes or ports.
+title: Syncfusion diagram supports to connect two points, nodes or ports.
 description: How to draw a line to connect points, nodes, or ports?
 platform: wpf
 control: SfDiagram
@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
-![](Connector_images/Connector_img1.PNG)
+![connection between ports](Connector_images/Connector_img1.PNG)
 
 ## Define Connector
 
@@ -71,7 +71,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img2.PNG)
+![point to point connection](Connector_images/Connector_img2.PNG)
 
 ### Connectors from stencil
 
@@ -132,7 +132,7 @@ public NodeViewModel AddNode(double offsetX, string text)
 
 The `SourceNodeID` and `TargetNodeID` properties also allows to define the nodes to be connected, for sample please refer to [ConnectNodes](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/NodeID-1392072082).
 
-![](Connector_images/Connector_img3.PNG)
+![connection between nodes](Connector_images/Connector_img3.PNG)
 
 N> By default, connections are created at the intersecting point of Segments and Node bounds. The connection between any specific point of Source and Target Nodes can be achieved with Ports.
 
@@ -146,7 +146,7 @@ For Connections with Ports, please refer to [Port](https://help.syncfusion.com/w
 
 The path of the Connector is defined with a collection of `Segments`.
 
-![](Connector_images/Connector_img31.PNG)
+![types of connector segment](Connector_images/Connector_img31.PNG)
 
 ### Straight
 
@@ -173,7 +173,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img6.PNG)
+![Straight segment](Connector_images/Connector_img6.PNG)
 
 ### Orthogonal
 
@@ -200,7 +200,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img8.PNG)
+![Orthogonal segments](Connector_images/Connector_img8.PNG)
 
 ### CubicCurveSegment
 
@@ -230,15 +230,15 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img12.PNG)
+![Cubic curve segments](Connector_images/Connector_img12.PNG)
 
 #### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes.
 
-![](Connector_images/Connector_img10.PNG)
+![basic routing](Connector_images/Connector_img10.PNG)
 
-![](Connector_images/Connector_img11.PNG)
+![source and target overlapping](Connector_images/Connector_img11.PNG)
 
 N> Overlapping with Source and Target nodes are only avoided. Other nodes are not considered as obstacles.
 
@@ -250,7 +250,7 @@ The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows to defin
 
 For Sample, please refer to [Decorator](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/DecoratorConnector1321823789 "Decorator")
 
-![](Connector_images/Connector_img15.PNG)
+![source and target of the connector](Connector_images/Connector_img15.PNG)
 
 The `SourceDecoratorPivot` and `TargetDecoratorPivot` properties allows to Customize the position of the decorators in the connector.
 
@@ -278,7 +278,7 @@ SegmentDecorators = new ObservableCollection<ISegmentDecorator>()
  
  For Sample, please refer to [SegmentDecorator](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/SegmentDecorator575139946). 
  
- ![](Connector_images/SegmentDecorator.PNG)
+ ![segment decorator of the connector](Connector_images/SegmentDecorator.PNG)
 
 ## Corner radius
 
@@ -318,7 +318,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img21.PNG)
+![arc based corners of the connector](Connector_images/Connector_img21.PNG)
 
 ## Padding
 
@@ -346,7 +346,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img16.PNG)
+![space between the Connectors end point and the object](Connector_images/Connector_img16.PNG)
 
 ## Bridging
 
@@ -354,7 +354,7 @@ Line Bridging creates a bridge for lines to smartly cross over other lines, at p
 
 The Direction of Bridge can be customized with property `BridgeDirection`.
 
-![](Connector_images/Bridging1.PNG)
+![bridge for lines to smartly cross over other lines at points of interaction](Connector_images/Bridging1.PNG)
 
 {% tabs %}
 {% highlight xaml %}
@@ -402,7 +402,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/bridging.png)
+![bridge for lines to smartly cross over other lines](Connector_images/bridging.png)
 
 N> Bezier segments do not support Bridging.
 
@@ -439,7 +439,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/bridgespace.png)
+![customize the size of bridge in a connector](Connector_images/bridgespace.png)
 
 ## Appearance
 
@@ -475,7 +475,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img22.PNG)
+![appearance customization](Connector_images/Connector_img22.PNG)
 
 ## Interaction
 
@@ -491,7 +491,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](Connector_images/StraightEditing.PNG)
+![straight segment with end thumbs for editing](Connector_images/StraightEditing.PNG)
 
 * If any changes made in the source thumb of the connector ,`ConnectorSourceChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments ,please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
 
@@ -514,13 +514,78 @@ To explore about arguments, please refer to [ChangedEventArgs](https://help.sync
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![](Connector_images//SegmentEditing.png)
+![segment editing at runtime using segment thumbs](Connector_images//SegmentEditing.png)
 
 ### Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](Connector_images/Bezier3.gif)
+![control points editing at runtime using segment thumbs](Connector_images/Bezier3.gif)
+
+
+## Customization and Validation on Connector Ends
+
+This support used to decide on which element Connector is going dock with diagramming object at runtime.
+
+### ConnectionParameter
+This is used to Gets or sets the arguments to the ConnectionParameter. Here we are listed the arguments as below:
+
+
+| Type | Name | Type | Description |
+|---|---|---|---|
+| Property | Connector | object | Returns the Connector which is edited at runtime. |
+| Property | SourceNode | object | Defines the specific Node as Source of Connector. |
+| Property | TargetNode | object | Defines the specific Node as Target of Connector. |
+| Property | SourcePort | IPort | Defines the specific Port as Source of Connector. |
+| Property | TargetPort | IPort | Defines the specific Port as Target of Connector. |
+| Property | SourcePoint | Point | Defines the specific Point as Source of Connector. |
+| Property | TargetPoint | Point | Defines the specific Point as Source of Connector. |
+| Property | ConnectorEnd | ConnectorEnd | Returns the Connector end which is edited at runtime.
+
+public enum ConnectorEnd
+    {
+        Source,
+        Target,
+    } |
+| Property | SourceConnector | object | Defines the specific Connector as Source of Connector. |
+| Property | TargetConnector | object | Defines the specific Connector as Target of Connector. |
+
+
+The following code illustrates how to override ValidateConnection
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// Create custom class for diagram
+/// </summary>
+public class CustomDiagram : SfDiagram
+{
+     /// <summary>
+    /// Override the validate connection
+    /// </summary>
+    /// <param name="args">Gets args value</param>
+    protected override void ValidateConnection(ConnectionParameter args)
+    {
+        // set the target node and target port
+        if (args.TargetPort == null && args.TargetNode != null)
+        {
+            if (args.TargetNode is NodeViewModel)
+            {
+                NodeViewModel node = args.TargetNode as NodeViewModel;
+                if (node.Ports != null && (node.Ports as ObservableCollection<IPort>).Count() > 0)
+                {
+                    args.TargetPort = (node.Ports as ObservableCollection<IPort>)[0];
+                }
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Validate whether port already have connection and count of connection](Interaction_images/Interaction_img16.jpg)
 
 ## Hit Padding
 
@@ -568,7 +633,118 @@ diagram.Connectors = lines;
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img23.jpg)
+![vicinity area to make connection](Connector_images/Connector_img23.jpg)
+
+## Automatic Port creation
+
+We have provided support to create a Port at the intersection point on Node or Connector at runtime. This can be achieved by using the combination of `SetTool` and `ObjectDrawn`Event.
+
+### Enable Drawing in SetTool
+
+This SetTool method will be invoked when Mouse/Pointer is over on Diagramming Element. In this method, We can make decision to start drawing of the Connector.
+
+Please refer to the code example as below
+
+{% tabs %}
+{% highlight C# %}
+
+//Override the SetTool method
+protected override void SetTool(SetToolArgs args)
+{
+    if (args.Source is INode || args.Source is IConnector)
+    {
+    	args.Action = ActiveTool.Draw;
+    }
+    else
+    {
+    	base.SetTool(args);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Set Port for intersection
+
+The `ObjectDrawn` event will be invoked while drawing the objects. We have provided two properties in the argument of this event to set Source and Target Port of the Connector.
+
+Please refer to the code example as below
+
+{% tabs %}
+{% highlight C# %}
+
+//Hook the ObjectDrawn Event
+(diagram.Info as IGraphInfo).ObjectDrawn += MainWindow_ObjectDrawn;
+
++private void MainWindow_ObjectDrawn(object sender, ObjectDrawnEventArgs args)
+{
+    //SourcePort should be set on Started state
+    if (args.State == DragState.Started)
+    {
+    	if (args.Item is IConnector)
+        {
+        	IConnector connector = args.Item as IConnector;
+        	if (connector.SourceNode != null)
+        	{
+            	if ((connector.SourceNode as NodeViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.SourceNode as NodeViewModel).Ports = new ObservableCollection<IPort>();
+
+				//Set the TargetPort as NodePort to the Node
+                args.SourcePort = new NodePortViewModel();
+			}
+            if (connector.SourceConnector != null)
+            {
+            	if ((connector.SourceConnector as ConnectorViewModel).Ports == null)
+            		//Initialize the Port collection
+                	(connector.SourceConnector as ConnectorViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as ConnectorPort to the Connector
+                args.SourcePort = new ConnectorPortViewModel();
+         	}
+		}
+	}
+
+	//TargetPort should be set on Started state
+    if (args.State == DragState.Completed)
+    {
+    	if (args.Item is IConnector)
+        {
+        	IConnector connector = args.Item as IConnector;
+            if (connector.TargetNode != null)
+            {
+            	if ((connector.TargetNode as NodeViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.TargetNode as NodeViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as NodePort to the Node
+                args.TargetPort = new NodePortViewModel();
+			}
+            if (connector.TargetConnector != null)
+            {
+          		if ((connector.TargetConnector as ConnectorViewModel).Ports == null)
+                	//Initialize the Port collection
+                    (connector.TargetConnector as ConnectorViewModel).Ports = new ObservableCollection<IPort>();
+				//Set the TargetPort as ConnectorPort to the Connector
+                args.TargetPort = new ConnectorPortViewModel();
+        	}
+		}
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+ ConnectionIndicator animation for Node:
+
+![ConnectionIndicator animation for Node](Interaction_images/Interaction_img13.jpeg)
+
+ ConnectionIndicator animation for Connector:
+
+![ConnectionIndicator animation for Connector](Interaction_images/Interaction_img14.jpeg)
+
+ConnectorPort to NodePort Connection:
+
+![ConnectorPort to NodePort Connection](Interaction_images/Interaction_img15.jpeg)
+
 
 ## Constraints
 
