@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Diagram provides support to find the intersection or overlapping objects.
+title: Syncfusion Diagram provides support to find overlapping of objects.
 description: How to find overlapping of diagramming objects during runtime?
 platform: wpf
 control: SfDiagram

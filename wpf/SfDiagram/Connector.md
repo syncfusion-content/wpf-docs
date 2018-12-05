@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Draw a line connecting two points, nodes or ports.
+title: Syncfusion diagram supports to draw a line connecting two points, nodes or ports.
 description: How to draw a line to connect points, nodes, or ports?
 platform: wpf
 control: SfDiagram
@@ -346,7 +346,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![space between the Connector’s end point and the object](Connector_images/Connector_img16.PNG)
+![space between the Connectors end point and the object](Connector_images/Connector_img16.PNG)
 
 ## Bridging
 
@@ -354,7 +354,7 @@ Line Bridging creates a bridge for lines to smartly cross over other lines, at p
 
 The Direction of Bridge can be customized with property `BridgeDirection`.
 
-![](Connector_images/Bridging1.PNG)
+![bridge for lines to smartly cross over other lines at points of interaction](Connector_images/Bridging1.PNG)
 
 {% tabs %}
 {% highlight xaml %}
@@ -491,7 +491,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](Connector_images/StraightEditing.PNG)
+![straight segment with end thumbs for editing](Connector_images/StraightEditing.PNG)
 
 * If any changes made in the source thumb of the connector ,`ConnectorSourceChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments ,please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
 
