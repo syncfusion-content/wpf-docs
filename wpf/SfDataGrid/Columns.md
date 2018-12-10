@@ -892,7 +892,7 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using StackedHeaderRows](Columns_images/Columns_img7.png)
+![SfDataGrid supports additional unbound header rows known as stacked header rows that span across the DataGrid columns using StackedHeaderRows](Columns_images/Columns_img7.png)
 
 You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.aspx). 
 
@@ -947,7 +947,7 @@ public class OrderInfo
 {% endhighlight %}
 {% endtabs %}
 
-![add the stacked headers using `GroupName` property of Data Annotations Display attributes](Columns_images/Columns_img8.png)
+![add the stacked headers using GroupName property of Data Annotations Display attributes](Columns_images/Columns_img8.png)
 
 ### Adding ChildColumns
 
@@ -1396,7 +1396,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![the `ColumnRatio` to apply the defined star width for each column](Columns_images/Columns_img10.png)
+![the ColumnRatio to apply the defined star width for each column](Columns_images/Columns_img10.png)
 
 ### Change the width of GridComboBoxColumn based on it’s ItemsSource
 
@@ -1481,5 +1481,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![the `ViewModel.AllowFiltering` property to `GridColumn.AllowFiltering` property](Columns_images/Columns_img11.png)
+![the ViewModel.AllowFiltering property to GridColumn.AllowFiltering property](Columns_images/Columns_img11.png)
 
