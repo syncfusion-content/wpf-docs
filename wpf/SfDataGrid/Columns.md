@@ -519,6 +519,35 @@ public string Country
 {% endhighlight %}
 {% endtabs %}
 
+##### Customizing Display Format String
+
+SfDataGrid provides support for display format string and it can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns] (http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html)  property.
+
+You can enable or disable display format string for column in model by setting DisplayFormatAttributes.DataFormatString property.
+
+In the below code snippet explains the simple implementation of Display Format String.
+
+{% tabs %}
+{% highlight c# %}
+[DisplayFormat(DataFormatString = "Country is {0}")]
+
+public string Country
+{
+    get { return country; }
+    set { country = value; }
+}
+[DisplayFormat(DataFormatString = "yyyy")]
+
+public DateTime OrderDate
+{
+    get {  return _orderDate; }
+    set {  orderDate = value; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](Columns_images/Columns_img13.png)
+
 ### Manually defining columns
 
 SfDataGrid control allows you to define the columns manually by adding desired column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) collection.
