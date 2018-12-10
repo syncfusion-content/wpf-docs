@@ -390,7 +390,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 Below screenshot shows the customized header template loaded on the header of OrderID column.
 
-![shows the customized header template loaded on the header of OrderID column](Columns_images/Columns_img1.png)
+![Shows the customized header template loaded on the header of OrderID column](Columns_images/Columns_img1.png)
 
 #### Data Annotations with AutoGenerateColumns
 
@@ -947,7 +947,7 @@ public class OrderInfo
 {% endhighlight %}
 {% endtabs %}
 
-![add the stacked headers using GroupName property of Data Annotations Display attributes](Columns_images/Columns_img8.png)
+![Add the stacked headers using GroupName property of Data Annotations Display attributes](Columns_images/Columns_img8.png)
 
 ### Adding ChildColumns
 
@@ -1396,7 +1396,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![the ColumnRatio to apply the defined star width for each column](Columns_images/Columns_img10.png)
+![The ColumnRatio to apply the defined star width for each column](Columns_images/Columns_img10.png)
 
 ### Change the width of GridComboBoxColumn based on it’s ItemsSource
 
@@ -1481,5 +1481,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![the ViewModel.AllowFiltering property to GridColumn.AllowFiltering property](Columns_images/Columns_img11.png)
+![The ViewModel.AllowFiltering property to GridColumn.AllowFiltering property](Columns_images/Columns_img11.png)
 
