@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Inclusion of stamp annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
-description: Inclusion of stamp annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
+title: Stamp Annotation | PDF Viewer | WPF | Syncfusion
+description: stamp annotation
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -41,7 +41,7 @@ The following image shows the stamp annotation being included in the PDF Documen
 
  ![Stamp annotation](Annotation-images\Stamp-Annotation-1.png)
 
-# How to set the opacity of the stamp annotation?
+## How to set the opacity of the stamp annotation?
 
 The opacity of the stamp annotation can be customized at the time of inclusion itself. The following code shows how to set opacity value of the stamp annotation to be included.
 
@@ -69,7 +69,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-# How to set the author and subject of the stamp annotation?
+## How to set the author and subject of the stamp annotation?
 
 The author and subject fields of the stamp annotation can be added for the stamp annotation to be added to the PDF document. The follow code shows how to set the author and subject field of the stamp annotation to be included.
 
@@ -99,7 +99,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-# How to set the icon of the stamp annotation?
+## How to set the icon of the stamp annotation?
 
 The icon of the stamp annotation can be customized at the time of inclusion itself. The following code shows how to set icon value of the stamp annotation to be included.
 
@@ -127,7 +127,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-# How to set the text for popup note of the stamp annotation?
+## How to set the text for popup note of the stamp annotation?
 
 The text for popup note of the stamp annotation can be customized at the time of inclusion itself. The following code shows how to set text for popup note of the stamp annotation to be included.
 
@@ -155,7 +155,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-# Working with included/existing stamp annotations
+## Working with included/existing stamp annotations
 
 Stamp annotation supports adding notes along with it, also it allows editing its opacity. To use these options, select the included/existing stamp annotation and click right using mouse, over the selected annotation, a pop up context menu will appear with the following options,
 
