@@ -39,7 +39,7 @@ End Sub
 
 The following image shows the stamp annotation being included in the PDF Document.
 
- ![](Annotation-images\Stamp-Annotation-1.png)
+ ![Stamp annotation](Annotation-images\Stamp-Annotation-1.png)
 
 # How to set the opacity of the stamp annotation?
 
@@ -167,7 +167,7 @@ Stamp annotation supports adding notes along with it, also it allows editing its
 
 We can add notes to the stamp annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected stamp annotation. The added notes will be saved along with the PDF document and if there are any existing notes, that will be displayed in here.
 
-![](Annotation-images\Stamp-Annotation-2.png)
+![Open popup note](Annotation-images\Stamp-Annotation-2.png)
 
 ## Properties
 
@@ -186,7 +186,7 @@ The slider control displayed in the Appearance tab allows modifying opacity of t
 
 The following image illustrates how to change the opacity of the stamp annotation.
 
-![](Annotation-images\Stamp-Annotation-3.png)
+![Edit opacity of stamp annotation](Annotation-images\Stamp-Annotation-3.png)
 
 ### Editing color
 
@@ -194,7 +194,7 @@ The background color of popup note of the selected stamp will be displayed in th
 
 The following image illustrates how to change the color of the stamp annotation included.
 
-![](Annotation-images\Stamp-Annotation-4.png)
+![Edit color of stamp annotation](Annotation-images\Stamp-Annotation-4.png)
 
 ## General tab
 
@@ -202,7 +202,7 @@ We can add or edit the Author and Subject of the stamp annotation using General 
 
 The following image illustrates the change in Author and Subject of the included Stamp annotation.
 
-![](Annotation-images\Stamp-Annotation-5.png)
+![General Tab](Annotation-images\Stamp-Annotation-5.png)
 
 ## Deleting an annotation
 
@@ -210,7 +210,7 @@ Selecting delete option from the context menu which is displayed when clicking r
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-![](Annotation-images\Stamp-Annotation-6.png)
+![Delete stamp annotation](Annotation-images\Stamp-Annotation-6.png)
 
 ## Keyboard shortcuts
 
