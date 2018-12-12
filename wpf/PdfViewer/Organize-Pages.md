@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Organize Pages | PDF Viewer | WPF | Syncfusion
-description: organize pages
+title:  Organize Pages using PDF Viewer WPF | Syncfusion
+description: Rotate, delete and reorder pages of the PDF Document using Syncfusion PDF Viewer WPF.
 platform: wpf
 control: PDF Viewer
 documentation: ug
