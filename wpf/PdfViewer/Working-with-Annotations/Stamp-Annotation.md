@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stamp Annotation | PDF Viewer | WPF | Syncfusion
-description: stamp annotation
+title: Stamp Annotation in PDF Viewer WPF | Syncfusion
+description: Adding, modifying and deleting stamp annotation in PDF document using Syncfusion PDF Viewer WPF.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Stamp annotation
+# Stamp annotation in PDF Viewer WPF
 
 PDF viewer WPF allows the user to include stamp annotation in the PDF document and provides options to edit or remove the existing stamp annotation in the PDF document.
 
@@ -24,7 +24,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
 
 {% highlight vbnet %}
 
@@ -57,7 +56,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -85,7 +83,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
 
 {% highlight vbnet %}
 
@@ -115,7 +112,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-
 {% highlight vbnet %}
 
 Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
@@ -142,7 +138,6 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 {% endhighlight %}
-
 
 {% highlight vbnet %}
 
