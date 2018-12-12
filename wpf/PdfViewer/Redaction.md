@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Redaction | PDF Viewer | WPF | Syncfusion
-description: redaction
+title:  Redaction in PDF Viewer WPF | Syncfusion
+description: Redact sensitive/confidential content in the PDF file using Syncfusion PDF Viewer WPF
 platform: wpf
 control: PDF Viewer
 documentation: ug
