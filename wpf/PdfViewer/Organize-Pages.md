@@ -11,13 +11,13 @@ documentation: ug
 
 Organize pages support allows you to rotate, rearrange, and delete pages from a PDF document using a miniature preview of the PDF pages.
 
-Follow below steps to organize the PDF page(s) in `PdfViewerControl`.
+Use the following steps to organize the PDF page(s) in `PdfViewerControl`:
 
-1.	Click on the organize page button in the left pane, this displays the organize pages pane in `PdfViewerControl`.
+1.	Click the organize page button in the left pane, this displays the organize pages pane in the `PdfViewerControl`.
 
 ![Organize Page Button](OrganizePages_Images/OrganizePages_Image_0.png)
 
-2.	You can rotate or delete a specific page using context menu that would appear when mouse hovering the pages.
+2.	You can rotate or delete a specific page using context menu that appears when hovering the mouse over the pages.
 
 ![Page toolbar](OrganizePages_Images/OrganizePages_Image_1.png)
 
@@ -25,15 +25,15 @@ Follow below steps to organize the PDF page(s) in `PdfViewerControl`.
 
 ![Organize Pages toolbar](OrganizePages_Images/OrganizePages_Image_2.png)
 
-N> You can use Ctrl/Shift keys to select multiple pages. Also, you can select all pages using Ctrl+A shortcut key. Could not be delete all the pages from the document. 
+N> You can use Ctrl/Shift keys to select multiple pages. Also, you can select all pages using Ctrl+A shortcut key. You cannot delete all the pages from the document. 
 
-4.	You can rearrange the page(s) by dragging and dropping them wherever you want to place the page(s).
+4.	You can rearrange the page(s) by dragging and dropping them.
 
 ![Rearrange pages](OrganizePages_Images/OrganizePages_Image_3.png)
 
 ## Rotating PDF page(s)
 
-You can rotate a PDF page(s) in clockwise, anti-clockwise or to a specific angle using `Rotate` method. Refer the following code example to rotate a page from code behind.
+You can rotate PDF page(s) in clockwise, anti-clockwise or to a specific angle using the `Rotate` method. Refer to the following code example to rotate a page from code behind.
 
 {% tabs %}
 {% highlight c# %}
@@ -48,23 +48,23 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-   `Rotating the pages with index 0 and 1 to 90 degree
+   'Rotating the pages with index 0 and 1 to 90 degree
    pdfviewer.PageOrganizer.Rotate(new int[]{0,1}, Syncfusion.Pdf.PdfPageRotateAngle.RotateAngle90)
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-### Rotating a PDF page(s) Clockwise
+### Rotating PDF page(s) Clockwise
 
-You can rotate a PDF page(s) clockwise using the `PageOrganizer.RotateClockwise` method. 
+You can rotate PDF page(s) clockwise using the `PageOrganizer.RotateClockwise` method. 
 
 {% tabs %}
 {% highlight c# %}
 
 private void button1_Click(object sender, RoutedEventArgs e)
 {
-    // Rotating the pages with index 0 and 1 in clockwise
+    //Rotating the pages with index 0 and 1 in clockwise
     pdfviewer.PageOrganizer.RotateClockwise(new int[] { 0, 1 });
 }
 
@@ -72,16 +72,16 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-    `Rotating the pages with index 0 and 1 in clockwise
+    'Rotating the pages with index 0 and 1 in clockwise
     pdfviewer.PageOrganizer.RotateClockwise(new int[] { 0, 1 })
 End Sub
 
 {% endhighlight %}
 {% endtabs %}
 
-### Rotating a PDF page(s) Counterclockwise
+### Rotating PDF page(s) Counterclockwise
 
-You can rotate a PDF page(s) in counterclockwise using the `PageOrganizer.RotateCounterclockwise` method. 
+You can rotate PDF page(s) in counterclockwise using the `PageOrganizer.RotateCounterclockwise` method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -96,7 +96,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-    `Rotating the pages with index 0 and 1 in counterclockwise
+    'Rotating the pages with index 0 and 1 in counterclockwise
     pdfviewer.PageOrganizer.RotateCounterclockwise (new int[] { 0, 1 })
 End Sub
 
@@ -120,7 +120,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-    `Rearrange the page by index
+    'Rearrange the page by index
     pdfviewer.PageOrganizer.ReArrange(new int[] { 1, 0 })
 End Sub
 
@@ -139,7 +139,7 @@ To remove the page at specific index from PDF document, refer to the following c
 
 private void button1_Click(object sender, RoutedEventArgs e)
 {
-    //Remove a page at index 0.
+    //Remove a page at index 0
     pdfviewer.PageOrganizer.RemoveAt(0);
 }
 
@@ -147,7 +147,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-    `Remove a page at index 0.
+    'Remove a page at index 0
     pdfviewer.PageOrganizer.RemoveAt(0)
 End Sub
 
@@ -169,7 +169,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-    `Removing the pages at index 0 and 1
+    'Removing the pages at index 0 and 1
     pdfviewer.PageOrganizer.RemovePages(new int[] { 0, 1 })
 End Sub
 
@@ -193,7 +193,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-    `Gets rotation angle of page with index 0 
+    'Gets rotation angle of page with index 0 
     Dim rotatedAngle As PdfPageRotateAngle = pdfviewer.PageOrganizer.GetPageRotation(0)
 End Sub
 
@@ -202,7 +202,7 @@ End Sub
 
 ## Disabling page organizer
 
-You can remove the page organizer icon from left pane of ‘PdfViewerControl’ by setting the ‘PageOrganizerSettings.IsIconVisible’ property as false. 
+You can remove the page organizer icon from left pane of the ‘PdfViewerControl’ by setting the ‘PageOrganizerSettings.IsIconVisible’ property to false. 
 Refer to the following code example to disable the organize page.
 
 {% tabs %}
@@ -218,7 +218,7 @@ private void button1_Click(object sender, RoutedEventArgs e)
 {% highlight VB %}
 
 Private Sub button1_Click(sender As Object, e As RoutedEventArgs) 
-    `Removing the page organizer icon from left pane. 
+    'Removing the page organizer icon from left pane. 
     pdfviewer.PageOrganizerSettings.IsIconVisible = false
 End Sub
 
@@ -230,6 +230,6 @@ End Sub
 The following keyboard shortcuts are available at miniature preview mode to organize the PDF pages:
 
 •	Delete key: Deletes the selected page from the PDF document.
-•	Ctrl+A: Select all pages in the PDF document.
-•	Shift+Arrow/MouseButton: Select a set of consecutive pages in the PDF document.
+•	Ctrl+A: Selects all pages in the PDF document.
+•	Shift+Arrow/MouseButton: Selects a set of consecutive pages in the PDF document.
 •	Ctrl+MouseButton: Selects the clicked pages in the PDF document. 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Printing PDF Files | PDF Viewer | Wpf | Syncfusion
 description: printing pdf files 
