@@ -275,3 +275,4 @@ The following XAML code shows how to bind the annotation command for underline a
     <Button Content="Underline" Height="20" Width="60" CommandParameter="Underline" Command="{Binding ElementName=pdfViewerControl, Path=AnnotationCommand, Mode= OneWay }" />
 {% endhighlight %}
 {% endtabs %}
+
