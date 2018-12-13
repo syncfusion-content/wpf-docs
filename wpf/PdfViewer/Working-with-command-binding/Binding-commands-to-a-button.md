@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Binding PDF Viewer WPF commands to button | Syncfusion
 description: Inclusion of annotations in to the PDF document, performs zooming and performs page navigation through XAML binding.
