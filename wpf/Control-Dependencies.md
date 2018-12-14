@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Dependencies and Dependency assembly details for Syncfusion Essential WPF controls
+title: Control Dependencies and Dependency assembly | WPF | Syncfusion
 description: Control and it's Dependency assembly details for Syncfusion Essential Studio WPF products
 platform: wpf
 control: Control Dependencies
@@ -549,7 +549,7 @@ For exporting OLAP chart contents to PDF, word and image, the following referenc
 Syncfusion.OlapChartConverter.WPF
 </td>
 <td> 
-Syncfusion.OlapChartConverter.WPF
+Syncfusion.ExportOlapChart.Wpf
 </td>
 </tr>
 </table>
@@ -643,7 +643,7 @@ For exporting OLAP grid contents to excel, word, PDF and CSV, the following refe
 Syncfusion.OlapGridConverter.WPF
 </td>
 <td> 
-Syncfusion.OlapGridConverter.WPF
+Syncfusion.ExportOlapGrid.Wpf
 </td>
 </tr>
 </table>
@@ -718,7 +718,7 @@ Syncfusion.PivotAnalysis.Base <br/>
 Syncfusion.Shared.WPF
 </td>
 <td> 
-Syncfusion.PivotAnalysis.WPF
+Syncfusion.PivotTable.Wpf
 </td>
 </tr>
 </table>
@@ -738,7 +738,7 @@ Syncfusion.PivotGridConverter.WPF <br/>
 Syncfusion.XlsIO.Base
 </td>
 <td> 
-Syncfusion.PivotGridConverter.WPF
+Syncfusion.PivotTableExport.Wpf
 </td>
 </tr>
 </table>
@@ -1141,7 +1141,7 @@ Syncfusion.Pdf.Base <br/>
 Syncfusion.Compression.Base 
 </td>
 <td> 
-Syncfusion.SfGridConverter.WPF
+Syncfusion.DataGridExcelExport.Wpf
 </td>
 </tr>
 </table>
@@ -1763,7 +1763,7 @@ Syncfusion.Pdf.Base <br/>
 Syncfusion.Compression.Base 
 </td>
 <td> 
-Syncfusion.SfGridConverter.WPF
+Syncfusion.DataGridExcelExport.Wpf
 </td>
 </tr>
 </table>
