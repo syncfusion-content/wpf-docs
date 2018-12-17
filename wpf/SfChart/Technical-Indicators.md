@@ -121,7 +121,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/overview_1.png)
+![AccumulationDistributionIndicator type in WPF Chart](Technical-Indicators_images/overview_1.png)
 
 
 The following sections covers all the different types of technical indicators available in SfChart.
@@ -175,7 +175,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/atr.png)
+![AverageTrueRangeIndicator type in WPF Chart](Technical-Indicators_images/atr.png)
 
 
 ## Simple Average 
@@ -227,7 +227,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/sa.png)
+![SimpleAverageIndicator type in WPF Chart](Technical-Indicators_images/sa.png)
 
 
 ## RSI 
@@ -287,7 +287,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/rsi.png)
+![RSITechnicalIndicator type in WPF Chart](Technical-Indicators_images/rsi.png)
 
 
 ## Momentum 
@@ -341,7 +341,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/momentum.png)
+![MomentumTechnicalIndicator type in WPF Chart](Technical-Indicators_images/momentum.png)
 
 
 ## Stochastic 
@@ -403,7 +403,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/stochastic.png)
+![StochasticTechnicalIndicator type in WPF Chart](Technical-Indicators_images/stochastic.png)
 
 
 ## Exponential Average
@@ -453,7 +453,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/exponential.png)
+![ExponentialAverageIndicator type in WPF Chart](Technical-Indicators_images/exponential.png)
 
 
 ## Triangular Average 
@@ -503,7 +503,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/ta.png)
+![TriangularAverageIndicator type in WPF Chart](Technical-Indicators_images/ta.png)
 
 
 ## Accumulation Distribution 
@@ -557,7 +557,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/accumulation.png)
+![AccumulationDistributionIndicator type in WPF Chart](Technical-Indicators_images/accumulation.png)
 
 
 ## Bollinger Band
@@ -615,7 +615,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/bollinger.png)
+![BollingerBandIndicator type in WPF Chart](Technical-Indicators_images/bollinger.png)
 
 
 ## MACD 
@@ -681,6 +681,6 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![](Technical-Indicators_images/macd.png)
+![MACDTechnicalIndicator type in WPF Chart](Technical-Indicators_images/macd.png)
 
 
