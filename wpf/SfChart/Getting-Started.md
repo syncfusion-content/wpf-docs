@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for the SfChart.
+title: Getting Started for the Syncfusion SfChart.
 description: Getting start with simple application using SfChart in WPF.
 platform: wpf
 control: SfChart
