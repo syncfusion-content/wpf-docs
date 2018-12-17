@@ -58,7 +58,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/column.png)
+![Column chart type in WPF](Series_images/column.png)
 
 ### Bar
 
@@ -93,7 +93,7 @@ BarSeries series = new BarSeries()
 
 {% endtabs %}
 
-![](Series_images/bar.png)
+![Bar chart type in WPF](Series_images/bar.png)
 
 **Spacing**
 
@@ -117,7 +117,7 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 
 {% endtabs %}
 
-![](Series_images/spacing.png)
+![Column Spacing support in WPF](Series_images/spacing.png)
 
 **SegmentSpacing**
 
@@ -165,7 +165,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Series_images/SegmentSpacing.png)
+![Column SegmentSpacing support in WPF](Series_images/SegmentSpacing.png)
 
 ## Line and Spline Charts
 
@@ -227,7 +227,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Series_images/line.png)
+![Line chart type in WPF](Series_images/line.png)
 
 
 ### Spline
@@ -288,7 +288,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Series_images/spline.png)
+![Spline chart type in WPF](Series_images/spline.png)
 
 
 ## Bubble and Scatter 
@@ -338,7 +338,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/bubble.png)
+![Bubble chart type in WPF](Series_images/bubble.png)
 
 **ShowZeroBubbles**
 
@@ -365,7 +365,7 @@ series.ShowZeroBubbles = true;
 
 {% endtabs %}
 
-![](Series_images/showBubble_true.png)
+![ShowZeroBubbles support in WPF](Series_images/showBubble_true.png)
 
 The following code example and screenshots describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~ShowZeroBubblesProperty.html) value is false.
 
@@ -389,7 +389,7 @@ series.ShowZeroBubbles = false;
 
 {% endtabs %}
 
-![](Series_images/showBubble_false.png)
+![ShowZeroBubbles support in WPF Chart](Series_images/showBubble_false.png)
 
 ### Scatter
 
@@ -432,7 +432,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/scatter.png)
+![Scatter chart type in WPF](Series_images/scatter.png)
 
 ## Area Charts
 
@@ -473,7 +473,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/area.png)
+![Area chart type in WPF](Series_images/area.png)
 
 ### Spline Area
 
@@ -512,7 +512,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/splinearea.png)
+![SplineArea chart type in WPF](Series_images/splinearea.png)
 
 **SplineType**
 
@@ -547,7 +547,7 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![](Series_images/cardinal.png)
+![Cardinal spline support in WPF Chart](Series_images/cardinal.png)
 
 **Monotonic**
 
@@ -573,7 +573,7 @@ series.SplineType = SplineType.Monotonic;
 
 {% endtabs %}
 
-![](Series_images/monotonic.png)
+![Monotonic spline support in WPF Chart](Series_images/monotonic.png)
 
 **Clamped**
 
@@ -599,7 +599,7 @@ series.SplineType = SplineType.Clamped;
 
 {% endtabs %}
 
-![](Series_images/clamped.png)
+![Clamped spline support in WPF Chart](Series_images/clamped.png)
 
 
 ### Step Area
@@ -639,7 +639,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/steparea.png)
+![StepArea chart type in WPF](Series_images/steparea.png)
 
 ### Closed Area
 
@@ -680,7 +680,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/closedarea.png)
+![Closed area chart type in WPF](Series_images/closedarea.png)
 
 ### Step Line
 
@@ -716,7 +716,7 @@ SteplineChart.Series.Add(stepLine);
 
 {% endtabs %}
 
-![](Series_images/stepLine.png)
+![StepLine Chart type in WPF](Series_images/stepLine.png)
 
 
 ## Pie and Doughnut Charts
@@ -756,7 +756,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pie.png)
+![Pie chart type in WPF](Series_images/pie.png)
 
 The rendering size of the PieSeries can be controlled using [`PieCoefficient`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html#) property as in below code example.
 
@@ -795,7 +795,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pie_1.png)
+![PieCoefficient support in WPF Chart](Series_images/pie_1.png)
 
 **Group small data points into “others”**
 The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) and [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) properties of PieSeries. The [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is used to specify the grouping type based on slice [`Angle`], actual data point [`Value`], or [`Percentage`], and the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is [`double.NAN`], and [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is Value.
@@ -836,7 +836,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/doughnut.png)
+![Doughnut chart type in WPF](Series_images/doughnut.png)
 
 The Doughnut also having coefficient property, [`DoughnutCoefficient`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutCoefficient.html#) which defines the inner circle. Also it has [`DoughnutSize`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutSize.html#), used to define the size for this series like [`PieCoefficient`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html#) in PieSeries.
 
@@ -872,7 +872,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/doughnut_1.png)
+![DoughnutCoefficient support in WPF Chart](Series_images/doughnut_1.png)
 
 **DoughnutSize**
 
@@ -911,7 +911,7 @@ chart.Series.Add(doughnut1);
 
 {% endtabs %}
 
-![](Series_images/HoleSize.png)
+![DoughnutSize support in WPF Chart](Series_images/HoleSize.png)
 
 **DoughnutHoleSize**
 
@@ -937,7 +937,7 @@ DoughnutSeries.SetDoughnutHoleSize(chart, 0.2);
 
 {% endtabs %}
 
-![](Series_images/doughnutHole.png)
+![DoughnutHoleSize support in WPF Chart](Series_images/doughnutHole.png)
 
 
 ### Semi Pie and Doughnut
@@ -981,7 +981,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/semipie.png)
+![Semi pie support in WPF Chart](Series_images/semipie.png)
 
 {% tabs %}
 
@@ -1020,7 +1020,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/semidoughnut.png)
+![Semi doughnut support in WPF Chart](Series_images/semidoughnut.png)
 
 ### Explode Segments
 
@@ -1072,7 +1072,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/exploderadius.png)
+![Exploding a segment of accumlation series in WPF Chart](Series_images/exploderadius.png)
 
 N> We have defined ExplodeRadius as 30, by default its value is zero. So you need to define explode, when you set ExplodeIndex or ExplodeAll.
 
@@ -1117,7 +1117,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/explodeall.png)
+![Exploding all the segments of accumlation series in WPF Chart](Series_images/explodeall.png)
 
 ### Stacked doughnut
 
@@ -1170,7 +1170,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pyramid.png)
+![Pyramid chart type in WPF](Series_images/pyramid.png)
 
 
 The [`PyramidMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PyramidSeries~PyramidMode.html#) is used to define the rendering mode of the pyramid segments.
@@ -1212,7 +1212,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pyramidsurface.png)
+![Pyramid modes in WPF Chart](Series_images/pyramidsurface.png)
 
 
 **PyramidMode** **as** **Linear**
@@ -1252,7 +1252,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pyramidlinear.png)
+![Pyramid modes in WPF Chart](Series_images/pyramidlinear.png)
 
 ### Funnel
 
@@ -1289,7 +1289,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/funnel.png)
+![Funnel chart type in WPF](Series_images/funnel.png)
 
 
 ### Funnel Mode
@@ -1331,7 +1331,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/valueisheight.png)
+![Funnel modes in WPF Chart](Series_images/valueisheight.png)
 
 **ValueIsWidth**
 
@@ -1368,7 +1368,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/valueiswidth.png)
+![Funnel modes in WPF Chart](Series_images/valueiswidth.png)
 
 ### Explode Segments
 
@@ -1416,7 +1416,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/funnelexplode_1.png)
+![Exploding the segments of accumlation series in WPF Chart](Series_images/funnelexplode_1.png)
 
 **Gap** **Ratio**
 
@@ -1455,7 +1455,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/funnelexplode_2.png)
+![Gap ratio between segments in WPF Chart](Series_images/funnelexplode_2.png)
 
 ## Radar and Polar Charts
 
@@ -1502,7 +1502,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/radar.png)
+![Radar chart type in WPF](Series_images/radar.png)
 
 
 ### Polar
@@ -1544,7 +1544,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/polar.png)
+![Polar chart type in WPF](Series_images/polar.png)
 
 
 The Radar and Polar charts having the following properties in common:
@@ -1602,7 +1602,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/isclosed.png)
+![Closed polar series in WPF Chart](Series_images/isclosed.png)
 
 ### DrawType
 
@@ -1649,7 +1649,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/drawtype_area.png)
+![Draw type support for polar series in WPF Chart](Series_images/drawtype_area.png)
 
 **DrawType** **as** **Line**
 
@@ -1696,7 +1696,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/drawtype_line.png)
+![Draw type support for polar series in WPF Chart](Series_images/drawtype_line.png)
 
 ### PolarAngle
 
@@ -1746,7 +1746,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Series_images/Rotate0.png)
+![Rotation support for polar series in WPF Chart](Series_images/Rotate0.png)
 
 
 **Rotate90**
@@ -1793,7 +1793,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Series_images/Rotate90.png)
+![Rotation support for polar series in WPF Chart](Series_images/Rotate90.png)
 
 
 **Rotate180**
@@ -1840,7 +1840,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Series_images/Rotate180.png)
+![Rotation support for polar series in WPF Chart](Series_images/Rotate180.png)
 
 
 **Rotate270**
@@ -1887,7 +1887,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Series_images/Rotate270.png)
+![Rotation support for polar series in WPF Chart](Series_images/Rotate270.png)
 
 
 ## Financial Charts
@@ -1947,7 +1947,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/ohlc.png)
+![HiLoOpenClose chart type in WPF](Series_images/ohlc.png)
 
 ### Candle
 
@@ -1992,7 +1992,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/candle.png)
+![Candle chart type in WPF](Series_images/candle.png)
 
 {% tabs %}
 
@@ -2028,7 +2028,7 @@ chart.Series.Add(series);
 
 {% endtabs %}               
 
-![](Series_images/candle_1.png)
+![Candle chart type in WPF](Series_images/candle_1.png)
 
 
 **Comparison Modes**
@@ -2060,7 +2060,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Open;
 
 {% endtabs %}     
 
-![](Series_images/open.png)
+![Comparison Modes support in WPF](Series_images/open.png)
 
 In the above screenshot, the second segment’s Open value is greater than the first segment’s open value. So, the stroke color is filled with bull fill color.
 
@@ -2088,7 +2088,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 {% endtabs %}   
 
-![](Series_images/Close.png)
+![Comparison Modes support in WPF](Series_images/Close.png)
 
  In the above screenshot, the second segment’s close value is greater than the first segment’s close value. So, the stroke color is filled with bull fill color.
 
@@ -2116,7 +2116,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 {% endtabs %}   
 
-![](Series_images/high.png)
+![Comparison Modes support in WPF](Series_images/high.png)
 
  In the above screenshot, the second segment’s high value is less than the first segment’s high value. So, the stroke color is filled with bear fill color.
 
@@ -2144,7 +2144,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
 
 {% endtabs %}   
 
-![](Series_images/low.png)
+![Comparison Modes support in WPF](Series_images/low.png)
 
 In the above screenshot, the second segment’s low value is greater than the first segment’s low value. So, the stroke color filled with bull fill color.
 
@@ -2242,7 +2242,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingcolumn.png)
+![StackingColumn chart type in WPF](Series_images/stackingcolumn.png)
 
 ### Stacking Column 100
 
@@ -2319,7 +2319,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingcolumn100.png)
+![StackingColumn100 chart type in WPF](Series_images/stackingcolumn100.png)
 
 ### Stacking Bar
 
@@ -2412,7 +2412,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingbar.png)
+![StackingBar chart type in WPF](Series_images/stackingbar.png)
 
 
 ### Stacking Bar 100
@@ -2500,7 +2500,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingbar100.png)
+![StackingBar100 chart type in WPF](Series_images/stackingbar100.png)
 
 ### Stacking Area
 
@@ -2583,7 +2583,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingarea.png)
+![StackingArea chart type in WPF](Series_images/stackingarea.png)
 
 ### Stacking Area 100
 
@@ -2672,7 +2672,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingarea100.png)
+![StackingArea100 chart type in WPF](Series_images/stackingarea100.png)
 
 You can draw open curve like Area using this [`IsClosed`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingAreaSeries~IsClosed.html#) property.
 
@@ -2777,7 +2777,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingarea_closed.png)
+![IsClosed support for stacking area series in WPF Chart](Series_images/stackingarea_closed.png)
 
 
 ### Grouping Stacked Series
@@ -2904,7 +2904,7 @@ chart.Series.Add(series4);
 
 {% endtabs %}
 
-![](Series_images/groupingstacking.png)
+![Grouping of stacking series in WPF Chart](Series_images/groupingstacking.png)
 
 
 ## Range Series
@@ -2952,7 +2952,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/hilo.png)
+![HiLo Chart support in WPF](Series_images/hilo.png)
 
 ### Range Column
 
@@ -2991,7 +2991,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/rangeseries.png)
+![RangeColumn chart type in WPF](Series_images/rangeseries.png)
 
 ### Plot range column chart type with single Y value
 
@@ -3036,7 +3036,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/rangearea.png)
+![RangeArea chart type in WPF](Series_images/rangearea.png)
 
 
 The APIs present in the RangeArea series are,
@@ -3083,7 +3083,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/rangearea_closed.png)
+![RangeArea chart type in WPF](Series_images/rangearea_closed.png)
 
 ### Spline Range Area
 
@@ -3179,7 +3179,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/histogram.png)
+![Histogram chart type in WPF](Series_images/histogram.png)
 
 
 You can customize interval using [`HistogramInterval`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries~HistogramInterval.html#) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries~ShowNormalDistributionCurve.html#).
@@ -3229,7 +3229,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/histogram_interval.png)
+![Interval customization support for histogram series in WPF Chart](Series_images/histogram_interval.png)
 
 
 ## Box and Whisker 
@@ -3266,7 +3266,7 @@ boxWhiskerChart.Series.Add(boxAndWhisker);
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker1.png)
+![Box and Whisker Chart type in WPF](Series_images/boxAndWhisker1.png)
 
 N>By default, the `BoxPlotMode` property value is Exclusive.
 
@@ -3302,7 +3302,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Normal;
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker2.png)
+![Series Box Mode customization support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker2.png)
 
 **Inclusive**
 
@@ -3328,7 +3328,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker3.png)
+![Series Box Mode customization support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker3.png)
 
 **ShowMedian**
 
@@ -3354,7 +3354,7 @@ boxAndWhisker.ShowMedian = true;
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker4.png)
+![ShowMedian support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker4.png)
 
 **OutlierTemplate**
 
@@ -3394,7 +3394,7 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker5.png)
+![OutlierTemplate support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker5.png)
 
 ## Waterfall Series
 
@@ -3433,7 +3433,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![](Series_images/waterfall1.png)
+![Waterfall Chart type in WPF](Series_images/waterfall1.png)
 
 **SummarySegmentPath and SummarySegmentBrush**
 
@@ -3479,7 +3479,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![](Series_images/waterfall2.png)
+![Waterfall Chart type in WPF](Series_images/waterfall2.png)
 
 **NegativeSegmentBrush**
 
@@ -3508,7 +3508,7 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 {% endtabs %}
 
-![](Series_images/waterfall3.png)
+![Waterfall Chart type in WPF](Series_images/waterfall3.png)
 
 **AllowAutoSum**
 
@@ -3546,7 +3546,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![](Series_images/waterfall4.png)
+![Waterfall Chart type in WPF](Series_images/waterfall4.png)
 
 **ConnectorLine**
 
@@ -3572,7 +3572,7 @@ waterfallSeries.ShowConnector = false;
 
 {% endtabs %}
 
-![](Series_images/waterfall5.png)
+![Connector Line support for Waterfall Chart in WPF](Series_images/waterfall5.png)
 
 **Connector line customization**
 
@@ -3616,7 +3616,7 @@ series.ConnectorLineStyle = style;
 
 {% endtabs %}
 
-![](Series_images/waterfall6.png)
+![Connector line customization support in WPF](Series_images/waterfall6.png)
 
 
 ## Fast Charts
@@ -3658,7 +3658,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastline.png)
+![FastLine chart type in WPF](Series_images/fastline.png)
 
 The following line properties are available for FastLineSeries:
 
@@ -3707,7 +3707,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastlinebitmap.png)
+![FastLineBitmap chart type in WPF](Series_images/fastlinebitmap.png)
 
 Like FastLineSeries, this bitmap series is also having line properties. 
 
@@ -3752,7 +3752,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastlinealiasing.png)
+![AntiAliasing support for FastLine Chart in WPF](Series_images/fastlinealiasing.png)
 
 
 ### Fast Column
@@ -3792,7 +3792,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastcolumn.png)
+![FastColumnBitmap chart type in WPF](Series_images/fastcolumn.png)
 
 ### Fast Bar
 
@@ -3831,7 +3831,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastbar.png)
+![FastBarBitmap chart type in WPF](Series_images/fastbar.png)
 
 
 ### Fast Candle
@@ -3879,7 +3879,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastcandle.png)
+![FastCandleBitmap chart type in WPF](Series_images/fastcandle.png)
 
 
 ### Fast HiLo
@@ -3921,7 +3921,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fasthilo.png)
+![FastHiLoBitmap chart type in WPF](Series_images/fasthilo.png)
 
 ### Fast OHLC
 
@@ -3966,7 +3966,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastohlc.png)
+![FastHiLoOpenCloseBitmap chart type in WPF](Series_images/fastohlc.png)
 
 ### Fast Scatter
 
@@ -4013,7 +4013,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastscatter.png)
+![FastScatterBitmap chart type in WPF](Series_images/fastscatter.png)
 
 
 ### Fast Step Line
@@ -4053,7 +4053,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/faststepline.png)
+![FastStepLineBitmap chart type in WPF](Series_images/faststepline.png)
 
 The anti aliasing mode can be enabled using [`EnableAntiAliasing`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastStepLineBitmapSeries as in below code snippet:
 
@@ -4092,7 +4092,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/faststepline_alias.png)
+![AntiAliasing support for FastStepLineBitmap chart type in WPF](Series_images/faststepline_alias.png)
 
 
 ### Fast Stacking Column
@@ -4134,7 +4134,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/faststackingcolumn.png)
+![FastStackingColumnBitmap chart type in WPF](Series_images/faststackingcolumn.png)
 
 
 ### Fast Range Area

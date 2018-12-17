@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of SfChart WPF.
+title: Overview of Syncfusion SfChart WPF.
 description: Overview and the highlighting features of the SfChart control.
 platform: wpf
 control: SfChart
@@ -11,7 +11,7 @@ documentation: ug
 
 SfChart provides a perfect way to visualize data with a high level of user interactivity that focus on development,productivity and simplicity of use. SfChart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
-![](Overview_images/Overview_img1.png)
+![Overview of WPF Chart](Overview_images/Overview_img1.png)
     
 
 
