@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting support in SfChart.
+title: Sorting support in Syncfusion SfChart.
 description: Sorting support in SfChart.
 platform: wpf
 control: SfChart
