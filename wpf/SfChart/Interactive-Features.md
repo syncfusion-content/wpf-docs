@@ -1,6 +1,6 @@
 ---
 layout: post
-title: InteractiveFeatures.
+title: Syncfusion InteractiveFeatures.
 description: Interactive Feature support for SfChart.
 platform: wpf
 control: SfChart
