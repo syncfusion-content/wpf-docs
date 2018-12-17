@@ -797,6 +797,18 @@ chart.Series.Add(series);
 
 ![](Series_images/pie_1.png)
 
+**Group small data points into “others”**
+The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) and [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) properties of PieSeries. The [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is used to specify the grouping type based on slice [`Angle`], actual data point [`Value`], or [`Percentage`], and the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is [`double.NAN`], and [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is Value.
+
+**Pie series with grouping (Mode - Value)**
+Groups the data points based on the specified grouping value.
+
+**Pie series with grouping (Mode - Angle)**
+Groups the data points based on the specified grouping angle.
+
+**Pie series with grouping (Mode - Percentage)**
+Groups the data points based on the specified grouping percentage.
+
 ### Doughnut
 
 [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#) is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
@@ -1115,6 +1127,20 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![](Series_images/explodeall.png)
+
+### Stacked doughnut
+
+Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~IsStackedDoughnut.html) property. The following properties are used to customize the stacked doughnut chart:
+
+•	[`CapStyle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CapStyle.html) - Specifies the shape of the start and end points of the circular segment. The supported values are BothFlat, BothCurve, StartCurve, and EndCurve. The default value of the this property is BothFlat.
+•	[`SegmentSpacing`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+•	[`MaximumValue`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
+•	[`TrackColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackColor.html) - Changes the color of the track area.
+•	[`TrackBorderColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
+•	[`TrackBorderWidth`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
+
+### Add content to the center of doughnut chart
+Any content can be added to the center of doughnut chart using the [`CenterView`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) property of [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html). The binding context of the [`CenterView`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) will be the respective [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html).
 
 ## Funnel and Pyramid Charts
 
@@ -2976,6 +3002,9 @@ chart.Series.Add(series);
 
 ![](Series_images/rangeseries.png)
 
+###Plot range column chart type with single Y value
+
+A typical range column chart requires two values, namely high and low, but this feature allows users to plot the range column chart with a single y-value. This is possible when the y-value is considered the delta value for a range column chart and the segments are arranged at the center of the chart area.
 
 ### Range Area
 
