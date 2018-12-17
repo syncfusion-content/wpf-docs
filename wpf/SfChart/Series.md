@@ -3002,7 +3002,7 @@ chart.Series.Add(series);
 
 ![](Series_images/rangeseries.png)
 
-###Plot range column chart type with single Y value
+### Plot range column chart type with single Y value
 
 A typical range column chart requires two values, namely high and low, but this feature allows users to plot the range column chart with a single y-value. This is possible when the y-value is considered the delta value for a range column chart and the segments are arranged at the center of the chart area.
 
