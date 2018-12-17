@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark support of the SfChart.
+title: Watermark support of the Syncfusion SfChart.
 description: SfChart watermark support.
 platform: wpf
 control: SfChart
