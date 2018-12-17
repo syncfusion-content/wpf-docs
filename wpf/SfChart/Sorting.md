@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting support in SfChart.
+title: Sorting support in Syncfusion SfChart.
 description: Sorting support in SfChart.
 platform: wpf
 control: SfChart
@@ -25,7 +25,7 @@ This [`SortBy`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.
 
 The following example illustrates a simple chart (without apply sorting):
 
-![](sorting_chart_images/sorting_1.png)
+![Axis without sorting in WPF Chart](sorting_chart_images/sorting_1.png)
 
 
 ## Sorting for category(non-linear) axis
@@ -72,7 +72,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](sorting_chart_images/sorting_2.png)
+![Axis with sorting in WPF Chart](sorting_chart_images/sorting_2.png)
 
 
 **Sorting x axis in descending order**:
@@ -118,7 +118,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](sorting_chart_images/sorting_3.png)
+![Sorting x-axis in descending order in WPF Chart](sorting_chart_images/sorting_3.png)
 
 
 **Sorting y axis in ascending order**:
@@ -165,7 +165,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](sorting_chart_images/sorting_4.png)
+![Sorting y-axis in ascending order in WPF Chart](sorting_chart_images/sorting_4.png)
 
 
 **Sorting y axis in descending order**:
@@ -212,7 +212,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](sorting_chart_images/sorting_5.png)
+![Sorting y-axis in descending order in WPF Chart](sorting_chart_images/sorting_5.png)
 
 N> This feature is primarily applicable for indexed (non-linear) axis like CategoryAxis. For linear axis like NumericalAxis, only the order of rendering will be sorted. i.e., the order in which the data point is being rendered.
 
@@ -225,7 +225,7 @@ This will be useful especially when we have one or more values added in same dat
 
 The following example illustrates a simple chart having AutumnBrights palette (without apply sorting):
 
-![](sorting_chart_images/linearaxis_nosort.png)
+![Axis with sorting in WPF Chart](sorting_chart_images/linearaxis_nosort.png)
 
 **Sorting x axis in ascending order**
 
@@ -272,7 +272,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](sorting_chart_images/linearaxis_sort1.png)
+![Sorting x-axis in ascending order in WPF Chart](sorting_chart_images/linearaxis_sort1.png)
 
 **Sorting x axis in descending order**
 
@@ -321,7 +321,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](sorting_chart_images/linearaxis_sort2.png)
+![Sorting x-axis in descending order in WPF Chart](sorting_chart_images/linearaxis_sort2.png)
 
 **Sorting y axis in ascending order**
 
@@ -369,7 +369,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](sorting_chart_images/linearaxis_sort3.png)
+![Sorting y axis in ascending order in WPF Chart](sorting_chart_images/linearaxis_sort3.png)
 
 **Sorting y axis in descending order**
 
@@ -417,6 +417,6 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](sorting_chart_images/linearaxis_sort4.png)
+![Sorting y-axis in descending order in WPF Chart](sorting_chart_images/linearaxis_sort4.png)
 
 
