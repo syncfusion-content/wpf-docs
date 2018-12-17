@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale Breaks
+title: Syncfusion Scale Breaks
 description: Scale Breaks support for SfChart
 platform: wpf
 control: SfChart
