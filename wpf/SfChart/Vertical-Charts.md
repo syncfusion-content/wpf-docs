@@ -62,7 +62,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Vertical-Charts_images/VerticalCharts_1.png)
+![Opposed position support in WPF Chart](Vertical-Charts_images/VerticalCharts_1.png)
 
 
 ## IsTransposed
@@ -100,7 +100,7 @@ LineSeries series = new LineSeries()
 
 {% endtabs %}
 
-![](Vertical-Charts_images/VerticalCharts_2.png)
+![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_2.png)
 
 
 The following example demonstrates the vertical charts.
@@ -276,6 +276,6 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Vertical-Charts_images/VerticalCharts_3.png)
+![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_3.png)
 
 

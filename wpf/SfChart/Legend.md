@@ -35,12 +35,12 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![](Legend_images/legend_overview.png)
+![Legend support in WPF Chart](Legend_images/legend_overview.png)
 
 
 Each legend composed of the following parts:
 
-![](Legend_images/legend_overview_1.png)
+![Legend support in WPF Chart](Legend_images/legend_overview_1.png)
 
 
 ## Legend Icon
@@ -93,7 +93,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![](Legend_images/legendicon_1.png)
+![Legend icon in WPF Chart](Legend_images/legendicon_1.png)
 
 
 The following properties are used to customize the legend icons.
@@ -170,7 +170,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendicon_2.png)
+![Legend icon in WPF Chart](Legend_images/legendicon_2.png)
 
 
 The visibility of the legend icon can be changed by setting [`IconVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html) property in ChartLegend. 
@@ -207,7 +207,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendicon_3.png)
+![Legend icon in WPF Chart](Legend_images/legendicon_3.png)
 
 
 **Custom** **Legend** **Icon**
@@ -273,7 +273,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Legend_images/legendicon_4.png)
+![Customizing legend icons in WPF Chart](Legend_images/legendicon_4.png)
 
 
 ## Label
@@ -321,7 +321,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![](Legend_images/label_1.png)
+![Labels for legend in WPF Chart](Legend_images/label_1.png)
 
 
 ## Checkbox 
@@ -355,12 +355,12 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/chkbox_1.png)
+![CheckBox support for legend in WPF Chart](Legend_images/chkbox_1.png)
 
 
 The series can be collapsed by unchecking the CheckBox as below:
 
-![](Legend_images/chkbox_2.png)
+![CheckBox support for legend in WPF Chart](Legend_images/chkbox_2.png)
 
 
 ## ToggleSeriesVisibility 
@@ -397,12 +397,12 @@ chart.Legend = new ChartLegend()
 
 The [`series`](https://help.syncfusion.com/wpf/sfchart/series) can be collapsed, by clicking on the respective legend item,
 
-![](Legend_images/Toggling_1.png)
+![ToggleSeriesVisibility support for legend in WPF Chart](Legend_images/Toggling_1.png)
 
 
 We can also view the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its disabled legend item,
 
-![](Legend_images/Toggling_2.png)
+![ToggleSeriesVisibility support for legend in WPF Chart](Legend_images/Toggling_2.png)
 
 
 ## Positioning the Legend
@@ -437,7 +437,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendpos_1.png)
+![Positioning the legend in WPF Chart](Legend_images/legendpos_1.png)
 
 
 **Docking**
@@ -472,7 +472,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendpos_2.png)
+![Positioning the legend in WPF Chart](Legend_images/legendpos_2.png)
 
 
 **Floating** **Legends**
@@ -510,7 +510,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendpos_3.png)
+![Positioning the legend in WPF Chart](Legend_images/legendpos_3.png)
 
 
 ## Legend Header
@@ -568,7 +568,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![](Legend_images/legendpos_4.png)
+![Header for legend in WPF Chart](Legend_images/legendpos_4.png)
 
 
 ## Multiple Legends
@@ -675,7 +675,7 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![](Legend_images/mullegends.png)
+![Multiple legends support in WPF Chart](Legend_images/mullegends.png)
 
 
 ## Legends for Accumulation Series
@@ -721,7 +721,7 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![](Legend_images/legend_pie.png)
+![Legends for accumulation series in WPF Chart](Legend_images/legend_pie.png)
 
 
 N> Here Legend ‘Label’ will be the x value of the Pie chart.
@@ -804,7 +804,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](Legend_images/seriesvisibile.png)
+![Series visibility of legend in WPF Chart](Legend_images/seriesvisibile.png)
 
 
 ## Legend Orientation
@@ -836,7 +836,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendorientation.png)
+![Legend orientation support in WPF Chart](Legend_images/legendorientation.png)
 
 
 ## Customization
@@ -941,7 +941,7 @@ public class ImageConverter:IValueConverter
 
 {% endtabs %}
 
-![](Legend_images/customization_1.png)
+![Template support for legend in WPF Chart](Legend_images/customization_1.png)
 
 
 **Customizing** **Legend** **Items** **Layout**
@@ -989,6 +989,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/customization_2.png)
+![Customizing legend items layout in WPF Chart](Legend_images/customization_2.png)
 
 
