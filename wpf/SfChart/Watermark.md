@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark support of the SfChart.
+title: Watermark support of the Syncfusion SfChart.
 description: SfChart watermark support.
 platform: wpf
 control: SfChart
@@ -73,7 +73,7 @@ chart.Watermark.Content = new TextBlock()
 
 {% endtabs %}
 
-![](Watermark_images/Watermark_1.png)
+![Text watermark support in WPF Chart](Watermark_images/Watermark_1.png)
 
 ## Adding image watermark
 
@@ -127,6 +127,6 @@ chart.Watermark.Content = new Image()
 
 {% endtabs %}
 
-![](Watermark_images/Watermark_2.png)
+![Image watermark support in WPF Chart](Watermark_images/Watermark_2.png)
 
 

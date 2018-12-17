@@ -244,7 +244,7 @@ YBindingPath="NoOfUsers">
 {% endhighlight %}
 The following screenshot illustrates the result of the above code sample:
 
-![](3D-Charts_images/3D-Charts_img1.png)
+![Chart 3D support in WPF](3D-Charts_images/Charts-3D_img1.png)
 
 
 
@@ -461,7 +461,7 @@ public class UsersViewModel
 
 The following image illustrates the result of the above code sample:
 
-![](3D-Charts_images/3D-Charts_img2.png)
+![Series types in WPF 3D Chart](3D-Charts_images/Charts-3D_img2.png)
 
 
 
@@ -549,7 +549,7 @@ The following code example illustrates how to set the selection brush for indivi
 {% endhighlight %}
 The following screenshot illustrates the result of the above code example.
 
-![](3D-Charts_images/3D-Charts_img3.png)
+![Segment selection support in WPF 3D Chart](3D-Charts_images/Charts-3D_img3.png)
 
 
 
@@ -614,7 +614,7 @@ HighlightOnSelection="True"/>
 
 The following screenshot is an example of a SfChart3D with series selection.
 
-![](3D-Charts_images/3D-Charts_img4.png)
+![Series selection support in WPF 3D Chart](3D-Charts_images/Charts-3D_img4.png)
 
 
 
@@ -682,7 +682,7 @@ YBindingPath="NoOfUsers">
 {% endhighlight %}
 The following image illustrates the result of the above code sample:
 
-![](3D-Charts_images/3D-Charts_img5.png)
+![Dynamic explode support in WPF 3D Chart](3D-Charts_images/Charts-3D_img5.png)
 
 
 
