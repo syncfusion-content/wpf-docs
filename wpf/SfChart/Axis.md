@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis and its types. 
+title: Syncfusion Axis and its types. 
 description: Axis behavior and its types.
 platform: wpf
 control: SfChart
