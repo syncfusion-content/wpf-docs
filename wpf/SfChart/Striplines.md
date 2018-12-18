@@ -56,7 +56,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_1.png)
+![Positioning the striplines in WPF Chart](Striplines_images/stripline_1.png)
 
 
 ### Position based on device coordinates
@@ -110,7 +110,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_2.png)
+![Positioning the striplines based on device coordinates in WPF Chart](Striplines_images/stripline_2.png)
 
 
 ## Label 
@@ -174,7 +174,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_3.png)
+![Label for striplines in WPF Chart](Striplines_images/stripline_3.png)
 
 
 ### Rotating the label
@@ -232,7 +232,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_4.png)
+![Stripline label rotation in WPF Chart](Striplines_images/stripline_4.png)
 
 
 N> Here, Start and Width of the stripline as adjusted based on the rotation angle. Stripline won’t adjust its range based on the stripline angle.
@@ -316,7 +316,7 @@ chart.PrimaryAxis.StripLines.Add(stripline);
 
 {% endtabs %}
 
-![](Striplines_images/stripline_5.png)
+![Template support for striplines label in WPF Chart](Striplines_images/stripline_5.png)
 
 
 ## Multiple Striplines
@@ -410,7 +410,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_6.png)
+![Multiple striplines in WPF Chart](Striplines_images/stripline_6.png)
 
 
 If you want to repeat the same type of stripline at regular intervals, SfChart provides two properties[`RepeatEvery`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~RepeatEvery.html#) and [`RepeatUntil`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~RepeatUntil.html#).
@@ -477,7 +477,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_7.png)
+![Stripline re-occurence in WPF Chart](Striplines_images/stripline_7.png)
 
 
 ## Segmented Stripline
@@ -607,7 +607,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_8.png)
+![Segmented striplines in WPF Chart](Striplines_images/stripline_8.png)
 
 
 ## Customization
@@ -666,7 +666,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_9.png)
+![Customization of striplines in WPF Chart](Striplines_images/stripline_9.png)
 
 
 ### Transparency 
@@ -757,6 +757,6 @@ chart.Watermark.Content = textBlock;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_10.png)
+![Transparency of striplines in WPF Chart](Striplines_images/stripline_10.png)
 
 

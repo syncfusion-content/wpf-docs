@@ -52,7 +52,7 @@ chart.Palette = ChartColorPalette.Metro;
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_1.png)
+![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_1.png)
 
 
 The following code example defined Palette as BlueChrome.
@@ -73,7 +73,7 @@ chart.Palette = ChartColorPalette.BlueChrome;
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_2.png)
+![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_2.png)
 
 
 ### Applying Palette to Segment
@@ -112,7 +112,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_3.png)
+![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_3.png)
 
 The following code example defined Palette as **AutumnBrights**.
 
@@ -148,7 +148,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_4.png)
+![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_4.png)
 
 
 N> Metro palette is the default palette for both Series and Segment.
@@ -214,7 +214,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_5.png)
+![Custom palette in WPF Chart](Styling-and-Customization_images/palette_5.png)
 
 
 You can define the custom palette for series as in the below code example:
@@ -265,7 +265,7 @@ chart.ColorModel = colorModel;
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_6.png)
+![Custom palette in WPF Chart](Styling-and-Customization_images/palette_6.png)
 
 
 ## SegmentColorPath
@@ -296,7 +296,7 @@ ColumnSeries series = new ColumnSeries()
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/segmentcolor.png)
+![SegmentColorPath in WPF Chart](Styling-and-Customization_images/segmentcolor.png)
 
 N> SegmentColorPath property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType is Area).
 
@@ -388,7 +388,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_7.png)
+![Customizing legend in WPF Chart](Styling-and-Customization_images/palette_7.png)
 
 
 If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details.
@@ -516,7 +516,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_8.png)
+![Customizing tooltip in WPF Chart](Styling-and-Customization_images/palette_8.png)
 
 
 ## Customize Series
@@ -627,6 +627,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Styling-and-Customization_images/palette_9.png)
+![Customizing series in WPF Chart](Styling-and-Customization_images/palette_9.png)
 
 
+    

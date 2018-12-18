@@ -49,7 +49,7 @@ Following steps demonstrates creating a simple PDF viewer application in WPF:
 1. After installing the Syncfusion Essential Studio in your machine, create a new WPF application in Visual Studio.
 2. Open the Visual Studio tool box. Navigate to “Syncfusion WPF Toolbox” tab and drag the `PdfViewerControl` toolbox item to the Designer window, it automatically adds the required references to the current application.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![Getting started](Getting-Started_images/Getting-Started_img3.png)
 
     PDF viewer control in toolbox
     {:.caption}
@@ -67,7 +67,7 @@ Following steps demonstrates creating a simple PDF viewer application in WPF:
 
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-		xmlns: Syncfusion ="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF" 
+		xmlns:Syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF" 
 
 		x:Class="GettingStartedWPF.MainWindow"
 

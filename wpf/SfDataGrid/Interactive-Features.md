@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive feature of SfDataGrid.
-description: Interactive feature of SfDataGrid | SfDataGrid | ContextMenu | Column chooser | Drag and Drop
+title: Interactive Features | WPF DataGrid | Syncfusion
+description: Interactive feature of DataGrid | DataGrid | ContextMenu | Column chooser | Drag and Drop
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -154,7 +154,7 @@ this.dataGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Delete" });
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img1.png)
+![Context menu added for data rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img1.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -221,7 +221,7 @@ this.dataGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "BestFit" })
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img2.png)
+![Context menu added for header row in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img2.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
@@ -282,7 +282,7 @@ this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuItem() { Header = "Clea
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img3.png)
+![Context menu added for GroupDropArea in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img3.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GroupDropAreaContextMenuInfo`. 
@@ -347,7 +347,7 @@ this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuItem() { Header = "Clea
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img4.png)
+![Context menu added for GroupDropItem in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img4.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
@@ -404,7 +404,7 @@ this.dataGrid.GroupCaptionContextMenu.Items.Add(new MenuItem() { Header = "Colla
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img5.png)
+![Context menu added for group caption rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img5.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -459,7 +459,7 @@ this.dataGrid.GroupSummaryContextMenu.Items.Add(new MenuItem() { Header = "Clear
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img6.png)
+![Context menu added for group summary rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img6.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -524,7 +524,7 @@ this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuItem() { Header = "Sum" 
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img7.png)
+![Context menu added for table summary rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img7.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
@@ -628,7 +628,7 @@ void dataGrid_GridContextMenuOpening(object sender, GridContextMenuEventArgs e)
 {% endhighlight %}
 {% endtabs %}
        
-![](Interactive-Features_images/InteractiveFeatures_img8.png)
+![Context menu changed for record cell while opening in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img8.png)
 
 
 #### Changing background to the ContextMenu
@@ -653,14 +653,14 @@ You can change the appearance of the context menu by customizing the style with 
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img9.png)
+![Context menu background changed in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img9.png)
 
 
 ## ColumnChooser
 
 SfDataGrid allows you to show and hide the Columns from the view at runtime via drag and drop using ColumnChooser. You can enable a column chooser in an application by creating an instance for GridColumnChooserController and assign to SfDataGrid.GridColumnDragDropController.
 
-While dropping columns in ColumnChooser window, the particular column will hided by setting GridColumn.IsHidden as true.
+While dropping columns in ColumnChooser window, the particular column will be hidden by setting GridColumn.IsHidden as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -685,7 +685,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img10.png)
+![Opening column chooser in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img10.png)
 
 ### Custom ColumnChooser
 
@@ -867,7 +867,7 @@ viewModel.ShowColumnChooser = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img12.png)
+![Customized column chooser in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img12.png)
 
 
 ### Appearance Customization
@@ -895,7 +895,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img12.png)
+![Customized column chooser appearance in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img12.png)
 
 
 ## RowHeader
@@ -918,7 +918,7 @@ dataGrid.ShowRowHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img13.png)
+![Row header enabled in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img13.png)
 
 
 You can change the default width of the RowHeader by using [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RowHeaderWidth.html) property.
@@ -968,7 +968,7 @@ You can display the corresponding row index in each RowHeader, by customizing th
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img14.png)
+![Row index displayed in row header cell of wpf datagrid](Interactive-Features_images/InteractiveFeatures_img14.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF-13678149272112665828.zip).
@@ -1022,7 +1022,7 @@ You can change the CurrentRowIndicator in the RowHeader by customizing the contr
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img15.png)
+![Current row indicator changed in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img15.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
@@ -1074,7 +1074,7 @@ public class CustomConverter:IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img16.png)
+![Background of row header changed in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img16.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).

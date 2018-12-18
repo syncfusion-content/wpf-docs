@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview | <SfHubTilex:Name="hubTile" | wpf | Syncfusion
+title: Overview | SfHubTile | WPf | Syncfusion
 description: overview
-platform: wpf
-control: HubTile
+platform: WPF
+control: SfHubTile
 documentation: ug
 ---
 
@@ -17,6 +17,6 @@ The HubTile control provides live updates and notifications similar to Windows 8
 * Pulsing Tile – The control zooms in and out and translates the content across the x- and y- axis.
 * Freezing – A hub tile can be frozen.
 
-![](Overview_images/Overview_img1.png)
+![SfHubTile image](Overview_images/Overview_img1.png)
 
 

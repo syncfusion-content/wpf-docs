@@ -109,7 +109,7 @@ We can navigate to different URL irrespective of the URI clicked in the PDF view
 // Hooks the event handler for `HyperlinkClicked` event.    
 pdfViewerControl.HyperlinkClicked += PdfViewerControl_HyperlinkClicked;
 
-public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs e)
+public void PdfViewerControl_HyperlinkClicked(object sender, AnnotEventArgs args)
 {
   
  //Returns the URI clicked in the PDF viewer control.

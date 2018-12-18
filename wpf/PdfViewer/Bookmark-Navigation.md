@@ -15,11 +15,10 @@ PDF Viewer control allows users to navigate to the bookmarks present in the load
 
 1.	Open the bookmarks contained PDF document to enable the bookmark button in `PdfViewerControl`.
 2.	Clicking on the bookmark button from the left pane, will list the bookmarks present in the PDF document.
-
-![Bookmark Button](Bookmark_Navigation_images/Bookmark_Navigation_images2.png)
-
 3.	To jump to a specific section, click its name in the bookmark pane.
-4.	If the bookmark has some children, you can explore them by clicking on the “+” button to the left of it.  
+4.	If the bookmark has some children, you can explore them by clicking on the “+” button to the left of it.
+
+![Bookmark Button](Bookmark_Navigation_images/Bookmark_Navigation_images2.png)  
 
 ## Programmatically navigate to a bookmark destination
 

@@ -11,9 +11,10 @@ documentation: ug
 
 PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog opens upon triggering the Print button.
 
-![](Concept-and-Features_images/Concept-and-Features_img1.png)
+![PrintDialog Window Image](Concept-and-Features_images/Concept-and-Features_img1.png)
 
-
+N> 
+* PdfDocumentView is used to view the PDF documents without the toolbar. So, make use of PdfViewerControl to print the document using Print button in the toolbar.
 
 ## Silent Printing
 
@@ -22,25 +23,16 @@ The [PrintDocument](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf
 {% tabs %}
 {% highlight c# %}
 
-PrintDialog dialog = new PrintDialog();
+PrintDialog dialog = new PrintDialog();
+dialog.PrintDocument(pdfViewerControl.PrintDocument.DocumentPaginator, "Essential PDF Viewer");
 
-dialog.AllowPrintToFile = true;         
-
-dialog.Document = viewer.PrintDocument;
-
-dialog.Document.Print();
 {% endhighlight %}
 
 
 {% highlight vbnet %}
 
-Dim dialog As New PrintDialog()
-
-dialog.AllowPrintToFile = True
-
-dialog.Document = viewer.PrintDocument
-
-dialog.Document.Print()
+Dim dialog As New PrintDialog()
+dialog.PrintDocument(pdfViewerControl.PrintDocument.DocumentPaginator, "Essential PDF Viewer")
 
 {% endhighlight %}
 {% endtabs %}
