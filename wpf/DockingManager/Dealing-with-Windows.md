@@ -1134,6 +1134,30 @@ DockingManager.SetDocumentTabItemContextMenuItems(DockingManager1, collection);
 
 ![](Dealing-with-Windows_images/Dealing-with-Windows_img24.jpeg)
 
+### CustomMenuItem as Separator
+
+`IsSeparator` property of CustomMenuItem is used to display the Separator between CustomMenuItems. If the property `IsSeparator` is true, the CustomMenuItem will act as Separator.The default value of the property is false.
+
+{% tabs %}
+{% highlight C# %}
+<syncfusion:DockingManager Grid.Row="1" DockFill="True"  Name="Docking">
+            <syncfusion:DockingManager.CustomMenuItems>
+                <syncfusion:CustomMenuItemCollection>
+                    <syncfusion:CustomMenuItem Header="Custom1"/>
+                    <syncfusion:CustomMenuItem Header="Custom2"/>
+                    <syncfusion:CustomMenuItem BorderBrush="Red" IsSeparator="True"/>
+                    <syncfusion:CustomMenuItem Header="Custom4"/>
+                </syncfusion:CustomMenuItemCollection>
+            </syncfusion:DockingManager.CustomMenuItems>
+            <ContentControl x:Name="Dock1" syncfusion:DockingManager.Header="Dock1"/>
+            <ContentControl syncfusion:DockingManager.Header="Dock2" syncfusion:DockingManager.SideInDockedMode="Tabbed" syncfusion:DockingManager.TargetNameInDockedMode="Dock1"/>
+            <ContentControl syncfusion:DockingManager.Header="Dock3" syncfusion:DockingManager.State="Dock"/>
+            <ContentControl syncfusion:DockingManager.Header="Dock4" syncfusion:DockingManager.State="Dock"/>
+        </syncfusion:DockingManager>
+{% endhighlight %}
+{% endtabs %}
+
+![Displaying Separator between CustomMenuItems](Dealing-with-Windows_images/Dealing-with-Windows_img29.png)
 
 ### Customizing ContextMenuItems Visibility
 
