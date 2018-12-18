@@ -112,7 +112,7 @@ The following keyboard shortcuts are supported for cursor navigation in Syntax E
 <table>
 <tr>
 <td>
-<b> Selection Shortcut Keys </b> <br/><br/></td><td>
+<b> Navigation Shortcut Keys </b> <br/><br/></td><td>
 <b> Description </b> <br/><br/></td></tr>
 <tr>
 <td>
