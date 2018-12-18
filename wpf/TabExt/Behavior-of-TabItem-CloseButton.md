@@ -7,7 +7,7 @@ control: TabControlExt
 documentation: ug
 ---
 
-# Behavior of TabItem CloseButton
+# Behavior of CloseButton
 
 ## Restrict TabItem closing through closing event
 
