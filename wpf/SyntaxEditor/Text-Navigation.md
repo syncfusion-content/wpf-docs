@@ -23,11 +23,13 @@ The following functions enables text navigation in the Syntax Editor in terms of
 <b>Description</b><br/><br/></td></tr>
 <tr>
 <td>
-MoveToPreviousIndex<br/><br/></td><td>
+
+[MoveToPreviousIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousIndex.html)<br/><br/></td><td>
 Moves the cursor to a position backward in current line item.<br/><br/></td></tr>
 <tr>
 <td>
-MoveToNextIndex<br/><br/></td><td>
+
+[MoveToNextIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextIndex.html)<br/><br/></td><td>
 Moves the cursor to a position forward in current line item.<br/><br/></td></tr>
 </table>
 
@@ -50,11 +52,13 @@ The following functions enables text navigation in the Syntax Editor in terms of
 <b>Description</b><br/><br/></td></tr>
 <tr>
 <td>
-MoveToNextWord<br/><br/></td><td>
+
+[MoveToNextWord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextWord.html)<br/><br/></td><td>
 Moves the cursor to the start position of the next word.<br/><br/></td></tr>
 <tr>
 <td>
-MoveToPreviousWord<br/><br/></td><td>
+
+[MoveToPreviousWord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousWord.html)<br/><br/></td><td>
 Moves the cursor to the start position of the previous word.<br/><br/></td></tr>
 </table>
 
@@ -77,19 +81,26 @@ The following functions enables text navigation in the Syntax Editor in terms of
 <b>Description</b><br/><br/></td></tr>
 <tr>
 <td>
-MoveToNextLine<br/><br/></td><td>
+
+
+[MoveToNextLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextLine.html)<br/><br/></td><td>
+
 Moves the cursor to the same position on the next line item.<br/><br/></td></tr>
 <tr>
 <td>
-MoveToPreviousLine<br/><br/></td><td>
+
+[MoveToPreviousLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousLine.html) <br/><br/></td><td>
+
 Moves the cursor to the same position on the previous line item.<br/><br/></td></tr>
 <tr>
 <td>
-MoveToLineStart<br/><br/></td><td>
+
+[MoveToLineStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineStart.html)<br/><br/></td><td>
 Moves the cursor to a start position of current line item.<br/><br/></td></tr>
 <tr>
 <td>
-MoveToLineEnd<br/><br/></td><td>
+
+[MoveToLineEnd](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineEnd.html)<br/><br/></td><td>
 Moves the cursor to an end position of current line item.<br/><br/></td></tr>
 </table>
 
