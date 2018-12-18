@@ -7,9 +7,9 @@ control: TabControlExt
 documentation: ug
 ---
 
-# Restricting Tab Item Closing
+# Behavior of TabItem CloseButton
 
-## TabItem closing event
+## Restrict TabItem closing through closing event
 
 The closure of TabItem can now be restricted by setting e.Cancel to true in OnCloseButtonClick delegate. “e” represents the event argument CloseTabEventArgs for OnCloseButtonClick event. The default value of e.Cancel is false.
 
