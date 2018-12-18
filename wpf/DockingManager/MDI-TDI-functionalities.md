@@ -43,7 +43,7 @@ DockingManager.SetState(Document2, DockState.Document);
 
 {% endtabs %}
 
-![setting document state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
+![Displays Document tab item in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
 
 To make the document child window as MDI document, set the `ContainerMode` as `MDI`
 
@@ -71,7 +71,7 @@ SyncDockingManager.ContainerMode = DocumentContainerMode.MDI;
 
 {% endtabs %}
 
-![setting mode programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img2.jpeg)
+![Document Items are rendered is MDI state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img2.jpeg)
 
 
 ## Setting MDI Window state
@@ -96,7 +96,7 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized)
 
 {% endtabs %}
 
-![setting mdi window state programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img3.jpeg)
+![MDI window is rendered in minimized state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img3.jpeg)
 
 
 
@@ -208,7 +208,7 @@ DockingManager1.SwitchMode =SwitchMode.Immediate
 
 {% endtabs %}
 
-![setting switch mode as Immediate programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img4.jpeg)
+![SwitchMode of DockingManager is set as Immediate, so the MDI windows are activated while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img4.jpeg)
 
 
 ### List – Switch the MDI document windows in list format.
@@ -230,7 +230,7 @@ DockingManager1.SwitchMode =SwitchMode.List
 
 {% endtabs %}
 
-![setting switch mode as List programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img5.jpeg)
+![SwitchMode of DockingManager is set as List, so the header of MDI windows are listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img5.jpeg)
 
 
 ### QuickTabs
@@ -252,7 +252,7 @@ DockingManager1.SwitchMode =SwitchMode.QuickTabs
 
 {% endtabs %}
 
-![setting switch mode as QuickTabs programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img6.jpeg)
+![SwitchMode of DockingManager is set as QuickTabs, so the MDI windows are listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img6.jpeg)
 
 
 ### VistaFlip
@@ -274,7 +274,7 @@ DockingManager1.SwitchMode =SwitchMode.VistaFlip
 
 {% endtabs %}
 
-![setting switch mode as VistaFlip programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img7.jpeg)
+![SwitchMode of DockingManager is set as VistaFlip, so the active MDI window is brought into view while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img7.jpeg)
 
 
 ### VS2005
@@ -296,7 +296,7 @@ DockingManager1.SwitchMode =SwitchMode.VS2005
 
 {% endtabs %}
 
-![setting switch mode as VS2005 programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img8.jpeg)
+![SwitchMode of DockingManager is set as VS2005, Selected MDI window and the header of MDI windows andare listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img8.jpeg)
 
 
 ## Setting MDI Layout
@@ -327,7 +327,7 @@ End Sub
 
 {% endtabs %}
 
-![setting MDI layout as horizontal programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img9.jpeg)
+![MDI windows are arranged horizontally](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img9.jpeg)
 
 
  `Vertical` – Arranges the MDI windows vertically.
@@ -353,7 +353,7 @@ End Sub
 
 {% endtabs %}
 
-![setting MDI layout as vertical programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img10.jpeg)
+![MDI windows are arranged vertically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img10.jpeg)
 
 
 `Cascade` - Arranges the layout in a cascade manner.
@@ -379,7 +379,7 @@ End Sub
 
 {% endtabs %}
 
-![Arranges the layout in a cascade manner](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img11.jpeg)
+![MDI windows are arranged vertically in cascade layout](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img11.jpeg)
 
 
 
@@ -409,7 +409,7 @@ DockingManager.SetCanClose(Content1, false);
 
 {% endtabs %}
 
-![Set CanClose as false](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img12.jpeg)
+![Closebutton of the MDI window is disaled when CanClose proeprty is false](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img12.jpeg)
 
 
 ## Indexing an Item in TDI
@@ -448,7 +448,7 @@ TDILayoutPanel.SetTDIIndex(Content1,0)
 
 {% endtabs %}
 
-![Set TDI index programmatically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img13.jpeg)
+!["Document1" is arranged at zeroth based on the TDIIndex value](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img13.jpeg)
 
 
 ## Drag / Drop support in TDI
@@ -522,7 +522,7 @@ DockingManager.SetShowCloseAllButThisMenuItem(Item2, false);
 
 {% endtabs %}
 
-![Setting close menu item visibility](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img14.jpeg)
+![MenuItems which are related to Close functionlities are collapsed](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img14.jpeg)
 
 
 ## Creating Document Tab Group
@@ -575,12 +575,12 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateHorizontalTabGrou
 
 ### Adding Tab in a Group 
 
-In TDI document, new tab group can be created by dragging the TabItem into the Document area and click the "New Tab Group" menu item from context menu item.
+In TDI document, new tab group can be created by dragging the tab item into the Document area and click the "New Tab Group" menu item from context menu item.
 
-![Inserting a tab into new group using ContextMenu](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img15.jpeg)
+![ContextMenu is displayed with "New Tab Group" and "Cancel" items, when the Documenttab item is dragged and dropped](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img15.jpeg)
 
 
-![TabItem is inserted to new group](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
+![Using the ContextMenu, "Item1" has been inserted to Next Tab group](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
 
 ## TabGroup creation through mouse interaction 
 
@@ -610,9 +610,9 @@ Moving document items to a docked state can be restricted by setting the TabSwit
 
 The following screenshot shows a tab group being created at the top of the document area.
 
-![New tab group is creating through drag providers](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
+!["Item 2" Dock window is dragged and dropping into existing tab group through drag providers to create new Tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
 
-![New tab group has been created](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
+!["Item 2" Dock window is now Documented in New tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
 
 ### ActiveToolWindows mode
 
@@ -638,15 +638,15 @@ Dock items can be moved to both docked and document states in the document area 
 
 The following screenshot shows moving an item to a docked state at the right side of the document area.
 
-![Dock window creation using right drag provider](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
+!["Item 1" document window is moving to Dock state using outer Drag Providers](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
 
-![Dock window is created using right drag provider](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
+!["Item 1" is moved to Dock state](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
 
 The following screenshot shows moving an item to the document state at the right side of the document area.
 
-![Document window creation using right drag provider](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
+!["Item 1" dock window is moving to Document state using inner Drag Providers](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
 
-![Document window created using right drag provider](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
+!["Item 1" is moved to Document state ](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
 
 N> These functionalities will take effect only when the `IsVs2010DraggingEnabled` property of DockingManager is true.
 
@@ -696,7 +696,7 @@ SyncDockingManager.IsVS2010DraggingEnabled = true;
 
 {% endtabs %}
 
-![Document tab is floated by dragging the window](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img17.jpeg)
+!["Document 1" window is floated by dragging the document window](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img17.jpeg)
 
 
 ## TDI Header Renaming Support
@@ -743,7 +743,7 @@ SyncDockingManager.HideTDIHeaderOnSingleChild = true;
 
 {% endtabs %}
 
-![TDI item is hidden when there is only one child to the docking manager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img18.jpeg)
+![document tab item is hidden when there is only one child to the docking manager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img18.jpeg)
 
 
 ## Add New button in Header Panel
@@ -779,15 +779,15 @@ End If
 {% endtabs %}
 
 
-![New Button feature](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img19.jpeg)
+!["Add New Tab" button is displaying in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img19.jpeg)
 
-## Pin and Unpin TabItems support in DockingManager
+## Pin and Unpin tab items
 
-The following section explains the Pin and Unpin TDI items support in DockingManager.
+The following section explains the Pin and Unpin tab items in DockingManager.
 
-### Enabling Pin and Unpin support
+### Enabling/disabling pinning behavior 
 
-`AllowPin` attached property of DocumentContainer decides whether the TDI item is pinnable or not. The corresponding tab item will be pinned only if the property `AllowPin` is true. When the property is false, Pin and Unpin behavior of TDI Item will be disabled. The default value of the `AllowPin` property is false.
+[AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) attached property of DocumentContainer decides whether the document tab item is pinnable or not. The corresponding tab item will be pinned only if the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true. When the property is false, Pin and Unpin behavior of document tab item will be disabled. The default value of the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) property is false.
 
 {% tabs %}
 
@@ -843,9 +843,9 @@ The following section explains the Pin and Unpin TDI items support in DockingMan
 
 ### Pin and Unpin tab items using PinButton
 
-#### Display PinButton in TDI item
+#### Display PinButton in header panel of document tab
 
-PinButton will be visible in the TDI items only if the property `ShowPin` is true. The default value of the property is false, so the PinButton will be collapsed in the TDI item.
+PinButton will be visible in the document tabs only if the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true. The default value of the property is false, so the PinButton will be collapsed from the header panel of the document tab item.
 
 {% tabs %}
 
@@ -902,20 +902,20 @@ PinButton will be visible in the TDI items only if the property `ShowPin` is tru
 
 ![Displaying PinButton to specific items](MDI_TDIfunctionalities_images\MDI_TDI_Pin_functionality_image1.png)
 
-If the property `AllowPin` is true, PinButton will be enabled and visible. If the property `ShowPin` is true and `AllowPin` is false, PinButton will be displayed as disabled button. 
+If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true, PinButton will be enabled and visible. If the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true and [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is false, PinButton will be displayed as disabled button. 
 
 
 #### Functionality of PinButton
 
-When the pin button of the TDI item is visible, the corresponding TDI item can be pinned or unpinned from the Tabcontrol. When the corresponding TDI item is pinned, it will be inserted at first position of the TDI items collection(if the pinned tab item collection has zero count. Otherwise, the pinned tab item will be added to the existing collection). When the TDI item is unpinned, it will be removed from the pinned tab item collection and added to the first position of the unpinned tab item collection.
+When the pin button of the document tab item is visible, the corresponding document tab item can be pinned or unpinned from the DockingManager. When the corresponding document tab item is pinned, it will be inserted at first position of the document tab items collection(if the pinned tab item collection has zero count. Otherwise, the pinned tab item will be added to the existing collection). When the document tab item is unpinned, it will be removed from the pinned tab item collection and added to the first position of the unpinned tab item collection.
 
 ### Pin and Unpin the tab items programmatically
 
-TDI items can be pinned or unpinned from the DocumentContainer using `IsPinned` attached property of DocumentContainer. If the property `IsPinned` is set to true, the corresponding item will be added to respective index. Also,if the property `IsPinned` is set as false, the tab item will be removed from pinned collection and added to unpinned tab item collection. The default value of the property is False.
+document tab items can be pinned or unpinned from the DocumentContainer using [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) attached property of DocumentContainer. If the property [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) is set to true, the corresponding item will be added to respective index. Also,if the property [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) is set as false, the tab item will be removed from pinned collection and added to unpinned tab item collection. The default value of the property is False.
 
 ### Pin and Unpin tab items through ContextMenu
 
-Pin or Unpin operations can be done through TDI item's ContextMenu also. If the property `AllowPin` is true and the TDI item is not pinned "Pin Tab" option will be visible. If the TDI item is pinned already, "Unpin Tab" will be visible. 
+Pin or Unpin operations can be done through document tab item's ContextMenu also. If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true and the document tab item is not pinned "Pin Tab" option will be visible. If the document tab item is pinned already, "Unpin Tab" will be visible. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -1003,9 +1003,10 @@ Pin or Unpin operations can be done through TDI item's ContextMenu also. If the 
             </syncfusion:DocumentContainer>
 {% endhighlight %}
 {% endtabs %}
+
 The following images illustrates the same,
 
-![Displaying option to pin the TabItemExt](MDI_TDIfunctionalities_images\MDI_TDI_Pin_functionality_image2.png)
+![Displays option in ContextMenu to pin the tab itemExt](MDI_TDIfunctionalities_images\MDI_TDI_Pin_functionality_image2.png)
 
-![Displaying option to Unpin the TabItemExt](MDI_TDIfunctionalities_images\MDI_TDI_Pin_functionality_image3.png)
+![Displays option in ContextMenu to Unpin the tab itemExt](MDI_TDIfunctionalities_images\MDI_TDI_Pin_functionality_image3.png)
 

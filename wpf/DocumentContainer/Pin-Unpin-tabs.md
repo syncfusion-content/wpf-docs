@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Pin and Unpin the TabItems in the Syncfusion DocumentContainer
-description: Explains about pinning and unpinning behavior of TabItems in the DocumentContainer of WPF
+title: Pin and Unpin the tab items in the Syncfusion DocumentContainer
+description: Explains about pinning and unpinning behavior of tab items in the DocumentContainer of WPF
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
-# Pin and Unpin TabItems support in DocumentContainer
+# Pin and Unpin tab items
 
-The following section explains the Pin and Unpin TDI items support in DocumentContainer.
+The following section explains the Pin and Unpin tab items support in DocumentContainer.
 
-## Enabling Pin and Unpin support
+## Enabling/disabling pinning behavior
 
-`AllowPin` attached property of DocumentContainer decides whether the TDI item is pinnable or not. The corresponding tab item will be pinned only if the property `AllowPin` is true. When the property is false, Pin and Unpin behavior of TDI Item will be disabled. The default value of the `AllowPin` property is false.
+[AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) attached property of DocumentContainer decides whether the tab item is pinnable or not. The corresponding tab item will be pinned only if the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true. When the property is false, Pin and Unpin behavior of tab item will be disabled. The default value of the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) property is false.
 
 {% tabs %}
 
@@ -107,9 +107,9 @@ The following section explains the Pin and Unpin TDI items support in DocumentCo
 
 ## Pin and Unpin tab items using PinButton
 
-### Display PinButton in TDI item
+### Display PinButton in tab item
 
-PinButton will be visible in the TDI items only if the property `ShowPin` is true. The default value of the property is false, so the PinButton will be collapsed in the TDI item.
+PinButton will be visible in the tab items only if the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true. The default value of the property is false, so the PinButton will be collapsed in the tab item.
 
 {% tabs %}
 
@@ -202,22 +202,22 @@ PinButton will be visible in the TDI items only if the property `ShowPin` is tru
 
 {% endtabs %}
 
-![Displaying PinButton to specific items](Pin-and-Unpin-TabItems-support-in-DocumentContainer-images\Pin-and-Unpin-TabItems-support-in-DocumentContainer-images1.png)
+![Displaying PinButton to specific items](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images1.png)
 
-If the property `AllowPin` is true, PinButton will be enabled and visible. If the property `ShowPin` is true and `AllowPin` is false, PinButton will be displayed as disabled button. 
+If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true, PinButton will be enabled and visible. If the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true and [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is false, PinButton will be displayed as disabled button. 
 
 
 ### Functionality of PinButton
 
-When the pin button of the TDI item is visible, the corresponding TDI item can be pinned or unpinned from the Tabcontrol. When the corresponding TDI item is pinned, it will be inserted at first position of the TDI items collection(if the pinned tab item collection has zero count. Otherwise, the pinned tab item will be added to the existing collection). When the TDI item is unpinned, it will be removed from the pinned tab item collection and added to the first position of the unpinned tab item collection.
+When the pin button of the tab item is visible, the corresponding tab item can be pinned or unpinned from the Tabcontrol. When the corresponding tab item is pinned, it will be inserted at first position of the tab items collection(if the pinned tab item collection has zero count. Otherwise, the pinned tab item will be added to the existing collection). When the tab item is unpinned, it will be removed from the pinned tab item collection and added to the first position of the unpinned tab item collection.
 
 ## Pin and Unpin the tab items programmatically
 
-TDI items can be pinned or unpinned from the DocumentContainer using `IsPinned` attached property of DocumentContainer. If the property `IsPinned` is set to true, the corresponding item will be added to respective index. Also,if the property `IsPinned` is set as false, the tab item will be removed from pinned collection and added to unpinned tab item collection. The default value of the property is False.
+tab items can be pinned or unpinned from the DocumentContainer using [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) attached property of DocumentContainer. If the property [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) is set to true, the corresponding item will be added to respective index. Also,if the property [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) is set as false, the tab item will be removed from pinned collection and added to unpinned tab item collection. The default value of the property is False.
 
 ## Pin and Unpin tab items through ContextMenu
 
-Pin or Unpin operations can be done through TDI item's ContextMenu also. If the property `AllowPin` is true and the TDI item is not pinned "Pin Tab" option will be visible. If the TDI item is pinned already, "Unpin Tab" will be visible. 
+Pin or Unpin operations can be done through tab item's ContextMenu also. If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true and the tab item is not pinned "Pin Tab" option will be visible. If the tab item is pinned already, "Unpin Tab" will be visible. 
 
 <syncfusion:DocumentContainer  
                 Name="DocContainer"
@@ -304,6 +304,6 @@ Pin or Unpin operations can be done through TDI item's ContextMenu also. If the 
 
 The following images illustrates the same,
 
-![Displaying option to pin the TabItemExt](Pin-and-Unpin-TabItems-support-in-DocumentContainer-images\Pin-and-Unpin-TabItems-support-in-DocumentContainer-images2.png)
+![Displaying option to pin the tab itemExt](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images2.png)
 
-![Displaying option to Unpin the TabItemExt](Pin-and-Unpin-TabItems-support-in-DocumentContainer-images\Pin-and-Unpin-TabItems-support-in-DocumentContainer-images3.png)
+![Displaying option to Unpin the tab itemExt](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images3.png)
