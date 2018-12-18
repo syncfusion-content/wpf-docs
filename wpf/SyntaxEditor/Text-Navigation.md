@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Navigation in Syncfusion EditControl
+title: Text Navigation in Syncfusion Syntax Editor
 description: Explains about Text Navigation support in Edit Control for WPF
 platform: wpf
 control: Syntax Editor
@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Text Navigation
 
-SyntaxEditor offers extensive support for text navigation. User can perform navigation between characters, words, and line items using built-in functions or using Keyboard shortcut keys. This section briefly explains navigation of text in the SyntaxEditor.
+Syntax Editor offers extensive support for text navigation. User can perform navigation between characters, words, and line items using built-in functions or using Keyboard shortcut keys. This section briefly explains navigation of text in the Syntax Editor.
 
 ## Programmatic Navigation:
 
 ### Character based navigation:
 
-The following functions enables text navigation in the EditControl in terms of characters or columns.
+The following functions enables text navigation in the Syntax Editor in terms of characters or columns.
 
 <table>
 <tr>
@@ -41,7 +41,7 @@ this.editControl.MoveToNextIndex();
 
 ### Word based navigation
 
-The following functions enables text navigation in the EditControl in terms of words.
+The following functions enables text navigation in the Syntax Editor in terms of words.
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ this.editControl.MoveToPreviousWord();
 
 ### Line based navigation
 
-The following functions enables text navigation in the EditControl in terms of lines.
+The following functions enables text navigation in the Syntax Editor in terms of lines.
 
 <table>
 <tr>
@@ -107,7 +107,7 @@ this.editControl.MoveToLineEnd();
 
 ## Keyboard Navigation
 
-The following keyboard shortcuts are supported for cursor navigation in SyntaxEditor.
+The following keyboard shortcuts are supported for cursor navigation in Syntax Editor.
 
 <table>
 <tr>
