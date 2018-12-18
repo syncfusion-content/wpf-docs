@@ -39,10 +39,10 @@ To set the MDI window state to "minimized", use the below code snippet. FlowDocu
 
 {% endhighlight %}
 
-![](Setting-Window-State_images/Setting-Window-State_img1.jpeg)
+![MDI window is Maximized](Setting-Window-State_images/Setting-Window-State_img1.jpeg)
 
 
-## StateChaning Event of MDIWindow
+## StateChanging Event of MDIWindow
 
 `MDIWindowStateChanging` event occurs before the State of the MDIWindow gets changed. State changing of MDIWindow can be handled by setting e.Cancel as true.
 
