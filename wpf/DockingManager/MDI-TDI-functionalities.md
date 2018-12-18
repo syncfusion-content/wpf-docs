@@ -610,9 +610,9 @@ Moving document items to a docked state can be restricted by setting the TabSwit
 
 The following screenshot shows a tab group being created at the top of the document area.
 
-!["Item 2" Dock window is dragged and dropping into existing tab group through drag providers to create new Tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
+![Second Item Dock window is dragged and dropping into existing tab group through drag providers to create new Tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
 
-!["Item 2" Dock window is now Documented in New tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
+![Second Item Dock window is now Documented in New tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
 
 ### ActiveToolWindows mode
 
@@ -638,15 +638,15 @@ Dock items can be moved to both docked and document states in the document area 
 
 The following screenshot shows moving an item to a docked state at the right side of the document area.
 
-!["Item 1" document window is moving to Dock state using outer Drag Providers](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
+![First Item document window is moving to Dock state using outer Drag Providers](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
 
-!["Item 1" is moved to Dock state](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
+![First Item is moved to Dock state](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
 
 The following screenshot shows moving an item to the document state at the right side of the document area.
 
-!["Item 1" dock window is moving to Document state using inner Drag Providers](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
+![First Item dock window is moving to Document state using inner Drag Providers](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
 
-!["Item 1" is moved to Document state ](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
+![First Item is moved to Document state ](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
 
 N> These functionalities will take effect only when the `IsVs2010DraggingEnabled` property of DockingManager is true.
 
@@ -696,7 +696,7 @@ SyncDockingManager.IsVS2010DraggingEnabled = true;
 
 {% endtabs %}
 
-!["Document 1" window is floated by dragging the document window](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img17.jpeg)
+![First Document window is floated by dragging the document window](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img17.jpeg)
 
 
 ## TDI Header Renaming Support
@@ -743,7 +743,7 @@ SyncDockingManager.HideTDIHeaderOnSingleChild = true;
 
 {% endtabs %}
 
-![document tab item is hidden when there is only one child to the docking manager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img18.jpeg)
+![Document tab item is hidden when there is only one child to the docking manager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img18.jpeg)
 
 
 ## Add New button in Header Panel
@@ -779,7 +779,7 @@ End If
 {% endtabs %}
 
 
-!["Add New Tab" button is displaying in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img19.jpeg)
+![Add New Tab button is displaying in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img19.jpeg)
 
 ## Pin and Unpin tab items
 
