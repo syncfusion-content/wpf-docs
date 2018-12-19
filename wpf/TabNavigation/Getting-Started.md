@@ -201,3 +201,6 @@ namespace TabNavigationSample
 		public static readonly DependencyProperty MyCollectionProperty = DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
 	}
 }
+{% endhighlight %}
+{% endtabs %}
+
