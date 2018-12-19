@@ -1270,9 +1270,8 @@ DockingManager1.ClientControl = new TextBlock() { Text = "ClientControl", Width 
 
 
 ## DockingManager as FlatLayoutControl
-
-`EnableFlatLayout` property of DockingManager is used to disable all the docking functionalities such as Drag and Drop functionality in Document windows, Resizing the child elements, Hiding the dock panel options, closing the child elements from the view and floating the dock windows. If the property `EnableFlatLayout` is true, the DockingManager control will act as LayoutControl. The default value of the property is false. 
-
+ 
+The [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~EnableFlatLayout.html) property of DockingManager is used to disable all the docking functionalities such as drag-and-drop functionality in document windows, resizing the child elements, hiding the dock panel options, closing the child elements from view, and floating the dock windows. If the [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~EnableFlatLayout.html) property is true, the DockingManager control will act as LayoutControl. The default value of this property is false. 
 {% tabs %}
 
 {% highlight XAML %}
