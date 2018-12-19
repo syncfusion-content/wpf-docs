@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Text Navigation
 
-Syntax Editor offers extensive support for text navigation. User can perform navigation between characters, words, and line items using built-in functions or using Keyboard shortcut keys. This section briefly explains navigation of text in the Syntax Editor.
+Syntax Editor offers extensive support to text navigation. Users can perform navigation between characters, words, and line items using the built-in functions or keyboard shortcut keys. This section briefly explains navigation of text in the Syntax Editor.
 
 ## Programmatic Navigation:
 
@@ -20,7 +20,7 @@ The following functions enables text navigation in the Syntax Editor in terms of
 <tr>
 <td>
 <b>Functions</b><br/><br/></td><td>
-<b>Description</b><br/><br/></td></tr>
+<b>Descriptions</b><br/><br/></td></tr>
 <tr>
 <td>
 
@@ -49,7 +49,7 @@ The following functions enables text navigation in the Syntax Editor in terms of
 <tr>
 <td>
 <b>Functions</b><br/><br/></td><td>
-<b>Description</b><br/><br/></td></tr>
+<b>Descriptions</b><br/><br/></td></tr>
 <tr>
 <td>
 
@@ -78,7 +78,7 @@ The following functions enables text navigation in the Syntax Editor in terms of
 <tr>
 <td>
 <b>Functions</b><br/><br/></td><td>
-<b>Description</b><br/><br/></td></tr>
+<b>Descriptions</b><br/><br/></td></tr>
 <tr>
 <td>
 
@@ -96,12 +96,12 @@ Moves the cursor to the same position on the previous line item.<br/><br/></td><
 <td>
 
 [MoveToLineStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineStart.html)<br/><br/></td><td>
-Moves the cursor to a start position of current line item.<br/><br/></td></tr>
+Moves the cursor to the start position of the current line item.<br/><br/></td></tr>
 <tr>
 <td>
 
 [MoveToLineEnd](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineEnd.html)<br/><br/></td><td>
-Moves the cursor to an end position of current line item.<br/><br/></td></tr>
+Moves the cursor to the end position of the current line item.<br/><br/></td></tr>
 </table>
 
 {% highlight C# %}
@@ -124,15 +124,15 @@ The following keyboard shortcuts are supported for cursor navigation in Syntax E
 <tr>
 <td>
 <b> Navigation Shortcut Keys </b> <br/><br/></td><td>
-<b> Description </b> <br/><br/></td></tr>
+<b> Descriptions </b> <br/><br/></td></tr>
 <tr>
 <td>
 Right arrow<br/><br/><br/><br/></td><td>
-Moves the cursor to a position forward in current line item.<br/><br/></td></tr>
+Moves the cursor to a position forward in the current line item.<br/><br/></td></tr>
 <tr>
 <td>
 Left arrow<br/><br/><br/><br/></td><td>
-Moves the cursor to an end position of current line item.<br/><br/></td></tr>
+Moves the cursor to the end position of the current line item.<br/><br/></td></tr>
 <tr>
 <td>
 Down arrow<br/><br/><br/><br/></td><td>
@@ -144,11 +144,11 @@ Moves the cursor to the same position on the previous line item.<br/><br/></td><
 <tr>
 <td>
 Home<br/><br/><br/><br/></td><td>
-Moves the cursor to a start position of current line item <br/><br/></td></tr>
+Moves the cursor to the start position of the current line item.<br/><br/></td></tr>
 <tr>
 <td>
 End<br/><br/><br/><br/></td><td>
-Moves the cursor to an end position of current line item <br/><br/></td></tr>
+Moves the cursor to the end position of the current line item. <br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + Right arrow<br/><br/></td><td>
@@ -164,5 +164,5 @@ Moves the cursor to the document start position.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Ctrl + End<br/><br/><br/><br/></td><td>
-Moves the cursor to the document end position.<br/><br/></td></tr>
+Moves the cursor to the end position of document. <br/><br/></td></tr>
 </table>
