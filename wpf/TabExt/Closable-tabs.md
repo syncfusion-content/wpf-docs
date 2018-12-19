@@ -96,7 +96,7 @@ stackPanel.Children.Add(tabControlExt);
 ![Display close button in both TabItem and TabPanel](Closable-tabs-images/Closable-tabs-images3.jpeg)
 
 
-## Show/Hide the close button for speicfic TabItem
+## Show/Hide the close button for specific TabItem
 
 The visibility of the TabItem's CloseButton is handled using the [CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property. The [CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) is effective only when the `CloseButtonType` property of TabControlExt is set to one among individual, extended, or both.
 
