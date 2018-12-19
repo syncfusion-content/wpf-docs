@@ -78,7 +78,7 @@ public MainWindow()
 2. Build the application and launch the .exe file from the bin folder.          
 3. Create a Coded UI Test Project as shown in the following screenshot.               							
 
-   ![](UIAutomation_images/UIAutomation_img1.png)
+   ![Coded UI Test Project](UIAutomation_images/UIAutomation_img1.png)
 
 
 
@@ -86,7 +86,7 @@ public MainWindow()
    {:.caption}
 4. After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
 
-   ![](UIAutomation_images/UIAutomation_img2.png)
+   ![Generate Code dialog box](UIAutomation_images/UIAutomation_img2.png)
 
 
 
@@ -96,7 +96,7 @@ public MainWindow()
 
 
 
-   ![](UIAutomation_images/UIAutomation_img3.png)
+   ![CodedUITestBuilder](UIAutomation_images/UIAutomation_img3.png)
 
 
 
@@ -104,7 +104,7 @@ public MainWindow()
    {:.caption}
 6. You can also open the CodedUITestBuilder from existing Coded UI project by right clicking on the CodedUITestMethod1 in CUIT file and clicking the Generate Code For Coded UI Test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom right corner of the window.
 
-   ![](UIAutomation_images/UIAutomation_img4.png)
+   ![CodedUITestBuilder with Coded UI project by right clicking](UIAutomation_images/UIAutomation_img4.png)
 
 
 
@@ -115,7 +115,7 @@ public MainWindow()
 
 
 
-   ![](UIAutomation_images/UIAutomation_img5.png)
+   ![Record button on the CodedUITest builder](UIAutomation_images/UIAutomation_img5.png)
 
 
 
@@ -149,7 +149,7 @@ public void RecordedMethod1()
 
 10. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
 
-    ![](UIAutomation_images/UIAutomation_img6.png)
+    ![modified cell value](UIAutomation_images/UIAutomation_img6.png)
 
 
 
@@ -157,7 +157,7 @@ public void RecordedMethod1()
     {:.caption}
 11. After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
 
-    ![](UIAutomation_images/UIAutomation_img7.png)
+    ![Test method and click Run Tests ](UIAutomation_images/UIAutomation_img7.png)
 
 
 
