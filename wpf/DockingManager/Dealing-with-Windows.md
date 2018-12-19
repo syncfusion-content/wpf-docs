@@ -1136,7 +1136,7 @@ DockingManager.SetDocumentTabItemContextMenuItems(DockingManager1, collection);
 
 ### CustomMenuItem as Separator
 
-[IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem~IsSeparator.html) property of CustomMenuItem is used to display the Separator between CustomMenuItems. If the property [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem~IsSeparator.html) is true, the CustomMenuItem will act as Separator.The default value of the property is false.
+The [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem~IsSeparator.html) property of CustomMenuItem is used to display separator between CustomMenuItems. If the property [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem~IsSeparator.html) is set to true, the CustomMenuItem will act as Separator.The default value of this property is false.
 
 {% tabs %}
 {% highlight C# %}
