@@ -38,7 +38,7 @@ Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
 </tr>
 </table>
 
-SfGridExtension assembly must be placed into the following directory based on your visual studio version.
+SfGridExtension assembly must be placed into the following directory based on your Visual Studio version.
 For Visual Studio 2010: 
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages
 
@@ -133,7 +133,7 @@ public void RecordedMethod1()
     #region Variable Declarations
     WpfText uIHardingText = this.UIWpfWindow.UITreeGridRowControlCustom.UITreeGridCellCustom.UIHardingText;
     WpfEdit uIItemEdit = this.UIWpfWindow.UITreeGridRowControlCustom.UITreeGridCellCustom.UIItemEdit;
-    WpfText uIJeffedarsonText = this.UIWpfWindow.UITreeGridRowControlCustom1.UITreeGridCellCustom.UIJeffersonText;
+    WpfText uIJeffersonText = this.UIWpfWindow.UITreeGridRowControlCustom1.UITreeGridCellCustom.UIJeffersonText;
    #endregion
     // Double-Click 'Harding' label
     Mouse.DoubleClick(uIHardingText, new Point(75, 5));
