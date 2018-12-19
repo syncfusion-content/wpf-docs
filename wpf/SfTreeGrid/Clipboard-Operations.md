@@ -361,7 +361,7 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-## Paste a record into selected rows
+### Paste a record into selected rows
 
 By default, you can able to copy one row and paste it into another row in treegrid. The below code shows how to copy one row and paste it into all selected rows by overriding the [PasteRow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste~PasteRow.html) method in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
 
@@ -403,7 +403,7 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
 {% endhighlight %}
 {% endtabs %}
 
-## Select pasted records
+### Select pasted records
 
 By default, after pasting the clipboard value to treegrid, the selection is maintaining in previously selected records as it is. The below code shows select the pasted records after the Paste operation, by overriding the  [PasteToRow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste~PasteRow.html) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
 
@@ -426,7 +426,7 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
 {% endhighlight %}
 {% endtabs %}
 
-## Create new records while pasting
+### Create new records while pasting
 
 By default, while paste the clipboard value to treegrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in treegrid by overriding the [PasteRows](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste~PasteRows.html# "") method in [TreeGridCutCopyPaste ](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
 
@@ -475,7 +475,7 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
 {% endhighlight %}
 {% endtabs %}
 
-## How to paste the data by custom column order
+### How to paste the data by custom column order
 
 The data can be pasted only from the first column, by default. Now, you can paste the copied data anywhere in the grid by deriving a new class from [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) and overriding the [PasteRow ](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste~PasteRow.html) virtual method.
 
@@ -513,7 +513,7 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
 {% endhighlight %}
 {% endtabs %}
 
-## How to copy the column and paste it as a new column
+### How to copy the column and paste it as a new column
 
 You can copy the column and paste in to new position by using the context menu option in treegrid.
 
