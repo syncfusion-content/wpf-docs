@@ -9,554 +9,992 @@ documentation: ug
 
 # Interactive Features
 
-## Tooltip
+## Context Menu
 
-Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of the SfTreeGrid.
+SfTreeGrid provides an entirely customizable menu to expose the functionality on user interface. You can create context menus for different rows in an efficient manner.
 
-### Record cell tooltip
-
-You can enable tooltip for the TreeGridCell by setting the [SfTreeGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html) property to `true`.
+The below code example shows the context menu with command bindings.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTreeGrid Name="treeGrid" 
-                        AutoExpandMode="RootNodesExpanded"
-                        AutoGenerateColumns="False"
-                        ShowToolTip="True"
-                        ChildPropertyName="Children"    ItemsSource="{Binding EmployeeDetails}">	
+<ContextMenu Style="{x:Null}">
+    <MenuItem Command="{Binding Copy, Source={StaticResource viewModel}}"
+          CommandParameter="{Binding}" Header="Copy">
+    </MenuItem>
+</ContextMenu>
 
+{% endhighlight %}
 {% endhighlight %}
 {% highlight c# %}
 
-this.treeGrid.ShowToolTip = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-You can enable the tooltip of a particular column by setting the [TreeGridColumn.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowToolTip.html) property to `true`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowToolTip="True" />
-<syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" ShowToolTip="True" />	
-
-{% endhighlight %}
-{% highlight c# %}
-
-this.treeGrid.Columns["FirstName"].ShowToolTip = true;
-this.treeGrid.Columns["LastName"].ShowToolTip = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-N> It has higher priority than [SfTreeGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html).
-
-![](Interactive-Features_images/InteractiveFeatures_img1.png)
-
-### Header tooltip
-
-You can enable the tooltip of a header cell by setting the [TreeGridColumn.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowHeaderToolTip.html) property to `true`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfTreeGrid.Columns>
-    <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowHeaderToolTip="True" />
-</syncfusion:SfTreeGrid.Columns>
-
-{% endhighlight %}
-{% highlight c# %}
-
-this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Interactive-Features_images/InteractiveFeatures_img2.png)
-
-### Tooltip customization
-
-You can change appearance of the tooltip by customizing the style with TargetType as ToolTip.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window.Resources>        
-    <Style TargetType="ToolTip">
-        <Setter Property="BorderThickness" Value="1,1,1,1" />
-        <Setter Property="BorderBrush" Value="Red" />
-        <Setter Property="Background" Value="SkyBlue" />
-    </Style>
-</Window.Resources>
-
-<syncfusion:SfTreeGrid.Columns>
-    <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" ShowToolTip="True" />
-</syncfusion:SfTreeGrid.Columns>
-	
-{% endhighlight %}
-{% endtabs %}
-
-![](Interactive-Features_images/InteractiveFeatures_img3.png)
-
-You can customize the template of the tooltip by using the [TreeGridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html) and [TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) properties. 
-
-#### Customize the tooltip using ToolTipTemplate
-
-You can customize appearance of the tooltip of a particular column by setting the `TreeGridColumn.ToolTipTemplate`. You can also customize appearance of the header tooltip of a particular column by using the [TreeGridColumn.HeaderToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderToolTipTemplate.html) property.
-
-The ToolTipTemplate receives the underlying data object as DataContext by default. You can set the [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundToolTip.html) to `true` to change the DataContext of the tooltip template where it sets the DataContext as DataContextHelper. The [TreeGridDataContextHelper](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html) has the following properties to reuse the same template for all the columns: 
-
- <ul>  
- <li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Record.html"><b>Record:</b></a> Gets the underlying data record of a row which has the cell.  </li>
- <li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Value.html"><b>Value:</b></a> Gets the underlying value of a cell. </li> 
- </ul>
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window.Resources>
-    <local:StringToImageConverter x:Key="ImageConverter" />
-    <DataTemplate x:Key="TemplateToolTip">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Image Height="100" Width="100" Source="{Binding LastName,Converter={StaticResource ImageConverter}}" />
-            <TextBlock Grid.Row="1" Text="{Binding LastName}" HorizontalAlignment="Center"/>
-        </Grid>
-    </DataTemplate>
-</Window.Resources>
-
-<syncfusion:SfTreeGrid.Columns>    
-    <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" ToolTipTemplate="{StaticResource TemplateToolTip}" ShowToolTip="True" />
-</syncfusion:SfTreeGrid.Columns>
-
-{% endhighlight %}
-{% highlight c# %}
-
-public class StringToImageConverter : IValueConverter
+public class BaseCommand : ICommand
 {
-    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+
+    #region Fields
+    readonly Action<object> _execute;
+    readonly Predicate<object> _canExecute;
+    #endregion
+
+    #region Constructors
+    /// <summary>
+    /// Creates a new command that can always execute.
+    /// </summary>
+    /// <param name="execute">The execution logic.</param>
+
+    public BaseCommand(Action<object> execute)
+        : this(execute, null)
     {
-        string imagename = value.ToString();
-        return @"..\..\Assets\" + imagename + @".png";
     }
-
-    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-    {
-        return value;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Interactive-Features_images/InteractiveFeatures_img4.png)
-
-You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo-1415306479.zip).
-
-#### Customize the ToolTip with ToolTipTemplateSelector
-
-Different tooltip templates can be loaded conditionally in same column based on the data by setting the [TreeGridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) property. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window.Resources>
-    <DataTemplate x:Key="ToolTip1">
-        <Grid>                
-            <TextBlock Text="{Binding Record.Id}" FontWeight="Bold" Foreground="Red" />
-        </Grid>
-    </DataTemplate>
-    <DataTemplate x:Key="ToolTip2">
-        <Grid>
-            <TextBlock Text="{Binding Record.Id}" FontWeight="Bold" Foreground="Green"/>                
-        </Grid>
-    </DataTemplate>      
-</Window.Resources>
-
-<syncfusion:SfTreeGrid.Columns>
-    <syncfusion:TreeGridTextColumn HeaderText="Person ID" MappingName="Id" ShowToolTip="True" >
-        <syncfusion:TreeGridTextColumn.ToolTipTemplateSelector>
-            <syncfusion:TreeGridTextColumn HeaderText="Person ID" MappingName="Id" 
-                                               DisplayBinding="{Binding Path=Id, StringFormat=c}"
-                                               ShowToolTip="True" SetCellBoundToolTip="True" >
-        </syncfusion:TreeGridTextColumn.ToolTipTemplateSelector>
-    </syncfusion:TreeGridTextColumn>
-</syncfusion:SfTreeGrid.Columns>
-
-{% endhighlight %}
-{% highlight c# %}
-
-public class ToolTipTemplateSelector : DataTemplateSelector
-{
-    private DataTemplate _defaultTemplate;
 
     /// <summary>
-    /// Gets or sets DefaultTemplate.
+    /// Creates a new command.
     /// </summary>
-    public DataTemplate DefaultTemplate
+    /// <param name="execute">The execution logic.</param>
+    /// <param name="canExecute">The execution status logic.</param>
+
+    public BaseCommand(Action<object> execute, Predicate<object> canExecute)
     {
-        get { return _defaultTemplate; }
-        set { _defaultTemplate = value; }
+
+        if (execute == null)
+        throw new ArgumentNullException("execute");
+        _execute = execute;
+        _canExecute = canExecute;
+    }
+    #endregion
+    
+    #region ICommand Members
+
+    public bool CanExecute(object parameter)
+    {
+        return _canExecute == null ? true : _canExecute(parameter);
+    }
+    
+    public event EventHandler CanExecuteChanged
+    {
+        add { CommandManager.RequerySuggested += value; }
+        remove { CommandManager.RequerySuggested -= value; }
     }
 
-    private DataTemplate _alternateTemplate;
-
-    /// <summary>
-    /// Gets or Sets AlternateTemplate.
-    /// </summary>
-    public DataTemplate AlternateTemplate
+    public void Execute(object parameter)
     {
-        get { return _alternateTemplate; }
-        set { _alternateTemplate = value; }
+        _execute(parameter);
     }
+    
+    #endregion
+}
 
-    public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
+public class EmployeeInfoViewModel : INotifyPropertyChanged
+{
+
+    public EmployeeInfoViewModel()
     {
-        var treeGridData = item as TreeGridDataContextHelper;
-        if (treeGridData == null)
-            return this.DefaultTemplate;
-        // To see what template needs to be select according to the specified property value.
-        if ((treeGridData.Record as Employee).Id == (int)treeGridData.Value && ((int)treeGridData.Value % 2) == 0)
-            return this.AlternateTemplate;
-        else
-            return this.DefaultTemplate;
+        CopyCommand = new ContextMenuDemo.BaseCommand(ShowMessage);
+    }
+    
+    private ICommand copyCommand
+
+    public ICommand CopyCommand
+    {
+        get
+        {
+            return copyCommand;
+        }
+        set
+        {
+            copyCommand = value;
+        }
+    }
+    
+    public void ShowMessage(object obj)
+    {
+
+        if (obj is GridRecordContextMenuInfo)
+        {
+            var grid = (obj as GridRecordContextMenuInfo).DataGrid;
+            grid.GridCopyPaste.Copy();
+        }
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-The following image shows the DefaultTemplate applied through ToolTipTemplateSelector.
+### ContextMenu based on rows
 
-![](Interactive-Features_images/InteractiveFeatures_img5.png)
+You can set different context menu for SfTreeGrid based on rows. 
 
-The following image shows the AlternateTemplate applied through ToolTipTemplateSelector.
+#### ContextMenu for Nodes
 
-![](Interactive-Features_images/InteractiveFeatures_img6.png)
+  You can set the context menu for the data rows by using [SfTreeGrid.RecordContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RecordContextMenu.html) property.
+  
+{% tabs %}
+{% highlight xaml %}
 
-You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo1909534526.zip).
+<syncfusion:SfTreeGrid.RecordContextMenu>
+  <ContextMenu>
+     <MenuItem x:Name="Cut" Header="Cut" />
+     <MenuItem x:Name="Copy" Header="Copy"  />
+     <MenuItem x:Name="Paste" Header="Paste" />
+     <MenuItem x:Name="Delete" Header="Delete" />
+  </ContextMenu>
+</syncfusion:SfTreeGrid.RecordContextMenu>
 
-### Events
+{% endhighlight %}
+{% highlight c# %}
 
-### CellToolTipOpening event
+this.treeGrid.RecordContextMenu = new ContextMenu();
+this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Cut" });
+this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Copy" });
+this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Paste" });
 
-The [CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellToolTipOpening_EV.html) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [TreeGridCellToolTipOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
+{% endhighlight %}
+{% endtabs %}
 
-<ul>
-<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html">Column:</a> Gets the hovered cell column in the SfTreeGrid.</li>
-<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs~Node.html">Node:</a> Gets the hovered cell node.</li>
-<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Record.html">Record:</a> Gets the data context of hovered cell.</li>
-<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~RowColumnIndex.html">RowColumnIndex:</a> Gets the row and column index of the hovered cell.</li>
-<li> <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~ToolTip.html">ToolTip:</a> Gets the tooltip of the hovered cells.</li>
-</ul>
+![](ContextMenu_images/ContextMenu_img1.png)
+
+While binding the menu item using CommandBinding you can get the command parameter as TreeGridNodeContextMenuInfo which contains the node of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeGrid Name="treeGrid"  
-                        AutoExpandMode="RootNodesExpanded" 
-                        CellToolTipOpening="TreeGrid_CellToolTipOpening"
-                        AutoGenerateColumns="False"
-                        ChildPropertyName="Children"
-                        ColumnSizer="Star"
-                        ExpanderColumn="Id"
-                        ItemsSource="{Binding PersonDetails}">
+
+<syncfusion:SfTreeGrid.RecordContextMenu>
+<MenuItem Command="{Binding Copy, Source={StaticResource viewModel}}"              CommandParameter="{Binding}"
+              Header="Copy">
+    </MenuItem>
+</syncfusion:SfTreeGrid.RecordContextMenu>
+
 {% endhighlight %}
 {% highlight c# %}
-this.treeGrid.CellToolTipOpening += TreeGrid_CellToolTipOpening;
 
-private void TreeGrid_CellToolTipOpening(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs e)
-{
-           
-}
+private static void OnCopyClicked(object obj)
+        {
+            var contextMenuInfo = obj as TreeGridNodeContextMenuInfo;
+            if (contextMenuInfo == null)
+                return;
+            var grid = contextMenuInfo.TreeGrid;
+            grid.GridCopyOption = GridCopyOption.CopyData;
+            grid.TreeGridCopyPaste.Copy();
+        }
+
 {% endhighlight %}
 {% endtabs %}
+
+#### ContextMenu for Header
+
+You can set the context menu for the header by using [SfTreeGrid.HeaderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderContextMenu.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid.HeaderContextMenu>
+    <ContextMenu>
+        <MenuItem x:Name=" SortAscending " Header="SortAscending" />
+        <MenuItem x:Name=" SortDescending " Header="SortDescending" />
+        <MenuItem x:Name=" ClearSorting " Header="ClearSorting" />
+        <MenuItem x:Name=" ClearFiltering " Header="ClearFiltering" />
+    </ContextMenu>
+</syncfusion:SfTreeGrid.HeaderContextMenu>
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.HeaderContextMenu = new ContextMenu();
+this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "SortAscending" });
+this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "SortDescending" });
+this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearSorting" });
+this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearFiltering " });
+
+{% endhighlight %}
+{% endtabs %}
+
+![](ContextMenu_images/ContextMenu_img2.png)
+
+While binding the menu item using CommandBinding you can get the parameter as TreeGridColumnContextMenuInfo which contains the particular GridColumn.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid.HeaderContextMenu>
+    <MenuItem Command="{Binding Source={x:Static <MenuItem Command="{Binding SortAscending, Source={StaticResource viewModel}}"
+              Header="Sort Ascending">
+    </MenuItem>
+</syncfusion:SfTreeGrid.HeaderContextMenu>
+
+{% endhighlight %}
+{% highlight c# %}
+
+  private static void OnSortAscendingClicked(object obj)
+        {
+            var contextMenuInfo = obj as TreeGridColumnContextMenuInfo;
+            if (contextMenuInfo == null)
+                return;
+            var grid = contextMenuInfo.TreeGrid;
+            var column = contextMenuInfo.Column;
+            grid.SortColumnDescriptions.Clear();
+            grid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = column.MappingName, SortDirection = ListSortDirection.Ascending });
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
+### ContextMenu for Expander
+
+You can set the context menu for the header by using [SfTreeGrid.ExpanderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpanderContextMenu.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid.ExpanderContextMenu>
+    <ContextMenu>
+        <MenuItem x:Name=" Expand " Header="SortAscending" />
+        <MenuItem x:Name=" Collapse" Header="Collapse" />
+    </ContextMenu>
+</syncfusion:SfTreeGrid.ExpanderContextMenu>
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.ExpanderContextMenu = new ContextMenu();
+this.treeGrid.ExpanderContextMenu.Items.Add(new MenuItem() { Header = " Expand" });
+this.treeGrid.ExpanderContextMenu.Items.Add(new MenuItem() { Header = "Collapse" });
+
+{% endhighlight %}
+{% endtabs %}
+
+While binding the menu item using CommandBinding you can get the parameter as TreeGridNodeContextMenuInfo which contains the expander node.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid.HeaderContextMenu>
+<MenuItem Command="{Binding Expand, Source={StaticResource viewModel}}"    
+                                  CommandParameter="{Binding}"                                
+ Header="Expand" />    
+</syncfusion:SfTreeGrid.HeaderContextMenu>
+
+{% endhighlight %}
+{% highlight c# %}
+
+  private static void OnExpandClicked(object obj)
+        {
+            var contextMenuInfo = obj as TreeGridNodeContextMenuInfo;
+            if (contextMenuInfo == null)
+                return;
+            var grid = contextMenuInfo.TreeGrid;
+            grid.ExpandNode(contextMenuInfo.TreeNode);
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
+# Events
+
+  [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~TreeGridContextMenuOpening_EV.html) event occurs while opening the context menu in SfTreeGrid. TreeGridContextMenuEventArgs has the following members which provides the information about TreeGridContextMenuOpening event.
+  
+[ContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenu.html) – Gets the corresponding context menu. 
+[ContextMenuInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenuInfo.html) – Returns the context menu info based on the row which opens the context menu.
+[ContextMenuType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenuType.html) –  Returns the type of context menu.
+[RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~RowColumnIndex.html) – RowColumnIndex of the context menu which is currently going to open. RowColumnIndex is updated only for the RecordContextMenu and remains left empty.
+[Handled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHandledEventArgs~Handled.html) - Indicates whether the TreeGridContextMenuOpening event is handled or not.
+
+### Customizing ContextMenus
+
+#### Change the menu item when ContextMenu opening
+
+You can use the TreeGridContextMenuOpening event to change the menu item when the context menu opening. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid.RecordContextMenu>
+    <ContextMenu>
+<MenuItem Command="{Binding Cut, Source={StaticResource viewModel}}"   
+               CommandParameter="{Binding}"
+                  Header="Cut">
+        </MenuItem>
+<MenuItem Command="{Binding Copy, Source={StaticResource viewModel}}"  
+                CommandParameter="{Binding}"
+                  Header="Copy">
+        </MenuItem>
+<MenuItem Command="{Binding Paste, Source={StaticResource viewModel}}" 
+                 CommandParameter="{Binding}"
+        Header="Paste">
+        </MenuItem>
+    </ContextMenu>
+</syncfusion:SfTreeGrid.RecordContextMenu>
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.TreeGridContextMenuOpening += treeGrid_ TreeGridContextMenuOpening;
+
+void dataGrid_ TreeGridContextMenuOpening (object sender, TreeGridContextMenuEventArgs e)
+{
+    e.ContextMenu.Items.Clear();
+
+    if(e.ContextMenuType == ContextMenuType.RecordCell)
+    {
+        e.ContextMenu.Items.Add(new MenuItem() { Header="Record"});
+        e.ContextMenu.Items.Add(new MenuItem() { Header = "Data" });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![](ContextMenu_images/ContextMenu_img3.png)
+
+####  Changing background to ContextMenu
+
+You can change the appearance of the context menu by customizing the style with TargetType as ContextMenu.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Style x:Name="ToolTipStyle" TargetType="ContextMenu">
+    <Setter Property="BorderThickness" Value="1,1,1,1" />
+    <Setter Property="BorderBrush" Value="Red" />
+    <Setter Property="Background" Value="LightGreen" />            
+</Style>
+
+<ContextMenu>
+    <MenuItem x:Name="Cut" Header="Expand />
+    <MenuItem x:Name="Copy" Header="Collapse" />
+</ContextMenu>
+
+{% endhighlight %}
+
+![](ContextMenu_images/ContextMenu_img4.png)
+
 
 ## Row drag-and-drop
 
-SfTreeGrid have built-in support for the row drag-and-drop. You can drag-and-drop the rows in the SfTreeGrid and between two SfTreeGrid controls by setting the [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#) properties to `true`.  It is also possible to drag-and-drop from the SfTreeGrid to any other control. 
+SfTreeGrid allows row drag and drop within and between controls by setting [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://msdn.microsoft.com/en-us/library/system.windows.uielement.allowdrop(v=vs.110).aspx) properties to true. It is also possible to drag and drop between treegrid and other controls like ListView, TreeView. SfTreeGrid allows dropping when `AllowDrop` is true and allows dragging when `AllowDraggingRows` is true.
 
 {% tabs %}
-{% highlight xaml %}
-
+{% highlight xml %}
 <syncfusion:SfTreeGrid Name="sfTreeGrid" 
-					   AllowDraggingRows="True" 
-					   AllowDrop="True" 
-					   ChildPropertyName="ReportsTo" 
-					   ItemsSource="{Binding Employees}">
-
+                               AllowDraggingRows="True" 
+                               AllowDrop="True" 
+                               ChildPropertyName="ReportsTo" 
+                               AutoGenerateColumns="False"                                  
+                               ItemsSource="{Binding Employees}"
+                               ParentPropertyName="ID"
+                               SelfRelationRootValue="-1" />
 {% endhighlight %}
 {% highlight c# %}
- 
 sfTreeGrid.AllowDraggingRows = true;
 sfTreeGrid.AllowDrop = true;
- 
 {% endhighlight %}
 {% endtabs %}
 
-When dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop on the bottom of node, it will be added below the node. If dropping over the node, it will be added as a child of that node.
+![Drag and drop window while dragging in WPF treegrid](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img1.jpeg)
 
-![](Interactive-Features_images/DragandDropDemo.gif)
 
-N> Row drag-and-drop for the SfTreeGrid support is provided from Volume 2 2018 release (v16.2.0.41).
+While dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you dropped node at the bottom of targeted node, it will be added below the targeted node and if you are dropping over the targeted node, it will be added as child of that targeted node.
 
-### Dragging multiple nodes
+![Drap and drop row as child](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img2.jpeg)
 
-The SfTreeGrid allows you to drag multiple selected nodes by setting the SfTreeGrid.SelectionMode as `Multiple` or `Extended`.
+N> Drag indicators will not be shown when drop position is set as “Drop as child”.
 
-![](Interactive-Features_images/InteractiveFeatures_img8.png)
+### Drag multiple nodes
 
-### Drag-and-drop options
+SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) to `Multiple` or `Extended`.
 
-The SfTreeGrid control has the following properties to control the drag-and-drop options manually.
+![Drag and drop multiple rows](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img3.jpeg)
 
-<table>
-<tr>
-<th>
-Properties
-</th>
-<th>
-Description
-</th>
-</tr>
+# Events
 
-<tr>
-<td>
-{{'[SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html)' | markdownify }}
-</td>
-<td>
-Gets or sets whether the end user can drag the nodes or not.
-</td>
-</tr>
+SfTreeGrid triggers the following events during drag and drop.
 
-<tr>
-<td>
-{{'[SfTreeGrid.AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#)' | markdownify }}
-</td>
-<td>
-Gets or sets whether the end user can drop the nodes or not.
-</td>
-</tr>
+### DragStart
 
-<tr>
-<td>
-{{'[SfTreeGrid.RowDragDropTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropTemplate.html)' | markdownify }}
-</td>
-<td>
-Gets or sets the custom row drag pop-up data template.
-</td>
-</tr>
+[DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event occurs when you start to drag the node in treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following member which provides information for `DragStart` event.
 
-<tr>
-<td>
-{{'[SfTreeGrid.RowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html)' | markdownify }}
-</td>
-<td>
-Gets or sets whether the end user can expand the collapsed nodes while dragging or not. 
-</td>
-</tr>
-
-<tr>
-<td>
-{{'[SfTreeGrid.RowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html)' | markdownify }}
-</td>
-<td>
-Gets or sets the time delay for expanding the collapsed nodes while dragging. 
-</td>
-</tr>
-</table>
-
-Events for row drag-and-drop operations are as follows.
-
-<table>
-<tr>
-<th>
-Events
-</th>
-<th>
-Description
-</th>
-</tr>
-
-<tr>
-<td>
-{{'[SfTreeGrid.RowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html)' | markdownify }}
-</td>
-<td>
-Occurs when drag-and-drop operations are started.  
-</td>
-</tr>
-
-<tr>
-<td>
-{{'[SfTreeGrid.RowDragDropController.DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragOver_EV.html)' | markdownify }}
-</td>
-<td>
-Occurs continuously when the node is dragged within the SfTreeGrid's boundary.   
-</td>
-</tr>
-
-<tr>
-<td>
-{{'[SfTreeGrid.RowDragDropController.DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragLeave_EV.html)' | markdownify }}
-</td>
-<td>
-Occurs when the node is dragged out of the SfTreeGrid's boundary. 
-</td>
-</tr>
-
-<tr>
-<td>
-{{'[SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html)' | markdownify }}
-</td>
-<td>
-Occurs when dropping the node within SfTreeGrid.
-</td>
-</tr>
-
-<tr>
-<td>
-{{'[SfTreeGrid.RowDragDropController.Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Dropped_EV.html)' | markdownify }}
-</td>
-<td>
-Occurs when the nodes dropped within the SfTreeGrid. 
-</td>
-</tr>
-
-</table>
-
-### Drag-and-drop between TreeGrids
-
-The SfTreeGrid provides built-in support for drag-and-drop nodes between the SfTreeGrid controls.  
-
-Follow the steps to implement drag-and-drop between the SfTreeGrid controls: 
-
-1. Add the SfTreeGrid controls to your project.
-2. Set the [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.wpf~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) and [AllowDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid_members.html#) properties to `true` to enable drag-and-drop functionalities in both the SfTreeGrid controls.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfTreeGrid Name="sfTreeGrid1" 
-					   AllowDraggingRows="True" 
-					   AllowDrop="True" 
-					   Grid.Column="0" 
-					   ChildPropertyName="ReportsTo" 
-					   ItemsSource="{Binding EmployeesHR}">
-
-<syncfusion:SfTreeGrid Name="sfTreeGrid2" 
-					   AllowDraggingRows="True" 
-					   AllowDrop="True" 
-					   Grid.Column="1" 
-					   ChildPropertyName="ReportsTo" 
-					   ItemsSource="{Binding EmployeesAccounts}">
-
-{% endhighlight %}
-{% endtabs %}
-
-3. Now, you can drag-and-drop nodes between both the SfTreeGrid controls. You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DRAGAN~1-710537123.zip).
-
-### Customizing row drag-and-drop
-
-### Auto expanding the node on drag over
-
-When dragging over the tree node if the drop position is set as `Drop as child`, the SfTreeGrid can auto expand the corresponding tree node by setting the [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html) to `true`. It is also possible to control the delay by expanding the node when dragging over the rows by using the [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html) property. Its default value is 3 sec.
-
+[DraggingNodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs~DraggingNodes.html): Gets the TreeNode which contains the data associated while dragging the rows.
+  
 {% tabs %}
 {% highlight c# %}
-
-treeGrid.RowDragDropController.CanAutoExpand = true;
-treeGrid.RowDragDropController.AutoExpandDelay = new TimeSpan(0, 0, 2);
-					   
-{% endhighlight %}
-{% endtabs %}
-
-### Customizing default drag UI
-
-You can customize the default drag UI by setting the [SfTreeGrid.RowDragDropTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropTemplate.html) to your customized data template. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfTreeGrid Name="sfTreeGrid" 
-					   AllowDraggingRows="True" 
-					   AllowDrop="True" 
-					   ChildPropertyName="ReportsTo" 
-					   ItemsSource="{Binding Employees}" 
-					   RowDragDropTemplate="{StaticResource  SampleDragDropTemplate}">
-					   
-{% endhighlight %}
-{% endtabs %}
-
-Resources should have DataTemplate definition as mentioned in the RowDragDropTemplate. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window.Resources>
-        <DataTemplate x:Key="SampleDragDropTemplate ">
-            <Border Height="100" Width="300" Background="Red"/>
-        </DataTemplate>
-</Window.Resources>
-					   
-{% endhighlight %}
-{% endtabs %}
-
-### Disable dragging of certain node
-
-You can disable dragging functionality of some specific nodes by using the [SfTreeGrid.RowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event.  
-
-{% tabs %}
-{% highlight c# %}
+sfTreeGrid.RowDragDropController.DragStart += RowDragDropController_DragStart;
 
 private void RowDragDropController_DragStart(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs e)
 {
-	ObservableCollection<TreeNode> draggingNodes = e.DraggingNodes;
-	var item = draggingNodes[0].Item as EmployeeInfo;
-    if(item.FirstName.StartsWith("Andrew"))
-    {
-		e.Handled = true;
-    }
+            
 }
-
 {% endhighlight %}
 {% endtabs %}
 
-### Disable drop over certain node
+### DragOver
 
-You can disable dropping functionality of some specific nodes by using the [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
+[DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragOver_EV.html) event occurs continuously while tree node is dragged within the target treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following member which provides information for `DragOver` event.
+
+[Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~Data.html): Gets or sets a data object that contains the data associated while dragging the rows.
+
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location.
+
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same TreeGrid or not.
+
+[ShowDragUI](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragOverEventArgs~ShowDragUI.html): Gets or sets a value indicating the default Dragging UI.  
+
+[TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html): Gets a value indicating the target node which is going to drop.
+
+<table>
+<tr>
+<td>
+sfTreeGrid.RowDragDropController.DragOver += RowDragDropController_DragOver;
+private void RowDragDropController_DragOver(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragOverEventArgs e)
+{
+
+}
+</td>
+</tr>
+</table>
+
+### DragLeave
+
+[DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragLeave_EV.html) event occurs when leave a drag-and-drop operation. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following member which provides information for `DragLeave` event.
+
+[Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~Data.html): Gets or sets a data object that contains the data associated while dragging the rows.
+
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location.
+
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same TreeGrid or not.
+
+[TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html): Gets a value indicating the target node which is going to drop.
+
+<table>
+<tr>
+<td>
+this.sfTreeGrid.RowDragDropController.DragLeave += RowDragDropController_DragLeave;
+private void RowDragDropController_DragLeave(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragLeaveEventArgs e)
+{
+
+}
+</td>
+</tr>
+</table>
+
+### Drop
+
+[Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event occurs when a record is dropping within the target treegrid. The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following member which provides information for `Drop` event.
+
+[Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~Data.html): Gets or sets a data object that contains the data associated while dragging the rows.
+
+[DraggingNodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropEventArgs~DraggingNodes.html): Gets the tree node which contains the data associated while dragging the rows.  
+
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location.
+
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same treegrid or not.
+
+[TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html): Gets a value indicating the target node which is going to drop.
+
+<table>
+<tr>
+<td>
+this.sfTreeGrid.RowDragDropController.Drop += RowDragDropController_Drop;
+private void RowDragDropController_Drop(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropEventArgs e)
+{
+
+}
+</td>
+</tr>
+</table>
+
+### Dropped
+
+[Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Dropped_EV.html) event occurs when a record is dropped within the target treegrid.  The [TreeGridRowDragStartEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs.html) has the following member which provides information for `Dropped` event.
+
+[Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~Data.html): Gets or sets a data object that contains the data associated while dragging the rows.
+
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~DropPosition.html# ""): Gets a value indicating the drop position which is based on dropped location.
+
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~IsFromOutSideSource.html# ""): Gets a value indicating whether the dragging item is from same treegrid or not.
+
+[TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html# ""): Gets a value indicating the target node which is going to drop.
+
+<table>
+<tr>
+<td>
+this.sfTreeGrid.RowDragDropController.Dropped += RowDragDropController_Dropped;
+private void RowDragDropController_Dropped(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDroppedEventArgs e)
+{
+
+}
+</td>
+</tr>
+</table>
+
+# Drag-and-Drop between SfTreeGrid and other controls
+
+### Drag-and-Drop between ListView and SfTreeGrid
+
+You can drag and drop the items between list view and treegrid. For this, you need to wire the [Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event from [TreeGridRowDragDropController ](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html)class.
 
 {% tabs %}
 {% highlight c# %}
+this.AssociatedObject.sfTreeGrid.RowDragDropController.Drop += RowDragDropController_Drop;
+
+private void RowDragDropController_Drop(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropEventArgs e)
+{
+    if (e.IsFromOutSideSource)
+    {
+        var item = e.Data.GetData("ListViewRecords") as ObservableCollection<object>;
+        var record = item[0] as EmployeeInfo;
+        var dropPosition = e.DropPosition.ToString();
+        var newItem = new EmployeeInfo();
+
+        var rowIndex = AssociatedObject.sfTreeGrid.ResolveToRowIndex(e.TargetNode.Item);
+        int nodeIndex = (int)rowIndex;
+        if (dropPosition != "None" && rowIndex != -1)
+        {
+            if (AssociatedObject.sfTreeGrid.View is TreeGridSelfRelationalView)
+            {
+                var treeNode = AssociatedObject.sfTreeGrid.GetNodeAtRowIndex(rowIndex);
+
+                if (treeNode == null)
+                    return;
+                var data = treeNode.Item;
+                AssociatedObject.sfTreeGrid.SelectionController.SuspendUpdates();
+                var itemIndex = -1;
+
+                TreeNode parentNode = null;
+
+                if (dropPosition == "DropBelow" || dropPosition == "DropAbove")
+                {
+                    parentNode = treeNode.ParentNode;
+
+                    if (parentNode == null)
+                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = -1 };
+                    else
+                    {
+                        var parent = parentNode.Item as EmployeeInfo;
+                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parent.ID };
+                    }
+                }
+
+                else if (dropPosition == "DropAsChild")
+                {
+
+                    if (!treeNode.IsExpanded)
+                        AssociatedObject.sfTreeGrid.ExpandNode(treeNode);
+                    parentNode = treeNode;
+                    var parent = parentNode.Item as EmployeeInfo;
+                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parent.ID };
+
+                }
+                IList sourceCollection = null;
+
+                if (dropPosition == "DropBelow" || dropPosition == "DropAbove")
+                {
+
+                    if (treeNode.ParentNode != null)
+                    {
+
+                        var collection = AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().GetValue(treeNode.ParentNode.Item, AssociatedObject.sfTreeGrid.ChildPropertyName) as IEnumerable;
+
+                        sourceCollection = GetSourceListCollection(collection);
+                    }
+
+                    else
+                    {
+
+                        sourceCollection = GetSourceListCollection(AssociatedObject.sfTreeGrid.View.SourceCollection);
+                    }
+                    itemIndex = sourceCollection.IndexOf(data);
+
+                    if (dropPosition == "DropBelow")
+                    {
+                        itemIndex += 1;
+                    }
+                }
+
+                else if (dropPosition == "DropAsChild")
+                {
+                    var collection = AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().GetValue(data, AssociatedObject.sfTreeGrid.ChildPropertyName) as IEnumerable;
+
+                    sourceCollection = GetSourceListCollection(collection);
+
+                    if (sourceCollection == null)
+                    {
+                        var list = data.GetType().GetProperty(AssociatedObject.sfTreeGrid.ChildPropertyName).PropertyType.CreateNew() as IList;
+
+                        if (list != null)
+                        {
+                            AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().SetValue(treeNode.Item, AssociatedObject.sfTreeGrid.ChildPropertyName, list);
+                            sourceCollection = list;
+                        }
+                    }
+                    itemIndex = sourceCollection.Count;
+                }
+                sourceCollection.Insert(itemIndex, newItem);
+                AssociatedObject.sfTreeGrid.SelectionController.ResumeUpdates();
+                (AssociatedObject.sfTreeGrid.SelectionController as TreeGridRowSelectionController).RefreshSelection();
+                e.Handled = true;
+            }
+        }
+(AssociatedObject.listView.ItemsSource as ObservableCollection<EmployeeInfo>).Remove(record as EmployeeInfo);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+In ListView, you need to wire the PreviewMouseMove and Drop events.
+
+{% tabs %}
+{% highlight c# %}
+this.AssociatedObject.listView.PreviewMouseMove += ListView_PreviewMouseMove;
+this.AssociatedObject.listView.Drop += ListView_Drop;
+
+private void ListView_Drop(object sender, DragEventArgs e)
+{
+    ObservableCollection<TreeNode> treeNodes = new ObservableCollection<TreeNode>();
+
+    if (e.Data.GetDataPresent("Nodes"))
+        treeNodes= e.Data.GetData("Nodes") as ObservableCollection<TreeNode>;
+
+    EmployeeInfo item = new EmployeeInfo();
+
+    if (treeNodes.Count == 0 ||treeNodes==null)
+        return;
+           
+    foreach (var node in treeNodes)
+    {
+        (AssociatedObject.sfTreeGrid.ItemsSource as ObservableCollection<EmployeeInfo>).Remove(node.Item as EmployeeInfo);
+        if (node.HasChildNodes)
+        {
+            list.Add(node.Item as EmployeeInfo);
+            GetChildNodes(node);
+        }
+        else
+        {
+            list.Add(node.Item as EmployeeInfo);
+        }
+    }
+            
+    foreach (var listItem in list)
+    {
+        (this.AssociatedObject.DataContext as ViewModel).Employee.Add(listItem);
+    }
+    list.Clear();
+}
+
+private void ListView_PreviewMouseMove(object sender, System.Windows.Input.MouseEventArgs e)
+{
+    if (e.LeftButton == MouseButtonState.Pressed)
+    {
+        ListBox dragSource = null;
+        var records = new ObservableCollection<object>();
+        ListBox parent = (ListBox)sender;
+        dragSource = parent;
+        object data = GetDataFromListBox(dragSource, e.GetPosition(parent));
+
+        records.Add(data);
+
+        var dataObject = new DataObject();
+        dataObject.SetData("ListViewRecords", records);
+        dataObject.SetData("ListView", this.AssociatedObject.listView);
+
+        if (data != null)
+        {
+            DragDrop.DoDragDrop(parent, dataObject, DragDropEffects.Move);
+        }
+    }
+    e.Handled = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-listview-and-treegrid).
+
+![Drag and drop between treeGrid and listview](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img4.jpeg)
+
+### Drag-and-Drop between TreeViewAdv and SfTreeGrid
+
+You can drag and drop the items between tree view and treegrid. For this, you need to wire the [Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) and [DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~DragStart_EV.html) event from [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+
+{% tabs %}
+{% highlight c# %}
+private void RowDragDropController_DragStart(object sender, TreeGridRowDragStartEventArgs e)
+{
+    e.Handled = true;
+    var dataObject = new DataObject();
+    dataObject.SetData("SourceTreeGrid", this.AssociatedObject.sfTreeGrid);
+    dataObject.SetData("Nodes", e.DraggingNodes);
+            
+    foreach (var node in e.DraggingNodes)
+    {
+        if (node.HasChildNodes)
+        {
+            records.Add(node.Item as EmployeeInfo);
+            GetChildNodes(node);
+        }
+        else
+        {
+            records.Add(node.Item as EmployeeInfo);
+        }
+    }
+
+    dataObject.SetData(records);
+
+    if(records!=null)
+    DragDrop.DoDragDrop(this.AssociatedObject.sfTreeGrid, dataObject, DragDropEffects.Copy | DragDropEffects.Move);
+    records.Clear();
+}
 
 private void RowDragDropController_Drop(object sender, TreeGridRowDropEventArgs e)
 {
-  TreeNode targetNode = e.TargetNode;
-  var item = targetNode.Item as EmployeeInfo;
-  if (item.FirstName.StartsWith("Andrew"))
-  {
-     e.Handled = true;
-  }
-}
+    if (e.IsFromOutSideSource)
+    {
+        ObservableCollection<object> item = e.Data.GetData(typeof(ObservableCollection<object>)) as ObservableCollection<object>;
+        var record = item[0] as EmployeeInfo;
+        var dropPosition = e.DropPosition.ToString();
+        var newItem = new EmployeeInfo();
 
+        var rowIndex = AssociatedObject.sfTreeGrid.ResolveToRowIndex(e.TargetNode.Item);
+        int nodeIndex = (int)rowIndex;
+        if (dropPosition != "None" && rowIndex != -1)
+        {
+            if (AssociatedObject.sfTreeGrid.View is TreeGridSelfRelationalView)
+            {
+                var treeNode = AssociatedObject.sfTreeGrid.GetNodeAtRowIndex(rowIndex);
+
+                if (treeNode == null)
+                    return;
+                var data = treeNode.Item;
+                AssociatedObject.sfTreeGrid.SelectionController.SuspendUpdates();
+                var itemIndex = -1;
+
+                TreeNode parentNode = null;
+
+                if (dropPosition == "DropBelow" || dropPosition == "DropAbove")
+                {
+                    parentNode = treeNode.ParentNode;
+
+                    if (parentNode == null)
+                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = -1 };
+                    else
+                    {
+                        var parent = parentNode.Item as EmployeeInfo;
+                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parent.ID };
+                    }
+                }
+
+                else if (dropPosition == "DropAsChild")
+                {
+
+                    if (!treeNode.IsExpanded)
+                        AssociatedObject.sfTreeGrid.ExpandNode(treeNode);
+                    parentNode = treeNode;
+                    var parent = parentNode.Item as EmployeeInfo;
+                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parent.ID };
+
+                }
+                IList sourceCollection = null;
+
+                if (dropPosition == "DropBelow" || dropPosition == "DropAbove")
+                {
+
+                    if (treeNode.ParentNode != null)
+                    {
+
+                        var collection = AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().GetValue(treeNode.ParentNode.Item, AssociatedObject.sfTreeGrid.ChildPropertyName) as IEnumerable;
+
+                        sourceCollection = GetSourceListCollection(collection);
+                    }
+
+                    else
+                    {
+                        sourceCollection = GetSourceListCollection(AssociatedObject.sfTreeGrid.View.SourceCollection);
+                    }
+                    itemIndex = sourceCollection.IndexOf(data);
+
+                    if (dropPosition == "DropBelow")
+                    {
+                        itemIndex += 1;
+                    }
+                }
+
+                else if (dropPosition == "DropAsChild")
+                {
+                    var collection = AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().GetValue(data, AssociatedObject.sfTreeGrid.ChildPropertyName) as IEnumerable;
+
+                    sourceCollection = GetSourceListCollection(collection);
+
+                    if (sourceCollection == null)
+                    {
+                        var list = data.GetType().GetProperty(AssociatedObject.sfTreeGrid.ChildPropertyName).PropertyType.CreateNew() as IList;
+
+                        if (list != null)
+                        {
+                            AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().SetValue(treeNode.Item, AssociatedObject.sfTreeGrid.ChildPropertyName, list);
+                            sourceCollection = list;
+                        }
+                    }
+                    itemIndex = sourceCollection.Count;
+                }
+                sourceCollection.Insert(itemIndex, newItem);
+                AssociatedObject.sfTreeGrid.SelectionController.ResumeUpdates();
+                (AssociatedObject.sfTreeGrid.SelectionController as TreeGridRowSelectionController).RefreshSelection();
+                e.Handled = true;
+            }
+        }
+        (AssociatedObject.treeview.ItemsSource as ObservableCollection<EmployeeInfo>).Remove(record as EmployeeInfo);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+In TreeViewAdv, you need to wire the Drop event,
+{% tabs %}
+{% highlight c# %}
+private void Treeview_Drop(object sender, DragEventArgs e)
+{
+    ObservableCollection<TreeNode> treeNodes = new ObservableCollection<TreeNode>();
+
+    if (e.Data.GetDataPresent("Nodes"))
+        treeNodes = e.Data.GetData("Nodes") as ObservableCollection<TreeNode>;
+
+    EmployeeInfo item = new EmployeeInfo();
+
+    if (treeNodes.Count == 0 || treeNodes == null)
+        return;
+
+    foreach (var node in treeNodes)
+    {
+        (AssociatedObject.sfTreeGrid.ItemsSource as ObservableCollection<EmployeeInfo>).Remove(node.Item as EmployeeInfo);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
-### Disable default drag UI
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-treegrid-and-treeviewadv).
 
-You can disable dropping functionality of some specific nodes by using the [SfTreeGrid.RowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) event.  
+![Drag and drop between treegrid and treeviewadv](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img5.jpeg)
+
+#	 Customizing drag-and-drop rows
+
+SfTreeGrid processes row drag and drop operations in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class. You can customize the row drag and drop operations by using events in the[SfTreeGrid.RowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html).
+
+### Auto expand the node on drag over
+
+When drag over the tree node, if drop position is “Drop as child”, then you can auto expand the corresponding tree node by setting [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html) to `true`. It is also possible to control the delay in expanding the node when drag over using [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html) property. Its default value in 3 sec.
 
 {% tabs %}
 {% highlight c# %}
+treeGrid.RowDragDropController.CanAutoExpand = true;
+treeGrid.RowDragDropController.AutoExpandDelay = new TimeSpan(0, 0, 2);
+{% endhighlight %}
+{% endtabs %}
 
+### Customize default drag UI
+
+SfTreeGrid provides default UI for drag and drop. However, you can customize the drag UI using [RowDragDropTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropTemplate.html) property.
+
+{% tabs %}
+{% highlight xml %}
+<DataTemplate x:Key="dragdroptemplate">
+            <Border x:Name="border" Width="250"  
+                            Background="#ececec" 
+                            BorderBrush="#c8c8c8"  Height="60"
+                            BorderThickness="1.2">
+
+                <Grid  VerticalAlignment="Center" 
+                          HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Padding="12,0,0,0" Text="Dragging rows count :" FontSize="14" FontFamily="Segoe UI" 
+                                       Foreground="#333333" FontWeight="Regular" Background="SkyBlue" />
+
+                    <TextBlock Text="{Binding DraggingRecords.Count}" FontSize="14" 
+                                       FontFamily="Segoe UI"
+                                       FontWeight="Regular" 
+                                       Foreground="#333333" 
+                                       Grid.Column="1" Margin="-100,0,0,0"/>
+
+                    <Separator  Grid.Row="1" Height="2" BorderBrush="#c8c8c8"
+                                        HorizontalAlignment="Stretch"  BorderThickness="1"
+                                        VerticalAlignment="Stretch"  Width="250"/>
+
+                    <TextBlock Text="Drop status:" 
+                                       Foreground="#333333"
+                                       Padding="12,0,0,0" Background="SkyBlue"
+                                       FontFamily="Segoe UI" 
+                                       FontWeight="Regular" 
+                                       FontSize="14"
+                                       Grid.Row="2"/>
+
+                    <TextBlock Text="{Binding DragStatus}" 
+                                       FontSize="14"
+                                       FontFamily="Segoe UI"
+                                       FontWeight="Regular"
+                                       Foreground="#333333" 
+                                       Margin="-163,0,0,0"
+                                       Grid.Row="2" 
+                                       Grid.Column="1"/>
+                </Grid>
+            </Border>
+ </DataTemplate>
+
+   <syncfusion:SfTreeGrid Name="sfTreeGrid" AutoExpandMode="RootNodesExpanded" SelectionMode="Extended" AllowDraggingRows="True" AllowDrop="True" 
+                               ChildPropertyName="ReportsTo" 
+                               ItemsSource="{Binding Employees}"
+                               ParentPropertyName="ID"
+                               RowDragDropTemplate="{StaticResource DragDropTemplate}"
+                               SelfRelationRootValue="-1" >
+{% endhighlight %}
+{% endtabs %}
+
+![Customized drag and drop window](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img6.jpeg)
+
+### Disable dragging of certain nodes
+
+You can restrict the dragging of specific node by using the DragStart event of the [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+
+{% tabs %}
+{% highlight c# %}
+private void RowDragDropController_DragStart(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragStartEventArgs e)
+{
+    var nodes = e.DraggingNodes;
+    var node = nodes.FirstOrDefault(n => n.Level == 0);
+
+    if (node != null)
+        e.Handled = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Disable drop of certain nodes
+
+You can restrict the drop of specific node by using the Drop event of the [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+
+{% tabs %}
+{% highlight c# %}
+private void RowDragDropController_Drop(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropEventArgs e)
+{
+    // Disable drop on leaf nodes.
+    if (!e.TargetNode.HasChildNodes)
+        e.Handled = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Disable Default Drag UI
+
+You can disable the draggable popup by setting the  [ShowDragUI](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragOverEventArgs~ShowDragUI.html) as false in the Drop event of [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+
+{% tabs %}
+{% highlight c# %}
 private void RowDragDropController_DragOver(object sender, TreeGridRowDragOverEventArgs e)
 {
     e.ShowDragUI = false;
 }
-
 {% endhighlight %}
 {% endtabs %}
