@@ -3341,11 +3341,7 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endtabs %}
 
-<<<<<<< HEAD
-![Spline Range Series ](Series_images/splinerangearea.png)
-=======
 ![Spline Range Area Series ](Series_images/splinerangearea.png)
->>>>>>> 03e2fdbff065b4e2e8b8c88b8a25aa5623ef53c2
 
 ### Histogram 
 
