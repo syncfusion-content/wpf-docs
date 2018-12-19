@@ -1231,6 +1231,10 @@ chart.Series.Add(series);
 
 ![Connector type support in WPF Chart](Adornments_images/connectorline_3.png)
 
+**StraightLine**
+
+![Connector type support in WPF Chart](Adornments_images/StraightLineConnectorType.png)
+
 **Bezier**
 
 {% tabs %}
