@@ -810,9 +810,8 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
-            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" 
-                             YBindingPath="Count" GroupMode="Value"
-                             GroupTo="1000" >
+            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" 
+			                 GroupMode="Value" GroupTo="1000" >
 
                 <chart:PieSeries.AdornmentsInfo>
                     <chart:ChartAdornmentInfo ShowConnectorLine="True" 
@@ -854,10 +853,8 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
-            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" 
-                             YBindingPath="Count"                
-                             GroupMode="Angle"
-                             GroupTo="30">
+            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"                
+                             GroupMode="Angle" GroupTo="30">
 							 
 			<chart:PieSeries.AdornmentsInfo>
                     <chart:ChartAdornmentInfo ShowConnectorLine="True" 
@@ -1318,7 +1315,7 @@ You can add any content to the center of the doughnut chart using the [`CenterVi
                                   IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
                                   MaximumValue="100">
 								  
-				<chart:DoughnutSeries.CenterView>
+			    <chart:DoughnutSeries.CenterView>
                     <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
                         <Image Source="/Image/Person.png" Width="164" Height="164"/>
                     </ContentControl>
