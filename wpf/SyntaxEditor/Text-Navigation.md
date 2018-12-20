@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Navigation in Syncfusion Syntax Editor
+title: Text Navigation in Syntax Editor | Syncfusion 
 description: Explains about Text Navigation support in Syntax Editor for WPF
 platform: wpf
 control: Syntax Editor
