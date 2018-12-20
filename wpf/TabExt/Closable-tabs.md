@@ -139,7 +139,9 @@ The close button of TabItemExt is hidden<br/><br/></td></tr>
 N> "Beijing" TabItem has CloseButtonState as visible, "Madagascar" TabItem has CloseButtonState as Collapsed, and "New York" TabItem has CloseButtonState as Hidden.
 
 
-## Restrict TabItem closing through closing event
+## Restrict closing of TabItem 
+
+### Through closing event
 
 The closure of TabItem can now be restricted by setting e.Cancel to true in OnCloseButtonClick delegate. “e” represents the event argument CloseTabEventArgs for OnCloseButtonClick event. The default value of e.Cancel is false.
 
@@ -175,7 +177,7 @@ The following code illustrates the same.
 
 {% endtabs %}
 
-## Restrict closing of TabItem using the CanClose property
+### Using the CanClose property
 
 Users can restrict the closing functionality of TabItem using the [CanClose](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property of TabItemExt. When the [CanClose](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property is set to false, the corresponding TabItem will be non-closable. The default value of this property is true. 
 
