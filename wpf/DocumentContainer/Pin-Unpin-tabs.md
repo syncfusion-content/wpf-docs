@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pin and Unpin the tab items in the Syncfusion DocumentContainer
-description: Explains about pinning and unpinning behavior of tab items in the DocumentContainer of WPF
+title: Pin and Unpin the tab items in DocumentContainer | WPF | Syncfusion
+description: Explains about pinning and unpinning behavior of tab items in the DocumentContainer for WPF
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 # Pin and Unpin tab items
 
-This section explains the pin and unpin TabItems supports in DocumentContainer.
+This section explains the pin and unpin tab items support in DocumentContainer.
 
 ## Enabling/disabling pinning behavior
 
