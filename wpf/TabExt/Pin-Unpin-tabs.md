@@ -32,8 +32,6 @@ The [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wp
 
 ## Pin and Unpin tab items using PinButton
 
-### Display PinButton in header panel of tab item
-
 The PinButton will be visible in the TabItemExt only when the [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ShowPin.html) property is set to true. The default value of this property is false, so the PinButton will be collapsed from header panel of tab item.
 
 {% tabs %}
@@ -56,7 +54,7 @@ The PinButton will be visible in the TabItemExt only when the [ShowPin](https://
 
 {% endtabs %}
 
-![Displaying PinButton to specific items](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images1.png)
+![Displaying PinButton to specific items](Pin-Unpin-tabs-images\Displaying-PinButton.png)
 
 If the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property is true, the PinButton will be enabled and will be visible. If the [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ShowPin.html) property is true, and the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property is false, the PinButton will be displayed as a disabled button.
 
@@ -90,10 +88,10 @@ The pin or unpin operations can be done through TabItemExt's ContextMenu also. I
 
 The following images illustrates the same,
 
-![Displays option to pin the TabItemExt](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images2.png)
+![Displays option to pin the TabItemExt](Pin-Unpin-tabs-images\PinTab-option-ContextMenu.png)
 
-![Displays option to Unpin the TabItemExt](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images3.png)
+![Displays option to Unpin the TabItemExt](Pin-Unpin-tabs-images\UnpinTab-option-ContextMenu.png)
 
-## Re-ordering behavior of tab items when pin and unpin functionalities are enabled
+## Re-order pinned tabs
 
 Users can re-order the pinned item within the pinned items collection and re-order the un-pinned item within the unpinned item collection, but re-ordering between pinned and unpinned or unpinned and pinned has been restricted. If the pinned tab item is dropped in the unpinned tab item collection, the dragged item will be inserted at the last index of pinned tab item collection and if the un pinned tab item is dropped in pinned tab item collection, the dragged item will be inserted at zeroth index of un-pinned tab item collection.

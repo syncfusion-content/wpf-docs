@@ -107,8 +107,6 @@ The [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wp
 
 ## Pin and Unpin tab items using PinButton
 
-### Display PinButton in tab item
-
 The PinButton will be visible in the tab items only when the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true. The default value of the property is false, so the pin button will be collapsed in the tab item.
 
 {% tabs %}
@@ -202,7 +200,7 @@ The PinButton will be visible in the tab items only when the property [ShowPin](
 
 {% endtabs %}
 
-![Displaying PinButton to specific items](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images1.png)
+![Displaying PinButton to specific items](Pin-Unpin-tabs-images\Displaying-pin-button.png)
 
 If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true, the pin button will be enabled and visible. If the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true and [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is false, the pin button will be displayed as disabled button. 
 
@@ -304,6 +302,6 @@ The pin or unpin operations can be done through tab item's ContextMenu also. If 
 
 The following images illustrates the same,
 
-![Displaying option to pin the tab itemExt](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images2.png)
+![Displaying option to pin the tab itemExt](Pin-Unpin-tabs-images\PinTab-option-ContextMenu.png)
 
-![Displaying option to Unpin the tab itemExt](Pin-Unpin-tabs-images\Pin-Unpin-tabs-images3.png)
+![Displaying option to Unpin the tab itemExt](Pin-Unpin-tabs-images\UnpinTab-option-ContextMenu.png)
