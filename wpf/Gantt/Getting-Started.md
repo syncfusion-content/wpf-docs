@@ -283,10 +283,7 @@ The GanttControl allows users set the width for GanttChart and GanttGrid  using 
 
 {% highlight xaml %}
 
-<sync:GanttControl x:Name="Gantt" GridWidth="200" ChartWidth="800" ItemsSource="{Binding TaskCollection}" > 
-	<Sync:GanttControl.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </Sync:GanttControl.DataContext>
+<sync:GanttControl x:Name="Gantt" GridWidth="200" ChartWidth="800" > 
 </Sync:GanttControl>
 
 
@@ -296,9 +293,6 @@ The GanttControl allows users set the width for GanttChart and GanttGrid  using 
 
  //Initializing Gantt
 GanttControl Gantt = new GanttControl();
-ViewModel model=  new ViewModel();
-this.Gantt.DataContext = model;
-Gantt.ItemsSource = model.GanttItemSource;
 Gantt.GridWidth = new GridLength(200); 
 Gantt.ChartWidth = new GridLength(800); 
 
@@ -309,16 +303,13 @@ Gantt.ChartWidth = new GridLength(800);
 
 ## Schedule Padding 
 
-Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ScheduleRangePadding.html) property in GanttControl. This property extends the schedule with number of lower timescale units to improve user-loading experiences.
+Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ScheduleRangePadding.html) property in GanttControl. This property extends the schedule with number of lower timescale units to improve user experiences.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <Sync:GanttControl x:Name="Gantt" ItemsSource="{Binding TaskCollection}"  ScheduleRangePadding="5">
-    <Sync:GanttControl.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </Sync:GanttControl.DataContext>
 </Sync:GanttControl>
 
 {% endhighlight %}
@@ -327,8 +318,6 @@ Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https:
 
  //Initializing Gantt
 GanttControl Gantt = new GanttControl();
-ViewModel model=  new ViewModel();
-this.Gantt.DataContext = model;
 Gantt.ItemsSource = model.GanttItemSource;
 Gantt.ScheduleRangePadding = 5;
 
