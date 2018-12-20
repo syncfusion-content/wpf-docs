@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in SfDataGrid
+title: Syncfusion | Columns in SfDataGrid
 description: How to add or remove columns in SfDataGrid
 platform: wpf
 control: SfDataGrid
@@ -390,7 +390,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 Below screenshot shows the customized header template loaded on the header of OrderID column.
 
-![](Columns_images/Columns_img1.png)
+![Setting template to auto-generated column](Columns_images/Columns_img1.png)
 
 #### Data Annotations with AutoGenerateColumns
 
@@ -485,7 +485,7 @@ public string CustomerID
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![](Columns_images/Columns_img2.png)
+![Change the order of the columns](Columns_images/Columns_img2.png)
 
 ##### Customizing data format 
 
@@ -548,7 +548,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", M
 
 You can refer more information about handling the column level operations for manually defined columns in Column types section.
 
-### Autogenerate column for CustomType Property
+### Auto generate column for CustomType Property
 
 You can generate the columns only for custom parent type property by using [AutoGenerateColumnsModeForCustomType] https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AutoGenerateColumnsModeForCustomType.html) as Parent in SfDataGrid.
 
@@ -650,13 +650,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
-![](Columns_images/Columns_img3.png)
+![Resizing Columns](Columns_images/Columns_img3.png)
 
 ### Hidden column resizing
 
 SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowResizingHiddenColumns.html) property to `true`.
 
-![](Columns_images/Columns_img4.png)
+![Hidden column resizing](Columns_images/Columns_img4.png)
 
 ### Disable resizing
 
@@ -689,7 +689,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img5.png)
+![Column drag and drop](Columns_images/Columns_img5.png)
 
 You can enable or disable dragging on particular column using [GridColumn.AllowDragging](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowDragging.html) property.
 
@@ -844,7 +844,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img6.png)
+![Freezing Columns](Columns_images/Columns_img6.png)
 
 ## Stacked Headers
 
@@ -885,7 +885,7 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img7.png)
+![stacked header rows](Columns_images/Columns_img7.png)
 
 You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.aspx). 
 
@@ -940,7 +940,7 @@ public class OrderInfo
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img8.png)
+![stacked headers using GroupName property](Columns_images/Columns_img8.png)
 
 ### Adding ChildColumns
 
@@ -1101,7 +1101,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfDataGr
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img9.png)
+![Column Sizing](Columns_images/Columns_img9.png)
 
 N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.ColumnSizer`.
 
@@ -1129,7 +1129,7 @@ this.datagrid.Columns["OrderID"].ColumnSizer = GridLengthUnitType.AutoWithLastCo
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img12.png)
+![SfDataGrid in ColumnSizer as AutoLastColumnFill](Columns_images/Columns_img12.png)
 
 ### Refreshing ColumnSizer at runtime
 
@@ -1389,7 +1389,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img10.png)
+![Star column sizer ratio support](Columns_images/Columns_img10.png)
 
 ### Change the width of GridComboBoxColumn based on it’s ItemsSource
 
@@ -1474,5 +1474,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img11.png)
+![Binding column properties with ViewModel](Columns_images/Columns_img11.png)
 
