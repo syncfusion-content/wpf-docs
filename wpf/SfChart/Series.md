@@ -1314,8 +1314,8 @@ You can add any content to the center of the doughnut chart using the [`CenterVi
             <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
                                   IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
                                   MaximumValue="100">
-								  
-			    <chart:DoughnutSeries.CenterView>
+
+                <chart:DoughnutSeries.CenterView>
                     <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
                         <Image Source="/Image/Person.png" Width="164" Height="164"/>
                     </ContentControl>
