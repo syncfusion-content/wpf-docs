@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Behavior of TabItemExt's CloseButton in Syncfusion TabControlExt
-description: Explains about the behavior of TabItem's CloseButton in TabControlExt of WPF
+title: Behavior of TabItemExt's CloseButton in TabControlExt | Syncfusion | WPF
+description: Explains about the behavior of TabItem's CloseButton in TabControlExt for WPF
 platform: wpf
 control: TabControlExt
 documentation: ug
