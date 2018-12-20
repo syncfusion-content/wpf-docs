@@ -19,7 +19,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img1.png)
+![Search Panel](Search_images/Search_img1.png)
 
 
 ### Filtering
@@ -35,7 +35,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img2.png)
+![ enable filter based on search](Search_images/Search_img2.png)
 
 
 You can search the data with the case-sensitivity by setting [SearchHelper.AllowCaseSensitiveSearch](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~AllowCaseSensitiveSearch.html) property.
@@ -61,7 +61,7 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img3.png)
+![search text highlighting color ](Search_images/Search_img3.png)
 
 ### Changing Search Highlight Foreground
 
@@ -75,7 +75,7 @@ this.dataGrid.SearchHelper.SearchForegroundBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img8.png)
+![search text foreground color](Search_images/Search_img8.png)
 
 ## Navigating cells based on search text
 
@@ -101,7 +101,7 @@ this.dataGrid.SearchHelper.FindNext("TextBox.Text ");
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img4.png)
+![highlight navigated search text](Search_images/Search_img4.png)
 
 You can highlight the currently navigated search text foreground color by using [SearchHelper.SearchForegroundHighlightBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~SearchForegroundHighlightBrush.html) property.
 
@@ -113,7 +113,7 @@ this.dataGrid.SearchHelper.SearchForegroundHighlightBrush = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img9.png)
+![navigated search text foreground color](Search_images/Search_img9.png)
 
 
 ## Move CurrentCell when FindNext and FindPrevious
@@ -154,7 +154,7 @@ Master-details view allows you to search the data by using [SearchHelper.Search]
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img5.png)
+![ search the data ](Search_images/Search_img5.png)
 
 
 ### Navigating cells based on search text in DetailsViewDataGrid
@@ -225,7 +225,7 @@ public class SearchHelperExt : SearchHelper
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img6.png)
+![search only selected column](Search_images/Search_img6.png)
 
 
 ### Select the record based on the SearchText
@@ -244,7 +244,7 @@ this.dataGrid.SelectedIndex = recordIndex;
 {% endhighlight %}
 {% endtabs %}
 
-![](Search_images/Search_img7.png)
+![Select the record based on the SearchText](Search_images/Search_img7.png)
 
 
 ### Search with the GridComboBoxColumn
