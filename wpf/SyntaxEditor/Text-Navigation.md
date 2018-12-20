@@ -10,9 +10,9 @@ documentation: ug
 
 Syntax Editor offers extensive support to text navigation. Users can perform navigation between characters, words, and line items using the built-in functions or keyboard shortcut keys. This section briefly explains navigation of text in the Syntax Editor.
 
-## Programmatic Navigation:
+## Programmatic Navigation
 
-### Character based navigation:
+### Character based navigation
 
 The following functions enables text navigation in the Syntax Editor in terms of characters or columns.
 
