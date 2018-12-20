@@ -853,36 +853,36 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
-            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"                
-                             GroupMode="Angle" GroupTo="30">
-							 
-			<chart:PieSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowConnectorLine="True" 
-                                              ConnectorHeight="80" 
-                                              ShowLabel="True" 
-                                              LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                              SegmentLabelContent="LabelContentPath">
-                    </chart:ChartAdornmentInfo>
-                </chart:PieSeries.AdornmentsInfo>
-            </chart:PieSeries>
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" 
+                 GroupMode="Angle" GroupTo="30">
+                 
+    <chart:PieSeries.AdornmentsInfo>
+        <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                  ConnectorHeight="80" 
+                                  ShowLabel="True" 
+                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                  SegmentLabelContent="LabelContentPath">
+        </chart:ChartAdornmentInfo>
+    </chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            pieSeries.GroupMode = PieGroupMode.Angle;
-            pieSeries.GroupTo = 30;
+pieSeries.GroupMode = PieGroupMode.Angle;
+pieSeries.GroupTo = 30;
 
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowConnectorLine = true,
-                ShowLabel = true,
-                ConnectorHeight = 80,
-                LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
-                SegmentLabelContent = LabelContent.LabelContentPath,
-            };
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowConnectorLine = true,
+        ShowLabel = true,
+        ConnectorHeight = 80,
+        LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+        SegmentLabelContent = LabelContent.LabelContentPath,
+    };
 
-            pieSeries.AdornmentsInfo = adornmentInfo;
+pieSeries.AdornmentsInfo = adornmentInfo;
 
 {% endhighlight %}
 
@@ -896,37 +896,37 @@ The small segments in the pie chart can be grouped into the “others” categor
 
 {% highlight xaml %}
 
-            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"                
-                             GroupMode="Percentage" GroupTo="10" >
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"                
+                 GroupMode="Percentage" GroupTo="10" >
 
-                <chart:PieSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowConnectorLine="True" 
-                                              ConnectorHeight="80" 
-                                              ShowLabel="True" 
-                                              LabelTemplate="{StaticResource DataLabelTemplate}"  
-                                              SegmentLabelContent="LabelContentPath">
-                    </chart:ChartAdornmentInfo>
-                </chart:PieSeries.AdornmentsInfo>
-            </chart:PieSeries>
+    <chart:PieSeries.AdornmentsInfo>
+        <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                  ConnectorHeight="80" 
+                                  ShowLabel="True" 
+                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                  SegmentLabelContent="LabelContentPath">
+        </chart:ChartAdornmentInfo>
+    </chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-			pieSeries.GroupMode = PieGroupMode.Percentage;
-            pieSeries.GroupTo = 10;
+pieSeries.GroupMode = PieGroupMode.Percentage;
+pieSeries.GroupTo = 10;
 
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowConnectorLine = true,
-                ShowLabel = true,
-                ConnectorHeight = 80,
-                LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
-                SegmentLabelContent = LabelContent.LabelContentPath,
-            };
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowConnectorLine = true,
+        ShowLabel = true,
+        ConnectorHeight = 80,
+        LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+        SegmentLabelContent = LabelContent.LabelContentPath,
+    };
 
-            pieSeries.AdornmentsInfo = adornmentInfo;
+pieSeries.AdornmentsInfo = adornmentInfo;
 
 {% endhighlight %}
 
@@ -1269,11 +1269,11 @@ Doughnut segments can be separated as individual circles using the [`IsStackedDo
 {% highlight xaml %}
 
 <chart:SfChart>
-            …
-            <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
-                                  IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
-                                  MaximumValue="100">
-            </chart:DoughnutSeries>
+    …
+    <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
+                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+                          MaximumValue="100">
+    </chart:DoughnutSeries>
 
 </chart:SfChart>
 
@@ -1281,20 +1281,20 @@ Doughnut segments can be separated as individual circles using the [`IsStackedDo
 
 {% highlight c# %}
 
-            SfChart chart = new SfChart();
+SfChart chart = new SfChart();
 
-            DoughnutSeries doughnutSeries = new DoughnutSeries()
-            {
-                XBindingPath = "Category",
-                YBindingPath = "Expenditure",
-                ItemsSource = new ViewModel().ExpenditureData,
-                IsStackedDoughnut = true,
-                CapStyle = DoughnutCapStyle.BothCurve,
-                SegmentSpacing = 0.2,
-                MaximumValue = 100
-            };
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+    XBindingPath = "Category",
+    YBindingPath = "Expenditure",
+    ItemsSource = new ViewModel().ExpenditureData,
+    IsStackedDoughnut = true,
+    CapStyle = DoughnutCapStyle.BothCurve,
+    SegmentSpacing = 0.2,
+    MaximumValue = 100
+};
 
-            chart.Series.Add(doughnutSeries);
+chart.Series.Add(doughnutSeries);
 
 {% endhighlight %}
 
@@ -1310,18 +1310,18 @@ You can add any content to the center of the doughnut chart using the [`CenterVi
 {% highlight xaml %}
 
 <chart:SfChart>
-            …
-            <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
-                                  IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
-                                  MaximumValue="100">
+    …
+    <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
+                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+                          MaximumValue="100">
 
-                <chart:DoughnutSeries.CenterView>
-                    <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
-                        <Image Source="/Image/Person.png" Width="164" Height="164"/>
-                    </ContentControl>
-                </chart:DoughnutSeries.CenterView>
+        <chart:DoughnutSeries.CenterView>
+            <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <Image Source="/Image/Person.png" Width="164" Height="164"/>
+            </ContentControl>
+        </chart:DoughnutSeries.CenterView>
 								  
-            </chart:DoughnutSeries>
+    </chart:DoughnutSeries>
 
 </chart:SfChart>
 
@@ -1329,19 +1329,19 @@ You can add any content to the center of the doughnut chart using the [`CenterVi
 
 {% highlight c# %}
 
-            ContentControl centerView = new ContentControl()
-            {
-                Content = new Image()
-                {
-                    HorizontalAlignment = HorizontalAlignment.Center,
-                    VerticalAlignment = VerticalAlignment.Center,
-                    Source = new BitmapImage(new Uri("Image/Person.png", UriKind.Relative)),
-                    Width = 164,
-                    Height = 164
-                }
-            };
+ContentControl centerView = new ContentControl()
+{
+    Content = new Image()
+    {
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center,
+        Source = new BitmapImage(new Uri("Image/Person.png", UriKind.Relative)),
+        Width = 164,
+        Height = 164
+    }
+};
 
-            doughnutSeries.CenterView = centerView;
+doughnutSeries.CenterView = centerView;
 
 {% endhighlight %}
 
