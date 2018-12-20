@@ -548,6 +548,28 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", M
 
 You can refer more information about handling the column level operations for manually defined columns in Column types section.
 
+### Autogenerate column for CustomType Property
+
+You can generate the columns only for custom parent type property by using [AutoGenerateColumnsModeForCustomType] https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AutoGenerateColumnsModeForCustomType.html) as Parent in SfDataGrid.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid ItemsSource="{Binding Source}" x:Name="dataGrid"
+                        AutoGenerateColumnsForCustomType="True"
+                        AutoGenerateColumnsModeForCustomType="Parent"
+                        AllowEditing="True"
+                        AllowFiltering="True" 
+                        AllowSorting="True" 
+                        ShowGroupDropArea="True"
+                        ColumnSizer="Star" >
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.AutoGenerateColumnsForCustomType = true;
+this.dataGrid.AutoGenerateColumnsModeForCustomType = AutoGenerateColumnsModeForCustomType.Parent;             
+{% endhighlight %}
+{% endtabs %}
+
 ## Column manipulation
 
 You can get the columns (added or auto-generated) from [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) property.
