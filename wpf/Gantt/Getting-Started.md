@@ -19,7 +19,7 @@ Gantt control is composed of three controls. They are:
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Gantt appearance and structure](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -29,7 +29,7 @@ Gantt Grid is a table view control which displays the scheduled tasks/activities
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Gantt grid allotment](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -45,7 +45,7 @@ Gantt Chart is an items control which provides a graphically representation of t
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Gantt chart allotment](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -62,7 +62,7 @@ Gantt Schedule is a medium to measure the progress in the Gantt control. Using t
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Gantt schedule allotment](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -70,7 +70,7 @@ Gantt Schedule is a medium to measure the progress in the Gantt control. Using t
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Gantt flow diagram](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -237,7 +237,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+   ![Designer page in application](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -247,7 +247,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+   ![ToolBox window in application](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -257,7 +257,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img8.png)
+   ![Loading gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -267,7 +267,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+   ![Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -277,7 +277,7 @@ The following are the steps to create Gantt control through designer.
 
 ## Adjusting Gantt and Grid Size
 
-GanttControl allows user to set the width for GanttChart and GanttGrid  using the property [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ChartWidth.html) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~GridWidth.html). Below code sample demonstrates to set width for chart and grid.
+The GanttControl allows users set the width for GanttChart and GanttGrid  using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ChartWidth.html) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~GridWidth.html) properties. The following code sample demonstrates how to set width for chart and grid.
 
 {% tabs %}
 
@@ -309,7 +309,7 @@ Gantt.ChartWidth = new GridLength(800);
 
 ## Schedule Padding 
 
-Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ScheduleRangePadding.html) property in GanttControl. It used to extend the schedule with number of lower timescale units. To improving user loading experiences.
+Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ScheduleRangePadding.html) property in GanttControl. This property extends the schedule with number of lower timescale units to improve user-loading experiences.
 
 {% tabs %}
 
