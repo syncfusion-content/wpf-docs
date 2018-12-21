@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Setting Window State| DocumentContainer | Wpf | Syncfusion
 description: Explains about window states of MDIWindow in DocumentContainer
