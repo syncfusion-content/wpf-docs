@@ -4666,7 +4666,7 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 
 The following output is generated using the code above.
 
-![Richtext box cell](Cell-Types_images/Cell-Types_img28.jpeg)
+![Richtextbox celltype](Cell-Types_images/Cell-Types_img28.jpeg)
 
 
 
