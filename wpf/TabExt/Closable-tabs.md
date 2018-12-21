@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Behavior of TabItemExt's CloseButton in TabControlExt | Syncfusion
 description: Explains about the behavior of TabItem's CloseButton in TabControlExt for WPF
@@ -93,7 +93,7 @@ stackPanel.Children.Add(tabControlExt);
 {% endtabs %}
 
 
-![Display close button in both TabItem and TabPanel](Closable-tabs-images/CloseButtonType-Both.jpeg)
+![Display close button in both TabItem and TabPanel](closable-tabs-images/closebuttontype-both.jpeg)
 
 
 ## Show/Hide the close button for specific TabItem
@@ -133,7 +133,7 @@ The close button of TabItemExt is hidden<br/><br/></td></tr>
 {% endhighlight %}
 {% endtabs %}
 
-![Items of TabControl is rendered with different values of CloseButtonState](Closable-tabs-images/Setting-CloseButtonState-TabItems.png)
+![Items of TabControl is rendered with different values of CloseButtonState](closable-tabs-images/setting-closebuttonstate-tabitems.png)
 
 
 N> "Beijing" TabItem has CloseButtonState as visible, "Madagascar" TabItem has CloseButtonState as Collapsed, and "New York" TabItem has CloseButtonState as Hidden.
@@ -197,5 +197,5 @@ The following code sample illustrates restricting the closing functionality of T
 {% endhighlight %}
 {% endtabs %}
 
-![Beijing tabitem is non-closable](Closable-tabs-images/Non-closable-item.png)
+![Beijing tabitem is non-closable](closable-tabs-images/non-closable-item.png)
 
