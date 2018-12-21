@@ -4456,7 +4456,7 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
         uiElement.Content = style.CellValue;
     }
 
-	public override void CreateRendererElement(ContentControl uiElement, GridRenderStyleInfo style)
+    public override void CreateRendererElement(ContentControl uiElement, GridRenderStyleInfo style)
     {
 
         bool found = false;
