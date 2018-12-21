@@ -110,7 +110,7 @@ public class ViewModel
 1. Data update using [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
 2. Details view is not supported.
 3. [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
-4. DataTable collection is not supported
+4. DataTable collection is not supported.
 
 ## Incremental Loading
  
