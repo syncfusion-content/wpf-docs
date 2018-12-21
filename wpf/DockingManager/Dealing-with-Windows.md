@@ -1157,7 +1157,7 @@ The [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Separator between CustomMenuItems](Dealing-with-Windows_images/display_separator.png)
+![Displaying Separator between CustomMenuItems](Dealing-with-Windows_images/display-separator.png)
 
 ### Customizing ContextMenuItems Visibility
 
