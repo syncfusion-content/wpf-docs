@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dealing with Windows of Syncfusion DockingManager control for WPF
 description: Learn how to deal with windows of DockingManager progrmmatically and customize the windows
@@ -1157,7 +1157,7 @@ The [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Separator between CustomMenuItems](Dealing-with-Windows_images/Display_Separator.png)
+![Displaying Separator between CustomMenuItems](Dealing-with-Windows_images/display_separator.png)
 
 ### Customizing ContextMenuItems Visibility
 
