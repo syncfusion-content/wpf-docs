@@ -76,7 +76,7 @@ Likewise, you can also add other controls from the table above. A sample output 
 
 
 
-![](Cell-Types_images/Cell-Types_img1.jpeg)
+![Checkbox cell type](Cell-Types_images/Cell-Types_img1.jpeg)
 
 
 
@@ -169,7 +169,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img2.jpeg)
+![Combobox celltype](Cell-Types_images/Cell-Types_img2.jpeg)
 
 
 
@@ -196,7 +196,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img3.jpeg)
+![Autocomplete combobox](Cell-Types_images/Cell-Types_img3.jpeg)
 
 
 
@@ -223,7 +223,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img4.jpeg)
+![Exclusive combobox](Cell-Types_images/Cell-Types_img4.jpeg)
 
 
 
@@ -254,7 +254,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img5.jpeg)
+![Editable combobox](Cell-Types_images/Cell-Types_img5.jpeg)
 
 
 
@@ -283,7 +283,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img6.jpeg)
+![Autocomplete combobox](Cell-Types_images/Cell-Types_img6.jpeg)
 
 
 
@@ -310,7 +310,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img7.jpeg)
+![Exclusive combobox](Cell-Types_images/Cell-Types_img7.jpeg)
 
 
 
@@ -352,7 +352,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img8.jpeg)
+![Editable combobox](Cell-Types_images/Cell-Types_img8.jpeg)
 
 
 
@@ -387,7 +387,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img9.jpeg)
+![Dropdown list celltype](Cell-Types_images/Cell-Types_img9.jpeg)
 
 
 
@@ -419,7 +419,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img10.jpeg)
+![Autocomplete dropdown list](Cell-Types_images/Cell-Types_img10.jpeg)
 
 
 
@@ -497,7 +497,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img11.jpeg)
+![Currency celltype](Cell-Types_images/Cell-Types_img11.jpeg)
 
 
 
@@ -531,7 +531,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img12.jpeg)
+![Currency value with nagative pattern](Cell-Types_images/Cell-Types_img12.jpeg)
 
 
 
@@ -565,7 +565,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img13.jpeg)
+![Currency value with currency settings](Cell-Types_images/Cell-Types_img13.jpeg)
 
 
 
@@ -692,7 +692,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img14.jpeg)
+![Datetime celltype](Cell-Types_images/Cell-Types_img14.jpeg)
 
 
 
@@ -789,7 +789,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img15.jpeg)
+![Doubleedit celltype](Cell-Types_images/Cell-Types_img15.jpeg)
 
 
 Double Edit Cell
@@ -860,7 +860,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img16.jpeg)
+![Integeredit celltype](Cell-Types_images/Cell-Types_img16.jpeg)
 
 
 
@@ -905,7 +905,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img17.jpeg)
+![Maskedit celltype](Cell-Types_images/Cell-Types_img17.jpeg)
 
 
 
@@ -995,7 +995,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img18.jpeg)
+![Percentedit celltype](Cell-Types_images/Cell-Types_img18.jpeg)
 
 
 
@@ -1047,7 +1047,7 @@ this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 {% endtabs %}
 
 
-![](Cell-Types_images/Cell-Types_img19.png)
+![Richtextbox celltype](Cell-Types_images/Cell-Types_img19.png)
 
 
 
@@ -1140,7 +1140,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img20.jpeg)
+![Updownedit celltype](Cell-Types_images/Cell-Types_img20.jpeg)
 
 
 
@@ -1208,7 +1208,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img21.jpeg)
+![Nestedgrid](Cell-Types_images/Cell-Types_img21.jpeg)
 
 
 
@@ -1439,7 +1439,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img22.jpeg)
+![Nested grid-rows tied to the parent grid rows](Cell-Types_images/Cell-Types_img22.jpeg)
 
 
 
@@ -1546,7 +1546,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img23.jpeg)
+![Nested grid-columns tied to the parent grid columns](Cell-Types_images/Cell-Types_img23.jpeg)
 
 
 
@@ -1606,7 +1606,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img24.jpeg)
+![Nested grid-rows and columns independent of parent grid](Cell-Types_images/Cell-Types_img24.jpeg)
 
 
 
@@ -1644,7 +1644,7 @@ Essential Grid's Formula Library contains the mathematical functions that are av
 
 
 
-![](Cell-Types_images/Cell-Types_img25.jpeg)
+![Sample formula library usage](Cell-Types_images/Cell-Types_img25.jpeg)
 
 
 
@@ -4393,7 +4393,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img26.jpeg)
+![Cutom drop-down](Cell-Types_images/Cell-Types_img26.jpeg)
 
 
 
@@ -4504,7 +4504,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img27.jpeg)
+![Data template with cell template assigned](Cell-Types_images/Cell-Types_img27.jpeg)
 
 
 
@@ -4646,7 +4646,7 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 
 The following output is generated using the code above.
 
-![](Cell-Types_images/Cell-Types_img28.jpeg)
+![Richtext box cell](Cell-Types_images/Cell-Types_img28.jpeg)
 
 
 
@@ -4744,7 +4744,7 @@ grid.Model.RowHeights[2] = 400d;
 
 The following output is generated using the code above.
 
-![](Cell-Types_images/Cell-Types_img29.jpeg)
+![Chart cell](Cell-Types_images/Cell-Types_img29.jpeg)
 
 
 
@@ -4799,7 +4799,7 @@ grid.Model[2, 2].ImageIndex = 1;
 
 The following output is generated using the code above.
 
-![](Cell-Types_images/Cell-Types_img30.jpeg)
+![Text image cell](Cell-Types_images/Cell-Types_img30.jpeg)
 
 
 
