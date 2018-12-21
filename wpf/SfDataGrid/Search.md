@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Search | SfDataGrid | WPF | Syncfusion
+title: Search | DataGrid | WPF | Syncfusion
 description: How to search the given text in SfDataGrid
 platform: wpf
 control: SfDataGrid
