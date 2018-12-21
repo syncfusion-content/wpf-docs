@@ -4467,7 +4467,7 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
 #### Data Template Definition
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 <DataTemplate x:Key="editableEmployee">
 <StackPanel Margin="8,0"  Orientation="Horizontal">
 <TextBlock FontWeight="Bold" syncfusion:VisualContainer.WantsMouseInput="False" Text="{Binding Path=Name}" Width="70" />
@@ -4662,7 +4662,7 @@ Grid provides inherent support to host chart controls. This is achieved by using
 1. Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 <local:MyDataCollection x:Key="SeriesData1"/>
 <DataTemplate x:Key="DataChart">
 <!--Hosting Chart control in second Row of the Grid-->
