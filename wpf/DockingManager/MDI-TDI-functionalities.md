@@ -898,7 +898,7 @@ The PinButton will be visible in the document tabs only when the property [ShowP
 
 {% endtabs %}
 
-![Displaying PinButton to specific items](MDI_TDIfunctionalities_images\Display-PinButton.png)
+![Displaying PinButton to specific items](MDI_TDIfunctionalities_images\display-pinbutton.png)
 
 If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true, the pin button will be enabled and visible. If the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true and [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is false, pin button will be displayed as disabled button. 
 
@@ -1004,7 +1004,7 @@ The pin or unpin operations can be done through document tab item's ContextMenu 
 
 The following images illustrates the same,
 
-![Displays option in ContextMenu to pin the tab itemExt](MDI_TDIfunctionalities_images\PinTab-option-ContextMenu.png)
+![Displays option in ContextMenu to pin the tab itemExt](MDI_TDIfunctionalities_images\pintab-option-contextmenu.png)
 
-![Displays option in ContextMenu to Unpin the tab itemExt](MDI_TDIfunctionalities_images\UnpinTab-option-ContextMenu.png)
+![Displays option in ContextMenu to Unpin the tab itemExt](MDI_TDIfunctionalities_images\unpintab-option-contextmenu.png)
 

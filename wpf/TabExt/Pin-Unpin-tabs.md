@@ -54,7 +54,7 @@ The PinButton will be visible in the TabItemExt only when the [ShowPin](https://
 
 {% endtabs %}
 
-![Displaying PinButton to specific items](Pin-Unpin-tabs-images\Displaying-PinButton.png)
+![Displaying PinButton to specific items](pin-unpin-tabs-images\displaying-pinbutton.png)
 
 If the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property is true, the PinButton will be enabled and will be visible. If the [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ShowPin.html) property is true, and the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property is false, the PinButton will be displayed as a disabled button.
 
@@ -88,9 +88,9 @@ The pin or unpin operations can be done through TabItemExt's ContextMenu also. I
 
 The following images illustrates the same,
 
-![Displays option to pin the TabItemExt](Pin-Unpin-tabs-images\PinTab-option-ContextMenu.png)
+![Displays option to pin the TabItemExt](pin-unpin-tabs-images\pintab-option-contextmenu.png)
 
-![Displays option to Unpin the TabItemExt](Pin-Unpin-tabs-images\UnpinTab-option-ContextMenu.png)
+![Displays option to Unpin the TabItemExt](pin-unpin-tabs-images\unpintab-option-contextmenu.png)
 
 ## Re-order pinned tabs
 
