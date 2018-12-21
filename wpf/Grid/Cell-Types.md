@@ -4456,6 +4456,26 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
         uiElement.Content = style.CellValue;
     }
 
+	public override void CreateRendererElement(ContentControl uiElement, GridRenderStyleInfo style)
+    {
+
+        bool found = false;
+
+        if (style.CellItemTemplateKey != null)
+        {
+            DataTemplate dt = (DataTemplate)style.GridControl.TryFindResource(style.CellItemTemplateKey);
+            found = dt != null;
+            if (found)
+                uiElement.ContentTemplate = dt;
+        }
+
+        if (!found)
+            uiElement.ContentTemplate = style.CellItemTemplate;
+
+        uiElement.Content = style.CellValue;
+        base.CreateRendererElement(uiElement, style);
+    }
+	
     protected override string GetControlTextFromEditorCore(ContentControl uiElement)
     {
         return uiElement.Content.ToString();
