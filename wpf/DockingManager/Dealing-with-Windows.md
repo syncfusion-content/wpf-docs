@@ -1323,6 +1323,6 @@ The [EnableFlatLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~S
 
 {% endtabs %}
 
-![DockingManager acts as layout control](Dealing-with-Windows_images/DockingManager-as-FlatLayout.jpeg)
+![DockingManager acts as layout control](Dealing-with-Windows_images/dockingManager-as-flatlayout.jpeg)
 
 
