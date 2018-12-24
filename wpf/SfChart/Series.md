@@ -797,9 +797,142 @@ chart.Series.Add(series);
 
 ![PieCoefficient support in WPF Chart](Series_images/pie_1.png)
 
-**Group small data points into “others”**
+### Group small data points into “others”**
 The small segments in the pie chart can be grouped into the “others” category using the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) and [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) properties of PieSeries. The [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is used to specify the grouping type based on slice [`Angle`], actual data point [`Value`], or [`Percentage`], and the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as other segment. The default value of the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is [`double.NAN`], and the default value of the [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is Value.
 
+**Pie series without grouping**
+
+![Pie series without grouping feature](Series_images/NonGroupingPie.png)
+
+**Pie series with grouping (Mode - Value)**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
+                             GroupMode="Value" GroupTo="1000" >
+
+                <chart:PieSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                              ConnectorHeight="80" 
+                                              ShowLabel="True" 
+                                              LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                              SegmentLabelContent="LabelContentPath">
+                    </chart:ChartAdornmentInfo>
+                </chart:PieSeries.AdornmentsInfo>
+            </chart:PieSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            pieSeries.GroupMode = PieGroupMode.Value;
+            pieSeries.GroupTo = 1000;
+
+            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+            {
+                ShowConnectorLine = true,
+                ShowLabel = true,
+                ConnectorHeight = 80,
+                LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+                SegmentLabelContent = LabelContent.LabelContentPath,
+            };
+
+            pieSeries.AdornmentsInfo = adornmentInfo;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pie series with grouping feature in value mode](Series_images/GroupingPie.png)
+
+**Pie series with grouping (Mode - Angle)**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" 
+                 GroupMode="Angle" GroupTo="30">
+                 
+    <chart:PieSeries.AdornmentsInfo>
+        <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                  ConnectorHeight="80" 
+                                  ShowLabel="True" 
+                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                  SegmentLabelContent="LabelContentPath">
+        </chart:ChartAdornmentInfo>
+    </chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+pieSeries.GroupMode = PieGroupMode.Angle;
+pieSeries.GroupTo = 30;
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowConnectorLine = true,
+        ShowLabel = true,
+        ConnectorHeight = 80,
+        LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+        SegmentLabelContent = LabelContent.LabelContentPath,
+    };
+
+pieSeries.AdornmentsInfo = adornmentInfo;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pie series with grouping feature in angle mode](Series_images/GroupingPie.png)
+
+**Pie series with grouping (Mode - Percentage)**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"                
+                 GroupMode="Percentage" GroupTo="10" >
+
+    <chart:PieSeries.AdornmentsInfo>
+        <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                  ConnectorHeight="80" 
+                                  ShowLabel="True" 
+                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                  SegmentLabelContent="LabelContentPath">
+        </chart:ChartAdornmentInfo>
+    </chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+pieSeries.GroupMode = PieGroupMode.Percentage;
+pieSeries.GroupTo = 10;
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowConnectorLine = true,
+        ShowLabel = true,
+        ConnectorHeight = 80,
+        LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+        SegmentLabelContent = LabelContent.LabelContentPath,
+    };
+
+pieSeries.AdornmentsInfo = adornmentInfo;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pie series with grouping feature in percentage mode](Series_images/GroupingPie.png)
 
 ### Doughnut
 
@@ -1131,8 +1264,90 @@ Doughnut segments can be separated as individual circles using the [`IsStackedDo
 •	[`TrackBorderColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
 •	[`TrackBorderWidth`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart>
+    …
+    <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
+                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+                          MaximumValue="100">
+    </chart:DoughnutSeries>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+    XBindingPath = "Category",
+    YBindingPath = "Expenditure",
+    ItemsSource = new ViewModel().ExpenditureData,
+    IsStackedDoughnut = true,
+    CapStyle = DoughnutCapStyle.BothCurve,
+    SegmentSpacing = 0.2,
+    MaximumValue = 100
+};
+
+chart.Series.Add(doughnutSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Stacked doughnut chart in WPF](Series_images/StackedDoughnut.png)
+
 ### Add content to the center of doughnut chart
 You can add any content to the center of the doughnut chart using the [`CenterView`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) property of [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html). The binding context of the [`CenterView`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) will be the respective [`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart>
+    …
+    <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
+                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+                          MaximumValue="100">
+
+        <chart:DoughnutSeries.CenterView>
+            <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <Image Source="/Image/Person.png" Width="164" Height="164"/>
+            </ContentControl>
+        </chart:DoughnutSeries.CenterView>
+								  
+    </chart:DoughnutSeries>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ContentControl centerView = new ContentControl()
+{
+    Content = new Image()
+    {
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center,
+        Source = new BitmapImage(new Uri("Image/Person.png", UriKind.Relative)),
+        Width = 164,
+        Height = 164
+    }
+};
+
+doughnutSeries.CenterView = centerView;
+
+{% endhighlight %}
+
+{% endtabs %}	
+
+![Stacked doughnut chart with center view](Series_images/StackedDoughnutCenterView.png)
 
 ## Funnel and pyramid Charts
 
@@ -2994,10 +3209,6 @@ chart.Series.Add(series);
 
 ![RangeColumn chart type in WPF](Series_images/rangeseries.png)
 
-### Plot a range column chart with a single Y-value
-
-A typical range column chart requires two values, namely high and low, but this feature allows users to plot a range column chart with a single y-value. You can plot a range column chart with a single y-value when the y-value is considered as delta value for a range column chart and the segments are arranged at the center of the chart area.
-
 ### Range Area
 
 [`RangeAreaSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html#) is used to display continuous data points as a set of lines that vary between [`High`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html#) and [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html#) values over intervals of time and across different categories. 
@@ -3127,11 +3338,7 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endtabs %}
 
-<<<<<<< HEAD
-![Spline Range Series ](Series_images/splinerangearea.png)
-=======
 ![Spline Range Area Series ](Series_images/splinerangearea.png)
->>>>>>> 03e2fdbff065b4e2e8b8c88b8a25aa5623ef53c2
 
 ### Histogram 
 
