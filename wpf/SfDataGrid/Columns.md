@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Columns in SfDataGrid
+title: Columns | DataGrid | WPF | Syncfusion
 description: How to add or remove columns in SfDataGrid
 platform: wpf
 control: SfDataGrid
@@ -523,7 +523,7 @@ public string Country
 
 SfDataGrid provides support for display format string and it can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns] (http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html)  property.
 
-You can enable or disable display format string for column in model by setting DisplayFormatAttributes.DataFormatString property.
+You can enable or disable display format string for column in model by setting `DisplayFormatAttributes.DataFormatString` property.
 
 In the below code snippet explains the simple implementation of Display Format String.
 
