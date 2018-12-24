@@ -43,7 +43,7 @@ DockingManager.SetState(Document2, DockState.Document);
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
+![Displays Document tab item in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
 
 To make the document child window as MDI document, set the `ContainerMode` as `MDI`
 
@@ -71,7 +71,7 @@ SyncDockingManager.ContainerMode = DocumentContainerMode.MDI;
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img2.jpeg)
+![Document Items are rendered is MDI state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img2.jpeg)
 
 
 ## Setting MDI Window state
@@ -96,7 +96,7 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Minimized)
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img3.jpeg)
+![MDI window is rendered in minimized state](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img3.jpeg)
 
 
 
@@ -208,7 +208,7 @@ DockingManager1.SwitchMode =SwitchMode.Immediate
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img4.jpeg)
+![SwitchMode of DockingManager is set as Immediate, so the MDI windows are activated while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img4.jpeg)
 
 
 ### List – Switch the MDI document windows in list format.
@@ -230,7 +230,7 @@ DockingManager1.SwitchMode =SwitchMode.List
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img5.jpeg)
+![SwitchMode of DockingManager is set as List, so the header of MDI windows are listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img5.jpeg)
 
 
 ### QuickTabs
@@ -252,7 +252,7 @@ DockingManager1.SwitchMode =SwitchMode.QuickTabs
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img6.jpeg)
+![SwitchMode of DockingManager is set as QuickTabs, so the MDI windows are listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img6.jpeg)
 
 
 ### VistaFlip
@@ -274,7 +274,7 @@ DockingManager1.SwitchMode =SwitchMode.VistaFlip
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img7.jpeg)
+![SwitchMode of DockingManager is set as VistaFlip, so the active MDI window is brought into view while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img7.jpeg)
 
 
 ### VS2005
@@ -296,7 +296,7 @@ DockingManager1.SwitchMode =SwitchMode.VS2005
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img8.jpeg)
+![SwitchMode of DockingManager is set as VS2005, Selected MDI window and the header of MDI windows andare listed in popup while navigation](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img8.jpeg)
 
 
 ## Setting MDI Layout
@@ -327,7 +327,7 @@ End Sub
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img9.jpeg)
+![MDI windows are arranged horizontally](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img9.jpeg)
 
 
  `Vertical` – Arranges the MDI windows vertically.
@@ -353,7 +353,7 @@ End Sub
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img10.jpeg)
+![MDI windows are arranged vertically](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img10.jpeg)
 
 
 `Cascade` - Arranges the layout in a cascade manner.
@@ -379,7 +379,7 @@ End Sub
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img11.jpeg)
+![MDI windows are arranged vertically in cascade layout](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img11.jpeg)
 
 
 
@@ -409,7 +409,7 @@ DockingManager.SetCanClose(Content1, false);
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img12.jpeg)
+![Closebutton of the MDI window is disaled when CanClose proeprty is false](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img12.jpeg)
 
 
 ## Indexing an Item in TDI
@@ -448,7 +448,7 @@ TDILayoutPanel.SetTDIIndex(Content1,0)
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img13.jpeg)
+![First Document is arranged at zeroth based on the TDIIndex value](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img13.jpeg)
 
 
 ## Drag / Drop support in TDI
@@ -522,18 +522,18 @@ DockingManager.SetShowCloseAllButThisMenuItem(Item2, false);
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img14.jpeg)
+![MenuItems which are related to Close functionlities are collapsed](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img14.jpeg)
 
 
-# Creating Document Tab Group
+## Creating Document Tab Group
 
 TDI document can be grouped like VisualStudio. It can be grouped by drag and Drop and also using the options in context menu items.
 
-## TabGroup creation using ContextMenu option
+### TabGroup creation using ContextMenu option
 
 In DockingManager, new tab group can be created at horizontal or vertical side in the document area using `ContextMenu` option.
 
-### Creating Vertical Tab Group 
+#### Creating Vertical Tab Group 
 
 To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method `CreateVerticalTabGroup(UIElement)` of the DocumentContainer.
 
@@ -553,7 +553,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateVerticalTabGroup(
 
 {% endtabs %}
 
-### Creating Horizontal Tab Group 
+#### Creating Horizontal Tab Group 
 
 To create a horizontal tab group in the Tabbed document, select the "New Horizontal Tab Group context menu item and also it can be created programmatically by calling the method `CreateHorizontalTabGroup(UIElement)` of the DocumentContainer.
 
@@ -575,12 +575,12 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateHorizontalTabGrou
 
 ### Adding Tab in a Group 
 
-In TDI document, new tab group can be created by dragging the TabItem into the Document area and click the "New Tab Group" menu item from context menu item.
+In TDI document, new tab group can be created by dragging the tab item into the Document area and click the "New Tab Group" menu item from context menu item.
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img15.jpeg)
+![ContextMenu is displayed with New Tab Group and Cancel items, when the Documenttab item is dragged and dropped](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img15.jpeg)
 
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
+![Using the ContextMenu,  first item has been inserted to Next Tab group](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img16.jpeg)
 
 ## TabGroup creation through mouse interaction 
 
@@ -610,9 +610,9 @@ Moving document items to a docked state can be restricted by setting the TabSwit
 
 The following screenshot shows a tab group being created at the top of the document area.
 
-![](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
+![Second Item Dock window is dragged and dropping into existing tab group through drag providers to create new Tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top.png)
 
-![](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
+![Second Item Dock window is now Documented in New tab group](MDI_TDIfunctionalities_images/TabGroupCreation_Top1.png)
 
 ### ActiveToolWindows mode
 
@@ -638,15 +638,15 @@ Dock items can be moved to both docked and document states in the document area 
 
 The following screenshot shows moving an item to a docked state at the right side of the document area.
 
-![](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
+![First Item document window is moving to Dock state using outer Drag Providers](MDI_TDIfunctionalities_images/DockWindowCreation_Right.png)
 
-![](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
+![First Item is moved to Dock state](MDI_TDIfunctionalities_images/DockWindowCreation_Right1.png)
 
 The following screenshot shows moving an item to the document state at the right side of the document area.
 
-![](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
+![First Item dock window is moving to Document state using inner Drag Providers](MDI_TDIfunctionalities_images/TabGroupCreation_Right.png)
 
-![](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
+![First Item is moved to Document state ](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
 
 N> These functionalities will take effect only when the `IsVs2010DraggingEnabled` property of DockingManager is true.
 
@@ -696,7 +696,7 @@ SyncDockingManager.IsVS2010DraggingEnabled = true;
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img17.jpeg)
+![First Document window is floated by dragging the document window](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img17.jpeg)
 
 
 ## TDI Header Renaming Support
@@ -743,7 +743,7 @@ SyncDockingManager.HideTDIHeaderOnSingleChild = true;
 
 {% endtabs %}
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img18.jpeg)
+![Document tab item is hidden when there is only one child to the docking manager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img18.jpeg)
 
 
 ## Add New button in Header Panel
@@ -779,6 +779,232 @@ End If
 {% endtabs %}
 
 
-![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img19.jpeg)
+![Add New Tab button is displaying in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img19.jpeg)
 
+## Pin and Unpin tab items
+
+The following section explains the Pin and Unpin tab items in DockingManager.
+
+### Enabling/disabling pinning behavior 
+
+The [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) attached property of DocumentContainer decides whether the document tab item could be pinnable or not. The corresponding tab item will be pinned when the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true. When this property is set to false, the pin and unpin behaviors of document tab item will be disabled. The default value of the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) property is false.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager Grid.Row="1" x:Name="DockingManager" UseDocumentContainer="True">            			
+            <!-- Output dock window -->
+            <ContentControl Name="Output"
+						   syncfusion:DockingManager.Header="Output"
+						   syncfusion:DockingManager.SideInDockedMode="Bottom"
+						   syncfusion:DockingManager.DesiredHeightInDockedMode="200" 
+						   >                    
+            </ContentControl>
+           
+			<!-- SolutionExplorer dock window -->
+			<ContentControl Name="SolutionExplorer"  
+					  syncfusion:DockingManager.Header="Solution Explorer"
+					  syncfusion:DockingManager.SideInDockedMode="Right"
+					  syncfusion:DockingManager.DesiredWidthInDockedMode="300"                     
+					  >			
+			</ContentControl>
+			<!-- ClassView dock window -->
+			
+			<!-- Toolbox dock window -->
+			<ContentControl Name="Toolbox"
+					  syncfusion:DockingManager.Header="Toolbox" 
+					  syncfusion:DockingManager.State="Dock" 
+                          HorizontalContentAlignment="Left" 
+					  syncfusion:DockingManager.DesiredWidthInDockedMode="250"
+                      >			
+			</ContentControl>
+			
+			<!-- Features dock window -->
+			<ContentControl Name="Features"
+					  syncfusion:DockingManager.Header="Features" 
+					  syncfusion:DockingManager.State="Document" 
+					  syncfusion:DocumentContainer.AllowPin="True"                                
+                     >
+			</ContentControl>
+			<!-- Docking dock window -->
+			<ContentControl Name="Docking"
+					  syncfusion:DockingManager.Header="Docking" 
+					  syncfusion:DockingManager.State="Document" 
+					  syncfusion:DocumentContainer.AllowPin="True"                                
+                     >
+			</ContentControl>
+		</syncfusion:DockingManager>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Pin and Unpin tab items using PinButton
+
+The PinButton will be visible in the document tabs only when the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true. The default value of the property is false, so the PinButton will be collapsed from the header panel of the document tab item.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+  <syncfusion:DockingManager Grid.Row="1" x:Name="DockingManager" UseDocumentContainer="True">            			
+            <!-- Output dock window -->
+            <ContentControl Name="Output"
+						   syncfusion:DockingManager.Header="Output"
+						   syncfusion:DockingManager.SideInDockedMode="Bottom"
+						   syncfusion:DockingManager.DesiredHeightInDockedMode="200" 
+						   >                    
+            </ContentControl>
+           
+			<!-- SolutionExplorer dock window -->
+			<ContentControl Name="SolutionExplorer"  
+					  syncfusion:DockingManager.Header="Solution Explorer"
+					  syncfusion:DockingManager.SideInDockedMode="Right"
+					  syncfusion:DockingManager.DesiredWidthInDockedMode="300"                     
+					  >			
+			</ContentControl>
+			<!-- ClassView dock window -->
+			
+			<!-- Toolbox dock window -->
+			<ContentControl Name="Toolbox"
+					  syncfusion:DockingManager.Header="Toolbox" 
+					  syncfusion:DockingManager.State="Dock" 
+                          HorizontalContentAlignment="Left" 
+					  syncfusion:DockingManager.DesiredWidthInDockedMode="250"
+                      >			
+			</ContentControl>
+			
+			<!-- Features dock window -->
+			<ContentControl Name="Features"
+					  syncfusion:DockingManager.Header="Features" 
+					  syncfusion:DockingManager.State="Document" 
+					  syncfusion:DocumentContainer.AllowPin="True"                                
+                      syncfusion:DocumentContainer.ShowPin="True"
+                     >
+			</ContentControl>
+			<!-- Docking dock window -->
+			<ContentControl Name="Docking"
+					  syncfusion:DockingManager.Header="Docking" 
+					  syncfusion:DockingManager.State="Document" 
+					  syncfusion:DocumentContainer.AllowPin="False"  
+                      syncfusion:DocumentContainer.ShowPin="True"                              
+                     >
+			</ContentControl>
+		</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Displaying PinButton to specific items](MDI_TDIfunctionalities_images\display-pinbutton.png)
+
+If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true, the pin button will be enabled and visible. If the property [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ShowPinProperty.html) is true and [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is false, pin button will be displayed as disabled button. 
+
+
+#### Functionality of PinButton
+
+When the pin button of the document tab item is visible, the corresponding document tab item can be pinned or unpinned from the DockingManager. When the corresponding document tab item is pinned, it will be inserted at first position of the document tab items collection(if the pinned tab item collection has zero count. Otherwise, the pinned tab item will be added to the existing collection). When the document tab item is unpinned, it will be removed from the pinned tab item collection and added to the first position of the unpinned tab item collection.
+
+### Pin and Unpin the tab items programmatically
+
+document tab items can be pinned or unpinned from the DocumentContainer using [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) attached property of DocumentContainer. If the property [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) is set to true, the corresponding item will be added to respective index. Also,if the property [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsPinnedProperty.html) is set as false, the tab item will be removed from pinned collection and added to unpinned tab item collection. The default value of the property is False.
+
+### Pin and Unpin tab items through ContextMenu
+
+The pin or unpin operations can be done through document tab item's ContextMenu also. If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~AllowPinProperty.html) is true, and the document tab item is not pinned, the "Pin Tab" option will be visible. If the document tab item is pinned already, "Unpin Tab" will be visible. 
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DocumentContainer  
+                Name="DocContainer"
+	           Mode="TDI">
+                <syncfusion:DocumentContainer.Icon>
+                    <ImageBrush ImageSource="document.png"/>
+                </syncfusion:DocumentContainer.Icon>
+                                
+                <!--TDI/MDI Children elements of the Document Container-->
+                <FlowDocumentScrollViewer                      
+                    syncfusion:DocumentContainer.AllowPin="True"  
+                    syncfusion:DocumentContainer.Header="Document Container">
+                    <FlowDocument FontFamily="Calibri" FontSize="13" TextAlignment="Left">
+                        <Paragraph FontWeight="Bold" FontSize="15" TextAlignment="Center">
+                            Syncfusion WPF Document Container</Paragraph>
+                        <Paragraph>This  sample exhibits the special features 
+                                of the Syncfusion Document Container Control for 
+                                Windows Presentation Foundation(WPF).
+                        </Paragraph>
+                        <Paragraph>View this document to experience the features of the 
+                                Document Container.Document Container supports both TDI and MDI.
+                        </Paragraph>
+                        <Paragraph>On certain occasions, users may need the data to be contained in 
+                                the traditional MDI(Multiple Document Interface) and others where constant 
+                                comparison needs to be made between the documents requires a 
+                                TDI(Tabbed Document Interface).</Paragraph>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+                <FlowDocumentScrollViewer  
+                       syncfusion:DocumentContainer.AllowPin="True" 
+                       syncfusion:DocumentContainer.Header="Features" >
+                    <FlowDocument FontFamily="Calibri" FontSize="13" TextAlignment="Left" >
+                        <Paragraph FontWeight="Bold"  FontSize="15" TextAlignment="Center">Document 
+                                Container-Features</Paragraph>
+                        <Paragraph>Document container comes with a set of features. They include
+                        </Paragraph>
+                        <List>
+                            <ListItem>
+                                <Paragraph>Provides options for both MDI and TDI container Mode
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Various window switching styles. Ctrl+tab could be used 
+                                    to easily navigate through the windows</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Skins Support</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>State Persistence. Document container can be used to 
+                                    load, save data in IS, BIN and in XML</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Huge set of properties, methods and events for easy 
+                                    customization</Paragraph>
+                            </ListItem>
+                            <ListItem>
+                                <Paragraph>Document container can be resized and moved using the keyboard.
+                                </Paragraph>
+                            </ListItem>
+
+                        </List>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer >
+                <FlowDocumentScrollViewer  
+                        syncfusion:DocumentContainer.AllowPin="True"
+                        syncfusion:DocumentContainer.Header="Window 1" >
+                    <FlowDocument FontFamily="Calibri" FontSize="13" TextAlignment="Left">
+                        <Paragraph>For ease of navigation, users can switch between the MDI and TDI modes.
+                        </Paragraph>
+                        <Paragraph>Most users prefers keyboard to mouse navigation. Thus, to 
+                            satisfy all users, syncfusion Document Container is boosted by 
+                            Window Switcher(CTRL+TAB keys) for smooth, fine and flexible navigation 
+                            between interfaced windows. syncfusion ships five different modes of window 
+                            switchers.
+                        </Paragraph>
+                        <Paragraph>
+                            Hold down the CTRL key  and use the TAB keystroke repeatedly to 
+                            experience active switchers in effect.
+                        </Paragraph>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer>
+            </syncfusion:DocumentContainer>
+{% endhighlight %}
+{% endtabs %}
+
+The following images illustrates the same,
+
+![Displays option in ContextMenu to pin the tab itemExt](MDI_TDIfunctionalities_images\pintab-option-contextmenu.png)
+
+![Displays option in ContextMenu to Unpin the tab itemExt](MDI_TDIfunctionalities_images\unpintab-option-contextmenu.png)
 
