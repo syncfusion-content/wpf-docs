@@ -629,6 +629,6 @@ chart.Series.Add(series);
 
 ![Customizing series in WPF Chart](Styling-and-Customization_images/palette_9.png)
 
-You can find the complete series CustomTemplate sample from [`here`](https://github.com/SyncfusionExamples/how-to-customize-the-chart-series-in-wpf-sfchart).
+We have customized the BarSeries, BubbleSeries, ColumnSeries, LineSeries, ScatterSeries and StepLineSeries using [`CustomTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~CustomTemplate.html#) property. You can find the complete series CustomTemplate sample from [`here`](https://github.com/SyncfusionExamples/how-to-customize-the-chart-series-in-wpf-sfchart).
 
-    
+![Customizing series in WPF Chart](Styling-and-Customization_images/CustomTemplate.png)    
