@@ -797,7 +797,7 @@ chart.Series.Add(series);
 
 ![PieCoefficient support in WPF Chart](Series_images/pie_1.png)
 
-### Group small data points into “others”**
+### Group small data points into “others”
 The small segments in the pie chart can be grouped into the “others” category using the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) and [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) properties of PieSeries. The [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is used to specify the grouping type based on slice [`Angle`], actual data point [`Value`], or [`Percentage`], and the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as other segment. The default value of the [`GroupTo`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is [`double.NAN`], and the default value of the [`GroupMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is Value.
 
 **Pie series without grouping**
@@ -811,7 +811,7 @@ The small segments in the pie chart can be grouped into the “others” categor
 {% highlight xaml %}
 
             <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
-                             GroupMode="Value" GroupTo="1000" >
+				   GroupMode="Value" GroupTo="1000" >
 
                 <chart:PieSeries.AdornmentsInfo>
                     <chart:ChartAdornmentInfo ShowConnectorLine="True" 
