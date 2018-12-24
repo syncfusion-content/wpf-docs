@@ -63,9 +63,9 @@ this.dataGrid.SearchHelper.Search(TextBox.Text);
 
 ![search text highlighting color ](Search_images/Search_img3.png)
 
-### Changing Search Highlight Foreground
+### Changing foreground for search highlight
 
-In SfDatagrid, you can change the search text foreground color by setting [SearchHelper.SearchForegroundBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~SearchForegroundBrush.html) property. 
+In SfDatagrid, you can change the foreground color for search text by setting the [SearchHelper.SearchForegroundBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~SearchForegroundBrush.html) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -103,7 +103,7 @@ this.dataGrid.SearchHelper.FindNext("TextBox.Text ");
 
 ![highlight navigated search text](Search_images/Search_img4.png)
 
-You can highlight the currently navigated search text foreground color by using [SearchHelper.SearchForegroundHighlightBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~SearchForegroundHighlightBrush.html) property.
+You can highlight the foreground color of current navigated search text by using the [SearchHelper.SearchForegroundHighlightBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~SearchForegroundHighlightBrush.html) property.
 
 {% tabs %}
 {% highlight c# %}
