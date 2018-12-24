@@ -9,11 +9,11 @@ documentation: ug
 
 # Touch Support
 
-Syncfusion for WPF controls provides touch support. This feature allows your end users to interact with your applications on touch enabled devices such as touch screen monitors. It provides the extensibility and each of our specific controls are support to `Gestures`.
+Syncfusion controls for WPF provide touch support. This feature allows you interact with your applications on touch-enabled devices such as touch-screen monitors. It provides extensibility, and all our specific controls support to `Gestures`.
 
 ## Gesture
 
-Gestures determine whether a finger or stylus has moved over a control. Syncfusion WPF controls support the following touch gestures.
+Gestures determine whether a finger or stylus has to move over a control. Syncfusion WPF controls support the following touch gestures:
 
 * Swipe
 * Pinch
@@ -22,19 +22,19 @@ Gestures determine whether a finger or stylus has moved over a control. Syncfusi
 
 ### Swipe
 
-Moves one or more fingers across the screen in a specific horizontal or vertical direction. This gesture is quickly affected the screen after removed the finger from the screen. It is also used for selection process.
+Move one or more fingers across the screen in horizontal or vertical direction. This gesture quickly effects the screen after released the finger from screen. It is also used for selection process.
 
 ### Pinch
 
-Touch the two or more fingers on the screen, then move them towards zoom in or zoom out. Pinch is used commonly to change the size of picture, object or content on the screen. For example, if you were using google map, use pinch to zoom in or out of the google map.
+Touch the screen with two or more fingers, then move them to zoom in or zoom out the screen. Pinch is used commonly to change the size of picture, object, or content on the screen. For example, if you use Google maps, use pinch to zoom in or zoom out the Google maps.
 
 ### Tap
 
-Tap describes a click or touch on the object. If you tap once on an object on the screen, you can see that object is selected or clicked. This process is same as to click the left mouse button. If you tap twice on an object, an effect of zooming in or out of object (like as picture, maps and etc).
+Tap describes a click or touch on the object. If you tap an object on the screen once, you can see that the object is selected or clicked. This process is applicable to the left mouse button too. If you tap an object (picture, maps. etc.) twice, the object will be zoomed in or zoomed out.
 
 ### Hold
 
-Touch your fingers and hold on the screen for a few seconds. If you hold long presses on the screen or page, it can open the context menu of the current page. This gesture is like to same as right clicking with a mouse.
+Touch and hold the screen for a few seconds. If you long press the screen or page, the context menu of the current page will be opened. This gesture functions as same as the right-clicking a mouse.
 
 ## Controls Behavior
 
