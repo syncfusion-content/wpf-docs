@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Virtualization support in SfDataGrid.
+title: Data virtualization | DataGrid | WPF | Syncfusion
 description: How to use Data Virtualization in SfDataGrid.
 platform: wpf
 control: SfDataGrid
@@ -110,6 +110,7 @@ public class ViewModel
 1. Data update using [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
 2. Details view is not supported.
 3. [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
+4. DataTable collection is not supported.
 
 ## Incremental Loading
  
@@ -271,7 +272,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Virtualization_images/Data-Virtualization_img1.png)
+![wpf datagrid shows incremental loading](Data-Virtualization_images/Data-Virtualization_img1.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_Animation-1160118925.zip).
 
