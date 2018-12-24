@@ -811,7 +811,7 @@ The small segments in the pie chart can be grouped into the “others” categor
 {% highlight xaml %}
 
             <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
-                             GroupMode="Value" GroupTo="1000" >
+				   GroupMode="Value" GroupTo="1000" >
 
                 <chart:PieSeries.AdornmentsInfo>
                     <chart:ChartAdornmentInfo ShowConnectorLine="True" 
