@@ -629,5 +629,6 @@ chart.Series.Add(series);
 
 ![Customizing series in WPF Chart](Styling-and-Customization_images/palette_9.png)
 
+You can find the complete CustomTemplate for series sample from [`here`](https://github.com/SyncfusionExamples/how-to-customize-the-chart-series-in-wpf-sfchart).
 
     
