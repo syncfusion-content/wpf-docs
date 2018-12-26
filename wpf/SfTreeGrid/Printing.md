@@ -41,7 +41,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![printing support treeGrid](Printing_images/Printing_img1.png)
+![Printing support in WPF treegrid](Printing_images/Printing_img1.png)
 
 You can download the sample [here] (http://www.syncfusion.com/downloads/support/directtrac/general/ze/PrintingDemo-132237879.zip).
 
