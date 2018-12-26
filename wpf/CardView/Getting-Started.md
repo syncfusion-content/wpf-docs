@@ -1,395 +1,262 @@
 ---
 layout: post
-title: Getting Started | CardView | wpf | Syncfusion
-description: getting started
-platform: wpf
+title: Getting Started | CardView | WPF | Syncfusion
+description: This section describes how to add card view control into wpf application and its basic features.
+platform: WPF
 control: CardView
 documentation: ug
 ---
 
 # Getting started
 
-This section describes how to design a `CardView` control in a WPF application and overview of its basic functionalities.
+## Assembly deployment
 
-## Control Structure
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#cardview) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-Structure of the CardView Control
-{:.caption}
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-# Creating simple application with CardView
+## Creating a simple application with CardView
 
-The CardView control can be added to an application using Visual Studio and Blend.
+You can create a WPF application with CardView control using the following steps:
 
-You can create the WPF application with CardView control as follows:
+1.	[Create a project.](#creating-a-project)
+2.	[Add control via designer.](#adding-control-via-designer)
+3.	[Add control manually in XAML.](#adding-control-manually-in-xaml)
+4.	[Add control manually in C#.](#adding-control-manually-in-c)
+5.	[Add items using CardViewItem.](#adding-items-using-cardviewitem)
+6.	[Bind to data.](#binding-to-data)
+7.	[Group the cards.](#grouping)
+8.	[Sort the cards.](#sorting)
+9.	[Edit the fields.](#editing)
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via Blend](#adding-control-via-blend)
-3. [Adding control via XAML](#adding-control-via-xaml)
-4. [Adding control via Code](#adding-control-via-code)
+### Creating a project
 
-The CardView control can be created through Visual Studio, Expression Blend, XAML, and C#.
+Create a new WPF project in Visual Studio to display the CardView with functionalities.
 
-## Creating the project
+## Adding control via designer
 
-The steps to create a CardView control using Visual Studio in C# are as follows:
+The CardView control can be added to an application by dragging it from the toolbox to a designer view. The required assembly references will be added automatically.
 
-1.	Open Visual Studio.
+![wpf card view control added by designer](Getting-Started_images/wpf-card-view-control-added-by-designer.png)
 
-2.	On the File menu, select New -> Project. This opens the New Project Dialog box.
+## Adding control manually in XAML
 
-To create the CardView control through Visual Studio, drag the CardView from the Toolbox and drop it in the Designer area. It generates the CardView control.
+To add control manually in XAML, follow the given steps:
 
-![](Getting-Started_images/Getting-Started_img2.png)
-
-Dragging CardView to the Visual Studio Designer
-{:.caption}
-
-## Adding control via Blend
-
-The CardView control can also be created and configured using Expression Blend. The following are the steps to do so.
-
-1. Create a WPF project in Expression Blend and reference the following assemblies.
-   1. Syncfusion.Shared.Wpf
-   2. Syncfusion.Tools.Wpf
-   3. Syncfusion.Core
-   
-2. Search for CardView in the Toolbox.
-
-   ![](Getting-Started_images/Getting-Started_img3.png)
-   
-   CardView in Expression Blend Toolbox
-   {:.caption}
-   
-3. Drag the CardView to the designer. This generates the following CardView control.
-
-   ![](Getting-Started_images/Getting-Started_img4.png)
-
-   Dragging CardView to the Expression Blend Designer
-   {:.caption}
-   
-4. To add the items to the CardView by using the CollectionEditor, select the CardView and go to Properties area, and then click Items (Collection) under Common Properties.
-
-   ![](Getting-Started_images/Getting-Started_img5.png)
-   
-   CardView Properties
-   {:.caption}
-   
-5. Once the Collection Editor opens, click Add Another Item.  The Select Object window opens.
-
-6. Select the CardViewItem by typing CardViewItem in the search box, and then click OK.
-
-   ![](Getting-Started_images/Getting-Started_img6.png)
-   
-   Collection Editor for CardView in Expression Blend
-   {:.caption}
-   
-7. Configure the CardViewItem using the properties in the Collection Editor.
-
-N> You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend.
-      
-## Adding control via XAML
-
-To create the CardView control through XAML, add the following namespace to the directives list.
+1.	Add the following required assembly reference to the project:
+	* Syncfusion.Tools.WPF
+	* Syncfusion.Shared.WPF 
+2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+3.	Declare the CardView control in XAML page.
 
 {% tabs %}
-
 {% highlight XAML %}
-
-xmlns:syncfusion=http://schemas.syncfusion.com/wpf
-
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class=" CardViewSample.MainWindow"
+        Title="CardView Sample" Height="350" Width="525">
+    <Grid>
+		<!-- CardView Control -->
+		<syncfusion: CardView x:Name="cardView"/>
+    </Grid>
+</Window>
 {% endhighlight %}
-
 {% endtabs %}
 
-After adding the above namespace the CardViewControl can be added to the application as follows:
+## Adding control manually in C#
+
+To add control manually in C#, follow the given steps:
+
+1.	Add the following required assembly references to the project:
+	* Syncfusion.Tools.WPF
+	* Syncfusion.Shared.WPF
+2.	Import the CardView namespace **using Syncfusion.Windows.Tools.Controls;**.
+3.	Create a CardView instance, and add it to the window.
 
 {% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Tools.Controls; 
+namespace CardViewSample
+{
+    /// 
+    /// Interaction logic for MainWindow.xaml
+    /// 
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Creating an instance of CardView control
+            CardView cardView = new CardView ();
+            //Adding CardView as window content
+            this.Content = cardView;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
+![wpf card view control added manually](Getting-Started_images/wpf-card-view-control-added-manually.png)
+
+## Adding Items using CardViewItem
+
+You can add the items inside the CardView control using CardViewItem.
+
+{% tabs %}
 {% highlight XAML %}
-
- <syncfusion:CardView >
-
-	<syncfusion:CardViewItem Header="Item1" >
-
-		<ListBox>
-
-			<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
-
-				<Grid >
-
-					<Grid.ColumnDefinitions>
-
-						<ColumnDefinition Width="75"/>
-
-						<ColumnDefinition Width="*"/>
-
-					</Grid.ColumnDefinitions>
-
-					<TextBlock Text="Name:"/>
-
-					<TextBox  Grid.Column="1" Text="David" />
-
-				</Grid>
-
-			</ListBoxItem>
-
-			<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
-
-				<Grid >
-
-					<Grid.ColumnDefinitions>
-
-						<ColumnDefinition Width="75"/>
-
-						<ColumnDefinition Width="*"/>
-
-					</Grid.ColumnDefinitions>
-
-					<TextBlock Text="DOB:"/>
-
-					<TextBox  Grid.Column="1" Text="2/25/1986" />
-
-				</Grid>
-
-			</ListBoxItem>
-
-		</ListBox>
-
-	</syncfusion:CardViewItem>
-
+<syncfusion:CardView >
+    <syncfusion:CardViewItem Header="Item1" >
+		<TextBlock Text="Name:"/>
+     </syncfusion:CardViewItem>
 </syncfusion:CardView>
-
 {% endhighlight %}
-
-{% endtabs %}
-
-## Adding control via Code
-
-To create the CardView control through C#, include the following namespace to the directives list.
-
-{% tabs %}
-
 {% highlight C# %}
-
-using Syncfusion.Windows.Tools.Controls;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Imports Syncfusion.Windows.Tools.Controls
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Next, create the CardView control as illustrated in the following code example.
-
-{% tabs %}
-
-{% highlight C# %}
-
 CardView cardView = new CardView();
-
 CardViewItem cardViewItem1 = new CardViewItem();
-
-TextBlock tBlock = new TextBlock() { Text = "John" };
-
+cardViewItem1.Header = "Item1";
+TextBlock tBlock = new TextBlock() { Text = "Name:" };
 cardViewItem1.Content = tBlock;
-
 cardView.Items.Add(cardViewItem1);
-
+this.Content = cardView;
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim cardView As CardView = New CardView
-
-Dim cardViewItem1 As CardViewItem = New CardViewItem
-
-Dim tBlock As TextBlock = New TextBlock
-
-cardViewItem1.Content = tBlock
-
-cardView.Items.Add(cardViewItem1)
-
-{% endhighlight %}
-
 {% endtabs %}
 
-### ItemContainerStyle
+![wpf card view items](Getting-Started_images/wpf-card-view-item.png)
 
-The ItemContainerStyle property of CardView is used to set the styles for CardViewItem. This style can be applied to all items available in the CardView control.
+## Binding to data
 
-1. Create a style for CardViewItem.
+You can bind to a business object collection using the ItemsSource and ItemTemplate properties of the CardView control. Refer to the [Data binding](https://help.syncfusion.com/wpf/cardview/data-binding-to-objects) section for more details.
+
+* **Model.cs**
 
 {% tabs %}
-
-   {% highlight XAML %}
-
-		<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="contactStyle">
-
-			<Setter Property="Header" Value="{Binding Name}"/>
-
-			<Setter Property="Foreground" Value="Green"/>
-
-			<Setter Property="FontWeight" Value="Bold"/>
-
-			<Setter Property="FontSize" Value="16"/>
-
-		</Style>
-
-   {% endhighlight %}
-
-{% endtabs %}
-   
-2. Set the ItemContainerStyle of CardView.
-   
-   {% tabs %}
-
-   {% highlight XAML %}
-
-		<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
-
-				 ItemTemplate="{StaticResource contactTemplate}"
-
-				 EditItemTemplate="{StaticResource contactEditTemplate}"
-
-				 ItemContainerStyle="{StaticResource contactStyle}"/>
-
-    {% endhighlight %}
-
-{% endtabs %}
-   
-This generates the following CardView control.
-
-![](Styling_images/Styling_img1.png)
-
-CardView control with styled items
-{:.caption}
-
-### ItemContainerStyleSelector
-
-The ItemContainerStyleSelector property is used to choose the ItemContainerStyle at run-time base on some conditions. 
-
-1. Create the styles in the Window’s resource as follows.
-
-   {% tabs %}
-
-   {% highlight XAML %}
-
-		<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle1">
-
-			<Setter Property="Header" Value="{Binding Name}"/>
-
-			<Setter Property="Foreground" Value="Green"/>
-
-			<Setter Property="FontWeight" Value="Bold"/>
-
-			<Setter Property="FontSize" Value="16"/>
-
-		</Style>
-
-		<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle2">
-
-			<Setter Property="Header" Value="{Binding Name}"/>
-
-			<Setter Property="Foreground" Value="Blue"/>
-
-			<Setter Property="FontWeight" Value="Bold"/>
-
-			<Setter Property="FontSize" Value="16"/>
-
-		</Style>
-
-   {% endhighlight %}
-
-{% endtabs %}
-   
-2. Create StyleSelector in the code.
-
-   {% tabs %}
-
-   {% highlight C# %}
-
-		public class CardViewItemContainerStyleSelector : StyleSelector
-		{
-			public override Style SelectStyle(object item, DependencyObject container)
-			{
-				Window window = Application.Current.MainWindow;
-
-				int age = (item as Contact).Age;
-
-				if (age > 18)
-				{
-					return ((Style)window.Resources["ageStyle1"]);
-				}
-				else
-				{
-					return ((Style)window.Resources["ageStyle2"]);
-				}
-			}
-		}
-
-   {% endhighlight %}
-
-   {% highlight VB %}
-
-   	Public Class CardViewItemContainerStyleSelector
-    Inherits StyleSelector
-    
-    Public Overrides Function SelectStyle(ByVal item As Object, ByVal container As DependencyObject) As Style
-        Dim window As Window = Application.Current.MainWindow
-        Dim age As Integer = CType(item,Contact).Age
-        If (age > 18) Then
-            Return CType(window.Resources("ageStyle1"),Style)
-        Else
-            Return CType(window.Resources("ageStyle2"),Style)
-        End If
-        
-    End Function
-End Class
-
-   {% endhighlight %}
-
+{% highlight C# %}
+public class CardViewModel	
+{
+	public string Name
+	{
+		get;
+		set;
+	}
+	public int Age
+	{
+		get;
+		set;
+	}
+}
+{% endhighlight %}
 {% endtabs %}
 
-3. Define the style selector in the Window’s resource.
-
+* **ViewModel.cs**
 
 {% tabs %}
-
-   {% highlight XAML %}
-
-		<local:CardViewItemContainerStyleSelector x:Key="cardViewItemContainerStyleSelector"/>
-
-   {% endhighlight %}
-
+{% highlight C# %}
+public class ViewModel
+{
+	private ObservableCollection<CardViewModel> cardViewItems;
+	public ObservableCollection<CardViewModel> CardViewItems
+	{
+		get { return cardViewItems; }
+		set { cardViewItems = value; this.RaisePropertyChanged("CardViewItems"); }
+	}
+	public ViewModel()
+	{
+		CardViewItems = new ObservableCollection<CardViewModel>();
+		populateItems();
+	}
+	private void populateItems()
+	{
+		CardViewItems.Add(new CardViewModel() { Name = "John", Age = 23 });
+		CardViewItems.Add(new CardViewModel() { Name = "Mark", Age = 26 });
+		CardViewItems.Add(new CardViewModel() { Name = "Steven", Age = 25 });
+	}
+}
+{% endhighlight %}
 {% endtabs %}
 
-4. Set the ItemContainerStyleSelector for the CardView control.
+* **MainWindow.Xaml**
 
-   {% tabs %}
+{% tabs %}
+{% highlight XAML %}
+<Window.DataContext>
+    <local:ViewModel/>
+</Window.DataContext>
 
-   {% highlight XAML %}
-
-		<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
-
-						 ItemTemplate="{StaticResource contactTemplate}"
-
-						 EditItemTemplate="{StaticResource contactEditTemplate}"
-
-						 ItemContainerStyleSelector="{StaticResource cardViewItemContainerStyleSelector}" />
-
-   {% endhighlight %}
-
+<syncfusion:CardView ItemsSource="{Binding CardViewItems}" >
+	<syncfusion:CardView.ItemTemplate>
+		<DataTemplate >
+			<ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+				<ListBoxItem>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="Name:"/>
+						<TextBlock Text="{Binding Name}" Margin="5,0,0,0"/>
+					</StackPanel>
+				</ListBoxItem>
+				<ListBoxItem>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="Age:"/>
+						<TextBlock Text="{Binding Age}" Margin="5,0,0,0"/>
+					</StackPanel>
+				</ListBoxItem>
+			</ListBox>
+		</DataTemplate>
+	</syncfusion:CardView.ItemTemplate>
+	<syncfusion:CardView.HeaderTemplate>
+		<DataTemplate>
+			<TextBlock Text="{Binding Name}"/>
+		</DataTemplate>
+	</syncfusion:CardView.HeaderTemplate>
+</syncfusion:CardView>
+{% endhighlight %}
 {% endtabs %}
 
-This generates the following CardView control.
+![wpf card view control data binding](Getting-Started_images/wpf-card-view-data-binding.png)
 
-![](Styling_images/Styling_img2.png)
+## Grouping
 
-CardView control styled with ItemContainerStyleSelector
-{:.caption}
+You can group the cards inside the CardView control by enabling the [CanGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanGroup.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+<!--Gropuing cards -->
+<syncfusion:CardView CanGroup="True "/>
+{% endhighlight %}
+{% highlight C# %}
+//For grouping cards
+cardview.CanGroup =true;
+{% endhighlight %}
+{% endtabs %}
+
+## Sorting
+
+You can sort the cards inside the CardView control by enabling the [CanSort](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanSort.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+<!--Sorting cards-->
+<syncfusion:CardView CanSort="True "/>
+{% endhighlight %}
+{% highlight C# %}
+//For sorting cards
+cardview.CanSort =true;
+{% endhighlight %}
+{% endtabs %}
+
+## Editing
+
+You can edit the fields available in the cards by enabling [CanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~CanEdit.html) property of CardView control.
+
+{% tabs %}
+{% highlight XAML %}
+<!--Editing cards field -->
+<syncfusion:CardView CanEdit="True"/>
+{% endhighlight %}
+{% highlight C# %}
+//For editing cards field
+cardview.CanEdit = true;
+{% endhighlight %}
+{% endtabs %}
+

@@ -1,242 +1,166 @@
 ---
 layout: post
-title: Getting Started documentation of Carousel control for WPF
-description: getting started documentation of Carousel control for WPF
-platform: wpf
+title: Getting Started | Carousel | WPF | Syncfusion
+description: This section describes how to add carousel control into wpf application and its basic features.
+platform: WPF
 control: Carousel
 documentation: ug
 ---
 
 # Getting started
 
-This section describes how to design a `Carousel` control in a WPF application and overview of its basic functionalities.
+## Assembly deployment
 
-## Structure of the Carousel Control
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#carousel) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-# Creating simple application with Carousel
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-The Carousel control can be added to an application by using Visual Studio and Blend.
+## Creating a simple application with Carousel
 
-You can create the WPF application with Carousel control as follows:
+You can create a WPF application with Carousel control using the following steps:
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
-4. [Adding Carousel Items](#adding-carousel-items)
-5. [Adding images into Carousel](#adding-images-into-carousel)
+1.	[Create a project.](#creating-a-project)
+2.	[Add control via designer.](#adding-control-via-designer)
+3.	[Add control manually in XAML.](#adding-contro-manually-in-xaml)
+4.	[Add control manually in C#.](#adding-control-manually-in-c)
+5.	[Add items using CarouselItem.](#adding-items-using-carouselitem)
+6.	[Bind to data.](#binding-to-data)
+7.	[Set scaling to Carousel view.](#scale-view)
+8.	[Rotate Carousel items.](#rotation-view)
 
-### Creating the project
+## Creating a project
 
-The steps to create a Carousel control by using Visual Studio in C# are as follows:
-
-1.	Open Visual Studio.
-
-2.	On the File menu, select New -> Project. This opens the New Project Dialog box.
-
-   ![](Getting-Started_images/Getting-Started_img4.jpeg)
+Create a new WPF project in Visual Studio to display the Carousel with functionalities.
 
 ## Adding control via designer
 
-Carousel control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The Carousel control can be added to an application by dragging it from the toolbox to a designer view. The required assembly references will be added automatically.
 
-* Syncfusion.Shared.WPF.dll
+![wpf carousel control added by designer](Getting-Started_images/wpf-carousel-control-added-by-designer.png)
 
-    ![](Getting-Started_images/Getting-Started_img6.jpeg)
+## Adding control manually in XAML
 
-	![](Getting-Started_images/Getting-Started_img2.jpeg)
+To add control manually in XAML, follow the given steps:
 
-## Adding control manually in code
+1.	Add the following required assembly references to the project: 
+    * Syncfusion.Shared.WPF.
+2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+3.	Declare the Carousel control in XAML page.
+
+{% tabs %}
+{% highlight XAML %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="CarouselSample.MainWindow"
+        Title="Carousel Sample" Height="350" Width="525">
+    <Grid>
+         <!--Adding Carousel control -->
+        <syncfusion:Carousel x:Name="carousel" HorizontalAlignment="Center" Height="100" VerticalAlignment="Center" Width="100"/>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
+
+## Adding control manually in C#
 
 To add control manually in C#, follow the given steps:
 
-**Step 1** - Add the following required assembly **Syncfusion.Shared.WPF.dll** references to the project:
-
-**Step 2** - Include the namespaces **Syncfusion.Windows.Shared**
-
-**Step 3** - Create `Carousel` control instance and add it to the Window.
+1.	Add the following required assembly references to the project: 
+    * Syncfusion.Shared.WPF. 
+2.	Import Carousel namespace **using Syncfusion.Windows.Shared;**.
+3.	Create a Carousel instance, and add it to the window.
 
 {% tabs %}
-
 {% highlight C# %}
-
-Carousel carousel = new Carousel();
-
-this.LayoutRoot.Children.Add(carousel);
-
+using Syncfusion.Windows.Shared
+namespace CarouselSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+			InitializeComponent();
+			//Creating an instance of Carousel control
+			Carousel carousel = new Carousel();
+			//Adding Carousel as window content
+			this.Content = carousel;
+        }
+    } 
+}
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim carousel As New Carousel()
-
-Me.LayoutRoot.Children.Add(carousel)
-
-{% endhighlight %}
-
 {% endtabs %}
 
-## Adding Carousel Items
+## Adding items using CarouselItem
 
-The below code show how carousel items can be added in carousel via code behind.
-
-{% tabs %}
-
-{% highlight C# %}
-
-carousel.Items.Add(new CarouselItem(){Content="1"});
-carousel.Items.Add(new CarouselItem(){Content="2"});
-carousel.Items.Add(new CarouselItem(){Content="3"});
-carousel.Items.Add(new CarouselItem(){Content="4"});
-carousel.Items.Add(new CarouselItem(){Content="5"});
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-carousel.Items.Add(New CarouselItem() With { Key .Content = "1" })
-carousel.Items.Add(New CarouselItem() With { Key .Content = "2" })
-carousel.Items.Add(New CarouselItem() With { Key .Content = "3" })
-carousel.Items.Add(New CarouselItem() With { Key .Content = "4" })
-carousel.Items.Add(New CarouselItem() With { Key .Content = "5" })
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Adding images into Carousel
-
-The below code shows how Carousel can be added to an application using Visual Studio in XAML and code behind
+You can add the carousel items inside the control using the [CarouselItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CarouselItem.html).
 
 {% tabs %}
-
-{% highlight Xaml %}
-
-<syncfusion:Carousel x:Name="carousel" Height="400" Width="450">        
-
-<syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem.Content>
-
-<Viewbox Height="100" Width="100">
-
-<Image Source="/Images/1.jpg"/>
-
-</Viewbox>
-
-</syncfusion:CarouselItem.Content>
-
-</syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem.Content>
-
-<Viewbox Height="100" Width="100">
-
-<Image Source="/Images/2.jpg"/>
-
-</Viewbox>
-
-</syncfusion:CarouselItem.Content>
-
-</syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem.Content>
-
-<Viewbox Height="100" Width="100">
-
-<Image Source="/Images/3.jpg"/>
-
-</Viewbox>
-
-</syncfusion:CarouselItem.Content>
-
-</syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem.Content>
-
-<Viewbox Height="100" Width="100">
-
-<Image Source="/Images/4.jpg"/>
-
-</Viewbox>
-
-</syncfusion:CarouselItem.Content>
-
-</syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem.Content>
-
-<Viewbox Height="100" Width="100">
-
-<Image Source="/Images/5.jpg"/>
-
-</Viewbox>
-
-</syncfusion:CarouselItem.Content>
-
-</syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem.Content>
-
-<Viewbox Height="100" Width="100">
-
-<Image Source="/Images/6.jpg"/>
-
-</Viewbox>
-
-</syncfusion:CarouselItem.Content>
-
-</syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem.Content>
-
-<Viewbox Height="100" Width="100">
-
-<Image Source="/Images/7.jpg"/>
-
-</Viewbox>
-
-</syncfusion:CarouselItem.Content>
-
-</syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem>
-
-<syncfusion:CarouselItem.Content>
-
-<Viewbox Height="100" Width="100">
-
-<Image Source="/Images/8.jpg"/>
-
-</Viewbox>
-
-</syncfusion:CarouselItem.Content>
-
-</syncfusion:CarouselItem>
-
+{% highlight XAML %}
+<syncfusion:Carousel x:Name="carousel" Height="400" Width="450">
+	<syncfusion:CarouselItem>
+		<syncfusion:CarouselItem.Content>
+			<Viewbox Height="100" Width="100">
+				<Image Source="Images/Buchanan.png"/>
+ 			</Viewbox>
+		</syncfusion:CarouselItem.Content>
+	</syncfusion:CarouselItem>
+	<syncfusion:CarouselItem>
+		<syncfusion:CarouselItem.Content>
+			<Viewbox Height="100" Width="100">
+				<Image Source="Images/Callahan.png"/>
+			</Viewbox>
+		</syncfusion:CarouselItem.Content>
+	</syncfusion:CarouselItem>
+	<syncfusion:CarouselItem>
+		<syncfusion:CarouselItem.Content>
+			<Viewbox Height="100" Width="100">
+				<Image Source="Images/Davolio-1.png"/>
+			</Viewbox>
+		</syncfusion:CarouselItem.Content>
+	</syncfusion:CarouselItem>
+	<syncfusion:CarouselItem>
+		<syncfusion:CarouselItem.Content>
+			<Viewbox Height="100" Width="100">
+				<Image Source="Images/Callahan.png"/>
+			</Viewbox>
+		</syncfusion:CarouselItem.Content>
+	</syncfusion:CarouselItem>
+	<syncfusion:CarouselItem>
+		<syncfusion:CarouselItem.Content>
+			<Viewbox Height="100" Width="100">
+				<Image Source="Images/dodsworth.png"/>
+			</Viewbox>
+		</syncfusion:CarouselItem.Content>
+	</syncfusion:CarouselItem>
+	<syncfusion:CarouselItem>
+		<syncfusion:CarouselItem.Content>
+			<Viewbox Height="100" Width="100">
+				<Image Source="Images/Fuller.png"/>
+			</Viewbox>
+		</syncfusion:CarouselItem.Content>
+	</syncfusion:CarouselItem>
+	<syncfusion:CarouselItem>
+		<syncfusion:CarouselItem.Content>
+			<Viewbox Height="100" Width="100">
+				<Image Source="Images/King.png"/>
+    		</Viewbox>
+		</syncfusion:CarouselItem.Content>
+	</syncfusion:CarouselItem>
+	<syncfusion:CarouselItem>
+		<syncfusion:CarouselItem.Content>
+			<Viewbox Height="100" Width="100">
+        		<Image Source="Images/Leverling.png"/>
+			</Viewbox>
+		</syncfusion:CarouselItem.Content>
 </syncfusion:Carousel>
-
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
-
 Carousel carousel = new Carousel() { Margin=40, RadiusX = 220, RadiusY = -100, ScaleFraction=0.60 };
 
 Image image = new Image();
@@ -284,77 +208,119 @@ viewbox6.Child = image5;
 viewbox7.Child = image6;
 viewbox8.Child = image7;
             
-carousel.Items.Add(new CarouselItem() {Content = viewbox1 });
+carousel.Items.Add(new CarouselItem() { Content = viewbox1 });
 carousel.Items.Add(new CarouselItem() { Content = viewbox2 });
 carousel.Items.Add(new CarouselItem() { Content = viewbox3 });
 carousel.Items.Add(new CarouselItem() { Content = viewbox4 });
 carousel.Items.Add(new CarouselItem() { Content = viewbox5 });
 carousel.Items.Add(new CarouselItem() { Content = viewbox6 });
 carousel.Items.Add(new CarouselItem() { Content = viewbox7 });
-carousel.Items.Add(new CarouselItem() { Content = viewbox6 });
-
+carousel.Items.Add(new CarouselItem() { Content = viewbox8 });
 {% endhighlight %}
+{% endtabs %
 
-{% highlight VB %}
+![wpf carousel items](Getting-Started_images/wpf-carousel-item.jpeg)
 
-Dim carousel As Carousel = New Carousel
+## Binding to data
 
-Dim image As Image = New Image
-Dim image1 As Image = New Image
-Dim image2 As Image = New Image
-Dim image3 As Image = New Image
-Dim image4 As Image = New Image
-Dim image5 As Image = New Image
-Dim image6 As Image = New Image
-Dim image7 As Image = New Image
+You can bind to a business object collection using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) and ItemTemplate properties of Carousel control. Refer to  the [Data binding](https://help.syncfusion.com/wpf/carousel/data-binding) section for more details.
 
-Dim bitimg1 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/1.png", UriKind.RelativeOrAbsolute))
-Dim bitimg2 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/2.png", UriKind.RelativeOrAbsolute))
-Dim bitimg3 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/3.png", UriKind.RelativeOrAbsolute))
-Dim bitimg4 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/4.png", UriKind.RelativeOrAbsolute))
-Dim bitimg5 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/5.png", UriKind.RelativeOrAbsolute))
-Dim bitimg6 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/6.png", UriKind.RelativeOrAbsolute))
-Dim bitimg6 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/7.png", UriKind.RelativeOrAbsolute))
-Dim bitimg8 As BitmapImage = New BitmapImage(New Uri("/Sample;component/Images/8.png", UriKind.RelativeOrAbsolute))
+* **Model.cs**
 
-image.Source = CType(bitimg1,ImageSource)
-image1.Source = CType(bitimg2,ImageSource)
-image2.Source = CType(bitimg3,ImageSource)
-image3.Source = CType(bitimg4,ImageSource)
-image4.Source = CType(bitimg5,ImageSource)
-image5.Source = CType(bitimg6,ImageSource)
-image6.Source = CType(bitimg7,ImageSource)
-image7.Source = CType(bitimg8,ImageSource)
-
-Dim viewbox1 As Viewbox = New Viewbox
-Dim viewbox2 As Viewbox = New Viewbox
-Dim viewbox3 As Viewbox = New Viewbox
-Dim viewbox4 As Viewbox = New Viewbox
-Dim viewbox5 As Viewbox = New Viewbox
-Dim viewbox6 As Viewbox = New Viewbox
-Dim viewbox7 As Viewbox = New Viewbox
-Dim viewbox8 As Viewbox = New Viewbox
-
-viewbox1.Child = image
-viewbox2.Child = image1
-viewbox3.Child = image2
-viewbox4.Child = image3
-viewbox5.Child = image4
-viewbox6.Child = image5
-viewbox7.Child = image6
-viewbox8.Child = image7
-
-carousel.Items.Add(New CarouselItem)
-carousel.Items.Add(New CarouselItem)
-carousel.Items.Add(New CarouselItem)
-carousel.Items.Add(New CarouselItem)
-carousel.Items.Add(New CarouselItem)
-carousel.Items.Add(New CarouselItem)
-carousel.Items.Add(New CarouselItem)
-carousel.Items.Add(New CarouselItem)
-
+{% tabs %}
+{% highlight C# %}
+public class CarouselModel
+{
+	private string header;
+	public string Header
+	{
+		get { return header; }
+		set { header = value; }
+	}
+}
 {% endhighlight %}
-
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+* **ViewModel.cs**
+
+{% tabs %}
+{% highlight C# %}
+public class ViewModel
+{
+	private ObservableCollection<CarouselModel> collection;
+	public ObservableCollection<CarouselModel> HeaderCollection
+	{
+		get { return collection; }
+		set { collection = value; }
+	}
+	public ViewModel()
+	{
+		HeaderCollection = new ObservableCollection<CarouselModel>();
+		HeaderCollection.Add(new CarouselModel() { Header = "Buchanan" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Callahan" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Davolio" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Dodsworth" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Fuller" });
+		HeaderCollection.Add(new CarouselModel() { Header = "King" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Leverling" });
+		HeaderCollection.Add(new CarouselModel() { Header = "Suyama" });
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+* **MainWindow.Xaml**
+
+{% tabs %}
+{% highlight XAML %}
+<Window.DataContext>
+    <local:ViewModel/>
+</Window.DataContext>
+
+<syncfusion:Carousel Name="Carousel" ItemsSource="{Binding HeaderCollection}" VerticalAlignment="Center" HorizontalAlignment="Center"> 
+    <syncfusion:Carousel.ItemTemplate>
+        <DataTemplate>
+            <Border Height="50" Width="100" BorderBrush="Purple" BorderThickness="5" Background="LightBlue">
+                <TextBlock Text="{Binding Header}"/>
+            </Border>
+        </DataTemplate>
+    </syncfusion:Carousel.ItemTemplate>
+</syncfusion:Carousel>
+{% endhighlight %}
+{% endtabs %}
+
+![wpf carousel control data binding](Getting-Started_images/wpf-carousel-item-binding.png)
+
+## Scale view
+
+You can set scaling view to the carousel items by setting the [ScaleFraction](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScaleFraction.html) property of the Carousel control.
+
+{% tabs %}
+{% highlight XAML %}
+<!--Setting scale view -->
+<syncfusion:Carousel x:Name="carousel" ScalingEnabled="True" ScaleFraction="0.50"/>
+{% endhighlight %}
+{% highlight C# %}
+//Setting scale view 
+carousel. ScaleFraction =0.50;
+{% endhighlight %}
+{% endtabs %}
+
+![wpf carousel control scale view](Getting-Started_images/wpf-carousel-scaling-view.png)
+
+## Rotation view
+
+You can rotate the carousel items by setting the [RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationAngle.html) property of the Carousel control.
+
+{% tabs %}
+{% highlight XAML %}
+<!--Rotation view -->
+<syncfusion:Carousel x:Name="carousel" VerticalAlignment="Center" HorizontalAlignment="Center" RotationAngle="180"/>
+{% endhighlight %}
+{% highlight C# %}
+//Rotation view
+carousel.RotationAngle=180;
+{% endhighlight %}
+{% endtabs %}
+
+![wpf carousel control rotation view](Getting-Started_images/wpf-carousel-rotation-view.png)
