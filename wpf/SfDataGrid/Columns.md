@@ -546,7 +546,7 @@ public string CustomerID
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![wpf in datagrid shows The OrderID and CustomerID column rearranged based on specified order](Columns_images/Columns_img2.png)
+![wpf in datagrid shows The Change the order of the columns](Columns_images/Columns_img2.png)
 
 ##### Customizing data format 
 
@@ -714,13 +714,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
-![wpf in datagrid shows The resizing cursor appears when you hover the grid line exists between two columns](Columns_images/Columns_img3.png)
+![wpf in datagrid shows The Resizing Columns](Columns_images/Columns_img3.png)
 
 ### Hidden column resizing
 
 SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowResizingHiddenColumns.html) property to `true`.
 
-![wpf in datagrid shows The indication for hidden columns in column header and also allows end-users to resize the hidden columns](Columns_images/Columns_img4.png)
+![wpf in datagrid shows The Hidden column resizing](Columns_images/Columns_img4.png)
 
 ### Disable resizing
 
@@ -908,7 +908,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endhighlight %}
 {% endtabs %}
 
-![wpf in datagrid shows The freeze the columns in view at the left and right side](Columns_images/Columns_img6.png)
+![wpf in datagrid shows The Freezing Columns](Columns_images/Columns_img6.png)
 
 ## Stacked Headers
 
@@ -949,7 +949,7 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![wpf in datagrid shows The unbound header rows known as stacked header rows that span across the DataGrid columns using StackedHeaderRows](Columns_images/Columns_img7.png)
+![wpf in datagrid shows The Stacked Headers](Columns_images/Columns_img7.png)
 
 You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.aspx). 
 
@@ -1165,7 +1165,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfDataGr
 {% endhighlight %}
 {% endtabs %}
 
-![wpf in datagrid shows The set the column widths based on certain logic using SfDataGrid.ColumnSizer](Columns_images/Columns_img9.png)
+![wpf in datagrid shows The Column Sizing](Columns_images/Columns_img9.png)
 
 N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.ColumnSizer`.
 
@@ -1538,5 +1538,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![wpf in datagrid shows The ViewModel.AllowFiltering property to GridColumn.AllowFiltering property](Columns_images/Columns_img11.png)
+![wpf in datagrid shows The Binding column properties with ViewModel](Columns_images/Columns_img11.png)
 
