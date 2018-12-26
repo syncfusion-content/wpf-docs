@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Appearance and Structure of Gantt
+## Appearance and structure of Gantt
 
 Gantt control is composed of three controls. They are:
 
@@ -19,17 +19,17 @@ Gantt control is composed of three controls. They are:
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Gantt appearance and structure](Getting-Started_images/Getting-Started_img1.png)
 
 
 
-### Gantt Grid
+### Gantt grid
 
 Gantt Grid is a table view control which displays the scheduled tasks/activities of the project with its hierarchy. You can edit the fields of the bounded tasks using this grid.
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Gantt grid allotment](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -38,14 +38,14 @@ Gantt Grid is a table view control which displays the scheduled tasks/activities
 * Child Task—Child task represents an individual task. This contains only the information about the specific task. The Child task is a part of parent task.
 * Expand/Collapse Button—Expand/Collapse button allows you to expand or collapse the particular hierarchy.
 
-### Gantt Chart
+### Gantt chart
 
 
 Gantt Chart is an items control which provides a graphically representation of the task/activity that are currently scheduled. Gantt Chart have different components to represent the type of Task, Progress of the Task and Relationship between Tasks.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Gantt chart allotment](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -55,26 +55,26 @@ Gantt Chart is an items control which provides a graphically representation of t
 * Progress Indicator—Progress indicator represents the percentage of work completed for the task.
 * Connector—Connector represents the dependency relationship between the tasks.
 
-### Gantt Schedule 
+### Gantt schedule 
 
 
 Gantt Schedule is a medium to measure the progress in the Gantt control. Using this you can track or measure the progress of the task or activity.
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Gantt schedule allotment](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-## Class Diagram
+## Class diagram
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Gantt flow diagram](Getting-Started_images/Getting-Started_img5.png)
 
 
 
-## Feature Summary
+## Feature summary
 
 The following features are available in the Essential Gantt for WPF:
 
@@ -88,7 +88,7 @@ The following features are available in the Essential Gantt for WPF:
 * VisualStyle
 * XML Import/Export
 
-## Adding GanttControl to an Application
+## Adding GanttControl to an application
 
 
 You can create a project management application using Essential Gantt WPF. 
@@ -98,7 +98,7 @@ You can create Gantt control in two methods. They are:
 * Programmatically
 * Through Designer 
 
-### Programmatically Creating Gantt Control 
+### Programmatically creating GanttControl 
 
 
 The following are the steps to create GanttControl programmatically: 
@@ -127,7 +127,7 @@ You can add Gantt control to the application using the following code:
 
 When the code runs, an empty Gantt with in-built TaskDetails collection will be displayed.
 
-#### Binding Data to GanttControl
+#### Binding data to GanttControl
 
 Create a collection of tasks and bind it to the newly created GanttControl as given in the following code:
 
@@ -229,7 +229,7 @@ public class ViewModel
     
  {% endhighlight  %}
 
-### Adding GanttControl through Designer
+### Adding GanttControl through designer
 
 The following are the steps to create Gantt control through designer.
 
@@ -237,7 +237,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+   ![Designer page in application](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -247,7 +247,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+   ![ToolBox window in application](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -257,7 +257,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img8.png)
+   ![Loading gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -267,11 +267,60 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+   ![Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
 
 
 
 
 
 5. Now you can customize the properties of Gantt control in the Properties Window.
+
+## Adjusting chart and grid size
+
+The GanttControl allows users to set the width for GanttChart and GanttGrid  using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ChartWidth.html) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~GridWidth.html) properties. The following code sample demonstrates how to set width for chart and grid.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<sync:GanttControl x:Name="control" GridWidth="200" ChartWidth="800" > 
+</Sync:GanttControl>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ //Initializing Gantt
+GanttControl control = new GanttControl();
+control.GridWidth = new GridLength(200); 
+control.ChartWidth = new GridLength(800); 
+
+{% endhighlight  %}
+
+{% endtabs %}
+   
+
+## Schedule padding 
+
+Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ScheduleRangePadding.html) property in GanttControl. This property extends the schedule with number of lower schedule units in starting position to improve the user experience.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Sync:GanttControl x:Name="control" ItemsSource="{Binding TaskCollection}"  ScheduleRangePadding="5">
+</Sync:GanttControl>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ //Initializing Gantt
+GanttControl control = new GanttControl();
+control.ScheduleRangePadding = 5;
+
+{% endhighlight  %}
+
+{% endtabs %}
    
