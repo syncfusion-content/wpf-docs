@@ -519,25 +519,19 @@ public string Country
 {% endhighlight %}
 {% endtabs %}
 
-##### Customizing Display Format String
-
-SfDataGrid provides support for display format string and it can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns] (http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html)  property.
-
-You can enable or disable display format string for column in model by setting `DisplayFormatAttributes.DataFormatString` property.
-
-In the below code snippet explains the simple implementation of Display Format String.
+##### Format columns with DisplayFormat
+The auto-generated columns will be formatted using [DataFormatString] (https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in [DisplayFormat] (https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute, when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with `DataFormatString` property, then the DataGrid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
 
 {% tabs %}
 {% highlight c# %}
 [DisplayFormat(DataFormatString = "Country is {0}")]
-
 public string Country
 {
     get { return country; }
     set { country = value; }
 }
-[DisplayFormat(DataFormatString = "yyyy")]
 
+[DisplayFormat(DataFormatString = "yyyy")]
 public DateTime OrderDate
 {
     get {  return _orderDate; }
@@ -545,6 +539,8 @@ public DateTime OrderDate
 }
 {% endhighlight %}
 {% endtabs %}
+
+N> DataFormatString attribute will be only considered when the column is auto-generated.
 
 ![Customizing Display Format String](Columns_images/Columns_img13.png)
 
