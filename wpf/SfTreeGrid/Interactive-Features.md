@@ -25,7 +25,6 @@ The below code example shows the context menu with command bindings.
 </ContextMenu>
 
 {% endhighlight %}
-{% endhighlight %}
 {% highlight c# %}
 
 public class BaseCommand : ICommand
@@ -151,7 +150,7 @@ this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Paste" });
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for nodes in WPF treegrid](ContextMenu_images/ContextMenu_img1.png)
+![ContextMenu for nodes in treegrid WPF](ContextMenu_images/ContextMenu_img1.png)
 
 While binding the menu item using CommandBinding you can get the command parameter as TreeGridNodeContextMenuInfo which contains the node of the corresponding row.
 
@@ -208,7 +207,7 @@ this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearFilter
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for header in WPF treegrid](ContextMenu_images/ContextMenu_img2.png)
+![ContextMenu for header in treegrid WPF ](ContextMenu_images/ContextMenu_img2.png)
 
 While binding the menu item using CommandBinding you can get the parameter as TreeGridColumnContextMenuInfo which contains the particular GridColumn.
 
@@ -365,7 +364,7 @@ You can change the appearance of the context menu by customizing the style with 
 
 {% endhighlight %}
 
-![ContextMenu for appearance in WPF treegrid](ContextMenu_images/ContextMenu_img4.png)
+![ContextMenu for appearance in treegrid WPF](ContextMenu_images/ContextMenu_img4.png)
 
 
 ## Row drag-and-drop
