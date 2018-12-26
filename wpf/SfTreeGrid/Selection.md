@@ -34,7 +34,7 @@ The [SelectionMode ](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Selection Image](Selection_images/Selection_img1.jpeg)
+![Row selected in WPF treegrid](Selection_images/Selection_img1.jpeg)
 
 ## Disable selection for rows and columns
 
@@ -61,7 +61,7 @@ While using Extended, you can select multiple rows by pressing the key modifier
 {% endhighlight %}
 {% endtabs %}
 
-![Multiple row selection image](Selection_images/Selection_img2.jpeg)
+![Multiple rows selected in WPF treegrid](Selection_images/Selection_img2.jpeg)
 
 N> When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) as [Multiple](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select or deselect multiple rows by clicking the respective row. Also, in multiple selection pressing navigation keys will move only the current cell and you can select or deselect by pressing space key.
 
@@ -116,7 +116,7 @@ foreach (var order in viewModel.PersonDetails)
 {% endhighlight %}
 {% endtabs %}
 
-![Properties Image](Selection_images/Selection_img3.jpeg)
+![WPF treegrid shows row with LastName as Buchanan added to SelectedItems collection](Selection_images/Selection_img3.jpeg)
 
 ### Process selection using methods
 
@@ -130,7 +130,7 @@ this.treeGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![Selection methods image](Selection_images/Selection_img4.jpeg)
+![WPF treegrid shows with rows from 3 to 7 are selected](Selection_images/Selection_img4.jpeg)
 
 ### Process current cell
 
@@ -664,7 +664,7 @@ You can change the selection background and foreground using [SelectionBackGrou
 {% endhighlight %}
 {% endtabs %}
 
-![Selection background image](Selection_images/Selection_img5.jpeg)
+![Background and foreground of the selected rows are changed in WPF treegrid](Selection_images/Selection_img5.jpeg)
 
 ### Changing current cell border style
 
@@ -689,7 +689,7 @@ You can change the current cell border thickness and border color using [Curren
 {% endhighlight %}
 {% endtabs %}
 
-![Currentcell border image](Selection_images/Selection_img6.jpeg)
+![Style of current cell border is customized in WPF treegrid](Selection_images/Selection_img6.jpeg)
 
 ### Customizing row selection border
 

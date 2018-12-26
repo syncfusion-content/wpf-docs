@@ -49,7 +49,7 @@ this.treeGrid.GridCopyOption = GridCopyOption.CopyData | GridCopyOption.IncludeH
 {% endhighlight %}
 {% endtabs %}
 
-![Copy Image](Clipboard-Operations_images/Clipboard-Operations_img1.jpeg)
+![WPF treegrid shows with Copied content pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img1.jpeg)
 
 ## Paste
 
@@ -88,7 +88,7 @@ this.treeGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 {% endhighlight %}
 {% endtabs %}
 
-![Paste Image](Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
+![WPF treegrid shows with Copied record pasted in new record](Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
 
 ## Cut
 
@@ -123,7 +123,7 @@ this.treeGrid.GridCopyOption = GridCopyOption.CutData | GridCopyOption.IncludeHe
 {% endhighlight %}
 {% endtabs %}
 
-![Cut image](Clipboard-Operations_images/Clipboard-Operations_img3.jpeg)
+![WPF treegrid shows with Data from the record is cut and pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img3.jpeg)
 
 ## Events
 
@@ -196,7 +196,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 </tr>
 </table>
 
-![CopyCellContent image](Clipboard-Operations_images/Clipboard-Operations_img4.jpeg)
+![WPF treegrid shows with Copied data customized through CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img4.jpeg)
 
 The below code example handled the copy operation when MappingName of a Column is Id.
 
@@ -210,7 +210,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![Copycellcontent image1](Clipboard-Operations_images/Clipboard-Operations_img5.jpeg)
+![WPF treegrid shows with Copy operation for a column handled through CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img5.jpeg)
 
 ### PasteCellContent
 
@@ -247,7 +247,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![PasterCellContent image](Clipboard-Operations_images/Clipboard-Operations_img6.jpeg)
+![WPF treegrid shows with Data of a column customized when pasting through PasteCellContent event](Clipboard-Operations_images/Clipboard-Operations_img6.jpeg)
 
 The below code example handled the paste operation when MappingName of column is Id.
 
@@ -261,7 +261,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Pastecell content image1](Clipboard-Operations_images/Clipboard-Operations_img7.jpeg)
+![WPF treegrid shows with Paste operation of a column is handled through PasteCellContent event](Clipboard-Operations_images/Clipboard-Operations_img7.jpeg)
 
 ## Programmatically handle the clipboard operations
 
@@ -563,10 +563,10 @@ private static void OnPasteColumn(object obj)
 
 **Copy the ID column using context menu:**
 
-![Copy id image](Clipboard-Operations_images/Clipboard-Operations_img8.jpeg)
+![Context menu shown copy the id column in WPF treegrid](Clipboard-Operations_images/Clipboard-Operations_img8.jpeg)
 
 **Paste the ID column after ReportsTo column:**
 
-![Paste id image](Clipboard-Operations_images/Clipboard-Operations_img9.jpeg)
+![Context menu shown paste the reportsto column in WPF treegrid](Clipboard-Operations_images/Clipboard-Operations_img9.jpeg)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfTreeGridDemo-1663889750.zip).
