@@ -9,7 +9,7 @@ documentation: ug
 
 # Touch Support
 
-Syncfusion controls for WPF provide touch support. This feature allows you interact with your applications on touch-enabled devices such as touch-screen monitors. It provides extensibility, and all our specific controls support to `Gestures`.
+Syncfusion WPF controls provide touch support. This feature allows you to interact with your applications on touch-enabled devices such as touch-screen monitors. It provides extensibility, and all our specific controls support to `Gestures`.
 
 ## Gesture
 
