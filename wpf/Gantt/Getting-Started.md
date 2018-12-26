@@ -277,13 +277,13 @@ The following are the steps to create Gantt control through designer.
 
 ## Adjusting Gantt and Grid Size
 
-The GanttControl allows users set the width for GanttChart and GanttGrid  using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ChartWidth.html) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~GridWidth.html) properties. The following code sample demonstrates how to set width for chart and grid.
+The GanttControl allows users to set the width for GanttChart and GanttGrid  using the [`ChartWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ChartWidth.html) and [`GridWidth`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~GridWidth.html) properties. The following code sample demonstrates how to set width for chart and grid.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<sync:GanttControl x:Name="Gantt" GridWidth="200" ChartWidth="800" > 
+<sync:GanttControl x:Name="control" GridWidth="200" ChartWidth="800" > 
 </Sync:GanttControl>
 
 
@@ -292,9 +292,9 @@ The GanttControl allows users set the width for GanttChart and GanttGrid  using 
 {% highlight c# %}
 
  //Initializing Gantt
-GanttControl Gantt = new GanttControl();
-Gantt.GridWidth = new GridLength(200); 
-Gantt.ChartWidth = new GridLength(800); 
+GanttControl control = new GanttControl();
+control.GridWidth = new GridLength(200); 
+control.ChartWidth = new GridLength(800); 
 
 {% endhighlight  %}
 
@@ -303,13 +303,13 @@ Gantt.ChartWidth = new GridLength(800);
 
 ## Schedule Padding 
 
-Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ScheduleRangePadding.html) property in GanttControl. This property extends the schedule with number of lower timescale units to improve user experiences.
+Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ScheduleRangePadding.html) property in GanttControl. This property extends the schedule with number of lower schedule units in starting position to improve the user experience.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Sync:GanttControl x:Name="Gantt" ItemsSource="{Binding TaskCollection}"  ScheduleRangePadding="5">
+<Sync:GanttControl x:Name="control" ItemsSource="{Binding TaskCollection}"  ScheduleRangePadding="5">
 </Sync:GanttControl>
 
 {% endhighlight %}
@@ -317,9 +317,8 @@ Gantt schedule view can be extended by using the [`ScheduleRangePadding`](https:
 {% highlight c# %}
 
  //Initializing Gantt
-GanttControl Gantt = new GanttControl();
-Gantt.ItemsSource = model.GanttItemSource;
-Gantt.ScheduleRangePadding = 5;
+GanttControl control = new GanttControl();
+control.ScheduleRangePadding = 5;
 
 {% endhighlight  %}
 
