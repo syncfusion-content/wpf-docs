@@ -257,7 +257,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![Loading WPF gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
+   ![Loading WPF Gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
 
 
 
