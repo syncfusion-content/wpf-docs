@@ -217,7 +217,7 @@ carousel.Items.Add(new CarouselItem() { Content = viewbox6 });
 carousel.Items.Add(new CarouselItem() { Content = viewbox7 });
 carousel.Items.Add(new CarouselItem() { Content = viewbox8 });
 {% endhighlight %}
-{% endtabs %
+{% endtabs %}
 
 ![wpf carousel items](Getting-Started_images/wpf-carousel-item.jpeg)
 
