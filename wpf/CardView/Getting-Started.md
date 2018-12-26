@@ -60,7 +60,7 @@ To add control manually in XAML, follow the given steps:
         Title="CardView Sample" Height="350" Width="525">
     <Grid>
 		<!-- CardView Control -->
-		<syncfusion: CardView x:Name="cardView"/>
+		<syncfusion:CardView x:Name="cardView"/>
     </Grid>
 </Window>
 {% endhighlight %}
@@ -103,7 +103,7 @@ namespace CardViewSample
 
 ## Adding Items using CardViewItem
 
-You can add the items inside the CardView control using CardViewItem.
+You can add the items inside the CardView control using [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardViewItem.html).
 
 {% tabs %}
 {% highlight XAML %}
