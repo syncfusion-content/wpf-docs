@@ -19,7 +19,7 @@ Gantt control is composed of three controls. They are:
 
 
 
-![Gantt appearance and structure](Getting-Started_images/Getting-Started_img1.png)
+![WPF Gantt appearance and structure](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -29,7 +29,7 @@ Gantt Grid is a table view control which displays the scheduled tasks/activities
 
 
 
-![Gantt grid allotment](Getting-Started_images/Getting-Started_img2.png)
+![WPF Gantt grid allotment](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -45,7 +45,7 @@ Gantt Chart is an items control which provides a graphically representation of t
 
 
 
-![Gantt chart allotment](Getting-Started_images/Getting-Started_img3.png)
+![WPF Gantt chart allotment](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -62,7 +62,7 @@ Gantt Schedule is a medium to measure the progress in the Gantt control. Using t
 
 
 
-![Gantt schedule allotment](Getting-Started_images/Getting-Started_img4.png)
+![WPF Gantt schedule allotment](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -70,7 +70,7 @@ Gantt Schedule is a medium to measure the progress in the Gantt control. Using t
 
 
 
-![Gantt flow diagram](Getting-Started_images/Getting-Started_img5.png)
+![WPF Gantt flow diagram](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -257,7 +257,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![Loading gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
+   ![Loading WPF gantt control to designer page](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -267,7 +267,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-   ![Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
+   ![WPF Gantt control loaded in designer page](Getting-Started_images/Getting-Started_img9.png)
 
 
 
