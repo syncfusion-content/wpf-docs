@@ -66,7 +66,7 @@ To add control manually in XAML, follow the given steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Adding control manually in C#
+## Adding control manually in C\#
 
 To add control manually in C#, follow the given steps:
 
