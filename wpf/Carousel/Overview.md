@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of the Carousel control for WPF
+title: Overview | Carousel | WPF | Syncfusion
 description: overview of the Carousel control for WPF
 platform: wpf
 control: Carousel
