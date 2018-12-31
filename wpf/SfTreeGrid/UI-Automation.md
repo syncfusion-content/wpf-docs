@@ -9,9 +9,9 @@ documentation: ug
 
 # UI Automation
 
-### Requirements and Configuration
+### Requirements and configuration
 
-To test SfTreeGrid control with CUITs, build the Extension Project and place it in the mentioned location. You can get the extension project from the below location.
+To test SfTreeGrid control with CUITs, build the extension project and place it in the mentioned location. You can get the extension project from the following location.
 
 <table>
 <tr>
@@ -24,8 +24,8 @@ http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-127169
 </tr>
 </table>
 
-1.	Open the extension project and build it.
-2.	You can get the below tabulated assembly from bin folder.
+1. Open the extension project and build it.
+2. Get the following tabulated assembly from the bin folder.
 
 <table>
 <tr>
@@ -38,7 +38,7 @@ Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
 </tr>
 </table>
 
-SfGridExtension assembly must be placed into the following directory based on your Visual Studio version.
+The SfGridExtension assembly must be placed into the following directory based on your Visual Studio version.
 For Visual Studio 2010: 
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages
 
@@ -54,12 +54,13 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\14.0\UITestExtensionPa
 For Visual Studio 2017: 
 C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPackages
 
-N> Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
+N> Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll needs to be installed in GAC location. Please refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
 
-### Steps to working with Coded UI
+### Steps to work with coded UI
 
-This topic shows how to create a CodedUITest project and test the tree grid application.
-1.	Create a new WPF application or open an existing WPF application with tree grid and enable Coded UI Test in tree grid. To enable CUITs, you need to set AutomationPeerHelper.EnableCodedUI as True and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace as shown in the following code example,
+This section explains how to create a CodedUITest project and test the tree grid application.
+
+1. Create a new WPF application or open an existing WPF application with tree grid and enable the coded UI test in tree grid. To enable CUITs, set AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace as demonstrated in the following code sample.
 
 {% tabs %}
 {% highlight c# %}
@@ -75,8 +76,8 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-2. Build the application and launch the .exe file from the bin folder.          
-3. Create a Coded UI Test Project as shown in the following screenshot.               							
+2. Build the application and launch the .exe file from the bin folder.
+3. Create a coded UI test project as shown in the following screenshot.
 
    ![Coded UI Test Project](UIAutomation_images/UIAutomation_img1.png)
 
@@ -84,7 +85,8 @@ public MainWindow()
 
    Add New Project
    {:.caption}
-4. After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
+
+4. After created a new coded UI project, a CUIT file is added automatically, and the Generate Code dialog box appears. In this, choose Record actions, edit UI map, or add assertions.
 
    ![Generate Code dialog box](UIAutomation_images/UIAutomation_img2.png)
 
@@ -92,7 +94,8 @@ public MainWindow()
 
    Generate Code for Coded UI Test
    {:.caption}
-5. Now the Coded UI project Visual Studio gets minimized and CodedUITestBuilder appears in the bottom right corner of your window. You can record the actions by clicking Start Recording in CodedUITestBuilder.
+
+5. Now, minimize the coded UI project Visual Studio, and CodedUITestBuilder appears in the bottom-right corner of your window. You can record the actions by clicking the Start Recording in CodedUITestBuilder.
 
 
 
@@ -102,7 +105,8 @@ public MainWindow()
 
    CodedUITestBuilder
    {:.caption}
-6. You can also open the CodedUITestBuilder from existing Coded UI project by right clicking on the CodedUITestMethod1 in CUIT file and clicking the Generate Code For Coded UI Test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom right corner of the window.
+
+6. Open the CodedUITestBuilder from the existing coded UI project by right-clicking the CodedUITestMethod in the CUIT file and clicking the Generate Code for coded UI test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom-right corner of the window.
 
    ![CodedUITestBuilder with Coded UI project by right clicking](UIAutomation_images/UIAutomation_img4.png)
 
@@ -110,8 +114,8 @@ public MainWindow()
 
    CodedUITestMethod
    {:.caption}
-7. Now you can drag the Crosshairs on to the UI elements of your WPF SfTreeGrid application and it shows the available properties of the inner UI elements in SfTreeGrid.
-8. You can record the actions made on UI elements by clicking Record button on the CodedUITest builder. For example you can record the action of changing the cell value in SfTreeGrid. Click the Pause button to finish the record.
+7. Now, drag the Crosshairs to the UI elements of your WPF SfTreeGrid application, and it shows the available properties of the inner UI elements in SfTreeGrid.
+8. Record the actions made on UI elements by clicking the Record button on the CodedUITest builder. For example you can record the action of changing the cell value in SfTreeGrid. Click the Pause button to finish the record.
 
 
 
@@ -121,7 +125,8 @@ public MainWindow()
 
    CodedUITest
    {:.caption}
-9. Once the record is completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method. Then close the CodedUITestBuilder and you can see the generated code for cell value changed action as follows.
+
+9. After the record has been completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method, and then close the CodedUITestBuilder. You can see the generated code for cell value changed action as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -147,7 +152,7 @@ public void RecordedMethod1()
 {% endhighlight %}
 {% endtabs %}
 
-10. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
+10. Create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
 
     ![modified cell value](UIAutomation_images/UIAutomation_img6.png)
 
@@ -155,7 +160,8 @@ public void RecordedMethod1()
 
     Assertion window
     {:.caption}
-11. After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
+
+11. After all the tests and assertion have been created, right-click the Test method, and click Run Tests to run the test as follows.
 
     ![Test method and click Run Tests ](UIAutomation_images/UIAutomation_img7.png)
 
@@ -237,7 +243,7 @@ Default Properties  
 TreeGridExpanderCell
 </td>
 <td>
-Default Properties  
+Default properties
 </td>
 </tr>
 </table>
