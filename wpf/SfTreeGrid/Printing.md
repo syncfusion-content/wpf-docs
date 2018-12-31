@@ -6,9 +6,11 @@ platform: wpf
 control: SfTreeGrid
 documentation: ug
 ---
+# Print
+SfTreeGrid allows customize the print settings.
 
 ## Printing
-Printing feature can be achieved by exporting the tree grid to PDF and print the exported PDF using [SfPdfViewer] (https://help.syncfusion.com/wpf/pdfviewer/printing-pdf-files) control.
+Printing feature can be achieved by exporting the tree grid to PDF and print the exported PDF using [SfPdfViewer](https://help.syncfusion.com/wpf/pdfviewer/printing-pdf-files) control.
 
 {% tabs %}
 {% highlight c# %}
@@ -43,10 +45,10 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 
 ![Printing support in WPF treegrid](Printing_images/Printing_img1.png)
 
-You can download the sample [here] (http://www.syncfusion.com/downloads/support/directtrac/general/ze/PrintingDemo-132237879.zip).
+You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PrintingDemo-132237879.zip).
 
 ## Print parent and expanded child nodes
-You can print only the parent and expanded child nodes by overriding the [ExportNodesToPdf] (https://help.syncfusion.com/cr/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter~ExportNodesToPdf.html) method of [TreeGridToPdfConverter] (https://help.syncfusion.com/cr/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter.html) class,
+You can print only the parent and expanded child nodes by overriding the [ExportNodesToPdf](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter~ExportNodesToPdf.html) method of [TreeGridToPdfConverter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter.html) class,
 
 {% tabs %}
 {% highlight c# %}
@@ -106,7 +108,7 @@ public class TreeGridCustomPdfConverter : TreeGridToPdfConverter
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here] (http://www.syncfusion.com/downloads/support/directtrac/212490/ze/PrintingDemo-599407972.zip).
+You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/212490/ze/PrintingDemo-599407972.zip).
 
 ## Print customization
-The print page can be customized while export by passing [TreeGridPdfExportingOptions] (https://help.syncfusion.com/cr/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) instance as an argument to the [ExportToPdf] (https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension~ExportToPdf.html) and [ExportToPdfGrid] (https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension~ExportToPdfGrid.html) methods. You can refer [here] (https://help.syncfusion.com/wpf/sftreegrid/export-to-pdf#export-options) to customize the export options.  
+The print page can be customized while export by passing [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) instance as an argument to the [ExportToPdf](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension~ExportToPdf.html) and [ExportToPdfGrid](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportExtension~ExportToPdfGrid.html) methods. You can refer [here](https://help.syncfusion.com/wpf/sftreegrid/export-to-pdf#export-options) to customize the export options.  
