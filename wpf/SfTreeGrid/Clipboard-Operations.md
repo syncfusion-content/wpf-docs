@@ -184,17 +184,15 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 The below code example changes the clipboard value as 100 instead of cell value 1094 in treegrid.
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight c# %}
 private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventArgs e)
 {
     if (e.Column.MappingName == "Id" && (e.RowData as PersonInfo).Id == 157)
         e.ClipBoardValue = 100;
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![WPF treegrid shows with Copied data customized through CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img4.jpeg)
 
