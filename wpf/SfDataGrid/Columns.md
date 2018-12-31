@@ -580,7 +580,7 @@ public string Country
 {% endhighlight %}
 {% endtabs %}
 
-##### Format columns with DisplayFormat
+##### Format columns with DisplayFormat attribute
 The auto-generated columns will be formatted using the [DataFormatString] (https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in the [DisplayFormat] (https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with the `DataFormatString` property, the DataGrid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
 
 {% tabs %}
