@@ -451,7 +451,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 Below screenshot shows the customized header template loaded on the header of OrderID column.
 
-![Setting template to auto-generated column](Columns_images/Columns_img1.png)
+![WPF datagrid shows customized header template loaded on the header of OrderID column](Columns_images/Columns_img1.png)
 
 #### Data Annotations with AutoGenerateColumns
 
@@ -546,7 +546,7 @@ public string CustomerID
 
 The OrderID and CustomerID column rearranged based on specified order.
 
-![Change the order of the columns](Columns_images/Columns_img2.png)
+![OrderID and CustomerID column rearranged in WPF datagrid ](Columns_images/Columns_img2.png)
 
 ##### Customizing data format 
 
@@ -579,6 +579,31 @@ public string Country
 }
 {% endhighlight %}
 {% endtabs %}
+
+##### Format columns using DisplayFormat attribute
+The auto-generated columns will be formatted using the [DataFormatString] (https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679306%28v%3dvs.95%29) property in the [DisplayFormat] (https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc679253%28v%3dvs.95%29) attribute when the `DisplayFormat` attribute is defined for the properties defined in the view model. If the `DisplayFormat` attribute is defined with the `DataFormatString` property, the DataGrid formats the column only based on `DataFormatString`, without considering other formatting property settings of columns.
+
+{% tabs %}
+{% highlight c# %}
+[DisplayFormat(DataFormatString = "Country is {0}")]
+public string Country
+{
+    get { return country; }
+    set { country = value; }
+}
+
+[DisplayFormat(DataFormatString = "yyyy")]
+public DateTime OrderDate
+{
+    get {  return _orderDate; }
+    set {  orderDate = value; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> The `DataFormatString` attribute will be considered only when the column is auto-generated.
+
+![Columns formatted with DisplayFormatString in WPF datagrid](Columns_images/Columns_img13.png)
 
 ### Manually defining columns
 
@@ -689,13 +714,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
-![Resizing Columns](Columns_images/Columns_img3.png)
+![Resizing cursor shown in between columns of WPF datagrid](Columns_images/Columns_img3.png)
 
 ### Hidden column resizing
 
 SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowResizingHiddenColumns.html) property to `true`.
 
-![Hidden column resizing](Columns_images/Columns_img4.png)
+![Hidden column resizing cursor shown on hidden column of WPF datagrid](Columns_images/Columns_img4.png)
 
 ### Disable resizing
 
@@ -728,7 +753,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![Column drag and drop](Columns_images/Columns_img5.png)
+![WPF datagrid shows the drag window of columns](Columns_images/Columns_img5.png)
 
 You can enable or disable dragging on particular column using [GridColumn.AllowDragging](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~AllowDragging.html) property.
 
@@ -883,7 +908,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endhighlight %}
 {% endtabs %}
 
-![Freezing Columns](Columns_images/Columns_img6.png)
+![WPF datagrid shown with frozen columns](Columns_images/Columns_img6.png)
 
 ## Stacked Headers
 
@@ -924,7 +949,7 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![stacked header rows](Columns_images/Columns_img7.png)
+![WPF datagrid shown with stacked header rows](Columns_images/Columns_img7.png)
 
 You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.aspx). 
 
@@ -979,7 +1004,7 @@ public class OrderInfo
 {% endhighlight %}
 {% endtabs %}
 
-![stacked headers using GroupName property](Columns_images/Columns_img8.png)
+![Stacked headers shown with defined GroupName properties in WPF datagrid](Columns_images/Columns_img8.png)
 
 ### Adding ChildColumns
 
@@ -1140,7 +1165,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfDataGr
 {% endhighlight %}
 {% endtabs %}
 
-![Column Sizing](Columns_images/Columns_img9.png)
+![Columns width initialized with GridLengthUnitType.Star in WPF datagrid. ](Columns_images/Columns_img9.png)
 
 N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.ColumnSizer`.
 
@@ -1168,7 +1193,7 @@ this.datagrid.Columns["OrderID"].ColumnSizer = GridLengthUnitType.AutoWithLastCo
 {% endhighlight %}
 {% endtabs %}
 
-![SfDataGrid in ColumnSizer as AutoLastColumnFill](Columns_images/Columns_img12.png)
+![WPF datagrid showing OrderID column filled with remaining width instead of last column](Columns_images/Columns_img12.png)
 
 ### Refreshing ColumnSizer at runtime
 
@@ -1428,7 +1453,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endhighlight %}
 {% endtabs %}
 
-![Star column sizer ratio support](Columns_images/Columns_img10.png)
+![WPF datagrid shows columns width defined based on ColumnRatio](Columns_images/Columns_img10.png)
 
 ### Change the width of GridComboBoxColumn based on it’s ItemsSource
 
@@ -1513,5 +1538,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endhighlight %}
 {% endtabs %}
 
-![Binding column properties with ViewModel](Columns_images/Columns_img11.png)
+![WPF datagrid shows ViewModel.AllowFiltering property binded to GridColumns.AllowFiltering](Columns_images/Columns_img11.png)
 
