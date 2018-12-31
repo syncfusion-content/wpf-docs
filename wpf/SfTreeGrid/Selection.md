@@ -387,7 +387,7 @@ All rows or cells will be selected.
 
 ### Shift key combinations
 
-When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) is set to [Extended](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select multiple rows using the navigation keys along with the Shift key. Before navigation starts, the current cell will be marked as a pressed cell and the selection will be done in all rows between the pressed cell and current cell.
+When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) is set to [Extended](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select multiple rows using the navigation keys along with the <kbd>Shift</kbd> key. Before navigation starts, the current cell will be marked as a pressed cell and the selection will be done in all rows between the pressed cell and current cell.
 
 <table>
 <tr>
@@ -474,9 +474,9 @@ When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusio
 
 ### Mouse behavior
 
-You can enable/disable the selection when the mouse button is in pressed state by setting the AllowSelectionOnPointerPressed property.
+You can enable/disable the selection when the mouse button is in pressed state by setting the [AllowSelectionOnPointerPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowSelectionOnPointerPressed.html) property.
 
-When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) is set to [Extended](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select multiple rows by clicking on any cell along with ctrl and Shift key. When you click a cell along with Ctrl key, you can select or deselect the particular row. When you click a6 cell along with Shift key, you can select the range rows from the pressed cell to the current cell.
+When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) is set to [Extended](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select multiple rows by clicking on any cell along with <kbd>ctrl</kbd> and <kbd>Shift</kbd> key. When you click a cell along with <kbd>Ctrl</kbd> key, you can select or deselect the particular row. When you click a6 cell along with <kbd>Shift</kbd> key, you can select the range rows from the pressed cell to the current cell.
 
 ### Customizing mouse and keyboard behaviors
 
@@ -795,7 +795,7 @@ public class GridSelectionControllerExt : TreeGridRowSelectionController
 
 ### Changing enter key behavior
 
-By default, while pressing Enter key, the current cell will be moved to next focused cell in the same column. You can change the Enter key behavior by overriding [ProcessKeyDown](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController~ProcessKeyDown.html) method in selection controller. In this method you have to create new [KeyEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.input.keyeventargs) which refers the Tab key and processes the Tab key action.
+By default, while pressing <kbd>Enter</kbd> key, the current cell will be moved to next focused cell in the same column. You can change the <kbd>Enter</kbd> key behavior by overriding [ProcessKeyDown](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController~ProcessKeyDown.html) method in selection controller. In this method you have to create new [KeyEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.input.keyeventargs) which refers the <kbd>Tab</kbd> key and processes the <kbd>Tab</kbd> key action.
 
 
 {% tabs %}
