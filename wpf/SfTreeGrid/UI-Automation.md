@@ -56,11 +56,11 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPa
 
 N> Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll needs to be installed in GAC location. Please refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
 
-### Steps to work with coded UI
+### Steps to work with Coded UI
 
 This section explains how to create a CodedUITest project and test the tree grid application.
 
-1. Create a new WPF application or open an existing WPF application with tree grid and enable the coded UI test in tree grid. To enable CUITs, set AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace as demonstrated in the following code sample.
+1. Create a new WPF application or open an existing WPF application with tree grid and enable the Coded UI test in tree grid. To enable CUITs, set AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace as demonstrated in the following code sample.
 
 {% tabs %}
 {% highlight c# %}
@@ -77,7 +77,7 @@ public MainWindow()
 {% endtabs %}
 
 2. Build the application and launch the .exe file from the bin folder.
-3. Create a coded UI test project as shown in the following screenshot.
+3. Create a Coded UI test project as shown in the following screenshot.
 
    ![Coded UI Test Project](UIAutomation_images/UIAutomation_img1.png)
 
@@ -86,7 +86,7 @@ public MainWindow()
    Add New Project
    {:.caption}
 
-4. After created a new coded UI project, a CUIT file is added automatically, and the Generate Code dialog box appears. In this, choose Record actions, edit UI map, or add assertions.
+4. After created a new Coded UI project, a CUIT file is added automatically, and the Generate Code dialog box appears. In this, choose Record actions, edit UI map, or add assertions.
 
    ![Generate Code dialog box](UIAutomation_images/UIAutomation_img2.png)
 
@@ -95,7 +95,7 @@ public MainWindow()
    Generate Code for Coded UI Test
    {:.caption}
 
-5. Now, minimize the coded UI project Visual Studio, and CodedUITestBuilder appears in the bottom-right corner of your window. You can record the actions by clicking the Start Recording in CodedUITestBuilder.
+5. Now, minimize the Coded UI project Visual Studio, and CodedUITestBuilder appears in the bottom-right corner of your window. You can record the actions by clicking the Start Recording in CodedUITestBuilder.
 
 
 
@@ -106,7 +106,7 @@ public MainWindow()
    CodedUITestBuilder
    {:.caption}
 
-6. Open the CodedUITestBuilder from the existing coded UI project by right-clicking the CodedUITestMethod in the CUIT file and clicking the Generate Code for coded UI test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom-right corner of the window.
+6. Open the CodedUITestBuilder from the existing Coded UI project by right-clicking the CodedUITestMethod in the CUIT file and clicking the Generate Code for Coded UI test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom-right corner of the window.
 
    ![CodedUITestBuilder with Coded UI project by right clicking](UIAutomation_images/UIAutomation_img4.png)
 
