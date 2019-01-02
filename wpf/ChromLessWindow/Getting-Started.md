@@ -40,27 +40,28 @@ Create a new WPF project in Visual Studio to display chromeless window.
 The following steps help you add ChromelessWindow:
 
 1.	Create a WPF project, and refer the following assemblies: 
-    * Syncfusion.Shared.WPF.dll.
-2.	Include an XML namespace for the above assemblies to the Main window.
+     * Syncfusion.Shared.WPF.dll.
+2. Include an XML namespace for the above assemblies to the Main window.
 
- {% tabs %}
- {% highlight XAML %}
- <Window x:Class="Chromelesswindow.MainWindow" 
+{% tabs %}
+{% highlight XAML %}
+<Window x:Class="Chromelesswindow.MainWindow" 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="MainWindow" Height="350" Width="525"
-    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
- </Window>
- {% endhighlight %}
- {% endtabs %}
+    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF">
+</Window>
+{% endhighlight %}
+{% endtabs %}
 
 3.	Change the Window to ChromelessWindow.
 
- <syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
- xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
- Title="MainWindow" Height="350" Width="525"
- xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF" >
+<syncfusion:ChromelessWindow x:Class="Chromelesswindow.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="525"
+    xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF">
+</syncfusion:ChromelessWindow>
 
 4.	Add the **Syncfusion.Windows.Shared namespace**, and inherit MainWindow from ChromelessWindow in code behind.
 
@@ -77,8 +78,8 @@ public partial class MainWindow : ChromelessWindow
 {% endhighlight %}
 {% endtabs %}
 
-
 ![wpf chromeless window application](Getting-Started_images/wpf-chromeless-window.jpeg)
+
 
 ## Customizing title bar
 
@@ -98,14 +99,13 @@ You can customize the background of the title bar by setting the [TitleBarBackgr
     syncfusion:SkinStorage.VisualStyle="Metro"
     Title="ChromelessWindow Sample" Height="350" Width="525">
     <Grid>
-		
     </Grid>
 </syncfusion:ChromelessWindow>
 {% endhighlight %}
 {% endtabs %}
 
-
 ![wpf chromeless window title bar backcolor](Getting-Started_images/wpf-chromeless-window-title-back-color.png)
+
 
 ## Title bar font
 
@@ -123,14 +123,13 @@ The font of the caption in the title bar can be customized using the [TitleFontS
 	syncfusion:SkinStorage.VisualStyle="Metro"
     Title="ChromelessWindow Sample" Height="350" Width="525">
 	<Grid>
-		
 	</Grid>
 </syncfusion:ChromelessWindow>
 {% endhighlight %}
 {% endtabs %}
 
-
 ![wpf chromeless window title font size](Getting-Started_images/wpf-chromeless-window-title-font-size.png)
+
 
 ## Title bar height
 
@@ -149,14 +148,13 @@ You can customize the caption height by setting the [TitleBarHeight](https://hel
 	syncfusion:SkinStorage.VisualStyle="Metro"
     Title="ChromelessWindow Sample" Height="350" Width="525">
 	<Grid>
-		
-	</Grid>
+    </Grid>
 </syncfusion:ChromelessWindow>
 {% endhighlight %}
 {% endtabs %}
 
-
 ![wpf chromeless window title bar height](Getting-Started_images/wpf-chromeless-window-title-height.png)
+
 
 ## Title bar icon
 
@@ -174,14 +172,13 @@ You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de
     syncfusion:SkinStorage.VisualStyle="Metro"
     Title="ChromelessWindow Sample" Height="350" Width="525">
     <Grid>
-		
     </Grid>
 </syncfusion:ChromelessWindow>
 {% endhighlight %}
 {% endtabs %}
 
-
 ![wpf chromeless window icon](Getting-Started_images/wpf-chromeless-window-icon.png)
+
 
 ## Customizing the border of ChromelessWindow
 
@@ -199,10 +196,8 @@ You can change the border color of the chromeless window by setting the [ResizeB
 	ResizeBorderBrush="Red"
     Title="ChromelessWindow Sample" Height="350" Width="525">
 	<Grid>
-
 	</Grid>
 </syncfusion:ChromelessWindow>
-
 {% endhighlight %}
 {% endtabs %}
 
