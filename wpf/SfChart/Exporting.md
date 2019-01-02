@@ -80,7 +80,7 @@ The image will be saved in the specified location in the SaveFileDialog.
 
 ### Export SfChart to image without rendering in UI
 
-You can export chart to image without rendering in UI by set the chart to ['RootVisual'] in ['HwndSource'] and passing ['HwndSourceParameters'] to the ['HwndSource']. The following code snippet demonstrates this.
+You can export the chart to image without rendering in UI by setting the chart to ['RootVisual'] in ['HwndSource'] and passing ['HwndSourceParameters'] to the ['HwndSource']. The following code snippet demonstrates this.
 
 {% highlight c# %}
 
