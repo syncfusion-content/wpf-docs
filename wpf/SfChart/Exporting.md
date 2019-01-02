@@ -78,13 +78,12 @@ The image will be saved in the specified location in the SaveFileDialog.
 
 ![Chart For Printing](Exporting_images/Exported.png)
 
-### Export Chart to Image Without Adding to Any Hierarchy
+### Export SfChart to image without rendering in UI
 
-You can export chart to image without rendering in UI by set the chart to RootVisual in HwndSource and passing HwndSourceParameters to the HwndSource. The following code snippet demonstrates this.
+You can export chart to image without rendering in UI by set the chart to **RootVisual** in **HwndSource** and passing **HwndSourceParameters** to the **HwndSource**. The following code snippet demonstrates this.
 
 {% highlight c# %}
 
-//To export the chart without adding to any hierarchy
 HwndSourceParameters sourceParameters = new HwndSourceParameters();
 
 sourceParameters.HwndSourceHook = ApplicationMessageFilter;
