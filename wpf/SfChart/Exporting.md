@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting SfChart to an image.
+title: Exporting Syncfusion SfChart to an image.
 description: Exporting chart to any standard image formats like JPG, PNG, etc.
 platform: wpf
 control: SfChart
@@ -80,9 +80,15 @@ The image will be saved in the specified location in the SaveFileDialog.
 
 ### Export SfChart to image without rendering in UI
 
-You can export chart to image without rendering in UI by set the chart to **RootVisual** in **HwndSource** and passing **HwndSourceParameters** to the **HwndSource**. The following code snippet demonstrates this.
+You can export chart to image without rendering in UI by set the chart to ['RootVisual'] in ['HwndSource'] and passing ['HwndSourceParameters'] to the ['HwndSource']. The following code snippet demonstrates this.
 
 {% highlight c# %}
+
+static IntPtr ApplicationMessageFilter(IntPtr hwnd, int message, IntPtr wParam, IntPtr lParam, ref bool handled)
+{
+    return IntPtr.Zero;
+}
+
 
 HwndSourceParameters sourceParameters = new HwndSourceParameters();
 
@@ -94,10 +100,5 @@ source.RootVisual = chart;
 
 //Save chart
 chart.Save("Chart.png");
-
-static IntPtr ApplicationMessageFilter(IntPtr hwnd, int message, IntPtr wParam, IntPtr lParam, ref bool handled)
-{
-    return IntPtr.Zero;
-}
 
 {% endhighlight  %}
