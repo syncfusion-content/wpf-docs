@@ -1332,9 +1332,44 @@ chart.Behaviors.Add(behavior);
 
 The following events are available in ChartTrackBallBehavior,
 
-* `PositionChanging` - Occurs when [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) position changing from current mouse position to new mouse position.
-* `PositionChanged` - Occurs when [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) position changed from current mouse position to new mouse position.
+##PositionChanging
 
+The [`PositionChanging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanging_EV.html) event is triggered when the [`trackball`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) position changing from current mouse position to new mouse position. The argument contains the following information.
+
+* [`Cancel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs~Cancel.html) - Gets or sets a value indicating whether to show the trackball on new mouse pointer position.
+* [`PointInfos`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs~PointInfos.html) - Used to get or set the current ChartPointInfo.
+
+##PositionChanged
+
+The [`PositionChanged`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanged_EV.html) event is triggered when the [`trackball`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) position changed from current mouse position to new mouse position. The argument contains the following information.
+
+* [`PreviousPointInfos`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangedEventArgs~PreviousPointInfos.html) - Used to get or set the current ChartPointInfo.
+* [`CurrentPointInfos`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangedEventArgs~CurrentPointInfos.html) - Used to get or set the previous ChartPointInfo.
+
+[`ChartPointInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo.html) class contains the following properties to customize the appearance of trackball label.
+
+* [`Axis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Axis.html) - Used to get the associated axis in which trackball is activated.
+* [`BaseX`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~BaseX.html) - Used to get the x initial coordinate. 
+* [`BaseY`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~BaseY.html) - Used to get the y initial coordinate.
+* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~BorderBrush.html) - Used to get or set the border color of the trackball label.
+* [`Close`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Close.html) - Used to get the close value of the trackball label if applicable. 
+* [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Foreground.html) - Used to get or set the foreground color of the trackball label.
+* [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~High.html) - Used to get the high value of the trackball label if applicable.
+* [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Interior.html) - Used to get or set the interior color of the trackball label.
+* [`Item`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Item.html) - Used to get the respective underlying object of the data in which trackball is activated.
+* [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Low.html) - Used to get the low value of the trackball label if applicable.
+* [`LowerLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~LowerLine.html) - Used to get the y value of the indicator segment.
+* [`Median`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Median.html) - Used to get the median value if applicable.
+* [`Open`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Open.html) - Used to get the open value of the trackball label if applicable.
+* [`PolygonPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~PolygonPoints.html) - Used to get the point collection to render trackball.
+* [`Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Series.html) - Used to get the associated series in which trackball is activated. 
+* [`SeriesValues`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~SeriesValues.html) - Used to get the SeriesValues in which trackball is activated. 
+* [`SignalLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~SignalLine.html) - Used to get the y value of the signal line in the indicator.  
+* [`UpperLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~UpperLine.html) - Used to get the y value of the indicator segment.  
+* [`ValueX`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~ValueX.html) - Used to get the x value. 
+* [`ValueY`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~ValueY.html) - Used to get the y value.  
+* [`X`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~X.html) - Used to get the x coordinate.
+* [`Y`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Y.html) - Used to get the y coordinate.
 
 ## Visual Data Editing
 
