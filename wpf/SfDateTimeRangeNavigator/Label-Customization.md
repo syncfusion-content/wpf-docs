@@ -160,6 +160,18 @@ YearInterval</td><td>
 7/21/2011 12:00:00 AM > 2011</td></tr>
 </table>
 
+**LabelFormatters**
+
+[`LabelFormatters`] - Gets or sets string collection to set the label format for the navigator labels.
+
+The following code illustrates how to set label format.
+
+{% highlight c# %}
+
+interval1.LabelFormatters = new ObservableCollection<string>(); interval1.LabelFormatters.Add("MMMM,yyyy");    
+interval2.LabelFormatters = new ObservableCollection<string>(); interval2.LabelFormatters.Add("ddd");
+
+{% endhighlight %}
 
 **Label style customization**
 
