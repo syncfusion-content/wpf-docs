@@ -18,7 +18,7 @@ The date-time range navigator control is composed of various elements such as hi
 * Content: Holds any type of UI element inside the navigator.
 * Resizable scroll bar: Allows users to zoom and scroll the content and label bars.
 
-![WPF SfDateTimeRangNavigator](Getting-Started_images/Getting-Started_img1.png)
+![Getting started for WPF SfDateTimeRangNavigator ](Getting-Started_images/Getting-Started_img1.png)
 
 ## Create SfDateTimeRangeNavigator
 
@@ -192,7 +192,7 @@ rangeNavigator.Content = chart;
 
 The following screenshot illustrates the result of the above code sample.
 
-![WPF SfDateTimeRangNavigator](Getting-Started_images/Getting-Started_img2.png)
+![Getting started for WPF SfDateTimeRangNavigator ](Getting-Started_images/Getting-Started_img2.png)
 
 ## Create SfDateTimeRangeNavigator from code-behind
 
