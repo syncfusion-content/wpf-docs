@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Workflow configuration
+# Workflow configuration.
 
 A Kanban workflow is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 

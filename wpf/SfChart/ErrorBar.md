@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Error Bars
+# Error Bars.
 
 [ErrorBarSeries](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#) is used to indicate the errors or uncertainty in reported values. This will find the possible variations in measurements, and in Chart control these values are displayed as data points.
 

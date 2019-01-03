@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Placeholder
+# Placeholder.
 
 The placeholder is to denote a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
 

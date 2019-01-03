@@ -6,7 +6,7 @@ platform: wpf
 control: SfKanban
 documentation: ug
 ---
-# Getting Started 
+# Getting Started. 
 
 The following section provides an assistance to create a simple Kanban application and to configure it. 
 

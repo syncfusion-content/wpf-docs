@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features.
 
 SfChart provides interactive features such as zooming, selection, and tracking data points.
 

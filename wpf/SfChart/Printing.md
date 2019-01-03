@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Printing
+# Printing.
 
 SfChart supports printing that enables you to print the chart. The following method is used to print the chart.
 

@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Cards
+# Cards.
 
 The default elements of a card can be customized using the below properties of [`KanbanModel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 

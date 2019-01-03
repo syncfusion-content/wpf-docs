@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Trendlines
+# Trendlines.
 
 Trendlines are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends. 
 

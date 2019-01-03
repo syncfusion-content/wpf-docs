@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Technical Indicator
+# Technical Indicator.
 
 Technical indicators are the base of technical analysis, which are used to determine the future market trends. 
 

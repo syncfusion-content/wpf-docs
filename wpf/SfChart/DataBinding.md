@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# DataBinding
+# DataBinding.
 
 SfChart offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 

@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Empty Points
+# Empty Points.
 
 The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 

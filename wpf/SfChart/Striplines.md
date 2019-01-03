@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Striplines
+# Striplines.
 
 SfChart allows you to add Striplines to the chart, which shades the specific region or range in the plot area background at regular or custom intervals. 
 

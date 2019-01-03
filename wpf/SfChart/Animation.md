@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Animation
+# Animation.
 
 SfChart allows you to animate the chart series on loading, and whenever the ItemsSource changes. Animation in chart can be enabled by setting the EnableAnimation property as True and defining the corresponding animation speed with AnimationDuration property.
 

@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Area	
+# Area.	
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 

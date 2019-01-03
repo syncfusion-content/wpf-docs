@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Migrating from Chart to SfChart
+# Migrating from Chart to SfChart.
 
 SfChart is a new chart introduced in 11.1 version. SfChart is a very high performance chart enriched with several business features. This section helps you to identify equivalent Chart features/ APIs in SfChart.
 

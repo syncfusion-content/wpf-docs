@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Exporting
+# Exporting.
 
 Chart can be exported into image format. The following are the supported image formats:
 
