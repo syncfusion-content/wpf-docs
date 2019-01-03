@@ -22,11 +22,11 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-[`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~IntervalType.html)</td><td>
+[`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~IntervalType.html)</</td><td>
 Sets the interval type that needs to be displayed in the navigator.</td></tr>
 <tr>
 <td>
-['LabelFormatters'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~LabelFormatters.html)</td><td>
+['LabelFormatters'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~LabelFormatters.html)</</td><td>
 Gets or sets string collection to set the label format for the navigator labels.</td></tr>
 </table>
 
@@ -114,7 +114,7 @@ rangeNavigator.Content = chart;
 
 The following screenshot illustrates only Quarter and Month intervals in the navigator.
 
-![Label Customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img1.png)
+![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img1.png)
 
 The interval can be set in the following types: 
 
@@ -159,6 +159,7 @@ QuarterInterval</td><td>
 YearInterval</td><td>
 7/21/2011 12:00:00 AM > 2011</td></tr>
 </table>
+
 
 **Label style customization**
 
@@ -238,4 +239,4 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 The following screenshot illustrates setting the Label HorizontalAlignment to left.
 
-![Label Customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img2.png)
+![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img2.png)
