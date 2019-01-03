@@ -7,7 +7,7 @@ control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Getting Started.
+# Getting Started
 
 ## Visual structure
 
