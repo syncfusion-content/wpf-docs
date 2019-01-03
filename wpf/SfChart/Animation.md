@@ -74,12 +74,12 @@ chart.Series.Add(columnSeries);
 
 **Column** **Series**
 
-![](Animation_images/column.gif)
+![Animation support in WPF SfChart](Animation_images/column.gif)
 
 **SplineArea** **Series**
 
-![](Animation_images/spline.gif)
+![Animation support in WPF SfChart](Animation_images/spline.gif)
 
 **Scatter** **Series**
 
-![](Animation_images/scatter.gif)
+![Animation support in WPF SfChart](Animation_images/scatter.gif)

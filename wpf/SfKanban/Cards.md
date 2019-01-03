@@ -76,7 +76,7 @@ sfKanban.IndicatorColorPalette = indicatorColorPalette;
 
 {% endtabs %}
 
-![](SfKanban_images/CardCustomization.png)
+![Customization of cards in WPF SfKanban](SfKanban_images/CardCustomization.png)
 
 ## Template
 
@@ -165,4 +165,4 @@ You can replace the entire card template with your own design using [`SfKanban.C
 {% endhighlight %}
 
 
-![](SfKanban_images/CardTemplate.png)
+![Template support for cards in WPF SfKanban](SfKanban_images/CardTemplate.png)
