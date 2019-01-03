@@ -82,5 +82,5 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 {% endhighlight %}
 
-![Multiple category support for a column in WPF SfKanban](SfKanban_images/MultipleCategoryMapping.png)
+![Multiple category support for a column in WPF SfKanban](SfKanban_images/MultipleCategoryImage.jpg)
 
