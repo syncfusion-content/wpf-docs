@@ -22,11 +22,11 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Interval</td><td>
+[`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~IntervalType.html)</td><td>
 Sets the interval type that needs to be displayed in the navigator.</td></tr>
 <tr>
 <td>
-LabelsPosition</td><td>
+['LabelFormatters'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~LabelFormatters.html)</td><td>
 Gets or sets string collection to set the label format for the navigator labels.</td></tr>
 </table>
 
@@ -160,19 +160,6 @@ YearInterval</td><td>
 7/21/2011 12:00:00 AM > 2011</td></tr>
 </table>
 
-**LabelFormatters**
-
-[`LabelFormatters`] - Gets or sets string collection to set the label format for the navigator labels.
-
-The following code illustrates how to set label format.
-
-{% highlight c# %}
-
-interval1.LabelFormatters = new ObservableCollection<string>(); interval1.LabelFormatters.Add("MMMM,yyyy");    
-interval2.LabelFormatters = new ObservableCollection<string>(); interval2.LabelFormatters.Add("ddd");
-
-{% endhighlight %}
-
 **Label style customization**
 
 <table>
@@ -190,7 +177,7 @@ SelectedLabelStyle</td><td>
 Defines the label style for labels in the selected region.</td></tr>
 <tr>
 <td>
-LabelsPosition</td><td>
+Position</td><td>
 Positions the upper and lower labels inside or outside the label bar.</td></tr>
 </table>
 
