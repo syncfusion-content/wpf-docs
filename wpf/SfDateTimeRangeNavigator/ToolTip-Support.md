@@ -89,4 +89,4 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![](ToolTip-Support_images/ToolTip-Support_img1.png)
+![ToolTip support in WPF SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTip-Support_img1.png)

@@ -77,7 +77,7 @@ Kanban.Workflows = workflows;
 
 {% endtabs %}
 
-![](SfKanban_images/workflow.png)
+![Workflow configuration in WPF SfKanban](SfKanban_images/workflow.png)
 
 ## Work In-Progress limit
 
@@ -139,4 +139,4 @@ column1.ErrorBarSettings = new ErrorBarSettings()
 
 {% endtabs %}
 
-![](SfKanban_images/wiplimit.png)
+![Work in progess limit in WPF SfKanban](SfKanban_images/wiplimit.png)

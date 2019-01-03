@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Area and its properties. 
+title: Syncfusion WPF Chart Area and its properties. 
 description: Guide for plotting area properties and behaviors.
 platform: wpf
 control: SfChart
