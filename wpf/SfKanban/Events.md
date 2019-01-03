@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Events.
+# Events
 
 ## CardTapped
 

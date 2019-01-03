@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# 3D Charts.
+# 3D Charts
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 

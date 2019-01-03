@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Styling and Customization.
+# Styling and Customization
 
 SfChart supports various customizing and styling options that allows you to enrich the application.
 

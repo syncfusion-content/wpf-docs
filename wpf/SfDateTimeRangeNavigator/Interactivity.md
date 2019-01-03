@@ -7,7 +7,7 @@ control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Interactivity.
+# Interactivity
 
 The date-time range navigator control provides interactive features such as zooming and panning. This control has a resizable scrollbar, which is used to zoom in large amount of data and navigate to particular timespan by moving the scroll bar.
 
@@ -190,11 +190,11 @@ chart.Series.Add(candleSeries);
 
 The following screenshot illustrates selecting one quarter of data.
 
-![](Interactivity_images/Interactivity_img1.png)
+![Zooming support in WPF SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img1.png)
 
 The following screenshot illustrates the control after zooming into weeks of data from 6 months of data.
 
-![](Interactivity_images/Interactivity_img2.png)
+![Zooming support in WPF SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img2.png)
 
 
 ## Thumb style customization
@@ -286,7 +286,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 The following screenshot illustrates the control after customizing the right thumb.
 
-![](Interactivity_images/Interactivity_img3.png)
+![Thumb customization support in WPF SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img3.png)
 
 ## Higher and lower bars customization
 

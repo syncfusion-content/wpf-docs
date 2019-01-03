@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Sorting.
+# Sorting
 
 Chart provides the support for sorting the data point either in ascending or descending based on X or Y axis.
 

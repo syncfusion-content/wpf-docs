@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Watermark.
+# Watermark
 
 SfChart provides watermark support which is used to add text or images to the chart area. The major application of watermark is to define the copyright information of the user it belongs to.
 

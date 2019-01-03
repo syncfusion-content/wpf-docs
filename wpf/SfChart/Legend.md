@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Legend.
+# Legend
 
 Legend provides metadata which helps for identifying elements in chart like [chart series](http://help.syncfusion.com/wpf/sfchart/series), 
 [technical indicators](http://help.syncfusion.com/wpf/sfchart/technical-indicators), and [trendlines](http://help.syncfusion.com/wpf/sfchart/trendlines). 

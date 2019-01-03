@@ -7,7 +7,7 @@ control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Label Customization.
+# Label Customization
 
 The date-time range navigator control helps users to visualize large data in a simplified manner. The timespan of data is represented in the higher level bar and lower level bar. The timespan calculates data smartly and provides suitable date-time format and interval, by default.
 
@@ -114,7 +114,7 @@ rangeNavigator.Content = chart;
 
 The following screenshot illustrates only Quarter and Month intervals in the navigator.
 
-![](Label-Customization_images/Label-Customization_img1.png)
+![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img1.png)
 
 The interval can be set in the following types: 
 
@@ -239,4 +239,4 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 The following screenshot illustrates setting the Label HorizontalAlignment to left.
 
-![](Label-Customization_images/Label-Customization_img2.png)
+![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img2.png)

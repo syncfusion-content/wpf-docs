@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Workflow configuration.
+# Workflow configuration
 
 A Kanban workflow is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 
@@ -77,7 +77,7 @@ Kanban.Workflows = workflows;
 
 {% endtabs %}
 
-![](SfKanban_images/workflow.png)
+![Workflow configuration in WPF SfKanban](SfKanban_images/workflow.png)
 
 ## Work In-Progress limit
 
@@ -139,4 +139,4 @@ column1.ErrorBarSettings = new ErrorBarSettings()
 
 {% endtabs %}
 
-![](SfKanban_images/wiplimit.png)
+![Work in progess limit in WPF SfKanban](SfKanban_images/wiplimit.png)

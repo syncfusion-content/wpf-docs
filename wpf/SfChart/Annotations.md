@@ -6,7 +6,7 @@ platform: wpf
 control: SfChart
 documentation: ug
 ---
-# Annotations.
+# Annotations
 
 SfChart supports Annotations, which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using Annotations. 
 
