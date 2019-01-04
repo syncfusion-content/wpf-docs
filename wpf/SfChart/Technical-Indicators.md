@@ -17,7 +17,7 @@ Technical indicator merely an another type meta series. The following steps illu
 
 ### Initializing Indicator
 
-Create the instance for any technical indicator and add it to the [`TechnicalIndicators`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~TechnicalIndicators.html#) collection. 
+Create the instance for any technical indicator and add it to the [`TechnicalIndicators`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~TechnicalIndicators.html#) collection. 
 
 Here for instance, the [Accumulation Distribution](#accumulationdistributionindicator) is added.
 
@@ -126,11 +126,11 @@ chart.TechnicalIndicators.Add(indicator);
 
 The following sections covers all the different types of technical indicators available in SfChart.
 
-Most of the indicators are having the [`Period`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator~Period.html#) and [`SignalLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator~SignalLineColor.html#) properties as common, in which Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
+Most of the indicators are having the [`Period`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator~Period.html#) and [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator~SignalLineColor.html#) properties as common, in which Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
 
 ## Average True Range
 
-You can define the [`AverageTrueRangeIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html#) using the following code example
+You can define the [`AverageTrueRangeIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html#) using the following code example
 
 {% tabs %}
 
@@ -180,7 +180,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Simple Average 
 
-The following code example demonstrates the usage of [`SimpleAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html#).
+The following code example demonstrates the usage of [`SimpleAverageIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html#).
 
 {% tabs %}
 
@@ -234,9 +234,9 @@ chart.TechnicalIndicators.Add(indicator);
 
 The Relative Strength Index(RSI) indicators are having additional two lines other than signal line, which indicate the overbought and oversold region. 
 
-The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~UpperLineColor.html#) property is used to define the color for the line indicating overbought region and the [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~LowerLineColor.html#) property is used to define the color for the line indicating oversold region.
+The [`UpperLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~UpperLineColor.html#) property is used to define the color for the line indicating overbought region and the [`LowerLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator~LowerLineColor.html#) property is used to define the color for the line indicating oversold region.
 
-To define the [`RSITechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#), you can use the following code example:
+To define the [`RSITechnicalIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#), you can use the following code example:
 
 {% tabs %}
 
@@ -294,7 +294,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 This indicator is having two lines momentum line and center line. No signal line is in this indicator. You can define momentum technical indicator using the following code example.
 
-The [`MomentumLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~MomentumLineColor.html#) property and [`CenterLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~CenterLineColor.html#) property are used to define the color for the momentum and center line respectively.
+The [`MomentumLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~MomentumLineColor.html#) property and [`CenterLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator~CenterLineColor.html#) property are used to define the color for the momentum and center line respectively.
 
 {% tabs %}
 
@@ -346,9 +346,9 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Stochastic 
 
-This indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~KPeriod.html#) and [`DPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~DPeriod.html#) property defining the ‘K’ percentage and ‘D’ percentage respectively. No signal line in this indicator.
+This indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~KPeriod.html#) and [`DPeriod`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~DPeriod.html#) property defining the ‘K’ percentage and ‘D’ percentage respectively. No signal line in this indicator.
 
-The [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~UpperLineColor.html#), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~LowerLineColor.html#) and [`PeriodLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~PeriodLineColor.html#) property are used to define the brushes for the Stochastic indicator lines.
+The [`UpperLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~UpperLineColor.html#), [`LowerLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~LowerLineColor.html#) and [`PeriodLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~PeriodLineColor.html#) property are used to define the brushes for the Stochastic indicator lines.
 
 You can define stochastic technical indicator using the following code example:
 
@@ -408,7 +408,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Exponential Average
 
-The [`ExponentialAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](#_simple-average) and this can be defined using the following code examples.
+The [`ExponentialAverageIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html#) is similar to [SimpleAverageIndicator](#_simple-average) and this can be defined using the following code examples.
 
 {% tabs %}
 
@@ -458,7 +458,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Triangular Average 
 
-The [`TriangularAverageIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularAverageIndicator.html#) can be defined as in the following code example.
+The [`TriangularAverageIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularAverageIndicator.html#) can be defined as in the following code example.
 
 {% tabs %}
 
@@ -508,7 +508,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Accumulation Distribution 
 
-The following code example help you to add [`AccumulationDistributionIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html#).
+The following code example help you to add [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html#).
 
 {% tabs %}
 
@@ -562,9 +562,9 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Bollinger Band
 
-This indicator also having [`UpperLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~UpperLineColor.html#), [`LowerLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~LowerLineColor.html#) and [`SignalLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~SignalLineColor.html#) property for defining the brushes for the indicator lines.
+This indicator also having [`UpperLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~UpperLineColor.html#), [`LowerLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~LowerLineColor.html#) and [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator~SignalLineColor.html#) property for defining the brushes for the indicator lines.
 
-You can define the [`BollingerBandIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#) using the following code example:
+You can define the [`BollingerBandIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#) using the following code example:
 
 {% tabs %}
 
@@ -620,13 +620,13 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## MACD 
 
-This is mostly using indicator having [`ShortPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~ShortPeriod.html#) and [`LongPeriod`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~LongPeriod.html#) for defining the motion of the indicator.
+This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~ShortPeriod.html#) and [`LongPeriod`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~LongPeriod.html#) for defining the motion of the indicator.
 
-Other than signal line, MACD is having convergence and divergence line. The brushes for these lines can be defined using [`ConvergenceLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~ConvergenceLineColor.html#) and [`DivergenceLineColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~DivergenceLineColor.html#).
+Other than signal line, MACD is having convergence and divergence line. The brushes for these lines can be defined using [`ConvergenceLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~ConvergenceLineColor.html#) and [`DivergenceLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~DivergenceLineColor.html#).
 
-Also you can draw line, histogram MACD or both using the [`Type`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~Type.html#) property, which defines the type of MACD to be drawn.
+Also you can draw line, histogram MACD or both using the [`Type`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~Type.html#) property, which defines the type of MACD to be drawn.
 
-You can define the [`MACDTechnicalIndicator`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#) using the following code example:
+You can define the [`MACDTechnicalIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#) using the following code example:
 
 {% tabs %}
 

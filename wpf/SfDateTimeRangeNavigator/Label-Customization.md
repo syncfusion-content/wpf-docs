@@ -22,11 +22,11 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Interval</td><td>
+[`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~IntervalType.html)</td><td>
 Sets the interval type that needs to be displayed in the navigator.</td></tr>
 <tr>
 <td>
-LabelsPosition</td><td>
+['LabelFormatters'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~LabelFormatters.html)</td><td>
 Gets or sets string collection to set the label format for the navigator labels.</td></tr>
 </table>
 
@@ -178,7 +178,7 @@ SelectedLabelStyle</td><td>
 Defines the label style for labels in the selected region.</td></tr>
 <tr>
 <td>
-LabelsPosition</td><td>
+['Position'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~Position.html)</td><td>
 Positions the upper and lower labels inside or outside the label bar.</td></tr>
 </table>
 
