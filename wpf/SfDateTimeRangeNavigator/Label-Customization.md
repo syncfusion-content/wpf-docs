@@ -178,7 +178,7 @@ SelectedLabelStyle</td><td>
 Defines the label style for labels in the selected region.</td></tr>
 <tr>
 <td>
-Position</td><td>
+['Position'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~Position.html)</td><td>
 Positions the upper and lower labels inside or outside the label bar.</td></tr>
 </table>
 
