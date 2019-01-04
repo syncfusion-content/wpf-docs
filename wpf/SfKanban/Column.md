@@ -17,15 +17,14 @@ By default, the columns are sized smartly to arrange the default elements of the
 
 {% highlight xaml %}
 
-<kanban:SfKanban MinColumnWidth ="300" MaxColumnWidth ="340">
-</kanban:SfKanban>
+<kanban:SfKanban MinColumnWidth="300" MaxColumnWidth="340"/>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-kanban. MinColumnWidth = 300;
-kanban. MaxColumnWidth = 340;
+kanban.MinColumnWidth = 300;
+kanban.MaxColumnWidth = 340;
 
 {% endhighlight %}
 
@@ -38,8 +37,7 @@ You can also define the exact column width using the [`SfKanban.ColumnWidth`](ht
 
 {% highlight xaml %}
 
-<kanban:SfKanban ColumnWidth ="250">
-</kanban:SfKanban>
+<kanban:SfKanban ColumnWidth="250"/>
 
 {% endhighlight %}
 
@@ -53,14 +51,13 @@ kanban.ColumnWidth = 250;
 
 ## Categorizing columns
 
-If [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ItemsSource.html) contains custom objects, the path of the property used to categorize the card should be explicitly defined using the [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ColumnMappingPath.html) property. By default, [`SfKanban`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban.html) automatically categorizes the items using the [`KanbanModel.Category`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanModel~Category.html) property.
+The cards are categorized and added into the respective columns using the value of the [`KanbanModel.Category`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanModel~Category.html) property if the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ItemsSource.html) is the collection of KanbanModel. But, if the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ItemsSource.html) is populated with custom objects, the property from the custom object used to categorize the card should be defined explicitly using the [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ColumnMappingPath.html) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<kanban:SfKanban ColumnMappingPath="Group">
-</kanban:SfKanban>
+<kanban:SfKanban ColumnMappingPath="Group"/>
 
 {% endhighlight %}
 
@@ -72,9 +69,9 @@ kanban.ColumnMappingPath = "Group";
 
 {% endtabs %}
 
-### Multiple category for a column
+### Populate the column with cards from different categories
 
-More than one category can be mapped to a column by assigning multiple values to the Categories collection of [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). For example, you can map the “In progress" and "Validate" types under the “In progress” column.
+More than one category can be mapped to a column by assigning multiple values to the ['Categories'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~Categories.html) collection of [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). For example, you can map the “In Progress" and "Validated" types under the “In progress” column.
 
 {% highlight C# %} 
 
@@ -82,5 +79,5 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 {% endhighlight %}
 
-![Multiple category support for a column in WPF SfKanban](SfKanban_images/MultipleCategoryImage.jpg)
+![Multiple category support for a column in WPF Kanban](SfKanban_images/kanban_board_multiple_category_column.png)
 
