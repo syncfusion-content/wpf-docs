@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive feature | TreeGrid | WPF | Syncfusion
-description: Interactive feature of SfTreeGrid | SfTreeGrid | ToolTip 
+description: This section explains about the Interactive Features in SfTreeGrid.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -152,7 +152,7 @@ this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Paste" });
 
 ![ContextMenu for nodes in treegrid WPF](ContextMenu_images/ContextMenu_img1.png)
 
-When binding the menu item using CommandBinding, you can get the command parameter as TreeGridNodeContextMenuInfo, which contains nodes of the corresponding row.
+When binding the menu item using CommandBinding, you can get the command parameter as [TreeGridNodeContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridNodeContextMenuInfo.html), which contains nodes of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +209,7 @@ this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearFilter
 
 ![ContextMenu for header in treegrid WPF ](ContextMenu_images/ContextMenu_img2.png)
 
-When binding the menu item using CommandBinding, you can get the parameter as TreeGridColumnContextMenuInfo, which contains a particular GridColumn.
+When binding the menu item using CommandBinding, you can get the parameter as [TreeGridColumnContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnContextMenuInfo.html), which contains a particular GridColumn.
 
 {% tabs %}
 {% highlight xaml %}
@@ -261,7 +261,7 @@ this.treeGrid.ExpanderContextMenu.Items.Add(new MenuItem() { Header = "Collapse"
 {% endhighlight %}
 {% endtabs %}
 
-When binding the menu item using CommandBinding, you can get the parameter as TreeGridNodeContextMenuInfo, which contains the expander node.
+When binding the menu item using CommandBinding, you can get the parameter as [TreeGridColumnContextMenuInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnContextMenuInfo.html), which contains the expander node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -289,7 +289,7 @@ When binding the menu item using CommandBinding, you can get the parameter as Tr
 
 ### Events
 
-The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~TreeGridContextMenuOpening_EV.html) event occurs when opening the context menu in SfTreeGrid. TreeGridContextMenuEventArgs has the following members, which provide information about the TreeGridContextMenuOpening event:
+The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~TreeGridContextMenuOpening_EV.html) event occurs when opening the context menu in SfTreeGrid. [TreeGridContextMenuEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~_ctor.html) has the following members, which provide information about the TreeGridContextMenuOpening event:
   
 [ContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenu.html) – Gets the corresponding context menu. 
 [ContextMenuInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenuInfo.html) – Returns the context menu info based on the row that opens the context menu.
@@ -301,7 +301,7 @@ The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/cref_files/wpf/S
 
 #### Changing the menu item when ContextMenu opens
 
-You can use the TreeGridContextMenuOpening event to change the menu item when the context menu opens. 
+You can use the [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~TreeGridContextMenuOpening_EV.html) event to change the menu item when the context menu opens. 
 
 {% tabs %}
 {% highlight xaml %}
