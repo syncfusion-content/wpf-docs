@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for SfKanban
+title: Getting Started | SfKanban | WPF| Syncfusion
 description: The following section provides an assistance to create a simple Kanban application and to configure it.
 platform: wpf
 control: SfKanban
@@ -70,15 +70,15 @@ SfKanban kanban = new SfKanban();
 
 Drag and drop the Kanban control from the toolbox to your application.
 
-![](SfKanban_images/toolbox.png)
+![Adding SfKanban from toolbox](SfKanban_images/toolbox.png)
 
 
 Now the Syncfusion.SfKanban.WPF reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![](SfKanban_images/assemblyincluded.png)
+![Adding SfKanban from toolbox](SfKanban_images/assemblyincluded.png)
 
 
-![](SfKanban_images/xamlreference.png)
+![Adding SfKanban from toolbox](SfKanban_images/xamlreference.png)
 
 
 ### Create data model
@@ -292,7 +292,7 @@ grid.Children.Add(kanban);
 
 {% endtabs %}
 
-![](SfKanban_images/column.png)
+![Defining columns for SfKanban](SfKanban_images/column.png)
 
 
 You can also set AutoGenerateColumns property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
