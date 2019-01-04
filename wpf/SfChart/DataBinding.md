@@ -293,7 +293,7 @@ private void CreateChart()
 
 ### Listening Property Changes
 
-You can notify the [`XBindingPath`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html#) and [`YBindingPath`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XYDataSeries~YBindingPath.html#) properties changes by setting [`ListenPropertyChange`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ListenPropertyChange.html#) as true as shown in the below code snippet.
+You can notify the [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html#) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XYDataSeries~YBindingPath.html#) properties changes by setting [`ListenPropertyChange`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ListenPropertyChange.html#) as true as shown in the below code snippet.
 
 {% tabs %}
 

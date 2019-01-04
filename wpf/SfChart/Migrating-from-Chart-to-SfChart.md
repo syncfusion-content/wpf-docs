@@ -23,7 +23,7 @@ The following code example illustrates xmlns namespace for Chart. You can includ
 
 {% highlight xaml %}
 
-xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf)
+xmlns:syncfusion=[https://schemas.syncfusion.com/wpf](https://schemas.syncfusion.com/wpf)
 
 
 {% endhighlight %}
@@ -32,7 +32,7 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 {% highlight xaml %}
 
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+xmlns:syncfusion="https://schemas.syncfusion.com/wpf"
 
                      (or)
 
@@ -194,7 +194,7 @@ Gets or sets width for SyncChartAreas splitter</td></tr>
 The Legends are same for both Chart and SfChart except that you can add multiple Legends for the SfChart.
  The Legend property in ChartArea accepts single Legend for whole Chart. In case of SfChart, the Legend property of
  the SfChart is an object that accepts one or more Legends based on your requirement. 
- [For more details](http://help.syncfusion.com/winrt/sfchart/legend)
+ [For more details](https://help.syncfusion.com/winrt/sfchart/legend)
 
 The following code example illustrates the usage of Legend in Chart and SfChart.
 

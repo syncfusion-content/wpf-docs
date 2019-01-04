@@ -313,7 +313,7 @@ chart.Series.Add(series)
 
 {% endtabs %} 
 
-N> Syncfusion Chart also supports rendering combination of multiple series. Refer [`this`](http://help.syncfusion.com/wpf/sfchart/area#multiple-area) for details.
+N> Syncfusion Chart also supports rendering combination of multiple series. Refer [`this`](https://help.syncfusion.com/wpf/sfchart/area#multiple-area) for details.
 
 ## Add Title
 
@@ -678,5 +678,5 @@ The following chart is created as a result of the above codes.
 
 ![Tooltip support in WPF Chart](Getting-Started_images/img3.png)
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfChart-GettingStarted-357667515).
+You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfChart-GettingStarted-357667515).
 
