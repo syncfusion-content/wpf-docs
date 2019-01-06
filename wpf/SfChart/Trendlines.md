@@ -581,7 +581,7 @@ The following two types of forecasting available in SfChart:
 
 ### Forward Forecast
 
-For determining the future trends (in forward direction). The following code example explains the how to set the value for forward forecast.
+For determining the future trends (in forward direction). The following code example explains the how to set the value for [`ForwardForecast`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~ForwardForecast.html).
 
 {% tabs %}
 
@@ -649,7 +649,7 @@ chart.Series.Add(fastSeries);
 
 ### Backward Forecast
 
-For determining the past trends (in backward direction). The following code example explains the how to set the value for forward forecast.
+For determining the past trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~BackwardForecast.html).
 
 {% tabs %}
 

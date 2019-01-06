@@ -13,13 +13,13 @@ ChartSeries is the visual representation of the data. SfChart offers many types 
 
 The following APIs are common for the most of the series types:
 
-* XBindingPath – A string property that represents the X values for the series.
-* YBindingPath – A string property that represents the Y values for the series.
-* Stroke – Represents the brush for the series outline.
-* StrokeThickness – Represents the thickness of the series outline.
-* Interior – Represents the brush to fill the series.
-* Palette – Used to define the set of pre-defined or custom colors for the series.
-* IsSeriesVisible – A bool property, which is used to enable or disable the series visibility.
+* [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html) – A string property that represents the X values for the series.
+* [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XyDataSeries~YBindingPath.html) – A string property that represents the Y values for the series.
+* [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~Stroke.html) – Represents the brush for the series outline.
+* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~StrokeThickness.html) – Represents the thickness of the series outline.
+* [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Interior.html) – Represents the brush to fill the series.
+* [`Palette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html) – Used to define the set of pre-defined or custom colors for the series.
+* [`IsSeriesVisible`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~IsSeriesVisible.html) – A bool property, which is used to enable or disable the series visibility.
 
 ## Column and Bar Charts
 
@@ -1160,10 +1160,10 @@ chart.Series.Add(series);
 
 The following properties are used to explode the individual segments in Pie and Doughnut.
 
-* ExplodeAll  - Used to explode all the segments of these series.
-* ExplodeIndex - Used to explode any specific segment.
-* ExplodeRadius- Used to define the explode distance.
-* ExplodeOnMouseClick-Used to explode the segment when segment is clicked.
+* [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html)  - Used to explode all the segments of these series.
+* [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html) - Used to explode any specific segment.
+* [`ExplodeRadius`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~ExplodeRadius.html) - Used to define the explode distance.
+* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeOnMouseClick.html) -Used to explode the segment when segment is clicked.
 
 **Explode** **Index**
 
@@ -1510,7 +1510,7 @@ chart.Series.Add(series);
 
 ### Funnel Mode
 
-The FunnelMode defines a rendering mode for the funnel series which define, where to bind your values (to height or width).
+The [`FunnelMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FunnelSeries~FunnelMode.html) defines a rendering mode for the funnel series which define, where to bind your values (to height or width).
 
 **ValueIsHeight**
 
@@ -2117,6 +2117,7 @@ The APIs present in the financial series are,
 * [`BearFillColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BearFillColor.html)-Represents the brush color for the segments that show stock price has gone up in measured time interval.
 * [`BullFillColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BullFillColor.html)-Represents that brush color for the segments that show stock price has gone down in measured time interval.
 * ComparisonMode - Specifies which price need to be considered for the formation.
+* [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonMode.html) - Specifies which price need to be considered for the formation.
 
 ### OHLC
 
