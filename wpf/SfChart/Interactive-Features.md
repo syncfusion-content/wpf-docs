@@ -1683,7 +1683,7 @@ The following are the API’s in `ChartDragTooltipStyle`.
 
 [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle~Foreground.html) – Gets or sets the brush for dragging tooltip text.
 
-[`Background`]() – Gets or sets the background brush for dragging tooltip.
+[`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle~Background.html) – Gets or sets the background brush for dragging tooltip.
 
 {% tabs %}
 
