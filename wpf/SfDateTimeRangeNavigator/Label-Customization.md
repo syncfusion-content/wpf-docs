@@ -171,10 +171,10 @@ Description</th></tr>
 <tr>
 <td>
 LabelBarStyle</td><td>
-Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.</td></tr>
+Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the [`HigherLevelBarStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherLevelBarStyle.html) or [`LowerLevelBarStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerLevelBarStyle.html).</td></tr>
 <tr>
 <td>
-SelectedLabelStyle</td><td>
+[`SelectedLabelStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~SelectedLabelStyle.html)</td><td>
 Defines the label style for labels in the selected region.</td></tr>
 <tr>
 <td>
