@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion WPF ReportDesigner supported and unsupported features
-description: Supported DataSources in wpf report designer
+title: Syncfusion WPF ReportDesigner supported and unsupported list
+description: supported datasources in wpf report designer
 platform: wpf
 control: Report Designer
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Supported and Unsupported DataSources
 
-The following table lists ReportDesigner data providers that you can use to retrieve data for report datasets and report items.
+The following table lists supported data sources, to establish connection and retrieve data in WPF ReportDesigner.
 
 <table>
 
