@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported and Unsupported DataSources list | WPF report designer | Syncfusion
+title: Supported and Unsupported DataSources | WPF ReportDesigner | Syncfusion
 description: Supported DataSources in wpf report designer
 platform: wpf
 control: Report Designer
