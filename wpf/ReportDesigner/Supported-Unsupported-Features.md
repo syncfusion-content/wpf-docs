@@ -9,7 +9,7 @@ documentation: ug
 
 # Supported and Unsupported DataSources
 
-The following table lists supported data sources, to establish connection and retrieve data in WPF ReportDesigner.
+The following table lists the supported data sources to establish a connection to the ReportDesigner and retrieve data in the WPF ReportDesigner.
 
 <table>
 
