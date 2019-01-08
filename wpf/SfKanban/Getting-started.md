@@ -295,7 +295,7 @@ grid.Children.Add(kanban);
 ![Defining columns for SfKanban](SfKanban_images/column.png)
 
 
-You can also set AutoGenerateColumns property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
+You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~AutoGenerateColumns.html) property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
 
 N> When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
 
