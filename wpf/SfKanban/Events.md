@@ -19,6 +19,14 @@ This event is triggered when you tap on any card. The argument contains the foll
 * [`SelectedColumnIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumnIndex.html) - Used to get the index of dragging card's  column.
 * [`SelectedRowIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedRowIndex.html) - Used to get the index of dragging card's row.
 
+## CardDoubleTapped
+
+The [`CardDoubleTapped`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~CardDoubleTapped_EV.html) event is triggered when you double tap on any card. The argument contains the following information:
+
+* [`SelectedCard`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs~SelectedCard.html) - Used to get the selected card.
+* [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs~SelectedCardIndex.html) - Used to get the index of the card in a column.
+* [`SelectedColumn`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs~SelectedColumn.html) - Used to get the column of the selected card.
+
 ## CardDragStart
 
 This event is triggered when you start to drag a card. The argument contains the following information.
