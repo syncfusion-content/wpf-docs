@@ -570,4 +570,4 @@ private static void OnPasteColumn(object obj)
 
 ![Context menu shown paste the reportsto column in WPF treegrid](Clipboard-Operations_images/Clipboard-Operations_img9.jpeg)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfTreeGridDemo-1663889750.zip).
+You can download the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfTreeGridDemo-1663889750.zip).
