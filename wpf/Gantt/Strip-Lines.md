@@ -294,7 +294,7 @@ The following code example illustrates binding the regular strip line collection
 
 ### Output
 
-The following image shows the Resultant regular strip line output:
+The following image depicts the regular strip line rendering:
 
 
 
@@ -366,7 +366,7 @@ The following code example illustrates binding the absolute strip line collectio
 
 ### Output
 
-The following image shows the Resultant absolute strip line output:
+The following image depicts the absolute strip line rendering:
 
 ![WPF Gantt with absolute strip line](Strip-Lines_images/Strip-Lines_absolute.png)
 
