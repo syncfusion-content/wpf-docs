@@ -365,7 +365,7 @@ You can change the appearance of the context menu by customizing the style with 
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for appearance in treegrid WPF](ContextMenu_images/ContextMenu_img4.png)
+![Changing the background appearance for ContextMenu in treegrid WPF](ContextMenu_images/ContextMenu_img4.png)
 
 
 ## Drag and drop row
