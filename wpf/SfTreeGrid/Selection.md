@@ -273,7 +273,7 @@ Moves the current cell to the last cell of the current row.
 
 </td>
 <td>
-The tree grid will be scrolled to the next set of rows that is not displayed in view, including the row that ia partially displayed, and the current cell is set to the last row.
+The tree grid will be scrolled to the next set of rows that is not displayed in view, including the row that is partially displayed, and the current cell is set to the last row.
 </td>
 </tr>
 <tr>
