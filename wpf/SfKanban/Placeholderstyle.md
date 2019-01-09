@@ -97,4 +97,4 @@ sfKanban.PlaceholderStyle = style;
 
 The following output demonstrates the above code example.
 
-![](SfKanban_images/PlaceholderStyle.png)
+![Placeholder support in WPF SfKanban](SfKanban_images/PlaceholderStyle.png)
