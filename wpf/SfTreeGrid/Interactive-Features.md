@@ -866,7 +866,7 @@ private void Treeview_Drop(object sender, DragEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-Sample for dragging and dropping between TreeViewAdv and SfTreeGrid: [Sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-treegrid-and-treeviewadv).
+Sample for dragging and dropping between TreeViewAdv and SfTreeGrid: [Sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-and-uwp-between-listview-and-treegrid/tree/master/WPF).
 
 ![Drag and drop between treegrid and treeviewadv](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img5.jpeg)
 
