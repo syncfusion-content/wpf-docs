@@ -83,7 +83,7 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 ## Headers
 
-Header shows the category [`Title`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~Title.html), items count, min and max informations of a column. The UI of the header can be replaced entirely using [`SfKanban.ColumnHeaderTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ColumnHeaderTemplate.html) property. The following code snippet and screenshot illustrates this.
+[`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~Header.html) shows the category [`Title`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~Title.html), items count, min and max informations of a column. The UI of the header can be replaced entirely using [`SfKanban.ColumnHeaderTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ColumnHeaderTemplate.html) property. The following code snippet and screenshot illustrates this.
 
 {% highlight xaml %}
 
