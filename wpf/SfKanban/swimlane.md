@@ -29,7 +29,7 @@ kanban.SwimlaneKey = "ColorKey";
 
 {% endtabs %}
 
-![Swimlane support in WPF Kanban](SfKanban_images/swimlane.jpeg)
+![Swimlane support in WPF Kanban](SfKanban_images/swimlane.png)
 
 N> If there is no value assigned for the [`SwimlaneKey`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~SwimlaneKey.html) mapped property in a task, then it will be grouped under Unassigned swim lane.
 
@@ -121,4 +121,4 @@ SfKanban provides support to customize header, which is displayed before the swi
 
 {% endhighlight %}
 
-![Swimlane customization in WPF Kanban](SfKanban_images/swimlane_header.jpeg)
+![Swimlane customization in WPF Kanban](SfKanban_images/swimlane_header.png)
