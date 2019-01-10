@@ -84,6 +84,7 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 ## Column Tags
 
 The [`Tags`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~Tags.html) property is used to customize the header of kanban column. 
+The following properties of the tags can be used to customize the column header:
 
 * [`CardCount`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~CardCount.html) - Gets or sets the count of Cards available in that column.
 * [`Maximum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~Maximum.html) - Gets or sets a value that indicates cards collection's maximum limit of KanbanColumn.
