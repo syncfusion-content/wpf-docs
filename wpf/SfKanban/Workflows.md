@@ -91,7 +91,7 @@ Following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/cref
 
 * [`MaxValidationColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ErrorBarSettings~MaxValidationColor.html) – used to set the color of the error bar when the items count is greater than MaximumLimit.
 
-* [`Height`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ErrorBarSettings~Height.html) - used to provide height for error bar.
+* [`Height`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ErrorBarSettings~Height.html) - used to provide height for error bar. 
 
 {% tabs %}
 
