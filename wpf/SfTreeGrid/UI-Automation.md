@@ -19,7 +19,7 @@ To test SfTreeGrid control with CUITs, build the extension project and place it 
 SfTreeGrid
 </td>
 <td>
-http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip
+https://github.com/SyncfusionExamples/coded-ui-extension-project-for-wpf-treegrid
 </td>
 </tr>
 </table>
