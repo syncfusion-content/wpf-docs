@@ -9,14 +9,14 @@ documentation: ug
 
 # Strip Lines
 
-Essential Gantt provides support for adding strip lines in the Gantt chart region which will denote an important event in a sequential timeline. By using this feature, you can add the strip lines to highlight the important days in your project.  You can add the collection of strip lines through the provided API. 
+The Gantt provides support to add strip lines in the Gantt chart region that denotes an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
 
 ## Strip lines in Essential Gantt support the following features:
 
 Strip lines can be repeatable in the Gantt chart region based on repeat behavior and repeat interval.
 
 * You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
-* Strip line visibility can be toggled by using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ShowStripLines.html) property in GanttControl.
+* The visibility of strip lines can be toggled using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ShowStripLines.html) property in the Gantt control.
 
 The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
 
@@ -229,8 +229,7 @@ Event </td></tr>
 
 ### Regular strip lines
 
-The following code illustrates defining the collection of regular strip line.
-
+The following code sample demonstrates how to define a collection of regular strip lines.
 
 {% highlight c# %}
 
@@ -261,8 +260,8 @@ private List<StripLineInfo> GetStripCollection()
 
 
 {% endhighlight  %}
-The following code example illustrates binding the regular strip line collection to strip lines:
 
+The following code sample demonstrates how to bind the regular strip line collection to strip lines.
 
 {% highlight xaml %}
 
@@ -288,8 +287,7 @@ The following code example illustrates binding the regular strip line collection
 
 ### Output
 
-The following image depicts the regular strip line rendering:
-
+The following screenshot illustrates how to render the regular strip lines.
 
 
 ![WPF Gantt with regular strip line](Strip-Lines_images/Strip-Lines_img1.png)
@@ -299,7 +297,7 @@ Strip lines in the Gantt chart
 
 ### Absolute Strip lines
 
-The following code illustrates defining the collection of absolute strip line.
+The following code sample demonstrates how to define a collection of absolute strip lines.
 
 {% highlight c# %}
 
@@ -327,8 +325,8 @@ private List<StripLineInfo> GetStripCollection()
 
 
 {% endhighlight  %}
-The following code example illustrates binding the absolute strip line collection to strip lines:
 
+The following code sample demonstrates how to bind the absolute strip line collection to strip lines.
 
 {% highlight xaml %}
 
@@ -354,7 +352,7 @@ The following code example illustrates binding the absolute strip line collectio
 
 ### Output
 
-The following image depicts the absolute strip line rendering:
+The following screenshot illustrates how to render the absolute strip lines.
 
 ![WPF Gantt with absolute strip line](Strip-Lines_images/Strip-Lines_absolute.png)
 
