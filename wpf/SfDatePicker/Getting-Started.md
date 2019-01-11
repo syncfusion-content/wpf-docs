@@ -28,8 +28,9 @@ Create a new WPF project in Visual Studio to display the SfDatePicker control wi
 ## Add control through designer
 
 The SfDatePicker control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
-    * Syncfusion.SfInput.WPF
-    * Syncfusion.SfShared.WPF
+
+* Syncfusion.SfInput.WPF
+* Syncfusion.SfShared.WPF
 
 ![wpf date picker control added by designer](GettingStarted_images/wpf-date-picker-control-added-by-designer.png)
 
@@ -81,11 +82,11 @@ namespace SfDatePickerSample
         public MainWindow()
         {
             InitializeComponent();
-	        //Creating an instance of SfDatePicker control
-	        SfDatePicker sfdatePicker = new SfDatePicker();
+            //Creating an instance of SfDatePicker control
+            SfDatePicker sfdatePicker = new SfDatePicker();
             //Adding SfDatePicker as window content
-		    this.Content = sfdatePicker;
-        }       
+            this.Content = sfdatePicker;
+        } 
     }
 }
 {% endhighlight %}
@@ -117,12 +118,12 @@ The [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput
 {% tabs %}
 {% highlight XAML %}
 <!-- Setting specify format -->
-<syncfusion:SfDatePicker SelectorFormatString="M" x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" />
-{% endhighlight  %}
+<syncfusion:SfDatePicker SelectorFormatString="M" x:Name="sfdatePicker" VerticalAlignment="Center" Width="200" Margin="15" />
+{% endhighlight %}
 {% highlight C# %}
 //Setting specify format 
 sfdatePicker.SelectorFormatString="M";
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ![wpf date picker month selector](GettingStarted_images/wpf-date-picker-month-format.png)

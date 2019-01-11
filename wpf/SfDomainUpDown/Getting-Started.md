@@ -29,8 +29,8 @@ Create a new WPF project in Visual Studio to display the SfDomainUpDown control 
 
 The SfDomainUpDown control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references are added automatically:
 
-    * Syncfusion.SfInput.WPF
-    * Syncfusion.SfShared.WPF
+* Syncfusion.SfInput.WPF
+* Syncfusion.SfShared.WPF
 
 ![wpf domain up down control added by designer](Getting-Started_images/wpf-domain-updown-control-added-by-designer.png)
 
@@ -86,11 +86,11 @@ namespace SfDomainUpDownSample
         public MainWindow()
         {
             InitializeComponent();
-	        //Creating an instance of SfDomainUpDown control
-	        SfDomainUpDown sfDomainUpDown = new SfDomainUpDown();
+            //Creating an instance of SfDomainUpDown control
+            SfDomainUpDown sfDomainUpDown = new SfDomainUpDown();
             //Adding SfDomainUpDown as window content
-		    this.Content = sfDomainUpDown;
-        }       
+            this.Content = sfDomainUpDown;
+        }
     }
 }
 {% endhighlight %}
@@ -100,7 +100,7 @@ namespace SfDomainUpDownSample
 
 You can populate the PinnableListBox control using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property.
 
-*  **Model.cs**
+* **Model.cs**
 
 {% tabs %}
 {% highlight C# %}

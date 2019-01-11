@@ -29,8 +29,8 @@ Create a new WPF project in Visual Studio to display the SfCalculator with funct
 
 The SfCalculator control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
 
-    * Syncfusion.SfInput.WPF 
-    * Syncfusion.SfShared.WPF 
+* Syncfusion.SfInput.WPF 
+* Syncfusion.SfShared.WPF 
 
 ![wpf SfCalculator control added by designer](Getting-Started_images/wpf-sfcalculator-control-added-by-designer.png)
 
