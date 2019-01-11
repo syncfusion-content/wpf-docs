@@ -199,7 +199,7 @@ SfKanban kanban = new SfKanban()
 
 ### Defining columns
 
-By default, we need to define the columns manually by adding the KanbanColumn object to the Columns collection property in SfKanban.
+By default, we need to define the columns manually by adding the KanbanColumn object to the [`Columns`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~Columns.html) collection property in SfKanban.
 
 ItemsSource which was bound to the Kanban will be added to the respective columns using ColumnMappingPath property in SfKanban and Categories property in KanbanColumn.
 

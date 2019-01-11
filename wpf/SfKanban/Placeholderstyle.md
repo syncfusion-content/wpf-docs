@@ -102,3 +102,5 @@ sfKanban.PlaceholderStyle = style;
 The following output demonstrates the above code example.
 
 ![Placeholder support in WPF SfKanban](SfKanban_images/PlaceholderStyle.png)
+
+N> The UI of the placeholder can be replaced entirely using [`PlaceholderTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~PlaceholderTemplate.html) property.
