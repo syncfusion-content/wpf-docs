@@ -58,7 +58,7 @@ To add the control manually in XAML, follow the given steps:
 {% endhighlight %}
 {% endtabs %}
 
-## AAdd control manually in C\#
+## Add control manually in C\#
 
 To add the control manually in C#, follow the given steps:
 
