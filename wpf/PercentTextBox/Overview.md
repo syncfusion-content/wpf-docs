@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview| PercentTextBox  | Wpf | Syncfusion
+title: Overview| PercentTextBox  | WPF | Syncfusion
 description: overview
-platform: wpf
+platform: WPF
 control: PercentTextBox 
 documentation: ug
 ---
@@ -10,6 +10,14 @@ documentation: ug
 # PercentTextBox 
 
 The PercentTextBox control restricts text box input to only double values and displays the percentage of the given value with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to enhance the appearance and to suit the applications.
+
+## Control structure
+
+![wpf percent text box control](Getting-Started_images/Getting-Started_img1.png)
+
+![wpf percent text box control watermark text](Getting-Started_images/Getting-Started_img2.png)
+
+## Features
 
 The core features of the PercentTextBox are as follows: 
 
