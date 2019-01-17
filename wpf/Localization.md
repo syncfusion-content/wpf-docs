@@ -82,3 +82,118 @@ End Class
 {% endtabs %}
 
 N> If the resource file has been created without defining the culture name (for example, Syncfusion.Tools.WPF.resx), then predefined value has been applied to the resources which is maintained in the dependent assembly. Predefined value has been currently maintained in en-US culture. Also, you can download the default files from [here](https://help.syncfusion.com/wpf/introduction/common-supports#localization)
+
+## Localization Resource File
+
+The following table represents the available Resource file to the assemblies and it can be downloaded from below table.
+
+<table>
+<tr>
+<th>
+Assembly Name</th><th>
+Resource File</th></tr>
+<tr>
+<td>
+syncfusion.Diagram.Wpf<br/><br/></td><td>
+{{'[Syncfusion.Diagram.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.Diagram.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.Edit.Wpf<br/><br/></td><td>
+{{'[Syncfusion.Edit.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.Edit.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.Grid.Wpf<br/><br/></td><td>
+{{'[Syncfusion.Grid.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.Grid.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.OlapChart.Wpf<br/><br/></td><td>
+{{'[Syncfusion.OlapChart.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.OlapChart.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.OlapClient.Wpf<br/><br/></td><td>
+{{'[Syncfusion.OlapClient.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.OlapClient.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.OlapGauge.Wpf<br/><br/></td><td>
+{{'[Syncfusion.OlapGauge.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.OlapGauge.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.OlapGrid.Wpf<br/><br/></td><td>
+{{'[Syncfusion.OlapGrid.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.OlapGrid.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.OlapShared.Wpf<br/><br/></td><td>
+{{'[Syncfusion.OlapShared.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.OlapShared.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.OlapTools.Wpf<br/><br/></td><td>
+{{'[Syncfusion.OlapTools.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.OlapTools.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.PdfViewer.Wpf<br/><br/></td><td>
+{{'[Syncfusion.PdfViewer.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.PdfViewer.WPf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.PivotAnalysis.Wpf<br/><br/></td><td>
+{{'[Syncfusion.PivotAnalysis.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.PivotAnalysis.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.ReportDesigner.Wpf<br/><br/></td><td>
+{{'[Syncfusion.ReportDesigner.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.ReportDesigner.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.ReportViewer.Wpf<br/><br/></td><td>
+{{'[Syncfusion.ReportViewer.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.ReportViewer.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfChart.Wpf<br/><br/></td><td>
+{{'[Syncfusion.SfChart.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfChart.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfDiagram.Wpf<br/><br/></td><td>
+{{'[Syncfusion.UI.Xaml.Diagram.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfDiagram.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfGrid.Wpf<br/><br/></td><td>
+{{'[Syncfusion.SfGrid.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfGrid.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfInput.Wpf<br/><br/></td><td>
+{{'[Syncfusion.SfInput.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfInput.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfRichTextBoxAdv.Wpf<br/><br/></td><td>
+{{'[Syncfusion.SfRichTextBoxAdv.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfRichTextBoxAdv.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfRichTextRibbon.Wpf<br/><br/></td><td>
+{{'[Syncfusion.SfRichTextRibbon.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfRichTextRibbon.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfSchedule.Wpf<br/><br/></td><td>
+{{'[Syncfusion.Schedule.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfSchedule.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfShared.Wpf<br/><br/></td><td>
+{{'[Syncfusion.SfShared.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfShared.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfSpellChecker.Wpf<br/><br/></td><td>
+{{'[Syncfusion.SfSpellChecker.WPF.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfSpellchecker.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.SfSpreadsheet.Wpf<br/><br/></td><td>
+{{'[Syncfusion.SfSpreadsheet.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.SfSpreadsheet.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.Shared.Wpf<br/><br/></td><td>
+{{'[Syncfusion.Shared.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.Shared.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.Spreadsheet.Wpf<br/><br/></td><td>
+{{'[Syncfusion.Spreadsheet.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.Spreadsheet.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+<tr>
+<td>
+Syncfusion.Tools.Wpf<br/><br/></td><td>
+{{'[Syncfusion.Tools.Wpf.resx](https://github.com/SyncfusionExamples/WPF-localization-ResX-file/tree/master/Syncfusion.Tools.Wpf#"")'| markdownify }}<br/><br/></td></tr>
+</table>
