@@ -28,7 +28,7 @@ To localize WPF controls, the resource file needs to be created as per following
 2. Open the "Add New Item" Dialog using Ctrl+Shift+A keys.
 3. Create a resource file, Resx file, and name it Syncfusion.Tools.Wpf.resx For example, Syncfusion.Tools.Wpf.fr-FR.resx
 
-![](Localization_images/GettingStarted_img1.jpeg)
+![Creating the resource file](Localization_images/GettingStarted_img1.jpeg)
 
 
 N> In case, the Shared assembly controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
@@ -41,12 +41,12 @@ To assign "Values" in Resource, the resource file needs to be updated according 
 
 2.Add the key, Name, and its corresponding localized value by editing its field as shown in the following image.
 
-![](Localization_images/GettingStarted_img2.jpeg)
+![Adding key and value to resource file](Localization_images/GettingStarted_img2.jpeg)
 
 
 3.Similarly add all the keys, Name, needed for the required assembly. For example (Syncfusion.Tools.Wpf.dll). The following screenshot displays the String property names for Tools.WPF controls with French values.
 
-![](Localization_images/GettingStarted_img3.jpeg)
+![Add all keys and values for required assembly](Localization_images/GettingStarted_img3.jpeg)
 
 
 ## Assign a Current UI culture to the application
