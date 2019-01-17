@@ -1,528 +1,147 @@
 ---
 layout: post
-title: Getting Started with Syncfusion DoubleTextBox control for WPF
+title: Getting Started | DoubleTextBox | WPF | Syncfusion
 description: A quick tour to initial users on Syncfusion DoubleTextBox control for WPF
-platform: wpf
+platform: WPF
 control: DoubleTextBox
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains how to add the `DoubleTextBox` control to an application and its structure.
+## Assembly deployment
 
-## Adding DoubleTextBox to a WPF application
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#doubletextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-`DoubleTextBox` can be added to an application in the following way.
+You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-### Create the DoubleTextBox control to an application by using XAML
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-The following ways explains how to add DoubleTextBox control using XAML code:
+## Create a simple application with DoubleTextBox
 
-* Create a WPF project in Visual Studio and refer `Syncfusion.Shared.Wpf` assembly to the project.    
-* Include an XML namespace for the above assemblies to the Main window. 
+You can create a WPF application with the DoubleTextBox control using the following steps:
+
+## Create a project
+
+Create a new WPF project in Visual Studio to display the DoubleTextBox with functionalities.
+
+## Add control through designer
+
+The DoubleTextBox control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.WPF assembly reference will be added automatically.
+
+![wpf double text box control added by designer](Getting-Started_images/wpf-double-text-box-control-added-by-designer.png)
+
+## Add control manually in XAML
+
+To add the control manually in XAML, follow the given steps:
+
+1.	Add the **Syncfusion.Shared.WPF** assembly reference to the project.
+2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3.	Declare the DoubleTextBox control in the XAML page.
 
 {% tabs %}
-
 {% highlight XAML %}
-
-<Window x:Class="Application_New.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-Title="MainWindow" Height="350" Width="525">
-
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="DoubleTextBoxSample.MainWindow"
+        Title="DoubleTextBox Sample" Height="350" Width="525">
+    <Grid>
+        <!--Adding DoubleTextBox control -->
+        <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
 {% endhighlight %}
-
 {% endtabs %}
 
-* Now add the DoubleTextBox control with a required optimal name using the namespace 
+## Add control manually in C\#
+
+To add the control manually in C#, follow the given steps:
+
+1.	Add the **Syncfusion.Shared.WPF** assembly reference to the project. 
+2.	Import DoubleTextBox namespace **using Syncfusion.Windows.Shared;**.
+3.	Create a DoubleTextBox instance, and add it to the window.
 
 {% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DoubleTextBox x:Name="TextBox" Width="100" Height="23" />
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-![](Getting-Started-images/Getting-Started-img1.jpeg)
-
-
-### Create the DoubleTextBox control to an application by C#:
-
-The following code illustrate how to add DoubleTextBox control to an application by C#.
-
-{% tabs %}
-
 {% highlight C# %}
-
-DoubleTextBox textBox = new DoubleTextBox();
-textBox.Width = 100;
-textBox.Height = 23;
-Grid1.Children.Add(textBox);
-
+using Syncfusion.Windows.Shared;
+namespace DoubleTextBoxSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Creating an instance of DoubleTextBox control
+            DoubleTextBox doubleTextBox = new DoubleTextBox();
+            //Adding DoubleTextBox as window content
+            this.Content = doubleTextBox;
+        }
+    }
+}
 {% endhighlight %}
-
 {% endtabs %}
 
+![wpf double text box control added by code](Getting-Started_images/wpf-double-text-box-control-added-manually.png)
 
-## DoubleTextBox member
+## Bind value
 
-DoubleTextBox exposes the following members:
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the DoubleTextBox using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property. Refer to the [Data binding](https://help.syncfusion.com/wpf/doubletextbox/dealing-with-doubletextbox#binding-value) section for more details.
 
-### Properties
+{% tabs %}
+{% highlight XAML %}
+<StackPanel>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox1" Grid.Row="1" Height="25" Width="100"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Grid.Row="3" Width="100" Height="25" Value="{Binding ElementName=doubleTextBox1,Path=Value,Mode=TwoWay}" />
+</StackPanel>
+{% endhighlight %}
+{% endtabs %}
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Type</th><th>
-DataType</th><th>
-Description</th><th>
-DefaultValue</th>
-</tr>
-<tr>
-<td>
-ApplyNegativeForeground<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or sets the value that determines whether to apply the NegativeForeground in the DoubleTextBox.<br/><br/></td><td>
-True<br/><br/></td></tr>
-<tr>
-<td>
-ApplyZeroColor<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or sets the value that determines whether to apply the ZeroColor in the DoubleTextBox<br/><br/></td><td>
-True<br/><br/></td></tr>
-<tr>
-<td>
-CornerRadius<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-CornerRadius<br/><br/></td><td>
-Gets or sets a value that represents the degree to which the corners of the DoubleTextBox are rounded.<br/><br/></td><td>
-0.<br/><br/></td></tr>
-<tr>
-<td>
-Culture<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-CultureInfo<br/><br/></td><td>
-Gets or sets the Culture information associated with the DoubleTextBox.<br/><br/></td><td>
-CultureInfo.CurrentCulture<br/><br/></td></tr>
-<tr>
-<td>
-EnterToMoveNext<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or Sets the EnterToMoveNext property.If this is set to true then the Enter key is used to change the focus from one field to another.<br/><br/></td><td>
-true<br/><br/></td></tr>
-<tr>
-<td>
-IsReadOnly<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or sets the value that determines if the user can change the value in the DoubleTextBox.<br/><br/></td><td>
-true<br/><br/></td></tr>
-<tr>
-<td>
-IsScrollingOnCircle<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or Sets the IsScrollingOnCircle property The spin behavior in the DoubleTextBox can be enabled or disabled by setting the IsScrollingOnCircle property.<br/><br/></td><td>
-True<br/><br/></td></tr>
-<tr>
-<td>
-NegativeForeground<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Brush<br/><br/></td><td>
-Gets or sets the NegativeForeground property.<br/><br/></td><td>
-Red<br/><br/></td></tr>
-<tr>
-<td>
-NullValue<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Double?<br/><br/></td><td>
-Gets or sets the NullValue property.<br/><br/></td><td>
-Null<br/><br/></td></tr>
-<tr>
-<td>
-NumberFormat<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-NumberFormatInfo<br/><br/></td><td>
-A NumberFormat that defines the culturally appropriate format of displaying numbers, currency, and percentage.<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-MaxValue<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Double<br/><br/></td><td>
-Gets or sets the maximum value for the DoubleTextBox.<br/><br/></td><td>
-1.7976931348623157E+308<br/><br/></td></tr>
-<tr>
-<td>
-MaxValidation<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Enum of type MaxValidation<br/><br/></td><td>
-Represents the Maximum value Validation constraint for the DoubleTextBox.<br/><br/></td><td>
-MaxValidation.OnKeyPress<br/><br/></td></tr>
-<tr>
-<td>
-MaxValueOnExceedMaxDigit<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Represents the behavior when the value exceeds the MaxValue.<br/><br/></td><td>
-True<br/><br/></td></tr>
-<tr>
-<td>
-MinValue<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Double<br/><br/></td><td>
-Gets or sets the minimum allowed value for the DoubleTextBox.<br/><br/></td><td>
--(1.7976931348623157E+308.)<br/><br/></td></tr>
-<tr>
-<td>
-MinValueOnExceedMinDigit<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Represents the behavior when the Value exceeds the MinValue.<br/><br/></td><td>
-True<br/><br/></td></tr>
-<tr>
-<td>
-MinValidation<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Enum of type MinValidation<br/><br/></td><td>
-Represents the Minimum value Validation constraint for the DoubleTextBox.<br/><br/></td><td>
-MinValidation.OnKeyPress<br/><br/></td></tr>
-<tr>
-<td>
-NumberDecimalDigits<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Int<br/><br/></td><td>
-Gets or sets the number of decimal places to use in the Value.<br/><br/></td><td>
-2<br/><br/></td></tr>
-<tr>
-<td>
-NumberDecimalSeparator<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-string<br/><br/></td><td>
-Gets or sets the string to use as the decimal separator in the Value.<br/><br/></td><td>
-String.Empty<br/><br/></td></tr>
-<tr>
-<td>
-NumberGroupSeparator<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-String<br/><br/></td><td>
-Gets or sets the string that separates groups of digits in the value.<br/><br/></td><td>
-String.Empty<br/><br/></td></tr>
-<tr>
-<td>
-NumberGroupSizes<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Int32Collection<br/><br/></td><td>
-Gets or sets the number of digits in each group to the left of the decimal in the value.<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-PositiveForeground<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Brush<br/><br/></td><td>
-Gets or sets the Foreground for the DoubleTextBox.<br/><br/></td><td>
-Black<br/><br/></td></tr>
-<tr>
-<td>
-SelectedText<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-String<br/><br/></td><td>
-Gets or sets the current selection in the DoubleTextBox.<br/><br/></td><td>
-Empty String.<br/><br/></td></tr>
-<tr>
-<td>
-SelectionStart<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Int<br/><br/></td><td>
-Gets or sets a character index for the beginning of the current selection.<br/><br/></td><td>
-0<br/><br/></td></tr>
-<tr>
-<td>
-SelectionLength<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Int<br/><br/></td><td>
-Gets or sets a value indicating the number of characters in the current selection in the DoubleTextBox.<br/><br/></td><td>
-0<br/><br/></td></tr>
-<tr>
-<td>
-TextSelectionOnFocus<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-If this property is set to true, then it will select all the text in the CurrencyTextBox when it gets focused.<br/><br/></td><td>
-True<br/><br/></td></tr>
-<tr>
-<td>
-UseNullOption<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Disable or enable the NullValue support in the DoubleTextBox.<br/><br/></td><td>
-False<br/><br/></td></tr>
-<tr>
-<td>
-Value<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Double?<br/><br/></td><td>
-Gets or sets the value for the DoubleTextBox.<br/><br/></td><td>
-0<br/><br/></td></tr>
-<tr>
-<td>
-WatermarkOpacity<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Double<br/><br/></td><td>
-Gets or sets the opacity of the WatermarkText in the DoubleTextBox.<br/><br/></td><td>
-0.5<br/><br/></td></tr>
-<tr>
-<td>
-WatermarkTemplate<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-DateTemplate<br/><br/></td><td>
-Gets or sets the DataTemplate for the WatermarkText.<br/><br/></td><td>
-Null<br/><br/></td></tr>
-<tr>
-<td>
-WatermarkText<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-String<br/><br/></td><td>
-Gets or sets the WatermarkTextProperty.<br/><br/></td><td>
-Empty String<br/><br/></td></tr>
-<tr>
-<td>
-WatermarkTextForeground<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Brush<br/><br/></td><td>
-Gets or sets the Foreground for the WatermarkText.<br/><br/></td><td>
-Transparent<br/><br/></td></tr>
-<tr>
-<td>
-WatermarkTextIsVisible<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or sets the value that determines the visibility of the WatermarkText in the DoubleTextBox.<br/><br/></td><td>
-False<br/><br/></td></tr>
-<tr>
-<td>
-ZeroColor<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Brush<br/><br/></td><td>
-Gets or sets the ZeroColor property.<br/><br/></td><td>
-Green<br/><br/></td></tr>
-<tr>
-<td>
-RangeAdornerBackground<br/><br/></td><td>
-. Dependency Property<br/><br/></td><td>
-Brush<br/><br/></td><td>
-Gets or sets the RangeBackground property<br/><br/></td><td>
-LightGray<br/><br/></td></tr>
-<tr>
-<td>
-EnableRangeAdorner<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or sets the EnableRangeAdorner property.<br/><br/></td><td>
-False.<br/><br/></td></tr>
-<tr>
-<td>
-IsCaretAnimationEnabled<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-bool <br/><br/></td><td>
-Gets or sets the IsCaretAnimationEnabled property<br/><br/></td><td>
-False.<br/><br/></td></tr>
-<tr>
-<td>
-EnableExtendedScrolling<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or Sets the EnableExtendedScrolling property<br/><br/></td><td>
-False<br/><br/></td></tr>
-<tr>
-<td>
-EnableFocusColor<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or Sets the EnableFocusColor property<br/><br/></td><td>
-False<br/><br/></td></tr>
-<tr>
-<td>
-EnableTouch<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or Sets the EnableTouch property<br/><br/></td><td>
-False.<br/><br/></td></tr>
-<tr>
-<td>
-Scrolling Interval<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-double<br/><br/></td><td>
-Gets or Sets the ScrollingInterval property<br/><br/></td><td>
-1.0<br/><br/></td></tr>
-<tr>
-<td>
-Step<br/><br/></td><td>
-Dependency<br/><br/></td><td>
-double<br/><br/></td><td>
-Gets or Sets the Step property<br/><br/></td><td>
-1.0<br/><br/></td></tr>
-<tr>
-<td>
-GroupSeparatorEnabled <br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or Sets the GroupSeparatorEnabled property<br/><br/></td><td>
-True<br/><br/></td></tr>
-<tr>
-<td>
-ValidationCompleted<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-Bool<br/><br/></td><td>
-Gets or Sets the ValidationCompleted property<br/><br/></td><td>
-False<br/><br/></td></tr>
-<tr>
-<td>
-ValueValidation<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-StringValidation<br/><br/></td><td>
-Gets or Sets the ValueValidation property<br/><br/></td><td>
-StringValidation.OnLostFocus().<br/><br/></td></tr>
-<tr>
-<td>
-InvalidValueBehavior<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-InvalidInputBehavior<br/><br/></td><td>
-Gets or Sets the InvalidValueBehavior<br/><br/></td><td>
-InvalidInputBehavior.None<br/><br/></td></tr>
-<tr>
-<td>
-ValidationValue<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-String<br/><br/></td><td>
-Gets or Sets the ValidationValue<br/><br/></td><td>
-String.Empty<br/><br/></td></tr>
-</table>
+![wpf double text box control value binding](Getting-Started_images/wpf-double-text-box-value-binding.png)
 
-### Methods
+## Set the minimum and maximum values
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Description</th><th>
-Return Type</th><th>
-Overloads</th></tr>
-<tr>
-<td>
-Copy()<br/><br/></td><td>
-Copies the current selection of the DoubleTextBox to the Clipboard.<br/><br/></td><td>
-Void<br/><br/></td><td>
-Zero parameter<br/><br/></td></tr>
-<tr>
-<td>
-Select()<br/><br/></td><td>
-Selects a range of text in the DoubleTextBox.<br/><br/></td><td>
-Void<br/><br/></td><td>
-(+2) Overloads.Parameters:start (Int32):First character in the selection.Length:The length of the selection, in characters.<br/><br/></td></tr>
-<tr>
-<td>
-SelectAll()<br/><br/></td><td>
-Selects all the content of the DoubleTextBox.<br/><br/></td><td>
-Void<br/><br/></td><td>
-Zero parameter<br/><br/></td></tr>
-</table>
+You can define the minimum and maximum values by setting the [MinVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) and [MaxVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) properties of the DoubleTextBox.
 
-### Events
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="100" Height="25" Value="100" MaxValue="999.99" MinValue="-999.99"/>
+{% endhighlight %}
+{% highlight C# %}
+//Setting minimum value
+doubleTextBox.MinValue = -999.99;
+//Setting maximum value
+doubleTextBox.MaxValue = 999.99;
+{% endhighlight %}
+{% endtabs %}
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Event Type</th><th>
-Event Args Parameter</th><th>
-Description</th></tr>
-<tr>
-<td>
-ValueChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the value of the DoubleTextBox has changed.<br/><br/></td></tr>
-<tr>
-<td>
-TextChanged<br/><br/></td><td>
-TextChangedEventHandler<br/><br/></td><td>
-TextChangedEventArgs<br/><br/></td><td>
-Occurs when the text changes in the DoubleTextBox.<br/><br/></td></tr>
-<tr>
-<td>
-CultureChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the Culture of the DoubleTextBox has changed.<br/><br/></td></tr>
-<tr>
-<td>
-MaxValueChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the MaxValue of the DoubleTextBox has changed.<br/><br/></td></tr>
-<tr>
-<td>
-MinValueChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the MinValue of the DoubleTextBox has changed.<br/><br/></td></tr>
-<tr>
-<td>
-SelectionChanged<br/><br/></td><td>
-RoutedEventHandler<br/><br/></td><td>
-RoutedEventArgs<br/><br/></td><td>
-Occurs when the text selection has changed.<br/><br/></td></tr>
-<tr>
-<td>
-ValueChanging<br/><br/></td><td>
-ValueChangingEventHandler<br/><br/></td><td>
-ValueChangingEventArgs<br/><br/></td><td>
-Occurs before the value of the DoubleTextBox has changed.<br/><br/></td></tr>
-<tr>
-<td>
-NumberDecimalDigitsChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the number of decimal digits changed.<br/><br/></td></tr>
-<tr>
-<td>
-NumberDecimalSeparatorChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the decimal separator of the number changed<br/><br/></td></tr>
-<tr>
-<td>
-NumberGroupSeparatorChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the Group Separator of the number changed.<br/><br/></td></tr>
-<tr>
-<td>
-NumberGroupSizesChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the group size of the number changed<br/><br/></td></tr>
-<tr>
-<td>
-ValidationCompletedChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the validation completed.<br/><br/></td></tr>
-<tr>
-<td>
-ValidationValueChanged<br/><br/></td><td>
-PropertyChangedCallback<br/><br/></td><td>
-DependencyPropertyChangedEventArgs<br/><br/></td><td>
-Occurs after the validation value changed.<br/><br/></td></tr>
-</table>
+## Number format
+
+You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties of DoubleTextBox.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="200" Value="123456789012345">
+    <syncfusion:DoubleTextBox.NumberFormat>
+        <numberformat:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4" NumberDecimalSeparator="*"/>
+    </syncfusion:DoubleTextBox.NumberFormat>
+</syncfusion:DoubleTextBox>
+{% endhighlight %}
+{% highlight C# %}
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 150;
+doubleTextBox.Height = 25;
+doubleTextBox.Value = 1234567;
+doubleTextBox.NumberFormat = new NumberFormatInfo()
+{
+    NumberGroupSeparator = "/",
+    NumberDecimalDigits = 4,
+    NumberDecimalSeparator = "*"
+};
+{% endhighlight %}
+{% endtabs %}
+
+![wpf double text box control number format](Getting-Started_images/wpf-double-text-box-number-format.png)
