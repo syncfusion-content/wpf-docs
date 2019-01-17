@@ -4409,7 +4409,7 @@ This cell builds a custom data template that can be used to set enriched styles 
 
 N> To create a cell type that hosts a WPF control, you should derive it from GridVirtualizingCellRenderer. The most important method to override is the OnInitializeContent method. It will be called for every UI element created for cells displaying this renderer. You can get access to the cell style from this method.
 
-The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and overrides OnInitializeContent and sets the Content Control template to Style.CellTemplate value.
+The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and overrides OnInitializeContent and sets the Content Control template to Style.CellItemTemplate value.
 
 #### Example
 
@@ -4441,9 +4441,9 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
         base.OnInitializeContent(uiElement, style);
         bool found = false;
 
-    if (style.CellTemplateKey != null)
+    if (style.CellItemTemplateKey != null)
         {
-            DataTemplate dt = (DataTemplate)style.GridControl.TryFindResource(style.CellTemplateKey);
+            DataTemplate dt = (DataTemplate)style.GridControl.TryFindResource(style.CellItemTemplateKey);
             found = dt != null;
 
             if (found)
@@ -4451,7 +4451,7 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
         }
 
         if (!found)
-            uiElement.ContentTemplate = style.CellTemplate;
+            uiElement.ContentTemplate = style.CellItemTemplate;
 
         uiElement.Content = style.CellValue;
     }
@@ -4510,7 +4510,7 @@ void Model_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQue
     if (e.Cell.RowIndex > 1 && e.Cell.ColumnIndex == 2)
     {
         e.Style.CellType = "DataTemplate";
-        e.Style.CellTemplateKey = "editableEmployee";
+        e.Style.CellItemTemplateKey = "editableEmployee";
         e.Style.CellValue = employeesSource.Employees[e.Cell.RowIndex % employeesSource.Employees.Count];
         e.Style.Background = Brushes.Linen;
     }
@@ -4755,7 +4755,7 @@ public class MyDataCollection : ObservableCollection<MyData>
 {% highlight c# %}
 var cell = grid.Model[2, 2];
 cell.CellType = "DataTemplate";
-cell.CellTemplateKey = "DataChart";
+cell.CellItemTemplateKey = "DataChart";
 grid.Model.RowHeights[2] = 400d;
 {% endhighlight  %}
 {% endtabs %}
