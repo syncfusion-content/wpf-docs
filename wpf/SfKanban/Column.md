@@ -83,7 +83,7 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 ## Headers
 
-[`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~Header.html) shows the category [`Title`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~Title.html), items count, min and max informations of a column. The UI of the header can be replaced entirely using [`SfKanban.ColumnHeaderTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ColumnHeaderTemplate.html) property. The following code snippet and screenshot illustrates this.
+[`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~Header.html) shows the [`Title`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~Title.html) category, items count and the min and max informations of a column. The UI of the header can be replaced entirely using the [`SfKanban.ColumnHeaderTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~ColumnHeaderTemplate.html) property. The following code sample and screenshot illustrates this.
 
 {% highlight xaml %}
 
@@ -103,17 +103,17 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 ## Column Tags
 
-The [`Tags`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~Tags.html) property is used to customize the header of kanban column. 
-The following properties of the tags can be used to customize the column header:
+The [`Tags`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~Tags.html) property customizes the header of a kanban column. The following properties of the tags are used to customize the column header:
 
-* [`CardCount`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~CardCount.html) - Gets or sets the count of Cards available in that column.
+* [`CardCount`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~CardCount.html) - Gets or sets the count of Cards available in column.
 * [`Maximum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~Maximum.html) - Gets or sets a value that indicates cards collection's maximum limit of KanbanColumn.
 * [`Minimum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~Minimum.html) - Gets or sets a value that indicates cards collection's minimum limit of KanbanColumn. 
-* [`IsExpanded`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~IsExpanded.html) - Gets or sets a value indicating whether the KanbanColumn is in expanded or not.
+* [`IsExpanded`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~IsExpanded.html) - Gets or sets a value that indicates whether the KanbanColumn is in expanded or not.
+* [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.ColumnTag~Header.html) - Gets or sets a object which indicates KanbanColumn header.
 
 ## Expand/Collapse Column
 
-Columns can be expanded/collapsed by tapping the toggle button which is placed at top right corner of the Kanban header. [`KanbanColumn.IsExpanded`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~IsExpanded.html) property is used to programmatically expand/collapse the Kanban column.
+The Columns can be expanded/collapsed by tapping the toggle button, which is placed at top-right corner of the Kanban header. The [`KanbanColumn.IsExpanded`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~IsExpanded.html) property is used to programmatically expand/collapse the Kanban column.
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ kanbanColumn.IsExpanded = false;
 
 ## Enable/Disable Drag & Drop
 
-You can enable and disable the drag and drop operation of the cards for particular column using [`KanbanColumn.AllowDrag`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~AllowDrag.html) property.
+You can enable or disable the drag-and-drop operation of the cards for a particular column using the [`KanbanColumn.AllowDrag`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanColumn~AllowDrag.html) property.
 
 {% tabs %}
 
