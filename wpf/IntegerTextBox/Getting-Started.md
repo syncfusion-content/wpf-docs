@@ -1,643 +1,141 @@
 ---
 layout: post
-title: Getting Started | IntegerTextBox | wpf | Syncfusion
-description: getting started
-platform: wpf
+title: Getting Started | IntegerTextBox | WPF | Syncfusion
+description: This section explains how to add integer textbox control into wpf application and describes it's basic essential features.
+platform: WPF
 control: IntegerTextBox 
 documentation: ug
 ---
 
 # Getting Started
 
-## Control structure
+## Assembly deployment
 
-![](Getting-Started_images/Getting-Started_img1.png)
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#integertextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
+You can find more details about installing the NuGet packages in a WPF application in the following link:
 
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-![](Getting-Started_images/Getting-Started_img2.png)
+## Create a simple application with IntegerTextBox
 
-## IntegerTextBox members
+You can create a WPF application with the IntegerTextBox control using the following steps:
 
-IntegerTextBox exposes the following members:
+## Create a project
 
-### Properties
+Create a new WPF project in Visual Studio to display the IntegerTextBox with functionalities.
 
+## Add control through designer
 
+The IntegerTextBox control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.WPF** assembly reference will be added automatically to the project.
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Description</th><th>
-Default Value</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ApplyNegativeForeground</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-Gets or sets the value that determines whether to apply the NegativeForeground in the IntegerTextBox.</td><td>
-True</td><td>
-ApplyNegativeForeground</td></tr>
-<tr>
-<td>
-ApplyZeroColor</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-Gets or sets the value that determines whether to apply the ZeroColor in the IntegerTextBox.</td><td>
-True</td><td>
-ApplyZeroColor</td></tr>
-<tr>
-<td>
-CornerRadius</td><td>
-Dependency Property</td><td>
-CornerRadius</td><td>
-Gets or sets a value that represents the degree to which the corners of the IntegerTextBox are rounded.</td><td>
-No default value.</td><td>
-CornerRadius</td></tr>
-<tr>
-<td>
-Culture</td><td>
-Dependency Property</td><td>
-CultureInfo</td><td>
-Gets or sets the Culture information associated with the IntegerTextBox.</td><td>
-</td><td>
-Culture</td></tr>
-<tr>
-<td>
-EnterToMoveNext</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-If this is set to true, then the Enter key can be used to move from one field to another.</td><td>
-true</td><td>
-EnterToMoveNext</td></tr>
-<tr>
-<td>
-IsReadOnly</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-Gets or sets the value that determines if the user can change the value in the IntegerTextBox.</td><td>
-true</td><td>
-IsReadOnly</td></tr>
-<tr>
-<td>
-IsScrollingOnCircle</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-Gets or sets the IsScrollingOnCircle property.</td><td>
-True</td><td>
-IsScrollingOnCircle</td></tr>
-<tr>
-<td>
-NegativeForeground</td><td>
-Dependency Property</td><td>
-Brush</td><td>
-Gets or sets the NegativeForeground property.</td><td>
-Red</td><td>
-NegativeForeground</td></tr>
-<tr>
-<td>
-NullValue</td><td>
-Dependency Property</td><td>
-Int64?</td><td>
-Gets or sets the NullValue property. </td><td>
-Null</td><td>
-NullValue</td></tr>
-<tr>
-<td>
-NumberFormat</td><td>
-Dependency Property</td><td>
-NumberFormatInfo</td><td>
-A NumberFormat that defines the culturally appropriate format of displaying numbers, currency, and percentage.</td><td>
-</td><td>
-NumberFormat</td></tr>
-<tr>
-<td>
-MaxValue</td><td>
-Dependency Property</td><td>
-Int64</td><td>
-Gets or sets the maximum value for the IntegerTextBox.</td><td>
-9,223,372,036,854,775,807</td><td>
-MaxValue</td></tr>
-<tr>
-<td>
-MaxValidation</td><td>
-Dependency Property</td><td>
-Enum of type MaxValidation</td><td>
-Represents the Maximum value Validation constraint for the IntegerTextBox.</td><td>
-MaxValidation.OnKeyPress</td><td>
-MaxValidation</td></tr>
-<tr>
-<td>
-MaxValueOnExceedMaxDigit</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-Represents the behavior when the value exceeds the MaxValue.</td><td>
-True</td><td>
-MaxValueOnExceedMaxDigit</td></tr>
-<tr>
-<td>
-MinValue</td><td>
-Dependency Property</td><td>
-Int64</td><td>
-Gets or sets the minimum allowed value for the IntegerTextBox.</td><td>
-Negative 9,223,372,036,854,775,808</td><td>
-MinValue</td></tr>
-<tr>
-<td>
-MinValueOnExceedMinDigit</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-Represents the behavior when the Value exceeds the MinValue.</td><td>
-True</td><td>
-MinValueOnExceedMinDigit</td></tr>
-<tr>
-<td>
-MinValidation</td><td>
-Dependency Property</td><td>
-Enum of type MinValidation</td><td>
-Represents the Minimum value Validation constraint for the IntegerTextBox.</td><td>
-MinValidation.OnKeyPress</td><td>
-MinValidation</td></tr>
-<tr>
-<td>
-NumberGroupSeparator</td><td>
-Dependency Property</td><td>
-String</td><td>
-Gets or sets the string that separates groups of digits in the value.</td><td>
-,</td><td>
-NumberGroupSeparator</td></tr>
-<tr>
-<td>
-NumberGroupSizes</td><td>
-Dependency Property </td><td>
-Int32Collection</td><td>
-Gets or sets the number of digits in each group in the value.</td><td>
-</td><td>
-NumberGroupSizes</td></tr>
-<tr>
-<td>
-PositiveForeground</td><td>
-Dependency Property</td><td>
-Brush</td><td>
-Gets or sets the Foreground for the IntegerTextBox.</td><td>
-Black</td><td>
-</td></tr>
-<tr>
-<td>
-SelectedText</td><td>
-Dependency Property</td><td>
-String</td><td>
-Gets or sets the current selection in the textbox.</td><td>
-Empty String.</td><td>
-</td></tr>
-<tr>
-<td>
-SelectionStart</td><td>
-Dependency Property</td><td>
-Int</td><td>
-Gets or sets a character index for the beginning of the current selection.</td><td>
--</td><td>
-</td></tr>
-<tr>
-<td>
-SelectionLength</td><td>
-Dependency Property</td><td>
-Int</td><td>
-Gets or sets a value indicating the number of characters in the current selection in the IntegerTextBox.</td><td>
-0</td><td>
-</td></tr>
-<tr>
-<td>
-TextSelectionOnFocus</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-If this property is set to true, then it will select all the text in the IntegerTextBox when it gets focused.</td><td>
-true</td><td>
-TextSelectionOnFocus</td></tr>
-<tr>
-<td>
-UseNullOption</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-Gets or sets the UseNullOption property.</td><td>
-False</td><td>
-UseNullOption</td></tr>
-<tr>
-<td>
-Value</td><td>
-Dependency Property</td><td>
-Int64?</td><td>
-Gets or sets the value for the IntegerTextBox.</td><td>
-0</td><td>
-Value</td></tr>
-<tr>
-<td>
-WatermarkOpacity</td><td>
-Dependency Property</td><td>
-Double</td><td>
-Gets or sets the opacity of the WatermarkText in the IntegerTextBox.</td><td>
-0.5</td><td>
-WatermarkOpacity</td></tr>
-<tr>
-<td>
-WatermarkTemplate</td><td>
-Dependency Property</td><td>
-DateTemplate</td><td>
-Gets or sets the DataTemplate for the WatermarkText.</td><td>
-</td><td>
-WatermarkTemplate</td></tr>
-<tr>
-<td>
-WatermarkText</td><td>
-Dependency Property</td><td>
-String</td><td>
-Gets or sets the WatermarkTextProperty.</td><td>
-Empty String</td><td>
-WatermarkText</td></tr>
-<tr>
-<td>
-WatermarkTextForeground</td><td>
-Dependency Property</td><td>
-Brush</td><td>
-Gets or sets the Foreground for the WatermarkText.</td><td>
-</td><td>
-WatermarkTextForeground</td></tr>
-<tr>
-<td>
-WatermarkTextIsVisible</td><td>
-Dependency Property</td><td>
-Bool</td><td>
-Gets or sets the value that determines the visibility of the WatermarkText in the IntegerTextBox.</td><td>
-False</td><td>
-WatermarkTextIsVisible</td></tr>
-<tr>
-<td>
-ZeroColor</td><td>
-Dependency Property</td><td>
-Brush</td><td>
-Gets or sets the ZeroColor property.</td><td>
-Green</td><td>
-ZeroColor</td></tr>
-</table>
+![wpf integer text box control added by designer](Getting-Started_images/wpf-integer-text-box-control-added-by-designer.png)
 
-### Methods
+## Add control manually in XAML
 
-IntegerTextBox Methods table
+To add the control manually in XAML, follow the given steps:
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Description</th><th>
-Return Type</th><th>
-Overloads</th></tr>
-<tr>
-<td>
-Copy()</td><td>
-Copies the current selection of the IntegerTextBox to the Clipboard.</td><td>
-Void</td><td>
--</td></tr>
-<tr>
-<td>
-Select()</td><td>
-Selects a range of text in the IntegerTextBox.</td><td>
-Void</td><td>
-(+2) Overloads.Parameters:start (Int32):First character in the selection.Length:The length of the selection, in characters.</td></tr>
-<tr>
-<td>
-SelectAll()</td><td>
-Selects all the content of the IntegerTextBox.</td><td>
-Void</td><td>
-</td></tr>
-</table>
-
-### Events
-
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Event Type</th><th>
-Event Args Parameter</th><th>
-Description</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ValueChanged</td><td>
-PropertyChangedCallback</td><td>
-DependencyPropertyChangedEventArgs</td><td>
-Occurs after the value of the IntegerTextBox has changed.</td><td>
-ValueChanged</td></tr>
-<tr>
-<td>
-TextChanged</td><td>
-TextChangedEventHandler</td><td>
-TextChangedEventArgs</td><td>
-Occurs when the text changes in the IntegerTextBox.</td><td>
-TextChanged</td></tr>
-<tr>
-<td>
-CultureChanged</td><td>
-PropertyChangedCallback</td><td>
-DependencyPropertyChangedEventArgs</td><td>
-Occurs after the Culture of the IntegerTextBox has changed.</td><td>
-CultureChanged</td></tr>
-<tr>
-<td>
-MaxValueChanged</td><td>
-PropertyChangedCallback</td><td>
-DependencyPropertyChangedEventArgs</td><td>
-Occurs after the MaxValue of the IntegerTextBox has changed.</td><td>
-MaxValueChanged</td></tr>
-<tr>
-<td>
-MinValueChanged</td><td>
-PropertyChangedCallback</td><td>
-DependencyPropertyChangedEventArgs</td><td>
-Occurs after the MinValue of the IntegerTextBox has changed.</td><td>
-MinValueChanged</td></tr>
-<tr>
-<td>
-SelectionChanged</td><td>
-RoutedEventHandler</td><td>
-RoutedEventArgs</td><td>
-Occurs when the text selection has changed.</td><td>
-SelectionChanged</td></tr>
-</table>
-
-
-
-## Creating an IntegerTextBox control
-
-IntegerTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
-
-### Creating an IntegerTextBox by using C#
-
-The steps to create an IntegerTextBox by using Visual Studio in C# are as follows:
-
-1. Open Visual Studio.
-2. On the File menu, select New -> Project. This opens the New Project Dialog box.
-
-   ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-3. On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
-
-   ![](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-4. Add the following reference with the sample project:
-   I. Syncfusion.Shared.WPF.dll
-
-
-
-   ![](Getting-Started_images/Getting-Started_img5.png)
-
-
-
-5. Click the C# file, to open the C# file and add the IntegerTextBox to the application. 
+1.	Add the **Syncfusion.Shared.WPF** assembly reference to the project.
+2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3.	Declare the IntegerTextBox control in the XAML page.
 
 {% tabs %}
-{%highlight c#%}
+{% highlight XAML %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="IntegerTextBoxSample.MainWindow"
+        Title="IntegerTextBox Sample" Height="350" Width="525">
+    <Grid>
+        <!--Adding IntegerTextBox control -->
+       <syncfusion:IntegerTextBox x:Name="integerTextBox" Width="100" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
 
-namespace WpfApp
+## Add control manually in C\#
+
+To add the control manually in C#, follow the given steps:
+
+1. Add the **Syncfusion.Shared.WPF** assembly reference to the project. 
+2. Import the IntegerTextBox namespace **using Syncfusion.Windows.Shared;**.
+3. Create an IntegerTextBox instance, and add it to the window.
+
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Shared;
+namespace IntegerTextBoxSample
 {
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-//Adding IntegerTextBox to Application
-			Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new
-			Syncfusion.Windows.Shared.IntegerTextBox();
-			integerTextBox.Height = 25;
-			integerTextBox.Width = 100;
-			this.LayoutRoot.Children.Add(integerTextBox);
-		}
-	}
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Creating an instance of IntegerTextBox control
+            IntegerTextBox integerTextBox = new IntegerTextBox();
+            //Adding IntegerTextBox as window content
+            this.Content = integerTextBox;
+        } 
+    }
 }
-			
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+## Bind value
 
-   
-
-{%seealso%}
-
-Creating an IntegerTextBox by using XAML
-
-{%endseealso%}
-
-## Blendability
-
-### Creating an IntegerTextBox by using XAML
-
-The steps to create an IntegerTextBox by using Visual Studio in XAML are as follows:
-
-1. Create a new application in Visual Studio.
-2. In the Visual Studio Toolbox, click the Syncfusion WPF Toolbox tab and select IntegerTextBox.
-3. Drag and drop the IntegerTextBox to Design View, to add the IntegerTextBox to the application.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img7.png)
-
-
-
-4. On the Properties window, customize the properties of the IntegerTextBox.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the IntegerTextBox using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) property. Refer to the [Data binding](https://help.syncfusion.com/wpf/integertextbox/binding-support) section for more details.
 
 {% tabs %}
-{%highlight xaml%}
-
-<Window x:Class="WpfApp.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-Title="IntegerTextBox Demo" Height="305" Width="442" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-<Grid x:Name="LayoutRoot">
-<syncfusion:IntegerTextBox Height="23" HorizontalAlignment="Left" Margin="111,83,0,0" Name="integerTextBox1" VerticalAlignment="Top" Width="120" />
-</Grid>
-</Window>
-			
-{%endhighlight%}
+{% highlight XAML %}
+<StackPanel>
+<syncfusion:IntegerTextBox x:Name="integerTextBox1" Width="150" Margin="10"/>
+<syncfusion:IntegerTextBox x:Name="integerTextBox2" Width="150" Margin="10" Value="{Binding ElementName=integerTextBox1,Path=Value,Mode=TwoWay}"/>
+</StackPanel>
+{% endhighlight %}
 {% endtabs %}
 
-   ![](Getting-Started_images/Getting-Started_img8.png)
+![wpf integer text box data binding](Getting-Started_images/wpf-integer-text-box-binding.png)
 
+## Setting minimum and maximum values
 
-   
-   
-N> * If you do not set any value to the IntegerTextBox then the default value will be as follows: * If the UseNullOption is set to true then, * Value of the NullValue property will be the default value. * Otherwise * Zero will be the default value (based on the MinValue and MaxValue the default value will change).
-
-{%seealso%}
-
-Creating an IntegerTextBox by using C#
-
-Creating an IntegerTextBox by using Expression Blend
-
-
-{%endseealso%}
-
-### Creating an IntegerTextBox by using Expression Blend
-
-The steps to create an IntegerTextBox in the application by using Expression Blend are as follows:
-
-1. Open Expression Blend.
-2. On the File menu, select New Project. This opens the New Project dialog box.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img9.png)
-
-
-
-3. In the Project type’s panel, select WPF Application and then click OK.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img10.png)
-
-
-
-4. Add the following reference with the sample project:
-   I. Syncfusion.Shared.WPF.dll
-   
-5. On the Window menu, select Assets. This opens the Assets Library dialog box.
-
-6. In the Search box, type IntegerTextBox. This displays the search results.
-
-
-
-   ![](Getting-Started_images/Getting-Started_img11.png)
-
-
-
-7. Drag the IntegerTextBox control to Design View.
-
-   ![](Getting-Started_images/Getting-Started_img12.png)
+You can set the minimum and maximum values by setting the [MinVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MinValue.html) and [MaxVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MaxValue.html) properties of the IntegerTextBox.
 
 {% tabs %}
-{%highlight xaml%}
-    
-<Window x:Class="WpfApp.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-Title="IntegerTextBox Demo" Height="305" Width="442" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-<Grid x:Name="LayoutRoot">
-<syncfusion:IntegerTextBox Height="23" HorizontalAlignment="Left" Margin="111,83,0,0" Name="integerTextBox1" VerticalAlignment="Top" Width="120" />
-</Grid>
-</Window>
-			
-{%endhighlight%}
-{% endtabs %}
-
-   ![](Getting-Started_images/Getting-Started_img13.png)
-
-   
-{%seealso%}
-
-Blendability
-
-Creating an IntegerTextBox by using XAML
-
-{%endseealso%}
-
-## Setting value
-
-You have to use the Value property to set the value for the IntegerTextBox.
-
-N> Do not use the Text property to set the value for the IntegerTextBox. Use only the Value property.
-
-{%tabs%}
-{% highlight xaml %} 
-<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100"/>
-{% endhighlight %}
-
-{% highlight C# %} 
-integerTextBox.Value = 100;
-{% endhighlight %}
-
-{%endtabs%}
-
-
-
-![](Getting-Started_images/Getting-Started_img14.png)
-
-
-
-{%seealso%}
-
-Minimum and Maximum Value
-
-NullValue Support
-
-{%endseealso%}
-
-### Setting minimum and maximum values
-
-You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the IntegerTextBox.
-
-{%tabs%}
-{% highlight xaml %} 
+{% highlight XAML %}
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100" MinValue="-999" MaxValue="999"/>
 {% endhighlight %}
-
-{% highlight C# %} 
+{% highlight C# %}
+//Setting minimum value
 integerTextBox.MinValue = -999;
+//Setting maximum value
 integerTextBox.MaxValue = 999;
 {% endhighlight %}
+{% endtabs %}
 
-{%endtabs%}
+## Number format
 
+You can customize the number format by setting either the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSeparator.html) and the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSizes.html) property of IntegerTextBox.
 
-
-![](Getting-Started_images/Getting-Started_img15.png)
-
-
-
-{%seealso%}
-
-Minimum and Maximum Value
-
-{%endseealso%}
-
-## Setting watermark
-
-You can set the Watermark for the IntegerTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
-
-N> WatermarkText is visible only when the value is null.
-
-{%tabs%}
-{% highlight xaml %} 
-<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100"  Value="{x:Null}" MinValue="-999" MaxValue="999" UseNullOption="True"  WatermarkText="Type Here"    WatermarkTextIsVisible="True"/>
+{% tabs %}
+{% highlight XAML %}
+<!--Number Format -->
+<syncfusion:IntegerTextBox x:Name="integerTextBox" Grid.Row="1" Height="25" Width="150" Culture="en-US" Value="123456789012345" NumberGroupSeparator="/"/>
 {% endhighlight %}
-
-{% highlight C# %} 
-integerTextBox.UseNullOption = true;
-integerTextBox.WatermarkText = "Type Here";
-integerTextBox.WatermarkTextIsVisible = true;
-integerTextBox.Value = null;
+{% highlight C# %}
+Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
+integerTextBox.Width = 150;
+integerTextBox.Height = 25;
+integerTextBox.Value = 1234567;
+integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");
+integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() 
+{ 
+NumberGroupSeparator = "/" 
+};
 {% endhighlight %}
-{%endtabs%}
+{% endtabs %}
 
-
-![](Getting-Started_images/Getting-Started_img16.png)
-
-
-
-{%seealso%}
-
-WatermarkTemplate
-
-NullValue Support
-
-{%endseealso%}
-
+![wpf integer text box control number format](Getting-Started_images/wpf-integer-textbox-number-format.png)
