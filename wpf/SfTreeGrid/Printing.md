@@ -7,10 +7,6 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-# Print
-
-SfTreeGrid allows you customize the print settings.
-
 ## Printing
 
 The printing feature can be achieved by exporting the tree grid to PDF and printing the exported PDF using the [SfPdfViewer](https://help.syncfusion.com/wpf/pdfviewer/printing-pdf-files) control.
@@ -48,7 +44,7 @@ private void Window_Loaded(object sender, RoutedEventArgs e)
 
 ![Printing support in WPF treegrid](Printing_images/Printing_img1.png)
 
-You can download the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PrintingDemo-132237879.zip).
+You can download the [sample](https://github.com/SyncfusionExamples/how-to-print-wpf-treegrid-with-pdfviewercontrol).
 
 ## Print parent and expanded child nodes
 
@@ -112,7 +108,7 @@ public class TreeGridCustomPdfConverter : TreeGridToPdfConverter
 {% endhighlight %}
 {% endtabs %}
 
-You can download the [sample](http://www.syncfusion.com/downloads/support/directtrac/212490/ze/PrintingDemo-599407972.zip).
+You can download the [sample](https://github.com/SyncfusionExamples/how-to-print-wpf-treegrid-with-pdfviewercontrol).
 
 ## Print customization
 
