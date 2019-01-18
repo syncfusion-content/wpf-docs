@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview | IntegerTextBox | wpf | Syncfusion
+title: Overview | IntegerTextBox | WPF | Syncfusion
 description: overview
-platform: wpf
+platform: WPF
 control: IntegerTextBox 
 documentation: ug
 ---
@@ -10,6 +10,14 @@ documentation: ug
 # Overview
 
 The IntegerTextBox control restricts text box input to only integer values with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to enhance its appearance and to suit your applications.
+
+## Control structure
+
+![wpf integer text box control](Getting-Started_images/Getting-Started_img1.png)
+
+![wpf integer text box water mark text](Getting-Started_images/Getting-Started_img2.png)
+
+## Features
 
 The core features of the IntegerTextBox are as follows:
 
