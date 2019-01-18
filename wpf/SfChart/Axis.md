@@ -2062,7 +2062,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **IsIndexed**
 
-By default, [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) can be made to plot the data points based on its data, instead of index value by disabling the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexedProperty.html) property of [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis_members.html), and it is shown in the following code example.
+By default, [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) can be made to plot the data points based on its data, instead of index value by disabling the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) property of [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis_members.html), and it is shown in the following code example.
 
 {% tabs %}
 
@@ -2104,7 +2104,7 @@ N> This feature is not applicable for Accumulation series, ErrorBarSeries, Radar
 
 **AggregateFunctions**
 
-When the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexedProperty.html) property of the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is disabled, the same index values(XValue) are grouped by [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) property of the axis. The following are the types of [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html),
+When the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexedProperty.html) property of the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is disabled, the same index values(XValue) are grouped by [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) property of the axis. The following are the types of [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html),
 
   * Average
   * Count
@@ -2113,7 +2113,7 @@ When the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.
   * None
   * Sum
 
-The default value of [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctionsProperty.html) is None, and it is shown in the following code example.
+The default value of [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) is None, and it is shown in the following code example.
 
 {% tabs %}
 
@@ -2784,7 +2784,7 @@ this.Chart.SecondaryAxis.IsInversed = true;
 
 **NumericalAxis**
 
-The following code snippet demonstrates the interval customization in NumericalAxis.
+The following code snippet demonstrates the [`Interval`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~Interval.html) customization in NumericalAxis.
 
 {% tabs %}
 
@@ -2818,7 +2818,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **CategoryAxis**
 
-The following code snippet demonstrates the interval customization in CategoryAxis.
+The following code snippet demonstrates the [`Interval`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis~Interval.html) customization in CategoryAxis.
 
 {% tabs %}
 
@@ -2853,7 +2853,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The DateTimeAxis interval value corresponds to the type specified in the [`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property.
 
-For instance, if the Interval is set as 2 and [`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) is set as Days, the labels are plotted for every two days. The following are the options for [`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property
+For instance, if the [`Interval`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Interval.html) is set as 2 and [`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) is set as Days, the labels are plotted for every two days. The following are the options for [`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property
 
 Auto
 * Days
