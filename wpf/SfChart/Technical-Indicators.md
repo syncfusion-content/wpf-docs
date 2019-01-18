@@ -47,7 +47,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ### Binding the Data
 
-Next you need to bind the property path for the open, high, low and close along with x value binding property.
+Next you need to bind the property path for the [`Open`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~Open.html), [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~Low.html) and [`Close`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~Close.html) along with x value binding property.
 
 {% tabs %}
 
