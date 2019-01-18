@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing | TreeGrid | WPF | Syncfusion
-description: How to print the SfTreeGrid and customize the print settings .
+description: This section explains about the printing support in SfDataGrid.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
