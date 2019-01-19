@@ -13,7 +13,7 @@ The placeholder is to denote a card's new position in the [`KanbanColumn`](https
 
 ### Placeholder style
 
-[`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
+[`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~PlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
 
 * [`Fill`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Fill.html)  	 - This property is used to change the background color of the placeholder.
 * [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Stroke.html) 	 	 - This property is used to change the border color of the placeholder.
@@ -21,6 +21,10 @@ The placeholder is to denote a card's new position in the [`KanbanColumn`](https
 * [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~StrokeDashArray.html)     - This property is used to change the dashes of the placeholder border.
 * [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~FontSize.html)            - This is used to change the text size of the placeholder.
 * [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Foreground.html)           - This property is used to change the text color of the placeholder.
+* [`RadiusX`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~RadiusX.html) - This property is used to change the x-radius of the placeholder.
+* [`RadiusY`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~RadiusY.html) - This property is used to change the y-radius of the placeholder.
+* [`TextHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~TextHorizontalAlignment.html) - This property is used to change the horizontal alignment of the placeholder text.
+* [`TextVerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~TextVerticalAlignment.html) - This property is used to change the vertical alignment of the placeholder text.
 
 Following properties are used to customize the selected category when you have more than one category in a column.
 
@@ -98,3 +102,5 @@ sfKanban.PlaceholderStyle = style;
 The following output demonstrates the above code example.
 
 ![Placeholder support in WPF SfKanban](SfKanban_images/PlaceholderStyle.png)
+
+N> The UI of the placeholder can be replaced entirely using [`PlaceholderTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~PlaceholderTemplate.html) property.
