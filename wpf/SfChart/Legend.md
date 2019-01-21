@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend
 
-Legend provides metadata which helps for identifying elements in chart like [chart series](https://help.syncfusion.com/wpf/sfchart/series), 
+[`Legend`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) provides metadata which helps for identifying elements in chart like [chart series](https://help.syncfusion.com/wpf/sfchart/series), 
 [technical indicators](https://help.syncfusion.com/wpf/sfchart/technical-indicators), and [trendlines](https://help.syncfusion.com/wpf/sfchart/trendlines). 
 You can define the legend using the following code example.
 
@@ -365,9 +365,9 @@ The series can be collapsed by unchecking the CheckBox as below:
 
 ## ToggleSeriesVisibility 
 
-`ToggleSeriesVisibility` is used to view or collapse the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its legend item. By default, `ToggleSeriesVisibility` property is *False*.
+[`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ToggleSeriesVisibility.html) is used to view or collapse the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its legend item. By default, [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ToggleSeriesVisibility.html) property is *False*.
 
-We can enable the `ToggleSeriesVisibility` property as in below code example:
+We can enable the [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ToggleSeriesVisibility.html) property as in below code example:
 
 {% tabs %}
 
@@ -680,7 +680,7 @@ chart.Series.Add(splineSeries);
 
 ## Legends for Accumulation Series
 
-For the series like Pie, Doughnut, Funnel and Pyramid, legends will be generated for all the data points. But for remaining series, each legend corresponds to each series. By default, the Interior color of the segment (data point) is applied to the legend icon. 
+For the series like Pie, Doughnut, Funnel and Pyramid, legends will be generated for all the data points. But for remaining series, each legend corresponds to each series. By default, the [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LegendItem~Interior.html) color of the segment (data point) is applied to the legend icon. 
 
 The following code snippets explains how the legends displaying for accumulation series.
 

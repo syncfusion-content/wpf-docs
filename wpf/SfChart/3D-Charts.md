@@ -13,7 +13,7 @@ documentation: ug
 
 ## Key features
 
-* Eight types of chart series.
+* Eight types of chart [`Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~Series.html).
 * Perspective view.
 * Data binding.
 * Animations.
@@ -250,7 +250,7 @@ The following screenshot illustrates the result of the above code sample:
 
 ## Adornments
 
-Adornments are used to indicate corresponding data point values and can be customized using the following properties:
+[`Adornments`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Adornments.html) are used to indicate corresponding data point values and can be customized using the following properties:
 
 <table>
 <tr>
@@ -259,67 +259,67 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-ShowConnectorLine</td><td>
+[`ShowConnectorLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowConnectorLine.html)</td><td>
 Gets or sets ability to show and hide the connector line for adornments.</td></tr>
 <tr>
 <td>
-ConnectorLineStyle</td><td>
+[`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html)</td><td>
 Gets or sets the connector line style.</td></tr>
 <tr>
 <td>
-ConnectorRotationAngle</td><td>
+[`ConnectorRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorRotationAngle.html)</td><td>
 Gets or sets the connector line rotate angle.</td></tr>
 <tr>
 <td>
-ConnectorHeight</td><td>
+[`ConnectorHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorHeight.html)</td><td>
 Gets or sets the connector height.</td></tr>
 <tr>
 <td>
-LabelTemplate</td><td>
+[`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelTemplate.html)</td><td>
 Gets or sets the adornments label template.</td></tr>
 <tr>
 <td>
-Symbol</td><td>
+[`Symbol`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Symbol.html)</td><td>
 Enum property to get or set the symbol for adornments.</td></tr>
 <tr>
 <td>
-SymbolHeight</td><td>
+[`SymbolHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolHeight.html)</td><td>
 Gets or sets the height for the symbol.</td></tr>
 <tr>
 <td>
-SymbolWidth</td><td>
+[`SymbolWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolWidth.html)</td><td>
 Gets or sets the width for the symbol.</td></tr>
 <tr>
 <td>
-SymbolTemplate</td><td>
+[`SymbolTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolTemplate.html)</td><td>
 Gets or sets the symbol template.</td></tr>
 <tr>
 <td>
-SymbolInterior</td><td>
+[`SymbolInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolInterior.html)</td><td>
 Gets or sets the interior for the symbol.</td></tr>
 <tr>
 <td>
-SymbolStroke</td><td>
+[`SymbolStroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolStroke.html)</td><td>
 Gets or sets the stroke for the symbol.</td></tr>
 <tr>
 <td>
-AdornmentsPosition</td><td>
+[`AdornmentsPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~AdornmentsPosition.html)</td><td>
 An enum property allowed to position the adornments TopAndBottom, Bottom and Top areas.</td></tr>
 <tr>
 <td>
-SegmentLabelContent</td><td>
+[`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html)</td><td>
 Gets or sets the actual label content to be displayed in the label.</td></tr>
 <tr>
 <td>
-SegmentLabelFormat</td><td>
+[`SegmentLabelFormat`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelFormat.html)</td><td>
 Gets or sets the adornments label format.</td></tr>
 <tr>
 <td>
-ShowMarker</td><td>
+[`ShowMarker`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowMarker.html)</td><td>
 A Boolean property to show or hide the markers.</td></tr>
 <tr>
 <td>
-ShowLabel</td><td>
+[`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html)</td><td>
 A Boolean property to show or hide the labels</td></tr>
 </table>
 
@@ -471,7 +471,7 @@ The following image illustrates the result of the above code sample:
 
 ### Dynamic rotation
 
-3D charts allow us to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the EnableRotation property to true.
+3D charts allow us to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the [`EnableRotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~EnableRotation.html) property to true.
 
 The following code example illustrates how to enable the dynamic rotation:
 
@@ -620,7 +620,7 @@ The following screenshot is an example of a SfChart3D with series selection.
 
 ## Dynamic explode
 
-This feature allows users to explode a particular segment in a circular series. This can also be achieved by setting the ExplodeIndex property. 
+This feature allows users to explode a particular segment in a circular series using [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries3D~ExplodeOnMouseClick.html). This can also be achieved by setting the [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeIndex.html) or [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeAll.html) property. 
 
 The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
 

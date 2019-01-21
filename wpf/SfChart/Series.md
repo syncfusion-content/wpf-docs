@@ -121,7 +121,7 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 
 **SegmentSpacing**
 
-[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacingProperty.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacingProperty.html) property in series,
+[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property in series,
 
 {% tabs %}
 
@@ -525,7 +525,7 @@ chart.Series.Add(series);
 
 **Cardinal**
 
-The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineTypeProperty.html) value as Cardinal.
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineType.html) value as Cardinal.
 
 {% tabs %}
 
@@ -3720,7 +3720,7 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 **AllowAutoSum**
 
-The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSumProperty.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSum.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
 
 The following code example illustrates how the AllowAutoSum property value can be set.
 
@@ -4388,7 +4388,7 @@ chart.Series.Add(fastRangeAreaBitmapSeries);
 
 ![Fast Range Area Bitmap Series](Series_images/fastrangeareabitmapseries.png)
 
-The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastRangeAreaBitmapSeries as in below code snippet:
+The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries~EnableAntiAliasing.html) property of FastRangeAreaBitmapSeries as in below code snippet:
 
 {% tabs %}
 
