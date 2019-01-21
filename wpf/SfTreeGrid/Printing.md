@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing
 
-The printing feature can be achieved by exporting the tree grid to PDF and printing the exported PDF using the [SfPdfViewer](https://help.syncfusion.com/wpf/pdfviewer/printing-pdf-files) control.
+The printing feature can be achieved by exporting the tree grid to PDF and printing the exported PDF using the [PdfViewerControl](https://help.syncfusion.com/wpf/pdfviewer/printing-pdf-files) .
 
 {% tabs %}
 {% highlight c# %}
