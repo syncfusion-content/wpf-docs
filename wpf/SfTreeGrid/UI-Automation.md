@@ -16,7 +16,7 @@ To test SfTreeGrid control with CUITs, build the extension project and place it 
 <table>
 <tr>
 <td>
-SfTreeGrid
+{{'**SfTreeGrid**'| markdownify }}
 </td>
 <td>
 https://github.com/SyncfusionExamples/coded-ui-extension-project-for-wpf-treegrid
@@ -30,7 +30,7 @@ https://github.com/SyncfusionExamples/coded-ui-extension-project-for-wpf-treegri
 <table>
 <tr>
 <td>
-SfGrid.WPF 
+{{'**SfGrid.WPF**'| markdownify }}
 </td>
 <td>
 Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
@@ -175,10 +175,10 @@ public void RecordedMethod1()
 <table>
 <tr>
 <td>
-**UI Elements**
+{{'**UI Elements**'| markdownify }}
 </td>
 <td>
-**Properties**
+{{'**Properties**'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -253,13 +253,13 @@ Default properties
 <table>
 <tr>
 <td>
-**Automation peer class name**
+{{'**Automation peer class name**'| markdownify }}
 </td>
 <td>
-**Control name in code generation**
+{{'**Control name in code generation**'| markdownify }}
 </td>
 <td>
-**Property provider class name**
+{{'**Property provider class name**'| markdownify }}
 </td>
 </tr>
 <tr>
