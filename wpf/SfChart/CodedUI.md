@@ -7,11 +7,11 @@ control: SfChart
 documentation: ug
 ---
 
-#Coded UI Test
+# Coded UI Test
 
 Automated tests that drive your application through its user interface (UI) are known as **coded** **UI** **tests** (CUITs). These tests include functional testing of the UI controls. SfChart supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
 
-##Levels
+## Levels
 
 <table>
 <tr>
@@ -32,7 +32,7 @@ Level 3<br/><br/></td><td>
 CUIT generates code from recorded session. Create specialized class to access Custom Properties so the generate code is simplified.<br/><br/></td></tr>
 </table>
 
-##Requirements
+## Requirements
 
 Coded UI provides support only in,
 
@@ -42,7 +42,7 @@ Coded UI provides support only in,
 
 For more info about the platforms and configurations refer [here](https://msdn.microsoft.com/en-us/library/dd380742)
 
-##Configuration
+## Configuration
 
 To test SfChart with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project  of SfChart from [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
 
@@ -62,10 +62,10 @@ For Visual Studio 2013: C:\Program Files (x86)\Common Files\Microsoft Shared\VST
 
 N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
 
-##Getting Started
+## Getting Started
 
 
-###Coded UI Project Creation
+### Coded UI Project Creation
 
 Run Visual Studio in administrator mode
 
@@ -89,7 +89,7 @@ You can also open the CodedUITestBuilder from existing Coded UI project by right
 ![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img4.jpeg)
 
 
-###Record  and Generate code
+### Record  and Generate code
 
 If you create a Coded UI Test project, UIMap – CodedUITestBuilder shown at bottom right corner.
 
@@ -142,7 +142,7 @@ Once the record is completed, click the GenerateCode icon in CodedUITestBuilder 
 {% endhighlight %}
 
 
-###Add Assertion
+### Add Assertion
 
 You can also create an assertion to check the modified chart/series properties value. Drag the crosshair to the chart series, and the Assertion window appears. 
 
@@ -184,7 +184,7 @@ public void AssertMethod1()
 
 {% endhighlight %}
 
-##Run Tests
+## Run Tests
 
 After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows. 
 
@@ -196,7 +196,7 @@ Open the test explorer and check test was passed or failed.
 ![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img12.jpeg)
 
 
-##Tables of Properties
+## Tables of Properties
 
 The following properties are for each of the UI elements in SfChart,
 
