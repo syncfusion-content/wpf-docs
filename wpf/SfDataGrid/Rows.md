@@ -332,6 +332,8 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 2. When `AllowFrozenGroupHeaders` is true, frozen rows will not be considered.
 
+3. SfDataGrid is supported only for freezing as number of rows in top and number of rows in bottom and it cannot be frozen with specific rows.
+
 
 N>
 
