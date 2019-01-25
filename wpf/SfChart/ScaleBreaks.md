@@ -70,7 +70,7 @@ For the defined break range, its position in the chart area can be customized us
 
 Break position is determined based on the following factors:
 
-###Data Count
+### Data Count
 
 Based on the number of data points that fall in axis ranges (other than break range) scale break will be positioned.
 
@@ -125,7 +125,7 @@ chart.SecondaryAxis = axis;
 ![Positioning the scale break based on the data count in WPF Chart](ScaleBreak_images/ScaleBreak_img3.jpeg)
 
 
-###Scale
+### Scale
 
 Scale option allows you to position the breaks based on the delta of each axis range relative to the other.
 
@@ -174,7 +174,7 @@ chart.SecondaryAxis = axis;
 ![Positioning the scale break based on the scale in WPF Chart](ScaleBreak_images/ScaleBreak_img4.jpeg)
 
 
-###Percent
+### Percent
 
 Percent option allows to position the breaks at the specified percentage of the axis available height.
 
