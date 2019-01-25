@@ -258,6 +258,7 @@ Updated
 
 * `AllowDataShaping` and `AllowSummaryUpdate` is not supported when you are binding with dynamic data objects.
 * Complex and indexer properties doesn’t support `LiveDataUpdateMode`- `AllowDataShaping` and `AllowSummaryUpdate`.
+* `LiveDataUpdateMode` is not supported when you are binding with DataTable.
 
 
 ## Built-in AddNewRow
