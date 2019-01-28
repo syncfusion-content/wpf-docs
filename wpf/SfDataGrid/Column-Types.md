@@ -1516,6 +1516,10 @@ By default, `GridComboBoxColumn` displays the value using `MappingName` property
 
 {% tabs %}
 {% highlight xaml %}
+<Window.Resources>
+    <local:ViewModel x:key="viewModel"/>
+</Window.Resources>
+
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
