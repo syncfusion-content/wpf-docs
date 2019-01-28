@@ -912,7 +912,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 
 ### Limitations
 
-1. SfDataGrid has the support to freeze the number of column from left or right. There is no support to freeze the specific column.
+1. SfDataGrid has support to freeze the number of columns from the left or right. There is no support to freeze a specific column.
 
 ## Stacked Headers
 
