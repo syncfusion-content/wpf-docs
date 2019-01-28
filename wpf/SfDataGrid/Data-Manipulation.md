@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Manipulation in SfDataGrid.
+title: Data Manipulation in Syncfusion SfDataGrid.
 description: How to manipulate data in SfDataGrid.
 platform: wpf
 control: SfDataGrid
@@ -282,7 +282,7 @@ this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endtabs %}
 
 
-![](Data-Manipulation_images/Data-Manipulation_img1.png)
+![Image shows the AddNewRow in SfDataGrid](Data-Manipulation_images/Data-Manipulation_img1.png)
 
 You can get the row index of AddNewRow where it placed by using the [GridAddNewRowController.GetAddNewRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridAddNewRowController~GetAddNewRowIndex.html) method.
 
@@ -334,7 +334,7 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img2.png)
+![Image shows the editing content in AddNewRow](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 ### Working with complex properties in AddNewRow
 
@@ -449,7 +449,7 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img3.png)
+![Image shows the Validation in AddNewRow](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) event.
 
@@ -459,9 +459,9 @@ SfDataGrid enables you to customize the watermark text of AddNewRow by changing 
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. 
 
-![](Data-Manipulation_images/Data-Manipulation_img4.png)
+![Image shows the customization of default resource culture in SfDataGrid](Data-Manipulation_images/Data-Manipulation_img4.png)
 
-![](Data-Manipulation_images/Data-Manipulation_img5.png)
+![Output image of after change the culture](Data-Manipulation_images/Data-Manipulation_img5.png)
 
 ### Customizing AddNewRow text using style
 
@@ -559,7 +559,7 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img6.png)
+![Image shows the customization of AddNewRow text](Data-Manipulation_images/Data-Manipulation_img6.png)
 
 ### AddNewRow support in Master-Details View
 
