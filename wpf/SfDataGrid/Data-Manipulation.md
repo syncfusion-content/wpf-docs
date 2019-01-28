@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Manipulation in Syncfusion SfDataGrid.
+title: Data Manipulation | DataGrid | WPF | Syncfusion
 description: How to manipulate data in SfDataGrid.
 platform: wpf
 control: SfDataGrid
