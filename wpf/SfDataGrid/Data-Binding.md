@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding support in SfDataGrid.
+title: Data Binding support in Syncfusion SfDataGrid.
 description: How to bind the data in SfDataGrid with different collection and service provider.
 platform: wpf
 control: SfDataGrid
@@ -40,6 +40,7 @@ Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 * [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.ICollectionViewAdv_members.html) is not supported.
 * Custom sorting is not supported.
 * Filtering with [TimeSpan](https://msdn.microsoft.com/en-us/library/system.timespan) values is not supported.
+* `LiveDataUpdateMode` is not supported.
 
 
 ## Binding with dynamic data object
@@ -296,7 +297,7 @@ To create an ASP.NET Web Application, follow the below steps,
 1. In NewProject dialog box, select the **Web** template under **Visual C#** and then select **ASP.NET Web Application**.
 2. Name the project file as **WCF_Binding** and then click **OK** to create project.
     
-    ![](Data-Binding_images/Data-Binding_img1.png)
+    ![Show the image to create the ASP.Net application from visual studio](Data-Binding_images/Data-Binding_img1.png)
 
 ### Define data model using ADO.NET Entity Data Model
 
@@ -307,16 +308,16 @@ Follow the below steps to define **ADO.NET Entity Data Model** in the web projec
 3. Name the data model as “**Northwind**” and click **Add** button.
 4. In the **Entity Data Model Wizard**, select **EF Designer from Database**, and then click **Next**.
 
-    ![](Data-Binding_images/Data-Binding_img2.png)
+    ![Show the image to choose the model contents from visual studio](Data-Binding_images/Data-Binding_img2.png)
 
 5. **Choose Your Data Connection** page appears and select **Northwind** database available in the drop-down list (OR) select the **New Connection** button to configure a new data connection. For more information, you can refer: [How to: Create Connections to SQL Server Databases](http://msdn.microsoft.com/en-us/library/s4yys16a.aspx).
 
-    ![](Data-Binding_images/Data-Binding_img3.png)
+    ![Show the image to choose the Northwind database from visual studio](Data-Binding_images/Data-Binding_img3.png)
 
 6. Click **Next** button and the **Choose Your Database Objects and settings** page appears.
 7. Expand **Tables** node and select Order_Details table.
 
-    ![](Data-Binding_images/Data-Binding_img4.png)
+    ![Show the image to choose the database objects and setting from Northwind database](Data-Binding_images/Data-Binding_img4.png)
 
 8. Now select **Finish** button to add the entity model for “Northwind.edmx” file to your web project.
 
@@ -327,7 +328,7 @@ To add the WCF Data Service to your web project created in first step,
 1. Right-click on your web project, select **Add** option and then click **New Item.**
 2. In **Add New Item Wizard**, Select **WCF Data Service 5.6** under **Web** Template.
 3. In **Name** text box enter **WcfDataService1.svc** and then click **Add** button.
-    ![](Data-Binding_images/Data-Binding_img5.png)
+    ![Show the image to add the WCF data service from visual studio](Data-Binding_images/Data-Binding_img5.png)
 
 4. Once service is added and configure the read and write access to resources in **InitializeService** function of DataService.
 
@@ -368,7 +369,7 @@ To add service reference to client application,
 2. **Add Service Reference** wizard appears, then select **Discover** button which displays the list of available services in **Services** panel.
 3. Select WcfDataService1.svc and click **OK** option to add the service reference to your WPF project.
 
-    ![](Data-Binding_images/Data-Binding_img6.png)
+    ![Show the image to create the WCF client application](Data-Binding_images/Data-Binding_img6.png)
 
 ### Loading data from WCF service
 
@@ -425,22 +426,22 @@ To create Data Model using Entity Framework in WPF application created in the pr
 2. The **Add New Item** wizard appears, select “**ADO.NET Entity Data Model** “ from the **Data** node.
 3. Name the file as **Model1.edmx** and then select **Add** button.
 
-    ![](Data-Binding_images/Data-Binding_img7.png)
+    ![Show the image to create the data  model using Enity framework 4.0](Data-Binding_images/Data-Binding_img7.png)
 
 4.	The Entity Data Model wizard appears.
 
 5. In the **Choose Model Contents**, select **Generate from database** option and then click **Next**.
 
-    ![](Data-Binding_images/Data-Binding_img8.png)
+    ![Show the image to choose the modelcontents when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img8.png)
 
 6. In the **Choose Your Data Connection**, select **Northwind** database from the drop-down list for data connection. To configure/modify connection, you can refer: [How to: Create Connections to SQL Server Databases](http://msdn.microsoft.com/en-us/library/s4yys16a.aspx).
 
-    ![](Data-Binding_images/Data-Binding_img9.png)
+    ![Show the image to choose the Northwind database when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img9.png)
 
 7. Enable the **Save entity connection settings in App.config as** check box and then click **Next**.
 8. In the **Choose Your Database Objects and Settings**, expand the Tables node and select the **Order_Details** table.
 
-    ![](Data-Binding_images/Data-Binding_img10.png)
+    ![Show the image to choose the database objects and settings from Northwind when using the Enity framework 4.0](Data-Binding_images/Data-Binding_img10.png)
 
 9. Click **Finish** button to add the **EntityBindingFramework.edmx** file to your application. The **Entity diagram** for the **Order_detail** table is opened.
 
@@ -484,7 +485,7 @@ To populate the SfDataGrid using Entity Framework, bind the collection created i
 Now, run the application and you can see the following screenshot shows the SfDataGrid control populated with data from Entity Framework data service.
 
 <br/>
-    ![](Data-Binding_images/Data-Binding_img11.png)
+    ![show the output image of SfDataGrid from entity framework](Data-Binding_images/Data-Binding_img11.png)
 
 ### Save back to Database
 
@@ -546,27 +547,27 @@ To create data model using LINQ to SQL in WPF project follow the below steps.
 2. The **Add New Item** wizard appears, select **LINQ to SQL Classes** from the **Visual C**#.
 3. Name the file as **Northwind** and then select **Add** option to add the **Northwind.dbml** in your project.
 
-    ![](Data-Binding_images/Data-Binding_img12.png)
+    ![Show the image to create the data  model from LINQ to SQL](Data-Binding_images/Data-Binding_img12.png)
 
 4.	Once the Northwind.dbml is added in your project, then the design view is opened.
 
-    ![](Data-Binding_images/Data-Binding_img13.png)
+    ![Show the design view image](Data-Binding_images/Data-Binding_img13.png)
 
 5. You can add new Database connection by clicking add icon button in Server Explorer. 
 6. The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient**).
 
-    ![](Data-Binding_images/Data-Binding_img14.png)
+    ![Show the image to connect the database](Data-Binding_images/Data-Binding_img14.png)
 
 7. Click **Change** to open the **Change Data Source** dialog box and select the type of data source that you have owned. 
 8. In the **Server name** option, click the **Refresh** button to select the server from the drop down list.
 9. Enable **select or enter a database name** radio button to select database from the drop down list under the **Connect to a database** option.
 
-    ![](Data-Binding_images/Data-Binding_img15.png)
+    ![Show the image to choose the database](Data-Binding_images/Data-Binding_img15.png)
 
 10. Click **Test Connection** to check whether the connection with your database is succeeded or not.
 11. Once the connection is succeeded, click **OK** button to add database in your server explorer.
 
-    ![](Data-Binding_images/Data-Binding_img16.png)
+    ![Image shows which database added in the projects](Data-Binding_images/Data-Binding_img16.png)
 
 12. Drag **Shippers** table in to design view of **Northwind.dbml**. The **Entity model diagram** for Shippers table is generated once it is dropped in to design view.
  
@@ -612,7 +613,7 @@ this.dataGrid.ItemsSource = (this.dataGrid.DataContext as ViewModel).Shippers;
 Now, run the application and you can see the following screenshot shows the SfDataGrid control loaded with Shippers data.
 
 <br/>
-    ![](Data-Binding_images/Data-Binding_img17.png)
+    ![Show the output image of LINQ to SQL project](Data-Binding_images/Data-Binding_img17.png)
 
 ### Save back to Database
 
@@ -661,18 +662,18 @@ To connect SQL database to your WPF application, refer the below MSDN link or fo
 1. In the Tools menu, select the **Connect to Database**.
 2. The **Add Connection** wizard appeared with the default data source as **Microsoft SQL Server Database File (SqlClient)**.
 
-    ![](Data-Binding_images/Data-Binding_img18.png)
+    ![Show the image to add the SqlClient to the prjoect](Data-Binding_images/Data-Binding_img18.png)
 
 3. Click **Change** to open the **Change Data Source** dialog box and select the type of data source that you have owned.
  
-    ![](Data-Binding_images/Data-Binding_img19.png)
+    ![Show the image to change the SqlClient for the prjoect](Data-Binding_images/Data-Binding_img19.png)
 
 4. In the **Server name** option, click the **Refresh** button to select the server from the drop down list.
 5. Enable **select or enter a database name** radio button to select your database from the drop down list under the **Connect to a database** option.
 6. Click **Test Connection** to check whether the database connection is succeeded or not.
 7. Once the connection is succeeded, click **OK** button to add database in your server explorer.
 
-    ![](Data-Binding_images/Data-Binding_img20.png)
+    ![Image shows which datbases are connected to the datagrid](Data-Binding_images/Data-Binding_img20.png)
 
 8. To get connection string for the database, right-click on your database and then click **properties** option.
 
@@ -713,7 +714,7 @@ public partial class MainWindow : Window
 Now, run the application and you can see the following screenshot displays the SfDataGrid loaded the data using ADO.NET.
 
 <br/>
-    ![](Data-Binding_images/Data-Binding_img21.png)
+    ![Image shows the output of SfDataGrid loaded with ADO.Net](Data-Binding_images/Data-Binding_img21.png)
 
 ### Save back to Database
 
@@ -782,7 +783,7 @@ void dataGrid_Loaded(object sender, RoutedEventArgs e)
 
 7.Now, run the application and you can see following screenshot shows the SfDataGrid control populated data from Microsoft Access database.
 <br/>    
-    ![](Data-Binding_images/Data-Binding_img22.png)
+    ![Image shows the output of SfDataGrid loaded with Microsoft Access](Data-Binding_images/Data-Binding_img22.png)
 
 ## How To
 
