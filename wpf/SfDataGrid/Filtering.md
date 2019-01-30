@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering | DataGrid | WPF | Syncfusion.
+title: Filtering | DataGrid | WPF | Syncfusion
 description: How to filter the data from UI-based or programmatically in SfDataGrid .
 platform: wpf
 control: SfDataGrid
