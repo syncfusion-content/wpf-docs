@@ -429,11 +429,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 Checkbox Filter with ImmediateUpdateColumnFilter is True
 
-![Apply the immidiate filter in CheckBox Filter view](Filtering_images/Filtering_img9.png)
+![Apply the immediate filter in CheckBox Filter view](Filtering_images/Filtering_img9.png)
 
 Advanced Filter with ImmediateUpdateColumnFilter is True
 
-![Apply the immidiate filter in Advanced Filter view](Filtering_images/Filtering_img10.png)
+![Apply the immediate filter in Advanced Filter view](Filtering_images/Filtering_img10.png)
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ImmediateUpdateColumnFilter.html) is true.
 
