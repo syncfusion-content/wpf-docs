@@ -267,6 +267,10 @@ SfDataPager</th><th>
 AccentBackgroundAccentForegroundAutoEllipsisModeAutoEllipsisTextDisplayModeEnableGridPagingNumericButtonCountOrientationPageCountPageSizeUseOnDemandPaging</th></tr>
 </table>
 
+### Limitations
+
+1. SfDataGrid UI Automation will not work when you automate the datagrid with editing in Visual Studio 2015. It is a known issue in Visual Studio 2015.
+
 ### How To
 
 ### How to Enable Coded UI Test in SfDataGrid
