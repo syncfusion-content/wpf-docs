@@ -617,7 +617,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Apply the column filter for image, How to load the image in SfDataGrid checkBox filter](Filtering_images/Filtering_img16.png)
+![Apply the column filter for image in wpf datagrid](Filtering_images/Filtering_img16.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBoxFilterControlImage1515534249.zip).
 
