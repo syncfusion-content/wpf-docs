@@ -7,7 +7,7 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-## Column Sizing
+# Column Sizing
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnSizer.html) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~ColumnSizer.html) property. 
 

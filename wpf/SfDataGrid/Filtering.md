@@ -6,6 +6,8 @@ platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
+# Filtering
+Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic filtering
   
