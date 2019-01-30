@@ -32,11 +32,11 @@ Please follow the below steps to use Pdfium PDF rendering in Syncfusion PDF view
 	The Pdfium assemblies will be available in 
     {$SystemDrive}:\Program Files (x86)\Syncfusion\Essential Studio\{Essential Studio version}\Pdfium 
 	
-	![](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img1.png)
+	![Pdfium folder structure](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img1.png)
 	
 	N> The Pdfium folder will contain two folders namely x86 and x64, both would contain pdfium.dll assembly for the respective architecture. The Syncfusion PDF viewer is designed to detect the architecture of the target machine in which it is deployed and would pick corresponding pdfium.dll to use it. 
 	
-	![](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img2.png)
+	![Pdfium sub folders](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img2.png)
 	
 2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the &#34;Pdfium&#34; folder. 
 
