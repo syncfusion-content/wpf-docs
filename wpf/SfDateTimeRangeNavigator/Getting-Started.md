@@ -102,15 +102,15 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-[`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ItemsSource.html)</td><td>
+{{'[`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ItemsSource.html)'| markdownify }}</td><td>
 Sets the ItemsSource for SfDateTimeRangeNavigator.</td></tr>
 <tr>
 <td>
-[`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~XBindingPath.html)</td><td>
+{{'[`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~XBindingPath.html)'| markdownify }}</td><td>
 Represents the date-time x values.</td></tr>
 <tr>
 <td>
-[`Content`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~Content.html)</td><td>
+{{'[`Content`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~Content.html)'| markdownify }}</td><td>
 Adds any UI content inside the date-time range navigator.</td></tr>
 </table>
 
