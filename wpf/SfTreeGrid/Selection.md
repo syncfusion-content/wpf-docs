@@ -917,7 +917,7 @@ public static class Commands
 {% endhighlight %}
 {% endtabs %}
 
-You can download the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckboxSelectionDemo2117356646.zip).
+You can download the [sample](https://github.com/SyncfusionExamples/how-to-change-the-checkbox-column-values-based-on-selection-in-wpf-treegrid).
 
 ### Select the rows based on cell value
 
