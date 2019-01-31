@@ -844,7 +844,7 @@ private void Treegrid_Loaded(object sender, System.Windows.RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can [download](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectRecordDemo1131431553.zip) the sample.
+You can [download]( https://github.com/SyncfusionExamples/how-to-scroll-and-select-the-record-programmatically-in-wpf-and-uwp-treegrid/tree/master/WPF) the sample.
 
 ### Prevent the selection when right-click
 
@@ -864,7 +864,7 @@ protected override void ProcessPointerPressed(MouseButtonEventArgs args, RowColu
 {% endhighlight %}
 {% endtabs %}
 
-You can [download](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PreventSelectionDemo-1777393957.zip) the sample.
+You can [download](https://github.com/SyncfusionExamples/how-to-prevent-the-selection-while-pressing-right-click-in-wpf-and-uwp-treegrid/tree/master/WPF) the sample.
 
 ### Change the checkbox column values based on row selection
 
@@ -996,7 +996,7 @@ private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChan
 {% endhighlight %}
 {% endtabs %}
 
-You can download the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfTreeGridDemo1429156186.zip).
+You can download the [sample](https://github.com/SyncfusionExamples/how-to-search-and-select-the-record-in-wpf-and-uwp-treegrid/tree/master/WPF).
 
 ### Read cell values from selected items
 
