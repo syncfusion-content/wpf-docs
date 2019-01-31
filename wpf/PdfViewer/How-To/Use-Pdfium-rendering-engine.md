@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use Pdfium rendering engine | PDF Viewer | Wpf | Syncfusion
-description: use Pdfium rendering engine
+description: Use Pdfium rendering engine
 platform: wpf
 control: PDF Viewer
 documentation: ug
