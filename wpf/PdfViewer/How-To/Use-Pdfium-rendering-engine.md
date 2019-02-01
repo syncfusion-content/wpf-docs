@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Use Pdfium rendering engine | PDF Viewer | Wpf | Syncfusion
-description: Use Pdfium rendering engine to view and print the PDF document efficiently using PdfViewerControl in WPF application
+title: Use Pdfium rendering engine in PDF Viewer WPF | Syncfusion
+description: Use Pdfium rendering engine to view and print the PDF document efficiently in PDF Viewer WPF application
 platform: wpf
 control: PDF Viewer
 documentation: ug
