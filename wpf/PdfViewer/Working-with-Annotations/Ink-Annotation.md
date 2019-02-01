@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inclusion of ink annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
+title: Inclusion of Ink Annotation | PDF Viewer | WPF | Syncfusion.
 description: Inclusion of ink annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
 platform: wpf
 control: PDF Viewer
