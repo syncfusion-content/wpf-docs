@@ -19,7 +19,7 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 Operating Systems</th></tr>
 <tr>
 <td>
-Windows Server 2008 (32 bit and 64 bit), Windows Vista (32 bit and 64 bit), Windows 2003, Windows 7,Windows 8, Windows 8.1
+Windows Server 2008 (32 bit and 64 bit), Windows Vista (32 bit and 64 bit), Windows 2003, Windows 7,Windows 8, Windows 8.1, Windows 10
 
 N> Pdfium is not supported in Windows XP
 </td></tr>
