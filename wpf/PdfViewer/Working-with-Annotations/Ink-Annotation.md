@@ -39,7 +39,7 @@ End Sub
 
 The following image shows the ink annotation being included in the PDF Document.
 
- ![](Annotation-images\Ink-Annotation-1.png)
+ ![Inclusion of ink](Annotation-images\Ink-Annotation-1.png)
 
 ## How to set the color of the ink annotation?
 
@@ -167,7 +167,7 @@ Ink annotation supports adding notes along with it, also it allows editing its c
 
 We can add notes to the ink annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected ink annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
-![](Annotation-images\Ink-Annotation-2.png)
+![Popup note](Annotation-images\Ink-Annotation-2.png)
 
 ### Properties
 
@@ -186,11 +186,11 @@ Modifying the value in the NumericUpDown control in the Appearance tab of ink an
 
 The following image illustrates how to change the thickness of the ink annotation.
 
-![](Annotation-images\Ink-Annotation-3.png)
+![Ink thickness](Annotation-images\Ink-Annotation-3.png)
 
 The following image illustrates the change in thickness of the selected ink annotation.
 
-![](Annotation-images\Ink-Annotation-4.png)
+![Modified ink thickness](Annotation-images\Ink-Annotation-4.png)
 
 #### Editing color of the annotation
 
@@ -198,11 +198,11 @@ The color of the selected ink annotation will be displayed in the color row in t
 
 The following image illustrates how to change the color of the ink annotation included.
 
-![](Annotation-images\Ink-Annotation-5.png)
+![Ink color](Annotation-images\Ink-Annotation-5.png)
 
 The following image illustrates the change in the color of the ink annotation.
 
-![](Annotation-images\Ink-Annotation-6.png)
+![Modified ink color](Annotation-images\Ink-Annotation-6.png)
 
 #### Editing opacity of the annotation
 
@@ -210,11 +210,11 @@ The slider control displayed in the Appearance tab will allow us to modify the o
 
 The following image illustrates how to change the opacity of the ink annotation.
 
-![](Annotation-images\Ink-Annotation-7.png)
+![Ink opacity](Annotation-images\Ink-Annotation-7.png)
 
 The following image illustrates the change in the opacity of the ink annotation.
 
-![](Annotation-images\Ink-Annotation-8.png)
+![Modified ink opacity](Annotation-images\Ink-Annotation-8.png)
 
 ### General tab
 
@@ -222,7 +222,7 @@ We can add or edit the Author and Subject of the ink annotation using General ta
 
 The following image illustrates the change in Author and Subject of the included Ink annotation.
 
-![](Annotation-images\Ink-Annotation-9.png)
+![General details](Annotation-images\Ink-Annotation-9.png)
 
 ### Deleting an annotation
 
@@ -230,7 +230,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-![](Annotation-images\Ink-Annotation-10.png)
+![Ink deletion](Annotation-images\Ink-Annotation-10.png)
 
 ### Keyboard shortcuts
 
