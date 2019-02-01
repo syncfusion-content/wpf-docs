@@ -27,7 +27,7 @@ N> Pdfium is not supported in Windows XP
 
 Please follow the below steps to use Pdfium PDF rendering in Syncfusion PDF viewer.
 
-1.	Copy the Pdfium assembly&#39;s folder to a local folder from the installation path. The folder name must be &#34;Pdfium&#34;.
+1.	Copy the Pdfium assembly's folder to a local folder from the installation path. The folder name must be "Pdfium".
 
 	The Pdfium assemblies will be available in 
     {$SystemDrive}:\Program Files (x86)\Syncfusion\Essential Studio\{Essential Studio version}\Pdfium 
@@ -38,13 +38,13 @@ Please follow the below steps to use Pdfium PDF rendering in Syncfusion PDF view
 	
 	![Pdfium sub folders](Use-Pdfium-rendering-engine_images/Use-Pdfium-rendering-engine_img2.png)
 	
-2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the &#34;Pdfium&#34; folder. 
+2.	Then, the ReferencePath property of the PDF Viewer should be set to locate the "Pdfium"; folder. 
 
 	N>  
 	* If ReferencePath property is not defined explicitly, Pdfium folder will be generated in the application’s base directory,where the Pdfium assemblies will be extracted and be referred automatically. We recommend leaving the ReferencePath as blank, but if there is any access restriction to provide access to the application’s base directory, then you shall use ReferencePath property. 
 	* The RenderingEngine property of the PDF viewer is set to Pdfium by default, but if you wish to use Syncfusion PDF Rendering engine, then this property must be set to SfPdf. 
 
-The following code snippet illustrates the same, you can also find the project sample in the below link. Here the &#34;Pdfium&#34; folder is placed inside the D:\ReferencePath\ folder.
+The following code snippet illustrates the same, you can also find the project sample in the below link. Here the "Pdfium" folder is placed inside the D:\ReferencePath\ folder.
 
 {% tabs %}
 {%highlight c#%}
