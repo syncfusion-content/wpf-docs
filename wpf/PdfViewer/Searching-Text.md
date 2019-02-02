@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching Text | PDF Viewer | Wpf | Syncfusion
-description: searching text 
+description: Select and copy text support allows user to select the text in the PDF document and copy it to the clipboard using PDF Viewer WPF. 
 platform: wpf
 control: PDF Viewer
 documentation: ug
