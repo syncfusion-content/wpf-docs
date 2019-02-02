@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Bookmark Navigation | PDF Viewer | WPF | Syncfusion
-description: bookmark navigation
+description: Bookmark navigation allows users to view the bookmarks and navigate to the destination saved in the bookmarks in PDF Viewer WPF.
 platform: wpf
 control: PDF Viewer
 documentation: ug

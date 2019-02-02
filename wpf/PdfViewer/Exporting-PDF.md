@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting PDF | PDF Viewer | Wpf | Syncfusion
-description: exporting pdf 
+description: Convert pages of a PDF file into JPG, PNG, TIFF, and BMP formats using PDF Viewer WPF. The scaler exportation comes with the customization of dimension and DPI. 
 platform: wpf
 control: PDF Viewer
 documentation: ug
