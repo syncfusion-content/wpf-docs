@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Hyperlinks | PDF Viewer | Wpf | Syncfusion
-description: working with hyperlinks 
+description: Hyperlink navigation support in PDF Viewer WPF detects hyperlinks present in PDF and on tapping it, will open the URL in the browser. 
 platform: wpf
 control: PDF Viewer
 documentation: ug
