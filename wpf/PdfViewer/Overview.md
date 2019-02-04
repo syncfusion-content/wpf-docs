@@ -17,7 +17,7 @@ Use Case Scenario
 
 You can embed the PDF viewer within the .NET application using this feature. The PDF Viewer can also be used as a stand-alone application.
 
-![C:/Users/Suresh/Desktop/WPF UG/Figure 1 PDF Viewer.png](Overview_images/Overview_img1.png)
+![Output of PDF Viewer control](Overview_images/Overview_img1.png)
 
 
 
@@ -46,7 +46,8 @@ Visual Studio 2013 (Ultimate, Premium, Professional and Express)Visual Studio 20
 Operating Systems</th></tr>
 <tr>
 <td>
-Windows Server 2008 (32 bit and 64 bit)Windows Vista (32 bit and 64 bit)Windows XPWindows 2003Windows 7Windows 8Windows 8.1</td></tr>
+Windows Server 2008 (32 bit and 64 bit), Windows Vista (32 bit and 64 bit), Windows XP, Windows 2003, Windows 7, Windows 8, Windows 8.1, Windows 10
+</td></tr>
 </table>
 
 ### Documentation
