@@ -19,9 +19,10 @@ From Essential Studio 16.1.0.24 PDF viewer control provides a robust rendering o
 Operating Systems</th></tr>
 <tr>
 <td>
-Windows Server 2008 (32 bit and 64 bit), Windows Vista (32 bit and 64 bit), Windows 2003, Windows 7,Windows 8, Windows 8.1, Windows 10
+Windows Server 2008 (32 bit and 64 bit), Windows Vista (32 bit and 64 bit), Windows 2003, Windows 7, Windows 8, Windows 8.1, Windows 10
 
-N> Pdfium is not supported in Windows XP
+N> 
+Pdfium is not supported in Windows XP
 </td></tr>
 </table>
 
@@ -49,18 +50,18 @@ The following code snippet illustrates the same, you can also find the project s
 {% tabs %}
 {%highlight c#%}
 
-	PdfViewerControl pdfViewerControl1 = new PdfViewerControl ();
-	//Load the PDF document 
-	pdfViewerControl1.Load("Sample.pdf");
+PdfViewerControl pdfViewerControl1 = new PdfViewerControl ();
+//Load the PDF document 
+pdfViewerControl1.Load("Sample.pdf");
 
 {%endhighlight%}
 
 
 {%highlight vb%}
 
-	Dim pdfViewerControl1 As New PdfViewerControl() 
-	'Load the PDF document 
-	pdfViewerControl1.Load("Sample.pdf")
+Dim pdfViewerControl1 As New PdfViewerControl() 
+'Load the PDF document 
+pdfViewerControl1.Load("Sample.pdf")
 
 {%endhighlight%}
 {% endtabs %}
