@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visually represent the geometrical shape, process flow, or entities.
+title: Visualize graphical object using Nodes | Syncfusion
 description: How to visually represent the geometrical information and process flows as nodes?
 platform: wpf
 control: SfDiagram
