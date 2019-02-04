@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create custom connection points to draw connections with any specific point of Node.
+title: Draw connections to a specific point of Node using Ports | Syncfusion
 description: How to draw connections with specific points of Node?
 platform: wpf
 control: SfDiagram
@@ -11,15 +11,15 @@ documentation: ug
 
 Essential Diagram for WPF provides support to define ports for making connections.
 
-![](Port_images/Port_img2.PNG)
+![Port representation](Port_images/Port_img2.PNG)
 
 When a Connector is connected between two Nodes, its end points are automatically docked to Node’s nearest boundary as shown in the following image.
 
-![](Port_images/Port_img3.PNG)
+![Connect without Port](Port_images/Port_img3.PNG)
 
 Port act as the connection points of node and allows to create connections with only specific points as shown in the following image.
 
-![](Port_images/Port_img4.PNG)![](Port_images/Port_img5.PNG)
+![Connecting with port](Port_images/Port_img4.PNG) ![Ports on connector](Port_images/Port_img5.PNG)
 
 ## Node Port
 
@@ -110,7 +110,7 @@ NodeViewModel node = new NodeViewModel()
 
 {% endhighlight %}			
 {% endtabs %}
-![](Port_images/Port_img6.PNG)
+![Node port](Port_images/Port_img6.PNG)
 
 >N The default value of `PortVisibility` is `PortVisibility.MouseOverOnConnect`. For more information , refer to the PortVisibility 
 
@@ -206,13 +206,13 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}			
 
-![](Port_images/Port_img7.PNG)
+![Connector Port](Port_images/Port_img7.PNG)
 
 ## Dock Port
 
 DockPort is different from standard ports like NodePort and ConnectorPort, as it allows you to create connection at any point within specific intervals as shown in the following image.
 
-![](Port_images/Port_img17.png)
+![Dock port](Port_images/Port_img17.png)
 
 To add a collection port, you need to define the port object and add it to `Ports` property of Node. The `SourcePoint` and `TargetPoint` properties of DockPort allow you to define its end points. 
 
@@ -284,7 +284,7 @@ To add a collection port, you need to define the port object and add it to `Port
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img10.png)
+![Dock port](Port_images/Port_img10.png)
 
 ## Port to Port Connection
 
@@ -380,7 +380,7 @@ return node;
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img13.PNG)
+![Connecting node ports](Port_images/Port_img13.PNG)
 
 ### Connection for ConnectorPort
 
@@ -529,7 +529,7 @@ return node;
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/ConnectorPort.gif)
+![Connecting connector port](Port_images/ConnectorPort.gif)
 
 ### Connection for DockPort
 
@@ -608,7 +608,7 @@ public NodeViewModel AddNode(double offsetX, double offsetY, string shape, doubl
  }
 {% endhighlight %}
 {% endtabs %}
-![](Port_images/DockPort.png)
+![Connecting dock port](Port_images/DockPort.png)
 
 For more information, refer to [Draw Connectors](/wpf/sfdiagram/tools#drawing-tools:connectors "Draw Connectors").
 
@@ -629,9 +629,9 @@ NodePortViewModel nodePort = new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img15.PNG)
+![Port connectin padding](Port_images/Port_img15.PNG)
 
-#### HitPadding
+### HitPadding
 
  Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. `HitPadding` property allow to customize the vicinity area while connecting.
  
@@ -648,7 +648,7 @@ NodePortViewModel nodePort = new NodePortViewModel()
  {% endhighlight %}
  {% endtabs %}
  
-![](Port_images/Port_img12.gif)
+![Port hit padding](Port_images/Port_img12.gif)
 
 ### PortVisibility
 
@@ -724,7 +724,7 @@ You can change the shape of port by using its `shape` property. The appearance o
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img8.PNG)
+![Port appearance](Port_images/Port_img8.PNG)
 
 The appearance of DockPort can be customized using `ConnectorGeometryStyle` property.
 
@@ -746,7 +746,7 @@ The appearance of DockPort can be customized using `ConnectorGeometryStyle` prop
 {% endhighlight %}
 {% endtabs %}
 
-![](Port_images/Port_img11.PNG)
+![Port appearance](Port_images/Port_img11.PNG)
 
 ## Interaction
 
@@ -754,7 +754,7 @@ The appearance of DockPort can be customized using `ConnectorGeometryStyle` prop
  
 #### Port Dragging
  
- ![](Port_images/Interaction.gif)
+ ![Port dragging](Port_images/Interaction.gif)
 
 * NodePort - Port Dragging occurs within the limit of node. `PortChangedEvent` will notify the `OffsetX`and `OffsetY` changes with their `OldValue` and `NewValue`. 
  
