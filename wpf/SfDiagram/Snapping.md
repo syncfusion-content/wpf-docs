@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Snapping will snap objects with respect to grid lines in the Design environment. 
+title: Snap objects with respect to grid lines in the Design environment.
 description: How to snap Nodes and Connectors over gridlines?
 platform: wpf
 control: SfDiagram

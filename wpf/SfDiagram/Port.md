@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create custom connection points to draw connections with any specific point of Node.
+title: Draw connections with any specific point of Node using Ports.
 description: How to draw connections with specific points of Node?
 platform: wpf
 control: SfDiagram
