@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing PDF Files | PDF Viewer | Wpf | Syncfusion
-description: printing pdf files 
+description: The PDF Viewer supports printing a PDF file loaded in it. It supports printing using print dialog and silent batch printing. 
 platform: wpf
 control: PDF Viewer
 documentation: ug
