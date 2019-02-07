@@ -9,14 +9,14 @@ documentation: ug
 
 # Strip Lines
 
-The Gantt provides support to add strip lines in the Gantt chart region that denotes an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
+Essential Gantt provides support for adding Strip Lines in the Gantt chart region which will denote an important event in a sequential timeline. By using this feature, you can add the Strip Lines to highlight the important days in your project.  You can add the collection of strip lines through the provided API. 
 
 ## Strip lines in Essential Gantt support the following features:
 
 Strip lines can be repeatable in the Gantt chart region based on repeat behavior and repeat interval.
 
 * You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
-* The visibility of strip lines can be toggled using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Gantt.Wpf~Syncfusion.Windows.Controls.Gantt.GanttControl~ShowStripLines.html) property in the Gantt control.
+* Strip line visibility can be toggled by using the ShowStripLines property in GanttControl.
 
 The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
 
@@ -36,7 +36,7 @@ It used to pass the style of the strip lines dynamically. Based on constraints.
 ### Template selector
 It used to pass the content template of the strip lines dynamically based on constraints.
 
-## Types of strip lines
+## Types of Striplines
 
 There are two types of strip lines available in Essential Gantt. They are:
 
@@ -225,11 +225,16 @@ StripLineCreated(object sender, StriplineCreatedEventArgs args)</td><td>
 Event </td></tr>
 </table>
 
-## Adding strip lines to application
+## Adding Striplines to Application
 
-### Regular strip lines
+To add the strip lines to an application:
 
-The following code sample demonstrates how to define a collection of regular strip lines.
+1. Define the Gantt with initial values.
+2. Set the ShowStripLines API value as True.
+3. Bind the Gantt’s StripLines to the StripLineInfo collection.
+
+The following code illustrates Creating the collection of StripLineInfo.
+
 
 {% highlight c# %}
 
@@ -260,8 +265,8 @@ private List<StripLineInfo> GetStripCollection()
 
 
 {% endhighlight  %}
+The following code example illustrates binding the strip line collection to StripLines:
 
-The following code sample demonstrates how to bind the regular strip line collection to strip lines.
 
 {% highlight xaml %}
 
@@ -287,77 +292,15 @@ The following code sample demonstrates how to bind the regular strip line collec
 
 ### Output
 
-The following screenshot illustrates how to render the regular strip lines.
+The following image shows the Resultant output:
 
 
-![WPF Gantt with regular strip line](Strip-Lines_images/Strip-Lines_img1.png)
 
-Strip lines in the Gantt chart
-{:.caption}
-
-### Absolute Strip lines
-
-The following code sample demonstrates how to define a collection of absolute strip lines.
-
-{% highlight c# %}
+![](Strip-Lines_images/Strip-Lines_img1.png)
 
 
-StripCollection =  new List<StripLineInfo>();
 
-//Getting the collection of StripLineInfo
-StripCollection = GetStripCollection();
-
-//Method will return the collection StripLineInfo
-private List<StripLineInfo> GetStripCollection()
-
-{
-    List<StripLineInfo> stripCollection = new List<StripLineInfo>();
-    stripCollection.Add(new StripLineInfo()
-    {
-        Type = StriplineType.Absolute,
-        Height = 1500,
-        Width = 200,
-        Position = new System.Windows.Point(300, 5),
-        Background = new SolidColorBrush(Colors.LightGray)
-    });
-    return stripCollection;
-}
-
-
-{% endhighlight  %}
-
-The following code sample demonstrates how to bind the absolute strip line collection to strip lines.
-
-{% highlight xaml %}
-
-
-<sync:GanttControl x:Name="Gantt"
-                   Grid.Row="1"
-                   ShowStripLines="True"
-                   StripLines="{Binding StripCollection}">
-    <sync:GanttControl.TaskAttributeMapping>
-        <sync:TaskAttributeMapping TaskIdMapping="TaskId"
-                                   TaskNameMapping="TaskName"
-                                   StartDateMapping="StartDate"
-                                   FinishDateMapping="FinishDate"
-                                   ChildMapping="Child"
-                                   DurationMapping="Duration"
-                                   ProgressMapping="Progress"
-                                   PredecessorMapping="Predecessor"
-                                   ResourceInfoMapping="Resources"/>
-    </sync:GanttControl.TaskAttributeMapping>
-</sync:GanttControl>                                                
-
-{% endhighlight  %}
-
-### Output
-
-The following screenshot illustrates how to render the absolute strip lines.
-
-![WPF Gantt with absolute strip line](Strip-Lines_images/Strip-Lines_absolute.png)
-
-
-Strip lines in the Gantt chart
+Strip Lines in Gantt Chart
 {:.caption}
 
 ### Sample Link
