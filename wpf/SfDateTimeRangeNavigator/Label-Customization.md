@@ -118,12 +118,12 @@ The following screenshot illustrates only Quarter and Month intervals in the nav
 
 The interval can be set in the following types: 
 
-* Year
-* Quarter
-* Month
-* Week
-* Day
-* Hour
+* [`Year`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Quarter`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Month`(https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Week`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Day`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Hour`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 
 The auto timespan format simplifies the visual representation of data when zooming in with the following formats:
 
