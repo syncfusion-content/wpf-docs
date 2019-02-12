@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Essential XlsIO
+title: Working with Essential XlsIO | WPF | Syncfusion
 description: Explains about working with CalcWorkbook, CalcSheet
 platform: wpf
 control: Calculate
