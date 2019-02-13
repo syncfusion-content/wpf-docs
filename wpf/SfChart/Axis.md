@@ -857,7 +857,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **EdgeLabelsDrawingMode**
 
-SfChart provides support to customize the position of the edge labels in axis using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html#) property. [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html#) property default value is center.
+SfChart provides support to customize the position of the edge labels in axis using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html#) property. [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html#) property default value is [`Center`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
 
 The following are the customizing options in [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html#).
 
@@ -993,7 +993,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 **EdgeLabelsVisibilityMode**
 
-The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) property. By default the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) while zooming.
+The visibility of the extreme labels of the axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) property. By default the [`Default`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.html) option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) is set, which displays the edge label based on auto interval calculations .The following image depicts the default option in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsVisibilityMode.html#) while zooming.
 
 ![Axis edge label visibility support in WPF Chart](Axis_images/Axis_img23.jpeg)
 
@@ -2397,7 +2397,7 @@ The following properties are used for business hour range calculation
 
 * [`OpenTime`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~OpenTime.html#)- Represents the open working time of a day.
 * [`CloseTime`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~CloseTime.html#)- Represents the close working time of a day.
-* [`WorkingDays`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~WorkingDays.html#)- Represents the working days of a week.
+* [`WorkingDays`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis~WorkingDays.html#)- Represents the working [`days`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Day.html) of a week.
 
 The following code snippet demonstrates the business hours support in DateTimeAxis
 
@@ -3003,7 +3003,7 @@ The [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.S
 
 ### DateTimeRangePadding
 
-By default the date time range padding is auto.
+By default the date time range padding is [`Auto`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
 
 ![DateTimeAxis range padding support in WPF Chart](Axis_images/Axis_img61.jpeg)
 
@@ -3111,7 +3111,7 @@ The following types are available for [`NumericalAxis`](https://help.syncfusion.
 * Round
 * Auto
 
-By default, the default [`RangePadding`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html#) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html#) is Auto and for [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html#), the default value is Round.
+By default, the default [`RangePadding`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html#) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html#) is Auto and for [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html#), the default value is [`Round`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
 ![NumericalAxis range padding support in WPF Chart](Axis_images/Axis_img65.jpeg)
 

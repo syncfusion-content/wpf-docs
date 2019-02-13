@@ -175,9 +175,9 @@ chart.Series.Add(series);
 
 You can customize the empty points using [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html#) property. The following are the values of EmptyPointStyle:
 
-* Interior- Used to define the custom brush for the empty points.
-* Symbol- Used to add symbols for the empty points.
-* Symbol and Interior- This is similar to Symbol, which includes empty point brush also.
+* [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html) - Used to define the custom brush for the empty points.
+* [`Symbol`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html) - Used to add symbols for the empty points.
+* [`SymbolAndInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html) - This is similar to Symbol, which includes empty point brush also.
 
 ### Interior
 
