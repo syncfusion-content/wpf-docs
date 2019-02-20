@@ -127,7 +127,7 @@ chart.SecondaryAxis = axis;
 
 ### Scale
 
-Scale option allows you to position the breaks based on the delta of each axis range relative to the other.
+[`Scale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html) option allows you to position the breaks based on the delta of each axis range relative to the other.
 
 {% tabs %}
 
@@ -314,7 +314,7 @@ chart.SecondaryAxis = axis;
 
 The following are the customizing options for scale break.
 
-Line type, background, spacing, stroke, stroke thickness of the scale break can be customized using `LineType`, `Fill`, `BreakSpacing`, `Stroke`, `StrokeThickness` properties respectively.
+Line type such as [`Wave`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BreakLineType.html) or [`StraightLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BreakLineType.html), background, spacing, stroke, stroke thickness of the scale break can be customized using `LineType`, `Fill`, `BreakSpacing`, `Stroke`, `StrokeThickness` properties respectively.
 
 {% tabs %}
 

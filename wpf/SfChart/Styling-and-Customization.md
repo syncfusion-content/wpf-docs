@@ -55,7 +55,7 @@ chart.Palette = ChartColorPalette.Metro;
 ![Predefined palettes in WPF Chart](Styling-and-Customization_images/palette_1.png)
 
 
-The following code example defined Palette as BlueChrome.
+The following code example defined Palette as [`BlueChrome`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
 
 {% tabs %}
 
