@@ -67,7 +67,7 @@ Annotations can be positioned in plot area based on [`X1`](https://help.syncfusi
 
 **Positioning** **based** **on** **CoordinateUnit** **as** **Axis**
 
-To position based on axis you need to set the X1 and Y1, X2 and Y2 (if needed) properties based on the primary and secondary axis range values and CoordinateUnit as Axis. 
+To position based on axis you need to set the X1 and Y1, X2 and Y2 (if needed) properties based on the primary and secondary axis range values and CoordinateUnit as [`Axis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CoordinateUnit.html). 
 
 **Positioning** **based** **on** **CoordinateUnit** **as** **Pixels**
 
@@ -606,7 +606,7 @@ Text="{Binding}">
 
 **Adding** **Arrow** **to** **LineAnnotation**
 
-To display single headed arrow you can modify the line annotation by setting [`LineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html#) property to Arrow. By default the [`LineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html#) property value in none.
+To display single headed arrow you can modify the line annotation by setting [`LineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html#) property to [`Arrow`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineCap.html). By default the [`LineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html#) property value in none.
 
 ![Arrow support for line annotation in WPF Chart](Annotation_images/Annotation_img9.jpeg)
 

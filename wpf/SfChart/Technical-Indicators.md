@@ -624,7 +624,7 @@ This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.co
 
 Other than signal line, MACD is having convergence and divergence line. The brushes for these lines can be defined using [`ConvergenceLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~ConvergenceLineColor.html#) and [`DivergenceLineColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~DivergenceLineColor.html#).
 
-Also you can draw line, histogram MACD or both using the [`Type`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~Type.html#) property, which defines the type of MACD to be drawn.
+Also you can draw [`Line`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDType.html), [`Histogram`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDType.html) MACD or [`Both`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDType.html) using the [`Type`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator~Type.html#) property, which defines the type of MACD to be drawn.
 
 You can define the [`MACDTechnicalIndicator`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#) using the following code example:
 
