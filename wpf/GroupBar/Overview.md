@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview| GroupBar | Wpf | Syncfusion
+title: Overview| GroupBar | WPF | Syncfusion
 description: overview
-platform: wpf
+platform: WPF
 control: GroupBar
 documentation: ug
 ---
@@ -10,6 +10,10 @@ documentation: ug
 # GroupBar
 
 The GroupBar control implements list-type controls in the UI, similar to the Microsoft Outlook Bar. It has a container to host controls within it. Use it to host a categorized collection of command items and custom controls wired to execute custom commands. It includes several customizable features which can be easily implemented in WPF applications.
+
+## Control Structure
+
+![wpf group bar control](Getting-Started_images/Getting-Started_img1.png)
 
 ## Features
 

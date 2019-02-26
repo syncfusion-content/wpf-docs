@@ -71,9 +71,9 @@ The following topics discuss briefly about various adornment customization.
 
 ## Marker
 
-To enable the marker in adornments you have to set the [`ShowMarker`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowMarker.html#) property as True. By default, there is no symbol displayed, you have to add the desired symbol using Symbol property.
+To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowMarker.html#) property as True. By default, there is no symbol displayed, you have to add the desired symbol using Symbol property.
 
-The following code example demonstrates the column series with Diamond symbol:
+The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
 
 {% tabs %}
 
@@ -131,14 +131,14 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/marker_1.png)
+![Symbol support in WPF Chart](Adornments_images/marker_1.png)
 
 
 ### Customization
 
 SfChart provides support more customization for markers in adornments. 
 
-You can customize the marker size using [`SymbolHeight`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolHeight.html#) and [`SymbolWidth`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolWidth.html#) property. Also the marker fill color and stroke can be customized using [`SymbolInterior`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolInterior.html#) and [`SymbolStroke`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolStroke.html#).
+You can customize the marker size using [`SymbolHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolHeight.html#) and [`SymbolWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolWidth.html#) property. Also the marker fill color and stroke can be customized using [`SymbolInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolInterior.html#) and [`SymbolStroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolStroke.html#).
 
 {% tabs %}
 
@@ -210,7 +210,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/marker_2.png)
+![Symbol customization support in WPF Chart](Adornments_images/marker_2.png)
 
 
 **Custom Template**
@@ -340,12 +340,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_1.png)
+![Template support for symbol in WPF Chart](Adornments_images/label_1.png)
 
 
 ### Defining the Label Content
 
-SfChart provides the support to customize the label content using [`SegmentLabelContent`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
+SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
 
 **XValue**
 
@@ -409,7 +409,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_2.png)
+![Adornments label content customization support in WPF Chart](Adornments_images/label_2.png)
 
 
 N> For CategoryAxis, the x values will be taken as the index since it is an indexed based axis. If it is a numerical axis or date time the corresponding x value will be displayed.
@@ -476,7 +476,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_3.png)
+![Adornments label content customization support in WPF Chart](Adornments_images/label_3.png)
 
 
 **YofTot**
@@ -539,7 +539,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_4.png)
+![Adornments label content customization support in WPF Chart](Adornments_images/label_4.png)
 
 
 **DateTime**
@@ -595,10 +595,10 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_5.png)
+![Adornments label content customization support in WPF Chart](Adornments_images/label_5.png)
 
 
-N> If you are having DateTimeAxis then the corresponding date time value will be displayed. In case of category or numerical axis the value will be converted to OADate.
+N> If you are having DateTimeAxis then the corresponding date time value will be displayed as [`LabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html). In case of category or numerical axis the value will be converted to OADate.
 
 **LabelContentPath**
 
@@ -730,12 +730,12 @@ public class AdornmentLabelConverter : IValueConverter
 {% endtabs %}
 
 
-![](Adornments_images/labelcontent.png)
+![Adornments LabelContentPath support in WPF Chart](Adornments_images/labelcontent.png)
 
 
 **Label Rotation**
 
-[`LabelRotationAngle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelRotationAngle.html#) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+[`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelRotationAngle.html#) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
 
 {% tabs %}
 
@@ -768,19 +768,19 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 {% endtabs %}
 
-![](Adornments_images/label_rotation.png)
+![Adornments label rotation support in WPF Chart](Adornments_images/label_rotation.png)
 
 ### Customization
 
 The following properties are used to customize the adornment label.
 
-* [`BorderBrush`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderBrush.html#)
-* [`BorderThickness`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderThickness.html#)
-* [`Margin`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Margin.html#)
-* [`FontStyle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontStyle.html#)
-* [`FontSize`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontSize.html#)
-* [`Foreground`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Foreground.html#)
-* [`FontFamily`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontFamily.html#)
+* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderBrush.html#)
+* [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderThickness.html#)
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Margin.html#)
+* [`FontStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontStyle.html#)
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontSize.html#)
+* [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Foreground.html#)
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontFamily.html#)
 
 The following code example demonstrates the customization of label using the above properties:
 
@@ -861,12 +861,12 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/custom_label.png)
+![Adornments label content customization support in WPF Chart](Adornments_images/custom_label.png)
 
 
 ## Applying Series Brush
 
-[`UseSeriesPalette`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~UseSeriesPalette.html#) property is used to set the interior of the series to the adornment background. 
+[`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~UseSeriesPalette.html#) property is used to set the interior of the series to the adornment background. 
 
 For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior color will be reflected in adornment background.
 
@@ -907,7 +907,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/series_palette.png)
+![Series brush for adornments background support in WPF Chart](Adornments_images/series_palette.png)
 
 
 The default appearance of the label can be customized using `LabelTemplate` property as in the below code example:
@@ -1037,16 +1037,16 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_template.png)
+![LabelTemplate support for adornments in WPF Chart](Adornments_images/label_template.png)
 
 
 ## Label Format
 
-[`SegmentLabelFormat`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelFormat.html#) property allows you to provide formatting for the labels.
+[`SegmentLabelFormat`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelFormat.html#) property allows you to provide formatting for the labels.
 
 In the following image, you can see the decimal position will be rounded off to two digits by default.
 
-![](Adornments_images/label_format.png)
+![Adornments label format support in WPF Chart](Adornments_images/label_format.png)
 
 
 The following code example demonstrates the y value having three decimal digits:
@@ -1096,7 +1096,7 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 ## Adding Connector Line to Adornments
 
-You can add connector line for the adornments using [`ShowConnectorLine`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowConnectorLine.html#) property. Also this connector line can be customized using [`ConnectorHeight`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorHeight.html#), [`ConnectorLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html#) and [`ConnectorRotationAngle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorRotationAngle.html#) properties.
+You can add connector line for the adornments using [`ShowConnectorLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowConnectorLine.html#) property. Also this connector line can be customized using [`ConnectorHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorHeight.html#), [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html#) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorRotationAngle.html#) properties.
 
 The following code example shows the customization option for connector line:
 
@@ -1138,11 +1138,11 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/connectorline_1.png)
+![Connector line for adornments support in WPF Chart](Adornments_images/connectorline_1.png)
 
 ### Connector Line Style
 
-You can define the style for the connector line using [`ConnectorLineStyle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html#) properties.
+You can define the style for the connector line using [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html#) properties.
 
 {% tabs %}
 
@@ -1220,16 +1220,20 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/connectorline_2.png)
+![Connector line style support in WPF Chart](Adornments_images/connectorline_2.png)
 
 
 ### Connector Type
 
-[`ConnectorType`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~ConnectorType.html#) property in AccumulationSeries is used to determine the type of line for the connector. This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
+[`ConnectorType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~ConnectorType.html#) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
 
 **Line**
 
-![](Adornments_images/connectorline_3.png)
+![Connector type support in WPF Chart](Adornments_images/connectorline_3.png)
+
+**StraightLine**
+
+![Connector type support in WPF Chart](Adornments_images/StraightLineConnectorType.png)
 
 **Bezier**
 
@@ -1298,16 +1302,16 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/connectorline_4.png)
+![Connector type support in WPF Chart](Adornments_images/connectorline_4.png)
 
 
 ## Positioning the Adornments
 
-The positioning of adornments inside the series is defined using [`AdornmentPosition`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~AdornmentsPosition.html#) property. 
+The positioning of adornments inside the series is defined using [`AdornmentPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~AdornmentsPosition.html#) property. 
 
-* `Top`- Positions the Adornment at the top edge point of a chart segment.
-* `Bottom`- Positions the Adornment at the bottom edge point of a chart segment.
-* `TopAndBottom`- Positions the Adornment at the center point of a chart segment.
+* [`Top`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the top edge point of a chart segment.
+* [`Bottom`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the bottom edge point of a chart segment.
+* [`TopAndBottom`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the center point of a chart segment.
 
 N> This behavior varies based on the chart series type.
 
@@ -1348,9 +1352,9 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_1.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_1.png)
 
-Also you can define the label alignment using  [`HorizontalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HorizontalAlignment.html#) and [`VerticalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~VerticalAlignment.html#) properties and the following code example demonstrates the labels positioned using horizontal and vertical alignment.
+Also you can define the label alignment using  [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HorizontalAlignment.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~VerticalAlignment.html#) properties and the following code example demonstrates the labels positioned using horizontal and vertical alignment.
 
 {% tabs %}
 
@@ -1387,19 +1391,19 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_2.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_2.png)
 
 ### Advanced Positioning
 
-Other than the above positioning options, SfChart providing additional customization option to position the adornments smartly based on series types using [`LabelPosition`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelPosition.html#) property.
+Other than the above positioning options, SfChart providing additional customization option to position the adornments smartly based on series types using [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelPosition.html#) property.
 
 The following are the values for this property: 
 
-* Default
-* Auto
-* Inner
-* Outer
-* Center
+* [`Default`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Auto`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Inner`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Outer`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Center`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
 
 The following section shows few examples for this LabelPosition behavior with respect to the series.
 
@@ -1440,7 +1444,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_3.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_3.png)
 
 
 LabelPosition as Inner
@@ -1478,7 +1482,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_4.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_4.png)
 
 
 LabelPosition as Outer
@@ -1516,7 +1520,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_5.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_5.png)
 
 
 **Spline Series**
@@ -1558,7 +1562,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_6.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_6.png)
 
 LabelPosition as Inner
 
@@ -1597,7 +1601,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_7.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_7.png)
 
 
 LabelPosition as Outer
@@ -1637,7 +1641,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_8.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_8.png)
 
 LabelPosition as Center
 
@@ -1676,12 +1680,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_9.png)
+![Adornments positioning support in WPF Chart](Adornments_images/adornment_pos_9.png)
 
 
 ## Smart Labels for Accumulation Series
 
-When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EnableSmartLabels.html#) property.
+When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EnableSmartLabels.html#) property.
 
 The following code example demonstrates the EnableSmartLabels property:
 
@@ -1759,6 +1763,6 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/smartlabel.png)
+![Smart labels for adornments in WPF Chart](Adornments_images/smartlabel.png)
 
-
+N> For circular series, the adornment position can be changed to [`Inside`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html), [`Outside`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) using the [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~LabelPosition.html) property.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for SfKanban
+title: Getting Started | SfKanban | WPF| Syncfusion
 description: The following section provides an assistance to create a simple Kanban application and to configure it.
 platform: wpf
 control: SfKanban
@@ -70,15 +70,15 @@ SfKanban kanban = new SfKanban();
 
 Drag and drop the Kanban control from the toolbox to your application.
 
-![](SfKanban_images/toolbox.png)
+![Adding SfKanban from toolbox](SfKanban_images/toolbox.png)
 
 
 Now the Syncfusion.SfKanban.WPF reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![](SfKanban_images/assemblyincluded.png)
+![Adding SfKanban from toolbox](SfKanban_images/assemblyincluded.png)
 
 
-![](SfKanban_images/xamlreference.png)
+![Adding SfKanban from toolbox](SfKanban_images/xamlreference.png)
 
 
 ### Create data model
@@ -199,7 +199,7 @@ SfKanban kanban = new SfKanban()
 
 ### Defining columns
 
-By default, we need to define the columns manually by adding the KanbanColumn object to the Columns collection property in SfKanban.
+By default, we need to define the columns manually by adding the KanbanColumn object to the [`Columns`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~Columns.html) collection property in SfKanban.
 
 ItemsSource which was bound to the Kanban will be added to the respective columns using ColumnMappingPath property in SfKanban and Categories property in KanbanColumn.
 
@@ -292,10 +292,10 @@ grid.Children.Add(kanban);
 
 {% endtabs %}
 
-![](SfKanban_images/column.png)
+![Defining columns for SfKanban](SfKanban_images/column.png)
 
 
-You can also set AutoGenerateColumns property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
+You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~AutoGenerateColumns.html) property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
 
 N> When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
 

@@ -68,12 +68,12 @@ chart.Series.Add(scatterSeries);
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_1.png)
+![Trendlines in WPF Chart](Trendlines_images/trendline_1.png)
 
 
-You can get the [`Slope`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Slope.html#) and [`Intercept`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Intercept.html#) of the drawn trend line. 
+You can get the [`Slope`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Slope.html#) and [`Intercept`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Intercept.html#) of the drawn trend line. 
 
-The visibility of the trend line is defined using [`IsTrendlineVisible`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~IsTrendlineVisible.html#) property as in the following code examples.
+The visibility of the trend line is defined using [`IsTrendlineVisible`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~IsTrendlineVisible.html#) property as in the following code examples.
 
 {% tabs %}
 
@@ -133,20 +133,20 @@ chart.Series.Add(scatterSeries);
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_2.png)
+![Visibility of trendlines in WPF Chart](Trendlines_images/trendline_2.png)
 
 
-N> Here we have enabled the [`CheckBoxVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CheckBoxVisibility.html#) for the Legend. The CheckBox state indicates that trendline is not visible. You can enable trendline dynamically using this checkbox.
+N> Here we have enabled the [`CheckBoxVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CheckBoxVisibility.html#) for the Legend. The CheckBox state indicates that trendline is not visible. You can enable trendline dynamically using this checkbox.
 
 ## Types of Trendlines
 
 SfChart supports the following type of Trendlines.
 
-* Linear
-* Exponential
-* Power
-* Logarithmic
-* Polynomial
+* [`Linear`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Exponential`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Power`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Logarithmic`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Polynomial`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
 
 ### Linear
 
@@ -216,7 +216,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_3.png)
+![Linear trendline type in WPF Chart](Trendlines_images/trendline_3.png)
 
 
 ### Exponential
@@ -287,7 +287,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_4.png)
+![Exponential trendline type in WPF Chart](Trendlines_images/trendline_4.png)
 
 
 N> This is not recommended for the data values having zero and negative value.
@@ -360,7 +360,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_5.png)
+![Power trendline type in WPF Chart](Trendlines_images/trendline_5.png)
 
 ### Logarithmic
 
@@ -430,7 +430,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_6.png)
+![Logarithmic trendline type in WPF Chart](Trendlines_images/trendline_6.png)
 
 ### Polynomial
 
@@ -500,7 +500,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_7.png)
+![Polynomial trendline type in WPF Chart](Trendlines_images/trendline_7.png)
 
 #### Polynomial Order
 
@@ -568,7 +568,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_8.png)
+![Polynomial order for trendline in WPF Chart](Trendlines_images/trendline_8.png)
 
 ## Forecasting
 
@@ -645,7 +645,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_9.png)
+![Forward forecast in WPF Chart](Trendlines_images/trendline_9.png)
 
 ### Backward Forecast
 
@@ -713,12 +713,12 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_10.png)
+![Backward forecast in WPF Chart](Trendlines_images/trendline_10.png)
 
 
 ## Customization 
 
-You can customize the trendline [`Stroke`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Stroke.html#), [`StrokeThickness`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~StrokeDashArray.html#) and [`StrokeDashArray`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~StrokeThickness.html#) as in below code example.
+You can customize the trendline [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~Stroke.html#), [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~StrokeDashArray.html#) and [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrendlineBase~StrokeThickness.html#) as in below code example.
 
 {% tabs %}
 
@@ -782,6 +782,6 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![](Trendlines_images/trendline_11.png)
+![Customization of trendlines in WPF Chart](Trendlines_images/trendline_11.png)
 
 

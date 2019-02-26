@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Filtering support in SfDataGrid.
+title: Filtering | DataGrid | WPF | Syncfusion
 description: How to filter the data from UI-based or programmatically in SfDataGrid .
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
+# Filtering
+Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic filtering
   
@@ -131,11 +133,11 @@ By default, both Checkbox Filter and Advanced Filter are loaded while opening th
 
 SfDataGrid with Checkbox Filter View:
       
-![](Filtering_images/Filtering_img1.png)
+![SfDataGrid with Checkbox Filter View in WPF](Filtering_images/Filtering_img1.png)
         
 SfDataGrid with Advanced Filter View:
     
-![](Filtering_images/Filtering_img2.png)
+![SfDataGrid with Advanced Filter View in WPF](Filtering_images/Filtering_img2.png)
 
 ## Choose between built-in UI Views
 
@@ -385,7 +387,7 @@ N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img6.png)
+![Improve the performance while applying the filter in SfDataGrid WPF](Filtering_images/Filtering_img6.png)
 
 By default, [CanGenerateUniqueItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl~CanGenerateUniqueItems.html) is true. So all the unique items in the column are loaded in the AdvancedFilter ComboBox that allows you to select the value easily from the combo box and filter it.
 
@@ -404,11 +406,11 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 
 Checkbox Filter with AllowBlankFilters as True
 
-![](Filtering_images/Filtering_img7.png)
+![Filter the NULL values by using the CheckBox Filter view in SfDataGrid WPF](Filtering_images/Filtering_img7.png)
 
 Advanced Filter with AllowBlankFilters as True
 
-![](Filtering_images/Filtering_img8.png)
+![Filter the NULL values by using the Advanced Filter view in SfDataGrid WPF](Filtering_images/Filtering_img8.png)
 
 ## Instant Filtering
 
@@ -427,11 +429,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 Checkbox Filter with ImmediateUpdateColumnFilter is True
 
-![](Filtering_images/Filtering_img9.png)
+![Apply the immediate filter in CheckBox Filter view](Filtering_images/Filtering_img9.png)
 
 Advanced Filter with ImmediateUpdateColumnFilter is True
 
-![](Filtering_images/Filtering_img10.png)
+![Apply the immediate filter in Advanced Filter view](Filtering_images/Filtering_img10.png)
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ImmediateUpdateColumnFilter.html) is true.
 
@@ -450,19 +452,19 @@ dataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
 
 Consider in the following dataGrid, first and second records have same display value for OrderDate column but both have different actual value (E.g. 2/10/2010 12:00:00 AM and 2/10/2010 6:30:00 PM).
 
-![](Filtering_images/Filtering_img11.png)
+![Apply the filter based on the underlying value in SfDataGrid WPF](Filtering_images/Filtering_img11.png)
 
 By default, based on the actual value only filter will be applied. So it will consider both values as different. And while opening filter popup, both values will be displayed like below.
 
-![](Filtering_images/Filtering_img12.png)
+![Apply the filter based on the display text in SfDataGrid WPF](Filtering_images/Filtering_img12.png)
 
 If you set [ColumnFilter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnFilter.html) as DisplayText, display value only will be considered for filtering. So filter popup will be shown like below.
 
-![](Filtering_images/Filtering_img13.png)
+![Apply the filter based on the actual value in SfDataGrid WPF](Filtering_images/Filtering_img13.png)
 
 After filtering, both records having the same OrderDate display value will be displayed in view.
 
-![](Filtering_images/Filtering_img14.png)
+![Filter the same values records in SfDataGrid WPF](Filtering_images/Filtering_img14.png)
 
 ## Events
 
@@ -615,7 +617,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img16.png)
+![Apply the column filter for image in wpf datagrid](Filtering_images/Filtering_img16.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBoxFilterControlImage1515534249.zip).
 
@@ -732,7 +734,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](http://help.sync
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img15.png)
+![Hide the SortOptions from Filter popup in SfDataGrid WPF](Filtering_images/Filtering_img15.png)
 
 ### Customizing Sort Options text
 
@@ -770,7 +772,7 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img17.png)
+![Customize the FilterPopup in SfDataGrid WPF](Filtering_images/Filtering_img17.png)
 
 ### Changing filter icon style after applying filters
 

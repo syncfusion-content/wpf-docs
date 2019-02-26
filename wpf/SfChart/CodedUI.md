@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Coded UI support for SfChart.
+title: Coded UI support for Syncfusion WPF Chart.
 description: Coded UI support for SfChart.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-#Coded UI Test
+# Coded UI Test
 
 Automated tests that drive your application through its user interface (UI) are known as **coded** **UI** **tests** (CUITs). These tests include functional testing of the UI controls. SfChart supports Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
 
-##Levels
+## Levels
 
 <table>
 <tr>
@@ -32,7 +32,7 @@ Level 3<br/><br/></td><td>
 CUIT generates code from recorded session. Create specialized class to access Custom Properties so the generate code is simplified.<br/><br/></td></tr>
 </table>
 
-##Requirements
+## Requirements
 
 Coded UI provides support only in,
 
@@ -42,9 +42,9 @@ Coded UI provides support only in,
 
 For more info about the platforms and configurations refer [here](https://msdn.microsoft.com/en-us/library/dd380742)
 
-##Configuration
+## Configuration
 
-To test SfChart with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project  of SfChart from [`here`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
+To test SfChart with CUITs, build the Extension Project and place it in the mentioned location. You can get the Extension Project  of SfChart from [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1453395823.zip).
 
 1. Open the extension project and build it.
 
@@ -62,34 +62,34 @@ For Visual Studio 2013: C:\Program Files (x86)\Common Files\Microsoft Shared\VST
 
 N> Syncfusion.SfChart.CUITExtension.WPF.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
 
-##Getting Started
+## Getting Started
 
 
-###Coded UI Project Creation
+### Coded UI Project Creation
 
 Run Visual Studio in administrator mode
 
 Create a new Coded UI Test Project as shown in the following screenshot.
 
-![](CodedUI_images/CodedUI_img1.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img1.jpeg)
 
 
 After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
 
-![](CodedUI_images/CodedUI_img2.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img2.jpeg)
 
 
 Now Coded UI project Visual Studio gets minimized and CodedUITestBuilder appears in the bottom right corner of your window. You can record the actions by clicking Start Recording in CodedUITestBuilder.
 
-![](CodedUI_images/CodedUI_img3.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img3.jpeg)
 
 
 You can also open the CodedUITestBuilder from existing Coded UI project by right clicking on the CodedUITestMethod1 in CUIT file and clicking the Generate Code for Coded UI Test.
 
-![](CodedUI_images/CodedUI_img4.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img4.jpeg)
 
 
-###Record  and Generate code
+### Record  and Generate code
 
 If you create a Coded UI Test project, UIMap – CodedUITestBuilder shown at bottom right corner.
 
@@ -97,12 +97,12 @@ Now you can record and perform actions in your application.
 
 CodedUITestBuilder identify each actions and gives a tooltip message like below,
 
-![](CodedUI_images/CodedUI_img5.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img5.jpeg)
 
 
 If you recorded by mistake, you can choose recorded steps to delete.
 
-![](CodedUI_images/CodedUI_img6.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img6.jpeg)
 
 Once the record is completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method. Then close the CodedUITestBuilder and you can see the generated code action as follows.
 
@@ -142,24 +142,24 @@ Once the record is completed, click the GenerateCode icon in CodedUITestBuilder 
 {% endhighlight %}
 
 
-###Add Assertion
+### Add Assertion
 
 You can also create an assertion to check the modified chart/series properties value. Drag the crosshair to the chart series, and the Assertion window appears. 
 
-![](CodedUI_images/CodedUI_img7.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img7.jpeg)
 
 The series properties for control is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
 
-![](CodedUI_images/CodedUI_img8.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img8.jpeg)
 
 Validate assertion property by using comparators. Also we can add assertion failure message. 
 
-![](CodedUI_images/CodedUI_img9.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img9.jpeg)
 
 
 Another way for adding assertion by click the cross hair icon in CodedUITestBuilder, here list out all identified controls and select the control we want to validate.
 
-![](CodedUI_images/CodedUI_img10.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img10.jpeg)
 
 
 Click Generate code icon to generate assertion code then close the builder if validation is finish.
@@ -184,19 +184,19 @@ public void AssertMethod1()
 
 {% endhighlight %}
 
-##Run Tests
+## Run Tests
 
 After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows. 
 
-![](CodedUI_images/CodedUI_img11.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img11.jpeg)
 
 
 Open the test explorer and check test was passed or failed.
 
-![](CodedUI_images/CodedUI_img12.jpeg)
+![Coded UI support in WPF SfChart](CodedUI_images/CodedUI_img12.jpeg)
 
 
-##Tables of Properties
+## Tables of Properties
 
 The following properties are for each of the UI elements in SfChart,
 

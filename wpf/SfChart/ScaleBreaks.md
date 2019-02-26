@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale Breaks
+title: Syncfusion Scale Breaks
 description: Scale Breaks support for SfChart
 platform: wpf
 control: SfChart
@@ -16,7 +16,7 @@ SfChart provides `Start` and `End` properties for defining the scale break range
 
 The following image has data points with both greater and smaller magnitude, but the segments with smaller values is not visualized properly.
 
-![](ScaleBreak_images/ScaleBreak_img1.jpeg)
+![Positioning the scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img1.jpeg)
 
 
 Applying scale breaks helps in proper visualization of all the data points.
@@ -61,7 +61,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img2.jpeg)
+![Positioning the scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img2.jpeg)
 
 
 ## Break Position Customization
@@ -70,7 +70,7 @@ For the defined break range, its position in the chart area can be customized us
 
 Break position is determined based on the following factors:
 
-###Data Count
+### Data Count
 
 Based on the number of data points that fall in axis ranges (other than break range) scale break will be positioned.
 
@@ -122,12 +122,12 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img3.jpeg)
+![Positioning the scale break based on the data count in WPF Chart](ScaleBreak_images/ScaleBreak_img3.jpeg)
 
 
-###Scale
+### Scale
 
-Scale option allows you to position the breaks based on the delta of each axis range relative to the other.
+[`Scale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html) option allows you to position the breaks based on the delta of each axis range relative to the other.
 
 {% tabs %}
 
@@ -171,10 +171,10 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img4.jpeg)
+![Positioning the scale break based on the scale in WPF Chart](ScaleBreak_images/ScaleBreak_img4.jpeg)
 
 
-###Percent
+### Percent
 
 Percent option allows to position the breaks at the specified percentage of the axis available height.
 
@@ -244,7 +244,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img5.jpeg)
+![Positioning the scale break based on percent in WPF Chart](ScaleBreak_images/ScaleBreak_img5.jpeg)
 
 
 ## Multiple Breaks
@@ -307,14 +307,14 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img6.jpeg)
+![Multiple scale breaks support in WPF Chart](ScaleBreak_images/ScaleBreak_img6.jpeg)
 
 
 ## Customization
 
 The following are the customizing options for scale break.
 
-Line type, background, spacing, stroke, stroke thickness of the scale break can be customized using `LineType`, `Fill`, `BreakSpacing`, `Stroke`, `StrokeThickness` properties respectively.
+Line type such as [`Wave`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BreakLineType.html) or [`StraightLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BreakLineType.html), background, spacing, stroke, stroke thickness of the scale break can be customized using `LineType`, `Fill`, `BreakSpacing`, `Stroke`, `StrokeThickness` properties respectively.
 
 {% tabs %}
 
@@ -372,6 +372,6 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](ScaleBreak_images/ScaleBreak_img7.jpeg)
+![Customization of scale breaks in WPF Chart](ScaleBreak_images/ScaleBreak_img7.jpeg)
 
 

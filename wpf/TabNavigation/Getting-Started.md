@@ -1,160 +1,206 @@
 ---
 layout: post
 title: Getting Started | TabNavigation | wpf | Syncfusion
-description: getting started
-platform: wpf
+description: This section describes how to add the tab navigation control into application.
 control: TabNavigation
 documentation: ug
 ---
 
 # Getting Started
 
-## Appearance and structure of the control
+## Assembly deployment
 
-![](Getting-Started_images/Getting-Started_img1.png)
+Refer [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#tabnavigation) section to get the list of assemblies or NuGet package needs to be added as reference to use the control in WPF application.
 
-N> Support for Skins is provided only in Silverlight and not in WPF.
+## Creating simple application with TabNavigation
 
-## Adding Tab Navigation Control to an application 
+You can create the WPF application with TabNavigation control as follows:
 
-To add Tab navigation control to a Visual Studio.NET project:
+1. [Creating project](#creating-the-project)
+2. [Adding control via Designer](#adding-control-via-designer)
+3. [Adding control manually in XAML](#adding-control-manually-in-xaml)
+4. [Adding control manually in C#](#adding-control-manually-in-c)
 
-1. Open a VS2010 project. The Syncfusion controls are listed in the toolbox.
+###  Creating the project
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+Create a new WPF project in the Visual Studio to display the TabNavigation with functionalities.
 
-2. Click and drag the Tab Navigation control from the toolbox and drop it in the designer.
+### Adding control via Designer
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+The TabNavigation control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The required assembly references will be added automatically.
 
-3. Syncfusion.Tools.WPF and Syncfusion.Shared.WPF assemblies will be added automatically to the application reference.
+![wpf tab navigation control structure](Getting-Started_images/wpf-tabnavigation-control-added-by-designer.png)
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+### Adding control manually in XAML
 
-4. Press F4 or open the properties window to customize the control by setting the required properties.
+In order to add control manually in XAML, do the below steps,
 
-   ![](Getting-Started_images/Getting-Started_img5.png)
+1. Add the below required assembly references to the project,
+	* Syncfusion.Tools.WPF 
+	* Syncfusion.Shared.WPF 
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+3. Declare TabNavigation control in XAML page.
 
-5. Add Items to the control manually or through Items Source property.
+{% tabs %}
+{% highlight XAML %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!-- TabNavigation Control -->
+        <syncfusion:TabNavigationControl x:Name="tabNavigation"/>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
 
-6. Press F5 to run the application.
+### Adding control manually in C\#
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+In order to add control manually in C#, do the below steps,
 
-To enable transition effects, items should be added to the control. The following sections explain the methods through which you can add items.
+1. Add the below required assembly references to the project,
+	* Syncfusion.Tools.WPF 
+	* Syncfusion.Shared.WPF 
+2. Import TabNavigationControl namespace **using Syncfusion.Windows.Tools.Controls;**.
+3. Create TabNavigationControl instance and add it to the window.
 
-## Properties, methods, and events tables 
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Tools.Controls;
+namespace TabNavigationSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+			//For adding TabNavigation Control
+			TabNavigationControl tabNavigation = new TabNavigationControl();
+			grid.Children.Add(tabNavigation);
+        }       
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
-### Properties
+### Adding Items using TabNavigationItem
 
-#### Tab Navigation control
+You can populate the TabNavigation control by adding objects directly to the [Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?view=netframework-4.7.2) collection. Items added to the TabNavigation are wrapped in [TabNavigationItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabNavigationItem.html) containers.
 
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th><th>
-Type Of Property</th><th>
-Acceptable Value</th></tr>
-<tr>
-<td>
-HeaderVisibility</td><td>
-Gets or sets a value, which represents the visibility of the Header.</td><td>
-Visibility</td><td>
-Visible/Collapsed</td></tr>
-<tr>
-<td>
-NavigationButtonVisibility</td><td>
-Gets or sets a value, which represents the visibility of the Navigation Buttons.</td><td>
-Visibility</td><td>
-Visible/Collapsed</td></tr>
-<tr>
-<td>
-TabStripButtonVisibility</td><td>
-Gets or sets a value, which represents the visibility of the Tab Strip Buttons.</td><td>
-Visibility</td><td>
-Visible/Collapsed</td></tr>
-<tr>
-<td>
-TransitionEffect</td><td>
-Gets or sets a value indicating the Transition effect of the control.</td><td>
-TransitionEffects (Enum)</td><td>
-<ul>
-<li>Slide</li>
-<li>Blur</li>
-<li>Fade</li>
-<li>Wipe</li>
-<li>Push</li>
-<li>PushIn</li>
-<li>Zoom</li>
-</ul>
-</td></tr>
-</table>
+{% tabs %}
+{% highlight XAML %}
+<!-- TabNavigationControl -->
+<syncfusion:TabNavigationControl x:Name="tabNavigation">
+    <!-- TabNavigationItem 1 -->
+	<syncfusion:TabNavigationItem Header="1">
+		<syncfusion:TabNavigationItem.Content>
+			<Grid>
+				<TextBlock Text="Item 1"/>
+			</Grid>
+		</syncfusion:TabNavigationItem.Content>
+	</syncfusion:TabNavigationItem>
+    <!-- TabNavigationItem 2 -->
+	<syncfusion:TabNavigationItem Header="2">
+		<syncfusion:TabNavigationItem.Content>
+			<Grid>
+				<TextBlock Text="Item 2"/>
+			</Grid>
+		</syncfusion:TabNavigationItem.Content>
+	</syncfusion:TabNavigationItem>
+	<!-- TabNavigationItem 3 -->
+	<syncfusion:TabNavigationItem Header="3">
+	    <syncfusion:TabNavigationItem.Content>
+			<Grid>
+				<TextBlock Text="Item 3"/>
+			</Grid>
+		</syncfusion:TabNavigationItem.Content>
+	</syncfusion:TabNavigationItem>
+	<!-- TabNavigationItem 4 -->
+	<syncfusion:TabNavigationItem Header="4">
+		<syncfusion:TabNavigationItem.Content>
+			<Grid>
+				<TextBlock Text="Item 4"/>
+			</Grid>
+		</syncfusion:TabNavigationItem.Content>
+	</syncfusion:TabNavigationItem>
+</syncfusion:TabNavigationControl>
+{% endhighlight %}
+{% highlight C# %}
+TabNavigationControl tabNavigation = new TabNavigationControl();
+//TabNavigationItem
+TabNavigationItem item1 = new TabNavigationItem();
+item1.Header = "1";
+item1.Content = "Item 1";
 
-#### Tab Navigation item
+TabNavigationItem item2 = new TabNavigationItem();
+item2.Header = "2";
+item2.Content = "Item 2";
 
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th><th>
-Type Of Property</th><th>
-Acceptable Value</th></tr>
-<tr>
-<td>
-Header</td><td>
-Gets or sets a value, which represents the header of Tab Navigation Item.</td><td>
-Object</td><td>
--</td></tr>
-<tr>
-<td>
-Content</td><td>
-Gets or sets a value, which represents the content of the Tab Navigation Item.</td><td>
-Object</td><td>
--</td></tr>
-</table>
+TabNavigationItem item3 = new TabNavigationItem();
+item3.Header = "3";
+item3.Content = "Item 3";
 
+TabNavigationItem item4 = new TabNavigationItem();
+item4.Header = "4";
+item4.Content = "Item 4";
 
-### Events
+//Adding items to TabNavigationControl
+tabNavigation.Items.Add(item1);
+tabNavigation.Items.Add(item2);
+tabNavigation.Items.Add(item3);
+tabNavigation.Items.Add(item4);
+{% endhighlight %}
+{% endtabs %}
 
+![wpf tabnavigation control supports data binding](Getting-Started_images/wpf-tabnavigation-items-added.png)
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Description</th></tr>
-<tr>
-<td>
-SelectionChanging</td><td>
-Occurs whenever the selected item is changing</td></tr>
-<tr>
-<td>
-SelectionChanged</td><td>
-Occurs whenever the selected item is changed</td></tr>
-</table>
+### Binding ItemsSource
 
+TabNavigationControl supports binding data to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source. Refer [Data binding](https://help.syncfusion.com/wpf/tabnavigation/data-binding) section for more details.
 
-#### Samples link
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}"/>
+{% endhighlight %}
+{% endtabs %}
 
-To view samples:
+{% tabs %}
+{% highlight C# %}
+namespace TabNavigationSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    { 
+		TabNavigationItem temp;
+        public MainWindow()
+        {
+            InitializeComponent();
+			MyCollection = new ObservableCollection<TabNavigationItem>();
+			for (int i = 0; i < 10; i++)
+			{
+				temp = new TabNavigationItem();
+				temp.Header = i;
+				temp.Content= "Item " + i.ToString();
+				MyCollection.Add(temp);
+			}
+			this.DataContext = this;
+		}
+		public ObservableCollection<TabNavigationItem> MyCollection 
+		{
+			get { return (ObservableCollection<TabNavigationItem>)GetValue(MyCollectionProperty); }
+			set { SetValue(MyCollectionProperty, value); }
+	    }
+		// Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
+		public static readonly DependencyProperty MyCollectionProperty = DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainWindow), new PropertyMetadata(null));
+	}
+}
+{% endhighlight %}
+{% endtabs %}
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard.
-2. The Essential Studio Enterprise Edition window is displayed. 
-     
-   ![](Getting-Started_images/Getting-Started_img7.png)
-
-The User Interface edition panel is displayed by default. 
-
-1. Select WPF from the samples listed. The following options will be displayed. You can view the samples in the following three ways:
-   1. Run Locally Installed Samples-View the locally installed Tools samples for  WPF using the sample browser
-   2. Run Online Samples-View the online samples for  WPF
-   3. Run Online XBAP Samples – View the online XBAP samples  for WPF
-   4. Explore Samples-Locate the  WPF samples on the disk
-
-   ![](Getting-Started_images/Getting-Started_img8.png)
-
-2. Click Run Locally Installed Samples. The WPF Sample Browser displays.
-
-   ![](Getting-Started_images/Getting-Started_img9.png)
-
-3. On the left pane, go to Tab Navigation ->Tab Navigation Demo.

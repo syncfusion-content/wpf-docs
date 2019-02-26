@@ -25,7 +25,7 @@ The following APIs are common for the most of the series types:
 
 ### Column
 
-Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries.html#).
+Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries.html#).
 
 {% tabs %}
 
@@ -58,11 +58,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/column.png)
+![Column chart type in WPF](Series_images/column.png)
 
 ### Bar
 
-Bar series are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BarSeries.html#).
+Bar series are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BarSeries.html#).
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ BarSeries series = new BarSeries()
 
 {% endtabs %}
 
-![](Series_images/bar.png)
+![Bar chart type in WPF](Series_images/bar.png)
 
 **Spacing**
 
@@ -117,11 +117,11 @@ ChartSeriesBase.SetSpacing(series, 0.8);
 
 {% endtabs %}
 
-![](Series_images/spacing.png)
+![Column Spacing support in WPF](Series_images/spacing.png)
 
 **SegmentSpacing**
 
-[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacingProperty.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacingProperty.html) property in series,
+[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property in series,
 
 {% tabs %}
 
@@ -165,13 +165,13 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Series_images/SegmentSpacing.png)
+![Column SegmentSpacing support in WPF](Series_images/SegmentSpacing.png)
 
 ## Line and Spline Charts
 
 ### Line
 
-Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries.html#) using given data
+Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries.html#) using given data
 
 {% tabs %}
 
@@ -227,12 +227,12 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Series_images/line.png)
+![Line chart type in WPF](Series_images/line.png)
 
 
 ### Spline
 
-[`SplineSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries.html#) resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
+[`SplineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries.html#) resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
 
 {% tabs %}
 
@@ -288,16 +288,16 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Series_images/spline.png)
+![Spline chart type in WPF](Series_images/spline.png)
 
 
 ## Bubble and Scatter 
 
 ### Bubble
 
-[`BubbleSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries.html#) is represented by closely packed circles, whose areas are proportional to the quantities. 
+[`BubbleSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries.html#) is represented by closely packed circles, whose areas are proportional to the quantities. 
 
-The size of the bubble series is relative proportional to the value bind with the series using [`Size`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~Size.html#)  property. You can set the constraints on this size using [`MinimumRadius`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~MaximumRadius.html#) and [`MaximumRadius`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~MaximumRadius.html#).
+The size of the bubble series is relative proportional to the value bind with the series using [`Size`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~Size.html#)  property. You can set the constraints on this size using [`MinimumRadius`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~MaximumRadius.html#) and [`MaximumRadius`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~MaximumRadius.html#).
 
 {% tabs %}
 
@@ -338,7 +338,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/bubble.png)
+![Bubble chart type in WPF](Series_images/bubble.png)
 
 **ShowZeroBubbles**
 
@@ -365,7 +365,7 @@ series.ShowZeroBubbles = true;
 
 {% endtabs %}
 
-![](Series_images/showBubble_true.png)
+![ShowZeroBubbles support in WPF](Series_images/showBubble_true.png)
 
 The following code example and screenshots describes when [`ShowZeroBubbles`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BubbleSeries~ShowZeroBubblesProperty.html) value is false.
 
@@ -389,11 +389,11 @@ series.ShowZeroBubbles = false;
 
 {% endtabs %}
 
-![](Series_images/showBubble_false.png)
+![ShowZeroBubbles support in WPF Chart](Series_images/showBubble_false.png)
 
 ### Scatter
 
-[`ScatterSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries.html#) is similar to bubble series when each point being represented by an ellipse with equal size. This size can be defined by using [`ScatterHeight`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html#) and [`ScatterWidth`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html#) properties.
+[`ScatterSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries.html#) is similar to bubble series when each point being represented by an ellipse with equal size. This size can be defined by using [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html#) and [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html#) properties.
 
 {% tabs %}
 
@@ -432,13 +432,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/scatter.png)
+![Scatter chart type in WPF](Series_images/scatter.png)
 
 ## Area Charts
 
 ### Area
 
-[`AreaSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AreaSeries.html#) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
+[`AreaSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AreaSeries.html#) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
 
 The following code example initializes the AreaSeries:
 
@@ -473,11 +473,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/area.png)
+![Area chart type in WPF](Series_images/area.png)
 
 ### Spline Area
 
-[`SplineAreaSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html#) connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
+[`SplineAreaSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html#) connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
 
 {% tabs %}
 
@@ -512,7 +512,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/splinearea.png)
+![SplineArea chart type in WPF](Series_images/splinearea.png)
 
 **SplineType**
 
@@ -525,7 +525,7 @@ chart.Series.Add(series);
 
 **Cardinal**
 
-The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineTypeProperty.html) value as Cardinal.
+The following code illustrates how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
 
@@ -547,7 +547,7 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![](Series_images/cardinal.png)
+![Cardinal spline support in WPF Chart](Series_images/cardinal.png)
 
 **Monotonic**
 
@@ -573,7 +573,7 @@ series.SplineType = SplineType.Monotonic;
 
 {% endtabs %}
 
-![](Series_images/monotonic.png)
+![Monotonic spline support in WPF Chart](Series_images/monotonic.png)
 
 **Clamped**
 
@@ -599,12 +599,12 @@ series.SplineType = SplineType.Clamped;
 
 {% endtabs %}
 
-![](Series_images/clamped.png)
+![Clamped spline support in WPF Chart](Series_images/clamped.png)
 
 
 ### Step Area
 
-[`StepAreaSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StepAreaSeries.html#) is similar to AreaSeries but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this ChartSeries uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
+[`StepAreaSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StepAreaSeries.html#) is similar to AreaSeries but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this ChartSeries uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
 
 {% tabs %}
 
@@ -639,11 +639,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/steparea.png)
+![StepArea chart type in WPF](Series_images/steparea.png)
 
 ### Closed Area
 
-If you wish to draw the open area series (Area with stroke only at top), SfChart provides [`IsClosed`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AreaSeries~IsClosed.html#) property. By default, this property is true.
+If you wish to draw the open area series (Area with stroke only at top), SfChart provides [`IsClosed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AreaSeries~IsClosed.html#) property. By default, this property is true.
 
 {% tabs %}
 
@@ -680,7 +680,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/closedarea.png)
+![Closed area chart type in WPF](Series_images/closedarea.png)
 
 ### Step Line
 
@@ -716,14 +716,14 @@ SteplineChart.Series.Add(stepLine);
 
 {% endtabs %}
 
-![](Series_images/stepLine.png)
+![StepLine Chart type in WPF](Series_images/stepLine.png)
 
 
 ## Pie and Doughnut Charts
 
 ### Pie
 
-[`PieSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries.html#) is divided into sectors, illustrating numerical proportion. The following code example illustrates the PieSeries.
+[`PieSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries.html#) is divided into sectors, illustrating numerical proportion. The following code example illustrates the PieSeries.
 
 {% tabs %}
 
@@ -756,9 +756,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pie.png)
+![Pie chart type in WPF](Series_images/pie.png)
 
-The rendering size of the PieSeries can be controlled using [`PieCoefficient`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html#) property as in below code example.
+The rendering size of the PieSeries can be controlled using [`PieCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html#) property as in below code example.
 
 {% tabs %}
 
@@ -795,11 +795,148 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pie_1.png)
+![PieCoefficient support in WPF Chart](Series_images/pie_1.png)
+
+### Group small data points into “others”
+The small segments in the pie chart can be grouped into the “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) and [`GroupMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieGroupMode.html), actual data point [`Value`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieGroupMode.html), or [`Percentage`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieGroupMode.html), and the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupTo.html) property is [`double.NAN`], and the default value of the [`GroupMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~GroupMode.html) property is Value.
+
+**Pie series without grouping**
+
+![Pie series without grouping feature](Series_images/NonGroupingPie.png)
+
+**Pie series with grouping (Mode - Value)**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+            <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"
+				   GroupMode="Value" GroupTo="1000" >
+
+                <chart:PieSeries.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                              ConnectorHeight="80" 
+                                              ShowLabel="True" 
+                                              LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                              SegmentLabelContent="LabelContentPath">
+                    </chart:ChartAdornmentInfo>
+                </chart:PieSeries.AdornmentsInfo>
+            </chart:PieSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            pieSeries.GroupMode = PieGroupMode.Value;
+            pieSeries.GroupTo = 1000;
+
+            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+            {
+                ShowConnectorLine = true,
+                ShowLabel = true,
+                ConnectorHeight = 80,
+                LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+                SegmentLabelContent = LabelContent.LabelContentPath,
+            };
+
+            pieSeries.AdornmentsInfo = adornmentInfo;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pie series with grouping feature in value mode](Series_images/GroupingPie.png)
+
+**Pie series with grouping (Mode - Angle)**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count" 
+                 GroupMode="Angle" GroupTo="30">
+                 
+    <chart:PieSeries.AdornmentsInfo>
+        <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                  ConnectorHeight="80" 
+                                  ShowLabel="True" 
+                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                  SegmentLabelContent="LabelContentPath">
+        </chart:ChartAdornmentInfo>
+    </chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+pieSeries.GroupMode = PieGroupMode.Angle;
+pieSeries.GroupTo = 30;
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowConnectorLine = true,
+        ShowLabel = true,
+        ConnectorHeight = 80,
+        LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+        SegmentLabelContent = LabelContent.LabelContentPath,
+    };
+
+pieSeries.AdornmentsInfo = adornmentInfo;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pie series with grouping feature in angle mode](Series_images/GroupingPie.png)
+
+**Pie series with grouping (Mode - Percentage)**
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Country" YBindingPath="Count"                
+                 GroupMode="Percentage" GroupTo="10" >
+
+    <chart:PieSeries.AdornmentsInfo>
+        <chart:ChartAdornmentInfo ShowConnectorLine="True" 
+                                  ConnectorHeight="80" 
+                                  ShowLabel="True" 
+                                  LabelTemplate="{StaticResource DataLabelTemplate}"  
+                                  SegmentLabelContent="LabelContentPath">
+        </chart:ChartAdornmentInfo>
+    </chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+pieSeries.GroupMode = PieGroupMode.Percentage;
+pieSeries.GroupTo = 10;
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowConnectorLine = true,
+        ShowLabel = true,
+        ConnectorHeight = 80,
+        LabelTemplate = this.RootGrid.Resources["DataLabelTemplate"] as DataTemplate,
+        SegmentLabelContent = LabelContent.LabelContentPath,
+    };
+
+pieSeries.AdornmentsInfo = adornmentInfo;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pie series with grouping feature in percentage mode](Series_images/GroupingPie.png)
 
 ### Doughnut
 
-[`DoughnutSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#) is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
+[`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#) is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
 
 The DoughnutSeries can be added to chart as in below code example:
 
@@ -833,9 +970,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/doughnut.png)
+![Doughnut chart type in WPF](Series_images/doughnut.png)
 
-The Doughnut also having coefficient property, [`DoughnutCoefficient`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutCoefficient.html#) which defines the inner circle. Also it has [`DoughnutSize`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutSize.html#), used to define the size for this series like [`PieCoefficient`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html#) in PieSeries.
+The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutCoefficient.html#) which defines the inner circle. Also it has [`DoughnutSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutSize.html#), used to define the size for this series like [`PieCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html#) in PieSeries.
 
 {% tabs %}
 
@@ -869,7 +1006,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/doughnut_1.png)
+![DoughnutCoefficient support in WPF Chart](Series_images/doughnut_1.png)
 
 **DoughnutSize**
 
@@ -908,7 +1045,7 @@ chart.Series.Add(doughnut1);
 
 {% endtabs %}
 
-![](Series_images/HoleSize.png)
+![DoughnutSize support in WPF Chart](Series_images/HoleSize.png)
 
 **DoughnutHoleSize**
 
@@ -934,12 +1071,12 @@ DoughnutSeries.SetDoughnutHoleSize(chart, 0.2);
 
 {% endtabs %}
 
-![](Series_images/doughnutHole.png)
+![DoughnutHoleSize support in WPF Chart](Series_images/doughnutHole.png)
 
 
 ### Semi Pie and Doughnut
 
-By using custom [`StartAngle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~StartAngle.html#) and [`EndAngle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EndAngle.html#) properties, you can draw pie series in different shapes such as semicircular or quarter circular series.
+By using custom [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~StartAngle.html#) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EndAngle.html#) properties, you can draw pie series in different shapes such as semicircular or quarter circular series.
 
 {% tabs %}
 
@@ -978,7 +1115,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/semipie.png)
+![Semi pie support in WPF Chart](Series_images/semipie.png)
 
 {% tabs %}
 
@@ -1017,7 +1154,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/semidoughnut.png)
+![Semi doughnut support in WPF Chart](Series_images/semidoughnut.png)
 
 ### Explode Segments
 
@@ -1069,7 +1206,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/exploderadius.png)
+![Exploding a segment of accumlation series in WPF Chart](Series_images/exploderadius.png)
 
 N> We have defined ExplodeRadius as 30, by default its value is zero. So you need to define explode, when you set ExplodeIndex or ExplodeAll.
 
@@ -1114,9 +1251,105 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/explodeall.png)
+![Exploding all the segments of accumlation series in WPF Chart](Series_images/explodeall.png)
 
-## Funnel and Pyramid Charts
+### Stacked doughnut
+
+Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~IsStackedDoughnut.html) property. The following properties are used to customize the stacked doughnut chart:
+
+•	[`CapStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CapStyle.html) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
+•	[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
+•	[`MaximumValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
+•	[`TrackColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackColor.html) - Changes the color of the track area.
+•	[`TrackBorderColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
+•	[`TrackBorderWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart>
+    …
+    <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
+                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+                          MaximumValue="100">
+    </chart:DoughnutSeries>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+    XBindingPath = "Category",
+    YBindingPath = "Expenditure",
+    ItemsSource = new ViewModel().ExpenditureData,
+    IsStackedDoughnut = true,
+    CapStyle = DoughnutCapStyle.BothCurve,
+    SegmentSpacing = 0.2,
+    MaximumValue = 100
+};
+
+chart.Series.Add(doughnutSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Stacked doughnut chart in WPF](Series_images/StackedDoughnut.png)
+
+### Add content to the center of doughnut chart
+You can add any content to the center of the doughnut chart using the [`CenterView`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) property of [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html). The binding context of the [`CenterView`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) will be the respective [`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart>
+    …
+    <chart:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
+                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+                          MaximumValue="100">
+
+        <chart:DoughnutSeries.CenterView>
+            <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <Image Source="/Image/Person.png" Width="164" Height="164"/>
+            </ContentControl>
+        </chart:DoughnutSeries.CenterView>
+								  
+    </chart:DoughnutSeries>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ContentControl centerView = new ContentControl()
+{
+    Content = new Image()
+    {
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center,
+        Source = new BitmapImage(new Uri("Image/Person.png", UriKind.Relative)),
+        Width = 164,
+        Height = 164
+    }
+};
+
+doughnutSeries.CenterView = centerView;
+
+{% endhighlight %}
+
+{% endtabs %}	
+
+![Stacked doughnut chart with center view](Series_images/StackedDoughnutCenterView.png)
+
+## Funnel and pyramid Charts
 
 ### Pyramid
 
@@ -1153,10 +1386,10 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pyramid.png)
+![Pyramid chart type in WPF](Series_images/pyramid.png)
 
 
-The [`PyramidMode`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PyramidSeries~PyramidMode.html#) is used to define the rendering mode of the pyramid segments.
+The [`PyramidMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PyramidSeries~PyramidMode.html#) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) pyramid segments.
 
 **PyramidMode** **as** **Surface**
 
@@ -1195,7 +1428,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pyramidsurface.png)
+![Pyramid modes in WPF Chart](Series_images/pyramidsurface.png)
 
 
 **PyramidMode** **as** **Linear**
@@ -1235,7 +1468,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/pyramidlinear.png)
+![Pyramid modes in WPF Chart](Series_images/pyramidlinear.png)
 
 ### Funnel
 
@@ -1272,12 +1505,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/funnel.png)
+![Funnel chart type in WPF](Series_images/funnel.png)
 
 
 ### Funnel Mode
 
-The FunnelMode defines a rendering mode for the funnel series which define, where to bind your values (to height or width).
+The FunnelMode defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [`ValueIsHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) and [`ValueIsWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) funnel mode:
 
 **ValueIsHeight**
 
@@ -1314,7 +1547,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/valueisheight.png)
+![Funnel modes in WPF Chart](Series_images/valueisheight.png)
 
 **ValueIsWidth**
 
@@ -1351,16 +1584,16 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/valueiswidth.png)
+![Funnel modes in WPF Chart](Series_images/valueiswidth.png)
 
 ### Explode Segments
 
 The following properties are used to explode the individual segments in Funnel and Pyramid.
 
-* [`ExplodeAll`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html#) - Used to explode all the segments of these series.
-* [`ExplodeIndex`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html#) - Used to explode any specific segment.
-* [`ExplodeOffset`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularSeriesBase~ExplodeOffset.html#)- Used to define the explode distance like ExplodeRadius for Pie.
-* [`ExplodeOnMouseClick`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeOnMouseClick.html)-Used to explode the segment when segment is clicked.
+* [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html#) - Used to explode all the segments of these series.
+* [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html#) - Used to explode any specific segment.
+* [`ExplodeOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularSeriesBase~ExplodeOffset.html#)- Used to define the explode distance like ExplodeRadius for Pie.
+* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeOnMouseClick.html)-Used to explode the segment when segment is clicked.
 
 **Explode** **Offset**
 
@@ -1399,11 +1632,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/funnelexplode_1.png)
+![Exploding the segments of accumlation series in WPF Chart](Series_images/funnelexplode_1.png)
 
 **Gap** **Ratio**
 
-The gap between each segment using [`GapRatio`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularSeriesBase~GapRatio.html#) property as in the following code example.
+The gap between each segment using [`GapRatio`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TriangularSeriesBase~GapRatio.html#) property as in the following code example.
 
 {% tabs %}
 
@@ -1438,13 +1671,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/funnelexplode_2.png)
+![Gap ratio between segments in WPF Chart](Series_images/funnelexplode_2.png)
 
 ## Radar and Polar Charts
 
 ### Radar
 
-[`RadarSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RadarSeries.html#) represents a collection of data, displayed by quantitative variables, represented by axes starting from the same point. The relative position and angle of the axes is not uniform. 
+[`RadarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RadarSeries.html#) represents a collection of data, displayed by quantitative variables, represented by axes starting from the same point. The relative position and angle of the axes is not uniform. 
 
 The following code example illustrates the use of radar series:
 
@@ -1485,12 +1718,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/radar.png)
+![Radar chart type in WPF](Series_images/radar.png)
 
 
 ### Polar
 
-[`PolarSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PolarSeries.html#) displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
+[`PolarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PolarSeries.html#) displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
 
 {% tabs %}
 
@@ -1527,13 +1760,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/polar.png)
+![Polar chart type in WPF](Series_images/polar.png)
 
 
 The Radar and Polar charts having the following properties in common:
 
-* [`IsClosed`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase~IsClosed.html#)
-* [`DrawType`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase~DrawType.html# )
+* [`IsClosed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase~IsClosed.html#)
+* [`DrawType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase~DrawType.html# )
 * `PolarAngle`
 
 ### IsClosed
@@ -1585,11 +1818,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/isclosed.png)
+![Closed polar series in WPF Chart](Series_images/isclosed.png)
 
 ### DrawType
 
-This property defines type of curve, whether its line or area.
+This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
 
 **DrawType** **as** **Area**
 
@@ -1632,7 +1865,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/drawtype_area.png)
+![Draw type support for polar series in WPF Chart](Series_images/drawtype_area.png)
 
 **DrawType** **as** **Line**
 
@@ -1679,7 +1912,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/drawtype_line.png)
+![Draw type support for polar series in WPF Chart](Series_images/drawtype_line.png)
 
 ### PolarAngle
 
@@ -1687,7 +1920,7 @@ chart.Series.Add(series);
 
 **Rotate0**
 
-The below snippet explains how the axes of series has been rotated when `PolarAngle` value is `Rotate0`,
+The below snippet explains how the axes of series has been rotated when `PolarAngle` value is [`Rotate0`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
 
 {% tabs %}
 
@@ -1729,12 +1962,12 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Series_images/Rotate0.png)
+![Rotation support for polar series in WPF Chart](Series_images/Rotate0.png)
 
 
 **Rotate90**
 
-The below snippet explains how the axes of series has been rotated when `PolarAngle` value is `Rotate90`,
+The below snippet explains how the axes of series has been rotated when `PolarAngle` value is [`Rotate90`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
 
 {% tabs %}
 
@@ -1776,12 +2009,12 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Series_images/Rotate90.png)
+![Rotation support for polar series in WPF Chart](Series_images/Rotate90.png)
 
 
 **Rotate180**
 
-The below snippet explains how the axes of series has been rotated when `PolarAngle` value is `Rotate180`,
+The below snippet explains how the axes of series has been rotated when `PolarAngle` value is [`Rotate180`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
 
 {% tabs %}
 
@@ -1823,12 +2056,12 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Series_images/Rotate180.png)
+![Rotation support for polar series in WPF Chart](Series_images/Rotate180.png)
 
 
 **Rotate270**
 
-The below snippet explains how the axes of series has been rotated, when `PolarAngle` value is `Rotate270`,
+The below snippet explains how the axes of series has been rotated, when `PolarAngle` value is [`Rotate270`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
 
 {% tabs %}
 
@@ -1870,24 +2103,24 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Series_images/Rotate270.png)
+![Rotation support for polar series in WPF Chart](Series_images/Rotate270.png)
 
 
 ## Financial Charts
 
 The APIs present in the financial series are,
 
-* [`High`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html)-Gets or sets the string that describes high value in Y-axis.
-* [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html)- Gets or sets the string that describes low value in Y-axis.
-* [`Open`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html)-Gets or sets the string that describes open value in Y-axis.
-* [`Close`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html)- Gets or sets the string that describes close value in Y-axis.
-* [`BearFillColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BearFillColor.html)-Represents the brush color for the segments that show stock price has gone up in measured time interval.
-* [`BullFillColor`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BullFillColor.html)-Represents that brush color for the segments that show stock price has gone down in measured time interval.
-* ComparisonMode - Specifies which price need to be considered for the formation.
+* [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html)-Gets or sets the string that describes high value in Y-axis.
+* [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html)- Gets or sets the string that describes low value in Y-axis.
+* [`Open`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html)-Gets or sets the string that describes open value in Y-axis.
+* [`Close`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html)- Gets or sets the string that describes close value in Y-axis.
+* [`BearFillColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BearFillColor.html)-Represents the brush color for the segments that show stock price has gone up in measured time interval.
+* [`BullFillColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BullFillColor.html)-Represents that brush color for the segments that show stock price has gone down in measured time interval.
+* [`ComparisonMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~ComparisonMode.html) - Specifies which price need to be considered for the formation from [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialPrice.html), [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialPrice.html), [`Open`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialPrice.html), [`Close`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialPrice.html) or [`None`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialPrice.html) financial price.
 
 ### OHLC
 
-[`HiLoOpenCloseSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html#) displays each data point as a group of horizontal and one vertical line. The values for this series can be binded using [`High`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html#), [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html#), [`Open`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html#) and [`Close`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html#) property.
+[`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html#) displays each data point as a group of horizontal and one vertical line. The values for this series can be binded using [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html#), [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html#), [`Open`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html#) and [`Close`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html#) property.
 
 The following code example shows how to use OHLC series:
 
@@ -1930,13 +2163,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/ohlc.png)
+![HiLoOpenClose chart type in WPF](Series_images/ohlc.png)
 
 ### Candle
 
-[`CandleSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CandleSeries.html#) displays each data point as a combination of a vertical column and a vertical line. This series is most widely used in decision making places, like the stock market.
+[`CandleSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CandleSeries.html#) displays each data point as a combination of a vertical column and a vertical line. This series is most widely used in decision making places, like the stock market.
 
-The values for this series can be bind using [`High`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html#), [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html#), [`Open`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html#) and [`Close`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html#) property and the following code example shows the usage of candle series.
+The values for this series can be bind using [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html#), [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html#), [`Open`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html#) and [`Close`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html#) property and the following code example shows the usage of candle series.
 
 {% tabs %}
 
@@ -1975,7 +2208,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/candle.png)
+![Candle chart type in WPF](Series_images/candle.png)
 
 {% tabs %}
 
@@ -2011,7 +2244,7 @@ chart.Series.Add(series);
 
 {% endtabs %}               
 
-![](Series_images/candle_1.png)
+![Candle chart type in WPF](Series_images/candle_1.png)
 
 
 **Comparison Modes**
@@ -2043,7 +2276,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Open;
 
 {% endtabs %}     
 
-![](Series_images/open.png)
+![Comparison Modes support in WPF](Series_images/open.png)
 
 In the above screenshot, the second segment’s Open value is greater than the first segment’s open value. So, the stroke color is filled with bull fill color.
 
@@ -2071,7 +2304,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Close;
 
 {% endtabs %}   
 
-![](Series_images/Close.png)
+![Comparison Modes support in WPF](Series_images/Close.png)
 
  In the above screenshot, the second segment’s close value is greater than the first segment’s close value. So, the stroke color is filled with bull fill color.
 
@@ -2099,7 +2332,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.High;
 
 {% endtabs %}   
 
-![](Series_images/high.png)
+![Comparison Modes support in WPF](Series_images/high.png)
 
  In the above screenshot, the second segment’s high value is less than the first segment’s high value. So, the stroke color is filled with bear fill color.
 
@@ -2127,7 +2360,7 @@ series.ComparisonMode = Syncfusion.UI.Xaml.Charts.FinancialPrice.Low;
 
 {% endtabs %}   
 
-![](Series_images/low.png)
+![Comparison Modes support in WPF](Series_images/low.png)
 
 In the above screenshot, the second segment’s low value is greater than the first segment’s low value. So, the stroke color filled with bull fill color.
 
@@ -2136,7 +2369,7 @@ In the above screenshot, the second segment’s low value is greater than the fi
 
 ### Stacking Column
 
-[`StackingColumnSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html#) resembles multiple types of ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
+[`StackingColumnSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html#) resembles multiple types of ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
 
 The following code example illustrates how to use StackingColumnSeries:
 
@@ -2225,11 +2458,11 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingcolumn.png)
+![StackingColumn chart type in WPF](Series_images/stackingcolumn.png)
 
 ### Stacking Column 100
 
-[`StackingColumn100Series`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingColumn100Series.html#) resembles StackingColumnSeries but the cumulative portion of each stacked element always comes to a total of 100%. 
+[`StackingColumn100Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingColumn100Series.html#) resembles StackingColumnSeries but the cumulative portion of each stacked element always comes to a total of 100%. 
 
 {% tabs %}
 
@@ -2302,11 +2535,11 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingcolumn100.png)
+![StackingColumn100 chart type in WPF](Series_images/stackingcolumn100.png)
 
 ### Stacking Bar
 
-[`StackingBarSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingBarSeries.html#) is a multiple series type of BarSeries. Each BarSeries is then stacked horizontally, side by side to each other. When there exists only one series, it resembles a simple BarSeries. 
+[`StackingBarSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingBarSeries.html#) is a multiple series type of BarSeries. Each BarSeries is then stacked horizontally, side by side to each other. When there exists only one series, it resembles a simple BarSeries. 
 
 {% tabs %}
 
@@ -2395,12 +2628,12 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingbar.png)
+![StackingBar chart type in WPF](Series_images/stackingbar.png)
 
 
 ### Stacking Bar 100
 
-[`StackingBar100Series`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingBar100Series.html#) resembles a StackingBarSeries. StackingBar100Series displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. 
+[`StackingBar100Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingBar100Series.html#) resembles a StackingBarSeries. StackingBar100Series displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. 
 
 {% tabs %}
 
@@ -2483,11 +2716,11 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingbar100.png)
+![StackingBar100 chart type in WPF](Series_images/stackingbar100.png)
 
 ### Stacking Area
 
-[`StackingAreaSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html#) is representing areas stacked vertically one above the other. 
+[`StackingAreaSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html#) is representing areas stacked vertically one above the other. 
 
 {% tabs %}
 
@@ -2566,7 +2799,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingarea.png)
+![StackingArea chart type in WPF](Series_images/stackingarea.png)
 
 ### Stacking Area 100
 
@@ -2655,9 +2888,9 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingarea100.png)
+![StackingArea100 chart type in WPF](Series_images/stackingarea100.png)
 
-You can draw open curve like Area using this [`IsClosed`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingAreaSeries~IsClosed.html#) property.
+You can draw open curve like Area using this [`IsClosed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingAreaSeries~IsClosed.html#) property.
 
 {% tabs %}
 
@@ -2760,12 +2993,12 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![](Series_images/stackingarea_closed.png)
+![IsClosed support for stacking area series in WPF Chart](Series_images/stackingarea_closed.png)
 
 
 ### Grouping Stacked Series
 
-You can group the stacked series using [`GroupingLabel`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingSeriesBase~GroupingLabel.html#) property. The following code example shows how to group the stacking series.
+You can group the stacked series using [`GroupingLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingSeriesBase~GroupingLabel.html#) property. The following code example shows how to group the stacking series.
 
 {% tabs %}
 
@@ -2887,14 +3120,14 @@ chart.Series.Add(series4);
 
 {% endtabs %}
 
-![](Series_images/groupingstacking.png)
+![Grouping of stacking series in WPF Chart](Series_images/groupingstacking.png)
 
 
 ## Range Series
 
 ### HiLo
 
-In [`HiLoSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HiLoSeries.html#), each segment is represented by a line. The height of the line depends on the value of the data point, high or low. The values for this series can be bind using [`High`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html#) and [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html#).
+In [`HiLoSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HiLoSeries.html#), each segment is represented by a line. The height of the line depends on the value of the data point, high or low. The values for this series can be bind using [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html#) and [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html#).
 
 The following code example shows the use of HiLo series:
 
@@ -2935,11 +3168,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/hilo.png)
+![HiLo Chart support in WPF](Series_images/hilo.png)
 
 ### Range Column
 
-[`RangeColumnSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html#) is a collection of vertical columns where positioning and height depends on the high and low values of each data point. RangeColumnSeries is used when minimum and maximum need to be specified for the ColumnSeries.
+[`RangeColumnSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html#) is a collection of vertical columns where positioning and height depends on the high and low values of each data point. RangeColumnSeries is used when minimum and maximum need to be specified for the ColumnSeries.
 
 {% tabs %}
 
@@ -2974,12 +3207,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/rangeseries.png)
-
+![RangeColumn chart type in WPF](Series_images/rangeseries.png)
 
 ### Range Area
 
-[`RangeAreaSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html#) is used to display continuous data points as a set of lines that vary between [`High`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html#) and [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html#) values over intervals of time and across different categories. 
+[`RangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html#) is used to display continuous data points as a set of lines that vary between [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html#) and [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html#) values over intervals of time and across different categories. 
 
 {% tabs %}
 
@@ -3016,13 +3248,13 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/rangearea.png)
+![RangeArea chart type in WPF](Series_images/rangearea.png)
 
 
 The APIs present in the RangeArea series are,
 
-* [`HighValueInterior`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~HighValueInterior.html) -Gets or sets the brush that represents the interior color for the high value data.
-* [`LowValueInterior`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~LowValueInterior.html)- Gets or sets the brush that represents the interior color for the low value data.
+* [`HighValueInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~HighValueInterior.html) -Gets or sets the brush that represents the interior color for the high value data.
+* [`LowValueInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~LowValueInterior.html)- Gets or sets the brush that represents the interior color for the low value data.
 
 {% tabs %}
 
@@ -3063,11 +3295,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/rangearea_closed.png)
+![RangeArea chart type in WPF](Series_images/rangearea_closed.png)
 
 ### Spline Range Area
 
-[`SplineRangeAreaSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineRangeAreaSeries.html#) is used to display continuous data points as smooth Bezier curves that vary between [`High`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html#) and [`Low`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html#) values over intervals of time and across different categories. 
+[`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SplineRangeAreaSeries.html#) is used to display continuous data points as smooth Bezier curves that vary between [`High`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html#) and [`Low`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html#) values over intervals of time and across different categories. 
 
 {% tabs %}
 
@@ -3106,15 +3338,11 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endtabs %}
 
-<<<<<<< HEAD
-![Spline Range Series ](Series_images/splinerangearea.png)
-=======
 ![Spline Range Area Series ](Series_images/splinerangearea.png)
->>>>>>> 03e2fdbff065b4e2e8b8c88b8a25aa5623ef53c2
 
 ### Histogram 
 
-[`HistogramSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries.html#) is one of the seven basic tools of quality control. HistogramSeries is often used to plot the density of data.
+[`HistogramSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries.html#) is one of the seven basic tools of quality control. HistogramSeries is often used to plot the density of data.
 
 The following code example shows how to add the HistogramSeries:
 
@@ -3159,10 +3387,10 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/histogram.png)
+![Histogram chart type in WPF](Series_images/histogram.png)
 
 
-You can customize interval using [`HistogramInterval`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries~HistogramInterval.html#) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries~ShowNormalDistributionCurve.html#).
+You can customize interval using [`HistogramInterval`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries~HistogramInterval.html#) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HistogramSeries~ShowNormalDistributionCurve.html#).
 
 {% tabs %}
 
@@ -3209,7 +3437,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/histogram_interval.png)
+![Interval customization support for histogram series in WPF Chart](Series_images/histogram_interval.png)
 
 
 ## Box and Whisker 
@@ -3246,7 +3474,7 @@ boxWhiskerChart.Series.Add(boxAndWhisker);
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker1.png)
+![Box and Whisker Chart type in WPF](Series_images/boxAndWhisker1.png)
 
 N>By default, the `BoxPlotMode` property value is Exclusive.
 
@@ -3254,9 +3482,9 @@ N>By default, the `BoxPlotMode` property value is Exclusive.
 
 The series box plotting mode can be changed by using [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotModeProperty.html) property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
 
-* `Exclusive` – The quartile values are calculated by using the formula (N+1) * P (N count, P percentile) and its index value starts from 1 in the list.
-* `Inclusive` – The quartile values are calculated by using the formula (N−1) * P (N count, P percentile) and its index value starts from 0 in the list.
-* `Normal` – The quartile values are calculated by splitting the list and getting the median values.
+* [`Exclusive`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N+1) * P (N count, P percentile) and its index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N−1) * P (N count, P percentile) and its index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
 
 **Normal**
 
@@ -3282,7 +3510,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Normal;
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker2.png)
+![Series Box Mode customization support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker2.png)
 
 **Inclusive**
 
@@ -3308,7 +3536,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker3.png)
+![Series Box Mode customization support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker3.png)
 
 **ShowMedian**
 
@@ -3334,7 +3562,7 @@ boxAndWhisker.ShowMedian = true;
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker4.png)
+![ShowMedian support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker4.png)
 
 **OutlierTemplate**
 
@@ -3374,7 +3602,7 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 {% endtabs %}
 
-![](Series_images/boxAndWhisker5.png)
+![OutlierTemplate support for Box and Whisker series in WPF Chart](Series_images/boxAndWhisker5.png)
 
 ## Waterfall Series
 
@@ -3413,7 +3641,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![](Series_images/waterfall1.png)
+![Waterfall Chart type in WPF](Series_images/waterfall1.png)
 
 **SummarySegmentPath and SummarySegmentBrush**
 
@@ -3459,7 +3687,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![](Series_images/waterfall2.png)
+![Waterfall Chart type in WPF](Series_images/waterfall2.png)
 
 **NegativeSegmentBrush**
 
@@ -3488,11 +3716,11 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 {% endtabs %}
 
-![](Series_images/waterfall3.png)
+![Waterfall Chart type in WPF](Series_images/waterfall3.png)
 
 **AllowAutoSum**
 
-The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSumProperty.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSum.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
 
 The following code example illustrates how the AllowAutoSum property value can be set.
 
@@ -3526,7 +3754,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![](Series_images/waterfall4.png)
+![Waterfall Chart type in WPF](Series_images/waterfall4.png)
 
 **ConnectorLine**
 
@@ -3552,7 +3780,7 @@ waterfallSeries.ShowConnector = false;
 
 {% endtabs %}
 
-![](Series_images/waterfall5.png)
+![Connector Line support for Waterfall Chart in WPF](Series_images/waterfall5.png)
 
 **Connector line customization**
 
@@ -3596,14 +3824,14 @@ series.ConnectorLineStyle = style;
 
 {% endtabs %}
 
-![](Series_images/waterfall6.png)
+![Connector line customization support in WPF](Series_images/waterfall6.png)
 
 
 ## Fast Charts
 
 ### Fast Line
 
-The [`FastLineSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries.html#) is a special kind of line series that can render a collection with a huge number of datapoints. FastLine is rendered using polyline segment. 
+The [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries.html#) is a special kind of line series that can render a collection with a huge number of datapoints. FastLine is rendered using polyline segment. 
 
 {% tabs %}
 
@@ -3638,19 +3866,19 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastline.png)
+![FastLine chart type in WPF](Series_images/fastline.png)
 
 The following line properties are available for FastLineSeries:
 
-* [`Stroke`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~Stroke.html#)
-* [`StrokeDashArray`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashArray.html#)
-* [`StrokeDashOffset`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html# )
-* [`StrokeDashCap`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html#)
-* [`StrokeThickness`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~StrokeThickness.html#)
+* [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~Stroke.html#)
+* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashArray.html#)
+* [`StrokeDashOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html# )
+* [`StrokeDashCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html#)
+* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~StrokeThickness.html#)
 
 ### Fast Line Bitmap 
 
-[`FastLineBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#) displays a series of line segments rendered using WritableBitmap. The advantage of FastLineBitmapSeries renders a million data point in a fraction of seconds.
+[`FastLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#) displays a series of line segments rendered using WritableBitmap. The advantage of FastLineBitmapSeries renders a million data point in a fraction of seconds.
 
 The following code example shows how to use the fast line bitmap series:
 
@@ -3687,11 +3915,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastlinebitmap.png)
+![FastLineBitmap chart type in WPF](Series_images/fastlinebitmap.png)
 
 Like FastLineSeries, this bitmap series is also having line properties. 
 
-N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using [`EnableAntiAliasing`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries~EnableAntiAliasing.html#) property.
+N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries~EnableAntiAliasing.html#) property.
 
 {% tabs %}
 
@@ -3732,12 +3960,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastlinealiasing.png)
+![AntiAliasing support for FastLine Chart in WPF](Series_images/fastlinealiasing.png)
 
 
 ### Fast Column
 
-[`FastColumnBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html#) is used to boost up the performance of the ColumnSeries.
+[`FastColumnBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html#) is used to boost up the performance of the ColumnSeries.
 
 {% tabs %}
 
@@ -3772,7 +4000,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastcolumn.png)
+![FastColumnBitmap chart type in WPF](Series_images/fastcolumn.png)
 
 ### Fast Bar
 
@@ -3811,7 +4039,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastbar.png)
+![FastBarBitmap chart type in WPF](Series_images/fastbar.png)
 
 
 ### Fast Candle
@@ -3859,12 +4087,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastcandle.png)
+![FastCandleBitmap chart type in WPF](Series_images/fastcandle.png)
 
 
 ### Fast HiLo
 
-[`FastHiLoBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoBitmapSeries.html#) represents a series of line segments with high and low values rendered using WritableBitmap. 
+[`FastHiLoBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoBitmapSeries.html#) represents a series of line segments with high and low values rendered using WritableBitmap. 
 
 {% tabs %}
 
@@ -3901,11 +4129,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fasthilo.png)
+![FastHiLoBitmap chart type in WPF](Series_images/fasthilo.png)
 
 ### Fast OHLC
 
-[`FastHiLoOpenCloseBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html#) are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
+[`FastHiLoOpenCloseBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html#) are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
 
 {% tabs %}
 
@@ -3946,11 +4174,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastohlc.png)
+![FastHiLoOpenCloseBitmap chart type in WPF](Series_images/fastohlc.png)
 
 ### Fast Scatter
 
-[`FastScatterBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#) used to render high number scatter points. The [`ScatterHeight`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterHeight.html#) and [`ScatterWidth`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterWidth.html#) also available as in ScatterSeries.
+[`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#) used to render high number scatter points. The [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterHeight.html#) and [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterWidth.html#) also available as in ScatterSeries.
 
 {% tabs %}
 
@@ -3993,12 +4221,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/fastscatter.png)
+![FastScatterBitmap chart type in WPF](Series_images/fastscatter.png)
 
 
 ### Fast Step Line
 
-[`FastStepLineBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#) is the high performance version of StepLineSeries.
+[`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#) is the high performance version of StepLineSeries.
 
 {% tabs %}
 
@@ -4033,9 +4261,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/faststepline.png)
+![FastStepLineBitmap chart type in WPF](Series_images/faststepline.png)
 
-The anti aliasing mode can be enabled using [`EnableAntiAliasing`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastStepLineBitmapSeries as in below code snippet:
+The anti aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastStepLineBitmapSeries as in below code snippet:
 
 {% tabs %}
 
@@ -4072,12 +4300,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/faststepline_alias.png)
+![AntiAliasing support for FastStepLineBitmap chart type in WPF](Series_images/faststepline_alias.png)
 
 
 ### Fast Stacking Column
 
-[`FastStackingColumnSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html#) similar to StackingColumnSeries except that it loads faster and provides better performance. 
+[`FastStackingColumnSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html#) similar to StackingColumnSeries except that it loads faster and provides better performance. 
 
 {% tabs %}
 
@@ -4114,12 +4342,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Series_images/faststackingcolumn.png)
+![FastStackingColumnBitmap chart type in WPF](Series_images/faststackingcolumn.png)
 
 
 ### Fast Range Area
 
-[`FastRangeAreaBitmapSeries`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#) is the high performance version of RangeAreaSeries. 
+[`FastRangeAreaBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#) is the high performance version of RangeAreaSeries. 
 
 {% tabs %}
 
@@ -4160,7 +4388,7 @@ chart.Series.Add(fastRangeAreaBitmapSeries);
 
 ![Fast Range Area Bitmap Series](Series_images/fastrangeareabitmapseries.png)
 
-The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastRangeAreaBitmapSeries as in below code snippet:
+The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries~EnableAntiAliasing.html) property of FastRangeAreaBitmapSeries as in below code snippet:
 
 {% tabs %}
 

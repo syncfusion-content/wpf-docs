@@ -46,7 +46,7 @@ this.treeGrid.Columns["FirstName"].AllowEditing = true;
 
 N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEditing`
 
-![](Editing_images/Editing_img1.png)
+![Editing in WPF treegrid](Editing_images/Editing_img1.png)
 
 N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navigation and editing.
 
@@ -439,6 +439,44 @@ void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEv
 {% endhighlight %}
 {% endtabs %}
 
+## ReadOnly
+
+You can prevent users from modifying the contents of a treegrid cell by setting the [SfTreeGrid.IsReadOnly ](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.sfgridbase~IsReadOnly.html) property, but the user can able to perform copy and selection operation.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Name="treeGrid"
+            AllowEditing="True"
+            IsReadOnly="True"
+            AutoGenerateColumns="True"
+            ItemsSource="{Binding EmployeeDetails}"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.IsReadOnly = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can enable or disable editing for particular column by setting [TreeGridColumn.IsReadOnly](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~IsReadOnly.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:TreeGridTextColumn  HeaderText="Order ID" 
+                                MappingName="OrderID"
+                                IsReadOnly="True"/>
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.Columns["OrderID"].IsReadOnly = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> We should set the AllowEditing property to achieve the IsReadOnly behavior.
+[TreeGridColumn.IsReadOnly ](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~IsReadOnly.html)takes higher priority than [SfTreeGrid.IsReadOnly](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.sfgridbase~IsReadOnly.html).
+
 ## Mouse and Keyboard operations for UIElement inside Template
 
 You can directly load edit element using `TreeGridTemplateColumn.CellTemplate` property. In this case, you can provide focus and control to the UIElement inside CellTemplate in the below ways,
@@ -475,7 +513,7 @@ You can focus to the particular `UIElement` loaded inside template when cell get
 {% endhighlight %}
 {% endtabs %}
 
-![](Editing_images/Editing_img2.png)
+![Mouse and keyboard operation in WPF treegrid cell template](Editing_images/Editing_img2.png)
 
 ## Providing keyboard control to UIElement inside CellTemplate
 
@@ -507,7 +545,7 @@ You can allow UIElement loaded inside CellTemplate to handle keyboard interactio
 {% endhighlight %}
 {% endtabs %}
 
-![](Editing_images/Editing_img3.png)
+![Keyboard operations in WPF treegrid cell template](Editing_images/Editing_img3.png)
 
 N> Enter and Tab keys are always handled by SfTreeGrid only.
 

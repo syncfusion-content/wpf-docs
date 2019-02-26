@@ -9,8 +9,8 @@ documentation: ug
 
 # Legend
 
-Legend provides metadata which helps for identifying elements in chart like [chart series](http://help.syncfusion.com/wpf/sfchart/series), 
-[technical indicators](http://help.syncfusion.com/wpf/sfchart/technical-indicators), and [trendlines](http://help.syncfusion.com/wpf/sfchart/trendlines). 
+[`Legend`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) provides metadata which helps for identifying elements in chart like [chart series](https://help.syncfusion.com/wpf/sfchart/series), 
+[technical indicators](https://help.syncfusion.com/wpf/sfchart/technical-indicators), and [trendlines](https://help.syncfusion.com/wpf/sfchart/trendlines). 
 You can define the legend using the following code example.
 
 {% tabs %}
@@ -35,19 +35,19 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![](Legend_images/legend_overview.png)
+![Legend support in WPF Chart](Legend_images/legend_overview.png)
 
 
 Each legend composed of the following parts:
 
-![](Legend_images/legend_overview_1.png)
+![Legend support in WPF Chart](Legend_images/legend_overview_1.png)
 
 
 ## Legend Icon
 
-Represents the symbol associated with each legend item. By default, the legend icon is Rectangle. 
+Represents the symbol associated with each legend item. By default, the legend icon is [`Rectangle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html). 
 
-This can be customized using the [`LegendIcon`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~LegendIcon.html) property in any series as in below code snippet:
+This can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~LegendIcon.html) property in any series as in below code snippet:
 
 {% tabs %}
 
@@ -93,17 +93,17 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![](Legend_images/legendicon_1.png)
+![Legend icon in WPF Chart](Legend_images/legendicon_1.png)
 
 
 The following properties are used to customize the legend icons.
 
 
-* [`IconWidth`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconWidth.html)-Gets or sets the double value that represents the legend icon(s) width.
-* [`IconHeight`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconHeight.html)-Gets or sets the double value that represents that legend icon(s) height.
-* [`IconVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html)-Gets or sets the Visibility of the legend icon.
-* [`ItemMargin`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ItemMargin.html)-Gets or sets the margin for the legend items.
-* [`CornerRadius`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CornerRadius.html)-Gets or sets the corner radius of the legend.
+* [`IconWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconWidth.html)-Gets or sets the double value that represents the legend icon(s) width.
+* [`IconHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconHeight.html)-Gets or sets the double value that represents that legend icon(s) height.
+* [`IconVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html)-Gets or sets the Visibility of the legend icon.
+* [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ItemMargin.html)-Gets or sets the margin for the legend items.
+* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CornerRadius.html)-Gets or sets the corner radius of the legend.
 
 The following code example illustrates the customization of legend icon.
 
@@ -170,10 +170,10 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendicon_2.png)
+![Legend icon in WPF Chart](Legend_images/legendicon_2.png)
 
 
-The visibility of the legend icon can be changed by setting [`IconVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html) property in ChartLegend. 
+The visibility of the legend icon can be changed by setting [`IconVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~IconVisibility.html) property in ChartLegend. 
 
 {% tabs %}
 
@@ -207,12 +207,12 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendicon_3.png)
+![Legend icon in WPF Chart](Legend_images/legendicon_3.png)
 
 
 **Custom** **Legend** **Icon**
 
-We can add custom icon for the legend using [`LegendIconTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~LegendIconTemplate.html) property in ChartSeries as in below example.
+We can add custom icon for the legend using [`LegendIconTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~LegendIconTemplate.html) property in ChartSeries as in below example.
 
 {% tabs %}
 
@@ -273,7 +273,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Legend_images/legendicon_4.png)
+![Customizing legend icons in WPF Chart](Legend_images/legendicon_4.png)
 
 
 ## Label
@@ -321,14 +321,14 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![](Legend_images/label_1.png)
+![Labels for legend in WPF Chart](Legend_images/label_1.png)
 
 
 ## Checkbox 
 
 Used to view or collapse the associated series. By default, the CheckboxVisibility is *Collapsed*. 
 
-We can enable it by using the [`CheckBoxVisibility`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CheckBoxVisibility.html) property as in below code example:
+We can enable it by using the [`CheckBoxVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~CheckBoxVisibility.html) property as in below code example:
 
 {% tabs %}
 
@@ -355,19 +355,19 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/chkbox_1.png)
+![CheckBox support for legend in WPF Chart](Legend_images/chkbox_1.png)
 
 
 The series can be collapsed by unchecking the CheckBox as below:
 
-![](Legend_images/chkbox_2.png)
+![CheckBox support for legend in WPF Chart](Legend_images/chkbox_2.png)
 
 
 ## ToggleSeriesVisibility 
 
-`ToggleSeriesVisibility` is used to view or collapse the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its legend item. By default, `ToggleSeriesVisibility` property is *False*.
+[`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ToggleSeriesVisibility.html) is used to view or collapse the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its legend item. By default, [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ToggleSeriesVisibility.html) property is *False*.
 
-We can enable the `ToggleSeriesVisibility` property as in below code example:
+We can enable the [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~ToggleSeriesVisibility.html) property as in below code example:
 
 {% tabs %}
 
@@ -397,20 +397,20 @@ chart.Legend = new ChartLegend()
 
 The [`series`](https://help.syncfusion.com/wpf/sfchart/series) can be collapsed, by clicking on the respective legend item,
 
-![](Legend_images/Toggling_1.png)
+![ToggleSeriesVisibility support for legend in WPF Chart](Legend_images/Toggling_1.png)
 
 
 We can also view the associated [`series`](https://help.syncfusion.com/wpf/sfchart/series), by clicking on its disabled legend item,
 
-![](Legend_images/Toggling_2.png)
+![ToggleSeriesVisibility support for legend in WPF Chart](Legend_images/Toggling_2.png)
 
 
 ## Positioning the Legend
 
 **Legend** **Position**
 
-This allows us to position the legends inside or outside of the chart area (plotting area). 
-By default, it will be displayed outside and positioned at top (using [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html)) of the chart area.
+This allows us to position the legends [`Inside`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LegendPosition.html) or [`Outside`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LegendPosition.html) of the chart area (plotting area). 
+By default, it will be displayed outside and positioned at top (using [`DockPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html)) of the chart area.
 
 {% tabs %}
 
@@ -437,15 +437,15 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendpos_1.png)
+![Positioning the legend in WPF Chart](Legend_images/legendpos_1.png)
 
 
 **Docking**
 
-Legends can be docked left, right, and top or bottom around the chart area using [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) property. 
+Legends can be docked left, right, and top or bottom around the chart area using [`DockPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) property. 
 By default, the ChartLegend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the bottom, you can set the [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as **Bottom** as in below code snippet.
+To display the legend at the bottom, you can set the [`DockPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as [`Bottom`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartDock.html) as in below code snippet.
 
 {% tabs %}
 
@@ -472,12 +472,12 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendpos_2.png)
+![Positioning the legend in WPF Chart](Legend_images/legendpos_2.png)
 
 
 **Floating** **Legends**
 
-To position the legend at any arbitrary location inside chart, we need to set [`DockPosition`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as **Floating** and provide its relative position using [`OffsetX`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetX.html) and [`OffsetY`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetY.html) properties.
+To position the legend at any arbitrary location inside chart, we need to set [`DockPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as **Floating** and provide its relative position using [`OffsetX`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetX.html) and [`OffsetY`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~OffsetY.html) properties.
  
 Offset specifies x or y distance from origin.
 
@@ -510,7 +510,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendpos_3.png)
+![Positioning the legend in WPF Chart](Legend_images/legendpos_3.png)
 
 
 ## Legend Header
@@ -568,7 +568,7 @@ chart.Legend = legend;
 
 {% endtabs %}
 
-![](Legend_images/legendpos_4.png)
+![Header for legend in WPF Chart](Legend_images/legendpos_4.png)
 
 
 ## Multiple Legends
@@ -675,12 +675,12 @@ chart.Series.Add(splineSeries);
 
 {% endtabs %}
 
-![](Legend_images/mullegends.png)
+![Multiple legends support in WPF Chart](Legend_images/mullegends.png)
 
 
 ## Legends for Accumulation Series
 
-For the series like Pie, Doughnut, Funnel and Pyramid, legends will be generated for all the data points. But for remaining series, each legend corresponds to each series. By default, the Interior color of the segment (data point) is applied to the legend icon. 
+For the series like Pie, Doughnut, Funnel and Pyramid, legends will be generated for all the data points. But for remaining series, each legend corresponds to each series. By default, the [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LegendItem~Interior.html) color of the segment (data point) is applied to the legend icon. 
 
 The following code snippets explains how the legends displaying for accumulation series.
 
@@ -721,14 +721,14 @@ chart.Series.Add(pieSeries);
 
 {% endtabs %}
 
-![](Legend_images/legend_pie.png)
+![Legends for accumulation series in WPF Chart](Legend_images/legend_pie.png)
 
 
 N> Here Legend ‘Label’ will be the x value of the Pie chart.
 
 ## Series visibility on legend
 
-We can limit the number of series and trendlines to be displayed in chart using [`VisibilityOnLegend`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~VisibilityOnLegend.html)
+We can limit the number of series and trendlines to be displayed in chart using [`VisibilityOnLegend`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~VisibilityOnLegend.html)
 property as shown in below example.
 
 {% tabs %}
@@ -804,12 +804,12 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![](Legend_images/seriesvisibile.png)
+![Series visibility of legend in WPF Chart](Legend_images/seriesvisibile.png)
 
 
 ## Legend Orientation
 
-Orientation of the Legend can be vertical or horizontal. By default the [`Orientation`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~Orientation.html) is *Horizontal*. 
+Orientation of the Legend can be vertical or horizontal. By default the [`Orientation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~Orientation.html) is [`Horizontal`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartOrientation.html). 
 
 {% tabs %}
 
@@ -836,7 +836,7 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/legendorientation.png)
+![Legend orientation support in WPF Chart](Legend_images/legendorientation.png)
 
 
 ## Customization
@@ -941,7 +941,7 @@ public class ImageConverter:IValueConverter
 
 {% endtabs %}
 
-![](Legend_images/customization_1.png)
+![Template support for legend in WPF Chart](Legend_images/customization_1.png)
 
 
 **Customizing** **Legend** **Items** **Layout**
@@ -989,6 +989,6 @@ chart.Legend = new ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/customization_2.png)
+![Customizing legend items layout in WPF Chart](Legend_images/customization_2.png)
 
 

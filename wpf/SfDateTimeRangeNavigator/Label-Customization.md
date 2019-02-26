@@ -22,11 +22,11 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-Interval</td><td>
+{{'[`IntervalType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~IntervalType.html)'| markdownify }}</td><td>
 Sets the interval type that needs to be displayed in the navigator.</td></tr>
 <tr>
 <td>
-LabelsPosition</td><td>
+{{'[`LabelFormatters`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Interval~LabelFormatters.html)'| markdownify }}</td><td>
 Gets or sets string collection to set the label format for the navigator labels.</td></tr>
 </table>
 
@@ -114,16 +114,16 @@ rangeNavigator.Content = chart;
 
 The following screenshot illustrates only Quarter and Month intervals in the navigator.
 
-![](Label-Customization_images/Label-Customization_img1.png)
+![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img1.png)
 
 The interval can be set in the following types: 
 
-* Year
-* Quarter
-* Month
-* Week
-* Day
-* Hour
+* [`Year`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Quarter`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Month`(https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Week`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Day`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Hour`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 
 The auto timespan format simplifies the visual representation of data when zooming in with the following formats:
 
@@ -171,14 +171,14 @@ Description</th></tr>
 <tr>
 <td>
 LabelBarStyle</td><td>
-Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.</td></tr>
+Allows to customize the label style using the LabelBarStyle property, and this property can be applied to the [`HigherLevelBarStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherLevelBarStyle.html) or [`LowerLevelBarStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerLevelBarStyle.html).</td></tr>
 <tr>
 <td>
-SelectedLabelStyle</td><td>
+{{'[`SelectedLabelStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~SelectedLabelStyle.html)'| markdownify }}</td><td>
 Defines the label style for labels in the selected region.</td></tr>
 <tr>
 <td>
-LabelsPosition</td><td>
+{{'['Position'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~Position.html)'| markdownify }}</td><td>
 Positions the upper and lower labels inside or outside the label bar.</td></tr>
 </table>
 
@@ -239,4 +239,4 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 The following screenshot illustrates setting the Label HorizontalAlignment to left.
 
-![](Label-Customization_images/Label-Customization_img2.png)
+![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img2.png)

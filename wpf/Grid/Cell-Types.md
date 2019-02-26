@@ -76,7 +76,7 @@ Likewise, you can also add other controls from the table above. A sample output 
 
 
 
-![](Cell-Types_images/Cell-Types_img1.jpeg)
+![Checkbox cell type](Cell-Types_images/Cell-Types_img1.jpeg)
 
 
 
@@ -169,7 +169,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img2.jpeg)
+![Combobox celltype](Cell-Types_images/Cell-Types_img2.jpeg)
 
 
 
@@ -196,7 +196,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img3.jpeg)
+![Autocomplete combobox](Cell-Types_images/Cell-Types_img3.jpeg)
 
 
 
@@ -223,7 +223,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img4.jpeg)
+![Exclusive combobox](Cell-Types_images/Cell-Types_img4.jpeg)
 
 
 
@@ -254,7 +254,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img5.jpeg)
+![Editable combobox](Cell-Types_images/Cell-Types_img5.jpeg)
 
 
 
@@ -283,7 +283,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img6.jpeg)
+![Autocomplete combobox](Cell-Types_images/Cell-Types_img6.jpeg)
 
 
 
@@ -310,7 +310,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img7.jpeg)
+![Exclusive combobox](Cell-Types_images/Cell-Types_img7.jpeg)
 
 
 
@@ -352,7 +352,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img8.jpeg)
+![Editable combobox](Cell-Types_images/Cell-Types_img8.jpeg)
 
 
 
@@ -387,7 +387,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img9.jpeg)
+![Dropdown list celltype](Cell-Types_images/Cell-Types_img9.jpeg)
 
 
 
@@ -419,7 +419,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img10.jpeg)
+![Autocomplete dropdown list](Cell-Types_images/Cell-Types_img10.jpeg)
 
 
 
@@ -497,7 +497,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img11.jpeg)
+![Currency celltype](Cell-Types_images/Cell-Types_img11.jpeg)
 
 
 
@@ -531,7 +531,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img12.jpeg)
+![Currency value with nagative pattern](Cell-Types_images/Cell-Types_img12.jpeg)
 
 
 
@@ -565,7 +565,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img13.jpeg)
+![Currency value with currency settings](Cell-Types_images/Cell-Types_img13.jpeg)
 
 
 
@@ -692,7 +692,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img14.jpeg)
+![Datetime celltype](Cell-Types_images/Cell-Types_img14.jpeg)
 
 
 
@@ -789,7 +789,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img15.jpeg)
+![Doubleedit celltype](Cell-Types_images/Cell-Types_img15.jpeg)
 
 
 Double Edit Cell
@@ -860,7 +860,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img16.jpeg)
+![Integeredit celltype](Cell-Types_images/Cell-Types_img16.jpeg)
 
 
 
@@ -905,7 +905,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img17.jpeg)
+![Maskedit celltype](Cell-Types_images/Cell-Types_img17.jpeg)
 
 
 
@@ -995,7 +995,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img18.jpeg)
+![Percentedit celltype](Cell-Types_images/Cell-Types_img18.jpeg)
 
 
 
@@ -1047,7 +1047,7 @@ this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 {% endtabs %}
 
 
-![](Cell-Types_images/Cell-Types_img19.png)
+![Richtextbox celltype](Cell-Types_images/Cell-Types_img19.png)
 
 
 
@@ -1140,7 +1140,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img20.jpeg)
+![Updownedit celltype](Cell-Types_images/Cell-Types_img20.jpeg)
 
 
 
@@ -1208,7 +1208,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img21.jpeg)
+![Nestedgrid](Cell-Types_images/Cell-Types_img21.jpeg)
 
 
 
@@ -1439,7 +1439,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img22.jpeg)
+![Nested grid-rows tied to the parent grid rows](Cell-Types_images/Cell-Types_img22.jpeg)
 
 
 
@@ -1546,7 +1546,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img23.jpeg)
+![Nested grid-columns tied to the parent grid columns](Cell-Types_images/Cell-Types_img23.jpeg)
 
 
 
@@ -1606,7 +1606,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img24.jpeg)
+![Nested grid-rows and columns independent of parent grid](Cell-Types_images/Cell-Types_img24.jpeg)
 
 
 
@@ -1644,7 +1644,7 @@ Essential Grid's Formula Library contains the mathematical functions that are av
 
 
 
-![](Cell-Types_images/Cell-Types_img25.jpeg)
+![Sample formula library usage](Cell-Types_images/Cell-Types_img25.jpeg)
 
 
 
@@ -4393,7 +4393,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img26.jpeg)
+![Cutom drop-down](Cell-Types_images/Cell-Types_img26.jpeg)
 
 
 
@@ -4409,7 +4409,7 @@ This cell builds a custom data template that can be used to set enriched styles 
 
 N> To create a cell type that hosts a WPF control, you should derive it from GridVirtualizingCellRenderer. The most important method to override is the OnInitializeContent method. It will be called for every UI element created for cells displaying this renderer. You can get access to the cell style from this method.
 
-The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and overrides OnInitializeContent and sets the Content Control template to Style.CellTemplate value.
+The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and overrides OnInitializeContent and sets the Content Control template to Style.CellItemTemplate value.
 
 #### Example
 
@@ -4441,9 +4441,9 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
         base.OnInitializeContent(uiElement, style);
         bool found = false;
 
-    if (style.CellTemplateKey != null)
+    if (style.CellItemTemplateKey != null)
         {
-            DataTemplate dt = (DataTemplate)style.GridControl.TryFindResource(style.CellTemplateKey);
+            DataTemplate dt = (DataTemplate)style.GridControl.TryFindResource(style.CellItemTemplateKey);
             found = dt != null;
 
             if (found)
@@ -4451,11 +4451,31 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
         }
 
         if (!found)
-            uiElement.ContentTemplate = style.CellTemplate;
+            uiElement.ContentTemplate = style.CellItemTemplate;
 
         uiElement.Content = style.CellValue;
     }
 
+    public override void CreateRendererElement(ContentControl uiElement, GridRenderStyleInfo style)
+    {
+
+        bool found = false;
+
+        if (style.CellItemTemplateKey != null)
+        {
+            DataTemplate dt = (DataTemplate)style.GridControl.TryFindResource(style.CellItemTemplateKey);
+            found = dt != null;
+            if (found)
+                uiElement.ContentTemplate = dt;
+        }
+
+        if (!found)
+            uiElement.ContentTemplate = style.CellItemTemplate;
+
+        uiElement.Content = style.CellValue;
+        base.CreateRendererElement(uiElement, style);
+    }
+	
     protected override string GetControlTextFromEditorCore(ContentControl uiElement)
     {
         return uiElement.Content.ToString();
@@ -4467,7 +4487,7 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
 #### Data Template Definition
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 <DataTemplate x:Key="editableEmployee">
 <StackPanel Margin="8,0"  Orientation="Horizontal">
 <TextBlock FontWeight="Bold" syncfusion:VisualContainer.WantsMouseInput="False" Text="{Binding Path=Name}" Width="70" />
@@ -4490,7 +4510,7 @@ void Model_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQue
     if (e.Cell.RowIndex > 1 && e.Cell.ColumnIndex == 2)
     {
         e.Style.CellType = "DataTemplate";
-        e.Style.CellTemplateKey = "editableEmployee";
+        e.Style.CellItemTemplateKey = "editableEmployee";
         e.Style.CellValue = employeesSource.Employees[e.Cell.RowIndex % employeesSource.Employees.Count];
         e.Style.Background = Brushes.Linen;
     }
@@ -4504,7 +4524,7 @@ The following output is generated using the code above.
 
 
 
-![](Cell-Types_images/Cell-Types_img27.jpeg)
+![Data template with cell template assigned](Cell-Types_images/Cell-Types_img27.jpeg)
 
 
 
@@ -4646,7 +4666,7 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 
 The following output is generated using the code above.
 
-![](Cell-Types_images/Cell-Types_img28.jpeg)
+![Richtextbox celltype](Cell-Types_images/Cell-Types_img28.jpeg)
 
 
 
@@ -4662,7 +4682,7 @@ Grid provides inherent support to host chart controls. This is achieved by using
 1. Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
 
 {% tabs %}
-{% highlight html %}
+{% highlight xaml %}
 <local:MyDataCollection x:Key="SeriesData1"/>
 <DataTemplate x:Key="DataChart">
 <!--Hosting Chart control in second Row of the Grid-->
@@ -4735,7 +4755,7 @@ public class MyDataCollection : ObservableCollection<MyData>
 {% highlight c# %}
 var cell = grid.Model[2, 2];
 cell.CellType = "DataTemplate";
-cell.CellTemplateKey = "DataChart";
+cell.CellItemTemplateKey = "DataChart";
 grid.Model.RowHeights[2] = 400d;
 {% endhighlight  %}
 {% endtabs %}
@@ -4744,7 +4764,7 @@ grid.Model.RowHeights[2] = 400d;
 
 The following output is generated using the code above.
 
-![](Cell-Types_images/Cell-Types_img29.jpeg)
+![Chart cell](Cell-Types_images/Cell-Types_img29.jpeg)
 
 
 
@@ -4799,7 +4819,7 @@ grid.Model[2, 2].ImageIndex = 1;
 
 The following output is generated using the code above.
 
-![](Cell-Types_images/Cell-Types_img30.jpeg)
+![Text image cell](Cell-Types_images/Cell-Types_img30.jpeg)
 
 
 

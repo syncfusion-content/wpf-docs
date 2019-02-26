@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Draw shapes, selection rectangles, or Pan Diagram, when you click and drag over the Digram surface
+title: Syncfusion Diagram allows to draw, select or pan with click and drag.
 description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
 platform: wpf
 control: SfDiagram
@@ -15,55 +15,9 @@ Drawing tool allow you to draw any kind of node/connector during runtime by clic
 
 ### Shapes
 
-To draw a shape, You have to activate the drawing tool by using the Tool property and you need to set the event for GetDrawType. The following code illustrates how to draw a rectangle at run time.
+To draw a shape, You have to activate the drawing tool by using the Tool property and you need to set the event for GetDrawType.
 
-[XAML]
-
-{% highlight xaml %}
-
-<Style TargetType="Path" x:Key="shapestyle">
-  <Setter Property="Fill" Value="#fcbc7c"></Setter>
-    <Setter Property="Stroke" Value="#f89b4c"/>
-    <Setter Property="Stretch" Value="Fill"></Setter>
-</Style>
-
-<Style TargetType="{x:Type diagram:Node}">
-  <Setter Property="Shape">
-    <Setter.Value>
-      <RectangleGeometry Rect="10,10,10,10"/>
-    </Setter.Value>
-  </Setter>
-  <Setter Property="ShapeStyle" Value="{StaticResource shapestyle}"></Setter>
-</Style>
-
-{% endhighlight %}
-
-[C#]
-
-{% highlight C# %}
-
-(diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
-diagram.DrawingTool = DrawingTool.Node;
-diagram.Tool = Tool.ContinuesDraw;
-
-private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
-{
-	args.DrawItem = new TextBlock()
-	{
-		Text = "Rectangle",
-		HorizontalAlignment = HorizontalAlignment.Center,
-		VerticalAlignment = VerticalAlignment.Center
-	};
-}
-
-{% endhighlight %}
-
-![](Tools_images/Tools_img1.jpeg)
-
-The following code example illustrates how to draw a path.
-
-[XAML]
-
+{% tabs %}
 {% highlight xaml %}
 
 <Style TargetType="Path" x:Key="shapestyle">
@@ -82,9 +36,9 @@ The following code example illustrates how to draw a path.
 
 {% endhighlight %}
 
-[C#]
-
 {% highlight C# %}
+
+//GetDrawType event is used to specify which item have to be drawn by the user.
 
 (diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
 diagram.DrawingTool = DrawingTool.Node;
@@ -101,15 +55,41 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Tools_images/Tools_img2.jpeg)
+![draw star shape](Tools_images/Tools_img2.jpeg)
+
+* `GetDrawType` event will invoke when start drawing and get DrawItem (i.e which item you will draw) from the user.To explore about arguments, please refer to the [DrawTypeEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DrawTypeEventArgs.html) .
+
+### Text
+
+Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw a text.
+
+{% tabs %}
+{% highlight C# %}
+
+(diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
+diagram.DrawingTool = DrawingTool.Node;
+diagram.Tool = Tool.ContinuesDraw;
+
+private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
+{
+	args.DrawItem = new TextBlock()
+	{
+		Text="text",
+		HorizontalAlignment = HorizontalAlignment.Center,
+		VerticalAlignment = VerticalAlignment.Center
+	};
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Connectors
 
 To draw Connectors, you have to set the Connector to DrawingTool property. The drawing tool can be activated by using the Tool property as shown. The following code example illustrates how to draw a straight line Connector.
 
-[XAML]
-
+{% tabs %}
 {% highlight xaml %}
 
 <Style x:Key="decoratorstyle" TargetType="Path">
@@ -136,32 +116,33 @@ diagram.DrawingTool = DrawingTool.Connector;
 diagram.Tool = Tool.DrawOnce;
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Tools_images/Tools_img3.jpg)
+![draw straight line connector](Tools_images/Tools_img3.jpg)
 
 Diagram allows you to establish connection with Node/Port as soon as you click on the Node/Port.
 
-### Text
+* `ObjectDrawn` event will invoke with drawing state.To explore about arguments,  please refer to the [ObjectDrawnEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html) .
 
-Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw a text.
+### FreeHand drawing
 
+Draw Bezier connections using freehand drawing. [DrawingTool](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DrawingTool.html) property is used to choose the FreeHand drawing.
+
+{% tabs %}
 {% highlight C# %}
 
-(diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
-diagram.DrawingTool = DrawingTool.Node;
-diagram.Tool = Tool.ContinuesDraw;
+// Enable the FreeHand drawing
+diagram.DrawingTool = DrawingTool.FreeHand;
 
-private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
-{
-	args.DrawItem = new TextBlock()
-	{
-		Text="text",
-		HorizontalAlignment = HorizontalAlignment.Center,
-		VerticalAlignment = VerticalAlignment.Center
-	};
-}
+// Enable the Tool
+//diagram.Tool = Tool.DrawOnce;
 
 {% endhighlight %}
+{% endtabs %}
+
+![free hand drawing](Interaction_images/FreeHand_img1.gif)
+
+FreeFormEvent will notify the current drawing Connector and drawing State in [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs_members.html). 
 
 ## Tool Selection
 
@@ -184,6 +165,7 @@ As all the three behaviors are completely different, You can achieve only one be
 
 You can set the desired tool to the Tool property of the Diagram. The following code illustrates how to enable single/multiple tools.
 
+{% tabs %}
 {% highlight C# %}
 
 //To Enable Single Tool
@@ -193,3 +175,4 @@ diagram.Tool = Tool.SingleSelect;
 diagram.Tool = Tool.SingleSelect | Tool.ZoomPan; 
  
 {% endhighlight %}
+{% endtabs %}

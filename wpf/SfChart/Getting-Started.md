@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for the SfChart.
+title: Getting Started for the Syncfusion SfChart.
 description: Getting start with simple application using SfChart in WPF.
 platform: wpf
 control: SfChart
@@ -90,7 +90,7 @@ chart.SecondaryAxis = secondaryAxis
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html).
 
-![](Getting-Started_images/img1.png)
+![Initializing WPF Chart](Getting-Started_images/img1.png)
 
 N> [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly.
 
@@ -313,7 +313,7 @@ chart.Series.Add(series)
 
 {% endtabs %} 
 
-N> Syncfusion Chart also supports rendering combination of multiple series. Refer [`this`](http://help.syncfusion.com/wpf/sfchart/area#multiple-area) for details.
+N> Syncfusion Chart also supports rendering combination of multiple series. Refer [`this`](https://help.syncfusion.com/wpf/sfchart/area#multiple-area) for details.
 
 ## Add Title
 
@@ -676,7 +676,7 @@ End Class
 
 The following chart is created as a result of the above codes.
 
-![](Getting-Started_images/img3.png)
+![Tooltip support in WPF Chart](Getting-Started_images/img3.png)
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfChart-GettingStarted-357667515).
+You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfChart-GettingStarted-357667515).
 

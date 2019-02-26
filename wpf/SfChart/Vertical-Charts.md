@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vertical Charts feature of SfChart.
+title: Vertical Charts feature of Syncfusion SfChart.
 description: Vertical Charts feature of SfChart.
 platform: wpf
 control: SfChart
@@ -9,7 +9,7 @@ documentation: ug
 
 # Vertical Charts
 
-SfChart provides support for vertical charts. You can plot vertical chart for any chart using [`IsTransposed`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries~IsTransposed.html#) and [`OpposedPosition`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html#) properties.
+SfChart provides support for vertical charts. You can plot vertical chart for any chart using [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries~IsTransposed.html#) and [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html#) properties.
 
 ## OpposedPosition
 
@@ -62,7 +62,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Vertical-Charts_images/VerticalCharts_1.png)
+![Opposed position support in WPF Chart](Vertical-Charts_images/VerticalCharts_1.png)
 
 
 ## IsTransposed
@@ -100,7 +100,7 @@ LineSeries series = new LineSeries()
 
 {% endtabs %}
 
-![](Vertical-Charts_images/VerticalCharts_2.png)
+![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_2.png)
 
 
 The following example demonstrates the vertical charts.
@@ -276,6 +276,6 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Vertical-Charts_images/VerticalCharts_3.png)
+![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_3.png)
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Snapping will snap objects with respect to grid lines in the Design environment. 
+title: Snap to gridlines or adjecent objects | Syncfusion.
 description: How to snap Nodes and Connectors over gridlines?
 platform: wpf
 control: SfDiagram
@@ -28,7 +28,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 {% endhighlight %}
 {% endtabs %}
 
-![](Gridlines_images/SnapToObject.gif)
+![Snap to object](Gridlines_images/SnapToObject.gif)
 
 Please refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
@@ -61,7 +61,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 {% endhighlight %}
 {% endtabs %}
 
-![](Gridlines_images/Gridlines_img1.jpeg)
+![Snap to Gridlines](Gridlines_images/Gridlines_img1.jpeg)
 
 ### Appearance
 

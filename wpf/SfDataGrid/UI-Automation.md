@@ -91,7 +91,7 @@ public MainWindow()
 
 
 
-   ![](Features_images/Features_img223.png)
+   ![Choose the coded ui test project from visual studio](Features_images/Features_img223.png)
 
 
 
@@ -99,7 +99,7 @@ public MainWindow()
    {:.caption}
 4. After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
 
-   ![](Features_images/Features_img224.png)
+   ![Choose the type of coded ui test  from visual studio](Features_images/Features_img224.png)
 
 
 
@@ -109,7 +109,7 @@ public MainWindow()
 
 
 
-   ![](Features_images/Features_img225.png)
+   ![Genarate the coded ui test files by using the CodedUITestBuilder](Features_images/Features_img225.png)
 
 
 
@@ -117,7 +117,7 @@ public MainWindow()
    {:.caption}
 6. You can also open the CodedUITestBuilder from existing Coded UI project by right clicking on the CodedUITestMethod1 in CUIT file and clicking the Generate Code For Coded UI Test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom right corner of the window.
 
-   ![](Features_images/Features_img226.png)
+   ![UI Automation in SfDataGrid WPF](Features_images/Features_img226.png)
 
 
 
@@ -128,7 +128,7 @@ public MainWindow()
 
 
 
-   ![](Features_images/Features_img227.png)
+   ![Record the coded ui test actions by using the CodedUITest builder](Features_images/Features_img227.png)
 
 
 
@@ -155,7 +155,7 @@ public void RecordedMethod1()
 
 10. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
 
-    ![](Features_images/Features_img228.png)
+    ![SfDataGrid UI Automation with adding the assertion](Features_images/Features_img228.png)
 
 
 
@@ -163,7 +163,7 @@ public void RecordedMethod1()
     {:.caption}
 11. After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
 
-    ![](Features_images/Features_img229.png)
+    ![Run the SfDataGrid coded ui test](Features_images/Features_img229.png)
 
 
 
@@ -266,6 +266,10 @@ Properties</th></tr>
 SfDataPager</th><th>
 AccentBackgroundAccentForegroundAutoEllipsisModeAutoEllipsisTextDisplayModeEnableGridPagingNumericButtonCountOrientationPageCountPageSizeUseOnDemandPaging</th></tr>
 </table>
+
+### Limitations
+
+*  SfDataGrid UI Automation will not work when you automate the datagrid with editing in Visual Studio 2015. It is a known issue in Visual Studio 2015.
 
 ### How To
 

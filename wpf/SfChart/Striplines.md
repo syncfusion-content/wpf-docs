@@ -13,7 +13,7 @@ SfChart allows you to add Striplines to the chart, which shades the specific reg
 
 ## Positioning the Striplines
 
-SfChart provides [`Start`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Start.html#) and [`Width`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Width.html#) property for defining the Stripline start and end range. These values correspond to the axis values (or range). The Stripline can be filled using brush set in [`Background`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Background.html#) property.
+SfChart provides [`Start`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Start.html#) and [`Width`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Width.html#) property for defining the Stripline start and end range. These values correspond to the axis values (or range). The Stripline can be filled using brush set in [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Background.html#) property.
 
 {% tabs %}
 
@@ -56,12 +56,12 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_1.png)
+![Positioning the striplines in WPF Chart](Striplines_images/stripline_1.png)
 
 
 ### Position based on device coordinates
 
-You can specify the stripline width in pixel by enabling [`IsPixelWidth`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~IsPixelWidth.html#) Boolean property. By default, this property value is false.
+You can specify the stripline width in pixel by enabling [`IsPixelWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~IsPixelWidth.html#) Boolean property. By default, this property value is false.
 
 The following code example illustrates the positioning of stripline based on pixels.
 
@@ -110,14 +110,14 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_2.png)
+![Positioning the striplines based on device coordinates in WPF Chart](Striplines_images/stripline_2.png)
 
 
 ## Label 
 
-We can define any text inside the stripline using [`Label`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Label.html#) property. Also SfChart provides various customization options for this label like alignment, templates, etc.
+We can define any text inside the stripline using [`Label`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Label.html#) property. Also SfChart provides various customization options for this label like alignment, templates, etc.
 
-The [`LabelHorizontalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelHorizontalAlignment.html#) and [`LabelVerticalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelVerticalAlignment.html#) property can be used for positioning the labels inside the stripline.
+The [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelHorizontalAlignment.html#) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelVerticalAlignment.html#) property can be used for positioning the labels inside the stripline.
 
 {% tabs %}
 
@@ -174,12 +174,12 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_3.png)
+![Label for striplines in WPF Chart](Striplines_images/stripline_3.png)
 
 
 ### Rotating the label
 
-The label can be rotated to the specified angle using [`LabelAngle`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelAngle.html#) property. The following code example explains the rotation of stripline label:
+The label can be rotated to the specified angle using [`LabelAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelAngle.html#) property. The following code example explains the rotation of stripline label:
 
 {% tabs %}
 
@@ -232,14 +232,14 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_4.png)
+![Stripline label rotation in WPF Chart](Striplines_images/stripline_4.png)
 
 
 N> Here, Start and Width of the stripline as adjusted based on the rotation angle. Stripline won’t adjust its range based on the stripline angle.
 
 ### Template support for the label
 
-[`LabelTemplate`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelTemplate.html#) property allows you to define the data template for the stripline label like the following code example.
+[`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~LabelTemplate.html#) property allows you to define the data template for the stripline label like the following code example.
 
 {% tabs %}
 
@@ -316,7 +316,7 @@ chart.PrimaryAxis.StripLines.Add(stripline);
 
 {% endtabs %}
 
-![](Striplines_images/stripline_5.png)
+![Template support for striplines label in WPF Chart](Striplines_images/stripline_5.png)
 
 
 ## Multiple Striplines
@@ -410,10 +410,10 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_6.png)
+![Multiple striplines in WPF Chart](Striplines_images/stripline_6.png)
 
 
-If you want to repeat the same type of stripline at regular intervals, SfChart provides two properties[`RepeatEvery`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~RepeatEvery.html#) and [`RepeatUntil`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~RepeatUntil.html#).
+If you want to repeat the same type of stripline at regular intervals, SfChart provides two properties[`RepeatEvery`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~RepeatEvery.html#) and [`RepeatUntil`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~RepeatUntil.html#).
 
 N> This can be used to fill plot area background alternatively.
 
@@ -477,14 +477,14 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_7.png)
+![Stripline re-occurence in WPF Chart](Striplines_images/stripline_7.png)
 
 
 ## Segmented Stripline
 
-Striplines can also be placed in a particular region with respect to segment. You can enable the segment striplines using [`IsSegmented`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~IsSegmented.html#) property.
+Striplines can also be placed in a particular region with respect to segment. You can enable the segment striplines using [`IsSegmented`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~IsSegmented.html#) property.
 
-So the start and end value of this type of striplines can be defined using [`SegmentStartValue`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~SegmentStartValue.html#) and [`SegmentEndValue`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~SegmentEndValue.html#) property.
+So the start and end value of this type of striplines can be defined using [`SegmentStartValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~SegmentStartValue.html#) and [`SegmentEndValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~SegmentEndValue.html#) property.
 
 The following code example demonstrates segmented striplines.
 
@@ -607,12 +607,12 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_8.png)
+![Segmented striplines in WPF Chart](Striplines_images/stripline_8.png)
 
 
 ## Customization
 
-The background, border brush and border thickness of the stripline can be modified using [`Background`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Background.html#), [`BorderBrush`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~BorderBrush.html#) and [`BorderThickness`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~BorderThickness.html#) properties  as in the following code example.
+The background, border brush and border thickness of the stripline can be modified using [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~Background.html#), [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~BorderBrush.html#) and [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartStripLine~BorderThickness.html#) properties  as in the following code example.
 
 {% tabs %}
 
@@ -666,7 +666,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_9.png)
+![Customization of striplines in WPF Chart](Striplines_images/stripline_9.png)
 
 
 ### Transparency 
@@ -757,6 +757,6 @@ chart.Watermark.Content = textBlock;
 
 {% endtabs %}
 
-![](Striplines_images/stripline_10.png)
+![Transparency of striplines in WPF Chart](Striplines_images/stripline_10.png)
 
 
