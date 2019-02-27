@@ -1081,385 +1081,745 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 ## Drag and Drop Rows
 
-SfDataGrid don’t have the direct support for the row drag and drop. You can achieve this drag and drop by overriding the SelectionController class. The dragging will be initiated in ProcessPointerPressed method and the PopupContentControl is used to show the dragging record information.
-You can drag and drop records between two groups which is done through DragAndDropWhenGroup method. You can use SfDataGrid.AutoScroller to scroll the grid while dragging the record.
+SfDataGrid allows drag and drop the rows within and between controls by setting the [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDraggingRows.html) and [AllowDrop](https://msdn.microsoft.com/en-us/library/system.windows.uielement.allowdrop(v=vs.110).aspx) property as true. It is also possible to drag and drop the rows between datagrid and other controls such as ListView and SfTreeGrid. SfDataGrid allows dropping rows when AllowDrop is true and allows dragging when AllowDraggingRows is true.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfDataGrid x:Name="datagrid" 
+                               AllowDraggingRows="True"
+                               AllowDrop="True"
+                               ItemsSource="{Binding Source}"/>
+{% endhighlight %}
+
+{% highlight c# %}
+this.datagrid.AllowDraggingRows = true;
+this.datagrid.AllowDrop = true;
+{% endhighlight %}
+{% endtabs %}
+
+When dropping, the dragged records can be added above or below to the target record based on its drop position
+
+For example, if you dropped record at the bottom of the targeted record, it will be added below the targeted record.
+
+![Drag and drop rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img24.png)
+
+If you drop over the targeted record, it will be added as a child of that targeted record
+
+![Drag and drop rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img25.png)
+
+### Dragging multiple rows
+
+SfDataGrid allows to drag multiple selected rows. To enable multiple selection, set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) as Multiple or Extended. 
+
+N> The drag selection cannot be performed while the [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDraggingRows.html) enabled as true in the SfDataGrid.
+
+![Dragging multiple rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img26.png)
+
+### Events
+
+SfDataGrid triggers the following events when drag and drop:
+
+#### DragStart
+
+[DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragStart_EV.html)  event occurs when you start to drag the records in datagrid. The [GridRowDragStartEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs.html)  has the following member, which provides information for the DragStart event.
+[DraggingRecords](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs~DraggingRecords.html): Gets the Records which contains the data associated while dragging the rows. 
 
 {% tabs %}
 {% highlight c# %}
+this.sfDataGrid.RowDragDropController.DragStart += RowDragDropController_DragStart;
 
-public class GridSelectionControllerExt : GridSelectionController
+private void RowDragDropController_DragStart(object sender, GridRowDragStartEventArgs e)
 {
-    #region Fields
-    public Popup popup;
-    public Popup upArrowIndicator;
-    public Popup downArrowIndicator;
-    public DraggablePopupContentControl draggablePopupContentControl = null;
 
-    NodeEntry _draggingRecordEntry = null;
-    private bool _isDragging;
-        
-    int previousRowIndex = -1;
-    #endregion
-
-    #region Properties
-
-    public bool IsDragging
-    {
-        get { return _isDragging; }
-        set { _isDragging = value; }
-    }
-
-    public VisualContainer visualContainer = null;
-
-    #endregion
-
-    #region ctr
-
-    public GridSelectionControllerExt(SfDataGrid sfDataGrid)
-        : base(sfDataGrid)
-    {
-        this.DataGrid.Loaded += DataGrid_Loaded;
-    }
-
-    void DataGrid_Loaded(object sender, RoutedEventArgs e)
-    {
-        visualContainer = this.DataGrid.GetVisualContainer();
-        this.DataGrid.AutoScroller = new AutoScrollerExt();
-        UpdateAutoScroller();
-    }
-
-    #endregion
-
-    #region Overrides
-
-    protected override void ProcessPointerPressed(MouseButtonEventArgs args, RowColumnIndex rowColumnIndex)
-    {
-        base.ProcessPointerPressed(args, rowColumnIndex);
-   
-        if (rowColumnIndex.RowIndex >= this.DataGrid.ResolveStartIndexBasedOnPosition() && rowColumnIndex.ColumnIndex == 0)
-        {
-            _draggingRecordEntry = DataGrid.GetNodeEntry(rowColumnIndex.RowIndex);
-   
-            if (_draggingRecordEntry.IsGroups)
-                this.DataGrid.View.TopLevelGroup.ResetCache = true;
-   
-            if (!_draggingRecordEntry.IsRecords)
-            {
-                _draggingRecordEntry = null;
-                return;
-            }
-            _isDragging = true;
-            InitializePopupControl();
-
-            // Get the exact position where this mouse pointer is pressed
-            var p = args.GetPosition(this.visualContainer);                
-
-            var gridRect = this.GetControlRect(this.DataGrid);
-
-            // Set the Horizontal and Vertical offset for popup screen
-            popup.HorizontalOffset = p.X;
-            popup.VerticalOffset = p.Y;
-
-            //Show the Drag indicator            
-            this.ShowDragIndication(gridRect, p);
-            popup.IsOpen = true;
-            this.SuspendAutoScrolling = true;
-            draggablePopupContentControl.CaptureMouse();
-        }
-    }
-    
-    #endregion
-
-    #region Events of DraggablePopupContentControl
-
-    private void OnDrop(object sender, MouseButtonEventArgs e)
-    {
-    
-        if (!this.IsDragging || this.popup == null)
-            return;
-
-        if (_draggingRecordEntry.Parent != null)
-            DragAndDropWhenGroup(e);
-    
-        else
-            DragAndDropWithRecord(e);
-
-        _isDragging = false;
-        popup.IsOpen = false;
-        upArrowIndicator.IsOpen = false;
-        downArrowIndicator.IsOpen = false;
-        this.DataGrid.AutoScroller.AutoScrolling = AutoScrollOrientation.None;
-    }
-
-    private void DragOver(object sender, MouseEventArgs e)
-    {            
-
-        if (!IsDragging || this.popup == null || !(sender is DraggablePopupContentControl))
-            return;
-        this.draggablePopupContentControl.CaptureMouse();
-        var p = e.GetPosition(this.visualContainer);            
-
-        if (!IsPointInsideSfDataGrid(p))
-        {
-            var pointToContentControl = draggablePopupContentControl.PointToScreen(e.GetPosition(draggablePopupContentControl));
-            popup.HorizontalOffset = p.X;
-            popup.VerticalOffset = p.Y;
-            upArrowIndicator.IsOpen = downArrowIndicator.IsOpen = false;
-            var visual = this.DataGrid.GetVisualContainer();
-            this.SuspendAutoScrolling = true;
-            this.DataGrid.AutoScroller.AutoScrolling = AutoScrollOrientation.Vertical;
-        }
-
-        else
-        {
-
-            // Set the Horizontal and Vertical offset for popup screen
-            popup.HorizontalOffset = p.X;
-            popup.VerticalOffset = p.Y;
-            this.ShowDragIndication(this.GetControlRect(this.DataGrid), p);
-            popup.IsOpen = true;
-        }
-        (this.DataGrid.AutoScroller as AutoScrollerExt).MousePoint = e.GetPosition(this.DataGrid);
-        e.Handled = true;
-    }
-
-    #endregion
-
-    #region Methods
-
-    void UpdateAutoScroller()
-    {
-        this.DataGrid.AutoScroller.VisualContainer = this.visualContainer;
-        this.DataGrid.AutoScroller.AutoScrollBounds = this.visualContainer.GetClipRect(ScrollAxisRegion.Header, ScrollAxisRegion.Footer);
-        this.DataGrid.AutoScroller.IntervalTime = new TimeSpan(0, 0, 0, 0, 40);
-        this.DataGrid.AutoScroller.InsideScrollMargin = new Size(0, 0);
-    }
-
-    private void InitializePopupControl()
-    {
-
-        if (this.popup != null)
-        {
-            draggablePopupContentControl.DataContext = _draggingRecordEntry;
-            return;
-        }
-
-
-        //Initialize Popup, UpArrow, DownArrow and DraggablePopupContentControl
-        popup = new Popup();
-        upArrowIndicator = new Popup();
-        downArrowIndicator = new Popup();
-        draggablePopupContentControl = new DraggablePopupContentControl(this.DataGrid) { DataContext = _draggingRecordEntry };
-
-        //Set width and Height of popup
-        popup.Height = 110;
-        popup.Width = 250;
-
-        //Set the placement target for popup ,UpArrowIndicator and DownArrowIndicator
-        popup.Placement = PlacementMode.Relative;
-        popup.PlacementTarget = this.visualContainer;
-        popup.AllowsTransparency = true;
-
-        upArrowIndicator.Placement = PlacementMode.Relative;
-        upArrowIndicator.PlacementTarget = this.visualContainer;
-        upArrowIndicator.AllowsTransparency = true;
-
-        downArrowIndicator.Placement = PlacementMode.Relative;
-        downArrowIndicator.PlacementTarget = this.visualContainer;
-        downArrowIndicator.AllowsTransparency = true;
-
-        popup.Child = draggablePopupContentControl;
-        upArrowIndicator.Child = new UpIndicatorContentControl();
-        downArrowIndicator.Child = new DownIndicatorContentControl();
-
-        draggablePopupContentControl.PreviewMouseMove += DragOver;
-        draggablePopupContentControl.PreviewMouseLeftButtonUp += OnDrop;
-    }
-
-    private void ShowDragIndication(Rect gridRect, Point mousePoint)
-    {
-        var currentRowColumnIndex = visualContainer.PointToCellRowColumnIndex(Mouse.GetPosition(visualContainer));
-
-        if (currentRowColumnIndex.IsEmpty || currentRowColumnIndex.RowIndex < this.DataGrid.ResolveStartIndexBasedOnPosition())
-            return;
-
-        int currentRecordIndex = this.DataGrid.ResolveToRecordIndex(currentRowColumnIndex.RowIndex);
- 
-        if (currentRecordIndex == -1)
-            return;
-
-        var rowGenerator = this.DataGrid.GetRowGenerator();
-        var nodeEntry = DataGrid.GetNodeEntry(currentRowColumnIndex.RowIndex);
-
-        if (!nodeEntry.IsRecords)
-            return;
-        var recordUnderMouse = nodeEntry as RecordEntry;
-        var dataRow = rowGenerator.Items.FirstOrDefault(row => (row.RowType != RowType.HeaderRow && (row.RowData as Orders) == recordUnderMouse.Data as Orders)) as DataRowBase;
- 
-        //Get the WholeRowElement for DataRow
-        var wholeRowElement = dataRow.GetType().GetField("WholeRowElement", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(dataRow) as VirtualizingCellsControl;
- 
-        //Get the mouse point position on the VirtualizingCellsControl
-        var mousePointOnVirtualizingCellsControl = Mouse.GetPosition(wholeRowElement);
- 
-        //Set the Horizontal and Vertical Offset for UpArrowIndicator and DownArrowIndicator
-        upArrowIndicator.HorizontalOffset = DataGrid.RowHeaderWidth;
-        downArrowIndicator.HorizontalOffset = DataGrid.RowHeaderWidth;
-
-        //Check whether the mouse point is on the top or end of the Row element 
- 
-        if (currentRecordIndex != previousRowIndex || (currentRecordIndex == previousRowIndex && mousePointOnVirtualizingCellsControl.Y < this.DataGrid.RowHeight / 2))
-        {
-            previousRowIndex = currentRecordIndex;
-
-            upArrowIndicator.VerticalOffset = mousePoint.Y - mousePointOnVirtualizingCellsControl.Y;
-            downArrowIndicator.VerticalOffset = mousePoint.Y - (mousePointOnVirtualizingCellsControl.Y + 22);
-        }
- 
-        else if (currentRecordIndex == previousRowIndex && mousePointOnVirtualizingCellsControl.Y > this.DataGrid.RowHeight / 2)
-        {
-            upArrowIndicator.VerticalOffset = mousePoint.Y + (this.DataGrid.RowHeight - mousePointOnVirtualizingCellsControl.Y);
-            downArrowIndicator.VerticalOffset = mousePoint.Y + (this.DataGrid.RowHeight - mousePointOnVirtualizingCellsControl.Y) - 22;
-        }
-
-        upArrowIndicator.IsOpen = true;
-        downArrowIndicator.IsOpen = true;
-    }
-
-    private void DragAndDropWhenGroup(MouseButtonEventArgs e)
-    {
-        var point = e.GetPosition(visualContainer);
-        var rowColumnIndex = visualContainer.PointToCellRowColumnIndex(point);
-        bool isSameGroup = false;
-
-        if (!_isDragging)
-            return;
-
-        // Get the droppingRecordEntry using RowIndex            
-        var droppingRecordEntry = DataGrid.GetNodeEntry(rowColumnIndex.RowIndex);
-
-        if (droppingRecordEntry == null)
-            return;
-
-        if (!droppingRecordEntry.IsRecords)
-            return;
-
-        if (droppingRecordEntry.Parent == _draggingRecordEntry.Parent)
-            isSameGroup = true;
-
-        if (_draggingRecordEntry == droppingRecordEntry)
-        {
-            return;
-        }
-        var draggingGroup = _draggingRecordEntry.Parent as Group;
-        draggingGroup.RemoveRecord(_draggingRecordEntry as RecordEntry, true);
-        draggingGroup.SetDirty();
-        int indexOfDroppingRecord = (droppingRecordEntry.Parent as Group).Records.IndexOf(droppingRecordEntry as RecordEntry);
- 
-        if (!isSameGroup)
-        {
-            _draggingRecordEntry.Parent = null;
-        }
-        _draggingRecordEntry.Parent = droppingRecordEntry.Parent;
-        (droppingRecordEntry.Parent as Group).InsertRecord(indexOfDroppingRecord, _draggingRecordEntry as RecordEntry, true);
-        this.DataGrid.View.TopLevelGroup.ResetCache = true;
-        this.DataGrid.View.TopLevelGroup.SetDirty();
-        this.DataGrid.GetGridModel().RefreshView(true);
-        this.DataGrid.SelectedItem = ((_draggingRecordEntry.Parent as Group).Records[indexOfDroppingRecord] as RecordEntry).Data;
-    }
-
-    private void DragAndDropWithRecord(MouseButtonEventArgs e)
-    {            
-        var point = e.GetPosition(visualContainer);
-        var upArrowPoint = new Point(upArrowIndicator.HorizontalOffset, upArrowIndicator.VerticalOffset- 22 );
-        var downArrowPoint = new Point(downArrowIndicator.HorizontalOffset, downArrowIndicator.VerticalOffset + 22);            
-        var rowColumnIndex = visualContainer.PointToCellRowColumnIndex(point);
-        var currentRowIndex = DataGrid.ResolveToRowIndex(_draggingRecordEntry);
-
-        point = rowColumnIndex.RowIndex >  currentRowIndex ? upArrowPoint : downArrowPoint;
-        
-        rowColumnIndex = visualContainer.PointToCellRowColumnIndex(point);
- 
-        if (!_isDragging)
-            return;
- 
-        if (!(this.DataGrid is DetailsViewDataGrid))
-        {
-            var vm = DataGrid.DataContext as ViewModel;
- 
-            if (!rowColumnIndex.IsEmpty)
-            {
- 
-                // Get the RecordIndex using RowIndex
-                var index = DataGrid.ResolveToRecordIndex(rowColumnIndex.RowIndex);
- 
-                if (index != -1)
-                {
-                    var dragRecord = (_draggingRecordEntry as RecordEntry).Data as Orders;
- 
-                    // Remove the Selected Row Data from Source
-                    vm.OrderDetails.Remove(dragRecord);
- 
-                    // Add the removed Selected Row Data to Source based on RecordIndex
-                    vm.OrderDetails.Insert(index, dragRecord);
- 
-                    // Selected Item is reset with new data
-                    DataGrid.SelectedItem = vm.OrderDetails[index];
-                }
- 
-                else
-                {
-                    var dragRecord = (_draggingRecordEntry as RecordEntry).Data as Orders;
- 
-                    // Remove the Selected Row Data from Dragging SfDataGrid 
-                    vm.OrderDetails.Remove(dragRecord);
- 
-                    // Insert the Selected row data to specified index position of dropping SfDataGrid
-                    vm.OrderDetails.Insert(index + 1, dragRecord);
- 
-                    // Selected Item is reset with new dropped row data
-                    DataGrid.SelectedItem = (_draggingRecordEntry as RecordEntry).Data;
-                    this.MoveCurrentCell(new RowColumnIndex(rowColumnIndex.RowIndex + 1, 1));
-                }
-            }
- 
-            else
-            {
-                return;
-            }
-        }
-    }
-    #endregion
-
-    #region HelperMethods
-
-    internal Rect GetControlRect(FrameworkElement control)
-    {
-        var locationFromWindow = control.TranslatePoint(new Point(0, 0), control);
-        var locationFromScreen = locationFromWindow;
-        return new Rect((locationFromScreen.X - locationFromWindow.X),
-                            (locationFromScreen.Y - locationFromWindow.Y),
-                            control.ActualWidth, control.ActualHeight);
-    }
-
-    private bool IsPointInsideSfDataGrid(Point point)
-    {
-        return this.GetControlRect(this.DataGrid).Contains(point);
-    }
-
-    public override void Dispose()
-    {
-        base.Dispose();
-        if (draggablePopupContentControl == null) return;
-        draggablePopupContentControl.PreviewMouseMove -= DragOver;
-        draggablePopupContentControl.PreviewMouseLeftButtonUp -= OnDrop;
-        draggablePopupContentControl.Dispose();
-    }
-    #endregion
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDropDemo-1353683226.zip). In the sample you can get the Popup for the drag and drop rows.
+#### DragOver
 
+[DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragOver_EV.html) event occurs continuously while record is dragged within the target SfDataGrid. The [GridRowDragOverEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragOverEventArgs.html) has the following members, which provide information for the DragOver event.
+[Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html): Gets a data object that contains the data associated while dragging the rows. 
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location 
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same DataGrid or not.
+[ShowDragUI](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragOverEventArgs~ShowDragUI.html): Gets or sets a value indicating the default Dragging UI.  
+[TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html): Gets a value indicating the target record which is going to drop.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowDragDropController.DragOver += RowDragDropController_DragOver;
+
+private void RowDragDropController_DragOver(object sender, GridRowDragOverEventArgs e)
+{
+            
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### DragLeave
+
+[DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragLeave_EV.html) event occurs when leave a drag-and-drop operation.The [GridRowDragLeaveEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragLeaveEventArgs.html) has the following members, which provide information for the DragLeave event.
+[Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html): Gets a data object that contains the data associated while dragging the rows. 
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location 
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same DataGrid or not.
+[TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html): Gets a value indicating the target record which is going to drop.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowDragDropController.DragLeave += RowDragDropController_DragLeave;
+
+private void RowDragDropController_DragLeave(object sender, GridRowDragLeaveEventArgs e)
+{
+            
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Drop
+
+[Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Drop_EV.html) event occurs when a record is dropping within the target SfDataGrid.The  [GridRowDropEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDropEventArgs.html) has the following members, which provide information for the Drop event.
+[Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html): Gets a data object that contains the data associated while dragging the rows. 
+[DraggingRecords](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs~DraggingRecords.html): Gets the Records which contains the data associated while dragging the rows. 
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location 
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same DataGrid or not.
+[TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html): Gets a value indicating the target record which is going to drop.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowDragDropController.Drop += RowDragDropController_Drop;
+
+private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
+{
+            
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Dropped
+
+[Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Dropped_EV.html) event occurs when a record is dropping within the target SfDataGrid.The  [GridRowDroppedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDroppedEventArgs.html) has the following members, which provide information for the Drop event.
+[Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html): Gets a data object that contains the data associated while dragging the rows. 
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location 
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same DataGrid or not.
+[TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html): Gets a value indicating the target record which is going to drop.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowDragDropController.Dropped += RowDragDropController_Dropped;
+
+private void RowDragDropController_Dropped(object sender, GridRowDroppedEventArgs e)
+{
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing row drag and drop operation
+
+#### Disable dragging of certain rows
+
+You can restrict the dragging of certain rows in SfDataGrid by using the  [GridRowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragStart_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowDragDropController.DragStart += RowDragDropController_DragStart;
+
+private void RowDragDropController_DragStart(object sender, Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs e)
+{
+    var records = e.DraggingRecords;
+    var orders = records[0] as Orders;
+    // You can restrict the dragging for certain rows based on the record value also. 
+    var rowIndex = this.sfDataGrid.ResolveToRowIndex(orders);
+    var recordIndex = this.sfDataGrid.ResolveToRecordIndex(rowIndex);
+    if (recordIndex > 5)
+        e.Handled = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Disable dropping in certain rows
+
+You can restrict the dropping the records in certain rows in SfDataGrid by using the [GridRowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Drop_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowDragDropController.Drop += RowDragDropController_Drop;
+
+private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
+{
+    var record = e.TargetRecord;
+    if (record == null)
+        return;
+    var orders = (record as RecordEntry).Data as Orders;
+    // You can restrict the dropping for certain rows based on the target record value also. 
+    var rowIndex = this.sfDataGrid.ResolveToRowIndex(orders);
+    var recordIndex = this.sfDataGrid.ResolveToRecordIndex(rowIndex);
+    if (recordIndex > 5)
+        e.Handled = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Disable the default drag UI
+
+You can disable the draggable popup by setting the [ShowDragUI](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragOverEventArgs~ShowDragUI.html) as false in the [DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragOver_EV.html) event of  [GridRowDragDropController.DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragOver_EV.html) event .
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowDragDropController.DragOver += RowDragDropController_DragOver;
+
+private void RowDragDropController_DragOver(object sender, GridRowDragOverEventArgs e)
+{
+    e.ShowDragUI = false;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Customizing draggable Popup
+
+To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowDragDropTemplate.html) property in the SfDataGrid.
+
+{% tabs %}
+{% highlight xaml %}
+<DataTemplate x:Key="dragdroptemplate">
+            <Border x:Name="border" Width="250"  
+                            Background="#ececec" 
+                            BorderBrush="#c8c8c8"  Height="60"
+                            BorderThickness="1.2">
+
+                <Grid  VerticalAlignment="Center" 
+                          HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Padding="12,0,0,0" Text="Dragging rows count :" FontSize="14" FontFamily="Segoe UI" 
+                                       Foreground="#333333" FontWeight="Regular" Background="SkyBlue" />
+
+                    <TextBlock Text="{Binding DraggingRecords.Count}" FontSize="14" 
+                                       FontFamily="Segoe UI"
+                                       FontWeight="Regular" 
+                                       Foreground="#333333" 
+                                       Grid.Column="1" Margin="-100,0,0,0"/>
+
+                    <Separator  Grid.Row="1" Height="2" BorderBrush="#c8c8c8"
+                                        HorizontalAlignment="Stretch"  BorderThickness="1"
+                                        VerticalAlignment="Stretch"  Width="250"/>
+
+                    <TextBlock Text="Drop status:" 
+                                       Foreground="#333333"
+                                       Padding="12,0,0,0" Background="SkyBlue"
+                                       FontFamily="Segoe UI" 
+                                       FontWeight="Regular" 
+                                       FontSize="14"
+                                       Grid.Row="2"/>
+
+                    <TextBlock Text="{Binding DragStatus}" 
+                                       FontSize="14"
+                                       FontFamily="Segoe UI"
+                                       FontWeight="Regular"
+                                       Foreground="#333333" 
+                                       Margin="-163,0,0,0"
+                                       Grid.Row="2" 
+                                       Grid.Column="1"/>
+                </Grid>
+            </Border>
+ </DataTemplate>
+
+<Syncfusion:SfDataGrid x:Name="datagrid" 
+                               AllowDraggingRows="True"
+                               AllowDrop="True"
+                               RowDragDropTemplate="{StaticResource dragdroptemplate}"
+                               ItemsSource="{Binding Source}"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing draggable Popup in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img27.png)
+
+### Row drag and drop between SfDataGrid and ListView
+
+To perform dragging between the ListView and SfDataGrid, by using the [GridRowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragStart_EV.html) and [GridRowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Drop_EV.html) events. And you must set the AllowDrop property as true in the ListView while doing the drag and drop operation from SfDataGrid with ListView control.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.RowDragDropController.DragStart += sfGrid_DragStart;
+this.dataGrid.RowDragDropController.Drop += sfGrid_Drop;
+this.listView.PreviewMouseMove += ListView_PreviewMouseMove;
+this.listView.Drop += ListView_Drop;
+
+
+/// <summary>
+/// customize the DragStart event.Restrict the certain record from dragging.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void sfGrid_DragStart(object sender, GridRowDragStartEventArgs e)
+{
+    var draggingRecords = e.DraggingRecords[0] as OrderInfo;
+    if (draggingRecords.CustomerName == "Martin")
+    {
+        e.Handled = true;
+    }
+
+}
+       
+
+/// <summary>
+/// Customize the Drop event.restrict the certain record and Drop position from drop.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void sfGrid_Drop(object sender, GridRowDropEventArgs e)
+{
+    if (e.IsFromOutSideSource)
+    {
+        ObservableCollection<object> DraggingRecords = new ObservableCollection<object>();
+        if (e.Data.GetDataPresent("ListViewRecords"))
+            DraggingRecords = e.Data.GetData("ListViewRecords") as ObservableCollection<object>;
+        else
+            DraggingRecords = e.Data.GetData("Records") as ObservableCollection<object>;
+
+        var draggingRecords = DraggingRecords[0] as OrderInfo;
+
+        int dropIndex = (int)e.TargetRecord;
+
+        var dropPosition = e.DropPosition.ToString();
+               
+        IList collection = AssociatedObject.sfGrid.View.SourceCollection as IList;
+
+        if (dropPosition == "DropAbove")
+        {
+            dropIndex--;
+            collection.Insert(dropIndex, draggingRecords);
+        }
+        else
+        {
+            dropIndex++;
+            collection.Insert(dropIndex, draggingRecords);
+        }
+
+    (AssociatedObject.listView.ItemsSource as ObservableCollection<OrderInfo>).Remove(draggingRecords as OrderInfo);
+        e.Handled = true;
+
+    }
+}
+
+
+/// <summary>
+/// List view initiates the DragDrop operation
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void ListView_PreviewMouseMove(object sender, MouseEventArgs e)
+{
+    if (e.LeftButton == MouseButtonState.Pressed)
+    {
+        ListBox dragSource = null;
+
+                
+        var records = new ObservableCollection<object>();
+                
+        ListBox parent = (ListBox)sender;
+
+        dragSource = parent;
+
+        object data = GetDataFromListBox(dragSource, e.GetPosition(parent));
+
+        records.Add(data);
+
+        var dataObject = new DataObject();
+        dataObject.SetData("ListViewRecords", records);
+        dataObject.SetData("ListView", AssociatedObject.listView);
+
+        if (data != null)
+        {
+            DragDrop.DoDragDrop(parent, dataObject, DragDropEffects.Move);
+        }
+
+    }
+    e.Handled = true;
+}
+
+/// <summary>
+/// Get the data from list box control
+/// </summary>
+/// <param name="source"></param>
+/// <param name="point"></param>
+/// <returns></returns>
+private static object GetDataFromListBox(ListBox source, Point point)
+{
+    UIElement element = source.InputHitTest(point) as UIElement;
+    if (element != null)
+    {
+        object data = DependencyProperty.UnsetValue;
+        while (data == DependencyProperty.UnsetValue)
+        {
+            data = source.ItemContainerGenerator.ItemFromContainer(element);
+            if (data == DependencyProperty.UnsetValue)
+            {
+                element = VisualTreeHelper.GetParent(element) as UIElement;
+            }
+            if (element == source)
+            {
+                return null;
+            }
+        }
+        if (data != DependencyProperty.UnsetValue)
+        {
+            return data;
+        }
+    }
+    return null;
+}
+
+        
+       
+
+/// <summary>
+/// ListView Drop event.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void ListView_Drop(object sender, DragEventArgs e)
+{
+            
+    ObservableCollection<object> DraggingRecords = new ObservableCollection<object>();
+    if (e.Data.GetDataPresent("ListViewRecords"))
+    {
+        DraggingRecords = e.Data.GetData("ListViewRecords") as ObservableCollection<object>;
+
+        var listViewRecord = DraggingRecords[0] as OrderInfo;
+                
+            (AssociatedObject.listView.ItemsSource as ObservableCollection<OrderInfo>).Remove(listViewRecord);
+            (this.AssociatedObject.DataContext as ViewModel).OrdersListView.Add(listViewRecord );
+               
+                
+    }
+    else
+    {
+        DraggingRecords = e.Data.GetData("Records") as ObservableCollection<object>;
+                
+        var record = DraggingRecords[0] as OrderInfo;
+                
+            this.AssociatedObject.sfGrid.View.Remove(record);
+            (this.AssociatedObject.DataContext as ViewModel).OrdersListView.Add(record);
+               
+               
+    }
+            
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Row drag and drop between SfDataGrid and ListView in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img28.png)
+
+You can download the sample(https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf).
+
+### Row drag and drop between two SfDataGrids
+
+To perform the dragging operation between  two datagrid by using the [GridRowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragStart_EV.html) , [GridRowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Drop_EV.html) , [GridRowDragDropController.DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragOver_EV.html) and [GridRowDragDropController.Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Dropped_EV.html) events.
+
+{% tabs %}
+{% highlight c# %}
+this.firstDataGrid.RowDragDropController.DragStart += sfGrid_DragStart;
+this.firstDataGrid.RowDragDropController.Drop += sfGrid_Drop;
+this.firstDataGrid.RowDragDropController.Dropped += sfGrid_Dropped;
+this.secondDataGrid.RowDragDropController.DragOver += grid_DragOver;
+
+
+/// <summary>
+/// customize the DragStart event.Restrict the certain record from dragging.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void sfGrid_DragStart(object sender, GridRowDragStartEventArgs e)
+{
+    var record = e.DraggingRecords[0] as OrderInfo;
+    if (record.CustomerName == "Martin")
+    {
+        e.Handled = true;
+    }
+
+}
+
+/// <summary>
+/// Customize the DragOver event.Disable the DragUI
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void grid_DragOver(object sender, GridRowDragOverEventArgs e)
+{
+    e.ShowDragUI = false;
+    e.Handled = true;
+
+}
+
+
+/// <summary>
+/// Customize the Drop evet
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void sfGrid_Drop(object sender,GridRowDropEventArgs e)
+{
+    var record = e.DraggingRecords[0] as OrderInfo;
+           
+    var dropPosition = e.DropPosition.ToString();
+    if (dropPosition == "DropAbove")
+    {
+        e.Handled = true;
+    }
+    if (record.ShipCity == "Mexico D.F.")
+    {
+        e.Handled = true;
+    }
+}
+
+/// <summary>
+/// Customize the Dropped event.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void sfGrid_Dropped(object sender, GridRowDroppedEventArgs e)
+{
+    ObservableCollection<object> draggingRecords = new ObservableCollection<object>();
+
+    draggingRecords = e.Data.GetData("Records") as ObservableCollection<object>;
+            
+    var items = draggingRecords[0] as OrderInfo;
+
+    var records = AssociatedObject.firstDataGrid.View.Records.ToList();
+            
+    IList collection = AssociatedObject.firstDataGrid.ItemsSource as IList;
+            
+    for (int i = 0; i < records.Count; i++)
+    {
+                
+        var orderData = records[i].Data as OrderInfo;
+        if (orderData.OrderID == items.OrderID)
+        {
+            collection.Remove(items);
+            collection.Insert(i, orderData);
+        }
+                
+    }
+    AssociatedObject.firstDataGrid.ItemsSource = collection;
+           
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Row drag and drop between two SfDataGrids in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img29.png)
+
+You can download the sample(https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-wpf-datagrids).
+
+### Row drag and drop between SfDataGrid and SfTreeGrid
+
+To perform the dragging operation between  SfDataGrid and SfTreeGrid by using the [GridRowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Drop_EV.html) and [TreeGridRowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~Drop_EV.html) events.
+
+{% tabs %}
+{% highlight c# %}
+this.sfDataGrid.RowDragDropController.Drop += sfDataGrid_Drop;
+this.sfTreeGrid.RowDragDropController.Drop += sfTreeGrid_Drop;
+
+
+/// <summary>
+/// Customized TreeGrid Drop event.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void sfTreeGrid_Drop(object sender, TreeGridRowDropEventArgs e)
+{
+    if (e.IsFromOutSideSource)
+    {
+                
+        var draggingRecord = e.Data.GetData("Records") as ObservableCollection<object>;
+                
+        var record = draggingRecord[0] as EmployeeInfo;
+                
+        var dropPosition = e.DropPosition.ToString();
+               
+        var newItem = new EmployeeInfo();
+
+        var rowIndex =AssociatedObject.sfTreeGrid.ResolveToRowIndex(e.TargetNode.Item);
+                
+        if (dropPosition != "None" && rowIndex != -1)
+        {
+            if (AssociatedObject.sfTreeGrid.View is TreeGridSelfRelationalView)
+            {
+                var treeNode = e.TargetNode;
+                if (treeNode == null)
+                    return;
+                       
+                var data = treeNode.Item;
+
+                AssociatedObject.sfTreeGrid.SelectionController.SuspendUpdates();
+                        
+                var dropIndex = -1;
+
+                TreeNode parentNode = null;
+
+                if (dropPosition == "DropBelow" || dropPosition == "DropAbove")
+                {
+                    parentNode = treeNode.ParentNode;
+                    var parentNodeItems = parentNode.Item as EmployeeInfo;
+                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parentNodeItems.ID };
+
+                }
+
+                else if (dropPosition == "DropAsChild")
+                {
+
+                    if (!treeNode.IsExpanded)
+                        AssociatedObject.sfTreeGrid.ExpandNode(treeNode);
+                    parentNode = treeNode;
+                    var parentNodeItems = parentNode.Item as EmployeeInfo;
+                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parentNodeItems.ID };
+
+                }
+
+                IList sourceCollection = null;
+                        
+
+                if (dropPosition == "DropBelow" || dropPosition == "DropAbove")
+                {
+
+                    if (treeNode.ParentNode != null)
+                    {
+                        var collection = AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().GetValue(treeNode.ParentNode.Item, AssociatedObject.sfTreeGrid.ChildPropertyName) as IEnumerable;
+
+                        sourceCollection = GetSourceListCollection(collection);
+                    }
+
+                    else
+                    {
+
+                        sourceCollection = GetSourceListCollection(AssociatedObject.sfTreeGrid.View.SourceCollection);
+                    }
+                    dropIndex = sourceCollection.IndexOf(data);
+
+                    if (dropPosition == "DropBelow")
+                    {
+                        dropIndex += 1;
+                    }
+                }
+
+                else if (dropPosition == "DropAsChild")
+                {
+                    var collection = AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().GetValue(data, AssociatedObject.sfTreeGrid.ChildPropertyName) as IEnumerable;
+
+                    sourceCollection = GetSourceListCollection(collection);
+
+                    if (sourceCollection == null)
+                    {
+                        var list = data.GetType().GetProperty(AssociatedObject.sfTreeGrid.ChildPropertyName).PropertyType.CreateNew() as IList;
+
+                        if (list != null)
+                        {
+                            AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().SetValue(treeNode.Item, AssociatedObject.sfTreeGrid.ChildPropertyName, list);
+                            sourceCollection = list;
+                        }
+                    }
+                    dropIndex = sourceCollection.Count;
+
+
+                }
+                sourceCollection.Insert(dropIndex, newItem);
+
+                AssociatedObject.sfTreeGrid.SelectionController.ResumeUpdates();
+                (AssociatedObject.sfTreeGrid.SelectionController as TreeGridRowSelectionController).RefreshSelection();
+                e.Handled = true;
+            }
+        }
+        AssociatedObject.sfDataGrid.View.Remove(record);
+    }
+}
+
+      
+      
+/// <summary>
+/// Gets the source collection of TreeGrid
+/// </summary>
+/// <param name="collection"></param>
+/// <returns></returns>
+private IList GetSourceListCollection(IEnumerable collection)
+{
+    IList list = null;
+    if (collection == null)
+        collection = AssociatedObject.sfTreeGrid.View.SourceCollection;
+    if ((collection as IList) != null)
+    {
+        list = collection as IList;
+    }
+    return list;
+}
+
+/// <summary>
+/// Customize the Drop event.restrict the certain record and Drop position from drop.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+private void sfDataGrid_Drop(object sender, GridRowDropEventArgs e)
+{
+            
+    if (e.IsFromOutSideSource)
+    {
+        var draggingRecord = e.Data.GetData("Nodes") as ObservableCollection<TreeNode>;
+                
+        var record = draggingRecord[0].Item as EmployeeInfo;
+
+        int dropIndex = (int)e.TargetRecord;
+
+              
+        var dropPosition = e.DropPosition.ToString();
+
+        if (record.Title == "Manager")
+        {
+            e.Handled = true;
+            return;
+        }
+                
+                
+        IList collection = null;
+
+        collection = AssociatedObject.sfDataGrid.View.SourceCollection as IList;
+        if (dropPosition == "DropAbove")
+        {
+            dropIndex--;
+            collection.Insert(dropIndex, record);
+                    
+        }
+        else
+        {
+            dropIndex++;
+            collection.Insert(dropIndex, record);
+                   
+        }
+        AssociatedObject.sfTreeGrid.View.Remove(record);
+        e.Handled = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Row drag and drop between SfDataGrid and SfTreeGrid in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img30.png)
+
+You can download the sample(https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-treegrid-in-wpf).
