@@ -1288,7 +1288,7 @@ To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfus
 
 {% tabs %}
 {% highlight xaml %}
-<DataTemplate x:Key="dragdroptemplate">
+<DataTemplate x:Key="template">
             <Border x:Name="border" Width="250"  
                             Background="#ececec" 
                             BorderBrush="#c8c8c8"  Height="60"
@@ -1342,7 +1342,7 @@ To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfus
 <Syncfusion:SfDataGrid x:Name="datagrid" 
                                AllowDraggingRows="True"
                                AllowDrop="True"
-                               RowDragDropTemplate="{StaticResource dragdroptemplate}"
+                               RowDragDropTemplate="{StaticResource template}"
                                ItemsSource="{Binding Source}"/>
 
 {% endhighlight %}
@@ -1571,7 +1571,7 @@ private void grid_DragOver(object sender, GridRowDragOverEventArgs e)
 
 
 /// <summary>
-/// Customize the Drop evet
+/// Customize the Drop event
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
