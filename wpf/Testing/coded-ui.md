@@ -124,7 +124,7 @@ SfGrid.WPF
 Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
 </td>
 <td>
-Get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Src-229533545.zip)'| markdownify }} location.
+Get the Extension project from {{'[this](https://github.com/SyncfusionExamples/coded-ui-test-external-plugin-source-project-for-wpf-datagrid-and-treegrid)'| markdownify }} location.
 </td>
 </tr>
 <tr>
@@ -138,7 +138,7 @@ SfGrid.WPF
 Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll
 </td>
 <td>
-Get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CodedUI-1271691562.zip)'| markdownify }} location.
+Get the Extension project from {{'[this](https://github.com/SyncfusionExamples/coded-ui-test-external-plugin-source-project-for-wpf-datagrid-and-treegrid)'| markdownify }} location.
 </td>
 </tr>
 <tr>
@@ -152,7 +152,7 @@ Grid.WPF
 Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll
 </td>
 <td>
-Get the Extension project from {{'[this](http://www.syncfusion.com/downloads/support/directtrac/186216/ze/GridExtension837392922)'| markdownify }} location.
+Get the Extension project from {{'[this](https://github.com/SyncfusionExamples/coded-ui-test-external-plugin-source-project-for-wpf-gridcontrol-and-griddatacontrol)'| markdownify }} location.
 </td>
 </tr>
 </table>
