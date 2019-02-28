@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Coded UI Testing for Syncfusion Essential WPF controls
+title: Coded UI | WPF | Syncfusion
 description: Learn how to test with Coded UI for Syncfusion Essential WPF controls
 platform: wpf
 control: Testing
