@@ -3261,6 +3261,71 @@ chart.SecondaryAxis = new NumericalAxis()
 ![Padding for ChartAxis support in WPF](Axis_images/Axis_img69.jpeg)
 
 
+## AutoScrollingDelta
+
+[`AutoScrollingDelta`]() is used to ensure whether the specified range of data is always visible in the chart. It always shows the recently added data points at the end, and the scrolling will be reset to the end of the range whenever a new point is added. 
+
+By activating the [`EnableScrollBar`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~EnableScrollBar.html) property of the axis or by adding [`ChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html) to the chart, you can scroll to the previous data points.
+
+### AutoScrollingDeltaType
+
+In [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), you can apply auto scrolling delta value in [`Years`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Months`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Days`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Hours`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Minutes`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html), [`Seconds`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html) and [`Milliseconds`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeIntervalType.html) by setting the [`AutoScrollingDeltaType`]() property. The default value of this property is [`Auto`], and the delta will be calculated automatically based on range.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:DateTimeAxis AutoScrollingDelta="3" AutoScrollingDeltaType="Days">
+
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+      AutoScrollingDelta = 3,
+	  
+      AutoScrollingDeltaType = DateTimeIntervalType.Days
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### AutoScrollingMode
+
+The [`AutoScrollingMode`] property is used to determine whether the axis should be scrolled from the start position or end position. The default value of this property is [`End`].
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+    <chart:CategoryAxis AutoScrollingDelta = "3" AutoScrollingMode = "Start">
+
+</chart:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+      AutoScrollingDelta = 3,
+	  
+      AutoScrollingMode = ChartAutoScrollingMode.Start
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## Auto Interval Calculation on Zooming
 
 [`EnableAutoIntervalOnZooming`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~EnableAutoIntervalOnZooming.html#) property is used to maintain the interval even it is in zooming state only if we set the interval to the axis. Default value of this property is true. While zooming based on the auto range padding the interval will be calculated.
