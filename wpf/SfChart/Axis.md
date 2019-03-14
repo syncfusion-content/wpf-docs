@@ -3277,7 +3277,7 @@ In [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfC
 
 <chart:SfChart.PrimaryAxis>
 
-    <chart:DateTimeAxis AutoScrollingDelta="3" AutoScrollingDeltaType="Days">
+    <chart:DateTimeAxis AutoScrollingDelta = "3" AutoScrollingDeltaType = "Days">
 
 </chart:SfChart.PrimaryAxis>
 
@@ -3306,7 +3306,7 @@ The [`AutoScrollingMode`]() property is used to determine whether the axis shoul
 
 <chart:SfChart.PrimaryAxis>
 
-    <chart:CategoryAxis AutoScrollingDelta = "3" AutoScrollingMode = "Start">
+    <chart:DateTimeAxis AutoScrollingDelta = "3" AutoScrollingMode = "Start">
 
 </chart:SfChart.PrimaryAxis>
 
