@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional formatting using data conditions
+title: Conditional formatting using data conditions | Syncfusion
 description: Conditional formatting using data conditions
 platform: wpf
 control: Pivot grid
@@ -132,4 +132,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Conditional-format-images/PivotGrid shows conditionally formatted values.png)
+![Apply conditional formatting using data conditions.](Conditional-format-images/PivotGrid shows conditionally formatted values.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional formatting using gradient color scales
+title: Conditional formatting using gradient color scales | Syncfusion
 description: Conditional formatting using gradient color scales
 platform: wpf
 control: Pivot grid
@@ -106,7 +106,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Conditional-format-images/ColorScale1.png)
+![Apply conditional formatting using predefined color scale.](Conditional-format-images/ColorScale1.png)
 
 ## Apply format using custom colors
 
@@ -198,7 +198,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Conditional-format-images/ColorScale2.png)
+![Apply conditional formatting using custom colors.](Conditional-format-images/ColorScale2.png)
 
 ## Apply formatting to specific level
 
@@ -292,4 +292,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Conditional-format-images/ColorScale3.png)
+![Apply conditional formatting to specific levels.](Conditional-format-images/ColorScale3.png)
