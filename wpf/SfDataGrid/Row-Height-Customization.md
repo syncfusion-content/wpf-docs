@@ -14,9 +14,9 @@ You can change the header row height by setting [SfDataGrid.HeaderRowHeight](htt
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid" 
-						ItemsSource="{Binding Orders}" 
-						HeaderRowHeight="50"
-                        RowHeight="30">
+					   RowHeight="30"
+					   HeaderRowHeight="50"
+					   ItemsSource="{Binding Orders}" />
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
