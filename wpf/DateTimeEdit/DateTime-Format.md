@@ -9,11 +9,11 @@ documentation: ug
 
 # DateTime Format
 
-DateTimeFormat property defines the Format to display the date value in the DateTimeEdit control. Using this property you can customize the Standard datetime formats such as the YearMonthPattern, ShortTimePattern, ShortDatePattern, MonthDayPattern, LongTimePattern, LongDatePattern, and FullDateTimePattern. 
+[DateTimeFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DateTimeFormat.html) property defines the Format to display the date value in the DateTimeEdit control. Using this property you can customize the Standard datetime formats such as the YearMonthPattern, ShortTimePattern, ShortDatePattern, MonthDayPattern, LongTimePattern, LongDatePattern, and FullDateTimePattern. 
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate">    
 <syncfusion:DateTimeEdit.DateTimeFormat>        
@@ -23,7 +23,7 @@ DateTimeFormat property defines the Format to display the date value in the Date
 
 {% endhighlight  %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
 dateTimeEdit.Width = 200;
@@ -39,4 +39,4 @@ dateTimeEdit.DateTimeFormat = new DateTimeFormatInfo()
 
 {% endtabs %} 
 
-![](DateTime-Format_images/DateTime-Format_img1.png)
+![DateTime format](DateTime-Format_images/DateTime-Format_img1.png)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection Range
 
-You can set the selection range mode for CalendarEdit control in two different ways, using the SelectionRangeMode property. They are as follows.
+You can set the selection range mode for CalendarEdit control in two different ways, using the [SelectionRangeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectionRangeMode.html) property. They are as follows.
 
 * CurrentMonth: selects only days, belonging to the current month from the column
 * WholeColumn: selects the whole column

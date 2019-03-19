@@ -9,7 +9,7 @@ documentation: ug
 
 # Selecting Multiple Dates
 
-CalendarEdit control allows you to select multiple dates, by setting the AllowMultiplySelection property to true. The following code example illustrates this.
+CalendarEdit control allows you to select multiple dates, by setting the [AllowMultiplySelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowMultiplySelection.html) property to true. The following code example illustrates this.
 
 {% tabs %}
 {% highlight xaml %}
@@ -33,7 +33,7 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Selecting-Multiple-Dates_images/Selecting-Multiple-Dates_img1.jpeg)
+![Multiple date selection](Selecting-Multiple-Dates_images/Selecting-Multiple-Dates_img1.jpeg)
 
 {% seealso %}
 

@@ -10,7 +10,7 @@ documentation: ug
 
 ## Activating a window
 
-A particular child window can be activated in DockingManager using its name or reference through the property `ActiveWindow` and `ActivateWindow` method that passes the element as argument to activate.
+A particular child window can be activated in DockingManager using its name or reference through the property [ActiveWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActiveWindow.html) and [ActivateWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActivateWindow.html) method that passes the element as argument to activate.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ DockingManager1.Children.Add(content5)
 
 ### Setting State for Window programmatically
 
-The state for the particular child window can be set programmatically using the `SetState` method of DockingManager.
+The state for the particular child window can be set programmatically using the [SetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetState.html) method of DockingManager.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ DockingManager.SetState(content1, DockState.Float)
 
 
 
-* Setting state as Document – To create document window in the DockingManager, set UseDocumentContainer as True for DockingManager and set its state as Document.
+* Setting state as Document – To create document window in the DockingManager, set [UseDocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseDocumentContainer.html) as True for DockingManager and set its state as Document.
 
 {% tabs %}
 
@@ -195,7 +195,7 @@ DockingManager.SetState(content1, DockState.AutoHidden)
 
 #### Making Window AutoHide programmatically
 
-To auto hide the window programmatically call `ExecuteAutoHide` method of DockingManager.
+To auto hide the window programmatically call [ExecuteAutoHide](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ExecuteAutoHide.html) method of DockingManager.
 
 {% tabs %}
 
@@ -218,7 +218,7 @@ DockingManager1.ExecuteAutoHide(Content1)
 
 #### Making Window Float and Document programmatically
 
-The docking window can be made to float and document using the SetState method with its DockState value as `Float` and `Document` respectively
+The docking window can be made to float and document using the [SetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetState.html) method with its DockState value as `Float` and `Document` respectively
 
 {% tabs %}
 
@@ -250,7 +250,7 @@ DockingManager.SetState(Content1, DockState.Document)
 
 ## Hiding Window Programmatically
 
-To hide the window, set `State` property of the DockingManager as `Hidden`.
+To hide the window, set [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~State.html) property of the DockingManager as `Hidden`.
 
 {% tabs %}
 
@@ -268,7 +268,7 @@ DockingManager.SetState(Content1, DockState.Hidden)
 
 {% endtabs %}
 
-To hide the window programmatically, call the `ExecuteClose` method with argument which refer the window need to be close.
+To hide the window programmatically, call the [ExecuteClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ExecuteClose(FrameworkElement).html) method with argument which refer the window need to be close.
 
 {% tabs %}
 
@@ -290,7 +290,7 @@ DockingManager1.ExecuteClose(Content1)
 
 ## Restore Window Programmatically
 
-To restore the closed window in the DockingManager, call `ExecuteRestore` method.
+To restore the closed window in the DockingManager, call [ExecuteRestore](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ExecuteRestore.html) method.
 
 {% tabs %}
 
@@ -316,7 +316,7 @@ DockingManager1.ExecuteRestore(Content1, DockState.Float)
 
 ## Detect the closing of a DockingManager child
 
-`WindowClosing` and `CloseButtonClick` are the two events, which can be used to get notification when the child windows are being closed. 
+[WindowClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~WindowClosing_EV.html) and `CloseButtonClick` are the two events, which can be used to get notification when the child windows are being closed. 
 
 ### Dock Window Closing
 
@@ -324,7 +324,7 @@ DockingManager1.ExecuteRestore(Content1, DockState.Float)
 
 ### Document Window Closing
  
-`CloseButtonClick` event raised only when close button of the `Document` child clicked. The following code describes how to handle the closing of all the children in `DockingManager`.
+[CloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CloseButtonClick_EV.html) event raised only when close button of the `Document` child clicked. The following code describes how to handle the closing of all the children in `DockingManager`.
 
 {% tabs %}
 
@@ -423,7 +423,7 @@ Grid1.Children.Add(dockingmanager)
 
 ## Restricting Docking in Float Window
 
-The float window allows to dock another float window inside it by default. This behavior can be restricted by set `CanDockOnFloat` as False for that particular window.
+The float window allows to dock another float window inside it by default. This behavior can be restricted by set [CanDockOnFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDockonFloat.html) as False for that particular window.
 
 {% tabs %}
 
@@ -449,7 +449,7 @@ DockingManager.SetCanDockonFloat(Item1, false);
 
 ## Restricting Docking by Drag Providers
 
-DockingManager allows to dock the children in different sides using the DragProviders. To restrict dock ability of the dock children to any particular side, set the property `DockAbility` with the required values.
+DockingManager allows to dock the children in different sides using the DragProviders. To restrict dock ability of the dock children to any particular side, set the property [DockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DockAbility.html) with the required values.
 
 * Setting DockAbility as Horizontal – Restrict the children to dock only on Horizontal side by providing the Horizontal Drag providers.
 
@@ -506,7 +506,7 @@ DockingManager.SetDockAbility(window1, DockAbility.Vertical);
 
 ## Customizing a window
 
-A Docking window can be customized using the property HeaderBackground, SelectedHeaderBackground, HeaderMouseHoverBackground with the desired brush values respectively.
+A Docking window can be customized using the property [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~HeaderBackground.html), [SelectedHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SelectedHeaderBackground.html), [HeaderMouseHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~HeaderMouseOverBackground.html) with the desired brush values respectively.
 
 {% tabs %}
 
@@ -541,7 +541,7 @@ SyncDockingManager.HeaderMouseOverBackground = new SolidColorBrush(Colors.DarkOr
 
 ## Customizing FloatWindow
 
-The float window can be customized by setting FloatWindowHeaderBackground, FloatWindowHeaderForeground, FloatWindowSelectedHeaderBackground, FloatWindowSelectedBorderBrush and FloatWindowMouseOverHeaderBackground properties with the required brush values respectively.
+The float window can be customized by setting [FloatWindowHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowHeaderBackground.html), [FloatWindowHeaderForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowHeaderForeground.html), [FloatWindowSelectedHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowSelectedHeaderBackground.html), [FloatWindowSelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowSelectedBorderBrush.html) and [FloatWindowMouseOverHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~FloatWindowMouseOverHeaderBackground.html) properties with the required brush values respectively.
 
 {% tabs %}
 
@@ -584,7 +584,7 @@ SyncDockingManager.FloatWindowSelectedBorderBrush = new SolidColorBrush(Colors.B
 
 ## Enable/Disable Dragging a Window
 
-The attached property `CanDrag` that helps to enable or disable the dragging functionality of a window by setting its value as True or False respectively. By default its value is `True`, to disable this functionality turn its value to `False`.
+The attached property [CanDrag](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDrag.html) that helps to enable or disable the dragging functionality of a window by setting its value as True or False respectively. By default its value is `True`, to disable this functionality turn its value to `False`.
 
 {% tabs %}
 
@@ -608,7 +608,7 @@ DockingManager.SetCanDrag(Item1, false);
 
 ## Drag Shadow of a Window
 
-To drag child window in Shadow mode, set the DraggingType property of DockingManager as `ShadowDragging`.
+To drag child window in Shadow mode, set the [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DraggingType.html) property of DockingManager as `ShadowDragging`.
 
 {% tabs %}
 
@@ -635,7 +635,7 @@ SyncDockingManager.DraggingType = DraggingType.ShadowDragging;
 
 ## Drag Border of a Window
 
-To drag child window in Border mode, set the DraggingType property of DockingManager as `BorderDragging`.
+To drag child window in Border mode, set the [DraggingType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DraggingType.html) property of DockingManager as `BorderDragging`.
 
 
 {% tabs %}
@@ -663,7 +663,7 @@ SyncDockingManager.DraggingType = DraggingType.BorderDragging;
 
 ## Customizing a resizing behaviors
 
-DockingManager allows to resize the dock and float windows by default. To restrict resizing the dock and float windows respectively, set the `CanResizeInDockedState` and `CanResizeInFloatState` properties with it value as False.
+DockingManager allows to resize the dock and float windows by default. To restrict resizing the dock and float windows respectively, set the [CanResizeInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInDockedState.html) and [CanResizeInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeInFloatState.html) properties with it value as False.
 
 
 {% tabs %}
@@ -695,7 +695,7 @@ DockingManager.SetCanResizeInFloatState(Content2, false);
 
 ###  Width resizing restriction 
 
-To restrict resizing width for the Dock windows set the property `CanResizeWidthInDockedMode` and `CanResizeWidthInFloatState` as False.
+To restrict resizing width for the Dock windows set the property [CanResizeWidthInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInDockedState.html) and [CanResizeWidthInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeWidthInFloatState.html) as False.
 
 {% tabs %}
 
@@ -721,7 +721,7 @@ DockingManager.SetCanResizeWidthInFloatState(Content2, false);
 
 ### Height resizing restriction
 
-To restrict resizing the height for the float and dock window respectively, set the property `CanResizeHeightInFloatState` and `CanResizeHeightInDockedState` as False.
+To restrict resizing the height for the float and dock window respectively, set the property [CanResizeHeightInFloatState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInFloatState.html) and [CanResizeHeightInDockedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanResizeHeightInDockedState.html) as False.
 
 {% tabs %}
 
@@ -747,7 +747,7 @@ DockingManager.SetCanResizeHeightInFloatState(Content2, false);
 
 ### Setting MaxWidth and MaxHeight for Window
 
-To set the desired maximum width for the float and dock windows respectively, set their properties `DesiredMaxWidthInDockedMode` and `DesiredMaxWidthInFloatingMode` with the desired values.
+To set the desired maximum width for the float and dock windows respectively, set their properties [DesiredMaxWidthInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredMaxWidthInDockedMode.html) and [DesiredMaxWidthInFloatingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredMaxWidthInFloatingMode.html) with the desired values.
 
 {% tabs %}
 
@@ -775,7 +775,7 @@ DockingManager.SetDesiredMaxWidthInFloatingMode(floatWindow1,600);
 ![MaxWidth and MaxHeight for Window](Dealing-with-Windows_images/Dealing-with-Windows_img13.jpeg)
 
 
-To set the maximum height for the float and dock windows respectively, set their properties `DesiredMaxHeightInDockedMode` and `DesiredMaxHeightInFloatingMode` with the desired values.
+To set the maximum height for the float and dock windows respectively, set their properties [DesiredMaxHeightInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredMaxHeightInDockedMode.html) and [DesiredMaxHeightInFloatingMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredMaxHeightInFloatingMode.html) with the desired values.
 
 {% tabs %}
 
@@ -809,7 +809,7 @@ DockingManager allows to set the desired width and height for the dock windows. 
 
 ### Desire height and width
 
-The desired height and width can be set for the Dock windows through the property `DesiredWidthInDockedMode` and `DesiredHeightInDockedMode`  with the desired values.
+The desired height and width can be set for the Dock windows through the property [DesiredWidthInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredWidthInDockedMode.html) and [DesiredHeightInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DesiredHeightInDockedMode.html)  with the desired values.
 
 {% tabs %}
 
@@ -839,7 +839,7 @@ DockingManager.SetDesiredWidthInDockedMode(Content1, 300);
 
 ### Sizing Based on the Content
 
-To size the float window based on the children window size, set the property `SizeToContentInFloat` property for the child window as True. By default, its value is False.
+To size the float window based on the children window size, set the property [SizeToContentInFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SizetoContentInFloat.html) property for the child window as True. By default, its value is False.
 
 {% tabs %}
 
@@ -860,7 +860,7 @@ DockingManager.SetSizetoContentInFloat(Content1,true);
 
 ![Size of the content when the property SizetoContentInFloat is true](Dealing-with-Windows_images/Dealing-with-Windows_img16.jpeg)
 
-To size the Dock window based on the children window size, set the property `SizeToContentInDock` property for the child window as True. By default, its value is False.
+To size the Dock window based on the children window size, set the property [SizeToContentInDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SizetoContentInDock.html) property for the child window as True. By default, its value is False.
 
 {% tabs %}
 
@@ -888,7 +888,7 @@ DockingManager.SetSizetoContentInDock(Content1,true);
 
 ### Absolute Sizing on Dock to fill
 
-To load the child window initially with an absolute size, set the property DockFillMode as `Absolute`. By default, the child window loaded with the default size and it can be set through DockFillMode as `Default` also.
+To load the child window initially with an absolute size, set the property [DockFillMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DockFillMode.html) as `Absolute`. By default, the child window loaded with the default size and it can be set through [DockFillMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DockFillMode.html) as `Default` also.
 
 {% tabs %}
 
@@ -912,7 +912,7 @@ DockingManager.SetDockFillMode(content1, DockFillModes.Absolute);
 
 ### Customizing the Splitter appearance
 
-The Splitter of the dock window can be customized using the SplitterSize and SplitterBackground properties depends upon its values respectively. 
+The Splitter of the dock window can be customized using the [SplitterSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SplitterSize.html) and [SplitterBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SplitterBackground.html) properties depends upon its values respectively. 
 
 {% tabs %}
 
@@ -941,7 +941,7 @@ SyncDockingManager.SplitterSize = 10;
 
 ## Occupy whole window
 
-To arrange the dock windows to a whole available space in the DockingManager, set `DockFill` property of DockingManager as True. 
+To arrange the dock windows to a whole available space in the DockingManager, set [DockFill](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockFill.html) property of DockingManager as True. 
 
 {% tabs %}
 
@@ -1001,7 +1001,7 @@ DockingManager.SetState(document1, DockState.Document);
 
 ### Restrict DockWindow to AutoHide while DockFill
 
-To restrict the behavior of changing the DockWindow to AutoHide when DockFill is True, set the property `DockFillDocumentMode` as Normal.
+To restrict the behavior of changing the DockWindow to AutoHide when DockFill is True, set the property [DockFillDocumentMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockFillDocumentMode.html) as Normal.
 
 {% tabs %}
 
@@ -1031,7 +1031,7 @@ SyncDockingManager.DockFillDocumentMode = DockFillDocumentMode.Normal;
 
 ## Applying Context Menu
 
-DockingManager allows to add  CustomContextMenuItems for Dock and Float windows through an attached property `CustomMenuItems`. 
+DockingManager allows to add  CustomContextMenuItems for Dock and Float windows through an attached property [CustomMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CustomMenuItems.html). 
 
 {% tabs %}
 
@@ -1084,7 +1084,7 @@ DockingManager.SetCustomMenuItems(DockingManager1, collection);
 
 ### Adding CustomContextMenuItems to Document window
 
-The custom context menu items can be added in addition to default ContextMenu items for the document window through an attached property `DocumentTabItemContextMenuItems` 
+The custom context menu items can be added in addition to default ContextMenu items for the document window through an attached property [DocumentTabItemContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DocumentTabItemContextMenuItems.html). 
 
 {% tabs %}
 
@@ -1136,7 +1136,7 @@ DockingManager.SetDocumentTabItemContextMenuItems(DockingManager1, collection);
 
 ### CustomMenuItem as Separator
 
-The [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem~IsSeparator.html) property of CustomMenuItem is used to display separator between CustomMenuItems. If the property [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem~IsSeparator.html) is set to true, the CustomMenuItem will act as Separator.The default value of this property is false.
+The [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem~IsSeparator.html) property of [CustomMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem.html) is used to display separator between CustomMenuItems. If the property [IsSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem~IsSeparator.html) is set to true, the [CustomMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CustomMenuItem.html) will act as Separator.The default value of this property is false.
 
 {% tabs %}
 {% highlight C# %}
@@ -1168,7 +1168,7 @@ The default context menu items as shown in the following screenshot:
 ![Customizing ContextMenuItems Visibility](Dealing-with-Windows_images/Dealing-with-Windows_img25.jpeg)
 
 
-To collapse the default context menu, set the property `CollapseDefaultContextMenu` as True.
+To collapse the default context menu, set the property [CollapseDefaultContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CollapseDefaultContextMenuItems.html) as True.
 
 {% tabs %}
 
@@ -1186,7 +1186,7 @@ DockingManager1.CollapseDefaultContextMenuItems = true;
 
 {% endtabs %}
 
-To collapse the default context menu in Dock state window, set the property `CollapseDefaultContextMenuInDock` as True. By default, its value is False.
+To collapse the default context menu in Dock state window, set the property [CollapseDefaultContextMenuInDock](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CollapseDefaultContextMenuItemsInDock.html) as True. By default, its value is False.
 
 {% tabs %}
 
@@ -1209,7 +1209,7 @@ DockingManager.SetCollapseDefaultContextMenuItemsInDock(Content1, true);
 
 {% endtabs %}
 
-To collapse the default context menu in Document state window, set the property `CollapseDefaultContextMenuInDocument` asTrue. By default, its value is False.
+To collapse the default context menu in Document state window, set the property [CollapseDefaultContextMenuInDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CollapseDefaultContextMenuItemsInDocumentTab.html) asTrue. By default, its value is False.
 
 {% tabs %}
 
@@ -1233,7 +1233,7 @@ DockingManager.SetCollapseDefaultContextMenuItemsInDocumentTab(Content1, true);
 
 {% endtabs %}
 
-To collapse the default context menu in Float state window, set the property `CollapseDefaultContextMenuInFloat` as True. By default, its value is False.
+To collapse the default context menu in Float state window, set the property [CollapseDefaultContextMenuInFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CollapseDefaultContextMenuItemsInFloat.html) as True. By default, its value is False.
 
 {% tabs %}
 
@@ -1256,7 +1256,7 @@ DockingManager.SetCollapseDefaultContextMenuItemsInFloat(Content1, true);
 
 ## Hosting a client control between windows
 
-To add a client control in the DockingManager, set an attached property `ClientControl`.
+To add a client control in the DockingManager, set an attached property [ClientControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ClientControl.html).
 
 {% tabs %}
 

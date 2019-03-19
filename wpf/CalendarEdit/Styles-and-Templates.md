@@ -13,12 +13,12 @@ This section deals with the following Styles and Templates supported by Calendar
 
 ## Day cells style
 
-You can set the style of a day cell, using the DayCellsStyle property. 
+You can set the style of a day cell, using the [DayCellsStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayCellsStyle.html) property. 
 
 To set this property, use the following code.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Window x:Class="WpfApplication4.Window1"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -40,14 +40,14 @@ Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfu
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
+![Day cell style](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 
 ## Day name cells style
 
-You can set the style of the day name cell, using the DayNameCellsStyle property. Use the following code example to set this property.
+You can set the style of the day name cell, using the [DayNameCellsStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayNameCellsStyle.html) property. Use the following code example to set this property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Window x:Class="WpfApplication4.Window1"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -68,14 +68,14 @@ Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfu
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
+![Day name cells style](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
 
 ## Data template for day cell
 
-You can create a data template for the day cell, using the DayCellsDataTemplate property. This dependency property sets the day cell data template using the following code example.
+You can create a data template for the day cell, using the [DayCellsDataTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayCellsDataTemplate.html) property. This dependency property sets the day cell data template using the following code example.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <Window x:Class="WpfApplication4.Window1"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -100,11 +100,11 @@ Text="{Binding Day}"/>
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)
+![Data template for day cell](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)
 
 ## Data template for day name cell
 
-You can create a data template for the day name cell, using the DayNameCellsDataTemplate property. This dependency property sets the day name cell data template using the following code example.
+You can create a data template for the day name cell, using the [DayNameCellsDataTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayNameCellsDataTemplate.html) property. This dependency property sets the day name cell data template using the following code example.
 
 {% tabs %}
 {% highlight xaml %}
@@ -132,52 +132,23 @@ Text="{Binding}"/>
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)
+![Data template for day name cell](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)
 
 **Support to Customize the Particular day range in CalendarEdit control**
 
 CalendarEdit control provides the support to customize the particular day range. The support includes some of the following useful method such as follows
 
-<table>
-<tr>
-<th>
-API Name</th>
-<th>
-Description</th></tr>
-<tr>
-<td>
-SpecialDatesCollection</td><td>
-This Class helps to hold the Special Dates collection.</td></tr>
-<tr>
-<td>
-SpecialDate</td>
-<td>
-This class helps to hold Special Date, to be customized.     
-</td></tr>
-<tr>
-<td>
-Date   
-</td><td>
-This property holds to DateTime variable.</td></tr>
-<tr>
-<td>
-CellTemplate   
-</td><td>
-This property holds the Template customization.    
-</td></tr>
-<tr>
-<td>
-SpecialDates   
-</td><td>
-This property helps to hold the Special Dates collection, which can be customized.     
-</td></tr>
-</table>
+* [SpecialDatesCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDatesCollection_methods.html)
+* [SpecialDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate.html)
+* [Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DatesCollection.html)
+* [SpecialDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDatesCollection.html)
+* CellTemplate
 
 **Code Sample**
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:CalendarEdit Grid.RowSpan="3" x:Name="calendar"
 Grid.ColumnSpan="3" ShowWeekNumbers="True"
@@ -257,7 +228,7 @@ End Function
 
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
  <!--Code used to set the different DataTemplate to customize the particular day-->
 
@@ -341,4 +312,4 @@ End Function
 
 **Output:**
 
-![](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)
+![Special dates](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)

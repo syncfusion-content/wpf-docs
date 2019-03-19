@@ -13,10 +13,10 @@ DateTimeEdit control exposes the following events:
 
 ## DateTimeChanged
 
-This event occurs when the DateTime property of the DateTimeEdit control is changed.
+This [DateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTimeChanged_EV.html) event occurs when the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property of the DateTimeEdit control is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit Width="150" DateTimeChanged="DateTimeEdit_DateTimeChanged"/>
 
@@ -26,7 +26,7 @@ This event occurs when the DateTime property of the DateTimeEdit control is chan
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
 private void DateTimeEdit_DateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        {        }
 
@@ -35,11 +35,11 @@ private void DateTimeEdit_DateTimeChanged(DependencyObject d, DependencyProperty
 
 ## MinDateTimeChanged
 
-This event occurs when the MinDateTime property of the DateTimeEdit control is changed.
+This [MinDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTimeChanged_EV.html) event occurs when the [MinDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) property of the DateTimeEdit control is changed.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit Width="150" MinDateTimeChanged="DateTimeEdit_MinDateTimeChanged"/>
 
@@ -51,7 +51,7 @@ You can handle the event as follows:
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void DateTimeEdit_MinDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        {        }
 
@@ -61,10 +61,10 @@ private void DateTimeEdit_MinDateTimeChanged(DependencyObject d, DependencyPrope
 
 ## MaxDateTimeChanged
 
-This event occurs when the MaxDateTime property of the DateTimeEdit control is changed.
+This [MaxDateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTimeChanged_EV.html) event occurs when the [MaxDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) property of the DateTimeEdit control is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit Width="150" MaxDateTimeChanged="DateTimeEdit_MaxDateTimeChanged"/>
 
@@ -74,7 +74,7 @@ This event occurs when the MaxDateTime property of the DateTimeEdit control is c
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
 private void DateTimeEdit_MaxDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        
 {        
@@ -85,10 +85,10 @@ private void DateTimeEdit_MaxDateTimeChanged(DependencyObject d, DependencyPrope
 
 ## PatternChanged
 
-This event occurs when the Pattern property of the DateTimeEdit control is changed.
+This event occurs when the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property of the DateTimeEdit control is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit Width="150" PatternChanged="DateTimeEdit_PatternChanged"/>
 
@@ -99,7 +99,7 @@ You can handle the event as follows:
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        
 {  
@@ -111,10 +111,10 @@ private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyC
 
 ## CalendarPopupOpened
 
-This event occurs when the Calendar popup is open.
+This [CalendarPopupOpened](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~CalendarPopupOpened_EV.html) event occurs when the Calendar popup is open.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit Height="25" Width="150" EnableClassicStyle="True" CalendarPopupOpened="DateTimeEdit_CalendarPopupOpened"/>
 
@@ -124,7 +124,7 @@ This event occurs when the Calendar popup is open.
 You can handle the event as follows:
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
 private void DateTimeEdit_CalendarPopupOpened(object sender, RoutedEventArgs e)        
 {        

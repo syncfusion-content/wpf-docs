@@ -13,12 +13,12 @@ This section illustrates the following run-time features of CalendarEdit control
 
 ## Direction for month navigation
 
-In the CalendarEdit control, the direction of month navigation is horizontal by default. You can also change this direction to vertical by setting the MonthChangeDirection property to Vertical. This dependency property sets the month change direction. Following are the two month change directions.
+In the CalendarEdit control, the direction of month navigation is horizontal by default. You can also change this direction to vertical by setting the [MonthChangeDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MonthChangeDirection.html) property to Vertical. This dependency property sets the month change direction. Following are the two month change directions.
 
 * Vertical: Enables navigating through the months vertically 
 * Horizontal: Enables navigating through the months horizontally
 
-For setting the MonthChangeDirection property, use the following code.
+For setting the [MonthChangeDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MonthChangeDirection.html) property, use the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -43,21 +43,21 @@ This section describes the following:
 * Animation Time for Changing the CalendarEdit Mode
 * Animation Time for Month Navigation
 
-Animation Time for Changing the CalendarEdit Mode
+### Animation Time for Changing the CalendarEdit Mode
 
-You can set the animation time for changing the mode of the CalendarEdit control, using the ChangeModeTime property. This dependency property sets the calendar mode changing animation time. It returns an integer value.
+You can set the animation time for changing the mode of the CalendarEdit control, using the [ChangeModeTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ChangeModeTime.html) property. This dependency property sets the calendar mode changing animation time. It returns an integer value.
 
 To set this property, use the following code.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <!-- Adding calendar with change mode time -->
 <syncfusion:CalendarEdit Name="calendarEdit" ChangeModeTime="10"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creating an instance of CalendarEdit control
 CalendarEdit calendarEdit = new CalendarEdit();
@@ -71,20 +71,20 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-Animation Time for Month Navigation
+## Animation Time for Month Navigation
 
-The time taken to navigate from one month to another month can be controlled using FrameMovingTime the property. This dependency property sets the value for month changing animation time. It returns an integer value.
+The time taken to navigate from one month to another month can be controlled using [FrameMovingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~FrameMovingTime.html) the property. This dependency property sets the value for month changing animation time. It returns an integer value.
 
 To set this property, use the following code.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 <!-- Adding calendar with Frame moving time as 500 -->
 <syncfusion:CalendarEdit Name="calendarEdit" FrameMovingTime="500"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creating an instance of CalendarEdit control
 CalendarEdit calendarEdit = new CalendarEdit();
@@ -100,10 +100,10 @@ this.Content = calendarEdit;
 
 ## ToolTip
 
-You can set tooltip for specific days in the CalendarEdit control, using the SetToolTip method. The following code example illustrates tooltip setting for the current system date. 
+You can set tooltip for specific days in the CalendarEdit control, using the [SetToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SetToolTip.html) method. The following code example illustrates tooltip setting for the current system date. 
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
 //Creating an instance date
 Date a = new Date();
@@ -131,18 +131,18 @@ calendarEdit.SetToolTip(a, toolTip);
 
 ## Scrolling to the selected date
 
-CalendarEdit control enables you to navigate to a particular date in the Calendar, by using the ScrollToDate option. To enable this, set the ScrollToDateEnabled property to true. This dependency property indicates whether to scroll to the selected date. 
+CalendarEdit control enables you to navigate to a particular date in the Calendar, by using the ScrollToDate option. To enable this, set the [ScrollToDateEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ScrollToDateEnabled.html) property to true. This dependency property indicates whether to scroll to the selected date. 
 
 Here is the code example for setting this property.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 <!-- Adding calendar with scroll to date as true -->
 <syncfusion:CalendarEdit Name="calendarEdit" ScrollToDateEnabled="True"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creating an instance of CalendarEdit control
 CalendarEdit calendarEdit = new CalendarEdit();
