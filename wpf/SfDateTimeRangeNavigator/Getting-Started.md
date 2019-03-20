@@ -62,7 +62,7 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 ### Set ItemsSource for SfDateTimeRangeNavigator
 
-Since the above steps are enough to create only empty date-time range navigator, you need to set the ItemsSource and XBindingPath for the SfDateTimeRangeNavigator. The ItemsSource must implement the IEnumerable interface. 
+Since the above steps are enough to create only empty date-time range navigator, you need to set the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ItemsSource.html) and [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~XBindingPath.html) for the SfDateTimeRangeNavigator. The ItemsSource must implement the IEnumerable interface. 
 
 {% tabs %}
 
@@ -102,15 +102,15 @@ Property</th><th>
 Description</th></tr>
 <tr>
 <td>
-ItemsSource</td><td>
+{{'[`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ItemsSource.html)'| markdownify }}</td><td>
 Sets the ItemsSource for SfDateTimeRangeNavigator.</td></tr>
 <tr>
 <td>
-XBindingPath</td><td>
+{{'[`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~XBindingPath.html)'| markdownify }}</td><td>
 Represents the date-time x values.</td></tr>
 <tr>
 <td>
-Content</td><td>
+{{'[`Content`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~Content.html)'| markdownify }}</td><td>
 Adds any UI content inside the date-time range navigator.</td></tr>
 </table>
 
@@ -289,7 +289,7 @@ rangenavigator.XBindingPath = "Date";
 
 ### Add content
 
-Add the content that needs to be displayed inside the date-time range navigator control using the Content property.
+Add the content that needs to be displayed inside the date-time range navigator control using the [`Content`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~Content.html) property.
 
 {% highlight c# %}
 
@@ -318,4 +318,4 @@ The following screenshot illustrates the result of the above code sample.
 
 ![Content for WPF SfDateTimeRangNavigator](Getting-Started_images/Getting-Started_img3.png)
 
-N> The SelectedData property of the date-time range navigator control returns the collection that represents the data between the selected ranges.
+N> The [`SelectedData`](https://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~SelectedData.html) property of the date-time range navigator control returns the collection that represents the data between the selected ranges.

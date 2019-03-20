@@ -9,301 +9,218 @@ documentation: ug
 
 # Getting Started
 
-The HierarchyNavigator control provides powerful data binding, which is fully customizable by using Expression Blend, making it easy to manage items and templates.
-
-## Control structure
-
-![](Getting-Started_images/Getting-Started_img1.png)
-
-
-
-## Class diagram
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-### Properties
-
-
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Description</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-IsEnableEditMode</td><td>
-Boolean</td><td>
-True or False</td><td>
-Enables Edit mode.</td><td>
-More details</td></tr>
-<tr>
-<td>
-IsEnableHistory</td><td>
-Boolean</td><td>
-True or False</td><td>
-Displays history.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-MaxDrillDownLevel</td><td>
-Integer</td><td>
-Integers</td><td>
-Restricts the drilled-down level.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-ShowToolTip</td><td>
-Boolean</td><td>
-True or False</td><td>
-Shows a ToolTip, if set to true.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-Items</td><td>
-ObservableCollection< HierarchyNavigatorItem></td><td>
-HierarchyNavigatorItem</td><td>
-Adds a hierarchical item to a control.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-SelectedHierarchyNavigatorItem</td><td>
-HierarchyNavigatorItem</td><td>
--</td><td>
-Indicates the item that is currently selected.</td><td>
-</td></tr>
-</table>
-
-### Methods
-
-
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Description</th><th>
-Return Type</th><th>
-Overloads</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-ShowProgressBar</td><td>
-Default TimeSpan of 500 ms will be set for progress bar timeline.</td><td>
-void</td><td>
-Empty</td><td>
-More Details</td></tr>
-<tr>
-<td>
-ShowProgressBar</td><td>
-TimeSpan can be set to control the progress bar timeline.</td><td>
-void</td><td>
-TimeSpan</td><td>
-More Details</td></tr>
-<tr>
-<td>
-CancelProgressBar</td><td>
-Default TimeSpan of 500 ms will be set for progress bar timeline.</td><td>
-void</td><td>
-Empty</td><td>
-More Details</td></tr>
-<tr>
-<td>
-CancelProgressBar</td><td>
-TimeSpan can be set to control the progress bar timeline.</td><td>
-void</td><td>
-TimeSpan</td><td>
-More Details</td></tr>
-<tr>
-<td>
-SelectNavigationItem</td><td>
-To Select Hierarchy Navigator Item in Code behind.</td><td>
-bool</td><td>
-object</td><td>
-More Details</td></tr>
-<tr>
-<td>
-ShowNavigationPopupItems</td><td>
-To Show Hierarchy Navigator Items in pop-up.</td><td>
-bool</td><td>
-object</td><td>
-More Details</td></tr>
-</table>
-
-### Events
-
-
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Event Type</th><th>
-Event Args Parameter</th><th>
-Description</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-HierarchyNavigatorSelectedItemChanged</td><td>
-HierarchyNavigatorSelectedItemChangedEventHandler</td><td>
-Selected Item</td><td>
-Occurs when an item is changed.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-HierarchyNavigatorRefreshButtonClick</td><td>
-EventHandler</td><td>
-HierarchicalNavigator Control</td><td>
-Occurs when the Refresh button is clicked.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-NavigationPopupOpening</td><td>
-EventHandler</td><td>
-Selected Item</td><td>
-Occurs when the navigation pop-up window is opening.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-NavigationPopupOpened</td><td>
-EventHandler</td><td>
-Selected Item</td><td>
-Occurs when the navigation pop-up window is open.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-NavigationPopupClosing</td><td>
-EventHandler</td><td>
-Selected Item</td><td>
-Occurs when the navigation pop-up window is closing.</td><td>
-More Details</td></tr>
-<tr>
-<td>
-NavigationPopupClosed</td><td>
-EventHandler</td><td>
-Selected Item</td><td>
-Occurs when the navigation pop-up window is closed.</td><td>
-More Details</td></tr>
-</table>
-
-## Adding a HierarchyNavigator control to an application
-
-The HierarchyNavigator control can be added to a WPF application by using Visual Studio and Expression Blend. 
-
-### Creating a HierarchyNavigator control by using Visual Studio
-
-The steps to create a HierarchyNavigator control in a WPF application by using Visual Studio are as follows:
-
-1. Create a new WPF application in Visual Studio. 
-2. In the Visual Studio Toolbox, click the SyncfusionWPF Toolbox tab, and select HierarchyNavigator.
-
-   ![](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-3. Drag the HierarchyNavigator to Design View, to add the HierarchyNavigator control.
-
-   ![](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-4. On the Properties window, customize the properties of the HierarchyNavigator control.
-
-
-   
-### Creating a HierarchyNavigator control by using Expression Blend
-
-
-The HierarchyNavigator control is fully customizable by using Expression Blend. 
-
-The steps to create a HierarchyNavigator control in a WPF application by using Expression Blend are as follows:
-
-1. Open the Expression Blend application.
-2. On the File menu, click New Project. This opens the New Project dialog box.
-
-   ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)
-
-
-
-3. In the Name field, type the name of the project, and then click OK.
-
-   ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-
-4. Add the following references with the sample project:
-   1. Syncfusion.Shared.WPF.dll
-   2. Syncfusion.Tools.WPF.dll
-5. On the Window menu, select Assets. This opens the Assets Library dialog box.
-6. In the search box, type HierarchyNavigator, and then press ENTER. This displays the search results.
-
-   ![](Getting-Started_images/Getting-Started_img7.png)
-
-
-
-7. Drag the HierarchyNavigator control to Design View.
-
-   ![](Getting-Started_images/Getting-Started_img8.png)
-
-
-
-8. Select the HierarchyNavigator control from the Objects and Timeline Pane and navigate to Miscellaneous, located in the Properties pane; click the button next to the Items collection. This will display the Object Collection Editor dialog box.
-
-   ![](Getting-Started_images/Getting-Started_img9.png)
-
-
-
-   ![](Getting-Started_images/Getting-Started_img10.png)
-
-
-
-    The HierarchyNavigator Collection Editor contains the Items and the Properties pane. The Items pane contains a list of items that can be added to the HierarchyNavigator control.
-
-   ![](Getting-Started_images/Getting-Started_img11.png)
-
-
-
-9. Click the Add another item button, to add an item in the Items pane, and then in the Properties pane add content and items for the selected item.
-
-   ![](Getting-Started_images/Getting-Started_img12.png)
-
-
-
-10. To add items in a hierarchical data format, in the Properties pane, find the Items field and add items to the next level.
-
-    ![](Getting-Started_images/Getting-Started_img13.png)
-
-
-
-    The items will then be displayed in XAML, as shown in the following figure:
-
-    ![](Getting-Started_images/Getting-Started_img14.png)
-
-    
-
-### Editing a HierarchyNavigator template in Expression Blend
-
-You can edit a HierarchyNavigator control after it is added. The steps to edit a HierarchyNavigator control in Expression Blend are as follows:
-
-1. Select the HierarchyNavigator control.
-2. On the Object menu, select Edit Style, and then select Edit a Copy. This opens the Create Style Resource dialog box.
-
-   ![](Getting-Started_images/Getting-Started_img15.png)
-
-
-
-
-
-3. In the Name field, type the style name.
-4. In the Define in section, select This document, and then select the user control.
-5. Click the OK button, to create a default style for the HierarchyNavigator control so that each part can be customized. Refer Customizing templates with Expression Blend.
-
-   ![](Getting-Started_images/Getting-Started_img16.png)
-
-
-   
+## Assembly deployment
+
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#hierarchynavigator) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+
+You can find more details about installing the NuGet packages in a WPF application in the following link: 
+
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+
+## Create a simple application with HierarchyNavigator
+
+You can create a WPF application with the HierarchyNavigator control using the following steps:
+
+## Create  a project
+
+Create a new WPF project in Visual Studio to display the HierarchyNavigator with functionalities.
+
+## Add control through designer
+
+The HierarchyNavigator control can be added to an application by dragging it from the toolbox and dropping it into a designer view. The following required assembly references will be added automatically to the project:
+
+* Syncfusion.Tools.WPF
+* Syncfusion.Shared.WPF 
+
+![wpf hierarchical navigator control added by designer](Getting-Started_images/wpf-hierarchy-navigator-control-added-by-designer.png)
+
+## Add control manually in XAML
+
+To add the control manually in XAML, follow the given steps:
+1.	Add the following required assembly references to the project:
+    * Syncfusion.Tools.WPF
+    * Syncfusion.Shared.WPF 
+2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3.	Declare the HierarchyNavigator control the in XAML page.
+
+{% tabs %}
+{% highlight XAML %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+		x:Class="HierarchicalNavigatorSample.MainWindow"
+		Title="HierarchicalNavigator Sample" Height="350" Width="525">
+	<Grid>
+		<!--Adding HierarchicalNavigator control -->
+		<syncfusion:HierarchicalNavigator x:Name="hierarchicalNavigator" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+	</Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
+
+## Add control manually in C\#
+
+To add the control manually in C#, follow the given steps:
+
+1.	Add the following required assembly references to the project:
+    * Syncfusion.Tools.WPF
+    * Syncfusion.Shared.WPF
+2.	Import the HierarchyNavigator namespace **using Syncfusion.Windows.Tools.Controls;**.
+3.	Create a HierarchyNavigator instance, and add it to the window.
+
+{% tabs %}
+{% highlight C# %}
+using Syncfusion.Windows.Tools;
+namespace HierarchicalNavigatorSample
+{
+	/// <summary>
+	/// Interaction logic for MainWindow.xaml
+	/// </summary>
+	public partial class MainWindow : Window
+	{
+		public MainWindow()
+		{
+			InitializeComponent();
+			//Creating an instance of HierarchicalNavigator control
+			HierarchicalNavigator hierarchicalNavigator = new HierarchicalNavigator();
+			//Adding HierarchicalNavigator as window content
+			this.Content = hierarchicalNavigator;
+		}
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+![wpf hierarchical navigator control added by code](Getting-Started_images/wpf-hierarchy-navigator-control-added-manually.png)
+
+## Add items using HierarchyNavigatorItem
+
+You can add the items inside the HierarchyNavigator control using [HierarchyNavigatorItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem.html).
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1" VerticalAlignment="Top" Height="30" Width="600">
+    <syncfusion:HierarchyNavigator.Items>
+        <syncfusion:HierarchyNavigatorItem Content="Syncfusion">
+            <syncfusion:HierarchyNavigatorItem.Items>
+                <syncfusion:HierarchyNavigatorItem Content="User Interface"/>
+                    <syncfusion:HierarchyNavigatorItem Content="Silverlight">
+                        <syncfusion:HierarchyNavigatorItem.Items>
+                            <syncfusion:HierarchyNavigatorItem Content="Tools"/>
+                        </syncfusion:HierarchyNavigatorItem.Items>
+                    </syncfusion:HierarchyNavigatorItem>
+                </syncfusion:HierarchyNavigatorItem.Items>
+            </syncfusion:HierarchyNavigatorItem>
+        </syncfusion:HierarchyNavigator.Items>
+</syncfusion:HierarchyNavigator>
+{% endhighlight %}
+{% highlight C# %}
+HierarchyNavigator hierarchyNavigator1 = new HierarchyNavigator() { Height = 30 };
+HierarchyNavigatorItem hierarchyNavigatorItem1 = new HierarchyNavigatorItem();
+hierarchyNavigatorItem1.Content = "Syncfusion";
+HierarchyNavigatorItem hierarchyNavigatorItem11 = new HierarchyNavigatorItem();
+
+hierarchyNavigatorItem11.Content = "User Interface";
+HierarchyNavigatorItem hierarchyNavigatorItem111 = new HierarchyNavigatorItem();
+
+hierarchyNavigatorItem111.Content = "Silverlight";
+HierarchyNavigatorItem hierarchyNavigatorItem112 = new HierarchyNavigatorItem();
+
+hierarchyNavigatorItem112.Content = "WPF";
+HierarchyNavigatorItem hierarchyNavigatorItem113 = new HierarchyNavigatorItem();
+
+hierarchyNavigatorItem113.Content = "ASP .Net";
+HierarchyNavigatorItem hierarchyNavigatorItem114 = new HierarchyNavigatorItem();
+
+hierarchyNavigatorItem114.Content = "MVC";
+hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem111);
+hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem112);
+hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem113);
+hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem114);
+hierarchyNavigatorItem1.Items.Add(hierarchyNavigatorItem11);
+hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
+this.Content = hierarchyNavigator1;
+{% endhighlight %}
+{% endtabs %}
+
+## Bind data
+
+HierarchyNavigator accepts any business object collection to be bound to its [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. Refer [Data binding](https://help.syncfusion.com/wpf/hierarchynavigator/populating-data) section for more details.
+
+The steps to bind to a Business Object collection are as follows:
+
+**1. Create a class named HierarchyItem.**
+
+{% tabs %}
+{% highlight C# %}
+public class HierarchyItem
+{
+	public string ContentString { get; set; }
+	public HierarchyItem(string content, params HierarchyItem[] myItems)
+	{
+		this.ContentString = content;
+		itemsObservableCollection = new ObservableCollection<HierarchyItem>();
+		foreach (var item in myItems)
+		{
+			itemsObservableCollection.Add(item);
+		}
+		HierarchyItems = itemsObservableCollection;
+	}
+	private ObservableCollection<HierarchyItem> itemsObservableCollection;
+	public ObservableCollection<HierarchyItem> HierarchyItems
+	{
+		get { return itemsObservableCollection; }
+		set
+		{
+			if (itemsObservableCollection != value)
+			{
+				itemsObservableCollection = value;
+			}
+		}		
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+**2. Create a collection for ItemsSource to bind HierarchyItem.**
+
+{% tabs %}
+{% highlight C# %}
+public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
+{
+	public HierarchicalItemsSource()
+	{
+		this.Add(new HierarchyItem("Syncfusion",
+		new HierarchyItem("User Interface",
+		new HierarchyItem("Silverlight"),
+		new HierarchyItem("WPF"),
+		new HierarchyItem("ASP .Net"),
+		new HierarchyItem("MVC")),
+		new HierarchyItem("Reporting Edition",
+		new HierarchyItem("IO"),
+		new HierarchyItem("PDF generator"),
+		new HierarchyItem("WPF")
+		)));
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+**3. In XAML, bind the collections to the ItemsSource property of the HierarchyNavigator control**
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:HierarchyNavigator Name="hierarchyNavigator2" Width="250" Height="25">
+	<syncfusion:HierarchyNavigator.ItemsSource>
+		<local:HierarchicalItemsSource />
+	</syncfusion:HierarchyNavigator.ItemsSource>
+	<syncfusion:HierarchyNavigator.ItemTemplate>
+		<HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
+			<TextBlock Text="{Binding ContentString}" Margin="2,0" />
+		</HierarchicalDataTemplate>
+	</syncfusion:HierarchyNavigator.ItemTemplate>
+</syncfusion:HierarchyNavigator>
+{% endhighlight %}
+{% endtabs %}
+
+![wpf hierarchy navigator control items added by data binding](Getting-Started_images/wpf-hierarchy-navigator-control-data-binding.png)

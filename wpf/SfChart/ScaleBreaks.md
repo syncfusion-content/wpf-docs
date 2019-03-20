@@ -12,7 +12,7 @@ Scale break is a stripe drawn in the chart area to denote the break in the conti
 
 ## Positioning the Breaks
 
-SfChart provides [`Start`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak~End.html) properties for defining the scale break range (ranges that needs to be skipped). These values are based on axis values. 
+SfChart provides `Start` and `End` properties for defining the scale break range (ranges that needs to be skipped). These values are based on axis values. 
 
 The following image has data points with both greater and smaller magnitude, but the segments with smaller values is not visualized properly.
 
@@ -66,11 +66,11 @@ chart.SecondaryAxis = axis;
 
 ## Break Position Customization
 
-For the defined break range, its position in the chart area can be customized using the [`BreakPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis~BreakPosition.html) property in numerical axis.
+For the defined break range, its position in the chart area can be customized using the `BreakPosition` property in numerical axis.
 
 Break position is determined based on the following factors:
 
-###Data Count
+### Data Count
 
 Based on the number of data points that fall in axis ranges (other than break range) scale break will be positioned.
 
@@ -125,9 +125,9 @@ chart.SecondaryAxis = axis;
 ![Positioning the scale break based on the data count in WPF Chart](ScaleBreak_images/ScaleBreak_img3.jpeg)
 
 
-###Scale
+### Scale
 
-Scale option allows you to position the breaks based on the delta of each axis range relative to the other.
+[`Scale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html) option allows you to position the breaks based on the delta of each axis range relative to the other.
 
 {% tabs %}
 
@@ -174,11 +174,11 @@ chart.SecondaryAxis = axis;
 ![Positioning the scale break based on the scale in WPF Chart](ScaleBreak_images/ScaleBreak_img4.jpeg)
 
 
-###Percent
+### Percent
 
 Percent option allows to position the breaks at the specified percentage of the axis available height.
 
-Percentage can be specified using [`BreakPercent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak~BreakPercent.html) property. Default BreakPercent value is 50.
+Percentage can be specified using `BreakPercent` property. Default BreakPercent value is 50.
 
 In the below image, each break is given percent value as 50. First break is positioned at the 50% of the axis, and the next break is positioned at 50% of the remaining space and so on.
 
@@ -314,7 +314,7 @@ chart.SecondaryAxis = axis;
 
 The following are the customizing options for scale break.
 
-Line type, background, spacing, stroke, stroke thickness of the scale break can be customized using [`LineType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak~LineType.html), [`Fill`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak~Fill.html), [`BreakSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak~BreakSpacing.html), [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak~Stroke.html), [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak~StrokeThickness.html) properties respectively.
+Line type such as [`Wave`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BreakLineType.html) or [`StraightLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.BreakLineType.html), background, spacing, stroke, stroke thickness of the scale break can be customized using `LineType`, `Fill`, `BreakSpacing`, `Stroke`, `StrokeThickness` properties respectively.
 
 {% tabs %}
 
