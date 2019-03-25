@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with Rotation Angle Support provided by Carousel control for WPF
+title: Rotation Angle Support | Carousel | WPF | Syncfusion
 description: Explains about Angle Support provided by Carousel control for WPF
 platform: wpf
 control: Carousel
@@ -79,7 +79,7 @@ grid1.Children.Add(carousel)
 ![Carousel rotation](Rotation-images/Rotation-Angle_img1.jpeg)
 
 
-# RotationSpeed Support
+## RotationSpeed Support
 
 [RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationSpeed.html)  property of Carousel enables the items in the control to be rotated at a user defined speed.
 
@@ -149,7 +149,7 @@ grid1.Children.Add(carousel)
 {% endtabs %}
 
 
-# Rotation Animation 
+## Rotation Animation 
 
 [EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~EnableRotationAnimation.html) property will enable or disable the Rotation Animation behavior of CarouselItems.
 

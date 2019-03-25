@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaling Opacity and Skewing Support provided by carousel control for WPF
+title: Scaling Opacity and Skewing Support | Carousel | WPF | Syncfusion
 description: Scaling Opacity and Skewing Support provided by carousel control for WPF
 platform: wpf
 control: Carousel
@@ -17,7 +17,7 @@ Using [TopItemPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wp
 
 To enable or disable this feature, use [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityEnabled.html), [ScalingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScalingEnabled.html), [SkewAngleXEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleXEnabled.html), [SkewAngleYEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleYEnabled.html) properties.
 
-# Opacity support
+## Opacity support
 
 In our carousel control, when we set the property [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityEnabled.html) to true, the opacity for the control will set.
 
@@ -89,7 +89,7 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 {% endtabs %}
 
-# Scaling feature
+## Scaling feature
 
 In our carousel control, the scaling for the carousel item would be set by using [ScalingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScalingEnabled.html) property. By default its property is false.
 Please find the code snippet below:

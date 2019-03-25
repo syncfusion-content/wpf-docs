@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SelectedItem 
+title: SelectedItem | Carousel | WPF | Syncfusion
 description: Explains about SelectedItem support in Carousel
 platform: wpf
 control: Carousel
@@ -54,7 +54,7 @@ carousel.SelectedItem = item3
 {% endtabs %}
 
 
-# Carousel Events
+## Carousel Events
 
 List of `Carousel` events are given in the following sections.
 
@@ -63,7 +63,7 @@ List of `Carousel` events are given in the following sections.
 * [SelectedIndexChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectedIndexChanged_EV.html)
 
 
-# IsSelected 
+## IsSelected 
 
 IsSelected is a Boolean property in the CarouselItem which is used to select a particular CarouselItem. 
 
@@ -111,7 +111,7 @@ IsSelected is a Boolean property in the CarouselItem which is used to select a p
 
 {% endtabs %}
 
-![](Selection-images/IsSelectedproperty.png)
+![Carousel selected item](Selection-images/IsSelectedproperty.png)
 
 
 

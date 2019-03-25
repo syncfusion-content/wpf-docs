@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ItemsPerPage support provided by Carousel control for WPF
+title: ItemsPerPage support | Carousel | WPF | Syncfusion
 description: ItemsPerPage support provided by Carousel control for WPF
 platform: wpf
 control: Carousel

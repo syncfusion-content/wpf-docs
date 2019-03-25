@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with Path Support and Radius Support provided by Carousel control for WPF
+title: Path and radius Support | Carousel | WPF | Syncfusion
 description: Explains about Path and Radius Support  provided by Carousel control for WPF
 platform: wpf
 control: Carousel
@@ -161,7 +161,7 @@ DependencyProperty<br/><br/></td><td>
 CustomEditorCollection<br/><br/></td></tr>
 </table>
 
-# Radius Support
+## Radius Support
 
 [RadiusX](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RadiusX.html) and [RadiusY](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RadiusY.html) properties in the Carousel can be used to define the X and Y axis radius to render the control.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in CardView control.
+title: Localization | CardView | WPF | Syncfusion
 description: How to localize the CardView control.
 platform: wpf
 control: CardView

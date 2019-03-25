@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding support in the Carousel control for WPF
+title: Data Binding support | Carousel | WPF | Syncfusion
 description: data binding support in the Carousel control for WPF
 platform: wpf
 control: Carousel
