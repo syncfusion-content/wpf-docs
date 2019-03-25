@@ -9,7 +9,7 @@ documentation: ug
 
 # Repeat Buttons
 
-Repeat Buttons are used to spin the selected part (month, day, year, hour, second, and minute) one step up or down. The visibility of the Repeat Button can be enabled by setting the IsVisibleRepeatButton property to true. The RepeatButtonBackground, RepeatButtonBorderThickness, UpRepeatButtonTemplate, RepeatButtonTemplate, UpRepeatButtonMargin, and DownRepeatButtonMargin properties are used to customize the appearance of the Repeat Buttons.
+Repeat Buttons are used to spin the selected part (month, day, year, hour, second, and minute) one step up or down. The visibility of the Repeat Button can be enabled by setting the [IsVisibleRepeatButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsVisibleRepeatButton.html) property to true. The [RepeatButtonBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~RepeatButtonBackground.html), [RepeatButtonBorderThickness](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~RepeatButtonBorderThickness.html), [UpRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonTemplate.html), [DownRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonTemplate.html), [UpRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonMargin.html), and [DownRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonMargin.html) properties are used to customize the appearance of the Repeat Buttons.
 
 {% tabs %}
 {% highlight xaml %}
@@ -19,7 +19,7 @@ Repeat Buttons are used to spin the selected part (month, day, year, hour, secon
 {% endhighlight  %}
 {% endtabs %}
 
-![](Repeat-Buttons_images/Repeat-Buttons_img1.png)
+![Repeat button](Repeat-Buttons_images/Repeat-Buttons_img1.png)
 
 {% seealso %}
 

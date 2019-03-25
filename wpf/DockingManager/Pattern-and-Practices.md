@@ -10,11 +10,11 @@ documentation: ug
 
 ## MVVM 
 
-This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an Items Control, it is not possible to have a traditional `ItemsSource` binding to a collection of objects in the view model. However this can be achieved by creating a wrapper or adapter for the DockingManager.
+This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an Items Control, it is not possible to have a traditional [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) binding to a collection of objects in the view model. However this can be achieved by creating a wrapper or adapter for the DockingManager.
 
 Here a simple text-reader application is used to demonstrate this approach.
 
-![](PatternandPractices_images/PatternandPractices_img1.jpeg)
+![MVVM](PatternandPractices_images/PatternandPractices_img1.jpeg)
 
 
 1. `DocumentsView`: The pane that lists all the available documents and tooltip display the path of the document.
@@ -23,11 +23,11 @@ Here a simple text-reader application is used to demonstrate this approach.
 4. `CommandView`: The view has two commands: `Open` Document and `Exit`. Executing an Open Document action opens the Open File Dialog. The document that opened, added to the existing documents list. Other commands like Close Document and New Document can also be implemented the same way.
 5. The project structure looks like this:
 
-![](PatternandPractices_images/PatternandPractices_img2.jpeg)
+![MVVM](PatternandPractices_images/PatternandPractices_img2.jpeg)
 
 
 ### Docking Adapter
-The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the `ItemsSource` property triggers a collection change where the adapter creates a corresponding Framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
+The adapter is simply a user control that contains DockingManager as its content. The adapter has two properties — ItemsSource and ActiveDocument. Binding a collection of objects to the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property triggers a collection change where the adapter creates a corresponding Framework element, example: ContentControl in the DockingManager, setting the underlying data context of the control to the business model.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ The adapter is simply a user control that contains DockingManager as its content
 
 {% endtabs %}
 
-![](PatternandPractices_images/PatternandPractices_img3.jpeg)
+![Docking adapter](PatternandPractices_images/PatternandPractices_img3.jpeg)
 
 
 The text-reader application maintains a collection of workspaces. A workspace can be a normal dock pane or a document pane. The adapter also maintains an interface called `IDockElement` that maintains basic attributes needed for every dock element.
@@ -55,14 +55,14 @@ The adapter user control also determines the state of the element, whether it sh
 
 The adapter can be further customized to add elements as floating or auto-hidden.
 
-The DockingManager provides an `ActiveWindowChanged` event. Using this, the `ActiveDocument` property in the adapter needs to be updated every time focus changes to other panes.
+The DockingManager provides an [ActiveWindowChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ActiveWindowChanged_EV.html) event. Using this, the [ActiveDocument](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~ActiveDocument.html) property in the adapter needs to be updated every time focus changes to other panes.
 
 ### Application structure
 
-![](PatternandPractices_images/PatternandPractices_img4.jpeg)
+![Application structure](PatternandPractices_images/PatternandPractices_img4.jpeg)
 
 
-The view model has a collection of workspaces that is data-bound to the `ItemsSource` property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
+The view model has a collection of workspaces that is data-bound to the [ItemsSource]([ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2)) property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the DockingManager.
 
 Every dock element in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
 
@@ -129,11 +129,11 @@ The following steps explains how to create sample project with MVVMLight templat
 
 2.Create a new WPF project and select MVVMLight WPF template.
 
-![](PatternandPractices_images/Patterns-and-Practices-img1.png)
+![Create a new WPF project](PatternandPractices_images/Patterns-and-Practices-img1.png)
 
 3.Template for MVVMLight sample will be created with required assemblies, Simple IOC container and ViewModelLocator
 
-![](PatternandPractices_images/Patterns-and-Practices-img2.png)
+![Template for MVVMLight](PatternandPractices_images/Patterns-and-Practices-img2.png)
 
 4.Attach DockingAdapter project to the DockingManagerMVVMLight project from MVVM sample. Create necessary ViewModels and Views with perfect naming conventions. Once the ItemsSource has been set to DockingAdapter children will be populate.
 
@@ -484,7 +484,7 @@ End Class
 
 Then when run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
 
-![](PatternandPractices_images/PatternandPractices_img5.jpeg)
+![Prism](PatternandPractices_images/PatternandPractices_img5.jpeg)
 
 ## Configuring DockingManager with Prism 6.1
 
@@ -860,7 +860,7 @@ return regionAdapterMappings;
 
 The final output of application is given below:
 
-![](PatternandPractices_images/Patterns-and-Practices.jpeg)
+![Configure the region adapter mappings](PatternandPractices_images/Patterns-and-Practices.jpeg)
 
 #### **Sample link:** [PRISM Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PRISM_6_DockingManager_Demo1726639343.zip)
 

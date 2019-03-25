@@ -9,7 +9,7 @@ documentation: ug
 
 # Watermark Support
 
-Watermark is the dummy content displayed in the DateTimeEdit control when the DateTime property is set to null. You can set the content of the Watermark by using the NoneDateText property.
+Watermark is the dummy content displayed in the DateTimeEdit control when the DateTime property is set to null. You can set the content of the Watermark by using the [NoneDateText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~NoneDateText.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -19,7 +19,7 @@ Watermark is the dummy content displayed in the DateTimeEdit control when the Da
 {% endhighlight  %}
 {% endtabs %}
 
-![](Watermark-Support_images/Watermark-Support_img1.png)
+![Watermark support](Watermark-Support_images/Watermark-Support_img1.png)
 
 
 {% seealso %}

@@ -9,9 +9,9 @@ documentation: ug
 
 # DateTime Patterns
 
-The DateTime `Pattern` helps you to specify the date-time display pattern for the `DateTimeEdit` control.
+The DateTime [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) helps you to specify the date-time display pattern for the `DateTimeEdit` control.
 
-The display format of the date in the `DateTimeEdit` control can be customized by the `Pattern` and `CustomPattern` properties.
+The display format of the date in the `DateTimeEdit` control can be customized by the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) and [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) properties.
 
 ## Pattern
 
@@ -29,7 +29,7 @@ The `DateTimeEdit` control supports the following patterns:
 * RFC1123 
 * YearMonth 
 
-The pattern is set by using the Pattern property. The following code snippet illustrates how to set the patterns:
+The pattern is set by using the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property. The following code snippet illustrates how to set the patterns:
 
 {% tabs %}
 
@@ -131,21 +131,21 @@ dateTimeEdit.Pattern = DateTimePattern.YearMonth;
 
 {% endtabs %} 
 
-![](DateTime-Patterns_images/DateTime-Patterns_img1.png)
+![DateTimeEdit pattern](DateTime-Patterns_images/DateTime-Patterns_img1.png)
 
 ## Custom pattern
 
-You can also set the custom pattern for displaying the date in the DateTimeEdit control by using the CustomPattern property.
+You can also set the custom pattern for displaying the date in the DateTimeEdit control by using the [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) property.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"  DateTime="07/15/2010" Pattern="CustomPattern" CustomPattern="MM/dd/yy hh:mm:ss"></syncfusion:DateTimeEdit>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
 dateTimeEdit.Width = 200;
@@ -163,6 +163,6 @@ this.LayoutRoot.Children.Add(dateTimeEdit);
 
 {% endtabs %} 
 
-![](DateTime-Patterns_images/DateTime-Patterns_img2.png)
+![Custom pattern](DateTime-Patterns_images/DateTime-Patterns_img2.png)
 
-N>CustomPattern support can be enabled by setting the Pattern property to the DateTimePattern.CustomPattern.
+N>[CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) support can be enabled by setting the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property to the DateTimePattern.CustomPattern.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selecting the Date and Year at Run Time | CalendarEdit | WPF | Syncfusion
+title: Selecting the Date and Year | CalendarEdit | WPF | Syncfusion
 description: selecting the date and year at run time
 platform: wpf
 control: CalendarEdit
@@ -9,11 +9,11 @@ documentation: ug
 
 # Selecting the Date and Year at Runtime
 
-Selecting Date at Run Time
+## Selecting Date at Run Time
 
-By setting the AllowSelection property to true, you can enable user selection in CalendarEdit control at run time. This dependency property indicates whether the date selection is allowed during runtime. It returns a Boolean value indicating the state of this property.
+By setting the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowSelection.html) property to true, you can enable user selection in CalendarEdit control at run time. This dependency property indicates whether the date selection is allowed during runtime. It returns a Boolean value indicating the state of this property.
 
-For setting the AllowSelection property, use the following code.
+For setting the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowSelection.html) property, use the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -37,13 +37,13 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img1.jpeg)
+![Date selection at run time](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img1.jpeg)
 
 ### Selecting year at runtime
 
-By setting the AllowYearEditing property to _true_, you can edit the year at run time. This is dependency property indicates whether the year can be edited at run time. It returns the Boolean value that indicates the state of this property.
+By setting the [AllowYearEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowYearEditing.html) property to _true_, you can edit the year at run time. This is dependency property indicates whether the year can be edited at run time. It returns the Boolean value that indicates the state of this property.
 
-To set the AllowYearEditing property, use the following code.
+To set the [AllowYearEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~AllowYearEditing.html) property, use the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -65,7 +65,7 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img2.jpeg)
+![Selecting year at run time](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img2.jpeg)
 
 {% seealso %}
 
