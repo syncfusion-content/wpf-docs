@@ -9,7 +9,7 @@ documentation: ug
 
 # SelectedItem
 
-SelectedItem is a property in the Carousel that stores the currently selected CarouselItem. 
+[SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectedItem.html) is a property in the Carousel that stores the currently selected CarouselItem. 
 
 {% tabs %}
 
@@ -58,24 +58,9 @@ carousel.SelectedItem = item3
 
 List of `Carousel` events are given in the following sections.
 
-<table>
-<tr>
-<th>
-Carousel Events<br/><br/></th><th>
-Description<br/><br/></th></tr>
-<tr>
-<td>
-SelectionChanged<br/><br/></td><td>
-SelectionChanged event will fire when the value of the SelectedItem of the Carousel control is changed.<br/><br/></td></tr>
-<tr>
-<td>
-SelectedValueChanged<br/><br/></td><td>
-SelectedValueChanged event will fire when the selected value of the Carousel is changed<br/><br/></td></tr>
-<tr>
-<td>
-SelectedIndexChanged<br/><br/></td><td>
-SelectedIndexChanged event will fire when the selected index of the Carousel is changed<br/><br/></td></tr>
-</table>
+* [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectionChanged_EV.html)
+* [SelectedValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectedValueChanged_EV.html)
+* [SelectedIndexChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SelectedIndexChanged_EV.html)
 
 
 # IsSelected 

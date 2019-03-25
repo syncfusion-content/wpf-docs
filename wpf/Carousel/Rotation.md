@@ -9,7 +9,7 @@ documentation: ug
 
 # RotationAngle Support
 
-**RotationAngle** property of carousel enables the items in the control to be rotated at a user defined angle.
+[RotationAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationAngle.html) property of carousel enables the items in the control to be rotated at a user defined angle.
 
 ## Adding RotationAngle support to an Application
 
@@ -76,12 +76,12 @@ grid1.Children.Add(carousel)
 
 {% endtabs %}
 
-![](Rotation-images/Rotation-Angle_img1.jpeg)
+![Carousel rotation](Rotation-images/Rotation-Angle_img1.jpeg)
 
 
 # RotationSpeed Support
 
-**RotationSpeed**  property of Carousel enables the items in the control to be rotated at a user defined speed.
+[RotationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RotationSpeed.html)  property of Carousel enables the items in the control to be rotated at a user defined speed.
 
 ## Adding RotationSpeed support to an Application
 
@@ -151,7 +151,7 @@ grid1.Children.Add(carousel)
 
 # Rotation Animation 
 
-**EnableRotationAnimation** property will enable or disable the Rotation Animation behavior of CarouselItems.
+[EnableRotationAnimation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~EnableRotationAnimation.html) property will enable or disable the Rotation Animation behavior of CarouselItems.
 
 {% tabs %}
 
@@ -207,7 +207,7 @@ Carousel provides Touch UI which is easy to perform the rotation of CarouselItem
 
 ## How to enable Touch support in Carousel 
 
-To enable Touch Support in Carousel, set `EnableTouch` property as true. When the property is false, we need to touch exactly on the item to rotate. By default its value is false. 
+To enable Touch Support in Carousel, set [EnableTouch](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~EnableTouch.html) property as true. When the property is false, we need to touch exactly on the item to rotate. By default its value is false. 
 
 {% tabs %}
 

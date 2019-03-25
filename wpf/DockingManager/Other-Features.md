@@ -130,7 +130,7 @@ DockingManager.SetCanAutoHide(grid1, false);
 {% endtabs %} 
 
 
-![](Other-Features_images/Other-Features_img1.jpeg)
+![Auto hide visibility](Other-Features_images/Other-Features_img1.jpeg)
 
 ## Enabling/Disabling Animation on mouse over for auto hide
 

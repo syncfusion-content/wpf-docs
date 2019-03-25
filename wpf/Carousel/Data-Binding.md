@@ -14,7 +14,7 @@ Carousel is a fully data bound control, supports binding to different data sourc
 ## Using Data Binding in an Application
 
 
-To bind a collection to Carousel, use the **ItemsSource** property.
+To bind a collection to Carousel, use the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property.
 
 The user can create Rich Interface Applications by defining DataTemplate to a Carousel control.
 
@@ -188,6 +188,6 @@ HorizontalAlignment="Center">
 
 
 
-![](Data-Binding_images/Data-Binding_img1.jpeg)
+![data binding](Data-Binding_images/Data-Binding_img1.jpeg)
 
 

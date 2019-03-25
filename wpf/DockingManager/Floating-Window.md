@@ -251,7 +251,7 @@ DockingManager.SetFloatingWindowRect(Content1, New Rect(200, 200, 200, 200))
 {% endhighlight %}
 
 {% endtabs %}
-![](FloatingWindow_images/FloatingWindow_img5.jpeg)
+![Positioning on desire location](FloatingWindow_images/FloatingWindow_img5.jpeg)
 
 ## Snapping Float window
 

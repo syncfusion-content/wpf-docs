@@ -10,7 +10,7 @@ documentation: ug
 
 AutoHide window is one of the state in the DockingManager. To enable Auto hidden for DockingManager's children, set its `State` value as `AutoHidden`.
 
-![](Auto-Hide-Window_images/Auto-Hide-Window_img1.jpeg)
+![Auto hide window](Auto-Hide-Window_images/Auto-Hide-Window_img1.jpeg)
 
 
 ## Configuring window in Different Side

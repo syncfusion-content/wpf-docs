@@ -9,11 +9,11 @@ documentation: ug
 
 # ItemsPerPage Support
 
-To get or set the number of items to be displayed in the Carousel control, use **ItemsPerPage** property. Carousel panel displays only items for the currently visible items
+To get or set the number of items to be displayed in the Carousel control, use [ItemsPerPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ItemsPerPage.html) property. Carousel panel displays only items for the currently visible items
 
 ## Using ItemsPerPage in an Application
 
-In the below sample, ItemsPerPage is set as **5**. Hence, while running the sample, only 5 items will be displayed in the path.
+In the below sample, [ItemsPerPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ItemsPerPage.html) is set as **5**. Hence, while running the sample, only 5 items will be displayed in the path.
 
 {% tabs %}
 
@@ -79,22 +79,4 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 {% endtabs %}
 
-![](ItemsPerPage-Support_images/ItemsPerPage-Support_img1.jpeg)
-
-
-## Properties
-
-<table>
-<tr>
-<td>
-Property<br/><br/></td><td>
-Description<br/><br/></td><td>
-Type<br/><br/></td><td>
-Data Type<br/><br/></td></tr>
-<tr>
-<td>
-ItemsPerPage<br/><br/></td><td>
-Gets or sets the number of items to be displayed in the Carousel control.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-Integer<br/><br/></td></tr>
-</table>
+![Carousel item support](ItemsPerPage-Support_images/ItemsPerPage-Support_img1.jpeg)

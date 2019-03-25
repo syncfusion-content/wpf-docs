@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selecting the Date and Year at Run Time | CalendarEdit | WPF | Syncfusion
+title: Selecting the Date and Year | CalendarEdit | WPF | Syncfusion
 description: selecting the date and year at run time
 platform: wpf
 control: CalendarEdit

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding 
+title: Data Binding | DockingManager | WPF | Syncfusion
 description: Learn how to configure the DockingManager child through ItemsSource 
 platform: wpf
 control: DockingManager
