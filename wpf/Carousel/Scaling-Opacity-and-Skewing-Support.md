@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaling Opacity and Skewing Support provided by carousel control for WPF
+title: Scaling Opacity and Skewing Support | Carousel | WPF | Syncfusion
 description: Scaling Opacity and Skewing Support provided by carousel control for WPF
 platform: wpf
 control: Carousel
@@ -8,18 +8,18 @@ documentation: ug
 ---
 # Scaling Opacity and Skewing Support
 
-User can control Scaling, Opacity and Skewing for CarouselItem’s using **ScaleFractions**, **OpacityFractions** and **SkewAngleXFractions**, **SkewAngleYFractions** properties. 
+User can control Scaling, Opacity and Skewing for CarouselItem’s using [ScaleFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScaleFractions.html), [OpacityFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityFractions.html) and [SkewAngleXFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleXFractions.html), **SkewAngleYFractions** properties. 
 
 
-Using **TopItemPosition** property, they can change the position of SelectedItem in a given path.
+Using [TopItemPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~TopItemPosition.html) property, they can change the position of SelectedItem in a given path.
 
 ## Adding Scaling, Opacity and Skewing Support to an Application
 
-To enable or disable this feature, use **OpacityEnabled**, **ScalingEnabled**, **SkewXEnabled**, **SkewYEnabled** properties.
+To enable or disable this feature, use [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityEnabled.html), [ScalingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScalingEnabled.html), [SkewAngleXEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleXEnabled.html), [SkewAngleYEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleYEnabled.html) properties.
 
-# Opacity support
+## Opacity support
 
-In our carousel control, when we set the property OpacityEnabled to true, the opacity for the control will set.
+In our carousel control, when we set the property [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityEnabled.html) to true, the opacity for the control will set.
 
 Please find the code snippet for the same:
 
@@ -89,9 +89,9 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 {% endtabs %}
 
-# Scaling feature
+## Scaling feature
 
-In our carousel control, the scaling for the carousel item would be set by using ScalingEnabled property. By default its property is false.
+In our carousel control, the scaling for the carousel item would be set by using [ScalingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScalingEnabled.html) property. By default its property is false.
 Please find the code snippet below:
 
 {% tabs %}
@@ -180,64 +180,16 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 {% endtabs %}
 
-![](Scaling-Opacity-and-Skewing-Support_images/Scaling-Opacity-and-Skewing-Support_img1.jpeg)
+![Scaling feature](Scaling-Opacity-and-Skewing-Support_images/Scaling-Opacity-and-Skewing-Support_img1.jpeg)
 
 
 ### Properties
 
-<table>
-<tr>
-<td>
-Property<br/><br/></td><td>
-Description<br/><br/></td><td>
-Type<br/><br/></td><td>
-Data Type<br/><br/></td></tr>
-<tr>
-<td>
-OpacityEnabled<br/><br/></td><td>
-Enables or disables the Opacity support in Carousel.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-Bool<br/><br/></td></tr>
-<tr>
-<td>
-ScalingEnabled<br/><br/></td><td>
-Enables or disables the Scaling support in Carousel.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-Bool<br/><br/></td></tr>
-<tr>
-<td>
-SkewAngleXEnabled<br/><br/></td><td>
-Enables or disables the SkewAngleX support in Carousel.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-Bool<br/><br/></td></tr>
-<tr>
-<td>
-SkewAngleYEnabled<br/><br/></td><td>
-Enables or disables the SkewAngleY support in Carousel.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-Bool<br/><br/></td></tr>
-<tr>
-<td>
-OpacityFractions<br/><br/></td><td>
-Sets the Opacity Value for CarouselItem in the Path.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-PathFractionCollection<br/><br/></td></tr>
-<tr>
-<td>
-ScalingFractions<br/><br/></td><td>
-Sets the Scale Value for CarouselItem in the Path.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-PathFractionCollection<br/><br/></td></tr>
-<tr>
-<td>
-SkewAngleXFraction<br/><br/></td><td>
-Sets the SkewAngleX Value for CarouselItem in the Path.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-PathFractionCollection<br/><br/></td></tr>
-<tr>
-<td>
-SkewAngleYFractions<br/><br/></td><td>
-Sets the SkewAngleY Value for CarouselItem in the Path.<br/><br/></td><td>
-DependencyProperty<br/><br/></td><td>
-PathFractionCollection<br/><br/></td></tr>
-</table>
+* [OpacityEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityEnabled.html)
+* [ScalingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScalingEnabled.html)
+* [SkewAngleXEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleXEnabled.html)
+* [SkewAngleYEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleYEnabled.html)
+* [OpacityFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~OpacityFractions.html)
+* [ScalingFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~ScaleFractions.html)
+* [SkewAngleXFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleXFractions.html)
+* [SkewAngleYFractions](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~SkewAngleYFractions.html)

@@ -11,7 +11,7 @@ documentation: ug
 
 The MDI and TDI functionalities are applicable for the Document window in the DockingManager. So Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface.
 
-To change mode for the Document window, set the property `ContainerMode` with its respective values.
+To change mode for the Document window, set the property [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) with its respective values.
 
 By default, the document state window is in TDI mode, that display child as tabbed document.
 
@@ -45,7 +45,7 @@ DockingManager.SetState(Document2, DockState.Document);
 
 ![Displays Document tab item in DockingManager](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img1.jpeg)
 
-To make the document child window as MDI document, set the `ContainerMode` as `MDI`
+To make the document child window as MDI document, set the [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) as `MDI`
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ SyncDockingManager.ContainerMode = DocumentContainerMode.MDI;
 
 ## Setting MDI Window state
 
-The state of the MDI Window can be set using the `SetMDIWindowState()` method of DocumentContainer. 
+The state of the MDI Window can be set using the [SetMDIWindowState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~SetMDIWindowState.html) method of DocumentContainer. 
 
 ### Setting MDI WindowState as Minimized
 
@@ -120,7 +120,7 @@ DocumentContainer.SetMDIWindowState(Content1,MDIWindowState.Maximized)
 
 ## Getting state of the MDI window
 
-The state of the MDI window can be detect using the `GetMDIWindowState()` method of DocumentContainer.
+The state of the MDI window can be detect using the [GetMDIWindowState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~GetMDIWindowState.html) method of DocumentContainer.
 
 {% tabs %}
 
@@ -140,7 +140,7 @@ DocumentContainer.GetMDIWindowState(Content1)
 
 ## Detecting the maximized state of the MDI window
 
-Maximized state of the MDI Container can get by `IsInMDIMaximizedState` property of DocumentContainer. The container can be fetched from the DockingManager using the `DocContainer` property.
+Maximized state of the MDI Container can get by [IsInMDIMaximizedState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsInMDIMaximizedState.html) property of DocumentContainer. The container can be fetched from the DockingManager using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DocContainer.html) property.
 
 {% tabs %}
 
@@ -160,7 +160,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).IsInMDIMaximizedState =
 
 ## Resizing MDI
 
-MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property `IsAllowMDIResize` of the `DocumentContainer` that can be get using the `DocContainer` property of the DockingManager. By default, its values is `True`.
+MDI document window can be able to resize using the navigation arrows. To restrict resizing the MDI document windows, disable the Property [IsAllowMDIResize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~IsAllowMDIResize.html) of the [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) that can be get using the [DocContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DocContainer.html) property of the DockingManager. By default, its values is `True`.
 
 {% tabs %}
 
@@ -180,7 +180,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).IsAllowMDIResize = Fals
 
 ## Different Keyboard Navigation Modes
 
-DockingManager allows to navigate between children (Both  TDI and MDI) windows easily using the keyboard keys with combination of `CTRL` `+` `TAB` in five different modes by `SwitchMode` property of the DockingManager.
+DockingManager allows to navigate between children (Both  TDI and MDI) windows easily using the keyboard keys with combination of `CTRL` `+` `TAB` in five different modes by [SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SwitchMode.html) property of the DockingManager.
 
 There are five switch modes.
 
@@ -301,7 +301,7 @@ DockingManager1.SwitchMode =SwitchMode.VS2005
 
 ## Setting MDI Layout
 
-DockingManager allows to set the different layout for the MDI windows with the different MDILayout values such as `Horizontal` , `Vertical` and `Cascade` layout through the `SetLayout()` method of DocumentContainer.
+DockingManager allows to set the different layout for the MDI windows with the different [MDILayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.MDILayout.html) values such as `Horizontal` , `Vertical` and `Cascade` layout through the [SetLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~SetLayout.html) method of DocumentContainer.
 
 `Horizontal` - Arranges the MDI windows horizontally.
 
@@ -386,7 +386,7 @@ End Sub
 
 ## Closing a MDI Windows
 
-To enable or disable closing functionality of the MDI windows, set `CanClose` an attached property of DockingManager with its respective values. By default, its value is `True`
+To enable or disable closing functionality of the MDI windows, set [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanClose.html) an attached property of DockingManager with its respective values. By default, its value is `True`
 
 {% tabs %}
 
@@ -414,7 +414,7 @@ DockingManager.SetCanClose(Content1, false);
 
 ## Indexing an Item in TDI
 
-A document window can be placed at different index position using the `SetTDIIndex()` method of the TDILayoutPanel. 
+A document window can be placed at different index position using the [SetTDIIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TDILayoutPanel~SetTDIIndex.html) method of the TDILayoutPanel. 
 
 {% tabs %}
 
@@ -453,7 +453,7 @@ TDILayoutPanel.SetTDIIndex(Content1,0)
 
 ## Drag / Drop support in TDI
 
-The TDI document index can be changed by dragging and dropping it like Visual Studio. This functionality can be enabled or disabled through the property `IsTDIDragDropEnabled` of DockingManager.
+The TDI document index can be changed by dragging and dropping it like Visual Studio. This functionality can be enabled or disabled through the property [IsTDIDragDropEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsTDIDragDropEnabled.html) of DockingManager.
 
 {% tabs %}
 
@@ -481,7 +481,7 @@ SyncDockingManager.IsTDIDragDropEnabled = true;
 
 ## Customizing Close Menu
 
-Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the document window when two or more documents used in the DockingManager. To collapse the visibility of these menu item, set the property `ShowClose`, `ShowCloseAll` and `ShowCloseAllButThis` as `False`.
+Menu items like `Close`, `CloseAll` and `CloseAllButThis` are available for the document window when two or more documents used in the DockingManager. To collapse the visibility of these menu item, set the property [ShowCloseMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~ShowCloseMenuItem.html), [ShowCloseAllMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~ShowCloseAllMenuItem.html) and [ShowCloseAllButThisMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~ShowCloseAllButThisMenuItem.html) as `False`.
 
 {% tabs %}
 
@@ -535,7 +535,7 @@ In DockingManager, new tab group can be created at horizontal or vertical side i
 
 #### Creating Vertical Tab Group 
 
-To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method `CreateVerticalTabGroup(UIElement)` of the DocumentContainer.
+To create a vertical tab group in the Tabbed document, select the "New Vertical Tab Group" context menu item and also it can be created programmatically by calling the method [CreateVerticalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CreateVerticalTabGroup.html) of the DocumentContainer.
 
 {% tabs %}
 
@@ -555,7 +555,7 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).CreateVerticalTabGroup(
 
 #### Creating Horizontal Tab Group 
 
-To create a horizontal tab group in the Tabbed document, select the "New Horizontal Tab Group context menu item and also it can be created programmatically by calling the method `CreateHorizontalTabGroup(UIElement)` of the DocumentContainer.
+To create a horizontal tab group in the Tabbed document, select the "New Horizontal Tab Group context menu item and also it can be created programmatically by calling the method [CreateHorizontalTabGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CreateHorizontalTabGroup.html) of the DocumentContainer.
 
 {% tabs %}
 
@@ -584,11 +584,11 @@ In TDI document, new tab group can be created by dragging the tab item into the 
 
 ## TabGroup creation through mouse interaction 
 
-In the docking manager, a new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. To enable this functionality, set the TabSwitchSection attached property as ActiveFiles for document items, and ActiveToolWindows for dock items.
+In the docking manager, a new tab group can be created at the top, left, right, or bottom of the document area through mouse interactions. To enable this functionality, set the [TabSwitchSection](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TabSwitchSection.html) attached property as ActiveFiles for document items, and ActiveToolWindows for dock items.
 
 ### ActiveFiles mode
 
-Moving document items to a docked state can be restricted by setting the TabSwitchSection attached property as ActiveFiles. Users can also create a tab group at a side in the document area with the help of a drag provider similar to the one in Visual Studio.
+Moving document items to a docked state can be restricted by setting the [TabSwitchSection](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TabSwitchSection.html) attached property as ActiveFiles. Users can also create a tab group at a side in the document area with the help of a drag provider similar to the one in Visual Studio.
 
 {% tabs %}
 
@@ -616,7 +616,7 @@ The following screenshot shows a tab group being created at the top of the docum
 
 ### ActiveToolWindows mode
 
-Dock items can be moved to both docked and document states in the document area by setting the TabSwitchSection attached property to ActiveToolWindows, which turns on the active tool windows mode. This mode enables a drag provider that will appear based on the cursor position near the sides of an item. If the cursor is positioned at the outer half of the docking hints, the item will move to the docked state. If the cursor is at the inner half, the item will move to the document state. 
+Dock items can be moved to both docked and document states in the document area by setting the [TabSwitchSection](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TabSwitchSection.html) attached property to ActiveToolWindows, which turns on the active tool windows mode. This mode enables a drag provider that will appear based on the cursor position near the sides of an item. If the cursor is positioned at the outer half of the docking hints, the item will move to the docked state. If the cursor is at the inner half, the item will move to the document state. 
 
 {% tabs %}
 
@@ -648,13 +648,13 @@ The following screenshot shows moving an item to the document state at the right
 
 ![First Item is moved to Document state ](MDI_TDIfunctionalities_images/TabGroupCreation_Right1.png)
 
-N> These functionalities will take effect only when the `IsVs2010DraggingEnabled` property of DockingManager is true.
+N> These functionalities will take effect only when the [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsVS2010DraggingEnabled.html) property of DockingManager is true.
 
 ## Disable TabGroups
 
-Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property `TabGroupEnabled` in DockingManager. 
+Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property [TabGroupEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabGroupEnabled.html) in DockingManager. 
  
-To disabling Tab Groups, set TabGroupEnabled as `False`. So it does not display "New Horizontal Tab Group" and "New Vertical Tab Group" context menu items even when ShowHorizontalTabGroupMenuItem is true. Drag and drop support to create new tab group is also restricted.
+To disabling Tab Groups, set [TabGroupEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~TabGroupEnabled.html) as `False`. So it does not display "New Horizontal Tab Group" and "New Vertical Tab Group" context menu items even when [ShowHorizontalTabGroupMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~ShowHorizontalTabGroupMenuItem.html) is true. Drag and drop support to create new tab group is also restricted.
 
 {% tabs %}
 
@@ -674,7 +674,7 @@ SyncDockingManager.TabGroupEnabled = false;
 
 ## VS2010 Behavior of TDI
 
-TDI document of DockingManager can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property `IsVs2010DraggingEnabled`. By default, its value is `False`. 
+TDI document of DockingManager can be changed to Float while dragging its TDI header. This functionality can be enabled or disabled using the property [IsVs2010DraggingEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~IsVS2010DraggingEnabled.html). By default, its value is `False`. 
 
 {% tabs %}
 
@@ -701,7 +701,7 @@ SyncDockingManager.IsVS2010DraggingEnabled = true;
 
 ## TDI Header Renaming Support
 
-To enable the functionality of editing the TDI document header when double click on document header at runtime, set the property `EnableDocumentTabHeaderEdit` of the DockingManager as `True`. By default, its value is `False`.
+To enable the functionality of editing the TDI document header when double click on document header at runtime, set the property [EnableDocumentTabHeaderEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~EnableDocumentTabHeaderEdit.html) of the DockingManager as `True`. By default, its value is `False`.
 
 {% tabs %}
 
@@ -721,7 +721,7 @@ SyncDockingManager.EnableDocumentTabHeaderEdit = true;
 
 ## Hiding TDI Header
 
-To hide the TDI document header when a single document child present in a DockingManager set the property `HideTDIHeaderOnSingleChild` as `True`. By default its value is `False`.
+To hide the TDI document header when a single document child present in a DockingManager set the property [HideTDIHeaderOnSingleChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~HideTDIHeaderOnSingleChild.html) as `True`. By default its value is `False`.
 
 {% tabs %}
 
@@ -748,7 +748,7 @@ SyncDockingManager.HideTDIHeaderOnSingleChild = true;
 
 ## Add New button in Header Panel
 
-In DockingManager, the New button can be added in the Document state windows using the `IsNewButtonEnabled` property of the DocumentTabControl. To achieve this, DocumentTabControl must be fetched from the DockingManager.
+In DockingManager, the New button can be added in the Document state windows using the [IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonEnabled.html) property of the DocumentTabControl. To achieve this, DocumentTabControl must be fetched from the DockingManager.
 
 {% tabs %}
 

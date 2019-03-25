@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding 
+title: Data Binding | DockingManager | WPF | Syncfusion
 description: Learn how to configure the DockingManager child through ItemsSource 
 platform: wpf
 control: DockingManager
@@ -13,9 +13,9 @@ Data Binding is the process of establishing a connection between the application
 
 ## Adding Docking Window child through ItemsSource:
 
-`DockingManager` `ItemsSource` property allows to bind the Observable Collection of `DockItem`. `DockItem` class which contains all attached properties of `DockingManager`.
+`DockingManager` [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ItemsSource.html) property allows to bind the Observable Collection of [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html). [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html) class which contains all attached properties of `DockingManager`.
 
-The following code snippet explains how to use the `ItemsSource` property
+The following code snippet explains how to use the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ItemsSource.html) property
 
 {% tabs %}
 
@@ -94,7 +94,7 @@ _dockcollection = value;
 {% endtabs %}
 
 
-![](Data-Binding-images/Data-Binding-img1.jpeg)
+![Adding docking child through items source](Data-Binding-images/Data-Binding-img1.jpeg)
 
 
 ## Docking Window in Different side
@@ -107,7 +107,7 @@ We have docked the docking child window in five sides these are,
 * Bottom
 * Tabbed
 
-To dock the children of `DockingManager` in different side, use `SideInDockMode` mode property of `DockItem` class.
+To dock the children of `DockingManager` in different side, use [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInDockedMode.html) mode property of [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html) class.
 
 {% tabs %}
 
@@ -127,16 +127,16 @@ DockCollections.Add(new DockItem() { Header = "Docking Bottom", SideInDockedMode
 
 
 
-![](Data-Binding-images/Data-Binding-img2.jpeg)
+![Docking window in different side](Data-Binding-images/Data-Binding-img2.jpeg)
 
 
 ## Configure the Docking window through ItemsSource
 
-Docking window can also be docked at any side of the Target Docking Window through an attached property named `TargetNameInDockedMode`
+Docking window can also be docked at any side of the Target Docking Window through an attached property named [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TargetNameInDockedMode.html)
 
-Also to set as Tabbed Window, the window should aware of a `DockItem` Name of corresponding target window. The following code helps to arrange children of `DockingManager` that targets a single Docking window docked along Left, Top, Right and Tabbed.
+Also to set as Tabbed Window, the window should aware of a [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html) Name of corresponding target window. The following code helps to arrange children of `DockingManager` that targets a single Docking window docked along Left, Top, Right and Tabbed.
 
-N> The following code snippet explains how to use all attached properties of `DockingManager` using `DockItem` class.
+N> The following code snippet explains how to use all attached properties of `DockingManager` using [DockItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem.html) class.
 
 {% tabs %}
 
@@ -169,6 +169,6 @@ DockCollections.Add(new DockItem() { Header = "Find Results", State = DockState.
 {% endtabs %}
 
 
-![](Data-Binding-images/Data-Binding-img3.jpeg)
+![Configure the docking window through items source](Data-Binding-images/Data-Binding-img3.jpeg)
 
 

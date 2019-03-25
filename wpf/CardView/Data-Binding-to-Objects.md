@@ -166,7 +166,7 @@ The CardView control can also support data-binding to objects. The following exa
 
    ~~~
 
-4. Configure the ItemTemplate and HeaderTemplate for the CardView control.
+4. Configure the ItemTemplate and [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~HeaderTemplate.html) for the CardView control.
 
    ~~~ csharp
 
@@ -226,7 +226,7 @@ The CardView control can also support data-binding to objects. The following exa
 
 This creates the following CardView control.
 
-![](Data-Binding-to-Objects_images/Data-Binding-to-Objects_img1.png)
+![CardView with object binding](Data-Binding-to-Objects_images/Data-Binding-to-Objects_img1.png)
 
 CardView with object binding
 {:.caption}

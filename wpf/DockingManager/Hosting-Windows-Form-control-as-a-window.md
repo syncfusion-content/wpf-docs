@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hosting Windows Form control as a child in Syncfusion DockingManager control for WPF
+title: Hosting Windows Form control | DockingManager | WPF | Syncfusion
 description: Learn how to host Windows Forms control as a child window of DockingManager 
 platform: wpf
 control: DockingManager
@@ -38,13 +38,13 @@ Web1.Navigate("http://www.syncfusion.com/downloads/metrostudio");
 
 {% endtabs %}
 
-![](HostingWindowsFormcontrolasawindow_images/HostingWindowsFormcontrolasawindow_img1.jpeg)
+![Hosting a windows form control](HostingWindowsFormcontrolasawindow_images/HostingWindowsFormcontrolasawindow_img1.jpeg)
 
 
 ## Interaction with control hosted by Win32 Host 
 
 * While interacting the  WindowsForm control with WPF controls, it leads to inaccessibility of WPF controls behind WindowsForm control, since the WindowsForm control is on top. 
-* While floating the WindowsForm control in DockingManager, it is  invisible. For these cases, set `UseInteropCompatibilityMode` property as `True` for the DockingManager. 
+* While floating the WindowsForm control in DockingManager, it is  invisible. For these cases, set [UseInteropCompatibilityMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseInteropCompatibilityMode.html) property as `True` for the DockingManager. 
 
 {% tabs %}
 
