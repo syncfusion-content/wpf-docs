@@ -13,7 +13,7 @@ This section illustrates the Layout-related features of CalendarEdit control. Th
 
 ## Header background and foreground color
 
-CalendarEdit control provides the HeaderBackground and HeaderForeground properties to customize the appearance of the header background and foreground. Use the following code examples to set the above properties.
+CalendarEdit control provides the [HeaderBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~HeaderBackground.html) and [HeaderForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~HeaderForeground.html) properties to customize the appearance of the header background and foreground. Use the following code examples to set the above properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,13 +40,13 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
+![Header background and foreground color](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
 ## Selection border color
 
-Whenever a selection is made in the Calendar, the selected day grid can be associated with a border. The color of this selection border of the day grid can be customized using the SelectionBorderBrush property. This dependency property sets the brush value for the selection border brush of the day grid.
+Whenever a selection is made in the Calendar, the selected day grid can be associated with a border. The color of this selection border of the day grid can be customized using the [SelectionBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectionBorderBrush.html) property. This dependency property sets the brush value for the selection border brush of the day grid.
 
-To set the SelectionBorderBrush property, use the following code.
+To set the [SelectionBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectionBorderBrush.html) property, use the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -69,11 +69,11 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
+![Selection border color](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
 ## Corner radius for the selection border
 
-You can set the corner radius for the selection border by using the SelectionBorderCornerRadius property. This is dependency property sets the value for the corner radius as follows.
+You can set the corner radius for the selection border by using the [SelectionBorderCornerRadius](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectionBorderCornerRadius.html) property. This is dependency property sets the value for the corner radius as follows.
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,30 +96,26 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
+![Corner radius for the selection border](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
 ## CalendarEdit
 
-Feature: Foreground for Selected Dates
-
-Property Name: SelectionForeground
-
-This property is used to set the foreground color of the dates that are all selected.
+You can set the foreground color of the dates that are all selected using the [SelectionForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectionForeground.html) property.
 
 This is mainly used to differentiate the SelectedDates from other dates.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:CalendarEdit Name="calendarEdit1" SelectionForeground="Red"/>
 
 {% endhighlight %}
 
-{% highlight xaml %}
+{% highlight C# %}
 
 calendarEdit1.SelectionForeground = new SolidColorBrush(Colors.Red);
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img4.png)
+![Selected dates fore color customization](Layout-Related-Features_images/Layout-Related-Features_img4.png)

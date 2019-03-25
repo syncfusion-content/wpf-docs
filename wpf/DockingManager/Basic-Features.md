@@ -11,7 +11,7 @@ documentation: ug
 
 ## Dealing with States
 
-States of child is nothing but a different appearance of the DockingManager children.  State Property in DockingManager is used to set various states to the child element such as Docking, Floating, Auto Hide, and Hidden.
+States of child is nothing but a different appearance of the DockingManager children.  [State](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~State.html) Property in DockingManager is used to set various states to the child element such as Docking, Floating, Auto Hide, and Hidden.
 
 ### Dock State:
 
@@ -41,7 +41,7 @@ DockingManager.SetState(grid1, DockState.Dock);
 
 
 
-![](Basic-Features_images/Basic-Features_img1.jpeg)
+![Dock State](Basic-Features_images/Basic-Features_img1.jpeg)
 
 ### Float State:
 
@@ -54,7 +54,7 @@ Float State displays the child in FloatWindow as shown below:
 {% endtabs %} 
 
 
-![](Basic-Features_images/Basic-Features_img2.jpeg)
+![Float State](Basic-Features_images/Basic-Features_img2.jpeg)
 
 ### Auto Hidden State:
 
@@ -62,7 +62,7 @@ Auto hidden state hides the children in one of the side panels available with th
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager>   
 
@@ -72,7 +72,7 @@ Auto hidden state hides the children in one of the side panels available with th
 
 {% endhighlight  %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager.SetState(grid1, DockState.Float);
 
@@ -82,7 +82,7 @@ DockingManager.SetState(grid1, DockState.Float);
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager>   
 
@@ -92,7 +92,7 @@ DockingManager.SetState(grid1, DockState.Float);
 
 {% endhighlight  %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager.SetState(grid1, DockState.AutoHidden);
 
@@ -102,7 +102,7 @@ DockingManager.SetState(grid1, DockState.AutoHidden);
 
 
 
-![](Basic-Features_images/Basic-Features_img3.jpeg)
+![Auto hidden state](Basic-Features_images/Basic-Features_img3.jpeg)
 
 ### Document State Child
 
@@ -113,11 +113,11 @@ Document State Child can be of two types.
 * TDI (Tabbed Document Interface)
 * MDI (Multiple Document Interface)
 
-You can create MDI Documents by specifying ContainerMode to MDI as a child state,and as Document , as shown below.
+You can create MDI Documents by specifying [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) to MDI as a child state,and as Document , as shown below.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="MDI"><Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="MDI"/>
 
@@ -125,7 +125,7 @@ You can create MDI Documents by specifying ContainerMode to MDI as a child state
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
  DockingManager manager=new DockingManager();
  
@@ -146,13 +146,13 @@ You can create MDI Documents by specifying ContainerMode to MDI as a child state
 {% endtabs %} 
 
 
-![](Basic-Features_images/Basic-Features_img4.jpeg)
+![Document state](Basic-Features_images/Basic-Features_img4.jpeg)
 
-Similarly you can create a TDI Document by specifying ContainerMode as TDI and child state as document.
+Similarly you can create a TDI Document by specifying [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) as TDI and child state as document.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI">
 
@@ -162,7 +162,7 @@ Similarly you can create a TDI Document by specifying ContainerMode as TDI and c
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
  DockingManager manager=new DockingManager();
  
@@ -183,7 +183,7 @@ Similarly you can create a TDI Document by specifying ContainerMode as TDI and c
 {% endtabs %} 
 
 
-![](Basic-Features_images/Basic-Features_img5.jpeg)
+![Document state](Basic-Features_images/Basic-Features_img5.jpeg)
 
 #### Refer Also:
 
@@ -191,7 +191,7 @@ How to Create Docking Manager?
 
 ## Layout of the child
 
-We can achieve the layout that we want using TargetName attached property.  Target names are generally used to specify where the child needs to be docked or floated. The following code shows the usage of TargetNameInDockMode.
+We can achieve the layout that we want using TargetName attached property.  Target names are generally used to specify where the child needs to be docked or floated. The following code shows the usage of [TargetNameInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~TargetNameInDockedMode.html).
 
 {% tabs %}
 
@@ -215,7 +215,7 @@ DockingManager.SetTargetNameInDockedMode(grid2, "grid1");
 
 {% endtabs %} 
 
-![](Basic-Features_images/Basic-Features_img6.jpeg)
+![Layout of the child](Basic-Features_images/Basic-Features_img6.jpeg)
 
 #### Refer Also:
 
@@ -223,11 +223,11 @@ How to Create Docking Manager?
 
 ## DockSide for Docked State child’s
 
-SideInDockMode and SideInFloatMode are used to decide the dock side of child with respect to their target names in dock mode and float mode.
+[SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInDockedMode.html) and [SideInFloatMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInFloatMode.html) are used to decide the dock side of child with respect to their target names in dock mode and float mode.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager>
 
@@ -237,7 +237,7 @@ SideInDockMode and SideInFloatMode are used to decide the dock side of child wit
 
 {% endhighlight  %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager.SetHeader(grid1, "Dock Left");
 
@@ -249,7 +249,7 @@ DockingManager.SetSideInDockedMode(grid1, DockSide.Left);
 
 
 
-![](Basic-Features_images/Basic-Features_img7.jpeg)
+![DockSide for docked state](Basic-Features_images/Basic-Features_img7.jpeg)
 
 The following code represents child in a Dock right position.
 
@@ -260,11 +260,11 @@ The following code represents child in a Dock right position.
 {% endtabs %} 
 
 
-![](Basic-Features_images/Basic-Features_img8.jpeg)
+![DockSide for docked state](Basic-Features_images/Basic-Features_img8.jpeg)
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager>            
 
@@ -274,7 +274,7 @@ The following code represents child in a Dock right position.
 
 {% endhighlight  %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager.SetHeader(grid1, "Dock Right");
 
@@ -283,7 +283,7 @@ DockingManager.SetSideInDockedMode(grid1, DockSide.Right);
 {% endhighlight  %}
 
 {% endtabs %} 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager>
 
@@ -292,7 +292,7 @@ DockingManager.SetSideInDockedMode(grid1, DockSide.Right);
 </syncfusion:DockingManager>
 {% endhighlight  %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager.SetHeader(grid1, "Dock Top");
 
@@ -300,13 +300,13 @@ DockingManager.SetSideInDockedMode(grid1, DockSide.Top);
 
 {% endhighlight %}
 
-![](Basic-Features_images/Basic-Features_img9.jpeg)
+![DockSide for docked state](Basic-Features_images/Basic-Features_img9.jpeg)
 
 The code below shows child position in a Dock bottom.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager>
 
@@ -316,7 +316,7 @@ The code below shows child position in a Dock bottom.
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager.SetHeader(grid1, "Dock Bottom");
 
@@ -327,11 +327,11 @@ DockingManager.SetSideInDockedMode(grid1, DockSide.Bottom);
 {% endtabs %} 
 
 
-![](Basic-Features_images/Basic-Features_img10.jpeg)
+![DockSide for docked state](Basic-Features_images/Basic-Features_img10.jpeg)
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DockingManager>
 
@@ -343,7 +343,7 @@ DockingManager.SetSideInDockedMode(grid1, DockSide.Bottom);
 	
 {% endhighlight  %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 DockingManager.SetTargetNameInDockedMode(grid2, "grid1");
 
@@ -354,7 +354,7 @@ DockingManager.SetSideInDockedMode(grid2, DockSide.Tabbed);
 {% endtabs %} 
 
 
-![](Basic-Features_images/Basic-Features_img11.jpeg)
+![DockSide for docked state](Basic-Features_images/Basic-Features_img11.jpeg)
 
 #### Refer Also:
 
