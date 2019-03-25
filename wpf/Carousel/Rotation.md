@@ -201,7 +201,7 @@ grid1.Children.Add(carousel);
 {% endtabs %}
 
 
-# Touch support
+## Touch support
 
 Carousel provides Touch UI which is easy to perform the rotation of CarouselItems.  
 
