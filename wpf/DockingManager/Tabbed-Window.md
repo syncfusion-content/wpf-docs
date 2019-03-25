@@ -8,18 +8,18 @@ documentation: ug
 ---
 # Tabbed Window
 
-Child window can be arranged as Tabbed windows by setting TargetName and side value as `Tabbed` using the property `SideInDockedMode`.
+Child window can be arranged as Tabbed windows by setting TargetName and side value as `Tabbed` using the property [SideInDockedMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideInDockedMode.html).
 
-![](TabbedWindow_images/TabbedWindow_img1.jpeg)
+![Tabbed window](TabbedWindow_images/TabbedWindow_img1.jpeg)
 
 
 ##  Tab alignments
 
-The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property `DockTabAlignment` with desired values such as Top, Bottom, Left and Right. 
+The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property [DockTabAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockTabAlignment.html) with desired values such as Top, Bottom, Left and Right. 
 
 * DockTabAlignment as `Bottom`
 
-![](TabbedWindow_images/TabbedWindow_img2.jpeg)
+![Bottom dock](TabbedWindow_images/TabbedWindow_img2.jpeg)
 
 
 * Setting DockTabAlignment as `Left`.
@@ -50,7 +50,7 @@ DockingManager1.DockTabAlignment = Dock.Left;
 {% endtabs %}
 
 
-![](TabbedWindow_images/TabbedWindow_img3.jpeg)
+![Left dock](TabbedWindow_images/TabbedWindow_img3.jpeg)
 
 
 * Setting DockTabAlignment as `Right`
@@ -80,7 +80,7 @@ DockingManager1.DockTabAlignment = Dock.Right;
 {% endtabs %}
 
 
-![](TabbedWindow_images/TabbedWindow_img4.jpeg)
+![Right dock](TabbedWindow_images/TabbedWindow_img4.jpeg)
 
 
 * Setting DockTabAlignment as `Top`
@@ -110,12 +110,12 @@ SyncDockingManager.DockTabAlignment = Dock.Top;
 
 {% endtabs %}
 
-![](TabbedWindow_images/TabbedWindow_img5.jpeg)
+![Top dock](TabbedWindow_images/TabbedWindow_img5.jpeg)
 
 
 ## Closing a Tabbed window
 
-Tabbed window provides two different closing behaviors. They are CloseActive and CloseAll modes of `CloseTabs` property.
+Tabbed window provides two different closing behaviors. They are CloseActive and CloseAll modes of [CloseTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CloseTabs.html) property.
 
 `CloseActive` – Used to close the active element of Tabbed window.
 
