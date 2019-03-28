@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting in SfSpreadsheet
+title: Formatting in SfSpreadsheet | Syncfusion
 description: How to apply the styles and formats in SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
