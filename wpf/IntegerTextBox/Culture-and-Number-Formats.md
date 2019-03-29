@@ -11,7 +11,7 @@ documentation: ug
 
 ## Culture
 
-IntegerTextBox provides globalization support through the Culture property. 
+IntegerTextBox provides globalization support through the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. 
 
 {%tabs%}
 {% highlight xaml %} 
@@ -29,7 +29,7 @@ integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 
 
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
+![Integer text box culture](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
 
 
 {%tabs%}
@@ -48,15 +48,15 @@ integerTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");
 
 
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
+![Integer text box culture](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
 
 
 
-In the first sample culture is set to “en-US” (US Culture) and in the second sample culture is set to “bs-Latn” (Latin Culture). The US culture uses “,” as the NumberGroupSeparator and the Latin culture uses “.” as the NumberGroupSeparator. When you change the Culture property the Value is formatted based on the Culture.
+In the first sample culture is set to “en-US” (US Culture) and in the second sample culture is set to “bs-Latn” (Latin Culture). The US culture uses “,” as the [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSeparator.html) and the Latin culture uses “.” as the [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSeparator.html). When you change the Culture property the Value is formatted based on the Culture.
 
 ## Number format
 
-You can customize the Number Format either by using the NumberFormat property or the NumberGroupSeparator and the NumberGroupSizes property.
+You can customize the Number Format either by using the [NumberFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSeparator.html) and the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSizes.html) property.
 
 {%tabs%}
 {% highlight xaml %}
@@ -82,7 +82,7 @@ NumberGroupSeparator = "/"
 
 
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
+![Number format](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
 
 {%tabs%}
 
@@ -102,13 +102,13 @@ integerTextBox.NumberGroupSeparator = "/";
 
 
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
+![Number format](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
 
 
 
-You can also change the NumberGroupSizes by using the NumberGroupSizes property.
+You can also change the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSizes.html) by using the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSizes.html) property.
 
-Here is a sample for setting the NumberGroupSizes by using the NumberFormat property.
+Here is a sample for setting the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSizes.html) by using the [NumberFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -124,11 +124,11 @@ integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {
 {% endhighlight %}
 {% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
+![Number format](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
 
 
 
-Here is a sample for setting the NumberGroupSizes by using the NumberGroupSizes property of the integer textbox:
+Here is a sample for setting the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSizes.html) by using the [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~NumberGroupSizes.html) property of the integer textbox:
 
 {% tabs %}
 {% highlight C# %}
@@ -143,4 +143,4 @@ integerTextBox.NumberGroupSizes = new Int32Collection() { 2, 3, 0 };
 {% endhighlight %}
 {% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)
+![Number format](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)

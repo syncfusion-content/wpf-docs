@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set the Value for DoubleTextBox
+title: Set the Value | DoubleTextBox | WPF | Syncfusion
 description: Learn how to set the values in DoubleTextBox control for WPF
 platform: wpf
 control: DoubleTextBox
@@ -13,9 +13,9 @@ This section describes about how to set the value in the DoubleTextBox
 
 ## Value
 
-The `Value` property is used to set the value for the DoubleTextBox.
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property is used to set the value for the DoubleTextBox.
 
-N> Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property
+N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the DoubleTextBox. Use only the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property
 
 {% tabs %}
 
@@ -47,11 +47,11 @@ Grid1.Children.Add(textBox)
 
 {% endtabs %}
 
-![](Set-Value-images/Set-Value-img1.jpeg)
+![Double text box value](Set-Value-images/Set-Value-img1.jpeg)
 
 ## UseNullOption
 
-DoubleTextBox accepts null values. To enable the null option, the `UseNullOption` property need to set to `true`. By default its value is `false`.
+DoubleTextBox accepts null values. To enable the null option, the [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property need to set to `true`. By default its value is `false`.
 
 {% tabs %}
 
@@ -83,11 +83,11 @@ Grid1.Children.Add(doubleTextBox)
 
 {% endtabs %}
 
-![](Set-Value-images/Set-Value-img2.jpeg)
+![Double text box null option](Set-Value-images/Set-Value-img2.jpeg)
 
 ## NullValue
 
-To set the value, when the value of the DoubleTextBox is null the `NullValue` property is used. On setting the value to the NullValue property, it will assigned to the Value property.
+To set the value, when the value of the DoubleTextBox is null the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NullValue.html) property is used. On setting the value to the [NullValue]([NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NullValue.html)) property, it will assigned to the Value property.
 
 {% tabs %}
 
@@ -120,19 +120,19 @@ Grid1.Children.Add(doubleTextBox)
 
 {% endtabs %}
 
-![](Set-Value-images/Set-Value-img3.jpeg)
+![Double text box null value](Set-Value-images/Set-Value-img3.jpeg)
 
 ## Minimum value
 
-Minimum allowed value for the DoubleTextBox. If the new `MinValue` property value is greater than the `MaxValue` property value, then the MaxValue is set equal to the MinValue. If the Value is less than the new MinValue, then the `Value` property is also set equal to the MinValue.
+Minimum allowed value for the DoubleTextBox. If the new [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property value is greater than the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property value, then the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) is set equal to the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html). If the Value is less than the new [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html), then the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property is also set equal to the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html).
 
 ## Maximum value
 
-Maximum allowed value for the DoubleTextBox. If the `MinValue` property is greater than the new `MaxValue` property, then the `MinValue` property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the `Value` property is set equal to the MaxValue.
+Maximum allowed value for the DoubleTextBox. If the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property is greater than the new [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property, then the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property value is set equal to the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html). If the current Value is greater than the new MaxValue, then the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property is set equal to the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html).
 
 ## Setting minimum and maximum value
 
-The Minimum and Maximum value can be changed by using the `MinVal` and `MaxVal` properties of the DoubleTextBox.
+The Minimum and Maximum value can be changed by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) and [MaxVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) properties of the DoubleTextBox.
 
 {% tabs %}
 
@@ -181,8 +181,8 @@ MinValue can be validate in two ways.
 
 The MaxValue can validate in two ways:
 
-* OnKeyPress – MaxValue of the DoubleTextBox is validated on the key press.
-* OnLostFocus – MaxValue of the DoubleTextBox is validated on the lost focus only.
+* OnKeyPress – [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) of the DoubleTextBox is validated on the key press.
+* OnLostFocus – [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) of the DoubleTextBox is validated on the lost focus only.
 
 ## MinValueOnExceedMinDigit
 
@@ -192,7 +192,7 @@ N> This will be enabled only when the MinValidation is set to OnKeyPress.
 
 ## MaxValueOnExceedMaxDigit
 
-If `MaxValueOnExceedMaxDigit` property is set to `true`, then a value greater than the MaxValue is entered, it will automatically assign the MaxValue to the Value property. Otherwise it will not allow the key press.
+If `MaxValueOnExceedMaxDigit` property is set to `true`, then a value greater than the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) is entered, it will automatically assign the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) to the Value property. Otherwise it will not allow the key press.
 
 N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
@@ -242,22 +242,22 @@ Grid1.Children.Add(doubleTextBox)
 
 Initially there is no value assigned to the DoubleTextBox. So it displays the default value as zero.
 
-![](Set-Value-images/Set-Value-img4.jpeg)
+![No value assigned to double text box](Set-Value-images/Set-Value-img4.jpeg)
 
 
 MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only in the lost focus.
 
-![](Set-Value-images/Set-Value-img5.jpeg)
+![MaxValidation is set to OnLostFocus](Set-Value-images/Set-Value-img5.jpeg)
 
 
 MinValidation is set to OnKeyPress, it cannot let to enter a value less than the MinValue. If try to enter a value less than the MinValue, then the MinValue will set to the Value property because MinValueOnExceedMinDigit is set to true.
 
-![](Set-Value-images/Set-Value-img6.jpeg)
+![MinValidation is set to OnKeyPress](Set-Value-images/Set-Value-img6.jpeg)
 
 
 ## Value changed
 
-ValueChanged – The event occurs when the `Value` property of the DoubleTextBox is changed.
+[ValueChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ValueChanged_EV.html) – The event occurs when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property of the DoubleTextBox is changed.
 
 {% tabs %}
 
@@ -312,7 +312,7 @@ End Sub
 
 ## Text changed
 
-TextChanged – The event occurs when the `Value` property of the DoubleTextBox is changed.
+[TextChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.textchanged?redirectedfrom=MSDN&view=netframework-4.7.2) – The event occurs when the `Value` property of the DoubleTextBox is changed.
 
 {% tabs %}
 
@@ -366,7 +366,7 @@ End Sub
 
 ## Culture changed
 
-CultureChanged – The event occurs when the `Culture` property of the DoubleTextBox is changed.
+[CultureChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CultureChanged_EV.html) – The event occurs when the `Culture` property of the DoubleTextBox is changed.
 
 {% tabs %}
 
@@ -421,7 +421,7 @@ End Sub
 
 ## Maximum value changed
 
-MaxValueChanged – The event occurs when the `MaxValue` property of the DoubleTextBox is changed.
+[MaxValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValueChanged_EV.html) – The event occurs when the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property of the DoubleTextBox is changed.
 
 {% tabs %}
 
@@ -476,7 +476,7 @@ End Sub
 
 ## Minimum value changed
 
-MinValueChanged – The event occurs when the `MinValue` property of the DoubleTextBox is changed.
+[MinValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValueChanged_EV.html) – The event occurs when the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property of the DoubleTextBox is changed.
 
 {% tabs %}
 
@@ -530,7 +530,7 @@ End Sub
 
 ## NumberDecimalDigits changed
 
-NumberDecimalDigitsChanged – The event occurs when the NumberDecimalDigits property of the DoubleTextBox gets changed.
+[NumberDecimalDigitsChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigitsChanged_EV.html) – The event occurs when the [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property of the DoubleTextBox gets changed.
 
 {% tabs %}
 
@@ -586,7 +586,7 @@ End Sub
 
 ## Selection changed
 
-SelectionChanged – The event occurs when the selection in the textbox is changed.
+[SelectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionchanged?redirectedfrom=MSDN&view=netframework-4.7.2) – The event occurs when the selection in the textbox is changed.
 
 {% tabs %}
 
