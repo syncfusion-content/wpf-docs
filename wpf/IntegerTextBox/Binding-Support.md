@@ -9,7 +9,7 @@ documentation: ug
 
 # Binding Support
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source to target) or bidirectional (source to target and target to source). You can bind the data to the integer textbox through the Value property.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source to target) or bidirectional (source to target and target to source). You can bind the data to the integer textbox through the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) property.
 
 The following example shows a simple binding between the value of the IntegerTextBox and another IntegerTextBox value that reflects the typed value:
 
@@ -24,7 +24,7 @@ The following example shows a simple binding between the value of the IntegerTex
 {% endhighlight %}
 {% endtabs %}
 
-![](Binding-Support_images/Binding-Support_img1.png)
+![Binding support](Binding-Support_images/Binding-Support_img1.png)
 
 The Data Context property provides its value to child elements. So you can set the Data Context on a superior layout container and its value is provided to all child elements. This is very useful if you want to build a form that is bound to multiple properties of the same data object. If you don't explicitly define a source of binding, it takes the data context by default.
 
@@ -59,4 +59,4 @@ Converter={StaticResource stringToIntConverter}}"/>
 {% endhighlight %}
 {% endtabs %}
 
-![](Binding-Support_images/Binding-Support_img2.png)
+![Binding support](Binding-Support_images/Binding-Support_img2.png)

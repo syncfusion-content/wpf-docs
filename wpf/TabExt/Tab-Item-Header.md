@@ -85,7 +85,7 @@ stackPanel.Children.Add(tabControlExt);
 
 {% endtabs %}
 
-![](Tab-Item-Header_images/Tab-Item-Header_img1.jpeg)
+![Header image](Tab-Item-Header_images/Tab-Item-Header_img1.jpeg)
 
 
 
@@ -105,7 +105,7 @@ stackPanel.Children.Add(tabControlExt);
 
 ## Image Alignment
 
-You can align the Tab Item header image by using the ImageAlignment property of TabItemExt. You can align the image to any one of the following positions.
+You can align the Tab Item header image by using the [ImageAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ImageAlignment.html) property of TabItemExt. You can align the image to any one of the following positions.
 
 * AboveText-Images are placed above the tab item header
 * BelowText–Images are placed below the tab item header
@@ -190,13 +190,13 @@ stackPanel.Children.Add(tabControlExt);
 
 {% endtabs %}
 
-![](Tab-Item-Header_images/Tab-Item-Header_img2.jpeg)
+![Tab header image](Tab-Item-Header_images/Tab-Item-Header_img2.jpeg)
 
 ### ImageAlignmentChanged Event
 
-This event is triggered when the ImageAlignment property is changed.
+This [ImageAlignmentChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ImageAlignmentChanged_EV.html) event is triggered when the [ImageAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ImageAlignment.html) property is changed.
 
-The following code snippet illustrates handling the ImageAlignmentChanged event.
+The following code snippet illustrates handling the [ImageAlignmentChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ImageAlignmentChanged_EV.html) event.
 
 
 {% highlight c# %}
@@ -228,7 +228,7 @@ tabControlExt.TabItemSize = TabItemSizeMode.ShrinkToFit;
 {% endhighlight %}
 
 
-In the above example, when the ImageAlignment property is set to LeftOfText, the Tab Item header looks enlarged. To avoid this, the TabItemSize property is set as ShrinkToFit.
+In the above example, when the [ImageAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ImageAlignment.html) property is set to LeftOfText, the Tab Item header looks enlarged. To avoid this, the TabItemSize property is set as ShrinkToFit.
 
 {% seealso %}
 

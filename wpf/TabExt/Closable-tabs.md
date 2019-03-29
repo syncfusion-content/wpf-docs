@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behavior of TabItemExt's CloseButton in TabControlExt | Syncfusion
+title: TabItemExt's CloseButton | TabControlExt | WPF | Syncfusion
 description: Explains about the behavior of TabItem's CloseButton in TabControlExt for WPF
 platform: wpf
 control: TabControlExt
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Visibility of close button in TabItem and TabPanel
 
-The display mode of the Close button is specified by using the CloseButtonType property. This dependency property sets the display mode for the Close button.
+The display mode of the Close button is specified by using the [CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property. This dependency property sets the display mode for the Close button.
 
 The following Close button modes are supported by the TabControlExt.
 
@@ -98,7 +98,7 @@ stackPanel.Children.Add(tabControlExt);
 
 ## Show/Hide the close button for specific TabItem
 
-The visibility of the TabItem's CloseButton is handled using the [CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property. The [CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) is effective only when the `CloseButtonType` property of TabControlExt is set to one among individual, extended, or both.
+The visibility of the TabItem's CloseButton is handled using the [CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property. The [CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) is effective only when the [CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property of TabControlExt is set to one among individual, extended, or both.
 
 <table>
 <tr>
@@ -143,7 +143,7 @@ N> "Beijing" TabItem has CloseButtonState as visible, "Madagascar" TabItem has C
 
 ### Through closing event
 
-The closure of TabItem can now be restricted by setting e.Cancel to true in OnCloseButtonClick delegate. “e” represents the event argument CloseTabEventArgs for OnCloseButtonClick event. The default value of e.Cancel is false.
+The closure of TabItem can now be restricted by setting e.Cancel to true in [OnCloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~OnCloseButtonClick_EV.html) delegate. “e” represents the event argument CloseTabEventArgs for [OnCloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~OnCloseButtonClick_EV.html) event. The default value of e.Cancel is false.
 
 The following code illustrates the same.
 

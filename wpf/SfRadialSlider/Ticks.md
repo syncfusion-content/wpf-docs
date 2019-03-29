@@ -13,10 +13,10 @@ Ticks are placed along the round track in a uniform manner. The position of tick
 
 ### Tick Frequency
 
-The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximum values.
+The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~TickFrequency.html) property is used to define the number of ticks along the track, based on Minimum and Maximum values.
 
 
-{% highlight html %}
+{% highlight XAML %}
 
 <syncfusion:SfRadialSlider Minimum="0" Maximum="100"  
 
@@ -26,7 +26,7 @@ TickFrequency="5" />
 {% endhighlight %}
 
 
-![C:/Users/ApoorvahR/Desktop/3.png](Concepts_images/Concepts_img2.png) 
+![Ticks frequency](Concepts_images/Concepts_img2.png) 
 
 
 

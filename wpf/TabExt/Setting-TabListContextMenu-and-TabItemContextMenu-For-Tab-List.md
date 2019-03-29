@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting TabListContextMenu and TabItemContextMenu For Tab List | TabControlExt | wpf | Syncfusion
+title: Tab list and tab item context menu | TabControlExt | wpf | Syncfusion
 description: setting tablistcontextmenu and tabitemcontextmenu for tab list
 platform: wpf
 control: TabControlExt
@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting TabListContextMenu and TabItemContextMenu For Tab List
 
-In TabControlExt, context menu is displayed for the Tab List by setting the ShowTabListContextMenu property to _true_. This dependency property is used to enable or disable the context menu for the Tab List.
+In TabControlExt, context menu is displayed for the Tab List by setting the [ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabItemContextMenu.html) property to _true_. This dependency property is used to enable or disable the context menu for the Tab List.
 
 The headers of all the Tab Items are displayed as the menu items of the Tab List context menu using the below code snippet.
 
@@ -87,5 +87,5 @@ stackPanel.Children.Add(tabControlExt);
 
 {% endtabs %}
 
-![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_img1.jpeg)
+![Tab list context menu](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_img1.jpeg)
 

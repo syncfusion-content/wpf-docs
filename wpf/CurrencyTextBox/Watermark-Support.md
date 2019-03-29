@@ -9,7 +9,7 @@ documentation: ug
 
 # Watermark Support
 
-Watermark is the dummy content displayed in the CurrencyTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
+Watermark is the dummy content displayed in the CurrencyTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -21,13 +21,13 @@ Watermark is the dummy content displayed in the CurrencyTextBox when the value i
 {% endhighlight %}
 {% endtabs %}
 
-![](Watermark-Support_images/Watermark-Support_img1.png)
+![Watermark support](Watermark-Support_images/Watermark-Support_img1.png)
 
 WatermarkText automatically collapses when the control is in focus. When the control loses its focus the WatermarkText comes to visible state if Value is null and WatermarkTextIsVisible is true.
 
 ## Using the WatermarkTemplate
 
-You can customize the Visual appearance of the WatermarkText by using the WatermarkTemplate property.
+You can customize the Visual appearance of the [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) by using the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -48,4 +48,4 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 {% endhighlight %}
 {% endtabs %}
 
-![](Watermark-Support_images/Watermark-Support_img2.png)
+![Watermark template](Watermark-Support_images/Watermark-Support_img2.png)

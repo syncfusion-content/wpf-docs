@@ -9,7 +9,7 @@ documentation: ug
 
 # Null Value Support
 
-IntegerTextBox accepts null values. To enable the null option you have to set the UseNullOption property to true. You can also set the NullValue property for the integer textbox. When you set the null value to the Value property, by default the value of the NullValue (Default value is null) property will be assigned to the Value property. 
+IntegerTextBox accepts null values. To enable the null option you have to set the [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property to true. You can also set the NullValue property for the integer textbox. When you set the null value to the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) property, by default the value of the NullValue (Default value is null) property will be assigned to the Value property. 
 
 {%tabs%}
 {% highlight xaml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="1"/>{% endhighlight %}
@@ -20,7 +20,7 @@ IntegerTextBox accepts null values. To enable the null option you have to set th
 
 In this sample, the NullValue (NullValue = 1) is set to the Value property of the IntegerTextBox because the default value of the Value property is null.
 
-![](Null-Value-support_images/Null-Value-support_img1.png)
+![Null value support](Null-Value-support_images/Null-Value-support_img1.png)
 
 
 
@@ -31,9 +31,9 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 {%endtabs%}
 
 
-In this sample, the NullValue (NullValue = null) is set to the Value property of the IntegerTextBox because the default value of the Value property is null.
+In this sample, the NullValue (NullValue = null) is set to the Value property of the IntegerTextBox because the default value of the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) property is null.
 
-![](Null-Value-support_images/Null-Value-support_img2.png)
+![Null value support](Null-Value-support_images/Null-Value-support_img2.png)
 
 
 
