@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualization support of TileViewControl
+title: Virtualization support | TileViewControl | WPF | Syncfusion
 description: Virtualization support helps to handle the large amount of data in TileViewControl
 platform: wpf
 control: TileView Control
