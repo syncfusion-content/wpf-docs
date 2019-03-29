@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disables the Unload of TabItemExt Content | TabControlExt | wpf | Syncfusion
+title: Disables the TabItemExt Content | TabControlExt | wpf | Syncfusion
 description: disables the unload of tabitemext content
 platform: wpf
 control: TabControlExt
@@ -9,7 +9,7 @@ documentation: ug
 
 # Disables the Unload of TabItemExt Content
 
-While switching the TabItems in TabControl the content of previously selected items will be unloaded. To enable or disable unload of TabItemExt content the IsDisableUnloadTabItemExtContent property can be used. 
+While switching the TabItems in TabControl the content of previously selected items will be unloaded. To enable or disable unload of TabItemExt content the [IsDisableUnloadTabItemExtContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsDisableUnloadTabItemExtContent.html) property can be used. 
 
 {% tabs %}
 

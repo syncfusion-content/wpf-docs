@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and Styling of SfDatePicker control for WPF
+title: Appearance and Styling | SfDatePicker | WPF | Syncfusion
 description: Appearance and Styling of SfDatePicker control for WPF
 platform: wpf
 control: SfDatePicker
@@ -11,9 +11,9 @@ documentation: ug
 
 ## Accent Brush	
 
-The AccentBrush property is used to decorate the hot spots of a control with a solid color.
+The [AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AccentBrush.html) property is used to decorate the hot spots of a control with a solid color.
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 
 	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
@@ -32,14 +32,14 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 The following image shows the control with various Accent brushes:
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Appearance](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 ## Selected Foreground
 
 The SelectedForeground property is used to change the foreground color of  the Selected Date
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -66,4 +66,4 @@ The SelectedForeground property is used to change the foreground color of  the S
 {% endhighlight  %}
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Selected Foreground](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
