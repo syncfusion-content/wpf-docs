@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Orientation for Minimizing Items | TileView | wpf | Syncfusion
+title: Orientation for Minimizing Items | TileView | wpf | Syncfusion
 description: setting orientation for minimizing items.
 platform: wpf
 control: TileView Control
@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Orientation for Minimizing Items.
 
-You can change the orientation of the minimized items by setting the MinimizedItemsOrientation property to a required value. The available minimized orientations are Left, Top, Right and Bottom. When the maximize button of an item is clicked, the other items of the TileViewControl are minimized in the required positions. 
+You can change the orientation of the minimized items by setting the [MinimizedItemsOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsOrientation.html) property to a required value. The available minimized orientations are Left, Top, Right and Bottom. When the maximize button of an item is clicked, the other items of the TileViewControl are minimized in the required positions. 
 
 For Example: When the MinimizedOrientation property is set to _Left_, the minimized items are placed on the left side of the maximized item and so on.
 
@@ -100,54 +100,11 @@ The following code example illustrates how to add the Orientation for Minimizing
 
 
 
-![](Setting-Orientation-for-Minimizing-Items_images/Setting-Orientation-for-Minimizing-Items_img1.png)
-
-
-
-
-
-## Properties
-
-MinimizedItemTemplate / MaximizedItemTemplate Properties Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-MinimizedItemsOrientation </td><td>
-Specifies the orientation where the minimized TileViewItems are placed.</td><td>
-DependencyProperty</td><td>
-MinimizedItemsOrientation.Right</td><td>
-</td></tr>
-</table>
-
+![Orientation](Setting-Orientation-for-Minimizing-Items_images/Setting-Orientation-for-Minimizing-Items_img1.png)
 
 ## Events
 
-MinimizedItemsOrientationChanged Table
-
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-MinimizedItemsOrientationChanged</td><td>
-The event gets fired when the minimized items orientation of the TileViewItems is changed.</td><td>
-</td><td>
-</td><td>
-</td></tr>
-</table>
+* [MinimizedItemsOrientationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsOrientationChanged_EV.html)
 
 
 ## Sample Link

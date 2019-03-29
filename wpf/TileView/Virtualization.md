@@ -9,9 +9,9 @@ documentation: ug
 
 # TileView Virtualization 
 
-The TileView control provides support to handle a large amount of data through built-in virtualization features. While virtualization is enabled, it maintains only the items in the view port of the TileView control, which speeds up the loading time. Virtualization support can be enabled by setting the `IsVirtualizing` property to true in the TileView control.
+The TileView control provides support to handle a large amount of data through built-in virtualization features. While virtualization is enabled, it maintains only the items in the view port of the TileView control, which speeds up the loading time. Virtualization support can be enabled by setting the [IsVirtualizing](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~IsVirtualizing.html) property to true in the TileView control.
 
-Once virtualization is enabled for the TileView control, it only creates item containers based on the `RowCount` and `ColumnCount`. Further items are created on demand based on the mouse wheel or based on the scroll offset changed in the scroll viewer.
+Once virtualization is enabled for the TileView control, it only creates item containers based on the [RowCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~RowCount.html) and [ColumnCount](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ColumnCount.html). Further items are created on demand based on the mouse wheel or based on the scroll offset changed in the scroll viewer.
 
 {% tabs %}
 
@@ -237,4 +237,4 @@ public class ViewModel : NotificationObject
 
 {% endtabs %} 
 
-![](Data-Binding_images/TileViewVirutalization.png)
+![Virtualization support](Data-Binding_images/TileViewVirutalization.png)
