@@ -133,7 +133,7 @@ This creates the following TileViewControl.
 
 
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![Data binding](Data-Binding_images/Data-Binding_img1.png)
 
 
 

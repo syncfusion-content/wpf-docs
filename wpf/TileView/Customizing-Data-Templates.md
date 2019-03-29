@@ -226,7 +226,7 @@ This will generate the TileViewControl as follows.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+![Customizing data templates](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
 
 
 
@@ -290,7 +290,7 @@ This will generate the following TileViewControl.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+![Customizing data templates](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
 
 
