@@ -9,7 +9,7 @@ documentation: ug
 
 # TabItemValidation Support
 
-TabItem now allows you cancel the selection of a tab item by setting e.Cancel=true in SelectedItemChangedEvent delegate.
+TabItem now allows you cancel the selection of a tab item by setting e.Cancel=true in [SelectedItemChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemChangedEvent_EV.html) delegate.
 
 The following code illustrates the same.
 
