@@ -9,7 +9,7 @@ documentation: ug
 
 # Collapsing the TaskBar
 
-You can expand or collapse the TaskBar control similar to the Windows Taskbar. This is done by using the IsOpened property. This is an attached property, which is used to expand or collapse the TaskBarItems by using the SetIsOpened method.
+You can expand or collapse the TaskBar control similar to the Windows Taskbar. This is done by using the [IsOpened](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~IsOpenedProperty.html) property. This is an attached property, which is used to expand or collapse the TaskBarItems by using the [SetIsOpened](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~SetIsOpened.html) method.
 
 This property is used in both TaskBar and TaskBarItems.
 
@@ -75,7 +75,7 @@ TaskBar.SetIsOpened(taskBar, false);
 {%endtabs%}
 
 
-![](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg)
+![Collapsing the TaskBar](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg)
 
 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding Support
 
-Data Binding is the process of establishing a connection between the application UI and business logic. To bind the business object collection, ItemSource and ItemTemplate properties are used. You can bind the data object to any control and show them in the TileViewItem.
+Data Binding is the process of establishing a connection between the application UI and business logic. To bind the business object collection, [ItemSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) and [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.7.2) properties are used. You can bind the data object to any control and show them in the TileViewItem.
 
 ## Adding Data Binding to an Application 
 
@@ -134,7 +134,7 @@ public class Data
 {% endtabs %}
 
 
-![](Data-Binding-Support_images/Data-Binding-Support_img1.png)
+![Item template](Data-Binding-Support_images/Data-Binding-Support_img1.png)
 
 
 

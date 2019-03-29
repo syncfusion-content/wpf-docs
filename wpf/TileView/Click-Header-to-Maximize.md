@@ -9,7 +9,7 @@ documentation: ug
 
 # Click Header to Maximize
 
-The TileViewItem moves to maximized state from Normal or minimized state when you click on the header of the TileViewItem. You can enable or disable this feature by using the ClickHeaderToMaximized property in the TileViewControl. If you click on the header of the TileViewItem in maximized state, then no action will take place, the TileViewItem’s state will remain same.
+The TileViewItem moves to maximized state from Normal or minimized state when you click on the header of the TileViewItem. You can enable or disable this feature by using the [ClickHeaderToMaximized](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ClickHeaderToMaximize.html) property in the TileViewControl. If you click on the header of the TileViewItem in maximized state, then no action will take place, the TileViewItem’s state will remain same.
 
 ## Use Case Scenarios
 
@@ -17,7 +17,7 @@ This feature will be useful when you want to maximize a TileViewItem without cli
 
 ## Adding Click Header to Maximize to an Application
 
-Click Header to Maximize can be added to an application by using either XAML or C# code.
+[ClickHeaderToMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ClickHeaderToMaximize.html) can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the Click Header to Maximize to an application.
 
@@ -49,28 +49,6 @@ The following code example illustrates how to add the Click Header to Maximize t
 {% endhighlight %}
 
 {% endtabs %}
-
-## Properties
-
-ClickHeaderToMaximize Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description</th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-ClickHeaderToMaximize</td><td>
-Enables or disables the ClickHeaderToMaximize.</td><td>
-DependencyProperty</td><td>
-False</td><td>
-</td></tr>
-</table>
-
 
 ## Sample Link
 
