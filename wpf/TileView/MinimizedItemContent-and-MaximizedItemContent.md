@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MinimizedItemContent-and-MaximizedItemContent | TileView | wpf | Syncfusion
+title: Minimized and maximized template | TileView | wpf | Syncfusion
 description: minimizeditemcontent and maximizeditemcontent
 platform: wpf
 control: TileView Control
@@ -9,7 +9,7 @@ documentation: ug
 
 # MinimizedItemContent and MaximizedItemContent
 
-The MinimizedItemContent and MaximizedItemContent feature in the TileViewItem enables you to set the different contents in TileViewItem maximized state and TileViewItem minimized state. The content property will be used to set the content for TileViewItem normal state. If you set the MinimizedItemContent, then the value in content property will be displayed in maximized state and vice versa.
+The [MinimizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html) and [MaximizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedItemContent.html) feature in the TileViewItem enables you to set the different contents in TileViewItem maximized state and TileViewItem minimized state. The content property will be used to set the content for TileViewItem normal state. If you set the [MinimizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html), then the value in content property will be displayed in maximized state and vice versa.
 
 ## Use Case Scenarios
 
@@ -17,9 +17,9 @@ This feature will be very useful when you want to show two different contents in
 
 ## Adding MinimizedItemContent and MaximizedItemContent to an Application 
 
-The MinimizedItemContent and MaximizedItemContent can be added to an application by using either XAML or C# code.
+The [MinimizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html) and [MaximizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedItemContent.html) can be added to an application by using either XAML or C# code.
 
-The following code example illustrates how to add the MinimizedItemContent and MaximizedItemContent to an application through XAML.
+The following code example illustrates how to add the [MinimizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MinimizedItemContent.html) and [MaximizedItemContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~MaximizedItemContent.html) to an application through XAML.
 
 
 {% highlight xaml %}
@@ -82,39 +82,7 @@ The following code example illustrates how to add the MinimizedItemContent and M
 
 
 
-![](MinimizedItemContent-and-MaximizedItemContent_images/MinimizedItemContent-and-MaximizedItemContent_img1.png)
-
-
-
-
-
-## Properties
-
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-MinimizedItemContent</td><td>
-Specifies the content that can be used to set when the TileViewItem is in Minimized state.</td><td>
-DependencyProperty</td><td>
-Object</td><td>
-</td></tr>
-<tr>
-<td>
-MaximizedItemContent </td><td>
-Specifies the content that can be used to set when the TileViewItem is in Maximized state.</td><td>
-DependencyProperty</td><td>
-Object</td><td>
-</td></tr>
-</table>
-
+![Minimized item content](MinimizedItemContent-and-MaximizedItemContent_images/MinimizedItemContent-and-MaximizedItemContent_img1.png)
 
 ## Sample Link
 

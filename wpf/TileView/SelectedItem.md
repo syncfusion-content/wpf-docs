@@ -9,7 +9,7 @@ documentation: ug
 
 # SelectedItem
 
-SelectedItem is a property in the TileViewControl that stores the currently selected TileViewItem in it and it is similar to SelectedItem property in ComboBox. This will help you to return the currently selected TileViewItem. Also it allows only one item to be selected at a time. 
+[SelectedItem](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.selector.selecteditem?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_Selector_SelectedItem) is a property in the TileViewControl that stores the currently selected TileViewItem in it and it is similar to [SelectedItem](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.selector.selecteditem?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_Selector_SelectedItem) property in ComboBox. This will help you to return the currently selected TileViewItem. Also it allows only one item to be selected at a time. 
 
 ## Use Case Scenarios
 
@@ -46,29 +46,6 @@ this.TileView.SelectedItem = Tile1;
 {% endhighlight %}
 
 {% endtabs %}
-
-
-## Properties
-
-SelectedItem Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-SelectedItem</td><td>
-Stores the currently selected TileViewItem</td><td>
-DependencyProperty</td><td>
-Object</td><td>
-</td></tr>
-</table>
-
 
 ## Events
 
