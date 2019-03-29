@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout and Behavior Related Features | CurrencyTextBox | wpf | Syncfusion
+title: Layout related features | CurrencyTextBox | wpf | Syncfusion
 description: layout and behavior related features
 platform: wpf
 control: CurrencyTextBox 
@@ -15,7 +15,7 @@ If the CurrencyTextBox is read-only, then no user input or edits are allowed but
 
 ## CornerRadius
 
-The Corner Radius describes the degree to which corners are rounded. This property has no default value.
+The [CornerRadius](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CornerRadius.html) describes the degree to which corners are rounded. This property has no default value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,13 +25,13 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)
+![Corner radius](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)
 
 ## Negative foreground
 
-The Foreground of the CurrencyTextBox can be customized based on the Value property. When Negative value is assigned to the Value property, then automatically the NegativeForeground value gets assigned to the Foreground property.
+The Foreground of the CurrencyTextBox can be customized based on the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) property. When Negative value is assigned to the Value property, then automatically the NegativeForeground value gets assigned to the Foreground property.
 
-N> The NegativeForeground in the CurrencyTextBox can be enabled by setting the ApplyNegativeForeground property to true.
+N> The [NegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NegativeForeground.html) in the CurrencyTextBox can be enabled by setting the [ApplyNegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyNegativeForeground.html) property to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -43,13 +43,13 @@ N> The NegativeForeground in the CurrencyTextBox can be enabled by setting the A
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)
+![Negative foreground](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)
 
 ## Zero color
 
-The Foreground of the CurrencyTextBox can be customized based on the Value property. When zero is assigned as a value to the Value property, then automatically the ZeroColor is set to the Foreground property.
+The Foreground of the CurrencyTextBox can be customized based on the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) property. When zero is assigned as a value to the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) property, then automatically the [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) is set to the Foreground property.
 
-N> The ZeroColor in the CurrencyTextBox can be enabled by setting the ApplyZeroColor property to true.
+N> The [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) in the CurrencyTextBox can be enabled by setting the [ApplyZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyZeroColor.html) property to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -60,16 +60,16 @@ N> The ZeroColor in the CurrencyTextBox can be enabled by setting the ApplyZeroC
 {% endhighlight %}
 {% endtabs %}
 
-![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)
+![Zero color](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)
 
 ## EnterToMoveNext
 
-If you press the Enter key in the CurrencyTextBox then the Focus moves to the next element in the application. To enable this feature you have to set the EnterToMoveNext property to true.
+If you press the Enter key in the CurrencyTextBox then the Focus moves to the next element in the application. To enable this feature you have to set the [EnterToMoveNext](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnterToMoveNext.html) property to true.
 
 ## TextSelectionOnFocus
 
-The TextSelectionOnFocus property allows the CurrencyTextBox to act like standard text boxes when the cursor hovers over. 
+The [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property allows the CurrencyTextBox to act like standard text boxes when the cursor hovers over. 
 
-![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)
+![Text selection on focus](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)
 
-![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)
+![Text selection on focus](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)

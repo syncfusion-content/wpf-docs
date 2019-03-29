@@ -51,7 +51,7 @@ private void TabControlExt_NewTabItemClick(object sender, EventArgs e)
 
 Run the code. The following output is displayed.
 
-![](NewButton-Feature_images/NewButton-Feature_img1.jpeg)
+![NewButton Feature](NewButton-Feature_images/NewButton-Feature_img1.jpeg)
 
 
 This New button can also displayed at first end using the code below.
@@ -96,9 +96,9 @@ private void TabControlExt_NewTabItemClick(object sender, EventArgs e)
 
 Run the code. The following output is displayed.
 
-![](NewButton-Feature_images/NewButton-Feature_img2.jpeg)
+![New button template](NewButton-Feature_images/NewButton-Feature_img2.jpeg)
 
-Template and style for new button can be overridden by using NewButtonTemplate and NewButtonStyle properties.  NewButtonBorderThickness and NewButtonBackground can be used to specify thickness of the border and background for the new button.
+Template and style for new button can be overridden by using NewButtonTemplate and [NewButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonStyle.html) properties.  [NewButtonBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonBorderThickness.html) and [NewButtonBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonBackground.html) can be used to specify thickness of the border and background for the new button.
 
 The following code illustrates the same.
 

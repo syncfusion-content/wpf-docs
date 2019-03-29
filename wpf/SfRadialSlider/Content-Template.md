@@ -9,10 +9,10 @@ documentation: ug
 
 # Content Template
 
-The ContentTemplate property can be used to customize the content of the Radial Slider. 
+The [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~ContentTemplate.html) property can be used to customize the content of the Radial Slider. 
 
 
-{% highlight html %}
+{% highlight XAML %}
 
   <syncfusion:SfRadialSlider
 
@@ -34,7 +34,7 @@ The ContentTemplate property can be used to customize the content of the Radial 
 
 {% endhighlight %}
 
-![C:/Users/ApoorvahR/Desktop/5.png](Concepts_images/Concepts_img4.png)
+![Content template](Concepts_images/Concepts_img4.png)
 
 
 

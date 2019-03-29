@@ -11,7 +11,7 @@ documentation: ug
 
 ## Culture
 
-CurrencyTextBox provides globalization support through the Culture property. 
+CurrencyTextBox provides globalization support through the [Culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentculture?view=netframework-4.7.2) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +31,7 @@ currencyTextBox.Culture = new CultureInfo("en-US");
 {% endhighlight %}
 {% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
+![Culture format](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,13 +51,13 @@ currencyTextBox.Culture = new CultureInfo("fr-FR");
 {% endhighlight %}
 {% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
+![Culture format](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
 
 As you have seen in these samples whenever you change the Culture property the Value is formatted based on the Culture.
 
 ## NumberFormat
 
-You can customize the Number Format either by using the NumberFormat property or the CurrencyGroupSeparator, CurrencyGroupSizes, CurrencyDecimalDigits, and CurrencyDecimalSeparator, CurrencySymbol, CurrencyNegativePattern, and CurrencyPositivePattern properties.
+You can customize the Number Format either by using the NumberFormat property or the [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyGroupSeparator.html), [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyGroupSizes.html), [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyDecimalDigits.html), and [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyDecimalSeparator.html), [CurrencySymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencySymbol.html), [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyNegativePattern.html), and [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyPositivePattern.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,7 +80,7 @@ currencyTextBox.NumberFormat = new NumberFormatInfo() { CurrencyGroupSeparator =
 {% endhighlight %}
 {% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
+![Number format](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -104,7 +104,7 @@ currencyTextBox.CurrencySymbol = "$";
 {% endhighlight %}
 {% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
+![Number format](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
 
 ### CurrencyPositivePattern
 
@@ -143,7 +143,7 @@ n $</td></tr>
 {% endhighlight %}
 {% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
+![Currency pattern](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
 
 ### CurrencyNegativePattern
 
@@ -230,4 +230,4 @@ n- $</td></tr>
 {% endhighlight %}
 {% endtabs %}
 
-![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)
+![Currency negative pattern](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)

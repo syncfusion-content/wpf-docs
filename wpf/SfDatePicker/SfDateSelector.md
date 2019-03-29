@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Explains about DateSelector of SfDatePicker control for WPF
+title: Explains about DateSelector | SfDatePicker | WPF | Syncfusion
 description: Explains about the DateSelector of SfDatePicker control for WPF
 platform: wpf
 control: SfDatePicker
@@ -11,10 +11,10 @@ documentation: ug
 
 The SfDateSelector control opens inside the drop-down popup.
 
-![](Features_images/Features_img3.png)
+![SfDateSelector](Features_images/Features_img3.png)
 
 
-The visual elements of the date selector can be customized using the SelectorStyle property.
+The visual elements of the date selector can be customized using the [SelectorStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorStyle.html) property.
 
 
 
@@ -45,7 +45,7 @@ The header property defines the top part of the SfDateSelector.
 
 {% endhighlight %}
 
-![](Features_images/Features_img4.png)
+![Header](Features_images/Features_img4.png)
 
 
 
@@ -113,7 +113,7 @@ The header template property is used to decorate the header.
 
 
 
-![](Features_images/Features_img5.png)
+![HeaderTemplate](Features_images/Features_img5.png)
 
 
 
@@ -126,7 +126,7 @@ N> The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWra
 
 ## DayCellTemplate
 
-The DayCellTemplate property is used to decorate the day cell selection box.
+The [DayCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~DayCellTemplate.html) property is used to decorate the day cell selection box.
 
 {% highlight xaml %}
 
@@ -186,12 +186,12 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
 {% endhighlight %}
 
-![](Features_images/Features_img7.png)
+![Day cell template](Features_images/Features_img7.png)
 
 
 ## MonthCellTemplate
 
- The MonthCellTemplate property is used to decorate the month cell selection box. 
+ The [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~MonthCellTemplate.html) property is used to decorate the month cell selection box. 
 
 {% highlight xaml %}
 
@@ -250,13 +250,13 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
 {% endhighlight %}
 
-![](Features_images/Features_img8.png)
+![Month cell template](Features_images/Features_img8.png)
 
 
 
 ## YearCellTemplate
 
-The YearCellTemplate property is used to decorate the year cell selection box.
+The [YearCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~YearCellTemplate.html) property is used to decorate the year cell selection box.
 
 {% highlight xaml %}
 
@@ -315,4 +315,4 @@ The YearCellTemplate property is used to decorate the year cell selection box.
 
 			{% endhighlight %}
 			
-![](Features_images/Features_img9.png)
+![Year cell template](Features_images/Features_img9.png)

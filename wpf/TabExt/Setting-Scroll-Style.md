@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Scroll Style
 
-TabControlExt control can be implemented with different Tab Scroll styles to give a professional look to your WPF applications. This is achieved by using the TabScrollStyle dependency property, which is used to set the scroll style for navigating the Tab Items. It returns the object of the Tab Item currently in focus. The focus depends upon the click event of the Scroll button.
+TabControlExt control can be implemented with different Tab Scroll styles to give a professional look to your WPF applications. This is achieved by using the [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollStyle.html) dependency property, which is used to set the scroll style for navigating the Tab Items. It returns the object of the Tab Item currently in focus. The focus depends upon the click event of the Scroll button.
 
 The following Tab Scroll styles supported by the TabControlExt control.
 
@@ -105,7 +105,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-![](Setting-Scroll-Style_images/Setting-Scroll-Style_img1.jpeg)
+![Tab scroll style](Setting-Scroll-Style_images/Setting-Scroll-Style_img1.jpeg)
 
 
 
@@ -113,7 +113,7 @@ stackPanel.Children.Add(tabControlExt);
 
 ## TabScrollStyleChanged Event
 
-This event is triggered when the TabScrollStyle property is changed.
+This [TabScrollStyleChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollStyleChanged_EV.html) event is triggered when the [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollStyle.html) property is changed.
 
 When the TabControlExt has many Tab Items, it is complicated to scroll the Tab Items in the Normal mode. In such cases, the Tab Scroll style is switched to the Extended mode. The following code illustrates how this is done.
 

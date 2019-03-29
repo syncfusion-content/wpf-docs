@@ -17,7 +17,7 @@ Namespace: Syncfusion.Windows.Controls.Navigation
 
 Assembly: Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll) 
 
-# Creating simple application with SfRadialSlider
+### Creating simple application with SfRadialSlider
 
 The SfRadialSlider control can be added to an application using Visual Studio.
 
@@ -42,7 +42,7 @@ SfRadialSlider control can be added to the application by dragging it from the t
 * Syncfusion.SfRadialMenu.WPF
 * Syncfusion.SfShared.WPF
 
-![](GettingStarted_images/img1.png)
+![Adding control via designer](GettingStarted_images/img1.png)
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ sfRadialSlider.Maximum = 100
 
 {% endtabs %}
 
-![](GettingStarted_images/img2.png) 
+![Adding control manually in code](GettingStarted_images/img2.png) 
 
 ## Configuration of SfRangeSlider
 
@@ -98,7 +98,7 @@ Gets or sets the value of the Radial Slider.
 
 The value can be changed by dragging the pointer along the circular track. 
 
-![](Concepts_images/Concepts_img1.png)
+![Value](Concepts_images/Concepts_img1.png)
 
 ### Ticks 
 
@@ -106,7 +106,7 @@ Ticks are placed along the round track in a uniform manner. The position of tick
 
 ### Tick Frequency
 
-The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximum values.
+The [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~TickFrequency.html) property is used to define the number of ticks along the track, based on Minimum and Maximum values.
 
 {% tabs %}
 
@@ -118,7 +118,7 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img2.png) 
+![Tick Frequency](Concepts_images/Concepts_img2.png) 
 
 ### Small Change
 

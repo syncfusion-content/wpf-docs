@@ -9,13 +9,13 @@ documentation: ug
 
 # End Angle 
 
-The EndAngle property can be used to set the ending position for the ticks in the circular track. 
+The [EndAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~EndAngle.html) property can be used to set the ending position for the ticks in the circular track. 
 
-{% highlight html %}
+{% highlight XAML %}
 
 
 <syncfusion:SfRadialSlider  StartAngle="180" EndAngle="360" />
 
 {% endhighlight  %}
 
-![C:/Users/ApoorvahR/Desktop/6.png](Concepts_images/Concepts_img5.png)
+![End angle](Concepts_images/Concepts_img5.png)

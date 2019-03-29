@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Close Buttons type
 
-The display mode of the Close button is specified by using the CloseButtonType property. This dependency property sets the display mode for the Close button.
+The display mode of the Close button is specified by using the [CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property. This dependency property sets the display mode for the Close button.
 
 The following Close button modes are supported by the TabControlExt.
 
@@ -91,7 +91,7 @@ stackPanel.Children.Add(tabControlExt);
 {% endtabs %}
 
 
-![](Setting-Close-Buttons-type_images/Setting-Close-Buttons-type_img1.jpeg)
+![Close buttons type](Setting-Close-Buttons-type_images/Setting-Close-Buttons-type_img1.jpeg)
 
 
 

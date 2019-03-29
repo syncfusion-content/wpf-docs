@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing the Tab Item Header at Run Time | TabControlExt | wpf | Syncfusion
+title: Edit the Tab Header at Run Time | TabControlExt | wpf | Syncfusion
 description: editing the tab item header at run time
 platform: wpf
 control: TabControlExt
@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing the Tab Item Header at Run Time
 
-You can edit the header of the Tab Item at run time by enabling the EnableLabelEdit dependency property. The following code snippet sets this property.
+You can edit the header of the Tab Item at run time by enabling the [EnableLabelEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EnableLabelEdit.html) dependency property. The following code snippet sets this property.
 
 
 {% highlight xaml %}
@@ -33,7 +33,7 @@ You can edit the header of the Tab Item at run time by enabling the EnableLabelE
 {% endhighlight %}
 
 
-![](Editing-the-Tab-Item-Header-at-Run-Time_images/Editing-the-Tab-Item-Header-at-Run-Time_img1.jpeg)
+![Edit the tab item header at run time](Editing-the-Tab-Item-Header-at-Run-Time_images/Editing-the-Tab-Item-Header-at-Run-Time_img1.jpeg)
 
 {% seealso %}
 
