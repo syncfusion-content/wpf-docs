@@ -9,7 +9,7 @@ documentation: ug
 
 # Watermark Support
 
-Watermark is the dummy content displayed in the IntegerTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
+Watermark is the dummy content displayed in the IntegerTextBox when the value is null. The [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) support behavior can be enabled by setting the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -21,15 +21,15 @@ Watermark is the dummy content displayed in the IntegerTextBox when the value is
 {% endhighlight %}
 {% endtabs %}
 
-![](Watermark-Support_images/Watermark-Support_img1.png)
+![Watermark support](Watermark-Support_images/Watermark-Support_img1.png)
 
 
 
-WatermarkText automatically collapses when the control is in focus. On Lost Focus the WatermarkText comes to the visible state if the Value is null and the WatermarkTextIsVisible is true.
+[WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) automatically collapses when the control is in focus. On Lost Focus the [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) comes to the visible state if the Value is null and the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) is true.
 
 ## Using the WatermarkTemplate
 
-You can customize the Visual appearance of the Watermark Text by using the WatermarkTemplate property.
+You can customize the Visual appearance of the Watermark Text by using the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -50,7 +50,7 @@ You can customize the Visual appearance of the Watermark Text by using the Water
 {% endhighlight %}
 {% endtabs %}
 
-![](Watermark-Support_images/Watermark-Support_img2.png)
+![Watermark template](Watermark-Support_images/Watermark-Support_img2.png)
 
 
 

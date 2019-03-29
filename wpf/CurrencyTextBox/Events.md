@@ -13,16 +13,16 @@ The CurrencyTextBox exposes the following events:
 
 ## ValueChanged
 
-ValueChanged – The event occurs when the Value property of the CurrencyTextBox is changed.
+[ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~ValueChanged_EV.html) – The event occurs when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) property of the CurrencyTextBox is changed.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:CurrencyTextBox ValueChanged="CurrencyTextBox_ValueChanged"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.ValueChanged+=new PropertyChangedCallback(CurrencyTextBox_ValueChanged);
@@ -44,7 +44,7 @@ private void CurrencyTextBox_ValueChanged(DependencyObject d, DependencyProperty
 
 ## TextChanged
 
-TextChanged – The event occurs when the Value property of the CurrencyTextBox is changed.
+[TextChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.textchanged?redirectedfrom=MSDN&view=netframework-4.7.2) – The event occurs when the Value property of the CurrencyTextBox is changed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -76,7 +76,7 @@ private void CurrencyTextBox_TextChanged(object sender, TextChangedEventArgs e)
 
 ## CultureChanged
 
-CultureChanged – The event occurs when the Culture property of the CurrencyTextBox is changed.
+[CultureChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CultureChanged_EV.html) – The event occurs when the Culture property of the CurrencyTextBox is changed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -107,7 +107,7 @@ private void CurrencyTextBox_CultureChanged(DependencyObject d, DependencyProper
 
 ## MaxValueChanged
 
-MaxValueChanged – The event occurs when the MaxValue property of the CurrencyTextBox is changed.
+[MaxValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MaxValueChanged_EV.html) – The event occurs when the MaxValue property of the CurrencyTextBox is changed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -138,7 +138,7 @@ private void CurrencyTextBox_MaxValueChanged(DependencyObject d, DependencyPrope
 
 ## MinValueChanged
 
-MinValueChanged – The event occurs when the MinValue property of the CurrencyTextBox is changed.
+[MinValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MinValueChanged_EV.html) – The event occurs when the MinValue property of the CurrencyTextBox is changed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,7 +170,7 @@ private void CurrencyTextBox_MinValueChanged(DependencyObject d, DependencyPrope
 
 ## SelectionChanged
 
-SelectionChanged – The event occurs when the selection in the textbox is changed.
+[SelectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionchanged?redirectedfrom=MSDN&view=netframework-4.7.2) – The event occurs when the selection in the textbox is changed.
 
 {% tabs %}
 
