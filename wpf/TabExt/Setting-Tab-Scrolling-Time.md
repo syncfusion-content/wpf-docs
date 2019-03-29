@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Tab Scrolling Time
 
-Tab Scrolling Time is controlled by using the ScrollingTime property. This dependency property sets the value for Tab Scrolling Time in milliseconds.
+Tab Scrolling Time is controlled by using the [ScrollingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ScrollingTime.html) property. This dependency property sets the value for Tab Scrolling Time in milliseconds.
 
 Here is the code snippet to set the Tab Scrolling Time.
 

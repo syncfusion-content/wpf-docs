@@ -13,7 +13,7 @@ This section illustrates the following Layout-related feature of TabSplitter con
 
 ## Customizing the Appearance of TabSplitter
 
-The appearance of the TabSplitter control is customized by using the appearance properties available in the control. You can set the color for the MouseOver Background, MouseOver Foreground, Selected Foreground and Selected Background of the TabSplitter control. Here is the code snippet.
+The appearance of the TabSplitter control is customized by using the appearance properties available in the control. You can set the color for the [MouseOverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~MouseOverBackground.html), [MouseOverForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~MouseOverForeground.html), [SelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~SelectedForeground.html) and [SelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter~SelectedBackground.html) of the TabSplitter control. Here is the code snippet.
 
 {%tabs%}
 {% highlight xaml %}
@@ -96,7 +96,7 @@ tabsplitter.MouseOverForeground = Brushes.Yellow;
 
 {%endtabs%}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img1.png)
+![Tab splitter customization](Layout-Related-Features_images/Layout-Related-Features_img1.png)
 
 
 

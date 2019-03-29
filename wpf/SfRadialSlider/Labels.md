@@ -9,4 +9,4 @@ documentation: ug
 
 # Labels 
 
-Labels are the numerical representation of the ticks starting from Minimum to Maximum. The frequency of the labels also controlled by TickFrequency property. 
+Labels are the numerical representation of the ticks starting from Minimum to Maximum. The frequency of the labels also controlled by [TickFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~TickFrequency.html) property. 

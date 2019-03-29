@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab Strip Alignment
 
-TabStrip of the TabControlExt can be aligned to all four sides of the TabControlExt by using the TabStripPlacement property. This dependency property is used to dock the Tab Header, relative to the content of the TabControlExt. It returns the docking state of the TabItem.
+TabStrip of the TabControlExt can be aligned to all four sides of the TabControlExt by using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) property. This dependency property is used to dock the Tab Header, relative to the content of the TabControlExt. It returns the docking state of the TabItem.
 
 The following TabStrip placement options are supported by the TabControlExt.
 
@@ -112,12 +112,12 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img1.jpeg)
+![Tab srip placement](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img1.jpeg)
 
 
 ## Rotating the Tab Strip
 
-To improve the user readability, the Tab Strip text can be rotated, whenever the TabStripPlacement is set to _left_ or _right_. The RotateTextWhenVertical property need to be set to _true_,__to enable this feature. When this property is set to _true_, and when the TabStripPlacement is changed to left or right (in other words, when the tab strip is in the vertical position), the text will be rotated and placed horizontally as in the below image.
+To improve the user readability, the Tab Strip text can be rotated, whenever the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) is set to _left_ or _right_. The [RotateTextWhenVertical](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~RotateTextWhenVertical.html) property need to be set to _true_,__to enable this feature. When this property is set to _true_, and when the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) is changed to left or right (in other words, when the tab strip is in the vertical position), the text will be rotated and placed horizontally as in the below image.
 
 Here is the code snippet for rotating the text when tab strip is vertically placed.
 
@@ -192,4 +192,4 @@ stackPanel.Children.Add(tabControlExt);
 {% endtabs %}
 
 
-![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img2.jpeg)
+![Tab strip placement](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img2.jpeg)
