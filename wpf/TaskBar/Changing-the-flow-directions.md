@@ -9,20 +9,7 @@ documentation: ug
 
 # Changing the flow directions
 
-The flow direction for the TaskBar is set through the FlowDirection property.
-
-FlowDirection property table
-<table>
-<tr>
-<th>
-Property <th><th>
-Description</th></tr>
-<tr>
-<td>
-FlowDirection</td><td>
-Sets the flow direction for the TaskBar. The options provided are as follows.LeftToRightRightToLeft</td></tr>
-</table>
-
+The flow direction for the TaskBar is set through the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_FrameworkElement_FlowDirection) property.
 
 Here is the code for setting this property.
 
@@ -72,7 +59,7 @@ taskBar.FlowDirection = FlowDirection.RightToLeft;
 {%endtabs%}
 
 
-![](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)
+![Flow directions](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)
 
 
 FlowDirection = "RightToLeft"

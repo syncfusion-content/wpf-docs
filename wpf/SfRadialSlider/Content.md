@@ -9,10 +9,10 @@ documentation: ug
 
 # Content
 
-The Content property can be used to place any content inside the Inner Rim. 
+The [Content](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~Content.html) property can be used to place any content inside the Inner Rim. 
 
 
-{% highlight html %}
+{% highlight XAML %}
 
 
 <syncfusion:SfRadialSlider x:Name="rSlider1">
@@ -24,7 +24,7 @@ The Content property can be used to place any content inside the Inner Rim.
 
 {% endhighlight  %}
 
-![C:/Users/ApoorvahR/Desktop/4.png](Concepts_images/Concepts_img3.png)
+![Content](Concepts_images/Concepts_img3.png)
 
 
 

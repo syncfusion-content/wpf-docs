@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Group Margin
 
-You can set the margin for the items in the TaskBar control by using the GroupMargin property. This is a dependency property, which sets the margin for all TaskBar Items in the TaskBar control. You can enhance the appearance of the TaskBar Items by using this property.
+You can set the margin for the items in the TaskBar control by using the [GroupMargin](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~GroupMargin.html) property. This is a dependency property, which sets the margin for all TaskBar Items in the TaskBar control. You can enhance the appearance of the TaskBar Items by using this property.
 
 You can also set the value for Left, Right, Bottom and Top group margins.
 
@@ -161,7 +161,7 @@ this.Content = taskBar;
 {%endtabs%}
 
 
-![](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg)
+![Task bar margin](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg)
 
 
 

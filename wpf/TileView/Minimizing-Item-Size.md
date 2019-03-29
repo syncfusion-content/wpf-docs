@@ -9,7 +9,7 @@ documentation: ug
 
 # Minimizing Item Size
 
-The size of the minimized TileViewItem can be set by using the MinimizedItemsPercentage property. The size of the minimized items is set in percentage. The percentage set is calculated relative to the total size of the control. 
+The size of the minimized TileViewItem can be set by using the [MinimizedItemsPercentage](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsPercentage.html) property. The size of the minimized items is set in percentage. The percentage set is calculated relative to the total size of the control. 
 
 ## Adding Minimizing Item size to an Application 
 
@@ -97,55 +97,12 @@ The following code example illustrates how to add the minimizing item size to an
 
 
 
-![](Minimizing-Item-Size_images/Minimizing-Item-Size_img1.png)
-
-
-
-
-
-## Properties
-
-
-
-MinimizedItemTemplate / MaximizedItemTemplate Properties Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-MinimizedItemsPercentage</td><td>
-Specifies the size for the Minimized TileViewItems.</td><td>
-DependencyProperty</td><td>
-(double)20</td><td>
-</td></tr>
-</table>
+![Minimized item](Minimizing-Item-Size_images/Minimizing-Item-Size_img1.png)
 
 
 ## Events
 
-
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-MinimizedItemsPercentageChanged</td><td>
-The event gets fired when the minimized items percentage of theTileViewItems is changed.</td><td>
-</td><td>
-</td><td>
-</td></tr>
-</table>
+* [MinimizedItemsPercentageChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsPercentageChanged_EV.html)
 
 
 ## Sample Link

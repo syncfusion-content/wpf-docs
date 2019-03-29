@@ -14,19 +14,19 @@ Inner Rim term denotes the circle in the center of Radial Slider.  Following pro
 
 ### Inner Rim Radius Factor
 
-InnerRimRadiusFactor property decides the radius of Inner Rim from the total radius available to render the Radial Slider. 
+[InnerRimRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~InnerRimRadiusFactor.html) property decides the radius of Inner Rim from the total radius available to render the Radial Slider. 
 
 ### Inner Rim Stroke
 
-InnerRimStroke property can be used to set the stroke color of the Inner Rim. 
+[InnerRimStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~InnerRimStroke.html) property can be used to set the stroke color of the Inner Rim. 
 
 ### Inner Rim Stroke Thickness
 
-InnerRimStrokeThickness property can be used to set the thickness of the Inner Rim.
+[InnerRimStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~InnerRimStrokeThickness.html) property can be used to set the thickness of the Inner Rim.
 
 ### Inner Rim Fill
 
-InnerRimFill property can be used the set the fill color of the Inner Rim. 
+[InnerRimFill](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~InnerRimFill.html) property can be used the set the fill color of the Inner Rim. 
 
 {% highlight xaml %}
 
@@ -42,7 +42,7 @@ InnerRimFill="LightGray"
 
 {% endhighlight  %}
 
-![](Concepts_images/Concepts_img6.png) 
+![Radial slider inner rim fill](Concepts_images/Concepts_img6.png) 
 
 
 
@@ -52,15 +52,15 @@ Outer Rim term denotes circular track (outer circle) of Radial Slider.  Followin
 
 ### Outer Rim Radius Factor
 
-OuterRimRadiusFactor property decides the radius of Outer Rim from the total radius available to render the Radial Slider. 
+[OuterRimRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~OuterRimRadiusFactor.html) property decides the radius of Outer Rim from the total radius available to render the Radial Slider. 
 
 ### Outer Rim Stroke 
 
-OuterRimStroke property can be used to set the stroke color of the Outer Rim. 
+[OuterRimStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~OuterRimStroke.html) property can be used to set the stroke color of the Outer Rim. 
 
 ### Outer Rim Stroke Thickness 
 
-OuterRimStrokeThickness property can be used to set the thickness of the Outer Rim. 
+[OuterRimStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~OuterRimStrokeThickness.html) property can be used to set the thickness of the Outer Rim. 
 
 ### Background
 
@@ -80,7 +80,7 @@ Background property can be used to fill the Outer Rim.
 
 {% endhighlight %}
 
-![](Concepts_images/Concepts_img7.png) 
+![Radial slider outer rim customization](Concepts_images/Concepts_img7.png) 
 
 
 
@@ -90,7 +90,7 @@ Ticks displayed along the circular path can be customized using the following pr
 
 ### Tick Template
 
-Ticks can be customized using the TickTemplate property. 
+Ticks can be customized using the [TickTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~TickTemplate.html) property. 
 
 
 {% highlight xaml %}
@@ -113,13 +113,13 @@ Ticks can be customized using the TickTemplate property.
 
 
 
-![](Concepts_images/Concepts_img8.png) 
+![Radial slider tick template](Concepts_images/Concepts_img8.png) 
 
 
 
 ### Tick Radius Factor
 
-TickRadiusFactor property decides the radius of the ticks from the total radius available to render the Radial Slider. 
+[TickRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~TickRadiusFactor.html) property decides the radius of the ticks from the total radius available to render the Radial Slider. 
 {% highlight xaml %}
 
 <syncfusion:SfRadialSlider  TickRadiusFactor="0.75"  />
@@ -128,13 +128,13 @@ TickRadiusFactor property decides the radius of the ticks from the total radius 
 {% endhighlight  %}
 
 
-![](Concepts_images/Concepts_img9.png)
+![Radial slider tick factor](Concepts_images/Concepts_img9.png)
 
 
 
 ### Tick Visibility
 
-Visibility of ticks can be controlled by TickVisibility property. 
+Visibility of ticks can be controlled by [TickVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~TickVisibility.html) property. 
 
 
 {% highlight xaml %}
@@ -145,7 +145,7 @@ Visibility of ticks can be controlled by TickVisibility property.
 {% endhighlight  %}
 
 
-![](Concepts_images/Concepts_img10.png)
+![Ticks collapsed](Concepts_images/Concepts_img10.png)
 
 
 
@@ -155,7 +155,7 @@ Labels displayed along the circular path in the Radial slider can be customized 
 
 ### Label Template
 
-The LabelTemplate property can be used to customize the label object. 
+The [LabelTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~LabelTemplate.html) property can be used to customize the label object. 
 
 {% highlight xaml %}
 
@@ -175,7 +175,7 @@ The LabelTemplate property can be used to customize the label object.
 
 {% endhighlight  %}
 
-![](Concepts_images/Concepts_img11.png)
+![Label template](Concepts_images/Concepts_img11.png)
 
 
 
@@ -183,7 +183,7 @@ The LabelTemplate property can be used to customize the label object.
 
 ### Label Radius Factor
 
-LabelRadiusFactor property decides the radius of the labels from the total radius available to render the Radial Slider. 
+[LabelRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~LabelRadiusFactor.html) property decides the radius of the labels from the total radius available to render the Radial Slider. 
 
 
 {% highlight xaml %}
@@ -194,7 +194,7 @@ LabelRadiusFactor property decides the radius of the labels from the total radiu
 {% endhighlight  %}
 
 
-![C:/Users/ApoorvahR/Desktop/13.png](Concepts_images/Concepts_img12.png) 
+![Label radius factor](Concepts_images/Concepts_img12.png) 
 
 
 
@@ -202,7 +202,7 @@ LabelRadiusFactor property decides the radius of the labels from the total radiu
 
 ### Label Visibility
 
-Visibility of ticks can be controlled by LabelVisibility property. 
+Visibility of ticks can be controlled by [LabelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~LabelVisibility.html) property. 
 
 {% highlight xaml %}
 
@@ -212,7 +212,7 @@ Visibility of ticks can be controlled by LabelVisibility property.
 {% endhighlight %}
 
 
-![](Concepts_images/Concepts_img13.png) 
+![Label collapsed](Concepts_images/Concepts_img13.png) 
 
 
 
@@ -222,7 +222,7 @@ The Pointer that is used for the select the value by dragging in circular track 
 
 ### Pointer Radius Factor
 
-The PointerRadiusFactor property decides the radius of the Pointer from the total radius available to render the Radial Slider. 
+The [PointerRadiusFactor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~PointerRadiusFactor.html) property decides the radius of the Pointer from the total radius available to render the Radial Slider. 
 
 {% highlight xaml %}
 
@@ -232,13 +232,13 @@ The PointerRadiusFactor property decides the radius of the Pointer from the tota
 
 {% endhighlight %}
 
-![](Concepts_images/Concepts_img14.png) 
+![Pointer radius factor](Concepts_images/Concepts_img14.png) 
 
 
 
 #### Pointer Style
 
-Style of the Pointer can be customized using the PointerStyle property. 
+Style of the Pointer can be customized using the [PointerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~PointerStyle.html) property. 
 
 
 {% highlight xaml %}
@@ -275,15 +275,15 @@ Style of the Pointer can be customized using the PointerStyle property.
 
 
 
-![](Concepts_images/Concepts_img15.png) 
+![Pointer style](Concepts_images/Concepts_img15.png) 
 
 
 
 ### Preview Pointer Style
 
-The Preview Pointer that appears when hovering over the Radial Slider can be customized using the PreviewPointerStyle property. 
+The Preview Pointer that appears when hovering over the Radial Slider can be customized using the [PreviewPointerStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~PreviewPointerStyle.html) property. 
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:SfRadialSlider
 
@@ -321,4 +321,4 @@ The Preview Pointer that appears when hovering over the Radial Slider can be cus
 {% endhighlight %}
 
 
-![](Concepts_images/Concepts_img16.png) 
+![Preview pointer style](Concepts_images/Concepts_img16.png) 

@@ -9,4 +9,4 @@ documentation: ug
 
 # Start Angle 
 
-The StartAngle property can be used to set the starting position for generating the ticks in the circular track.  
+The [StartAngle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~StartAngle.html) property can be used to set the starting position for generating the ticks in the circular track.  

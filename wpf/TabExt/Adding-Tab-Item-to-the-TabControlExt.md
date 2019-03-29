@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Tab Item to the TabControlExt | TabControlExt | wpf | Syncfusion
+title: Add Tab Item to the TabControlExt | TabControlExt | wpf | Syncfusion
 description: adding tab item to the tabcontrolext
 platform: wpf
 control: TabControlExt
@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding Tab Item to the TabControlExt
 
-The TabItemExt is added to the TabControlExt by using either XAML or C# coding. Use the following lines of code to add a TabItemExt to the TabControlExt control.
+The [TabItemExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt.html) is added to the TabControlExt by using either XAML or C# coding. Use the following lines of code to add a TabItemExt to the TabControlExt control.
 
 {% tabs %}
 
@@ -58,12 +58,12 @@ stackPanel.Children.Add(tabControlExt);
 {% endtabs %}
 
 
-![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg)
+![Adding Tab Item to the TabControlExt](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg)
 
 
 ### Adding Content to TabItemExt
 
-To add content to the TabItemExt, use the below code snippet.
+To add content to the [TabItemExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt.html), use the below code snippet.
 
 {% tabs %}
 
@@ -200,6 +200,6 @@ stackPanel.Children.Add(tabControlExt);
 
 {% endtabs %}
 
-![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img2.jpeg)
+![Adding content to tab item](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img2.jpeg)
 
 N> To display the TabItemExt, you must already have the TabControlExt in which you are going to add the TabItemExt.

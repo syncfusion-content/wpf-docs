@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MinimizedItemTemplate-and-MaximizedItemTemplate | TileView | wpf | Syncfusion
+title: Minimized and maximized template | TileView | wpf | Syncfusion
 description: minimizeditemtemplate and maximizeditemtemplate
 platform: wpf
 control: TileView Control
@@ -9,7 +9,7 @@ documentation: ug
 
 # MinimizedItemTemplate and MaximizedItemTemplate
 
-The MinimizedItemTemplate and MaximizedItemTemplate feature in the TileViewControl enables you to set the different DataTemplate in theTileViewItem maximized state and the TileViewItem minimized state. The ItemTemplate property will be displayed in the TileViewItem normal state. If you set the MinimizedItemTemplate, then the value in the ItemTemplate property will be displayed in the maximized state and vice versa.
+The [MinimizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemTemplate.html) and [MaximizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MaximizedItemTemplate.html) feature in the TileViewControl enables you to set the different DataTemplate in theTileViewItem maximized state and the TileViewItem minimized state. The ItemTemplate property will be displayed in the TileViewItem normal state. If you set the [MinimizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemTemplate.html), then the value in the ItemTemplate property will be displayed in the maximized state and vice versa.
 
 ## Use Case Scenarios
 
@@ -17,9 +17,9 @@ This feature will be very useful when you want to show the two different DataTem
 
 ## Adding MinimizedItemTemplate / MaximizedItemTemplate to an Application 
 
-The MinimizedItemTemplate and MaximizedItemTemplate can be added to an application by using either XAML or C# code.
+The [MinimizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemTemplate.html) and [MaximizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MaximizedItemTemplate.html) can be added to an application by using either XAML or C# code.
 
-The following code example illustrates how to add the MinimizedItemTemplate and MaximizedItemTemplate to an application through XAML.
+The following code example illustrates how to add the [MinimizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemTemplate.html) and [MaximizedItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MaximizedItemTemplate.html) to an application through XAML.
 
 
 {% highlight xaml %}
@@ -114,38 +114,7 @@ The following code example illustrates how to add the MinimizedItemTemplate and 
 
 
 
-![](MinimizedItemTemplate-and-MaximizedItemTemplate_images/MinimizedItemTemplate-and-MaximizedItemTemplate_img1.png)
-
-
-
-
-
-## Properties
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-MinimizedItemTemplate </td><td>
-Specifies the ItemTemplate that can be used to set when the TileViewItem is in Minimized state.</td><td>
-DependencyProperty</td><td>
-DataTemplate</td><td>
-</td></tr>
-<tr>
-<td>
-MaximizedItemTemplate </td><td>
-Specifies the ItemTemplate that can be used to set when the TileViewItem is in Maximized state.</td><td>
-DependencyProperty</td><td>
-DataTemplate</td><td>
-</td></tr>
-</table>
-
+![Minimized item template](MinimizedItemTemplate-and-MaximizedItemTemplate_images/MinimizedItemTemplate-and-MaximizedItemTemplate_img1.png)
 
 ## Sample Link
 

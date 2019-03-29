@@ -9,7 +9,7 @@ documentation: ug
 
 # Null Value support
 
-DoubleTextBox accepts null values. To enable the null option you have to set the UseNullOption property to true. You can also set the NullValue property for the DoubleTextBox. When you set the null value to the Value property, by default the value of the NullValue (Default value is null)property will be assigned to the Value property. 
+DoubleTextBox accepts null values. To enable the null option you have to set the [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property to true. You can also set the NullValue property for the DoubleTextBox. When you set the null value to the [Value](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property, by default the value of the NullValue (Default value is null)property will be assigned to the Value property. 
 
 {% tabs %}
 {% highlight xaml %} 
@@ -28,11 +28,11 @@ doubleTextBox.NullValue = 1;
 {% endtabs %}
 
 
-In this sample, the NullValue (NullValue = 1) is set to the Value property of the DoubleTextBox because the default value of the Value property is null.
+In this sample, the NullValue (NullValue = 1) is set to the Value property of the DoubleTextBox because the default value of the [Value](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property is null.
 
 
 
-![](Null-Value-support_images/Null-Value-support_img1.png)
+![Null value support](Null-Value-support_images/Null-Value-support_img1.png)
 
 
 
@@ -55,11 +55,11 @@ UseNullOption="True" NullValue="{x:Null}"/>
 {% endtabs %}
 
 
-In this sample, the NullValue (NullValue = null) is set to the Value property of the DoubleTextBox. (Default value of the Value property is null).
+In this sample, the NullValue (NullValue = null) is set to the [Value](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property of the DoubleTextBox. (Default value of the Value property is null).
 
 
 
-![](Null-Value-support_images/Null-Value-support_img2.png)
+![Null value support](Null-Value-support_images/Null-Value-support_img2.png)
 
 
 

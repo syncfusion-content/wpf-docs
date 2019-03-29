@@ -11,11 +11,11 @@ documentation: ug
 
 ## MinValue
 
-Minimum allowed value for the CurrencyTextBox. If the new MinValue property value is greater than the MaxValue property value, then the MaxValue is set equal to the MinValue. If the Value is less than the new MinValue, then the Value property is also set equal to the MinValue.
+Minimum allowed value for the CurrencyTextBox. If the new [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MinValue.html) property value is greater than the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MaxValue.html) property value, then the MaxValue is set equal to the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MinValue.html). If the Value is less than the new MinValue, then the Value property is also set equal to the MinValue.
 
 ## MaxValue
 
-Maximum allowed value for the CurrencyTextBox. If the MinValue property is greater than the new MaxValue property, then the MinValue property value is set equal to the MaxValue. If the current Value is greater than the new MaxValue, then the Value property is set equal to the MaxValue.
+Maximum allowed value for the CurrencyTextBox. If the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MinValue.html) property is greater than the new [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MaxValue.html) property, then the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MinValue.html) property value is set equal to the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MaxValue.html). If the current Value is greater than the new [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MaxValue.html), then the Value property is set equal to the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MaxValue.html).
 
 ## MinValidation
 
@@ -67,12 +67,12 @@ currencyTextBox.MaxValueOnExceedMaxDigit = true;
 
 Initially there is no value assigned to the CurrencyTextBox. So it displays the default value as zero.
 
-![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)
+![Currency text box no value](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)
 
 MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only in the lost focus.
 
-![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)
+![Currency text box max value](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)
 
 MinValidation is set to OnKeyPress, so you cannot enter a value less than the MinValue. If you try to enter a value less than the MinValue, then the MinValue will be set to the Value property if the MinValueOnExceedMinDigit is set to true, otherwise it will not allow the key press.
 
-![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img4.png)
+![Currency text box min value](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img4.png)

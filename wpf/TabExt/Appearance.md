@@ -11,7 +11,7 @@ documentation: ug
 
 This section deals with the appearance of TabControlExt control and contains the following topic:
 
-![](Appearance_images/Appearance_img1.jpeg)
+![Appearance](Appearance_images/Appearance_img1.jpeg)
 
 ## Setting Visual Styles
 
@@ -115,25 +115,25 @@ SkinStorage.SetVisualStyle(tabControlExt, "Office2007Blue");
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img2.png)
+![Office2007 blue theme](Appearance_images/Appearance_img2.png)
 
-![](Appearance_images/Appearance_img3.png)
+![Office2007 black theme](Appearance_images/Appearance_img3.png)
 
-![](Appearance_images/Appearance_img4.png)
+![Office2007 silver theme](Appearance_images/Appearance_img4.png)
 
-![](Appearance_images/Appearance_img5.png)
+![Office2010 blue theme](Appearance_images/Appearance_img5.png)
 
-![](Appearance_images/Appearance_img6.png)
+![Office2010 black thee](Appearance_images/Appearance_img6.png)
 
-![](Appearance_images/Appearance_img7.png)
+![Office2010 silver theme](Appearance_images/Appearance_img7.png)
 
-![](Appearance_images/Appearance_img8.png)
+![VS2010 theme](Appearance_images/Appearance_img8.png)
 
-![](Appearance_images/Appearance_img9.jpeg)
+![Blend theme](Appearance_images/Appearance_img9.jpeg)
 
-![](Appearance_images/Appearance_img10.png)
+![Metro theme](Appearance_images/Appearance_img10.png)
 
-![](Appearance_images/Appearance_img11.png)
+![Custom theme](Appearance_images/Appearance_img11.png)
 
 ## Customization
 
@@ -141,50 +141,12 @@ The style of the TabControlExt control can be customized by the customization pr
 
 ### Customization Properties
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-TabItemSelectedBackground</td><td>
-Used to set the background color of the selected tab item.</td><td>
-Dependency property</td><td>
-Brush</td></tr>
-<tr>
-<td>
-TabItemSelectedBorderBrush</td><td>
-Used to set the border color of the selected tab item.</td><td>
-Dependency property</td><td>
-Brush</td></tr>
-<tr>
-<td>
-TabItemSelectedForeground</td><td>
-Used to set the foreground color of the selected tab item.</td><td>
-Dependency property</td><td>
-Brush</td></tr>
-<tr>
-<td>
-TabItemHoverBackground</td><td>
-Used to set the background color of the tab item in Hover state.</td><td>
-Dependency property</td><td>
-Brush</td></tr>
-<tr>
-<td>
-TabItemHoverBorderBrush</td><td>
-Used to set the border color of the tab item in Hover state.</td><td>
-Dependency property</td><td>
-Brush</td></tr>
-<tr>
-<td>
-TabItemHoverForeground</td><td>
-Used to set the foreground color of the tab item in Hover state.</td><td>
-Dependency property</td><td>
-Brush</td></tr>
-</table>
+* [TabItemSelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemSelectedBackground.html)
+* [TabItemSelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemSelectedBorderBrush.html)
+* [TabItemSelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemSelectedForeground.html)
+* [TabItemHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemHoverBackground.html)
+* [TabItemHoverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemHoverBorderBrush.html)
+* [TabItemHoverForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemHoverForeground.html)
 
 
 The following code example shows how to use the customization properties in the TabControlExt control.
@@ -216,4 +178,4 @@ The following code example shows how to use the customization properties in the 
 
 The following screenshot is the sample output for the above code example.
 
-![](Appearance_images/Appearance_img12.png)
+![TabControl customization](Appearance_images/Appearance_img12.png)

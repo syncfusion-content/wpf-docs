@@ -9,7 +9,7 @@ documentation: ug
 
 # CloseButton Support
 
-The CloseButton feature in TileViewItem allows you to hide or delete the TileViewItem based on the CloseMode. If you click on the CloseButton and the CloseMode is set to Hide, then the TileViewItem will move to Hidden State, and when the CloseMode is set to Delete, then the TileViewItem will be removed from the TileViewControl. By default, the visibility of the CloseButton is set to Collapsed. You can also change the style of the CloseButton using CloseButtonStyle property. 
+The CloseButton feature in TileViewItem allows you to hide or delete the TileViewItem based on the CloseMode. If you click on the CloseButton and the [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseMode.html) is set to Hide, then the TileViewItem will move to Hidden State, and when the [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseMode.html) is set to Delete, then the TileViewItem will be removed from the TileViewControl. By default, the visibility of the CloseButton is set to Collapsed. You can also change the style of the CloseButton using CloseButtonStyle property. 
 
 ## Use Case Scenarios
 
@@ -118,53 +118,12 @@ Background="White">
 
 {% endtabs %}
 
-![](CloseButton-Support_images/CloseButton-Support_img1.png)
+![Close button feature](CloseButton-Support_images/CloseButton-Support_img1.png)
 
-
-
-
-
-## Properties
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-CloseButtonVisibility</td><td>
-Specifies the Visibility of the CloseButton</td><td>
-DependencyProperty</td><td>
-Visibility.Collapsed</td><td>
-</td></tr>
-<tr>
-<td>
-CloseButtonStyle</td><td>
-Gets or sets the Style for the CloseButton</td><td>
-DependencyProperty</td><td>
-DefaultStyle</td><td>
-</td></tr>
-<tr>
-<td>
-CloseButtonMargin</td><td>
-Specifies the margin that can be used to set Margin for CloseButton</td><td>
-DependencyProperty</td><td>
-Thickness(0)</td><td>
-</td></tr>
-<tr>
-<td>
-CloseButtonBackground</td><td>
-Specifies the Color that can be used to set Background CloseButton</td><td>
-DependencyProperty</td><td>
--</td><td>
-</td></tr>
-</table>
+* [CloseButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonVisibility.html)
+* [CloseButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonStyle.html)
+* [CloseButtonMargin](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseButtonMargin.html)
+* CloseButtonBackground
 
 
 ## Sample Link
