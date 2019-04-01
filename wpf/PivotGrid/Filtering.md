@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering
-description: Filtering
+title: Filtering | PivotGrid | Syncfusion
+description: Support to display a filtered data which means a subset of data using filtering feature in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

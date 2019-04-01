@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Filtering in Pivot Grid
-description: Column filtering in pivot grid
+description: Support to extract a subset of records that meet certain criteria for column fields in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

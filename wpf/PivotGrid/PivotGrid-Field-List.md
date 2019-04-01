@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pivot Grid Field List
-description: Pivot grid field list
+title: Pivot Grid Field List | PivotGrid | Syncfusion
+description: Pivot grid field list allows end users to drag fields, filter and sort them, and create a pivot report at runtime.
 platform: wpf
 control: Pivot grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding
-description: Binding pivot grid to list and DataTable
+title: Data Binding | PivotGrid | Syncfusion
+description: Support to bind the data source as either list based collection or data table in PivotGrid | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug

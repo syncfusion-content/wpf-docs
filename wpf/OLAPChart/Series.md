@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Series
-description: Series
+title: Series | OLAP Chart | Syncfusion
+description: Information about the data points plotted in the rectangular co-ordinate system in OLAP Chart control.
 platform: wpf
 control: OLAP Chart
 documentation: ug

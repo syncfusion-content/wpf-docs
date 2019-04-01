@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hiding Subtotals
-description: Hiding subtotals
+title: Hiding Subtotals | PivotGrid | Syncfusion
+description: Support to show or hide the sub-totals in the pivot grid control based on various levels to hide row or columns subtotals alone.
 platform: wpf
 control: Pivot grid
 documentation: ug

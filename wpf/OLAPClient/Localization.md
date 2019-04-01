@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization of string resource
-description: Localization of string resource in OLAP Client
+title: Localization of string resource | OLAP Client | Syncfusion
+description: Support to localize the control with customizing data and resources for specific culture or language.
 platform: wpf
 control: OLAP Client
 documentation: ug

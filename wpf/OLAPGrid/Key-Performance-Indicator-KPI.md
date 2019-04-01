@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Key Performance Indicator KPI| OlapGrid | Wpf | Syncfusion
-description: key performance indicator (kpi)
+description: Information about KPI which is a collection of calculations that are associated with a measure group in a cube.
 platform: wpf
 control: OlapGrid
 documentation: ug

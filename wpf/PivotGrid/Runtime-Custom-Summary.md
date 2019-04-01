@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Summary
-description: Define custom summary in runtime and load time
+title: Custom Summary | PivotGrid | Syncfusion
+description: Support to set the custom summaries for the PivotItem values at both load time and runtime (using pivot computation info dialog).
 platform: wpf
 control: Pivot grid
 documentation: ug

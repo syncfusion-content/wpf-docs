@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print and Print Preview
-description: Print and print preview
+title: Print and Print Preview | PivotGrid | Syncfusion
+description: Print and print preview support in pivot grid control which provides the support to print control with grouping bar.
 platform: wpf
 control: Pivot grid
 documentation: ug

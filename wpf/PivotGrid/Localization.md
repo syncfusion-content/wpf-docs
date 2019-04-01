@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: Localization
+title: Localization | PivotGrid | Syncfusion
+description: Localization support for customizing data and resources for specific culture or language in PIvotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

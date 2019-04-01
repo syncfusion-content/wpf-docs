@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview 
+title: Overview | PivotGrid | Syncfusion
+description: Overview of the PivotGrid control which allows to learn about the working mechanism of control | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug

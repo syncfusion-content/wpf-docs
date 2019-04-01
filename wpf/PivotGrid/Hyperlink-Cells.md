@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hyperlink Cells
-description: Hyperlink cells
+title: Hyperlink Cells | PivotGrid | Syncfusion
+description: Hyperlink support to hyperlinking of cells to retrieve a detailed information about a particular cell.
 platform: wpf
 control: Pivot grid
 documentation: ug

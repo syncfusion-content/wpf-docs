@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip
-description: Tooltip
+title: Tooltip | PivotGrid | Syncfusion
+description: Support to display the cell value and it's row and column information while mouse overed on it in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

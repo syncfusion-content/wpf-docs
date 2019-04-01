@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualized Binding with Improved Performance
-description: Virtualized binding with improved performance
+title: Virtualized Binding with Improved Performance | PivotGrid | Syncfusion
+description: Virtualized binding with improved performance support to load a large set of records with high loading performance.
 platform: wpf
 control: Pivot grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel-like Filtering
-description: Excel-like filtering
+title: Excel-like Filtering | PivotGrid | Syncfusion
+description: Support to perform excel-like filtering and sorting in PivotGrid control at runtime using filter dialog.
 platform: wpf
 control: Pivot grid
 documentation: ug

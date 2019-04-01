@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend
-description: Legend
+title: Legend | OLAP Chart | Syncfusion
+description: Information about legends which are used to display the name of data series defined in OLAP Chart control.
 platform: wpf
 control: OLAP Chart
 documentation: ug
