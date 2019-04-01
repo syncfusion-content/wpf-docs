@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging| OlapGrid | Wpf | Syncfusion
-description: paging
+description: Support to load and render the large amounts of data without any performance constraints in OLAP Grid control.
 platform: wpf
 control: OlapGrid
 documentation: ug

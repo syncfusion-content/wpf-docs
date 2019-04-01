@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Theming
-description: Theming
+title: Theming | OLAP Client | Syncfusion
+description: Support to apply various visual styles such as Office 2010, Office 2007, Blend, Metro, Office 2003, etc., | Syncfusion
 platform: wpf
 control: OLAP Client
 documentation: ug

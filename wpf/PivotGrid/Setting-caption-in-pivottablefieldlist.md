@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting caption in PivotTableFieldList
-description: Setting caption in PivotTableFieldList
+title: Setting caption in PivotTableFieldList | PivotGrid | Syncfusion
+description: Support to duplicate the same fields in different names by setting the caption in PivotTableFieldList.
 platform: wpf
 control: Pivot grid
 documentation: ug

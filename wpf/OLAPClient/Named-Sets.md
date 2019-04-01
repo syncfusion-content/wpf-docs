@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Named Sets
-description: Named sets
+title: Named Sets | OLAP Client | Syncfusion
+description: Information about a collection of tuples and members, which can be defined and saved as a part of the cube definition.
 platform: wpf
 control: OLAP Client
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pivot Schema Designer for Pivot Grid
-description: Pivot schema designer for pivot grid
+title: Pivot Schema Designer | Pivot Grid | Syncfusion
+description: Pivot schema designer for pivot grid controls which allows to interact with pivot items at runtime. | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug

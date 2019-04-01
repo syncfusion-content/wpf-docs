@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip| OlapGrid | Wpf | Syncfusion
-description: tooltip
+description: Support to display the member information within a tooltip when the mouse pointer is moved over the grid cells.
 platform: wpf
 control: OlapGrid
 documentation: ug

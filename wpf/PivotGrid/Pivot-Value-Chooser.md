@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pivot Value Chooser
-description: Pivot value chooser
+title: Pivot Value Chooser | PivotGrid | Syncfusion
+description: Pivot value chooser in pivot grid control which allows to add or delete the pivot value fields at runtime.
 platform: wpf
 control: Pivot grid
 documentation: ug

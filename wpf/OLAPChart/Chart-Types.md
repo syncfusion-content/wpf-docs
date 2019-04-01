@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Types
-description: Chart types
+title: Chart Types | OLAP Chart | Syncfusion
+description: Information about various chart types such as column, bar, line, area, etc., provided in OLAP Chart control.
 platform: wpf
 control: OLAP Chart
 documentation: ug

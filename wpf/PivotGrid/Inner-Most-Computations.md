@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inner Most Computations
-description: Display grid with inner most computations
+description: Support to display the grid with inner most computations alone without displaying the total values.
 platform: wpf
 control: Pivot grid
 documentation: ug

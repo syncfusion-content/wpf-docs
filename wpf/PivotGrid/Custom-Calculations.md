@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Calculations
-description: Custom calculations
+title: Custom Calculations | PivotGrid | Syncfusion
+description: Information about pivot calculation items used in PivotGrid control to specify the type of calculation.
 platform: wpf
 control: Pivot grid
 documentation: ug

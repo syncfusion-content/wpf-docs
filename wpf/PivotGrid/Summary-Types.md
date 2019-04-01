@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary Types
-description: Summary types
+title: Summary Types | PivotGrid | Syncfusion
+description: Define different type of summaries such as Count, Sum, Average, etc., for pivot calculation items used in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

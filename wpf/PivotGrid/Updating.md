@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Updating Values in Pivot Grid
-description: Updating values in pivot grid
+title: Updating Values | Pivot Grid | Syncfusion
+description: Support to perform the real time updates for the values at run-time in pivot grid control. | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug

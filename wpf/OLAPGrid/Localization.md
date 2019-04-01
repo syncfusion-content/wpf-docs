@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RTL Support| OlapGrid | Wpf | Syncfusion
-description: rtl support
+description: Support to allow users to localize the control to a specific locale and supports "resx" based localization.
 platform: wpf
 control: OlapGrid
 documentation: ug

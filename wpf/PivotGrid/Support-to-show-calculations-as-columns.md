@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Calculations in Column Headers
-description: Display calculations in column headers
+title: Display Calculations in Column Headers | PivotGrid | Syncfusion
+description: Support to show the calculation values either in row or column based on user need in pivot grid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

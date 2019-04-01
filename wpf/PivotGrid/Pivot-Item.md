@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pivot Item
-description: Pivot item
+title: Pivot Item | PivotGrid | Syncfusion
+description: Information about pivot items used in pivot grid control which in a pivot table field provides the information needed to define an item.
 platform: wpf
 control: Pivot grid
 documentation: ug

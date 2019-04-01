@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting events
-description: Sorting events in pivotgrid
+title: Sorting events | PivotGrid | Syncfusion
+description: Support to keep tracking of the sorter value fields, which is invoked before and after the sort operation.
 platform: wpf
 control: Pivot grid
 documentation: ug
