@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Binding PivotSchemaDesigner to Pivot Grid
-description: Binding pivotschemadesigner to pivot grid
+description: Binding PivotSchemaDesigner which allows end users to drag fields, filter and sort them, and create a pivot report at runtime.
 platform: wpf
 control: Pivot grid
 documentation: ug

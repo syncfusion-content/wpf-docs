@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Calculated Field
-description: To insert calculated field at run-time
+title: Calculated Field | PivotGrid | Syncfusion
+description: Support to insert a new calculated field at run-time based on existing calculation items | PivotGrid | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Defining grouping bar Properties for Pivot Grid
-description: Defining grouping bar properties for pivot grid control
+description: Support to perform sorting, filtering, and summarizing of data the way a user wants at runtime using GroupingBar.
 platform: wpf
 control: Pivot grid
 documentation: ug

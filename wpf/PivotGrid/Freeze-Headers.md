@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Freeze Headers
-description: Freeze headers
+title: Freeze Headers | PivotGrid | Syncfusion
+description: Built-in support for freezing column and row headers for better viewing of value cells in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

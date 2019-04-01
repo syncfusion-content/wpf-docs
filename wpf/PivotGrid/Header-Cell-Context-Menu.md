@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand/Collapse Rows and Columns
-description: Expand/collapse rows and columns through context menu
+description: Support to view the detailed data (drill down) or to view the summarized data (drill up) in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

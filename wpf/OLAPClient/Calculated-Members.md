@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Calculated Members and Measures
-description: Calculated members and measures
+title: Calculated Members and Measures | OLAP Client | Syncfusion
+description: Support to users to define measures and members using the calculated member editor in OLAP Client | Syncfusion
 platform: wpf
 control: OLAP Client
 documentation: ug

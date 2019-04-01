@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RowPivotsOnly Mode in Pivot Grid control
-description: Defining rowpivotsonly mode for pivot grid control
+description: Apply RowPivotsOnlyMode which means shows the row header cells and column header cells as value cells in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

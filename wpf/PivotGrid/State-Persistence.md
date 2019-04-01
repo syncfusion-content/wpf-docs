@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence
-description: State persistence
+title: State Persistence | PivotGrid | Syncfusion
+description: Support to maintain the collapsed or expanded state when the corresponding schema items are changed in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

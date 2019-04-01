@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axes of OLAP Chart Area
-description: Axes of OLAP chart area
+title: Axes of OLAP Chart Area | OLAP Chart | Syncfusion
+description: Information about primary axis and secondary axis support provided in OLAP Chart control | Syncfusion
 platform: wpf
 control: OLAP Chart
 documentation: ug

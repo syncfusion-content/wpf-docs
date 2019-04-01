@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: Localization
+title: Localization | OLAP Chart | Syncfusion
+description: Support to localize the control to a specific locale based on current culture | OLAP Chart | Syncfusion
 platform: wpf
 control: OLAP Chart
 documentation: ug

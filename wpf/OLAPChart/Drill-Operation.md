@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drill Operation
-description: Drill operation
+title: Drill Operation | OLAP Chart | Syncfusion
+description: Support to access the detailed level of data (drill down) or to access the summarized data (drill up) in OLAP Chart control.
 platform: wpf
 control: OLAP Chart
 documentation: ug

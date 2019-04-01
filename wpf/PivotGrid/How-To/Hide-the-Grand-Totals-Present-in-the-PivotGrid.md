@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 144-Hide-the-Grand-Totals-Present-in-the-PivotGrid
-description:         1.4.4 hide the grand totals present in the pivotgrid?
+description: Section that helps to know how to show or hide the grand totals present in pivot grid control. | Syncfusion
 platform: wpf
 control: PivotGridControl
 documentation: ug

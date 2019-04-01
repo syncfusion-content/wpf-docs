@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid Layout
-description: Grid layout
+title: Grid Layout | PivotGrid | Syncfusion
+description: Different grid layouts including normal and top summary layouts with respect to summaries for PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

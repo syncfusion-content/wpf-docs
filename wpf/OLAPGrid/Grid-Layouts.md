@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Layouts| OlapGrid | Wpf | Syncfusion
-description: grid layouts
+description: Information about various grid layouts such as Normal, Excel-like, Top summary and No summaries in OLAP Grid control.
 platform: wpf
 control: OlapGrid
 documentation: ug

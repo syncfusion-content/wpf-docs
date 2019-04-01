@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection
-description: Selection process in pivot grid
+title: Selection | PivotGrid | Syncfusion
+description: Support to select entire row or column and group of cells with or without header cells similar to cell selection in MS Excel.
 platform: wpf
 control: Pivot grid
 documentation: ug
