@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting
-description: Sorting
+title: Sorting | PivotGrid | Syncfusion
+description: Support to quickly visualize, understand, organize, and find data either in ascending or descending order.
 platform: wpf
 control: Pivot grid
 documentation: ug

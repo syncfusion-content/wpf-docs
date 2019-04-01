@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hyperlink Cells| OlapGrid | Wpf | Syncfusion
-description: hyperlink cells
+description: Support to hyperlinking of cells to retrieve a detailed information about a particular cell in OLAP Grid control.
 platform: wpf
 control: OlapGrid
 documentation: ug

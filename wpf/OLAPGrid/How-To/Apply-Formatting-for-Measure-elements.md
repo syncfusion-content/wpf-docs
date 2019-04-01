@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Apply Formatting for Measure and Value Elements
-description: To apply formatting for the measure and value elements in olap grid.
+title: Apply Formatting for Measure and Value Elements | OLAP Grid | Syncfusion
+description: Section helps to know how to apply formatting for the measure and value elements in olap grid. | Syncfusion
 platform: wpf
 control: OlapGrid
 documentation: ug

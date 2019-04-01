@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing the Value and Total Cells in Pivot Grid
-description: Editing the value and total cells in pivot grid
+title: Editing the Value and Total Cells in Pivot Grid | Syncfusion
+description: Support to edit the value cells and total cells at run-time in pivot grid control. | WPF | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug

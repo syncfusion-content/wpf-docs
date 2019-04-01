@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multicolumn Sorting
-description: Multicolumn sorting
+title: Multicolumn Sorting | PivotGrid | Syncfusion
+description: Multicolumn sorting support in pivot grid control which allows to sort the fields one after the other.
 platform: wpf
 control: Pivot grid
 documentation: ugHe

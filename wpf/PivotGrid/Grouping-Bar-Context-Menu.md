@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping Bar Context Menu
-description: Grouping bar context menu
+title: Grouping Bar Context Menu | PivotGrid | Syncfusion
+description: Context menu which provides various options such as reload data, show field list and ordering in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

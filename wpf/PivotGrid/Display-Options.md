@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Display Options
-description: Display options for calculation values in pivotgrid
+description: Support for the PivotComputationInfo to display calculation values in preferred areas of the pivot grid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

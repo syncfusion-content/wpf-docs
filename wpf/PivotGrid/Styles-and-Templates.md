@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles and Templates for Grid Cells
-description: Styles and templates for grid cells
+title: Styles and Templates for Grid Cells | PivotGrid | Syncfusion
+description: Styles and templates for grid cells including column, row, summary and value cells in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

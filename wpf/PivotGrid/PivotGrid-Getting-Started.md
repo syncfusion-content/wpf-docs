@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pivot Grid Getting Started
-description: Pivot grid getting started
+title: Pivot Grid Getting Started | Syncfusion
+description: Section helps to know how to start working with pivot grid control by creating a simple application for end users.
 platform: wpf
 control: Pivot grid
 documentation: ug

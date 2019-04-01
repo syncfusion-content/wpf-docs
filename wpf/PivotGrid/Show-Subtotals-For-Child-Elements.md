@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SubTotals For Child Elements
-description: SubTotals for child elements
+title: SubTotals For Child Elements | PivotGrid | Syncfusion
+description: Support to display the subtotals based on the child elements available in rows and columns in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

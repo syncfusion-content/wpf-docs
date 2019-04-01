@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change Chart Type for Specific Series
-description: Change the chart type for specific series
+title: Change Chart Type for Specific Series | OlapChart | Syncfusion
+description: Support to change the chart type for specific series based on user need in OLAP Chart control | Syncfusion
 platform: wpf
 control: OLAP Chart
 documentation: ug

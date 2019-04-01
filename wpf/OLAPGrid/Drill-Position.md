@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drill Position| OlapGrid | Wpf | Syncfusion
-description: drill position
+description: Support to drill only the current position of the selected member by using MDX query in OLAP Grid control.
 platform: wpf
 control: OlapGrid
 documentation: ug

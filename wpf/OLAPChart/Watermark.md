@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark
-description: Watermark
+title: Watermark | OLAP Chart | Syncfusion
+description: Support is used to show text, image, or both as a watermark inside the chart area. | OLAP Chart | Syncfusion
 platform: wpf
 control: OLAP Chart
 documentation: ug

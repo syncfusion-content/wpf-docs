@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional formatting using gradient color scales | Syncfusion
-description: Conditional formatting using gradient color scales
+description: Apply conditional formatting to format the value cells using gradient color scales in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

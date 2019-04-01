@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context Menu
-description: Context menu
+title: Context Menu | PivotGrid | Syncfusion
+description: Context menu which provides various options such as allow filtering, allow sorting, etc., in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

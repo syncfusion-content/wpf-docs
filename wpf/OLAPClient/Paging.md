@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging
-description: Paging
+title: Paging | OLAP Client | Syncfusion
+description: Support to load and render the large amount of data without any performance constraint in OLAP Client control.
 platform: wpf
 control: OLAP Client
 documentation: ug

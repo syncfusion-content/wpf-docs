@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right to Left Support
-description: Right to left support
+title: Right to Left Support | PivotGrid | Syncfusion
+description: Right to left support helps to display the contents of the grid from right-to-left in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting of Rows and Columns
-description: Sorting of rows and columns in OLAP client
+title: Sorting of Rows and Columns | OLAP Client | Syncfusion
+description: Support to sort the results by rows or columns in ascending or descending order in OLAP client | Syncfusion
 platform: wpf
 control: OLAP Client
 documentation: ug
