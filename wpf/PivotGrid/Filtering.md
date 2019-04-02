@@ -103,11 +103,11 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Filtering-by-values-images/PivotGrid shows the filtered values.png)
+![To filter the data values by using filter expression](Filtering-by-values-images/PivotGrid shows the filtered values.png)
 
 ## Filtering by using filter pop-up
 
 Filters can also be applied to pivot grid control at runtime using the filter pop-up. This filter pop-up can be opened by clicking the filter button in the grouping bar item. The filter pop-up contains the filter list in which you can uncheck the items that are to be filtered and click OK.
 This, in turns, creates a FilterExpression at runtime by using the unchecked items and applies the filters to the pivot grid control.
 
-![](Filtering-by-values-images/PivotGrid with FilterPopup.png)
+![To filter the data values by using filter popup](Filtering-by-values-images/PivotGrid with FilterPopup.png)

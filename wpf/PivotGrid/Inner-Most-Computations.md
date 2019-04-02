@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inner Most Computations
+title: Inner Most Computations | Syncfusion
 description: Support to display the grid with inner most computations alone without displaying the total values.
 platform: wpf
 control: Pivot grid
@@ -57,4 +57,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly-images/Innermost Computation only in PivotGrid.png)
+![Displaying the pivot grid without total values](Features-in-RowPivotsOnly-images/Innermost Computation only in PivotGrid.png)

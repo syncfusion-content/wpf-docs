@@ -34,9 +34,9 @@ N> The folder name should strictly be "Resources".
 
 2. Right-click the Resources folder to create a new resource file in the Visual Studio project. Go to **Add** > **New Item**.
 
-![](Localization_images/Localization_img54.png)
+![Adding the new resource file](Localization_images/Localization_img54.png)
 
-![](Localization_images/Localization_img55.png)
+![Define the resource file name](Localization_images/Localization_img55.png)
 
 3. Select "Resources File" from the list. Then, name the resource file: Syncfusion.OlapGrid.WPF.ar-AE.resx and click **Add**.
 
@@ -87,7 +87,7 @@ Me.olapGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 {% endtabs %}
 
-![](Localization_images/Localization_img53.png)
+![Localized OlapGrid and also display the data from right to left](Localization_images/Localization_img53.png)
 
 A sample is locally available in the following location.
 

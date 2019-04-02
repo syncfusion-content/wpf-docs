@@ -82,10 +82,10 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-![](Sorting-Images/Not Sorted PivotGrid.png)
+![PivotGrid without sorting](Sorting-Images/Not Sorted PivotGrid.png)
 
 _PivotGrid without ReverseOrderComparer_
 
-![](Sorting-Images/Sorted PivotGrid.png)
+![Sorted PivotGrid](Sorting-Images/Sorted PivotGrid.png)
 
 _PivotGrid with ReverseOrderComparer_

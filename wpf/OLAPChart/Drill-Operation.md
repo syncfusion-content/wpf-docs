@@ -17,7 +17,7 @@ Drill down, also called roll down, is the reverse of drill up. It navigates from
 
 While binding hierarchical dimensions (for example, the time dimension includes three levels namely year, quarter, and month), the chart allows you to visualize the data for different levels by using the collapsible labels. This is illustrated in the following screenshot.
 
-![](Drill-operation_images/Drill-operation_img1.png)
+![OlapChart supports to visualize the data in both abstract and detailed views](Drill-operation_images/Drill-operation_img1.png)
 
 A sample demo is available at the following location.
 
@@ -69,7 +69,7 @@ Me.olapchart1.OlapDataManager.CurrentReport.ShowExpanders = False
 
 The following image shows an OLAP chart without expanders.
 
-![](Drill-operation_images/Drill-operation_img2.png)
+![To hide the expanders in OlapChart](Drill-operation_images/Drill-operation_img2.png)
 
 N> Since the `ShowExpanders` property interacts with the OlapDataManager, you need to assign this property before you call the DataBind() method in the OLAP chart.
 

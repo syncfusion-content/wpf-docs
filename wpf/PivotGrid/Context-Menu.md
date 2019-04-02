@@ -38,4 +38,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly-images/PivotGrid shows Context menu.png)
+![Displaying the context menu](Features-in-RowPivotsOnly-images/PivotGrid shows Context menu.png)

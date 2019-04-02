@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent Grouping of Specific Pivot Item
+title: Prevent Grouping of Specific Pivot Item | Syncfusion
 description: Support to prevent the drag and drop of certain pivot items in the pivot schema designer or grouping bar.
 platform: wpf
 control: Pivot grid
@@ -84,4 +84,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/Grouping bar with disabled grouping fields.png)
+![To disable the background color of specific grouping bar items](Grouping-Bar-Images/Grouping bar with disabled grouping fields.png)

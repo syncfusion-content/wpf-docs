@@ -37,7 +37,7 @@ Dim formattedMDXQuery As String = "WITH MEMBER [Measures].[Customers] As [Measur
 
 {% endtabs %}
 
-![](Styling-and-Formatting-using-MDX-query-images/Formatted_Grid.png)
+![To format the OlapGrid using MDX query](Styling-and-Formatting-using-MDX-query-images/Formatted_Grid.png)
 
 A sample demo is available at the following location:
 

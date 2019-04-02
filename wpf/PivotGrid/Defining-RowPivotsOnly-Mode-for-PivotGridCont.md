@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RowPivotsOnly Mode in Pivot Grid control
+title: RowPivotsOnly Mode in Pivot Grid control | Syncfusion
 description: Apply RowPivotsOnlyMode which means shows the row header cells and column header cells as value cells in PivotGrid control.
 platform: wpf
 control: Pivot grid
@@ -55,4 +55,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly-images/PivotGrid when RowPivotsOnly mode is enabled.png)
+![RowPivotsOnly mode enabled in the pivotGrid](Features-in-RowPivotsOnly-images/PivotGrid when RowPivotsOnly mode is enabled.png)

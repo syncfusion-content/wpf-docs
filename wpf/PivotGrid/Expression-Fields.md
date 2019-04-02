@@ -162,4 +162,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Expression-Field-Images/PivotGrid shows expression fields.png)
+![Adding the expression fields in PivotGrid](Expression-Field-Images/PivotGrid shows expression fields.png)

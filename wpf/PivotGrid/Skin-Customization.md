@@ -93,4 +93,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Skin-Customization-Images/PivotGrid shows customized visual style.png)
+![PivotGrid shows customized visual style](Skin-Customization-Images/PivotGrid shows customized visual style.png)

@@ -15,7 +15,7 @@ You can create and place the resource files in a separate location in the user a
 
 For this, first create a resource file for our OLAP client control and translate the strings to your culture. Basically, the OLAP client contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and Tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize the necessary strings available in those assemblies. Once it is translated, you might use the resources in your projects by setting the corresponding culture in your application.
 
-![](Localization_images/Localization_img1.png)
+![Adding the localized string in resource file](Localization_images/Localization_img1.png)
 
 Refer to the following code sample.
 
@@ -68,7 +68,7 @@ Me.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
 {% endtabs %}
 
-![](Localization_images/Localization_img2.png)
+![Localized Olapclient and also display the data from right to left](Localization_images/Localization_img2.png)
 
 A sample demo is available at the following location.
 
