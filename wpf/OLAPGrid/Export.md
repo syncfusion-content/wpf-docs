@@ -46,7 +46,7 @@ Me.OlapGrid1.ExportToExcel("fileName")
 {% endtabs %}
 
 
-![Exports OlapGrid into excel document](Export_images/Export_img1.png)
+![Exports OlapGrid into excel document](Exporting_images/Export_img1.png)
 
 
 
@@ -88,7 +88,7 @@ Me.OlapGrid1.ExportToWord("fileName")
 
 
 
-![Exports OlapGrid into word document](Export_images/Export_img2.png)
+![Exports OlapGrid into word document](Exporting_images/Export_img2.png)
 
 
 ## PDF export
@@ -128,7 +128,7 @@ Me.OlapGrid1.ExportToPdf("fileName")
 
 
 
-![Exports OlapGrid into pdf document](Export_images/Export_img3.png)
+![Exports OlapGrid into pdf document](Exporting_images/Export_img3.png)
 
 
 The format state of grid is maintained on exported documents. 
@@ -252,7 +252,7 @@ End If
 
 
 
-![Exports OlapGrid into CSV document](Export_images/Export_img4.png)
+![Exports OlapGrid into CSV document](Exporting_images/Export_img4.png)
 
 
 ### Sample link

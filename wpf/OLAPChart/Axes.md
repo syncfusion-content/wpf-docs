@@ -77,7 +77,7 @@ To display the ‘%’ symbol in the secondary axis, you should set the secondar
 
 {% endhighlight %}
 
-![To display the % symbol in the secondary axis](Axes_images/Axes_img3.png)
+![To display the percentage symbol in the secondary axis](Axes_images/Axes_img3.png)
 
 To display the currency symbol in the secondary axis, you should set the secondary axis label format property. The following code sample describes the usage of currency in the secondary axis label.
 
