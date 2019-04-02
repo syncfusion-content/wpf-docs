@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding PivotSchemaDesigner to Pivot Grid
+title: Binding PivotSchemaDesigner to Pivot Grid | PivotGrid | Syncfusion
 description: Binding PivotSchemaDesigner which allows end users to drag fields, filter and sort them, and create a pivot report at runtime.
 platform: wpf
 control: Pivot grid

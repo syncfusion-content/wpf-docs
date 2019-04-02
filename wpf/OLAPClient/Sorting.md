@@ -16,19 +16,19 @@ The sorting tab in the Filtering and Sorting dialog box provides an option to so
 
 Filtering and Sorting dialog box for rows or columns can be opened by clicking the corresponding icon in the toolbar.
 
-![](Sorting_images/Sorting_img1.png)
+![Row sorting option is selected in OlapClient toolbar](Sorting_images/Sorting_img1.png)
 
 Sorting by row
 {:.caption}
 
-![](Sorting_images/Sorting_img2.png)
+![Column sorting option is selected in OlapClient toolbar](Sorting_images/Sorting_img2.png)
 
 Sorting by column
 {:.caption}
 
 The following screenshot displays the sorting tab in the Filtering and Sorting dialog box.
 
-![](Sorting_images/Sorting_img3.png)
+![Sorting tab is selected in filtering and sorting dialog](Sorting_images/Sorting_img3.png)
 
 The options in the sorting tab are as follows:
 

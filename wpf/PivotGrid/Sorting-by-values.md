@@ -91,25 +91,25 @@ public partial class MainWindow: Window {
 
 **All** is used to enable sorting for all the value columns of pivot grid.
 
-![](Sorting-Images/Sorted PivotGrid when using All option.png)
+![To enable sorting for all columns in pivot grid](Sorting-Images/Sorted PivotGrid when using All option.png)
 
 ## Sorting all columns other than total and grand total columns
 
 **ColumnSorting** is used to enable sorting for all the value columns other than subtotal and grand total of the pivot grid.
 
-![](Sorting-Images/Sorted PivotGrid when using Column sorting option.png)
+![To enable sorting for value columns only in pivot grid](Sorting-Images/Sorted PivotGrid when using Column sorting option.png)
 
 ## Sorting only subtotal columns
 
 **TotalSorting** is used to enable sorting only for the subtotal columns of pivot grid.
 
-![](Sorting-Images/Sorted PivotGrid when using Total Sorting.png)
+![To enable sorting for subtotal columns only in pivot grid](Sorting-Images/Sorted PivotGrid when using Total Sorting.png)
 
 ## Sorting only grand total columns
 
 **GrandTotalSorting** is used to enable sorting only for the grand total columns of the pivot grid.
 
-![](Sorting-Images/Sorted PivotGrid when using GrandTotal Sorting option.png)
+![To enable sorting for grand total columns only in pivot grid](Sorting-Images/Sorted PivotGrid when using GrandTotal Sorting option.png)
 
 ## Disable sorting
 

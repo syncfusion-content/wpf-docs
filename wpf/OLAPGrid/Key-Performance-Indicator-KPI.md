@@ -78,7 +78,7 @@ End Function
  
 {% endtabs %}
 
-![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png)
+![OlapGrid with KPI](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png)
 
 A sample demo is available in the following location.
 

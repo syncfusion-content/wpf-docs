@@ -182,4 +182,4 @@ public partial class MainWindow: Window {
 
 To set custom summary at runtime, double-click the items from the pivot schema designer that will pop-up the pivot computation information dialog box. In the summarize value by combo box, you can select the predefined custom summaries as required.
 
-![](RunTime-custom-summary-images/PivotGrid with custom summaries.png)
+![PivotGrid with custom summaries](RunTime-custom-summary-images/PivotGrid with custom summaries.png)

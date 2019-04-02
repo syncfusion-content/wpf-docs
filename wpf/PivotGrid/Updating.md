@@ -137,4 +137,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Updating-Images/PivotGrid with updated values.png)
+![PivotGrid with updated values](Updating-Images/PivotGrid with updated values.png)

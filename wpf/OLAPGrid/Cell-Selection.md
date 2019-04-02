@@ -82,7 +82,7 @@ End Sub
 
 {% endtabs %}
 
-![](Cell-Selection_images/Cell-Selection_img1.png)
+![Cell selection in OlapGrid](Cell-Selection_images/Cell-Selection_img1.png)
 
 A sample demo is available in the following location.
 

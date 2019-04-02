@@ -36,7 +36,7 @@ Me.OlapGrid1.FreezeHeaders = True
 
 {% endtabs %}
 
-![](Freeze-Headers_images/Freeze-Headers_img1.png)
+![Enables the freeze headers in OlapGrid](Freeze-Headers_images/Freeze-Headers_img1.png)
 
 A sample demo is available in the following location.
 

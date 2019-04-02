@@ -81,4 +81,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/Grouping bar context menu.png)
+![To enable the context menu options for grouping bar items](Grouping-Bar-Images/Grouping bar context menu.png)

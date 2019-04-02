@@ -34,9 +34,9 @@ N> The folder name should strictly be "Resources".
 
 Now, right-click the resources folder to create a new resource file in the Visual Studio project. Navigate to Add > New Item.
 
-![](Localization_images/Localization_img1.png)
+![Adding the new resource file](Localization_images/Localization_img1.png)
 
-![](Localization_images/Localization_img2.png)
+![Define the resource file name](Localization_images/Localization_img2.png)
 
 Select "Resources File" from the list. Then, name the resource file as Syncfusion.OlapChart.WPF.ar-AE.resx and click Add.
 
@@ -87,7 +87,7 @@ Me.olapChart.FlowDirection = System.Windows.FlowDirection.RightToLeft
 
 {% endtabs %}
   
-![](Localization_images/Localization_img3.png)
+![OlapChart displays the data from right to left](Localization_images/Localization_img3.png)
   
 A sample demo is available at the following location.
 

@@ -85,4 +85,4 @@ public partial class MainWindow: Window {
 
 You can enable or disable the `ShowCalculationsAsColumns` property through the "Show Calculations as column" checkbox of the pivot schema designer. To view the calculation values in row, uncheck the "Show Calculations as column" checkbox.
 
-![](PivotSchemaDesigner-Images/Layout section.png)
+![Layout section](PivotSchemaDesigner-Images/Layout section.png)
