@@ -56,10 +56,10 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/PivotGrid Shows Grouping Bar.png)
+![PivotGrid with Grouping Bar](Grouping-Bar-Images/PivotGrid Shows Grouping Bar.png)
 
 _PivotGrid with Grouping Bar_
 
-![](Grouping-Bar-Images/PivotGrid without grouping bar.png)
+![PivotGrid without Grouping Bar](Grouping-Bar-Images/PivotGrid without grouping bar.png)
 
 _PivotGrid without Grouping Bar_

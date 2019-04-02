@@ -41,7 +41,7 @@ Me.OlapGrid1.Layout = GridLayout.Normal
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img1.png)
+![OlapGrid in normal layout](Grid-Layouts_images/Grid-Layouts_img1.png)
 
 **Excel-like layout**
 
@@ -65,7 +65,7 @@ Me.OlapGrid1.Layout = GridLayout.ExceLikeLayout
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img2.png)
+![OlapGrid in ExceLikeLayout](Grid-Layouts_images/Grid-Layouts_img2.png)
 
 **Excel-like layout with member properties**
 
@@ -91,7 +91,7 @@ Me.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img3.png)
+![OlapGrid in ExceLikeLayout with member properties](Grid-Layouts_images/Grid-Layouts_img3.png)
 
 **Normal top summary layout**
 
@@ -115,7 +115,7 @@ Me.OlapGrid1.Layout = GridLayout.NormalTopSummary
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img4.png)
+![OlapGrid in NormalTopSummary layout](Grid-Layouts_images/Grid-Layouts_img4.png)
 
 **No summaries layout**
 
@@ -139,7 +139,7 @@ Me.OlapGrid1.Layout = GridLayout.NoSummaries
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img5.png)
+![OlapGrid in NoSummaries layout](Grid-Layouts_images/Grid-Layouts_img5.png)
 
 A sample demo is available in the following location.
 

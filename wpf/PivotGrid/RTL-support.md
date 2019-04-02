@@ -79,4 +79,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Localization-Images/PivotGrid Shows RTL support.png)
+![PivotGrid displays the data from right to left](Localization-Images/PivotGrid Shows RTL support.png)

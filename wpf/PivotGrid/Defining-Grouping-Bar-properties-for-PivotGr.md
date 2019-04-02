@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Defining grouping bar Properties for Pivot Grid
+title: Defining grouping bar Properties for Pivot Grid | Syncfusion
 description: Support to perform sorting, filtering, and summarizing of data the way a user wants at runtime using GroupingBar.
 platform: wpf
 control: Pivot grid
@@ -83,7 +83,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/PivotGrid with customized grouping bar.png)
+![Define the Background color for entire GroupingBar](Grouping-Bar-Images/PivotGrid with customized grouping bar.png)
 
 **ItemsBackground**
 
@@ -139,7 +139,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/PivotGrid with customized items background.png)
+![Define the Background color for GroupingBar items](Grouping-Bar-Images/PivotGrid with customized items background.png)
 
 **AllowFiltering**
 
@@ -197,7 +197,7 @@ public partial class MainWindow: Window {
 
 The following screenshot shows the pivot grid without the filtering icons.
 
-![](Grouping-Bar-Images/PivotGrid without filter icons in grouping bar.png)
+![Display the PivotGrid without filter icon](Grouping-Bar-Images/PivotGrid without filter icons in grouping bar.png)
 
 **AllowSorting**
 
@@ -255,7 +255,7 @@ public partial class MainWindow: Window {
 
 The following screenshots shows the pivot grid without the sorting icons.
 
-![](Grouping-Bar-Images/PivotGrid without sorting icons.png)
+![Display the PivotGrid without sorting icon](Grouping-Bar-Images/PivotGrid without sorting icons.png)
 
 **AllowRemove**
 
@@ -313,4 +313,4 @@ public partial class MainWindow: Window {
 
 The following screenshot shows the pivot grid with remove, filter, and sort icons.
 
-![](Grouping-Bar-Images/PivotGrid shows grouping bar with remove icons.png)
+![Display the PivotGrid with remove icon](Grouping-Bar-Images/PivotGrid shows grouping bar with remove icons.png)

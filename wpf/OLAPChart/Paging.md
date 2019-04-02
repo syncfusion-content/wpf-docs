@@ -146,9 +146,9 @@ End Namespace
 
 {% endtabs %}
 
-![](Paging_images/Paging_img1.png)
+![OlapPager in OlapChart control](Paging_images/Paging_img1.png)
 
-![](Paging_images/Paging_img2.png)
+![Page Setting Window](Paging_images/Paging_img2.png)
 
 A sample demo is available at the following location.
 

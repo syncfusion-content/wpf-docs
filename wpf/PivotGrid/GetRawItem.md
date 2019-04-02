@@ -30,4 +30,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](GetRawItem-images/PivotGrid shows Raw Item.png)
+![Getting the list of raw items for specific cells](GetRawItem-images/PivotGrid shows Raw Item.png)

@@ -79,10 +79,10 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](State-Persistence-images/PivotGrid with state persistence enabled.png)
+![PivotGrid with collapsed Bike](State-Persistence-images/PivotGrid with state persistence enabled.png)
 
 _PivotGrid with collapsed "Bike"_
 
-![](State-Persistence-images/PivotGrid with state persistence enabled 1.png)
+![PivotGrid maintaining collapsed state of Bike after Schema change](State-Persistence-images/PivotGrid with state persistence enabled 1.png)
 
 _PivotGrid maintaining collapsed state of "Bike" after Schema change_

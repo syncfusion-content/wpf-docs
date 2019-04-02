@@ -62,4 +62,4 @@ public partial class MainWindow: Window
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly-images/PivotGrid shows Value chooser window.png)
+![Pivot value chooser window](Features-in-RowPivotsOnly-images/PivotGrid shows Value chooser window.png)

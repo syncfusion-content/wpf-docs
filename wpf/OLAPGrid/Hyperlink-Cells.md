@@ -98,11 +98,11 @@ End Sub
 
 {% endtabs %}
 
-![](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)
+![Hyperlink is enabled for value cells in OlapGrid](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)
 
-![](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)
+![Hyperlink is enabled for column header cells in OlapGrid](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)
 
-![](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)
+![Hyperlink is enabled for row header cells in OlapGrid](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)
 
 A sample demo is available in the following location.
 

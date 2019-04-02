@@ -127,4 +127,4 @@ To achieve this, after defining the pivot grid control, set the `EnableOnDemandC
 
 {% endhighlight %}
 
-![](Virtualized-Binding-images/PivotGrid loaded with OnDemand index engine.png)
+![Loads the pivot grid using Index Engine](Virtualized-Binding-images/PivotGrid loaded with OnDemand index engine.png)

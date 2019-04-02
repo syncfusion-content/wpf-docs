@@ -54,4 +54,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Show-Single-calculation-header-images/PivotGrid shows single calculation header.png)
+![Pivot grid shows the field header for single calculation fields](Show-Single-calculation-header-images/PivotGrid shows single calculation header.png)

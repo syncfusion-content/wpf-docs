@@ -82,7 +82,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Print-Images/Print preview.png)
+![Printing pivot grid](Print-Images/Print preview.png)
 
 ## Print preview options
 
@@ -104,4 +104,4 @@ Click the **PageSettings** in the print preview window to change the pages while
 
 Click the **Print** in the print preview window to print the pivot grid content.
 
-![](Print-Images/Print and Zooming options.png)
+![Print preview window](Print-Images/Print and Zooming options.png)

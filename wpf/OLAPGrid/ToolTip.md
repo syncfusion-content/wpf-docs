@@ -33,7 +33,7 @@ Me.OlapGrid1.ShowHeaderCellsToolTip = True
 
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img1.png)
+![To display the header cells tooltip in OlapGrid](ToolTip_images/ToolTip_img1.png)
 
 ## Value cell tooltip
 
@@ -57,6 +57,6 @@ Me.OlapGrid1.ShowValueCellToolTip = True
 
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img2.png)
+![To display the value cells tooltip in OlapGrid](ToolTip_images/ToolTip_img2.png)
 
 

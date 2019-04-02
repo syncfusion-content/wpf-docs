@@ -85,7 +85,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Styles-and-Templates-images/PivotGrid shows customized styles.png)
+![PivotGrid shows customized styles](Styles-and-Templates-images/PivotGrid shows customized styles.png)
 
 ## Cell templates
 
@@ -177,4 +177,4 @@ Refer to the following code snippet.
 
 {% endhighlight %}
 
-![](Styles-and-Templates-images/PivotGrid shows templated cells.png)
+![PivotGrid shows templated cells](Styles-and-Templates-images/PivotGrid shows templated cells.png)

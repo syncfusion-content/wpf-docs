@@ -35,7 +35,7 @@ Me.olapChart.Legend = New ChartLegend()
 
 {% endtabs %}
 
-![](Legend_images/Legend_img1.png)
+![Adding the legend into OlapChart](Legend_images/Legend_img1.png)
 
 ## Show/hide legend
 
@@ -65,7 +65,7 @@ Me.olapChart.Legend.Visibility = System.Windows.Visibility.Collapsed
 
 {% endtabs %}
 
-![](Legend_images/Legend_img2.png)
+![To hide the legend in OlapChart](Legend_images/Legend_img2.png)
 
 ## Visibility customization
 
@@ -177,14 +177,14 @@ N> The **RowsCount** and **ColumnsCount** are used to create the rows and column
 The following chart has only one legend, but the RowsCount and ColumnsCount are set as 2. Therefore, the resultant legend will appear as follows:
 
 **Legend with RowsCount=2, ColumnsCount=2 and ChartDock.Top**
-![](Legend_images/Legend_img3.png)
+![To display the legend in top of the chart](Legend_images/Legend_img3.png)
      
 **Legend with RowsCount=2, ColumnsCount=2 and ChartDock.Right**
-![](Legend_images/Legend_img4.png)
+![To display the legend in right of the chart](Legend_images/Legend_img4.png)
    
 **Legend with RowsCount=2, ColumnsCount=2 and ChartDock.Left**
-![](Legend_images/Legend_img5.png)
+![To display the legend in left of the chart](Legend_images/Legend_img5.png)
  
 **Legend with RowsCount=2, ColumnsCount=2 and ChartDock.Bottom**
-![](Legend_images/Legend_img6.png)
+![To display the legend in bottom of the chart](Legend_images/Legend_img6.png)
    

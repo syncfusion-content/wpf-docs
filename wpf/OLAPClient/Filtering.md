@@ -13,7 +13,7 @@ documentation: ug
 
 After clicking the split button of a dimension, the member editor dialog opens through which members are filtered by checking and unchecking the check boxes corresponding to members. By clicking OK, the OLAP report gets updated and refreshes the OLAP grid and OLAP chart controls based on the selected members in the member editor dialog. The Cancel button is used for canceling the selection.
 
-![](Filtering_images/Filtering_img1.png)
+![Member editor dialog to filter the elements](Filtering_images/Filtering_img1.png)
 
 The above filter illustrates that the members "France" and "Germany" along with "New South Wales" and "Queensland" are filtered from the grid and chart views.
 
@@ -27,19 +27,19 @@ The filter tab in the filtering and sorting dialog box provides the options to s
 
 Filtering and Sorting dialog for rows/columns can be opened by clicking the corresponding icon in the toolbar.
 
-![](Filtering_images/Filtering_img2.png)
+![Column filter option is selected in OlapClient toolbar](Filtering_images/Filtering_img2.png)
 
 Filtering by row
 {:.caption}
 
-![](Filtering_images/Filtering_img3.png)
+![Row filter option is selected in OlapClient toolbar](Filtering_images/Filtering_img3.png)
 
 Filtering by column
 {:.caption}
 
 The following screenshot displays the filter tab in Filtering and Sorting dialog.
 
-![](Filtering_images/Filtering_img4.png)
+![Filter tab is selected in filtering and sorting dialog](Filtering_images/Filtering_img4.png)
 
 The options in the filtering tab are as follows:
 
@@ -73,9 +73,9 @@ Me.olapClient1.ShowFilterSortButtons = False
 
 Subset filter is used to filter the number of records in the result set. The subset filter gets a numeric number as input and restricts the number of records within that count. You can specify the subset filter for both the row and column.
 
-![](Filtering_images/Filtering_img6.png)
+![Subset filter](Filtering_images/Filtering_img6.png)
 
-![](Filtering_images/Filtering_img5.png)
+![To filter the number of records in Columns](Filtering_images/Filtering_img5.png)
 
 Users can toggle the visibility of subset filter by using the `ShowSubsetFilters` property.
 
