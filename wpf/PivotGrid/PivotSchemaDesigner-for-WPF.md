@@ -29,13 +29,13 @@ The layout section is used to rearrange and reposition the fields in a pivot gri
 * Row label
 * Values
 
-![](PivotSchemaDesigner-Images/Layout section.png)
+![Layout section](PivotSchemaDesigner-Images/Layout section.png)
 
 ### Report filter
 
 The report filter is used to filter the entire report based on the selected item in the report filter. The report filter pop-up window can be launched by clicking the expander icon available in the right-corner of each filter item.
 
-![](PivotSchemaDesigner-Images/Filter Pop up window.png)
+![Filter Popup window](PivotSchemaDesigner-Images/Filter Pop up window.png)
 
 ### Column label
 

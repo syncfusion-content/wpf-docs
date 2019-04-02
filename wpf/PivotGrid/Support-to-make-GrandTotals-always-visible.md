@@ -52,4 +52,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](GrandTotalRows-always-visible-images/PivotGrid shows the GrandTotals at all the times.png)
+![PivotGrid shows the GrandTotals always](GrandTotalRows-always-visible-images/PivotGrid shows the GrandTotals at all the times.png)

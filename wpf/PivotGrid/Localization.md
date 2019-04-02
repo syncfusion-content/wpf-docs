@@ -62,4 +62,4 @@ After executing the above command, the satellite assembly will be generated in t
 
 N> Make sure that the name of satellite assembly should be in the format *MyAppName.resources.dll* and the name of the **.resx* file should be like Syncfusion.PivotAnalysis.Wpf.ar-AE.resx (Arabic). If the name of dll’s differs from your application name, then localization will not work.
 
-![](Localization-Images/PivotGrid Shows localization behaviour.png)
+![Localized pivot grid and display the data from right to left](Localization-Images/PivotGrid Shows localization behaviour.png)

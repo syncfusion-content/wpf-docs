@@ -27,7 +27,7 @@ The OLAP chart can be copied to the clipboard or exported as an image. It can be
 * TIFF
 * WDP
 
-![](Exporting_images/Exporting_img1.png)
+![Exports OlapChart into image format](Exporting_images/Exporting_img1.png)
 
 ## Exporting to Word document
 
@@ -77,7 +77,7 @@ olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc", "
 
 {% endtabs %}
 
-![](Exporting_images/Exporting_img2.png)
+![Exports OlapChart into word document](Exporting_images/Exporting_img2.png)
 
 ## Exporting to a PDF document
 
@@ -103,7 +103,7 @@ chartPdfExport.ExportIntoNewPdf("..\..\TemplateDocument\PdfDocument.pdf")
 
 {% endtabs %}
 
-![](Exporting_images/Exporting_img3.png)
+![Exports OlapChart into pdf document](Exporting_images/Exporting_img3.png)
 
 A sample demo is available at the following location.
 

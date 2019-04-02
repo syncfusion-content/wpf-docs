@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 147-Improve-Loading-and-Scrolling-Performance-in-P
+title: 147-Improve-Loading-and-Scrolling-Performance-in-P | Syncfusion
 description: Section helps to know how to improve the loading and scrolling performance programmatically in pivot grid control.
 platform: wpf
 control: PivotGridControl

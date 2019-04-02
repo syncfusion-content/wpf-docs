@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 142-Change-the-Gridline-Color-and-Thickness
+title: 142-Change-the-Gridline-Color-and-Thickness | Syncfusion
 description: Section that helps to know how to change the color and thickness of grid lines in pivot grid control.
 platform: wpf
 control: PivotGridControl

@@ -83,7 +83,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Editing-Images/PivotGrid shows edited value cell.png)
+![To edit the value cells in PivotGrid](Editing-Images/PivotGrid shows edited value cell.png)
 
 ## Enable editing for total cells
 
@@ -136,7 +136,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Editing-Images/PivotGrid shows edited total cell.png)
+![To edit the total cell values in PivotGrid](Editing-Images/PivotGrid shows edited total cell.png)
 
 ## Custom editing manager
 
@@ -200,4 +200,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Editing-Images/PivotGrid shows edited Custom Editing.png)
+![To customize the edited cell values in PivotGrid](Editing-Images/PivotGrid shows edited Custom Editing.png)

@@ -13,7 +13,7 @@ The OLAP chart can be printed in black, color, or white modes. It supports the c
 
 The following image illustrates printing a cropped image.
 
-![](Printing_images/Printing_img1.png)
+![To print the OlapChart](Printing_images/Printing_img1.png)
 
 A sample demo is available at the following location.
 

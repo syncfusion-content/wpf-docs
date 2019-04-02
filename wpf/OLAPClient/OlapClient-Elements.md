@@ -13,7 +13,7 @@ documentation: ug
 
 The cube selector allows you to select any one of the cubes available in the connected database. This can be achieved with a drop-down list displaying the list of cube names. On selecting a cube from the drop-down list, the corresponding cube element gets loaded.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img1.png)
+![Cube selector](OlapClient-Elements_images/OlapClient-Elements_img1.png)
 
 ## Cube dimension browser
 
@@ -57,7 +57,7 @@ Is Draggable</th></tr>
 <tr>
 <td> 
 
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img2.png)' | markdownify }}
+{{ '![Display folder icon](OlapClient-Elements_images/OlapClient-Elements_img2.png)' | markdownify }}
 
 </td><td>
 Display Folder</td><td>
@@ -66,7 +66,7 @@ False</td></tr>
 <tr>
 <td>
 
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img3.png)' | markdownify }}
+{{ '![Measure icon](OlapClient-Elements_images/OlapClient-Elements_img3.png)' | markdownify }}
 
 </td><td>
 Measure</td><td>
@@ -74,7 +74,7 @@ Measure</td><td>
 True</td></tr>
 <tr>
 <td>
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img4.png)' | markdownify }}
+{{ '![Dimension icon](OlapClient-Elements_images/OlapClient-Elements_img4.png)' | markdownify }}
 
 </td><td>
 Dimension</td><td>
@@ -82,7 +82,7 @@ Dimension</td><td>
 True</td></tr>
 <tr>
 <td>
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img5.png)' | markdownify }}
+{{ '![User defined Hierarchy icon](OlapClient-Elements_images/OlapClient-Elements_img5.png)' | markdownify }}
 
 </td><td>
 User Defined Hierarchy</td><td>
@@ -90,7 +90,7 @@ Hierarchy</td><td>
 True</td></tr>
 <tr>
 <td>
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img6.png)' | markdownify }}
+{{ '![Attribute Hierarchy icon](OlapClient-Elements_images/OlapClient-Elements_img6.png)' | markdownify }}
 
 </td><td>
 Attribute Hierarchy</td><td>
@@ -99,15 +99,15 @@ True</td></tr>
 <tr>
 <td>
 
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img7.png)' | markdownify }}
+{{ '![Levels icon](OlapClient-Elements_images/OlapClient-Elements_img7.png)' | markdownify }}
 
 <br/>
 
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img8.png)' | markdownify }}
+{{ '![Levels icon](OlapClient-Elements_images/OlapClient-Elements_img8.png)' | markdownify }}
 
 <br/>
 
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img9.png)' | markdownify }}
+{{ '![Levels icon](OlapClient-Elements_images/OlapClient-Elements_img9.png)' | markdownify }}
 
 </td><td>
 Levels (in order)</td><td>
@@ -115,7 +115,7 @@ Level Element</td><td>
 True</td></tr>
 <tr>
 <td>
-{{ '![](OlapClient-Elements_images/OlapClient-Elements_img10.png)' | markdownify }}
+{{ '![Named set icon](OlapClient-Elements_images/OlapClient-Elements_img10.png)' | markdownify }}
 
 </td><td>
 Named Set</td><td>
@@ -131,19 +131,19 @@ The axis element builder allows you to build elements in the axes of OLAP client
 
 The categorical axis defines one or more elements that are displayed along the chart’s y-axis as labels in the columns of the grid. If more than one dimension is present on the categorical axis, then the chart/grid will stack each dimension. The stacking order of dimensions is based on the order that they appear on the categorical axis.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img11.png)
+![Categorical axis in axis element builder](OlapClient-Elements_images/OlapClient-Elements_img11.png)
   
 ### Series (row)
 
 The series axis defines one or more dimensions that are displayed along the chart’s x-axis as labels and in the rows of the grid. If more than one dimension is present on the series axis, then the chart or grid will stack each dimension. The stacking order of dimensions is based on the order that they appear on the series axis.
   
-![](OlapClient-Elements_images/OlapClient-Elements_img12.png)
+![Series axis in axis element builder](OlapClient-Elements_images/OlapClient-Elements_img12.png)
   
 ### Slicer
 
 The slicer axis is used as a filter to narrow the focus of the multidimensional data displayed in the chart or grid. It allows you to analyze a member of the dimension in depth. To display the member’s data in the slicer, the corresponding member must not be present on both the categorical axis and series axis.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img13.png)
+![Slicer axis in axis element builder](OlapClient-Elements_images/OlapClient-Elements_img13.png)
   
 ### Adding elements to an axis
 
@@ -153,15 +153,15 @@ The measure, dimension, hierarchy, level, and named set elements can be dragged 
 
 To remove measures, dimensions, hierarchy, levels, and named set elements from the axis element builder, hover over the element and click the delete icon. You can also use the context menu to remove an element by right-clicking on it.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img14.png) 
+![Remove the element by using delete icon](OlapClient-Elements_images/OlapClient-Elements_img14.png) 
    
-![](OlapClient-Elements_images/OlapClient-Elements_img15.png)
+![Remove the element by using the context menu of the element](OlapClient-Elements_images/OlapClient-Elements_img15.png)
    
 ### Rearrange elements in an axis
 
 Rearranging can be done using Move Up/Move Down options visible when hovering over an element.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img16.png)
+![Rearrange the element by using Move Up/Move Down icon](OlapClient-Elements_images/OlapClient-Elements_img16.png)
   
 ## Elements editor
 
@@ -169,19 +169,19 @@ Rearranging can be done using Move Up/Move Down options visible when hovering ov
 
 Measure editor is a dialog that displays the collection of measures in the current report. It can be opened by clicking the split button at the right corner of the measure node in the axis element builder.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img17.png)
+![Measure editor dialog](OlapClient-Elements_images/OlapClient-Elements_img17.png)
   
 ### Member editor
 
 Member editor is a dialog that displays the members of the current hierarchy in a tree view structure. It can be opened by clicking the split button at the right corner of the member node in the axis element builder.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img18.png)
+![Member editor dialog](OlapClient-Elements_images/OlapClient-Elements_img18.png)
   
 The Check All and Uncheck All options in the dialog allows you to select and deselect the entire nodes for filtering.
 
 ## Toolbar
 
-![](OlapClient-Elements_images/OlapClient-Elements_img19.png)
+![OlapClient toolbar](OlapClient-Elements_images/OlapClient-Elements_img19.png)
 
 The options available in the toolbar are:
 
@@ -206,9 +206,9 @@ The options available in the toolbar are:
 
 This option helps users create a new report collection with a single report by clearing the existing report collection. By clicking the new report icon on the toolbar, the new report dialog opens, prompting you for a name for the report.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img20.png)
+![New report option is selected in OlapClient toolbar](OlapClient-Elements_images/OlapClient-Elements_img20.png)
 
-![](OlapClient-Elements_images/OlapClient-Elements_img21.png)
+![New report dialog](OlapClient-Elements_images/OlapClient-Elements_img21.png)
 
 After giving the required name, click OK. The report collection gets loaded with only one empty report having the entered name. By clicking Cancel, the new report creation gets canceled.
 
@@ -216,9 +216,9 @@ After giving the required name, click OK. The report collection gets loaded with
 
 This option allows users to add a report to the existing report collection. By clicking the add report icon on the toolbar, the add report dialog opens prompting you for a name for the report.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img22.png)
+![Add report option is selected in OlapClient toolbar](OlapClient-Elements_images/OlapClient-Elements_img22.png)
 
-![](OlapClient-Elements_images/OlapClient-Elements_img23.png)
+![Add report dialog](OlapClient-Elements_images/OlapClient-Elements_img23.png)
 
 After giving an appropriate name in the respective column, click OK. A report with the entered name is added to the collection. By clicking Cancel, the report creation gets canceled.
 
@@ -226,15 +226,15 @@ After giving an appropriate name in the respective column, click OK. A report wi
 
 This option removes the current or active report from the report collection. This option works only if the report collection has more than one report.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img24.png)
+![Remove report option is selected in OlapClient toolbar](OlapClient-Elements_images/OlapClient-Elements_img24.png)
 
 ### Rename report
 
 This option allows users to rename the current or active report. By clicking the rename icon on the toolbar, the rename report dialog opens, prompting users for a new name.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img25.png)
+![Rename report option is selected in OlapClient toolbar](OlapClient-Elements_images/OlapClient-Elements_img25.png)
 
-![](OlapClient-Elements_images/OlapClient-Elements_img26.png)
+![Rename report dialog](OlapClient-Elements_images/OlapClient-Elements_img26.png)
 
 After providing an appropriate name, click OK. The active report is refreshed with the new name. By clicking Cancel, the operation gets canceled.
 
@@ -242,9 +242,9 @@ After providing an appropriate name, click OK. The active report is refreshed wi
 
 This option saves the report in the local system. By clicking the save report icon, the SaveAs report dialog opens prompting you for a name with which the report needs to be stored.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img27.png)
+![Save report option is selected in OlapClient toolbar](OlapClient-Elements_images/OlapClient-Elements_img27.png)
 
-![](OlapClient-Elements_images/OlapClient-Elements_img28.png)
+![To save the report using file dialog](OlapClient-Elements_images/OlapClient-Elements_img28.png)
 
 After providing an appropriate name, click **Save**. The report will be saved in the selected system location.
 
@@ -252,15 +252,15 @@ After providing an appropriate name, click **Save**. The report will be saved in
 
 This option loads a report from the local system. Click the load report icon on the toolbar to load a report into the OLAP client.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img29.png)
+![Load report option is selected in OlapClient toolbar](OlapClient-Elements_images/OlapClient-Elements_img29.png)
 
-![](OlapClient-Elements_images/OlapClient-Elements_img30.png)
+![To load the report using file dialog](OlapClient-Elements_images/OlapClient-Elements_img30.png)
 
 ### Report list
 
 The report list drop-down contains the names of all the reports in the report collection.
 
-![](OlapClient-Elements_images/OlapClient-Elements_img31.png)
+![To change the reports at runtime using Report list](OlapClient-Elements_images/OlapClient-Elements_img31.png)
 
 Select the required report from the report list. The selected report will be set as an active report and loaded.
 

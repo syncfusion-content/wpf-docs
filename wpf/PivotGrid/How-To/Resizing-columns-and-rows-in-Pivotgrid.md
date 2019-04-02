@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizing columns and rows
+title: Resizing columns and rows | Syncfusion
 description: Section helps to know how to resize the rows and columne at run-time in pivot grid control. | Syncfusion
 platform: wpf
 control: Pivot Grid

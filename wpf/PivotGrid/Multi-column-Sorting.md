@@ -4,7 +4,7 @@ title: Multicolumn Sorting | PivotGrid | Syncfusion
 description: Multicolumn sorting support in pivot grid control which allows to sort the fields one after the other.
 platform: wpf
 control: Pivot grid
-documentation: ugHe
+documentation: ug
 ---
 
 # Multicolumn Sorting
@@ -86,19 +86,19 @@ public partial class MainWindow: Window {
 
 * The following screenshot shows the normal pivot grid.
 
-   ![](Sorting-Images/Normal PivotGrid.png)
+   ![Pivot grid without sorting](Sorting-Images/Normal PivotGrid.png)
 
 * The **Quantity** column has been sorted in the pivot grid.
 
-   ![](Sorting-Images/PivotGrid sorted by single column.png)
+   ![Sorting the quantity column in pivot grid](Sorting-Images/PivotGrid sorted by single column.png)
 
 * By pressing the Ctrl key, the **Amount** column is sorted. Now, the pivot grid is sorted by multiple columns.
 
-   ![](Sorting-Images/PivotGrid sorted by multiple columns.png)
+   ![Sorting the amount column in pivot grid](Sorting-Images/PivotGrid sorted by multiple columns.png)
 
 * Then, by pressing the Ctrl key again, you can the sort the pivot grid for 'n' number of columns.
 
-   ![](Sorting-Images/PivotGrid sorted by N columns.png)
+   ![Sorting the n number of columns in pivot grid](Sorting-Images/PivotGrid sorted by N columns.png)
 
 ## Multicolumn sorting in row pivots only mode
 
@@ -146,4 +146,4 @@ public partial class MainWindow: Window {
 
 Similarly, you can perform 'n' number of sorting in RowPivotsOnly mode by pressing the Ctrl key.
 
-![](Features-in-RowPivotsOnly-images/Multi column sort in RowPivots.png)
+![Multicolumn sorting in row pivots only mode](Features-in-RowPivotsOnly-images/Multi column sort in RowPivots.png)
