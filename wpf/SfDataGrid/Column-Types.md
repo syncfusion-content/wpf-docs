@@ -2278,7 +2278,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
 
         if (value == null)
             return null;
-        return value != null ? (new DateTimeOffset((DateTime)value)) : new DateTimeOffset(DateTime.Now);
+        return value != null ? value : new DateTimeOffset(DateTime.Now);
     }
 }
 {% endhighlight %}
@@ -2313,7 +2313,7 @@ In the below code snippet, created `GridDateTimeOffsetColumn` added to [SfDataGr
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <local:GridDateTimeOffsetColumn MappingName="OrderDate" Pattern="FullDateTime" />
+        <local:GridDateTimeOffsetColumn MappingName="OrderDate" Pattern="FullDateTime" UseBindingValue="True"/>
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -2321,10 +2321,13 @@ In the below code snippet, created `GridDateTimeOffsetColumn` added to [SfDataGr
 this.datagrid1.Columns.Add(new GridDateTimeOffsetColumn()
 {
     MappingName = "OrderDate",
-    Pattern = Syncfusion.Windows.Shared.DateTimePattern.FullDateTime
+    Pattern = Syncfusion.Windows.Shared.DateTimePattern.FullDateTime,
+	UseBindingValue="True"
 });
 {% endhighlight %}
 {% endtabs %}
+
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WpfTestingSample1440849393).
 
 ### Customize column renderer
 
