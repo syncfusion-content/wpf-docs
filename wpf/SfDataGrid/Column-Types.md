@@ -2322,7 +2322,7 @@ this.datagrid1.Columns.Add(new GridDateTimeOffsetColumn()
 {
     MappingName = "OrderDate",
     Pattern = Syncfusion.Windows.Shared.DateTimePattern.FullDateTime,
-	UseBindingValue="True"
+    UseBindingValue = true
 });
 {% endhighlight %}
 {% endtabs %}
