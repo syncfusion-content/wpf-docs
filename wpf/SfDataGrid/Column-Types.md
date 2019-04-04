@@ -2278,7 +2278,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
 
         if (value == null)
             return null;
-        return value != null ? value : new DateTimeOffset(DateTime.Now);
+        return value is DateTimeOffset ? value : new DateTimeOffset((DateTime)value);
     }
 }
 {% endhighlight %}
