@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows and Columns Operations in SfSpreadsheet
-description: Operations involved with rows and columns in SfSpreadsheet
+title: Rows and Columns Operations in SfSpreadsheet | wpf/Syncfusion
+description: This section explains that the operations involved with rows and columns in SfSpreadsheet for wpf/Syncfusion
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

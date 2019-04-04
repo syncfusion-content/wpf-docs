@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfSpreadsheet
-description: Overview and the features that are supported in SfSpreadsheet
+title: Overview of SfSpreadsheet | SfSpreadsheet | wpf/Syncfusion
+description: This section provides an overview about SfSpreadsheet and it's important key features for Syncfusion essential wpf
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

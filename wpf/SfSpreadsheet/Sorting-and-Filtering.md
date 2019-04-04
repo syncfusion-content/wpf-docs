@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Sorting and Filtering Operation in SfSpreadsheet
-description: Sorting and Filtering Operation in SfSpreadsheet
+title:  Sorting and Filtering Operation in SfSpreadsheet | wpf/syncfusion
+description: This section provides an overview of Sorting and Filtering Operation in SfSpreadsheet for EssentialStudio wpf/syncfusion
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

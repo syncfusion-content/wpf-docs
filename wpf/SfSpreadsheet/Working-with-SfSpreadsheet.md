@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with SfSpreadsheet
-description: How to access the worksheet and grid in SfSpreadsheet.
+title: Working with SfSpreadsheet | wpf/Syncfusion
+description: This section explains that how to access the worksheets and grids in SfSpreadsheet for wpf/Syncfusion.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

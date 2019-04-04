@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Named Ranges
-description: Description about the named ranges support in Essential Calculate
+title: Named Ranges | Calculate | Essential wpf/Syncfusion
+description: This section explains that how the named ranges are works with CalcEngine in Essential Calculate for wpf/Syncfusion
 platform: wpf
 control: Calculate
 documentation: ug

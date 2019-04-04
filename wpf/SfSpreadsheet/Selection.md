@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection behavior in SfSpreadsheet
-description: selection behavior of SfSpreadsheet
+title: Selection behavior in SfSpreadsheet | wpf/Syncfusion
+description: This Section explains that how the selection works in SfSpreadsheet with different range for wpf/Syncfusion
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

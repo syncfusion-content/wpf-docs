@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid | Grid | WPF | Syncfusion
-description: overview
+description: This section provides an overview of the grid and it's key features for Syncfusion Essential studio wpf
 platform: wpf
 control: Grid
 documentation: ug

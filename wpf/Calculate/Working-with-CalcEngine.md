@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with CalcEngine
-description: Description about properties, methods maintained in CalcEngine
+title: Working with CalcEngine | Calculate | Essential wpf/Syncfusion
+description: This section provides a basic idea of properties and methods maintained in CalcEngine for wpf/Syncfusion
 platform: wpf
 control: Calculate
 documentation: ug

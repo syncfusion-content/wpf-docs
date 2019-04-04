@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported Formulas
-description: Formulas supported in Essential Calculate
+title: Supported Formulas | Calculate | Essential wpf/Syncfusion
+description: This section defines the list of supported formulas with simple example of the CalcEngine for Syncfusion Essential wpf
 platform: wpf
 control: Calculate
 documentation: ug
