@@ -13,7 +13,7 @@ SfChart supports various customizing and styling options that allows you to enri
 
 ## Palettes
 
-SfChart provides options to apply different kinds of themes or palettes to your chart. You can define [`Palette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Palette.html) either for the entire chart or for an individual series.
+SfChart provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
 
 We have some predefined palette such as
 

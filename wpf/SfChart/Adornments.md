@@ -215,7 +215,7 @@ chart.Series.Add(series);
 
 **Custom Template**
 
-You can also provide the template for the symbol using [`SymbolTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolTemplate.html) property as in the below code snippet.
+You can also provide the template for the symbol using `SymbolTemplate` property as in the below code snippet.
 
 {% tabs %}
 
