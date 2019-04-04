@@ -517,7 +517,7 @@ chart.Legend = new ChartLegend()
 
 Chart provides support to add any UIElement as a header for legend items. 
 
-You can define the header for legend using the following code example.
+You can define the [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartLegend~Header.html) for legend using the following code example.
 
 {% tabs %}
 
