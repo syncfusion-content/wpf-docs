@@ -602,7 +602,7 @@ N> If you are having DateTimeAxis then the corresponding date time value will be
 
 **LabelContentPath**
 
-LabelContentPath property by default displays the y value. If you need to specify the value other than y value you can define the `LabelTemplate` where you can retrieve the adornment value of every segment. 
+LabelContentPath property by default displays the y value. If you need to specify the value other than y value you can define the [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelTemplate.html) where you can retrieve the adornment value of every segment. 
 
 The following code example demonstrates displaying the string value which is taken as x values.
 
@@ -781,6 +781,7 @@ The following properties are used to customize the adornment label.
 * [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontSize.html#)
 * [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Foreground.html#)
 * [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontFamily.html#)
+* [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Background.html)
 
 The following code example demonstrates the customization of label using the above properties:
 
@@ -910,7 +911,7 @@ series.AdornmentsInfo = adornmentInfo;
 ![Series brush for adornments background support in WPF Chart](Adornments_images/series_palette.png)
 
 
-The default appearance of the label can be customized using `LabelTemplate` property as in the below code example:
+The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelTemplate.html) property as in the below code example:
 
 {% tabs %}
 
