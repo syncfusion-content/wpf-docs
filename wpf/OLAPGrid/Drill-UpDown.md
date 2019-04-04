@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drill UpDown| OlapGrid | Wpf | Syncfusion
-description: drill-up/down
+description: Support to access the detailed view of data (drill down) or to access the summarized view of data (drill up) in OLAP Grid control.
 platform: wpf
 control: OlapGrid
 documentation: ug

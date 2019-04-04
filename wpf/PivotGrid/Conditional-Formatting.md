@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Conditional formatting using data conditions | Syncfusion
-description: Conditional formatting using data conditions
+title: Conditional formatting using data conditions | PivotGrid | Syncfusion
+description: Support to apply conditional formatting to format the value cells which meets given data condition in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug

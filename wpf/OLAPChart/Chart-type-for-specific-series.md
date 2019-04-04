@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change Chart Type for Specific Series
-description: Change the chart type for specific series
+title: Change Chart Type for Specific Series | OlapChart | Syncfusion
+description: Support to change the chart type for specific series based on user need in OLAP Chart control | Syncfusion
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -15,10 +15,10 @@ To change the chart type of a specific series, right-click the particular series
 
 The following screenshot shows how a specific column chart series is changed to line chart series.
 
-![](Chart-type-for-specific-series_images/Chart-type-for-specific-series_img1.png)
+![How to change the specific column chart series into line chart series](Chart-type-for-specific-series_images/Chart-type-for-specific-series_img1.png)
 
 The following screenshot shows a column chart series changed to line chart.
 
-![](Chart-type-for-specific-series_images/Chart-type-for-specific-series_img2.png)
+![Column chart series changed to Line chart series](Chart-type-for-specific-series_images/Chart-type-for-specific-series_img2.png)
 
 

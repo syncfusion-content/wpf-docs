@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand/Collapse Rows and Columns
-description: Expand/collapse rows and columns through context menu
+title: Expand/Collapse Rows and Columns | Syncfusion
+description: Support to view the detailed data (drill down) or to view the summarized data (drill up) in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -220,10 +220,10 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Header-Cell-context-menu-images/Context menu for Row headers.png)
+![Context menu for Row Headers](Header-Cell-context-menu-images/Context menu for Row headers.png)
 
 _Context menu for Row Headers_
 
-![](Header-Cell-context-menu-images/Context menu for Column headers.png)
+![Context menu for Column Headers](Header-Cell-context-menu-images/Context menu for Column headers.png)
 
 _Context menu for Column Headers_

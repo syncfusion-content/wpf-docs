@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary Types
-description: Summary types
+title: Summary Types | PivotGrid | Syncfusion
+description: Define different type of summaries such as Count, Sum, Average, etc., for pivot calculation items used in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -90,7 +90,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Summary-Images/PivotGrid shows summary type Double variance.png)
+!PivotGrid shows the values as double total sum and count format[](Summary-Images/PivotGrid shows summary type Double variance.png)
 
 ## DisplayIfDiscreteValuesEqual summary type in pivot grid
 
@@ -164,4 +164,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Summary-Images/PivotGrid Shows DisplayIfDiscretevaluesequal summary type.png)
+![PivotGrid Shows DisplayIfDiscretevaluesequal summary type](Summary-Images/PivotGrid Shows DisplayIfDiscretevaluesequal summary type.png)

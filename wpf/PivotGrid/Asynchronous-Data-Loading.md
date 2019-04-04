@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Asynchronous Data Loading
-description: Asynchronous data loading
+title: Asynchronous Data Loading | PivotGrid | Syncfusion
+description: Support to perform long running operations asynchronously on a background thread in PivotGrid control. 
 platform: wpf
 control: Pivot grid
 documentation: ug

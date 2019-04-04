@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting TabListContextMenu and TabItemContextMenu For Tab Item | TabControlExt | wpf | Syncfusion
+title: Tab list and tab item context menu | TabControlExt | wpf | Syncfusion
 description: setting tablistcontextmenu and tabitemcontextmenu for tab item
 platform: wpf
 control: TabControlExt
@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting TabListContextMenu and TabItemContextMenu For Tab Item
 
-In TabControlExt, context menu can be displayed for the Tab Items by setting the ShowTabItemContextMenu property to True. This is a dependency property which is used to enable or disable the context menu for the Tab Item.
+In TabControlExt, context menu can be displayed for the Tab Items by setting the [ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabItemContextMenu.html) property to True. This is a dependency property which is used to enable or disable the context menu for the Tab Item.
 
 The context menu of the Tab Item has the following menu items.
 
@@ -97,17 +97,17 @@ stackPanel.Children.Add(tabControlExt);
 
 {% endtabs %}
 
-![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_img1.jpeg)
+![Tab list context menu](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_img1.jpeg)
 
 ## Tab Item Context Menu Events
 
 ###  OnCloseOtherTabs Event
 
-This event is handled when the 'Close All But This' menu item in the TabItemContextMenu is clicked.
+This [OnCloseOtherTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~OnCloseOtherTabs_EV.html) event is handled when the 'Close All But This' menu item in the TabItemContextMenu is clicked.
 
 ### OnCloseAllTabs Event
 
-This event is handled when the 'Close All' menu item in TabItemContextMenu is clicked.
+This [OnCloseAllTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~OnCloseAllTabs_EV.html) event is handled when the 'Close All' menu item in TabItemContextMenu is clicked.
 
 ### Event
 

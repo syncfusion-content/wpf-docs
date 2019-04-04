@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pivot Grid Getting Started
-description: Pivot grid getting started
+title: Pivot Grid Getting Started | Syncfusion
+description: Section helps to know how to start working with pivot grid control by creating a simple application for end users.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -18,7 +18,7 @@ Open Visual Studio IDE and navigate to File > New > Project > WPF Application (i
 
 After creating the WPF application, go to View menu and select Toolbox option. Now, the toolbox will appear inside the Visual Studio IDE. Drag the pivot grid control from **Syncfusion BI WPF** category in the toolbox to the designer page. The pivot grid control will be added along with the dependency assemblies automatically to the application.
 
-![](PivotGrid-Getting-Started-images/Adding PivotGrid through designer.png)
+![Adding pivot grid through designer](PivotGrid-Getting-Started-images/Adding PivotGrid through designer.png)
 
 ## Adding pivot grid through XAML
 
@@ -128,7 +128,7 @@ N> You can also get the assemblies by browsing to the default assembly location
 After adding the above assemblies, the pivot grid control will be automatically added under **Assets** tab.
 Now, choose the **Assets** tab and drag the pivot grid control from the toolbox to designer section.
 
-![](PivotGrid-Getting-Started-images/Adding PivotGridControl through expression blend.png)
+![Adding pivot grid through expression blend](PivotGrid-Getting-Started-images/Adding PivotGridControl through expression blend.png)
 
 ## Binding a data source to pivot grid control
 
@@ -328,4 +328,4 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e) {
 
 **Run** the application, the following output will be generated.
 
-![](PivotGrid-Getting-Started-images/PivotGrid with Populated values.png)
+![Pivot grid loaded with values](PivotGrid-Getting-Started-images/PivotGrid with Populated values.png)

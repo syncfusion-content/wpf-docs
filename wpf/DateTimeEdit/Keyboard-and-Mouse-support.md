@@ -9,10 +9,10 @@ documentation: ug
 
 # Keyboard and Mouse Support
 
-Up or down arrows in the DateTimeEdit control spin the selected parts (month, day, year, hour, second, and minute) one step up or down. Mouse Scroll in the DateTimeEdit control spin the selected parts in the DateTime property one step up or down. The spin behavior in the DateTimeEdit control can be enabled by setting the IsScrollingOnCircle property to true.
+Up or down arrows in the DateTimeEdit control spin the selected parts (month, day, year, hour, second, and minute) one step up or down. Mouse Scroll in the DateTimeEdit control spin the selected parts in the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property one step up or down. The spin behavior in the DateTimeEdit control can be enabled by setting the [IsScrollingOnCircle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsScrollingOnCircle.html) property to true.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10"  IsScrollingOnCircle="True"/>
 
@@ -21,11 +21,11 @@ Up or down arrows in the DateTimeEdit control spin the selected parts (month, da
 
 After selecting any part in the DateTime value if you press the Up or Down arrows (or Scroll the Mouse Up or Down) then the selected value will automatically change.
 
-![](Keyboard-and-Mouse-support_images/Keyboard-and-Mouse-support_img1.png)
+![Keyboard and mouse support](Keyboard-and-Mouse-support_images/Keyboard-and-Mouse-support_img1.png)
 
 ## Open and Close drop-down through Keyboard
 
-`DateTimeEdit` dropdown Popup can be opened and closed by pressing Enter key. This behavior can be enabled by setting the `AllowEnter` property of DateTimeEdit to true.
+`DateTimeEdit` dropdown Popup can be opened and closed by pressing Enter key. This behavior can be enabled by setting the [AllowEnter](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~AllowEnter.html) property of DateTimeEdit to true.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ datetimeedit.AllowEnter = True
 
 {% endtabs %}
 
-N> Dropdown popup of DateTimeEdit cannot be opened by pressing Enter Key when CanEdit Property set to `True`.
+N> Dropdown popup of DateTimeEdit cannot be opened by pressing Enter Key when [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) Property set to `True`.
 
 {% seealso %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export Option in Pivot Grid
-description: Export the contents to various formats in pivot grid
+title: Export Option in Pivot Grid | Syncfusion
+description: Support to export the PivotGrid control into various documents such as Excel, PDF, Word and CSV formats.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -48,12 +48,12 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 {% endhighlight %}
 
-![](Exporting-Images/Export to excel in PivotTable mode.png)
+![Excel Export in PivotTable Mode](Exporting-Images/Export to excel in PivotTable mode.png)
 
 Excel Export in PivotTable Mode
 {:.caption}
 
-![](Exporting-Images/Export to excel in Cell mode.png)
+![Excel Export in Cell Mode](Exporting-Images/Export to excel in Cell mode.png)
 
 Excel Export in Cell Mode
 {:.caption}
@@ -84,7 +84,7 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 {% endhighlight %}
 
-![](Exporting-Images/Export to word.png)
+![Exports the PivotGrid into word document](Exporting-Images/Export to word.png)
 
 ## Export to PDF
 
@@ -112,7 +112,7 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 {% endhighlight %}
 
-![](Exporting-Images/Export to pdf.png)
+![Exports the PivotGrid into PDF document](Exporting-Images/Export to pdf.png)
 
 ## Export to CSV
 
@@ -141,7 +141,7 @@ private void Button_Export(object sender, RoutedEventArgs e)) {
 
 {% endhighlight %}
 
-![](Exporting-Images/Export to csv.png)
+![Exports the PivotGrid into CSV document](Exporting-Images/Export to csv.png)
 
 ## Threshold limitations
 

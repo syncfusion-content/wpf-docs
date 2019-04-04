@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Styling| OlapGrid | Wpf | Syncfusion
-description: grid styling 
+description: Support to format the cells including header, value and summary cells using style dialog in OLAP Grid control.
 platform: wpf
 control: OlapGrid
 documentation: ug
@@ -116,7 +116,7 @@ Me.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center
 
 {% endtabs %}
 
-![](Grid-Style-Dialog_images/Grid-Style-Dialog_img2.png)
+![Customized OlapGrid](Grid-Style-Dialog_images/Grid-Style-Dialog_img2.png)
 
 A sample demo is available in the following location.
 

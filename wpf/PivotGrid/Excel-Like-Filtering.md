@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel-like Filtering
-description: Excel-like filtering
+title: Excel-like Filtering | PivotGrid | Syncfusion
+description: Support to perform excel-like filtering and sorting in PivotGrid control at runtime using filter dialog.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -63,7 +63,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Excel-Like-Filtering-images/Excel like Filter Popup.png)
+![Excel like Filter Popup](Excel-Like-Filtering-images/Excel like Filter Popup.png)
 
 ## Various features of MultiFunctional pop-up
 
@@ -98,7 +98,7 @@ The label filters are used to filter the pivot item filter labels of the pivot g
 * Between
 * Not between
 
-![](Excel-Like-Filtering-images/Label filter window.png)
+![Label Filter window](Excel-Like-Filtering-images/Label filter window.png)
 
 _Label Filter window for filtering "Alberta" in State_
 
@@ -116,10 +116,10 @@ The value filters are used to filter the pivot item field values of the pivot gr
 * Not between
 * Top 10
 
-![](Excel-Like-Filtering-images/Value filter window.png)
+![Value Filter window ](Excel-Like-Filtering-images/Value filter window.png)
 
 _Value Filter window for filtering "Alberta" using its Quantity value "677" in State_
 
-![](Excel-Like-Filtering-images/Filtered PivotGrid by using label value.png)
+![PivotGrid with Label Filter or Value Filter applied](Excel-Like-Filtering-images/Filtered PivotGrid by using label value.png)
 
 _PivotGrid with Label Filter or Value Filter applied_

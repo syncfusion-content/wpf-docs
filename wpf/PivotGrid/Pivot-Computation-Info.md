@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PivotComputationInfo
-description: Pivotcomputationinfo
+title: PivotComputationInfo | PivotGrid | Syncfusion
+description: Information about pivot calculation item in pivot grid control which allows to define various properties of PivotComputationInfo.
 platform: wpf
 control: Pivot grid
 documentation: ug

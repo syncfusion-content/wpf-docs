@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Options
-description: Display options for calculation values in pivotgrid
+title: Display Options | Syncfusion
+description: Support for the PivotComputationInfo to display calculation values in preferred areas of the pivot grid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -81,28 +81,28 @@ public partial class MainWindow: Window {
 
 Displays the calculation values in all columns of the pivot grid.
 
-![](Display-options-Images/PivotComputationinfo using All option.png)
+![To display the calculation values in all columns](Display-options-Images/PivotComputationinfo using All option.png)
 
 **Summary**
 
 Data actually presents in the PivotEngine, but displays the calculation values only in the summary columns of the pivot grid.
 
-![](Display-options-Images/PivotComputationinfo using summary option.png)
+![To display the calculation values only in summary columns](Display-options-Images/PivotComputationinfo using summary option.png)
 
 **Calculations**
 
 Data actually presents in the PivotEngine, but displays the calculation values only in the calculation columns and does not display in the summary and grand total columns of the pivot grid.
 
-![](Display-options-Images/PivotComputationinfo using Calculations option.png)
+![To display the calculation values only in calculation columns](Display-options-Images/PivotComputationinfo using Calculations option.png)
 
 **GrandTotal**
 
 Data actually presents in the PivotEngine, but displays the calculation values only in the grand total columns of the pivot grid.
 
-![](Display-options-Images/PivotComputationinfo using Grand Totals option.png)
+![To display the calculation values only in grand total columns](Display-options-Images/PivotComputationinfo using Grand Totals option.png)
 
 **None**
 
 Data actually presents in the PivotEngine, but hides all the calculation values in all columns of the pivot grid.
 
-![](Display-options-Images/PivotComputationinfo using none option.png)
+![To hide the calculation values in all columns](Display-options-Images/PivotComputationinfo using none option.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Single Calculation Header
-description: Show single calculation header
+title: Single Calculation Header | PivotGrid | Syncfusion
+description: Support to show the pivot calculation header even there is only one pivot calculation item in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -54,4 +54,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Show-Single-calculation-header-images/PivotGrid shows single calculation header.png)
+![Pivot grid shows the field header for single calculation fields](Show-Single-calculation-header-images/PivotGrid shows single calculation header.png)

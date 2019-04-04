@@ -1,7 +1,7 @@
 ---
 layout: post
-title: GetRawItem
-description: Define GetRawItemFor method
+title: GetRawItem | PivotGrid | Syncfusion
+description: Method definition to get the raw items at run-time for value cells and total cells in PivotGrid control | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -30,4 +30,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](GetRawItem-images/PivotGrid shows Raw Item.png)
+![Getting the list of raw items for specific cells](GetRawItem-images/PivotGrid shows Raw Item.png)

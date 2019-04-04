@@ -102,7 +102,7 @@ The TileViewControl supports binding to objects. The following code example illu
    
 
 
-4. Configure the _ItemsSource_ and _ItemContainerStyle_ of the TileViewControl.
+4. Configure the [ItemSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) and _ItemContainerStyle_ of the TileViewControl.
 
 
    ~~~ xml
@@ -133,7 +133,7 @@ This creates the following TileViewControl.
 
 
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![Data binding](Data-Binding_images/Data-Binding_img1.png)
 
 
 
@@ -141,7 +141,7 @@ This creates the following TileViewControl.
 
 ## Data-Binding with XML
 
-An XML file can also be used as _ItemsSource_ for the TileViewControl. The following example illustrates this.
+An XML file can also be used as [ItemSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) for the TileViewControl. The following example illustrates this.
 
 1. Create an XML file with the following details and name it as Data.xml.
 
@@ -224,7 +224,7 @@ This will create the following TileViewControl.
 
 
 
-![](Data-Binding_images/Data-Binding_img2.png)
+![Item container style](Data-Binding_images/Data-Binding_img2.png)
 
 
 

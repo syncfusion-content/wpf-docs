@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styling and formatting using MDX query
-description: How to apply styling and formatting to grid cells using MDX query
+title: Styling and formatting using MDX query | OLAP Grid | Syncfusion
+description: Section helps to know how to apply styling and formatting to grid cells using MDX query in OLAP Grid control | Syncfusion
 platform: wpf
 control: OlapGrid
 documentation: ug
@@ -37,7 +37,7 @@ Dim formattedMDXQuery As String = "WITH MEMBER [Measures].[Customers] As [Measur
 
 {% endtabs %}
 
-![](Styling-and-Formatting-using-MDX-query-images/Formatted_Grid.png)
+![To format the OlapGrid using MDX query](Styling-and-Formatting-using-MDX-query-images/Formatted_Grid.png)
 
 A sample demo is available at the following location:
 

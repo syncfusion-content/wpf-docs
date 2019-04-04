@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Sorting in Pivot Grid
-description: Column sorting in pivot grid
+title: Column Sorting in Pivot Grid | PivotGrid | Syncfusion
+description: Support to sort the pivot calculation fields either in ascending or descending order in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -107,7 +107,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Features-in-RowPivotsOnly-images/Sorting option enabled in PivotGrid.png)
+![To apply the sorting for calculation columns](Features-in-RowPivotsOnly-images/Sorting option enabled in PivotGrid.png)
 
 ## Multi-column sorting
 

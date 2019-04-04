@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Tab Scroll Button
 
-Tab Scroll button visibility is controlled by using the TabScrollButtonVisibility property of the TabControlExt control. This is a dependency property which provides the following options to control the visibility of the Scroll button.
+Tab Scroll button visibility is controlled by using the [TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollButtonVisibility.html) property of the TabControlExt control. This is a dependency property which provides the following options to control the visibility of the Scroll button.
 
 * Hidden–Scroll button is hidden
 * Visible–Scroll button is displayed
@@ -95,7 +95,7 @@ stackPanel.Children.Add(tabControlExt);
 {% endtabs %}
 
 
-![](Setting-Tab-Scroll-Button_images/Setting-Tab-Scroll-Button_img1.jpeg)
+![Tab scroll button visibility](Setting-Tab-Scroll-Button_images/Setting-Tab-Scroll-Button_img1.jpeg)
 
 
 

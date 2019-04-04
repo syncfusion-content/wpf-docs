@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Skin Customization
-description: Skin customization
+title: Skin Customization | PivotGrid | Syncfusion
+description: Support to apply various visual styles Office2010, Office2007, Trasparent, Blend, Metro, etc., in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -93,4 +93,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Skin-Customization-Images/PivotGrid shows customized visual style.png)
+![PivotGrid shows customized visual style](Skin-Customization-Images/PivotGrid shows customized visual style.png)

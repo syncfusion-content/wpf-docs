@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Type
 
-You can set the layout type for the TabControlExt control by using the TabItemLayoutType property. This dependency property sets the layout type of the Tab Item. It provides the following layout types.
+You can set the layout type for the TabControlExt control by using the [TabItemLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemLayout.html) property. This dependency property sets the layout type of the Tab Item. It provides the following layout types.
 
 * SingleLine–tab items are displayed in single line
 * MultiLine–tab items are shrunk and displayed in multiple lines
@@ -77,14 +77,14 @@ stackPanel.Children.Add(tabControlExt);
 
 {% endtabs %}
 
-![](Layout-Type_images/Layout-Type_img1.jpeg)
+![Layout type](Layout-Type_images/Layout-Type_img1.jpeg)
 
 
 ## TabItemLayoutChanged Event
 
-This event is triggered when the TabItemLayout property is changed.
+This event is triggered when the [TabItemLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemLayout.html) property is changed.
 
-The following code snippet illustrates handling the TabItemLayoutChanged event.
+The following code snippet illustrates handling the [TabItemLayoutChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemLayoutChanged_EV.html) event.
 
 
 {% highlight c# %}
@@ -115,4 +115,4 @@ tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Hidden;
 {% endhighlight %}
 
 
-In the above example, when the TabItemLayoutType property is set to MultiLine, the Tab Scroll button is hidden, as it is no longer needed to view the contents.
+In the above example, when the [TabItemLayoutType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemLayoutType.html) property is set to MultiLine, the Tab Scroll button is hidden, as it is no longer needed to view the contents.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expression Fields
-description: Expression Fields
+title: Expression Fields | PivotGrid | Syncfusion
+description: Support to add expression fields and handles other features similiar to normal fields in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -162,4 +162,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Expression-Field-Images/PivotGrid shows expression fields.png)
+![Adding the expression fields in PivotGrid](Expression-Field-Images/PivotGrid shows expression fields.png)

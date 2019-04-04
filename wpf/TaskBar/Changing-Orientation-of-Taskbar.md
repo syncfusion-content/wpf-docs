@@ -9,7 +9,7 @@ documentation: ug
 
 # Changing Orientation of Taskbar
 
-TaskBar control is placed horizontally or vertically by using the GroupOrientation property. This is a dependency property, which sets the orientation of the TaskBar.
+TaskBar control is placed horizontally or vertically by using the [GroupOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~GroupOrientation.html) property. This is a dependency property, which sets the orientation of the TaskBar.
 
 TaskBar control supports the following types of orientation.
 
@@ -164,14 +164,14 @@ this.Content = taskBar;
 {%endtabs%}
 
 
-![](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg)
+![TaskBar orientation](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg)
 
 
 
 
 ## GroupOrientationChanged Event
 
-This event is handled when the GroupOrientation property is changed.
+This [GroupOrientationChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~GroupOrientationChanged_EV.html) event is handled when the [GroupOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TaskBar~GroupOrientation.html) property is changed.
 
 While setting the orientation of the TaskBar, you may want to change the position of the TaskBar for proper alignment. This can be achieved by changing the group margin of the TaskBar along with the orientation.
 

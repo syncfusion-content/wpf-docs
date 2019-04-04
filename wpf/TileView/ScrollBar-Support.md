@@ -9,7 +9,7 @@ documentation: ug
 
 # ScrollBar Support
 
-The ScrollBar will be visible in the bottom of the TileViewControl, when the width of the Minimized TileViewItem increases and also when MinimizedItemsOrientation of the TileViewControl is set to top or bottom. The ScrollBar will be visible in the right side of the TileViewControl, when the height of the Minimized TileViewItem increases and also when MinimizedItemsOrientation of the TileViewControl is set to right or left. 
+The ScrollBar will be visible in the bottom of the TileViewControl, when the width of the Minimized TileViewItem increases and also when [MinimizedItemsOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsOrientation.html) of the TileViewControl is set to top or bottom. The ScrollBar will be visible in the right side of the TileViewControl, when the height of the Minimized TileViewItem increases and also when [MinimizedItemsOrientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~MinimizedItemsOrientation.html) of the TileViewControl is set to right or left. 
 
 ## Use Case Scenarios
 
@@ -62,44 +62,18 @@ The following code example illustrates how to add the ScrollBar to an applicatio
 {% endhighlight %}
 
 
-![](ScrollBar-Support_images/ScrollBar-Support_img1.png)
+![ScrollBar support to an application](ScrollBar-Support_images/ScrollBar-Support_img1.png)
 
 
 
 
 
-![](ScrollBar-Support_images/ScrollBar-Support_img2.png)
-
-
-
+![ScrollBar support to an application](ScrollBar-Support_images/ScrollBar-Support_img2.png)
 
 ## Properties
 
-Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-OnMinimizedHeight</td><td>
-Specifies the Height of the MinimizedTileViewItem when the MinimizedItemsOrientation is Right or Left.</td><td>
-DependencyProperty</td><td>
-0</td><td>
-</td></tr>
-<tr>
-<td>
-OnMinimizedWidth</td><td>
-Specifies the Width of the MinimizedTileViewItem when the MinimizedItemsOrientation is Top or Bottom.</td><td>
-DependencyProperty</td><td>
-0</td><td>
-</td></tr>
-</table>
+* [OnMinimizedHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~OnMinimizedHeight.html)
+* [OnMinimizedWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~OnMinimizedWidth.html)
 
 
 ## Sample Link

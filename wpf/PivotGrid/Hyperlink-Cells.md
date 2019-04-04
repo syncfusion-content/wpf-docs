@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hyperlink Cells
-description: Hyperlink cells
+title: Hyperlink Cells | PivotGrid | Syncfusion
+description: Hyperlink support to hyperlinking of cells to retrieve a detailed information about a particular cell.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -47,20 +47,20 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
- ![](Hyperlink-Cells-Images/PivotGrid shows column header hyperlink.png)
+ ![PivotGrid with Column header hyperlink](Hyperlink-Cells-Images/PivotGrid shows column header hyperlink.png)
  _PivotGrid with Column header hyperlink_
 
- ![](Hyperlink-Cells-Images/PivotGrid shows row header hyperlink.png)
+ ![PivotGrid with Row header hyperlink](Hyperlink-Cells-Images/PivotGrid shows row header hyperlink.png)
 
  _PivotGrid with Row header hyperlink_
 
- ![](Hyperlink-Cells-Images/PivotGrid shows summary cell hyperlink.png)
+ ![PivotGrid with Summary cell hyperlink](Hyperlink-Cells-Images/PivotGrid shows summary cell hyperlink.png)
 
  _PivotGrid with Summary cell hyperlink_
 
- ![](Hyperlink-Cells-Images/PivotGrid shows summary header hyperlink.png)
+ ![PivotGrid with Summary header hyperlink](Hyperlink-Cells-Images/PivotGrid shows summary header hyperlink.png)
  _PivotGrid with Summary header hyperlink_
 
-![](Hyperlink-Cells-Images/PivotGrid shows value cell hyperlink.png)
+![PivotGrid with Value cell hyperlink](Hyperlink-Cells-Images/PivotGrid shows value cell hyperlink.png)
 
  _PivotGrid with Value cell hyperlink_

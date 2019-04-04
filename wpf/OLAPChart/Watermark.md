@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark
-description: Watermark
+title: Watermark | OLAP Chart | Syncfusion
+description: Support is used to show text, image, or both as a watermark inside the chart area. | OLAP Chart | Syncfusion
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -15,11 +15,11 @@ There are many customization options available for the watermarked content. The 
 
 The following screenshot shows the text as a watermark.
 
-![](Watermark_images/Watermark_img1.png)
+![OlapChart displays the text as watermark](Watermark_images/Watermark_img1.png)
 
 The following screenshot shows the image as a watermark.
 
-![](Watermark_images/Watermark_img2.png)
+![OlapChart displays the image as watermark](Watermark_images/Watermark_img2.png)
 
 A sample demo is available at the following location.
 

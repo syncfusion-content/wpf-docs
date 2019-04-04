@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizing the Pivot Grid
-description: Resizing the pivot grid to fit its content
+title: Resizing Support | Pivot Grid | Syncfusion
+description: Support to resizing the grid to fit its content while expanding and collapsing the groups  | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -81,4 +81,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Resizing-image/Resized PivotGrid during collapsed state.png)
+![Resized PivotGrid](Resizing-image/Resized PivotGrid during collapsed state.png)

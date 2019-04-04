@@ -13,7 +13,7 @@ The IntegerTextBox exposes the following events:
 
 ## ValueChanged
 
-ValueChanged – The event occurs when the Value property of the IntegerTextBox is changed.
+[ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~ValueChanged_EV.html) – The event occurs when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) property of the IntegerTextBox is changed.
 
 {%tabs%}
 {% highlight xaml %} <syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/>{% endhighlight %}
@@ -37,7 +37,7 @@ private void IntegerTextBox_ValueChanged(DependencyObject d, DependencyPropertyC
 
 ## TextChanged
 
-TextChanged – The event occurs when the Value property of the IntegerTextBox is changed.
+[TextChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.textchanged?redirectedfrom=MSDN&view=netframework-4.7.2) – The event occurs when the [Value]([Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html)) property of the IntegerTextBox is changed.
 
 {%tabs%}
 {% highlight xaml %}<syncfusion:IntegerTextBox  TextChanged="integerTextBox_TextChanged"/>{% endhighlight %}
@@ -61,7 +61,7 @@ private void IntegerTextBox_TextChanged(object sender, TextChangedEventArgs e)
 
 ## CultureChanged
 
-CultureChanged – The event occurs when the Culture property of the IntegerTextBox is changed. When the Culture property is changed the value is formatted based on the new Culture.
+[CultureChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CultureChanged_EV.html) – The event occurs when the [Culture]([Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html)) property of the IntegerTextBox is changed. When the [Culture]([Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html)) property is changed the value is formatted based on the new Culture.
 
 {%tabs%}
 {% highlight xaml %}<syncfusion:IntegerTextBox  CultureChanged="IntegerTextBox_CultureChanged"/>{% endhighlight %}
@@ -85,7 +85,7 @@ private void IntegerTextBox_CultureChanged(DependencyObject d, DependencyPropert
 
 ## MaxValueChanged
 
-MaxValueChanged – The event occurs when the MaxValue property of the IntegerTextBox is changed. When the MaxValue is changed the Value and the MinValue properties are formatted.
+[MaxValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MaxValueChanged_EV.html) – The event occurs when the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MaxValue.html) property of the IntegerTextBox is changed. When the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MaxValue.html) is changed the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) and the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MinValue.html) properties are formatted.
 
 {%tabs%}
 {% highlight xaml %}<syncfusion:IntegerTextBox  MaxValueChanged="IntegerTextBox_MaxValueChanged"/>{% endhighlight %}
@@ -109,7 +109,7 @@ private void IntegerTextBox_MaxValueChanged(DependencyObject d, DependencyProper
 
 ## MinValueChanged
 
-MinValueChanged – The event occurs when the MinValue property of the IntegerTextBox is changed. When the MinValue is changed the Value and the MaxValue properties are formatted.
+[MinValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MinValueChanged_EV.html) – The event occurs when the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MinValue.html) property of the IntegerTextBox is changed. When the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~MinValue.html) is changed the Value and the MaxValue properties are formatted.
 
 {%tabs%}
 {% highlight xaml %}<syncfusion:IntegerTextBox  MinValueChanged="IntegerTextBox_MinValueChanged"/>{% endhighlight %}
@@ -133,7 +133,7 @@ private void IntegerTextBox_MinValueChanged(DependencyObject d, DependencyProper
 
 ## SelectionChanged
 
-SelectionChanged – The event occurs when the selection in the textbox is changed.
+[SelectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionchanged?redirectedfrom=MSDN&view=netframework-4.7.2) – The event occurs when the selection in the textbox is changed.
 
 {%tabs%}
 {% highlight xaml %}<syncfusion:IntegerTextBox  SelectionChanged="IntegerTextBox_SelectionChanged"/>{% endhighlight %}

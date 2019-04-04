@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hiding Fields in Pivot Schema Designer
-description: Hiding fields in pivot schema designer
+title: Hiding Fields in Pivot Schema Designer | PivotGrid | Syncfusion
+description: Support to hide the unnecessary fields from the pivot table field list in pivot grid control. | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -89,10 +89,10 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](PivotSchemaDesigner-Images/PivotTableFieldList when enabled showsdisplayfields only.png)
+![PivotSchemaDesigner with ShowDisplayFieldsOnly](PivotSchemaDesigner-Images/PivotTableFieldList when enabled showsdisplayfields only.png)
 
 _PivotSchemaDesigner with ShowDisplayFieldsOnly_
 
-![](PivotSchemaDesigner-Images/PivotTableFieldList when disbled showsdisplayfields only.png)
+![PivotSchemaDesigner without ShowDisplayFieldsOnly](PivotSchemaDesigner-Images/PivotTableFieldList when disbled showsdisplayfields only.png)
 
 _PivotSchemaDesigner without ShowDisplayFieldsOnly_

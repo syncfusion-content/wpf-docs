@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding Support| DoubleTextBox  | Wpf | Syncfusion
+title: Binding Support | DoubleTextBox  | WPF | Syncfusion
 description: binding support
 platform: wpf
 control: DoubleTextBox 
@@ -9,7 +9,7 @@ documentation: ug
 
 # Binding Support
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind the data to the DoubleTextBox through the Value property.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind the data to the DoubleTextBox through the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property.
 
 The following example shows a simple binding between the value of the DoubleTextBox and another DoubleTextBox value that reflects the typed value:
 
@@ -31,7 +31,7 @@ Value="{Binding ElementName=doubleTextBox1,Path=Value,Mode=TwoWay}"/>
 
 {% endhighlight %}
 
-![](Binding-Support_images/Binding-Support_img1.png)
+![Binding support](Binding-Support_images/Binding-Support_img1.png)
 
 
 
@@ -88,7 +88,7 @@ Converter={StaticResource stringToDoubleConverter}}"/>
 
 {% endhighlight %}
 
-![](Binding-Support_images/Binding-Support_img2.png)
+![Binding support](Binding-Support_images/Binding-Support_img2.png)
 
 
 

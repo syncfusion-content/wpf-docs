@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing the Value and Total Cells in Pivot Grid
-description: Editing the value and total cells in pivot grid
+title: Editing the Value and Total Cells in Pivot Grid | Syncfusion
+description: Support to edit the value cells and total cells at run-time in pivot grid control. | WPF | Syncfusion
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -83,7 +83,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Editing-Images/PivotGrid shows edited value cell.png)
+![To edit the value cells in PivotGrid](Editing-Images/PivotGrid shows edited value cell.png)
 
 ## Enable editing for total cells
 
@@ -136,7 +136,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Editing-Images/PivotGrid shows edited total cell.png)
+![To edit the total cell values in PivotGrid](Editing-Images/PivotGrid shows edited total cell.png)
 
 ## Custom editing manager
 
@@ -200,4 +200,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Editing-Images/PivotGrid shows edited Custom Editing.png)
+![To customize the edited cell values in PivotGrid](Editing-Images/PivotGrid shows edited Custom Editing.png)
