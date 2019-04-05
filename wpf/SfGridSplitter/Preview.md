@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preview of SfGridSplitter control for WPF
+title: Preview | SfGridSplitter | WPF | Syncfusion
 description: Preview of SfGridSplitter control for WPF
 platform: WPF
 control: SfGridSplitter
@@ -13,7 +13,7 @@ documentation: ug
 
 ## Enable preview
 
-Preview for the redistributed rows or columns can be enabled using the property `ShowsPreview`.
+Preview for the redistributed rows or columns can be enabled using the property [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~ShowsPreview.html).
 
 {% tabs %}
 
@@ -71,11 +71,11 @@ Preview for the redistributed rows or columns can be enabled using the property 
 
 {% endtabs %}
 
-![](Preview-images/Preview-img1.jpeg)
+![Enable preview](Preview-images/Preview-img1.jpeg)
 
 ## Style preview
 
-The previewer can be customized using `PreviewStyle` property.
+The previewer can be customized using [PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~PreviewStyle.html) property.
 
 {% tabs %}
 
@@ -147,6 +147,6 @@ Data="M49.041,37.888998C46.583956,45.443701 40.718889,48.415001 32.000286,48.415
 
 {% endtabs %}
 
-![](Preview-images/Preview-img2.jpeg)
+![preview style](Preview-images/Preview-img2.jpeg)
 
 
