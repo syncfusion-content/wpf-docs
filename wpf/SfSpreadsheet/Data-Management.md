@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Management in SfSpreadsheet
-description: How to import and export the data in SfSpreadsheet
+title: Data Management in SfSpreadsheet | SfSpreadsheet | syncfusion
+description: This section explains that how to import and export the data in SfSpreadsheet for Syncfusion Essential WPF.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
