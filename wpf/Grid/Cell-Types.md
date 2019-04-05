@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell-Types | GridControl | wpf | Syncfusion
-description: cell types
+description: This secction provides the list of different cell types of the grid for Syncfusion Essential WPF.
 platform: wpf
 control: Grid Control
 documentation: ug
