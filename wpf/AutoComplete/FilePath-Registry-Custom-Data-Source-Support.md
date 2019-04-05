@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FilePath-Registry--Custom-Data-Source-Support | AutoComplete | wpf | Syncfusion
+title: Custom data source support | AutoComplete | wpf | Syncfusion
 description: filepath, registry & custom data source support
 platform: wpf
 control: AutoComplete
@@ -23,7 +23,7 @@ Source—FilePath
 When the value of the [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~Source.html) property is set as Registry, the AutoComplete loads the values from the Registry. It 
 is used when the Registry keys are required as input. This is illustrated in the image given below.
 
-![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img2.png)
+![source registry](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img2.png)
 
 Source—Registry
 {:.caption}
@@ -32,7 +32,7 @@ When the value of the [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.Too
 bounded to the AutoComplete control by using the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~CustomSource.html) property. This is illustrated in the image given 
 below.
 
-![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img3.png)
+![source custom](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img3.png)
 
 Source—Custom
 {:.caption}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter-Support
+title: Filter support | AutoComplete | WPF | Syncfusion
 description: filter support
 platform: wpf
 control: AutoComplete
