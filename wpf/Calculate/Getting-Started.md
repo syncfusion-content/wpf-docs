@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Essential Calculate | Calculate | Syncfusion
-description: This section explains that how to compute the formulas using CalcQuickBase,CalcEngine and ICalcData for wpf/syncfusion
+description: This section explains that how to compute the formulas using CalcQuickBase,CalcEngine and ICalcData for Syncfusion Essential WPF.
 platform: wpf
 control: Calculate
 documentation: ug

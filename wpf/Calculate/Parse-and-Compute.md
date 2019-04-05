@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Parse and Compute | Calculate | Essential wpf/Syncfusion
-description: This section lists out the parsing and computing methods to compute a custom function in Calculate for wpf/Syncfusion
+title: Parse and Compute | Calculate | Syncfusion Essential WPF
+description: This section lists out the parsing and computing methods to compute a custom function in Calculate for Syncfusion Essential WPF.
 platform: wpf
 control: Calculate
 documentation: ug

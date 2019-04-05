@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in SfSpreadsheet | wpf | Syncfusion
-description: This section explains that how to localize the default strings of SfSpreadsheet to any language settings for wpf/syncfusion
+description: This section explains that how to localize the default strings of SfSpreadsheet to any language settings for Syncfusion Essential WPF.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

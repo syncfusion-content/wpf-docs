@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formulas in SfSpreadsheet | SfSpreadsheet | wpf/Syncfusion
-description: This section provides the list of formulas supported by SfSpreadsheet with example for Syncfusion essential studio wpf.
+title: Formulas in SfSpreadsheet | SfSpreadsheet | Syncfusion
+description: This section provides the list of formulas supported by SfSpreadsheet with example for Syncfusion Essential WPF.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

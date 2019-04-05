@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Editing behavior in SfSpreadsheet | SfSpreadsheet | syncfusion
-description: This section provides a basic ideas of Editing behavior in SfSpreadsheet for EssentialStudio wpf/Syncfusion.
+description: This section provides a basic ideas of Editing behavior in SfSpreadsheet for Syncfusion Essential WPF.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

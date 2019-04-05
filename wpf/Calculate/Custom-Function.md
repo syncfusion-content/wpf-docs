@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Function | Calculate | Essential wpf/Syncfusion
+title: Custom Function | Calculate | Syncfusion Essential WPF
 description: This section describes that how to add and remove the user defined function for wpf/Syncfusion essential calculate
 platform: wpf
 control: Calculate

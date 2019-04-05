@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with CalcQuickBase | Calculate | Essential wpf/Syncfusion
-description: This section explains that how the computation/calculation for the formul are working with CalcQuickBase for wpf/Syncfusion
+title: Working with CalcQuickBase | Calculate | Syncfusion Essential WPF
+description: This section explains that how the computation/calculation for the formul are working with CalcQuickBase for Syncfusion Essential WPF.
 platform: wpf
 control: Calculate
 documentation: ug

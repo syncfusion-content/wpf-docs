@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Formatting in SfSpreadsheet | SfSpreadsheet | Syncfusion
-description: This section explains that how to apply the styles and formats in SfSpreadsheet for EssentialStudio wpf/Syncfusion.
-platform: wpf
+description: This section explains that how to apply the styles and formats in SfSpreadsheet for Syncfusion Essential WPF.
 control: SfSpreadsheet
 documentation: ug
 ---
