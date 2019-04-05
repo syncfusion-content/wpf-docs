@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Calculations
-description: Custom calculations
+title: Custom Calculations | PivotGrid | Syncfusion
+description: Information about pivot calculation items used in PivotGrid control to specify the type of calculation.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -95,7 +95,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Calculation-Type-images/PivotGrid shows percentageofcolumntotal calculation type.png)
+![To display the pivot calculation as percentage of column total format](Calculation-Type-images/PivotGrid shows percentageofcolumntotal calculation type.png)
 
 ## Providing expression field calculation for summaries
 
@@ -168,4 +168,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Calculation-Type-images/PivotGrid shows formula calculation type.png)
+![To display the pivot calculation values based on given formula](Calculation-Type-images/PivotGrid shows formula calculation type.png)

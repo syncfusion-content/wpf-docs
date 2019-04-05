@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 145-Display-the-Calculation-Columns-in-Row
-description:         1.4.5 display the calculation columns in row?
+title: 145-Display-the-Calculation-Columns-in-Row | Syncfusion
+description: Section helps to know how to set defer layout update either programmatically or dynamically in pivot grid control | Syncfusion
 platform: wpf
 control: PivotGridControl
 documentation: ug

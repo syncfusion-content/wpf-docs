@@ -9,34 +9,13 @@ documentation: ug
 
 # Range Adorner Background
 
-The RangeAdornerBackground property is used to set the background color of the range adorner. 
+The [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~RangeAdornerBackground.html) property is used to set the background color of the range adorner. 
 
-
-
-![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)
-
-
-
-### Properties
-
-
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-RangeAdornerBackground</td><td>
-Sets the background color of the adorner.</td><td>
-Color name</td></tr>
-</table>
+![Range adorner background](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)
 
 ## Adding Range Adorner Background to an Application 
 
-The RangeAdornerBackground property must be set either in XAML or the code file.
+The [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~RangeAdornerBackground.html) property must be set either in XAML or the code file.
 
 
 {% tabs %}

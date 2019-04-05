@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Find and Replace Operation in SfSpreadsheet
-description: Find and Replace Operation in SfSpreadsheet
+title:  Find and Replace Operation in SfSpreadsheet | Syncfusion
+description: This section explains that how to find a text in SfSpreadsheet and replace it with different string for Syncfusion Essential WPF.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

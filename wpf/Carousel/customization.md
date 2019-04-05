@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with Path Support and Radius Support provided by Carousel control for WPF
+title: Path and radius Support | Carousel | WPF | Syncfusion
 description: Explains about Path and Radius Support  provided by Carousel control for WPF
 platform: wpf
 control: Carousel
@@ -15,7 +15,7 @@ Carousel panel arrange its children on a path. User can specify any path and it 
 
 ### VisualMode
 
-In our carousel control, we can set the path using the two different modes of VisualMode property.To use the standard path, the VisualMode property need to set as Standard.And to set the custom path, use VisualMode as **CustomPath** along with **Path** Property of Carousel control. By default, the VisualMode value is Standard for carousel control. The same has been explained in the below code example.
+In our carousel control, we can set the path using the two different modes of [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~VisualMode.html) property.To use the standard path, the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~VisualMode.html) property need to set as Standard.And to set the custom path, use VisualMode as **CustomPath** along with **Path** Property of Carousel control. By default, the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~VisualMode.html) value is Standard for carousel control. The same has been explained in the below code example.
 
 #### VisualMode Standard
 
@@ -70,7 +70,7 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 {% endtabs %}
 
-![](customization_images/StandardVisualMode.jpeg)
+![Visual mode](customization_images/StandardVisualMode.jpeg)
 
 #### VisualMode as CustomPath
 
@@ -141,7 +141,7 @@ carousel.ItemsSource = New ObservableCollection(Of String)() From { _
 
 {% endtabs %}
 
-![](customization_images/CustomVisualMode.jpeg)
+![Visual mode as custom path](customization_images/CustomVisualMode.jpeg)
 
 
 ## Properties
@@ -161,9 +161,9 @@ DependencyProperty<br/><br/></td><td>
 CustomEditorCollection<br/><br/></td></tr>
 </table>
 
-# Radius Support
+## Radius Support
 
-**RadiusX** and **RadiusY** properties in the Carousel can be used to define the X and Y axis radius to render the control.
+[RadiusX](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RadiusX.html) and [RadiusY](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Carousel~RadiusY.html) properties in the Carousel can be used to define the X and Y axis radius to render the control.
 
 ## Adding Radius support to an Application
 
@@ -217,5 +217,5 @@ grid1.Children.Add(carousel)
 
 {% endtabs %}
 
-![](customization_images/radius-support-images.png)
+![Adding radius support to an application](customization_images/radius-support-images.png)
 

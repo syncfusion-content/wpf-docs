@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Types
-description: Chart types
+title: Chart Types | OLAP Chart | Syncfusion
+description: Information about various chart types such as column, bar, line, area, etc., provided in OLAP Chart control.
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -34,7 +34,7 @@ N> Chart type must be set before invoking the DataBind() method. Whenever you ch
 
 Column chart is the most basic type of all charts. Column charts are widely used for comparison analysis.
 
-![](Chart-types_images/Chart-types_img1.png)
+![Column chart](Chart-types_images/Chart-types_img1.png)
 
 The following code sample shows how to select a simple column chart.
 
@@ -70,7 +70,7 @@ A sample demo is available at the following location.
 
 The stacking column chart is a simple form of chart, which contains segments in each series. This chart type is widely used for proportional analysis over a particular period of time.
 
-![](Chart-types_images/Chart-types_img2.png)
+![StackingColumn chart](Chart-types_images/Chart-types_img2.png)
 
 The following code sample shows how to select a stacking column chart.
 
@@ -106,7 +106,7 @@ A sample demo is available at the following location.
 
 Stacking column 100 chart is a simple form of chart. Like stacking column chart, the stacking column 100 chart also contains segments in each series, which is added to equate each series to 100%. This chart type is widely used for proportional analysis over a particular period of time.
 
-![](Chart-types_images/Chart-types_img3.png)
+![StackingColumn100 chart](Chart-types_images/Chart-types_img3.png)
 
 The following code sample shows how to select a stacking column 100 chart.
 
@@ -142,7 +142,7 @@ A sample demo is available at the following location.
 
 The bar chart is same as the column chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for comparison analysis over a particular period of time.
 
-![](Chart-types_images/Chart-types_img4.png)
+![Bar chart](Chart-types_images/Chart-types_img4.png)
 
 The following code sample shows how to select a bar chart.
 
@@ -178,7 +178,7 @@ A sample demo is available at the following location.
 
 Stacking bar chart functions same as the stacking column chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
 
-![](Chart-types_images/Chart-types_img5.png)
+![StackingBar chart](Chart-types_images/Chart-types_img5.png)
 
 The following code sample shows how to select a stacking bar chart.
 
@@ -214,7 +214,7 @@ A sample demo is available at the following location.
 
 The stacking bar 100 chart functions same as the stacking column 100 chart, but it can be rotated to 90 degrees in the clockwise direction. This chart type is widely used for proportional analysis over a particular period of time.
 
-![](Chart-types_images/Chart-types_img6.png)
+![StackingBar100 chart](Chart-types_images/Chart-types_img6.png)
 
 The following code sample shows how to select a stacking bar 100 chart.
 
@@ -250,7 +250,7 @@ A sample demo is available at the following location.
 
 The area chart fills the quantitative data over a period of time. It is mainly used to compare the quantity plotted over two or more series.
 
-![](Chart-types_images/Chart-types_img7.png)
+![Area chart](Chart-types_images/Chart-types_img7.png)
 
 The following code sample shows how to select an area chart.
 
@@ -286,7 +286,7 @@ A sample demo is available at the following location.
 
 The stacking area chart fills the quantitative data over a period of time just like the line area chart, but it differs by the plotting method. In the stacking area chart, each series is plotted on the top of the previous series rather than starting from 0 of the horizontal axis. It is mainly used to compare the quantity plotted over two or more series.
 
-![](Chart-types_images/Chart-types_img8.png)
+![StackingArea chart](Chart-types_images/Chart-types_img8.png)
 
 The following code sample shows how to select a stacking area chart.
 
@@ -322,7 +322,7 @@ A sample demo is available at the following location.
 
 The spline area chart is usually used in the case of approximating the intervals by using the spline curve. It is often used when data points are in limited number.
 
-![](Chart-types_images/Chart-types_img9.png)
+![SplineArea chart](Chart-types_images/Chart-types_img9.png)
 
 The following code sample shows how to select a spline area chart.
 
@@ -358,7 +358,7 @@ A sample demo is available at the following location.
 
 In the step area chart, the points are plotted instead of a straight line tracing the shortest path between points. The values are connected by continuous vertical and horizontal lines.
 
-![](Chart-types_images/Chart-types_img10.png)
+![StepArea chart](Chart-types_images/Chart-types_img10.png)
 
 The following code sample shows how to select a step area chart.
 
@@ -394,7 +394,7 @@ A sample demo is available at the following location.
 
 The line chart is a simple form of chart, which connects a series of data points. Usually, it is used for Trend analysis, Forecasting, or in the case of large data points.
 
-![](Chart-types_images/Chart-types_img11.png)
+![Line chart](Chart-types_images/Chart-types_img11.png)
 
 The following code sample shows how to select a line chart.
 
@@ -430,7 +430,7 @@ A sample demo is available at the following location.
 
 The spline chart is a simple form of chart, which connects the series of data points with an arc rather than a straight line. 
 
-![](Chart-types_images/Chart-types_img12.png)
+![Spline chart](Chart-types_images/Chart-types_img12.png)
 
 The following code sample shows how to select a spline chart.
 
@@ -466,7 +466,7 @@ A sample demo is available at the following location.
 
 The rotated spline chart is similar to the spline chart, but it can be rotated to 90 degrees in the clockwise direction.
 
-![](Chart-types_images/Chart-types_img13.png)
+![RotatedSpline chart](Chart-types_images/Chart-types_img13.png)
 
 The following code sample shows how to select a rotated spline chart.
 
@@ -502,7 +502,7 @@ A sample demo is available at the following location.
 
 The step line chart is another form of chart, which connects the series of data points by using horizontal and vertical lines.
 
-![](Chart-types_images/Chart-types_img14.png)
+![StepLine chart](Chart-types_images/Chart-types_img14.png)
 
 The following code sample shows how to select a step line chart.
 
@@ -538,7 +538,7 @@ A sample demo is available at the following location.
 
 The scatter chart is a collection of points plotted in the rectangular co-ordinate system. It is often used in relationship analysis upto one independent variable.
 
-![](Chart-types_images/Chart-types_img15.png)
+![Scatter chart](Chart-types_images/Chart-types_img15.png)
 
 The following code sample shows how to select a scatter chart.
 
@@ -574,7 +574,7 @@ A sample demo is available at the following location.
 
 The pie chart renders the data points in segments. It can render only one series at a time. Usually, it is used for proportional analysis for a small set of data points.
 
-![](Chart-types_images/Chart-types_img16.png)
+![Pie chart](Chart-types_images/Chart-types_img16.png)
 
 The following code sample shows how to select a pie chart.
 

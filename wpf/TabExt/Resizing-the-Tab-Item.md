@@ -9,7 +9,7 @@ documentation: ug
 
 # Resizing the Tab Item
 
-Tab Items are resized by using the TabItemSize property. This property comes with the following resizing modes.
+Tab Items are resized by using the [TabItemSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemSize.html) property. This property comes with the following resizing modes.
 
 * Normal–the header of the Tab Items are displayed normally
 * ShrinkToFit–the header of the Tab Items are shrunk to fit the header area
@@ -107,7 +107,7 @@ stackPanel.Children.Add(tabControlExt);
 
 {% endtabs %}
 
-![](Resizing-the-Tab-Item_images/Resizing-the-Tab-Item_img1.jpeg)
+![Resizing the tab item](Resizing-the-Tab-Item_images/Resizing-the-Tab-Item_img1.jpeg)
 
 {% seealso %}
 

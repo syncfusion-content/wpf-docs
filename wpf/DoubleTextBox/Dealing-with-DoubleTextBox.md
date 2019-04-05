@@ -11,9 +11,9 @@ documentation: ug
 
 ## Watermark
 
-The Watermark text is the dummy content displayed in the DoubleTextBox when the value is null. It can be set using the `WatermarkText` property. To enable Watermark text, the `WatermarkTextIsVisible` property need to set to true. By default its value is false.
+The Watermark text is the dummy content displayed in the DoubleTextBox when the value is null. It can be set using the [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. To enable Watermark text, the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property need to set to true. By default its value is false.
 
-N> WatermarkText is visible only when the value of DoubleTextBox is null.
+N> [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) is visible only when the value of DoubleTextBox is null.
 
 {% tabs %}
 
@@ -53,9 +53,9 @@ Grid1.Children.Add(DoubletextBox1)
 
 {% endtabs %}
 
-![](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img1.jpeg)
+![Watermark text](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img1.jpeg)
 
-WatermarkText automatically collapses when the control is in focus. When the control loses its focus the WatermarkText comes to the visible state if the Value is null and the WatermarkTextIsVisible is true.
+[WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) automatically collapses when the control is in focus. When the control loses its focus the [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) comes to the visible state if the Value is null and the WatermarkTextIsVisible is true.
 
 ## Binding value
 
@@ -63,7 +63,7 @@ Data binding is the process of establishing a connection between the application
 
 The following example shows a simple binding between the value of the DoubleTextBox and another DoubleTextBox value that reflects the typed value:
 
-![](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img2.jpeg)
+![Binding value](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img2.jpeg)
 
 To bind values other than double values, the Value Converter need to use. The following example shows a simple binding between the value of the DoubleTextBox and the Textbox text that reflects the typed value:
 
@@ -85,11 +85,11 @@ To bind values other than double values, the Value Converter need to use. The fo
 
 {% endtabs %}
 
-![](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img3.jpeg)
+![Binding value](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img3.jpeg)
 
 ## Keyboard and Mouse support
 
-Up or down key arrows allows to spin the values of DoubleTextBox one step up or down. Mouse Scroll in the DoubleTextBox spin the values one step up or down. This spin behavior in the DoubleTextBox, can be restricted by setting the `IsScrollingOnCircle` property to `false`. By default, its value is `true`.
+Up or down key arrows allows to spin the values of DoubleTextBox one step up or down. Mouse Scroll in the DoubleTextBox spin the values one step up or down. This spin behavior in the DoubleTextBox, can be restricted by setting the [IsScrollingOnCircle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~IsScrollingOnCircle.html) property to `false`. By default, its value is `true`.
 
 {% tabs %}
 
@@ -128,7 +128,7 @@ Grid1.Children.Add(doubleTextBox)
 
 If the DoubleTextBox is read-only, then no user input or edits are allowed but programmatic changes can be made. The user can still select text and the cursor still appears. 
 
-To enable this feature set `IsReadOnly` to `true`. By default its value is `false`.
+To enable this feature set [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) to `true`. By default its value is `false`.
 
 {% tabs %}
 
@@ -158,7 +158,7 @@ Grid1.Children.Add(doubleTextBox)
 
 ## EnterToMoveNext
 
-On pressing the Enter key in the DoubleTextBox, then the Focus moves to the next element in the application. To restrict this feature the `EnterToMoveNext` property need to set to `false`. By default its value is `true`.
+On pressing the Enter key in the DoubleTextBox, then the Focus moves to the next element in the application. To restrict this feature the [EnterToMoveNext](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnterToMoveNext.html) property need to set to `false`. By default its value is `true`.
 
 {% tabs %}
 
@@ -188,7 +188,7 @@ Grid1.Children.Add(doubleTextBox)
 
 ## TextSelectionOnFocus
 
-The `TextSelectionOnFocus` property allows the DoubleTextBox to act like standard text boxes when the cursor hovers over. To restrict this behavior set its value as false. By default the value is true.
+The [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property allows the DoubleTextBox to act like standard text boxes when the cursor hovers over. To restrict this behavior set its value as false. By default the value is true.
 
 {% tabs %}
 
@@ -218,11 +218,11 @@ Grid1.Children.Add(doubleTextBox)
 
 ## Extended scrolling
 
-The `EnableExtendedScrolling` property is used to change the values based on the click and drag direction of the mouse movements. The range will increase when the mouse moves to the right or top of the screen, and will decrease when the mouse moves in the direction of the left or bottom of the screen. Before that, the control should be in an unfocused state. The default value is false.
+The [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is used to change the values based on the click and drag direction of the mouse movements. The range will increase when the mouse moves to the right or top of the screen, and will decrease when the mouse moves in the direction of the left or bottom of the screen. Before that, the control should be in an unfocused state. The default value is false.
 
 ### Adding extended scrolling to an application
 
-The EnableExtendedScrolling property must be set either in XAML or the code file.
+The [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property must be set either in XAML or the code file.
 
 {% tabs %}
 
@@ -256,11 +256,11 @@ Grid1.Children.Add(doubleTextBox)
 
 {% endtabs %}
 
-![](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img4.jpeg)
+![Adding extended scrolling to an application](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img4.jpeg)
 
 ## Range adorner
 
-To show the adorner range based on the minimum and maximum values, the EnableRangeAdorner property need to set to True. By Default its value is false.
+To show the adorner range based on the minimum and maximum values, the [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property need to set to True. By Default its value is false.
 
 {% tabs %}
 
@@ -305,4 +305,4 @@ Grid1.Children.Add(doubleTextBox)
 
 {% endtabs %}
 
-![](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img5.jpeg)
+![Range adorner](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img5.jpeg)

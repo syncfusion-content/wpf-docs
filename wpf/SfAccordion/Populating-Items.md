@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating Items of SfAccordion control for WPF
+title: Populating Items | SfAccordion | WPF | Syncfusion
 description: Explains about Populating Items of SfAccordion control for WPF
 platform: WPF
 control: SfAccordion
@@ -79,11 +79,11 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img1.jpeg)
+![Adding items to the control](Populating-Items-images/Populating-Items-img1.jpeg)
 
 ### Setting Header for items
 
-`SfAccordionItem` provides a property `Header` that helps to set the header for the item. `Header` is visible in both expanded and collapsed state. Set the value as “WPF” for the first child and repeat the same procedure for the remaining children with values as “Silverlight”, “WinRT”, ”Windows Phone” and “Universal”.
+`SfAccordionItem` provides a property [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) that helps to set the header for the item. [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_HeaderedContentControl_Header) is visible in both expanded and collapsed state. Set the value as “WPF” for the first child and repeat the same procedure for the remaining children with values as “Silverlight”, “WinRT”, ”Windows Phone” and “Universal”.
 
 {% tabs %}
 
@@ -145,11 +145,11 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 `SfAccordion` control is populated as follows:
 
-![](Populating-Items-images/Populating-Items-img2.jpeg)
+![Setting Header for items](Populating-Items-images/Populating-Items-img2.jpeg)
 
 ### Setting Content for items
 
-`Content` property helps to set the content for `SfAccordionItem`. `SfAccordionItem` is a ContentControl so that any object can be added as its content. Content is visible only in expanded state.
+[Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_ContentControl_Content) property helps to set the content for `SfAccordionItem`. `SfAccordionItem` is a ContentControl so that any object can be added as its content. Content is visible only in expanded state.
 
 {% tabs %}
 
@@ -226,15 +226,15 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img3.jpeg)
+![Setting Content for items](Populating-Items-images/Populating-Items-img3.jpeg)
 
 ## Using ItemsSource
 
-SfAccordion accepts any business object collection to be bound to its ItemsSource property. 
+SfAccordion accepts any business object collection to be bound to its [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property. 
 
 ### Adding items to the control
 
-Follow the below steps to add the Items through ItemsSource property.
+Follow the below steps to add the Items through [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property.
 
 1.Create a model
 
@@ -348,7 +348,7 @@ Follow the below steps to add the Items through ItemsSource property.
 
 {% endtabs %}
 
-4.Bind the Employees collection to `ItemsSource` property of `SfAccordion` Control
+4.Bind the Employees collection to [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property of `SfAccordion` Control
 
 {% tabs %}
 
@@ -362,11 +362,11 @@ Follow the below steps to add the Items through ItemsSource property.
 
 `SfAccordion` control is populated as follows:
 
-![](Populating-Items-images/Populating-Items-img4.jpeg)
+![Adding items to the control](Populating-Items-images/Populating-Items-img4.jpeg)
 
 ### Setting Header for items
 
-Header can be displayed using the property `DisplayMemberPath`. This property is used to get the header from Model class. Header is visible in both expanded and collapsed state. 
+Header can be displayed using the property [DisplayMemberPath](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2). This property is used to get the header from Model class. Header is visible in both expanded and collapsed state. 
 
 {% tabs %}
 
@@ -378,9 +378,9 @@ Header can be displayed using the property `DisplayMemberPath`. This property is
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img5.jpeg)
+![Setting Header for items](Populating-Items-images/Populating-Items-img5.jpeg)
 
-`HeaderTemplate` property can also be used to display the header. `HeaderTemplateSelector` property is also provided to apply header template based on the selection logic. 
+[HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~HeaderTemplate.html) property can also be used to display the header. [HeaderTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~HeaderTemplateSelector.html) property is also provided to apply header template based on the selection logic. 
 
 {% tabs %}
 
@@ -404,11 +404,11 @@ Header can be displayed using the property `DisplayMemberPath`. This property is
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img6.jpeg)
+![Setting Header for items](Populating-Items-images/Populating-Items-img6.jpeg)
 
 ### Setting Content for items
 
-Content can be displayed using the `ContentTemplate` property. Content is visible only in the expanded state.`ContentTemplateSelector` property is also provided to apply content template based on the selection logic.
+Content can be displayed using the [ContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~ContentTemplate.html) property. Content is visible only in the expanded state. [ContentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfAccordion.WPF~Syncfusion.Windows.Controls.Layout.SfAccordion~ContentTemplateSelector.html) property is also provided to apply content template based on the selection logic.
 
 {% tabs %}
 
@@ -432,4 +432,4 @@ Content can be displayed using the `ContentTemplate` property. Content is visibl
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img7.jpeg)
+![Setting Content for items](Populating-Items-images/Populating-Items-img7.jpeg)

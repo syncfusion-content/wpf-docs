@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 143-Customize-the-Appearance-of-Expanders-in-a-Gri
-description:         1.4.3 customize the appearance of expanders in a grid?
+title: 143-Customize-the-Appearance-of-Expanders-in-a-Gri | Syncfusion
+description: Section helps to know how to customize the appearance of expanders using customized styles in PivotGrid control.
 platform: wpf
 control: PivotGridControl
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding
-description: Binding OLAP Client to OLAP Cube
+title: Data Binding | OLAP Client | Syncfusion
+description: Binding OLAP Client to OLAP Cube either by using connection string or SQL server analysis service | OLAP Client | Syncfusion
 platform: wpf
 control: OLAP Client
 documentation: ug

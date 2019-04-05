@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag–and-Drop
 
-Drag-and-Drop enables you to drag the TileViewItems in TileViewControl in a normal state. Once the TileViewItem is dragged, the other items in the TileViewControl moves to the corresponding positions in accordance to the dragging item. This can be enabled and disabled by using the AllowItemsRepositioning property.
+Drag-and-Drop enables you to drag the TileViewItems in TileViewControl in a normal state. Once the TileViewItem is dragged, the other items in the TileViewControl moves to the corresponding positions in accordance to the dragging item. This can be enabled and disabled by using the [AllowItemRepositioning](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~AllowItemRepositioning.html) property.
 
 ## Adding Dragging Items to an Application 
 
@@ -51,48 +51,9 @@ tileViewCntrl.AllowItemRepositioning = true;
 
 {% endhighlight %}
 
-
-
-## Properties
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-AllowItemRepositioning</td><td>
-Enables or disables the TileViewItems from dragging.</td><td>
-DependencyProperty</td><td>
-True</td><td>
-</td></tr>
-</table>
-
-
 ## Events
 
-
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-AllowItemRepositioningChanged</td><td>
-The event gets fired when the dragging items feature is enabled or disabled.</td><td>
-</td><td>
-</td><td>
-</td></tr>
-</table>
+* [AllowItemRepositioningChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~AllowItemRepositioningChanged_EV.html)
 
 
 ## Sample Link

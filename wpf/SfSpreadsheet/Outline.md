@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Outlines support in SfSpreadsheet
-description: How to group/ungroup the rows and columns in SfSpreadsheet
-platform: wpf
+title: Outlines support in SfSpreadsheet | Syncfusion
+description: This section explains that how to group/ungroup the rows and columns in SfSpreadsheet for Syncfusion Essential WPF.
 control: SfSpreadsheet
 documentation: ug
 ---

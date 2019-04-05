@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging| OlapGrid | Wpf | Syncfusion
-description: paging
+description: Support to load and render the large amounts of data without any performance constraints in OLAP Grid control.
 platform: wpf
 control: OlapGrid
 documentation: ug
@@ -150,9 +150,9 @@ End Namespace
 
 {% endtabs %}
 
-![](Paging_images/Paging_img1.png)
+![OlapPager in OlapGrid control](Paging_images/Paging_img1.png)
 
-![](Paging_images/Paging_img2.png)
+![Page Setting Window](Paging_images/Paging_img2.png)
 
 A sample demo is available in the following location.
 

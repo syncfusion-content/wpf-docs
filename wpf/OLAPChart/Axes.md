@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axes of OLAP Chart Area
-description: Axes of OLAP chart area
+title: Axes of OLAP Chart Area | OLAP Chart | Syncfusion
+description: Information about primary axis and secondary axis support provided in OLAP Chart control | Syncfusion
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -17,7 +17,7 @@ In general, for column type charts, the horizontal grid line belongs to the seco
 
 The following illustration describes how the chart will look after the horizontal grid lines are disabled.
 
-![](Axes_images/Axes_img1.png)
+![To disable the horizontal grid lines](Axes_images/Axes_img1.png)
 
 The following code sample describes how to disable the horizontal grid lines.
 
@@ -43,9 +43,9 @@ In general, for column type charts, the vertical grid line belongs to the primar
 
 The following illustration describes how the chart will look after the vertical grid lines are disabled.
 
-![](Axes_images/Axes_img2.png)
+![To disable the vertical grid lines](Axes_images/Axes_img2.png)
 
-The following code sample describes how to disable the horizontal grid lines.
+The following code sample describes how to disable the vertical grid lines.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ To display the ‘%’ symbol in the secondary axis, you should set the secondar
 
 {% endhighlight %}
 
-![](Axes_images/Axes_img3.png)
+![To display the percentage symbol in the secondary axis](Axes_images/Axes_img3.png)
 
 To display the currency symbol in the secondary axis, you should set the secondary axis label format property. The following code sample describes the usage of currency in the secondary axis label.
 
@@ -89,7 +89,7 @@ To display the currency symbol in the secondary axis, you should set the seconda
 
 {% endhighlight %}
 
-![](Axes_images/Axes_img4.png)
+![To display the currency symbol in the secondary axis](Axes_images/Axes_img4.png)
 
 ## Label font settings
 
@@ -172,8 +172,8 @@ Me.olapChart.PrimaryAxisLabelVisibility = System.Windows.Visibility.Collapsed
 
 The following illustration shows how the OLAP chart will look before collapsing the primary axis label.
 
-![](Axes_images/Axes_img5.png)
+![Before collapsing the primary axis label](Axes_images/Axes_img5.png)
 
 The following illustration shows how the OLAP chart will look after collapsing the primary axis label.
 
-![](Axes_images/Axes_img6.png)
+![After collapsing the primary axis label](Axes_images/Axes_img6.png)

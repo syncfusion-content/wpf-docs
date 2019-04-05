@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Series
-description: Series
+title: Series | OLAP Chart | Syncfusion
+description: Information about the data points plotted in the rectangular co-ordinate system in OLAP Chart control.
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -54,7 +54,7 @@ Next i
 
 The following screenshot shows an OLAP chart with point labels enabled.
 
-![](Series_images/Series_img1.png)
+![To enable the point labels in OlapChart](Series_images/Series_img1.png)
 
 ## Color customization
 
@@ -102,15 +102,15 @@ N> The behavior of the series border varies for different chart types. The follo
 
 The series border is applied to the first series of a column chart by using the `StrokeThickness` property. Now, the first series element is surrounded with applied border.
 
-![](Series_images/Series_img2.png)
+![Setting StrokeThickness property to first series of column chart](Series_images/Series_img2.png)
 
 Notice the variation. The same series border property is applied to a series in the line chart. Instead of creating a 4 pixel width border it increases the thickness of the particular series line.
 
-![](Series_images/Series_img3.png)
+![StrokeThickness property value maintained after changing into the line chart](Series_images/Series_img3.png)
 
 The pie chart renders everything in a single series; each block in the pie chart known as segments. The border will be applied on each segments. This is illustrated in the following screenshot.
 
-![](Series_images/Series_img4.png)
+![TO display the series in pie chart](Series_images/Series_img4.png)
 
 ## Custom data templates
 
@@ -199,7 +199,7 @@ End Sub
 
 {% endtabs %}
 
-![](Series_images/Series_img5.png)
+![To get the information of selected chart series](Series_images/Series_img5.png)
 
 {% seealso %}
 
@@ -251,7 +251,7 @@ this.olapChart.SeriesAnimationDuration = new TimeSpan(1);
 
 The following illustration shows the chart animations.
 
-![](Series_images/Series_img6.png)
+![To enable the chart animations in OlapChart](Series_images/Series_img6.png)
 
 A sample demo is available at the following location.
 
@@ -300,7 +300,7 @@ foreach (ChartSeries series in this. olapchart.Series)
   
 The following illustration shows the customization.
 
-![](Series_images/Series_img7.png)
+![Customization of Pie chart](Series_images/Series_img7.png)
 
 A sample demo is available at the following location.
 

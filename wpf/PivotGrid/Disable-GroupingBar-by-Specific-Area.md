@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visibility of Grouping Bar in Specific Area
-description: Customize the visibility of grouping bar in specific area
+title: Visibility of Grouping Bar in Specific Area | Syncfusion
+description: Support to customize the visibility of grouping bar headers to some specific areas in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -85,7 +85,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/Grouping bar in row header area alone.png)
+![To display the row header area alone in the grouping bar](Grouping-Bar-Images/Grouping bar in row header area alone.png)
 
 **EnableColumnHeader**
 
@@ -158,4 +158,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/Grouping bar in both the row and column header area.png)
+![To display row and column headers in the grouping bar](Grouping-Bar-Images/Grouping bar in both the row and column header area.png)

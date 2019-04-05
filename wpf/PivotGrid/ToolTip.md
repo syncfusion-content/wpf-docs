@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip
-description: Tooltip
+title: Tooltip | PivotGrid | Syncfusion
+description: Support to display the cell value and it's row and column information while mouse overed on it in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -83,7 +83,7 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](ToolTip-Images/PivotGrid Shows ToolTip.png)
+![PivotGrid Shows ToolTip for value cells](ToolTip-Images/PivotGrid Shows ToolTip.png)
 
 ## Adding tooltip to specific areas in pivot grid
 
@@ -145,19 +145,19 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](ToolTip-Images/PivotGrid shows Tooltip for summary header.png)
+![PivotGrid shows Tooltip for summary header](ToolTip-Images/PivotGrid shows Tooltip for summary header.png)
 
 _PivotGrid shows tooltip for summary header_
 
-![](ToolTip-Images/PivotGrid shows Tooltip for column header.png)
+![PivotGrid shows Tooltip for column header](ToolTip-Images/PivotGrid shows Tooltip for column header.png)
 
 _PivotGrid shows tooltip for column header_
 
-![](ToolTip-Images/PivotGrid shows Tooltip for row header.png)
+![PivotGrid shows Tooltip for row header](ToolTip-Images/PivotGrid shows Tooltip for row header.png)
 
 _PivotGrid shows tooltip for row header_
 
-![](ToolTip-Images/PivotGrid shows Tooltip for summary value.png)
+![PivotGrid shows Tooltip for summary values](ToolTip-Images/PivotGrid shows Tooltip for summary value.png)
 
 _PivotGrid shows tooltip for summary values_
 
@@ -216,4 +216,4 @@ public partial class MainWindow: Window {
 
 Similarly, you can define the custom tooltip to specific areas with respect to individual cell styles using the `CustomToolTipTemplateKey` property of row, column, summary header, and value cell styles.
 
-![](ToolTip-Images/PivotGrid shows CustomToolTip.png)
+![PivotGrid shows custom ToolTip](ToolTip-Images/PivotGrid shows CustomToolTip.png)

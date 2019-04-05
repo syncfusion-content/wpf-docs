@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag Marker
 
-You can set the color for the Drag Marker by using the DragMarkerColor property. This dependency property sets the brush value for the DragMarkerColor property while you drag the TabItemExt.
+You can set the color for the Drag Marker by using the [DragMarkerColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~DragMarkerColor.html) property. This dependency property sets the brush value for the [DragMarkerColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~DragMarkerColor.html) property while you drag the TabItemExt.
 
 Use the following code snippet to set the color for the Drag Marker.
 

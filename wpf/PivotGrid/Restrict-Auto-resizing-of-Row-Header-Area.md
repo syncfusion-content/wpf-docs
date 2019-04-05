@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restrict Auto Resizing of Row Header
-description: Restrict auto resizing of row header
+title: Restrict Auto Resizing of Row Header | PivotGrid | Syncfusion
+description: Support to restrict the row header items from being stretched when there are too many PivotCalculation items in the data header area.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -81,4 +81,4 @@ public partial class MainWindow: Window
 
 {% endhighlight %}
 
-![](Grouping-Bar-Images/Grouping bar while disabling the auto resiszing feature.png)
+![Pivot grid restrict the row header items](Grouping-Bar-Images/Grouping bar while disabling the auto resiszing feature.png)

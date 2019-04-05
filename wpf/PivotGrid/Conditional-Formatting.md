@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Formatting
-description: Conditional formatting
+title: Conditional formatting using data conditions | PivotGrid | Syncfusion
+description: Support to apply conditional formatting to format the value cells which meets given data condition in PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
 ---
 
-# Conditional Formatting
+# Formatting using data conditions
 
 Conditional formatting is a process of applying customized styles to any object based on specified conditions.
 
@@ -132,4 +132,4 @@ public partial class MainWindow: Window {
 
 {% endhighlight %}
 
-![](Conditional-format-images/PivotGrid shows conditionally formatted values.png)
+![Apply conditional formatting using data conditions.](Conditional-format-images/PivotGrid shows conditionally formatted values.png)

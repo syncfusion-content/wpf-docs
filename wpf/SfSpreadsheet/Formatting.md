@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Formatting in SfSpreadsheet
-description: How to apply the styles and formats in SfSpreadsheet
-platform: wpf
+title: Formatting in SfSpreadsheet | SfSpreadsheet | Syncfusion
+description: This section explains that how to apply the styles and formats in SfSpreadsheet for Syncfusion Essential WPF.
 control: SfSpreadsheet
 documentation: ug
 ---
@@ -201,6 +200,10 @@ spreadsheet.ActiveGrid.InvalidateCell(1,4);
 //Applying Time format for the selected ranges at runtime,
 spreadsheet.Workbook.ActiveSheet.Range["D4"].NumberFormat = "[$-F400]h:mm:ss AM/PM";
 spreadsheet.ActiveGrid.InvalidateCell(3,4);
+
+//Applying Text format for the selected ranges at runtime,
+spreadsheet.Workbook.ActiveSheet.Range["D5"].NumberFormat = "@";
+spreadsheet.ActiveGrid.InvalidateCell(4,4);
   {% endhighlight %}
 {% endtabs %}
 
@@ -251,6 +254,10 @@ m/d/yyyy</td></tr>
 <td>Scientific
 </td><td>
 0.00E+00</td></tr>
+<tr>
+<td>Text</td>
+<td>@</td>
+</tr>
 </table>
 
 ## Built-in Styles

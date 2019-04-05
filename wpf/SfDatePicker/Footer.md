@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with the Visibility of Done and Cancel Buttons of SfDatePicker contol for WPF
+title: Done and Cancel Buttons | SfDatePicker | WPF | Syncfusion
 description: Deals with the Visibility of Done and Cancel Buttons of SfDatePicker contol for WPF
 platform: wpf
 control: SfDatePicker
@@ -15,11 +15,11 @@ The done and cancel buttons can be made visible or hidden using the following pr
 
 ## ShowDoneButton
 
-The ShowDoneButton property is used to show or hide the done button. The default value is true.
+The [ShowDoneButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~ShowDoneButton.html) property is used to show or hide the done button. The default value is true.
 
 The following code sample shows how to hide the done button:
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 	<syncfusion:SfDatePicker VerticalAlignment="Center"
 
@@ -41,18 +41,18 @@ The following code sample shows how to hide the done button:
 		
 {% endhighlight %}
 
-![](Features_images/Features_img11.png)
+![Show done button](Features_images/Features_img11.png)
 
 
 
 
 ## ShowCancelButton
 
-The ShowCancelButton property is used to show or hide the cancel button. The default value is true.
+The [ShowCancelButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~ShowCancelButton.html) property is used to show or hide the cancel button. The default value is true.
 
 The following code sample shows how to hide the cancel button:
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 
 
@@ -76,4 +76,4 @@ The following code sample shows how to hide the cancel button:
 
 			{% endhighlight  %}
 			
-![](Features_images/Features_img12.png)
+![Show cancel button](Features_images/Features_img12.png)

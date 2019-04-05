@@ -13,7 +13,7 @@ Data templates can be customized for items and headers. This section explains ho
 
 ## Item Template 
 
-You can customize how a business object is displayed using ItemTemplate of CardViewItem. The following example shows the usage of ItemTemplate.
+You can customize how a business object is displayed using ItemTemplate of [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardViewItem.html). The following example shows the usage of ItemTemplate.
 
 {% highlight xaml %}
 
@@ -63,7 +63,7 @@ You can customize how a business object is displayed using ItemTemplate of CardV
 
 Implementing the above code generates the following output.
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+![CardView with ItemTemplate](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
 CardView with ItemTemplate
 {:.caption}
@@ -108,14 +108,14 @@ You can also customize header of the CardViewItem using a header template. This 
 
 This generates the following CardView control.
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+![CardView with ItemTemplate](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
   
 CardView control with Header Template
 {:.caption}
 
 ## EditItem Template
 
-You can edit the values loaded in CardViewItem using EditItemTemplate. This is illustrated in the following example.
+You can edit the values loaded in [CardViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardViewItem.html) using [EditItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~EditItemTemplate.html). This is illustrated in the following example.
 
 1. Define a data template for the content as follows.
 
@@ -189,7 +189,7 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
 
 Implementing the above codes generate the following CardView control. 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+![CardView with EditItemTemplate](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
 CardView with EditItemTemplate
 {:.caption}

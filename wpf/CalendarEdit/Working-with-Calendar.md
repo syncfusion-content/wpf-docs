@@ -13,17 +13,17 @@ This section contains the following topics:
 
 ## Setting the date
 
-You can explicitly set the date for the CalendarEdit control, using the Date property. This dependency property sets the date explicitly to the CalendarEdit control. It returns the current date of the CalendarEdit control.
+You can explicitly set the date for the CalendarEdit control, using the [Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~Date.html) property. This dependency property sets the date explicitly to the CalendarEdit control. It returns the current date of the CalendarEdit control.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <!-- Adding calendar with date as 12/12/2009 -->
 <syncfusion:CalendarEdit Name="calendarEdit" Date="12/12/2009"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creating an instance of CalendarEdit control
 CalendarEdit calendarEdit = new CalendarEdit();
@@ -37,23 +37,23 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Working-with-Calendar_images/Working-with-Calendar_img1.jpeg)
+![Calendar date](Working-with-Calendar_images/Working-with-Calendar_img1.jpeg)
 
 ## Settings the days
 
-It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the ShowNextMonthDays and ShowPreviousMonthDays properties. 
+It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the [ShowNextMonthDays](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowNextMonthDays.html) and [ShowPreviousMonthDays](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowPreviousMonthDays.html) properties. 
 
 For setting these properties, use the following code.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <!-- Adding calendar with next month day and previous month day Set to false -->
 <syncfusion:CalendarEdit Name="calendarEdit" ShowNextMonthDays="False" ShowPreviousMonthDays="False"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Creating an instance of CalendarEdit control
 CalendarEdit calendarEdit = new CalendarEdit();
@@ -70,11 +70,11 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Working-with-Calendar_images/Working-with-Calendar_img2.jpeg)
+![Setting days in calendar](Working-with-Calendar_images/Working-with-Calendar_img2.jpeg)
 
 ## Today row
 
-To know the details of current date in a CalendarEdit control, you need to enable Today Row. Set the TodayRowIsVisible property to true to display today's details. This dependency property indicates whether the today bar is visible or collapsed.
+To know the details of current date in a CalendarEdit control, you need to enable Today Row. Set the [TodayRowIsVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayRowIsVisible.html) property to true to display today's details. This dependency property indicates whether the today bar is visible or collapsed.
 
 For setting this property, use the following code example.
 
@@ -100,11 +100,11 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Working-with-Calendar_images/Working-with-Calendar_img3.jpeg)
+![Today row](Working-with-Calendar_images/Working-with-Calendar_img3.jpeg)
 
 ## Week number
 
-Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week numbers, set ShowWeekNumbers property to true as follows.
+Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week numbers, set [ShowWeekNumbers](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~ShowWeekNumbers.html) property to true as follows.
 
 {% tabs %}
 {% highlight xaml %}
@@ -128,11 +128,11 @@ this.Content = calendarEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Working-with-Calendar_images/Working-with-Calendar_img4.jpeg)
+![Week number displayed in calendar](Working-with-Calendar_images/Working-with-Calendar_img4.jpeg)
 
 ## Week numbers grid
 
-It is now possible to edit weekly date in CalendarEdit control. This is achieved by Setting the VisualMode to WeekNumbers as follows.
+It is now possible to edit weekly date in CalendarEdit control. This is achieved by Setting the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) to WeekNumbers as follows.
 
 The following code example illustrates this.
 
@@ -153,7 +153,7 @@ calendar.VisualMode = VisualMode.Syncfusion.Windows.Shared.CalendarVisualMode.We
 
 Run the code. The output is as follows:
 
-![](Working-with-Calendar_images/Working-with-Calendar_img5.jpeg)
+![Week numbers](Working-with-Calendar_images/Working-with-Calendar_img5.jpeg)
 
 ### Changing week number grids default properties
 
@@ -182,7 +182,7 @@ calendar.WeekNumberForeground = Brushes.White;
 
 Run the code. The output is as follows:
 
-![](Working-with-Calendar_images/Working-with-Calendar_img6.jpeg)
+![Week numbers grid customization](Working-with-Calendar_images/Working-with-Calendar_img6.jpeg)
 
 ### Changing week number grids selection properties
 
@@ -192,14 +192,14 @@ The following code example illustrates this.
 
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <!--Calendar Edit with Week Number Selection Properties-->
 <syncfusion:CalendarEdit WeekNumberSelectionBackground="AntiqueWhite" WeekNumberSelectionBorderBrush="Blue" WeekNumberSelectionForeground="Brown" WeekNumberSelectionBorderThickness="2" WeekNumberSelectionBorderCornerRadius="2"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Calendar Edit with Week Number Selection Properties
 CalendarEdit calendar = new CalendarEdit();
@@ -212,7 +212,7 @@ calendar.WeekNumberSelectionBackground = Brushes.AntiqueWhite;calendar.WeekNumbe
 
 Run the code. The output is as follows:
 
-![](Working-with-Calendar_images/Working-with-Calendar_img7.jpeg)
+![Changing week number grids](Working-with-Calendar_images/Working-with-Calendar_img7.jpeg)
 
 ### Changing week number Mouse over properties
 
@@ -221,14 +221,14 @@ You can set the border brush, background and foreground color for the cell focus
 The following code example illustrates this.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
 <!--Calendar Edit with Week Number Mouse Over Properties-->
 <syncfusion:CalendarEdit WeekNumberHoverBackground="Gold"  WeekNumberHoverBorderBrush="DarkOrange" WeekNumberHoverForeground="Indigo" />
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Calendar Edit with Week Number Mouse Over Properties
 CalendarEdit calendar = new CalendarEdit();
@@ -241,7 +241,7 @@ calendar.WeekNumberHoverForeground = Brushes.Indigo;
 
 Run the code. The output is as follows:
 
-![](Working-with-Calendar_images/Working-with-Calendar_img8.jpeg)
+![Week numbers grid customization](Working-with-Calendar_images/Working-with-Calendar_img8.jpeg)
 
 ## Customizing the display of minimum and maximum dates
 
@@ -251,16 +251,16 @@ Minimum dates and Maximum dates display in CalendarEdit can be customized with t
 * When this property is set to False, the display minimum dates and maximum dates are disabled. 
 * The default value for this property is true. It returns the Boolean value.
 
-The following code example illustrates how to set the MinMaxHidden property to the control programmatically.
+The following code example illustrates how to set the [MinMaxHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MinMaxHidden.html) property to the control programmatically.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 <!-- CalendarEdit with MinMaxHidden has false -->
 <syncfusion:CalendarEdit Height ="250" Width ="250" Name="calendar" MinMaxHidden="False" MinDate="11/30/2009" MaxDate="1/4/2010"/>
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 //Create an instance of CalendarEdit
 CalendarEdit calendarEdit = new CalendarEdit();
@@ -273,6 +273,6 @@ calendarEdit.MinMaxHidden = false;
 
 Run the code. The output is as follows:
 
-![](Working-with-Calendar_images/Working-with-Calendar_img9.jpeg)
+![Date range](Working-with-Calendar_images/Working-with-Calendar_img9.jpeg)
 
-![](Working-with-Calendar_images/Working-with-Calendar_img10.jpeg)
+![Date range](Working-with-Calendar_images/Working-with-Calendar_img10.jpeg)

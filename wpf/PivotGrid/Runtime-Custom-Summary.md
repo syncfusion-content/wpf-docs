@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Summary
-description: Define custom summary in runtime and load time
+title: Custom Summary | PivotGrid | Syncfusion
+description: Support to set the custom summaries for the PivotItem values at both load time and runtime (using pivot computation info dialog).
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -182,4 +182,4 @@ public partial class MainWindow: Window {
 
 To set custom summary at runtime, double-click the items from the pivot schema designer that will pop-up the pivot computation information dialog box. In the summarize value by combo box, you can select the predefined custom summaries as required.
 
-![](RunTime-custom-summary-images/PivotGrid with custom summaries.png)
+![PivotGrid with custom summaries](RunTime-custom-summary-images/PivotGrid with custom summaries.png)

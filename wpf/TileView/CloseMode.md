@@ -9,7 +9,7 @@ documentation: ug
 
 # CloseMode 
 
-The CloseMode is an enum which includes values Hidden and Delete, which resides in the TileViewItem. If you click on the CloseButton when the CloseMode is set to be hidden, then the TileViewItem moves to the Hidden state. If the CloseMode is set to Delete, then the TileViewItem will be removed from the TileViewControl. 
+The [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseMode.html) is an enum which includes values Hidden and Delete, which resides in the TileViewItem. If you click on the CloseButton when the CloseMode is set to be hidden, then the TileViewItem moves to the Hidden state. If the [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseMode.html) is set to Delete, then the TileViewItem will be removed from the TileViewControl. 
 
 ## Use Case Scenarios
 
@@ -17,9 +17,9 @@ This feature can be used when you want to move the TileViewItems state to Hidden
 
 
 
-The CloseMode feature can be added to an application by using either XAML or C# code.
+The [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseMode.html) feature can be added to an application by using either XAML or C# code.
 
-The following code example illustrates how to add the CloseMode feature to an application through XAML and C#.
+The following code example illustrates how to add the [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~CloseMode.html) feature to an application through XAML and C#.
 
 
 {% tabs %}
@@ -117,29 +117,6 @@ Background="White">
 {% endhighlight %}
 
 {% endtabs %}
-
-
-## Properties
-
-Property Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type  </th><th>
-Data Type </th><th>
-Reference links  </th></tr>
-<tr>
-<td>
-CloseMode</td><td>
-Specifies the mode for Closing the TileViewControl.</td><td>
-Enum</td><td>
-CloseMode.Hide</td><td>
-</td></tr>
-</table>
-
 
 ## Sample Link
 

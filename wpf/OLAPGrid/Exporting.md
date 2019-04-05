@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export| OlapGrid | Wpf | Syncfusion
-description: export
+title: Exporting| OlapGrid | Wpf | Syncfusion
+description: Support to export the OLAP Grid control into various documents such as Excel, Word, PDF and CSV formats.
 platform: wpf
 control: OlapGrid
 documentation: ug

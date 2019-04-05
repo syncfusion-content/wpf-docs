@@ -13,7 +13,7 @@ Data template can be customized for items and headers of the control. This secti
 
 ## Item Template 
 
-You can customize how a business object is displayed as TileView using the ItemTemplate of TileViewControl. The following code example shows the usage of ItemTemplate.
+You can customize how a business object is displayed as TileView using the [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.7.2) of TileViewControl. The following code example shows the usage of ItemTemplate.
 
 
 {% highlight xaml %}
@@ -68,7 +68,7 @@ Implementing the above code will generate the following TileViewControl.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+![Item template customization](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
 
 
@@ -226,7 +226,7 @@ This will generate the TileViewControl as follows.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+![Customizing data templates](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
 
 
 
@@ -234,7 +234,7 @@ This will generate the TileViewControl as follows.
 
 ## Header Template
 
-You can customize the header of the TileViewItem using the _HeaderTemplate_. The following code example explains this.
+You can customize the header of the TileViewItem using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderTemplate.html). The following code example explains this.
 
 1. Define _DataTemplate_ for _HeaderTemplate_.
 
@@ -267,7 +267,7 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 
 
 
-2. Set the _HeaderTemplate_ for the _TileViewControl_ to the above template.
+2. Set the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~HeaderTemplate.html) for the _TileViewControl_ to the above template.
 
 
    ~~~ xml
@@ -290,7 +290,7 @@ This will generate the following TileViewControl.
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+![Customizing data templates](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
 
 

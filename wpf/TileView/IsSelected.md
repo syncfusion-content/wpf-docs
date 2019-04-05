@@ -9,7 +9,7 @@ documentation: ug
 
 # IsSelected
 
-IsSelected is a boolean property in the TileViewItem which is used to select a particular TileViewItem. If the IsSelected property of a TileViewItem is set to True, the set TileViewItems opacity is set to 1 and the remaining TileViewItems opacity will be reduced to show the difference.
+[IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) is a boolean property in the TileViewItem which is used to select a particular TileViewItem. If the [IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property of a TileViewItem is set to True, the set TileViewItems opacity is set to 1 and the remaining TileViewItems opacity will be reduced to show the difference.
 
 ## Use Case Scenarios
 
@@ -19,7 +19,7 @@ This feature will be very useful when you who want to select a particular TileVi
 
 ## Adding IsSelected to an Application 
 
-IsSelected can be added to an application by using either XAML or C# code.
+[IsSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the IsSelected to an application.
 
@@ -55,28 +55,6 @@ The following code example illustrates how to add the IsSelected to an applicati
 {% endhighlight %}
 
 {% endtabs %}
-
-
-## Properties
-
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description</th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-IsSelected</td><td>
-Allows to select a particular TileViewItem.</td><td>
-DependencyProperty</td><td>
-False</td><td>
-</td></tr>
-</table>
-
 
 ## Sample Link
 

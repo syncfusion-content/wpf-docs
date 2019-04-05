@@ -9,21 +9,7 @@ documentation: ug
 
 # Calendar Style
 
-Using the CalendarStyle property, you can enhance the appearance of the CalendarEdit control. This dependency property sets the calendar style for the control. 
-
-Property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-CalendarStyle</td><td>
-Sets the calendar style for the CalendarEdit control. The options provided are as follows.StandardVista</td></tr>
-</table>
-Use the following code example to set this property.
+Using the [CalendarStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~CalendarStyle.html) property, you can enhance the appearance of the CalendarEdit control. This dependency property sets the calendar style for the control. 
 
 {% tabs %}
 {% highlight xaml %}

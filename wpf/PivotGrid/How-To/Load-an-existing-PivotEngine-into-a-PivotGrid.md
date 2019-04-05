@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load-an-existing-PivotEngine-into-a-PivotGrid
-description: load an existing pivotengine into a pivotgrid?
+title: Load-an-existing-PivotEngine-into-a-PivotGrid | Syncfusion
+description: Section helps to know how to load on existing or external pivot engine into pivot grid control programmatically.
 platform: wpf
 control: PivotGrid
 documentation: ug

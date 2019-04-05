@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting OLAP Chart
-description: Exporting OLAP chart into image and document format
+title: Exporting | OLAP Chart | Syncfusion
+description: Support to export the chart data into various formats such as image, Word and PDF in OLAP Chart control.
 platform: wpf
 control: OLAP Chart
 documentation: ug
@@ -27,7 +27,7 @@ The OLAP chart can be copied to the clipboard or exported as an image. It can be
 * TIFF
 * WDP
 
-![](Exporting_images/Exporting_img1.png)
+![Exports OlapChart into image format](Exporting_images/Exporting_img1.png)
 
 ## Exporting to Word document
 
@@ -77,7 +77,7 @@ olapChartWordExport.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc", "
 
 {% endtabs %}
 
-![](Exporting_images/Exporting_img2.png)
+![Exports OlapChart into word document](Exporting_images/Exporting_img2.png)
 
 ## Exporting to a PDF document
 
@@ -103,7 +103,7 @@ chartPdfExport.ExportIntoNewPdf("..\..\TemplateDocument\PdfDocument.pdf")
 
 {% endtabs %}
 
-![](Exporting_images/Exporting_img3.png)
+![Exports OlapChart into pdf document](Exporting_images/Exporting_img3.png)
 
 A sample demo is available at the following location.
 

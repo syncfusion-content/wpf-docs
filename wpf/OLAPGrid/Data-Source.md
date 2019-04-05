@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Source| OlapGrid | Wpf | Syncfusion
-description: data source
+description: Support to connect OLAP cube to OLAP Grid control either by using connection string or SQL server analysis service.
 platform: wpf
 control: OlapGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing in SfSpreadsheet
-description: How to print the workbook in SfSpreadsheet
+title: Printing in SfSpreadsheet | SfSpreadsheet | Syncfusion
+description: This sections explains that how to print the workbooks and its sheets in SfSpreadsheet for Syncfusion Essential WPF.
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

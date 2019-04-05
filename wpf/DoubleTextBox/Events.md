@@ -13,7 +13,7 @@ The DoubleTextBox exposes the following events:
 
 ## ValueChanged
 
-ValueChanged – The event occurs when the Value property of the DoubleTextBox is changed.
+[ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ValueChanged_EV.html) – The event occurs when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property of the DoubleTextBox is changed.
 
 
 
@@ -48,7 +48,7 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 
 ## TextChanged
 
-TextChanged – The event occurs when the Value property of the DoubleTextBox is changed.
+[TextChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.textchanged?redirectedfrom=MSDN&view=netframework-4.7.2) – The event occurs when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property of the DoubleTextBox is changed.
 
 
 
@@ -83,7 +83,7 @@ private void DoubleTextBox_TextChanged(object sender, TextChangedEventArgs e)
 
 ## CultureChanged
 
-CultureChanged – The event occurs when the Culture property of the DoubleTextBox is changed.
+[CultureChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CultureChanged_EV.html) – The event occurs when the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property of the DoubleTextBox is changed.
 
 
 {% tabs %}
@@ -118,7 +118,7 @@ private void DoubleTextBox_CultureChanged(DependencyObject d, DependencyProperty
 
 ## MaxValueChanged
 
-MaxValueChanged – The event occurs when the MaxValue property of the DoubleTextBox is changed.
+[MaxValueChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValueChanged_EV.html) – The event occurs when the [MaxValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property of the DoubleTextBox is changed.
 
 
 {% tabs %}
@@ -153,7 +153,7 @@ private void DoubleTextBox_MaxValueChanged(DependencyObject d, DependencyPropert
 
 ## MinValueChanged
 
-MinValueChanged – The event occurs when the MinValue property of the DoubleTextBox is changed.
+[MinValueChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValueChanged_EV.html) – The event occurs when the [MinValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property of the DoubleTextBox is changed.
 
 
 
@@ -185,7 +185,7 @@ private void DoubleTextBox_MinValueChanged(DependencyObject d, DependencyPropert
 
 ## SelectionChanged
 
-SelectionChanged – The event occurs when the selection in the textbox is changed.
+[SelectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.selectionchanged?redirectedfrom=MSDN&view=netframework-4.7.2) – The event occurs when the selection in the textbox is changed.
 
 
 

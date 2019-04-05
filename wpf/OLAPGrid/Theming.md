@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theming| OlapGrid | Wpf | Syncfusion
-description: theming
+description: Support to apply various visual styles including Blend, Metro, Office 2010, Office 2013, etc., in OLAP Grid control.
 platform: wpf
 control: OlapGrid
 documentation: ug

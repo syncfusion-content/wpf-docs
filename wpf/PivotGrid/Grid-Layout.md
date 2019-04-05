@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid Layout
-description: Grid layout
+title: Grid Layout | PivotGrid | Syncfusion
+description: Different grid layouts including normal and top summary layouts with respect to summaries for PivotGrid control.
 platform: wpf
 control: Pivot grid
 documentation: ug
@@ -85,16 +85,16 @@ public partial class MainWindow: Window {
 
 Displays the summary data of rows or columns at the end of value cells.
 
-![](Grid-Layout-Images/PivotGrid with normal layout.png)
+![Displaying the PivotGrid in Normal layout](Grid-Layout-Images/PivotGrid with normal layout.png)
 
 **Top summary**
 
 Displays the summary data of rows or columns at the beginning of value cells.
 
-![](Grid-Layout-Images/PivotGrid with top summary layout.png)
+![Displaying the PivotGrid in Top summary layout](Grid-Layout-Images/PivotGrid with top summary layout.png)
 
 **Excel-like layout**
 
 Displays the summary cells at the bottom alone and child members that appear below the parent member with some indent space.
 
-![](Grid-Layout-Images/PivotGrid with excel like layout.png)
+![Displaying the PivotGrid in Excel-like layout](Grid-Layout-Images/PivotGrid with excel like layout.png)

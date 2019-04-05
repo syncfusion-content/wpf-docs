@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview and the features that are supported in calculate
+title: Overview of calculate | Calculate | WPF | Syncfusion
+description: This section provides an overview and the features that are supported in calculate for Syncfusion Essential WPF.
 platform: wpf
 control: Calculate
 documentation: ug

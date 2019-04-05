@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional Formatting| OlapGrid | Wpf | Syncfusion
-description: conditional formatting
+description: Support to apply format for the grid cells based on a certain condition in OLAP Grid control | Syncfusion
 platform: wpf
 control: OlapGrid
 documentation: ug
@@ -97,7 +97,7 @@ Me.olapgrid1.DataBind()
 
 {% endtabs %}
 
-![](Conditional-Formatting_images/Conditional-Formatting_img1.png)
+![Conditional formats applied in OlapGrid](Conditional-Formatting_images/Conditional-Formatting_img1.png)
 
 A sample demo is available in the following location.
 

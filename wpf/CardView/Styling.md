@@ -44,7 +44,7 @@ SkinStorage.SetVisualStyle(cardViewInstance, "Office2010Blue");
 
 ## ItemContainerStyle
 
-The ItemContainerStyle property of CardView is used to set the styles for CardViewItem. This style can be applied to all items available in the CardView control.
+The [ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.7.2) property of CardView is used to set the styles for CardViewItem. This style can be applied to all items available in the CardView control.
 
 1. Create a style for CardViewItem.
 
@@ -80,14 +80,14 @@ The ItemContainerStyle property of CardView is used to set the styles for CardVi
    
 This generates the following CardView control.
 
-![](Styling_images/Styling_img1.png)
+![CardView control with styled items](Styling_images/Styling_img1.png)
 
 CardView control with styled items
 {:.caption}
 
 ## ItemContainerStyleSelector
 
-The ItemContainerStyleSelector property is used to choose the ItemContainerStyle at run-time base on some conditions. 
+The [ItemContainerStyleSelector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyleselector?view=netframework-4.7.2) property is used to choose the ItemContainerStyle at run-time base on some conditions. 
 
 1. Create the styles in the Window’s resource as follows.
 
@@ -179,7 +179,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 This generates the following CardView control.
 
-![](Styling_images/Styling_img2.png)
+![CardView control styled with ItemContainerStyleSelector](Styling_images/Styling_img2.png)
 
 CardView control styled with ItemContainerStyleSelector
 {:.caption}
