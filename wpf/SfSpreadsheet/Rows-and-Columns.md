@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows and Columns Operations in SfSpreadsheet | SfSpreadsheet | Syncfusion
+title: Rows and Columns Operations | SfSpreadsheet | Syncfusion
 description: This section explains that the operations involved with rows and columns in SfSpreadsheet for Syncfusion Essential WPF.
 platform: wpf
 control: SfSpreadsheet
