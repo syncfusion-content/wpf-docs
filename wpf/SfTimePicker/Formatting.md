@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting options of SfTimePicker control for WPF
+title: Formatting | SfTimePicker | WPF | Syncfusion
 description: This section describes the formatting options of SfTimePicker control
 platform: wpf
 control: SfTimePicker

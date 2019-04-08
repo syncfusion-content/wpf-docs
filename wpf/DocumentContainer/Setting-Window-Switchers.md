@@ -41,19 +41,19 @@ Content = DocContainer;
 {% endtabs %}
 
 
-![](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg)
+![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg)
 
 
 
 
 
-![](Setting-Window-Switchers_images/Setting-Window-Switchers_img2.jpeg)
+![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img2.jpeg)
 
 
 
 
 
-![](Setting-Window-Switchers_images/Setting-Window-Switchers_img3.jpeg)
+![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img3.jpeg)
 
 
 

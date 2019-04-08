@@ -40,4 +40,4 @@ SkinStorage.SetVisualStyle(datetimeedit, "Blend");
 
 {% endtabs %}
 
-![](appearance-images/blend.jpeg)
+![DateTimeEdit blend visual style](appearance-images/blend.jpeg)

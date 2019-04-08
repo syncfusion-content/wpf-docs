@@ -55,4 +55,4 @@ The output is displayed in the following image:
 
 
 
-![](Features_images/Features_img12.png)
+![SfTimePicker selected item customization](Features_images/Features_img12.png)

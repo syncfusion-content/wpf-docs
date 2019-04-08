@@ -22,12 +22,12 @@ AccessCalendarText</td><td>
 Sets the string for the Calendar Text in DateTimeEdit.</td></tr>
 <tr>
 <td colspan = "1">
-{{'![](Localization_images/Localization_img1.png)'|markdownify}}
+{{'![AccessCalendarText](Localization_images/Localization_img1.png)'|markdownify}}
 
 {{ '_AccessCalendarText(en-US)_' | markdownify }}
 </td>
 <td>
-{{'![](Localization_images/Localization_img2.png)'|markdownify}}
+{{'![AccessCalendarText](Localization_images/Localization_img2.png)'|markdownify}}
 
 {{ '_AccessCalendarText(fr-FR)_' | markdownify }}</td></tr>
 <tr>
@@ -36,12 +36,12 @@ AccessClockText</td><td>
 Sets the string for the Clock Text in DateTimeEdit</td></tr>
 <tr>
 <td colspan = "1">
-{{'![](Localization_images/Localization_img3.png)'|markdownify}}
+{{'![AccessClockText](Localization_images/Localization_img3.png)'|markdownify}}
 
 {{ '_AccessClockText(en-US)_' | markdownify }}
 </td>
 <td>
-{{'![](Localization_images/Localization_img4.png)'|markdownify}}
+{{'![AccessClockText](Localization_images/Localization_img4.png)'|markdownify}}
 
 {{'_AccessClockText(fr-FR)_' | markdownify }}</td></tr>
 <tr>
@@ -50,12 +50,12 @@ AccessEmptyDateText</td><td>
 Sets the string for the Empty Date Text in DateTimeEdit.</td></tr>
 <tr>
 <td colspan = "1">
-{{'![](Localization_images/Localization_img5.png)'|markdownify}}
+{{'![AccessEmptyDateText](Localization_images/Localization_img5.png)'|markdownify}}
 
 {{ '_AccessEmptyDateText (en-US)_' | markdownify }}
 </td>
 <td>
-{{'![](Localization_images/Localization_img6.png)'|markdownify}}
+{{'![AccessEmptyDateText](Localization_images/Localization_img6.png)'|markdownify}}
 
 {{ '_AccessEmptyDateText(fr-FR)_' | markdownify }}</td></tr>
 <tr>
@@ -71,12 +71,12 @@ TodayLabel</td><td>
 Sets the string for the Today Label in DateTimeEdit.</td></tr>
 <tr>
 <td colspan = "1">
-{{'![](Localization_images/Localization_img7.png)'|markdownify}}
+{{'![TodayLabel](Localization_images/Localization_img7.png)'|markdownify}}
 
 {{ '_TodayLabel_' | markdownify }}
 </td>
 <td>
-{{'![](Localization_images/Localization_img8.png)'|markdownify}}
+{{'![TodayLabel](Localization_images/Localization_img8.png)'|markdownify}}
 
 {{ '_TodayLabel_' | markdownify }}</td></tr>
 </table>
