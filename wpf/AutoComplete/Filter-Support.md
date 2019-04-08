@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter-Support
+title: Filter support | AutoComplete | WPF | Syncfusion
 description: filter support
 platform: wpf
 control: AutoComplete
@@ -9,16 +9,16 @@ documentation: ug
 
 # Filter Support
 
-Filter support is used to filter the matched list of items from the linked source depending on the text entered in the AutoComplete textbox. AutoComplete allows the user to enable Filter the items using IsFilter property.
+Filter support is used to filter the matched list of items from the linked source depending on the text entered in the AutoComplete textbox. AutoComplete allows the user to enable Filter the items using [IsFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsFilter.html) property.
 
-![](Filter-Support_images/Filter-Support_img1.png)
+![Filter Support](Filter-Support_images/Filter-Support_img1.png)
 
 Filter Support
 {:.caption}
 
 ## Adding filter support to an application 
 
-If the IsFilter property is set as True, once you enter text in the AutoComplete textbox, the matched list of items 
+If the [IsFilter](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsFilter.html) property is set as True, once you enter text in the AutoComplete textbox, the matched list of items 
 will be displayed in the drop-down list. If this property is set as False the matched list of items will not be 
 displayed in the drop-down list, instead all the items will be displayed.
 
@@ -38,43 +38,9 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = tr
 
 ## Tables for properties, methods, and events
 
-### Properties
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-IsFilter</td><td>
-Gets or sets the value of IsFilter in the AutoComplete.</td><td>
-DependencyProperty</td><td>
-bool(true)</td><td>
-</td></tr>
-</table>
-
 ### Events
 
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th colspan = "2">
-Reference links </th></tr>
-<tr>
-<td>
-IsFilterChanged</td><td>
- When the value of IsFilter is changed, this event will be triggered.It cannot be canceled.</td><td>
-DependencyObject,DependencyPropertyChangedEventArgs</td><td colspan = "2">
-DependencyPropertyChangedCallBack </td><td>
-</td></tr>
-</table>
+* [IsFilterChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsFilterChanged_EV.html)
 
 ## Sample link
 

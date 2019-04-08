@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion SfGridSplitter control for WPF
+title: Overview | SfGridSplitter | WPF | Syncfusion
 description: Overview of Syncfusion SfGridSplitter control for WPF
 platform: WPF
 control: SfGridSplitter
@@ -13,7 +13,7 @@ documentation: ug
 
 ![WPF GridSplitter resize and collapse](Overview-images/overview.png)
 
-Features 
+## Features 
 
 * Dynamic resizing: Splits available space with movable splitter that helps resize controls on demand.
 * Expand / Collapse: Supports to expand and collapse splitter controls interactively in UI.

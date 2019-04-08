@@ -9,16 +9,16 @@ documentation: ug
 
 # Auto Append Support
 
-Auto Append is used to guide the complete text by appending the entered text with suitable text from the data source, when a text is entered in the AutoComplete textbox. AutoComplete allows you to enable Auto Append using IsAutoAppend property.
+Auto Append is used to guide the complete text by appending the entered text with suitable text from the data source, when a text is entered in the AutoComplete textbox. AutoComplete allows you to enable Auto Append using [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsAutoAppend.html) property.
 
-![](Auto-Append-Support_images/Auto-Append-Support_img1.png)
+![Auto append support](Auto-Append-Support_images/Auto-Append-Support_img1.png)
 
 Auto Append
 {:.caption}
 
 ## Adding auto append support to an application 
 
-If the IsAutoAppend property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
+If the [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsAutoAppend.html) property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,41 +38,11 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend 
 
 ### Properties
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-IsAutoAppend</td><td>
-Gets or sets the value of IsAutoAppend in the AutoComplete.</td><td>
-DependencyProperty</td><td>
-bool(true)</td><td>
-</td></tr>
-</table>
+* [IsAutoAppend](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsAutoAppend.html)
 
 ### Events
 
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th colspan = "2">
-Reference links </th></tr>
-<tr>
-<td>
-IsAutoAppendChanged</td><td>
- When the value of IsAutoAppend changed this event will be triggered.It cannot be canceled.</td><td>
-DependencyObject,DependencyPropertyChangedEventArgs</td><td colspan = "2">
-DependencyPropertyChangedCallBack </td><td>
-</td></tr>
-</table>
+* [IsAutoAppendChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsAutoAppendChanged_EV.html)
 
 ## Sample link
 
