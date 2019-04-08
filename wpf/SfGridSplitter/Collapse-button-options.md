@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collapse button options of SfGridSplitter control for WPF
+title: Collapse button options | SfGridSplitter | WPF | Syncfusion
 description: Collapse button options of SfGridSplitter control for WPF
 platform: WPF
 control: SfGridSplitter
@@ -13,7 +13,7 @@ documentation: ug
 
 ## Enable collapse buttons
 
-The collapse buttons can be enabled or disabled using the `EnableCollapseButton` property.
+The collapse buttons can be enabled or disabled using the [EnableCollapseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~EnableCollapseButton.html) property.
 
 {% tabs %}
 
@@ -43,15 +43,15 @@ The collapse buttons can be enabled or disabled using the `EnableCollapseButton`
 
 Pressing the down button
 
-![](Collapse-button-options-images/Collapse-button-options-img1.jpeg)
+![Pressing the down button](Collapse-button-options-images/Collapse-button-options-img1.jpeg)
 
 Pressing the up button
 
-![](Collapse-button-options-images/Collapse-button-options-img2.jpeg)
+![Pressing the up button](Collapse-button-options-images/Collapse-button-options-img2.jpeg)
 
 ## Style collapse buttons
 
-The template collapse buttons can be customized using the properties UpButtonTemplate and DownButtonTemplate.
+The template collapse buttons can be customized using the properties [UpButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~UpButtonTemplate.html) and [DownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~DownButtonTemplate.html).
 
 {% tabs %}
 

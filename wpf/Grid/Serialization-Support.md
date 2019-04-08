@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization Support | Grid | WPF | Syncfusion
-description: serialization support
+description: This section explains that how the data in the grid are serialized to xml file for reuse it later for Syncfusion Essential WPF.
 platform: wpf
 control: Grid
 documentation: ug
