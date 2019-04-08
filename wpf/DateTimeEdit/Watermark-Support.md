@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark Support | DateTimeEdit | wpf | Syncfusion
-description: watermark support
+title: Watermark Support | DateTimeEdit | WPF | Syncfusion
+description: This section describes how to set the water mark text to the DateTimeEdit control
 platform: wpf
 control: DateTimeEdit
 documentation: ug

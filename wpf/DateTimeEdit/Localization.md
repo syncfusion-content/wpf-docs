@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | DateTimeEdit | wpf | Syncfusion
-description: localization
+title: Localization | DateTimeEdit | WPF | Syncfusion
+description: This section describes how to localize the DateTimeEdit control.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
@@ -81,7 +81,7 @@ Sets the string for the Today Label in DateTimeEdit.</td></tr>
 {{ '_TodayLabel_' | markdownify }}</td></tr>
 </table>
 
-![](Localization_images/Localization_img9.png)
+![DateTimeEdit control localization](Localization_images/Localization_img9.png)
 
 N> To create the localized application, follow the steps mentioned [here](https://help.syncfusion.com/wpf/introduction/common-supports#localization). 
 Also, you can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF_DateTimeEditLocalization1161670264) . 

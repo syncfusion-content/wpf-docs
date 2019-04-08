@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion DockingManager control for WPF
-description: Features overview of DockingManager control for WPF
+title: Overview | DockingManager | WPF | Syncfusion
+description: This section describes the features overview of DockingManager control.
 platform: wpf
 control: DockingManager
 documentation: ug

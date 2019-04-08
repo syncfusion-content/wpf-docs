@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance  | DateTimeEdit | wpf | Syncfusion 
-description: appearance     
+title: Appearance | DateTimeEdit | WPF | Syncfusion 
+description: This section explains how to customize the appearance and styling of DateTimeEdit control.   
 platform: wpf
 control: DateTimeEdit
 documentation: ug

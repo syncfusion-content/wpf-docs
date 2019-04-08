@@ -1,13 +1,13 @@
 ---
 layout: post
-title: IntelliSense support Provided by Edit Control
-description: IntelliSense support Provided by Edit Control
+title: IntelliSense support | Syntax Editor | WPF | Syncfusion
+description: This section explains about the intellisense pop-up capabilities available in EditControl.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-## IntelliSense Support
+# IntelliSense Support
 
 The Essential Edit for WPF provides Visual Studio like IntelliSense support. With IntelliSense support users can quickly choose the possible words while typing text in the control.
 

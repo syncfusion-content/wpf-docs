@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing Support | DateTimeEdit | wpf | Syncfusion
-description: editing support
+title: Editing Support | DateTimeEdit | WPF | Syncfusion
+description: This section describes how to edit the date time value in the DateTimeEdit control.
 platform: wpf
 control: DateTimeEdit
 documentation: ug

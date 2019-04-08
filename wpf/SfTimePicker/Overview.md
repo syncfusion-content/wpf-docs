@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfTimePicker control for WPF
-description: Overview of SfTimePicker control for WPF
+title: Overview | SfTimePicker | WPF | Syncfusion
+description: This section describes the features overview of SfTimePicker control.
 platform: wpf
 control: SfTimePicker
 documentation: ug
@@ -15,14 +15,14 @@ The SfTimePicker control allows the user to select time values in a touch friend
 
 
 
-![](Overview_images/Overview_img1.png)
+![TimePicker normal view](Overview_images/Overview_img1.png)
 
 
 
 ### Expanded view
 
 
-![](Overview_images/Overview_img2.png)
+![TimePicker expanded view](Overview_images/Overview_img2.png)
 
 
 
