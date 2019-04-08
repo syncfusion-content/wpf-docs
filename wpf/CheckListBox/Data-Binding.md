@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding
 
-The control can be populated using ItemsSource property and DisplayMemberPath property used to display the items in the CheckListBox. The below code snippet will be used to bind the ItemsSource to the CheckListBox.
+The control can be populated using [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?view=netframework-4.7.2) property and [DisplayMemberPath](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2#System_Windows_Controls_ItemsControl_DisplayMemberPath) property used to display the items in the CheckListBox. The below code snippet will be used to bind the ItemsSource to the CheckListBox.
 
 {% tabs %}
 {%highlight xaml%}
@@ -62,4 +62,4 @@ public class Model
 {%endhighlight%}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![data binding](Getting-Started_images/Getting-Started_img1.png)

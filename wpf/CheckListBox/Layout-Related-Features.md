@@ -43,32 +43,14 @@ checkListBox.CheckBoxAlignment = CheckBoxAlignment.Right;
 {%endhighlight%}
 {% endtabs %}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
+![CheckBoxAlignment](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
 CheckBoxAlignment = "Right"
 {:.caption}
 
 ## Flow direction
 
-The flow direction for the CheckListBox control is set through the FlowDirection property.
-
-Property table
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-FlowDirection</td><td>
-Sets the flow direction for the CheckListBox control. The options provided are as follows.
-<ul>
-<li>LeftToRight</li>
-<li>RightToLeft</li>
-</ul>
-</td></tr>
-</table>
+The flow direction for the CheckListBox control is set through the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.7.2) property.
 
 To set the FlowDirection to RightToLeft, use the below code:
 
@@ -95,7 +77,7 @@ checkListBox.FlowDirection = FlowDirection.RightToLeft;
 {%endhighlight%}
 {% endtabs %}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
+![Flow direction](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
 FlowDirection = "RightToLeft"
 {:.caption}
@@ -155,31 +137,31 @@ SkinStorage.SetVisualStyle(checkListBox, "Blend");
 {%endhighlight%}
 {% endtabs %}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
+![Blend visual style](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
 CheckListBox with "Blend" Visual Style
 
-![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)
+![Default visual style](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)
 
 CheckListBox with "Default" Visual Style
 {:.caption}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img5.jpeg)
+![Office2007Black visual style](Layout-Related-Features_images/Layout-Related-Features_img5.jpeg)
 
 CheckListBox with "Office2007Black" Visual Style
 {:.caption}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)
+![Office2003 visual style](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)
 
 CheckListBox with "Office2003" Visual Style
 {:.caption}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img7.png)
+![Metro visual style](Layout-Related-Features_images/Layout-Related-Features_img7.png)
 
 CheckListBox with "Metro" Visual Style
 {:.caption}
 
-![](Layout-Related-Features_images/Layout-Related-Features_img8.png)
+![Transparent visual style](Layout-Related-Features_images/Layout-Related-Features_img8.png)
 
 CheckListBox with "Transparent" Visual Style
 {:.caption}
