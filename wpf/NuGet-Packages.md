@@ -13,12 +13,166 @@ NuGet is a package manager for the .NET framework. The NuGet client tools simpli
 
 N> You can use the Syncfusion WPF NuGet packages without installing the Essential Studio or WPF platform installation to implement the Syncfusion WPF controls.
 
+## Installing NuGet Packages
 
-## Get the Syncfusion NuGet feed URL
+### Using NuGet Package Manager
+
+The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
+
+1.	Right-click the project or solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
+
+    ![WPF nuget package manager](NuGet_Packages_Images/img3.png)
+
+    Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
+
+2.	By default, the NuGet.org package is selected in the **Package source** drop-down. If NuGet.org is not configured in your Visual Studio, refer to the [Microsoft docs](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to configure NuGet.org feed URL in your Visual Studio. 
+
+     ![Selecting one of the syncfusion universal nuget package](NuGet_Packages_Images/img4.png)             
+
+3.	The NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
+
+N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+
+### Using Package Manager Console
+
+To reference the Syncfusion WPF component using the Package Manager Console as NuGet packages, follow the below steps.  
+
+1.	On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**. 
+
+2.	Run the following NuGet installation commands. 
+
+    ~~~
+    #install specified package in default project
+    Install-Package <Package Name>
+
+    #install specified package in specified project 
+    Install-Package <Package Name> - ProjectName <Project Name>
+    ~~~
+
+    **For example:**
+
+    ~~~
+    #install specified package in default project
+    Install-Package Syncfusion.Chart.WPF46
+
+    #install specified package in specified project 
+    Install-Package Syncfusion.Chart.WPF46-ProjectName SyncfusionDemoApplication
+    ~~~
+
+## Managing NuGet package using NuGet CLI
+
+The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of NuGet functionality to install, create, publish, and manage packages without making any change to the project files.
+
+1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+
+    N> To update the existing nuget.exe to latest version use the following command:
+
+    ~~~
+    nuget update -self
+    ~~~
+
+2.  Open the downloaded executable location in the command window, and run the following commands to download and install the required NuGet packages to a project specified in the package.config. 
+
+    ~~~
+    #install specified package in default project from specified Package Source 
+    nuget.exe install <Package name | ConfigFilePath > [Options]
+    ~~~
+
+    N> configPath is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
+
+    **For example:**
+
+    ~~~
+    #install specific package 
+    nuget.exe install “Syncfusion.Chart.WPF46"
+
+    #install all package which mention in package.config path 
+    nuget.exe install “C:\Users\SyncfusionApplication\package.config”
+
+    #install specific Syncfusion NuGet package with specific Syncfusion Package Source
+    nuget.exe install “Syncfusion.Chart.WPF46”  –Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
+    ~~~
+
+N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+
+## Upgrading NuGet packages
+
+### Using NuGet Package Manger 
+
+NuGet packages can be updated to their specific version or latest version available in the Visual Studio solution or project.
+
+1. Right-click the project or solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
+   Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
+
+2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
+
+### Using Package Manger Console
+
+To update the installed Syncfusion WPF NuGet packages using the Package Manager Console, follow the below steps.  
+
+1.	On the **Tools** menu, select **NuGet Package Manager**, and then **Package Manager Console.** 
+
+2.	Run the following NuGet installation commands.
+
+    ~~~ 
+    #Update specific NuGet package in default project
+    Update-Package <Package Name>
+
+    #Update all the packages in default project
+    Update-Package 
+
+    #Update specified package in specified project 
+    Update-Package <Package Name> - ProjectName <Project Name>
+    ~~~
+
+    **For example:**
+
+    ~~~
+    #Update specified Syncfusion WPF NuGet package 
+    Update-Package Syncfusion.Chart.WPF46
+
+    #Update specified package in specified project 
+    Update-Package Syncfusion.Chart.WPF46 -ProjectName SyncfusionDemoApplication
+    ~~~
+
+### Using NuGet CLI
+
+Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version. 
+
+1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+
+    N> To update the existing nuget.exe to latest version use the following command. 
+    
+    ~~~
+    nuget update -self
+    ~~~
+
+2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion WPF NuGet packages.
+
+    ~~~ 
+    #update all NuGet packages from config file
+    nuget update <configPath> [options]
+
+    #update all NuGet packages
+    nuget update
+    ~~~      
+
+    N> configPath is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
+	
+    **For example:**
+    
+    ~~~          
+    #Update all NuGet packages from config file
+    nuget update “C:\Users\SyncfusionApplication\package.config”
+    ~~~
+
+## Syncfusion NuGet feed URL Configuration
+
+### Get the Syncfusion NuGet feed URL 
 
 You should get the private Syncfusion WPF NuGet feed URL to install or upgrade the Syncfusion WPF NuGet packages. To get the URL from Syncfusion website use the following steps:
 
-1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select **DESKTOP** tab.     
+1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select the **DESKTOP** tab.     
 
 2. Click the Copy URL label under WPF platform to copy the Syncfusion WPF platform NuGet feed to clipboard or directly use the following URL: 
 
@@ -29,6 +183,8 @@ You should get the private Syncfusion WPF NuGet feed URL to install or upgrade t
 3. Now, use this NuGet feed URL to access the Syncfusion NuGet Packages in Visual Studio. 
 
 ## Add the Syncfusion NuGet feed URL
+
+#### Windows
 
 1.	Open your Visual Studio application. 
 
@@ -46,68 +202,17 @@ You should get the private Syncfusion WPF NuGet feed URL to install or upgrade t
 
     ![WPF nuget package installation using nuget package manager settings](NuGet_Packages_Images/img2.png)
 
-## Installing NuGet Packages
-
-### Using NuGet Package Manager
-
-The NuGet Package Manager can be used to search and install NuGet packages in the Visual Studio solution or project:
-1.	On the **Tools**, menu, NuGet `Package Manager | Manage NuGet Packages for Solution...`
-    ![WPF nuget package manager](NuGet_Packages_Images/img3.png)
-    Alternatively, right-click on the project/solution in Solution Explorer tab, and choose **Manage NuGet Packages…**
-
-2.	By default, the NuGet.org package is selected in the **Package source** drop-down. Select your appropriate feed name that you configured. 
-
-     ![Selecting one of the syncfusion universal nuget package](NuGet_Packages_Images/img4.png)             
-
-3.	The NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
-
-### Using Package Manager Console
-
-To reference the Syncfusion WPF component using the Package Manager Console as NuGet packages, 
-
-1.	On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**. 
-
-2.	Run the following NuGet installation commands: 
-
-    ~~~
-    #install specified package in default project
-    Install-Package <Package Name>
-
-    #install specified package in default project with specified package source
-    Install-Package <Package Name> -Source <Source Location>
-
-    #install specified package in specified project 
-    Install-Package <Package Name> - ProjectName <Project Name>
-    ~~~
-
-    **For example:**
-
-    ~~~
-    #install specified package in default project
-    Install-Package Syncfusion.Chart.WPF46
-
-    #install specified package in default project with specified Package Source
-    Install-Package Syncfusion.Chart.WPF46-Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
-
-    #install specified package in specified project 
-    Install-Package Syncfusion.Chart.WPF46-ProjectName SyncfusionDemoApplication
-    ~~~
-
-## Managing NuGet package using NuGet CLI
-
-The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of NuGet functionality to install, create, publish, and manage packages without making any change to the project files.
-
-### Configure NuGet feed URL 
+#### NuGet CLI 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
-    N> To update the existing nuget.exe to latest version use the following command:
+    N> To update the existing nuget.exe to latest version use the following command.
 
     ~~~
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion WPF NuGet packages: 
+2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion WPF NuGet packages. 
 
     ~~~
     #Add specified Package Source in NuGet.config file 
@@ -119,113 +224,6 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     ~~~
     nuget.exe Sources Add –Name “Syncfusion Source” –Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
     ~~~
-
-### NuGet installation
-
-Download and install the required NuGet packages to a project specified in the package.config. 
-
-~~~
-#install specified package in default project from specified Package Source 
-nuget.exe install <Package name | ConfigFilePath > [Options]
-~~~
-
-N> configPath is optional. This identifies the packages.config or solutions file that lists the packages utilized in the project. 
-
-**For example:**
-
-~~~
-#install specific package 
-nuget.exe install “Syncfusion.Chart.WPF46"
-
-#install all package which mention in package.config path 
-nuget.exe install “C:\Users\SyncfusionApplication\package.config”
-
-#install specific Syncfusion NuGet package with specific Syncfusion Package Source
-nuget.exe install “Syncfusion.Chart.WPF46”  –Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
-~~~
-
-## Upgrading NuGet packages
-
-### Using NuGet Package Manger 
-
-NuGet packages can be updated to their specific version or latest version available in the Visual Studio solution or project:
-
-1. On the **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
-Alternatively, right-click on project/solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
-
-2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
-
-### Using Package Manger Console
-
-To update the installed Syncfusion WPF NuGet packages using the Package Manager Console: 
-
-1.	On the **Tools** menu, select **NuGet Package Manager**, and then **Package Manager Console.** 
-
-2.	Run the following NuGet installation commands:
-
-    ~~~ 
-    #Update specific NuGet package in default project
-    Update-Package <Package Name>
-
-    #Update all the packages in default project
-    Update-Package 
-
-    #Update specified package in default project with specified package source
-    Update-Package <Package Name> -Source <Source Location>
-
-    #Update specified package in specified project 
-    Update-Package <Package Name> - ProjectName <Project Name>
-    ~~~
-
-    **For example:**
-
-    ~~~
-    #Update specified Syncfusion WPF NuGet package 
-    Update-Package Syncfusion.Chart.WPF46
-
-    #Update specified package in default project with specified Package Source
-    Update-Package Syncfusion.Chart.WPF46 –Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
-
-    #Update specified package in specified project 
-    Update-Package Syncfusion.Chart.WPF46 -ProjectName SyncfusionDemoApplication
-    ~~~
-
-### Using NuGet CLI
-
-Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version: 
-
-1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
-
-    N> To update the existing nuget.exe to latest version use the following command: 
-    
-    ~~~
-    nuget update -self
-    ~~~
-
-2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion WPF NuGet packages.
-
-    ~~~ 
-    #update all NuGet packages from config file
-    nuget update <configPath> [options]
-
-    #update all NuGet packages from specified Packages Source
-    nuget update -Source <Source Location> [optional]
-    ~~~      
-
-    N> configPath is optional. This identifies the packages.config or solutions file lists the packages utilized in the project. 
-	
-    **For example:**
-    
-    ~~~          
-    #Update all NuGet packages from config file
-    nuget update “C:\Users\SyncfusionApplication\package.config”
-
-    #Update all NuGet packages from specified Packages Source
-    nuget update -Source “https://nuget.syncfusion.com/nuget_wpf/nuget/getsyncfusionpackages/wpf”
-    ~~~
-
-   
-
 
 
 
