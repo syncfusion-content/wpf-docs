@@ -2270,7 +2270,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
 
         if (value == null)
             return null;
-        return value != null ? ((DateTimeOffset)value).DateTime : DateTime.Now;
+        return ((DateTimeOffset)value).DateTime;
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -2327,7 +2327,7 @@ this.datagrid1.Columns.Add(new GridDateTimeOffsetColumn()
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WpfTestingSample1440849393).
+You can get the sample from [here](https://github.com/SyncfusionExamples/how-to-create-a-custom-column-from-existing-column-in-wpf-and-uwp-datagrid/tree/master/WPF).
 
 ### Customize column renderer
 
