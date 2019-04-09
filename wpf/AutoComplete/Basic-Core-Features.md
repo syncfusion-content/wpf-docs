@@ -11,18 +11,18 @@ documentation: ug
 
 AutoComplete supports basic core features which are listed as follows.
 
-* SelectedIndex— Used to set and get the index of the selected item.
-* SelectedItem—Used to get which item of the AutoComplete has been selected.
-* SelectedValue—Used to get the value of the selected item, the value of the SelectedValue property will be set based on the value of the SelectedValuePath property.
-* SelectedValuePath—Used to set the value of the SelectedValue property of the AutoComplete.
-* DisplayMemberPath—Used to set the value for the items displayed in the drop-down list.
-* IsDropDownOpen—Used to open or close the Drop-down list by setting its value as True or False.
-* SelectionChanged.
-* TextChanged.
+* [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedIndex.html)— Used to set and get the index of the selected item.
+* [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedItem.html)—Used to get which item of the AutoComplete has been selected.
+* [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValue.html)—Used to get the value of the selected item, the value of the SelectedValue property will be set based on the value of the SelectedValuePath property.
+* [SelectedValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValuePath.html)—Used to set the value of the SelectedValue property of the AutoComplete.
+* [DisplayMemberPath](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.displaymemberpath?view=netframework-4.7.2)—Used to set the value for the items displayed in the drop-down list.
+* [IsDropDownOpen](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~IsDropDownOpen.html)—Used to open or close the Drop-down list by setting its value as True or False.
+* [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectionChanged_EV.html).
+* [TextChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~TextChanged_EV.html).
 
 ## Using basic core features in an application
 
-In the SelectionChanged event the SelectedIndex, SelectedItem & SelectedValue properties can be used in the application to get these property values. The properties and events listed can be used in the application as mentioned below.
+In the [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectionChanged_EV.html) event the [SelectedIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedIndex.html), [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedItem.html) & [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValue.html) properties can be used in the application to get these property values. The properties and events listed can be used in the application as mentioned below.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,81 +56,6 @@ void autoComplete1_SelectionChanged(object sender, SelectionChangedEventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
-
-## Tables for properties and events
-
-### Properties
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-SelectedIndex</td><td>
-Gets or sets the SelectedIndex of the AutoComplete.</td><td>
-DependencyProperty</td><td>
-Int(-1)</td><td>
-</td></tr>
-<tr>
-<td>
-SelectedValue</td><td>
-Gets or sets the SelectedValue of the AutoComplete.</td><td>
-DependencyProperty</td><td>
-Object(null)</td><td>
-</td></tr>
-<tr>
-<td>
-SelectedItem</td><td>
-Gets or sets the SelectedItem of the AutoComplete.</td><td>
-DependencyProperty</td><td>
-Object(null)</td><td>
-</td></tr>
-<tr>
-<td>
-SelectedValuePath</td><td>
-Gets or sets the SelectedValuePath of the AutoComplete.</td><td>
-DependencyProperty</td><td>
-String(null)</td><td>
-</td></tr>
-<tr>
-<td>
-DisplayMemberPath</td><td>
-Gets or sets the DisplayMemberPath of the AutoComplete.</td><td>
-DependencyProperty</td><td>
-String(null)</td><td>
-</td></tr>
-</table>
-
-### Events
-
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-SelectionChanged</td><td>
-When the value of SelectedItem property is changed this event will be triggered.It cannot be canceled.</td><td>
-Object,SelectionChangedEventArgs</td><td>
-SelectionChangedEventHandler </td><td>
-</td></tr>
-<tr>
-<td>
-TextChanged</td><td>
-When the value of the Text property is changed this event will be triggered.It cannot be canceled.</td><td>
-DependencyObject,DependencyPropertyChangedEventArgs</td><td>
-DependencyPropertyChangedCallBack </td><td>
-</td></tr>
-</table>
 
 ## Sample link
 

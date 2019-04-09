@@ -2270,7 +2270,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
 
         if (value == null)
             return null;
-        return value != null ? ((DateTimeOffset)value).DateTime : DateTime.Now;
+        return ((DateTimeOffset)value).DateTime;
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -2278,7 +2278,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
 
         if (value == null)
             return null;
-        return value != null ? (new DateTimeOffset((DateTime)value)) : new DateTimeOffset(DateTime.Now);
+        return value is DateTimeOffset ? value : new DateTimeOffset((DateTime)value);
     }
 }
 {% endhighlight %}
@@ -2313,7 +2313,7 @@ In the below code snippet, created `GridDateTimeOffsetColumn` added to [SfDataGr
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
-        <local:GridDateTimeOffsetColumn MappingName="OrderDate" Pattern="FullDateTime" />
+        <local:GridDateTimeOffsetColumn MappingName="OrderDate" Pattern="FullDateTime" UseBindingValue="True"/>
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -2321,10 +2321,13 @@ In the below code snippet, created `GridDateTimeOffsetColumn` added to [SfDataGr
 this.datagrid1.Columns.Add(new GridDateTimeOffsetColumn()
 {
     MappingName = "OrderDate",
-    Pattern = Syncfusion.Windows.Shared.DateTimePattern.FullDateTime
+    Pattern = Syncfusion.Windows.Shared.DateTimePattern.FullDateTime,
+    UseBindingValue = true
 });
 {% endhighlight %}
 {% endtabs %}
+
+You can get the sample from [here](https://github.com/SyncfusionExamples/how-to-create-a-custom-column-from-existing-column-in-wpf-and-uwp-datagrid/tree/master/WPF).
 
 ### Customize column renderer
 

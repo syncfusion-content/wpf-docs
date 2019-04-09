@@ -9,11 +9,11 @@ documentation: ug
 
 # Data Binding
 
-Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> target or target -> Source) or bidirectional (Source <-> target). You can bind the data to the AutoComplete through the CustomSource property. While binding the CustomSource to the AutoComplete, you must set the value of the DisplayMemberPath and the SelectedValuePath properties.
+Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> target or target -> Source) or bidirectional (Source <-> target). You can bind the data to the AutoComplete through the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~CustomSource.html) property. While binding the [CustomSource](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~CustomSource.html) to the AutoComplete, you must set the value of the DisplayMemberPath and the SelectedValuePath properties.
 
 ## Adding data binding to an application 
 
-You can use the DisplayMemberPath property to set the value for items that needs to be displayed in the drop-down list. Also you can use the `SelectedValuePath` property which can be used to set the value of the SelectedValue property. The below code snippet will be used to bind the Data Source to the AutoComplete.
+You can use the DisplayMemberPath property to set the value for items that needs to be displayed in the drop-down list. Also you can use the [SelectedValuePath](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValuePath.html) property which can be used to set the value of the [SelectedValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValue.html) property. The below code snippet will be used to bind the Data Source to the AutoComplete.
 
 {% tabs %}
 {% highlight xaml %}
@@ -60,57 +60,17 @@ public class EmployeeListCollection : ObservableCollection<EmployeeList>
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![data binding](Data-Binding_images/Data-Binding_img1.png)
 
 AutoComplete Bound with Data Source
 {:.caption}
 
 ## Tables for properties and events
 
-### Properties
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-CustomSource</td><td>
-Gets or sets the CustomSource of the AutoComplete.</td><td>
-DependencyProperty</td><td>
-System.Collections.IEnumerable</td><td>
-</td></tr>
-</table>
-
 ### Events
 
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-SelectedValuePathChanged</td><td>
- When the SelectedValuePath property value is changed, this event will be triggered.It cannot be canceled.</td><td>
-DependencyObject,DependencyPropertyChangedEventArgs</td><td>
-DependencyPropertyChangedCallBack </td><td>
-</td></tr>
-<tr>
-<td>
-CustomSourceChanged</td><td>
- When the CustomSource property value is changed, this event will be triggered.It cannot be canceled.</td><td>
-DependencyObject,DependencyPropertyChangedEventArgs</td><td>
-DependencyPropertyChangedCallBack </td><th>
-</th></tr>
-</table>
+* [SelectedValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~SelectedValueChanged_EV.html)
+* [CustomSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.AutoComplete~CustomSourceChanged_EV.html)
 
 ## Sample link
 

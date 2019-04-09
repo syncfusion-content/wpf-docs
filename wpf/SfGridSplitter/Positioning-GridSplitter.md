@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Positioning GridSplitter of SfGridSplitter control for WPF
+title: Positioning GridSplitter | SfGridSplitter | WPF | Syncfusion
 description: Positioning GridSplitter of SfGridSplitter control for WPF
 platform: WPF
 control: SfGridSplitter
@@ -43,7 +43,7 @@ To position a GridSplitter horizontally, split the container into rows and place
 
 {% endtabs %}
 
-![](Positioning-GridSplitter-images/Positioning-GridSplitter-img1.jpeg)
+![Horizontal grid splitter](Positioning-GridSplitter-images/Positioning-GridSplitter-img1.jpeg)
 
 ## Vertical GridSplitter
 
@@ -77,7 +77,7 @@ To position a GridSplitter vertically, split the container into columns and plac
 
 {% endtabs %}
 
-![](Positioning-GridSplitter-images/Positioning-GridSplitter-img2.jpeg)
+![Vertical grid splitter](Positioning-GridSplitter-images/Positioning-GridSplitter-img2.jpeg)
 
 ## Move splitter programmatically
 
