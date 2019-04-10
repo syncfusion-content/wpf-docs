@@ -120,7 +120,7 @@ The following code example demonstrates how to set auto-width to the ComboBoxAdv
 <syncfusion:RibbonComboBox SelectedItem="Arial">
 <syncfusion:RibbonComboBoxItem>Arial</syncfusion:RibbonComboBoxItem>
 <syncfusion:RibbonComboBoxItem>Tahoma</syncfusion:RibbonComboBoxItem>
-<syncfusion:RibbonComboBoxItem>MicroSoft San Sareif</syncfusion:RibbonComboBoxItem>
+<syncfusion:RibbonComboBoxItem>Microsoft Sans Serif</syncfusion:RibbonComboBoxItem>
 </syncfusion:RibbonComboBox>
 </syncfusion:RibbonBar>                
 </syncfusion:RibbonTab>
