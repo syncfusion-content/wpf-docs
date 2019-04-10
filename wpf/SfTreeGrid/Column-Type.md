@@ -170,8 +170,6 @@ In the below screenshot, `Salary` column display value is formatted to currency 
 
 ![](ColumnTypes_images/ColumnTypes_img1.png)
 
-By default, Columns handling the data operations (sorting) based on 'MappingName' property. You can perform data operations based on 'ValueBinding' by setting TreeGridColumn.UseBindingValue to 'true', when the standard reflection not works or binding column with complex or indexer properties.
-
 ### CellTemplate in TreeGridColumn
 
 You can load any WPF control in the display mode for all columns by setting [TreeGridColumn.CellTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type. 
