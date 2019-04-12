@@ -117,7 +117,7 @@ The following code example demonstrates how to set auto-width to the ComboBoxAdv
 <syncfusion:Ribbon x:Name="ribbon" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="517">
 <syncfusion:RibbonTab Background="Transparent" Caption="Home" FocusVisualStyle="{x:Null}" Focusable="False" MinWidth="23">
 <syncfusion:RibbonBar Focusable="False" Header="Clip Board">
-<syncfusion:RibbonComboBox SelectedItem="Arial" Margin="10,10,0,0">
+<syncfusion:RibbonComboBox SelectedItem="Arial" Margin="0,10,0,0">
 <syncfusion:RibbonComboBoxItem>Arial</syncfusion:RibbonComboBoxItem>
 <syncfusion:RibbonComboBoxItem>Tahoma</syncfusion:RibbonComboBoxItem>
 <syncfusion:RibbonComboBoxItem>Microsoft Sans Serif</syncfusion:RibbonComboBoxItem>
