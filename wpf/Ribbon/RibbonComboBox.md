@@ -104,9 +104,9 @@ _ribbonBar2.Items.Add(_buttonPanel)
 
 ## Autosize width in RibbonComboBox
 
-When you set the width to `RibbonComboBox`, the combobox width will be based on the given selected item text in `RibbonComboBoxItem`.
+RibbonComboBox can be auto sized by not providing width to the RibbonComboBox and the width will be based on the selected item text. 
 
-If you do not set the width to `RibbonComboBox`, the combobox will auto resize the width based on the selected item text in `RibbonComboBoxItem`.
+If the width is given, then the width is set to the RibbonComboBox instead of the selected item text.
 
 The following code example demonstrates how to set auto-width to the ComboBoxAdv control. 
 
