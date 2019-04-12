@@ -100,6 +100,34 @@ _ribbonBar2.Items.Add(_buttonPanel)
 
 {% endtabs %}
 
-![](RibbonComboBox_images/RibbonComboBox_img1.jpg)
+![WPF Ribbon showing added comboboxitems](RibbonComboBox_images/RibbonComboBox_img1.jpg)
 
+## Autosize width in RibbonComboBox
 
+RibbonComboBox can be auto sized by not providing width to the RibbonComboBox and the width will be based on the selected item text. 
+
+If the width is given, then the width is set to the RibbonComboBox instead of the selected item text.
+
+The following code example demonstrates how to set auto-width to the ComboBoxAdv control. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:Ribbon x:Name="ribbon" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="517">
+<syncfusion:RibbonTab Background="Transparent" Caption="Home" FocusVisualStyle="{x:Null}" Focusable="False" MinWidth="23">
+<syncfusion:RibbonBar Focusable="False" Header="Clip Board">
+<syncfusion:RibbonComboBox SelectedItem="Arial" Margin="0,10,0,0">
+<syncfusion:RibbonComboBoxItem>Arial</syncfusion:RibbonComboBoxItem>
+<syncfusion:RibbonComboBoxItem>Tahoma</syncfusion:RibbonComboBoxItem>
+<syncfusion:RibbonComboBoxItem>Microsoft Sans Serif</syncfusion:RibbonComboBoxItem>
+</syncfusion:RibbonComboBox>
+</syncfusion:RibbonBar>                
+</syncfusion:RibbonTab>
+</syncfusion:Ribbon>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Ribbon showing combobox resize by selected item](RibbonComboBox_images/RibbonComboBox_selecteditem1.png)
