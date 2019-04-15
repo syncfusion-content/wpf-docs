@@ -74,7 +74,7 @@ Online {{ '<http://help.syncfusion.com/wpf/pdfviewer>' | markdownify }} (Navigat
 <tr>
 <td>
 Class Reference</td><td>
-Online {{ '<http://help.syncfusion.com/wpf>' | markdownify }} (Navigate to the Reporting WPF User Guide. Select {{ '_PDF Viewer_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online {{ '<https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF.html>' | markdownify }} </td></tr>
 </table>
 
 
