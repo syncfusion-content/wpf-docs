@@ -139,7 +139,7 @@ LAYOUT<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-{{'[SfChromelessWindow](https://help.syncfusion.com/wpf/chromlesswindow/overview)' | markdownify}}<br/><br/></td></tr>
+{{'[ChromelessWindow](https://help.syncfusion.com/wpf/chromlesswindow/overview)' | markdownify}}<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -199,7 +199,7 @@ EDITORS<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-{{'[PercentageTextBox](https://help.syncfusion.com/wpf/percenttextbox/overview)' | markdownify}}<br/><br/></td></tr>
+{{'[PercentTextBox](https://help.syncfusion.com/wpf/percenttextbox/overview)' | markdownify}}<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
