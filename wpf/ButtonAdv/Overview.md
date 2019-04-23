@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The ButtonAdv control is a basic button control that is used to design complex forms and applications. The control is shipped with a Commanding Support that provides compatibility in MVVM design pattern.
+The ButtonAdv control is a basic button control with MultiLine support that is used to design complex forms and applications. The control is shipped with a Commanding Support that provides compatibility in MVVM design pattern by attaching Commands to the ButtonAdv, which will get executed when it gets clicked.
 
 
 
