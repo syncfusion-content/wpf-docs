@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | ThefollowingcodeaddstheCheckedeventhandlertotheButtonAdv | wpf | Syncfusion
+title: Overview | ButtonAdv | wpf | Syncfusion
 description: overview
 platform: wpf
 control: ButtonAdv
