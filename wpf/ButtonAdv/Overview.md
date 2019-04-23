@@ -13,7 +13,7 @@ The ButtonAdv control is a basic button control with MultiLine support that is u
 
 
 
-![](Overview_images/Overview_img1.png)
+![Overview image](Overview_images/Overview_img1.png)
 
 ButtonAdv
 {:.caption}

@@ -13,7 +13,7 @@ This section guides you on getting started with the ButtonAdv control. It descri
 
 ## Control structure
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 Control Structure
 {:.caption}
@@ -48,7 +48,7 @@ button.Label = "Hello World";
 {% endhighlight  %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Setting Label](Getting-Started_images/Getting-Started_img2.png)
 
 Typical ButtonAdv Control
 {:.caption}
@@ -84,7 +84,7 @@ button.SizeMode = SizeMode.Small;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Small Mode](Getting-Started_images/Getting-Started_img3.png)
 
 ButtonAdv Control with Small SizeMode
 {:.caption}
@@ -112,7 +112,7 @@ button.SizeMode = SizeMode.Normal;
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Normal Mode](Getting-Started_images/Getting-Started_img4.png)
 
 ButtonAdv control with Normal SizeMode
 {:.caption}
@@ -140,7 +140,7 @@ button.SizeMode = SizeMode.Large;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Large Mode](Getting-Started_images/Getting-Started_img5.png)
 
 ButtonAdv controls with Large SizeMode
 {:.caption}
@@ -173,7 +173,7 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 {% endhighlight  %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![Setting Image](Getting-Started_images/Getting-Started_img6.png)
 
 Small Sized ButtonAdv Control with image
 {:.caption}
@@ -199,7 +199,7 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 {% endhighlight  %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![Normal Mode Image](Getting-Started_images/Getting-Started_img7.png)
 
 Normal Sized ButtonAdv Control with Image
 {:.caption}
@@ -225,7 +225,7 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![Large Mode Image](Getting-Started_images/Getting-Started_img8.png)
 
 Large Sized ButtonAdv Control with Image
 {:.caption}
@@ -237,12 +237,12 @@ The Icon size can be customized using the following two properties:
 * IconWidth
 * IconHeight
 
-![](Getting-Started_images/Getting-Started_img9.png)
+![Icon Size](Getting-Started_images/Getting-Started_img9.png)
 
 ButtonAdv Control with IconSize(80,80)
 {:.caption}
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![Icon Size Image](Getting-Started_images/Getting-Started_img10.png)
 
 ButtonAdv Control with IconSize(20,20)
 {:.caption}

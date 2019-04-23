@@ -34,7 +34,7 @@ button.IsCheckable = true;button.IsChecked = true;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Checkable-Support_images/Checkable-Support_img1.png)
+![Checkable Image](Checkable-Support_images/Checkable-Support_img1.png)
 
 Checkable ButtonAdv Control
 {:.caption}
