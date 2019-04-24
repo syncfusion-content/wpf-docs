@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion DoubleTextBox control for WPF
-description: Features overview of DoubleTextBox control for WPF
+title: Overview | DoubleTextBox | WPF | Syncfusion
+description: This section describes the features overview of DoubleTextBox control.
 platform: wpf
 control: DoubleTextBox
 documentation: ug

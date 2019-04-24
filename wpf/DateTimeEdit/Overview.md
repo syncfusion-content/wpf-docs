@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | DateTimeEdit | wpf | Syncfusion
-description: overview
+title: Overview | DateTimeEdit | WPF | Syncfusion
+description: This section describes the DateTimeEdit control structure and its features.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
@@ -24,11 +24,11 @@ The core features of the DateTimeEdit are as follows:
 
 ## Control structure
 
-![](Overview_images/Overview_img1.png)
+![DateTimeEdit control structure](Overview_images/Overview_img1.png)
 
-![](Overview_images/Overview_img2.png)
+![DateTimeEdit control structure](Overview_images/Overview_img2.png)
 
-![](Overview_images/Overview_img3.png)
+![DateTimeEdit control structure](Overview_images/Overview_img3.png)
 
 
 ### DateTimeEdit members

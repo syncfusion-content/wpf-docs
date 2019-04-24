@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with customization of SelectorItem of SfTimePicker control for WPF
+title: SelectorItem Customization | SfTimePicker | WPF | Syncfusion
 description: Deals with customization of SelectorItem of SfTimePicker control for WPF
 platform: wpf
 control: SfTimePicker
@@ -55,4 +55,4 @@ The output is displayed in the following image:
 
 
 
-![](Features_images/Features_img12.png)
+![SfTimePicker selected item customization](Features_images/Features_img12.png)

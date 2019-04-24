@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Null Value support | DateTimeEdit | wpf | Syncfusion
-description: null value support
+title: Null Value support | DateTimeEdit | WPF | Syncfusion
+description: This section describes how to set null value in the DateTimeEdit control
 platform: wpf
 control: DateTimeEdit
 documentation: ug
