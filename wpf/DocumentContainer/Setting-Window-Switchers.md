@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Window Switchers| DocumentContainer | Wpf | Syncfusion
-description: setting window switchers
+title: Setting Window Switchers | DocumentContainer | Wpf | Syncfusion
+description: This section dscribes how to switch the windows using keyboard keys.
 platform: wpf
 control: DocumentContainer
 documentation: ug
@@ -41,19 +41,19 @@ Content = DocContainer;
 {% endtabs %}
 
 
-![](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg)
+![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg)
 
 
 
 
 
-![](Setting-Window-Switchers_images/Setting-Window-Switchers_img2.jpeg)
+![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img2.jpeg)
 
 
 
 
 
-![](Setting-Window-Switchers_images/Setting-Window-Switchers_img3.jpeg)
+![Setting window switchers](Setting-Window-Switchers_images/Setting-Window-Switchers_img3.jpeg)
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing the orientations of GroupBar GroupBar itemsGroupView GroupViewItems| GroupBar | Wpf | Syncfusion
+title: Orientation support | GroupBar | WPF | Syncfusion
 description: changing the orientations of groupbar, groupbar items,groupview, groupviewitems
 platform: wpf
 control: GroupBar
@@ -11,8 +11,8 @@ documentation: ug
 
 You can change the layout of the entire GroupBar. GroupBar control has the Orientation property, which lets you place the contents of GroupBar either vertically or horizontally. It provides the following options.
 
-* Horizontal: the contents of the GroupBar Item in the GroupBar control are placed horizontally.
-* Vertical: the contents of the GroupBar Item in GroupBar control are placed vertically.
+* **Horizontal**: the contents of the GroupBar Item in the GroupBar control are placed horizontally.
+* **Vertical**: the contents of the GroupBar Item in GroupBar control are placed vertically.
 
 Use the following code snippet to set GroupBar Orientation to Horizontal.
 
@@ -61,7 +61,7 @@ groupBar.Orientation = Orientation.Horizontal;
 {% endtabs %}
 
 
-![](Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_images/Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_img1.jpeg)
+![Horizontal orientation](Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_images/Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_img1.jpeg)
 
 
 
@@ -80,7 +80,7 @@ groupBar.Orientation = Orientation.Vertical;
 {% endhighlight %}
 
 
-![](Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_images/Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_img2.jpeg)
+![Vertical orientation](Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_images/Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_img2.jpeg)
 
 
 
@@ -138,7 +138,7 @@ groupView.Orientation = Orientation.Horizontal;
 
 
 
-![](Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_images/Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_img3.jpeg)
+![Horizontal orientation](Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_images/Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_img3.jpeg)
 
 
 
@@ -154,15 +154,15 @@ groupView.Orientation = Orientation.Vertical;
 
 {% endhighlight %}
 
-![](Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_images/Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_img4.jpeg)
+![Vertical orientation](Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_images/Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems_img4.jpeg)
 
 
 
-
+ 
 
 ## Events to Handle Orientation of Groupbar
 
-The events corresponding to this property are OrientationChanged and OrientationChanging.           
+The events corresponding to this property are [OrientationChanged]() and [OrientationChanging]().           
 
 ## OrientationChanged Event
 

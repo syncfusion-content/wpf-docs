@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| PercentTextBox  | WPF | Syncfusion
-description: overview
+title: Overview | PercentTextBox  | WPF | Syncfusion
+description: This section describes the features overview of PercentTextBox control.
 platform: WPF
 control: PercentTextBox 
 documentation: ug
