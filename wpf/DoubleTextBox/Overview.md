@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | DoubleTextBox | WPF | Syncfusion
-description: This section describes the features overview of DoubleTextBox control.
+description: DoubleTextBox control restricts text box input to only double values with support for data binding, Watermark, Null Value, Blendability, and Culture support.
 platform: wpf
 control: DoubleTextBox
 documentation: ug

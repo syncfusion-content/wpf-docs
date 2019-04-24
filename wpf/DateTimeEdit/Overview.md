@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | DateTimeEdit | WPF | Syncfusion
-description: This section describes the DateTimeEdit control structure and its features.
+description: DateTimeEdit allows user to edit the DateTime in the text with the support of minimum and maximum value validation, watermark, etc.,
 platform: wpf
 control: DateTimeEdit
 documentation: ug

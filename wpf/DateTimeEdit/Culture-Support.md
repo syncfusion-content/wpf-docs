@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Culture Support | DateTimeEdit | wpf | Syncfusion
-description: culture support
+description: DateTimeEdit control provides globalization support to localized interfaces and regional data for users in multiple cultures.
 platform: wpf
 control: DateTimeEdit
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | CurrencyTextBox | WPF | Syncfusion
-description: overview
+description: CurrencyTextBox which has currency specific behavior in edit controls and supports data binding, Watermark, Null Value, and culture support.
 platform: WPF
 control: CurrencyTextBox 
 documentation: ug
