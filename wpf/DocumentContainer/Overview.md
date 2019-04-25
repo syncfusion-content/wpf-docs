@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| DocumentContainer | WPF | Syncfusion
-description: overview
+title: Overview | DocumentContainer | WPF | Syncfusion
+description: This section describes the features overview of DocumentContainer control
 platform: wpf
 control: DocumentContainer
 documentation: ug

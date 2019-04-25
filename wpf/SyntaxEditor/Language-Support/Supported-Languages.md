@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported languages of the Edit Control for WPF
-description: Supported languages Class of the Edit Control for WPF
+title: Supported languages | Syntax Editor | WPF | Syncfusion
+description: This section describes the EditControl supported language.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-## Supported Languages
+# Supported Languages
 
 Edit for WPF provides built-in support for a procedural and markup languages such as C#, Visual Basic, XAML and XML. It also supports SQL language and facilitates the users to provide custom language configurations.
 
@@ -33,4 +33,4 @@ editControl.DocumentLanguage = Languages.CSharp;
 
 The following image displays the EditControl displaying contents.
 
-![](Supported-Languages_images/Supported-Languages_img1.jpeg)
+![EdiControl language support](Supported-Languages_images/Supported-Languages_img1.jpeg)

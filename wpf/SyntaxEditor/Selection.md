@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text Selection in EditControl 
-description: Explains about Text selection of the Edit Control for WPF
+title: Text Selection | Syntax Editor | WPF | Syncfusion 
+description: This section describes how to select the content through mouse, keyboard, and touch interaction.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -74,12 +74,12 @@ Selects the entire document.<br/><br/></td></tr>
 
 Users can select text by double-tapping the desired word. Selection pointers will be displayed at the start and end positions of the selected content. 
 
-![](Selection-Images/selection-img1.png)
+![Selection using touch](Selection-Images/selection-img1.png)
 
 
 Users can extend the selection by dragging the selection pointers. The following screenshot shows an extended selection of content.
 
-![](Selection-Images/selection-img2.png)
+![Selection using touch](Selection-Images/selection-img2.png)
 
 When a selection goes beyond the view port of the SyntaxEditor control, a scroll viewer will automatically bring new content into the view and the text selection will extend to that content.
 

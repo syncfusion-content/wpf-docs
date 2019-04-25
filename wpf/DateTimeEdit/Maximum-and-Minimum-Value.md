@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maximum and Minimum Value | DateTimeEdit | wpf | Syncfusion
-description: maximum and minimum value
+title: Maximum and Minimum Value | DateTimeEdit | WPF | Syncfusion
+description: This section describes how to set maximum and minimum values in the DateTimeEdit control.
 platform: wpf
 control: DateTimeEdit
 documentation: ug

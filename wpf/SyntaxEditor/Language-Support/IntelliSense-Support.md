@@ -1,13 +1,13 @@
 ---
 layout: post
-title: IntelliSense support Provided by Edit Control
-description: IntelliSense support Provided by Edit Control
+title: IntelliSense support | Syntax Editor | WPF | Syncfusion
+description: This section explains about the intellisense pop-up capabilities available in EditControl.
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
 
-## IntelliSense Support
+# IntelliSense Support
 
 The Essential Edit for WPF provides Visual Studio like IntelliSense support. With IntelliSense support users can quickly choose the possible words while typing text in the control.
 
@@ -103,7 +103,7 @@ N> Having an INotifyCollectionChanged implemented collection as AssemblyReferenc
 
 The following image displays the Intellisense Demo Window.
 
-![](IntelliSense-Support_images/IntelliSense-Support_img3.jpeg)
+![IntelliSense support](IntelliSense-Support_images/IntelliSense-Support_img3.jpeg)
 
 
 **Custom mode**
@@ -307,7 +307,7 @@ When the code runs, the following output displays.
 
 The following image displays the Custom Intellisense Demo Window.
 
-![](IntelliSense-Support_images/IntelliSense-Support_img4.jpeg)
+![IntelliSense support](IntelliSense-Support_images/IntelliSense-Support_img4.jpeg)
 
 
 ### Customizing IntelliSense list box style
@@ -352,7 +352,7 @@ Customize the IntelliSense List Box Style, by using the following code.
 
 The following figure displays displays the window that appears after applying IntelliSenseBox Style.
 
-![](IntelliSense-Support_images/IntelliSense-Support_img5.jpeg)
+![Customizing intellisense list box style](IntelliSense-Support_images/IntelliSense-Support_img5.jpeg)
 
 
 ### Applying multi-level IntelliSense items in custom mode
@@ -560,12 +560,12 @@ EditControl1.IntellisenseCustomItemsSource = customItems;
 {% endtabs %}
 The following screenshot illustrates IntelliSense displaying first-level of items from custom collection.
 
-![](IntelliSense-Support_images/IntelliSense-Support_img6.jpeg)
+![IntelliSense displaying first-level of items from custom collection](IntelliSense-Support_images/IntelliSense-Support_img6.jpeg)
 
 
 The following screenshot illustrates IntelliSense displaying sub-items from selected item.
 
-![](IntelliSense-Support_images/IntelliSense-Support_img7.jpeg)
+![IntelliSense displaying sub-items from selected item](IntelliSense-Support_images/IntelliSense-Support_img7.jpeg)
 
 
 Following classes in EditControl will be helpful to perform various operations related to IntelliSense.
