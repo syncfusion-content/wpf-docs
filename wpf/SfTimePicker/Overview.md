@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Overview | SfTimePicker | WPF | Syncfusion
-description: This section describes the features overview of SfTimePicker control.
+description: SfTimePicker control allows the user to select time values and displays the selected time value in a various formats.
 platform: wpf
 control: SfTimePicker
 documentation: ug

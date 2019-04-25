@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Watermark Support | DateTimeEdit | WPF | Syncfusion
-description: This section describes how to set the water mark text to the DateTimeEdit control
+description: DateTimeEdit control provides an watermark support to display dummy content when DateTime property is null.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
