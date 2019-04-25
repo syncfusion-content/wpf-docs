@@ -23,7 +23,9 @@ The following code adds the Click event handler to the ButtonAdv control:
 {% endhighlight %}
 {% highlight c# %}
 
-ButtonAdv button = new ButtonAdv()button.Click += new RoutedEventHandler(button_Click);
+ButtonAdv button = new ButtonAdv();
+
+button.Click += new RoutedEventHandler(button_Click);
 
 {% endhighlight %}
 {% endtabs %}
@@ -40,7 +42,9 @@ The following code adds the Checked event handler to the ButtonAdv control:
 {% endhighlight %}
 {% highlight c# %}
 
-ButtonAdv button = new ButtonAdv()button.Checked += new RoutedEventHandler(button_Checked);
+ButtonAdv button = new ButtonAdv();
+
+button.Checked += new RoutedEventHandler(button_Checked);
 
 {% endhighlight  %}
 {% endtabs %}
