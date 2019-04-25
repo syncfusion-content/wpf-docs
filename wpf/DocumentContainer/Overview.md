@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | DocumentContainer | WPF | Syncfusion
-description: This section describes the features overview of DocumentContainer control
+description: DocumentContainer control provides an functionalities of holding the documents, controls and panels inside it.
 platform: wpf
 control: DocumentContainer
 documentation: ug

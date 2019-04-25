@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence | DocumentContainer | WPF | Syncfusion
-description: This section describes how to save/load the dock states.
+description: DocumentContainer control provides an option state persistence to load and save the dock state in various places.
 platform: wpf
 control: DocumentContainer
 documentation: ug

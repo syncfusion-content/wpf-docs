@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Formatting | SfTimePicker | WPF | Syncfusion
-description: This section describes the formatting options of SfTimePicker control
+description: SfTimePicker control provides formatting option that allows users to format the display text in various ways.
 platform: wpf
 control: SfTimePicker
 documentation: ug
