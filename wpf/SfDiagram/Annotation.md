@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add text annotations to Diagram objects to textually describe them.
+title: Textually describes the diagram objects | Syncfusion
 description: How to textually describe Nodes and Connectors?
 platform: wpf
 control: SfDiagram
@@ -69,7 +69,7 @@ An Annotation can be added to a Node/Connector by defining the annotation object
 
 N> Annotation for Connector also similar to Node.
 
-![](Annotation_images/Create_Annotation.jpg)
+![Create Annotation](Annotation_images/Create_Annotation.jpg)
 
 ## Alignment
 
@@ -84,9 +84,9 @@ The `Offset` property of annotation is used to align the annotations based on fr
 
 Set the size for a nodes annotation by using `UnitWidth` and `UnitHeight` properties.
 
-The following imahes shows the offset (fraction values) based on node and size of the annotation.
+The following image shows the offset (fraction values) based on node and size of the annotation.
 
-![](Annotation_images/Offset.jpg)
+![Offet based annotation](Annotation_images/Offset.jpg)
 
 ### Horizontal and Vertical Alignments
 
@@ -126,15 +126,15 @@ NodeViewModel node = new NodeViewModel()
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
-| Left | Top | ![](Annotation_images/Annotation_img3.PNG) |
-| Center | | ![](Annotation_images/Annotation_img4.PNG) |
-| Right | | ![](Annotation_images/Annotation_img5.PNG) |
-| Left | Center | ![](Annotation_images/Annotation_img6.PNG) |
-| Center | | ![](Annotation_images/Annotation_img7.PNG) |
-| Right | | ![](Annotation_images/Annotation_img8.PNG) |
-| Left | Bottom | ![](Annotation_images/Annotation_img9.PNG) |
-| Center | | ![](Annotation_images/Annotation_img10.PNG) |
-| Right | | ![](Annotation_images/Annotation_img11.PNG) |
+| Left | Top | ![Left](Annotation_images/Annotation_img3.PNG) |
+| Center | | ![Center](Annotation_images/Annotation_img4.PNG) |
+| Right | | ![Right](Annotation_images/Annotation_img5.PNG) |
+| Left | Center | ![Left Center](Annotation_images/Annotation_img6.PNG) |
+| Center | | ![Center](Annotation_images/Annotation_img7.PNG) |
+| Right | | ![Right](Annotation_images/Annotation_img8.PNG) |
+| Left | Bottom | ![Left](Annotation_images/Annotation_img9.PNG) |
+| Center | | ![Center](Annotation_images/Annotation_img10.PNG) |
+| Right | | ![Right](Annotation_images/Annotation_img11.PNG) |
 
 ### Margin
 
@@ -161,7 +161,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Annotation_images/Margin.jpg)
+![Margin](Annotation_images/Margin.jpg)
 
 ### Annotation of Connector
 
@@ -171,7 +171,7 @@ The `Length` property of Annotation is used to align the Annotations based on fr
 
 The following image shows the relationship between the Annotation position and Length (fraction values).
 
-![](Annotation_images/Length.jpg)
+![Length](Annotation_images/Length.jpg)
 
 ### Margin
 
@@ -200,7 +200,7 @@ The following image shows the relationship between the Annotation position and L
 {% endhighlight %}
 {% endtabs %}
 
-![](Annotation_images/Connector_Margin.jpg)
+![Margin](Annotation_images/Connector_Margin.jpg)
 
 ## Wrapping
 
@@ -226,9 +226,9 @@ Annotations = new AnnotationCollection()
 
 | Values | Description | Node |
 |---|---|---|---|
-| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img18.PNG) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img19.PNG) |
-| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![](Annotation_images/annotation_img20.PNG) |
+| NoWrap | Text will not be wrapped. | ![NoWrap](Annotation_images/Annotation_img18.PNG) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![Wrap](Annotation_images/Annotation_img19.PNG) |
+| WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available Node width. However, the text may overflow beyond the Node width in the case of a very long word. | ![Overflow](Annotation_images/annotation_img20.PNG) |
 
 ## Appearance 
 
@@ -261,7 +261,7 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Annotation_images/Annotation_img13.PNG)
+![Appearance](Annotation_images/Annotation_img13.PNG)
 
 ## Interaction
 
@@ -280,7 +280,7 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Annotation_images/annotation _interaction.gif)
+![Interaction](Annotation_images/annotation _interaction.gif)
 
 ### Reference for Rotation
 
@@ -306,4 +306,4 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 You can add any number of Annotations to a Node or Connector.
 For sample, please refer to [MultipleAnnotation](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/MultipleAnnotation1970891699 "MultipleAnnotation").
 
-![](Annotation_images/annotation_img21.PNG)
+![Multiple Annotations](Annotation_images/annotation_img21.PNG)
