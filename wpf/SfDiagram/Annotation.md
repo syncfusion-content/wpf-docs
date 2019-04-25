@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Textually describes the diagram objects | Syncfusion
+title: Textually describes the diagramming objects | Syncfusion
 description: How to textually describe Nodes and Connectors?
 platform: wpf
 control: SfDiagram
