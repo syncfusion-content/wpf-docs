@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported languages | Syntax Editor | WPF | Syncfusion
-description: This section describes the EditControl supported language.
+description: Edit control provides built-in support for a procedural and markup languages such as C#, Visual Basic, XAML, etc.,
 platform: wpf
 control: Syntax Editor
 documentation: ug

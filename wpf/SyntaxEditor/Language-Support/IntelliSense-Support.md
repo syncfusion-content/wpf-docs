@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: IntelliSense support | Syntax Editor | WPF | Syncfusion
-description: This section explains about the intellisense pop-up capabilities available in EditControl.
+description: Edit control provides intellisense support that prompt possible words while typing text in the control.
 platform: wpf
 control: Syntax Editor
 documentation: ug
