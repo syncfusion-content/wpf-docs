@@ -1097,13 +1097,13 @@ this.datagrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-When dropping, the dragged records can be added above or below to the target record based on its drop position
+While dropping, the dragged records can be added above or below to the target record based on its drop position
 
 For example, if you dropped record at the bottom of the targeted record, it will be added below the targeted record.
 
 ![Drag and drop rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img24.png)
 
-If you drop over the targeted record, it will be added as a child of that targeted record
+If you drop above the targeted record, it will be added above the targeted record
 
 ![Drag and drop rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img25.png)
 
@@ -1200,7 +1200,7 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 
 #### Dropped
 
-[Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Dropped_EV.html) event occurs when a record is dropping within the target SfDataGrid.The  [GridRowDroppedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDroppedEventArgs.html) has the following members, which provide information for the Drop event.
+[Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Dropped_EV.html) event occurs when a record is dropping within the target SfDataGrid.The [GridRowDroppedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDroppedEventArgs.html) has the following members, which provide information for the Drop event.
 [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html): Gets a data object that contains the data associated while dragging the rows. 
 [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location 
 [IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same DataGrid or not.
@@ -1679,11 +1679,17 @@ private void sfTreeGrid_Drop(object sender, TreeGridRowDropEventArgs e)
                 if (dropPosition == "DropBelow" || dropPosition == "DropAbove")
                 {
                     parentNode = treeNode.ParentNode;
-                    var parentNodeItems = parentNode.Item as EmployeeInfo;
-                    newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parentNodeItems.ID };
-
+                    if (parentNode == null)
+                    {
+                        var treeNodeItem = treeNode.Item as EmployeeInfo;
+                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = treeNodeItem.ReportsTo };
+                    }
+                    else
+                    {
+                        var parentNodeItems = parentNode.Item as EmployeeInfo;
+                        newItem = new EmployeeInfo() { FirstName = record.FirstName, LastName = record.LastName, ID = record.ID, Salary = record.Salary, Title = record.Title, ReportsTo = parentNodeItems.ID };
+                    }
                 }
-
                 else if (dropPosition == "DropAsChild")
                 {
 
@@ -1704,13 +1710,10 @@ private void sfTreeGrid_Drop(object sender, TreeGridRowDropEventArgs e)
                     if (treeNode.ParentNode != null)
                     {
                         var collection = AssociatedObject.sfTreeGrid.View.GetPropertyAccessProvider().GetValue(treeNode.ParentNode.Item, AssociatedObject.sfTreeGrid.ChildPropertyName) as IEnumerable;
-
                         sourceCollection = GetSourceListCollection(collection);
                     }
-
                     else
                     {
-
                         sourceCollection = GetSourceListCollection(AssociatedObject.sfTreeGrid.View.SourceCollection);
                     }
                     dropIndex = sourceCollection.IndexOf(data);
