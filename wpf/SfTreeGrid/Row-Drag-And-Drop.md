@@ -78,17 +78,15 @@ private void RowDragDropController_DragStart(object sender, Syncfusion.UI.Xaml.T
 
 [TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html): Gets a value indicating the target node which is going to drop.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight c# %}
 sfTreeGrid.RowDragDropController.DragOver += RowDragDropController_DragOver;
 private void RowDragDropController_DragOver(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragOverEventArgs e)
 {
 
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ## DragLeave
 
@@ -102,17 +100,15 @@ private void RowDragDropController_DragOver(object sender, Syncfusion.UI.Xaml.Tr
 
 [TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html): Gets a value indicating the target node which is going to drop.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight c# %}
 this.sfTreeGrid.RowDragDropController.DragLeave += RowDragDropController_DragLeave;
 private void RowDragDropController_DragLeave(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragLeaveEventArgs e)
 {
 
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ## Drop
 
@@ -128,17 +124,15 @@ private void RowDragDropController_DragLeave(object sender, Syncfusion.UI.Xaml.T
 
 [TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html): Gets a value indicating the target node which is going to drop.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight c# %}
 this.sfTreeGrid.RowDragDropController.Drop += RowDragDropController_Drop;
 private void RowDragDropController_Drop(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropEventArgs e)
 {
 
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ## Dropped
 
@@ -146,23 +140,21 @@ private void RowDragDropController_Drop(object sender, Syncfusion.UI.Xaml.TreeGr
 
 [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~Data.html): Gets or sets a data object that contains the data associated while dragging the rows.
 
-[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~DropPosition.html# ""): Gets a value indicating the drop position which is based on dropped location.
+[DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~DropPosition.html): Gets a value indicating the drop position which is based on dropped location.
 
-[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~IsFromOutSideSource.html# ""): Gets a value indicating whether the dragging item is from same treegrid or not.
+[IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~IsFromOutSideSource.html): Gets a value indicating whether the dragging item is from same treegrid or not.
 
-[TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html# ""): Gets a value indicating the target node which is going to drop.
+[TargetNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropEventArgsBase~TargetNode.html): Gets a value indicating the target node which is going to drop.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight c# %}
 this.sfTreeGrid.RowDragDropController.Dropped += RowDragDropController_Dropped;
 private void RowDragDropController_Dropped(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDroppedEventArgs e)
 {
 
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 # Drag-and-Drop between SfTreeGrid and other controls
 
