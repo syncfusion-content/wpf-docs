@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Formatting options of SfTimePicker control for WPF
-description: Formatting options of SfTimePicker control for WPF
+title: Formatting | SfTimePicker | WPF | Syncfusion
+description: SfTimePicker control provides formatting option that allows users to format the display text in various ways.
 platform: wpf
 control: SfTimePicker
 documentation: ug
@@ -37,7 +37,7 @@ The example below shows how to create a time picker with a [Long Time pattern](h
 
 {% endhighlight %}
 
-![](Features_images/Features_img1.png)
+![SfTimePicker format string](Features_images/Features_img1.png)
 
 ## Specifying format for the TimeSelector
 
@@ -59,6 +59,6 @@ The SelectorFormatString property used to specify format for the TimeSelector
 {% endhighlight  %}
 
 
-![](Features_images/Features_img2.png)
+![SfTimePicker selection format string](Features_images/Features_img2.png)
 
 N>  A detailed explanation of standard date time formatting is available[here](http://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.71).aspx). The result string produced by these format specifiers is influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.

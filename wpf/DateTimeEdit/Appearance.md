@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance  | DateTimeEdit | wpf | Syncfusion 
-description: appearance     
+title: Appearance | DateTimeEdit | WPF | Syncfusion 
+description: DateTimeEdit control provides an option to customize the appearance to different visual style such as Blend, Office2003, etc.,
 platform: wpf
 control: DateTimeEdit
 documentation: ug
@@ -40,4 +40,4 @@ SkinStorage.SetVisualStyle(datetimeedit, "Blend");
 
 {% endtabs %}
 
-![](appearance-images/blend.jpeg)
+![DateTimeEdit blend visual style](appearance-images/blend.jpeg)

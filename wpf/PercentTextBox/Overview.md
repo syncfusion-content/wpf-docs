@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| PercentTextBox  | WPF | Syncfusion
-description: overview
+title: Overview | PercentTextBox  | WPF | Syncfusion
+description: PercentTextBox control helps to restrict text box input to only double values and displays the percentage of the given value.
 platform: WPF
 control: PercentTextBox 
 documentation: ug

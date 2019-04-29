@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing support in EditControl.
-description: How to print the Syntax Editor and customize the print settings.
+title: Printing support | Syntax Editor | WPF | Syncfusion
+description: Edit control provides support to print the content in the editors and also provides an option to  display print preview.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -51,17 +51,17 @@ editControl.ShowPrintPreview
 
 {% endtabs %}
 
-![](Printing_images/printdefault.png)
+![Printing support](Printing_images/printdefault.png)
 
 ### Print
 
 Print preview window has Print and Quick Print Buttons which needs to be clicked to print the EditControl.
 
-![](Printing_images/Print.png)
+![Print preview window](Printing_images/Print.png)
 
 **Step 1:** Clicking the Print button opens the System print dialog where user can select the printer and set the number of copies to be printed.
 
-![](Printing_images/msprint.png)
+![Print page](Printing_images/msprint.png)
 
 **Step 2:** Clicking the Quick Print button, directly print the pages using default printer without opening the print dialog.
 
@@ -98,7 +98,7 @@ editcontrol.ShowPrintPreview
 
 Print orientation can be changed in print preview at runtime by selecting from orientation drop-down in print preview.
 
-![](Printing_images/orientation.png)
+![Print orientation](Printing_images/orientation.png)
 
 ### Page size
 
@@ -134,7 +134,7 @@ editControl.Print
 
 Page size can be changed in print preview also by selecting from page-size drop-down which displays pre-defined page sizes. You can also manually enter custom page width and height in the editors below page-size drop-down and press OK to apply the custom width and height for the page.
 
-![](Printing_images/size.png)
+![Page size](Printing_images/size.png)
 
 ### Page margin
 
@@ -165,7 +165,7 @@ editcontrol.Print
 
 Page margin can be changed in print preview also by selecting from pre-defined page margin from margin drop-down. You can manually enter custom margins in the editors below margin drop-down and press OK to apply the custom margin.
 
-![](Printing_images/margin.png)
+![Page margin](Printing_images/margin.png)
 
 ## Setting Header and Footer
 
@@ -223,7 +223,7 @@ editcontrol.ShowPrintPreview
 
 3.Now run the application and you can see page header in all the pages. In the same way, you can set `PrintSettings.PageFooterTemplate` also.
 
-![](Printing_images/header.png)
+![Print window](Printing_images/header.png)
 
 ### Printing Current Date time and Page number
 
@@ -283,4 +283,4 @@ editcontrol.ShowPrintPreview
 
 {% endtabs %}
 
-![](Printing_images/footer.png)
+![Printing document](Printing_images/footer.png)

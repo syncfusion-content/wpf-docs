@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing Support | DateTimeEdit | wpf | Syncfusion
-description: editing support
+title: Editing Support | DateTimeEdit | WPF | Syncfusion
+description: Editing Support provides an easy way to select and edit date and time values by setting CanEdit property.
 platform: wpf
 control: DateTimeEdit
 documentation: ug

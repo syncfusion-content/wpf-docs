@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Null Value support | DateTimeEdit | wpf | Syncfusion
-description: null value support
+title: Null Value support | DateTimeEdit | WPF | Syncfusion
+description: DateTimeEdit control provides null value support to accept null values by using IsEmptyDateEnabled property.
 platform: wpf
 control: DateTimeEdit
 documentation: ug

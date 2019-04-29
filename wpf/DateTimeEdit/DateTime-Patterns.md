@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DateTime Patterns | DateTimeEdit | wpf | Syncfusion
-description: datetime patterns
+title: DateTime Patterns | DateTimeEdit | WPF | Syncfusion
+description: This section describes how to display the date time information in the DateTimeEdit control using predefined patterns and custom pattern.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
