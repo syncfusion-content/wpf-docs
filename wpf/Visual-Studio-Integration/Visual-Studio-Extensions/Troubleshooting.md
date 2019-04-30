@@ -22,7 +22,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
    **Option 1:**  
-   Open an existing Syncfusion WinFroms Application, Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Troubleshoot…** in Visual Studio.
+   Open an existing Syncfusion WinForms Application, Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Troubleshoot…** in Visual Studio.
 
    ![Syncfusion Troubleshooter via Syncfusion menu](SyncfusionTroubleshooter_images/Syncfusion_Menu_Troubleshooter.png)
 
