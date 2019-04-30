@@ -9,7 +9,7 @@ documentation: ug
 
 # .NET core support
 
-This section explains how to create the project in .NETcore application.
+This section explains how to create the project in .NET core application.
 
 ## Create .NET core project
 
