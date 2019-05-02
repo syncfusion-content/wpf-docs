@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# WPF Extension
+# Overview
 
 The Syncfusion WPF Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio.The Syncfusion WPF Extensions supports Microsoft Visual Studio 2013 or higher.
 
@@ -19,7 +19,7 @@ The Syncfusion provides the following extension supports in Visual Studio:
 
 1.	[Create Project](https://help.syncfusion.com/wpf/Visual-Studio-Integration/Visual-Studio-Extensions/Create-Project): Creates the Syncfusion WPF application by adding the required Syncfusion assemblies and XMAL.
 2.	[Add References](https://help.syncfusion.com/wpf/Visual-Studio-Integration/Visual-Studio-Extensions/Add-References): Add the required Syncfusion assembly to WPF project reference based on the selected control(s).
-3.	[Toolbox Configuration](https://help.syncfusion.com/common/essential-studio/utilities#toolbox-configuration): To configure the Syncfusion controls into the Visual Studio .NET toolbox.
+3.	[Toolbox Configuration](https://help.syncfusion.com//wpf/Visual-Studio-Integration/Toolbox-Configuration): To configure the Syncfusion controls into the Visual Studio .NET toolbox.
 4.	[Troubleshooter](https://help.syncfusion.com/wpf/Visual-Studio-Integration/Visual-Studio-Extensions/Troubleshooting): Troubleshoot the project with the Syncfusion configuration and apply the fix like, wrong Framework Syncfusion assembly added to the project or missing any Syncfusion dependent assembly of a referred assembly.
 
 **No project selected in Visual Studio**
