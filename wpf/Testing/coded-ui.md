@@ -86,11 +86,197 @@ Coded UI provides support only in Visual Studio – 2010, 2012 and 2013 Ultimate
 </tr>
 </table>
 
+
+
+## Create, record, and run the tests
+
+### Creating Coded UI Project
+
+CUIT contains the Coded UI test project. When application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution is as follows:
+
+  * Choose Add New Project. 
+  * Select either Visual Basic or Visual C#.
+  * Right-click the test project, choose Add, and select Coded UI Test.
+
+Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition does not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
+
+![WPF Coded UI create project](CodedUI_images/CodedUI_img1.jpeg)
+
+### Adding Coded UI Test file
+
+To add the CUIT file, follow the steps:
+
+1.Create the CUIT project, the CUIT file will be automatically generated. To add another test file, right-click the test project, choose Add, and select Coded UI Test.
+
+![WPF Coded UI adding test file](CodedUI_images/CodedUI_img2.jpeg)
+
+2.`Generate Code for Coded UI Test` dialog box will be shown after selecting the Coded UI test file. Choose `Record` to record the test actions.
+
+![WPF Coded UI showing Record option](CodedUI_images/CodedUI_img3.jpeg)
+
+3.Then, right-click the body of the Coded UI Test file. 
+
+![WPF Coded UI showing test file content](CodedUI_images/CodedUI_img4.png)
+
+4.Choose `Coded UI Test Builder` (UI Map) at the bottom right side of the window.
+
+![WPF Coded UI showing UI Map](CodedUI_images/CodedUI_img5.jpeg)
+
+5.Start the recording option from UI Map to record the test actions and recording option can be paused when testing the project.
+
+6.Run the application, on which you will be performing UI testing.
+
+7.Drag the crosshairs on to the UI elements of your WPF grid control application. It shows the available properties of the inner UI elements in the grid controls.
+
+8.The actions made on UI elements can be recorded by clicking `Record` on the `Coded UI Test builder`. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
+
+![WPF Coded UI showing pause option](CodedUI_images/Features_img1.jpeg)
+
+9.Then, click the `Generate Code` icon in `Coded UI Test Builder` to generate a test method. Close the `Coded UI Test Builder`. You can see the generated code for the cell value changed action.
+
+{% tabs %}
+{% highlight c# %}
+public void RecordedMethod1()
+{
+   #region Variable Declarations
+   WpfText uIMEREPText = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom4.UIMEREPText;
+   WpfEdit uIGridCellEdit = this.UIWpfWindow.UISfDataGridCustom.UIGridCellEdit;
+   WpfSfGridCell uIGridCellCustom11 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom11;
+   WpfSfGridCell uIGridCellCustom12 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom12;
+   #endregion
+}
+{% endhighlight %}
+{% endtabs %}
+
+10.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in `Coded UI Test Builder`.
+![WPF Coded UI showing Add Assertion](CodedUI_images/Features_img2.jpeg)
+
+### Testing recorded steps
+
+Application can be tested with the generated CUIT method. Follow the procedure to test the recorded steps:
+
+1.Add a test method called CodedUITestProject1.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public void CodedUITestMethod1()
+
+{
+// Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+    this.UIMap.RecordedMethod1();
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Sub CodedUITestMethod1()
+
+' Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+	Me.UIMap.RecordedMethod2()
+End Sub 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+2.Build and run the application that has already been configured. CUIT builder can be opened with the following steps.
+
+3.Right-click the body of the `CodedUITestMethod` and select `Run Tests`.
+
+![WPF Coded UI showing Run Tests](CodedUI_images/CodedUI_RunTests.png)
+
+4.Before running tests, ensure that the test application is launched and the initial states of controls are same as at the beginning of the test recording.
+
+## Supported controls
+
+The following controls are featured in Coded UI testing support.
+
+<table>
+<tr>
+<th>
+Supported Controls<br/><br/></th>
+<th>
+Levels<br/><br/></th></tr>
+<tr>
+<td>
+DataGrid<br/><br/></td><td>
+3 Levels<br/><br/></td></tr>
+<tr>
+<td>
+GridControl<br/><br/></td><td>
+3 Levels<br/><br/></td></tr>
+<tr>
+<td>
+SfDataPager<br/><br/></td><td>
+3 Levels<br/><br/></td></tr>
+<tr>
+<td>
+TreeGrid<br/><br/></td><td>
+3 Levels<br/><br/></td></tr>
+<tr>
+<td>
+ComboBoxAdv<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+DockingManager<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+DocumentContainer<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+GridData<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+GridTree<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+PivotGrid<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+PropertyGrid<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+Ribbon<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+SfChart<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+SfMultiColumnDropDown<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+TabControlExt<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+TileView<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+TreeView<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+</table>
+
+N> The 3 level supported control only have Coded UI Test extension project.
+
 ## Coded UI Test extension support
 
 The Coded UI Test(CUIT) extension is a technology manager that tells Coded UI Test to use UI automation for Syncfusion WPF controls.
 
-The following controls are having extension project:
+The following controls have extension project.
 
 * SfDataGrid
 * SfTreeGrid
@@ -217,203 +403,7 @@ C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\15.0\UITestExtensionPa
 
 N> The Extension package should be installed(For example, **Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll**) in GAC location. Refer to the MSDN link for [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) installation.
 
-## Create, record, and run the tests
-
-### Creating Coded UI Project
-
-CUIT contains the Coded UI test project. When application does not contain the CUIT project, create a new project. In the Solutions Explorer, on the shortcut menu of the solution is as follows:
-
-  * Choose Add New Project. 
-  * Select either Visual Basic or Visual C#.
-  * Right-click the test project, choose Add, and select Coded UI Test.
-
-Coded UI test project does not appear on Visual Studio, if Visual Studio Enterprise edition does not installed in the system. To create CUIT, install Visual Studio Enterprise edition in system.
-
-![WPF Coded UI create project](CodedUI_images/CodedUI_img1.jpeg)
-
-### Adding Coded UI Test file
-
-To add the CUIT file, follow the steps:
-
-1.Create the CUIT project, the CUIT file will be automatically generated. To add another test file, right-click the test project, choose Add, and select Coded UI Test.
-
-![WPF Coded UI adding test file](CodedUI_images/CodedUI_img2.jpeg)
-
-2.`Generate Code for Coded UI Test` dialog box will be shown after selecting the Coded UI test file. Choose `Record` to record the test actions.
-
-![WPF Coded UI showing Record option](CodedUI_images/CodedUI_img3.jpeg)
-
-3.Then, right-click the body of the Coded UI Test file. 
-
-![WPF Coded UI showing test file content](CodedUI_images/CodedUI_img4.png)
-
-4.Choose `Coded UI Test Builder` (UI Map) at the bottom right side of the window.
-
-![WPF Coded UI showing UI Map](CodedUI_images/CodedUI_img5.jpeg)
-
-5.Start the recording option from UI Map to record the test actions and recording option can be paused when testing the project.
-
-6.Run the application, on which you will be performing UI testing.
-
-7.Drag the crosshairs on to the UI elements of your WPF grid control application. It shows the available properties of the inner UI elements in the grid controls.
-
-8.The actions made on UI elements can be recorded by clicking `Record` on the `Coded UI Test builder`. For example, you can record the action of changing the cell value in SfDataGrid. Click `Pause` to finish the record.
-
-![WPF Coded UI showing pause option](CodedUI_images/Features_img1.jpeg)
-
-9.Then, click the `Generate Code` icon in `Coded UI Test Builder` to generate a test method. Close the `Coded UI Test Builder`. You can see the generated code for the cell value changed action.
-
-{% tabs %}
-{% highlight c# %}
-public void RecordedMethod1()
-{
-   #region Variable Declarations
-   WpfText uIMEREPText = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom4.UIMEREPText;
-   WpfEdit uIGridCellEdit = this.UIWpfWindow.UISfDataGridCustom.UIGridCellEdit;
-   WpfSfGridCell uIGridCellCustom11 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom11;
-   WpfSfGridCell uIGridCellCustom12 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom12;
-   #endregion
-}
-{% endhighlight %}
-{% endtabs %}
-
-10.An assertion can also be created to check the modified cell value. Drag the crosshair to the modified cell, the Assertion window appears. The properties for the control (Cell) will be listed in the Assertion dialog box. You can add assertion by clicking `Generate Code` in `Coded UI Test Builder`.
-![WPF Coded UI showing Add Assertion](CodedUI_images/Features_img2.jpeg)
-
-### Testing recorded steps
-
-Application can be tested with the generated CUIT method. Follow the procedure to test the recorded steps:
-
-1.Add a test method called CodedUITestProject1.
-
-{% tabs %}
-
-{% highlight C# %}
-
-public void CodedUITestMethod1()
-
-{
-// Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-    this.UIMap.RecordedMethod1();
-}
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Public Sub CodedUITestMethod1()
-
-' Generates code for this test. Select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-	Me.UIMap.RecordedMethod2()
-End Sub 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-2.Build and run the application that has already been configured. CUIT builder can be opened with the following steps.
-
-3.Right-click the body of the `CodedUITestMethod` and select `Run Tests`.
-
-![WPF Coded UI showing Run Tests](CodedUI_images/CodedUI_RunTests.png)
-
-4.Before running tests, ensure that the test application is launched and the initial states of controls are same as at the beginning of the test recording.
-
-## Supported controls
-
-The following controls are featured in Coded UI testing support.
-
-<table>
-<tr>
-<th>
-Supported Controls<br/><br/></th>
-<th>
-Levels<br/><br/></th></tr>
-<tr>
-<td>
-AutoComplete<br/><br/></td><td>
-3 Levels<br/><br/></td></tr>
-<tr>
-<td>
-CellGrid<br/><br/></td><td>
-3 Levels<br/><br/></td></tr>
-<tr>
-<td>
-ComboBoxAdv<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-DataGrid<br/><br/></td><td>
-3 Levels<br/><br/></td></tr>
-<tr>
-<td>
-DockingManager<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-DocumentContainer<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-GridData<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-GridControl<br/><br/></td><td>
-3 Levels<br/><br/></td></tr>
-<tr>
-<td>
-GridTree<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-PivotGrid<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-PropertyGrid<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-Ribbon<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-SfCalculator<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-SfChart<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-SfDataGrid<br/><br/></td><td>
-3 Levels<br/><br/></td></tr>
-<tr>
-<td>
-SfDataPager<br/><br/></td><td>
-3 Levels<br/><br/></td></tr>
-<tr>
-<td>
-SfMultiColumnDropDown<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-TabControlExt<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-TileView<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-<tr>
-<td>
-TreeGrid<br/><br/></td><td>
-3 Levels<br/><br/></td></tr>
-<tr>
-<td>
-TreeView<br/><br/></td><td>
-2 Levels<br/><br/></td></tr>
-</table>
+### UI Elements for supported controls
 
 The following UI Elements for Coded UI supported controls,
 
@@ -519,13 +509,6 @@ SfDataPager
 SfDataGrid
 </td>
 <td>
-DataGrid,
-GridCell,
-GridHeaderCellControl,
-GridRowHeaderCell,
-GroupDropArea,
-DetailsViewDataGrid,
-GroupDropAreaItem,
 GridStackedHeaderCellControl,
 GridTableSummaryCell,
 GridGroupSummaryCell,
@@ -539,21 +522,8 @@ GridIndentCell
 SfTreeGrid
 </td>
 <td>
-TreeGrid,
-TreeGridCell,
-TreeGridHeaderCell,
-TreeGridRowHeaderCell,
-TreeGridStackedHeaderCell, and
+TreeGridStackedHeaderCell and
 TreeGridExpanderCell
-</td>
-</tr>
-<tr>
-<td>
-GridControl
-</td>
-<td>
-GridCell,
-Grid
 </td>
 </tr>
 <tr>
@@ -566,22 +536,17 @@ PivotGrid
 </tr>
 </table>
 
+### UI Elements and Properties
 
-## SfDataGrid
-
-### Properties
-
-The following properties are for each of the UI Elements in SfDataGrid.
+The following Coded UI supported controls have UI Elements and properties.
 
 <table>
 <tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
+<th> Control Name </th>
+<th> UI Elements </th>
+<th> Properties </th>
 </tr>
+<tr><td colspan="1" rowspan="8">SfDataGrid</td></tr>
 <tr>
 <td>
 DataGrid
@@ -658,59 +623,47 @@ GroupDropAreaItem
 GroupNameSortDirection
 </td>
 </tr>
+<tr><td colspan="1" rowspan="5">TreeGrid</td></tr>
 <tr>
-<td>
-GridStackedHeaderCellControl
-</td>
-<td>
-Default properties
-</td>
+<td>TreeGrid</td>
+<td>RowCount, ColumnCount, SelectionMode, SelectionUnit, SelectionIndex, and SelectedItemCount.</td></tr>
+<tr>
+<td>TreeGridCell</td>
+<td>CellValue, FormattedValue, RowIndex, ColumnIndex, and ColumnName.</td></tr>
+<tr>
+<td>TreeGridHeaderCell</td>
+<td>MappingName, SortDirection, and SortNumberVisibility.</td></tr>
+<tr>
+<td>TreeGridRowHeaderCell</td>
+<td>RowErrorMessage, RowIndex, and State.</td>
 </tr>
 <tr>
-<td>
-GridTableSummaryCell
-</td>
-<td>
-Default properties
-</td>
-</tr>
+<td colspan="1" rowspan="5">GridControl</td></tr>
 <tr>
-<td>
-GridGroupSummaryCell
-</td>
-<td>
-Default properties
-</td>
-</tr>
+<td>GridCell</td>
+<td>Text, CellValue, ColumnHeader, Format, Description, FormulaTag, CellWidth, CellHeight, FormattedText.</td></tr>
 <tr>
-<td>
-GridCaptionSummaryCell
-</td>
-<td>
-Default properties
-</td>
-</tr>
+<td>Grid</td>
+<td>SelectedRanges, GridName, RowCount, ColumnCount.</td></tr>
 <tr>
-<td>
-GridDetailsViewExpanderCellControl
-</td>
-<td>
-Default properties
-</td>
-</tr>
 <tr>
-<td>
-GridIndentCell
-</td>
-<td>
-Default properties
-</td>
+<td colspan="1" rowspan="2">SfMultiColumnDropDownControl</td></tr>
+<tr><td>SfMultiColumnDropDown</td>
+<td>AllowAutoComplete, AllowNullInput, AllowImmediatePopup, AllowIncrementalFiltering, AllowCaseSensitiveFiltering, AllowSpinOnMouseWheel, DisplayMember, IsDropDownOpenSelectedIndex, ValueMember.</td></tr>
 </tr>
+
+<tr>
+<td colspan="1" rowspan="2">SfDataPager</td></tr>
+<tr><td>SfDataPager</td>
+<td>AccentBackground, AccentForeground, AutoEllipsisMode, AutoEllipsisText, DisplayMode, EnableGridPaging, NumericButtonCount, Orientation, PageCount, PageSize, UseOnDemandPaging.</td></tr>
+
 </table>
 
-### Steps to work with Coded UI
+## Steps to work with Coded UI
 
-Follow the steps to create a `Coded UI Test` project and test the SfDataGrid application:
+### SfDataGrid
+
+Follow the steps to create a `Coded UI Test` project and test the SfDataGrid application.
 
 1.Create a new WPF application or open an existing WPF application with SfDataGrid. Enable the `Coded UI Test` by setting AutomationPeerHelper.EnableCodedUI to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
@@ -727,7 +680,7 @@ public MainWindow()
 
 2.Build the application and launch the .exe file from bin folder.
 
-3.Create, record, and run the tests for Coded UI Test project by referring `Create, Record, and Run the tests` section.
+3.Create, record, and run the tests for Coded UI Test project by referring [Create, Record, and Run the tests](https://help.syncfusion.com/wpf/testing/coded-ui#create-record-and-run-the-tests) section.
 
 ### Hand code for CUIT operation
 
@@ -769,7 +722,7 @@ public void FindGridCell()
 {% endhighlight %}
 {% endtabs %}
 
-**Note:** In the previous code snippet, at least two unique properties of GridCell (row index and column index / row index and cell value / column index and cell value) should be provided to search in SfDataGrid.
+N> In the previous code snippet, at least two unique properties of GridCell (row index and column index / row index and cell value / column index and cell value) should be provided to search in SfDataGrid.
 
 #### Hand code for sort click operation
 
@@ -791,87 +744,9 @@ public void Mouse_Click_on_GridHeaderCell()
 {% endhighlight %}
 {% endtabs %}
 
-## SfTreeGrid
+### SfTreeGrid
 
-### Properties
-
-The following properties are for each of the UI Elements in SfTreeGrid.
-
-<table>
-<tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-TreeGrid
-</td>
-<td>
-RowCount,
-ColumnCount,
-SelectionMode,
-SelectionUnit,
-SelectionIndex, and
-SelectedItemCount.
-</td>
-</tr>
-<tr>
-<td>
-TreeGridCell
-</td>
-<td>
-CellValue,
-FormattedValue,
-RowIndex,
-ColumnIndex, and
-ColumnName.
-</td>
-</tr>
-<tr>
-<td>
-TreeGridHeaderCell
-</td>
-<td>
-MappingName,
-SortDirection, and
-SortNumberVisibility.
-</td>
-</tr>
-<tr>
-<td>
-TreeGridRowHeaderCell
-</td>
-<td>
-RowErrorMessage,
-RowIndex, and
-State.
-</td>
-</tr>
-<tr>
-<td>
-TreeGridStackedHeaderCell
-</td>
-<td>
-Default properties  
-</td>
-</tr>
-<tr>
-<td>
-TreeGridExpanderCell
-</td>
-<td>
-Default properties  
-</td>
-</tr>
-</table>
-
-### Steps to work with Coded UI
-
-Follow the steps to create a **Coded UI Test** project and test the tree grid application:
+Follow the steps to create a **Coded UI Test** project and test the tree grid application.
 
 1.Create a new WPF application or open an existing WPF application with tree grid. Enable Coded UI Test in tree grid by setting **AutomationPeerHelper.EnableCodedUI** to true and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid namespace.
 
@@ -888,7 +763,7 @@ public MainWindow()
 
 2.Build the application and launch the .exe file from the bin folder.
 
-3.Create, record and run the tests for Coded UI Test project by referring `Create, Record, and Run the tests` section.
+3.Create, record and run the tests for Coded UI Test project by referring [Create, Record, and Run the tests](https://help.syncfusion.com/wpf/testing/coded-ui#create-record-and-run-the-tests) section.
 
 <table>
 <tr>
@@ -973,95 +848,7 @@ SfTreeGridExpanderCellPropertyProvider
 
 ## GridControl
 
-### Properties
-
-The following properties are for each of the UI Elements in the GridControl.
-
-<table>
-<tr>
-<td>
-{{'**UI Element**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="9">
-GridCell
-</td>
-<td>
-Text
-</td>
-</tr>
-<tr>
-<td>
-CellValue
-</td>
-</tr>
-<tr>
-<td>
-ColumnHeader
-</td>
-</tr>
-<tr>
-<td>
-Format
-</td>
-</tr>
-<tr>
-<td>
-Description
-</td>
-</tr>
-<tr>
-<td>
-FormulaTag
-</td>
-</tr>
-<tr>
-<td>
-CellWidth
-</td>
-</tr>
-<tr>
-<td>
-CellHeight
-</td>
-</tr>
-<tr>
-<td>
-FormattedText
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="4">
-Grid
-</td>
-<td>
-SelectedRanges
-</td>
-</tr>
-<tr>
-<td>
-GridName
-</td>
-</tr>
-<tr>
-<td>
-RowCount
-</td>
-</tr>
-<tr>
-<td>
-ColumnCount
-</td>
-</tr>
-</table>
-
-### Preparing the Grid application
-
-To prepare the grid application, follow the steps:
+Follow the steps to prepare the grid application.
 
 1.Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application, plugin is required. Add a reference to this assembly. 
 
@@ -1115,9 +902,13 @@ namespace WpfApplication3 
 
 5.Build the application for testing.
 
-6.Add the **Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll** and **Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll** in your sample. 
+6.Add the following reference in your sample.
 
-7.To create, record and run the tests for Coded UI Test project, you can refer this section **Create, Record, and Run the tests**.
+* Syncfusion.VisualStudio.TestTools.UITest.GridCommunication.dll
+
+* Syncfusion.VisualStudio.TestTools.UITest.GridExtension.dll
+
+7.To create, record and run the tests for Coded UI Test project, you can refer this section [Create, Record, and Run the tests](https://help.syncfusion.com/wpf/testing/coded-ui#create-record-and-run-the-tests).
 
 ### Hand code for CUIT operation
 
@@ -1179,139 +970,3 @@ public void CodedUITestMethod1()
  
 {% endhighlight %}
 {% endtabs %}
-
-## SfMultiColumnDropDown
-
-The following properties are for each of the UI Elements in the SfMultiColumnDropDown control.
-
-<table>
-<tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="9">
-SfMultiColumnDropDownControl
-</td>
-<td>
-AllowAutoComplete
-</td>
-</tr>
-<tr>
-<td>
-AllowNullInput
-</td>
-</tr>
-<tr>
-<td>
-AllowImmediatePopup
-</td>
-</tr>
-<tr>
-<td>
-AllowIncrementalFiltering
-</td>
-</tr>
-<tr>
-<td>
-AllowCaseSensitiveFiltering
-</td>
-</tr>
-<tr>
-<td>
-AllowSpinOnMouseWheel
-</td>
-</tr>
-<tr>
-<td>
-DisplayMember
-</td>
-</tr>
-<tr>
-<td>
-IsDropDownOpenSelectedIndex
-</td>
-</tr>
-<tr>
-<td>
-ValueMember
-</td>
-</tr>
-</table>
-
-## SfDataPager
-
-The following properties are for each of the UI Elements in the SfDataPager control.
-
-<table>
-<tr>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
-<td>
-{{'**Properties**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td colspan="1" rowspan="11">
-SfDataPager
-</td>
-<td>
-AccentBackground
-</td>
-</tr>
-<tr>
-<td>
-AccentForeground
-</td>
-</tr>
-<tr>
-<td>
-AutoEllipsisMode
-</td>
-</tr>
-<tr>
-<td>
-AutoEllipsisText
-</td>
-</tr>
-<tr>
-<td>
-DisplayMode
-</td>
-</tr>
-<tr>
-<td>
-EnableGridPaging
-</td>
-</tr>
-<tr>
-<td>
-NumericButtonCount
-</td>
-</tr>
-<tr>
-<td>
-Orientation
-</td>
-</tr>
-<tr>
-<td>
-PageCount
-</td>
-</tr>
-<tr>
-<td>
-PageSize
-</td>
-</tr>
-<tr>
-<td>
-UseOnDemandPaging
-</td>
-</tr>
-</table>
