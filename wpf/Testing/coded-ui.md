@@ -286,18 +286,10 @@ To test the Coded UI supported controls with CUITs, build the Extension project 
 
 <table>
 <tr>
-<td>
-<b>Controls</b>
-</td>
-<td>
-<b>Compile assemblies</b>
-</td>
-<td>
-<b>Adding Extension assembly</b>
-</td>
-<td>
-<b>Extension Project</b>
-</td>
+<th>Controls</th>
+<th>Compile assemblies</th>
+<th>Adding Extension assembly</th>
+<th>Extension Project</th>
 </tr>
 <tr>
 <td>
@@ -352,12 +344,8 @@ The above assembly must be placed in the following directory based on your Visua
 
 <table>
 <tr>
-<td>
-{{'**Visual Studio Version**'| markdownify }}
-</td>
-<td>
-{{'**Relative Path**'| markdownify }}
-</td>
+<th>Visual Studio Version</th>
+<th>Relative Path</th>
 </tr>
 <tr>
 <td>
@@ -409,12 +397,8 @@ The following UI Elements for Coded UI supported controls,
 
 <table>
 <tr>
-<td>
-{{'**Controls Name**'| markdownify }}
-</td>
-<td>
-{{'**UI Elements**'| markdownify }}
-</td>
+<th>Controls Name</th>
+<th>UI Elements</th>
 </tr>
 <tr>
 <td>
@@ -538,7 +522,7 @@ PivotGrid
 
 ### UI Elements and Properties
 
-The following Coded UI supported controls have UI Elements and properties.
+The following Coded UI supported controls have UI Elements and properties. Some of the UI Elements have default properties. So, that UI Elements are listed out in above table.
 
 <table>
 <tr>
@@ -767,15 +751,9 @@ public MainWindow()
 
 <table>
 <tr>
-<td>
-{{'**Automation peer class name**'| markdownify }}
-</td>
-<td>
-{{'**Control name in code generation**'| markdownify }}
-</td>
-<td>
-{{'**Property provider class name**'| markdownify }}
-</td>
+<th>Automation peer class name</th>
+<th>Control name in code generation</th>
+<th>Property provider class name</th>
 </tr>
 <tr>
 <td>
