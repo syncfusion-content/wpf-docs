@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Syncfusion Troubleshooter | windowsforms | Syncfusion
+title: Syncfusion Troubleshooter | wpf | Syncfusion
 description: Syncfusion Troubleshooter is Visual Studio extension to troubleshoot the configuration issues in Syncfusion assembly reference, webconfig entries in projects.
-platform: windowsforms
+platform: wpf
 control: Syncfusion Extensions
 documentation: ug
 ---
@@ -22,7 +22,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
    **Option 1:**  
-   Open an existing Syncfusion WinForms Application, Click **Syncfusion Menu** and choose **Essential Studio for WinForms > Troubleshoot…** in Visual Studio.
+   Open an existing Syncfusion WPF Application, Click **Syncfusion Menu** and choose **Essential Studio for WPF > Troubleshoot…** in Visual Studio.
 
    ![Syncfusion Troubleshooter via Syncfusion menu](SyncfusionTroubleshooter_images/Syncfusion_Menu_Troubleshooter.png)
 

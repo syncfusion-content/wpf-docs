@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Toolbox Configuration | windowsforms | Syncfusion
+title: Toolbox Configuration | wpf | Syncfusion
 description: This section provides information regarding all the Syncfusion Essential Studio utilities and its usage
-platform: windowsforms
+platform: wpf
 control: Essential Studio
 documentation: ug
 ---
 
 # Toolbox Configuration
 
-The Syncfusion Toolbox Installer utility adds the Syncfusion WinForms controls into the Visual Studio .NET toolbox.
+The Syncfusion Toolbox Installer utility adds the Syncfusion WPF controls into the Visual Studio .NET toolbox.
 
 N> Toolbox configuration support is not available for the Visual Studio Express Edition. However, you can manually configure the Syncfusion controls into the Visual Studio Express Toolbox. To do so, refer the [Manual Toolbox Configuration](https://help.syncfusion.com/common/faq/how-to-configure-the-toolbox-of-visual-studio-manually).
 
-Use the following steps to adds the Syncfusion WinForms controls through the Syncfusion Toolbox Installer:
+Use the following steps to adds the Syncfusion WPF controls through the Syncfusion Toolbox Installer:
 
 1. To launch Toolbox configuration utility, follow either one of the options below:
 
    **Option 1:**  
-   Choose **Syncfusion menu** in **Visual Studio**. Then, select corresponding platform menu and click **Toolbox Configuration…**
+   Click **Syncfusion menu** and choose **Essential Studio for WPF > Toolbox Configuration...** in **Visual Studio**
 
    ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox.png)
 
-   N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
 
    **Option 2:**   
    To open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
