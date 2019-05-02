@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Check for Updates | windowsforms | Syncfusion
+title: Check for Updates | wpf | Syncfusion
 description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio release.
-platform: windowsforms
+platform: wpf
 control: Visual Studio Extensions
 documentation: ug
 ---
