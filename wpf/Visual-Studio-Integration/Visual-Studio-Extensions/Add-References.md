@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Add a Syncfusion References| windowsforms | Syncfusion
+title: Add a Syncfusion References| wpf | Syncfusion
 description: add a syncfusion references via syncfusion reference manger
-platform: windowsforms
+platform: wpf
 control: Syncfusion Extensions
 documentation: ug
 ---
