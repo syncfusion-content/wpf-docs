@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MDI/ TDI functionalities | DockingManager | WPF | Syncfusion
 description: DockingManager provides an MDI and TDI functionalities which are applicable for the Document window.
@@ -14,6 +14,8 @@ The MDI and TDI functionalities are applicable for the Document window in the Do
 To change mode for the Document window, set the property [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) with its respective values.
 
 By default, the document state window is in TDI mode, that display child as tabbed document.
+
+N> When the window state is in MDI, child of docking manager will be hosted inside the DocumentContainer. So, user can customize child using DocumentContainer. Refer to this [documentation](https://help.syncfusion.com/wpf/documentcontainer/getting-started) for customizing DocumentContainer.
 
 {% tabs %}
 
