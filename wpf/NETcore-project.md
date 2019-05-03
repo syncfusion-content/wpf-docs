@@ -353,7 +353,7 @@ SfSchedule<br/><br/></td></tr>
 SfSunburstChart<br/><br/></td></tr>
 <tr>
 <td>
-SfSurfacechart<br/><br/></td></tr>
+SfSurfaceChart<br/><br/></td></tr>
 <tr>
 <td>
 SfTextBoxExt<br/><br/></td></tr>
