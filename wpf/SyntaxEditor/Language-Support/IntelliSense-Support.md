@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: IntelliSense support | Syntax Editor | WPF | Syncfusion
 description: Edit control provides intellisense support that prompt possible words while typing text in the control.
