@@ -15,6 +15,8 @@ To change mode for the Document window, set the property [ContainerMode](https:/
 
 By default, the document state window is in TDI mode, that display child as tabbed document.
 
+N> When the window state is in MDI, child of docking manager will be hosted inside the DocumentContainer. So, user can customize child using DocumentContainer. Refer to this [documentation](https://help.syncfusion.com/wpf/documentcontainer/getting-started) for customizing DocumentContainer.
+
 {% tabs %}
 
 {% highlight XAML %}
