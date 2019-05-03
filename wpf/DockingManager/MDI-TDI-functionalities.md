@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MDI/ TDI functionalities | DockingManager | WPF | Syncfusion
 description: DockingManager provides an MDI and TDI functionalities which are applicable for the Document window.
