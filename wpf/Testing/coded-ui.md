@@ -270,7 +270,7 @@ TreeView<br/><br/></td><td>
 2 Levels<br/><br/></td></tr>
 </table>
 
-N> The 3 level supported control only have Coded UI Test extension project.
+N> The three level supported control can only have Coded UI Test extension project.
 
 ## Coded UI Test extension support
 
@@ -522,7 +522,7 @@ PivotGrid
 
 ### UI Elements and Properties
 
-The following Coded UI supported controls have UI Elements and properties. Some of the UI Elements have default properties. So, that UI Elements are listed out in above table.
+The following Coded UI supported controls have UI Elements and other supported properties apart from default properties are listed below.
 
 <table>
 <tr>
