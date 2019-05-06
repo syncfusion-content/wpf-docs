@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Localization | DateTimeEdit | WPF | Syncfusion
 description: DateTimeEdit control provides localization support to translate the application resources into different language for the specific cultures.
