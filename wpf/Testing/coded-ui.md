@@ -824,7 +824,7 @@ SfTreeGridExpanderCellPropertyProvider
 </table>
 
 
-## GridControl
+### GridControl
 
 Follow the steps to prepare the grid application.
 
