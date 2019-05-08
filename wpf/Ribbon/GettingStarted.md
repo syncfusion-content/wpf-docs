@@ -823,6 +823,90 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ![](GettingStarted_images/GettingStarted_img11.jpg)
 
+### Customize the BackStage Visibility 
+
+The `IsBackStageVisible` property of `Ribbon` enables you to show/hide the `BackStage`. The following code example illustrates how to show or hide `BackStage`.
+
+1. Through Property 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top" IsBackStageVisible ="True"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+_ribbon.IsBackStageVisible = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+2. Through Methods
+
+% tabs %}
+
+{% highlight C# %}
+
+private void ShowBackstage_Click(object sender, RoutedEventArgs e)
+{
+    //to show back stage
+
+    _ribbon.ShowBackStage();
+}
+
+private void HideBackstage_Click(object sender, RoutedEventArgs e)
+{
+    //to hide the back stage
+
+    _ribbon.HideBackStage();
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub ShowBackstage_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	'to show back stage
+
+	_ribbon.ShowBackStage()
+End Sub
+
+Private Sub HideBackstage_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	'to hide the back stage
+
+	_ribbon.HideBackStage()
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+3. Through Commands
+
+`Ribbon` control provides the static `Commands` to show/hide the `BackStage` based on the parameter passed to it.
+
+{% tabs %}
+
+{% highlight XAML %}
+<syncfusion:RibbonButton x:Name="ribbonButton" Label="Open Backstage" Command="{x:Static syncfusion:RibbonCommands.IsBackStageVisible}" CommandTarget="{Binding ElementName=ribbon}">
+                        <syncfusion:RibbonButton.CommandParameter>
+                            <!--If we passes false it will hide the backstage otherwise it will show the backstage-->
+                            <sys:Boolean>true</sys:Boolean>
+                        </syncfusion:RibbonButton.CommandParameter>
+                    </syncfusion:RibbonButton>
+{% endhighlight %}
+
+{% endtabs %}
+
+>Note
+>
+>In order to bind the `IsBackStageVisible` command, `CommandTarget` and `CommandParameter` must be defined.
+
+
 ## Add BackStageCommandButton
 
 `BackStageCommandButton` added to BackStage as BackStage Element. Here four BackStageCommandButtons are added with `Header` property value as "Save", "SaveAttachments", "Options" and "Exit". 
