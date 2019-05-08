@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cerate Project | wpf | Syncfusion
+title: Create Project | Wpf | Syncfusion
 description: Syncfusion provides the Visual Studio Project Templates for the Syncfusion WPF platform to create Syncfusion WPF Application by addiing the required assemblies
 platform: wpf
 control: Syncfusion Extensions
@@ -23,14 +23,14 @@ Use the following steps to create the Syncfusion WPF project through the Visual 
     
    ![Choose Syncfusion WPF Application from Visual Studio new project dialog via Syncfusion menu](Project-Template-images\Syncfusion_Menu_ProjectTemplate.png)
 
-   N> In Visual Studio 2019, Syncfusion menu available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2:**   
    Choose **File > New > Project** and navigate to **Syncfusion > Windows > Syncfusion WPF Application** in **Visual Studio**.
 
    ![Choose Syncfusion WPF Application from Visual Studio new project dialog](Project-Template-images\Syncfusion-Project-Template-Gallery-1.png)
 
-2. Name the Project, choose the destination location when required, and set the Framework of the project, then click OK.  
+2. Name the **Project**, choose the destination location when required, and set the Framework of the project, then click **OK**.  
 
    N> Minimum target Framework is 4.0 for Syncfusion WPF project templates. 
 

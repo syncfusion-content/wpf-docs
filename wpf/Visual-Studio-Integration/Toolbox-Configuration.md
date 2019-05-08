@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbox Configuration | wpf | Syncfusion
+title: Toolbox Configuration | Wpf | Syncfusion
 description: This section provides information regarding all the Syncfusion Essential Studio utilities and its usage
 platform: wpf
 control: Essential Studio
@@ -22,7 +22,7 @@ Use the following steps to adds the Syncfusion WPF controls through the Syncfusi
 
    ![Toolbox Installer via Syncfusion menu](Toolbox-Configuration_images/Syncfusion_Menu_Toolbox.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2:**   
    To open the Syncfusion Control Panel, click **Add On and Utilities > Toolbox Installer**.
