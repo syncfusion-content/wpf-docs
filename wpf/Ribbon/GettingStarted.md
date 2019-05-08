@@ -238,7 +238,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![Ribbon with five RibbonBar inside the "HOME" RibbonTab as like Microsoft Outlook HOME Tab .](GettingStarted_images/GettingStarted_img3.jpg)
+![Ribbon with five RibbonBar inside the HOME RibbonTab as like Microsoft Outlook HOME Tab .](GettingStarted_images/GettingStarted_img3.jpg)
 
 ## Add RibbonButton
 
@@ -300,7 +300,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![RibbonButton with a caption as "New Email" similar to Outlook "New Email" Button](GettingStarted_images/GettingStarted_img4.jpg)
+![RibbonButton with a caption as New Email similar to Outlook New Email Button](GettingStarted_images/GettingStarted_img4.jpg)
 
 N> Image of any size has been used for `RibbonButton` and also it supports image of all formats.
 
@@ -355,7 +355,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![DropDownButton with a caption as "New Items" similar to Outlook "New Items" DropdownButton](GettingStarted_images/GettingStarted_img5.jpg)
+![DropDownButton with a caption as New Items similar to Outlook New Items DropdownButton](GettingStarted_images/GettingStarted_img5.jpg)
 
 ## Add SplitButton
 
@@ -416,7 +416,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![SplitButton with a caption as "Clean Up" similar to Outlook Clean Up split button](GettingStarted_images/GettingStarted_img6.jpg)
+![SplitButton with a caption as Clean Up similar to Outlook Clean Up split button](GettingStarted_images/GettingStarted_img6.jpg)
 
 ## Add RibbonGallery
 
