@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance | DateTimeEdit | WPF | Syncfusion 
 description: DateTimeEdit control provides an option to customize the appearance to different visual style such as Blend, Office2003, etc.,

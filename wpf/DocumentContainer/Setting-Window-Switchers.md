@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Setting Window Switchers | DocumentContainer | Wpf | Syncfusion
 description: DocumentContainer control provides window switchers that enables the users to switch between the windows using keyboard keys.
