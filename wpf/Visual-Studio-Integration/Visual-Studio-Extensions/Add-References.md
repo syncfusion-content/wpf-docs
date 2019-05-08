@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add a Syncfusion References| wpf | Syncfusion
+title: Add References| Wpf | Syncfusion
 description: add a syncfusion references via syncfusion reference manger
 platform: wpf
 control: Syncfusion Extensions
