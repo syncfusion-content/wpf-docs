@@ -121,37 +121,27 @@ Node.Constraints |= NodeConstraints.AllowDrop;
 Quick Commands are used to execute the commonly or frequently used commands around the Nodes, Connectors and Groups. There are 3 default Quick Commands for Nodes and Groups to execute Draw, Delete and Duplicate commands.
 
 {% tabs %}
-{% highlight xaml %}
-
-<!--Style for QuickCommand-->
-<Style TargetType="Path" x:Key="QuickCommandstyle">
-    <Setter Property="Fill" Value="#4D4D4D"/>
-    <Setter Property="StrokeThickness" Value="1"/>
-    <Setter Property="Stretch" Value="Fill"></Setter>
-</Style>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight C# %}
 
-QuickCommandViewModel quick = new QuickCommandViewModel();
+ // Element to represent the frequently used commands
+            QuickCommandViewModel quick = new QuickCommandViewModel()
+            {
+                // Outer part of quick command.
+                Shape = this.Resources["Ellipse"],
+               // appearence of shape.
+                ShapeStyle = this.Resources["QuickCommandstyle"] as Style,
+                //Inner part of quick command and it allows to host any UI elements
+                Content =
+                    "M3.7399902,0L16,12.258972 28.26001,0 32,3.7399902 19.73999,16 32,28.258972 28.26001,32 16,19.73999 3.7399902,32 0,28.258972 12.26001,16 0,3.7399902z",
+               
+                Command = (Diagram.Info as IGraphInfo).Commands.Delete
+            };
 
-// To define the Icon Shape
-quick.Content = "F1M11.8,11.1L11.1,11.8L8,8.7L4.9,11.8L4.2,11.1L7.3,8L4.2,4.93L4.93,4.22L8,7.3L11.1,4.22L11.8,4.93L8.8,8z";
-
-// To define the Background Shape
-Shape = App.Current.Resources["Ellipse"],
-
-// To define the Background style
-quick.ShapeStyle = this.Resources["QuickCommandstyle"] as Style;
-
-// Adding new QuickCommand object in Commands collection
-(Diagram.SelectedItems as SelectorViewModel).Commands = new QuickCommandCollection
-{
-    quick
-};
+            // Adding new QuickCommand object in Commands collection
+            (Diagram.SelectedItems as SelectorViewModel).Commands = new QuickCommandCollection()
+            {
+                quick
+            };
 
 {% endhighlight %}
 {% endtabs %}   
@@ -162,11 +152,7 @@ quick.ShapeStyle = this.Resources["QuickCommandstyle"] as Style;
 
 Appearance of the [QuickCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel_members.html) can be customized by using `Shape`, `ShapeStyle`, `Content` and `ContentTemplate` properties.
 
-![custom appearance of quick command](Interaction_images/QuickCommand_img2.jpg)
-
-Please refer to the sample to achieve above customization.
-
-Sample link :[QuickCommand](http://www.syncfusion.com/downloads/support/directtrac/199409/ze/QuickCommand_Sample1221181958.zip).
+![custom appearance of quick command](Interaction_images/quickcommand_alignment.jpg)
 
 By default QuickCommand will host on Node. [VisibilityMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.QuickCommandViewModel~VisibilityMode.html) property is to define the host of the QuickCommand either Node or Connector or both.    
 
@@ -179,6 +165,10 @@ QuickCommand can be aligned relative to boundaries of the Node or segments of th
 * `Margin` is an absolute value used to add some blank space in any one of its four sides.
 
 The Alignment of QuickCommand is similar  to [Annotation Alignment](/wpf/sfdiagram/annotation#alignment "Alignment").   
+
+Please refer to the sample to create a quick command.
+
+Sample link :[QuickCommand](http://www.syncfusion.com/downloads/support/forum/144334/ze/User_Handle2114341399).
 
 ## Hit Padding
 
