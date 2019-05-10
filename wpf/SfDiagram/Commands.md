@@ -29,7 +29,7 @@ Diagram provides set of commands to perform the functionalities in application.
 
 Alignment commands enable you to align the selected objects such as Nodes and Connectors on a page with respect to a reference object.
 
-The Alignment commands as follows
+The Alignment commands as follows.
 
 | Commands | Description |
 |---|---|---|
@@ -50,8 +50,8 @@ graphinfo.Commands.AlignTop.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![](Commands_images/Commands_img1.gif)
-![](Commands_images/Commands_img2.gif)
+![Represents the horizontal alignment](Commands_images/Commands_img1.gif)
+![Represents the vertical alignment](Commands_images/Commands_img2.gif)
 
 ## Spacing
 
@@ -71,8 +71,8 @@ graphinfo.Commands.SpaceDown.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![](Commands_images/Commands_img3.gif)
-![](Commands_images/Commands_img4.gif)
+![Represent the space across ](Commands_images/Commands_img3.gif)
+![Represent the space down](Commands_images/Commands_img4.gif)
 
 ## Sizing
 
@@ -95,7 +95,7 @@ graphinfo.Commands.SameWidth.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![](Commands_images/Commands_img5.gif)
+![Represents the size](Commands_images/Commands_img5.gif)
 
 ## Clipboard
 
@@ -119,13 +119,13 @@ graphinfo.Commands.Paste.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![](Commands_images/Commands_img6.gif)
+![Represents the clipboard](Commands_images/Commands_img6.gif)
 
 ## Duplicate
 
 This command copies the selected objects from the diagram and pastes the copied content into the diagram.                           
 
-![](Commands_images/Commands_img14.jpeg)
+![Represents the duplicate](Commands_images/Duplicate.jpg)
 
 ## Grouping
 
@@ -159,7 +159,7 @@ If the parameter is null, the object will be flipped both horizontally and verti
 {% endhighlight %}
 {% endtabs %}
 
-![](Commands_images/Commands_img7.gif)
+![Represents the flip](Commands_images/Commands_img7.gif)
 
 ## Z – Order
 
@@ -195,7 +195,7 @@ graphinfo.Commands.SendToBack.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![](Commands_images/Commands_img8.gif)
+![Represents the send to back](Commands_images/Commands_img8.gif)
 
 ### SendBackward
 
@@ -227,7 +227,7 @@ graphinfo.Commands.BringForward.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![](Commands_images/Commands_img9.gif)
+![Represents the bring forward](Commands_images/Commands_img9.gif)
 
 ## Zoom
 
@@ -249,7 +249,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 {% endhighlight %}
 {% endtabs %}
 
-![](Commands_images/Commands_img10.gif)
+![Represents the zooming](Commands_images/Commands_img10.gif)
 
 ## Reset
 
@@ -270,7 +270,7 @@ graphinfo.Commands.Reset.Execute(new ResetParameter() { Reset = Reset.Zoom });
 
 The Undo command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action if no other actions have occurred since the last undo.
 
-Undo and Redo actions are disabled by default, to enable this you can use `Constraints` property of the SfDiagram.  Please refer to the [GraphConstraints] (https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html)
+Undo and Redo actions are disabled by default, to enable this you can use `Constraints` property of the SfDiagram.  Please refer to the [GraphConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html)
 
 {% tabs %}
 {% highlight C# %}
@@ -334,6 +334,7 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ## Command Manager
 Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer to the following table for built-in commands with Key Gesture and Mouse Gesture.
+
 List of Commands and Key Gesture:
 
 | Command | Key | Key Modifiers |
@@ -383,6 +384,34 @@ N> When different commands are registered for the same key / mouse gestures, you
 
 ### Custom command
 
-User defined commands can also be created and mapped with existing gesture by using command manager. The following sample explains how to register mouse key gesture with Parameter to Save Command (Control + S)
+CommandManager provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
+The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GestureCommand_members.html) and [Gesture](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Gesture_members.html) helps to define a custom command.
 
-Sample link : [Custom Command](http://www.syncfusion.com/downloads/support/directtrac/198544/ze/CustomCommand-1777908354.zip).
+The following code example represents how to define custom command to Save Command (Control + S).
+
+
+{% tabs %}
+{% highlight C# %}
+
+ // To define the mouse and keyboard gesture for the commands
+            GestureCommand saveGesture = new GestureCommand()
+            {
+                // Define the command with custom command
+                Command = Save,
+                // Define gesture for custom Command
+                Gesture = new Gesture
+                {
+                    KeyModifiers = ModifierKeys.Control,
+                    KeyState = KeyStates.Down,
+                    Key = Key.S
+                },
+                // Parameter for command - file name for save command
+                Parameter = "diagram"
+            };
+
+            // Add the custom command to the existsing command collection.
+            diagram.CommandManager.Commands.Add(saveGesture);
+{% endhighlight %}
+{% endtabs %}
+
+Find the sample for [Custom Command](http://www.syncfusion.com/downloads/support/directtrac/219839/ze/CustomCommand1467218487).
