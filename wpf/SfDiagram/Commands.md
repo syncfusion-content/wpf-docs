@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Explore the frequently used inbuilt commands.
+title: Syncfusion | Explore the frequently used inbuilt commands.
 description:  How to explore and use the inbuilt commands?
 platform: wpf
 control: SfDiagram
@@ -50,9 +50,6 @@ graphinfo.Commands.AlignTop.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![Represents the horizontal alignment](Commands_images/Commands_img1.gif)
-![Represents the vertical alignment](Commands_images/Commands_img2.gif)
-
 ## Spacing
 
 Spacing commands enable you to place selected objects on the page at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
@@ -70,9 +67,6 @@ graphinfo.Commands.SpaceDown.Execute(null);
 
 {% endhighlight %}
 {% endtabs %}
-
-![Represent the space across ](Commands_images/Commands_img3.gif)
-![Represent the space down](Commands_images/Commands_img4.gif)
 
 ## Sizing
 
@@ -94,8 +88,6 @@ graphinfo.Commands.SameWidth.Execute(null);
 
 {% endhighlight %}
 {% endtabs %}
-
-![Represents the size](Commands_images/Commands_img5.gif)
 
 ## Clipboard
 
@@ -119,7 +111,7 @@ graphinfo.Commands.Paste.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
-![Represents the clipboard](Commands_images/Commands_img6.gif)
+![Represents the clipboard](Commands_images/clipboard.jpg)
 
 ## Duplicate
 
@@ -248,8 +240,6 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 
 {% endhighlight %}
 {% endtabs %}
-
-![Represents the zooming](Commands_images/Commands_img10.gif)
 
 ## Reset
 
