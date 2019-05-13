@@ -9,7 +9,7 @@ documentation: ug
 
 # Multiline Support
 
-You can display multiple lines of text in ButtonAdv. 
+ButtonAdv control has the option to display the multiple lines of text using boolean property `IsMultiLine`. 
 
 {% tabs %}
 {% highlight xaml %}
