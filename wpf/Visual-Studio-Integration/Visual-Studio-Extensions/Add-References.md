@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add a Syncfusion References| wpf | Syncfusion
+title: Add References| Wpf | Syncfusion
 description: add a syncfusion references via syncfusion reference manger
 platform: wpf
 control: Syncfusion Extensions
@@ -24,7 +24,7 @@ Follow the given steps to add the Syncfusion references in Visual Studio:
 
    ![Syncfusion Reference Manager via Syncfusion Menu](Syncfusion-Reference-Manger_images/Syncfusion_Menu_AddReference.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2:**  
    Right-click the selected project file from Solution Explorer, then select **Syncfusion Reference Manager…** from **Context Menu**. The following screenshot shows this option in Visual Studio.   
@@ -63,7 +63,7 @@ Follow the given steps to add the Syncfusion references in Visual Studio:
 
    ![Syncfusion Reference Manager new assemblies add information dialog](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img7.png)
 
-5. Click OK. The listed Syncfusion assemblies are added to project. Then it notifies “Syncfusion assemblies have been added successfully” in Visual Studio status bar.
+5. Click **OK**. The listed Syncfusion assemblies are added to project. Then it notifies “Syncfusion assemblies have been added successfully” in Visual Studio status bar.
 
    ![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img8.png)
 

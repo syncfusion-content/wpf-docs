@@ -105,7 +105,7 @@ NuGet packages can be updated to their specific version or latest version availa
 1. Right-click the project or solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
    Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 
-2. Select the **Updates** tab to see the packages available for update from the desired package sources. Select the required packages and the specific version from the dropdown, and click the **Update** button.
+2. Select the **Updates** tab to see the packages available for update. Select the required packages and the specific version from the dropdown, and click the **Update** button.
 
 ### Using Package Manger Console
 
