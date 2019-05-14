@@ -867,6 +867,22 @@ private void HideBackstage_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub ShowBackstage_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	'to show back stage
+
+	_ribbon.ShowBackStage()
+End Sub
+
+Private Sub HideBackstage_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	'to hide the back stage
+
+	_ribbon.HideBackStage()
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 3. Through Commands
