@@ -892,7 +892,7 @@ End Sub
 {% tabs %}
 
 {% highlight XAML %}
-<syncfusion:RibbonButton x:Name="ribbonButton" Label="Open Backstage" Command="{x:Static syncfusion:RibbonCommands.IsBackStageVisible}" CommandTarget="{Binding ElementName=ribbon}">
+<syncfusion:RibbonButton x:Name="ribbonButton" Label="Open Backstage" Command="{x:Static syncfusion:RibbonCommands.OpenBackStage}" CommandTarget="{Binding ElementName=ribbon}">
                         <syncfusion:RibbonButton.CommandParameter>
                             <!--If we passes false it will hide the backstage otherwise it will show the backstage-->
                             <sys:Boolean>true</sys:Boolean>
@@ -904,7 +904,7 @@ End Sub
 
 >Note
 >
->In order to bind the `IsBackStageVisible` command, `CommandTarget` and `CommandParameter` must be defined.
+>In order to bind the `OpenBackStage` command, `CommandTarget` and `CommandParameter` must be defined.
 
 
 ## Add BackStageCommandButton
