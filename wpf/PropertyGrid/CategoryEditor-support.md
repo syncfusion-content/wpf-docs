@@ -58,7 +58,7 @@ In the below example, FontWeightButton and FontListBox are the custom controls.
 {% endhighlight %}
 {% endtabs %}
 
-![](CategoryEditor-support_images/CategoryEditor-support_img1.png)
+![PropertyGrid with CategoryEditor](CategoryEditor-support_images/CategoryEditor-support_img1.png)
 
 
 ### Properties

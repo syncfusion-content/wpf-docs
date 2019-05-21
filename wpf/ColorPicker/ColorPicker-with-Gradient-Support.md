@@ -142,10 +142,10 @@ colorPicker.IsAlphaVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img8.jpeg)
+![ColorPicker with Alpha value in Horizontal Alignment](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img8.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img9.jpeg)
+![ColorPicker with Alpha value in vertical Alignment](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img9.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img10.jpeg)
+![ColorPicker without Alpha value in Horizontal Alignment](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img10.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img11.jpeg)
+![ColorPicker without Alpha value in vertical Alignment](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img11.jpeg)

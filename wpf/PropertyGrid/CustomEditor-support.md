@@ -94,7 +94,7 @@ public class ColorEditEditor :  ITypeEditor
 
 {% endtabs %}
 
-![](CustomEditor-support_images/CustomEditor-support_img1.png)
+![PropertyGrid with CustomEditor](CustomEditor-support_images/CustomEditor-support_img1.png)
 
 
 ### Properties

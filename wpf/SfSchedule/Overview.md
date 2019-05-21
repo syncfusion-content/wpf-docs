@@ -35,13 +35,13 @@ SfSchedule is used to provide Outlook-like scheduling. The SfSchedule control al
 
 The Appointments Editor to be used to create or edit various types of appointments with a specific time or location or using "All Day Events" without a specific time or location on your schedule. Appointment Editor can customize several feature of appointment such as applying reminder and adding recurrence to an appointment. It’s also simple to reschedule the added appointments by editing the Star Time and End Time of appointments.
 
-![](Overview_images/Overview_img1.png)
+![Appointment Editor window](Overview_images/Overview_img1.png)
 
 
 
 
 
-![](Overview_images/Overview_img2.png)
+![Recurrence window](Overview_images/Overview_img2.png)
 
 
 
