@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ColorPicker with Gradient Support | ColorPicker | wpf | Syncfusion
-description: colorpicker with gradient support
+description: The Color Picker has Gradient tool which returns a brush of type Solid, Linear or Radial. 
 platform: wpf
 control: ColorPicker
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 Color Picker now comes with Gradient tool which returns a brush of type Solid, Linear or Radial. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img1.jpeg)
+![ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img1.jpeg)
 
 ## Interactive features with gradient support
 
@@ -38,9 +38,9 @@ colorPicker.BrushMode =  BrushModes.Gradient;
 {% endhighlight %}
 {% endtabs %}
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img2.jpeg)
+![ColorPicker with Solid Brush mode](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img2.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img3.jpeg)
+![ColorPicker with Solid Gradient mode](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img3.jpeg)
 
 ### Enable solid to gradient switch
 
@@ -65,9 +65,9 @@ colorPicker.EnableSolidToGradientSwitch =  false;
 {% endhighlight %}
 {% endtabs %}
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img4.jpeg)
+![when EnableSolidToGradientSwitch property is Enabled](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img4.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img5.jpeg)
+![when EnableSolidToGradientSwitch property is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img5.jpeg)
 
 ### IsGradientPropertyEnabled
 
@@ -92,9 +92,9 @@ colorPicker. IsGradientEditorEnabled =  false;
 {% endhighlight %}
 {% endtabs %}
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img6.jpeg)
+![when IsGradientEditorEnabled property is Enabled](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img6.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img7.jpeg)
+![when IsGradientEditorEnabled property is Enabled](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img7.jpeg)
 
 ### GradientPropertyEditorMode
 
@@ -142,10 +142,10 @@ colorPicker.IsAlphaVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img8.jpeg)
+![ColorPicker with Alpha value in Horizontal Alignment](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img8.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img9.jpeg)
+![ColorPicker with Alpha value in vertical Alignment](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img9.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img10.jpeg)
+![ColorPicker without Alpha value in Horizontal Alignment](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img10.jpeg)
 
-![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img11.jpeg)
+![ColorPicker without Alpha value in vertical Alignment](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img11.jpeg)
