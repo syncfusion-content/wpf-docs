@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of the Edit control for WPF
-description: Overview of the Edit control for WPF
+description: The WPF Syntax Editor is a code editor similar to Visual Studio Editor that supports syntax highlighting, code outlining, IntelliSense,  etc.
 platform: wpf
 control: Syntax Editor
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | UpDown | WPF | Syncfusion
-description: overview
+description: The Updown control displays numeric values. The value can be select by on scrolling the values and by using the Increment and Decrement buttons of the UpDown control.
 platform: WPF
 control: UpDown
 documentation: ug

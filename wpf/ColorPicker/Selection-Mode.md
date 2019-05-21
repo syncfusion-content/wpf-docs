@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection Mode | ColorPicker | wpf | Syncfusion
-description: selection mode
+description: The ColorPicker control can be displayed in two different modes. They are HSV and RGB modes. The VisualizationStyle property is used to switch between these modes.
 platform: wpf
 control: ColorPicker
 documentation: ug

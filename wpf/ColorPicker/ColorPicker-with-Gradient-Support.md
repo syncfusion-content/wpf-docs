@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ColorPicker with Gradient Support | ColorPicker | wpf | Syncfusion
-description: colorpicker with gradient support
+description: The Color Picker now comes with Gradient tool which returns a brush of type Solid, Linear or Radial. 
 platform: wpf
 control: ColorPicker
 documentation: ug

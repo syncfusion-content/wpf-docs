@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with UpDown control | UpDown | WPF | Syncfusion
-description: Dealing with UpDown control
+description: The UpDown controls allows to change the value by Keyboard or Mouse interaction and it also allows to define increment or decrement when change the value by MouseWheel or clicking Up and Down buttons.
 platform: wpf
 control: UpDown
 documentation: ug

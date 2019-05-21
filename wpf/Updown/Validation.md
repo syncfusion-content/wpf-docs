@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation | UpDown | WPF | Syncfusion
-description: Validation of UpDown Control
+description: The UpDown control supports maximum and minimum value validation. It allows to define when the Minimum and Maximum value validation should occur.
 platform: wpf
 control: UpDown
 documentation: ug

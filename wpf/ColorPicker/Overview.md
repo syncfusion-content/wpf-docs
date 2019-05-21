@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | ColorPicker | wpf | Syncfusion
-description: overview
+description: The ColorPicker control provides an easy and an efficient way to select colors from drop-down palette.
 platform: wpf
 control: ColorPicker
 documentation: ug

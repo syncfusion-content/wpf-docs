@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview| SfSchedule | Wpf | Syncfusion
-description: overview
+description: The WPF PropertyGrid control is a Visual Studio-like property editor that supports built-in editors based on type, grouping, custom editors, and more.
 platform: wpf
 control: SfSchedule
 documentation: ug
