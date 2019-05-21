@@ -35,7 +35,7 @@ this.Content = colorEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection-Mode_images/Selection-Mode_img1.jpeg)
+![ColorEdit with HSV selection mode](Selection-Mode_images/Selection-Mode_img1.jpeg)
 
 To set the ColorSelection Mode as "HSV" for ColorPicker control, use the below code.
 
@@ -54,7 +54,7 @@ this.Content = colorPicker;
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection-Mode_images/Selection-Mode_img2.jpeg)
+![ColorPicker with HSV selection mode](Selection-Mode_images/Selection-Mode_img2.jpeg)
 
 To set the ColorSelection Mode as "RGB" for ColorEdit control, use the below code.
 
@@ -73,7 +73,7 @@ this.Content = colorEdit;
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection-Mode_images/Selection-Mode_img3.jpeg)
+![ColorEdit with RGB selection mode](Selection-Mode_images/Selection-Mode_img3.jpeg)
 
 To set the ColorSelection Mode as "RGB" for ColorPicker control, use the below code.
 
@@ -92,4 +92,4 @@ this.Content = colorPicker;
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection-Mode_images/Selection-Mode_img4.jpeg)
+![ColorPicker with RGB selection mode](Selection-Mode_images/Selection-Mode_img4.jpeg)
