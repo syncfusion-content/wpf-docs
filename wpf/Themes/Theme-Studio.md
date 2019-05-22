@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview and complete guide to WPF Theme Studio 
+title: Overview and complete guide to WPF Theme Studio | Syncfusion
 description: Desktop-based, intuitive UI customization tool for easy customization of skins and themes for the Syncfusion control suite
 platform: wpf
 control: Themes
@@ -13,7 +13,7 @@ The Theme Studio is a desktop-based, intuitive UI customization tool for easy cu
 
 It comprises of many features such as predefined themes, Import and Export option to facilitate your process of getting custom skins for matching your visual representation of app.
 
-![](ThemeStudio_images/ThemeStudio_img1.png)
+![Shows the WPF theme studio Main window](ThemeStudio_images/ThemeStudio_img1.png)
 
 
 ## Applying predefined themes in Theme Studio
@@ -54,41 +54,41 @@ The following list of predefined themes are currently provided in theme studio,
 
 *   VisualStudio2015
 
-![](ThemeStudio_images/ThemeStudio_img2.png)
+![Shows the list of themes in ThemeStudio](ThemeStudio_images/ThemeStudio_img2.png)
 
 
 ## Applying customized skin in Theme Studio
 
 We are currently providing 7 set of categories to customize the control colors. Each category containing different collection of color properties.
 
-![](ThemeStudio_images/ThemeStudio_img3.png)
+![Shows the default colors option of the control](ThemeStudio_images/ThemeStudio_img3.png)
 
 
-![](ThemeStudio_images/ThemeStudio_img4.png)
+![Shows the header colors option of the control](ThemeStudio_images/ThemeStudio_img4.png)
 
 
-![](ThemeStudio_images/ThemeStudio_img5.png)
+![Shows the hover colors option of the control](ThemeStudio_images/ThemeStudio_img5.png)
 
 
-![](ThemeStudio_images/ThemeStudio_img6.png)
+![Shows the active colors option of the control](ThemeStudio_images/ThemeStudio_img6.png)
 
 
-![](ThemeStudio_images/ThemeStudio_img7.png)
+![Shows the content colors of the control](ThemeStudio_images/ThemeStudio_img7.png)
 
 
-![](ThemeStudio_images/ThemeStudio_img8.png)
+![Shows the range colors of the control](ThemeStudio_images/ThemeStudio_img8.png)
 
 
-![](ThemeStudio_images/ThemeStudio_img9.png)
+![Shows the ticks colors of the control](ThemeStudio_images/ThemeStudio_img9.png)
 
 
 The hexadecimal color code can be given as input in Text area and press enter to apply the custom skin color.
 
-![](ThemeStudio_images/ThemeStudio_img10.png)
+![Shows the hexadecimal color code input box](ThemeStudio_images/ThemeStudio_img10.png)
 
 To select desired color, click the colored button to display a popup with solid color palettes, gradient check box and Advance option.
 
-![](ThemeStudio_images/ThemeStudio_img11.png)
+![Shows the popup with solid color palettes](ThemeStudio_images/ThemeStudio_img11.png)
 
 Color Palette 
 {:.caption}
@@ -98,19 +98,49 @@ Color Palette
 
 *	`Advance Option`: To choose wide range of colors, click Advance button option.
 
-![](ThemeStudio_images/ThemeStudio_img12.png)
+![Shows the advance color range window](ThemeStudio_images/ThemeStudio_img12.png)
 
 Advance Color Picker 
 {:.caption}
 
 *   `Gradient Check Box`: To choose gradient colors, select the “Gradient” check box to display a popup with 24 gradient palettes.
 
-![](ThemeStudio_images/ThemeStudio_img13.png)
+![Shows the popup with 24 gradient palettes](ThemeStudio_images/ThemeStudio_img13.png)
 
 Gradient Palette 
 {:.caption}
 
 N> Gradient Support has been provided only for Background color properties residing in Default, Header, Hover and Active categories.
+
+## Exporting Custom theme from Theme Studio
+
+To export custom theme, click `Export` button to display a popup containing option to select the controls to be exported. 
+
+Select the control by checking the desired control’s check box or check `Select All` option in the popup to select all the controls. 
+
+Click the `Export` button once selected the desired controls and provide a name for the customized theme. 
+
+![Shows the Control list while export](ThemeStudio_images/ThemeStudio_img16.png)
+
+
+N> To obtain the customized themes for multiple controls in a single XAML file, check the `Merge and Export` option before clicking `Export` button.
+
+The color values for customized theme will be saved in `*.wpft` format file. Along with `*.wpft` file, two folders `Framework Controls` and `Syncfusion Controls` are also generated.
+
+*   `Framework Controls`: This folder contains the resource dictionary XAML files of Framework controls.
+
+*	`Syncfusion Controls`: This folder contains the resource dictionary XAML files of selected Syncfusion controls.
+
+![Shows the exported folders](ThemeStudio_images/ThemeStudio_img17.png)
+
+Output Folder 
+{:.caption}
+
+## Importing Custom theme to Theme Studio
+
+To import custom theme, click `Import` button for choosing `*.wpft` file containing customized skin color values. After importing, we can visualize the loaded custom skin color applied to controls.
+
+![Shows the customizedTheme file.](ThemeStudio_images/ThemeStudio_img18.png)
 
 ## Applying generated resource XAML in application
 
@@ -126,10 +156,21 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 *	The exported XAML file of controls can be obtained from the Output folder as described in the [export](#exporting-custom-theme-from-theme-studio) topic.
 
-*	From the Output folder, browse the `Syncfusion Controls` folder and add the required XAML file to the project.
+*	To add the exported file from Output folder to application, right click on application and click the add existing item. Now, browse the Output folder.
 
-![](ThemeStudio_images/ThemeStudio_img14.png)
+![Shows the window for add the item to application](ThemeStudio_images/ThemeStudio_img21.jpg)
 
+*	The Output folder contains `Syncfusion Controls`  folder and `Framework Controls` folder. 
+
+![Shows the exported folders and file](ThemeStudio_images/ThemeStudio_img19.png)
+
+*	From `Syncfusion Controls` folder, browse the required XAML file and add to the project. Confirm the file filter selection has All files or Xaml file.
+
+![Shows the exported xaml file of the control](ThemeStudio_images/ThemeStudio_img20.png)
+
+*	Now, the exported XAML file added to the project.
+
+![Shows the added xaml file in application](ThemeStudio_images/ThemeStudio_img14.png)
 
 *	Now, initialize the SfRadialMenu control in the `MainWindow.xaml` as below:
 
@@ -165,35 +206,18 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 *	Run the sample and the below output will be obtained:
 
-![](ThemeStudio_images/ThemeStudio_img15.png)
+![Shows the output of the Control with applied theme](ThemeStudio_images/ThemeStudio_img15.png)
+
+*	To apply this theme to MS control, get the MS control.xaml file from `Framework Controls` folder. 
+
+![Shows the MS Control xaml file in Framework folder](ThemeStudio_images/ThemeStudio_img22.jpg)
+
+*	Do the above steps, to add this file to the project. 
+
+*   Now, initialize the any MS control in the `MainWindow.xaml`
+
+*   Here, custom theme applied for MS ComboBox.
+
+![Shows the output of the Microsoft ComboBox with applied theme](ThemeStudio_images/ThemeStudio_img23.jpg)
 
 
-## Exporting Custom theme from Theme Studio
-
-To export custom theme, click `Export` button to display a popup containing option to select the controls to be exported. 
-
-Select the control by checking the desired control’s check box or check `Select All` option in the popup to select all the controls. 
-
-Click the `Export` button once selected the desired controls and provide a name for the customized theme. 
-
-![](ThemeStudio_images/ThemeStudio_img16.png)
-
-
-N> To obtain the customized themes for multiple controls in a single XAML file, check the `Merge and Export` option before clicking `Export` button.
-
-The color values for customized theme will be saved in `*.wpft` format file. Along with `*.wpft` file, two folders `Framework Controls` and `Syncfusion Controls` are also generated.
-
-*   `Framework Controls`: This folder contains the resource dictionary XAML files of Framework controls.
-
-*	`Syncfusion Controls`: This folder contains the resource dictionary XAML files of selected Syncfusion controls.
-
-![](ThemeStudio_images/ThemeStudio_img17.png)
-
-Output Folder 
-{:.caption}
-
-## Importing Custom theme to Theme Studio
-
-To import custom theme, click `Import` button for choosing `*.wpft` file containing customized skin color values. After importing, we can visualize the loaded custom skin color applied to controls.
-
-![](ThemeStudio_images/ThemeStudio_img18.png)

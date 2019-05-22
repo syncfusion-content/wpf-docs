@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check for Updates | wpf | Syncfusion
+title: Check for Updates | Wpf | Syncfusion
 description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio release.
 platform: wpf
 control: Visual Studio Extensions
@@ -19,7 +19,7 @@ You can check updates availability in Visual Studio, and then install the update
 
    ![Syncfusion check for updates menu](Check-for-Updates_images/Check-for-Updates_images-img1.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
    
 2. When there is an update, **Update** dialog box opens.
 

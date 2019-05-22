@@ -17,7 +17,28 @@ The Command can be binded as follows:
 {% highlight xaml %}
 
 
-<sync:ButtonAdv SizeMode="Normal" Command="{Binding CustomCommand}" CommandParameter="CUSTOM"/>
+<sync:ButtonAdv SizeMode="Large" LargeIcon="Employee-WF.png" Command="{Binding CustomCommand}" CommandParameter="{Binding Path=Label, ElementName=Custom}"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+ CustomCommand = new DelegateCommand(Execute, CanExecute);
+
+public ICommand CustomCommand { get; set; }
+
+private bool CanExecute(object arg)
+
+{
+    
+    return true;
+}
+
+private void Execute(object obj)
+  
+{
+ 
+    MessageBox.Show(obj.ToString());
+}
 
 {% endhighlight %}
 {% endtabs %}
