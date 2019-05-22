@@ -1528,7 +1528,7 @@ private void ListView_Drop(object sender, DragEventArgs e)
 
 ![Row drag and drop between SfDataGrid and ListView in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img28.png)
 
-You can download the sample(https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf).
+You can download the [sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/WPF).
 
 ### Row drag and drop between two SfDataGrids
 
@@ -1628,7 +1628,7 @@ private void sfGrid_Dropped(object sender, GridRowDroppedEventArgs e)
 
 ![Row drag and drop between two SfDataGrids in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img29.png)
 
-You can download the sample(https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-wpf-datagrids).
+You can download the [sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/WPF);
 
 ### Row drag and drop between SfDataGrid and SfTreeGrid
 
@@ -1825,4 +1825,4 @@ private void sfDataGrid_Drop(object sender, GridRowDropEventArgs e)
 
 ![Row drag and drop between SfDataGrid and SfTreeGrid in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img30.png)
 
-You can download the sample(https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-treegrid-in-wpf).
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-treegrid-in-wpf).
