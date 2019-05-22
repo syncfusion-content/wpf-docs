@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | ComboBoxAdv | wpf | Syncfusion
-description: overview
+title: Overview | ComboBox | WPF | Syncfusion
+description: WPF Combo Box (Multiselect ComboBox) control is a dropdown control that enables support for one or more item selection using a checkbox.
 platform: wpf
 control: ComboBoxAdv
 documentation: ug

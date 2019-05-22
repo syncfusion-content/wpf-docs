@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| GridTree | Wpf | Syncfusion
-description: overview
+title: Overview| GridTree | WPF | Syncfusion
+description: WPF GridTreeControl functions as a very efficient display engine for tabular data that can be customized down to the cell level.
 platform: wpf
 control: GridTree 
 documentation: ug

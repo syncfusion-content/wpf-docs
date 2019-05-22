@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pointers | SfCircularGauge | Wpf | Syncfusion
-description: Pointers   
+title: Pointers | Circular Gauge | WPF | Syncfusion
+description: Pointers in WPF Circular Gauge are used to indicate values on the scale. The pointer values can be modified using the value property.
 platform: wpf
 control: SfCircularGauge
 documentation: ug

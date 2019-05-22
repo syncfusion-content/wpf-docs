@@ -1,6 +1,6 @@
 ---
-title: Overview
-description: overview
+title: Overview of RichTextBox | WPF | Syncfusion
+description: WPF RichTextBox control, also known as WYSIWYG rich text editor, allows users to create, view, edit, and print rich text documents same as in Microsoft Word.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug

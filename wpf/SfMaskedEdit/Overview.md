@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| SfMaskedEdit | Wpf | Syncfusion
-description: overview
+title: Overview| MaskedEdit | WPF | Syncfusion
+description: WPF MaskedEdit control restricts the input with the mask symbol along with its built-in features like validation, watermark, etc...
 platform: wpf
 control: SfMaskedEdit
 documentation: ug

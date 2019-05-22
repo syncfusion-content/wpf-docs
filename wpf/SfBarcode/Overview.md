@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Tree Navigator  | wpf | Syncfusion | TreeMap | wpf | Syncfusion | TextBoxExt | wpf | Syncfusion | Sparkline | wpf | Syncfusion | SfSchedule | wpf | Syncfusion | SfRangeSlider  | wpf | Syncfusion | Radial Slider  | wpf | Syncfusion | Radial Menu  | wpf | Syncfusion | SfMultiColumnDropDownControl | wpf | Syncfusion | SfMaskedEdit | wpf | Syncfusion | SfMap | wpf | Syncfusion | Linear Gauge  | wpf | Syncfusion | HubTile | wpf | Syncfusion | Digital Gauge  | wpf | Syncfusion | Control Name undefined | wpf | Syncfusion | DateTime Range Navigator | wpf | Syncfusion | SfDataPager Control | wpf | Syncfusion | SfDataGrid | wpf | Syncfusion | Color Palette | wpf | Syncfusion | Circular Gauge | wpf | Syncfusion | SfChart | wpf | Syncfusion | Calculator | wpf | Syncfusion | Busy Indicator | wpf | Syncfusion | SfBarcode | wpf | Syncfusion
-description: overview
+title: Overview | Barcode | WPF | Syncfusion
+description: WPF Barcode control or generator helps to embed barcodes into your .NET application. It is fully customizable and supports all barcode formats.
 platform: wpf
 control: SfBarcode
 documentation: ug

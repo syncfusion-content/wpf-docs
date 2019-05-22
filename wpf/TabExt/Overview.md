@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | TabControlExt | wpf | Syncfusion
-description: overview
+title: Overview | TabControlExt | WPF | Syncfusion
+description: WPF TabControl provides a tab based navigation functionality. It provides close button for tabs, tab ordering, and editable tab headers.
 platform: wpf
 control: TabControlExt
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | ReportDesigner | wpf | Syncfusion
-description:  overview
+title: Overview | Report Designer | WPF | Syncfusion
+description:  WPF Report Designer is a .NET reporting tool used to design SSR, RDL, and RDLC reports using parameter, drill through, sub report, nested region with sort and filter.
 platform: wpf
 control: Report Designer
 documentation: ug

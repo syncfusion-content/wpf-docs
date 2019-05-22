@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfCalculator | wpf | Syncfusion
-description: overview
+title: Overview | Calculator | WPF | Syncfusion
+description: The WPF Calculator control allows user to perform some simple arithmetic calculations without switching to an external application.
 platform: wpf
 control: SfCalculator
 documentation: ug

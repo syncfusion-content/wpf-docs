@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfMap | wpf | Syncfusion
-description: overview
+title: Overview | Map | WPF | Syncfusion
+description: WPF Map control helps to visualize geographical data or any arbitrary shape. It also shows the statistical data of a particular geographical area on earth.
 platform: wpf
 control: SfMap
 documentation: ug

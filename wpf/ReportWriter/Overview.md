@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | ReportWriter | WPF | Syncfusion
-description: overview
+title: Overview | Report Writer | WPF | Syncfusion
+description: WPF Report Writer is a .NET reporting library for creating and exporting SSRS, RDL, and RDLC specification reports. It allow users to encrypt and enables password-protect for the exported documents and share them with other users.
 platform: wpf
 control: ReportWriter
 documentation: ug

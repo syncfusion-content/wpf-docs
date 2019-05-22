@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | IntegerTextBox | WPF | Syncfusion
-description: overview
+title: Overview | Integer TextBox | WPF | Syncfusion
+description: WPF Integer TextBox control restricts the integer values for input. It supports culture-based formatting and it has positive and negative colors.
 platform: WPF
 control: IntegerTextBox 
 documentation: ug

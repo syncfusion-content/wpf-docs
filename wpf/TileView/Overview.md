@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | TileView | wpf | Syncfusion
-description: overview
+title: Overview | Tile View | WPF | Syncfusion
+description: WPF Tile View control displays the items in tiles with the support to minimize and maximize tiles, docking of minimized items and smooth animations.
 platform: wpf
 control: TileView Control
 documentation: ug

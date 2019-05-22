@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | ReportViewer | WPF | Syncfusion
-description: overview
+title: Overview | Report Viewer | WPF | Syncfusion
+description: WPF Report Viewer is a .NET reporting tool and it displays SSRS, RDL, and RDLC reports containing parameters, tables, charts, and more, like Microsoft Report Viewer. 
 platform: wpf
 control: ReportViewer
 documentation: ug

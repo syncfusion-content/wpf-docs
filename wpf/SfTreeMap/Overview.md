@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | TreeMap | wpf | Syncfusion
-description: overview
+title: Overview | TreeMap | WPF | Syncfusion
+description: WPF TreeMap control can be used to visualize the hierarchical data in the form of nested rectangles. It supports data binding, legends, selection, and more.
 platform: wpf
 control: TreeMap
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: Overview
+title: Overview of Chromeless Window | WPF | Syncfusion
+description: WPF ChromelessWindow is used to create customizable window for the end users applications. With these windows, user can have complete control over the entire window.
 platform: wpf
 control: ChromelessWindow
 documentation: ug

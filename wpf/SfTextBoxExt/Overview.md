@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfTextBoxExt | wpf | Syncfusion
-description: overview
+title: Overview | TextBoxExt | WPF | Syncfusion
+description: This section provides an overview about features in WPF TextBoxExt control.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug

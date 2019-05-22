@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of TimeSpanEdit | WPF | Syncfusion
+description: WPF TimeSpanEdit is an input textbox control which is used to modify the timespan values in your application.
 platform: wpf
 control: TimeSpanEdit
 documentation: ug

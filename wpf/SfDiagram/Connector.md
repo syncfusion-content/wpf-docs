@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion diagram supports to connect two points, nodes or ports.
+title: Diagram supports to connect two points, nodes or ports.
 description: How to draw a line to connect points, nodes, or ports?
 platform: wpf
 control: SfDiagram

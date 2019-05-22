@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | CheckListBox | wpf | Syncfusion
-description: overview
+title: Overview | CheckedListBox | WPF | Syncfusion
+description: WPF CheckedListBox is a multi-select list box control which enables one or more selection in list box using a checkbox.
 platform: wpf
 control: CheckListBox
 documentation: ug

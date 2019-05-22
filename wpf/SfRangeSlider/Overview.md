@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfRangeSlider | wpf | Syncfusion
-description: overview 
+title: Overview | Range Slider | WPF | Syncfusion
+description: WPF Range Slider control allows users to select a range of values between the minimum and maximum. It supports horizontal and vertical orientation.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug

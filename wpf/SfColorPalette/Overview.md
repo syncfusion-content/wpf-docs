@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Color Palette | wpf | Syncfusion
-description: overview
+title: Overview | Color Palette | WPF | Syncfusion
+description: WPF Color Palette provides a range of colors to choose a color from that. It supports almost 10 different swatch patterns.
 platform: wpf
 control: Color Palette
 documentation: ug

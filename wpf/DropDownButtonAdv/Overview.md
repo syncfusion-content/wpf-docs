@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| | Wpf | Syncfusion
-description: overview
+title: Overview | Dropdown Button | WPF | Syncfusion
+description: WPF Dropdown Button control provides advanced menu like semantics to the button user interfce. It displays the content in a drop down menu while the button is clicked.
 platform: wpf
 control: DropDownButtonAdv
 documentation: ug

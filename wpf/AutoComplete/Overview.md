@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | AutoComplete | wpf | Syncfusion
-description: overview
+title: Overview | AutoComplete | WPF | Syncfusion
+description: WPF AutoComplete allows user to select an item from live drop-down which hints as you enter the input text.
 platform: wpf
 control: AutoComplete
 documentation: ug

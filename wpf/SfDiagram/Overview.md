@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Explore the features of the Diagram control.
-description: Explore the features of the Diagram control.
+title: Overview of Diagram Control | WPF | Syncfusion
+description: WPF Diagram allows user to create and edit flowcharts, organizational charts, UML, swim lanes, mind maps, entity relationships, or any kind of diagram can be made quickly.
 platform: wpf
 control: SfDiagram
 documentation: ug
