@@ -11,7 +11,7 @@ documentation: ug
 
 The tree navigator control provides a unique interface that can expand a tree structure in-place without taking up more space on the screen.
 
-![1](Overview_images/Overview_img1.png)
+![TreeNavigator - Overview](Overview_images/Overview_img1.png)
 
 ### Key features
 

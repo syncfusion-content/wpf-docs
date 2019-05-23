@@ -11,7 +11,7 @@ documentation: ug
 
 The Busy Indicator control includes over 20 built-in animations that can be displayed within your applications.
 
-![](Overview_images/Overview_img1.png)
+![Busy Indicator - Overview](Overview_images/Overview_img1.png)
 
 Busy Indicator
 {:.caption}

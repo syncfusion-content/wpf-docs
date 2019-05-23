@@ -9,7 +9,7 @@ keywords: overview, richtextboxadv, sfrichtextboxadv
 # Overview
 
 The SfRichTextBoxAdv control allows you to view, edit and print rich text content including text, images, hyperlink etc. arranged in sections, tables, paragraphs, headers, footers and comments. You can perform all editing operations using keyboard, mouse and touch.
-![](Overview_images/Overview_img1.jpeg)
+![RichTextBox - Overview](Overview_images/Overview_img1.jpeg)
 
 ## Features
 

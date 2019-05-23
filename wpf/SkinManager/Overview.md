@@ -105,7 +105,7 @@ The output is displayed as shown below.
 
 
 
-![](Overview_images/Overview_img1.png)
+![SkinManager - Overview](Overview_images/Overview_img1.png)
 
 
 
@@ -195,7 +195,7 @@ SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
    The output is displayed as shown below.
 
-   ![](Overview_images/Overview_img2.png)
+   ![SkinManager - Overview](Overview_images/Overview_img2.png)
 
 
 
@@ -244,7 +244,7 @@ SkinStorage.SetMetroBrush(this, Brushes.Green);
 {% endtabs %}
 
 
-![](Overview_images/Overview_img3.png)
+![SkinManager - Overview](Overview_images/Overview_img3.png)
 
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The Calculator control allows us to perform mathematical operations as like in calculator.
 
-![](Overview_images/Overview_img1.png)
+![Calculator - Overview](Overview_images/Overview_img1.png)
 
 Calculator
 {:.caption}

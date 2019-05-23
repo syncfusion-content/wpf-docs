@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | MultiColumnDropDownControl | WPF
+title: Getting Started | MultiColumnDropDown | Syncfusion
 description: How to add MultiColumnDropDownControl and enable its basic features in a WPF application.
 platform: wpf
 control: SfMultiColumnDropDownControl
@@ -20,7 +20,7 @@ Features,
     
 You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/overview) to know more about `SfDataGrid`.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![MultiColumnDropDown - Getting Started](Getting-Started_images/Getting-Started_img1.png)
 
 ## Assembly deployment
 
@@ -76,7 +76,7 @@ Create new WPF Project in Visual Studio to display SfMultiColumnDropDownControl 
 
 SfMultiColumnDropDownControl can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![MultiColumnDropDown - Getting Started](Getting-Started_images/Getting-Started_img2.png)
 
 ### Adding control manually in XAML
 
@@ -261,7 +261,7 @@ ViewModel viewModel = new ViewModel();
 sfMultiColumn.ItemsSource = viewModel.Orders;
 {% endhighlight %}
 {% endtabs %}
-![](Getting-Started_images/Getting-Started_img3.png)
+![MultiColumnDropDown - Getting Started](Getting-Started_images/Getting-Started_img3.png)
 
 ## Defining DisplayMember and ValueMember
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | GridData (Classic) | wpf | Syncfusion
-description: overview
+description: WPF GridData control customizes data view by performing operations such as grouping, sorting, summarizing, filtering, unbound fields and more.
 platform: wpf
 control: GridData (Classic)
 documentation: ug

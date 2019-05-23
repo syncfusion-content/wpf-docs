@@ -18,14 +18,14 @@ To create an ComboBoxAdv instance in Visual Studio:
 1. Open Visual Studio. 
 2. On the File menu, select New, and then select Project. The New Project dialog box displays.
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img2.png)
+   ![ComboBoxAdv - Overview](ComboBoxAdv_images/ComboBoxAdv_img2.png)
 
 3. In the New Project dialog box, select WPF Application.
 4. In the Name field, type the name of the project. 
 5. Click OK.
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img3.png)
+   ![ComboBoxAdv - Overview](ComboBoxAdv_images/ComboBoxAdv_img3.png)
 
 6. Drag the ComboBoxAdv control from the Toolbox window to the Design View. An instance of the ComboBoxAdv control is created in Design view.
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img4.png)
+   ![ComboBoxAdv - Overview](ComboBoxAdv_images/ComboBoxAdv_img4.png)

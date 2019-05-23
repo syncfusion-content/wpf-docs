@@ -42,6 +42,6 @@ The [`Pointers`](https://help.syncfusion.com/wpf/sfcirculargauge/pointers) are e
 
 The [`Header`](https://help.syncfusion.com/wpf/sfcirculargauge/header) can be used to set a unique header for the circular gauge. You can add text as the header in the circular gauge.
 
-![](Overview_images/Overview_img1.jpeg)
+![Circular Gauge - Overview](Overview_images/Overview_img1.jpeg)
 
 

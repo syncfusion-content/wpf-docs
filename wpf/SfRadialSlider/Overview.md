@@ -20,7 +20,7 @@ The Radial Slider provides an optimized interface for selecting a numeric value.
 
 
 
-![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png) 
+![Radial Slider - Overview](Overview_images/Overview_img1.png) 
 
 
 

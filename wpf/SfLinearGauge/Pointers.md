@@ -79,7 +79,7 @@ The `LinearGauge` provides support to mark values using the `BarPointer` and `Sy
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img1.png)
+![Pointers - Linear Gauge](Pointers_images/Pointers_img1.png)
 
 ### Bar pointer customization
 
@@ -149,7 +149,7 @@ The UI of `Bar pointer` is customized using the `BarPointerStroke` and `BarPoint
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img2.png)
+![Pointers - Linear Gauge](Pointers_images/Pointers_img2.png)
 
 ## Symbol pointer
 
@@ -227,7 +227,7 @@ In `SymbolPointer`, the value is pointed by a symbol on the scale.
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img3.png)
+![Pointers - Linear Gauge](Pointers_images/Pointers_img3.png)
 
 ### Symbol pointer customization
 
@@ -303,7 +303,7 @@ You can modify the size of symbol pointer by changing the `SymbolPointerHeight` 
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img4.png)
+![Pointers - Linear Gauge](Pointers_images/Pointers_img4.png)
 
 ## Positioning symbol pointer
 
@@ -387,7 +387,7 @@ The `SymbolPointer` in the scale can be placed above, below, or in between the s
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img5.png)
+![Pointers - Linear Gauge](Pointers_images/Pointers_img5.png)
 
 ### Change symbol pointer shapes
 
@@ -433,7 +433,7 @@ The `SymbolPointerStyle` property is used to select symbol pointer style.
 
 {% endhighlight %}
 
-![](Pointers_images/Pointers_img6.png)
+![Pointers - Linear Gauge](Pointers_images/Pointers_img6.png)
 
 ### Adding multiple pointers
 
@@ -521,4 +521,4 @@ In addition to the default pointer, you can add "n" number of pointers to a line
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img7.png)
+![Pointers - Linear Gauge](Pointers_images/Pointers_img7.png)

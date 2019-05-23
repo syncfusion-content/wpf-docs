@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Draw connections to a specific point of node using ports
+title: Connect specific point of node using ports | Syncfusion
 description: How to draw connections to a specific point of node using ports?
 platform: wpf
 control: SfDiagram

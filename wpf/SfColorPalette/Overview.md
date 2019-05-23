@@ -11,7 +11,7 @@ documentation: ug
 
 Color palette lets you to select colors from a list of available swatches. 
 
-![](Overview_images/Overview_img1.png)
+![Color Palette - Overview](Overview_images/Overview_img1.png)
 
 ## Key features
 

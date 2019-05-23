@@ -13,7 +13,7 @@ The SfDataPager control provides a configurable user interface for paging usin
 
 The following screenshot displays the basic concept of paging.
 
-![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/datapagerstructure.png](Overview_images/Overview_img1.png)
+![DataPager - Overview](Overview_images/Overview_img1.png)
 
 
 

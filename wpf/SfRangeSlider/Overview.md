@@ -13,7 +13,7 @@ SfRangeSlider control allows you to select the range of value within the specifi
 
 
 
-![](Overview_images/Overview_img1.jpeg)
+![Range Slider - Overview](Overview_images/Overview_img1.jpeg)
 
 
 

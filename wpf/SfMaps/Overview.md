@@ -30,7 +30,7 @@ Tree map-like support provides rich UI for shapes and bubbles. Annotation and Cu
 
 Options like zooming, panning, and map selection extend the interactivity of the map.
 
-![](Overview_images/Overview_img1.png)
+![Maps - Overview](Overview_images/Overview_img1.png)
 
 
 

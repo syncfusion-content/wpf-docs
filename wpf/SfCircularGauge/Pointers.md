@@ -61,7 +61,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img1.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img1.png)
 
 ### NeedlePointerType
 
@@ -120,7 +120,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img2.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img2.png)
 
 ### Needle pointer customization
 
@@ -181,7 +181,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img3.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img3.png)
 
 ### Setting visibility of needle pointer
 
@@ -229,7 +229,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img4.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img4.png)
 
 ## Range pointer
 
@@ -279,7 +279,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img5.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img5.png)
 
 ### Range pointer customization
 
@@ -333,7 +333,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img6.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img6.png)
 
 ### Setting visibility for range pointer
 
@@ -381,7 +381,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img7.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img7.png)
 
 ### Setting position for range pointer
 
@@ -445,7 +445,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img8.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img8.png)
 
 2.	Using the `RangePointerOffset` property. First, set the `RangePointerPosition` to custom, and then set the `RangePointerOffset` property.
 
@@ -497,7 +497,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img9.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img9.png)
 
 ## Symbol pointer
 
@@ -547,7 +547,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img10.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img10.png)
 
 ### Symbol pointer customization
 
@@ -604,7 +604,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img11.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img11.png)
 
 ### Setting visibility of symbol pointer
 
@@ -652,7 +652,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img12.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img12.png)
 
 ### Setting multiple pointers
 
@@ -740,7 +740,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img13.png)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img13.png)
 
 ## Setting animation for pointer
 
@@ -819,4 +819,4 @@ The `EnableAnimation` property is a Boolean property that enables or disables th
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img14.gif)
+![Pointers - Circular Gauge](Pointers_images/Pointers_img14.gif)

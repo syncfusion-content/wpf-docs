@@ -17,7 +17,7 @@ Research scholars, IT companies or any organization that following work breakdow
 
 
 
-![](Overview_images/Overview_img1.png)
+![Gantt - Overview](Overview_images/Overview_img1.png)
 
 
 
