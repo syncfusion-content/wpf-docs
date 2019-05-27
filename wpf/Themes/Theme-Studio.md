@@ -218,6 +218,6 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 *   Here, custom theme applied for MS ComboBox.
 
-![Shows the output of the Ms ComboBox with applied theme](ThemeStudio_images/ThemeStudio_img23.jpg)
+![Shows the output of the Microsoft ComboBox with applied theme](ThemeStudio_images/ThemeStudio_img23.jpg)
 
 
