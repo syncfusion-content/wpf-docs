@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| Hierarchical Navigator | Wpf | Syncfusion
-description: overview
+title: Overview| Hierarchical Navigator | WPF | Syncfusion
+description: The Hierarchical Navigator in WPF enables user to navigate through pages, forward and backward, as described.
 platform: wpf
 control: Hierarchical Navigator
 documentation: ug

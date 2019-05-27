@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| Gantt | Wpf | Syncfusion
-description: overview
+title: Overview| Gantt | WPF | Syncfusion
+description: WPF Gantt control (also known as Gantt chart) provides a Microsoft Project for scheduling and managing tasks in WPF applications.
 platform: wpf
 control: Gantt
 documentation: ug
@@ -17,7 +17,7 @@ Research scholars, IT companies or any organization that following work breakdow
 
 
 
-![](Overview_images/Overview_img1.png)
+![Gantt - Overview](Overview_images/Overview_img1.png)
 
 
 

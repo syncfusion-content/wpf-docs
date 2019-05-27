@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | PropertyGrid  | wpf | Syncfusion
-description: The WPF PropertyGrid control is a Visual Studio-like property editor that supports built-in editors based on type, grouping, custom editors, and more.
+title: Overview | PropertyGrid  | WPF | Syncfusion
+description: WPF PropertyGrid control is a Visual Studio-like property editor which supports browsing properties of an object in detailed manner based on the data type.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

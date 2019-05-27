@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfCircularGauge | Wpf | Syncfusion
-description: Overview
+title: Overview | Circular Gauge | WPF | Syncfusion
+description: Numeric values can be visualized on a circular scale using WPF Circular Gauge control with built-in animations and tooltips.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
@@ -42,6 +42,6 @@ The [`Pointers`](https://help.syncfusion.com/wpf/sfcirculargauge/pointers) are e
 
 The [`Header`](https://help.syncfusion.com/wpf/sfcirculargauge/header) can be used to set a unique header for the circular gauge. You can add text as the header in the circular gauge.
 
-![](Overview_images/Overview_img1.jpeg)
+![Circular Gauge - Overview](Overview_images/Overview_img1.jpeg)
 
 

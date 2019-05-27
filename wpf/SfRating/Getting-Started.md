@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfRating | wpf | Syncfusion
-description: getting started
+title: Getting Started | Rating | WPF | Syncfusion
+description: This section explains how to add a Rating control in WPF application.
 platform: wpf
 control: SfRating
 documentation: ug

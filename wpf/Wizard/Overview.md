@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Wizard | wpf | Syncfusion
-description: overview
+title: Overview | Wizard | WPF | Syncfusion
+description: WPF Wizard control provides an interface to guide users through a step-by-step process, similar to multi-step wizards in the installation process.
 platform: wpf
 control: Wizard
 documentation: ug
