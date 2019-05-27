@@ -15,7 +15,7 @@ This section illustrates how to add ReportWriter to the WPF application. It incl
 
 2. In the Solution Explorer, Right-click the References folder and then click Add Reference.
 
-   ![](Getting-Started_images/Getting-Started_img1.png) 
+   ![Add the Reference file in solution](Getting-Started_images/Getting-Started_img1.png) 
 
 3. Add the following references
 
@@ -77,7 +77,7 @@ This section illustrates how to add ReportWriter to the WPF application. It incl
    
 5. Run the application. The following output displays exported report in PDF format.
 
-   ![](Getting-Started_images/Getting-Started_img2.png) 
+   ![PDF format report writter](Getting-Started_images/Getting-Started_img2.png) 
 
 ## Export RDL Reports
 
@@ -94,7 +94,7 @@ The ReportWriter allows you to export the RDL report to popular file formats PDF
    
 2. Run the application. The following output displays exported report in Excel format.
 
-   ![](Getting-Started_images/Getting-Started_img3.png) 
+   ![Excel format report writter](Getting-Started_images/Getting-Started_img3.png) 
 
 ## Export RDLC Reports
 
@@ -198,4 +198,4 @@ The ReportWriter allows you to export the RDLC report to popular file formats PD
    
 4. Run the application. The following output displays exported report in Word format.
 
-   ![](Getting-Started_images/Getting-Started_img4.png) 
+   ![Word format report writter](Getting-Started_images/Getting-Started_img4.png) 
