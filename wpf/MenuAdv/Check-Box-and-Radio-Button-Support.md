@@ -70,7 +70,7 @@ IsChecked="False"/>
 
 {% endhighlight %}
 
-![](Check-Box-and-Radio-Button-Support_images/Check-Box-and-Radio-Button-Support_img1.png)
+![CheckBox and Radio Button Support in wpf MenuAdv](Check-Box-and-Radio-Button-Support_images/Check-Box-and-Radio-Button-Support_img1.png)
 
 
 
