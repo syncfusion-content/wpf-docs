@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CategoryEditor support | PropertyGrid  | wpf | Syncfusion
-description: categoryeditor support
+description: The PropertyGrid control supports several built-in editors, to give a good look and feel for the application using CustomEditors or CategoryEditors.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
@@ -58,7 +58,7 @@ In the below example, FontWeightButton and FontListBox are the custom controls.
 {% endhighlight %}
 {% endtabs %}
 
-![](CategoryEditor-support_images/CategoryEditor-support_img1.png)
+![PropertyGrid with CategoryEditor](CategoryEditor-support_images/CategoryEditor-support_img1.png)
 
 
 ### Properties
