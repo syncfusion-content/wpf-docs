@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MVVM approach in SfDataGrid
+title: MVVM | DataGrid | WPF | Syncfusion
 description: How to bind the items in the SfDataGrid using MVVM
 platform: wpf
 control: SfDataGrid

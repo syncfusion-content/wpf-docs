@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ExportToExcel in SfDataGrid.
+title: ExportToExcel | DataGrid | WPF | Syncfusion
 description: How to export the SfDataGrid to excel.
 platform: wpf
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection support in SfDataGrid
+title: Selection | DataGrid | WPF | Syncfusion
 description: How to select the rows or cells in SfDataGrid
 platform: wpf
 control: SfDataGrid

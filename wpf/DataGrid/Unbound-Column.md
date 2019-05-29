@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unbound column support in SfDataGrid.
+title: Unbound column | DataGrid | WPF | Syncfusion
 description: How to create Unbound column in SfDataGrid.
 platform: wpf
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Record Template View in SfDataGrid.
+title: Record Template View | DataGrid | WPF | Syncfusion
 description: How to use record template view in SfDataGrid
 platform: wpf
 control: SfDataGrid

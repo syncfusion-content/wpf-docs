@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FilterRow support in SfDataGrid
+title: FilterRow | DataGrid | WPF | Syncfusion
 description: How to filter the data using FilterRow
 platform: wpf
 control: SfDataGrid

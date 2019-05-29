@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in SfDataGrid.
+title: Localization | DataGrid | WPF | Syncfusion
 description: How to localize the SfDataGrid.
 platform: wpf
 control: SfDataGrid

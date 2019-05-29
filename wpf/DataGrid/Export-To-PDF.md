@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ExportToPDF in SfDataGrid.
+title: ExportToPDF | DataGrid | WPF | Syncfusion
 description: How to export the SfDataGrid to pdf.
 platform: wpf
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles and Templates in SfDataGrid
+title: Styles and Templates | DataGrid | WPF | Syncfusion
 description: How to apply styles and templates in SfDataGrid
 platform: wpf
 control: SfDataGrid

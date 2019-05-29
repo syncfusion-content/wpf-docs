@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tips to optimize SfDataGrid's Performance
+title: Performance | DataGrid | WPF | Syncfusion
 description: How to improve the performance of SfDataGrid
 platform: wpf
 control: SfDataGrid

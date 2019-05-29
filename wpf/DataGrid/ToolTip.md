@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip of SfDataGrid.
+title: ToolTip | DataGrid | WPF | Syncfusion
 description: ToolTip of SfDataGrid 
 platform: wpf
 control: SfDataGrid

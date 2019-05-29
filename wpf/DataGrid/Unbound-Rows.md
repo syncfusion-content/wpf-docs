@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unbound Rows support in SfDataGrid.
+title: Unbound Rows | DataGrid | WPF | Syncfusion
 description: How to create Unbound Rows in SfDataGrid.
 platform: wpf
 control: SfDataGrid

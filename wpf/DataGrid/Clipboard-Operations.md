@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard Operations in SfDataGrid
+title: Clipboard Operations | DataGrid | WPF | Syncfusion
 description: How to perform clipboard operations 
 platform: wpf
 control: SfDataGrid

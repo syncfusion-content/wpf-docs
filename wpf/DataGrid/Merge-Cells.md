@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Merge cells support in SfDataGrid.
+title: Merge cells | DataGrid | WPF | Syncfusion
 description: How to merge cells in SfDataGrid.
 platform: wpf
 control: SfDataGrid

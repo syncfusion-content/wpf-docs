@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialization and Deserialization in SfDataGrid.
+title: Serialization and Deserialization | DataGrid | WPF | Syncfusion
 description:  Serialization and Deserialization in SfDataGrid.
 platform: wpf
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Master-Details View in SfDataGrid.
+title: Master-Details View | DataGrid | WPF | Syncfusion
 description: How to use master details view in SfDataGrid
 platform: wpf
 control: SfDataGrid

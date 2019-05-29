@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Validation support in SfDataGrid.
+title: Data Validation | DataGrid | WPF | Syncfusion
 description: How to validate the data in SfDataGrid.
 platform: wpf
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing support in SfDataGrid.
+title: Printing | DataGrid | WPF | Syncfusion
 description: How to print the SfDataGrid and customize the print settings .
 platform: wpf
 control: SfDataGrid

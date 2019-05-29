@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summaries in SfDataGrid
+title: Summaries | DataGrid | WPF | Syncfusion
 description: Summaries in SfDataGrid 
 platform: wpf
 control: SfDataGrid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in SfDataGrid
+title: Grouping | DataGrid | WPF | Syncfusion
 description: How to group the data in SfDataGrid
 platform: wpf
 control: SfDataGrid

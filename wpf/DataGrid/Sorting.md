@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in SfDataGrid
+title: Sorting | DataGrid | WPF | Syncfusion
 description: How to sort the data in SfDataGrid
 platform: wpf
 control: SfDataGrid

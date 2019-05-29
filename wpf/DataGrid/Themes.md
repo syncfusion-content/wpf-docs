@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes in SfDataGrid
+title: Themes | DataGrid | WPF | Syncfusion
 description: How to apply themes in SfDataGrid
 platform: wpf
 control: SfDataGrid
