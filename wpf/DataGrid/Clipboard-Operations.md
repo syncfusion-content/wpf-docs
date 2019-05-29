@@ -46,7 +46,7 @@ this.dataGrid.GridCopyOption = GridCopyOption.CopyData | GridCopyOption.IncludeH
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img1.png)
+![Displaying copy operation with GridCopyOption from WPF SfDataGrid](Clipboard-Operations_images/Clipboard-Operations_img1.png)
 
 N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is [Cell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html).
 
@@ -79,7 +79,7 @@ this.dataGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img2.png)
+![Displaying paste operation with GridPasteOption in WPF SfDataGrid](Clipboard-Operations_images/Clipboard-Operations_img2.png)
 
 ## Cut
 
@@ -112,7 +112,7 @@ this.dataGrid.GridCopyOption = GridCopyOption.CutData | GridCopyOption.IncludeHe
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img3.png)
+![Displaying Cut operation with GridCopyOption in WPF SfDataGrid](Clipboard-Operations_images/Clipboard-Operations_img3.png)
 
 N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is [Cell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html).
 
@@ -189,7 +189,7 @@ void dataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img4.png)
+![Displaying copy operation using CopyGridCellContent event based on cell value in WPF SfDataGrid](Clipboard-Operations_images/Clipboard-Operations_img4.png)
 
 The below code example handled the copy operation when `MappingName` of a Column is Country.
 
@@ -204,7 +204,7 @@ void dataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img5.png)
+![Displaying copy operation using CopyGridCellContent event based on mapping name in WPF SfDataGrid](Clipboard-Operations_images/Clipboard-Operations_img5.png)
 
 ### PasteGridCellContent
 
@@ -244,7 +244,7 @@ void dataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img6.png)
+![Displaying paste operation using PasteGridCellContent event based on cell value in WPF SfDataGrid](Clipboard-Operations_images/Clipboard-Operations_img6.png)
 
 The below code example handled the paste operation when `MappingName` of Column is OrderID
 
@@ -259,7 +259,7 @@ void dataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img7.png)
+![Displaying paste operation using PasteGridCellContent event based on mapping name in WPF SfDataGrid](Clipboard-Operations_images/Clipboard-Operations_img7.png)
 
 ## Handling Programmatically
 
