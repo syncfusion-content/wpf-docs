@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Data Binding | GridData (Classic) | WPF | Syncfusion
-description: Data Binding
+description: Data Binding in WPF GridData control
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Data Binding
+# Data Binding in WPF GridData
 
 Data binding is the master feature of the GridData control. Grid must be bound to an external data source to display the data. GDC supports the following data sources such as, Data Tables, Data Sets or Custom collections of type List, Binding List, Observable Collection or Collection View Source. These data source can have multiple nested tables that is displayed hierarchically by the grouping grid. 
 
@@ -127,7 +127,7 @@ public class Order : ObservableCollection<Orders>
 
 The following screenshot shows a GDC which bound with an Object data using the Object Data Provider.
 
-![](Getting-Started_images/Getting-Started_img27.jpeg)
+![Data binding in WPF GridData using Object Data Provider](Getting-Started_images/Getting-Started_img27.jpeg)
 
 The GDC is bound with a data source provided by an object.
 {:.caption}
@@ -196,7 +196,7 @@ Code to Bind the Above DataTable to GDC.
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img28.jpeg)
+![Data binding in WPF GridData using ADO.NET Data Table](Getting-Started_images/Getting-Started_img28.jpeg)
 
 The GDC is bound with a data source provided by Data Table.
 {:.caption}
@@ -272,7 +272,7 @@ Binding the Above Collection to GDC.
 
 The following image shows a Grid bound with an Observable collection.
 
-![](Getting-Started_images/Getting-Started_img29.jpeg)
+![Data binding in WPF GridData using Observable collection](Getting-Started_images/Getting-Started_img29.jpeg)
 
 The GDC is bound with a data source provided by Observable Collection.
 {:.caption}
@@ -341,7 +341,7 @@ public class Customer : ObservableCollection<Customers>
 
 The following image shows the output of the above given code:
 
-![](Getting-Started_images/Getting-Started_img30.jpeg)
+![Data binding in WPF GridData with a data source provided by Collection View Source.](Getting-Started_images/Getting-Started_img30.jpeg)
 
 The GDC is bound with a data source provided by Collection View Source.
 {:.caption}
@@ -369,7 +369,7 @@ this.gridDataControl1.ItemsSource = northwind.Orders;
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img31.jpeg)
+![Data binding in WPF GridData with a EF-driven data source](Getting-Started_images/Getting-Started_img31.jpeg)
 
 
 
@@ -464,7 +464,7 @@ Following is a simple XAML binding code that specifies a data source for the gri
  
 The following image shows the output of the above given code:
 
-![](Getting-Started_images/Getting-Started_img32.jpeg)
+![Data binding in WPF GridData with data using XAML code](Getting-Started_images/Getting-Started_img32.jpeg)
 
 The GDC is bound with data using XAML code.
 {:.caption}
@@ -500,13 +500,13 @@ You can bind data columns from multiple data tables which are inter-related to t
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img33.jpeg)
+![Data binding in WPF GridData with Complex Property Binding](Getting-Started_images/Getting-Started_img33.jpeg)
 
 
 
 
 
-![](Getting-Started_images/Getting-Started_img34.jpeg)
+![Data binding in WPF GridData with Complex Property Binding](Getting-Started_images/Getting-Started_img34.jpeg)
 
 
 
@@ -557,7 +557,7 @@ You can also apply grouping, sorting, filtering, summaries and conditional forma
 
 
 {% endhighlight  %}
-![](Getting-Started_images/Getting-Started_img35.jpeg)
+![Data binding in WPF GridData with Complex Property Binding explaining summary feature](Getting-Started_images/Getting-Started_img35.jpeg)
 
 
 
@@ -578,7 +578,7 @@ The following image corresponds to the output of the above given code:
 
 
 
-![](Getting-Started_images/Getting-Started_img36.jpeg)
+![Data binding in WPF GridData notifying data source change](Getting-Started_images/Getting-Started_img36.jpeg)
 
 
 
@@ -658,7 +658,7 @@ partial class Orders : IDataErrorInfo
 
 The following screenshot illustrates Data Error Validation in the GridData control.
 
-![](Getting-Started_images/Getting-Started_img37.jpeg)
+![Data binding in WPF GridData ilustrating error validation](Getting-Started_images/Getting-Started_img37.jpeg)
 
 
 
@@ -828,7 +828,7 @@ To add the CurrentCellValidating event to an application:
 
    Output
 
-   ![](Getting-Started_images/Getting-Started_img38.png)
+   ![Data binding in WPF GridData ilustrating cell level error validation](Getting-Started_images/Getting-Started_img38.png)
 
 ### Row Level Validation
 
@@ -1041,7 +1041,7 @@ To add the RowValidating event to an application:
 
 #### Output
 
-![](Getting-Started_images/Getting-Started_img39.png)
+![Data binding in WPF GridData ilustrating cell level error validation](Getting-Started_images/Getting-Started_img39.png)
 
 ## Synchronize Current Selection
 
@@ -1116,13 +1116,13 @@ ItemsSource="{StaticResource ordersSource}" ShowGroupDropArea="True" Height="300
 
 Following are the sample outputs with IsSynchronizedWithCurrentItem set to true and false.
 
-![](Getting-Started_images/Getting-Started_img40.jpeg)
+![Data binding in WPF GridData ilustrating IsSynchronizedWithCurrentItem set to true](Getting-Started_images/Getting-Started_img40.jpeg)
 
 
 
 
 
-![](Getting-Started_images/Getting-Started_img41.jpeg)
+![Data binding in WPF GridData ilustrating IsSynchronizedWithCurrentItem set to false](Getting-Started_images/Getting-Started_img41.jpeg)
 
 
 
@@ -1165,7 +1165,7 @@ The following example adds an unbound column and displays the record values in t
 
 The following screenshot shows the output of the above given code:
 
-![](Getting-Started_images/Getting-Started_img42.png)
+![Data binding in WPF GridData ilustrating unbound columns](Getting-Started_images/Getting-Started_img42.png)
 
 
 
@@ -1191,7 +1191,7 @@ object value = this.dataGrid.Model.Table.GetUnboundValue(5, 5);
 
 Unbound columns allow association of related values that are bound to an expression in the unbound column or through handling the QueryUnboundColumnValue event. Operations like sorting, filtering, grouping, summaries and conditional formatting can now be applied on these dynamic values bound to the underlying source. It uses LINQ Functional Expressions to be dynamically evaluated at run time, and thus only strongly-typed source can be used with this feature.
 
-![](Getting-Started_images/Getting-Started_img43.jpeg)
+![Data binding in WPF GridData ilustrating perations on Unbound Columns](Getting-Started_images/Getting-Started_img43.jpeg)
 
 
 
@@ -1238,7 +1238,7 @@ Sorting can be done interactively by clicking the header or can be declared by u
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img44.jpeg)
+![Data binding in WPF GridData ilustrating sorting operation on Unbound Columns](Getting-Started_images/Getting-Started_img44.jpeg)
 
 
 ### Filtering Operation
@@ -1257,7 +1257,7 @@ Excel-like filtering can be enabled in unbound columns by setting AllowFilter pr
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img45.jpeg)
+![Data binding in WPF GridData ilustrating Excel-like filtering mode on Unbound Columns](Getting-Started_images/Getting-Started_img45.jpeg)
 
 
 
@@ -1280,7 +1280,7 @@ Advanced Filtering mode can be enabled by adding the following code.
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img46.jpeg)
+![Data binding in WPF GridData ilustrating advanced filtering mode on Unbound Columns](Getting-Started_images/Getting-Started_img46.jpeg)
 
 
 
@@ -1299,7 +1299,7 @@ Grouping can be performed interactively or declaratively on the Unbound Columns 
 
 
 {% endhighlight  %}
-![](Getting-Started_images/Getting-Started_img47.png)
+![Data binding in WPF GridData ilustrating grouping operation on Unbound Columns](Getting-Started_images/Getting-Started_img47.png)
 
 
 
@@ -1374,7 +1374,7 @@ The default summaries work much the same way as summaries with bound columns. Fo
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img48.jpeg)
+![Data binding in WPF GridData ilustrating summary operation on Unbound Columns](Getting-Started_images/Getting-Started_img48.jpeg)
 
 
 
@@ -1465,13 +1465,13 @@ foreach (object obj in gdc.SelectedItems)
 {% endhighlight  %}
 Output
 
-![](Getting-Started_images/Getting-Started_img49.jpeg)
+![Data binding in WPF GridData ilustrating selected Items Collection](Getting-Started_images/Getting-Started_img49.jpeg)
 
 
 
 
 
-![](Getting-Started_images/Getting-Started_img50.jpeg)
+![Data binding in WPF GridData ilustrating selected Items Collection](Getting-Started_images/Getting-Started_img50.jpeg)
 
 
 
@@ -1481,7 +1481,7 @@ C# 4.0 introduces a new type of object: dynamic. More information can be found i
 
 The IDynamicMetaObjectProvider interface defines the interface between the dynamic run-time types.
 
-![](Getting-Started_images/Getting-Started_img51.jpeg)
+![Data binding in WPF GridData ilustrating dynamic keyword support](Getting-Started_images/Getting-Started_img51.jpeg)
 
 
 
@@ -1576,13 +1576,13 @@ this.grid.UnboundRowPosition = Position.Top;
 
 
 
-![](Getting-Started_images/Getting-Started_img52.png)
+![Data binding in WPF GridData ilustrating unbound rows](Getting-Started_images/Getting-Started_img52.png)
 
 
 
 
 
-![](Getting-Started_images/Getting-Started_img53.png)
+![Data binding in WPF GridData ilustrating unbound rows](Getting-Started_images/Getting-Started_img53.png)
 
 
 
