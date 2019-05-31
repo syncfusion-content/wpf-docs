@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Customizing Border of the ChromelessWindow
-description: Customizing Border of the ChromelessWindow
+title: Border customization of ChromelessWindow | WPF | Syncfusion 
+description: This section illustrates how to customize the border and border's thickness of wpf Chromeless Window.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# Customizing Border of the ChromelessWindow
+# Border Customization
 
 **BorderBrush**
 
@@ -43,7 +43,7 @@ Me.ResizeBorderBrush = New SolidColorBrush(Colors.Maroon)
 
 {% endtabs %} 
 
-![](Customizing-Border-of-the-ChromelessWindow_images/Customizing-Border-of-the-ChromelessWindow_img1.jpeg)
+![WPF ChromelessWindow border color customized](Customizing-Border-of-the-ChromelessWindow_images/Customizing-Border-of-the-ChromelessWindow_img1.jpeg)
 
 **BorderThickness**
 
@@ -80,4 +80,4 @@ Me.ResizeBorderThickness = New Thickness(8)
 
 {% endtabs %}
 
-![](Customizing-Border-of-the-ChromelessWindow_images/Customizing-Border-of-the-ChromelessWindow_img2.jpeg)
+![WPF ChromelessWindow border thickness customized](Customizing-Border-of-the-ChromelessWindow_images/Customizing-Border-of-the-ChromelessWindow_img2.jpeg)
