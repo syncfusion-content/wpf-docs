@@ -100,7 +100,7 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img1.png)
+![Displaying cell styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img1.png)
 
 ### Styling cells based on record using Converter
 
@@ -147,7 +147,7 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img2.png)
+![Displaying cell styling based on record using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img2.png)
 
 ### Styling cells using Style.Triggers
 
@@ -180,7 +180,7 @@ The record cells ([GridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfu
 
 Here, GridCell’s are conditionally customized based on `OrderID` value.
 
-![](Conditional-Styling_images/Conditional-Styling_img3.png)
+![Displaying cell styling using Style.Triggers in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img3.png)
 
 ### Styling cells using StyleSelector
 
@@ -228,7 +228,7 @@ public class SelectorClass : StyleSelector
 
 Here, GridCell’s are customized based on `TotalPrice` property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img4.png)
+![Displaying cell styling using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img4.png)
 
 ## Rows
 
@@ -278,7 +278,7 @@ public class ColorConverter : IValueConverter
 
 Here, rows are customized based on `TotalPrice` property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img5.png)
+![Displaying row styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img5.png)
 
 ### Styling rows using StyleSelector
 
@@ -322,7 +322,7 @@ public class CustomRowStyleSelector : StyleSelector
 
 Here, rows are customized based on `TotalPrice` property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img6.png)
+![Displaying row styling using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img6.png)
 
 ### Styling Alternate Rows
 
@@ -368,7 +368,7 @@ public class CustomRowStyleSelector : StyleSelector
 
 Here, alternating rows are customized based on `OrderID` property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img7.png)
+![Displaying alternate row styling using AlternatingRowStyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img7.png)
 
 ## CaptionSummaryCell
 
@@ -431,7 +431,7 @@ public class ColorConverter : IValueConverter
 
 Here, caption summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img8.png)
+![Displaying caption summary cell styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img8.png)
 
 ### Styling caption summary using StyleSelector
 
@@ -492,7 +492,7 @@ public class SelectorClass : StyleSelector
 
 Here, caption summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img9.png)
+![Displaying caption summary cell styling using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img9.png)
 
 ### Styling caption summary cell based on column
 
@@ -556,7 +556,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img10.png)
+![Displaying caption summary cell styling based on column using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img10.png)
 
 ## CaptionSummaryRow
 
@@ -619,7 +619,7 @@ public class ColorConverter : IValueConverter
 
 Here, caption summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img11.png)
+![Displaying caption summary row styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img11.png)
 
 ### Styling caption summary row using StyleSelector
 
@@ -677,7 +677,7 @@ public class SelectorClass : StyleSelector
 
 Here, caption summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img12.png)
+![Displaying caption summary row styling using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img12.png)
 
 ### Styling caption summary row based on grouping level
 
@@ -737,7 +737,7 @@ public class CustomCaptionSummaryRowStyleSelector : StyleSelector
 
 Here, caption summary rows are customized based on `grouping level` (example: level1, level2, level3, etc.).
 
-![](Conditional-Styling_images/Conditional-Styling_img13.png)
+![Displaying caption summary row styling based on group level in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img13.png)
 
 ## GroupSummaryCell
 
@@ -810,7 +810,7 @@ public class ColorConverter : IValueConverter
 
 Here, group summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img14.png)
+![Displaying group summary cell styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img14.png)
 
 ### Styling group summary cell using StyleSelector
 
@@ -884,7 +884,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img15.png)
+![Displaying group summary cell styling using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img15.png)
 
 ### Styling group summary cell based on column
 
@@ -960,7 +960,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img16.png)
+![Displaying group summary cell styling based on column in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img16.png)
 
 ## GroupSummaryRow
 
@@ -1033,7 +1033,7 @@ public class ColorConverter : IValueConverter
 
 Here, group summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img17.png)
+![Displaying group summary row styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img17.png)
 
 ### Styling group summary row using StyleSelector
 
@@ -1106,7 +1106,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary rows are customized based on `TotalPrice` summary value whether it’s positive or negative.
 
-![](Conditional-Styling_images/Conditional-Styling_img18.png)
+![Displaying group summary cell styling using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img18.png)
 
 ## TableSummaryCell
 
@@ -1187,7 +1187,7 @@ public class ColorConverter : IValueConverter
 
 Here, table summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img19.png)
+![Displaying table summary cell styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img19.png)
 
 ### Styling table summary cell using StyleSelector
 
@@ -1264,7 +1264,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img20.png)
+![Displaying table summary cell styling using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img20.png)
 
 ### Styling table summary cell based on column
 
@@ -1338,7 +1338,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img21.png)
+![Displaying table summary cell styling based on column in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img21.png)
 
 ## TableSummaryRow
 
@@ -1389,7 +1389,7 @@ public class ColorConverter : IValueConverter
 
 Here, table summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img22.png)
+![Displaying table summary row styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img22.png)
 
 ### Styling table summary row using StyleSelector
 
@@ -1470,7 +1470,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img23.png)
+![Displaying table summary cell styling using StyleSelector in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img23.png)
 
 ## Alignment customization based on column
 
@@ -1548,7 +1548,7 @@ public class TableSummaryStyleSelector : StyleSelector
 
 Here, horizontal alignment of `TotalPrice` column alone left, other column horizontal alignment are changed into right.
 
-![](Conditional-Styling_images/Conditional-Styling_img24.png)
+![Displaying alignment customization based on column in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img24.png)
 
 ## Row Header
 
@@ -1598,5 +1598,5 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img25.png)
+![Displaying row header styling using converter in WPF SfDataGrid](Conditional-Styling_images/Conditional-Styling_img25.png)
 
