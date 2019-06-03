@@ -1,6 +1,6 @@
 ---
-title: Import and Export
-description: import and export
+title: Import and Export |  SfRichTextBoxAdv | WPF | Syncfusion
+description: This section describes how to perform the import/export word, rich text format, HTML, XAML and text documents in WPF SfRichTextBoxAdv Control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
