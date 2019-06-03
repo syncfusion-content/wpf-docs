@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation support in SfDataGrid.
-description: How to validate the data in SfDataGrid.
+title: Data Validation support in SfDataGrid. | WPF | Syncfusion
+description: How to validate the data in WPF SfDataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Validation
+# Data Validation in WPF SfDataGrid.
 
 SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
  
@@ -83,7 +83,7 @@ this.dataGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img1.png)
+![Data validation in WPF SfDataGrid using IDataErrorInfo](Data-Validation_images/Data-Validation_img1.png)
 
 ### INotifyDataErrorInfo
 
@@ -140,7 +140,7 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img2.png)
+![Data validation in WPF SfDataGrid using INotifyDataErrorInfo](Data-Validation_images/Data-Validation_img2.png)
 
 ## Built-in validation using Data Annotation
 
@@ -441,7 +441,7 @@ You can change the validation error template shape of the GridCell by changing
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img3.png)
+![Data validation in WPF SfDataGrid Customizing error icon](Data-Validation_images/Data-Validation_img3.png)
 
 #### Change the color of error icon
 
@@ -589,7 +589,7 @@ You can change the validation error template color of the GridCell by changing
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img4.png)
+![Data validation in WPF SfDataGrid Changing color of error icon](Data-Validation_images/Data-Validation_img4.png)
 
 #### Change the cursor on error icon
 
@@ -743,7 +743,7 @@ You can change the validation error template cursor of the GridCell by changin
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img5.png)
+![Data validation in WPF SfDataGrid Change the cursor on error icon](Data-Validation_images/Data-Validation_img5.png)
 
 ### Customizing error tip
 
@@ -842,7 +842,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img6.png)
+![Data validation in WPF SfDataGrid Change the background and foreground color of error tip](Data-Validation_images/Data-Validation_img6.png)
 
 ### Showing error details in RowHeader
 
@@ -870,7 +870,7 @@ public string Error
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img7.png)
+![Data validation in WPF SfDataGrid Showing error information using IDataErrorInfo](Data-Validation_images/Data-Validation_img7.png)
 
 #### Using INotifyDataErrorInfo
 
@@ -893,7 +893,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img8.png)
+![Data validation in WPF SfDataGrid Showing error information using INotifyDataErrorInfo](Data-Validation_images/Data-Validation_img8.png)
 
 ## Validation with Master-Details View
 
@@ -939,7 +939,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img9.png)
+![Built in Data validation in WPF SfDataGrid](Data-Validation_images/Data-Validation_img9.png)
 
 ### Custom validation through events
 
@@ -1155,7 +1155,7 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img10.png)
+![Data validation in WPF SfDataGrid Validation with Checkbox column](Data-Validation_images/Data-Validation_img10.png)
 
 ## Validation with LightWeightTemplate
 
