@@ -109,7 +109,7 @@ Create new WPF Project in Visual Studio to display SfDataGrid with data objects.
 ### Adding control via Designer
 
 SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-    ![](Getting-Started_images/Getting-started_img1.png)
+    ![Displaying the addition of WPF Sfdatagrid control via the designer](Getting-Started_images/Getting-started_img1.png)
 
 ### Adding control manually in XAML
 
@@ -297,7 +297,7 @@ dataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the see the below output,
 
-![](Getting-Started_images/Getting-started_img2.png)
+![Displaying WPF SfDataGrid](Getting-Started_images/Getting-started_img2.png)
 
 ## Defining Columns
 By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
@@ -538,7 +538,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-started_img3.png)
+![Displaying sorting in WPF SfDataGrid](Getting-Started_images/Getting-started_img3.png)
 
 You can customize sorting by handling the [SfDataGrid.SortColumnsChanging](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) and [SfDataGrid.SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) events. To cancel the default sort, set the `Cancel` property to `true` in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -570,13 +570,13 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](http://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-started_img4.png)
+![Displaying grouping in WPF SfDataGrid](Getting-Started_images/Getting-started_img4.png)
 
 ### Filtering
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFiltering.html) property to `true` , where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanging_EV.html) and [SfDataGrid.FilterChanged](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterChanged_EV.html) events. 
 
-![](Getting-Started_images/Getting-started_img5.png)
+![Displaying filtering in WPF SfDataGrid](Getting-Started_images/Getting-started_img5.png)
 
 
 ## Editing
