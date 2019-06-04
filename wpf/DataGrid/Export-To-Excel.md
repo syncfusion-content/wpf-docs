@@ -63,7 +63,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img1.png)
+![Displaying exporting to excel with outlines for groups in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img1.png)
 
 ### Exclude columns while exporting
 
@@ -153,7 +153,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img2.png)
+![Displaying exporting to excel with custom start row index and column index in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img2.png)
 
 ## Saving options
 
@@ -251,7 +251,7 @@ window1.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img3.png)
+![Displaying opening exported excel without saving in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img3.png)
 
 ## Export Paging
 
@@ -297,7 +297,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img4.png)
+![Displaying exporting selected items only to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img4.png)
 
 ## Export to HTML
 
@@ -451,7 +451,7 @@ private static void ExportingHandler(object sender, GridExcelExportingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img5.png)
+![Displaying styling based on CellType in exported excel for WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img5.png)
 
 ## Cell customization in Excel while exporting
 
@@ -490,7 +490,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img6.png)
+![Displaying customization of cell values while exporting to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img6.png)
 
 Here, cell values are changed for `IsClosed` column based on custom condition.
 
@@ -522,7 +522,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img7.png)
+![Displaying row styling based on data while exporting to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img7.png)
 
 Here, records having the `Country` name as `Mexico` are customized.
 
@@ -551,7 +551,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img8.png)
+![Displaying customization of cell values based on column name while exporting to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img8.png)
 
 Here, `OrderID` column cells are customized while exporting.
 
@@ -606,7 +606,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img9.png)
+![Displaying changing borders in exported excel for WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img9.png)
 
 #### Enabling Filters
 
@@ -623,7 +623,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img10.png)
+![Displaying enabling filters on exported excel for WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img10.png)
 
 While using `stacked headers`, you can specify the `range` based on Stacked headers count.
 
@@ -658,7 +658,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img11.png)
+![Displaying customization of range of cells in exported excel for WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img11.png)
 
 ## Exporting DetailsView
 
@@ -686,7 +686,7 @@ private static void ChildExportingHandler(object sender, GridChildExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img12.png)
+![Displaying excluding of particular DetailsView while exporting to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img12.png)
 
 Here, `DetailsViewDataGrid` is not exported for the parent record having `OrderID` as 1002.
 
@@ -709,7 +709,7 @@ private static void ChildExportingHandler(object sender, GridChildExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img13.png)
+![Displaying excluding of columns in DetailsViewDataGrid while exporting to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img13.png)
 
 Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to excel.
 
@@ -741,7 +741,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img14.png)
+![Displaying customization of DetailsViewDataGrid cells while exporting to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img14.png)
 
 
 ## Performance
@@ -769,7 +769,7 @@ workBook.ActiveSheet.Columns[4].NumberFormat = "0.0";
 {% endtabs %}
 
 
-![](Export-to-Excel_images/Export-to-Excel_img15.png)
+![Displaying formatting of column without CellExportingEventHandler while exporting to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img15.png)
 
 ### Alternate row styling without using CellsExportingEventHandler
 
@@ -798,6 +798,6 @@ condition2.BackColorRGB = System.Drawing.Color.LightGray;
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-to-Excel_images/Export-to-Excel_img16.png)
+![Displaying row styling without using CellExportingEventHandler while exporting to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img16.png)
 
 

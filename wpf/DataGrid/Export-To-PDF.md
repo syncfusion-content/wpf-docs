@@ -231,7 +231,7 @@ static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img1.png)
+![Displaying Header and Footer for the exported PDF page in WPF SfDataGrid](Export-To-PDF_images/Export-To-PDF_img1.png)
 
 Here, `string` is inserted in the header of exported PDF file using [DrawString](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawString.html) method. Similarly, you can insert image, line,etc. using [DrawImage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawImage.html), [DrawLine](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawLine.html) methods respectively. 
 
@@ -272,7 +272,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img2.png)
+![Displaying exporting SelectedItem only to PDF in WPF SfDataGrid](Export-To-PDF_images/Export-To-PDF_img2.png)
 
 ## Saving options
 
@@ -353,7 +353,7 @@ window.Show();
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img3.png)
+![Displaying opening of exported PDF without saving in WPF SfDataGrid](Export-To-PDF_images/Export-To-PDF_img3.png)
 
 ## Exporting Customization
 
@@ -383,7 +383,7 @@ void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img4.png)
+![Displaying styling of cell based on CellType while exporting to PDF in WPF SfDataGrid](Export-To-PDF_images/Export-To-PDF_img4.png)
 
 ### Embedding fonts in PDF file
 
@@ -446,7 +446,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img5.png)
+![Displaying customization of cell values while exporting to PDF in WPF SfDataGrid](Export-To-PDF_images/Export-To-PDF_img5.png)
 
 Here, cell values are changed for `IsClosed` column based on custom condition.
 
@@ -478,7 +478,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img6.png)
+![Displaying row styling in exported PDF in WPF SfDataGrid](Export-To-PDF_images/Export-To-PDF_img6.png)
 
 ### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
 
@@ -506,7 +506,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img7.png)
+![Displaying exporting of middle eastern languages from WPF SfDataGrid to PDF](Export-To-PDF_images/Export-To-PDF_img7.png)
 
 ### Exporting images to PDF document
 
@@ -553,7 +553,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img8.png)
+![Displaying exporting of images from WPF SfDataGrid to PDF](Export-To-PDF_images/Export-To-PDF_img8.png)
 
 ## Exporting DetailsView
 
@@ -568,7 +568,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img9.png)
+![Displaying exporting of DetailsView from WPF SfDataGrid to PDF](Export-To-PDF_images/Export-To-PDF_img9.png)
 
 By default, only expanded DetailsViewDataGrids only will be exported to PDF document. If you want to export all the DetailsViewDataGrids, you need to set [ExportAllDetails](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportAllDetails.html) as `true`.
 
@@ -582,7 +582,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img10.png)
+![Displaying exporting of DetailsView in expanded state from WPF SfDataGrid to PDF](Export-To-PDF_images/Export-To-PDF_img10.png)
 
 Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
 
@@ -612,7 +612,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img11.png)
+![Displaying exluding particular DetailsView while exporting WPF SfDataGrid to PDF](Export-To-PDF_images/Export-To-PDF_img11.png)
 
 Here, `DetailsViewDataGrid` is not exported for the parent record having `OrderID` as 1002.
 
@@ -635,7 +635,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img12.png)
+![Displaying exporting of DetailsView excluding columns from WPF SfDataGrid to PDF ](Export-To-PDF_images/Export-To-PDF_img12.png)
 
 Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to PDF.
 
@@ -668,6 +668,6 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img13.png)
+![Displaying customization of cells in DetailsView while exporting from WPF SfDataGrid to PDF](Export-To-PDF_images/Export-To-PDF_img13.png)
 
 
