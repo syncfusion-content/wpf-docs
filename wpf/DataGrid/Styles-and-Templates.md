@@ -13,12 +13,12 @@ The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header,
 
 ## Control Structure of SfDataGrid
 
-![](Styles-and-Templates_images/Styles-and-Templates_img1.png)
+![Displaying control structure of WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img1.png)
 
 ## Customizing Default Containers
 SfDataGrid arranges the cell and row content using cell and row containers. Below screenshot shows the VisualTree of SfDataGrid where HeaderCell is loaded into the HeaderCellControl and data cells are loaded into the VirtualizingCellsControl container. VirtualizingCellsControl container uses GridCell to load the cell content.
 
-![](Styles-and-Templates_images/Styles-and-Templates_img31.png)
+![Displaying VisualTree structure of WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img31.png)
 
 [RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding RowGenerator class and setting it to [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Using this method to customize the row and cell containers allows for customizations that aren’t possible through styling and conditional styling.
 
@@ -182,7 +182,7 @@ public class CustomRowGenerator : RowGenerator
 {% endtabs %}
 
 You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/wpf-953049514).
-![](Styles-and-Templates_images/Styles-and-Templates_img32.png)
+![Displaying row animation on property changes in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img32.png)
 
 The below code example shows how to change the background color of the `VirtualizingCellsControl` when the value has been changed for a particular cell. This can be done by hooking the `DataContextChanged` and `PropertyChanged` event.
 {% tabs %}
@@ -348,7 +348,7 @@ You can download a working demo for the above customization from [here](http://w
 
 You can edit the SfDataGrid style in Visual Studio Designer by right clicking it in design View and click **Edit Template**.
 
-![](Styles-and-Templates_images/Styles-and-Templates_img2.png)
+![Displaying Visual Studio Designer style editing for WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img2.png)
 
 By clicking **Edit a Copy**, it will generate default template of SfDataGrid in **XAML view** and you can edit the default style.
 
@@ -356,7 +356,7 @@ By clicking **Edit a Copy**, it will generate default template of SfDataGrid in 
 
 You can edit the SfDataGrid elements style in Visual Studio Designer by right clicking it in designer view and click **Edit Additional Templates**.
 
-![](Styles-and-Templates_images/Styles-and-Templates_img3.png)
+![Displaying Visual Studio Designer style editing for elements in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img3.png)
 
 You can edit or create new style for the following SfDataGrid elements through **Edit Additional Templates** option,
 
@@ -417,7 +417,7 @@ You can also set the `CellStyle` to particular column in below way.
 
 N> `GridColumn.CellStyle` takes higher priority than `SfDataGrid.CellStyle` property.
 
-![](Styles-and-Templates_images/Styles-and-Templates_img4.png)
+![Displaying cell styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img4.png)
 
 ### Changing Grid line border as dotted line
 
@@ -453,7 +453,7 @@ You can change the gridline border as dotted line by customizing [GridCell.Borde
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img5.png)
+![Displaying dotted line border for each record cell in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img5.png)
 
 ### Changing Grid line color
 
@@ -486,7 +486,7 @@ The record rows can be customized by writing style of TargetType [VirtualizingCe
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img6.png)
+![Displaying row styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img6.png)
 
 ## Alternating Row Style
 
@@ -512,7 +512,7 @@ You can style the alternate rows by setting [SfDataGrid.AlternatingRowStyle](htt
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img7.png)
+![Displaying alternate row styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img7.png)
 
 ## Selection
 
@@ -527,7 +527,7 @@ The foreground and background for the selected row, cell can be customized by se
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img8.png)
+![Displaying selection appearance customization for WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img8.png)
 
 ## Styling Column Header
 
@@ -553,7 +553,7 @@ N> `GridColumn.HeaderStyle` takes higher priority than `SfDataGrid.HeaderStyle` 
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img9.png)
+![Displaying column header styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img9.png)
 
 ### Styling DetailsViewDataGrid header
 
@@ -617,7 +617,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img10.png)
+![Displaying StackedHeader styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img10.png)
 
 ### Setting different styles to StackedHeader
 
@@ -669,7 +669,7 @@ public class GridCustomStackedRenderer : GridStackedHeaderCellRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img11.png)
+![Displaying different style for each StackedHeaderCell in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img11.png)
 
 ## Setting Default Style for one column
 
@@ -697,7 +697,7 @@ this.dataGrid.Columns["OrderID"].CellStyle = null;
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img12.png)
+![Displaying default style for a column in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img12.png)
 
 ## Styling CaptionSummary 
 
@@ -723,7 +723,7 @@ The caption summary cells can be customized by writing style of TargetType [Grid
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img13.png)
+![Displaying CaptionSummary cell styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img13.png)
 
 ### Styling CaptionSummary rows
 
@@ -747,7 +747,7 @@ The caption summary rows can be customized by writing style of TargetType [GridC
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img14.png)
+![Displaying CaptionSummary row styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img14.png)
 
 ## Styling GroupSummary
 
@@ -773,7 +773,7 @@ The group summary cells can be customized by writing style of TargetType [GridGr
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img15.png)
+![Displaying GroupSummary cell styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img15.png)
 
 ### Styling GroupSummary rows
 
@@ -794,7 +794,7 @@ The group summary rows can be customized by writing style of TargetType [GridGro
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img16.png)
+![Displaying GroupSummary row styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img16.png)
 
 ## Styling TableSummary
 
@@ -818,7 +818,7 @@ The table summary cells can be customized by writing style of TargetType [GridTa
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img17.png)
+![Displaying TableSummary cell styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img17.png)
 
 ### Styling TableSummary rows
 
@@ -838,7 +838,7 @@ The table summary rows can be customized by writing style of TargetType [GridTab
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img18.png)
+![Displaying TableSummary row styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img18.png)
 
 ## Styling UnboundRows
 
@@ -858,7 +858,7 @@ The unbound row cells can be customized by writing style of TargetType [GridUnBo
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img19.png)
+![Displaying unbound row cell styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img19.png)
 
 ### Styling unbound row 
 
@@ -876,7 +876,7 @@ The unbound rows can be customized by writing style of TargetType [UnBoundRowCon
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img20.png)
+![Displaying unbound row styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img20.png)
 
 ## Styling AddNewRow
 
@@ -897,7 +897,7 @@ The appearance of AddNewRow can customized by writing style of TargetType [AddNe
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img21.png)
+![Displaying AddNewRow styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img21.png)
 
 ## Styling RowHeader
 
@@ -914,7 +914,7 @@ The appearance of header row can be customized by writing style of TargetType [H
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img22.png)
+![Displaying RowHeader styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img22.png)
 
 ### Displaying row index in row header cell
 
@@ -950,7 +950,7 @@ You can also display the row index value in the row header cell by customizing i
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img23.png)
+![Displaying row index in row header cell in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img23.png)
 
 ## Template Selectors
 
@@ -1003,7 +1003,7 @@ public class GridCellTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img24.png)
+![Displaying different custom templates for cells based on data in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img24.png)
 
 ### Changing HeaderTemplates
 
@@ -1029,7 +1029,7 @@ You can customize the appearance of particular SfDataGrid column header by setti
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img25.png)
+![Displaying custom header template for column header in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img25.png)
 
 ### Loading different editor elements in a same column
 
@@ -1104,7 +1104,7 @@ The appearance of [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img26.png)
+![Displaying appearance customization of DetailsViewDataGrid using DetailsViewDataGridStyle in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img26.png)
 
 ## Styling Filter popup
 
@@ -1351,7 +1351,7 @@ Here, height and color of the indicator is customized in the below code example.
 
 And also, you can change the appearance of Descending sort indicator by customizing second path present in PART_SortButtonPresenter. For example, in the below code example height and color of the indicator is changed.
 
-![](Styles-and-Templates_images/Styles-and-Templates_img27.png)
+![Displaying custom ascending sort icon in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img27.png)
 
 ### Customizing Descending Sort Indicator
 
@@ -1382,7 +1382,7 @@ And also, you can change the appearance of Descending sort indicator by customiz
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img28.png)
+![Displaying custom descending sort icon in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img28.png)
 
 ## Styling GroupDropArea
 
@@ -1405,7 +1405,7 @@ The appearance of `GroupDropArea` can be customized by writing style of TargetTy
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img29.png)
+![Displaying GroupDropArea styling in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img29.png)
 
 ## Showing busy indicator before loading records
 
@@ -1434,4 +1434,4 @@ void sfDataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](Styles-and-Templates_images/Styles-and-Templates_img30.png)
+![Displaying busy indicator before loading records in WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img30.png)

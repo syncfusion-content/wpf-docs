@@ -25,7 +25,7 @@ this.dataGrid.UnBoundRows.Add(new GridUnBoundRow() {Position = UnBoundRowsPositi
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img1.png)
+![Displaying Unbound rows in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img1.png)
 
 
 N> [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported with unbound rows.
@@ -96,7 +96,7 @@ Unbound row placed at bottom, right below record rows. In this position, unbound
 
 Below screen shot shows different unbound rows placed in all possible positions.
 
-![](Unbound-Rows_images/Unbound-Rows_img2.png)
+![Displaying Unbound rows at different positions in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img2.png)
 
 ## Populating data for unbound rows
 
@@ -149,7 +149,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img3.png)
+![Displaying Unbound row data population using QueryUnBoundRow event in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img3.png)
 
 ## Refreshing the Unbound Rows at runtime
 
@@ -235,7 +235,7 @@ You can customize the style of unbound row by writing style of TargetType [UnBou
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img4.png)
+![Displaying Unbound row styling in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img4.png)
 
 ### Unbound row cell’s style
 
@@ -287,7 +287,7 @@ public class UnboundCellStyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img5.png)
+![Displaying Unbound row cell styling in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img5.png)
 
 ## Customize the Unbound Row’s behavior
 
@@ -370,7 +370,7 @@ dataGrid.UnBoundRowCellRenderers.Add("UnBoundTextColumn", new GridUnBoundRowCell
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img6.png)
+![Displaying unboundRow behavior customization for existing cell type in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img6.png)
 
 ### Custom Renderer
 
@@ -561,7 +561,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img7.png)
+![Displaying unboundRow behavior customization with DatePicker in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img7.png)
 
 ## Templating unbound row cells
 
@@ -614,7 +614,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img8.png)
+![Displaying customization of unboundRowCell with templates in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img8.png)
 
 ## Changing unbound row height
 
@@ -638,7 +638,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img9.png)
+![Displaying unboundRow height customization in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img9.png)
 
 ## Exporting Unbound rows
 
@@ -700,7 +700,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img10.png)
+![Displaying unboundRowCell merging in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img10.png)
 
 ## Unbound row for Master-details view
 Master-details view also allows you to add [additional](#_Unbound_Rows) rows to [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) which are **not bound with data object** from underlying data source. 
@@ -756,4 +756,4 @@ void FirstLevelNestedGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArg
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img11.png)
+![Displaying unboundRow in Master-details View of WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img11.png)

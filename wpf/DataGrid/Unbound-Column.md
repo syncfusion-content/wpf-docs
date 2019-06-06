@@ -28,7 +28,7 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Price
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Column_images/Unbound-Column_img1.png)
+![Displaying Unbound column in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img1.png)
 
 N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnBoundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -194,7 +194,7 @@ NOT
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Column_images/Unbound-Column_img2.png)
+![Displaying Unbound column using Expression in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img2.png)
 
 ### Using Format
 
@@ -220,7 +220,7 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Price
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Column_images/Unbound-Column_img3.png)
+![Displaying Unbound column using Format in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img3.png)
 
 ### Using QueryUnBoundColumnValue event
 
@@ -247,7 +247,7 @@ void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Column_images/Unbound-Column_img4.png)
+![Displaying Unbound column with data populated using QueryUnBoundColumnValue event in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img4.png)
 
 ## Refreshing the unbound column at runtime
 
@@ -369,7 +369,7 @@ public class UnboundCellStyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Column_images/Unbound-Column_img5.png)
+![Displaying Unbound column styling in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img5.png)
 
 You can refer the [Styling](http://help.syncfusion.com/wpf/sfdatagrid/column-types#styling-gridcolumn) section of `GridColumn` for more information.
 
@@ -444,7 +444,7 @@ public class GridUnBoundCellTextBoxRendererExt : GridUnBoundCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Column_images/Unbound-Column_img6.png)
+![Displaying unbound column behavior customization in WPF SfDataGrid](Unbound-Column_images/Unbound-Column_img6.png)
 
 ### Custom Renderer
 
