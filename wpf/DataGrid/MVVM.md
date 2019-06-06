@@ -125,7 +125,7 @@ In the following example, ViewModel command receives the underlying data object 
 {% endhighlight %}
 {% endtabs %}
 
-![](MVVM_images/MVVM_img1.png)
+![Display button binding command with viewmodel for WPF SfDataGrid](MVVM_images/MVVM_img1.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ShowSelectedRowInformation-414969750.zip).
 
@@ -169,7 +169,7 @@ class ViewModel:INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![](MVVM_images/MVVM_img2.png)
+![Displaying ComboBoxColumn ItemsSource binding with viewmodel in WPF SfDataGrid](MVVM_images/MVVM_img2.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BindViewModelItemstoComboBoxColumn-223289547.zip). 
 
@@ -201,7 +201,7 @@ You can load the `ComboBox` inside the `GridTemplateColumn` and bind the ItemsSo
 {% endhighlight %}
 {% endtabs %}
 
-![](MVVM_images/MVVM_img3.png)
+![Displaying ItemsSource binding for ComboBox inside template with viewmodel in WPF SfDataGrid](MVVM_images/MVVM_img3.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BindViewModelItemstotemplateComboBoxColumn-1705267981.zip).
 

@@ -11,7 +11,7 @@ documentation: ug
 
 SfDataGrid provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 
-![](Master-Details-View_images/Master-Details-View_img1.png)
+![Displaying Master-Details view in SfDataGrid](Master-Details-View_images/Master-Details-View_img1.png)
 
 ## Generating Master-Details view from IEnumerable
 
@@ -297,11 +297,11 @@ When relations are auto-generated, you can handle the [SfDataGrid.AutoGenerating
 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
-![](Master-Details-View_images/Master-Details-View_img2.png)
+![Displaying auto generation of two relations for WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img2.png)
 
 #### Manually defining Relations
 
-You can define the Master-Details View’s relation manually using [SfDataGird.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html), when the [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is `false`. 
+You can define the Master-Details View’s relation manually using [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html), when the [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is `false`. 
 
 To define Master-Details View relations, create [GridViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition.html) and set the name of `IEnumerable` type property (from data object) to [ViewDefinition.RelationalColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ViewDefinition~RelationalColumn.html). Then, add the `GridViewDefinition` to the [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html). 
 
@@ -345,7 +345,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img3.png)
+![Displaying manual generation of two relations for WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img3.png)
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) of first level nested grid.
 
@@ -397,7 +397,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img4.png)
+![Displaying manual generation of nested relations in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img4.png)
 
 ## Generating Master-Details view from DataTable
 
@@ -485,11 +485,11 @@ When relations are auto-generated, you can handle the [SfDataGrid.AutoGenerating
 
 Here, Master-Details View relation is auto generated based on the `Supplier_Product` relation.
 
-![](Master-Details-View_images/Master-Details-View_img5.png)
+![Displaying autogenerating relation with single relation in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img5.png)
 
 #### Manually defining Relations
 
-You can define the Master-Details View’s relation manually using [SfDataGird.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html), when the [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is `false`. 
+You can define the Master-Details View’s relation manually using [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html), when the [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is `false`. 
 
 To define Master-Details View relations, create [GridViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition.html) and set the relation name `Supplier_Product` to [ViewDefinition.RelationalColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ViewDefinition~RelationalColumn.html). Then, the `GridViewDefinition` is added to the [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html) collection of parent DataGrid.
 
@@ -519,7 +519,7 @@ this.dataGrid.DetailsViewDefinition.Add(gridViewDefinition);
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img6.png)
+![Displaying manual generation of single relation in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img6.png)
 
 ## Populating Master-Details view through events
 
@@ -754,7 +754,7 @@ Void FirstLevelNestedGrid_AutoGeneratingRelations(object sender,
 
 N> When you make any change in one [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), that change will be applied to all [DetailsViewDataGrid’s](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) in the same level. For example, when you resize the first column in one [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), the same column width is applied to all [DetailsViewDataGrid’s](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) at that level. This is applicable for features like filtering, sorting, grouping and re ordering columns also. 
 
-![](Master-Details-View_images/Master-Details-View_img7.png)
+![Displaying auto generation of relations for multiple levels with AutoGeneratingRelations event in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img7.png)
 
 Here, `SalesID` column is sorted in all DetailsViewDataGrid at the same level.
 
@@ -892,7 +892,7 @@ Now, you can add the custom column to `Columns` collection of [ViewDefinition.Da
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img8.png)
+![Displaying creation of custom columns for Master-Details view in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img8.png)
 
 ## Handling events for DetailsViewDataGrid
 
@@ -1670,7 +1670,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img9.png)
+![Displaying header appearance customization for Master-Details view in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img9.png)
 
 ### Hiding header row of Master-Details View
 
@@ -1698,7 +1698,7 @@ FirstLevelNestedGrid.HeaderRowHeight = 0;
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img10.png)
+![Displaying the Master-Details perspective hiding header in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img10.png)
 
 ### Customizing padding of the DetailsViewDataGrid
 
@@ -1726,7 +1726,7 @@ this.dataGrid.DetailsViewPadding = new Thickness(15);
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img11.png)
+![Displaying customization of padding for Master-Details view in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img11.png)
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties-for-detailsviewdatagrid).
 
@@ -1800,13 +1800,13 @@ You can hide the expander from the view when corresponding `RelationalColumn` pr
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img12.png)
+![Displaying Master-Details hiding expander for empty or null parent record set in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img12.png)
 
 ## Hiding GridDetailsViewIndentCell in SfDataGrid
 
 [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowDetailsViewIndentCell.html) property to `False` for the respective parent grid.
 
-![](Master-Details-View_images/Master-Details-View_img13.png)
+![Displaying the Master Details perspective of GridDetailsViewIndentCell in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img13.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1830,7 +1830,7 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img14.png)
+![Displaying the Master Details perspective of GridDetailsViewIndentCell hiding in WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img14.png)
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
 
