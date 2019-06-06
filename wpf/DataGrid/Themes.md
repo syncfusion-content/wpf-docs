@@ -48,7 +48,7 @@ SfSkinManager.SetVisualStyle(dataGrid, VisualStyles.Blend);
 <li>Now run the application, you can see blend theme applied for SfDataGrid.</li>
 </ul>
 
-![](Themes_images/themes_img1.png)
+![Display Blend theme implemented for WPF SfDataGrid](Themes_images/themes_img1.png)
 
 N> Refer below theme studio documentation to know more about of `SfSkinManger` it its various features such as theming MS controls, changing themes at runtime and applying theme globally in the application. 
 

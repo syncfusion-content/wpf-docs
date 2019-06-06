@@ -27,7 +27,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img1.png)
+![Displaying print preview window for WPF SfDataGrid before printing](Printing_images/Printing_img1.png)
 
 ## Print Settings
 
@@ -43,13 +43,13 @@ dataGrid.Print();
 
 ### Print
 
-Print preview window has Print and Quick Print Buttons which needs to be clicked to print the SfDataGird.
+Print preview window has Print and Quick Print Buttons which needs to be clicked to print the SfDataGrid.
 
-![](Printing_images/Printing_img2.png)
+![Displaying Print and Quick Print buttons in print preview window of WPF SfDataGrid](Printing_images/Printing_img2.png)
 
 1. Clicking the Print button opens the System print dialog where user can select the printer and set the number of copies to be printed.
 
-    ![](Printing_images/Printing_img3.png)
+    ![Displaying system print dialog for printing WPF SfDataGrid](Printing_images/Printing_img3.png)
 
 2. Clicking the Quick Print button, directly print the pages using default printer without opening the print dialog.
 
@@ -67,7 +67,7 @@ dataGrid.ShowPrintPreview();
 
 Scaling options can be changed in print preview at runtime by selecting from scaling options drop-down in print preview. 
 
-![](Printing_images/Printing_img4.png)
+![Displaying Print scaling options in print preview window of WPF SfDataGrid](Printing_images/Printing_img4.png)
 
 ### Column Header on each page
 
@@ -103,7 +103,7 @@ this.sfDataGrid.PrintSettings.CanPrintStackedHeaders = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img23.png)
+![Displaying StackedHeaders printing in WPF SfDataGrid](Printing_images/Printing_img23.png)
 
 ## Page Settings
 
@@ -123,7 +123,7 @@ dataGrid.ShowPrintPreview();
 
 Print orientation can be changed in print preview at runtime by selecting from orientation drop-down in print preview.
 
-![](Printing_images/Printing_img5.png)
+![Displaying page orientation options in print preview window for WPF SfDataGrid](Printing_images/Printing_img5.png)
 
 ### Page size
 
@@ -140,7 +140,7 @@ dataGrid.Print();
 
 Page size can be changed in print preview also by selecting from page-size drop-down which displays pre-defined page sizes. You can also manually enter custom page width and height in the editors below page-size drop-down and press OK to apply the custom width and height for the page.
 
-![](Printing_images/Printing_img6.png)
+![Displaying page size options in print preview window for WPF SfDataGrid](Printing_images/Printing_img6.png)
 
 ### Page margin
 
@@ -156,7 +156,7 @@ dataGrid.Print();
 
 Page margin can be changed in print preview also by selecting from pre-defined page margin from margin drop-down. You can manually enter custom margins in the editors below margin drop-down and press OK to apply the custom margin.
 
-![](Printing_images/Printing_img7.png)
+![Displaying page margin options in print preview window for WPF SfDataGrid](Printing_images/Printing_img7.png)
 
 ## Setting Header and Footer
 
@@ -195,7 +195,7 @@ dataGrid.ShowPrintPreview();
 
 3.Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterTemplate.html) also.
 
-![](Printing_images/Printing_img8.png)
+![Displaying customized HeaderTemplate and HeaderHeight in print preview window for WPF SfDataGrid](Printing_images/Printing_img8.png)
 
 
 N> [PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) is the `DataContext` for [PrintPageControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPageControl.html), where the header and footer templates are loaded.
@@ -240,7 +240,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img9.png)
+![Displaying customized FooterTemplate and FooterHeight in print preview window for WPF SfDataGrid](Printing_images/Printing_img9.png)
 
 ## Different modes of printing for better performance
 
@@ -279,7 +279,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img10.png)
+![Displaying same style as in view for WPF SfDataGrid using AllowPrintStyles API while printing](Printing_images/Printing_img10.png)
 
 #### Applying custom style
 
@@ -368,7 +368,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img11.png)
+![Displaying custom style for WPF SfDataGrid using AllowPrintStyles API while printing](Printing_images/Printing_img11.png)
 
 ## Printing Customization
  
@@ -411,7 +411,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img12.png)
+![Displaying customization of row height while printing in WPF SfDataGrid](Printing_images/Printing_img12.png)
 
 ### Hiding rows while printing
      
@@ -482,7 +482,7 @@ dataGrid.ShowPrintPreview();
 
 Here, CustomerName column is displayed in grid. But it is excluded while printing.
 
-![](Printing_images/Printing_img13.png)
+![Displaying column removal while printing in WPF SfDataGrid](Printing_images/Printing_img13.png)
 
 ### Customize the header text while printing
 
@@ -520,7 +520,7 @@ dataGrid.ShowPrintPreview();
 
 Here, OrderID column Header text is changed as “Order ID” while printing.
 
-![](Printing_images/Printing_img14.png)
+![Displaying column header text customization while printing in WPF SfDataGrid](Printing_images/Printing_img14.png)
 
 ### Styling Rows when AllowPrintByDrawing enabled
 
@@ -566,7 +566,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img15.png)
+![Displaying row styling with AllowPrintByDrawing enabled while printing in WPF SfDataGrid](Printing_images/Printing_img15.png)
 
 ### Styling Rows when AllowPrintByDrawing disabled
 
@@ -610,7 +610,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![](Printing_images/Printing_img16.png)
+![Displaying row styling with AllowPrintByDrawing disabled while printing in WPF SfDataGrid](Printing_images/Printing_img16.png)
 
 <table>
 <tr>
@@ -709,7 +709,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![](Printing_images/Printing_img17.png)
+![Displaying alternate row styling with AllowPrintByDrawing enabled while printing in WPF SfDataGrid](Printing_images/Printing_img17.png)
 
 ### Setup alternate row style when AllowPrintByDrawing disabled
 
@@ -748,7 +748,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![](Printing_images/Printing_img18.png)
+![Displaying alternate row styling with AllowPrintByDrawing disabled while printing in WPF SfDataGrid](Printing_images/Printing_img18.png)
 
 ### Styling Columns when AllowPrintByDrawing enabled
 
@@ -797,7 +797,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img19.png)
+![Displaying column styling with AllowPrintByDrawing enabled while printing in WPF SfDataGrid](Printing_images/Printing_img19.png)
 
 Here, OrderID column Font Style and Background are changed.
 
@@ -837,7 +837,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![](Printing_images/Printing_img20.png)
+![Displaying column styling with AllowPrintByDrawing disabled while printing in WPF SfDataGrid](Printing_images/Printing_img20.png)
 
 
 N> [GetColumnWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase~GetColumnWidth.html) , [GetColumnTextWrapping](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase~GetColumnTextWrapping.html), [GetColumnTextAlignment](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase~GetColumnTextAlignment.html) and [GetColumnPadding](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase~GetColumnPadding.html) methods are also used for column customization while printing.
@@ -892,7 +892,7 @@ dataGrid.ShowPrintPreview();
 {% endtabs %}
 
 
-![](Printing_images/Printing_img21.png)
+![Displaying selected items printing in WPF SfDataGrid](Printing_images/Printing_img21.png)
 
 
 ## Creating custom PrintPreview window
@@ -954,6 +954,6 @@ this.PrintPreviewArea.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img22.png)
+![Displaying custom print preview window in WPF SfDataGrid](Printing_images/Printing_img22.png)
 
 You can get the sample for custom print preview [here](http://www.syncfusion.com/downloads/support/directtrac/general/CUSTOM~1272396097.ZIP).
