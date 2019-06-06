@@ -57,7 +57,7 @@ this.dataGrid.Columns["CustomerID"].ShowToolTip = true;
 
 N> `GridColumn.ShowToolTip` takes higher priority than [SfDataGrid.ShowToolTip](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html).
 
-![](Interactive-Features_images/InteractiveFeatures_img17.png)
+![Displaying Record cell tooltip in WPF SfDataGrid](Interactive-Features_images/InteractiveFeatures_img17.png)
 
 ## Header tooltip
 
@@ -79,7 +79,7 @@ this.dataGrid.Columns["OrderID"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img18.png)
+![Displaying Header tooltip in WPF SfDataGrid](Interactive-Features_images/InteractiveFeatures_img18.png)
 
 
 ## ToolTip Customization
@@ -104,7 +104,7 @@ You can change the appearance of the ToolTip by customizing the style with Targe
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img19.png)
+![Displaying ToolTip appearance customization in WPF SfDataGrid](Interactive-Features_images/InteractiveFeatures_img19.png)
 
 
 You can customize the template of ToolTip by using the [GridColumn.ToolTipTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html) and [GridColumn.ToolTipTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) properties. 
@@ -131,7 +131,7 @@ You can customize the appearance of the ToolTip for particular column by setting
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img20.png)
+![Displaying ToolTip customization using ToolTipTemplate in WPF SfDataGrid](Interactive-Features_images/InteractiveFeatures_img20.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSample-904850425.zip). 
@@ -227,12 +227,12 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The below image refers the DefaultTemplate which is applied through ToolTipTemplateSelector.
 
-![](Interactive-Features_images/InteractiveFeatures_img21.png)
+![Displaying DefaultTemplate for ToolTip using ToolTipTemplateSelector in WPF SfDataGrid](Interactive-Features_images/InteractiveFeatures_img21.png)
 
 
 The below image refers the AlternateTemplate which is applied through ToolTipTemplateSelector.
 
-![](Interactive-Features_images/InteractiveFeatures_img22.png)
+![Displaying AlternateTemplate for ToolTip using ToolTipTemplateSelector in WPF SfDataGrid](Interactive-Features_images/InteractiveFeatures_img22.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IEnumerableBinding_Demo-1708191985.zip).
 
