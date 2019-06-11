@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MenuItemSeparator Support| MenuAdv | Wpf | Syncfusion
-description: menuitemseparator support
+title: MenuItemSeparator Support | Seperator | MenuAdv | Wpf | Syncfusion
+description: MenuItemSeparator support | Menu Seperator in WPF MenuAdv
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -70,7 +70,7 @@ IsChecked="False"/>
 
 {% endhighlight %}
 
-![](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)
+![MenuItemSeparator support in WPF MenuAdv](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)
 
 
 
