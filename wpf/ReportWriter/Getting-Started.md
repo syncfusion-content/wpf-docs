@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Getting Started | ReportWriter | WPF | Syncfusion
-description: getting started
+description: This section illustrates how to add ReportWriter to the WPF application and also describes how to export RDL/RDLC reports. 
 platform: wpf
 control: ReportWriter
 documentation: ug
 ---
+
+# Getting Started
 
 ## Adding ReportWriter to an application
 

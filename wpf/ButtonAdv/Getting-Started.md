@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | ButtonAdv | wpf | Syncfusion
-description: getting started
+title: Getting Started | ButtonAdv | WPF | Syncfusion
+description: This section describes how to add ButtonAdv control in WPF application and illustrates setting the image on button control. 
 platform: wpf
 control: ButtonAdv
 documentation: ug
