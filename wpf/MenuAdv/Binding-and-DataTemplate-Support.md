@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Binding and DataTemplate Support| MenuAdv | Wpf | Syncfusion
-description: binding and datatemplate support
+title: Binding and DataTemplate Support| MenuAdv | WPF | Syncfusion
+description: This section describes how to bind a collection of elements to MenuItemAdv and also bind hierarchical levels of data using data template.
 platform: wpf
 control: MenuAdv
 documentation: ug
 ---
 
-# Binding and DataTemplate Support
+# Data binding and DataTemplate support
 
 Data Binding is the process of establishing a connection between the application User Interface (UI) and Business logic. Data Binding can be unidirectional (source to target or target to source) or bidirectional (source to target and target to source). Users can bind a collection of Business objects by using the ItemsSource property of MenuItemAdv. The Hierarchical data template allows users to bind data that is hierarchical and self-referencing.
 
@@ -129,11 +129,11 @@ public class MenuList
 
 
 
-![](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img1.png)
+![Adding menu items using data binding in WPF MenuAdv control](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img1.png)
 
 
 
-![](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img2.png)
+![Adding hierarchical menu items using data template in WPF MenuAdv control ](Binding-and-DataTemplate-Support_images/Binding-and-DataTemplate-Support_img2.png)
 
 
 
