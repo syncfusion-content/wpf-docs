@@ -47,7 +47,7 @@ GRIDS<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-{{'[SfDataGrid](https://help.syncfusion.com/wpf/sfdatagrid/overview)' | markdownify}}<br/><br/></td></tr>
+{{'[SfDataGrid](https://help.syncfusion.com/wpf/datagrid/overview)' | markdownify}}<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
