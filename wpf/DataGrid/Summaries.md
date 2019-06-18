@@ -1,0 +1,1039 @@
+---
+layout: post
+title: Summaries | DataGrid | WPF | Syncfusion
+description: Summaries in SfDataGrid 
+platform: wpf
+control: SfDataGrid
+documentation: ug
+---
+
+
+# Summaries
+
+SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
+
+* **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid. 
+
+* **Group Summary** – used to display summary information of data objects in each group.
+
+* **Caption Summary** – used to display summary information in the caption of the group.
+ 
+![Displaying different summaries in WPF SfDataGrid](Summaries_images/Summaries_img1.png)
+
+Summary rows are represented by using [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) and  each `GridSummaryRow` hold summary information of columns in [SummaryColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~SummaryColumns.html) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html) which carries the name of column ,format and its summary aggregate type.
+
+## Table Summary
+
+The table summary calculates the summary value over all the records. SfDataGrid allows you to add any number of table summary rows in top and bottom of SfDataGrid.
+
+You can add table summary row in SfDataGrid by adding [GridTableSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRows.html) collection.
+
+### Defining summary for column
+
+You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
+
+1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
+
+2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
+
+3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
+
+Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary and [Aggregate Types](#aggregate-types) section to know about different Summary Types.
+
+In the below code snippet, summary is defined for `UnitPrice` and `ProductName` columns.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                               
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+
+    <syncfusion:SfDataGrid.TableSummaryRows>
+        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'Total UnitPrice : {Sum:c}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format="'Total Product Count : {Count:d}'"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridTableSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>
+
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
+{
+    ShowSummaryInRow = false,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        { 
+            Name = "PriceAmount", 
+            MappingName="UnitPrice", 
+            SummaryType= SummaryType.Int32Aggregate, 
+            Format="Total UnitPrice : {Sum:c}"
+        }, 
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="Total Product Count : {Count:d}"
+        },
+    }
+});
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying SummaryColumns in TableSummaryRow for WPF SfDataGrid](Summaries_images/Summaries_img2.png)
+
+### Displaying summary for Row
+
+You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to set [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row. 
+
+Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
+ 
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+                       
+    <syncfusion:SfDataGrid.TableSummaryRows>
+        <syncfusion:GridTableSummaryRow Title=" Total Price : {PriceAmount} for {ProductCount} products " ShowSummaryInRow="True">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                                Format="'{Sum:c}'"
+                                                MappingName="UnitPrice"
+                                                SummaryType="DoubleAggregate" />
+    
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                                Format="'{Count:d}'"
+                                                MappingName="ProductName"
+                                                SummaryType="CountAggregate" />
+    
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridTableSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>
+    
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Title = "Total Price: {PriceAmount} for {ProductCount} Products",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        { 
+            Name = "PriceAmount", 
+            MappingName="UnitPrice", 
+            SummaryType= SummaryType.Int32Aggregate, 
+            Format="{Sum:c}"
+        }, 
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        },
+    }
+});
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying Table summary row in WPF SfDataGrid](Summaries_images/Summaries_img3.png)
+
+### Positioning TableSummaryRow
+
+You can position the table summary either at top or bottom of SfDataGrid by setting [GridTableSummaryRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow~Position.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding Orders}">
+
+    <syncfusion:SfDataGrid.TableSummaryRows>
+
+        <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'{Sum:c}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridTableSummaryRow>
+
+        <syncfusion:GridTableSummaryRow Title=" Total Product count: {ProductCount}"
+                                        Position="Bottom"
+                                        ShowSummaryInRow="True">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                                Format="'{Count:d}'"
+                                                MappingName="ProductName"
+                                                SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridTableSummaryRow>
+
+    </syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+GridTableSummaryRow tablesummaryrow1 = new GridTableSummaryRow() 
+{ 
+    ShowSummaryInRow = false, 
+    Position = TableSummaryRowPosition.Top,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+
+        new GridSummaryColumn()
+        {
+            Name="PriceAmount",
+            Format="{Sum:c}",
+            MappingName="UnitPrice",
+            SummaryType=SummaryType.DoubleAggregate 
+
+        }
+    }
+};
+
+GridTableSummaryRow tablesummaryrow2 = new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Position = TableSummaryRowPosition.Bottom,
+    Title="Total Product count: {ProductCount}",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            Format="{Count:d}",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate 
+        }
+    }
+};
+
+this.dataGrid.TableSummaryRows.Add(tablesummaryrow1);
+this.dataGrid.TableSummaryRows.Add(tablesummaryrow2);
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying different positions of TableSummaryRow in WPF SfDataGrid](Summaries_images/Summaries_img4.png)
+
+## Group Summary
+
+Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. You can view the group summary row by expanding the corresponding group header. SfDataGrid allows you to add any number of group summary rows.
+
+You can add the group summary rows in SfDataGrid by adding the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRows.html) collection.
+
+### Defining summary for column
+
+You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
+
+1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
+
+2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
+
+3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
+
+Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary and [Aggregate Types](#aggregate-types) section to know about different Summary Type’s.
+
+In the below code snippet, summary is defined for `UnitPrice` and `ProductName` columns.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                             
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+
+    <syncfusion:SfDataGrid.GroupSummaryRows>
+        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'Amount - {Sum:c}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format="'Count - {Count:d}'"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.GroupSummaryRows>
+    
+</syncfusion:SfDataGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
+{
+    ShowSummaryInRow = false,    
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+
+        new GridSummaryColumn()
+        { 
+            Name = "PriceAmount", 
+            MappingName="UnitPrice", 
+            SummaryType= SummaryType.Int32Aggregate, 
+            Format="Amount - {Sum:c}"
+        }, 
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="Count - {Count:d}"
+        },
+    }
+});
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying SummaryColumns in Group Summary row for WPF SfDataGrid](Summaries_images/Summaries_img5.png)
+
+### Displaying summary for Row
+
+You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row.
+ 
+Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+
+    <syncfusion:SfDataGrid.GroupSummaryRows>
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'{Sum:c}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format="'{Count:d}'"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.GroupSummaryRows>
+
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
+{
+    Title = "Total Price : {PriceAmount} for {ProductCount} products",
+
+    ShowSummaryInRow = true,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        { 
+            Name = "PriceAmount", 
+            MappingName="UnitPrice", 
+            SummaryType= SummaryType.Int32Aggregate, 
+            Format="{Sum:c}"
+        }, 
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        },
+    }
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying Group Summaries in a row for WPF SfDataGrid](Summaries_images/Summaries_img6.png)
+
+## Caption Summaries
+
+SfDataGrid provides built-in support for caption summaries. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
+
+Below screen shot shows the built-in caption summary of Group.
+
+
+![Displaying built-in caption summary in WPF SfDataGrid](Summaries_images/Summaries_img7.png)
+
+### Formatting built-in caption summary
+
+By default, the summary value displayed in CaptionSummaryRow  based on [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionTextFormat.html) property. 
+
+The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
+
+* **ColumnName** -   Displays the name of the column currently grouped.
+* **Key**   -   Displays the key value of group.
+* **ItemsCount** -   Displays the number of items in group.
+
+
+![Displaying built-in Caption Summary in WPF SfDataGrid](Summaries_images/Summaries_img8.png)
+
+You can change group caption format to display column name and count alone by setting `GroupCaptionTextFormat` as below,
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        AllowGrouping="True"
+                        AutoGenerateColumns="True"
+                        GroupCaptionTextFormat=" ColumnName: {Key} "
+                        ItemsSource="{Binding Orders}"
+                        ShowGroupDropArea="True"/>
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying Caption Summary formatting using GroupCaptionTextFormat in WPF SfDataGrid](Summaries_images/Summaries_img9.png)
+
+### Defining summary for column
+
+You can display summary information in the column by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and defining summary columns. To calculate summary based on column you have to specify the below properties,
+
+1. [GridSummaryColumn.MappingName](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~MappingName.html) – MappingName of the column (Property name of data object) that you want calculate summary.
+
+2. [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) – SfDataGrid provides different built-in summary calculation functions for various types.
+
+3. [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) – Used to define format string for summary based on support function name’s in specified SummaryType.
+
+Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary and [Aggregate Types](#aggregate-types) section to know about different Summary Type’s.
+
+In the below code snippet, summary is defined for `UnitPrice` and `ProductName` columns.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding Orders}"
+                        ShowGroupDropArea="True">
+            
+    <syncfusion:SfDataGrid.CaptionSummaryRow>
+        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                                Format="'{Sum:c}'"
+                                                MappingName="UnitPrice"
+                                                SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                                Format="'{Count:d}'"
+                                                MappingName="ProductName"
+                                                SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
+{
+    ShowSummaryInRow = false,                
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+
+        new GridSummaryColumn()
+        { 
+            Name = "PriceAmount", 
+            MappingName="UnitPrice", 
+            SummaryType= SummaryType.Int32Aggregate, 
+            Format="{Sum:c}"
+        }, 
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        },
+    }
+};
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying caption summary in columns for WPF SfDataGrid](Summaries_images/Summaries_img10.png)
+
+### Displaying summary for Row
+
+You can display summary information in row by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `true` and defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in row.
+ 
+Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary. 
+
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+
+    <syncfusion:SfDataGrid.CaptionSummaryRow>
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} Products" ShowSummaryInRow="True">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'{Sum:c}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format="'{Count:d}'"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Title = "Total Price: {PriceAmount} for {ProductCount} Products",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+
+        new GridSummaryColumn()
+        { 
+            Name = "PriceAmount", 
+            MappingName="UnitPrice", 
+            SummaryType= SummaryType.Int32Aggregate, 
+            Format="{Sum:c}"
+        }, 
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        },
+    }
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying caption summaries in rows for WPF SfDataGrid](Summaries_images/Summaries_img11.png)
+
+## Formatting summary
+
+In the below sections formatting is explained using TableSummary. In the same way, you can format group and caption summaries also.
+
+### Defining Summary Function
+
+In the below code snippet `Format` property is defined to display sum of `UnitPrice` by specifying the function name inside curly braces.
+  
+N> `DoubleAggregate` is used as SummaryType which has Count, Max, Min, Average and Sum functions.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+
+    <syncfusion:SfDataGrid.TableSummaryRows>
+        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'{Sum}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridTableSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying Sum function in WPF SfDataGrid](Summaries_images/Summaries_img12.png)
+
+### Formatting Summary Value
+
+You can format the summary value by setting the appropriate format after the aggregate function followed by colon(:) in  [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property.
+
+In the below code snippet `UnitPrice` column summary is formatted using `c` format specifier. Refer [here](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx?f=255&MSPPError=-2147217396) to know about how to set different format.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+    <syncfusion:SfDataGrid.TableSummaryRows>
+        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'{Sum:c}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridTableSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying summary value formatting in WPF SfDataGrid](Summaries_images/Summaries_img13.png)
+
+### Displaying additional Content in Summary
+
+You can append additional content with summary value using  [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property.
+
+In the below code snippet `Total UnitPrice: ` text is appended before summary value.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                               
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+                       
+    <syncfusion:SfDataGrid.TableSummaryRows>
+        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'Total UnitPrice : {Sum:c}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridTableSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>
+    
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying additional content in summary for WPF SfDataGrid](Summaries_images/Summaries_img14.png)
+
+### Formatting Summary for Row using Title Property
+
+You can format the summary value for row using [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  when ShowSummaryInRow set to `true`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.TableSummaryRows>
+        <syncfusion:GridTableSummaryRow Title=" Total Price : {PriceAmount} "  
+                                        ShowSummaryInRow="True">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format="'{Sum:c}'"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridTableSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying summary value formatting using Title property in WPF SfDataGrid](Summaries_images/Summaries_img15.png)
+
+## Aggregate Types
+
+You can specify the different summary aggregate types by using [GridSummaryColumn.SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) property and use the built-in function in [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html).
+
+The following are the list of predefined aggregate types and its built-in functions.
+
+<table>
+<tr>
+<th>
+Aggregate Type
+</th>
+<th>
+Built-in function
+</th>
+</tr>
+<tr>
+<td>
+CountAggregate
+</td>
+<td>
+Count
+</td>
+</tr>
+<tr>
+<td>
+Int32Aggregate
+</td>
+<td>
+Count, Max, Min, Average and Sum
+</td>
+</tr>
+<tr>
+<td>
+DoubleAggregate
+</td>
+<td>
+Count, Max, Min, Average and Sum
+</td>
+</tr>
+<tr>
+<td>
+Custom
+</td>
+<td>
+Used for custom summaries
+</td>
+</tr>
+</table>
+
+
+## Custom summaries
+
+
+SfDataGrid allows you to implement your own aggregate functions, when the built-in aggregate functions don’t meet your requirement.
+
+You can calculate the summary values based on custom logic using [GridSummaryColumn.CustomAggregate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~CustomAggregate.html) property.
+
+### Implementing custom aggregate
+
+1. Create custom aggregate class by deriving from [ISummaryAggregate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.ISummaryAggregate.html) interface.
+
+2. In the `CalculateAggregateFunc` method, you have to calculate the summary and assign it to the property.
+ 
+In the below code snippet, the Standard Deviation is calculated for quantity of products.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomAggregate:ISummaryAggregate
+{
+ 
+    public CustomAggregate()
+    {
+    }
+ 
+    public double StdDev { get; set; }
+ 
+    public Action<System.Collections.IEnumerable, string, System.ComponentModel.PropertyDescriptor> CalculateAggregateFunc()
+    {
+        return (items, property, pd) =>
+        {
+            var enumerableItems = items as IEnumerable<OrderInfo>;
+ 
+            if (pd.Name == "StdDev")
+            {
+                this.StdDev = enumerableItems.StdDev<OrderInfo>(q => q.Quantity);
+            }
+        };
+    }
+}
+
+public static class LinqExtensions
+{
+
+    public static double StdDev<T>(this IEnumerable<T> values, Func<T, double?> selector)
+    {
+        double ret = 0;
+        var count = values.Count();
+
+        if (count > 0)
+        {                
+            double? avg = values.Average(selector);       
+            double sum = values.Select(selector).Sum(d =>
+            {
+
+                if (d.HasValue)
+                {
+                    return Math.Pow(d.Value - avg.Value, 2);
+                }
+                return 0.0;
+            });                
+            ret = Math.Sqrt((sum) / (count - 1));
+        }
+        return ret;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+3.Assign the custom aggregate to `GridSummaryColumn.CustomAggregate` property and set the [SummaryType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~SummaryType.html) as [Custom](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SummaryType.html). [GridSummaryColumn.Format](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Format.html) property is defined based on property name in custom aggregate `StdDev`.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <local:CustomAggregate x:Key="customAggregate" />
+</Window.Resources>
+
+<syncfusion:SfDataGrid.TableSummaryRows>
+    <syncfusion:GridTableSummaryRow Name="Total Products"
+                                    Title="Standard Deviation: {Discount}"
+                                    Position="Top"
+                                    ShowSummaryInRow="True">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+
+            <syncfusion:GridSummaryColumn   Name="Discount"
+                                            CustomAggregate="{StaticResource customAggregate}"
+                                            Format="'{StdDev:##.##}'"
+                                            MappingName="Discount"
+                                            SummaryType="Custom" />
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridTableSummaryRow>
+</syncfusion:SfDataGrid.TableSummaryRows>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Position=TableSummaryRowPosition.Top,
+    Title = "Standard Deviation: {Discount}",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+ 
+        new GridSummaryColumn()
+        { 
+            Name = "Discount", 
+            MappingName="Discount", 
+            CustomAggregate=new CustomAggregate(),
+            SummaryType=SummaryType.Custom, 
+            Format="{StdDev}"
+        },      
+    }
+});
+{% endhighlight %}
+{% endtabs %}
+
+![Displaying custom aggregate summaries in WPF SfDataGrid](Summaries_images/Summaries_img16.png)
+
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries-366686956.zip) .
+
+## Overriding Summary Renderer
+
+Each summary cell is associated with its own renderer and you can customize it by overriding the available virtual methods in the renderer. 
+
+There will be specific key for each summary row. You can remove and add the key from [SfDataGrid.CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection, when the renderer is need to be customized.
+
+<table>
+<tr>
+<th>
+Types of summary
+</th>
+<th>
+Renderer
+</th>
+<th>
+Key
+</th>
+</tr>
+<tr>
+<td>
+Table summary
+</td>
+<td>
+{{'[GridTableSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridTableSummaryCellRenderer.html)'| markdownify }}
+</td>
+<td>
+TableSummary
+</td>
+</tr>
+<tr>
+<td>
+Caption summary
+</td>
+<td>
+{{'[GridCaptionSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCaptionSummaryCellRenderer.html)'| markdownify }}
+</td>
+<td>
+CaptionSummary
+</td>
+</tr>
+<tr>
+<td>
+Group summary
+</td>
+<td>
+{{'[GridSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridSummaryCellRenderer.html)'| markdownify }}
+</td>
+<td>
+GroupSummary
+</td>
+</tr>
+</table>
+
+
+### Formatting Table Summary
+
+You can apply number format for numeric values displayed on `GridTableSummaryRow` by overriding the `OnUpdateEditBinding` method in [GridTableSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridTableSummaryCellRenderer.html) class.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.CellRenderers.Remove("TableSummary");
+this.dataGrid.CellRenderers.Add("TableSummary", new GridTableSummaryCellRendererExt());
+
+public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
+{
+
+    public override void OnUpdateEditBinding(Syncfusion.UI.Xaml.Grid.DataColumnBase dataColumn, Syncfusion.UI.Xaml.Grid.GridTableSummaryCell element, object dataContext)
+    {
+
+        //Check whether the dataContext is SummaryRecordEntry
+        var record = dataContext as SummaryRecordEntry;
+
+        if (!(dataContext is SummaryRecordEntry))
+            return;
+
+        //Process each SummaryColumn and get the display text of corresponding summary
+
+        foreach (ISummaryColumn summaryColumn in record.SummaryRow.SummaryColumns)
+        {
+
+            if (!summaryColumn.MappingName.Contains(dataColumn.GridColumn.MappingName))
+                continue;
+            string summaryText = string.Empty;
+
+            if (record.SummaryRow.ShowSummaryInRow)
+                summaryText = SummaryCreator.GetSummaryDisplayTextForRow(record, this.DataGrid.View);
+
+            else
+                summaryText = SummaryCreator.GetSummaryDisplayText(record, dataColumn.GridColumn.MappingName, this.DataGrid.View);
+
+            if (!string.IsNullOrEmpty(summaryText))
+            {
+
+                //Create new number format and apply it to summary columns 
+                NumberFormatInfo format = new NumberFormatInfo();
+                format.NumberDecimalDigits = 3;
+                format.NumberDecimalSeparator = "*";
+                format.NumberGroupSeparator = ",";
+
+                //Number format is applied to summary columns                    
+                element.Content = Convert.ToDouble(double.Parse(summaryText, NumberStyles.Currency)).ToString("N", format);
+            }
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying table summary formatting using renderer in WPF SfDataGrid](Summaries_images/Summaries_img17.png)
+
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-462271589.zip).
+
+### Customizing GroupCaptionText
+
+You can apply different group caption text format for available groups based on certain conditions by deriving the [GridCaptionSummaryCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridCaptionSummaryCellRenderer.html) class .
+
+For example, the group caption text is customized based on the group name and items count of the column.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.CellRenderers.Remove("CaptionSummary");
+this.dataGrid.CellRenderers.Add("CaptionSummary", new GridCaptionSummaryCellRendererExt());
+
+public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
+{    
+
+    public override void OnUpdateEditBinding(Syncfusion.UI.Xaml.Grid.DataColumnBase dataColumn, Syncfusion.UI.Xaml.Grid.GridCaptionSummaryCell element, object dataContext)
+    {
+
+        if (element.DataContext is Group && this.DataGrid.View.GroupDescriptions.Count > 0)
+        {
+            var groupRecord = element.DataContext as Group;                
+            var groupedColumn = this.GetGroupedColumn(groupRecord);
+
+            if (this.DataGrid.CaptionSummaryRow == null)
+            {
+
+                if (this.DataGrid.View.GroupDescriptions.Count < groupRecord.Level)
+                    return;
+
+                //Set the CaptionSummaryCell text as customized.
+                element.Content = GetCustomizedCaptionText(groupedColumn.HeaderText, groupRecord.Key, groupRecord.ItemsCount);
+            }
+
+            else if (this.DataGrid.CaptionSummaryRow.ShowSummaryInRow)
+            {
+                element.Content = SummaryCreator.GetSummaryDisplayTextForRow(groupRecord.SummaryDetails, this.DataGrid.View, groupedColumn.HeaderText);
+            }
+
+            else
+                element.Content = SummaryCreator.GetSummaryDisplayText(groupRecord.SummaryDetails, dataColumn.GridColumn.MappingName, this.DataGrid.View);
+        }
+    }
+
+    private GridColumn GetGroupedColumn(Group group)
+    {
+        var groupDesc = this.DataGrid.View.GroupDescriptions[group.Level - 1] as PropertyGroupDescription;
+
+        foreach (var column in this.DataGrid.Columns)
+        {
+
+            if (column.MappingName == groupDesc.PropertyName)
+            {
+                return column;
+            }
+        }
+        return null;
+    }
+
+    private string GetCustomizedCaptionText(string columnName, object groupName, int itemsCount)
+    {
+
+        //entryText - instead of "Items", the entryText is assigned to Customize the CaptionSummaryCell Text.
+        string entryText = string.Empty;
+
+        if (itemsCount < 20)
+            entryText = "entries in the Group";
+
+        else if (itemsCount < 40)
+            entryText = "elements in the Group";
+
+        else if (itemsCount < 60)
+            entryText = "list in the Group";
+
+        else
+            entryText = "items in the Group";
+
+        if (groupName.ToString().Equals("1001"))
+            groupName = "Thousand and One";
+
+        else if (groupName.ToString().Equals("1002"))
+            groupName = "Thousand and Two";
+
+        else if (groupName.ToString().Equals("1004"))
+            groupName = "Thousand and Four";
+        return string.Format("{0}: {1} - {2} {3}", columnName, groupName, itemsCount, entryText);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![Displaying custom GroupCaptionTextFormat in WPF SfDataGrid](Summaries_images/Summaries_img18.png)
+
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
