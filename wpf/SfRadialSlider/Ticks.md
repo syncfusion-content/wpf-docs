@@ -28,6 +28,34 @@ TickFrequency="5" />
 
 ![Ticks frequency](Concepts_images/Concepts_img2.png) 
 
+## Sweep direction
 
+You can use `SweepDirection` property in `SfRadialSlider` for the changing the direction of slider value arrangement. `SweepDirection` property contains the following values.
+
+* Clockwise
+* Counterclockwise
+
+{% tabs %}
+
+{% highlight C# %}
+
+            // For clockwise direction
+            this.radialSlider1.SweepDirection = SweepDirection.Clockwise;
+            // For anti-clockwise direction
+            this.radialSlider1.SweepDirection = SweepDirection.Counterclockwise;
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+             Me.radialSlider1.SweepDirection = SweepDirection.Clockwise
+             Me.radialSlider1.SweepDirection = SweepDirection.Counterclockwise
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SweepDirection](Slider-value_images/Slider-Sweep-Direction.png)
 
 
