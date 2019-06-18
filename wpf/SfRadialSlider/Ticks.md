@@ -56,6 +56,6 @@ You can use `SweepDirection` property in `SfRadialSlider` for the changing the d
 
 {% endtabs %}
 
-![SweepDirection](Slider-value_images/Slider-Sweep-Direction.png)
+![SweepDirection](Ticks_images/Slider-Sweep-Direction.png)
 
 
