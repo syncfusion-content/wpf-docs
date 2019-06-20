@@ -35,7 +35,7 @@ private void RangeSlider_LabelLoaded(object sender, LabelLoadedEventArgs e)
 The `RangeChanged` event is triggered when either `RangeStart` or `RangeEnd` values are changed. The argument contains the following information.
 
 `NewEndValue` – Gets or sets the new end value of range slider.
-`NewStartvalue` – Gets or sets the new start value of range slider.
+`NewStartValue` – Gets or sets the new start value of range slider.
 `OldStartValue` – Gets or sets the old start value of range slider.
 `OldEndValue` – Gets or set the old end value of range slider.
 
@@ -55,8 +55,8 @@ The `RangeChanged` event is triggered when either `RangeStart` or `RangeEnd` val
 
 The `RangeStartChanged` event is triggered when `RangeStart` value is changed. The argument contains the following information.
 
-`OldStartValue` – Gets or sets the new old start value of range slider.
-`NewStartvalue` – Gets or sets the new start value of range slider.
+`OldStartValue` – Gets or sets the old start value of range slider.
+`NewStartValue` – Gets or sets the new start value of range slider.
 
 {%highlight C#%}
 
@@ -73,7 +73,7 @@ private void RangeSlider_RangeStartChanged(object sender, RangeStartChagedEventA
 The `RangeEndChanged` event is triggered when `RangeEnd` value is changed. The argument contains the following information.
 
 `OldEndValue` – Gets or sets the old end value of range slider.
-`NewEndvalue` – Gets or sets the new end value of range slider.
+`NewEndValue` – Gets or sets the new end value of range slider.
 
 {%highlight C#%}
 
