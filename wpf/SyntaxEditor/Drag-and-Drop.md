@@ -91,7 +91,7 @@ Save action type is set to save the existing file while dropping the new file in
 {% endtabs %}   
 
 ### Discard
-Discard action type is set to avoid the existing changes while dropping the new file in to the `EdtControl`.
+Discard action type is set to avoid the existing changes while dropping the new file in to the `EditControl`.
 
 {% tabs %}
 {% highlight c# %}
