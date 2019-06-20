@@ -7,7 +7,9 @@ control: SfRangeSlider
 documentation: ug
 ---
 
-# How to trigger LabelLoaded event? 
+# Events
+
+## How to trigger LabelLoaded event? 
 
 The LabelLoaded event is triggered when the slider label is created. The argument contains the label content.
 
@@ -29,7 +31,7 @@ private void RangeSlider_LabelLoaded(object sender, LabelLoadedEventArgs e)
 
 {%endhighlight%}
 
-# How to trigger RangeChangedEvent?
+## How to trigger RangeChangedEvent?
 
 The RangeChanged event is triggered when either RangeStart or RangeEnd values are changed. The argument contains the following information.
 
@@ -50,9 +52,9 @@ The RangeChanged event is triggered when either RangeStart or RangeEnd values ar
 
 {%endhighlight%}
 
-# How to trigger RangeStartChanged event?
+## How to trigger RangeStartChanged event?
 
-The RangeStartChanged event is triggered when RangeStart value is changed. The argument contains the following information.
+The RangeStartChanged event is triggered when [`RangeStart`] value is changed. The argument contains the following information.
 
 OldStartValue – Gets or sets the new old start value of range slider.
 NewStartvalue – Gets or sets the new start value of range slider.
@@ -67,9 +69,9 @@ private void RangeSlider_RangeStartChanged(object sender, RangeStartChagedEventA
 
 {%endhighlight%}
 
-# How to trigger RangeEndChanged event?
+## How to trigger RangeEndChanged event?
 
-The RangeEndChanged event is triggered when RangeEnd value is changed. The argument contains the following information.
+The RangeEndChanged event is triggered when [`RangeEnd`] value is changed. The argument contains the following information.
 
 OldEndValue – Gets or sets the old end value of range slider.
 NewEndvalue – Gets or sets the new end value of range slider.
