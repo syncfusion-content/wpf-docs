@@ -98,20 +98,10 @@ The following image displays the save file dialog.
 ### DocumentClosing event
 By default, existing file will not be saved while loading or dropping the new file. We can use `DocumentClosing` event to set the save actions and we can use `HasUnsavedChanges` property to identify whether the existing file has changes or not. 
 
-<table>
-<tr>
-<th>DocumentClosingEventArgs property</th>
-<th>Description</th>
-</tr>
-<tr>
-<th>HasUnsavedChanges</th>
-<th>Represents a value indicating whether the file is modified or not.</th>
-</tr>
-<tr>
-<th>Action</th>
-<th>Represents a value to specify the save actions.</th>
-</tr>
-</table>
+| DocumentClosingEventArgs property | Description |
+|---------------|-------------|
+| HasUnsavedChanges | Represents a value indicating whether the file is modified or not. |
+| Action| Represents a value to specify the save actions|
 
 We can set the below actions while dropping the file for save , cancel or discard the existing file changes. while setting Prompt type message box will be shown for asking save changes, so that user can save, discard or cancel the changes through promtpt.
 
