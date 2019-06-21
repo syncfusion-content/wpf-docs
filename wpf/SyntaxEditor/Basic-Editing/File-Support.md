@@ -1,6 +1,6 @@
 ---
-layout: post
-title: File Support Provided by Edit Control
+layout: post 
+title: File Support Provided by Edit Control | WPF | Syncfusion 
 description: File Support Provided by Edit Control
 platform: wpf
 control: Syntax Editor
@@ -40,7 +40,7 @@ editControl.DocumentSource = @"C:\Content.txt";
 
 The following image displays the contents from file set as DocumentSource window.
 
-![](File-Support_images/File-Support_img1.jpeg)
+![File Support](File-Support_images/File-Support_img1.jpeg)
 
 #### Through open file dialog
 
@@ -58,7 +58,7 @@ editControl.LoadFile();
 
 The following image displays the file open dialog.
 
-![](File-Support_images/File-Support_img2.jpeg)
+![File Support](File-Support_images/File-Support_img2.jpeg)
 
 #### Drag and drop file.
 The Edit control allows drag and drop file by setting `AllowDrop` property to true. User can drop any type of file which is supported for Edit control.
@@ -93,7 +93,7 @@ editControl.SaveFile();
 
 The following image displays the save file dialog.
 
-![](File-Support_images/File-Support_img3.jpeg)
+![File Support](File-Support_images/File-Support_img3.jpeg)
 
 ### DocumentClosing event
 By default, existing file will not be saved while loading or dropping the new file. We can use `DocumentClosing` event to set the save actions and we can use `HasUnsavedChanges` property to identify whether the existing file has changes or not. 
