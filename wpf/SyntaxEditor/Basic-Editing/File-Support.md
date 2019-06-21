@@ -103,7 +103,7 @@ By default, existing file will not be saved while loading or dropping the new fi
 | HasUnsavedChanges | Represents a value indicating whether the file is modified or not. |
 | Action| Represents a value to specify the save actions|
 
-We can set the below actions while dropping the file for save , cancel or discard the existing file changes. while setting Prompt type message box will be shown for asking save changes, so that user can save, discard or cancel the changes through promtpt.
+We can set the below actions while loading or dropping the file for save , cancel or discard the existing file changes. while setting Prompt type message box will be shown for asking save changes, so that user can save, discard or cancel the changes through promtpt.
 
 *	Save
 *	Discard
