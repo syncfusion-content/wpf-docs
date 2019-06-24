@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate Diagram from external data sources.
+title: Syncfusion | Populate Diagram from external data sources.
 description: How to populate the Diagram from the local data?
 platform: wpf
 control: SfDiagram
@@ -60,7 +60,7 @@ To explore those properties, see [DataSourceSettings](https://help.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
 
-![](DataSource_images/DataSource_img1.png)
+![DataSource](DataSource_images/DataSource_img1.png)
 
 Sample Link : [DataSource Sample](http://www.syncfusion.com/downloads/support/directtrac/195355/ze/DataSource-2014750971)
 
@@ -77,13 +77,13 @@ diagram.DataSourceSettings.Root = “CEO”;
 {% endhighlight %}
 {% endtabs %}
 
-![](DataSource_images/DataSource_img2.jpeg)
+![Root](DataSource_images/DataSource_img2.jpeg)
 
 ## Layout with Multiple Parent
 
 Tree layout and data sources will now support nodes having multiple parents.The child Node is arranged in center of the parent positions.
 
-![](DataSource_images/DataSource_img3.png)
+![Multiparent](DataSource_images/DataSource_img3.png)
 
 Please find [Multi Parent Sample](http://www.syncfusion.com/downloads/support/directtrac/195355/ze/Multi_Parent-231048937) to depict this support.
 
@@ -91,7 +91,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 
 ## FlowchartDataSourceSettings
 
-FlowchartDataSourceSettings is the derived class of DataSourceSettings which contains the following mapping properties.These properties will map the property in the underlyig dataobject to the datasource item.
+FlowchartDataSourceSettings is the derived class of DataSourceSettings which contains the following mapping properties.These properties will map the property in the underlying data object to the datasource item.
 
 The FlowchartDataSourceSettings `ContentMapping` property is used to display text on the Node.
 
@@ -190,6 +190,6 @@ The FlowchartDataSourceSettings `HeightMapping` property is used to set height f
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
+![Flowchart](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
 
 Sample Link: Navigation->WPF->Diagram->Automatic layout->Flowchart Layout.

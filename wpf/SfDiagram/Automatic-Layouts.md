@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout nodes and connectors in an organized structure
+title: Syncfusion | Layout nodes and connectors in an organized structure
 description: How to arrange Nodes by using the Automatic Layouts?
 platform: wpf
 control: SfDiagram
@@ -91,7 +91,7 @@ The Flowchart Layout arranges the nodes in a sequence representing a process usi
 {% endhighlight %}
 {% endtabs %}
 
- ![](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
+ ![Flowchart](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
 
 ## Customize Flowchart Layout
 
@@ -100,23 +100,23 @@ Sequence of the Node's direction can be customized by Flowchart Layout Orientati
 ### Orientation
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Vertical | TopToBottom | Arranges the Layout Vertically from Top to Bottom. | ![](Automatic-Layouts_images/Automatic-Layouts_Vertical.png) |
-|Horizontal | LeftToRight | Arranges the Layout Horizontally from Left to Right. | ![](Automatic-Layouts_images/Automatic-Layouts_Horizontal.png) |
+| Vertical | TopToBottom | Arranges the Layout Vertically from Top to Bottom. | ![Vertical](Automatic-Layouts_images/Automatic-Layouts_Vertical.png) |
+|Horizontal | LeftToRight | Arranges the Layout Horizontally from Left to Right. | ![Horizontal](Automatic-Layouts_images/Automatic-Layouts_Horizontal.png) |
 
 ### YesBranchDirection
 Specifies the direction of "Yes" branches. This direction is relative to the orientation of the layout, for example, edges of direction Left In Flow go to the left side for Top to Bottom orientation and to the Top for Left to Right orientation.
 | Type | Description | Example |
 |---|---|---|
-| Left In Flow | Arranges the Yes children to the Left side for Top to Bottom orientation whereas to the Top for Left to Right orientation . | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_Vertical.png) Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img11.png)|
-| Right In Flow | Arranges the Yes children to the Right side for Top to Bottom orientation whereas to the Bottom for Left to Right orientation. | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_img17.png) Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img12.png) |
-| Same As Flow | Arranges the Yes children right below the parent for Top to Bottom orientation whereas to the Right for Left to Right orientation . | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_img16.png)Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img13.png) |
+| Left In Flow | Arranges the Yes children to the Left side for Top to Bottom orientation whereas to the Top for Left to Right orientation . | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_Vertical.png) Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img11.png)|
+| Right In Flow | Arranges the Yes children to the Right side for Top to Bottom orientation whereas to the Bottom for Left to Right orientation. | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_img17.png) Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img12.png) |
+| Same As Flow | Arranges the Yes children right below the parent for Top to Bottom orientation whereas to the Right for Left to Right orientation . | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_img16.png)Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img13.png) |
 ### NoBranchDirection
 Specifies the direction of "No" branches. This direction is relative to the orientation of the layout, for example, edges of direction Right In Flow go to the right side for Top to Bottom orientation and to the top for Left to Right orientation.
 | Type | Description | Example |
 |---|---|---|
-| Left In Flow | Arranges the No children to the Left side for Top to Bottom orientation whereas to the bottom for Left to Right orientation . | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_img17.png)Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img12.png) |
-| Right In Flow | Arranges the No children to the Right side for Top to Bottom orientation whereas to the Top for Left to Right orientation. | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_Vertical.png)Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img11.png) |
-| Same As Flow | Arranges the No children right below the parent for Top to Bottom orientation whereas to the Right for Left to Right orientation . | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_img15.png)Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img14.png) |
+| Left In Flow | Arranges the No children to the Left side for Top to Bottom orientation whereas to the bottom for Left to Right orientation . | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_img17.png)Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img12.png) |
+| Right In Flow | Arranges the No children to the Right side for Top to Bottom orientation whereas to the Top for Left to Right orientation. | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_Vertical.png)Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img11.png) |
+| Same As Flow | Arranges the No children right below the parent for Top to Bottom orientation whereas to the Right for Left to Right orientation . | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_img15.png)Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img14.png) |
 
 ## Customize Yes and No Branch Values
 
@@ -190,7 +190,7 @@ Default values of the YesBranchValues and NoBranchValues can be customized on de
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layouts_images/Automatic-Layouts_CustomFlowchart.png)
+![CustomFlowchart](Automatic-Layouts_images/Automatic-Layouts_CustomFlowchart.png)
 
 ## Hierarchical Tree Layout
 
@@ -225,7 +225,7 @@ SpaceBetweenSubTrees="20"/>
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layouts_images/Automatic-Layouts_img8.jpg)
+![HierarchicalLayout](Automatic-Layouts_images/Automatic-Layouts_img8.jpg)
 
 ## Radial-Tree Layout
 
@@ -262,7 +262,7 @@ SpaceBetweenSubTrees="20"/>
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layouts_images/Automatic-Layouts_img9.jpg)
+![RadialLayout](Automatic-Layouts_images/Automatic-Layouts_img9.jpg)
 
 ## Organization Layout 
 
@@ -311,7 +311,7 @@ SpaceBetweenSubTrees="20"/>
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layouts_images/Automatic-Layouts_img1.jpeg)
+![OrganizationLayout](Automatic-Layouts_images/Automatic-Layouts_img1.jpeg)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘GetLayoutInfo’ method provides necessary information of a Node’s children and the way to arrange (Orientation, Type etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -351,12 +351,12 @@ The following table illustrates the different chart orientations and chart types
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child Nodes Horizontally at the Left side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img2.jpg) |
-| | Right | Arranges the child Nodes Horizontally at the Right side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img3.jpg) |
-| | Center | Arranges the child Nodes horizontally at the Center side of parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img4.jpg) |
-| Vertical | Left | Vertically arranges the children at the Left side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img5.jpg) |
-| | Right | Vertically arranges the children at the Right side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img6.jpg) |
-| | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img7.jpg) |
+| Horizontal | Left | Arranges the child Nodes Horizontally at the Left side of Parent. | ![Left](Automatic-Layouts_images/Automatic-Layouts_img2.jpg) |
+| | Right | Arranges the child Nodes Horizontally at the Right side of Parent. | ![Right](Automatic-Layouts_images/Automatic-Layouts_img3.jpg) |
+| | Center | Arranges the child Nodes horizontally at the Center side of parent. | ![Center](Automatic-Layouts_images/Automatic-Layouts_img4.jpg) |
+| Vertical | Left | Vertically arranges the children at the Left side of Parent. | ![Vertical](Automatic-Layouts_images/Automatic-Layouts_img5.jpg) |
+| | Right | Vertically arranges the children at the Right side of Parent. | ![Right](Automatic-Layouts_images/Automatic-Layouts_img6.jpg) |
+| | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![Alternate](Automatic-Layouts_images/Automatic-Layouts_img7.jpg) |
 
 ## Customize Layout
 
@@ -380,4 +380,4 @@ diagramcontrol.LayoutManager = new LayoutManager()
 {% endhighlight %}
 {% endtabs %}
 
-![](Automatic-Layouts_images/Automatic-Layouts_img10.jpg)
+![CustomLayout](Automatic-Layouts_images/Automatic-Layouts_img10.jpg)
