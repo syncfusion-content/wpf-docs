@@ -14,6 +14,183 @@ SfDiagram provides support to auto-arrange the nodes in the Diagram area that is
 * Hierarchical Tree Layout
 * Radial Tree
 * Organizational Layout
+* Flowchart Layout
+
+## Flowchart Layout
+
+The Flowchart Layout arranges the nodes in a sequence representing a process using different symbols containing information about steps or a sequence of events.
+
+{% tabs %}
+{% highlight xaml %}
+
+<local:DataItems x:Key="Dataitems">
+<local:ItemInfo Id="1" NodeShape="{StaticResource StartOrEnd}" Width="100" Height="30" Name="Start"></local:ItemInfo>
+<local:ItemInfo Id="2" NodeShape="{StaticResource Rectangle}" Width="120" Height="70" Name="Define course requirements">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>1</sys:String> 
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+<local:ItemInfo Id="3" NodeShape="{StaticResource Document}" Width="120" Height="70" Name="Develop Module">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>2</sys:String>
+            <sys:String>6</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+<local:ItemInfo Id="4" NodeShape="{StaticResource Decision}" Width="150" Height="80" Name="Pass review?">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>3</sys:String>
+            </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+<local:ItemInfo Id="5" NodeShape="{StaticResource Rectangle}" Width="120" Height="70" Name="Publish Course">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>4</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+    <local:ItemInfo.Label>
+        <local:LabelList>
+            <sys:String>Yes</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.Label>
+</local:ItemInfo>
+<local:ItemInfo Id="6" NodeShape="{StaticResource PredefinedProcess}" Width="120" Height="70" Name="Review Module">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>4</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+    <local:ItemInfo.Label>
+        <local:LabelList>
+            <sys:String>No</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.Label>
+</local:ItemInfo>
+<local:ItemInfo Id="7" NodeShape="{StaticResource StartOrEnd}" Width="100" Height="30" Name="End">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>5</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+</local:DataItems>
+<!--Initializes the Layout-->
+<syncfusion:FlowchartLayout x:Key="Layout"                            
+                            HorizontalSpacing="80" 
+                            VerticalSpacing="50"/>
+            
+<!--Initializes the LayoutManager-->
+<syncfusion:LayoutManager x:Key="layoutmanager" 
+                          Layout="{StaticResource Layout}"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+ ![](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
+
+## Customize Flowchart Layout
+
+Sequence of the Node's direction can be customized by Flowchart Layout Orientation,YesBranch and NoBranch Directions.
+
+### Orientation
+| Orientation | Type | Description | Example |
+|---|---|---|---|
+| Vertical | TopToBottom | Arranges the Layout Vertically from Top to Bottom. | ![](Automatic-Layouts_images/Automatic-Layouts_Vertical.png) |
+|Horizontal | LeftToRight | Arranges the Layout Horizontally from Left to Right. | ![](Automatic-Layouts_images/Automatic-Layouts_Horizontal.png) |
+
+### YesBranchDirection
+Specifies the direction of "Yes" branches. This direction is relative to the orientation of the layout, for example, edges of direction Left In Flow go to the left side for Top to Bottom orientation and to the Top for Left to Right orientation.
+| Type | Description | Example |
+|---|---|---|
+| Left In Flow | Arranges the Yes children to the Left side for Top to Bottom orientation whereas to the Top for Left to Right orientation . | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_Vertical.png) Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img11.png)|
+| Right In Flow | Arranges the Yes children to the Right side for Top to Bottom orientation whereas to the Bottom for Left to Right orientation. | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_img17.png) Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img12.png) |
+| Same As Flow | Arranges the Yes children right below the parent for Top to Bottom orientation whereas to the Right for Left to Right orientation . | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_img16.png)Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img13.png) |
+### NoBranchDirection
+Specifies the direction of "No" branches. This direction is relative to the orientation of the layout, for example, edges of direction Right In Flow go to the right side for Top to Bottom orientation and to the top for Left to Right orientation.
+| Type | Description | Example |
+|---|---|---|
+| Left In Flow | Arranges the No children to the Left side for Top to Bottom orientation whereas to the bottom for Left to Right orientation . | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_img17.png)Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img12.png) |
+| Right In Flow | Arranges the No children to the Right side for Top to Bottom orientation whereas to the Top for Left to Right orientation. | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_Vertical.png)Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img11.png) |
+| Same As Flow | Arranges the No children right below the parent for Top to Bottom orientation whereas to the Right for Left to Right orientation . | Top-To-Bottom![](Automatic-Layouts_images/Automatic-Layouts_img15.png)Left-To-Right![](Automatic-Layouts_images/Automatic-Layouts_img14.png) |
+
+## Customize Yes and No Branch Values
+
+Default values of the YesBranchValues and NoBranchValues can be customized on demand.Default Values would be Yes,True,No,False.
+
+{% tabs %}
+{% highlight xaml %}
+
+<local:DataItems x:Key="Dataitems">
+<local:ItemInfo Id="1" NodeShape="{StaticResource StartOrEnd}" Width="100" Height="60" Name="Open Camera"></local:ItemInfo>
+<local:ItemInfo Id="2" NodeShape="{StaticResource Decision}" Width="120" Height="100" Name="Can Accesss Gallery?">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>1</sys:String> 
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+<local:ItemInfo Id="3" NodeShape="{StaticResource Rectangle}" Width="120" Height="60" Name="Exit Camera">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>2</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+    <local:ItemInfo.Label>
+        <local:LabelList>
+            <sys:String>Deny</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.Label>
+</local:ItemInfo>
+<local:ItemInfo Id="4" NodeShape="{StaticResource Rectangle}" Width="120" Height="60" Name="Take picture">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>2</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+    <local:ItemInfo.Label>
+        <local:LabelList>
+            <sys:String>Allow</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.Label>
+</local:ItemInfo>
+<local:ItemInfo Id="5" NodeShape="{StaticResource StartOrEnd}" Width="120" Height="60" Name="Set as Profile">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>4</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+</local:DataItems>
+
+<syncfusion:FlowchartLayout x:Key="Layout" 
+                                        Orientation="TopToBottom"
+                                        YesBranchDirection="LeftInFlow"
+                                        NoBranchDirection="RightInFlow"                                        
+                                        HorizontalSpacing="50" 
+                                        VerticalSpacing="30">
+    <syncfusion:FlowchartLayout.YesBranchLabel>
+        <local:LabelList>
+            <sys:String>Accept</sys:String>
+            <sys:String>Allow</sys:String>
+        </local:LabelList>
+    </syncfusion:FlowchartLayout.YesBranchLabel>
+    <syncfusion:FlowchartLayout.NoBranchLabel>
+        <local:LabelList>
+            <sys:String>Reject</sys:String>
+            <sys:String>Deny</sys:String>
+        </local:LabelList>
+    </syncfusion:FlowchartLayout.NoBranchLabel>
+</syncfusion:FlowchartLayout>
+
+{% endhighlight %}
+{% endtabs %}
+
+![](Automatic-Layouts_images/Automatic-Layouts_CustomFlowchart.png)
 
 ## Hierarchical Tree Layout
 
