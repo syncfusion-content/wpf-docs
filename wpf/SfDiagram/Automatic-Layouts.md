@@ -16,182 +16,6 @@ SfDiagram provides support to auto-arrange the nodes in the Diagram area that is
 * Organizational Layout
 * Flowchart Layout
 
-## Flowchart Layout
-
-The Flowchart Layout arranges the nodes in a sequence representing a process using different symbols containing information about steps or a sequence of events.
-
-{% tabs %}
-{% highlight xaml %}
-
-<local:DataItems x:Key="Dataitems">
-<local:ItemInfo Id="1" NodeShape="{StaticResource StartOrEnd}" Width="100" Height="30" Name="Start"></local:ItemInfo>
-<local:ItemInfo Id="2" NodeShape="{StaticResource Rectangle}" Width="120" Height="70" Name="Define course requirements">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>1</sys:String> 
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-</local:ItemInfo>
-<local:ItemInfo Id="3" NodeShape="{StaticResource Document}" Width="120" Height="70" Name="Develop Module">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>2</sys:String>
-            <sys:String>6</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-</local:ItemInfo>
-<local:ItemInfo Id="4" NodeShape="{StaticResource Decision}" Width="150" Height="80" Name="Pass review?">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>3</sys:String>
-            </local:LabelList>
-    </local:ItemInfo.ParentId>
-</local:ItemInfo>
-<local:ItemInfo Id="5" NodeShape="{StaticResource Rectangle}" Width="120" Height="70" Name="Publish Course">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>4</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-    <local:ItemInfo.Label>
-        <local:LabelList>
-            <sys:String>Yes</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.Label>
-</local:ItemInfo>
-<local:ItemInfo Id="6" NodeShape="{StaticResource PredefinedProcess}" Width="120" Height="70" Name="Review Module">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>4</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-    <local:ItemInfo.Label>
-        <local:LabelList>
-            <sys:String>No</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.Label>
-</local:ItemInfo>
-<local:ItemInfo Id="7" NodeShape="{StaticResource StartOrEnd}" Width="100" Height="30" Name="End">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>5</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-</local:ItemInfo>
-</local:DataItems>
-<!--Initializes the Layout-->
-<syncfusion:FlowchartLayout x:Key="Layout"                            
-                            HorizontalSpacing="80" 
-                            VerticalSpacing="50"/>
-            
-<!--Initializes the LayoutManager-->
-<syncfusion:LayoutManager x:Key="layoutmanager" 
-                          Layout="{StaticResource Layout}"/>
-
-{% endhighlight %}
-{% endtabs %}
-
- ![Flowchart](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
-
-## Customize Flowchart Layout
-
-Sequence of the Node's direction can be customized by Flowchart Layout Orientation,YesBranch and NoBranch Directions.
-
-### Orientation
-| Orientation | Type | Description | Example |
-|---|---|---|---|
-| Vertical | TopToBottom | Arranges the Layout Vertically from Top to Bottom. | ![Vertical](Automatic-Layouts_images/Automatic-Layouts_Vertical.png) |
-|Horizontal | LeftToRight | Arranges the Layout Horizontally from Left to Right. | ![Horizontal](Automatic-Layouts_images/Automatic-Layouts_Horizontal.png) |
-
-### YesBranchDirection
-Specifies the direction of "Yes" branches. This direction is relative to the orientation of the layout, for example, edges of direction Left In Flow go to the left side for Top to Bottom orientation and to the Top for Left to Right orientation.
-| Type | Description | Example |
-|---|---|---|
-| Left In Flow | Arranges the Yes children to the Left side for Top to Bottom orientation whereas to the Top for Left to Right orientation . | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_Vertical.png) Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img11.png)|
-| Right In Flow | Arranges the Yes children to the Right side for Top to Bottom orientation whereas to the Bottom for Left to Right orientation. | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_img17.png) Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img12.png) |
-| Same As Flow | Arranges the Yes children right below the parent for Top to Bottom orientation whereas to the Right for Left to Right orientation . | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_img16.png)Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img13.png) |
-### NoBranchDirection
-Specifies the direction of "No" branches. This direction is relative to the orientation of the layout, for example, edges of direction Right In Flow go to the right side for Top to Bottom orientation and to the top for Left to Right orientation.
-| Type | Description | Example |
-|---|---|---|
-| Left In Flow | Arranges the No children to the Left side for Top to Bottom orientation whereas to the bottom for Left to Right orientation . | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_img17.png)Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img12.png) |
-| Right In Flow | Arranges the No children to the Right side for Top to Bottom orientation whereas to the Top for Left to Right orientation. | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_Vertical.png)Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img11.png) |
-| Same As Flow | Arranges the No children right below the parent for Top to Bottom orientation whereas to the Right for Left to Right orientation . | Top-To-Bottom![Vertical](Automatic-Layouts_images/Automatic-Layouts_img15.png)Left-To-Right![Horizontal](Automatic-Layouts_images/Automatic-Layouts_img14.png) |
-
-## Customize Yes and No Branch Values
-
-Default values of the YesBranchValues and NoBranchValues can be customized on demand.Default Values would be Yes,True,No,False.
-
-{% tabs %}
-{% highlight xaml %}
-
-<local:DataItems x:Key="Dataitems">
-<local:ItemInfo Id="1" NodeShape="{StaticResource StartOrEnd}" Width="100" Height="60" Name="Open Camera"></local:ItemInfo>
-<local:ItemInfo Id="2" NodeShape="{StaticResource Decision}" Width="120" Height="100" Name="Can Accesss Gallery?">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>1</sys:String> 
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-</local:ItemInfo>
-<local:ItemInfo Id="3" NodeShape="{StaticResource Rectangle}" Width="120" Height="60" Name="Exit Camera">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>2</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-    <local:ItemInfo.Label>
-        <local:LabelList>
-            <sys:String>Deny</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.Label>
-</local:ItemInfo>
-<local:ItemInfo Id="4" NodeShape="{StaticResource Rectangle}" Width="120" Height="60" Name="Take picture">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>2</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-    <local:ItemInfo.Label>
-        <local:LabelList>
-            <sys:String>Allow</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.Label>
-</local:ItemInfo>
-<local:ItemInfo Id="5" NodeShape="{StaticResource StartOrEnd}" Width="120" Height="60" Name="Set as Profile">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>4</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-</local:ItemInfo>
-</local:DataItems>
-
-<syncfusion:FlowchartLayout x:Key="Layout" 
-                                        Orientation="TopToBottom"
-                                        YesBranchDirection="LeftInFlow"
-                                        NoBranchDirection="RightInFlow"                                        
-                                        HorizontalSpacing="50" 
-                                        VerticalSpacing="30">
-    <syncfusion:FlowchartLayout.YesBranchLabel>
-        <local:LabelList>
-            <sys:String>Accept</sys:String>
-            <sys:String>Allow</sys:String>
-        </local:LabelList>
-    </syncfusion:FlowchartLayout.YesBranchLabel>
-    <syncfusion:FlowchartLayout.NoBranchLabel>
-        <local:LabelList>
-            <sys:String>Reject</sys:String>
-            <sys:String>Deny</sys:String>
-        </local:LabelList>
-    </syncfusion:FlowchartLayout.NoBranchLabel>
-</syncfusion:FlowchartLayout>
-
-{% endhighlight %}
-{% endtabs %}
-
-![CustomFlowchart](Automatic-Layouts_images/Automatic-Layouts_CustomFlowchart.png)
-
 ## Hierarchical Tree Layout
 
 The Hierarchical tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
@@ -381,3 +205,431 @@ diagramcontrol.LayoutManager = new LayoutManager()
 {% endtabs %}
 
 ![CustomLayout](Automatic-Layouts_images/Automatic-Layouts_img10.jpg)
+
+## Flowchart Layout
+
+The Flowchart layout is a diagrammatic representation of a process, workflow,system or computer algorithm. Flowcharts uses various kind of symbols to illustrate different types of actions and symbols are connected together with arrows showing the flow direction of process.
+
+##Common Flowchart symbols
+
+Different flowchart symbols have different meanings that are used to represent different states in Flowchart. The following table describes the most common Flowchart symbols that are used in creating flowchart.
+
+|Symbol|Name|Description|
+|---|---|---|
+|![Terminator](Automatic-Layouts_images/Automatic-Layouts_Terminator.png)|Terminator/StartOrEnd|Indicates the beginning and ending of the process.|
+|![Data](Automatic-Layouts_images/Automatic-Layouts_Data.png)|Data|Indicates data input or output for a process.|
+|![Process](Automatic-Layouts_images/Automatic-Layouts_Process.png)|Process|Represent an operation or set of operations and data manipulations|
+|![Decision](Automatic-Layouts_images/Automatic-Layouts_Decision.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths|
+|![Document](Automatic-Layouts_images/Automatic-Layouts_Document.png)|Document|Represents a single document or report in the process|
+|![SubProcess](Automatic-Layouts_images/Automatic-Layouts_Predefinedprocess.png)|SubProcess/PredefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere.|
+|![DirectData](Automatic-Layouts_images/Automatic-Layouts_DirectData.png)|DirectData|Represents a collection of information that allows for searching, sorting and filtering|
+|![StoredData](Automatic-Layouts_images/Automatic-Layouts_StoredData.png)|StoredData|Represents a step where data get stored within a process.|
+|![ManualInput](Automatic-Layouts_images/Automatic-Layouts_ManualInput.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
+|![ManualOperation](Automatic-Layouts_images/Automatic-Layouts_ManualOperation.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
+|![Preparation](Automatic-Layouts_images/Automatic-Layouts_Preparation.png)|Preparation|Represents a set-up or initialization process to another step in the process.|
+|![OnPageReference](Automatic-Layouts_images/Automatic-Layouts_OnPageReference.png)|OnPageReference|Represents a pairs of labeled connectors used to link long or confusing line on a flowchart.|
+|![OffPageReference](Automatic-Layouts_images/Automatic-Layouts_OffPageReference.png)|OffPageReference|Represents a labeled connector used to link two flowcharts on different pages.|
+|![MultiDocument](Automatic-Layouts_images/Automatic-Layouts_MultiDocument.png)|MultiDocument|Represents multiple documents or reports in the process.|
+|![Connector](Automatic-Layouts_images/Automatic-Layouts_Connector.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child|
+
+There are some basic built-in shapes as ResourceDictionary.For more information, refer to [Shapes](/wpf/sfdiagram/shapes).
+
+{% tabs %}
+{% highlight xaml %}
+
+<ResourceDictionary.MergedDictionaries>
+
+<!--Initialize Shapes-->  
+
+ < ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
+
+</ResourceDictionary.MergedDictionaries>
+
+<local:DataItems x:Key="Dataitems">
+<local:ItemInfo Id="1" NodeShape="{StaticResource Terminator}" Width="80" Height="35" Name="Start"></local:ItemInfo>
+<local:ItemInfo Id="2" NodeShape="{StaticResource Data}" Width="90" Height="35" Name="Input">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>1</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+<local:ItemInfo Id="3" NodeShape="{StaticResource Decision}" Width="80" Height="60" Name="Decision?">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>2</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+<local:ItemInfo Id="4" NodeShape="{StaticResource Process}" Width="80" Height="40" Name="Process1">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>3</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+    <local:ItemInfo.Label>
+        <local:LabelList>
+                <sys:String>Yes</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.Label>
+</local:ItemInfo>
+<local:ItemInfo Id="5" NodeShape="{StaticResource Process}" Width="80" Height="40" Name="Process2">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>3</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+    <local:ItemInfo.Label>
+        <local:LabelList>
+            <sys:String>No</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.Label>
+</local:ItemInfo>
+<local:ItemInfo Id="6" NodeShape="{StaticResource Data}" Width="90" Height="35" Name="Output">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>5</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+<local:ItemInfo Id="7" NodeShape="{StaticResource Data}" Width="90" Height="35" Name="Output">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>4</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+<local:ItemInfo Id="8" NodeShape="{StaticResource Terminator}" Width="80" Height="35" Name="End">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>6</sys:String>
+            <sys:String>7</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+</local:ItemInfo>
+</local:DataItems>
+<!--Initializes the Layout-->
+<syncfusion:FlowchartLayout x:Key="Layout" 
+                            Orientation="LeftToRight"
+                            HorizontalSpacing="50"
+                            VerticalSpacing="30"                            
+                            YesBranchDirection="LeftInFlow"
+                            NoBranchDirection="RightInFlow">
+            </syncfusion:FlowchartLayout>
+
+<!--Initializes the LayoutManager-->
+<syncfusion:LayoutManager x:Key="layoutmanager" 
+                          Layout="{StaticResource Layout}"/>
+<!--Initializes the DataSourceSettings -->
+<syncfusion:FlowchartDataSourceSettings x:Key="DataSourceSettings" 
+                                        DataSource="{StaticResource Dataitems}"   
+                                        ParentId="ParentId" 
+                                        Id="Id" 
+                                        ShapeMapping="NodeShape" 
+                                        WidthMapping="Width" 
+                                        HeightMapping="Height" 
+                                        ConnectorTextMapping="Label" 
+                                        ContentMapping="Name"/>
+<!--Initializes the SfDiagram --> 
+<syncfusion:SfDiagram x:Name="Diagram" 
+                              Grid.Column="0" 
+                              LayoutManager="{StaticResource layoutmanager}" 
+                              DataSourceSettings="{StaticResource DataSourceSettings}" >
+    <syncfusion:SfDiagram.Theme>
+        <syncfusion:OfficeTheme/>
+    </syncfusion:SfDiagram.Theme>
+</syncfusion:SfDiagram>                                       
+
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+    //Initialize Diagram
+    SfDiagram Diagram = new SfDiagram();
+
+    //Initialize Node Collection
+    Diagram.Nodes = new ObservableCollection<NodeViewModel>();           
+
+    //Initialize Connector Collection
+    Diagram.Connectors = new ObservableCollection<ConnectorViewModel>();
+
+    (Diagram.Info as IGraphInfo).ItemAdded += MainWindow_ItemAdded;
+
+    // Initialize DataSourceSettings for SfDiagram
+    Diagram.DataSourceSettings = new FlowchartDataSourceSettings()
+        {
+            ParentId = "ParentId",
+            Id = "Id",
+            DataSource = GetData(),
+            ConnectorTextMapping = "Label",
+            ContentMapping = "Name",
+            ShapeMapping = "NodeShape",
+            WidthMapping = "Width",
+            HeightMapping = "Height"
+        };
+
+    //Initialize LayoutManager
+    LayoutManager layoutManager = new LayoutManager();
+
+    //Initialize Layout for SfDiagram
+    layoutManager.Layout = new FlowchartLayout()
+        {
+            Orientation = FlowchartOrientation.TopToBottom,
+            YesBranchDirection = BranchDirection.LeftInFlow,
+            NoBranchDirection = BranchDirection.RightInFlow,             
+            HorizontalSpacing = 50,
+            VerticalSpacing = 30
+        };
+
+    //initialize theming style for SfDiagram
+    Diagram.Theme = new OfficeTheme();
+
+    //Initialize LayoutManager
+    Diagram.LayoutManager = layoutManager;
+    
+    //Adding Sfdiagram as children to mainwindow grid.
+    WindowGrid.Children.Add(Diagram);
+
+    // Initializes the DataSource collection
+    private DataItems GetData()
+    {
+        DataItems itemscollection = new DataItems();
+        itemscollection.Add(new ItemInfo()
+        {
+            Id ="1",
+            NodeShape =App.Current.Resources["Terminator"] as string,
+            Name = "Start",
+            Height =35,
+            Width =80
+        });
+        itemscollection.Add(new ItemInfo()
+        {
+            Id = "2",
+            ParentId =new List<string> { "1" },
+            NodeShape = App.Current.Resources["Data"] as string,
+            Name = "Input",
+            Height = 35,
+            Width =90
+        });
+        itemscollection.Add(new ItemInfo()
+        {
+            Id = "3", ParentId =new List<string> { "2" },                
+            NodeShape = App.Current.Resources["Decision"] as string,
+            Name = "Decision?",
+            Height =60,
+            Width = 80
+        });
+        itemscollection.Add(new ItemInfo()
+        {
+            Id = "4",
+            ParentId = new List<string> { "3" },
+            Label =new List<string> {"Yes" },
+            NodeShape = App.Current.Resources["Process"] as string,
+            Name = "Process1",
+            Height = 40,
+            Width = 80
+        });
+        itemscollection.Add(new ItemInfo()
+        {
+            Id = "5",
+            ParentId = new List<string> { "3" },
+            Label = new List<string> { "No" },
+            NodeShape = App.Current.Resources["Process"] as string,
+            Name = "Process2",
+            Height = 40,
+            Width = 80
+        });
+        itemscollection.Add(new ItemInfo()
+        {
+            Id = "6",
+            ParentId = new List<string> { "5" },                
+            NodeShape = App.Current.Resources["Data"] as string,
+            Name = "Output",
+            Height = 35,
+            Width = 90
+        });
+        itemscollection.Add(new ItemInfo()
+        {
+            Id = "7",
+            ParentId = new List<string> { "4" },                
+            NodeShape = App.Current.Resources["Data"] as string,
+            Name = "Output",
+            Height = 35,
+            Width = 90
+        });
+        itemscollection.Add(new ItemInfo()
+        {
+            Id = "8",
+            ParentId = new List<string> { "6","7" },                
+            NodeShape =App.Current.Resources["Terminator"] as string,
+            Name = "End",
+            Height = 35,
+            Width = 80
+        });
+        return itemscollection;
+        }
+
+    //Data Object Class
+    public class ItemInfo
+     {
+        public string Name { get; set; }
+        public string Id { get; set; }
+        public List<string> ParentId { get; set; }
+        public string NodeShape { get; set; }       
+        public List<string> Label { get; set; }
+        public double Width { get; set; }        
+        public double Height { get; set; }
+        
+    }
+
+    //Collection to hold the Data Object class
+    public class DataItems : ObservableCollection<ItemInfo>
+    {
+
+    }
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+ ![Flowchart](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
+
+## Customize Flowchart Layout Orientation
+
+Sequence of the Node's direction can be customized by Flowchart Layout Orientation such as **TopToBottom** or **LeftToRight**.
+
+### TopToBottom Orientation
+Arranges the Layout Vertically from Top to Bottom.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncfusion:FlowchartLayout x:Key="Layout" 
+                            Orientation="TopToBottom">
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+            //Initialize LayoutManager
+            LayoutManager layoutManager = new LayoutManager();
+
+            //Initialize Layout for SfDiagram
+            layoutManager.Layout = new FlowchartLayout()
+            {
+                Orientation = FlowchartOrientation.TopToBottom,            
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Vertical](Automatic-Layouts_images/Automatic-Layouts_Flowchart_Vertical.png) 
+
+
+### LeftToRight Orientation
+Arranges the Layout Horizontally from Left to Right.
+
+![Horizontal](Automatic-Layouts_images/Automatic-Layouts_Flowchart_Horizontal.png) 
+
+## Customize the Decision directions
+
+Decision symbol denotes the question that can be answered in a binary format (Yes/No,True/False).The output direction of the decision can be controlled by the direction of "Yes" and "No" branches using the `YesBranchDirection` and `NoBranchDirection` properties of `FlowchartLayout` class.
+
+`Left In Flow` - Arranges the children to the Left side of the Decision.
+
+`Right In Flow`-Arranges the children to the Right side of the Decision.
+
+`Same As Flow`-Arranges the childen as same as the Decision flow.
+
+|YesBranchDirection| NoBranchDirection | TopToBottom | LeftToRight |
+|---|---|---|---|
+| Left In Flow |Right In Flow|![Vertical](Automatic-Layouts_images/Automatic-Layouts_YesLeft_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_YesLeft_Horizontal.png)|
+| Right In Flow |Left In Flow |![Vertical](Automatic-Layouts_images/Automatic-Layouts_YesRight_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_YesRight_Horizontal.png) |
+| Same As Flow |Right In Flow |![Vertical](Automatic-Layouts_images/Automatic-Layouts_YesSame_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_YesSame_Horizontal.png) |
+|Same As Flow |Same As Flow|![Vertical](Automatic-Layouts_images/Automatic-Layouts_BothSame_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_BothSame_Horizontal.png)|
+
+N> If both branch directions are same, **Yes** branch will be prioritised.
+
+### Custom Yes and No Branch Values
+
+Default values of the YesBranchValues and NoBranchValues can be customized on demand by using the `YesBranchValues` and `NoBranchValues` properties of `FlowchartLayout` class.Default Values of YesBranch would be **Yes,True** and NoBranch would be **No,False**.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:FlowchartLayout x:Key="Layout" 
+                                        Orientation="TopToBottom"
+                                        YesBranchDirection="LeftInFlow"
+                                        NoBranchDirection="RightInFlow"
+                                        HorizontalSpacing="50" 
+                                        VerticalSpacing="30">
+    <syncfusion:FlowchartLayout.YesBranchValues>
+        <local:LabelList>
+            <sys:String>Accept</sys:String>
+            <sys:String>Yes</sys:String>
+        </local:LabelList>
+    </syncfusion:FlowchartLayout.YesBranchValues>
+    <syncfusion:FlowchartLayout.NoBranchValues>
+        <local:LabelList>
+            <sys:String>Reject</sys:String>
+            <sys:String>No</sys:String>
+        </local:LabelList>
+    </syncfusion:FlowchartLayout.NoBranchValues>
+</syncfusion:FlowchartLayout>
+
+{% endhighlight %}
+
+{% highlight C#}
+
+            //Initialize LayoutManager
+            LayoutManager layoutManager = new LayoutManager();
+
+            //Initialize Layout for SfDiagram
+            layoutManager.Layout = new FlowchartLayout()
+            {
+                Orientation = FlowchartOrientation.TopToBottom,
+                YesBranchDirection = BranchDirection.LeftInFlow,
+                NoBranchDirection = BranchDirection.RightInFlow,
+                YesBranchValues=new List<string> { "Accept","Yes"},
+                NoBranchValues=new List<string> { "Reject","No"},
+                HorizontalSpacing = 50,
+                VerticalSpacing = 30
+            };             
+
+{% endhighlight %}
+{% endtabs %}
+
+### Vertical and Horizontal Spacing 
+
+Control the spacing between the Nodes both horizotally and vertically using `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:FlowchartLayout x:Key="Layout"                                         
+                            HorizontalSpacing="50" 
+                            VerticalSpacing="30">   
+</syncfusion:FlowchartLayout>
+
+{% endhighlight %}
+
+{% highlight C#}
+
+            //Initialize LayoutManager
+            LayoutManager layoutManager = new LayoutManager();
+
+            //Initialize Layout for SfDiagram
+            layoutManager.Layout = new FlowchartLayout()
+            {               
+                HorizontalSpacing = 50,
+                VerticalSpacing = 30
+            };             
+
+{% endhighlight %}
+{% endtabs %}
+
+![CustomFlowchart](Automatic-Layouts_images/Automatic-Layouts_CustomYes_NoBranch.png)

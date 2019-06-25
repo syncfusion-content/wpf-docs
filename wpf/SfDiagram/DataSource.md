@@ -91,58 +91,41 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 
 ## FlowchartDataSourceSettings
 
-FlowchartDataSourceSettings is the derived class of DataSourceSettings which contains the following mapping properties.These properties will map the property in the underlying data object to the datasource item.
+`FlowchartDataSourceSettings` is the derived class of `DataSourceSettings` which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
 
-The FlowchartDataSourceSettings `ContentMapping` property is used to display text on the Node.
+`ContentMapping` - map the Content in the underlying data object to data source item.
 
-The FlowchartDataSourceSettings `ConnectorTextMapping` property is used to display text on the Connection between the data source items.
-The FlowchartDataSourceSettings `ShapeMapping` property is used to set specific shape for the data source items.
-The FlowchartDataSourceSettings `WidthMapping` property is used to set width for the data source items.
-The FlowchartDataSourceSettings `HeightMapping` property is used to set height for the data source items.
+`ConnectorTextMapping` -  map the ConnectorText in the underlying data object to data source item.
+
+`ShapeMapping` -  map the Shape in the underlying data object to data source item.
+ 
+`WidthMapping` -  map the Width in the underlying data object to data source item.
+ 
+`HeightMapping` - map the Height in the underlying data object to data source item.
 
 {% tabs %}
 {% highlight xaml %}
+
+<ResourceDictionary.MergedDictionaries>
+
+< ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
+
+</ResourceDictionary.MergedDictionaries>
+
 <!-- Initializes the DataSource collection-->
 <local:DataItems x:Key="Dataitems">
-<local:ItemInfo Id="1" NodeShape="{StaticResource StartOrEnd}" Width="100" Height="30" Name="Start"></local:ItemInfo>
-<local:ItemInfo Id="2" NodeShape="{StaticResource Rectangle}" Width="120" Height="70" Name="Define course requirements">
+<local:ItemInfo Id="1" NodeShape="{StaticResource Terminator}" Width="80" Height="40" Name="Start"></local:ItemInfo>
+<local:ItemInfo Id="2" NodeShape="{StaticResource Decision}" Width="100" Height="80" Name="Decision?">
     <local:ItemInfo.ParentId>
         <local:LabelList>
             <sys:String>1</sys:String> 
         </local:LabelList>
     </local:ItemInfo.ParentId>
 </local:ItemInfo>
-<local:ItemInfo Id="3" NodeShape="{StaticResource Document}" Width="120" Height="70" Name="Develop Module">
+<local:ItemInfo Id="3" NodeShape="{StaticResource Process}" Width="80" Height="50" Name="Process1">
     <local:ItemInfo.ParentId>
         <local:LabelList>
             <sys:String>2</sys:String>
-            <sys:String>6</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-</local:ItemInfo>
-<local:ItemInfo Id="4" NodeShape="{StaticResource Decision}" Width="150" Height="80" Name="Pass review?">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>3</sys:String>
-            </local:LabelList>
-    </local:ItemInfo.ParentId>
-</local:ItemInfo>
-<local:ItemInfo Id="5" NodeShape="{StaticResource Rectangle}" Width="120" Height="70" Name="Publish Course">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>4</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.ParentId>
-    <local:ItemInfo.Label>
-        <local:LabelList>
-            <sys:String>Yes</sys:String>
-        </local:LabelList>
-    </local:ItemInfo.Label>
-</local:ItemInfo>
-<local:ItemInfo Id="6" NodeShape="{StaticResource PredefinedProcess}" Width="120" Height="70" Name="Review Module">
-    <local:ItemInfo.ParentId>
-        <local:LabelList>
-            <sys:String>4</sys:String>
         </local:LabelList>
     </local:ItemInfo.ParentId>
     <local:ItemInfo.Label>
@@ -151,32 +134,50 @@ The FlowchartDataSourceSettings `HeightMapping` property is used to set height f
         </local:LabelList>
     </local:ItemInfo.Label>
 </local:ItemInfo>
-<local:ItemInfo Id="7" NodeShape="{StaticResource StartOrEnd}" Width="100" Height="30" Name="End">
+<local:ItemInfo Id="4" NodeShape="{StaticResource Process}" Width="80" Height="50" Name="Process2">
     <local:ItemInfo.ParentId>
         <local:LabelList>
-            <sys:String>5</sys:String>
+            <sys:String>2</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.ParentId>
+    <local:ItemInfo.Label>
+        <local:LabelList>
+            <sys:String>Yes</sys:String>
+        </local:LabelList>
+    </local:ItemInfo.Label>
+</local:ItemInfo>
+<local:ItemInfo Id="5" NodeShape="{StaticResource Terminator}" Width="80" Height="40" Name="End">
+    <local:ItemInfo.ParentId>
+        <local:LabelList>
+            <sys:String>4</sys:String>
         </local:LabelList>
     </local:ItemInfo.ParentId>
 </local:ItemInfo>
 </local:DataItems>
 <!--Initializes the Layout-->
-<syncfusion:FlowchartLayout x:Key="Layout"                            
-                            HorizontalSpacing="80" 
-                            VerticalSpacing="50"/>
+<syncfusion:FlowchartLayout x:Key="Layout" 
+                                        Orientation="TopToBottom"
+                                        YesBranchDirection="LeftInFlow"
+                                        HorizontalSpacing="50" 
+                                        VerticalSpacing="30">
+</syncfusion:FlowchartLayout>
 
 <!--Initializes the DataSourceSettings -->
 <syncfusion:FlowchartDataSourceSettings x:Key="DataSourceSettings"
                                         DataSource="{StaticResource Dataitems}"   
-                                        ParentId="ParentId" Id="Id" 
-                                        Shape="NodeShape" Width="Width" Height="Height" ConnectorLabel="Label" Content="Name" />
+                                        ParentId="ParentId" 
+                                        Id="Id" 
+                                        ShapeMapping="NodeShape" 
+                                        WidthMapping="Width" 
+                                        HeightMapping="Height" ConnectorTextMapping="Label" ContentMapping="Name" />
             
 <!--Initializes the LayoutManager-->
 <syncfusion:LayoutManager x:Key="layoutmanager" 
                           Layout="{StaticResource Layout}"/>
 
  <!--Initializes the SfDiagram-->          
-<syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource layoutManager}"                      
-                      DataSourceSettings="{StaticResource DataSourceSettings}">
+<syncfusion:SfDiagram x:Name="diagram" 
+                      LayoutManager="{StaticResource layoutManager}"       DataSourceSettings="{StaticResource DataSourceSettings">
     <!--Initializes the NodeCollection-->                  
     <syncfusion:SfDiagram.Nodes>
         <syncfusion:NodeCollection/>
@@ -185,11 +186,141 @@ The FlowchartDataSourceSettings `HeightMapping` property is used to set height f
     <syncfusion:SfDiagram.Connectors>
         <syncfusion:ConnectorCollection/>
     </syncfusion:SfDiagram.Connectors>
+    <syncfusion:SfDiagram.Theme>
+        <syncfusion:OfficeTheme/>
+    </syncfusion:SfDiagram.Theme>
 </syncfusion:SfDiagram>
+
+{% endhighlight %}
+
+{% highlight C#}
+
+            //Initialize Diagram.
+            SfDiagram Diagram = new SfDiagram();
+
+            //Initialize Node Collection
+            Diagram.Nodes = new ObservableCollection<NodeViewModel>();           
+
+            //Initialize Connector Collection
+            Diagram.Connectors = new ObservableCollection<ConnectorViewModel>();
+
+            // Initialize DataSourceSettings for SfDiagram
+            Diagram.DataSourceSettings = new FlowchartDataSourceSettings()
+            {
+                ParentId = "ParentId",
+                Id = "Id",
+                DataSource = GetData(),
+                ConnectorTextMapping = "Label",
+                ContentMapping = "Name",
+                ShapeMapping = "NodeShape",
+                WidthMapping = "Width",
+                HeightMapping = "Height"
+            };
+
+            //Initialize LayoutManager
+            LayoutManager layoutManager = new LayoutManager();
+
+            //Initialize Layout for SfDiagram
+            layoutManager.Layout = new FlowchartLayout()
+            {
+                Orientation = FlowchartOrientation.TopToBottom,
+                YesBranchDirection = BranchDirection.LeftInFlow,
+                NoBranchDirection = BranchDirection.RightInFlow,
+                HorizontalSpacing = 50,
+                VerticalSpacing = 30
+            };
+
+            //initialize theming style for SfDiagram
+            Diagram.Theme = new OfficeTheme();
+
+            //Initialize LayoutManager
+            Diagram.LayoutManager = layoutManager;
+    
+            //Adding Sfdiagram as children to mainwindow grid.
+            WindowGrid.Children.Add(Diagram);
+
+        // Initializes the DataSource collection
+        private DataItems GetData()
+        {
+            DataItems itemscollection = new DataItems();
+            itemscollection.Add(new ItemInfo()
+            {
+                Id ="1",
+                NodeShape =App.Current.Resources["Terminator"] as string,
+                Name = "Start",
+                Height =40,
+                Width =100
+            });
+            itemscollection.Add(new ItemInfo()
+            {
+                Id = "2",
+                ParentId =new List<string> { "1" },
+                NodeShape = App.Current.Resources["Decision"] as string,
+                Name = "Decision?",
+                Height = 100,
+                Width =100
+            });
+            itemscollection.Add(new ItemInfo()
+            {
+                Id = "3", ParentId =new List<string> { "2" },
+                Label = new List<string> { "No" },
+                NodeShape = App.Current.Resources["Process"] as string,
+                Name = "Process1",
+                Height =40,
+                Width = 100
+            });
+            itemscollection.Add(new ItemInfo()
+            {
+                Id = "4",
+                ParentId = new List<string> { "2" },
+                Label =new List<string> {"Yes" },
+                NodeShape = App.Current.Resources["Process"] as string,
+                Name = "Process2",
+                Height = 40,
+                Width = 100
+            });
+            itemscollection.Add(new ItemInfo()
+            {
+                Id = "5",
+                ParentId = new List<string> { "4" },
+                NodeShape = App.Current.Resources["Terminator"] as string,
+                Name = "End",
+                Height = 40,
+                Width = 100
+            });
+            return itemscollection;
+        }
+     //Data Object Class
+    public class ItemInfo
+
+    {
+        public string Name { get; set; }
+
+        public string Id { get; set; }
+
+        public List<string> ParentId { get; set; }
+
+        public string NodeShape { get; set; }
+           
+        public List<string> Label { get; set; }
+        
+        public double Width { get; set; }
+        
+        public double Height { get; set; }
+       
+    }
+
+    //Collection to hold the Data Object class
+    public class DataItems : ObservableCollection<ItemInfo>
+    {
+
+    }        
 
 {% endhighlight %}
 {% endtabs %}
 
-![Flowchart](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
+![Flowchart](DataSource_images/DataSource_Flowchart.png)
 
-Sample Link: Navigation->WPF->Diagram->Automatic layout->Flowchart Layout.
+Please refer to the `Flowchart Layout` Sample to depict this support.
+
+Navigation->WPF->Diagram->Automatic layout->Flowchart Layout
