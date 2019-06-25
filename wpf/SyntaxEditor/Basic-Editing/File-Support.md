@@ -40,7 +40,7 @@ editControl.DocumentSource = @"C:\Content.txt";
 
 The following image displays the contents from file set as DocumentSource window.
 
-![File Support](File-Support_images/File-Support_img1.jpeg)
+![Open a file in syntax editor using file path](File-Support_images/File-Support_img1.jpeg)
 
 ### Through open file dialog
 
@@ -58,7 +58,7 @@ editControl.LoadFile();
 
 The following image displays the file open dialog.
 
-![File Support](File-Support_images/File-Support_img2.jpeg)
+![Open a file in syntax editor using open file dialog](File-Support_images/File-Support_img2.jpeg)
 
 ### Drag and drop file.
 The Edit control allows drag and drop file by setting `AllowDrop` property to true. User can drop any type of file which is supported for Edit control.
@@ -93,22 +93,22 @@ editControl.SaveFile();
 
 The following image displays the save file dialog.
 
-![File Support](File-Support_images/File-Support_img3.jpeg)
+![Saving changes in a file using save file dialog](File-Support_images/File-Support_img3.jpeg)
 
 ## DocumentClosing event
-By default, existing file will not be saved while loading or dropping the new file. We can use `DocumentClosing` event to set the save actions and we can use `HasUnsavedChanges` property to identify whether the existing file has changes or not. 
+By default, existing file will not be saved while loading or dropping the new file. You can control this behavior using `Document Closing` event, which  will be rasied when closing a file. You can use `HasUnsavedChanges` property to identify whether the existing file has changes or not, based on that you can choose what action to perform.
 
-| DocumentClosingEventArgs property | Description |
+| DocumentClosingEventArgs | Description |
 |---------------|-------------|
-| HasUnsavedChanges | Represents a value indicating whether the file is modified or not. |
+| HasUnsavedChanges | Represents a value indicating whether the file has unsaved changes |
 | Action| Represents a value to specify the save actions|
 
-We can set the below actions while loading or dropping the file for save , cancel or discard the existing file changes. while setting Prompt type message box will be shown for asking save changes, so that user can save, discard or cancel the changes through promtpt.
-
-*	Save
-*	Discard
-*	Cancel
-*	Prompt
+| SaveAction | Description |
+|---|---|
+| Save | Save the changes before closing document |
+| Discard | Ignore the changes and close the document |
+| Cancel | Cancel the current action that is being performed |
+| Prompt | Open a dialog for the user to choose one of the above action |
 
 {% tabs %}
 {% highlight c# %}
