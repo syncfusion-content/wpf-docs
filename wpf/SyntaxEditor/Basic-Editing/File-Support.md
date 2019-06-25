@@ -13,7 +13,7 @@ Essential Edit WPF facilitates users to create, open, modify and save text files
 
 ## Opening a file
 
-Opening a file in EditControl can be done in three ways.
+Opening a file in the `EditControl` can be done in the following three ways:
 
 ### Using file path
 
@@ -42,7 +42,7 @@ The following image displays the contents from file set as DocumentSource window
 
 ![Open a file in syntax editor using file path](File-Support_images/File-Support_img1.jpeg)
 
-### Through open file dialog
+### Opening through file dialog
 
 Files can also be opened using the LoadFile method. LoadFile method displays a FileOpenDialog to enable you to choose the file that needs to be opened in the EditControl.
 
@@ -60,8 +60,8 @@ The following image displays the file open dialog.
 
 ![Open a file in syntax editor using open file dialog](File-Support_images/File-Support_img2.jpeg)
 
-### Drag and drop file.
-The Edit control allows drag and drop file by setting `AllowDrop` property to true. User can drop any type of file which is supported for Edit control.
+### Dragging the file
+The `EditControl` allows users to drag and drop a file by setting the `AllowDrop` property to true. Users can drop any type of file supported in the `EditControl`.
 
 {% tabs %}
 {% highlight c# %}
@@ -96,19 +96,19 @@ The following image displays the save file dialog.
 ![Saving changes in a file using save file dialog](File-Support_images/File-Support_img3.jpeg)
 
 ## DocumentClosing event
-By default, existing file will not be saved while loading or dropping the new file. You can control this behavior using `Document Closing` event, which  will be rasied when closing a file. You can use `HasUnsavedChanges` property to identify whether the existing file has changes or not, based on that you can choose what action to perform.
+By default, the existing file will not be saved when loading or dropping a new file. You can control this behavior using the `DocumentClosing` event, which  occurs when closing a file. You can use the `HasUnsavedChanges` property to identify whether the existing file contains changes, based on which you can choose the action need to be performed.
 
 | DocumentClosingEventArgs | Description |
 |---------------|-------------|
-| HasUnsavedChanges | Represents a value indicating whether the file has unsaved changes |
-| Action| Represents a value to specify the save actions|
+| HasUnsavedChanges | Represents a value that indicates whether the file contains unsaved changes. |
+| Action| Represents a value to specify the save actions.|
 
 | SaveAction | Description |
 |---|---|
-| Save | Save the changes before closing document |
-| Discard | Ignore the changes and close the document |
-| Cancel | Cancel the current action that is being performed |
-| Prompt | Open a dialog for the user to choose one of the above action |
+| Save | Saves the changes before closing document. |
+| Discard | Ignores the changes and closes the document. |
+| Cancel | Cancels the current action that is being performed. |
+| Prompt | Opens a dialog for allowing users to choose one of the above actions. |
 
 {% tabs %}
 {% highlight c# %}
