@@ -242,8 +242,8 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
         // Initializes the DataSource collection
         private DataItems GetData()
         {
-            DataItems itemscollection = new DataItems();
-            itemscollection.Add(new ItemInfo()
+            DataItems collection = new DataItems();
+            collection.Add(new ItemInfo()
             {
                 Id ="1",
                 NodeShape =App.Current.Resources["Terminator"] as string,
@@ -251,7 +251,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
                 Height =40,
                 Width =100
             });
-            itemscollection.Add(new ItemInfo()
+            collection.Add(new ItemInfo()
             {
                 Id = "2",
                 ParentId =new List<string> { "1" },
@@ -260,7 +260,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
                 Height = 100,
                 Width =100
             });
-            itemscollection.Add(new ItemInfo()
+            collection.Add(new ItemInfo()
             {
                 Id = "3", ParentId =new List<string> { "2" },
                 Label = new List<string> { "No" },
@@ -269,7 +269,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
                 Height =40,
                 Width = 100
             });
-            itemscollection.Add(new ItemInfo()
+            collection.Add(new ItemInfo()
             {
                 Id = "4",
                 ParentId = new List<string> { "2" },
@@ -279,7 +279,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
                 Height = 40,
                 Width = 100
             });
-            itemscollection.Add(new ItemInfo()
+            collection.Add(new ItemInfo()
             {
                 Id = "5",
                 ParentId = new List<string> { "4" },
@@ -288,7 +288,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
                 Height = 40,
                 Width = 100
             });
-            return itemscollection;
+            return collection;
         }
      //Data Object Class
     public class ItemInfo

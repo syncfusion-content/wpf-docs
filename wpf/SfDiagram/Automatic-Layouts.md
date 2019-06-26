@@ -552,7 +552,7 @@ Decision symbol denotes the question that can be answered in a binary format (Ye
 | Same As Flow |Right In Flow |![Vertical](Automatic-Layouts_images/Automatic-Layouts_YesSame_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_YesSame_Horizontal.png) |
 |Same As Flow |Same As Flow|![Vertical](Automatic-Layouts_images/Automatic-Layouts_BothSame_TopToBottom.png)|![Horizontal](Automatic-Layouts_images/Automatic-Layouts_BothSame_Horizontal.png)|
 
-N> If both branch directions are same, **Yes** branch will be prioritised.
+N> If both branch directions are same, **Yes** branch will be prioritized.
 
 ### Custom Yes and No Branch Values
 
