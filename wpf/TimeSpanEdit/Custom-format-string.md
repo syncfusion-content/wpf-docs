@@ -18,7 +18,7 @@ The fields can be formatted to show what the numerals denote i.e. hours minutes 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TimeSpanEdit Value="10.2:25:52" Format="d ‘days’ h 'hours'"  Height="40"/>
+<syncfusion:TimeSpanEdit Value="10.2:25:52" Format="d 'days' h 'hours'"  Height="40"/>
 
 {% endhighlight %}
 
