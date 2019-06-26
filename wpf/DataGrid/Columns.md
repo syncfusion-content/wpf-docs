@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid Columns | Template Column | Syncfusion
-description: Explains WPF DataGrid column generation and handling column formatting, resizing, ordering, hiding, drag & drop, freeze columns using properties and data annotation.
+description: Explains WPF DataGrid column auto generation and handling column formatting, resizing, ordering, hiding, drag & drop, freeze columns and data annotation.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -916,7 +916,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 
 1. SfDataGrid has support to freeze the number of columns from the left or right. There is no support to freeze a specific column.
 
-## DataGrid stacked headers - Multirow headers
+## DataGrid stacked headers - Multi row headers
 
 SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.StackedHeaderRows.html). You can group one or more columns under each stacked header.
 
