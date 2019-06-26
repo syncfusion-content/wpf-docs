@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard Operations | DataGrid | WPF | Syncfusion
-description: How to perform clipboard operations 
+title: WPF DataGrid Clipboard Operations | Copy to Clipboard | Syncfusion
+description: How to perform copy, cut and paste clipboard operations in WPF DataGrid and also explains various available clipboard operation customizations.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -15,7 +15,7 @@ SfDataGrid provide support for the clipboard operations such as cut, copy and pa
 N> Clipboard operations is not supported for the summary rows, add new row and unbound rows.
 
  
-## Copy
+## Copy to Clipboard in DataGrid
 
 Copy operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridCopyOption.html) property. 
 
@@ -50,7 +50,7 @@ this.dataGrid.GridCopyOption = GridCopyOption.CopyData | GridCopyOption.IncludeH
 
 N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is [Cell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html).
 
-## Paste
+## Paste from Clipboard in DataGrid
 
 Paste operation works based on [GridPasteOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridPasteOption.html) property. 
 
@@ -81,7 +81,7 @@ this.dataGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 
 ![Displaying paste operation with GridPasteOption in WPF SfDataGrid](Clipboard-Operations_images/Clipboard-Operations_img2.png)
 
-## Cut
+## Cut to Clipboard in DataGrid
 
 Cut operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridCopyOption.html) property. 
 
@@ -263,7 +263,7 @@ void dataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEventArgs e)
 
 ## Handling Programmatically
 
-### Copy programmatically
+### Programmatically Copy to Clipboard in WPF DataGrid
 
 Copy the selected records/cells in SfDataGrid by using [Copy](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~Copy.html) method in [GridCopyPaste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridCopyPaste.html) of SfDataGrid.
 
@@ -303,7 +303,7 @@ this.dataGrid.GridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-### Copy rows without selecting
+### Copy rows without selecting in WPF DataGrid
 
 You can copy the records without selection by using [CopyRowsToClipboard](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~CopyRowsToClipboard.html) method in `GridCopyPaste` of SfDataGrid.
  
@@ -313,7 +313,7 @@ this.dataGrid.GridCopyPaste.CopyRowsToClipboard(2, 4);
 {% endhighlight %}
 {% endtabs %}
 
-### Cut Programmatically
+### Programmatically Cut Data to Clipboard in WPF DataGrid
 
 Cut the selected records/cells in SfDataGrid by using [Cut](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~Cut.html) method in [GridCopyPaste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridCopyPaste.html) of SfDataGrid.
 
@@ -343,7 +343,7 @@ this.dataGrid.GridCopyPaste.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-### Paste programmatically
+### Programmatically Paste in DataGrid   
 
 Paste the clipboard value into SfDataGrid by using [Paste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~Paste.html) method in [GridCopyPaste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridCopyPaste.html) of SfDataGrid.
 
@@ -365,7 +365,7 @@ this.dataGrid.GridCopyPaste.Paste();
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing Copy Paste behavior
+## Customizing Copy Paste Behavior in WPF DataGrid
 
 SfDataGrid process the clipboard operations in [GridCutCopyPaste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class. You can customize the default copy paste behaviors by overriding `GridCutCopyPaste` class and set it to `SfDataGrid.GridCopyPaste`.
 
@@ -392,7 +392,7 @@ public MainWindow()
 {% endhighlight %}
 {% endtabs %}
 
-### Paste a cell into many cells
+### Paste a cell into many cells in WPF DataGrid
 
 By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in SfDataGrid. The below code shows how to copy one cell and paste it into all the selected cells by overriding [PasteToCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~PasteToCell.html) method in [GridCutCopyPaste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class.
 
@@ -444,7 +444,7 @@ public class CustomCopyPaste : GridCutCopyPaste
 {% endhighlight %}
 {% endtabs %}
 
-### Paste a record into many rows
+### Paste a record into many rows in WPF DataGrid
 
 By default, you can able to copy one row and paste it into another row when Row Selection is enabled in SfDataGrid. The below code shows how to copy one row and paste it into all selected rows by overriding the [PasteToRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~PasteToRow.html) method in the [GridCutCopyPaste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class.
 
@@ -487,7 +487,7 @@ public class CustomCopyPaste : GridCutCopyPaste
 {% endhighlight %}
 {% endtabs %}
 
-### Select pasted records
+### Select pasted records in WPF DataGrid
 
 By default after pasting the clipboard value to SfDataGrid selection is maintains in previously selected records as it is. The below code shows select the pasted records after the Paste operation, by overriding the [PasteToRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~PasteToRows.html) and [PasteToRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~PasteToRow.html) methods in [GridCutCopyPaste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class. This code is applicable when [SelectionUnit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionUnit.html) is [Row](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html).
 
@@ -523,7 +523,7 @@ public class CustomCopyPaste : GridCutCopyPaste
 {% endhighlight %}
 {% endtabs %}
 
-### Create new records while pasting
+### Create new records while pasting in WPF DataGrid
 
 By default while paste the clipboard value to SfDataGrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in SfDataGrid by overriding the [PasteToRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste~PasteToRows.html) method in [GridCutCopyPaste](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class.
 
