@@ -214,7 +214,7 @@ The Flowchart layout is a diagrammatic representation of a process, workflow,sys
 
 Different flowchart symbols have different meanings that are used to represent different states in Flowchart. The following table describes the most common Flowchart symbols that are used in creating flowchart.
 
-|Symbol|Name|Description|
+|Symbol|Built-in resource key in SfDiagram|Description|
 |---|---|---|
 |![Terminator](Automatic-Layouts_images/Automatic-Layouts_Terminator.png)|Terminator/StartOrEnd|Indicates the beginning and ending of the process.|
 |![Data](Automatic-Layouts_images/Automatic-Layouts_Data.png)|Data|Indicates data input or output for a process.|
@@ -535,15 +535,17 @@ Arranges the Layout Horizontally from Left to Right.
 
 ![Horizontal](Automatic-Layouts_images/Automatic-Layouts_Flowchart_Horizontal.png) 
 
-## Customize the Decision directions
+## Customize the Decision output directions
 
-Decision symbol denotes the question that can be answered in a binary format (Yes/No,True/False).The output direction of the decision can be controlled by the direction of "Yes" and "No" branches using the `YesBranchDirection` and `NoBranchDirection` properties of `FlowchartLayout` class.
+Decision symbol denotes the question that can be answered in a binary format (Yes/No,True/False).The output direction of the decision symbol can be controlled by the direction of "Yes" and "No" branches using the `YesBranchDirection` and `NoBranchDirection` properties of `FlowchartLayout` class.
 
 `Left In Flow` - Arranges the children to the Left side of the Decision.
 
 `Right In Flow`-Arranges the children to the Right side of the Decision.
 
 `Same As Flow`-Arranges the childen as same as the Decision flow.
+
+The following table will explain the pictorial representation of the behavior:
 
 |YesBranchDirection| NoBranchDirection | TopToBottom | LeftToRight |
 |---|---|---|---|
@@ -556,7 +558,7 @@ N> If both branch directions are same, **Yes** branch will be prioritized.
 
 ### Custom Yes and No Branch Values
 
-Default values of the YesBranchValues and NoBranchValues can be customized on demand by using the `YesBranchValues` and `NoBranchValues` properties of `FlowchartLayout` class.Default Values of YesBranch would be **Yes,True** and NoBranch would be **No,False**.
+The decision symbol will produce the two branches as output which will be Yes branch and No branch. The output branch with connector text as either “Yes” or “True” will be considered as Yes branch and the output branch with connector text as either “No” or “False” will be considered as No branch. These Yes branch and No branch connector text values can be customized be using the `YesBranchValues` and `NoBranchValues` properties of `FlowchartLayout` class. The following code example illustrate this.
 
 {% tabs %}
 {% highlight xaml %}
