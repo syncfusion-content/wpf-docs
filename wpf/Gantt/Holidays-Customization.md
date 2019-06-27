@@ -9,23 +9,23 @@ documentation: ug
 
 # Holidays
 
-Allow customer to differentiate the holidays date in GanttControl. This support is used to highlight the holidays in the Gantt chart.
+The GanttControl allows customers to differentiate the dates of holidays. This support is used to highlight the holidays in the Gantt chart.
 
 The holidays can be specified using the `Holidays` property in the SfGantt, which holds a collection of `GanttHoliday`.
 
-The following properties in the GanttHoliday are used to define the holidays
+The following properties in the GanttHoliday are used to define the holidays:
 
-* `Day` : Specifies the holiday date.
+* `Day`: Specifies the holiday date.
 
-* `Background` : Specifies the brush to highlight the holiday.
+* `Background`: Specifies the brush to highlight the holiday.
 
-N> If background is not defined, then Non-WorkingDays background get applied.
+N> If the background is not defined, then the Non-WorkingDays background will be applied.
 
-The following properties in GanttControl are used to customize the holiday feature
+The following properties in the GanttControl are used to customize the holiday feature:
 
-* `ShowHolidays` : Indicating whether enables or disables the holidays in Gantt chart.
+* `ShowHolidays`: Indicates whether to enable or disable the holidays in the Gantt chart.
 
-* `ExcludeHolidays` : Indicating whether include or exclude the holidays in duration calculation.
+* `ExcludeHolidays`: Indicates whether to include or exclude the holidays in duration calculation.
 
 The following code sample demonstrates how to define the holidays.
 
@@ -94,9 +94,10 @@ public partial class MainWindow : Window
 {% endhighlight %}
 {% endtabs %}
 
-The following image shows customized holidays sample
+The following screenshot illustrates the customized holidays sample.
 
 ![Holiday customization sample](Holiday-Customization_images/Holiday-Customization_images_img1.png)
 
 
-You can download the holiday customization sample from [here](https://github.com/SyncfusionExamples/WPF-Gantt-holiday-customization-).
+You can download the holiday customization sample from the following link:
+[Holiday customization sample](https://github.com/SyncfusionExamples/WPF-Gantt-holiday-customization-).
