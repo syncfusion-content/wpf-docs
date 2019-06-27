@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfDateTimeRangeNavigator | wpf | Syncfusion
-description: overview
+title: Overview | DateTimeRangeNavigator | WPF | Syncfusion
+description: Overview and key features of DateTimeRangeNavigator are available in this section.
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug

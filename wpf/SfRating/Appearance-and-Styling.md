@@ -9,349 +9,242 @@ documentation: ug
 
 # Appearance and Styling
 
-### RatedFill
+When the default view is not needed, you can customize the view of WPF SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
 
-The RatedFill property fills the rated area with the specified solid color in the Rating control.
+N> These properties are available in SfRatingItem. To set this property, use the ItemContainerStyle property of the SfRating control.
 
-{%highlight xaml%}
+## Set fill color
 
+The SfRating control supports to set the fill color to the selected and unselected items.
 
+### Selected items
 
+The `RatedFill` property fills the rated area with the specified solid color in the SfRating control.
 
+{% highlight xaml %}
 
-<editors:SfRating ItemsCount="5" Value="2">
+    <rating:SfRating ItemsCount="5" Value="2" >
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="RatedFill" Value="Green"></Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
+	
+{% endhighlight %}
 
-            <editors:SfRating.ItemContainerStyle>
+![Rated item ](images/rated_fill.png)
 
-                <Style TargetType="editors:RatingItem">
+### Unselected items
 
-                    <Setter Property="RatedFill" Value="Green"/>
+The `UnRatedFill` property fills the unrated area with the specified solid color in the SfRating control.
 
-                </Style>
+{% highlight xaml %}
 
-            </editors:SfRating.ItemContainerStyle>
+    <rating:SfRating ItemsCount="5" Value="2" >
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="UnratedFill" Value="Green">
+                </Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
 
-</editors:SfRating>
+{% endhighlight %}
 
-{%endhighlight%}
+![Unrated item](images/unrated_fill.png)
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+## Set stroke color
 
+The SfRating control supports to set the stroke color to the selected and unselected items.
 
+### Selected items
+
+The `RatedStroke` property sets the stroke color to the rated area with the specified solid color to the selected items in the SfRating control.
+
+{% highlight xaml %}
+
+    <rating:SfRating ItemsCount="5" Value="2" >
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="RatedStroke" Value="Green">
+                </Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
+	
+{% endhighlight %}
+
+![Rated item stroke color](images/ratedstroke.png)
+
+### Unselected items
+
+The `UnratedStroke` property sets the stroke color to the unrated area with the specified solid color in the SfRating control.
+
+{% highlight xaml %}
+
+    <rating:SfRating ItemsCount="5" Value="2" >
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="UnratedStroke" Value="Green">
+                </Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
+
+{% endhighlight %}
+
+![Unrated item stroke color](images/unratedstroke.png)
+
+## Set stroke thickness
+
+The SfRating control supports to set the stroke thickness to the selected and unselected items.
+
+### Selected items
+
+The `RatedStrokeThickness` property sets the stroke thickness to the rated area with the specified value in the SfRating control.
+
+{% highlight xaml %}
+
+    <rating:SfRating ItemsCount="5" Value="2" >
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="RatedStroke" Value="Green"></Setter>
+                <Setter Property="RatedStrokeThickness" Value="2"></Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
+
+{% endhighlight %}
+
+![Rated item stroke thickness](images/ratedstrokethickness.png)
+
+### Unselected items
+
+The `UnratedStrokeThickness` property sets the stroke thickness to the unrated area with the specified value in the SfRating control.
+
+{% highlight xaml %}
+
+    <rating:SfRating ItemsCount="5" Value="2" >
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="UnratedStroke" Value="Green"></Setter>
+                <Setter Property="UnratedStrokeThickness" Value="2"></Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
+	
+{% endhighlight %}
+
+![Unrated item stroke thickness](images/unratedstrokethickness.png)
 
 ### PointerOverFill
 
-The PointerOverFill property fills the mouse over area with the specified solid color in the Rating control.
+The `PointerOverFill` property fills the mouse over area with the specified solid color in the SfRating control.
 
-{%highlight xaml%}
+{% highlight xaml %}
 
+    <rating:SfRating ItemsCount="5">
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="PointerOverFill" Value="Green"></Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
 
+{% endhighlight %}
 
-
-
-<editors:SfRating ItemsCount="5" Value="2">
-
-            <editors:SfRating.ItemContainerStyle>
-
-                <Style TargetType="editors:RatingItem">
-
-<Setter Property="PointerOverFill" Value="Green"/>
-
-                </Style>
-
-            </editors:SfRating.ItemContainerStyle>
-
-</editors:SfRating>
-
-
-{%endhighlight%}
-
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
-
-
-
-### RatedStroke
-
-RatedStroke sets the stroke for the rated area with the specified solid color in the Rating control.
-
-{%highlight xaml%}
-
-
-
-
-
-<editors:SfRating ItemsCount="5" Value="2">
-
-            <editors:SfRating.ItemContainerStyle>
-
-                <Style TargetType="editors:RatingItem">
-
-                    <Setter Property="RatedStroke" Value="Green"/>
-
-                </Style>
-
-            </editors:SfRating.ItemContainerStyle>
-
-</editors:SfRating >
-
-
-{%endhighlight%}
-
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
-
-
-
-### RatedStrokeThickness
-
-RatedStrokeThickness sets the stroke thickness for the rated area with the specified value in the Rating control.
-
-{%highlight xaml%}
-
-
-
-
-
-<editors:SfRating ItemsCount="5" Value="2">
-
-            <editors:SfRating.ItemContainerStyle>
-
-                <Style TargetType="editors:RatingItem">
-
-                    <Setter Property="RatedStroke" Value="Green"/>
-
-<Setter Property="RatedStrokeThickness" Value="2"/>
-
-                </Style>
-
-            </editors:SfRating.ItemContainerStyle>
-
-</editors:SfRating>
-
-
-{%endhighlight%}
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
-
+![PointOverFill](images/pointover_fill.png)
 
 ### PointerOverStroke
 
-PointerOverStroke sets the stroke for the mouseover area with the specified solid color in the Rating control.
+The `PointerOverStroke` property sets the stroke color to the mouse over area with the specified solid color in the SfRating control.
 
-{%highlight xaml%}
+{% highlight xaml %}
 
+    <rating:SfRating ItemsCount="5">
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="PointerOverStroke" Value="Green"></Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
 
+{% endhighlight %}
 
-
-
-<editors:SfRating ItemsCount="5" Value="2">
-
-            <editors:SfRating.ItemContainerStyle>
-
-                <Style TargetType="editors:RatingItem">
-
-<Setter Property="PointerOverStroke" Value="Green"/>
-
-                </Style>
-
-            </editors:SfRating.ItemContainerStyle>
-
-</editors:SfRating>
-
-
-{%endhighlight%}
-
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
-
-
+![PointOverStroke](images/pointover_stroke.png)
 
 ### PointerOverStrokeThickness
 
-PointerOverStrokeThickness sets the stroke thickness for the mouseover area with the specified value in the Rating control.
+The `PointerOverStrokeThickness` property sets the stroke thickness to the mouse over area with the specified value in the SfRating control.
 
-{%highlight xaml%}
+{% highlight xaml %}
 
+    <rating:SfRating ItemsCount="5">
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="PointerOverStroke" Value="Green"></Setter>
+                <Setter Property="PointerOverStrokeThickness" Value="2"></Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
 
+{% endhighlight %}
 
-
-
-<editors:SfRating ItemsCount="5" Value="2">
-
-            <editors:SfRating.ItemContainerStyle>
-
-                <Style TargetType="editors:RatingItem">
-
-                    <Setter Property="PointerOverStroke" Value="Green"/>
-
-<Setter Property="PointerOverStrokeThickness" Value="2"/>
-
-                </Style>
-
-            </editors:SfRating.ItemContainerStyle>
-
-</editors:SfRating>
-
-{%endhighlight%}
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
-
-
-
-### UnratedFill
-
-The UnratedFill property fills the unrated area with the specified solid color in the RatingControl.
-
-{%highlight xaml%}
-
-
-
-
-
-<editors:SfRating ItemsCount="5" Value="2">
-
-            <editors:SfRating.ItemContainerStyle>
-
-                <Style TargetType="editors:RatingItem">
-
-<Setter Property="UnratedFill" Value="Green"/>
-
-                </Style>
-
-            </editors:SfRating.ItemContainerStyle>
-
-</editors:SfRating >
-
-{%endhighlight%}
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
-
-
-
-### UnratedStroke
-
-UnratedStroke sets the stroke for the unrated area with the specified solid color in the Rating control.
-
-{%highlight xaml%}
-
-
-
-
-
-
-<editors:SfRating ItemsCount="5" Value="2">
-
-            <editors:SfRating.ItemContainerStyle>
-
-                <Style TargetType="editors:RatingItem">
-
-<Setter Property="UnratedStroke" Value="Green"/>
-
-                </Style>
-
-            </editors:SfRating.ItemContainerStyle>
-
-</editors:SfRating >
-
-{%endhighlight%}
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
-
-
-
-### UnratedStrokeThickness
-
-UnratedStrokeThickness sets the stroke thickness for the unrated area with the specified value in the Rating control.
-
-{%highlight xaml%}
-
-
-
-
-
-<editors:SfRating ItemsCount="5" Value="2">
-
-            <editors:SfRating.ItemContainerStyle>
-
-                <Style TargetType="editors:RatingItem">
-
-                    <Setter Property="UnratedStroke" Value="Green"/>
-
-<Setter Property="UnratedStrokeThickness" Value="2"/>
-
-                </Style>
-
-            </editors:SfRating.ItemContainerStyle>
-
-</editors:SfRating >
-
-{%endhighlight%}
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
-
-
-
-N> The above properties are available in RatingItem. To set this property, use the ItemContainerStyle property of Rating.
-
-
+![PointerOverStrokeThickness](images/pointover_strokethickness.png)
 
 ### Height
 
-You can set the Height of each SfRatingItem by using Height property. 
+You can set the height of each SfRatingItem using the `Height` property.
 
-{%highlight xaml%}
+{% tabs %}
 
+{% highlight xaml %}
 
+    <rating:SfRating Value="3" >
+        <rating:SfRatingItem  Height="20"/>
+        <rating:SfRatingItem  Height="18"/>
+        <rating:SfRatingItem  Height="16"/>
+        <rating:SfRatingItem  Height="14"/>
+        <rating:SfRatingItem  Height="12"/>
+    </rating:SfRating>
 
-<syncfusion:SfRating Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" 
+{% endhighlight %}
 
-                             VerticalContentAlignment="Center" Value="3">
+{% highlight C# %}
 
-<syncfusion:SfRatingItem Height="20"/>
+SfRating rating;
+public MainWindow()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.Value = 3;
+    rating.Items.Add(new SfRatingItem() { Height = 20 });
+    rating.Items.Add(new SfRatingItem() { Height = 18 });
+    rating.Items.Add(new SfRatingItem() { Height = 16 });
+    rating.Items.Add(new SfRatingItem() { Height = 14 });
+    rating.Items.Add(new SfRatingItem() { Height = 12 });
+    Content = rating;
+}
 
-                    <syncfusion:SfRatingItem Height="18"/>
+{% endhighlight %}
 
-                    <syncfusion:SfRatingItem Height="16"/>
+{% endtabs %}
 
-                    <syncfusion:SfRatingItem Height="14"/>
+![SfRating item custom height](images/height_customization.png)
 
-                    <syncfusion:SfRatingItem Height="12"/>
+To set same height to each SfRatingItem, use the `ItemContainerStyle` property.
 
-                </syncfusion:SfRating>
+{% highlight xaml %}
 
-{%endhighlight%}
+    <rating:SfRating Value="4" ItemsCount="10" >
+        <rating:SfRating.ItemContainerStyle>
+            <Style TargetType="rating:SfRatingItem">
+                <Setter Property="Height" Value="12"></Setter>
+            </Style>
+        </rating:SfRating.ItemContainerStyle>
+    </rating:SfRating>
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img10.png)
+{% endhighlight %}
 
-
-
-To set same Height for each SfRatingItem, you can use the ItemContainerStyle.
-
-{%highlight xaml%}
-
-
-
-<syncfusion:SfRating Height="50" Width="300" ItemsCount="10" Value="4">
-
-<syncfusion:SfRating.ItemContainerStyle>
-
-                        <Style TargetType="syncfusion:SfRatingItem">
-
-<Setter Property="Height" Value="12"/>
-
-                        </Style>
-
-                    </syncfusion:SfRating.ItemContainerStyle>
-
-                </syncfusion:SfRating>
-
-
-{%endhighlight%}
-
-![](Appearance-and-Styling_images/Appearance-and-Styling_img11.png)
-
-
-
-
-
+![SfRating item normal height](images/equal_height.png)

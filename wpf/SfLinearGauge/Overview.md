@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| SfLinearGauge | Wpf | Syncfusion
-description: Overview 
+title: Overview| Linear Gauge | WPF | Syncfusion
+description: WPF Linear Gauge control helps to visualize the numerical values on a linear scale. It supports scales, pointers, etc...
 platform: wpf
 control: SfLinearGauge
 documentation: ug
@@ -26,6 +26,6 @@ Highlights the desired [`Ranges`](https://help.syncfusion.com/wpf/sflineargauge/
 
 The [`Pointers`](https://help.syncfusion.com/wpf/sflineargauge/pointers) supports adding multiple pointers (bar and symbol) to the linear scale.
 
-![](Overview_images/Overview_img1.jpeg)
+![Linear Gauge - Overview](Overview_images/Overview_img1.jpeg)
 
 

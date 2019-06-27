@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Explore the features of the Diagram control.
-description: Explore the features of the Diagram control.
+title: Overview of Diagram Control | WPF | Syncfusion
+description: WPF Diagram allows user to create and edit flow charts, organizational charts, UML, swim lanes, mind maps, entity relationships, and more.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 **Essential Diagram WPF** creates rich Visio like applications. Its Framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
 
-![](Overview_images/Overview_img1.png)
+![Diagram - Overview](Overview_images/Overview_img1.png)
 
 The list of list features of Diagram control in WinRT is as follows.
 

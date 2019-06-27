@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfTextBoxExt | wpf | Syncfusion
-description: overview
+title: Overview | TextBoxExt | WPF | Syncfusion
+description: This section provides an overview about features in WPF TextBoxExt control.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 TextBoxExt is an extended version of TextBox control. Most of the functionality of TextBoxExt is inherited from the [SfTextBox](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.textbox) class.
 
-![](Overview_images/Overview_img1.png)
+![TextBoxExt - Overview](Overview_images/Overview_img1.png)
 
 ### Key Features
 

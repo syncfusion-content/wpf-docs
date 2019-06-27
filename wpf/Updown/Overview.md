@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | UpDown | WPF | Syncfusion
-description: The Updown control displays numeric values. Allows users to increase or decrease the values using spin button interface.
+description: WPF UpDown control displays numeric values. It allows users to define maximum and minimum values to which the user can increment or decrement the input value.
 platform: WPF
 control: UpDown
 documentation: ug

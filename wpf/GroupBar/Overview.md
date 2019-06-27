@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview| GroupBar | WPF | Syncfusion
-description: overview
+description: WPF GroupBar control implements list-type controls in the UI, similar to the Microsoft Outlook Bar.
 platform: WPF
 control: GroupBar
 documentation: ug

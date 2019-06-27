@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | AutoComplete | wpf | Syncfusion
-description: The WPF AutoComplete or search textbox auto suggests users to select an item with built-in features such as multiple selection, history, and filtering.
+title: Overview | AutoComplete | WPF | Syncfusion
+description: WPF AutoComplete allows user to select an item from live drop-down which hints as you enter the input text.
 platform: wpf
 control: AutoComplete
 documentation: ug

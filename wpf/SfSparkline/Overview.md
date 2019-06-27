@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfSparkline | wpf | Syncfusion
-description: overview
+title: Overview | Sparkline | WPF | Syncfusion
+description: WPF Sparkline control allows users to visualize trends and variations in a small amount of space. It supports line, column, and win or loss.
 platform: wpf
 control: SfSparkline
 documentation: ug

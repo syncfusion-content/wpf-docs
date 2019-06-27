@@ -9,75 +9,94 @@ documentation: ug
 
 # Precision
 
-Precision defines the accuracy level of the rating control. It provides the following three types of precision:
-
-1. Standard
-2. Half
-3. Exact
-
-
+The precision mode defines the accuracy level of the SfRating control. It has Standard, Half, and Exact options. By default, the precision mode of the SfRating control is set to `Standard`.
 
 ### Standard
 
-The rating item will be filled completely based on the value of the Rating control when the mouse enters the rating item.
+When the precision mode of the SfRating control is set to `Standard`, the rating item will be filled completely based on the rating value.
 
-In the following example, 1.3 has been set for the value. The rating item has been filled completely for standard precision.
+{% tabs %}
 
-{%highlight xaml%}
+{% highlight xaml %}
 
+	<rating:SfRating ItemsCount="5" Precision="Standard"></rating:SfRating>
+	
+{% endhighlight %}
 
+{% highlight C# %}
 
+SfRating rating;
+public MainWindow()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.ItemsCount = 5;
+    rating.Precision = Precision.Standard;
+    Content = rating;
+}
 
+{% endhighlight %}
 
-<editors:SfRating ItemsCount="5" Value="1.3" 
+{% end tabs %}
 
-Precision="Standard/>
-
-{%endhighlight%}
-
-![](Precision_images/Precision_img1.png)
-
-
+![SfRating standard precision mode](images/Precision_Standard.png)
 
 ### Half
 
-The rating item will be filled partially based on the value of the Rating control when the mouse enters the rating item.
+When the precision mode of the SfRating control is set to `Half`, the rating item will be filled partially based on the rating value.
 
-In this case, 0.3 has been set for the value. The rating item was filled partially.
+{% tabs %}
 
-{%highlight xaml%}
+{% highlight xaml %}
 
+    <rating:SfRating ItemsCount="5" Precision="Half"></rating:SfRating>	
+    
+{% endhighlight %}
 
+{% highlight C# %}
 
+SfRating rating;
+public MainWindow()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    ItemsCount = 5;
+    rating.Precision = Precision.Half;
+    Content = rating;
+}
 
+{% endhighlight %} 
 
-<editors:SfRating ItemsCount="5" Value="1.3" Precision="Half"/>
+{% endtabs %}
 
-{%endhighlight%}
-
-![](Precision_images/Precision_img2.png)
-
-
+![SfRating half precision mode](images/Precision_Half.png)
 
 ### Exact
 
-The rating item will be filled exactly based on the value of the Rating control and when mouse enters the rating item.
+If the precision mode of SfRating is set to `Exact`, the rating item will be filled exactly based on the rating value.
 
-In this case, 1.3 has been set for the Value. Rating item was filled to reflect the exact value.
+{% tabs %}
 
-{%highlight xaml%}
+{% highlight xaml %}
 
+    <rating:SfRating ItemsCount="5" Precision="Exact"></rating:SfRating>
 
+{% endhighlight %}
 
+{% highlight c# %}
 
+SfRating rating;
+public MainWindow()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.ItemsCount = 5;
+    rating.Precision = Precision.Exact;
+    Content = rating;
+}
 
-<editors:SfRating ItemsCount="5" Value="1.3" 
+{% endhighlight %} 
 
-Precision="Exact"/>
+{% endtabs %}
 
-{%endhighlight%}
-
-![](Precision_images/Precision_img3.png)
-
-
-
+![SfRating exact precision mode](images/Precision_Exact.png) 

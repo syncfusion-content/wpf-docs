@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with SfDataGrid for Syncfusion Essential WPF
-description: How to add SfDataGrid and enable its basic features.
+title: Getting started with DataGrid for WPF | DataGrid Example | Syncfusion
+description: How to integrate WPF DataGrid in an application and enable its basic features with example.
 platform: wpf
 control: SfDataGrid
 documentation: ug

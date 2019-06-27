@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ranges| SfCircularGauge | Wpf | Syncfusion
-description: Ranges
+title: Ranges| Circular Gauge | WPF | Syncfusion
+description: Ranges in WPF Circular Gauge are used to specify or group the scale values. It specifies a start value and end value in the CircularGauge within a scale.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
@@ -71,7 +71,7 @@ The start and end values of ranges are set by using the `StartValue` and `EndVal
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img1.png)
+![Ranges - Circular Gauge](Ranges_images/Ranges_img1.png)
 
 ## Range customization
 
@@ -141,7 +141,7 @@ A range’s UI is customized by using the `Stroke`, `StrokeThickness`, and `Rang
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img2.png)
+![Ranges - Circular Gauge](Ranges_images/Ranges_img2.png)
 
 ## Setting width for range
 
@@ -211,7 +211,7 @@ The appearance of the circular range is customized by setting the `StartWidth` a
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img3.png)
+![Ranges - Circular Gauge](Ranges_images/Ranges_img3.png)
 
 ## Binding range stroke
 
@@ -309,7 +309,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img4.png)
+![Ranges - Circular Gauge](Ranges_images/Ranges_img4.png)
 
 ## Setting position for range
 
@@ -417,7 +417,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img5.png)
+![Ranges - Circular Gauge](Ranges_images/Ranges_img5.png)
 
 ### Range offset
 
@@ -483,7 +483,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img6.png)
+![Ranges - Circular Gauge](Ranges_images/Ranges_img6.png)
 
 ## Setting multiple ranges
 
@@ -591,7 +591,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img7.png)
+![Ranges - Circular Gauge](Ranges_images/Ranges_img7.png)
 
 
 
