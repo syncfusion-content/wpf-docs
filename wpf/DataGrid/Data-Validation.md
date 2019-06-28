@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid Validation | Cell Validation | Syncfusion
-description: WPF DataGrid validates the data in cell and row based on IDataErrorInfo, INotifyDataErrorInfo & Data Annotations. Also, displays error information to user.
+description: WPF DataGrid validates cell and row data based on IDataErrorInfo, INotifyDataErrorInfo & Data Annotations. It also shows error information to user.
 platform: wpf
 control: SfDataGrid
 documentation: ug

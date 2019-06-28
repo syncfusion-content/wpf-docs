@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid Column Types | Template Column | Syncfusion
-description: WPF DataGrid Control supports various built-in editors via built-in column types such as textbox column, checkbox column, template column, datetime column & etc
+description: WPF DataGrid supports various built-in editors through built-in column types such as textbox column , combobox column, template column, datetime column, etc.
 platform: wpf
 control: SfDataGrid
 documentation: ug
