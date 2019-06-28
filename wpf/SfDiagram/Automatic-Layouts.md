@@ -558,7 +558,10 @@ N> If both branch directions are same, **Yes** branch will be prioritized.
 
 ### Custom Yes and No branch values
 
-The decision symbol will produce the two branches as output, which will be Yes branch and No branch. The output branch with connector text as either “Yes” or “True” will be considered as Yes branch and the output branch with connector text as either “No” or “False” will be considered as No branch. These Yes branch and No branch connector text values can be customized by using the `YesBranchValues` and `NoBranchValues` properties of `FlowchartLayout` class. The following code example illustrate this.
+The decision symbol will produce the two branches as output, which will be Yes branch and No branch. If the output branch connector text value matches the values in the `YesBranchValues` property of `FlowchartLayout` class, it will be considered as **Yes** branch and similarly if connector text value matches the values in the `NoBranchValues` property, it will be considered as **No** branch. By default, the `YesBranchValues` property will contain **Yes** and **True** string values and the `NoBranchValues` property will contain **No** and **False** string values. 
+
+Any text value can be given as a connector text to describe the flow. Also, any string value can be given in the `YesBranchValues` and `NoBranchValues` . To decide the flow based on if or else,  that connector text should match the values in the `YesBranchValues` and `NoBranchValues` respectively.
+
 
 {% tabs %}
 {% highlight xaml %}
