@@ -11,15 +11,15 @@ documentation: ug
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 
-* The DataSourceSettings `DataSource` property is used to define the data source as a collection of objects which needs to be populated as diagram.
+* The DataSourceSettings `DataSource` property is used to define the data source as a collection of objects, which needs to be populated as diagram.
 
 * The DataSourceSettings `Id` property is used to define the unique field of each data.
 
-* The DataSourceSettings `ParentId` property is used to defines the parent field which builds the relationship between id and parent field.
+* The DataSourceSettings `ParentId` property is used to define the parent field which builds the relationship between ID and parent field.
 
-* The DataSourceSettings `Root` property is used to define root node for the diagram populated from the data source.
+* The DataSourceSettings `Root` property is used to define the root node for the diagram populated from the data source.
 
-To explore those properties, see [DataSourceSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings_members.html)
+To explore those properties, refer to [DataSourceSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings_members.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,23 +85,23 @@ Tree layout and data sources will now support nodes having multiple parents.The 
 
 ![Multiparent](DataSource_images/DataSource_img3.png)
 
-Please find [Multi Parent Sample](http://www.syncfusion.com/downloads/support/directtrac/195355/ze/Multi_Parent-231048937) to depict this support.
+Find the [Multi Parent Sample](http://www.syncfusion.com/downloads/support/directtrac/195355/ze/Multi_Parent-231048937) to depict this support.
 
 Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 
 ## FlowchartDataSourceSettings
 
-`FlowchartDataSourceSettings` is the derived class of `DataSourceSettings` which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
+`FlowchartDataSourceSettings` is the derived class of `DataSourceSettings`, which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
 
-`ContentMapping` - map the Content in the underlying data object to data source item.
+`ContentMapping`: Maps the Content in the underlying data object to data source item.
 
-`ConnectorTextMapping` -  map the ConnectorText in the underlying data object to data source item.
+`ConnectorTextMapping`: Maps the ConnectorText in the underlying data object to data source item.
 
-`ShapeMapping` -  map the Shape in the underlying data object to data source item.
+`ShapeMapping`: Maps the Shape in the underlying data object to data source item.
  
-`WidthMapping` -  map the Width in the underlying data object to data source item.
+`WidthMapping`: Maps the Width in the underlying data object to data source item.
  
-`HeightMapping` - map the Height in the underlying data object to data source item.
+`HeightMapping`: Maps the Height in the underlying data object to data source item.
 
 {% tabs %}
 {% highlight xaml %}
@@ -195,7 +195,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 
 {% highlight C#}
 
-            //Initialize Diagram.
+            //Initialize Diagram
             SfDiagram Diagram = new SfDiagram();
 
             //Initialize Node Collection
@@ -321,6 +321,6 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 
 ![Flowchart](DataSource_images/DataSource_Flowchart.png)
 
-Please refer to the `Flowchart Layout` Sample to depict this support.
+Refer to the `Flowchart Layout` sample to depict this support.
 
 Navigation->WPF->Diagram->Automatic layout->Flowchart Layout

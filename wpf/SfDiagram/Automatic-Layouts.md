@@ -9,19 +9,19 @@ documentation: ug
 
 # Automatic Layout
 
-SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
+SfDiagram provides support to auto-arrange the nodes in the diagram area that is referred as **Layout**. It includes the following layout modes:
 
-* Hierarchical Tree Layout
-* Radial Tree
-* Organizational Layout
-* Flowchart Layout
+* Hierarchical tree layout
+* Radial tree
+* Organizational layout
+* Flowchart layout
 
-## Hierarchical Tree Layout
+## Hierarchical tree layout
 
-The Hierarchical tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
-To arrange the nodes in hierarchical structure, you need to specify the [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType") as hierarchical tree.
+The hierarchical tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
+To arrange the nodes in hierarchical structure, specify the [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType") as hierarchical tree.
 
-N> SpaceBetweenSubTrees property of the DirectedTreeLayout will no longer efficient. Please use HorizontalSpacing and VerticalSpacing.
+N> The SpaceBetweenSubTrees property of the DirectedTreeLayout will no longer efficient. Use HorizontalSpacing and VerticalSpacing.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,10 +51,10 @@ SpaceBetweenSubTrees="20"/>
 
 ![HierarchicalLayout](Automatic-Layouts_images/Automatic-Layouts_img8.jpg)
 
-## Radial-Tree Layout
+## Radial-Tree layout
 
-The Radial-Tree Layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram Nodes. The Radial-Tree Layout arranges Nodes in a circular layout, positioning the root Node at the center of the graph and the child Nodes in a circular fashion around the root. Sub-trees formed by the branching of child Nodes are located radically around the child Nodes. 
-The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the Node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree Layout positions the Nodes based on the [LayoutRoot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout~LayoutRoot.html "LayoutRoot").
+The Radial-Tree layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radically around the child nodes. 
+The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout as the Radial-Tree Layout positions the nodes based on the [LayoutRoot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout~LayoutRoot.html "LayoutRoot").
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,10 +88,10 @@ SpaceBetweenSubTrees="20"/>
 
 ![RadialLayout](Automatic-Layouts_images/Automatic-Layouts_img9.jpg)
 
-## Organization Layout 
+## Organization layout 
 
-An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization.
-For LayoutType Please refer to, [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType")
+An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, type should be set to LayoutType.Organization.
+For LayoutType, refer to, [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType")
 
 {% tabs %}
 {% highlight xaml %}
@@ -137,12 +137,12 @@ SpaceBetweenSubTrees="20"/>
 
 ![OrganizationLayout](Automatic-Layouts_images/Automatic-Layouts_img1.jpeg)
 
-Organizational chart layout starts parsing from root and iterate through all its child elements. ‘GetLayoutInfo’ method provides necessary information of a Node’s children and the way to arrange (Orientation, Type etc.) them. You can customize the arrangements by overriding this function as explained.
+Organizational chart layout starts parsing from root and iterate through all its child elements. ‘GetLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (orientation, type, and more) them. You can customize the arrangements by overriding this function as explained.
 
-## Get Layout Info
+## Get layout info
 
-User can change ChartType and Orientation by using GetLayoutInfo event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated. Default ChartType us Alternate and default orientation is Vertical.
-For GetLayoutInfo Please refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~GetLayoutInfo_EV.html "GetLayoutInfo").
+User can change the ChartType and Orientation by using GetLayoutInfo event of the SfDiagram. This event will fire for each node added in the layout when the layout is getting updated. Default ChartType is Alternate and default orientation is Vertical.
+For GetLayoutInfo, refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~GetLayoutInfo_EV.html "GetLayoutInfo").
 
 **Event Arguments:**
 
@@ -175,16 +175,16 @@ The following table illustrates the different chart orientations and chart types
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
-| Horizontal | Left | Arranges the child Nodes Horizontally at the Left side of Parent. | ![Left](Automatic-Layouts_images/Automatic-Layouts_img2.jpg) |
-| | Right | Arranges the child Nodes Horizontally at the Right side of Parent. | ![Right](Automatic-Layouts_images/Automatic-Layouts_img3.jpg) |
-| | Center | Arranges the child Nodes horizontally at the Center side of parent. | ![Center](Automatic-Layouts_images/Automatic-Layouts_img4.jpg) |
-| Vertical | Left | Vertically arranges the children at the Left side of Parent. | ![Vertical](Automatic-Layouts_images/Automatic-Layouts_img5.jpg) |
-| | Right | Vertically arranges the children at the Right side of Parent. | ![Right](Automatic-Layouts_images/Automatic-Layouts_img6.jpg) |
-| | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![Alternate](Automatic-Layouts_images/Automatic-Layouts_img7.jpg) |
+| Horizontal | Left | Arranges the child nodes Horizontally at the Left the of Parent. | ![Left](Automatic-Layouts_images/Automatic-Layouts_img2.jpg) |
+| | Right | Arranges the child nodes Horizontally at the Right of the Parent. | ![Right](Automatic-Layouts_images/Automatic-Layouts_img3.jpg) |
+| | Center | Arranges the child nodes horizontally at the Center of the parent. | ![Center](Automatic-Layouts_images/Automatic-Layouts_img4.jpg) |
+| Vertical | Left | Vertically arranges the children at the Left of the Parent. | ![Vertical](Automatic-Layouts_images/Automatic-Layouts_img5.jpg) |
+| | Right | Vertically arranges the children at the Right of the Parent. | ![Right](Automatic-Layouts_images/Automatic-Layouts_img6.jpg) |
+| | Alternate | Vertically arranges the children at both Left and Right of the Parent. | ![Alternate](Automatic-Layouts_images/Automatic-Layouts_img7.jpg) |
 
-## Customize Layout
+## Customize layout
 
-Diagram layouts can be arranged at the custom positions based upon the layout bounds, margins, and alignments. For LayoutManager please refer to, [LayoutManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html "LayoutManager").
+Diagram layouts can be arranged at the custom positions based on the layout bounds, margins, and alignments. For LayoutManager, refer to [LayoutManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager.html "LayoutManager").
 
 {% tabs %}
 {% highlight C# %}
@@ -206,11 +206,11 @@ diagramcontrol.LayoutManager = new LayoutManager()
 
 ![CustomLayout](Automatic-Layouts_images/Automatic-Layouts_img10.jpg)
 
-## Flowchart Layout
+## Flowchart layout
 
-The Flowchart layout is a diagrammatic representation of a process, workflow,system or computer algorithm. Flowcharts uses various kind of symbols to illustrate different types of actions and symbols are connected together with arrows showing the flow direction of process.
+The Flowchart layout is a diagrammatic representation of a process, workflow, system or computer algorithm. Flowcharts uses various kind of symbols to illustrate the different types of actions and symbols connected together with arrows showing the flow direction of process.
 
-##Common Flowchart symbols
+##Common flowchart symbols
 
 Different flowchart symbols have different meanings that are used to represent different states in Flowchart. The following table describes the most common Flowchart symbols that are used in creating flowchart.
 
@@ -218,21 +218,21 @@ Different flowchart symbols have different meanings that are used to represent d
 |---|---|---|
 |![Terminator](Automatic-Layouts_images/Automatic-Layouts_Terminator.png)|Terminator/StartOrEnd|Indicates the beginning and ending of the process.|
 |![Data](Automatic-Layouts_images/Automatic-Layouts_Data.png)|Data|Indicates data input or output for a process.|
-|![Process](Automatic-Layouts_images/Automatic-Layouts_Process.png)|Process|Represent an operation or set of operations and data manipulations|
+|![Process](Automatic-Layouts_images/Automatic-Layouts_Process.png)|Process|Represents an operation or set of operations and data manipulations.|
 |![Decision](Automatic-Layouts_images/Automatic-Layouts_Decision.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths|
-|![Document](Automatic-Layouts_images/Automatic-Layouts_Document.png)|Document|Represents a single document or report in the process|
+|![Document](Automatic-Layouts_images/Automatic-Layouts_Document.png)|Document|Represents a single document or report in the process.|
 |![SubProcess](Automatic-Layouts_images/Automatic-Layouts_Predefinedprocess.png)|SubProcess/PredefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere.|
-|![DirectData](Automatic-Layouts_images/Automatic-Layouts_DirectData.png)|DirectData|Represents a collection of information that allows for searching, sorting and filtering|
+|![DirectData](Automatic-Layouts_images/Automatic-Layouts_DirectData.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering|
 |![StoredData](Automatic-Layouts_images/Automatic-Layouts_StoredData.png)|StoredData|Represents a step where data get stored within a process.|
 |![ManualInput](Automatic-Layouts_images/Automatic-Layouts_ManualInput.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
 |![ManualOperation](Automatic-Layouts_images/Automatic-Layouts_ManualOperation.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
-|![Preparation](Automatic-Layouts_images/Automatic-Layouts_Preparation.png)|Preparation|Represents a set-up or initialization process to another step in the process.|
-|![OnPageReference](Automatic-Layouts_images/Automatic-Layouts_OnPageReference.png)|OnPageReference|Represents a pairs of labeled connectors used to link long or confusing line on a flowchart.|
+|![Preparation](Automatic-Layouts_images/Automatic-Layouts_Preparation.png)|Preparation|Represents a setup or initialization process to another step in the process.|
+|![OnPageReference](Automatic-Layouts_images/Automatic-Layouts_OnPageReference.png)|OnPageReference|Represents a pair of labeled connectors used to link long or confusing line on a flowchart.|
 |![OffPageReference](Automatic-Layouts_images/Automatic-Layouts_OffPageReference.png)|OffPageReference|Represents a labeled connector used to link two flowcharts on different pages.|
 |![MultiDocument](Automatic-Layouts_images/Automatic-Layouts_MultiDocument.png)|MultiDocument|Represents multiple documents or reports in the process.|
-|![Connector](Automatic-Layouts_images/Automatic-Layouts_Connector.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child|
+|![Connector](Automatic-Layouts_images/Automatic-Layouts_Connector.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
 
-There are some basic built-in shapes as ResourceDictionary.For more information, refer to [Shapes](/wpf/sfdiagram/shapes).
+There are some basic built-in shapes as ResourceDictionary. For more information, refer to [Shapes](/wpf/sfdiagram/shapes).
 
 {% tabs %}
 {% highlight xaml %}
@@ -496,12 +496,12 @@ There are some basic built-in shapes as ResourceDictionary.For more information,
 
  ![Flowchart](Automatic-Layouts_images/Automatic-Layouts_Flowchart.png)
 
-## Customize Flowchart Layout Orientation
+## Customize flowchart layout orientation
 
-Sequence of the Node's direction can be customized by Flowchart Layout Orientation such as **TopToBottom** or **LeftToRight**.
+Sequence of the node's direction can be customized by flowchart layout orientation such as **TopToBottom** or **LeftToRight**.
 
 ### TopToBottom Orientation
-Arranges the Layout Vertically from Top to Bottom.
+Arranges the layout vertically from top to bottom.
 
 {% tabs %}
 
@@ -530,20 +530,20 @@ Arranges the Layout Vertically from Top to Bottom.
 ![Vertical](Automatic-Layouts_images/Automatic-Layouts_Flowchart_Vertical.png) 
 
 
-### LeftToRight Orientation
-Arranges the Layout Horizontally from Left to Right.
+### LeftToRight orientation
+Arranges the layout horizontally from left to right.
 
 ![Horizontal](Automatic-Layouts_images/Automatic-Layouts_Flowchart_Horizontal.png) 
 
-## Customize the Decision output directions
+## Customize the decision output directions
 
-Decision symbol denotes the question that can be answered in a binary format (Yes/No,True/False).The output direction of the decision symbol can be controlled by the direction of "Yes" and "No" branches using the `YesBranchDirection` and `NoBranchDirection` properties of `FlowchartLayout` class.
+Decision symbol denotes the question that can be answered in binary format (Yes/No, True/False). The output direction of the decision symbol can be controlled by the direction of "Yes" and "No" branches using the `YesBranchDirection` and `NoBranchDirection` properties of `FlowchartLayout` class.
 
-`Left In Flow` - Arranges the children to the Left side of the Decision.
+`Left In Flow`: Arranges the children to the Left of the Decision.
 
-`Right In Flow`-Arranges the children to the Right side of the Decision.
+`Right In Flow`: Arranges the children to the Right of the Decision.
 
-`Same As Flow`-Arranges the childen as same as the Decision flow.
+`Same As Flow`: Arranges the childen as same as the Decision flow.
 
 The following table will explain the pictorial representation of the behavior:
 
@@ -556,9 +556,9 @@ The following table will explain the pictorial representation of the behavior:
 
 N> If both branch directions are same, **Yes** branch will be prioritized.
 
-### Custom Yes and No Branch Values
+### Custom Yes and No branch values
 
-The decision symbol will produce the two branches as output which will be Yes branch and No branch. The output branch with connector text as either “Yes” or “True” will be considered as Yes branch and the output branch with connector text as either “No” or “False” will be considered as No branch. These Yes branch and No branch connector text values can be customized be using the `YesBranchValues` and `NoBranchValues` properties of `FlowchartLayout` class. The following code example illustrate this.
+The decision symbol will produce the two branches as output, which will be Yes branch and No branch. The output branch with connector text as either “Yes” or “True” will be considered as Yes branch and the output branch with connector text as either “No” or “False” will be considered as No branch. These Yes branch and No branch connector text values can be customized by using the `YesBranchValues` and `NoBranchValues` properties of `FlowchartLayout` class. The following code example illustrate this.
 
 {% tabs %}
 {% highlight xaml %}
@@ -605,9 +605,9 @@ The decision symbol will produce the two branches as output which will be Yes br
 {% endhighlight %}
 {% endtabs %}
 
-### Vertical and Horizontal Spacing 
+### Vertical and horizontal spacing 
 
-Control the spacing between the Nodes both horizotally and vertically using `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
+Control the spacing between the nodes both horizotally and vertically using the `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
 
 {% tabs %}
 {% highlight xaml %}
