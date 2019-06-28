@@ -235,6 +235,7 @@ Different flowchart symbols have different meanings that are used to represent d
 There are some basic built-in shapes as ResourceDictionary. For more information, refer to [Shapes](/wpf/sfdiagram/shapes).
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <ResourceDictionary.MergedDictionaries>
@@ -564,6 +565,7 @@ Any text value can be given as a connector text to describe the flow. Also, any 
 
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:FlowchartLayout x:Key="Layout" 
@@ -588,7 +590,7 @@ Any text value can be given as a connector text to describe the flow. Also, any 
 
 {% endhighlight %}
 
-{% highlight C#}
+{% highlight C# %}
 
             //Initialize LayoutManager
             LayoutManager layoutManager = new LayoutManager();
@@ -606,6 +608,7 @@ Any text value can be given as a connector text to describe the flow. Also, any 
             };             
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Vertical and horizontal spacing 
@@ -613,6 +616,7 @@ Any text value can be given as a connector text to describe the flow. Also, any 
 Control the spacing between the nodes both horizotally and vertically using the `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:FlowchartLayout x:Key="Layout"                                         
@@ -622,7 +626,7 @@ Control the spacing between the nodes both horizotally and vertically using the 
 
 {% endhighlight %}
 
-{% highlight C#}
+{% highlight C# %}
 
             //Initialize LayoutManager
             LayoutManager layoutManager = new LayoutManager();
@@ -635,6 +639,7 @@ Control the spacing between the nodes both horizotally and vertically using the 
             };             
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![CustomFlowchart](Automatic-Layouts_images/Automatic-Layouts_CustomYes_NoBranch.png)
