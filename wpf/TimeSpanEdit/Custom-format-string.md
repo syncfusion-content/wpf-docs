@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-format-string
+title: Custom-format-string | WPF | Syncfusion
 description: custom format string
 platform: wpf
 control: TimeSpanEdit
@@ -13,12 +13,12 @@ The fields can be formatted to show what the numerals denote i.e. hours minutes 
 
 
 
-![](Custom-format-string_images/Custom-format-string_img1.png)
+![custom format string images](Custom-format-string_images/Custom-format-string_img1.png)
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:TimeSpanEdit Value="10.2:25:52" Format="d ‘days’ h 'hours'"  Height="40"/>
+<syncfusion:TimeSpanEdit Value="10.2:25:52" Format="d 'days' h 'hours'"  Height="40"/>
 
 {% endhighlight %}
 

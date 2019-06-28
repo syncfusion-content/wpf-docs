@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Grouping | DataGrid | WPF | Syncfusion
-description: How to group the data in SfDataGrid
+title: WPF DataGrid Grouping | Syncfusion
+description: The WPF DataGrid provides the support to group one or more columns. Supports custom grouping, caption and group summary features. 
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-
-# Grouping
+# Data Grouping
 
 SfDataGrid allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
  
@@ -119,7 +118,7 @@ this.dataGrid.View.EndInit();
 {% endhighlight %}
 {% endtabs %}
 
-## Display based grouping using GroupMode property
+## Group based on display text
 
 You can group the column in SfDataGrid based on the value being displayed in cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GroupMode.html) as ‘Display’.
 In the below example, OrderID column displays value with one decimal digit in cell. But when you group, groups will be created based on actual value considering all decimal digits of value (Refer right side screen shot). You can group based value displayed in the cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~GroupMode.html) as ‘Display’ (Refer left side screen shot for the same data).
@@ -251,7 +250,7 @@ this.dataGrid.AutoExpandGroups = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Programmatically expanding or collapsing the groups
+### Programmatically expand or collapse the groups
 
 #### Expand or collapse all the Groups
 
@@ -292,7 +291,7 @@ this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 {% endtabs %}
 
-## Customize IndentColumn width 
+## Customize indent column width 
 
 You can customize the width of IndentColumn in SfDataGrid by using [IndentColumnWidth](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~IndentColumnWidth.html) property as like below.
 
