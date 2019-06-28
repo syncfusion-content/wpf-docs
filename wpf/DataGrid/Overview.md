@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid features overview | Syncfusion
-description: Describes about WPF DataGrid features and difference between SfDataGrid, GridControl and GridDataControl. 
+description: Describes the features of WPF DataGrid and the difference between SfDataGrid, GridControl and GridDataControl.
 platform: wpf
 control: SfDataGrid
 documentation: ug

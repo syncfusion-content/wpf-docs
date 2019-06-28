@@ -16,15 +16,15 @@ If users want to view particular dates in a single view, users can provide a Dat
 {% highlight c# %}
 
 
-ObservableCollection<DateTime> selectedDates = newObservableCollection<DateTime>();
+ObservableCollection<DateTime> visibleDates = newObservableCollection<DateTime>();
 
             DateTime Date1 = new DateTime(2013, 9, 1);
 
             DateTime Date2 = new DateTime(2013, 9, 22);
 
-            selectedDates.Add(Date1);
+            visibleDates.Add(Date1);
 
-            selectedDates.Add(Date2);
+            visibleDates.Add(Date2);
 
             SfSchedule schedule = new SfSchedule();
 
@@ -32,13 +32,13 @@ ObservableCollection<DateTime> selectedDates = newObservableCollection<DateTime
 
 {% endhighlight %}
 
-![](Visible-Dates-customization_images/Visible-Dates-customization_img1.jpeg)
+![Multiple dates visbiled](Visible-Dates-customization_images/Visible-Dates-customization_img1.jpeg)
 
 
 
 
 
-![](Visible-Dates-customization_images/Visible-Dates-customization_img2.jpeg)
+![Single date visible](Visible-Dates-customization_images/Visible-Dates-customization_img2.jpeg)
 
 
 
