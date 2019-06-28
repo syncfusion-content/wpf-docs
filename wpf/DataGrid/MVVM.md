@@ -1,19 +1,17 @@
 ---
 layout: post
-title: MVVM | DataGrid | WPF | Syncfusion
-description: How to bind the items in the SfDataGrid using MVVM
+title: WPF DataGrid MVVM | Data Binding | Syncfusion
+description: Covers various common use cases of using WPF DataGrid in MVVM pattern.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# MVVM
+# DataGrid - MVVM
 
-This section explains various MVVM requirements using SfDataGrid.
+## DataGrid SelectedItem Binding
 
-## Bind the SelectedItem property of SfDataGrid
-
-You can bind the [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property directly to the SfDataGrid by setting the `SfDataGrid.SelectedItem` property.
+You can bind the [SelectedItem](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property directly to the DataGrid by setting the `SfDataGrid.SelectedItem` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -53,9 +51,9 @@ public class PersonModel : INotifyPropertyChanged
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItem-1872250691.zip).
 
-## Bind the SelectedItems property of SfDataGrid
+## DataGrid SelectedItems Binding
 
-You can bind the [SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property directly to the SfDataGrid by setting the `SfDataGrid.SelectedItems` property.
+You can bind the [SelectedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property directly to the DataGrid by setting the `SfDataGrid.SelectedItems` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,9 +94,9 @@ class ViewModel:INotifyPropertyChanged
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItems1384772866.zip).
 
-## Bind button command to ViewModel
+## Button command binding to ViewModel
 
-You can load a button for the columns in the SfDataGrid by using GridTemplateColumn. When loading the buttons, you can bind command in ViewModel by using `ElementName` binding.
+You can load a button for the columns in the DataGrid by using GridTemplateColumn. When loading the buttons, you can bind command in ViewModel by using `ElementName` binding.
 
 In the following example, ViewModel command receives the underlying data object as command parameter since the DataContext is binding as command parameter.
 
@@ -125,11 +123,11 @@ In the following example, ViewModel command receives the underlying data object 
 {% endhighlight %}
 {% endtabs %}
 
-![Display button binding command with viewmodel for WPF SfDataGrid](MVVM_images/MVVM_img1.png)
+![WPF DataGrid button command binding](MVVM_images/MVVM_img1.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ShowSelectedRowInformation-414969750.zip).
 
-## Bind ComboBoxColumn ItemsSource from ViewModel
+## Binding ComboBoxColumn ItemsSource from ViewModel
 
 You can bind the ItemsSource from ViewModel to `GridComboBoxColumn or GridMultiColumnDropDownList` by using the `ElementName` binding.
 
@@ -169,11 +167,11 @@ class ViewModel:INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying ComboBoxColumn ItemsSource binding with viewmodel in WPF SfDataGrid](MVVM_images/MVVM_img2.png)
+![WPF DataGrid combobox column binding MVVM](MVVM_images/MVVM_img2.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BindViewModelItemstoComboBoxColumn-223289547.zip). 
 
-## Bind ViewModel ItemsSource to ComboBox inside template
+## Binding ViewModel ItemsSource to ComboBox inside data template
 
 You can load the `ComboBox` inside the `GridTemplateColumn` and bind the ItemsSource from ViewModel to `ComboBox` by using the `ElementName` binding.
 
@@ -201,13 +199,13 @@ You can load the `ComboBox` inside the `GridTemplateColumn` and bind the ItemsSo
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying ItemsSource binding for ComboBox inside template with viewmodel in WPF SfDataGrid](MVVM_images/MVVM_img3.png)
+![WPF DataGrid combobox column binding MVVM](MVVM_images/MVVM_img3.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BindViewModelItemstotemplateComboBoxColumn-1705267981.zip).
 
-## Bind Columns from ViewModel
+## Binding DataGrid Columns from ViewModel
 
-You can bind the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) to a property in the ViewModel by having the binding property of type `Syncfusion.SfGrid.UI.Xaml.Grid.Columns`. Thus, you can set binding to the `SfDataGrid.Columns` property that provides `DataContext` of the SfDataGrid is ViewModel. 
+You can bind the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) to a property in the ViewModel by having the binding property of type `Syncfusion.SfGrid.UI.Xaml.Grid.Columns`. Thus, you can set binding to the `SfDataGrid.Columns` property that provides `DataContext` of the DataGrid is ViewModel. 
 
 {% tabs %}
 {% highlight xaml %}
