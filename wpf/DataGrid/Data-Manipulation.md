@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Data Manipulation | DataGrid | WPF | Syncfusion
-description: How to manipulate data in SfDataGrid.
+title: WPF DataGrid CRUD Operations | Data Manipulation | Syncfusion
+description: Describes add new row, delete row support in WPF DataGrid  and its customization. Also, explains how wpf datagrid manages data updates.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Manipulation
+# CRUD operations
 
-SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) property.
+DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/datagrid/editing), [add new row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#built-in-addnewrow), [delete row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#deletion) by pressing delete key.
+
+## Managing data updates
+
+DataGrid manages the sorting, filtering, grouping and summaries during data updates based on [SfDataGrid.LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -23,15 +27,12 @@ this.dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping;
 {% endhighlight %}
 {% endtabs %}
 
-
-## LiveDataUpdateMode
-
 ### LiveDataUpdateMode – Default 
 
 <table>
 <tr>
 <td>
-{{'**Grid operations/ Data Manipulation operations**'| markdownify }}
+{{'**Grid operations / Data Manipulation operations**'| markdownify }}
 </td>
 <td>
 {{'**Add**'| markdownify }}
@@ -45,7 +46,7 @@ this.dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping;
 </tr>
 <tr>
 <td>
-{{'**Sorting**'| markdownify }}
+Sorting
 </td>
 <td>
 Record added at last
@@ -59,7 +60,7 @@ Sort order not updated
 </tr>
 <tr>
 <td>
-{{'**Grouping**'| markdownify }}
+Grouping
 </td>
 <td>
 Updated
@@ -73,7 +74,7 @@ Groups not refreshed based on change
 </tr>
 <tr>
 <td>
-{{'**Filtering**'| markdownify }}
+Filtering
 </td>
 <td>
 Updated
@@ -87,7 +88,7 @@ Filter not refreshed based on change
 </tr>
 <tr>
 <td>
-{{'**Summaries**'| markdownify }}
+Summaries
 </td>
 <td>
 Not updated
@@ -121,7 +122,7 @@ Not updated
 </tr>
 <tr>
 <td>
-{{'**Sorting**'| markdownify }}
+Sorting
 </td>
 <td>
 Record added at last
@@ -135,7 +136,7 @@ Sort order not updated
 </tr>
 <tr>
 <td>
-{{'**Grouping**'| markdownify }}
+Grouping
 </td>
 <td>
 Updated
@@ -149,7 +150,7 @@ Groups not refreshed based on change
 </tr>
 <tr>
 <td>
-{{'**Filtering**'| markdownify }}
+Filtering
 </td>
 <td>
 Updated
@@ -163,7 +164,7 @@ Filter not refreshed based on change
 </tr>
 <tr>
 <td>
-{{'**Summaries**'| markdownify }}
+Summaries
 </td>
 <td>
 Updated
@@ -197,7 +198,7 @@ Updated
 </tr>
 <tr>
 <td>
-{{'**Sorting**'| markdownify }}
+Sorting
 </td>
 <td>
 Updated
@@ -211,7 +212,7 @@ Updated
 </tr>
 <tr>
 <td>
-{{'**Grouping**'| markdownify }}
+Grouping
 </td>
 <td>
 Updated 
@@ -225,7 +226,7 @@ Updated
 </tr>
 <tr>
 <td>
-{{'**Filtering**'| markdownify }}
+Filtering
 </td>
 <td>
 Updated
@@ -239,7 +240,7 @@ Updated
 </tr>
 <tr>
 <td>
-{{'**Summaries**'| markdownify }}
+Summaries
 </td>
 <td>
 Updated
@@ -258,12 +259,11 @@ Updated
 
 * `AllowDataShaping` and `AllowSummaryUpdate` is not supported when you are binding with dynamic data objects.
 * Complex and indexer properties doesn’t support `LiveDataUpdateMode`- `AllowDataShaping` and `AllowSummaryUpdate`.
-* `LiveDataUpdateMode` is not supported when you are binding with DataTable.
+* `LiveDataUpdateMode` is not supported when `DataTable` is `ItemsSource`.
 
+## Add new rows
 
-## Built-in AddNewRow
-
-SfDataGrid provides built-in row (called AddNewRow) to add new records to underlying collection. You can enable the AddNewRow by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowPosition.html) property.
+DataGrid provides built-in row (called AddNewRow) that allows user to add new records to underlying collection. Built-in add new row can be enabled or disabled by setting[SfDataGrid.AddNewRowPosition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AddNewRowPosition.html) property. `AddNewRowPosition` also denotes the position of add new row in DataGrid.
 
 When you start editing in AddNewRow, the SfDataGrid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
 
@@ -282,9 +282,9 @@ this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endtabs %}
 
 
-![Image shows the AddNewRow in SfDataGrid](Data-Manipulation_images/Data-Manipulation_img1.png)
+![WPF DataGrid with add new row](Data-Manipulation_images/Data-Manipulation_img1.png)
 
-You can get the row index of AddNewRow where it placed by using the [GridAddNewRowController.GetAddNewRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridAddNewRowController~GetAddNewRowIndex.html) method.
+You can get the row row index of AddNewRow using [GridAddNewRowController.GetAddNewRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridAddNewRowController~GetAddNewRowIndex.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -334,7 +334,7 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endhighlight %}
 {% endtabs %}
 
-![Image shows the editing content in AddNewRow](Data-Manipulation_images/Data-Manipulation_img2.png)
+![WPF DataGrid - Add new row with defautl values](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 ### Working with complex properties in AddNewRow
 
@@ -364,7 +364,7 @@ private void SfDataGrid_AddNewRowInitiating(object sender, Syncfusion.UI.Xaml.Gr
 {% endtabs %}
 
 
-### Programmatically perform AddNewRow operations
+### Add row programmatically
 
 You can commit or cancel the new record in AddNewRow by pressing the <kbd>Enter</kbd> and <kbd>Esc</kbd> key respectively. AddNewRow operations can be performed programmatically by using [GridAddNewRowController.CommitAddNew](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridAddNewRowController~CommitAddNew.html) and [GridAddNewRowController.CancelAddNew](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridAddNewRowController~CancelAddNew.html) methods at runtime.
 
@@ -449,7 +449,7 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![Image shows the Validation in AddNewRow](Data-Manipulation_images/Data-Manipulation_img3.png)
+![WPF DataGrid - New row data validation](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) event.
 
@@ -457,11 +457,11 @@ Similarly, you can validate the cells in AddNewRow by using the [CurrentCellVali
 
 SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](http://help.syncfusion.com/wpf/sfdatagrid/localization#editing-default-culture-resource) section.
 
-To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. 
+To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/windowsforms/sfdatagrid/localization) to learn more about localization. 
 
-![Image shows the customization of default resource culture in SfDataGrid](Data-Manipulation_images/Data-Manipulation_img4.png)
+![WPF DataGrid resources](Data-Manipulation_images/Data-Manipulation_img4.png)
 
-![Output image of after change the culture](Data-Manipulation_images/Data-Manipulation_img5.png)
+![WPF DataGrid - Add new row text localized](Data-Manipulation_images/Data-Manipulation_img5.png)
 
 ### Customizing AddNewRow text using style
 
@@ -632,9 +632,9 @@ void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endtabs %}
 
 
-## Deletion
+## Delete row
 
-SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfDataGrid.AllowDeleting](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDeleting.html) property to `true`. `AllowDeleting` is only supported when `SelectionUnit` is `Row`.
+DataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfDataGrid.AllowDeleting](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDeleting.html) property to `true`. `AllowDeleting` is only supported when `SelectionUnit` is `Row`.
 
 {% tabs %}
 {% highlight xaml %}
