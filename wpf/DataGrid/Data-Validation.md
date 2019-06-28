@@ -283,7 +283,7 @@ void dataGrid_RowValidated(object sender, RowValidatedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-## Data validation error icon customizaion
+## Data validation error icon customization
 
 You can customize the error icon by editing `GridCell` style.
 
@@ -739,7 +739,7 @@ You can change the validation error template cursor of the GridCell by changin
 
 ![Data validation in WPF SfDataGrid Change the cursor on error icon](Data-Validation_images/Data-Validation_img5.png)
 
-## Data validation error tip (help tip) customizaion
+## Data validation error tip (help tip) customization
 
 You can customize the error tip by editing the style of `ValidationToolTipTemplate`. Get the style of `ValidationToolTipTemplate` by editing the GridCell style.
 
@@ -1151,7 +1151,7 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 
 ![Data validation in WPF SfDataGrid Validation with Checkbox column](Data-Validation_images/Data-Validation_img10.png)
 
-## Show validation erros when using UseDrawing
+## Show validation errors when using UseDrawing
 
 By default, validation is not supported while enabling the `UseDrawing` property since the cell content were drawn instead of loading the UIElement. However, SfDataGrid provides an option to achieve the validation by adding the validation template. 
 
