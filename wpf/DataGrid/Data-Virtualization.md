@@ -56,7 +56,7 @@ Use to load data in on-demand. You can load data only for current page from serv
 
 ## Data Virtualization
 
-You can load large amount of data in less time by setting [SfDataGrid.EnableDataVirtualization](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EnableDataVirtualization.html) property to true.
+You can load large amount of data in less time by setting [SfDataGrid.EnableDataVirtualization](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~EnableDataVirtualization.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -70,8 +70,8 @@ this.datagrid.EnableDataVirtualization = true;
 {% endhighlight %}
 {% endtabs %}
 
-## VirtualizingCollectionView
- 
+## Working with GridVirtualizingCollectionView
+
 You can load the large amount of data in less time in another way using [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html). 
 
 In the below code, ViewModel defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
@@ -114,7 +114,7 @@ public class ViewModel
 
 ## Incremental Loading
  
-SfDataGrid supports to load the data incrementally using [ISupportIncrementalLoading](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.ISupportIncrementalLoading.html) interface.
+DataGrid supports to load the data incrementally using [ISupportIncrementalLoading](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.ISupportIncrementalLoading.html) interface.
 `ISupportIncrementalLoading` interface has[LoadMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on[HasMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~HasMoreItems.html) property.
 
 If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601.html) which is derived from `ISupportIncrementalLoading`. You can use IncrementalList or create collection derived from ISupportIncrementalLoading and bind it SfDataGrid.ItemsSource.
@@ -272,7 +272,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![wpf datagrid shows incremental loading](Data-Virtualization_images/Data-Virtualization_img1.png)
+![wpf datagrid shows incremental loading of data](Data-Virtualization_images/Data-Virtualization_img1.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_Animation-1160118925.zip).
 
@@ -374,7 +374,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 ### Limitations
 
 1. Deleting is not supported. You can code to delete row in application level.
-2. Summary is calculated based on [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html).
+2. Summary is not calculated based on [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html).
 
 ## Paging
 
