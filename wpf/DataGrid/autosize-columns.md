@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid AutoSize Columns | Auto Fit Columns | Syncfusion
-description: WPF DataGrid allows to autosize column widths based on its content. This article explains various auto size options availabel in DataGrid and its customization.
+description: WPF DataGrid allows column width autosizing based on their content. This article describes various auto size options available in DataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug

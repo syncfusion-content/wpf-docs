@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data virtualization | DataGrid | WPF | Syncfusion
-description: How to use Data Virtualization in SfDataGrid.
+title: WPF DataGrid Data Virtualization | DataGrid Performance | Syncfusion
+description: Describes how to improve loading performance of WPF DataGrid and how to load data on demand.
 platform: wpf
 control: SfDataGrid
 documentation: ug

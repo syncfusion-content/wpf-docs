@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid Binding | Syncfusion
-description: Explaing binding datagrid with different collection and service provider. Also, explains connecting with Linq to SQL, ADO.NET, Entity Framework and etc. 
+description: Explains binding datagrid with different collection and service provider. Also, explains connecting with Linq to SQL, ADO.NET, Entity Framework and etc. 
 platform: wpf
 control: SfDataGrid
 documentation: ug
