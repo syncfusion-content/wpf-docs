@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editing | DataGrid | WPF | Syncfusion
-description: How to edit the data in each cell of SfDataGrid
+title: WPF DataGrid Editing | Cell Editing | Syncfusion
+description: The WPF DataGrid provides support to edit the cell values with an intuitive editors in different column types such as datepicker, textbox, combobox and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Editing 
+# DataGrid Editing 
 
-SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html) property.
+DataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,12 +38,12 @@ dataGrid.Columns["OrderID"].AllowEditing = true;
 
 N> [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowEditing.html) takes higher priority than [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html).
 
-![Displaying Editing in WPF SfDataGrid](Editing_images/Editing_img1.jpeg)
+![WPF DataGrid Cell Editing](Editing_images/Editing_img1.jpeg)
 
 
 N> It is mandatory to set the [NavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~NavigationMode.html) to Cell to enable [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) navigation and editing.
 
-### Entering into edit mode
+## Edit mode
 
 You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting by [EditTrigger](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~EditTrigger.html) property.
 
@@ -61,7 +61,7 @@ dataGrid.EditTrigger = EditTrigger.OnTap;
 {% endhighlight %}
 {% endtabs %}
 
-### Cursor placement
+## Edit cursor placement
 
 When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~EditorSelectionBehavior.html) property. 
 
@@ -82,7 +82,7 @@ dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 {% endhighlight %}
 {% endtabs %}
 
-## Support for IEditableObject
+## Working with IEditableObject interface
 
 SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface. 
 
@@ -258,7 +258,7 @@ public class NotificationObject : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-## Events
+## Edit events
 
 SfDataGrid triggers the following events during editing. 
 
@@ -321,7 +321,7 @@ void dataGrid_CurrentCellValueChanged(object sender, Syncfusion.UI.Xaml.Grid.Cur
 
 N> GridComboBoxColumn and GridMultiColumnDropList, you have to use the CurrentCellDropDownSelectionChanged event.
 
-### CurrentCellDropDownSelectionChanged Event
+### Combobox column selectionchanged event
 
 [CurrentCellDropDownSelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellDropDownSelectionChanged_EV.html) event occurs whenever the `SelectedItem` of `GridMultiColumnDropDownList` and `GridComboBoxColumn` column changed.
 
@@ -414,9 +414,13 @@ void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
 {% endhighlight %}
 {% endtabs %}
 
-### CellTapped Event
+## Cell click events
 
-CellTapped event occurs when the user clicks or touches the `Cell` in SfDataGrid with [GridCellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellTappedEventArgs.html). CellTapped event does not occur for the non-selectable cells. The GridCellTappedEventArgs has following members which provides information for `CellTapped` event.
+WPF DataGrid provides `CellTapped` and `CellDoubleTapped` events to handle cell click actions. 
+
+### Cell tapped event
+
+WPF DataGrid `CellTapped` event occurs when the user clicks or touches a cell in DataGrid with [GridCellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellTappedEventArgs.html). CellTapped event does not occur for the non-selectable cells. The GridCellTappedEventArgs has following members which provides information for `CellTapped` event.
 * [Column](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~Column.html) - Gets the GridColumn of the tapped cell.
 * [Record](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~Record.html) - Gets the data context of the tapped cell.
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~RowColumnIndex.html) - Gets the RowColumnIndex of the tapped cell.
@@ -440,9 +444,9 @@ private void Datagrid_CellTapped(object sender, GridCellTappedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### CellDoubleTapped Event
+### Cell double tapped event
 
-CellDoubleTapped event occurs when the user double clicks or double taps the `GridCell` in SfDataGrid with [GridCellDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellDoubleTappedEventArgs.html). CellDoubleTapped event does not occur for non-selectable cells. GridCellDoubleTappedEventArgs has following members which provides information for `CellDoubleTapped ` event.
+`CellDoubleTapped` event occurs when the user double clicks or double taps a cell in DataGrid with [GridCellDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellDoubleTappedEventArgs.html). CellDoubleTapped event does not occur for non-selectable cells. GridCellDoubleTappedEventArgs has following members which provides information for `CellDoubleTapped ` event.
 * [Column](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~Column.html) - Gets the GridColumn of the double tapped cell.
 * [Record](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~Record.html) - Gets the data context of the double tapped cell.
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~RowColumnIndex.html) - Gets the RowColumnIndex of the double tapped cell.
@@ -469,7 +473,7 @@ private void Datagrid_CellDoubleTapped(object sender, GridCellDoubleTappedEventA
 
 ## Mouse and Keyboard operations for UIElement inside Template
 
-You can directly load edit element using GridTemplateColumn.CellTemplate property. In this case, you can provide focus and control (keyboard and mouse) to the UIElement inside CellTemplate in the below ways,
+You can directly load edit element using `GridTemplateColumn.CellTemplate` property. In this case, you can provide focus and control (keyboard and mouse) to the UIElement inside CellTemplate in the below ways,
 
 ### Providing focus to the control inside the Template
 
@@ -543,9 +547,9 @@ You can allow `UIElement` loaded inside template to handle mouse interaction in 
 
 ## How to
 
-### Change the foreground of edited cells to keep track of changes
+### How to track edited cells in WPF DataGrid? 
 
-You can change the foreground color of edited cells through the CellStyleSelector.
+You can change the foreground color of edited cells through the `CellStyleSelector` to track edited cells.
 
 Please follow the below steps to highlight the edited cells.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows | SfDataGrid | WPF | Syncfusion
-description: rows
+title: WPF DataGrid Rows | Header Row | Freeze Panes | Syncfusion
+description: Explains the WPF DataGrid row kinds. Also, explains customizations of the freeze panes, row header, and header row. 
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -23,7 +23,6 @@ This section explains about various row types in SfDataGrid.
 
 RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowRowHeader.html) property.
 
-
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
@@ -38,7 +37,11 @@ dataGrid.ShowRowHeader = true;
 
 ![RowHeader in SfDataGrid](Rows_images/Rows_img1.png)
 
-You can change the width of row header by setting [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RowHeaderWidth.html) property.
+See also.
+
+[Show RowIndex in RowHeader](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates#styling-rowheader)
+
+[Customizing RowHeader based on record](http://help.syncfusion.com/wpf/sfdatagrid/conditional-styling#row-header)
 
 ### Row indicators and its description
 
@@ -93,15 +96,165 @@ Denotes that the current row which has errors.
 </tr>
 </table>
 
-See also.
+### Row header width
 
-[Show RowIndex in RowHeader](http://help.syncfusion.com/wpf/sfdatagrid/styles-and-templates#styling-rowheader)
+You can change the width of the row header by setting [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RowHeaderWidth.html) property.
 
-[Customizing RowHeader based on record](http://help.syncfusion.com/wpf/sfdatagrid/conditional-styling#row-header)
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ShowRowHeader="True"
+                       RowHeaderWidth="50"
+                       ItemsSource="{Binding Orders}"  />
+{% endhighlight %}
+
+{% highlight c# %}
+dataGrid.RowHeaderWidth = 50;
+{% endhighlight %}
+{% endtabs %}
+
+### Display the row index in row header
+
+You can display the corresponding row index in each row header, by customizing the `ControlTemplate` of `GridRowHeaderCell`. You have to bind the `RowIndex` property to `TextBlock.Text` like the below code example.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Style TargetType="syncfusion:GridRowHeaderCell">
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="syncfusion:GridRowHeaderCell">
+                <Border x:Name="PART_RowHeaderCellBorder"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Text="{Binding RowIndex,RelativeSource={RelativeSource TemplatedParent}}"
+                                   TextAlignment="Center" />
+                    </Grid>
+                </Border>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Row index displayed in row header cell of wpf datagrid](Interactive-Features_images/InteractiveFeatures_img14.png)
+
+
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF-13678149272112665828.zip).
+
+### Change the current row indicator
+
+You can change the CurrentRowIndicator in the row header by customizing the control template of `GridRowHeaderCell`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Style TargetType="syncfusion:GridRowHeaderCell">
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="syncfusion:GridRowHeaderCell">
+                <Border x:Name="PART_RowHeaderCellBorder"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="IndicationStates">
+                            <VisualState x:Name="Normal">
+                            </VisualState>
+                            <VisualState x:Name="CurrentRow">
+                                <Storyboard>
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_RowHeaderIndicator" Storyboard.TargetProperty="Data">
+                                        <DiscreteObjectKeyFrame KeyTime="0">
+                                            <DiscreteObjectKeyFrame.Value>
+                                                <Geometry>F1M-218.342,2910.79L-234.066,2926.52 -233.954,2926.63 -225.428,2926.63 -210.87,2912.07 -206.495,2907.7 -225.313,2888.88 -234.066,2888.88 -218.342,2904.6 -259.829,2904.6 -259.829,2910.79 -218.342,2910.79z</Geometry>
+                                            </DiscreteObjectKeyFrame.Value>
+                                        </DiscreteObjectKeyFrame>
+                                    </ObjectAnimationUsingKeyFrames>                                            
+                                </Storyboard>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                    <Path x:Name="PART_RowHeaderIndicator"
+                          Width="8.146"
+                          Height="8.146"
+                          HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Fill="#FF303030"
+                          Stretch="Fill">
+                    </Path>
+                </Border>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF DataGrid current row indicator customization](Interactive-Features_images/InteractiveFeatures_img16.png)
+
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator257326168.zip).
+
+### Change the background of row header 
+
+You can change the background color of the row header by customizing the style of the `GridRowHeaderCell`. You can change the background color with the converter based on the underlying collection.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Application.Resources>       
+    <local:CustomConverter x:Key="converter"/>
+    <!--Customizing the RowHeader style--> 
+    <Style  TargetType= "syncfusion:GridRowHeaderCell">
+        <!--By using converter the Background color is changed based on the business logic-->
+        <Setter Property="Background" Value="{Binding Converter={StaticResource converter }}"/>
+    </Style>
+</Application.Resources>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public class CustomConverter:IValueConverter
+{
+ 
+    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+
+        //Type casting the value as Data class(Business logic)
+        var data = value as Data;
+
+        //The Red color is applied to RowHeader if the status value is true otherwise the white color is applied 
+
+        if (data.Status == true)
+            return Brushes.Red;
+
+        else
+            return Brushes.Green;
+    }
+    
+    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![WPF DataGrid row header background](Interactive-Features_images/InteractiveFeatures_img15.png)
+
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BackgroundColorForRowHeader_WPF18250214901515913833.zip).
 
 ## Header Row
 
-Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
+Header row is present in top of the DataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
 ![Show the column header in Header row](Rows_images/Rows_img7.png)
 
@@ -141,7 +294,7 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 
 ## Freeze panes
 
-SfDataGrid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
+DataGrid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
 
 <table>
 <tr>

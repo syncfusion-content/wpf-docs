@@ -1,15 +1,15 @@
 ---
 layout: post
-title: ExportToExcel | DataGrid | WPF | Syncfusion
-description: How to export the SfDataGrid to excel.
+title: WPF DataGrid Export to Excel | DataGrid to Excel | Syncfusion
+description: How to export the WPF DataGrid to Excel file with the rich set of options. Also, explains how to customize the exported excel sheet.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Export to Excel
+# DataGrid - Export to Excel
 
-SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
+DataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
 
 The following assemblies needs to be added for exporting to excel.
 
@@ -31,11 +31,11 @@ workBook.SaveAs("Sample.xlsx");
 
 N> SfDataGrid exports data to excel by using [XlsIO](http://help.syncfusion.com/file-formats/xlsio/overview). You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet) for manipulating exported work sheets. 
 
-## Exporting options
+## Excel exporting options
 
 Exporting operation can be customized by passing [ExcelExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html) instance as argument to `ExportToExcel` method. 
 
-### Export Mode
+### Export mode
 
 By default, actual value only will be exported to excel. If you want to export the display text, you need to set [ExportMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportMode.html) property as `Text`. 
 
@@ -82,7 +82,7 @@ workBook.SaveAs("Sample.xlsx");
 
 Here, the columns having `CustomerName` and `Country` as MappingName are excluded while exporting.
 
-### Excel Version
+### Excel version
 
 While exporting to Excel, you can specify the excel version by using [ExcelVersion](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExcelVersion.html) property.
 
@@ -253,7 +253,7 @@ window1.Show();
 
 ![Displaying opening exported excel without saving in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img3.png)
 
-## Export Paging
+## Export DataGrid pages to Excel
 
 While exporting data to excel, if paging is used, current page only will be exported, by default. If you want to export all pages, you need to set [ExportAllPages](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportAllPages.html) property as `true`.
 
@@ -280,7 +280,7 @@ workBook.SaveAs("Sample.xlsx");
 {% endhighlight %}
 {% endtabs %}
 
-## Export SelectedItems to Excel
+## Export DataGrid SelectedItems to Excel
 
 By default, entire grid will be exported to Excel. You can export selected items only by passing `SelectedItems` to 
 [ExportToExcel](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension~ExportToExcel(SfDataGrid,ObservableCollection%7BObject%7D,ExcelExportingOptions,IWorksheet).html) method.
@@ -299,7 +299,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ![Displaying exporting selected items only to excel in WPF SfDataGrid](Export-to-Excel_images/Export-to-Excel_img4.png)
 
-## Export to HTML
+## Export DataGrid to HTML
 
 You can save exported workbook as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
 
@@ -315,7 +315,7 @@ workBook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
 
 It is also possible to save worksheet as HTML by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method. You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
 
-## Export to Mail
+## Export DataGrid to Mail
 
 You can export SfDataGrid to mail by converting it into Excel and save exported worksheet as HTML. Then exported HTML contents is embedded in mail body.
 
@@ -368,7 +368,7 @@ Console.WriteLine("Mail has been sent...");
 {% endhighlight %}
 {% endtabs %}
 
-## Export to XML
+## Export DataGrid to XML
 
 You can save exported workbook as `Xml` file also by using [SaveAsXml](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsXml.html) methods.
 
@@ -382,7 +382,7 @@ workBook.SaveAsXml("Sample.xml", ExcelXmlSaveType.MSExcel);
 {% endhighlight %}
 {% endtabs %}
 
-## Export to CSV
+## Export DataGrid to CSV
 
 You can save exported workbook as CSV by using `SaveAs` method.
 
