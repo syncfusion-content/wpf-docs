@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid Conditional Formatting | Cell Style | Syncfusion
-description: WPF DataGrid allows to customize the appearance of cells, rows, and columns conditionally based on data.
+description: WPF DataGrid allows to conditionally customize the appearance of cells, rows, and columns based on data.
 platform: wpf
 control: SfDataGrid
 documentation: ug
