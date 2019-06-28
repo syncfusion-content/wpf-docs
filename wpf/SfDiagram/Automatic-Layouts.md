@@ -613,7 +613,7 @@ Any text value can be given as a connector text to describe the flow. Also, any 
 
 ### Vertical and horizontal spacing 
 
-Control the spacing between the nodes both horizotally and vertically using the `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
+Control the spacing between the nodes both horizontally and vertically using the `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
 
 {% tabs %}
 
