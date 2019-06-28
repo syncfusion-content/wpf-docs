@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid Editing | Cell Editing | Syncfusion
-description: The WPF DataGrid provides support to edit the cell values with an intuitive editors in different column types such as datepicker, textbox, ComboBox and more.
+description: The WPF DataGrid provides support to edit the cell values with an intuitive editors in different column types such as datepicker, textbox, combobox and more.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -416,7 +416,7 @@ void dataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
 
 ## Cell click events
 
-WPF DataGrid provides `CellTapped` and `CellDoubleTapped` events to handle cell clikc actions. 
+WPF DataGrid provides `CellTapped` and `CellDoubleTapped` events to handle cell click actions. 
 
 ### Cell tapped event
 

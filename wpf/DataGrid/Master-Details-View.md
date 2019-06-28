@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Master-Details View | WPF DataGrid | WPF Hierarchical DataGrid | Syncfusion
+title: WPF DataGrid Master-Details View | Hierarchical DataGrid | Syncfusion
 description: Explains how to create a master-details view (nested grid view) which represents nested data relations. Nested grids that can be expanded and collapsed. 
 platform: wpf
 control: SfDataGrid

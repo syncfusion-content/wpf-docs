@@ -554,7 +554,7 @@ private void sfGrid_Dropped(object sender, GridRowDroppedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Row drag and drop between two WPF DataGrid's](Interactive-Features_images/InteractiveFeatures_img29.png)
+![Row drag and drop between two WPF DataGrid](Interactive-Features_images/InteractiveFeatures_img29.png)
 
 You can download the [sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/WPF);
 
