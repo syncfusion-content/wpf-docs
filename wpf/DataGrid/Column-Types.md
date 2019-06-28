@@ -472,28 +472,26 @@ In the below code, Button inside CellTemplate bound to the command in ViewModel.
 
 {% tabs %}
 {% highlight xaml %}
-
-    <syncfusion:SfDataGrid x:Name="dataGrid"
-                        AutoGenerateColumns="False" 
-                        ItemsSource="{Binding Orders}">
-        <syncfusion:SfDataGrid.Columns>
-            <syncfusion:GridTextColumn MappingName="Delete">
-                <syncfusion:GridTextColumn.CellTemplate>
-                    <DataTemplate>
-                        <Button Command="{Binding DataContext.DeleteRecord, ElementName=dataGrid}"
-                                CommandParameter="{Binding}"
-                                Content="Delete" />
-                        <!--or-->
-                        <Button Command="{Binding DeleteRecord,
-                                Source={StaticResource viewModel}}"
-                                CommandParameter="{Binding}"
-                                Content="Delete" />
-                    </DataTemplate>
-                </syncfusion:GridTextColumn.CellTemplate>
-            </syncfusion:GridTextColumn>
-        </syncfusion:SfDataGrid.Columns>
-    </syncfusion:SfDataGrid>
-
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                    AutoGenerateColumns="False" 
+                    ItemsSource="{Binding Orders}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="Delete">
+            <syncfusion:GridTextColumn.CellTemplate>
+                <DataTemplate>
+                    <Button Command="{Binding DataContext.DeleteRecord, ElementName=dataGrid}"
+                            CommandParameter="{Binding}"
+                            Content="Delete" />
+                    <!--or-->
+                    <Button Command="{Binding DeleteRecord,
+                            Source={StaticResource viewModel}}"
+                            CommandParameter="{Binding}"
+                            Content="Delete" />
+                </DataTemplate>
+            </syncfusion:GridTextColumn.CellTemplate>
+        </syncfusion:GridTextColumn>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
