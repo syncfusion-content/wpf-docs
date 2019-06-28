@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| SfDigitalGauge | Wpf | Syncfusion
-description: Overview
+title: Overview| Digital Gauge | WPF | Syncfusion
+description: WPF Digital Gauge is data visualization control which used to display alphanumeric characters in digital mode. It supports different kind of segment styles.
 platform: wpf
 control: SfDigitalGauge
 documentation: ug

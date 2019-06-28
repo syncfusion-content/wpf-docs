@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | TabSplitter | WPF | Syncfusion
-description: overview
+title: Overview | Tab Splitter | WPF | Syncfusion
+description: WPF Tab Splitter control provides Visual Studio-like split view capability. It produce documents in horizontal or vertical split.
 platform: wpf
 control: TabSplitter
 documentation: ug

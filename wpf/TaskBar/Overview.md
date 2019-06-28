@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | TaskBar | WPF | Syncfusion
-description: overview
+description: WPF TaskBar is a navigation control like Windows Explorer. It provides group and display views with expand, collapse, and office styles.
 platform: wpf
 control: TaskBar
 documentation: ug

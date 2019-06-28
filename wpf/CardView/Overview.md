@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | CardView | wpf | Syncfusion
-description: overview
+title: Overview | Card View | WPF | Syncfusion
+description: WPF Card View is a panel that helps to organize a list of items in cards with grouping, sorting, and filtering options.
 platform: wpf
 control: CardView
 documentation: ug

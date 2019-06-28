@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SplitButton | wpf | Syncfusion
-description: overview
+title: Overview | Split Button | WPF | Syncfusion
+description: WPF Split Button includes both an action area and a drop-down button, which displays the items in a drop-down menu.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
@@ -13,7 +13,7 @@ The SplitButtonAdv control displays a button with splitter, which provides both 
 
 
 
-![](Overview_images/Overview_img1.png)
+![SplitButton - Overview](Overview_images/Overview_img1.png)
 
 
 

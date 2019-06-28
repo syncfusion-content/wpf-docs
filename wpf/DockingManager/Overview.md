@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | DockingManager | WPF | Syncfusion
-description: DockingManager provides an interface to create visual studio style dock windows. Supports floating panels, dock panels, pin & tabbed groups.
+title: Overview | Docking Manager | WPF | Syncfusion
+description: WPF Docking Manager control provides an interface to create Visual Studio-like dock windows and provides floating panels, autohide, and tabbed documents.
 platform: wpf
 control: DockingManager
 documentation: ug

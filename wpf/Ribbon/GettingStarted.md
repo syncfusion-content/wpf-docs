@@ -120,7 +120,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    x:Class="RibbonControl.M
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img18.jpg)
+![Get similar UI as Microsoft Outlook using Ribbon](GettingStarted_images/GettingStarted_img18.jpg)
 
 ## Set visual styles
 
@@ -172,7 +172,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img1.jpg)
+![Ribbon with VisualStyle as Office2013White as like Microsoft Outlook ](GettingStarted_images/GettingStarted_img1.jpg)
 
 ## Add RibbonTab
 
@@ -202,7 +202,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img2.jpg)
+![Ribbon with four RibbonTab as like Microsoft Outlook](GettingStarted_images/GettingStarted_img2.jpg)
 
 ## Add RibbonBar
 
@@ -238,7 +238,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img3.jpg)
+![Ribbon with five RibbonBar inside the HOME RibbonTab as like Microsoft Outlook HOME Tab .](GettingStarted_images/GettingStarted_img3.jpg)
 
 ## Add RibbonButton
 
@@ -300,7 +300,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img4.jpg)
+![RibbonButton with a caption as New Email similar to Outlook New Email Button](GettingStarted_images/GettingStarted_img4.jpg)
 
 N> Image of any size has been used for `RibbonButton` and also it supports image of all formats.
 
@@ -355,7 +355,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img5.jpg)
+![DropDownButton with a caption as New Items similar to Outlook New Items DropdownButton](GettingStarted_images/GettingStarted_img5.jpg)
 
 ## Add SplitButton
 
@@ -416,7 +416,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img6.jpg)
+![SplitButton with a caption as Clean Up similar to Outlook Clean Up split button](GettingStarted_images/GettingStarted_img6.jpg)
 
 ## Add RibbonGallery
 
@@ -486,7 +486,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img7.jpg)
+![Ribbon with RibbonGallery similar to content inside the Quick Steps RibbonBar in Microsoft Outlook](GettingStarted_images/GettingStarted_img7.jpg)
 
 ## Add RibbonComboBox
 
@@ -639,7 +639,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img8.jpg)
+![Quick Access toolbar as like Outlook](GettingStarted_images/GettingStarted_img8.jpg)
 
 
 ### Add items to Quick Access toolbar	
@@ -729,7 +729,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img10.jpg)
+![Quick Access toolbar with some items as like Outlook](GettingStarted_images/GettingStarted_img10.jpg)
 
 ## Add BackStage
 
@@ -821,7 +821,91 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img11.jpg)
+![BackStage as like Microsoft Outlook BackStage](GettingStarted_images/GettingStarted_img11.jpg)
+
+### Customize the BackStage Visibility 
+
+The `IsBackStageVisible` property of `Ribbon` enables you to show/hide the `BackStage`. The following code example illustrates how to show or hide `BackStage`.
+
+1. Through Property 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:Ribbon x:Name="_ribbon" VerticalAlignment="Top" IsBackStageVisible ="True"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+_ribbon.IsBackStageVisible = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+2. Through Methods
+
+% tabs %}
+
+{% highlight C# %}
+
+private void ShowBackstage_Click(object sender, RoutedEventArgs e)
+{
+    //to show back stage
+
+    _ribbon.ShowBackStage();
+}
+
+private void HideBackstage_Click(object sender, RoutedEventArgs e)
+{
+    //to hide the back stage
+
+    _ribbon.HideBackStage();
+}
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub ShowBackstage_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	'to show back stage
+
+	_ribbon.ShowBackStage()
+End Sub
+
+Private Sub HideBackstage_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+	'to hide the back stage
+
+	_ribbon.HideBackStage()
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
+
+3. Through Commands
+
+`Ribbon` control provides the static `Commands` to show/hide the `BackStage` based on the parameter passed to it.
+
+{% tabs %}
+
+{% highlight XAML %}
+<syncfusion:RibbonButton x:Name="ribbonButton" Label="Open Backstage" Command="{x:Static syncfusion:RibbonCommands.OpenBackStage}" CommandTarget="{Binding ElementName=ribbon}">
+                        <syncfusion:RibbonButton.CommandParameter>
+                            <!--If we passes false it will hide the backstage otherwise it will show the backstage-->
+                            <sys:Boolean>true</sys:Boolean>
+                        </syncfusion:RibbonButton.CommandParameter>
+                    </syncfusion:RibbonButton>
+{% endhighlight %}
+
+{% endtabs %}
+
+>Note
+>
+>In order to bind the `OpenBackStage` command, `CommandTarget` and `CommandParameter` must be defined.
+
 
 ## Add BackStageCommandButton
 
@@ -918,7 +1002,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img12.jpg)
+![BackStageCommandButton with caption as Save similar to Outlook Save button](GettingStarted_images/GettingStarted_img12.jpg)
 
 
 ## Add BackStageTabItem
@@ -1025,7 +1109,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img13.jpg)
+![BackStageTab with caption as Info similar to Outlook Info tab](GettingStarted_images/GettingStarted_img13.jpg)
 
 
 ## Add BackStage separator			
@@ -1133,7 +1217,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img14.jpg)
+![BackStageSeparator as like Outlook](GettingStarted_images/GettingStarted_img14.jpg)
 
 
 ## Add application menu
@@ -1228,7 +1312,7 @@ syncfusion:SkinStorage.VisualStyle="Default" >
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img15.jpg)
+![ApplicationMenu as like Microsoft Outlook ](GettingStarted_images/GettingStarted_img15.jpg)
 
 ### Add application items to the application menu
 
@@ -1330,4 +1414,4 @@ syncfusion:SkinStorage.VisualStyle="Default"
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img17.jpg)
+![AppicationMenu with ApplicationItems as like Microsoft Outlook](GettingStarted_images/GettingStarted_img17.jpg)

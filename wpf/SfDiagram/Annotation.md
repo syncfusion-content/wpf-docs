@@ -304,6 +304,6 @@ AnnotationEditorViewModel annotation = new AnnotationEditorViewModel()
 ## Multiple Annotations
 
 You can add any number of Annotations to a Node or Connector.
-For sample, please refer to [MultipleAnnotation](http://www.syncfusion.com/downloads/support/directtrac/239374/ze/MultipleAnnotation-627408298 "MultipleAnnotation").
+For sample, please refer to [MultipleAnnotation](https://www.syncfusion.com/downloads/support/directtrac/239374/ze/MultipleAnnotation-2076131568 "MultipleAnnotation").
 
 ![Multiple Annotations](Annotation_images/annotation_img21.PNG)

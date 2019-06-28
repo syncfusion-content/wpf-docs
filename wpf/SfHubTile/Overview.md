@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfHubTile | WPf | Syncfusion
-description: overview
+title: Overview | Hub Tile | WPF | Syncfusion
+description: WPF Hub Tile provides live tile updates and notifications to your application same as produced in live tile feature in latest Windows OS.
 platform: WPF
 control: SfHubTile
 documentation: ug

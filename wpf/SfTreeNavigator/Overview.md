@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfTreeNavigator | wpf | Syncfusion
-description: overview  
+title: Overview | TreeNavigator | WPF | Syncfusion
+description: WPF Tree Navigator control helps to navigate a hierarchical structure. It supports different navigation modes as well.
 platform: wpf
 control: SfTreeNavigator 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The tree navigator control provides a unique interface that can expand a tree structure in-place without taking up more space on the screen.
 
-![1](Overview_images/Overview_img1.png)
+![TreeNavigator - Overview](Overview_images/Overview_img1.png)
 
 ### Key features
 

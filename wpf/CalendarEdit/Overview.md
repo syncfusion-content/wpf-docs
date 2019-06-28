@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | CalendarEdit | WPF | Syncfusion
-description: The WPF Calendar control allows users to easily select one or more dates. This control supports month, year, and decade views, blackout dates, and more.
+title: Overview | Calendar | WPF | Syncfusion
+description: WPF Calendar control allows users to easily select one or more dates. This control supports month, year, and decade views, blackout dates, and more.
 platform: wpf
 control: CalendarEdit
 documentation: ug

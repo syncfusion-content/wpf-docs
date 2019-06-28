@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| ColorPickerPalette | Wpf | Syncfusion
-description: overview
+title: Overview| Color Picker Palette | WPF | Syncfusion
+description: WPF Color Picker Palette allows users to select a color visually in a WYSIWYG manner.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | SfBulletGraph | Wpf | Syncfusion
-description: Overview 
+title: Overview | Bullet Graph | WPF | Syncfusion
+description: WPF Bullet Graph is a variation of a bar graph that displays a single primary measure and it compares the measure to one or more other measures.
 platform: wpf
 control: SfBulletGraph
 documentation: ug
