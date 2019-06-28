@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WPF DataGrid Stacked Headers | Multi Level Header | Syncfusion
+title: WPF DataGrid Stacked Headers | Multi Level Column Header | Syncfusion
 description: WPF DataGrid stacked headers allows to add multilevel column headers (unbound header rows) that span across multiple columns.
 platform: wpf
 control: SfDataGrid
