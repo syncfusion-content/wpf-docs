@@ -104,6 +104,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 `HeightMapping`: Maps the Height in the underlying data object to data source item.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <ResourceDictionary.MergedDictionaries>
@@ -193,7 +194,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 
 {% endhighlight %}
 
-{% highlight C#}
+{% highlight C# %}
 
             //Initialize Diagram
             SfDiagram Diagram = new SfDiagram();
@@ -317,6 +318,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
     }        
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![Flowchart](DataSource_images/DataSource_Flowchart.png)
