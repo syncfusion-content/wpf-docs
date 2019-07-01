@@ -847,7 +847,7 @@ _ribbon.IsBackStageVisible = true;
 
 2. Through Methods
 
-% tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
