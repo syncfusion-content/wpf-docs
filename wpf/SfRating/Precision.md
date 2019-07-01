@@ -37,7 +37,7 @@ public MainWindow()
 
 {% endhighlight %}
 
-{% end tabs %}
+{% endtabs %}
 
 ![SfRating standard precision mode](images/Precision_Standard.png)
 
