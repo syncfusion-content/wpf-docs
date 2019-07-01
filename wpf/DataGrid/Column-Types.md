@@ -1845,19 +1845,19 @@ public class GridCellMultiColumnDropDownRendererExt : GridCellMultiColumnDropDow
 {% endhighlight %}
 {% endtabs %}
 
-### Loading different ItemsSource for each row 
+### Loading different ItemsSource for each row
 
-You can load the different ItemsSource to each row of `GridMultiColumnDropDownList` by setting  `SfDataGrid.ItemsSourceSelector` property. 
+You can load different ItemsSource to each row of `GridMultiColumnDropDownList` by setting the `SfDataGrid.ItemsSourceSelector` property. 
 
 ### Implementing IItemsSourceSelector
 
-`ItemsSourceSelector` needs to implement `IItemsSourceSelector` interface which requires you to implement `GetItemsSource` method which receives the below parameters,
+`ItemsSourceSelector` needs to implement the `IItemsSourceSelector` interface, which is required to implement the `GetItemsSource` method. The `GetItemsSource` method receives the following parameters:
 <ul>
-<li> <b>Record</b> – data object associated with row.</li>
+<li> <b>Record</b> – Data object associated with row.</li>
 <li> <b>Data Context</b>  – Data context of data grid.</li>
 </ul>
 
-In the below code, ItemsSource for `ShipCity` column returned based on `ShipCountry` column value using the record and data context of data grid passed to `GetItemsSource` method.
+In the following code, ItemsSource for `ShipCity` column is returned based on `ShipCountry` column value using the record and data context of data grid passed to the `GetItemsSource` method.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1911,13 +1911,13 @@ public class ItemsSourceSelector : IItemsSourceSelector
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates the different `ShipCity` ItemsSource bound to each row of the `MultiColumnDropDownList` based on the Country Name.
+The following screenshot illustrates different `ShipCity` ItemsSource bound to each row of the `MultiColumnDropDownList` based on country name.
 
 ![Image used to display GridMultiColumnDropDownList with different itemsource in each row of SfDataGrid WPF](Column-Types_images/Column-Types_img27.png)
 
 ![Image used to display GridMultiColumnDropDownList with different itemsource in each row of SfDataGrid WPF](Column-Types_images/Column-Types_img28.png)
 
-You can download the sample from [here](https://github.com/SyncfusionExamples/how-to-load-different-items-for-each-row-in-multicolumn-dropdown-column-in-wpf-and-uwp-datagrid).
+You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-load-different-items-for-each-row-in-multicolumn-dropdown-column-in-wpf-and-uwp-datagrid).
 
 ## GridHyperlinkColumn
 
