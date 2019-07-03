@@ -2032,7 +2032,7 @@ chart.Behaviors.Add(zooming);
 
 **Pinch** **Zooming**
 
-If you want to zoom using fingers by touch, then you have to set [`EnablePinchZooming](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~EnablePinchZooming.html# "") property to true as shown in the below code snippet.
+If you want to zoom using fingers by touch, then you have to set [`EnablePinchZooming`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~EnablePinchZooming.html#) property to true as shown in the below code snippet.
 
 {% tabs %}
 
