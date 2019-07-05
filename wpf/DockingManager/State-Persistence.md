@@ -297,5 +297,33 @@ reader.Close()
 
 {% endtabs %}
 
+## Restrict state persistence for specific child in DockingManager
+
+The [CanSerialize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CanSerializeProperty.html) attached property of DockingManager decides whether the child can be serialized or not. The default value of the [CanSerialize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CanSerializeProperty.html) property is true. When the property is false, while performing deserialization the non-serialized child will move to its default state. This can also be done programmatically by using the [SetCanSerialize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetCanSerialize.html) function of DockingManager.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True">
+
+<ContentControl syncfusion:DockingManager.Header="Solution Explorer" x:Name="solutionExplorer" syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.CanSerialize="False"/>
+
+<ContentControl syncfusion:DockingManager.Header="Start Page" x:Name="startPage" syncfusion:DockingManager.State="Document" />
+
+<ContentControl syncfusion:DockingManager.Header="Toolbox" x:Name="toolBox" syncfusion:DockingManager.State="AutoHidden"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager.SetCanSerialize(solutionExplorer, false);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.
+
