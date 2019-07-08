@@ -232,7 +232,7 @@ Different flowchart symbols have different meanings that are used to represent d
 |![MultiDocument](Automatic-Layouts_images/Automatic-Layouts_MultiDocument.png)|MultiDocument|Represents multiple documents or reports in the process.|
 |![Connector](Automatic-Layouts_images/Automatic-Layouts_Connector.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
 
-N> We have provided some basic built-in Shapes as ResourceDictionary. For more [Shapes](/wpf/sfdiagram/shapes).
+N> We have provided some more built-in Shapes as ResourceDictionary. For more Shapes, please refer this [page](/wpf/sfdiagram/shapes).
 
 {% tabs %}
 
@@ -500,8 +500,7 @@ N> We have provided some basic built-in Shapes as ResourceDictionary. For more [
 ## Customize flowchart layout orientation
 
 Sequence of the node's direction can be customized by flowchart orientation either vertically from top to bottom or by horizontally from left to right.
-The `Orientation` property of `FlowchartLayout` class allows you to define the flow direction for flowchart as `TopToBottom` or `LeftToRight`. Please refer to the below code example for details.
-
+The `Orientation` property of `FlowchartLayout` class allows you to define the flow direction for flowchart as `TopToBottom` or `LeftToRight`.
 
 ### TopToBottom Orientation
 Arranges the element in the layout vertically from top to bottom.
@@ -561,7 +560,7 @@ N> If both branch directions are same, **Yes** branch will be prioritized.
 
 ### Custom Yes and No branch values
 
-The decision symbol will produce the two branches as output, which will be Yes branch and No branch. If the output branch connector text value matches the values in the YesBranchValues property of FlowchartLayout class, it will be considered as Yes branch and similarly if connector text value matches the values in the NoBranchValues property, it will be considered as No branch. By default, the YesBranchValues property will contain "Yes” and “True” string values and the NoBranchValues property will contain "No" and "False" string values.  
+The decision symbol will produce the two branches as output, which will be **Yes** branch and **No** branch. If the output branch connector text value matches the values in the `YesBranchValues` property of `FlowchartLayout` class, it will be considered as **Yes** branch and similarly if connector text value matches the values in the `NoBranchValues` property, it will be considered as **No** branch. By default, the `YesBranchValues` property will contain **Yes** and **True** string values and the `NoBranchValues` property will contain **No** and **False** string values.  
 
 Any text value can be given as a connector text to describe the flow. Also, any string value can be given in the `YesBranchValues` and `NoBranchValues`. To decide the flow based on if or else, that connector text should match the values in the `YesBranchValues` and `NoBranchValues`.
 
