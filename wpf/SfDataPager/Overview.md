@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | DataPager | WPF | Syncfusion
+title: Overview of WPF DataPager | Syncfusion
 description: WPF DataPager control provides a configurable user interface for paging using a data collection.
 platform: wpf
 control: SfDataPager Control
