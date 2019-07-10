@@ -1,6 +1,6 @@
 ---
-title: Syncfusion SfRichTextBoxAdv Document Styles
-description: styles
+title: Document styles | WPF RichTextBox | Syncfusion
+description: This section illustrates how to create, modify, and apply style in a Word document. Supports character, paragraph and linked style types.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug

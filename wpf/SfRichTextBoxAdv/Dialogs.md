@@ -1,6 +1,6 @@
 ---
-title: Syncfusion SfRichTextBoxAdv Dialogs
-description: dialogs
+title: Dialogs | WPF RichTextBox | Syncfusion
+description: This section illustrates how to use built-in dialogs of WPF RichTextBox control
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
