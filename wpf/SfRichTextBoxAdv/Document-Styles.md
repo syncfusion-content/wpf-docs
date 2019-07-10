@@ -76,9 +76,9 @@ When a linked style is based on another linked style, the hierarchy of the prope
 SfRichTextBoxAdv provides the following functionalities related with styles:
 
 * Create new style
-* Modify the existing style
+* Modify an existing style
 * Apply style
-* Clear style
+* Clear formatting
 
 ## Create new style
 New styles are created and added to the style collection of the document. Here, you can create character, paragraph and linked type styles.
@@ -106,7 +106,7 @@ The following code example explains how to apply style through command binding.
 {% endhighlight %}
 {% endtabs %}
 
-## Modifying a style
+## Modify an existing style
 You can modify a style directly using the ShowStylesDialogCommand in SfRichTextBoxAdv.
 
 The following code example explains how to modify the style dialog through command binding.
@@ -122,12 +122,12 @@ From the styles list select a style you want to modify.
 In the Formatting section, make any formatting changes you want, such as font style, size, or color, alignment, line spacing, or indentation.
 ![Modify style dialog](Image_images/ModifyStyle.PNG)
 
-## Clear style
+## Clear formatting
 It will remove all the formatting from the selection leaving only the normal unformatted text. But when there is no selection, it will remove only the formatting inherited from style.
 
 The following code example explains how to clear the formatting of text through command binding.
 {% tabs %}
 {% highlight xaml %}
-<Button Content="Clear style" Command="Syncfusion:SfRichTextBoxAdv.ClearFormattingCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}"></Button>
+<Button Content="Clear formatting" Command="Syncfusion:SfRichTextBoxAdv.ClearFormattingCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}"></Button>
 {% endhighlight %}
 {% endtabs %}
