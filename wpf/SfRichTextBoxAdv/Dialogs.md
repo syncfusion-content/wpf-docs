@@ -63,12 +63,8 @@ The following code example demonstrates how to show the built-in dialogs in SfRi
 <Button Content="Borders and Shading" Command="RichTextBoxAdv:SfRichTextBoxAdv.ShowBordersAndShadingDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 <!-- Binds button to the ShowStyleDialogCommand -->
 <Button Content="Create style" Command="Syncfusion:SfRichTextBoxAdv.ShowStyleDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
-<!-- Binds button to the ApplyStyleCommand -->
-<Button Content="Apply style" Command="Syncfusion:SfRichTextBoxAdv.ApplyStyleCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="Heading 1" />
 <!-- Binds button to the ShowStylesDialogCommand -->
 <Button Content="Modify style" Command="Syncfusion:SfRichTextBoxAdv.ShowStylesDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
-<!-- Binds button to the ClearFormattingCommand -->
-<Button Content="Clear style" Command="Syncfusion:SfRichTextBoxAdv.ClearFormattingCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 {% endhighlight %}
 
 {% endtabs %}
