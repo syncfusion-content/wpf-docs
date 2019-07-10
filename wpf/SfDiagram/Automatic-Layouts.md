@@ -210,7 +210,7 @@ diagramcontrol.LayoutManager = new LayoutManager()
 
 The Flowchart layout is a diagrammatic representation of a process, workflow, system or computer algorithm. Flowcharts uses various kind of symbols to illustrate the different types of actions and symbols connected together with arrows showing the flow direction of process.
 
-##Common flowchart symbols
+## Common flowchart symbols
 
 Different flowchart symbols have different meanings that are used to represent different states in Flowchart. The following table describes the most common Flowchart symbols that are used in creating flowchart.
 
@@ -232,7 +232,7 @@ Different flowchart symbols have different meanings that are used to represent d
 |![MultiDocument](Automatic-Layouts_images/Automatic-Layouts_MultiDocument.png)|MultiDocument|Represents multiple documents or reports in the process.|
 |![Connector](Automatic-Layouts_images/Automatic-Layouts_Connector.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
 
-There are some basic built-in shapes as ResourceDictionary. For more information, refer to [Shapes](/wpf/sfdiagram/shapes).
+N> We have provided some more built-in Shapes as ResourceDictionary. For more Shapes, please refer this [page](/wpf/sfdiagram/shapes).
 
 {% tabs %}
 
@@ -499,10 +499,11 @@ There are some basic built-in shapes as ResourceDictionary. For more information
 
 ## Customize flowchart layout orientation
 
-Sequence of the node's direction can be customized by flowchart layout orientation such as **TopToBottom** or **LeftToRight**.
+Sequence of the node's direction can be customized by flowchart orientation either vertically from top to bottom or by horizontally from left to right.
+The `Orientation` property of `FlowchartLayout` class allows you to define the flow direction for flowchart as `TopToBottom` or `LeftToRight`.
 
 ### TopToBottom Orientation
-Arranges the layout vertically from top to bottom.
+Arranges the element in the layout vertically from top to bottom.
 
 {% tabs %}
 
@@ -532,7 +533,7 @@ Arranges the layout vertically from top to bottom.
 
 
 ### LeftToRight orientation
-Arranges the layout horizontally from left to right.
+Arranges the element in the layout horizontally from left to right.
 
 ![Horizontal](Automatic-Layouts_images/Automatic-Layouts_Flowchart_Horizontal.png) 
 
@@ -540,11 +541,11 @@ Arranges the layout horizontally from left to right.
 
 Decision symbol denotes the question that can be answered in binary format (Yes/No, True/False). The output direction of the decision symbol can be controlled by the direction of "Yes" and "No" branches using the `YesBranchDirection` and `NoBranchDirection` properties of `FlowchartLayout` class.
 
-`Left In Flow`: Arranges the children to the Left of the Decision.
+`Left In Flow`: Arranges the Yes/No branch to the Left of the Decision symbol.
 
-`Right In Flow`: Arranges the children to the Right of the Decision.
+`Right In Flow`: Arranges the Yes/No branch to the Right of the Decision symbol.
 
-`Same As Flow`: Arranges the childen as same as the Decision flow.
+`Same As Flow`: Arranges the Yes/No branch as same as the flow of the Decision symbol.
 
 The following table will explain the pictorial representation of the behavior:
 
@@ -559,9 +560,9 @@ N> If both branch directions are same, **Yes** branch will be prioritized.
 
 ### Custom Yes and No branch values
 
-The decision symbol will produce the two branches as output, which will be Yes branch and No branch. If the output branch connector text value matches the values in the `YesBranchValues` property of `FlowchartLayout` class, it will be considered as **Yes** branch and similarly if connector text value matches the values in the `NoBranchValues` property, it will be considered as **No** branch. By default, the `YesBranchValues` property will contain **Yes** and **True** string values and the `NoBranchValues` property will contain **No** and **False** string values. 
+The decision symbol will produce the two branches as output, which will be **Yes** branch and **No** branch. If the output branch connector text value matches the values in the `YesBranchValues` property of `FlowchartLayout` class, it will be considered as **Yes** branch and similarly if connector text value matches the values in the `NoBranchValues` property, it will be considered as **No** branch. By default, the `YesBranchValues` property will contain **Yes** and **True** string values and the `NoBranchValues` property will contain **No** and **False** string values.  
 
-Any text value can be given as a connector text to describe the flow. Also, any string value can be given in the `YesBranchValues` and `NoBranchValues` . To decide the flow based on if or else,  that connector text should match the values in the `YesBranchValues` and `NoBranchValues` respectively.
+Any text value can be given as a connector text to describe the flow. Also, any string value can be given in the `YesBranchValues` and `NoBranchValues`. To decide the flow based on if or else, that connector text should match the values in the `YesBranchValues` and `NoBranchValues`.
 
 
 {% tabs %}
@@ -611,6 +612,9 @@ Any text value can be given as a connector text to describe the flow. Also, any 
 
 {% endtabs %}
 
+![CustomFlowchart](Automatic-Layouts_images/Automatic-Layouts_CustomYes_NoBranch.png)
+
+
 ### Vertical and horizontal spacing 
 
 Control the spacing between the nodes both horizontally and vertically using the `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
@@ -619,7 +623,7 @@ Control the spacing between the nodes both horizontally and vertically using the
 
 {% highlight xaml %}
 
-<syncfusion:FlowchartLayout x:Key="Layout"                                         
+< syncfusion:FlowchartLayout x:Key="Layout"                                         
                             HorizontalSpacing="50" 
                             VerticalSpacing="30">   
 </syncfusion:FlowchartLayout>
@@ -642,4 +646,4 @@ Control the spacing between the nodes both horizontally and vertically using the
 
 {% endtabs %}
 
-![CustomFlowchart](Automatic-Layouts_images/Automatic-Layouts_CustomYes_NoBranch.png)
+Please find [Flowchart sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Flowchart_Layout-2088923614-1032196453.zip) to depict this support.

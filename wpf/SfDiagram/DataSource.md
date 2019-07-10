@@ -323,6 +323,6 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 
 ![Flowchart](DataSource_images/DataSource_Flowchart.png)
 
-Refer to the `Flowchart Layout` sample to depict this support.
+Refer to the [Flowchart Layout sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Flowchart_Layout-2088923614-1032196453.zip) to depict this support.
 
 Navigation->WPF->Diagram->Automatic layout->Flowchart Layout
