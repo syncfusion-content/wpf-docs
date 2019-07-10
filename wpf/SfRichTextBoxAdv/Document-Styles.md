@@ -92,20 +92,6 @@ The following code example explains how to create new style dialog through comma
 
 ![Create style dialog](Image_images/CreateStyle.PNG)
 
-## Applying a style
-The styles are applied using the ApplyStyleCommand in SfRichTextBoxAdv. The parameter should be passed is the Name of the Style.
-
-The styles of the Character type are applied to the currently selected part of the document. If there is no selection, the values that will be applied to the word at caret position. The styles of Paragraph type follow the same logic and are applied to all paragraphs in the selection or the current paragraph.
-
-When there is no selection, styles of Linked type will change the values of the paragraph and apply both the Paragraph and Character properties. When there is selection, Linked Style changes only the character properties of the selected text.
-
-The following code example explains how to apply style through command binding.
-{% tabs %}
-{% highlight xaml %}
-<Button Content="Apply style" Command="Syncfusion:SfRichTextBoxAdv.ApplyStyleCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="Heading 1"></Button>
-{% endhighlight %}
-{% endtabs %}
-
 ## Modify an existing style
 You can modify a style directly using the ShowStylesDialogCommand in SfRichTextBoxAdv.
 
@@ -121,6 +107,20 @@ From the styles list select a style you want to modify.
 
 In the Formatting section, make any formatting changes you want, such as font style, size, or color, alignment, line spacing, or indentation.
 ![Modify style dialog](Image_images/ModifyStyle.PNG)
+
+## Apply style
+The styles are applied using the ApplyStyleCommand in SfRichTextBoxAdv. The parameter should be passed is the Name of the Style.
+
+The styles of the Character type are applied to the currently selected part of the document. If there is no selection, the values that will be applied to the word at caret position. The styles of Paragraph type follow the same logic and are applied to all paragraphs in the selection or the current paragraph.
+
+When there is no selection, styles of Linked type will change the values of the paragraph and apply both the Paragraph and Character properties. When there is selection, Linked Style changes only the character properties of the selected text.
+
+The following code example explains how to apply style through command binding.
+{% tabs %}
+{% highlight xaml %}
+<Button Content="Apply style" Command="Syncfusion:SfRichTextBoxAdv.ApplyStyleCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="Heading 1"></Button>
+{% endhighlight %}
+{% endtabs %}
 
 ## Clear formatting
 It will remove all the formatting from the selection leaving only the normal unformatted text. But when there is no selection, it will remove only the formatting inherited from style.
