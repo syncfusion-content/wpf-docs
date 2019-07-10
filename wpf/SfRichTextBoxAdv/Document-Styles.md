@@ -90,7 +90,7 @@ The following code example explains how to create new style dialog through comma
 {% endhighlight %}
 {% endtabs %}
 
-![](Image_images/CreateStyle.PNG)
+![Create style dialog](Image_images/CreateStyle.PNG)
 
 ## Applying a style
 The styles are applied using the ApplyStyleCommand in SfRichTextBoxAdv. The parameter should be passed is the Name of the Style.
@@ -117,10 +117,10 @@ The following code example explains how to modify the style dialog through comma
 {% endtabs %}
 
 From the styles list select a style you want to modify.
-![](Image_images/Stylesdialog.PNG)
+![Styles dialog](Image_images/Stylesdialog.PNG)
 
 In the Formatting section, make any formatting changes you want, such as font style, size, or color, alignment, line spacing, or indentation.
-![](Image_images/ModifyStyle.PNG)
+![Modify style dialog](Image_images/ModifyStyle.PNG)
 
 ## Clear style
 It will remove all the formatting from the selection leaving only the normal unformatted text. But when there is no selection, it will remove only the formatting inherited from style.
