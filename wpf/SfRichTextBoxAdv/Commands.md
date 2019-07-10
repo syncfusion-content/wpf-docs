@@ -1,5 +1,5 @@
 ---
-title: Commands
+title: Syncfusion SfRichTextBoxAdv Commands
 description: commands
 platform: wpf
 control: SfRichTextBoxAdv

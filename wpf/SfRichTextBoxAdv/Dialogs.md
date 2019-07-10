@@ -1,5 +1,5 @@
 ---
-title: Dialogs
+title: Syncfusion SfRichTextBoxAdv Dialogs
 description: dialogs
 platform: wpf
 control: SfRichTextBoxAdv

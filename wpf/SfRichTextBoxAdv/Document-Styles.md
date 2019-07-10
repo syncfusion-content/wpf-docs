@@ -1,5 +1,5 @@
 ---
-title: Document Styles
+title: Syncfusion SfRichTextBoxAdv Document Styles
 description: styles
 platform: wpf
 control: SfRichTextBoxAdv
