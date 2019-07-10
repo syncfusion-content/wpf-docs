@@ -28,6 +28,8 @@ Commands are a way to handle user interface (UI) actions. They are a loosely cou
 
 * Insert – Insert picture and Insert hyperlink.
 
+* Document Styles – Create, modify, apply and clear style.
+
 ## UI Command to access character formatting
 
 
@@ -42,6 +44,13 @@ The following code example demonstrates how to bind commands for applying charac
 
 {% endhighlight %}
 
+{% endtabs %}
+
+The following code example demonstrates how to bind commands with parameter.
+{% tabs %}
+{% highlight xaml %}
+<Button Content="Textalignment" Command="Syncfusion:SfRichTextBoxAdv.TextAlignmentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="Right" />
+{% endhighlight %}
 {% endtabs %}
 
 ## List of available Commands
@@ -1365,7 +1374,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to apply text alignment for the selected paragraphs.</p>
 </td>
 <td>
-<p>The text alignment value to be applied.</p>
+<p>The [TextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.TableAlignment.html) value to be applied.</p>
 </td>
 </tr>
 <tr>
@@ -1440,6 +1449,50 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 </td>
 <td>
 <p>Represents the command that performs navigation for "UP" key.</p>
+</td>
+<td>
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ShowStyleDialogCommand</p>
+</td>
+<td>
+<p>Represents the command that shows the create style dialog.</p>
+</td>
+<td>
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ShowStylesDialogCommand</p>
+</td>
+<td>
+<p>Represents the command that shows the modify style dialog.</p>
+</td>
+<td>
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ApplyStyleCommand</p>
+</td>
+<td>
+<p>Represents the command, which requests to apply style for the selected paragraph.</p>
+</td>
+<td>
+<p>Name of the Style</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ClearFormattingCommand</p>
+</td>
+<td>
+<p>Represents the command, which requests to remove formatting from the selected paragraph.</p>
 </td>
 <td>
 <p>NA</p>

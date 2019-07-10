@@ -32,6 +32,8 @@ The SfRichTextBoxAdv provides support for the following built-in dialogs similar
 
 * Borders and Shading Dialog
 
+* Styles Dialog
+
 ## UI Commands for accessing dialogs
 
 The following code example demonstrates how to show the built-in dialogs in SfRichTextBoxAdv through command binding.
@@ -59,7 +61,14 @@ The following code example demonstrates how to show the built-in dialogs in SfRi
 <Button Content="Cell Options" Command="RichTextBoxAdv:SfRichTextBoxAdv.ShowCellOptionsDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 <!-- Binds button to the ShowBordersAndShadingDialogCommand -->
 <Button Content="Borders and Shading" Command="RichTextBoxAdv:SfRichTextBoxAdv.ShowBordersAndShadingDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
-
+<!-- Binds button to the ShowStyleDialogCommand -->
+<Button Content="Create style" Command="Syncfusion:SfRichTextBoxAdv.ShowStyleDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+<!-- Binds button to the ApplyStyleCommand -->
+<Button Content="Apply style" Command="Syncfusion:SfRichTextBoxAdv.ApplyStyleCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="Heading 1" />
+<!-- Binds button to the ShowStylesDialogCommand -->
+<Button Content="Modify style" Command="Syncfusion:SfRichTextBoxAdv.ShowStylesDialogCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+<!-- Binds button to the ClearFormattingCommand -->
+<Button Content="Clear style" Command="Syncfusion:SfRichTextBoxAdv.ClearFormattingCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 {% endhighlight %}
 
 {% endtabs %}
