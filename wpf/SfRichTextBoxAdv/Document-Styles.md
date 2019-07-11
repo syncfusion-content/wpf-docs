@@ -6,6 +6,7 @@ control: SfRichTextBoxAdv
 documentation: ug
 keywords: styles
 ---
+
 # Document Styles
 
 A style is a predefined set of table, numbering, paragraph, and character formatting properties that can be applied to regions within a document.
@@ -65,13 +66,13 @@ Linked styles are based on other linked styles or on paragraph styles.
 
 When a linked style is based on a paragraph style, the hierarchy of the properties is as follows:
 
-* Paragraph properties are inherited from the ‘BasedOn’ paragraph style.
-* Character properties are inherited from the ‘BasedOn’ paragraph style.
+* Paragraph properties are inherited from its base paragraph style.
+* Character properties are inherited from its base character style.
 
 When a linked style is based on another linked style, the hierarchy of the properties is as follows:
 
 * Paragraph properties are inherited from the paragraph style part in its base linked style.
-* Span properties are inherited from the span style part in its base linked style.
+* Span properties are inherited from the character style part in its base linked style.
 
 SfRichTextBoxAdv provides the following functionalities related with styles:
 
