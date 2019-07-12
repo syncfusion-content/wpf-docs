@@ -241,6 +241,6 @@ The following screenshot illustrates setting the Label HorizontalAlignment to le
 
 ![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img2.png)
 
-### Label bar visibility.
-
-SfDateTimeRangeNavigator provides the support to customizes its visibility using `LowerLabelBarVisibility` and `UpperLabelBarVisibility` of type `Visibility`.
+### Visibility of label bar 
+ 
+SfDateTimeRangeNavigator provides support to customize the visibility of lower bar and upper bar using the `LowerLabelBarVisibility` and `UpperLabelBarVisibility` types.
