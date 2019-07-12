@@ -1831,6 +1831,34 @@ dataGrid.ShowDetailsViewIndentCell= False;
 
 ![WPF Master-details view Grid](Master-Details-View_images/Master-Details-View_img14.png)
 
+## Hiding the details view expander icon based on child items count
+
+By default, the state of expander icon is visible for all the data rows in parent DataGrid even if its `RelationalColumn` property has an empty collection or null.
+
+You can customize hiding the details view expander icon by handling the `SfDataGrid.QueryDetailsViewExpanderState` event. This event occurs when expander icon is changed on expanding or collapsing the details view. You can hide the expander icon by setting the `ExpanderVisibility` property to `false` in the `SfDataGrid.QueryDetailsViewExpanderState` event based on condition.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.QueryDetailsViewExpanderState += DataGrid_QueryDetailsViewExpanderState;
+
+private void DataGrid_QueryDetailsViewExpanderState(object sender, Syncfusion.UI.Xaml.Grid.QueryDetailsViewExpanderStateEventArgs e)
+        {
+            var orderInfo = e.Record as OrderInfo;
+            if (orderInfo != null)
+            {
+                if (orderInfo.OrderDetails.Count == 0)
+                {
+                    e.ExpanderVisibility = false;
+                }
+            }
+        }
+{% endhighlight %}
+{% endtabs %} 
+
+The following screenshot illustrates how to hide the state of expander icon based on child items count.
+![Image used to display hidden expander icon state of SfDataGird WPF](Master-Details-View_images/Master-Details-View_img15.png)
+You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-hide-the-detailsview-expander-icon-based-on-child-records-count-wpf-datagrid).
+
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
 
 ItemsSource for DetailsViewDataGrid is populated from the DataContext of parent row based on [ViewDefinition.RelationalColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ViewDefinition~RelationalColumn.html). DetailsViewDataGrid doesn’t update its ItemsSource at runtime based on the property change, which is mapped the DetailsViewDataGrid ItemsSource. You can update the ItemsSource on the property change by setting [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) as `AllowChildViewUpdate`. 
