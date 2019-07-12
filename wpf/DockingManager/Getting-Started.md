@@ -387,7 +387,7 @@ SfSkinManager.SetVisualStyle(SyncDockingManager,VisualStyles.VisualStudio2013);
 
 ![Visual Studio-style appearances for docking manager](Getting-Started_images/Getting-Started_img5.jpeg)
 
-## Set ToolTip for child window in DockingManager
+## ToolTip for child window
 
 The [CaptionToolTip](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CaptionToolTipProperty.html) attached property of DockingManager helps to set the ToolTip for child window when hovering the mouse over it header. This can also be done programmatically by using the [SetCaptionToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetCaptionToolTip.html) function of DockingManager.
 
