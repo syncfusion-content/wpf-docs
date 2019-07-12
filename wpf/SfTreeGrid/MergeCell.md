@@ -70,7 +70,7 @@ void treeGrid_QueryCoveredRange(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeG
 
 ### Merge all cells in an entire parent node
 
-You can merge the entire column parent node
+You can merge the entire column parent node by using `TreeGridCoveredCellInfo`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -174,7 +174,7 @@ class RequestTreeItemsBehavior : Behavior<SfTreeGrid>
 
 ![Merging in WPF treegrid](MergeCells_images/MergeCells_img2.png)
 
-You can refer the sample [here]().
+You can refer the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CellMerge-905710710)
 
 ### Limitation
 •	Freeze panes are not supported.
