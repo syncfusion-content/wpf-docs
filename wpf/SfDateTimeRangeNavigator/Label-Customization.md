@@ -243,4 +243,4 @@ The following screenshot illustrates setting the Label HorizontalAlignment to le
 
 ### Label bar visibility.
 
-SfDateTimeRangeNavigator provides the support to customise its visibility using `LowerLabelBarVisibility` and `UpperLabelBarVisibility` of type `Visibility`.
+SfDateTimeRangeNavigator provides the support to customizes its visibility using `LowerLabelBarVisibility` and `UpperLabelBarVisibility` of type `Visibility`.
