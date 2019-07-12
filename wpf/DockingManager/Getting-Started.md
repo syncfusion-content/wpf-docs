@@ -113,7 +113,7 @@ dock.Children.Add(StartPage);
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Dock child windows in Docking Manager without header](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 ## Set Header for each child window
@@ -158,7 +158,7 @@ DockingManager.SetHeader(StartPage, "StartPage");
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Dock child windows in Docking Manager with header](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 ## Set States for each child window
@@ -210,7 +210,7 @@ DockingManager.SetState(StartPage, DockState.Document);
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Set different state for child windows in Docking Manager](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
 ## Set Sides for children
@@ -260,7 +260,7 @@ DockingManager.SetSideInDockedMode(Output, DockSide.Tabbed);
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![Dock panels at any side and float the control in Docking Manager](Getting-Started_images/Getting-Started_img4.jpeg)
 
 
 ## Save / Load
@@ -385,6 +385,36 @@ SfSkinManager.SetVisualStyle(SyncDockingManager,VisualStyles.VisualStudio2013);
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![Visual Studio-style appearances for docking manager](Getting-Started_images/Getting-Started_img5.jpeg)
 
+## ToolTip for child window
 
+The [CaptionToolTip](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~CaptionToolTipProperty.html) attached property of DockingManager helps to set the ToolTip for child window when hovering the mouse over it header. This can also be done programmatically by using the [SetCaptionToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetCaptionToolTip.html) function of DockingManager.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True">
+
+<ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.DesiredWidthInDockedMode="175" x:Name="solutionExplorer" syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.CaptionToolTip="Dock Window"/>
+
+<ContentControl syncfusion:DockingManager.Header="Start Page" x:Name="startPage" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.CaptionToolTip="Document Window"/>
+
+<ContentControl syncfusion:DockingManager.Header="Toolbox" x:Name="toolBox" syncfusion:DockingManager.State="AutoHidden" syncfusion:DockingManager.CanSerialize="False" syncfusion:DockingManager.CaptionToolTip="AutoHidden Window"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager.SetCaptionToolTip(solutionExplorer, "Dock Window");
+DockingManager.SetCaptionToolTip(startPage, "Document Window");
+DockingManager.SetCaptionToolTip(toolBox, "AutoHidden Window");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Docking Manager displays tooltip when hovering mouse over child window header](Getting-Started_images/ToolTip.png)
