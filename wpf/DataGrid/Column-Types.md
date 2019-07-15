@@ -2614,7 +2614,7 @@ public class GridCellTextBoxRendererExt:GridCellTextBoxRenderer
 
 You can change the renderer of existing column by removing the predefined cell type value from [CellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602.html).
 
-For Non-Editable columns, [SupportsRenderOptimization](https://help.syncfusion.com/cr/cref_files/wp8/sfdatagrid/Syncfusion.SfGrid.WP~Syncfusion.UI.Xaml.Grid.Cells.GridCellRendererBase~SupportsRenderOptimization.html) property should be set as `false` to set focus for the control loaded as DisplayElement in the column.
+For Non-Editable columns, [SupportsRenderOptimization](https://help.syncfusion.com/cr/cref_files/wp8/sfdatagrid/Syncfusion.SfGrid.WP~Syncfusion.UI.Xaml.Grid.Cells.GridCellRendererBase~SupportsRenderOptimization.html) property should be set as `false` to set focus for the control loaded as `DisplayElement` in the column when interact through mouse.
 
 Below code creates the new `GridComboBoxRenderer` with `ComboBoxAdv` as edit element for `GridComboBoxColumn` and replacing created renderer to `CellRenderers`.
 
