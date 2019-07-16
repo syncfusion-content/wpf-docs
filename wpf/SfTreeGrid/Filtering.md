@@ -187,7 +187,7 @@ this.sfTreeGrid.Columns["FirstName"].FilterPredicates.Add(
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering1.png)
+![Multiple filter predicates for a column](Filtering_images/Filtering1.png)
 
 #### Filter DateColumn with range between two dates
 
