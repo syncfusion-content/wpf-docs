@@ -19,6 +19,17 @@ This event is triggered when you tap on any card. The argument contains the foll
 * [`SelectedColumnIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumnIndex.html) - Used to get the index of dragging card's  column.
 * [`SelectedRowIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedRowIndex.html) - Used to get the index of dragging card's row.
 
+### Command
+
+The `CardTappedCommand` property is used to associate a command with an instance of SfKanban. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+
+### CommandParameter
+
+The `CardTappedCommandParameter` property is used to set the parameter reference, based on which the event argument is shown.
+
+>**NOTE**
+The default value of the `CardTappedCommandParameter` is `null`.
+
 ## CardDoubleTapped
 
 The [`CardDoubleTapped`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfKanban.WPF~Syncfusion.UI.Xaml.Kanban.SfKanban~CardDoubleTapped_EV.html) event is triggered when you double tap on any card. The argument contains the following information:
