@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Key Performance Indicator (KPI)
-description: KPI
+title: Key Performance Indicator (KPI) | Syncfusion
+description: This section describes about the KPI of gauge
 platform: wpf
 control: OLAP Gauge
 documentation: ug

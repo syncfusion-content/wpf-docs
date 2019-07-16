@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gauge Customization
-description: Gauge customization
+title: Gauge Customization | Syncfusion
+description: This section describes about the gauge customization.
 platform: wpf
 control: OLAP Gauge
 documentation: ug

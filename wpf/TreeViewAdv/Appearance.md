@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance
-description: Appearance
+title: Appearance of TreeViewAdv | Syncfusion
+description: This section describes how to customize the appearance of TreeViewAdv
 platform: wpf
 control: TreeViewAdv
 documentation: ug

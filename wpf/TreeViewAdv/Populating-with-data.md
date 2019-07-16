@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating with Data
-description: Populating with Data
+title: Populating with Data | Syncfusion
+description: This section describes about how to populating with treeview items
 platform: wpf
 control: TreeViewAdv
 documentation: ug

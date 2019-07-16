@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with QTP/UFT Testing for Syncfusion Essential WPF controls
+title: Getting Started with QTP/UFT Testing for WPF controls | Syncfusion
 description: Learn how to test with QTP/UFT for Syncfusion Essential WPF controls
 platform: wpf
 control: Testing
@@ -186,9 +186,9 @@ The Application Details dialog box opens.
 
 ![WPF UFT displays the application details dialog box](uft_images/uft_img13.png)
 
-10.For Application field, browse and select the path of the application that has to be tested by clicking ![](uft_images/uft_img14.png)
+10.For Application field, browse and select the path of the application that has to be tested by clicking ![WPF UFT displays the browse and select the path of application field while clicking button](uft_images/uft_img14.png)
 button.
-11.For working folder field, browse and select the path of the working folder by clicking ![](uft_images/uft_img15.png)
+11.For working folder field, browse and select the path of the working folder by clicking ![WPF UFT displays the browse and select the path of working folder field while clicking button](uft_images/uft_img15.png)
 button.
 12.Select the Launch application check box, to launch the application immediately after clicking OK.
 13.Select Include descendant processes check box, to include all the processes that are descendant to the current process.

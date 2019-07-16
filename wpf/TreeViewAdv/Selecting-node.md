@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selecting a Node
-description: Selecting a Node
+title: Selecting a Node in TreeViewAdv | Syncfusion
+description: This section describes about how to select the node at runtime
 platform: wpf
 control: TreeViewAdv
 documentation: ug

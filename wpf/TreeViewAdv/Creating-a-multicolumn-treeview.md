@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating a MultiColumnTreeView
-description: Creating a MultiColumnTreeView
+title: Creating a MultiColumnTreeView | Syncfusion
+description: This section describes about how to create the MultiColumnTreeView
 platform: wpf
 control: TreeViewAdv
 documentation: ug

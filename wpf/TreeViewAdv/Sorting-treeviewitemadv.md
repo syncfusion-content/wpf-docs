@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting TreeviewItemAdv
-description: Sorting TreeviewItemAdv
+title: Sorting TreeviewItemAdv | Syncfusion
+description: This section describes about how to sorting the TreeviewItemAdv
 platform: wpf
 control: TreeViewAdv
 documentation: ug

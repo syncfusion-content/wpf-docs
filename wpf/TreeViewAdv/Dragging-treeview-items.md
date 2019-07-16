@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dragging TreeView Items
-description: Dragging TreeView Items
+title: Dragging TreeView Items | Syncfusion
+description: This section describes about how to dragging the TreeView Items
 platform: wpf
 control: TreeViewAdv
 documentation: ug

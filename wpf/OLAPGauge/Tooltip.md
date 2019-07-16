@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip
-description: Tooltip
+title: Tooltip of OLAPGauge | Syncfusion
+description: This section describes about the Tooltip of OlapGauge
 platform: wpf
 control: OLAP Gauge
 documentation: ug

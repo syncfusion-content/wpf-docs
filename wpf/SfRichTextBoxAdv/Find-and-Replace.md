@@ -1,6 +1,6 @@
 ---
-title: Find and Replace
-description: find and replace
+title: Find and Replace | Syncfusion
+description: This section describes about how to find and replace the text
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug

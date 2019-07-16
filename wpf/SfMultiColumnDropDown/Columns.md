@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in SfMultiColumnDropDownControl
+title: Columns in SfMultiColumnDropDownControl | Syncfusion
 description: How to define columns in SfMultiColumnDropDownControl
 platform: wpf
 control: SfMultiColumnDropDownControl

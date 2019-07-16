@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the appearance of OLAP Gauge
+title: Customize the appearance of OLAP Gauge | Syncfusion
 description: Customize the radius, frame type, and skin of OLAP Gauge
 platform: wpf
 control: OLAP Gauge

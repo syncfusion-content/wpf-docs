@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization and RTL Support
+title: Localization and RTL Support | Syncfusion
 description: Localization and RTL support
 platform: wpf
 control: OLAP Gauge

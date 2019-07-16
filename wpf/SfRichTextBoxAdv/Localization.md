@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization of SfRichTextBoxAdv | Syncfusion
 description: How to localize the SfRichTextBoxAdv to any language settings
 platform: wpf
 control: SfRichTextBoxAdv
