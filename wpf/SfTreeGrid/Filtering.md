@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering|TreeGrid|WPF|Syncfusion
-description: How to filter the nodes in SfTreeGrid .
+title: WPF TreeGrid Filter | UI Filtering like Excel | Syncfusion
+description: Describes various ways of filtering data in WPF TreeGrid, such as program filtering, excel like UI filtering, advanced UI filtering, and so on.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -139,7 +139,7 @@ The [FilterBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Da
 
 #### Clear filtering
 
-The Filters applied to the SfTreeGrid can be removed by clearing the FilterPredicates added for the columns. This can be achieved by using the following methods,
+The Filters applied to the SfTreeGrid can be removed by clearing the `FilterPredicates` added for the columns. This can be achieved by using the following methods,
 
 *	[SfTreeGrid.ClearFilters](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ClearFilters.html) - Clears filters for all the columns programmatically.
 *	[SfTreeGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ClearFilter(String).html) - Clears the filter for a specific column that has the columnName as MappingName.
@@ -180,7 +180,7 @@ this.sfTreeGrid.Columns["FirstName"].FilterPredicates.Add(
     new Syncfusion.Data.FilterPredicate()
     {
         FilterType = Syncfusion.Data.FilterType.Equals,
-        FilterValue = "Harry",
+        FilterValue = "Martin",
         PredicateType = Syncfusion.Data.PredicateType.Or
     });
 
@@ -415,6 +415,7 @@ this.sfTreeGrid.Columns["EmployeeID"].ImmediateUpdateColumnFilter = true;
 {% endtabs %}
 
 Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
+
 Checkbox filter when `ImmediateUpdateColumnFilter` is true
 
 ![Immediate Checkbox Filtering in SfTreeGrid](Filtering_images/Filtering7.png)
