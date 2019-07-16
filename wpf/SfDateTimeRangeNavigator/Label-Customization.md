@@ -240,3 +240,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 The following screenshot illustrates setting the Label HorizontalAlignment to left.
 
 ![Label customization in WPF SfDateTimeRangeNavigator](Label-Customization_images/Label-Customization_img2.png)
+
+### Visibility of label bar 
+ 
+SfDateTimeRangeNavigator provides support to customize the visibility of lower bar and upper bar using the `LowerLabelBarVisibility` and `UpperLabelBarVisibility` types.
