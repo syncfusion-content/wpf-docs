@@ -113,7 +113,7 @@ Create new WPF project in Visual Studio to display SfTreeGrid with data objects.
 #### Adding control via Designer
 
 SfTreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
-![](Getting-Started_images/Getting-Started_img1.png)
+![Adding SfTreeGrid through designer](Getting-Started_images/Getting-Started_img1.png)
 
 #### Adding control manually in XAML
 In order to add control manually in XAML, do the below steps,
@@ -373,7 +373,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Binding self-relational data with SfTreeGrid](Getting-Started_images/Getting-Started_img2.png)
 
 ### Binding Nested collection with SfTreeGrid
 
@@ -519,7 +519,7 @@ namespace NestedCollectionDemo
 }
 {% endhighlight %}
 {% endtabs %}
-![](Getting-Started_images/Getting-Started_img3.png)
+![Binding nested-collection with SfTreeGrid](Getting-Started_images/Getting-Started_img3.png)
 
 ### Populate SfTreeGrid in on-demand (unbound mode)
 
@@ -686,7 +686,7 @@ private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEv
 {% endtabs %}
 
 You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RepopulateTree.html) method.
-![](Getting-Started_images/Getting-Started_img4.png)
+![Populating TreeGrid](Getting-Started_images/Getting-Started_img4.png)
 
 ### Defining Columns
 
@@ -888,3 +888,9 @@ You can customize sorting by handling the [SfTreeGrid.SortColumnChanging](https:
 ### Editing
 
 Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html) property to True. You can customize the editing operations by handling [SfTreeGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellBeginEdit_EV.html) and [SfTreeGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellEndEdit_EV.html) events.
+
+### Filtering
+
+Filtering can be enabled by setting [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowFiltering.html) property to true, where advanced filter UI can be opened by clicking the filter icon in column header to filter the nodes in the SfTreeGrid. The filtering operations can be customized by handling [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~FilterChanging_EV.html) and [SfTreeGrid.FilterChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~FilterChanged_EV.html) events.
+
+![Filtering in SfTreeGrid](Getting-Started_images/Getting-Started_img5.png)

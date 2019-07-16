@@ -195,7 +195,7 @@ A [TreeGridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfus
 
 ## UI filtering
 
-SfTreeGrid provides excel like filtering UI and advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowFiltering.html) property to `true`. This allows to open the filter UI by clicking on the filter icon on the column header to filter the records.
+SfTreeGrid provides excel like filtering UI and advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowFiltering.html) property to `true`. This allows to open the filter UI by clicking on the filter icon on the column header to filter the nodes.
 
 The filtering can be enabled or disabled for a specific column by setting [TreeGridColumn.AllowFiltering](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~AllowFiltering.html) property.
 
@@ -474,6 +474,24 @@ this.sfTreeGrid.Columns["EmployeeID"].ColumnMemberType = typeof(double);
 {% tabs %}
 {% highlight c# %}
 
+this.sfTreeGrid.FilterItemsPopulating += OnSfTreeGridFilterItemsPopulating;
+
+private void OnSfTreeGridFilterItemsPopulating(object sender, TreeGridFilterItemsPopulatingEventArgs e)
+ {
+     if (e.Column.MappingName == "EmployeeID")
+         e.FilterControl.AdvancedFilterType = AdvancedFilterType.TextFilter;
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing filter predicates
+
+The filter predicates can be customized by using the [SfTreeGrid.FilterChanging](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~FilterChanging_EV.html) event. This event will be raised while applying filter using the filter control. Here [FilterValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterValue.html) is changes based on some conditions.
+
+{% tabs %}
+{% highlight c# %}
+
 this.sfTreeGrid.FilterChanging += OnSfTreeGridFilterChanging;
 
 private void OnSfTreeGridFilterChanging(object sender, TreeGridFilterChangingEventArgs e)
@@ -583,6 +601,19 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
 ### Customizing the filter popup size 
 
 The size of the filter popup can be changed by using properties [FilterPopupHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl~FilterPopupHeight.html) and [FilterPopupWidth](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl~FilterPopupWidth.html) in [TreeGridFilterControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html).
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+    <Style TargetType="syncfusion:TreeGridFilterControl">
+        <Setter Property="FilterPopupHeight" Value="530"/>
+        <Setter Property="FilterPopupWidth" Value="500"/>
+    </Style>
+</Window.Resources>
+
+{% endhighlight %}
+{% endtabs %}
 
 ![TreeGridFilterControl with modified size](Filtering_images/Filtering13.png)
 
