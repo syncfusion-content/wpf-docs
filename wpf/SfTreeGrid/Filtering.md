@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering support in SfTreeGrid.
-description: How to filter the nodes programmatically in SfTreeGrid .
+title: Filtering|TreeGrid|WPF|Syncfusion
+description: How to filter the nodes in SfTreeGrid .
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -46,7 +46,9 @@ Note> It is also possible to change `FilterLevel` at runtime.
 ## Programmatic filtering
 
 The programmatic filtering can be applied to the SfTreeGrid by using the following methods,
+
 *	View Filtering
+
 * 	Column Filtering
 
 
@@ -77,7 +79,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 Here, `FilterNodes` delegate filters the data based on Salary. `FilterNodes` delegate is assigned to [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridView~Filter.html) predicate to filter the tree grid. After that, [SfTreeGrid.View.RefreshFilter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridView~RefreshFilter.html) method is called to refresh the nodes. If the node satisfies the filter conditions, true will be returned. Else false will be returned.
 
-![](Filtering_images/Filtering_img1.png)
+![View filtering in SfTreeGrid](Filtering_images/Filtering_img1.png)
 
 While filtering, if the node satisfies filter condition, [IsFiltered](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeNode~IsFiltered.html) property of [TreeNode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) will be set as false. Else, it will be true. If `IsFiltered` value is True, the node will not be displayed in view, else it will be displayed in view.
 
@@ -138,9 +140,10 @@ The [FilterBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Da
 #### Clear filtering
 
 The Filters applied to the SfTreeGrid can be removed by clearing the FilterPredicates added for the columns. This can be achieved by using the following methods,
-*	`SfTreeGrid.ClearFilters` - Clears filters for all the columns programmatically.
-*	`SfTreeGrid.ClearFilter(String columnName) ` - Clears the filter for a specific column that has the columnName as MappingName.
-*	`SfTreeGrid.ClearFilter(TreeGridColumn column) ` - Clears the filter for a specific column alone.
+
+*	[SfTreeGrid.ClearFilters](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ClearFilters.html) - Clears filters for all the columns programmatically.
+*	[SfTreeGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ClearFilter(String).html) - Clears the filter for a specific column that has the columnName as MappingName.
+*	[SfTreeGrid.ClearFilter(TreeGridColumn column)](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ClearFilter(TreeGridColumn).html) - Clears the filter for a specific column alone.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,6 +196,7 @@ A [TreeGridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfus
 ## UI filtering
 
 SfTreeGrid provides excel like filtering UI and advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfTreeGrid.AllowFiltering](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowFiltering.html) property to `true`. This allows to open the filter UI by clicking on the filter icon on the column header to filter the records.
+
 The filtering can be enabled or disabled for a specific column by setting [TreeGridColumn.AllowFiltering](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~AllowFiltering.html) property.
 
 {% tabs %}
@@ -213,19 +217,22 @@ N> `TreeGridColumn.AllowFiltering` has higher priority than `SfTreeGrid.AllowFil
 ###Built-in UI views
 
 The SfTreeGrid provides the following types of Filter popup modes,
+
 Checkbox Filter - Provides excel like filter interface with list of checkboxes.
+
 Advanced Filter - Provides advanced filter options to filter the data.
+
 Both - Both Checkbox filter and Advanced filter are loaded while opening the filter pop-up. 
 
 By default, the filter popup mode of the column is set as Both. The checkbox and the advanced filter can be switched by using the Advanced Filter button.
 
 #### Checkbox filtering UI
 
-![](Filtering_images/Filtering2.png)
+![Checkbox Filtering in SfTreeGrid](Filtering_images/Filtering2.png)
 
 #### Advanced filtering UI
 
-![](Filtering_images/Filtering3.png)
+![Advanced Filtering in SfTreeGrid](Filtering_images/Filtering3.png)
 
 ## Changing filter UI for grid
 
@@ -296,8 +303,11 @@ This filtering operation will be performed based on the value of [SfTreeGrid.Fil
 Advanced filter UI provides multiple filter options to filter the data easily. Filter menu options are loaded based on advanced filter type by automatically detecting the underlying date type.
 
 Below are the built-in filter types supported.
+
 *	Text Filters - Loads various menu options to filter the display text effectively.
+
 *	Number Filters - Loads various menu options to filter the numeric data.
+
 *	Date Filters - Loads various menu options and [DatePicker](https://msdn.microsoft.com/en-in/library/system.windows.controls.datepicker.aspx) to filter DateTime type column.
 
 <table>
@@ -314,13 +324,13 @@ Date Filters
 </tr>
 <tr>
 <td>
-When the string value is bound to the [TreeGridColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html) or the items source is [dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic), then `TextFilters` are loaded in [TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html).
+When the string value is bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'| markdownify }} or the items source is {{'[dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/dynamic)'| markdownify}}, then `TextFilters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
 </td>
 <td>
-When integer, double, short, decimal, byte or long are bound to the [TreeGridColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html) then `Number Filters` are loaded in [TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html).
+When integer, double, short, decimal, byte or long are bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'|markdownify}} then `Number Filters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
 </td>
 <td>
-When the DateTime type value is bound to the [TreeGridColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html), then `Date Filters` are loaded in [TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html).
+When the DateTime type value is bound to the {{'[TreeGridColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html)'|markdownify}}, then `Date Filters` are loaded in {{'[TreeGridAdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridAdvancedFilterControl.html)'|markdownify}}.
 </td>
 </tr>
 <tr>
@@ -336,6 +346,7 @@ When the DateTime type value is bound to the [TreeGridColumn](https://help.syncf
 </tr>
 <tr>
 <td>
+<br><br>
 <b>Filter menu options</b>
 <ol>
 <li>Equals</li>
@@ -379,6 +390,7 @@ When the DateTime type value is bound to the [TreeGridColumn](https://help.syncf
 </tr>
 </table>
 
+
 N> `Null` and `Not Null` options are available only when `AllowBlankFilters` is set to `True`.
 
 ## Instant filtering
@@ -405,11 +417,11 @@ this.sfTreeGrid.Columns["EmployeeID"].ImmediateUpdateColumnFilter = true;
 Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
 Checkbox filter when `ImmediateUpdateColumnFilter` is true
 
-![](Filtering_images/Filtering7.png)
+![Immediate Checkbox Filtering in SfTreeGrid](Filtering_images/Filtering7.png)
 
 Advanced filter when `ImmediateUpdateColumnFilter` is true
 
-![](Filtering_images/Filtering8.png)
+![Immediate Advanced Filtering in SfTreeGrid](Filtering_images/Filtering8.png)
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if [ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~ImmediateUpdateColumnFilter.html) is true.
 
@@ -435,11 +447,11 @@ this.sfTreeGrid.Columns["FirstName"].AllowBlankFilters = true;
 
 Checkbox filter when `AllowBlankFilters` is true
 
-![](Filtering_images/Filtering9.png)
+![Blank Filters in Checkbox filtering](Filtering_images/Filtering9.png)
 
 Advanced Filter when `AllowBlankFilters` is true
 
-![](Filtering_images/Filtering10.png)
+![Blank filters in Advanced filtering](Filtering_images/Filtering10.png)
 
 ## Changing AdvancedFilter type while loading dynamic ItemsSource
 
@@ -543,7 +555,7 @@ private void OnSfTreeGridFilterItemsPopulating(object sender, TreeGridFilterItem
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering11.png)
+![Customized sort option text in TreeGridFilterControl](Filtering_images/Filtering11.png)
 
 ## Appearance
 
@@ -566,13 +578,13 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering12.png)
+![Collapsed sort options in TreeGridFilterControl](Filtering_images/Filtering12.png)
 
 ### Customizing the filter popup size 
 
 The size of the filter popup can be changed by using properties [FilterPopupHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl~FilterPopupHeight.html) and [FilterPopupWidth](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl~FilterPopupWidth.html) in [TreeGridFilterControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.Filtering.TreeGridFilterControl.html).
 
-![](Filtering_images/Filtering13.png)
+![TreeGridFilterControl with modified size](Filtering_images/Filtering13.png)
 
 ### Changing filter icon style after applying filters
 
@@ -683,4 +695,4 @@ The filter icon style can be changed by writing style with TargetType as [Filter
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering14.png)
+![Modified Filtered icon style](Filtering_images/Filtering14.png)
