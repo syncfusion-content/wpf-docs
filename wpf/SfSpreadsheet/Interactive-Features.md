@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features in SfSpreadsheet
-description: How to use the clipboard operations, undo/redo and other functionalities in SfSpreadsheet
+description: How to use the clipboard operations, undo/redo and other functionalities in WPF SfSpreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug

@@ -65,11 +65,11 @@ You can download the QTP Essential Test Studio and install using the below steps
 N>
 Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
-![](uft_images/uft_img1.png)
+![WPF UFT displays QTP setup](uft_images/uft_img1.png)
 
 2.Click Next. The User Information dialog box opens.
 
-![](uft_images/uft_img2.png)
+![WPF UFT displays add the information for QTP setup](uft_images/uft_img2.png)
 
 3.Enter the User Name, Organization and Unlock Key in the corresponding text boxes provided.
 4.Click Next.
@@ -79,7 +79,7 @@ The unlock key is validated.
 
 5.Select the installation folder dialog box opens.
 
-![](uft_images/uft_img3.png)
+![WPF UFT displays the installed location of QTP setup](uft_images/uft_img3.png)
 
 6.To install in the default location, click Next.
 
@@ -88,19 +88,19 @@ You can also browse to choose a location by clicking Browse.
 
 7.Installation type dialog box opens.
 
-![](uft_images/uft_img4.png)
+![WPF UFT displays the installation type of QTP](uft_images/uft_img4.png)
 
 8.Choose from the options listed. For example, to install the complete setup, click Complete.
 9.Click Next. The Ready to Install dialog box opens.
 
-![](uft_images/uft_img5.png)
+![WPF UFT displays ready to install the QTP setup](uft_images/uft_img5.png)
 
 10.Click Install to continue with the installation.
 
 ## Enabling add-on support in UFT
 You have to installed WPF Add-in while installing UFT by choosing below option.
 
-![](uft_images/uft_img6.png)
+![WPF UFT displays the installing UFT by selecting option](uft_images/uft_img6.png)
 
 UFT - WPF Add-in installation
 
@@ -140,35 +140,35 @@ The QuickTest Professional – Add-in Manager window is displayed.
 
 2.Select the WPF check box under the Add-in header. This ensures that WPF add-in is installed. Also, you need to check the Syncfusion add-in to detect the Syncfusion Controls. When it is not selected, you cannot access the Syncfusion controls.
 
-![](uft_images/uft_img7.png)
+![WPF UFT displays checked the syncfusion checkbox for access the syncfusion control](uft_images/uft_img7.png)
 
 3.Click OK.
 
 N>
 The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
 
-![](uft_images/uft_img8.png)
+![WPF UFT displays the default QTP page](uft_images/uft_img8.png)
 
 4.Click the New Test icon in the Start Page.
 
-![](uft_images/uft_img9.png)
+![WPF UFT displays click the new test icon in starting page](uft_images/uft_img9.png)
 
 5.A new test is created. You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
 6.Click Record in the toolbar to start the recording.
 
-![](uft_images/uft_img10.png)
+![WPF UFT displays the new test is created in QTP](uft_images/uft_img10.png)
 
 N>
 Record and Run Settings dialog box opens.
 
-![](uft_images/uft_img11.png)
+![WPF UFT displays open the Record and Run Settings dialog box](uft_images/uft_img11.png)
 
 7.Select the Windows Application tab.
 
 N>
 The content under the tab is displayed.
 
-![](uft_images/uft_img12.png)
+![WPF UFT displays the content under the tabs](uft_images/uft_img12.png)
 
 N>
 The Record and run only option is selected by default.
@@ -184,7 +184,7 @@ The Record and run only option is selected by default.
 N>
 The Application Details dialog box opens.
 
-![](uft_images/uft_img13.png)
+![WPF UFT displays the application details dialog box](uft_images/uft_img13.png)
 
 10.For Application field, browse and select the path of the application that has to be tested by clicking ![](uft_images/uft_img14.png)
 button.
@@ -201,21 +201,21 @@ Both Launch application and Include descendant processes check boxes are selecte
 N>
 The path of the application and working folder are displayed in the Application details frame as     shown in the following screenshot.
 
-![](uft_images/uft_img16.png)
+![WPF UFT displays the Record and Run Settings dialog](uft_images/uft_img16.png)
 
 15.Click OK.
 
 N>
 The recording starts. The application in the given path is opened as shown in the following screenshot.
 
-![](uft_images/uft_img17.png)
+![WPF UFT displays the recording the test](uft_images/uft_img17.png)
 
 ### Running a Test
 On recording, all the user actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test:
 
 1.Click Run in the toolbar. The Run dialog box opens. The Results Location tab is selected by default.
 
-![](uft_images/uft_img18.png)
+![WPF UFT displays the Run dialog window](uft_images/uft_img18.png)
 
 ### Editing a Test
 The editing of a test can be done either in the Keyword view or in the Expert view. You can switch between these views by selecting the required tab at the bottom left of the QTP screen.
@@ -225,19 +225,19 @@ This view is especially provided for the experts in VB Script. In the Expert vie
 
 The following image shows adding a script line to the Expert View pane.
 
-![](uft_images/uft_img19.png)
+![WPF UFT displays edit the test in expert view](uft_images/uft_img19.png)
 
 ### Editing in Keyboard View
 The keyword view is meant for people with no expertise in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown in the following screenshot:
 
-![](uft_images/uft_img20.png)
+![WPF UFT display edit the test in keyboard view](uft_images/uft_img20.png)
 
 ### Saving a Test
 Saving a test is as simple as saving any other document or picture. To save a test:
 
 1.Click the Save button in the toolbar. The Save Test dialog box opens.
 
-![](uft_images/uft_img21.png)
+![WPF UFT displays saving the test result](uft_images/uft_img21.png)
 
 2.Select the location, to save the file from the Look in drop-down list. 
 3.Type the name of the file to be saved in the File name text box. 
@@ -250,7 +250,7 @@ The tests that have been saved can be replayed later. For running such tests:
 
 N> The Open Test dialog box opens with a list of saved tests.
 
-![](uft_images/uft_img22.png)
+![WPF UFT displays the saved the test after running](uft_images/uft_img22.png)
 
 2.Select the required test. 
 3.Click Open.
@@ -428,7 +428,7 @@ Int
 </tr>
 </table>
 
-![](uft_images/uft_img23.png)
+![WPF UFT displays testing for the SfDataGrid control in QTP](uft_images/uft_img23.png)
 
 ## SfMulticolumnDropDownControl
 <table>
@@ -502,7 +502,7 @@ Void
 </tr>
 </table>
 
-![](uft_images/uft_img24.png)
+![WPF UFT displays the testing for the SfMultiColumnCDropDown in QTP](uft_images/uft_img24.png)
 
 ## SfDataPager
 <table>
@@ -542,7 +542,7 @@ Void
 </tr>
 </table>
 
-![](uft_images/uft_img25.png)
+![WPF UFT displays the testing for the SfDataPager in QTP](uft_images/uft_img25.png)
 
 ## GridDataControl
 <table>
@@ -1177,7 +1177,7 @@ Void
 </tr>
 </table>
 
-![](uft_images/uft_img26.png)
+![WPF UFT displays the testing for the GridDataControl in QTP](uft_images/uft_img26.png)
 
 ## GridTreeControl
 <table>
@@ -1269,7 +1269,7 @@ Void
 </tr>
 </table>
 
-![](uft_images/uft_img27.png)
+![WPF UFT displays the testing for the GridTreeControl in QTP](uft_images/uft_img27.png)
 
 ## Grid Control
 <table>

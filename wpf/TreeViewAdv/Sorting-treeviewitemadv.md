@@ -105,6 +105,6 @@ treeViewAdv.SortingField = "Header"
 
 {% endtabs %}
 
-![](Sorting_treeviewitemadv_images/Sorting_treeviewitemadv_img1.jpeg)
+![WPF TreeViewAdv displays the sorted treeview items](Sorting_treeviewitemadv_images/Sorting_treeviewitemadv_img1.jpeg)
 
 

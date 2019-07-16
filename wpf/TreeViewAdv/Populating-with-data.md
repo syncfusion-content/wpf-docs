@@ -212,7 +212,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 4. TreeViewAdv will be created as follows:
 
-![](Populating_with_data_images/Populating_with_data_img1.jpeg)
+![WPF TreeViewAdv displays add the treeview item using data binding](Populating_with_data_images/Populating_with_data_img1.jpeg)
 
 ### Binding to object
 
@@ -363,4 +363,4 @@ End Class
 
 5. The TreeViewAdv will be created as follows:
 
-![](Populating_with_data_images/Populating_with_data_img2.jpeg)
+![WPF TreeViewAdv displays add the treeview sub item using data binding](Populating_with_data_images/Populating_with_data_img2.jpeg)

@@ -62,7 +62,7 @@ treeViewItemAdv1.IsSelected = True
 
 {% endtabs %}  
 
-![](Selecting_node_images/Selecting_node_img1.jpeg)
+![WPF TreeViewAdv displays selected the treeview item at runtime](Selecting_node_images/Selecting_node_img1.jpeg)
 
 ## Enable to allow multiple selection in TreeViewAdv
 
@@ -108,7 +108,7 @@ treeViewAdv.AllowMultiSelect = True
 
 {% endtabs %}  
 
-![](Selecting_node_images/Selecting_node_img2.jpeg)
+![WPF TreeViewAdv displays the multiple treeview item selection at runtime](Selecting_node_images/Selecting_node_img2.jpeg)
 
 ## Selecting an item through AddNodeToSelectedItems collection
 
@@ -137,6 +137,6 @@ Next items
 
 {% endtabs %}  
 
-![](Selecting_node_images/Selecting_node_img3.jpeg)
+![WPF TreeViewAdv displays the multiple treeview item selection at runtime](Selecting_node_images/Selecting_node_img3.jpeg)
 
 

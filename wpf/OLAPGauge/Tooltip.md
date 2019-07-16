@@ -39,7 +39,7 @@ Me.OlapGauge1.ShowPointersTooltip = True
 
 {% endtabs %}
 
-![](Tooltip_images/Pointer-tooltip.png)
+![WPF OLAPGauge displays the tooltip of pointer](Tooltip_images/Pointer-tooltip.png)
 
 ## Marker tooltip
 
@@ -69,7 +69,7 @@ Me.OlapGauge1.ShowMarkersTooltip = True
 
 {% endtabs %}
 
-![](Tooltip_images/Marker-tooltip.png)
+![WPF OLAPGauge displays the tooltip of marker](Tooltip_images/Marker-tooltip.png)
 
 A demo sample is available at the following location.
 

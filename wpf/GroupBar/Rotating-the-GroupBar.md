@@ -46,7 +46,7 @@ groupBar.RotationAngle = 45;
 {% endhighlight %} 
 {% endtabs %}
 
-![](GroupBar-Items_images/GroupBar_Rotation.png)
+![WPF GroupBar displays rotate the group bar with items](GroupBar-Items_images/GroupBar_Rotation.png)
 
 {% seealso %}
 

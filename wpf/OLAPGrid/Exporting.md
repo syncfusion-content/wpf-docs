@@ -57,7 +57,7 @@ End If
 
 {% endtabs %}
 
-![Excel Export](Exporting_images/Export_img1.png)
+![WPF OLAPGrid displays the grid export to Excel](Exporting_images/Export_img1.png)
 
 **Word export**
 
@@ -101,7 +101,7 @@ End If
 
 {% endtabs %}
 
-![Word Export](Exporting_images/Export_img2.png)
+![WPF OLAPGrid displays the grid export to Word](Exporting_images/Export_img2.png)
 
 **PDF export**
 
@@ -146,7 +146,7 @@ End If
 
 {% endtabs %}
 
-![](Exporting_images/Export_img3.png)
+![WPF OLAPGrid displays the grid export to PDF](Exporting_images/Export_img3.png)
 
 **CSV export**
 
@@ -190,7 +190,7 @@ End If
 
 {% endtabs %}
 
-![](Exporting_images/Export_img4.png)
+![WPF OLAPGrid displays the grid export to CSV](Exporting_images/Export_img4.png)
 
 A sample demo is available in the following location.
 

@@ -478,7 +478,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![PDF Grid row styling when exporting from WPF DataGrid](Export-To-PDF_images/Export-To-PDF_img6.png)
+![WPF DataGrid displays PDF Grid row styling when exporting from datagrid](Export-To-PDF_images/Export-To-PDF_img6.png)
 
 ### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
 
@@ -506,7 +506,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Exporting of middle eastern languages from WPF DataGrid to PDF File](Export-To-PDF_images/Export-To-PDF_img7.png)
+![WPF DataGrid displays Exporting of middle eastern languages from datagrid to PDF File](Export-To-PDF_images/Export-To-PDF_img7.png)
 
 ### Exporting images to PDF document
 

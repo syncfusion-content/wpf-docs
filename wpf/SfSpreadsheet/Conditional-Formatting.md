@@ -91,7 +91,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img1.jpeg)
+![WPF SfSpreadsheet displays different colors applied in conditional formatting for different cells](Conditional-Formatting_images/Conditional-Formatting_img1.jpeg)
 
 ## Data Bars
 
@@ -112,7 +112,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(2));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img2.jpeg)
+![WPF SfSpreadsheet displays different colors applied to conditional format based on data bars](Conditional-Formatting_images/Conditional-Formatting_img2.jpeg)
 
 ## Color Scales
 
@@ -133,7 +133,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img3.jpeg)
+![WPF SfSpreadsheet displays different colors applied to conditional format based on color scales](Conditional-Formatting_images/Conditional-Formatting_img3.jpeg)
 
 
 ## Icon Sets
@@ -153,4 +153,4 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(4));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img4.jpeg)
+![WPF SfSpreadsheet displays different colors applied to conditional format for icon sets](Conditional-Formatting_images/Conditional-Formatting_img4.jpeg)

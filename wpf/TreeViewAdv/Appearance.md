@@ -83,7 +83,7 @@ treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold
 
 {% endtabs %}  
 
-![](Appearance_images/Appearance_img1.jpeg)
+![WPF TreeViewAdv displays applied back and fore color on selected item](Appearance_images/Appearance_img1.jpeg)
 
 
 ## Setting Visual Style
@@ -154,59 +154,59 @@ SkinStorage.SetVisualStyle(treeViewAdv, "Blend")
 
 **Blend theme**
 
-![](Appearance_images/Appearance_img2.jpeg)
+![WPF TreeViewAdv displays applied Blend theme to treeview](Appearance_images/Appearance_img2.jpeg)
 
 **Office2003 theme**
 
-![](Appearance_images/Appearance_img3.jpeg)
+![WPF TreeViewAdv displays applied Office2003 theme to treeview](Appearance_images/Appearance_img3.jpeg)
 
 **Office2007Blue theme**
 
-![](Appearance_images/Appearance_img4.jpeg)
+![WPF TreeViewAdv displays applied Office2007Blue theme to treeview](Appearance_images/Appearance_img4.jpeg)
 
 **Office2007Black theme**
 
-![](Appearance_images/Appearance_img5.jpeg)
+![WPF TreeViewAdv displays applied Office2007Black theme to treeview](Appearance_images/Appearance_img5.jpeg)
 
 **Office2007Silver theme**
 
-![](Appearance_images/Appearance_img6.jpeg)
+![WPF TreeViewAdv displays applied Office2007Silver theme to treeview](Appearance_images/Appearance_img6.jpeg)
 
 **Office2010Blue theme**
 
-![](Appearance_images/Appearance_img7.jpeg)
+![WPF TreeViewAdv displays applied Office2007Blue theme in treeview](Appearance_images/Appearance_img7.jpeg)
 
 **Office2010Black theme**
 
-![](Appearance_images/Appearance_img8.jpeg)
+![WPF TreeViewAdv displays applied Office2010Black theme to treeview](Appearance_images/Appearance_img8.jpeg)
 
 **Office2010Silver theme**
 
-![](Appearance_images/Appearance_img9.jpeg)
+![WPF TreeViewAdv displays applied Office2010Silver theme to treeview](Appearance_images/Appearance_img9.jpeg)
 
 **ShinyBlue theme**
 
-![](Appearance_images/Appearance_img10.jpeg)
+![WPF TreeViewAdv displays applied ShinyBlue theme to treeview](Appearance_images/Appearance_img10.jpeg)
 
 **ShinyRed theme**
 
-![](Appearance_images/Appearance_img11.jpeg)
+![WPF TreeViewAdv displays applied ShinyRed theme to treeview](Appearance_images/Appearance_img11.jpeg)
 
 **ShinyOrange theme**
 
-![](Appearance_images/Appearance_img12.jpeg)
+![WPF TreeViewAdv displays applied ShinyOrange theme to treeview](Appearance_images/Appearance_img12.jpeg)
 
 **VS2010 theme**
 
-![](Appearance_images/Appearance_img13.jpeg)
+![WPF TreeViewAdv displays applied VS2010 theme to treeview](Appearance_images/Appearance_img13.jpeg)
 
 **Metro theme**
 
-![](Appearance_images/Appearance_img14.jpeg)
+![WPF TreeViewAdv displays applied Metro theme to treeview](Appearance_images/Appearance_img14.jpeg)
 
 **Transparent theme**
 
-![](Appearance_images/Appearance_img15.jpeg)
+![WPF TreeViewAdv displays applied Transparent theme to treeview](Appearance_images/Appearance_img15.jpeg)
 
 ## Customizing root lines
 
@@ -261,7 +261,7 @@ treeViewAdv.LineBrush = Brushes.Red
 
 {% endtabs %}  
 
-![](Appearance_images/Appearance_img16.jpeg)
+![WPF TreeViewAdv displays applied color to root line and line brush](Appearance_images/Appearance_img16.jpeg)
 
 
 ### Line pen
@@ -315,4 +315,4 @@ treeViewAdv.LinePen = New Pen(Brushes.Red, 1)
 {% endhighlight %}
 
 {% endtabs %}  
-![](Appearance_images/Appearance_img17.jpeg)
+![WPF TreeViewAdv displays applied color to root line and line pen](Appearance_images/Appearance_img17.jpeg)

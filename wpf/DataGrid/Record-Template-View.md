@@ -11,7 +11,7 @@ documentation: ug
 
 The SfDataGrid provides support to represent additional information of a row using [TemplateViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html) that can be defined in datagrid. It allows you to load any WPF controls to [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html) in order to display the additional information of a row. You can expand or collapse the row template view by using an expander in a row or programmatically.
 
-![Displaying record template view in WPF SfDataGrid](Record_Template_View_images/Record-TemplateView_Img1.png)
+![WPF DataGrid displaying the record template view](Record_Template_View_images/Record-TemplateView_Img1.png)
 
 ## Defining row template
 
@@ -249,7 +249,7 @@ public class detailsViewTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying record template view with different templates for each row using TemplateViewDefinition.RowTemplateSelector in WPF SfDataGrid](Record_Template_View_images/Record-TemplateView_Img2.png)
+![WPF DataGrid displaying the record template view with different templates for each row using RowTemplateSelector](Record_Template_View_images/Record-TemplateView_Img2.png)
 
 ## Height customization
 

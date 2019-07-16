@@ -18,7 +18,7 @@ SfDataGrid provides support to display the concise information about the data ob
 
 * **Caption Summary** – used to display summary information in the caption of the group.
  
-![Displaying different summaries in WPF SfDataGrid](Summaries_images/Summaries_img1.png)
+![WPF DataGrid displaying the different summaries](Summaries_images/Summaries_img1.png)
 
 Summary rows are represented by using [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) and  each `GridSummaryRow` hold summary information of columns in [SummaryColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~SummaryColumns.html) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html) which carries the name of column ,format and its summary aggregate type.
 
@@ -92,7 +92,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endtabs %}
 
 
-![Displaying SummaryColumns in TableSummaryRow for WPF SfDataGrid](Summaries_images/Summaries_img2.png)
+![WPF DataGrid displaying the SummaryColumns in TableSummaryRow](Summaries_images/Summaries_img2.png)
 
 ### Displaying summary for Row
 
@@ -153,7 +153,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endtabs %}
 
 
-![Displaying Table summary row in WPF SfDataGrid](Summaries_images/Summaries_img3.png)
+![WPF DataGrid displaying the table summary row](Summaries_images/Summaries_img3.png)
 
 ### Positioning TableSummaryRow
 
@@ -233,7 +233,7 @@ this.dataGrid.TableSummaryRows.Add(tablesummaryrow2);
 {% endtabs %}
 
 
-![Displaying different positions of TableSummaryRow in WPF SfDataGrid](Summaries_images/Summaries_img4.png)
+![WPF DataGrid displaying the different positions of table summary row](Summaries_images/Summaries_img4.png)
 
 ## Group Summary
 
@@ -309,7 +309,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endtabs %}
 
 
-![Displaying SummaryColumns in Group Summary row for WPF SfDataGrid](Summaries_images/Summaries_img5.png)
+![WPF DataGrid displaying SummaryColumns in group summary row](Summaries_images/Summaries_img5.png)
 
 ### Displaying summary for Row
 
@@ -372,7 +372,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endtabs %}
 
 
-![Displaying Group Summaries in a row for WPF SfDataGrid](Summaries_images/Summaries_img6.png)
+![WPF DataGrid displaying the group summaries in a row](Summaries_images/Summaries_img6.png)
 
 ## Caption Summaries
 
@@ -381,7 +381,7 @@ SfDataGrid provides built-in support for caption summaries. The caption summary 
 Below screen shot shows the built-in caption summary of Group.
 
 
-![Displaying built-in caption summary in WPF SfDataGrid](Summaries_images/Summaries_img7.png)
+![WPF DataGrid displaying the built-in caption summary](Summaries_images/Summaries_img7.png)
 
 ### Formatting built-in caption summary
 
@@ -394,7 +394,7 @@ The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 * **ItemsCount** -   Displays the number of items in group.
 
 
-![Displaying built-in Caption Summary in WPF SfDataGrid](Summaries_images/Summaries_img8.png)
+![WPF DataGrid displaying the built-in caption summary](Summaries_images/Summaries_img8.png)
 
 You can change group caption format to display column name and count alone by setting `GroupCaptionTextFormat` as below,
 
@@ -410,7 +410,7 @@ You can change group caption format to display column name and count alone by se
 {% endtabs %}
 
 
-![Displaying Caption Summary formatting using GroupCaptionTextFormat in WPF SfDataGrid](Summaries_images/Summaries_img9.png)
+![WPF DataGrid displaying the caption summary formatting using GroupCaptionTextFormat](Summaries_images/Summaries_img9.png)
 
 ### Defining summary for column
 
@@ -477,7 +477,7 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endtabs %}
 
 
-![Displaying caption summary in columns for WPF SfDataGrid](Summaries_images/Summaries_img10.png)
+![WPF DataGrid displaying caption summary in columns](Summaries_images/Summaries_img10.png)
 
 ### Displaying summary for Row
 
@@ -539,7 +539,7 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endtabs %}
 
 
-![Displaying caption summaries in rows for WPF SfDataGrid](Summaries_images/Summaries_img11.png)
+![WPF DataGrid displaying caption summaries in rows](Summaries_images/Summaries_img11.png)
 
 ## Formatting summary
 
@@ -573,7 +573,7 @@ N> `DoubleAggregate` is used as SummaryType which has Count, Max, Min, Average a
 {% endtabs %}
 
 
-![Displaying Sum function in WPF SfDataGrid](Summaries_images/Summaries_img12.png)
+![WPF DataGrid displaying the sum function](Summaries_images/Summaries_img12.png)
 
 ### Formatting Summary Value
 
@@ -602,7 +602,7 @@ In the below code snippet `UnitPrice` column summary is formatted using `c` form
 {% endtabs %}
 
 
-![Displaying summary value formatting in WPF SfDataGrid](Summaries_images/Summaries_img13.png)
+![WPF DataGrid displaying the summary value formatting](Summaries_images/Summaries_img13.png)
 
 ### Displaying additional Content in Summary
 
@@ -632,7 +632,7 @@ In the below code snippet `Total UnitPrice: ` text is appended before summary va
 {% endtabs %}
 
 
-![Displaying additional content in summary for WPF SfDataGrid](Summaries_images/Summaries_img14.png)
+![WPF DataGrid displaying the additional content in summary](Summaries_images/Summaries_img14.png)
 
 ### Formatting Summary for Row using Title Property
 
@@ -659,7 +659,7 @@ You can format the summary value for row using [GridSummaryRow.Title](http://hel
 {% endtabs %}
 
 
-![Displaying summary value formatting using Title property in WPF SfDataGrid](Summaries_images/Summaries_img15.png)
+![WPF DataGrid displaying the summary value formatting using Title property](Summaries_images/Summaries_img15.png)
 
 ## Aggregate Types
 
@@ -826,7 +826,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying custom aggregate summaries in WPF SfDataGrid](Summaries_images/Summaries_img16.png)
+![WPF SfDataGrid displaying custom aggregate summaries](Summaries_images/Summaries_img16.png)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries-366686956.zip) .
 
@@ -939,7 +939,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 {% endtabs %}
 
 
-![Displaying table summary formatting using renderer in WPF SfDataGrid](Summaries_images/Summaries_img17.png)
+![WPF DataGrid displaying the table summary formatting using renderer](Summaries_images/Summaries_img17.png)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-462271589.zip).
 
@@ -1034,6 +1034,6 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 {% endtabs %}
 
 
-![Displaying custom GroupCaptionTextFormat in WPF SfDataGrid](Summaries_images/Summaries_img18.png)
+![WPF DataGrid displaying the customize the group caption text format](Summaries_images/Summaries_img18.png)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
