@@ -1373,7 +1373,8 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <td>
 <p>Represents the command to apply text alignment for the selected paragraphs.</p>
 </td>
-<td>The [TextAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.TableAlignment.html) value to be applied.</p>
+<td>
+The [TextAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.TableAlignment.html) value to be applied.
 </td>
 </tr>
 <tr>
