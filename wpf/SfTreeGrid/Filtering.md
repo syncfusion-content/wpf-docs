@@ -296,7 +296,7 @@ You can skip the [TreeGridFilterControl](https://help.syncfusion.com/cr/cref_fil
 The Checkbox filtering is same as the Excel like filter popup which displays a search textbox and a list of checkboxes with unique items from the expanded tree nodes.
 The items which are in the checked state will be visible in the view and the other items will be filtered out of the view. 
 
-This filtering operation will be performed based on the value of [SfTreeGrid.FilterLevel](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~FilterLevel.html) property.
+This filtering operation is performed based on the value of [SfTreeGrid.FilterLevel](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~FilterLevel.html) property.
 
 ## Advanced filtering
 
