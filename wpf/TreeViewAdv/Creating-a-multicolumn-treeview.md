@@ -55,7 +55,7 @@ treeViewAdv.MultiColumnEnable = True
 
 {% endtabs %}  
 
-![WPF TreeViewAdv displays the multiple columns](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img1.jpeg)
+![Show the multiple columns in WPF TreeView](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img1.jpeg)
 
 ## Header for MultiColumn
 
@@ -103,7 +103,7 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 
 {% endtabs %}
 
-![WPF TreeViewAdv displays the multiple columns with header and items](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img2.jpeg)
+![Multiple columns with header and items in WPF TreeView](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img2.jpeg)
 
 
 ## Auto-Resize of columns in Multicolumn TreeView
@@ -151,7 +151,7 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 
 {% endtabs %}
 
-![WPF TreeViewAdv displays auto resize of columns in multicolumn treeview](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img3.jpeg)
+![Auto resize the multi columns in WPF TreeView](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img3.jpeg)
 
 ## Allowing reordering columns
 

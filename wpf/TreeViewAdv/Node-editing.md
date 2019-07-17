@@ -50,7 +50,7 @@ item2.IsEditable = False
 
 {% endtabs %}  
 
-![WPF TreeViewAdv displays edit the treeview items](Node_editing_images/Node_editing_img1.jpeg)
+![Editing the WPF TreeView items](Node_editing_images/Node_editing_img1.jpeg)
 
 ## Setting node in EditMode
 
@@ -92,7 +92,7 @@ item1.IsInEditMode = True
 
 {% endtabs %}  
 
-![WPF TreeViewAdv displays the treeview item in editing mode](Node_editing_images/Node_editing_img2.jpeg)
+![WPF TreeView item in editing mode](Node_editing_images/Node_editing_img2.jpeg)
 
 ## Node editing event
 

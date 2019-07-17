@@ -49,7 +49,7 @@ sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfMultiColumnDropDown displays manually generated the columns](Columns_images/Columns_img1.png)
+![Manually generated the columns in WPF SfMultiColumnDropDown](Columns_images/Columns_img1.png)
 
 ## Column sizing
 
@@ -79,5 +79,5 @@ You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#column-si
 {% endhighlight %}
 {% endtabs %}
 
-![WPF SfMuliColumnDropDown displays the changing size of column width](Columns_images/Columns_img2.png)
+![Change column size in WPF SfMuliColumnDropDown](Columns_images/Columns_img2.png)
 

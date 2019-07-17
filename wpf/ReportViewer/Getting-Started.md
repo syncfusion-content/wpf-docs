@@ -23,7 +23,7 @@ You can create a simple application through the Visual Studio Designer with the 
    
 3. To add references, Right-click on References and select Add Reference.
 
-   ![WPF ReportViewer displays add the reference to the project](Getting-Started_images/Getting-Started_img2.png)
+   ![Add the reference for WPF ReportViewer](Getting-Started_images/Getting-Started_img2.png)
    
 4. Add the following assemblies.
 
@@ -80,7 +80,7 @@ You can create a simple application through the Visual Studio Designer with the 
    
 8. Run the sample application and you can see the ReportViewer as displayed in the following screenshot.
 
-   ![WPF ReportViewer displays the report details](Getting-Started_images/Getting-Started_img3.png)
+   ![Report details of WPF ReportViewer](Getting-Started_images/Getting-Started_img3.png)
    
 ## Show RDLC Reports
 
@@ -183,7 +183,7 @@ You can create a simple application through the Visual Studio Designer with the 
    
 4. Run the application. The following output is displayed.
 
-   ![WPF ReportViewer displays the RDLC report](Getting-Started_images/Getting-Started_img4.png) 
+   ![WPF ReportViewer Shows the RDLC report](Getting-Started_images/Getting-Started_img4.png) 
 
 ## Load SSRS Reports
 
@@ -216,4 +216,4 @@ You can create a simple application through the Visual Studio Designer with the 
    
 3. Run the application. The following output displays.
 
-   ![WPF ReportViewer displays SSRS report](Getting-Started_images/Getting-Started_img5.png)
+   ![WPF ReportViewer shows the SSRS report](Getting-Started_images/Getting-Started_img5.png)

@@ -31,7 +31,7 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
 1.Create new folder and named as **Resources** in your application. 
 2.Add the default resource file of SfDataGrid into **Resources** folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF2020296999.zip).
 
-![WPF DataGrid displaying addition of default resource file into Resources folder](Localization_images/Localization_img1.png)
+![Addition of default resource file of WPF DataGrid into Resources folder](Localization_images/Localization_img1.png)
 
 3.Right-click on the Resources folder, select **Add** and then **NewItem**.
 
@@ -39,17 +39,17 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
  
 5.The culture name that indicates the name of language and country. 
 
-![WPF DataGrid displaying name of the added resource file](Localization_images/Localization_img2.png)
+![Shows the name of resource file to be added for WPF DataGrid](Localization_images/Localization_img2.png)
 
 6.Now, select `Add` option to add the resource file in **Resources** folder.
 
-![WPF DataGrid displaying added resource file for German language](Localization_images/Localization_img3.png)
+![Shows the added resource file for German language in WPF DataGrid](Localization_images/Localization_img3.png)
 
 7.Add the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.WPF.de.resx** file and change its corresponding value to corresponding culture. 
 
-![WPF DataGrid displaying the added resource file name / value pair in the resource designer](Localization_images/Localization_img4.png)
+![Shows the added resource file name / value pair in the resource designer in WPF DataGrid](Localization_images/Localization_img4.png)
 
-![WPF DataGrid displaying localized in German language](Localization_images/Localization_img5.png)
+![Shows the localized in German for WPF DataGrid](Localization_images/Localization_img5.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization-687552084.zip)
 

@@ -15,13 +15,13 @@ The layer support in PDF viewer allows users to toggle the visibility of individ
 
 To toggle the visibility of PDF layers individually, click the eye icon associated with each layer in the layers pane. 
 
-![WPF PDFViewer displays toggle the visibility of PDF layer](Layers_images/Layers_img1.png)
+![Toggle the visibility of PDF layer in WPF PDFViewer](Layers_images/Layers_img1.png)
 
 ## Toggling the visibility of the group of layers
 
 To toggle the visibility of a group of PDF layers, click the eye icon associated with parent layer in the layers pane.  
 
-![WPF PDFViewer displays toggle the visibility of the group of layer](Layers_images/Layers_img2.png)
+![Toggle the visibility of the group of layer in WPF PDFViewer](Layers_images/Layers_img2.png)
 
 ## Disabling the layers
 

@@ -49,7 +49,7 @@ treeViewAdv.AllowDragDrop = True
 
 {% endtabs %}  
 
-![WPF TreeViewAdv displays dragged the treeview item from one location to another](Dragging_treeview_items_images/Dragging_treeview_items_img1.jpeg)
+![Dragged the WPF TreeView item from one location to another](Dragging_treeview_items_images/Dragging_treeview_items_img1.jpeg)
 
 
 ## Transparent dragging image
@@ -93,7 +93,7 @@ treeViewAdv.DraggingContainerOpacity = 0.4
 
 {% endtabs %}  
 
-![WPF TreeViewAdv displays dragging the treeview item with transparent image](Dragging_treeview_items_images/Dragging_treeview_items_img2.jpeg)
+![Dragging the WPF TreeView item with transparent image](Dragging_treeview_items_images/Dragging_treeview_items_img2.jpeg)
 
 ## Fake drag indicator
 
@@ -138,4 +138,4 @@ treeViewAdv.IsFakeDragIndicator = True
 
 {% endtabs %}  
 
-![WPF TreeViewAdv displays dragged the fake treeview items from one location to another](Dragging_treeview_items_images/Dragging_treeview_items_img3.jpeg)
+![Dragged the fake WPF TreeView items from one location to another](Dragging_treeview_items_images/Dragging_treeview_items_img3.jpeg)

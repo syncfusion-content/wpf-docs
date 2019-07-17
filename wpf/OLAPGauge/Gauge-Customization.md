@@ -65,7 +65,7 @@ OlapGauge1.ShowGaugeHeaders = False
 
 {% endtabs %}
 
-![WPF OLAPGauge displays hidden header component in gauge](Gauge-Customization_images/Gauge-customization-header.png)
+![Hidden header component in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-header.png)
 
 ## Gauge label
 
@@ -93,7 +93,7 @@ OlapGauge1.ShowGaugeLabels = False
 
 {% endtabs %}
 
-![WPF OLAPGauge displays hide the label in gauge](Gauge-Customization_images/Gauge-customization-label.png)
+![Hide the label in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-label.png)
 
 ## Gauge factor
 
@@ -121,4 +121,4 @@ OlapGauge1.ShowGaugeFactors = False
 
 {% endtabs %}
 
-![WPF OLAPGauge displays hide the gauge factor component](Gauge-Customization_images/Gauge-customization-factor.png)
+![Hide the gauge factor component in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-factor.png)

@@ -133,11 +133,11 @@ By default, both Checkbox Filter and Advanced Filter are loaded while opening th
 
 SfDataGrid with Checkbox Filter View:
       
-![WPF DataGrid displays Checkbox filter view in datagrid](Filtering_images/Filtering_img1.png)
+![DataGrid with Checkbox Filter View in WPF](Filtering_images/Filtering_img1.png)
         
 SfDataGrid with Advanced Filter View:
     
-![WPF DataGrid with advanced filter view in datagrid](Filtering_images/Filtering_img2.png)
+![DataGrid with Advanced Filter View in WPF](Filtering_images/Filtering_img2.png)
 
 ## Choose between built-in UI Views
 

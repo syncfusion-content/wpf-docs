@@ -15,7 +15,7 @@ You can add report filter to the Report Designer using the following steps.
 
 1. Right-click a Dataset (Employee) in the Report Data pane and then click Dataset Properties.
 
-   ![WPF ReportDesigner displays click the DataSet Properties](Add-Report-Filter_images/Add-Report-Filter_img1.png)
+   ![Click the DataSet Properties in WPF ReportDesigner](Add-Report-Filter_images/Add-Report-Filter_img1.png)
 
 2. The Dataset Properties dialog box opens. 
 
@@ -35,7 +35,7 @@ You can add report filter to the Report Designer using the following steps.
 
 10. In the Value box, type the expression or value against which you want the filter to evaluate the value in Expression.
 
-    ![WPF ReportViewer displays to evaluate the value in expression](Add-Report-Filter_images/Add-Report-Filter_img2.png)
+    ![To evaluate the value in expression for WPF ReportDesigner](Add-Report-Filter_images/Add-Report-Filter_img2.png)
 
 11. Click OK.
 
@@ -43,11 +43,11 @@ You can add report filter to the Report Designer using the following steps.
 
 1. Select Tablix, Matrix or List and click on the View report item properties.
 
-   ![WPF ReportDesigner displays add the tablix, matrix and view report item](Add-Report-Filter_images/Add-Report-Filter_img3.png)
+   ![Displays add the tablix, matrix and view report item in WPF ReportDesigner](Add-Report-Filter_images/Add-Report-Filter_img3.png)
    
-   ![WPF ReportDesigner displays added details of employee](Add-Report-Filter_images/Add-Report-Filter_img4.png)
+   ![Added details of employee in WPF ReportDesigner](Add-Report-Filter_images/Add-Report-Filter_img4.png)
    
-   ![WPF ReportDesigner displays tooltip of view report item properties](Add-Report-Filter_images/Add-Report-Filter_img5.png)
+   ![Show the tooltip of view report item properties in WPF ReportDesigner](Add-Report-Filter_images/Add-Report-Filter_img5.png)
 
 2. The Tablix properties dialog opens.
 
@@ -67,7 +67,7 @@ You can add report filter to the Report Designer using the following steps.
 
 10. In the Value box, type the expression or value against which you want the filter to evaluate the value in Expression.
 
-    ![WPF ReportDesigner displays to evaluate the value in expression](Add-Report-Filter_images/Add-Report-Filter_img6.png)
+    ![To evaluate the value in expression for WPF ReportDesigner](Add-Report-Filter_images/Add-Report-Filter_img6.png)
 
 11. Click OK.
 

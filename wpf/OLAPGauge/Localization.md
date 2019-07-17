@@ -31,9 +31,9 @@ After translating the strings, perform the following steps in the application:
 
 2. Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
 
-![WPF OLAPGauge displays add new item into the sample](Localization_images/Localization-step1.png)
+![Shows add new item for WPF OLAPGauge](Localization_images/Localization-step1.png)
 
-![WPF OLAPGauge displays add new resource file](Localization_images/Localization-step2.png)
+![Shows add new resource file for WPF OLAPGauge](Localization_images/Localization-step2.png)
 
 N> The resource file name should be in the format “Syncfusion.OlapGauge.wpf.&lt;Culture Code&gt;.resx”.
 
@@ -94,7 +94,7 @@ OlapGauge1.FlowDirection = FlowDirection.RightToLeft
 
 {% endtabs %}
 
-![WPF OLAPGauge displays the content from right to left direction](Localization_images/Localization-RTL.png)
+![Shows the content move from right to left direction in WPF OLAPGauge](Localization_images/Localization-RTL.png)
 
 A demo sample is available at the following location.
 
