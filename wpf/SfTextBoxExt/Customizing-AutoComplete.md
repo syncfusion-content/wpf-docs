@@ -1,0 +1,163 @@
+---
+layout: post
+title: Customizing Auto Complete | SfTextBoxExt | wpf | Syncfusion
+description: auto complete
+platform: wpf
+control: SfTextBoxExt
+documentation: ug
+---
+
+# Customizing AutoComplete
+
+AutoComplete provides user friendly customizing options for both textbox part and drop down part. In this section, customizing entire AutoComplete control is explained.
+
+## Customizing the TextBox
+
+`Text`, `FontSize`, `FontWeight` and `FontFamily` are the properties used to customize the textbox part.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Content>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt" 
+                              Text="TextBox"
+                              FontSize="20"
+                              FontWeight="Bold"
+                              FontFamily="Times New Roman"
+                              HorizontalAlignment="Center" 
+                              VerticalAlignment="Center" 
+                              Width="200">
+            </editors:SfTextBoxExt>
+        </Grid>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+using System.Windows.Media;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                Text = "TextBox",
+                FontSize = 20,
+                FontWeight = FontWeights.Bold,
+                FontFamily = new FontFamily("Time New Roman"),
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Width = 200
+            };
+
+            this.Content = textBoxExt;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Customizing the Suggestion Box
+
+### Changing suggestion box background color
+
+The `DropDownBackground` property is used to modify the background color of suggestion box. The following code example demonstrates how to change the suggestion box background color. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Content>
+    <Grid>
+        <editors:SfTextBoxExt x:Name="textBoxExt" 
+                              HorizontalAlignment="Center" 
+                              VerticalAlignment="Center" 
+                              AutoCompleteMode="Suggest"
+                              DropDownBackground="AliceBlue"
+                              Width="300"/>
+    </Grid>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Media;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Width = 200,
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                DropDownBackground = new SolidColorBrush(Colors.AliceBlue)
+            };
+
+            List<string> list = new List<string>()
+            {
+                 "India",
+                 "Uganda",
+                 "Ukraine",
+                 "Canada",
+                 "United Arab Emirates"
+            };
+
+            textBoxExt.AutoCompleteSource = list;
+            this.Content = textBoxExt;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Dropdown background color](images/Customizing-AutoComplete/dropdown-background-color.png)
+
