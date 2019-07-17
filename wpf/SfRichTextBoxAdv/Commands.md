@@ -31,7 +31,7 @@ Commands are a way to handle user interface (UI) actions. They are a loosely cou
 * Document Styles – Create, modify, apply and clear style.
 
 *   [IncreaseZoomCommand](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~IncreaseZoomCommand.html)
-*   [TextAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.TableAlignment.html)
+*  The [TextAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.TableAlignment.html) valuew is.
 
 ## UI Command to access character formatting
 
