@@ -30,8 +30,6 @@ Commands are a way to handle user interface (UI) actions. They are a loosely cou
 
 * Document Styles – Create, modify, apply and clear style.
 
-*  The [TextAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.TableAlignment.html) value to be applied.
-
 ## UI Command to access character formatting
 
 
@@ -1376,7 +1374,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to apply text alignment for the selected paragraphs.</p>
 </td>
 <td>
-The [TextAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.TableAlignment.html) value to be applied.
+The {{'[TextAlignment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.ParagraphFormat~TextAlignment.html)'| markdownify }} value to be applied.
 </td>
 </tr>
 <tr>
