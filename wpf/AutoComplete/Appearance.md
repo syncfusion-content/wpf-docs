@@ -25,8 +25,6 @@ The Appearance of the AutoComplete control can be changed using the VisualStyle 
 
 The following code example illustrates how different visual styles can be applied to the control.
 
-Refer how to apply visual styles using SkingManger in below link.[SkinManger](https://help.syncfusion.com/wpf/skinmanager/overview)
-
 {% tabs %}
 {% highlight xaml %}
 

@@ -144,9 +144,9 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
     Create New WPF Application in Expression Blend
 	{:.caption}
 
-3. Add the following Reference with the sample project.
+3. Add the following References with the sample project.
 
-4. Syncfusion.Tools.WPF.dll
+4. Syncfusion.Tools.WPF.dll and Syncfusion.Shared.WPF.dll
 
 5. On the Window menu, select Assets. This opens the Assets Library dialog box. In the Search box, type AutoComplete. This displays the search results as shown below-.
 
