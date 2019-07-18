@@ -1374,7 +1374,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>Represents the command to apply text alignment for the selected paragraphs.</p>
 </td>
 <td>
-{{'[QR Code](https://en.wikipedia.org/wiki/QR_code)'| markdownify}}
+The {{'[TextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRichTextBoxAdv.WPF~Syncfusion.Windows.Controls.RichTextBoxAdv.ParagraphFormat~TextAlignment.html)'| markdownify}} value to be applied.
 </td>
 </tr>
 <tr>
