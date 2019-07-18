@@ -41,7 +41,7 @@ Filter will be applied to all the nodes in SfTreeGrid. If a parent node does not
 
 Filter will be applied to all the nodes. If a node matches the filter condition, its all ancestors will also be displayed even though the parent node does not match the filter condition, and parent node’s `IsFiltered` value will be set to false.
 
-Note> You can change the `FilterLevel` at run time.
+N> You can change the `FilterLevel` at run time.
 
 ## Programmatic filtering
 
@@ -216,11 +216,11 @@ N> `TreeGridColumn.AllowFiltering` has higher priority than the `SfTreeGrid.Allo
 
 The SfTreeGrid provides the following types of filter pop-up modes:
 
-Check box filter: Provides Excel-like filter interface with a list of check boxes.
+* Check box filter: Provides Excel-like filter interface with a list of check boxes.
 
-Advanced filter: Provides advanced filter options to filter the data.
+* Advanced filter: Provides advanced filter options to filter the data.
 
-Both: Both check box filter and advanced filter are loaded while opening the filter pop-up.
+* Both: Both check box filter and advanced filter are loaded while opening the filter pop-up.
 
 By default, the filter pop-up mode of the column is set to Both. The check box and the advanced filters can be switched using the Advanced Filter button.
 
@@ -393,7 +393,7 @@ N> The `Null` and `Not Null` options are available only when `AllowBlankFilters`
 
 ## Instant filtering
 
-By default, filters are applied to the columns when OK button is clicked in UI filtering. To update the filters immediately whenever update in filter popup, set [TreeGridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~ImmediateUpdateColumnFilter.html) to True.
+By default, filters are applied to the columns when OK button is clicked in UI filtering. To update the filters immediately whenever update in filter popup, set [TreeGridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~ImmediateUpdateColumnFilter.html) to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -414,11 +414,11 @@ this.sfTreeGrid.Columns["EmployeeID"].ImmediateUpdateColumnFilter = true;
 
 Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
 
-The following screenshot illustrates the check box filter when `ImmediateUpdateColumnFilter` is set to true.
+The following screenshot illustrates the check box filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
 ![Immediate Checkbox Filtering in SfTreeGrid](Filtering_images/Filtering7.png)
 
-The following screenshot illustrates the advanced filter when `ImmediateUpdateColumnFilter` is set to true.
+The following screenshot illustrates the advanced filter when `ImmediateUpdateColumnFilter` is set to `true`.
 
 ![Immediate Advanced Filtering in SfTreeGrid](Filtering_images/Filtering8.png)
 
@@ -444,11 +444,11 @@ this.sfTreeGrid.Columns["FirstName"].AllowBlankFilters = true;
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates the check box filter when `AllowBlankFilters` is set to true.
+The following screenshot illustrates the check box filter when `AllowBlankFilters` is set to `true`.
 
 ![Blank filters in check box filtering](Filtering_images/Filtering9.png)
 
-The following screenshot illustrates advanced filter when `AllowBlankFilters` is set to true.
+The following screenshot illustrates advanced filter when `AllowBlankFilters` is set to `true`.
 
 ![Blank filters in advanced filtering](Filtering_images/Filtering10.png)
 
