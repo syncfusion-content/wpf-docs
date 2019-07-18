@@ -150,8 +150,7 @@ LAYOUT<br/><br/></td><td>
 {{'[TileView](https://help.syncfusion.com/wpf/tileview/overview)' | markdownify}}<br/><br/></td></tr>
 <tr>
 <td>
-EDITORS<br/><br/></td><td>
-{{'[AutoComplete](https://help.syncfusion.com/wpf/autocomplete/overview)' | markdownify}}<br/><br/></td></tr>
+EDITORS<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
@@ -235,7 +234,7 @@ EDITORS<br/><br/></td><td>
 <tr>
 <td>
 <br/><br/></td><td>
-{{'[SfTextboxExt](https://help.syncfusion.com/wpf/sftextboxext/overview)' | markdownify}}<br/><br/></td></tr>
+{{'[SfTextboxExt (AutoComplete)](https://help.syncfusion.com/wpf/sftextboxext/overview)' | markdownify}}<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
