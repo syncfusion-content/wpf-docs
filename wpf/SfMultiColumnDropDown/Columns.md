@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in SfMultiColumnDropDownControl
-description: How to define columns in SfMultiColumnDropDownControl
+title: Defining columns of Multi-Column Dropdown |  | Syncfusion
+description: How to auto-generate or define columns for Multi-Column Dropdown Control (Multicolumn ComboBox).
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -49,7 +49,7 @@ sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img1.png)
+![Manually generated the columns in WPF SfMultiColumnDropDown](Columns_images/Columns_img1.png)
 
 ## Column sizing
 
@@ -79,5 +79,5 @@ You can [refer here](http://help.syncfusion.com/wpf/sfdatagrid/columns#column-si
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img2.png)
+![Change column size in WPF SfMuliColumnDropDown](Columns_images/Columns_img2.png)
 

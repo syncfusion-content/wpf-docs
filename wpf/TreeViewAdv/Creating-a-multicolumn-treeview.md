@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating a MultiColumnTreeView
-description: Creating a MultiColumnTreeView
+title: Creating a MultiColumn TreeView in WPF | Syncfusion
+description: This section describes about how to create the WPF MultiColumn TreeView.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
@@ -55,7 +55,7 @@ treeViewAdv.MultiColumnEnable = True
 
 {% endtabs %}  
 
-![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img1.jpeg)
+![Show the multiple columns in WPF TreeView](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img1.jpeg)
 
 ## Header for MultiColumn
 
@@ -103,7 +103,7 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 
 {% endtabs %}
 
-![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img2.jpeg)
+![Multiple columns with header and items in WPF TreeView](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img2.jpeg)
 
 
 ## Auto-Resize of columns in Multicolumn TreeView
@@ -151,7 +151,7 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 
 {% endtabs %}
 
-![](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img3.jpeg)
+![Auto resize the multi columns in WPF TreeView](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img3.jpeg)
 
 ## Allowing reordering columns
 
