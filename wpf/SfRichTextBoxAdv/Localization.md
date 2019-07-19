@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization of SfRichTextBoxAdv | Syncfusion
-description: How to localize the SfRichTextBoxAdv to any language settings
+title: Localization of WPF RichTextBox | Syncfusion
+description: How to localize the WPF RichTextBox to any language settings.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
