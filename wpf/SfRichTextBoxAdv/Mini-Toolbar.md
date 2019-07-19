@@ -1,6 +1,6 @@
 ---
-title: Mini Toolbar of SfRichTextBoxAdv | Syncfusion
-description: This section describes about how to use the mini toolbar
+title: Mini Toolbar of WPF RichTextBox | Syncfusion
+description: This section describes about how to use the mini toolbar in WPF RichTextBox.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
