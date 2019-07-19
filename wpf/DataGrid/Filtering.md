@@ -133,11 +133,11 @@ By default, both Checkbox Filter and Advanced Filter are loaded while opening th
 
 SfDataGrid with Checkbox Filter View:
       
-![SfDataGrid with Checkbox Filter View in WPF](Filtering_images/Filtering_img1.png)
+![DataGrid with Checkbox Filter View in WPF](Filtering_images/Filtering_img1.png)
         
 SfDataGrid with Advanced Filter View:
     
-![SfDataGrid with Advanced Filter View in WPF](Filtering_images/Filtering_img2.png)
+![DataGrid with Advanced Filter View in WPF](Filtering_images/Filtering_img2.png)
 
 ## Choose between built-in UI Views
 
@@ -263,13 +263,13 @@ When the DateTime type value is bound to the {{ '[GridColumn](http://help.syncfu
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/Filtering_img3.png"/>
+<img src="Filtering_images/Filtering_img3.png" alt="Displays text filter"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img4.png"/>
+<img src="Filtering_images/Filtering_img4.png" alt="Displays number filter"/>
 </td>
 <td>
-<img src="Filtering_images/Filtering_img5.png"/>
+<img src="Filtering_images/Filtering_img5.png" alt="Displays date filter"/>
 </td>
 </tr>
 <tr>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gauge Customization
-description: Gauge customization
+title: Gauge Customization | Syncfusion
+description: This section describes about the gauge customization.
 platform: wpf
 control: OLAP Gauge
 documentation: ug
@@ -37,7 +37,7 @@ Me.OlapGauge1.RowsCount = 2
 
 {% endtabs %}
 
-![](Gauge-Customization_images/Gauge-customization.png)
+![WPF OLAPGauge displays multiple gauges in a structured layout](Gauge-Customization_images/Gauge-customization.png)
 
 ## Gauge header
 
@@ -65,7 +65,7 @@ OlapGauge1.ShowGaugeHeaders = False
 
 {% endtabs %}
 
-![](Gauge-Customization_images/Gauge-customization-header.png)
+![Hidden header component in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-header.png)
 
 ## Gauge label
 
@@ -93,7 +93,7 @@ OlapGauge1.ShowGaugeLabels = False
 
 {% endtabs %}
 
-![](Gauge-Customization_images/Gauge-customization-label.png)
+![Hide the label in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-label.png)
 
 ## Gauge factor
 
@@ -121,4 +121,4 @@ OlapGauge1.ShowGaugeFactors = False
 
 {% endtabs %}
 
-![](Gauge-Customization_images/Gauge-customization-factor.png)
+![Hide the gauge factor component in WPF OLAPGauge](Gauge-Customization_images/Gauge-customization-factor.png)

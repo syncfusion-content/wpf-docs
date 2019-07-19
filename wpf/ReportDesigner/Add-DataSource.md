@@ -13,15 +13,15 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 1. In the Report Data, Click New, and then click the DataSource.
 
-   ![](Add-DataSource_images/Add-DataSource_img1.png)
+   ![Click data source in WPF ReportDesigner](Add-DataSource_images/Add-DataSource_img1.png)
 
 2. Right click on the Data Sources field and then click on Add Data Source.
    
-   ![](Add-DataSource_images/Add-DataSource_img2.png)
+   ![Click Add Data Source field in WPF ReportDesigner](Add-DataSource_images/Add-DataSource_img2.png)
 
 3. Enter the DataSource name in the Name field and choose use a embedded connection radio button and select the connection type from the Select connection type drop-down.
 
-   ![](Add-DataSource_images/Add-DataSource_img3.png)
+   ![Displays Data Source Properties window of WPF ReportDesigner](Add-DataSource_images/Add-DataSource_img3.png)
 
 4. Click Build, then connection properties Wizard opens
 
@@ -29,18 +29,18 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 6. In log on to server column select use windows authentication, then select or enter a database name in the Select or enter a database name drop-down ComboBox in connect to a database column.
 
-   ![](Add-DataSource_images/Add-DataSource_img4.png)
+   ![Displays select database name and server in Connection Properties window of WPF ReportDesigner](Add-DataSource_images/Add-DataSource_img4.png)
    
 7. Click the Test Connection to check the server connection.
 
 8. The Test Results dialog box is displayed after completing the connection check.
 
-   ![](Add-DataSource_images/Add-DataSource_img5.png)
+   ![Displays the test result of WPF ReportDesigner](Add-DataSource_images/Add-DataSource_img5.png)
 
 9. Click OK. It provides a connection string for the DataSource. 
 
-    ![](Add-DataSource_images/Add-DataSource_img6.png)
+    ![Add connection string for data source in WPF ReportDesigner](Add-DataSource_images/Add-DataSource_img6.png)
 
 10. Click OK. The added DataSource (Adventure) appears in the Report Data panel.
 
-    ![](Add-DataSource_images/Add-DataSource_img7.png)
+    ![Added data source in report data panel in WPF ReportDesigner](Add-DataSource_images/Add-DataSource_img7.png)

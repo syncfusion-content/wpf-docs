@@ -620,7 +620,7 @@ public class CellStyleSelector : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying how to change foreground of edited cells in WPF SfDataGrid](Editing_images/Editing_img2.jpeg)
+![How to change foreground of edited cells in WPF SfDataGrid](Editing_images/Editing_img2.jpeg)
 
 
 ### Allow editing when pressing minus key

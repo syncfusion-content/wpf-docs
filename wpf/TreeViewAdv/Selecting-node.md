@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selecting a Node
-description: Selecting a Node
+title: WPF TreeView Selection | Syncfusion
+description: This section describes about how to select the node in WPF TreeView.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
@@ -62,7 +62,7 @@ treeViewItemAdv1.IsSelected = True
 
 {% endtabs %}  
 
-![](Selecting_node_images/Selecting_node_img1.jpeg)
+![Show the selected WPF TreeView item at runtime](Selecting_node_images/Selecting_node_img1.jpeg)
 
 ## Enable to allow multiple selection in TreeViewAdv
 
@@ -108,7 +108,7 @@ treeViewAdv.AllowMultiSelect = True
 
 {% endtabs %}  
 
-![](Selecting_node_images/Selecting_node_img2.jpeg)
+![Show the selected multiple WPF TreeView item at runtime](Selecting_node_images/Selecting_node_img2.jpeg)
 
 ## Selecting an item through AddNodeToSelectedItems collection
 
@@ -137,6 +137,6 @@ Next items
 
 {% endtabs %}  
 
-![](Selecting_node_images/Selecting_node_img3.jpeg)
+![Show the selected multiple TreeView at runtime](Selecting_node_images/Selecting_node_img3.jpeg)
 
 
