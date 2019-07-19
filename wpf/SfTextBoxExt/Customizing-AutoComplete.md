@@ -9,11 +9,11 @@ documentation: ug
 
 # Customizing AutoComplete
 
-AutoComplete provides user friendly customizing options for both textbox part and drop down part. In this section, customizing entire AutoComplete control is explained.
+AutoComplete provides user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
 
-## Customizing the TextBox
+## Customizing the text box
 
-`Text`, `FontSize`, `FontWeight` and `FontFamily` are the properties used to customize the textbox part.
+The `Text`, `FontSize`, `FontWeight`, and `FontFamily` properties are used to customize the text box.
 
 {% tabs %}
 
@@ -81,11 +81,11 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
-## Customizing the Suggestion Box
+## Customizing the suggestion box
 
-### Changing suggestion box background color
+### Changing the background color of suggestion box
 
-The `DropDownBackground` property is used to modify the background color of suggestion box. The following code example demonstrates how to change the suggestion box background color. 
+The `DropDownBackground` property is used to modify the background color of suggestion box. The following code example demonstrates how to change the background color of suggestion box.
 
 {% tabs %}
 
