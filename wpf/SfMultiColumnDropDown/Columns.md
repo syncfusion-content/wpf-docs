@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in SfMultiColumnDropDownControl | Syncfusion
-description: How to define columns in SfMultiColumnDropDownControl
+title: Defining columns of Multi-Column Dropdown | Multicolumn ComboBox | Syncfusion
+description: How to auto-generate or define columns for Multi-Column Dropdown (Multicolumn ComboBox).
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
