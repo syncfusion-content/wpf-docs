@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting in SfSpreadsheet | Syncfusion
+title: Conditional Formatting in WPF Spreadsheet | Syncfusion
 description: How to apply conditional formatting rules at run time in SfSpreadsheet.
 platform: wpf
 control: SfSpreadsheet
