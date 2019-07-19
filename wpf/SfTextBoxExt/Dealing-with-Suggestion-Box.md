@@ -7,13 +7,13 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Dealing with Suggestion Box
+# Dealing with suggestion box
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the AutoComplete control.
+Suggestion box is a drop-down list box that displays the filtered suggestions inside a popup. This section explains the properties that deal with drop-down list in the AutoComplete control.
 
 ## Suggestion box placement mode
 
-Suggestion box can be placed either at the top or bottom using the `SuggestionBoxPlacement` property. By default, it is placed at the bottom.
+The suggestion box can be placed either at the top or bottom using the `SuggestionBoxPlacement` property. By default, it is placed at the bottom.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ namespace AutoCompleteSample
 
 ## Maximum suggestion box height
 
-The maximum height of the suggestion box in the SfAutocomplete control can be varied using the `MaximumDropDownHeight` property.
+The maximum height of the suggestion box in the SfAutocomplete control can be changed using the `MaximumDropDownHeight` property.
 
 {% tabs %}
 
@@ -169,7 +169,7 @@ namespace AutoCompleteSample
 
 ## Opening suggestion box on focus
 
-Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. At this time, suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. At that time, suggestion list is the complete list of data source.
 
 {% tabs %}
 
@@ -247,7 +247,7 @@ namespace AutoCompleteSample
 
 ## Avoid opening suggestion box
 
-APIs are available to avoid pop-ups. you can set the `SuggestionBoxPlacement` is None.
+The APIs are available to avoid popups. You can set the `SuggestionBoxPlacement` to None.
 
 {% tabs %}
 
