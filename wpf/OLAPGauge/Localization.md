@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization and RTL Support
+title: Localization and RTL Support | Syncfusion
 description: Localization and RTL support
 platform: wpf
 control: OLAP Gauge
@@ -31,9 +31,9 @@ After translating the strings, perform the following steps in the application:
 
 2. Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
 
-![](Localization_images/Localization-step1.png)
+![Shows add new item for WPF OLAPGauge](Localization_images/Localization-step1.png)
 
-![](Localization_images/Localization-step2.png)
+![Shows add new resource file for WPF OLAPGauge](Localization_images/Localization-step2.png)
 
 N> The resource file name should be in the format “Syncfusion.OlapGauge.wpf.&lt;Culture Code&gt;.resx”.
 
@@ -94,7 +94,7 @@ OlapGauge1.FlowDirection = FlowDirection.RightToLeft
 
 {% endtabs %}
 
-![](Localization_images/Localization-RTL.png)
+![Shows the content move from right to left direction in WPF OLAPGauge](Localization_images/Localization-RTL.png)
 
 A demo sample is available at the following location.
 

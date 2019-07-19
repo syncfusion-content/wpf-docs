@@ -1,6 +1,6 @@
 ---
-title: Mini Toolbar
-description: mini toolbar
+title: Mini Toolbar of WPF RichTextBox | Syncfusion
+description: This section describes about how to use the mini toolbar in WPF RichTextBox.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
@@ -9,7 +9,7 @@ keywords: mini-toolbar
 # Mini Toolbar
 
 The SfRichTextBoxAdv supports built-in mini toolbar to provide rich text formatting options such as Bold, Italic etc. The following screenshot shows built-in mini toolbar of SfRichTextBoxAdv control.
-![](Mini-Toolbar_images/Mini-Toolbar_img1.jpeg)
+![Shows built-in mini toolbar of WPF SfRichTextBoxAdv](Mini-Toolbar_images/Mini-Toolbar_img1.jpeg)
 
 ## Enable/Disable Mini Toolbar
 

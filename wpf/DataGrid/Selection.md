@@ -29,7 +29,7 @@ The `SelectionUnit` and [SelectionMode](http://help.syncfusion.com/cr/cref_files
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying single mode row selection in WPF SfDataGrid](Selection_images/Selection_img1.png)
+![Single mode row selection in WPF DataGrid](Selection_images/Selection_img1.png)
 
 
 ### Disable selection for rows and columns
@@ -54,7 +54,7 @@ While using `Extended`, you can select multiple rows or cells by pressing the ke
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying Extended mode cell selection in WPF SfDataGrid](Selection_images/Selection_img2.png)
+![Extended mode cell selection in WPF DataGrid](Selection_images/Selection_img2.png)
 
 
 N> When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) as [Multiple](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select or deselect multiple rows and cells by clicking the respective cell or row.  Also in multiple selection pressing navigation keys will move only the current cell and you can select or deselect by pressing <kbd>space</kbd> key.
@@ -69,7 +69,7 @@ N> When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying multiple mode cell selection in WPF SfDataGrid](Selection_images/Selection_img3.png)
+![Multiple mode cell selection in WPF DataGrid](Selection_images/Selection_img3.png)
 
 
 ## Get Selected Rows and Cells
@@ -141,7 +141,7 @@ foreach(var order in viewModel.Orders)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying programmatic selection of records using SelectedItems property in WPF SfDataGrid](Selection_images/Selection_img4.png)
+![Programmatic selection of records using SelectedItems property in WPF DataGrid](Selection_images/Selection_img4.png)
 
 
 ### Process selection using methods
@@ -156,7 +156,7 @@ this.dataGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying programmatic selection of records using SelectRows method in WPF SfDataGrid](Selection_images/Selection_img5.png)
+![Programmatic selection of records using SelectRows method in WPF DataGrid](Selection_images/Selection_img5.png)
 
 
 You can select a specific cell by using the [SelectCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectCell.html) method in cell selection.
@@ -171,7 +171,7 @@ this.dataGrid.SelectCell(record, column);
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying programmatic selection of cell using SelectCell method in WPF SfDataGrid](Selection_images/Selection_img6.png)
+![Programmatic selection of cell using SelectCell method in WPF DataGrid](Selection_images/Selection_img6.png)
 
 
 You can select a range of cells through [SelectCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectCells.html) method in cell selection.
@@ -229,7 +229,7 @@ public class GridSelectionControllerExt : GridCellSelectionController
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying programmatic selection of cells using SelectCells method in WPF SfDataGrid](Selection_images/Selection_img7.png)
+![Programmatic selection of cells using SelectCells method in WPF DataGrid](Selection_images/Selection_img7.png)
 
 
 You can select all the rows or cells using [SelectAll](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectAll.html) method.
@@ -303,14 +303,14 @@ this.dataGrid.UnSelectCell(removeRecord, removeColumn);
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying programmatic removal of selection for a cell using UnSelectCell method in WPF SfDataGrid](Selection_images/Selection_img8.png)
+![Programmatic removal of selection for a cell using UnSelectCell method in WPF DataGrid](Selection_images/Selection_img8.png)
 
 
 ## Selection in Master-Details View
 
 Master-Details View provides support to select one or more rows or cells in [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can’t able to maintain the selection in both ParentDataGrid and `DetailsViewDataGrid`. Selection will be maintained either in ParentDataGrid or in `DetailsViewDataGrid`.
 
-![Displaying selection in Master-Details View in WPF SfDataGrid](Selection_images/Selection_img9.png)
+![Selection in Master-Details View in WPF DataGrid](Selection_images/Selection_img9.png)
 
 
 ### Getting SelectedDetailsViewDataGrid
@@ -589,7 +589,7 @@ if (detailsViewDataGrid == null)
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying programmatic expansion and scrolling of Master-Details View in WPF SfDataGrid](Selection_images/Selection_img10.png)
+![Programmatic expansion and scrolling of Master-Details View in WPF DataGrid](Selection_images/Selection_img10.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MasterDetailsViewSample1099992369.zip).
@@ -1188,7 +1188,7 @@ You can change the selection background and foreground using [RowSelectionBrush]
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying appearance customization of rows in WPF SfDataGrid](Selection_images/Selection_img11.png)
+![Appearance customization of rows in WPF DataGrid](Selection_images/Selection_img11.png)
 
 
 ### Changing Current Cell Border Style
@@ -1206,7 +1206,7 @@ You can change the current cell border thickness and border color using [Current
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying appearance customization of current cell in WPF SfDataGrid](Selection_images/Selection_img12.png)
+![Appearance customization of current cell in WPF DataGrid](Selection_images/Selection_img12.png)
 
 
 ### Customizing Row Selection Border
@@ -1274,7 +1274,7 @@ Filter Row - FilterRowControl
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying customization of row selection border in WPF SfDataGrid](Selection_images/Selection_img13.png)
+![Customization of row selection border in WPF DataGrid](Selection_images/Selection_img13.png)
 
 
 ### Customizing Cell Selection
@@ -1357,7 +1357,7 @@ Filter Row - GridFilterRowCell
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying custom cell selection for WPF SfDataGrid](Selection_images/Selection_img14.png)
+![Custom cell selection for WPF SfDataGrid](Selection_images/Selection_img14.png)
 
 
 ## Binding Selection Properties
@@ -1666,7 +1666,7 @@ private void dataGrid_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectColumn1411579311.zip).
 
-![Displaying column selection when clicking column header in WPF SfDataGrid](Selection_images/Selection_img15.png)
+![Column selection when clicking column header in WPF DataGrid](Selection_images/Selection_img15.png)
 
 
 ### Avoid CaptionSummaryRow selection on Grouping

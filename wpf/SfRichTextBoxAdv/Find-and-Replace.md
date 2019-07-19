@@ -1,6 +1,6 @@
 ---
-title: Find and Replace
-description: find and replace
+title: How to perform Find and replace in WPF RichTextBox | Syncfusion
+description: This section describes about how to find and replace the text in wpf richtextbox control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
@@ -149,5 +149,5 @@ The following code example demonstrates how to show the options pane in SfRichTe
 {% endhighlight %}
 
 {% endtabs %}
-![](Find-and-Replace_images/Find-and-Replace_img1.jpeg)
+![Shows the find option to navigate the text in WPF SfRichTextBoxAdv](Find-and-Replace_images/Find-and-Replace_img1.jpeg)
 

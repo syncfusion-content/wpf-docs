@@ -296,7 +296,7 @@ When relations are auto-generated, you can handle the [SfDataGrid.AutoGenerating
 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
-![Displaying auto generation of two relations for WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img2.png)
+![Auto generation of two relations for WPF DataGrid](Master-Details-View_images/Master-Details-View_img2.png)
 
 #### Manually defining Relations
 
@@ -344,7 +344,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![Displaying manual generation of two relations for WPF SfDataGrid](Master-Details-View_images/Master-Details-View_img3.png)
+![Shows the manual generation of two relations for WPF DataGrid](Master-Details-View_images/Master-Details-View_img3.png)
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) of first level nested grid.
 
@@ -518,7 +518,7 @@ this.dataGrid.DetailsViewDefinition.Add(gridViewDefinition);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DataGrid displays hierarchical Grid](Master-Details-View_images/Master-Details-View_img6.png)
+![WPF DataGrid displays the hierarchical grid](Master-Details-View_images/Master-Details-View_img6.png)
 
 ## Populating Master-Details view through events
 
@@ -1799,7 +1799,7 @@ You can hide the expander from the view when corresponding `RelationalColumn` pr
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Master-details view DataGrid](Master-Details-View_images/Master-Details-View_img12.png)
+![WPF DataGrid Master-details view DataGrid](Master-Details-View_images/Master-Details-View_img12.png)
 
 ## Hiding GridDetailsViewIndentCell in SfDataGrid
 
@@ -1829,7 +1829,7 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Master-details view Grid](Master-Details-View_images/Master-Details-View_img14.png)
+![WPF Master-details view in DataGrid](Master-Details-View_images/Master-Details-View_img14.png)
 
 ## Hiding the details view expander icon based on child items count
 
@@ -1856,7 +1856,7 @@ private void DataGrid_QueryDetailsViewExpanderState(object sender, Syncfusion.UI
 {% endtabs %} 
 
 The following screenshot illustrates how to hide the state of expander icon based on child items count.
-![Image used to display hidden expander icon state of SfDataGird WPF](Master-Details-View_images/Master-Details-View_img15.png)
+![Image used to display hidden expander icon state of DataGird WPF](Master-Details-View_images/Master-Details-View_img15.png)
 You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-hide-the-detailsview-expander-icon-based-on-child-records-count-wpf-datagrid).
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property

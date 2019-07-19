@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip
-description: Tooltip
+title: Tooltip of OLAPGauge | Syncfusion
+description: This section describes about the Tooltip of OlapGauge
 platform: wpf
 control: OLAP Gauge
 documentation: ug
@@ -39,7 +39,7 @@ Me.OlapGauge1.ShowPointersTooltip = True
 
 {% endtabs %}
 
-![](Tooltip_images/Pointer-tooltip.png)
+![Shows the tooltip of pointer in WPF OLAPGauge](Tooltip_images/Pointer-tooltip.png)
 
 ## Marker tooltip
 
@@ -69,7 +69,7 @@ Me.OlapGauge1.ShowMarkersTooltip = True
 
 {% endtabs %}
 
-![](Tooltip_images/Marker-tooltip.png)
+![Shows the tooltip of marker in WPF OLAPGauge](Tooltip_images/Marker-tooltip.png)
 
 A demo sample is available at the following location.
 

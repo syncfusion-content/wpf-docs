@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the appearance of OLAP Gauge
+title: Customize the appearance of OLAP Gauge | Syncfusion
 description: Customize the radius, frame type, and skin of OLAP Gauge
 platform: wpf
 control: OLAP Gauge
@@ -35,7 +35,7 @@ Me.OlapGauge1.Radius = 100
 
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.png)
+![Shows radius value of WPF OLAPGauge](Appearance_images/Appearance_img1.png)
 
 A demo sample is available at the following location.
 
@@ -47,19 +47,19 @@ The OLAP gauge supports four types of built-in frames to provide effective rim s
 
 * CircularCenterGradient
 
-![](Appearance_images/Appearance_img2.png)
+![Circular center gradient frame type of WPF OLAPGauge](Appearance_images/Appearance_img2.png)
 
 * CircularWithDarkOuterFrames
 
-![](Appearance_images/Appearance_img3.png)
+![Circular with dark outer frame type of WPF OLAPGauge](Appearance_images/Appearance_img3.png)
 
 * FullCircle
 
-![](Appearance_images/Appearance_img4.png)
+![Full circle of WPF OLAPGauge](Appearance_images/Appearance_img4.png)
 
 * HalfCircle
 
-![](Appearance_images/Appearance_img5.png)
+![Half circle of WPF OLAPGauge](Appearance_images/Appearance_img5.png)
 
 The following code snippet illustrates about how to set frame type for the OLAP gauge.
 
@@ -91,39 +91,39 @@ Built-in-skins allow you to customize the theme and style to improve the look an
 
 * Metro: This skin is similar to the Windows 8 Metro style.
 
-![](Appearance_images/Appearance_img6.png)
+![Applied Metro theme to WPF OLAPGauge](Appearance_images/Appearance_img6.png)
 
 * Blend: This skin is similar to the Microsoft Blend skin.
 
-![](Appearance_images/Appearance_img7.png)
+![Applied Blend theme to WPF OLAPGauge](Appearance_images/Appearance_img7.png)
 
 * Office2010Black: This skin is similar to the Microsoft Office2010Black skin.
 
-![](Appearance_images/Appearance_img8.png)
+![Applied Office2010Black theme to WPF OLAPGauge](Appearance_images/Appearance_img8.png)
 
 * Office2010Blue: This skin is similar to the Microsoft Office2010Blue skin.
 
-![](Appearance_images/Appearance_img9.png)
+![Applied Office2010Blue theme to WPF OLAPGauge](Appearance_images/Appearance_img9.png)
 
 * Office2010Silver: This skin is similar to the Microsoft Office2010Silver skin.
 
-![](Appearance_images/Appearance_img10.png)
+![Applied Office2010Silver theme to WPF OLAPGauge](Appearance_images/Appearance_img10.png)
 
 * Office2013LightGray: This skin is similar to the Microsoft Office2013LightGray skin.
 
-![](Appearance_images/Appearance_img11.png)
+![Applied Office2013LightGray theme to WPF OLAPGauge](Appearance_images/Appearance_img11.png)
 
 * Office2013DarkGray: This skin is similar to the Microsoft Office2013DarkGray skin.
 
-![](Appearance_images/Appearance_img12.png)
+![Applied Office2013DarkGray theme to WPF OLAPGauge](Appearance_images/Appearance_img12.png)
 
 * Office2013White: This skin is similar to the Microsoft Office2013White skin.
 
-![](Appearance_images/Appearance_img13.png)
+![Applied Office2013White theme to WPF OLAPGauge](Appearance_images/Appearance_img13.png)
 
 * VisualStudio2013: This skin is similar to the VisualStudio2013 skin.
 
-![](Appearance_images/Appearance_img14.png)
+![Applied VisualStudio2013 theme to WPF OLAPGauge](Appearance_images/Appearance_img14.png)
 
 To apply a skin to the OLAP gauge, use the `SkinStorage.VisualStyle` property. The following code snippet shows how to set the visual style for the control.
 
