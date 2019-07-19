@@ -1,6 +1,6 @@
 ---
-title: Find and Replace | Syncfusion
-description: This section describes about how to find and replace the text
+title: How to perform Find and replace in WPF RichTextBox | Syncfusion
+description: This section describes about how to find and replace the text in wpf richtextbox control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
