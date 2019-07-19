@@ -247,7 +247,7 @@ namespace AutoCompleteSample
 
 ## Avoid opening suggestion box
 
-The APIs are available to avoid popups. You can set the `SuggestionBoxPlacement` to None.
+The APIs are available to avoid popups. By setting the `SuggestionBoxPlacement` API to None, you can avoid opening suggestion box.
 
 {% tabs %}
 
