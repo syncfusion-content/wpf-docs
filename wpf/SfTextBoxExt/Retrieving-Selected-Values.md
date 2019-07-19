@@ -7,17 +7,17 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Handling Selected values
+# Handling Selected Values
 
 AutoComplete provides a way to handle the selected item using the `SelectedItem` property.
 
 ## SelectedItem
 
-The `SelectedItem` property is used to select the particular item from the suggestion list. You can either get or set the SelectedItem.
+The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
 
 ### How to set the SelectedItem
 
-The following code snippet demonstrates the way to set `SelectedItem`.
+The following code snippet demonstrates how to set `SelectedItem`.
 
 {% tabs %}
 
@@ -91,11 +91,11 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
-### Retrieving Selected items
+### Retrieving selected items
 
-AutoComplete provides a way to get the selected item using `SelectionChanged` event.
+AutoComplete provides a way to get the selected item using the `SelectionChanged` event.
 
-The following code example demonstrates the way to retrieve SelectedItem.
+The following code example demonstrates how to retrieve SelectedItem.
 
 {% tabs %}
 
@@ -183,17 +183,17 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
-## Retrieving Selected value
+## Retrieving selected value
 
-AutoComplete provides a way to get the selected values using SuggestionIndex property.
+AutoComplete provides a way to get the selected values using the `SuggestionIndex` property.
 
-### Retrieving the Index of Selected Item
+### Retrieving the index of selected item
 
-When an item is selected from suggestion list, its index can be retrieved using `SuggestionIndex` property. 
+When an item is selected from suggestion list, its index can be retrieved using the `SuggestionIndex` property.
 
-SuggestionIndex property holds the index of selected item in suggestion list. 
+The `SuggestionIndex` property holds the index of selected item in suggestion list.
 
-The following code example demonstrates the way to retrieve SuggestionIndex.
+The following code example demonstrates how to retrieve SuggestionIndex.
 
 {% tabs %}
 
