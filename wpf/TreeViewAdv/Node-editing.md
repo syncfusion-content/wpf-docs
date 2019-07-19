@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node Editing in TreeViewAdv | Syncfusion
-description: This section describes about how to edit the node at runtime
+title: Node Editing in WPF TreeView | Syncfusion
+description: This section describes about how to edit the node at runtime in WPF TreeView.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
