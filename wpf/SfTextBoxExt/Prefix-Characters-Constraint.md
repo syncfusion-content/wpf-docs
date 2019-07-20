@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mininum prefix characters of Auto Complete | SfTextBoxExt | wpf | Syncfusion
+title: Prefix characters of Auto Complete | SfTextBoxExt | wpf | Syncfusion
 description: auto complete
 platform: wpf
 control: SfTextBoxExt

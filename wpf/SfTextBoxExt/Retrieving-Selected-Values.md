@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Retrieving selected values of Auto Complete | SfTextBoxExt | wpf | Syncfusion
+title: Selected values of Auto Complete | SfTextBoxExt | wpf | Syncfusion
 description: auto complete
 platform: wpf
 control: SfTextBoxExt
