@@ -81,6 +81,8 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
+![AutoComplete Customization](Auto-Complete_images/Customization.png)
+
 ## Customizing the suggestion box
 
 ### Changing the background color of suggestion box
@@ -159,5 +161,5 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
-![Dropdown background color](images/Customizing-AutoComplete/dropdown-background-color.png)
+![Dropdown background color](Auto-Complete_images/drop_down_background_color.png)
 

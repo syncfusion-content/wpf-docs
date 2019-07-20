@@ -87,7 +87,7 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
-![SuggestionBoxPlacement](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
+![suggestion box placement](Auto-Complete_images/drop_down_position.png)
 
 ## Maximum suggestion box height
 
@@ -165,7 +165,7 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
-![MaximumDropDownHeight](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
+![MaxDropDownHeight](Auto-Complete_images/maximum_drop_down_height.png)
 
 ## Opening suggestion box on focus
 
@@ -243,7 +243,7 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
-![SuggestionsOnFocus](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
+![ShowSuggestionsOnFocus](Auto-Complete_images/suggestion_on_focus.png)
 
 ## Avoid opening suggestion box
 
