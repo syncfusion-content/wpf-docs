@@ -9,11 +9,11 @@ documentation: ug
 
 # Merge Cells 
 
-SfTreeGrid allows you to merge the range of adjacent cells in a row across columns using [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~QueryCoveredRange_EV.html) event.
+SfTreeGrid allows you to merge a range of adjacent cells in a row across columns using the [QueryCoveredRange](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~QueryCoveredRange_EV.html) event.
 
-`QueryCoveredRange` event occurs when each cell gets arranged. When scrolling the merged range will be added for newly added columns through this event and also removed for the columns which are out of view.
+The `QueryCoveredRange` event occurs when each cell is arranged. When scrolling, the merged range will be added for newly added columns through this event and will also be removed for the columns that are out of view.
 
-[TreeGridQueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange`event provides information about the cell triggered this event. GridQueryCoveredRangeEventArgs.OriginalSender returns the TreeGrid fired this event by TreeGridQueryCoveredRangeEventArgs.Range property, the adjacent cells can be merged.
+[TreeGridQueryCoveredRangeEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryCoveredRangeEventArgs.html) of the `QueryCoveredRange` event provides information about the cell triggered in this event. GridQueryCoveredRangeEventArgs.OriginalSender returns the TreeGrid fired in this event using the TreeGridQueryCoveredRangeEventArgs.Range property. The adjacent cells can be merged.
 
 {% tabs %}
 {% highlight xaml %}
@@ -41,11 +41,11 @@ void TreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRangeEventArg
 
 ## Merging Cells
 
-You can merge the range of cells by setting [TreeGridCoveredCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCoveredCellInfo.html) (by defining Left, Right, RowIndex) to [TreeGridQueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryCoveredRangeEventArgs.html) and handling the event.
+You can merge the range of cells by setting [TreeGridCoveredCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCoveredCellInfo.html) (by defining Left, Right, and RowIndex) to [TreeGridQueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryCoveredRangeEventArgs.html) and handling the event.
 
 ### Column wise merging cells by fixed range
 
-You can merge the columns by setting the range using Left and Right properties of `TreeGridCoveredCellInfo`.
+You can merge the columns by setting the range using the Left and Right properties of `TreeGridCoveredCellInfo`.
 
 {% tabs %}
 {% highlight c# %}
@@ -70,7 +70,7 @@ void treeGrid_QueryCoveredRange(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeG
 
 ### Merge all cells in an entire parent node
 
-You can merge the entire column parent node by using `TreeGridCoveredCellInfo`.
+You can merge the entire column parent node using `TreeGridCoveredCellInfo`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -120,7 +120,7 @@ public class QueryCoveredRangeBehavior : Behavior<SfTreeGrid>
     }
 
     /// <summary>
-    /// Called when the behavior is being detached from its AssociatedObject, but before it has actually occurred.
+    /// Calls when the behavior is being detached from its AssociatedObject, but before it has actually occurred.
     /// </summary>
     /// <remarks>Override this to unhook functionality from the AssociatedObject.</remarks>
     protected override void OnDetaching()
@@ -147,16 +147,16 @@ class RequestTreeItemsBehavior : Behavior<SfTreeGrid>
     {
         if (args.ParentItem == null)
         {
-            //get the root list - get all employees who have no boss 
+            // Gets the root list - Gets all employees who have no boss.
             args.ChildItems = EmployeeRepository.GetEmployees().Where(x => x.ReportsTo == -1); //get all employees whose boss's id is -1 (no boss)
         }
         else //if ParentItem not null, then set args.ChildList to the child items for the given ParentItem.
         {   
-            //get the children of the parent object
+            // Gets the children of the parent object.
             Employee emp = args.ParentItem as Employee;
             if (emp != null)
             {
-                //get all employees that report to the parent employee
+                // Gets all employees who report to the parent employee.
                 args.ChildItems = EmployeeRepository.GetEmployees().Where(x => x.ReportsTo == emp.Id);
             }
         }
@@ -174,7 +174,7 @@ class RequestTreeItemsBehavior : Behavior<SfTreeGrid>
 
 ![Merging in WPF treegrid](MergeCells_images/MergeCells_img2.png)
 
-You can refer the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CellMerge-905710710)
+Refer to [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CellMerge-905710710).
 
 ### Limitation
 •	Freeze panes are not supported.
