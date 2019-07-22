@@ -174,7 +174,7 @@ class RequestTreeItemsBehavior : Behavior<SfTreeGrid>
 
 ![Merging in WPF treegrid](MergeCells_images/MergeCells_img2.png)
 
-Refer to [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CellMerge-905710710).
+Refer to [Sample](https://github.com/SyncfusionExamples/how-to-merge-cells-in-a-row-in-wpf-treegrid).
 
 ### Limitation
 •	Freeze panes are not supported.
