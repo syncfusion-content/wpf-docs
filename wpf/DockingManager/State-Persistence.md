@@ -328,7 +328,7 @@ DockingManager.SetCanSerialize(solutionExplorer, false);
 
 ### Limitations
 
-1. Restrict state persistence does not support for the children which was added at run-time when performing serialization and de-serializaton using [XmlWriter](https://help.syncfusion.com/wpf/dockingmanager/state-persistence#various-formats-to-save--load-states).
+1. Restrict state persistence does not support for the children which was added at run-time in DockingManager when performing serialization and de-serialization using [XmlWriter](https://help.syncfusion.com/wpf/dockingmanager/state-persistence#various-formats-to-save--load-states).
 2. Reset operation does not works properly when we deserialize many tab groups in DockingManager.
 
 N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.
