@@ -60,8 +60,8 @@ The following image displays the file open dialog.
 
 ![Open a file in syntax editor using open file dialog](File-Support_images/File-Support_img2.jpeg)
 
-### Dragging the file
-The `EditControl` allows users to drag and drop a file by setting the `AllowDrop` property to true. Users can drop any type of file supported in the `EditControl`.
+### Dropping the file
+The `EditControl` allows users to drag and drop a file by setting the `AllowDrop` property to true. Users can drop any type of file supported in the `EditControl`. Editor will automatically switch its `DocumentLanguage` based on dropped file's extension. When dropping, if there is already an open document it will be closed and `DocumentClosing` will be raised. Here you can control desired action before closing.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,6 @@ Me.editControl.AllowDrop = True
 {% endtabs %} 
 
 ## Saving the text in a file
-
 
 SaveFile method in the EditControl class is used to save the text in EditControl to a file. EditControl does support saving all the built-in languages, file types and custom language file type respectively.
 
