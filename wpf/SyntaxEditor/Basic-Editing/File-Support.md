@@ -60,8 +60,8 @@ The following image displays the file open dialog.
 
 ![Open a file in syntax editor using open file dialog](File-Support_images/File-Support_img2.jpeg)
 
-### Dragging the file
-The `EditControl` allows users to drag and drop a file by setting the `AllowDrop` property to true. Users can drop any type of file supported in the `EditControl`.
+### Dropping a file
+The `EditControl` allows users to drop a file over it, by setting the `AllowDrop` property to true. Users can drop any type of file supported in the `EditControl`. The editor will automatically switch its `DocumentLanguage` based on dropped file's extension. When dropping, if any documents is already in open, it will be closed, and the `DocumentClosing` event will occur. Here, you can control the desired action before closing.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,6 @@ Me.editControl.AllowDrop = True
 {% endtabs %} 
 
 ## Saving the text in a file
-
 
 SaveFile method in the EditControl class is used to save the text in EditControl to a file. EditControl does support saving all the built-in languages, file types and custom language file type respectively.
 
@@ -96,14 +95,14 @@ The following image displays the save file dialog.
 ![Saving changes in a file using save file dialog](File-Support_images/File-Support_img3.jpeg)
 
 ## DocumentClosing event
-By default, the existing file will not be saved when loading or dropping a new file. You can control this behavior using the `DocumentClosing` event, which  occurs when closing a file. You can use the `HasUnsavedChanges` property to identify whether the existing file contains changes, based on which you can choose the action need to be performed.
+By default, the existing file will not be saved when loading or dropping a new file. You can control this behavior using the [DocumentClosing](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~DocumentClosing_EV.html) event, which occurs when closing a file. You can use the `HasUnsavedChanges` property to identify whether the existing file contains changes, based on which you can choose the action need to be performed.
 
-| DocumentClosingEventArgs | Description |
+| [DocumentClosingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.DocumentClosingEventArgs_members.html) | Description |
 |---------------|-------------|
 | HasUnsavedChanges | Represents a value that indicates whether the file contains unsaved changes. |
 | Action| Represents a value to specify the save actions.|
 
-| SaveAction | Description |
+| [SaveAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.SaveAction.html) | Description |
 |---|---|
 | Save | Saves the changes before closing document. |
 | Discard | Ignores the changes and closes the document. |
