@@ -61,7 +61,7 @@ The following image displays the file open dialog.
 ![Open a file in syntax editor using open file dialog](File-Support_images/File-Support_img2.jpeg)
 
 ### Dropping a file
-The `EditControl` allows users to drag a file by setting the `AllowDrop` property to true. Users can drag any type of file supported in the `EditControl`. The editor will automatically switch its `DocumentLanguage` based on dropped file's extension. When dragging, if any documents is already in open, it will be closed, and the `DocumentClosing` event will occur. Here, you can control the desired action before closing.
+The `EditControl` allows users to drop a file over it, by setting the `AllowDrop` property to true. Users can drop any type of file supported in the `EditControl`. The editor will automatically switch its `DocumentLanguage` based on dropped file's extension. When dropping, if any documents is already in open, it will be closed, and the `DocumentClosing` event will occur. Here, you can control the desired action before closing.
 
 {% tabs %}
 {% highlight c# %}
