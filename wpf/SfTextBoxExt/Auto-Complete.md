@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: auto complete
+description: This section provides details about AutoComplete in SfTextBoxExt control.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -230,7 +230,7 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
                             SearchItemPath="Name"
 
-                            AutoCompleteMode="None"
+                            AutoCompleteMode="SuggestAppend"
 
                             AutoCompleteSource="{Binding Employees}" >
 
@@ -254,7 +254,7 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
 {% endhighlight %}
 
-![None mode](Auto-Complete_images/Auto-Complete_img5.png)
+![ItemTemplate](Auto-Complete_images/Auto-Complete_img5.png)
 
 Drop down list with image
 {:.caption}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prefix characters of Auto Complete | SfTextBoxExt | wpf | Syncfusion
-description: auto complete
+description: Learn how to set minimum Prefix Characters in AutoComplete
 platform: wpf
 control: SfTextBoxExt
 documentation: ug

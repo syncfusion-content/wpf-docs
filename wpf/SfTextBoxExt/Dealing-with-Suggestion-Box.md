@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Suggestion box AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: auto complete
+description: This section provides details about suggestion box of AutoComplete in SfTextBoxExt
 platform: wpf
-control: This section provides details about suggestion box of AutoComplete
+control: SfTextBoxExt
 documentation: ug
 ---
 
