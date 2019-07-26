@@ -108,7 +108,7 @@ SearchItemPath property specifies the property path by which the filtering has t
 							
 {% endhighlight %}
 							
-![](Auto-Complete_images/Auto-Complete_img1.png)
+![AutoCompleteSource](Auto-Complete_images/Auto-Complete_img1.png)
 
 N> Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section.
 
@@ -145,7 +145,7 @@ The filtered suggestions are displayed in a drop-down list.  Users can pick an i
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img2.png)
+![Suggest](Auto-Complete_images/Auto-Complete_img2.png)
 
 Filtered suggestions displayed in drop-down list
 {:.caption}
@@ -174,7 +174,7 @@ AutoCompleteMode="Append"
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img3.png)
+![Append](Auto-Complete_images/Auto-Complete_img3.png)
 
 
 
@@ -203,7 +203,7 @@ The text will be appended to the first matched item in the suggestions collectio
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img4.png)
+![SuggestAppend](Auto-Complete_images/Auto-Complete_img4.png)
 
 SuggestAppend mode
 {:.caption}
@@ -230,7 +230,7 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
                             SearchItemPath="Name"
 
-                            AutoCompleteMode="SuggestAppend"
+                            AutoCompleteMode="None"
 
                             AutoCompleteSource="{Binding Employees}" >
 
@@ -254,7 +254,7 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img5.png)
+![None mode](Auto-Complete_images/Auto-Complete_img5.png)
 
 Drop down list with image
 {:.caption}
@@ -310,7 +310,7 @@ SuggestionMode="None"
 
 {% endhighlight %}
 
- ![](Auto-Complete_images/Auto-Complete_img6.png)
+ ![SuggestMode None](Auto-Complete_images/Auto-Complete_img6.png)
 
 None case
 {:.caption}
@@ -338,7 +338,7 @@ SuggestionMode="StartsWith"
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img7.png)
+![StartsWith](Auto-Complete_images/Auto-Complete_img7.png)
 
 
 StartsWith case
@@ -368,7 +368,7 @@ SuggestionMode="StartsWithCaseSensitive"
                             AutoCompleteSource="{Binding Employees}"/>
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img8.png)
+![StartsWithCaseSensitive](Auto-Complete_images/Auto-Complete_img8.png)
 
 
 
@@ -400,7 +400,7 @@ The control returns all possible matches which start with the text typed by the 
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img9.png)
+![StartsWithOrdinal](Auto-Complete_images/Auto-Complete_img9.png)
 
 
 StartsWithOrdinal case
@@ -430,7 +430,7 @@ SuggestionMode="StartsWithOrdinalCaseSensitive"
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img10.png)
+![StartsWithOrdinalCaseSensitive](Auto-Complete_images/Auto-Complete_img10.png)
 
 StartsWithOrdinalCaseSensitive case
 {:.caption}
@@ -461,7 +461,7 @@ The control return all possible matches which contains the text typed by the use
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img11.png)
+![Contains](Auto-Complete_images/Auto-Complete_img11.png)
 
 Contains case
 {:.caption}
@@ -489,7 +489,7 @@ The control return all possible matches which contains the text typed by the use
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img12.png)
+![ContainsCaseSensitive](Auto-Complete_images/Auto-Complete_img12.png)
 
 ContainsCaseSensitive case
 {:.caption}
@@ -518,7 +518,7 @@ The control return all possible matches which contains the text typed by the use
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img13.png)
+![ContainsOrdinal](Auto-Complete_images/Auto-Complete_img13.png)
 
 ContainsOrdinal case
 {:.caption}
@@ -546,7 +546,7 @@ The control return all possible matches which contains the text typed by the use
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img14.png)
+![ContainsOrdinalCaseSensitive](Auto-Complete_images/Auto-Complete_img14.png)
 
 ContainsOrdinalCaseSensitive
 {:.caption}
@@ -575,7 +575,7 @@ The control return all possible matches which equals the text typed by the user.
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img15.png)
+![Equals](Auto-Complete_images/Auto-Complete_img15.png)
 
 Equals case
 {:.caption}
@@ -603,7 +603,7 @@ The control return all possible matches which equals the text typed by the user 
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img16.png)
+![EqualsCaseSensitive](Auto-Complete_images/Auto-Complete_img16.png)
 
 EqualsCaseSensitive case
 {:.caption}
@@ -630,7 +630,7 @@ The control return all possible matches which equals the text typed by the user 
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img17.png)
+![EqualsOrdinal](Auto-Complete_images/Auto-Complete_img17.png)
 
 EqualsOrdinal case
 {:.caption}
@@ -658,7 +658,7 @@ The control return all possible matches which equals the text typed by the user 
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img18.png)
+![EqualsOrdinalCaseSensitive](Auto-Complete_images/Auto-Complete_img18.png)
 
 EqualsOrdinalCaseSensitive case
 {:.caption}
@@ -733,7 +733,7 @@ autoComplete.Filter = MyFilter;
 {% endtabs %}
 
 
-![](Auto-Complete_images/Auto-Complete_img19.png)
+![Custom](Auto-Complete_images/Auto-Complete_img19.png)
 
 Custom case
 {:.caption}
@@ -765,7 +765,7 @@ This option allows the control to filter suggestions by ignoring the case. The d
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img20.png)
+![Ignore Case](Auto-Complete_images/Auto-Complete_img20.png)
 
 Ignore Case
 {:.caption}
@@ -792,7 +792,7 @@ MinimumPrefixCharacters="2"
                             AutoCompleteSource="{Binding Employees}"/>
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img21.png)
+![Minimum Prefix Length](Auto-Complete_images/Auto-Complete_img21.png)
 
 Minimum Prefix Length case
 {:.caption}
@@ -852,7 +852,7 @@ The drop-down list will open at top of the control.
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img22.png)
+![Top](Auto-Complete_images/Auto-Complete_img22.png)
 
 Drop down list opening at the top
 {:.caption}
@@ -880,7 +880,7 @@ The drop-down list will open at bottom of the control.
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img23.png)
+![Bottom](Auto-Complete_images/Auto-Complete_img23.png)
 
 
 Drop down list opening at the bottom
@@ -909,7 +909,7 @@ SuggestionBoxPlacement="None"
 
 {% endhighlight %}
 
-![](Auto-Complete_images/Auto-Complete_img24.png)
+![None](Auto-Complete_images/Auto-Complete_img24.png)
 
 No drop down list
 {:.caption}
