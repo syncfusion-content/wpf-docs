@@ -29,6 +29,6 @@ The [Updown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion
 
 **Keyboard and Mouse support** - Provide option to change the value by using keyboard and mouse.
 
-**Appearance** - Provides support for several built-in skns and blendable support for customize the apperance.
+**Appearance** - Provides support for several built-in skins and blendable support for customize the appearance.
 
 

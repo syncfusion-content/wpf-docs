@@ -18,7 +18,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 ## Adding the UpDown control via designer
 
-The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html)control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
+The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assemblies will be added automatically.
 
 * Syncfusion.Shared.WPF
 
