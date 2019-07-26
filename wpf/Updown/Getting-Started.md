@@ -8,7 +8,18 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains how to add **UpDown** control to an application and its structure.
+This section explains how to add **UpDown** control to an application and its structure
+
+## Structure of UpDown
+
+![Structure of WPF UpDown](GettingStarted-images/GettingStarted-img3.jpeg)
+
+
+The following are the elements of the UpDown control:
+
+* **Text area** - It is the area where the numeric values are displayed. 
+* **Increment button** - It is a repeat button that can be clicked to increment the current value of the UpDown control.
+* **Decrement button** - It is a repeat button that can be clicked to decrement the current value of the UpDown control.
 
 ## Assembly deployment
 
@@ -92,18 +103,6 @@ Grid1.Children.Add(updown);
 
 ![Shows the WPF UpDown control](GettingStarted-images/GettingStarted-img2.jpeg)
 
-
-## Structure of UpDown
-
-![Structure of WPF UpDown](GettingStarted-images/GettingStarted-img3.jpeg)
-
-
-The following are the elements of the UpDown control:
-
-* **Text area** - It is the area where the numeric values are displayed. 
-* **Increment button** - It is a repeat button that can be clicked to increment the current value of the UpDown control.
-* **Decrement button** - It is a repeat button that can be clicked to decrement the current value of the UpDown control.
-
 ## Value
 
 The value of **UpDown** control can be changed by [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property. A value can be set for the UpDown control as shown in the following code example.
@@ -128,7 +127,7 @@ updown.Value = 10;
 
 ### Step Value
 
-The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be incremented or decremented in the UpDown control when the repeat buttons are clicked.
+The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be incremented or decremented in the UpDown control, when the repeat buttons are clicked.
 
 {% tabs %}
 
@@ -150,7 +149,7 @@ updown.Step = 5;
 
 ## Culture
 
-The culture can be set to `en-US` for the UpDown control as shown in the following code. The U.S. culture uses "." as the decimal seperator.
+Use `Culture` property to change culture of UpDown control. The U.S. culture uses "." as the decimal seperator.
 
 {% tabs %}
 
