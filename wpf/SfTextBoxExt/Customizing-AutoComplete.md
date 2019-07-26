@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Auto Complete | SfTextBoxExt | wpf | Syncfusion
-description: auto complete
+title: Customizing AutoComplete | SfTextBoxExt | wpf | Syncfusion
+description: This section provides customizing features in WPF SfTextBoxExt control.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug

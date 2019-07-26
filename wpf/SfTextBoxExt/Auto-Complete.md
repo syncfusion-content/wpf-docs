@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto Complete | SfTextBoxExt | wpf | Syncfusion
+title: AutoComplete | SfTextBoxExt | wpf | Syncfusion
 description: auto complete
 platform: wpf
 control: SfTextBoxExt

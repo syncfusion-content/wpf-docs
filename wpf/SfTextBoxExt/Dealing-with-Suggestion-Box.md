@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Suggestion box Auto Complete | SfTextBoxExt | wpf | Syncfusion
+title: Suggestion box AutoComplete | SfTextBoxExt | wpf | Syncfusion
 description: auto complete
 platform: wpf
-control: SfTextBoxExt
+control: This section provides details about suggestion box of AutoComplete
 documentation: ug
 ---
 
@@ -91,7 +91,7 @@ namespace AutoCompleteSample
 
 ## Maximum suggestion box height
 
-The maximum height of the suggestion box in the SfAutocomplete control can be changed using the `MaximumDropDownHeight` property.
+The maximum height of the suggestion box in the Autocomplete control can be changed using the `MaximumDropDownHeight` property.
 
 {% tabs %}
 
@@ -247,7 +247,7 @@ namespace AutoCompleteSample
 
 ## Avoid opening suggestion box
 
-The APIs are available to avoid popups. By setting the `SuggestionBoxPlacement` API to None, you can avoid opening suggestion box.
+The `SuggestionBoxPlacement` API is used to position the suggestion box in AutoComplete control. It also supports to avoid popup using None mode.
 
 {% tabs %}
 
