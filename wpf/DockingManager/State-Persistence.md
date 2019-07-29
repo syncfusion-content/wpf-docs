@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence of Syncfusion DockingManager control for WPF
+title: State Persistence | Docking Manager | Syncfusion
 description: Learn how to serialize and de-serialize the state of DockingManager child windows
 platform: wpf
 control: DockingManager
@@ -325,6 +325,8 @@ DockingManager.SetCanSerialize(solutionExplorer, false);
 {% endhighlight %}
 
 {% endtabs %}
+
+N> Restrict state persistence does not support to children that were added at run time in DockingManager when performing serialization and de-serialization using [XmlWriter](https://help.syncfusion.com/wpf/dockingmanager/state-persistence#various-formats-to-save--load-states).
 
 N> Docking State persistence will be applied to active Docking Children. So it must to load dynamically added controls into DockingManager before applying Deserialization process.
 
