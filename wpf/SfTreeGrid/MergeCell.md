@@ -39,11 +39,7 @@ void TreeGrid_QueryCoveredRange(object sender, TreeGridQueryCoveredRangeEventArg
 {% endhighlight %}
 {% endtabs %}
 
-## Merging Cells
-
-You can merge the range of cells by setting [TreeGridCoveredCellInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridCoveredCellInfo.html) (by defining Left, Right, and RowIndex) to [TreeGridQueryCoveredRangeEventArgs.Range](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridQueryCoveredRangeEventArgs.html) and handling the event.
-
-### Column wise merging cells by fixed range
+## Column wise merging cells by fixed range
 
 You can merge the columns by setting the range using the Left and Right properties of `TreeGridCoveredCellInfo`.
 
@@ -68,7 +64,7 @@ void treeGrid_QueryCoveredRange(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeG
 
 ![Merging in WPF treegrid](MergeCells_images/MergeCells_img1.png)
 
-### Merge all cells in an entire parent node
+## Merge all cells in an entire parent node
 
 You can merge the entire column parent node using `TreeGridCoveredCellInfo`.
 
@@ -175,7 +171,3 @@ class RequestTreeItemsBehavior : Behavior<SfTreeGrid>
 ![Merging in WPF treegrid](MergeCells_images/MergeCells_img2.png)
 
 Refer to [Sample](https://github.com/SyncfusionExamples/how-to-merge-cells-in-a-row-in-wpf-treegrid).
-
-### Limitation
-•	Freeze panes are not supported.
-•	Row selection is not supported.
