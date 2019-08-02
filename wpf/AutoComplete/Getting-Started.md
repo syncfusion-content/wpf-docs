@@ -36,7 +36,7 @@ Following are the step-by-step instructions to add an AutoComplete control in a 
     Creating New WPF Application
 	{:.caption}
 
-3. Go to Solution Explorer. Right-click References folder and click Add Reference. Add the Syncfusion.Tools.WPF.dll and yncfusion.Shared.WPF assembly to the project References folder.
+3. Go to Solution Explorer. Right-click References folder and click Add Reference. Add the Syncfusion.Tools.WPF.dll and Syncfusion.Shared.WPF assembly to the project References folder.
 
    ![Adding Assembly Reference](Getting-Started_images/Getting-Started_img4.png)
 
@@ -87,7 +87,7 @@ this.AutoComplete1.CustomSource = productSource;
 {%endhighlight%}
 {% endtabs %}   
    
-   ![Creating the AutoComplete Using C#](Getting-Started_images/Getting-Started_img5.png)
+   ![Creating the AutoComplete in CodeBehind](Getting-Started_images/Getting-Started_img5.png)
    
    AutoComplete Created Using C#
    {:.caption}
@@ -157,7 +157,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
 6. Drag the AutoComplete control to the Design View.
 
-   ![Drag & Drop the AutoComplete from Asset window](Getting-Started_images/Getting-Started_img12.png)
+   ![Drag and Drop the AutoComplete from Asset window](Getting-Started_images/Getting-Started_img12.png)
 
     AutoComplete Drag & Drop from Asset window
 	{:.caption}
