@@ -39,7 +39,7 @@ grid.Children.Add(updown);
 
 ### Value event
 
-The UpDown control notifies the changing value by handling [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~ValueChanged_EV.html) and [ValueChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~ValueChanging_EV.html) events. You can use the `OldValue` and `NewValue` property to get the old and new value in `Valuechanged` event. In `ValueChanging` event, you can use the `Cancel` property to avoid the changing value.
+The UpDown control notifies the changing value by handling [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~ValueChanged_EV.html) and [ValueChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~ValueChanging_EV.html) events. You can use the `OldValue` and `NewValue` property to get the old and new value in `ValueChanged` event. In `ValueChanging` event, you can use the `Cancel` property to avoid the changing value.
 
 {% tabs %}
 
@@ -194,8 +194,8 @@ You can validate the maximum and minimum value while entering the values by usin
 
 updown.MaxValidation = MaxValidation.OnKeyPress;
 updown.MinValidation = MinValidation.OnKeyPress;
-up.MinValueOnExceedMinDigit = true;
-up.MaxValueOnExceedMaxDigit = true;
+updown.MinValueOnExceedMinDigit = true;
+updown.MaxValueOnExceedMaxDigit = true;
 
 {% endhighlight %}
 
