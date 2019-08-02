@@ -145,24 +145,25 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 	{:.caption}
 
 3. Add the following References with the sample project.
+    
+   * Syncfusion.Tools.WPF.dll 
+   * Syncfusion.Shared.WPF.dll
 
-4. Syncfusion.Tools.WPF.dll and Syncfusion.Shared.WPF.dll
-
-5. On the Window menu, select Assets. This opens the Assets Library dialog box. In the Search box, type AutoComplete. This displays the search results as shown below-.
+4. On the Window menu, select Assets. This opens the Assets Library dialog box. In the Search box, type AutoComplete. This displays the search results as shown below-.
 
    ![Displaying the AutoComplete in Assets window](Getting-Started_images/Getting-Started_img11.png)
   
     AutoComplete Displayed in Assets window
 	{:.caption}
 
-6. Drag the AutoComplete control to the Design View.
+5. Drag the AutoComplete control to the Design View.
 
    ![Drag and Drop the AutoComplete from Asset window](Getting-Started_images/Getting-Started_img12.png)
 
     AutoComplete Drag & Drop from Asset window
 	{:.caption}
 
-7. You can now customize the properties of the AutoComplete in the Properties Window.
+6. You can now customize the properties of the AutoComplete in the Properties Window.
 
    ![Customize the properties of AutoCompelete in Property Window](Getting-Started_images/Getting-Started_img13.png)
 
