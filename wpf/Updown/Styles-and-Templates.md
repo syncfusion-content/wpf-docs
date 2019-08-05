@@ -15,7 +15,7 @@ The appearance of the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Sha
 
 ## Positive value
 
-The background and forecolor for the positive value can be customized using the `Background` and `Foreground` properties of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control.
+The background and foreground for the positive value can be customized using the `Background` and `Foreground` properties of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control.
 
 {% tabs %}
 
