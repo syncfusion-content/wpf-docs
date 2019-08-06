@@ -1,4 +1,4 @@
-0---
+---
 layout: post
 title: Dealing with Syncfusion Ribbon control
 description: This topic deal with RibbonState and ContextTabGroup
@@ -41,7 +41,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endtabs %}
 
-![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img1.jpeg)
+![RibbonStates](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img1.jpeg)
 
 **Hide** - RibbonTab content gets hidden in this state
 
@@ -71,7 +71,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endtabs %}
 
-![](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img2.jpeg)
+![RibbonStates](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img2.jpeg)
 
 
 **Adorner** – In this state, RibbonTab content adorned above the window content
