@@ -1,4 +1,4 @@
----
+0---
 layout: post
 title: Dealing with Syncfusion Ribbon control
 description: This topic deal with RibbonState and ContextTabGroup
@@ -156,7 +156,7 @@ _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner
 
 {% endtabs %}
 
-# Grouping RibbonTabs using ContextTabGroups
+## Grouping RibbonTabs using ContextTabGroups
 
 ContextualTabGroups are used to group the RibbonTabs for easy Navigation. This ContextTabGroups appear when a user enable their context. 
 
@@ -180,7 +180,7 @@ This ContextTabGroup can also be kept hidden and shown while required cases like
 
 {% endtabs %}
 
-![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img1.jpeg)
+![ContextTabGroup](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img1.jpeg)
 
 
 ## Multiple ContextTabs
@@ -206,7 +206,7 @@ To differentiate one ContextTabGroup with one another, change its `BackColor` pr
 
 {% endtabs %}
 
-![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img2.jpeg)
+![Multiple ContextTabs](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img2.jpeg)
 
 
 ## ContextTabGroup heading
@@ -228,7 +228,7 @@ The `Label` property of the ContextTabGroup is used to define the Heading for th
  
 {% endtabs %}
 
-![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img3.jpeg)
+![ContextTabGroup heading](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img3.jpeg)
 
 
 
@@ -277,12 +277,12 @@ End Sub
  
 {% endtabs %}
 
-![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img4.jpeg)
+![Changing the visibility at run time](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img4.jpeg)
 
 
 After the Button is clicked, the ContextTabGroup visibility changes as follows
 
-![](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img5.jpeg)
+![Changing the visibility at run time](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img5.jpeg)
 
 
 ## Creating ContextTabGroup in MVVM
@@ -721,7 +721,7 @@ End Class
 
 {% endtabs %}
 
-3. Now bind the properties in View model in XAML.
+3. Now bind the properties of View model in XAML.
 
 {% tabs %}
 
