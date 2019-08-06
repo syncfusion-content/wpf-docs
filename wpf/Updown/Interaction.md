@@ -15,7 +15,7 @@ The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion
 
 The `UpDown` control provides keyboard and mouse support to increment or decrement the value in the text box. The keyboard and mouse provide the following supports:
 
-* Mouse wheel - It helps to increase or decrease the current value of the text box by the value indicated in the [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property.
+* Mouse wheel - It helps to increase or decrease the current value of the text box by scrolling over UpDown control.
 
 * Up Arrow key - It helps to increase the present value in the text box by the value indicated in the [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property.
 
@@ -23,7 +23,7 @@ The `UpDown` control provides keyboard and mouse support to increment or decreme
 
 ## IsScrollingOnCircle
 
-The [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property allows the mouse to scroll up and down. This property also allows the mouse to restrict the value that changes by setting its values to `False`. By default, its value is `True`.
+The [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property allows change the value based on click and drag the control in upward or downward direction. 
 
 {% tabs %}
 
