@@ -13,7 +13,7 @@ The Number formatting controls how a number is displayed in the [UpDown](https:/
 
 ## Decimal digit
 
-The [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NumberDecimalDigits.html) property is used to raise the amount of zeros after the decimal point in the UpDown control.
+The [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NumberDecimalDigits.html) property is used to specify the number of digits to be displayed after the decimal point in the UpDown control.
 
 {% tabs %}
 
