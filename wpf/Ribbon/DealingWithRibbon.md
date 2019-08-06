@@ -102,7 +102,7 @@ Ribbon can be changed into three different states such as `Normal`, `Hide` and `
 
 {% endtabs %}
 
-![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML7d9bdf5.PNG](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img3.jpeg)
+![Ribbon Adorner state](ThreetypesofRibbonState_images/ThreetypesofRibbonState_img3.jpeg)
 
 ## How to change the RibbonState in run time
 
