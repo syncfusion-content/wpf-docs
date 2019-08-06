@@ -91,7 +91,7 @@ updown.ZeroColor = Brushes.DarkViolet;
 
 ## Focused value
 
-The background, forground and border color of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html)  control, when it is in focus can be customized using the following properties.
+The background, foreground and border color of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html)  control, when it is in focus can be customized using the following properties.
 
 * FocusedBackground
 * FocusedBorderBrush
