@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview
 
-The [Updown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control displays numeric values. The value can be select by on scrolling the values and by using the Increment and Decrement buttons of the UpDown control. It allows to define maximum and minimum values to which the user can increment/decrement the input’s value. Also can specify the change that will be applied to the value upon each increase/decrease.
+The [Updown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control displays numeric values. The value can be edited by scrolling the values and by using the Increment and Decrement buttons of the UpDown control. It allows to define maximum and minimum values to which the user can increment/decrement the input’s value. Also can specify the interval, that will be applied to the value upon each increase/decrease.
 
 ![Overview of UpDown control](Overview_images/overview.png)
 
@@ -21,7 +21,7 @@ The [Updown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion
 
 **Null value** - Provides option to set the null value.
 
-**Formatting** - Provides option to change the value by up and down and also edit the text part.
+**Editing** - Provides option to change the value by up and down and also edit the text part.
 
 **Culture** - Provides different culture support based on NumberDecimalSeparator in UpDown.
 
