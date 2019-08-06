@@ -13,7 +13,7 @@ The value for `UpDown` can be specified using the Value property.
 
 ## Value
 
-You can get the current value or change the it using  [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. A value can be set for the UpDown control as shown in the following code example.
+You can get the current value or change it using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. A value can be set for the UpDown control as shown in the following code example.
 
 {% tabs %}
 
