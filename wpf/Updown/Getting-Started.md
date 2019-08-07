@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with UpDown | WPF | Syncfusion
+title: Getting Started with UpDown control | WPF | Syncfusion
 description: This section describes about how to add WPF UpDown control in WPF application.
 platform: wpf
 control: UpDown
@@ -121,7 +121,7 @@ updown.Value = 10;
 
 ## Step Value
 
-The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be incremented or decremented in the UpDown control, when the spin or repeat buttons are clicked.
+The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be incremented or decremented in the WPF UpDown control, when the spin or repeat buttons are clicked.
 
 {% tabs %}
 
@@ -144,7 +144,8 @@ updown.Step = 5;
 
 ## Number formatting
 
-The number formatting of UpDown control can be customized by setting [UpDown.NumberFormatInfo]() property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits.
+The number formatting of WPF UpDown control can be customized by setting [UpDown.NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NumberFormatInfo.html) property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits. The [GroupSeperatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~GroupSeperatorEnabled.html) property must be enabled to see the group separator between values.
+
 {% tabs %}
 
 {% highlight XAML %}
@@ -185,7 +186,7 @@ updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
 ![Applied the number format to value of WPF UpDown](GettingStarted-images/wpf-updown-decimal.png)
 
-For more number formatting in [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control, you can use the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) and `NumberDecimalSeparator` property.
+For more number formatting in WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control, you can use the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) property.
 
 {% tabs %}
 

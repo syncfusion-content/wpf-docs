@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restriction | UpDown | WPF | Syncfusion
-description: This section describes about how to set the Value and restrict the maximum and minimum value for UpDown
+title: Restriction for UpDown control | WPF | Syncfusion
+description: This section describes about how to set the Value and restrict the maximum and minimum value for WPF UpDown
 platform: wpf
 control: UpDown
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Restriction
 
-The value for `UpDown` can be specified using the Value property. 
+This section explains about how to set the value and restrict the minimum and maximum value in WPF UpDown control.
 
 ## Value
 
-You can get the current value or change it using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. A value can be set for the UpDown control as shown in the following code example.
+You can get the current value or change it using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property of WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control.
 
 {% tabs %}
 
@@ -35,11 +35,11 @@ grid.Children.Add(updown);
 
 {% endtabs %}
 
-![Applied the value in WPF UpDown](Restriction_images/Updown_value.png)
+![Applied the value in WPF UpDown](Restriction_images/wpf-updown-value.png)
 
 ### Value event
 
-The UpDown control notifies the value changes through [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~ValueChanged_EV.html) and [ValueChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~ValueChanging_EV.html) events. You can use the `OldValue` and `NewValue` property to get the old and new value in `ValueChanged` event. In `ValueChanging` event, you can use the `Cancel` property in event argument to avoid the changes.
+The WPF UpDown control notifies the value changes through [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~ValueChanged_EV.html) and [ValueChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~ValueChanging_EV.html) events. You can use the `OldValue` and `NewValue` property to get the old and new value in `ValueChanged` event. In `ValueChanging` event, you can use the `Cancel` property in event argument to avoid the changes.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ updown.ValueChanging += Up_ValueChanging;
 
 private void Up_ValueChanging(object sender, ValueChangingEventArgs e)
 {
-    // To cancel the change
+    // To cancel the changing value
     e.Cancel = true;            
 }
 
@@ -67,7 +67,7 @@ private void Up_ValueChanged(DependencyObject d, DependencyPropertyChangedEventA
 
 ## Null value
 
-The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control accepts null value.
+The WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control accepts null value.
 
 {% tabs %}
 
@@ -85,9 +85,9 @@ updown.Value = null;
 
 {% endtabs %}
 
-![Shows before set the null value in WPF UpDown](Restriction_images/Updown_beforenull.png)
+![Before set the null value in WPF UpDown](Restriction_images/wpf-updown-beforenull.png)
 
-When value is set to null, `UpDown` control will show zero value by default. You can change this to display some other numerical value using 
+When value is set to null, the WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control will show zero value by default. You can change this to display some other numerical value using 
 [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~UseNullOption.html) property must be enabled to see the `NullValue` specified.
 
 
@@ -109,7 +109,7 @@ updown.NullValue = 2;
 
 {% endtabs %}
 
-![Show the null value in WPF UpDown](Restriction_images/Updown_nullvalue.png)
+![Set the null value in WPF UpDown](Restriction_images/wpf-updown-nullvalue.png)
 
 ## Watermark
 
@@ -132,7 +132,7 @@ updown.NullValueText = "Enter a value";
 
 {% endtabs %}
 
-![Show the null value text in WPF UpDown](Restriction_images/Updown_nullvaluetext.png)
+![Applied null value text in WPF UpDown](Restriction_images/wpf-updown-nullvaluetext.png)
 
 
 N> The `UseNullOption` property must be enabled if you want to see the `NullValue` or `NullValueText` in UpDown command. If both `NullValue` and `NullValueText` is specified, you will see only `NullValue` but not `NullValueText`.
@@ -140,7 +140,7 @@ N> The `UseNullOption` property must be enabled if you want to see the `NullValu
 
 ## Minimum and Maximum value
 
-The Value of `UpDown` control can be restricted within maximum and minimum limit. The spin button helps to increase or decrease the value by using mouse interaction. Once the increase or decrease value reached the predefined maximized or minimized value, the value does not change.
+The Value of WPF `UpDown` control can be restricted within maximum and minimum limit. The spin button helps to increase or decrease the value by using mouse interaction. Once the increase or decrease value reached the predefined maximized or minimized value, the value does not change.
 
 Another way,
 
@@ -167,16 +167,16 @@ updown.MinValue = 0;
 
 {% endtabs %}
 
-![Show the minimum and maximum value in WPF UpDown](Restriction_images/Updown_min_and_max.png)
+![Show the minimum and maximum value in WPF UpDown](Restriction_images/wpf-updown-min_and_max.png)
 
 
 ### Minimum and Minimum validation
 
 You can choose when to validate the maximum and minimum limit, while changing the values by using [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MaxValidation.html) and [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MinValidation.html) property.
 
-* **OnKeyPress** - On setting the [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MaxValidation.html) or [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MinValidation.html) to OnKeyPress, then the value in the UpDown control is validated soon after a key is pressed. So, it is not possible to provide any invalid input at all.
+* **OnKeyPress** - On setting the [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MaxValidation.html) or [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MinValidation.html) to OnKeyPress, then the value in the WPF UpDown control is validated soon after a key is pressed. So, it is not possible to provide any invalid input at all.
 
-* **OnLostFocus** - On setting the [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MaxValidation.html) or [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MinValidation.html) to OnLostFocus, then the value in the UpDown control is validated when the UpDown control loses focus. That is, `UpDown` will accept any value, validation will be happen only after control loose its keyboard focus. After validation, when the value of the UpDown control is greater than the MaxValue or lesser than the MinValue, the value will be changed automatically is set to MaxValue or MinValue respectively.
+* **OnLostFocus** - On setting the [MaxValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MaxValidation.html) or [MinValidation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~MinValidation.html) to OnLostFocus, then the value in the UpDown control is validated when the UpDown control loses focus. That is, WPF `UpDown` will accept any value, validation will be happen only after control loose its keyboard focus. After validation, when the value of the UpDown control is greater than the MaxValue or lesser than the MinValue, the value will be changed automatically is set to MaxValue or MinValue respectively.
 
 * **MaxValueOnExceedMaxDigit** - When you give input greater than specified maximum limit, `MaxValueOnExceedMaxDigit` property will decide either it should retain the old value or reset to maximum limit that is specified. For example, if `MaxValue` is set to 100 and you are trying to input 200. Value will changed to 100 when `MaxValueOnExceedMaxDigit` is enabled. When `MaxValueOnExceedMaxDigit` is false, 20 will be retained and last entered 0 will be ignored.
 
@@ -204,7 +204,7 @@ updown.MaxValueOnExceedMaxDigit = true;
 
 ## AllowEdit
 
-The [AllowEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AllowEdit.html) property is used to restrict the editing in `UpDown` control by setting it's value to `False`. The default value is `True`.
+The [AllowEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AllowEdit.html) property is used to restrict the editing in WPF `UpDown` control by setting it's value to `False`. The default value is `True`.
 
 {% tabs %}
 
@@ -224,7 +224,7 @@ updown.AllowEdit = false;
 
 ## Range Adorner
 
-The UpDown control will indicate value like a progress bar, based on minimum and maximum value specified. You can see the color applied based on the range values by allowing the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property and the color of the range can be specified using  [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
+The WPF UpDown control will indicate value like a progress bar, based on minimum and maximum value specified. You can see the color applied based on the range values by allowing the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property and the color of the range can be specified using  [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
 
 {% tabs %}
 
