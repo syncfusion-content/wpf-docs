@@ -117,7 +117,7 @@ updown.Value = 10;
 
 {% endtabs %}
 
-![Assign the value to WPF UpDown control](GettingStarted-images/wpf-updown-value.png)
+![Assign the value to WPF UpDown](GettingStarted-images/wpf-updown-value.png)
 
 ## Step Value
 
@@ -127,19 +127,20 @@ The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.W
 
 {% highlight XAML %}
 
-<syncfusion:UpDown Name="_upDown" Height="25" Step="5"  Width="90" />
+<syncfusion:UpDown Name="_upDown" Height="25" Value="10" Step="5"  Width="90" />
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+updown.Value = 10;
 updown.Step = 5;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Set the step value of WPF UpDown](GettingStarted-images/stepvalue.png)
+![Set the step value to WPF UpDown](GettingStarted-images/wpf-updown-stepvalue.gif)
 
 ## Number formatting
 
@@ -183,7 +184,7 @@ updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
 {% endtabs %}
 
-![Set the decimal value to WPF UpDown](GettingStarted-images/wpf-updown-decimal.png)
+![Applied the number format to value of WPF UpDown](GettingStarted-images/wpf-updown-decimal.png)
 
 For more number formatting in [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control, you can use the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) and `NumberDecimalSeparator` property.
 
@@ -207,4 +208,4 @@ updown.Culture = cultureInfo;
 
 The `Latin` culture uses "," as a decimal separator.
 
-![Applied latin culture in WPF UpDown control](GettingStarted-images/wpf-updown-culture.png)
+![Applied latin culture into WPF UpDown](GettingStarted-images/wpf-updown-culture.png)
