@@ -144,8 +144,7 @@ updown.Step = 5;
 
 ## Number formatting
 
-The Number formatting controls how a number is displayed in the WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control by specifying the culture-specific group separator, decimal separator, and the number of decimal digits to be used. It can also format the value of the WPF `UpDown` control by using the [NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NumberFormatInfo.html) property.
-
+The number formatting of UpDown control can be customized by setting [UpDown.NumberFormatInfo]() property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits.
 {% tabs %}
 
 {% highlight XAML %}
