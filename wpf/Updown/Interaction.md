@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interaction in WPF UpDown control | WPF | Syncfusion
-description: This section explains about keyboard and mouse interaction with WPF UpDown control
+title: Interaction with WPF UpDown control | WPF | Syncfusion
+description: This section explains about keyboard and mouse interact with WPF UpDown control
 platform: wpf
 control: UpDown
 documentation: ug
@@ -9,21 +9,15 @@ documentation: ug
 
 # Interaction
 
-The WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) controls allow you to change the value by keyboard or mouse interaction, and it also allows you to define increment or decrement when changing the value by MouseWheel or by clicking up and down buttons.
+This section explains about how to change the value by using mouse and keyboard in WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control.
 
 ## Keyboard and Mouse support
 
-The WPF `UpDown` control provides keyboard and mouse support to increment or decrement the value in the text box. The keyboard and mouse provide the following supports:
+The WPF `UpDown` control provides to change the value by keyboard or mouse interaction, and it also allows you to define increment or decrement when changing the value by MouseWheel or by clicking up and down buttons.
 
-* Mouse wheel - It helps to increase or decrease the current value of the text box by scrolling over WPF UpDown control.
+## Mouse scrolling
 
-* Up Arrow key - It helps to increase the present value in the text box by the value indicated in the [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property.
-
-* Down Arrow key - It helps to decrease the present value in the text box by the value indicated in the [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property.
-
-## IsScrollingOnCircle
-
-The [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property allows change the value based on click and drag the control in upward or downward direction. 
+When the `IsScrollingOnCircle` property is enabled, the user can increase or decrease the current value of the text box by scrolling over UpDown control.
 
 {% tabs %}
 
@@ -48,7 +42,11 @@ grid.Children.Add(updown);
 
 ## Step
 
-The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be increased or decreased when clicking the spin buttons in the WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. For example, the `Step` value is set to 5 so that the WPF `UpDown` control value increases or decreases by 5 when clicking the spin buttons.
+The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be increased or decreased when clicking the spin buttons in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. For example, the `Step` value is set to 5 so that the WPF `UpDown` control value increases or decreases by 5 when clicking the spin buttons.
+
+Another way,
+
+You can also increase or decrease the present value in the text box by using up or down arrow key in keyboard.
 
 {% tabs %}
 
@@ -98,3 +96,23 @@ updown.AnimationSpeed = 0.5;
 
 ![Animation speed of WPF UpDown](Interaction_images/wpf-updown-speed1.gif)
 
+## Range Adorner
+
+The WPF UpDown control will indicate value like a progress bar, based on minimum and maximum value specified. You can see the color applied based on the range values by allowing the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property and the color of the range can be specified using  [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:UpDown Name="upDown" Height="25" Width="90" Value="40" RangeAdornerBackground="Red" EnableRangeAdorner="True" MinValue="0" MaxValue="100" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+updown.RangeAdornerBackground = Brushes.Blue;
+updown.EnableRangeAdorner = true;
+
+{% endhighlight %}
+
+{% endtabs %}

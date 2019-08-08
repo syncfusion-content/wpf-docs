@@ -67,27 +67,7 @@ private void Up_ValueChanged(DependencyObject d, DependencyPropertyChangedEventA
 
 ## Null value
 
-The WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control accepts null value.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:UpDown Name="upDown" Height="25" Width="90" Value="{x:Null}" />
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-updown.Value = null;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Before set the null value in WPF UpDown](Restriction_images/wpf-updown-beforenull.png)
-
-When value is set to null, the WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control will show zero value by default. You can change this to display some other numerical value using 
+The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control accepts null values. When the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) is set to null, the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control will show zero value by default. You can change this to display some other numerical value using 
 [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~UseNullOption.html) property must be enabled to see the `NullValue` specified.
 
 
@@ -113,7 +93,7 @@ updown.NullValue = 2;
 
 ## Watermark
 
-The [NullValueText](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NullValueText.html) property enables the `UpDown` control to show watermark text instead of numeric value when  [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) is null. The [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~UseNullOption.html) property must be enabled to see the `NullValue` specified.
+The [NullValueText](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NullValueText.html) property enables the `UpDown` control to show watermark text instead of numeric value when  [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) is null. The [UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~UseNullOption.html) property must be enabled to see the `NullValueText` specified.
 
 {% tabs %}
 
@@ -135,12 +115,12 @@ updown.NullValueText = "Enter a value";
 ![Applied null value text in WPF UpDown](Restriction_images/wpf-updown-nullvaluetext.png)
 
 
-N> The `UseNullOption` property must be enabled if you want to see the `NullValue` or `NullValueText` in UpDown command. If both `NullValue` and `NullValueText` is specified, you will see only `NullValue` but not `NullValueText`.
+N> The `UseNullOption` property must be enabled if you want to see the `NullValue` or `NullValueText` in UpDown control. If both `NullValue` and `NullValueText` is specified, you will see only `NullValue` but not `NullValueText`.
 
 
 ## Minimum and Maximum value
 
-The Value of WPF `UpDown` control can be restricted within maximum and minimum limit. The spin button helps to increase or decrease the value by using mouse interaction. Once the increase or decrease value reached the predefined maximized or minimized value, the value does not change.
+The Value of `UpDown` control can be restricted within maximum and minimum limit. The spin button helps to increase or decrease the value by using mouse interaction. Once the increase or decrease value reached the predefined maximized or minimized value, the value does not change.
 
 Another way,
 
@@ -219,27 +199,6 @@ The [AllowEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfus
 updown.AllowEdit = false;
 
 {% endhighligt %}
-
-{% endtabs %}
-
-## Range Adorner
-
-The WPF UpDown control will indicate value like a progress bar, based on minimum and maximum value specified. You can see the color applied based on the range values by allowing the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property and the color of the range can be specified using  [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:UpDown Name="upDown" Height="25" Width="90" Value="40" RangeAdornerBackground="Red" EnableRangeAdorner="True" MinValue="0" MaxValue="100" />
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-updown.RangeAdornerBackground = Brushes.Blue;
-updown.EnableRangeAdorner = true;
-
-{% endhighlight %}
 
 {% endtabs %}
 
