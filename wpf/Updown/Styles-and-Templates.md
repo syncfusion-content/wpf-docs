@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles and Templates of UpDown control | WPF | Syncfusion
+title: Styles and Templates of WPF UpDown control | Syncfusion
 description: This section describes about how to change the background and foreground color in WPF UpDown control
 platform: wpf
 control: UpDown
