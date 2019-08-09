@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction with WPF UpDown control | WPF | Syncfusion
+title: Interaction with WPF UpDown control | Syncfusion
 description: This section explains about keyboard and mouse interact with WPF UpDown control
 platform: wpf
 control: UpDown
@@ -13,7 +13,7 @@ This section explains about how to change the value by using mouse and keyboard 
 
 ## Keyboard and Mouse support
 
-The WPF `UpDown` control provides to change the value by keyboard or mouse interaction, and it also allows you to define increment or decrement when changing the value by MouseWheel or by clicking up and down buttons.
+The `UpDown` control provides to change the value by keyboard or mouse interaction, and it also allows you to define increment or decrement when changing the value by MouseWheel or by clicking up and down buttons.
 
 ## Mouse scrolling
 
@@ -42,7 +42,7 @@ grid.Children.Add(updown);
 
 ## Step
 
-The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be increased or decreased when clicking the spin buttons in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. For example, the `Step` value is set to 5 so that the WPF `UpDown` control value increases or decreases by 5 when clicking the spin buttons.
+The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be increase or decrease the value when clicking the spin buttons in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. For example, the `Step` value is set to 5 so that the `UpDown` control value increases or decreases by 5 when clicking the spin buttons.
 
 Another way,
 
@@ -71,9 +71,9 @@ updown.Step = 5;
 
 ## Animation speed
 
-When the WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) value changes by using the up and down buttons, the textbox animates the transition from the current value to the new value. 
+When the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) value changes by using the up and down buttons, the textbox animates the transition from the current value to the new value. 
 
-The animation speed value changed in the text portion by up and down buttons of WPF `UpDown` can be controlled by [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AnimationSpeed.html) property. 
+The animation speed value changed in the text portion by up and down buttons of `UpDown` can be controlled by [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AnimationSpeed.html) property. 
 
 {% tabs %}
 
@@ -98,7 +98,7 @@ updown.AnimationSpeed = 0.5;
 
 ## Range Adorner
 
-The WPF UpDown control will indicate value like a progress bar, based on minimum and maximum value specified. You can see the color applied based on the range values by allowing the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property and the color of the range can be specified using  [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
+The UpDown control will indicate value like a progress bar, based on minimum and maximum value specified. You can see the color applied based on the range values by allowing the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property and the color of the range can be specified using  [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
 
 {% tabs %}
 
