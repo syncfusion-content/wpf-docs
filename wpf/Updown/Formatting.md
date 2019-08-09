@@ -39,7 +39,7 @@ grid.Children.Add(updown);
 
 ## Group separator
 
-The group separator is the the character used to group the values. You can show the group separator in UpDown control by enable [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~GroupSeperatorEnabled.html) property. The default value is `False`.
+The group separator is the character used to group the values. You can show the group separator in UpDown control by enable [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~GroupSeperatorEnabled.html) property. The default value is `False`.
 
 {% tabs %}
 
