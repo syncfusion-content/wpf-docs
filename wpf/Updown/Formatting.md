@@ -39,7 +39,7 @@ grid.Children.Add(updown);
 
 ## Group separator
 
-The group separator is the the character used to group text by thousands in the source text. You can see the group separator in UpDown control by enable [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~GroupSeperatorEnabled.html) property. The default value is `False`.
+The group separator is the the character used to group the values. You can show the group separator in UpDown control by enable [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~GroupSeperatorEnabled.html) property. The default value is `False`.
 
 {% tabs %}
 
@@ -62,7 +62,7 @@ updown.GroupSeperatorEnabled = true;
 
 ## NumberFormatInfo
 
-The number formatting of UpDown control can be customized by setting [UpDown.NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NumberFormatInfo.html) property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits. you can see the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~GroupSeperatorEnabled.html) property.
+The number formatting of UpDown control can be customized by setting [UpDown.NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NumberFormatInfo.html) property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits. You can show the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~GroupSeperatorEnabled.html) property.
 
 {% tabs %}
 
@@ -99,30 +99,7 @@ updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
 The UpDown control provides globalization support to change the culture of the control by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) property. The culture is used to format the decimal separator and group separator based on the respective culture.
 
-For example, The [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) property can be set to `en-US` for UpDown control.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:UpDown Name="upDown" Culture="en-US" Value="5555555" Width="100" Height="23" GroupSeperatorEnabled="True" />
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-System.Globalization.CultureInfo cultureInfo = new System.Globalization.CultureInfo("en-US");
-updown.Culture = cultureInfo;
-updown.Value = 5555555;
-updown.GroupSeperatorEnabled = true;
-
-{% endhighlight %}
-
-{% endtabs %} 
-
-![Applied US culture into WPF UpDown](CultureandNumberFormatting-images/wpf-updown-us_culture.png)
-
-The [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) property can also be set to `bs-Latn` for the UpDown control.
+For example, the latin culture is used into the UpDown control.
 
 {% tabs %}
 
@@ -146,7 +123,7 @@ updown.Value = 5555555;
  
 ## Text alignment
 
-You can align the text by using the [TextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~TextAlignment.html) property of UpDown control. You can align the text with the following options. The options are Left, Right, Center and Justify.
+You can align the text by using the [TextAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~TextAlignment.html) property.
 
 {% tabs %}
 

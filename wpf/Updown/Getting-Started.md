@@ -99,7 +99,7 @@ grid.Children.Add(updown);
 
 ## Value
 
-The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property is used to set the value for the UpDown control.
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property is used for set the value to UpDown control.
 
 {% tabs %}
 
@@ -205,7 +205,5 @@ updown.Culture = cultureInfo;
 {% endhighlight %}
 
 {% endtabs %}
-
-The `Latin` culture uses "," as a decimal separator.
 
 ![Applied latin culture into WPF UpDown](GettingStarted-images/wpf-updown-culture.png)

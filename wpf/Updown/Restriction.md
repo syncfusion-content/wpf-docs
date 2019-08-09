@@ -13,7 +13,7 @@ This section explains about how to set the value and restrict the minimum and ma
 
 ## Value
 
-You can get the current value or change it using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control.
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property is used for set the value to UpDown control.
 
 {% tabs %}
 
