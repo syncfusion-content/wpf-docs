@@ -45,7 +45,7 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Share
 
 * Syncfusion.Shared.WPF
 
-3) Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf and declare the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control in XAML page.
+3) Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf and declare the UpDown control in XAML page.
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Share
 
 ## Adding WPF UpDown control via C#
 
-In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control manually in C#, do the below steps,
+In order to add the UpDown control manually in C#, do the below steps,
 
 1) Create a new WPF application via Visual Studio.
 
@@ -80,7 +80,7 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Share
 
 3) Import UpDown namespace **Syncfusion.Windows.Shared**.
 
-3) Create an instance of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control and add it to the main window.
+3) Create an instance of UpDown control and add it to the main window.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ updown.Value = 10;
 
 ## Step Value
 
-The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to be increase or decrease the value when clicking the spin or repeat buttons in the UpDown control.
+The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to increase or decrease the value while pressing the spin or repeat buttons in the UpDown control.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
 ![Applied the number format to value of WPF UpDown](GettingStarted-images/wpf-updown-decimal.png)
 
-For more number formatting in [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control, you can use the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) property. The `Culture` property is used to format the values based on the respective culture.
+For more number formatting in UpDown control, you can use the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) property. The `Culture` property is used to format the values based on the respective culture.
 
 {% tabs %}
 
