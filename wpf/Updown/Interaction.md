@@ -98,7 +98,7 @@ updown.AnimationSpeed = 0.5;
 
 ## Range Adorner
 
-The UpDown control will indicate value like a progress bar, based on minimum and maximum value specified. You can see the color applied based on the range values by allowing the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property and the color of the range can be specified using  [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
+The UpDown control will indicate value like a progress bar, based on minimum and maximum value specified. You can show the color applied based on the range values by allowing the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property and the color of the range can be specified using  [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
 
 {% tabs %}
 
