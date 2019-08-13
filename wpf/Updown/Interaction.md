@@ -13,7 +13,7 @@ This section explains about how to change the value by using mouse and keyboard 
 
 ## Keyboard and Mouse support
 
-The `UpDown` control provides to change the value by keyboard or mouse interaction, and increase or decrease the value through keyboard down and up operation. It also allows to change the value through mousewheel operations.
+The `UpDown` control provides to change the value by keyboard or mouse interaction, and increase or decrease the value through keyboard down and up operation. It also allows to change the value through mouse wheel operations.
 
 ## Mouse scrolling
 
