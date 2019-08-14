@@ -57,7 +57,7 @@ In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Share
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    
         Title="MainWindow" Height="350" Width="525">
     <Grid Name="grid">
-        <syncfusion:UpDown Name="_upDown" Width="100" Height="23"/>
+        <syncfusion:UpDown Name="upDown" Width="100" Height="23"/>
     </Grid>
 </Window>
 
@@ -105,7 +105,7 @@ The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.
 
 {% highlight XAML %}
 
-<syncfusion:UpDown Name="_upDown" Height="23" Value="10" Width="85"/>
+<syncfusion:UpDown Name="upDown" Height="23" Value="10" Width="85"/>
 
 {% endhighlight %}
 
@@ -127,7 +127,7 @@ The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.W
 
 {% highlight XAML %}
 
-<syncfusion:UpDown Name="_upDown" Height="25" Value="10" Step="5"  Width="90" />
+<syncfusion:UpDown Name="upDown" Height="25" Value="10" Step="5"  Width="90" />
 
 {% endhighlight %}
 

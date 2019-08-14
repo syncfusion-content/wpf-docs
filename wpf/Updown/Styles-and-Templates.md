@@ -120,11 +120,12 @@ updown.FocusedBorderBrush = Brushes.Green;
 
 The appearance of UpDown control can be customized by visual style of the [SkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinManager.html).
 
-Below example explains how to apply `Blend` theme or style for `UpDown` control.
+Below example explains how to apply the `Blend` theme or style to `UpDown` control.
 
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="Application_New.MainWindow"
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -132,9 +133,11 @@ xmlns:shared="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusio
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 syncfusion:SkinStorage.VisualStyle="Blend"
 Title="MainWindow" Height="350" Width="525">
+
 <Grid x:Name="grid">
-<syncfusion:UpDown x:Name="UpDown" Width="100" Height="23"/>
+    <syncfusion:UpDown x:Name="upDown" Width="100" Height="23"/>
 </Grid>
+
 </Window>
 
 {% endhighlight %}

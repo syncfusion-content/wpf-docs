@@ -13,11 +13,11 @@ This section explains about how to change the value by using mouse and keyboard 
 
 ## Keyboard and Mouse support
 
-The `UpDown` control provides to change the value by keyboard or mouse interaction, and increase or decrease the value through keyboard down and up operation. It also allows to change the value through mouse wheel operations.
+The `UpDown` control provides to change the value by keyboard or mouse interaction, and increase or decrease the value of UpDown control while pressing the <kbd>up-arrow</kbd> and <kbd>down-arrow</kbd> keys in keyboard. It also allows to change the value through mouse wheel operations.
 
 ## Mouse scrolling
 
-When the `IsScrollingOnCircle` property is enabled, the user can increase or decrease the current value of the text box by scrolling over UpDown control.
+When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property is enabled, the user can increase or decrease the current value by scrolling over UpDown control.
 
 {% tabs %}
 
@@ -42,11 +42,11 @@ grid.Children.Add(updown);
 
 ## Step
 
-The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to increase or decrease the value while pressing the spin buttons in the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. For example, the `Step` value is set to 5 so that the `UpDown` control value increases or decreases by 5 while pressing the spin buttons.
+The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to increase or decrease the value while pressing the spin buttons in the UpDown control. For example, the `Step` value is set to 5 so that the `UpDown` control value increases or decreases by 5 while pressing the spin buttons.
 
 Another way,
 
-You can also increase or decrease the present value in the text box by using up or down arrow key in keyboard.
+You can also increase or decrease the present value of UpDown control by using <kbd>up-arrow</kbd> and <kbd>down-arrow</kbd> keys in keyboard.
 
 {% tabs %}
 
@@ -71,9 +71,9 @@ updown.Step = 5;
 
 ## Animation speed
 
-When the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) value changes by using the up and down buttons, the textbox animates the transition from the current value to the new value. 
+When a value change in the UpDown control by using the repeated buttons, the transition from the current value to the new value is animated in UpDown control.
 
-You can show the animation when the value is increase or decrease in UpDown control using [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AnimationSpeed.html) property. 
+The changing value in updown control can be controlled by using [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AnimationSpeed.html) property. 
 
 {% tabs %}
 
@@ -98,7 +98,7 @@ updown.AnimationSpeed = 0.5;
 
 ## Range Adorner
 
-You can show the adorner range based on the minimum and maximum values, the [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property need to set to `True`. The default value is false. You can also change the background color of range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
+You can show the adorner over updown control based on the minimum and maximum values by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableRangeAdorner.html) property to `true`. The default value is `false`. You can also change the background color of the range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~RangeAdornerBackground.html) property.
 
 {% tabs %}
 
