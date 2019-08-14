@@ -43,7 +43,7 @@ grid.Children.Add(updown);
 
 ## Negative color
 
-The background and foreground for the negative value can be customized using the [NegativeBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NegativeBackground.html) and [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NegativeForeground.html) properties of [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control. The `NegativeBackground` and `NegativeForeground` properties are enabled by setting the [EnableNegativeColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableNegativeColors.html) property is set to `True`.
+The background and foreground for the negative value can be customized using the [NegativeBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NegativeBackground.html) and [NegativeForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NegativeForeground.html) properties of UpDown control. The `NegativeBackground` and `NegativeForeground` properties are enabled by setting the [EnableNegativeColors](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~EnableNegativeColors.html) property is set to `True`.
 
 {% tabs %}
 
