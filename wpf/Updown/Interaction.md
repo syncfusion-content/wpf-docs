@@ -73,7 +73,7 @@ updown.Step = 5;
 
 When a value change in the UpDown control by using the repeated buttons, the transition from the current value to the new value is animated in UpDown control. The animation speed can be controlled by using [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AnimationSpeed.html) property. 
 
-N> Specfying whether its 0 to 1 or secs or milli seconds
+N> Specifying whether its 0 to 1 seconds or milliseconds.
 
 {% tabs %}
 
