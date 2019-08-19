@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number Formatting of WPF UpDown control | Syncfusion
-description: This section explains about the culture and number formatting of WPF UpDown control
+description: This section explains about the culture and number formatting of WPF UpDown control.
 platform: wpf
 control: UpDown
 documentation: ug

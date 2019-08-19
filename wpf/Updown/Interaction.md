@@ -13,7 +13,7 @@ This section explains about how to change the value by using mouse and keyboard 
 
 ## Keyboard and Mouse support
 
-The `UpDown` control allows to increase or decrease the value by pressing <kbd>up-arrow</kbd> and <kbd>down-arrow</kbd> keys in keyboard or mouse whell over the control. [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval of increment or decrement.
+The `UpDown` control allows to increase or decrease the value by pressing <kbd>up-arrow</kbd> and <kbd>down-arrow</kbd> keys in keyboard or mouse wheel over the control. The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval of increment or decrement.
 
 ### Increment or decrement value in mouse wheel 
 
@@ -73,7 +73,7 @@ updown.Step = 5;
 
 When a value change in the UpDown control by using the repeated buttons, the transition from the current value to the new value is animated in UpDown control. The animation speed can be controlled by using [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AnimationSpeed.html) property. 
 
-<Specfying whether its 0 to 1 or secs or milli seconds>
+N> Specfying whether its 0 to 1 or secs or milli seconds
 
 {% tabs %}
 

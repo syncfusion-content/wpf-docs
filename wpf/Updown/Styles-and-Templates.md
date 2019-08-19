@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles and Templates of WPF UpDown control | Syncfusion
-description: This section describes about how to change the background and foreground color in WPF UpDown control
+description: This section describes about how to change the background and foreground color in WPF UpDown control.
 platform: wpf
 control: UpDown
 documentation: ug
@@ -115,12 +115,17 @@ updown.FocusedBorderBrush = Brushes.Green;
 
 ![Applied color to focused value in WPF UpDown](StylesandTemplates-images/wpf-updown-focused.png)
 
+N> The positive, negative and zero value colors get default color of the control while focusing the Updown control.
 
 ## Visual styles
 
-The appearance of UpDown control can be customized by visual style of the [SkinManager](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinManager.html).
+The skins can be applied to the UpDown control by setting the `VisualStyle` property defined in SkinStorage class, refer [here](https://help.syncfusion.com/wpf/skinmanager/overview).
 
-Below example explains how to apply the `Blend` theme or style to `UpDown` control.
+Below example explains how to apply the `Blend` theme or style for `UpDown` control.
+
+1) Add the following reference **Syncfusion.Shared.WPF.dll**.
+
+2) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or add namespace **Syncfusion.Windows.Shared** and set `SkinStorage.VisualStyle` attached property to window or UpDown.
 
 {% tabs %}
 
