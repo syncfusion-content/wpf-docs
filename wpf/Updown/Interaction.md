@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interaction with WPF UpDown control | Syncfusion
-description: This section explains about keyboard and mouse interact with WPF UpDown control
+description: This section explains about keyboard and mouse interaction in WPF UpDown control.
 platform: wpf
 control: UpDown
 documentation: ug
@@ -13,11 +13,11 @@ This section explains about how to change the value by using mouse and keyboard 
 
 ## Keyboard and Mouse support
 
-The `UpDown` control provides to change the value by keyboard or mouse interaction, and increase or decrease the value of UpDown control while pressing the <kbd>up-arrow</kbd> and <kbd>down-arrow</kbd> keys in keyboard. It also allows to change the value through mouse wheel operations.
+The `UpDown` control allows to increase or decrease the value by pressing <kbd>up-arrow</kbd> and <kbd>down-arrow</kbd> keys in keyboard or mouse whell over the control. [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval of increment or decrement.
 
-## Mouse scrolling
+### Increment or decrement value in mouse wheel 
 
-When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property is enabled, the user can increase or decrease the current value by scrolling over UpDown control.
+When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property is `true`, the user can increase or decrease the current value by scrolling over UpDown control.
 
 {% tabs %}
 
@@ -71,9 +71,9 @@ updown.Step = 5;
 
 ## Animation speed
 
-When a value change in the UpDown control by using the repeated buttons, the transition from the current value to the new value is animated in UpDown control.
+When a value change in the UpDown control by using the repeated buttons, the transition from the current value to the new value is animated in UpDown control. The animation speed can be controlled by using [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AnimationSpeed.html) property. 
 
-The changing value in updown control can be controlled by using [AnimationSpeed](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~AnimationSpeed.html) property. 
+<Specfying whether its 0 to 1 or secs or milli seconds>
 
 {% tabs %}
 
