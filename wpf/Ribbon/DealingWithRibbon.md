@@ -287,7 +287,7 @@ After the Button is clicked, the ContextTabGroup visibility changes as follows
 
 ## Creating ContextTabGroup in MVVM
 
-To populate the object in Ribbon ContextTabGroup, the `ContextGroupSource` and `ContextGroupContainerStyle` properties of Ribbon can be used, Similarly for the RibbonTab of each ContextTabGroup, items can be populated using `ItemsSource` and `ItemContainerStyle` properties of ContextTabGroup.
+To create context tab group in Ribbon, use  `ContextGroupSource` and `ContextGroupContainerStyle` properties. Similarly we can populate ContextTabGroup to corresponding RibbonTab using `ItemsSource` and `ItemContainerStyle` properties of ContextTabGroup.
 
 To create a ContextTabGroup in MVVM, follow below steps. 
 
