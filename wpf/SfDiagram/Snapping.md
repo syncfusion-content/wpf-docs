@@ -32,45 +32,6 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 Please refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
-## Gridlines
-
-**Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
-
-### Customize the gridlines visibility
-
-The `SnapConstraints` property of SnapSettings enables you to show/hide the gridlines.
-
-{% tabs %}
-{% highlight xaml %}
-
-<!--Initialize SfDiagram-->
-<diagram:SfDiagram x:Name="diagram"> 
-  <!--Initialize SnapSettings-->		
-  <diagram:SfDiagram.SnapSettings>
-    <diagram:SnapSettings SnapConstraints="ShowLines"/>
-  </diagram:SfDiagram.SnapSettings>
-</diagram:SfDiagram>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-//Shows both Horizontal and Vertical Gridlines
-diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Snap to Gridlines](Gridlines_images/Gridlines_img1.jpeg)
-
-### Appearance
-
-Options are provided to customize the Style and LineIntervals of Gridlines.
-
-Please refer to the [Gridlines](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Gridlines_members.html) properties.
-
-Please refer to the KB link for [Gridlines customization](https://www.syncfusion.com/kb/8466/how-to-customize-the-appearance-for-gridlines)
-
 ## Snap To Lines
 
 This feature allows the Diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
