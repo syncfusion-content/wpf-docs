@@ -7,11 +7,11 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Auto Complete
+# AutoComplete
 
-Auto Complete functionality provides suggestions to the user while typing. There are several modes of suggestions. The suggested text can be appended to the original text or it can be displayed in a drop-down list so that user can choose from different options.
+AutoComplete functionality provides suggestions to the user while typing. There are several modes of suggestions. The suggested text can be appended to the original text or it can be displayed in a drop-down list so that user can choose from different options.
 
-## Auto Complete Source
+## AutoComplete Source
 
 The TextBoxExt control can be populated with a predefined list of items, which will assist the user while typing. Users can choose one item from the filtered list.
 
@@ -23,15 +23,9 @@ The Employee model looks as shown below:
 {% highlight c# %}
 
 public class Employee
-
 {
-
-	public string Name { get; set; }
-
-
-
-	public string Email { get; set; }
-
+   public string Name { get; set; }
+   public string Email { get; set; }
 }
 	
 {% endhighlight %}
@@ -42,17 +36,18 @@ Create a collection attribute,
 
 {% highlight c# %}
 
-private List<Employee> employees;
-
-public List<Employee> Employees
-
-{
-
- get { return employees; }
-
- set { employees = value; }
-
-}
+ private List<Employee> employees;
+ public List<Employee> Employees
+ {
+   get 
+   { 
+     return employees;
+   }
+   set 
+   { 
+     employees = value; 
+   }
+ }
 
 {% endhighlight %}
 
@@ -61,11 +56,8 @@ Populate the collection with items,
 {% highlight c# %}
 
 Employees = new List<Employee>();
-
 Employees.Add(new Employee{Name = "Lucas", Email = "lucas@syncfusion.com"});
-
 Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
-
 Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
 
 {% endhighlight %}
@@ -94,27 +86,34 @@ SearchItemPath property specifies the property path by which the filtering has t
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="400"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}" />
+    </Window.Content>
+</Window>
 
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}" />
-							
 {% endhighlight %}
-							
+
 ![AutoCompleteSource](Auto-Complete_images/Auto-Complete_img1.png)
 
-N> Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section.
+N> Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about AutoComplete modes will be provided in next section.
 
-## Auto Complete Mode
+## AutoComplete Mode
 
-The suggestions can be displayed in several ways. TextBoxExt supports the following modes of auto complete,
+The suggestions can be displayed in several ways. TextBoxExt supports the following modes of autocomplete,
 
 1. None
 2. Suggest
@@ -131,17 +130,24 @@ The filtered suggestions are displayed in a drop-down list.  Users can pick an i
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}" />
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+           <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                 VerticalAlignment="Center" 
+                                 Width="400"
+                                 SearchItemPath="Name"
+                                 AutoCompleteMode="Suggest"
+                                 AutoCompleteSource="{Binding Employees}" />
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -150,7 +156,6 @@ The filtered suggestions are displayed in a drop-down list.  Users can pick an i
 Filtered suggestions displayed in drop-down list
 {:.caption}
 
-
 ### Append
 
 The text will be appended to the first matched item in the suggestions collection without opening the drop-down list.
@@ -158,24 +163,28 @@ The text will be appended to the first matched item in the suggestions collectio
 
 {% highlight xaml %}
 
-
-
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-AutoCompleteMode="Append"
-
-                            AutoCompleteSource="{Binding Employees}" />
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  Width="400"
+                                  SearchItemPath="Name"
+                                  AutoCompleteMode="Append"
+                                  AutoCompleteSource="{Binding Employees}" />
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
 ![Append](Auto-Complete_images/Auto-Complete_img3.png)
-
 
 
 #### Append mode
@@ -189,17 +198,24 @@ The text will be appended to the first matched item in the suggestions collectio
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            AutoCompleteMode="SuggestAppend"
-
-                            AutoCompleteSource="{Binding Employees}" />
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  Width="400"
+                                  SearchItemPath="Name"
+                                  AutoCompleteMode="SuggestAppend"
+                                  AutoCompleteSource="{Binding Employees}" />
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -213,6 +229,7 @@ SuggestAppend mode
 
 This option neither appends text nor opens the drop-down list of suggestions. 
 
+
 ## AutoComplete Item Template
 
 The AutoCompleteItemTemplate helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list item.
@@ -220,37 +237,33 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
 {% highlight xaml %}
 
-
-
-  <editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            AutoCompleteMode="SuggestAppend"
-
-                            AutoCompleteSource="{Binding Employees}" >
-
-            <editors:SfTextBoxExt.AutoCompleteItemTemplate>
-
-                <DataTemplate>
-
-                    <StackPanel Orientation="Horizontal">
-
-                        <Image Source="User.png" Margin="2" Stretch="Uniform" Width="12"/>
-
-                        <TextBlock Text="{Binding Name}" Margin="5 2"/>
-
-                    </StackPanel>
-
-                </DataTemplate>
-
-            </editors:SfTextBoxExt.AutoCompleteItemTemplate>
-
-        </editors:SfTextBoxExt>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+               <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                     VerticalAlignment="Center" 
+                                     Width="400"
+                                     SearchItemPath="Name"
+                                     AutoCompleteMode="SuggestAppend"
+                                     AutoCompleteSource="{Binding Employees}" >
+                    <editors:SfTextBoxExt.AutoCompleteItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="User.png" Margin="2" Stretch="Uniform" Width="12"/>
+                                <TextBlock Text="{Binding Name}" Margin="5 2"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </editors:SfTextBoxExt.AutoCompleteItemTemplate>
+                </editors:SfTextBoxExt>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -292,21 +305,25 @@ The controls returns the entire collection without filtering when the user types
 
 {% highlight xaml %}
 
-
-
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-SuggestionMode="None"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="None"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -322,19 +339,25 @@ The control returns all possible matches which start with the text typed by the 
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-SuggestionMode="StartsWith"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="StartsWith"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -351,21 +374,26 @@ The control returns all possible matches which start with the text typed by the 
 
 {% highlight xaml %}
 
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="StartsWithCaseSensitive"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
-
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-SuggestionMode="StartsWithCaseSensitive"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
 {% endhighlight %}
 
 ![StartsWithCaseSensitive](Auto-Complete_images/Auto-Complete_img8.png)
@@ -380,23 +408,27 @@ StartsWithCaseSensitive case
 
 The control returns all possible matches which start with the text typed by the user based on OrdinalIgnoreCase.
 
-
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="StartsWithOrdinal"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
-
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="StartsWithOrdinal"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -411,22 +443,27 @@ StartsWithOrdinal case
 
 The control returns all possible matches which start with the text typed by the user by Ordinal which is case sensitive.
 
-
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-SuggestionMode="StartsWithOrdinalCaseSensitive"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="StartsWithOrdinalCaseSensitive"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -435,29 +472,31 @@ SuggestionMode="StartsWithOrdinalCaseSensitive"
 StartsWithOrdinalCaseSensitive case
 {:.caption}
 
-
-
 ### Contains
 
 The control return all possible matches which contains the text typed by the user.
 
-
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="Contains"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
-
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="Contains"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -466,26 +505,31 @@ The control return all possible matches which contains the text typed by the use
 Contains case
 {:.caption}
 
-
 ### ContainsCaseSensitive
 
 The control return all possible matches which contains the text typed by the user which is culture and case sensitive.
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="ContainsCaseSensitive"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="ContainsCaseSensitive"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -499,22 +543,27 @@ ContainsCaseSensitive case
 
 The control return all possible matches which contains the text typed by the user based on OrdinalIgnoreCase.
 
-
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="ContainsOrdinal"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="ContainsOrdinal"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -523,26 +572,31 @@ The control return all possible matches which contains the text typed by the use
 ContainsOrdinal case
 {:.caption}
 
-
 ### ContainsOrdinalCaseSensitive
 
 The control return all possible matches which contains the text typed by the user based on Ordinal which is case sensitive.
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="ContainsOrdinalCaseSensitive"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="ContainsOrdinalCaseSensitive"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -551,27 +605,31 @@ The control return all possible matches which contains the text typed by the use
 ContainsOrdinalCaseSensitive
 {:.caption}
 
-
 ### Equals
 
 The control return all possible matches which equals the text typed by the user.
 
-
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="Equals"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="Equals"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -586,20 +644,25 @@ The control return all possible matches which equals the text typed by the user 
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="EqualsCaseSensitive"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
-
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="EqualsCaseSensitive"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -614,19 +677,25 @@ The control return all possible matches which equals the text typed by the user 
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="EqualsOrdinal"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="EqualsOrdinal"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -639,22 +708,27 @@ EqualsOrdinal case
 
 The control return all possible matches which equals the text typed by the user based on Ordinal which is case sensitive.
 
-
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="EqualsOrdinalCaseSensitive"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="EqualsOrdinalCaseSensitive"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -662,7 +736,6 @@ The control return all possible matches which equals the text typed by the user 
 
 EqualsOrdinalCaseSensitive case
 {:.caption}
-
 
 ### Custom
 
@@ -672,58 +745,47 @@ The control return all possible matches based on the Filter property. Filter is 
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt x:Name="autoComplete" HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionMode="Custom"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="Custom"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
-
 {% highlight c# %}    
-
-
-
-     public bool MyFilter(string search, object item)
-
+    
+    public bool MyFilter(string search, object item)
+    {
+        Person model = item as Person;
+        if (model != null)
         {
-
-            Person model = item as Person;
-
-            if (model != null)
-
+            if (model.Name.ToLower().Contains(search))
             {
-
-                if (model.Name.ToLower().Contains(search))
-
-                {
-
-                    return true;
-
-                }
-
-                else
-
-                    return false;
-
+              return true;
             }
-
             else
-
-                return false;
-
+              return false;
         }
+        else
+        return false;
 
-		
+    }
+
 [c#]
 
 autoComplete.Filter = MyFilter;
@@ -732,7 +794,6 @@ autoComplete.Filter = MyFilter;
 
 {% endtabs %}
 
-
 ![Custom](Auto-Complete_images/Auto-Complete_img19.png)
 
 Custom case
@@ -740,28 +801,31 @@ Custom case
 
 N> Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend.
 
-
-
 ### Ignore Case
 
 This option allows the control to filter suggestions by ignoring the case. The default value is false.
 
-
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            IgnoreCase="True"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  Width="400"
+                                  SearchItemPath="Name"
+                                  IgnoreCase="True"
+                                  AutoCompleteMode="Suggest"
+                                  AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -770,26 +834,31 @@ This option allows the control to filter suggestions by ignoring the case. The d
 Ignore Case
 {:.caption}
 
-
 ### Minimum Prefix Length
 
 The MinimumPrefixCharacters property allows the control to filter the typed text based on the number of characters.
 
 {% highlight xaml %}
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+                <editors:SfTextBoxExt HorizontalAlignment="Center"
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      MinimumPrefixCharacters="2"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/> 
+       </Window.Content>
+</Window>
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-MinimumPrefixCharacters="2"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
 {% endhighlight %}
 
 ![Minimum Prefix Length](Auto-Complete_images/Auto-Complete_img21.png)
@@ -801,22 +870,26 @@ Minimum Prefix Length case
 
 PopupDelay specifies the delay after which the suggestion popup should open. 
 
-
 {% highlight xaml %}
-
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            PopupDelay="00:00:02"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  Width="400"
+                                  SearchItemPath="Name"
+                                  PopupDelay="00:00:02"
+                                  AutoCompleteMode="Suggest"
+                                  AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -836,19 +909,25 @@ The drop-down list will open at top of the control.
 
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionBoxPlacement="Top"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Width="400"
+                                  SearchItemPath="Name"
+                                  SuggestionBoxPlacement="Top"
+                                  AutoCompleteMode="Suggest"
+                                  AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -863,49 +942,57 @@ Drop down list opening at the top
 The drop-down list will open at bottom of the control.
 
 {% highlight xaml %}
-
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-                            SuggestionBoxPlacement="Bottom"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"
+                                  Width="400"
+                                  SearchItemPath="Name"
+                                  SuggestionBoxPlacement="Bottom"
+                                  AutoCompleteMode="Suggest"
+                                  AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
 ![Bottom](Auto-Complete_images/Auto-Complete_img23.png)
 
-
 Drop down list opening at the bottom
 {:.caption}
-
 
 #### None
 
 The drop-down list will not open.
 
 {% highlight xaml %}
-
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-SuggestionBoxPlacement="None"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+        <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  Width="400"
+                                  SearchItemPath="Name"
+                                  SuggestionBoxPlacement="None"
+                                  AutoCompleteMode="Suggest"
+                                  AutoCompleteSource="{Binding Employees}"/>
+        </Window.Content>
+</Window>
 
 {% endhighlight %}
 
@@ -913,4 +1000,3 @@ SuggestionBoxPlacement="None"
 
 No drop down list
 {:.caption}
-

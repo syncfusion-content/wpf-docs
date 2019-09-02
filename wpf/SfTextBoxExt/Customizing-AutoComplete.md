@@ -103,14 +103,14 @@ The `DropDownBackground` property is used to modify the background color of sugg
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              DropDownBackground="AliceBlue"
-                              Width="300"/>
-    </Grid>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt" 
+                                  HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"
+                                  AutoCompleteMode="Suggest"
+                                  DropDownBackground="AliceBlue"
+                                  Width="300"/>
+        </Grid>
     </Window.Content>
 </Window>
 
@@ -162,4 +162,3 @@ namespace AutoCompleteSample
 {% endtabs %}
 
 ![Dropdown background color](Auto-Complete_images/drop_down_background_color.png)
-

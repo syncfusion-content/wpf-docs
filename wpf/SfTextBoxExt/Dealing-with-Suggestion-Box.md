@@ -29,14 +29,14 @@ The suggestion box can be placed either at the top or bottom using the `Suggesti
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              SuggestionBoxPlacement="Top"
-                              Width="300"/>
-    </Grid>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  AutoCompleteMode="Suggest"
+                                  SuggestionBoxPlacement="Top"
+                                  Width="300"/>
+        </Grid>
     </Window.Content>
 </Window>
 
@@ -107,14 +107,14 @@ The maximum height of the suggestion box in the Autocomplete control can be chan
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              MaxDropDownHeight="500"
-                              Width="300"/>
-    </Grid>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt"
+                                  HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  AutoCompleteMode="Suggest"
+                                  MaxDropDownHeight="500"
+                                  Width="300"/>
+        </Grid>
     </Window.Content>
 </Window>
 
@@ -185,14 +185,14 @@ Suggestion box can be shown whenever the control receives focus using the `ShowS
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              ShowSuggestionsOnFocus="True"
-                              Width="300"/>
-    </Grid>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt" 
+                                  HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  AutoCompleteMode="Suggest"
+                                  ShowSuggestionsOnFocus="True"
+                                  Width="300"/>
+        </Grid>
     </Window.Content>
 </Window>
 
@@ -263,14 +263,14 @@ The `SuggestionBoxPlacement` API is used to position the suggestion box in AutoC
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              SuggestionBoxPlacement="None"
-                              Width="300"/>
-    </Grid>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt" 
+                                  HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  AutoCompleteMode="Suggest"
+                                  SuggestionBoxPlacement="None"
+                                  Width="300"/>
+        </Grid>
     </Window.Content>
 </Window>
 
