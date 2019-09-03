@@ -25,14 +25,14 @@ Instead of displaying suggestion list on every character entry, matches can be f
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt" 
                               HorizontalAlignment="Center" 
                               VerticalAlignment="Center" 
                               AutoCompleteMode="Suggest"
                               MinimumPrefixCharacters="2"
                               Width="300"/>
-    </Grid>
+        </Grid>
     </Window.Content>
 </Window>
 
