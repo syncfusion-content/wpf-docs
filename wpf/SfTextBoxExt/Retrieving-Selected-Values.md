@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selected values of Auto Complete | SfTextBoxExt | wpf | Syncfusion
+title: Selected values of AutoComplete | SfTextBoxExt | wpf | Syncfusion
 description: Learn how to retrieve selected value from AutoComplete in SfTextBoxExt
 platform: wpf
 control: SfTextBoxExt
@@ -33,7 +33,7 @@ The following code snippet demonstrates how to set `SelectedItem`.
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
+        <Grid>
             <editors:SfTextBoxExt x:Name="textBoxExt" 
                                   HorizontalAlignment="Center" 
                                   VerticalAlignment="Center" 
@@ -111,7 +111,7 @@ The following code example demonstrates how to retrieve SelectedItem.
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
+        <Grid>
             <editors:SfTextBoxExt x:Name="textBoxExt" 
                               HorizontalAlignment="Center" 
                               VerticalAlignment="Center" 
@@ -209,7 +209,7 @@ The following code example demonstrates how to retrieve SuggestionIndex.
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
+        <Grid>
             <editors:SfTextBoxExt x:Name="textBoxExt" 
                               HorizontalAlignment="Center" 
                               VerticalAlignment="Center" 
@@ -276,4 +276,3 @@ namespace AutoCompleteSample
 {% endhighlight %}
 
 {% endtabs %}
-
