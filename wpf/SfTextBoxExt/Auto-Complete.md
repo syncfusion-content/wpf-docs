@@ -9,9 +9,9 @@ documentation: ug
 
 # AutoComplete
 
-AutoComplete functionality provides suggestions to the user while typing. There are several modes of suggestions. The suggested text can be appended to the original text or it can be displayed in a drop-down list so that user can choose from different options.
+The AutoComplete functionality provides several modes of suggestions to users while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that the users can choose from different options.
 
-## AutoComplete Source
+## AutoComplete source
 
 The TextBoxExt control can be populated with a predefined list of items, which will assist the user while typing. Users can choose one item from the filtered list.
 
@@ -109,24 +109,22 @@ SearchItemPath property specifies the property path by which the filtering has t
 
 ![AutoCompleteSource](Auto-Complete_images/Auto-Complete_img1.png)
 
-N> Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about AutoComplete modes will be provided in next section.
+N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the AutoComplete modes will be provided in the next section.
 
-## AutoComplete Mode
+## AutoComplete mode
 
-The suggestions can be displayed in several ways. TextBoxExt supports the following modes of autocomplete,
+The suggestions can be displayed in several ways. The TextBoxExt supports the following modes of AutoComplete:
 
-1. None
-2. Suggest
-3. Append
-4. SuggestAppend
-
+* None
+* Suggest
+* Append
+* SuggestAppend
 
 The default value of AutoCompleteMode is None.
 
 ### Suggest
 
-The filtered suggestions are displayed in a drop-down list.  Users can pick an item from the list.
-
+The filtered suggestions are displayed in a drop-down list. Users can pick an item from the list.
 
 {% highlight xaml %}
 
