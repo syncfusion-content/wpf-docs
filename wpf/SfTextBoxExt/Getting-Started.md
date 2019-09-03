@@ -7,15 +7,13 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Getting started
+# Getting Started
 
 ## Assembly deployment
 
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: 
-
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
+Refer to the [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages) documentation find more details about installing the NuGet package in a WPF application.
 
 ## Creating a simple application with SfTextBoxExt
 
@@ -36,11 +34,11 @@ The SfTextBoxExt control can be added to an application by dragging it from the 
 
 To add the control manually in XAML, follow the given steps:
 
-1.	Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3.	Declare the SfTextBoxExt control in the XAML page.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3. Declare the SfTextBoxExt control in the XAML page.
 
 {% tabs %}
 {% highlight XAML %}
@@ -68,15 +66,15 @@ To add the control manually in XAML, follow the given steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Add control manually in C\#
+## Add control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
-1.	Add the following required assembly references to the project:
+1. Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2.	Import the SfTextBoxExt namespace **using Syncfusion.Windows.Controls.Input;**.
-3.	Create an SfTextBoxExt instance, and add it to the window.
+2. Import the SfTextBoxExt namespace using **Syncfusion.Windows.Controls.Input;**.
+3. Create an SfTextBoxExt instance, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
