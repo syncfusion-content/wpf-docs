@@ -61,7 +61,7 @@ namespace AutoCompleteSample
                 VerticalAlignment = VerticalAlignment.Center,
                 Width = 200,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
-                Wateramrk = "Enter names separated by comma (Ex : John, Kate)"
+                Watermark = "Enter names separated by comma (Ex : John, Kate)"
             };
 
             this.Content = textBoxExt;
@@ -71,7 +71,7 @@ namespace AutoCompleteSample
 {% endhighlight %}
 {% endtabs %}
 
-![](Watermark_images/Watermark_img1.png)
+![Watermark_Text](Watermark_images/Watermark_img1.png)
 
 N> The Watermark property is of the object type so any Framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
 
@@ -102,7 +102,7 @@ N> The Watermark property is of the object type so any Framework elements can be
 
 {% endhighlight %}
 
-![](Watermark_images/Watermark_img2.png)
+![Watermark_View](Watermark_images/Watermark_img2.png)
 
 ## Using the Watermark template
 
