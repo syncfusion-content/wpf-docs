@@ -30,9 +30,7 @@ public class Employee
 	
 {% endhighlight %}
 
-
 Create a collection attribute,
-
 
 {% highlight c# %}
 
@@ -62,28 +60,63 @@ Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
 
 {% endhighlight %}
 
-
 Bind the Employees collection to the AutoCompleteSource property of TextBoxExt.
 
-
+{% tabs %}
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-AutoCompleteSource="{Binding Employees}" />
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Content>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"
+                                  Width="400"
+                                  AutoCompleteSource="{Binding Employees}" />
+    </Window.Content>
+</Window>
 
 {% endhighlight %}
+{% highlight c# %}
 
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 At this point, the control is populated with the list of employees. But the Employee model contains two properties Name and Email so we should tell the control, by which property, it has to provide suggestions. In this case, let us make the control to provide suggestions based on Name.
 
 SearchItemPath property specifies the property path by which the filtering has to be done.
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -106,6 +139,36 @@ SearchItemPath property specifies the property path by which the filtering has t
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![AutoCompleteSource](Auto-Complete_images/Auto-Complete_img1.png)
 
@@ -126,6 +189,7 @@ The default value of AutoCompleteMode is None.
 
 The filtered suggestions are displayed in a drop-down list. Users can pick an item from the list.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -148,6 +212,36 @@ The filtered suggestions are displayed in a drop-down list. Users can pick an it
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Suggest](Auto-Complete_images/Auto-Complete_img2.png)
 
@@ -158,7 +252,7 @@ Filtered suggestions displayed in drop-down list
 
 The text will be appended to the first matched item in the suggestions collection without opening the drop-down list.
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -181,6 +275,36 @@ The text will be appended to the first matched item in the suggestions collectio
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Append,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Append](Auto-Complete_images/Auto-Complete_img3.png)
 
@@ -193,7 +317,7 @@ N> By default the text will be appended to first matched item. But still user ca
 
 The text will be appended to the first matched item in the suggestions collection, in addition to opening the drop-down list.
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -216,12 +340,41 @@ The text will be appended to the first matched item in the suggestions collectio
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.SuggestAppend,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![SuggestAppend](Auto-Complete_images/Auto-Complete_img4.png)
 
 SuggestAppend mode
 {:.caption}
-
 
 ### None
 
@@ -232,7 +385,7 @@ This option neither appends text nor opens the drop-down list of suggestions.
 
 The AutoCompleteItemTemplate helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list item.
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -264,12 +417,41 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.SuggestAppend,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![ItemTemplate](Auto-Complete_images/Auto-Complete_img5.png)
 
 Drop down list with image
 {:.caption}
-
 
 ## Filtering Customization
 
@@ -300,7 +482,7 @@ The default value is StartsWith.
 
 The controls returns the entire collection without filtering when the user types text.
 
-
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -324,17 +506,48 @@ The controls returns the entire collection without filtering when the user types
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.None,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
  ![SuggestMode None](Auto-Complete_images/Auto-Complete_img6.png)
 
 None case
 {:.caption}
 
-
 ### StartsWith
 
 The control returns all possible matches which start with the text typed by the user.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -358,18 +571,48 @@ The control returns all possible matches which start with the text typed by the 
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWith,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![StartsWith](Auto-Complete_images/Auto-Complete_img7.png)
 
-
 StartsWith case
 {:.caption}
-
 
 ### StartsWithCaseSensitive
 
 The control returns all possible matches which start with the text typed by the user which is culture and case sensitive.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -393,19 +636,48 @@ The control returns all possible matches which start with the text typed by the 
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWithCaseSensitive,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![StartsWithCaseSensitive](Auto-Complete_images/Auto-Complete_img8.png)
 
-
-
 StartsWithCaseSensitive case
 {:.caption}
-
 
 ### StartsWithOrdinal
 
 The control returns all possible matches which start with the text typed by the user based on OrdinalIgnoreCase.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -429,18 +701,48 @@ The control returns all possible matches which start with the text typed by the 
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWithOrdinal,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![StartsWithOrdinal](Auto-Complete_images/Auto-Complete_img9.png)
 
-
 StartsWithOrdinal case
 {:.caption}
-
 
 ### StartsWithOrdinalCaseSensitive
 
 The control returns all possible matches which start with the text typed by the user by Ordinal which is case sensitive.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -464,6 +766,37 @@ The control returns all possible matches which start with the text typed by the 
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWithOrdinalCaseSensitive,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![StartsWithOrdinalCaseSensitive](Auto-Complete_images/Auto-Complete_img10.png)
 
@@ -474,6 +807,7 @@ StartsWithOrdinalCaseSensitive case
 
 The control return all possible matches which contains the text typed by the user.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -497,6 +831,37 @@ The control return all possible matches which contains the text typed by the use
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.Contains,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Contains](Auto-Complete_images/Auto-Complete_img11.png)
 
@@ -507,6 +872,7 @@ Contains case
 
 The control return all possible matches which contains the text typed by the user which is culture and case sensitive.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -530,17 +896,48 @@ The control return all possible matches which contains the text typed by the use
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.ContainsCaseSensitive,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![ContainsCaseSensitive](Auto-Complete_images/Auto-Complete_img12.png)
 
 ContainsCaseSensitive case
 {:.caption}
 
-
 ### ContainsOrdinal
 
 The control return all possible matches which contains the text typed by the user based on OrdinalIgnoreCase.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -564,6 +961,37 @@ The control return all possible matches which contains the text typed by the use
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.ContainsOrdinal,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![ContainsOrdinal](Auto-Complete_images/Auto-Complete_img13.png)
 
@@ -574,6 +1002,7 @@ ContainsOrdinal case
 
 The control return all possible matches which contains the text typed by the user based on Ordinal which is case sensitive.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -597,6 +1026,37 @@ The control return all possible matches which contains the text typed by the use
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.ContainsOrdinalCaseSensitive,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![ContainsOrdinalCaseSensitive](Auto-Complete_images/Auto-Complete_img14.png)
 
@@ -607,6 +1067,7 @@ ContainsOrdinalCaseSensitive
 
 The control return all possible matches which equals the text typed by the user.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -630,6 +1091,37 @@ The control return all possible matches which equals the text typed by the user.
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.Equals,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Equals](Auto-Complete_images/Auto-Complete_img15.png)
 
@@ -640,6 +1132,7 @@ Equals case
 
 The control return all possible matches which equals the text typed by the user which is culture and case sensitive.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -663,6 +1156,37 @@ The control return all possible matches which equals the text typed by the user 
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.EqualsCaseSensitive,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![EqualsCaseSensitive](Auto-Complete_images/Auto-Complete_img16.png)
 
@@ -673,6 +1197,7 @@ EqualsCaseSensitive case
 
 The control return all possible matches which equals the text typed by the user based on OrdinalIgnoreCase.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -696,6 +1221,37 @@ The control return all possible matches which equals the text typed by the user 
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.EqualsOrdinal,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![EqualsOrdinal](Auto-Complete_images/Auto-Complete_img17.png)
 
@@ -706,6 +1262,7 @@ EqualsOrdinal case
 
 The control return all possible matches which equals the text typed by the user based on Ordinal which is case sensitive.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -729,6 +1286,37 @@ The control return all possible matches which equals the text typed by the user 
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.EqualsOrdinalCaseSensitive,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![EqualsOrdinalCaseSensitive](Auto-Complete_images/Auto-Complete_img18.png)
 
@@ -740,7 +1328,6 @@ EqualsOrdinalCaseSensitive case
 The control return all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -764,7 +1351,6 @@ The control return all possible matches based on the Filter property. Filter is 
 </Window>
 
 {% endhighlight %}
-
 {% highlight c# %}    
     
     public bool MyFilter(string search, object item)
@@ -789,7 +1375,6 @@ The control return all possible matches based on the Filter property. Filter is 
 autoComplete.Filter = MyFilter;
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Custom](Auto-Complete_images/Auto-Complete_img19.png)
@@ -803,6 +1388,7 @@ N> Append mode always works only with StartsWith behavior. If the typed text is 
 
 This option allows the control to filter suggestions by ignoring the case. The default value is false.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -826,6 +1412,37 @@ This option allows the control to filter suggestions by ignoring the case. The d
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                IgnoreCase = "True",
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Ignore Case](Auto-Complete_images/Auto-Complete_img20.png)
 
@@ -836,7 +1453,9 @@ Ignore Case
 
 The MinimumPrefixCharacters property allows the control to filter the typed text based on the number of characters.
 
+{% tabs %}
 {% highlight xaml %}
+
 <Window x:Class="AutoCompleteSample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -858,6 +1477,37 @@ The MinimumPrefixCharacters property allows the control to filter the typed text
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                MinimumPrefixCharacters = "2",
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Minimum Prefix Length](Auto-Complete_images/Auto-Complete_img21.png)
 
@@ -868,7 +1518,9 @@ Minimum Prefix Length case
 
 PopupDelay specifies the delay after which the suggestion popup should open. 
 
+{% tabs %}
 {% highlight xaml %}
+
 <Window x:Class="AutoCompleteSample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -890,6 +1542,37 @@ PopupDelay specifies the delay after which the suggestion popup should open.
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                PopupDelay="00:00:02",
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Positioning the Popup
 
@@ -905,6 +1588,7 @@ The default value is bottom.
 
 The drop-down list will open at top of the control.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -928,6 +1612,37 @@ The drop-down list will open at top of the control.
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionBoxPlacement = SuggestionBoxPlacement.Top,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Top](Auto-Complete_images/Auto-Complete_img22.png)
 
@@ -939,7 +1654,9 @@ Drop down list opening at the top
 
 The drop-down list will open at bottom of the control.
 
+{% tabs %}
 {% highlight xaml %}
+
 <Window x:Class="AutoCompleteSample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -961,6 +1678,37 @@ The drop-down list will open at bottom of the control.
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Bottom](Auto-Complete_images/Auto-Complete_img23.png)
 
@@ -971,7 +1719,9 @@ Drop down list opening at the bottom
 
 The drop-down list will not open.
 
+{% tabs %}
 {% highlight xaml %}
+
 <Window x:Class="AutoCompleteSample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -993,6 +1743,37 @@ The drop-down list will not open.
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace SfDatePickerSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionBoxPlacement = SuggestionBoxPlacement.None,
+                Width = 400
+            };
+
+            this.Content = textBoxExt;
+        } 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![None](Auto-Complete_images/Auto-Complete_img24.png)
 
