@@ -30,6 +30,8 @@ The SfTextBoxExt control can be added to an application by dragging it from the 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
+![DesignerView](GettingStarted_images/Designer.png)
+
 ## Adding control manually in XAML
 
 To add the control manually in XAML, follow the given steps:
@@ -106,3 +108,5 @@ namespace SfDatePickerSample
 }
 {% endhighlight %}
 {% endtabs %}
+
+![GettingStarted](GettingStarted_images/GettingStarted.png)
