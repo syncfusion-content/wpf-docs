@@ -89,7 +89,7 @@ Output Node will be,
 | Flow Shapes |Process | ![FlowProcess](Shapes_images\FlowProcess.PNG)|
 |  | Decision| ![FlowDecision](Shapes_images\FlowDecision.PNG)|
 |  |Terminator | ![FlowTerminator](Shapes_images\FlowTerminator.PNG)|
-|  |Sort | ![](Shapes_images\FlowSort.PNG)|
+|  |Sort | ![Sort](Shapes_images\FlowSort.PNG)|
 | |Document | ![FlowSort](Shapes_images\FlowDocument.PNG)|
 |  |MultiDocument | ![FlowMultiDocument](Shapes_images\FlowMultiDocument.PNG)|
 | |DirectData | ![FlowDirectData](Shapes_images\FlowDirectData.PNG)|
@@ -97,7 +97,7 @@ Output Node will be,
 |  |PaperTap | ![FlowPaperTap](Shapes_images\FlowPaperTap.PNG)|
 |  | Collate| ![FlowCollate](Shapes_images\FlowCollate.PNG)|
 |  | SummingJunction| ![FlowSummingJunction](Shapes_images\FlowSummingJunction.PNG)|
-|  |Or | ![](Shapes_images\FlowOr.PNG)|
+|  |Or | ![Or](Shapes_images\FlowOr.PNG)|
 | |InternalStorage | ![FlowInternalStorage](Shapes_images\FlowInternalStorage.PNG)|
 |  |PredefinedProcess | ![FlowPredefinedProcess](Shapes_images\FlowPredefinedProcess.PNG)|
 | |Extract | ![FlowExtract](Shapes_images\FlowExtract.PNG)|
