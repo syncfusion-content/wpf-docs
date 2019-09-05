@@ -48,7 +48,7 @@ The following code example illustrates how to assign Shape property of the Node.
 
 Output Node will be,
 
- ![](Shapes_images\Shapes_image1.PNG)
+ ![Shapes_image1](Shapes_images\Shapes_image1.PNG)
   
  The list of shapes are available in the resource dictionary as follows
  
