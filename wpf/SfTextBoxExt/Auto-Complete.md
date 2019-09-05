@@ -23,40 +23,35 @@ The Employee model looks as shown below:
 {% highlight c# %}
 
 public class Employee
-{
-   public string Name { get; set; }
-   public string Email { get; set; }
-}
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
 	
 {% endhighlight %}
 
-Create a collection attribute,
+
+Create a collection attribute and Populate the collection with items
 
 {% highlight c# %}
 
- private List<Employee> employees;
- public List<Employee> Employees
- {
-   get 
-   { 
-     return employees;
-   }
-   set 
-   { 
-     employees = value; 
-   }
- }
+ public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
 
-{% endhighlight %}
-
-Populate the collection with items,
-
-{% highlight c# %}
-
-Employees = new List<Employee>();
-Employees.Add(new Employee{Name = "Lucas", Email = "lucas@syncfusion.com"});
-Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
-Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+        }
+    }
 
 {% endhighlight %}
 
@@ -74,11 +69,16 @@ Bind the Employees collection to the AutoCompleteSource property of TextBoxExt.
         mc:Ignorable="d"
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
     <Window.Content>
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                  VerticalAlignment="Center"
-                                  Width="400"
-                                  AutoCompleteSource="{Binding Employees}" />
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                              VerticalAlignment="Center" 
+                              Width="300"
+                              Height="40"
+                              AutoCompleteMode="Suggest"
+                              AutoCompleteSource="{Binding Employees}" />
     </Window.Content>
 </Window>
 
@@ -101,7 +101,9 @@ namespace SfDatePickerSample
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
-                Width = 400
+                Width = 300,
+                Height = 40,
+                AutoCompleteMode = AutoCompleteMode.Suggest
             };
 
             this.Content = textBoxExt;
@@ -128,13 +130,17 @@ SearchItemPath property specifies the property path by which the filtering has t
         mc:Ignorable="d"
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
     <Window.Content>
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                      VerticalAlignment="Center" 
-                      Width="400"
-                      SearchItemPath="Name"
-                      AutoCompleteMode="Suggest"
-                      AutoCompleteSource="{Binding Employees}" />
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                              VerticalAlignment="Center" 
+                              Width="300"
+                              Height="40"
+                              SearchItemPath="Name"
+                              AutoCompleteMode="Suggest"
+                              AutoCompleteSource="{Binding Employees}" />
     </Window.Content>
 </Window>
 
@@ -159,7 +165,8 @@ namespace SfDatePickerSample
                 VerticalAlignment = VerticalAlignment.Center,
                 SearchItemPath = "Name",
                 AutoCompleteMode = AutoCompleteMode.Suggest,
-                Width = 400
+                Width = 300,
+                Height =40
             };
 
             this.Content = textBoxExt;
@@ -204,7 +211,8 @@ The filtered suggestions are displayed in a drop-down list. Users can pick an it
         <Window.Content>
            <editors:SfTextBoxExt HorizontalAlignment="Center" 
                                  VerticalAlignment="Center" 
-                                 Width="400"
+                                 Width="300"
+                                 Height="40"
                                  SearchItemPath="Name"
                                  AutoCompleteMode="Suggest"
                                  AutoCompleteSource="{Binding Employees}" />
@@ -232,7 +240,8 @@ namespace SfDatePickerSample
                 VerticalAlignment = VerticalAlignment.Center,
                 SearchItemPath = "Name",
                 AutoCompleteMode = AutoCompleteMode.Suggest,
-                Width = 400
+                Width = 300,
+                Height = 40
             };
 
             this.Content = textBoxExt;
@@ -1447,71 +1456,6 @@ namespace SfDatePickerSample
 ![Ignore Case](Auto-Complete_images/Auto-Complete_img20.png)
 
 Ignore Case
-{:.caption}
-
-### Minimum Prefix Length
-
-The MinimumPrefixCharacters property allows the control to filter the typed text based on the number of characters.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window x:Class="AutoCompleteSample.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AutoCompleteSample"
-        mc:Ignorable="d"
-        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
-        Title="MainWindow" Height="450" Width="800">
-        <Window.Content>
-                <editors:SfTextBoxExt HorizontalAlignment="Center"
-                                      VerticalAlignment="Center" 
-                                      Width="400"
-                                      SearchItemPath="Name"
-                                      MinimumPrefixCharacters="2"
-                                      AutoCompleteMode="Suggest"
-                                      AutoCompleteSource="{Binding Employees}"/> 
-       </Window.Content>
-</Window>
-
-{% endhighlight %}
-{% highlight c# %}
-
-using Syncfusion.Windows.Controls.Input;
-using System.Windows;
-
-namespace SfDatePickerSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            SfTextBoxExt textBoxExt = new SfTextBoxExt()
-            {
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center,
-                SearchItemPath = "Name",
-                AutoCompleteMode = AutoCompleteMode.Suggest,
-                MinimumPrefixCharacters = "2",
-                Width = 400
-            };
-
-            this.Content = textBoxExt;
-        } 
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![Minimum Prefix Length](Auto-Complete_images/Auto-Complete_img21.png)
-
-Minimum Prefix Length case
 {:.caption}
 
 ### Popup Delay

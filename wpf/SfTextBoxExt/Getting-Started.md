@@ -56,11 +56,12 @@ To add the control manually in XAML, follow the given steps:
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
         <Grid>
-           <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                 VerticalAlignment="Center" 
-                                 Width="200" 
-                                 Text="Hello! World..."/>
-
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  HorizontalContentAlignment="Center"
+                                  Height="40"
+                                  Width="200" 
+                                  Text="Hello! World..."/>
         </Grid>
     </Window.Content>
 </Window>
@@ -95,10 +96,11 @@ namespace SfDatePickerSample
         {
             SfTextBoxExt textBoxExt = new SfTextBoxExt()
             {
+                HorizontalContentAlignment = HorizontalAlignment.Center,
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
                 Width = 200,
-                AutoCompleteMode = AutoCompleteMode.Suggest,
+                Height = 40,
                 Text = "Hello! World..."
             };
 
@@ -106,6 +108,7 @@ namespace SfDatePickerSample
         } 
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
