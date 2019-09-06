@@ -81,3 +81,8 @@ namespace AutoCompleteSample
 {% endhighlight %}
 
 {% endtabs %}
+
+![Minimum Prefix Length](Auto-Complete_images/Auto-Complete_img21.png)
+
+Minimum Prefix Length case
+{:.caption}

@@ -29,11 +29,11 @@ Watermark property allows the users to specify some information, when the text i
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
         <Grid>
-           <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                 VerticalAlignment="Center" 
-                                 Width="400" 
-                                 Watermark="Enter names separated by comma (Ex : John, Kate)"/>
-
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  Width="300" 
+                                  Height="50"
+                                  Watermark="Enter names separated by comma (Ex : John, Kate)"/>
         </Grid>
     </Window.Content>
 </Window>
@@ -59,8 +59,8 @@ namespace AutoCompleteSample
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
-                Width = 200,
-                AutoCompleteMode = AutoCompleteMode.Suggest,
+                Width = 300,
+                Height = 50,
                 Watermark = "Enter names separated by comma (Ex : John, Kate)"
             };
 
@@ -68,6 +68,7 @@ namespace AutoCompleteSample
         }
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -75,6 +76,7 @@ namespace AutoCompleteSample
 
 N> The Watermark property is of the object type so any Framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -87,20 +89,79 @@ N> The Watermark property is of the object type so any Framework elements can be
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
+            <Grid>
             <editors:SfTextBoxExt HorizontalAlignment="Center"
                                   VerticalAlignment="Center" 
-                                  Width="400">
+                                  Height="50"
+                                  Width="300">
                 <editors:SfTextBoxExt.Watermark>
-                        <StackPanel Orientation="Horizontal">
-                          <Image Source="Windows 8.png" Stretch="None" Margin="2"/>
-                          <TextBlock Text="Search Windows" Opacity="0.5" Margin="5 2"/>
-                        </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Windows 8.png" 
+                               Margin="2"/>
+                        <TextBlock Text="Search Windows" 
+                                   HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   Opacity="0.5"/>
+                    </StackPanel>
                 </editors:SfTextBoxExt.Watermark>
             </editors:SfTextBoxExt>
+        </Grid>
     </Window.Content>
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Width = 300,
+                Height = 50
+            };
+
+            StackPanel stackPanel = new StackPanel()
+            {
+                Orientation = Orientation.Horizontal
+            };
+
+            Image image = new Image()
+            {
+                Source = new BitmapImage(new Uri("Windows 8.png", UriKind.RelativeOrAbsolute))
+            };
+
+            TextBlock textBlock = new TextBlock()
+            {
+                Text = "Search Windows",
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Opacity = 0.5
+            };
+
+            stackPanel.Children.Add(image);
+            stackPanel.Children.Add(textBlock);
+            textBoxExt.Watermark = stackPanel;
+            this.Content = textBoxExt;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Watermark_View](Watermark_images/Watermark_img2.png)
 
@@ -108,6 +169,7 @@ N> The Watermark property is of the object type so any Framework elements can be
 
 Any business object can be bound to the Watermark property and that object can be decorated by applying the WatermarkTemplate property.
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -119,18 +181,72 @@ Any business object can be bound to the Watermark property and that object can b
         mc:Ignorable="d"
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate x:Key="WatermarkTemplate">
+            <TextBlock Text="{Binding}" 
+                       FontStyle="Italic" 
+                       Opacity="1"/>
+        </DataTemplate>
+    </Window.Resources>
     <Window.Content>
-               <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                     VerticalAlignment="Center"
-                                     Width="400"
-                                     Watermark="{Binding Person}">
-                    <editors:SfTextBoxExt.WatermarkTemplate>
-                        <DataTemplate>
-                               <TextBlock Text="{Binding PromptText}" Opacity="0.5"/>
-                        </DataTemplate>
-                    </editors:SfTextBoxExt.WatermarkTemplate>
-                </editors:SfTextBoxExt>
+        <Grid>
+            <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"
+                                  Width="200"
+                                  Height="40"
+                                  Watermark="Type here"
+                                  WatermarkTemplate="{StaticResource WatermarkTemplate}">
+            </editors:SfTextBoxExt>
+        </Grid>
     </Window.Content>
 </Window>
 
 {% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Width = 300,
+                Height = 50,
+                Watermark = "Type here"
+            };
+
+            DataTemplate dt = new DataTemplate(typeof(TextBlock));
+            textBoxExt.WatermarkTemplate = dt;
+
+            FrameworkElementFactory txtElement = new FrameworkElementFactory(typeof(TextBlock));
+            dt.VisualTree = txtElement;
+
+            Binding bind = new Binding();
+            bind.Path = new PropertyPath("Watermark");
+            bind.Mode = BindingMode.TwoWay;
+            bind.Source = textBoxExt;
+
+            txtElement.SetBinding(TextBlock.TextProperty, bind);
+            txtElement.SetValue(TextBlock.FontStyleProperty, FontStyles.Italic);
+            txtElement.SetValue(TextBlock.OpacityProperty, 1.0);
+            this.Content = textBoxExt;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Watermark_View](Watermark_images/Watermark_img3.png)
