@@ -91,6 +91,8 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
+![selected item](Auto-Complete_images/Auto-Complete_img25.png)
+
 ### Retrieving selected items
 
 AutoComplete provides a way to get the selected item using the `SelectionChanged` event.
@@ -169,6 +171,7 @@ namespace AutoCompleteSample
 
         private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
+            string selectedItem = "";
             if ((d as SfTextBoxExt).SelectedItem != null)
             {
                 selectedItem = ((d as SfTextBoxExt).SelectedItem).ToString();
@@ -182,6 +185,8 @@ namespace AutoCompleteSample
 {% endhighlight %}
 
 {% endtabs %}
+
+![selected item](Auto-Complete_images/Auto-Complete_img26.png)
 
 ## Retrieving selected value
 
@@ -267,6 +272,7 @@ namespace AutoCompleteSample
 
         private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
+            string suggestionIndex = "";
             suggestionIndex = ((d as SfTextBoxExt).SuggestionIndex).ToString();
             MessageBoxResult messageBoxResult = MessageBox.Show(suggestionIndex, "SuggestionIndex");
         }
@@ -274,5 +280,6 @@ namespace AutoCompleteSample
 }
 
 {% endhighlight %}
-
 {% endtabs %}
+
+![suggestion index](Auto-Complete_images/Auto-Complete_img27.png)
