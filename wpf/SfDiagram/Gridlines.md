@@ -25,7 +25,13 @@ The `SnapConstraints` property of SnapSettings class enables you to control the 
 {% endhighlight %}
 
 {% highlight C# %}
-this.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
+//Initialize SfDiagram
+SfDiagram Diagram = new SfDiagram();
+//Initialize SnapSettings constraints to show Gridlines
+Diagram.SnapSettings = new SnapSettings()
+    {
+        SnapConstraints = SnapConstraints.ShowLines,
+    };
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,7 +40,7 @@ this.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 | SnapConstraints| None | ![Snap to Gridlines](Gridlines_images/GridlinesNone.png) |
 |  |VerticalLines | ![Snap to Gridlines](Gridlines_images/GridlinesVertical.png) |
 |  | HorizontalLines| ![Snap to Gridlines](Gridlines_images/GridlinesHorizontal.png) |
-|  | Triangle| ![Snap to Gridlines](Gridlines_images/GridlinesShowLines.png) |
+|  | ShowLines| ![Snap to Gridlines](Gridlines_images/GridlinesShowLines.png) |
 
 ## Change grid lines appearance
 
@@ -43,15 +49,8 @@ The `HorizontalGridLines` and `VerticalGridLines` properties of SnapSettings cla
 {% tabs %}
 {% highlight xaml %}
 
-<!--Style for HorizontalGridlines-->
-<local:Gridlinestyle x:Key="horizontalline">
-    <Style TargetType="Path">
-        <Setter Property="Stroke" Value="Blue"/>
-        <Setter Property="StrokeDashArray" Value="3"/>
-    </Style>
-</local:Gridlinestyle>
-<!--Style for VerticalGridlines-->
-<local:Gridlinestyle x:Key="verticalline">
+<!--Style for Gridlines-->
+<local:Gridlinestyle x:Key="gridlinestyle">
     <Style TargetType="Path">
         <Setter Property="Stroke" Value="Blue"/>
         <Setter Property="StrokeDashArray" Value="3"/>
@@ -65,11 +64,11 @@ The `HorizontalGridLines` and `VerticalGridLines` properties of SnapSettings cla
         <syncfusion:SnapSettings SnapConstraints="ShowLines">
             <!--Initialize HorizontalGridlines-->
             <syncfusion:SnapSettings.HorizontalGridlines>
-                <syncfusion:Gridlines Strokes="{StaticResource horizontalline}"/>
+                <syncfusion:Gridlines Strokes="{StaticResource gridlinestyle}"/>
             </syncfusion:SnapSettings.HorizontalGridlines>
             <!--Initialize VerticalGridlines-->
             <syncfusion:SnapSettings.VerticalGridlines>
-                <syncfusion:Gridlines Strokes="{StaticResource verticalline}"/>
+                <syncfusion:Gridlines Strokes="{StaticResource gridlinestyle}"/>
             </syncfusion:SnapSettings.VerticalGridlines>
         </syncfusion:SnapSettings>
     </syncfusion:SfDiagram.SnapSettings>
@@ -78,17 +77,24 @@ The `HorizontalGridLines` and `VerticalGridLines` properties of SnapSettings cla
 {% endhighlight %}
 
 {% highlight C# %}
+
+//Initialize SfDiagram
+SfDiagram Diagram = new SfDiagram();
+//Style for HorizontalGridlines
+Style PathStyle = new Style(typeof(Path));
+SolidColorBrush Strokes = new SolidColorBrush(Colors.Black);
+PathStyle.Setters.Add(new Setter(Shape.StrokeProperty, new SolidColorBrush(Colors.Blue)));
+PathStyle.Setters.Add(new Setter(Shape.StrokeDashArrayProperty, new DoubleCollection() { 3, 3 }));
+
 //Initialize SnapSettings constraints with HorizontalGridlines and VerticalGridlines values
-this.SnapSettings = new SnapSettings()
+Diagram.SnapSettings = new SnapSettings()
     {
-        SnapConstraints = SnapConstraints.ShowLines
+        SnapConstraints = SnapConstraints.ShowLines,
         HorizontalGridlines = new Gridlines()
             {
-                Strokes = App.Current.Resources["horizontalline"] as Gridlinestyle,
             },
         VerticalGridlines = new Gridlines()
             {
-                Strokes = App.Current.Resources["horizontalline"] as Gridlinestyle,
             },
     };
 
@@ -109,7 +115,9 @@ The thickness and the space between gridlines can be customized by using `LinesI
 {% highlight xaml %}
 <!--Initializes the double collection-->
 <local:Intervals x:Key="Intervals">
+    <!--Thickness of the grid line-->
     <sys:Double>0.25</sys:Double>
+    <!--Space between each gridlines-->
     <sys:Double>10</sys:Double>
     <sys:Double>0.5</sys:Double>
     <sys:Double>20</sys:Double>
@@ -140,17 +148,22 @@ The thickness and the space between gridlines can be customized by using `LinesI
 
 {% highlight C# %}
 
-//Initialize SnapSettings constraints with LineIntervals
-this.SnapSettings = new SnapSettings()
+//Initialize SfDiagram
+SfDiagram Diagram = new SfDiagram();
+
+//Initializes the double collection
+List<double> Intervals = new List<double>() { 0.25, 10, 0.5, 20, 1, 30, 1.25, 40, 1.5, 50 };
+//Initialize SnapSettings constraints with HorizontalGridlines and VerticalGridlines values
+Diagram.SnapSettings = new SnapSettings()
     {
         SnapConstraints = SnapConstraints.ShowLines,
         HorizontalGridlines = new Gridlines()
             {
-                LinesInterval = App.Current.Resources["Intervals"] as Intervals,
+                LinesInterval = Intervals,
             },
         VerticalGridlines = new Gridlines()
             {
-                LinesInterval = App.Current.Resources["Intervals"] as Intervals,
+                LinesInterval = Intervals,
             },
     };
 
