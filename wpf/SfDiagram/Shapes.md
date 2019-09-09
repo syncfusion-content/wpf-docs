@@ -13,18 +13,21 @@ We have provided some basic built-in shapes as ResourceDictionary.
 
 The following code example illustrates how to merge shapes into diagram.
 
+{% tabs %}
 {% highlight xaml %}
 <ResourceDictionary.MergedDictionaries>
        <!--Initialize Shapes-->
        <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml" />
 </ResourceDictionary.MergedDictionaries>  
 {% endhighlight %}
+{% endtabs %}
 
 
 ## Basic Shapes
 
 The following code example illustrates how to assign Shape property of the Node.
 
+{% tabs %}
 {% highlight xaml %}
 <!--Style for Node-->
 <Style TargetType="syncfusion:Node" >
@@ -39,12 +42,13 @@ The following code example illustrates how to assign Shape property of the Node.
    </Setter>
 </Style>
 {% endhighlight %}
-{% highlight xaml %}
+{% highlight C# %}
 <!--Add Node with basic shape-->
 <syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth=" 100" OffsetX="100" OffsetY="100" 
                           Shape="{StaticResource Rectangle}"
                           ShapeStyle="{StaticResource shapestyle}"/>   
 {% endhighlight %}
+{% endtabs %}
 
 Output Node will be,
 
