@@ -92,9 +92,11 @@ Diagram.SnapSettings = new SnapSettings()
         SnapConstraints = SnapConstraints.ShowLines,
         HorizontalGridlines = new Gridlines()
             {
+                Strokes = new List<Style>() { PathStyle }
             },
         VerticalGridlines = new Gridlines()
             {
+                Strokes = new List<Style>() { PathStyle }
             },
     };
 
