@@ -11,7 +11,7 @@ documentation: ug
 
 **Gridlines** are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 
-The `SnapConstraints` property of SnapSettings class enables you to control the visibility of the gridlines.
+The `SnapConstraints` property of SnapSettings class allows you to control the visibility of the gridlines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,7 +111,7 @@ Diagram.SnapSettings = new SnapSettings()
 
 ## Change grid spacing
 
-The thickness and the space between gridlines can be customized by using `LinesInterval` property of Gridlines class. The `LinesInterval` is a type of List<double> collection where the values at the odd indexes are referred as the thickness of lines and the values at the even indexes are referred as the space between gridlines.
+The thickness and space between the gridlines can be customized by using `LinesInterval` property of Gridlines class. The `LinesInterval` is a type of List<double> collection, where the values at the odd indexes are referred as thickness of the lines and the values at the even indexes are referred as space between the gridlines.
 
 {% tabs %}
 {% highlight xaml %}
