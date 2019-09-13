@@ -16,7 +16,7 @@ The `SnapConstraints` property of SnapSettings class allows you to control the v
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize SfDiagram-->
-<syncfusion:SfDiagram x:Name="Diagram" >
+<syncfusion:SfDiagram x:Name="diagram" >
   <!--Initialize SnapSettings constraints to show Gridlines-->
   <syncfusion:SfDiagram.SnapSettings >
     <syncfusion:SnapSettings SnapConstraints="ShowLines"/>
@@ -26,9 +26,9 @@ The `SnapConstraints` property of SnapSettings class allows you to control the v
 
 {% highlight C# %}
 //Initialize SfDiagram
-SfDiagram Diagram = new SfDiagram();
+SfDiagram diagram = new SfDiagram();
 //Initialize SnapSettings constraints to show Gridlines
-Diagram.SnapSettings = new SnapSettings()
+diagram.SnapSettings = new SnapSettings()
     {
         SnapConstraints = SnapConstraints.ShowLines,
     };
@@ -58,7 +58,7 @@ The `HorizontalGridLines` and `VerticalGridLines` properties of SnapSettings cla
 </local:Gridlinestyle>
 
 <!--Initialize SfDiagram-->
-<syncfusion:SfDiagram x:Name="Diagram" >
+<syncfusion:SfDiagram x:Name="diagram" >
     <!--Initialize SnapSettings-->
     <syncfusion:SfDiagram.SnapSettings>
         <syncfusion:SnapSettings SnapConstraints="ShowLines">
@@ -79,24 +79,24 @@ The `HorizontalGridLines` and `VerticalGridLines` properties of SnapSettings cla
 {% highlight C# %}
 
 //Initialize SfDiagram
-SfDiagram Diagram = new SfDiagram();
+SfDiagram diagram = new SfDiagram();
 //Style for HorizontalGridlines
-Style PathStyle = new Style(typeof(Path));
+Style pathStyle = new Style(typeof(Path));
 SolidColorBrush Strokes = new SolidColorBrush(Colors.Black);
-PathStyle.Setters.Add(new Setter(Shape.StrokeProperty, new SolidColorBrush(Colors.Blue)));
-PathStyle.Setters.Add(new Setter(Shape.StrokeDashArrayProperty, new DoubleCollection() { 3, 3 }));
+pathStyle.Setters.Add(new Setter(Shape.StrokeProperty, new SolidColorBrush(Colors.Blue)));
+pathStyle.Setters.Add(new Setter(Shape.StrokeDashArrayProperty, new DoubleCollection() { 3, 3 }));
 
 //Initialize SnapSettings constraints with HorizontalGridlines and VerticalGridlines values
-Diagram.SnapSettings = new SnapSettings()
+diagram.SnapSettings = new SnapSettings()
     {
         SnapConstraints = SnapConstraints.ShowLines,
         HorizontalGridlines = new Gridlines()
             {
-                Strokes = new List<Style>() { PathStyle }
+                Strokes = new Gridlinestyle { pathStyle }
             },
         VerticalGridlines = new Gridlines()
             {
-                Strokes = new List<Style>() { PathStyle }
+                Strokes = new Gridlinestyle { pathStyle }
             },
     };
 
@@ -132,7 +132,7 @@ The thickness and space between the gridlines can be customized by using `LinesI
 </local:Intervals>
 
 <!--Initialize SfDiagram-->
-<syncfusion:SfDiagram x:Name="Diagram" >
+<syncfusion:SfDiagram x:Name="diagram" >
     <syncfusion:SfDiagram.SnapSettings>
         <syncfusion:SnapSettings SnapConstraints="ShowLines">
             <!--Initialize HorizontalGridlines-->
@@ -151,21 +151,21 @@ The thickness and space between the gridlines can be customized by using `LinesI
 {% highlight C# %}
 
 //Initialize SfDiagram
-SfDiagram Diagram = new SfDiagram();
+SfDiagram diagram = new SfDiagram();
 
 //Initializes the double collection
-List<double> Intervals = new List<double>() { 0.25, 10, 0.5, 20, 1, 30, 1.25, 40, 1.5, 50 };
+Intervals intervals = new Intervals { 0.25, 10, 0.5, 20, 1, 30, 1.25, 40, 1.5, 50 };
 //Initialize SnapSettings constraints with HorizontalGridlines and VerticalGridlines values
-Diagram.SnapSettings = new SnapSettings()
+diagram.SnapSettings = new SnapSettings()
     {
         SnapConstraints = SnapConstraints.ShowLines,
         HorizontalGridlines = new Gridlines()
             {
-                LinesInterval = Intervals,
+                LinesInterval = intervals,
             },
         VerticalGridlines = new Gridlines()
             {
-                LinesInterval = Intervals,
+                LinesInterval = intervals,
             },
     };
 
