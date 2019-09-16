@@ -13,8 +13,9 @@ PDF viewer WPF allows the user to include the following shape annotations into t
 * Line annotations
 * Rectangle annotation
 * Circle annotation
-* Polygon Annotation
-* Polyline Annotation
+* Arrow shape
+* Polygon annotation
+* Polyline annotation
 
 # Line Annotation
 
@@ -693,6 +694,287 @@ Selecting delete option from the context menu which will be displayed by right c
 The following image illustrates how to delete the included annotation from the PDF document.
 
 ![](Annotation-images\Circle-Annotation-10.png)
+
+# Arrow Shape
+
+PDF viewer WPF allows the user to set arrow shape properties into the PDF document and provides options to edit or remove the existing line annotation in the PDF document.
+
+# How to set the stroke color of the arrow shape?
+
+The stroke color of the arrow shape included can be customized at the time of inclusion itself. The following code shows how to set stroke color of the arrow shape to be included.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+ PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+ pdfviewer.Load(pdf);
+ pdfviewer.ArrowAnnotationSettings.StrokeColor = Colors.Blue; 
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+    Dim pdf As PdfLoadedDocument = New PdfLoadedDocument("Input.pdf")
+    pdfviewer.Load(pdf)
+    pdfviewer.ArrowAnnotationSettings.StrokeColor = Colors.Blue
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the fill color of the arrow shape?
+
+The fill color of the arrow shape can be customized  at the time of inclusion itself. The following code shows how to set default fill color value of the included arrow annotation in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+ PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+ pdfviewer.Load(pdf);
+ pdfviewer.ArrowAnnotationSettings.FillColor = Colors.Blue; 
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+    Dim pdf As PdfLoadedDocument = New PdfLoadedDocument("Input.pdf")
+    pdfviewer.Load(pdf)
+    pdfviewer.ArrowAnnotationSettings.FillColor = Colors.Blue
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the opacity of the arrow shape?
+
+The opacity of the arrow shape can be customized at the time of inclusion itself. The following code shows how to set default opacity value of the included arrow shape in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+ PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+ pdfviewer.Load(pdf);
+ pdfviewer.ArrowAnnotationSettings.Opacity = 0.5f;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+    Dim pdf As PdfLoadedDocument = New PdfLoadedDocument("Input.pdf")
+    pdfviewer.Load(pdf)
+    pdfviewer.ArrowAnnotationSettings.Opacity = 0.5F
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the thickness of the arrow shape?
+
+The thickness of the arrow shape can be customized at the time of inclusion itself. The following code shows how to set the default thickness of the included arrow shape in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+ PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+ pdfviewer.Load(pdf);
+ pdfviewer.ArrowAnnotationSettings.Thickness = 5; 
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+    Dim pdf As PdfLoadedDocument = New PdfLoadedDocument("Input.pdf")
+    pdfviewer.Load(pdf)
+    pdfviewer.ArrowAnnotationSettings.Thickness = 5
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the begin and end style of the arrow shape?
+
+The begin and end style of the arrow shape can be added for the arrow shape to be added to the PDF document. The following code shows how to set default Begin and End style of the included arrow shape in code behind.
+
+{% tags %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e) 
+{
+ PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+ pdfviewer.Load(pdf);
+ pdfviewer.ArrowAnnotationSettings.BeginLineStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.OpenArrow;
+ pdfviewer.ArrowAnnotationSettings.EndLineStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.Diamond;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+    Dim pdf As PdfLoadedDocument = New PdfLoadedDocument("Input.pdf")
+    pdfviewer.Load(pdf)
+    pdfviewer.ArrowAnnotationSettings.BeginLineStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.OpenArrow
+    pdfviewer.ArrowAnnotationSettings.EndLineStyle = Syncfusion.Pdf.Interactive.PdfLineEndingStyle.Diamond
+End Sub
+
+{% endhighlight %}
+{% endtags %}
+
+# How to set the author and subject of the arrow shape?
+
+The author and subject fields of the arrow shape can be added for the shape to be added to the PDF document. The following code shows how to set default Author and subject of the included arrow shape in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+ PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+ pdfviewer.Load(pdf);
+ pdfviewer.ArroannotationSettings.Author = "Syncfusion Softwares";
+ pdfviewer.ArrowAnnotationSettings.Subject = "Line Annotation";
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+    Dim pdf As PdfLoadedDocument = New PdfLoadedDocument("Input.pdf")
+    pdfviewer.Load(pdf)
+    pdfviewer.ArroannotationSettings.Author = "Syncfusion Softwares"
+    pdfviewer.ArrowAnnotationSettings.Subject = "Line Annotation"
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# Working with included/existing arrow shape
+
+Arrow shape supports adding notes along with it, also it allows editing its color, opacity and thickness. To use these options, select the included/existing line annotation and click right using mouse, over the selected annotation, a pop up context menu will appear with the following options,
+
+* Open Pop-up note
+* Properties
+* Delete
+
+## Open Pop-up notes
+
+We can add notes to the arrow shape choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected arrow shape. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
+
+   ![](Annotation-images\Arrow-Annotation-1.png)
+
+## Properties
+
+Selecting properties from the context menu will display the arrow Properties window, which would consist of two tabs
+
+* Appearance
+* General 
+
+## Appearance tab
+
+The color, fill color, start style, end style, opacity and thickness of the arrow shape can be edited using Appearance tab of arrow Properties window.
+
+### Editing the thickness of the arrow shape
+
+Modifying the value in the NumericUpDown control in the Appearance tab of arrow shape properties window will allow us to modify the thickness of the selected arrow shape.
+
+The following image illustrates how to change the thickness of the arrow shape.
+
+   ![](Annotation-images\Arrow-Annotation-2.png)
+
+The following image illustrates the change in thickness of the selected arrow shape.
+
+   ![](Annotation-images\Arrow-Annotation-3.png)
+
+### Editing color of the annotation
+
+The color of the selected arrow shape will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the arrow shape.
+
+The following image illustrates how to change the color of the arrow shape included.
+
+   ![](Annotation-images\Arrow-Annotation-4.png)
+
+The following image illustrates the change in the color of the included arrow shape.
+
+   ![](Annotation-images\Arrow-Annotation-5.png)
+
+### Editing fill color of the annotation
+
+The fill color of the selected arrow shape will be displayed in the fill color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the arrow shape styles.
+
+The following image illustrates how to change the fill color of the arrow shape included.
+
+   ![](Annotation-images\Arrow-Annotation-6.png)
+
+The following image illustrates the change in the fill color of the included arrow shape.
+
+   ![](Annotation-images\Arrow-Annotation-7.png)
+
+### Editing opacity of the annotation
+
+The slider control displayed in the Appearance tab will allow us to modify the opacity of the selected arrow shape. You can also modify the opacity of the selected arrow shape by giving numeric value in the opacity text box.
+
+The following image illustrates how to change the opacity of the included arrow shape.
+
+  ![](Annotation-images\Arrow-Annotation-8.png)
+
+The following image illustrates the change in the opacity of the included arrow shape.
+
+   ![](Annotation-images\Arrow-Annotation-9.png)
+   
+### Editing start and end style of the arrow shape
+
+The combo box control displayed in the Appearance tab will allow us to modify the start and end style of the selected arrow shape.
+
+The following image illustrates how to change the start style of the included arrow shape.
+
+   ![](Annotation-image\Arrow-Annotation-10.png)
+
+The following image illustrates how to change the end style of the included arrow shape.
+
+   ![](Annotation-image\Arrow-Annotation-11.png)
+
+The following image illustrates the change in the start and end stye of the included arrow shape.
+
+   ![](Annotation-image\Arrow-Annotation-12.png)
+
+## General tab
+
+We can add/edit the default Author and Subject to the included arrow shape using General tab of the arrow Properties window.
+
+The following image illustrates the change in Author and Subject of the included arrow shape.
+
+  ![](Annotation-images\Arrow-Annotation-13.png)
+
+## Deleting an annotation
+
+Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
+
+The following image illustrates how to delete the included annotation from the PDF document.
+
+  ![](Annotation-images\Arrow-Annotation-14.png)
 
 # Polygon Annotation
 
