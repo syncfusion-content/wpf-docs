@@ -14,6 +14,7 @@ PDF viewer WPF allows the user to include the following shape annotations into t
 * Rectangle annotation
 * Circle annotation
 * Polygon Annotation
+* Polyline Annotation
 
 # Line Annotation
 
@@ -956,6 +957,232 @@ Selecting delete option from the context menu which will be displayed by right c
 The following image illustrates how to delete the included annotation from the PDF document.
 
  ![Delete polygon annotation](Annotation-images\Polygon-Annotation-12.png)
+ # Polyline Annotation
+
+PDF viewer allows the user to include polyline annotation into the PDF document and provides options to edit or remove the existing polyline annotation in the PDF document.
+
+The following code shows how to switch to polyline annotation mode in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Polyline;
+}
+
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Polyline
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+The following image shows the polyline annotation being included in the PDF Document.
+
+   ![](Annotation-images\Polyline-Annotation-1.png)
+
+# How to set the stroke color of polyline annotation?
+
+The stroke color of the polyline annotation included can be customized at the time of inclusion itself. The following code shows how to set stroke color of the polyline annotation to be included.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolylineAnnotationSettings.StrokeColor = Colors.Blue;
+}
+
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolylineAnnotationSettings.StrokeColor = Colors.Blue
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the opacity of the polyline annotation?
+
+The opacity of the polyline annotation can be customized at the time of inclusion itself. The following code shows how to set default opacity value of the included polyline annotation in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolylineAnnotationSettings.Opacity = 0.5f;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolylineAnnotationSettings.Opacity = 0.5F
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the thickness of the polyline annotation?
+
+The thickness of the polyline annotation can be customized at the time of inclusion itself. The following code shows how to set the default thickness of the included polyline annotation in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolylineAnnotationSettings.Thickness = 5;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolylineAnnotationSettings.Thickness = 5
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the author and subject of the polyline annotation?
+
+The author and subject fields of the polyline annotation can be added for the polyline annotation to be added to the PDF document. The following code shows how to set default author and subject of the included polyline annotation in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolylineAnnotationSettings.Author = "Syncfusion Softwares";
+    pdfviewer.PolylineAnnotationSettings.Subject = "Polygonal Line Annotation";
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolylineAnnotationSettings.Author = "Syncfusion Softwares"
+    pdfviewer.PolylineAnnotationSettings.Subject = "Polygonal Line Annotation"    
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# Working with included/existing polyline annotations
+
+Polyline annotation supports adding notes along with it, also it allows editing its color, opacity and thickness. To use these options, select the included/existing polyline annotation and click right using mouse, over the selected annotation, a pop up context menu will appear with the following options,
+
+* Open Pop-up note
+* Properties
+* Delete
+
+## Open Pop-up notes
+
+We can add notes to the polyline annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected polyline annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
+
+   ![](Annotation-images\Polyline-Annotation-2.png)
+
+## Properties
+
+Selecting properties from the context menu will display the polyline properties window, which would consist of two tabs
+
+* Appearance
+* General 
+
+## Appearance tab
+
+The color, opacity and thickness of the polyline annotation can be edited using Appearance tab of polyline properties window.
+
+### Editing the thickness of the polyline annotation
+
+Modifying the value in the NumericUpDown control in the Appearance tab of polyline annotation properties window will allow us to modify the thickness of the selected polyline annotation.
+
+The following image illustrates how to change the thickness of the polyline annotation.
+
+   ![](Annotation-images\Polyline-Annotation-3.png)
+
+The following image illustrates the change in thickness of the selected polyline annotation.
+
+   ![](Annotation-images\Polyline-Annotation-4.png)
+
+### Editing color of the annotation
+
+The color of the selected polyline annotation will be displayed in the color row in the appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the color to the polyline annotation.
+
+The following image illustrates how to change the color of the polyline annotation included.
+
+   ![](Annotation-images\Polyline-Annotation-5.png)
+
+The following image illustrates the change in the color of the included polyline annotation.
+
+   ![](Annotation-images\Polyline-Annotation-6.png)
+
+### Editing opacity of the annotation
+
+The slider control displayed in the Appearance tab will allow us to modify the opacity of the selected polyline annotation. You can also modify the opacity of the selected polyline annotation by giving numeric value in the opacity text box.
+
+The following image illustrates how to change the opacity of the included polyline annotation.
+
+  ![](Annotation-images\Polyline-Annotation-7.png)
+
+The following image illustrates the change in the opacity of the included polyline annotation.
+
+   ![](Annotation-images\Polyline-Annotation-8.png)
+
+## General tab
+
+We can add/edit the default Author and Subject to the included polyline annotation using General tab of the Polyline Properties window.
+
+The following image illustrates the change in Author and Subject of the included polyline annotation.
+
+  ![](Annotation-images\Polyline-Annotation-9.png)
+
+## Deleting an annotation
+
+Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
+
+The following image illustrates how to delete the included annotation from the PDF document.
+
+  ![](Annotation-images\Polyline-Annotation-11.png)
 
 ## Keyboard shortcuts
 
