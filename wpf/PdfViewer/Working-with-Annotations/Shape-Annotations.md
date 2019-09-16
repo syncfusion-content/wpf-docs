@@ -14,8 +14,8 @@ PDF viewer WPF allows the user to include the following shape annotations into t
 * Rectangle annotation
 * Circle annotation
 * Arrow shape
-* Polygon annotation
-* Polyline annotation
+* Polygon Annotation
+* Polyline Annotation
 
 # Line Annotation
 
@@ -697,7 +697,7 @@ The following image illustrates how to delete the included annotation from the P
 
 # Arrow Shape
 
-PDF viewer WPF allows the user to set arrow shape properties into the PDF document and provides options to edit or remove the existing line annotation in the PDF document.
+PDF viewer allows the user to set arrow shape properties into the PDF document and provides options to edit or remove the existing line annotation in the PDF document.
 
 # How to set the stroke color of the arrow shape?
 
@@ -729,7 +729,7 @@ End Sub
 
 # How to set the fill color of the arrow shape?
 
-The fill color of the arrow shape can be customized  at the time of inclusion itself. The following code shows how to set default fill color value of the included arrow annotation in code behind.
+The fill color of the arrow shape can be customized  at the time of inclusion itself. The following code shows how to set default fill color value of the included arrow shape in code behind.
 
 {% tabs %}
 {% highlight C# %}
