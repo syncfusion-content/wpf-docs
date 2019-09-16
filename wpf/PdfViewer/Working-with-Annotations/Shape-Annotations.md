@@ -13,6 +13,7 @@ PDF viewer WPF allows the user to include the following shape annotations into t
 * Line annotations
 * Rectangle annotation
 * Circle annotation
+* Polygon Annotation
 
 # Line Annotation
 
@@ -692,13 +693,277 @@ The following image illustrates how to delete the included annotation from the P
 
 ![](Annotation-images\Circle-Annotation-10.png)
 
+# Polygon Annotation
+
+PDF viewer allows the user to include polygon annotation into the PDF document and provides options to edit or remove the existing polygon annotation in the PDF document.
+
+The following code shows how to switch to polygon annotation mode in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Polygon;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.AnnotationMode = PdfDocumentView.PdfViewerAnnotationMode.Polygon
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+The following image shows the polygon annotation being included in the PDF Document.
+
+   ![Polygon Annotation](Annotation-images\Polygon-Annotation-1.png)
+
+# How to set the stroke color of the polygon annotation?
+
+The stroke color of the polygon annotation included can be customized at the time of inclusion itself. The following code shows how to set stroke color of the polygon annotation to be included.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolygonAnnotationSettings.StrokeColor = Colors.Blue;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolygonAnnotationSettings.StrokeColor = Colors.Blue
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the opacity of the polygon annotation?
+
+The opacity of the polygon annotation can be customized at the time of inclusion itself. The following code shows how to set default opacity value of the included polygon annotation in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolygonAnnotationSettings.Opacity = 0.5F;
+}
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolygonAnnotationSettings.Opacity = 0.5F
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the thickness of the polygon annotation?
+
+The thickness of the polygon annotation can be customized at the time of inclusion itself. The following code shows how to set the default thickness of the included polygon annotation in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolygonAnnotationSettings.Thickness = 5;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolygonAnnotationSettings.Thickness = 5
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the fill color of the polygon annotation?
+
+The fill color of the polygon annotation included can be customized at the time of inclusion itself. The following code shows how to set fill color of the polygon annotation to be included.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolygonAnnotationSettings.FillColor = Colors.Gray;
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolygonAnnotationSettings.FillColor = Colors.Gray
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# How to set the author and subject of the polygon annotation?
+
+The author and subject fields of the polygon annotation can be added for the polygon annotation to be added to the PDF document. The following code shows how to set default Author and subject of the included polygon annotation in code behind.
+
+{% tabs %}
+{% highlight C# %}
+
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument pdf = new PdfLoadedDocument("Input.pdf");
+    pdfviewer.Load(pdf);
+    pdfviewer.PolygonAnnotationSettings.Author = "Syncfusion Softwares";
+    pdfviewer.PolygonAnnotationSettings.Subject = "Polygon Annotation";  
+}
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim pdf As New PdfLoadedDocument(“Input.pdf”)
+    pdfViewer.Load(pdf)
+    pdfviewer.PolygonAnnotationSettings.Author = "Syncfusion Softwares"
+    pdfviewer.PolygonAnnotationSettings.Subject = "Polygon Annotation"    
+End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+# Working with included/existing polygon annotations
+
+Polygon annotation supports adding notes along with it, also it allows editing its stroke color, fill color, opacity and thickness. To use these options, select the included/existing polygon annotation and click right using mouse, over the selected annotation, a popup context menu will appear with the following options,
+
+* Open Pop-up note
+* Properties
+* Delete
+
+## Open Pop-up notes
+
+We can add notes to the polygon annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected polygon annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
+
+  ![Open popup note](Annotation-images\Polygon-Annotation-2.png)
+
+## Properties
+
+Selecting properties from the context menu will display the Polygon Properties window, which would consist of two tabs
+
+* Appearance
+* General 
+
+## Appearance tab
+
+The stroke color, fill color, thickness and opacity of the polygon annotation can be edited using Appearance tab of Polygon Properties window.
+
+### Editing the thickness of the polygon annotation
+
+Modifying the value in the NumericUpDown control in the Appearance tab of polygon annotation properties window will allow us to modify the thickness of the selected polygon annotation.
+
+The following image illustrates how to change the thickness of the polygon annotation.
+
+  ![Before applying polygon thickness](Annotation-images\Polygon-Annotation-3.png)
+
+The following image illustrates the change in thickness of the selected polygon annotation.
+
+  ![After applied polygon thickness](Annotation-images\Polygon-Annotation-4.png)
+
+### Editing stroke color of the annotation
+
+The stroke color of the selected polygon annotation will be displayed in the color row in the Appearance tab. Selecting the Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the stroke color to the polygon annotation.
+
+The following image illustrates how to change the stroke color of the polygon annotation included.
+
+  ![Before applying polygon stroke color](Annotation-images\Polygon-Annotation-5.png)
+
+The following image illustrates the change in the stroke color of the included polygon annotation.
+
+  ![After applied polygon stroke color](Annotation-images\Polygon-Annotation-6.png)
+  
+### Editing fill color of the annotation
+
+The fill color of the selected polygon annotation will be displayed in the Fill Color row in the Appearance tab. Selecting the Fill Color would displays the color palette control, choosing a color from the color palette and clicking OK will apply the fill color to the polygon annotation.
+
+The following image illustrates how to change the fill color of the polygon annotation included.
+
+  ![Before applying polygon fil color](Annotation-images\Polygon-Annotation-7.png)
+
+The following image illustrates the change in the fill color of the included polygon annotation.
+
+  ![After applied polygon fill color](Annotation-images\Polygon-Annotation-8.png)
+
+### Editing opacity of the annotation
+
+The slider displayed in the Appearance tab will allow us to modify the opacity of the selected polygon annotation. You can also modify the opacity of the selected polygon annotation by giving numeric value in the opacity text box.
+
+The following image illustrates how to change the opacity of the included polygon annotation.
+
+  ![Before applying polygon opacity](Annotation-images\Polygon-Annotation-9.png)
+
+The following image illustrates the change in the opacity of the included polygon annotation.	
+
+  ![After applied polygon opacity](Annotation-images\Polygon-Annotation-10.png)
+
+## General tab
+
+We can add/edit the default Author and Subject to the included polygon annotation using General tab of the Polygon Properties window.
+
+The following image illustrates the change in Author and Subject of the included polygon annotation.
+
+  ![General Tab](Annotation-images\Polygon-Annotation-11.png)
+
+## Deleting an annotation
+
+Selecting delete option from the context menu which will be displayed by right click on the selected annotation would delete the respective annotation from the PDF document.
+
+The following image illustrates how to delete the included annotation from the PDF document.
+
+ ![Delete polygon annotation](Annotation-images\Polygon-Annotation-12.png)
+
 ## Keyboard shortcuts
 
 The below keyboard shortcuts are available to customize the annotation in the PDF document.
 
 *	Delete key – Deletes the selected annotation from the PDF document.
-*	Ctrl + Z – Performs undo functionality for recently performed 5 operations.
-*	Ctrl + Y – Performs redo functionality for recently performed 5 operations.
+*	Ctrl + Z – Performs undo functionality for recently performed operations.
+*	Ctrl + Y – Performs redo functionality for recently performed operations.
 
 
 
