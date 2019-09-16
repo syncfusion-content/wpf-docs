@@ -956,7 +956,7 @@ The following image illustrates how to change the end style of the included arro
 
    ![](Annotation-image\Arrow-Annotation-11.png)
 
-The following image illustrates the change in the start and end stye of the included arrow shape.
+The following image illustrates the change in the start and end style of the included arrow shape.
 
    ![](Annotation-image\Arrow-Annotation-12.png)
 
