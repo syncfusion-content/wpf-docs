@@ -96,6 +96,24 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 
 N> To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/wpf/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
+## Using Components from NuGet
+
+Syncfusion provides the Visual Studio toolbox support from the Syncfusion WPF NuGet packages. After installing the Syncfusion WPF NuGet packages in application, the corresponding NuGet packages Syncfusion components are configured in Visual Studio toolbox. It is supported from Visual Studio 2010 and later. 
+ 
+N> Visual Studio toolbox support is available from the Essential Studio v17.3.0.9-beta.
+
+### Installing WPF Controls Package
+
+Create or open the WPF application. Open the “Manage NuGet Packages” in Visual Studio (right-click Project References > Manage NuGet Packages), you can select the "Browse" tab and search required Syncfusion WPF package.
+ 
+ ![WPF NuGet Package Manager](NuGet_Packages_Images/img5.png)
+ 
+### Toolbox support
+
+After installing the Syncfusion NuGet package, the controls will be configured under the category of Syncfusion Controls for WPF in the toolbox. Now, you can use the Syncfusion components by dragging and dropping on the design surface.
+
+![WPF Toolbox designer ](NuGet_Packages_Images/img6.png)
+
 ## Upgrading NuGet packages
 
 ### Using NuGet Package Manger 
