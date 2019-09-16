@@ -14,8 +14,8 @@ PDF viewer WPF allows the user to include the following shape annotations into t
 * Rectangle annotation
 * Circle annotation
 * Arrow shape
-* Polygon Annotation
-* Polyline Annotation
+* Polygon annotation
+* Polyline annotation
 
 # Line Annotation
 
