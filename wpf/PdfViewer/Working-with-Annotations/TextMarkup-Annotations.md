@@ -47,7 +47,7 @@ End Sub
 
 The following image shows the highlight annotation being included in the PDF Document.
 
- ![](Annotation-images\Highlight-Annotation-1.png)
+ ![highlight annotation](Annotation-images\Highlight-Annotation-1.png)
 
 # How to set the color of the highlight annotation?
 
@@ -147,7 +147,7 @@ Highlight annotation supports adding notes along with it, also it allows editing
 
 We can add notes to the highlight annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected highlight annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
- ![](Annotation-images\Highlight-Annotation-2.png)
+ ![highlight annotation](Annotation-images\Highlight-Annotation-2.png)
 
 ## Properties
 
@@ -166,11 +166,11 @@ The color of the selected highlight annotation will be displayed in the color ro
 
 The following image illustrates how to change the color of the highlight annotation included.
 
-![](Annotation-images\Highlight-Annotation-3.png)
+![highlight annotation](Annotation-images\Highlight-Annotation-3.png)
 
 The following image illustrates the change in the color of the included highlight annotation.
 
-![](Annotation-images\Highlight-Annotation-4.png)
+![highlight annotation](Annotation-images\Highlight-Annotation-4.png)
 
 ### Editing opacity of the annotation
 
@@ -178,11 +178,11 @@ The slider displayed in the Appearance tab will allow us to modify the opacity o
 
 The following image illustrates how to change the opacity of the included highlight annotation.
 
-![](Annotation-images\Highlight-Annotation-5.png)
+![highlight annotation](Annotation-images\Highlight-Annotation-5.png)
 
 The following image illustrates the change in the opacity of the included highlight annotation.
 
-![](Annotation-images\Highlight-Annotation-6.png)
+![highlight annotation](Annotation-images\Highlight-Annotation-6.png)
 
 ## General tab
 
@@ -190,7 +190,7 @@ We can add/edit the default Author and Subject to the included highlight annotat
 
 The following image illustrates the change in Author and Subject of the included highlight annotation.
 
-![](Annotation-images\Highlight-Annotation-7.png)
+![highlight annotation](Annotation-images\Highlight-Annotation-7.png)
 
 ## Deleting an annotation
 
@@ -198,7 +198,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-![](Annotation-images\Highlight-Annotation-8.png)
+![highlight annotation](Annotation-images\Highlight-Annotation-8.png)
 
 
 # Underline Annotation
@@ -233,7 +233,7 @@ End Sub
 
 The following image shows the underline annotation being included in the PDF Document.
 
- ![](Annotation-images\Underline-Annotation-1.png)
+ ![underline annotation](Annotation-images\Underline-Annotation-1.png)
 
 # How to set the color of the underline annotation?
 
@@ -333,7 +333,7 @@ Underline annotation supports adding notes along with it, also it allows editing
 
 We can add notes to the underline annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected underline annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
-![](Annotation-images\Underline-Annotation-2.png)
+![underline annotation](Annotation-images\Underline-Annotation-2.png)
 
 ## Properties
 
@@ -352,11 +352,11 @@ The color of the selected underline annotation will be displayed in the color ro
 
 The following image illustrates how to change the color of the underline annotation included.
 
-![](Annotation-images\Underline-Annotation-3.png)
+![underline annotation](Annotation-images\Underline-Annotation-3.png)
 
 The following image illustrated the change in color of the included underline annotation.
 
-![](Annotation-images\Underline-Annotation-4.png)
+![underline annotation](Annotation-images\Underline-Annotation-4.png)
 
 ### Editing opacity of the annotation
 
@@ -364,11 +364,11 @@ The slider displayed in the Appearance tab will allow us to modify the opacity o
 
 The following image illustrates how to change the opacity of the underline annotation.
 
-![](Annotation-images\Underline-Annotation-5.png)
+![underline annotation](Annotation-images\Underline-Annotation-5.png)
 
 The following image illustrates the change in opacity of the included underline annotation.
 
-![](Annotation-images\Underline-Annotation-6.png)
+![underline annotation](Annotation-images\Underline-Annotation-6.png)
 
 ## General tab
 
@@ -376,7 +376,7 @@ We can add/edit the default Author and Subject to the included underline annotat
 
 The following image illustrates the change in Author and Subject of the included Underline annotation.
 
-![](Annotation-images\Underline-Annotation-7.png)
+![underline annotation](Annotation-images\Underline-Annotation-7.png)
 
 ## Deleting an annotation
 
@@ -384,7 +384,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-![](Annotation-images\Underline-Annotation-8.png)
+![underline annotation](Annotation-images\Underline-Annotation-8.png)
 
 
 # Strikethrough Annotation
@@ -419,7 +419,7 @@ End Sub
 
 The following image shows the strikethrough annotation being included in the PDF Document.
 
- ![](Annotation-images\Strikethrough-Annotation-1.png)
+ ![strikethrough annotation](Annotation-images\Strikethrough-Annotation-1.png)
 
 # How to set the color of the strikethrough annotation?
 
@@ -521,7 +521,7 @@ Strikethrough annotation supports adding notes along with it, also it allows edi
 
 We can add notes to the strikethrough annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected strikethrough annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
-![](Annotation-images\Strikethrough-Annotation-2.png)
+![strikethrough annotation](Annotation-images\Strikethrough-Annotation-2.png)
 
 ## Properties
 
@@ -540,11 +540,11 @@ The color of the selected strikethrough annotation will be displayed in the colo
 
 The following image illustrates how to change the color of the strikethrough annotation included.
 
-![](Annotation-images\Strikethrough-Annotation-3.png)
+![strikethrough annotation](Annotation-images\Strikethrough-Annotation-3.png)
 
 The following image illustrates the change in color of the included Strikethrough annotation.
 
-![](Annotation-images\Strikethrough-Annotation-4.png)
+![strikethrough annotation](Annotation-images\Strikethrough-Annotation-4.png)
 
 ### Editing opacity of the annotation
 
@@ -553,11 +553,11 @@ The slider displayed in the Appearance tab will allow us to modify the opacity o
 
 The following image illustrates how to change the opacity of the strikethrough annotation.
 
-![](Annotation-images\Strikethrough-Annotation-5.png)
+![strikethrough annotation](Annotation-images\Strikethrough-Annotation-5.png)
 
 The following image illustrates the change in opacity of the included Strikethrough annotation.
 
-![](Annotation-images\Strikethrough-Annotation-6.png)
+![strikethrough annotation](Annotation-images\Strikethrough-Annotation-6.png)
 
 ## General tab
 
@@ -565,7 +565,7 @@ We can add/edit the default Author and Subject of the included strikethrough ann
 
 The following image illustrates the change in Author and Subject of the included Strikethrough annotation.
 
-![](Annotation-images\Strikethrough-Annotation-7.png)
+![strikethrough annotation](Annotation-images\Strikethrough-Annotation-7.png)
 
 ## Deleting an annotation
 
@@ -573,7 +573,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-![](Annotation-images\Strikethrough-Annotation-8.png)
+![strikethrough annotation](Annotation-images\Strikethrough-Annotation-8.png)
 
 ## Keyboard shortcuts
 
