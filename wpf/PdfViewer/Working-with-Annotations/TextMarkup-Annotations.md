@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inclusion of Text Markup Annotation in a PDF document.
+title: Inclusion of Text Markup Annotation in a PDF file using Syncfusion PDF viewer.
 description: Inclusion of Text Markup Annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
 platform: wpf
 control: PDF Viewer
