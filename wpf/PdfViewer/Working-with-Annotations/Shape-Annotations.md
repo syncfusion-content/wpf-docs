@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inclusion of Shape Annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
+title: Inclusion of Shape Annotation in a PDF document.
 description: Inclusion of Shape Annotation in a PDF document in Syncfusion Essential WPF PDF viewer.
 platform: wpf
 control: PDF Viewer
