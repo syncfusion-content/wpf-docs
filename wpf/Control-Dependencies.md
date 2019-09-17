@@ -1070,6 +1070,23 @@ Syncfusion.SfChromelessWindow.WPF
 </tr>
 </table>
 
+## SfCircularProgressBar
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfCircularProgressBar.WPF
+</td>
+<td> 
+Syncfusion.SfCircularProgressBar.WPF
+</td>
+</tr>
+</table>
+
 ## SfColorPalette
 
 <table>
@@ -1341,6 +1358,23 @@ Syncfusion.SfKanban.WPF
 </td>
 <td> 
 Syncfusion.SfKanban.WPF
+</td>
+</tr>
+</table>
+
+## SfLinearProgressBar
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfProgressBar.WPF
+</td>
+<td> 
+Syncfusion.SfProgressBar.WPF
 </td>
 </tr>
 </table>
