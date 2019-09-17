@@ -50,7 +50,7 @@ End Sub
 
 The following image shows the line annotation being included in the PDF Document.
 
-   ![](Annotation-images\Line-Annotation-1.png)
+   ![line annotation](Annotation-images\Line-Annotation-1.png)
 
 # How to set the color of the line annotation?
 
@@ -179,7 +179,7 @@ Line annotation supports adding notes along with it, also it allows editing its 
 
 We can add notes to the line annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected line annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
-   ![](Annotation-images\Line-Annotation-2.png)
+   ![line annotation](Annotation-images\Line-Annotation-2.png)
 
 ## Properties
 
@@ -198,11 +198,11 @@ Modifying the value in the NumericUpDown control in the Appearance tab of line a
 
 The following image illustrates how to change the thickness of the line annotation.
 
-   ![](Annotation-images\Line-Annotation-3.png)
+   ![line annotation](Annotation-images\Line-Annotation-3.png)
 
 The following image illustrates the change in thickness of the selected line annotation.
 
-   ![](Annotation-images\Line-Annotation-4.png)
+   ![line annotation](Annotation-images\Line-Annotation-4.png)
 
 ### Editing color of the annotation
 
@@ -210,11 +210,11 @@ The color of the selected line annotation will be displayed in the color row in 
 
 The following image illustrates how to change the color of the line annotation included.
 
-   ![](Annotation-images\Line-Annotation-5.png)
+   ![line annotation](Annotation-images\Line-Annotation-5.png)
 
 The following image illustrates the change in the color of the included line annotation.
 
-   ![](Annotation-images\Line-Annotation-6.png)
+   ![line annotation](Annotation-images\Line-Annotation-6.png)
 
 ### Editing opacity of the annotation
 
@@ -222,11 +222,11 @@ The slider control displayed in the Appearance tab will allow us to modify the o
 
 The following image illustrates how to change the opacity of the included line annotation.
 
-  ![](Annotation-images\Line-Annotation-7.png)
+  ![line annotation](Annotation-images\Line-Annotation-7.png)
 
 The following image illustrates the change in the opacity of the included line annotation.
 
-   ![](Annotation-images\Line-Annotation-8.png)
+   ![line annotation](Annotation-images\Line-Annotation-8.png)
 
 ## General tab
 
@@ -234,7 +234,7 @@ We can add/edit the default Author and Subject to the included line annotation u
 
 The following image illustrates the change in Author and Subject of the included line annotation.
 
-  ![](Annotation-images\Line-Annotation-9.png)
+  ![line annotation](Annotation-images\Line-Annotation-9.png)
 
 ## Deleting an annotation
 
@@ -242,7 +242,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-  ![](Annotation-images\Line-Annotation-10.png)
+  ![line annotation](Annotation-images\Line-Annotation-10.png)
 
 # Rectangle Annotation
 
@@ -276,7 +276,7 @@ End Sub
 
 The following image shows the rectangle annotation being included in the PDF Document.
 
-   ![](Annotation-images\Rectangle-Annotation-1.png)
+   ![rectangle annotation](Annotation-images\Rectangle-Annotation-1.png)
 
 # How to set the color of the rectangle annotation?
 
@@ -403,7 +403,7 @@ Rectangle annotation supports adding notes along with it, also it allows editing
 
 We can add notes to the rectangle annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected rectangle annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
-  ![](Annotation-images\Rectangle-Annotation-2.png)
+  ![rectangle annotation](Annotation-images\Rectangle-Annotation-2.png)
 
 ## Properties
 
@@ -422,11 +422,11 @@ Modifying the value in the NumericUpDown control in the Appearance tab of rectan
 
 The following image illustrates how to change the thickness of the rectangle annotation.
 
-  ![](Annotation-images\Rectangle-Annotation-3.png)
+  ![rectangle annotation](Annotation-images\Rectangle-Annotation-3.png)
 
 The following image illustrates the change in thickness of the selected rectangle annotation.
 
-  ![](Annotation-images\Rectangle-Annotation-4.png)
+  ![rectangle annotation](Annotation-images\Rectangle-Annotation-4.png)
 
 ### Editing color of the annotation
 
@@ -434,11 +434,11 @@ The color of the selected rectangle annotation will be displayed in the color ro
 
 The following image illustrates how to change the color of the rectangle annotation included.
 
-  ![](Annotation-images\Rectangle-Annotation-5.png)
+  ![rectangle annotation](Annotation-images\Rectangle-Annotation-5.png)
 
 The following image illustrates the change in the color of the included rectangle annotation.
 
-  ![](Annotation-images\Rectangle-Annotation-6.png)
+  ![rectangle annotation](Annotation-images\Rectangle-Annotation-6.png)
 
 ### Editing opacity of the annotation
 
@@ -446,11 +446,11 @@ The slider displayed in the Appearance tab will allow us to modify the opacity o
 
 The following image illustrates how to change the opacity of the included rectangle annotation.
 
-  ![](Annotation-images\Rectangle-Annotation-7.png)
+  ![rectangle annotation](Annotation-images\Rectangle-Annotation-7.png)
 
 The following image illustrates the change in the opacity of the included rectangle annotation.	
 
-  ![](Annotation-images\Rectangle-Annotation-8.png)
+  ![rectangle annotation](Annotation-images\Rectangle-Annotation-8.png)
 
 ## General tab
 
@@ -458,7 +458,7 @@ We can add/edit the default Author and Subject to the included rectangle annotat
 
 The following image illustrates the change in Author and Subject of the included rectangle annotation.
 
-  ![](Annotation-images\Rectangle-Annotation-9.png)
+  ![rectangle annotation](Annotation-images\Rectangle-Annotation-9.png)
 
 ## Deleting an annotation
 
@@ -466,7 +466,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
- ![](Annotation-images\Rectangle-Annotation-10.png)
+ ![rectangle annotation](Annotation-images\Rectangle-Annotation-10.png)
 
 
 
@@ -502,7 +502,7 @@ End Sub
 
 The following image shows the circle annotation being included in the PDF Document.
 
-  ![](Annotation-images\Circle-Annotation-1.png)
+  ![circle annotation](Annotation-images\Circle-Annotation-1.png)
 
 # How to set the color of the circle annotation?
 
@@ -630,7 +630,7 @@ Circle annotation supports adding notes along with it, also it allows editing it
 
 We can add notes to the circle annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected circle annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
- ![](Annotation-images\Circle-Annotation-2.png)
+ ![circle annotation](Annotation-images\Circle-Annotation-2.png)
 
 ## Properties
 
@@ -649,11 +649,11 @@ Modifying the value in the NumericUpDown control in the Appearance tab of circle
 
 The following image illustrates how to change the thickness of the circle annotation.
 
-![](Annotation-images\Circle-Annotation-3.png)
+![circle annotation](Annotation-images\Circle-Annotation-3.png)
 
 The following image illustrates the change in thickness of the selected circle annotation.
 
-![](Annotation-images\Circle-Annotation-4.png)
+![circle annotation](Annotation-images\Circle-Annotation-4.png)
 
 ### Editing color of the annotation
 
@@ -661,11 +661,11 @@ The color of the selected circle annotation will be displayed in the color row i
 
 The following image illustrates how to change the color of the circle annotation included.
 
-![](Annotation-images\Circle-Annotation-5.png)
+![circle annotation](Annotation-images\Circle-Annotation-5.png)
 
 The following image illustrates the change in the color of the included circle annotation.
 
-![](Annotation-images\Circle-Annotation-6.png)
+![circle annotation](Annotation-images\Circle-Annotation-6.png)
 
 ### Editing opacity of the annotation
 
@@ -673,11 +673,11 @@ The slider displayed in the Appearance tab will allow us to modify the opacity o
 
 The following image illustrates how to change the opacity of the included circle annotation.
 
-![](Annotation-images\Circle-Annotation-7.png)
+![circle annotation](Annotation-images\Circle-Annotation-7.png)
 
 The following image illustrates the change in the opacity of the included circle annotation.	
 
-![](Annotation-images\Circle-Annotation-8.png)
+![circle annotation](Annotation-images\Circle-Annotation-8.png)
 
 ## General tab
 
@@ -685,7 +685,7 @@ We can add/edit the default Author and Subject to the included circle annotation
 
 The following image illustrates the change in Author and Subject of the included circle annotation.
 
-![](Annotation-images\Circle-Annotation-9.png)
+![circle annotation](Annotation-images\Circle-Annotation-9.png)
 
 ## Deleting an annotation
 
@@ -693,7 +693,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-![](Annotation-images\Circle-Annotation-10.png)
+![circle annotation](Annotation-images\Circle-Annotation-10.png)
 
 # Arrow Shape
 
@@ -883,7 +883,7 @@ Arrow shape supports adding notes along with it, also it allows editing its colo
 
 We can add notes to the arrow shape choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected arrow shape. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
-   ![](Annotation-images\Arrow-Annotation-1.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-1.png)
 
 ## Properties
 
@@ -902,11 +902,11 @@ Modifying the value in the NumericUpDown control in the Appearance tab of arrow 
 
 The following image illustrates how to change the thickness of the arrow shape.
 
-   ![](Annotation-images\Arrow-Annotation-2.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-2.png)
 
 The following image illustrates the change in thickness of the selected arrow shape.
 
-   ![](Annotation-images\Arrow-Annotation-3.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-3.png)
 
 ### Editing color of the annotation
 
@@ -914,11 +914,11 @@ The color of the selected arrow shape will be displayed in the color row in the 
 
 The following image illustrates how to change the color of the arrow shape included.
 
-   ![](Annotation-images\Arrow-Annotation-4.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-4.png)
 
 The following image illustrates the change in the color of the included arrow shape.
 
-   ![](Annotation-images\Arrow-Annotation-5.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-5.png)
 
 ### Editing fill color of the annotation
 
@@ -926,11 +926,11 @@ The fill color of the selected arrow shape will be displayed in the fill color r
 
 The following image illustrates how to change the fill color of the arrow shape included.
 
-   ![](Annotation-images\Arrow-Annotation-6.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-6.png)
 
 The following image illustrates the change in the fill color of the included arrow shape.
 
-   ![](Annotation-images\Arrow-Annotation-7.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-7.png)
 
 ### Editing opacity of the annotation
 
@@ -938,11 +938,11 @@ The slider control displayed in the Appearance tab will allow us to modify the o
 
 The following image illustrates how to change the opacity of the included arrow shape.
 
-  ![](Annotation-images\Arrow-Annotation-8.png)
+  ![arrow shape](Annotation-images\Arrow-Annotation-8.png)
 
 The following image illustrates the change in the opacity of the included arrow shape.
 
-   ![](Annotation-images\Arrow-Annotation-9.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-9.png)
    
 ### Editing start and end style of the arrow shape
 
@@ -950,15 +950,15 @@ The combo box control displayed in the Appearance tab will allow us to modify th
 
 The following image illustrates how to change the start style of the included arrow shape.
 
-   ![](Annotation-image\Arrow-Annotation-10.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-10.png)
 
 The following image illustrates how to change the end style of the included arrow shape.
 
-   ![](Annotation-image\Arrow-Annotation-11.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-11.png)
 
 The following image illustrates the change in the start and end style of the included arrow shape.
 
-   ![](Annotation-image\Arrow-Annotation-12.png)
+   ![arrow shape](Annotation-images\Arrow-Annotation-12.png)
 
 ## General tab
 
@@ -966,7 +966,7 @@ We can add/edit the default Author and Subject to the included arrow shape using
 
 The following image illustrates the change in Author and Subject of the included arrow shape.
 
-  ![](Annotation-images\Arrow-Annotation-13.png)
+  ![arrow shape](Annotation-images\Arrow-Annotation-13.png)
 
 ## Deleting an annotation
 
@@ -974,7 +974,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-  ![](Annotation-images\Arrow-Annotation-14.png)
+  ![arrow shape](Annotation-images\Arrow-Annotation-14.png)
 
 # Polygon Annotation
 
@@ -1272,7 +1272,7 @@ End Sub
 
 The following image shows the polyline annotation being included in the PDF Document.
 
-   ![](Annotation-images\Polyline-Annotation-1.png)
+   ![polyline annotation](Annotation-images\Polyline-Annotation-1.png)
 
 # How to set the stroke color of polyline annotation?
 
@@ -1401,7 +1401,7 @@ Polyline annotation supports adding notes along with it, also it allows editing 
 
 We can add notes to the polyline annotation choosing Open Pop-up note option from the context menu. The following image illustrates the notes added to the selected polyline annotation. The added notes will be saved along with the PDF document and if there is any existing notes, it will be displayed in here.
 
-   ![](Annotation-images\Polyline-Annotation-2.png)
+   ![polyline annotation](Annotation-images\Polyline-Annotation-2.png)
 
 ## Properties
 
@@ -1420,11 +1420,11 @@ Modifying the value in the NumericUpDown control in the Appearance tab of polyli
 
 The following image illustrates how to change the thickness of the polyline annotation.
 
-   ![](Annotation-images\Polyline-Annotation-3.png)
+   ![polyline annotation](Annotation-images\Polyline-Annotation-3.png)
 
 The following image illustrates the change in thickness of the selected polyline annotation.
 
-   ![](Annotation-images\Polyline-Annotation-4.png)
+   ![polyline annotation](Annotation-images\Polyline-Annotation-4.png)
 
 ### Editing color of the annotation
 
@@ -1432,11 +1432,11 @@ The color of the selected polyline annotation will be displayed in the color row
 
 The following image illustrates how to change the color of the polyline annotation included.
 
-   ![](Annotation-images\Polyline-Annotation-5.png)
+   ![polyline annotation](Annotation-images\Polyline-Annotation-5.png)
 
 The following image illustrates the change in the color of the included polyline annotation.
 
-   ![](Annotation-images\Polyline-Annotation-6.png)
+   ![polyline annotation](Annotation-images\Polyline-Annotation-6.png)
 
 ### Editing opacity of the annotation
 
@@ -1444,11 +1444,11 @@ The slider control displayed in the Appearance tab will allow us to modify the o
 
 The following image illustrates how to change the opacity of the included polyline annotation.
 
-  ![](Annotation-images\Polyline-Annotation-7.png)
+  ![polyline annotation](Annotation-images\Polyline-Annotation-7.png)
 
 The following image illustrates the change in the opacity of the included polyline annotation.
 
-   ![](Annotation-images\Polyline-Annotation-8.png)
+   ![polyline annotation](Annotation-images\Polyline-Annotation-8.png)
 
 ## General tab
 
@@ -1456,7 +1456,7 @@ We can add/edit the default Author and Subject to the included polyline annotati
 
 The following image illustrates the change in Author and Subject of the included polyline annotation.
 
-  ![](Annotation-images\Polyline-Annotation-9.png)
+  ![polyline annotation](Annotation-images\Polyline-Annotation-9.png)
 
 ## Deleting an annotation
 
@@ -1464,7 +1464,7 @@ Selecting delete option from the context menu which will be displayed by right c
 
 The following image illustrates how to delete the included annotation from the PDF document.
 
-  ![](Annotation-images\Polyline-Annotation-11.png)
+  ![polyline annotation](Annotation-images\Polyline-Annotation-11.png)
 
 ## Keyboard shortcuts
 
