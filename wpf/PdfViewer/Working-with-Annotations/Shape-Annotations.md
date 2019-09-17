@@ -10,12 +10,12 @@ documentation: ug
 
 PDF viewer WPF allows the user to include the following shape annotations into the PDF document.
 
-* Line annotations
-* Rectangle annotation
-* Circle annotation
-* Arrow shape
-* Polygon annotation
-* Polyline annotation
+* Line.
+* Rectangle.
+* Circle.
+* Arrow.
+* Polygon.
+* Polyline.
 
 ## Line Annotation
 
