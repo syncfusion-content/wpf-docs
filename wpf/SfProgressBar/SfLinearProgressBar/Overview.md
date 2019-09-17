@@ -13,9 +13,9 @@ The SfLinearProgressBar control for in wpf provides a customizable visual to ind
 
 ![SfLinearProgressBar - Overview](Overview_images/Overview.png)
 
-#Key features
+## Key Features
 
-### Determinate and Indeteminate
+### Determinate and Indeterminate
 Determinate shows specific quantity of progress that occurred and indeterminate shows a redundant animations of linear progress.
 
 ### Corner radius

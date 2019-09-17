@@ -31,7 +31,7 @@ The SfLinearProgressBar control can be added to an application by dragging it fr
 
 * Syncfusion.SfProgressBar.WPF 
 
-![wpf SfLinearProgressBar control added by designer](Getting-Started_images/wpf-sfProgressBar-control-added-by-designer.png)
+![wpf SfLinearProgressBar control added by designer](Getting-Started_images/wpf-SfLinearProgressBar-control-added-by-designer.png)
 
 
 ## Add control manually in XAML
@@ -94,4 +94,4 @@ namespace SfProgressBar
     }
 }
 
-![wpf SfProgressBar control added by code](Getting-Started_images/wpf-sfProgressBar-control-added-manually.png)
+![wpf SfProgressBar control added by code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)

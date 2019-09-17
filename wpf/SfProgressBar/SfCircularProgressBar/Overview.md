@@ -13,9 +13,9 @@ The SfCircularProgressBar control for in wpf provides a customizable visual to i
 
 ![SfCircularProgressBar - Overview](Overview_images/Overview.png)
 
-#Key features
+## Key Features
 
-### Determinate and Indeteminate
+### Determinate and Indeterminate
 Determinate shows specific quantity of progress that occurred and indeterminate shows a redundant animations of circular progress.
 
 ### Custom content
@@ -28,7 +28,7 @@ Radius customization helps to change both inner and outer radii of the circular 
 Segment splits the ProgressBar into multiple segments and indicates the progress.
 
 ### Custom angle 
-Cstom angle shows the progress drawn to an specific angle for customized appearance.
+Custom angle shows the progress drawn to an specific angle for customized appearance.
 
 ### Segments
 Segment splits the ProgressBar into multiple segments and indicates the progress.
