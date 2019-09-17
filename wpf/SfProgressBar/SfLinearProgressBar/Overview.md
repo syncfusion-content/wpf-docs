@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfLinearProgressBar | Wpf | Syncfusion
+title: Overview | SfProgressBar | Wpf | Syncfusion
 description: Overview
 platform: wpf
 control: SfLinearProgressBar
@@ -12,6 +12,9 @@ documentation: ug
 The SfLinearProgressBar control for in wpf provides a customizable visual to indicate the progress of a lengthy operation and let users know the remaining time for completion.
 
 ![SfLinearProgressBar - Overview](Overview_images/Overview.png)
+
+SfLinearProgressBar 
+{:.caption}
 
 ## Key Features
 
@@ -25,7 +28,7 @@ It customizes the rounded edges in the linear ProgressBar.
 Padding generates space around the linear ProgressBar.
 
 ### Ranges
-Customizes the ranges with different colors in  linear progress bar. Specifies the start position and end position to visualize multiple ranges with     different colors that are mapped to each range.
+Customizes the ranges with different colors in linear progress bar. Specifies the start position and end position to visualize multiple ranges with different colors that are mapped to each range.
 
 ### Gradient 
 Gradient shows change in intensity of the colors during the linear progress.

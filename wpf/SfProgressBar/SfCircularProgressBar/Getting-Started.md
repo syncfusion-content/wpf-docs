@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfCircularProgressBar | Wpf | Syncfusion
+title: Overview | SfProgressBar | Wpf | Syncfusion
 description: Overview
 platform: wpf
 control: SfCircularProgressBar
@@ -33,7 +33,8 @@ The SfCircularProgressBar control can be added to an application by dragging it 
 
 ![wpf SfCircularProgressBar control added by designer](Getting-Started_images/wpf-SfCircularProgressBar-control-added-by-designer.png)
 
-
+SfCircularProgressBar control added by designer
+{:.caption}
 ## Add control manually in XAML
 
 To add control manually in XAML, follow the given steps:
@@ -99,5 +100,10 @@ namespace SfProgressBar
         }      
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
-![wpf SfProgressBar control added by code](Getting-Started_images/wpf-SfCircularinearProgressBar-control-added-manually.png)
+![wpf SfCircularProgressBar control added by code](Getting-Started_images/wpf-SfCircularProgressBar-control-added-manually.png)
+
+SfCircularProgressBar control added by code
+{:.caption}

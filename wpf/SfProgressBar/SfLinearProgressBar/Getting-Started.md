@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfLinearProgressBar | Wpf | Syncfusion
+title: Overview | SfProgressBar | Wpf | Syncfusion
 description: Overview
 platform: wpf
 control: SfLinearProgressBar
@@ -17,7 +17,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-## Creating a simple application with SfProgressBar
+## Creating a simple application with SfLinearProgressBar
 
 You can create a WPF application with the SfLinearProgressBar control using the following steps:
 
@@ -33,6 +33,8 @@ The SfLinearProgressBar control can be added to an application by dragging it fr
 
 ![wpf SfLinearProgressBar control added by designer](Getting-Started_images/wpf-SfLinearProgressBar-control-added-by-designer.png)
 
+SfLinearProgressBar control added by designer
+{:.caption}
 
 ## Add control manually in XAML
 
@@ -93,5 +95,9 @@ namespace SfProgressBar
         }      
     }
 }
-
+{% endhighlight %}
+{% endtabs %}
 ![wpf SfProgressBar control added by code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)
+
+SfLinearProgressBar control added by code
+{:.caption}
