@@ -1079,10 +1079,10 @@ Syncfusion.SfChromelessWindow.WPF
 </tr>
 <tr>
 <td> 
-Syncfusion.SfCircularProgressBar.WPF
+Syncfusion.SfProgressBar.WPF
 </td>
 <td> 
-Syncfusion.SfCircularProgressBar.WPF
+Syncfusion.SfProgressBar.WPF
 </td>
 </tr>
 </table>
