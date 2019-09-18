@@ -21,21 +21,17 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 You can create a WPF application with the SfCircularProgressBar control using the following steps:
 
-## Create a project
+## Adding control through designer
 
-Create a new WPF project in Visual Studio to display the SfCircularProgressBar with functionalities.
-
-## Add control through designer
-
-The SfCircularProgressBar control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
+The SfCircularProgressBar control can be added to a WPF application by dragging it from the toolbox to a designer view. The following assembly reference will be added automatically:
 
 * Syncfusion.SfProgressBar.WPF 
 
-![wpf SfCircularProgressBar control added by designer](Getting-Started_images/wpf-SfCircularProgressBar-control-added-by-designer.png)
+![wpf SfCircularProgressBar control added through designer](Getting-Started_images/wpf-SfCircularProgressBar-control-added-through-designer.png)
 
-SfCircularProgressBar control added by designer
+SfCircularProgressBar control added into designer
 {:.caption}
-## Add control manually in XAML
+## Adding control manually in XAML
 
 To add control manually in XAML, follow the given steps:
 
@@ -55,7 +51,7 @@ To add control manually in XAML, follow the given steps:
         xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApp4.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-     <Grid>
+     <Grid x:Name="grid">
         <Grid.RowDefinitions  >
             <RowDefinition Height="67*"/>
             <RowDefinition Height="143*"/>
@@ -72,9 +68,9 @@ To add control manually in XAML, follow the given steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Add control manually in C#
+## Adding  control through code behind
 
-To add control manually in C#, follow the given steps:
+To add control manually through code behind, follow the given steps:
 
 1.	Add the following required assembly references to the project:
    * Syncfusion.SfProgressBar.WPF
@@ -93,17 +89,20 @@ namespace SfProgressBar
     {                  
         public MainWindow()
         {
-            InitializeComponent();          
+            InitializeComponent();      
+                
             SfCircularProgressBar circular = new SfCircularProgressBar();
             circular.Progress = 70;
             circular.ProgressContent = "70 % Installed";
+            grid.Children.Add(circular);
+
         }      
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![wpf SfCircularProgressBar control added by code](Getting-Started_images/wpf-SfCircularProgressBar-control-added-manually.png)
+![wpf SfCircularProgressBar control added through code](Getting-Started_images/wpf-SfCircularProgressBar-control-added-manually.png)
 
-SfCircularProgressBar control added by code
+SfCircularProgressBar control added through code
 {:.caption}

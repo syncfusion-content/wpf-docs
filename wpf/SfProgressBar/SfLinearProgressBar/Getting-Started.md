@@ -21,28 +21,24 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 You can create a WPF application with the SfLinearProgressBar control using the following steps:
 
-## Create a project
+## Adding control through designer
 
-Create a new WPF project in Visual Studio to display the SfLinearProgressBar with functionalities.
-
-## Add control through designer
-
-The SfLinearProgressBar control can be added to an application by dragging it from the toolbox to a designer view. The following assembly references are added automatically:
+The SfLinearProgressBar control can be added to a WPF application by dragging it from the toolbox to a designer view. The following assembly reference will be added automatically:
 
 * Syncfusion.SfProgressBar.WPF 
 
-![wpf SfLinearProgressBar control added by designer](Getting-Started_images/wpf-SfLinearProgressBar-control-added-by-designer.png)
+![wpf SfLinearProgressBar control added through designer](Getting-Started_images/wpf-SfLinearProgressBar-control-added-through-designer.png)
 
-SfLinearProgressBar control added by designer
+SfLinearProgressBar control added into designer
 {:.caption}
 
-## Add control manually in XAML
+## Adding control manually in XAML
 
 To add control manually in XAML, follow the given steps:
 
-1.	Add the following required assembly references to the project:
+1.	Add the following required assembly reference to the project:
     * Syncfusion.SfProgressBar.WPF     
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** the in XAML page.
+2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
 3.	Declare the SfLinearProgressBar control in the XAML page.
 
 {% tabs %}
@@ -56,7 +52,7 @@ To add control manually in XAML, follow the given steps:
         xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApp4.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-     <Grid>
+     <Grid x:Name="grid">
         <Grid.RowDefinitions  >
             <RowDefinition Height="67*"/>
             <RowDefinition Height="143*"/>
@@ -68,13 +64,14 @@ To add control manually in XAML, follow the given steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Add control manually in C#
+## Adding control through code behind
 
-To add control manually in C#, follow the given steps:
+To add control manually through code behind, follow the given steps:
 
-1.	Add the following required assembly references to the project:
+1.	Add the following required assembly reference to the project:
    * Syncfusion.SfProgressBar.WPF
-2.	Import the SfLinearProgressBar namespace **using Syncfusion.UI.Xaml.ProgressBar;**.
+2.	Import the SfLinearProgressBar namespace
+    **using Syncfusion.UI.Xaml.ProgressBar;**
 3.	Create an SfLinearProgressBar instance, and add it to the window.
 
 {% tabs %}
@@ -90,14 +87,15 @@ namespace SfProgressBar
         public MainWindow()
         {
             InitializeComponent();
-            SfLinearProgressBar linear = new SfLinearProgressBar();           
+            SfLinearProgressBar linear = new SfLinearProgressBar();          
             linear.Progress = 70;
+            grid.Children.Add(linear);
         }      
     }
 }
 {% endhighlight %}
 {% endtabs %}
-![wpf SfProgressBar control added by code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)
+![wpf SfProgressBar control added through code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)
 
-SfLinearProgressBar control added by code
+SfLinearProgressBar control added through code
 {:.caption}
