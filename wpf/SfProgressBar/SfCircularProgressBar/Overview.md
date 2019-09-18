@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The SfCircularProgressBar control indicates the progress of an operation and let users know the remaining time for completion visulaizes in circular fashion.
+The SfCircularProgressBar control indicates the progress of an operation and let users know the remaining time for completion visualizes in circular fashion.
 
 ![SfCircularProgressBar - Overview](Overview_images/Overview.png)
 SfCircularProgressBar 
