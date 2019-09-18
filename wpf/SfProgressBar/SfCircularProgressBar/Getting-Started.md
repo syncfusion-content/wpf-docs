@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfProgressBar | Wpf | Syncfusion
+title: Overview | SfCircularProgressBar | Wpf | Syncfusion
 description: Overview
 platform: wpf
 control: SfCircularProgressBar
