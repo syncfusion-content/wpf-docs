@@ -113,7 +113,7 @@ schedule.Appointments[0].ReminderTime = ReminderTimeType.FifteenMin;
 ![Reminder-Window](Reminder_images/Reminder_img1.jpeg)
 
 ## Custom ReminderTime mapping for ScheduleAppointment
-ReminderTime supports to bind with your custom biniding object.
+ReminderTime supports to bind with your custom binding object.
 
 {% highlight c# %}
 /// <summary>
