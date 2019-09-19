@@ -23,5 +23,6 @@ The appearance of the CalendarEdit control can be customized by using the Visual
 * Metro
 * Transparent
 
+Please refer the more details about [setting the visual styles using skinstorage](https://help.syncfusion.com/wpf/introduction/themes)..
 
 
