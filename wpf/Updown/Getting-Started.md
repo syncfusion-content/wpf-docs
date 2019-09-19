@@ -1,57 +1,86 @@
 ---
 layout: post
-title: Getting Started | UpDown | WPF | Syncfusion
-description: Getting Started
+title: Getting Started with WPF UpDown control | Syncfusion
+description: This section describes about how to add UpDown control in WPF application.
 platform: wpf
 control: UpDown
 documentation: ug
 ---
 # Getting Started
 
-This section explains how to add `UpDown` control to an application and its structure.
+This section explains how to create WPF UpDown control and its structure.
 
-## Add UpDown control to an application
+## Structure of UpDown
 
-The `UpDown` control can be added to an application by using the following ways.
+![Structure of WPF UpDown](GettingStarted-images/wpf-updown-structure.jpeg)
 
-### Create the UpDown control by using XAML
 
-There are several ways to add Syncfusion control in to the Visual Studio WPF project. The following code example illustrates how to add the `UpDown` control to an application through XAML.
+The following are the elements of the UpDown control:
 
-* Create a WPF project in Visual Studio and refer “Syncfusion.Shared.Wpf” assembly to the project.    
-* Include an XML namespace for the above assemblies to the Main window.
+* **Text area** - It is the area where the numeric values are displayed. 
+* **Increment button** - It is a repeat button that can be clicked to increment the current value of the UpDown control.
+* **Decrement button** - It is a repeat button that can be clicked to decrement the current value of the UpDown control.
+
+## Assembly deployment
+
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#updown) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+
+[Click here](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details on how to install nuget packages in WPF application.
+
+## Adding WPF UpDown control via designer
+
+The [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control can be added to an application by dragging it from the toolbox to design view. The following dependent assembly will be added automatically.
+
+* Syncfusion.Shared.WPF
+
+![WPF UpDown drag from toolbox](GettingStarted-images/wpf-updown-toolbox.png)
+
+## Adding WPF UpDown control via XAML
+
+In order to add the [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control manually in XAML, do the below steps,
+
+1) Create a new WPF project in Visual Studio.
+
+2) Add the following required assembly reference to the project.
+
+* Syncfusion.Shared.WPF
+
+3) Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf and declare the UpDown control in XAML page.
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <Window x:Class="Application_New.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    
-Title="MainWindow" Height="350" Width="525">
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Name="grid">
+        <syncfusion:UpDown Name="upDown" Width="100" Height="23"/>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-* Now add the `UpDown` control with a required optimal name by using the included namespace
-
-{% tabs %}
-
-{% highlight XAML %}
-<syncfusion:UpDown Name="_upDown" Width="100" Height="23"/>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](GettingStarted-images/GettingStarted-img1.jpeg)
+![WPF UpDown control](GettingStarted-images/wpf-updown-designer.jpeg)
 
 
-###  Create the UpDown control by using C#
+## Adding WPF UpDown control via C#
 
-The following code example illustrates how to add the `UpDown` control to an application through C#.
+In order to add the UpDown control manually in C#, do the below steps,
+
+1) Create a new WPF application via Visual Studio.
+
+2) Add the following required assembly reference to the project.
+
+* Syncfusion.Shared.WPF
+
+3) Import UpDown namespace **Syncfusion.Windows.Shared**.
+
+3) Create an instance of UpDown control and add it to the main window.
 
 {% tabs %}
 
@@ -60,22 +89,121 @@ The following code example illustrates how to add the `UpDown` control to an app
 UpDown updown = new UpDown();
 updown.Width = 100;
 updown.Height = 23;
-Grid1.Children.Add(updown);
+grid.Children.Add(updown);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](GettingStarted-images/GettingStarted-img2.jpeg)
+![WPF UpDown control](GettingStarted-images/wpf-updown-code.jpeg)
 
+## Value
 
-## Structure
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Value.html) property is used for set the value to UpDown control.
 
-![](GettingStarted-images/GettingStarted-img3.jpeg)
+{% tabs %}
 
+{% highlight XAML %}
 
-The following are the elements of the `UpDown` control:
+<syncfusion:UpDown Name="upDown" Height="23" Value="10" Width="85"/>
 
-* **Text** **area** - It is the area where the numeric values are displayed. 
-* **Increment** **button** - It is a repeat button that can be clicked to increment the current value of the `UpDown` control.
-* **Decrement** **button** - It is a repeat button that can be clicked to decrement the current value of the `UpDown` control.
+{% endhighlight %}
+
+{% highlight C# %}
+
+updown.Value = 10;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Assign the value to WPF UpDown](GettingStarted-images/wpf-updown-value.png)
+
+## Step Value
+
+The [Step](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Step.html) property is used to specify the interval to increase or decrease the value while pressing the spin or repeat buttons in the UpDown control.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:UpDown Name="upDown" Height="25" Value="10" Step="5"  Width="90" />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+updown.Value = 10;
+updown.Step = 5;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Set the step value to WPF UpDown](GettingStarted-images/wpf-updown-stepvalue.gif)
+
+## Number formatting
+
+The number formatting of UpDown control can be customized by setting [UpDown.NumberFormatInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~NumberFormatInfo.html) property by specifying the culture-specific group separator, decimal separator, and the number of decimal digits. You can show the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~GroupSeperatorEnabled.html) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Window x:Class="Application_New.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:globalization="clr-namespace:System.Globalization;assembly=mscorlib" 
+        Title="MainWindow" Height="350" Width="525" >
+
+<syncfusion:UpDown Name="upDown"  Height="25" Width="90" Value="100000" GroupSeperatorEnabled="True">
+    <syncfusion:UpDown.NumberFormatInfo>
+        <globalization:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="3" NumberDecimalSeparator="*"/>
+    </ syncfusion:UpDown.NumberFormatInfo>  
+</ syncfusion:UpDown>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Assign a value
+updown.Value = 100000;
+
+//Initialize numberformatinfo
+NumberFormatInfo numberFormatInfo = new NumberFormatInfo();
+
+// set the format of number and group
+updown.GroupSeperatorEnabled = true;
+updown.NumberFormatInfo = numberFormatInfo;
+updown.NumberFormatInfo.NumberGroupSeparator = "/";
+updown.NumberFormatInfo.NumberDecimalDigits = 3;
+updown.NumberFormatInfo.NumberDecimalSeparator = "*";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Applied the number format to value of WPF UpDown](GettingStarted-images/wpf-updown-decimal.png)
+
+For more number formatting in UpDown control, you can use the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) property. The `Culture` property is used to format the values based on the respective culture.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:UpDown Name="upDown"  Height="25" Width="90" Value="100000" Culture="bs-Latn" GroupSeperatorEnabled="True">
+</syncfusion:UpDown>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+CultureInfo cultureInfo = new CultureInfo("bs-Latn");
+updown.Culture = cultureInfo;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Applied latin culture into WPF UpDown](GettingStarted-images/wpf-updown-culture.png)
