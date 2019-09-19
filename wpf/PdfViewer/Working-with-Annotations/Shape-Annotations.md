@@ -815,7 +815,7 @@ End Sub
 
 The begin and end style of the arrow shape can be added for the arrow shape to be added to the PDF document. The following code shows how to set default Begin and End style of the included arrow shape in code behind.
 
-{% tags %}
+{% tabs %}
 {% highlight C# %}
 
 private void Window_Loaded(object sender, RoutedEventArgs e) 
@@ -839,7 +839,7 @@ Private Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 End Sub
 
 {% endhighlight %}
-{% endtags %}
+{% endtabs %}
 
 ## How to set the author and subject of the arrow shape?
 
