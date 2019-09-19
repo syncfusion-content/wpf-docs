@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selected values of Auto Complete | SfTextBoxExt | wpf | Syncfusion
+title: Selected values of AutoComplete | SfTextBoxExt | wpf | Syncfusion
 description: Learn how to retrieve selected value from AutoComplete in SfTextBoxExt
 platform: wpf
 control: SfTextBoxExt
@@ -33,7 +33,7 @@ The following code snippet demonstrates how to set `SelectedItem`.
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
+        <Grid>
             <editors:SfTextBoxExt x:Name="textBoxExt" 
                                   HorizontalAlignment="Center" 
                                   VerticalAlignment="Center" 
@@ -91,6 +91,8 @@ namespace AutoCompleteSample
 
 {% endtabs %}
 
+![selected item](Auto-Complete_images/Auto-Complete_img25.png)
+
 ### Retrieving selected items
 
 AutoComplete provides a way to get the selected item using the `SelectionChanged` event.
@@ -111,7 +113,7 @@ The following code example demonstrates how to retrieve SelectedItem.
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
+        <Grid>
             <editors:SfTextBoxExt x:Name="textBoxExt" 
                               HorizontalAlignment="Center" 
                               VerticalAlignment="Center" 
@@ -169,6 +171,7 @@ namespace AutoCompleteSample
 
         private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
+            string selectedItem = "";
             if ((d as SfTextBoxExt).SelectedItem != null)
             {
                 selectedItem = ((d as SfTextBoxExt).SelectedItem).ToString();
@@ -182,6 +185,8 @@ namespace AutoCompleteSample
 {% endhighlight %}
 
 {% endtabs %}
+
+![selected item](Auto-Complete_images/Auto-Complete_img26.png)
 
 ## Retrieving selected value
 
@@ -209,7 +214,7 @@ The following code example demonstrates how to retrieve SuggestionIndex.
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
+        <Grid>
             <editors:SfTextBoxExt x:Name="textBoxExt" 
                               HorizontalAlignment="Center" 
                               VerticalAlignment="Center" 
@@ -267,6 +272,7 @@ namespace AutoCompleteSample
 
         private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
+            string suggestionIndex = "";
             suggestionIndex = ((d as SfTextBoxExt).SuggestionIndex).ToString();
             MessageBoxResult messageBoxResult = MessageBox.Show(suggestionIndex, "SuggestionIndex");
         }
@@ -274,6 +280,6 @@ namespace AutoCompleteSample
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
+![suggestion index](Auto-Complete_images/Auto-Complete_img27.png)

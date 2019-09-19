@@ -29,14 +29,14 @@ The suggestion box can be placed either at the top or bottom using the `Suggesti
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              SuggestionBoxPlacement="Top"
-                              Width="300"/>
-    </Grid>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  AutoCompleteMode="Suggest"
+                                  SuggestionBoxPlacement="Top"
+                                  Width="300"/>
+        </Grid>
     </Window.Content>
 </Window>
 
@@ -107,14 +107,14 @@ The maximum height of the suggestion box in the Autocomplete control can be chan
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              MaxDropDownHeight="500"
-                              Width="300"/>
-    </Grid>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt"
+                                  HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  AutoCompleteMode="Suggest"
+                                  MaxDropDownHeight="500"
+                                  Width="300"/>
+        </Grid>
     </Window.Content>
 </Window>
 
@@ -185,14 +185,14 @@ Suggestion box can be shown whenever the control receives focus using the `ShowS
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              ShowSuggestionsOnFocus="True"
-                              Width="300"/>
-    </Grid>
+        <Grid>
+            <editors:SfTextBoxExt x:Name="textBoxExt" 
+                                  HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" 
+                                  AutoCompleteMode="Suggest"
+                                  ShowSuggestionsOnFocus="True"
+                                  Width="300"/>
+        </Grid>
     </Window.Content>
 </Window>
 
@@ -245,78 +245,4 @@ namespace AutoCompleteSample
 
 ![ShowSuggestionsOnFocus](Auto-Complete_images/suggestion_on_focus.png)
 
-## Avoid opening suggestion box
 
-The `SuggestionBoxPlacement` API is used to position the suggestion box in AutoComplete control. It also supports to avoid popup using None mode.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<Window x:Class="AutoCompleteSample.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AutoCompleteSample"
-        mc:Ignorable="d"
-        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
-        Title="MainWindow" Height="450" Width="800">
-    <Window.Content>
-    <Grid>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              AutoCompleteMode="Suggest"
-                              SuggestionBoxPlacement="None"
-                              Width="300"/>
-    </Grid>
-    </Window.Content>
-</Window>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using Syncfusion.Windows.Controls.Input;
-using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Media;
-
-namespace AutoCompleteSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-            SfTextBoxExt textBoxExt = new SfTextBoxExt()
-            {
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center,
-                Width = 200,
-                AutoCompleteMode = AutoCompleteMode.Suggest,
-                SuggestionBoxPlacement = SuggestionBoxPlacement.None
-            };
-
-            List<string> list = new List<string>()
-            {
-                 "India",
-                 "Uganda",
-                 "Ukraine",
-                 "Canada",
-                 "United Arab Emirates"
-            };
-
-            textBoxExt.AutoCompleteSource = list;
-            this.Content = textBoxExt;
-        }
-    }
-}
-
-{% endhighlight %}
-
-{% endtabs %}
