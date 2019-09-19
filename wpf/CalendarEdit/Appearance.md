@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance | CalendarEdit | WPF | Syncfusion
-description: appearance 
+description: How to apply theme for CalendarEdit control for WPF? 
 platform: wpf
 control: CalendarEdit
 documentation: ug
@@ -25,7 +25,7 @@ Below example explains how to apply Metro theme for CalenderEdit using `SfSkinMa
 xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
 
 <Grid>
-<syncfusion:CalendarEdit x:Name="calendar"   skinManager:SfSkinManager.VisualStyle="Metro"/>    
+<syncfusion:CalendarEdit x:Name="calendar" skinManager:SfSkinManager.VisualStyle="Metro"/>    
 </Grid>   
 {% endhighlight %}
 {% highlight c# %}
@@ -41,6 +41,6 @@ SfSkinManager.SetVisualStyle(calendar, VisualStyles.Metro);
 <li>Now run the application, you can see Metro theme applied for CalenderEdit.</li>
 </ul>
 
-![Display Metro theme implemented for WPF CalenderEdit](Themes_images/themes_img1.png)
+![Display Metro theme applied for CalenderEdit](Themes_images/themes_img1.png)
 
 
