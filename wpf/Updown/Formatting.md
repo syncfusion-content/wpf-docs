@@ -91,6 +91,8 @@ updown.NumberFormatInfo.NumberGroupSeparator = "/";
 updown.NumberFormatInfo.NumberDecimalDigits = 4;
 updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
+{% endhighlight %}
+
 {% endtabs %} 
 
 ![Applied group and decimal separator of number format to WPF UpDown](CultureandNumberFormatting-images/wpf-updown-numberformat.png)
@@ -99,7 +101,7 @@ updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
 The UpDown control provides globalization support to change the culture of the control by using the [Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~Culture.html) property. The culture is used to format the decimal separator and group separator based on the respective culture.
 
-For example, the latin culture is used into the UpDown control.
+For example, the Latin culture is used into the UpDown control.
 
 {% tabs %}
 
