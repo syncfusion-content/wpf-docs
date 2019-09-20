@@ -91,6 +91,8 @@ updown.NumberFormatInfo.NumberGroupSeparator = "/";
 updown.NumberFormatInfo.NumberDecimalDigits = 4;
 updown.NumberFormatInfo.NumberDecimalSeparator = "*";
 
+{% endhighlight %}
+
 {% endtabs %} 
 
 ![Applied group and decimal separator of number format to WPF UpDown](CultureandNumberFormatting-images/wpf-updown-numberformat.png)
