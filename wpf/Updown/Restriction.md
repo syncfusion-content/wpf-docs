@@ -198,7 +198,7 @@ The [AllowEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfus
 
 updown.AllowEdit = false;
 
-{% endhighligt %}
+{% endhighlight %}
 
 {% endtabs %}
 
