@@ -641,7 +641,7 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 {% endtabs %}
 
 #### Visualization of Stencil elements
-Declare the style for Node, Connector, symbol and symbolgroup to visualize the elements in the stencil.
+Declare the style for Node, Connector, symbol and symbol group to visualize the elements in the stencil.
 
 {% tabs %}
 {% highlight xaml %}
