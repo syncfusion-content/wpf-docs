@@ -32,13 +32,13 @@ SfDiagram control can be added to the application by dragging it from Toolbox an
 
 ### Adding control manually in XAML
 
-In order to add control manually in XAML, do the below steps:
+To add control manually in XAML, do the following steps:
 
-1. Add the below required assembly reference to the project, Syncfusion.SfDiagram.WPF .
+1. Add the following required assembly reference to the project, Syncfusion.SfDiagram.WPF .
 2. Import Syncfusion WPF schema  http://schemas.syncfusion.com/wpf or SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
 3. Declare SfDiagram control in XAML page.
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WPF application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use Syncfusion components.
     
 {% tabs %}
 {% highlight xaml %}
@@ -61,11 +61,11 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 {% endtabs %}
 
-### Adding control manually in C\#
+### Adding control manually in C#
 
-In order to add control manually in C#, do the below steps:
+To add control manually in C#, do the following steps:
 
-1. Add the below required assembly references to the project, Syncfusion.SfDiagram.WPF.
+1. Add the following required assembly references to the project, Syncfusion.SfDiagram.WPF.
 2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
 3. Create SfDiagram control instance and add it to the Grid.
 
@@ -95,22 +95,22 @@ namespace SfDiagram_WPF
 
 {% endtabs %}
 
-## Basic Diagram elements:
+## Basic Diagram elements
 
 
-* **Node:** Visualize any graphical object using nodes, which can also be arranged and manipulated on a diagram page.
-* **Connector:** A connector is used to represent a relationship between two nodes. Four types of connectors provided are as follows:
+* **Node:** Visualizes any graphical object using nodes, which can also be arranged and manipulated on a diagram page.
+* **Connector:** Represents the relationship between two nodes. Four types of connectors provided as follows:
 
        1) Orthogonal
        2) Bezier
        3) Straight
        4) Cubic Bezier
 
-* **Port:** Port act as the connection points of node/connector and allows to create connections with only specific points. 
-* **Annotation:** Show additional information by adding text or labels on nodes and connectors. 
+* **Port:** Acts as the connection points of node or connector and allows you to create connections with only specific points. 
+* **Annotation:** Shows additional information by adding text or labels on nodes and connectors. 
 
 
-## Flow Chart
+## Flow chart
 Let us create a simple flow chart using SfDiagram.
 
 #### Initialize the Diagram
@@ -136,10 +136,10 @@ SfDiagram diagram =new SfDiagram();
 
 {% endtabs %}
 
-#### Initialize Nodes and Connectors
+#### Initialize nodes and connectors
 
-To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. 
-Connectors property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
+To initialize the nodes and connectors properties of the SfDiagram, the Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. 
+The Connectors property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
 
 {% tabs %}
 
@@ -175,13 +175,13 @@ Connectors property is assigned with the ConnectorCollection, that is, Observabl
 
 {% endtabs %}
 
-### Add Nodes
+### Add nodes
 
- Let us create and add a NodeViewModel with height, width, shape, shape style,specific position, size and Annotation.
+ Let us create and add a NodeViewModel with height, width, shape, shape style, specific position, size, and annotation.
 
-#### Creating a Node
+#### Creating a node
 
-Creating NodeViewModel with Specified Height and Width.
+Creating NodeViewModel with specified height and width.
 
 {% tabs %}
 {% highlight xaml %}
@@ -195,7 +195,7 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding specific position to Node
+#### Adding specific position to node
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,9 +209,9 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding Shape and ShapeStyle to Node
+#### Adding shape and ShapeStyle to node
 
- We have provided set of basic shapes for Diagram as ResourceDictionary. In order to use the built-in shapes, Shapes dictionary should be merged in Application.  
+ We have provided set of basic shapes for Diagram as ResourceDictionary. To use the built-in shapes, Shapes dictionary should be merged in the application.  
  Please refer to [Shapes](/wpf/sfdiagram/shapes) to know about built-in Shapes.
  
 {% tabs %}
@@ -249,15 +249,15 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
- Now Node will be looking like,
+ Now, the node will be as follows.
    
 ![AddNode](Getting-Started_images\addNode.png)
    
 N> ID sets for each node to identify nodes easily while setting connectors.
    
-#### Adding Annotation to node
+#### Adding annotation to node
    
- To initialize the Annotation property of the Node and Connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
+ To initialize the Annotation property of the node and connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
  
  {% highlight xaml %}
   <!--To apply Style for AnnotationEditorViewModel-->
@@ -305,13 +305,13 @@ N> `Annotations` property is a collection, which indicates that more than one An
 {% endhighlight %}
 {% endtabs %}
 
-Now Node will be looking like,
+Now, the node will be as follows.
  
 ![NodeAnnotation](Getting-Started_images\nodeAnnotation.PNG)
  
-### Nodes for Flow Diagram
+### Nodes for flow diagram
 
- We can add multiple Nodes with different shapes into diagram as NodeViewModel.
+ You can add multiple nodes with different shapes into diagram as NodeViewModel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -382,17 +382,17 @@ NodeViewModel End = AddNode(300, 225, 40, 40, "End", "Ellipse");
 {% endhighlight %}
 {% endtabs %}
 
- Finally all Nodes added to diagram and it will be looking like
+ Finally, all the nodes are added to diagram and they will be as follows.
 
 ![CompleteNodes](Getting-Started_images\completeNodes.png)
 
-### Add Connectors
+### Add connectors
 
- Connector is to make connection or link between two Nodes, Ports and Points.
+ Connector is to make connection or link between two nodes, ports, and points.
 
-#### Create Connector With Source Node and Target Node 
+#### Create connector With source node and target node 
 
- Here, we have used `SourceNodeID` and `TargetNodeID` property of the Connector.These properties will be assigned with `ID` property of the Node.
+ Here, the `SourceNodeID` and `TargetNodeID` properties of the Connector are used. These properties will be assigned with the `ID` property of the node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -407,7 +407,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding Connector geometry style
+#### Adding connector geometry style
 
 {% tabs %}
 {% highlight xaml %}
@@ -448,13 +448,13 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-Now output will be,
+Now, the output will be as follows.
 
  ![NodewithConnector](Getting-Started_images\nodewithConnector.png)
  
-#### Connectors for Flow diagram
+#### Connectors for flow diagram
 
-Now we can connect all nodes using ConnectorViewModel.
+Now, you can connect all nodes using ConnectorViewModel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -490,18 +490,18 @@ private ConnectorViewModel CreateConnector(string source, string target)
 {% endhighlight %} 
 {% endtabs %}
 
-Now output will be looking like,
+Now, the output will be as follows.
 
 ![CompleteDiagram](Getting-Started_images\completeDiagram.png)
     
-Please find flow Diagram sample from this link: [FlowChart](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/FlowDiagram_XAML-1022159515).
+Find the flow diagram sample from this link: [FlowChart](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/FlowDiagram_XAML-1022159515).
 
-### Flowchart creation using Stencil
+### Flowchart creation using stencil
 
 Let us create a simple flowchart diagram using stencil.
 
-#### Define Stencil
-`Stencil` is a Gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface at any number of times.
+#### Define stencil
+`Stencil` is a gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface at any number of times.
 
 {% tabs %}
 {% highlight xaml %}
@@ -517,7 +517,7 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 {% endtabs %}
 
 #### Define SymbolSource
-`SymbolSource` is the property of Stencil which is Collection of objects (i.e,Symbol,Node,Connector etc..). Based on the SymbolSource, the Stencil will populate the Symbols.And the `SymbolGroupProvider` groups the symbols into SymbolGroup based on the `MappingName` property.
+`SymbolSource` is the property of stencil, which is a collection of objects like symbol, node, connector, and more. Based on the SymbolSource, the Stencil will populate the Symbols. And the `SymbolGroupProvider` groups the symbols into SymbolGroup based on the `MappingName` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -640,8 +640,8 @@ xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-#### Visualization of Stencil elements
-Declare the style for Node, Connector, symbol and symbol group to visualize the elements in the stencil.
+#### Visualization of stencil elements
+Declare the style for node, connector, symbol, and symbol group to visualize the elements in the stencil.
 
 {% tabs %}
 {% highlight xaml %}
@@ -720,26 +720,26 @@ Declare the style for Node, Connector, symbol and symbol group to visualize the 
 {% endhighlight %}
 {% endtabs %}
 
-Output will be as follows,
+The output will be as follows.
 
 ![Stencil output](Getting-Started_images\Stencil_output.PNG)
 
 #### Interaction with stencil
 
-We have represented the steps to interact with stencil (such as drag and drop elements from stencil to diagram) in the below gif.
+We have represented the steps to interact with stencil such as drag and drop elements from stencil to diagram in the following gif.
 
 ![StencilDiagram](Getting-Started_images\StencilDiagram.gif)
 
-Download the complete stencil sample from the below [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/StencilCreation339429762)
+Download the complete stencil sample from [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/StencilCreation339429762).
 
-For more information about stencil, please [refer](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements) 
+For more information about stencil, please [refer](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements). 
 
-## Organization Layout
+## Organization layout
 
 SfDiagram provides support to auto-arrange the nodes in the diagram area that is referred as Layout.
 
-#### Business object (Employee information)
-Define Employee Information as collection of data. The following code example shows an employee information whose, EmpId is used as an unique identifier and ParentId is used to identify the person to whom an employee report to, in the organization.
+#### Business object (employee information)
+Define employee information as collection of data. The following code example shows the employee information whose, EmpId is used as an unique identifier and ParentId is used to identify the person to whom an employee report to, in the organization.
 
 {% tabs %}
 {% highlight xaml %}
@@ -787,7 +787,7 @@ public class Employees:ObservableCollection<Employee>
 
 #### Map DataSource with Diagram
 
-You can configure the above “Employee Information” with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example show how dataSourceSettings is used to map Id , ParentId and DataSource with property name identifiers for employee information.
+You can configure the above “Employee Information” with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example shows how dataSourceSettings is used to map ID , ParentId and DataSource with property name identifiers for employee information.
 
 {% tabs %}
 {% highlight xaml %}
@@ -822,8 +822,8 @@ diagram.DataSourceSettings = new DataSourceSettings()
 {% endhighlight %}
 {% endtabs %}
 
-#### Rendering Layout with DataSource
-To create an organizational chart,TreeLayout type should be set to `LayoutType.Organization`.The following code example show how LayoutManager is used to generate TreeLayout based on the DataSourceSettings of the Diagram.
+#### Rendering layout with DataSource
+To create an organizational chart, TreeLayout type should be set to `LayoutType.Organization`. The following code example shows how LayoutManager is used to generate TreeLayout based on the DataSourceSettings of the Diagram.
 
 {% tabs %}
 {% highlight xaml %}
@@ -906,11 +906,11 @@ RootGrid.Children.Add(diagram);
 {% endhighlight %}
 {% endtabs %}
 
-Output will be as follows,
+The output will be as follows.
 
 ![OrgLayout](Getting-Started_images\orglayout.PNG)
 
-Download the complete sample from the following [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Orgchartcreation1902878733)
+Download the complete sample from [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Orgchartcreation1902878733)
 
-For more information about Layout, please [refer](https://help.syncfusion.com/wpf/sfdiagram/automatic-layouts)
+For more information about Layout, [refer](https://help.syncfusion.com/wpf/sfdiagram/automatic-layouts)
 
