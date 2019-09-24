@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutoHide Window of Syncfusion DockingManager control for WPF
-description: Learn how to customize SidePanel, SideTabItem and change pinning behaviour of AutoHide window
+title: AutoHide Windows | Docking Manager | Syncfusion
+description: This section describes how to customize SidePanel, SideTabItem and change pinning behaviour of AutoHide window.
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -109,7 +109,7 @@ DockingManager.SetTargetNameInDockedMode(Properties, "SolutionExplorer");
 
 ## Side panel Customization
 
-The side panel and side panel header can be customized by applying its Background, BorderBrush and BorderThickness through [SidePanelBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBackground.html), [SidePanelBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBorderBrush.html), [SidePanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBorderThickness.html), SideItemBackground and SideItemBorderBrush properties of the DockingManager.
+The side panel and side panel header can be customized by applying its Background, BorderBrush, BorderThickness and SidePanelSize through [SidePanelBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBackground.html), [SidePanelBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBorderBrush.html), [SidePanelBorderThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelBorderThickness.html),  [SidePanelSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SidePanelSize.html) properties of the DockingManager. You can also refer to this [sample ](https://github.com/SyncfusionExamples/How-to-customize-the-auto-hide-window-of-the-docking-manager.git) which demonstrate the side panel customization.
 
 {% tabs %}
 
@@ -117,7 +117,7 @@ The side panel and side panel header can be customized by applying its Backgroun
 
 <syncfusion:DockingManager SidePanelBackground="Brown"
                            SidePanelBorderBrush="Yellow" SideItemsBackground="Green"
-                           SidePanelBorderThickness="2,2,2,2" SideItemsBorderBrush="BlueViolet">
+                           SidePanelBorderThickness="2,2,2,2" SideItemsBorderBrush="BlueViolet" SidePanelSize="40">
 
 <ContentControl syncfusion:DockingManager.Header="SolutionExplorer" syncfusion:DockingManager.State="AutoHidden" />
 
@@ -141,17 +141,19 @@ SyncDockingManager.SideItemsBorderBrush = new SolidColorBrush(Colors.Violet);
 
 SyncDockingManager.SidePanelBorderThickness = new Thickness(2, 2, 2, 2);
 
+SyncDockingManager.SidePanelSize = 40;
+
 {% endhighlight %}
 
 {% endtabs %}
 
 
-![Side panel Customization](Auto-Hide-Window_images/Auto-Hide-Window_img4.jpeg)
+![Side panel Customization](Auto-Hide-Window_images/Auto-Hide-Window_img4.png)
 
 
 ### SideTabItem Customization
 
-The SideTabItem can be customized using the attached properties [SideTabItemForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideTabItemForeground.html) and [SideTabItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideTabItemBackground.html) of DockingManager.
+The SideTabItem can be customized using the attached properties [SideTabItemForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideTabItemForeground.html) and [SideTabItemBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~SideTabItemBackground.html) of DockingManager. 
 
 
 {% tabs %}
