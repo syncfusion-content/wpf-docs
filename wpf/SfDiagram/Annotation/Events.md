@@ -9,7 +9,7 @@ documentation: ug
 
 # Events
 
-[AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) event will notify the annotation related actions and value changes. `AnnotationChangedEventArgs` class is used to gets or sets the entire annotation related properties and their values.  
+The [AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs.html) event will notify the annotation related actions and value changes. The `AnnotationChangedEventArgs` class is used to get or set the entire annotation related properties and their values.  
 
 {% tabs %}
 {% highlight C# %}

@@ -9,12 +9,12 @@ documentation: ug
 
 # How to Rotate the Annotation
 
-Rotation process can be applied over annotation and rotation can be controlled by Annotation and it's Parent (Node/Connector).
-To explore about Annotation Constraints, please refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
+Rotation process can be applied over annotation and rotation can be controlled by annotation and its parent node or connector.
+To learn about annotation constraints, refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
 
-## Rotating the Annotation
+## Rotating the annotation
 
-Rotation of annotation can be enabled by using `Constraints` property `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Rotatable`
+Rotation of annotation can be enabled by using the `Constraints` property `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Rotatable`
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,7 +46,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### How to customize the annotation rotation
 
- `RotationReference` property of the Annotation is to define the rotation based on Page/its host(Node/Connector).To explore about Rotate Reference property, please refer to the [RotationReference](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
+ The `RotationReference` property of the annotation is to define the rotation based on Page or its host node or connector.To learn about the Rotate Reference property, refer to the [RotationReference](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
 
 {% tabs %}
 {% highlight xaml %}
@@ -77,6 +77,6 @@ Annotations = new ObservableCollection<IAnnotation>()
 | Values | Description | Node |
 |---|---|---|---|
 | Page | While rotating the node, annotation will not be rotated. | ![Parent](Annotation_images/RotationPage.gif) |
-| Wrap | While rotating the node, annotation also will be rotated with node. | ![Wrap](Annotation_images/RotationParent.gif) |
+| Wrap | While rotating the node, annotation will also be rotated with node. | ![Wrap](Annotation_images/RotationParent.gif) |
 
 

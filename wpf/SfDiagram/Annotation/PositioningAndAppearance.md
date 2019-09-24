@@ -9,13 +9,13 @@ documentation: ug
 
 # Annotation Positioning and Appearance 
 
-Diagram allows you to customize the Position and Appearance of the Annotation efficiently.
+Diagram allows you to customize the position and appearance of the annotation efficiently.
 
-## How to positioning Node's Annotation 
+## How to position node's annotation 
 
 Annotation can be aligned relative to the node boundaries. It has Margin, Offset, Horizontal, and Vertical alignment settings. It is quite tricky when all four alignments are used together but gives more control over alignments properties of `AnnotationEditorViewModel` class.
 
-Annotations of a Node can be positioned using below properties of `AnnotationEditorViewModel` class,
+Annotations of a node can be positioned using the following properties of `AnnotationEditorViewModel` class.
 
 * `Offset`
 * `HorizontalAlignment` and `VerticalAlignment`
@@ -23,7 +23,7 @@ Annotations of a Node can be positioned using below properties of `AnnotationEdi
 
 ### Offset
 
-The `Offset` property of `AnnotationEditorViewModel` is used to align the annotations based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height. Default value is (0.5, 0.5).
+The `Offset` property of `AnnotationEditorViewModel` is used to align the annotations based on fractions. 0 represents top-left corner, 1 represents bottom-right corner, and 0.5 represents half of width/height. Default value is (0.5, 0.5).
 
 {% tabs %}
 {% highlight xaml %}
@@ -75,7 +75,7 @@ NodeViewModel node = new NodeViewModel()
 | (1,0.5) | ![Left](Annotation_images/Offset1,5.PNG) |
 | (1,1) | ![Left](Annotation_images/Offset1,1.PNG) |
 
-### Horizontal and Vertical Alignments
+### Horizontal and vertical Alignments
 
 The `HorizontalAlignment` property of `AnnotationEditorViewModel` class is used to align the annotation horizontally. Default value is Center.
 
@@ -121,7 +121,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Margin
 
-`Margin` is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example illustrates how to align a annotation based on its Margin value. Default value is (0,0,0,0).
+`Margin` is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example explains how to align an annotation based on its Margin value. Default value is (0,0,0,0).
 
 {% tabs %}
 {% highlight xaml %}
@@ -151,9 +151,9 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ![Margin](Annotation_images/Margin.jpg)
 
-## How to positioning Connector's Annotation 
+## How to position connector's annotation 
 
-Annotations of a Connector can be positioned using below properties of `AnnotationEditorViewModel` class,
+Annotations of a connector can be positioned using the following properties of `AnnotationEditorViewModel` class:
 
 * `Alignment`
 * `Length`
@@ -163,7 +163,7 @@ Annotations of a Connector can be positioned using below properties of `Annotati
 
 ### Alignment
 
-Connector's annotation can be aligned over it segment path using 'Alignment' property of `AnnotationEditorViewModel` class.
+Connector's annotation can be aligned over its segment path using the 'Alignment' property of `AnnotationEditorViewModel` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -199,7 +199,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Length
 
-The `Length` property of Annotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height. The defaut value is 0.5d.
+The `Length` property of annotation is used to align the annotations based on fractions. 0 represents Top-Left corner, 1 represents Bottom-Right corner, and 0.5 represents half of Width/Height. The defaut value is 0.5d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -226,13 +226,13 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% endtabs %}
 
-The following image shows the relationship between the Annotation position and Length (fraction values).
+The following image shows the relationship between the annotation position and Length (fraction values).
 
 ![Length](Annotation_images/Length.jpg)
 
 ### Displacement
 
-The `Displacement` property is used to dislocate the annotation by the value given. By default, annotation will be in center of the connector path. When you assign the value to `Displacement` property, Annotation will be displaced from its position by displacment value. Default value is 0d.
+The `Displacement` property is used to dislocate the annotation by the value given. By default, annotation will be in center of the connector path. When you assign value to the `Displacement` property, annotation will be displaced from its position by displacment value. Default value is 0d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -264,7 +264,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Pivot
 
-Position of a annotation is controlled by using its `Length` property which represents the distance from connector center. `Pivot` property is used to align the annotation based on its center point. Default value of the pivot point is (0.5, 0.5), that means center of length.
+Position of an annotation is controlled by using its `Length` property, which represents the distance from connector center. The `Pivot` property is used to align the annotation based on its center point. Default value of the pivot point is (0.5, 0.5), that means center of length.
 
 {% tabs %}
 {% highlight xaml %}
@@ -303,7 +303,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Margin
 
-`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. 
+`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the annotations with the `Margin` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -335,9 +335,9 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ![ConnectorAnnotationMargin](Annotation_images/ConnectorMargin.png)
 
-## How to set size for Annotation
+## How to set size for annotation
 
-Diagram allows you to set size for annotations by using `UnitWidth` and `UnitHeight` properties. Default value of UnitWidth and UnitHeight properties are double.NaN. 
+Diagram allows you to set size for annotations by using the `UnitWidth` and `UnitHeight` properties. Default value of UnitWidth and UnitHeight properties are double.NaN. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -368,11 +368,11 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ![NodeSize](Annotation_images/NodeSize.png) &ensp;&ensp;&ensp;&ensp; ![ConnectorSize](Annotation_images/SizeConnector.png)
 
-N> Size of the Annotation is 100% size of the Node.
+N> Size of the annotation is 100% size of the node.
 
 ## Wrapping
 
-When text overflows Node boundaries, you can control it by using `WrapText` property. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped.
+When text overflows node boundaries, you can control it by using the `WrapText` property. So, it is wrapped into multiple lines. The Wrapping property of annotation defines how the content should be wrapped.
 
 {% tabs %}
 
@@ -406,12 +406,12 @@ Annotations = new AnnotationCollection()
 | Values | Description | Node |
 |---|---|---|---|
 | NoWrap | Text will not be wrapped. | ![NoWrap](Annotation_images/Annotation_img18.png) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available Annotation container width. | ![Wrap](Annotation_images/Annotation_img19.png) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available annotation container width. | ![Wrap](Annotation_images/Annotation_img19.png) |
 | WrapWithOverflow | Text-wrapping occurs when the text overflows beyond the available annotation container width. However, the text may overflow beyond the annotation container width in the case of a very long word. | ![Overflow](Annotation_images/annotation_img20.png) |
 
 ## How to change the appearance of annotation
 
-Default appearance of the annotations can be customized by using `EditTemplate` and `ViewTemplate` properties. ViewTemplate is used to control the appearance of the annotation when it is in non-editing stage. EditTemplate is used to control the appearance of the annotation while it is in editing.
+Default appearance of the annotations can be customized by using the `EditTemplate` and `ViewTemplate` properties. ViewTemplate is used to control the appearance of the annotation when it is in non-editing stage. EditTemplate is used to control the appearance of the annotation while it is in editing.
 
 {% tabs %}
 {% highlight xaml %}
@@ -493,7 +493,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### How to change the editing mode
 
-Diagram allows you to show the annotation in view or edit mode while loading the diagram elements by using `Mode` property of `AnnotationEditorViewModel`class.
+Diagram allows you to show the annotation in view or edit mode while loading the diagram elements by using the `Mode` property of `AnnotationEditorViewModel`class.
 
 {% tabs %}
 
@@ -529,9 +529,9 @@ N> Edit mode will be applied to a single element at a time.
 
 ### How to edit the annotation
 
-Annotation will be in editing state when you double click on the node or annotation. Annotation will be selected when you single click on the annotation if selectable constraints are enabled. 
+Annotation will be in editing state when you double click the node or annotation. Annotation will be selected when you single click the annotation if selectable constraints are enabled. 
 
-Also, `ReadOnly` property of `AnnotationEditorViewModel` class allows you to disable the editing option of Annotation.
+Also, the `ReadOnly` property of `AnnotationEditorViewModel` class allows you to disable the editing option of annotation.
 
 {% tabs %}
 {% highlight xaml %}

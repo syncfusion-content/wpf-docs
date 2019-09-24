@@ -9,11 +9,11 @@ documentation: ug
 
 # Annotation
 
-Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.Multiple annotations can be added to a node/connector.
+Annotation is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at run time. Multiple annotations can be added to a node or connector.
 
-## Define Annotation
+## Define annotation
 
-An Annotation can be added to a Node/Connector by defining the annotation object and adding that to the annotation collection of the Node/Connector. The `Content` property of `AnnotationEditorViewModel` class defines the text to be displayed. The following code illustrates how to create a annotation.
+An annotation can be added to a node or connector by defining the annotation object and adding that to the annotation collection of the node or connector. The `Content` property of `AnnotationEditorViewModel` class defines the text to be displayed. The following code explains how to create an annotation.
 
 {% tabs %}
 {% highlight xaml %}
@@ -105,7 +105,7 @@ NodeViewModel node = new NodeViewModel()
 
 ## Multiple Annotations
 
-You can add any number of Annotations to a Node or Connector.
+You can add any number of annotations to a node or connector.
 For sample, please refer to [MultipleAnnotation](https://www.syncfusion.com/downloads/support/directtrac/239374/ze/MultipleAnnotation-2076131568 "MultipleAnnotation").
 
 {% tabs %}

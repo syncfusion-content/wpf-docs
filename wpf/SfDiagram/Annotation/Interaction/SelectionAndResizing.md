@@ -7,14 +7,14 @@ control: SfDiagram
 documentation: ug
 ---
 
-# How to select and resize the annotation
+# How to Select and Resize the Annotation
 
-Basic intersections of selection and Resizing can be applied over annotation. These interactions can be controlled by Annotation and it's Parent (Node/Connector).
-To explore about Annotation Constraints, please refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
+Basic intersections of selecting and resizing can be applied over annotation. These interactions can be controlled by annotation and its parent node or connector.
+To learn about annotation constraints, refer to the [Annotation Constraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AnnotationConstraints.html).
 
-## Selecting the Annotation
+## Selecting the annotation
 
-Selection of annotation can be enabled by using `Constraints` property `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Selectable`
+Selection of annotation can be enabled by using the `Constraints` property `AnnotationEditorViewModel` class and setting its value to `AnnotationConstraints.Selectable`
 
 {% tabs %}
 
@@ -46,9 +46,9 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ![Interaction](Annotation_images/AnnotationSelectable.png)
 
-## Resizing the Annotation
+## Resizing the annotation
 
-Resizing of annotation can be enabled by using `Constraints` property `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Resizable`
+Resizing of annotation can be enabled by using the `Constraints` property `AnnotationEditorViewModel` class and setting its value to `AnnotationConstraints.Resizable`
 
 {% tabs %}
 {% highlight xaml %}
