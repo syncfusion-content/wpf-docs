@@ -82,7 +82,6 @@ The `HorizontalGridLines` and `VerticalGridLines` properties of SnapSettings cla
 SfDiagram diagram = new SfDiagram();
 //Style for HorizontalGridlines
 Style pathStyle = new Style(typeof(Path));
-SolidColorBrush Strokes = new SolidColorBrush(Colors.Black);
 pathStyle.Setters.Add(new Setter(Shape.StrokeProperty, new SolidColorBrush(Colors.Blue)));
 pathStyle.Setters.Add(new Setter(Shape.StrokeDashArrayProperty, new DoubleCollection() { 3, 3 }));
 
@@ -177,3 +176,9 @@ public class Intervals : List<double>
 {% endtabs %}
 
 ![Snap to Gridlines](Gridlines_images/LineIntervals.png)
+
+{% seealso %}
+
+[How to snap the objects on gridlines](/wpf/sfdiagram/snapping)
+
+{% endseealso %}

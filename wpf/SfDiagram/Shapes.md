@@ -30,7 +30,7 @@ The following code example illustrates how to assign Shape property of the Node.
 {% tabs %}
 {% highlight xaml %}
 <!--Style for Node-->
-<Style TargetType="syncfusion:Node" >
+<Style TargetType="syncfusion:Node">
     <Setter Property="ShapeStyle">
         <Setter.Value>
             <Style TargetType="Path">
@@ -41,12 +41,35 @@ The following code example illustrates how to assign Shape property of the Node.
         </Setter.Value>
    </Setter>
 </Style>
+
+<!--Initialize the SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+    <!--Initialize the NodeCollection-->
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection>
+            <!--Add Node with basic shape-->
+            <syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth=" 100" OffsetX="100" OffsetY="100"                      Shape="{StaticResource Rectangle}"/>  
+        </syncfusion:NodeCollection>
+    </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight C# %}
-<!--Add Node with basic shape-->
-<syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth=" 100" OffsetX="100" OffsetY="100" 
-                          Shape="{StaticResource Rectangle}"
-                          ShapeStyle="{StaticResource shapestyle}"/>   
+
+//Initialize the diagram
+SfDiagram diagram = new SfDiagram();
+
+//Initialize the NodeViewModel
+NodeViewModel node = new NodeViewModel()
+    {
+        UnitHeight = 100,
+        UnitWidth = 100,
+        OffsetX = 100,
+        OffsetY = 100,
+        Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+    };
+
+// Add the node into Nodes collection
+(diagram.Nodes as NodeCollection).Add(node);
 {% endhighlight %}
 {% endtabs %}
 
