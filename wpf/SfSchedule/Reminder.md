@@ -158,7 +158,7 @@ dataMapping.SubjectMapping = "Subject";
 dataMapping.StartTimeMapping = "StartTime";
 dataMapping.EndTimeMapping = "EndTime";
 dataMapping.AppointmentBackgroundMapping = "AppointmentColor";
-dataMapping.ReminderMapping = ReminderTimeType.TenMin;
+dataMapping.ReminderTimeMapping = "ReminderTime";
 schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {%endtabs%}
