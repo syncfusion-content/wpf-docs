@@ -400,7 +400,7 @@ Padding is used to leave space between the connector’s end point and the objec
   </Syncfusion:ConnectorCollection>
 </Syncfusion:SfDiagram.Connectors>
 
-{{% endhighlight %}
+{% endhighlight %}
 
 {% highlight c# %}
 
