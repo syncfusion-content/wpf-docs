@@ -78,7 +78,8 @@ Recurrence can be applied by using `RRuleGenerator` method.
 	 SchApp.Location = "Meeting Hall 1";        
 	 SchApp.StartTime = currentDate;    
 	 SchApp.EndTime = currentDate.AddHours(4);    
-	 SchApp.AppointmentBackground = new SolidColorBrush((Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));            // Setting Recurrence Properties          
+	 SchApp.AppointmentBackground = new SolidColorBrush((Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));
+	 // Setting Recurrence Properties          
 	 RecurrenceProperties RecProp = new RecurrenceProperties();      
 	 RecProp.RecurrenceType = RecurrenceType.Daily;      
 	 RecProp.IsDailyEveryNDays = true;           
@@ -124,7 +125,7 @@ You can map those properties of Meeting class with our SfSchedule control by usi
 	<syncfusion:SfSchedule.AppointmentMapping>
 		<syncfusion:ScheduleAppointmentMapping
 			SubjectMapping="EventName"
-			ColorMapping="Color"
+			AppointmentBackgroundMapping="Color"
 			StartTimeMapping="From"
 			EndTimeMapping="To"
 			RecurrenceRuleMapping="RecurrenceRule">
@@ -179,6 +180,8 @@ Meetings.Add(meeting);
 // Adding custom appointments in ItemsSource of SfSchedule
 schedule.ItemsSource = Meetings;
 {% endhighlight %}
+
+![Recurrence-appointmet-for-custom-appointment](Recurrence_images/Recurrence_img2.jpeg)
 
 ### How to get the Recurrence editor field values from recurrence rule?
 You can get the Recurrence properties from recurrence rule using the [RRuleParser](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~RRuleParser.html) method of `SfSchedule`.
@@ -262,6 +265,7 @@ public class Meeting
     public String Subject { get; set; }
 	public DateTime StartTime { get; set; }
 	public DateTime EndTime { get; set; }
+	public String RecurrenceRule { get; set; }
 	public ObservableCollection<DateTime> RecurrenceExceptionDates { get; set; }
 }
 {% endhighlight %}
@@ -278,6 +282,7 @@ You can map those properties of `Meeting` class with our [SfSchedule](https://he
 			SubjectMapping="Subject"
 			StartTimeMapping="StartTime"
 			EndTimeMapping="EndTime"
+			RecurrenceRuleMapping = "RecurrenceRule"
 			RecursiveExceptionDatesMapping="RecurrenceExceptionDates">
 		</syncfusion:ScheduleAppointmentMapping>
 	</syncfusion:SfSchedule.AppointmentMapping>
@@ -289,6 +294,7 @@ ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
 dataMapping.SubjectMapping = "Subject";
 dataMapping.StartTimeMapping = "StartTime";
 dataMapping.EndTimeMapping = "EndTime";
+dataMapping.RecurrenceRuleMapping = "RecurrenceRule";
 dataMapping.RecursiveExceptionDatesMapping = "RecurrenceExceptionDates";
 schedule.AppointmentMapping = dataMapping;
 
@@ -301,16 +307,14 @@ var recurrenceAppointment = new Meeting()
 	From = new DateTime(2017, 09, 01, 10, 0, 0),
 	To = new DateTime(2017, 09, 01, 12, 0, 0),
 	Subject = "Occurs Daily",
+	RecurrenceExceptionDates = new ObservableCollection<DateTime>()
+                               {
+                                  exceptionDate
+                               };
 };
 
 // Creating recurrence rule
 recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
-
-// Add RecurrenceExceptionDates to appointment.
-recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
-{
-  exceptionDate
-};
 
 Meetings.Add(recurrenceAppointment);
 this.schedule.ItemsSource = Meetings;
@@ -318,4 +322,4 @@ this.schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {%endtabs%}
 
-
+![Recurrence-ExceptionDate](Recurrence_images/Recurrence_img3.jpeg)
