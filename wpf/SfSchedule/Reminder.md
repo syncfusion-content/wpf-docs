@@ -157,7 +157,7 @@ ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
 dataMapping.SubjectMapping = "Subject";
 dataMapping.StartTimeMapping = "StartTime";
 dataMapping.EndTimeMapping = "EndTime";
-dataMapping.ColorMapping = "AppointmentColor";
+dataMapping.AppointmentBackgroundMapping = "AppointmentColor";
 dataMapping.ReminderMapping = ReminderTimeType.TenMin;
 schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
