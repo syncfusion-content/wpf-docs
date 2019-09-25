@@ -239,23 +239,6 @@ The custom buttons can be added on both right and left side of the title bar usi
 ![wpf chromeless window cutomebuttons](Getting-Started_images/wpf-chromeless-titlebar_custombuttons.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Customizing the border of ChromelessWindow
 
 You can change the border color of the chromeless window by setting the [ResizeBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~ResizeBorderBrush.html) property.
