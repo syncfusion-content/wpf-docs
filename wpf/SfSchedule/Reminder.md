@@ -9,15 +9,18 @@ documentation: ug
 
 # Reminder
 
-Schedule supports to remind you the particular appointment in the specified time with reminder window which does have the support to Dismiss or set the SnoozeTime for that reminder appointments.
+Schedule alerts you for particular appointment with reminder window when enable the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property.Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
 
 ## Setting reminder for an Appointment
-Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property is true.The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) property of ScheduleAppointment.
-
+Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property is `true`.The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) property of ScheduleAppointment.
+{%tabs%}
+{% highlight xaml %}
+<Grid>
+    <syncfusion:SfSchedule x:Name="Schedule" ScheduleType="Month"/>
+</Grid>
+{% endhighlight %}
 {% highlight c# %}
 
-
-	SfSchedule schedule = new SfSchedule();
 
 	schedule.EnableReminderTimer = true;
 
@@ -69,14 +72,15 @@ Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion
 
 	});
 
-	this.grid.Children.Add(schedule);
-
-
 {% endhighlight %}
+{% endtabs %}
 
+![Reminder-Window](Reminder_images/Reminder_img1.jpeg)
 
-## Configuration Reminder Duration
-Reminder does have the support to set the reminder duration time to remind the appointments by using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) property of ScheduleAppointment.
+N>Refer the following demo sample for [Reminder](https://github.com/syncfusion/wpf-demos/tree/master/SfSchedule.WPF/Samples/ReminderAlert)
+
+## Configurating Reminder Duration
+Reminder supports to set the reminder duration time to remind the appointments by using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) property of [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html).
 
 **Type of reminder duration**
 
@@ -110,10 +114,9 @@ Reminder does have the support to set the reminder duration time to remind the a
 schedule.Appointments[0].ReminderTime = ReminderTimeType.FifteenMin;
 {% endhighlight %}
 
-![Reminder-Window](Reminder_images/Reminder_img1.jpeg)
 
-## Custom ReminderTime mapping for ScheduleAppointment
-ReminderTime supports to bind with your custom binding object.
+## Create a custom binding for ReminderTime
+[ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) supports to map your custom object with `ScheduleAppointment.ReminderTime`.
 
 {% highlight c# %}
 /// <summary>
@@ -129,10 +132,10 @@ public class Meeting
 }
 {% endhighlight %}
 
-N>You can inherit this class from INotifyPropertyChanged for dynamic changes in custom data.
+N>You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
 
-You can map those properties of Meeting class with our SfSchedule control by using ScheduleAppointmentMapping.
+You can map those properties of `Meeting` class with our [SfSchedule](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule.html) control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) and [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -164,12 +167,12 @@ schedule.AppointmentMapping = dataMapping;
 
 ### ReminderOpening event
 
-**ReminderOpening** – event occurs when appear that reminder form.
-ReminderControlOpeningEventArgs has following members which provides the information for ReminderOpening event.
+**ReminderOpening** – occurs when appearing the reminder window.
+`ReminderControlOpeningEventArgs` has following property.
 
-RemindAppCollection – Gets list of reminder appointments.
+**RemindAppCollection** – Gets list of reminder appointments.
 
-You can prevent the reminder form opening through ReminderControlOpeningEventArgs.Cancel property of ReminderOpening event.
+You can prevent the reminder window opening through `ReminderControlOpeningEventArgs.Cancel` property of [ReminderOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderOpening_EV.html) event.
 
 {% highlight c# %}
 this.Schedule.ReminderOpening += Schedule_ReminderOpening;
@@ -182,14 +185,14 @@ private void Schedule_ReminderOpening(object sender, ReminderControlOpeningEvent
 
 ### ReminderClosed event
 
-**ReminderClosed** – event occurs when closing the reminder form.
-`ReminderControlClosedEventArgs` provides information for ReminderClosed event
+**ReminderClosed** – occurs when closing the reminder window.
+`ReminderControlClosedEventArgs` provides information for [ReminderClosed](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderClosed_EV.html) event
 
 ### ReminderFormActionChanged event
 
-**ReminderFormActionChanged** – event occurs when the reminder form action changed for the appointment
-**ReminderFormActionChangedEventArgs** has following members which provides information for ReminderFormActionChanged event.
+**ReminderFormActionChanged** – occurs when change the reminder window action for the appointment
+**ReminderFormActionChangedEventArgs** has following properties which provides information for [ReminderFormActionChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderFormActionChanged_EV.html) event.
 
-**Action** - Gets the action triggered this event.
-**Appointments** – Gets list of appointments that are changed 
+**Action** - Gets the action of schedule appointments.
+**Appointments** – Gets list of appointments that are changed.
 **SnoozeTime** – Gets the snooze time of action changed appointments.
