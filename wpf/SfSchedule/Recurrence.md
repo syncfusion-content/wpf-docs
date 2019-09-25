@@ -181,7 +181,7 @@ Meetings.Add(meeting);
 schedule.ItemsSource = Meetings;
 {% endhighlight %}
 
-![Recurrence-appointmet-for-custom-appointment](Recurrence_images/Recurrence_img2.jpeg)
+![Recurrence-appointmet-for-custom-appointment](Recurrence_images/Recurrence_img2.jpg)
 
 ### How to get the Recurrence editor field values from recurrence rule?
 You can get the Recurrence properties from recurrence rule using the [RRuleParser](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~RRuleParser.html) method of `SfSchedule`.
@@ -322,4 +322,4 @@ this.schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {%endtabs%}
 
-![Recurrence-ExceptionDate](Recurrence_images/Recurrence_img3.jpeg)
+![Recurrence-ExceptionDate](Recurrence_images/Recurrence_img3.jpg)
