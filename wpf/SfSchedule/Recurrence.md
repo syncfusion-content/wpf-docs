@@ -94,7 +94,7 @@ Recurrence can be applied by using `RRuleGenerator` method.
 	 Schedule.Appointments = AppCollection;
 {% endhighlight %}
 
-![](Recurrence_images/Recurrence_img1.jpeg)
+![Recurrence-appointment](Recurrence_images/Recurrence_img1.jpeg)
 
 ## Creating Custom Recurrence Appointment using Recurrence Builder
 For creating custom recurrence appointment you need to create a custom class Meeting with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule`.
