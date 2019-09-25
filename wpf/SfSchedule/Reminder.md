@@ -168,6 +168,7 @@ schedule.AppointmentMapping = dataMapping;
 ### ReminderOpening event
 
 **ReminderOpening** – occurs when appearing the reminder window.
+
 `ReminderControlOpeningEventArgs` has following property.
 
 **RemindAppCollection** – Gets list of reminder appointments.
@@ -191,8 +192,11 @@ private void Schedule_ReminderOpening(object sender, ReminderControlOpeningEvent
 ### ReminderFormActionChanged event
 
 **ReminderFormActionChanged** – occurs when change the reminder window action for the appointment
+
 **ReminderFormActionChangedEventArgs** has following properties which provides information for [ReminderFormActionChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ReminderFormActionChanged_EV.html) event.
 
 **Action** - Gets the action of schedule appointments.
+
 **Appointments** – Gets list of appointments that are changed.
+
 **SnoozeTime** – Gets the snooze time of action changed appointments.
