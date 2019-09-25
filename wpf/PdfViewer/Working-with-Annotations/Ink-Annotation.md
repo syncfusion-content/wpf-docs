@@ -237,5 +237,5 @@ The following image illustrates how to delete the included annotation from the P
 The below keyboard shortcuts are available to customize the annotation in the PDF document.
 
 *	Delete key – Deletes the selected annotation from the PDF document.
-*	Ctrl + Z – Performs undo functionality for recently performed 5 operations.
-*	Ctrl + Y – Performs redo functionality for recently performed 5 operations.
+*	Ctrl + Z – Performs undo functionality for recently performed operations.
+*	Ctrl + Y – Performs redo functionality for recently performed operations.
