@@ -14,39 +14,38 @@ To learn about annotation constraints, refer to the [Annotation Constraints](htt
 
 ## Dragging the annotation
 
-Dragging of annotation can be enabled by using the `Constraints` property `AnnotationEditorViewModel` class and setting its value to `AnnotationConstraints.Draggable`
+Dragging of annotation can be enabled by using the `Constraints` property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Draggable`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the AnnotationEditorViewModel-->
+    <!--Initialize the annotation with draggable constraint-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Constraints="Draggable"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation Draggable constraint
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Constraints = AnnotationConstraints.Draggable 
-            }
+        Content = "Annotation",
+        //Initialize the constraint as draggable
+        Constraints = AnnotationConstraints.Draggable 
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Interaction](Annotation_images/AnnotationDragging.gif)
 
-### How to restrict the dragging area
+## How to restrict the dragging area
 
 Diagram allows you to specify the amount of dragging area around the annotation by enabling the `Constraints` as `AnnotationConstraints.DragLimit` and dragging area can be specified by using the `DragLimit` property. You cannot drag the annotation behind this drag limit value. Default value is (10, 10, 10, 10).
 
@@ -55,7 +54,7 @@ Diagram allows you to specify the amount of dragging area around the annotation 
 
 <!--Initialize the AnnotationCollection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the AnnotationEditorViewModel with drag limit value-->
+    <!--Initialize the annotation with drag limit value-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Constraints="Draggable,DragLimit" DragLimit="40,80,40,40"/>
 </syncfusion:AnnotationCollection>
                                 
@@ -64,15 +63,16 @@ Diagram allows you to specify the amount of dragging area around the annotation 
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with drag limit value
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Constraints = AnnotationConstraints.Draggable | AnnotationConstraints.DragLimit,
-                DragLimit = new Thickness(40,80,40,40),
-            }
+        Content = "Annotation",
+        //Initialize the drag limit constraint
+        Constraints = AnnotationConstraints.Draggable | AnnotationConstraints.DragLimit,
+        //Initialize the drag limit value
+        DragLimit = new Thickness(40,80,40,40),
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -80,4 +80,4 @@ Annotations = new ObservableCollection<IAnnotation>()
 | Property | Value | Output |
 |---|---|---|---|
 | DragLimit | (10,10,10,10) | ![NoWrap](Annotation_images/DragLimitDefault.gif) |
-| | | ![Wrap](Annotation_images/CustomDragLimit.gif) |
+| |(40,80,40,40) | ![Wrap](Annotation_images/CustomDragLimit.gif) |

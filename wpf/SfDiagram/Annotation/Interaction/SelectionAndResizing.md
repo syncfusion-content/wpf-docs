@@ -14,15 +14,14 @@ To learn about annotation constraints, refer to the [Annotation Constraints](htt
 
 ## Selecting the annotation
 
-Selection of annotation can be enabled by using the `Constraints` property `AnnotationEditorViewModel` class and setting its value to `AnnotationConstraints.Selectable`
+Selection of annotation can be enabled by using the `Constraints` property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Selectable`.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the AnnotationEditorViewModel-->
+    <!--Initialize the annotation with selectable constraint-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Constraints="Selectable"/>
 </syncfusion:AnnotationCollection>
                                 
@@ -32,14 +31,14 @@ Selection of annotation can be enabled by using the `Constraints` property `Anno
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation selectable constraint
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Constraints = AnnotationConstraints.Selectable 
-            }
+        Content = "Annotation",
+        //Initialize the constraint as selectable
+        Constraints = AnnotationConstraints.Selectable 
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -48,33 +47,32 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ## Resizing the annotation
 
-Resizing of annotation can be enabled by using the `Constraints` property `AnnotationEditorViewModel` class and setting its value to `AnnotationConstraints.Resizable`
+Resizing of annotation can be enabled by using the `Constraints` property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Resizable`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the AnnotationEditorViewModel-->
+    <!--Initialize the Annotation with resizable constraint-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Constraints="Selectable,Resizable"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation Rotatable constraint
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Constraints = AnnotationConstraints.Selectable | AnnotationConstraints.Resizable
-            }
+        Content = "Annotation",
+        //Initialize the constraint as resizable
+        Constraints = AnnotationConstraints.Selectable | AnnotationConstraints.Resizable
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Interaction](Annotation_images/AnnotationResizing.gif)
-
