@@ -469,6 +469,7 @@ Syncfusion.Shared.WPF
 </tr>
 <tr>
 <td> 
+Syncfusion.SfImageEditor.WPF <br/>
 Syncfusion.Tools.WPF <br/>
 Syncfusion.Shared.WPF
 </td>
