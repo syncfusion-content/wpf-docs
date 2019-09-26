@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add context menu items to ease the execution of frequently used commands.
+title: To ease the execution of frequently used commands | Syncfusion.
 description: How to execute frequently used commands by using context menu items?
 platform: wpf
 control: SfDiagram

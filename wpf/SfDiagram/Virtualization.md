@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualization is a technique to enable faster rendering by loading only object that lies in viewport area of scrollviewer.
+title: Faster rendering by loading object that lies in viewport alone | Syncfusion.
 description: how to enable faster rendering in Diagram?
 platform: wpf
 control: SfDiagram

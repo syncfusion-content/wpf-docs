@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ruler is used to measure the distance of nodes and connectors from origin of the page. 
+title: Measure the distance of nodes and connectors from origin of the page | Syncfusion. 
 description: how to measure the distance of Nodes and Connectors? 
 platform: wpf
 control: SfDiagram
