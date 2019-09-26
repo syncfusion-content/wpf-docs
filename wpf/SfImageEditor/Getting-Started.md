@@ -60,7 +60,7 @@ Then initialize the image editor as in the below snippet.
 
 Image can be loaded in following two ways.
 
-Using image soure.
+Using image source.
 
 Using stream.
 
