@@ -460,6 +460,24 @@ Syncfusion.Shared.WPF
 </tr>
 </table>
 
+## ImageEditor
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Tools.WPF <br/>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.SfImageEditor.WPF
+</td>
+</tr>
+</table>
+
 ## MaskedTextBox
 
 <table>
