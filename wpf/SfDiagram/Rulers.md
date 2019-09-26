@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Horizontal and Vertical guide for measuring in the SfDiagram | Syncfusion. 
+title: Provides guide for measuring in the Diagram Control | Syncfusion. 
 description: how to measure the distance of Nodes and Connectors? 
 platform: wpf
 control: SfDiagram

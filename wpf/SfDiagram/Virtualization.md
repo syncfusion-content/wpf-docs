@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Faster rendering by loading object lies in viewport alone | Syncfusion.
+title: Quick rendering by loading object lies in viewport alone | Syncfusion.
 description: how to enable faster rendering in Diagram?
 platform: wpf
 control: SfDiagram
