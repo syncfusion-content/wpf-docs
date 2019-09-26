@@ -19,25 +19,25 @@ The [AnnotationChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion
 
 //Method to show message box when annotation is changed
 private void Diagram_AnnotationChanged(object sender, ChangeEventArgs<object, AnnotationChangedEventArgs> args)
+{
+    //When annotation is resized
+    if (args.NewValue.AnnotationInteractionState == AnnotationInteractionState.Resized)
     {
-        //When annotation is resized
-        if (args.NewValue.AnnotationInteractionState == AnnotationInteractionState.Resized)
-            {
-                MessageBox.Show("Annotation has been resized!");
-            }
-
-        //When annotation is resized
-        if (args.NewValue.AnnotationInteractionState == AnnotationInteractionState.Rotated)
-            {
-                MessageBox.Show("Annotation has been rotated!");
-            }
-
-        //When annotation is resized
-        if (args.NewValue.AnnotationInteractionState == AnnotationInteractionState.Edited)
-            {
-                MessageBox.Show("Annotation has been edited!");
-            }
+        MessageBox.Show("Annotation has been resized!");
     }
+
+    //When annotation is resized
+    if (args.NewValue.AnnotationInteractionState == AnnotationInteractionState.Rotated)
+    {
+        MessageBox.Show("Annotation has been rotated!");
+    }
+
+    //When annotation is resized
+    if (args.NewValue.AnnotationInteractionState == AnnotationInteractionState.Edited)
+    {
+        MessageBox.Show("Annotation has been edited!");
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}

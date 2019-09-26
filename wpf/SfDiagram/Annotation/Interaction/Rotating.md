@@ -14,14 +14,14 @@ To learn about annotation constraints, refer to the [Annotation Constraints](htt
 
 ## Rotating the annotation
 
-Rotation of annotation can be enabled by using the `Constraints` property `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Rotatable`
+Rotation of annotation can be enabled by using the `Constraints` property of `AnnotationEditorViewModel` class and setting its value as `AnnotationConstraints.Rotatable`.
 
 {% tabs %}
 {% highlight xaml %}
 
 <!--Initialize the AnnotationCollection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the AnnotationEditorViewModel-->
+    <!--Initialize the annotation with rotatable constraint-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Constraints="Selectable,Rotatable"/>
 </syncfusion:AnnotationCollection>
                                 
@@ -30,21 +30,21 @@ Rotation of annotation can be enabled by using the `Constraints` property `Annot
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation Rotatable constraint
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Constraints = AnnotationConstraints.Selectable | AnnotationConstraints.Rotatable
-            }
+        Content = "Annotation",
+        //Initialize the constraint as rotatable
+        Constraints = AnnotationConstraints.Selectable | AnnotationConstraints.Rotatable
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Interaction](Annotation_images/AnnotationRotation.gif)
 
-### How to customize the annotation rotation
+## How to customize the annotation rotation
 
  The `RotationReference` property of the annotation is to define the rotation based on Page or its host node or connector.To learn about the Rotate Reference property, refer to the [RotationReference](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.RotationReference.html) . 
 
@@ -53,23 +53,23 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 <!--Initialize the AnnotationCollection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the AnnotationEditorViewModel with rotation reference-->
+    <!--Initialize the annotation with rotation reference property-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" RotationReference="Parent"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with rotation reference
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                RotationReference = RotationReference.Parent,
-            }
+        Content = "Annotation",
+        //Initialize the rotation reference property
+        RotationReference = RotationReference.Parent,
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
