@@ -13,16 +13,9 @@ This section explains the steps required to load an image to the image editor co
 
 ## Adding ImageEditor Reference
 
-After installing Essential Studio for WPF, you can find the required assemblies in the installation folder,
+You can refer this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to know how to add Syncfusion controls in Visual Studio projects through various way. 
+You can also refer this [link](https://help.syncfusion.com/wpf/control-dependencies) to know about the assemblies required for adding ImageEditor to your project. 
 
-SfImageEditor is available in the following assembly and namespace:
-
-Assembly: Syncfusion.SfImageEditor.WPF
-
-Namespace: Syncfusion.UI.Xaml.ImageEditor
-
-You can also refer [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to know how to add Syncfusion controls in Visual Studio projects through various way. 
- 
 ## Initialize ImageEditor
 
 Import the Image editor namespace as in the below code snippet.
