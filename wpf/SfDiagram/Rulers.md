@@ -40,7 +40,7 @@ diagramcontrol.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical 
 {% endhighlight %}
 {% endtabs %}
 
-![](Rulers_images/Rulers_img1.jpeg)
+![DefaultRuler](Rulers_images/Rulers_img1.jpeg)
 
 ## Customizing the Ruler
 
@@ -48,6 +48,6 @@ By default, ruler segments are arranged based on the `MeasurementUnit`. See the 
 
 Segment width, the textual description of the ruler segment, and the appearance of the ruler ticks can be customized. 
 
-![](Rulers_images/Rulers_img2.jpeg)
+![CustomRuler](Rulers_images/Rulers_img2.jpeg)
 
 Please refer to the sample to [Customize the Ruler](http://www.syncfusion.com/downloads/support/directtrac/199579/ze/RulerCustomization324121572)

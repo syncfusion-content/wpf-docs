@@ -35,7 +35,7 @@ diagram.Constraints |= GraphConstraints.Virtualize | GraphConstraints.Outline;
 
 N> In SfDiagram, we named Deferred Scrolling support as `Outline`. Outline is only applicable when virtualization is enabled.
 
-![](Virtualization_images/Virtualization_img1.gif)
+![DeferredScrolling](Virtualization_images/Virtualization_img1.gif)
 
 ### Outline customization
 
