@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualization is a technique to enable faster rendering by loading only object that lies in viewport area of scrollviewer.
+title: Quick rendering by loading object lies in viewport alone | Syncfusion.
 description: how to enable faster rendering in Diagram?
 platform: wpf
 control: SfDiagram
@@ -35,7 +35,7 @@ diagram.Constraints |= GraphConstraints.Virtualize | GraphConstraints.Outline;
 
 N> In SfDiagram, we named Deferred Scrolling support as `Outline`. Outline is only applicable when virtualization is enabled.
 
-![](Virtualization_images/Virtualization_img1.gif)
+![DeferredScrolling](Virtualization_images/Virtualization_img1.gif)
 
 ### Outline customization
 
