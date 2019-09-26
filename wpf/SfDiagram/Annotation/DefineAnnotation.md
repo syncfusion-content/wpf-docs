@@ -113,7 +113,7 @@ For sample, please refer to [MultipleAnnotation](https://www.syncfusion.com/down
 {% tabs %}
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the multiple annotation-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation"/>
@@ -124,22 +124,23 @@ For sample, please refer to [MultipleAnnotation](https://www.syncfusion.com/down
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Initialize the multiple annotation
+    new AnnotationEditorViewModel()
     {
-        //Initialize the multiple annotation
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-            },
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-            },
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-            },
+        Content = "Annotation",
+    },
+    new AnnotationEditorViewModel()
+    {
+        Content = "Annotation",
+    },
+    new AnnotationEditorViewModel()
+    {
+        Content = "Annotation",
+    },
+}
 
 {% endhighlight %}
 {% endtabs %}
