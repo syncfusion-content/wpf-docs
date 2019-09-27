@@ -179,66 +179,6 @@ You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de
 
 ![wpf chromeless window icon](Getting-Started_images/wpf-chromeless-window-icon.png)
 
-
-## Title bar custom buttons
-
-The custom buttons can be added on both right and left side of the title bar using stack panel. RightCustomButtons property used for bind resources on right side of the bar. For left, LeftCustomButtons property used.
-
-{% tabs %}
-{% highlight XAML %}
-<syncfusion:ChromelessWindow x:Class="ChromelessWindow_CustomButton1.MainWindow" x:Name="_chromelesswindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ChromelessWindow_CustomButton1"
-                            
-        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-                             syncfusion:SkinStorage.VisualStyle="Metro"
-                             RightCustomButtons="{StaticResource RightItems}"
-                             LeftCustomButtons="{StaticResource LeftItems}" 
-        Title="Chromeless Window Demo" Height="450" Width="800">
-    <syncfusion:ChromelessWindow.Resources>
-       
-    </syncfusion:ChromelessWindow.Resources>
-    <Grid>
-        
-    </Grid>
-</syncfusion:ChromelessWindow>
-
-{% endhighlight %}
-{% endtabs %}
-
-### To add resource in App.xaml
-
-{% tabs %}
-{% highlight XAML %}
-<syncfusion:ChromelessWindow x:Class="ChromelessWindow_CustomButton1.MainWindow" x:Name="_chromelesswindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ChromelessWindow_CustomButton1"
-                            
-        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-                             syncfusion:SkinStorage.VisualStyle="Metro"
-                             RightCustomButtons="{StaticResource RightItems}"
-                             LeftCustomButtons="{StaticResource LeftItems}" 
-        Title="Chromeless Window Demo" Height="450" Width="800">
-    <syncfusion:ChromelessWindow.Resources>
-       
-    </syncfusion:ChromelessWindow.Resources>
-    <Grid>
-        
-    </Grid>
-</syncfusion:ChromelessWindow>
-
-{% endhighlight %}
-{% endtabs %}
-
-![wpf chromeless window cutomebuttons](Getting-Started_images/wpf-chromeless-titlebar_custombuttons.png)
-
-
 ## Customizing the border of ChromelessWindow
 
 You can change the border color of the chromeless window by setting the [ResizeBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~ResizeBorderBrush.html) property.
