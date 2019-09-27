@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# SfChart
+# SfImageEditor
 
 ImageEditor is a very handy tool that is used to edit an image by annotating with text and built-in shapes. It allows you to crop, rotate and flip the image. ImageEditor control has a built-in toolbar which helps in performing editing operations.
 
@@ -17,7 +17,7 @@ ImageEditor is a very handy tool that is used to edit an image by annotating wit
 
 ## Key features
 
-* In built Toolbar – To perform the below functions.
+* In built Toolbar
 * Flip
 * Crop
 * Rotate
