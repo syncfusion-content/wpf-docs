@@ -42,4 +42,4 @@ Title bar can be customized by adding custom buttons  to the right and left side
 
 {% endtabs %}
 
-![](TitleBarCustomButtons_images/TitleBarCustomButtons.png)
+![TitleBarCustomButtons](TitleBarCustomButtons_images/TitleBarCustomButtons.png)
