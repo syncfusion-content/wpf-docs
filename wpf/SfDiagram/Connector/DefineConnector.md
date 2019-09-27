@@ -112,7 +112,7 @@ diagram.DrawingTool = DrawingTool.Connector;
 
 ### Free-hand drawing
 
-Diagram have support for free-hand drawing which makes you to draw any thing on tha diagram page independently. Free-hand drawing will be enabled by using `DrawingTool` property and setting its value as `FreeHand`.
+Diagram have support for free-hand drawing which makes you to draw any thing on the diagram page independently. Free-hand drawing will be enabled by using `DrawingTool` property and setting its value as `FreeHand`.
 
 {% tabs %}
 {% highlight xaml %}

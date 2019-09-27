@@ -68,7 +68,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 A straight-line connector can be edited by adding a new StraightSegment into the Segments collections of a Connector.
 
-Straight segments can be splitted into multiple straight lines using `Point` property of  `StraightSegment` class.
+Straight segments can be split into multiple straight lines using `Point` property of  `StraightSegment` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -107,7 +107,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ## How to add or remove the straight segments at run time
 
-Straight segments can be splitted into multiple straight segments interactively by click on the segemnts. This can be achieved by using `AddRemoveStraightSegmentArgs` class and its properties.
+Straight segments can be split into multiple straight segments interactively by click on the segemnts. This can be achieved by using `AddRemoveStraightSegmentArgs` class and its properties.
 
 `AddRemoveStraightSegmentArgs` class is having below properties,
 
