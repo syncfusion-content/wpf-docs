@@ -1,25 +1,21 @@
 ---
 layout: post
-title: Overview | SfLinearProgressBar | Wpf | Syncfusion
-description: Overview
-platform: wpf
+title: Getting Started | Linear ProgressBar | WPF | Syncfusion
+description: How to create a simple application with Linear ProgressBar in WPF.
+platform: WPF
 control: SfLinearProgressBar
 documentation: ug
 ---
 
-# Getting Started
+# Creating a simple application with Linear ProgressBar
+
+You can create a WPF application with the SfLinearProgressBar control using the following steps:
 
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: 
-
-[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
-
-## Creating a simple application with SfLinearProgressBar
-
-You can create a WPF application with the SfLinearProgressBar control using the following steps:
+You can find more details about installing the NuGet package in a WPF application in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
 ## Adding control through designer
 
@@ -28,9 +24,6 @@ The SfLinearProgressBar control can be added to a WPF application by dragging it
 * Syncfusion.SfProgressBar.WPF 
 
 ![wpf SfLinearProgressBar control added through designer](Getting-Started_images/wpf-SfLinearProgressBar-control-added-through-designer.png)
-
-SfLinearProgressBar control added into designer
-{:.caption}
 
 ## Adding control manually in XAML
 
@@ -70,9 +63,9 @@ To add control manually through code behind, follow the given steps:
 
 1.	Add the following required assembly reference to the project:
    * Syncfusion.SfProgressBar.WPF
-2.	Import the SfLinearProgressBar namespace
+2.	Import the Linear ProgressBar namespace
     **using Syncfusion.UI.Xaml.ProgressBar;**
-3.	Create an SfLinearProgressBar instance, and add it to the window.
+3.	Create an Linear Progressbar instance, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
@@ -95,7 +88,4 @@ namespace SfProgressBar
 }
 {% endhighlight %}
 {% endtabs %}
-![wpf SfProgressBar control added through code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)
-
-SfLinearProgressBar control added through code
-{:.caption}
+![WPF Linear ProgressBar control added through code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)
