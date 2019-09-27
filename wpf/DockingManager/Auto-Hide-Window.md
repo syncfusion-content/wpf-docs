@@ -148,7 +148,7 @@ SyncDockingManager.SidePanelSize = 40;
 {% endtabs %}
 
 
-![Side panel Customization](Auto-Hide-Window_images/Auto-Hide-Window_img4.png)
+![Appearence customization of side panel in docking manager for wpf](Auto-Hide-Window_images/Auto-Hide-Window_img4.png)
 
 
 ### SideTabItem Customization
