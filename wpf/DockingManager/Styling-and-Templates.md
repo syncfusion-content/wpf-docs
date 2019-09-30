@@ -712,7 +712,7 @@ The DockedElementTabbedHost can be customized using the `DockedElementTabbedHost
 
 ### DockHeaderStyle
 
-The header of the dock window can be customized using the property `DockHeaderStyle` with the TargetType as DockHeaderPresenter.
+The header of the dock window can be customized using the property `DockHeaderStyle` with the TargetType as DockHeaderPresenter. This customized style will apply to all child windows of DockingManager.
 
 {% tabs %}
 
@@ -741,6 +741,61 @@ The header of the dock window can be customized using the property `DockHeaderSt
 
 ![](StylingandTemplates_images/StylingandTemplates_img22.jpeg)
 
+### HeaderStyle
+
+Header of **each** dock child can be customized through the `HeaderStyle` property of DockingManager. The customized style will apply to dock, auto hidden and tabbed windows. The following code illustrate the dock windows with customized header style,
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Window.Resources>
+        <Style TargetType="Syncfusion:DockHeaderPresenter" x:Key="headerStyle1" >
+            <Setter Property="Background" Value="Red"/>
+            <Setter Property="Foreground" Value="Yellow"/>
+            <Setter Property="BorderBrush" Value="Orange"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsTemplateParenKeyboardFocusWithin, RelativeSource={RelativeSource Self}}"
+						Value="True">
+                    <Setter Property="Foreground" 
+						Value="White" />
+                    <Setter Property="Background" 
+						Value="Green" />
+                </DataTrigger>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Path=IsMouseOver
+							       , RelativeSource={RelativeSource Self}}"
+						    Value="True" />
+                    </MultiDataTrigger.Conditions>
+                    <Setter Property="Foreground" 
+                        Value="Pink"/>
+                    <Setter Property="Background" 
+                        Value="Brown"/>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Syncfusion:DockingManager Grid.Row="1" x:Name="dockingManager" DockFill="True">
+        <ContentControl Syncfusion:DockingManager.Header="Dock1" Syncfusion:DockingManager.HeaderStyle="{StaticResource headerStyle1}"/>
+
+        <ContentControl Syncfusion:DockingManager.Header="Dock2" Syncfusion:DockingManager.HeaderStyle="{StaticResource headerStyle1}"/>
+
+        <ContentControl Syncfusion:DockingManager.Header="Dock3"/>
+
+        <ContentControl Syncfusion:DockingManager.Header="Dock4" Syncfusion:DockingManager.HeaderStyle="{StaticResource headerStyle1}"/>
+
+        <ContentControl Syncfusion:DockingManager.Header="Dock5" Syncfusion:DockingManager.HeaderStyle="{StaticResource headerStyle1}"/>
+
+        <ContentControl Syncfusion:DockingManager.Header="Dock6" Syncfusion:DockingManager.HeaderStyle="{StaticResource headerStyle1}"/>
+    </Syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Child windows with customized header](StylingandTemplates_images/Dock-Window-Header-Style.jpg)
 
 ### DockWindowContextMenuItemStyle
 
