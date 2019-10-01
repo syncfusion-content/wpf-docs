@@ -50,7 +50,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Blend")
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img1.jpeg)
+![Blend VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img1.jpeg)
 
 
 * Office2007Blue – Set visual style for DockingManager as Office2007Blue.
@@ -72,7 +72,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2007Blue")
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img2.jpeg)
+![Office2007Blue VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img2.jpeg)
 
 
 * Office2007Black – Setting visual style for DockingManager as Office2007Black.
@@ -95,7 +95,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2007Black")
 {% endtabs %}
 
 
-![](StylingandTemplates_images/StylingandTemplates_img3.jpeg)
+![Office2007Black VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img3.jpeg)
 
 
 * Office2007Silver – Setting visual style for the DockingManager as Office2007Silver.
@@ -117,7 +117,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2007Silver")
 {% endtabs %}
 
 
-![](StylingandTemplates_images/StylingandTemplates_img4.jpeg)
+![Office2007Silver VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img4.jpeg)
 
 
 * Office2010Blue – Set the visual style for DockingManager as Office2010Blue.
@@ -139,7 +139,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2010Blue")
 {% endtabs %}
 
 
-![](StylingandTemplates_images/StylingandTemplates_img5.jpeg)
+![Office2010Blue VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img5.jpeg)
 
 
 * Office2010Black – Set visual style for DockingManager as Office2010Black
@@ -160,7 +160,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2010Black")
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img6.jpeg)
+![Office2010Black VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img6.jpeg)
 
 
 
@@ -183,7 +183,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Office2010Silver")
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img7.jpeg)
+![Office2010Silver VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img7.jpeg)
 
 
 * VS2010- Setting visual style for the DockingManager as VS2010.
@@ -205,7 +205,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"VS2010")
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img8.jpeg)
+![VS2010 VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img8.jpeg)
 
 
 * Metro – Sett visual style for DockingManager as Metro.
@@ -227,7 +227,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Metro")
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img9.jpeg)
+![Metro VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img9.jpeg)
 
 
 * Transparent – Setting visual style for DockingManager as Transparent.
@@ -249,7 +249,7 @@ SkinStorage.SetVisualStyle(DockingManager1,"Transparent")
 {% endtabs %}
 
 
-![](StylingandTemplates_images/StylingandTemplates_img10.jpeg)
+![Transparent VisualStyle is applied to DockingManager](StylingandTemplates_images/StylingandTemplates_img10.jpeg)
 
 ## Dock Window Style
 
@@ -301,7 +301,7 @@ The style of the pin button of the Dock window can customized using the `AwlButt
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img14.jpeg)
+![Dock window with customized AutoHide button template](StylingandTemplates_images/StylingandTemplates_img14.jpeg)
 
 ### CloseButtonTemplate
 
@@ -345,7 +345,7 @@ syncfusion:DockingManager.Header="Child2"/>
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img15.jpeg)
+![Dock window with customized close button template](StylingandTemplates_images/StylingandTemplates_img15.jpeg)
 
 ### MenuButtonTemplate
 
@@ -397,7 +397,7 @@ The context menu button appearance in the Dock window header can be customized u
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img16.jpeg)
+![Dock window with customized menu button template](StylingandTemplates_images/StylingandTemplates_img16.jpeg)
 
 ### MinimizeButton Template
 
@@ -443,7 +443,7 @@ The minimize button for the dock window can be customized using the `MinimizeBut
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img17.jpeg)
+![Dock window with customized minimize button template](StylingandTemplates_images/StylingandTemplates_img17.jpeg)
 
 ### MaximizeButtonTemplate
 
@@ -490,7 +490,7 @@ The maximize button for the dock window can be customized using the `MaximizeBut
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img18.jpeg)
+![Dock window with customized maximize button template](StylingandTemplates_images/StylingandTemplates_img18.jpeg)
 
 
 ### RestoreButtonTemplate 
@@ -543,7 +543,7 @@ The Restore button for the dock window can be customized using the `RestoreButto
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img19.jpeg)
+![Dock window with restore AutoHide button template](StylingandTemplates_images/StylingandTemplates_img19.jpeg)
 
 
 ### TabItemTemplate
@@ -640,7 +640,7 @@ DockedElementTabbedHost have internal TabControl for Tabbed Windows in DockingMa
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img20.jpeg)
+![Tabbed windows with customized template](StylingandTemplates_images/StylingandTemplates_img20.jpeg)
 
 
 ### DockedElementTabbedHostStyle
@@ -707,7 +707,7 @@ The DockedElementTabbedHost can be customized using the `DockedElementTabbedHost
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img21.jpeg)
+![Background of the dock children has been changed to pink color](StylingandTemplates_images/StylingandTemplates_img21.jpeg)
 
 
 ### DockHeaderStyle
@@ -739,7 +739,7 @@ The header of the dock window can be customized using the property `DockHeaderSt
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img22.jpeg)
+![HeaderStyle which is applied to all dock children of DockingManager](StylingandTemplates_images/StylingandTemplates_img22.jpeg)
 
 ### HeaderStyle
 
@@ -843,7 +843,7 @@ The context menu of DockingManager can be customized using the `DockWindowContex
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img23.jpeg)
+![ContextMenuItem with customized style](StylingandTemplates_images/StylingandTemplates_img23.jpeg)
 
 
 ## Float Window Style
@@ -939,7 +939,7 @@ Template of FloatWindow can be customized using the `FloatWindowTemplate` with t
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img24.jpeg)
+![Float window with customized template](StylingandTemplates_images/StylingandTemplates_img24.jpeg)
 
 
 ### FloatWindowStyle
@@ -1005,7 +1005,7 @@ The NativeFloatWindow of DockingManager can be customized using the `NativeWindo
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img25.jpeg)
+![Floatwindow with customized style](StylingandTemplates_images/StylingandTemplates_img25.jpeg)
 
 
 ## Auto Hide Window Style
@@ -1059,7 +1059,7 @@ The template of the SideTabItem of the DockingManager can be customized using th
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img26.jpeg)
+![SideTabItem with customized template](StylingandTemplates_images/StylingandTemplates_img26.jpeg)
 
 
 ### SideItemStyle
@@ -1098,7 +1098,7 @@ The style for the sideTabItem can be changed using `SideItemStyle` by settings i
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img27.jpeg)
+![SideTabItem with customized style](StylingandTemplates_images/StylingandTemplates_img27.jpeg)
 
 
 ### SidePanelTemplate
@@ -1140,7 +1140,7 @@ SidePanel template in AutoHidden window can changed using `SidePanelTemplate` wi
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img28.jpeg)
+![SidePanel with customized template](StylingandTemplates_images/StylingandTemplates_img28.jpeg)
 
 
 ###  SidePanelStyle
@@ -1175,7 +1175,7 @@ The style for the SidePanel of the DockingManager can be customized using the `S
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img29.jpeg)
+![SidePanel with customized style](StylingandTemplates_images/StylingandTemplates_img29.jpeg)
 
 ## Drag Provider Style
 
@@ -1221,7 +1221,7 @@ The BottomDragProvider is used to dock the children of the Docking in the bottom
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img30.jpeg)
+![Customized bottom drag provider](StylingandTemplates_images/StylingandTemplates_img30.jpeg)
 
 
 ### LeftDragProvider
@@ -1263,7 +1263,7 @@ The LeftDragProvider is used to dock the dock window to the left side and it can
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img31.jpeg)
+![Customized left drag provider](StylingandTemplates_images/StylingandTemplates_img31.jpeg)
 
 
 ### RightDragProvider
@@ -1306,7 +1306,7 @@ To dock the DockWindow to the right side, RightDragProvider is used. It can be c
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img32.jpeg)
+![Customized right drag provider](StylingandTemplates_images/StylingandTemplates_img32.jpeg)
 
 
 ### TopDragProvider
@@ -1349,7 +1349,7 @@ To dock the DockWindow at top, the TopDragProvider is used. It can be customized
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img33.jpeg)
+![Customized top drag provider](StylingandTemplates_images/StylingandTemplates_img33.jpeg)
 
 
 ### CenterDragProvider
@@ -1392,7 +1392,7 @@ CenterDragProvider is used to dock the children of the DockingManager at the cen
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img34.jpeg)
+![Customized center drag provider](StylingandTemplates_images/StylingandTemplates_img34.jpeg)
 
 
 ## DocumentTabControlStyle
@@ -1427,7 +1427,7 @@ Document state in DockingManager used the DocumentTabControl and its style can b
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img35.jpeg)
+![DocumentTabControl with customized style](StylingandTemplates_images/StylingandTemplates_img35.jpeg)
 
 
 ## DocumentTabItemStyle
@@ -1463,7 +1463,7 @@ Each Document TabItem in DockingManager constructed by the TabItemExt and its st
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img36.jpeg)
+![DocumentTabItem with customized style](StylingandTemplates_images/StylingandTemplates_img36.jpeg)
 
 
 ## DocumentMDIHeaderStyle
@@ -1515,7 +1515,7 @@ The header style for the MDI Document can be changed using the `DocumentMDIHeade
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img37.jpeg)
+![MDI window with customized style](StylingandTemplates_images/StylingandTemplates_img37.jpeg)
 
 
 ## TabControl style
@@ -1555,7 +1555,7 @@ TabControl inside the Tabbed DockWindow can be customized using `TabControlStyle
 {% endhighlight %}
 
 {% endtabs %}
-![](StylingandTemplates_images/StylingandTemplates_img38.jpeg)
+![TabControl in tabbed windows  with customized style](StylingandTemplates_images/StylingandTemplates_img38.jpeg)
 
 
 ### TabItemStyle
@@ -1592,6 +1592,6 @@ The style for the Tabbed children of DockingManager can be customized using the 
 
 {% endtabs %}
 
-![](StylingandTemplates_images/StylingandTemplates_img39.jpeg)
+![Tabitem in tabbed windows  with customized style](StylingandTemplates_images/StylingandTemplates_img39.jpeg)
 
 
