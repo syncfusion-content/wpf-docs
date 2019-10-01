@@ -626,4 +626,6 @@ The `Constraints` property of Connector allows to enable/disable certain feature
 
 [How to group other elements with connector](/wpf/sfdiagram/group)
 
+[How to draw connector independently using drawing tool](/wpf/sfdiagram/tools)
+
 {% endseealso %}

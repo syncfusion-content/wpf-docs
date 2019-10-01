@@ -134,6 +134,8 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 
 ![Line connector](Connector_images/FreeHandDrawing.gif)
 
+For more information about changing Drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
+
 ## Create Connector 
 
 Connector can be created by defining the start and end points. The Path to be drawn can be defined with a collection of [Segments](/wpf/sfdiagram/connector#segments "Segments").
