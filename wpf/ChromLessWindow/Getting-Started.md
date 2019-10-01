@@ -179,7 +179,6 @@ You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de
 
 ![wpf chromeless window icon](Getting-Started_images/wpf-chromeless-window-icon.png)
 
-
 ## Customizing the border of ChromelessWindow
 
 You can change the border color of the chromeless window by setting the [ResizeBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~ResizeBorderBrush.html) property.
