@@ -162,7 +162,7 @@ You can make changes on the settings such as Stroke etc.
 
 This event is invoked when the item (shapes/text) gets unfocused. `ItemUnselectedEventArgs` will be the parameter. In the `Settings` property you can get either TextSettings or PenSettings based on the selected item.
 
-You can make changes on the settings such as Stroke etc. Thsi will apply after the item gets unselected.
+You can make changes on the settings such as Stroke etc. This will apply after the item gets unselected.
 
 {% tabs %} 
 
