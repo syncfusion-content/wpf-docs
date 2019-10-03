@@ -12,7 +12,7 @@ Snapping process can be customized by changing its snapping interval and snappin
 
 ## Changing the Snapping interval
 
-Diagram allows to customize the snapping interval as you want. Default value is 20.
+Snapping helps you to drag or resize the elements completely and sharp from one position to another position by some amount of distance. This snapping distance can be customized using `SnapInterval` property of `SnapSettings` class. Default snapping interval is 20.
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,7 +81,7 @@ public class DoubleExt : List<double>
 
 ## Changing the snapping angle
 
-Diagram allows to customize the snapping angle as you want. Snapping angle gives more clearity about snapping when node is rotated.
+Snapping angle is used to specify the rotation angle for snapping when node is rotated. It helps to perfom snapping when node is resized or dragged with roatated position. Default snapping angle is 5d.
 
 {% tabs %}
 {% highlight xaml %}

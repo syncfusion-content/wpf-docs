@@ -144,7 +144,6 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines | SnapConstrain
 
 ### Snapping on Dock Ports
 
-Diagram allows you to snap on dock ports. 
+Diagram allows snapping on dock ports while making new connection on it and dragging connection over dock ports.
 
 ![Snap to object](Gridlines_images/DockPortSnapping.gif)
-
