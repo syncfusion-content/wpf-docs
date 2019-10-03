@@ -51,7 +51,7 @@ Toggle cropping method takes 3 parameters.
 
 Below method will select the full image area for cropping and you can resize as per your wish
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -63,7 +63,7 @@ editor.ToggleCropping();
 
 Below method with get the ratio as the parameter to select the cropping area.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -77,7 +77,7 @@ editor.ToggleCropping(25,25);
 
 Below method with get the rect in terms of percentage to select the cropping area.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -94,7 +94,7 @@ editor.ToggleCropping(rect);
 
 After selecting the crop area use Crop method in the image editor to crop the selected portion as in the below method.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -108,7 +108,7 @@ editor.Crop(new Rect(0, 0, 0, 0)
 
 To manually select and crop the location use the same Crop method but specify the portion to br cropped in terms of rect as in the below code.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
