@@ -9,17 +9,17 @@ documentation: ug
 
 # Connector Selection and Dragging
 
-Connectors can be selected and drag over the diagram page. 
+Connectors can be selected and dragged over the diagram page. 
 
 ## How to select and edit the connector
 
-Connector can be selected by tap on it. When connector is selected, circles will be added on the starting and ending of the connector which is represented by `Thumbs`. Clicking and dragging those handles help you to adjust the source and target points.
+The connector can be selected by tapping it. When connector is selected, circles will be added on the starting and ending of the connector, which is represented by `Thumbs`. Clicking and dragging those handles helps you to adjust the source and target points.
 
 ![Straight segment](Connector_images/Thumb.gif)
 
 ## How to drag the connector
 
-Also, entire connector can be dragged over the page by using `Constraints` property and setting its value as Draggable.
+Also, the entire connector can be dragged over the page by using the `Constraints` property and setting its value as Draggable.
 
 {% tabs %}
 {% highlight xaml %}

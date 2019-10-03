@@ -9,13 +9,13 @@ documentation: ug
 
 # Connector's Appearance and Validation
 
-Source point, target point, Segements path of a connector can be customized to change their appearance and it can be validated to customize their original functionalities.
+The source point, target point, and segements path of a connector can be customized to change their appearance and it can be validated to customize their original functionalities.
 
 ## Decorator
 
-Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond or any path. You can decorate the connection end points using `SourceDecorator` and `TargetDecorator` properties of Connector. 
+The start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond, or any path. You can decorate the connection end points using the `SourceDecorator` and `TargetDecorator` properties of connector. 
 
-The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows to define the styles of the decorators shapes.
+The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows you to define the styles of the decorators shapes.
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,7 +85,7 @@ ConnectorViewModel RectangleDecorator = new ConnectorViewModel()
 
 ![source and target of the connector](Connector_images/Decorator.PNG)
 
-Each decorator shapes can be changed as hollow type shapes which is having a hole or empty space inside the shape. To change the normal shape as hollow type shape, you should change the style of the decorator shapes. 
+Each decorator shapes can be changed as hollow type shapes, which contains a hole or empty space inside the shape. To change the normal shape as hollow type shape, you should change the style of the decorator shapes. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -191,7 +191,7 @@ Following table shows available decorators shapes in the diagram control,
 
 ### How to position the decorators shapes 
 
-The `SourceDecoratorPivot` and `TargetDecoratorPivot` properties are allow to customize the position of the decorators in the connector within 0-1 range. Default pivot value of source and target decorator is (1, 0.5).
+The `SourceDecoratorPivot` and `TargetDecoratorPivot` properties allows you to customize the position of the decorators in the connector within 0-1 range. The default pivot value of source and target decorator is (1, 0.5).
 
 {% tabs %}
 {% highlight xaml %}
@@ -224,9 +224,9 @@ ConnectorViewModel PivotDecorator = new ConnectorViewModel()
 | (1,0) | ![Pivot connector](Connector_images/PivotDecorator1,1.PNG) | 
 | (1,1) | ![Pivot connector](Connector_images/PivotDecorator1,1.PNG) |
 
-### Segment Decorators
+### Segment decorators
  
- `SegmentDecorator` property allows to customize the shape within the segments line. `SegmentDecoratorStyle` property allows to customize the Style of SegmentDecorator. You can add any shape on the segments of the connector from resource dictionary.  `Length` property of `SegmentDecorator` class is used to set the position of the segment decorator on the segment path. By default segment decorator will be added at the center of the segment which is length of 0.5d.
+The `SegmentDecorator` property allows you to customize the shape within the segments line. The `SegmentDecoratorStyle` property allows to customize the Style of SegmentDecorator. You can add any shape to the segments of the connector from resource dictionary.  The `Length` property of `SegmentDecorator` class is used to set the position of the segment decorator on the segment path. By default, the segment decorator will be added at the center of the segment, which is of length 0.5d.
  
  {% tabs %}
  {% highlight xaml %}
@@ -289,7 +289,7 @@ ConnectorViewModel SegmentDecorator = new ConnectorViewModel()
 
 ## Customizing corners of the connector
 
-`CornerRadius` property allows to create Connectors with rounded corners.
+The `CornerRadius` property allows you to create connectors with rounded corners.
 
 {% tabs %}
 {% highlight xaml %}
@@ -316,7 +316,7 @@ ConnectorViewModel cornerRadious = new ConnectorViewModel()
 
 ## Padding
 
-Padding is used to leave space between the Connector’s end point and the object to where it is connected. The `SourcePadding` and `TargetPadding` properties of Connector define the space to be left between the connection end points and the source and target Nodes of Connector. Default padding value of source and target point is 0d.
+Padding is used to leave space between the connector’s end point and the object to where it is connected. The `SourcePadding` and `TargetPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. Default padding value of source and target point is 0d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -370,11 +370,11 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 
 ![space between the Connectors end point and the object](Connector_images/ConnectorPadding.PNG)
 
-For Sample, please refer to [Decorator](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/DecoratorConnector13218237891750721589 "Decorator")
+For sample, refer to [Decorator](http://www.syncfusion.com/downloads/support/directtrac/153031/ze/DecoratorConnector13218237891750721589 "Decorator")
 
 ## Bridging
 
-Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the `Constraints` property of Connector or with `GraphConstraints`.
+Line bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying connector. Bridging can be enabled or disabled either with the `Constraints` property of Connector or with `GraphConstraints`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -420,9 +420,9 @@ ConnectorViewModel bridgeConnector = new ConnectorViewModel()
 
 ### How to change the bridging direction and size
 
-The Direction of Bridge can be customized with `BridgeDirection` property. The default direction is Top.
+The direction of bridge can be customized with the `BridgeDirection` property. The default direction is Top.
 
-The size of bridge in a connector can be customized with `BridgeSpace` property. The default value is 15d.
+The size of bridge in a connector can be customized with the `BridgeSpace` property. The default value is 15d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -466,11 +466,11 @@ ConnectorViewModel bridgeConnector = new ConnectorViewModel()
 
 ![customize the size of bridge in a connector](Connector_images/CustomBridge.png)
 
-N> Bezier segments do not support Bridging.
+N> Bezier segments do not support bridging.
 
 ## How to change the appearance of connectors
 
-StrokeThickness, Stroke and style of the Connector and Decorators can be customized with a set of defined properties.
+The StrokeThickness, Stroke, and style of the connector and decorators can be customized with a set of defined properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -515,9 +515,9 @@ ConnectorViewModel customConnector = new ConnectorViewModel()
 
 ![appearance customization](Connector_images/CustomConnector.PNG)
 
-## Hit Padding
+## Hit padding
 
-Connection can be made from/to Nodes, Connectors, Port or on empty area in a diagram. Making connection with Connector and Ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. `HitPadding` property allow to customize the vicinity area while connecting. Default value is 23d. Connector can be selected and unselected within the hit padding region.
+Connection can be made from/to nodes, connectors, port or on empty area in a diagram. Making connection with connector and ports are usually difficult as thickness are usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. The `HitPadding` property allows you to customize the vicinity area while connecting. Default value is 23d. Connector can be selected and unselected within the hit padding region.
 
 {% tabs %}
 {% highlight xaml %}
@@ -542,41 +542,41 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 
 ## Events for connectors
 
-* On drawing a connector, `ObjectDrawn` event will notify the DragState and Item. To explore about arguments, please refer to [ObjectDrawn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html). 
+* On drawing a connector, the `ObjectDrawn` event will notify the DragState and Item. To explore about arguments, refer to [ObjectDrawn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html). 
 
-* If any changes made in the source thumb of the connector ,`ConnectorSourceChangedEvent` will notify the DragState, Connector Item with its old and new values. 
+* If any changes made in the source thumb of the connector, the `ConnectorSourceChangedEvent` will notify the DragState and Connector Item with its old and new values. 
 
-* If any changes made in the target thumb of the connector ,`ConnectorTargetChangedEvent` will notify the DragState and CauseValue Connector Item with its old and new values.
+* If any changes made in the target thumb of the connector, the `ConnectorTargetChangedEvent` will notify the DragState and CauseValue Connector Item with its old and new values.
 
 * On dragging the target thumb of the connector, event will notify the Cause as `UnKnown`. On drawing a connector in an Element, event will notify the Cause as `Drawing`.
 
-To explore about arguments, please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) . 
+To explore about arguments, refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) . 
 
-* If any changes made in the segment of the connector,`ConnectorEditingEvent` will notify the DragState, Item and ThumbType.To explore about arguments, please refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.
+* If any changes made in the segment of the connector, the `ConnectorEditingEvent` will notify the DragState, Item, and ThumbType. To explore about arguments, refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.
 ConnectorEditingEventArgs.html) .
 
-## Customization and Validation on Connector Ends
+## Customization and validation on connector ends
 
-This support used to decide on which element Connector is going dock with diagramming object at runtime.
+This support is used to decide on which element connector is going dock with diagramming object at runtime.
 
-### Connection Parameter
+### Connection parameter
 
-`ConnectionParameter` is used to gets or sets the connection validation objects and their values. Here we are listed the arguments as below:
+The `ConnectionParameter` is used to get or set the connection validation objects and their values. The list of arguments are as follows:
 
 | Type | Name | Type | Description |
 |---|---|---|---|
-| Property | Connector | object | Returns the Connector which is edited at runtime. |
-| Property | SourceNode | object | Defines the specific Node as Source of Connector. |
-| Property | TargetNode | object | Defines the specific Node as Target of Connector. |
-| Property | SourcePort | IPort | Defines the specific Port as Source of Connector. |
-| Property | TargetPort | IPort | Defines the specific Port as Target of Connector. |
-| Property | SourcePoint | Point | Defines the specific Point as Source of Connector. |
-| Property | TargetPoint | Point | Defines the specific Point as Source of Connector. |
-| Property | ConnectorEnd | ConnectorEnd | Returns the Connector end which is edited at runtime.|
-| Property | SourceConnector | object | Defines the specific Connector as Source of Connector. |
-| Property | TargetConnector | object | Defines the specific Connector as Target of Connector. |
+| Property | Connector | object | Returns the connector, which is edited at runtime. |
+| Property | SourceNode | object | Defines the specific node as source of connector. |
+| Property | TargetNode | object | Defines the specific node as target of connector. |
+| Property | SourcePort | IPort | Defines the specific port as source of connector. |
+| Property | TargetPort | IPort | Defines the specific port as target of connector. |
+| Property | SourcePoint | Point | Defines the specific point as source of connector. |
+| Property | TargetPoint | Point | Defines the specific point as source of connector. |
+| Property | ConnectorEnd | ConnectorEnd | Returns the connector end, which is edited at runtime.|
+| Property | SourceConnector | object | Defines the specific connector as source of connector. |
+| Property | TargetConnector | object | Defines the specific connector as target of connector. |
 
-The following code illustrates how to override ValidateConnection
+The following code explains how to override ValidateConnection.
 
 {% tabs %}
 {% highlight C# %}
@@ -614,7 +614,7 @@ public class CustomDiagram : SfDiagram
 
 ## Constraints
 
-The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/constraints#connector-constraints "Connector Constraints").
+The `Constraints` property of connector allows you to enable or disable certain features of connectors. For more information about	constraints, refer to [Connector Constraints](/wpf/sfdiagram/constraints#connector-constraints "Connector Constraints").
 
 {% seealso %}
 

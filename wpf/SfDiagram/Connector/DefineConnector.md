@@ -15,7 +15,7 @@ Connectors are objects used to create link between two points or nodes to indica
 
 ## Connector types
 
-Diagram supports to create five types of connectors. They are,
+Diagram supports to create five types of connectors. They are:
 
 *   `Line`
 *   `Orthogonal`
@@ -23,7 +23,7 @@ Diagram supports to create five types of connectors. They are,
 *   `QuadraticBezier`
 *   `PolyLine`
 
-`DefaultConnectorType` property allows to change the connector type. By default, diagram connector type is `Orthogonal`.
+The `DefaultConnectorType` property allows you to change the connector type. By default, the diagram connector type is `Orthogonal`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -82,9 +82,9 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ![Line connector](Connector_images/ConnectorTypes.PNg)
 
-### How to draw poly line
+### How to draw polyline
 
-Poly Line is a continuous line composed of one or more line segments. When you click on the diagram page a line will be started drawing, then new segments will be keep on added for every click on page. Line drawing will be stopped when double click on the page. This poly line will be drawing using `Tool` , `DrawingTool` and `DefaultConnectorType` properties.
+Polyline is a continuous line of a segment or a continuous line composed of more line segments. When you click the diagram page, a line will be drawn, and then new segments will be kept on added for every click on page. Line drawing will be stopped when double-click the page. This polyline will be drawn using the `Tool`, `DrawingTool`, and `DefaultConnectorType` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -112,7 +112,7 @@ diagram.DrawingTool = DrawingTool.Connector;
 
 ### Free-hand drawing
 
-Diagram have support for free-hand drawing which makes you to draw any thing on the diagram page independently. Free-hand drawing will be enabled by using `DrawingTool` property and setting its value as `FreeHand`.
+Diagram has support for free-hand drawing to draw anything on the diagram page independently. Free-hand drawing will be enabled by using the `DrawingTool` property and setting its value to `FreeHand`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -134,15 +134,15 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 
 ![Line connector](Connector_images/FreeHandDrawing.gif)
 
-For more information about changing Drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
+For more information about changing drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
 
-## Create Connector 
+## Create connector 
 
-Connector can be created by defining the start and end points. The Path to be drawn can be defined with a collection of [Segments](/wpf/sfdiagram/connector#segments "Segments").
+Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of [Segments](/wpf/sfdiagram/connector#segments "Segments").
 
-## Create connectors through connection Points
+## Create connectors through connection points
 
-Connector can be created by defining the source and target point of the connection. The `SourcePoint` and `TargetPoint` properties which are `Point` type that allows you to set or get the start and end point of a connection.
+The connector can be created by defining the source and target point of the connection. The `SourcePoint` and `TargetPoint` properties, which are `Point` type allows you to set or get the start and end points of a connection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -182,9 +182,9 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ![point to point connection](Connector_images/Connector_img6.PNG)
 
-## Create connection between Nodes
+## Create connection between nodes
 
-The connector can be created between Nodes to display the relationship between them. The `SourceNode`/`SourceNodeID` and `TargetNode`/`TargetNodeID` properties allow to represent the Nodes to be connected.
+The connector can be created between nodes to display the relationship between them. The `SourceNode`/`SourceNodeID` and `TargetNode`/`TargetNodeID` properties allows you to represent the nodes to be connected.
 
 {% tabs %}
 {% highlight xaml %}
@@ -254,11 +254,11 @@ ConnectorViewModel nodeToNodeConnection = new ConnectorViewModel()
 
 ![connection between nodes](Connector_images/Connector_img3.PNG)
 
-## Connections with Ports
+## Connections with ports
 
-By default, connections are created at the intersecting point of Segments and Node bounds. The connection between any specific point of Source and Target Nodes can be achieved with Ports.
+By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with ports.
 
-The `SourcePort`/`SourcePortID` and `TargetPort`/`TargetPortID` properties allow to create connections between some specific points of Source/Target Nodes. 
+The `SourcePort`/`SourcePortID` and `TargetPort`/`TargetPortID` properties allows you to create connections between some specific points of Source/Target nodes. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -373,11 +373,11 @@ ConnectorViewModel PortToPortConnection = new ConnectorViewModel()
 
 ![connection between ports](Connector_images/PortToPortConnection.PNG)
 
-For more details about Ports, please refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
+For more details about Ports, refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
 
-## Draw Connectors
+## Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to [Drawing Tools](/wpf/sfdiagram/tools#drawing-tools:connectors "Drawing Tools").
+Connectors can be interactively drawn by clicking and dragging on the diagram surface by using the drawing tool. For more information about drawing connectors, refer to [Drawing Tools](/wpf/sfdiagram/tools#drawing-tools:connectors "Drawing Tools").
 
 ## Connectors through data source
 
@@ -385,7 +385,7 @@ Connectors are automatically generated based on the relationships defined throug
 
 ## Add connectors from stencil
 
-Connectors can be predefined and added to the stencil. You can drop those Connectors into the Diagram, when required. 
+Connectors can be predefined and added to the stencil. You can drop those connectors into the diagram, when required. 
 
-For more information about adding Connectors from stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
+For more information about adding connectors from stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
 
