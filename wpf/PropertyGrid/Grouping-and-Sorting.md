@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping and Sorting | PropertyGrid  | wpf | Syncfusion
+title: Grouping and Sorting | custom order | PropertyGrid  | wpf | Syncfusion
 description: grouping and sorting
 platform: wpf
 control: PropertyGrid 
@@ -15,7 +15,9 @@ PropertyGrid groups the properties based on Category Attribute of the property a
 
 You can change the Sorting order by setting the SortDirection property. 
 
-When you click the SortButton in PropertyGrid, the properties in PropertyGrid will be sorted automatically based on the SortDirection property. 
+When you click the SortButton in PropertyGrid, the properties in PropertyGrid will be sorted automatically based on the SortDirection property. Properties will be sorted based on the `Name` of the property, not by `DisplayName`
+
+If the `SortDirection` is null and the properties doesn't have any custom order then the properties will be arranged based on the order they were added in the property items collection of PropertyGrid. Otherwise, the properties will be arranged based on the order specified in each property of the DisplayAttribute.
 
 When you click the GroupButton, then the properties will be displayed by grouping based on the Category Attribute of the property.
 
@@ -43,7 +45,7 @@ Bool</td><td>
 SortDirection</td><td>
 Gets or sets the SortDirection for the PropertyGrid control.</td><td>
 DependencyProperty</td><td>
-ListSortDirection</td><td>
+Nullable ListSortDirection</td><td>
 </td></tr>
 </table>
 
