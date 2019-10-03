@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image cropping in SfImageEditor WPF.
+title: Image cropping in syncfusion ImageEditor WPF.
 description: Image cropping
 platform: wpf
 control: SfImageEditor
@@ -9,43 +9,43 @@ documentation: ug
 
 # Crop
 
-Image can be cropped both via toolbar and propgrammatically.
+Image can be cropped both via toolbar and programmatically.
 
 ## Toolbar cropping
 
 To crop the image click on the Crop icon in the toolbar. Cropping handles will be added on the image, you can resize the handles to crop the required portion.
 
-Upon clicking the crop icon, sub toolbar will be displayed below the main toolbar. After selecting the croping portion click Ok in the sub toolbar to crop that selected portion.
+Upon clicking the crop icon, sub toolbar will be displayed below the main toolbar. After selecting the cropping portion click OK in the sub toolbar to crop that selected portion.
 
-Sub toolbar contains the folling the icons.
+Sub toolbar contains the following the icons.
 
 * Width - You can specify the width of the cropping area.
 * Height - You can specify the height of the cropping area.
-* Ok - Clicking on this icon selected portion will be cropped.
+* OK - Clicking on this icon selected portion will be cropped.
 * Cancel - On clicking this icon cropping handles will be removed.
 
 N> On specifying width and height cropping area is located from the left top corner.
 
-You can also perform continous cropping on the image.
+You can also perform continuous cropping on the image.
 
 Below image describes the area selected for cropping.
 
-![ImageEditor](Images/ToolbarCropArea.png) 
+![Selected crop area](Images/ToolbarCropArea.png) 
 
 Below is the image taken after performing cropping on the selected area.
 
-![ImageEditor](Images/CroppedImage.jpg) 
+![Cropped image](Images/CroppedImage.jpg) 
 
-## Programmatical cropping
+## Programmatic cropping
 
 Cropping can be done programmatically using  the following two methods in image editor.
 
 * ToggleCropping - Used to select the cropping area.
-* Crop - Crops the selected area in teh image.
+* Crop - Crops the selected area in the image.
 
 ### Toggle cropping
 
-Toggle cropping mathos takes 3 paramters.
+Toggle cropping mathod takes 3 parameters.
 
 ### Crop area selection
 
@@ -61,7 +61,7 @@ editor.ToggleCropping();
 
 {% endtabs %} 
 
-Below method with get the ratio as the paramter to select the cropping area.
+Below method with get the ratio as the parameter to select the cropping area.
 
 % tabs %} 
 
@@ -73,7 +73,7 @@ editor.ToggleCropping(25,25);
 
 {% endtabs %} 
 
-![ImageEditor](Images/CroppingRatio.png) 
+![Ratio cropping](Images/CroppingRatio.png) 
 
 Below method with get the rect in terms of percentage to select the cropping area.
 
@@ -88,7 +88,7 @@ editor.ToggleCropping(rect);
 
 {% endtabs %} 
 
-![ImageEditor](Images/CroppingRect.png) 
+![Rect cropping](Images/CroppingRect.png) 
 
 ### Crop
 
@@ -118,4 +118,4 @@ editor.Crop(new Rect(0, 0, 0, 0)
 
 {% endtabs %} 
 
-![ImageEditor](Images/ManualCrop.png) 
+![Manual cropping](Images/ManualCrop.png) 

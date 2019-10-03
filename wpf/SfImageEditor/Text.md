@@ -54,7 +54,7 @@ You can make the text Bold, Italic, Underline by clicking on the corresponding i
 Text can be aligned at the Left, Center or Right by clicking on the corresponding icon. By default, text will be aligned at the Left.
 
 
-## Programmatical approach
+## Programmatic approach
 
 Programmatically, you can add text on the image using the AddText method. This method requires the following parameters
 
@@ -112,5 +112,5 @@ Using the following properties in the TextSettings, text can be customized.
 
 {% endtabs %} 
 
-![ImageEditor](Images/Text.jpg)   
+![Text](Images/Text.jpg)   
 

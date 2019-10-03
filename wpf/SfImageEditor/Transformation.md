@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image transformation in SfImageEditor WPF.
+title: Image transformation in syncfusion SfImageEditor WPF.
 description: Image transformation
 platform: wpf
 control: SfImageEditor
@@ -24,9 +24,9 @@ To flip the image click the Flip icon in the toolbar. Popup will be displayed pr
 
 ### Using code
 
-Programmatically you can flip the image using the Flip method. This method takes the flip direction as the paramter to specify whether it is a horizontal flip or vertical flip.
+Programmatically you can flip the image using the Flip method. This method takes the flip direction as the parameter to specify whether it is a horizontal flip or vertical flip.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -38,20 +38,20 @@ editor.Flip(FlipDirection.Horizontal);
 
 Below image depicts the horizontal flip.
 
-![ImageEditor](Images/HorizontalFlip.jpg)   
+![Horizontal flip](Images/HorizontalFlip.jpg)   
 
 Vertical flip of the image.
 
-![ImageEditor](Images/VerticalFlip.jpg)   
+![Vertical flip](Images/VerticalFlip.jpg)   
 
 ## Rotate
 
 ### Via Toolbar
 
-To rotate the image, click on the rotate icon in the toolbar, this will rotate the image to 90 degree from the current state. By continuous clicking angle will be increased since it will roate from the current state.
+To rotate the image, click on the rotate icon in the toolbar, this will rotate the image to 90 degree from the current state. By continuous clicking angle will be increased since it will rotate from the current state.
 
-### Programmatical approach
+### Programmatic approach
 
 Use Rotate method to rotate the image to 90 degree from the current state. 
 
-![ImageEditor](Images/Rotate.jpg) 
+![Rotate](Images/Rotate.jpg) 

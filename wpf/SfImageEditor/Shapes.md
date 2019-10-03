@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes of SfImageEditor WPF.
+title: Shapes of syncfusion SfImageEditor WPF.
 description: Annotating image using shapes.
 platform: wpf
 control: SfImageEditor
@@ -42,13 +42,13 @@ On selecting the required color from this color picker, stroke of the selected s
 
 You can select the desired from the listed-out sizes to update the stroke width of the selected shape.
 
-![ImageEditor](Images/Shapes.jpg) 
+![Stroke width](Images/Shapes.jpg) 
 
 ### Delete
 
 To delete the added shape, select the shape and click delete icon from the keyboard.
 
-## Programmatical approach
+## Programmatic approach
 
 Shapes can be added into the image using the AddShape method. This method takes the following 2 parameters.
 
@@ -115,7 +115,7 @@ N> Values of the bounds rect will be in percentage. For example (25,25,25,25) wi
 
 {% endtabs %} 
 
-![ImageEditor](Images/Shapes1.jpg) 
+![Shapes](Images/Shapes1.jpg) 
 
 ## Shape resizing
 

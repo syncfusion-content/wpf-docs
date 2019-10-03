@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Saving edited image in SfImageEditor WPF.
+title: Saving edited image in syncfusion SfImageEditor WPF.
 description: Image saving
 platform: wpf
 control: SfImageEditor
@@ -133,8 +133,8 @@ Below code cancels the default saving and save the stream in the specified locat
 
 ### Image saved
 
-Image saved event will be invoked after the image has been saved to the destination location. `ImageSavedEventArgs` will be the paramter.
-This paramter contaings the `Location` property which specify the location in which image is saved.
+Image saved event will be invoked after the image has been saved to the destination location. `ImageSavedEventArgs` will be the parameter.
+This parameter contains the `Location` property which specify the location in which image is saved.
 
 {% tabs %} 
 
@@ -158,7 +158,7 @@ Reset functionality has the below 2 events.
 
 ### Begin reset
 
-This event is invoked before resetting the changes. Hence you can controlthe reset operation using the Cancel property in the `BeginResetEventArgs`.
+This event is invoked before resetting the changes. Hence you can control the reset operation using the Cancel property in the `BeginResetEventArgs`.
 
 {% tabs %} 
 
