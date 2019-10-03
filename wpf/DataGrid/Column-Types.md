@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WPF DataGrid Column Types | Syncfusion
+title: Column Types in WPF DataGrid | Syncfusion
 description: WPF DataGrid supports various built-in editors through built-in column types such as textbox column , combobox column, template column, datetime column, etc.
 platform: wpf
 control: SfDataGrid
