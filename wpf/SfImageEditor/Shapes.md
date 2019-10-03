@@ -131,3 +131,48 @@ Below code will enable Resizing functionality to both shapes and text.
 {% endhighlight %}
 
 {% endtabs %} 
+
+## Events
+
+Shapes and Text supports the following 2 events.
+
+* ItemSelected
+* ItemUnselected
+
+### ItemSelected
+
+This event is invoked when the item (shapes/text) gets selected. `ItemSelectedEventArgs` will be the parameter. In the `Settings` property you can get either TextSettings or PenSettings based on the selected item.
+
+You can make changes on the settings such as Stroke etc.
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+ private void Editor_ItemSelected(object sender, ItemSelectedEventArgs args)
+        {
+            
+        }
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+### ItemUnSelected
+
+This event is invoked when the item (shapes/text) gets unfocused. `ItemUnselectedEventArgs` will be the parameter. In the `Settings` property you can get either TextSettings or PenSettings based on the selected item.
+
+You can make changes on the settings such as Stroke etc. Thsi will apply after the item gets unselected.
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+  private void Editor_ItemUnselected(object sender, ItemUnselectedEventArgs args)
+        {            
+           
+        }
+
+{% endhighlight %}
+
+{% endtabs %} 
