@@ -13,7 +13,7 @@ documentation: ug
 
 ### Visibility
 
-Toolbar can be made visible or hidden using the `IsToolbarVisibility` property in the `ToolbarSettings`.
+Toolbar can be made visible or hidden using the `IsToolbarVisibility` property in the [`ToolbarSettings`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ToolbarSettings.html).
 
 {% tabs %} 
 
@@ -57,6 +57,37 @@ editor.ToolbarSettings.ToolbarItems.Add(new ToolbarItem() { IconTemplate = grid.
 
 {% endtabs %} 
 
+### Customization
+
+You can change the [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~Background.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~BorderColor.html) of the toolbar. Also, you can change the height of the main toolbar using the [`HeaderToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~HeaderToolbarHeight.html) property and the height of the sub toolbar can be changed using the [`SubItemToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~SubItemToolbarHeight.html) property and the footer toolbar height can be changed using the [`FooterToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~FooterToolbarHeight.html).
+
+This can be done as in the below code snippet.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+    <editor:SfImageEditor.ToolbarSettings>
+                <editor:ToolbarSettings IsToolbarVisibility="True" HeaderToolbarHeight="36" 
+                                        FooterToolbarHeight="36"  Background="#DEDEDE" BorderColor="Black"
+                                        />
+    </editor:SfImageEditor.ToolbarSettings>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+ editor.ToolbarSettings.Background= (SolidColorBrush)new BrushConverter().ConvertFromString("#DEDEDE");
+            editor.ToolbarSettings.BorderColor = new SolidColorBrush(Colors.Black);
+            editor.ToolbarSettings.HeaderToolbarHeight = 36;
+            editor.ToolbarSettings.FooterToolbarHeight = 36;
+            editor.ToolbarSettings.IsToolbarVisibility = true;
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Custom Item](Images/ToolbarCustomization.png) 
+
 ## Events
 
 ### ToolbarItemSelected
@@ -76,4 +107,4 @@ This event occurs when an item in the toolbar is selected. `ToolbarItemSelectedE
 
 {% endtabs %} 
 
-![ImageEditor](Images/ToolbarCustomization.png) 
+![Custom Item](Images/ToolbarCustomItem.png) 

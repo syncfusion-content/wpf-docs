@@ -61,7 +61,7 @@ Image can be loaded in the following two ways:
 * Using image source
 * Using stream
 
-You can load the image source as demonstrated in the following code snippet.
+You can load the [`ImageSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ImageSource.html) as demonstrated in the following code snippet.
 
 {% tabs %} 
 
@@ -84,7 +84,7 @@ You can load the image source as demonstrated in the following code snippet.
 
 {% endtabs %} 
 
-You can load the image as stream using the following code snippet.
+You can load the image as stream using the [`Image`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~Image.html) property as in the following code snippet.
 
 {% highlight C# %} 
 
