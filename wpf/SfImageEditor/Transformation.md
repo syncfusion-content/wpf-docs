@@ -9,22 +9,22 @@ documentation: ug
 
 # Transformation
 
-Image editor control provides the below 2 transformations.
+The image editor control provides the following two transformations:
 
-1.	Flip.
-2.	Rotate.
+* Flip
+* Rotate
 
 ## Flip
 
 Images can be flipped either in horizontal or vertical direction. By default, images will be flipped in horizontal direction.
 
-### Via Toolbar
+### Using toolbar
 
-To flip the image click the Flip icon in the toolbar. Popup will be displayed prompting for whether horizontal flip or vertical flip. Select the required flip direction to flip the image.
+To flip an image, click the Flip icon in the toolbar. Popup will be displayed prompting for whether horizontal flip or vertical flip. Select the required flip direction to flip the image.
 
 ### Using code
 
-Programmatically you can flip the image using the Flip method. This method takes the flip direction as the parameter to specify whether it is a horizontal flip or vertical flip.
+Programmatically, you can flip an image using the Flip method. This method takes the flip direction as the parameter to specify whether it is a horizontal flip or vertical flip.
 
 {% tabs %} 
 
@@ -36,7 +36,7 @@ editor.Flip(FlipDirection.Horizontal);
 
 {% endtabs %} 
 
-Below image depicts the horizontal flip.
+The following screenshot depicts the horizontal flip.
 
 ![Horizontal flip](Images/HorizontalFlip.jpg)   
 
@@ -46,12 +46,12 @@ Vertical flip of the image.
 
 ## Rotate
 
-### Via Toolbar
+### Using toolbar
 
-To rotate the image, click on the rotate icon in the toolbar, this will rotate the image to 90 degree from the current state. By continuous clicking angle will be increased since it will rotate from the current state.
+To rotate an image, click the rotate icon in the toolbar. This rotates the image to 90 degrees from the current state. By continuous clicking, angle will be increased since it is rotated from the current state.
 
-### Programmatic approach
+### Using code
 
-Use Rotate method to rotate the image to 90 degree from the current state. 
+Use the rotate method to rotate an image to 90 degrees from the current state. 
 
 ![Rotate](Images/Rotate.jpg) 

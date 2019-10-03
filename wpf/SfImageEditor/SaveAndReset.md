@@ -9,24 +9,24 @@ documentation: ug
 
 # Save
 
-Image can be saved along with the edited changes. Saving can be done in the following 2 ways.
+Image can be saved along with the changes. An image can be saved in the following two ways:
 
-* Using Toolbar
-* Programmatically using code.
+* Saving image using toolbar
+* Saving image programmatically
 
-## Toolbar saving
+## Saving image using toolbar
 
-To save the image, click the save icon in the toolbar. You can choose the desired location from the save file dialog to save the edited image.
+To save an image, click the save icon in the toolbar. You can choose the desired location from the save file dialog to save the edited image.
 
-## Using code
+## Saving image programmatically
 
-Programmatically image can be saved using the Save method in image editor as follows. Save method takes the following 3 parameters.
+An image can be saved programmatically using the Save method in image editor as follows. The save method takes the following three parameters:
 
-* ImageFormat - Specify the format in which image has to be saved.
+* ImageFormat - Specifies the format in which image has to be saved.
 
-* Size - Image will be saved in the specified size.
+* Size - Saves the image in the specified size.
 
-* FilePath - LOcation in which image has to be saved.
+* FilePath - Specifies the location in which image has to be saved.
 
 {% tabs %} 
 
@@ -40,7 +40,7 @@ editor.Save();
 
 ### Image size specification
 
-You can save the image at the required size by specifying the size parameter in the save method as follows.
+You can save an image with the required size by specifying the size parameter in the save method as follows.
 
 {% tabs %} 
 
@@ -54,7 +54,7 @@ editor.Save(null, new Size(750,500), null);
 
 ### Image location
 
-Image can be saved at the specified location as in the below code.
+Image can be saved at the specified location as demonstrated in the following code.
 
 {% tabs %} 
 
@@ -82,7 +82,7 @@ You can specify the format in which image has to be saved as the parameter in Sa
 
 ## Reset
 
-To reset the changes made you can click the Reset icon in the toolbar. To programmatically reset use the below code.
+To reset the changes made, click the Reset icon in the toolbar. To programmatically reset, use the following code.
 
 {% tabs %} 
 
@@ -96,24 +96,23 @@ editor.Reset();
 
 ## Events
 
-### Saving events.
+### Saving events
 
-Image editor has the following 2 events.
+Image editor has the following two events:
 
 * ImageSaving
 * ImageSaved
 
 ### Image saving
 
-This event will be invoked before the image gets saved to the destination location. `ImageSavingEventArgs` will be the parameter.
-This argument contains the following 2 properties.
+This event occurs before the image is saved to the destination location. `ImageSavingEventArgs` is the parameter. This argument contains the following two properties:
 
 * Cancel - Cancels the saving functionality.
 * Stream - Stream of the image that is going to be saved.
 
-Hence you can control the saving by using the `Cancel` property and also you can access the stream as per your requirement.
+Hence, you can control the saving using the `Cancel` property, and you can also access the stream as needed.
 
-Below code cancels the default saving and save the stream in the specified location.
+The following code cancels the default saving and saves the stream in the specified location.
 
 {% tabs %} 
 
@@ -133,8 +132,7 @@ Below code cancels the default saving and save the stream in the specified locat
 
 ### Image saved
 
-Image saved event will be invoked after the image has been saved to the destination location. `ImageSavedEventArgs` will be the parameter.
-This parameter contains the `Location` property which specify the location in which image is saved.
+This event occurs after the image has been saved to the destination location. The `ImageSavedEventArgs` will be the parameter. This parameter contains the `Location` property, which specifies the location in which image is saved.
 
 {% tabs %} 
 
@@ -151,14 +149,14 @@ This parameter contains the `Location` property which specify the location in wh
 
 ### Reset events
 
-Reset functionality has the below 2 events.
+The Reset functionality has the following two events:
 
 * BeginReset
 * EndReset
 
 ### Begin reset
 
-This event is invoked before resetting the changes. Hence you can control the reset operation using the Cancel property in the `BeginResetEventArgs`.
+This event occurs before resetting the changes. Hence, you can control the reset operation using the Cancel property in the `BeginResetEventArgs`.
 
 {% tabs %} 
 
@@ -173,9 +171,9 @@ This event is invoked before resetting the changes. Hence you can control the re
 
 {% endtabs %} 
 
-### End reset.
+### End reset
 
-This event is invoked after the reset function gets completed.
+This event occurs after the reset function has been completed.
 
 {% tabs %} 
 
@@ -189,4 +187,3 @@ This event is invoked after the reset function gets completed.
 {% endhighlight %}
 
 {% endtabs %} 
-

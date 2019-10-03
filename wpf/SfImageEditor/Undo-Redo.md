@@ -7,27 +7,27 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Undo Redo support
+# Undo and Redo Supports
 
-Undo Redo support helps in performing the edited image transition from current state to previous state or from current state to next state.
+The undo and redo supports help in performing the edited image transition from current state to previous state or from current state to next state.
 
-All the editing operation related to the shapes will be stored hence you can easily go to the previous state or next state. This can be done both via toolbar and also programmatically.
+All the editing operation related to the shapes will be stored, hence you can easily go to the previous state or next state. This can be done using toolbar or programmatically.
 
-N> Currently, Undo and Redo functionality supports only for shapes and text.
+N> Currently, the undo and redo support only for shapes and text.
 
-Undo and Redo can perform the following operation.
+The undo and redo supports perform the following operations:
 
-* Add or delete shapes/text.
-* Change positions.
-* Fill/Stroke changes.
+* Add or delete shapes/text
+* Change positions
+* Fill/Stroke changes
 
 ## Undo
 
-In the left side of the toolbar you can find the Undo and Redo icon. Both the icon will be disabled state by default. This will get enabled only when the changes are in done in the images. 
+In the left side of the toolbar, you can find the undo and redo icons. Both these icons will be in disabled state by default. These icons will be enabled only when the changes are done in the images. 
 
-Undo will clear the last performed change on the image. Hence by continuous Undo you can reach the initial state. (i.e. before changes related to shapes and text were done).
+Undo clears the last performed change on the image. By performing undo continuously, you can reach the initial state (i.e., before changes related to shapes and text were done).
 
-Programmatically, Undo can be performed using the Undo method as in the below snippet.
+Programmatically, undo can be performed using the undo method as demonstrated in following code snippet.
 
 {% tabs %} 
 
@@ -39,12 +39,11 @@ editor.Undo();
 
 {% endtabs %} 
 
-
 ## Redo
 
-Redo icon will get enabled only when an Undo operation is performed. Redo will bring the changes that is excluded using Undo operation.
+The redo icon is enabled only when an undo operation is performed. Redo will bring the changes excluded using the undo operation.
 
-Programmatically, Redo can be performed using the Undo method as in the below snippet.
+Programmatically, redo can be performed using the undo method as demonstrated in the following code snippet.
 
 {% tabs %} 
 

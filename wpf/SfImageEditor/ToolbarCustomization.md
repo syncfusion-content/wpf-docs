@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Toolbar customization
+# Toolbar Customization
 
 ## Customization
 
@@ -33,9 +33,9 @@ editor.ToolbarSettings.IsToolbarVisibility = true;
 
 {% endtabs %} 
 
-### Add Item
+### Add item
 
-You can add additional item to the toolbar and can perform your own operation. To add additional item, specify the toolbar item and add it in the ToolbarItems collection as in below snippet. You can specify your own template using the `IconTemplate` property in the `ToolbarItem`.
+You can add additional items to the toolbar and can perform your own operation. To add an additional item, specify the toolbar item, and add it in the ToolbarItems collection as demonstrated in following code snippet. You can specify your own template using the `IconTemplate` property in `ToolbarItem`.
 
 {% tabs %} 
 
@@ -61,7 +61,7 @@ editor.ToolbarSettings.ToolbarItems.Add(new ToolbarItem() { IconTemplate = grid.
 
 ### ToolbarItemSelected
 
-Toolbar item selected event will be invoked when the item in the toolbar is  selected. `ToolbarItemSelectedEventArgs` will be the parameter. You can control the selected item operation by setting the Cancel property to true. Also you can get the information about the ToolbarItem.
+This event occurs when an item in the toolbar is selected. `ToolbarItemSelectedEventArgs` is the parameter. You can control the selected item operation by setting the Cancel property to true. You can also get the information about the ToolbarItem.
 
 {% tabs %} 
 

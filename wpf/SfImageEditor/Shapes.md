@@ -9,30 +9,30 @@ documentation: ug
 
 # Shapes
 
-You can annotate the image by adding shapes such as Circle, Rectangle, Arrow. Shapes can be added in the following 2 ways.
+You can annotate an image by adding shapes such as circle, rectangle, and arrow. Shapes can be added in the following two ways:
 
-*	Using Toolbar
-*	Programmatically using code.
+* Using Toolbar
+* Programmatically
 
-## Toolbar
+## Adding shapes using toolbar
 
-To add shape, click on the AddShape icon in the toolbar. This will list out the default shapes and you can select the desired shape from it. By default, selected shape will be added at the center. You can select and drag the shape to position at the desired location. Upon selecting the shape, handles will be enabled which helps in resizing of the shape. Click outside to disable the selection.
+To add a shape, click the AddShape icon in the toolbar. This will list out the default shapes, and you can select the desired shape from it. By default, selected shape will be added at the center. You can select and drag the shape to position at the desired location. Upon selecting the shape, handles will be enabled. Handles help in resizing the shapes. Click outside to disable the selection.
 
 ## Customization
 
-The following properties of the added shape can be customized.
+The following properties of the added shape can be customized:
 
-*	Fill
-*	Stroke
-*	StrokeWidth
+* Fill
+* Stroke
+* StrokeWidth
 
-On selecting the shape icon in the toolbar, a sub toolbar will be generated below the main toolbar to provide the customizing options for the shapes.
+By selecting the shape icon in the toolbar, a sub toolbar will be generated below the main toolbar to provide the customizing options for the shapes.
 
-N> Shape needs to be selected to apply customization from the sub toolbar.
+N> Shapes need to be selected to apply customization from the sub toolbar.
 
 ### Fill
 
-Color picker will be opened on selecting this icon, you can select the desired color from it to fill the selected shape. By default, fill is in transparent.
+Color picker will be opened on selecting this icon. You can select the desired color from color picker to fill the selected shape. By default, fill is in transparent.
 
 ### Stroke
 
@@ -40,20 +40,20 @@ On selecting the required color from this color picker, stroke of the selected s
 
 ### Stroke width
 
-You can select the desired from the listed-out sizes to update the stroke width of the selected shape.
+You can select the desired stroke width from the listed-out sizes to update the stroke width of the selected shape.
 
 ![Stroke width](Images/Shapes.jpg) 
 
 ### Delete
 
-To delete the added shape, select the shape and click delete icon from the keyboard.
+To delete the added shape, select the shape, and then click the delete icon from the keyboard.
 
-## Programmatic approach
+## Adding shapes programmatically
 
-Shapes can be added into the image using the AddShape method. This method takes the following 2 parameters.
+Shapes can be added into an image using the AddShape method. This method takes the following two parameters:
 
-*	ShapeType - You can choose the required shapes types. Available shape types are Rectangle, Circle, Arrow.
-*	PenSettings – Used for customizing the added shapes.
+* ShapeType - You can choose the required shape type. The available shape types are rectangle, circle, and arrow.
+* PenSettings – Customizes the added shapes.
 
 % tabs %} 
 
@@ -67,7 +67,7 @@ editor.AddShape(ShapeType.Rectangle, new PenSettings());
 
 ### Delete
 
-To delete the selected shape use Delete method as follows.
+To delete the selected shape, use the Delete method as follows.
 
 % tabs %} 
 
@@ -81,13 +81,13 @@ editor.Delete();
 
 ## Pen settings
 
-Using the following properties in the pen settings, added shapes can be customized.
+The added shapes can be customized using the following properties in pen settings:
 
-*	Fill - Fills the selected shape with this color.
-*	Stroke – Applies this stroke to the selected shape.
-*	Opacity – Applies opacity to both stroke and fill of the shape.
-*	StrokeWidth – Applied the specified width to the stroke of the shape.
-*	Bounds – Rect used to position the shape.
+* Fill - Fills the selected shape with this color.
+* Stroke – Applies this stroke to the selected shape.
+* Opacity – Applies opacity to both stroke and fill of the shape.
+* StrokeWidth – Applies the specified width to the stroke of a shape.
+* Bounds – Rect used to position the shape.
 
 N> Values of the bounds rect will be in percentage. For example (25,25,25,25) will take the position of 25 percent from the left and top.
 
@@ -119,8 +119,7 @@ N> Values of the bounds rect will be in percentage. For example (25,25,25,25) wi
 
 ## Shape resizing
 
-By default, both shapes and text are resizable. You can also control the resizable using the ResizableElements property in image editor.
-Below code will enable Resizing functionality to both shapes and text.
+By default, both shapes and text are resizable. You can also control the resizable using the ResizableElements property in image editor. The following code enables the resizing functionality to both shapes and text.
 
 % tabs %} 
 
@@ -134,16 +133,16 @@ Below code will enable Resizing functionality to both shapes and text.
 
 ## Events
 
-Shapes and Text supports the following 2 events.
+Shapes and Text supports the following two events:
 
 * ItemSelected
 * ItemUnselected
 
 ### ItemSelected
 
-This event is invoked when the item (shapes/text) gets selected. `ItemSelectedEventArgs` will be the parameter. In the `Settings` property you can get either TextSettings or PenSettings based on the selected item.
+This event occurs when an item (shape/text) is selected. `ItemSelectedEventArgs` will be the parameter. In the `Settings` property, you can get either TextSettings or PenSettings based on the selected item.
 
-You can make changes on the settings such as Stroke etc.
+You can make changes on the settings such as stroke etc.
 
 {% tabs %} 
 
@@ -160,9 +159,9 @@ You can make changes on the settings such as Stroke etc.
 
 ### ItemUnSelected
 
-This event is invoked when the item (shapes/text) gets unfocused. `ItemUnselectedEventArgs` will be the parameter. In the `Settings` property you can get either TextSettings or PenSettings based on the selected item.
+This event occurs when an item (shape/text) is unfocused. `ItemUnselectedEventArgs` will be the parameter. In the `Settings` property, you can get either TextSettings or PenSettings based on the selected item.
 
-You can make changes on the settings such as Stroke etc. This will apply after the item gets unselected.
+You can make changes on the settings such as stroke etc. This is applied after the item has been unselected.
 
 {% tabs %} 
 
@@ -175,4 +174,4 @@ You can make changes on the settings such as Stroke etc. This will apply after t
 
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
