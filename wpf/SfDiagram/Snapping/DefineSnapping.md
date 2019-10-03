@@ -21,7 +21,7 @@ The snap-to-object provides visual cues to assist with aligning and spacing Diag
 
 Please refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
-Snapping to objects can be enabled by assigning values to  `SnapToObject` property of `SnapToObject` class. Default value is None.
+Snapping to objects can be enabled by assigning values to  `SnapToObject` property of `SnapSettings` class. Default value is None.
 
 {% tabs %}
 {% highlight xaml %}
@@ -144,7 +144,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines | SnapConstrain
 
 ### Snapping on Dock Ports
 
-Diagram allows you to snap on dock ports.
+Diagram allows you to snap on dock ports. 
 
 ![Snap to object](Gridlines_images/DockPortSnapping.gif)
 
