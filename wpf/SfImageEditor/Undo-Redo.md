@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Undo, Redo support in SfImageEditor WPF.
+title: Undo, Redo support in syncfusion SfImageEditor WPF.
 description: Undo and Redo support.
 platform: wpf
 control: SfImageEditor
@@ -25,7 +25,7 @@ Undo and Redo can perform the following operation.
 
 In the left side of the toolbar you can find the Undo and Redo icon. Both the icon will be disabled state by default. This will get enabled only when the changes are in done in the images. 
 
-Undo will clear the last performed change on the image. Hence by continous Undo you can reach the initial state. (i.e. before changes related to shapes and text were done).
+Undo will clear the last performed change on the image. Hence by continuous Undo you can reach the initial state. (i.e. before changes related to shapes and text were done).
 
 Programmatically, Undo can be performed using the Undo method as in the below snippet.
 

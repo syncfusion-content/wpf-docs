@@ -45,7 +45,7 @@ Cropping can be done programmatically using  the following two methods in image 
 
 ### Toggle cropping
 
-Toggle cropping mathod takes 3 parameters.
+Toggle cropping method takes 3 parameters.
 
 ### Crop area selection
 
