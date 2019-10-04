@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Snapping customaization | Syncfusion.
-description: How to customize the snapping interval and angle
+description: How to customize the snapping interval and snapping angle with diagram objects from its default values?
 platform: wpf
 control: SfDiagram
 documentation: ug

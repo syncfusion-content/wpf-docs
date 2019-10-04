@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Snap to gridlines or adjecent objects | Syncfusion.
-description: How to snap Nodes and Connectors over gridlines?
+description: How to snapping diagramming objects of nodes, connectors, ports over gridlines with its adjecent object?
 platform: wpf
 control: SfDiagram
 documentation: ug
