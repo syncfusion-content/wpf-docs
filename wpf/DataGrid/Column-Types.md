@@ -2241,7 +2241,7 @@ You can format the time span values by setting [Format](http://help.syncfusion.c
 
 ![wpf datagrid timespan editing](Column-Types_images/Column-Types_img21.png)
 
-##GridCheckBoxSelectorColumn
+## GridCheckBoxSelectorColumn
 
 `SfDataGrid` allows you to select/deselect individual rows via `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html) which are not bound with data object from underlying data source and it can be added like normal columns. The selector column supports row selection alone. And selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html).
 
@@ -2265,11 +2265,13 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
+By default, CheckBox is displayed in the header of selector column which is used to select/deselect all the rows in the datagrid.
+
 ![wpf datagrid selector column](Column-Types_images/Column-Types_img29.png)
 
-###Text on column header
+### Text on column header
 
-By default, CheckBox is displayed in the header of selector column which is used to select/deselect all the rows in the datagrid. However, you can display text instead of checkbox in the header of selector column by setting [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `true`.
+You can display text instead of checkbox in the header of selector column by setting [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2297,7 +2299,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 
 ![wpf datagrid selector column with text in column header](Column-Types_images/Column-Types_img30.png)
 
-###Styling Selector Column
+### Styling Selector Column
 
 The style of the checkbox in record cells can be customized by using CellStyle property.
 
@@ -2354,13 +2356,13 @@ As above, style of the header checkbox can be customized by using HeaderCellStyl
 
 ![wpf datagrid selector column with styled checkbox in header](Column-Types_images/Column-Types_img32.png)
 
-###Limitations
+### Limitations
 
 Following are the limitations of GridCheckBoxSelectorColumn,
 
 1.	Selector column does not support cell selection.
 2.	Selector column does not support data operations like sorting, filtering and grouping.
-3.	Selector column will be excluded in operations like printing, exporting.
+3.	Selector column will be excluded in operations like printing and exporting.
 4.	Selector column does not have filter row support.
 
 ## Custom column support
