@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expand Category | Collapse Category | Toggle CategoryGroup | Programmatic Collapse and Expansion | PropertyGrid  | WPF | Syncfusion
+title: Expand|Collapse|Toggle CategoryGroup|PropertyGrid|WPF|Syncfusion
 description: PropertyItems are grouped based on the Category name. This section explains about how the group can collapsed or expanded programmatically
 platform: wpf
 control: PropertyGrid 

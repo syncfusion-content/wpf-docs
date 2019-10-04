@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Attributes | Display Attribute | Category Attribute | Description Attribute | Bindable Attribute | Browsable Attribute | Editable Attribute | PropertyGrid  | WPF | Syncfusion
+title: Attributes support | PropertyGrid  | WPF | Syncfusion
 description: This section explains about the supported attributes in PropertyGrid 
 platform: wpf
 control: PropertyGrid 
@@ -78,13 +78,13 @@ When the property `EnableGrouping` is true, properties will be grouped based on 
 {% endtabs %} 
 
 
-The following illustrates how the proeprties are grouped based on Category value,
+The following illustrates how the properties are grouped based on Category value,
 
 ![Properties are grouped based on the value specified in the Category attribute](Attribute-Support-Images\Category-Attribute.png)
 
 ## DisplayName Attribute
 
-Based on the name specified in the DisplayName attribute, proeprties will be displayed in the PropertyGrid. Here, the property `ID` and `DOB` will be displayed as `Employee ID` and `Date of Birth` respectively. 
+Based on the name specified in the DisplayName attribute, properties will be displayed in the PropertyGrid. Here, the property `ID` and `DOB` will be displayed as `Employee ID` and `Date of Birth` respectively. 
 
 {% tabs %}
 
@@ -204,7 +204,7 @@ When the property marked as ReadOnly or Editable as false, property grid doesn't
 {% endtabs %} 
 
 
-Here, the  DOB and Password proeprties are disabled,
+Here, the  DOB and Password properties are disabled,
 
 ![Password and DOB is not editabled in propertygrid](Attribute-Support-Images\ReadOnly-Editable-Attribute.png)        
 
@@ -406,7 +406,8 @@ When the `SortDirection` property has null value, the property items of Property
 Here the property `DOB` and `Gender` has same order but the property `Gender` property is added prior than `DOB`. So the Gender property will be arranged in 4th place, and the `DOB` is arranged after `Country` property. And the other non-specified order properties are arranged based on the order they were added to the collection.
 
 ![Properties are arranged based on custom order](Attribute-Support-Images\Custom-Order.png)  
-#### Name
+
+## Name
 
 Based on the name specified in the `Name` field of Display attribute, properties will be displayed in the PropertyGrid. Here, the property `ID` and `DOB` will be displayed as `Employee ID` and `Date of Birth` respectively. If the `DisplayName` attribute is not specified then the value specified in the `Name` field will be displayed as property name.
 

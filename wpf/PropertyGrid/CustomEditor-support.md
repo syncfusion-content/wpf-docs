@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CustomEditor support | Editor attribute support | PropertyGrid  | wpf | Syncfusion
+title: CustomEditor| Editor Attribute| PropertyGrid| wpf | Syncfusion
 description: The PropertyGrid control supports several built-in editors, to give a good look and feel for the application as like in Expression Blend.
 platform: wpf
 control: PropertyGrid 
