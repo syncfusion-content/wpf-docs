@@ -6,13 +6,13 @@ platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Custom snapping
+# Custom Snapping
 
 Snapping process can be customized by changing its snapping interval and snapping angle.
 
-## Changing the Snapping interval
+## Changing the snapping interval
 
-Snapping helps you to drag or resize the elements completely and sharp from one position to another position by some amount of distance. This snapping distance can be customized using `SnapInterval` property of `SnapSettings` class. Default snapping interval is 20.
+Snapping helps you to drag or resize the elements completely and sharp from one position to another position by some amount of distance. This snapping distance can be customized using the `SnapInterval` property of `SnapSettings` class. Default snapping interval is 20.
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,7 +81,7 @@ public class DoubleExt : List<double>
 
 ## Changing the snapping angle
 
-Snapping angle is used to specify the rotation angle for snapping when node is rotated. It helps to perfom snapping when node is resized or dragged with roatated position. Default snapping angle is 5d.
+Snapping angle is used to specify the rotation angle for snapping when the node is rotated. It helps to perfom snapping when node is resized or dragged with roatated position. Default snapping angle is 5d.
 
 {% tabs %}
 {% highlight xaml %}

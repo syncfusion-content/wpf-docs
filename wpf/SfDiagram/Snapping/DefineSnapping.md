@@ -9,19 +9,19 @@ documentation: ug
 
 # Snapping
 
-When you draw, resize, or move a diagramming elements in the page you can set it so that it will align or snap to the nearest intersection in the page even when grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using Snapping option of SfDiagram.
+When you draw, resize, or move a diagramming element in the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of SfDiagram.
 
-`SnapSettings` class and its properties are allowed you to snap the shapes to the ruler subdivisions more easily.
+The `SnapSettings` class and its properties allows you to snap the shapes to the ruler subdivisions more easily.
 
-Please refer to the [SnapSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapSettings_members.html) properties.
+Refer to the [SnapSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapSettings_members.html) properties.
 
-## Snap To Objects
+## Snap-to-objects
 
-The snap-to-object provides visual cues to assist with aligning and spacing Diagram. A Node can be snapped with its neighboring objects based on certain alignments(same size,same position). Such alignments are visually represented as smart guide lines which are in circuit blue color and its color code is #83F6F0.  
+The snap-to-object provides visual cues to assist with aligning and spacing diagram. A node can be snapped with its neighboring objects based on certain alignments (same size and same position). Such alignments are visually represented as smart guide lines, which are in circuit blue color and its color code is #83F6F0.  
 
-Please refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
+Refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
-Snapping to objects can be enabled by assigning values to  `SnapToObject` property of `SnapSettings` class. Default value is None.
+Snapping to objects can be enabled by assigning values to the `SnapToObject` property of `SnapSettings` class. Default value is None.
 
 {% tabs %}
 {% highlight xaml %}
@@ -71,7 +71,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ## How to change the snap indication style
 
-When snapping is happening blue color indication will be shown. These indication lines styles can be customized by using `SnapIndicatorStyle` property of SnapSettings class.
+When snapping, blue color indication will be shown. These indication lines styles can be customized by using the `SnapIndicatorStyle` property of SnapSettings class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -113,11 +113,11 @@ diagram.SnapSettings = new SnapSettings()
 
 ![Snap to object](Gridlines_images/SnapIndicatorStyle.png)
 
-## Snap To Lines
+## Snap to Lines
 
-This feature allows the Diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
+This feature allows the diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled/disabled with the [SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. Default value is None.
+Snapping to gridlines can be enabled or disabled with the [SnapConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapConstraints.html) property of SnapSettings. Default value is None.
 
 {% tabs %}
 {% highlight xaml %}
@@ -142,7 +142,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines | SnapConstrain
 
 ![Snap to object](Gridlines_images/SnapToLines.gif)
 
-### Snapping on Dock Ports
+### Snapping on dock ports
 
 Diagram allows snapping on dock ports while making new connection on it and dragging connection over dock ports.
 
