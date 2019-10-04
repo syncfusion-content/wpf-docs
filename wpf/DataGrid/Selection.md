@@ -73,7 +73,7 @@ N> When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfus
 
 ## CheckBox column selection
 
-`SfDataGrid` allows you to select/deselect rows via `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html). Please refer [this](https://help.syncfusion.com/wpf/datagrid/column-types#gridcheckboxselectorcolumn) section. 
+`SfDataGrid` allows you to select/deselect rows via `CheckBox`. You can refer [GridCheckBoxSelectorColumn](https://help.syncfusion.com/wpf/datagrid/column-types#gridcheckboxselectorcolumn) user guide for more information.
 
 ## Get Selected Rows and Cells
 
