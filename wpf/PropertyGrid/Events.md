@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restrict item generation|Dynamic attribute value change| WPF|PropertyGrid
+title: Restrict item generation |Dynamic attribute value change |PropertyGrid
 description: Event to notify the generation of PropertyItem and changing attributes value of the property item
 platform: wpf
 control: PropertyGrid 
@@ -211,7 +211,7 @@ The following screenshot illustrates that the `Image` property item is not displ
 
 ![Properties are grouped based on the value specified in the Category attribute](Event-Images\Event-PropertyItem.png)
 
-Here, the `Date of Birth` property has been grouped under `Itentity` category
+Here, the `Date of Birth` property has been grouped under the specified category,
 
 ![Properties are grouped based on the value specified in the Category attribute](Event-Images\Event-CategoryItemChanged.png)
 
