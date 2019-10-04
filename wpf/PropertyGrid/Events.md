@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cancelable | Restrict items generation | Runtime attribute value change
+title: Restrict item generation|Dynamic attribute value change| WPF|PropertyGrid
 description: Event to notify the generation of PropertyItem and changing attributes value of the property item
 platform: wpf
 control: PropertyGrid 
