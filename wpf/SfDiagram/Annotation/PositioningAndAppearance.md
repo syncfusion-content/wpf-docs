@@ -199,7 +199,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Length
 
-The `Length` property of annotation is used to align the annotations based on fractions. 0 represents Top-Left corner, 1 represents Bottom-Right corner, and 0.5 represents half of Width/Height. The defaut value is 0.5d.
+The `Length` property of annotation is used to align the annotations based on fractions. 0 represents Top-Left corner, 1 represents Bottom-Right corner, and 0.5 represents half of Width/Height. The default value is 0.5d.
 
 {% tabs %}
 {% highlight xaml %}
@@ -435,7 +435,7 @@ Annotations = new ObservableCollection<IAnnotation>()
     new AnnotationEditorViewModel()
     {
         Content = "Annotation",
-        //Initialize the Annotation view and edit templates
+        //Defines the view and edit templates
         ViewTemplate = this.Resources["viewTemplate"] as DataTemplate,
         EditTemplate  = this.Resources["editTemplate"] as DataTemplate,
     }
