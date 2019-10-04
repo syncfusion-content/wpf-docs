@@ -17,7 +17,7 @@ Refer to the [SnapSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfu
 
 ## Snap-to-objects
 
-The snap-to-object provides visual cues to assist with aligning and spacing diagram. A node can be snapped with its neighboring objects based on certain alignments (same size and same position). Such alignments are visually represented as smart guide lines, which are in circuit blue color and its color code is #83F6F0.  
+The snap-to-object provides visual cues to assist with aligning and spacing diagram. A node can be snapped with its neighboring objects based on certain alignments (same size and same position). Such alignments are visually represented as smart guide lines, which are in cyan shade color and its color code is #83F6F0.  
 
 Refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
@@ -71,7 +71,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ## How to change the snap indication style
 
-When snapping, circuit blue color indication lines will be shown. These indication lines styles can be customized by using the `SnapIndicatorStyle` property of SnapSettings class.
+When snapping, cyan shade color indication lines will be shown. These indication lines styles can be customized by using the `SnapIndicatorStyle` property of SnapSettings class.
 
 {% tabs %}
 {% highlight xaml %}
