@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Float Window | Docking Manager | Syncfusion
-description: This section explains the floating functionalities in Docking Manager
+title: Float Window feature in Docking Manager | Syncfusion
+description: This section explains about the floating window functionalities in Docking Manager
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -201,7 +201,7 @@ DockingManager.SetNoDock(Content1, true);
 
 {% endtabs %}
 
-## Maximize/Minimize Support
+## Maximize/Minimize float window
 
 The float window provides Maximization support for better usability and it is only applicable for NativeFloatWindow. To enable the maximizing feature for the Float window, set [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanFloatMaximize.html) for the specific child as `True`. By default, its value is `False`.
 
@@ -229,6 +229,33 @@ DockingManager.SetCanFloatMaximize(Content1, true);
 {% endtabs %}
 
 ![Maximize and minimize support](FloatingWindow_images/FloatingWindow_img4.jpeg)
+
+## Float or Mazimize on double clicking the header
+
+The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) property of DockingManager decides whether the NativeFloatWindow can be maximized or moved to dock state while double clicking on header. If the property [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) is [DockOrFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DoubleClickAction.html), the NativeFloatWindow will moved to dock state while double clicking on header. Also, if the property [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) is [MaximizeOrRestore](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DoubleClickAction.html), the NativeFloatWindow will moved to maximized or restored window state while double clicking on header only when its [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanFloatMaximize.html) attached property is true. The default value of the [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) property is [DockOrFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DoubleClickAction.html).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="dockingManager" UseNativeFloatWindow="True" DoubleClickAction="DockOrFloat">
+    <ContentControl x:Name="Dock1" syncfusion:DockingManager.Header="Dock1" syncfusion:DockingManager.State="Float"/>
+    <ContentControl x:Name="Dock2" syncfusion:DockingManager.Header="Dock2"/>
+    <ContentControl x:Name="Dock3" syncfusion:DockingManager.Header="Dock3"/>
+    <ContentControl x:Name="Dock4" syncfusion:DockingManager.Header="Dock4"/>
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+dockingManager.DoubleClickAction = DoubleClickAction.DockOrFloat; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) property works only when using [NativeFloatWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) in DockingManager. 
 
 
 ## Positioning on desire location
@@ -305,30 +332,3 @@ DockingManager.GetSnappedWindows(Dock1);
 {% endhighlight %}
 
 {% endtabs %}
-
-## Double-click on caption
-
-The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) property of DockingManager decides whether the NativeFloatWindow can be maximized or moved to dock state while double clicking on header. If the property [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) is [DockOrFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DoubleClickAction.html), the NativeFloatWindow will moved to dock state while double clicking on header. Also, if the property [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) is [MaximizeOrRestore](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DoubleClickAction.html), the NativeFloatWindow will moved to maximized or restored window state while double clicking on header only when its [CanFloatMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanFloatMaximize.html) attached property is true. The default value of the [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) property is [DockOrFloat](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DoubleClickAction.html).
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DockingManager x:Name="dockingManager" UseNativeFloatWindow="True" DoubleClickAction="DockOrFloat">
-    <ContentControl x:Name="Dock1" syncfusion:DockingManager.Header="Dock1" syncfusion:DockingManager.State="Float"/>
-    <ContentControl x:Name="Dock2" syncfusion:DockingManager.Header="Dock2"/>
-    <ContentControl x:Name="Dock3" syncfusion:DockingManager.Header="Dock3"/>
-    <ContentControl x:Name="Dock4" syncfusion:DockingManager.Header="Dock4"/>
-</syncfusion:DockingManager>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-dockingManager.DoubleClickAction = DoubleClickAction.DockOrFloat; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) property works only when using [NativeFloatWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) in DockingManager. 
