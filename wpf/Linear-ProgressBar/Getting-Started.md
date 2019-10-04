@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | Linear ProgressBar | WPF | Syncfusion
-description: How to create a simple application with Linear ProgressBar in WPF.
+title: Getting started with WPF  Linear ProgressBar control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF Linear ProgressBar control and more details.
 platform: WPF
 control: SfLinearProgressBar
 documentation: ug
