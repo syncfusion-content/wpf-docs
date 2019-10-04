@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Circular ProgressBar | WPF | Syncfusion
-description: WPF Circular ProgressBar helps to show the work progress in circular manner while user is waiting.
+title: About WPF Circular ProgressBar control | Syncfusion
+description: Learn about introduction of Syncfusion WPF Circular ProgressBar control, its feature and more details.
 platform: WPF
 control: SfCircularProgressBar
 documentation: ug

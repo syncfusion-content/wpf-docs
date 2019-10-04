@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | Circular ProgressBar | WPF | Syncfusion
-description: How to create a simple application with Circular ProgressBar in WPF.
+title: Getting started with WPF Circular ProgressBar control | Syncfusion
+description:  Learn here about getting started with Syncfusion WPF Circular ProgressBar control and more details.
 platform: WPF
 control: SfCircularProgressBar
 documentation: ug
@@ -45,18 +45,9 @@ To add control manually in XAML, follow the given steps:
         xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" x:Class="WpfApp4.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-     <Grid x:Name="grid">
-        <Grid.RowDefinitions  >
-            <RowDefinition Height="67*"/>
-            <RowDefinition Height="143*"/>
-        </Grid.RowDefinitions><TextBlock Text="Circular"    Margin="344,5.6,384.6,280.8" Grid.Row="1"/>
-        <Syncfusion:SfCircularProgressBar Progress="70" Margin="215,5.6,268.6,9.8" RenderTransformOrigin="0.433,-0.397" Grid.Row="1" >
-            <Syncfusion:SfCircularProgressBar.ProgressContent>
-                <Grid>
-                    <TextBlock Text="70% Installed"/>
-                </Grid>
-            </Syncfusion:SfCircularProgressBar.ProgressContent>
-        </Syncfusion:SfCircularProgressBar>
+     <Grid x:Name="grid">       
+       <Syncfusion:SfCircularProgressBar  Progress="50" HorizontalAlignment="Left" Margin="205,88,0,0" VerticalAlignment="Top" Width="347"/>
+      </Syncfusion:SfCircularProgressBar>
         </Grid>
 </Window>
 {% endhighlight %}
@@ -86,8 +77,7 @@ namespace SfProgressBar
             InitializeComponent();      
                 
             SfCircularProgressBar circular = new SfCircularProgressBar();
-            circular.Progress = 70;
-            circular.ProgressContent = "70 % Installed";
+            circular.Progress = 50;  
             grid.Children.Add(circular);
 
         }      
