@@ -71,7 +71,7 @@ diagram.SnapSettings.SnapToObject = SnapToObject.All;
 
 ## How to change the snap indication style
 
-When snapping, blue color indication will be shown. These indication lines styles can be customized by using the `SnapIndicatorStyle` property of SnapSettings class.
+When snapping, circuit blue color indication lines will be shown. These indication lines styles can be customized by using the `SnapIndicatorStyle` property of SnapSettings class.
 
 {% tabs %}
 {% highlight xaml %}
