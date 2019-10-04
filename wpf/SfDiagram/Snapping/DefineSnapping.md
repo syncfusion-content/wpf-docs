@@ -17,7 +17,7 @@ Please refer to the [SnapSettings](https://help.syncfusion.com/cr/cref_files/wpf
 
 ## Snap To Objects
 
-The snap-to-object provides visual cues to assist with aligning and spacing Diagram. A Node can be snapped with its neighboring objects based on certain alignments(same size,same position). Such alignments are visually represented as smart guides.
+The snap-to-object provides visual cues to assist with aligning and spacing Diagram. A Node can be snapped with its neighboring objects based on certain alignments(same size,same position). Such alignments are visually represented as smart guide lines which are in circuit blue color and its color code is #83F6F0.  
 
 Please refer to the members of [SnapToObject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SnapToObject.html).
 
