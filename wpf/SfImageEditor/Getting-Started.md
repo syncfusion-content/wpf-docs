@@ -9,16 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to load an image to the image editor control. It has a built-in toolbar that helps in performing the various editing operation such as Flip, Crop, Rotate, Save, annotating with shapes and text, zoom and pan.
+This section explains the steps required to load an image to the image editor control. It has a built-in toolbar that helps in performing various editing operations such as flip, crop, rotate, save, annotating with shapes and text, zoom, and pan.
 
-## Adding ImageEditor Reference
+## Adding ImageEditor reference
 
-You can refer this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls) to know how to add Syncfusion controls in Visual Studio projects through various way. 
-You can also refer this [link](https://help.syncfusion.com/wpf/control-dependencies) to know about the assemblies required for adding ImageEditor to your project. 
+Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls in Visual Studio projects through various ways. Refer to this [document](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding ImageEditor to your project.
 
 ## Initialize ImageEditor
 
-Import the Image editor namespace as in the below code snippet.
+Import the Image editor namespace as demonstrated in the following code snippet.
 
 {% tabs %} 
 
@@ -36,7 +35,7 @@ using Syncfusion.UI.Xaml.ImageEditor;
 
 {% endtabs %} 
 
-Then initialize the image editor as in the below snippet.
+Then, initialize the image editor as demonstrated in the following code snippet.
 
 {% tabs %} 
 
@@ -55,16 +54,14 @@ Then initialize the image editor as in the below snippet.
 
 {% endtabs %} 
 
-
 ## Loading image in ImageEditor
 
-Image can be loaded in following two ways.
+Image can be loaded in the following two ways:
 
-Using image source.
+* Using image source
+* Using stream
 
-Using stream.
-
-You can load the image source as in the below code snippet.
+You can load the [`ImageSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ImageSource.html) as demonstrated in the following code snippet.
 
 {% tabs %} 
 
@@ -87,8 +84,7 @@ You can load the image source as in the below code snippet.
 
 {% endtabs %} 
 
-
-You can load the image as stream using the below code snippet.
+You can load the image as stream using the [`Image`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~Image.html) property as in the following code snippet.
 
 {% highlight C# %} 
 
