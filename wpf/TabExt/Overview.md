@@ -1,27 +1,40 @@
 ---
 layout: post
-title: Overview | TabControlExt | WPF | Syncfusion
+title: Overview of WPF TabControl | Syncfusion
 description: WPF TabControl provides a tab based navigation functionality. It provides close button for tabs, tab ordering, and editable tab headers.
 platform: wpf
-control: TabControlExt
+control: TabControl
 documentation: ug
 ---
 
 # Overview
 
-TabControlExt is similar to the dividers in a notebook or the labels in a file cabinet. By using TabControlExt, an application can define multiple pages for the same area of a window. TabControlExt contains the TabItemExt which is used to define Tab Items for the TabControlAdv. Clicking on a Tab Item Header, will display the data corresponding to that particular Tab Item.
+The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) is similar to the dividers in a notebook or the labels in a file cabinet. By using TabControl, an application can define multiple pages for the same area of a window. TabControlExt contains the TabItemExt which is used to define Tab Items for the TabControlAdv. Clicking on a Tab Item Header, will display the data corresponding to that particular Tab Item.
 
-### Features
+![Overview of TabControlExt control](Overview_images/overview.png)
 
-* Support to position the Tab Strip to the Left, Right, Top or Bottom of the TabControlExt.
-* Ability to customize the display mode of the Close button.
-* Facilitation of different layout types for enhanced usage.
-* Drag-and-drop support with drag marker customization.
-* Provides Tab Scroller in two modes: Normal and Extended.
-* Support to add Header Images.
-* Ability to resize the Tab Item by using two modes: Normal and ShrinkToFit.
-* Built-in Tab List and Tab Item context menu support.
-* Supports visual customization.
+## Key features
 
+**Tab Orientation** - Provides support to position the tabs horizontally at the top or bottom and vertically at the left or right.
+
+**Editable header** - Provides support to edit the headers interactively in UI by pressing F2 function key or double click on a tab header.
+
+**Display mode** - Provides support to customize the display mode of the Close button.
+
+**Layout** - Provides different layout types for enhanced usage to the control. The types are SingleLine, MultiLine and MultiLinewithFillWidth.
+
+**Pin and UnPin** - Provides support to pinning tabs for quick access and allows user to interactively pin and unpin the tabs.
+
+**Selection** - Provides support to select the tabs quickly through keyboard or mouse interaction.
+
+**Styles** - Provides rich set of built-in themes and customize the style of each individual part of TabControl.
+
+**Drag and drop** - Provides support to reorder the tabs by drag and drop headers and change the color of drag marker while dragging the tab page in TabControl.
+
+**Scrolling** - Provides support scroll the tab items to next, previous, first and last in TabControl.
+
+**Images** - Provides support to add images into the tab header and also align the header image to any position.
+
+**Context menu** - Provides support to Built-in context menu option for Tab List and Tab Item.
 
 
