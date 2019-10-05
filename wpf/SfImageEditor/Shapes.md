@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shapes of syncfusion SfImageEditor WPF.
-description: Shapes annotation on image.
+description: Annotating image by adding shapes on it.
 platform: wpf
 control: SfImageEditor
 documentation: ug
