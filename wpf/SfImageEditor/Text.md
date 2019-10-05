@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text of Syncfusion SfImageEditor WPF.
-description: Annotating image using text.
+description: This section explains how the image can be annotated by adding the required text on it and also it can be customized.
 platform: wpf
 control: SfImageEditor
 documentation: ug
@@ -60,7 +60,7 @@ You can add text to an image using the AddText method programmatically. This met
 * Text – Specifies the content you need to add on the image.
 * TextSettings - Customizes the text.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -85,7 +85,7 @@ Using the following properties in TextSettings, text can be customized.
 
 >N Values of bounds will be in percentage. For example (25, 25, 25, 25) will take the position of 25 percent from the left and top.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
