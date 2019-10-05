@@ -55,7 +55,7 @@ Shapes can be added into an image using the AddShape method. This method takes t
 * [`ShapeType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.Enums.ShapeType.html) - You can choose the required shape type. The available shape types are rectangle, circle, and arrow.
 * [`PenSettings`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.PenSettings.html) – Customizes the added shapes.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -69,7 +69,7 @@ editor.AddShape(ShapeType.Rectangle, new PenSettings());
 
 To delete the selected shape, use the Delete method as follows.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -92,7 +92,7 @@ The added shapes can be customized using the following properties in pen setting
 
 N> Values of the bounds rect will be in percentage. For example (25,25,25,25) will take the position of 25 percent from the left and top.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
@@ -122,7 +122,7 @@ N> Values of the bounds rect will be in percentage. For example (25,25,25,25) wi
 
 By default, both shapes and text are resizable. You can also control the resizable using the ResizableElements property in image editor. The following code enables the resizing functionality to both shapes and text.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight C# %} 
 
