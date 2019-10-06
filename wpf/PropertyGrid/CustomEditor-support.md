@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CustomEditor| Editor Attribute| PropertyGrid| wpf | Syncfusion
+title: CustomEditor in Syncfusion WPF PropertyGrid
 description: The PropertyGrid control supports several built-in editors, to give a good look and feel for the application as like in Expression Blend.
 platform: wpf
 control: PropertyGrid 
@@ -11,7 +11,7 @@ documentation: ug
 
 The PropertyGrid control supports several built-in editors, to give a good look and feel for the application (like in Expression Blend). Using CustomEditors or CategoryEditors. CustomEditor support enables you to set custom value editors for particular properties, instead of default editors.
 
-### Adding CustomEditor through CustomEditorCollection
+## Adding CustomEditor through CustomEditorCollection
 
 Using CustomEditorCollection property user can add custom editors to PropertyGrid control. To create CustomEditor user needs to implement ITypeEditor interface. In the below example for Background(Type – Brush), by default ColorPicker will be displayed as ValueEditor. By setting CustomEditor for Background, ColorEdit will be displayed as ValueEditor instead of ColorPicker.
 
@@ -125,9 +125,9 @@ CustomEditorCollection</td><td>
 3. Now expand the PropertyGrid treeview item in the Sample Browser.
 4. Choose any one of the samples listed under it to launch. 
 
-### Adding CustomEditor through EditorAttribute
+## Adding CustomEditor through EditorAttribute
 
-Based on the type of property or name of the property and the custom editor specified in the Editor attribute, Editor of the property will be applied in the PropertyGrid. The following code illustrate, how the custom ImageViewer is applied to the Image property of the Person class.
+You can apply a custom editor based on the propert's Name or Type using `EditorAttribute`. The following code illustrate, how the custom ImageViewer is applied to the Image property of the Person class.
 
 {% tabs %}
 
