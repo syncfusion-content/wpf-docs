@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TabItemExt CloseButton | TabControlExt | WPF | Syncfusion
-description: This section explains about the behavior of tab item CloseButton in TabControlExt
+title: Closing TabItem using Syncfusion WPF TabControl
+description: This section explains how to control CloseButton behavior available in TabItem in Syncfusion TabControl
 platform: wpf
 control: TabControlExt
 documentation: ug
@@ -197,7 +197,7 @@ The following code sample illustrates restricting the closing functionality of T
 
 ![Beijing tabitem is non-closable](closable-tabs-images/non-closable-item.png)
 
-## CloseMode
+## Hide or Delete item when closing a TabItem
 
 The [CloseMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) property of TabControlExt decides whether the tab item can be hidden or removed from the items collection. If the property [CloseMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) is [Hide](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CloseMode.html), the tab item will be hidden and the selection will be moved to previous selected index while hiding it. Also, if the property [CloseMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) is [Delete](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CloseMode.html), the tab item will be removed from the items collection and the selection will be retained in the same index while removing it. The default value of the [CloseMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) property is [Hide](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CloseMode.html).
  
