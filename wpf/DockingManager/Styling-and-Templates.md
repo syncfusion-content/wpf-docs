@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling and Templates of Syncfusion DockingManager control for WPF
+title: Styling and Templates for Syncfusion DockingManager
 description: Learn how to customize the windows in DockingManager by editing Style and Template
 platform: wpf
 control: DockingManager
@@ -712,7 +712,7 @@ The DockedElementTabbedHost can be customized using the `DockedElementTabbedHost
 
 ### DockHeaderStyle
 
-The header of the dock window can be customized using the property `DockHeaderStyle` with the TargetType as DockHeaderPresenter. This customized style will apply to all child windows of DockingManager.
+A common header style for all dock window can be customized using the property `DockHeaderStyle` with the TargetType as DockHeaderPresenter.
 
 {% tabs %}
 
@@ -743,7 +743,7 @@ The header of the dock window can be customized using the property `DockHeaderSt
 
 ### HeaderStyle
 
-Header of **each** dock child can be customized through the `HeaderStyle` property of DockingManager. The customized style will apply to dock, auto hidden and tabbed windows. The following code illustrate the dock windows with customized header style,
+Header of individual dock child can be customized through the `HeaderStyle` property of DockingManager. The customized style will apply to dock, auto hidden and tabbed windows. The following code illustrate the dock windows with customized header style,
 
 {% tabs %}
 
@@ -798,7 +798,6 @@ Header of **each** dock child can be customized through the `HeaderStyle` proper
 ![Child windows with customized header](StylingandTemplates_images/Dock-Window-Header-Style.jpg)
 
 ### DockWindowContextMenuItemStyle
-
 
 The context menu of DockingManager can be customized using the `DockWindowContextMenuItemStyle` by setting its Target Type as CustomMenuItem.
 
