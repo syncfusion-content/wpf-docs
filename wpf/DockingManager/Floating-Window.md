@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Float Window feature in Docking Manager | Syncfusion
+title: Floating window feature in Syncfusion Docking Manager
 description: This section explains about the floating window functionalities in Docking Manager
 platform: wpf
 control: DockingManager
