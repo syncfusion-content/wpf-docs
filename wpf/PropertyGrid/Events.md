@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restrict items | Dynamic value change |PropertyGrid | WPF | Syncfusion
-description: Event to notify the generation of PropertyItem and changing attributes value of the property item
+description: Event to notify the generation of PropertyItem and changing attributes value of the property item dynamically.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

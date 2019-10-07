@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation | Keyboard navigation | PropertyGrid  | WPF | Syncfusion
-description: Explains about how the property item can be navigated through keyboard
+description: This section explains about how the keyboard navigation works between the property items of PropertyGrid
 platform: wpf
 control: PropertyGrid 
 documentation: ug
