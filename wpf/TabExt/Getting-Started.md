@@ -116,7 +116,7 @@ grid.Children.Add(tabControlExt);
 
 ## Adding tabitem
 
-The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) allows the user to adding new tab item into its control. You can set header to each tab items by using [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property.
+The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) allows the user to adding new tab item into its control. You can set header to each tab items by using [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content to tab items by using `Content` property.
 
 {% tabs %}
 
@@ -290,9 +290,9 @@ If you set `CloseButtonType` property is `Individual`, the close button is displ
 
 ![Set individual close button type for each tab item in WPF TabControl](Getting-Started_images/wpf-tabcontrol-individual.png)
 
-## Show or Hide tablist context menu
+## Show or Hide tab list context menu
 
-You can show the tablist context menu by setting the [ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true`.
+You can show the tab list context menu by setting the [ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true`.
 
 {% tabs %}
 
@@ -316,4 +316,4 @@ tabControlExt.ShowTabListContextMenu = true;
 
 ![Tablist Context menu of tabitem in WPF TabControl](Getting-Started_images/wpf-tabcontrol-tablistcontextmenu.png)
 
-N> If you set `ShowTabListContextMenu` property to `false`, tablist context menu will not show in TabControl.
+N> If you set `ShowTabListContextMenu` property to `false`, tab list context menu will not show in TabControl.
