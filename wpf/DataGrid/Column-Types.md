@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column types in WPF DataGrid | Syncfusion
-description: This section explains about the different types of built-in column types and custom column support in WPF SfDataGrid.
+description: This section explains about how to make use of different types of built-in columns in WPF SfDataGrid.
 platform: wpf
 control: SfDataGrid
 documentation: ug
