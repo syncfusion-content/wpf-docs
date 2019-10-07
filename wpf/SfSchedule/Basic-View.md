@@ -20,11 +20,8 @@ Schedule provides 4 different types of viewing the calendar,
 
 Using the property “ScheduleType” of SfSchedule, we can set the above view. Refer to the following code to set the View type of schedule.
 
-Code Example:
 {% tabs %}
-{% highlight html %}
-
-
+{% highlight xaml %}
 
 <Window x:Class="SfScheduleWpf.MainWindow"
 
@@ -40,7 +37,7 @@ Code Example:
 
     <Grid>
 
-        <schedule:SfSchedule></schedule:SfSchedule>
+        <schedule:SfSchedule ScheduleType="Month"/>
 
     </Grid>
 
@@ -51,11 +48,20 @@ Code Example:
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+namespace GettingStarted
+{
+    public partial class MainWindow : Window
+    {
 
+        SfSchedule schedule = new SfSchedule();
 
-SfSchedule schedule = new SfSchedule();
-
-schedule.ScheduleType = ScheduleType.Month;
+        schedule.ScheduleType = ScheduleType.Month;
+		
+		this.Content = schedule;
+	}
+	
+}
 
 this.grid.Children.Add(schedule);
 

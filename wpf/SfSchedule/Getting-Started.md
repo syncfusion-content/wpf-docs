@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started| SfSchedule | Wpf | Syncfusion
-description: A quick tour to initial users on Syncfusion SfSchedule control for WPF platform
+description: A quick tour to initial users on Syncfusion SfSchedule control for WPF platform                                                    
 platform: wpf
 control: SfSchedule
 documentation: ug
