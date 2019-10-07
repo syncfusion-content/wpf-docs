@@ -116,7 +116,9 @@ grid.Children.Add(tabControlExt);
 
 ## Adding TabItem
 
-The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) allows the user to adding new tabitem into its control. You can set header to each tabitem by using [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content into tabitem in TabControl.
+You can add or remove tabitem's using TabControlExt.Items property of TabControl. The tab name can be set by using TabItemExt.Header property and the content for each TabItem can be set using TabItemExt.Content property. 
+
+The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) allows to tabitem's into . You can set header to each tabitem by using [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content into tabitem in TabControl.
 
 {% tabs %}
 
@@ -176,7 +178,7 @@ tabControlExt.Items.Add(tabItemExt2);
 
 ## Placement of TabItem's
 
-You can align the tabitem position to all four sides of TabControl by using [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) property.
+You can place the tabitem header's to any of four sides of TabControl by using [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) property.
 
 {% tabs %}
 
@@ -204,7 +206,7 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 
 {% endtabs %}
 
-![Set the bottom alignment in WPF TabControl](Getting-Started_images/wpf-tabcontrol-orientation.png)
+![Positioning tabitem's at the bottom in WPF TabControl](Getting-Started_images/wpf-tabcontrol-orientation.png)
 
 ## Selecting TabItem
 
