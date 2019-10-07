@@ -122,4 +122,4 @@ this.schedule.ScheduleType = ScheduleType.TimeLine;
 {% endhighlight %}
 {% endtabs %}
 
-![TimeLine-view](Basic-View_images/Basic-View_img4.png)
+![TimeLine-view](Basic-View_images/Basic-View_img5.png)
