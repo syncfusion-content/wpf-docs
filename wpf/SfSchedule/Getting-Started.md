@@ -57,9 +57,9 @@ To add the control manually in XAML page, follow the given steps:
 ## Add control manually in C#
 To add control manually in C#, follow the given steps:
 
-1. Add the Syncfusion.SfShared.WPF assembly reference to the project.
-2. Import the SfRating namespace using Syncfusion.Windows.Controls.Input;.
-3. Create an SfRating instance, and add it to the window.
+1. Add the Syncfusion.SfSchedule.WPF assembly reference to the project.
+2. Import the SfSchedule namespace using Syncfusion.UI.Xaml.Schedule.
+3. Create an SfSchedule instance, and add it to the window.
 
 {% highlight c#%}
 using Syncfusion.UI.Xaml.Schedule;
