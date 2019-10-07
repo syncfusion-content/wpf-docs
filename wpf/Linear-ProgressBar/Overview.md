@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Linear ProgressBar | WPF | Syncfusion
-description: WPF Linear ProgressBar helps to display the work progress while user is waiting.
+title: About WPF Linear ProgressBar control  | Syncfusion
+description: Learn about introduction of Syncfusion WPF Linear ProgressBar control, its feature and more details.
 platform: WPF
 control: SfLinearProgressBar
 documentation: ug
