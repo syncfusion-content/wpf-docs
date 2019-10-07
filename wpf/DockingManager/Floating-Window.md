@@ -255,8 +255,7 @@ dockingManager.DoubleClickAction = DoubleClickAction.DockOrFloat;
 
 {% endtabs %}
 
-N> The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) property works only when using [NativeFloatWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.NativeFloatWindow.html) in DockingManager. 
-
+N> The [DoubleClickAction](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DoubleClickAction.html) property works only when [UseNativeFloatWindow](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseNativeFloatWindow.html) property is true in DockingManager.  
 
 ## Positioning on desire location
 
