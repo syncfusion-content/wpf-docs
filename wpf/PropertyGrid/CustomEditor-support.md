@@ -127,7 +127,7 @@ CustomEditorCollection</td><td>
 
 ## Adding CustomEditor through EditorAttribute
 
-You can apply a custom editor based on the propert's Name or Type using `EditorAttribute`. The following code illustrate, how the custom ImageViewer is applied to the Image property of the Person class.
+User can apply a custom editor based on the property's Name or Type using [EditorAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8). The following code illustrate, how the custom ImageViewer is applied to the Image property of the Person class.
 
 {% tabs %}
 
