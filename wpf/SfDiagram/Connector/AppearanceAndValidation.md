@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connector Appearance and Validation | Syncfusion
-description: How to customize the appearance of the connectors and how to validate the connectors
+description: How to customize the basic appearance of the connectors and its decorators and how to validate the connectors in diagram control
 platform: wpf
 control: SfDiagram
 documentation: ug
