@@ -116,7 +116,7 @@ grid.Children.Add(tabControlExt);
 
 ## Adding TabItem
 
-The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) allows the user to adding new tabitem into its control. You can set header to each tabitems by using [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content into tabitems in TabControl.
+The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) allows the user to adding new tabitem into its control. You can set header to each tabitem by using [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content into tabitem in TabControl.
 
 {% tabs %}
 
@@ -261,7 +261,7 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 ## Enable or disable close button
 
-The [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property is used for decides whether the close button enable or disable in tabitems. You can show the close button as only individual tabitems or commonly for all tabitem by using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property in TabControl.
+The [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property is used for decides whether the close button enable or disable in tabitem. You can show the close button as only individual tabitem or commonly for all tabitem by using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property in TabControl.
 
 {% tabs %}
 
