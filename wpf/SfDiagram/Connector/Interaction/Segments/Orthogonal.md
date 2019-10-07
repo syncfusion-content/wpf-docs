@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connector Selection and Dragging | Syncfusion
-description: How to select and drag the connector
+description: How to select and drag the orthogonal connector using the constraints of connectors in the diagram control of syncfusion
 platform: wpf
 control: SfDiagram
 documentation: ug
