@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WPF DataGrid | Syncfusion
-description: How to select the rows or cells in DataGrid
+description: How to select rows or cells in DataGrid
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -71,9 +71,9 @@ N> When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfus
 
 ![Multiple mode cell selection in WPF DataGrid](Selection_images/Selection_img3.png)
 
-## CheckBox column selection
+## Check box column selection
 
-`SfDataGrid` allows you to select/deselect rows by interacting with the checkbox in a column. All the rows in a datagrid can also be selected by interacting with an intuitive checkbox in the column header. You can refer [GridCheckBoxSelectorColumn](https://help.syncfusion.com/wpf/datagrid/column-types#gridcheckboxselectorcolumn) user guide for more information.
+`SfDataGrid` allows you to select or deselect rows by interacting with the check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in the column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/wpf/datagrid/column-types#gridcheckboxselectorcolumn) documentation for more information.
 
 ## Get Selected Rows and Cells
 
