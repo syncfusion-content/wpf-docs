@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF TabControl | Syncfusion
-description: This section explains about how to add TabControl in WPF application.
+description: This section explains about how to add WPF TabControl in application and its structure and basic feature.
 platform: wpf
 control: TabControl
 documentation: ug
@@ -229,7 +229,7 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 ## Tab Orientation
 
-You can align the tabstrip to all four sides of TabControl by using [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) propery.
+You can align the tab items to all four sides of TabControl by using [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) property.
 
 {% tabs %}
 
