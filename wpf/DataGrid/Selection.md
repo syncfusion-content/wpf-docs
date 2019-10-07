@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in WPF DataGrid | Syncfusion
-description: How to select rows or cells in WPF DataGrid
+description: This section explains about how to select rows or cells in WPF SfDataGrid and its different modes of selection. 
 platform: wpf
 control: SfDataGrid
 documentation: ug
