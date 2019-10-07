@@ -15,7 +15,7 @@ This section explains how to create WPF TabControl, and its structure.
 
 The various elements of TabControl is illustrated in the below image.
 
-![Structure of WPF TabControl](Getting-Started_images/wpf-tabcontrol-structure.jpeg)
+![Structure of WPF TabControl](Getting-Started_images/wpf-tabcontrol-structure.png)
 
 ## Assembly deployment
 
@@ -116,9 +116,7 @@ grid.Children.Add(tabControlExt);
 
 ## Adding TabItem
 
-You can add or remove tabitem's using TabControlExt.Items property of TabControl. The tab name can be set by using TabItemExt.Header property and the content for each TabItem can be set using TabItemExt.Content property. 
-
-The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) allows to tabitem's into . You can set header to each tabitem by using [Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content into tabitem in TabControl.
+You can add the tabitem's using [TabControlExt.Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_Items) property of TabControl. You can set the tabitem name using [TabItemExt.Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content to each TabItem by using [TabItemExt.Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ContentControl_Content) property.
 
 {% tabs %}
 
@@ -206,7 +204,7 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 
 {% endtabs %}
 
-![Positioning tabitem's at the bottom in WPF TabControl](Getting-Started_images/wpf-tabcontrol-orientation.png)
+![Positioning tabitems at the bottom in WPF TabControl](Getting-Started_images/wpf-tabcontrol-orientation.png)
 
 ## Selecting TabItem
 
@@ -232,11 +230,11 @@ tabItemExt2.IsSelected = true;
 
 {% endtabs %}
 
-![Select a current tabitem in WPF TabControlExt](Getting-Started_images/wpf-tabcontrol-selectedtab.png)
+![Selected tabitem in WPF TabControl](Getting-Started_images/wpf-tabcontrol-selectedtab.png)
 
 ### Tab Selection event
 
-The TabControl notifies user change the selected tabitem through [SelectedItemChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemChangedEvent_EV.html) event. You can use the `OldSelectedItem` and `NewSelectedItem` property to get the old and new selected tabitem in `SelectedItemChangedEvent` event.
+The TabControl notifies that the selected tabitem is changed by the user through [SelectedChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemChangedEvent_EV.html) event. You can use the `OldSelectedItem` and `NewSelectedItem` property to get the old and new selected tabitem in `SelectedItemChangedEvent` event.
 
 {% tabs %}
 
@@ -263,7 +261,7 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 ## Enable or disable close button
 
-The [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property is used for decides whether the close button enable or disable in tabitem. You can show the close button as only individual tabitem or commonly for all tabitem by using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property in TabControl.
+The [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property is used for decide whether to enable or disable the close button in tabitem. You can show the close button as an individual tabitem or common for all tabitem by using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property in Tab Control.
 
 {% tabs %}
 
@@ -314,7 +312,7 @@ tabControlExt.ShowTabListContextMenu = true;
 
 ## Enable or disable tab navigation bar
 
-The [TabControlExt.TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollButtonVisibility.html) property is used for decides whether the tab navigation bar enable or disable in TabControl. You can show different tab navigation style in TabControl by using [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollStyle.html) property.
+The [TabControlExt.TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollButtonVisibility.html) property is used for decide whether to enable or disable the tab navigation bar in TabControl. You can show the different tab navigation style in TabControl by using [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollStyle.html) property.
 
 {% tabs %}
 
@@ -341,6 +339,12 @@ tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Visible;
 ## Enable or disable built-in context menu
 
 You can show the built-in context menu of the tabitem's by setting the [TabControlExt.ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabItemContextMenu.html) property to `true` in TabControl.
+
+The built-in context menu of the tab item has following menu items.
+
+* **Close** - It is used to close the current or selected tab item.
+* **Close All But This** - It is used to close all tab items, except the current or selected tab item.
+* **Close All** - It is used to close all tab items.
 
 {% tabs %}
 
