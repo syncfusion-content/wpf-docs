@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started| SfSchedule | Wpf | Syncfusion
-description: getting started
+description: A quick tour to initial users on Syncfusion SfSchedule control for WPF platform
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -88,35 +88,35 @@ To Add SfSchedule Control, follow the steps below:
 
 1.Create a simple WPF application using Visual Studio.
 
-   ![WPF-Project](Getting-Started_images/Getting-Started_img2.png)
+   ![WPF-Project](Getting-Started_images/Getting-Started_img2.jpg)
 
 
 
 2.Right Click on the Project and select Syncfusion Reference Manager.
 
-   ![Syncfusion-Reference-Manager](Getting-Started_images/Getting-Started_img3.png)
+   ![Syncfusion-Reference-Manager](Getting-Started_images/Getting-Started_img3.jpg)
 
 
 
 3.The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
 
-   ![Reference-Manager-Wizard](Getting-Started_images/Getting-Started_img4.png)
+   ![Reference-Manager-Wizard](Getting-Started_images/Getting-Started_img4.jpg)
 
 
 
 4.Search for “SfSchedule” using SearchBox and select SfSchedule Control.  Click on done to add selected SfSchedule Control.
 
-   ![SfSchedule-Control](Getting-Started_images/Getting-Started_img5.png)
+   ![SfSchedule-Control](Getting-Started_images/Getting-Started_img5.jpg)
  
 
 
 5.The SfSchedule assemblies will be automatically added to the Project after Clicking OK
 
-   ![Adding-SfSchedule](Getting-Started_images/Getting-Started_img6.png)
+   ![Adding-SfSchedule](Getting-Started_images/Getting-Started_img6.jpg)
 
 
 
-   ![Added-SfSchedule](Getting-Started_images/Getting-Started_img7.png)
+   ![Added-SfSchedule](Getting-Started_images/Getting-Started_img7.jpg)
 
 
 
@@ -193,7 +193,7 @@ namespace SfScheduleSample
 
 8. The simple SfSchedule control will be created as shown in the figure below.
 
-   ![Simple-SfSchedule](Getting-Started_images/Getting-Started_img8.png)
+   ![Simple-SfSchedule](Getting-Started_images/Getting-Started_img8.jpg)
 
 
 
