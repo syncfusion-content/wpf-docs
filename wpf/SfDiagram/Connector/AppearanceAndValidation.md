@@ -550,10 +550,9 @@ ConnectorViewModel paddingConnector = new ConnectorViewModel()
 
 * On dragging the target thumb of the connector, event will notify the Cause as `UnKnown`. On drawing a connector in an Element, event will notify the Cause as `Drawing`.
 
-To explore about arguments, refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) . 
+To explore about arguments, refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html). 
 
-* If any changes made in the segment of the connector, the `ConnectorEditingEvent` will notify the DragState, Item, and ThumbType. To explore about arguments, refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.
-ConnectorEditingEventArgs.html) .
+* If any changes made in the segment of the connector, the `ConnectorEditingEvent` will notify the DragState, Item, and ThumbType. To explore about arguments, refer to [ConnectorEditingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorEditingEventArgs.html).
 
 ## Customization and validation on connector ends
 
@@ -620,7 +619,7 @@ The `Constraints` property of connector allows you to enable or disable certain 
 
 [How to add annotations for connectors](/wpf/sfdiagram/annotation)
 
-[How to add or remove connector constraints](/wpf/sfdiagram/constraints#annotation-constraints)
+[How to add or remove connector constraints](/wpf/sfdiagram/constraints#connector-constraints)
 
 [How to add ports for connector](/wpf/sfdiagram/port)
 

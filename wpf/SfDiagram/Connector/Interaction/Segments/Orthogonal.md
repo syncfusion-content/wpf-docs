@@ -65,9 +65,7 @@ Vertical and horizontal thumbs on the orthogonal segments are allowed to adjust 
 
 When necessary, some segments are added or removed automatically, when dragging the segment for maintaining proper routing of orthogonality between segments.
 
-![segment editing at runtime using segment thumbs](Connector_images/OrthogonalEditing.png)
-
-![segment editing at runtime using segment thumbs](Connector_images/SegmentEditing.gif)
+![segment editing at runtime using segment thumbs](Connector_images/OrthogonalEditing.png) ![segment editing at runtime using segment thumbs](Connector_images/SegmentEditing.gif)
 
 ## How to customize the orthogonal segments
 

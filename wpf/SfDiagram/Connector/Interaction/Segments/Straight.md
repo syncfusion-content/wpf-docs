@@ -62,7 +62,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Straight segment](Connector_images/Connector_img6.PNG)
+![Straight segment](Connector_images/Connector_img6.png)
 
 ## Editing straight segments
 
