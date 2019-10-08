@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reminder| SfSchedule | Wpf | Syncfusion
-description: reminder
+title: Reminder in SfSchedule | Syncfusion
+description: This section explains about the reminder for ScheduleAppointment in SfSchedule.
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -16,7 +16,7 @@ Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion
 {%tabs%}
 {% highlight xaml %}
 <Grid>
-    <syncfusion:SfSchedule x:Name="Schedule" ScheduleType="Month"/>
+    <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Month"/>
 </Grid>
 {% endhighlight %}
 {% highlight c# %}
@@ -163,6 +163,8 @@ schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {%endtabs%}
 
+You can download the entire source code of this demo from here [ReminderDemo](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Demo/tree/master/ReminderDemo)
+
 ## Handling Reminder events
 
 ### ReminderOpening event
@@ -200,3 +202,5 @@ private void Schedule_ReminderOpening(object sender, ReminderControlOpeningEvent
 **Appointments** – Gets list of appointments that are changed.
 
 **SnoozeTime** – Gets the snooze time of action changed appointments.
+
+You can download the entire source code of this demo from here [ReminderEvents](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Events/tree/master/ReminderEvents)
