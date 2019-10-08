@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reminder in SfSchedule | Syncfusion
-description: This section explains about the reminder for ScheduleAppointment in SfSchedule.
+description: This section explains about how to handle the reminder for ScheduleAppointment in SfSchedule.
 platform: wpf
 control: SfSchedule
 documentation: ug
