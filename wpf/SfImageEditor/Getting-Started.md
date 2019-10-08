@@ -1,0 +1,102 @@
+---
+layout: post
+title: Getting Started for the Syncfusion ImageEditor.
+description: Getting start with simple application using SfImageEditor in WPF.
+platform: wpf
+control: SfImageEditor
+documentation: ug
+---
+
+# Getting Started
+
+This section explains the steps required to load an image to the image editor control. It has a built-in toolbar that helps in performing various editing operations such as flip, crop, rotate, save, annotating with shapes and text, zoom, and pan.
+
+## Adding ImageEditor reference
+
+Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls in Visual Studio projects through various ways. Refer to this [document](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding ImageEditor to your project.
+
+## Initialize ImageEditor
+
+Import the Image editor namespace as demonstrated in the following code snippet.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+xmlns:editor="clr-namespace:Syncfusion.UI.Xaml.ImageEditor;assembly=Syncfusion.SfImageEditor.WPF"
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+using Syncfusion.UI.Xaml.ImageEditor;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+Then, initialize the image editor as demonstrated in the following code snippet.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <editor:SfImageEditor>
+ </editor:SfImageEditor>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+ SfImageEditor editor = new SfImageEditor();
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+## Loading image in ImageEditor
+
+Image can be loaded in the following two ways:
+
+* Using image source
+* Using stream
+
+You can load the [`ImageSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ImageSource.html) as demonstrated in the following code snippet.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<editor:SfImageEditor x:Name="editor" ImageSource="Assets/Buldingimage.jpeg">
+</editor:SfImageEditor>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+   BitmapImage image = new BitmapImage();
+   image.BeginInit();
+   image.UriSource = new Uri(@"Assets/Buldingimage.jpeg", UriKind.Relative);
+   image.EndInit();
+   editor.ImageSource = image;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+You can load the image as stream using the [`Image`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~Image.html) property as in the following code snippet.
+
+{% highlight C# %} 
+
+  OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.* ";
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                var stream = openFileDialog.OpenFile();
+                editor.Image = stream;
+            }
+
+{% endhighlight %}
+
+![ImageEditor](Images/ImageEditor.png)   

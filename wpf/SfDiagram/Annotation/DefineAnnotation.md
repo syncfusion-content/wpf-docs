@@ -19,15 +19,17 @@ An annotation can be added to a node or connector by defining the annotation obj
 {% highlight xaml %}
 <!--Initialize the SfDiagram-->
 <syncfusion:SfDiagram x:Name="diagram">
-    <!--Initialize the NodeCollection-->
+    <!--Initialize the Node-->
     <syncfusion:SfDiagram.Nodes>
+        <!--Initialize the Node Collection-->
         <syncfusion:NodeCollection>
-            <!--Initialize the Node-->
+            <!--Initialize the node view model-->
             <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}" >
+                <!--Initialize the annotations-->
                 <syncfusion:NodeViewModel.Annotations>
                     <!--Initialize the AnnotationCollection-->
                     <syncfusion:AnnotationCollection>
-                        <!--Initialize the Annotation-->
+                        <!--Initialize the Annotation editor view model-->
                         <syncfusion:AnnotationEditorViewModel Content="Annotation"/>
                     </syncfusion:AnnotationCollection>
                 </syncfusion:NodeViewModel.Annotations>
@@ -36,14 +38,14 @@ An annotation can be added to a node or connector by defining the annotation obj
     </syncfusion:SfDiagram.Nodes>
     <!--Initialize the Connector-->
     <syncfusion:SfDiagram.Connectors>
-        <!--Initialize the ConnectorCollection-->
+        <!--Initialize the Connector Collection-->
         <syncfusion:ConnectorCollection>
-            <!--Initialize the Connector-->
+            <!--Initialize the Connector view model-->
             <syncfusion:ConnectorViewModel SourcePoint="200,50" TargetPoint="300,150">
                 <syncfusion:ConnectorViewModel.Annotations>
                     <!--Initialize the AnnotationCollection-->
                     <syncfusion:AnnotationCollection>
-                        <!--Initialize the Annotation-->
+                        <!--Initialize the Annotation editor view model-->
                         <syncfusion:AnnotationEditorViewModel Content="Annotation"/>
                     </syncfusion:AnnotationCollection>
                 </syncfusion:ConnectorViewModel.Annotations>
@@ -58,45 +60,45 @@ An annotation can be added to a node or connector by defining the annotation obj
 //Initialize the diagram
 SfDiagram diagram = new SfDiagram();
 
-//Initialize the NodeViewModel
+//Initialize the Node View Model
 NodeViewModel node = new NodeViewModel()
+{
+    UnitWidth = 100,
+    UnitHeight = 100,
+    OffsetX = 100,
+    OffsetY = 100,
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+    //Initialize the AnnotationCollection
+    Annotations = new ObservableCollection<IAnnotation>()
     {
-        UnitWidth = 100,
-        UnitHeight = 100,
-        OffsetX = 100,
-        OffsetY = 100,
-        Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-        //Initialize the AnnotationCollection
-        Annotations = new ObservableCollection<IAnnotation>()
-            {
-                //Initialize the Annotation
-                new AnnotationEditorViewModel()
-                    {
-                        Content="Annotation"
-                    }
-                }
-            };
+        //Initialize the Annotation with content
+        new AnnotationEditorViewModel()
+        {
+            Content="Annotation"
+        }
+    }
+};
 
-        //Initialize the ConnectorViewModel
-        ConnectorViewModel connector = new ConnectorViewModel()
-            {
-                SourcePoint = new Point(200, 50),
-                TargetPoint = new Point(300, 150),
-                //Initialize the AnnotationCollection
-                Annotations = new ObservableCollection<IAnnotation>()
-                {
-                    //Initialize the Annotation
-                    new AnnotationEditorViewModel()
-                    {
-                        Content="Annotation"
-                    }
-                }
-            };
+//Initialize the Connector View Model
+ConnectorViewModel connector = new ConnectorViewModel()
+{
+    SourcePoint = new Point(200, 50),
+    TargetPoint = new Point(300, 150),
+    //Initialize the AnnotationCollection
+    Annotations = new ObservableCollection<IAnnotation>()
+    {
+        //Initialize the Annotation with content
+        new AnnotationEditorViewModel()
+        {
+            Content="Annotation"
+        }
+    }
+};
 
-// Add the node into Nodes collection
+// Add the node into Node's collection
 (diagram.Nodes as NodeCollection).Add(node);
 
-// Add the Connector into connectors collection
+// Add the Connector into connector's collection
 (diagram.Connectors as ConnectorCollection).Add(connector);
 {% endhighlight %}
 {%  endtabs %}
@@ -111,7 +113,7 @@ For sample, please refer to [MultipleAnnotation](https://www.syncfusion.com/down
 {% tabs %}
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the multiple annotation-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation"/>
@@ -122,22 +124,23 @@ For sample, please refer to [MultipleAnnotation](https://www.syncfusion.com/down
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Initialize the multiple annotation
+    new AnnotationEditorViewModel()
     {
-        //Initialize the multiple annotation
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-            },
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-            },
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-            },
+        Content = "Annotation",
+    },
+    new AnnotationEditorViewModel()
+    {
+        Content = "Annotation",
+    },
+    new AnnotationEditorViewModel()
+    {
+        Content = "Annotation",
+    },
+}
 
 {% endhighlight %}
 {% endtabs %}

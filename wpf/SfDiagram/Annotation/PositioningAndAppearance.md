@@ -31,9 +31,9 @@ The `Offset` property of `AnnotationEditorViewModel` is used to align the annota
 <!--Initialize the Node-->
 <syncfusion:NodeViewModel UnitHeight="100"  UnitWidth="100" Shape="{StaticResource Rectangle}" OffsetX="100" OffsetY="100">
     <syncfusion:NodeViewModel.Annotations>
-        <!--Initialize the AnnotationCollection-->
+        <!--Initialize the Annotation Collection-->
         <syncfusion:AnnotationCollection>
-            <!--Initialize the AnnotationEditorViewModel with offset values-->
+            <!--Initialize the annotation with offset values-->
             <syncfusion:AnnotationEditorViewModel Content="Offset(0,0)" Offset="0,0"/>
         </syncfusion:AnnotationCollection>
     </syncfusion:NodeViewModel.Annotations>
@@ -43,23 +43,23 @@ The `Offset` property of `AnnotationEditorViewModel` is used to align the annota
 {% highlight c# %}
 //Initialize the NodeViewModel
 NodeViewModel node = new NodeViewModel()
+{
+    UnitWidth = 100,
+    UnitHeight = 100,
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+    OffsetX = 100,
+    OffsetY = 100,
+    //Initialize the Annotation Collection
+    Annotations = new ObservableCollection<IAnnotation>()
     {
-        UnitWidth = 100,
-        UnitHeight = 100,
-        Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-        OffsetX = 100,
-        OffsetY = 100,
-        //Initialize the AnnotationCollection
-        Annotations = new ObservableCollection<IAnnotation>()
-            {
-                //Initialize the annotation with offset values
-                new AnnotationEditorViewModel()
-                    {
-                        Content = "Offset(0,0)",
-                        Offset = new Point(0,0),
-                    },
-                }
-            };            
+        //Initialize the annotation with offset values
+        new AnnotationEditorViewModel()
+        {
+            Content = "Offset(0,0)",
+            Offset = new Point(0,0),
+        },
+    }
+};            
 {% endhighlight %}
 {% endtabs %}
 
@@ -84,26 +84,26 @@ The `VerticalAlignment` property of `AnnotationEditorViewModel` class is used to
 {% tabs %}
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the Annotation with horizontal nad vertical alignment properties-->
+    <!--Initialize the Annotation with horizontal and vertical alignment properties-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" HorizontalAlignment="Left" VerticalAlignment="Top" Offset="0,0"/>
 </syncfusion:AnnotationCollection>
 
 {% endhighlight %}
 {% highlight c# %}
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Initialize the Annotation with horizontal and vertical alignment properties
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with positon based properties
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                HorizontalAlignment = HorizontalAlignment.Left,
-                VerticalAlignment = VerticalAlignment.Top,
-                Offset = new Point(0,0),
-            }
-    }             
+        Content = "Annotation",
+        HorizontalAlignment = HorizontalAlignment.Left,
+        VerticalAlignment = VerticalAlignment.Top,
+        Offset = new Point(0,0),
+    }
+}             
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,7 +126,7 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% tabs %}
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the Annotation with margin property-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Margin="0,60,0,0"/>
@@ -135,16 +135,16 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Initialize the Annotation with margin property
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with margin property
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Margin = new Thickness(0, 60, 0, 0),
-            }
+        Content = "Annotation",
+        Margin = new Thickness(0, 60, 0, 0),
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -163,7 +163,7 @@ Annotations of a connector can be positioned using the following properties of `
 
 ### Alignment
 
-Connector's annotation can be aligned over its segment path using the 'Alignment' property of `AnnotationEditorViewModel` class.
+Connector's annotation can be aligned over its segment path using the `Alignment` property of `AnnotationEditorViewModel` class. Default value is Center.
 
 {% tabs %}
 {% highlight xaml %}
@@ -177,16 +177,16 @@ Connector's annotation can be aligned over its segment path using the 'Alignment
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Initialize the Annotation with alignment property
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with alignment property
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Alignment = ConnectorAnnotationAlignment.Source,
-            }
+        Content = "Annotation",
+        Alignment = ConnectorAnnotationAlignment.Source,
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -199,11 +199,11 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### Length
 
-The `Length` property of annotation is used to align the annotations based on fractions. 0 represents Top-Left corner, 1 represents Bottom-Right corner, and 0.5 represents half of Width/Height. The defaut value is 0.5d.
+The `Length` property of annotation is used to align the annotations based on fractions. 0 represents Top-Left corner, 1 represents Bottom-Right corner, and 0.5 represents half of Width/Height. The default value is 0.5d.
 
 {% tabs %}
 {% highlight xaml %}
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the Annotation with length property-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Length="0" />
@@ -212,16 +212,16 @@ The `Length` property of annotation is used to align the annotations based on fr
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Initialize the Annotation with length property
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with length property
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Length = 0,
-            }
+        Content = "Annotation",
+        Length = 0,
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -236,23 +236,23 @@ The `Displacement` property is used to dislocate the annotation by the value giv
 
 {% tabs %}
 {% highlight xaml %}
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation ollection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the Annotation with dispalcement property-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Displacement="60" />
 </syncfusion:AnnotationCollection>
 {% endhighlight %}
 {% highlight C# %}
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Initialize the Annotation with dispalcement property
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with dispalcement property
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Displacement = 60
-            }
+        Content = "Annotation",
+        Displacement = 60
     }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -268,7 +268,7 @@ Position of an annotation is controlled by using its `Length` property, which re
 
 {% tabs %}
 {% highlight xaml %}
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the Annotation with pivot property-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" Pivot="0,0" Length="0" />
@@ -277,17 +277,17 @@ Position of an annotation is controlled by using its `Length` property, which re
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Initialize the Annotation with pivot property
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with pivot property
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Pivot = new Point(0,0),
-                Length = 0,
-            }
+        Content = "Annotation",
+        Pivot = new Point(0,0),
+        Length = 0,
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -300,17 +300,16 @@ Annotations = new ObservableCollection<IAnnotation>()
 | | 1,0) | ![Target](Annotation_images/Pivot1,0.PNG) |
 | | (1,1) | ![Target](Annotation_images/Pivot1,1.png) |
 
-
 ### Margin
 
-`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the annotations with the `Margin` property. 
+`Margin` is an absolute value used to add some blank space in any one of its four sides. You can displace the annotations with the `Margin` property. Default value is (0,0,0,0).
 
 {% tabs %}
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the margin property-->
+    <!--Initialize the annotation with margin property-->
     <syncfusion:AnnotationEditorViewModel  Content="Annotation" Margin="0,0,0,-30" RotationReference="Page" />
 </syncfusion:AnnotationCollection>                       
                                 
@@ -319,17 +318,16 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation
-        new AnnotationEditorViewModel()
-            {
-                Content="Annotation",
-                //Initialize the margin value
-                Margin = new Thickness(0,0,0,-30),
-                // Decide to apply orientation or rotation based on segment when annotation positioned.
-                RotationReference = RotationReference.Page,
-            }
+        Content="Annotation",
+        //Initialize the margin property
+        Margin = new Thickness(0,0,0,-30),
+        // Decide to apply orientation or rotation based on segment when annotation is positioned.
+        RotationReference = RotationReference.Page,
     }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -353,16 +351,15 @@ Diagram allows you to set size for annotations by using the `UnitWidth` and `Uni
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation
-        new AnnotationEditorViewModel()
-            {
-                Content="Annotation",
-                //Set the size of annotation
-                UnitWidth = 50,
-                UnitHeight = 50,
-            }
+        Content="Annotation",
+        //Set the size of annotation
+        UnitWidth = 50,
+        UnitHeight = 50,
     }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -372,30 +369,27 @@ N> Size of the annotation is 100% size of the node.
 
 ## Wrapping
 
-When text overflows node boundaries, you can control it by using the `WrapText` property. So, it is wrapped into multiple lines. The Wrapping property of annotation defines how the content should be wrapped.
+When text overflows node boundaries, you can control it by using the `WrapText` property. So, it is wrapped into multiple lines. The Wrapping property of annotation defines how the content should be wrapped. Default value is Wrap.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the Wraptext value-->
+    <!--Initialize the annotation with wrap text property-->
     <syncfusion:AnnotationEditorViewModel Content="LengthyAnnotation with wrapping text" WrapText="Wrap"/>
 </syncfusion:AnnotationCollection>                    
                                 
 {% endhighlight %}
-
 {% highlight C# %}
 
-//Define the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new AnnotationCollection()
 {
-    //Define the Annotation
     new AnnotationEditorViewModel()
     {
         Content = "LengthyAnnotation with wrapping text",
-        //Define the WrapText value of annotation
+        //Define the value for wrap text property
         WrapText=TextWrapping.Wrap,
     }
 }
@@ -417,38 +411,35 @@ Default appearance of the annotations can be customized by using the `EditTempla
 {% highlight xaml %}
 
 <!--Template overriding for view template-->
-<DataTemplate x:Key="viewtemplate">
+<DataTemplate x:Key="viewTemplate">
     <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" FontStyle="Italic" FontSize="12" FontFamily="TimesNewRomen" TextDecorations="Underline" FontWeight="Bold" Foreground="Black"/>
 </DataTemplate>
 
-<!--Template overriding for view template-->
-<DataTemplate x:Key="edittemplate">
+<!--Template overriding for edit template-->
+<DataTemplate x:Key="editTemplate">
     <TextBox Text="{Binding Path=Content, Mode=TwoWay}" FontStyle="Oblique" FontSize="12" FontFamily="TimesNewRomen" FontWeight="Bold" Foreground="Red"/>
 </DataTemplate>
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the Annotation with view and edit templates-->
-    <syncfusion:AnnotationEditorViewModel Content="Annotation" ViewTemplate="{StaticResource viewtemplate}" EditTemplate="{StaticResource edittemplate}"/>
+    <syncfusion:AnnotationEditorViewModel Content="Annotation" ViewTemplate="{StaticResource viewTemplate}" EditTemplate="{StaticResource editTemplate}"/>
 </syncfusion:AnnotationCollection>
 
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight C# %}
 
 //Initialize the AnnotationCollection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation view and edit templates
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                ViewTemplate = this.Resources["viewtemplate"] as DataTemplate,
-                EditTemplate  = this.Resources["edittemplate"] as DataTemplate,
-            }
+        Content = "Annotation",
+        //Defines the view and edit templates
+        ViewTemplate = this.Resources["viewTemplate"] as DataTemplate,
+        EditTemplate  = this.Resources["editTemplate"] as DataTemplate,
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -460,31 +451,30 @@ Also, diagram have `TextAnnotationViewModel` class to customize the appearance o
 {% tabs %}
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the TextAnnotationViewModel class-->
+    <!--Initialize the Text Annotation View Model class-->
     <syncfusion:TextAnnotationViewModel Text="Annotation" FontStyle="Italic" FontSize="12" FontFamily="TimesNewRomen" TextDecorations="Underline" FontWeight="Bold" Foreground="Black"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    //Intialize the Text Annotation View Model class
+    new TextAnnotationViewModel()
     {
-        //Intialize the TextAnnotationViewModel class
-        new TextAnnotationViewModel()
-            {
-                Text = "Annotation",
-                FontStyle = FontStyles.Italic,
-                FontSize = 12,
-                FontFamily = new FontFamily("TimesNewRomen"),
-                TextDecorations = TextDecorations.Underline,
-                FontWeight = FontWeights.Bold,
-                Foreground = new SolidColorBrush(Colors.Black),
-            }
+        Text = "Annotation",
+        FontStyle = FontStyles.Italic,
+        FontSize = 12,
+        FontFamily = new FontFamily("TimesNewRomen"),
+        TextDecorations = TextDecorations.Underline,
+        FontWeight = FontWeights.Bold,
+        Foreground = new SolidColorBrush(Colors.Black),
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -493,32 +483,30 @@ Annotations = new ObservableCollection<IAnnotation>()
 
 ### How to change the editing mode
 
-Diagram allows you to show the annotation in view or edit mode while loading the diagram elements by using the `Mode` property of `AnnotationEditorViewModel`class.
+Diagram allows you to show the annotation in view or edit mode while loading the diagram elements by using the `Mode` property of `AnnotationEditorViewModel` class. Default value is View.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the Annotation with editing mode value-->
-        <syncfusion:AnnotationEditorViewModel Content="Annotation" Mode="Edit"/>
+    <!--Initialize the Annotation with edit mode property-->
+    <syncfusion:AnnotationEditorViewModel Content="Annotation" Mode="Edit"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
-
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with editing mode value
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                Mode = ContentEditorMode.Edit,
-            }
+        Content = "Annotation",
+        //Initialize the editing mode property
+        Mode = ContentEditorMode.Edit,
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -536,25 +524,25 @@ Also, the `ReadOnly` property of `AnnotationEditorViewModel` class allows you to
 {% tabs %}
 {% highlight xaml %}
 
-<!--Initialize the AnnotationCollection-->
+<!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
-    <!--Initialize the AnnotationEditorViewModel-->
+    <!--Initialize the annotation with read only property-->
     <syncfusion:AnnotationEditorViewModel Content="Annotation" ReadOnly="True"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
 {% highlight C# %}
 
-//Initialize the AnnotationCollection
+//Initialize the Annotation Collection
 Annotations = new ObservableCollection<IAnnotation>()
+{
+    new AnnotationEditorViewModel()
     {
-        //Initialize the Annotation with ReadOnly property
-        new AnnotationEditorViewModel()
-            {
-                Content = "Annotation",
-                ReadOnly = true,
-            }
+        Content = "Annotation",
+        //Initialize the ReadOnly property
+        ReadOnly = true,
     }
+}
 
 {% endhighlight %}
 {% endtabs %}
