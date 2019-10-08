@@ -367,3 +367,46 @@ tabControlExt.ShowTabItemContextMenu = true;
 {% endtabs %}
 
 ![Enable the built-in context menu in WPF TabControl](Getting-Started_images/wpf-tabcontrol-contextmenu.png)
+
+
+You can add the custom context menu item by using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ContextMenuItems.html) property in TabControl. This property is enable by setting the [TabControlExt.IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsCustomTabItemContextMenuEnabled.html) property to `true`.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Height="100" Width="280" IsCustomTabItemContextMenuEnabled="True">
+    <syncfusion:TabItemExt Header="tabItem1">
+        <syncfusion:TabItemExt.ContextMenuItems>
+            <syncfusion:CustomMenuItem Header="Menu1" />
+        </syncfusion:TabItemExt.ContextMenuItems>
+    </syncfusion:TabItemExt>
+    <syncfusion:TabItemExt Header="tabItem2" IsSelected="True">
+        <syncfusion:TabItemExt.ContextMenuItems>
+            <syncfusion:CustomMenuItem Header="Menu2" />
+        </syncfusion:TabItemExt.ContextMenuItems>
+    </syncfusion:TabItemExt>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Enable the custom tabitem context menu
+tabControlExt.IsCustomTabItemContextMenuEnabled = true;
+
+//Adding custom context menu for first tabitem
+CustomMenuItem customMenuItem = new CustomMenuItem();
+customMenuItem.Header = "New1";
+tabItemExt.ContextMenuItems.Add(customMenuItem);
+
+//Adding custom context menu for second tabitem
+CustomMenuItem customMenuItem1 = new CustomMenuItem();
+customMenuItem1.Header = "Menu2";
+tabItemExt1.ContextMenuItems.Add(customMenuItem1);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Added custom context menu for tabitems in WPF TabControl](Getting-Started_images/wpf-tabcontrol-customcontextmenu.png)
