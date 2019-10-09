@@ -71,7 +71,7 @@ N> When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfus
 
 ![Multiple mode cell selection in WPF DataGrid](Selection_images/Selection_img3.png)
 
-## Check box column selection
+## CheckBox column selection
 
 `SfDataGrid` allows you to select or deselect rows by interacting with the check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in the column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/wpf/datagrid/column-types#gridcheckboxselectorcolumn) documentation for more information.
 
