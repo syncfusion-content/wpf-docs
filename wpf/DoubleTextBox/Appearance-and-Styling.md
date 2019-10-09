@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Style | DoubleTextBox | WPF | Syncfusion
-description: Appearance and styling for the DoubleTextBox control
+description: Appearance and styling
 platform: wpf
 control: DoubleTextBox
 documentation: ug

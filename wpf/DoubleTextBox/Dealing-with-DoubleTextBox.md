@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Syncfusion DoubleTextBox control for WPF
-description: Dealing with Syncfusion DoubleTextBox control for WPF
+description: Dealing with DoubleTextBox
 platform: wpf
 control: DoubleTextBox
 documentation: ug

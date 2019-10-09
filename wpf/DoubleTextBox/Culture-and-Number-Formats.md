@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Culture and NumberFormat | DoubleTextBox | WPF | Syncfusion
-description: Culture and NumberFormat for DoubleTextBox control
+description: Culture and NumberFormat related features
 platform: wpf
 control: DoubleTextBox
 documentation: ug

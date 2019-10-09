@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set the Value | DoubleTextBox | WPF | Syncfusion
-description: Learn how to set the values in DoubleTextBox control for WPF
+description: DoubleTextBox set value
 platform: wpf
 control: DoubleTextBox
 documentation: ug
