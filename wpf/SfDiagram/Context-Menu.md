@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add context menu items to ease the execution of frequently used commands.
+title: To ease the execution of frequently used commands | Syncfusion.
 description: How to execute frequently used commands by using context menu items?
 platform: wpf
 control: SfDiagram
@@ -15,7 +15,7 @@ In graphical user interface (GUI), a ContextMenu is a type of Menu that appears 
 
 The `ContentMenu` Constraint helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands. 
 
-![](Context-Menu_images/Context-Menu_img1.jpg)
+![DefaultMenu](Context-Menu_images/Context-Menu_img1.jpg)
 
 The following code illustrates how to enable/disable the default context menu items.
 
@@ -50,7 +50,7 @@ Diagram.Menu.MenuItems.Add(menu);
 {% endhighlight %}
 {% endtabs %}
 
-![](Context-Menu_images/Context-Menu_img2.jpg)
+![CustomMenu](Context-Menu_images/Context-Menu_img2.jpg)
 
 ### Menu for Node and Connector
 
@@ -75,7 +75,7 @@ DiagramMenuItem mi = new DiagramMenuItem()
 {% endhighlight %}
 {% endtabs %}
 
-![](Context-Menu_images/Context-Menu_img3.jpg)
+![NodeMenu](Context-Menu_images/Context-Menu_img3.jpg)
 
 You can be notified with events when you click the custom menu items. The following code example illustrates the how to define the event for custom context menu.
 
