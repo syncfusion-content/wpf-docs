@@ -59,9 +59,9 @@ namespace GettingStarted
         SfSchedule schedule = new SfSchedule();
 
         schedule.ScheduleType = ScheduleType.Day;
-		
-		this.Content = schedule;
-	}
+
+        this.Content = schedule;
+    }
 	
 }
 {% endhighlight %}

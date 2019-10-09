@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Getting Started
-This section gives you an overview of how to work with SfSchedule and also includes a walk-through to configure real-time SfSchedule command.
+This section gives you an overview of how to work with [SfSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule.html) and also includes a walk-through to configure real-time `SfSchedule` command.
 
 ## Assembly deployment
 Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfschedule) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application.
@@ -58,7 +58,7 @@ To add the control manually in XAML page, follow the given steps:
 To manually attach control to C #, follow the following steps:
 
 1. Add the `Syncfusion.SfSchedule.WPF` assembly reference to the project.
-2. Import the `SfSchedule` namespace using Syncfusion.UI.Xaml.Schedule.
+2. Import the `SfSchedule` namespace `using Syncfusion.UI.Xaml.Schedule`.
 3. Create an `SfSchedule` instance, and add it to the window.
 
 {% highlight c#%}
