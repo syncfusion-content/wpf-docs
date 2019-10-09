@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF TabControl | Syncfusion
-description: Learn about getting started with Syncfusion WPF TabControl and its basic features and structure.
+description: Learn here about getting started with Syncfusion WPF TabControl and its basic features and structure.
 platform: wpf
 control: TabControl
 documentation: ug
@@ -116,7 +116,7 @@ grid.Children.Add(tabControlExt);
 
 ## Adding TabItem
 
-You can add the tabitems using the [TabControlExt.Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_Items) property of TabControl. You can set the tabitem name using [TabItemExt.Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content to each TabItem by using [TabItemExt.Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ContentControl_Content) property.
+You can add the tabitem's using the [TabControlExt.Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_Items) property of TabControl. You can set the tabitem name using [TabItemExt.Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content to each TabItem by using [TabItemExt.Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ContentControl_Content) property.
 
 {% tabs %}
 
@@ -234,7 +234,7 @@ tabItemExt2.IsSelected = true;
 
 ### Tab Selection event
 
-The TabControl notifies that the selected tabitem is changed by user through the [SelectedChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemChangedEvent_EV.html) event. You can use the `OldSelectedItem` and `NewSelectedItem` properties to get the old and new selected tabitems in the `SelectedItemChangedEvent` event.
+The TabControl notifies that the selected tabitem is changed by user through the [SelectedChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemChangedEvent_EV.html) event. You can use the `OldSelectedItem` and `NewSelectedItem` properties to get the old and new selected tabitem in the `SelectedItemChangedEvent` event.
 
 {% tabs %}
 
@@ -261,7 +261,7 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 ## Enable or disable close button
 
-The [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property is used to decide whether to enable or disable the close button in tabitem. You can show the close button as an individual tabitem or common for all tabitems using the [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property in TabControl.
+The [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property is used to decide whether to enable or disable the close button in tabitem. You can show the close button as an individual tabitem or common for all tabitem's using the [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property in TabControl.
 
 {% tabs %}
 
