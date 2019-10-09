@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Getting Started| SfSchedule | Wpf | Syncfusion
-description: A quick tour to initial users on Syncfusion SfSchedule control for WPF platform                                                    
+title: Getting Started in SfSchedule | Syncfusion
+description: This section explains how the Syncfusion SfSchedule control for the WPF system can be used by the initial user.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
 # Getting Started
-This section provides you an overview for working with SfSchedule and also provides a walk through to configure SfSchedule control in real time scenario.
+This section gives you an overview of how to work with SfSchedule and also includes a walk-through to configure real-time SfSchedule command.
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfschedule) section to get the list of assemblies or NuGet Packages that needs to be added as a reference to use the control in any application.
+Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfschedule) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages).
+Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages).
 
-You can create a WPF application with SfSchedule control using the following steps:
+The following steps can be used to construct a WPF application with SfSchedule control:
 
 ## Create a project
-Create a new WPF project in Visual Studio to display the SfSchedule control with its functionalities, and add the following namespace to the added assemblies.
+In Visual Studio, create a new WPF project to show the features of the `SfSchedule` control and add the following namespace to the added assemblies.
 
 Assembly: Syncfusion.SfSchedule.WPF
 
@@ -28,7 +28,7 @@ Namespace: Syncfusion.UI.Xaml.Schedule
 
 To add the control manually in XAML page, follow the given steps:
 
-1. Add the Syncfusion.SfSchedule.WPF assembly reference to the project.
+1. Add the `Syncfusion.SfSchedule.WPF` assembly reference to the project.
 2. Import WPF schema http://schemas.syncfusion.com/wpf in the XAML page.
 3. Declare the SfSchedule control in XAML page.
 
@@ -55,11 +55,11 @@ To add the control manually in XAML page, follow the given steps:
 {% endhighlight %}
 
 ## Add control manually in C#
-To add control manually in C#, follow the given steps:
+To manually attach control to C #, follow the following steps:
 
-1. Add the Syncfusion.SfSchedule.WPF assembly reference to the project.
-2. Import the SfSchedule namespace using Syncfusion.UI.Xaml.Schedule.
-3. Create an SfSchedule instance, and add it to the window.
+1. Add the `Syncfusion.SfSchedule.WPF` assembly reference to the project.
+2. Import the `SfSchedule` namespace using Syncfusion.UI.Xaml.Schedule.
+3. Create an `SfSchedule` instance, and add it to the window.
 
 {% highlight c#%}
 using Syncfusion.UI.Xaml.Schedule;
@@ -73,8 +73,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-
-Run the above code and now the empty Scheduler can be seen as follows but with no appointments. In order to display the appointments on the scheduler, either the local or remote data needs to be passed to it.
+Run the code above and now you can see the empty scheduler as follows, but without appointments. To view the scheduler appointments, whether local or remote information must be passed on to the scheduler.
 
 ![Getting-Started](Getting-Started_images/Getting-Started_img1.png)
 
@@ -82,9 +81,9 @@ Run the above code and now the empty Scheduler can be seen as follows but with n
 
 ## Creating the SfSchedule Control with the Syncfusion Reference Manager
 
-Syncfusion Reference Manager is used to add   Syncfusion Tools in Visual Studio.
+Throughout Visual Studio, the **Syncfusion Reference Manager** is used to add tools to Syncfusion.
 
-To Add SfSchedule Control, follow the steps below:
+Follow the steps below to add `SfSchedule` control:
 
 1.Create a simple WPF application using Visual Studio.
 
@@ -92,25 +91,25 @@ To Add SfSchedule Control, follow the steps below:
 
 
 
-2.Right Click on the Project and select Syncfusion Reference Manager.
+2.Right click on the Project and pick Syncfusion Reference Manager.
 
    ![Syncfusion-Reference-Manager](Getting-Started_images/Getting-Started_img3.jpg)
 
 
 
-3.The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
+3.As shown in the figure below, the **Syncfusion Reference Manager Wizard** will be opened
 
    ![Reference-Manager-Wizard](Getting-Started_images/Getting-Started_img4.jpg)
 
 
 
-4.Search for “SfSchedule” using SearchBox and select SfSchedule Control.  Click on done to add selected SfSchedule Control.
+4.Using SearchBox to search for "SfSchedule" and pick Control `SfSchedule`.
 
    ![SfSchedule-Control](Getting-Started_images/Getting-Started_img5.jpg)
  
 
 
-5.The SfSchedule assemblies will be automatically added to the Project after Clicking OK
+5.The SfSchedule assemblies will be automatically added to the Project after Clicking OK.
 
    ![Adding-SfSchedule](Getting-Started_images/Getting-Started_img6.jpg)
 
@@ -120,7 +119,7 @@ To Add SfSchedule Control, follow the steps below:
 
 
 
-6.Create a namespace reference to the SfSchedule control using Syncfusion’s global namespace reference schemas.syncfusion.com or the SfSchedule control’s namespace reference Syncfusion.UI.Xaml.Schedule available in the Syncfusion.SfSchedule.WPF assembly.
+6.Create a namespace reference to the SfSchedule control using Syncfusion’s global namespace reference `schemas.syncfusion.com` or the `SfSchedule` control’s namespace reference `Syncfusion.UI.Xaml.Schedule` available in the `Syncfusion.SfSchedule.WPF` assembly.
 
 
 {% highlight xaml %}
@@ -134,7 +133,7 @@ To Add SfSchedule Control, follow the steps below:
 {% endhighlight %}
 
 
-7.Add the following code to create a simple SfSchedule control.
+7.To create a simple `SfSchedule` control, add the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -191,7 +190,7 @@ namespace SfScheduleSample
 {% endhighlight %}
 
 
-8. The simple SfSchedule control will be created as shown in the figure below.
+8.As shown in the figure below, the simple `SfSchedule` control will be established.
 
    ![Simple-SfSchedule](Getting-Started_images/Getting-Started_img8.jpg)
 
