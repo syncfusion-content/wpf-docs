@@ -17,9 +17,8 @@ DoubleTextBox allows to apply the different brush for the positive values using 
 
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="10"
-                          Width="100" Height="25"
-						  PositiveForeground="DeepPink"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="10" Width="100" Height="25"
+                          PositiveForeground="DeepPink"/>
 
 {% endhighlight %}
 
@@ -31,7 +30,6 @@ doubleTextBox.Height = 25;
 doubleTextBox.Value = 10;
 doubleTextBox.EnableFocusColors = true;
 doubleTextBox.PositiveForeground = Brushes.DeepPink;
-Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -43,7 +41,6 @@ doubleTextBox.Height = 25
 doubleTextBox.Value = 10
 doubleTextBox.EnableFocusColors = True
 doubleTextBox.PositiveForeground = Brushes.DeepPink
-Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -62,9 +59,8 @@ N> It can be enable by setting [ApplyNegativeForeground](https://help.syncfusion
 
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="-10"
-                          Width="100" Height="25" NegativeForeground="DarkOrange"
-						  ApplyNegativeForeground="True"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="-10" Width="100" Height="25"
+                          NegativeForeground="DarkOrange" ApplyNegativeForeground="True"/>
 
 {% endhighlight %}
 
@@ -76,7 +72,6 @@ doubleTextBox.Height = 25;
 doubleTextBox.Value = -10;
 doubleTextBox.ApplyNegativeForeground = true;
 doubleTextBox.NegativeForeground = Brushes.DarkOrange;
-Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -88,7 +83,6 @@ doubleTextBox.Height = 25
 doubleTextBox.Value = -10
 doubleTextBox.ApplyNegativeForeground = True
 doubleTextBox.NegativeForeground = Brushes.DarkOrange
-Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -107,7 +101,7 @@ The DoubleTextBox allows to set the desired brush as the foreground for the Wate
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="100"
                           Height="25" UseNullOption="True" WatermarkText="Type here"
-						  WatermarkTextIsVisible="True" WatermarkTextForeground="Red"/>
+                          WatermarkTextIsVisible="True" WatermarkTextForeground="Red"/>
 
 {% endhighlight %}
 
@@ -120,7 +114,6 @@ doubleTextBox.UseNullOption = true;
 doubleTextBox.WatermarkText = "Type Here";
 doubleTextBox.WatermarkTextIsVisible = true;
 doubleTextBox.WatermarkTextForeground = Brushes.Red;
-Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -133,13 +126,61 @@ doubleTextBox.UseNullOption = True
 doubleTextBox.WatermarkText = "Type Here"
 doubleTextBox.WatermarkTextIsVisible = True
 doubleTextBox.WatermarkTextForeground = Brushes.Red
-Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![WaterMark text foreground](Appearance-and-Styling-images/Appearance-and-Styling-img3.jpeg)
+
+
+## Range adorner
+
+To show the adorner range based on the minimum and maximum values, the [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property need to set to True. By Default its value is false.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"
+                          Value ="50" MaxValue="100" MinValue="10"
+                          EnableRangeAdorner="True"/>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 100;
+doubleTextBox.Height = 25;
+doubleTextBox.Value = 50;
+doubleTextBox.MinValue = 10;
+doubleTextBox.MaxValue = 100;
+doubleTextBox.EnableRangeAdorner = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+doubleTextBox.Width = 100
+doubleTextBox.Height = 25
+doubleTextBox.Value = 50
+doubleTextBox.MinValue = 10
+doubleTextBox.MaxValue = 100
+doubleTextBox.EnableRangeAdorner = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Range adorner](Appearance-and-Styling-images/Appearance-and-Styling-img9.jpeg)
+
 
 ## Range adorner background
 
@@ -151,8 +192,8 @@ The background color of the range adorner can be set using the [RangeAdornerBack
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
                           Height="25" Value ="50" MaxValue="100"
-						  MinValue="10" RangeAdornerBackground="BlueViolet"
-						  EnableRangeAdorner="True"/>
+                          MinValue="10" RangeAdornerBackground="BlueViolet"
+                          EnableRangeAdorner="True"/>
 
 {% endhighlight %}
 
@@ -166,7 +207,6 @@ doubleTextBox.MinValue = 10;
 doubleTextBox.MaxValue = 100;
 doubleTextBox.EnableRangeAdorner = true;
 doubleTextBox.RangeAdornerBackground = Brushes.BlueViolet;
-Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -181,7 +221,6 @@ doubleTextBox.MinValue = 10
 doubleTextBox.MaxValue = 100
 doubleTextBox.EnableRangeAdorner = True
 doubleTextBox.RangeAdornerBackground = Brushes.BlueViolet
-Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -202,7 +241,7 @@ N> The [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shar
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
                           Height="25" Value ="0" ApplyZeroColor="True"
-						  ZeroColor="Blue"/>
+                          ZeroColor="Blue"/>
 
 {% endhighlight %}
 
@@ -213,7 +252,6 @@ doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.ApplyZeroColor = true;
 doubleTextBox.ZeroColor = Brushes.Blue;
-Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -224,7 +262,6 @@ doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.ApplyZeroColor = True
 doubleTextBox.ZeroColor = Brushes.Blue
-Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 {% endtabs %}
@@ -241,8 +278,8 @@ The Visual appearance of the WatermarkText can be changed using the [WatermarkTe
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"
                           WatermarkText="Type Here" CornerRadius="3"
-						  WatermarkTextIsVisible="True" WatermarkOpacity="0.5"
-						  UseNullOption="True">
+                          WatermarkTextIsVisible="True" WatermarkOpacity="0.5"
+                          UseNullOption="True">
 
 <syncfusion:DoubleTextBox.WatermarkTemplate>
 <DataTemplate>
@@ -277,8 +314,7 @@ To rounded the corners of the DoubleTexBox, set the property [CornerRadius](http
 Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
-doubleTextBox.CornerRadius = new CornerRadius(5);   
-Grid1.Children.Add(doubleTextBox);
+doubleTextBox.CornerRadius = new CornerRadius(5);  
 
 {% endhighlight %}
 
@@ -287,8 +323,7 @@ Grid1.Children.Add(doubleTextBox);
 Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
-doubleTextBox.CornerRadius = New CornerRadius(5)   
-Grid1.Children.Add(doubleTextBox)
+doubleTextBox.CornerRadius = New CornerRadius(5)
 
 {% endhighlight %}
 

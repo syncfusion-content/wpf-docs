@@ -111,10 +111,14 @@ You can define the minimum and maximum values by setting the [MinVal](https://he
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="100" Height="25" Value="100" MaxValue="999.99" MinValue="-999.99"/>
 {% endhighlight %}
 {% highlight C# %}
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 100;
+doubleTextBox.Height = 25;
 //Setting minimum value
 doubleTextBox.MinValue = -999.99;
 //Setting maximum value
 doubleTextBox.MaxValue = 999.99;
+this.Content = doubleTextBox;
 {% endhighlight %}
 {% endtabs %}
 

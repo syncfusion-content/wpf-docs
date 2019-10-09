@@ -25,12 +25,11 @@ DoubleTextBox provides globalization support through the [Culture](https://docs
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 1234567;
 doubleTextBox.Culture = new CultureInfo("en-US");
-Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -41,7 +40,6 @@ doubleTextBox.Width = 150
 doubleTextBox.Height = 25
 doubleTextBox.Value = 1234567
 doubleTextBox.Culture = New CultureInfo("en-US")
-Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -124,7 +122,6 @@ doubleTextBox.NumberFormat = Function NumberFormatInfo() As Shadows
 NumberGroupSeparator = "/",
 NumberDecimalDigits = 4,
 NumberDecimalSeparator = "*"
-End Function
 
 {% endhighlight %}
 
@@ -156,7 +153,6 @@ doubleTextBox.Value = 123456789012345;
 doubleTextBox.NumberGroupSeparator = "/";
 doubleTextBox.NumberDecimalSeparator = "*";
 doubleTextBox.NumberDecimalDigits = 4;
-Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -169,7 +165,6 @@ doubleTextBox.Value = 123456789012345
 doubleTextBox.NumberGroupSeparator = "/"
 doubleTextBox.NumberDecimalSeparator = "*"
 doubleTextBox.NumberDecimalDigits = 4
-Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
