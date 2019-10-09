@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Recurrence| SfSchedule | Wpf | Syncfusion
-description: recurrence
+title: Recurrence in SfSchedule | Syncfusion
+description: This section explains about the recurrence appointment and recurrence exception date with custom binding support for SfSchedule.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
 ## Recurrence Appointment
-Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting `RecurrenceRule` property in Schedule appointments.
+Recurring appointment on a daily, weekly, monthly, or yearly interval. Setting ' RecurrenceRule ' and activating the ' IsRecursive ' property in Schedule appointment will build recurring appointments.
 
 ## Recurrence Rule
-The `RecurrenceRule` is a string value, that contains the details of the recurrence appointments like repeat type - daily/weekly/monthly/yearly, how many times it needs to be repeated, the interval duration and also the time period to render the appointment, etc.
-RecurrenceRule has the following properties and based on this property value, the recurrence appointments are rendered in the SfSchedule control with its respective time period.
+The `RecurrenceRule` is a string value containing the specifics of the recurrence appointments such as repeat form - daily/weekly/monthly/yearly, how many times it needs to be repeated, the length of the interval and also the time period for making the appointment, etc.
+[RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html) has the following properties and the recurrence appointments are made with their respective time span in the SfSchedule control based on this property value.
 
 <table>
 <tr><th>PropertyName</th><th>Purpose</th></tr>
@@ -64,7 +64,7 @@ Schedule control supports all four types of recurrence patterns. You can set the
 
 ## Recurrence Rule Generator
 
-[RRuleGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~RRuleGenerator(RecurrenceProperties,DateTime,DateTime).html) method is used to create recurrence rule which is available in the [ScheduleHelper](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html) of the `SfSchedule` control. Assign the generated recurrence rule to the appointment property called `RecurrenceRule` that assign the recurrence properties to the appointment. Or user can directly apply recurrence rule from any iCal file.
+[RRuleGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~RRuleGenerator(RecurrenceProperties,DateTime,DateTime).html) method is used to construct the recurrence rule that can be found in the [ScheduleHelper](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper.html) of the `SfSchedule` control. Assign the generated recurrence rule to the appointment property called `RecurrenceRule` that assign the recurrence properties to the appointment. Or from any iCal directory, the client may apply recurrence rule directly.
 
 ### Applying Recurrence to Appointments
 
@@ -79,6 +79,7 @@ Recurrence can be applied by using `RRuleGenerator` method.
 	 SchApp.StartTime = currentDate;    
 	 SchApp.EndTime = currentDate.AddHours(4);    
 	 SchApp.AppointmentBackground = new SolidColorBrush((Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));
+	 SchApp.IsRecursive = true;
 	 // Setting Recurrence Properties          
 	 RecurrenceProperties RecProp = new RecurrenceProperties();      
 	 RecProp.RecurrenceType = RecurrenceType.Daily;      
@@ -89,8 +90,7 @@ Recurrence can be applied by using `RRuleGenerator` method.
      RecProp.IsRangeEndDate = false;       
      RecProp.RangeRecurrenceCount = 100;            
 	 // Generating RRULE using ScheduleHelper           
-	 SchApp.RecurrenceRule = ScheduleHelper.RRuleGenerator(RecProp, SchApp.StartTime, SchApp.EndTime);
-	 SchApp.IsRecursive = true;     
+	 SchApp.RecurrenceRule = ScheduleHelper.RRuleGenerator(RecProp, SchApp.StartTime, SchApp.EndTime);     
 	 AppCollection.Add(SchApp);   
 	 Schedule.Appointments = AppCollection;
 {% endhighlight %}
@@ -98,7 +98,7 @@ Recurrence can be applied by using `RRuleGenerator` method.
 ![Recurrence-appointment](Recurrence_images/Recurrence_img1.jpeg)
 
 ## Creating Custom Recurrence Appointment using Recurrence Builder
-For creating custom recurrence appointment you need to create a custom class Meeting with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule`.
+you need to create a custom class Meeting with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule` to create custom recurrence appointment.
 
 
 {% highlight c# %}
@@ -112,6 +112,7 @@ public class Meeting
 	public DateTime To { get; set; }
 	public Brush Color { get; set; }
 	public string RecurrenceRule { get; set; }
+	public bool IsRecursive { get; set; }
 }
 {% endhighlight %}
 
@@ -121,13 +122,14 @@ You can map those properties of Meeting class with our SfSchedule control by usi
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
+<syncfusion:SfSchedule x:Name="schedule" ScheduleType="Month" DataSource="{Binding Meetings}">
 	<syncfusion:SfSchedule.AppointmentMapping>
 		<syncfusion:ScheduleAppointmentMapping
 			SubjectMapping="EventName"
 			AppointmentBackgroundMapping="Color"
 			StartTimeMapping="From"
 			EndTimeMapping="To"
+			IsRecursiveMapping="IsRecursive"
 			RecurrenceRuleMapping="RecurrenceRule">
 		</syncfusion:ScheduleAppointmentMapping>
 	</syncfusion:SfSchedule.AppointmentMapping>
@@ -140,6 +142,7 @@ dataMapping.SubjectMapping = "EventName";
 dataMapping.StartTimeMapping = "From";
 dataMapping.EndTimeMapping = "To";
 dataMapping.AppointmentBackgroundMapping = "Color";
+dataMapping.IsRecursiveMapping= "IsRecursive";
 dataMapping.RecurrenceRuleMapping = "RecurrenceRule";
 schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
@@ -157,8 +160,9 @@ meeting.To = meeting.From.AddHours(2);
 // Setting start time for an event
 meeting.EventName = "Client Meeting";
 // Setting color for an event
-meeting.Color = Brushes.Green;
-
+meeting.Color = new SolidColorBrush(Color.FromArgb(0xFf, 0xD8, 0x00, 0x73));
+// Enable to generate the recurrence.
+meeting.IsRecursive = true;
 
 // Creating recurrence rule
 RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
@@ -166,8 +170,8 @@ recurrenceProperties.RecurrenceType = RecurrenceType.Weekly;
 recurrenceProperties.IsWeeklyTuesday = true;
 recurrenceProperties.IsWeeklyWednesday = true;
 recurrenceProperties.IsWeeklyThursday = true;
-recurrenceProperties.RecurrenceCount = 10;
-recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, meeting.From, Meeting.To);
+recurrenceProperties.RangeRecurrenceCount = 10;
+recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, meeting.From, meeting.To);
 
 // Setting recursive rule for an event
 meeting.RecurrenceRule = recurrenceProperties.RecurrenceRule;
@@ -182,6 +186,9 @@ schedule.ItemsSource = Meetings;
 {% endhighlight %}
 
 ![Recurrence-appointmet-for-custom-appointment](Recurrence_images/Recurrence_img2.jpg)
+
+You can download the entire source code of this demo from here [Custom recurrence appointment](https://github.com/SyncfusionExamples/SfSchedule_Recurrence_Appointment/tree/master/RecurrenceAppointment).
+
 
 ### How to get the Recurrence editor field values from recurrence rule?
 You can get the Recurrence properties from recurrence rule using the [RRuleParser](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~RRuleParser.html) method of `SfSchedule`.
@@ -202,7 +209,7 @@ recurrenceProperties.IsDailyEveryNDays as true
 recurrenceProperties.RangeRecurrenceCount as 3
 
 ### How to get the occurrences date time list of recurring appointment from recurrence rule?
-You can get the occurrences date time list of recurring appointment from recurrence rule using the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~GetRecurrenceDateTimeCollection.html) method of `SfSchedule`.
+Use the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~GetRecurrenceDateTimeCollection.html) feature of 'SfSchedule' to get the occurrence date time list of recurring appointment from the recurrence reule.
 
 {% highlight c# %}
 DateTime dateTime = new DateTime(2018,5,7,9,0,0);
@@ -262,26 +269,30 @@ You can add/remove the recurrence exception appointments and recurrence exceptio
 /// </summary>
 public class Meeting
 {
-    public String Subject { get; set; }
-	public DateTime StartTime { get; set; }
-	public DateTime EndTime { get; set; }
-	public String RecurrenceRule { get; set; }
+    public string EventName { get; set; }
+	public DateTime From { get; set; }
+	public DateTime To { get; set; }
+	public Brush Color { get; set; }
+	public string RecurrenceRule { get; set; }
+	public bool IsRecursive { get; set; }
 	public ObservableCollection<DateTime> RecurrenceExceptionDates { get; set; }
 }
 {% endhighlight %}
 
 N>You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map those properties of `Meeting` class with our [SfSchedule](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule.html) control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) and [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html).
+Using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) and [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html) to map certain properties of the ' Meeting ' class with our [SfSchedule](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule.html) control.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Month" DataSource="{Binding Meetings}">
 	<syncfusion:SfSchedule.AppointmentMapping>
 		<syncfusion:ScheduleAppointmentMapping
-			SubjectMapping="Subject"
-			StartTimeMapping="StartTime"
-			EndTimeMapping="EndTime"
+			SubjectMapping="EventName"
+			AppointmentBackgroundMapping="Color"
+			StartTimeMapping="From"
+			EndTimeMapping="To"
+			IsRecursiveMapping="IsRecursive"
 			RecurrenceRuleMapping = "RecurrenceRule"
 			RecursiveExceptionDatesMapping="RecurrenceExceptionDates">
 		</syncfusion:ScheduleAppointmentMapping>
@@ -291,9 +302,10 @@ You can map those properties of `Meeting` class with our [SfSchedule](https://he
 {% highlight c# %}
 // Schedule data mapping for custom appointments
 ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
-dataMapping.SubjectMapping = "Subject";
-dataMapping.StartTimeMapping = "StartTime";
-dataMapping.EndTimeMapping = "EndTime";
+dataMapping.SubjectMapping = "EventName";
+dataMapping.StartTimeMapping = "From";
+dataMapping.EndTimeMapping = "To";
+dataMapping.IsRecursiveMapping="IsRecursive";
 dataMapping.RecurrenceRuleMapping = "RecurrenceRule";
 dataMapping.RecursiveExceptionDatesMapping = "RecurrenceExceptionDates";
 schedule.AppointmentMapping = dataMapping;
@@ -304,13 +316,15 @@ ObservableCollection<Meeting> Meetings = new ObservableCollection<Meeting>();
 var exceptionDate = new DateTime(2017, 09, 07);
 var recurrenceAppointment = new Meeting()
 {
-	From = new DateTime(2017, 09, 01, 10, 0, 0),
-	To = new DateTime(2017, 09, 01, 12, 0, 0),
-	Subject = "Occurs Daily",
-	RecurrenceExceptionDates = new ObservableCollection<DateTime>()
-                               {
-                                  exceptionDate
-                               };
+    From = new DateTime(2017, 09, 01, 10, 0, 0),
+    To = new DateTime(2017, 09, 01, 12, 0, 0),
+    EventName = "Occurs Daily",
+    IsRecursive = true,
+    Color = new SolidColorBrush(Color.FromArgb(0xFf, 0xD8, 0x00, 0x73)),
+    RecurrenceExceptionDates = new ObservableCollection<DateTime>()
+                    {
+                        exceptionDate
+                    }
 };
 
 // Creating recurrence rule
@@ -323,3 +337,6 @@ this.schedule.ItemsSource = Meetings;
 {%endtabs%}
 
 ![Recurrence-ExceptionDate](Recurrence_images/Recurrence_img3.jpg)
+
+You can download the entire source code of this demo from here [Custom recurrence exception Dates](https://github.com/SyncfusionExamples/RecurreceExceptionDate_Demo).
+
