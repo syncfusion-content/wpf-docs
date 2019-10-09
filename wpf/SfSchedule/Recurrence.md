@@ -209,7 +209,7 @@ recurrenceProperties.IsDailyEveryNDays as true
 recurrenceProperties.RangeRecurrenceCount as 3
 
 ### How to get the occurrences date time list of recurring appointment from recurrence rule?
-Use the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~GetRecurrenceDateTimeCollection.html) feature of 'SfSchedule' to get the occurrence date time list of recurring appointment from the recurrence reule.
+Use the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleHelper~GetRecurrenceDateTimeCollection.html) feature of 'SfSchedule' to get the occurrence date time list of recurring appointment from the recurrence rule.
 
 {% highlight c# %}
 DateTime dateTime = new DateTime(2018,5,7,9,0,0);
