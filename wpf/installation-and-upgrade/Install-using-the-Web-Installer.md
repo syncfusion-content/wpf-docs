@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio WPF products
-description: Learn how to install and deploy the Syncfusion WPF component
+title: Installation and Deployment process for Syncfusion ES WPF products
+description: This section provides information regarding learn how to install and deploy the Syncfusion WPF component
 platform: wpf
 control: Installation and Deployment
 documentation: ug
