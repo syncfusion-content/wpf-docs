@@ -41,6 +41,26 @@ spreadsheet.UnhideSheet("Sheet 2");
 {% endhighlight %}
 {% endtabs %}
 
+## Hide and Unhide All Worksheet Tabs
+
+SfSpreadsheet provides support to hide and unhide the all worksheet tabs in the workbook using the [ShowSheetTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ShowSheetTabs.html) property. The Default value is `true`.
+
+{% tabs %}
+{% highlight c# %}
+
+private void SpreadsheetControl_Loaded(object sender, RoutedEventArgs e)
+{
+    spreadsheetControl.ShowSheetTabs = false;
+}
+
+{% endhighlight %}
+{% highlight XAML %}
+
+<syncfusion:SfSpreadsheet x:Name="spreadsheetControl" ShowSheetTabs ="False" />
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Rename a worksheet
 
 SfSpreadsheet provides support to rename a worksheet in the workbook by using [RenameSheet](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RenameSheet.html) method. After invoking this method, the sheet tab enters into editing mode and now the users can change the name of the sheet in the tab. 
