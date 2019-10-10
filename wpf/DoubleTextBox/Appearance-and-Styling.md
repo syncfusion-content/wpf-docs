@@ -24,7 +24,7 @@ DoubleTextBox allows to apply the different brush for the positive values using 
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 10;
@@ -35,7 +35,7 @@ doubleTextBox.PositiveForeground = Brushes.DeepPink;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.Value = 10
@@ -55,6 +55,44 @@ DoubleTextBox allows to apply the different brush as a foreground for the negati
 
 N> It can be enable by setting [ApplyNegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyNegativeForeground.html) property to true. By default its value is false.
 
+### Default Negative foreground
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="-10" Width="100" Height="25"
+                          ApplyNegativeForeground="True"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 100;
+doubleTextBox.Height = 25;
+doubleTextBox.Value = -10;
+doubleTextBox.ApplyNegativeForeground = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+doubleTextBox.Width = 100
+doubleTextBox.Height = 25
+doubleTextBox.Value = -10
+doubleTextBox.ApplyNegativeForeground = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Default Negative foreground](Appearance-and-Styling-images/Appearance-and-Styling-img10.png)
+
+
+### Customized Negative foreground
+
 {% tabs %}
 
 {% highlight XAML %}
@@ -66,7 +104,7 @@ N> It can be enable by setting [ApplyNegativeForeground](https://help.syncfusion
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = -10;
@@ -88,7 +126,8 @@ doubleTextBox.NegativeForeground = Brushes.DarkOrange
 
 {% endtabs %}
 
-![Negative foreground](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
+![Customized Negative foreground](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
+
 
 
 ## WaterMark TextForeground
@@ -107,7 +146,7 @@ The DoubleTextBox allows to set the desired brush as the foreground for the Wate
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.UseNullOption = true;
@@ -199,7 +238,7 @@ The background color of the range adorner can be set using the [RangeAdornerBack
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 50;
@@ -213,7 +252,7 @@ doubleTextBox.RangeAdornerBackground = Brushes.BlueViolet;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 150
 doubleTextBox.Height = 25
 doubleTextBox.Value = 50
@@ -235,6 +274,42 @@ The [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.cont
 
 N> The [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) in the DoubleTextBox can be enabled by setting the [ApplyZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyZeroColor.html) property to true.
 
+
+###  Default ZeroColor
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
+                          Height="25" Value ="0" ApplyZeroColor="True"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 100;
+doubleTextBox.Height = 25;
+doubleTextBox.ApplyZeroColor = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
+doubleTextBox.Width = 100
+doubleTextBox.Height = 25
+doubleTextBox.ApplyZeroColor = True
+
+{% endhighlight %}
+{% endtabs %}
+
+![Default ZeroColor](Appearance-and-Styling-images/Appearance-and-Styling-img11.png)
+
+
+###  Customized ZeroColor
+
 {% tabs %}
 
 {% highlight XAML %}
@@ -247,7 +322,7 @@ N> The [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shar
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.ApplyZeroColor = true;
@@ -257,7 +332,7 @@ doubleTextBox.ZeroColor = Brushes.Blue;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.ApplyZeroColor = True
@@ -266,7 +341,7 @@ doubleTextBox.ZeroColor = Brushes.Blue
 {% endhighlight %}
 {% endtabs %}
 
-![Zero color](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
+![Customized ZeroColor](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
 
 ## WaterMarkTemplate
 

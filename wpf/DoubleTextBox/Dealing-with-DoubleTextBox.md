@@ -89,12 +89,14 @@ To bind values other than double values, the Value Converter need to use. The fo
 
 Up or down key arrows allows to spin the values of DoubleTextBox one step up or down. Mouse Scroll in the DoubleTextBox spin the values one step up or down. This spin behavior in the DoubleTextBox, can be restricted by setting the [IsScrollingOnCircle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~IsScrollingOnCircle.html) property to `false`. By default, its value is `true`.
 
+The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to set spin value of DoubleTextBox. Based on the [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) value, DoubleTextBox spins up or down.
+
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
-                          Height="25" Value ="10" IsScrollingOnCircle="False"/>
+                          Height="25" Value ="10" IsScrollingOnCircle="True" ScrollInterval="2"/>
 
 {% endhighlight %}
 
@@ -104,17 +106,19 @@ DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 10;
-doubleTextBox.IsScrollingOnCircle = false;
+doubleTextBox.IsScrollingOnCircle = true;
+doubleTextBox.ScrollInterval = 2;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 150
 doubleTextBox.Height = 25
 doubleTextBox.Value = 10
 doubleTextBox.IsScrollingOnCircle = False
+doubleTextBox.ScrollInterval = 2
 
 {% endhighlight %}
 
@@ -124,13 +128,15 @@ doubleTextBox.IsScrollingOnCircle = False
 
 If the DoubleTextBox is read-only, then no user input or edits are allowed but programmatic changes can be made. The user can still select text and the cursor still appears. 
 
+N> The Cursor in the DoubleTextBox can be displayed by setting the `IsReadOnlyCaretVisible` property to true.
+
 To enable this feature set [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) to `true`. By default its value is `false`.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" IsReadOnly="True"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" IsReadOnly="True" IsReadOnlyCaretVisible="True"/>
 
 {% endhighlight %}
 
@@ -138,13 +144,15 @@ To enable this feature set [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.IsReadOnly = true;
+doubleTextBox.IsReadOnlyCaretVisible = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.IsReadOnly = True
+doubleTextBox.IsReadOnlyCaretVisible = true
 
 {% endhighlight %}
 
@@ -171,7 +179,7 @@ doubleTextBox.EnterToMoveNext = false;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.EnterToMoveNext = False
 
 {% endhighlight %}
@@ -199,7 +207,7 @@ doubleTextBox.TextSelectionOnFocus = true;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.TextSelectionOnFocus = True
 
 {% endhighlight %}
@@ -242,7 +250,7 @@ doubleTextBox.EnableExtendedScrolling = true;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 120
 doubleTextBox.Height = 25
 doubleTextBox.Value = 93

@@ -178,7 +178,7 @@ The MaxValue can validate in two ways:
 
 ## MinValueOnExceedMinDigit
 
-If `MinValueOnExceedMinDigit` property is set to `true`, a value less than the MinValue entered, then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
+If [MinValueOnExceedMinDigit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MinValueOnExceedMinDigit.html) property is set to `true`, a value less than the MinValue entered, then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
 
 N> This will be enabled only when the MinValidation is set to OnKeyPress.
 
@@ -186,7 +186,7 @@ N> This will be enabled only when the MinValidation is set to OnKeyPress.
 
 If `MaxValueOnExceedMaxDigit` property is set to `true`, then a value greater than the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) is entered, it will automatically assign the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) to the Value property. Otherwise it will not allow the key press.
 
-N> This will be enabled only when the MaxValidation is set to OnKeyPress.
+N> This will be enabled only when the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnKeyPress.
 
 {% tabs %}
 
@@ -235,12 +235,12 @@ Initially there is no value assigned to the DoubleTextBox. So it displays the de
 ![No value assigned to double text box](Set-Value-images/Set-Value-img4.jpeg)
 
 
-MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only in the lost focus.
+[MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnLostFocus, so the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) will be performed only in the lost focus.
 
 ![MaxValidation is set to OnLostFocus](Set-Value-images/Set-Value-img5.jpeg)
 
 
-MinValidation is set to OnKeyPress, it cannot let to enter a value less than the MinValue. If try to enter a value less than the MinValue, then the MinValue will set to the Value property because MinValueOnExceedMinDigit is set to true.
+[MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the MinValue. If try to enter a value less than the MinValue, then the MinValue will set to the Value property because MinValueOnExceedMinDigit is set to true.
 
 ![MinValidation is set to OnKeyPress](Set-Value-images/Set-Value-img6.jpeg)
 
