@@ -16,7 +16,7 @@ This feature gives optimized performance and low memory consumption while loadin
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize the SfDiagram and enable the virtualize constraint-->
-<syncfusion:SfDiagram x:Name="diagram" Constraints="Virtualize">
+<syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Virtualize">
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight C# %}
@@ -38,7 +38,7 @@ To improve scrolling performance, the outline of a diagram element will be displ
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize the SfDiagram and enable the virtualize and outline constraint-->
-<syncfusion:SfDiagram x:Name="diagram" Constraints="Virtualize,Outline">
+<syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Virtualize,Outline">
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight C# %}
@@ -72,7 +72,7 @@ Options are provided to override the appearance, style and interval time of outl
 </Style>
 
 <!--Initialize outline setting with outline style and outline interval-->
-<syncfusion:SfDiagram x:Name="diagram" Constraints="Virtualize|Outline" >
+<syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Virtualize,Outline" >
     <syncfusion:SfDiagram.OutlineSettings>
         <syncfusion:OutlineSettings OutlineStyle="{StaticResource outlineStyle}">
             <syncfusion:OutlineSettings.RenderInterval>
