@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Syncfusion DoubleTextBox control for WPF
-description: Dealing with DoubleTextBox
+description: Dealing with DoubleTextBox represents the customization of Binding, Keyboard and Mouse support, Scrolling support and Read only mode.
 platform: wpf
 control: DoubleTextBox
 documentation: ug

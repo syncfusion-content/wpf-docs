@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Culture and NumberFormat | DoubleTextBox | WPF | Syncfusion
-description: Culture and NumberFormat related features
+description: Culture and NumberFormats represents the customization of various Cultures and NumberFormats of the DoubleTextBox
 platform: wpf
 control: DoubleTextBox
 documentation: ug
@@ -35,7 +35,7 @@ doubleTextBox.Culture = new CultureInfo("en-US");
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 150
 doubleTextBox.Height = 25
 doubleTextBox.Value = 1234567

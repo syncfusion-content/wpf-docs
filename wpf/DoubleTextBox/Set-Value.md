@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set the Value | DoubleTextBox | WPF | Syncfusion
-description: DoubleTextBox set value
+description: DoubleTextBox set value represents various value setting like Minimum and Maximum value, Null value and value validation modes in the DoubleTextBox.
 platform: wpf
 control: DoubleTextBox
 documentation: ug

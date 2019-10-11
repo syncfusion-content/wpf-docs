@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Style | DoubleTextBox | WPF | Syncfusion
-description: Appearance and styling
+description: Appearance and styling represents the customization of the Foreground, WatermarkText, CornerRadius, RangeAdoner and VisualStyle supports.
 platform: wpf
 control: DoubleTextBox
 documentation: ug
@@ -78,7 +78,7 @@ doubleTextBox.ApplyNegativeForeground = true;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.Value = -10
@@ -115,7 +115,7 @@ doubleTextBox.NegativeForeground = Brushes.DarkOrange;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.Value = -10
@@ -158,7 +158,7 @@ doubleTextBox.WatermarkTextForeground = Brushes.Red;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.UseNullOption = True
@@ -206,7 +206,7 @@ doubleTextBox.EnableRangeAdorner = true;
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.Value = 50
@@ -386,7 +386,7 @@ To rounded the corners of the DoubleTexBox, set the property [CornerRadius](http
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.CornerRadius = new CornerRadius(5);  
@@ -395,7 +395,7 @@ doubleTextBox.CornerRadius = new CornerRadius(5);
 
 {% highlight VB %}
 
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.CornerRadius = New CornerRadius(5)
