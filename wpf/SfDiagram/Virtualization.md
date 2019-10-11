@@ -60,7 +60,7 @@ N> In SfDiagram, we named Deferred Scrolling support as `Outline`. Outline is on
 Options are provided to override the appearance, style and interval time of outline by using the [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) class of diagram.
 
 * `OutlineStyle`: Specifies the style of the outline of the diagram elements
-* `RenderInterval`: Sepcifies the time interval to render the diagram elements into view. Default time interval is 200ms.
+* `RenderInterval`: Specifies the time interval to render the diagram elements into view. Default time interval is 200ms.
 
 {% tabs %}
 {% highlight xaml %}
