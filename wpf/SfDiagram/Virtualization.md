@@ -105,3 +105,13 @@ diagram.OutlineSettings = new OutlineSettings()
 {% endtabs %}
 
 ![Custom Outline](Virtualization_images/CustomOutline.gif)
+
+{% seealso %}
+
+[How to serialize the diagram control](/wpf/sfdiagram/serialization)
+
+[How to localize the diagram control](/wpf/sfdiagram/localization)
+
+[How to have overview for diagram control](/wpf/sfdiagram/overview-control)
+
+{% endseealso %}
