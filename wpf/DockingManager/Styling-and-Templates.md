@@ -743,7 +743,7 @@ A common header style for all dock window can be customized using the property `
 
 ### HeaderStyle
 
-Header of individual dock child can be customized through the `HeaderStyle` property of DockingManager. The customized style will apply to dock, auto hidden and tabbed windows. The following code illustrate the dock windows with customized header style,
+Header of individual dock child can be customized through the [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SetHeaderStyle.html) property of DockingManager. The customized style will apply to dock, auto hidden and tabbed windows. The following code illustrate the dock windows with customized header style,
 
 {% tabs %}
 
@@ -796,6 +796,9 @@ Header of individual dock child can be customized through the `HeaderStyle` prop
 {% endtabs %}
 
 ![Child windows with customized header](StylingandTemplates_images/Dock-Window-Header-Style.jpg)
+
+Refer to this [`sample`](https://github.com/SyncfusionExamples/How-to-set-HeaderStyle-for-individual-dockchild) to know how the header of the dock windows are customized through style of the Header.
+
 
 ### DockWindowContextMenuItemStyle
 
