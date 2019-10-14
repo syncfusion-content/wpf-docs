@@ -56,7 +56,7 @@ To add the control manually in XAML page, follow the given steps:
 </Window>
 {% endhighlight %}
 
-## Add control manually in C#
+## Add control manually in C&#35;
 To manually attach control to C #, follow the following steps:
 
 1. Add the `Syncfusion.SfSchedule.WPF` assembly reference to the project.
@@ -82,7 +82,7 @@ Run the code above and now you can see the empty scheduler as follows, but witho
 
 ## Scheduler Views-(Day, Week, WorkWeek, TimeLine and Month)
 
-Scheduler control includes five different view styles in showing dates and can be allocated to the control using the property [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleType.html) property. By default the control is assigned with `DayView`. Initially, the latest date will be shown for all views of the calendar.
+Scheduler control includes five different view styles in showing dates and can be allocated to the control using the property [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleType.html) property. By default the control is assigned with `Day` view. Initially, the latest date will be shown for all views of the calendar.
 
 Scheduler provides 5 different types of views which has mentioned below, 
 
@@ -93,7 +93,7 @@ Scheduler provides 5 different types of views which has mentioned below,
 * TimeLine
 
 ## Day View
-`DayView` is used to view a single day, and by default the current day is shown. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
+`Day` view is used to view a single day, and by default the current day is shown. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
 
 {% tabs %}
 {% highlight xaml %}
@@ -109,7 +109,7 @@ schedule.ScheduleType = ScheduleType.Day;
 ![Day-View](Getting-Started_images/Basic-View_img1.png)
 
 ## Week View
-`WeekView` is to view all week days of a particular week. Appointments will be scheduled in the corresponding timeslots on the basis of the week dates.
+`Week` view is to view all week days of a particular week. Appointments will be scheduled in the corresponding timeslots on the basis of the week dates.
 
 {% tabs %}
 {% highlight xaml %}
@@ -123,7 +123,7 @@ this.schedule.ScheduleType = ScheduleType.Week;
 ![Week-view](Getting-Started_images/Basic-View_img2.png)
 
 ## Work Week View
-`WorkWeekView` is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. With any days of a week, you can customize it. Appointments scheduled in timeslots with the corresponding day of the week depending on their duration.
+`WorkWeek` view is to view only working days of a particular week. By default, `Saturday` and `Sunday` are the non-working days. With any days of a week, you can customize it. Appointments scheduled in timeslots with the corresponding day of the week depending on their duration.
 
 {% tabs %}
 {% highlight xaml %}
@@ -136,7 +136,7 @@ this.schedule.ScheduleType = ScheduleType.WorkWeek;
 ![WorkWeek-view](Getting-Started_images/Basic-View_img3.png)
 
 ## Month View
-In scheduler, `MonthView` is to view the entire dates of a given month. It is possible to place appointments in the specified date.
+In scheduler, `Month` view is to view the entire dates of a given month. It is possible to place appointments in the specified date.
 
 {% tabs %}
 {% highlight xaml %}
@@ -149,7 +149,7 @@ this.schedule.ScheduleType = ScheduleType.Month;
 ![Month-view](Getting-Started_images/Basic-View_img4.png)
 
 ## TimeLine View
-`TimelineView` displays the dates with the appropriate day count in the horizontal time axis. When moving right or left, you can see the past or future events. With an intuitive drag-and-drop feature, each view shows events accurately through time slots.
+`Timeline` view displays the dates with the appropriate day count in the horizontal time axis. When moving right or left, you can see the past or future events. With an intuitive drag-and-drop feature, each view shows events accurately through time slots.
 
 {% tabs %}
 {% highlight xaml %}
@@ -193,7 +193,7 @@ The entire source code of this example can be downloaded from [ScheduleAppointme
 ### Adding Custom Appointments
 You can also map custom appointments data to our scheduler.
 
-Here steps to render `MeetingScheduler` using scheduler control with respective custom data properties created in a class Meeting.
+Here steps to render meetings using scheduler control with respective custom data properties created in a class `Meeting`.
 
 * Creating custom class for appointments
 * Creating view model
@@ -220,7 +220,7 @@ public class Meeting
 }
 {% endhighlight %}
 
-N> You can inherit this class from INotifyPropertyChanged for dynamic changes in custom data.
+N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
 #### Creating view model
 By setting `From` and `To` of `Meeting` class, you can schedule meetings for a specific day. You can also change the subject and color of appointment using `EventName` and `Color` property. You may define the list of custom appointments in a separate class of `ViewModel`.
@@ -363,12 +363,12 @@ schedule.AppointmentMapping = dataMapping;
 {% endtabs %}
 
 #### Setting data source for Scheduler
-Create meetings of type `ObservableCollection<Meeting>` and assign those appointments collection `Meetings` to the `DataSource` property of Scheduler.
+Create meetings of type `ObservableCollection<Meeting>` and assign those appointments collection `Meetings` to the `ItemsSource` property of Scheduler.
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfSchedule x:Name="schedule"
-	DataSource = "{Binding Meetings}"
+	ItemsSource = "{Binding Meetings}"
 	ScheduleType = "Month" >
 	<syncfusion:SfSchedule.DataContext>
 		<local:ViewModel/>
