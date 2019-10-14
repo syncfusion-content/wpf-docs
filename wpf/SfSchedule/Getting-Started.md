@@ -17,10 +17,10 @@ Further information on installing the NuGet package can be found in the followin
 
 You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
 
-The following steps can be used to construct a WPF application with SfSchedule control:
+The following steps can be used to construct a WPF application with scheduler control:
 
 ## Create a project
-In Visual Studio, create a new WPF project to show the features of the `SfSchedule` control and add the following namespace to the added assemblies.
+In Visual Studio, create a new WPF project to show the features of the scheduler control and add the following namespace to the added assemblies.
 
 Assembly: Syncfusion.SfSchedule.WPF
 
@@ -32,7 +32,7 @@ To add the control manually in XAML page, follow the given steps:
 
 1. Add the `Syncfusion.SfSchedule.WPF` assembly reference to the project.
 2. Import WPF schema http://schemas.syncfusion.com/wpf in the XAML page.
-3. Declare the SfSchedule control in XAML page.
+3. Declare the `SfSchedule` control in XAML page.
 
 {% highlight xaml %}
 <Window x:Class="SfScheduleSample.MainWindow"   
@@ -82,7 +82,7 @@ Run the code above and now you can see the empty scheduler as follows, but witho
 
 ## Scheduler Views-(Day, Week, WorkWeek, TimeLine and Month)
 
-`SfSchedule` control includes five different view styles in showing dates and can be allocated to the control using the property [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleType.html) property. By default the control is assigned with `DayView`. Initially, the latest date will be shown for all views of the calendar.
+Scheduler control includes five different view styles in showing dates and can be allocated to the control using the property [ScheduleType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleType.html) property. By default the control is assigned with `DayView`. Initially, the latest date will be shown for all views of the calendar.
 
 Scheduler provides 5 different types of views which has mentioned below, 
 
@@ -162,7 +162,7 @@ this.schedule.ScheduleType = ScheduleType.TimeLine;
 
 ![TimeLine-view](Getting-Started_images/Basic-View_img5.png)
 
-## Binding data to SfSchedule control
+## Binding data to Scheduler control
 Scheduler has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to allocate the collection generated to `SfSchedule.ItemSource` property.
 
 ### Adding Appointments
@@ -193,12 +193,12 @@ The entire source code of this example can be downloaded from [ScheduleAppointme
 ### Adding Custom Appointments
 You can also map custom appointments data to our scheduler.
 
-Here steps to render `MeetingScheduler` using `SfSchedule` control with respective custom data properties created in a class Meeting.
+Here steps to render `MeetingScheduler` using scheduler control with respective custom data properties created in a class Meeting.
 
 * Creating custom class for appointments
 * Creating view model
 * Mapping custom class
-* Setting data source for SfSchedule
+* Setting data source for scheduler control.
 
 #### Creating custom class for appointments
 You can create a custom class `Meeting` with mandatory fields “From”, “To” and “EventName”.
