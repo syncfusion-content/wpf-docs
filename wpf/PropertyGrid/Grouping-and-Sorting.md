@@ -215,6 +215,7 @@ Here the property `DOB` and `Gender` has same order but the property `Gender` pr
 
 ![Properties are arranged based on custom order](Grouping-and-sorting Images\Custom-Order.png)  
 
+Refer to this [`sample`](https://github.com/SyncfusionExamples/sorting-the-property-items-of-wpf-propertygrid) to know how the property items are ordered based on SortDirection property.
 
 ### Properties
 
