@@ -109,7 +109,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the thickness of the line annotation?
+### How to set the thickness of the line annotation?
 
 The thickness of the line annotation can be customized at the time of inclusion itself. The following code shows how to set the default thickness of the included line annotation in code behind.
 
@@ -361,7 +361,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-## How to set the author and subject of the rectangle annotation?
+### How to set the author and subject of the rectangle annotation?
 
 The author and subject fields of the rectangle annotation can be added for the rectangle annotation to be added to the PDF document. The following code shows how to set default Author and subject of the included rectangle annotation in code behind.
 
