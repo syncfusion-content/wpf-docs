@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Attributes support in Syncfusion WPF PropertyGrid
-description: This section explains how to control PropertyGrid features using different attributes supported by it.
+title: DisplayName support of PropertyItems in Syncfusion WPF PropertyGrid
+description: This section explains how the display name of the property item has been customized through attributes.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
@@ -85,3 +85,5 @@ Based on the name specified in the [Name](https://docs.microsoft.com/en-us/dotne
 {% endtabs %} 
 
 ![Name specified in the Display attribute is displayed as Name of the property](Attribute-Images\DisplayName-Attribute.png)
+
+Refer to this [`sample`](https://github.com/SyncfusionExamples/How-to-set-desired-name-to-the-property-items-of-WPF-PropertyGrid-through-attributes) to know how the display name of the property item has been customized through attributes.

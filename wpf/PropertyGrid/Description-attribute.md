@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Attributes support in Syncfusion WPF PropertyGrid
-description: This section explains how to control PropertyGrid features using different attributes supported by it.
+title: Description support of PropertyItems in Syncfusion WPF PropertyGrid
+description: This section explains how the description about the property item has been added through attributes.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Description of PropertyItem
 
-Description about the property will be displayed in the Description panel. Visibility of panel can be handled by the `DescriptionPanelVisibility` property of PropertyGrid. By default it is false. User should enable this property to display the description of the property. Height of the description panel can be handled by `DescriptionPanelHeight` property.
+Description about the property will be displayed in the Description panel. Visibility of panel can be handled by the [DescriptionPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelVisibility.html) property of PropertyGrid. By default it is false. User should enable this property to display the description of the property. Height of the description panel can be handled by [DescriptionPanelHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelHeight.html) property.
 
 ## Description Attribute
 
@@ -72,3 +72,5 @@ Description about the property has been specified in the [Description](https://d
 
 
 ![Description specified in the Description attribute is displayed in Description panel](Attribute-Images\Description-Attribute.png)
+
+Refer to this [`sample`](https://github.com/SyncfusionExamples/How-to-set-description-to-the-property-items-of-WPF-PropertyGrid-through-attributes) to know how the description about the property item has been added through attributes.

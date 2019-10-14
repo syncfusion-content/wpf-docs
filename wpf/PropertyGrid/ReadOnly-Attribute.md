@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Attributes support in Syncfusion WPF PropertyGrid
-description: This section explains how to control PropertyGrid features using different attributes supported by it.
+title: ReadyOnly, Editable attributes support in Syncfusion WPF PropertyGrid
+description: This section explains how to make the property item readonly using attributes supported by PropertyGrid.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

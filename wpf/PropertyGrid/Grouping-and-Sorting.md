@@ -9,11 +9,11 @@ documentation: ug
 
 # Grouping and Sorting
 
-This section explains about how the property items can be grouped or sorted in PropertyGrid. Property items will be sorted based on the `SortDirection` property of PropertyGrid.
+This section explains about how the property items can be grouped or sorted in PropertyGrid. Property items will be sorted based on the [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property of PropertyGrid.
 
 ## Grouping items based on attribute
 
-`EnableGrouping` property decides whether the items of property grid can be grouped or sorted. If the SortButton is clicked, the property EnableGrouping will be false and it will be true when GroupButton is clicked. If the property is true, propertyGrid groups the property items based on Category Attribute and Display Attribute's GroupName field of the property. 
+[EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property decides whether the items of property grid can be grouped or sorted. If the SortButton is clicked, the property EnableGrouping will be false and it will be true when GroupButton is clicked. If the property is true, propertyGrid groups the property items based on Category Attribute and Display Attribute's GroupName field of the property. 
 
 ### Category Attribute
 
@@ -96,6 +96,8 @@ Property items will be grouped based on the name specified in the [GroupName](ht
 Here, the `ID` and `DOB` is grouped based on the value specified in GroupName field.
 
 ![Properties are grouped based on the value specified in the Display attribute](Grouping-and-sorting Images\Category-Attribute.png)   
+
+Refer to this [`sample`](https://github.com/SyncfusionExamples/Filtering-the-property-items-of-PropertyGrid-through-attributes) to know how the property items are Categorized through attributes.
 
 ## Grouping and sorting through SortDirection
 
@@ -251,7 +253,7 @@ Nullable ListSortDirection</td><td>
 
 ## Toggling Category group
 
-Category can be collapsed or expanded by clicking the expander which is near to category name. Or using [CollapseCategory]() and [ExpandCategory]() methods, category groups can be collapsed or expanded programmatically. These methods will accept category name as argument.
+Category can be collapsed or expanded by clicking the expander which is near to category name. Or using [CollapseCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CollapseCategory.html) and [ExpandCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ExpandCategory.html) methods, category groups can be collapsed or expanded programmatically. These methods will accept category name as argument.
 
 {% tabs %}
 

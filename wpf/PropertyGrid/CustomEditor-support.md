@@ -258,3 +258,5 @@ public class ImageViewer : ITypeEditor
 ![Property grid with specified custom attribute](CustomEditor-support_images/Editor-Attribute.png)
 
 `ImageViewer` editor will be applied to `Image` property even if the name of the property is mentioned in EditorAttribute instead of its type. 
+
+Refer to this [`sample`](https://github.com/SyncfusionExamples/How-to-set-custom-editor-for-properties-through-EditorAttribute-in-WPF-PropertyGrid) to know how the custom editor has been set to the class.
