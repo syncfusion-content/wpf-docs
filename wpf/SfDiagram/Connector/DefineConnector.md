@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion diagram supports to connect two points, nodes or ports.
-description: What are the diagram connector types and How to draw a connector to connect two points, two nodes, or ports or using any other resources
+description: What are the diagram connector types and How to draw a connection using two points, nodes, ports, Data source, stencil and drawing connectors using Tools.
 platform: wpf
 control: SfDiagram
 documentation: ug

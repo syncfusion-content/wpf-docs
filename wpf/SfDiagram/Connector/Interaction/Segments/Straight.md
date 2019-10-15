@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Straight segments of connectors | Syncfusion
-description: What are the segments types and  How to draw , select and edit the straight segments of connectors in diagrma control
+description: What are the segment types and how to draw, select, and edit the straight segments of connectors in the diagram control.
 platform: wpf
 control: SfDiagram
 documentation: ug

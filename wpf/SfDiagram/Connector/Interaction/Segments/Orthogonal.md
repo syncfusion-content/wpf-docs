@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector Selection and Dragging | Syncfusion
-description: How to select and drag the orthogonal connector using the constraints of connectors in the diagram control of syncfusion
+title: Orthogonal segment connectors | Syncfusion
+description: How to create the orthogonal segments and how to edit and customize the Orthogonal segments.
 platform: wpf
 control: SfDiagram
 documentation: ug
