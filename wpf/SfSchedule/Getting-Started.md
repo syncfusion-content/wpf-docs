@@ -381,4 +381,4 @@ schedule.ItemsSource = viewModel.Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-The entire source code of this example can be downloaded from github: [ScheduleGettingStarted](https://github.com/SyncfusionExamples/wpf-scheduler-binding-appointments) for WPF
+The entire source code of this example can be downloaded from github: [Scheduler Binding Appointments](https://github.com/SyncfusionExamples/wpf-scheduler-binding-appointments) for WPF

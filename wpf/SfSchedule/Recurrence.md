@@ -338,5 +338,5 @@ this.schedule.ItemsSource = Meetings;
 
 ![wpf-scheduler-recurrence-exceptiondate](Recurrence_images/Recurrence-with-RecursiveExceptionDate.jpg)
 
-You can download the entire source code of this demo from github: [Custom recurrence exception Dates](https://github.com/SyncfusionExamples/RecurreceExceptionDate_Demo).
+You can download the entire source code of this demo from github: [Custom recurrence exception dates](https://github.com/SyncfusionExamples/RecurreceExceptionDate_Demo).
 
