@@ -75,7 +75,7 @@ Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-![Reminder-Window](Reminder_images/Reminder_Window.jpeg)
+![wpf-scheduler-reminder-window](Reminder_images/Reminder_Window.jpeg)
 
 N>Refer the following demo sample for [Reminder](https://github.com/syncfusion/wpf-demos/tree/master/SfSchedule.WPF/Samples/ReminderAlert)
 
@@ -163,7 +163,7 @@ schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {%endtabs%}
 
-You can download the entire source code of this demo from here [ReminderDemo](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Demo/tree/master/ReminderDemo)
+You can download the entire source code of this demo from github: [ReminderDemo](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Demo/tree/master/ReminderDemo)
 
 ## Handling Reminder events
 
@@ -203,4 +203,4 @@ private void Schedule_ReminderOpening(object sender, ReminderControlOpeningEvent
 
 **SnoozeTime** – Gets the snooze time of action changed appointments.
 
-You can download the entire source code of this demo from here [ReminderEvents](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Events/tree/master/ReminderEvents)
+You can download the entire source code of this demo from github: [ReminderEvents](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Events/tree/master/ReminderEvents)
