@@ -1,17 +1,17 @@
 ---
 layout: post
 title: DayView with WPF Scheduler | Syncfusion
-description: This section explains about how to use the reminder and handle reminder events for ScheduleAppointment in SfSchedule.
+description: This section explains about the DayView settings and that appearance customization for WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
 ## DayView
-DayView is used to view a single day. By default, the current day will bevisible. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
+DayView is used to view a single day. By default, the current day will be visible. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
 
 ## Day Header Date Format
-The default Header date format of the Day view can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
+The default Header date format of the DayView can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ schedule.HeaderBackground = Brushes.LightSkyBlue;
 ![WPF scheduler dayview header background](dayview/dayview-header-background.png)
 
 ## Change Time Interval
-By setting schedulars's [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeInterval.html) property, you can configure the timeslots interval for day view.
+By setting schedulers [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeInterval.html) property, you can configure the timeslots interval for day view.
 
 
 {% tabs %}
@@ -65,7 +65,7 @@ schedule.TimeInterval = TimeInterval.OneHour;
 ![WPF scheduler dayview timeinterval](dayview/dayview-time-interval.png)
 
 ## Change Time Interval Height
-By setting schedulars's [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property, you can configure the timeslots interval for day view.
+By setting schedulers [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property, you can configure the timeslots interval for day view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -168,7 +168,7 @@ schedule.ScheduleType = ScheduleType.Day;
 schedule.MajorTickLabelStroke = Brushes.DarkRed;
 schedule.MinorTickLabelStroke = Brushes.Red;
 {% endhighlight %}
-{% endtabs %
+{% endtabs %}
 
 ![WPF scheduler dayview time label foreground changes](dayview/dayview-time-label-foreground.png)
 
