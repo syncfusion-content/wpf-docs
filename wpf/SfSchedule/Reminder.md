@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reminder in SfSchedule | Syncfusion
-description: This section explains about how to use the reminder and handle reminder events for ScheduleAppointment in SfSchedule.
+title: Working with Reminder in WPF Scheduler | Syncfusion
+description: This section explains about how to use the reminder and handle reminder events for ScheduleAppointment in WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -75,7 +75,7 @@ Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-![Reminder-Window](Reminder_images/Reminder_img1.jpeg)
+![WPF scheduler reminder window](Reminder/Reminder-Window.jpeg)
 
 N>Refer the following demo sample for [Reminder](https://github.com/syncfusion/wpf-demos/tree/master/SfSchedule.WPF/Samples/ReminderAlert)
 
@@ -163,7 +163,7 @@ schedule.AppointmentMapping = dataMapping;
 {% endhighlight %}
 {%endtabs%}
 
-You can download the entire source code of this demo from here [ReminderDemo](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Demo/tree/master/ReminderDemo)
+You can download the entire source code of this demo from github: [ReminderDemo](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Demo/tree/master/ReminderDemo)
 
 ## Handling Reminder events
 
@@ -203,4 +203,4 @@ private void Schedule_ReminderOpening(object sender, ReminderControlOpeningEvent
 
 **SnoozeTime** – Gets the snooze time of action changed appointments.
 
-You can download the entire source code of this demo from here [ReminderEvents](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Events/tree/master/ReminderEvents)
+You can download the entire source code of this demo from github: [ReminderEvents](https://github.com/SyncfusionExamples/SfSchedule_Reminder_Events/tree/master/ReminderEvents)
