@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with SfSchedule | Syncfusion
+title: Getting Started with Scheduler | Syncfusion
 description: This section explains how to integrate WPF Scheduler into an application and enable its basic features with example.
 platform: wpf
 control: SfSchedule
@@ -106,7 +106,7 @@ schedule.ScheduleType = ScheduleType.Day;
 {% endhighlight %}
 {% endtabs %}
 
-![Day-View](Getting-Started_images/Basic-View_img1.png)
+![Day-View](Getting-Started_images/Month-View.png)
 
 ## Week View
 `Week` view is to view all week days of a particular week. Appointments will be scheduled in the corresponding timeslots on the basis of the week dates.
@@ -120,7 +120,7 @@ this.schedule.ScheduleType = ScheduleType.Week;
 {% endhighlight %}
 {% endtabs %}
 
-![Week-view](Getting-Started_images/Basic-View_img2.png)
+![Week-view](Getting-Started_images/Week-View.png)
 
 ## Work Week View
 `WorkWeek` view is to view only working days of a particular week. By default, `Saturday` and `Sunday` are the non-working days. With any days of a week, you can customize it. Appointments scheduled in timeslots with the corresponding day of the week depending on their duration.
@@ -133,7 +133,7 @@ this.schedule.ScheduleType = ScheduleType.Week;
 this.schedule.ScheduleType = ScheduleType.WorkWeek;
 {% endhighlight %}
 {% endtabs %}
-![WorkWeek-view](Getting-Started_images/Basic-View_img3.png)
+![WorkWeek-view](Getting-Started_images/WorkWeek-View.png)
 
 ## Month View
 In scheduler, `Month` view is to view the entire dates of a given month. It is possible to place appointments in the specified date.
@@ -146,7 +146,7 @@ In scheduler, `Month` view is to view the entire dates of a given month. It is p
 this.schedule.ScheduleType = ScheduleType.Month;
 {% endhighlight %}
 {% endtabs %}
-![Month-view](Getting-Started_images/Basic-View_img4.png)
+![Month-view](Getting-Started_images/Month-View_img4.png)
 
 ## TimeLine View
 `Timeline` view displays the dates with the appropriate day count in the horizontal time axis. When moving right or left, you can see the past or future events. With an intuitive drag-and-drop feature, each view shows events accurately through time slots.
@@ -160,7 +160,7 @@ this.schedule.ScheduleType = ScheduleType.TimeLine;
 {% endhighlight %}
 {% endtabs %}
 
-![TimeLine-view](Getting-Started_images/Basic-View_img5.png)
+![TimeLine-view](Getting-Started_images/Timeline-View.png)
 
 ## Binding data to Scheduler control
 Scheduler has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to allocate the collection generated to `SfSchedule.ItemSource` property.
@@ -188,7 +188,7 @@ schedule.Appointments = appointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-The entire source code of this example can be downloaded from [ScheduleAppointment](https://github.com/SyncfusionExamples/wpf-scheduler-getting-started) for WPF
+The entire source code of this example can be downloaded from github: [ScheduleAppointment](https://github.com/SyncfusionExamples/wpf-scheduler-getting-started) for WPF
 
 ### Adding Custom Appointments
 You can also map custom appointments data to our scheduler.
@@ -381,4 +381,4 @@ schedule.ItemsSource = viewModel.Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-The entire source code of this example can be downloaded from [ScheduleGettingStarted](https://github.com/SyncfusionExamples/wpf-scheduler-binding-appointments) for WPF
+The entire source code of this example can be downloaded from github: [ScheduleGettingStarted](https://github.com/SyncfusionExamples/wpf-scheduler-binding-appointments) for WPF

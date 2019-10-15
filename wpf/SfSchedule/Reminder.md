@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reminder in SfSchedule | Syncfusion
+title: Working with Reminder in WPF Scheduler | Syncfusion
 description: This section explains about how to use the reminder and handle reminder events for ScheduleAppointment in SfSchedule.
 platform: wpf
 control: SfSchedule
@@ -75,7 +75,7 @@ Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-![Reminder-Window](Reminder_images/Reminder_img1.jpeg)
+![Reminder-Window](Reminder_images/Reminder_Window.jpeg)
 
 N>Refer the following demo sample for [Reminder](https://github.com/syncfusion/wpf-demos/tree/master/SfSchedule.WPF/Samples/ReminderAlert)
 
