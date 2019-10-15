@@ -81,7 +81,7 @@ public class DoubleExt : List<double>
 
 ## Changing the snapping angle
 
-Diagram allows to roate the node with specific snapping interval. Node will be roated only when specified rotating angle meets the rotation agle of the node. This will be achieved using 'SnapAngle' property and setting `SnapConstraints` property value as Rotation. Default snap angle value is 5d.
+Diagram allows the diagram object to rotate at specific angle intervals while rotating. This will be achieved using 'SnapAngle' property and setting `SnapConstraints` property value as Rotation. Default snap angle value is 5d.
 
 {% tabs %}
 {% highlight xaml %}
