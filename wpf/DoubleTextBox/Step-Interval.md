@@ -9,7 +9,6 @@ documentation: ug
 
 # Step Interval
 
-
 ## Change Value on Up, Down arrow key
 
 Up or down key arrows allows to spin the values of DoubleTextBox one step up or down. Up or down key arrows allows the DoubleTextBox spin the values one step up or down. This spin behavior in the DoubleTextBox, can be restricted by setting the [IsScrollingOnCircle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~IsScrollingOnCircle.html) property to `false`. By default, its value is `true`.

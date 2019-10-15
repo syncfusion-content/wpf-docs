@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Culture and NumberFormat | DoubleTextBox | WPF | Syncfusion
+title: Culture and Formatting | DoubleTextBox | WPF | Syncfusion
 description: Culture and Formatting represents the customization of various Cultures and NumberFormats of the DoubleTextBox
 platform: wpf
 control: DoubleTextBox

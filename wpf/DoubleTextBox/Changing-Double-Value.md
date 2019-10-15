@@ -111,7 +111,7 @@ doubleTextBox.NullValue = 10
 
 ## Watermark
 
-## WaterMarkForeground
+### WaterMarkForeground
 
 The DoubleTextBox allows to set the desired brush as the foreground for the WaterMarkText using [WaterMarkTextForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextForeground.html).
 
@@ -163,8 +163,6 @@ You can customize the Visual appearance of the WatermarkText by using the [Water
 
 
 {% highlight xaml %}
-
-
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"
 

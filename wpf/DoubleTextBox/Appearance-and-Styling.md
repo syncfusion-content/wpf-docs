@@ -20,7 +20,7 @@ DoubleTextBox allows to apply the different brush for the positive values using 
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="10" Width="100" Height="25"
-                          PositiveForeground="DeepPink"/>
+                          PositiveForeground="DeepPink" EnableFocusColors ="True"/>
 
 {% endhighlight %}
 
@@ -30,6 +30,7 @@ DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 10;
+doubleTextBox.EnableFocusColors = true;
 doubleTextBox.PositiveForeground = Brushes.DeepPink;
 
 {% endhighlight %}
@@ -40,6 +41,8 @@ Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox()
 doubleTextBox.Width = 100
 doubleTextBox.Height = 25
 doubleTextBox.Value = 10
+doubleTextBox.EnableFocusColors = true
+
 doubleTextBox.PositiveForeground = Brushes.DeepPink
 
 {% endhighlight %}

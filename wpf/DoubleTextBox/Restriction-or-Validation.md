@@ -57,27 +57,29 @@ textBox.MinValue = -999.99
 
 {% endtabs %}
 
-## MinValidation
+![Min Max value](Restriction-or-Validation_images/Restriction-or-Validation_MinMaxValue.jpeg)
+
+### MinValidation
 
 MinValue can be validate in two ways.
 
 * OnKeyPress – MinValue of the DoubleTextBox is validated on the key press.
 * OnLostFocus – MinValue of the DoubleTextBox is validated on the lost focus only.
 
-## MaxValidation
+### MaxValidation
 
 The MaxValue can validate in two ways:
 
 * OnKeyPress – [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) of the DoubleTextBox is validated on the key press.
 * OnLostFocus – [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) of the DoubleTextBox is validated on the lost focus only.
 
-## MinValueOnExceedMinDigit
+### MinValueOnExceedMinDigit
 
 If [MinValueOnExceedMinDigit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MinValueOnExceedMinDigit.html) property is set to `true`, a value less than the MinValue entered, then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
 
 N> This will be enabled only when the MinValidation is set to OnKeyPress.
 
-## MaxValueOnExceedMaxDigit
+### MaxValueOnExceedMaxDigit
 
 If `MaxValueOnExceedMaxDigit` property is set to `true`, then a value greater than the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) is entered, it will automatically assign the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) to the Value property. Otherwise it will not allow the key press.
 

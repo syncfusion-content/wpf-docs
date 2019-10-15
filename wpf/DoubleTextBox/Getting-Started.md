@@ -251,7 +251,5 @@ doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-
-
 ![doubleTextBox culture](Getting-Started_images/Getting-Started_img4.png)
 

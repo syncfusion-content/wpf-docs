@@ -35,7 +35,7 @@ The [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncf
 
 ![Range adorner background](Range-Adorner_images/Range-Adorner_img2.png)
 
-### Adding range adorner background 
+### Adding Range Adorner background 
 
 The [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~RangeAdornerBackground.html) property must be set either in XAML or the code file.
 
