@@ -146,7 +146,7 @@ In scheduler, `Month` view is to view the entire dates of a given month. It is p
 this.schedule.ScheduleType = ScheduleType.Month;
 {% endhighlight %}
 {% endtabs %}
-![Month-view](Getting-Started_images/Month-View_img4.png)
+![Month-view](Getting-Started_images/Month-View.png)
 
 ## TimeLine View
 `Timeline` view displays the dates with the appropriate day count in the horizontal time axis. When moving right or left, you can see the past or future events. With an intuitive drag-and-drop feature, each view shows events accurately through time slots.

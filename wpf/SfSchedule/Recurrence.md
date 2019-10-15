@@ -185,7 +185,7 @@ Meetings.Add(meeting);
 schedule.ItemsSource = Meetings;
 {% endhighlight %}
 
-![Recurrence-appointmet-for-custom-appointment](Recurrence_images/Custom-Recurrence-Appointment.jpg)
+![Recurrence-appointmet-for-custom-appointment](Recurrence_images/Custom-Recurrence-appointment.jpg)
 
 You can download the entire source code of this demo from here [Custom recurrence appointment](https://github.com/SyncfusionExamples/SfSchedule_Recurrence_Appointment/tree/master/RecurrenceAppointment).
 
