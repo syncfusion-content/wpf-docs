@@ -81,7 +81,9 @@ public class DoubleExt : List<double>
 
 ## Changing the snapping angle
 
-Diagram allows the diagram object to rotate at specific angle intervals while rotating. This will be achieved using 'SnapAngle' property and setting `SnapConstraints` property value as Rotation. Default snap angle value is 5d.
+Diagram allows the diagram object to rotate at specific angle intervals while rotating. This interval can be customized using the `SnapAngle` property of SnapSettings class. Default snap angle value is 5d.
+
+Snapping on rotating can be enabled or disabled using the `SnapConstraints` property of SnapSettings class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,7 +112,7 @@ diagram.SnapSettings = new SnapSettings()
 {% endhighlight %}
 {% endtabs %}
 
-![Snap to object](Gridlines_images/SnapAngle.gif) 
+![Snap to object](Gridlines_images/SnapANgle.gif) 
 
 {% seealso %}
 
