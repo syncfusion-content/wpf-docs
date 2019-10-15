@@ -75,7 +75,7 @@ Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-![wpf-scheduler-reminder-window](Reminder_images/Reminder_Window.jpeg)
+![wpf-scheduler-reminder-window](Reminder/Reminder-Window.jpeg)
 
 N>Refer the following demo sample for [Reminder](https://github.com/syncfusion/wpf-demos/tree/master/SfSchedule.WPF/Samples/ReminderAlert)
 
