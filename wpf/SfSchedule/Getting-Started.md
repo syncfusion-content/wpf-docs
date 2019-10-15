@@ -106,7 +106,7 @@ schedule.ScheduleType = ScheduleType.Day;
 {% endhighlight %}
 {% endtabs %}
 
-![Day-View](Getting-Started_images/Month-View.png)
+![Day-View](Getting-Started_images/Day-View.png)
 
 ## Week View
 `Week` view is to view all week days of a particular week. Appointments will be scheduled in the corresponding timeslots on the basis of the week dates.
