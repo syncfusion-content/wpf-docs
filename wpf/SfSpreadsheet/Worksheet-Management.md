@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Worksheet Management in SfSpreadsheet
-description: How to perform worksheet related operations(insert, delete, hide, etc.) in SfSpreadsheet
+title: Worksheet Management in WPF Spreadsheet | Syncfusion
+description: This document explains how to perform worksheet related operations(insert, delete, hide, etc.) in Spreadsheet
 platform: wpf
 control: SfSpreadsheet
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 # Worksheet Management
 This section explains about the operations that are performed with the worksheet.
 
-## Insert and Delete
+## Insert and Delete worksheet
 
 SfSpreadsheet provides support to insert and delete the worksheets in a workbook.
 
@@ -27,7 +27,7 @@ spreadsheet.RemoveSheet("Sheet2");
 {% endhighlight %}
 {% endtabs %}
 
-## Hide and Unhide
+## Hide and Unhide worksheets
 
 SfSpreadsheet provides support to hide and unhide the worksheets in a workbook.
 
@@ -38,6 +38,26 @@ spreadsheet.HideSheet("Sheet 2");
 
 //Unhide Sheet
 spreadsheet.UnhideSheet("Sheet 2");
+{% endhighlight %}
+{% endtabs %}
+
+## Hide or unhide sheet tabs
+
+Spreadsheet provides support to hide and unhide the all worksheet tabs in the workbook using the [ShowSheetTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~ShowSheetTabs.html) property. The Default value is `true`.
+
+{% tabs %}
+{% highlight c# %}
+
+private void SpreadsheetControl_Loaded(object sender, RoutedEventArgs e)
+{
+    spreadsheetControl.ShowSheetTabs = false;
+}
+
+{% endhighlight %}
+{% highlight XAML %}
+
+<syncfusion:SfSpreadsheet x:Name="spreadsheetControl" ShowSheetTabs ="False" />
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,7 +72,7 @@ spreadsheet.RenameSheet("Sheet1");
 {% endhighlight %}
 {% endtabs %}
 
-### Rename a sheet programmatically
+### Rename a worksheet programmatically
 
 SfSpreadsheet provides support to rename a worksheet in the workbook programmatically by using [RenameSheet](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~RenameSheet(String,String).html) method.
 
@@ -64,7 +84,7 @@ spreadsheet.RenameSheet("ExistingSheetName", "NewSheetName");
 {% endtabs %}
 
 
-## Protection
+## Worksheet Protection
 
 ### Protecting a worksheet
 
