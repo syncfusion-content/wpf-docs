@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set the Value | DoubleTextBox | WPF | Syncfusion
-description: DoubleTextBox set value represents various value setting like Minimum and Maximum value, Null value and value validation modes in the DoubleTextBox.
+description: Learn how to set the values in DoubleTextBox control for WPF
 platform: wpf
 control: DoubleTextBox
 documentation: ug
@@ -31,6 +31,7 @@ DoubleTextBox textBox = new DoubleTextBox();
 textBox.Width = 100;
 textBox.Height = 23;
 textBox.Value = 100;
+Grid1.Children.Add(textBox);
 
 {% endhighlight %}
 
@@ -40,6 +41,7 @@ Dim textBox As DoubleTextBox =  New DoubleTextBox()
 textBox.Width = 100
 textBox.Height = 23
 textBox.Value = 100
+Grid1.Children.Add(textBox)
 
 {% endhighlight %}
 
@@ -61,10 +63,11 @@ DoubleTextBox accepts null values. To enable the null option, the [UseNullOption
 
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new DoubleTextBox();
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.Width = 170;
 doubleTextBox.Height = 25;
 doubleTextBox.UseNullOption = true;
+Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -74,6 +77,7 @@ Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.W
 doubleTextBox.Width = 170
 doubleTextBox.Height = 25
 doubleTextBox.UseNullOption = True
+Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -96,10 +100,11 @@ To set the value, when the value of the DoubleTextBox is null the [NullValue](ht
 
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new DoubleTextBox();
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.NullValue = 10;
+Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -109,6 +114,7 @@ Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.W
 doubleTextBox.Width = 150
 doubleTextBox.Height = 25
 doubleTextBox.NullValue = 10
+Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -134,7 +140,7 @@ The Minimum and Maximum value can be changed by using the [MinValue](https://hel
 
 <syncfusion:DoubleTextBox x:Name="DoubleTextBox1"
                           Width="100" Height="23" Value="100"
-                          MaxValue="999.99" MinValue="-999.99"/>
+						  MaxValue="999.99" MinValue="-999.99"/>
 
 {% endhighlight %}
 
@@ -146,6 +152,7 @@ textBox.Height = 23;
 textBox.Value = 100;
 textBox.MaxValue = 999.99;
 textBox.MinValue = -999.99;
+Grid1.Children.Add(textBox);
 
 {% endhighlight %}
 
@@ -157,6 +164,7 @@ textBox.Height = 23
 textBox.Value = 100
 textBox.MaxValue = 999.99
 textBox.MinValue = -999.99
+Grid1.Children.Add(textBox)
 
 {% endhighlight %}
 
@@ -178,7 +186,7 @@ The MaxValue can validate in two ways:
 
 ## MinValueOnExceedMinDigit
 
-If [MinValueOnExceedMinDigit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MinValueOnExceedMinDigit.html) property is set to `true`, a value less than the MinValue entered, then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
+If `MinValueOnExceedMinDigit` property is set to `true`, a value less than the MinValue entered, then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
 
 N> This will be enabled only when the MinValidation is set to OnKeyPress.
 
@@ -186,7 +194,7 @@ N> This will be enabled only when the MinValidation is set to OnKeyPress.
 
 If `MaxValueOnExceedMaxDigit` property is set to `true`, then a value greater than the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) is entered, it will automatically assign the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) to the Value property. Otherwise it will not allow the key press.
 
-N> This will be enabled only when the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnKeyPress.
+N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 {% tabs %}
 
@@ -194,23 +202,24 @@ N> This will be enabled only when the [MaxValidation](https://help.syncfusion.co
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
                           Height="25" MaxValue="100" MinValue="10"
-                          MinValueOnExceedMinDigit="True" MaxValueOnExceedMaxDigit="True"
-                          MinValidation="OnKeyPress" MaxValidation="OnLostFocus"/>
+						  MinValueOnExceedMinDigit="True" MaxValueOnExceedMaxDigit="True"
+						  MinValidation="OnKeyPress" MaxValidation="OnLostFocus"/>
 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new DoubleTextBox();
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.MinValue = 10;
 doubleTextBox.MaxValue =100;
-doubleTextBox.MinValidation = MinValidation.OnKeyPress;
-doubleTextBox.MaxValidation = MaxValidation.OnLostFocus;
+doubleTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;
+doubleTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;
 doubleTextBox.MinValueOnExceedMinDigit = true;
 doubleTextBox.MaxValueOnExceedMaxDigit = true;
+Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
@@ -225,6 +234,7 @@ doubleTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress
 doubleTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus
 doubleTextBox.MinValueOnExceedMinDigit = True
 doubleTextBox.MaxValueOnExceedMaxDigit = True
+Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -235,12 +245,12 @@ Initially there is no value assigned to the DoubleTextBox. So it displays the de
 ![No value assigned to double text box](Set-Value-images/Set-Value-img4.jpeg)
 
 
-[MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnLostFocus, so the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) will be performed only in the lost focus.
+MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only in the lost focus.
 
 ![MaxValidation is set to OnLostFocus](Set-Value-images/Set-Value-img5.jpeg)
 
 
-[MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the MinValue. If try to enter a value less than the MinValue, then the MinValue will set to the Value property because MinValueOnExceedMinDigit is set to true.
+MinValidation is set to OnKeyPress, it cannot let to enter a value less than the MinValue. If try to enter a value less than the MinValue, then the MinValue will set to the Value property because MinValueOnExceedMinDigit is set to true.
 
 ![MinValidation is set to OnKeyPress](Set-Value-images/Set-Value-img6.jpeg)
 
@@ -281,8 +291,10 @@ The ValueChanged event can be handled as follows:
 {% highlight C# %}
 
 private void doubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+
 {
-    // Insert code to do some operations when the value property is changed 
+
+// Insert code to do some operations when the value property is changed 
 }
 
 {% endhighlight %}
@@ -333,8 +345,10 @@ The TextChanged event can be handled as follows
 {% highlight C# %}
 
 private void DoubleTextBox_TextChanged(object sender, TextChangedEventArgs e)
+
 {
-    // Insert code to do some operations when the Text property is changed 
+
+// Insert code to do some operations when the Text property is changed 
 }
 
 {% endhighlight %}
@@ -386,7 +400,8 @@ The CultureChanged event can be handled as follows
 
 private void DoubleTextBox_CultureChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
-    // Insert code to do some operations when the culture property is changed 
+
+// Insert code to do some operations when the culture property is changed 
 }
 
 {% endhighlight %}
@@ -440,8 +455,10 @@ To handle the MaxValueChanged event, use the following code.
 {% highlight C# %}
 
 private void DoubleTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-{ 
-    // Insert code to do some operations when the MaxValue property is changed 
+{      
+
+// Insert code to do some operations when the MaxValue property is changed 
+
 }
 
 {% endhighlight %}
@@ -493,7 +510,9 @@ To handle the MinValueChanged event, use this follow code below
 
 private void DoubleTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
-    // Insert code to do some operations when the MinValue property is changed 
+
+// Insert code to do some operations when the MinValue property is changed 
+
 }
 
 {% endhighlight %}
@@ -546,7 +565,8 @@ To handle the NumberDecimalDigitsChanged, use this follow code below.
 
 private void DoubleTextBox_NumberDecimalDigitsChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
-    // Insert code to do some operations when the NumberDecimalDigits property is changed 
+           
+// Insert code to do some operations when the NumberDecimalDigits property is changed 
 }
 
 {% endhighlight %}
@@ -600,7 +620,8 @@ To handle the SelectionChanged, the following code is used.
 
 private void DoubleTextBox_SelectionChanged(object sender, RoutedEventArgs e)
 {
-    // Insert code to do some operations when the selection changed.
+
+// Insert code to do some operations when the selection changed.
 }
 
 {% endhighlight %}

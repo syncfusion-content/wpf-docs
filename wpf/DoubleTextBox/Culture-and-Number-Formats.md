@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Culture and NumberFormat | DoubleTextBox | WPF | Syncfusion
-description: Culture and NumberFormats represents the customization of various Cultures and NumberFormats of the DoubleTextBox
+description: Culture and Formatting represents the customization of various Cultures and NumberFormats of the DoubleTextBox
 platform: wpf
 control: DoubleTextBox
 documentation: ug
 ---
 
-# Culture and Number Formats
+# Culture and Formatting
 
 ## Culture
 
@@ -47,7 +47,7 @@ doubleTextBox.Culture = New CultureInfo("en-US")
 
 ![Double text box culture](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img1.jpeg)
 
-## Number format
+## Formatting
 
 The Number Format can be customize either by using the [NumberFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties of DoubleTextBox.
 

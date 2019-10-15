@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Syncfusion DoubleTextBox control for WPF
-description: Dealing with DoubleTextBox represents the customization of Binding, Keyboard and Mouse support, Scrolling support and Read only mode.
+description: Dealing with Syncfusion DoubleTextBox control for WPF
 platform: wpf
 control: DoubleTextBox
 documentation: ug
@@ -21,7 +21,7 @@ N> [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shar
 
 <syncfusion:DoubleTextBox x:Name="DoubleTextBox1" Height="25"
                           Width="100" Value="{x:Null}" UseNullOption="True"
-                          WatermarkText="Type Here" WatermarkTextIsVisible="True"/>
+						  WatermarkText="Type Here" WatermarkTextIsVisible="True"/>
 
 {% endhighlight %}
 
@@ -34,6 +34,7 @@ DoubletextBox1.Value =null;
 DoubletextBox1.UseNullOption = true;
 DoubletextBox1.WatermarkText = "Type Here";
 DoubletextBox1.WatermarkTextIsVisible = true;
+Grid1.Children.Add(DoubletextBox1);
 
 {% endhighlight %}
 
@@ -46,6 +47,7 @@ DoubletextBox1.Value =Nothing
 DoubletextBox1.UseNullOption = True
 DoubletextBox1.WatermarkText = "Type Here"
 DoubletextBox1.WatermarkTextIsVisible = True
+Grid1.Children.Add(DoubletextBox1)
 
 {% endhighlight %}
 
@@ -89,36 +91,34 @@ To bind values other than double values, the Value Converter need to use. The fo
 
 Up or down key arrows allows to spin the values of DoubleTextBox one step up or down. Mouse Scroll in the DoubleTextBox spin the values one step up or down. This spin behavior in the DoubleTextBox, can be restricted by setting the [IsScrollingOnCircle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~IsScrollingOnCircle.html) property to `false`. By default, its value is `true`.
 
-The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to set spin value of DoubleTextBox. Based on the [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) value, DoubleTextBox spins up or down.
-
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
-                          Height="25" Value ="10" IsScrollingOnCircle="True" ScrollInterval="2"/>
+                          Height="25" Value ="10" IsScrollingOnCircle="False"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new DoubleTextBox();
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 10;
-doubleTextBox.IsScrollingOnCircle = true;
-doubleTextBox.ScrollInterval = 2;
+doubleTextBox.IsScrollingOnCircle = false;
+Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
 doubleTextBox.Width = 150
 doubleTextBox.Height = 25
 doubleTextBox.Value = 10
 doubleTextBox.IsScrollingOnCircle = False
-doubleTextBox.ScrollInterval = 2
+Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -128,31 +128,29 @@ doubleTextBox.ScrollInterval = 2
 
 If the DoubleTextBox is read-only, then no user input or edits are allowed but programmatic changes can be made. The user can still select text and the cursor still appears. 
 
-N> The Cursor in the DoubleTextBox can be displayed by setting the `IsReadOnlyCaretVisible` property to true.
-
 To enable this feature set [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) to `true`. By default its value is `false`.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" IsReadOnly="True" IsReadOnlyCaretVisible="True"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" IsReadOnly="True"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new DoubleTextBox();
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.IsReadOnly = true;
-doubleTextBox.IsReadOnlyCaretVisible = true;
+Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
 doubleTextBox.IsReadOnly = True
-doubleTextBox.IsReadOnlyCaretVisible = true
+Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -172,15 +170,17 @@ On pressing the Enter key in the DoubleTextBox, then the Focus moves to the next
 
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new DoubleTextBox();
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.EnterToMoveNext = false;
+Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
 doubleTextBox.EnterToMoveNext = False
+Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -200,27 +200,21 @@ The [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfus
 
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new DoubleTextBox();
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.TextSelectionOnFocus = true;
+Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
 doubleTextBox.TextSelectionOnFocus = True
+Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
 {% endtabs %}
-
-### False
-
-![TextSelectionOnFocus](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img6.png)
-
-### True
-
-![TextSelectionOnFocus](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img7.png)
 
 ## Extended scrolling
 
@@ -240,21 +234,23 @@ The [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Sync
 
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new DoubleTextBox();
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
 doubleTextBox.Width = 120;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 93;
 doubleTextBox.EnableExtendedScrolling = true;
+Grid1.Children.Add(doubleTextBox);
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
 doubleTextBox.Width = 120
 doubleTextBox.Height = 25
 doubleTextBox.Value = 93
 doubleTextBox.EnableExtendedScrolling = True
+Grid1.Children.Add(doubleTextBox)
 
 {% endhighlight %}
 
@@ -262,4 +258,51 @@ doubleTextBox.EnableExtendedScrolling = True
 
 ![Adding extended scrolling to an application](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img4.jpeg)
 
+## Range adorner
 
+To show the adorner range based on the minimum and maximum values, the [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property need to set to True. By Default its value is false.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"
+                          Value ="50" MaxValue="100" MinValue="10"
+						  EnableRangeAdorner="True"/>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();
+doubleTextBox.Width = 100;
+doubleTextBox.Height = 25;
+doubleTextBox.Value = 50;
+doubleTextBox.MinValue = 10;
+doubleTextBox.MaxValue = 100;
+doubleTextBox.EnableRangeAdorner = true;
+Grid1.Children.Add(doubleTextBox);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
+doubleTextBox.Width = 100
+doubleTextBox.Height = 25
+doubleTextBox.Value = 50
+doubleTextBox.MinValue = 10
+doubleTextBox.MaxValue = 100
+doubleTextBox.EnableRangeAdorner = True
+Grid1.Children.Add(doubleTextBox)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Range adorner](Dealing-with-DoubleTextBox-images/Dealing-with-DoubleTextBox-img5.jpeg)
