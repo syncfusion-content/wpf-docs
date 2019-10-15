@@ -261,7 +261,7 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 ## Working with tab close button
 
-TabControl allows end-users to close the tabs where close button can be displayed in tab control common for all tabitem's or in the header of indivitual tabitem header based on [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property.
+TabControl allows end-users to close the tabs where close button can be displayed in tab control common for all tabitem's or in the header of individual tabitem header based on [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property.
 
 If you want to enable or disable the close button, you can use [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property. If you want to hide or visible the close button, you can use [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property.
 
@@ -270,8 +270,8 @@ If you want to enable or disable the close button, you can use [TabItemExt.CanCl
 {% highlight XAML %}
 
 <syncfusion:TabControlExt Name="tabControl" CloseButtonType="Individual">
-    <syncfusion:TabItemExt Header="tabItem1" CanClose="True" />
-    <syncfusion:TabItemExt Header="tabItem2" CloseButtonState="Collapsed" />
+    <syncfusion:TabItemExt Header="tabItem1" CloseButtonState="Collapsed" />
+    <syncfusion:TabItemExt Header="tabItem2" CanClose="False" />
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
