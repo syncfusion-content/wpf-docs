@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Reminder in WPF Scheduler | Syncfusion
-description: This section explains about how to use the reminder and handle reminder events for ScheduleAppointment in SfSchedule.
+description: This section explains about how to use the reminder and handle reminder events for ScheduleAppointment in WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Recurrence Appointment in WPF Scheduler | Syncfusion
-description: This section explains about the recurrence appointment and recurrence exception date with custom binding support for SfSchedule.
+description: This section explains about the recurrence appointment and recurrence exception date with custom binding support for WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
