@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Syncfusion Ribbon control
-description: This topic deal with RibbonState and ContextTabGroup
+description: This topic dealing  with  the Syncfusion WPF Ribbon Control. Defines Ribbon state and grouping RibbonTabs using ContextTabGroups.
 platform: wpf
 control: Ribbon
 documentation: ug
