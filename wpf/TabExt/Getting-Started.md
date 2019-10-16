@@ -276,7 +276,7 @@ The following modes are supported to close the button in TabControl.
 
 * **Extended** - The close button is displays only selected tabitem and displays remaining tabitem's while mouse is hovering.
 
-For example, When you set the `TabControlExt.CloseButtonType` to `Both` mode, the close button is visible in both TabItem and TapPanel. To first tabitem, if you set `CanClose` property to `false`, both close button of tabitem and tabpanel are disabled and if you set `CloseButtonState` property to `Collapsed`, only the tabitem close button is not visible.
+For example, When you set the `TabControlExt.CloseButtonType` to `Both` mode, the close button is visible in both TabItem and TapPanel. To first tabitem, if you set `CanClose` property to `false`, both close button of TabItem and TabPanel are disabled and if you set `CloseButtonState` property to `Collapsed`, only the tabitem close button is not visible.
 
 {% tabs %}
 
