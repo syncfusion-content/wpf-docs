@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features | WPF DataGrid | Syncfusion
-description: Interactive feature of DataGrid | DataGrid | ContextMenu | Column chooser | Drag and Drop
+title: WPF DataGrid Column Chooser | Syncfusion
+description: WPF DataGrid column chooser allows end users to drag and drop columns between datagrid and column chooser UI to display or hide columns in datagrid at runtime.
 platform: wpf
 control: SfDataGrid
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Interactive Features
 
-## ColumnChooser
+## Column Chooser
 
-SfDataGrid allows you to show and hide the Columns from the view at runtime via drag and drop using ColumnChooser. You can enable a column chooser in an application by creating an instance for GridColumnChooserController and assign to SfDataGrid.GridColumnDragDropController.
+SfDataGrid allows you to show and hide the Columns from the view at runtime via drag and drop using `ColumnChooser`. You can enable a column chooser in an application by creating an instance for `GridColumnChooserController` and assign to `SfDataGrid.GridColumnDragDropController`.
 
 While dropping columns in ColumnChooser window, the particular column will be hidden by setting GridColumn.IsHidden as true.
 
@@ -40,7 +40,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 
 ![Opening column chooser in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img10.png)
 
-### Custom ColumnChooser
+### Custom Column Chooser
 
 You can create custom UI for the column chooser and you can enable this view manually like below code example. You need to maintain separate collection in ViewModel to maintain the hidden columns which will bound to custom view.
 

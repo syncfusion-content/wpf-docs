@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF DataGrid Printing | Syncfusion
-description: How to print the WPF DataGrid and customize the print settings.
+description: This article explains how to print WPF DataGrid and also covers how to covers customization of print and page settings for printing.
 platform: wpf
 control: SfDataGrid
 documentation: ug

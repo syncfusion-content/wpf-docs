@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WPF DataGrid Sorting | Sorting Column | Syncfusion
-description: How to sort the data in SfDataGrid
+title: WPF DataGrid Column Sorting | Multi-column Sorting | Syncfusion
+description: Learn more about WPF DataGrid column sorting and using advanced features like multi-column sorting, showing sort order and custom sorting.
 platform: wpf
 control: SfDataGrid
 documentation: ug
