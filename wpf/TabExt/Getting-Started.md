@@ -217,7 +217,7 @@ You can select a particular tabitem in TabControl by setting the [IsSelected](ht
 <syncfusion:TabControlExt Name="tabControl">
     <syncfusion:TabItemExt Header="tabItem1" />
     <syncfusion:TabItemExt Header="tabItem2" />
-    <syncfusion:TabItemExt Header="tabItem3" />
+    <syncfusion:TabItemExt Header="tabItem3" IsSelected="True"/>
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
