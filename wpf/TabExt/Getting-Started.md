@@ -278,22 +278,12 @@ The following options are supported to show close the button in TabControl.
 
 For example, When you set the `TabControlExt.CloseButtonType` as `Both`, then the close button is displayed in both TabItem and TapControl. 
 
-<screen shot>
-
-You can disable the users from closing on particular tabitem by setting TabItemExt.CanClose property as `false`.
-
-In the below screen shot, 2nd tab item CanClose property is false. So, close button in tabitem header and tabcontrol is in disabled state for 2nd tabitem.
-<Screen shot>
-
-if you want to collapse the visibility of close button in particular tabitem, then you can collapse the close button using TabItemExt.CloseButtonState property. 
-
-
 {% tabs %}
 
 {% highlight XAML %}
 
 <syncfusion:TabControlExt Name="tabControl" CloseButtonType="Both">
-    <syncfusion:TabItemExt Header="tabItem1" CanClose="False" CloseButtonState="Collapsed" />
+    <syncfusion:TabItemExt Header="tabItem1" />
     <syncfusion:TabItemExt Header="tabItem2" />
 </syncfusion:TabControlExt>
 
@@ -301,20 +291,70 @@ if you want to collapse the visibility of close button in particular tabitem, th
 
 {% highlight C# %}
 
-//set `Both` mode to `CloseButtonType` property.
+//set `Both` option to `CloseButtonType` property.
 tabControlExt.CloseButtonType = CloseButtonType.Both;
-
-//Collapse the close button.
-tabItemExt1.CloseButtonState = Collapsed;
-
-//Disable the close button.
-tabItemExt1.CanClose = false;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Collapse the first tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-close.png)
+![WPF TabControl and TabItem displays the close button](Getting-Started_images/wpf-tabcontrol-closebutton.png)
+
+You can disable the users from closing on particular tabitem by setting [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property as `false`.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControl" CloseButtonType="Both">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" CanClose="False" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//set `Both` option to `CloseButtonType` property.
+tabControlExt.CloseButtonType = CloseButtonType.Both;
+
+//Disable the close button.
+tabItemExt2.CanClose = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+In the below screenshot, to second tabitem `TabItemExt.CanClose` property is `false`. So, close button in tabitem header and tabcontrol is in disabled state for second tabitem.
+
+![Disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-disableclosebutton.png)
+
+If you want to collapse the visibility of close button in particular tabitem, then you can collapse the close button using [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControl" CloseButtonType="Both">
+    <syncfusion:TabItemExt Header="tabItem1" CloseButtonState="Collapsed" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//set `Both` option to `CloseButtonType` property.
+tabControlExt.CloseButtonType = CloseButtonType.Both;
+
+//Collapse the close button.
+tabItemExt1.CloseButtonState = Collapsed;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Collapse the first tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-collapse.png)
 
 ## Show or hide new tab button
 
