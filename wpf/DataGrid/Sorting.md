@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Sorting | DataGrid | WPF | Syncfusion
+title: WPF DataGrid Sorting | Sorting Column | Syncfusion
 description: How to sort the data in SfDataGrid
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-
-# Sorting
+# WPF DataGrid - Sorting
 
 SfDataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowSorting.html) property to `true`.
 
