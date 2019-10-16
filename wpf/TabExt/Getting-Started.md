@@ -264,17 +264,17 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 TabControl allows end-users to close the tabs where close button can be displayed in tab control using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property. 
 The following modes are supported to close the button in TabControl.
 
-* **Common** - The close button is displays only in TabPanel.
+* **Common** - The close button shows only in TabPanel.
 
-* **Individual** - The close button is displays only for individual tabitem.
+* **Individual** - The close button shows only for the individual tabitem.
 
-* **Both** - The close button is displays both TabPanel and individual tabitem.
+* **Both** - The close button shows both the TabPanel and individual tabitem.
 
 * **Hide** - The close button is not visible.
 
-* **IndividualOnMouseOver** - The close button is displays when the mouse over the tabitem only.
+* **IndividualOnMouseOver** - The close button shows only when the mouse is over the tabitem.
 
-* **Extended** - The close button is displays only selected tabitem and displays remaining tabitem's while mouse is hovering.
+* **Extended** - The close button shows only the selected tabitem and displays the remaining tabitem's while the mouse is hovering.
 
 For example, When you set the `TabControlExt.CloseButtonType` to `Both` mode, the close button is visible in both TabItem and TapPanel. To first tabitem, if you set `CanClose` property to `false`, both close button of TabItem and TabPanel are disabled and if you set `CloseButtonState` property to `Collapsed`, only the tabitem close button is not visible.
 
