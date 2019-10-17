@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summaries | DataGrid | WPF | Syncfusion
-description: Summaries in SfDataGrid 
+title: Summaries in WPF DataGrid control | Syncfusion
+description: Learn about Summaries support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Summaries
+# Summaries in WPF DataGrid (SfDataGrid)
 
 SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 

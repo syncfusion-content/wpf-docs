@@ -1,12 +1,12 @@
 ---
 layout: post
-title: WPF DataGrid Filter | UI Filtering like Excel | Syncfusion
-description: Describes various ways of filtering data in WPF DataGrid, such as program filtering, excel like UI filtering, advanced UI filtering, and so on.
+title: Filtering in WPF DataGrid control | Syncfusion
+description: Learn about Filtering support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
-# DataGrid Filtering
+# Filtering in WPF DataGrid (SfDataGrid)
 Filtering is the process of retrieving the values from the collection which satisfy the specified condition. In the SfDataGrid the filtering can be applied though the UI as well as the programmatic filters. 
 
 ## Programmatic filtering
