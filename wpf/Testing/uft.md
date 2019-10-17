@@ -418,7 +418,7 @@ Int
 </tr>
 <tr>
 <td>
-void GetCellValue();
+void GetCellValue(int rowIndex, int columnIndex);
 </td>
 <td>
 To get the value of the cell
