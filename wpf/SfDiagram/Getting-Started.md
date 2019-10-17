@@ -181,21 +181,7 @@ The Connectors property is assigned with the ConnectorCollection, that is, Obser
 
 #### Creating a node
 
-Creating NodeViewModel with specified height and width.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:NodeViewModel ID="Begin" UnitHeight="40" UnitWidth="120"/> 
-{% endhighlight %}
-{% highlight c# %}
-NodeViewModel Begin = new NodeViewModel()
- {
-    ID = "Begin", UnitWidth = 120, UnitHeight = 40,
- };
-{% endhighlight %}
-{% endtabs %}
-
-#### Adding specific position to node
+Creating NodeViewModel with specified height and width at a specific position.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +195,7 @@ NodeViewModel Begin = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding shape and ShapeStyle to node
+#### Adding shape and style to node
 
  We have provided set of basic shapes for Diagram as ResourceDictionary. To use the built-in shapes, Shapes dictionary should be merged in the application.  
  Please refer to [Shapes](/wpf/sfdiagram/shapes) to know about built-in Shapes.
@@ -258,15 +244,6 @@ N> ID sets for each node to identify nodes easily while setting connectors.
 #### Adding annotation to node
    
  To initialize the Annotation property of the node and connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
- 
- {% highlight xaml %}
-  <!--To apply Style for AnnotationEditorViewModel-->
- <Style TargetType="syncfusion:AnnotationEditor">
- </Style>
- {% endhighlight %} 
-    
-N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector.
-    By default, `Annotations` property of Node and Connector is null.
 
  Now add the Annotation content to Node.
 
@@ -308,6 +285,9 @@ N> `Annotations` property is a collection, which indicates that more than one An
 Now, the node will be as follows.
  
 ![NodeAnnotation](Getting-Started_images\nodeAnnotation.PNG)
+
+N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector.
+    By default, `Annotations` property of Node and Connector is null.
  
 ### Nodes for flow diagram
 
@@ -408,6 +388,8 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endtabs %}
 
 #### Adding connector geometry style
+
+ Here, the `ConnectorGeometryStyle` property of the Connector are used to customize the appearance of the line. And, `SourceDecoratorStyle` and `TargetDecoratorStyle` properties are used to customize the appearance of the decorators. 
 
 {% tabs %}
 {% highlight xaml %}

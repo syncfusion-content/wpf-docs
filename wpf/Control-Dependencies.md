@@ -1268,10 +1268,10 @@ For printing the Diagram with new enhanced print preview,the below assembly need
 </tr>
 <tr>
 <td> 
-Syncfusion.Shared.WPF
+Syncfusion.SfShared.WPF
 </td>
 <td> 
-Syncfusion.Shared.WPF
+Syncfusion.SfShared.WPF
 </td>
 </tr>
 </table>
