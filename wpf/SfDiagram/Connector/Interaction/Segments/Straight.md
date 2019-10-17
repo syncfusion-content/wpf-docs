@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Straight segments of connectors | Syncfusion
-description: How to draw straight segments
+description: What are the segment types and how to draw, select, and edit the straight segments of connectors in the diagram control.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -62,7 +62,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![Straight segment](Connector_images/Connector_img6.PNG)
+![Straight segment](Connector_images/Connector_img6.png)
 
 ## Editing straight segments
 
@@ -150,7 +150,7 @@ private void Diagram_ItemTappedEvent(object sender, DiagramEventArgs args)
 | SegmentEditing value | Description | Output |
 |---|---|---|
 | SegmentEditing.Add | New segment will be added at the tapped point |![Pivot connector](Connector_images/SegmentEditingAdd.gif) |
-| SegmentEditing.Remove | Exisiting segemnt will be deleted at the tapped point | ![Pivot connector](Connector_images/SegmentEditingRemove.gif) |
+| SegmentEditing.Remove | Exisiting segment will be deleted at the tapped point | ![Pivot connector](Connector_images/SegmentEditingRemove.gif) |
 | SegmentEditing.Toggle | New segment will be added at the tapped point if there is no segment at that point or exisiting segment will be deleted | ![Pivot connector](Connector_images/SegmentEditingToggle.gif) |
 
 N> Segment splitting will be supported only for straight segments.
