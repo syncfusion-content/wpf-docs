@@ -118,6 +118,8 @@ grid.Children.Add(tabControlExt);
 
 You can add the tabitem's using the [TabControlExt.Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_Items) property of TabControl. You can set the tabitem name using [TabItemExt.Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content to each TabItem by using [TabItemExt.Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ContentControl_Content) property.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/getting-started-with-wpf-tabcontrol)
+
 {% tabs %}
 
 {% highlight XAML %}
