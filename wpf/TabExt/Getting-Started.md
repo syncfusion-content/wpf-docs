@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WPF TabControl | Syncfusion
+title: Getting Started with WPF TabControl | TabControl Example | Syncfusion
 description: Learn here about getting started with Syncfusion WPF TabControl and its basic features and structure.
 platform: wpf
 control: TabControl
