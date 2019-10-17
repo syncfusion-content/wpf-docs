@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WPF TabControl | Syncfusion
+title: Getting Started with WPF TabControl | TabControl Example | Syncfusion
 description: Learn here about getting started with Syncfusion WPF TabControl and its basic features and structure.
 platform: wpf
 control: TabControl
@@ -118,11 +118,13 @@ grid.Children.Add(tabControlExt);
 
 You can add the tabitem's using the [TabControlExt.Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_Items) property of TabControl. You can set the tabitem name using [TabItemExt.Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content to each TabItem by using [TabItemExt.Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ContentControl_Content) property.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/getting-started-with-wpf-tabcontrol)
+
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl" Height="100" Width="280">
+<syncfusion:TabControlExt Name="tabControl">
     <syncfusion:TabItemExt Header="tabItem1">
         <TextBlock Name="textBlock" Text="This is the first tab item." />
     </syncfusion:TabItemExt>
@@ -139,34 +141,34 @@ You can add the tabitem's using the [TabControlExt.Items](https://docs.microsoft
 {% highlight C# %}
 
 // Creating an instances of tabitems
-TabItemExt tabItemExt = new TabItemExt();
 TabItemExt tabItemExt1 = new TabItemExt();
 TabItemExt tabItemExt2 = new TabItemExt();
+TabItemExt tabItemExt3 = new TabItemExt();
 
 // Adding header into tabitems
-tabItemExt.Header = "tabItem1";
-tabItemExt1.Header = "tabItem2";
-tabItemExt2.Header = "tabItem3";
+tabItemExt1.Header = "tabItem1";
+tabItemExt2.Header = "tabItem2";
+tabItemExt3.Header = "tabItem3";
 
 // Creating an instance of TextBlock
-TextBlock textBlock = new TextBlock();
 TextBlock textBlock1 = new TextBlock();
 TextBlock textBlock2 = new TextBlock();
+TextBlock textBlock3 = new TextBlock();
 
 // Adding the text
-textBlock.Text = "This is the first tab item.";
-textBlock1.Text = "This is the second tab item.";
-textBlock2.Text = "This is the third tab item.";
+textBlock1.Text = "This is the first tab item.";
+textBlock2.Text = "This is the second tab item.";
+textBlock3.Text = "This is the third tab item.";
 
 // Adding the textblock into tabitem
-tabItemExt.Content = textBlock;
 tabItemExt1.Content = textBlock1;
 tabItemExt2.Content = textBlock2;
+tabItemExt3.Content = textBlock3;
 
 // Adding the tabitems into the tabcontrol
-tabControlExt.Items.Add(tabItemExt);
 tabControlExt.Items.Add(tabItemExt1);
 tabControlExt.Items.Add(tabItemExt2);
+tabControlExt.Items.Add(tabItemExt3);
 
 {% endhighlight %}
 
@@ -182,7 +184,7 @@ You can place the tabitem header at any of the four sides of TabControl using th
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Height="100" Width="280" TabStripPlacement="Bottom">
+<syncfusion:TabControlExt TabStripPlacement="Bottom">
     <syncfusion:TabItemExt Header="tabItem1">
         <TextBlock Name="textBlock" Text="This is the first tab item." />
     </syncfusion:TabItemExt>
@@ -214,17 +216,17 @@ You can select a particular tabitem in TabControl by setting the [IsSelected](ht
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl" Height="100" Width="280">
-    <syncfusion:TabItemExt Header="tabItem1" IsSelected="False" />
-    <syncfusion:TabItemExt Header="tabItem2" IsSelected="False" />
-    <syncfusion:TabItemExt Header="tabItem3" IsSelected="True" />
+<syncfusion:TabControlExt Name="tabControl">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+    <syncfusion:TabItemExt Header="tabItem3" IsSelected="True"/>
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-tabItemExt2.IsSelected = true;
+tabItemExt3.IsSelected = true;
 
 {% endhighlight %}
 
@@ -259,16 +261,31 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 {% endtabs %}
 
-## Enable or disable close button
+## Working with tab close button
 
-The [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property is used to decide whether to enable or disable the close button in tabitem. You can show the close button as an individual tabitem or common for all tabitem's using the [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property in TabControl.
+TabControl allows end-users to close the tabs using close button. The close button can be displayed in tabcontrol using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property. 
+The following options are supported to show close the button in TabControl.
+
+* **Common** - Only, Tab control shows The close button.
+
+* **Individual** - The close button displayed only in the headers of tabitem's.
+
+* **Both** - TabControl and TabItem displays the close button.
+
+* **Hide** - The close button is not visible.
+
+* **IndividualOnMouseOver** - The close button displayed only when the mouse is over the tabitem.
+
+* **Extended** - The close button displayed only for the selected tabitem and the remaining tabitem's displays close button  while mouse is over the tab header.
+
+For example, When you set the `TabControlExt.CloseButtonType` as `Both`, then the close button is displayed in both TabItem and TabControl. 
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl" Height="100" Width="280" CloseButtonType="Individual">
-    <syncfusion:TabItemExt Header="tabItem1" CanClose="False" />
+<syncfusion:TabControlExt Name="tabControl" CloseButtonType="Both">
+    <syncfusion:TabItemExt Header="tabItem1" />
     <syncfusion:TabItemExt Header="tabItem2" />
 </syncfusion:TabControlExt>
 
@@ -276,15 +293,106 @@ The [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wp
 
 {% highlight C# %}
 
-tabItemExt.CanClose = false;
+//set `Both` option to `CloseButtonType` property.
+tabControlExt.CloseButtonType = CloseButtonType.Both;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Disable the close button of first tabitem in WPF TabControl](Getting-Started_images/wpf-tabcontrol-close.png)
+![WPF TabControl and TabItem displays the close button](Getting-Started_images/wpf-tabcontrol-closebutton.png)
 
-## Enable or disable TabList context menu
+You can disable the users from closing on particular tabitem by setting [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property as `false`.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControl" CloseButtonType="Both">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" CanClose="False" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//set `Both` option to `CloseButtonType` property.
+tabControlExt.CloseButtonType = CloseButtonType.Both;
+
+//Disable the close button.
+tabItemExt2.CanClose = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+In the below screenshot, second tabitem `TabItemExt.CanClose` property is `false`. So, close button in tabitem header and tabcontrol is in disabled state for second tabitem.
+
+![Disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-disableclosebutton.png)
+
+If you want to collapse the visibility of close button in particular tabitem, then you can collapse using [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControl" CloseButtonType="Both" CanClose="False">
+    <syncfusion:TabItemExt Header="tabItem1" CloseButtonState="Collapsed" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//set `Both` option to `CloseButtonType` property.
+tabControlExt.CloseButtonType = CloseButtonType.Both;
+
+//Disable the close button.
+tabItemExt2.CanClose = false;
+
+//Collapse the close button.
+tabItemExt2.CloseButtonState = Collapsed;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Collapse and disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-collapse.png)
+
+## Show or hide new tab button
+
+You can show the new tab button by setting the [TabControlExt.IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonEnabled.html) property to `true` in TabControl. The [NewButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonClick_EV.html) event handles the click action of new tab button to add new tabitem in TabControl.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControl" IsNewButtonEnabled="True" NewButtonClick="TabControl_NewButtonClick" >
+            <syncfusion:TabItemExt Header="tabItem1" />
+            <syncfusion:TabItemExt Header="tabItem2" />
+    </syncfusion:TabItemExt>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+private void TabControl_NewButtonClick(object sender, EventArgs e)
+{
+    TabItemExt itemExt = new TabItemExt();
+    itemExt.Header = "tabItem" + (tabControl.Items.Count + 1);
+    tabControl.Items.Add(itemExt);
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Enable the new button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-newbutton.png)
+
+## Show or hide TabList context menu
 
 You can show the tab list context menu by setting the [TabControlExt.ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true` in TabControl.
 
@@ -292,7 +400,7 @@ You can show the tab list context menu by setting the [TabControlExt.ShowTabList
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Height="100" Width="280" ShowTabListContextMenu="True">
+<syncfusion:TabControlExt Name="tabControl" ShowTabListContextMenu="True">
             <syncfusion:TabItemExt Header="tabItem1" />
             <syncfusion:TabItemExt Header="tabItem2" />
     </syncfusion:TabItemExt>
@@ -318,7 +426,7 @@ The [TabControlExt.TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl" Height="100" Width="280" TabScrollStyle="Extended" TabScrollButtonVisibility="Visible">
+<syncfusion:TabControlExt Name="tabControl" TabScrollStyle="Extended" TabScrollButtonVisibility="Visible">
     <syncfusion:TabItemExt Name="tabItemExt1" Header="tabItem1" />
     <syncfusion:TabItemExt Name="tabItemExt2" Header="tabItem2" />
 </syncfusion:TabControlExt>
@@ -336,7 +444,7 @@ tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Visible;
 
 ![Enable tab navigation bar in WPF TabControl](Getting-Started_images/wpf-tabcontrol-navigation.png)
 
-## Enable or disable built-in context menu
+## Show or hide built-in context menu
 
 You can show the built-in context menu of the tabitem by setting the [TabControlExt.ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabItemContextMenu.html) property to `true` in TabControl.
 
@@ -350,7 +458,7 @@ The built-in context menu of the tab item has following menu items:
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl" Height="100" Width="280" ShowTabItemContextMenu="True">
+<syncfusion:TabControlExt Name="tabControl" ShowTabItemContextMenu="True">
     <syncfusion:TabItemExt Header="tabItem1" />
     <syncfusion:TabItemExt Header="tabItem2" />        
 </syncfusion:TabControlExt>
@@ -374,7 +482,7 @@ You can add custom context menu item using the [TabItemExt.ContextMenuItems](htt
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Height="100" Width="280" IsCustomTabItemContextMenuEnabled="True">
+<syncfusion:TabControlExt IsCustomTabItemContextMenuEnabled="True">
     <syncfusion:TabItemExt Header="tabItem1">
         <syncfusion:TabItemExt.ContextMenuItems>
             <syncfusion:CustomMenuItem Header="Menu1" />

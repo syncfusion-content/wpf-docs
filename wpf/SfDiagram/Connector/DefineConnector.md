@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion diagram supports to connect two points, nodes or ports.
-description: How to draw a line to connect points, nodes, or ports?
+description: How to draw a connection using two points, nodes, ports, data source, stencil and drawing connectors from Tools.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -138,7 +138,7 @@ For more information about changing drawing tool of diagram, refer to [Tools](/w
 
 ## Create connector 
 
-Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of [Segments](/wpf/sfdiagram/connector#segments "Segments").
+Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of [Segments](/wpf/sfdiagram/connector/interaction/segments/straight "Segments").
 
 ## Create connectors through connection points
 
