@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Recurrence Appointment
-Recurring appointment can be generate on a daily, weekly, monthly, or yearly interval. By setting [RecurrenceRule]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html) and activating the [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursive.html) property in Schedule appointment wich will build recurring appointments.
+Recurring appointment can be generate on a daily, weekly, monthly, or yearly interval. By setting [RecurrenceRule]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html) and activating the [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursive.html) property in Schedule appointment which will build recurring appointments.
 
 ## Recurrence Rule
 The [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html)) is a string value that includes the details of the recurrence appointments such as repeat form - daily/weekly/monthly/yearly, how many times it needs to be repeated, the duration of the interval and also the time period to make the appointment, etc.
