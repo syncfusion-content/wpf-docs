@@ -9,15 +9,16 @@ documentation: ug
 
 # Changing Double Value
 
-## ValueChanged
+## Value Changed
 
-[ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~ValueChanged_EV.html) – The event occurs when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) property of the IntegerTextBox is changed.
+The `DoubleTextbox` control can notifies the value changes through the `ValueChanged` event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
+
 
 {%tabs%}
-{% highlight xaml %} <syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/>{% endhighlight %}
+{% highlight xaml %} <syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/>{% endhighlight %}
 
-{% highlight C# %} IntegerTextBox integerTextBox = new IntegerTextBox();
-integerTextBox.ValueChanged += new PropertyChangedCallback(IntegerTextBox_ValueChanged);{% endhighlight %}
+{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.ValueChanged += new PropertyChangedCallback(DoubleTextBox_ValueChanged);{% endhighlight %}
 
 {%endtabs%}
 
@@ -26,84 +27,36 @@ You can handle the event as follows:
 {% tabs %}
 {% highlight C# %}
 
-private void IntegerTextBox_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
-//Insert code to do some operations when value of IntegerTextBox changes.
+    // Get old and new value
+    var newValue = e.NewValue;
+    var oldValue = e.OldValue;
 }
 
 {% endhighlight %}
 {% endtabs %}
 
+## Null Value
 
-
-
-## NullValue
-
-### UseNullOption
-
-DoubleTextBox accepts null values. To enable the null option, the [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property need to set to `true`. By default its value is `false`.
+The `DoubleTextBox` accepts `null` values. By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can change this to display some other  value using the  [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property must be enabled to view the specified `NullValue`. By default `UseNullOption` value is `false`.
 
 {% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="170" UseNullOption="True" />
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 170;
-doubleTextBox.Height = 25;
-doubleTextBox.UseNullOption = true;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
-doubleTextBox.Width = 170
-doubleTextBox.Height = 25
-doubleTextBox.UseNullOption = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Double text box null option](Changing-Double-Value_images/UseNullOption.jpeg)
-
-### Set NullValue
-
-To set the value, when the value of the DoubleTextBox is null the [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NullValue.html) property is used. On setting the value to the [NullValue]([NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NullValue.html)) property, it will assigned to the Value property.
-
-{% tabs %}
-
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
                           Width="150" UseNullOption="True" NullValue="10"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.NullValue = 10;
+doubleTextBox.UseNullOption = true;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
-doubleTextBox.Width = 150
-doubleTextBox.Height = 25
-doubleTextBox.NullValue = 10
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ![Double text box null value](Changing-Double-Value_images/NullValue.jpeg)
@@ -111,12 +64,15 @@ doubleTextBox.NullValue = 10
 
 ## Watermark
 
-### WaterMarkForeground
+We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is `true` and the text is empty, control not in focus and the `UseNullOption` is `true`.
 
-The DoubleTextBox allows to set the desired brush as the foreground for the WaterMarkText using [WaterMarkTextForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextForeground.html).
+N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `DoubleTextBox` control. If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
+
+### WaterMark Foreground
+
+The `DoubleTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WaterMarkTextForeground.html) property. The default color of `WaterMarkTextForeground` is `Black`.
 
 {% tabs %}
-
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="100"
@@ -124,7 +80,6 @@ The DoubleTextBox allows to set the desired brush as the foreground for the Wate
                           WatermarkTextIsVisible="True" WatermarkTextForeground="Red"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
@@ -136,19 +91,6 @@ doubleTextBox.WatermarkTextIsVisible = true;
 doubleTextBox.WatermarkTextForeground = Brushes.Red;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
-doubleTextBox.Width = 100
-doubleTextBox.Height = 25
-doubleTextBox.UseNullOption = True
-doubleTextBox.WatermarkText = "Type Here"
-doubleTextBox.WatermarkTextIsVisible = True
-doubleTextBox.WatermarkTextForeground = Brushes.Red
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ![WaterMark text foreground](Changing-Double-Value_images/WaterMark-Foreground.jpeg)
@@ -156,9 +98,9 @@ doubleTextBox.WatermarkTextForeground = Brushes.Red
 
 [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) automatically collapses when the control is in focus. When the control loses its focus the WatermarkText comes to the visible state if the Value is null and the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) is true.
 
-### WatermarkTemplate
+### Watermark Template
 
-You can customize the Visual appearance of the WatermarkText by using the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTemplate.html) property.
+You can customize the Visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTemplate.html) property.
 
 
 

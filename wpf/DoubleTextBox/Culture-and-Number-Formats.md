@@ -11,87 +11,45 @@ documentation: ug
 
 ## Culture
 
-DoubleTextBox provides globalization support through the [Culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentculture?view=netframework-4.7.2) property. The [Culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentculture?view=netframework-4.7.2) property used to format the values based on the respective culture.
+The `DoubleTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. The `Culture` is used to format the decimal separator and group separator of the `DoubleTextBox` value based on the respective culture.
 
-{% tabs %}
+N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
-{% highlight XAML %}
+{%tabs%}
+{% highlight xaml %} 
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
-                         Width="150" Culture="en-US" Value="1234567"/>
-
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
 
 {% endhighlight %}
-
-{% highlight C# %}
-
+{% highlight C# %} 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 1234567;
-doubleTextBox.Culture = new CultureInfo("en-US");
+doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
-doubleTextBox.Width = 150
-doubleTextBox.Height = 25
-doubleTextBox.Value = 1234567
-doubleTextBox.Culture = New CultureInfo("en-US")
-
-{% endhighlight %}
-
-{% endtabs %}
+{%endtabs%}
 
 ![Double text box culture](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img1.jpeg)
 
 ## Formatting
 
-The Number Format can be customize either by using the [NumberFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties of DoubleTextBox.
+The number formatting of `DoubleTextBox` can be customized by setting [DoubleTextBox.NumberFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.editorbase~NumberFormat.html) property or by specifying the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties. You can show the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~GroupSeperatorEnabled.html) property to `true`.
 
-The following code illustrate how to customize the number format using NumberFormat property.
-
-The Namespace used for NumberFormatInfo as follows:
 
 {% tabs %}
-
-{% highlight XAML %}
-
-<Window x:Class="Application_New.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:numberformat="clr-namespace:System.Globalization;assembly=mscorlib"
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-Title="MainWindow" Height="350" Width="525">
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight C# %}
-
-using System.Globalization;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
-                          Width="200" Value="123456789012345">
+                          Width="200" Value="1234567"
+                          GroupSeperatorEnabled = "True">
 
 <syncfusion:DoubleTextBox.NumberFormat>
-
 <numberformat:NumberFormatInfo NumberGroupSeparator="/"
               NumberDecimalDigits="4" NumberDecimalSeparator="*"/>
 </syncfusion:DoubleTextBox.NumberFormat>
+
 </syncfusion:DoubleTextBox>
 
 {% endhighlight %}
@@ -99,9 +57,10 @@ using System.Globalization;
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 150;
+doubleTextBox.Width = 200;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 1234567;
+doubleTextBox.GroupSeperatorEnabled = true;
 doubleTextBox.NumberFormat = new NumberFormatInfo()
 {
     NumberGroupSeparator = "/",
@@ -110,64 +69,34 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 };
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
-doubleTextBox.Width = 150
-doubleTextBox.Height = 25
-doubleTextBox.Value = 1234567
-doubleTextBox.NumberFormat = Function NumberFormatInfo() As Shadows
-
-NumberGroupSeparator = "/",
-NumberDecimalDigits = 4,
-NumberDecimalSeparator = "*"
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ![Number format](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img2.jpeg)
 
 
-The following code illustrate how to set [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) and [NumberDecimalSeparator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html).
+The following code illustrate how to set `NumberGroupSeparator`, `NumberDecimalDigits` and `NumberDecimalSeparator`.
 
 {% tabs %}
-
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
-                          Width="200" Value="123456789012345"
+                          Width="200" Value="1234567"
                           NumberGroupSeparator="/" NumberDecimalDigits="4"
                           NumberDecimalSeparator="*"/>
 
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 170;
+doubleTextBox.Width = 200;
 doubleTextBox.Height = 25;
-doubleTextBox.Value = 123456789012345;
+doubleTextBox.Value = 1234567;
 doubleTextBox.NumberGroupSeparator = "/";
 doubleTextBox.NumberDecimalSeparator = "*";
 doubleTextBox.NumberDecimalDigits = 4;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
-doubleTextBox.Width = 170
-doubleTextBox.Height = 25
-doubleTextBox.Value = 123456789012345
-doubleTextBox.NumberGroupSeparator = "/"
-doubleTextBox.NumberDecimalSeparator = "*"
-doubleTextBox.NumberDecimalDigits = 4
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ![Number format](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img3.jpeg)

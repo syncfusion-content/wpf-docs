@@ -11,92 +11,33 @@ documentation: ug
 
 ## Restrict within min and max value
 
-### Minimum value
+The `Value` of the `DoubleTextBox` can be restricted within the maximum and minimum limits. Once the value has reached the maximum or maximum value , the value does not exceed the limit. We can change the maximum and minimum limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property.
 
-Minimum allowed value for the DoubleTextBox. If the new [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property value is greater than the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property value, then the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) is set equal to the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html). If the Value is less than the new [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html), then the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property is also set equal to the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html).
+You can choose when to validate the maximum and minimum limits while changing the values by using the [MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) and [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) properties.
 
-### Maximum value
+* `OnKeyPress` — When setting the `MaxValidation` or `MinValidation` to `OnKeyPress`, the value in the `DoubleTextBox` will be validated shortly after pressing a key. So, it is not possible to provide any invalid input at all and the value does not exceed the maximum and minimum limits.
 
-Maximum allowed value for the DoubleTextBox. If the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property is greater than the new [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property, then the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property value is set equal to the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html). If the current Value is greater than the new MaxValue, then the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property is set equal to the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html).
+* `OnLostFocus` - When setting `MaxValidation` or `MinValidation` to `OnLostFocus`, the value in the `DoubleTextBox` is validated when the `DoubleTextBox` loses the focus. That is, the `DoubleTextBox` will accept any value, validation will only take place after the `DoubleTextBox` has lost its keyboard focus. After validation, when the value of the `DoubleTextBox` is greater than the `MaxValue` or less than the `MinValue`, the value will be automatically set to `MaxValue` or `MinValue`.
 
-### Setting minimum and maximum value
+* [MaxValueOnExceedMaxDigit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MaxValueOnExceedMaxDigit.html) - When you give input greater than specified maximum limit, `MaxValueOnExceedMaxDigit` property will decide either it should retain the old value or reset to maximum limit that is specified. For example, if `MaxValue` is set to 100 and you are trying to input 200. `Value` will changed to 100 when `MaxValueOnExceedMaxDigit` is `true`. When `MaxValueOnExceedMaxDigit` is `false`, 20 will be retained and last entered 0 will be ignored.
 
-The Minimum and Maximum value can be changed by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) and [MaxVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) properties of the DoubleTextBox.
+  N> `MaxValueOnExceedMinDigit` property will be enabled only when the `MaxValidation` is set to `OnKeyPress`.
 
-{% tabs %}
+* [MinValueOnExceedMinDigit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MinValueOnExceedMinDigit.html) - When you give input less than specified minimum limit, `MinValueOnExceedMinDigit` property will decide either it should retain the old value or reset to minimum limit that is specified. For example, if `MinValue` is set to 200 and the `Value` is 205 and you are trying change the value to 20. `Value` will changed to 200 when `MinValueOnExceedMinDigit` is `true`. When `MinValueOnExceedMinDigit` is `false`, Old value 205 will be retained.
 
-{% highlight XAML %}
+  N> `MinValueOnExceedMinDigit` will be enabled only when the `MinValidation` is set to `OnKeyPress`.
 
-<syncfusion:DoubleTextBox x:Name="DoubleTextBox1"
-                          Width="100" Height="23" Value="100"
-                          MaxValue="999.99" MinValue="-999.99"/>
 
-{% endhighlight %}
-
-{% highlight C# %}
-
-DoubleTextBox textBox = new DoubleTextBox();
-textBox.Width = 100;
-textBox.Height = 23;
-textBox.Value = 100;
-textBox.MaxValue = 999.99;
-textBox.MinValue = -999.99;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-Dim textBox As DoubleTextBox =  New DoubleTextBox() 
-textBox.Width = 100
-textBox.Height = 23
-textBox.Value = 100
-textBox.MaxValue = 999.99
-textBox.MinValue = -999.99
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Min Max value](Restriction-or-Validation_images/Restriction-or-Validation_MinMaxValue.jpeg)
-
-### MinValidation
-
-MinValue can be validate in two ways.
-
-* OnKeyPress – MinValue of the DoubleTextBox is validated on the key press.
-* OnLostFocus – MinValue of the DoubleTextBox is validated on the lost focus only.
-
-### MaxValidation
-
-The MaxValue can validate in two ways:
-
-* OnKeyPress – [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) of the DoubleTextBox is validated on the key press.
-* OnLostFocus – [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) of the DoubleTextBox is validated on the lost focus only.
-
-### MinValueOnExceedMinDigit
-
-If [MinValueOnExceedMinDigit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MinValueOnExceedMinDigit.html) property is set to `true`, a value less than the MinValue entered, then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
-
-N> This will be enabled only when the MinValidation is set to OnKeyPress.
-
-### MaxValueOnExceedMaxDigit
-
-If `MaxValueOnExceedMaxDigit` property is set to `true`, then a value greater than the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) is entered, it will automatically assign the [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) to the Value property. Otherwise it will not allow the key press.
-
-N> This will be enabled only when the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnKeyPress.
 
 {% tabs %}
-
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
-                          Height="25" MaxValue="100" MinValue="10"
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" MaxValue="100" MinValue="10"
                           MinValueOnExceedMinDigit="True" MaxValueOnExceedMaxDigit="True"
                           MinValidation="OnKeyPress" MaxValidation="OnLostFocus"/>
 
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
@@ -110,21 +51,6 @@ doubleTextBox.MinValueOnExceedMinDigit = true;
 doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As Syncfusion.Windows.Shared.DoubleTextBox =  New Syncfusion.Windows.Shared.DoubleTextBox() 
-doubleTextBox.Width = 150
-doubleTextBox.Height = 25
-doubleTextBox.MinValue = 10
-doubleTextBox.MaxValue =100
-doubleTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress
-doubleTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus
-doubleTextBox.MinValueOnExceedMinDigit = True
-doubleTextBox.MaxValueOnExceedMaxDigit = True
-
-{% endhighlight %}
-
 {% endtabs %}
 
 Initially there is no value assigned to the DoubleTextBox. So it displays the default value as zero.
@@ -137,29 +63,24 @@ Initially there is no value assigned to the DoubleTextBox. So it displays the de
 ![MaxValidation is set to OnLostFocus](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
 
 
-[MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the MinValue. If try to enter a value less than the MinValue, then the MinValue will set to the Value property because MinValueOnExceedMinDigit is set to true.
+[MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
 ![MinValidation is set to OnKeyPress](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
 
 ## Restrict number of decimal digit
 
-### NumberDecimalDigits 
+The `DoubleTextbox` allows the user to customize the number of digits to be displayed after the decimal point of `DoubleTextBox` value
+by using [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property.
+The decimal digit can be restricted within the maximum and minimum limits. Once the decimal digit has reached the maximum or maximum digit , the decimal digits does not exceed the limit. We can change the maximum and minimum decimal digits limit by using the [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html)
 
-Number of decimal digits can be set for DoubleTextBox using [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property. [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property value will be set based on the in-between range of [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html) property values.
-
-### MinimumNumberDecimalDigits
-
-If [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) is set, the DoubleTextbox allows the user to enter the range of decimal digits from [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html).
-
-### MaximumNumberDecimalDigits
-
-If [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html) is set, the DoubleTextbox allows users to enter [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html) in the decimal range.
+ N> [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property value will be allows set based on the in-between range of [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html) property values.
 
 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150" 
-                          NumberDecimalDigits = 4 MinimumNumberDecimalDigits = 2					   MaximumNumberDecimalDigits = 5/>
+                          NumberDecimalDigits = 4 MinimumNumberDecimalDigits = 2
+                          MaximumNumberDecimalDigits = 5/>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -180,64 +101,47 @@ doubleTextBox.MaximumNumberDecimalDigits = 5;
 
 ## Read only value
 
-If the DoubleTextBox is read-only, then no user input or edits are allowed but programmatic changes can be made. DoubleTextBox allows to apply the different background brushes using the [ReadOnlyBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ReadOnlyBackground.html) property. The user can still select text and the cursor still appears. 
+The `DoubleTextBox` cannot allow the user input or edits and programmatic changes can be made when [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) property is sets to `true`. The user can still select text and the cursor on the `DoubleTextBox` can be displayed by setting the [IsReadOnlyCaretVisible](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonlycaretvisible?view=netframework-4.8) property to `true`.
 
-N> The Cursor in the DoubleTextBox can be displayed by setting the `IsReadOnlyCaretVisible` property to true.
-
-To enable this feature set [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) to `true`. By default its value is `false`.
 
 {% tabs %}
-
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" ReadOnlyBackground="Orange" IsReadOnly="True" IsReadOnlyCaretVisible="True"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" IsReadOnly="True" Value="10" IsReadOnlyCaretVisible="True"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Value = 10;
 doubleTextBox.IsReadOnly = true;
 doubleTextBox.IsReadOnlyCaretVisible = true;
-doubleTextBox.ReadOnlyBackground = Brushes.Orange;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
-doubleTextBox.IsReadOnly = True
-doubleTextBox.IsReadOnlyCaretVisible = true
-doubleTextBox.ReadOnlyBackground = Brushes.Orange
-
-{% endhighlight %}
-
 {% endtabs %}
 
-![readonly](Restriction-or-Validation_images/ReadOnly.png)
+![readonly](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
 
 ## Validate Invalid Value
 
-The [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property is used to alert the user when the input data is wrong.
+When the user enters incorrect data, the `DoubleTextBox` warns the user. This is achieved by the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property. 
 
 It includes the following three behaviors,
 
-* DisplayErrorMessage
-* None
-* ResetValue
+* Display ErrorMessage
+* No Operation
+* Reset Value
 
-### DisplayErrorMessage  
+### Display ErrorMessage  
 
-If [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property is `DisplayErrorMessage`, the error message will be shown when the user enters incorrect data.
+If the user enters incorrect data, the error message will only be shown by setting the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property as `DisplayErrorMessage`.
 
 {% tabs %}
-
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" MinValue="0" MaxValue="100" InvalidValueBehavior="DisplayErrorMessage" />
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
@@ -246,30 +150,18 @@ doubleTextBox.MaxValue = 100;
 doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox()
-doubleTextBox.MinValue = 0
-doubleTextBox.MaxValue = 100
-doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage;
-
-{% endhighlight %}
-
 {% endtabs %}
 
-### None  
+### No Operation  
 
-If [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property is `None`, when the user enters incorrect input data, no operations can occur.
+If the user enters incorrect data, no operation is performed by setting the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property as `None`.
 
 {% tabs %}
-
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" InvalidValueBehavior="None" MaxValue= "100" MinValue="0" />
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
@@ -278,31 +170,19 @@ doubleTextBox.MaxValue = 100;
 doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.None;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
-doubleTextBox.MinValue = 0
-doubleTextBox.MaxValue = 100
-doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.None;
-
-{% endhighlight %}
-
 {% endtabs %}
 
 
-### ResetValue  
+### Reset Value  
 
-If the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html)  property is `ResetValue`, if incorrect input data is entered, the DoubleTextBox resets the value to the default value.
+If the user enters incorrect data, `Value` of the `DoubleTextBox` is reset by setting the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property as `ResetValue`.
 
 {% tabs %}
-
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox"  InvalidValueBehavior="ResetValue" MaxValue= "100" MinValue="0"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
@@ -311,16 +191,6 @@ doubleTextBox.MaxValue = 100;
 doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.ResetValue;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
-doubleTextBox.MinValue = 0
-doubleTextBox.MaxValue = 100
-doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.ResetValue;
-
-{% endhighlight %}
-
 {% endtabs %}
 
 
