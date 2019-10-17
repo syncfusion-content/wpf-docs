@@ -55,7 +55,6 @@ schedule.Appointments.Add(new ScheduleAppointment
 
 ![WPF Scheduler Reminder Window](Reminder_images/Reminder-Window.jpeg)
 
-
 Refer the following demo sample for Reminder from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/Schedule/ReminderAlert)
 
 ## Configuring Reminder Duration
