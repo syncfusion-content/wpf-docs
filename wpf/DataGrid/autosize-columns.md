@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# DataGrid autosize columns
+# WPF DataGrid - Autosize Columns
 
 DataGrid allows you to set the column widths based on certain logic using [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ColumnSizer.html) or [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnSizer.html) property. Below is the list of predefined column sizing options available.
 

@@ -7,9 +7,9 @@ control: Overview
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential WPF
+# Welcome to Syncfusion WPF UI controls
 
-Essential WPF is a comprehensive collection of over 100+ enterprise-grade WPF components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Gantt, Scheduler, Diagram and much more.
+Essential WPF is a comprehensive collection of over 90+ enterprise-grade WPF components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including DataGrid, Charts, Diagram, Docking, Ribbon, Input controls and much more.
 
 ## How to best read this user guide
 
@@ -28,6 +28,7 @@ Similar to the [Knowledge Base](https://www.syncfusion.com/kb/wpf), the [Forum](
 
 If you are still unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
+Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/wpf).
 
 ## List of Controls
 
