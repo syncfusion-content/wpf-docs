@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential Diagram for WPF.
-description: Getting started walk through to create your first Flow Diagram and Organizational Chart Diagram
+description: Getting started walk through how to integrate SfDiagram into an application and how to create your first Flow Diagram and Organizational Chart Diagram
 platform: wpf
 control: SfDiagram
 documentation: ug
