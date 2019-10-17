@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Scheduler | Syncfusion
+title: About WPF Scheduler | Syncfusion
 description: This section explains how to integrate WPF Scheduler into an application and enable its basic features with example.
 platform: wpf
 control: SfSchedule
@@ -34,27 +34,29 @@ To add the control manually in XAML page, follow the given steps:
 2. Import WPF schema http://schemas.syncfusion.com/wpf in the XAML page.
 3. Declare the `SfSchedule` control in XAML page.
 
+{% tabs %}
 {% highlight xaml %}
 <Window x:Class="SfScheduleSample.MainWindow"   
 	        
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:schedule="http://schemas.syncfusion.com/wpf"
+    xmlns:schedule="http://schemas.syncfusion.com/wpf"
 
-        WindowStartupLocation="CenterScreen" WindowStyle="None"
+    WindowStartupLocation="CenterScreen" WindowStyle="None"
 
-        Width="950" Height="600">
+    Width="950" Height="600">
 
-        <Grid x:Name="LayoutRoot">
+    <Grid x:Name="LayoutRoot">
 
-          <schedule:SfSchedule/>
+        <schedule:SfSchedule/>
 
-        </Grid>
+    </Grid>
 
 </Window>
 {% endhighlight %}
+{% endtabs %}
 
 ## Add control manually in C&#35;
 To manually attach control to C #, follow the following steps:
@@ -63,6 +65,7 @@ To manually attach control to C #, follow the following steps:
 2. Import the `SfSchedule` namespace `using Syncfusion.UI.Xaml.Schedule`.
 3. Create an `SfSchedule` instance, and add it to the window.
 
+{% tabs %}
 {% highlight c#%}
 using Syncfusion.UI.Xaml.Schedule;
 namespace GettingStarted
@@ -74,6 +77,7 @@ namespace GettingStarted
 	}
 }
 {% endhighlight %}
+{% endtabs %}
 
 Run the code above and now you can see the empty scheduler as follows, but without appointments. To view the scheduler appointments, whether local or remote information must be passed on to the scheduler.
 
@@ -188,7 +192,7 @@ schedule.Appointments = appointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
-The entire source code of this example can be downloaded from github: [ScheduleAppointment](https://github.com/SyncfusionExamples/wpf-scheduler-getting-started) for WPF
+The entire source code of this example can be downloaded from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-getting-started) for WPF
 
 ### Adding Custom Appointments
 You can also map custom appointments data to our scheduler.
@@ -203,7 +207,7 @@ Here steps to render meetings using scheduler control with respective custom dat
 #### Creating custom class for appointments
 You can create a custom class `Meeting` with mandatory fields “From”, “To” and “EventName”.
 
-{% higlight c# %}
+{% highlight c# %}
 /// <summary>   
 /// Represents custom data properties.   
 /// </summary>   
@@ -225,6 +229,7 @@ N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes 
 #### Creating view model
 By setting `From` and `To` of `Meeting` class, you can schedule meetings for a specific day. You can also change the subject and color of appointment using `EventName` and `Color` property. You may define the list of custom appointments in a separate class of `ViewModel`.
 
+{% tabs %}
 {% highlight c# %}
 /// <summary>   
 /// Represents collection of appointments.   
@@ -334,6 +339,7 @@ public class ViewModel
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 #### Mapping custom class
 You can map those properties of `Meeting` class with our scheduler control by using [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html).
@@ -381,4 +387,4 @@ schedule.ItemsSource = viewModel.Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-The entire source code of this example can be downloaded from github: [Scheduler Binding Appointments](https://github.com/SyncfusionExamples/wpf-scheduler-binding-appointments) for WPF
+The entire source code of this example can be downloaded from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-binding-appointments) for WPF
