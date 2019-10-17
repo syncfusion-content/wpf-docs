@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Recurrence Appointment
-Recurring appointment can be generate on a daily, weekly, monthly, or yearly interval. By setting [RecurrenceRule]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html) and activating the [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursive.html) property in Schedule appointment which will build recurring appointments.
+Recurring appointments can generate on a daily, weekly, monthly, or yearly interval. By setting [RecurrenceRule]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html) and activating the [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursive.html) property in Schedule appointment which will build recurring appointments.
 
 ## Recurrence Rule
 The [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html)) is a string value that includes the details of the recurrence appointments such as repeat form - daily/weekly/monthly/yearly, how many times it needs to be repeated, the duration of the interval and also the time period to make the appointment, etc.
@@ -28,7 +28,7 @@ The [RecurrenceRule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WP
 
 ## Recurrence Pattern
 
-Schedule control supports four types of recurrence patterns. You can set the recurrence pattern using [RecurrenceType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceType.html) property of `RecurrenceRule`. 
+Scheduler supports four types of recurrence patterns. You can set this recurrence pattern using [RecurrenceType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceType.html) property of `RecurrenceRule`. 
 
 <table>
 <tr><th>RecurrenceType</th><th>RecurrenceProperties</th><th>Description</th></tr>
@@ -68,7 +68,7 @@ Schedule control supports four types of recurrence patterns. You can set the rec
 
 ### Applying Recurrence to Appointments
 
-Recurrence can be applied by using `RRuleGenerator` method.
+Use`RRuleGenerator` method to generate the recurrence rule.
 
 {% tabs %}
 {% highlight c# %}
@@ -100,7 +100,7 @@ Schedule.Appointments = AppCollection;
 ![WPF scheduler recurrence appointment](Recurrence/Recurrence-appointment.jpeg)
 
 ## Creating Custom Recurrence Appointment using Recurrence Builder
-you need to create a custom class Meeting with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule` to create custom recurrence appointment.
+you need to create a custom class `Meeting` with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule` to create custom recurrence appointment.
 
 {% tabs %}
 {% highlight c# %}
