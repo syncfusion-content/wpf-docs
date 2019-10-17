@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Restriction or Validation| DoubleTextBox  | Wpf | Syncfusion
-description: Restriction or Validation represents to restrict and validate the minimum, maximum values and value validation modes in the DoubleTextBox
+title: Restriction or Validation in WPF DoubleTextBox control | Syncfusion
+description: Learn about Restriction or Validation support in Syncfusion WPF DoubleTextBox control and more details.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug
 ---
 
-# Restriction or Validation
+# Restriction or Validation in WPF DoubleTextBox
 
 ## Restrict within min and max value
 
@@ -55,12 +55,12 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 Initially there is no value assigned to the DoubleTextBox. So it displays the default value as zero.
 
-![No value assigned to double text box](Restriction-or-Validation_images/Restriction-or-Validation_No-Value.jpeg)
+![WPF DoubleTextBox default value](Restriction-or-Validation_images/Restriction-or-Validation_No-Value.jpeg)
 
 
 [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnLostFocus, so the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) will be performed only in the lost focus.
 
-![MaxValidation is set to OnLostFocus](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
+![WPF DoubleTextBox MaxValidation On LostFocus](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
 
 
 [MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
@@ -96,7 +96,7 @@ doubleTextBox.MaximumNumberDecimalDigits = 5;
 {% endtabs %}
 
 
-![DecimalDigits](Restriction-or-Validation_images/DecimalDigits.png)
+![WPF DoubleTextBox DecimalDigits](Restriction-or-Validation_images/DecimalDigits.png)
 
 
 ## Read only value
@@ -120,7 +120,7 @@ doubleTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![readonly](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
+![WPF DoubleTextBox readonly enabled](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
 
 ## Validate Invalid Value
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Step Interval | DoubleTextBox  | Wpf | Syncfusion
-description: Step Interval represents the customization of the DoubleTextBox value by keyboard buttons and mouse scrolling
+title: Step Interval in WPF DoubleTextBox control | Syncfusion
+description: Learn about Step Interval support in Syncfusion WPF DoubleTextBox control and more details.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug
 ---
 
-# Step Interval
+# Step Interval in WPF DoubleTextBox
 
 The `DoubletextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
@@ -38,7 +38,7 @@ doubleTextBox.ScrollInterval = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
+![WPF DoubleTextBox value changing by Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
 
 ## Change Value on Mouse Wheel
 
@@ -63,7 +63,7 @@ doubleTextBox.ScrollInterval = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![Mouse Wheel](Step-Interval_images/Step-Interval_Mouse-Wheel.png)
+![WPF DoubleTextBox value changing by Mouse Wheel](Step-Interval_images/Step-Interval_Mouse-Wheel.png)
 
 ## Change Value on Click and Drag
 
@@ -87,7 +87,7 @@ doubleTextBox.EnableExtendedScrolling = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Adding extended scrolling to an application](Step-Interval_images/Step-Interval_DragandDrop.jpeg)
+![WPF DoubleTextBox value changing by Click and Drag](Step-Interval_images/Step-Interval_DragandDrop.jpeg)
 
 
 ## Select All on focus
@@ -110,8 +110,8 @@ doubleTextBox.TextSelectionOnFocus = true;
 
 ### TextSelectionOnFocus="False"
 
-![TextSelectionOnFocus](Step-Interval_images/Step-Interval_DragandDrop_SelectionFalse.png)
+![WPF DoubleTextBox TextSelectionOnFocus disabled](Step-Interval_images/Step-Interval_DragandDrop_SelectionFalse.png)
 
 ### TextSelectionOnFocus="True"
 
-![TextSelectionOnFocus](Step-Interval_images/Step-Interval_DragandDrop_SelectionTrue.png)
+![WPF DoubleTextBox TextSelectionOnFocus enabled](Step-Interval_images/Step-Interval_DragandDrop_SelectionTrue.png)

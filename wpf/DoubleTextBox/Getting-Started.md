@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | DoubleTextBox | WPF | Syncfusion
-description: The DoubleTextBox control restricts textbox input to only double values with support for data binding, Watermark, Null Value, Blendability, and Culture support.
+title: Getting started with WPF DoubleTextBox control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF DoubleTextBox control and more details.
 platform: WPF
 control: DoubleTextBox
 documentation: ug
 ---
 
-# Getting Started with DoubleTextBox
+# Getting started with WPF DoubleTextBox
 
 ## Assembly deployment
 
@@ -24,7 +24,7 @@ You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/doubl
 
 The  control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.WPF assembly reference will be added automatically.
 
-![wpf double text box control added by designer](Getting-Started_images/wpf-double-text-box-control-added-by-designer.png)
+![WPF DoubleTextBox control added by designer](Getting-Started_images/wpf-double-text-box-control-added-by-designer.png)
 
 ## Add WPF DoubleTextBox manually Via XAML
 
@@ -80,7 +80,7 @@ namespace DoubleTextBoxSample
 {% endhighlight %}
 {% endtabs %}
 
-![wpf double text box control added by code](Getting-Started_images/wpf-double-text-box-control-added-manually.png)
+![WPF DoubleTextBox control added by code](Getting-Started_images/wpf-double-text-box-control-added-manually.png)
 
 ## Set value
 
@@ -104,11 +104,11 @@ doubleTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![Double text box value](Getting-Started_images/Getting-Started-img3.jpeg)
+![WPF DoubleTextBox set Value](Getting-Started_images/Getting-Started-img3.jpeg)
 
 ### Binding Value
 
-Data binding is the method of forming a connection between the application  UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `DoubleTextBox` using the `Value`. Use the `Value` property to bind data to the `DoubleTextBox`. Refer to the [Data binding](https://help.syncfusion.com/wpf/doubletextbox/dealing-with-doubletextbox#binding-value) section for more information.
+Data binding is the method of forming a connection between the application  UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `DoubleTextBox` using the `Value`. Use the `Value` property to bind data to the `DoubleTextBox`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -119,7 +119,7 @@ Data binding is the method of forming a connection between the application  UI a
 {% endhighlight %}
 {% endtabs %}
 
-![wpf double text box control value binding](Getting-Started_images/wpf-double-text-box-value-binding.png)
+![WPF DoubleTextBox control value binding](Getting-Started_images/wpf-double-text-box-value-binding.png)
 
 ## Value Changed Notification
 
@@ -149,7 +149,7 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 {% endhighlight %}
 {% endtabs %}
 
-## Step Interval
+## Setting Step Interval
 
 The `DoubletextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
@@ -182,7 +182,7 @@ doubleTextBox.ScrollInterval = 4;
 {% endtabs %}
 Step-Interval.png
 
-![Step Interval](Getting-Started_images/Step-Interval.png)
+![WPF DoubleTextBox Step Interval](Getting-Started_images/Step-Interval.png)
 
 ## Min Max Value Restriction
 
@@ -204,7 +204,7 @@ this.Content = doubleTextBox;
 {% endhighlight %}
 {% endtabs %}
 
-## Formatting
+## Setting Formatting
 
 You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties of `DoubleTextBox`.
 
@@ -230,10 +230,10 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![wpf double text box control number format](Getting-Started_images/wpf-double-text-box-number-format.png)
+![WPF DoubleTextBox control number format](Getting-Started_images/wpf-double-text-box-number-format.png)
 
 
-## Culture
+## Setting Culture
 
 The `DoubleTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. The `Culture` is used to format the decimal separator and group separator of the `DoubleTextBox` value based on the respective culture.
 
@@ -253,5 +253,5 @@ doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-![doubleTextBox culture](Getting-Started_images/Getting-Started_img4.png)
+![WPF DoubleTextBox culture](Getting-Started_images/Getting-Started_img4.png)
 
