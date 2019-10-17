@@ -9,13 +9,13 @@ documentation: ug
 
 # Step Interval in WPF DoubleTextBox
 
-The `DoubletextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The `DoubleTextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
  For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
 
 ## Change Value on Up, Down arrow key
 
-The `DoubletextBox` control allows you to increase or decrease the `Value` of `DoubletextBox` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
+The `DoubleTextBox` control allows you to increase or decrease the `Value` of `DoubleTextBox` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
 
 
 {% tabs %}
@@ -42,7 +42,7 @@ doubleTextBox.ScrollInterval = 2;
 
 ## Change Value on Mouse Wheel
 
-The `DoubletextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~IsScrollingOnCircle.html) property is true.
+The `DoubleTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~IsScrollingOnCircle.html) property is true.
 
 {% tabs %}
 {% highlight XAML %}
@@ -67,7 +67,7 @@ doubleTextBox.ScrollInterval = 3;
 
 ## Change Value on Click and Drag
 
-The DoubletextBox allows you to increase or decrease the value based on the `ScrollInterval` by click and dragging the mouse move When the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. The `Value` of `DoubleTextBox` will increase when the mouse moves to the right or top of the screen and will decrease when the mouse moves in the direction of the left or bottom of the screen. Before that, the control should be in an unfocused state.
+The `DoubleTextBox` allows you to increase or decrease the value based on the `ScrollInterval` by click and dragging the mouse move When the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. The `Value` of `DoubleTextBox` will increase when the mouse moves to the right or top of the screen and will decrease when the mouse moves in the direction of the left or bottom of the screen. Before that, the control should be in an unfocused state.
 
 {% tabs %}
 {% highlight XAML %}

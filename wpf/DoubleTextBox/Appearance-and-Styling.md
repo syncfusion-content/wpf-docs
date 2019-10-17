@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF DoubleTextBox control | Syncfusion
-description: Learn about Appearance support in Syncfusion WPF DoubleTextBox control and more details.supports.
+description: Learn about Appearance support in Syncfusion WPF DoubleTextBox control and more details.
 platform: wpf
 control: DoubleTextBox
 documentation: ug
@@ -13,11 +13,11 @@ documentation: ug
 
 The `DoubleTextBox` control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `DoubleTextBox` control.
 
-* Positive foreground - We can add and change a positive color to the value of `DoubletextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PositiveForeground.html) property and it will be applied when the `Value` is positive. The default color of `PositiveForeground` is `Black`.
+* Positive foreground - We can add and change a positive color to the value of `DoubleTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PositiveForeground.html) property and it will be applied when the `Value` is positive. The default color of `PositiveForeground` is `Black`.
 
-* Negative foreground - We can add and change a negative color to the value of `DoubletextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NegativeForeground.html) property and it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyNegativeForeground.html) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`.
+* Negative foreground - We can add and change a negative color to the value of `DoubleTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NegativeForeground.html) property and it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyNegativeForeground.html) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`.
 
-* Zero foreground - We may add and change a zero color to the value of `DoubletextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) property and it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyZeroColor.html) property is `true` and the `Value` is zero.
+* Zero foreground - We may add and change a zero color to the value of `DoubleTextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) property and it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyZeroColor.html) property is `true` and the `Value` is zero.
 The default color of `ZeroColor` is `Green`. 
 
 {% tabs %}

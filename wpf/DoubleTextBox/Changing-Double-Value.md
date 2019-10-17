@@ -31,7 +31,7 @@ doubleTextBox.Value = 10;
 ![WPF DoubleTextBox setting value](Changing-Double-Value_images/SettingValue.jpeg)
 
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target).By assigning a value to the `Value` property by binding, you can change the `Doubletextbox` value.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target).By assigning a value to the `Value` property by binding, you can change the `DoubleTextBox` value.
 
 %tabs%}
 {% highlight xaml %}
