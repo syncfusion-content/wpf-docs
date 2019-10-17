@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with QTP/UFT Testing for WPF controls | Syncfusion
-description: Learn how to test with QTP/UFT for Syncfusion Essential WPF controls
+description: This section explains about how to test with QTP/UFT for Syncfusion Essential WPF controls and its supported methods
 platform: wpf
 control: Testing
 documentation: ug
@@ -380,6 +380,57 @@ NA
 </td>
 <td>
 Void
+</td>
+</tr>
+<tr>
+<td>
+void GetRowCount();
+</td>
+<td>
+To get the row count of the SfDataGrid
+</td>
+<td>
+NA
+</td>
+<td>
+-
+</td>
+<td>
+Int
+</td>
+</tr>
+<tr>
+<td>
+void GetColumnCount();
+</td>
+<td>
+To get the column count of the SfDataGrid
+</td>
+<td>
+NA
+</td>
+<td>
+-
+</td>
+<td>
+Int
+</td>
+</tr>
+<tr>
+<td>
+void GetCellValue(int rowIndex, int columnIndex);
+</td>
+<td>
+To get the value of the cell
+</td>
+<td>
+int rowIndex, int columnIndex
+</td>
+<td>
+Passing row and column index for a cell
+</td>
+<td>
+Object
 </td>
 </tr>
 </table>
