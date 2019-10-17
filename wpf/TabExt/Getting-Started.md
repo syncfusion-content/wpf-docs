@@ -276,7 +276,7 @@ The following options are supported to show close the button in TabControl.
 
 * **Extended** - The close button displayed only for the selected tabitem and the remaining tabitem's displays close button  while mouse is over the tab header.
 
-For example, When you set the `TabControlExt.CloseButtonType` as `Both`, then the close button is displayed in both TabItem and TapControl. 
+For example, When you set the `TabControlExt.CloseButtonType` as `Both`, then the close button is displayed in both TabItem and TabControl. 
 
 {% tabs %}
 
@@ -325,17 +325,17 @@ tabItemExt2.CanClose = false;
 
 {% endtabs %}
 
-In the below screenshot, to second tabitem `TabItemExt.CanClose` property is `false`. So, close button in tabitem header and tabcontrol is in disabled state for second tabitem.
+In the below screenshot, second tabitem `TabItemExt.CanClose` property is `false`. So, close button in tabitem header and tabcontrol is in disabled state for second tabitem.
 
 ![Disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-disableclosebutton.png)
 
-If you want to collapse the visibility of close button in particular tabitem, then you can collapse the close button using [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property.
+If you want to collapse the visibility of close button in particular tabitem, then you can collapse using [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl" CloseButtonType="Both">
+<syncfusion:TabControlExt Name="tabControl" CloseButtonType="Both" CanClose="False">
     <syncfusion:TabItemExt Header="tabItem1" CloseButtonState="Collapsed" />
     <syncfusion:TabItemExt Header="tabItem2" />
 </syncfusion:TabControlExt>
@@ -347,24 +347,27 @@ If you want to collapse the visibility of close button in particular tabitem, th
 //set `Both` option to `CloseButtonType` property.
 tabControlExt.CloseButtonType = CloseButtonType.Both;
 
+//Disable the close button.
+tabItemExt2.CanClose = false;
+
 //Collapse the close button.
-tabItemExt1.CloseButtonState = Collapsed;
+tabItemExt2.CloseButtonState = Collapsed;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Collapse the first tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-collapse.png)
+![Collapse and disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-collapse.png)
 
 ## Show or hide new tab button
 
-You can show the new tab button by setting the [TabControlExt.IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonEnabled.html) property to `true` in TabControl.
+You can show the new tab button by setting the [TabControlExt.IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonEnabled.html) property to `true` in TabControl. The [NewButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonClick_EV.html) event handles the click action of new tab button to add new tabitem in TabControl.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl" IsNewButtonEnabled="True">
+<syncfusion:TabControlExt Name="tabControl" IsNewButtonEnabled="True" NewButtonClick="TabControl_NewButtonClick" >
             <syncfusion:TabItemExt Header="tabItem1" />
             <syncfusion:TabItemExt Header="tabItem2" />
     </syncfusion:TabItemExt>
@@ -374,7 +377,12 @@ You can show the new tab button by setting the [TabControlExt.IsNewButtonEnabled
 
 {% highlight C# %}
 
-tabControlExt.IsNewButtonEnabled = true;
+private void TabControl_NewButtonClick(object sender, EventArgs e)
+{
+    TabItemExt itemExt = new TabItemExt();
+    itemExt.Header = "tabItem" + (tabControl.Items.Count + 1);
+    tabControl.Items.Add(itemExt);
+}
 
 {% endhighlight %}
 
