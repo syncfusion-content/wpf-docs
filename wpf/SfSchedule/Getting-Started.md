@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About WPF Scheduler | Syncfusion
+title: Getting started with WPF Scheduler | Syncfusion
 description: This section explains how to integrate WPF Scheduler into an application and enable its basic features with example.
 platform: wpf
 control: SfSchedule
