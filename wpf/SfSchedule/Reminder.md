@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reminder in SfSchedule | Syncfusion
-description: This section explains about how to use the reminder and handle reminder events for ScheduleAppointment in SfSchedule.
+title: Reminder in WPF Scheduler | Syncfusion
+description: This section explains about how to use the reminder and handle reminder events for ScheduleAppointment in WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Reminder
 
-Schedule alerts you for particular appointment with reminder window when enable the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property.Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
+Schedule alerts you for particular appointment with reminder window when enable the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
 
 ## Setting reminder for an Appointment
 Reminder can be set by setting the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property is `true`.The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html) property of ScheduleAppointment.
@@ -53,7 +53,7 @@ schedule.Appointments.Add(new ScheduleAppointment
 {% endhighlight %}
 {% endtabs %}
 
-![Reminder-Window](Reminder_images/Reminder_img1.jpeg)
+![Reminder-Window](Reminder/Reminder-Window.jpeg)
 
 Refer the following demo sample for Reminder from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/Schedule/ReminderAlert)
 
