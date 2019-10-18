@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data binding in WPF DataGrid control | Syncfusion
-description: Learn about data binding support in Syncfusion WPF DataGrid (SfDataGrid) control and more details. 
+description: Learn about data binding (List, ObservableCollection, DataTable and so on) support in Syncfusion WPF DataGrid (SfDataGrid) control and more details. 
 platform: wpf
 control: SfDataGrid
 documentation: ug
