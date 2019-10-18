@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 ## DayView
-DayView is used to view a single day. By default, the current day will be visible. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
+`Day` view is used to view a single day. By default, the current day will be visible. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
 
 ## Day Header Date Format
-The default Header date format of the DayView can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
+The default Header date format of the day view can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -65,7 +65,7 @@ schedule.TimeInterval = TimeInterval.OneHour;
 ![WPF scheduler dayview timeinterval](dayview_images/dayview-time-interval.png)
 
 ## Change Time Interval Height
-By setting schedulers [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property, you can configure the timeslots interval for day view.
+By setting the schedulers [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property, you can configure the timeslots interval for day view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,7 +80,7 @@ schedule.IntervalHeight = 100;
 ![WPF scheduler dayview interval height](dayview_images/dayview-interval-height.png)
 
 ### Full screen scheduler
-Schedule time interval height can be adjusted based on screen height by changing the value of `IntervalHeight` property to -1. It will auto-fit to the screen height and width.
+Scheduler time interval height can be adjusted based on screen height by changing the value of `IntervalHeight` property to -1. It will auto-fit to the screen height and width.
 
 {% tabs %}
 {% highlight xaml %}
@@ -113,7 +113,7 @@ this.schedule.IsHighLightWorkingHours = true;
 ![WPF scheduler DayView working hours](dayview_images/dayview-working-hours.png)
 
 ### Change Non-Working hours Background
-Scheduler uses the [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingHourBrush.html) property to adjust the background color for non-working hours.
+By setting the Scheduler [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingHourBrush.html) property, you can adjust the background color for non-working hours.
 
 {% tabs %}
 {% higligh xaml %}
