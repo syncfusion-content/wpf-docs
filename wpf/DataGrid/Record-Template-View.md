@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Record Template View | DataGrid | WPF | Syncfusion
-description: How to use record template view in SfDataGrid
+title: Record Template View in WPF DataGrid control | Syncfusion
+description: Learn about record (row) template view support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Record Template View
+# Record Template View in WPF DataGrid (SfDataGrid)
 
 The SfDataGrid provides support to represent additional information of a row using [TemplateViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html) that can be defined in datagrid. It allows you to load any WPF controls to [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html) in order to display the additional information of a row. You can expand or collapse the row template view by using an expander in a row or programmatically.
 

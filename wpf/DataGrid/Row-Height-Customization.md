@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row Height Customization | SfDataGrid | WPF | Syncfusion
-description: How to customize the row heights in SfDataGrid.
+title: Row Height Customization in WPF DataGrid control | Syncfusion
+description: Learn about row height customization (row height fit to its content) in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Row Height customization
+# Row Height customization in WPF DataGrid (SfDataGrid)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) and the other rows height can be changed by setting [SfDataGrid.RowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RowHeight.html) property.
 

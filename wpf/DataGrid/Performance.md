@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Performance Tips | Syncfusion
-description: Explains how to improve the performance of WPF DataGrid for various real-time usage scenarios, as well as tips on loading, scrolling performance improvements.
+title: Performance tips in WPF DataGrid control | Syncfusion
+description: Learn about optmize the performance in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Performance tips
+# Performance tips in WPF DataGrid (SfDataGrid)
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
  
