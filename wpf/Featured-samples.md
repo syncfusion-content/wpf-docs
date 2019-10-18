@@ -41,6 +41,6 @@ To explore the online [samples](https://wpf.syncfusion.com/samples.html) click 
 
 ## GitHub Demos
 
-You can explore Syncfusion WPF controls using [GitHb WPF demos](https://github.com/syncfusion/wpf-demos) where all wpf demos are configured using `NuGet` to run without installing Syncfusion WPF Studio. 
+You can explore Syncfusion WPF controls using [GitHub WPF demos](https://github.com/syncfusion/wpf-demos) where all wpf demos are configured using `NuGet` to run without installing Syncfusion WPF Studio. 
 
 N> Explore Syncfusion Controls in [GitHub](https://github.com/syncfusion/wpf-demos).
