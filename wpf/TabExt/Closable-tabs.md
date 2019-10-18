@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Closing TabItem using Syncfusion WPF TabControl
+title: Closing TabItem in WPF TabControl | Syncfusion
 description: This section explains how to control CloseButton behavior available in TabItem in Syncfusion TabControl
 platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Closable TabItem
+# Closing TabItem in WPF TabControl
 
 ## Visibility of close button in TabItem and TabPanel
 
