@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Syncfusion WPF UI Controls | Syncfusion
-description: Learn about Localization support in Syncfusion WPF UI Contorls and more details.
+description: Learn about Localization support in Syncfusion WPF UI Contorls using .RESX files and also explains editing default strings of WPF controls.
 platform: wpf
 control: Localization
 documentation: ug
