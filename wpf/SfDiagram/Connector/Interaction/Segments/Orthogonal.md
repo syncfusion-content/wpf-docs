@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector Selection and Dragging | Syncfusion
-description: How to select and drag the connector
+title: Orthogonal segment connectors | Syncfusion
+description: How to create the orthogonal segments, how to edit and customize the Orthogonal segments and how orthogonal connectors are avoiding overlapping.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -65,9 +65,7 @@ Vertical and horizontal thumbs on the orthogonal segments are allowed to adjust 
 
 When necessary, some segments are added or removed automatically, when dragging the segment for maintaining proper routing of orthogonality between segments.
 
-![segment editing at runtime using segment thumbs](Connector_images/OrthogonalEditing.png)
-
-![segment editing at runtime using segment thumbs](Connector_images/SegmentEditing.gif)
+![segment editing at runtime using segment thumbs](Connector_images/OrthogonalEditing.png) ![segment editing at runtime using segment thumbs](Connector_images/SegmentEditing.gif)
 
 ## How to customize the orthogonal segments
 

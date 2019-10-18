@@ -81,7 +81,9 @@ public class DoubleExt : List<double>
 
 ## Changing the snapping angle
 
-Snapping angle is used to specify the rotation angle for snapping when the node is rotated. It helps to perfom snapping when node is resized or dragged with roatated position. Default snapping angle is 5d.
+Diagram allows the diagram object to rotate at specific angle intervals while rotating. This interval can be customized using the `SnapAngle` property of SnapSettings class. Default snap angle value is 5d.
+
+Snapping on rotation can be enabled or disabled using the `SnapConstraints` property of SnapSettings class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -89,7 +91,7 @@ Snapping angle is used to specify the rotation angle for snapping when the node 
 <syncfusion:SfDiagram x:Name="diagram">
   <syncfusion:SfDiagram.SnapSettings>
     <!--Initialize the snap angle-->
-    <syncfusion:SnapSettings SnapAngle="90"/>
+    <syncfusion:SnapSettings SnapConstraints="ShowLines,Rotation" SnapAngle="45"/>
   </syncfusion:SfDiagram.SnapSettings>
 </syncfusion:SfDiagram>
 
@@ -101,14 +103,16 @@ Snapping angle is used to specify the rotation angle for snapping when the node 
 SfDiagram diagram = new SfDiagram();
 diagram.SnapSettings = new SnapSettings()
 {
+  //Enables the SnapConstraints value as SnapToLines and rotation
+  SnapConstraints = SnapConstraints.ShowLines | SnapConstraints.Rotation,
   //Initialize the snap angle
-  SnapAngle = 90,
+  SnapAngle = 45,
 };
 
 {% endhighlight %}
 {% endtabs %}
 
-![Snap to object](Gridlines_images/SnapAngle.gif) 
+![Snap to object](Gridlines_images/SnapANgle.gif) 
 
 {% seealso %}
 
