@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Control Dependencies and Dependency assembly | WPF | Syncfusion
-description: Control and it's Dependency assembly details for Syncfusion Essential Studio WPF products
+description: Control and it's Dependency assembly or NuGet reference details for Syncfusion Essential Studio WPF products
 platform: wpf
 control: Control Dependencies
 documentation: ug
@@ -1268,10 +1268,10 @@ For printing the Diagram with new enhanced print preview,the below assembly need
 </tr>
 <tr>
 <td> 
-Syncfusion.Shared.WPF
+Syncfusion.SfShared.WPF
 </td>
 <td> 
-Syncfusion.Shared.WPF
+Syncfusion.SfShared.WPF
 </td>
 </tr>
 </table>
