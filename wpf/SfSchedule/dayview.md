@@ -212,7 +212,7 @@ schedule.MinorTickTimeFormat = "hh mm ss";
 
 ## Time Label Appearance
 ### Changing Time Label Foreground
-By setting schedular's [MinorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickLabelStroke.html) and [MajorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickLabelStroke.html). you can customize the color for the labels that mention the time.
+By setting scheduler's [MinorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickLabelStroke.html) and [MajorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickLabelStroke.html). you can customize the color for the labels that mention the time.
 
 {% tabs %}
 {% higligh xaml %}
@@ -241,6 +241,6 @@ schedule.ScheduleType = ScheduleType.Day;
 schedule.MajorTickStroke = Brushes.LawnGreen;
 schedule.MinorTickStroke = Brushes.LightBlue;
 {% endhighlight %}
-{% endtabs %
+{% endtabs %}
 
 ![WPF scheduler dayview time label border color changes](dayview_images/dayview-time-label-border.png)
