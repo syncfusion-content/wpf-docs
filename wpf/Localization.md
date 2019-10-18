@@ -52,7 +52,7 @@ N> You can get the default resource files of all Syncfusion WPF libraries from [
 
 1) Right click your project and add new folder named `Resources`. 
 
-2) Add [default resource files](https://github.com/syncfusion/wpf-controls-localization-resx-files) of libraries you are using into `Resources` folder and ensure `AccessModifier` specfied as `Public`. 
+2) Add [default resource files](https://github.com/syncfusion/wpf-controls-localization-resx-files) of libraries you are using into `Resources` folder and ensure `AccessModifier` specified as `Public`. 
 
 N> Consider you are using `SfDataGrid` and `Ribbon` in your application. Then you need to copy and include `Syncfusion.SfGrid.WPF.resx` (since `SfDataGrid` present in `Syncfusion.SfGrid.WPF` library) and `Syncfusion.Tools.Wpf.resx` (since `Ribbon` present in `Syncfusion.Tools.WPF` library) files in your application under `Resources` folder. So, now you can know the key names and values of default stings used in `Syncfusion.Tools.WPF.dll` and `Syncfusion.SfGrid.WPF.dll` libraries.    
 
@@ -62,7 +62,7 @@ N> Consider you are using `SfDataGrid` and `Ribbon` in your application. Then yo
 
 ![WPF Control Localization](localization-images/wpf-adding-resource-file.png)
 
-4) Now, select `Add` and add resource file for german culture in `Resources` folder and set `AccessModifier` property to `No code generation`.  
+4) Now, select `Add` and add resource file for German culture in `Resources` folder and set `AccessModifier` property to `No code generation`.  
 
 ![WPF Control Localization using .resx file](localization-images/wpf-resx-file-to-localize.png)
 
@@ -75,4 +75,4 @@ N> Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-datagri
 
 ## Editing default culture strings
 
-You can change default string of any control by adding the default .resx files ([from Github](https://github.com/syncfusion/wpf-controls-localization-resx-files)) to `Resources` folder of your application.  Syncfusion WPF controls reads the default string from the .resx files of application if its added. 
+You can change default string of any control by adding the default .resx files ([from GitHub](https://github.com/syncfusion/wpf-controls-localization-resx-files)) to `Resources` folder of your application.  Syncfusion WPF controls reads the default string from the .resx files of application if its added. 
