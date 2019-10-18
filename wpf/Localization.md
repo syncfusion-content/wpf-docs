@@ -64,12 +64,12 @@ N> Consider you are using `SfDataGrid` and `Ribbon` in your application. Then yo
 
 4) Now, select `Add` and add resource file for German culture in `Resources` folder and set `AccessModifier` property to `No code generation`.  
 
-![WPF Control Localization using .resx file](localization-images/wpf-resx-file-to-localize.png)
+![WPF Control Localization using RESX file](localization-images/wpf-resx-file-to-localize.png)
 
 
 5) Now, you can copy the key names from default resource files and assign value based on the culture, the resource files targets. 
 
-![WPF DataGrid Localized .resx file](localization-images/wpf-localized-resx-file.png)
+![WPF DataGrid Localized RESX file](localization-images/wpf-localized-resx-file.png)
 
 N> Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-datagrid-localization)
 
