@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Master-Details View | Hierarchical DataGrid | Syncfusion
-description: Explains how to create a master-details view (nested grid view) which represents nested data relations. Nested grids that can be expanded and collapsed. 
+title: Master-Details View in WPF DataGrid control | Syncfusion
+description: Learn about master-details view (nested grid view) support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# DataGrid Master-Details View
+# Master-Details View in WPF DataGrid (SfDataGrid)
 
 DataGrid provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 

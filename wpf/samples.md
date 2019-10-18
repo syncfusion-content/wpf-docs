@@ -29,7 +29,7 @@ To explore the locally installed demos, click `Run Local Demos` which will open
 
 ![Syncfusion WPF Sample Browser](Guidetorunthesamples_images/syncfusion-wpf-sample-browser.PNG)
 
-## Offline samples
+## Offline Samples
 
 `Syncfusion WPF Sample Browser` compile and launch the samples installed by Syncfusion installer. The samples are available in the following installed location where you can make changes and further exploration of controls.
 

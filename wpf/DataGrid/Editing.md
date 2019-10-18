@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Editing | Cell Editing | Syncfusion
-description: The WPF DataGrid provides support to edit the cell values with an intuitive editors in different column types such as datepicker, textbox, combobox and more.
+title: Editing in WPF DataGrid control | Syncfusion
+description: Learn about editing support to edit the cell values with an intuitive editors in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# DataGrid Editing 
+# Editing in WPF DataGrid (SfDataGrid)
 
 DataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html) property.
 
