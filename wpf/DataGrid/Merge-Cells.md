@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge cells in WPF DataGrid control | Syncfusion
-description: Learn about Merge Cells support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about merge cells support (horizontally or vertically) in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

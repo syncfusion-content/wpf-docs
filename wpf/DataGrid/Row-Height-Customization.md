@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization in WPF DataGrid control | Syncfusion
-description: Learn about Row Height Customization support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about row height customization (row height fit to its content) in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

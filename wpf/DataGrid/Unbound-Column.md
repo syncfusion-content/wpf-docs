@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound column in WPF DataGrid control | Syncfusion
-description: Learn about Unbound Column support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about unbound column support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

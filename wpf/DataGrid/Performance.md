@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance tips in WPF DataGrid control | Syncfusion
-description: Learn about Performance tips support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about performance tips in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

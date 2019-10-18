@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional styling in WPF DataGrid control | Syncfusion
-description: Learn about Conditional styling support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about conditional styling support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row drag and drop in WPF DataGrid control | Syncfusion
-description: Learn about Row drag and drop support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about row drag and drop support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

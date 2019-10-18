@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in WPF DataGrid control | Syncfusion
-description: Learn about Localization support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about localization support to customize the default strings in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
