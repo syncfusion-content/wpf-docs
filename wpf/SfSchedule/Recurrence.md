@@ -97,7 +97,7 @@ Schedule.Appointments = AppCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler recurrence appointment](Recurrence/Recurrence-appointment.jpeg)
+![WPF scheduler recurrence appointment](Recurrence_images/Recurrence-appointment.jpeg)
 
 ## Creating Custom Recurrence Appointment using Recurrence Builder
 you need to create a custom class `Meeting` with mandatory fields `From`, `To`, `EventName` and `RecurrenceRule` to create custom recurrence appointment.
@@ -188,7 +188,7 @@ Meetings.Add(meeting);
 schedule.ItemsSource = Meetings;
 {% endhighlight %}
 
-![WPF scheduler custom recurrence appointment](Recurrence/Custom-Recurrence-Appointment.jpg)
+![WPF scheduler custom recurrence appointment](Recurrence_images/Custom-Recurrence-Appointment.jpg)
 
 You can download the entire source code of this demo from here [Custom recurrence appointment](https://github.com/SyncfusionExamples/SfSchedule_Recurrence_Appointment/tree/master/RecurrenceAppointment).
 
@@ -349,7 +349,7 @@ this.schedule.ItemsSource = Meetings;
 {% endhighlight %}
 {%endtabs%}
 
-![WPF scheduler recurrence exceptiondate](Recurrence/Recurrence-with-RecursiveExceptionDate.jpg)
+![WPF scheduler recurrence exceptiondate](Recurrence_images/Recurrence-with-RecursiveExceptionDate.jpg)
 
 You can download the entire source code of this demo from [GitHub](https://github.com/SyncfusionExamples/RecurreceExceptionDate_Demo).
 
