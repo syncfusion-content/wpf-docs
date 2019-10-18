@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Step Interval in WPF DoubleTextBox control | Syncfusion
-description: Learn about Step Interval support in Syncfusion WPF DoubleTextBox control and more details.
+description: Learn about Step Interval support in Syncfusion WPF DoubleTextBox control and more details about the control features.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Step Interval in WPF DoubleTextBox
 
-The `DoubleTextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The `DoubleTextBox` control allows you to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
  For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
 
@@ -38,7 +38,7 @@ doubleTextBox.ScrollInterval = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox value changing by Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
+![Changing the DoubleTextBox value by the Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
 
 ## Change Value on Mouse Wheel
 
@@ -63,7 +63,7 @@ doubleTextBox.ScrollInterval = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox value changing by Mouse Wheel](Step-Interval_images/Step-Interval_Mouse-Wheel.png)
+![Changing the DoubleTextBox value by Mouse Wheel](Step-Interval_images/Step-Interval_Mouse-Wheel.png)
 
 ## Change Value on Click and Drag
 
@@ -87,7 +87,7 @@ doubleTextBox.EnableExtendedScrolling = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox value changing by Click and Drag](Step-Interval_images/Step-Interval_DragandDrop.jpeg)
+![Changing the DoubleTextBox value by Click and Drag](Step-Interval_images/Step-Interval_DragandDrop.jpeg)
 
 
 ## Select All on focus
@@ -108,10 +108,10 @@ doubleTextBox.TextSelectionOnFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-### TextSelectionOnFocus="False"
+### TextSelectionOnFocus = "False"
 
-![WPF DoubleTextBox TextSelectionOnFocus disabled](Step-Interval_images/Step-Interval_DragandDrop_SelectionFalse.png)
+![DoubleTextBox TextSelection On Focus disabled](Step-Interval_images/Step-Interval_DragandDrop_SelectionFalse.png)
 
-### TextSelectionOnFocus="True"
+### TextSelectionOnFocus = "True"
 
-![WPF DoubleTextBox TextSelectionOnFocus enabled](Step-Interval_images/Step-Interval_DragandDrop_SelectionTrue.png)
+![WPF DoubleTextBox TextSelection On Focus enabled](Step-Interval_images/Step-Interval_DragandDrop_SelectionTrue.png)

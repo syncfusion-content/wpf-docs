@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changing Double Value in WPF DoubleTextBox control | Syncfusion
-description: Learn about Changing Double Value support in Syncfusion WPF DoubleTextBox control and more details.
+description: Learn here about Changing Double Value with Syncfusion WPF DoubleTextBox control and more details about the control features.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug
@@ -42,6 +42,7 @@ Data binding is the process of establishing a connection between the application
 {% endhighlight %}
 {%endtabs%}
 
+![DoubleTextBox value binding](Changing-Double-Value_images/ValueBinding.png)
 
 ## Value Changed Event
 
@@ -49,11 +50,17 @@ The `DoubleTextbox` control can notify changes in value through the `ValueChange
 
 
 {%tabs%}
-{% highlight xaml %} <syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/>{% endhighlight %}
+{% highlight xaml %}
 
-{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.ValueChanged += new PropertyChangedCallback(DoubleTextBox_ValueChanged);{% endhighlight %}
+<syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/>
 
+{% endhighlight %}
+{% highlight C# %} 
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.ValueChanged += new PropertyChangedCallback(DoubleTextBox_ValueChanged);
+
+{% endhighlight %}
 {%endtabs%}
 
 You can handle the event as follows:
@@ -71,7 +78,7 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 {% endhighlight %}
 {% endtabs %}
 
-## Setting Null Value
+## Setting the Null value
 
 The `DoubleTextBox` accepts `null` values. By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can change this to display some other  value using the  [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property must be enabled to view the specified `NullValue`. By default `UseNullOption` value is `false`.
 
@@ -93,16 +100,16 @@ doubleTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox null value](Changing-Double-Value_images/NullValue.jpeg)
+![Setting Null value in DoubleTextBox](Changing-Double-Value_images/NullValue.jpeg)
 
 
-## Setting Watermark
+## Setting Watermark Text
 
 We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is `true` and the text is empty, control not in focus and the `UseNullOption` is `true`.
 
 N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `DoubleTextBox` control. If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
 
-### Setting WaterMark Foreground
+### Setting the WatermarkText Foreground
 
 The `DoubleTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WaterMarkTextForeground.html) property. The default color of `WaterMarkTextForeground` is `Black`.
 
@@ -127,7 +134,7 @@ doubleTextBox.WatermarkTextForeground = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox WatermarkText foreground](Changing-Double-Value_images/WaterMark-Foreground.jpeg)
+![DoubleTextBox WatermarkText foreground](Changing-Double-Value_images/WaterMark-Foreground.jpeg)
 
 
 [WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) automatically collapses when the control is in focus. When the control loses its focus the WatermarkText comes to the visible state if the Value is null and the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) is true.
@@ -166,7 +173,7 @@ UseNullOption="True">
 
 {% endhighlight %}
 
-![WPF DoubleTextBox Watermark template](Changing-Double-Value_images/WaterMark-Template.png)
+![DoubleTextBox WatermarkText appearance by WatermarkTemplate](Changing-Double-Value_images/WaterMark-Template.png)
 
 
 

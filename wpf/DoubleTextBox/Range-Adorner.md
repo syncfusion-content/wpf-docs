@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Range Adorner in WPF DoubleTextBox control | Syncfusion
-description: Learn about Range Adorner support in Syncfusion WPF DoubleTextBox control and more details.supports. 
+description: Learn about Range Adorner support in Syncfusion WPF DoubleTextBox control and more details about the control features.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug
@@ -31,8 +31,8 @@ doubleTextBox.RangeAdornerBackground = Brushes.LightGreen;
 
 **Default RangeAdornerBackground**
 
-![WPF DoubleTextBox default Range Adorner](Range-Adorner_images/Range-Adorner_img1.png)
+![DoubleTextBox default background of Range Adorner ](Range-Adorner_images/Range-Adorner_img1.png)
 
 **RangeAdornerBackground = "LightGreen"**
 
-![WPF DoubleTextBox customized Range adorner background](Range-Adorner_images/Range-Adorner_img2.png)
+![DoubleTextBox customized background of Range Adorner ](Range-Adorner_images/Range-Adorner_img2.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF DoubleTextBox control | Syncfusion
-description: Learn about Appearance support in Syncfusion WPF DoubleTextBox control and more details.
+description: Learn about Appearance support in Syncfusion WPF DoubleTextBox control and more details about the control features.
 platform: wpf
 control: DoubleTextBox
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF DoubleTextBox
 
-## Setting Foreground
+## Setting the Foreground
 
 The `DoubleTextBox` control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `DoubleTextBox` control.
 
@@ -42,18 +42,18 @@ doubleTextBox.PositiveForeground = Brushes.Blue;            doubleTextBox.ApplyN
 
 **PositiveForeground = "Blue"**
 
-![WPF DoubleTextBox Positive foreground](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
+![DoubleTextBox Positive foreground](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 **NegativeForeground = "SpringGreen"**
 
-![WPF DoubleTextBox Negative foreground](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
+![DoubleTextBox Negative foreground](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
 
 **ZeroColor = "DarkGoldenrod"**
 
-![WPF DoubleTextBox ZeroColor](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
+![DoubleTextBox ZeroColor](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
 
 
-## Setting Background
+## Setting the Background
 
 `DoubleTextBox` allows different brushes to fill the control. The [Background](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.background?view=netframework-4.8) property can be used to modify the control background color. The default color of `Background` is `White`.
 
@@ -74,9 +74,9 @@ doubleTextBox.Background = Brushes.Cyan;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox Background](Appearance-and-Styling-images/Appearance-and-Styling-Background.png)
+![DoubleTextBox Background](Appearance-and-Styling-images/Appearance-and-Styling-Background.png)
 
-## Setting Corner Radius
+## Setting the Corner Radius
 
 To rounded the corners of the DoubleTexBox, set the property [CornerRadius](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CornerRadius.html) with the desired values. The default value of `CornerRadius` property is 1.
 
@@ -108,7 +108,7 @@ doubleTextBox.CornerRadius = New CornerRadius(5)
 
 {% endtabs %}
 
-![WPF DoubleTextBox Corner radius](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
+![Corner radius of DoubleTextBox](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
 
 
 ## Theme
@@ -146,4 +146,4 @@ SkinStorage.SetVisualStyle(doubleTextBox, "Blend");
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox visual style](Appearance-and-Styling-images/Appearance-and-Styling-img8.jpeg)
+![DoubleTextBox Blend visual style](Appearance-and-Styling-images/Appearance-and-Styling-img8.jpeg)

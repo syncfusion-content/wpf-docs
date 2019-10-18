@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restriction or Validation in WPF DoubleTextBox control | Syncfusion
-description: Learn about Restriction or Validation support in Syncfusion WPF DoubleTextBox control and more details.
+description: Learn about Restriction or Validation support in Syncfusion WPF DoubleTextBox control and more details about the control features.
 platform: wpf
 control: DoubleTextBox 
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Restriction or Validation in WPF DoubleTextBox
 
-## Restrict within min and max value
+## Restrict the value within minimum and maximum value
 
 The `Value` of the `DoubleTextBox` can be restricted within the maximum and minimum limits. Once the value has reached the maximum or maximum value , the value does not exceed the limit. We can change the maximum and minimum limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property.
 
@@ -55,26 +55,23 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 Initially there is no value assigned to the DoubleTextBox. So it displays the default value as zero.
 
-![WPF DoubleTextBox default value](Restriction-or-Validation_images/Restriction-or-Validation_No-Value.jpeg)
+![DoubleTextBox default value](Restriction-or-Validation_images/Restriction-or-Validation_No-Value.jpeg)
 
 
 [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnLostFocus, so the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) will be performed only in the lost focus.
 
-![WPF DoubleTextBox MaxValidation On LostFocus](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
+![MaxValidation of DoubleTextBox On LostFocus](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
 
 
 [MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![MinValidation is set to OnKeyPress](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
+![MinValidation of DoubleTextBox On KeyPress](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
 
 ## Restrict number of decimal digit
 
 The `DoubleTextbox` allows the user to customize the number of digits to be displayed after the decimal point of `DoubleTextBox` value
 by using [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property.
 The decimal digit can be restricted within the maximum and minimum limits. Once the decimal digit has reached the maximum or maximum digit , the decimal digits does not exceed the limit. We can change the maximum and minimum decimal digits limit by using the [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html)
-
- N> [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property value will be allows set based on the in-between range of [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html) property values.
-
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,10 +93,11 @@ doubleTextBox.MaximumNumberDecimalDigits = 5;
 {% endtabs %}
 
 
-![WPF DoubleTextBox DecimalDigits](Restriction-or-Validation_images/DecimalDigits.png)
+![DoubleTextBox limits the number of decimal digits](Restriction-or-Validation_images/DecimalDigits.png)
 
+N> [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property value will be allows set based on the in-between range of [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html) property values.
 
-## Read only value
+## Read only mode
 
 The `DoubleTextBox` cannot allow the user input or edits and programmatic changes can be made when [IsReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonly?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_Primitives_TextBoxBase_IsReadOnly) property is sets to `true`. The user can still select text and the cursor on the `DoubleTextBox` can be displayed by setting the [IsReadOnlyCaretVisible](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives.textboxbase.isreadonlycaretvisible?view=netframework-4.8) property to `true`.
 
@@ -120,7 +118,7 @@ doubleTextBox.IsReadOnlyCaretVisible = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox readonly enabled](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
+![DoubleTextBox read-only mode enabled](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
 
 ## Validate Invalid Value
 

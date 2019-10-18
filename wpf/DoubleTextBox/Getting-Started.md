@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with WPF DoubleTextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF DoubleTextBox control and more details.
+description: Learn here about getting started with Syncfusion WPF DoubleTextBox control and more details about the control features.
 platform: WPF
 control: DoubleTextBox
 documentation: ug
@@ -24,7 +24,7 @@ You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/doubl
 
 The  control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.WPF assembly reference will be added automatically.
 
-![WPF DoubleTextBox control added by designer](Getting-Started_images/wpf-double-text-box-control-added-by-designer.png)
+![DoubleTextBox Control added by designer](Getting-Started_images/wpf-double-text-box-control-added-by-designer.png)
 
 ## Add WPF DoubleTextBox manually Via XAML
 
@@ -80,13 +80,11 @@ namespace DoubleTextBoxSample
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox control added by code](Getting-Started_images/wpf-double-text-box-control-added-manually.png)
+![DoubleTextBox control added by code](Getting-Started_images/wpf-double-text-box-control-added-manually.png)
 
-## Set value
+## Setting the value for DoubleTextBox
 
-The `DoubleTextBox` value is set by the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property.
-
-N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the DoubleTextBox. Use only the `Value` property.
+The value of the `DoubleTextBox` is set by the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -104,11 +102,15 @@ doubleTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox set Value](Getting-Started_images/Getting-Started-img3.jpeg)
+![Set the value for DoubleTextBox](Getting-Started_images/Getting-Started-img3.jpeg)
 
-### Binding Value
+N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the DoubleTextBox. Use only the `Value` property.
 
-Data binding is the method of forming a connection between the application  UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `DoubleTextBox` using the `Value`. Use the `Value` property to bind data to the `DoubleTextBox`.
+### DoubleTextBox Value Binding
+
+Data binding is the method of forming a connection between the application  UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `DoubleTextBox` using the `Value` Property.
+
+The following code snippets illustrate the value binding from one `DoubleTextBox` to another.
 
 {% tabs %}
 {% highlight XAML %}
@@ -119,7 +121,7 @@ Data binding is the method of forming a connection between the application  UI a
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox control value binding](Getting-Started_images/wpf-double-text-box-value-binding.png)
+![DoubleTextBox value binding](Getting-Started_images/wpf-double-text-box-value-binding.png)
 
 ## Value Changed Notification
 
@@ -151,16 +153,9 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 
 ## Setting Step Interval
 
-The `DoubletextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The `DoubleTextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
 
  For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up or Down Arrow keys and Mouse wheel scrolling up or down.
-
-
-You can increase or decrease the `Value` with specific interval by using the [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property. Based on `ScrollInterval`, the value increases or decreases while pressing the up and down arrow keys on the keyboard or mouse wheel over the control. The default value of `ScrollInterval` is 1.
-
- For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up or Down Arrow keys and Mouse's wheel scrolling up or down.
-
-N> Only by enabling the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Editorbase~IsScrollingOnCircle.html) property to `true`, you can increase or decrease the `Value` of the `DoubleTextBox` by using the Mouse wheel up or down.
 
 {% tabs %}
 {% highlight xaml %}
@@ -182,9 +177,11 @@ doubleTextBox.ScrollInterval = 4;
 {% endtabs %}
 Step-Interval.png
 
-![WPF DoubleTextBox Step Interval](Getting-Started_images/Step-Interval.png)
+![DoubleTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
 
-## Min Max Value Restriction
+N> Only by enabling the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Editorbase~IsScrollingOnCircle.html) property to `true`, you can increase or decrease the `Value` of the `DoubleTextBox` by using the Mouse wheel up or down.
+
+## Restriction of the minimum and maximum value
 
 The `Value` of `DoubleTextBox` can be restricted within maximum and minimum limit. You can define the minimum and maximum values by setting the [MinVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) and [MaxVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) properties. It allows the user to enter the value between `MinValue` and `MaxValue`. 
 
@@ -200,11 +197,13 @@ doubleTextBox.Height = 25;
 doubleTextBox.MinValue = -999.99;
 //Setting maximum value
 doubleTextBox.MaxValue = 999.99;
-this.Content = doubleTextBox;
+doubleTextBox.Value = 100;
 {% endhighlight %}
 {% endtabs %}
 
-## Setting Formatting
+![Restriction of the value of the DoubleTextBox by the minimum and maximum values](Getting-Started_images/Getting-Started-img3.jpeg)
+
+## Setting the Format
 
 You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties of `DoubleTextBox`.
 
@@ -230,14 +229,12 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 {% endhighlight %}
 {% endtabs %}
 
-![WPF DoubleTextBox control number format](Getting-Started_images/wpf-double-text-box-number-format.png)
+![Setting DoubleTextBox Number Format](Getting-Started_images/wpf-double-text-box-number-format.png)
 
 
-## Setting Culture
+## Setting the Culture
 
 The `DoubleTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. The `Culture` is used to format the decimal separator and group separator of the `DoubleTextBox` value based on the respective culture.
-
-N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
 {%tabs%}
 {% highlight xaml %} 
@@ -253,5 +250,7 @@ doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 {% endhighlight %}
 {%endtabs%}
 
-![WPF DoubleTextBox culture](Getting-Started_images/Getting-Started_img4.png)
+![Setting DoubleTextBox Culture](Getting-Started_images/Getting-Started_img4.png)
+
+N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
 
