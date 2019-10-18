@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Search and Highlight | Syncfusion
-description: How to perform search and filter the data in WPF DataGrid. Search highlight appearance can be customized.
+title: Search in WPF DataGrid control | Syncfusion
+description: Learn about search support to find the data displayed in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# WPF DataGrid - Search and Highlight
+# Search in WPF DataGrid (SfDataGrid)
 
 DataGrid control allows you to search the data displayed in the SfDataGrid. You can search the data by using [SearchHelper.Search](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SearchHelper~Search.html) method.
 
