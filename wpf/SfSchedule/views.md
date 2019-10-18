@@ -1,52 +1,54 @@
 ---
 layout: post
-title: DayView with WPF Scheduler | Syncfusion
-description: This section explains about the DayView settings and that appearance customization for WPF Scheduler.
+title: Views with WPF Scheduler | Syncfusion
+description: This section explains about the DayView, WeekView and WorkWeekView settings and that appearance customization for WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-## DayView
-`Day` view is used to view a single day. By default, the current day will be visible. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
+## Views (DayView, WeekView and WorkWeekView)
+Scheduler provides the following different types of views in calendar those shared common properties to customize the calendar apperance.
 
-## Day Header Date Format
+* Day
+* Week
+* WorkWeek 
+
+By default, the current day will be visible in this views and default view is DayView in Scheduler control. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
+
+## Header Date Format
 The default Header date format of the day view can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfSchedule  ScheduleType="Day"
+<Schedule:SfSchedule
 HeaderDateFormat="dd-MMMM-yyyy">
 </Schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c#%}
 SfSchedule schedule = new SfSchedule();
 
-schedule.ScheduleType = ScheduleType.Day;
-
 schedule.HeaderDateFormat = "dd-MMMM-yyyy";
 
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler dayview header format](dayview_images/dayview-header-format.png)
+![WPF scheduler dayview header format](views_images/dayview-header-format.png)
 
-## Day Header Background
+## Header Background
 
 The Header background can be changed by [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderBackground.html) property.
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfSchedule  ScheduleType="Day" HeaderBackground="LightSkyBlue" />
+<Schedule:SfSchedule HeaderBackground="LightSkyBlue" />
 {% endhighlight %}
 {% highlight c#%}
-schedule.ScheduleType = ScheduleType.Day;
-
 schedule.HeaderBackground = Brushes.LightSkyBlue;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler dayview header background](dayview_images/dayview-header-background.png)
+![WPF scheduler dayview header background](views_images/dayview-header-background.png)
 
 ## Change Time Interval
 By setting schedulers [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeInterval.html) property, you can configure the timeslots interval for day view.
@@ -54,40 +56,37 @@ By setting schedulers [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusi
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfSchedule  ScheduleType="Day" TimeInterval = "OneHour" />
+<Schedule:SfSchedule TimeInterval = "OneHour" />
 {% endhighlight %}
 {% highlight c#%}
-schedule.ScheduleType = ScheduleType.Day;
 schedule.TimeInterval = TimeInterval.OneHour;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler dayview timeinterval](dayview_images/dayview-time-interval.png)
+![WPF scheduler dayview timeinterval](views_images/dayview-time-interval.png)
 
 ## Change Time Interval Height
 By setting the schedulers [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property, you can configure the timeslots interval for day view.
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfSchedule  ScheduleType="Day" IntervalHeight = 100 />
+<Schedule:SfSchedule IntervalHeight = 100 />
 {% endhighlight %}
 {% highlight c#%}
-schedule.ScheduleType = ScheduleType.Day;
 schedule.IntervalHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler dayview interval height](dayview_images/dayview-interval-height.png)
+![WPF scheduler dayview interval height](views_images/dayview-interval-height.png)
 
 ### Full screen scheduler
 Scheduler time interval height can be adjusted based on screen height by changing the value of `IntervalHeight` property to -1. It will auto-fit to the screen height and width.
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfSchedule  ScheduleType="Day" IntervalHeight = -1 />
+<Schedule:SfSchedule IntervalHeight = -1 />
 {% endhighlight %}
 {% highlight c#%}
-schedule.ScheduleType = ScheduleType.Day;
 schedule.IntervalHeight = -1;
 {% endhighlight %}
 {% endtabs %}
@@ -97,34 +96,32 @@ Working hours in day view of Scheduler will be differentiated with non-working h
 
 {% tabs %}
 {% higligh xaml %}
-<schedule:SfSchedule x:Name="schedule" ScheduleType="Day" 
+<schedule:SfSchedule x:Name="schedule" 
                      WorkStartHour="9"
                      WorkEndHour="12"
                      IsHighLightWorkingHours="True"/>
 {% endhighlight %}
 {% highlight c# %}
-this.schedule.ScheduleType = ScheduleType.Day;
 this.schedule.WorkStartHour = 9;
 this.schedule.WorkEndHour = 12;
 this.schedule.IsHighLightWorkingHours = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler DayView working hours](dayview_images/dayview-working-hours.png)
+![WPF scheduler DayView working hours](views_images/dayview-working-hours.png)
 
 ### Change Non-Working hours Background
 By setting the Scheduler [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingHourBrush.html) property, you can adjust the background color for non-working hours.
 
 {% tabs %}
 {% higligh xaml %}
-<schedule:SfSchedule x:Name="schedule" ScheduleType="Day" 
+<schedule:SfSchedule x:Name="schedule" 
                      WorkStartHour="9"
                      WorkEndHour="12"
                      NonWorkingHourBrush="LightSteelBlue"
                      IsHighLightWorkingHours="True"/>
 {% endhighlight %}
 {% highlight c# %}
-this.schedule.ScheduleType = ScheduleType.Day;
 this.schedule.WorkStartHour = 9;
 this.schedule.WorkEndHour = 12;
 this.schedule.NonWorkingHourBrush = Brushes.LightSteelBlue;
@@ -132,34 +129,33 @@ this.schedule.IsHighLightWorkingHours = true;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler DayView Non working hours background changes](dayview_images/dayview-non-working-hours-background.png)
+![WPF scheduler DayView Non working hours background changes](views_images/dayview-non-working-hours-background.png)
 
 ###  Display Working hours only
 Scheduler supports to display the working hours only by disabling the [ShowNonWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ShowNonWorkingHours.html) property.
 
 {% tabs %}
 {% higligh xaml %}
-<schedule:SfSchedule x:Name="schedule" ScheduleType="Day" 
+<schedule:SfSchedule x:Name="schedule" 
                      WorkStartHour="9"
                      WorkEndHour="12"
                      ShowNonWorkingHours="False"/>
 {% endhighlight %}
 {% highlight c# %}
-this.schedule.ScheduleType = ScheduleType.Day;
 this.schedule.WorkStartHour = 9;
 this.schedule.WorkEndHour = 12;
 this.schedule.ShowNonWorkingHours = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler DayView prevent Non working hours diplaying](dayview_images/dayview-display-working-hours)
+![WPF scheduler DayView prevent Non working hours diplaying](views_images/dayview-display-working-hours)
 
 ## Non-Accessible timeslots
 By using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlocks.html), you could limit or assign those time slots as non-accessible blocks, so you can allocate certain time slots to pre-defined events / activities such as lunch hour using `NonAccessibleBlocks` [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~StartHour.html), [EndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~EndHour.html), [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Label.html) and [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Background.html) properties.
 
 {% tabs %}
 {% higligh xaml %}
-<Schedule:SfSchedule ScheduleType="Day">
+<Schedule:SfSchedule>
     <Schedule:SfSchedule.NonAccessibleBlocks>
         <Schedule:NonAccessibleBlock Background="Black" StartHour="13" EndHour="14" Label="Lunch">
         </Schedule:NonAccessibleBlock> 
@@ -168,13 +164,12 @@ By using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfS
 {% endhighlight %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();
-schedule.ScheduleType = ScheduleType.Day;
 schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock() { Background = new SolidColorBrush(Colors.Black), StartHour = 13, EndHour = 14, Label = "Lunch" });
 this.grid.Children.Add(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler non accessible time slots](dayview_images/non-accessible-blocks.png)
+![WPF scheduler non accessible time slots](views_images/non-accessible-blocks.png)
 
 ### Customize Non-Accessible timeslots using template
 The NonAccessible timeslots can be customized by [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlockTemplate.html) property.
@@ -191,24 +186,36 @@ The NonAccessible timeslots can be customized by [NonAccessibleBlockTemplate](ht
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler non accessible time slots using template](dayview_images/non-accessible-blocks-template.png)
+![WPF scheduler non accessible time slots using template](views_images/non-accessible-blocks-template.png)
+
+## Change first day of week
+Scheduler supports the use of [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeek.html) property to switch the first week with any day.
+
+**Day** - `FirstDayOfWeek` of Scheduler is not applicable for DayView as it displays only one day.
+**Week** - By default, scheduler control will be rendered with Sunday as the first day of the week.
+**WorkWeek** - By default, scheduler control will be rendered with Monday as the first day. `SaturDay` and `Sunday` has considered as a non working days. You can customize that using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property.
+
+{% tabs %}
+{% higligh c# %}
+this.schedule.NonWorkingDays = DayOfWeek.Monday.ToString() + "," + DayOfWeek.Tuesday.ToString();
+{% endhighlight %}
+{% endtabs %}
 
 ## Time formatting
-You can customize the format for the time in day view by setting [MajorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickTimeFormat.html) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickTimeFormat.html) property.
+Scheduler supports to customize time format for this views by setting [MajorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickTimeFormat.html) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickTimeFormat.html) property.
 
 {% tabs %}
 {% higligh xaml %}
-<syncfusion:SfSchedule ScheduleType="Day" MajorTickTimeFormat="hh mm ss" MinorTickTimeFormat="mm ss"/>
+<syncfusion:SfSchedule MajorTickTimeFormat="hh mm ss" MinorTickTimeFormat="mm ss"/>
 {% endhighlight %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();
-schedule.ScheduleType = ScheduleType.Day;
 schedule.MajorTickTimeFormat = "hh mm ss";
 schedule.MinorTickTimeFormat = "hh mm ss";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF schedular dayview time formatting](dayview_images/dayview-time-formatting.png)
+![WPF schedular dayview time formatting](views_images/dayview-time-formatting.png)
 
 ## Time Label Appearance
 ### Changing Time Label Foreground
@@ -216,31 +223,29 @@ By setting scheduler's [MinorTickLabelStroke](https://help.syncfusion.com/cr/wpf
 
 {% tabs %}
 {% higligh xaml %}
-<syncfusion:SfSchedule ScheduleType="Day" MajorTickLabelStroke="DarkRed" MinorTickLabelStroke="Red"/>
+<syncfusion:SfSchedule MajorTickLabelStroke="DarkRed" MinorTickLabelStroke="Red"/>
 {% endhighlight %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();
-schedule.ScheduleType = ScheduleType.Day;
 schedule.MajorTickLabelStroke = Brushes.DarkRed;
 schedule.MinorTickLabelStroke = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler dayview time label foreground changes](dayview_images/dayview-time-label-foreground.png)
+![WPF scheduler dayview time label foreground changes](views_images/dayview-time-label-foreground.png)
 
 ### Changing Time Label Strokes
 By setting Scheduler's [MajorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStroke.html) and [MinorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStroke.html) property, you can customize the border color of the labels that mention the time. 
 
 {% tabs %}
 {% higligh xaml %}
-<syncfusion:SfSchedule ScheduleType="Day" MajorTickStroke="LawnGreen" MinorTickStroke="LightBlue"/>
+<syncfusion:SfSchedule MajorTickStroke="LawnGreen" MinorTickStroke="LightBlue"/>
 {% endhighlight %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();
-schedule.ScheduleType = ScheduleType.Day;
 schedule.MajorTickStroke = Brushes.LawnGreen;
 schedule.MinorTickStroke = Brushes.LightBlue;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler dayview time label border color changes](dayview_images/dayview-time-label-border.png)
+![WPF scheduler dayview time label border color changes](views_images/dayview-time-label-border.png)
