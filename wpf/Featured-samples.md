@@ -1,38 +1,46 @@
 ---
 layout: post
-title: Guidance to run the online and offline samples | WPF | Syncfusion
-description: Learn how to run the online samples and offline samples of Syncfusion Essential Studio WPF  controls and components.
+title: Guide to run online and offline samples from WPF Studio | Syncfusion
+description: Learn how to run the online samples and offline samples of Syncfusion Essential Studio WPF controls and components.
 platform: wpf
 control: Featured Samples
 documentation: ug
 ---
 
-#Featured Samples 
+# Featured Samples 
 
-## Guide to run the samples
+## Syncfusion WPF Controls Panel
 
-To run the samples, search it from Start by name of "Dashboard"
+To explore Syncfusion WPF controls and components, Open `Syncfusion WPF Controls Panel` by searching it from start and open. 
 
-![Guidetorunthesamples](Guidetorunthesamples_images/dashboardsearch.png)
+![WFP Control Panel Search](Guidetorunthesamples_images/wpf-control-panel-search.png)
 
-Else open the Dashboard from the following installed location:
+In another way, Open the Control Panel from the following installed location,
 
-C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Infrastructure\Dashboard\4.0\Dashboard.exe
+C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\{{ site.releaseversion }}\Infrastructure\Launcher\Syncfusion WPF Control Panel.exe
 
-N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
+N> In above section, Latest Essential Studio version details has been provided. You can refer installed Essential Studio version instead of mentioned version.
 
+![Syncfusion WPF Controls Panel](Guidetorunthesamples_images/syncfusion-wpf-controls-panel.PNG)
 
-![Guidetorunthesamples](Guidetorunthesamples_images/Guidetorunthesamples_img1.jpeg)
+## WPF Sample Browser
 
+To explore the locally installed demos, click `Run Local Demos` which will open `WPF Sample Browser`.
 
-To execute the locally installed samples, select the corresponding product and click "RUN LOCAL SAMPLES".
-
-## Online Samples
-
-To execute the online [samples](https://wpf.syncfusion.com/samples.html) click “ONLINE SAMPLES” that navigates to ClickOnce download. 
+![Syncfusion WPF Sample Browser](Guidetorunthesamples_images/syncfusion-wpf-sample-browser.PNG)
 
 ## Offline samples
 
-Featured samples are installed along with the Essential Studio installation by Syncfusion installer. The samples are available in “[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\WPF\samples"
+`Syncfusion WPF Sample Browser` compile and launch the samples installed by Syncfusion installer. The samples are available in the following installed location where you can make changes and further exploration of controls.
 
-N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
+C:\Users\Public\Documents\Syncfusion\WPF\{{ site.releaseversion }}\
+
+## Online Samples
+
+To explore the online [samples](https://wpf.syncfusion.com/samples.html) click `Ru Online Demos` in `Syncfusion WPF Controls Panel` that navigates to `ClickOnce` download. 
+
+## GitHub Demos
+
+You can explore Syncfusion WPF controls using [GitHub WPF demos](https://github.com/syncfusion/wpf-demos) where all wpf demos are configured using `NuGet` to run without installing Syncfusion WPF Studio. 
+
+N> Explore Syncfusion Controls in [GitHub](https://github.com/syncfusion/wpf-demos).
