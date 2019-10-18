@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with WPF DataGrid control | DataGrid Example | Syncfusion
+title: Getting started with WPF DataGrid control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF DataGrid (SfDataGrid) control and more details. 
 platform: wpf
 control: SfDataGrid
