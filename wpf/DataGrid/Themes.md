@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Themes | DataGrid | WPF | Syncfusion
-description: How to apply themes in SfDataGrid
+title: Themes in WPF DataGrid control | Syncfusion
+description: Learn about Themes support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Themes
+# Themes in WPF DataGrid (SfDataGrid)
 
 SfDataGrid provides built-in themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provides support to create custom theme using [theme studio](https://help.syncfusion.com/wpf/themes/theme-studio). 
 

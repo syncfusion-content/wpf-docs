@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging | DataGrid | WPF | Syncfusion
-description: How to use the SfDataPager with SfDataGrid.
+title: Paging in WPF DataGrid control | Syncfusion
+description: Learn about Paging support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Paging
+# Paging in WPF DataGrid (SfDataGrid)
 
 SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](http://help.syncfusion.com/wpf/sfdatapager) control user guide for more information.
 

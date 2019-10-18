@@ -1,14 +1,14 @@
 ---
 layout: post
-title: WPF DataGrid Clipboard Operations | Copy to Clipboard | Syncfusion
-description: How to perform copy, cut and paste clipboard operations in WPF DataGrid as well as explaining various available clipboard operation customizations.
+title: Clipboard Operations in WPF DataGrid control | Syncfusion
+description: Learn about Clipboard Operations support in Syncfusion WPF DataGrid (SfDataGrid) control and more details. 
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Clipboard Operations
+# Clipboard Operations in WPF DataGrid (SfDataGrid)
 
 SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl+C</kbd> and also can paste the content from [Clipboard](https://msdn.microsoft.com/en-us/library/system.windows.clipboard.aspx) to SfDataGrid by pressing <kbd>Ctrl+V</kbd>.
 

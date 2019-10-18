@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid CRUD Operations | Data Manipulation | Syncfusion
-description: Describes add new row, delete row support in WPF DataGrid  and its customization. Also, explains how wpf datagrid manages data updates.
+title: CRUD Operations Validation in WPF DataGrid control | Syncfusion
+description: Learn about CRUD Operations support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# CRUD operations
+# CRUD operations in WPF DataGrid (SfDataGrid)
 
 DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/datagrid/editing), [add new row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#built-in-addnewrow), [delete row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#deletion) by pressing delete key.
 

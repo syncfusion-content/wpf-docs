@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization | DataGrid | WPF | Syncfusion
-description: How to localize the SfDataGrid.
+title: Localization in WPF DataGrid control | Syncfusion
+description: Learn about Localization support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Localization 
+# Localization in WPF DataGrid (SfDataGrid)
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfDataGrid by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting `CurrentUICulture` before `InitializeComponent()` method. 
 

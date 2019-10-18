@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Rows | Header Row | Freeze Panes | Syncfusion
-description: Explains the WPF DataGrid row kinds. Also, explains customizations of the freeze panes, row header, and header row. 
+title: Rows in WPF DataGrid control | Syncfusion
+description: Learn about Rows support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Rows
+# Rows in WPF DataGrid (SfDataGrid)
 
 This section explains about various row types in SfDataGrid.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Unbound Rows | DataGrid | WPF | Syncfusion
-description: How to create Unbound Rows in SfDataGrid.
+title: Unbound Rows in WPF DataGrid control | Syncfusion
+description: Learn about Unbound Rows support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Unbound Rows 
+# Unbound Rows in WPF DataGrid (SfDataGrid)
 
 SfDataGrid allows you to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRows.html) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be exported and printed.
 

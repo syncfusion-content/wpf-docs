@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers | SfDataGrid | WPF | Syncfusion
-description: helpers
+title: Helpers in WPF DataGrid control | Syncfusion
+description: Learn about Helpers support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Helpers
+# Helpers in WPF DataGrid (SfDataGrid)
 
 ## IndexResolver
 

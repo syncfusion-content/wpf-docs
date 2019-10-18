@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Column Chooser | Syncfusion
-description: WPF DataGrid column chooser allows end users to drag and drop columns between datagrid and column chooser UI to display or hide columns in datagrid at runtime.
+title: Interactive Features in WPF DataGrid control | Syncfusion
+description: Learn about Interactive Features support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in WPF DataGrid (SfDataGrid)
 
 ## Column Chooser
 

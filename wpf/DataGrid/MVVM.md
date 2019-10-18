@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid MVVM | Data Binding | Syncfusion
-description: Covers various common use cases of using WPF DataGrid in MVVM pattern.
+title: MVVM in WPF DataGrid control | Syncfusion
+description: Learn about MVVM support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# DataGrid - MVVM
+# MVVM in WPF DataGrid (SfDataGrid)
 
 ## DataGrid SelectedItem Binding
 

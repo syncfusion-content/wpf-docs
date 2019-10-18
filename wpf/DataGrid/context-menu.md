@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Context Menu | Syncfusion
-description: Describes how to create and assign context menu for wpf datagrid rows. Different context menu can be assigned to different types of rows.  
+title: Context Menu in WPF DataGrid control | Syncfusion
+description: Learn about Context Menu support in Syncfusion WPF DataGrid (SfDataGrid) control and more details. 
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# DataGrid - Context Menu
+# Context Menu in WPF DataGrid (SfDataGrid)
 
 DataGrid provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
 
