@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging in WPF DataGrid control | Syncfusion
-description: Learn about Paging support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about paging support (pagination) in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

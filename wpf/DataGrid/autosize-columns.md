@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutoSize Columns in WPF DataGrid control | Syncfusion
-description: Learn about AutoSize Columns support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+title: AutoSize columns in WPF DataGrid control | Syncfusion
+description: Learn about autosize the columns with different options (columns to fit its content) in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

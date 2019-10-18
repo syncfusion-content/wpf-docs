@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in WPF DataGrid control | Syncfusion
-description: Learn about Filtering support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about filtering the data (Excel-like filter) support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

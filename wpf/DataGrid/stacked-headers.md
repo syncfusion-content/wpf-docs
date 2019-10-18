@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked Headers in WPF DataGrid control | Syncfusion
-description: Learn about Stacked Headers support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about stacked headers (multiple-column headers) support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

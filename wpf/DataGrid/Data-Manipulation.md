@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CRUD Operations Validation in WPF DataGrid control | Syncfusion
-description: Learn about CRUD Operations support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+title: CRUD operations in WPF DataGrid control | Syncfusion
+description: Learn about CRUD operations to manipulate the data in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug

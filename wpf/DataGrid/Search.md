@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Search in WPF DataGrid control | Syncfusion
-description: Learn about Search support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
+description: Learn about search support to find the data displayed in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
