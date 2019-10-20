@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Binding | Syncfusion
-description: Explains binding datagrid with different collection and service provider. Also, explains connecting with Linq to SQL, ADO.NET, Entity Framework and etc. 
+title: Data binding in WPF DataGrid control | Syncfusion
+description: Learn about data binding (List, ObservableCollection, DataTable and so on) support in Syncfusion WPF DataGrid (SfDataGrid) control and more details. 
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# DataGrid - Data Binding
+# Data Binding in WPF DataGrid (SfDataGrid)
 
 SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property.
 
