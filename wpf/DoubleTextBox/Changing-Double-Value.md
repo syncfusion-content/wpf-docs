@@ -80,19 +80,43 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 
 ## Setting the Null value
 
-The `DoubleTextBox` accepts `null` values. By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can change this to display some other value or `null` value using the [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property must be enabled to view the specified `NullValue`. By default `UseNullOption` value is `false`.
+The `DoubleTextBox` accepts `null` values. By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can change this to display some other value or `null` value using the [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property must be enabled to view the specified `NullValue`. By default `UseNullOption` value is `false`. When you set the null value to the `NullValue` property, the value of the `NullValue` property will be assigned to the `Value` property.
+ 
+**Null Value = Null**
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
-                          Width="150" UseNullOption="True" NullValue="10"/>
+                          Width="100" UseNullOption="True"  NullValue="{x:Null}"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 150;
+doubleTextBox.Width = 100;
+doubleTextBox.Height = 25;
+doubleTextBox.NullValue = null;
+doubleTextBox.UseNullOption = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting null as NullValue in DoubleTextBox](Changing-Double-Value_images/NullValue_null.png)
+
+**Null Value = 10**
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
+                          Width="100" UseNullOption="True" NullValue="10"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.NullValue = 10;
 doubleTextBox.UseNullOption = true;
