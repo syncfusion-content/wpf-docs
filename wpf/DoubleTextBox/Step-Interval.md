@@ -9,7 +9,7 @@ documentation: ug
 
 # Step Interval in WPF DoubleTextBox
 
-The `DoubleTextBox` control allows you to increase or decrease the value within the minumum and maximum value limits by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The `DoubleTextBox` control allows you to increase or decrease the value within the minimum and maximum value limits by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
  For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
 
