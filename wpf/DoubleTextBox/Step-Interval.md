@@ -44,7 +44,7 @@ doubleTextBox.ScrollInterval = 2;
 
 ## Change Value on Mouse Wheel
 
-The `DoubleTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~IsScrollingOnCircle.html) property is true.
+The `DoubleTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the `IsScrollingOnCircle` property is true.
 
 {% tabs %}
 {% highlight XAML %}

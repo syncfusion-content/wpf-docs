@@ -223,7 +223,7 @@ You can customize the number format by either setting the [NumberFormat](https:/
 {% tabs %}
 {% highlight XAML %}
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="200" Value="123456789012345">
-    <syncfusion:DoubleTextBox.NumberFormat>
+    <syncfusion:DoubleTextBox.NumberFormat >
         <numberformat:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4" NumberDecimalSeparator="*"/>
     </syncfusion:DoubleTextBox.NumberFormat>
 </syncfusion:DoubleTextBox>

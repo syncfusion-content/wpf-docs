@@ -11,7 +11,7 @@ documentation: ug
 
 ## Restrict the value within minimum and maximum value
 
-The `Value` of the `DoubleTextBox` can be restricted within the maximum and minimum limits. Once the value has reached the maximum or maximum value , the value does not exceed the limit. We can change the maximum and minimum limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property.
+The `Value` of the `DoubleTextBox` can be restricted within the maximum and minimum limits. Once the value has reached the maximum or maximum value , the value does not exceed the limit. We can change the maximum and minimum limits by using the `MinValue` property and `MaxValue` property.
 
 You can choose when to validate the maximum and minimum limits while changing the values by using the [MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) and [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) properties.
 
@@ -53,11 +53,11 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 {% endhighlight %}
 {% endtabs %}
 
-[MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
+`MinValidation` is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
 ![MinValidation of DoubleTextBox On KeyPress](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
 
-[MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnLostFocus, so the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) will be performed only in the lost focus.
+`MaxValidation` is set to OnLostFocus, so the `MaxValidation` will be performed only in the lost focus.
 
 ![MaxValidation of DoubleTextBox On LostFocus](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
 
@@ -92,7 +92,7 @@ doubleTextBox.MaximumNumberDecimalDigits = 5;
 
 ![DoubleTextBox limits the number of decimal digits](Restriction-or-Validation_images/DecimalDigits.png)
 
-N> [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property value will be allows set based on the in-between range of [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html) property values.
+N> `NumberDecimalDigits` property value will be allows set based on the in-between range of `MinimumNumberDecimalDigits` and `MaximumNumberDecimalDigits` property values.
 
 ## Read only mode
 
@@ -129,7 +129,7 @@ It includes the following three behaviors,
 
 ### Display ErrorMessage  
 
-If the user enters incorrect data, the error message will only be shown by setting the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property as `DisplayErrorMessage`.
+If the user enters incorrect data, the error message will only be shown by setting the `InvalidValueBehavior` property as `DisplayErrorMessage`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -149,7 +149,7 @@ doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage;
 
 ### No Operation  
 
-If the user enters incorrect data, no operation is performed by setting the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property as `None`.
+If the user enters incorrect data, no operation is performed by setting the `InvalidValueBehavior` property as `None`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -170,7 +170,7 @@ doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.None;
 
 ### Reset Value  
 
-If the user enters incorrect data, `Value` of the `DoubleTextBox` is reset by setting the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property as `ResetValue`.
+If the user enters incorrect data, `Value` of the `DoubleTextBox` is reset by setting the `InvalidValueBehavior` property as `ResetValue`.
 
 {% tabs %}
 {% highlight XAML %}

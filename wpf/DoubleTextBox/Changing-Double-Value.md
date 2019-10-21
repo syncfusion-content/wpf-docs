@@ -9,7 +9,7 @@ documentation: ug
 
 # Changing Double Value in WPF DoubleTextBox
 
-The `DoubleTextBox` allows the user to change the value using the [Value](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~Value.html) property.
+The `DoubleTextBox` allows the user to change the value using the `Value` property.
 
 %tabs%}
 {% highlight xaml %}
@@ -135,7 +135,7 @@ doubleTextBox.WatermarkTextForeground = Brushes.Red;
 ![DoubleTextBox WatermarkText foreground](Changing-Double-Value_images/WaterMark-Foreground.jpeg)
 
 
-[WatermarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) automatically collapses when the control is in focus. When the control loses its focus the WatermarkText comes to the visible state if the Value is null and the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) is true.
+`WatermarkText` automatically collapses when the control is in focus. When the control loses its focus the WatermarkText comes to the visible state if the Value is null and the `WatermarkTextIsVisible` is true.
 
 ### Setting Watermark Template
 
@@ -149,7 +149,7 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
                           WatermarkText="Type Here" CornerRadius="3" 
                           WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
                           UseNullOption="True">
-    <syncfusion:DoubleTextBox.WatermarkTemplate>
+    <syncfusion:DoubleTextBox.WatermarkTemplate >
         <DataTemplate>
             <Border Background="LightGray">
                 <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>

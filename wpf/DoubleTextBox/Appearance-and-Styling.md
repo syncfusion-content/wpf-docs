@@ -35,7 +35,11 @@ DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 10;
-doubleTextBox.PositiveForeground = Brushes.Blue;            doubleTextBox.ApplyNegativeForeground = true;            doubleTextBox.NegativeForeground = Brushes.SpringGreen;           doubleTextBox.ApplyZeroColor = true;            doubleTextBox.ZeroColor = Brushes.DarkGoldenrod;
+doubleTextBox.PositiveForeground = Brushes.Blue;
+doubleTextBox.ApplyNegativeForeground = true;   
+doubleTextBox.NegativeForeground = Brushes.SpringGreen;
+doubleTextBox.ApplyZeroColor = true;
+doubleTextBox.ZeroColor = Brushes.DarkGoldenrod;
 
 {% endhighlight %}
 {% endtabs %}
@@ -61,7 +65,7 @@ doubleTextBox.PositiveForeground = Brushes.Blue;            doubleTextBox.ApplyN
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="100"
-                          Height="25" Value ="80" Background="LightGreen"/>
+                          Height="25" Value ="80" Background="Cyan"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -96,16 +100,6 @@ doubleTextBox.Height = 25;
 doubleTextBox.CornerRadius = new CornerRadius(5);  
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim doubleTextBox As DoubleTextBox =  New DoubleTextBox() 
-doubleTextBox.Width = 100
-doubleTextBox.Height = 25
-doubleTextBox.CornerRadius = New CornerRadius(5)
-
-{% endhighlight %}
-
 {% endtabs %}
 
 ![Corner radius of DoubleTextBox](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
