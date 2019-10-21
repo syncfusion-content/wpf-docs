@@ -1,23 +1,27 @@
 ---
 layout: post
 title: Views with WPF Scheduler | Syncfusion
-description: This section explains about the DayView, WeekView and WorkWeekView settings and that appearance customization for WPF Scheduler.
+description: This section explains about the  appearance customization of Day, Week and WorkWeek for WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
 ## Views (DayView, WeekView and WorkWeekView)
-Scheduler provides the following different types of views in calendar those shared common properties to customize the calendar appearance.
+Scheduler provides the following different types of views.
 
-* Day
-* Week
-* WorkWeek 
+* Day view
+* Week view
+* WorkWeek view
+* Timeline View - Refer [scheduler timeline view]() documentation for more customization details.
+* Month View - Refer [scheduler month view]() documentation for more customization details.
 
-By default, the current day will be visible in this views and default view is DayView in Scheduler control. Appointments on a specific day will be scheduled on the basis of their duration in the respective time slots.
+This topic covers customization of day, week and workweek views of the scheduler which shares common properties.
+
+N> This topic explains all customization using day view. But the same applies for week and workweek views also. if you want to make customization specific to views, then please refer [link](#change-the-settings-based-on-the-views-at-run-time)
 
 ## Header Date Format
-The default Header date format of the day view can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
+The default header date format of the day view can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -249,3 +253,29 @@ schedule.MinorTickStroke = Brushes.LightBlue;
 {% endtabs %}
 
 ![WPF scheduler dayview time label border color changes](views_images/dayview-time-label-border.png)
+
+## Change the settings based on the views at run time
+[ScheduleTypeChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleTypeChanging_EV.html) event notify before that changing the `ScheduleType`. By this event, the appearance can be adjusted depending on the view. 
+
+{% tabs %}
+{% highlight c# %}
+this.schedule.ScheduleTypeChanging += Schedule_ScheduleTypeChanging;
+private void Schedule_ScheduleTypeChanging(object sender, ScheduleTypeChangingEventArgs e)
+{      
+    switch (e.NewValue)
+    {
+        case ScheduleType.Day:
+            this.schedule.HeaderDateFormat = "dd-MMM-yyyy";
+            break;
+        case ScheduleType.Week:
+            this.schedule.HeaderDateFormat = "dd-MMM";
+            break;
+        case ScheduleType.WorkWeek:
+            this.schedule.HeaderDateFormat = "dd MMM";
+            break;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+!{WPF Scheduler appearance customization based on ScheduleType at run time](views_images/dayview-runtime-changes.png)
