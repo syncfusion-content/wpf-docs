@@ -505,7 +505,7 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/sfspellchecker/getting-started">SpellChecker</a> (SfSpellChecker)
 </td>
 <td/>
-</td/>
+<td/>
 </tr>
 
 <tr>
