@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization of Day, Week and WorkWeek Views in WPF Scheduler | Syncfusion.
-description: This section explains about the  appearance customization of Day, Week and WorkWeek for WPF Scheduler.
+title: Customization of Day, Week and WorkWeek in WPF Scheduler | Syncfusion.
+description: This section explains about the  appearance customization of Day, Week and WorkWeek views for WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -21,7 +21,7 @@ This topic covers customization of day, week and workweek views of the scheduler
 N> This topic explains all customization using day view. But the same applies for week and workweek views also. if you want to make customization specific to views, then please refer [link](#change-the-settings-based-on-the-views-at-run-time)
 
 ## Header Date Format
-The default header date format of the day view can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
+The default header date format of the day, week and workweek view can be customized by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -41,7 +41,7 @@ schedule.HeaderDateFormat = "dd-MMMM-yyyy";
 
 ## Header Background
 
-The Header background can be changed by [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderBackground.html) property.
+The header background can be changed by [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderBackground.html) property.
 
 {% tabs %}
 {% highlight xaml %}
