@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WPF Extension | Wpf | Syncfusion
-description: The Syncfusion WPF Extensions provides you with quick access to Project Templates to create or configure the Syncfusion WPF Application
+title: Visual Studio Extension for WPF | Syncfusion
+description: The Syncfusion WPF Visual Studio Extensions provides you with quick access to Project Templates to create or configure the WPF Application.
 platform: wpf
 control: Syncfusion Extensions
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 The Syncfusion WPF Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio.The Syncfusion WPF Extensions supports Microsoft Visual Studio 2013 or higher.
 
-N> Syncfusion Extension is published in Visual Studio Marketplace. You can download WinForms Extensions [here](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFExtension).
+N> Syncfusion Extension is published in Visual Studio Marketplace. You can download WPF Extensions from [Visual Studio MarketPlace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.WPFExtension).
 
-I> The Syncfusion WPF menu option is available from v17.1.0.32.
+I> The Syncfusion WPF menu option is available from `v17.1.0.32`.
 
 The Syncfusion provides the following extension supports in Visual Studio:
 
