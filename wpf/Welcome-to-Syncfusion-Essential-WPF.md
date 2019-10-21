@@ -199,7 +199,7 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 </td>
 <td>
 <a href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a> (Presentation)
-<td>
+</td>
 </tr>
 
 <tr>
