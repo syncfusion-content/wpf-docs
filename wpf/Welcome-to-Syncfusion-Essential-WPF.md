@@ -33,7 +33,7 @@ Don't see what you need? Please request it in our [feedback portal](https://www.
 
 ## Controls List
 
-> Toolbox entry name provided if common control name and toolbox name differs.
+N> Toolbox entry name provided if common control name and toolbox name differs.
 
 <table>
 <tr>
@@ -422,7 +422,7 @@ Don't see what you need? Please request it in our [feedback portal](https://www.
 <a href="https://help.syncfusion.com/file-formats/docio/getting-started">Word</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/file-formats/presentation/getting-started">Powerpoint<a>
+<a href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint<a>
 <td>
 </tr>
 
