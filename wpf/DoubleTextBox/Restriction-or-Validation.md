@@ -53,19 +53,16 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 {% endhighlight %}
 {% endtabs %}
 
-Initially there is no value assigned to the DoubleTextBox. So it displays the default value as zero.
+[MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![DoubleTextBox default value](Restriction-or-Validation_images/Restriction-or-Validation_No-Value.jpeg)
-
+![MinValidation of DoubleTextBox On KeyPress](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
 
 [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnLostFocus, so the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) will be performed only in the lost focus.
 
 ![MaxValidation of DoubleTextBox On LostFocus](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
 
 
-[MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, it cannot let to enter a value less than the `MinValue`. If try to enter a value less than the `MinValue`, then the `MinValue` will set to the `Value` property because `MinValueOnExceedMinDigit` is set to `true`.
 
-![MinValidation of DoubleTextBox On KeyPress](Restriction-or-Validation_images/Restriction-or-Validation_MinValidation.jpeg)
 
 ## Restrict number of decimal digit
 

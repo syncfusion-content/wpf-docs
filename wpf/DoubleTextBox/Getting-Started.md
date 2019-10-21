@@ -157,34 +157,6 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 {% endhighlight %}
 {% endtabs %}
 
-## Setting the Step Interval
-
-The `DoubleTextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
-
- For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up or Down Arrow keys and Mouse wheel scrolling up or down.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" Value="8"
-                           IsScrollingOnCircle="True" ScrollInterval="4"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 150;
-doubleTextBox.Height = 25;
-doubleTextBox.Value = 8;
-doubleTextBox.IsScrollingOnCircle = true;
-doubleTextBox.ScrollInterval = 4;
-
-{% endhighlight %}
-{% endtabs %}
-
-![DoubleTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
-
-N> Only by enabling the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Editorbase~IsScrollingOnCircle.html) property to `true`, you can increase or decrease the `Value` of the `DoubleTextBox` by using the Mouse wheel up or down.
 
 ## Restriction of the minimum and maximum value
 
@@ -210,6 +182,39 @@ doubleTextBox.Value = 100;
 {% endtabs %}
 
 ![Restrict the value of DoubleTextBox by the minimum and maximum values](Getting-Started_images/Getting-Started-img3.jpeg)
+
+
+## Setting the Step Interval
+
+The `DoubleTextBox` control allows to increase or decrease the value within the minumum and maximum value limits by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
+
+ For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up or Down Arrow keys and Mouse wheel scrolling up or down.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" Value="8"
+                          MinValue="0" MaxValue="100" IsScrollingOnCircle="True" ScrollInterval="4"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 150;
+doubleTextBox.Height = 25;
+doubleTextBox.MinValue = 0;
+doubleTextBox.MaxValue = 100;
+doubleTextBox.Value = 8;
+doubleTextBox.IsScrollingOnCircle = true;
+doubleTextBox.ScrollInterval = 4;
+
+{% endhighlight %}
+{% endtabs %}
+
+![DoubleTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
+
+N> Only by enabling the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Editorbase~IsScrollingOnCircle.html) property to `true`, you can increase or decrease the `Value` of the `DoubleTextBox` by using the Mouse wheel up or down.
+
 
 ## Setting the Format
 

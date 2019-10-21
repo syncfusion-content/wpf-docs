@@ -9,7 +9,7 @@ documentation: ug
 
 # Step Interval in WPF DoubleTextBox
 
-The `DoubleTextBox` control allows you to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The `DoubleTextBox` control allows you to increase or decrease the value within the minumum and maximum value limits by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
  For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
 
@@ -23,7 +23,7 @@ The `DoubleTextBox` control allows you to increase or decrease the `Value` of `D
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
                           Height="25" Value ="10"
-                          ScrollInterval="2"/>
+                          MinValue="0" MaxValue="100" ScrollInterval="2"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -31,6 +31,8 @@ The `DoubleTextBox` control allows you to increase or decrease the `Value` of `D
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
+doubleTextBox.MinValue = 0;
+doubleTextBox.MaxValue = 100;
 doubleTextBox.Value = 10;
 doubleTextBox.IsScrollingOnCircle = true;
 doubleTextBox.ScrollInterval = 2;
@@ -47,8 +49,8 @@ The `DoubleTextBox` allows you to increase or decrease the `Value` based on the 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
-                          Height="25" Value ="37" IsScrollingOnCircle="True" ScrollInterval="3"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="34"
+                          MinValue="0" MaxValue="100" Value ="37" IsScrollingOnCircle="True" ScrollInterval="3"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -56,7 +58,9 @@ The `DoubleTextBox` allows you to increase or decrease the `Value` based on the 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
-doubleTextBox.Value = 37;
+doubleTextBox.MinValue = 0;
+doubleTextBox.MaxValue = 100;
+doubleTextBox.Value = 34;
 doubleTextBox.IsScrollingOnCircle = true;
 doubleTextBox.ScrollInterval = 3;
 
@@ -72,7 +76,8 @@ The `DoubleTextBox` allows you to increase or decrease the value based on the `S
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="120" Height="25" Value ="93" ScrollInterval="5" EnableExtendedScrolling="True"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="120" Height="25" Value ="88" 
+                          MinValue="0" MaxValue="100" ScrollInterval="5" EnableExtendedScrolling="True"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -80,7 +85,9 @@ The `DoubleTextBox` allows you to increase or decrease the value based on the `S
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 120;
 doubleTextBox.Height = 25;
-doubleTextBox.Value = 93;
+doubleTextBox.MinValue = 0;
+doubleTextBox.MaxValue = 100;
+doubleTextBox.Value = 88;
 doubleTextBox.ScrollInterval = 5;
 doubleTextBox.EnableExtendedScrolling = true;
 
@@ -110,8 +117,8 @@ doubleTextBox.TextSelectionOnFocus = true;
 
 ### TextSelectionOnFocus = "False"
 
-![DoubleTextBox TextSelection On Focus disabled](Step-Interval_images/Step-Interval_DragandDrop_SelectionFalse.png)
+![DoubleTextBox TextSelection On Focus disabled](Step-Interval_images/Step-Interval_TextSelectionFalse.png)
 
 ### TextSelectionOnFocus = "True"
 
-![WPF DoubleTextBox TextSelection On Focus enabled](Step-Interval_images/Step-Interval_DragandDrop_SelectionTrue.png)
+![WPF DoubleTextBox TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)

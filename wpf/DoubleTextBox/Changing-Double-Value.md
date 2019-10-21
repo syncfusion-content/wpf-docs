@@ -28,7 +28,7 @@ doubleTextBox.Value = 10;
 {% endhighlight %}
 {%endtabs%}
 
-![WPF DoubleTextBox setting value](Changing-Double-Value_images/SettingValue.jpeg)
+![DoubleTextBox setting value](Changing-Double-Value_images/SettingValue.jpeg)
 
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target).By assigning a value to the `Value` property by binding, you can change the `DoubleTextBox` value.
@@ -80,7 +80,7 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 
 ## Setting the Null value
 
-The `DoubleTextBox` accepts `null` values. By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can change this to display some other  value using the  [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property must be enabled to view the specified `NullValue`. By default `UseNullOption` value is `false`.
+The `DoubleTextBox` accepts `null` values. By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can change this to display some other value or `null` value using the [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property must be enabled to view the specified `NullValue`. By default `UseNullOption` value is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -106,8 +106,6 @@ doubleTextBox.UseNullOption = true;
 ## Setting Watermark Text
 
 We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is `true` and the text is empty, control not in focus and the `UseNullOption` is `true`.
-
-N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `DoubleTextBox` control. If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
 
 ### Setting the WatermarkText Foreground
 
@@ -147,33 +145,23 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
 
 {% highlight xaml %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"
-
-WatermarkText="Type Here" CornerRadius="3" 
-
-WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
-
-UseNullOption="True">
-
-<syncfusion:DoubleTextBox.WatermarkTemplate>
-
-<DataTemplate>
-
-<Border Background="LightGray">
-
-<TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
-
-</Border>
-
-</DataTemplate>
-
-</syncfusion:DoubleTextBox.WatermarkTemplate>
-
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="100" Height="25"
+                          WatermarkText="Type Here" CornerRadius="3" 
+                          WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
+                          UseNullOption="True">
+    <syncfusion:DoubleTextBox.WatermarkTemplate>
+        <DataTemplate>
+            <Border Background="LightGray">
+                <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+        </DataTemplate>
+    </syncfusion:DoubleTextBox.WatermarkTemplate>
 </syncfusion:DoubleTextBox>
+
 
 {% endhighlight %}
 
 ![DoubleTextBox WatermarkText appearance by WatermarkTemplate](Changing-Double-Value_images/WaterMark-Template.png)
 
 
-
+N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `DoubleTextBox` control. If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
