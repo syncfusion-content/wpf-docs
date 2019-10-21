@@ -20,13 +20,11 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Add WPF DoubleTextBox through designer
 
-You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control to an application by dragging it from the toolbox to a view of the designer.
-
-The  control can be added to an application by dragging it from the toolbox to a designer view. The Syncfusion.Shared.WPF assembly reference will be added automatically.
+You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control to an application by dragging it from the toolbox to a view of the designer. The **Syncfusion.Shared.WPF** assembly reference will be added automatically.
 
 ![DoubleTextBox Control added by designer](Getting-Started_images/wpf-double-text-box-control-added-by-designer.png)
 
-## Add WPF DoubleTextBox manually Via XAML
+## Add WPF DoubleTextBox manually via XAML
 
 To manually add the control in XAML, follow the following steps:
 
@@ -54,7 +52,7 @@ To manually add the control in XAML, follow the following steps:
 To add the control manually in C#, follow the given steps:
 
 1.	Add the **Syncfusion.Shared.WPF** assembly reference to the project. 
-2.	Import DoubleTextBox namespace **using Syncfusion.Windows.Shared;**.
+2.	Import the DoubleTextBox namespace **using Syncfusion.Windows.Shared;**.
 3.	Create an instance of the DoubleTextBox and add it to the window.
 
 {% tabs %}
@@ -72,6 +70,8 @@ namespace DoubleTextBoxSample
             InitializeComponent();
             //Creating an instance of DoubleTextBox control
             DoubleTextBox doubleTextBox = new DoubleTextBox();
+            doubleTextBox.Height = 25;
+            doubleTextBox.Width = 100;
             //Adding DoubleTextBox as window content
             this.Content = doubleTextBox;
         }
@@ -129,11 +129,17 @@ The `DoubleTextbox` control can notifies the value changes through the [ValueCha
 
 
 {%tabs%}
-{% highlight xaml %} <syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/>{% endhighlight %}
+{% highlight xaml %} 
 
-{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.ValueChanged += new PropertyChangedCallback(DoubleTextBox_ValueChanged);{% endhighlight %}
+<syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/>
 
+{% endhighlight %}
+{% highlight C# %} 
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.ValueChanged += new PropertyChangedCallback(DoubleTextBox_ValueChanged);
+
+{% endhighlight %}
 {%endtabs%}
 
 You can handle the event as follows:
@@ -151,7 +157,7 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 {% endhighlight %}
 {% endtabs %}
 
-## Setting Step Interval
+## Setting the Step Interval
 
 The `DoubleTextBox` control allows to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
 
@@ -172,10 +178,9 @@ doubleTextBox.Height = 25;
 doubleTextBox.Value = 8;
 doubleTextBox.IsScrollingOnCircle = true;
 doubleTextBox.ScrollInterval = 4;
-{% endhighlight %}
 
+{% endhighlight %}
 {% endtabs %}
-Step-Interval.png
 
 ![DoubleTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
 
@@ -187,9 +192,11 @@ The `Value` of `DoubleTextBox` can be restricted within maximum and minimum limi
 
 {% tabs %}
 {% highlight XAML %}
+
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="100" Height="25" Value="100" MaxValue="999.99" MinValue="-999.99"/>
 {% endhighlight %}
 {% highlight C# %}
+
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
@@ -198,10 +205,11 @@ doubleTextBox.MinValue = -999.99;
 //Setting maximum value
 doubleTextBox.MaxValue = 999.99;
 doubleTextBox.Value = 100;
+
 {% endhighlight %}
 {% endtabs %}
 
-![Restriction of the value of the DoubleTextBox by the minimum and maximum values](Getting-Started_images/Getting-Started-img3.jpeg)
+![Restrict the value of DoubleTextBox by the minimum and maximum values](Getting-Started_images/Getting-Started-img3.jpeg)
 
 ## Setting the Format
 
@@ -238,15 +246,18 @@ The `DoubleTextBox` provides support for globalization by using the [Culture](ht
 
 {%tabs%}
 {% highlight xaml %} 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
-{% endhighlight %}
 
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
+
+{% endhighlight %}
 {% highlight C# %} 
+
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 1234567;
 doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
+
 {% endhighlight %}
 {%endtabs%}
 
