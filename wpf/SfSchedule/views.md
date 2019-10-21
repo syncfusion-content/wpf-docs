@@ -13,8 +13,8 @@ Scheduler provides the following different types of views.
 * Day view
 * Week view
 * WorkWeek view
-* Timeline View - Refer [scheduler timeline view]() documentation for more customization details.
-* Month View - Refer [scheduler month view]() documentation for more customization details.
+* Timeline View - Refer [scheduler timeline view](https://help.syncfusion.com/wpf/sfschedule/getting-started#timeline-view) documentation for more customization details.
+* Month View - Refer [scheduler month view](https://help.syncfusion.com/wpf/sfschedule/getting-started#month-view) documentation for more customization details.
 
 This topic covers customization of day, week and workweek views of the scheduler which shares common properties.
 
@@ -254,8 +254,8 @@ schedule.MinorTickStroke = Brushes.LightBlue;
 
 ![WPF scheduler dayview time label border color changes](views_images/dayview-time-label-border.png)
 
-## Change the settings based on the views at run time
-[ScheduleTypeChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleTypeChanging_EV.html) event notify before that changing the `ScheduleType`. By this event, the appearance can be adjusted depending on the view. 
+## Change the schedule view settings based on the views at run time
+[ScheduleTypeChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleTypeChanging_EV.html) event notify before that changing the schedule view. By this event, the appearance can be adjusted depending on the view. 
 
 {% tabs %}
 {% highlight c# %}
