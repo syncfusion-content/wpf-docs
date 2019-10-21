@@ -9,7 +9,7 @@ documentation: ug
 
 # Welcome to Syncfusion WPF UI controls
 
-Essential WPF is a comprehensive collection of over 90+ enterprise-grade WPF components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including DataGrid, Charts, Diagram, Docking, Ribbon, Input controls and much more.
+Syncfusion Essential Studio for WPF is a comprehensive collection of over 90+ essential WPF controls like DataGrid, Chart, Diagram, and PDF Viewer for building powerful line-of-business Windows applications faster. Syncfusion WPF controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
 
 ## How to best read this user guide
 
@@ -18,22 +18,9 @@ Essential WPF is a comprehensive collection of over 90+ enterprise-grade WPF com
 * After integrated the component into application using one of the code examples as a starting point, it is likely that you may want additional information on specific features and API. The best option is to search the specific topic using the search box that is available at the top of the user guide.
 * Another valuable resource is the API reference that provides detailed information on the object hierarchy as well as the settings available on every object.
 
-## Additional help resources
-
-The [Knowledge Base](https://www.syncfusion.com/kb/wpf) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
-
-Similar to the [Knowledge Base](https://www.syncfusion.com/kb/wpf), the [Forum](https://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked in the past.
-
-## Support and feedback
-
-If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
-
-Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/wpf).
-
-
 ## Controls List
 
-N> Toolbox entry name provided if common control name and toolbox name differs.
+N> The name of the Visual Studio Toolbox entry provided inside brackets if the common control name and toolbox name differs.
 
 <table>
 <tr>
@@ -167,6 +154,56 @@ N> Toolbox entry name provided if common control name and toolbox name differs.
 
 <tr>
 <td colspan="4">
+<b>FILE VIEWERS & EDITORS</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/sfimageeditor/getting-started">ImageEditor</a> (SfImageEditor)
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/pdfviewer/getting-started">PDF Viewer</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/sfrichtextboxadv/getting-started">RichTextBox</a> (SfRichTextBoxAdv)
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/sfspreadsheet/getting-started">Spreadsheet</a> (SfSpreadsheet)
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/syntaxeditor/getting-started">Syntax Editor</a>
+</td>
+<td/>
+<td/>
+<td/>
+</tr>
+
+<tr>
+<td colspan="4">
+<b>FILE FORMAT FRAMEWORKS</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet">Excel</a> (XlsIO)
+</td>
+<td>
+<a href="https://help.syncfusion.com/file-formats/pdf/getting-started">PDF</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/file-formats/docio/getting-started">Word</a> (DocIO)
+</td>
+<td>
+<a href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a> (Presentation)
+<td>
+</tr>
+
+<tr>
+<td colspan="4">
 <b>NAVIGATION</b>
 </td>
 </tr>
@@ -290,21 +327,53 @@ N> Toolbox entry name provided if common control name and toolbox name differs.
 
 <tr>
 <td colspan="4">
-<b>REPORTING</b>
+<b>NOTIFICATION</b>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/reportdesigner/getting-started">Report Designer</a>
+<a href="https://help.syncfusion.com/wpf/sfbusyindicator/getting-started">Busy Indicator</a> (SfBusyIndicator)
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/reportwriter/getting-started">Report Writer</a>
+<a href="https://help.syncfusion.com/wpf/sfhubtile/getting-started">Hub Tile</a> (SfHubTile)
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/reportviewer/getting-started">Report Viewer</a>
+<a href="https://help.syncfusion.com/wpf/notifyicon/getting-started">Notify Icon</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/linear-progressbar/getting-started">SfLinearProgressBar</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/circular-progressbar/getting-started">SfCircularProgressBar</a>
 </td>
 <td/>
+<td/>
+<td/>
+</tr>
+
+<tr>
+<td colspan="4">
+<b>LISTS AND DROPDOWN</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/sftextboxext/getting-started">AutoComplete</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/checklistbox/getting-started">CheckListBox</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/comboboxadv/getting-started">ComboBox</a> (ComboBoxAdv)
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/sfmulticolumndropdown/getting-started">Multi Column Dropdown</a> (SfMultiColumnDropDown)
+</td>
 </tr>
 
 <tr>
@@ -360,6 +429,25 @@ N> Toolbox entry name provided if common control name and toolbox name differs.
 
 <tr>
 <td colspan="4">
+<b>REPORTING</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/reportdesigner/getting-started">Report Designer</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/reportwriter/getting-started">Report Writer</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/reportviewer/getting-started">Report Viewer</a>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="4">
 <b>BUSINESS INTELLIGENCE</b>
 </td>
 </tr>
@@ -390,6 +478,21 @@ N> Toolbox entry name provided if common control name and toolbox name differs.
 
 <tr>
 <td colspan="4">
+<b>DATA SCIENCE</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="">Predictive Analytics</a>
+</td>
+<td/>
+<td/>
+<td/>
+</tr>
+
+<tr>
+<td colspan="4">
 <b>MISCELLANEOUS</b>
 </td>
 </tr>
@@ -407,122 +510,6 @@ N> Toolbox entry name provided if common control name and toolbox name differs.
 
 <tr>
 <td colspan="4">
-<b>FILE FORMAT FRAMEWORKS</b>
-</td>
-</tr>
-
-<tr>
-<td>
-<a href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet">Excel<a>
-</td>
-<td>
-<a href="https://help.syncfusion.com/file-formats/pdf/getting-started">PDF</a>
-</td>
-<td>
-<a href="https://help.syncfusion.com/file-formats/docio/getting-started">Word</a>
-</td>
-<td>
-<a href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint<a>
-<td>
-</tr>
-
-<tr>
-<td colspan="4">
-<b>LISTS AND DROPDOWN</b>
-</td>
-</tr>
-
-<tr>
-<td>
-<a href="https://help.syncfusion.com/wpf/sftextboxext/getting-started">AutoComplete</a>
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/checklistbox/getting-started">CheckListBox</a>
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/comboboxadv/getting-started">ComboBox</a> (ComboBoxAdv)
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfmulticolumndropdown/getting-started">Multi Column Dropdown</a> (SfMultiColumnDropDown)
-</td>
-</tr>
-
-<tr>
-<td colspan="4">
-<b>DATA SCIENCE</b>
-</td>
-</tr>
-
-<tr>
-<td>
-<a href="">Predictive Analytics</a>
-</td>
-<td/>
-<td/>
-<td/>
-</tr>
-
-<tr>
-<td colspan="4">
-<b>NOTIFICATION</b>
-</td>
-</tr>
-
-<tr>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfbusyindicator/getting-started">Busy Indicator</a> (SfBusyIndicator)
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfhubtile/getting-started">Hub Tile</a> (SfHubTile)
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/notifyicon/getting-started">Notify Icon</a>
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/linear-progressbar/getting-started">SfLinearProgressBar</a>
-</td>
-</tr>
-
-<tr>
-<td>
-<a href="https://help.syncfusion.com/wpf/circular-progressbar/getting-started">SfCircularProgressBar</a>
-</td>
-<td/>
-<td/>
-<td/>
-</tr>
-
-<tr>
-<td colspan="4">
-<b>FILE VIEWERS & EDITORS</b>
-</td>
-</tr>
-
-<tr>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfimageeditor/getting-started">ImageEditor</a> (SfImageEditor)
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/pdfviewer/getting-started">PDF Viewer</a>
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfrichtextboxadv/getting-started">RichTextBox</a> (SfRichTextBoxAdv)
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfspreadsheet/getting-started">Spreadsheet</a> (SfSpreadsheet)
-</td>
-</tr>
-<tr>
-<td>
-<a href="https://help.syncfusion.com/wpf/syntaxeditor/getting-started">Syntax Editor</a>
-</td>
-<td/>
-<td/>
-<td/>
-</tr>
-
-<tr>
-<td colspan="4">
 <b>CLASSIC CONTROLS</b>
 </td>
 </tr>
@@ -530,28 +517,53 @@ N> Toolbox entry name provided if common control name and toolbox name differs.
 <tr>
 <td>
 <a href="https://help.syncfusion.com/wpf/autocomplete/getting-started">AutoComplete</a>
+<sup>classic</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/classic-chart/getting-started">Chart</a>
+<sup>classic</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/diagram/getting-started">Diagram</a>
+<sup>classic</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/griddata/getting-started">GridDataControl</a>
+<sup>classic</sup>
 </td>
 </tr>
 
 <tr>
 <td>
 <a href="https://help.syncfusion.com/wpf/gridtree/getting-started">GridTreeControl</a>
+<sup>classic</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/spreadsheet/getting-started">Spreadsheet</a>
+<sup>classic</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/richtextboxadv/getting-started">RichTextBoxAdv</a>
+<sup>classic</sup>
 </td>
 <td/>
 </tr>
+</table>
 
+## Licensing
+
+Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/) documentation to know more about licensing.
+
+## Additional help resources
+
+The [Knowledge Base](https://www.syncfusion.com/kb/wpf) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
+
+Similar to the [Knowledge Base](https://www.syncfusion.com/kb/wpf), the [Forum](https://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked in the past.
+
+## Support and feedback
+
+If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+
+Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/wpf).
+
+N> Using `Classic` labeled controls in new projects is not recommended. In `Classic` labeled controls, new features and enhancements will not be included. You can only use it if the current control features meets the requirements of your application.
