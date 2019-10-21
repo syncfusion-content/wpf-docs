@@ -65,7 +65,7 @@ namespace GettingStarted
     {
        SfSchedule schedule = new SfSchedule();
        this.Content = schedule;
-	}
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -378,4 +378,4 @@ schedule.ItemsSource = viewModel.Meetings;
 {% endhighlight %}
 {% endtabs %}
 
-The entire source code of this example can be downloaded from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-binding-appointments) for WPF
+Download demo from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-binding-appointments).
