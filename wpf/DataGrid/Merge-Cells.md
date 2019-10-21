@@ -1,13 +1,13 @@
 ---
 layout: post
-title: WPF DataGrid Merge cells | Span rows & columns | Syncfusion
-description: How to merge cells vertically and horizontally in WPF DataGrid.
+title: Merge cells in WPF DataGrid control | Syncfusion
+description: Learn about merge cells support (horizontally or vertically) in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Merge Cells 
+# Merge Cells in WPF DataGrid (SfDataGrid)
 	
 DataGrid allows you to merge the range of adjacent cells using [QueryCoveredRange](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryCoveredRange_EV.html) event. Merged cells can be exported and printed.
 
