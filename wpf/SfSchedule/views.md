@@ -71,7 +71,7 @@ schedule.TimeInterval = TimeInterval.OneHour;
 ![WPF scheduler dayview timeinterval](views_images/dayview-time-interval.png)
 
 ## Change Time Interval Height
-By setting the schedulers [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property, you can configure the timeslots interval for day view.
+Scheduler supports to change the time interval height by using [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,66 +96,7 @@ schedule.IntervalHeight = -1;
 {% endhighlight %}
 {% endtabs %}
 
-## Change Working hours
-Working hours of Scheduler will be differentiated with non-working hours by separate color using [IsHighLightWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IsHighLightWorkingHours.html) property for day, week, workweek and timeline views. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkEndHour.html) properties.
-
-{% tabs %}
-{% higligh xaml %}
-<schedule:SfSchedule x:Name="schedule" 
-                     WorkStartHour="9"
-                     WorkEndHour="12"
-                     IsHighLightWorkingHours="True"/>
-{% endhighlight %}
-{% highlight c# %}
-this.schedule.WorkStartHour = 9;
-this.schedule.WorkEndHour = 12;
-this.schedule.IsHighLightWorkingHours = true;
-{% endhighlight %}
-{% endtabs %}
-
-![WPF scheduler DayView working hours](views_images/dayview-working-hours.png)
-
-### Change Non-working hours Background
-Scheduler supports to change the background color for non-working hours by setting the [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingHourBrush.html) property.
-
-{% tabs %}
-{% higligh xaml %}
-<schedule:SfSchedule x:Name="schedule" 
-                     WorkStartHour="9"
-                     WorkEndHour="12"
-                     NonWorkingHourBrush="LightSteelBlue"
-                     IsHighLightWorkingHours="True"/>
-{% endhighlight %}
-{% highlight c# %}
-this.schedule.WorkStartHour = 9;
-this.schedule.WorkEndHour = 12;
-this.schedule.NonWorkingHourBrush = Brushes.LightSteelBlue;
-this.schedule.IsHighLightWorkingHours = true;
-{% endhighlight %}
-{% endtabs %}
-
-![WPF scheduler DayView Non working hours background changes](views_images/dayview-non-working-hours-background.png)
-
-###  Display Working hours only
-Scheduler supports to display the working hours only by disabling the [ShowNonWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ShowNonWorkingHours.html) property.
-
-{% tabs %}
-{% higligh xaml %}
-<schedule:SfSchedule x:Name="schedule" 
-                     WorkStartHour="9"
-                     WorkEndHour="12"
-                     ShowNonWorkingHours="False"/>
-{% endhighlight %}
-{% highlight c# %}
-this.schedule.WorkStartHour = 9;
-this.schedule.WorkEndHour = 12;
-this.schedule.ShowNonWorkingHours = false;
-{% endhighlight %}
-{% endtabs %}
-
-![WPF scheduler DayView prevent Non working hours diplaying](views_images/dayview-display-working-hours.png)
-
-## Non-Accessible timeslots
+## Non-Accessible Timeslots
 Scheduler supports to limit or assign those time slots as non-accessible timeslots by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlocks.html) property. So, you can allocate certain time slots to pre-defined events / activities such as lunch hour using `NonAccessibleBlocks` [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~StartHour.html), [EndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~EndHour.html), [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Label.html) and [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Background.html) properties.
 
 {% tabs %}
@@ -177,7 +118,7 @@ this.grid.Children.Add(schedule);
 ![WPF scheduler non accessible time slots](views_images/non-accessible-blocks.png)
 
 ### Customize Non-accessible Timeslots using Template
-The Non-accessible timeslots can be customized by using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlockTemplate.html) property.
+Scheduler supports to customize the Non-accessible timeslots by using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlockTemplate.html) property.
 
 {% tabs %}
 {% higligh xaml %}
@@ -221,6 +162,65 @@ schedule.HeaderBackground = Brushes.LightSkyBlue;
 
 ![WPF scheduler dayview header background](views_images/dayview-header-background.png)
 
+## Change Working hours
+Working hours of Scheduler will be differentiated with non-working hours by separate color using [IsHighLightWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IsHighLightWorkingHours.html) property for day, week, workweek and timeline views. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkEndHour.html) properties.
+
+{% tabs %}
+{% higligh xaml %}
+<schedule:SfSchedule x:Name="schedule" 
+                     WorkStartHour="9"
+                     WorkEndHour="12"
+                     IsHighLightWorkingHours="True"/>
+{% endhighlight %}
+{% highlight c# %}
+this.schedule.WorkStartHour = 9;
+this.schedule.WorkEndHour = 12;
+this.schedule.IsHighLightWorkingHours = true;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF scheduler DayView working hours](views_images/dayview-working-hours.png)
+
+###  Display Working hours only
+Scheduler supports to display the working hours only by disabling the [ShowNonWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ShowNonWorkingHours.html) property.
+
+{% tabs %}
+{% higligh xaml %}
+<schedule:SfSchedule x:Name="schedule" 
+                     WorkStartHour="9"
+                     WorkEndHour="12"
+                     ShowNonWorkingHours="False"/>
+{% endhighlight %}
+{% highlight c# %}
+this.schedule.WorkStartHour = 9;
+this.schedule.WorkEndHour = 12;
+this.schedule.ShowNonWorkingHours = false;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF scheduler DayView prevent Non working hours diplaying](views_images/dayview-display-working-hours.png)
+
+### Change Non-working hours Background
+Scheduler supports to change the background color for non-working hours by using [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingHourBrush.html) property.
+
+{% tabs %}
+{% higligh xaml %}
+<schedule:SfSchedule x:Name="schedule" 
+                     WorkStartHour="9"
+                     WorkEndHour="12"
+                     NonWorkingHourBrush="LightSteelBlue"
+                     IsHighLightWorkingHours="True"/>
+{% endhighlight %}
+{% highlight c# %}
+this.schedule.WorkStartHour = 9;
+this.schedule.WorkEndHour = 12;
+this.schedule.NonWorkingHourBrush = Brushes.LightSteelBlue;
+this.schedule.IsHighLightWorkingHours = true;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF scheduler DayView Non working hours background changes](views_images/dayview-non-working-hours-background.png)
+
 ## Time Label Appearance
 ### Changing Time Label Foreground
 Scheduler supports to change the time label foreground by using [MinorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickLabelStroke.html) and [MajorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickLabelStroke.html) property.
@@ -255,7 +255,7 @@ schedule.MinorTickStroke = Brushes.LightBlue;
 ![WPF scheduler dayview time label border color changes](views_images/dayview-time-label-border.png)
 
 ## Change Schedule View settings based on the views at run time
-[ScheduleTypeChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleTypeChanging_EV.html) event notify before that changing the schedule view. By this event, the appearance can be adjusted depending on the view.
+Scheduler supports to notify before that changing the schedule view by using [ScheduleTypeChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleTypeChanging_EV.html) event. By this event, the appearance can be adjusted depending on the view.
 
 For example, if you want to change the header date format based on the schedule view, you can use this event. Please refer the following code example,
 
