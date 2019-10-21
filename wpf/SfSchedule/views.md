@@ -118,7 +118,7 @@ this.grid.Children.Add(schedule);
 ![WPF scheduler non accessible time slots](views_images/non-accessible-blocks.png)
 
 ### Customize Non-accessible Timeslots using Template
-Scheduler supports to customize the Non-accessible timeslots by using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlockTemplate.html) property.
+Scheduler supports to customize the non-accessible timeslots by using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlockTemplate.html) property.
 
 {% tabs %}
 {% higligh xaml %}
@@ -137,8 +137,8 @@ Scheduler supports to customize the Non-accessible timeslots by using [NonAccess
 ## Change first day of week
 Scheduler supports to switch the first week with any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeek.html) property.
 
-`Day` - `FirstDayOfWeek` of Scheduler is not applicable for DayView as it displays only one day.
-`Week` - By default, scheduler control will be rendered with Sunday as the first day of the week.
+`Day` - `FirstDayOfWeek` of Scheduler is not applicable for day view as it displays only one day.
+`Week` - By default, scheduler control will be rendered with `Sunday` as the first day of the week.
 `WorkWeek` - By default, scheduler control will be rendered with `Monday` as the first day. `Saturday` and `Sunday` has considered as a non working days. You can customize that using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property.
 
 {% tabs %}
@@ -146,21 +146,6 @@ Scheduler supports to switch the first week with any day by using [FirstDayOfWee
 this.schedule.NonWorkingDays = DayOfWeek.Monday.ToString() + "," + DayOfWeek.Tuesday.ToString();
 {% endhighlight %}
 {% endtabs %}
-
-## Header Background
-
-Scheduler supports to change the header background by using [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderBackground.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-<Schedule:SfSchedule HeaderBackground="LightSkyBlue" />
-{% endhighlight %}
-{% highlight c#%}
-schedule.HeaderBackground = Brushes.LightSkyBlue;
-{% endhighlight %}
-{% endtabs %}
-
-![WPF scheduler dayview header background](views_images/dayview-header-background.png)
 
 ## Change Working hours
 Working hours of Scheduler will be differentiated with non-working hours by separate color using [IsHighLightWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IsHighLightWorkingHours.html) property for day, week, workweek and timeline views. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkEndHour.html) properties.
@@ -220,6 +205,21 @@ this.schedule.IsHighLightWorkingHours = true;
 {% endtabs %}
 
 ![WPF scheduler DayView Non working hours background changes](views_images/dayview-non-working-hours-background.png)
+
+## Header Background
+
+Scheduler supports to change the header background by using [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderBackground.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Schedule:SfSchedule HeaderBackground="LightSkyBlue" />
+{% endhighlight %}
+{% highlight c#%}
+schedule.HeaderBackground = Brushes.LightSkyBlue;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF scheduler dayview header background](views_images/dayview-header-background.png)
 
 ## Time Label Appearance
 ### Changing Time Label Foreground
