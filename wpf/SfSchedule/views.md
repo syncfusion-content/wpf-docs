@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Views (DayView, WeekView and WorkWeekView)
-Scheduler provides the following different types of views in calendar those shared common properties to customize the calendar apperance.
+Scheduler provides the following different types of views in calendar those shared common properties to customize the calendar appearance.
 
 * Day
 * Week
@@ -148,7 +148,7 @@ this.schedule.ShowNonWorkingHours = false;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF scheduler DayView prevent Non working hours diplaying](views_images/dayview-display-working-hours)
+![WPF scheduler DayView prevent Non working hours diplaying](views_images/dayview-display-working-hours.png)
 
 ## Non-Accessible timeslots
 By using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlocks.html), you could limit or assign those time slots as non-accessible blocks, so you can allocate certain time slots to pre-defined events / activities such as lunch hour using `NonAccessibleBlocks` [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~StartHour.html), [EndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~EndHour.html), [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Label.html) and [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Background.html) properties.
@@ -191,9 +191,9 @@ The NonAccessible timeslots can be customized by [NonAccessibleBlockTemplate](ht
 ## Change first day of week
 Scheduler supports the use of [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeek.html) property to switch the first week with any day.
 
-**Day** - `FirstDayOfWeek` of Scheduler is not applicable for DayView as it displays only one day.
-**Week** - By default, scheduler control will be rendered with Sunday as the first day of the week.
-**WorkWeek** - By default, scheduler control will be rendered with Monday as the first day. `SaturDay` and `Sunday` has considered as a non working days. You can customize that using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property.
+`Day` - `FirstDayOfWeek` of Scheduler is not applicable for DayView as it displays only one day.
+`Week` - By default, scheduler control will be rendered with Sunday as the first day of the week.
+`WorkWeek` - By default, scheduler control will be rendered with Monday as the first day. `SaturDay` and `Sunday` has considered as a non working days. You can customize that using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property.
 
 {% tabs %}
 {% higligh c# %}
@@ -219,7 +219,7 @@ schedule.MinorTickTimeFormat = "hh mm ss";
 
 ## Time Label Appearance
 ### Changing Time Label Foreground
-By setting scheduler's [MinorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickLabelStroke.html) and [MajorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickLabelStroke.html). you can customize the color for the labels that mention the time.
+By setting scheduler's [MinorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickLabelStroke.html) and [MajorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickLabelStroke.html) property, you can customize the color for the labels that mention the time.
 
 {% tabs %}
 {% higligh xaml %}
