@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Views with WPF Scheduler | Syncfusion
+title: Customization of Day, Week and WorkWeek Views in WPF Scheduler | Syncfusion.
 description: This section explains about the  appearance customization of Day, Week and WorkWeek for WPF Scheduler.
 platform: wpf
 control: SfSchedule
