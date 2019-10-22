@@ -92,16 +92,6 @@ a.	Following code explains how to declare the **ButtonAdv** control through XAML
 b.	Following code explains how to declare the **ButtonAdv** control through code.
 
 {% tabs %}
-{% highlight xaml %}
-
-<Grid X:Name = "ROOT_Grid">
-
-</Grid>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.Windows.Tools.Controls;
