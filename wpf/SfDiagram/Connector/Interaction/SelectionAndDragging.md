@@ -139,7 +139,7 @@ NodeViewModel node = new NodeViewModel()
 
 ![Routing](Connector_images/RoutingObstacle.png)
 
-By default, routing is handling at diagram level. To enable or disbale routing for individual connector alone, disable the routing constraint from diagram by using `ConnectorConstraints.InheritRouting` and enable or disable the routing behaviour of a connector by using `ConnectorConstraints.Routing` property.
+By default, routing is handling at diagram level. To enable or disable routing for individual connector alone, disable the routing constraint from diagram by using `ConnectorConstraints.InheritRouting` and enable or disable the routing behaviour of a connector by using `ConnectorConstraints.Routing` property.
 
 {% tabs %}
 {% highlight C# %}
