@@ -63,11 +63,9 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ## How to route the connectors
 
-When diagram elements are going to be placed on any connector path, then the path of connector will be hidden by placed elements. This will makes less clarity  about connector paths. This can be avoided by using routing process. Routing tries to place the connector path as close as possible with out intersecting with any other elements. To avoid objects conflict, the routing step adds segments paths needed to properly connect their end points.
+Connector's geometry might be hidden or pass over the diagram element, if the element is placed in contact with the connector. This will makes less clarity about connector path flow. This can be avoided using Routing process.
 
-So routing will be moved a connector automatically from its original position when connector path is getting intersected with other diagram elements. However, node and connector paths will not be getting intersected with any other objects.
-
-This behaviour can be enabled in diagram by using `GraphConstraints.Routing`.
+Routing is the process of updating connector's geometry to avoid obstacles in their path. This behaviour can be enabled in diagram by using `GraphConstraints.Routing`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,12 +86,13 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Routing;
 
 ![Routing](Connector_images/Routing.gif)
 
-we are provided two types of routing. They are
+Diagram supports two types of routing algorithm.. They are
 
-* Classic : Connectors segments will be added as needed to avoid intersection. 
-* Advanced : Customized and less number of connector segments only will be added to avoid intersection.
+* Classic : Additional segments will be added based on the position and dimension of the obstacles in their path. This type of routing gives less priority to geometry length and number of bends.
 
-This can be enabled by using `RoutingType` property of `LineRoutingSettings`class.
+* Advanced : This routing type evaluates all possible geometrical paths for a connector aiming to find one that has a minimal bends and length.
+
+Routing algorithm can be specified by using `RoutingType` property of `LineRoutingSettings`class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -151,3 +150,5 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 {% endhighlight %}
 {% endtabs %}
+
+N> Routing is applicable only for orthogonal connectors.
