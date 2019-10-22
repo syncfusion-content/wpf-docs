@@ -11,6 +11,12 @@ documentation: ug
 
 The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control restricts input to double values with support for data binding, watermark, null value and support for culture. It provides various customization options to improve its appearance and suit an applications.
 
+## Control structure
+
+![Default DoubleTextBox control](Getting-Started_images/Getting-Started_img1.png)
+
+![DoubleTextBox control with watermark text](Getting-Started_images/Getting-Started_img2.png)
+
 ## Features
 
 The core features of the `DoubleTextBox` are as follows:
