@@ -25,9 +25,7 @@ Scheduler supports to customize the default header date format of the day, week,
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfSchedule
-HeaderDateFormat="dd-MMMM-yyyy">
-</Schedule:SfSchedule>
+<Schedule:SfSchedule HeaderDateFormat="dd-MMMM-yyyy"/>
 {% endhighlight %}
 {% highlight c#%}
 SfSchedule schedule = new SfSchedule();
@@ -43,7 +41,7 @@ schedule.HeaderDateFormat = "dd-MMMM-yyyy";
 Scheduler supports to customize time format for day, week, workweek and timeline views by using [MajorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickTimeFormat.html) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickTimeFormat.html) property.
 
 {% tabs %}
-{% higligh xaml %}
+{% highlight xaml %}
 <syncfusion:SfSchedule MajorTickTimeFormat="hh mm ss" MinorTickTimeFormat="mm ss"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -100,7 +98,7 @@ schedule.IntervalHeight = -1;
 Scheduler supports to limit or assign those time slots as non-accessible timeslots by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlocks.html) property. So, you can allocate certain time slots to pre-defined events / activities such as lunch hour using `NonAccessibleBlocks` [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~StartHour.html), [EndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~EndHour.html), [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Label.html) and [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Background.html) properties.
 
 {% tabs %}
-{% higligh xaml %}
+{% highlight xaml %}
 <Schedule:SfSchedule>
     <Schedule:SfSchedule.NonAccessibleBlocks>
         <Schedule:NonAccessibleBlock Background="Black" StartHour="13" EndHour="14" Label="Lunch">
@@ -121,7 +119,7 @@ this.grid.Children.Add(schedule);
 Scheduler supports to customize the non-accessible timeslots by using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlockTemplate.html) property.
 
 {% tabs %}
-{% higligh xaml %}
+{% highlight xaml %}
 <syncfusion:SfSchedule.NonAccessibleBlockTemplate>
     <DataTemplate>
         <Border Background="LightGreen">
@@ -138,11 +136,13 @@ Scheduler supports to customize the non-accessible timeslots by using [NonAccess
 Scheduler supports to switch the first week with any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeek.html) property.
 
 `Day` - `FirstDayOfWeek` of Scheduler is not applicable for day view as it displays only one day.
+
 `Week` - By default, scheduler control will be rendered with `Sunday` as the first day of the week.
+
 `WorkWeek` - By default, scheduler control will be rendered with `Monday` as the first day. `Saturday` and `Sunday` has considered as a non working days. You can customize that using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property.
 
 {% tabs %}
-{% higligh c# %}
+{% highlight c# %}
 this.schedule.NonWorkingDays = DayOfWeek.Monday.ToString() + "," + DayOfWeek.Tuesday.ToString();
 {% endhighlight %}
 {% endtabs %}
@@ -151,7 +151,7 @@ this.schedule.NonWorkingDays = DayOfWeek.Monday.ToString() + "," + DayOfWeek.Tue
 Working hours of Scheduler will be differentiated with non-working hours by separate color using [IsHighLightWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IsHighLightWorkingHours.html) property for day, week, workweek and timeline views. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkEndHour.html) properties.
 
 {% tabs %}
-{% higligh xaml %}
+{% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule" 
                      WorkStartHour="9"
                      WorkEndHour="12"
@@ -170,7 +170,7 @@ this.schedule.IsHighLightWorkingHours = true;
 Scheduler supports to display the working hours only by disabling the [ShowNonWorkingHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ShowNonWorkingHours.html) property.
 
 {% tabs %}
-{% higligh xaml %}
+{% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule" 
                      WorkStartHour="9"
                      WorkEndHour="12"
@@ -189,7 +189,7 @@ this.schedule.ShowNonWorkingHours = false;
 Scheduler supports to change the background color for non-working hours by using [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingHourBrush.html) property.
 
 {% tabs %}
-{% higligh xaml %}
+{% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule" 
                      WorkStartHour="9"
                      WorkEndHour="12"
@@ -222,11 +222,12 @@ schedule.HeaderBackground = Brushes.LightSkyBlue;
 ![WPF scheduler dayview header background](views_images/dayview-header-background.png)
 
 ## Time Label Appearance
+
 ### Changing Time Label Foreground
 Scheduler supports to change the time label foreground by using [MinorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickLabelStroke.html) and [MajorTickLabelStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickLabelStroke.html) property.
 
 {% tabs %}
-{% higligh xaml %}
+{% highlight xaml %}
 <syncfusion:SfSchedule MajorTickLabelStroke="DarkRed" MinorTickLabelStroke="Red"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -242,7 +243,7 @@ schedule.MinorTickLabelStroke = Brushes.Red;
 Scheduler supports to change the time slots line color by using [MajorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStroke.html) and [MinorTickStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStroke.html) property. 
 
 {% tabs %}
-{% higligh xaml %}
+{% highlight xaml %}
 <syncfusion:SfSchedule MajorTickStroke="LawnGreen" MinorTickStroke="LightBlue"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -280,4 +281,4 @@ private void Schedule_ScheduleTypeChanging(object sender, ScheduleTypeChangingEv
 {% endhighlight %}
 {% endtabs %}
 
-!{WPF Scheduler appearance customization based on ScheduleType at run time](views_images/dayview-runtime-changes.png)
+![WPF Scheduler appearance customization based on ScheduleType at run time](views_images/dayview-runtime-changes.png)
