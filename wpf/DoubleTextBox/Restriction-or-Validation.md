@@ -121,7 +121,7 @@ doubleTextBox.IsReadOnlyCaretVisible = true;
 
 ## Validate Invalid Value
 
-You can use the [ValidationValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~ValidationValue.html) property to compare the value of the `DoubleTextBox` with a specific value. If the value of `DoubleTextBox` is not equl to the `ValidationValue` property, the `DoubleTextBox` will be perform some operation. This is achieved by the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property.
+You can use the [ValidationValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~ValidationValue.html) property to compare the value of the `DoubleTextBox` with a specific value. If the value of `DoubleTextBox` is not equal to the `ValidationValue` property, the `DoubleTextBox` will be perform some operation. This is achieved by the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property.
 
 It includes the following three behaviors,
 
