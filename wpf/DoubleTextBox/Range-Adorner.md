@@ -14,12 +14,12 @@ An Adorner can be used to draw on top of the control. You can show the adorner o
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" MinValue="0" MaxValue="100" Value="57" EnableRangeAdorner="True" />
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" MinValue="0" MaxValue="100" EnableRangeAdorner="True" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new doubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.MinValue = 0;
 doubleTextBox.MaxValue = 100;
 doubleTextBox.EnableRangeAdorner =true;
@@ -41,7 +41,7 @@ You can change the background color of the range adorner using [RangeAdornerBack
 {% endhighlight %}
 {% highlight C# %}
 
-DoubleTextBox doubleTextBox = new doubleTextBox();
+DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.MinValue = 0;
 doubleTextBox.MaxValue = 100;
 doubleTextBox.EnableRangeAdorner =true;

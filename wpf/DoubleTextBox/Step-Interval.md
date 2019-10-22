@@ -44,7 +44,7 @@ The `DoubleTextBox` allows you to increase or decrease the `Value` based on the 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="34" Value ="37" 
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" Value ="34" 
                           IsScrollingOnCircle="True" ScrollInterval="3"/>
 
 {% endhighlight %}

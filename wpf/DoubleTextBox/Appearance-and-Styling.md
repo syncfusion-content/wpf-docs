@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF DoubleTextBox
 
-This section deals with the appearance of DoubleTextBox control and contains the following topics.
+This section deals with the appearance of `DoubleTextBox` control and contains the following topics.
 
 ## Setting the Foreground
 

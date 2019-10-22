@@ -152,7 +152,7 @@ doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage;
 
 ### Reset Value  
 
-If the value entered by the user is not equal to `ValidationValue`, the `DoubleTextBox` value will be reset with the `ValidationValue` by setting the `InvalidValueBehavior` property as `ResetValue`.
+If the value entered by the user is not equal to `ValidationValue`, the `DoubleTextBox` value will be reset with default value by setting the `InvalidValueBehavior` property as `ResetValue`.
 
 {% tabs %}
 {% highlight XAML %}

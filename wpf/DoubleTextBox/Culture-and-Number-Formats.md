@@ -27,6 +27,7 @@ DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.Value = 1234567;
+
 //Setting Latin culture for double textbox.
 doubleTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");
 
@@ -35,8 +36,11 @@ doubleTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");
 
 By default the US culture uses “,” as the `NumberGroupSeparator` and "." as the `NumberDecimalSeparator` where as the Latin culture uses “.” as the `NumberGroupSeparator` and "," as the `NumberDecimalSeparator`. 
 
+**Default Culture**
+
 ![DoubleTextBox with default culture](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img1.jpeg)
 
+**Latin Culture**
 
 ![DoubleTextBox with Latin-Culture](Culture-and-Number-Formats-images/Latin.png)
 
