@@ -11,8 +11,6 @@ documentation: ug
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and remaining objects will be loaded only when they come into view. 
 
-Virtualization collapses the diagram items which are outside the viewable area, thus enhancing the UI performance while manipulating the Diagramming elements. virtualization only collapses the visibility of the diagram objects outside the viewport, those items will still be considered during a layout operation.
-
 This feature gives optimized performance and low memory consumption while loading and dragging items to the SfDiagram that consists of large diagram objects.
 
 {% tabs %}
