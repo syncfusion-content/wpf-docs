@@ -28,9 +28,7 @@ Scheduler supports to customize the default header date format of the day, week,
 <Schedule:SfSchedule HeaderDateFormat="dd-MMMM-yyyy"/>
 {% endhighlight %}
 {% highlight c#%}
-SfSchedule schedule = new SfSchedule();
-
-schedule.HeaderDateFormat = "dd-MMMM-yyyy";
+this.schedule.HeaderDateFormat = "dd-MMMM-yyyy";
 
 {% endhighlight %}
 {% endtabs %}
@@ -45,9 +43,8 @@ Scheduler supports to customize time format for day, week, workweek and timeline
 <syncfusion:SfSchedule MajorTickTimeFormat="hh mm ss" MinorTickTimeFormat="mm ss"/>
 {% endhighlight %}
 {% highlight c# %}
-SfSchedule schedule = new SfSchedule();
-schedule.MajorTickTimeFormat = "hh mm ss";
-schedule.MinorTickTimeFormat = "hh mm ss";
+this.schedule.MajorTickTimeFormat = "hh mm ss";
+this.schedule.MinorTickTimeFormat = "hh mm ss";
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,7 +59,7 @@ Scheduler supports to change the time interval by using [TimeInterval](https://h
 <Schedule:SfSchedule TimeInterval = "OneHour" />
 {% endhighlight %}
 {% highlight c#%}
-schedule.TimeInterval = TimeInterval.OneHour;
+this.schedule.TimeInterval = TimeInterval.OneHour;
 {% endhighlight %}
 {% endtabs %}
 
@@ -76,7 +73,7 @@ Scheduler supports to change the time interval height by using [IntervalHeight](
 <Schedule:SfSchedule IntervalHeight = 100 />
 {% endhighlight %}
 {% highlight c#%}
-schedule.IntervalHeight = 100;
+this.schedule.IntervalHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
@@ -90,7 +87,7 @@ Scheduler time interval height can be adjusted based on screen height by changin
 <Schedule:SfSchedule IntervalHeight = -1 />
 {% endhighlight %}
 {% highlight c#%}
-schedule.IntervalHeight = -1;
+this.schedule.IntervalHeight = -1;
 {% endhighlight %}
 {% endtabs %}
 
@@ -107,9 +104,7 @@ Scheduler supports to limit or assign those time slots as non-accessible timeslo
 </Schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
-SfSchedule schedule = new SfSchedule();
-schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock() { Background = new SolidColorBrush(Colors.Black), StartHour = 13, EndHour = 14, Label = "Lunch" });
-this.grid.Children.Add(schedule);
+this.schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock() { Background = new SolidColorBrush(Colors.Black), StartHour = 13, EndHour = 14, Label = "Lunch" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -215,7 +210,7 @@ Scheduler supports to change the header background by using [HeaderBackground](h
 <Schedule:SfSchedule HeaderBackground="LightSkyBlue" />
 {% endhighlight %}
 {% highlight c#%}
-schedule.HeaderBackground = Brushes.LightSkyBlue;
+this.schedule.HeaderBackground = Brushes.LightSkyBlue;
 {% endhighlight %}
 {% endtabs %}
 
@@ -231,9 +226,8 @@ Scheduler supports to change the time label foreground by using [MinorTickLabelS
 <syncfusion:SfSchedule MajorTickLabelStroke="DarkRed" MinorTickLabelStroke="Red"/>
 {% endhighlight %}
 {% highlight c# %}
-SfSchedule schedule = new SfSchedule();
-schedule.MajorTickLabelStroke = Brushes.DarkRed;
-schedule.MinorTickLabelStroke = Brushes.Red;
+this.schedule.MajorTickLabelStroke = Brushes.DarkRed;
+this.schedule.MinorTickLabelStroke = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
@@ -247,9 +241,8 @@ Scheduler supports to change the time slots line color by using [MajorTickStroke
 <syncfusion:SfSchedule MajorTickStroke="LawnGreen" MinorTickStroke="LightBlue"/>
 {% endhighlight %}
 {% highlight c# %}
-SfSchedule schedule = new SfSchedule();
-schedule.MajorTickStroke = Brushes.LawnGreen;
-schedule.MinorTickStroke = Brushes.LightBlue;
+this.schedule.MajorTickStroke = Brushes.LawnGreen;
+this.schedule.MinorTickStroke = Brushes.LightBlue;
 {% endhighlight %}
 {% endtabs %}
 
