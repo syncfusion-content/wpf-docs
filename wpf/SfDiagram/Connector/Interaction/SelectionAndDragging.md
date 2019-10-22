@@ -65,7 +65,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 When diagram elements are going to be placed on any connector path, then the path of connector will be hidden by placed elements. This will makes less clarity  about connector paths. This can be avoided by using routing process. Routing tries to place the connector path as close as possible with out intersecting with any other elements. To avoid objects conflict, the routing step adds segments paths needed to properly connect their end points.
 
-So routing will be moved a connector automatically from its original position when connector path is getting intersected with other diagram elements. However, node and connector paths will not be getting intersected with any ther objects.
+So routing will be moved a connector automatically from its original position when connector path is getting intersected with other diagram elements. However, node and connector paths will not be getting intersected with any other objects.
 
 This behaviour can be enabled in diagram by using `GraphConstraints.Routing`.
 
