@@ -35,7 +35,7 @@ To add the DoubleTextBox control manually in XAML, follow these steps:
 
 2. Add the **Syncfusion.Shared.WPF** assembly references to the project.
  
-3. Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf and declare the `DoubleTextBox` control in XAML page.
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `DoubleTextBox` control in XAML page.
 
 {% tabs %}
 {% highlight XAML %}
@@ -127,7 +127,7 @@ The following code snippets illustrate the value binding from one `DoubleTextBox
 {% highlight XAML %}
 <StackPanel>
 <syncfusion:DoubleTextBox x:Name="doubleTextBox1" Height="25" Width="100" Value="{Binding myValue}"/>
-<syncfusion:DoubleTextBox x:Name="doubleTextBox2"  Width="100" Height="25" Value="{Binding myValue}" />
+<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Width="100" Height="25" Value="{Binding myValue}" />
 </StackPanel>
 {% endhighlight %}
 {% endtabs %}
