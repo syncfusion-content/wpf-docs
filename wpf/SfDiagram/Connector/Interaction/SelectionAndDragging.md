@@ -86,6 +86,8 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Routing;
 
 ![Routing](Connector_images/Routing.gif)
 
+N> Routing is applicable only for orthogonal connectors.
+
 Diagram supports two types of routing algorithm.. They are
 
 * Classic : Additional segments will be added based on the position and dimension of the obstacles in their path. This type of routing gives less priority to geometry length and number of bends.
@@ -116,7 +118,7 @@ diagram.LineRoutingSettings.RoutingType = RoutingTypes.Classic;
 {% endhighlight %}
 {% endtabs %}
 
-By default, Node will be the routing object to change the connectors path while routing. Routing can be disabled for particular node when it is intersecting with connector using `NodeConstraints.RoutingObstacle` property of Node.
+By default, all nodes are treated as an obstacle for a connector i.e. connections will go around the node boundary. And using `NodeConstraints.RoutingObstacle` individual node's can be controlled whether to act as an obstacle or not.
 
 {% tabs %}
 {% highlight C# %}
@@ -135,6 +137,8 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
+![Routing](Connector_images/RoutingObstacle.png)
+
 Also, routing option can be disabled for each connector using `ConnectorConstraints.Routing` and `ConnectorConstraints.InheritRouting` properties of connector. 
 
 {% tabs %}
@@ -150,5 +154,3 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 {% endhighlight %}
 {% endtabs %}
-
-N> Routing is applicable only for orthogonal connectors.
