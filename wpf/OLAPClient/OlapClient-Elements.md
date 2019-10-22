@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP Client Elements | Syncfusion
+title: OLAP Client Elements | OLAP Client | Syncfusion
 description: Information about cube selector, attribute hierarchy, axis element builder, member and measure editors in OLAP Client.
 platform: wpf
 control: OLAP Client
