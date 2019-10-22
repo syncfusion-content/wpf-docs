@@ -9,23 +9,69 @@ documentation: ug
 
 # Appearance in WPF DoubleTextBox
 
+This section deals with the appearance of DoubleTextBox control and contains the following topics.
+
 ## Setting the Foreground
 
-The `DoubleTextBox` control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `DoubleTextBox` control.
+The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control [Foreground](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.control.foreground?view=netframework-4.8) can be modified based on the value of the control. The following are the foreground for `DoubleTextBox` control.
 
-* Positive foreground - We can add and change a positive color to the value of `DoubleTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PositiveForeground.html) property and it will be applied when the `Value` is positive. The default color of `PositiveForeground` is `Black`.
+### Positive Foreground
 
-* Negative foreground - We can add and change a negative color to the value of `DoubleTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NegativeForeground.html) property and it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyNegativeForeground.html) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`.
+We can change a positive color to the value of `DoubleTextBox` by setting the [PositiveForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PositiveForeground.html) property and it will be applied when the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) is positive. The default color of `PositiveForeground` is `Black`.
 
-* Zero foreground - We may add and change a zero color to the value of `DoubleTextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) property and it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyZeroColor.html) property is `true` and the `Value` is zero.
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="10" Width="100" Height="25" PositiveForeground="Blue" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 100;
+doubleTextBox.Height = 25;
+doubleTextBox.PositiveForeground = Brushes.Blue;
+
+{% endhighlight %}
+{% endtabs %}
+
+![DoubleTextBox Positive value Color](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
+
+
+### Negative Foreground 
+
+We can change a negative color to the value of `DoubleTextBox` by setting the [NegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NegativeForeground.html) property and it will be applied when the [ApplyNegativeForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyNegativeForeground.html) property is `true` and the `Value` is negative. The default color of `NegativeForeground` is `Red`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="10" Width="100" Height="25"
+                          NegativeForeground="SpringGreen" ApplyNegativeForeground="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Width = 100;
+doubleTextBox.Height = 25;
+doubleTextBox.ApplyNegativeForeground = true;   
+doubleTextBox.NegativeForeground = Brushes.SpringGreen;
+
+{% endhighlight %}
+{% endtabs %}
+
+![DoubleTextBox Negative value color](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
+
+
+### Zero Foreground 
+
+We can change a zero color to the value of `DoubleTextBox` by setting the [ZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ZeroColor.html) property and it will be applied when the [ApplyZeroColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~ApplyZeroColor.html) property is `true` and the `Value` is zero.
 The default color of `ZeroColor` is `Green`. 
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="10" Width="100" Height="25"
-                          PositiveForeground="Blue"
-                          NegativeForeground="SpringGreen" ApplyNegativeForeground="True"
                           ApplyZeroColor="True" ZeroColor="DarkGoldenrod"/>
 
 {% endhighlight %}
@@ -34,28 +80,13 @@ The default color of `ZeroColor` is `Green`.
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
-doubleTextBox.Value = 10;
-doubleTextBox.PositiveForeground = Brushes.Blue;
-doubleTextBox.ApplyNegativeForeground = true;   
-doubleTextBox.NegativeForeground = Brushes.SpringGreen;
 doubleTextBox.ApplyZeroColor = true;
 doubleTextBox.ZeroColor = Brushes.DarkGoldenrod;
 
 {% endhighlight %}
 {% endtabs %}
 
-**PositiveForeground = "Blue"**
-
-![DoubleTextBox Positive foreground](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
-
-**NegativeForeground = "SpringGreen"**
-
-![DoubleTextBox Negative foreground](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
-
-**ZeroColor = "DarkGoldenrod"**
-
-![DoubleTextBox ZeroColor](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
-
+![DoubleTextBox Zero value Color](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 ## Setting the Background
 

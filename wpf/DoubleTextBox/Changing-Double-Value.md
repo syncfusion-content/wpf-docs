@@ -9,7 +9,7 @@ documentation: ug
 
 # Changing Double Value in WPF DoubleTextBox
 
-The `DoubleTextBox` allows the user to change the value using the `Value` property.
+The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property.
 
 %tabs%}
 {% highlight xaml %}
@@ -31,13 +31,15 @@ doubleTextBox.Value = 10;
 ![DoubleTextBox setting value](Changing-Double-Value_images/SettingValue.jpeg)
 
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target).By assigning a value to the `Value` property by binding, you can change the `DoubleTextBox` value.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `DoubleTextBox` value.
+
+The following code snippets illustrate the value binding from one `DoubleTextBox` to another.
 
 %tabs%}
 {% highlight xaml %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox1" Grid.Row="1" Height="25" Width="100"/>
-<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Grid.Row="3" Width="100" Height="25" Value="{Binding ElementName=doubleTextBox1,Path=Value,Mode=TwoWay}" />
+<syncfusion:DoubleTextBox x:Name="doubleTextBox1" Value="{Binding myValue}" Height="25" Width="100"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Value="{Binding myValue}" Width="100" Height="25"  />
 
 {% endhighlight %}
 {%endtabs%}
@@ -46,7 +48,7 @@ Data binding is the process of establishing a connection between the application
 
 ## Value Changed Event
 
-The `DoubleTextbox` control can notify changes in value through the `ValueChanged` event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.
+The `DoubleTextbox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ValueChanged_EV.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.
 
 
 {%tabs%}
@@ -80,7 +82,9 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 
 ## Setting the Null value
 
-The `DoubleTextBox` accepts `null` values. By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can change this to display some other value or `null` value using the [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) property. The [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) property must be enabled to view the specified `NullValue`. By default `UseNullOption` value is `false`. When you set the null value to the `NullValue` property, the value of the `NullValue` property will be assigned to the `Value` property.
+ By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) and [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) properties to show the null or any other value instead of zero.
+ 
+ The default value of the `NullValue` property is `null`, you can reset this to any other double value. It will display only on setting the `UseNullOption` property is set to true.
  
 **Null Value = Null**
 
@@ -129,7 +133,7 @@ doubleTextBox.UseNullOption = true;
 
 ## Setting Watermark Text
 
-We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is `true` and the text is empty, control not in focus and the `UseNullOption` is `true`.
+We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is true and the value is `null` or empty, the control is not in focus, and the `UseNullOption` is true.
 
 ### Setting the WatermarkText Foreground
 
@@ -157,9 +161,6 @@ doubleTextBox.WatermarkTextForeground = Brushes.Red;
 {% endtabs %}
 
 ![DoubleTextBox WatermarkText foreground](Changing-Double-Value_images/WaterMark-Foreground.jpeg)
-
-
-`WatermarkText` automatically collapses when the control is in focus. When the control loses its focus the WatermarkText comes to the visible state if the Value is null and the `WatermarkTextIsVisible` is true.
 
 ### Setting Watermark Template
 

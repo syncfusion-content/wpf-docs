@@ -9,9 +9,11 @@ documentation: ug
 
 # Restriction or Validation in WPF DoubleTextBox
 
+This section explains how to validate or restrict the `DoubleTextBox` control value.
+
 ## Restrict the value within minimum and maximum value
 
-The `Value` of the `DoubleTextBox` can be restricted within the maximum and minimum limits. Once the value has reached the maximum or maximum value , the value does not exceed the limit. We can change the maximum and minimum limits by using the `MinValue` property and `MaxValue` property.
+The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) of the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) can be restricted within the maximum and minimum limits. Once the value has reached the maximum or minimum value , the value does not exceed the limit. We can change the maximum and minimum limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property.
 
 You can choose when to validate the maximum and minimum limits while changing the values by using the [MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) and [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) properties.
 
@@ -68,7 +70,7 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 
 The `DoubleTextbox` allows the user to customize the number of digits to be displayed after the decimal point of `DoubleTextBox` value
 by using [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html) property.
-The decimal digit can be restricted within the maximum and minimum limits. Once the decimal digit has reached the maximum or maximum digit , the decimal digits does not exceed the limit. We can change the maximum and minimum decimal digits limit by using the [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html)
+The decimal digit can be restricted within the maximum and minimum limits. Once the decimal digit has reached the maximum or minimum digit , the decimal digits does not exceed the limit. We can change the maximum and minimum decimal digits limit by using the [MinimumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinimumNumberDecimalDigits.html) and [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaximumNumberDecimalDigits.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,73 +121,54 @@ doubleTextBox.IsReadOnlyCaretVisible = true;
 
 ## Validate Invalid Value
 
-When the user enters incorrect data, the `DoubleTextBox` warns the user. This is achieved by the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property. 
+You can use the [ValidationValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~ValidationValue.html) property to compare the value of the `DoubleTextBox` with a specific value. If the value of `DoubleTextBox` is not equl to the `ValidationValue` property, the `DoubleTextBox` will be perform some operation. This is achieved by the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property.
 
 It includes the following three behaviors,
 
 * Display ErrorMessage
-* No Operation
+* None
 * Reset Value
 
 ### Display ErrorMessage  
 
-If the user enters incorrect data, the error message will only be shown by setting the `InvalidValueBehavior` property as `DisplayErrorMessage`.
+If the value entered by the user is not equal to `ValidationValue`, the error message will be shown by setting the `InvalidValueBehavior` property as `DisplayErrorMessage`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" MinValue="0" MaxValue="100" InvalidValueBehavior="DisplayErrorMessage" />
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" ValidationValue = "5.5" InvalidValueBehavior="DisplayErrorMessage" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.MinValue = 0;
-doubleTextBox.MaxValue = 100;
+doubleTextBox.ValidationValue = "5.5";
 doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage;
 
 {% endhighlight %}
 {% endtabs %}
 
-### No Operation  
-
-If the user enters incorrect data, no operation is performed by setting the `InvalidValueBehavior` property as `None`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" InvalidValueBehavior="None" MaxValue= "100" MinValue="0" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.MinValue = 0;
-doubleTextBox.MaxValue = 100;
-doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.None;
-
-{% endhighlight %}
-{% endtabs %}
-
+![After entering the incorrect value, DoubleTextBox Display the pop-up ErrorMessage](Restriction-or-Validation_images/Error-message.png)
 
 ### Reset Value  
 
-If the user enters incorrect data, `Value` of the `DoubleTextBox` is reset by setting the `InvalidValueBehavior` property as `ResetValue`.
+If the value entered by the user is not equal to `ValidationValue`, the `DoubleTextBox` value will be reset with the `ValidationValue` by setting the `InvalidValueBehavior` property as `ResetValue`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox"  InvalidValueBehavior="ResetValue" MaxValue= "100" MinValue="0"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox"  InvalidValueBehavior="ResetValue" ValidationValue = "3.75" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.MinValue = 0;
-doubleTextBox.MaxValue = 100;
+doubleTextBox.ValidationValue = "3.75";
 doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.ResetValue;
 
 {% endhighlight %}
 {% endtabs %}
+
+![After entering the incorrect value, DoubleTextBox resets the value](Restriction-or-Validation_images/Reset-Value.png)
 
 

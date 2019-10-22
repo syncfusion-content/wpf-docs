@@ -9,21 +9,19 @@ documentation: ug
 
 # Step Interval in WPF DoubleTextBox
 
-The `DoubleTextBox` control allows you to increase or decrease the value within the minimum and maximum value limits by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The `ScrollInterval` property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
+The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control allows you to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
 
- For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control `Value` increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
+ For example, the `ScrollInterval` value is set to 4. So, that the `DoubleTextBox` control [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
 
 ## Change Value on Up, Down arrow key
 
 The `DoubleTextBox` control allows you to increase or decrease the `Value` of `DoubleTextBox` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
 
-
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150"
-                          Height="25" Value ="10"
-                          MinValue="0" MaxValue="100" ScrollInterval="2"/>
+                          Height="25" Value ="10" ScrollInterval="2"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -31,10 +29,7 @@ The `DoubleTextBox` control allows you to increase or decrease the `Value` of `D
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
-doubleTextBox.MinValue = 0;
-doubleTextBox.MaxValue = 100;
 doubleTextBox.Value = 10;
-doubleTextBox.IsScrollingOnCircle = true;
 doubleTextBox.ScrollInterval = 2;
 
 {% endhighlight %}
@@ -44,13 +39,13 @@ doubleTextBox.ScrollInterval = 2;
 
 ## Change Value on Mouse Wheel
 
-The `DoubleTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the `IsScrollingOnCircle` property is true.
+The `DoubleTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Editorbase~IsScrollingOnCircle.html) property is true.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="34"
-                          MinValue="0" MaxValue="100" Value ="37" IsScrollingOnCircle="True" ScrollInterval="3"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="34" Value ="37" 
+                          IsScrollingOnCircle="True" ScrollInterval="3"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -58,8 +53,6 @@ The `DoubleTextBox` allows you to increase or decrease the `Value` based on the 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
-doubleTextBox.MinValue = 0;
-doubleTextBox.MaxValue = 100;
 doubleTextBox.Value = 34;
 doubleTextBox.IsScrollingOnCircle = true;
 doubleTextBox.ScrollInterval = 3;
@@ -71,13 +64,13 @@ doubleTextBox.ScrollInterval = 3;
 
 ## Change Value on Click and Drag
 
-The `DoubleTextBox` allows you to increase or decrease the value based on the `ScrollInterval` by click and dragging the mouse move When the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. The `Value` of `DoubleTextBox` will increase when the mouse moves to the right or top of the screen and will decrease when the mouse moves in the direction of the left or bottom of the screen. Before that, the control should be in an unfocused state.
+The `DoubleTextBox` allows you to increase or decrease the value based on the `ScrollInterval` by click and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. `DoubleTextBox` value increases when the cursor moves to the right or the top of the screen and decreases when the mouse moves to the left or the bottom of the screen. Before that, the control should be in an unfocused state.
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="120" Height="25" Value ="88" 
-                          MinValue="0" MaxValue="100" ScrollInterval="5" EnableExtendedScrolling="True"/>
+                          ScrollInterval="5" EnableExtendedScrolling="True"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -85,8 +78,6 @@ The `DoubleTextBox` allows you to increase or decrease the value based on the `S
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 120;
 doubleTextBox.Height = 25;
-doubleTextBox.MinValue = 0;
-doubleTextBox.MaxValue = 100;
 doubleTextBox.Value = 88;
 doubleTextBox.ScrollInterval = 5;
 doubleTextBox.EnableExtendedScrolling = true;
@@ -115,10 +106,10 @@ doubleTextBox.TextSelectionOnFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-### TextSelectionOnFocus = "False"
+**TextSelectionOnFocus = "False"**
 
 ![DoubleTextBox TextSelection On Focus disabled](Step-Interval_images/Step-Interval_TextSelectionFalse.png)
 
-### TextSelectionOnFocus = "True"
+**TextSelectionOnFocus = "True"**
 
 ![WPF DoubleTextBox TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)
