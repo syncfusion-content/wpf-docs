@@ -1,98 +1,61 @@
 ---
 layout: post
-title: Localization | Spreadsheet | wpf | Syncfusion
-description: localization
+title: Localization in SfSpreadsheet | wpf | Syncfusion
+description: This section explains that how to localize the default strings of SfSpreadsheet to any language settings for Syncfusion Essential WPF.
 platform: wpf
-control: Spreadsheet
+control: SfSpreadsheet
 documentation: ug
 ---
 
 # Localization
 
-Localization is the process of customizing the application to culture-specific. This involves configuring the application for the specific languages. Culture is the combination of Language and the Location (e.g. En-US is the Culture for English spoken at United States; En-GB is the Culture for English spoken at Great Britain). 
+Localization is the process of configuring the application to a specific language. SfSpreadsheet provides support to localize all the static text in a Ribbon and all dialogs to any desired language. Localization can be done by adding resource file and setting the specific culture in the application.
 
-Syncfusion Spreadsheet allows you to set custom resource through Resx file. You can give the string values in resource file for a specific Culture and set the Culture in the application. The given string values will be set to the Grid which does not affect the Code Block of the Grid. 
+SfSpreadsheet allows you to set custom resource using Resx file. You can define your string values in resource file for a specific culture and set the culture in your application.
 
-### Adding Localization to an Application 
+## Set Current UI Culture to the Application
 
-The following are steps to implementation Localization support to an application:
+To set the CultureInformation in the Application, set the `CurrentUICulture` before the InitializeComponent() method is called. 
 
-1. Create a WPF application and add spreadsheet control to it. 
+Setting of the culture information,
 
-2. Create a folder named Resources in the application. 
+{% tabs %}
+{% highlight c# %}
+public MainWindow()
+{
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
+    InitializeComponent();
+}
+{% endhighlight %}
+{% endtabs %}
 
-3. Create a resource file (Resx file) and name it as Syncfusion.Spreadsheet.WPF. <your culture info name>.resx 
+Now, the Application is set to the Japanese Culture info. 
 
-   Example: Syncfusion.Spreadsheet.WPF.ja.resx.
+## Localization using Resource file
 
-   N> It is mandatory to use this naming convention.
+The following steps show how to implement the localization in SfSpreadsheet,
 
-   ![](Localization_images/Localization_img1.png)
+* Create a folder and name it as ‘Resources’ in your application.
+* Add the default resource[English("en-US")] file of `SfSpreadsheet` in the 'Resources' folder named as Syncfusion.SfSpreadsheet.WPF.resx.
+  You can download the Resx file [here](https://github.com/syncfusion/wpf-demos/blob/master/SfSpreadsheet.WPF/Samples/Localization/CS/Resources/Syncfusion.SfSpreadsheet.WPF.resx) 
+* Create Resx(resource) file under the 'Resources' folder and name it as Syncfusion.SfSpreadsheet.WPF.[Culture name].resx. 
+  For example, Syncfusion.SfSpreadsheet.WPF.ja.resx for Japanese culture. 
 
-4. Select the String option in the Resource file. 
+![resource-file-creation](localization_images/Loc_Image1.JPG)
 
-   ![](Localization_images/Localization_img2.png)
+* Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfSpreadsheet.WPF.ja.resx file.
+  For your reference, you can download the Japanese("ja-JP") Resx file [here](https://github.com/syncfusion/wpf-demos/blob/master/SfSpreadsheet.WPF/Samples/Localization/CS/Resources/Syncfusion.SfSpreadsheet.WPF.ja.resx)
 
-5. Resource table will open.
+![adding-resource](localization_images/Loc_Image2.JPG)
 
-6. Enter the UI name in the Name column and the equivalent term you want in the Value column. 
+The following screenshot shows you the localization in SfSpreadsheet,
 
-   ![](Localization_images/Localization_img3.png)
+![localization](localization_images/localization_img1.jpg)
 
-   localizing the application to the Japanese Culture
-   {:.caption}
+## Modifying the localized strings in Resource file
 
-7. Assign the CultureInfo to the application before the InitializeComponent() method is being called. 
+Users can modify the default localized strings in Resource file by adding the default [Resx](https://github.com/syncfusion/wpf-demos/blob/master/SfSpreadsheet.WPF/Samples/Localization/CS/Resources/Syncfusion.SfSpreadsheet.WPF.resx) (resource) file of `SfSpreadsheet` in the 'Resources' folder of your application and name it as Syncfusion.SfSpreadsheet.WPF.resx.
 
-   The following code illustrates localizing the application to the Japanese CultureInfo.
-   
-   ~~~ csharp
-       
-	   public MainPage()
-	   
-	   { 	
-	   
-		   System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja-JP"); 
-		   
-		   InitializeComponent();
-		   
-	   }
-	   
-   ~~~
-   ~~~ vbnet
-    
-	   Public Sub New()
-	   
-		   System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("ja-JP")
-		   
-		   InitializeComponent()
-	   
-	   End Sub
-	   
-   ~~~
-  
-8. Add Supported Cultures to the Application
+Now, the default localized strings can be modified by changing the Name/Value pair in the Syncfusion.SfSpreadsheet.WPF.resx file.
 
-The following are the steps to add Supported Cultures:
-
-1. In the Solution Explorer, right-click application project and choose Unload Project from the Context Menu. The project will be unloaded. 
-
-2. Right click the project again, and select the Edit <ProjectName>.csproj option. 
-
-3. Example: LocalizationSample WPF.csproj
-
-4. In the .csproj file, find the <SupportedCultures></SupportedCultures> tags. Default the tags will be empty. So, add the required cultures. Use semicolon to separate if you want to add multiple culture. 
-
-5. Example: <SupportedCultures>en-GB;de;hi;es;it;Ja</SupportedCultures> 
-
-6. Save the project.
-
-7. Right click the <ProjectName>.csproj and choose Reload <ProjectName>.csproj. Project will be added with specific culture. 
-
-   ![](Localization_images/Localization_img4.png)
-
-#### Sample Link
-
-A demo of localization is available at the following location:  
-
-Essential Studio WPF Sample Browser - Spreadsheet - Localization - Localization Demo.
+![localized-sfspreadsheet](localization_images/Loc_Image3.jpg)

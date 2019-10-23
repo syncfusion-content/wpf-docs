@@ -1,108 +1,223 @@
 ---
-layout: post
-title: Getting Started| RichTextBoxAdv | Wpf | Syncfusion
+title: Getting Started
 description: getting started
 platform: wpf
-control: RichTextBoxAdv
+control: SfRichTextBoxAdv
 documentation: ug
+keywords: getting started
 ---
-
 # Getting Started
 
-## Adding RichTextBoxAdv to an Application 
+This section describes how to get started with SfRichTextBoxAdv control.
 
-The RichTextBoxAdv control can be added to an application by using the following applications:
+## Assembly Reference
 
-1. Microsoft Visual Studio
-2. Microsoft Expression Blend
+You can find SfRichTextBoxAdv control from the following assembly under the namespace Syncfusion.Windows.Controls.RichTextBoxAdv
+
+* Syncfusion.SfRichTextBoxAdv.WPF
+
+
+The following assembly references are required to deploy SfRichTextBoxAdv control in your application.
+
+* Syncfusion.Compression.Base
+
+* Syncfusion.OfficeChart.Base
+
+* Syncfusion.Shared.WPF
+
+* For 3.5 and 4.0 Frameworks – Syncfusion.DocIO.ClientProfile
+
+* For 4.5 and higher Frameworks – Syncfusion.DocIO.Base
 
 N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to add "Syncfusion.Licensing" assembly reference and include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WPF application to use our components.
 
+## Adding SfRichTextBoxAdv to an application
 
-## Creating the RichTextBoxAdv Control in Visual Studio
+After adding the aforementioned assembly references to your application, you can add SfRichTextBoxAdv as any normal control.
+You can either drag the SfRichTextBoxAdv control from the toolbox window to the Design view or directly define the control in XAML view.
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-To create a RichTextBoxAdv instance in Visual Studio:
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" xmlns:RichTextBoxAdv="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.Wpf" />
 
-1. Open Visual Studio.      
-2. On the File menu, select New, and then select Project. The New Project dialog box is displayed.           
+{% endhighlight %}
+{% highlight c# %}
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 
+{% endhighlight %}
 
+{% endtabs %}
 
+## Using SfRichTextBoxAdv as a standard RichTextBox
 
+This section discusses about how to use the SfRichTextBoxAdv control as a standard RichTextBox control with rich text formatting options.
 
-   ![](Getting-Started_images/Getting-Started_img1.png)         
-
-
-
-3. In the New Project dialog box, select WPF Application.                         
-4. In the Name field, type the name of the project.                              
-5. Click OK.                    
-
-
-   ![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-
-
-6. Drag the RichTextBoxAdv control from the Toolbox window to the Design View. An instance of the RichTextBoxAdv control is created in Design view.     
-
-
-
-   ![](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-
-
-## Creating the RichTextBoxAdv Control in Expression Blend
-
-To create a RichTextBoxAdv instance in Expression Blend:
-
-1. Open Expression Blend.    
-2. On the File menu, select New Project. The New Project dialog box opens.         
-
-
-
-    ![](Getting-Started_images/Getting-Started_img4.png)
-
+{% tabs %}
+{% highlight xaml %}
+<Window x:Class="Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+       xmlns:RichTextBoxAdv="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.Wpf">
+    
+    
+    <Window.Resources>
+        <RichTextBoxAdv:UnderlineToggleConverter x:Key="UnderlineToggleConverter"/>
+        <RichTextBoxAdv:LeftAlignmentToggleConverter x:Key="LeftAlignmentToggleConverter"/>
+        <RichTextBoxAdv:CenterAlignmentToggleConverter x:Key="CenterAlignmentToggleConverter"/>
+        <RichTextBoxAdv:RightAlignmentToggleConverter x:Key="RightAlignmentToggleConverter"/>
+        <RichTextBoxAdv:JustifyAlignmentToggleConverter x:Key="JustifyAlignmentToggleConverter"/>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Margin" Value="12 4"/>
+        </Style>
+        <Style TargetType="ToggleButton">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Margin" Value="12 4"/>
+        </Style>
+    </Window.Resources>
 
 
-3. In the Project types pane, select WPF, and then select WPF Application.         
-4. In the Name field, type the name of the project, and then click OK.             
+    <Grid Background="#F1F1F1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <!-- Defines the data context as RichTextBoxAdv -->
+            <StackPanel Orientation="Horizontal" DataContext="{Binding ElementName=richTextBoxAdv}">
+                <!-- UI option to perform Undo/Redo using command binding -->
+                <StackPanel Orientation="Horizontal">
+                    <Button Command="RichTextBoxAdv:SfRichTextBoxAdv.UndoCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" Focusable="False">
+                        <Image Source="/Images/Undo.png" Height="40" Width="40" />
+                    </Button>
+                    <Button Command="RichTextBoxAdv:SfRichTextBoxAdv.RedoCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" Focusable="False">
+                        <Image Source="/Images/Redo.png" Height="40" Width="40" />
+                    </Button>
+                </StackPanel>
+                <!-- UI option to perform Clipboard operations using command binding -->
+                <Border Width="2" Height="46" Background="#1F1F1F"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Command="RichTextBoxAdv:SfRichTextBoxAdv.CutCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" Focusable="False">
+                        <Image Source="/Images/Cut.png" Height="40" Width="40" />
+                    </Button>
+                    <Button Command="RichTextBoxAdv:SfRichTextBoxAdv.CopyCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" Focusable="False">
+                        <Image Source="/Images/Copy.png" Height="40" Width="40" />
+                    </Button>
+                    <Button Command="RichTextBoxAdv:SfRichTextBoxAdv.PasteCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" Focusable="False">
+                        <Image Source="/Images/Paste.png" Height="40" Width="40" />
+                    </Button>
+                </StackPanel>
+                <!-- UI option to apply character formatting using property binding -->
+                <Border Width="2" Height="46" Background="#1F1F1F"/>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleButton IsChecked="{Binding Selection.CharacterFormat.Bold}" Focusable="False">
+                        <Image Source="/Images/Bold.png" Height="40" Width="40" />
+                    </ToggleButton>
+                    <ToggleButton IsChecked="{Binding Selection.CharacterFormat.Italic}" Focusable="False">
+                        <Image Source="/Images/Italic.png" Height="40" Width="40" />
+                    </ToggleButton>
+                    <ToggleButton IsChecked="{Binding Selection.CharacterFormat.Underline, Converter={StaticResource UnderlineToggleConverter}}" Focusable="False">
+                        <Image Source="/Images/Underline.png" Height="40" Width="40" />
+                    </ToggleButton>
+                </StackPanel>
+                <Border Width="2" Height="46" Background="#1F1F1F"/>
+                <!-- UI option to apply paragraph formatting using property binding -->
+                <StackPanel Orientation="Horizontal">
+                    <ToggleButton IsChecked="{Binding Selection.ParagraphFormat.TextAlignment, Converter={StaticResource LeftAlignmentToggleConverter}}" Focusable="False">
+                        <Image Source="/Images/Left.png" Height="40" Width="40" />
+                    </ToggleButton>
+                    <ToggleButton IsChecked="{Binding Selection.ParagraphFormat.TextAlignment, Converter={StaticResource CenterAlignmentToggleConverter}}" Focusable="False">
+                        <Image Source="/Images/Center.png" Height="40" Width="40" />
+                    </ToggleButton>
+                    <ToggleButton IsChecked="{Binding Selection.ParagraphFormat.TextAlignment, Converter={StaticResource RightAlignmentToggleConverter}}" Focusable="False">
+                        <Image Source="/Images/Right.png" Height="40" Width="40" />
+                    </ToggleButton>
+                    <ToggleButton IsChecked="{Binding Selection.ParagraphFormat.TextAlignment, Converter={StaticResource JustifyAlignmentToggleConverter}}" Focusable="False">
+                        <Image Source="/Images/Justify.png" Height="40" Width="40" />
+                    </ToggleButton>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" Grid.Row="1"  />
+    </Grid>
+
+</Window>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Creating Document editor with Ribbon
+
+This section discusses about how to create document editor with ribbon similar to Microsoft Word. The SfRichTextRibbon is a Ribbon control customized to work with SfRichTextBoxAdv control, which gives you the look and feel of Microsoft Word.
+You can find the SfRichTextRibbon control from the following assembly under the namespace Syncfusion.Windows.Controls.RichTextBoxAdv
+
+* Syncfusion.SfRichTextRibbon.WPF
+
+The following assembly reference are additionally required to deploy SfRichTextRibbon control along with aforementioned assemblies.
+
+* Syncfusion.Tools.WPF
 
 
+### Adding the Control via Designer
 
-   ![](Getting-Started_images/Getting-Started_img5.png)    
+1.Create new WPF application in Visual Studio
 
+2.Use the Syncfusion RibbonWindow instead of Window
 
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-5. On the Window menu, select Assets. The Assets Library dialog box opens.                       
-6. In the Search box, type RichTextBoxAdv. The search results are displayed.                     
-7. Drag the RichTextBoxAdv control to the Design view. An instance of the RichTextBoxAdv control is created.                   
+3.Drag the SfRichTextRibbon control from the Toolbox window to the Design View. An instance of the SfRichTextRibbon control is created in the Design view
 
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
+4.Drag the SfRichTextBoxAdv control from the Toolbox window to the Design View. An instance of the SfRichTextBoxAdv control is created in the Design view
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+![](Getting-Started_images/Getting-Started_img4.jpeg)
 
+5.To make an interaction between SfRichTextRibbon and SfRichTextBoxAdv, bind the SfRichTextBoxAdv as DataContext to the SfRichTextRibbon
 
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfRichTextRibbon x:Name="richTextRibbon SnapsToDevicePixels="True" DataContext="{Binding ElementName=richTextBoxAdv}" /> 
 
-## Appearance
+{% endhighlight %}
 
-You can customize the appearance of the RichTextBoxAdv control by editing the style of the control in ExpressionBlend or by using the properties exposed by the RichTextBoxAdv control.
-
-### Blendability
-
-You can edit the style of the RichTextBoxAdv control by using Expression Blend. To edit the RichTextBoxAdv control’s style in Expression Blend:
-
-1.Drag the RichTextBoxAdv control to the Design view. The RichTextBoxAdv control will appear as shown in the screen shot displayed below.                 
-2.Right-click the RichTextBoxAdv control, select Edit Template, and then select Edit a Copy.          
-
-
+{% endtabs %}
 
 
+### Adding Control via code.
 
-![](Getting-Started_images/Getting-Started_img7.png)
+You can also add the SfRichTextRibbon and SfRichTextBoxAdv programmatically by using XAML
 
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:RibbonWindow x:Class="DocumentEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocumentEditor"
+        mc:Ignorable="d"
+        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf"
+        Title="MainWindow" Height="350" Width="525" Syncfusion:SkinStorage.VisualStyle="Office2013">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Syncfusion:SfRichTextRibbon x:Name="richTextRibbon" SnapsToDevicePixels="True"/>
+        <Syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv" Background="#F1F1F1" Grid.Row="1"></Syncfusion:SfRichTextBoxAdv>
+    </Grid>
+</Syncfusion:RibbonWindow>
 
+{% endhighlight %}
 
+{% endtabs %}
+
+N> Prefer using `SfRichTextRibbon` within `RibbonWindow` in your application, since the backstage of Ribbon will be opened only when the ribbon is loaded under the `RibbonWindow`
+
+Finally, you can get the following output similar to Microsoft Word on executing the application
+![](Getting-Started_images/Getting-Started_img5.jpeg)

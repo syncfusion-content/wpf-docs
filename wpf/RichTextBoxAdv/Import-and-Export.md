@@ -1,312 +1,117 @@
 ---
-layout: post
-title: Import and Export| RichTextBoxAdv | Wpf | Syncfusion
-description:  import and export
+title: Import and Export |  SfRichTextBoxAdv | WPF | Syncfusion
+description: This section describes how to perform the import/export word, rich text format, HTML, XAML and text documents in WPF SfRichTextBoxAdv Control.
 platform: wpf
-control: RichTextBoxAdv
+control: SfRichTextBoxAdv
 documentation: ug
+keywords: import, export, load, save
 ---
+# Import and Export
 
-#  Import and Export
-
-This feature lets you use several file formats, namely .doc, .docx, .html, .xaml, and .txt, inside the RichTextBoxAdv control. Using any one format allows the use of the other formats.
-
-##  HTML Import/Export
-
-The HTML import feature allows the user to import an .html file into the RichTextBoxAdv. It renders the HTML tags like a browser and displays the text in the format of RichTextBoxAdv’s content model. The HTML export feature actually exposes the RichTextBoxAdv’s document as an .html file. The following methods clearly show this use case.
-
-
-
-{% highlight C# %}
-
-     
- DocumentAdv doucment = HTMLImporting.ConvertToDocumentAdv(stream);  
- DocumentAdv document = HTMLImporting.ConvertToDocumentAdv(htmlstring);
-
-      
-string html = HTMLExporting.ConvertToHtml(RichTextBox.Document, stream);
-{% endhighlight %}
-
-
-### Methods
-
-
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
-<tr>
-<td>
-ConvertToDocumentAdv()</td><td>
-Converts HTML stream into DocumentAdv.</td><td>
-(Stream stream)(string htmlstring)</td><td>
-NA</td><td>
-DocumentAdv</td></tr>
-<tr>
-<td>
-ConvertToHtml()</td><td>
-Converts the DocumentAdv to an HTML string.</td><td>
-NA</td><td>
-NA</td><td>
-String</td></tr>
-</table>
-
-
-###  Limitations
-
-The HTML import/export feature has the following limitations:
-
-1. Script support has not been provided.
-2. It does not provide support for tables.
-
-
-
-##  DOC Import/Export and DOCX Import/Export
-
-This feature allows you to open and save the Word DOC and DOCX format (.doc, .docx) documents, and to view, edit, and print the contents by using the RichTextBoxAdv control.
-
-The following assembly references are required to use this feature and its namespace.
-
-### WPF 3.5 and 4.0 Framework:
-
-* Assembly: Syncfusion.RichTextDocIOParser.Wpf
-* Dependent Assemblies: Syncfusion.Compression.Base, Syncfusion.Core, Syncfusion.DocIO.ClientProfile, Syncfusion.RichTextBoxAdv.Wpf, and Syncfusion.Shared.Wpf
-* Namespace: Syncfusion.Windows.Tools.Controls
-
-
-
-### WPF 4.5 and 4.5.1 Framework:
-
-* Assembly: Syncfusion.RichTextDocIOParser.Wpf
-* Dependent Assemblies: Syncfusion.Compression.Base, Syncfusion.Core, Syncfusion.DocIO.Base, Syncfusion.RichTextBoxAdv.Wpf, and Syncfusion.Shared.Wpf
-* Namespace: Syncfusion.Windows.Tools.Controls
-
-
-
-### Silverlight platform:
-
-* Assembly: Syncfusion.RichTextDocIOParser.Silverlight
-* Dependent Assemblies: Syncfusion.Compression.Silverlight, Syncfusion.DocIO.Silverlight, Syncfusion.RichTextBoxAdv.Silverlight, and Syncfusion.Shared.Silverlight
-* Namespace: Syncfusion.Windows.Tools.Controls
-
-
-
-### DOC and DOCX Import
-
-You can convert the Word document stream to RichTextBoxAdv document by invoking the ConvertToDocumentAdv method from the extension class DocxImporting. 
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Return Type</th><th>
-Parameters</th><th>
-Description</th></tr>
-<tr>
-<td>
-ConvertToDocumentAdv</td><td>
-DocumentAdv</td><td>
-
-1. Stream documentStream2. String documentExtension (.doc, .docx)</td><td>
-Converts the Word document stream to DocumentAdv instance.</td></tr>
-</table>
-
+The SfRichTextBoxAdv allows you to import/export word documents (.docx, .doc), rich text format documents (.rtf), HTML documents (.htm, .html), XAML documents (.xaml) and text documents (.txt).
+The following sample code demonstrates how to import contents from a file into SfRichTextBoxAdv.
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
+// Imports the document.
+void ImportDocument ()
+{
+    // Initializes the open file dialog.
+    OpenFileDialog openFileDialog = new OpenFileDialog()
+    {
+        Filter = "All supported files (*.docx,*.doc,*.htm,*.html,*.rtf,*.txt,*.xaml)|*.docx;*.doc;*.htm;*.html;*.rtf;*.txt;*.xaml|Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml",
+        FilterIndex = 1,
+        Multiselect = false
+    };
+
+    if ((bool)openFileDialog.ShowDialog())
+    {
+        // Loads the file into RichTextBoxAdv.
+        richTextBoxAdv.Load(openFileDialog.FileName);
+        // Sets the File name as Document Title.
+        richTextBoxAdv.DocumentTitle = openFileDialog.FileName.Remove(openFileDialog.FileName.LastIndexOf("."));
+    }
+}
 
 
-
-
-
-//Initializes the new RichTextBoxAdv control.
-
-RichTextBoxAdv richTextBoxAdv = new RichTextBoxAdv();
-
-//Loads the DOC format document in RichTextBoxAdv control from document stream.
-
-richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".doc");
-
-//Loads the DOCX format document in RichTextBoxAdv control from document stream.
-
-richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".docx");
 
 {% endhighlight %}
+{% highlight VB %}
+' Imports the document.
+Private Sub ImportDocument()
+	' Initializes the open file dialog.
+	Dim openFileDialog As New OpenFileDialog() With { _
+		Key .Filter = "All supported files (*.docx,*.doc,*.htm,*.html,*.rtf,*.txt,*.xaml)|*.docx;*.doc;*.htm;*.html;*.rtf;*.txt;*.xaml|Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml", _
+		Key .FilterIndex = 1, _
+		Key .Multiselect = False _
+	}
 
-{% highlight vbnet %}
+	If CBool(openFileDialog.ShowDialog()) Then
+		' Loads the file into RichTextBoxAdv.
+		richTextBoxAdv.Load(openFileDialog.FileName)
+		' Sets the File name as Document Title.
+		richTextBoxAdv.DocumentTitle = openFileDialog.FileName.Remove(openFileDialog.FileName.LastIndexOf("."))
+	End If
+End Sub
 
 
-'Initializes the new RichTextBoxAdv control.
-
-Dim richTextBoxAdv As New RichTextBoxAdv()
-
-'Loads the DOC format document in RichTextBoxAdv control from document stream.
-
-richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".doc")
-
-'Loads the DOCX format document in RichTextBoxAdv control from document stream.
-
-richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".docx")
 {% endhighlight %}
 {% endtabs %}
 
-### DOC and DOCX Export
-
-You can convert the RichTextBoxAdv document to Word document stream by invoking the ConvertToDocument method from the extension class DocxExporting. 
-
-
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Return Type</th><th>
-Parameters</th><th>
-Description</th></tr>
-<tr>
-<td>
-ConvertToDocument</td><td>
-void</td><td>
-1. DocumentAdv documentadv 2. Stream documentStream 3. String documentExtension (.doc, .docx)</td><td>
-Converts the DocumentAdv instance to Word document stream.</td></tr>
-</table>
-
+The following code example demonstrates how to export SfRichTextBoxAdv contents into a file.
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
+// Exports the document.
+void ExportDocument ()
+{    
+    // Initializes the file save picker.
+    SaveFileDialog saveFileDialog = new SaveFileDialog()
+    {
+        Filter = "Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml",
+        FilterIndex = 1
+    };
+    if ((bool)saveFileDialog.ShowDialog())
+    {
+        // Saves the document content into a file.
+        richTextBoxAdv.Save(saveFileDialog.FileName);
+    }
+}
 
 
-
-
-
-//Saves the RichTextBoxAdv document to Word DOC format document stream.
-
-DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".doc");
-
-//Saves the RichTextBoxAdv document to Word DOCX format document stream.
-
-DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx");
 
 {% endhighlight %}
+{% highlight VB %}
+' Exports the document.
+Private Sub ExportDocument()
+	' Initializes the file save picker.
+	Dim saveFileDialog As New SaveFileDialog() With { _
+		Key .Filter = "Word Document (*.docx)|*.docx|Word 97 - 2003 Document (*.doc)|*.doc|Web Page (*.htm,*.html)|*.htm;*.html|Rich Text File (*.rtf)|*.rtf|Text File (*.txt)|*.txt|Xaml File (*.xaml)|*.xaml", _
+		Key .FilterIndex = 1 _
+	}
+	If CBool(saveFileDialog.ShowDialog()) Then
+		' Saves the document content into a file.
+		richTextBoxAdv.Save(saveFileDialog.FileName)
+	End If
+End Sub
 
-{% highlight vbnet %}
 
-
-
-
-'Saves the RichTextBoxAdv document to Word DOC format document stream.
-
-DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".doc")
-
-'Saves the RichTextBoxAdv document to Word DOCX format document stream.
-
-DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx")
 {% endhighlight %}
 {% endtabs %}
 
-####  Limitations
+N> When the SfRichTextBoxAdv control encounters an unsupported element, it does not render the element, instead, it continues to the next supported element and render it. Examples of unsupported elements are AutoShapes, watermarks, charts, SmartArt, WordArt, equations, document structure tags, styles, wrapping styles, fields other than hyperlinks, absolutely positioned tables, and absolutely positioned images.
 
-The .doc import/export and .docx import/export features have the following limitations:
+## UI Commands for importing/exporting documents
 
-1. Hyperlinks do not work for tables of contents.
-##  XAML Import/Export
-
-
-The XAML import feature allows users to import a .xaml file into the RichTextBoxAdv. It renders the XAML elements as XamlReader and displays the text in the format of RichTextBoxAdv’s content model. The XAML export feature actually exposes the RichTextBoxAdv’s document as a .xaml file. The following methods clearly show this use case.
-{% highlight C# %}
-
-
-
-RichTextBox.Document=XAMLImporting.ConvertToDocumentAdv(xamlStream)
+The following code example demonstrates how to bind commands for performing importing and exporting documents.
+{% tabs %}
+{% highlight xaml %}
+<!-- Binds button to the OpenDocumentCommand -->
+<Button Content="Open" Command="RichTextBoxAdv:SfRichTextBoxAdv.OpenDocumentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
+<!-- Binds button to the SaveDocumentCommand -->
+<Button Content="Save" Command="RichTextBoxAdv:SfRichTextBoxAdv.SaveDocumentCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}" />
 
 
-
-string xaml = XAMLExporting.ConvertToXAML(RichTextBox.Document, xamlstream);
 {% endhighlight %}
 
+{% endtabs %}
 
-
-
-### Methods
-
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
-<tr>
-<td>
-ConvertToDocumentAdv()</td><td>
-It converts XAML stream into DocumentAdv.</td><td>
-NA</td><td>
-NA</td><td>
-DocumentAdv</td></tr>
-<tr>
-<td>
-ConvertToXaml()</td><td>
-It returns the RichText content as XAML.</td><td>
-NA</td><td>
-NA</td><td>
-Void</td></tr>
-</table>
-
-
-## Text Import/Export
-
-The text import feature allows the user to import a .txt file into the RichTextBoxAdv. It renders the text in Notepad format and displays the text in the format of RichTextBoxAdv’s content model. The text export feature actually exposes the RichTextBoxAdv’s document as a .txt file. The following methods clearly show this usage.
-
-
-{% highlight C# %}
-
-
-
-RichTextBox.Document = TextImporting.ConvertToDocumentAdv(textstream);
-{% endhighlight %}
-
-{% highlight C# %}
-
-
-
-string txtstring= TextExporting.ConvertToText(RichTextBox.Document, textStream);
-{% endhighlight %}
-
-
-
-
-### Methods
-
-
-
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
-<tr>
-<td>
-ConvertToDocumentAdv()</td><td>
-Converts text stream into DocumentAdv.</td><td>
-NA</td><td>
-NA</td><td>
-DocumentAdv</td></tr>
-<tr>
-<td>
-ConvertText()</td><td>
-Returns the rich-text content as a text file.</td><td>
-NA</td><td>
-NA</td><td>
-String</td></tr>
-</table>
-
-
+N> In order to perform import/export documents, the standard keyboard shortcuts such as CTRL + O, CTRL + S can also be used.

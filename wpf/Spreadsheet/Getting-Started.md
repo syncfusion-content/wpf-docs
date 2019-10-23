@@ -1,122 +1,263 @@
 ---
 layout: post
-title: Getting Started | Spreadsheet | wpf | Syncfusion
-description: getting started
+title: Getting Started with SfSpreadsheet
+description: How to create, open and save the workbook in SfSpreadsheet
 platform: wpf
-control: Spreadsheet
+control: SfSpreadsheet
 documentation: ug
 ---
 
 # Getting Started
+This section helps you to get started with the SfSpreadsheet
 
-## Creating a WPF Application
+## Assemblies Deployment
+Below table describes, list of assemblies required to be added in project when the SfSpreadsheet control is used in your application.
 
- The following are steps to create a new WPF application in Visual Studio:
+<table>
+<tr>
+<th>
+Assembly</th><th>
+Description</th></tr>
+<tr>
+<td>
+Syncfusion.SfCellGrid.WPF.dll</td><td>
+Contains the base and fundamental classes which holds the underlying architecture for displaying cells with virtualized behavior and selection/interaction of cells.</td></tr>
+<tr>
+<td>
+Syncfusion.SfGridCommon.WPF.dll</td><td>
+Contains the classes which holds the properties and functions of scroll viewer and disposable elements</td></tr>
+<tr>
+<td>
+Syncfusion.SfSpreadsheet.WPF.dll</td><td>
+Contains the classes  that handles all the UI Operations of SfSpreadsheet such as importing of sheets, applying formulas/styles etc.</td></tr>
+<tr>
+<td>
+Syncfusion.Shared.WPF.dll</td><td>
+Contains the classes which holds the controls like Color pickers,Chromeless window, ComboBoxAdv, DateTimeEdit etc.</td></tr>
+<tr>
+<td>
+Syncfusion.Tools.WPF.dll</td><td>
+Contains the classes which holds the controls like TabControlExt, TabItemExt, Gallery, GroupBar, TabSplitter etc which are used in SfSpreadsheet</td></tr>
+<tr>
+<td>
+Syncfusion.XlsIO.Base.dll</td><td>
+Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations, Formula calculations etc.</td></tr>
+</table>
 
-1. Open Visual Studio.
+Below are the assemblies list that can be added when you want to enable certain features in SfSpreadsheet control. 
 
-2. Click File tab and navigate to New > Project.
+<table>
+<tr>
+<th>
+Optional Assemblies</th><th>
+Description</th></tr>
+<tr>
+<td>
+Syncfusion.SfSpreadsheetHelper.WPF.dll</td><td>
+Contains the classes which is responsible for importing charts and sparklines into SfSpreadsheet.</td></tr>
+<tr>
+<td>
+Syncfusion.ExcelChartToImageConverter.WPF.dll</td><td>
+Contains the classes which is responsible for converting charts as image.</td></tr>
+<tr>
+<td>
+Syncfusion.SfChart.WPF.dll</td><td>
+Contains the classes which is responsible for importing charts like Line charts, Pie charts, Sparklines etc.</td></tr>
+<tr>
+<td>
+Syncfusion.ExcelToPDFConverter.Base.dll</td><td>
+Contains the base and fundamental classes which is responsible for converting excel to PDF.</td></tr>
+<tr>
+<td>
+Syncfusion.Pdf.Base.dll</td><td>
+Contains the base and fundamental classes for creating PDF.</td></tr>
+</table>
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+## Create a Simple Application with Spreadsheet
 
-3. In the New Project dialog box, select WPF Application, enter a name for the application in the Name field and click OK.
+SfSpreadsheet control can be added into the application either via designer or via coding. 
 
-   ![](Getting-Started_images/Getting-Started_img2.jpeg)
+### Adding a Control via Designer
 
-4. Now, a new WPF application will be created.
+1.Create new WPF application in Visual Studio.
 
-## Adding Spreadsheet Control to WPF Application
+2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items 
 
-### Through Visual Studio 
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
-Following are the steps to add the Spreadsheet control to WPF application using Visual Studio.
+Syncfusion Control tab
+   {:.caption}
 
-1. Create a new WPF application in Visual Studio. 
+3.Drag `SfSpreadsheet` and drop in the Designer area from the Toolbox
 
-2. In Visual Studio Toolbox, click Syncfusion WPF Toolbox tab.
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-   ![](Getting-Started_images/Getting-Started_img3.png) 
-   
-3. Drag SpreadsheetControl to the Designer area.
-
-4. Customize the properties of SpreadsheetControl using Properties window.
-
-   N> To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet control as a DataContext as shown the following code.
-
-   ~~~ xaml
-
-	<syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadsheetControl1}"/>
-	
-   ~~~
-
-### Through XAML and C#
-
-You can also add the Spreadsheet control to a WPF application through XAML and C#. The following code example illustrates this. 
+_For_ _Spreadsheet_
 
 {% tabs %}
-
 {% highlight xaml %}
-
-<syncfusion:SpreadsheetControl HorizontalAlignment="Left"  Name="spreadsheetControl1" VerticalAlignment="Top" />
-
+<syncfusion:SfSpreadsheet x:Name = spreadsheet />
 {% endhighlight %}
-
-{% highlight c# %}
- 
- SpreadsheetControl Spreadsheet1 = new SpreadsheetControl();LayoutRoot.Children.Add(Spreadsheet1);
- 
-{% endhighlight %} 
- 
-{% highlight vbnet %}
-
-Dim Spreadsheet1 As SpreadsheetControl = New SpreadsheetControl()LayoutRoot.Children.Add(Spreadsheet1)
-
-{% endhighlight %}
-
 {% endtabs %}
 
-## Loading Excel Files in Spreadsheet Control
+4.Ribbon can be added to the application by dragging `SfSpreadsheetRibbon` to the Designer area.
 
-You can open the Excel document in the Spreadsheet control using _ImportFromExcel_ method. The following code illustrates this.
+5.To make an interaction between Ribbon items and `SfSpreadsheet`, bind the `SfSpreadsheet` as DataContext to the `SfSpreadsheetRibbon`.
+
+_For_ _Ribbon_
 
 {% tabs %}
-
-{% highlight c# %}
-
-FileStream stream = new FileStream(@"..\..\Data\DefaultSheet.xlsx", FileMode.Open);
-
-spreadsheet.ImportFromExcel(stream);
-
+{% highlight xaml %}
+<syncfusion:SfSpreadsheetRibbon DataContext= "{Binding ElementName=spreadsheet}"  />
 {% endhighlight %}
-
-{% highlight vbnet %}
- 
- Dim stream As FileStream = New FileStream("..\..\Data\DefaultSheet.xlsx", FileMode.Open)spreadsheet.ImportFromExcel(stream)
-
-{% endhighlight %} 
-
 {% endtabs %}
 
-N> You can also open the Excel document using ImportFromExcelCommand. When you execute the ImportFromExcelCommand it will display the Open dialog box. Using this Open dialog, you can open the Excel document in the Spreadsheet control.
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
-## Appearance and Structure of the Controls
+### Adding Control via Coding
 
-### Structure of the SpreadsheetRibbon Control
+Spreadsheet is available in the following namespace “_Syncfusion_._UI_._Xaml_._Spreadsheet_” and it can be created programmatically either by using XAML or C# code. 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+_For_ _Spreadsheet_
 
-### Structure of the Spreadsheet Control
+{% tabs %}
+{% highlight xaml %}
+<Window x:Class="SpreadsheetDemo.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup- compatibility/2006"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+syncfusion:SkinStorage.VisualStyle="Office2013"
+mc:Ignorable="d">
+<syncfusion:SfSpreadsheet x:Name="spreadsheet" FormulaBarVisibility="Visible"/>
+</Window>
+{% endhighlight %}
+{% highlight c# %}
+SfSpreadsheet spreadsheet = new SfSpreadsheet();
+this.grid.Children.Add(spreadsheet);
+{% endhighlight %}
+{% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img5.png)
+N> To add the `SfSpreadsheetRibbon` in your application, use the `RibbonWindow` since the backstage of Ribbon will be opened only when the ribbon is loaded under the `RibbonWindow`
 
-## Architecture
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:RibbonWindow x:Class="SpreadsheetDemo.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+syncfusion:SkinStorage.VisualStyle="Office2013"
+mc:Ignorable="d">
+</syncfusion:RibbonWindow>
+{% endhighlight %}
+{% endtabs %}
 
-The Spreadsheet control supports ControlTemplate to define its content. By default, its content includes a TabControlExt object that contains number of TabItemExt based on sheet count. The TabItemExt contains a ScrollViewer object that contains a SpreadsheetGrid object.
+_You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application_.
 
-The following sketch illustrates the Spreadsheet control architecture.
+![](Getting-Started_images/Getting-Started_img4.jpeg)
 
-![](Getting-Started_images/Getting-Started_img6.png)
+## Creating a new Excel Workbook
 
-### Accessing the Underlying Grid control
+A new workbook can be created by using a [Create](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Create.html) method with specified number of worksheets. By default, a workbook will be created with single worksheet.
 
-The Spreadsheet control is a control derived class that has its own properties. You can use Grid control derived property namely ActiveSpreadsheetGrid _to_ get its grid-like behavior. To access the underlying Grid control associated with the Spreadsheet control, you can use the SpreadsheetControl.GridProperties.ActiveSpreadsheetGrid property.
+{% tabs %}
+{% highlight c# %}
+spreadsheet.Create(2);
+{% endhighlight %}
+{% endtabs %}
+
+## Opening an existing Excel Workbook
+
+The Excel Workbook can be opened in SfSpreadsheet using the [Open](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Open.html) method in various ways,
+
+{% tabs %}
+{% highlight c# %}
+//Using Stream,
+spreadsheet.Open (Stream file);
+
+//Using String,
+spreadsheet.Open (string file);
+
+//Using Workbook,
+spreadsheet.Open(IWorkbook workbook);
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+spreadsheet.Open (@"..\..\Data\Outline.xlsx");
+{% endhighlight %}
+{% endtabs %}
+
+![](Getting-Started_images/Getting-Started_img5.jpeg)
+
+Opening Excel File in SfSpreadsheet
+   {:.caption}
+
+## Saving the Excel Workbook
+
+The Excel workbook can be saved in SfSpreadsheet using [Save](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~Save.html) method. If the workbook already exists in the system drive, it will be saved in the same location, otherwise Save Dialog box opens to save the workbook in user specified location. 
+
+{% tabs %}
+{% highlight c# %}
+spreadsheet.Save();
+{% endhighlight %}
+{% endtabs %}
+
+You can also use [SaveAs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.SfSpreadsheet~SaveAs.html) method directly to save the existing excel file with modifications.
+
+The `SaveAs` method in SfSpreadsheet can be used in various ways,
+
+{% tabs %}
+{% highlight c# %}
+//Using Stream,
+spreadsheet.SaveAs (Stream file);
+
+//Using String,
+spreadsheet.SaveAs (string file);
+
+//For Dialog box,
+spreadsheet.SaveAs();
+{% endhighlight %}
+{% endtabs %}
+
+## Displaying Charts and Sparklines
+
+For importing charts and sparklines in SfSpreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SfSpreadsheetHelper.WPF.dll**  
+
+### Charts
+ 
+Create an instance of Syncfusion.UI.Xaml.SpreadsheetHelper.[GraphicChartCellRenderer](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer.html) and add that renderer into [GraphicCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicModel~GraphicCellRenderers.html) collection by using the helper method [AddGraphicChartCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddGraphicChartCellRenderer.html) which is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.GraphicCells`. 
+
+{% tabs %}
+{% highlight c# %}
+public MainWindow()
+{
+  InitializeComponent();
+  
+  //For importing charts,
+  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Sparklines
+
+Create an instance of Syncfusion.UI.Xaml.SpreadsheetHelper.[SparklineCellRenderer](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheetHelper.WPF~Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer.html) and add that renderer into the Spreadsheet by using the helper method [AddSparklineCellRenderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpreadsheet.WPF~Syncfusion.UI.Xaml.Spreadsheet.GraphicCells.GraphicCellHelper~AddSparklineCellRenderer.html) which is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.GraphicCells`.
+
+{% tabs %}
+{% highlight c# %}
+public MainWindow()
+{
+  InitializeComponent();
+      
+  //For importing sparklines,
+  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+}
+{% endhighlight %}
+{% endtabs %}
