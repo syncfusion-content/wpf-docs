@@ -86,40 +86,40 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 ![Setting DoubleTextBox number format by NumberFormatInfo](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img2.jpeg)
 
 
-The following code illustrate how to set `NumberGroupSizes` by using the `NumberFormat` property.
+The following code illustrate how to set number groupsize by using the `NumberFormat` property.
 
 {% tabs %}
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-            doubleTextBox.Width = 200;
-            doubleTextBox.Height = 25;
-            doubleTextBox.Value = 123456789;
-            doubleTextBox.NumberFormat = new System.Globalization.NumberFormatInfo()
-            {
-                NumberDecimalDigits =4,
-                NumberGroupSeparator = "/",
-                NumberDecimalSeparator = "*",
-                NumberGroupSizes = new int[] { 2, 3, 4 }
-            };
+doubleTextBox.Width = 200;
+doubleTextBox.Height = 25;
+doubleTextBox.Value = 123456789;
+doubleTextBox.NumberFormat = new System.Globalization.NumberFormatInfo()
+{
+    NumberDecimalDigits =4,
+    NumberGroupSeparator = "/",
+    NumberDecimalSeparator = "*",
+    NumberGroupSizes = new int[] { 2, 3, 4 }
+};
 {% endhighlight %}
 {% endtabs %}
 
 ![Setting DoubleTextBox number group size by NumberFormatInfo](Culture-and-Number-Formats-images/NumberGroupSizes_format.png)
 
-The following code illustrate how to set `NumberGroupSizes` by using the `NumberGroupSizes` property of the `DoubleTextBox`.
+The following code illustrate how to set number groupsize by using the `NumberGroupSizes` property of the `DoubleTextBox`.
 
 {% tabs %}
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-            doubleTextBox.Width = 150;
-            doubleTextBox.Height = 25;
-            doubleTextBox.Value = 123456789;
-            doubleTextBox.NumberGroupSeparator = "/";
-            doubleTextBox.NumberDecimalSeparator = "*";
-            doubleTextBox.NumberDecimalDigits = 3;
-            doubleTextBox.NumberGroupSizes = new Int32Collection() { 4, 3, 2};
+doubleTextBox.Width = 150;
+doubleTextBox.Height = 25;
+doubleTextBox.Value = 123456789;
+doubleTextBox.NumberGroupSeparator = "/";
+doubleTextBox.NumberDecimalSeparator = "*";
+doubleTextBox.NumberDecimalDigits = 3;
+doubleTextBox.NumberGroupSizes = new Int32Collection() { 4, 3, 2};
 
 {% endhighlight %}
 {% endtabs %}
