@@ -88,7 +88,7 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Routing;
 
 N> Routing is applicable only for orthogonal connectors.
 
-### How to enable or disbale routing for Nodes
+### How to enable or disable routing for Nodes
 
 By default, all nodes are treated as an obstacle for a connector i.e. connections will go around the node boundary. And using `NodeConstraints.RoutingObstacle` individual node's can be controlled whether to act as an obstacle or not.
 
