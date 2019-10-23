@@ -112,4 +112,4 @@ doubleTextBox.TextSelectionOnFocus = true;
 
 **TextSelectionOnFocus = "True"**
 
-![WPF DoubleTextBox TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)
+![DoubleTextBox TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)

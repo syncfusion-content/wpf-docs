@@ -113,7 +113,7 @@ doubleTextBox.Background = Brushes.Cyan;
 
 ## Setting the Corner Radius
 
-To rounded the corners of the DoubleTexBox, set the property [CornerRadius](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CornerRadius.html) with the desired values. The default value of `CornerRadius` property is 1.
+Corner Radius indicates the degree to which the corners of the border can be rounded. To create curved borders for the `DoubleTextBox`, use [CornerRadius](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~CornerRadius.html) property. The default value of `CornerRadius` property is 1.
 
 {% tabs %}
 

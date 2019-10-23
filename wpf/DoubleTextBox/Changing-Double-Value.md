@@ -176,7 +176,7 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
                           UseNullOption="True">
     <syncfusion:DoubleTextBox.WatermarkTemplate >
         <DataTemplate>
-            <Border Background="LightGray">
+            <Border Background="Red">
                 <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
             </Border>
         </DataTemplate>

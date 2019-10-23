@@ -237,9 +237,9 @@ You can customize the number format by either setting the [NumberFormat](https:/
 {% endhighlight %}
 {% highlight C# %}
 DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.Width = 150;
+doubleTextBox.Width = 200;
 doubleTextBox.Height = 25;
-doubleTextBox.Value = 1234567;
+doubleTextBox.Value = 123456789012345;
 doubleTextBox.NumberFormat = new NumberFormatInfo()
 {
     NumberGroupSeparator = "/",
