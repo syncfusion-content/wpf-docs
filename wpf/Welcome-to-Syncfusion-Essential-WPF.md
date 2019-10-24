@@ -110,8 +110,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <small> - SfCircularGauge</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfdatetimerangenavigator/getting-started">Range Selector</a>
-<small> - SfDateTimeRangeNavigator</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfsurfacechart/getting-started">Surface Chart</a>
+<small> - SfSurfaceChart</small></p>
 </td>
 </tr>
 
@@ -132,8 +132,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfsurfacechart/getting-started">Surface Chart</a>
-<small> - SfSurfaceChart</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfdatetimerangenavigator/getting-started">Range Selector</a>
+<small> - SfDateTimeRangeNavigator</small></p>
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/sftreemap/getting-started">TreeMap</a>
