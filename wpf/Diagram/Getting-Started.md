@@ -1,3031 +1,898 @@
 ---
 layout: post
-title: Getting Started | Diagram | wpf | Syncfusion
-description: getting started
+title: Getting started with Syncfusion Essential Diagram for WPF.
+description: Getting started walk through how to integrate SfDiagram into an application and how to create your first Flow Diagram and Organizational Chart Diagram
 platform: wpf
-control: Diagram
+control: SfDiagram
 documentation: ug
 ---
 
 # Getting Started
 
-This section helps you to get started with Essential Diagram and has the following topics:
+## Assembly deployment
 
-## Diagram Architecture
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfdiagram) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-The following is a general description about the important classes of Diagram WPF. These classes form the base of the control. 
+You can find more details about installing the NuGet package in a WPF application in the following link:
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-### Diagram Control
 
-The Diagram control is the base class, which contains the view and the model. It receives user input and translates it into actions and commands on the model and view. It also implements SymbolPalette and scrolling, and enables horizontal and vertical scrollbars when the size of the view exceeds the size of the window. 
-Diagram Model
+The following section helps you to build your application with SfDiagram.
 
-A model represents data for an application and contains the logic for adding, accessing, and manipulating the data. Nodes and connectors are added to the Diagram Control using the Model property. A predefined layout can be applied using the LayoutType property of the DiagramModel, or the position of the nodes can be manually specified.
+## Creating the project
 
-### Diagram View
+ Create new WPF project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+ 
 
-The view obtains data from the model and presents them to the user. It typically manages the overall layout of the data obtained from the model.
-Apart from presenting the data, view also handles navigation between the items, and some aspects of item selection. The views also implements basic user interface features, such as rulers, and drag-and-drop. It handles the events, which occur on the objects, obtained from the model. Command mechanism is also implemented by the view.
-A view can be constructed without a model, but a model must be provided before it can display useful information. Views can also render additional visual information that do not exist inside the model such as bounding boxes and grids. These additional view-specific objects are referred to as decorators, because they provide additional visual aids and window dressing to the view; but they are not actually a part of the model.
+### Adding control via Designer
 
-### Diagram Page
+SfDiagram control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-The DiagramPage is just a container to hold the objects(nodes and connectors) added through the model. The DiagramView uses the page to display the diagram objects. As mentioned before, the view implements several basic user interface features like rulers, grids, events and commands. So therefore page is just a container to hold the graphical objects added through the model and the DiagramView uses it to display the objects.
+![DiagramfromDesigner](Getting-Started_images\DiagramfromDesigner.png)
 
-### SymbolPalette
+### Adding control manually in XAML
 
-The SymbolPalette control displays node shapes and allows a user to drag and drop symbols onto diagrams. It supports grouping and filtering symbols. It allows users to classify items as groups, so they can be navigated easily. Also, custom shapes can be added to the SymbolPalette.
+To add control manually in XAML, do the following steps:
 
-### SymbolPaletteGroup
+1. Add the following required assembly reference to the project, Syncfusion.SfDiagram.WPF .
+2. Import Syncfusion WPF schema  http://schemas.syncfusion.com/wpf or SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
+3. Declare SfDiagram control in XAML page.
 
-A SymbolPalette group is a collection of SymbolPalette items. It is used to group the items in the SymbolPalette control based on classifications provided. The SymbolPalette group can be added to the SymbolPalette using the SymbolGroups property.
-
-### SymbolPaletteFilter
-
-A SymbolPalette filter can be added to the SymbolPalette control, using the SymbolFilters property, so that only desired SymbolPalette groups get displayed. 
-
-### SymbolPaletteItem
-
-SymbolPalette items are contained in the SymbolPalette group. A SymbolPalette item does not restrict users to the type of content that can be added to it. A SymbolPalette item can be a text box, combo box, image, button, and so on.
-
-### Horizontal / Vertical Ruler
-
-Rulers display the coordinates of elements on the diagram page. Negative label values get displayed on the ruler in case the page is panned to the right side. On Zooming, the ruler values get adjusted accordingly, to match with the current Zoom level. At any point, the ruler value always indicates the exact coordinates of the page and its elements. So when the page is zoomed, the interval values get halved or doubled depending upon the zoom level.
-
-
-
-![](Getting-Started_images/Getting-Started_img1.png)
-
-
-
-## Class Diagram
-
-The class diagram for Essential Diagram WPF is as follows.
-
-
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-
-## Creating a WPF application
-
-This section illustrates the step-by-step procedure to create a WPF application. 
-
-1. Open Microsoft Visual Studio. Click New Project in the Start Page. 
-
-
-
-   ![](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-2. In the New Project dialog, select WPF Application template, name the project and click OK. 
-
-
-
-   ![](Getting-Started_images/Getting-Started_img4.png)
-
-   
-
-3. A new WPF application is created.
-
-### Creating a Diagram
-
-
-Essential Diagram WPF can be used to create a rich Visio-like application. This Framework provides many utility controls to help you easily put an application together. End users can get started in minutes using this diagram control. 
-
-Following is a basic step to create DiagramControl and initialize the necessary properties. Details about individual parts are explained later in this documentation.
-
-### Create DiagramControl
-
-The Diagram Control can be added to the application using the following code.
-
-DiagramControl can be created in two ways,
-
-* Through XAML
-* Through Code Behind
-
-   
-   
-{% highlight html %}
-
-
-
-
-
-
-<Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
-
-xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
-
-<Grid Name="diagramgrid">
-
-<Diagram:DiagramControl></Diagram:DiagramControl>
-
-</Grid>
-
-</Window>
-
-{% endhighlight  %}
-{% highlight c# %}
-
-
-
-DiagramControl dc = new DiagramControl();
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-Dim dc As New DiagramControl()
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use Syncfusion components.
+    
+{% tabs %}
+{% highlight xaml %}
+ <Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SfDiagram_WPF"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SfDiagram_WPF.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!--Initializes the SfDiagram in XMAL window-->
+        <syncfusion:SfDiagram x:Name="diagram"/>
+    </Grid> 
+    </Window>
 
 {% endhighlight %}
 
-This shows a window with empty diagram control.
+{% endtabs %}
 
+### Adding control manually in C#
 
+To add control manually in C#, do the following steps:
 
-Enabling SymbolPalette
+1. Add the following required assembly references to the project, Syncfusion.SfDiagram.WPF.
+2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
+3. Create SfDiagram control instance and add it to the Grid.
 
-* Now you need to add the SymbolPalette to your newly created Diagram control. The SymbolPalette is displayed by setting the IsSymbolPaletteEnabled property to _True_. By default, it is set to _False_. The following code enables the SymbolPalette.
+{% tabs %}
 
+{% highlight C# %}
 
-SymbolPalette can be enabled in two ways,
+using Syncfusion.UI.Xaml.Diagram;
 
-* Through XAML
-* Through Code Behind
+namespace SfDiagram_WPF
 
+{   
 
-{% highlight html %}
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            // Initializes the SfDiagram
+            SfDiagram diagram=new SfDiagram();
+            Root_Grid.Children.Add(diagram);
+        }
+    }
+}
 
-
-<Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
-
-xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
-
-<Grid Name="diagramgrid">
-
-<Diagram:DiagramControl IsSymbolPaletteEnabled="True">
-
-</Diagram:DiagramControl>
-
-</Grid>
-
-</Window>
-
-{% endhighlight  %}
-{% highlight c# %}
-
-
-DiagramControl diagramcontrol = new DiagramControl();
-
-diagramcontrol.IsSymbolPaletteEnabled = true;
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-
-Dim diagramcontrol As New DiagramControl()
-
-diagramcontrol.IsSymbolPaletteEnabled = True
-
-{% endhighlight  %}
-
-Create DiagramModel
-
-* To add contents into the drawing area, use the Model property of the diagram control. The following code can be used to add the model.
-
-
-
-DiagramModel can be created and assigned to DiagramControl’s View Property using two ways,
-
-* Through XAML
-* Through Code Behind
-
-{% highlight html %}
-
-
-
-
-
-<Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
-
-xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
-
-    <Grid Name="diagramgrid">
-
-        <Diagram:DiagramControl IsSymbolPaletteEnabled="True">
-
-           <Diagram:DiagramControl.Model>
-
-                <Diagram:DiagramModel></Diagram:DiagramModel>
-
-            </Diagram:DiagramControl.Model>
-
-        </Diagram:DiagramControl>
-
-    </Grid>
-
-</Window>
-
-
-{% endhighlight  %}
-{% highlight c# %}
-
-
-
-
-DiagramControl dc = new DiagramControl();
-
-dc.IsSymbolPaletteEnabled = true;
-
-DiagramModel model = new DiagramModel();
-
-dc.Model = model;
-
-diagramgrid.Children.Add(dc);
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-
-Dim dc As New DiagramControl()
-
-dc.IsSymbolPaletteEnabled = True
-
-Dim model As New DiagramModel()
-
-dc.Model = model
-
-diagramgrid.Children.Add(dc)
-
-{% endhighlight  %}
-
-Create DiagramView
-
-* To display the drawing area, use the View property of the diagram control. The following code can be used to add the view.
-
-
-
-DiagramView can be created and assigned to DiagramControl’s View Property using two ways,
-
-* Through XAML
-* Through Code Behind 
-
-{% highlight html %}
-
-
-
-<Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
-
-xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
-
-    <Grid Name="diagramgrid">
-
-        <Diagram:DiagramControl IsSymbolPaletteEnabled="True">
-
-            <Diagram:DiagramControl.Model>
-
-                <Diagram:DiagramModel></Diagram:DiagramModel>
-
-            </Diagram:DiagramControl.Model>
-
-
-
-            <Diagram:DiagramControl.View>
-
-                <Diagram:DiagramView ></Diagram:DiagramView>
-
-            </Diagram:DiagramControl.View>
-
-        </Diagram:DiagramControl>
-
-    </Grid>
-
-</Window>
-
-
-{% endhighlight  %}
-{% highlight c# %}
-
-
-
-
-DiagramControl dc = new DiagramControl();
-
-dc.IsSymbolPaletteEnabled = true;
-
-DiagramView view = new DiagramView();
-
-view.Bounds = new System.Drawing.Thickness(0, 0, 1000, 1000);
-
-dc.View = view;
-
-diagramgrid.Children.Add(dc);
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-
-
-Dim dc As New DiagramControl()
-
-dc.IsSymbolPaletteEnabled = True
-
-Dim view As New DiagramView()
-
-view.Bounds = New System.Drawing.Thickness(0, 0, 1000, 1000)
-
-dc.View = view
-
-diagramgrid.Children.Add(dc)
-
-
-
-{% endhighlight  %}
-
-* This creates a Diagram Control with the SymbolPalette and the drawing area as illustrated in the following image. 
-
-
-
-![](Getting-Started_images/Getting-Started_img5.jpeg)
-
-
-
-
-
-N> For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge.
-
-For straight line connectors, the connection happens at the intersection point of the edge and the line connector.
-
-### Creating Diagram control through Designer
-
-The Diagram Control can be added to the application using designer.
-
-Following are the steps to create Diagram Control through Designer.
-
-1. Open the XAML page of the application
-
-
-
-   ![](Getting-Started_images/Getting-Started_img6.png)
-
-
-
-2. Select Diagram Control from ToolBox.
-
-
-   ![](Getting-Started_images/Getting-Started_img7.png)
-
-
-
-3. Drag the Diagram Control onto the Designer.
-
-
-   ![](Getting-Started_images/Getting-Started_img8.png)
-
-
-
-4. DiagramControl is added to the Page and also the assembly reference is added to the Project file.
-
-
-   ![](Getting-Started_images/Getting-Started_img9.png)
-
-   
-
-Kindly refer to Add Diagram Model to the Diagram Control and Add Diagram View to the Diagram Control to add the model and view to the control.
-
-### Add Diagram Model to the Diagram Control
-
-A model represents data for an application and contains the logic for adding, accessing, and manipulating the data.
-
-#### Features
-
-* Nodes and connectors are added to the Diagram Control using the Model property.
-* A predefined layout is applied using the LayoutType property.
-* A data template is applied to the layout using the Hierarchical DataTemplate property.
-
-
-
-The following code shows how the Model property can be applied to the Diagram control.
-
-
-{% highlight html %}
-
-
-<Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="420" Width="600"
-
-xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
-
-    <Grid Name="diagramgrid">
-
-        <Diagram:DiagramControl IsSymbolPaletteEnabled="True">
-
-            <Diagram:DiagramControl.Model>
-
-                <Diagram:DiagramModel x:Name="diagramModel">
-
-                </Diagram:DiagramModel>
-
-            </Diagram:DiagramControl.Model>
-
-            <Diagram:DiagramControl.View>
-
-                <Diagram:DiagramView></Diagram:DiagramView>
-
-            </Diagram:DiagramControl.View>
-
-        <Diagram:DiagramControl>
-
-    </Grid>
-
-</Window>
 {% endhighlight %}
+
+{% endtabs %}
+
+## Basic Diagram elements
+
+
+* **Node:** Visualizes any graphical object using nodes, which can also be arranged and manipulated on a diagram page.
+* **Connector:** Represents the relationship between two nodes. Four types of connectors provided as follows:
+
+       1) Orthogonal
+       2) Bezier
+       3) Straight
+       4) Cubic Bezier
+
+* **Port:** Acts as the connection points of node or connector and allows you to create connections with only specific points. 
+* **Annotation:** Shows additional information by adding text or labels on nodes and connectors. 
+
+
+## Flow chart
+Let us create a simple flow chart using SfDiagram.
+
+#### Initialize the Diagram
+
+The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
+
+{% tabs %}
+
+{% highlight xaml %}
+  
+  <!--Initializes the SfDiagram in XMAL window--> 
+  <syncfusion:SfDiagram x:Name="diagram"/>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
+// Initializes the SfDiagram in C#
 
-
-
-
-
-DiagramControl dc = new DiagramControl();
-
-dc.IsSymbolPaletteEnabled = true;
-
-DiagramView view = new DiagramView();
-
-view.Bounds = new System.Drawing.Thickness(0, 0, 1000, 1000);
-
-dc.View = view;
-
-DiagramModel diagramModel = new DiagramModel();
-
-dc.Model = diagramModel;
-
-diagramgrid.Children.Add(dc);
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-
-
-
-Dim dc As New DiagramControl()
-
-dc.IsSymbolPaletteEnabled = True
-
-Dim view As New DiagramView()
-
-view.Bounds = New System.Drawing.Thickness(0, 0, 1000, 1000)
-
-dc.View = view
-
-Dim diagramModel As New DiagramModel()
-
-dc.Model = diagramModel
-
-diagramgrid.Children.Add(dc)
-
-{% endhighlight  %}
-
-This adds a model to the Diagram Control, and defines Bounds Property for DiagramModel
-
-### Add Diagram View to the Diagram Control
-
-The view obtains items of data from the model and presents them to the user. It typically manages the overall layout of the data obtained from model.
-
-Apart from presenting the data, view also handles navigation between the items, and some aspects of item selection. The views also implement basic user interface features, such as rulers, and drag and drop. It handles the events, which occur on the objects, obtained from the model. Command mechanism is also implemented by the view. 
-
-A view can be constructed without a model, but a model must be provided before it can display useful information. Views can also render additional visual information that do not exist inside the model such as bounding boxes and grids. These additional view-specific objects are referred to as decorators, because they provide additional visual aids and window dressing to the view; but they are not actually a part of the model.
-
-The following code illustrates adding a Diagram View to the Diagram control.
-
-{% highlight html %}
-
-
-
-
-
-<Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
-
-xmlns:Diagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
-
-    <Grid Name="diagramgrid">
-
-        <Diagram:DiagramControl IsSymbolPaletteEnabled="True">
-
-            <Diagram:DiagramControl.View>
-
-                <Diagram:DiagramView ></Diagram:DiagramView>
-
-            </Diagram:DiagramControl.View>
-
-        </Diagram:DiagramControl>
-
-    </Grid>
-
-</Window>
-
+SfDiagram diagram =new SfDiagram();
 
 {% endhighlight %} 
+
+{% endtabs %}
+
+#### Initialize nodes and connectors
+
+To initialize the nodes and connectors properties of the SfDiagram, the Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. 
+The Connectors property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfDiagram.Nodes>
+
+   <!--Observable Collection of NodeViewModel-->
+
+   <syncfusion:NodeCollection/>
+
+</syncfusion:SfDiagram.Nodes>
+
+ <syncfusion:SfDiagram.Connectors>
+
+   <!--Observable Collection of ConnectorViewModel-->
+
+   <syncfusion:ConnectorCollection/>
+
+  </syncfusion:SfDiagram.Connectors>
+
+ {% endhighlight %}
+
 {% highlight c# %}
 
+ //Initialize Nodes with Observable Collection of NodeViewModel.
+ diagram.Nodes = new NodeCollection();
 
+ //Initialize Connectors with Observable Collection of ConnectorViewModel
+ diagram.Connectors = new ConnectorCollection();
 
+{% endhighlight %}       
 
-DiagramControl dc = new DiagramControl();
+{% endtabs %}
 
-dc.IsSymbolPaletteEnabled = true;
+### Add nodes
 
-DiagramView view = new DiagramView();
+ Let us create and add a NodeViewModel with height, width, shape, shape style, specific position, size, and annotation.
 
-view.Bounds = new System.Drawing.Thickness(0, 0, 1000, 1000);
+#### Creating a node
 
-dc.View = view;
+Creating NodeViewModel with specified height and width at a specific position.
 
-diagramgrid.Children.Add(dc);
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-
-
-
-Dim dc As New DiagramControl()
-
-dc.IsSymbolPaletteEnabled = True
-
-Dim view As New DiagramView()
-
-view.Bounds = New System.Drawing.Thickness(0, 0, 1000, 1000)
-
-dc.View = view
-
-diagramgrid.Children.Add(dc)
-
-{% endhighlight  %}
-
-### Manual Layout
-
-The Essential Diagram WPF allows you to manually specify the layout of the page. The nodes can be positioned at any point on the diagram page. The OffsetX and OffsetY properties can be used to specify the position. Connections can then be made between the nodes using the various line connectors.
-
-The nodes and the connectors need to be added to the Nodes and Connections collection of DiagramModel respectively. This gives a complete control over the placement of nodes on the page and enables the user to create diagrams as suited for their business needs.
-
-The following code snippet shows how the manual layout may be specified.
+{% tabs %}
+{% highlight xaml %}
+ <syncfusion:NodeViewModel ID="Begin" UnitHeight="40" UnitWidth="120" OffsetX="300" OffsetY="60"/>  
+{% endhighlight %}
 {% highlight c# %}
-
-
-
-
-
-
-Node EssentialWPF = new Node(Guid.NewGuid(), "EssentialWPF");
-
-EssentialWPF.Shape = Shapes.Ellipse;
-
-EssentialWPF.Width = 100;
-
-EssentialWPF.Height = 50;
-
-EssentialWPF.OffsetX = 300;
-
-EssentialWPF.OffsetY = 300;
-
-EssentialWPF.Content = "Essential WPF";
-
-
-
-Node EssentialTools = new Node(Guid.NewGuid(), "EssentialTools");
-
-EssentialTools.Shape = Shapes.Ellipse;
-
-EssentialTools.Width = 100;
-
-EssentialTools.Height = 50;
-
-EssentialTools.OffsetX = 300;
-
-EssentialTools.OffsetY = 500;
-
-EssentialTools.Content = "Essential Tools";
-
-
-
-Node EssentialChart = new Node(Guid.NewGuid(), "EssentialChart");
-
-EssentialChart.Shape = Shapes.Ellipse;
-
-EssentialChart.Width = 100;
-
-EssentialChart.Height = 50;
-
-EssentialChart.OffsetX = 300;
-
-EssentialChart.OffsetY = 100;
-
-EssentialChart.Content = "Essential Chart";
-
-
-
-Node EssentialDiagram = new Node(Guid.NewGuid(), "EssentialDiagram");
-
-EssentialDiagram.Shape = Shapes.Ellipse;
-
-EssentialDiagram.Width = 100;
-
-EssentialDiagram.Height = 50;
-
-EssentialDiagram.OffsetX = 100;
-
-EssentialDiagram.OffsetY = 300;
-
-EssentialDiagram.Content = "Essential Diagram";
-
-
-
-Node EssentialEdit = new Node(Guid.NewGuid(), "EssentialEdit");
-
-EssentialEdit.Shape = Shapes.Ellipse;
-
-EssentialEdit.Width = 100;
-
-EssentialEdit.Height = 50;
-
-EssentialEdit.OffsetX = 500;
-
-EssentialEdit.OffsetY = 300;
-
-EssentialEdit.Content = "Essential Edit";
-
-
-
-// Adding the nodes to the Diagram Model.
-
-
-
-diagramModel.Nodes.Add(EssentialWPF);
-
-diagramModel.Nodes.Add(EssentialTools);
-
-diagramModel.Nodes.Add(EssentialChart);
-
-diagramModel.Nodes.Add(EssentialDiagram); 
-
-diagramModel.Nodes.Add(EssentialEdit);
-
-
-
-//Creating the Connections between the nodes.
-
-Connect(EssentialWPF, EssentialTools);
-
-Connect(EssentialChart, EssentialWPF);
-
-Connect(EssentialDiagram, EssentialWPF);
-
-Connect(EssentialEdit, EssentialWPF);
-
-//Creating connection and adding to the model.
-
-void Connect(Node HeadNode, Node TailNode)
-
+ NodeViewModel Begin = new NodeViewModel()
+  {
+     ID = "Begin", UnitWidth = 120, UnitHeight = 40, OffsetX = 300, OffsetY = 60,
+  };
+{% endhighlight %}
+{% endtabs %}
+
+#### Adding shape and style to node
+
+ We have provided set of basic shapes for Diagram as ResourceDictionary. To use the built-in shapes, Shapes dictionary should be merged in the application.  
+ Please refer to [Shapes](/wpf/sfdiagram/shapes) to know about built-in Shapes.
+ 
+{% tabs %}
+{% highlight xaml %}  
+<ResourceDictionary>
+    <ResourceDictionary.MergedDictionaries>
+        <!--Initialize Shapes-->
+        <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+            <!--Style for Shape of the Node-->
+            <Style TargetType="Path" x:Key="ShapeStyle">
+                <Setter Property="Fill" Value="#FF5B9BD5"/>
+                <Setter Property="Stretch" Value="Fill"/>
+                <Setter Property="Stroke" Value="#FFEDF1F6"/>
+            </Style>
+            
+            <!--To apply Style for NodeViewModel-->
+            <Style TargetType="syncfusion:Node">
+                <Setter Property="ShapeStyle" Value="{StaticResource ShapeStyle}"></Setter>
+            </Style>
+</ResourceDictionary>
+
+<syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" UnitHeight="40" UnitWidth="120"/>
+  {% endhighlight %}
+
+{% highlight c# %} 
+NodeViewModel Begin = new NodeViewModel()
+  {
+     ID = "Begin", UnitWidth = 120, UnitHeight = 40, OffsetX = 300, OffsetY = 60,
+     //Specify shape to the Node from built-in Shape Dictionary
+     Shape = this.Resources["Ellipse"],
+     //Apply style to Shape
+     ShapeStyle = this.Resources["ShapeStyle"] as Style,
+  };
+{% endhighlight %}
+{% endtabs %}
+
+ Now, the node will be as follows.
+   
+![AddNode](Getting-Started_images\addNode.png)
+   
+N> ID sets for each node to identify nodes easily while setting connectors.
+   
+#### Adding annotation to node
+   
+ To initialize the Annotation property of the node and connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
+
+ Now add the Annotation content to Node.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" UnitHeight="40" UnitWidth="120">
+   <syncfusion:NodeViewModel.Annotations>
+     <!--Observable Collection of AnnotationEditorViewModel-->
+     <syncfusion:AnnotationCollection>
+         <syncfusion:AnnotationEditorViewModel Content="Begin"/>
+     </syncfusion:AnnotationCollection>
+   </syncfusion:NodeViewModel.Annotations>
+</syncfusion:NodeViewModel>       
+{% endhighlight %}
+{% highlight c# %}
+ // Creating the NodeViewModel  
+ NodeViewModel Begin = new NodeViewModel()
+   {
+      ID = "Begin", UnitWidth = 120, UnitHeight = 40, OffsetX = 300, OffsetY = 60,
+      //Specify shape to the Node from built-in Shape Dictionary
+      Shape = this.Resources["Ellipse"],
+      //Apply style to Shape
+      ShapeStyle = this.Resources["ShapeStyle"] as Style,
+      Annotations = new AnnotationCollection()
+       {
+          new AnnotationEditorViewModel()
+           {
+              Content="Begin",
+           }
+       }
+   };
+      
+// Add Node to Nodes property of the Diagram
+(diagram.Nodes as NodeCollection).Add(Begin);
+      
+{% endhighlight %}
+{% endtabs %}
+
+Now, the node will be as follows.
+ 
+![NodeAnnotation](Getting-Started_images\nodeAnnotation.PNG)
+
+N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector.
+    By default, `Annotations` property of Node and Connector is null.
+ 
+### Nodes for flow diagram
+
+ You can add multiple nodes with different shapes into diagram as NodeViewModel.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:NodeCollection>
+   <!--Begin-->
+  <syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" UnitHeight="40" UnitWidth="120">
+     <syncfusion:NodeViewModel.Annotations>
+        <!--Observable Collection of AnnotationEditorViewModel-->
+        <syncfusion:AnnotationCollection>
+           <syncfusion:AnnotationEditorViewModel Content="Begin"/>
+        </syncfusion:AnnotationCollection>
+     </syncfusion:NodeViewModel.Annotations>
+  </syncfusion:NodeViewModel>
+   <!--Process-->
+  <syncfusion:NodeViewModel ID="Process" UnitHeight="60" UnitWidth="120" OffsetX="300" OffsetY="140"  Shape="{StaticResource PredefinedProcess}">
+     <syncfusion:NodeViewModel.Annotations>
+        <syncfusion:AnnotationCollection>
+           <syncfusion:AnnotationEditorViewModel Content="Process"/>
+        </syncfusion:AnnotationCollection>
+     </syncfusion:NodeViewModel.Annotations>
+  </syncfusion:NodeViewModel>
+   <!--End-->
+  <syncfusion:NodeViewModel ID="End" UnitHeight="40" UnitWidth="40" OffsetX="300" OffsetY="225" Shape="{StaticResource Ellipse}">
+     <syncfusion:NodeViewModel.Annotations>
+         <syncfusion:AnnotationCollection>
+             <syncfusion:AnnotationEditorViewModel Content="End"/>
+         </syncfusion:AnnotationCollection>
+     </syncfusion:NodeViewModel.Annotations>
+   </syncfusion:NodeViewModel>
+</syncfusion:NodeCollection>
+{% endhighlight %}
+{% highlight c# %}
+//Begin
+NodeViewModel Begin = AddNode(300, 60, 120, 40, "Begin", "Ellipse");
+//Process
+NodeViewModel Process = AddNode(300, 140, 120, 60, "Process", "PredefinedProcess");
+//End
+NodeViewModel End = AddNode(300, 225, 40, 40, "End", "Ellipse");
+
+// Add Node to Nodes property of the Diagram
+(diagram.Nodes as NodeCollection).Add(Begin);
+(diagram.Nodes as NodeCollection).Add(Process);
+(diagram.Nodes as NodeCollection).Add(End);
+  
+
+ //Creating NodeViewModel
+ public NodeViewModel AddNode(double offsetX, double offsetY, double width, double height, string text, string shape)
+ {
+    NodeViewModel node = new NodeViewModel();
+    node.ID = text;
+    node.OffsetX = offsetX;
+    node.OffsetY = offsetY;
+    node.UnitHeight = height;
+    node.UnitWidth = width;
+    //Specify shape to the Node from built-in Shape Dictionary
+    node.Shape = this.Resources[shape];
+    //Apply style to Shape
+    node.ShapeStyle = this.Resources["ShapeStyle"] as Style;
+    node.Annotations = new AnnotationCollection()
+    {
+        new AnnotationEditorViewModel()
+           {
+               Content=text,
+           },
+     };
+    return node;
+ }
+{% endhighlight %}
+{% endtabs %}
+
+ Finally, all the nodes are added to diagram and they will be as follows.
+
+![CompleteNodes](Getting-Started_images\completeNodes.png)
+
+### Add connectors
+
+ Connector is to make connection or link between two nodes, ports, and points.
+
+#### Create connector With source node and target node 
+
+ Here, the `SourceNodeID` and `TargetNodeID` properties of the Connector are used. These properties will be assigned with the `ID` property of the node.
+
+{% tabs %}
+{% highlight xaml %}
+ <syncfusion:ConnectorViewModel SourceNodeID="Begin" TargetNodeID="Process"/>
+{% endhighlight %}
+{% highlight c# %}
+ConnectorViewModel connector1 = new ConnectorViewModel()
 {
+     SourceNodeID = "Begin",
+     TargetNodeID = "Process",
+};
+{% endhighlight %}
+{% endtabs %}
 
-LineConnector connection = new LineConnector();
+#### Adding connector geometry style
 
-connection.ConnectorType = ConnectorType.Orthogonal;
+ Here, the `ConnectorGeometryStyle` property of the Connector are used to customize the appearance of the line. And, `SourceDecoratorStyle` and `TargetDecoratorStyle` properties are used to customize the appearance of the decorators. 
 
-// Specify the TailNode node.
+{% tabs %}
+{% highlight xaml %}
+ <!--Style for TargetDecorator of the Connector-->
+<Style TargetType="Path" x:Key="TargetDecoratorStyle">
+   <Setter Property="Stroke" Value="Black"/>
+   <Setter Property="Stretch" Value="Fill"/>
+   <Setter Property="Fill" Value="Black"/>
+   <Setter Property="Height" Value="10"/>
+   <Setter Property="Width" Value="10"/>
+</Style>
 
-connection.TailNode = TailNode;
+<!--Style for Geometry of the Connector-->
+<Style TargetType="Path" x:Key="ConnectorGeometryStyle">
+    <Setter Property="Stroke" Value="Black" />
+    <Setter Property="StrokeThickness" Value="1" />
+</Style>
+      
+<!--To apply Style for ConnectorViewModel-->
+ <Style TargetType="syncfusion:Connector" >
+     <Setter Property="TargetDecoratorStyle" Value="{StaticResource TargetDecoratorStyle}"/>
+     <Setter Property="ConnectorGeometryStyle" Value="{StaticResource ConnectorGeometryStyle}"/>
+ </Style>
+{% endhighlight %} 
+{% highlight c# %}
+ConnectorViewModel connector1 = new ConnectorViewModel()
+ {
+    SourceNodeID = "Begin",
+    TargetNodeID = "Process",
+    //Apply Style to TargetDecorator
+    TargetDecoratorStyle = this.Resources["TargetDecoratorStyle"] as Style,
+    //Apply Style to Geometry of the Connector.
+    ConnectorGeometryStyle = this.Resources["ConnectorGeometryStyle"] as Style
+ };
+       
+ //Add Connector to Connectors property of the Diagram
+ (diagram.Connectors as ConnectorCollection).Add(connector1);
+{% endhighlight %}
+{% endtabs %}
 
-//Specifying the Head Node.
+Now, the output will be as follows.
 
-connection.HeadNode = HeadNode;
+ ![NodewithConnector](Getting-Started_images\nodewithConnector.png)
+ 
+#### Connectors for flow diagram
 
-connection.TailDecoratorShape = DecoratorShape.Arrow;
+Now, you can connect all nodes using ConnectorViewModel.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ConnectorCollection>
+    <syncfusion:ConnectorViewModel SourceNodeID="Begin" TargetNodeID="Process"/>
+    <syncfusion:ConnectorViewModel SourceNodeID="Process" TargetNodeID="End"/>
+</syncfusion:ConnectorCollection>
+{% endhighlight %} 
+{% highlight c# %}
+ //Creating ConnectorViewModel
+ConnectorViewModel connector1 = CreateConnector("Begin", "Process");
+ConnectorViewModel connector2 = CreateConnector("Process", "End");
+
+//Add Connector to Connectors property of the Diagram
+(diagram.Connectors as ConnectorCollection).Add(connector1);
+(diagram.Connectors as ConnectorCollection).Add(connector2);
+     
+//Creating ConnectorViewModel
+private ConnectorViewModel CreateConnector(string source, string target)
+{
+   ConnectorViewModel connector = new ConnectorViewModel()
+   {
+       SourceNodeID = source,
+       TargetNodeID = target,
+       //Apply Style to TargetDecorator
+       TargetDecoratorStyle = this.Resources["TargetDecoratorStyle"] as Style,
+       //Apply Style to Geometry of the Connector.
+       ConnectorGeometryStyle = this.Resources["ConnectorGeometryStyle"] as Style
+   };
+   
+   return connector;
+ }
+{% endhighlight %} 
+{% endtabs %}
+
+Now, the output will be as follows.
+
+![CompleteDiagram](Getting-Started_images\completeDiagram.png)
+    
+Find the flow diagram sample from this link: [FlowChart](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/FlowDiagram_XAML-1022159515).
+
+### Flowchart creation using stencil
+
+Let us create a simple flowchart diagram using stencil.
+
+#### Define stencil
+`Stencil` is a gallery of reusable symbols and nodes, which can be dragged and dropped onto the diagram surface at any number of times.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Namespace for stencil-->
+xmlns:stencil="clr-namespace:Syncfusion.UI.Xaml.Diagram.Stencil;assembly=Syncfusion.SfDiagram.WPF"
+
+<!--Define the Stencil-->
+<stencil:Stencil x:Name="stencil"  ExpandMode="All" 
+                 BorderBrush="Black"
+                 BorderThickness="0,0,2,0"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Define SymbolSource
+`SymbolSource` is the property of stencil, which is a collection of objects like symbol, node, connector, and more. Based on the SymbolSource, the Stencil will populate the Symbols. And the `SymbolGroupProvider` groups the symbols into SymbolGroup based on the `MappingName` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--Define the Stencil-->
+<stencil:Stencil x:Name="stencil"  ExpandMode="All" 
+                 BorderBrush="Black"
+                 BorderThickness="0,0,2,0">
+                <!--Initialize the SymbolSource-->
+                <stencil:Stencil.SymbolSource>
+                    <!--Initialize the SymbolCollection-->
+                    <local:SymbolCollection>
+                        <!--Define the DiagramElement-Node-->
+                    <Syncfusion:NodeViewModel UnitHeight="40" UnitWidth="120" Shape="{StaticResource Ellipse}" Key="Nodes">
+                        <Syncfusion:NodeViewModel.Annotations>
+                            <!--Observable Collection of AnnotationEditorViewModel-->
+                            <Syncfusion:AnnotationCollection>
+                                <Syncfusion:AnnotationEditorViewModel Content="Begin"/>
+                            </Syncfusion:AnnotationCollection>
+                        </Syncfusion:NodeViewModel.Annotations>
+                    </Syncfusion:NodeViewModel>
+                        <!--Define the DiagramElement-Connector-->
+                        <Syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200" Key="Connectors"/> 
+                         </local:SymbolCollection>
+                </stencil:Stencil.SymbolSource>
+                <!--Initialize the SymbolGroup-->
+                <stencil:Stencil.SymbolGroups>
+                    <stencil:SymbolGroups>
+                        <!--Map Symbols Using MappingName-->
+                        <stencil:SymbolGroupProvider MappingName="Key"/>
+                    </stencil:SymbolGroups>
+                </stencil:Stencil.SymbolGroups>
+            </stencil:Stencil>
+
+      <!--Define DiagramControl to drag and drop elements into the diagram-->
+        <Syncfusion:SfDiagram x:Name="sfdiagram">
+            <Syncfusion:SfDiagram.Nodes>
+                <Syncfusion:NodeCollection/>
+            </Syncfusion:SfDiagram.Nodes>
+            <Syncfusion:SfDiagram.Connectors>
+                <Syncfusion:ConnectorCollection/>
+            </Syncfusion:SfDiagram.Connectors>
+        </Syncfusion:SfDiagram>
+{% endhighlight %}
+
+{% highlight c# %}
+
+            //Initialize SfDiagram
+            SfDiagram diagram = new SfDiagram();
+            //Initialize NodeCollection to SfDiagram
+            diagram.Nodes = new NodeCollection();
+            //Initialize ConnectorCollection to SfDiagram
+            diagram.Connectors = new ConnectorCollection();
+
+            //Initialize Stencil and its properties
+            Stencil stencil = new Stencil();
+            stencil.ExpandMode = ExpandMode.All;
+            stencil.BorderBrush = new SolidColorBrush(Colors.Black);
+            stencil.BorderThickness = new Thickness(0,0,2,0);
+          
+            NodeViewModel node1 = new NodeViewModel()
+            {
+                UnitHeight = 40,
+                UnitWidth = 120,
+                Shape = this.Resources["Ellipse"],
+                Key = "Nodes",
+                Annotations = new AnnotationCollection()
+                {
+                    new AnnotationEditorViewModel()
+                    {
+                        Content ="Begin"
+                    }
+                }
+            };
+
+            ConnectorViewModel connector = new ConnectorViewModel()
+            {
+                SourcePoint = new Point(100, 100),
+                TargetPoint = new Point(200, 200),
+                Key = "Connectors",
+                Segments = new ConnectorSegments() {new StraightSegment() }
+            };
+
+            //Initialize collection to hold the symbols
+            SymbolCollection symbolcollection = new SymbolCollection();
+            //Add the symbols to the collection
+            symbolcollection.Add(node1);            
+            symbolcollection.Add(connector);
+
+            //Initialize the SymbolSource
+            stencil.SymbolSource = symbolcollection;
+
+            //Map Symbols Using MappingName
+            SymbolGroupProvider sgp = new SymbolGroupProvider()
+            {                
+                MappingName = "Key"
+            };
+            
+            //Initialize SymbolGroup
+            stencil.SymbolGroups = new SymbolGroups();
+
+            //Add the SymbolGroupProvider to SymbolGroup
+            stencil.SymbolGroups.Add(sgp);
 
 
+            //Add the Diagram and Stencil to Mainwindow grid
+            RootGrid.Children.Add(stencil);
+            RootGrid.Children.Add(diagram);
 
-//Adding to the Diagram Model.
+            //Position the stencil and Diagram in the Main Grid
+            stencil.SetValue(Grid.RowProperty, 1);
+            stencil.SetValue(Grid.ColumnProperty, 0);
+            diagram.SetValue(Grid.RowProperty, 1);
+            diagram.SetValue(Grid.ColumnProperty, 1);
 
-diagramModel.Connections.Add(connection);
+    public class SymbolCollection:ObservableCollection<object>
+    {
+
+    }
+{% endhighlight %}
+{% endtabs %}
+
+#### Visualization of stencil elements
+Declare the style for node, connector, symbol, and symbol group to visualize the elements in the stencil.
+
+{% tabs %}
+{% highlight xaml %}
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+               <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--Style for Node-->
+            <Style TargetType="Syncfusion:Node">
+                <Setter Property="ShapeStyle">
+                    <Setter.Value>
+                        <Style TargetType="Path">
+                            <Setter Property="Stretch" Value="Fill"></Setter>
+                            <Setter Property="Fill" Value="#FF5B9BD5"></Setter>
+                        </Style>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!--Style for Connector-->
+            <Style TargetType="Syncfusion:Connector">
+                <Setter Property="TargetDecoratorStyle">
+                    <Setter.Value>
+                        <Style TargetType="Path">
+                            <Setter Property="Stretch" Value="Fill"/>
+                            <Setter Property="Fill" Value="Black"/>
+                            <Setter Property="Stroke" Value="Black"/>
+                            <Setter Property="StrokeThickness" Value="1"/>
+                        </Style>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            
+            
+       <!--Style for Symbol-->
+        <Style TargetType="stencil:Symbol">
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Padding" Value="3" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Margin" Value="4"></Setter>
+        </Style>
+
+        <!--Style for Symbol Group-->
+        <Style TargetType="stencil:SymbolGroup">
+            <Setter Property="FontFamily" Value="Regular"/>
+            <Setter Property="Background" Value="#ffffff"/>
+            <Setter Property="Foreground" Value="#222222"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <stencil:Header>
+                            <stencil:Header.Template>
+                                <ControlTemplate TargetType="stencil:Header">
+                                    <Grid>
+                                        <Border x:Name="header" 
+                                                    Background="#f5f5f5" 
+                                                    BorderBrush="Black" 
+                                                    BorderThickness="1">
+                                            <ContentPresenter Margin="10" Content="{Binding}"/>
+                                        </Border>
+                                    </Grid>
+                                </ControlTemplate>
+                            </stencil:Header.Template>
+                        </stencil:Header>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+      </ResourceDictionary>
+    
+{% endhighlight %}
+{% endtabs %}
+
+The output will be as follows.
+
+![Stencil output](Getting-Started_images\Stencil_output.PNG)
+
+#### Interaction with stencil
+
+We have represented the steps to interact with stencil such as drag and drop elements from stencil to diagram in the following gif.
+
+![StencilDiagram](Getting-Started_images\StencilDiagram.gif)
+
+Download the complete stencil sample from [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/StencilCreation339429762).
+
+For more information about stencil, please [refer](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements). 
+
+## Organization layout
+
+SfDiagram provides support to auto-arrange the nodes in the diagram area that is referred as Layout.
+
+#### Business object (employee information)
+Define employee information as collection of data. The following code example shows the employee information whose, EmpId is used as an unique identifier and ParentId is used to identify the person to whom an employee report to, in the organization.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initializes the DataSource -->
+<local:Employees x:Key="employees">
+   <local:Employee  EmpId="1" ParentId="" Designation="CEO"/>
+   <local:Employee  EmpId="2" ParentId="1" Designation="Project Manager1"/>
+   <local:Employee  EmpId="3" ParentId="1" Designation="Project Manager2"/>
+   <local:Employee  EmpId="4" ParentId="2" Designation="Engineer1"/>
+   <local:Employee  EmpId="5" ParentId="3" Designation="Engineer2"/>  
+</local:Employees>
+{% endhighlight %}
+
+{% highlight c# %}
+
+private Employees GetData()
+{
+    Employees data = new Employees();
+    data.Add(new Employee() { EmpId = "1", ParentId = "", Designation = "CEO" });
+    data.Add(new Employee() { EmpId = "2", ParentId = "1", Designation = "Project Manager1" });
+    data.Add(new Employee() { EmpId = "3", ParentId = "1", Designation = "Project Manager2" });
+    data.Add(new Employee() { EmpId = "4", ParentId = "2", Designation = "Engineer1" });
+    data.Add(new Employee() { EmpId = "5", ParentId = "3", Designation = "Engineer2" });    
+    return data;
+}
+
+public class Employee
+{
+    public Employee()
+    {
+
+    }
+    public string EmpId { get; set; }
+    public string ParentId { get; set; }
+    public string Designation { get; set; }
+}
+
+public class Employees:ObservableCollection<Employee>
+{
 
 }
 
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-
-
-
-Private EssentialWPF As New Node(Guid.NewGuid(), "EssentialWPF")
-
-EssentialWPF.Shape = Shapes.Ellipse
-
-EssentialWPF.Width = 100
-
-EssentialWPF.Height = 50
-
-EssentialWPF.OffsetX = 300
-
-EssentialWPF.OffsetY = 300
-
-EssentialWPF.Content = "Essential WPF"
-
-
-
-Dim EssentialTools As New Node(Guid.NewGuid(), "EssentialTools")
-
-EssentialTools.Shape = Shapes.Ellipse
-
-EssentialTools.Width = 100
-
-EssentialTools.Height = 50
-
-EssentialTools.OffsetX = 300
-
-EssentialTools.OffsetY = 500
-
-EssentialTools.Content = "Essential Tools"
-
-
-
-Dim EssentialChart As New Node(Guid.NewGuid(), "EssentialChart")
-
-EssentialChart.Shape = Shapes.Ellipse
-
-EssentialChart.Width = 100
-
-EssentialChart.Height = 50
-
-EssentialChart.OffsetX = 300
-
-EssentialChart.OffsetY = 100
-
-EssentialChart.Content = "Essential Chart"
-
-
-
-Dim EssentialDiagram As New Node(Guid.NewGuid(), "EssentialDiagram")
-
-EssentialDiagram.Shape = Shapes.Ellipse
-
-EssentialDiagram.Width = 100
-
-EssentialDiagram.Height = 50
-
-EssentialDiagram.OffsetX = 100
-
-EssentialDiagram.OffsetY = 300
-
-EssentialDiagram.Content = "Essential Diagram"
-
-
-
-Dim EssentialEdit As New Node(Guid.NewGuid(), "EssentialEdit")
-
-EssentialEdit.Shape = Shapes.Ellipse
-
-EssentialEdit.Width = 100
-
-EssentialEdit.Height = 50
-
-EssentialEdit.OffsetX = 500
-
-EssentialEdit.OffsetY = 300
-
-EssentialEdit.Content = "Essential Edit"
-
-
-
-'Adding the nodes to the Diagram Model.
-
-
-
-diagramModel.Nodes.Add(EssentialWPF)
-
-diagramModel.Nodes.Add(EssentialTools)
-
-diagramModel.Nodes.Add(EssentialChart)
-
-diagramModel.Nodes.Add(EssentialDiagram)
-
-diagramModel.Nodes.Add(EssentialEdit)
-
-
-
-'Creating the Connections between the nodes.
-
-Connect(EssentialWPF, EssentialTools)
-
-Connect(EssentialChart, EssentialWPF)
-
-Connect(EssentialDiagram, EssentialWPF)
-
-Connect(EssentialEdit, EssentialWPF)
-
-'Creating connection and adding to the model.
-
-void Connect(Node HeadNode, Node TailNode)
-
-Dim connection As New LineConnector()
-
-connection.ConnectorType = ConnectorType.Orthogonal
-
-'Specify the TailNode node.
-
-connection.TailNode = TailNode
-
-'Specifying the Head Node.
-
-connection.HeadNode = HeadNode
-
-connection.TailDecoratorShape = DecoratorShape.Arrow
-
-
-
-'Adding to the Diagram Model.
-
-diagramModel.Connections.Add(connection)
-
-
-{% endhighlight  %}
-![](Getting-Started_images/Getting-Started_img10.jpeg)
-
-
-
-### Automatic Layout
-
-Essential Diagram WPF allows you to specify automatic layouts the nodes. Following layout types are available:
-
-* Directed-Tree layout
-* Hierarchical-Tree layout
-* Radial-Tree layout
-* Table layout
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type of the property</th><th>
-Value it accepts</th></tr>
-<tr>
-<td>
-VerticalSpacing</td><td>
-Gets or sets the Vertical spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-HorizontalSpacing</td><td>
-Gets or sets the Horizontal spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-SpaceBetweenSubTrees</td><td>
-Gets or sets the space between sub trees.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-Orientation</td><td>
-Gets or sets the orientation.</td><td>
-CLR property</td><td>
-TreeOrientation.LeftRightTreeOrientation.RightLeftTreeOrientation.TopBottomTreeOrientation.BottomTop</td></tr>
-<tr>
-<td>
-EnableCycleDetection</td><td>
-Gets or sets a value indicating whether Cycle detection is enabled or not.</td><td>
-DependencyProperty</td><td>
-Boolean true/ false</td></tr>
-<tr>
-<td>
-TableExpandMode</td><td>
-Gets or sets the table expand mode.</td><td>
-DependencyProperty</td><td>
-ExpandMode.HorizontalExpandMode.Vertical</td></tr>
-<tr>
-<td>
-RowCount</td><td>
-Gets or sets the Row Count for the table layout.</td><td>
-DependencyProperty</td><td>
-int</td></tr>
-<tr>
-<td>
-ColumnCount</td><td>
-Gets or sets the Column Count for the table layout.</td><td>
-DependencyProperty</td><td>
-int</td></tr>
-<tr>
-<td>
-EnableLayoutWithVariedSizes</td><td>
-Gets or sets a value indicating whether to enable the varied size algorithm. In case the Model consists of the nodes of different sizes, this property can be set to true. This will align the differently sized nodes with respect to the center.</td><td>
-DependencyProperty</td><td>
-Boolean (true/ false)</td></tr>
-<tr>
-<td>
-Bounds</td><td>
-Gets or sets the bounds value which specifies the position of the root node in case of tree layout.</td><td>
-CLR property</td><td>
-Thickness</td></tr>
-<tr>
-<td>
-BowtieSubTreePlacement</td><td>
-Gets or sets a value from the BowtieSubTreePlacement.</td><td>
-Attached Dependency property</td><td>
-BowtieSubTreePlacement</td></tr>
-</table>
-
-
-#### Directed-Tree Layout
-
-The Directed-Tree Layout automatically arranges nodes in a tree-like structure. This enables you to position nodes in a tree-like fashion without specifying the coordinate location for each node. However, it is necessary to specify a layout root for the tree layout. The Directed-Tree layout will position the nodes based on the layout root.
-
-#### Hierarchical-Tree Layout
-
-The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in hierarchical layout may have multiple parents. As a result, there is no need to specify the layout root. 
-
-#### Radial-Tree Layout
-
-The Radial-Tree Layout Manager arranges nodes in a circular layout and positions the root-node at the center of the graph and child-nodes in a circular fashion around the root. Sub-trees formed by the branching of the child-node are located radially around the child-node. 
-
-#### Table Layout
-
-Table layout is a layout manager that arranges the nodes in rows and column basis. The number of nodes in each row and column can be specified and the layout will take place accordingly. 
-
-#### Directed – Tree Layout
-
-The Directed-Tree layout allows you to arrange the nodes in a tree-like structure. This layout can be applied to any diagram that comprises a directed tree graph with unique root and child nodes. This makes creating diagrams easier because the node position is determined automatically, based on the connections. However, it is necessary to specify a layout root for the tree layout. The Directed-Tree layout will position the nodes based on the layout root.
-
-#### Orientation
-
-The Layout Manager lets you orient the tree in many directions and create sophisticated arrangements. The Orientation property of the Diagram model can be used to specify the tree orientation.
-
-* TopBottom - Places the root node at the top and the child nodes are arranged below the root node. 
-* BottomTop - Places the root node at the bottom and the child nodes are arranged above the root node. 
-* LeftRight - Places the root node at the left and the child nodes are arranged on the right side of the root node. 
-* RightLeft - Places the root node at the right and the child nodes are arranged on the left side of the root node. 
-
-The Bounds property of the DiagramView class can be used to specify the position of the root node based on which the entire tree gets generated.
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description </th><th>
-Type of the property</th><th>
-Value it accepts</th></tr>
-<tr>
-<td>
-VerticalSpacing</td><td>
-Gets or sets the Vertical spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-HorizontalSpacing</td><td>
-Gets or sets the Horizontal spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-SpaceBetweenSubTrees</td><td>
-Gets or sets the space between sub trees.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-Orientation</td><td>
-Gets or sets the orientation.</td><td>
-CLR property</td><td>
-TreeOrientation.LeftRightTreeOrientation.RightLeftTreeOrientation.TopBottomTreeOrientation.BottomTop</td></tr>
-<tr>
-<td>
-Bounds</td><td>
-Gets or sets the bounds value which specifies the position of the root node in case of tree layout.</td><td>
-CLR property</td><td>
-Thickness</td></tr>
-</table>
-
-
-Methods
-
-
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Parameters </th><th>
-Return Type</th><th>
-Description</th><th>
-Reference Links</th></tr>
-<tr>
-<td>
-RefreshLayout()</td><td>
-Null</td><td>
-void</td><td>
-Refresh the layout</td><td>
-N/A</td></tr>
-</table>
-
-
-The following code shows how the automatic layout can be generated.
-
-1. The LayoutType should be set to DirectedTreeLayout in DiagramModel class.
-
-
-
-
-
-			<Window x:Class="RadialTreeLayout_2008.Window1"
-
-				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-				Title="Radial Tree Layout Demo" WindowState="Normal"
-
-				WindowStartupLocation="CenterScreen" Name="MainWindow"
-
-				xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-				FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
-
-				<!--Diagram Control-->
-
-				<syncfusion:DiagramControl  Name="diagramControl">
-
-
-
-					<!-- Model to add nodes and connections-->
-
-					<syncfusion:DiagramControl.Model>
-
-						 <syncfusion:DiagramModel LayoutType="DirectedTreeLayout" Orientation="TopBottom" 
-
-			                                        x:Name="diagramModel">
-
-			             </syncfusion:DiagramModel>
-
-					</syncfusion:DiagramControl.Model>
-
-
-
-					<!--View to display nodes and connections added through model.-->
-
-					<syncfusion:DiagramControl.View>
-
-						<syncfusion:DiagramView Name="diagramView">
-
-						</syncfusion:DiagramView>
-
-					</syncfusion:DiagramControl.View>
-
-				</syncfusion:DiagramControl>
-
-
-
-			</Window>
-
-
-
-2. Then, the nodes are defined and the connections are made.
-
-
-
-
-
-
-
-			Style s = (Style)this.Resources["{x:Type Diagram:Node}"];
-
-
-
-			Node CEO = CreateNode("CEO", "CEO of the company", "Steve-CEO", s);
-
-			Node SLS = CreateNode("ManagerSLS", "Tom-ManagerSLS", "Sales Manager of the company ", s);
-
-			Node Marketing = CreateNode("ManagerMarketing", "Mary-MKT Manager", "Marketing Manager of the company", s);
-
-			Node DEV = CreateNode("ManagerDEV", "Jim-Manager DEV", "Development Manager of the company", s);
-
-			Node CSR1 = Node DEV = CreateNode("CSR1", "Kevin-CSR", "CSR  of the company", s);
-
-			Node CSR2 = Node DEV = CreateNode("CSR2", "Peter-CSR", "CSR  of the company", s);
-
-
-
-			//The layout happens with respect to the layout root.
-
-			diagramModel.LayoutRoot = CEO;
-
-
-
-			//Add the nodes to the model.
-
-			diagramModel.Nodes.Add(CEO);
-
-			diagramModel.Nodes.Add(Marketing);
-
-			diagramModel.Nodes.Add(SLS);
-
-			diagramModel.Nodes.Add(DEV);
-
-			diagramModel.Nodes.Add(CSR1);
-
-			diagramModel.Nodes.Add(CSR2);
-
-
-
-			//Creating the Connections between the nodes.
-
-			Connect(CEO, Marketing);
-
-			Connect(CEO, SLS);
-
-			Connect(CEO, DEV);
-
-			Connect(SLS, CSR1);
-
-			Connect(SLS, CSR2);
-
-
-
-					Node CreateNode(string Name, string Label, string ToolTip, Style s)
-
-					{
-
-						Node NewNode = new Node(Guid.NewGuid(), Name);
-
-						NewNode.Label = Label;
-
-						NewNode.ToolTip = ToolTip;
-
-						NewNode.CustomPathStyle = s;
-
-						return NewNode;
-
-					}
-
-
-
-
-
-			        //Creating connection and adding to the model.
-
-			        void Connect(Node HeadNode, Node TailNode)
-
-			        {
-
-			            LineConnector connection = new LineConnector();
-
-			            connection.ConnectorType = ConnectorType.Orthogonal;
-
-			            // Specify the TailNode node
-
-			            connection.TailNode = TailNode;
-
-			            //Specifying the Head Node
-
-			            connection.HeadNode = HeadNode;
-
-			            connection.TailDecoratorShape = DecoratorShape.Arrow;
-
-
-
-			            //Adding to the Diagram Model
-
-			            diagramModel.Connections.Add(connection);
-
-			        }
-
-
-
-
-
-
-
-				Private s As Style = CType(Me.Resources("{x:Type Diagram:Node}"), Style)
-
-
-
-				Private CEO As Node = CreateNode("CEO", "CEO of the company", "Steve-CEO", s)
-
-				Private SLS As Node = CreateNode("ManagerSLS", "Tom-ManagerSLS", "Sales Manager of the company ", s)
-
-				Private Marketing As Node = CreateNode("ManagerMarketing", "Mary-MKT Manager", "Marketing Manager of the company", s)
-
-				Private DEV As Node = CreateNode("ManagerDEV", "Jim-Manager DEV", "Development Manager of the company", s)
-
-				Private CSR1 As Node = Node DEV = CreateNode("CSR1", "Kevin-CSR", "CSR  of the company", s)
-
-				Private CSR2 As Node = Node DEV = CreateNode("CSR2", "Peter-CSR", "CSR  of the company", s)
-
-
-
-				'The layout happens with respect to the layout root.
-
-				diagramModel.LayoutRoot = CEO
-
-
-
-				'Add the nodes to the model.
-
-				diagramModel.Nodes.Add(CEO)
-
-				diagramModel.Nodes.Add(Marketing)
-
-				diagramModel.Nodes.Add(SLS)
-
-				diagramModel.Nodes.Add(DEV)
-
-				diagramModel.Nodes.Add(CSR1)
-
-				diagramModel.Nodes.Add(CSR2)
-
-
-
-				'Creating the Connections between the nodes.
-
-				Connect(CEO, Marketing)
-
-				Connect(CEO, SLS)
-
-				Connect(CEO, DEV)
-
-				Connect(SLS, CSR1)
-
-				Connect(SLS, CSR2)
-
-
-
-				Node CreateNode(String Name, String Label, String ToolTip, Style s)
-
-				Dim NewNode As New Node(Guid.NewGuid(), Name)
-
-				NewNode.Label = Label
-
-				NewNode.ToolTip = ToolTip
-
-				NewNode.CustomPathStyle = s
-
-				Return NewNode
-
-
-
-
-
-				'Creating connection and adding to the model.
-
-				void Connect(Node HeadNode, Node TailNode)
-
-				Dim connection As New LineConnector()
-
-				connection.ConnectorType = ConnectorType.Orthogonal
-
-				'Specify the TailNode node
-
-				connection.TailNode = TailNode
-
-				'Specifying the Head Node
-
-				connection.HeadNode = HeadNode
-
-				connection.TailDecoratorShape = DecoratorShape.Arrow
-
-
-
-				'Adding to the Diagram Model
-
-				diagramModel.Connections.Add(connection)
-
-
-
-   ![](Getting-Started_images/Getting-Started_img11.jpeg)
-
-   
-
-
-
-Layout Spacing
-
-Spacing between the nodes with respect different levels and siblings are adjustable; this will be helpful to adjust the distance between nodes, so that it will meet many business needs. As this is a general topic between all layouts, detailed explanation about this can be found in Layout Spacing under DiagramModel.
-
-Refresh Layout
-
-When there are changes in content of the page link new nodes and connectors added, the layout has to be refreshed to get the page’s content aligned again to give space for new contents. To refresh the layout please follow the following code snippet.
-
-{% highlight c# %}
-
-
-
-DirectedTreeLayout tree = new DirectedTreeLayout(diagramModel, diagramView);
-
-tree.RefreshLayout();
-
-
-{% endhighlight  %}
-{% highlight vbnet  %}
-
-
-Dim tree As New DirectedTreeLayout(diagramModel, diagramView)
-
-tree.RefreshLayout()
-
-
-{% endhighlight   %}
-Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
-
-
-
-#### Hierarchical – Tree Layout
-
-The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in hierarchical layout may have multiple parents. As a result, there is no need to specify the layout root. 
-
-Orientation
-
-The Layout Manager lets you orient the hierarchical tree in many directions. The Orientation property of Diagram Model can be used to specify the tree orientation.
-
-* TopBottom - Places the root node at the top and the child nodes are arranged below the root node. 
-* BottomTop - Places the root node at the bottom and the child nodes are arranged above the root node. 
-* LeftRight - Places the root node at the left and the child nodes are arranged on the right side of the root node. 
-* RightLeft - Places the root node at the right and the child nodes are arranged on the left side of the root node. 
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description </th><th>
-Type of the property</th><th>
-Value it accepts</th></tr>
-<tr>
-<td>
-VerticalSpacing</td><td>
-Gets or sets the Vertical spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-HorizontalSpacing</td><td>
-Gets or sets the Horizontal spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-SpaceBetweenSubTrees</td><td>
-Gets or sets the space between sub trees.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-Orientation</td><td>
-Gets or sets the orientation.</td><td>
-CLR property</td><td>
-TreeOrientation.LeftRightTreeOrientation.RightLeftTreeOrientation.TopBottomTreeOrientation.BottomTop</td></tr>
-<tr>
-<td>
-EnableCycleDetection</td><td>
-Gets or sets a value indicating whether Cycle detection is enabled or not.</td><td>
-DependencyProperty</td><td>
-Boolean (true/ false)</td></tr>
-<tr>
-<td>
-Bounds</td><td>
-Gets or sets the bounds value which specifies the position of the root node in case of tree layout.</td><td>
-CLR property</td><td>
-Thickness</td></tr>
-</table>
-
-
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Parameters </th><th>
-Return Type</th><th>
-Description</th><th>
-Reference Links</th></tr>
-<tr>
-<td>
-RefreshLayout()</td><td>
-Null</td><td>
-void</td><td>
-Refresh the layout</td><td>
-N/A</td></tr>
-</table>
-
-
-The Bounds property of the DiagramView class can be used to specify the position of the root node, based on which the entire tree gets generated.
-
-The following code example specifies how the Hierarchical-tree layout can be specified.
-
-1. The LayoutType should be set to HierarchicalTreeLayout in DiagramModel class.
-
-
-
-
-
-				<Window x:Class="RadialTreeLayout_2008.Window1"
-
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-					Title="Radial Tree Layout Demo" WindowState="Normal"
-
-					WindowStartupLocation="CenterScreen" Name="MainWindow"
-
-					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-					FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
-
-
-
-				<!--Diagram Control-->       
-
-				<syncfusion:DiagramControl  Name="diagramControl">           
-
-				<!-- Model to add nodes and connections-->            <syncfusion:DiagramControl.Model>               
-
-				<syncfusion:DiagramModel  LayoutType="HierarchicalTreeLayout" Orientation="TopBottom"   x:Name="diagramModel">               </syncfusion:DiagramModel>           
-
-				</syncfusion:DiagramControl.Model>   
-
-
-
-				<!--View to display nodes and connections added through model.-->            
-
-				<syncfusion:DiagramControl.View>              
-
-				  <syncfusion:DiagramView Bounds="0,0,700,750"  
-
-				  Background="White"   Name="diagramView"   >                    
-
-				  </syncfusion:DiagramView>           
-
-				 </syncfusion:DiagramControl.View>       
-
-				</syncfusion:DiagramControl>
-
-				</Window>
-
-
-
-2. Then the nodes can be added and the connections can be specified as follows:
-
-    {%highlight c#%}
-
-
-
-
-
-			Node n1 = new Node(Guid.NewGuid(), "n1");
-
-			n1.Level = 0;
-
-			 Node n2 = new Node(Guid.NewGuid(), "n2");
-
-			n2.Level = 0;
-
-			 Node n3 = new Node(Guid.NewGuid(), "n3");
-
-			n3.Level = 0;
-
-			 Node n4 = new Node(Guid.NewGuid(), "n4");
-
-			n4.Level = 1;
-
-			Node n5 = new Node(Guid.NewGuid(), "n5");
-
-			n5.Level = 2;
-
-			Node n6 = new Node(Guid.NewGuid(), "n6");
-
-			n6.Level = 1;
-
-			Node n7 = new Node(Guid.NewGuid(), "n7");
-
-			n7.Level = 1;
-
-			Node n8 = new Node(Guid.NewGuid(), "n8");
-
-			n8.Level = 3;
-
-			Node n9 = new Node(Guid.NewGuid(), "n9");
-
-			n9.Level = 3;
-
-			Node n10 = new Node(Guid.NewGuid(), "n10");
-
-			n10.Level = 2;
-
-			Node n11 = new Node(Guid.NewGuid(), "n11");
-
-			n11.Level = 2;
-
-			Node n12 = new Node(Guid.NewGuid(), "n12");
-
-			n12.Level = 2;
-
-			Node n13 = new Node(Guid.NewGuid(), "n13");
-
-			n13.Level = 3;
-
-			Node n14 = new Node(Guid.NewGuid(), "n14");
-
-			n14.Level = 3;
-
-				   //Adding nodes to the diagram Model.                            
-
-			diagramModel.Nodes.Add(n1);  
-
-						diagramModel.Nodes.Add(n2);
-
-						diagramModel.Nodes.Add(n3);
-
-						diagramModel.Nodes.Add(n4);
-
-						diagramModel.Nodes.Add(n5);
-
-						diagramModel.Nodes.Add(n6);
-
-						diagramModel.Nodes.Add(n7);
-
-						diagramModel.Nodes.Add(n8);
-
-						diagramModel.Nodes.Add(n9);
-
-						diagramModel.Nodes.Add(n10);
-
-						diagramModel.Nodes.Add(n11);
-
-						diagramModel.Nodes.Add(n12);  
-
-						diagramModel.Nodes.Add(n13);  
-
-						diagramModel.Nodes.Add(n14); 
-
-
-
-				 //Creating conections between nodes.   
-
-					   Connect(n1, n4);
-
-					   Connect(n6, n11);
-
-					   Connect(n2, n6);  
-
-					   Connect(n6, n10);  
-
-					   Connect(n3, n7);   
-
-					   Connect(n5, n8);  
-
-					   Connect(n5, n9); 
-
-					   Connect(n4, n5); 
-
-					   Connect(n7, n10); 
-
-					   Connect(n4, n11); 
-
-					   Connect(n7, n12); 
-
-					   Connect(n12, n13); 
-
-					   Connect(n12, n14);  
-
-				  }   
-
-
-
-			   //Creating connection and adding to the model. 
-
-				void Connect(Node HeadNode, Node TailNode)    
-
-				{        
-
-				LineConnector connection = new LineConnector(); 
-
-				connection.ConnectorType = ConnectorType.Straight;  
-
-
-
-				// Specify the TailNode node.           
-
-				connection.TailNode = TailNode;       
-
-
-
-				//Specifying the Head Node.  
-
-				connection.HeadNode = HeadNode;
-
-				connection.TailDecoratorShape = DecoratorShape.Circle;    
-
-
-
-			//Adding to the Diagram Model.                 
-
-			diagramModel.Connections.Add(connection);  
-
-
-
-				}
-
-
-
-
-
-
-
-				Private n1 As New Node(Guid.NewGuid(), "n1")
-
-				n1.Level = 0
-
-				Dim n2 As New Node(Guid.NewGuid(), "n2")
-
-				n2.Level = 0
-
-				Dim n3 As New Node(Guid.NewGuid(), "n3")
-
-				n3.Level = 0
-
-				Dim n4 As New Node(Guid.NewGuid(), "n4")
-
-				n4.Level = 1
-
-				Dim n5 As New Node(Guid.NewGuid(), "n5")
-
-				n5.Level = 2
-
-				Dim n6 As New Node(Guid.NewGuid(), "n6")
-
-				n6.Level = 1
-
-				Dim n7 As New Node(Guid.NewGuid(), "n7")
-
-				n7.Level = 1
-
-				Dim n8 As New Node(Guid.NewGuid(), "n8")
-
-				n8.Level = 3
-
-				Dim n9 As New Node(Guid.NewGuid(), "n9")
-
-				n9.Level = 3
-
-				Dim n10 As New Node(Guid.NewGuid(), "n10")
-
-				n10.Level = 2
-
-				Dim n11 As New Node(Guid.NewGuid(), "n11")
-
-				n11.Level = 2
-
-				Dim n12 As New Node(Guid.NewGuid(), "n12")
-
-				n12.Level = 2
-
-				Dim n13 As New Node(Guid.NewGuid(), "n13")
-
-				n13.Level = 3
-
-				Dim n14 As New Node(Guid.NewGuid(), "n14")
-
-				n14.Level = 3
-
-
-
-				'Adding nodes to the diagram Model.                            
-
-				diagramModel.Nodes.Add(n1)
-
-				diagramModel.Nodes.Add(n2)
-
-				diagramModel.Nodes.Add(n3)
-
-				diagramModel.Nodes.Add(n4)
-
-				diagramModel.Nodes.Add(n5)
-
-				diagramModel.Nodes.Add(n6)
-
-				diagramModel.Nodes.Add(n7)
-
-				diagramModel.Nodes.Add(n8)
-
-				diagramModel.Nodes.Add(n9)
-
-				diagramModel.Nodes.Add(n10)
-
-				diagramModel.Nodes.Add(n11)
-
-				diagramModel.Nodes.Add(n12)
-
-				diagramModel.Nodes.Add(n13)
-
-				diagramModel.Nodes.Add(n14)
-
-
-
-				'Creating conections between nodes.   
-
-				Connect(n1, n4)
-
-				Connect(n6, n11)
-
-				Connect(n2, n6)
-
-				Connect(n6, n10)
-
-				Connect(n3, n7)
-
-				Connect(n5, n8)
-
-				Connect(n5, n9)
-
-				Connect(n4, n5)
-
-				Connect(n7, n10)
-
-				Connect(n4, n11)
-
-				Connect(n7, n12)
-
-				Connect(n12, n13)
-
-				Connect(n12, n14)
-
-
-
-				'Creating connection and adding to the model. 
-
-				void Connect(Node HeadNode, Node TailNode)
-
-				Dim connection As New LineConnector()
-
-				connection.ConnectorType = ConnectorType.Straight
-
-
-
-				'Specify the TailNode node.           
-
-				connection.TailNode = TailNode
-
-
-
-				'Specifying the Head Node.  
-
-				connection.HeadNode = HeadNode
-
-				connection.TailDecoratorShape = DecoratorShape.Circle
-
-
-
-				'Adding to the Diagram Model.                 
-
-				diagramModel.Connections.Add(connection)
-				
-			{%endhighlight%}
-
-
-
-   ![](Getting-Started_images/Getting-Started_img12.jpeg)
-
-   
-
-Layout Spacing
-
-Spacing between the nodes with respect different levels and siblings are adjustable; this will be helpful to adjust the distance between nodes, so that it will meet many business needs. As this is a general topic between all layouts, detailed explanation about this can be found in Layout Spacing under DiagramModel.
-
-Cyclic path in Hierarchical-Tree Layout
-
-Unlike Directed-Tree layout, hierarchical tree layout supports nodes with multiple parents, this will cause a cyclic path in the layout, a detailed explanation about this scenario can be found in Cyclic path in Hierarchical-Tree Layout under DiagramModel.
-
-Refresh Layout
-
-When there are changes in content of the page link new nodes and connectors added, the layout has to be refreshed to get the page’s content aligned again to give space for new contents. To refresh the layout please follow the following code snippet.
-
-{% highlight c#  %}
-
-
-
-HierarchicalTreeLayout tree = new HierarchicalTreeLayout(diagramModel, diagramView);
-
-tree.RefreshLayout();
-
-{% endhighlight   %}
-{% highlight c# %}
-
-
-
-Dim tree As New HierarchicalTreeLayout(diagramModel, diagramView)
-
-tree.RefreshLayout()
-
-
-{% endhighlight   %}
-
-Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
-
-{%seealso%}
-
-Layout Spacing Refer Concepts and Features -> Diagram Model -> Layout Spacing
-
-Tree Orientation Refer Concepts and Features -> Diagram Model -> Tree Orientation
-
-Cyclic path in Hierarchical-Tree Layout: Refer Concepts and Features -> Diagram Model -> Cyclic path in Hierarchical – TreeLayout.
-
-{%endseealso%}
-
-#### Radial – Tree Layout
-
-The Radial-TreeLayout is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout. The Radial-Tree layout will position the nodes based on the layout root.
-
-The Bounds property of the DiagramView class can be used to specify the position of the root node, based on which the entire tree gets generated.
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type of the property</th><th>
-Value it accepts</th></tr>
-<tr>
-<td>
-VerticalSpacing</td><td>
-Gets or sets the Vertical spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-HorizontalSpacing</td><td>
-Gets or sets the Horizontal spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-Bounds</td><td>
-Gets or sets the bounds value which specifies the position of the root node in case of tree layout.</td><td>
-CLR property</td><td>
-Thickness</td></tr>
-</table>
-
-
-
-
-<table>
-<tr>
-<td>
-Name</td><td>
-Parameters </td><td>
-Return Type</td><td>
-Description</td><td>
-Reference Links</td></tr>
-<tr>
-<td>
-RefreshLayout()</td><td>
-Null</td><td>
-void</td><td>
-Refresh the layout</td><td>
-N/A</td></tr>
-</table>
-
-
-1. The LayoutType should be set to RadialTreeLayout in DiagramModel class.
-   
-   
-   {%highlight xaml%}
-
-
-
-
-
-
-			 <Window x:Class="RadialTreeLayout_2008.Window1"
-
-				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-				Title="Radial Tree Layout Demo" WindowState="Normal"
-
-				WindowStartupLocation="CenterScreen" Name="mainwindow"
-
-				xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-				FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
-
-
-
-				<!--Diagram Control-->
-
-				<syncfusion:DiagramControl  Name="diagramControl">
-
-
-
-					<!-- Model to add nodes and connections-->
-
-					<syncfusion:DiagramControl.Model>
-
-						<syncfusion:DiagramModel x:Name="diagramModel" LayoutType="RadialTreeLayout">
-
-						</syncfusion:DiagramModel>
-
-					</syncfusion:DiagramControl.Model>
-
-
-
-					<!--View to display nodes and connections added through model.-->
-
-					<syncfusion:DiagramControl.View>
-
-						<syncfusion:DiagramView Name="diagramView">
-
-						</syncfusion:DiagramView>
-
-					</syncfusion:DiagramControl.View>
-
-				</syncfusion:DiagramControl>
-
-
-
-			</Window>
-			
-	{%endhighlight%}
-
-
-2.Then the nodes can be added and the connections can be specified as follows:
-
-
-
-
-   {%highlight c#%}
-
-
-			//Define Spacings.
-
-			diagramModel.HorizontalSpacing = 10;
-
-			diagramModel.VerticalSpacing = 30;
-
-
-
-			Node n1 = new Node(Guid.NewGuid(), "n1");
-
-			n1.Level = 0;
-
-			Node n2 = new Node(Guid.NewGuid(), "n2");
-
-			n2.Level = 1;
-
-			Node n3 = new Node(Guid.NewGuid(), "n3");
-
-			n3.Level = 1;
-
-			Node n4 = new Node(Guid.NewGuid(), "n4");
-
-			n4.Level = 1;
-
-			Node n5 = new Node(Guid.NewGuid(), "n5");
-
-			n5.Level = 1;
-
-			Node n6 = new Node(Guid.NewGuid(), "n6");
-
-			n6.Level = 1;
-
-
-
-			//Adding nodes to the diagram Model.                            
-
-			diagramModel.Nodes.Add(n1);  
-
-			diagramModel.Nodes.Add(n2);
-
-			diagramModel.Nodes.Add(n3);
-
-			diagramModel.Nodes.Add(n4);
-
-			diagramModel.Nodes.Add(n5);
-
-			diagramModel.Nodes.Add(n6); 
-
-
-
-			//Creating conections between nodes.  
-
-			Connect(n1, n2);
-
-			Connect(n1, n3);
-
-			Connect(n1, n4);  
-
-			Connect(n1, n5);  
-
-			Connect(n1, n6);
-
-			diagramModel.LayoutRoot = n1;
-
-			   //Creating connection and adding to the model. 
-
-				void Connect(Node HeadNode, Node TailNode)    
-
-				{        
-
-				LineConnector connection = new LineConnector(); 
-
-				connection.ConnectorType = ConnectorType.Straight;  
-
-				// Specify the TailNode node.          
-
-				connection.TailNode = TailNode;       
-
-				//Specifying the Head Node.   
-
-				connection.HeadNode = HeadNode;
-
-				connection.TailDecoratorShape = DecoratorShape.Circle;    
-
-			//Adding to the Diagram Model.                 
-
-			diagramModel.Connections.Add(connection);  
-
-
-
-				}
-
-
-
-
-
-
-				'Define Spacings.
-
-				diagramModel.HorizontalSpacing = 10
-
-				diagramModel.VerticalSpacing = 30
-
-
-
-				Dim n1 As New Node(Guid.NewGuid(), "n1")
-
-				n1.Level = 0
-
-				Dim n2 As New Node(Guid.NewGuid(), "n2")
-
-				n2.Level = 1
-
-				Dim n3 As New Node(Guid.NewGuid(), "n3")
-
-				n3.Level = 1
-
-				Dim n4 As New Node(Guid.NewGuid(), "n4")
-
-				n4.Level = 1
-
-				Dim n5 As New Node(Guid.NewGuid(), "n5")
-
-				n5.Level = 1
-
-				Dim n6 As New Node(Guid.NewGuid(), "n6")
-
-				n6.Level = 1
-
-
-
-				'Adding nodes to the diagram Model.                            
-
-				diagramModel.Nodes.Add(n1)
-
-				diagramModel.Nodes.Add(n2)
-
-				diagramModel.Nodes.Add(n3)
-
-				diagramModel.Nodes.Add(n4)
-
-				diagramModel.Nodes.Add(n5)
-
-				diagramModel.Nodes.Add(n6)
-
-
-
-				'Creating conections between nodes.  
-
-				Connect(n1, n2)
-
-				Connect(n1, n3)
-
-				Connect(n1, n4)
-
-				Connect(n1, n5)
-
-				Connect(n1, n6)
-
-				diagramModel.LayoutRoot = n1
-
-
-
-				'Creating connection and adding to the model. 
-
-				void Connect(Node HeadNode, Node TailNode)
-
-				Dim connection As New LineConnector()
-
-				connection.ConnectorType = ConnectorType.Straight
-
-
-
-				'Specify the TailNode node.          
-
-				connection.TailNode = TailNode
-
-
-
-				'Specifying the Head Node.   
-
-				connection.HeadNode = HeadNode
-
-				connection.TailDecoratorShape = DecoratorShape.Circle
-
-
-
-				'Adding to the Diagram Model.                 
-
-				diagramModel.Connections.Add(connection)
-
-           {%endhighlight%}
-
-   ![](Getting-Started_images/Getting-Started_img13.png)
-
-   
-
-Layout Spacing
-
-Spacing between the nodes with respect different levels and siblings are adjustable; this will be helpful to adjust the distance between nodes, so that it will meet many business needs. As this is a general topic between all layouts, detailed explanation about this can be found in Layout Spacing under DiagramModel.
-
-Refresh Layout
-
-When there are changes in content of the page link new nodes and connectors added, the layout has to be refreshed to get the page’s content aligned again to give space for new contents. To refresh the layout please follow the following code snippet.
-
-{% highlight c#  %}
-
-
-
-
-
-RadialTreeLayout tree = new RadialTreeLayout(diagramModel, diagramView);
-
-tree.RefreshLayout();
-
-{% endhighlight  %}
-{% highlight vbnet  %}
-
-
-
-
-Dim tree As New RadialTreeLayout(diagramModel, diagramView)
-
-tree.RefreshLayout()
-
-{% endhighlight  %}
-
-Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
-
-#### Table Layout
-
-Table layout arranges the nodes in a tabular structure based on specified intervals between them. The number of nodes in each row and column can be specified and the layout will take place accordingly. The nodes are assigned rows and columns based on the order in which they are added to the model and based on the maximum nodes allowed in that row and column. This layout enables to layout nodes automatically without the need to specify offset positions for each node.
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description </th><th>
-Type of the property</th><th>
-Value it accepts</th></tr>
-<tr>
-<td>
-VerticalSpacing</td><td>
-Gets or sets the Vertical spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-HorizontalSpacing</td><td>
-Gets or sets the Horizontal spacing between nodes.</td><td>
-CLR property</td><td>
-Double</td></tr>
-<tr>
-<td>
-Orientation</td><td>
-Gets or sets the orientation.</td><td>
-CLR property</td><td>
-TreeOrientation.LeftRightTreeOrientation.RightLeftTreeOrientation.TopBottomTreeOrientation.BottomTop</td></tr>
-<tr>
-<td>
-TableExpandMode</td><td>
-Gets or sets the table expand mode.</td><td>
-DependencyProperty</td><td>
-ExpandMode.HorizontalExpandMode.Vertical</td></tr>
-<tr>
-<td>
-RowCount</td><td>
-Gets or sets the Row Count for the table layout.</td><td>
-DependencyProperty</td><td>
-int</td></tr>
-<tr>
-<td>
-ColumnCount</td><td>
-Gets or sets the Column Count for the table layout.</td><td>
-DependencyProperty</td><td>
-int</td></tr>
-<tr>
-<td>
-EnableLayoutWithVariedSizes</td><td>
-Gets or sets a value indicating whether to enable the varied size algorithm. In case the Model consists of the nodes of different sizes, this property can be set to true. This will align the differently sized nodes with respect to the center.</td><td>
-DependencyProperty</td><td>
-Boolean (true/ false)</td></tr>
-<tr>
-<td>
-Bounds</td><td>
-Gets or sets the bounds value which specifies the position of the root node in case of tree layout.</td><td>
-CLR property</td><td>
-Thickness</td></tr>
-</table>
-
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Parameters </th><th>
-Return Type</th><th>
-Description</th><th>
-Reference Links</th></tr>
-<tr>
-<td>
-RefreshLayout()</td><td>
-Null</td><td>
-void</td><td>
-Refresh the layout</td><td>
-N/A</td></tr>
-</table>
-
-
-The Layout Manager lets you orient the table in two directions, Horizontal and Vertical. The TableExpandMode property of Diagram Model is used to specify the orientation.
-
-Horizontal: 
-
-When set to Horizontal, the RowCount is automatically calculated based on the number of nodes. The ColumnCount must be specified and the nodes will be arranged in the specified number of columns. When the maximum column count is reached, it starts placing the nodes in a new row.
-
-Vertical: 
-
-When set to Vertical, the ColumnCount is automatically calculated based on the number of nodes. The RowCount must be specified and the nodes will be arranged in the specified number of rows. When the maximum row count is reached, it starts placing the nodes in a new column.
-
-The Bounds property of the DiagramView class can be used to specify the position of the first node.
-
-{% highlight xaml  %}
-
-
-
-
-
-<Window x:Class="RadialTreeLayout_2008.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Radial Tree Layout Demo" WindowState="Normal"
-
-    WindowStartupLocation="CenterScreen" Name="mainwindow"
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
-
-<syncfusion:DiagramControl IsSymbolPaletteEnabled="False" Name="diagramControl">
-
-  <!-- Model to add nodes and connections-->
-
-<syncfusion:DiagramControl.Model>
-
-<syncfusion:DiagramModel
-
-LayoutType="TableLayout" 
-
-EnableLayoutWithVariedSizes="False" 
-
-TableExpandMode="Horizontal" 
-
-HorizontalSpacing="50" 
-
-VerticalSpacing="50" 
-
-RowCount="4" 
-
-ColumnCount="4"  
-
-x:Name="diagramModel">
-
-</syncfusion:DiagramModel>
-
- </syncfusion:DiagramControl.Model>
-
- <!--View to display nodes and connections added through model.-->
-
- <syncfusion:DiagramControl.View>
-
-     <syncfusion:DiagramView Bounds="0,0,200,200" Name="diagramView"/>
-
-     </syncfusion:DiagramControl.View>
-
-
-
-</syncfusion:DiagramControl></Window>
-
-
-{% endhighlight   %}
-{% highlight c#  %}
-
-
-
-
-DiagramControl dc = new DiagramControl();
-
-DiagramModel diagramModel = new DiagramModel();
-
-dc.Model = diagramModel;
-
-diagramModel.LayoutType = LayoutType.TableLayout;
-
-diagramModel.TableExpandMode = ExpandMode.Horizontal;
-
-diagramModel.EnableLayoutWithVariedSizes = false;
-
-diagramModel.HorizontalSpacing = 50;
-
-diagramModel.VerticalSpacing = 50;
-
-diagramModel.RowCount = 10;
-
-diagramModel.ColumnCount = 3;
-
-{% endhighlight  %}
-{% highlight vbnet  %}
-
-
-
-
-
-Dim dc As New DiagramControl()
-
-Dim diagramModel As New DiagramModel()
-
-dc.Model = diagramModel
-
-diagramModel.LayoutType = LayoutType.TableLayout
-
-diagramModel.TableExpandMode = ExpandMode.Horizontal
-
-diagramModel.EnableLayoutWithVariedSizes = False
-
-diagramModel.HorizontalSpacing = 50
-
-diagramModel.VerticalSpacing = 50
-
-diagramModel.RowCount = 10
-
-diagramModel.ColumnCount = 3
-
-{% endhighlight  %}
-
-![](Getting-Started_images/Getting-Started_img14.jpeg)
-
-
-
-Layout Spacing
-
-Spacing between the nodes with respect different levels and siblings are adjustable; this will be helpful to adjust the distance between nodes, so that it will meet many business needs. As this is a general topic between all layouts, detailed explanation about this can be found in Layout Spacing under DiagramModel.
-
-Refresh Layout
-
-When there are changes in content of the page like new nodes or connectors added, the layout has to be refreshed to get the page’s content aligned again to give space for new contents. To refresh the layout please follow the following code snippet.
-
-{% highlight c# %}
-
-
-
-TableLayout tree = new TableLayout(diagramModel, diagramView);
-
-tree.RefreshLayout();
-
-{% endhighlight  %}
-{% highlight vbnet  %}
-
-
-
-Dim tree As New TableLayout(diagramModel, diagramView)
-
-tree.RefreshLayout()
-
-{% endhighlight  %}
-
-Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
-There are some more customization supported for Table Layout, please refer the links following ‘see also’ topic.
-
-See Also
-
-Layout Spacing Refer Concepts and Features -> Diagram Model -> Layout Spacing
-
-TableExpandMode Refer Concepts and Features -> Diagram Model -> TableExpandMode
-
-RowCount and ColumnCount Refer Concepts and Features -> Diagram Model -> RowCount and ColumnCount
-
-Enable TableLayout with varied Node sizes Refer Concepts and Features -> Diagram Model -> Enable TableLayout with varied Node size
-
-#### BowTie Layout
-
-The BowTie Diagram is a graphical representation of the risk assessment process. This can be used for assessing all type of risks.
-
-Properties
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description </th><th>
-Type </th><th>
-Data Type</th><th>
-Reference links </th></tr>
-<tr>
-<td>
-VerticalSpacing</td><td>
-Gets or sets the Vertical spacing between nodes.</td><td>
-CLR Property</td><td>
-Double</td><td>
-NA</td></tr>
-<tr>
-<td>
-HorizontalSpacing</td><td>
-Gets or sets the Horizontal spacing between nodes.</td><td>
-CLR Property</td><td>
-Double</td><td>
-NA</td></tr>
-<tr>
-<td>
-SpaceBetweenSubTrees</td><td>
-Gets or sets the space between sub trees.</td><td>
-CLR Property</td><td>
-Double</td><td>
-NA</td></tr>
-<tr>
-<td>
-Bounds</td><td>
-Gets or sets the bounds value which specifies the position of the root node in case of tree layout.</td><td>
-CLR Property</td><td>
-Thickness</td><td>
-NA</td></tr>
-<tr>
-<td>
-BowtieSubTreePlacement</td><td>
-Gets or sets a value from the BowtieSubTreePlacement.</td><td>
-Attached Dependency property</td><td>
- BowtieSubTreePlacement</td><td>
-NA</td></tr>
-</table>
-
-
-The following code illustrates how to generate the BowTie layout: 
-
-1. The LayoutType should be set to BowtieLayout in DiagramModel class.
-
-        {%highlight html%}
-
-
-			   <!--Diagram Control-->       
-
-			<syncfusion:DiagramControl  Name="diagramControl" Grid.Row="1">            
-
-				<syncfusion:DiagramControl.Model>
-
-					<syncfusion:DiagramModel x:Name="diagramModel" LayoutType="BowtieLayout"/>
-
-				</syncfusion:DiagramControl.Model>            
-
-				<syncfusion:DiagramControl.View>
-
-					<syncfusion:DiagramView Name="diagramView" Bounds="0, 0, 1400, 700"/>
-
-				</syncfusion:DiagramControl.View>
-
-			</syncfusion:DiagramControl>
-			
-			
-			{%endhighlight%}
-
-
-
-
-2. Then, the nodes are defined and the connections are made.
-
-
-    {%highlight c#%}
-
-
-					//Tree spacing properties.
-
-					diagramModel.VerticalSpacing = 35;
-
-					diagramModel.HorizontalSpacing = 30;
-
-					diagramModel.SpaceBetweenSubTrees = 150;
-
-
-
-					//Defines the nodes and adds it to the model.
-
-					Node Root = AddNode("R", "Systems\nSecurity", Brushes.Red, Brushes.Black, 4, Shapes.Ellipse);
-
-					this.diagramModel.LayoutRoot = Root;
-
-					diagramModel.LayoutType = LayoutType.BowtieLayout;
-
-
-
-					//creating the Left Tree.
-
-					createLeftNodes(Root, BowtieSubTreePlacement.Left);
-
-
-
-					//creating the Right Tree.
-
-					createRightNodes(Root, BowtieSubTreePlacement.Right);
-
-
-
-					//setting the Root Node.
-
-					this.diagramModel.LayoutRoot = Root;
-
-
-
-
-
-				public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
-
-				{
-
-					//Defines the nodes.
-
-					Node n1 = AddNode("n1", "Hacking", Brushes.Blue, Brushes.Black, 1, Shapes.Ellipse);
-
-					Node n2 = AddNode("n2", "Firewall", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle);
-
-					Node n3 = AddNode("n3", "Identification", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle);
-
-					Node n4 = AddNode("n4", "Authorization", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle);
-
-
-
-					Node n5 = AddNode("n5", "Theft\n of\nInformation", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse);
-
-					Node n6 = AddNode("n6", "Firewall", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle);
-
-					Node n7 = AddNode("n7", "Network Access", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle);
-
-					Node n8 = AddNode("n8", "Data Access", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle);
-
-
-
-					DiagramControl.SetBowtieSubTreePlacement(n4, place);
-
-					DiagramControl.SetBowtieSubTreePlacement(n8, place);
-
-
-
-					//Creating connections between the nodes
-
-					Connect(n1, n2);
-
-					Connect(n2, n3);
-
-					Connect(n3, n4);
-
-					Connect(n4, Root);
-
-
-
-					Connect(n5, n6);
-
-					Connect(n6, n7);
-
-					Connect(n7, n8);
-
-					Connect(n8, Root);
-
-				}
-
-
-
-
-
-		//Defines the nodes. 
-
-				public void createRightNodes(Node Root, BowtieSubTreePlacement place)
-
-				{
-
-					//Defining the nodes.            
-
-					Node n1 = AddNode("n1", "Account Limits", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle);
-
-					Node n2 = AddNode("n2", "Challenge", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle);
-
-					Node n3 = AddNode("n3", "Detection & Prosecution", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle);
-
-					Node n4 = AddNode("n4", "Recovery", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle);
-
-					Node n5 = AddNode("n5", "Restitution\n to\nCustomer", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse);
-
-					Node n6 = AddNode("n6", "Cost to Bank", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse);
-
-
-
-					DiagramControl.SetBowtieSubTreePlacement(n1, place);
-
-
-
-					//Creating connections between the nodes.
-
-					Connect(Root, n1);
-
-					Connect(n1, n2);
-
-					Connect(n2, n3);
-
-					Connect(n3, n4);
-
-					Connect(n4, n5);
-
-					Connect(n4, n6);
-
-				}
-
-
-
-
-
-									'Tree spacing properties.
-
-				diagramModel.VerticalSpacing = 35
-
-				diagramModel.HorizontalSpacing = 30
-
-				diagramModel.SpaceBetweenSubTrees = 150
-
-
-
-				'Defines the nodes and adds it to the model.
-
-				Dim Root As Node = AddNode("R", "Systems" & Constants.vbLf & "Security", Brushes.Red, Brushes.Black, 4, Shapes.Ellipse)
-
-				Me.diagramModel.LayoutRoot = Root
-
-				diagramModel.LayoutType = LayoutType.BowtieLayout
-
-
-
-				'creating the Left Side Tree
-
-				createLeftNodes(Root, BowtieSubTreePlacement.Left)
-
-
-
-				'creating the Right Tree
-
-				createRightNodes(Root, BowtieSubTreePlacement.Right)
-
-
-
-				'setting the Root Node
-
-				Me.diagramModel.LayoutRoot = Root
-
-
-
-
-
-				public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
-
-				Defines nodes.
-
-				Dim n1 As Node = AddNode("n1", "Hacking", Brushes.Blue, Brushes.Black, 1, Shapes.Ellipse)
-
-				Dim n2 As Node = AddNode("n2", "Firewall", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
-
-				Dim n3 As Node = AddNode("n3", "Identification", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
-
-				Dim n4 As Node = AddNode("n4", "Authorization", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
-
-
-
-				Dim n5 As Node = AddNode("n5", "Theft" & Constants.vbLf & "of" & Constants.vbLf & "Information", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
-
-				Dim n6 As Node = AddNode("n6", "Firewall", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle)
-
-				Dim n7 As Node = AddNode("n7", "Network Access", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
-
-				Dim n8 As Node = AddNode("n8", "Data Access", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
-
-
-
-				DiagramControl.SetBowtieSubTreePlacement(n4, place)
-
-				DiagramControl.SetBowtieSubTreePlacement(n8, place)
-
-
-
-				'Creating connections between the nodes
-
-				Connect(n1, n2)
-
-				Connect(n2, n3)
-
-				Connect(n3, n4)
-
-				Connect(n4, Root)
-
-
-
-				Connect(n5, n6)
-
-				Connect(n6, n7)
-
-				Connect(n7, n8)
-
-				Connect(n8, Root)
-
-
-
-
-
-				'Defines the nodes. 
-
-				public void createRightNodes(Node Root, BowtieSubTreePlacement place)
-
-							'Defining the nodes.            
-
-				Dim n1 As Node = AddNode("n1", "Account Limits", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
-
-				Dim n2 As Node = AddNode("n2", "Challenge", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
-
-				Dim n3 As Node = AddNode("n3", "Detection & Prosecution", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
-
-				Dim n4 As Node = AddNode("n4", "Recovery", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle)
-
-				Dim n5 As Node = AddNode("n5", "Restitution" & Constants.vbLf & "to" & Constants.vbLf & "Customer", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
-
-				Dim n6 As Node = AddNode("n6", "Cost to Bank", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
-
-
-
-				DiagramControl.SetBowtieSubTreePlacement(n1, place)
-
-
-
-				'Creating connections between the nodes.
-
-				Connect(Root, n1)
-
-				Connect(n1, n2)
-
-				Connect(n2, n3)
-
-				Connect(n3, n4)
-
-				Connect(n4, n5)
-
-				Connect(n4, n6)
-
-       {%endhighlight%}
-	   
-	   
-   ![](Getting-Started_images/Getting-Started_img15.png)
-
-   
-
-Layout Spacing
-
-Spacing between the nodes with respect to different levels and siblings are adjustable. This will be helpful to adjust the distance between nodes, so that it will meet many business needs. As this is a general topic between all layouts, detailed explanation about this can be found in [Layout Spacing](http://help.syncfusion.com/silverlight/diagram/diagram-model#layout) under DiagramModel.
-
-Refresh Layout
-
-When there are changes in the content of the page-- such as adding new nodes and connectors to the layout, the page has to be refreshed to get the content aligned again. Only then it will give space for new contents. Refresh the layout as given in the following code example:
-
-
-{% highlight c# %}
-
-
-BowtieLayout tree = new BowtieLayout (diagramModel, diagramView);
-
-tree.RefreshLayout();
-
-
-{% endhighlight  %}
-{% highlight vbnet  %}
-
-
-Dim tree As New BowtieLayout (diagramModel, diagramView)
-
-tree.RefreshLayout()
-{% endhighlight  %}
-
-#### Table Layout for Selected Nodes
-
-This feature enables you to apply the table layout on selected nodes instead of applying it to the entire diagram. This arranges selected nodes or a given node collection in a tabular structure based on specified intervals between them. The number of nodes in each row and column can be specified and the layout will be applied accordingly. 
-
-Use Case Scenarios
-
-* Users can easily make the layout with a specific collection of nodes called ordered nodes.
-* Users can easily position the layout.
-* Users can easily align the layout by using the layout alignment properties.
-* Users can set a rectangle boundary around nodes by using the Layout Bounds property.
-
-Properties
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-OrderedNodes</td><td>
-This property is used to get or set the Collection of Nodes for table layout.</td><td>
-Dependency property</td><td>
-List&lt;IShape&gt;</td></tr>
-</table>
-
-
-
-Sample Link
-
-To view a sample of this feature:
-
-1. Open Dashboard.
-2. Click User Interface > WPF. 
-3. Click Run Samples. 
-4. Navigate to Diagram > Automatic Layout > Table Layout.
-
-#### Adding Table Layout for selected Nodes 
-
-
-To apply a table layout to the selected nodes, assign the selected nodes to the OrderNodes property of the DiagramModel. You can also assign your own collection of IShape to the _OrderNodes_ property. Then create an instance of the TableLayout and call the RefreshLayout method for this instance.
-
-The following code illustrates this: 
-
-
-{% highlight c#  %}
-
-
-
-
-       // Assigning selected node to the OrderedNodes property.
-
-          diagramModel.OrderedNodes= diagramView.SelectionList.OfType<IShape>().ToList(); 
-
-       // Create an instance of TableLayout and refresh it.
-
-          TableLayout table = new TableLayout(diagramModel, diagramView);
-
-          table.RefreshLayout();
-{% endhighlight  %}
-{% highlight vbnet  %}
-
-
-
-
-
-
-'Assigning selected node to the OrderedNodes property.
-
-diagramModel.OrderedNodes= diagramView.SelectionList.OfType(Of IShape)().ToList()
-
-'Create an instance of TableLayout and refresh it.
-
-Dim table As New TableLayout(diagramModel, diagramView)
-
-table.RefreshLayout()
-
+{% endhighlight %}
+{% endtabs %}
+
+#### Map DataSource with Diagram
+
+You can configure the above “Employee Information” with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example shows how dataSourceSettings is used to map ID , ParentId and DataSource with property name identifiers for employee information.
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--Initializes the DataSourceSettings -->
+<Syncfusion:DataSourceSettings x:Key="DataSourcesettings" 
+                                       DataSource="{StaticResource employees}"
+                                       ParentId="ParentId" Id="EmpId" />
+<!--Map the DataSourceSettings class with Diagram-->
+<Syncfusion:SfDiagram x:Name="sfdiagram"                               
+                              DataSourceSettings="{StaticResource DataSourcesettings}"/>   
+</Syncfusion:SfDiagram>   
 
 {% endhighlight %}
 
+{% highlight c# %}
 
-When the code runs, the table layout will be applied to the specified node collection.  
-
-N> If the OrderNodes property is set to null, then the table layout will be applied to the entire diagram.
-
-
-
-![](Getting-Started_images/Getting-Started_img16.png)
-
-
-
-Table Layout Applied for Specified Nodes
-{:.caption}
-
-#### Aligning the Layout on a Specified Location
-
-To align the ordered nodes in a particular position, call the TableLayout’s RefreshLayout (Point PivotPoint) method and specify the particular point as a parameter. The layout will be positioned in the specified pivot point. 
-
-The following code illustrates this:
-
-
-{% highlight c#  %}
-
-
-       // Assigning selected node to the OrderedNodes.
-
-          diagramModel.OrderedNodes= diagramView.SelectionList.OfType<IShape>().ToList(); 
-
-          TableLayout table = new TableLayout(diagramModel, diagramView);
-
-          table.RefreshLayout(300,400);
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Initialize NodeCollection to SfDiagram
+diagram.Nodes = new NodeCollection();
+//Initialize ConnectorCollection to SfDiagram
+diagram.Connectors = new ConnectorCollection();
+//Initialize DataSourceSettings to SfDiagram
+diagram.DataSourceSettings = new DataSourceSettings()
+  {
+    DataSource =GetData(),
+    ParentId= "ParentId",
+    Id= "EmpId"
+  };
 
 {% endhighlight %}
-{% highlight vbnet  %}
+{% endtabs %}
 
+#### Rendering layout with DataSource
+To create an organizational chart, TreeLayout type should be set to `LayoutType.Organization`. The following code example shows how LayoutManager is used to generate TreeLayout based on the DataSourceSettings of the Diagram.
 
+{% tabs %}
+{% highlight xaml %}
 
-' Assigning selected node to the OrderedNodes.
+<!--Style for Connector-->
+<Style TargetType="Syncfusion:Connector">
+  <Setter Property="ConnectorGeometryStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Stroke" Value="Black"  />
+        <Setter Property="StrokeThickness" Value="1" />
+      </Style>
+    </Setter.Value>
+  </Setter>
+  <Setter Property="TargetDecoratorStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Stroke" Value="#4f4f4f"  />
+        <Setter Property="Stretch" Value="Fill" />
+        <Setter Property="Fill" Value="#4f4f4f"  />
+        <Setter Property="StrokeThickness" Value="1" />
+      </Style>
+    </Setter.Value>
+  </Setter>
+</Style>
 
-diagramModel.OrderedNodes= diagramView.SelectionList.OfType(Of IShape)().ToList()
+<!--Style for Node-->
+<Style TargetType="Syncfusion:Node">
+  <Setter Property="ContentTemplate">
+    <Setter.Value>
+      <DataTemplate>
+            <Border  Background="#FF5B9BD5" BorderBrush="Blue" Width="120" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center">
+               <TextBlock Margin="5" TextWrapping="Wrap" FontSize="12" Foreground="#ffffff" Text="{Binding Path=Designation}" 
+                          FontFamily="Segoe UI" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center"/>
+            </Border>
+      </DataTemplate>
+    </Setter.Value>
+  </Setter>
+</Style>
 
-Dim table As New TableLayout(diagramModel, diagramView)
+<!--Initializes the Layout-->
+<Syncfusion:DirectedTreeLayout x:Key="treeLayout" 
+                                       Orientation="TopToBottom" 
+                                       HorizontalSpacing="50"
+                                       Type="Organization"/>
 
-table.RefreshLayout(300,400)
-{% endhighlight   %}
+<!--Initializes the LayoutManager-->
+<Syncfusion:LayoutManager x:Key="LayoutManager" 
+                                  Layout="{StaticResource treeLayout}" />
 
+<!--Map the DataSourceSettings and LayoutManager class with Diagram-->
+<Syncfusion:SfDiagram x:Name="sfdiagram"                               
+                              DataSourceSettings="{StaticResource DataSourcesettings}" LayoutManager="{StaticResource LayoutManager}">
+    <Syncfusion:SfDiagram.Nodes>
+        <Syncfusion:NodeCollection/>
+    </Syncfusion:SfDiagram.Nodes>
+    <Syncfusion:SfDiagram.Connectors>
+        <Syncfusion:ConnectorCollection/>
+    </Syncfusion:SfDiagram.Connectors>
+</Syncfusion:SfDiagram>
 
-#### Removing Table Layout from the Specific Nodes
+{% endhighlight %}
 
-You can remove the table layout applied to specific nodes. To achieve this set the OrderedNodes property of the DiagramMode to null, and call the RefreshLayout method of the TableLayout. The layout will be applied to the entire diagram. By default the OrderedNodes property is set to null.
+{% highlight c# %}
 
-The following code illustrates how to remove the layout from the specific nodes:
+//Initialize LayoutManager to SfDiagram
+diagram.LayoutManager = new LayoutManager()
+   {
+     //Initialize Layout for LayoutManager  
+     Layout=new DirectedTreeLayout()
+        {
+            Type=LayoutType.Organization,
+            Orientation=TreeOrientation.TopToBottom,
+            HorizontalSpacing=50
+        }
+    };
+//RootGrid is the instance of the MainWindow Grid
+RootGrid.Children.Add(diagram);
 
-{% highlight c#  %}
+{% endhighlight %}
+{% endtabs %}
 
+The output will be as follows.
 
+![OrgLayout](Getting-Started_images\orglayout.PNG)
 
-       // Set null value to the OrderedNodes property.
+Download the complete sample from [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Orgchartcreation1902878733)
 
-          diagramModel.OrderedNodes = null;
-
-          TableLayout table = new TableLayout(diagramModel, diagramView);
-
-          table.RefreshLayout(300,400);
-
-
-{% endhighlight   %}
-
+For more information about Layout, [refer](https://help.syncfusion.com/wpf/sfdiagram/automatic-layouts)
 
