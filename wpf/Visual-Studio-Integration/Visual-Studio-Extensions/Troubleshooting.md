@@ -12,7 +12,6 @@ documentation: ug
 Troubleshoot the project with the Syncfusion configuration and apply the fix like, wrong .NET Framework version of added Syncfusion assembly to the project or missing any Syncfusion dependent assembly of a referred assembly. The Syncfusion Troubleshooter can do the following:
 
 * Report the Configuration issues.  
-
 * Apply the solution
 
 ## Report the Configuration issues
@@ -35,11 +34,9 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 
 2. Now, analyze the project and it will report the project configuration issues of Syncfusion controls in the Troubleshooter dialog if any issues found. If the project does not have any configuration issues, the dialog box will show there is no configuration changes required in following areas:
 
-     * Syncfusion assembly references.
-
-     * Syncfusion NuGet Packages. 
-
-     * Syncfusion Toolbox Configuration.
+* Syncfusion assembly references.
+* Syncfusion NuGet Packages. 
+* Syncfusion Toolbox Configuration.
 
    ![No configuration changes required dialog box](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img2.png)
 
