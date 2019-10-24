@@ -100,6 +100,8 @@ doubleTextBox.NumberFormat = new System.Globalization.NumberFormatInfo()
     NumberDecimalDigits =4,
     NumberGroupSeparator = "/",
     NumberDecimalSeparator = "*",
+    
+    // Adding the Number group size via NumberFormat property.
     NumberGroupSizes = new int[] { 2, 3, 4 }
 };
 {% endhighlight %}
@@ -119,6 +121,8 @@ doubleTextBox.Value = 123456789;
 doubleTextBox.NumberGroupSeparator = "/";
 doubleTextBox.NumberDecimalSeparator = "*";
 doubleTextBox.NumberDecimalDigits = 3;
+
+// Adding the Number group size via NumberGroupSizes property.
 doubleTextBox.NumberGroupSizes = new Int32Collection() { 4, 3, 2};
 
 {% endhighlight %}
