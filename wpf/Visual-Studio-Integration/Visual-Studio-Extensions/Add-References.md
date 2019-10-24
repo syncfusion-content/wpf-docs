@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add References| Wpf | Syncfusion
-description: add a syncfusion references via syncfusion reference manger
+description: Leadrn here about how to add a syncfusion references via syncfusion reference manger for WPF application
 platform: wpf
 control: Syncfusion Extensions
 documentation: ug

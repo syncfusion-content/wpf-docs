@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Steps to edit Style and Template with Blend for Syncfusion Essential WPF controls
-description: Learn how to edit the Style and Template with Blend for Syncfusion Essential WPF controls
+title: Step to edit Style and Template with Blend for Syncfusion WPF controls
+description: Learn here about how to edit the Style and Template with Blend for Syncfusion Essential WPF controls.
 platform: wpf
 control: Blend Support
 documentation: ug
@@ -17,18 +17,18 @@ Essential WPF control's Style and Template can be editable in Expression Blend a
 2) Expand the Views, choose Other Windows and then choose Objects and Timeline.
 3) In the “Objects and Timeline” pane, select a Syncfusion control to modify a style.
 
-![](Blend-Support_images/GettingStarted_img1.jpeg)
+![Shows objects and Timeline pane](Blend-Support_images/GettingStarted_img1.jpeg)
 
 4) Expand the Format, then choose Edit Style menu.
 
-![](Blend-Support_images/GettingStarted_img2.jpeg)
+![Expand the format and select Edit Style menu](Blend-Support_images/GettingStarted_img2.jpeg)
 
 5) It provide the following options.
 
 * Edit Current – To edit current applied style. This option is disabled when control don't have a Style.
 * Edit a Copy – Helps to edit a copy of default style. When it select, Create Style Resource dialog box is opened, this dialog box is used to select the name for style, as well as choose the location for where file is defined in. 
 
-![](Blend-Support_images/GettingStarted_img3.jpeg)
+![Editing the project name](Blend-Support_images/GettingStarted_img3.jpeg)
 
 
 * Create Empty – this option helps to create an empty style for selected control. When it selected, the same Create Style Resource dialog box is opened and it is used to select the name for style, as well as choose the location.
@@ -39,19 +39,19 @@ Essential WPF control's Style and Template can be editable in Expression Blend a
 2) Expand the Views, choose Other Windows and then choose Objects and Timeline.
 3) In the “Objects and Timeline” pane, select a Syncfusion control to modify a Template.
 
-![](Blend-Support_images/GettingStarted_img4.jpeg)
+![Shows Objects and Timeline pane](Blend-Support_images/GettingStarted_img4.jpeg)
 
 
 4) Right click on the Syncfusion control and choose Edit Template
 
-![](Blend-Support_images/GettingStarted_img5.jpeg)
+![Select an Edit Template](Blend-Support_images/GettingStarted_img5.jpeg)
 
 5) It provide the following options.
 
 * Edit Current – To edit the current Template of the control.This option is disabled when control don't have a Template.
 * Edit a Copy – Helps to edit the default Template. When it select, Create ControlTemplate Resource dialog box is opened, this dialog box is used to select the name for Template, as well as choose the location for where file is defined in.
 
-![](Blend-Support_images/GettingStarted_img6.jpeg)
+![Edt the project name](Blend-Support_images/GettingStarted_img6.jpeg)
 
 
 * Create Empty – This option helps to create an empty template for selected control. When it selected, the same dialog box opened. It is used to select the name for Template, as well as the location.

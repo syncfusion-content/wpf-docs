@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio WPF products
-description: Learn how to install and deploy the Syncfusion WPF component
+title: Installation and Deployment process for Syncfusion WPF products
+description: Learn here about how to install and deploy the Syncfusion Essential Studio WPF components and more details
 platform: wpf
 control: Installation and Deployment
 documentation: ug
@@ -18,7 +18,7 @@ The following procedure illustrates how to install Essential Studio WPF platform
 
 2) Double-click the Syncfusion WPF platform Setup file. The Setup Wizard opens and extracts the package automatically.
 
-![](Platform_images/Step-by-Step-Installation_img1.png)
+![Extract the WPF platform setup file](Platform_images/Step-by-Step-Installation_img1.png)
 
 N> The Setup wizard extracts the syncfusionessentialwpf_(version).exe dialog, displaying the unzip operation of the package.
 
@@ -31,19 +31,19 @@ N> The Setup wizard extracts the syncfusionessentialwpf_(version).exe dialog, d
    
 You should enter your Syncfusion Direct-Trac login credentials. If you don't have Syncfusion Direct-Trac login credentials, then you can click on Sign Up to a create new account. Else if you forgot your password, click on Reset Password to create new password. Here Email address and Password is validated and the Platform Selection window opens.
 
-![](Platform_images/Step-by-Step-Installation_img2.png)   
+![Install WPF setup using Direct-Trac login credential](Platform_images/Step-by-Step-Installation_img2.png)   
 
 **Use Unlock Key**
    
 You should use the Syncfusion License/Trial key. Trial key is valid for 30 days and the installer won't accept the expired trial key. Licensed customer can generate key from [here](https://www.syncfusion.com/kb/2326).
 
-![](Platform_images/Step-by-Step-Installation_img3.png)   
+![Install WPF setup using unlock key](Platform_images/Step-by-Step-Installation_img3.png)   
 
 4) After reading the License Terms and Conditions, check the **I agree to the License Terms and Conditions** check box.
 
 5) Click Next. Select the Installation, Samples Folder and Advanced Options screen opens. To install in the displayed default location, click Install
 
-![](Platform_images/Step-by-Step-Installation_img4.png)
+![Ready to install the WPF setup](Platform_images/Step-by-Step-Installation_img4.png)
 
 N> From the 2018 Volume 2 release, Syncfusion has changed the install and samples location 
 **Default Install location:** {ProgramFilesFolder}\Syncfusion\{Platform}\{version}
@@ -58,11 +58,11 @@ However, you can change the locations by clicking browse button.
 
 6) Click Install.
 
-![](Platform_images/Step-by-Step-Installation_img5.png)
+![Installing WPF setup](Platform_images/Step-by-Step-Installation_img5.png)
 
 7) The Completed screen is displayed once the WPF platform is installed.
 
-![](Platform_images/Step-by-Step-Installation_img6.png)
+![Complete installation of WPF setup](Platform_images/Step-by-Step-Installation_img6.png)
 
 8) Select the **Run Syncfusion Control Panel** check box to launch the Syncfusion Control Panel after installing.
 

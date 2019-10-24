@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steps to apply themes for Syncfusion Essential WPF controls
-description: Learn how to apply the themes for Syncfusion Essential WPF controls
+description: Learn here about how to apply the themes for Syncfusion Essential WPF controls using SfSkinManager control
 platform: wpf
 control: Themes
 documentation: ug
@@ -136,14 +136,14 @@ Any built-in themes can applied to the required control by `VisualStyle` attache
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
+![Applied skinmanager for WPF DockingManager control](GettingStarted_images/GettingStarted_img1.jpeg)
 
 
 ### Apply themes at run time
 
 Applied built-in themes can be changed at the runtime by the `VisualStyle` property. Here, a ComboBox Control is used to switch various built-in themes that are referred in the assembly references.
 
-![](GettingStarted_images/GettingStarted_img2.jpeg)
+![Added references for SkinManager and visual style](GettingStarted_images/GettingStarted_img2.jpeg)
 
 
 {% tabs %}

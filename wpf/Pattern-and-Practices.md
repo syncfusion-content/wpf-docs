@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pattern and Practices for Syncfusion Essential WPF controls
-description: Learn how to use MVVM Commands and Events of Syncfusion Essential WPF controls
+description: Learn here about how to use MVVM Commands, patterns and Events of the Syncfusion Essential WPF controls
 platform: wpf
 control: Pattern and Practices
 documentation: ug
@@ -231,7 +231,7 @@ End Sub
 
 {% endtabs %}
 
-![](MVVM_images/MVVM_img1.jpeg)
+![Show the message box for command execution](MVVM_images/MVVM_img1.jpeg)
 
 
 ## MVVM Commands
@@ -277,7 +277,7 @@ End Sub
 
 {% endtabs %}
 
-![](MVVM_images/MVVM_img2.jpeg)
+![Select third tabitem and command parameter](MVVM_images/MVVM_img2.jpeg)
 
 
 #### Pass a property value through Command Parameter:
@@ -319,7 +319,7 @@ End Sub
 
 {% endtabs %}
 
-![](MVVM_images/MVVM_img3.jpeg)
+![Select the second tabitem](MVVM_images/MVVM_img3.jpeg)
 
 #### Command Target
 
