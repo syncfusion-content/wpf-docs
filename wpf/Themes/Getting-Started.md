@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steps to apply themes for Syncfusion Essential WPF controls
-description: Learn how to apply the themes for Syncfusion Essential WPF controls
+description: Learn here about how to apply the themes for Syncfusion Essential WPF controls using SfSkinManager control
 platform: wpf
 control: Themes
 documentation: ug
@@ -13,72 +13,72 @@ documentation: ug
 <table>
 <tr>
 <th>
-Styles<br/><br/></th><th>
-Assemblies<br/><br/></th></tr>
+Styles</th><th>
+Assemblies</th></tr>
 <tr>
 <td>
-Metro<br/><br/></td><td>
-Syncfusion.Themes.Metro.Wpf.dll<br/><br/></td></tr>
+Metro</td><td>
+Syncfusion.Themes.Metro.Wpf.dll</td></tr>
 <tr>
 <td>
-Lime<br/><br/></td><td>
-Syncfusion.Themes.Lime.Wpf.dll<br/><br/></td></tr>
+Lime</td><td>
+Syncfusion.Themes.Lime.Wpf.dll</td></tr>
 <tr>
 <td>
-Saffron<br/><br/></td><td>
-Syncfusion.Themes.Saffron.Wpf.dll<br/><br/></td></tr>
+Saffron</td><td>
+Syncfusion.Themes.Saffron.Wpf.dll</td></tr>
 <tr>
 <td>
-Blend<br/><br/></td><td>
-Syncfusion.Themes.Blend.Wpf.dll<br/><br/></td></tr>
+Blend</td><td>
+Syncfusion.Themes.Blend.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2013White<br/><br/></td><td>
-Syncfusion.Themes.Office2013White.Wpf.dll<br/><br/></td></tr>
+Office2013White</td><td>
+Syncfusion.Themes.Office2013White.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2013LightGray<br/><br/></td><td>
-Syncfusion.Themes.Office2013LightGray.Wpf.dll<br/><br/></td></tr>
+Office2013LightGray</td><td>
+Syncfusion.Themes.Office2013LightGray.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2013DarkGray<br/><br/></td><td>
-Syncfusion.Themes.Office2013DarkGray.Wpf.dll<br/><br/></td></tr>
+Office2013DarkGray</td><td>
+Syncfusion.Themes.Office2013DarkGray.Wpf.dll</td></tr>
 <tr>
 <td>
-VisualStudio2013<br/><br/></td><td>
-Syncfusion.Themes.VisualStudio2013.Wpf.dll<br/><br/></td></tr>
+VisualStudio2013</td><td>
+Syncfusion.Themes.VisualStudio2013.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2010Black<br/><br/></td><td>
-Syncfusion.Themes.Office2010Black.Wpf.dll<br/><br/></td></tr>
+Office2010Black</td><td>
+Syncfusion.Themes.Office2010Black.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2010Blue<br/><br/></td><td>
-Syncfusion.Themes.Office2010Blue.Wpf.dll<br/><br/></td></tr>
+Office2010Blue</td><td>
+Syncfusion.Themes.Office2010Blue.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2010Silver<br/><br/></td><td>
-Syncfusion.Themes.Office2010Silver.Wpf.dll<br/><br/></td></tr>
+Office2010Silver</td><td>
+Syncfusion.Themes.Office2010Silver.Wpf.dll</td></tr>
 <tr>
 <td>
-Office365<br/><br/></td><td>
-Syncfusion.Themes.Office365.Wpf.dll<br/><br/></td></tr>
+Office365</td><td>
+Syncfusion.Themes.Office365.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2016Colorful<br/><br/></td><td>
-Syncfusion.Themes.Office2016Colorful.Wpf.dll<br/><br/></td></tr>
+Office2016Colorful</td><td>
+Syncfusion.Themes.Office2016Colorful.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2016White<br/><br/></td><td>
-Syncfusion.Themes.Office2016White.Wpf.dll<br/><br/></td></tr>
+Office2016White</td><td>
+Syncfusion.Themes.Office2016White.Wpf.dll</td></tr>
 <tr>
 <td>
-Office2016DarkGray<br/><br/></td><td>
-Syncfusion.Themes.Office2016DarkGray.Wpf.dll<br/><br/></td></tr>
+Office2016DarkGray</td><td>
+Syncfusion.Themes.Office2016DarkGray.Wpf.dll</td></tr>
 <tr>
 <td>
-VisualStudio2015<br/><br/></td><td>
-Syncfusion.Themes.VisualStudio2015.Wpf.dll<br/><br/></td></tr>
+VisualStudio2015</td><td>
+Syncfusion.Themes.VisualStudio2015.Wpf.dll</td></tr>
 </table>
 
 ## Getting Started
@@ -89,24 +89,18 @@ This section covers how to apply themes for controls using `SfSkinManager`
 
 There are several ways to add the Syncfusion `SfSkinManager` in to Visual Studio WPF project. The following steps help to add through XAML Code
 
-1. Create a WPF project in Visual Studio and refer to the `SfSkinManager` assembly (Syncfusion.SfSkinManager.Wpf)
-2. Include an XML namespace for the assembly to the Main window.
+1) Create a WPF project in Visual Studio and refer to the `SfSkinManager` assembly (Syncfusion.SfSkinManager.Wpf)
+2) Include an XML namespace for the assembly to the Main window.
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <Window
-
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
-
-
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 {% endhighlight %}
 
@@ -125,94 +119,65 @@ Any built-in themes can applied to the required control by `VisualStyle` attache
 {% highlight XAML %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" UseDocumentContainer="True"
                            PersistState="True" syncfusionskin:SfSkinManager.VisualStyle="VisualStudio2013">
-
-<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"
+    <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"
                                           syncfusion:DockingManager.SideInDockedMode="Right"/>
-
-<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox"
+    <ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox"
                                  syncfusion:DockingManager.State="AutoHidden" />
-
-<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties"
+    <ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties"
                                     syncfusion:DockingManager.State="Float" />
-
-<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"
+    <ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
 				syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
-
-<ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page"
+    <ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page"
                                    syncfusion:DockingManager.State="Document" />
-
 </syncfusion:DockingManager>
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
+![Applied skinmanager for WPF DockingManager control](GettingStarted_images/GettingStarted_img1.jpeg)
 
 
 ### Apply themes at run time
 
 Applied built-in themes can be changed at the runtime by the `VisualStyle` property. Here, a ComboBox Control is used to switch various built-in themes that are referred in the assembly references.
 
-![](GettingStarted_images/GettingStarted_img2.jpeg)
+![Added references for SkinManager and visual style](GettingStarted_images/GettingStarted_img2.jpeg)
 
 
 {% tabs %}
 
 {% highlight XAML %}
+
 <Grid>
-
-<Grid.RowDefinitions>
-
-<RowDefinition Height="20"></RowDefinition>
-
-<RowDefinition Height="*"></RowDefinition>
-
-</Grid.RowDefinitions>
-
-<ComboBox SelectionChanged="ComboBox_SelectionChanged">
-
-<ComboBoxItem>Metro</ComboBoxItem>
-
-<ComboBoxItem>Blend</ComboBoxItem>
-
-<ComboBoxItem>VisualStudio2013</ComboBoxItem>
-
-<ComboBoxItem>Office2013White</ComboBoxItem>
-
-<ComboBoxItem>Office2013DarkGray</ComboBoxItem>
-
-<ComboBoxItem>Office2013LightGray</ComboBoxItem>
-
-<ComboBoxItem>Office2010Black</ComboBoxItem>
-
-<ComboBoxItem>Office2010Blue</ComboBoxItem>
-
-<ComboBoxItem>Office2010Silver</ComboBoxItem>
-
-</ComboBox>
-
-<syncfusion:DockingManager Grid.Row="1" x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" >
-
-<ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"
+    <Grid.RowDefinitions>
+        <RowDefinition Height="20"></RowDefinition>
+        <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <ComboBox SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBoxItem>Metro</ComboBoxItem>
+        <ComboBoxItem>Blend</ComboBoxItem>
+        <ComboBoxItem>VisualStudio2013</ComboBoxItem>
+        <ComboBoxItem>Office2013White</ComboBoxItem>
+        <ComboBoxItem>Office2013DarkGray</ComboBoxItem>
+        <ComboBoxItem>Office2013LightGray</ComboBoxItem>
+        <ComboBoxItem>Office2010Black</ComboBoxItem>
+        <ComboBoxItem>Office2010Blue</ComboBoxItem>
+        <ComboBoxItem>Office2010Silver</ComboBoxItem>
+    </ComboBox>
+    <syncfusion:DockingManager Grid.Row="1" x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" >
+        <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"
                                           syncfusion:DockingManager.SideInDockedMode="Right"/>
-
-<ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox"
+        <ContentControl x:Name="ToolBox" syncfusion:DockingManager.Header="Toolbox"
                                  syncfusion:DockingManager.State="AutoHidden" />
-
-<ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties"
+        <ContentControl x:Name="Properties" syncfusion:DockingManager.Header="Properties"
                                     syncfusion:DockingManager.State="Float" />
-
-<ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"
+        <ContentControl x:Name="Output" syncfusion:DockingManager.Header="Output"
                 syncfusion:DockingManager.SideInDockedMode="Tabbed"
 				syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer"/>
-
-<ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page" syncfusion:DockingManager.State="Document"/>
-
-</syncfusion:DockingManager>
-
+        <ContentControl x:Name="StartPage" syncfusion:DockingManager.Header="Start Page" syncfusion:DockingManager.State="Document"/>
+    </syncfusion:DockingManager>
 </Grid>
 
 {% endhighlight %}
@@ -232,11 +197,9 @@ private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs 
 
 {% highlight VB %}
 
-Private Sub ComboBox_SelectionChanged(sender As Object, e As SelectionChangedEventArgs)
-
-SfSkinManager.SetVisualStyle(Me, DirectCast([Enum].Parse(GetType(VisualStyles), TryCast(TryCast(sender, ComboBox).SelectedItem, ComboBoxItem).Content.ToString()), VisualStyles))
-
-End Sub 
+Private Sub ComboBox_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+	SfSkinManager.SetVisualStyle(Me,CType(System.Enum.Parse(GetType(VisualStyles),(TryCast((TryCast(sender, ComboBox)).SelectedItem, ComboBoxItem)).Content.ToString()), VisualStyles))
+End Sub
 
 {% endhighlight %}
 
@@ -277,19 +240,13 @@ To apply the built-in themes to derived control using SfSkinManager, set the `S
 
 
 <local:DockingAdv x:Name="SyncDockingManager" UseDocumentContainer="True" PersistState="True" >
-
-<ContentControl x:Name="SolutionExplorer"
+    <ContentControl x:Name="SolutionExplorer"
                 local:DockingAdv.Header="Solution Explorer" local:DockingAdv.SideInDockedMode="Right"/>
-
-<ContentControl x:Name="ToolBox" local:DockingAdv.Header="Toolbox" local:DockingAdv.State="AutoHidden"/>
-
-<ContentControl x:Name="Properties" local:DockingAdv.Header="Properties" local:DockingAdv.State="Float"/>
-
-<ContentControl x:Name="Output" local:DockingAdv.Header="Output"
+    <ContentControl x:Name="ToolBox" local:DockingAdv.Header="Toolbox" local:DockingAdv.State="AutoHidden"/>
+    <ContentControl x:Name="Properties" local:DockingAdv.Header="Properties" local:DockingAdv.State="Float"/>
+    <ContentControl x:Name="Output" local:DockingAdv.Header="Output"
                 local:DockingAdv.SideInDockedMode="Tabbed" local:DockingAdv.TargetNameInDockedMode="SolutionExplorer"/>
-
-<ContentControl x:Name="StartPage" local:DockingAdv.Header="Start Page" local:DockingAdv.State="Document"/>
-
+    <ContentControl x:Name="StartPage" local:DockingAdv.Header="Start Page" local:DockingAdv.State="Document"/>
 </local:DockingAdv>
 
 {% endhighlight %}
@@ -346,11 +303,8 @@ private void Window_Closed(object sender, EventArgs e)
 
 
 Private Sub Window_Closed(sender As Object, e As EventArgs)
-	
     SfSkinManager.Dispose(Me)
-
 End Sub
-
 
 {% endhighlight %}
 
