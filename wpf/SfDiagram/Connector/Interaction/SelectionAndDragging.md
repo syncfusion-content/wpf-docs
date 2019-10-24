@@ -63,9 +63,9 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ## How to route the connectors
 
-Connector's geometry might be hidden or pass over the diagram element, if the element is placed in contact with the connector. This will makes less clarity about connector path flow. This can be avoided using Routing process.
+Connector's in diagram can be overlapped with any neighboring nodes in the diagram when the node is placed in contact with the connector. This will makes less clarity about the connector path flow. This can be avoided using Routing process.
 
-Routing is the process of updating connector's geometry to avoid obstacles in their path. This behaviour can be enabled in diagram by using `GraphConstraints.Routing`.
+The routing is the process of updating the connector's geometry to avoid the overlapping with any neighboring nodes in their path. This behavior can be enabled by adding `GraphConstraints.Routing` enum value to `Constraints` property of diagram.
 
 {% tabs %}
 {% highlight xaml %}
@@ -79,7 +79,7 @@ Routing is the process of updating connector's geometry to avoid obstacles in th
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
 //Enable the routing constraint
-diagram.Constraints = GraphConstraints.Default | GraphConstraints.Routing;
+diagram.Constraints.Add(GraphConstraints.Routing);
 
 {% endhighlight %}
 {% endtabs %}
@@ -90,22 +90,21 @@ N> Routing is applicable only for orthogonal connectors.
 
 ### How to enable or disable routing for Nodes
 
-By default, all nodes are treated as an obstacle for a connector i.e. connections will go around the node boundary. And using `NodeConstraints.RoutingObstacle` individual node's can be controlled whether to act as an obstacle or not.
+By default, all nodes are treated as an obstacle for a connector i.e. connections will go around the node boundary.  You can disable the node's routing obstacles by removing the `NodeConstraints.RoutingObstacle` from the `Constraints` property of Node.
 
 {% tabs %}
 {% highlight C# %}
 
 NodeViewModel node = new NodeViewModel()
-  {
-    UnitHeight = 50,
-    UnitWidth = 50, 
-    OffsetX = 200,
-    OffsetY = 300,
-    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-    //Disable the routing obstacle property
-    Constraints = NodeConstraints.Default & ~(NodeConstraints.RoutingObstacle),
-  };
-
+{
+  UnitHeight = 50,
+  UnitWidth = 50, 
+  OffsetX = 200,
+  OffsetY = 300,
+  Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+};
+//Disable the routing obstacle property
+node.Constraints.Remove(NodeConstraints.RoutingObstacle);
 {% endhighlight %}
 {% endtabs %}
 
@@ -113,7 +112,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### How to enable or disable routing for connectors
 
-By enabling `GraphConstraints.Routing` property,  routing will be applied for entire diagram objects. By default, each connector routing process is inherited from diagram. To enable or disable routing to individual connector with out depending on diagram routing, disable the inherited connector routing from diagram and then enable or disable the routing behaviour for a connector. This can be achieved by using `ConnectorConstraints.InheritRouting` and `ConnectorConstraints.Routing` properties of connector class.
+By default, each connector routing process is inherited based on the value of the `Constraints` property of the diagram. To control the individual connector's routing regardless of the diagram, you should remove the `ConnectorConstraints.InheritRouting` enum value from the `Constraints` property of the Connector and add or remove `ConnectorConstraints.Routing` enum value to the Constrains property to enable or disable the routing respectively.
 
 {% tabs %}
 {% highlight C# %}
@@ -163,5 +162,3 @@ diagram.LineRoutingSettings.RoutingType = RoutingTypes.Classic;
 
 {% endhighlight %}
 {% endtabs %}
-
-
