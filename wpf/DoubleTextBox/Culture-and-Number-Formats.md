@@ -86,7 +86,7 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 ![Setting DoubleTextBox number format by NumberFormatInfo](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img2.jpeg)
 
 
-The following code illustrate how to set number groupsize by using the `NumberFormat` property.
+The following code illustrate how to set number group size by using the `NumberFormat` property.
 
 {% tabs %}
 {% highlight C# %}
@@ -109,7 +109,7 @@ doubleTextBox.NumberFormat = new System.Globalization.NumberFormatInfo()
 
 ![Setting DoubleTextBox number group size by NumberFormatInfo](Culture-and-Number-Formats-images/NumberGroupSizes_format.png)
 
-The following code illustrate how to set number groupsize by using the `NumberGroupSizes` property of the `DoubleTextBox`.
+The following code illustrate how to set number group size by using the `NumberGroupSizes` property of the `DoubleTextBox`.
 
 {% tabs %}
 {% highlight C# %}
