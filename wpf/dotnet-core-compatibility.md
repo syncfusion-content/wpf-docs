@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WPF Applications using .NET Core and Syncfusion WPF Controls | Syncfusion
-description: Explains creating WPF Applications using .NET Core and Syncfusion WPF Controls.
+title: WPF Applications using .NET Core and WPF Controls | Syncfusion
+description: Learn here about how to creating the WPF Applications using .NET Core and the Syncfusion WPF Controls.
 platform: wpf
 control: .NET Core
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion Essential Studio for WPF ships .NET core assemblies for building WPF .NET Core applications using Syncfusion Controls. This section explains how to create the project in .NET Core application and using syncfusion WPF controls.
 
-N> All Syncfusion WPF controls supports .NET Core Framewrok except the controls labeled as `classic`. 
+N> All Syncfusion WPF controls supports .NET Core Framework except the controls labeled as `classic`. 
 
 ## Create a .NET Core project
 
@@ -90,16 +90,6 @@ a.	Following code explains how to declare the **ButtonAdv** control through XAML
 {% endtabs %}
 
 b.	Following code explains how to declare the **ButtonAdv** control through code.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Grid X:Name = "ROOT_Grid">
-
-</Grid>
-
-{% endhighlight %}
-{% endtabs %}
 
 {% tabs %}
 {% highlight c# %}

@@ -30,13 +30,16 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 </tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/datagrid/getting-started">DataGrid</a> (SfDataGrid)
+<a href="https://help.syncfusion.com/wpf/datagrid/getting-started">DataGrid</a>
+<sup>SfDataGrid</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/grid/getting-started">Excel-like Grid </a> (GridControl)
+<a href="https://help.syncfusion.com/wpf/grid/getting-started">Excel-like Grid </a>
+<sup>GridControl</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sftreegrid/getting-started">TreeGrid</a> (SfTreeGrid)
+<a href="https://help.syncfusion.com/wpf/sftreegrid/getting-started">TreeGrid</a>
+<sup>SfTreeGrid</sup>
 </td>
 </tr>
 <tr>
@@ -54,22 +57,27 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 </tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfchart/getting-started">Charts</a> (SfChart)
+<a href="https://help.syncfusion.com/wpf/sfchart/getting-started">Charts</a>
+<sup>SfChart</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfdiagram/getting-started">Diagram</a> (SfDiagram)
+<a href="https://help.syncfusion.com/wpf/sfdiagram/getting-started">Diagram</a>
+<sup>SfDiagram</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfbarcode/getting-started">Barcode</a> (SfBarcode)
+<a href="https://help.syncfusion.com/wpf/sfbarcode/getting-started">Barcode</a>
+<sup>SfBarcode</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfbulletgraph/getting-started">Bullet Graph</a> (SfBulletGraph)
+<a href="https://help.syncfusion.com/wpf/sfbulletgraph/getting-started">Bullet Graph</a>
+<sup>SfBulletGraph</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfdigitalgauge/getting-started">Digital Gauge</a> (SfDigitalGauge)
+<a href="https://help.syncfusion.com/wpf/sfdigitalgauge/getting-started">Digital Gauge</a>
+<sup>SfDigitalGauge</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/gantt/getting-started">Gantt</a>
@@ -78,46 +86,57 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfheatmap/getting-started">HeatMap</a> (SfHeatMap)
+<a href="https://help.syncfusion.com/wpf/sfheatmap/getting-started">HeatMap</a>
+<sup>SfHeatMap</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfkanban/getting-started">Kanban Board</a> (SfKanban)
+<a href="https://help.syncfusion.com/wpf/sfkanban/getting-started">Kanban Board</a>
+<sup>SfKanban</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sflineargauge/getting-started">Linear Gauge</a> (SfLinearGauge)
-</td>
-</tr>
-
-<tr>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfmaps/getting-started">Map</a> (SfMap)
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfcirculargauge/getting-started">Radial Gauge</a> (SfCircularGauge)
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/sfdatetimerangenavigator/getting-started">Range Selector</a> (SfDateTimeRangeNavigator)
+<a href="https://help.syncfusion.com/wpf/sflineargauge/getting-started">Linear Gauge</a>
+<sup>SfLinearGauge</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfsmithchart/getting-started">Smith Chart</a> (SfSmithChart)
+<a href="https://help.syncfusion.com/wpf/sfmaps/getting-started">Map</a>
+<sup>SfMap</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfsparkline/getting-started">Sparkline</a> (SfSparkline)
+<a href="https://help.syncfusion.com/wpf/sfcirculargauge/getting-started">Radial Gauge</a>
+<sup>SfCircularGauge</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfsunburstchart/getting-started">Sunburst Chart</a> (SfSunburstChart)
+<a href="https://help.syncfusion.com/wpf/sfdatetimerangenavigator/getting-started">Range Selector</a>
+<sup>SfDateTimeRangeNavigator</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfsurfacechart/getting-started">Surface Chart</a> (SfSurfaceChart)
+<a href="https://help.syncfusion.com/wpf/sfsmithchart/getting-started">Smith Chart</a>
+<sup>SfSmithChart</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sftreemap/getting-started">TreeMap</a> (SfTreeMap)
+<a href="https://help.syncfusion.com/wpf/sfsparkline/getting-started">Sparkline</a>
+<sup>SfSparkline</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/sfsunburstchart/getting-started">Sunburst Chart</a>
+<sup>SfSunburstChart</sup>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/sfsurfacechart/getting-started">Surface Chart</a>
+<sup>SfSurfaceChart</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/sftreemap/getting-started">TreeMap</a>
+<sup>SfTreeMap</sup>
 </td>
 <td/>
 </tr>
@@ -129,13 +148,15 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 </tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/dockingmanager/getting-started">Docking</a> (DockingManager)
+<a href="https://help.syncfusion.com/wpf/dockingmanager/getting-started">Docking</a>
+<sup>DockingManager</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/documentcontainer/getting-started">Tabbed MDI Form</a> (DocumentContainer)
+<a href="https://help.syncfusion.com/wpf/documentcontainer/getting-started">Tabbed MDI Form</a>
+<sup>DocumentContainer</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/cardview/getting-started">Card View</a> (CardView)
+<a href="https://help.syncfusion.com/wpf/cardview/getting-started">Card View</a>
 </td>
 </tr>
 
@@ -147,7 +168,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/chromlesswindow/getting-started">Chromeless Window</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfgridsplitter/getting-started">GridSplitter</a> (SfGridSplitter)
+<a href="https://help.syncfusion.com/wpf/sfgridsplitter/getting-started">GridSplitter</a>
+<sup>SfGridSplitter</sup>
 </td>
 </tr>
 
@@ -169,19 +191,22 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfimageeditor/getting-started">ImageEditor</a> (SfImageEditor)
+<a href="https://help.syncfusion.com/wpf/sfimageeditor/getting-started">ImageEditor</a>
+<sup>SfImageEditor</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/pdfviewer/getting-started">PDF Viewer</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfrichtextboxadv/getting-started">RichTextBox</a> (SfRichTextBoxAdv)
+<a href="https://help.syncfusion.com/wpf/sfrichtextboxadv/getting-started">RichTextBox</a>
+<sup>SfRichTextBoxAdv</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfspreadsheet/getting-started">Spreadsheet</a> (SfSpreadsheet)
+<a href="https://help.syncfusion.com/wpf/sfspreadsheet/getting-started">Spreadsheet</a>
+<sup>SfSpreadsheet</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/syntaxeditor/getting-started">Syntax Editor</a>
@@ -197,19 +222,22 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet">Excel</a> (XlsIO)
+<a href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet">Excel</a>
+<sup>XlsIO</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/file-formats/pdf/getting-started">PDF</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/file-formats/docio/getting-started">Word</a> (DocIO)
+<a href="https://help.syncfusion.com/file-formats/docio/getting-started">Word</a>
+<sup>DocIO</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a> (Presentation)
+<a href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a>
+<sup>Presentation</sup>
 </td>
 <td/>
 <td/>
@@ -228,19 +256,23 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/tabext/getting-started">TabControl</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/treeviewadv/getting-started">TreeView</a> (TreeViewAdv)
+<a href="https://help.syncfusion.com/wpf/treeviewadv/getting-started">TreeView</a>
+<sup>TreeViewAdv</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfaccordion/getting-started">Accordion</a> (SfAccordion)
+<a href="https://help.syncfusion.com/wpf/sfaccordion/getting-started">Accordion</a>
+<sup>SfAccordion</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/hierarchynavigator/getting-started">BreadCrumb</a> (HierarchyNavigator)
+<a href="https://help.syncfusion.com/wpf/hierarchynavigator/getting-started">BreadCrumb</a>
+<sup>HierarchyNavigator</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/groupbar/getting-started">Navigation Pane</a> (GroupBar)
+<a href="https://help.syncfusion.com/wpf/groupbar/getting-started">Navigation Pane</a>
+<sup>GroupBar</sup>
 </td>
 </tr>
 
@@ -249,10 +281,12 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/menuadv/getting-started">Menu</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfnavigationdrawer/getting-started">Navigation Drawer</a> (SfNavigationDrawer)
+<a href="https://help.syncfusion.com/wpf/sfnavigationdrawer/getting-started">Navigation Drawer</a>
+<sup>SfNavigationDrawer</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfradialmenu/getting-started">Radial Menu</a> (SfRadialMenu)
+<a href="https://help.syncfusion.com/wpf/sfradialmenu/getting-started">Radial Menu</a>
+<sup>SfRadialMenu</sup>
 </td>
 </tr>
 
@@ -264,13 +298,15 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/taskbar/getting-started">TaskBar</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/toolbaradv/getting-started">Toolbar</a> (ToolBarAdv)
+<a href="https://help.syncfusion.com/wpf/toolbaradv/getting-started">Toolbar</a>
+<sup>ToolBarAdv</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sftreenavigator/getting-started">Tree Navigator</a> (SfTreeNavigator)
+<a href="https://help.syncfusion.com/wpf/sftreenavigator/getting-started">Tree Navigator</a>
+<sup>SfTreeNavigator</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/wizard/getting-started">Wizard</a>
@@ -286,10 +322,12 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfcalculator/getting-started">Calculator</a> (SfCalculator)
+<a href="https://help.syncfusion.com/wpf/sfcalculator/getting-started">Calculator</a>
+<sup>SfCalculator</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfcolorpalette/getting-started">Color Palette</a> (SfColorPalette)
+<a href="https://help.syncfusion.com/wpf/sfcolorpalette/getting-started">Color Palette</a>
+<sup>SfColorPalette</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/colorpicker/getting-started">Color Picker</a>
@@ -304,7 +342,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/currencytextbox/getting-started">Currency TextBox</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfdomainupdown/getting-started">Domain Updown</a> (SfDomainUpDown)
+<a href="https://help.syncfusion.com/wpf/sfdomainupdown/getting-started">Domain Updown</a>
+<sup>SfDomainUpDown</sup>
 </td>
 </tr>
 
@@ -316,7 +355,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/integertextbox/getting-started">Integer TextBox</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/updown/getting-started">NumericUpdown</a> (UpDown)
+<a href="https://help.syncfusion.com/wpf/updown/getting-started">NumericUpdown</a>
+<sup>UpDown</sup>
 </td>
 </tr>
 
@@ -325,19 +365,23 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/percenttextbox/getting-started">Percent TextBox</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfradialslider/getting-started">Radial Slider</a> (SfRadialSlider)
+<a href="https://help.syncfusion.com/wpf/sfradialslider/getting-started">Radial Slider</a>
+<sup>SfRadialSlider</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfrangeslider/getting-started">Range Slider</a> (SfRangeSlider)
+<a href="https://help.syncfusion.com/wpf/sfrangeslider/getting-started">Range Slider</a>
+<sup>SfRangeSlider</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfrating/getting-started">Rating</a> (SfRating)
+<a href="https://help.syncfusion.com/wpf/sfrating/getting-started">Rating</a>
+<sup>SfRating</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfmaskededit/getting-started">MaskedTextBox</a> (SfMaskedEdit)
+<a href="https://help.syncfusion.com/wpf/sfmaskededit/getting-started">MaskedTextBox</a>
+<sup>SfMaskedEdit</sup>
 </td>
 <td/>
 </tr>
@@ -350,10 +394,12 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfbusyindicator/getting-started">Busy Indicator</a> (SfBusyIndicator)
+<a href="https://help.syncfusion.com/wpf/sfbusyindicator/getting-started">Busy Indicator</a>
+<sup>SfBusyIndicator</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfhubtile/getting-started">Hub Tile</a> (SfHubTile)
+<a href="https://help.syncfusion.com/wpf/sfhubtile/getting-started">Hub Tile</a>
+<sup>SfHubTile</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/notifyicon/getting-started">Notify Icon</a>
@@ -384,13 +430,15 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <a href="https://help.syncfusion.com/wpf/checklistbox/getting-started">CheckListBox</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/comboboxadv/getting-started">ComboBox</a> (ComboBoxAdv)
+<a href="https://help.syncfusion.com/wpf/comboboxadv/getting-started">ComboBox</a>
+<sup>ComboBoxAdv</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfmulticolumndropdown/getting-started">Multi Column Dropdown</a> (SfMultiColumnDropDown)
+<a href="https://help.syncfusion.com/wpf/sfmulticolumndropdown/getting-started">Multi Column Dropdown</a>
+<sup>SfMultiColumnDropDown</sup>
 </td>
 <td/>
 <td/>
@@ -404,10 +452,12 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/buttonadv/getting-started">Button</a> (ButtonAdv)
+<a href="https://help.syncfusion.com/wpf/buttonadv/getting-started">Button</a>
+<sup>ButtonAdv</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/dropdownbuttonadv/getting-started">Dropdown Button</a> (DropDownButtonAdv)
+<a href="https://help.syncfusion.com/wpf/dropdownbuttonadv/getting-started">Dropdown Button</a>
+<sup>DropDownButtonAdv</sup>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/splitbutton/getting-started">Split Button</a>
@@ -422,25 +472,31 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/calendaredit/getting-started">Calendar</a> (CalendarEdit)
+<a href="https://help.syncfusion.com/wpf/calendaredit/getting-started">Calendar</a>
+<sup>CalendarEdit</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfdatepicker/getting-started">DatePicker</a> (SfDatePicker)
+<a href="https://help.syncfusion.com/wpf/sfdatepicker/getting-started">DatePicker</a>
+<sup>SfDatePicker</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/datetimeedit/getting-started">DateTimePicker</a> (DateTimeEdit)
+<a href="https://help.syncfusion.com/wpf/datetimeedit/getting-started">DateTimePicker</a>
+<sup>DateTimeEdit</sup>
 </td>
 </tr>
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfschedule/getting-started">Scheduler</a> (SfSchedule)
+<a href="https://help.syncfusion.com/wpf/sfschedule/getting-started">Scheduler</a>
+<sup>SfSchedule</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sftimepicker/getting-started">TimePicker</a> (SfTimePicker)
+<a href="https://help.syncfusion.com/wpf/sftimepicker/getting-started">TimePicker</a>
+<sup>SfTimePicker</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/timespanedit/getting-started">TimeSpan Editor</a> (TimeSpanEdit)
+<a href="https://help.syncfusion.com/wpf/timespanedit/getting-started">TimeSpan Editor</a>
+<sup>TimeSpanEdit</sup>
 </td>
 </tr>
 
@@ -512,10 +568,12 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/windowsforms/calculate/getting-started">Calculation Engine</a> (Calculate)
+<a href="https://help.syncfusion.com/windowsforms/calculate/getting-started">Calculation Engine</a>
+<sup>Calculate</sup>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/sfspellchecker/getting-started">SpellChecker</a> (SfSpellChecker)
+<a href="https://help.syncfusion.com/wpf/sfspellchecker/getting-started">SpellChecker</a>
+<sup>SfSpellChecker</sup>
 </td>
 <td/>
 </tr>
@@ -566,6 +624,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 </tr>
 </table>
 
+N> Using `Classic` labeled controls in new projects is not recommended. In `Classic` labeled controls, new features and enhancements will not be included. You can only use it if the current control features meets the requirements of your application.
+
 ## Licensing
 
 Refer [licensing](https://help.syncfusion.com/common/essential-studio/licensing/) documentation to know more about licensing.
@@ -581,5 +641,3 @@ Similar to the [Knowledge Base](https://www.syncfusion.com/kb/wpf), the [Forum](
 If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
 Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/wpf).
-
-N> Using `Classic` labeled controls in new projects is not recommended. In `Classic` labeled controls, new features and enhancements will not be included. You can only use it if the current control features meets the requirements of your application.
