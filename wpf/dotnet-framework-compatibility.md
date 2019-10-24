@@ -24,7 +24,7 @@ Syncfusion Version<br/></th><th>
 .NET 4.0<br/></th><th>
 .NET 4.5<br/></th><th>
 .NET 4.5.1<br/></th><th>
-.NET 4.6<br/></th><th>
+.NET 4.6 & above<br/></th><th>
 .NET Core 3.0<br/></th></tr>
 <tr>
 <td>

@@ -18,23 +18,22 @@ DataContext property specifies the default source for Data Binding in MVVM patte
 
 {% highlight XAML %}
 
-     <Window.DataContext>
-        <local:ViewModel/>
-     </Window.DataContext> 
+<Window.DataContext>
+    <local:ViewModel/>
+</Window.DataContext> 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    public partial class MainWindow : Window
+public partial class MainWindow : Window
+{
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-
-            this.DataContext = new ViewModel();
-        }
+        InitializeComponent();
+        this.DataContext = new ViewModel();
     }
+}
 
 {% endhighlight %}
 
@@ -48,17 +47,11 @@ This section explains how to perform TabControlExt’s `selectionChanged` event,
 {% highlight XAML %}
 
 <Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}">
-
-<Syncfusion:TabControlExt.ItemTemplate>
-
-<DataTemplate>
-
-<TextBlock  Text="{Binding HeaderName}"></TextBlock>
-
-</DataTemplate>
-
-</Syncfusion:TabControlExt.ItemTemplate>
-
+	<Syncfusion:TabControlExt.ItemTemplate>
+		<DataTemplate>
+			<TextBlock  Text="{Binding HeaderName}"></TextBlock>
+		</DataTemplate>
+	</Syncfusion:TabControlExt.ItemTemplate>
 </Syncfusion:TabControlExt>
 
 {% endhighlight %}
@@ -71,80 +64,60 @@ This section explains how to perform TabControlExt’s `selectionChanged` event,
 
 public class ViewModel:NotificationObject
 {
-
-private ObservableCollection<model> _tabcollection;
-
-public ObservableCollection<model> tabcollection
-{
-    get
+	private ObservableCollection<model> _tabcollection;
+	public ObservableCollection<model> tabcollection
 	{
-	return _tabcollection;
+		get
+		{
+			return _tabcollection;
+		}
+		set
+		{
+			_tabcollection = value;
+		}
 	}
-
-    set
+	private void Collection()
 	{
-	_tabcollection = value;
+	model model = new model()
+	{
+			HeaderName = "item1"
+	};
+	model model1 = new model()
+	{
+			HeaderName = "item2"
+	};
+	model model2 = new model()
+	{
+			HeaderName = "item3"
+	};
+		tabcollection.Add(model);
+		tabcollection.Add(model1);
+		tabcollection.Add(model2);
 	}
-}
-
-private void Collection()
-
-{
-   model model = new model()
-   {
-	 HeaderName = "item1"
-   };
-
-   model model1 = new model()
-   {
-	 HeaderName = "item2"
-   };
-
-   model model2 = new model()
-   {
-	 HeaderName = "item3"
-   };
-	
-	tabcollection.Add(model);
-	tabcollection.Add(model1);
-	tabcollection.Add(model2);
-
-}
-
-public ViewModel()
-{
+	public ViewModel()
+	{
 		tabcollection=new ObservableCollection<model>();
 		Collection();
-}
-
+	}
 }
 
 public class model:NotificationObject
 {
-
-public model() {}
-
-private string _headername;
-
-public string HeaderName
-{
-
-	get
+	public model() {}
+	private string _headername;
+	public string HeaderName
 	{
-		return _headername;
+		get
+		{
+			return _headername;
+		}
+		set
+		{
+			_headername = value;
+			this.RaisePropertyChanged("HeaderName");
+		}
 	}
-
-	set
-	{
-		_headername = value;
-
-		this.RaisePropertyChanged("HeaderName");
-	}
-
 }
-
-}
-
 
 {% endhighlight %}
 
@@ -152,63 +125,44 @@ public string HeaderName
 
 Public Class ViewModel
 	Inherits NotificationObject
-
-Private _tabcollection As ObservableCollection(Of model)
-
-Public Property tabcollection() As ObservableCollection(Of model)
-	Get
-	Return _tabcollection
-	End Get
-
-	Set(ByVal value As ObservableCollection(Of model))
-	_tabcollection = value
-	End Set
-End Property
-
-Private Sub Collection()
-
-   Dim model As New model() With {.HeaderName = "item1"}
-
-   Dim model1 As New model() With {.HeaderName = "item2"}
-
-   Dim model2 As New model() With {.HeaderName = "item3"}
-
-	tabcollection.Add(model)
-	tabcollection.Add(model1)
-	tabcollection.Add(model2)
-
-End Sub
-
-Public Sub New()
+	Private _tabcollection As ObservableCollection(Of model)
+	Public Property tabcollection() As ObservableCollection(Of model)
+		Get
+			Return _tabcollection
+		End Get
+		Set(ByVal value As ObservableCollection(Of model))
+			_tabcollection = value
+		End Set
+	End Property
+	Private Sub Collection()
+	Dim model As New model() With {.HeaderName = "item1"}
+	Dim model1 As New model() With {.HeaderName = "item2"}
+	Dim model2 As New model() With {.HeaderName = "item3"}
+		tabcollection.Add(model)
+		tabcollection.Add(model1)
+		tabcollection.Add(model2)
+	End Sub
+	Public Sub New()
 		tabcollection = New ObservableCollection(Of model)()
 		Collection()
-End Sub
-
+	End Sub
 End Class
 
 Public Class model
 	Inherits NotificationObject
-
-Public Sub New()
-End Sub
-
-Private _headername As String
-
-Public Property HeaderName() As String
-
-	Get
-		Return _headername
-	End Get
-
-	Set(ByVal value As String)
-		_headername = value
-
-		Me.RaisePropertyChanged("HeaderName")
-	End Set
-
-End Property
-
-End Class 
+	Public Sub New()
+	End Sub
+	Private _headername As String
+	Public Property HeaderName() As String
+		Get
+			Return _headername
+		End Get
+		Set(ByVal value As String)
+			_headername = value
+			Me.RaisePropertyChanged("HeaderName")
+		End Set
+	End Property
+End Class
 
 {% endhighlight %}
 
@@ -223,17 +177,11 @@ The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.T
 
 <Syncfusion:TabControlExt ItemsSource="{Binding tabcollection}"
                           Syncfusion:TabControlExtSelectionChangedCommand.Command="{Binding SelectionChanged}">
-
-<Syncfusion:TabControlExt.ItemTemplate>
-
-<DataTemplate>
-
-<TextBlock  Text="{Binding HeaderName}"/>
-
-</DataTemplate>
-
-</Syncfusion:TabControlExt.ItemTemplate>
-
+	<Syncfusion:TabControlExt.ItemTemplate>
+		<DataTemplate>
+			<TextBlock  Text="{Binding HeaderName}"/>
+		</DataTemplate>
+	</Syncfusion:TabControlExt.ItemTemplate>
 </Syncfusion:TabControlExt>
 
 {% endhighlight %}
@@ -246,7 +194,6 @@ The `TabControlExtSelectionChangedCommand` command is available in `Syncfusion.T
 {% highlight C# %}
 
 private ICommand selectionchanged;
-
 public ICommand SelectionChanged
 {
     get
@@ -254,39 +201,31 @@ public ICommand SelectionChanged
 		return selectionchanged;
 	}
 }
-
 public ViewModel()
 {
 	selectionchanged = new DelegateCommand<object>(PropertyChangedHandled);
 }
-
 private void PropertyChangedHandled (object obj)
 {
 	MessageBox.Show("Command Executed");
 }
 
-
 {% endhighlight %}
 
 {% highlight VB %}
-Public Class ViewModel
 
-Private _selectionchanged As ICommand
-
+Private selectionchanged_Renamed As ICommand
 Public ReadOnly Property SelectionChanged() As ICommand
 	Get
-		Return _selectionchanged
+		Return selectionchanged_Renamed
 	End Get
 End Property
-
 Public Sub New()
-	_selectionchanged = New DelegateCommand(Of Object)(AddressOf PropertyChangedHandled)
+	selectionchanged_Renamed = New DelegateCommand(Of Object)(AddressOf PropertyChangedHandled)
 End Sub
-
 Private Sub PropertyChangedHandled(ByVal obj As Object)
 	MessageBox.Show("Command Executed")
-End Sub
-End Class 
+End Sub 
 
 {% endhighlight %}
 

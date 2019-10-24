@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Touch support for Syncfusion WPF controls
-description: Touch Support Overview
+description: Learn here about the touch supports for Syncfusion Essential Studio WPF controls and touch Gestures.
 platform: WPF
 control: General
 documentation: ug
