@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add References| Wpf | Syncfusion
-description: Leadrn here about how to add a syncfusion references via syncfusion reference manger for WPF application
+description: add a syncfusion references via syncfusion reference manger
 platform: wpf
 control: Syncfusion Extensions
 documentation: ug
@@ -15,58 +15,61 @@ N> This Reference Manager can be applied to a project for Syncfusion assembly ve
 
 Follow the given steps to add the Syncfusion references in Visual Studio:
 
-1) Open a new or existing **WPF** application.
+1. Open a new or existing **WPF** application.
 
-2) To open Syncfusion Reference Manager Wizard, follow either one of the options below:
+2. To open Syncfusion Reference Manager Wizard, follow either one of the options below:
 
-**Option 1:**  Click **Syncfusion Menu** and choose **Essential Studio for WPF > Add References…** or any other Form in **Visual Studio**.
+   **Option 1:**  
+   Click **Syncfusion Menu** and choose **Essential Studio for WPF > Add References…** or any other Form in **Visual Studio**.
 
-![Syncfusion Reference Manager via Syncfusion Menu](Syncfusion-Reference-Manger_images/Syncfusion_Menu_AddReference.png)
+   ![Syncfusion Reference Manager via Syncfusion Menu](Syncfusion-Reference-Manger_images/Syncfusion_Menu_AddReference.png)
 
-N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
-**Option 2:** Right-click the selected project file from Solution Explorer, then select **Syncfusion Reference Manager…** from **Context Menu**. The following screenshot shows this option in Visual Studio.   
+   **Option 2:**  
+   Right-click the selected project file from Solution Explorer, then select **Syncfusion Reference Manager…** from **Context Menu**. The following screenshot shows this option in Visual Studio.   
 
-![Syncfusion Reference Manager add-in](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img1.png)
+   ![Syncfusion Reference Manager add-in](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img1.png)
 
-3) The Syncfusion Reference Manager Wizard that contains the list of Syncfusion WPF controls that are loaded.
+3. The Syncfusion Reference Manager Wizard that contains the list of Syncfusion WPF controls that are loaded.
 
-![Syncfusion Reference Manger Wizard](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img2.png)
+   ![Syncfusion Reference Manger Wizard](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img2.png)
 
-**Platform Selection:** If launched the Syncfusion Reference Manager from Console/Class Library project, Platform selection option will be appeared as option in Syncfusion Reference Manager. Choose the required platform. 
+   **Platform Selection:** If launched the Syncfusion Reference Manager from Console/Class Library project, Platform selection option will be appeared as option in Syncfusion Reference Manager. Choose the required platform. 
 
-![Platform selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img3.png)
+   ![Platform selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img3.png)
 
-N> Platform selection option will be appeared only if Essential Studio for Enterprise Edition with the platforms WPF and Windows Forms has been installed or both Essential Studio for WPF and WinForms has been installed.
+   N> Platform selection option will be appeared only if Essential Studio for Enterprise Edition with the platforms WPF and Windows Forms has been installed or both Essential Studio for WPF and WinForms has been installed.
 
-**Assembly From:** Choose the assembly location from, where the assembly is added to the project.
+   **Assembly From:** Choose the assembly location from, where the assembly is added to the project.
 
-![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
+   ![Assembly location option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img4.png)
 
-N> The GAC option will not be available when you selected WPF (.NET Core) application in Visual Studio 2019.
+   N> The GAC option will not be available when you selected WPF (.NET Core) application in Visual Studio 2019.
 
-**Version:** Choose the build version to add the corresponding version assemblies to the project.
+   **Version:** Choose the build version to add the corresponding version assemblies to the project.
 
-**Themes Option:** Choose the required themes based on your need. Refer the below link to know more about built in themes and its available assemblies.
-[https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes/)
+   **Themes Option:** Choose the required themes based on your need. Refer the below link to know more about built in themes and its available assemblies.
+   [https://help.syncfusion.com/wpf/themes/](https://help.syncfusion.com/wpf/themes/)
 
-![Themes selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img5.png)
+   ![Themes selection option in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img5.png)
 
-N> Themes option will be enabled only if selected SfSkinManager supported controls.
+   N> Themes option will be enabled only if selected SfSkinManager supported controls.
 
-![Themes selection option notification in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img6.png)
+   ![Themes selection option notification in Syncfusion Reference Manger](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img6.png)
 
-4) Choose the required controls that you want to include in the project. Then, click **Done** to add the required assemblies for the selected controls into the project. The following screenshot shows the list of required assemblies for the selected controls to be added.
 
-![Syncfusion Reference Manager new assemblies add information dialog](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img7.png)
+4. Choose the required controls that you want to include in the project. Then, click **Done** to add the required assemblies for the selected controls into the project. The following screenshot shows the list of required assemblies for the selected controls to be added.
 
-5) Click **OK**. The listed Syncfusion assemblies are added to project. Then it notifies “Syncfusion assemblies have been added successfully” in Visual Studio status bar.
+   ![Syncfusion Reference Manager new assemblies add information dialog](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img7.png)
 
-![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img8.png)
+5. Click **OK**. The listed Syncfusion assemblies are added to project. Then it notifies “Syncfusion assemblies have been added successfully” in Visual Studio status bar.
 
-6) Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+   ![Syncfusion Reference Manager success status in Visual Studio status bar](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img8.png)
 
-![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img9.png)
+6. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+
+   ![Syncfusion license registration required information dialog in Syncfusion Reference Manager](Syncfusion-Reference-Manger_images/Syncfusion-Reference-Manger-img9.png)
 
 N>  Syncfusion provides Reference Manager support for specific .NET Framework, which is shipped (assemblies) in Syncfusion Essential Studio setup. So, if you try to add Syncfusion assemblies in the project and project framework is not supported with selected Syncfusion version assemblies, the dialog appears along with **“Current build v{version} is not supported this framework v{Framework Version}”** message.
 
