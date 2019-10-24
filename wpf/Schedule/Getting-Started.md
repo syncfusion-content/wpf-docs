@@ -37,23 +37,14 @@ To add the control manually in XAML page, follow the given steps:
 {% tabs %}
 {% highlight xaml %}
 <Window x:Class="SfScheduleSample.MainWindow"   
-	        
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    xmlns:schedule="http://schemas.syncfusion.com/wpf"
-
-    WindowStartupLocation="CenterScreen" WindowStyle="None"
-
-    Width="950" Height="600">
-
-    <Grid x:Name="LayoutRoot">
-
-        <schedule:SfSchedule/>
-
-    </Grid>
-
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:schedule="http://schemas.syncfusion.com/wpf"
+        WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Width="950" Height="600">
+        <Grid x:Name="LayoutRoot">
+            <schedule:SfSchedule/>
+        </Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}
