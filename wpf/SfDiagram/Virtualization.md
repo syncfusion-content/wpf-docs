@@ -51,15 +51,15 @@ diagram.Constraints |= GraphConstraints.Virtualize | GraphConstraints.Outline;
 {% endhighlight %}
 {% endtabs %}
 
-N> In SfDiagram, we named Deferred Scrolling support as `Outline`. Outline is only applicable when virtualization is enabled.
+N> In SfDiagram, Deferred Scrolling support is named as `Outline`. Outline is only applicable when virtualization is enabled.
 
 ![DeferredScrolling](Virtualization_images/VirtualizeOutline.gif)
 
 ## Outline customization
 
-Options are provided to override the appearance, style and interval time of outline by using the [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) class of diagram.
+Options are provided to override the appearance, style, and interval time of outline by using the [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) class of diagram.
 
-* `OutlineStyle`: Specifies the style for the outline of the diagram elements
+* `OutlineStyle`: Specifies the style for the outline of the diagram elements.
 * `RenderInterval`: Specifies the time interval to render the diagram elements into view. Default time interval is 200ms.
 
 {% tabs %}
