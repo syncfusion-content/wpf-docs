@@ -15,7 +15,7 @@ This section explains how to validate or restrict the `DoubleTextBox` control va
 
 The [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) of the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) can be restricted within the maximum and minimum limits. Once the value has reached the maximum or minimum value , the value does not exceed the limit. We can change the maximum and minimum limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) property.
 
-You can choose when to validate the maximum and minimum limits while changing the values by using the [MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) and [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) properties.
+You can choose when to validate the maximum and minimum limits while changing the values by using the [MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MinValidation.html) and [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MaxValidation.html) properties.
 
 * `OnKeyPress` — When setting the `MaxValidation` or `MinValidation` to `OnKeyPress`, the value in the `DoubleTextBox` will be validated shortly after pressing a key. So, it is not possible to provide any invalid input at all and the value does not exceed the maximum and minimum limits.
 
@@ -64,8 +64,6 @@ doubleTextBox.MaxValueOnExceedMaxDigit = true;
 ![MaxValidation of DoubleTextBox On LostFocus](Restriction-or-Validation_images/Restriction-or-Validation_MaxValidation.jpeg)
 
 
-
-
 ## Restrict number of decimal digit
 
 The `DoubleTextbox` allows the user to customize the number of digits to be displayed after the decimal point of `DoubleTextBox` value
@@ -75,8 +73,8 @@ The decimal digit can be restricted within the maximum and minimum limits. Once 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150" 
-                          NumberDecimalDigits = 4 MinimumNumberDecimalDigits = 2
-                          MaximumNumberDecimalDigits = 5/>
+                          NumberDecimalDigits = "3" MinimumNumberDecimalDigits = "2"
+                          MaximumNumberDecimalDigits = "5"/>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -85,7 +83,7 @@ doubleTextBox.Width = 150;
 doubleTextBox.Height = 25;
 doubleTextBox.MinValue = 0;
 doubleTextBox.MaxValue = 100;
-doubleTextBox.NumberDecimalDigits = 4;
+doubleTextBox.NumberDecimalDigits = 3;
 doubleTextBox.MinimumNumberDecimalDigits = 2;
 doubleTextBox.MaximumNumberDecimalDigits = 5;
 {% endhighlight %}
@@ -152,7 +150,7 @@ doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage;
 
 ### Reset Value  
 
-If the value entered by the user is not equal to `ValidationValue`, the `DoubleTextBox` value will be reset with default value by setting the `InvalidValueBehavior` property as `ResetValue`.
+If the value entered by the user is not equal to `ValidationValue`, the `DoubleTextBox` current value will be reset with default value by setting the `InvalidValueBehavior` property as `ResetValue`.
 
 {% tabs %}
 {% highlight XAML %}

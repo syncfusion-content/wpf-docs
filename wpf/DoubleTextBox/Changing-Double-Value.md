@@ -84,9 +84,9 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 
  By default, the `DoubleTextBox` control will display zero value when the `Value` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~NullValue.html) and [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) properties to show the null or any other value instead of zero.
  
- The default value of the `NullValue` property is `null`, you can reset this to any other double value. It will display only on setting the `UseNullOption` property is set to true.
+ The default value of the `NullValue` property is `null`, you can reset this to any other double value. It will display only on setting the `UseNullOption` property is set to `true`.
  
-**Null Value = Null**
+**NullValue = Null**
 
 {% tabs %}
 {% highlight XAML %}
@@ -108,7 +108,7 @@ doubleTextBox.UseNullOption = true;
 
 ![Setting null as NullValue in DoubleTextBox](Changing-Double-Value_images/NullValue_null.png)
 
-**Null Value = 10**
+**NullValue = 10**
 
 {% tabs %}
 {% highlight XAML %}
@@ -133,7 +133,7 @@ doubleTextBox.UseNullOption = true;
 
 ## Setting Watermark Text
 
-We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is true and the value is `null` or empty, the control is not in focus, and the `UseNullOption` is true.
+We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is `true` and the value is `null` or empty, the control is not in focus and the `UseNullOption` property is `true`.
 
 ### Setting the WatermarkText Foreground
 
