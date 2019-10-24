@@ -55,7 +55,7 @@ N> In SfDiagram, we named Deferred Scrolling support as `Outline`. Outline is on
 
 ![DeferredScrolling](Virtualization_images/VirtualizeOutline.gif)
 
-### Outline customization
+## Outline customization
 
 Options are provided to override the appearance, style and interval time of outline by using the [OutlineSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.OutlineSettings_members.html) class of diagram.
 
@@ -68,7 +68,7 @@ Options are provided to override the appearance, style and interval time of outl
 <!--Custom style for outline of overview-->
 <Style TargetType="Path" x:Key="outlineStyle">
     <Setter Property="Stroke" Value="Red"/>
-    <Setter Property="StrokeThickness" Value="1"/>
+    <Setter Property="StrokeThickness" Value="2"/>
 </Style>
 
 <!--Initialize outline setting with outline style and outline interval-->
