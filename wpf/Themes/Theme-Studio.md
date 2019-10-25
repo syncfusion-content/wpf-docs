@@ -175,6 +175,8 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 {% endhighlight %}
 
+{% endtabs %}
+
 * Merge the `SfRadialMenu.xaml` in the application resources using `MergedDictionaries`.
 
 {% tabs %}
@@ -190,6 +192,8 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 </Application.Resources>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * Run the sample and the below output will be obtained:
 

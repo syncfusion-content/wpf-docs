@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Steps to add Syncfusion Essential WPF controls
-description: Learn here about how to add the Syncfusion Essential WPF controls to the Visual Studio applications.
+description: Learn about the different ways to add Syncfusion Essential WPF controls to the Visual Studio project.
 platform: wpf
-control: Add Syncfusion Controls
+control: common
 documentation: ug
 ---
 # Add Syncfusion Controls
