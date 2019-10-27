@@ -28,14 +28,13 @@ doubleTextBox.Value = 10;
 {% endhighlight %}
 {%endtabs%}
 
-![DoubleTextBox setting value](Changing-Double-Value_images/SettingValue.jpeg)
-
+![DoubleTextBox displaying a value](Changing-Double-Value_images/SettingValue.jpeg)
 
 Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a value to the `Value` property by binding, you can change the `DoubleTextBox` value.
 
 The following code snippets illustrate the value binding from one `DoubleTextBox` to another.
 
-%tabs%}
+{%tabs%}
 {% highlight xaml %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox1" Value="{Binding myValue}" Height="25" Width="100"/>
@@ -44,7 +43,7 @@ The following code snippets illustrate the value binding from one `DoubleTextBox
 {% endhighlight %}
 {%endtabs%}
 
-![DoubleTextBox value binding](Changing-Double-Value_images/ValueBinding.png)
+![Binding a value to DoubleTextBox](Changing-Double-Value_images/ValueBinding.png)
 
 ## Value Changed Event
 
@@ -160,13 +159,11 @@ doubleTextBox.WatermarkTextForeground = Brushes.Red;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox WatermarkText foreground](Changing-Double-Value_images/WaterMark-Foreground.jpeg)
+![DoubleTextBox displaying a watermark text in red color](Changing-Double-Value_images/WaterMark-Foreground.jpeg)
 
 ### Setting Watermark Template
 
 You can customize the Visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTemplate.html) property.
-
-
 
 {% highlight xaml %}
 
@@ -183,10 +180,10 @@ You can customize the Visual appearance of the `WatermarkText` by using the [Wat
     </syncfusion:DoubleTextBox.WatermarkTemplate>
 </syncfusion:DoubleTextBox>
 
-
 {% endhighlight %}
 
-![DoubleTextBox WatermarkText appearance by WatermarkTemplate](Changing-Double-Value_images/WaterMark-Template.png)
+![DoubleTextBox displaying watermark text using a data-template](Changing-Double-Value_images/WaterMark-Template.png)
 
+N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `DoubleTextBox` control. 
 
-N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `DoubleTextBox` control. If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
+N> If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
