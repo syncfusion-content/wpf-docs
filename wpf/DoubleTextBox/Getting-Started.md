@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WPF DoubleTextBox
 
-This section explains how to create a WPF `DoubleTextBox` control and explains about its features.
+This section explains how to create a WPF `DoubleTextBox` control and its features.
 
 ## Assembly deployment
 
@@ -93,7 +93,7 @@ this.Content = doubleTextBox;
 
 ![DoubleTextBox control added to Window by code](Getting-Started_images/wpf-double-text-box-control-added-manually.png)
 
-## Setting Value for DoubleTextBox
+## Setting Value
 
 The value of the `DoubleTextBox` can be set by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property.
 
@@ -195,7 +195,7 @@ doubleTextBox.Value = 100;
 ![Restrict the value of DoubleTextBox by the minimum and maximum values](Getting-Started_images/Getting-Started-img3.jpeg)
 
 
-## Step Interval
+## Step Interval to increse or decrease the value
 
 The `DoubleTextBox` control allows to increase or decrease the value by pressing up and down arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
 
@@ -223,7 +223,7 @@ doubleTextBox.ScrollInterval = 4;
 ![DoubleTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
 
 
-## Formatting
+## Formatting the value
 
 You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties of `DoubleTextBox`.
 
