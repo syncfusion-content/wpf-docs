@@ -64,7 +64,7 @@ doubleTextBox.ScrollInterval = 3;
 
 ## Change Value on Click and Drag
 
-The `DoubleTextBox` allows you to increase or decrease the value based on the `ScrollInterval` by click and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. `DoubleTextBox` value increases when the cursor moves to the right or the top of the screen and decreases when the mouse moves to the left or the bottom of the screen. Before that, the control should be in an unfocused state.
+The `DoubleTextBox` allows you to increase or decrease the value based on the `ScrollInterval` by click and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. `DoubleTextBox` value increases when you click an drag the mouse to the right or the top of the screen and decreases when the mouse moves to the left or the bottom of the screen. Before that, the control should be in an unfocused state.
 
 {% tabs %}
 {% highlight XAML %}
@@ -87,7 +87,6 @@ doubleTextBox.EnableExtendedScrolling = true;
 
 ![Changing the DoubleTextBox value by Click and Drag](Step-Interval_images/Step-Interval_DragandDrop.jpeg)
 
-
 ## Select All on focus
 
 `DoubleTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property to true and when the control got focus.
@@ -108,8 +107,8 @@ doubleTextBox.TextSelectionOnFocus = true;
 
 **TextSelectionOnFocus = "False"**
 
-![DoubleTextBox TextSelection On Focus disabled](Step-Interval_images/Step-Interval_TextSelectionFalse.png)
+![DoubleTextBox showing TextSelection On Focus disabled](Step-Interval_images/Step-Interval_TextSelectionFalse.png)
 
 **TextSelectionOnFocus = "True"**
 
-![DoubleTextBox TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)
+![DoubleTextBox showing TextSelection On Focus enabled](Step-Interval_images/Step-Interval_TextSelectionTrue.png)
