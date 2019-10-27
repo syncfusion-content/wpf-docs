@@ -9,9 +9,13 @@ documentation: ug
 
 # Culture and Formatting in WPF DoubleTextBox
 
-This section explains how to format the value in the `DoubleTextBox` control based on culture and number format.
+Value of `DoubleTextBox` can be formatted in following ways:
 
-## Setting Culture
+* Culture
+* NumberFormatInfo
+* Dedicated properties (NumberGroupSeparator, NumberGroupSizes, NumberDecimalDigits, NumberDecimalSeparator)
+
+## Culture based formatting
 
 The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. The `Culture` property is used to format the decimal separator and group separator of the `DoubleTextBox` value based on the respective culture.
 
@@ -44,11 +48,9 @@ By default the US culture uses “,” as the `NumberGroupSeparator` and "." as 
 
 ![DoubleTextBox with Latin-Culture](Culture-and-Number-Formats-images/Latin.png)
 
+## NumberFormatInfo based formatting
 
-## Formatting
-
-The number formatting of `DoubleTextBox` can be customized by setting [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or by specifying the [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties. You can show the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~GroupSeperatorEnabled.html) property to `true`.
-
+The number formatting of `DoubleTextBox` can be customized by setting [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -56,12 +58,11 @@ The number formatting of `DoubleTextBox` can be customized by setting [NumberFor
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
                           Width="200" Value="1234567"
                           GroupSeperatorEnabled = "True">
-
-<syncfusion:DoubleTextBox.NumberFormat >
-<numberformat:NumberFormatInfo NumberGroupSeparator="/"
-              NumberDecimalDigits="4" NumberDecimalSeparator="*"/>
+    <syncfusion:DoubleTextBox.NumberFormat>
+        <numberformat:NumberFormatInfo NumberGroupSeparator="/"
+                                    NumberDecimalDigits="4" 
+                                    NumberDecimalSeparator="*"/>
 </syncfusion:DoubleTextBox.NumberFormat>
-
 </syncfusion:DoubleTextBox>
 
 {% endhighlight %}
@@ -84,7 +85,6 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 {% endtabs %}
 
 ![Setting DoubleTextBox number format by NumberFormatInfo](Culture-and-Number-Formats-images/Culture-and-Number-Formats-img2.jpeg)
-
 
 The following code illustrate how to set number group size by using the `NumberFormat` property.
 
@@ -109,7 +109,11 @@ doubleTextBox.NumberFormat = new System.Globalization.NumberFormatInfo()
 
 ![Setting DoubleTextBox number group size by NumberFormat](Culture-and-Number-Formats-images/NumberGroupSizes_format.png)
 
-The following code illustrate how to set number group size by using the `NumberGroupSizes` property of the `DoubleTextBox`.
+## Formatting with dedicated properties
+
+The number formatting of `DoubleTextBox` can also be customized by setting [NumberGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSeparator.html), [NumberGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberGroupSizes.html), [NumberDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalDigits.html), and [NumberDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~NumberDecimalSeparator.html) properties. You can show the group separator by enable the [GroupSeparatorEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~GroupSeperatorEnabled.html) property to `true`.
+
+The following code illustrate how to format using the `NumberDecimalSeparator`, `NumberDecimalDigits`, `NumberGroupSeparator`, `NumberGroupSizes` property of the `DoubleTextBox`.
 
 {% tabs %}
 {% highlight C# %}
@@ -130,6 +134,6 @@ doubleTextBox.NumberGroupSizes = new Int32Collection() { 4, 3, 2};
 
 ![Setting DoubleTextBox number group size by NumberGroupSize collection](Culture-and-Number-Formats-images/NumberGroupSizes2.png)
 
-N>When you use both the `NumberFormat` and the `NumberGroupSeparator`, `NumberGroupSizes`, `NumberDecimalDigits`, and `NumberDecimalSeparator` properties to customize the `DoubleTextbox` value format, the `NumberGroupSeparator`, `NumberGroupSizes`, `NumberDecimalDigits`, and `NumberDecimalSeparator` has higher priority.
+N> When you use both the `NumberFormat` and the dedicated properties (`NumberGroupSeparator`, `NumberGroupSizes`, `NumberDecimalDigits`, and `NumberDecimalSeparator`) to format vale of `DoubleTextbox`, the `NumberGroupSeparator`, `NumberGroupSizes`, `NumberDecimalDigits`, and `NumberDecimalSeparator` have higher priority.
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
