@@ -35,8 +35,7 @@ doubleTextBox.PositiveForeground = Brushes.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox Positive value Color](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
-
+![DoubleTextBox displaying value in positive foreground](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
 
 ### Negative Foreground 
 
@@ -60,8 +59,7 @@ doubleTextBox.NegativeForeground = Brushes.SpringGreen;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox Negative value color](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
-
+![DoubleTextBox displaying negative value in negative foreground](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
 
 ### Zero Foreground 
 
@@ -71,13 +69,14 @@ The default color of `ZeroColor` is `Green`.
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="10" Width="100" Height="25"
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Value="0" Width="100" Height="25"
                           ApplyZeroColor="True" ZeroColor="DarkGoldenrod"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.Value = 0;
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
 doubleTextBox.ApplyZeroColor = true;
@@ -86,7 +85,7 @@ doubleTextBox.ZeroColor = Brushes.DarkGoldenrod;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox Zero value Color](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
+![DoubleTextBox displaying zero value with zero foreground](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 ## Setting the Background
 
@@ -109,7 +108,7 @@ doubleTextBox.Background = Brushes.Cyan;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox Background](Appearance-and-Styling-images/Appearance-and-Styling-Background.png)
+![DoubleTextBox with cyan background](Appearance-and-Styling-images/Appearance-and-Styling-Background.png)
 
 ## Setting the Corner Radius
 
@@ -133,8 +132,7 @@ doubleTextBox.CornerRadius = new CornerRadius(5);
 {% endhighlight %}
 {% endtabs %}
 
-![Corner radius of DoubleTextBox](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
-
+![DoubleTextBox with corner radius](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
 
 ## Theme
 
