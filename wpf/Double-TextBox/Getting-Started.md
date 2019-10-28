@@ -195,7 +195,7 @@ doubleTextBox.Value = 100;
 ![Restrict the value of DoubleTextBox by the minimum and maximum values](Getting-Started_images/Getting-Started-img3.jpeg)
 
 
-## Step Interval to increse or decrease the value
+## Step Interval to increase or decrease the value
 
 The `DoubleTextBox` control allows to increase or decrease the value by pressing up and down arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
 
