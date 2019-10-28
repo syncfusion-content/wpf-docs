@@ -9,7 +9,7 @@ documentation: ug
 
 # Range Adorner in WPF DoubleTextBox 
 
-An Adorner can be used to draw on top of the control. You can show the adorner over [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property to `true`. The default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value.
+Value of DoubleTextBox can be visually indicated like a progress bar using range-aroner feature, this feature is disabled by default. You can show the adorner over [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property to `true`. default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value.
 
 {% tabs %}
 {% highlight XAML %}
@@ -27,9 +27,9 @@ doubleTextBox.EnableRangeAdorner =true;
 {% endhighlight %}
 {% endtabs %}
 
-![DoubleTextBox default background of Range Adorner ](Range-Adorner_images/Range-Adorner_img1.png)
+![DoubleTextBox default background of Range Adorner](Range-Adorner_images/Range-Adorner_img1.png)
 
-## Changing Range Adorner Background
+## Changing background of range-adorner
 
 You can change the background color of the range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~RangeAdornerBackground.html) property.
 
@@ -44,7 +44,7 @@ You can change the background color of the range adorner using [RangeAdornerBack
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.MinValue = 0;
 doubleTextBox.MaxValue = 100;
-doubleTextBox.EnableRangeAdorner =true;
+doubleTextBox.EnableRangeAdorner = true;
 doubleTextBox.RangeAdornerBackground = Brushes.LightGreen;
 
 {% endhighlight %}
