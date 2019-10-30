@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Suggestion box AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: This section provides details about suggestion box of AutoComplete in SfTextBoxExt
+description: This section provides details of the suggestion box and its placement in AutoComplete in SfTextBoxExt.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -13,10 +13,19 @@ Suggestion box is a drop-down list box that displays the filtered suggestions in
 
 ## Suggestion box placement mode
 
-The suggestion box can be placed either at the top or bottom using the `SuggestionBoxPlacement` property. By default, it is placed at the bottom.
+The SuggestionBoxPlacement property defines the position of popup relative to the control. It contains three built-in options:
+
+1. Top
+2. Bottom
+3. None
+
+The default value is bottom.
+
+### Top
+
+The drop-down list will open at the top of the control.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <Window x:Class="AutoCompleteSample.MainWindow"
@@ -28,26 +37,29 @@ The suggestion box can be placed either at the top or bottom using the `Suggesti
         mc:Ignorable="d"
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
     <Window.Content>
-        <Grid>
-            <editors:SfTextBoxExt x:Name="textBoxExt"
-                                  HorizontalAlignment="Center"
+        <editors:SfTextBoxExt HorizontalAlignment="Center"
                                   VerticalAlignment="Center"
-                                  AutoCompleteMode="Suggest"
+                                  Width="300"
+                                  Height="40"
+                                  SearchItemPath="Name"
                                   SuggestionBoxPlacement="Top"
-                                  Width="300"/>
-        </Grid>
+                                  AutoCompleteMode="Suggest"
+                                  SuggestionMode="StartsWith"
+                                  AutoCompleteSource="{Binding Employees}"/>
     </Window.Content>
 </Window>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 using Syncfusion.Windows.Controls.Input;
 using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Media;
+using System.Windows.Data;
 
 namespace AutoCompleteSample
 {
@@ -59,35 +71,271 @@ namespace AutoCompleteSample
         public MainWindow()
         {
             InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.DataContext = viewModel;
             SfTextBoxExt textBoxExt = new SfTextBoxExt()
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
-                Width = 200,
+                Width = 300,
+                Height = 40,
+                SearchItemPath = "Name",
+                SuggestionBoxPlacement = SuggestionBoxPlacement.Top,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
-                SuggestionBoxPlacement = SuggestionBoxPlacement.Top
+                SuggestionMode = SuggestionMode.StartsWith,
             };
 
-            List<string> list = new List<string>()
-            {
-                 "India",
-                 "Uganda",
-                 "Ukraine",
-                 "Canada",
-                 "United Arab Emirates"
-            };
-
-            textBoxExt.AutoCompleteSource = list;
+            Binding autoCompleteSourceBinding = new Binding();
+            autoCompleteSourceBinding.Source = viewModel;
+            autoCompleteSourceBinding.Path = new PropertyPath("Employees");
+            BindingOperations.SetBinding(textBoxExt, SfTextBoxExt.AutoCompleteSourceProperty, autoCompleteSourceBinding);
             this.Content = textBoxExt;
+        }
+    }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
         }
     }
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
-![suggestion box placement](Auto-Complete_images/drop_down_position.png)
+![Top](Auto-Complete_images/Auto-Complete_img22.png)
+
+Drop down list opening at the top
+{:.caption}
+
+
+### Bottom
+
+The drop-down list will open at the bottom of the control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <Window.Content>
+        <editors:SfTextBoxExt HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Width="300"
+                                  Height="40"
+                                  SearchItemPath="Name"
+                                  SuggestionBoxPlacement="Bottom"
+                                  AutoCompleteMode="Suggest"
+                                  SuggestionMode="StartsWith"
+                                  AutoCompleteSource="{Binding Employees}"/>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Data;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.DataContext = viewModel;
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Width = 300,
+                Height = 40,
+                SearchItemPath = "Name",
+                SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom,
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWith,
+            };
+
+            Binding autoCompleteSourceBinding = new Binding();
+            autoCompleteSourceBinding.Source = viewModel;
+            autoCompleteSourceBinding.Path = new PropertyPath("Employees");
+            BindingOperations.SetBinding(textBoxExt, SfTextBoxExt.AutoCompleteSourceProperty, autoCompleteSourceBinding);
+            this.Content = textBoxExt;
+        }
+    }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Bottom](Auto-Complete_images/Auto-Complete_img23.png)
+
+Drop down list opening at the bottom
+{:.caption}
+
+### None
+
+The drop-down list will not open.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <Window.Content>
+        <editors:SfTextBoxExt HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  Width="300"
+                                  Height="40"
+                                  SearchItemPath="Name"
+                                  SuggestionBoxPlacement="None"
+                                  AutoCompleteMode="Suggest"
+                                  SuggestionMode="StartsWith"
+                                  AutoCompleteSource="{Binding Employees}"/>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Data;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.DataContext = viewModel;
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                Width = 300,
+                Height = 40,
+                SearchItemPath = "Name",
+                SuggestionBoxPlacement = SuggestionBoxPlacement.None,
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWith,
+            };
+
+            Binding autoCompleteSourceBinding = new Binding();
+            autoCompleteSourceBinding.Source = viewModel;
+            autoCompleteSourceBinding.Path = new PropertyPath("Employees");
+            BindingOperations.SetBinding(textBoxExt, SfTextBoxExt.AutoCompleteSourceProperty, autoCompleteSourceBinding);
+            this.Content = textBoxExt;
+        }
+    }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![None](Auto-Complete_images/Auto-Complete_img24.png)
+
+No drop down list
+{:.caption}
 
 ## Maximum suggestion box height
 
@@ -112,8 +360,20 @@ The maximum height of the suggestion box in the Autocomplete control can be chan
                                   HorizontalAlignment="Center" 
                                   VerticalAlignment="Center" 
                                   AutoCompleteMode="Suggest"
+                                  SuggestionMode="StartsWith"
                                   MaxDropDownHeight="500"
-                                  Width="300"/>
+                                  Width="300">
+                <editors:SfTextBoxExt.AutoCompleteSource>
+                    <x:Array Type="sys:String" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <sys:String>India</sys:String>
+                        <sys:String>Uganda</sys:String>
+                        <sys:String>Ukraine</sys:String>
+                        <sys:String>Canada</sys:String>
+                        <sys:String>United Arab Emirates</sys:String>
+                    </x:Array>
+                </editors:SfTextBoxExt.AutoCompleteSource>
+            </editors:SfTextBoxExt>
         </Grid>
     </Window.Content>
 </Window>
@@ -125,7 +385,7 @@ The maximum height of the suggestion box in the Autocomplete control can be chan
 using Syncfusion.Windows.Controls.Input;
 using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Media;
+using System.Windows.Data;
 
 namespace AutoCompleteSample
 {
@@ -141,8 +401,9 @@ namespace AutoCompleteSample
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
-                Width = 200,
+                Width = 300,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWith,
                 MaxDropDownHeight = 500
             };
 
@@ -186,12 +447,25 @@ Suggestion box can be shown whenever the control receives focus using the `ShowS
         Title="MainWindow" Height="450" Width="800">
     <Window.Content>
         <Grid>
-            <editors:SfTextBoxExt x:Name="textBoxExt" 
+            <editors:SfTextBoxExt x:Name="textBoxExt"
                                   HorizontalAlignment="Center" 
                                   VerticalAlignment="Center" 
                                   AutoCompleteMode="Suggest"
+                                  SuggestionMode="StartsWith"
                                   ShowSuggestionsOnFocus="True"
-                                  Width="300"/>
+                                  MaxDropDownHeight="500"
+                                  Width="300">
+                <editors:SfTextBoxExt.AutoCompleteSource>
+                    <x:Array Type="sys:String" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                        <sys:String>India</sys:String>
+                        <sys:String>Uganda</sys:String>
+                        <sys:String>Ukraine</sys:String>
+                        <sys:String>Canada</sys:String>
+                        <sys:String>United Arab Emirates</sys:String>
+                    </x:Array>
+                </editors:SfTextBoxExt.AutoCompleteSource>
+            </editors:SfTextBoxExt>
         </Grid>
     </Window.Content>
 </Window>
@@ -203,7 +477,7 @@ Suggestion box can be shown whenever the control receives focus using the `ShowS
 using Syncfusion.Windows.Controls.Input;
 using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Media;
+using System.Windows.Data;
 
 namespace AutoCompleteSample
 {
@@ -219,8 +493,10 @@ namespace AutoCompleteSample
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
-                Width = 200,
+                Width = 300,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWith,
+                MaxDropDownHeight = 500,
                 ShowSuggestionsOnFocus = true
             };
 
