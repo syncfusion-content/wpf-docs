@@ -135,73 +135,73 @@ To [export](#exporting-custom-theme-from-theme-studio) the customized skin, clic
 
 * Add the necessary dll's for the controls used.
 
-For example, add SfRadialMenu Control to the application. The `SfRadialMenu` control requires `Syncfusion.SfRadialMenu.WPF` assembly and dependency assembly `Syncfusion.SfShared.WPF`.
+    For example, add SfRadialMenu Control to the application. The `SfRadialMenu` control requires `Syncfusion.SfRadialMenu.WPF` assembly and dependency assembly `Syncfusion.SfShared.WPF`.
 
 * The exported XAML file of controls can be obtained from the Output folder as described in the [export](#exporting-custom-theme-from-theme-studio) topic.
 
 * To add the exported file from Output folder to application, right click on application and click the add existing item. Now, browse the Output folder.
 
-![Shows the window for add the item to application](ThemeStudio_images/ThemeStudio_img21.jpg)
+    ![Shows the window for add the item to application](ThemeStudio_images/ThemeStudio_img21.jpg)
 
 * The Output folder contains `Syncfusion Controls`  folder and `Framework Controls` folder. 
 
-![Shows the exported folders and file](ThemeStudio_images/ThemeStudio_img19.png)
+    ![Shows the exported folders and file](ThemeStudio_images/ThemeStudio_img19.png)
 
 * From `Syncfusion Controls` folder, browse the required XAML file and add to the project. Confirm the file filter selection has All files or Xaml file.
 
-![Shows the exported xaml file of the control](ThemeStudio_images/ThemeStudio_img20.png)
+    ![Shows the exported xaml file of the control](ThemeStudio_images/ThemeStudio_img20.png)
 
 * Now, the exported XAML file added to the project.
 
-![Shows the added xaml file in application](ThemeStudio_images/ThemeStudio_img14.png)
+    ![Shows the added xaml file in application](ThemeStudio_images/ThemeStudio_img14.png)
 
 * Now, initialize the SfRadialMenu control in the `MainWindow.xaml` as below:
 
-{% tabs %}
+    {% tabs %}
 
-{% highlight xaml %}
+    {% highlight xaml %}
 
-<syncfusion:SfRadialMenu x:Name="RadialMenu">
-    <syncfusion:SfRadialMenuItem Header="Cut">
-        <syncfusion:SfRadialMenuItem Header="Cut"/>
-    </syncfusion:SfRadialMenuItem>
-    <syncfusion:SfRadialMenuItem Header="Copy">
-        <syncfusion:SfRadialMenuItem Header="Copy"/>
-    </syncfusion:SfRadialMenuItem>
-    <syncfusion:SfRadialMenuItem Header="Paste">
-        <syncfusion:SfRadialMenuItem Header="Paste"/>
-    </syncfusion:SfRadialMenuItem>
-</syncfusion:SfRadialMenu>
+    <syncfusion:SfRadialMenu x:Name="RadialMenu">
+        <syncfusion:SfRadialMenuItem Header="Cut">
+            <syncfusion:SfRadialMenuItem Header="Cut"/>
+        </syncfusion:SfRadialMenuItem>
+        <syncfusion:SfRadialMenuItem Header="Copy">
+            <syncfusion:SfRadialMenuItem Header="Copy"/>
+        </syncfusion:SfRadialMenuItem>
+        <syncfusion:SfRadialMenuItem Header="Paste">
+            <syncfusion:SfRadialMenuItem Header="Paste"/>
+        </syncfusion:SfRadialMenuItem>
+    </syncfusion:SfRadialMenu>
 
-{% endhighlight %}
+    {% endhighlight %}
 
-{% endtabs %}
+    {% endtabs %}
 
 * Merge the `SfRadialMenu.xaml` in the application resources using `MergedDictionaries`.
 
-{% tabs %}
+    {% tabs %}
 
-{% highlight xaml %}
+    {% highlight xaml %}
 
-<Application.Resources> 
-    <ResourceDictionary>
-        <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="SfRadialMenu.xaml"/>
-        </ResourceDictionary.MergedDictionaries>
-	</ResourceDictionary>
-</Application.Resources>
+    <Application.Resources> 
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="SfRadialMenu.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
 
-{% endhighlight %}
+    {% endhighlight %}
 
-{% endtabs %}
+    {% endtabs %}
 
 * Run the sample and the below output will be obtained:
 
-![Shows the output of the Control with applied theme](ThemeStudio_images/ThemeStudio_img15.png)
+    ![Shows the output of the Control with applied theme](ThemeStudio_images/ThemeStudio_img15.png)
 
 * To apply this theme to MS control, get the MS control.xaml file from `Framework Controls` folder. 
 
-![Shows the MS Control xaml file in Framework folder](ThemeStudio_images/ThemeStudio_img22.jpg)
+    ![Shows the MS Control xaml file in Framework folder](ThemeStudio_images/ThemeStudio_img22.jpg)
 
 * Do the above steps, to add this file to the project. 
 
@@ -209,6 +209,6 @@ For example, add SfRadialMenu Control to the application. The `SfRadialMenu` con
 
 * Here, custom theme applied for MS ComboBox.
 
-![Shows the output of the Microsoft ComboBox with applied theme](ThemeStudio_images/ThemeStudio_img23.jpg)
+    ![Shows the output of the Microsoft ComboBox with applied theme](ThemeStudio_images/ThemeStudio_img23.jpg)
 
 
