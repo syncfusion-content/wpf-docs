@@ -21,7 +21,7 @@ If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.
 
 To bind `ItemsSource` to TabControl, you need to have collection with data object which holds header and content details.
 
-Here, Model class defined with Header and Content properties and ViewModel class has the collection of tabitem properties.
+Here, Model class defined with Header and Content properties and ViewModel class has the collection of TabControl properties.
 
 **Model.cs:**
 
@@ -216,7 +216,7 @@ When you are auto generating tabitem's using ItemsSource, you need to set [TabCo
 
 {% endtabs %}
 
-Here, Model class defined with Header property and ViewModel class has the collection of tabitem properties.
+Here, Model class defined with Header property and ViewModel class has the collection of TabControl properties.
 
 **Model.cs:**
 
@@ -307,11 +307,9 @@ When you are auto generating tabitem's using `ItemsSource`, You need to set [Tab
 
 {% endtabs %}
 
-Here, Model class defined with Content property and ViewModel class has the collection of tabitem properties.
+Here, Model class defined with Content property and ViewModel class has the collection of TabControl properties.
 
 **Model.cs:**
-
-Create a Model class with tabitem property.
 
 {% tabs %}
 
