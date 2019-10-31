@@ -11,7 +11,7 @@ documentation: ug
 
 ## Gesture
 
-Gestures determine whether a finger or stylus has moved over a control. Syncfusion WPF controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/><br/>
+Gestures determine whether a finger or stylus has moved over a control. Syncfusion WPF controls support the following touch gestures: Tap, Swipe, Pinch, and Hold.<br/>
 This table shows the gesture mappings for each control.
 
 <table>
