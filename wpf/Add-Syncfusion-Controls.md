@@ -19,6 +19,7 @@ The Syncfusion WPF controls can be added in a Visual Studio projects by using ei
 Syncfusion UI for WPF are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential WPF control through drag and drop from Toolbox. For example: **SfTextBoxExt**
 
 1) Create a WPF project in Visual Studio.
+
 2) Find **SfTextBoxExt** by typing the name of the "SfTextBoxExt" in the search box.
 
 ![Drag and drop from toolbox](ThroughDragndDrop_images/AddSyncfusionControls_img1.jpeg)
