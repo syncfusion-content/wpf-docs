@@ -47,7 +47,7 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <small> - GridControl</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/datapager/getting-started">SfDataPager</td>
+<a href="https://help.syncfusion.com/wpf/datapager/getting-started">DataPager</td>
 </td>
 <td/>
 </tr>
