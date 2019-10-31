@@ -67,19 +67,19 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <small> - SfDiagram</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfbarcode/getting-started">Barcode</a>
-<small> - SfBarcode</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfmaps/getting-started">Map</a>
+<small> - SfMap</small></p>
 </td>
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfbulletgraph/getting-started">Bullet Graph</a>
-<small> - SfBulletGraph</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfsurfacechart/getting-started">Surface Chart</a>
+<small> - SfSurfaceChart</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfheatmap/getting-started">HeatMap</a>
-<small> - SfHeatMap</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfsmithchart/getting-started">Smith Chart</a>
+<small> - SfSmithChart</small></p>
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/gantt/getting-started">Gantt</a>
@@ -89,31 +89,32 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
+<p><a href="https://help.syncfusion.com/wpf/sfcirculargauge/getting-started">Radial Gauge</a>
+<small> - SfCircularGauge</small></p>
+</td>
+<td>
 <p><a href="https://help.syncfusion.com/wpf/sfdigitalgauge/getting-started">Digital Gauge</a>
 <small> - SfDigitalGauge</small></p>
 </td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/sflineargauge/getting-started">Linear Gauge</a>
+<small> - SfLinearGauge</small></p>
+</td>
+
+</tr>
+
+<tr>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/sfkanban/getting-started">Kanban Board</a>
 <small> - SfKanban</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfmaps/getting-started">Map</a>
-<small> - SfMap</small></p>
-</td>
-</tr>
-
-<tr>
-<td>
-<p><a href="https://help.syncfusion.com/wpf/sflineargauge/getting-started">Linear Gauge</a>
-<small> - SfLinearGauge</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfbarcode/getting-started">Barcode</a>
+<small> - SfBarcode</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfcirculargauge/getting-started">Radial Gauge</a>
-<small> - SfCircularGauge</small></p>
-</td>
-<td>
-<p><a href="https://help.syncfusion.com/wpf/sfsurfacechart/getting-started">Surface Chart</a>
-<small> - SfSurfaceChart</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfbulletgraph/getting-started">Bullet Graph</a>
+<small> - SfBulletGraph</small></p>
 </td>
 </tr>
 
@@ -127,8 +128,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <small> - SfLineSparkline</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfsmithchart/getting-started">Smith Chart</a>
-<small> - SfSmithChart</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfheatmap/getting-started">HeatMap</a>
+<small> - SfHeatMap</small></p>
 </td>
 </tr>
 
@@ -321,9 +322,7 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <p><a href="https://help.syncfusion.com/wpf/wizard/getting-started">Wizard</a>
 <small> - WizardControl</small></p>
 </td>
-<td>
-<a href="https://help.syncfusion.com/wpf/grouping/getting-started">Grouping</a>
-</td>
+<td/>
 </tr>
 
 <tr>
@@ -338,24 +337,37 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <small> - SfMaskedEdit</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfcalculator/getting-started">Calculator</a>
-<small> - SfCalculator</small></p>
+<a href="https://help.syncfusion.com/wpf/colorpicker/getting-started">Color Picker</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/colorpicker/getting-started">Color Picker</a>
+<p><a href="https://help.syncfusion.com/wpf/sfcolorpalette/getting-started">Color Palette</a>
+<small> - SfColorPalette</small></p>
 </td>
 </tr>
 
 <tr>
-<td>
-<p><a href="https://help.syncfusion.com/wpf/sfdomainupdown/getting-started">Domain Updown</a>
-<small> - SfDomainUpDown</small></p>
-</td>
+
 <td>
 <a href="https://help.syncfusion.com/wpf/colorpickerpalatte/getting-started">Color Picker Palette</a>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/currencytextbox/getting-started">Currency TextBox</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/integertextbox/getting-started">Integer TextBox</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/doubletextbox/getting-started">Double TextBox</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/percenttextbox/getting-started">Percent TextBox</a>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/sfdomainupdown/getting-started">Domain Updown</a>
+<small> - SfDomainUpDown</small></p>
 </td>
 </tr>
 
@@ -365,15 +377,6 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <small> - UpDown</small></p>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/doubletextbox/getting-started">Double TextBox</a>
-</td>
-<td>
-<a href="https://help.syncfusion.com/wpf/integertextbox/getting-started">Integer TextBox</a>
-</td>
-</tr>
-
-<tr>
-<td>
 <p><a href="https://help.syncfusion.com/wpf/sfradialslider/getting-started">Radial Slider</a>
 <small> - SfRadialSlider</small></p>
 </td>
@@ -381,19 +384,17 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <p><a href="https://help.syncfusion.com/wpf/sfrangeslider/getting-started">Range Slider</a>
 <small> - SfRangeSlider</small></p>
 </td>
-<td>
-<a href="https://help.syncfusion.com/wpf/percenttextbox/getting-started">Percent TextBox</a>
-</td>
+
 </tr>
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfcolorpalette/getting-started">Color Palette</a>
-<small> - SfColorPalette</small></p>
-</td>
-<td>
 <p><a href="https://help.syncfusion.com/wpf/sfrating/getting-started">Rating</a>
 <small> - SfRating</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/sfcalculator/getting-started">Calculator</a>
+<small> - SfCalculator</small></p>
 </td>
 <td/>
 </tr>
@@ -420,10 +421,10 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<a href="https://help.syncfusion.com/wpf/linear-progressbar/getting-started">LinearProgressBar</a>
+<a href="https://help.syncfusion.com/wpf/linear-progressbar/getting-started">Linear ProgressBar</a>
 </td>
 <td>
-<a href="https://help.syncfusion.com/wpf/circular-progressbar/getting-started">CircularProgressBar</a>
+<a href="https://help.syncfusion.com/wpf/circular-progressbar/getting-started">Circular ProgressBar</a>
 </td>
 <td/>
 </tr>
@@ -454,7 +455,9 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <p><a href="https://help.syncfusion.com/wpf/sfmulticolumndropdown/getting-started">Multi Column Dropdown</a>
 <small> - SfMultiColumnDropDownControl</small></p>
 </td>
-<td/>
+<td>
+<a href="https://help.syncfusion.com/wpf/grouping/getting-started">Grouping</a>
+</td>
 <td/>
 </tr>
 
