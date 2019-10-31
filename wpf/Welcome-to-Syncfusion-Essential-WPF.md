@@ -46,7 +46,9 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <p><a href="https://help.syncfusion.com/wpf/grid/getting-started">Excel-like Grid </a>
 <small> - GridControl</small></p>
 </td>
-<td/>
+<td>
+<a href="https://help.syncfusion.com/wpf/datapager/getting-started">SfDataPager</td>
+</td>
 <td/>
 </tr>
 
@@ -319,7 +321,9 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <p><a href="https://help.syncfusion.com/wpf/wizard/getting-started">Wizard</a>
 <small> - WizardControl</small></p>
 </td>
-<td/>
+<td>
+<a href="https://help.syncfusion.com/wpf/grouping/getting-started">Grouping</a>
+</td>
 </tr>
 
 <tr>
@@ -330,8 +334,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfcolorpalette/getting-started">Color Palette</a>
-<small> - SfColorPalette</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfmaskededit/getting-started">MaskedTextBox</a>
+<small> - SfMaskedEdit</small></p>
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/sfcalculator/getting-started">Calculator</a>
@@ -384,8 +388,8 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 
 <tr>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/sfmaskededit/getting-started">MaskedTextBox</a>
-<small> - SfMaskedEdit</small></p>
+<p><a href="https://help.syncfusion.com/wpf/sfcolorpalette/getting-started">Color Palette</a>
+<small> - SfColorPalette</small></p>
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/sfrating/getting-started">Rating</a>
@@ -538,7 +542,7 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <tr>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/pivotgrid/pivotgrid-getting-started">Pivot Grid</a>
-<small>PivotGridControl</small></p>
+<small> - PivotGridControl</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/olapchart/getting-started">OLAP Chart</a>
@@ -581,11 +585,11 @@ N> The name of the Visual Studio Toolbox entry provided inside brackets if the c
 <tr>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/sfspellchecker/getting-started">SpellChecker</a>
-<small> - SpellCheckerAdv</small></p>
+<small> - SfSpellChecker</small></p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/windowsforms/calculate/getting-started">Calculation Engine</a>
-<small>Calculate</small>
+<small> - Calculate</small>
 </td>
 <td/>
 </tr>
