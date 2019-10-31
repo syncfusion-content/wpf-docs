@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export Diagram content as image files| Syncfusion.
-description: How to export the Diagram as image?
+description: How to export the Diagram as image and how to change the exporting setting in diagram control.
 platform: wpf
 control: SfDiagram
 documentation: ug
