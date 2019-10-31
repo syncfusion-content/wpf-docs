@@ -13,15 +13,15 @@ The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfus
 
 ## Binding ItemsSource
 
-The TabControl auto generates the tabitem's based on the data source set to [TabControlExt.ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource).
+The TabControl auto generates the tabitem based on the data source set to [TabControlExt.ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssource?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_ItemsSource).
 
-N> TabControl auto creates the tabitem's only if [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8) or `HeaderTemplate` in [ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) property is defined.
+N> TabControl auto creates the tabitem only if [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8) or `HeaderTemplate` in [ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) property is defined.
 
 If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged) interface, then TabControl will automatically refresh the UI when item is added, removed or cleared in the collection. When an item is added or removed in [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=netframework-4.8), TabControl automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when an item is added or removed in List, TabControl will not refresh the UI automatically.
 
 To bind `ItemsSource` to TabControl, you need to have collection with data object which holds header and content details.
 
-Here, Model class defined with Header and Content properties and ViewModel class has the collection of TabControl properties.
+Here, Model class defined with Header and Content properties and ViewModel class has `ItemsSource` property of type `ObservableCollection<Model>`.
 
 **Model.cs:**
 
@@ -94,7 +94,7 @@ public class ViewModel : NotificationObject
 
 {% endtabs %}
 
-In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle.HeaderTemplate` and `ItemTemplate` are defined to populate TabControl with content and header.
+In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle.HeaderTemplate` or `ItemTemplate` are defined to populate TabControl with content and header.
 
 {% tabs %}
 
@@ -155,10 +155,11 @@ Another way, using `ItemTemplate` property.
 
 {% endtabs %}
 
+N> Tab items are populated based on ItemsSource only if `ItemContainerStyle.HeaderTemplate` or `ItemTemplate` are defined.
 
 ## TabItem Header
 
-When you are auto generating tabitem's using `ItemsSource`, you need to set [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) and set the tabitem name using [TabItemExt.HeaderTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.templatefield.headertemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
+When you are auto generating tabitem using `ItemsSource`, you need to set [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) and set the tabitem name using [TabItemExt.HeaderTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.templatefield.headertemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
 
 {% tabs %}
 
@@ -191,7 +192,7 @@ When you are auto generating tabitem's using `ItemsSource`, you need to set [Tab
 
 Another way, using `ItemTemplate` property.
 
-When you are auto generating tabitem's using ItemsSource, you need to set [TabControlExt.ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
+When you are auto generating tabitem using ItemsSource, you need to set [TabControlExt.ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
 
 {% tabs %}
 
@@ -216,7 +217,7 @@ When you are auto generating tabitem's using ItemsSource, you need to set [TabCo
 
 {% endtabs %}
 
-Here, Model class defined with Header property and ViewModel class has the collection of TabControl properties.
+Here, Model class defined with Header property and ViewModel class has `ItemsSource` property of type `ObservableCollection<Model>`.
 
 **Model.cs:**
 
@@ -281,7 +282,7 @@ public class ViewModel : NotificationObject
 
 ## TabItem content
 
-When you are auto generating tabitem's using `ItemsSource`, You need to set [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8). Otherwise, TabItem content will display the data object class name which is associated with tabitem.
+When you are auto generating tabitem using `ItemsSource`, You need to set [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8). Otherwise, TabItem content will display the data object class name which is associated with tabitem.
 
 {% tabs %}
 
@@ -307,7 +308,7 @@ When you are auto generating tabitem's using `ItemsSource`, You need to set [Tab
 
 {% endtabs %}
 
-Here, Model class defined with Content property and ViewModel class has the collection of TabControl properties.
+Here, Model class defined with Content property and ViewModel class has `ItemsSource` property of type `ObservableCollection<Model>`.
 
 **Model.cs:**
 
