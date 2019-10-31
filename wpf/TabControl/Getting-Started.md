@@ -25,6 +25,8 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF TabControl via designer
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/getting-started-with-wpf-tabcontrol)
+
 1) The TabControl can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Tools.WPF
@@ -116,9 +118,7 @@ grid.Children.Add(tabControlExt);
 
 ## Adding TabItem
 
-You can add the tabitem's using the [TabControlExt.Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_Items) property of TabControl. You can set the tabitem name using [TabItemExt.Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content to each TabItem by using [TabItemExt.Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ContentControl_Content) property.
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/getting-started-with-wpf-tabcontrol)
+You can add the tabitem using the [TabControlExt.Items](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.items?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ItemsControl_Items) property of TabControl. You can set the tabitem name using [TabItemExt.Header](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.headeredcontentcontrol.header?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_HeaderedContentControl_Header) property and add the content to each TabItem by using [TabItemExt.Content](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content?redirectedfrom=MSDN&view=netframework-4.8#System_Windows_Controls_ContentControl_Content) property.
 
 {% tabs %}
 
@@ -266,9 +266,9 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 TabControl allows end-users to close the tabs using close button. The close button can be displayed in tabcontrol using [TabControlExt.CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property. 
 The following options are supported to show close the button in TabControl.
 
-* **Common** - Only, Tab control shows The close button.
+* **Common** - Only, Tab control shows the close button.
 
-* **Individual** - The close button displayed only in the headers of tabitem's.
+* **Individual** - The close button displayed only in the headers of tabitem.
 
 * **Both** - TabControl and TabItem displays the close button.
 
@@ -276,7 +276,7 @@ The following options are supported to show close the button in TabControl.
 
 * **IndividualOnMouseOver** - The close button displayed only when the mouse is over the tabitem.
 
-* **Extended** - The close button displayed only for the selected tabitem and the remaining tabitem's displays close button  while mouse is over the tab header.
+* **Extended** - The close button displayed only for the selected tabitem and the remaining tabitem displays close button  while mouse is over the tab header.
 
 For example, When you set the `TabControlExt.CloseButtonType` as `Both`, then the close button is displayed in both TabItem and TabControl. 
 
