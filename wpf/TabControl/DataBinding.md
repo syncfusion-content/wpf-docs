@@ -85,7 +85,7 @@ public class ViewModel : NotificationObject
     }
     private void PopulateCollection()
     {
-        Model model = new Model() { Header = "tab1", Content="First tab" };
+        Model model = new Model() { Header = "tab1", Content="This is the first tabitem's content." };
         tabItems.Add(model);    
     }
 }
@@ -353,8 +353,8 @@ public class ViewModel : NotificationObject
     }
     private void PopulateCollection()
     {
-        Model model = new Model() { Header = "tab1", Content="First tab" };
-        Model model1 = new Model() { Header = "tab2", Content="Second tab" };
+        Model model = new Model() { Header = "tab1", Content="This is the first tabitem's content." };
+        Model model1 = new Model() { Header = "tab2", Content="This is the second tabitem's content." };
         tabItems.Add(model);
         tabItems.Add(model1);
     }
