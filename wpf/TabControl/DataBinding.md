@@ -86,7 +86,9 @@ public class ViewModel : NotificationObject
     private void PopulateCollection()
     {
         Model model = new Model() { Header = "tab1", Content="This is the first tabitem's content." };
-        tabItems.Add(model);    
+        Model model1 = new Model() { Header = "tab2", Content="This is the second tabitem's content." };
+        tabItems.Add(model);
+        tabItems.Add(model1);
     }
 }
 
@@ -126,7 +128,7 @@ In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle.Heade
 
 {% endtabs %}
 
-In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle` and `ItemTemplate` are defined to populate TabControl with content and header.
+In the below code, `ViewModel` bound to TabControl and [ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) and [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8) are defined to populate TabControl with content and header.
 
 {% tabs %}
 
@@ -155,11 +157,17 @@ In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle` and 
 
 {% endtabs %}
 
-N> Tab items are populated based on ItemsSource only if `ItemContainerStyle.HeaderTemplate` or `ItemTemplate` are defined.
+N> Tab items are populated based on ItemsSource only if `ItemContainerStyle.HeaderTemplate` or `ItemTemplate` is defined.
 
 ## TabItem Header
 
-When you are auto generating tabitem using `ItemsSource`, you need to set [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) and set the tabitem name using [HeaderTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.templatefield.headertemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
+When you are auto generating tabitem using `ItemsSource`, you need to set [HeaderTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.templatefield.headertemplate?view=netframework-4.8) property in [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) to define header for tabitem.  
+
+In another way, You can define tabitem header using `ItemTemplate` property. Otherwise, TabItem header will display the data object class name associated with tabitem.
+
+N> The data object associated with tabitem is the BindingContext for both ItemContainerStyle.HeaderTemplate and ItemTemplate.
+
+Below code is used to define the tabitem header using `HeaderTemplate` in `ItemContainerStyle` property.
 
 {% tabs %}
 
@@ -190,9 +198,7 @@ When you are auto generating tabitem using `ItemsSource`, you need to set [TabCo
 
 {% endtabs %}
 
-Another way, using `ItemTemplate` property.
-
-When you are auto generating tabitem using `ItemsSource`, you need to set [TabControlExt.ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
+Below code is used to define the tabitem header using `ItemTemplate` property.
 
 {% tabs %}
 
@@ -212,67 +218,6 @@ When you are auto generating tabitem using `ItemsSource`, you need to set [TabCo
         </syncfusion:TabControlExt.ItemTemplate>
     </syncfusion:TabControlExt>
 </Grid>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Here, Model class defined with Header property and ViewModel class has `ItemsSource` property of type `ObservableCollection<Model>`.
-
-**Model.cs:**
-
-{% tabs %}
-
-{% highlight C# %}
-
-public class Model : NotificationObject
-{
-    public Model()
-    {
-    }
-    private string header;
-    public string Header
-    {
-        get { return header; }
-        set
-        {
-            header = value;
-            this.RaisePropertyChanged("Header");
-        }
-    }
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**ViewModel.cs:**
-
-{% tabs %}
-
-{% highlight C# %}
-
-public class ViewModel : NotificationObject
-{
-    private ObservableCollection<Model> tabItems;
-    public ObservableCollection<Model> TabItems
-    {
-        get { return tabItems; }
-        set { tabItems = value; }
-    }
-    public ViewModel()
-    {
-        tabItems = new ObservableCollection<Model>();
-        PopulateCollection();
-    }
-    private void PopulateCollection()
-    {
-        Model model = new Model() { Header = "tab1" };
-        Model model1 = new Model() { Header = "tab2" };
-        tabItems.Add(model);
-        tabItems.Add(model1);
-    }
-}
 
 {% endhighlight %}
 
@@ -303,62 +248,6 @@ When you are auto generating tabitem using `ItemsSource`, You need to set [TabCo
         </syncfusion:TabControlExt.ItemContainerStyle>
     </syncfusion:TabControlExt>    
 </Grid>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Here, Model class defined with Content property and ViewModel class has `ItemsSource` property of type `ObservableCollection<Model>`.
-
-**Model.cs:**
-
-{% tabs %}
-
-{% highlight C# %}
-
-private string content;
-public string Content
-{
-    get { return content; }
-    set
-    {
-        content = value;
-        this.RaisePropertyChanged("Content");
-    }
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-**ViewModel.cs:**
-
-{% tabs %}
-
-{% highlight C# %}
-
-public class ViewModel : NotificationObject
-{
-    private ObservableCollection<Model> tabItems;
-    public ObservableCollection<Model> TabItems
-    {
-        get { return tabItems; }
-        set { tabItems = value; }
-    }
-    public ViewModel()
-    {
-        tabItems = new ObservableCollection<Model>();
-        PopulateCollection();
-    }
-    private void PopulateCollection()
-    {
-        Model model = new Model() { Header = "tab1", Content="This is the first tabitem's content." };
-        Model model1 = new Model() { Header = "tab2", Content="This is the second tabitem's content." };
-        tabItems.Add(model);
-        tabItems.Add(model1);
-    }
-}
 
 {% endhighlight %}
 
