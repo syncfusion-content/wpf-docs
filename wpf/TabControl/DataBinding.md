@@ -94,7 +94,7 @@ public class ViewModel : NotificationObject
 
 {% endtabs %}
 
-In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle.HeaderTemplate` or `ItemTemplate` are defined to populate TabControl with content and header.
+In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle.HeaderTemplate` is defined to populate TabControl with content and header.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle.Heade
 
 {% endtabs %}
 
-Another way, using `ItemTemplate` property.
+In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle` and `ItemTemplate` are defined to populate TabControl with content and header.
 
 {% tabs %}
 
@@ -159,7 +159,7 @@ N> Tab items are populated based on ItemsSource only if `ItemContainerStyle.Head
 
 ## TabItem Header
 
-When you are auto generating tabitem using `ItemsSource`, you need to set [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) and set the tabitem name using [TabItemExt.HeaderTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.templatefield.headertemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
+When you are auto generating tabitem using `ItemsSource`, you need to set [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) and set the tabitem name using [HeaderTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.templatefield.headertemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
 
 {% tabs %}
 
@@ -192,7 +192,7 @@ When you are auto generating tabitem using `ItemsSource`, you need to set [TabCo
 
 Another way, using `ItemTemplate` property.
 
-When you are auto generating tabitem using ItemsSource, you need to set [TabControlExt.ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
+When you are auto generating tabitem using `ItemsSource`, you need to set [TabControlExt.ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8). Otherwise, TabItem header will display the data object class name which is associated with tabitem.
 
 {% tabs %}
 
