@@ -119,12 +119,12 @@ You can add the custom tabitem context menu using the [TabItemExt.ContextMenuIte
 <syncfusion:TabControlExt Name="tabControl" IsCustomTabItemContextMenuEnabled="True">
     <syncfusion:TabItemExt Header="tabItem1">
         <syncfusion:TabItemExt.ContextMenuItems>
-            <syncfusion:CustomMenuItem Header="Menu1" />
+            <syncfusion:CustomMenuItem Header="Edit" />
         </syncfusion:TabItemExt.ContextMenuItems>
     </syncfusion:TabItemExt>
-    <syncfusion:TabItemExt Header="tabItem2" IsSelected="True">
+    <syncfusion:TabItemExt Header="tabItem2">
         <syncfusion:TabItemExt.ContextMenuItems>
-            <syncfusion:CustomMenuItem Header="Menu2" />
+            <syncfusion:CustomMenuItem Header="Edit" />
         </syncfusion:TabItemExt.ContextMenuItems>
     </syncfusion:TabItemExt>
 </syncfusion:TabControlExt>
@@ -138,12 +138,12 @@ tabControlExt.IsCustomTabItemContextMenuEnabled = true;
 
 // Adding custom context menu for the first tabitem
 CustomMenuItem customMenuItem = new CustomMenuItem();
-customMenuItem.Header = "Menu1";
+customMenuItem.Header = "Edit";
 tabItemExt1.ContextMenuItems.Add(customMenuItem);
 
 // Adding custom context menu for the second tabitem
 CustomMenuItem customMenuItem1 = new CustomMenuItem();
-customMenuItem1.Header = "Menu2";
+customMenuItem1.Header = "Edit";
 tabItemExt2.ContextMenuItems.Add(customMenuItem1);
 
 {% endhighlight %}
