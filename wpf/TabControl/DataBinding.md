@@ -165,7 +165,7 @@ When you are auto generating tabitem using `ItemsSource`, you need to set [Heade
 
 In another way, You can define tabitem header using `ItemTemplate` property. Otherwise, TabItem header will display the data object class name associated with tabitem.
 
-N> The data object associated with tabitem is the BindingContext for both ItemContainerStyle.HeaderTemplate and ItemTemplate.
+N> The data object associated with tabitem is the BindingContext for both `ItemContainerStyle.HeaderTemplate` and `ItemTemplate`.
 
 Below code is used to define the tabitem header using `HeaderTemplate` in `ItemContainerStyle` property.
 
