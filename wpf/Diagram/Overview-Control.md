@@ -76,7 +76,7 @@ The `Constraint` property of the Overview class allows you to control the Pan an
 | OverviewConstraints | Description | Output |
 |---|---|---|
 | Pan | Allows users to pan the diagram page by dragging the focused rectangle. |![Overview pan](Overview-Control_images/OverViewPan.gif) |
-| Zoom | Allows users to perform zoom by resizing the corners of the focused rectangle. |![Overview Resize](Overview-Control_images/OverviewResize.gif) |
+| Zoom | Allows users to perform zoom by resizing the corners of the focused rectangle. |![Overview Resize](Overview-Control_images/OverViewResize.gif) |
 | DrawFocus | Allows users to draw new focused rectangle anywhere within the overview panel, that is corresponding region in the diagram will be brought into the view.|![Overview Draw](Overview-Control_images/OverViewDrawFocus.gif) |
 | TapFocus | Allows users move the focused rectangle to any area within the panel by just tapping it.| |
 | Default | Allows users to perform drag, resize, draw, and tap the overview control.| |
@@ -86,7 +86,7 @@ The `Constraint` property of the Overview class allows you to control the Pan an
 
 Diagram supports the deferred scrolling behaviour to improve the zoom and pan performances.
 
-To learn more about deferred scrolling, refer to [Deferred Scrolling](/wpf/sfdiagram/virtualization#DeferredScrolling"DeferredScrolling").
+To learn more about deferred scrolling, refer to [Deferred Scrolling](/wpf/diagram/virtualization#deferred-scrolling"DeferredScrolling").
 
 ## Event
 
