@@ -180,7 +180,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![point to point connection](Connector_images/Connector_img6.PNG)
+![point to point connection](Connector_images/Connector_img6.png)
 
 ## Create connection between nodes
 
