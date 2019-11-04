@@ -283,7 +283,7 @@ this.schedule.HeaderBackground = Brushes.LightSkyBlue;
 ![WPF scheduler dayview header background](views_images/dayview-header-background.png)
 
 ### Stroke customization
-In the SfSchedule control, major, minor, and horizontal lines drawn in the day and week views by using following proerties,
+In Scheduler control, major, minor, and horizontal lines drawn in the day and week views by using following proerties,
 
 ####  Property Table
 
