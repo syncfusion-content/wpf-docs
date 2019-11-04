@@ -129,6 +129,27 @@ The following code snippets illustrate the value binding from one `DoubleTextBox
 <syncfusion:DoubleTextBox x:Name="doubleTextBox1" Height="25" Width="100" Value="{Binding myValue}"/>
 <syncfusion:DoubleTextBox x:Name="doubleTextBox2" Width="100" Height="25" Value="{Binding myValue}" />
 </StackPanel>
+
+{% endhighlight %}
+{% highlight C# %}
+
+class ViewModel : NotificationObject
+{
+    private double myValue;
+    public double MyValue
+    {
+        get
+        {
+            return myValue;
+        }
+        set
+        {
+            myValue = value;
+            RaisePropertyChanged("MyValue");
+        }
+    }
+}
+
 {% endhighlight %}
 {% endtabs %}
 

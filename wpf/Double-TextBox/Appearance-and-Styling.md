@@ -136,35 +136,36 @@ doubleTextBox.CornerRadius = new CornerRadius(5);
 
 ## Theme
 
-The appearance of the `DoubleTextBox` control can be customized by using the [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinStorage~SetVisualStyle.html) property. The following are the various built-in visual styles for `DoubleTextBox` control.
+The appearance of the `DoubleTextBox` control can be customized by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `DoubleTextBox` control.
 
 * Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* ShinyBlue
-* ShinyRed
-* SyncOrange
-* VS2010
+* Default
+* Lime
 * Metro
-* Transparent
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* SystemTheme
+* VisualStudio2013
+* VisualStudio2015
 
 For example, the `Blend` style applied to the `DoubleTextBox` as shown in the following example code:
 
 {% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DoubleTextBox x:Name="DoubleTextBox1" Width="100" Height="25" syncfusion:SkinStorage.VisualStyle="Blend"/>
-
-{% endhighlight %}
 {% highlight C# %}
 
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 100;
 doubleTextBox.Height = 25;
-SkinStorage.SetVisualStyle(doubleTextBox, "Blend");
+SfSkinManager.SetVisualStyle(doubleTextBox, VisualStyles.Blend);
 
 {% endhighlight %}
 {% endtabs %}
