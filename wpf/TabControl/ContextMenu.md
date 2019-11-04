@@ -95,7 +95,7 @@ You can show the context menu of tab list by setting the [TabControlExt.ShowTabL
 
 {% highlight C# %}
 
-////Set the visibility of tab list context menu
+//Set the visibility of tab list context menu
 tabControlExt.ShowTabListContextMenu = true;
 
 {% endhighlight %}
