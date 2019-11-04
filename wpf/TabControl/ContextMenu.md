@@ -21,11 +21,13 @@ The built-in tabitem context menu has the following menu items:
 * **Close All But This** - Closes all the tabitem, except the current or selected tabitem.
 * **Close All** - Closes all the tabitem.
 
+The [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) is an enum that includes values as **Hide** and **Delete** in the TabControl. When you click any default options(Close, Close All and Close All But This) in tabitem context menu and when the `CloseMode` is set to `Hide`, the tabitem moves to the hidden state and the selection will be moved to previous selected index while hiding it or when the `CloseMode` is set to `Delete`, the tabitem is removed from TabControl, and it automatically gets deleted from the tabitem collection.
+
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl" ShowTabItemContextMenu="True">
+<syncfusion:TabControlExt Name="tabControl" ShowTabItemContextMenu="True" CloseMode="Hide">
     <syncfusion:TabItemExt Header="tabItem1" />
     <syncfusion:TabItemExt Header="tabItem2" />        
 </syncfusion:TabControlExt>
@@ -36,6 +38,9 @@ The built-in tabitem context menu has the following menu items:
 
 //Set the visibility of tabitem context menu
 tabControlExt.ShowTabItemContextMenu = true;
+
+//Set close mode to TabControl
+tabControlExt.CloseMode = CloseMode.Hide;
 
 {% endhighlight %}
 
@@ -80,7 +85,9 @@ private void TabControlExt_OnCloseAllTabs(object sender, CloseTabEventArgs e)
 
 ## Built-in context menu of tab list
 
-You can show the context menu of tab list by setting the [TabControlExt.ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true` in TabControl. The header of all tabitem's are shown as a menu item in the context menu of the tab list.
+You can show the context menu of tab list by setting the [TabControlExt.ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true` in TabControl. The header of all tabitem's are shown as a menu item in the context menu of the tab list. The default value is `true`.
+
+You can also switch the tabitem by selecting an item from the tab list context menu.
 
 {% tabs %}
 
@@ -107,6 +114,32 @@ tabControlExt.ShowTabListContextMenu = true;
 In the below screenshot, the `ShowTabListContextMenu` property is set to `false` in TabControl.
 
 ![Disable tablist context menu in WPF TabControl](Contextmenu_images/wpf-tabcontrol-disabletablist.png)
+
+### Customizing tab list context menu
+
+You can customize the tab list context menu appearance by using `TabControlExt.TabListContextMenuItemTemplate` in TabControl.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt x:Name="tabControl"
+                          ShowTabListContextMenu="True"
+                          >
+    <syncfusion:TabControlExt.TabListContextMenuItemTemplate>
+        <DataTemplate>
+            <TextBlock VerticalAlignment="Center" FontFamily="Calibri" Foreground="Blue" FontStyle="Oblique" FontSize="15" Text="{Binding}" />
+        </DataTemplate>
+    </syncfusion:TabControlExt.TabListContextMenuItemTemplate>
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customize the tab list context menu](Contextmenu_images/wpf-tabcontrol-style.png)
 
 ## Custom context menu
 
