@@ -51,7 +51,7 @@ this.schedule.MinorTickTimeFormat = "hh mm ss";
 ![WPF schedular dayview time formatting](views_images/dayview-time-formatting.png)
 
 ## Enable auto formatting
-When reducing the size of the schedule in week and month views, headers may be only partially shown. To avoid incompletely displayed headers, automatic formatting can be enabled by setting the [EnableAutoFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableAutoFormat.html) property of the Scheduler control as `true`. If this preopty enbaled, `HeaderDateFormat` settings will not apply.
+When reducing the size of the schedule in week and month views, headers may be only partially shown. To avoid incompletely displayed headers, automatic formatting can be enabled by setting the [EnableAutoFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableAutoFormat.html) property of the Scheduler control as `true`. If this property enabled, `HeaderDateFormat` settings will not apply.
 
 {% tabs %}
 {% highlight xaml %}
