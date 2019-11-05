@@ -303,7 +303,7 @@ schedule.CurrentTimeIndicatorTemplate = (DataTemplate)this.Resources["CurrentTim
 
 ![WPF Scheduler dayview customize current time indicator](views_images/dayview-current-time-indicator-template-customization.png)
 
-## Change hours/minutes time label visibility
+## Change hours or minutes time label visibility
 Schedule supports to enable/disable the hours and minutes time label visiblity by using [MajorTickVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickVisibility.html) and [MinorTickVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickVisibility.html) properties.
 
 {% tabs %}
