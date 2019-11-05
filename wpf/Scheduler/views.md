@@ -106,8 +106,8 @@ this.schedule.IntervalHeight = 100;
 
 ![WPF scheduler dayview interval height](views_images/dayview-interval-height.png)
 
-## Change time mode 
-Scheduler supports to change the Time format from 12hours to 24 hours by using the [TimeMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeMode.html) property.
+## Change between 12-hour and 24-hour format
+Scheduler supports to change the time format from 12hours to 24 hours by using the [TimeMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeMode.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,7 +129,7 @@ schedule.TimeMode = TimeModes.TwelveHours;
 ![WPF Scheduler day view 24 hours](views_images/dayview-24hours-format.png)
 
 ## Change first day of week
-Scheduler supports to switch the first week with any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeek.html) property.
+Scheduler supports to change the first week with any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeek.html) property.
 
 `Day` - `FirstDayOfWeek` of Scheduler is not applicable for day view as it displays only one day.
 
@@ -265,6 +265,43 @@ this.schedule.IsHighLightWorkingHours = true;
 
 ![WPF scheduler DayView Non working hours background changes](views_images/dayview-non-working-hours-background.png)
 
+## Current time indicator
+Scheduler supports to display the current time indicator by using the [CurrentTimeIndicatorVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentTimeIndicatorVisibility.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfSchedule ScheduleType="Day" CurrentTimeIndicatorVisibility="Visible"/>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleType = ScheduleType.Day;
+this.schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler dayview current time indicator](views_images/dayview-current-time-indicator.png)
+
+### Customize current time indicator
+Scheduler supports to customize the current time indicator by using [CurrentTimeIndicatorTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentTimeIndicatorTemplate.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" CurrentTimeIndicatorVisibility="Visible">
+    <Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
+        <DataTemplate>
+            <Border Background="DarkGreen" Height="10" Width="100"></Border>
+        </DataTemplate>
+    </Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
+</Schedule:SfSchedule>     
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleType = ScheduleType.Day;
+schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
+schedule.CurrentTimeIndicatorTemplate = (DataTemplate)this.Resources["CurrentTimeIndicatorTemplate"];
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler dayview customize current time indicator](views_images/dayview-current-time-indicator-template-customization.png)
+
 ## Appearance
 
 ### Changing time label background
@@ -283,7 +320,7 @@ this.schedule.HeaderBackground = Brushes.LightSkyBlue;
 ![WPF scheduler dayview header background](views_images/dayview-header-background.png)
 
 ### Stroke customization
-In Scheduler control, major, minor, and horizontal lines drawn in the day and week views by using following properties,
+In Scheduler control, major, minor horizontal and vertical lines drawn in the day, week, workweek and timeline views by using following properties,
 
 ####  Property Table
 
@@ -297,37 +334,37 @@ Description</th></tr>
 <td>
 <a href="(https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStroke.html)">MajorTickStroke</a></td><td>
 Brush</td><td>
-Used to customize the major line stroke of the day and time line views.</td></tr>
+Used to customize the major line stroke of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStroke.html">MinorTickStroke</a></td><td>
 Brush</td><td>
-Used to customize the minor line stroke of the day and time line views.</td></tr>
+Used to customize the minor line stroke of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickLabelStroke.html">MajorTickLabelStroke</a></td><td>
 Brush</td><td>
-Used to customize the major line label stroke in the day and time line views.</td></tr>
+Used to customize the major line label stroke in the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickLabelStroke.html">MinorTickLabelStroke</a></td><td>
 Brush</td><td>
-Used to customize the minor line label stroke of the day and time line views.</td></tr>
+Used to customize the minor line label stroke of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStrokeDashArray.html">MajorTickStrokeDashArray</td><td>
 DoubleCollection</td><td>
-Used to customize the major line stroke dash array of the day and time line views.</td></tr>
+Used to customize the major line stroke dash array of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStrokeDashArray.html">MinorTickStrokeDashArray</td><td>
 DoubleCollection</td><td>
-Used to customize the minor line stroke dash array of the day and time line views.</td></tr>
+Used to customize the minor line stroke dash array of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
 <a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~DayViewVerticalLineStroke.html">DayViewVerticalLineStroke</td><td>
 Brush</td><td>
-Used to customize the vertical line stroke of the day view.</td></tr>
+Used to customize the vertical line stroke of the day, week and workweek view.</td></tr>
 </table>
 
 #### Changing time label foreground
@@ -406,43 +443,6 @@ this.schedule.CurrentDateForeground = Brushes.White;
 {% endtabs %}
 
 ![WPF Scheduler WorkWeekView current date background](views_images/workweek-current-date-background.png)
-
-### Current time indicating
-Scheduler supports to enable the current time by using the [CurrentTimeIndicatorVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentTimeIndicatorVisibility.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfSchedule ScheduleType="Day" CurrentTimeIndicatorVisibility="Visible"/>
-{% endhighlight %}
-{% highlight c# %}
-schedule.ScheduleType = ScheduleType.Day;
-this.schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
-{% endhighlight %}
-{% endtabs %}
-
-![WPF Scheduler dayview current time indicator](views_images/dayview-current-time-indicator.png)
-
-### Customize current time indicator
-Scheduler supports to customize the current time indicator by using [CurrentTimeIndicatorTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentTimeIndicatorTemplate.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-<Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" CurrentTimeIndicatorVisibility="Visible">
-    <Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
-        <DataTemplate>
-            <Border Background="DarkGreen" Height="10" Width="100"></Border>
-        </DataTemplate>
-    </Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
-</Schedule:SfSchedule>     
-{% endhighlight %}
-{% highlight c# %}
-schedule.ScheduleType = ScheduleType.Day;
-schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
-schedule.CurrentTimeIndicatorTemplate = (DataTemplate)this.Resources["CurrentTimeIndicatorTemplate"];
-{% endhighlight %}
-{% endtabs %}
-
-![WPF Scheduler dayview customize current time indicator](views_images/dayview-current-time-indicator-template-customization.png)
 
 ## Change schedule view settings based on the views at run time
 Scheduler supports to notify before that changing the schedule view by using [ScheduleTypeChanging](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleTypeChanging_EV.html) event. By this event, the appearance can be adjusted depending on the view.
