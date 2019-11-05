@@ -83,63 +83,7 @@ private void TabControlExt_OnCloseAllTabs(object sender, CloseTabEventArgs e)
 
 {% endtabs %}
 
-## Tab list menu support for switching tabs
-
-You can show the tab list menu by setting the [TabControlExt.ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true` in TabControl. The header of all tabitem's are shown as a menu item in the tab list menu. The default value is `true`. You can also switch the tabitem by selecting an item from the tab list menu.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:TabControlExt Name="tabControl" ShowTabListContextMenu="True">
-    <syncfusion:TabItemExt Header="tabItem1" />
-    <syncfusion:TabItemExt Header="tabItem2" />        
-</syncfusion:TabControlExt>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-//Set the visibility of tab list context menu
-tabControlExt.ShowTabListContextMenu = true;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Enable tablist context menu in WPF TabControl](Contextmenu_images/wpf-tabcontrol-tablistcontextmenu.png)
-
-In the below screenshot, the `ShowTabListContextMenu` property is set to `false` in TabControl.
-
-![Disable tablist context menu in WPF TabControl](Contextmenu_images/wpf-tabcontrol-disabletablist.png)
-
-### Appearance of tab list menu
-
-You can customize the tab list menu appearance by using `TabControlExt.TabListContextMenuItemTemplate` in TabControl.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:TabControlExt x:Name="tabControl"
-                          ShowTabListContextMenu="True"
-                          >
-    <syncfusion:TabControlExt.TabListContextMenuItemTemplate>
-        <DataTemplate>
-            <TextBlock VerticalAlignment="Center" FontFamily="Calibri" Foreground="Blue" FontStyle="Oblique" FontSize="15" Text="{Binding}" />
-        </DataTemplate>
-    </syncfusion:TabControlExt.TabListContextMenuItemTemplate>
-    <syncfusion:TabItemExt Header="tabItem1" />
-    <syncfusion:TabItemExt Header="tabItem2" />
-</syncfusion:TabControlExt>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Customize the tab list context menu](Contextmenu_images/wpf-tabcontrol-style.png)
-
-## Custom context menu
+## Custom tabitem context menu
 
 You can add the custom tabitem context menu using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ContextMenuItems.html) property in TabControl. This property is enabled by setting the [TabControlExt.IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsCustomTabItemContextMenuEnabled.html) property to `true`. The default value is `false`.
 
@@ -225,3 +169,60 @@ tabItemExt1.ContextMenuItems.Add(customMenuItem3);
 {% endtabs %}
 
 ![Disable default context menu in WPF TabControl](Contextmenu_images/wpf-tabcontrol-disabledefaultmenu.png)
+
+## Tab list menu for switching tabs
+
+You can show the tab list menu by setting the [TabControlExt.ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true` in TabControl. The header of all tabitem's are shown as a menu item in the tab list menu. The default value is `true`. You can also switch the tabitem by selecting an item from the tab list menu.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControl" ShowTabListContextMenu="True">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />        
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Set the visibility of tab list context menu
+tabControlExt.ShowTabListContextMenu = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Enable tablist context menu in WPF TabControl](Contextmenu_images/wpf-tabcontrol-tablistcontextmenu.png)
+
+In the below screenshot, the `ShowTabListContextMenu` property is set to `false` in TabControl.
+
+![Disable tablist context menu in WPF TabControl](Contextmenu_images/wpf-tabcontrol-disabletablist.png)
+
+### Appearance of tab list menu
+
+You can customize the tab list menu appearance by using `TabControlExt.TabListContextMenuItemTemplate` in TabControl.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabControlExt x:Name="tabControl"
+                          ShowTabListContextMenu="True"
+                          >
+    <syncfusion:TabControlExt.TabListContextMenuItemTemplate>
+        <DataTemplate>
+            <TextBlock VerticalAlignment="Center" FontFamily="Calibri" Foreground="Blue" FontStyle="Oblique" FontSize="15" Text="{Binding}" />
+        </DataTemplate>
+    </syncfusion:TabControlExt.TabListContextMenuItemTemplate>
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customize the tab list context menu](Contextmenu_images/wpf-tabcontrol-style.png)
+
