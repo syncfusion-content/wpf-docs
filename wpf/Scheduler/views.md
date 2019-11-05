@@ -129,11 +129,11 @@ schedule.TimeMode = TimeModes.TwelveHours;
 ![WPF Scheduler day view 24 hours](views_images/dayview-24hours-format.png)
 
 ## Change first day of week
-Scheduler supports to change the first week with any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeek.html) property.
+Scheduler supports to change the first day of week with any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeek.html) property.
 
 `Day` - `FirstDayOfWeek` of Scheduler is not applicable for day view as it displays only one day.
 
-`Week` - By default, scheduler control will be rendered with `Sunday` as the first day of the week.
+`Week`/`Month` - By default, scheduler control will be rendered with `Sunday` as the first day of the week.
 
 `WorkWeek` - By default, scheduler control will be rendered with `Monday` as the first day. `Saturday` and `Sunday` has considered as a non working days. 
 
