@@ -67,7 +67,7 @@ The following code sample demonstrates to include play and pause button which ca
             </Syncfusion:SfCircularProgressBar.ProgressContent>
         </Syncfusion:SfCircularProgressBar>
 {% endhighlight %}
-{% highlight C#}
+{% highlight C# %}
  public partial class MainWindow : Window
     { 
         public DispatcherTimer SfCircularBarPlayPauseTimer;
