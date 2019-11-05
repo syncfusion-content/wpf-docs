@@ -7,7 +7,8 @@ control: SfSchedule
 documentation: ug
 ---
 
-## Views (DayView, WeekView and WorkWeekView)
+# Views (Day, Week and Work week Views)
+
 Scheduler provides the following different types of views.
 
 * Day view
