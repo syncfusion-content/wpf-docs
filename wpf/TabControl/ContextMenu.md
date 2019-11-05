@@ -85,8 +85,7 @@ private void TabControlExt_OnCloseAllTabs(object sender, CloseTabEventArgs e)
 
 ## Tab list menu support for switching tabs
 
-You can show the tab list menu by setting the [TabControlExt.ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true` in TabControl. The header of all tabitem's are shown as a menu item in the tab list menu. The default value is `true`.
-You can also switch the tabitem by selecting an item from the tab list menu.
+You can show the tab list menu by setting the [TabControlExt.ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true` in TabControl. The header of all tabitem's are shown as a menu item in the tab list menu. The default value is `true`. You can also switch the tabitem by selecting an item from the tab list menu.
 
 {% tabs %}
 
