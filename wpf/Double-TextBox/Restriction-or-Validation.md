@@ -36,7 +36,6 @@ You can choose when to validate the maximum and minimum limits while changing th
                           MinValueOnExceedMinDigit="True" MaxValueOnExceedMaxDigit="True"
                           MinValidation="OnKeyPress" MaxValidation="OnLostFocus"/>
 
-
 {% endhighlight %}
 {% highlight C# %}
 
@@ -111,57 +110,3 @@ doubleTextBox.IsReadOnlyCaretVisible = true;
 {% endtabs %}
 
 ![DoubleTextBox in read-only mode](Restriction-or-Validation_images/Restriction-or-Validation_ReadOnly.jpeg)
-
-## Validate Invalid Value
-
-You can use the [ValidationValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~ValidationValue.html) property to compare the value of the `DoubleTextBox` with a specific value. If the value of `DoubleTextBox` is not equal to the `ValidationValue` property, the `DoubleTextBox` will be perform some operation. This is achieved by the [InvalidValueBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextbox~InvalidValueBehavior.html) property.
-
-It includes the following three behaviors,
-
-* Display ErrorMessage
-* None
-* Reset Value
-
-### Display error message on invalid value
-
-If the value entered by the user is not equal to `ValidationValue`, the error message will be shown by setting the `InvalidValueBehavior` property as `DisplayErrorMessage`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" ValidationValue = "5.5" InvalidValueBehavior="DisplayErrorMessage" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.ValidationValue = "5.5";
-doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.DisplayErrorMessage;
-
-{% endhighlight %}
-{% endtabs %}
-
-![After entering the incorrect value, DoubleTextBox Display the pop-up ErrorMessage](Restriction-or-Validation_images/Error-message.png)
-
-### Reset to default value on invalid value 
-
-If the value entered by the user is not equal to `ValidationValue`, the `DoubleTextBox` current value will be reset with default value by setting the `InvalidValueBehavior` property as `ResetValue`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:DoubleTextBox x:Name="doubleTextBox"  InvalidValueBehavior="ResetValue" ValidationValue = "3.75" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-DoubleTextBox doubleTextBox = new DoubleTextBox();
-doubleTextBox.ValidationValue = "3.75";
-doubleTextBox.InvalidValueBehavior = InvalidInputBehavior.ResetValue;
-
-{% endhighlight %}
-{% endtabs %}
-
-![After entering the incorrect value, DoubleTextBox resets the value](Restriction-or-Validation_images/Reset-Value.png)
-
-

@@ -39,7 +39,7 @@ doubleTextBox.ScrollInterval = 2;
 
 ## Change Value on Mouse Wheel
 
-The `DoubleTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Editorbase~IsScrollingOnCircle.html) property is `true`. The default value of 'IsScrollingOnCircle' property is `true`.
+The `DoubleTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Editorbase~IsScrollingOnCircle.html) property is `true`. The default value of `IsScrollingOnCircle` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -69,7 +69,7 @@ The `DoubleTextBox` allows you to increase or decrease the value based on the `S
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="120" Height="25" Value ="88" 
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="120" Height="25" Value ="10" 
                           ScrollInterval="5" EnableExtendedScrolling="True"/>
 
 {% endhighlight %}
@@ -78,18 +78,18 @@ The `DoubleTextBox` allows you to increase or decrease the value based on the `S
 DoubleTextBox doubleTextBox = new DoubleTextBox();
 doubleTextBox.Width = 120;
 doubleTextBox.Height = 25;
-doubleTextBox.Value = 88;
+doubleTextBox.Value = 10;
 doubleTextBox.ScrollInterval = 5;
 doubleTextBox.EnableExtendedScrolling = true;
 
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the DoubleTextBox value by Click and Drag](Step-Interval_images/Step-Interval_Extended_Scrolling.gif)
+![Changing the DoubleTextBox value by Click and Drag](Step-Interval_images/Step-Interval_DragandDrop.gif)
 
 ## Select All on focus
 
-`DoubleTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property to `true` and when the control got focus. The default behavior of the `DoubleTextBox` is to select the text on focus.
+`DoubleTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property to `true` and when the control got focus. The default value of the `TextSelectionOnFocus` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}

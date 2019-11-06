@@ -29,4 +29,3 @@ The core features of the `DoubleTextBox` are as follows:
 * Provides Number Format support.
 * Provides Null Value support.
 * Provides culture support.
-

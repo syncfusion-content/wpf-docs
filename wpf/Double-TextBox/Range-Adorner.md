@@ -9,7 +9,7 @@ documentation: ug
 
 # Range Adorner in WPF DoubleTextBox 
 
-Value of DoubleTextBox can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property to `true`. default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value. Range Adoner is not displayed when a `MinValue` or `MaxValue` property is not set.
+Value of DoubleTextBox can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property to `true`. default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value. Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
 
 {% tabs %}
 {% highlight XAML %}

@@ -37,10 +37,15 @@ The following code snippets illustrate the value binding from one `DoubleTextBox
 {%tabs%}
 {% highlight xaml %}
 
-<syncfusion:DoubleTextBox x:Name="doubleTextBox1" Value="{Binding myValue}" Height="25" Width="100"/>
-<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Value="{Binding myValue}" Width="100" Height="25"  />
+<syncfusion:DoubleTextBox x:Name="doubleTextBox1" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Height="25" Width="100"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Width="100" Height="25"  />
 
 {% endhighlight %}
+{%endtabs%}
+
+ViewModel.cs
+
+{%tabs%}
 {% highlight C# %}
 
 class ViewModel : NotificationObject
@@ -68,7 +73,6 @@ class ViewModel : NotificationObject
 ## Value Changed Event
 
 The `DoubleTextbox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ValueChanged_EV.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.
-
 
 {%tabs%}
 {% highlight xaml %}
@@ -148,7 +152,6 @@ doubleTextBox.UseNullOption = true;
 {% endtabs %}
 
 ![Setting Null value in DoubleTextBox](Changing-Double-Value_images/NullValue.jpeg)
-
 
 ## Setting Watermark Text
 

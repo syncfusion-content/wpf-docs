@@ -19,7 +19,6 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-
 ## Adding WPF DoubleTextBox via designer
 
 You can add the [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
@@ -125,12 +124,18 @@ The following code snippets illustrate the value binding from one `DoubleTextBox
 
 {% tabs %}
 {% highlight XAML %}
+
 <StackPanel>
-<syncfusion:DoubleTextBox x:Name="doubleTextBox1" Height="25" Width="100" Value="{Binding myValue}"/>
-<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Width="100" Height="25" Value="{Binding myValue}" />
+<syncfusion:DoubleTextBox x:Name="doubleTextBox1" Height="25" Width="100" Value="{Binding myValue,UpdateSourceTrigger=PropertyChanged}"/>
+<syncfusion:DoubleTextBox x:Name="doubleTextBox2" Width="100" Height="25" Value="{Binding myValue,UpdateSourceTrigger=PropertyChanged}" />
 </StackPanel>
 
 {% endhighlight %}
+{% endtabs %}
+
+ViewModel.cs
+
+{% tabs %}
 {% highlight C# %}
 
 class ViewModel : NotificationObject
@@ -158,7 +163,6 @@ class ViewModel : NotificationObject
 ## Value Changed Notification
 
 The `DoubleTextbox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ValueChanged_EV.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
-
 
 {%tabs%}
 {% highlight xaml %} 
@@ -189,7 +193,6 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Min Max Value Restriction
 
 The `Value` of `DoubleTextBox` can be restricted within maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~MaxValue.html) properties. It allows the user to enter the value between `MinValue` and `MaxValue`. 
@@ -214,7 +217,6 @@ doubleTextBox.Value = 100;
 {% endtabs %}
 
 ![Restrict the value of DoubleTextBox by the minimum and maximum values](Getting-Started_images/Getting-Started-img3.jpeg)
-
 
 ## Step Interval to increase or decrease the value
 
@@ -242,7 +244,6 @@ doubleTextBox.ScrollInterval = 4;
 {% endtabs %}
 
 ![DoubleTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
-
 
 ## Formatting the value
 
@@ -272,7 +273,6 @@ doubleTextBox.NumberFormat = new NumberFormatInfo()
 
 ![Setting DoubleTextBox Number Format](Getting-Started_images/wpf-double-text-box-number-format.png)
 
-
 ## Setting the Culture
 
 The `DoubleTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. The `Culture` is used to format the decimal separator and group separator of the `DoubleTextBox` value based on the respective culture.
@@ -297,4 +297,3 @@ doubleTextBox.Culture = new System.Globalization.CultureInfo("en-US");
 ![Setting DoubleTextBox Culture](Getting-Started_images/Getting-Started_img4.png)
 
 N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
-
