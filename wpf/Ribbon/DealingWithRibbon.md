@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Syncfusion Ribbon control
-description: This topic deal with RibbonState and ContextTabGroup
+description: This topic dealing  with  the Syncfusion WPF Ribbon Control. Defines Ribbon state and grouping RibbonTabs using ContextTabGroups.
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -155,6 +155,27 @@ _ribbon.RibbonState = Syncfusion.Windows.Tools.RibbonState.Adorner
 {% endhighlight %}
 
 {% endtabs %}
+
+## Resize Ribbon Window
+The ribbon control dynamically resizes as width of the window decreases, when the windows border touches the last placed Ribbon bar, the total Ribbon bar will be converted into a dropdown button and the items can be accessed by clicking on that dropdown arrow.
+
+The **IsAutoSizeFormEnabled** property must be set to True to get responsive ribbon window. Same behavior will be continued to every Ribbon bar while minimized continuously. Again, the Ribbon bar will be visible if the spacing between window border and Ribbon bar has enough space to allocate all the items in that Ribbon bar. The following snippet is used for resize the ribbon window.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Grid>
+ <syncfusion:Ribbon syncfusion:Ribbon.IsAutoSizeFormEnabled="True" x:Name="_ribbon" VerticalAlignment="Top">            
+ </syncfusion:Ribbon>
+ </Grid>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Resize Ribbon Window](RibbonResizeWindow-images/ResizeRibbonWindow.gif)
+
 
 ## Grouping RibbonTabs using ContextTabGroups
 

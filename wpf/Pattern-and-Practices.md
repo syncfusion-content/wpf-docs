@@ -78,18 +78,18 @@ public class ViewModel:NotificationObject
 	}
 	private void Collection()
 	{
-	model model = new model()
-	{
+		model model = new model()
+		{
 			HeaderName = "item1"
-	};
-	model model1 = new model()
-	{
+		};
+		model model1 = new model()
+		{
 			HeaderName = "item2"
-	};
-	model model2 = new model()
-	{
+		};
+		model model2 = new model()
+		{
 			HeaderName = "item3"
-	};
+		};
 		tabcollection.Add(model);
 		tabcollection.Add(model1);
 		tabcollection.Add(model2);
@@ -135,9 +135,9 @@ Public Class ViewModel
 		End Set
 	End Property
 	Private Sub Collection()
-	Dim model As New model() With {.HeaderName = "item1"}
-	Dim model1 As New model() With {.HeaderName = "item2"}
-	Dim model2 As New model() With {.HeaderName = "item3"}
+		Dim model As New model() With {.HeaderName = "item1"}
+		Dim model1 As New model() With {.HeaderName = "item2"}
+		Dim model2 As New model() With {.HeaderName = "item3"}
 		tabcollection.Add(model)
 		tabcollection.Add(model1)
 		tabcollection.Add(model2)
