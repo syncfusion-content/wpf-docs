@@ -98,6 +98,8 @@ public class ViewModel : NotificationObject
 
 {% endtabs %}
 
+When you are auto generating tabitem using `ItemsSource`, you need to set [HeaderTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.templatefield.headertemplate?view=netframework-4.8) property in [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) or [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8) to define header and content for tabitem.  
+
 In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle.HeaderTemplate` is defined to populate TabControl with content and header.
 
 {% tabs %}
@@ -120,38 +122,13 @@ In the below code, `ViewModel` bound to TabControl and `ItemContainerStyle.Heade
                         </DataTemplate>
                     </Setter.Value>
                 </Setter>
-                <Setter Property="Content" Value="{Binding Content, Mode=TwoWay}" />
             </Style>
         </syncfusion:TabControlExt.ItemContainerStyle>
-    </syncfusion:TabControlExt>
-</Grid>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-In the below code, `ViewModel` bound to TabControl and [ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) and [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8) are defined to populate TabControl with content and header.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window.DataContext>
-        <local:ViewModel />
-</Window.DataContext>
-<Grid>
-    <syncfusion:TabControlExt x:Name="tabControl"  
-                              ItemsSource="{Binding TabItems}">
-        <syncfusion:TabControlExt.ItemTemplate>
+        <syncfusion:TabControlExt.ContentTemplate>
             <DataTemplate>
-                <TextBlock Text="{Binding Header, Mode=TwoWay}" />
+                <TextBlock Text="{Binding Content}" />
             </DataTemplate>
-        </syncfusion:TabControlExt.ItemTemplate>            
-        <syncfusion:TabControlExt.ItemContainerStyle>
-            <Style TargetType="syncfusion:TabItemExt">
-                <Setter Property="Content" Value="{Binding Content, Mode=TwoWay}" />
-            </Style>
-        </syncfusion:TabControlExt.ItemContainerStyle>
+        </syncfusion:TabControlExt.ContentTemplate>
     </syncfusion:TabControlExt>
 </Grid>
 
@@ -165,9 +142,7 @@ N> Tab items are populated based on ItemsSource only if `ItemContainerStyle.Head
 
 ## TabItem Header
 
-When you are auto generating tabitem using `ItemsSource`, you need to set [HeaderTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.templatefield.headertemplate?view=netframework-4.8) property in [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) to define header for tabitem.  
-
-In another way, You can define tabitem header using `ItemTemplate` property. Otherwise, TabItem header will display the data object class name associated with tabitem.
+You can define tabitem header using [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8) or `HeaderTemplate` in [ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8) properties. Otherwise, TabItem header will display the data object class name associated with tabitem.
 
 N> The data object associated with tabitem is the BindingContext for both `ItemContainerStyle.HeaderTemplate` and `ItemTemplate`.
 
@@ -231,7 +206,7 @@ Below code is used to define the tabitem header using `ItemTemplate` property.
 
 ## TabItem content
 
-When you are auto generating tabitem using `ItemsSource`, You need to set [TabControlExt.ItemContainerStyle](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemcontainerstyle?view=netframework-4.8). Otherwise, TabItem content will display the data object class name which is associated with tabitem.
+You can define the tabitem content using [TabControlExt.ContentTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.contenttemplate?view=netframework-4.8) property. Otherwise, TabItem content will display the data object class name which is associated with tabitem.
 
 {% tabs %}
 
@@ -245,11 +220,11 @@ When you are auto generating tabitem using `ItemsSource`, You need to set [TabCo
                           Height="100" Width="280" 
                           ItemsSource="{Binding TabItems}"
                           >
-        <syncfusion:TabControlExt.ItemContainerStyle>
-            <Style TargetType="syncfusion:TabItemExt" >
-                <Setter Property="Content" Value="{Binding Content, Mode=TwoWay}" />            
-            </Style>
-        </syncfusion:TabControlExt.ItemContainerStyle>
+        <syncfusion:TabControlExt.ContentTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding Content}" />
+            </DataTemplate>
+        </syncfusion:TabControlExt.ContentTemplate>
     </syncfusion:TabControlExt>    
 </Grid>
 
