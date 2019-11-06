@@ -21,7 +21,7 @@ The built-in tabitem context menu has the following menu items:
 * **Close All But This** - Closes all the tabitem, except the current or selected tabitem.
 * **Close All** - Closes all the tabitem.
 
-N> The [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) in TabControl is an enum that includes option as **Hide** and **Delete**. When you click any default options(Close, Close All and Close All But This) in tabitem context menu and when the `CloseMode` is set to `Hide`, the tabitem moves to the hidden state and the selection will be moved to previous selected index while hiding it or when the `CloseMode` is set to `Delete`, the tabitem is removed from TabControl, and it automatically gets deleted from the tabitem collection.
+N> The [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) in TabControl is an enum that includes option **Hide** and **Delete**. When you click any default options (Close, Close All and Close All But This) in tabitem context menu and when the `CloseMode` is set to `Hide`, the tabitem moves to the hidden state or when the `CloseMode` is set to `Delete`, the tabitem is removed from TabControl, and it automatically gets deleted from the tabitem collection.
 
 {% tabs %}
 
