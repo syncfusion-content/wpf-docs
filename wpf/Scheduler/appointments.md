@@ -160,8 +160,8 @@ private void Schedule_ItemsSourceChanged(object sender, EventArgs e)
 ## Recurrence Appointment
 This section has briefly explained in following [link](https://help.syncfusion.com/wpf/scheduler/recurrence)
 
-## Edititng Appointemnt
-Scheduler supports to edit the appointment in UI by using 'AppointmentEditor' window. You can use this winow by double click on the appointment or right click on the appointment and select the edit option from the contextmenu.
+## Editing Appointment
+Scheduler supports to edit the appointment in UI by using 'AppointmentEditor' window. You can use this window by double click on the appointment or right click on the appointment and select the edit option from the `ContextMenu`.
 
 ContextMenu edit option
 
@@ -242,17 +242,17 @@ private void Schedule_AppointmentEditorClosed(object sender, AppointmentEditorCl
 ## Appointment deleting
 Scheduler supports three ways to remove the selected appointment
 1. Pressing Delete key
-2. Using contextmenu delete option.
+2. Using `ContextMenu` delete option.
 3. Using AppointmentEditor.
 
 ### Events
 
 #### AppointmentDeleting
 Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentDeleting_EV.html) event when delete the appointment.
-[AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDeletingEventArgs.html) has following memebers which provides information for `AppointmentDeleting` event.
+[AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDeletingEventArgs.html) has following members which provides information for `AppointmentDeleting` event.
 
 `Appointment` - Get the selected appointment
-`MappedObject` - Get the binding object detalis of selected appointment if schedule appointments are mapped with custom object.
+`MappedObject` - Get the binding object details of selected appointment if schedule appointments are mapped with custom object.
 `RecurrenceEditMode` - Gets or sets whether to delete particular occurrence or appointment sequence when delete a recurrence appointment. You can let end-user handle this option (using built-in dialog shown in scheduler) or define it by yourself using `AppointmentDeleting` event. 
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - By enabling this property, avoid deleting the appointment. 
 
@@ -268,8 +268,8 @@ this.Schedule.AllowEditing = false;
 {% endhighlight %}
 {% endtabs %}
 
-## Appointemnt resizing
-Scheduler supports resizing the appointment using the option `Resize`option from the `ScheduleAppointemnt` context menu. This support is available for all views except 'Month' view.
+## Appointment resizing
+Scheduler supports resizing the appointment using the option `Resize`option from the `ScheduleAppointment` context menu. This support is available for all views except 'Month' view.
 
 ![WPF Scheduler appointment resizing using contextmenu](appointments_images/appointment-resizing-contextmenu.png)
 
@@ -417,8 +417,41 @@ N> Appointment which lasts through an entire day (exact 24 hours) will be consid
 ## Appointment generating behavior
 Scheduler supports to change the all day appointment creation behavior by using [AppointmentBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentBehavior.html) property.
 
-`Default` - Appointmnets will be generated in AllDay panel when enable the `AllDay` property. 
+`Default` - Appointments will be generated in all day panel when enable the `AllDay` property. 
 `ExChangeBehavior` - Appointments will be generated when appointment has scheduled for full day.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="Schedule" AppointmentBehavior="ExchangeBehavior">
+<syncfusion:SfSchedule.Appointments>
+    <syncfusion:ScheduleAppointment StartTime="10/09/2019 10:0:0" EndTime="10/11/2019 11:0:0" Subject="Meeting"  Location="Hutchison road"/>
+</syncfusion:SfSchedule.Appointments>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+// Creating an instance for schedule appointment collection
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+//Adding schedule appointment in schedule appointment collection 
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = new DateTime(2019, 10, 09, 10, 0, 0),
+    EndTime = new DateTime(2019, 10, 11, 11, 0, 0),
+    Subject = "Meeting",
+    Location = "Hutchison road",
+});
+this.Schedule.AppointmentBehavior = AppointmentBehavior.ExchangeBehavior;
+//Adding schedule appointment collection to Appointments of Scheduler
+this.Schedule.Appointments = scheduleAppointmentCollection;
+{% endhighlight %}
+{% endtabs %}
+
+Default
+
+![WPF Scheduler appointment default behavior](appointments_images/appointment-default-behavior.png)
+
+ExchangeBehavior
+
+![WPF Scheduler appointment exchange behavior](appointments_images/appointment-exchange-behavior.png)
 
 ## All day appointment panel
 All-day appointment and Spanned appointment doesn’t block out entire time slot in Scheduler, rather it will render in separate layout exclusively for all-day appointment. It can be disabled by setting [ShowAllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ShowAllDay.html) property.
@@ -503,7 +536,7 @@ this.schedule.AppointmentSelectionBrush = Brushes.DarkGreen;
 ![WPF Scheduler appointment selection brush](appointments_images/appointment-selection-brush.png)
 
 ## Customize the appointment status collection
-Scheduler supports to customize the appoinment status collection by using [AppointmentStatusCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentStatusCollection.html) property.
+Scheduler supports to customize the appointment status collection by using [AppointmentStatusCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentStatusCollection.html) property.
 
 {% tabs %}
 {% highlight xaml %}
