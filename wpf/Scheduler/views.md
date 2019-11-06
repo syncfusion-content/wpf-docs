@@ -303,6 +303,22 @@ schedule.CurrentTimeIndicatorTemplate = (DataTemplate)this.Resources["CurrentTim
 
 ![WPF Scheduler dayview customize current time indicator](views_images/dayview-current-time-indicator-template-customization.png)
 
+## Change hours or minutes time label visibility
+Scheduler supports to visible/collapse the hours and minutes time label visiblity by using [MajorTickVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickVisibility.html) and [MinorTickVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickVisibility.html) properties.
+
+{% tabs %}
+{% highlight xaml %}
+<Schedule:SfSchedule ScheduleType="Day" MajorTickVisibility="Collapsed" MinorTickVisibility="Collapsed" />
+{% endhighlight %}
+{% highlight c#%}
+this.schedule.ScheduleType = ScheduleType.Day;
+this.schedule.MajorTickVisibility = Visibility.Collapsed;
+this.schedule.MinorTickVisibility = Visibility.Collapsed;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler dayview hiding time labels ](views_images/dayview-major-minor-label-visibility.png)
+
 ## Appearance
 
 ### Changing time label background
@@ -333,7 +349,7 @@ Data Type</th><th>
 Description</th></tr>
 <tr>
 <td>
-<a href="(https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStroke.html)">MajorTickStroke</a></td><td>
+<a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStroke.html">MajorTickStroke</a></td><td>
 Brush</td><td>
 Used to customize the major line stroke of the day, week, workweek and timeline views.</td></tr>
 <tr>
