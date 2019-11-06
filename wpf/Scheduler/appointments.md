@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-## Appointments
+# Appointments
 
 Scheduler control has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentCollection.html). [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class that contains the details of the scheduled appointment.
 
@@ -36,7 +36,7 @@ this.Schedule.Appointments = scheduleAppointmentCollection;
 
 ![WPF Scheduler adding appointments](appointments_images/adding-appointments.png)
 
-### AppointmentCollectionChanged
+## AppointmentCollectionChanged
 Scheduler notifies changes of `Appointments` collection by [AppointmentCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentCollectionChanged_EV.html) event.
 This event triggers with default [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs).
 
@@ -50,7 +50,7 @@ private void Schedule_AppointmentCollectionChanged(object sender, System.Collect
 {% endhighlight %}
 {% endtabs %}
 
-## Mapping
+## Data Binding
 
 Schedule supports full data binding to any type of `IEnumerable` source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
