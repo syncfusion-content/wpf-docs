@@ -1,43 +1,40 @@
 ---
 layout: post
-title: Getting Started| PercentTextBox  | WPF | Syncfusion
-description: This section explains how to add percent textbox control into wpf application and describes it's basic essential features.
+title: Getting started with WPF PercentTextBox control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF PercentTextBox control and more details about the control features.
 platform: WPF
-control: PercentTextBox 
+control: PercentTextBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting started with WPF PercentTextBox
+
+This section explains how to create a WPF `PercentTextBox` control and its features.
 
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#percenttextbox) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-You can find more details about installing the NuGet package in a WPF application in the following link:
+You can find more details about installing the NuGet package in a WPF application in the following link: 
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-## Create a simple application with PercentTextBox
+## Adding WPF PercentTextBox via designer
 
-You can create a WPF application with the PercentTextBox control using the following steps:
+You can add the [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
-## Create a project
+* Syncfusion.Shared.WPF
 
-Create a new WPF project in Visual Studio to display the PercentTextBox control with functionalities.
+![PercentTextBox control added by designer](Getting-Started_images/wpf-percent-text-box-added-by-designer.png)
 
-## Add control through designer
+## Adding WPF PercentTextBox via XAML
 
-The PercentTextBox control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.WPF** assembly reference will be added automatically.
+To add the PercentTextBox control manually in XAML, follow these steps:
+1. Create a new WPF project in Visual Studio.
 
-![wpf percent text box control added by designer](Getting-Started_images/wpf-percent-text-box-added-by-designer.png)
-
-## Adding control manually in XAML
-
-To add the control manually in XAML, follow the given steps:
-
-1. Add the **Syncfusion.Shared.WPF** assembly reference to the project.
-2. Import Syncfusion WPF schema http://schemas.syncfusion.com/wpf in the XAML page.
-3. Declare the PercentTextBox control in the XAML page.
+2. Add the **Syncfusion.Shared.WPF** assembly references to the project.
+ 
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `PercentTextBox` control in XAML page.
 
 {% tabs %}
 {% highlight XAML %}
@@ -47,80 +44,208 @@ To add the control manually in XAML, follow the given steps:
         x:Class="PercentTextBoxSample.MainWindow"
         Title="PercentTextBox Sample" Height="350" Width="525">
     <Grid>
-        <!-- Adding PercentTextBox control -->
-        <syncfusion:PercentTextBox x:Name="percentTextBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100"/>
+        <!--Adding PercentTextBox control -->
+        <syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}
 
-## Adding control manually in C\#
+## Adding WPF PercentTextBox via C\#
 
-To add the control manually in C#, follow the given steps:
+To add the PercentTextBox control manually in C#, follow these steps:
 
-1. Add the **Syncfusion.Shared.WPF** assembly reference to the project. 
-2. Import the PercentTextBox namespace **using Syncfusion.Windows.Shared;**.
-3. Create a PercentTextBox instance, and add it to the window.
+1. Create a new WPF application via Visual Studio.
+
+2. Add the **Syncfusion.Shared.WPF** assembly references to the project.
+
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
+
 using Syncfusion.Windows.Shared;
-namespace PercentTextBoxSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-            //Creating an instance of PercentTextBox control
-            PercentTextBox percentTextBox = new PercentTextBox();
-            //Adding percentTextBox as window content
-            this.Content = percentTextBox;
-        } 
-    }
-}
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf percent added by code](Getting-Started_images/wpf-percent-text-box-value.png)
+4. Create an instance of PercentTextBox and add it to the window.
 
-## Bind value
+{% tabs %}
+{% highlight C# %}
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind the data to the PercentTextBox using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValue.html) property. Refer to the [Data binding](https://help.syncfusion.com/wpf/percenttextbox/binding-support) section for more details.
+//Creating an instance of PercentTextBox control
+
+PercentTextBox percentTextBox = new PercentTextBox();
+
+// Setting height and width to PercentTextBox
+
+percentTextBox.Height = 25;
+percentTextBox.Width = 100;
+
+//Adding PercentTextBox as window content
+
+this.Content = percentTextBox;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PercentTextBox control added to Window by code](Getting-Started_images/wpf-percent-text-box-control-added-manually.png)
+
+## Setting Value
+
+The percent value of the `PercentTextBox` can be set by using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValue.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="23" PercentValue="100"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 100;
+percentTextBox.Height = 23;
+percentTextBox.PercentValue = 100;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Set the percent value for PercentTextBox](Getting-Started_images/wpf-percent-text-box-value.png)
+
+N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the percent value for the PercentTextBox. Use only the `PercentValue` property.
+
+### Binding Value
+
+Data binding is the method of forming a connection between the application  UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `PercentTextBox` using the `Value` Property.
+
+The following code snippets illustrate the percent value binding from one `PercentTextBox` to another.
 
 {% tabs %}
 {% highlight XAML %}
 <StackPanel>
-<syncfusion:PercentTextBox x:Name="percentTextBox1" Width="150" Margin="10"/>
-<syncfusion:PercentTextBox x:Name="percentTextBox2" Width="150" Margin="10" PercentValue="{Binding ElementName=iercentTextBox1,Path=PercentValue,Mode=TwoWay}"/>
+<syncfusion:PercentTextBox x:Name="percentTextBox1" Height="25" Width="100" PercentValue="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}"/>
+<syncfusion:PercentTextBox x:Name="percentTextBox2" Width="100" Height="25" PercentValue="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" />
 </StackPanel>
 {% endhighlight %}
 {% endtabs %}
 
-![wpf percent text box value](Getting-Started_images/wpf-percent-textbox-binding-value.png)
+ViewModel.cs
 
-## Setting the minimum and maximum values
+{% tabs %}
+{% highlight C# %}
 
-You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~MaxValue.html) properties of the PercentTextBox.
+class ViewModel : NotificationObject
+{
+    private double myValue;
+    public double MyValue
+    {
+        get
+        {
+            return myValue;
+        }
+        set
+        {
+            myValue = value;
+            RaisePropertyChanged("MyValue");
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![PercentTextBox percent value binding](Getting-Started_images/ValueBinding.png)
+
+## Value Changed Notification
+
+The `PercentTextBox` control can notifies the percent value changes through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValueChanged_EV.html) event. You can get old percent value and new percent value from `OldValue` and `NewValue` properties in `PercentValueChanged` event.
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:PercentTextBox PercentValueChanged="PercentTextBox_PercentValueChanged"/>
+
+{% endhighlight %}
+{% highlight C# %} 
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.PercentValueChanged += new PropertyChangedCallback(PercentTextBox_PercentValueChanged);
+
+{% endhighlight %}
+{%endtabs%}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    // Get old and new percent value
+    var newValue = e.NewValue;
+    var oldValue = e.OldValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Min Max Value Restriction
+
+The `PercentValue` of `PercentTextBox` can be restricted within maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~MaxValue.html) properties. It allows the user to enter the percent value between `MinValue` and `MaxValue`. 
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25" PercentValue="100" MinValue="-999.99" MaxValue="999.99"/>
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25" PercentValue="100" MaxValue="999.99" MinValue="-999.99"/>
 {% endhighlight %}
 {% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 100;
+percentTextBox.Height = 25;
 //Setting minimum value
 percentTextBox.MinValue = -999.99;
 //Setting maximum value
 percentTextBox.MaxValue = 999.99;
+percentTextBox.PercentValue = 100;
+
 {% endhighlight %}
 {% endtabs %}
 
-## Number format
+![Restrict the percent value of PercentTextBox by the minimum and maximum values](Getting-Started_images/wpf-percent-text-box-value.png)
 
-You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentGroupSeparator.html), [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentGroupSizes.html), [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentDecimalDigits.html), [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentDecimalSeparator.html), [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentNegativePattern.html), [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentPositivePattern.html), and [PercentageSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentageSymbol.html) properties of PercentTextBox.
+## Step Interval to increase or decrease the value
+
+The `PercentTextBox` control allows to increase or decrease the percent value by pressing up and down arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" PercentValue="8" 
+                          IsScrollingOnCircle="True" ScrollInterval="4"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;
+percentTextBox.Height = 25;
+percentTextBox.MinValue = 0;
+percentTextBox.MaxValue = 100;
+percentTextBox.PercentValue = 8;
+percentTextBox.IsScrollingOnCircle = true;
+percentTextBox.ScrollInterval = 4;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PercentTextBox percent value increment or decrement interval](Getting-Started_images/Step-Interval.png)
+
+## Formatting the value
+
+You can customize the number format by either setting the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [PercentGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentGroupSeparator.html), [PercentGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentGroupSizes.html), [PercentDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentDecimalDigits.html), [PercentDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentDecimalSeparator.html), [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentNegativePattern.html), [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentPositivePattern.html), and [PercentageSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentageSymbol.html) properties of `PercentTextBox`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -130,10 +255,37 @@ You can customize the number format by either setting the [NumberFormat](https:/
 PercentTextBox percentTextBox = new PercentTextBox();
 percentTextBox.Width = 150;
 percentTextBox.Height = 25;
-percentTextBox.PercentValue = 1234567;percentTextBox.PercentageSymbol = "%";
-percentTextBox.PercentDecimalDigits = 4;percentTextBox.PercentDecimalSeparator = "/";
+percentTextBox.PercentValue = 1234567;
+percentTextBox.PercentageSymbol = "%";
+percentTextBox.PercentDecimalDigits = 4;
+percentTextBox.PercentDecimalSeparator = "/";
 percentTextBox.PercentGroupSeparator = "*";
 {% endhighlight %}
 {% endtabs %}
 
-![wpf percent text box number format](Getting-Started_images/wpf-percent-textbox-number-format.png)
+![Setting PercentTextBox Number Format](Getting-Started_images/wpf-percent-textbox-number-format.png)
+
+## Setting the Culture
+
+The `PercentTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. The `Culture` is used to format the decimal separator and group separator of the `PercentTextBox` percent value based on the respective culture.
+
+{%tabs%}
+{% highlight xaml %} 
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" Culture="en-US" PercentValue="1234567"/>
+
+{% endhighlight %}
+{% highlight C# %} 
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;
+percentTextBox.Height = 25;
+percentTextBox.PercentValue = 1234567;
+percentTextBox.Culture = new System.Globalization.CultureInfo("en-US");
+
+{% endhighlight %}
+{%endtabs%}
+
+![Setting PercentTextBox Culture](Getting-Started_images/Getting-Started_culture.png)
+
+N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.

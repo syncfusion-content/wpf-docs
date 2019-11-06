@@ -1,0 +1,212 @@
+---
+layout: post
+title: Changing Percent Value in WPF PercentTextBox control | Syncfusion
+description: Learn here about Changing Percent Value with Syncfusion WPF PercentTextBox control and more details about the control features.
+platform: wpf
+control: PercentTextBox 
+documentation: ug
+---
+
+# Changing Percent Value in WPF PercentTextBox
+
+The [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) allows the user to change the percent value using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValue.html) property.
+
+%tabs%}
+{% highlight xaml %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25"
+                          Width="150" PercentValue="10"/>
+
+{% endhighlight %}                       
+{% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;
+percentTextBox.Height = 25;
+percentTextBox.PercentValue = 10;
+
+{% endhighlight %}
+{%endtabs%}
+
+![PercentTextBox displaying a value](Changing-Percent-Value_images/SettingValue.jpeg)
+
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). By assigning a percent value to the `PercentValue` property by binding, you can change the `PercentTextBox` percent value.
+
+The following code snippets illustrate the percent value binding from one `PercentTextBox` to another.
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox1" PercentValue="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Height="25" Width="100"/>
+<syncfusion:PercentTextBox x:Name="percentTextBox2" PercentValue="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" Width="100" Height="25"  />
+
+{% endhighlight %}
+{%endtabs%}
+
+ViewModel.cs
+
+{% tabs %}
+{% highlight C# %}
+
+class ViewModel : NotificationObject
+{
+    private double myValue;
+    public double MyValue
+    {
+        get
+        {
+            return myValue;
+        }
+        set
+        {
+            myValue = value;
+            RaisePropertyChanged("MyValue");
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Binding a value to PercentTextBox](Changing-Percent-Value_images/ValueBinding.png)
+
+## Value Changed Event
+
+The `PercentTextBox` control can notify changes in percent value through the [PercentValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValueChanged_EV.html) event. In `PercentValueChanged` event, you can get old percent value and new percent value from the `OldValue` and  `NewValue` properties.
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:PercentTextBox PercentValueChanged="PercentTextBox_PercentValueChanged"/>
+
+{% endhighlight %}
+{% highlight C# %} 
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.PercentValueChanged += new PropertyChangedCallback(PercentTextBox_PercentValueChanged);
+
+{% endhighlight %}
+{%endtabs%}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    // Get old and new percent value
+    var newValue = e.NewValue;
+    var oldValue = e.OldValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Setting the Null value
+
+ By default, the `PercentTextBox` control will display zero value when the `PercentValue` is set to `null`. You can use the [NullValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~NullValue.html) and [UseNullOption](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~UseNullOption.html) properties to show the null or any other percent value instead of zero.
+ 
+ The default value of the `NullValue` property is `null`, you can reset this to any other percent value. It will display only on setting the `UseNullOption` property is set to `true`.
+ 
+**NullValue = Null**
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25"
+                          Width="100" UseNullOption="True"  NullValue="{x:Null}"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 100;
+percentTextBox.Height = 25;
+percentTextBox.NullValue = null;
+percentTextBox.UseNullOption = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting null as NullValue in PercentTextBox](Changing-Percent-Value_images/NullValue_null.png)
+
+**NullValue = 10**
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25"
+                          Width="100" UseNullOption="True" NullValue="10"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 100;
+percentTextBox.Height = 25;
+percentTextBox.NullValue = 10;
+percentTextBox.UseNullOption = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting Null value in PercentTextBox](Changing-Percent-Value_images/NullValue.jpeg)
+
+## Setting Watermark Text
+
+We can display certain information within the control by using the [WaterMarkText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkText.html) property. `WaterMarkText` is shown when the [WatermarkTextIsVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTextIsVisible.html) property is `true` and the Percent value is `null` or empty, the control is not in focus and the `UseNullOption` property is `true`.
+
+### Setting the WatermarkText Foreground
+
+The `PercentTextBox` allows you to set the desired brush as a foreground for `WaterMarkText` using [WaterMarkTextForeground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WaterMarkTextForeground.html) property. The default color of `WaterMarkTextForeground` is `Black`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100"
+                          Height="25" UseNullOption="True" WatermarkText="Type here"
+                          WatermarkTextIsVisible="True" WatermarkTextForeground="Red"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 100;
+percentTextBox.Height = 25;
+percentTextBox.UseNullOption = true;
+percentTextBox.WatermarkText = "Type Here";
+percentTextBox.WatermarkTextIsVisible = true;
+percentTextBox.WatermarkTextForeground = Brushes.Red;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PercentTextBox displaying a watermark text in red color](Changing-Percent-Value_images/WaterMark-Foreground.jpeg)
+
+### Setting Watermark Template
+
+You can customize the Visual appearance of the `WatermarkText` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~WatermarkTemplate.html) property.
+
+{% highlight xaml %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25"
+                          WatermarkText="Type Here" CornerRadius="3" 
+                          WatermarkTextIsVisible="True" WatermarkOpacity="0.5" 
+                          UseNullOption="True">
+    <syncfusion:PercentTextBox.WatermarkTemplate >
+        <DataTemplate>
+            <Border Background="Red">
+                <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </Border>
+        </DataTemplate>
+    </syncfusion:PercentTextBox.WatermarkTemplate>
+</syncfusion:PercentTextBox>
+
+{% endhighlight %}
+
+![PercentTextBox displaying watermark text using a data-template](Changing-Percent-Value_images/WaterMark-Template.png)
+
+N> The `UseNullOption` property must be enabled if you want to see `NullValue` or `WaterMarkText` in `PercentTextBox` control.
+
+N> If both `NullValue` and `WaterMarkText` are specified, you will only see `NullValue` but not `WaterMarkText`.
