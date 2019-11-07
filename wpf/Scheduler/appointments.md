@@ -96,7 +96,7 @@ public class Event
 {
     public string EventName { get; set; }
     public DateTime From { get; set; }
-    public DateTime From { get; set; }
+    public DateTime To { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
