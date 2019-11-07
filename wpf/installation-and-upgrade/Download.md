@@ -25,7 +25,7 @@ There are two ways to download our 30-day trial.
 4. You can unlock the installer using the unlock key, also you can unlock the installer using the Syncfusion registered login credential.
 5. You can download the trial installer using the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page under your registered account at any time before the trial expire. (Refer the below screenshot).
  
-    ![Trail and downloads of Syncfusion Essential Studio](download-images/trail.png)
+    ![Trail and downloads of Syncfusion Essential Studio](download-images/trail-download.png)
 
 ### Start Trial Page
 1. You can evaluate our 30-day free trial from [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page.
@@ -41,7 +41,7 @@ There are two ways to download our 30-day trial.
 8. No need of unlock key to unlock the online installer.
 9. You can unlock the installer using the Syncfusion registered login credential.
 
-    ![License and downloads of Syncfusion Essential Studio](download-images/license.png)
+    ![License and downloads of Syncfusion Essential Studio](download-images/license-installer.png)
 
     N> You can generate the license key for your active trial products from [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key will be mandatory to use our trial products in your application. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
 
@@ -63,7 +63,7 @@ There are two ways to download our 30-day trial.
 10. No need of unlock key to unlock the online installer.
 11. You can unlock the installer using the unlock key for versions earlier to 16.2, also you can unlock the installer using the Syncfusion registered login credential.
 
-    ![License and downloads of Syncfusion Essential Studio](download-images/registeredlicense.png)
+    ![License and downloads of Syncfusion Essential Studio](download-images/license-download.png)
 
     N> You can generate the license key for your licensed products from [License & Downloads](https://www.syncfusion.com/account/downloads) page. This license key will be required only from release version 16.2. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
 
