@@ -36,7 +36,7 @@ this.Schedule.Appointments = scheduleAppointmentCollection;
 
 ![WPF Scheduler adding appointments](appointments_images/adding-appointments.png)
 
-### AppointmentCollectionChanged
+## AppointmentCollectionChanged
 Scheduler notifies changes of `Appointments` collection by [AppointmentCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentCollectionChanged_EV.html) event.
 This event triggers with default [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs).
 
