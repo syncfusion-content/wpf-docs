@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of Month view in WPF Scheduler | Syncfusion.
-description: This section explains about the appearance customization of Month view for WPF Scheduler.
+description: This section explains about how to customize the appearance and change the date format for Month view in WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
