@@ -369,17 +369,17 @@ Brush</td><td>
 Used to customize the minor line label stroke of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStrokeDashArray.html">MajorTickStrokeDashArray</td><td>
+<a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStrokeDashArray.html">MajorTickStrokeDashArray</a></td><td>
 DoubleCollection</td><td>
 Used to customize the major line stroke dash array of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStrokeDashArray.html">MinorTickStrokeDashArray</td><td>
+<a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStrokeDashArray.html">MinorTickStrokeDashArray</a></td><td>
 DoubleCollection</td><td>
 Used to customize the minor line stroke dash array of the day, week, workweek and timeline views.</td></tr>
 <tr>
 <td>
-<a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~DayViewVerticalLineStroke.html">DayViewVerticalLineStroke</td><td>
+<a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~DayViewVerticalLineStroke.html">DayViewVerticalLineStroke</a></td><td>
 Brush</td><td>
 Used to customize the vertical line stroke of the day, week and workweek view.</td></tr>
 </table>
