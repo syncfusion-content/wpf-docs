@@ -102,7 +102,7 @@ this.schedule.CellSelectionBrush = Brushes.SkyBlue;
 ![WPF Scheduler month view selection background](monthview_images/monthview-cell-selection-brush.png)
 
 ## Current day highlighting
-Scheduler supports to change current day background and foreground for mont view by using [CurrentDateBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentDateBackground.html) and [CurrentDateForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentDateForeground.html) property.
+Scheduler supports to change current day background and foreground for month view by using [CurrentDateBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentDateBackground.html) and [CurrentDateForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentDateForeground.html) property.
 
 {% tabs %}
 {% highlight xaml %}

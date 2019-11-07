@@ -150,7 +150,7 @@ this.schedule.ScheduleType = ScheduleType.TimeLine;
 ![WPF scheduler timelineview](Getting-Started_images/Timeline-View.png)
 
 ## Appointments
-Scheduler has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) collections. You need to allocate the collection generated to [Appointemnts](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~Appointments.html) property.
+Scheduler has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) collections. You need to allocate the collection generated to [Appointments](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~Appointments.html) property.
 
 ### Adding Appointments
 `ScheduleAppointment` is a class that includes the specific of scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~Location.html), [AllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AllDay.html), [IsRecursive](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursive.html) properties.
@@ -182,9 +182,9 @@ You can also map custom appointments data to our scheduler.
 
 Here steps to render meetings using scheduler control with respective custom data properties created in a class `Meeting`.
 
-* Creating custom class to map that objecs with `ScheduleAppointment`
+* Creating custom class to map that objects with `ScheduleAppointment`
 * Populating the data objects
-* Mapping the dataobject to `ScheduleAppointment`
+* Mapping the data object to `ScheduleAppointment`
 * Binding data source for Scheduler control.
 
 #### Creating custom class to map that object with appointment
@@ -324,7 +324,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-#### Mapping the dataobject to schedule appointment
+#### Mapping the data object to schedule appointment
 You can map those properties of `Meeting` class with our scheduler control by using [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html) property.
 
 {% tabs %}

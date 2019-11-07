@@ -175,7 +175,7 @@ Scheduler supports to customize the non-accessible timeslots by using [NonAccess
 ![WPF scheduler non accessible time slots using template](views_images/non-accessible-blocks-template.png)
 
 ## Change non-working days
-By default Schedule consides `Saturday` and `Sunday` as a non working days. You can change the non-working days using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property. 
+By default Schedule considers `Saturday` and `Sunday` as a non working days. You can change the non-working days using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
