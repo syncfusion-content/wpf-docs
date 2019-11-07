@@ -7,9 +7,9 @@ control: SfSchedule
 documentation: ug
 ---
 
-## Appointments
+# Appointments
 
-Scheduler control has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentCollection.html). [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class that contains the details of the scheduled appointment.
+Scheduler control has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentCollection.html). [ScheduleAppointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class that contains the details of the scheduled appointment and `ScheduleAppointment` has binding support for binding with custom objects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -50,7 +50,7 @@ private void Schedule_AppointmentCollectionChanged(object sender, System.Collect
 {% endhighlight %}
 {% endtabs %}
 
-## Mapping
+## Data Binding
 
 Schedule supports full data binding to any type of `IEnumerable` source. Specify the [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
@@ -62,12 +62,12 @@ Schedule supports full data binding to any type of `IEnumerable` source. Specify
 <tr><td><a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~EndTimeZoneMapping.html">EndTimeZoneMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~EndTimeZone.html">EndTimeZone</a>.</td></tr>
 <tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~SubjectMapping.html">SubjectMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~Subject.html">Subject</a>.</td></tr>
 <tr><td><a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~AppointmentBackgroundMapping.html">AppointmentBackgroundMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AppointmentBackground.html">AppointmentBackground</a>.</td></tr>
-<tr><td><a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~AllDayMapping.html">AllDayMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AllDay.html">AllDay</a>.</td></tr>
-<tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~RecurrenceRuleMapping.html">RecurrenceRuleMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html">RecurrenceRule</a>.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~AllDayMapping.html">AllDayMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AllDay.html">AllDay</a>. Refer the following <a href="#all-day-appointments">link</a> to know more about the AllDay</td></tr>
+<tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~RecurrenceRuleMapping.html">RecurrenceRuleMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceRule.html">RecurrenceRule</a>. Refer the following <a href="https://help.syncfusion.com/wpf/scheduler/recurrence#recurrence-rule">link</a> to know more about the RecurrenceRule</td></tr>
 <tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~RecurrenceTypeMapping.html">RecurrenceTypeMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.RecurrenceProperties~RecurrenceType.html">RecurrenceType</a>.</td></tr>
 <tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~RecurrenceProperitesMapping.html">RecurrenceProperitesMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecurrenceProperites.html">RecurrenceProperites</a>.</td></tr>
-<tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~RecursiveExceptionDatesMapping.html">RecursiveExceptionDatesMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecursiveExceptionDates.html">RecursiveExceptionDates</a>.</td></tr>
-<tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~ReminderTimeMapping.html">ReminderTimeMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's<a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html"> ReminderTime</a>.</td></tr>
+<tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~RecursiveExceptionDatesMapping.html">RecursiveExceptionDatesMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~RecursiveExceptionDates.html">RecursiveExceptionDates</a>. Refer the following <a href="https://help.syncfusion.com/wpf/scheduler/recurrence#recursiveexceptiondates">link</a> to know more about the RecursiveExceptionDates</td></tr>
+<tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~ReminderTimeMapping.html">ReminderTimeMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's<a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReminderTime.html"> ReminderTime</a>. Refer the following <a href="https://help.syncfusion.com/wpf/scheduler/reminder">link</a> to know more about the ReminderTime</td></tr>
 <tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~IsRecursiveMapping.html">IsRecursiveMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursive.html">IsRecursive</a>.</td></tr>
 <tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~NotesMapping.html">NotesMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~Notes.html">Notes</a>.</td></tr>
 <tr><td><a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping~LocationMapping.html">LocationMapping</a></td><td>This property is intended to map the custom class property name that is identical to ScheduleAppointment's <a href="https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~Location.html">Location</a>.</td></tr>
@@ -82,25 +82,25 @@ Schedule supports full data binding to any type of `IEnumerable` source. Specify
 N> Custom appointment class should contain two DateTime fields and a string field as mandatory.
 
 ### Creating custom appointments
-Scheduler supports to create a custom appointment by using property. You can create a custom class `MappedAppointment` with mandatory fields `MappedStartTime`, `MappedEndTime` and `MappedSubject`.
+Scheduler supports to create a appointment by using custom object. You can create a custom class `Event` with mandatory fields `From`, `From` and `EventName`.
 
 {% tabs %}
 {% highlight c# %}
 /// <summary>   
 /// Represents custom data properties.   
 /// </summary> 
-public class MappedAppointment
+public class Event
 {
-    public string MappedSubject { get; set; }
-    public DateTime MappedStartTime { get; set; }
-    public DateTime MappedEndTime { get; set; }
+    public string EventName { get; set; }
+    public DateTime From { get; set; }
+    public DateTime From { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
 
 N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map those properties of `MappedAppointment` class with our Scheduler control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) and bind the mapping collection with scheduler control using [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ItemsSource.html) property.
+You can map those properties of `Event` class with our Scheduler control by using [AppointmentMapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMapping.html) and bind the mapping collection with scheduler control using [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ItemsSource.html) property.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -112,12 +112,12 @@ You can map those properties of `MappedAppointment` class with our Scheduler con
     WindowState="Maximized">
 
     <Grid Name="grid">
-    <Schedule:SfSchedule Name="schedule" ScheduleType="Day" ItemsSource="{Binding MappedAppointments}">
+    <Schedule:SfSchedule Name="schedule" ScheduleType="Day" ItemsSource="{Binding Events}">
     <Schedule:SfSchedule.AppointmentMapping>
     <Schedule:ScheduleAppointmentMapping
-    SubjectMapping="MappedSubject"
-    StartTimeMapping="MappedStartTime"
-    EndTimeMapping="MappedEndTime"/>
+    SubjectMapping="EventName"
+    StartTimeMapping="From"
+    EndTimeMapping="To"/>
     </Schedule:SfSchedule.AppointmentMapping>
     </Schedule:SfSchedule>
     </Grid>
@@ -126,14 +126,14 @@ You can map those properties of `MappedAppointment` class with our Scheduler con
 {% highlight c# %}
 public partial class MainWindow : Window
 {
-    public ObservableCollection<MappedAppointment> MappedAppointments { get; set; }
+    public ObservableCollection<Event> Events { get; set; }
     public MainWindow()
     {
         InitializeComponent();
-        MappedAppointments = new ObservableCollection<MappedAppointment>
+        Events = new ObservableCollection<Event>
         {
-            new MappedAppointment{MappedSubject = "Meeting", MappedStartTime = DateTime.Now.Date.AddHours(10), MappedEndTime = DateTime.Now.Date.AddHours(11)},
-            new MappedAppointment{MappedSubject = "Conference", MappedStartTime = DateTime.Now.Date.AddHours(15), MappedEndTime = DateTime.Now.Date.AddHours(16)},
+            new Event{EventName = "Meeting", From = DateTime.Now.Date.AddHours(10), To = DateTime.Now.Date.AddHours(11)},
+            new Event{EventName = "Conference", From = DateTime.Now.Date.AddHours(15), To = DateTime.Now.Date.AddHours(16)},
         };
         this.DataContext = this;
     }
@@ -160,192 +160,17 @@ private void Schedule_ItemsSourceChanged(object sender, EventArgs e)
 ## Recurrence Appointment
 This section has briefly explained in following [link](https://help.syncfusion.com/wpf/scheduler/recurrence)
 
-## Editing Appointment
-Scheduler supports to edit the appointment in UI by using 'AppointmentEditor' window. You can use this window by double click on the appointment or right click on the appointment and select the edit option from the `ContextMenu`.
+## Add new appointment
+Scheduler supports to add the new appointment by using the `Appointment Editor` window it will appear when you double click or select the `AddNew` option from the contextmenu on the time when you want the appointment occur.
 
-ContextMenu edit option
-
-![WPF Scheduler appointment editing using contextmenu](appointments_images/appointment-edit-contextmenu.png)
+Add new appointment using ContextMenu
+![WPF Scheduler add new appointment](appointments_images/appointment-addnew.png)
 
 Appointment editor window
-
-![WPF Scheduler appointment editor window](appointments_images/appointment-editor-window.png)
-
-### Event
-
-#### AppointmentEditorOpening
-Scheduler notifies by  [AppointmentEditorOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorOpening_EV.html) when open the appointment editor to edit the event. 
-[AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) has following members which provides information for `AppointmentEditorOpening` event.
-
-[Action](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~Action.html) - Get the action(add or delete or edit) for the selected appointment.
-
-[Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~Appointment.html) - Get the selected appointment details.
-
-[SelectedResource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~SelectedResource.html) - Get the selected appointment resource details if scheduler does have the resource.
-
-[StartTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~StartTime.html) - Get the appointment start time
-
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - To avoid the default appointment editor showing by enabling this property. 
-
-For example, to use custom the appointment editor window instead of default appointment editor window you can handle [AppointmentEditorOpening](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorOpening_EV.html) event.
-
-{% tabs %}
-{% highlight c# %}
-this.schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
-private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
-{
-    //To handle the default appointment editior window by setting the e.Cancel value as true.
-    e.Cancel = true;
-    if (e.Appointment != null)
-    {
-        //Display the custom appointment editor window to edit the appointment
-    }
-    else
-    {
-        //Display the custom appointment editor window to add new appointment
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-#### AppointmentEditorClosed
-Scheduler notifies by [AppointmentEditorClosed](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorClosed_EV.html) when close the appointment editor window.
-[AppointmentEditorClosedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html) event has following members which provides information for `AppointmentEditorClosed` event.
-
-[Action](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~Action.html) - Gets the action of appointment which is add or delete or edit.
-
-[EditedAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~EditedAppointment.html) - Gets the edited appointment details if appointment editor closed with edit action.
-
-[OriginalAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~OriginalAppointment.html) - Gets the selected appointment details.
-
-[IsNew](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~IsNew.html) - Gets the appointment is new or not. 
-
-[Handled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs~Handled.html) - To handle appointment editor changes update into the Scheduler `Appointments` collection.
-
-For example, to handle the appointment adding for today's date, you can handle the `AppointmentEditorClosed` event.
-
-{% tabs %}
-{% highlight c# %}
-this.schedule.AppointmentEditorClosed += Schedule_AppointmentEditorClosed;
-private void Schedule_AppointmentEditorClosed(object sender, AppointmentEditorClosedEventArgs e)
-{
-    var appointment = e.EditedAppointment as ScheduleAppointment;
-    if (appointment != null)
-    {
-        if (appointment.StartTime.Day == DateTime.Now.Day)
-            e.Handled = true;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-## Appointment deleting
-Scheduler supports three ways to remove the selected appointment
-1. Pressing Delete key
-2. Using `ContextMenu` delete option.
-3. Using AppointmentEditor.
-
-### Events
-
-#### AppointmentDeleting
-Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentDeleting_EV.html) event when delete the appointment.
-[AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDeletingEventArgs.html) has following members which provides information for `AppointmentDeleting` event.
-
-`Appointment` - Get the selected appointment
-`MappedObject` - Get the binding object details of selected appointment if schedule appointments are mapped with custom object.
-`RecurrenceEditMode` - Gets or sets whether to delete particular occurrence or appointment sequence when delete a recurrence appointment. You can let end-user handle this option (using built-in dialog shown in scheduler) or define it by yourself using `AppointmentDeleting` event. 
-[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - By enabling this property, avoid deleting the appointment. 
-
-## Disable appointment editing
-Scheduler supports to prevent the editing for appointments by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AllowEditing.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-<Schedule:SfSchedule x:Name="schedule" AllowEditing="False"/>
-{% endhighlight %}
-{% highlight c# %}
-this.Schedule.AllowEditing = false;
-{% endhighlight %}
-{% endtabs %}
-
-## Appointment resizing
-Scheduler supports resizing the appointment using the option `Resize`option from the `ScheduleAppointment` context menu. This support is available for all views except 'Month' view.
-
-![WPF Scheduler appointment resizing using contextmenu](appointments_images/appointment-resizing-contextmenu.png)
-
-### Events
-
-#### AppointmentStartResizing
-Scheduler notifies by [AppointmentStartResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentStartResizing_EV.html) event when start to resize the appointment.
-
-[AppointmentStartResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html) has following members which provides information for `AppointmentStartResizing` event.
-
-[Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs~Appointment.html) - Get the appointment details that is start to resize.
-[Cancel](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs~Appointment.html) - Setting value to true, cancels the triggered action.
-
-{% tabs %}
-{% highlight c# %}
-this.schedule.AppointmentStartResizing += Schedule_AppointmentStartResizing;
-private void Schedule_AppointmentStartResizing(object sender, AppointmentStartResizingEventArgs e)
-{
-    //To notify when start to resize the appointment.    
-}
-{% endhighlight %}
-{% endtabs %}
-
-#### AppointmentResizing
-Scheduler notifies by [AppointmentResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentResizing_EV.html) event when resize the appointment.
-
-[AppointmentResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html) has following members which provides information for `AppointmentResizing` event.
-
-[Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs~Appointment.html) - Get the resizing appointment details.
-
-[From](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs~From.html) - Get the appointment start time.
-
-[To](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs~To.html) - Get the appointment end time.
-
-[ResizeType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs~ResizeType.html) - Get the resize type for appointment whether it is resizing from start or end.
-
-[RefreshAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs~RefreshAppointment.html) - Get or Sets appointment need to be refresh or not. 
-
-{% tabs %}
-{% highlight c# %}
-this.schedule.AppointmentResizing += Schedule_AppointmentResizing;
-private void Schedule_AppointmentStartResizing(object sender, AppointmentResizingEventArgs e)
-{
-    //To notify when resizing the appointment.    
-}
-{% endhighlight %}
-{% endtabs %}
-
-
-#### AppointmentEndResizing
-Scheduler notifies by [AppointmentEndResizing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEndResizing_EV.html) event when end the appointment resizing.
-
-[AppointmentEndResizingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html) has following members which provides information for `AppointmentEndResizing` event.
-
-[Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs~Appointment.html) - Get the resizing appointment details.
-
-[From](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs~From.html) - Get the appointment start time.
-
-[To](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs~To.html) - Get the appointment end time.
-
-[ResizeType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs~ResizeType.html) - Get the resize type for appointment whether it is resizing from start or end.
-
-[Cancel](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs~Appointment.html) - Setting value to true, cancels the triggered action.
-
-{% tabs %}
-{% highlight c# %}
-this.schedule.AppointmentEndResizing += Schedule_AppointmentResizing;
-private void Schedule_AppointmentStartResizing(object sender, AppointmentEndResizingEventArgs e)
-{
-    //To notify when resizing is completed for an appointment.    
-}
-{% endhighlight %}
-{% endtabs %}
+![WPF Scheduler editor window](appointments_images/appointment-addnew-editor-window.png)
 
 ## Appointment template customization
-The default appearance of the appointment can be customized by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentTemplate.html) property. The `AppointmentTemplate` is a `ControlTemplate` type, used to customize or override the default template of the appointments.
+Scheduler supports to customize the appointment appearance  by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentTemplate.html) property. The `AppointmentTemplate` is a `ControlTemplate` type, used to customize or override the default template of the appointments.
 
 {% tabs %}
 {% highlight xaml %}
