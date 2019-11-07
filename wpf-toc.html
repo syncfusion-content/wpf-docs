@@ -408,7 +408,6 @@
             <li><a href="/wpf/Chromeless-Window/TitleBarBackground">TitleBarBackground</a></li>
             <li><a href="/wpf/Chromeless-Window/TitleBarHeight-Support">TitleBarHeight Support</a></li>
             <li><a href="/wpf/Chromeless-Window/TitleFontSize-Support">TitleFontSize Support</a></li>
-			<li><a href="/wpf/Chromeless-Window/TitleBarCustomButtons">TitleBarCustomButtons</a></li>
             <li><a href="/wpf/Chromeless-Window/Customizing-Border-of-the-ChromelessWindow">Customizing Border of the ChromelessWindow</a></li>
             <li><a href="/wpf/Chromeless-Window/End-user-capabilities">End user capabilities</a></li>
             <li><a href="/wpf/Chromeless-Window/Styling-the-ChromelessWindow">Styling the ChromelessWindow</a></li>
@@ -432,7 +431,12 @@
 	SfCircularProgressBar
 	<ul>
 	<li><a href="/wpf/Circular-ProgressBar/Overview">Overview</a></li>
-	<li><a href="/wpf/Circular-ProgressBar/Getting-Started">Getting Started</a></li>
+	<li><a href="/wpf/Circular-ProgressBar/Getting-Started">Getting Started</a></li>	
+	<li><a href="/wpf/circular-progressbar/States">States</a></li>
+	<li><a href="/wpf/circular-progressbar/Segment">Segment</a></li>
+	<li><a href="/wpf/circular-progressbar/Appearance">Appearance</a></li>
+	<li><a href="/wpf/circular-progressbar/Custom-Content">Custom Content</a></li>
+
 	</ul>
 	</li>
     <li>
@@ -999,6 +1003,10 @@
 	<ul>
 	<li><a href="/wpf/Linear-ProgressBar/Overview">Overview</a></li>
 	<li><a href="/wpf/Linear-ProgressBar/Getting-Started">Getting Started</a></li>
+	<li><a href="/wpf/linear-progressbar/states">States</a></li>	
+	<li><a href="/wpf/linear-progressbar/segment">Segments</a></li>
+	<li><a href="/wpf/linear-progressbar/appearance">Appearance</a></li>
+
 	</ul>
 	</li>
     <li>
@@ -1660,22 +1668,16 @@
             <li><a href="/wpf/Scheduler/overview">Overview</a></li>
             <li><a href="/wpf/Scheduler/getting-started">Getting Started</a></li>
             <li><a href="/wpf/Scheduler/adding-appointments">Adding-Appointments</a></li>
-            <li><a href="/wpf/Scheduler/currenttimeindicator-template-customization">CurrentTimeIndicator-Template-Customization</a></li>
+            <li><a href="/wpf/Scheduler/views">Views</a></li>
             <li><a href="/wpf/Scheduler/appointment-template-customization">Appointment-Template-Customization</a></li>
             <li><a href="/wpf/Scheduler/custom-date-format">Custom-Date-Format</a></li>
             <li><a href="/wpf/Scheduler/non-working-hours">Non-Working-Hours</a></li>
-            <li><a href="/wpf/Scheduler/timeline-customization">TimeLine-customization</a></li>
-            <li><a href="/wpf/Scheduler/hiding-non-working-hours">Hiding-Non-Working-Hours</a></li>
-            <li><a href="/wpf/Scheduler/collapsed-hours">CollapsedHours</a></li>
             <li><a href="/wpf/Scheduler/schedule-appointment-status">Schedule-Appointment-Status</a></li>
             <li><a href="/wpf/Scheduler/enabling-auto-formatting">Enabling-Auto-Formatting</a></li>
             <li><a href="/wpf/Scheduler/all-day-panel">All-Day-Panel</a></li>
             <li><a href="/wpf/Scheduler/appointment-navigation">Appointment-Navigation</a></li>
-            <li><a href="/wpf/Scheduler/current-day-highlighting">Current-Day-Highlighting</a></li>
             <li><a href="/wpf/Scheduler/focused-and-non-focused-month-brush">Focused-and-Non-Focused-Month-Brush</a></li>
-            <li><a href="/wpf/Scheduler/stroke-customization">Stroke-Customization</a></li>
             <li><a href="/wpf/Scheduler/enabling-and-disabling-schedule-editor">Enabling-and-Disabling-Schedule-Editor</a></li>
-            <li><a href="/wpf/Scheduler/nonaccessibleblocks">NonAccessibleBlocks</a></li>
             <li><a href="/wpf/Scheduler/tooltip">Tooltip</a></li>
             <li><a href="/wpf/Scheduler/reminder">Reminder</a></li>
             <li><a href="/wpf/Scheduler/time-zone">Time-Zone</a></li>
@@ -1766,6 +1768,7 @@
             <li><a href="/wpf/TabControl/getting-started">Getting Started</a></li>
             <li><a href="/wpf/TabControl/adding-tab-item-to-the-tabext">Adding Tab Item to the tabext</a></li>
 			<li><a href="/wpf/TabControl/DataBinding">DataBinding</a></li>
+			<li><a href="/wpf/TabControl/ContextMenu">Context menu</a></li>
             <li><a href="/wpf/TabControl/tab-item-header">Tab Item Header</a></li>            
             <li><a href="/wpf/TabControl/drag-marker">Drag Marker</a></li>
             <li><a href="/wpf/TabControl/editing-the-tab-item-header-at-run-time">Editing the Tab Item Header at Run Time</a></li>            
@@ -1777,8 +1780,6 @@
             <li><a href="/wpf/TabControl/setting-scroll-style">Setting Scroll Style</a></li>
             <li><a href="/wpf/TabControl/setting-tab-scrolling-time">Setting Tab Scrolling Time</a></li>
             <li><a href="/wpf/TabControl/setting-tab-scroll-button">Setting Tab Scroll Button</a></li>
-            <li><a href="/wpf/TabControl/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-item">Setting TabListContextMenu and TabItemContextMenu For Tab Item</a></li>
-            <li><a href="/wpf/TabControl/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-list">Setting TabListContextMenu and TabItemContextMenu For Tab List</a></li>
             <li><a href="/wpf/TabControl/newbutton-feature">NewButton Feature</a></li>
             <li><a href="/wpf/TabControl/tabitemvalidation-support">TabItemValidation Support</a></li>
             <li><a href="/wpf/TabControl/disables-the-unload-of-tabitemext-content">Disables the Unload of TabItemExt Content</a></li>
@@ -2195,7 +2196,15 @@
         Release Notes
         <ul>
 		<li>2019 Volume 3 - v17.3.0.*
-			<ul><li> Weekly Nuget Release <ul><li><a href="/wpf/release-notes/v17.3.0.21">v17.3.0.21</a></li><li><a href="/wpf/release-notes/v17.3.0.17">v17.3.0.17</a></li></ul></li><li><a href="/wpf/release-notes/v17.3.0.14">v17.3.0.14 Main Release</a></li><li><a href="/wpf/release-notes/v17.3.0.26">v17.3.0.26  </a></li>
+			<ul>
+			    <li> Weekly Nuget Release 
+			        <ul>
+			            <li><a href="/wpf/release-notes/v17.3.0.21">v17.3.0.21</a></li>
+			            <li><a href="/wpf/release-notes/v17.3.0.17">v17.3.0.17</a></li>
+			        </ul>
+			    </li>
+			    <li><a href="/wpf/release-notes/v17.3.0.26">v17.3.0.26 Service Pack Release</a></li>
+			    <li><a href="/wpf/release-notes/v17.3.0.14">v17.3.0.14 Main Release</a></li>
 				<li><a href="/wpf/release-notes/v17.3.0.9">v17.3.0.9 Beta Release </a></li>
 			</ul>
 		</li> 

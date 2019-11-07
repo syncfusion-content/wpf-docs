@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with WPF  Linear ProgressBar control | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Linear ProgressBar control and more details.
+title: Getting started with WPF Linear ProgressBar control | Syncfusion
+description: Learn here about getting started with the Syncfusion WPF Linear ProgressBar control and more details.
 platform: WPF
 control: SfLinearProgressBar
 documentation: ug
@@ -46,12 +46,8 @@ To add control manually in XAML, follow the given steps:
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
      <Grid x:Name="grid">
-        <Grid.RowDefinitions  >
-            <RowDefinition Height="67*"/>
-            <RowDefinition Height="143*"/>
-        </Grid.RowDefinitions>
-        <TextBlock Text="Linear" Margin="344,38,372.6,83.4"/>
-        <Syncfusion:SfLinearProgressBar Progress="70" Margin="175,68,187.6,43.4"/>       
+         <TextBlock Text="Linear"/>
+        <Syncfusion:SfLinearProgressBar Progress="70" "/>       
      </Grid>
 </Window>
 {% endhighlight %}
@@ -66,6 +62,8 @@ To add control manually through code behind, follow the given steps:
 2.	Import the Linear ProgressBar namespace
     **using Syncfusion.UI.Xaml.ProgressBar;**
 3.	Create an Linear Progressbar instance, and add it to the window.
+
+![WPF Linear ProgressBar control added through code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)
 
 {% tabs %}
 {% highlight C# %}
@@ -88,4 +86,3 @@ namespace SfProgressBar
 }
 {% endhighlight %}
 {% endtabs %}
-![WPF Linear ProgressBar control added through code](Getting-Started_images/wpf-SfLinearProgressBar-control-added-manually.png)

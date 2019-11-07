@@ -23,6 +23,8 @@ To bind `ItemsSource` to TabControl, you need to have collection with data objec
 
 Here, Model class defined with Header and Content properties and ViewModel class has `ItemsSource` property of type `ObservableCollection<Model>`.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-tabcontrol-databinding)
+
 **Model.cs:**
 
 {% tabs %}
@@ -156,6 +158,8 @@ In the below code, `ViewModel` bound to TabControl and [ItemContainerStyle](http
 {% endhighlight %}
 
 {% endtabs %}
+
+![WPF TabControl Databinding](Databinding_images/wpf-tabcontrol-databinding.png)
 
 N> Tab items are populated based on ItemsSource only if `ItemContainerStyle.HeaderTemplate` or `ItemTemplate` is defined.
 
