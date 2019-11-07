@@ -10,7 +10,7 @@ documentation: ug
 # Month view
 Scheduler used to display entire dates of the specific month, current month will be displayed by default initially. `Month` view displays the month of dates similar to calendar and displays appointments for each day in a cell similar to outlook. 
 
-## Header date format
+## Change header date format
 Scheduler supports to change header format of the month view by using [MonthHeaderDateFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MonthHeaderDateFormat.html) property.
 
 {% tabs %}

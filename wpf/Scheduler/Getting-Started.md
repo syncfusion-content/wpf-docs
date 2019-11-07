@@ -188,7 +188,7 @@ Here steps to render meetings using scheduler control with respective custom dat
 * Binding data source for Scheduler control.
 
 #### Creating custom class to map that object with appointment
-You can create a custom class `Meeting` with mandatory fields “From”, “To” and “EventName”.
+You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
 
 {% highlight c# %}
 /// <summary>   
