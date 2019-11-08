@@ -11,7 +11,7 @@ documentation: ug
 
 The [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) allows the user to change the percent value using the [PercentValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentValue.html) property.
 
-%tabs%}
+{%tabs%}
 {% highlight xaml %}
 
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25"
