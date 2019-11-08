@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Null Value support | CurrencyTextBox | wpf | Syncfusion
-description: null value support
+description: Null value support represents to allow the null value and the customizing the null value of the CurrencyTextBox
 platform: wpf
 control: CurrencyTextBox 
 documentation: ug
@@ -20,7 +20,7 @@ CurrencyTextBox accepts null values. To enable the null option you have to set t
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new  Syncfusion.Windows.Shared.CurrencyTextBox();
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
 currencyTextBox.UseNullOption = true;
@@ -29,7 +29,7 @@ currencyTextBox.NullValue = 100;
 {% endhighlight %}
 {% endtabs %}
 
-In this sample, the NullValue (NullValue = 1) is set to the Value property of the CurrencyTextBox because the default value of the Value property is zero.
+In this sample, the NullValue (NullValue = 100) is set to the Value property of the CurrencyTextBox because the default value of the Value property is zero.
 
 ![Null value support](Null-Value-support_images/Null-Value-support_img1.png)
 
@@ -42,7 +42,7 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new   Syncfusion.Windows.Shared.CurrencyTextBox();
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
 currencyTextBox.UseNullOption = true;

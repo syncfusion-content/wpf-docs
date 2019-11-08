@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events | CurrencyTextBox | wpf | Syncfusion
-description: events
+description: Events represents the various basic events available in the CurrencyTextBox and do the required operation by handling the events
 platform: wpf
 control: CurrencyTextBox 
 documentation: ug
@@ -87,7 +87,8 @@ private void CurrencyTextBox_TextChanged(object sender, TextChangedEventArgs e)
 
 {% highlight C# %}
 
-CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.CultureChanged+=new    PropertyChangedCallback(CurrencyTextBox_CultureChanged);
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.CultureChanged+=new    PropertyChangedCallback(CurrencyTextBox_CultureChanged);
 
 {% endhighlight %}
 {% endtabs %}
@@ -118,7 +119,8 @@ private void CurrencyTextBox_CultureChanged(DependencyObject d, DependencyProper
 
 {% highlight C# %}
 
-CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.MaxValueChanged+=new  PropertyChangedCallback(CurrencyTextBox_MaxValueChanged);
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.MaxValueChanged+=new  PropertyChangedCallback(CurrencyTextBox_MaxValueChanged);
 
 {% endhighlight %}
 {% endtabs %}

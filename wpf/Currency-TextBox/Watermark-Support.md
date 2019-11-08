@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Watermark Support | CurrencyTextBox | wpf | Syncfusion
-description: watermark support
+description: Watermark support represents to setting the Watermark to the control and customization of the Watermark text and it's appearance
 platform: wpf
 control: CurrencyTextBox 
 documentation: ug
@@ -18,6 +18,15 @@ Watermark is the dummy content displayed in the CurrencyTextBox when the value i
             WatermarkText="Type Here" WatermarkTextIsVisible="True" 
             WatermarkOpacity="0.5" UseNullOption="True"/>
 
+{% endhighlight %}
+{% highlight C# %}
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.Width = 150;
+currencyTextBox.Height = 25;
+currencyTextBox.WatermarkText = "Type Here";
+currencyTextBox.WatermarkTextIsVisible = true;
+currencyTextBox.WatermarkOpacity = 0.5;
+currencyTextBox.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maximum and Minimum Value | CurrencyTextBox | wpf | Syncfusion
-description: maximum and minimum value
+description: Maximum and Minimum Value represents various value setting like Minimum and Maximum value and value validation modes in the CurrencyTextBox
 platform: wpf
 control: CurrencyTextBox 
 documentation: ug
@@ -46,19 +46,19 @@ N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  MinValue="-999" MaxValue="999" MinValidation="OnKeyPress" MaxValidation="OnLostFocus"  MinValueOnExceedMinDigit="   MaxValueOnExceedMaxDigit="True"/> 
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" MinValue="-999" MaxValue="999" MinValidation="OnKeyPress" MaxValidation="OnLostFocus" MinValueOnExceedMinDigit=" MaxValueOnExceedMaxDigit="True"/> 
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new   Syncfusion.Windows.Shared.CurrencyTextBox();
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
 currencyTextBox.MinValue = -999;
 currencyTextBox.MaxValue = 999;
-currencyTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;
-currencyTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;
+currencyTextBox.MinValidation = MinValidation.OnKeyPress;
+currencyTextBox.MaxValidation = MaxValidation.OnLostFocus;
 currencyTextBox.MinValueOnExceedMinDigit = true;
 currencyTextBox.MaxValueOnExceedMaxDigit = true;
 
@@ -69,10 +69,10 @@ Initially there is no value assigned to the CurrencyTextBox. So it displays the 
 
 ![Currency text box no value](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)
 
-MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only in the lost focus.
+[MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) is set to OnLostFocus, so the [MaxValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MaxValidation.html) will be performed only in the lost focus.
 
 ![Currency text box max value](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)
 
-MinValidation is set to OnKeyPress, so you cannot enter a value less than the MinValue. If you try to enter a value less than the MinValue, then the MinValue will be set to the Value property if the MinValueOnExceedMinDigit is set to true, otherwise it will not allow the key press.
+[MinValidation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MinValidation.html) is set to OnKeyPress, so you cannot enter a value less than the MinValue. If you try to enter a value less than the MinValue, then the MinValue will be set to the Value property if the [MinValueOnExceedMinDigit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~MinValueOnExceedMinDigit.html) is set to true, otherwise it will not allow the key press.
 
 ![Currency text box min value](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img4.png)
