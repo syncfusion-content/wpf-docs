@@ -1,0 +1,46 @@
+---
+layout: post
+title: Auto-Scroll limit of diagram page | Syncfusion
+description: How to scroll on Diagram page automatically and how to scroll the diagram page automatically on a particular region?
+platform: wpf
+control: SfDiagram
+documentation: ug
+---
+
+# Auto-Scroll Limit
+
+The auto-scroll limit allows you to define the scrollable region of the Diagram while page is getting auto scrolled. `AutoScrollLimit` property of scroll settings class helps to limit the auto scrolling area. It includes the following options,
+
+* Infinity: Allows to auto-scroll in all directions without any restriction.
+* Diagram: Allows to auto-scroll within the Diagram content.
+* Limited: Allows to auto-scroll within the specified area.
+
+The default operation is `Infinity`.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the Sfdiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+    <!--Initialize the scroll setting class with auto scroll limit-->
+    <syncfusion:SfDiagram.ScrollSettings>
+        <syncfusion:ScrollSettings AutoScrollLimit="Limited" ScrollableArea="0,0,1500,1500"/>
+    </syncfusion:SfDiagram.ScrollSettings>
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+//Initialize the SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Initialize the scroll setting with auti scroll limit and scroliing area
+diagram.ScrollSettings = new ScrollSettings()
+{
+    AutoScrollLimit = ScrollLimit.Limited,
+    ScrollableArea = new Rect(0,0,1500,1500),
+};
+{% endhighlight %}
+{% endtabs %}
+
+| AutoScrollLimit | Output |
+|---|---|
+| Infinity |![AutoScroll infinity](Scroll-Settings_images/AutoScrollInfinity.gif) |
+| Diagram |![AutoScroll diagram](Scroll-Settings_images/AutoScrollDiagram.gif) |
+| Limited <br> ScrollableArea = (0,0,1500,1500) | ![AutoScroll limited](Scroll-Settings_images/AutoScrollLimited.gif) |
