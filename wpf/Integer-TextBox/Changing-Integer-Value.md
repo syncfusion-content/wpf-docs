@@ -11,7 +11,7 @@ documentation: ug
 
 The [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) property.
 
-%tabs%}
+{%tabs%}
 {% highlight xaml %}
 
 <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25"
