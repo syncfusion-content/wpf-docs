@@ -11,7 +11,7 @@ documentation: ug
 
 The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) property.
 
-%tabs%}
+{%tabs%}
 {% highlight xaml %}
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25"
