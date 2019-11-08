@@ -139,7 +139,7 @@ Scheduler supports to change the first day of week with any day by using [FirstD
 `WorkWeek` - By default, scheduler control will be rendered with `Monday` as the first day. `Saturday` and `Sunday` has considered as a non working days. 
 
 ## Non-accessible timeslots
-Scheduler supports to limit or assign those time slots as non-accessible timeslots by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlocks.html) property. So, you can allocate certain time slots to pre-defined events / activities such as lunch hour using `NonAccessibleBlocks` [StartHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~StartHour.html), [EndHour](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~EndHour.html), [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Label.html) and [Background](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.NonAccessibleBlock~Background.html) properties.
+Scheduler supports to mark certain timeslots as non-accessible timeslots by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlocks.html) property. User can’t interact over the timeslot marked as non-accessible timeslots. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -164,8 +164,8 @@ Scheduler supports to customize the non-accessible timeslots by using [NonAccess
 {% highlight xaml %}
 <syncfusion:SfSchedule.NonAccessibleBlockTemplate>
     <DataTemplate>
-        <Border Background="LightGreen">
-            <TextBlock Text="Meeting" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Border Background="{Binding Color}">
+            <TextBlock Text="{Binding EventName}" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
     </DataTemplate>
 </syncfusion:SfSchedule.NonAccessibleBlockTemplate>
@@ -175,7 +175,7 @@ Scheduler supports to customize the non-accessible timeslots by using [NonAccess
 ![WPF scheduler non accessible time slots using template](views_images/non-accessible-blocks-template.png)
 
 ## Change non-working days
-By default Schedule, will be considered `Saturday` and `Sunday` as a non working days. You can customize that using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property.
+By default Schedule considers `Saturday` and `Sunday` as a non working days. You can change the non-working days using [NonWorkingDays](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingDays.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -190,7 +190,11 @@ this.schedule.NonWorkingDays = DayOfWeek.Monday.ToString() + "," + DayOfWeek.Tue
 ![WPF Scheduler WorkWeekView non working days](views_images/workweek-non-working-days.png)
 
 ## Collapsed hours
-Scheduler supports to hide the selected hours by using [CollapsedHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CollapsedHours.html) property. 
+Scheduler supports to hide the selected hours by using [CollapsedHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CollapsedHours.html) property. [ScheduleCollapsedHours](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleCollapsedHour.html) does have the following properties.
+
+[StartHour](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleCollapsedHour~StartHour.html) - To set start time of collapsed hour.
+[EndHour](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleCollapsedHour~EndHour.html) - To set end time of collapsed hour.
+[Background](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleCollapsedHour~Background.html) - To set the background of collapsed hours.
 
 {% tabs %}
 {% highlight xaml %}
