@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Editing
-This section gives you editing details of scheduler appointments and also explained about the appointment resizing and drag drop operations.
+This section gives you how to handle editing for scheduler appointments and also explained about the appointment resizing and drag drop operations.
 
 ## Editing Appointment
 Scheduler supports to edit the appointment by using 'Appointment Editor' UI window. User can use this window by double click over the appointment or right click over the appointment and select the edit option from the `ContextMenu`.
@@ -20,6 +20,12 @@ ContextMenu edit option
 Appointment editor window
 
 ![WPF Scheduler appointment editor window](editing_images/appointment-editor-window.png)
+
+## Edit recurring appointment
+Scheduler supports to edit the recurrence appointment. The following window will appear when user edit the recurrence appointment to select the edit option to make the changes for occurrence or appointment series.
+
+![WPF Scheduler editing recurrence appointment](diting_images/editing-recurrence-appointment.png)
+
 
 ### AppointmentEditorOpening event
 Scheduler notifies by  [AppointmentEditorOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorOpening_EV.html) when user opens the appointment editor UI window to edit the appointment. 
@@ -62,7 +68,7 @@ private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorO
 {% endhighlight %}
 {% endtabs %}
 
-#### AppointmentEditorClosed
+### AppointmentEditorClosed
 Scheduler notifies by [AppointmentEditorClosed](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorClosed_EV.html) when user close the appointment editor window.
 [AppointmentEditorClosedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorClosedEventArgs.html) event has following members which provides information for `AppointmentEditorClosed` event.
 
@@ -136,6 +142,11 @@ Scheduler supports three ways to remove the selected appointment
 2. Using `ContextMenu` delete option.
 3. Using AppointmentEditor.
 
+### Delete recurring appointment
+Scheduler supports to delete the recurrence appointment. The following window will appear when user deletes the recurrence appointment to select the delete option to make the changes for occurrence or appointment series.
+
+![WPF Scheduler editing recurrence appointment](diting_images/delete-recurrence-appointment.png)
+
 ### AppointmentDeleting event
 Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentDeleting_EV.html) event when user delete the appointment.
 [AppointmentDeletingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentDeletingEventArgs.html) has following members which provides information for `AppointmentDeleting` event.
@@ -143,11 +154,9 @@ Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/cref_
 `Appointment` - Gets the selected appointment
 `MappedObject` - Gets the binding object details of selected appointment if schedule appointments are mapped with custom object.
 `RecurrenceEditMode` - Gets or sets whether to delete particular occurrence or appointment sequence when delete a recurrence appointment. You can let end-user handle this option (using built-in dialog shown in scheduler) or define it by yourself using `AppointmentDeleting` event. 
-    
     * User - Default window dialog will appear when deleting a recurrence appointment to select the delete option from the end-user itself.
     * Occurrence - Delete the particular occurrence alone in recurrence appointment. Default window dialog will not appear.
     * Series - Delete the entire series in recurrence appointment. Default window dialog will not appear.
-
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - By enabling this property, avoid deleting the appointment. 
 
 ## Appointment resizing
