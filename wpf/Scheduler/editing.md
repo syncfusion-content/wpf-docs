@@ -89,6 +89,43 @@ private void Schedule_AppointmentEditorClosed(object sender, AppointmentEditorCl
 {% endhighlight %}
 {% endtabs %}
 
+## Disable editing
+Scheduler supports to disable the editing support for schedule appointment by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AllowEditing.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<Schedule:SfSchedule AllowEditing="False"/>
+{% endhighlight %}
+{% highlight c# %}
+this.schedule.AllowEditing = false;
+{% endhighlight %}
+{% endtabs %}
+
+### Create read only appointment
+Scheduler supports to create the read only appointment by using [ReadOnly]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReadOnly.html)) property. If you enable this property, unable to perform editing, resizing, drag and drop operations.
+
+{% tabs %}
+{% highlight c# %}
+//// Creating an instance for schedule appointment collection
+ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+////Adding schedule appointment in schedule appointment collection 
+scheduleAppointmentCollection.Add(new ScheduleAppointment()
+{
+    StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
+    EndTime = new DateTime(2017, 05, 10, 10, 0, 0),
+    Subject = "Anniversary",
+    Location = "Hutchison road",
+    ReadOnly = true,
+    AppointmentBackground = Brushes.Green
+});
+
+//Adding schedule appointment collection to Appointments of SfSchedule
+this.Schedule.Appointments = scheduleAppointmentCollection;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler read only appointment](editing_images/read-only-appointment.png)
+
 ## Appointment deleting
 Scheduler supports three ways to remove the selected appointment
 1. Pressing Delete key
@@ -119,7 +156,7 @@ this.Schedule.AllowEditing = false;
 {% endtabs %}
 
 ## Appointment resizing
-Scheduler supports resizing the appointment using the option `Resize`option from the `ScheduleAppointment` context menu. This support is available for all views except 'Month' view.
+Scheduler supports to resize the appointment using the option `Resize`option from the `ScheduleAppointment` context menu. This support is available for all views except 'Month' view.
 
 ![WPF Scheduler appointment resizing using contextmenu](editing_images/appointment-resizing-contextmenu.png)
 
@@ -195,7 +232,7 @@ private void Schedule_AppointmentStartResizing(object sender, AppointmentEndResi
 {% endtabs %}
 
 ## Drag and drop
-Scheduler supports to reschedule the appointment by using drag and drop operation. In order to perform the drag and drop operation `ScheduleAppointment.ReadOnly` property should be `false`. 
+Scheduler supports to reschedule the appointment by performing the drag and drop operation. This support is available for all views. 
 
 ### Events
 
