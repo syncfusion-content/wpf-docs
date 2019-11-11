@@ -216,7 +216,7 @@ schedule.Appointments.Add(new ScheduleAppointment()
 ## Types of appointments
 
 ### Spanned appointment
-Spanned Appointment is an appointment which will generate appointment `StartTime` and `EndTime` day difference is more than 1.
+Spanned Appointment is an appointment which will generate the appointment when `StartTime` and `EndTime` day difference is more than 1.
 
 {% tabs %}
 {% highlight c# %}
@@ -275,7 +275,7 @@ N> Appointment which lasts through an entire day (exact 24 hours) will be consid
 ## Appointment generating behavior
 Scheduler supports to change the all day appointment creation behavior by using [AppointmentBehavior](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentBehavior.html) property.
 
-`Default` - Appointments will be generated in all day panel when enable the `AllDay` property. 
+`Default` - Appointments will be generated based on `StartTime` and `EndTime`. If `AllDay` property is enabled appointment will be generated in all day panel.
 `ExChangeBehavior` - Appointments will be generated when appointment has scheduled for full day.
 
 {% tabs %}
