@@ -11,7 +11,7 @@ documentation: ug
 This section gives you editing details of scheduler appointments and also explained about the appointment resizing and drag drop operations.
 
 ## Editing Appointment
-Scheduler supports to edit the appointment in by using 'Appointment Editor' UI window. User can use this window by double click over the appointment or right click over the appointment and select the edit option from the `ContextMenu`.
+Scheduler supports to edit the appointment by using 'Appointment Editor' UI window. User can use this window by double click over the appointment or right click over the appointment and select the edit option from the `ContextMenu`.
 
 ContextMenu edit option
 
@@ -31,7 +31,7 @@ Scheduler notifies by  [AppointmentEditorOpening](https://help.syncfusion.com/cr
 
 `RecurrenceEditMode` - Get or Sets the edit mode to perform the edit option to edit the occurrence or series for recurrence appointment.
     
-	* User - Default window dialog will appear when editing a recurrence appointment from the end-user itself.
+	* User - Default window dialog will appear when editing a recurrence appointment to select the edit option from the end-user itself.
     * Occurrence - Edit the particular occurrence alone in recurrence appointment. Default window dialog will not appear.
     * Series - Edit the entire series in recurrence appointment. Default window dialog will not appear.
 
@@ -143,7 +143,7 @@ Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/cref_
 `Appointment` - Gets the selected appointment
 `MappedObject` - Gets the binding object details of selected appointment if schedule appointments are mapped with custom object.
 `RecurrenceEditMode` - Gets or sets whether to delete particular occurrence or appointment sequence when delete a recurrence appointment. You can let end-user handle this option (using built-in dialog shown in scheduler) or define it by yourself using `AppointmentDeleting` event. 
-    * User - Default window dialog will appear when deleting a recurrence appointment from the end-user itself.
+    * User - Default window dialog will appear when deleting a recurrence appointment to select the delete option from the end-user itself.
     * Occurrence - Delete the particular occurrence alone in recurrence appointment. Default window dialog will not appear.
     * Series - Delete the entire series in recurrence appointment. Default window dialog will not appear.
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - By enabling this property, avoid deleting the appointment. 
