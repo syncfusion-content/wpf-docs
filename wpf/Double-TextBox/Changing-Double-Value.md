@@ -11,7 +11,7 @@ documentation: ug
 
 The [DoubleTextBox](https://www.syncfusion.com/wpf-ui-controls/double-textbox) allows the user to change the value using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~Value.html) property.
 
-%tabs%}
+{%tabs%}
 {% highlight xaml %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25"
