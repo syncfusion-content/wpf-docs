@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Editing in WPF Scheduler | Syncfusion
-description: This section explains about how to edit the appointment and handle the appointment while editing in WPF Scheduler.
+title: Appointment Editing in WPF Scheduler | Syncfusion
+description: This section explains about how to edit, resize and rearrange an appointment in WPF Scheduler. Also, explains how to handle recurring appointments while editing.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Editing
-This section gives you how to handle editing for scheduler appointments and also explained about the appointment resizing and drag drop operations.
+# Appointment Editing
+This section explains how to handle appointment editing in WPF scheduler and also explains about the appointment resizing and drag drop operations.
 
 ## Editing Appointment
-Scheduler supports to edit the appointment by using 'Appointment Editor' UI window. User can use this window by double click over the appointment or right click over the appointment and select the edit option from the `ContextMenu`.
+Scheduler supports to edit the appointment by using 'Appointment Editor' UI window. User can open this window by double click over the appointment or right click over the appointment and select the edit option from the `ContextMenu`.
 
 ContextMenu edit option
 
@@ -21,17 +21,21 @@ Appointment editor window
 
 ![WPF Scheduler appointment editor window](editing_images/appointment-editor-window.png)
 
+User can edit the fields in appointment editor window. The changes will be saved back in appointment and mapped data object when using data binding. 
+
 ## Edit recurring appointment
-Scheduler supports to edit the recurrence appointment. The following window will appear when user edit the recurrence appointment to select the edit option to make the changes for occurrence or appointment series.
+Scheduler supports to edit the recurrence appointment. The following window will appear when user edit the recurrence appointment to select whether to edit only the particular occurrence or appointment series.
 
 ![WPF Scheduler editing recurrence appointment](editing_images/editing-recurrence-appointment.png)
 
+You can also handle the opening of `Open Recurring Item` window using `RecurrenceEditMode` property in [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) by handling `AppointmentEditorOpening` event.
 
 ### AppointmentEditorOpening event
-Scheduler notifies by  [AppointmentEditorOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorOpening_EV.html) when user opens the appointment editor UI window to edit the appointment. 
+When user opens the appointment editor UI window to edit the appointment, then scheduler notifies by [AppointmentEditorOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentEditorOpening_EV.html) event.
+
 [AppointmentEditorOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) has following members which provides information for `AppointmentEditorOpening` event.
 
-[Action](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~Action.html) - Gets the action(add or delete or edit) for the selected appointment.
+[Action](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~Action.html) - Gets the action (add or delete or edit) for the selected appointment.
 
 [Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs~Appointment.html) - Gets the selected appointment details.
 
@@ -100,7 +104,7 @@ private void Schedule_AppointmentEditorClosed(object sender, AppointmentEditorCl
 {% endtabs %}
 
 ## Disable appointment editing
-Scheduler supports to prevent the editing for appointments by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AllowEditing.html) property.
+Scheduler supports to prevent the editing of the appointments by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -112,7 +116,7 @@ this.Schedule.AllowEditing = false;
 {% endtabs %}
 
 ## Create read only appointment
-Scheduler supports to create the read only appointment by using [ReadOnly]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReadOnly.html)) property. If you enable this property, user will not be able to perform edit, resize and drag drop operations.
+Scheduler supports to create the read only appointment by using [ScheduleAppointment.ReadOnly]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReadOnly.html)) property. If you enable this property, user will not be able to perform edit, resize and drag drop operations.
 
 {% tabs %}
 {% highlight c# %}
@@ -138,7 +142,7 @@ this.Schedule.Appointments = scheduleAppointmentCollection;
 
 ## Appointment deleting
 Scheduler supports three ways to remove the selected appointment
-1. Pressing Delete key
+1. Pressing <kbd>Delete</kbd> key
 2. Using `ContextMenu` delete option.
 3. Using AppointmentEditor.
 
