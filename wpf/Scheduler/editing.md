@@ -15,11 +15,11 @@ Scheduler supports to edit the appointment in UI by using 'AppointmentEditor' wi
 
 ContextMenu edit option
 
-![WPF Scheduler appointment editing using contextmenu](appointments_images/appointment-edit-contextmenu.png)
+![WPF Scheduler appointment editing using contextmenu](editing_images/appointment-edit-contextmenu.png)
 
 Appointment editor window
 
-![WPF Scheduler appointment editor window](appointments_images/appointment-editor-window.png)
+![WPF Scheduler appointment editor window](editing_images/appointment-editor-window.png)
 
 ### Event
 
@@ -121,7 +121,7 @@ this.Schedule.AllowEditing = false;
 ## Appointment resizing
 Scheduler supports resizing the appointment using the option `Resize`option from the `ScheduleAppointment` context menu. This support is available for all views except 'Month' view.
 
-![WPF Scheduler appointment resizing using contextmenu](appointments_images/appointment-resizing-contextmenu.png)
+![WPF Scheduler appointment resizing using contextmenu](editing_images/appointment-resizing-contextmenu.png)
 
 ### Events
 
