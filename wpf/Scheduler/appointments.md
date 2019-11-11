@@ -161,11 +161,8 @@ private void Schedule_ItemsSourceChanged(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Recurrence Appointment
-This section has briefly explained in following [link](https://help.syncfusion.com/wpf/scheduler/recurrence)
-
 ## Add new appointment
-Scheduler supports to add the new appointment by using the `Appointment Editor` window it will appear when you double click or select the `AddNew` option from the contextmenu on the time when you want the appointment occur.
+Scheduler supports to add the new appointment by using the `Appointment Editor` window. It will appear when you double click or select the `AddNew` option from the `ContextMenu` on the time when you want the appointment occur.
 
 Add new appointment using ContextMenu
 
@@ -216,7 +213,37 @@ schedule.Appointments.Add(new ScheduleAppointment()
 
 ![WPF Scheduler appointment template customization](appointments_images/appointment-template-customization.png)
 
-## All day appointments
+## Types of appointments
+
+### Spanned appointment
+Spanned Appointment is an appointment which will generate appointment `StartTime` and `EndTime` day difference is more than 1.
+
+{% tabs %}
+{% highlight c# %}
+ObservableCollection<Meeting> Meetings = new ObservableCollection<Meeting>();
+// Creating instance for custom appointment class
+Meeting meeting = new Meeting();
+// Setting start time of an event
+meeting.From = new DateTime(2017, 05, 08, 10, 0, 0);
+// Setting end time of an event
+meeting.To = meeting.From.AddDays(1).AddHours(1);
+// Setting start time for an event
+meeting.EventName = "Anniversary";
+// Setting color for an event
+meeting.Color = Brushes.Green;
+// Adding a custom appointment in CustomAppointmentCollection
+Meetings.Add(meeting);
+
+this.schedule.ItemsSource = Meetings;
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler spanned appointment](appointments_images/spanned-appointment.png)
+
+### Recurrence Appointment
+This section has briefly explained in following [link](https://help.syncfusion.com/wpf/scheduler/recurrence)
+
+### All day appointments
 Appointments can be scheduled for an entire day by using [AllDay](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AllDay.html) property in `ScheduleAppointment`.
 
 {% tabs %}
