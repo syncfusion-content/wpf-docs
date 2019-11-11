@@ -24,7 +24,7 @@ Appointment editor window
 ## Edit recurring appointment
 Scheduler supports to edit the recurrence appointment. The following window will appear when user edit the recurrence appointment to select the edit option to make the changes for occurrence or appointment series.
 
-![WPF Scheduler editing recurrence appointment](diting_images/editing-recurrence-appointment.png)
+![WPF Scheduler editing recurrence appointment](editing_images/editing-recurrence-appointment.png)
 
 
 ### AppointmentEditorOpening event
@@ -145,7 +145,7 @@ Scheduler supports three ways to remove the selected appointment
 ### Delete recurring appointment
 Scheduler supports to delete the recurrence appointment. The following window will appear when user deletes the recurrence appointment to select the delete option to make the changes for occurrence or appointment series.
 
-![WPF Scheduler editing recurrence appointment](diting_images/delete-recurrence-appointment.png)
+![WPF Scheduler editing recurrence appointment](editing_images/delete-recurrence-appointment.png)
 
 ### AppointmentDeleting event
 Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentDeleting_EV.html) event when user delete the appointment.
