@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 # Editing
-This section gives you editing details of scheduler appointments and also explained about the appointment resizing, drag and drop.
+This section gives you editing details of scheduler appointments and also explained about the appointment resizing, drag and drop operations.
 
 ## Editing Appointment
-Scheduler supports to edit the appointment in UI by using 'AppointmentEditor' window. You can use this window by double click on the appointment or right click on the appointment and select the edit option from the `ContextMenu`.
+Scheduler supports to edit the appointment in UI by using 'Appointment Editor' window. You can use this window by double click on the appointment or right click on the appointment and select the edit option from the `ContextMenu`.
 
 ContextMenu edit option
 
@@ -89,19 +89,19 @@ private void Schedule_AppointmentEditorClosed(object sender, AppointmentEditorCl
 {% endhighlight %}
 {% endtabs %}
 
-## Disable editing
-Scheduler supports to disable the editing support for schedule appointment by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AllowEditing.html) property.
+## Disable appointment editing
+Scheduler supports to prevent the editing for appointments by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight xaml %}
-<Schedule:SfSchedule AllowEditing="False"/>
+<Schedule:SfSchedule x:Name="Schedule" AllowEditing="False"/>
 {% endhighlight %}
 {% highlight c# %}
-this.schedule.AllowEditing = false;
+this.Schedule.AllowEditing = false;
 {% endhighlight %}
 {% endtabs %}
 
-### Create read only appointment
+## Create read only appointment
 Scheduler supports to create the read only appointment by using [ReadOnly]((https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~ReadOnly.html)) property. If you enable this property, unable to perform editing, resizing, drag and drop operations.
 
 {% tabs %}
@@ -142,18 +142,6 @@ Scheduler notifies by [AppointmentDeleting](https://help.syncfusion.com/cr/cref_
 `MappedObject` - Get the binding object details of selected appointment if schedule appointments are mapped with custom object.
 `RecurrenceEditMode` - Gets or sets whether to delete particular occurrence or appointment sequence when delete a recurrence appointment. You can let end-user handle this option (using built-in dialog shown in scheduler) or define it by yourself using `AppointmentDeleting` event. 
 [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel) - By enabling this property, avoid deleting the appointment. 
-
-## Disable appointment editing
-Scheduler supports to prevent the editing for appointments by using [AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~AllowEditing.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-<Schedule:SfSchedule x:Name="schedule" AllowEditing="False"/>
-{% endhighlight %}
-{% highlight c# %}
-this.Schedule.AllowEditing = false;
-{% endhighlight %}
-{% endtabs %}
 
 ## Appointment resizing
 Scheduler supports to resize the appointment using the option `Resize`option from the `ScheduleAppointment` context menu. This support is available for all views except 'Month' view.
