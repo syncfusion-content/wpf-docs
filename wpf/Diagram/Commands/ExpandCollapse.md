@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Explore the expand collapse behavior with ExpandCollapse command.
+title: Syncfusion | Explore the ExpandCollapse command.
 description: Expand and Collapse command is used to show or hide children with IsExpanded property in ExpandCollapseParameter.
 platform: wpf
 control: SfDiagram

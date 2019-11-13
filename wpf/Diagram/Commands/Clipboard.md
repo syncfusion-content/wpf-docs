@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Explore the clipboard functionalities with clipboard commands.
+title: Syncfusion | Explore the Clipboard commands.
 description:  Clipboard commands allow you to cut or copy selected Diagram objects to the Clipboard and paste the valid Clipboard content into the Diagram.
 platform: wpf
 control: SfDiagram
