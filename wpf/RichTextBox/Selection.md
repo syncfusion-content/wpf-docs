@@ -1,6 +1,6 @@
 ---
 title: Selection | SfRichTextBoxAdv | WPF | Syncfusion
-description: This section illustrates how to select the content of WPF RichTextBox control
+description: This section illustrates how to select a portion of the document through supported APIs in WPF RichTextBox control
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
