@@ -343,3 +343,76 @@ The following keyboard shortcuts are supported by SfRichTextBoxAdv for navigatio
 
 The following keyboard shortcuts are supported by SfRichTextBoxAdv for selection.
 <table><tr><td>Selection Shortcut<br/></td><td>Description<br/></td></tr><tr><td>CTRL + Right Arrow<br/></td><td>Extends selection to one position forward.<br/></td></tr><tr><td>CTRL + Left Arrow<br/></td><td>Extends selection to one position backward.<br/></td></tr><tr><td>CTRL + Down Arrow<br/></td><td>Extends selection to the same position at next line.<br/></td></tr><tr><td>CTRL + Up Arrow<br/></td><td>Extends selection to the same position at previous line.<br/></td></tr><tr><td>SHIFT + Home<br/></td><td>Extends selection to start of the current line.<br/></td></tr><tr><td>SHIFT + End<br/></td><td>Extends selection to end of the current line.<br/></td></tr><tr><td>CTRL + SHIFT + Home<br/></td><td>Extends selection to the document start position.<br/></td></tr><tr><td>CTRL + SHIFT + End<br/></td><td>Extends selection to the document end position.<br/></td></tr><tr><td>CTRL + SHIFT + Right<br/></td><td>Extends selection to the current word end position.<br/></td></tr><tr><td>CTRL + SHIFT + Left<br/></td><td>Extends selection to the current word start position.<br/></td></tr><tr><td>CTRL + SHIFT + Down<br/></td><td>Extends selection to the current paragraph end position.<br/></td></tr><tr><td>CTRL + SHIFT + Up<br/></td><td>Extends selection to the current paragraph start position.<br/></td></tr><tr><td>CTRL + A<br/></td><td>Selects the entire document.<br/></td></tr></table>
+
+## How to show blinking cursor and selection highlight even when the control lost focus
+
+The SfRichTextBoxAdv control allows you to show the blinking cursor and selection highlight even when the control doesn't have focus. You can choose any one of the following selection visibility options:
+
+* **None** - Don't display neither caret nor selection highlight when the RichTextBox control doesn't have focus.
+
+* **CaretVisible** - Displays the caret (blinking cursor) when the RichTextBox control doesn't have focus.
+
+* **SelectionHighlightVisible** - Displays the selection highlight when the RichTextBox control doesn't have focus.
+
+* **All** - Displays both the caret (blinking cursor) and selection highlight when the RichTextBox control doesn't have focus.
+
+The following code example demonstrates how to display the selection highlight even when the RichTextBox control doesn't have focus.
+
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" SelectionVisibilityOnLostFocus="SelectionHighlightVisible"  xmlns:RichTextBoxAdv="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.Wpf" />
+
+
+{% endhighlight %}
+{% highlight c# %}
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+// Displays the selection highlight when the RichTextBox control doesn't have focus.
+richTextBoxAdv. SelectionVisibilityOnLostFocus = SelectionVisibilityOnLostFocus.SelectionHighlightVisible;
+
+
+{% endhighlight %}
+{% highlight VB %}
+' Initializes a new instance of RichTextBoxAdv.
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+
+' Displays the selection highlight when the RichTextBox control doesn't have focus.
+richTextBoxAdv.SelectionVisibilityOnLostFocus = SelectionVisibilityOnLostFocus.SelectionHighlightVisible
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## How to determine the editing context type
+
+The SfRichTextBoxAdv control allows you to know the editing context type based on the selected content. The following are the editing context types:
+
+* **Text** - Denotes that the editing context is text
+
+* **Image** - Denotes that the editing context is image
+
+* **Table** - Denotes that the editing context is table
+
+The following code example demonstrates how to determine the editing context type based on the selection.
+
+{% tabs %}
+{% highlight c# %}
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+if (richTextBoxAdv.Selection.EditingContext.Type == EditingContextType.Text)
+ {
+ }
+
+
+{% endhighlight %}
+{% highlight VB %}
+' Initializes a new instance of RichTextBoxAdv.
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+If (richTextBoxAdv.Selection.EditingContext.Type == EditingContextType.Text) Then
+End If
+
+
+{% endhighlight %}
+
+{% endtabs %}
