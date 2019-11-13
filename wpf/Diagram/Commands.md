@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion | Explore the frequently used inbuilt commands.
-description:  How to explore and use the inbuilt commands?
+description:  Commands are used to execute simple functionalities in SfDiagram with command execution at runtime and through keyboard shortcuts.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -24,21 +24,22 @@ Diagram provides set of commands to perform the functionalities in application.
 * Nudge commands
 * FitToPage command
 * Undo/Redo command
+* Expand-Collapse command
 
 ## Alignment
 
-Alignment commands enable you to align the selected objects such as Nodes and Connectors on a page with respect to a reference object.
+Alignment commands enable you to align the selected objects such as Nodes and Connectors on a page with respect to a reference object(FirstSelectedItem).
 
-The Alignment commands as follows.
+The Alignment commands and their description are as follows.
 
-| Commands | Description |
-|---|---|---|
-| AlignLeft | The AlignLeft command enables you to align all selected objects along the left corner of the reference object. |
-| AlignRight | The AlignRight command enables you to align all selected objects along the right corner of the reference object. |
-| AlignCenter | The AlignCenter command enables you to center all selected objects vertically. It aligns selected objects to the center with respect to the horizontal axis by changing the x-coordinate of the object. |
-| AlignTop | The AlignTop command enables you to align all selected objects along the top surface of the reference object. |
-| AlignBottom | The AlignBottom command enables you to align all selected objects along the bottom surface of the reference object. |
-| AlignMiddle | The AlignMiddle command enables you to center all selected objects horizontally. It aligns selected objects to the center with respect to the vertical axis by changing the y-coordinate of the object. |
+| Commands | Description  | Images |
+| --- | --- | --- |
+| AlignLeft | The AlignLeft command enables you to align all selected objects along the left corner of the reference object. | ![ After Image](Commands_Images/AlignLeft_after.jpg) |
+| AlignRight | The AlignRight command enables you to align all selected objects along the right corner of the reference object. | ![ After Image](Commands_Images/AlignRight_after.jpg) |
+| AlignCenter | The AlignCenter command enables you to center all selected objects vertically. It aligns selected objects to the center with respect to the horizontal axis by changing the x-coordinate of the object. | ![ After Image](Commands_Images/AlignCenter_after.jpg) |
+| AlignTop | The AlignTop command enables you to align all selected objects along the top surface of the reference object. | ![ After Image](Commands_Images/AlignTop_after.jpg) |
+| AlignBottom | The AlignBottom command enables you to align all selected objects along the bottom surface of the reference object. | ![ After Image](Commands_Images/AlignBottom_after.jpg) |
+| AlignMiddle | The AlignMiddle command enables you to center all selected objects horizontally. It aligns selected objects to the center with respect to the vertical axis by changing the y-coordinate of the object. | ![ After Image](Commands_Images/AlignMiddle_after.jpg) |
 
 {% tabs %}
 {% highlight C# %}
@@ -54,6 +55,14 @@ graphinfo.Commands.AlignTop.Execute(null);
 
 Spacing commands enable you to place selected objects on the page at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
 
+The Spacing commands and their description are as follows.
+
+| Commands | Description |
+| --- | --- |
+| SpaceAcross | The SpaceAcross Command enables you to place selected objects horizantally with equal space. | 
+| SpaceOver | The SpaceOver Command enables you to place selected objects vertically with equal space. |
+
+
 {% tabs %}
 {% highlight C# %}
 
@@ -68,9 +77,18 @@ graphinfo.Commands.SpaceDown.Execute(null);
 {% endhighlight %}
 {% endtabs %}
 
+![Sizing gif](Commands_Images/Commands_gif1.gif) 
+
 ## Sizing
 
 Object size commands will be resized all selected object based on width, height and size of the first object in the selection list.
+
+The sizing commands and their description are as follows.
+
+| Command | Description | Image |
+| --- | --- | --- |
+|
+
 
 {% tabs %}
 {% highlight C# %}
