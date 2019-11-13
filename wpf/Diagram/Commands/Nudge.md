@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Explore the moving of selected objects functionalities with nudge commands.
+title: Syncfusion | Explore the Nudge commands.
 description: Nudge commands are used to move the selected elements such as nodes and connectors in diagram page towards up, down, left or right by 1 pixel.
 platform: wpf
 control: SfDiagram

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Explore the alignment functionalities with Alignment commands.
+title: Syncfusion | Explore the Alignment commands.
 description: Alignment Commands are used to align the selected objects on a page with respect to a reference object(first item in selection list).
 platform: wpf
 control: SfDiagram

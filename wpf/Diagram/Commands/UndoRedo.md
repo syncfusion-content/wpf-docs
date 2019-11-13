@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Explore the undo and redo functionalities with undo and redo commands.
+title: Syncfusion | Explore the Undo and Redo commands.
 description:  Undo reverse the last operation done in diagram with undo command and redo restores the last operation done in diagram with redo command.
 platform: wpf
 control: SfDiagram

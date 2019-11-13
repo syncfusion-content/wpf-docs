@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Explore spacing functionalities with the Spacing commands.
+title: Syncfusion | Explore the Spacing commands.
 description:  Spacing commands are used to place selected objects on the page at equal intervals from each other in both vertically and horizontally.
 platform: wpf
 control: SfDiagram

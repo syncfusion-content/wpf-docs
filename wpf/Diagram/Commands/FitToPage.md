@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Explore the fit to page functionality with fit to page commands.
+title: Syncfusion | Explore the FitToPage commands.
 description: FitToPage command is used to bring the required Diagram or entire Diagram into the view with the help of FitToPageParameters.
 platform: wpf
 control: SfDiagram
@@ -28,20 +28,20 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ### CanZoomIn
 
-`CanZoomIn` is used to set whether small diagram gets zoomin to whole view or not.
+`CanZoomIn` is used to set whether small diagram gets zoom in to whole view or not.
 
 ![CanZoomIn](Commands_Images/Commands_img18.gif)
 
 ### FitToPage 
 
-`FitToPage` is used to enable or disable the fittopage behavior with respect to height or width.
+`FitToPage` is used to enable or disable the fit to page behavior with respect to height or width.
 
 | Values | Description |
 | --- | --- |
-| None | It is used disable the fittopage behavior. |
-| FitToHeight | It is used to enable the fittopage behavior only with respect to height. |
-| FitToWidth | It is used to enable the fittopage behavior only with respect to width. |
-| FitToPage | It is used to enable the fittopage behavior with respect to both height and width of the diagram. |
+| None | It is used disable the fit to page behavior. |
+| FitToHeight | It is used to enable the fit to page behavior only with respect to height. |
+| FitToWidth | It is used to enable the fit to page behavior only with respect to width. |
+| FitToPage | It is used to enable the fit to page behavior with respect to both height and width of the diagram. |
 
 ![FitToPage](Commands_Images/Commands_img19.gif)
 
@@ -51,14 +51,14 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 | Values | Description |
 | --- | --- |
-| Content | It is used to perform fittopage for content area only. |
-| PageSettings | It is used to perform fittopage based on the pagewidth and pageheight. |
-| Custom | It is used to perform fittopage for custom region. |
+| Content | It is used to perform fit to page for content area only. |
+| PageSettings | It is used to perform fit to page based on the page width and page height. |
+| Custom | It is used to perform fit to page for custom region. |
 
 ### FocusArea 
 
-`FocusArea` is used to set the focus area to excute fittopage in custom region. 
+`FocusArea` is used to set the focus area to execute `FitToPage` command in custom region. 
 
 ![Region](Commands_Images/Commands_img20.gif)
 
-Please find the [FittoPage sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Fit_to_page_command1640128507) to depict this command.
+Please find the [Fit to page sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Fit_to_page_command1640128507) to depict this command.

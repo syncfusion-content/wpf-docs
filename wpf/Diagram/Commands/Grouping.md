@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Explore the group/ungroup functionalities with grouping commands.
+title: Syncfusion | Explore the Group and UnGroup commands.
 description: Grouping commands are used to group or ungroup the selected diagramming objects (node or connector) in the diagram page.
 platform: wpf
 control: SfDiagram

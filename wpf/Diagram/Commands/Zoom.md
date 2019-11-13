@@ -60,7 +60,7 @@ For ZoomOut operation
 {% endhighlight %}
 {% endtabs %}
 
-![ZoomIn?ZoomOut gif](Commands_Images/Commands_img13.gif)
+![ZoomIn and ZoomOut gif](Commands_Images/Commands_img13.gif)
 
 For ZoomTo speciffic value
 
