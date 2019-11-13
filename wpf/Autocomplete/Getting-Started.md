@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | SfTextBoxExt | wpf | Syncfusion
-description: getting started
+description: This section provides details about AutoComplete and how to bind the data to the AutoComplete of SfTextBoxExt control.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
