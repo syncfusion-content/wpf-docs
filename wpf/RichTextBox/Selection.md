@@ -1,6 +1,6 @@
 ---
-title: Selection
-description: selection
+title: Selection | SfRichTextBoxAdv | WPF | Syncfusion
+description: This section illustrates how to select the content of WPF RichTextBox control
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
