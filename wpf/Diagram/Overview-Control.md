@@ -62,7 +62,7 @@ Overview control allows Zoom and Pan interactions. The red rectangle indicates t
 {% highlight xaml %}
 
 <!--Initialize the overview control with its constraint-->
-<overview:Overview Source="{Binding ElementName=diagram}" Constraint="Default" Height="300" Margin="0,25,0,0"/>
+<syncfusion:Overview Source="{Binding ElementName=diagram}" Constraint="Default" Height="300" Margin="0,25,0,0"/>
 
 <!--Initialize the SfDiagram-->
 <syncfusion:SfDiagram x:Name="diagram" >
@@ -86,7 +86,7 @@ The `Constraint` property of the Overview class allows you to control the Pan an
 
 Diagram supports the deferred scrolling behaviour to improve the zoom and pan performances.
 
-To learn more about deferred scrolling, refer to [Deferred Scrolling](/wpf/diagram/virtualization#deferred-scrolling"DeferredScrolling").
+To learn more about deferred scrolling, refer to [Deferred Scrolling](/wpf/diagram/virtualization#deferred-scrolling "DeferredScrolling").
 
 ## Event
 
