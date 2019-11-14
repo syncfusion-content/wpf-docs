@@ -13,7 +13,7 @@ documentation: ug
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to the [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages) documentation find more details about installing the NuGet package in a WPF application.
+Refer to the [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages) documentation to find more details about installing the NuGet package in a WPF application.
 
 ## Creating a simple application with SfTextBoxExt
 
@@ -203,4 +203,4 @@ namespace AutoCompleteSample
 
 Index of the selected item can be retrieved by using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndexProperty.html) property. The selected item of the AutoComplete can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItemProperty.html) property.
 
-For further details, refer [Retrieving selected values](https://help.syncfusion.com/wpf/autocomplete/retrieving-selected-values).
+For further details, refer to [Retrieving selected values](https://help.syncfusion.com/wpf/autocomplete/retrieving-selected-values).
