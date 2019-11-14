@@ -114,9 +114,11 @@ namespace SfDatePickerSample
 
 ![GettingStarted](GettingStarted_images/GettingStarted.png)
 
-## Binding to data
+## Populating AutoComplete with Data
 
-To bind the AutoComplete to data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSourceProperty.html) property to `IEnumerable` implementation.
+To populate the AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSourceProperty.html) property to `IEnumerable` implementation.
+
+For further details, refer to [AutoComplete with Data](https://help.syncfusion.com/wpf/autocomplete/auto-complete).
 
 {% tabs %}
 {% highlight xaml %}
