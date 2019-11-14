@@ -20,7 +20,7 @@ this.schedule.ScheduleType= ScheduleType.TimeLine;
 {% endtabs }
 
 ## Header date format
-Scheduler supports to customize the default header date format of the day, week, workweek and timeline view by using the [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
+Scheduler supports to customize the header date format of the day, week, workweek and timeline view using [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -35,7 +35,7 @@ this.schedule.HeaderDateFormat = "dd-MMMM-yyyy";
 ![WPF scheduler timeline view header format](timelineview_images/timelineview-header-date-format.png)
 
 ## Time formatting
-Scheduler supports to customize time format for day, week, workweek and timeline views by using [MajorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickTimeFormat.html) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickTimeFormat.html) property.
+Scheduler supports to customize time format for day, week, workweek and timeline views using [MajorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickTimeFormat.html) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickTimeFormat.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -50,7 +50,7 @@ this.schedule.MinorTickTimeFormat = "hh mm ss";
 ![WPF schedular timeline view time formatting](timelineview_images/timelineview-time-format.png)
 
 ## Change time interval
-Scheduler supports to change the time interval by using [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeInterval.html) property.
+Scheduler supports to change the time interval using [TimeInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeInterval.html) property.
 
 
 {% tabs %}
@@ -65,7 +65,7 @@ this.schedule.TimeInterval = TimeInterval.OneHour;
 ![WPF scheduler timeline view timeinterval](timelineview_images/timelineview-change-time-interval.png)
 
 ## Change time interval height
-Scheduler supports to change the time interval height by using [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property.
+Scheduler supports to change the time interval height using [IntervalHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~IntervalHeight.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -79,7 +79,7 @@ this.schedule.IntervalHeight = 100;
 ![WPF scheduler timeline view interval height](timelineview_images/timelineview-change-time-interval-height.png)
 
 ## Change between 12-hour and 24-hour format
-Scheduler supports to change the time format from 12hours to 24 hours by using the [TimeMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeMode.html) property.
+Scheduler supports to change the time format from 12hours to 24 hours using [TimeMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeMode.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -97,7 +97,7 @@ schedule.TimeMode = TimeModes.TwentyFourHours;
 ![WPF Scheduler timeline view 24 hours](timelineview_images/timelineview-24-hours-time-mode.png)
 
 ## Non-accessible timeslots
-Scheduler supports to mark certain timeslots as non-accessible timeslots by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlocks.html) property. User can’t interact over the timeslot marked as non-accessible timeslots. 
+Scheduler supports to mark certain timeslots as non-accessible timeslots using [NonAccessibleBlocks](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlocks.html) property. User can’t interact over the timeslot marked as non-accessible timeslots. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -116,7 +116,7 @@ this.schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock() { Background = ne
 ![WPF scheduler non accessible time slots](timelineview_images/timelineview-non-accessible-timeslots.png)
 
 ### Customize non-accessible timeslots using template
-Scheduler supports to customize the non-accessible timeslots by using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlockTemplate.html) property.
+Scheduler supports to customize the non-accessible timeslots using [NonAccessibleBlockTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonAccessibleBlockTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -141,7 +141,7 @@ Scheduler supports to hide the selected hours by using [CollapsedHours](https://
 
 {% tabs %}
 {% highlight xaml %}
-<schedule:SfSchedule Background="White" x:Name="schedule" ScheduleType="Week">
+<schedule:SfSchedule Background="White" x:Name="schedule" ScheduleType="TimeLine">
     <schedule:SfSchedule.CollapsedHours>
         <schedule:ScheduleCollapsedHour StartHour="1" EndHour="5"  Background="Red"/>
     </schedule:SfSchedule.CollapsedHours>        
@@ -193,7 +193,7 @@ this.schedule.ShowNonWorkingHours = false;
 ![WPF scheduler timeline view prevent Non working hours diplaying](timelineview_images/timelineview-non-working-hour.png)
 
 ### Change non-working hours background
-Scheduler supports to change the background color for non-working hours by using [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingHourBrush.html) property.
+Scheduler supports to change the background color for non-working hours using [NonWorkingHourBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~NonWorkingHourBrush.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -214,7 +214,7 @@ this.schedule.IsHighLightWorkingHours = true;
 ![WPF scheduler timeline view Non working hours background changes](timelineview_images/timelineview-non-working-hour-background.png)
 
 ## Current time indicator
-Scheduler supports to display the current time indicator by using the [CurrentTimeIndicatorVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentTimeIndicatorVisibility.html) property.
+Scheduler supports to display the current time indicator using the [CurrentTimeIndicatorVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentTimeIndicatorVisibility.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -229,7 +229,7 @@ this.schedule.CurrentTimeIndicatorVisibility = Visibility.Visible;
 ![WPF Scheduler timeline view current time indicator](timelineview_images/timelineview-current-time-indicator.png)
 
 ### Customize current time indicator
-Scheduler supports to customize the current time indicator by using [CurrentTimeIndicatorTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentTimeIndicatorTemplate.html) property.
+Scheduler supports to customize the current time indicator using [CurrentTimeIndicatorTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentTimeIndicatorTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -251,7 +251,7 @@ schedule.CurrentTimeIndicatorTemplate = (DataTemplate)this.Resources["CurrentTim
 ![WPF Scheduler timeline view customize current time indicator](timelineview_images/current-time-indicator-template.png)
 
 ## Change hours or minutes time label visibility
-Scheduler supports to visible/collapse the hours and minutes time label visiblity by using [MajorTickVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickVisibility.html) and [MinorTickVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickVisibility.html) properties.
+Scheduler supports to visible/collapse the hours and minutes time label visiblity using [MajorTickVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickVisibility.html) and [MinorTickVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickVisibility.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -264,13 +264,13 @@ this.schedule.MinorTickVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler timeline view hiding time labels ](timelineview_images/major-minor-label-visibility.png)
+![WPF Scheduler timeline view hiding time labels](timelineview_images/major-minor-label-visibility.png)
 
 ## Appearance
 
 ### Changing time label background
 
-Scheduler supports to change the time slot label background by using [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderBackground.html) property.
+Scheduler supports to change the time slot label background using [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderBackground.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -355,7 +355,7 @@ this.schedule.DayViewVerticalLineStroke = Brushes.Brown;
 ![WPF scheduler timeline view stroke customization](timelineview_images/timeline-stroke-customization.png)
 
 ### Current day highlighting
-Scheduler supports to change current day background and foreground for all views by using [CurrentDateBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentDateBackground.html) and [CurrentDateForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentDateForeground.html) property.
+Scheduler supports to change current day background and foreground for all views using [CurrentDateBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentDateBackground.html) and [CurrentDateForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~CurrentDateForeground.html) property.
 
 {% tabs %}
 {% highlight xaml %}
