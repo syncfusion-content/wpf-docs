@@ -20,7 +20,7 @@ Syncfusion Essential Studio for WPF is a comprehensive collection of over 90+ es
 
 ## Controls List
 
-N> The name of the Visual Studio Toolbox entry provided inside brackets if the common control name and toolbox name differs.
+N> The name of the Visual Studio Toolbox entry provided when the common control name and toolbox name differs.
 
 <table>
 <tr>
