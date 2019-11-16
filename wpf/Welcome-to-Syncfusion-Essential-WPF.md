@@ -7,9 +7,9 @@ control: Overview
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential WPF
+# Welcome to Syncfusion WPF UI controls
 
-Essential WPF is a comprehensive collection of over 100+ enterprise-grade WPF components for building modern Desktop applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Gantt, Scheduler, Diagram and much more.
+Syncfusion Essential Studio for WPF is a comprehensive collection of over 90+ essential WPF controls like DataGrid, Chart, Diagram, and PDF Viewer for building powerful line-of-business Windows applications faster. Syncfusion WPF controls provides unparalleled performance, stunning built-in themes, touch-friendly UI, localization and seamless integration with Visual Studio.
 
 ## How to best read this user guide
 
@@ -18,358 +18,645 @@ Essential WPF is a comprehensive collection of over 100+ enterprise-grade WPF co
 * After integrated the component into application using one of the code examples as a starting point, it is likely that you may want additional information on specific features and API. The best option is to search the specific topic using the search box that is available at the top of the user guide.
 * Another valuable resource is the API reference that provides detailed information on the object hierarchy as well as the settings available on every object.
 
+## Controls List
+
+N> The name of the Visual Studio Toolbox entry provided when the common control name and toolbox name differs.
+
+<table>
+<tr>
+<td colspan="3">
+<b>GRIDS</b>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/datagrid/getting-started">DataGrid</a>
+<small> - SfDataGrid</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/treegrid/getting-started">TreeGrid</a>
+<small> - SfTreeGrid</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/propertygrid/getting-started">PropertyGrid</a>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/gridcontrol/getting-started">Excel-like Grid </a>
+<small> - GridControl</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/datapager/getting-started">DataPager</a>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>DATA VISUALIZATION</b>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/charts/getting-started">Charts</a>
+<small> - SfChart</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/diagram/getting-started">Diagram</a>
+<small> - SfDiagram</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/maps/getting-started">Map</a>
+<small> - SfMap</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/surface-chart/getting-started">Surface Chart</a>
+<small> - SfSurfaceChart</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/smith-chart/getting-started">Smith Chart</a>
+<small> - SfSmithChart</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/gantt/getting-started">Gantt</a>
+<small> - GanttControl</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/radial-gauge/getting-started">Radial Gauge</a>
+<small> - SfCircularGauge</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/digital-gauge/getting-started">Digital Gauge</a>
+<small> - SfDigitalGauge</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/linear-gauge/getting-started">Linear Gauge</a>
+<small> - SfLinearGauge</small></p>
+</td>
+
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/kanban-board/getting-started">Kanban Board</a>
+<small> - SfKanban</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/barcode/getting-started">Barcode</a>
+<small> - SfBarcode</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/bullet-graph/getting-started">Bullet Graph</a>
+<small> - SfBulletGraph</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/sunburst-chart/getting-started">Sunburst Chart</a>
+<small> - SfSunburstChart</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/sparkline/getting-started">Sparkline</a>
+<small> - SfLineSparkline</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/heatmap/getting-started">HeatMap</a>
+<small> - SfHeatMap</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/range-selector/getting-started">Range Selector</a>
+<small> - SfDateTimeRangeNavigator</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/treemap/getting-started">TreeMap</a>
+<small> - SfTreeMap</small></p>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>LAYOUT</b>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/docking/getting-started">Docking</a>
+<small> - DockingManager</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/carousel/getting-started">Carousel</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/card-view/getting-started">Card View</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/tabbed-mdi-form/getting-started">Tabbed MDI Form</a>
+<small> - DocumentContainer</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/chromeless-window/getting-started">Chromeless Window</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/tab-splitter/getting-started">Tab Splitter</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/gridsplitter/getting-started">GridSplitter</a>
+<small> - SfGridSplitter</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/tile-view/getting-started">Tile View</a>
+<small> - TileViewControl</small></p>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>FILE VIEWERS & EDITORS</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/pdf-viewer/getting-started">PDF Viewer</a>
+<small> - PdfViewerControl</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/image-editor/getting-started">ImageEditor</a>
+<small> - SfImageEditor</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/spreadsheet/getting-started">Spreadsheet</a>
+<small> - SfSpreadsheet</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/richtextbox/getting-started">RichTextBox</a>
+<small> - SfRichTextBoxAdv</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/syntax-editor/getting-started">Syntax Editor</a>
+<small> - EditControl</small></p>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>FILE FORMAT FRAMEWORKS</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/file-formats/xlsio/getting-started-create-excel-file-csharp-vbnet">Excel</a>
+<small> - XlsIO</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/file-formats/pdf/create-pdf-file-in-wpf">PDF</a>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/file-formats/docio/getting-started">Word</a>
+<small> - DocIO</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/file-formats/presentation/getting-started">PowerPoint</a>
+<small> - Presentation</small></p>
+</td>
+<td/>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>NAVIGATION</b>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/tabcontrol/getting-started">TabControl</a>
+<small> - TabControlExt</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/ribbon/gettingstarted">Ribbon</a>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/treeview/getting-started">TreeView</a>
+<small> - TreeViewAdv</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/breadcrumb/getting-started">BreadCrumb</a>
+<small> - HierarchicalNavigator</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/accordion/getting-started">Accordion</a>
+<small> - SfAccordion</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/navigation-pane/getting-started">Navigation Pane</a>
+<small> - GroupBar</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/navigation-drawer/getting-started">Navigation Drawer</a>
+<small> - SfNavigationDrawer</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/menu/getting-started">Menu</a>
+<small> - MenuAdv</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/taskbar/getting-started">TaskBar</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/tab-navigation/getting-started">Tab Navigation</a>
+<small> - TabNavigationControl</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/radial-menu/getting-started">Radial Menu</a>
+<small> - SfRadialMenu</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/toolbar/getting-started">Toolbar</a>
+<small> - ToolBarAdv</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/tree-navigator/getting-started">Tree Navigator</a>
+<small> - SfTreeNavigator</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/wizard-control/getting-started">Wizard</a>
+<small> - WizardControl</small></p>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>INPUT CONTROLS</b> 
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/maskedtextbox/getting-started">MaskedTextBox</a>
+<small> - SfMaskedEdit</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/color-picker/getting-started">Color Picker</a>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/color-palette/getting-started">Color Palette</a>
+<small> - SfColorPalette</small></p>
+</td>
+</tr>
+
+<tr>
+
+<td>
+<a href="https://help.syncfusion.com/wpf/color-picker-palette/getting-started">Color Picker Palette</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/currency-textbox/getting-started">Currency TextBox</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/integer-textbox/getting-started">Integer TextBox</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/double-textbox/getting-started">Double TextBox</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/percent-textbox/getting-started">Percent TextBox</a>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/domain-updown/getting-started">Domain Updown</a>
+<small> - SfDomainUpDown</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/numericupdown/getting-started">NumericUpdown</a>
+<small> - UpDown</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/radial-slider/getting-started">Radial Slider</a>
+<small> - SfRadialSlider</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/range-slider/getting-started">Range Slider</a>
+<small> - SfRangeSlider</small></p>
+</td>
+
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/rating/getting-started">Rating</a>
+<small> - SfRating</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/calculator/getting-started">Calculator</a>
+<small> - SfCalculator</small></p>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>NOTIFICATION</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/busy-indicator/getting-started">Busy Indicator</a>
+<small> - SfBusyIndicator</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/hub-tile/getting-started">Hub Tile</a>
+<small> - SfHubTile</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/notify-icon/getting-started">Notify Icon</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/linear-progressbar/getting-started">Linear ProgressBar</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/circular-progressbar/getting-started">Circular ProgressBar</a>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>LISTS AND DROPDOWN</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/checkedlistbox/getting-started">CheckedListBox</a>
+<small> - CheckListBox</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/combobox/getting-started">ComboBox</a>
+<small> - ComboBoxAdv</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/autocomplete/getting-started">AutoComplete</a>
+<small> - SfTextBoxExt</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/multi-column-dropdown/getting-started">Multi Column Dropdown</a>
+<small> - SfMultiColumnDropDownControl</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/grouping/getting-started">Grouping</a>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>BUTTONS</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/dropdown-button/getting-started">Dropdown Button</a>
+<small> - DropDownButtonAdv</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/split-button/getting-started">Split Button</a>
+<small> - SplitButtonAdv</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/button/getting-started">Button</a>
+<small> - ButtonAdv</small></p>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>CALENDARS</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/datepicker/getting-started">DatePicker</a>
+<small> - SfDatePicker</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/datetimepicker/getting-started">DateTimePicker</a>
+<small> - DateTimeEdit</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/calendar/getting-started">Calendar</a>
+<small> - CalendarEdit</small></p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/timespan-editor/getting-started">TimeSpan Editor</a>
+<small> - TimeSpanEdit</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/timepicker/getting-started">TimePicker</a>
+<small> - SfTimePicker</small></p>
+</td>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/scheduler/getting-started">Scheduler</a>
+<small> - SfSchedule</small></p>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>REPORTING</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/reportdesigner/getting-started">Report Designer</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/reportwriter/getting-started">Report Writer</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/reportviewer/getting-started">Report Viewer</a>
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>BUSINESS INTELLIGENCE</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/pivot-grid/pivotgrid-getting-started">Pivot Grid</a>
+<small> - PivotGridControl</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/olap-chart/getting-started">OLAP Chart</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/olap-client/getting-started">OLAP Client</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/olap-gauge/getting-started">OLAP Gauge</a>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/olap-grid/getting-started">OLAP Grid</a>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>DATA SCIENCE</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/predictive-analytics/pmml-execution-engine/overview">Predictive Analytics</a>
+</td>
+<td/>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>MISCELLANEOUS</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><a href="https://help.syncfusion.com/wpf/spellchecker/getting-started">SpellChecker</a>
+<small> - SfSpellChecker</small></p>
+</td>
+<td>
+<a href="https://help.syncfusion.com/windowsforms/calculate/getting-started">Calculation Engine</a>
+<small> - Calculate</small>
+</td>
+<td/>
+</tr>
+
+<tr>
+<td colspan="3">
+<b>CLASSIC CONTROLS</b>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/classic/autocomplete/getting-started">AutoComplete</a>
+<sup>classic</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/classic/chart/getting-started">Chart</a>
+<sup>classic</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/classic/diagram/getting-started">Diagram</a>
+<sup>classic</sup>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/classic/griddata/getting-started">GridDataControl</a>
+<sup>classic</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/classic/gridtree/getting-started">GridTreeControl</a>
+<sup>classic</sup>
+</td>
+<td>
+<a href="https://help.syncfusion.com/wpf/classic/spreadsheet/getting-started">Spreadsheet</a>
+<sup>classic</sup>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="https://help.syncfusion.com/wpf/classic/richtextboxadv/getting-started">RichTextBoxAdv</a>
+<sup>classic</sup>
+</td>
+<td/>
+<td/>
+</tr>
+</table>
+
+N> Using `Classic` labeled controls in new projects is not recommended. In `Classic` labeled controls, new features and enhancements will not be included. You can only use it if the current control features meets the requirements of your application.
+
+## Licensing
+
+Refer [licensing documentation](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your WPF application to use Syncfusion controls without license message dialog at runtime.
+
 ## Additional help resources
 
 The [Knowledge Base](https://www.syncfusion.com/kb/wpf) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
 
 Similar to the [Knowledge Base](https://www.syncfusion.com/kb/wpf), the [Forum](https://www.syncfusion.com/forums/wpf) section also contains responses to questions that other customers have asked in the past.
 
-## Create a support incident
+## Support and feedback
 
-If you are still unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
 
-
-## List of Controls
-
-<table>
-<tr>
-<th>
-Category<br/><br/></th><th>
-Controls<br/><br/></th></tr>
-<tr>
-<td>
-GRIDS<br/><br/></td><td>
-{{'[Grid](https://help.syncfusion.com/wpf/grid/overview)' | markdownify }}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[GridTree](https://help.syncfusion.com/wpf/gridtree/overview)' | markdownify }}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfDataGrid](https://help.syncfusion.com/wpf/datagrid/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[Spreadsheet](https://help.syncfusion.com/wpf/sfspreadsheet/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[PropertyGrid](https://help.syncfusion.com/wpf/propertygrid/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-DATA VISUALIZATION<br/><br/></td><td>
-{{'[Diagram](https://help.syncfusion.com/wpf/sfdiagram/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[Gantt](https://help.syncfusion.com/wpf/gantt/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfBarcode](https://help.syncfusion.com/wpf/sfbarcode/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfBulletGraph](https://help.syncfusion.com/wpf/sfbulletgraph/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfChart](https://help.syncfusion.com/wpf/sfchart/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfCircularGauge](https://help.syncfusion.com/wpf/sfcirculargauge/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfDigitalGauge](https://help.syncfusion.com/wpf/sfdigitalgauge/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfLinearGauge](https://help.syncfusion.com/wpf/sflineargauge/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfMaps](https://help.syncfusion.com/wpf/sfmaps/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfSchedule](https://help.syncfusion.com/wpf/sfschedule/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfAreaSparkline](https://help.syncfusion.com/wpf/sfsparkline/sparkline-types#area-sparkline)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfLineSparkline](https://help.syncfusion.com/wpf/sfsparkline/sparkline-types#line-sparkline)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfColumnSparkline](https://help.syncfusion.com/wpf/sfsparkline/sparkline-types#column-sparkline)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfWinLossSparkline](https://help.syncfusion.com/wpf/sfsparkline/sparkline-types#winloss-sparkline)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfTreeMap](https://help.syncfusion.com/wpf/sftreemap/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-LAYOUT<br/><br/></td><td>
-{{'[Carousel](https://help.syncfusion.com/wpf/carousel/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[CardView](https://help.syncfusion.com/wpf/cardview/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[DockingManager](https://help.syncfusion.com/wpf/dockingmanager/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[DocumentContainer](https://help.syncfusion.com/wpf/documentcontainer/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[Ribbon](https://help.syncfusion.com/wpf/ribbon/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[ChromelessWindow](https://help.syncfusion.com/wpf/chromlesswindow/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[TabSplitter](https://help.syncfusion.com/wpf/tabsplitter/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[TileView](https://help.syncfusion.com/wpf/tileview/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-EDITORS<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[ButtonAdv](https://help.syncfusion.com/wpf/buttonadv/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[CalendarEdit](https://help.syncfusion.com/wpf/calendaredit/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[CheckedListBox](https://help.syncfusion.com/wpf/checklistbox/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[ColorPicker](https://help.syncfusion.com/wpf/colorpicker/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[ColorPickerPalette](https://help.syncfusion.com/wpf/colorpickerpalatte/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[ComboBoxAdv](https://help.syncfusion.com/wpf/comboboxadv/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[CurrencyTextBox](https://help.syncfusion.com/wpf/currencytextbox/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[DateTimeEdit](https://help.syncfusion.com/wpf/datetimeedit/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[DoubleTextBox](https://help.syncfusion.com/wpf/doubletextbox/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[DropDownButtonAdv](https://help.syncfusion.com/wpf/dropdownbuttonadv/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[IntegerTextBox](https://help.syncfusion.com/wpf/integertextbox/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[PercentTextBox](https://help.syncfusion.com/wpf/percenttextbox/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[RichTextBoxAdv](https://help.syncfusion.com/wpf/sfrichtextboxadv/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfCalculator](https://help.syncfusion.com/wpf/sfcalculator/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfDomainUpDown](https://help.syncfusion.com/wpf/sfdomainupdown/getting-started)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfMaskedEdit](https://help.syncfusion.com/wpf/sfmaskededit/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfMultiColumnDropdown](https://help.syncfusion.com/wpf/sfmulticolumndropdown/getting-started)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfRadialSlider](https://help.syncfusion.com/wpf/sfradialslider/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfRangeSlider](https://help.syncfusion.com/wpf/sfrangeslider/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfRating](https://help.syncfusion.com/wpf/sfrating/getting-started)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfTextboxExt (AutoComplete)](https://help.syncfusion.com/wpf/sftextboxext/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfUpDown](https://help.syncfusion.com/wpf/updown/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SplitButton](https://help.syncfusion.com/wpf/splitbutton/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[TimespanEdit](https://help.syncfusion.com/wpf/timespanedit/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-NAVIGATION<br/><br/></td><td>
-{{'[GroupBar](https://help.syncfusion.com/wpf/groupbar/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[HierarchyNavigator](https://help.syncfusion.com/wpf/hierarchynavigator/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[MenuAdv](https://help.syncfusion.com/wpf/menuadv/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfColorPalette](https://help.syncfusion.com/wpf/sfcolorpalette/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfDataPager](https://help.syncfusion.com/wpf/sfdatapager/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfDateTimeRangeNavigator](https://help.syncfusion.com/wpf/sfdatetimerangenavigator/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfTreeNavigator](https://help.syncfusion.com/wpf/sftreenavigator/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[TabControlExt](https://help.syncfusion.com/wpf/tabext/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[TabNavigation](https://help.syncfusion.com/wpf/tabnavigation/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[TaskBar](https://help.syncfusion.com/wpf/taskbar/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[ToolBarAdv](https://help.syncfusion.com/wpf/toolbaradv/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[TreeViewAdv](https://help.syncfusion.com/wpf/treeviewadv/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-NOTIFICATION<br/><br/></td><td>
-{{'[NotifyIcon](https://help.syncfusion.com/wpf/notifyicon/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfBusyIndicator](https://help.syncfusion.com/wpf/sfbusyindicator/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SfHubTile](https://help.syncfusion.com/wpf/sfhubtile/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-MISCELLANEOUS<br/><br/></td><td>
-{{'[Calculate](https://help.syncfusion.com/wpf/calculate/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[Grouping](https://help.syncfusion.com/wpf/grouping/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[SkinManager](https://help.syncfusion.com/wpf/skinmanager/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[Wizard](https://help.syncfusion.com/wpf/wizard/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-FILE FORMATS<br/><br/></td><td>
-{{'[DocIO](https://help.syncfusion.com/file-formats/docio/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[PDF](https://help.syncfusion.com/file-formats/pdf/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[PDFViewer](https://help.syncfusion.com/wpf/pdfviewer/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-REPORTING<br/><br/></td><td>
-{{'[ReportDesigner](https://help.syncfusion.com/wpf/reportdesigner/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[ReportWriter](https://help.syncfusion.com/wpf/reportwriter/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[ReportViewer](https://help.syncfusion.com/wpf/reportviewer/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-BUSINESS INTELLIGENCE<br/><br/></td><td>
-{{'[OlapChart](https://help.syncfusion.com/wpf/olapchart/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[OlapClient](https://help.syncfusion.com/wpf/olapclient/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[OlapGauge](https://help.syncfusion.com/wpf/olapgauge/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[OlapGrid](https://help.syncfusion.com/wpf/olapgrid/overview)' | markdownify}}<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-{{'[PivotGrid](https://help.syncfusion.com/wpf/pivotgrid/overview)' | markdownify}}<br/><br/></td></tr>
-</table>
-
+Don't see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/wpf).

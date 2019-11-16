@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles and Templates | DataGrid | WPF | Syncfusion
-description: How to apply styles and templates in SfDataGrid
+title: Styles and Templates in WPF DataGrid control | Syncfusion
+description: Learn about styles and templates support in Syncfusion WPF DataGrid (SfDataGrid) control and more details.
 platform: wpf
 control: SfDataGrid
 documentation: ug
 ---
 
-# Styles and Templates
+# Styles and Templates in WPF DataGrid (SfDataGrid)
 
 The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary etc.) can be customized using various properties exposed and by editing the elements’ Style. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with WPF Circular ProgressBar control | Syncfusion
-description:  Learn here about getting started with Syncfusion WPF Circular ProgressBar control and more details.
+description:  Learn here about getting started with the Syncfusion WPF Circular ProgressBar control and more details.
 platform: WPF
 control: SfCircularProgressBar
 documentation: ug
@@ -46,7 +46,7 @@ To add control manually in XAML, follow the given steps:
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
      <Grid x:Name="grid">       
-       <Syncfusion:SfCircularProgressBar  Progress="50" HorizontalAlignment="Left" Margin="205,88,0,0" VerticalAlignment="Top" Width="347"/>
+       <Syncfusion:SfCircularProgressBar  Progress="50"  Width="347"/>
       </Syncfusion:SfCircularProgressBar>
         </Grid>
 </Window>
