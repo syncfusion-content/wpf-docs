@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping, Sorting and Custom order in WPF PropertyGrid control | Syncfusion
+title: Grouping, Sorting Ordering in WPF PropertyGrid | Syncfusion
 description: This section explains about how the property item can be grouped and sorted based on the SortDirection of property grid
 platform: wpf
 control: PropertyGrid 

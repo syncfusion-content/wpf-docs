@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in WPF PropertyGrid control | Syncfusion
-description: appearance
+description: Learn about style, theme and appearence customization of Syncfusion WPF property grid control and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug

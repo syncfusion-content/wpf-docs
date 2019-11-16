@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF PropertyGrid control | Syncfusion
-description: getting started
+description: Explore how to create and use basic features of Syncfusion WPF property grid control and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
@@ -19,8 +19,6 @@ This section guides you through getting started with the PropertyGrid control. I
 3. Search Box — Used to filter properties.
 2. ToolTip — Displays the name and type of the property on mouse over.
 3. Description Panel — Gives a short description about the property.
-
-
 
 ## Creating the control through Visual Studio
 
@@ -83,8 +81,6 @@ This will create the property as shown in the following screenshot:
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-
-
 ### Through C&#35
 
 To create the PropertyGrid control:
@@ -110,7 +106,7 @@ pGrid.SelectedObject = new Button();
 {% endhighlight %}
 {% endtabs %}
 
-### Custom object
+### Name and description of properties
 
 You can edit the custom object properties using the PropertyGrid. The following example illustrates how to edit the custom object properties.
 
@@ -219,9 +215,9 @@ pGrid.SelectedObject = new Person();
 
 3. The PropertyGrid will be generated as shown in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+![Property grid exploring properties of Person class](Getting-Started_images/Getting-Started_img6.png)
 
-### Custom editor
+### Edit properties using custom editor
 
 The PropertyGrid also provides custom editor support. The following example shows how to create the custom editor.
 
@@ -286,7 +282,7 @@ public class UpDownEditor : ITypeEditor
 {% endhighlight %}
 {% endtabs %}
 
-   The UpDownEditor given in the above code snippet is used to edit the double values. Since the UpDown control has features like scroll buttons to increase the value, it makes it easier to edit the property values of type double. 
+The UpDownEditor given in the above code snippet is used to edit the double values. Since the UpDown control has features like scroll buttons to increase the value, it makes it easier to edit the property values of type double. 
 
 2. Create an instance of Customer Editor with this UpDownEditor as follows:
 
@@ -362,7 +358,6 @@ SkinStorage.SetVisualStyle(propertyGridInstance, "Office2010Blue");
 * GroupButton—Groups the properties based on Category attribute of the property.
 * SortButton—Displays the properties in sorting order in PropertyGrid.
 * PropertyGrid—Lists all the properties
-
 
 ## Adding PropertyGrid to an application
 

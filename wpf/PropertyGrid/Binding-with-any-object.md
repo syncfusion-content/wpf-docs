@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Binding with any object in WPF PropertyGrid control | Syncfusion
-description: binding with any object
+description: Learn about binding with differnent types of objects in Syncfusion WPF property grid control and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
