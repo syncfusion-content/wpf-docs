@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | PropertyGrid  | wpf | Syncfusion
-description: appearance
+title: Appearance in WPF PropertyGrid control | Syncfusion
+description: Learn about style, theme and appearence customization of Syncfusion WPF property grid control and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
@@ -17,15 +17,15 @@ The PropertyGrid control can easily be editable in blend. You can edit the templ
 
 Create the PropertyGrid control using Blend. After creating the PropertyGrid control using Blend, select it and go to “Object” -> “Edit Style” -> “Edit a Copy” to edit the Template of the PropertyGrid control.
 
-![](Appearance_images/Appearance_img1.png)
+![image](Appearance_images/Appearance_img1.png)
 
 This will open a dialog (below) where you can give a name of your own style and define exactly where you would like to store it.
 
-![](Appearance_images/Appearance_img2.png)
+![image](Appearance_images/Appearance_img2.png)
 
 What’s produced through the set of steps is quite a bit of XAML which is placed within your application. This XAML represents the default style for the PropertyGrid control.
 
-![](Appearance_images/Appearance_img3.png)
+![image](Appearance_images/Appearance_img3.png)
 
 Now you can edit each part in the template and create custom look and feel for the control.
 
@@ -50,7 +50,7 @@ Using LineColor, you can set the background for category heading while grouping.
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img4.png)
+![image](Appearance_images/Appearance_img4.png)
 
 ### Properties
 
