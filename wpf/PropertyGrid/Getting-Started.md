@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started | PropertyGrid  | wpf | Syncfusion
+title: Getting Started with WPF PropertyGrid control | Syncfusion
 description: getting started
 platform: wpf
 control: PropertyGrid 

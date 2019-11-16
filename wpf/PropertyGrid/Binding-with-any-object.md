@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding with any object | PropertyGrid  | wpf | Syncfusion
+title: Binding with any object in WPF PropertyGrid control | Syncfusion
 description: binding with any object
 platform: wpf
 control: PropertyGrid 

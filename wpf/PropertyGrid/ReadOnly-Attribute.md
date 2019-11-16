@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ReadyOnly, Editable attributes support in Syncfusion WPF PropertyGrid
+title: ReadyOnly and Editable attributes in WPF PropertyGrid | Syncfusion
 description: This section explains how to make the property item readonly using attributes supported by PropertyGrid.
 platform: wpf
 control: PropertyGrid 

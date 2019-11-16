@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance | PropertyGrid  | wpf | Syncfusion
+title: Appearance in WPF PropertyGrid control | Syncfusion
 description: appearance
 platform: wpf
 control: PropertyGrid 

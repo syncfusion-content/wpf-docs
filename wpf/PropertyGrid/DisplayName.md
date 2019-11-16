@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DisplayName support of PropertyItems in Syncfusion WPF PropertyGrid
+title: Property DisplayName in WPF PropertyGrid | Syncfusion
 description: This section explains how the display name of the property item has been customized through attributes.
 platform: wpf
 control: PropertyGrid 

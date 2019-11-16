@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Description support of PropertyItems in Syncfusion WPF PropertyGrid
+title: Property Description in WPF PropertyGrid control | Syncfusion
 description: This section explains how the description about the property item has been added through attributes.
 platform: wpf
 control: PropertyGrid 

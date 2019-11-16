@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering items via some customization in Syncfusion WPF PropertyGrid
+title: Filtering items in WPF PropertyGrid control | Syncfusion
 description: This section explains about how the property items are filtered through attributes, event and proeprty of PropertyGrid
 platform: wpf
 control: PropertyGrid 
