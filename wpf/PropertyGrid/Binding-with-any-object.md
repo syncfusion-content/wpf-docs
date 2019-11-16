@@ -26,9 +26,7 @@ When the SelectedObject property binds to an object, the properties of that obje
 {% highlight c# %}
 
 /// <summary>
-
 /// Interaction logic for MainWindow.xaml
-
 /// </summary>
 
 partial class MainWindow :  Window 
@@ -130,7 +128,7 @@ public class Customer
 
 {% endtabs %}
 
-![](Binding-with-any-object_images/Binding-with-any-object_img1.png)
+![Binding with any objects using wpf property grid](Binding-with-any-object_images/Binding-with-any-object_img1.png)
 
 ### Properties
 
