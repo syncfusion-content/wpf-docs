@@ -1,49 +1,55 @@
 ---
 layout: post
-title: Range Adorner| PercentTextBox  | Wpf | Syncfusion
-description: range adorner
+title: Range Adorner in WPF PercentTextBox control | Syncfusion
+description: Learn about Range Adorner support in Syncfusion WPF PercentTextBox control and more details about the control features.  
 platform: wpf
 control: PercentTextBox 
 documentation: ug
 ---
 
-# Range Adorner
+# Range Adorner in WPF PercentTextBox 
 
-The EnableRangeAdorner property is used to show the adorner range based on the minimum and maximum values given to that control.
-
-![](Range-Adorner_images/Range-Adorner_img1.png)
-
-
-### Properties
-
-
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Data Type</th></tr>
-<tr>
-<td>
-EnableRangeAdorner </td><td>
-The Adorner range will displayed based on the value.</td><td>
-bool </td></tr>
-</table>
-
-## Adding range adorner to an application 
-
-We have to set the EnableRangeAdorner property, either in XAML or the code file.
+[Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~Value.html) of [PercentTextBox](https://www.syncfusion.com/wpf-ui-controls/percent-textbox) can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over `PercentTextBox` control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property to `true`. default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value. Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
 
 {% tabs %}
-{% highlight xaml %} 
-EnableRangeAdorner="True"
+{% highlight XAML %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" MinValue="0" PercentValue="63" MaxValue="100" EnableRangeAdorner="True" />
+
 {% endhighlight %}
+{% highlight C# %}
 
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.MinValue = 0;
+percentTextBox.MaxValue = 100;
+percentTextBox.PercentValue = 63;
+percentTextBox.EnableRangeAdorner =true;
 
-{% highlight c# %}
-control.EnableRangeAdorner = true;
 {% endhighlight %}
 {% endtabs %}
 
+![PercentTextBox default background of Range Adorner ](Range-Adorner_images/Range-Adorner_img1.png)
 
+## Changing background of range-adorner
+
+You can change the background color of the range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~RangeAdornerBackground.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:PercentTextBox x:Name="percentTextBox" MinValue="0" MaxValue="100" PercentValue="57" EnableRangeAdorner="True" RangeAdornerBackground="LightGreen"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.MinValue = 0;
+percentTextBox.MaxValue = 100;
+percentTextBox.PercentValue = 57;
+percentTextBox.EnableRangeAdorner = true;
+percentTextBox.RangeAdornerBackground = Brushes.LightGreen;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PercentTextBox customized background of Range Adorner ](Range-Adorner_images/Range-Adorner_img2.png)
