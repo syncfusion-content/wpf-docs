@@ -26,9 +26,9 @@ To create the PropertyGrid control:
 
 1. Drag and drop the PropertyGrid from the Visual Studio Toolbox as shown below.
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+   ![image](Getting-Started_images/Getting-Started_img1.png)
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![image](Getting-Started_images/Getting-Started_img2.png)
 
 2. Configure the properties of the PropertyGrid using the VS Properties window.
 
@@ -45,11 +45,11 @@ The PropertyGrid control can also be created and configured using Microsoft Expr
    
 2. Search for the PropertyGrid in the Toolbox.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![image](Getting-Started_images/Getting-Started_img3.png)
 
 3. Drag and drop the PropertyGrid into the designer. The PropertyGrid control is created as shown in the following screenshot. 
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+   ![image](Getting-Started_images/Getting-Started_img4.png)
 
 The user can customize any part of the PropertyGrid using the template editing feature in Expression Blend. 
 
@@ -79,7 +79,7 @@ In the above code snippet, the Button is set as SelectedObject for the PropertyG
 
 This will create the property as shown in the following screenshot:
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![image](Getting-Started_images/Getting-Started_img5.png)
 
 ### Through C&#35
 
@@ -311,7 +311,7 @@ pgridInstance.CustomEditorCollection.Add(brusheditor);
 
 The PropertyGrid displays the UpDownEditor as shown in the following screenshot for the double type values.
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![image](Getting-Started_images/Getting-Started_img7.png)
 
 ## Visual styles
 
@@ -352,7 +352,7 @@ SkinStorage.SetVisualStyle(propertyGridInstance, "Office2010Blue");
 
 ## Structure of the PropertyGrid control
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![image](Getting-Started_images/Getting-Started_img8.png)
 
 * Button panel—Shows the GroupButton and SortButton to help the user at run time.
 * GroupButton—Groups the properties based on Category attribute of the property.
@@ -369,7 +369,7 @@ Following are the steps to add the PropertyGrid control by using VisualStudio in
 
 1. Open Visual Studio. On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+   ![image](Getting-Started_images/Getting-Started_img9.png)
 
 2. On the Project Dialog window, select WPF Application, in the Name field, type the name of the project, and then click OK.
 
@@ -394,7 +394,7 @@ LayoutRoot.Children.Add(propertyGrid);
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![image](Getting-Started_images/Getting-Started_img10.png)
 
 
 ### Adding through XAML
@@ -418,7 +418,7 @@ Following are the steps to add the PropertyGrid control by using Visual Studio i
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img11.png)
+![image](Getting-Started_images/Getting-Started_img11.png)
 
 ### Adding through Blend
 
@@ -426,11 +426,11 @@ Following are the steps to add the PropertyGrid control by using Blend.
 
 1. Open Blend, On the File Menu click New Project. This opens the New Project dialog box.
 
-   ![](Getting-Started_images/Getting-Started_img12.png)
+   ![image](Getting-Started_images/Getting-Started_img12.png)
 
 2. In the Project type’s panel, select WPF application and then click OK.
 
-   ![](Getting-Started_images/Getting-Started_img13.png)
+   ![image](Getting-Started_images/Getting-Started_img13.png)
 
 3. Add the following Reference with the sample project.
 
@@ -441,7 +441,7 @@ Following are the steps to add the PropertyGrid control by using Blend.
    5. In the Search box, type PropertyGrid. This displays the search results.
    6. Drag the PropertyGrid control to Design View.
 
-![](Getting-Started_images/Getting-Started_img14.png)
+![image](Getting-Started_images/Getting-Started_img14.png)
 
 ## ToolTip
 

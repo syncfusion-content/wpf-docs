@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand Nested Properties in WPF PropertyGrid control | Syncfusion
-description: Learn about expanding  nested  properties in Syncfusion WPF property grid control and more details.
+description: Learn about expanding nested properties of selected object in Syncfusion WPF property grid control and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
