@@ -1,7 +1,7 @@
 ---
 layout: post
 title: To ease the execution of frequently used commands | Syncfusion.
-description: How to execute frequently used commands by using context menu items?
+description: Support to execute the frequently used commands of the Diagram control as menu items of the context menu.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -9,15 +9,11 @@ documentation: ug
 
 # Context Menu
 
-In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. Diagram provided some in-build ContextMenu items and allows to define custom menu items.
+In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. Diagram provided some in-built ContextMenu items and allows to define custom menu items.
 
 ## Default Context Menu
 
-The `ContentMenu` Constraint helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands. 
-
-![DefaultMenu](Context-Menu_images/Context-Menu_img1.jpg)
-
-The following code illustrates how to enable/disable the default context menu items.
+The `ContextMenu` Constraint helps you to enable/disable the context menu. The following code illustrates how to enable/disable the default context menu items.
 
 {% tabs %}
 {% highlight C# %}
@@ -31,9 +27,22 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.ContextMenu;
 {% endhighlight %}
 {% endtabs %}
 
+Diagram provides some default context menu items to ease the execution of some frequently used commands. 
+
+![Default Menu](Context-Menu_images/Context-Menu_img1.png)
+
+
 ## Customize Context Menu
 
-Apart from the default ContextMenu items, you can define some additional menu items by using `Menu` property of SfDiagram, Node and Connector. Those additional items have to be defined and added to `MenuItems` Property. 
+* Apart from the default ContextMenu items, you can define some additional menu items by using `Menu` property of SfDiagram, Node and Connector. Those additional items have to be defined and added to `MenuItems` Property. 
+
+* The Content property allows you to set Content for the context menu item.
+
+* The Icon property allows you to set icon for the context menu item.
+
+* The Command property of the Context menu item allows you to define command for it.
+
+* The `IsSeparator` property defines the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the `IsSeparator` property.
 
 The following code example illustrates how to add custom context menu items to Menu property of SfDiagram.
 
@@ -44,19 +53,18 @@ DiagramMenuItem menu = new DiagramMenuItem()
 	{
 		Content = "Delete", 
 		Command = (diagram.Info as IGraphInfo).Commands.Delete,
+		Icon = @"pack://application:,,,/delete.ico"
 	};
 Diagram.Menu.MenuItems.Add(menu);
 
 {% endhighlight %}
 {% endtabs %}
 
-![CustomMenu](Context-Menu_images/Context-Menu_img2.jpg)
+![Custom Menu](Context-Menu_images/Context-Menu_img2.png)
 
 ### Menu for Node and Connector
 
-The default value of Menu property for Node and Connector is null.
-
-The following code example illustrates how to set ContextMenu and ContextMenuItems to Node.
+The default value of Menu property for Node and Connector is null.The following code example illustrates how to set ContextMenu and ContextMenuItems to Node.
 
 {% tabs %}
 {% highlight C# %}
@@ -68,34 +76,21 @@ node.Menu.MenuItems=new ObservableCollection<DiagramMenuItem>();
 DiagramMenuItem mi = new DiagramMenuItem()
 {
 	Content = "Delete",
-	Command = (diagram.Info as IGraphInfo).Commands.Delete
+	Command = (diagram.Info as IGraphInfo).Commands.Delete,
+	Icon = @"pack://application:,,,/delete.ico"
 };
 (node.Menu.MenuItems as ICollection<DiagramMenuItem>).Add(mi);
 
 {% endhighlight %}
 {% endtabs %}
 
-![NodeMenu](Context-Menu_images/Context-Menu_img3.jpg)
+![Node Custom Menu](Context-Menu_images/Context-Menu_img3.png)
 
-You can be notified with events when you click the custom menu items. The following code example illustrates the how to define the event for custom context menu.
+## Events
 
-{% tabs %}
-{% highlight C# %}
+* `MenuItemClickedEvent`will invoke when you click the menu items. To explore about arguments, refer to [MenuItemClickedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MenuItemClickedEventArgs.html)
 
-menu.ClickedEvent += menu_ClickedEvent;
-
-private void menu_ClickedEvent(object sender, MenuItemClickedEventArgs args)
-{
-	//Source – in which object Event get fired
-    //Item - MenuItem     
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-## Context Menu Events
-
-You would be notified with events when you click the menu items. The following code example illustrates how to define those events.
+The following code example illustrates how to define those events.
 
 {% tabs %}
 {% highlight C# %}
@@ -110,3 +105,5 @@ void MainPage_MenuItemClickedEvent(object sender, MenuItemClickedEventArgs args)
 
 {% endhighlight %}
 {% endtabs %}
+
+* `MenuOpening` event will notify when you perform right click on Diagram/Node/Connector.To explore about arguments, refer to [MenuOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MenuOpeningEventArgs.html).
