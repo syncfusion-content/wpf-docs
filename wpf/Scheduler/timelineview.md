@@ -17,7 +17,7 @@ documentation: ug
 {% highlight c# %}
 this.schedule.ScheduleType= ScheduleType.TimeLine;
 {% endhighlight %}
-{% endtabs }
+{% endtabs %}
 
 ## Header date format
 Scheduler supports to customize the header date format of the day, week, workweek and timeline view using [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~HeaderDateFormat.html) property.
