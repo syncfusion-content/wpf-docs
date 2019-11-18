@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Overview | CurrencyTextBox | WPF | Syncfusion
-description: CurrencyTextBox has currency specific behavior in edit controls and supports data binding, Watermark, Null Value, and culture support.
-platform: WPF
-control: CurrencyTextBox 
+title: About WPF CurrencyTextBox control | Syncfusion 
+description: Learn about introduction of Syncfusion WPF CurrencyTextBox control and more details about the control features. 
+platform: wpf
+control: CurrencyTextBox
 documentation: ug
 ---
 
-# Overview
+# WPF CurrencyTextBox Overview
 
-The CurrencyTextBox control restricts text box input to only decimal values and displays it in the currency format with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to enhance its appearance and to suit your applications.
+The [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control restricts text box input to only decimal values and displays it in the currency format with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to enhance its appearance and to suit your applications.
 
 ## Control structure
 
-![wpf currency text box control](Getting-Started_images/Getting-Started_img1.png)
+![Default CurrencyTextBox control](Getting-Started_images/Getting-Started_img1.png)
 
-![wpf currency text box watermark text](Getting-Started_images/Getting-Started_img2.png)
+![CurrencyTextBox control with watermark text](Getting-Started_images/Getting-Started_img2.png)
 
 ## Features
 
-The core features of the CurrencyTextBox are as follows:
+The core features of the `CurrencyTextBox` are as follows:
 
-* Provides the ability to control the range of input values by using the MinValue and MaxValue properties.
+* Provides the ability to control the range of input values by using the `MinValue` and `MaxValue` properties.
 * Provides different foreground brushes for positive, negative, and zero values.
 * Provides data binding support.
 * Provides built-in Visual Styles and themes.
@@ -30,6 +30,3 @@ The core features of the CurrencyTextBox are as follows:
 * Provides Blendability support.
 * Provides Null Value support.
 * Provides culture support.
-
-
-

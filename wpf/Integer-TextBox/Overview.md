@@ -1,34 +1,31 @@
 ---
 layout: post
-title: Overview | Integer TextBox | WPF | Syncfusion
-description: WPF Integer TextBox control restricts the integer values for input. It supports culture-based formatting and it has positive and negative colors.
+title: About WPF IntegerTextBox control | Syncfusion 
+description: Learn about introduction of Syncfusion WPF IntegerTextBox control and more details about the control features.
 platform: WPF
 control: IntegerTextBox 
 documentation: ug
 ---
 
-# Overview
+# WPF IntegerTextBox Overview
 
-The IntegerTextBox control restricts text box input to only integer values with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to enhance its appearance and to suit your applications.
+The [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) control restricts text box input to only integer values with support for data binding, Watermark, Null Value, and culture support. It provides many customization options to improve its appearance and to suit your applications.
 
 ## Control structure
 
-![wpf integer text box control](Getting-Started_images/Getting-Started_img1.png)
+![Default IntegerTextBox control](Getting-Started_images/Getting-Started_img1.png)
 
-![wpf integer text box water mark text](Getting-Started_images/Getting-Started_img2.png)
+![IntegerTextBox control with watermark text](Getting-Started_images/Getting-Started_img2.png)
 
 ## Features
 
-The core features of the IntegerTextBox are as follows:
+The core features of the `IntegerTextBox` are as follows:
 
 * Supports upto Int64 data type.
-* Provides the ability to control the range of input values by using the MinValue and MaxValue properties.
+* Provides the ability to control the range of input values by using the `MinValue` and `MaxValue` properties.
 * Provides different foreground brushes for positive and negative numbers.
 * Provides data binding support.
 * Provides built-in Visual Styles and themes.
 * Provides Watermark support.
 * Provides Number Format support. 
 * Provides culture support.
-
-
-

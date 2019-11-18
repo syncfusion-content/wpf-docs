@@ -1,87 +1,54 @@
 ---
 layout: post
-title: Localization | DateTimeEdit | WPF | Syncfusion
+title: WPF DateTimeEdit Localization | Syncfusion
 description: DateTimeEdit control provides localization support to translate the application resources into different language for the specific cultures.
 platform: wpf
 control: DateTimeEdit
 documentation: ug
 ---
 
-# Localization
+# Localization 
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the DateTimeEdit by adding resource file. 
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the DateTimeEdit by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting [CurrentUICulture]([CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2)) after `InitializeComponent` method. 
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-AccessCalendarText</td><td>
-Sets the string for the Calendar Text in DateTimeEdit.</td></tr>
-<tr>
-<td colspan = "1">
-{{'![AccessCalendarText](Localization_images/Localization_img1.png)'|markdownify}}
+Below application culture changed to French.
 
-{{ '_AccessCalendarText(en-US)_' | markdownify }}
-</td>
-<td>
-{{'![AccessCalendarText](Localization_images/Localization_img2.png)'|markdownify}}
+{% tabs %}
 
-{{ '_AccessCalendarText(fr-FR)_' | markdownify }}</td></tr>
-<tr>
-<td>
-AccessClockText</td><td>
-Sets the string for the Clock Text in DateTimeEdit</td></tr>
-<tr>
-<td colspan = "1">
-{{'![AccessClockText](Localization_images/Localization_img3.png)'|markdownify}}
+{% highlight C# %}
 
-{{ '_AccessClockText(en-US)_' | markdownify }}
-</td>
-<td>
-{{'![AccessClockText](Localization_images/Localization_img4.png)'|markdownify}}
+public MainWindow()
+{
+    InitializeComponent();
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+}    
 
-{{'_AccessClockText(fr-FR)_' | markdownify }}</td></tr>
-<tr>
-<td>
-AccessEmptyDateText</td><td>
-Sets the string for the Empty Date Text in DateTimeEdit.</td></tr>
-<tr>
-<td colspan = "1">
-{{'![AccessEmptyDateText](Localization_images/Localization_img5.png)'|markdownify}}
+{% endhighlight %}
 
-{{ '_AccessEmptyDateText (en-US)_' | markdownify }}
-</td>
-<td>
-{{'![AccessEmptyDateText](Localization_images/Localization_img6.png)'|markdownify}}
+{% endtabs %}
 
-{{ '_AccessEmptyDateText(fr-FR)_' | markdownify }}</td></tr>
-<tr>
-<td>
-AccessWatchText</td><td>
-Sets the string for the Watch Text in DateTimeEdit.</td></tr>
-<tr>
-<td colspan = "1">
-Watch(en-US)</td><td> Watch(fr-FR)</td></tr>
-<tr>
-<td>
-TodayLabel</td><td>
-Sets the string for the Today Label in DateTimeEdit.</td></tr>
-<tr>
-<td colspan = "1">
-{{'![TodayLabel](Localization_images/Localization_img7.png)'|markdownify}}
+To localize the DateTimeEdit based on [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentuiculture?view=netframework-4.7.2) using resource files, follow the below steps. 
 
-{{ '_TodayLabel_' | markdownify }}
-</td>
-<td>
-{{'![TodayLabel](Localization_images/Localization_img8.png)'|markdownify}}
+**Step 1:** Create new folder and named as **Resources** in your application. 
 
-{{ '_TodayLabel_' | markdownify }}</td></tr>
-</table>
+**Step 2:** Right-click on the Resources folder, select **Add** and then **NewItem**.
 
-![DateTimeEdit control localization](Localization_images/Localization_img9.png)
+**Step 3:** In `Add New Item` wizard, select the **Resource File** option and name the filename as **Syncfusion.Shared.Wpf.&lt;culture name&gt;.resx**. For example, you have to give name as **Syncfusion.Shared.WPF.fr-FR.resx** for French culture.
 
-N> To create the localized application, follow the steps mentioned [here](https://help.syncfusion.com/wpf/introduction/common-supports#localization). 
-Also, you can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WPF_DateTimeEditLocalization1161670264) . 
+![Adding new resource file in WPF application](Localization_images/Add-resource-file-in-wpf-application.png)
+
+**Step 4:** Now, select `Add` option to add the resource file in **Resources** folder.
+
+![Resource file](Localization_images/Resource-file.png)
+
+**Step 5:** Add the Name/Value pair in Resource Designer of **Syncfusion.Shared.Wpf.fr-FR.resx** file and change its corresponding value to corresponding culture. 
+
+![Added string property of DateTimeEdit which need to localized in resource file](Localization_images/wpf-datetimeedit-localized-string-properties.png)
+
+The following screenshot shows the localized DateTimeEdit control.
+
+![WPF DateTimeEdit contain localized today and none button text](Localization_images/wpf-datetimeedit-localization.png)
+
+![WPF DateTimeEdit contain localized calendar, clock and none button text](Localization_images/wpf-datetimeedit-classic-localization.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/Localization)

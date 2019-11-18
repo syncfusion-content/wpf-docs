@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Getting Started | CurrencyTextBox | WPF | Syncfusion
-description: This section describes how to add currency text box control into wpf application and its basic functionalities.
+title: Getting started with WPF CurrencyTextBox control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF CurrencyTextBox control and more details about the control features.
 platform: WPF
-control: CurrencyTextBox 
+control: CurrencyTextBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting started with WPF CurrencyTextBox
+
+This section explains how to create a WPF `CurrencyTextBox` control and its features.
 
 ## Assembly deployment
 
@@ -17,27 +19,22 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-## Create a simple application with CurrencyTextBox
+## Adding WPF CurrencyTextBox via designer
 
-You can create a WPF application with the CurrencyTextBox control using the following steps:
+You can add the [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
-## Create a project
+* Syncfusion.Shared.WPF
 
-Create a new WPF project in Visual Studio to display the CurrencyTextBox with functionalities.
+![CurrencyTextBox Control added by designer](Getting-Started_images/wpf-currency-text-box-control-added-by-designer.png)
 
-## Add control through designer
+## Adding WPF CurrencyTextBox via XAML
 
-The CurrencyTextBox control can be added to an application by dragging it from the toolbox to a designer view. The **Syncfusion.Shared.WPF** assembly reference will be added automatically to the project.
+To add the CurrencyTextBox control manually in XAML, follow these steps:
+1. Create a new WPF project in Visual Studio.
 
-![wpf CurrencyTextBox control added by designer](Getting-Started_images/wpf-currency-textbox-control-added-by-designer.png)
-
-## Add control manually in XAML
-
-To add the control manually in XAML, follow the given steps:
-
-1.	Add the **Syncfusion.Shared.WPF** assembly reference to the project.
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3.	Declare the CurrencyTextBox control in the XAML page.
+2. Add the **Syncfusion.Shared.WPF** assembly references to the project.
+ 
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `CurrencyTextBox` control in XAML page.
 
 {% tabs %}
 {% highlight XAML %}
@@ -48,95 +45,258 @@ To add the control manually in XAML, follow the given steps:
         Title="CurrencyTextBox Sample" Height="350" Width="525">
     <Grid>
         <!--Adding CurrencyTextBox control -->
-        <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center"/>
     </Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}
 
-## Add control manually in C\#
+## Adding WPF CurrencyTextBox via C\#
 
-To add the control manually in C#, follow the given steps:
+To add the CurrencyTextBox control manually in C#, follow these steps:
 
-1. Add the **Syncfusion.Shared.WPF** assembly reference to the project. 
-2. Import CurrencyTextBox namespace **using Syncfusion.Windows.Shared;**.
-3. Create a CurrencyTextBox instance, and add it to the window.
+1. Create a new WPF application via Visual Studio.
+
+2. Add the **Syncfusion.Shared.WPF** assembly references to the project.
+
+3. Include the required namespace.
 
 {% tabs %}
 {% highlight C# %}
+
 using Syncfusion.Windows.Shared;
-namespace CurrencyTextBoxSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-            //Creating an instance of CurrencyTextBox control
-            CurrencyTextBox currencyTextBox = new CurrencyTextBox();
-            //Adding CurrencyTextBox as window content
-            this.Content = currencyTextBox;
-        } 
-    }
-}
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf currency text box control added by designer](Getting-Started_images/wpf-currency-text-box-control-added-manually.png)
+4. Create an instance of CurrencyTextBox and add it to the window.
 
-## Bind value
+{% tabs %}
+{% highlight C# %}
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind the data to the CurrencyTextBox using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) property. Refer to the [Data binding](https://help.syncfusion.com/wpf/currencytextbox/data-binding-support) section for more details.
- 
+//Creating an instance of CurrencyTextBox control
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+
+// Setting height and width to CurrencyTextBox
+
+currencyTextBox.Height = 25;
+currencyTextBox.Width = 100;
+
+//Adding CurrencyTextBox as window content
+
+this.Content = currencyTextBox;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CurrencyTextBox control added to Window by code](Getting-Started_images/wpf-currency-text-box-control-added-manually.png)
+
+## Setting Value
+
+The value of the `CurrencyTextBox` can be set by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="23" Value="100"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.Width = 100;
+currencyTextBox.Height = 23;
+currencyTextBox.Value = 100;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Set the value for CurrencyTextBox](Getting-Started_images/SetValue.png)
+
+N> Do not use the [Text](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.textbox.text?redirectedfrom=MSDN&view=netframework-4.7.2#System_Windows_Controls_TextBox_Text) property to set the value for the CurrencyTextBox. Use only the `Value` property.
+
+### Binding Value
+
+Data binding is the method of forming a connection between the application  UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind data to the `CurrencyTextBox` using the `Value` Property.
+
+The following code snippets illustrate the value binding from one `CurrencyTextBox` to another.
+
 {% tabs %}
 {% highlight XAML %}
 <StackPanel>
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Grid.Row="1" Height="25" Width="100"/>
-<!--Binding value -->
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox2" Grid.Row="3" Width="100" Height="25" Value="{Binding ElementName=currencyTextBox1,Path=Value,Mode=TwoWay}" />
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Height="25" Width="100" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}"/>
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox2" Width="100" Height="25" Value="{Binding MyValue,UpdateSourceTrigger=PropertyChanged}" />
 </StackPanel>
 {% endhighlight %}
 {% endtabs %}
 
-![wpf currency text box value binding](Getting-Started_images/wpf-currency-text-box-control-binding-value.png)
+ViewModel.cs
 
-## Setting the minimum and maximum values
-
-You can define the minimum and maximum values by setting the [MinVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MinValue.html) and [MaxVal](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MaxValue.html) properties of CurrencyTextBox.
- 
 {% tabs %}
-{% highlight XAML %}
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="100" MinValue="-999" MaxValue="999"/>
-{% endhighlight %}
 {% highlight C# %}
-//Setting minimum value
-currencyTextBox.MinValue = -999;
-//Setting maximum value
-currencyTextBox.MaxValue = 999;
+
+class ViewModel : NotificationObject
+{
+    private double myValue;
+    public double MyValue
+    {
+        get
+        {
+            return myValue;
+        }
+        set
+        {
+            myValue = value;
+            RaisePropertyChanged("MyValue");
+        }
+    }
+}
+
 {% endhighlight %}
 {% endtabs %}
 
-## Number format
+![CurrencyTextBox value binding](Getting-Started_images/wpf-currency-text-box-control-binding-value.png)
 
-You can customize the number format using either the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyGroupSeparator.html), [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyGroupSizes.html), [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyDecimalDigits.html), and [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyDecimalSeparator.html), [CurrencySymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencySymbol.html), [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyNegativePattern.html), and [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyPositivePattern.html) properties of CurrencyTextBox.
+## Value Changed Notification
+
+The `CurrencyTextBox` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~ValueChanged_EV.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
+
+{%tabs%}
+{% highlight xaml %} 
+
+<syncfusion:CurrencyTextBox ValueChanged="CurrencyTextBox_ValueChanged"/>
+
+{% endhighlight %}
+{% highlight C# %} 
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.ValueChanged += new PropertyChangedCallback(CurrencyTextBox_ValueChanged);
+
+{% endhighlight %}
+{%endtabs%}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void CurrencyTextBox_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    // Get old and new value
+    var newValue = e.NewValue;
+    var oldValue = e.OldValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Min Max Value Restriction
+
+The `Value` of `CurrencyTextBox` can be restricted within maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~MaxValue.html) properties. It allows the user to enter the value between `MinValue` and `MaxValue`. 
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234567" CurrencyGroupSeparator="/" CurrencyDecimalDigits="4" CurrencyDecimalSeparator="*" CurrencySymbol="$"/>
+
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="455" MaxValue="999.99" MinValue="-999.99"/>
 {% endhighlight %}
 {% highlight C# %}
-Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new   Syncfusion.Windows.Shared.CurrencyTextBox();
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.Width = 100;
+currencyTextBox.Height = 25;
+//Setting minimum value
+currencyTextBox.MinValue = -999.99;
+//Setting maximum value
+currencyTextBox.MaxValue = 999.99;
+currencyTextBox.Value = 455;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Restrict the value of CurrencyTextBox by the minimum and maximum values](Getting-Started_images/max-minvalue.png)
+
+## Step Interval to increase or decrease the value
+
+The `CurrencyTextBox` control allows to increase or decrease the value by pressing up and down arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~ScrollInterval.html) property is used to specify the increment or decrement intervals. The default value of `ScrollInterval` is 1.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="8" 
+                          IsScrollingOnCircle="True" ScrollInterval="4"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.Width = 100;
+currencyTextBox.Height = 25;
+currencyTextBox.MinValue = 0;
+currencyTextBox.MaxValue = 100;
+currencyTextBox.Value = 8;
+currencyTextBox.IsScrollingOnCircle = true;
+currencyTextBox.ScrollInterval = 4;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CurrencyTextBox value increment or decrement interval](Getting-Started_images/Step-Interval.png)
+
+## Formatting the value
+
+You can customize the number format by using either the [NumberFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~NumberFormat.html) property or the [CurrencyGroupSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyGroupSeparator.html), [CurrencyGroupSizes](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyGroupSizes.html), [CurrencyDecimalDigits](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyDecimalDigits.html) and [CurrencyDecimalSeparator](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyDecimalSeparator.html), [CurrencySymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencySymbol.html), [CurrencyNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyNegativePattern.html), and [CurrencyPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~CurrencyPositivePattern.html) properties of CurrencyTextBox.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  Value="1234567">
+    <syncfusion:CurrencyTextBox.NumberFormat >
+        <numberformat:NumberFormatInfo CurrencyGroupSeparator="/" CurrencyDecimalDigits="4" CurrencyDecimalSeparator="*"   CurrencySymbol="$"/>
+    </syncfusion:CurrencyTextBox.NumberFormat>
+</syncfusion:CurrencyTextBox>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
 currencyTextBox.Value = 1234567;
-currencyTextBox.CurrencyGroupSeparator = "/";
-currencyTextBox.CurrencyDecimalDigits = 4;
-currencyTextBox.CurrencyDecimalSeparator = "*";
-currencyTextBox.CurrencySymbol = "$";
+currencyTextBox.NumberFormat = new NumberFormatInfo()
+{
+    CurrencyGroupSeparator = "/",
+    CurrencyDecimalDigits = 4,
+    CurrencyDecimalSeparator = "*",
+    CurrencySymbol = "$"
+};
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf currency text box control number format](Getting-Started_images/wpf-cuurency-control-number-format.png)
+![Setting CurrencyTextBox Number Format](Getting-Started_images/wpf-currency-control-number-format.png)
+
+## Setting the Culture
+
+The `CurrencyTextBox` provides support for globalization by using the [Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~Culture.html) property. The `Culture` is used to format the decimal separator and group separator of the `CurrencyTextBox` value based on the respective culture.
+
+{%tabs%}
+{% highlight xaml %} 
+
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="100" Culture="en-US" Value="1234567"/>
+
+{% endhighlight %}
+{% highlight C# %} 
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.Width = 100;
+currencyTextBox.Height = 25;
+currencyTextBox.Value = 1234567;
+currencyTextBox.Culture = new System.Globalization.CultureInfo("en-US");
+
+{% endhighlight %}
+{%endtabs%}
+
+![Setting CurrencyTextBox Culture](Getting-Started_images/Culture.png)
+
+N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have a higher priority.
