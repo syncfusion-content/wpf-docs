@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides a quick overview for working with the SfDataGrid for WPF. Walk through the entire process of creating a real world of this control.
 
-To get start quickly with Xamarin.Forms DataGrid, you can check on this video:
+To get start quickly with WPF DataGrid, you can check on this video:
 <style>#WPFDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='WPFDataGridVideoTutorial' src='https://www.youtube.com/embed/1t4nXyDA9l0'></iframe>
 
