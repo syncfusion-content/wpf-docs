@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Color Picker | WPF | Syncfusion
-description: WPF Color Picker control allows users to select a color from the drop-down palette.
+description: WPF Color Picker control allows users to select as well as edit solid or gradient brush from a drop-down palette.
 platform: wpf
 control: ColorPicker
 documentation: ug
@@ -9,15 +9,22 @@ documentation: ug
 
 # Overview
 
-The ColorPicker control provides an easy and an efficient way to select colors from the color palette collection. It displays the color palette as a drop-down control. It is supplied with two varieties of visualization for viewing the colors from the palette. The selected color is highlighted with its respective name. For example, if brown color is selected, then the tool tip will display "Brown". ColorPicker comes with the support of eyedropper to fetch color in the ColorPicker.
+ WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) is an user interface to select and adjust color values. This supports various color specifications like RGB (Red Green Blue), HSV (Hue Saturation Value), and Hex codes.
 
-This section also discusses the ColorEdit control, which is similar to the ColorPicker.
+ ![Syncfusion WPF ColorPicker-ColorEdit](Getting-Started_images/ColorEdit_Overview.png)
+
+This section also discusses the WPF ColorEdit control, which is similar to the ColorPicker.
 
 ## Features
 
-* The selected color is visualized in a tooltip for the benefit of the users.
-* ColorPicker is used in two modes— RGB and HSV.
-* Support for picking colors using eyedropper. Drag the eyedropper to anywhere in your application to pick the color of a specific location or even a point.
+* **Color Editing** - Drag the handle to pick your favorite color in the Picker region or set the color values manually with input control (RGB or HSV).
+
+* A slider displaying the **Hue spectrum**, allowing for selection of a hue value.
+* **Gradient Editor** - Sliders capable of altering the stops of a linear or radial brush.
+* **EyeDropper** - Drag the eyedropper to anywhere in your application to pick the color of a specific location or even a point.
+*  Supports  **ToolTip**  to show the selected color while dragging the picker in ColorEdit control.
+*  Supports **rich set of Themes** to alter the look and feel of the control according to the application needs.
+*  Comes with build-in color palette drop down for ease color selection.
 
 
 
