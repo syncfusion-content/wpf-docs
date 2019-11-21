@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion | Populate Diagram from external data sources.
-description: How to populate the Diagram from the local data?
+description: How to populate an automatic layout with nodes and connectors in diagram area with local business objects and nodes collection?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# DataSource
+# Data Binding
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 
@@ -21,58 +21,169 @@ Diagram can be populated with the nodes and connectors based on the information 
 
 To explore those properties, refer to [DataSourceSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings_members.html)
 
+## Defining DataSource
+
+`DataSource` can be a collection of any business object or collection of nodes. If we use collection of business object as datasource then nodes has been created automatically to populate a layout. As a collection of object, datasource has the functionalities of add, remove, reset and move. The following code example will illustrate the defining of `DataSource` using business objects.
+
 {% tabs %}
 {% highlight xaml %}
 
-<!-- Initializes the employee collection-->
-<local:Employees x:Key="employees">
-    <local:Employee Name="Steve" EmpId="1" ParentId="" Designation="CEO"/>
-    <local:Employee Name="Kevin" EmpId="2" ParentId="1" Designation="Manager"/>
-    <local:Employee Name="John" EmpId="3" ParentId="1" Designation="Manager"/>
-    <local:Employee Name="Raj" EmpId="4" ParentId="2" Designation="Team Lead"/>
-    <local:Employee Name="Will" EmpId="5" ParentId="2" Designation="S/w Developer"/>
-    <local:Employee Name="Sarah" EmpId="6" ParentId="3" Designation="TeamLead"/>
-    <local:Employee Name="Mike" EmpId="7" ParentId="3" Designation="Testing Engineer"/>
-</local:Employees>
+        <!-- Initializes the employee collection-->
+        <local:Employees x:Key="employees">
+            <local:Employee Name="Steve" EmpId="1" ParentId="" Designation="CEO"/>
+            <local:Employee Name="Kevin" EmpId="2" ParentId="1" Designation="Manager"/>
+            <local:Employee Name="John" EmpId="3" ParentId="1" Designation="Manager"/>
+            <local:Employee Name="Raj" EmpId="4" ParentId="2" Designation="Team Lead"/>
+            <local:Employee Name="Will" EmpId="5" ParentId="2" Designation="S/w Developer"/>
+            <local:Employee Name="Sarah" EmpId="6" ParentId="3" Designation="TeamLead"/>
+            <local:Employee Name="Mike" EmpId="7" ParentId="3" Designation="Testing Engineer"/>
+        </local:Employees>
 
-<!--Initializes the DataSourceSettings -->
-<syncfusion:DataSourceSettings x:Key="DataSourceSettings" DataSource="{StaticResource employees}"
-                               ParentId="ParentId" Id="EmpId" Root="1"/>
-               
-<!--Initializes the Layout-->                
-<syncfusion:DirectedTreeLayout x:Key="treeLayout" HorizontalSpacing="80" VerticalSpacing="50" 
-                               SpaceBetweenSubTrees="20" Orientation="TopToBottom"/>
-<syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}"/>                               
-         
-<!--Initializes the SfDiagram-->          
-<syncfusion:SfDiagram x:Name="diagram" LayoutManager="{StaticResource layoutManager}"                           
-                      DataSourceSettings="{StaticResource DataSourceSettings}">
-    <!--Initializes the NodeCollection-->                  
-    <syncfusion:SfDiagram.Nodes>
-        <syncfusion:NodeCollection/>
-    </syncfusion:SfDiagram.Nodes>
-    <!--Initializes the ConnectorCollection-->
-    <syncfusion:SfDiagram.Connectors>
-        <syncfusion:ConnectorCollection/>
-    </syncfusion:SfDiagram.Connectors>
-</syncfusion:SfDiagram>
+        <!--Initializes the DataSourceSettings-->
+        <Syncfusion:DataSourceSettings x:Key="DataSourceSettings"  
+                                       Id="EmpId" 
+                                       ParentId="ParentId"
+                                       DataSource="{StaticResource employees}" />
+
+        <!--Initializes the SfDiagram-->
+        <Syncfusion:SfDiagram x:Name="Diagram" DataSourceSettings="{StaticResource DataSourceSettings}"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+    /// <summary>
+    /// Business object class for creating datasource
+    /// </summary>
+    public class Employee
+    {
+        public string Name { get; set; }
+
+        public string EmpId { get; set; }
+
+        public string ParentId { get; set; }
+
+        public string Designation { get; set; }
+    }
+
+    public class Employees : ObservableCollection<Employee>
+    {
+
+    }
+
+    // Initialize DataSourceSettings for SfDiagram
+    Diagram.DataSourceSettings = new DataSourceSettings()
+    {
+        Id = "EmpId",
+        ParentId = "ParentId",
+        Root = "1",
+        DataSource = GetData(),
+    };
+
+    // Method to initialize the value for DataSource
+    private Employees GetData()
+    {
+        Employees employees = new Employees();
+
+        employees.Add(new Employee() { Name = "Steve", EmpId = "1", ParentId = "", Designation = "CEO" });
+        employees.Add(new Employee() { Name = "Kevin", EmpId = "2", ParentId = "1", Designation = "Manager" });
+        employees.Add(new Employee() { Name = "John", EmpId = "3", ParentId = "1", Designation = "Manager" });
+        employees.Add(new Employee() { Name = "Raj", EmpId = "4", ParentId = "2", Designation = "Team Lead" });
+        employees.Add(new Employee() { Name = "Will", EmpId = "5", ParentId = "2", Designation = "S/w Developer" });
+        employees.Add(new Employee() { Name = "Sarah", EmpId = "6", ParentId = "3", Designation = "TeamLead" });
+        employees.Add(new Employee() { Name = "Mike", EmpId = "7", ParentId = "3", Designation = "Testing Engineer" });
+
+        return employees;
+    }
+
+{% endhighlight%}
+{% endtabs %}
+
+N> ParentId and Id must be in same type to populate a layout.
+
+## Defining Layout
+
+By default, populated nodes are positioned at (0,0). You can use built-in automatic layout algorithm to define the position of the each populated nodes. The following code illustrate how to define the tree layout.
+
+{% tabs %}
+{% highlight xaml%}
+
+        <!--Initializes the Layout-->
+        <Syncfusion:DirectedTreeLayout x:Key="treeLayout" 
+                                       Type="Hierarchical" 
+                                       Orientation="TopToBottom" 
+                                       HorizontalSpacing="80" 
+                                       VerticalSpacing="50" />
+        
+        <!--Initialize the layout manager-->
+       <Syncfusion:LayoutManager x:Key="layoutManager" Layout="{StaticResource treeLayout}"/>             
+
+        <!--Initializes the SfDiagram-->
+        <Syncfusion:SfDiagram x:Name="Diagram" 
+                              DataSourceSettings="{StaticResource DataSourceSettings}"
+                              LayoutManager="{StaticResource layoutManager}"/>         
+
+{% endhighlight %}
+{% highlight c# %}
+
+            // Initialize LayoutManager and Layout for SfDiagram
+            Diagram.LayoutManager = new LayoutManager()
+            {
+                Layout = new DirectedTreeLayout()
+                {
+                    Type = LayoutType.Hierarchical,
+                    Orientation = TreeOrientation.TopToBottom,
+                    HorizontalSpacing = 80,
+                    VerticalSpacing = 50,
+                },
+            };
+
+To know more about the supported built-in layout, please refer the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts) page.
+
+### How to done Add, Remove, Reset and Move in DataSource
+
+As `DataSource` is a collection of any business object or nodes, it has the functionalities of add, remove, reset and move.
+
+{% tabs %}
+{% highlight c# %}
+
+            // Add new data in datasource
+            (Diagram.DataSourceSettings.DataSource as Employees).Add(new Employee() {Name = "Steven", EmpId = "8", ParentId = "2", Designation = "S/w Developer" });
+            (Diagram.DataSourceSettings.DataSource as Employees).Insert(3, new Employee() { Name = "William", EmpId = "8", ParentId = "2", Designation = "S/w Developer" });
+
+            // Remove data from datasource
+            Employee emp = (Diagram.DataSourceSettings.DataSource as Employees).ElementAt(5);
+            (Diagram.DataSourceSettings.DataSource as Employees).Remove(emp);
+            (Diagram.DataSourceSettings.DataSource as Employees).RemoveAt(5);
+
+            // Reset all data in datasource
+            Diagram.DataSourceSettings.DataSource = null;
+            Diagram.DataSourceSettings.DataSource = new Employees();
+
+            // Move data from one position to another in datasource
+            (Diagram.DataSourceSettings.DataSource as Employees).Move(2, 1);
 
 {% endhighlight %}
 {% endtabs %}
-
-![DataSource](DataSource_images/DataSource_img1.png)
-
-Sample Link : [DataSource Sample](http://www.syncfusion.com/downloads/support/directtrac/195355/ze/DataSource-2014750971)
 
 ## Root
 
 By default, the node without parent is treated as root of the layout. Now, `DataSourceSettings` have option to specify the root node of the layout.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
+ 
+        <!--Initializes the DataSourceSettings and set object with id "1" and name "CEO"as root-->
+        <Syncfusion:DataSourceSettings x:Key="DataSourceSettings"  
+                                       Id="EmpId" 
+                                       ParentId="ParentId"
+                                       DataSource="{StaticResource employees}"                                       
+                                       Root="1" />
 
-//object with id “CEO”, is considered as root of tree layout.
-diagram.DataSourceSettings.Root = “CEO”;
+{% endhighlight %}
+{% highlight c# %}
+
+            //object with id “1” and name "CEO", is considered as root of tree layout.
+            Diagram.DataSourceSettings.Root = "1";
 
 {% endhighlight %}
 {% endtabs %}
@@ -81,13 +192,65 @@ diagram.DataSourceSettings.Root = “CEO”;
 
 ## Layout with Multiple Parent
 
-Tree layout and data sources will now support nodes having multiple parents.The child Node is arranged in center of the parent positions.
+Tree layout and data sources will now support nodes having multiple parents by defining more than one parent id to the `ParentID` property. The child Node is arranged in center of the parent positions. The following code will illustrate the defining of multiple parent id's to single node.
+
+{% tabs %}
+{% highlight xaml %}
+ 
+            <local:DataItems x:Key="DataItems">
+                <local:ItemInfo Name="n11" RatingColor="#ff6329"/>
+                <local:ItemInfo Name="n12" RatingColor="#ff6329"/>
+                <local:ItemInfo Name="n13" RatingColor="#ff6329"/>
+                <local:ItemInfo Name="n21" RatingColor="#941100">
+                    <local:ItemInfo.ReportingPerson>
+                        <local:StringList>
+                            <system:String>n11</system:String>
+                            <system:String>n12</system:String>
+                            <system:String>n13</system:String>
+                        </local:StringList>
+                    </local:ItemInfo.ReportingPerson>
+                </local:ItemInfo>
+            </local:DataItems>
+
+        <Syncfusion:SfDiagram>
+            <Syncfusion:SfDiagram.DataSourceSettings>
+                <Syncfusion:DataSourceSettings Id="Name" ParentId="ReportingPerson" DataSource="{StaticResource DataItems}"/>
+            </Syncfusion:SfDiagram.DataSourceSettings>
+        </Syncfusion:SfDiagram>
+ 
+{% endhighlight %}
+{% highlight c# %}
+
+    public class ItemInfo
+    {
+        public ItemInfo(string name, string color)
+        {
+            this.Name = name;
+            this.RatingColor = color;
+        }
+
+        public string RatingColor { get; set; }
+
+        public string Name { get; set; }
+
+        public List<string> ReportingPerson { get; set; }
+    }
+
+    DataItems data = new DataItems();
+
+    data.Add(new ItemInfo("n11", "#ff6329"));
+
+    data.Add(new ItemInfo("n12", "#ff6329"));
+
+    data.Add(new ItemInfo("n13", "#ff6329"));
+
+    data.Add(new ItemInfo("n21", "#941100") { ReportingPerson = new List<string> { "n11", "n12", "n13" } });
+
+{% endhighlight %}
 
 ![Multiparent](DataSource_images/DataSource_img3.png)
 
-Find the [Multi Parent Sample](http://www.syncfusion.com/downloads/support/directtrac/195355/ze/Multi_Parent-231048937) to depict this support.
-
-Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
+Please find the [Multiparent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
 
 ## FlowchartDataSourceSettings
 
@@ -104,7 +267,6 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 `HeightMapping`: Maps the Height in the underlying data object to data source item.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <ResourceDictionary.MergedDictionaries>
@@ -114,7 +276,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 </ResourceDictionary.MergedDictionaries>
 
 <!-- Initializes the DataSource collection-->
-<local:DataItems x:Key="Dataitems">
+<local:DataItems x:Key="Datas">
 <local:ItemInfo Id="1" NodeShape="{StaticResource Terminator}" Width="80" Height="40" Name="Start"></local:ItemInfo>
 <local:ItemInfo Id="2" NodeShape="{StaticResource Decision}" Width="100" Height="80" Name="Decision?">
     <local:ItemInfo.ParentId>
@@ -165,7 +327,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 
 <!--Initializes the DataSourceSettings -->
 <syncfusion:FlowchartDataSourceSettings x:Key="DataSourceSettings"
-                                        DataSource="{StaticResource Dataitems}"   
+                                        DataSource="{StaticResource Datas}"   
                                         ParentId="ParentId" 
                                         Id="Id" 
                                         ShapeMapping="NodeShape" 
@@ -193,8 +355,7 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
-
-{% highlight C# %}
+{% highlight c#%}
 
             //Initialize Diagram
             SfDiagram Diagram = new SfDiagram();
@@ -318,11 +479,9 @@ Navigation->WPF->Diagram->Automatic layout->Multi Parent Hierarchical Tree
     }        
 
 {% endhighlight %}
+{% endtabs %} 
 
-{% endtabs %}
 
 ![Flowchart](DataSource_images/DataSource_Flowchart.png)
 
-Refer to the [Flowchart Layout sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Flowchart_Layout-2088923614-1032196453.zip) to depict this support.
-
-Navigation->WPF->Diagram->Automatic layout->Flowchart Layout
+Please find the [Flowchart Layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support.
