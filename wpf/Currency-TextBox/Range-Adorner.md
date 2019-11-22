@@ -1,32 +1,55 @@
 ---
 layout: post
-title: Range Adorner | CurrencyTextBox | wpf | Syncfusion
-description: range adorner
+title: Range Adorner in WPF CurrencyTextBox control | Syncfusion
+description: Learn about Range Adorner support in Syncfusion WPF CurrencyTextBox control and more details about the control features.  
 platform: wpf
 control: CurrencyTextBox 
 documentation: ug
 ---
 
-# Range Adorner
+# Range Adorner in WPF CurrencyTextBox 
 
-The [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property is used to show the adorner range based on the minimum and maximum values given to that control.
-
-![Show adorner range](Range-Adorner_images/Range-Adorner_img1.png)
-
-## Adding range adorner to an application 
-
-The [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property must be set either in XAML or the code file.
+[Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CurrencyTextBox~Value.html) of [CurrencyTextBox](https://www.syncfusion.com/wpf-ui-controls/currency-textbox) can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over `CurrencyTextBox` control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property to `true`. Default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value. Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
-EnableRangeAdorner="True"
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" MinValue="0" MaxValue="100" Value="630"  EnableRangeAdorner="True" />
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-control.EnableRangeAdorner = true;
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.MinValue = 0;
+currencyTextBox.MaxValue = 1000;
+currencyTextBox.Value = 630;
+currencyTextBox.EnableRangeAdorner =true;
 
 {% endhighlight %}
 {% endtabs %}
+
+![CurrencyTextBox default background of Range Adorner ](Range-Adorner_images/Range-Adorner_img1.png)
+
+## Changing background of range-adorner
+
+You can change the background color of the range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~RangeAdornerBackground.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" MinValue="0" MaxValue="1000" Value="570"  EnableRangeAdorner="True" RangeAdornerBackground="LightGreen"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CurrencyTextBox currencyTextBox = new CurrencyTextBox();
+currencyTextBox.MinValue = 0;
+currencyTextBox.MaxValue = 100;
+currencyTextBox.Value = 570;
+currencyTextBox.EnableRangeAdorner = true;
+currencyTextBox.RangeAdornerBackground = Brushes.LightGreen;
+
+{% endhighlight %}
+{% endtabs %}
+
+![CurrencyTextBox customized background of Range Adorner ](Range-Adorner_images/Range-Adorner_img2.png)
