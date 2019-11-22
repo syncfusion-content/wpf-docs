@@ -9,7 +9,7 @@ documentation: ug
 
 # Page Settings
 
-By default, DiagramPage size is decided based on the diagramming elements position. To customize the size and appearance of the DiagramPage, please use [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
+By default, Diagram's page size is decided based on the position of diagramming elements. However, diagram allows you to specify a particular page size by using [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
 
 Diagram allows you to split and print the single page into multiple pages based on width and height. This feature can be achieved by using `PageSettings` class and its properties.
 
@@ -197,11 +197,11 @@ Pages can be printed where the elements placed rather than printing the entire d
 
 | Properties/Methods | Description | Output |
 |---|---|---|
-| RowCount | To know the number of pages available in row-wise manner. | ![RowCount](Page-Settings_images/RowCount.PNG) |
-| ColumnCount | To know the number of pages available in column-wise manner.| ![ColumnCount](Page-Settings_images/ColumnCount.png) |
-| PageOrigin | To know the origin of the page | ![PageOrigin](Page-Settings_images/PageOrigin.png)  |
 | Truncate | To customize the origin based on the page size | ![Truncate](Page-Settings_images/Truncate.gif) |
 | Trim | To customize the origin based on the pixel. Page origin will be position of the most top left element | ![Trim](Page-Settings_images/Trim.PNG) |
+| RowCount | To get the number of pages available in row-wise manner. | ![RowCount](Page-Settings_images/RowCount.PNG) |
+| ColumnCount | To get the number of pages available in column-wise manner.| ![ColumnCount](Page-Settings_images/ColumnCount.png) |
+| PageOrigin | To get the origin of the page | ![PageOrigin](Page-Settings_images/PageOrigin.png)  |
 
 {% tabs %}
 {% highlight C# %}
