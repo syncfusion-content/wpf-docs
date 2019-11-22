@@ -9,14 +9,47 @@ documentation: ug
 
 # Page Settings
 
-By default, Diagram's page size is decided based on the position of diagramming elements. However, diagram allows you to specify a particular page size by using [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
+By default, Diagram's page size is decided based on the position of diagramming elements. However, diagram allows you to specify a particular page size and orientation by using PageSettings property of SfDiagram.
 
-Diagram allows you to split and print the single page into multiple pages based on width and height. This feature can be achieved by using `PageSettings` class and its properties.
+* The `PageWidth` and `PageHeight` properties of `PageSettings` lets you to define the size of the page.
+* The `PageOrientation` property of `PageSettings` lets you to change the basic orientation of the pages.
+* Diagram also allows you to see where page breaks will happen if the diagram is printed using `ShowPageBreaks` property.
 
-* `PageWidth`: Specifies the width of a single page. Default value is double.NaN
-* `PageHeight`: Specifies the height of a single page.Default value is double.NaN
-* `MultiplePage`: Allows to split the single page into multiple pages. Default value is False.
-* `ShowPageBreaks`: Shows or hides the separation line between two pages. Default value is False.
+{% tabs %}
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <!--Initialize the page settings and page orientation property-->
+  <syncfusion:SfDiagram.PageSettings>
+    <syncfusion:PageSettings PageOrientation="Portrait" PageWidth="300" PageHeight="400" ShowPageBreaks="True" />
+  </syncfusion:SfDiagram.PageSettings>
+</syncfusion:SfDiagram>
+
+{% endhighlight %}
+{% highlight C# %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+
+//Initialize the page settings and and page orientation property
+diagram.PageSettings = new PageSettings()
+{
+  PageOrientation = PageOrientation.Portrait,
+  PageWidth = 300,
+  PageHeight = 400,
+  ShowPageBreaks = true,
+};
+{% endhighlight %}
+{% endtabs %}
+
+| Page Orientation | Output |
+|---|---|
+| Landscape | ![Landscape](Page-Settings_images/Landscape.png) |
+| Portrait | ![Portrait](Page-Settings_images/Portrait.png) |
+
+## How to enable the multiple page
+
+Diagram allows you to decide whether to create new page or not when you add content beyond the size specified.
 
 {% tabs %}
 {% highlight xaml %}
@@ -48,46 +81,12 @@ diagram.PageSettings = new PageSettings()
 
 ![Multiple Pages](Page-Settings_images/MultiplePages.png)
 
-## How to change the orientation of the pages
-
-Diagram allows you to change the basic orientation of the pages by using `PageOrientation` property of `PageSettings` class. Default orientation is Portrait.
-
-{% tabs %}
-{% highlight xaml %}
-
-<!--Initialize SfDiagram-->
-<syncfusion:SfDiagram x:Name="diagram">
-  <!--Initialize the page settings and page orientation property-->
-  <syncfusion:SfDiagram.PageSettings>
-    <syncfusion:PageSettings PageOrientation="Portrait" PageWidth="300" PageHeight="400" ShowPageBreaks="True" />
-  </syncfusion:SfDiagram.PageSettings>
-</syncfusion:SfDiagram>
-
-{% endhighlight %}
-{% highlight C# %}
-//Initialize SfDiagram
-SfDiagram diagram = new SfDiagram();
-//Initialize the page settings and and page orientation property
-diagram.PageSettings = new PageSettings()
-{
-  PageOrientation = PageOrientation.Portrait,
-  PageWidth = 300,
-  PageHeight = 400,
-  ShowPageBreaks = true,
-};
-{% endhighlight %}
-{% endtabs %}
-
-| Page Orientation | Output |
-|---|---|
-| Landscape | ![Landscape](Page-Settings_images/Landscape.png) |
-| Portrait | ![Portrait](Page-Settings_images/Portrait.png) |
 
 ## How to change the page appearance
 
 The appearance of the pages can be customized by using following properties of `PageSettings` class,
 
-* `PageBorderThickness`: Defines the thickness of the  border around the entire page. Default value is null
+* `PageBorderThickness`: Defines the thickness of the  border around the entire page.
 * `PageBackground`: Defines the background colors of the page.
 * `PageBorderBrush`: Defines the color of the page border
 
@@ -189,9 +188,7 @@ diagram.PageSettings = new PageSettings()
 
 ## Origin customization of Page
 
-By default, Origin of the diagram page will be at (0,0). A virtual method `AdjustPageOrigin` of PageSettings class is used to customize the origin of the page based on page size (`PageWidth` and `PageHeight`) and diagram elements position. 
-
-Pages can be printed where the elements placed rather than printing the entire diagram page.
+By default, Origin of the diagram page will be at (0,0). A virtual method `AdjustPageOrigin` of PageSettings class is used to customize the origin of the page based on page size (`PageWidth` and `PageHeight`) and diagram elements position which in turn help to reduce the number of pages being printed.
 
 `AdjustPageOrigin` method is having `Info` property in its argument. And it is having following properties and methods,
 
