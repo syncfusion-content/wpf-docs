@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export Diagram content as image files| Syncfusion.
-description: How to export the Diagram as image and how to change the exporting setting in diagram control.
+description: How to export the Diagram as image in different formates and how to change the exporting setting in diagram control.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -16,19 +16,57 @@ The exporting can be customized by using [ExportSettings](https://help.syncfusio
 
 ## Exporting formats
 
-SfDiagram can be exported in the following File formats.
+SfDiagram allows to specify the type/format of the exported file. You can export diagram to the following formats:
 
 * PNG
 * JPEG
 * TIFF
 * GIF
 * BMP
+* WDP
+* PDF
+* XPS
+
+`FileName` property of `ExportSettings` class is the name of the file to be exported. By default, the file name is set to Diagram.
+
+{% tabs %}
+{% highlight C# %}
+
+//Initialize the export settings
+ExportSettings settings = new ExportSettings()
+{  
+  FileName = "export.png",
+}; 
+
+diagram.ExportSettings = settings;         
+//Method to Export the SfDiagram
+diagram.Export();
+
+{% endhighlight %}
+{% endtabs %}
+
+To export the diagram into xps file format, enable the `IsSaveToXps` property of `ExportSettings` class.
+
+{% tabs %}
+{% highlight C# %}
+
+//Initialize the export settings
+ExportSettings settings = new ExportSettings()
+{  
+  IsSaveToXps = true,
+  FileName = "export.xps",
+}; 
+
+diagram.ExportSettings = settings;         
+//Method to Export the SfDiagram
+diagram.Export();
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Exporting Mode
 
 SfDiagram allows to export the page region of the diagram or to export the content of the diagram only using `ExportMode` property of `ExportSettings` class.
-
-
 
 {% tabs %}
 {% highlight xaml %}
