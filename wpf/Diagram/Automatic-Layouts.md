@@ -130,7 +130,7 @@ You can use the [LayoutManager.Layout](https://help.syncfusion.com/cr/cref_files
 
 ## Updating layout
 
-RefreshFrequency property of LayoutManager is used to re-arrange the nodes sin the diagram area when a node is added, deleted, moved or rezised. Also we can able to decide when the nodes should be arranged for every diagram load or only for the first load. . Please find the description for each condition in below table.
+RefreshFrequency property of LayoutManager is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved or resized. Also we can able to decide when the nodes should be arranged for every diagram load or only for the first load. Please find the description for each condition in below table.
 
 | Refresh Frequencies | Description|
 | --- | --- |
@@ -200,7 +200,7 @@ Horizontal and Vertical spacing property of Layouts is used to customize the spa
 |---|---|---|
 | TopToBottom | Align the tree layout from top to bottom. All the roots are placed at top of diagram. |
 | LeftToRight | Align the tree layout from left to right. All the roots are placed at left of diagram. |
-| BottomToTop | Align the tree layout from bottom to top. All the roots are placed at bootom of the diagram. |
+| BottomToTop | Align the tree layout from bottom to top. All the roots are placed at bottom of the diagram. |
 | RightToLeft | Align the tree layout from right to left. All the roots are placed at right of the diagram. |
 
 {% tabs %}
@@ -231,7 +231,7 @@ Horizontal and Vertical spacing property of Layouts is used to customize the spa
 
 ### Avoiding connector segment overlapping in layout
 
-[AvoidSegmentOverlapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~AvoidSegmentOverlapping.html) property of `DirectedTreeLayout` is used to decide whether segment of each connector from a single parent are distributed automatically or not. It is only valid for hierarchical and multiparent layout.
+[AvoidSegmentOverlapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~AvoidSegmentOverlapping.html) property of `DirectedTreeLayout` is used to decide whether segment of each connector from a single parent are distributed automatically or not. It is only valid for hierarchical and multi parent layout.
 
 {% tabs %}
 
@@ -257,11 +257,11 @@ Horizontal and Vertical spacing property of Layouts is used to customize the spa
 
 ![Layout_segment_overlapping_image](Automatic-Layouts_images/Automatic-Layouts_img14.png)
 
->N `AvoidSegmenyOverlapping` not valid for `RadialTreeLayout`.
+>N `AvoidSegmentOverlapping` not valid for `RadialTreeLayout`.
 
 ### Customize Margin in layout
 
-[Margin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.Base.LayoutBase~Margin.html) property of `DirectedTreeLayout` is used to provide space between the bounds of the treelayout to the diagram. The default margin value is `50`.
+[Margin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.Base.LayoutBase~Margin.html) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
 
 {% tabs %}
 
