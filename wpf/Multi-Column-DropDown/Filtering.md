@@ -87,5 +87,30 @@ Here, `Title` is defined as a `DisplayMember`. But it also searches the match ca
 
 N> Excel-like filtering is not supported in SfMultiColumnDropDownControl. You can customize the SfMultiColumnDropDownControl ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in SfDataGrid.
 
+## Filtering Delay
+The SfMultiColumnDropDown provides support to set the delay in milliseconds when filtering the records in DropDown by using the FilterDelay property. The default FilterDelay is 500. 
+
+{% tabs %}
+{% highlight c# %}
+this.sfmulticolumn.FilterDelay = 2000;
+{% endhighlight %}
+{% highlight xml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
+                                                 Width="175"
+                                                 Height="30"
+                                                 ItemsSource="{Binding Orders}"
+                                                 DisplayMember="OrderID" 
+                                                 AutoGenerateColumns="False"
+                                                 FilterDelay="2000"
+                                                 SelectedIndex="2">
+            <syncfusion:SfMultiColumnDropDownControl.Columns>
+                <syncfusion:GridTextColumn MappingName="OrderID" />
+                <syncfusion:GridTextColumn MappingName="CustomerID" />
+                <syncfusion:GridTextColumn MappingName="Country" />
+            </syncfusion:SfMultiColumnDropDownControl.Columns>
+        </syncfusion:SfMultiColumnDropDownControl>
+{% endhighlight %}
+{% endtabs %}
+
 ## Limitations
 When setting DataTable as `ItemsSource`, `AllowIncrementalFiltering` is not supported.
