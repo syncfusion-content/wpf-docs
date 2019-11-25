@@ -252,9 +252,9 @@ Tree layout and data sources will now support nodes having multiple parents by d
 {% endhighlight %}
 {% endtabs %}
 
-![Multiparent](DataSource_images/DataSource_img3.png)
+![Multi parent](DataSource_images/DataSource_img3.png)
 
-Please find the [Multiparent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
+Please find the [Multi parent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
 
 ## FlowchartDataSourceSettings
 
