@@ -1,0 +1,114 @@
+---
+layout: post
+title: Step Interval in  control | Syncfusion
+description: Learn about Step Interval support in Syncfusion WPF IntegerTextBox control and more details about the control features.WPF IntegerTextBox
+platform: wpf
+control: IntegerTextBox 
+documentation: ug
+---
+
+# Step Interval in WPF IntegerTextBox
+
+The [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) control allows you to increase or decrease the value by pressing up-arrow and down-arrow keys in keyboard or mouse wheel over the control. The [ScrollInterval](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~ScrollInterval.html) property is used to specify the increment or decrement interval. The default value of `ScrollInterval` is 1.
+
+ For example, the `ScrollInterval` value is set to 4. So, that the `IntegerTextBox` control [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) increases or decreases by 4 while pressing Up arrow or Down arrow keys and Mouse wheel scrolling up or down.
+
+## Change Value on Up, Down arrow key
+
+The `IntegerTextBox` control allows you to increase or decrease the `Value` of `IntegerTextBox` based on the `ScrollInterval` by pressing the up arrow and down arrow keys on the keyboard.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:IntegerTextBox x:Name="integerTextBox" Width="150"
+                          Height="25" Value ="10" ScrollInterval="2"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+IntegerTextBox integerTextBox = new IntegerTextBox();
+integerTextBox.Width = 150;
+integerTextBox.Height = 25;
+integerTextBox.Value = 10;
+integerTextBox.ScrollInterval = 2;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the IntegerTextBox value by the Up-Down arrow key](Step-Interval_images/Step-Interval_Up-Down-arrow-key.png)
+
+## Change Value on Mouse Wheel
+
+The `IntegerTextBox` allows you to increase or decrease the `Value` based on the `ScrollInterval` by the Mouse scrolling over the control When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Editorbase~IsScrollingOnCircle.html) property is `true`. The default value of `IsScrollingOnCircle` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:IntegerTextBox x:Name="integerTextBox" Width="150" Height="25" Value ="34" 
+                          IsScrollingOnCircle="True" ScrollInterval="3"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+IntegerTextBox integerTextBox = new IntegerTextBox();
+integerTextBox.Width = 150;
+integerTextBox.Height = 25;
+integerTextBox.Value = 34;
+integerTextBox.IsScrollingOnCircle = true;
+integerTextBox.ScrollInterval = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the IntegerTextBox value by Mouse Wheel](Step-Interval_images/Step-Interval_MouseWheel.png)
+
+## Change Value on Click and Drag
+
+The `IntegerTextBox` allows you to increase or decrease the value based on the `ScrollInterval` by click and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. `IntegerTextBox` value increases when the cursor moves to the right or the top of the screen and decreases when you click an drag the mouse to the left or the bottom of the screen. Before that, the control should be in an unfocused state.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:IntegerTextBox x:Name="integerTextBox" Width="120" Height="25" Value ="10" 
+                          ScrollInterval="5" EnableExtendedScrolling="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+IntegerTextBox integerTextBox = new IntegerTextBox();
+integerTextBox.Width = 120;
+integerTextBox.Height = 25;
+integerTextBox.Value = 10;
+integerTextBox.ScrollInterval = 5;
+integerTextBox.EnableExtendedScrolling = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the IntegerTextBox value by Click and Drag](Step-Interval_images/Step-Interval_DragandDrop.gif)
+
+## Select All on focus
+
+`IntegerTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property to `true` and when the control got focus. The default value of the `TextSelectionOnFocus` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:IntegerTextBox x:Name="integerTextBox" TextSelectionOnFocus="False"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+IntegerTextBox integerTextBox = new IntegerTextBox();
+integerTextBox.TextSelectionOnFocus = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+### TextSelectionOnFocus = "False"
+
+![IntegerTextBox showing TextSelection On Focus disabled](Step-Interval_images/Step-Interval_SelectionFalse.png)
+
+### TextSelectionOnFocus = "True"
+
+![IntegerTextBox showing TextSelection On Focus enabled](Step-Interval_images/Step-Interval_SelectionTrue.png)
