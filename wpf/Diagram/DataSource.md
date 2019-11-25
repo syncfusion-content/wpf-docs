@@ -137,6 +137,9 @@ By default, populated nodes are positioned at (0,0). You can use built-in automa
                 },
             };
 
+{% endhighlight %}
+{% endtabs %}
+
 To learn more about the supported built-in layout, refer to the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts) page.
 
 ### How to done Add, Remove, Reset and Move in DataSource
@@ -247,10 +250,11 @@ Tree layout and data sources will now support nodes having multiple parents by d
     data.Add(new ItemInfo("n21", "#941100") { ReportingPerson = new List<string> { "n11", "n12", "n13" } });
 
 {% endhighlight %}
+{% endtabs %}
 
-![Multiparent](DataSource_images/DataSource_img3.png)
+![Multi parent](DataSource_images/DataSource_img3.png)
 
-Please find the [Multiparent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
+Please find the [Multi parent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
 
 ## FlowchartDataSourceSettings
 
