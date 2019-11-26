@@ -15,7 +15,7 @@ Diagram can be populated with the nodes and connectors based on the information 
 
 * The DataSourceSettings `Id` property is used to define the unique field of each data.
 
-* The DataSourceSettings `ParentId` property is used to define the parent field which builds the relationship between ID and parent field.
+* The DataSourceSettings `ParentId` property is used to define the parent field, which builds the relationship between ID and parent field.
 
 * The DataSourceSettings `Root` property is used to define the root node for the diagram populated from the data source.
 
@@ -23,7 +23,7 @@ To explore those properties, refer to [DataSourceSettings](https://help.syncfusi
 
 ## Defining DataSource
 
-`DataSource` can be a collection of any business object or collection of nodes. If we use collection of business object as datasource then nodes has been created automatically to populate a layout. As a collection of object, datasource has the functionalities of add, remove, reset and move. The following code example will illustrate the defining of `DataSource` using business objects.
+`DataSource` can be a collection of any business objects or collection of nodes. If you use collection of business objects as datasource, then nodes has been created automatically to populate a layout. As a collection of objects, datasource has the functionalities of add, remove, reset, and move. The following code example explains the defining of `DataSource` using business objects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -100,9 +100,9 @@ To explore those properties, refer to [DataSourceSettings](https://help.syncfusi
 
 N> ParentId and Id must be in same type to populate a layout.
 
-## Defining Layout
+## Defining layout
 
-By default, populated nodes are positioned at (0,0). You can use built-in automatic layout algorithm to define the position of the each populated nodes. The following code illustrate how to define the tree layout.
+By default, populated nodes are positioned at (0,0). You can use built-in automatic layout algorithm to define the position of the each populated nodes. The following code explains how to define the tree layout.
 
 {% tabs %}
 {% highlight xaml%}
@@ -137,11 +137,14 @@ By default, populated nodes are positioned at (0,0). You can use built-in automa
                 },
             };
 
-To know more about the supported built-in layout, please refer the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts) page.
+{% endhighlight %}
+{% endtabs %}
+
+To learn more about the supported built-in layout, refer to the [Automatic Layouts](https://help.syncfusion.com/wpf/diagram/automatic-layouts) page.
 
 ### How to done Add, Remove, Reset and Move in DataSource
 
-As `DataSource` is a collection of any business object or nodes, it has the functionalities of add, remove, reset and move.
+As `DataSource` is a collection of any business objects or nodes, it has the functionalities of add, remove, reset, and move.
 
 {% tabs %}
 {% highlight c# %}
@@ -190,9 +193,9 @@ By default, the node without parent is treated as root of the layout. Now, `Data
 
 ![Root](DataSource_images/DataSource_img2.jpeg)
 
-## Layout with Multiple Parent
+## Layout with multiple parents
 
-Tree layout and data sources will now support nodes having multiple parents by defining more than one parent id to the `ParentID` property. The child Node is arranged in center of the parent positions. The following code will illustrate the defining of multiple parent id's to single node.
+Tree layout and data sources will now support nodes having multiple parents by defining more than one parent ID to the `ParentID` property. The child node is arranged in center of the parent positions. The following code explains the defining of multiple parent ID's to single node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -247,24 +250,25 @@ Tree layout and data sources will now support nodes having multiple parents by d
     data.Add(new ItemInfo("n21", "#941100") { ReportingPerson = new List<string> { "n11", "n12", "n13" } });
 
 {% endhighlight %}
+{% endtabs %}
 
-![Multiparent](DataSource_images/DataSource_img3.png)
+![Multi parent](DataSource_images/DataSource_img3.png)
 
-Please find the [Multiparent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
+Please find the [Multi parent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
 
 ## FlowchartDataSourceSettings
 
 `FlowchartDataSourceSettings` is the derived class of `DataSourceSettings`, which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
 
-`ContentMapping`: Maps the Content in the underlying data object to data source item.
+`ContentMapping`: Maps the content in the underlying data object to data source item.
 
 `ConnectorTextMapping`: Maps the ConnectorText in the underlying data object to data source item.
 
-`ShapeMapping`: Maps the Shape in the underlying data object to data source item.
+`ShapeMapping`: Maps the shape in the underlying data object to data source item.
  
-`WidthMapping`: Maps the Width in the underlying data object to data source item.
+`WidthMapping`: Maps the width in the underlying data object to data source item.
  
-`HeightMapping`: Maps the Height in the underlying data object to data source item.
+`HeightMapping`: Maps the height in the underlying data object to data source item.
 
 {% tabs %}
 {% highlight xaml %}
