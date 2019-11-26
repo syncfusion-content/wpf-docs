@@ -135,7 +135,7 @@ You can create connection between the ports interactively by performing click an
 {% endhighlight %}
 {% endtabs %}
 
-![Connecting connector port](Port_images/ConnectorPort.gif)
+![Connecting connector port](Port_images/Connector_interactively.gif)
 
 ### Connection for DockPort
 
