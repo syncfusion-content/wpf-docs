@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in SfMultiColumnDropDownControl.
-description: How to handle the filtering in SfMultiColumnDropDownControl.
+title: Filtering in SfMultiColumnDropDownControl | Syncfusion
+description: How to handle the various filtering like Case-Sensitive filtering, AllowIncrementalFiltering, Custom filtering and Filtering delay in SfMultiColumnDropDownControl .
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -33,7 +33,7 @@ By default, drop down list is filtered based on `SearchCondition.StartsWith` con
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img1.png)
+![The image describes the AllowIncrementalFiltering support in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img1.png)
 
 ## Case-Sensitive Filtering
 
@@ -82,7 +82,7 @@ public class CustomMultiColumnControl : SfMultiColumnDropDownControl
 
 Here, `Title` is defined as a `DisplayMember`. But it also searches the match case from the `Cast` column also while filtering.
 
-![](Filtering_images/Filtering_img2.png)
+![The image describes the custom filtering by FilterRecord method in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img2.png)
 
 
 N> Excel-like filtering is not supported in SfMultiColumnDropDownControl. You can customize the SfMultiColumnDropDownControl ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in SfDataGrid.
