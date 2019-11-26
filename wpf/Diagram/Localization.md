@@ -30,7 +30,7 @@ SfDiagram has support to localize the Annotations of Nodes/Connector.The followi
 </Style>   
 {% endhighlight %}
 
-{% tabs %}
+
 {% highlight c# %}
 public MainWindow()
 {    
