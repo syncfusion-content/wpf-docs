@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-Appointment Tooltip is used to view the details of the appointment in the user's required design and its visibility can be enabled by setting `AppointmentTooltipVisibility` as Visible. This tooltip will be displayed when the mouse is over the appointments whereas in touch device it will be displayed on holding over the appointments. The schedule appointment tooltip will be displayed only when the AppointmentTooltipTemplate property is set. The AppointmentTooltipTemplate is of type DataTemplate.
+Appointment Tooltip is used to view the details of the appointment in the user's required design and its visibility can be enabled by setting `AppointmentTooltipVisibility` as Visible. This tooltip will be displayed when the mouse is over the appointments whereas in touch device it will be displayed on holding over the appointments. The schedule appointment tooltip will be displayed only when the AppointmentTooltipTemplate property is set. The AppointmentTooltipTemplate is of type ControlTemplate.
 {% tabs %}
 {% highlight html %}
 
@@ -78,7 +78,7 @@ Location = "Hutchison Road"
 {% endhighlight  %}
 {% endtabs %}
 
-![](Tooltip_images/Tooltip_img1.jpeg)
+![Appointment tooltip](Tooltip_images/Tooltip_img1.jpeg)
 
 
 
