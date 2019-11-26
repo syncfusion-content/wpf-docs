@@ -16,14 +16,14 @@ SfDiagram provides a set of built-in automatic layout algorithms, which is used 
 * Organizational layout
 * Flowchart layout
 
-You can use the [LayoutManager.Layout](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager~Layout.html "LayoutManager.Layout") property to specify any one of the layouting algorithm.  
+Automatic layout algorithm uses the nodes and connectors defined in NodeCollection and ConnectorCollection or business objects defined in DataSource as input to generate the layout. To generate layout from NodeCollection and ConnectorCollection, you have to create all the nodes and connectors required for layout and add those items in NodeCollection and ConnectorCollection as defined in the following code snippet.
 
 {% tabs %}
 
 {% highlight xaml %}
 
         <!--Initializes the SfDiagram-->
-        <Syncfusion:SfDiagram x:Name="Diagram">
+        <Syncfusion:SfDiagram x:Name="diagram">
             <!--Initialize Nodes-->
             <Syncfusion:SfDiagram.Nodes>
                 <Syncfusion:NodeCollection>
@@ -46,58 +46,39 @@ You can use the [LayoutManager.Layout](https://help.syncfusion.com/cr/cref_files
                     <Syncfusion:ConnectorViewModel SourceNodeID="Product Manager2" TargetNodeID="Engineer3"/>
                     <Syncfusion:ConnectorViewModel SourceNodeID="Product Manager2" TargetNodeID="Engineer4"/>
                 </Syncfusion:ConnectorCollection>
-            </Syncfusion:SfDiagram.Connectors>
-            <!--Initialize LayoutManager and Layout-->
-            <Syncfusion:SfDiagram.LayoutManager>
-                <Syncfusion:LayoutManager>
-                    <Syncfusion:LayoutManager.Layout>
-                        <Syncfusion:DirectedTreeLayout HorizontalSpacing="30" VerticalSpacing="50" AvoidSegmentOverlapping="False" Orientation="TopToBottom" Type="Hierarchical"/>
-                    </Syncfusion:LayoutManager.Layout>
-                </Syncfusion:LayoutManager>
-            </Syncfusion:SfDiagram.LayoutManager>            
+            </Syncfusion:SfDiagram.Connectors>           
         </Syncfusion:SfDiagram>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            // Initialize Nodes and Connectors Collection
+            //Create SfDiagram instance
+            SfDiagram diagram = new SfDiagram;
 
-            Diagram.Nodes = new NodeCollection();
-            Diagram.Connectors = new ConnectorCollection();
+            //Initialize Nodes and Connectors Collection
 
-            // Create and add Nodes and Connectors
+            diagram.Nodes = new NodeCollection();
+            diagram.Connectors = new ConnectorCollection();
 
-            (Diagram.Nodes as NodeCollection).Add(CreateNode("General Manager"));
-            (Diagram.Nodes as NodeCollection).Add(CreateNode("Product Manager1"));
-            (Diagram.Nodes as NodeCollection).Add(CreateNode("Product Manager2"));
-            (Diagram.Nodes as NodeCollection).Add(CreateNode("Engineer1"));
-            (Diagram.Nodes as NodeCollection).Add(CreateNode("Engineer2"));
-            (Diagram.Nodes as NodeCollection).Add(CreateNode("Engineer3"));
-            (Diagram.Nodes as NodeCollection).Add(CreateNode("Engineer4"));
+            //Create and add Nodes and Connectors
 
-            (Diagram.Connectors as ConnectorCollection).Add(CreateConnector("General Manager", "Product Manager1"));
-            (Diagram.Connectors as ConnectorCollection).Add(CreateConnector("General Manager", "Product Manager2"));
-            (Diagram.Connectors as ConnectorCollection).Add(CreateConnector("Product Manager1", "Engineer1"));
-            (Diagram.Connectors as ConnectorCollection).Add(CreateConnector("Product Manager1", "Engineer2"));
-            (Diagram.Connectors as ConnectorCollection).Add(CreateConnector("Product Manager2", "Engineer3"));
-            (Diagram.Connectors as ConnectorCollection).Add(CreateConnector("Product Manager2", "Engineer4"));
+            (diagram.Nodes as NodeCollection).Add(CreateNode("General Manager"));
+            (diagram.Nodes as NodeCollection).Add(CreateNode("Product Manager1"));
+            (diagram.Nodes as NodeCollection).Add(CreateNode("Product Manager2"));
+            (diagram.Nodes as NodeCollection).Add(CreateNode("Engineer1"));
+            (diagram.Nodes as NodeCollection).Add(CreateNode("Engineer2"));
+            (diagram.Nodes as NodeCollection).Add(CreateNode("Engineer3"));
+            (diagram.Nodes as NodeCollection).Add(CreateNode("Engineer4"));
 
-            // Initialize layout Manager
+            (diagram.Connectors as ConnectorCollection).Add(CreateConnector("General Manager", "Product Manager1"));
+            (diagram.Connectors as ConnectorCollection).Add(CreateConnector("General Manager", "Product Manager2"));
+            (diagram.Connectors as ConnectorCollection).Add(CreateConnector("Product Manager1", "Engineer1"));
+            (diagram.Connectors as ConnectorCollection).Add(CreateConnector("Product Manager1", "Engineer2"));
+            (diagram.Connectors as ConnectorCollection).Add(CreateConnector("Product Manager2", "Engineer3"));
+            (diagram.Connectors as ConnectorCollection).Add(CreateConnector("Product Manager2", "Engineer4"));
 
-            Diagram.LayoutManager = new LayoutManager()
-            {
-                Layout = new DirectedTreeLayout()
-                {
-                    HorizontalSpacing = 30,
-                    VerticalSpacing = 50,
-                    Orientation = TreeOrientation.TopToBottom,
-                    Type = LayoutType.Hierarchical,
-                    AvoidSegmentOverlapping = false,
-                },
-            };
-
-        // Method to create Connectors
+        //Method to create Connectors
         private ConnectorViewModel CreateConnector(string node1, string node2)
         {
             ConnectorViewModel con = new ConnectorViewModel()
@@ -108,7 +89,7 @@ You can use the [LayoutManager.Layout](https://help.syncfusion.com/cr/cref_files
             return con;
         }
 
-        // Method to create Nodes
+        //Method to create Nodes
         private NodeViewModel CreateNode(string content)
         {
             NodeViewModel node = new NodeViewModel()
@@ -126,23 +107,119 @@ You can use the [LayoutManager.Layout](https://help.syncfusion.com/cr/cref_files
 
 {% endtabs %}
 
+To generate layout from DataSource, you have to define the business object and add the necessary data to the DataSource collection. During the layout generation, nodes and connectors can be generated automatically with the information provided through data source and those items will be added to NodeCollection and ConnectorCollection respectively. Refer to the following code to generate the layout from data source.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <!-- Initializes the employee collection-->
+        <local:Employees x:Key="employees">
+            <local:Employee EmpId = "1" ParentId="" Name="General Manager"/>
+            <local:Employee EmpId = "2" ParentId = "1" Name = "Product Manager1" />
+            <local:Employee EmpId = "3" ParentId = "1" Name = "Product Manager2"/>
+            <local:Employee EmpId = "4" ParentId = "2" Name = "Engineer1"/>
+            <local:Employee EmpId = "5" ParentId = "2" Name = "Engineer2"/>
+            <local:Employee EmpId = "6" ParentId = "3" Name = "Engineer3"/>
+            <local:Employee EmpId = "7" ParentId = "3" Name = "Engineer4"/>
+        </local:Employees>
+
+        <!--Initializes the DataSourceSettings -->
+        <Syncfusion:DataSourceSettings x:Key="DataSourceSettings" DataSource="{StaticResource employees}"
+                           ParentId="ParentId" Id="EmpId"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        Employees employee = new Employees();
+
+        employee.Add(new Employee() { EmpId = "1", ParentId = "", Name = "General Manager"});
+
+        employee.Add(new Employee() { EmpId = "2", ParentId = "1", Name = "Product Manager1"});
+
+        employee.Add(new Employee() { EmpId = "3", ParentId = "1", Name = "Product Manager2"});
+
+        employee.Add(new Employee() { EmpId = "4", ParentId = "2", Name = "Engineer1"});
+
+        employee.Add(new Employee() { EmpId = "5", ParentId = "2", Name = "Engineer2"});
+
+        employee.Add(new Employee() { EmpId = "6", ParentId = "3", Name = "Engineer3"});
+
+        employee.Add(new Employee() { EmpId = "7", ParentId = "3", Name = "Engineer4"});
+
+        //Initializes the DataSourceSettings
+
+        diagram.DataSourceSettings = new DataSourceSettings()
+        {
+            DataSource = employee,
+            ParentId = "ParentId",
+            Id = "EmpId"
+        };
+		
+{% endhighlight %}
+
+{% endtabs %}
+
+## Defining layout
+
+You can use the [LayoutManager.Layout](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager~Layout.html "LayoutManager.Layout") property to specify any one of the layouting algorithm.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <!--Initializes the SfDiagram-->
+        <Syncfusion:SfDiagram x:Name="diagram">
+            <!--Initialize LayoutManager and Layout-->
+            <Syncfusion:SfDiagram.LayoutManager>
+                <Syncfusion:LayoutManager>
+                    <Syncfusion:LayoutManager.Layout>
+                        <Syncfusion:DirectedTreeLayout HorizontalSpacing="30" VerticalSpacing="50" AvoidSegmentOverlapping="False" Orientation="TopToBottom" Type="Hierarchical"/>
+                    </Syncfusion:LayoutManager.Layout>
+                </Syncfusion:LayoutManager>
+            </Syncfusion:SfDiagram.LayoutManager>            
+        </Syncfusion:SfDiagram>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            // Initialize layout Manager
+
+            diagram.LayoutManager = new LayoutManager()
+            {
+                Layout = new DirectedTreeLayout()
+                {
+                    HorizontalSpacing = 30,
+                    VerticalSpacing = 50,
+                    Orientation = TreeOrientation.TopToBottom,
+                    Type = LayoutType.Hierarchical,
+                    AvoidSegmentOverlapping = false,
+                },
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![Layout_image](Automatic-Layouts_images/Automatic-Layouts_img11.png)
 
 ## Updating layout
 
-RefreshFrequency property of LayoutManager is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved or resized. Also we can able to decide when the nodes should be arranged for every diagram load or only for the first load. Please find the description for each condition in below table.
+The [RefreshFrequency](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager~RefreshFrequency.html) property of LayoutManager is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved, or resized. Also, you can decide when the nodes should be arranged for every diagram load or only for the first load. Find the description for each condition in the following table.
 
 | Refresh Frequencies | Description|
 | --- | --- |
 | Add | Used to update the layout after adding a new element to the datasource. |
 | Remove | Used to update the layout after removing an existing element from datasource. |
 | Move | Used to update the layout after moving element in the datasource. |
-| Reset | Used to update the layout after reset the datasource. | 
-| Load | Used to update the layout in loading of the diagram. |
+| Reset | Used to update the layout after resetting the datasource. | 
+| Load | Used to update the layout when loading the diagram. |
 | FirstLoad | Used to update the layout in the first load of the diagram. |
-| Resizing | Used to update the layout while resizing an element in the layout. |
-| Resized | Used to update the layout when resize of an element is completed. |
-| ArrangeParsing | Used to update the layout when operations like Add, Remove, Move, Reset, Resizing and Resized are performed in layout. |
+| Resizing | Used to update the layout when resizing an element in the layout. |
+| Resized | Used to update the layout when resizing of an element is completed. |
+| ArrangeParsing | Used to update the layout when the operations like Add, Remove, Move, Reset, Resizing, and Resized are performed in layout. |
 
 {% tabs %}
 
@@ -165,7 +242,7 @@ RefreshFrequency property of LayoutManager is used to re-arrange the nodes in th
 
 ### Customize spacing between nodes in layout 
 
-Horizontal and Vertical spacing property of Layouts is used to customize the space between successive nodes in both horizontally and vertically. The default value for horizontal spacing is `20` and for vertical spacing is `50`.
+The Horizontal and Vertical spacing properties of Layouts are used to customize the space between successive nodes in both horizontally and vertically. The default value for horizontal spacing is `20` and vertical spacing is `50`.
 
 {% tabs %}
 
@@ -194,14 +271,14 @@ Horizontal and Vertical spacing property of Layouts is used to customize the spa
 
 ### Customize tree orientation in layout
 
-[Orientation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Orientation.html) of `DirectedTreeLayout` is used to arrange the tree layout based on the direction. Orientation is only valid for hierarchical and organization layout. The default value for orientation is TopToBottom. The different orientation types are defined in below table.
+[Orientation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Orientation.html) of `DirectedTreeLayout` is used to arrange the tree layout based on the direction. Orientation is only valid for hierarchical and organization layout. The default value for orientation is TopToBottom. The different orientation types are defined in the following table:
 
 | Orientation Type | Description |
 |---|---|---|
-| TopToBottom | Align the tree layout from top to bottom. All the roots are placed at top of diagram. |
-| LeftToRight | Align the tree layout from left to right. All the roots are placed at left of diagram. |
-| BottomToTop | Align the tree layout from bottom to top. All the roots are placed at bottom of the diagram. |
-| RightToLeft | Align the tree layout from right to left. All the roots are placed at right of the diagram. |
+| TopToBottom | Aligns the tree layout from top to bottom. All the roots are placed at top of diagram. |
+| LeftToRight | Aligns the tree layout from left to right. All the roots are placed at left of diagram. |
+| BottomToTop | Aligns the tree layout from bottom to top. All the roots are placed at bottom of the diagram. |
+| RightToLeft | Aligns the tree layout from right to left. All the roots are placed at right of the diagram. |
 
 {% tabs %}
 
@@ -227,11 +304,11 @@ Horizontal and Vertical spacing property of Layouts is used to customize the spa
 
 ![Layout_Orientation_image](Automatic-Layouts_images/Automatic-Layouts_img13.png)
 
->N `Orientation` not valid for `RadialTreeLayout`.
+>N `Orientation` is not valid for `RadialTreeLayout`.
 
 ### Avoiding connector segment overlapping in layout
 
-[AvoidSegmentOverlapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~AvoidSegmentOverlapping.html) property of `DirectedTreeLayout` is used to decide whether segment of each connector from a single parent are distributed automatically or not. It is only valid for hierarchical and multi parent layout.
+The [AvoidSegmentOverlapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~AvoidSegmentOverlapping.html) property of `DirectedTreeLayout` is used to decide whether segment of each connector from a single parent is distributed automatically or not. It is only valid for hierarchical and multi-parent layout.
 
 {% tabs %}
 
@@ -257,11 +334,11 @@ Horizontal and Vertical spacing property of Layouts is used to customize the spa
 
 ![Layout_segment_overlapping_image](Automatic-Layouts_images/Automatic-Layouts_img14.png)
 
->N `AvoidSegmentOverlapping` not valid for `RadialTreeLayout`.
+>N `AvoidSegmentOverlapping` is not valid for `RadialTreeLayout`.
 
-### Customize Margin in layout
+### Customize margin in layout
 
-[Margin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.Base.LayoutBase~Margin.html) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
+The [Margin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.Base.LayoutBase~Margin.html) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
 
 {% tabs %}
 
@@ -370,7 +447,7 @@ To arrange the nodes in hierarchical structure, specify the [LayoutType](https:/
 
             //Initializes the DataSourceSettings
 
-            Diagram.DataSourceSettings = new DataSourceSettings()
+            diagram.DataSourceSettings = new DataSourceSettings()
             {
                 DataSource = employee,
                 ParentId = "ParentId",
@@ -401,7 +478,7 @@ Please find the [HierarchicalTree layout sample](https://github.com/syncfusion/w
 
 ## Organization layout 
 
-An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, type should be set to LayoutType.Organization in `DirectedTreeLayout`.
+An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, type should be set to LayoutType.Organization in `DirectedTreeLayout`.
 
 To arrange the nodes in organization structure , specify the [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType") as Organization.
 
@@ -476,17 +553,17 @@ To arrange the nodes in organization structure , specify the [LayoutType](https:
             employee.Add(new Employee() { Name = "Yoshi Tannamuri", Designation = "S/w Engg", ImageUrl = "./Assets/image57.png", RatingColor = "#2E95D8", ReportingPerson = "Philip Cramer" });
 
 
-            // Initialize DataSourceSettings for SfDiagram
+            //Initialize DataSourceSettings for SfDiagram
 
-            Diagram.DataSourceSettings = new DataSourceSettings()
+            diagram.DataSourceSettings = new DataSourceSettings()
             {
                 ParentId = "ReportingPerson",
                 Id = "Name",
                 DataSource = employee,
             };
 
-            // Initialize LayoutSettings for SfDiagram 
-            Diagram.LayoutManager = new LayoutManager()
+            //Initialize LayoutSettings for SfDiagram 
+            diagram.LayoutManager = new LayoutManager()
             {
                 Layout = new DirectedTreeLayout()
                 {
@@ -504,7 +581,7 @@ To arrange the nodes in organization structure , specify the [LayoutType](https:
 
 ### How to change the chart type and orientation in organization layout 
 
-We can change the chart type and orientation of organization layout by using GetLayoutInfo event of the SfDiagram. This event will fire for each time when an organization layout is getting updated. Default chart type is Alternate and default orientation is Vertical.
+You can change the chart type and orientation of organization layout by using the GetLayoutInfo event of the SfDiagram. This event will fire for each time when an organization layout gets updated. Default chart type is Alternate and default orientation is Vertical.
 
 For GetLayoutInfo, refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~GetLayoutInfo_EV.html "GetLayoutInfo").
 
@@ -516,7 +593,7 @@ For GetLayoutInfo, refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/cref
 | | Type | Gets or sets the organizational chart type. |
 | | Orientation | Gets or sets the organizational chart orientation. |
 
-The following table illustrates the different chart orientations and chart types. 
+The following table explains the different chart orientations and chart types: 
 
 | Orientation | Type | Description | Example |
 |---|---|---|---|
@@ -531,11 +608,11 @@ The following table illustrates the different chart orientations and chart types
 
 {% highlight c# %}
 
-            // Register GetLayoutInfo event 
+            //Register GetLayoutInfo event 
 
-            (Diagram.Info as IGraphInfo).GetLayoutInfo += MainWindow_GetLayoutInfo;
+            (diagram.Info as IGraphInfo).GetLayoutInfo += MainWindow_GetLayoutInfo;
 
-        // GetLayoutInfo Method to change the orientation and chart type
+        //GetLayoutInfo Method to change the orientation and chart type
         private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
         {
             if (!args.HasSubTree)
@@ -551,23 +628,23 @@ The following table illustrates the different chart orientations and chart types
 
 ### How to add assistant in organization layout
 
-We can add assistant for each and every in an organization layout by using the GetLayoutInfo event of the SfDiagram. This event will fire for each time when the layout is getting updated. 
+You can add assistant for in an organization layout by using the GetLayoutInfo event of the SfDiagram. This event will fire for each time when the layout gets updated. 
 
-Please find the code example to add assistant in an organization layout.
+Find the code example to add assistant in an organization layout.
 
 {% tabs %}
 
 {% highlight c# %}
 
-            // Register GetLayoutInfo event 
-            (Diagram.Info as IGraphInfo).GetLayoutInfo += MainWindow_GetLayoutInfo;
+            //Register GetLayoutInfo event 
+            (diagram.Info as IGraphInfo).GetLayoutInfo += MainWindow_GetLayoutInfo;
 
-        // GetLayoutInfo method to add assistant
+        //GetLayoutInfo method to add assistant
         private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
         {
-            if (Diagram.LayoutManager.Layout is DirectedTreeLayout)
+            if (diagram.LayoutManager.Layout is DirectedTreeLayout)
             {
-                if ((Diagram.LayoutManager.Layout as DirectedTreeLayout).Type == LayoutType.Organization)
+                if ((diagram.LayoutManager.Layout as DirectedTreeLayout).Type == LayoutType.Organization)
                 {
                     if (args.Item is INode)
                     {
@@ -587,26 +664,24 @@ Please find the code example to add assistant in an organization layout.
 
 ![Organization Layout with Assistant](Automatic-Layouts_images/Automatic-Layouts_img10.png)
 
-Please find the [Organization Tree layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Organization%20Chart) to depict this layout.
+Find the [Organization Tree layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Organization%20Chart) to depict this layout.
 
-### How to create a parent - child relation with drag and dropped nodes from stencil
+### How to create a parent - child relation with dropped nodes from stencil
 
-We can create a layout with drag and dropped nodes from stencil with the help of `ItemDropped` event. In `ItemDropped` we have to create a connection between the source and target item. 
+You can create a layout with dropped nodes from stencil using the `ItemDropped` event. In `ItemDropped` event, you have to create a connection between the source and target item. 
 
-Please find the code example to create parent - child relation between source and target node in item dropped event.
+Find the code example to create parent - child relation between source and target nodes in item dropped event.
 
 {% tabs %}
 
 {% highlight c# %}
 
-        SfDiagram diagram = new SfDiagram();
-
-        // Initialize Events
+        //Initialize Events
         (diagram.Info as IGraphInfo).ItemAdded += MainWindow_ItemAdded;
         (diagram.Info as IGraphInfo).ItemDropEvent += MainWindow_ItemDropEvent;
 
-        // Method used to add the Allowdrop constraints to the dropped node
-        // Allowdrop constraints is used to allow the itemdropped event to get the element as target element.
+        //Method used to add the Allowdrop constraints to the dropped node
+        //Allowdrop constraints is used to allow the itemdropped event to get the element as target element.
         private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
         {
             if (args.Item is CustomNode)
@@ -616,7 +691,7 @@ Please find the code example to create parent - child relation between source an
         }
 
 
-        // Mehtod to create relation between drag and dropped nodes
+        //Mehtod to create relation between drag and dropped nodes
         private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
         {
             if (!(args.Target is SfDiagram))
@@ -662,9 +737,9 @@ Please find the [Demo sample](https://www.syncfusion.com/downloads/support/direc
 
 ## Radial-Tree layout
 
-The Radial-Tree layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radically around the child nodes.  
+The Radial-Tree layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radically around the child nodes.  
 
-The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout as the Radial-Tree Layout positions the nodes based on the [LayoutRoot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout~LayoutRoot.html "LayoutRoot").
+The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout as the Radial-Tree Layout positions the nodes based on the [LayoutRoot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout~LayoutRoot.html "LayoutRoot").
 
 {% tabs %}
 
@@ -792,17 +867,17 @@ The arrangement results in an ever-expanding concentric arrangement with radial 
             employee.Add(new Employee() { EmpId = "49", ParentId = "22", Imageurl = "./Assets/Thomas.png" });
             employee.Add(new Employee() { EmpId = "50", ParentId = "22", Imageurl = "./Assets/John.png" });
 
-            // Initialize Datatsource settings
-            Diagram.DataSourceSettings = new DataSourceSettings()
+            //Initialize Datatsource settings
+            diagram.DataSourceSettings = new DataSourceSettings()
             {
                 ParentId = "ParentId",
                 Id = "EmpId",
-                DataSource = employee,
-                Root = "1",
+               DataSource = employee,
+                 Root = "1",
             };
 
-            // Initialize LayoutManager
-            Diagram.LayoutManager = new LayoutManager()
+            //Initialize LayoutManager
+            diagram.LayoutManager = new LayoutManager()
             {
                 Layout = new RadialTreeLayout()
                 {
@@ -822,7 +897,7 @@ Please find [RadialTree Layout sample](https://github.com/syncfusion/wpf-demos/t
 
 ### Customize Bounds in layout
 
-[Bounds](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.Base.LayoutBase~Bounds.html) Property of `RadialTreeLayout` is used to define the region where the layout is to rendered based on its root. It is valid only for `RadialTreeLayout`.
+The [Bounds](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.Base.LayoutBase~Bounds.html) Property of `RadialTreeLayout` is used to define the region where the layout to be rendered based on its root. It is valid only for `RadialTreeLayout`.
 
 {% tabs %}
 
@@ -834,7 +909,7 @@ Please find [RadialTree Layout sample](https://github.com/syncfusion/wpf-demos/t
 
 {% highlight c# %}
 
-            Diagram.LayoutManager = new LayoutManager()
+            diagram.LayoutManager = new LayoutManager()
             {
                 Layout = new RadialTreeLayout()
                 {
@@ -849,11 +924,11 @@ Please find [RadialTree Layout sample](https://github.com/syncfusion/wpf-demos/t
 
 ## Flowchart layout
 
-The Flowchart layout is a diagrammatic representation of a process, workflow, system or computer algorithm. Flowcharts uses various kind of symbols to illustrate the different types of actions and symbols connected together with arrows showing the flow direction of process.
+The flowchart layout is a diagrammatic representation of a process, workflow, system, or computer algorithm. Flowcharts uses various kind of symbols to illustrate the different types of actions and symbols connected together with arrows showing the flow direction of process.
 
 ### Common flowchart symbols
 
-Different flowchart symbols have different meanings that are used to represent different states in Flowchart. The following table describes the most common Flowchart symbols that are used in creating flowchart.
+Different flowchart symbols have different meanings that are used to represent different states in flowchart. The following table describes the most common flowchart symbols that are used in creating flowchart.
 
 |Symbol|Built-in resource key in SfDiagram|Description|
 |---|---|---|
@@ -863,7 +938,7 @@ Different flowchart symbols have different meanings that are used to represent d
 |![Decision](Automatic-Layouts_images/Automatic-Layouts_Decision.png)|Decision|Shows a branching point where the decision is made to choose one of the two paths|
 |![Document](Automatic-Layouts_images/Automatic-Layouts_Document.png)|Document|Represents a single document or report in the process.|
 |![SubProcess](Automatic-Layouts_images/Automatic-Layouts_Predefinedprocess.png)|SubProcess/PredefinedProcess|Represents a sequence of actions that combine to perform a specific task that is defined elsewhere.|
-|![DirectData](Automatic-Layouts_images/Automatic-Layouts_DirectData.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering|
+|![DirectData](Automatic-Layouts_images/Automatic-Layouts_DirectData.png)|DirectData|Represents a collection of information that allows searching, sorting, and filtering.|
 |![StoredData](Automatic-Layouts_images/Automatic-Layouts_StoredData.png)|StoredData|Represents a step where data get stored within a process.|
 |![ManualInput](Automatic-Layouts_images/Automatic-Layouts_ManualInput.png)|ManualInput|Represents the manual input of data into a field or step in a process.|
 |![ManualOperation](Automatic-Layouts_images/Automatic-Layouts_ManualOperation.png)|ManualOperation|Represents an operation in a process that must be done manually, not automatically.|
@@ -873,7 +948,7 @@ Different flowchart symbols have different meanings that are used to represent d
 |![MultiDocument](Automatic-Layouts_images/Automatic-Layouts_MultiDocument.png)|MultiDocument|Represents multiple documents or reports in the process.|
 |![Connector](Automatic-Layouts_images/Automatic-Layouts_Connector.png)||Represents a direction of flow from one step to another. It will get created automatically based on the relationship between the parent and child.|
 
-N> We have provided some more built-in Shapes as ResourceDictionary. For more Shapes, please refer this [page](/wpf/sfdiagram/shapes).
+N> We have provided some more built-in Shapes as ResourceDictionary. For more Shapes, refer to this [page](/wpf/sfdiagram/shapes).
 
 {% tabs %}
 
@@ -973,7 +1048,7 @@ N> We have provided some more built-in Shapes as ResourceDictionary. For more Sh
                                         ConnectorTextMapping="Label" 
                                         ContentMapping="Name"/>
 <!--Initializes the SfDiagram --> 
-<syncfusion:SfDiagram x:Name="Diagram" 
+<syncfusion:SfDiagram x:Name="diagram" 
                               Grid.Column="0" 
                               LayoutManager="{StaticResource layoutmanager}" 
                               DataSourceSettings="{StaticResource DataSourceSettings}" >
@@ -988,18 +1063,18 @@ N> We have provided some more built-in Shapes as ResourceDictionary. For more Sh
 {% highlight c# %}
 
     //Initialize Diagram
-    SfDiagram Diagram = new SfDiagram();
+    SfDiagram diagram = new SfDiagram();
 
     //Initialize Node Collection
-    Diagram.Nodes = new ObservableCollection<NodeViewModel>();           
+    diagram.Nodes = new ObservableCollection<NodeViewModel>();           
 
     //Initialize Connector Collection
-    Diagram.Connectors = new ObservableCollection<ConnectorViewModel>();
+    diagram.Connectors = new ObservableCollection<ConnectorViewModel>();
 
-    (Diagram.Info as IGraphInfo).ItemAdded += MainWindow_ItemAdded;
+    (diagram.Info as IGraphInfo).ItemAdded += MainWindow_ItemAdded;
 
-    // Initialize DataSourceSettings for SfDiagram
-    Diagram.DataSourceSettings = new FlowchartDataSourceSettings()
+    //Initialize DataSourceSettings for SfDiagram
+    diagram.DataSourceSettings = new FlowchartDataSourceSettings()
         {
             ParentId = "ParentId",
             Id = "Id",
@@ -1024,16 +1099,16 @@ N> We have provided some more built-in Shapes as ResourceDictionary. For more Sh
             VerticalSpacing = 30
         };
 
-    //initialize theming style for SfDiagram
-    Diagram.Theme = new OfficeTheme();
+    //Initialize theming style for SfDiagram
+    diagram.Theme = new OfficeTheme();
 
     //Initialize LayoutManager
-    Diagram.LayoutManager = layoutManager;
+    diagram.LayoutManager = layoutManager;
     
     //Adding Sfdiagram as children to mainwindow grid.
-    WindowGrid.Children.Add(Diagram);
+    WindowGrid.Children.Add(diagram);
 
-    // Initializes the DataSource collection
+    //Initializes the DataSource collection
     private DataItems GetData()
     {
         DataItems itemscollection = new DataItems();
@@ -1143,7 +1218,7 @@ N> We have provided some more built-in Shapes as ResourceDictionary. For more Sh
 Sequence of the node's direction can be customized by flowchart orientation either vertically from top to bottom or by horizontally from left to right.
 The `Orientation` property of `FlowchartLayout` class allows you to define the flow direction for flowchart as `TopToBottom` or `LeftToRight`.
 
-#### TopToBottom Orientation
+#### TopToBottom orientation
 
 Arranges the element in the layout vertically from top to bottom.
 
@@ -1258,7 +1333,7 @@ Any text value can be given as a connector text to describe the flow. Also, any 
 ![CustomFlowchart](Automatic-Layouts_images/Automatic-Layouts_CustomYes_NoBranch.png)
 
 
-### Customize Vertical and horizontal spacing 
+### Customize vertical and horizontal spacing 
 
 Control the spacing between the nodes both horizontally and vertically using the `HorizontalSpacing` and `VerticalSpacing` properties of `FlowchartLayout` class.
 
