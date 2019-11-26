@@ -29,7 +29,7 @@ public MainWindow()
 To localize the SfDataGrid based on `CurrentUICulture` using resource files, follow the below steps. 
 
 1.Create new folder and named as **Resources** in your application. 
-2.Add the default resource file of SfDataGrid into **Resources** folder. You can download the Syncfusion.SfGrid.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF2020296999.zip).
+2.Add the default resource file of SfDataGrid into **Resources** folder. You can download the Syncfusion.SfGrid.WPF.resx [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF71700028.zip).
 
 ![Addition of default resource file of WPF DataGrid into Resources folder](Localization_images/Localization_img1.png)
 
@@ -51,7 +51,7 @@ To localize the SfDataGrid based on `CurrentUICulture` using resource files, fol
 
 ![Shows the localized in German for WPF DataGrid](Localization_images/Localization_img5.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization-687552084.zip)
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization1013710435.zip)
 
 ## Localize when the resource file present in different assembly or different namespace?
 
@@ -71,7 +71,7 @@ public MainWindow()
 
 ## Editing default culture resource
 
-You can edit default resource file by adding it to **Resources** folder of your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF-804035924.zip).
+You can edit default resource file by adding it to **Resources** folder of your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.WPF71700028.zip).
 
 ![Displaying the default culture resource editing for WPF SfDataGrid](Localization_images/Localization_img6.png)
 
