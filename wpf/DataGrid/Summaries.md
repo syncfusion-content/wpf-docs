@@ -541,6 +541,83 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 ![Caption summaries in rows for WPF DataGrid](Summaries_images/Summaries_img11.png)
 
+## Displaying Summary With Title
+
+You can display summary information with title text by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` and  defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in title text.
+If you can setting the  `GridSummaryRow.TitleColumnCount`  to  how many column should be display the title text and other defined column shows the summary for defining summary columns.
+
+Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
+
+In the below code snippet `GridSummaryRow.TitleColumnCount` set as 2 and other defined columns are defining summary columns.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+
+    <syncfusion:SfDataGrid.CaptionSummaryRow>
+        <syncfusion:GridSummaryRow  ShowSummaryInRow="False" TitleColumnCount="2" Title=" {ColumnName} : {Key} - {ItemsCount} Items ">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="CustomerName" 
+                                              Format=" {Count:d}"
+                                              MappingName="CustomerName" 
+                                              SummaryType="CountAggregate" />
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format=" {Sum:c}"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format=" {Count:d}"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
+{
+    ShowSummaryInRow = false,
+    Title = "{ColumnName} : {Key} - {ItemsCount} Items",
+    TitleColumnCount = 2,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="CustomerName",
+            Format="{Count:d}",
+            MappingName="CustomerName",
+            SummaryType=SummaryType.CountAggregate
+        },
+
+        new GridSummaryColumn()
+        {
+            Name = "PriceAmount",
+            MappingName="UnitPrice",
+            SummaryType= SummaryType.DoubleAggregate,
+            Format="{Sum:c}"
+        },
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        }
+    }
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates displaying summary with title text at same time.
+
+![Caption summaries with title for WPF DataGrid](Summaries_images/Summaries_img19.png)
+
 ## Formatting summary
 
 In the below sections formatting is explained using TableSummary. In the same way, you can format group and caption summaries also.
