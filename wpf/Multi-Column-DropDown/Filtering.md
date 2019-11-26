@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in SfMultiColumnDropDownControl | Syncfusion
-description: How to handle the various filtering like Case-Sensitive filtering, AllowIncrementalFiltering, Custom filtering and Filtering delay in SfMultiColumnDropDownControl .
+description: How to handle the various filtering like Case-Sensitive filtering, Custom filtering and Filtering delay in SfMultiColumnDropDownControl.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
