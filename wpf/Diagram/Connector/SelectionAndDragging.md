@@ -7,9 +7,9 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Connector Selection, Dragging, and Routing
+# Interactions on connectors
 
-Connectors can be selected and dragged over the diagram page. 
+Connectors can be selected, dragged and routed over the diagram page. 
 
 ## How to select and edit the connector
 

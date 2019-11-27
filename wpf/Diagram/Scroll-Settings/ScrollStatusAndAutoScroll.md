@@ -9,18 +9,18 @@ documentation: ug
 
 # Scroll Settings
 
-The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mouse wheel can be used to scroll the diagram. Diagram’s scroll settings enable you to read the current scroll status, view port size, current zoom, and zoom factor values.
+The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mouse wheel can be used to scroll the diagram. Diagram’s scroll settings allows you to read the current scroll status, view port size, current zoom, and zoom factor values.
 
 ## Get current scroll status
 
-Diagram allows to get the scroll settings related values using `ScrollInfo` property of `ScrollSettings` class.
+Diagram allows to get the scroll settings related values using the `ScrollInfo` property of `ScrollSettings` class.
 
-* `CurrentZoom`: Specifies the zooming level of the diagram page
-* `Viewport`: Specifies the position and dimensions of diagram's visible area
-* `ViewportHeight`: Specifies the height of the view port area of diagram control
-* `ViewportWidth`: Specifies the width of the view port area of diagram control
-*  `HorizontalOffset`: Specifies the horizontal origin or left side origin of the view port of the diagram page
-* `VerticalOffset`: Specifies the vertical origin or top side of the view port of the diagram page
+* `CurrentZoom`: Specifies the zooming level of the diagram page.
+* `Viewport`: Specifies the position and dimensions of diagram's visible area.
+* `ViewportHeight`: Specifies the height of the view port area of diagram control.
+* `ViewportWidth`: Specifies the width of the view port area of diagram control.
+*  `HorizontalOffset`: Specifies the horizontal origin or left side origin of the view port of the diagram page.
+* `VerticalOffset`: Specifies the vertical origin or top side of the view port of the diagram page.
 
 {% tabs %}
 {% highlight C# %}
@@ -40,9 +40,9 @@ double viewportWidth = diagram.ScrollSettings.ScrollInfo.ViewportWidth;
 
 ## How to update the scroll status
 
-You can programmatically change scrolling amount at runtime by using ZoomPan() method.
+You can programmatically change scrolling amount at runtime by using the ZoomPan() method.
 
-`ScrollDelta` property of `ZoomPositionParameter` class allows you to specifies how much the page should be scrolling. And `ZoomCommand` property used to specify whether it is vertical scroll bar or horizontal scroll bar.
+The `ScrollDelta` property of `ZoomPositionParameter` class allows you to specify how much the page should be scrolling. The `ZoomCommand` property is used to specify whether it is vertical scroll bar or horizontal scroll bar.
 
 {% tabs %}
 {% highlight C# %}
@@ -64,7 +64,7 @@ diagram.ScrollSettings.ScrollInfo.ZoomPan(new ZoomPositionParameter
 
 ## AutoScroll
 
-Autoscroll feature automatically scrolls the Diagram whenever the Node or Connector is moved beyond the boundary of the diagram. So that, it is always visible during dragging, resizing, and multiple selection operations. Autoscroll is automatically triggered when any one of the following is done towards the edges of the Diagram.
+Autoscroll feature automatically scrolls the Diagram whenever the Node or Connector is moved beyond the boundary of the diagram. So that, it is always visible during dragging, resizing, and multiple selection operations. Autoscroll is automatically triggered when any one of the following is done towards the edges of the Diagram:
 
 * Node dragging, resizing
 * Connection editing
@@ -88,7 +88,7 @@ The Autoscroll border is used to specify the maximum distance between the object
 {% highlight C# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize the scroll setting with auto scroll border
+//Initialize the scroll settings with auto scroll border
 diagram.ScrollSettings = new ScrollSettings()
 {
     AutoScrollBorder = new Thickness(40),
