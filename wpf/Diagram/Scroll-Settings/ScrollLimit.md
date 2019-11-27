@@ -9,11 +9,11 @@ documentation: ug
 
 # Scroll limit
 
-The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. `ScrollLimit` property of scroll settings helps to limit the scrolling area. It includes the following options,
+The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The `ScrollLimit` property of scroll settings helps to limit the scrolling area. It includes the following options:
 
-* Infinity: Allows to scroll in all directions without any restriction.
-* Diagram: Allows to scroll within the Diagram content.
-* Limited: Allows to scroll within the specified area.
+* Infinity: Allows you to scroll in all directions without any restriction.
+* Diagram: Allows you to scroll within the Diagram content.
+* Limited: Allows you to scroll within the specified area.
 
 The default operation is `Diagram`.
 
@@ -38,9 +38,9 @@ diagram.ScrollSettings = new ScrollSettings()
 {% endhighlight %}
 {% endtabs %}
 
-## Scrollable Area
+## Scrollable area
 
-You can restrict scrolling beyond any particular rectangle area by using the `ScrollableArea` property of ScrollSettings. To restrict scrolling beyond any custom region, you have to set the `ScrollLimit` as Limited. The default value is Rect.Empty.
+You can restrict scrolling beyond any particular rectangle area by using the `ScrollableArea` property of ScrollSettings. To restrict scrolling beyond any custom region,you have to set the `ScrollLimit` to Limited. The default value is Rect.Empty.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,7 +55,7 @@ You can restrict scrolling beyond any particular rectangle area by using the `Sc
 {% highlight C# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize the scroll setting with scroll limit and scrollabl area value
+//Initialize the scroll settings with scroll limit and scrollabl area value
 diagram.ScrollSettings = new ScrollSettings()
 {
     ScrollLimit = ScrollLimit.Limited,
