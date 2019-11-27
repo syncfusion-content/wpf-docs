@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cubic curve segments of connectors | Syncfusion
+title: Create and editing simple cubic curve segments and adding mutilple cubic curve segments of connectors | Syncfusion
 description: How to create cubic bezier segment 
 platform: wpf
 control: SfDiagram

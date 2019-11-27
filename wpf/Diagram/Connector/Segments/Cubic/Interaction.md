@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction on Cubic curve segments | Syncfusion
+title: Interaction on Cubic curve segments and editing the control points of cubic curve segments to maintain same distance and angle | Syncfusion
 description: How to interact with cubic bezier segment 
 platform: wpf
 control: SfDiagram
