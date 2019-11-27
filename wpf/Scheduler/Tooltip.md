@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip| SfSchedule | Wpf | Syncfusion
-description: tooltip
+description: Learn about ToolTip support and its customization in Syncfusion WPF SfSchedule control and more details.
 platform: wpf
 control: SfSchedule
 documentation: ug
