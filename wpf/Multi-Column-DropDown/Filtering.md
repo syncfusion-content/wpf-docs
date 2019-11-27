@@ -88,7 +88,7 @@ Here, `Title` is defined as a `DisplayMember`. But it also searches the match ca
 N> Excel-like filtering is not supported in SfMultiColumnDropDownControl. You can customize the SfMultiColumnDropDownControl ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in SfDataGrid.
 
 ## Filtering Delay
-By default, filtering and auto-completion operations performed while typing in editor will be delayed for a specific amount of time (milliseconds). The time to delay the filtering and auto-completion operations can be specified by the `FilterDelay` property. Default value of the FilterDelay property is `500`.
+By default, filtering and auto-completion operations performed while typing in the editor will be delayed for a specified amount of time (milliseconds). The period of delaying filtering and auto-completion operations can be specified by the `FilterDelay` property. The default value for the `FilterDelay` property is `500`.
 {% tabs %}
 {% highlight c# %}
 this.sfMultiColumnDropDown.FilterDelay = 2000;
