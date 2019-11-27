@@ -30,7 +30,7 @@ The default operation is `Infinity`.
 {% highlight C# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize the scroll setting with auti scroll limit and scroliing area
+//Initialize the scroll setting with auto scroll limit and scrolling area
 diagram.ScrollSettings = new ScrollSettings()
 {
     AutoScrollLimit = ScrollLimit.Limited,
