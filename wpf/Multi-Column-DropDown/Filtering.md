@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in SfMultiColumnDropDownControl | Syncfusion
-description: How to handle the various filtering like Case-Sensitive filtering, Custom filtering and Filtering delay in SfMultiColumnDropDownControl.
+title: Filtering in WPF Multi Column Dropdown control | Syncfusion
+description: Learn about the various filtering like case-sensitive filtering, custom filtering and filtering delay in WPF Multi Column Dropdown control and more details.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -88,14 +88,13 @@ Here, `Title` is defined as a `DisplayMember`. But it also searches the match ca
 N> Excel-like filtering is not supported in SfMultiColumnDropDownControl. You can customize the SfMultiColumnDropDownControl ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in SfDataGrid.
 
 ## Filtering Delay
-The SfMultiColumnDropDown provides support to set the delay in milliseconds when filtering the records in DropDown by using the FilterDelay property. The default FilterDelay is 500. 
-
+By default, filtering and auto-completion operations performed while typing in editor will be delayed for a specific amount of time (milliseconds). The time to delay the filtering and auto-completion operations can be specified by the `FilterDelay` property. Default value of the FilterDelay property is `500`.
 {% tabs %}
 {% highlight c# %}
-this.sfmulticolumn.FilterDelay = 2000;
+this.sfMultiColumnDropDown.FilterDelay = 2000;
 {% endhighlight %}
 {% highlight xml %}
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumnDropDown"
                                                  Width="175"
                                                  Height="30"
                                                  ItemsSource="{Binding Orders}"
