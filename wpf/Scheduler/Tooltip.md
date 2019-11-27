@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-Appointment Tooltip is used to view the details of the appointment in the user's required design and its visibility can be enabled by setting `AppointmentTooltipVisibility` as Visible. This tooltip will be displayed when the mouse is over the appointments whereas in touch device it will be displayed on holding over the appointments. The schedule appointment tooltip will be displayed only when the AppointmentTooltipTemplate property is set. The AppointmentTooltipTemplate is of type ControlTemplate.
+Appointment Tooltip is used to view the details of the appointment in the user's required design and its visibility can be enabled by setting `AppointmentTooltipVisibility` as Visible. This tooltip will be displayed when the mouse is over the appointments whereas in touch device it will be displayed on holding over the appointments. The schedule appointment tooltip will be displayed only when the `AppointmentToolTipTemplate` property is set. The AppointmentToolTipTemplate is of type `ControlTemplate`.
 {% tabs %}
 {% highlight html %}
 
@@ -18,7 +18,7 @@ Appointment Tooltip is used to view the details of the appointment in the user's
 
 <Schedule:SfSchedule ScheduleType="Week" Background="WhiteSmoke" AppointmentTooltipVisibility="Visible">
 
-<Schedule:SfSchedule.AppointmentTooltipTemplate>
+<Schedule:SfSchedule.AppointmentToolTipTemplate>
 
 <ControlTemplate>
 
@@ -50,7 +50,7 @@ Appointment Tooltip is used to view the details of the appointment in the user's
 
 </ControlTemplate>
 
-</Schedule:SfSchedule.AppointmentTooltipTemplate>
+</Schedule:SfSchedule.AppointmentToolTipTemplate>
 
 </Schedule:SfSchedule>
 
