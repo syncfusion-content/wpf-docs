@@ -1,7 +1,7 @@
 ---
 layout: post
-title: how to add quadratic bezier segements into a connector and how to edit the quadratic bezier segments | Syncfusion
-description: How to create and interact with Quadratic bezier segments
+title: Quadratic bezier segments | Syncfusion
+description: how to add quadratic bezier segements into a connector and how to edit the quadratic bezier segments
 platform: wpf
 control: SfDiagram
 documentation: ug
