@@ -40,7 +40,7 @@ SfDiagram provides various options to customize the exported diagram using [SfDi
 
 ### Image Format
 
-Sfdiagram uses `BitmapEncoder` to convert the page as image with specified file format. When file format is not specified, image format will be referred from `BitmapEncoder` class.
+You can use [ExportBitmapEncoder](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~ExportBitmapEncoder.html "ExportBitmapEncoder") or [ExportType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~ExportType.html "ExportType") properties to specify the type/format of the exported image file.
 
 {% tabs %}
 {% highlight C# %}
@@ -59,7 +59,7 @@ diagram.Export();
 
 ### Image File Name
 
-`FileName` property of `ExportSettings` class is the name of the file to be exported.
+You can save the exported image as stream or file system using [ExportStream](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~ExportStream.html "ExportStream") or [FileName](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~FileName.html "FileName") property of `ExportSettings` class respectively.
 
 {% tabs %}
 {% highlight C# %}
@@ -79,7 +79,12 @@ diagram.Export();
 
 ### ExportMode
 
-SfDiagram allows to export the page region of the diagram or to export the content of the diagram only using `ExportMode` property of `ExportSettings` class.
+[ExportMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExportSettings~ExportMode.html "ExportMode") specifies whether the complete page region the diagram is to be exported or the content region of the diagram. The exporting options are as follows:
+
+| ExportMode| Description | Output |
+|---|---|---|
+| PageSettings| Region that fits all pages (single or multiple pages based on page settings) |![ExportingPageSettings](Exporting_images/ExportingPageSettings.png) |
+| Content| Region that fits all nodes and connectors that are added to model | ![ExportingContent](Exporting_images/ExportingContent.png)|
 
 {% tabs %}
 {% highlight xaml %}
@@ -106,14 +111,9 @@ diagram.Export();
 {% endhighlight %}
 {% endtabs %}
 
-| ExportMode| Description | Output |
-|---|---|---|
-| PageSettings| Region that fits all pages (single or multiple pages based on page settings) |![ExportingPageSettings](Exporting_images/ExportingPageSettings.png) |
-| Content| Region that fits all nodes and connectors that are added to model | ![ExportingContent](Exporting_images/ExportingContent.png)|
-
 ### Export to XPS
 
-To export the diagram into xps file format, enable the `IsSaveToXps` property of `ExportSettings` class.
+SfDiagram has in-built support to export the diagram as XPS file instead of image file. To export diagram as XPS file, set the `IsSaveToXps` property of `ExportSettings` class as `true` and specify the file name with ".xps" extension.
 
 {% tabs %}
 {% highlight C# %}
@@ -134,13 +134,11 @@ diagram.Export();
 
 ### Export To PDF
 
-SfDiagram provides support to export the Diagram as XPS format by using the `IsSaveToXps` property of `ExportSettings`.
-
-We can convert the XPS document into PDF file through `Syncfusion.XPS.XPSToPdfConverter`.Please refer to the KB link to [Export the SfDiagram as PDF](https://www.syncfusion.com/kb/8494/how-to-export-the-diagram-as-pdf).
+SfDiagram does not have the built-in support to convert the diagram as PDF file but you can achieve it by exporting the diagram as XPS file and then convert the exported xps file as PDF using [Syncfusion.XPS.XPSToPdfConverter](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Base~Syncfusion.XPS.XPSToPdfConverter.html "Syncfusion.XPS.XPSToPdfConverter"). Please refer the [Export the SfDiagram as PDF](https://www.syncfusion.com/kb/8494/how-to-export-the-diagram-as-pdf) KB link for more details.
 
 ### Export specific region of diagram
 
-Diagram supports to export any specific area of diagram page by using 'Clip' proerty of `ExportSettings` class.
+SfDiagram provides supports to export any specific region of the diagram by using 'Clip' proerty of `ExportSettings` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -171,7 +169,7 @@ diagram.Export();
 
 ### Change the background of the exported files
 
-Diagram supports to change the background color of the exported page using 'ExportBackground' property of `ExportSettings` class.
+SfDiagram provides supports to change the background color of the exported image using 'ExportBackground' property of `ExportSettings` class.
 
 {% tabs %}
 {% highlight xaml %}
