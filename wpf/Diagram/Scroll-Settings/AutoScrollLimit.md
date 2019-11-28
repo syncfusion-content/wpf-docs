@@ -9,11 +9,11 @@ documentation: ug
 
 # Auto-Scroll Limit
 
-The auto-scroll limit allows you to define the scrollable region of the Diagram while page is getting auto scrolled. `AutoScrollLimit` property of scroll settings class helps to limit the auto scrolling area. It includes the following options,
+The auto-scroll limit allows you to define the scrollable region of the Diagram while the page is getting auto scrolled. The `AutoScrollLimit` property of scroll settings class helps to limit the auto scrolling area. It includes the following options:
 
-* Infinity: Allows to auto-scroll in all directions without any restriction.
-* Diagram: Allows to auto-scroll within the Diagram content.
-* Limited: Allows to auto-scroll within the specified area.
+* Infinity: Allows auto-scroll in all directions without any restriction.
+* Diagram: Allows auto-scroll within the Diagram content.
+* Limited: Allows auto-scroll within the specified area.
 
 The default operation is `Infinity`.
 
@@ -30,7 +30,7 @@ The default operation is `Infinity`.
 {% highlight C# %}
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize the scroll setting with auti scroll limit and scroliing area
+//Initialize the scroll setting with auto scroll limit and scrolling area
 diagram.ScrollSettings = new ScrollSettings()
 {
     AutoScrollLimit = ScrollLimit.Limited,
