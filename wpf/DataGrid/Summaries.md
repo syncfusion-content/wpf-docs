@@ -96,13 +96,11 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ### Displaying summary columns along with title
 
-You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows columns summary. 
+You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
 
 Refer [Defining summary for column](#defining-summary-for-column) section to know more about how to defining summary columns.
 
 You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in defined title columns.
-
-You have to setting the `GridSummaryRow.TitleColumnCount` to how many columns should be display the title and other defined column shows the summary for defining summary columns.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
 
@@ -396,13 +394,11 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 ### Displaying summary columns along with title
 
-You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows columns summary. 
+You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
 
 Refer [Defining summary for column](#defining-summary-for-column-1) section to know more about how to defining summary columns.
 
 You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in defined title columns.
-
-You have to setting the `GridSummaryRow.TitleColumnCount` to how many columns should be display the title and other defined column shows the summary for defining summary columns.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
 
@@ -646,13 +642,11 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 ### Displaying summary columns along with title
 
-You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows columns summary. 
+You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
 
 Refer [Defining summary for column](#defining-summary-for-column-2) section to know more about how to defining summary columns.
 
 You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in defined title columns.
-
-You have to setting the `GridSummaryRow.TitleColumnCount` to how many columns should be display the title and other defined column shows the summary for defining summary columns.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
 
