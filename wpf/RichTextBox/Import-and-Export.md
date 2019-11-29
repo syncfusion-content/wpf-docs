@@ -115,3 +115,40 @@ The following code example demonstrates how to bind commands for performing impo
 {% endtabs %}
 
 N> In order to perform import/export documents, the standard keyboard shortcuts such as CTRL + O, CTRL + S can also be used.
+
+## Asynchronous import settings
+
+### Show or hide the loading page number
+
+The SfRichTextBoxAdv control shows the current loading page number by default at the bottom right corner of the control while loading the document asynchronously. You can hide this loading page number by using the ShowLoadingPageNumber property of LoadAsyncSettings class.
+
+The following code example demonstrates how to hide the loading page number in SfRichTextBoxAdv control.
+
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv">
+       <RichTextBoxAdv:SfRichTextBoxAdv.LoadAsyncSettings>
+           <RichTextBoxAdv:LoadAsyncSettings ShowLoadingPageNumber="False"/>
+       </RichTextBoxAdv:SfRichTextBoxAdv.LoadAsyncSettings>
+</RichTextBoxAdv:SfRichTextBoxAdv>
+
+
+{% endhighlight %}
+{% highlight c# %}
+// Initializes a new instance of RichTextBoxAdv.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+////Hides the loading page number.
+richTextBoxAdv.LoadAsyncSettings.ShowLoadingPageNumber = false;
+
+
+{% endhighlight %}
+{% highlight VB %}
+' Initializes a new instance of RichTextBoxAdv.
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+' Hides the loading page number.
+richTextBoxAdv.LoadAsyncSettings.ShowLoadingPageNumber = false
+
+
+{% endhighlight %}
+
+{% endtabs %}
