@@ -124,7 +124,7 @@ The following steps explains how to create sample project with MVVMLight templat
 
 DockingManager MVVMLight sample has been created following the above steps and it can be downloaded from below link,
 
-#### Sample Link:
+#### Sample Link
 [http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm-light)
 
 ## Practice with PRISM
@@ -633,7 +633,7 @@ The final output of application is given below:
 
 ![Configure the region adapter mappings](PatternandPractices_images/Patterns-and-Practices.jpeg)
 
-#### **Sample link:**
+#### Sample link
 
 [PRISM Demo](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism-6.1)
 
