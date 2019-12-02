@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Patterns and Practices of Syncfusion DockingManager control for WPF
-description: MVVM and PRISM support with DockingManager control
+description: Learn here about the MVVM and PRISM support with Essential studio Windows Forms DockingManager control
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -102,7 +102,7 @@ Following this approach, the docking adapter can also be treated as a normal ite
 
 #### Sample link
 
-[http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip)
+[http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm)
 
 ## MVVMLight
 
@@ -125,7 +125,7 @@ The following steps explains how to create sample project with MVVMLight templat
 DockingManager MVVMLight sample has been created following the above steps and it can be downloaded from below link,
 
 #### Sample Link:
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip)
+[http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm-light)
 
 ## Practice with PRISM
 
@@ -635,6 +635,6 @@ The final output of application is given below:
 
 #### **Sample link:**
 
-[PRISM Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PRISM_6_DockingManager_Demo1726639343.zip)
+[PRISM Demo](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism-6.1)
 
 
