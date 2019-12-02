@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Windows of Syncfusion DockingManager control for WPF
-description: Learn how to deal with windows of DockingManager progrmmatically and customize the windows
+title: Dealing with Windows | Docking Manager | Syncfusion
+description: This section describes how to deal with windows of DockingManager progrmmatically and customize the windows.
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -1253,6 +1253,108 @@ DockingManager.SetCollapseDefaultContextMenuItemsInFloat(Content1, true);
 {% endhighlight %}
 
 {% endtabs %}
+
+## DockBehavior
+
+[DockBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DockBehavior.html) has two options Default and VS2010, difference between the two modes is explained in the table below.
+
+<table>
+<tr>
+<th>
+DockBehavior
+</th>
+<th>
+Default
+</th>
+<th>
+VS2010
+</th>
+</tr>
+<tr>
+<td>
+Context menu options
+</td>
+<td>
+
+![Dock window with default context menu](Dealing-with-Windows_images/Default-menu.jpg)
+
+</td>
+<td>
+
+![Dock window with VS2010 context menu](Dealing-with-Windows_images/VS2010-menu.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+Different Behavior
+</td>
+<td>
+Dockable:
+
+A window's `Dockable` menu item represents that it may or may not be docked. 
+ </td>
+<td>
+Dock:
+
+You can dock a window from float or tabbed state by clicking `Dock` menu item. 
+</td>
+</tr>
+<tr>
+<td>
+Same Behavior
+</td>
+<td>
+The checked status of all other menu items is the current status of the window.
+</td>
+<td>
+The checked status of all other menu items is the current status of the window.
+</td>
+</tr>
+<tr>
+<td>
+
+Context menu option when window is in `Auto-Hide` state
+
+</td>
+<td>
+
+![Auto-Hide window with default context menu](Dealing-with-Windows_images/AutoHide_Window_Default-Menu.jpg)
+
+</td>
+<td>
+
+![Auto-Hide window with VS2010 context menu](Dealing-with-Windows_images/AutoHide_Window_VS2010-Menu.jpg)
+
+</td>
+</tr>
+
+</table>
+
+{% tabs %}
+
+{% highlight XAML %}
+
+ <syncfusion:DockingManager  x:Name="DockingManager1" DockBehavior="VS2010" >
+
+  <ContentControl x:Name="SolutionExplorer" syncfusion:DockingManager.DesiredWidthInDockedMode="200" syncfusion:DockingManager.Header="Solution Explorer" />
+
+ </syncfusion:DockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+DockingManager1.DockBehavior = DockBehavior.VS2010;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Float window with context menu](Dealing-with-Windows_images/Dealing-with-Windows_img28.png)
+
+![Auto hide window with context menu](Dealing-with-Windows_images/Dealing-with-Windows_img29.png)
+
 
 ## Hosting a client control between windows
 
