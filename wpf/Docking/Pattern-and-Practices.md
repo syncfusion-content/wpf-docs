@@ -100,9 +100,7 @@ Since WPF has an implicit template approach, it is easy to apply visuals to the 
 
 Following this approach, the docking adapter can also be treated as a normal item control and can be used in any MVVM application.
 
-#### Sample link
-
-[http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm)
 
 ## MVVMLight
 
@@ -122,10 +120,9 @@ The following steps explains how to create sample project with MVVMLight templat
 
 4.Attach DockingAdapter project to the DockingManagerMVVMLight project from MVVM sample. Create necessary ViewModels and Views with perfect naming conventions. Once the ItemsSource has been set to DockingAdapter children will be populate.
 
-DockingManager MVVMLight sample has been created following the above steps and it can be downloaded from below link,
+DockingManager MVVMLight sample has been created following the above steps.
 
-#### Sample Link
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm-light)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm-light)
 
 ## Practice with PRISM
 
@@ -633,8 +630,6 @@ The final output of application is given below:
 
 ![Configure the region adapter mappings](PatternandPractices_images/Patterns-and-Practices.jpeg)
 
-#### Sample link
-
-[PRISM Demo](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism-6.1)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism-6.1)
 
 
