@@ -406,11 +406,11 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
 
-#### Checkbox Filter with AllowBlankFilters as True
+Checkbox Filter with `AllowBlankFilters` as `True`
 
 ![Filter the NULL values by using the CheckBox Filter view in SfDataGrid WPF](Filtering_images/Filtering_img7.png)
 
-#### Advanced Filter with AllowBlankFilters as True
+Advanced Filter with `AllowBlankFilters` as `True`
 
 ![Filter the NULL values by using the Advanced Filter view in SfDataGrid WPF](Filtering_images/Filtering_img8.png)
 
@@ -429,11 +429,11 @@ dataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
 
 Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
 
-#### Checkbox Filter with ImmediateUpdateColumnFilter is True
+Checkbox Filter with `ImmediateUpdateColumnFilter` is `True`
 
 ![Apply the immediate filter in CheckBox Filter view](Filtering_images/Filtering_img9.png)
 
-#### Advanced Filter with ImmediateUpdateColumnFilter is True
+Advanced Filter with `ImmediateUpdateColumnFilter` is `True`
 
 ![Apply the immediate filter in Advanced Filter view](Filtering_images/Filtering_img10.png)
 
