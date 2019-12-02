@@ -14,10 +14,9 @@ You can highlight matching characters in a suggestion list to pick an item with 
 * First occurrence
 * Multiple occurrence
 
-The text highlight can be indicated with various customizing styles by enabling the following properties:
+The text highlight can be indicated with customizing style by enabling the following property:
 
 * HighlightedTextColor: Sets the color of the highlighted text for differentiating the highlighted characters.
-* HighlightTextFontAttributes: Sets the FontAttributes of the highlighted text.
 
 ## First occurrence
 

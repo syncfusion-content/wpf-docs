@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | PropertyGrid  | wpf | Syncfusion
-description: getting started
+title: Getting Started with WPF PropertyGrid control | Syncfusion
+description: Explore how to create and use basic features of Syncfusion WPF property grid control and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
@@ -20,17 +20,15 @@ This section guides you through getting started with the PropertyGrid control. I
 2. ToolTip — Displays the name and type of the property on mouse over.
 3. Description Panel — Gives a short description about the property.
 
-
-
 ## Creating the control through Visual Studio
 
 To create the PropertyGrid control:
 
 1. Drag and drop the PropertyGrid from the Visual Studio Toolbox as shown below.
 
-   ![](Getting-Started_images/Getting-Started_img1.png)
+   ![image](Getting-Started_images/Getting-Started_img1.png)
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![image](Getting-Started_images/Getting-Started_img2.png)
 
 2. Configure the properties of the PropertyGrid using the VS Properties window.
 
@@ -47,11 +45,11 @@ The PropertyGrid control can also be created and configured using Microsoft Expr
    
 2. Search for the PropertyGrid in the Toolbox.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![image](Getting-Started_images/Getting-Started_img3.png)
 
 3. Drag and drop the PropertyGrid into the designer. The PropertyGrid control is created as shown in the following screenshot. 
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+   ![image](Getting-Started_images/Getting-Started_img4.png)
 
 The user can customize any part of the PropertyGrid using the template editing feature in Expression Blend. 
 
@@ -81,9 +79,7 @@ In the above code snippet, the Button is set as SelectedObject for the PropertyG
 
 This will create the property as shown in the following screenshot:
 
-![](Getting-Started_images/Getting-Started_img5.png)
-
-
+![image](Getting-Started_images/Getting-Started_img5.png)
 
 ### Through C&#35
 
@@ -110,7 +106,7 @@ pGrid.SelectedObject = new Button();
 {% endhighlight %}
 {% endtabs %}
 
-### Custom object
+### Name and description of properties
 
 You can edit the custom object properties using the PropertyGrid. The following example illustrates how to edit the custom object properties.
 
@@ -219,9 +215,9 @@ pGrid.SelectedObject = new Person();
 
 3. The PropertyGrid will be generated as shown in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+![Property grid exploring properties of Person class](Getting-Started_images/Getting-Started_img6.png)
 
-### Custom editor
+### Edit properties using custom editor
 
 The PropertyGrid also provides custom editor support. The following example shows how to create the custom editor.
 
@@ -286,7 +282,7 @@ public class UpDownEditor : ITypeEditor
 {% endhighlight %}
 {% endtabs %}
 
-   The UpDownEditor given in the above code snippet is used to edit the double values. Since the UpDown control has features like scroll buttons to increase the value, it makes it easier to edit the property values of type double. 
+The UpDownEditor given in the above code snippet is used to edit the double values. Since the UpDown control has features like scroll buttons to increase the value, it makes it easier to edit the property values of type double. 
 
 2. Create an instance of Customer Editor with this UpDownEditor as follows:
 
@@ -315,7 +311,7 @@ pgridInstance.CustomEditorCollection.Add(brusheditor);
 
 The PropertyGrid displays the UpDownEditor as shown in the following screenshot for the double type values.
 
-![](Getting-Started_images/Getting-Started_img7.png)
+![image](Getting-Started_images/Getting-Started_img7.png)
 
 ## Visual styles
 
@@ -356,13 +352,12 @@ SkinStorage.SetVisualStyle(propertyGridInstance, "Office2010Blue");
 
 ## Structure of the PropertyGrid control
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![image](Getting-Started_images/Getting-Started_img8.png)
 
 * Button panel—Shows the GroupButton and SortButton to help the user at run time.
 * GroupButton—Groups the properties based on Category attribute of the property.
 * SortButton—Displays the properties in sorting order in PropertyGrid.
 * PropertyGrid—Lists all the properties
-
 
 ## Adding PropertyGrid to an application
 
@@ -374,7 +369,7 @@ Following are the steps to add the PropertyGrid control by using VisualStudio in
 
 1. Open Visual Studio. On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+   ![image](Getting-Started_images/Getting-Started_img9.png)
 
 2. On the Project Dialog window, select WPF Application, in the Name field, type the name of the project, and then click OK.
 
@@ -399,7 +394,7 @@ LayoutRoot.Children.Add(propertyGrid);
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![image](Getting-Started_images/Getting-Started_img10.png)
 
 
 ### Adding through XAML
@@ -423,7 +418,7 @@ Following are the steps to add the PropertyGrid control by using Visual Studio i
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img11.png)
+![image](Getting-Started_images/Getting-Started_img11.png)
 
 ### Adding through Blend
 
@@ -431,11 +426,11 @@ Following are the steps to add the PropertyGrid control by using Blend.
 
 1. Open Blend, On the File Menu click New Project. This opens the New Project dialog box.
 
-   ![](Getting-Started_images/Getting-Started_img12.png)
+   ![image](Getting-Started_images/Getting-Started_img12.png)
 
 2. In the Project type’s panel, select WPF application and then click OK.
 
-   ![](Getting-Started_images/Getting-Started_img13.png)
+   ![image](Getting-Started_images/Getting-Started_img13.png)
 
 3. Add the following Reference with the sample project.
 
@@ -446,7 +441,7 @@ Following are the steps to add the PropertyGrid control by using Blend.
    5. In the Search box, type PropertyGrid. This displays the search results.
    6. Drag the PropertyGrid control to Design View.
 
-![](Getting-Started_images/Getting-Started_img14.png)
+![image](Getting-Started_images/Getting-Started_img14.png)
 
 ## ToolTip
 

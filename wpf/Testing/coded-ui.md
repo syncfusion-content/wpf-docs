@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Coded UI | WPF | Syncfusion
-description: Learn how to test with Coded UI for Syncfusion Essential WPF controls
+title: Coded UI Testing | WPF | Syncfusion
+description: This section expalins the basic steps to test the controls using CodedUI for Syncfusion Essential Studio WPF
 platform: wpf
 control: Testing
 documentation: ug
@@ -227,6 +227,10 @@ DockingManager<br/><br/></td><td>
 <tr>
 <td>
 DocumentContainer<br/><br/></td><td>
+2 Levels<br/><br/></td></tr>
+<tr>
+<td>
+DateTimeEdit<br/><br/></td><td>
 2 Levels<br/><br/></td></tr>
 <tr>
 <td>
