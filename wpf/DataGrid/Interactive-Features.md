@@ -11,9 +11,9 @@ documentation: ug
 
 ## Column Chooser
 
-SfDataGrid allows you to show and hide the Columns from the view at runtime via drag and drop using `ColumnChooser`. You can enable a column chooser in an application by creating an instance for `GridColumnChooserController` and assign to `SfDataGrid.GridColumnDragDropController`.
+SfDataGrid allows you to `show` and `hide` the Columns from the view at runtime via drag and drop using `ColumnChooser`. You can enable a column chooser in an application by creating an instance for `GridColumnChooserController` and assign to `SfDataGrid.GridColumnDragDropController`.
 
-While dropping columns in ColumnChooser window, the particular column will be hidden by setting GridColumn.IsHidden as true.
+While dropping columns in `ColumnChooser` window, the particular column will be hidden by setting `GridColumn.IsHidden` as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -42,7 +42,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 
 ### Custom Column Chooser
 
-You can create custom UI for the column chooser and you can enable this view manually like below code example. You need to maintain separate collection in ViewModel to maintain the hidden columns which will bound to custom view.
+You can create custom UI for the column chooser and you can enable this view manually like below code example. You need to maintain separate collection in `ViewModel` to maintain the hidden columns which will bound to custom view.
 
 {% tabs %}
 {% highlight xaml %}
@@ -225,7 +225,7 @@ viewModel.ShowColumnChooser = false;
 
 ### Appearance Customization
 
-You can change the default appearance of the column chooser window by customizing the style of ColumnChooser. You can directly change the Title and WaterMarkText like the below code example.
+You can change the default appearance of the column chooser window by customizing the style of `ColumnChooser`. You can directly change the `Title` and `WaterMarkText` like the below code example.
 
 {% tabs %}
 {% highlight c# %}

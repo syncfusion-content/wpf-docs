@@ -9,7 +9,7 @@ documentation: ug
 
 # Conditional styling in WPF DataGrid (SfDataGrid)
 
-You can style the DataGrid and its inner elements (cells, rows and columns) conditionally based on data in three ways,
+You can style the DataGrid and its inner elements (cells, rows and columns) conditionally based on data in `three` ways,
 
 1. Using Converter
 2. Using Data Triggers
@@ -18,15 +18,19 @@ You can style the DataGrid and its inner elements (cells, rows and columns) cond
 <table>
 <tr>
 <td>
+<th>
 Approach
+</th>
 </td>
 <td>
+<th>
 Performance
+</th>
 </td>
 </tr>
 <tr>
 <td>
-Using Converter
+<code>Using Converter</code>
 </td>
 <td>
 Provide good performance when compared other two ways.
@@ -34,7 +38,7 @@ Provide good performance when compared other two ways.
 </tr>
 <tr>
 <td>
-Using Data Triggers
+<code>Using Data Triggers</code>
 </td>
 <td>
 When compared to converter, performance is slow while styling more number of columns or rows.
@@ -42,7 +46,7 @@ When compared to converter, performance is slow while styling more number of col
 </tr>
 <tr>
 <td>
-Using StyleSelector
+<code>Using StyleSelector</code>
 </td>
 <td>
 It affects scrolling performance while styling more number of columns based on number of columns visible.
@@ -104,7 +108,7 @@ public class ColorConverter : IValueConverter
 
 ### Condition styling of cells based on record using converter
 
-You can also style the cells based on record instead of passing single property to converter, where `converter` returns the value based on underlying record. This can be assigned to `GridColumn.CellStyle` to style the column based on other column properties.
+You can also style the cells based on record instead of passing single property to `converter`, where `converter` returns the value based on underlying record. This can be assigned to `GridColumn.CellStyle` to style the column based on other `column` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -178,13 +182,13 @@ The record cells ([GridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-Here, GridCell’s are conditionally customized based on `OrderID` value.
+Here, `GridCell’s` are conditionally customized based on `OrderID` value.
 
 ![Conditional styling of wpf datagrid cells using triggers](Conditional-Styling_images/Conditional-Styling_img3.png)
 
 ### Conditional styling of cells using style selector
 
-The record cells ([GridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html)) can be customized conditionally based on data by setting [SfDataGrid.CellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyleSelector.html) property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyleSelector.html) property and you can get the container as `GridCell` in the StyleSelector.
+The record cells ([GridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html)) can be customized conditionally based on data by setting [SfDataGrid.CellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyleSelector.html) property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyleSelector.html) property and you can get the container as `GridCell` in the `StyleSelector`.
 
 N> `GridColumn.CellStyleSelector` takes higher priority than `SfDataGrid.CellStyleSelector` property.
 
@@ -226,7 +230,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, GridCell’s are customized based on `TotalPrice` property of underlying record.
+Here, `GridCell’s` are customized based on `TotalPrice` property of underlying record.
 
 ![Conditional styling of wpf datagrid cells using style selector](Conditional-Styling_images/Conditional-Styling_img4.png)
 
@@ -234,7 +238,7 @@ Here, GridCell’s are customized based on `TotalPrice` property of underlying r
 
 ### Conditional styling of rows using converter
 
-The record rows ([VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) ) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using `converter`, where converter returns the value based on Underlying record.
+The record rows ([VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) ) can be customized conditionally by changing its property value based on `cell value` or `data object` by using `converter`, where `converter` returns the value based on Underlying record.
 
 {% tabs %}
 {% highlight xaml %}
@@ -282,7 +286,7 @@ Here, rows are customized based on `TotalPrice` property of underlying record.
 
 ### Conditional styling of rows using style selector
 
-The record rows ([VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) ) can be customized conditionally based on data by setting [SfDataGrid.RowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowStyleSelector.html) property and you can get the container as `VirtualizingCellsControl` in StyleSelector.
+The record rows ([VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) ) can be customized conditionally based on data by setting [SfDataGrid.RowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowStyleSelector.html) property and you can get the container as `VirtualizingCellsControl` in `StyleSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -374,7 +378,7 @@ Here, alternating rows are customized based on `OrderID` property of underlying 
 
 ### Conditional styling of caption summary cells using converter
 
-The appearance of caption summary cell can be customized conditionally based on summary value by using `converter`, where converter returns the value based on summary value. 
+The appearance of `caption summary cell` can be customized conditionally based on `summary value` by using `converter`, where `converter` returns the value based on `summary value`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -429,13 +433,13 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-Here, caption summary cells are customized based on `TotalPrice` summary value.
+Here, `caption summary cells` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid caption summary cells using converter](Conditional-Styling_images/Conditional-Styling_img8.png)
 
 ### Conditional styling of caption summary cells using style selector
 
-The appearance of caption summary cell can be customized conditionally based on summary value by setting [SfDataGrid.CaptionSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyleSelector.html) and you can get the container as GridCaptionSummaryCell using StyleSelector.
+The appearance of `caption summary cell` can be customized conditionally based on `summary value` by setting [SfDataGrid.CaptionSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyleSelector.html) and you can get the container as `GridCaptionSummaryCell` using `StyleSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -496,9 +500,9 @@ Here, caption summary cells are customized based on `TotalPrice` summary value.
 
 ### Conditional styling of caption summary cell based on column
 
-The caption summary cells can be conditionally customized summary column. 
+The `caption summary cells` can be conditionally customized summary column. 
 
-Here, caption summary cells are customized based on `TotalPrice` summary column.
+Here, `caption summary cells` are customized based on `TotalPrice` summary column.
 
 {% tabs %}
 {% highlight xaml %}
@@ -562,7 +566,7 @@ public class SelectorClass : StyleSelector
 
 ### Conditional styling of caption summary row using converter
 
-The appearance of caption summary row can be customized conditionally based on summary value by using `converter`, where converter returns the value based on summary value. 
+The appearance of `caption summary row` can be customized conditionally based on `summary value` by using `converter`, where `converter` returns the value based on `summary value`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -617,15 +621,15 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-Here, caption summary rows are customized based on `TotalPrice` summary value.
+Here, `caption summary rows` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid caption summary row using converter](Conditional-Styling_images/Conditional-Styling_img11.png)
 
 ### Conditional styling of caption summary row using style selector
 
-In another way, appearance of caption summary row can be customized conditionally based on summary value by setting [SfDataGrid.CaptionSummaryRowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryRowStyleSelector.html) and you can get the container as `CaptionSummaryRowControl` in StyleSelector.
+In another way, appearance of `caption summary row` can be customized conditionally based on `summary value` by setting [SfDataGrid.CaptionSummaryRowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryRowStyleSelector.html) and you can get the container as `CaptionSummaryRowControl` in `StyleSelector`.
 
-Here, caption summary rows are customized where [group key](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.Group~Key.html) value is negative.
+Here, `caption summary rows` are customized where [group key](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.Group~Key.html) value is negative.
 
 {% tabs %}
 {% highlight xaml %}
@@ -675,13 +679,13 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, caption summary rows are customized based on `TotalPrice` summary value.
+Here, `caption summary rows` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid caption summary row using style selector](Conditional-Styling_images/Conditional-Styling_img12.png)
 
 ### Conditional styling of caption summary row based on group level
 
-The appearance of caption summary row can be conditionally customized based on [grouping level](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DataRowBase~Level.html) using StyleSelector. 
+The appearance of `caption summary row` can be conditionally customized based on [grouping level](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DataRowBase~Level.html) using `StyleSelector`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -735,17 +739,17 @@ public class CustomCaptionSummaryRowStyleSelector : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, caption summary rows are customized based on `grouping level` (example: level1, level2, level3, etc.).
+Here, `caption summary rows` are customized based on `grouping level` (example: level1, level2, level3, etc.).
 
 ![Conditional styling of datagrid caption summary row based on group level](Conditional-Styling_images/Conditional-Styling_img13.png)
 
 ## Group summary cell style
 
-Group summary cells can be customized conditionally by getting particular summary value from [SummaryValues](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SummaryRecordEntry~SummaryValues.html) through converter or style selector. Likewise, you can also customize the group summary cell based on various properties exposed in [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow_members.html) (example: [ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) property).
+Group summary cells can be customized conditionally by getting particular summary value from [SummaryValues](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SummaryRecordEntry~SummaryValues.html) through `converter` or `style selector`. Likewise, you can also customize the group summary cell based on various properties exposed in [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow_members.html) (example: [ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) property).
 
 ### Conditional styling of group summary cell using converter
 
-The appearance of group summary cell can be customized conditionally based on summary value by using ‘converter’, where converter returns the value based on summary value.
+The appearance of `group summary cell` can be customized conditionally based on `summary value` by using ‘converter’, where `converter` returns the value based on `summary value`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -808,15 +812,15 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-Here, group summary cells are customized based on `TotalPrice` summary value.
+Here, `group summary cells` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid group summary cell using converter](Conditional-Styling_images/Conditional-Styling_img14.png)
 
 ### Conditional styling of group summary cell using style selector
 
-The appearance of group summary cell can be customized conditionally based on summary value by setting [SfDataGrid.GroupSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryCellStyleSelector.html) and you can get the container as `GridGroupSummaryCell` in StyleSelector.
+The appearance of `group summary cell` can be customized conditionally based on `summary value` by setting [SfDataGrid.GroupSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryCellStyleSelector.html) and you can get the container as `GridGroupSummaryCell` in `StyleSelector`.
 
-Here, group summary cells are customized based on summary values whether it’s positive or negative.
+Here, `group summary cells` are customized based on summary values whether it’s `positive` or `negative`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -882,15 +886,15 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, group summary cells are customized based on `TotalPrice` summary value.
+Here, `group summary cells` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid group summary cell using style selector](Conditional-Styling_images/Conditional-Styling_img15.png)
 
 ### Conditional styling of group summary cell based on column
 
-The group summary cells can be conditionally customized based on summary column. 
+The `group summary cells` can be conditionally customized based on summary column. 
 
-Here, group summary cells are customized based on `TotalPrice` summary column.
+Here, `group summary cells` are customized based on `TotalPrice` summary column.
 
 {% tabs %}
 {% highlight xaml %}
@@ -968,7 +972,7 @@ Group summary row can be customized conditionally by getting particular summary 
 
 ### Conditional styling of group summary row using converter
 
-The appearance of group summary row can be customized conditionally based on summary value by using ‘converter’, where converter returns the value based on summary value.
+The appearance of `group summary row` can be customized conditionally based on `summary value` by using `converter`, where `converter` returns the value based on `summary value`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1031,13 +1035,13 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-Here, group summary rows are customized based on `TotalPrice` summary value.
+Here, `group summary rows` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid group summary row using converter](Conditional-Styling_images/Conditional-Styling_img17.png)
 
 ### Conditional styling of group summary row using style selector
 
-The appearance of group summary row can be customized conditionally based on summary value by setting [SfDataGrid.GroupSummaryRowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRowStyleSelector.html) and you can get the container as `GridGroupSummaryRowControl` in StyleSelector.
+The appearance of `group summary row` can be customized conditionally based on `summary value` by setting [SfDataGrid.GroupSummaryRowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRowStyleSelector.html) and you can get the container as `GridGroupSummaryRowControl` in `StyleSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1104,7 +1108,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, group summary rows are customized based on `TotalPrice` summary value whether it’s positive or negative.
+Here, `group summary rows` are customized based on `TotalPrice` summary value whether it’s `positive` or `negative`.
 
 ![Conditional styling of datagrid group summary row using style selector](Conditional-Styling_images/Conditional-Styling_img18.png)
 
@@ -1114,7 +1118,7 @@ Table summary cells can be customized conditionally by getting particular summar
 
 ### Conditional styling of table summary cells using converter
 
-The appearance of table summary cell can be customized conditionally based on summary value using `converter`, where converter returns the value based on summary value. 
+The appearance of `table summary cell` can be customized conditionally based on `summary value` using `converter`, where `converter` returns the value based on `summary value`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1185,13 +1189,13 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-Here, table summary cells are customized based on `TotalPrice` summary value.
+Here, `table summary cells` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid table summary cells using converter](Conditional-Styling_images/Conditional-Styling_img19.png)
 
 ### Conditional styling of table summary cell using style selector
 
-The appearance of table summary cell can be customized conditionally based on summary value by setting [SfDataGrid.TableSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyleSelector.html) and you can get the container as GridTableSummaryCell in StyleSelector.
+The appearance of `table summary cell` can be customized conditionally based on summary value by setting [SfDataGrid.TableSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyleSelector.html) and you can get the container as `GridTableSummaryCell` in `StyleSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1262,15 +1266,15 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, table summary cells are customized based on `TotalPrice` summary value.
+Here, `table summary cells` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid table summary cell using style selector](Conditional-Styling_images/Conditional-Styling_img20.png)
 
 ### Conditional styling of table summary cell based on column
 
-The table summary cells can be conditionally customized based on summary column.
+The `table summary cells` can be conditionally customized based on summary column.
 
-Here, table summary cells are customized based on `TotalPrice` summary column.
+Here, `table summary cells` are customized based on `TotalPrice` summary column.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1342,11 +1346,11 @@ public class SelectorClass : StyleSelector
 
 ## Table summary row style
 
-Table summary rows can be customized conditionally by getting particular summary value from [SummaryValues](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SummaryRecordEntry~SummaryValues.html) through converter or style selector. Likewise, you can also customize the table summary row based on various properties exposed in [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow_members.html) (example: [ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) property).
+Table summary rows can be customized conditionally by getting particular summary value from [SummaryValues](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.SummaryRecordEntry~SummaryValues.html) through `converter` or `style selector`. Likewise, you can also customize the table summary row based on various properties exposed in [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow_members.html) (example: [ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) property).
 
 ### Conditional styling of table summary row using converter
 
-The appearance of table summary row can be customized conditionally based on summary value using `converter`, where converter returns the value based on summary value.
+The appearance of `table summary row` can be customized conditionally based on `summary value` using `converter`, where `converter` returns the value based on `summary value`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1387,13 +1391,13 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-Here, table summary rows are customized based on `TotalPrice` summary value.
+Here, `table summary rows` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid table summary row using converter](Conditional-Styling_images/Conditional-Styling_img22.png)
 
 ### Conditional styling of table summary row using style selector
 
-The appearance of table summary row can be customized conditionally based on summary value by setting [SfDataGrid.TableSummaryRowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRowStyleSelector.html) and you can get the container as `GridTableSummaryRowControl` in StyleSelector.
+The appearance of `table summary row` can be customized conditionally based on `summary value` by setting [SfDataGrid.TableSummaryRowStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRowStyleSelector.html) and you can get the container as `GridTableSummaryRowControl` in `StyleSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1468,7 +1472,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, table summary rows are customized based on `TotalPrice` summary value.
+Here, `table summary rows` are customized based on `TotalPrice` summary value.
 
 ![Conditional styling of datagrid table summary row using style selector](Conditional-Styling_images/Conditional-Styling_img23.png)
 
@@ -1476,7 +1480,7 @@ Here, table summary rows are customized based on `TotalPrice` summary value.
 
 The alignment of summary cells can be customized conditionally based on summary column. 
 
-Here, horizontal alignment of table summary cells are changed based on column name. Likewise, you can change the horizontal alignment of group, caption summary cells.
+Here, `horizontal alignment` of table summary cells are changed based on column name. Likewise, you can change the `horizontal alignment` of group, caption summary cells.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1546,15 +1550,15 @@ public class TableSummaryStyleSelector : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-Here, horizontal alignment of `TotalPrice` column alone left, other column horizontal alignment are changed into right.
+Here, `horizontal alignment` of `TotalPrice` column alone left, other column `horizontal alignment` are changed into right.
 
 ![wpf datagrid summary column alignment](Conditional-Styling_images/Conditional-Styling_img24.png)
 
 ## Row header style
 
-The appearance of row header ([GridRowHeaderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using `converter`, where converter returns the value based on Underlying record.
+The appearance of row header ([GridRowHeaderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html)) can be customized conditionally by changing its property value based on `cell value` or `data object` by using `converter`, where `converter` returns the value based on Underlying record.
 
-Here, row headers are customized based on `AmountPaid` property of underlying record.
+Here, `row headers` are customized based on `AmountPaid` property of underlying record.
 
 {% tabs %}
 {% highlight xaml %}

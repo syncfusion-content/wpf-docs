@@ -9,14 +9,14 @@ documentation: ug
 
 # Export to Excel in WPF DataGrid (SfDataGrid)
 
-DataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
+DataGrid provides support to export data to excel. It also provides support for `grouping`, `filtering`, `sorting`, `paging`, `unbound rows`, `merged cells`, `stacked headers` and `Details View` while exporting.
 
 The following assemblies needs to be added for exporting to excel.
 
 * Syncfusion.SfGridConverter.WPF
 * Syncfusion.XlsIO.Base
 
-You can export SfDataGrid to excel by using the [ExportToExcel](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension~ExportToExcel.html) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](http://help.syncfusion.com/cr/cref_files/wpf/webtoc.html) namespace.
+You can export `SfDataGrid to excel` by using the [ExportToExcel](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension~ExportToExcel.html) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](http://help.syncfusion.com/cr/cref_files/wpf/webtoc.html) namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -98,7 +98,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Exporting stacked headers
 
-You can export stacked headers to excel by setting [ExportStackedHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportStackedHeaders.html) property to `true`.
+You can export `stacked headers` to excel by setting [ExportStackedHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportStackedHeaders.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Exporting merged cells
 
-You can export merged cells to excel by setting [ExportMergedCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportMergedCells.html) property as `true`.
+You can export `merged cells` to excel by setting [ExportMergedCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportMergedCells.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -126,7 +126,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Exporting unbound rows
 
-You can export unbound rows to excel by setting [ExportUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportUnBoundRows.html) property as `true`.
+You can export `unbound rows` to excel by setting [ExportUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportUnBoundRows.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -140,7 +140,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ### Changing start row and column index while exporting
 
-You can export the data to specified row index and column index in worksheet, by setting [StartRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~StartRowIndex.html) and [StartColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~StartColumnIndex.html) properties.
+You can export the data to specified `row index` and `column index` in worksheet, by setting [StartRowIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~StartRowIndex.html) and [StartColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~StartColumnIndex.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -301,7 +301,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ## Export DataGrid to HTML
 
-You can save exported workbook as HTML by using [SaveAsHtml](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
+You can save exported workbook as `HTML` by using [SaveAsHtml](https://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -313,11 +313,11 @@ workBook.SaveAsHtml("Sample.html", HtmlSaveOptions.Default);
 {% endhighlight %}
 {% endtabs %}
 
-It is also possible to save worksheet as HTML by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method. You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
+It is also possible to save worksheet as `HTML` by using [SaveAsHtml](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IWorkbook~SaveAsHtml.html) method. You can refer [XlsIO documentation](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-html) for this.
 
 ## Export DataGrid to Mail
 
-You can export SfDataGrid to mail by converting it into Excel and save exported worksheet as HTML. Then exported HTML contents is embedded in mail body.
+You can export SfDataGrid to `mail` by converting it into Excel and save exported worksheet as `HTML`. Then exported `HTML` contents is embedded in `mail` body.
 
 {% tabs %}
 {% highlight c# %}
@@ -384,7 +384,7 @@ workBook.SaveAsXml("Sample.xml", ExcelXmlSaveType.MSExcel);
 
 ## Export DataGrid to CSV
 
-You can save exported workbook as CSV by using `SaveAs` method.
+You can save exported workbook as `CSV` by using `SaveAs` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -396,7 +396,7 @@ workBook.SaveAs("Sample.csv", ",");
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can save exported worksheet also to CSV. You can refer [XlsIO documentation.](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv) 
+Similarly, you can save exported worksheet also to `CSV`. You can refer [XlsIO documentation.](http://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#save-worksheet-as-csv) 
 
 ## Row Height and Column Width customization 
 
@@ -415,7 +415,7 @@ workBook.SaveAs("Sample.xlsx");
 
 ## Styling cells based on CellType in Excel
 
-You can customize the cell styles based on `CellType` by using [ExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportingEventHandler.html).
+You can customize the `cell styles` based on `CellType` by using [ExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportingEventHandler.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -459,7 +459,7 @@ You can customize the cells by setting [CellsExportingEventHandler](http://help.
 
 ### Customize cell value while exporting
 
-You can customize the call values while exporting to excel by using [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ChildExportingEventHandler.html) and `ExcelExportingOptions`.
+You can customize the `cell values` while exporting to excel by using [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ChildExportingEventHandler.html) and `ExcelExportingOptions`.
 
 {% tabs %}
 {% highlight c# %}
@@ -492,7 +492,7 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 
 ![Customization of cell values while exporting to excel in WPF DataGrid](Export-to-Excel_images/Export-to-Excel_img6.png)
 
-Here, cell values are changed for `IsClosed` column based on custom condition.
+Here, `cell values` are changed for `IsClosed` column based on custom condition.
 
 ### Changing row style in excel based on data
 
@@ -752,7 +752,7 @@ Using [ExcelExportingOptions.CellsExportingEventHandler](http://help.syncfusion.
 
 You can perform cell level customization such as row-level styling, formatting particular column in the exported worksheet. 
 
-In the below code snippet, NumberFormat for `Unit Price` column is changed in the exported sheet after exporting without using CellsExportingEventHandler. 
+In the below code snippet, NumberFormat for `Unit Price` column is changed in the exported sheet after exporting without using `CellsExportingEventHandler`. 
 
 Reference:
 [http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)

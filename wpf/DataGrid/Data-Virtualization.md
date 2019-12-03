@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Virtualization in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
+SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With `Data virtualization`, [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
 <table>
 <tr>
@@ -22,7 +22,7 @@ Usage
 </tr>
 <tr>
 <td>
-Data Virtualization
+<code>Data Virtualization</code>
 </td>
 <td>
 Use to load large amount of data in less time.
@@ -30,7 +30,7 @@ Use to load large amount of data in less time.
 </tr>
 <tr>
 <td>
-Incremental Loading
+<code>Incremental Loading</code>
 </td>
 <td>
 Use to load subset of data from the services or servers in less time while loading and scrolling. On-demand request also supported.
@@ -38,7 +38,7 @@ Use to load subset of data from the services or servers in less time while loadi
 </tr>
 <tr>
 <td>
-Paging
+<code>Paging</code>
 </td>
 <td>
 Use to load large amount of data in less time with the help of SfDataPager.
@@ -46,7 +46,7 @@ Use to load large amount of data in less time with the help of SfDataPager.
 </tr>
 <tr>
 <td>
-On-demand paging
+<code>On-demand paging</code>
 </td>
 <td>
 Use to load data in on-demand. You can load data only for current page from server. 
@@ -74,7 +74,7 @@ this.datagrid.EnableDataVirtualization = true;
 
 You can load the large amount of data in less time in another way using [GridVirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html). 
 
-In the below code, ViewModel defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
+In the below code, `ViewModel` defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -108,16 +108,16 @@ public class ViewModel
 ### Limitations 
 
 1. Data update using [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
-2. Details view is not supported.
+2. `Details View` is not supported.
 3. [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
-4. DataTable collection is not supported.
+4. `DataTable` collection is not supported.
 
 ## Incremental Loading
  
 DataGrid supports to load the data incrementally using [ISupportIncrementalLoading](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.ISupportIncrementalLoading.html) interface.
-`ISupportIncrementalLoading` interface has[LoadMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on[HasMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~HasMoreItems.html) property.
+`ISupportIncrementalLoading` interface has [LoadMoreItemsAsync](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html) method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on [HasMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~HasMoreItems.html) property.
 
-If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601.html) which is derived from `ISupportIncrementalLoading`. You can use IncrementalList or create collection derived from ISupportIncrementalLoading and bind it SfDataGrid.ItemsSource.
+If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  SfDataGrid have [IncrementalList](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
 
 In the below code, `IncrementalList` is initialized by passing Action to its constructor for loading items incrementally.
 
@@ -172,9 +172,9 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Displaying animation when fetching data from services
 
-You can display animations when fetching data from service for [LoadMoreItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html)Async method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx). 
+You can display animations when fetching data from service for [LoadMoreItemsAsync](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html) method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx). 
 
-In the below code snippet data fetched from service using `BackgroundWorker` and SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
+In the below code snippet data fetched from service using `BackgroundWorker` and [SfBusyIndicator](https://help.syncfusion.com/cr/wpf/Syncfusion.SfBusyIndicator.WPF~Syncfusion.Windows.Controls.Notification.SfBusyIndicator.html) displayed over SfDataGrid based on [IsBusy](https://help.syncfusion.com/cr/wpf/Syncfusion.SfBusyIndicator.WPF~Syncfusion.Windows.Controls.Notification.SfBusyIndicator~IsBusy.html) property in `ViewModel`, until `BackgroundWorker` completes its action.
 
 {% tabs %}
 {% highlight xaml %}
@@ -373,8 +373,8 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Limitations
 
-1. Deleting is not supported. You can code to delete row in application level.
-2. Summary is not calculated based on [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html).
+1. `Deleting` is not supported. You can code to delete row in application level.
+2. `Summary` is not calculated based on [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html).
 
 ## Paging
 

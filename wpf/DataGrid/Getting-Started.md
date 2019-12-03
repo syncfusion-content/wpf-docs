@@ -176,7 +176,7 @@ namespace WpfApplication1
 
 SfDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
 
-1. Create data object class named “OrderInfo” and declare properties as shown below,
+1. Create data object class named **OrderInfo** and declare properties as shown below,
 
 {% tabs %}
 {% highlight c# %}

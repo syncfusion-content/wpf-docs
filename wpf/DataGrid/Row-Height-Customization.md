@@ -71,11 +71,11 @@ You can change the row height in on-demand based on the row index or row data us
 
 `QueryRowHeight` event triggered for each row when it becomes visible.[QueryRowHeightEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.QueryRowHeightEventArgs.html) provides information to `QueryRowHeight` event with following members,
 
-`RowIndex` – denotes index of the row in SfDataGrid.
+* `RowIndex` **–** denotes index of the row in SfDataGrid.
 
-`Height` – Gets or sets the height of the row.
+* `Height` **–** Gets or sets the height of the row.
 
-`Handled` – Gets or sets a value indicating whether the `QueryRowHeight` event handled to change height of the row. Its default value is `false`.
+* `Handled` **–** Gets or sets a value indicating whether the `QueryRowHeight` event handled to change height of the row. Its default value is `false`.
 
 
 
@@ -99,7 +99,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 ### Limitations
 
-1. This event is not supported for DetailsViewGrid.
+1. This event is not supported for `DetailsViewGrid`.
 
 ## Fit the Row Height based on its content
 
@@ -107,11 +107,11 @@ You can fit the row height based on its content in `QueryRowHeight` event handle
 
 `GetAutoRowHeight` method returns `true` when the row height is calculated for record & header rows and returns `false` for other rows. Calculated height based on content set to the `out` parameter and you can assign the calculated height to the `Height` property of `QueryRowHeightEventArgs`.
 
-Below are the parameter to GetAutoRowHeight method, 
+Below are the parameter to `GetAutoRowHeight` method, 
 
-1. `RowIndex` – denotes the index of row in SfDataGrid.
+1. `RowIndex` **–** denotes the index of row in SfDataGrid.
 
-2. `GridRowSizingOptions` – A class with properties to customize the row height calculation.
+2. `GridRowSizingOptions` **–** A class with properties to customize the row height calculation.
 
 
 {% tabs %}
@@ -153,9 +153,9 @@ Here, row heights are customized based on the large text content.
 
 [GridRowSizingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowSizingOptions.html) have the following properties,
 
-1. `ExcludeColumns` – If you want to skips specific column from row height calculation, you can add that columns to[GridRowSizingOptions.ExcludeColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowSizingOptions~ExcludeColumns.html). By default, `GetAutoRowHeight` method calculates the row height based on all columns.
+1. `ExcludeColumns` **–** If you want to skips specific column from row height calculation, you can add that columns to [GridRowSizingOptions.ExcludeColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowSizingOptions~ExcludeColumns.html). By default, `GetAutoRowHeight` method calculates the row height based on all columns.
  
-2. `CanIncludeHiddenColumns` – if you want to consider the hidden columns while calculating row height, you can set[GridRowSizingOptions.CanIncludeHiddenColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowSizingOptions~CanIncludeHiddenColumns.html) as `true`.
+2. `CanIncludeHiddenColumns` **–** If you want to consider the hidden columns while calculating row height, you can set [GridRowSizingOptions.CanIncludeHiddenColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowSizingOptions~CanIncludeHiddenColumns.html) as `true`.
 
 ### Calculate Height based on certain columns
 
@@ -201,7 +201,7 @@ Here `CustomerID` and `Country` columns are excluded from height calculation and
 
 You can reset height of the particular or all rows in View at runtime to get the updated height from `QueryRowHeight` event handler using below methods. You have to call [InvalidateMeasureInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VisualContainer~InvalidateMeasureInfo.html) method of `VisualContainer` to refresh the View.
  
-[InvalidateRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~InvalidateRowHeight.html) – Resets the height of particular row.
+* [InvalidateRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~InvalidateRowHeight.html) **–** Resets the height of particular row.
 
 
 {% tabs %}
@@ -214,7 +214,7 @@ dataGrid.GetVisualContainer().InvalidateMeasureInfo();
 {% endtabs %}
 
 
-[RowHeightManager.Reset](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowHeightManager~Reset.html) – Resets the height for all rows in View.
+* [RowHeightManager.Reset](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowHeightManager~Reset.html) **–** Resets the height for all rows in View.
 
 
 {% tabs %}
@@ -325,7 +325,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 ## Change StackedHeaderRow Height based on its content
 
-By default, auto height is supported for `StackedHeaderRows` in `QueryRowHeight` event. You can also set the auto height to the StackedHeaderRows alone using `QueryRowHeight` event by checking the row index with StackedHeaderRows count.
+By default, auto height is supported for `StackedHeaderRows` in `QueryRowHeight` event. You can also set the auto height to the `StackedHeaderRows` alone using `QueryRowHeight` event by checking the row index with `StackedHeaderRows` count.
 Also you can wrap stacked header text by writing style of TargetType [GridStackedHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html) and set the `TextWrapping` as Wrap as below,
 
 

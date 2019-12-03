@@ -9,11 +9,11 @@ documentation: ug
 
 # CRUD operations in WPF DataGrid (SfDataGrid)
 
-DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/datagrid/editing), [add new row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#built-in-addnewrow), [delete row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#deletion) by pressing delete key.
+DataGrid listens and responds to the CRUD operations such as `add`, `delete` and `data update` (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/datagrid/editing), [add new row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#built-in-addnewrow), [delete row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#deletion) by pressing <kbd>delete</kbd> key.
 
 ## Managing data updates
 
-DataGrid manages the sorting, filtering, grouping and summaries during data updates based on [SfDataGrid.LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) property.
+DataGrid manages the `sorting`, `filtering`, `grouping` and `summaries` during data updates based on [SfDataGrid.LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -258,7 +258,7 @@ Updated
 ### Limitations
 
 * `AllowDataShaping` and `AllowSummaryUpdate` is not supported when you are binding with dynamic data objects.
-* Complex and indexer properties doesn’t support `LiveDataUpdateMode`- `AllowDataShaping` and `AllowSummaryUpdate`.
+* Complex and indexer properties doesn’t support `LiveDataUpdateMode` **-** `AllowDataShaping` and `AllowSummaryUpdate`.
 * `LiveDataUpdateMode` is not supported when `DataTable` is `ItemsSource`.
 
 ## Add new rows
@@ -303,7 +303,7 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 
 ### Customize the newly added row position
 
-SfDataGrid adds new data item from AddNewRow at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. You can customize the newly added data item position by setting [SfDataGrid.NewItemPlaceHolderPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~NewItemPlaceholderPosition.html).
+SfDataGrid adds new data item from `AddNewRow` at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. You can customize the newly added data item position by setting [SfDataGrid.NewItemPlaceHolderPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~NewItemPlaceholderPosition.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -648,7 +648,7 @@ this.dataGrid.AllowDeleting = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can delete record directly in underlying collection also using Remove () or RemoveAt (int index). 
+You can delete record directly in underlying collection also using `Remove ()` or `RemoveAt (int index)`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -666,13 +666,13 @@ You can delete record directly in underlying collection also using Remove () or 
 
 [RecordDeleting](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleting_EV.html) event occurs when the record is being deleted from SfDataGrid. The [RecordDeletingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletingEventArgs.html) provides information to `RecordDeleting` event for deleting the record and it contains the following members.
 
-`Cancel` - Gets or sets a value indicating whether the event should be canceled.
+* `Cancel` - Gets or sets a value indicating whether the event should be canceled.
 
-`OriginalSender` - Gets the original sender from where the event is raised.
+* `OriginalSender` - Gets the original sender from where the event is raised.
 
-`Items` - Gets or sets the items to be removed from the source collection.
+* `Items` - Gets or sets the items to be removed from the source collection.
 
-You can cancel the delete operation through Cancel property in RecordDeleting event.
+You can cancel the delete operation through `Cancel` property in `RecordDeleting` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -695,9 +695,9 @@ void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 
 [RecordDeleted](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RecordDeleted_EV.html) event occurs after the record is deleted. The [RecordDeletedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RecordDeletedEventArgs.html)  of   `RecordDeleted` event contains the following members.
 
-`Items` - Gets the records that were removed from the source collection.
+* `Items` - Gets the records that were removed from the source collection.
 
-`SelectedIndex` - Gets or sets the selected index for the SfDataGrid control.
+* `SelectedIndex` - Gets or sets the selected index for the SfDataGrid control.
 
 ### Handling selection after deleting the record from SfDataGrid
 

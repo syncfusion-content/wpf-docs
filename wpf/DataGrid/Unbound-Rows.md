@@ -10,7 +10,7 @@ documentation: ug
 
 # Unbound Rows in WPF DataGrid (SfDataGrid)
 
-SfDataGrid allows you to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRows.html) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be exported and printed.
+SfDataGrid allows you to add **additional rows** at `top` and also `bottom` of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRows.html) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be exported and printed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -32,9 +32,9 @@ N> [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfu
 
 ## Positioning unbound rows
 
-Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnBoundRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRow~Position.html) and [GridUnBoundRow.ShowBelowSummary](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRow~ShowBelowSummary.html) properties.
+Unbound row can be placed in `top` or `bottom` of the SfDataGrid. Unbound row positioned based on [GridUnBoundRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRow~Position.html) and [GridUnBoundRow.ShowBelowSummary](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRow~ShowBelowSummary.html) properties.
 
-Below table shows the unbound row positioning based on property settings of Position and ShowBelowSummary.
+Below table shows the unbound row positioning based on property settings of `Position` and `ShowBelowSummary`.
 
 <table>
 <tr>
@@ -242,6 +242,22 @@ You can customize the style of unbound row by writing style of TargetType [UnBou
 You can customize the style of unbound row cell by writing style of TargetType [GridUnBoundRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html) or setting [SfDataGrid.UnBoundRowCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowCellStyle.html) property.
 
 {% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <local:UnboundCellStyleConverter x:Key="unboundRowCellStyleConverter"/>
+    <Style TargetType="syncfusion:GridUnBoundRowCell">
+        <Setter Property="FontWeight"  Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource unboundRowCellStyleConverter}}"/>
+    </Style>        
+</Window.Resources>
+
+<syncfusion:SfDataGrid x:Name="dataGrid" 
+                        ItemsSource="{Binding Orders}"
+                        SelectionMode="Multiple">
+    <syncfusion:SfDataGrid.UnBoundRows>
+        <syncfusion:GridUnBoundRow  Position="Top"/>
+    </syncfusion:SfDataGrid.UnBoundRows>                        
+</syncfusion:SfDataGrid>
+{% endhighlight %}
 {% highlight c# %}
 public class UnboundCellStyleConverter : IValueConverter
 {
@@ -263,27 +279,6 @@ public class UnboundCellStyleConverter : IValueConverter
         return value;
     }
 }
-{% endhighlight %}
-{% endtabs %}
-
-<br/>
-
-{% tabs %}
-{% highlight xaml %}
-<Window.Resources>
-    <local:UnboundCellStyleConverter x:Key="unboundRowCellStyleConverter"/>
-    <Style TargetType="syncfusion:GridUnBoundRowCell">
-        <Setter Property="FontWeight"  Value="{Binding RelativeSource={RelativeSource Self}, Converter={StaticResource unboundRowCellStyleConverter}}"/>
-    </Style>        
-</Window.Resources>
-
-<syncfusion:SfDataGrid x:Name="dataGrid" 
-                        ItemsSource="{Binding Orders}"
-                        SelectionMode="Multiple">
-    <syncfusion:SfDataGrid.UnBoundRows>
-        <syncfusion:GridUnBoundRow  Position="Top"/>
-    </syncfusion:SfDataGrid.UnBoundRows>                        
-</syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -530,7 +525,7 @@ dataGrid.UnBoundRowCellRenderers.Add("DatePickerRenderer", new DatePickerRendere
 {% endhighlight %}
 {% endtabs %}
 
-Below code sets the [CellType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs~CellType.html) as DatePickerRenderer.
+Below code sets the [CellType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowEventsArgs~CellType.html) as `DatePickerRenderer`.
 
 
 {% tabs %}
@@ -644,7 +639,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 ### Export unbound rows to Excel
 
-You can export the unbound rows to excel by setting the [ExcelExportingOptions.ExportUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportUnBoundRows.html) property.
+You can export the unbound rows to `Excel` by setting the [ExcelExportingOptions.ExportUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportUnBoundRows.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -655,7 +650,7 @@ excelExportingOption.ExportUnBoundRows = true;
 
 ### Export unbound rows to PDF
 
-You can export the unbound rows to PDF by setting the [PdfExportingOptions.ExportUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportUnBoundRows.html) property.
+You can export the unbound rows to `PDF` by setting the [PdfExportingOptions.ExportUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportUnBoundRows.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -677,7 +672,7 @@ var unboundRow = dataGrid.GetUnBoundRow(1);
 
 ## Merging with Unbound rows
 
-You can merge the unbound row cell by setting the Left, Right, Top and Bottom properties of [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CoveredCellInfo.html) with the help of [GetUnBoundRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~GetUnBoundRow.html) method and RowIndex.
+You can merge the unbound row cell by setting the `Left`, `Right`, `Top` and `Bottom` properties of [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CoveredCellInfo.html) with the help of [GetUnBoundRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridIndexResolver~GetUnBoundRow.html) method and RowIndex.
 
 {% tabs %}
 {% highlight c# %}
@@ -703,9 +698,9 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 ![Displaying unboundRowCell merging in WPF SfDataGrid](Unbound-Rows_images/Unbound-Rows_img10.png)
 
 ## Unbound row for Master-details view
-Master-details view also allows you to add [additional](#_Unbound_Rows) rows to [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) which are **not bound with data object** from underlying data source. 
+Master-details view also allows you to add [additional rows](#_Unbound_Rows) to [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) which are **not bound with data object** from underlying data source. 
 
-You can get the DetailsViewDataGrid using [GridUnBoundRowEventsArgs.OriginalSender](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) of the [QueryUnBoundRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryUnBoundRow_EV.html) event, which fired the event and rendered in UI.
+You can get the `DetailsViewDataGrid` using [GridUnBoundRowEventsArgs.OriginalSender](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) of the [QueryUnBoundRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryUnBoundRow_EV.html) event, which fired the event and rendered in UI.
 
 {% tabs %}
 {% highlight xaml %}

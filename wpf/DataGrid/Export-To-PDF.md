@@ -9,9 +9,9 @@ documentation: ug
 
 # Export to PDF in WPF DataGrid (SfDataGrid)
 
-DataGrid provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and details View while exporting.
+DataGrid provides support to export data to `PDF` file. It also provides support for `grouping`, `filtering`, `sorting`, `paging`, `unbound rows`, `merged cells`, `stacked headers` and `details View` while exporting.
 
-The following assemblies needs to be added for exporting to PDF file. 
+The following assemblies needs to be added for exporting to `PDF` file. 
 
 * Syncfusion.SfGridConverter.WPF
 * Syncfusion.Pdf.Base
@@ -29,7 +29,7 @@ document.Save("Sample.pdf");
 {% endhighlight %}
 {% endtabs %}
 
-N> SfDataGrid exports data to PDF file by using [Essential PDF](http://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](http://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
+N> SfDataGrid exports data to `PDF` file by using [Essential PDF](http://help.syncfusion.com/file-formats/pdf/overview). You can refer [PDF documentation](http://help.syncfusion.com/file-formats/pdf/working-with-document) for manipulating.
 
 ## PDF exporting options
 
@@ -37,7 +37,7 @@ Exporting operation can be customized by passing [PdfExportingOptions](http://he
 
 ### Auto size column widths in PDF
 
-You can export SfDataGrid to PDF by fitting column widths based on its content by setting [AutoColumnWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~AutoColumnWidth.html) property as `true`. 
+You can export SfDataGrid to `PDF` by fitting column widths based on its content by setting [AutoColumnWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~AutoColumnWidth.html) property as `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +50,7 @@ document.Save("Sample.pdf");
 
 ### Auto size row heights in PDF
 
-You can export SfDataGrid to PDF by fitting row heights based on its content by setting [AutoRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~AutoRowHeight.html) property as `true`. 
+You can export SfDataGrid to `PDF` by fitting row heights based on its content by setting [AutoRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~AutoRowHeight.html) property as `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -63,7 +63,7 @@ document.Save("Sample.pdf");
 
 ### Exclude columns while exporting
 
-By default, all the columns (including hidden columns) in SfDataGrid will be exported to PDF. If you want to exclude some columns while exporting to PDF, you can use [ExcludeColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExcludeColumns.html) property in [PdfExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
+By default, all the columns (including hidden columns) in SfDataGrid will be exported to `PDF`. If you want to exclude some columns while exporting to `PDF`, you can use [ExcludeColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExcludeColumns.html) property in [PdfExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -79,7 +79,7 @@ Here, the columns having `CustomerName` and `Country` as MappingName are exclude
 
 ### Export Format
 
-By default, display text only will be exported to PDF. If you want to export the actual value, you need to set [ExportFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportFormat.html) property as `false`. 
+By default, display text only will be exported to `PDF`. If you want to export the actual value, you need to set [ExportFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportFormat.html) property as `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -92,7 +92,7 @@ document.Save("Sample.pdf");
 
 ### Column header on each page
 
-Column headers can be exported on each page by setting [RepeatHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~RepeatHeaders.html) property.
+`Column headers` can be exported on each page by setting [RepeatHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~RepeatHeaders.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -105,7 +105,7 @@ document.Save("Sample.pdf");
 
 ### Export all columns in one page
 
-While exporting to PDF, you can fit all columns on one page by setting [FitAllColumnsInOnePage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~FitAllColumnsInOnePage.html) property as `true`.
+While exporting to `PDF`, you can fit all columns on one page by setting [FitAllColumnsInOnePage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~FitAllColumnsInOnePage.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,7 @@ document.Save("Sample.pdf");
 
 ### Export paging
 
-While exporting data to PDF, if paging is used, current page only will be exported, by default. If you want to export all pages, you need to set [ExportAllPages](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportAllPages.html) property as `true`.
+While exporting data to `PDF`, if paging is used, current page only will be exported, by default. If you want to `export all pages`, you need to set [ExportAllPages](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportAllPages.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -131,7 +131,7 @@ document.Save("Sample.pdf");
 
 ### Exclude groups while exporting
 
-By default, all the groups in dataGrid will be exported to PDF. If you want to export without Groups, you need to set [ExportGroups](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportGroups.html) property as `false`.
+By default, all the groups in dataGrid will be exported to `PDF`. If you want to export without Groups, you need to set [ExportGroups](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportGroups.html) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -144,7 +144,7 @@ document.Save("Sample.pdf");
 
 ### Exclude group Summaries while exporting
 
-By default, group summaries in dataGrid will be exported to PDF. If you want to export without group summaries, you need to set [ExportGroupSummary](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportGroupSummary.html) property as `false`.
+By default, `group summaries` in dataGrid will be exported to `PDF`. If you want to export without group summaries, you need to set [ExportGroupSummary](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportGroupSummary.html) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,7 +157,7 @@ document.Save("Sample.pdf");
 
 ### Exclude table Summaries while exporting
 
-By default, table summaries in dataGrid will be exported to PDF. If you want to export without table summaries, you need to set [ExportTableSummary](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportTableSummary.html) property as `false`.
+By default, `table summaries` in dataGrid will be exported to `PDF`. If you want to export without table summaries, you need to set [ExportTableSummary](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportTableSummary.html) property as `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -170,7 +170,7 @@ document.Save("Sample.pdf");
 
 ### Exporting unbound rows
 
-You can export unbound rows to PDF by setting [ExportUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportUnBoundRows.html) property as `true`.
+You can export `unbound rows` to `PDF` by setting [ExportUnBoundRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportUnBoundRows.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,7 +183,7 @@ document.Save("Sample.pdf");
 
 ### Exporting stacked headers
 
-You can export stacked headers to PDF by setting [ExportStackedHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportStackedHeaders.html) property to `true`.
+You can export `stacked headers` to `PDF` by setting [ExportStackedHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportStackedHeaders.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ document.Save("Sample.pdf");
 
 ### Exporting merged cells
 
-You can export merged cells to PDF by setting [ExportMergedCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportMergedCells.html) property as `true`.
+You can export `merged cells` to `PDF` by setting [ExportMergedCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportMergedCells.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -209,7 +209,7 @@ document.Save("Sample.pdf");
 
 ## Setting Header and Footer
 
-SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while exporting to PDF. This can be achieved by setting [PageHeaderFooterEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~PageHeaderFooterEventHandler.html) in [PdfExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
+SfDataGrid provides a way to display additional content at the `top` (Header) or `bottom` (Footer) of the page while exporting to `PDF`. This can be achieved by setting [PageHeaderFooterEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~PageHeaderFooterEventHandler.html) in [PdfExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
 
 You can insert string, image or any drawing in header and footer in `PdfHeaderFooterEventHandler`. Setting [PdfPageTemplateElement](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfPageTemplateElement.html) to [PdfHeaderFooterEventArgs.PdfDocumentTemplate.Top](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocumentTemplate~Top.html) loads the content at top of the page and setting the `PdfPageTemplateElement` to [PdfHeaderFooterEventArgs.PdfDocumentTemplate.Bottom](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocumentTemplate~Bottom.html) loads the content at bottom of the page.
 
@@ -233,11 +233,11 @@ static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs 
 
 ![WPF DataGrid exported to PDF with Header and Footer](Export-To-PDF_images/Export-To-PDF_img1.png)
 
-Here, `string` is inserted in the header of exported PDF file using [DrawString](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawString.html) method. Similarly, you can insert image, line,etc. using [DrawImage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawImage.html), [DrawLine](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawLine.html) methods respectively. 
+Here, `string` is inserted in the header of exported `PDF` file using [DrawString](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawString.html) method. Similarly, you can insert image, line,etc. using [DrawImage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawImage.html), [DrawLine](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawLine.html) methods respectively. 
 
 ## Change PDF page orientation
 
-You can change the page orientation of PDF while exporting. The default page orientation is Portrait.
+You can change the page orientation of `PDF` while exporting. The default page orientation is `Portrait`.
 
 To change the page orientation, you need to get the exported [PdfGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGrid.html) by using [ExportToPdfGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension~ExportToPdfGrid.html) method and then draw that `PdfGrid` into a [PdfDocument](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocument.html) by changing the [PageSettings.Orientation](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfPageSettings~Orientation.html) property of `PdfDocument`.
 
@@ -261,7 +261,7 @@ document.Save("Sample.pdf");
 
 ## Export DataGrid SelectedItems to PDF
 
-By default, entire grid will be exported to PDF. You can export selected items only by passing `SelectedItems` to [ExportToPdf](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension~ExportToPdf.html) and [ExportToPdfGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension~ExportToPdfGrid.html) methods.
+By default, entire grid will be exported to `PDF`. You can export selected items only by passing `SelectedItems` to [ExportToPdf](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension~ExportToPdf.html) and [ExportToPdfGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension~ExportToPdfGrid.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,7 +278,7 @@ document.Save("Sample.pdf");
 
 ### Save directly to file
 
-After exporting to PDF, you can save exported PDF file directly to file system by using [Save](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocumentBase~Save.html) method.
+After exporting to `PDF`, you can save exported `PDF` file directly to file system by using [Save](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocumentBase~Save.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -291,7 +291,7 @@ You can refer [PDF documentation](http://help.syncfusion.com/file-formats/pdf/lo
 
 ### Save as stream
 
-After exporting to PDF, you can save exported PDF file to stream by using [Save](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocumentBase~Save.html) method.
+After exporting to `PDF`, you can save exported `PDF` file to stream by using [Save](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocumentBase~Save.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -306,7 +306,7 @@ You can refer [PDF documentation](http://help.syncfusion.com/file-formats/pdf/lo
 
 ### Save using File dialog
 
-After exporting to PDF, you can save exported PDF file by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx). 
+After exporting to `PDF`, you can save exported `PDF` file by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx). 
 
 {% tabs %}
 {% highlight c# %}
@@ -338,7 +338,7 @@ if (sfd.ShowDialog() == true)
 
 ## Opening exported PDF without saving
 
-You can view exported PDF document without saving by using [PDFViewerControl](http://help.syncfusion.com/wpf/pdfviewer/overview).
+You can view exported `PDF` document without saving by using [PDFViewerControl](http://help.syncfusion.com/wpf/pdfviewer/overview).
 
 {% tabs %}
 {% highlight c# %}
@@ -359,7 +359,7 @@ window.Show();
 
 ### Styling cells based on CellType in PDF
 
-You can customize the cell styles based on `CellType` by using [ExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportingEventHandler.html).
+You can customize the `cell styles` based on `CellType` by using [ExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportingEventHandler.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -387,7 +387,7 @@ void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 
 ### Embedding fonts in PDF file
 
-By default, some fonts (such as Unicode font) are not supported in PDF. In this case, it is possible to embed the font in PDF document with the help of [PdfTrueTypeFont](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfTrueTypeFont.html). 
+By default, some fonts (such as Unicode font) are not supported in `PDF`. In this case, it is possible to embed the font in `PDF` document with the help of [PdfTrueTypeFont](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfTrueTypeFont.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -413,11 +413,11 @@ Here, new font is created from font file and it is assigned to the `Font` of [Pd
 
 ## Cell customization in PDF while exporting
 
-You can customize the cells in the PDF document by setting [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~CellsExportingEventHandler.html) in [PdfExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
+You can customize the cells in the `PDF` document by setting [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~CellsExportingEventHandler.html) in [PdfExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
 
 ### Customize cell values while exporting
 
-You can customize the call values while exporting to PDF by using [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~CellsExportingEventHandler.html) and [PdfExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
+You can customize the call values while exporting to `PDF` by using [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~CellsExportingEventHandler.html) and [PdfExportingOptions](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -448,7 +448,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 
 ![WPF DataGrid exported PDF File](Export-To-PDF_images/Export-To-PDF_img5.png)
 
-Here, cell values are changed for `IsClosed` column based on custom condition.
+Here, `cell values` are changed for `IsClosed` column based on custom condition.
 
 ### Changing row style in PDF based on data
 
@@ -482,7 +482,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 
 ### Exporting Middle Eastern Languages (Arabic, Hebrew) from SfDataGrid to PDF
 
-By default, [Middle Eastern languages ](http://en.wikipedia.org/wiki/Middle_East)(Arabic, Hebrew) in SfDataGrid are exported as left to right in PDF. You can export them as displayed in SfDataGrid (export from Right to Left) by enabling [RightToLeft](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat~RightToLeft.html) property in [PdfStringFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html) by using [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~CellsExportingEventHandler.html).
+By default, [Middle Eastern languages ](http://en.wikipedia.org/wiki/Middle_East)(Arabic, Hebrew) in SfDataGrid are exported as left to right in `PDF`. You can export them as displayed in SfDataGrid (export from Right to Left) by enabling [RightToLeft](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat~RightToLeft.html) property in [PdfStringFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfStringFormat.html) class and apply the format to the [PdfGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html) by using [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~CellsExportingEventHandler.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -510,7 +510,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 
 ### Exporting images to PDF document
 
-By default, images which is loaded in the [GridTemplateColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) will not be exported to PDF. You can export it by using [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~CellsExportingEventHandler.html) in `PdfExportingOptions`. In `CellsExportingEventHandler`, image is loaded in [PdfGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html).
+By default, images which is loaded in the [GridTemplateColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) will not be exported to `PDF`. You can export it by using [CellsExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~CellsExportingEventHandler.html) in `PdfExportingOptions`. In `CellsExportingEventHandler`, image is loaded in [PdfGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -570,7 +570,7 @@ document.Save("Sample.pdf");
 
 ![WPF DataGrid nested grid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img9.png)
 
-By default, only expanded DetailsViewDataGrids only will be exported to PDF document. If you want to export all the DetailsViewDataGrids, you need to set [ExportAllDetails](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportAllDetails.html) as `true`.
+By default, only expanded `DetailsViewDataGrids` only will be exported to `PDF` document. If you want to export all the `DetailsViewDataGrids`, you need to set [ExportAllDetails](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportAllDetails.html) as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -584,11 +584,11 @@ document.Save("Sample.pdf");
 
 ![WPF Nested DataGrid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img10.png)
 
-Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
+Here, first record only expanded in SfDataGrid. But all the `DetailsViewDataGrid’s` are shown in exported `PDF` document.
 
-You can customize its exporting operation by using [ChildGridExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ChildGridExportingEventHandler.html).
+You can customize its `exporting` operation by using [ChildGridExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ChildGridExportingEventHandler.html).
 
-N> While exporting `DetailsViewDataGrid`, [FitAllColumnsInOnePage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~FitAllColumnsInOnePage.html) is set to ‘true’ internally as horizontal pagination is not supported for `DetailsViewDataGrid`.
+N> While exporting `DetailsViewDataGrid`, [FitAllColumnsInOnePage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~FitAllColumnsInOnePage.html) is set to `true` internally as horizontal pagination is not supported for `DetailsViewDataGrid`.
 
 ### Excluding DetailsViewDataGrid while exporting
 
@@ -637,7 +637,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 
 ![WPF DataGrid exported to PDF file](Export-To-PDF_images/Export-To-PDF_img12.png)
 
-Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to PDF.
+Here, `OrderID` column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to `PDF`.
 
 ### Customizing DetailsViewDataGrid cells
 

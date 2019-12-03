@@ -13,38 +13,38 @@ The SfDataGrid (DataGrid) control for WPF is used to display collection of data 
 
 Following are the key features of SfDataGrid control
 
-* Data binding – Supports to bind different types of data sources.
-* Selection – Support for row and also cell selection.
-* Editing – Interactive support to edit with different column types.
-* Columns – Support for various column types including unbound columns.
-* Sorting – Interactive support to sort the data in SfDataGrid.
-* Grouping – Interactive support to group the data in SfDataGrid.
-* Summaries – Extensive support to show concise information about the individual data columns or groups of rows.
-* Filtering – Interactive support for filtering data as like in Excel.
-* Data validation – Support to validate the data on errors.
-* Data virtualization – Support for different modes of data virtualization such as paging, incremental loading.
-* Master-Detail View – Support to display relational data using hierarchies. 
-* Printing and Exporting – Support to print and also export the data to Excel, PDF.
-* Styling – Extensive support for customizing styles of cells and rows in SfDataGrid.
-* Stacked Headers – Extensive support to show multiple headers called stacked headers.
-* Unbound rows – Support to display unbound rows.
-* Touch support – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
+* **Data binding** **–** Supports to bind different types of data sources.
+* **Selection** **–** Support for row and also cell selection.
+* **Editing** **–** Interactive support to edit with different column types.
+* **Columns** **–** Support for various column types including unbound columns.
+* **Sorting** **–** Interactive support to sort the data in SfDataGrid.
+* **Grouping** **–** Interactive support to group the data in SfDataGrid.
+* **Summaries** **–** Extensive support to show concise information about the individual data columns or groups of rows.
+* **Filtering** **–** Interactive support for filtering data as like in Excel.
+* **Data validation** **–** Support to validate the data on errors.
+* **Data virtualization** **–** Support for different modes of data virtualization such as paging, incremental loading.
+* **Master-Detail View** **–** Support to display relational data using hierarchies. 
+* **Printing and Exporting** **–** Support to print and also export the data to Excel, PDF.
+* **Styling** **–** Extensive support for customizing styles of cells and rows in SfDataGrid.
+* **Stacked Headers** **–** Extensive support to show multiple headers called stacked headers.
+* **Unbound rows** **–** Support to display unbound rows.
+* **Touch support** **–** Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
 
 ## Choose between different Grid's
 
 Syncfusion WPF suite comes up with following different Grid’s namely,
 
 1. [GridControl](https://www.syncfusion.com/wpf-ui-controls/excel-like-grid)
-2. [SfTreeGrid](https://www.syncfusion.com/wpf-ui-controls/treegrid)
-3. [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid)
+2. [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview) and [SfTreeGrid](https://www.syncfusion.com/wpf-ui-controls/treegrid)
+3. [GridDataControl](https://help.syncfusion.com/wpf/classic/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid)
 
 ### GridControl
 
 [GridControl](http://help.syncfusion.com/wpf/grid/overview) is designed based on the cell-oriented architecture that does not make any assumptions about the structure of the data and provides support for Excel-like features. This control can be used when the data is populated in on demand using virtualization or its internal storage. It is not possible to bind the data source directly. 
 
-### GridTreeControl
+### GridTreeControl and SfTreeGrid
 
-The [WPF TreeGrid control](https://help.syncfusion.com/wpf/sftreegrid/getting-started) is a data-oriented control that displays self-relational data in a tree structure user interface like multicolumn treeview. The data can be loaded on demand. You can move items between parent nodes by using the built-in row drag-and-drop functionality. Its rich feature set includes editing with different column types, selection, and node selection with check boxes, sorting, and filtering.
+The [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview) and [SfTreeGrid](https://www.syncfusion.com/wpf-ui-controls/treegrid) control is a data-oriented control that displays self-relational data in a tree structure user interface like multicolumn treeview. The data can be loaded on demand. You can move items between parent nodes by using the built-in row drag-and-drop functionality. Its rich feature set includes editing with different column types, selection, and node selection with check boxes, sorting, and filtering.
 
 ### GridDataControl and SfDataGrid
 
@@ -55,9 +55,9 @@ The [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfD
 
 Both SfDataGrid and GridDataControl almost have the same set of features. But SfDataGrid control offers rich set of features over GridDataControl. When you want cell level customization and excel-like features you can use GridDataControl. When you want performance, customization features like styles & template features specific to WPF, you can use SfDataGrid control. Comparatively, the performance of SfDataGrid control is better than the GridDataControl.
 
-N> GridDataControl is marked as classic control. In future, new features & enhancements will be added only in SfDataGrid. It recommended to use SfDataGrid.
+N> `GridDataControl` is marked as classic control. In future, new features & enhancements will be added only in `SfDataGrid`. It recommended to use `SfDataGrid`.
 
-You can see the list of some of the specific API difference between GridDataControl and SfDataGrid as follows:
+You can see the list of some of the specific API difference between `GridDataControl` and `SfDataGrid` as follows:
 
 <table>
 <tr>
@@ -185,9 +185,9 @@ You can see the list of some of the specific API difference between GridDataCont
 <td>The number of columns is freeze from right.</td>
 </tr>
 </table>
-You can see the list of rich set of features in SfDataGrid over GridDataControl as follows:
+You can see the list of rich set of features in `SfDataGrid` over `GridDataControl` as follows:
 
-Rich set of features in SfDataGrid over GridDataControl.
+Rich set of features in `SfDataGrid` over `GridDataControl`.
 
 <table>
 <tr>
