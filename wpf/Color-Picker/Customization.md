@@ -122,9 +122,7 @@ textblock2.Foreground = new SolidColorBrush(ColorEdit3.InvertColor);
 {% endhighlight %}
 {% endtabs %}
 
-
 ![WPF ColorPicker InvertColor](ScRGB-Color_images/ColorPicker_InvertColor.png)
-
 
 ## ScRGB-Color
 

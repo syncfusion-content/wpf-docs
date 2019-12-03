@@ -11,7 +11,6 @@ documentation: ug
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) and [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html) controls can be displayed in two different modes. They are HSV and RGB modes. The [VisualizationStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~VisualizationStyle.html) property is used to switch between these modes.
 
-
 ## RGB
 
 To set the [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html) as "RGB" for ColorEdit control, use the below code.
@@ -35,8 +34,6 @@ this.Content = colorEdit;
 {% endtabs %}
 
 ![ColorEdit with RGB selection mode](Selection-Mode_images/ColorEdit_RGB_ColorSelectionMode.png)
-
-
 
 To set the [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html) as "RGB" for ColorPicker control, use the below code.
 
@@ -93,7 +90,6 @@ To set the [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Sh
 <syncfusion:ColorPicker  Margin="20" VisualizationStyle="HSV" Name="colorpicker"/><
 
 {% endhighlight %}
-
 {% highlight C# %}
 
 ColorPicker colorPicker = new ColorPicker();
@@ -106,7 +102,6 @@ this.Content = colorPicker;
 {% endtabs %}
 
 ![ColorPicker with HSV selection mode](Selection-Mode_images/ColorPicker_HSV_ColorSelectionMode.png)
-
 
 ## Eye Dropper
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview | Color Picker | WPF | Syncfusion
-description: WPF Color Picker control allows users to select as well as edit solid or gradient brush from a drop-down palette.
+title: About WPF ColorPicker Control | Syncfusion
+description: Learn about introduction of Syncfusion WPF ColorPicker control, its feature and more details.
 platform: wpf
 control: ColorPicker
 documentation: ug
@@ -25,6 +25,3 @@ This section also discusses the WPF ColorEdit control, which is similar to the C
 *  Supports  **ToolTip**  to show the selected color while dragging the picker in ColorEdit control.
 *  Supports **rich set of Themes** to alter the look and feel of the control according to the application needs.
 *  Comes with build-in color palette drop down for ease color selection.
-
-
-

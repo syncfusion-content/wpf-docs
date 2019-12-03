@@ -24,7 +24,6 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-
 ## Adding WPF ColorPicker via designer
 
 1) [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) / [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html) can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
@@ -33,7 +32,6 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
    ![ColorPicker Drag and dropped from ToolBox](Getting-Started_images/ColorPicker_Drag_and_dropped_from_ToolBox.png)
 
-   
 2. Set the properties for the ColorPicker in the design mode, using the Smart Tag feature.
 
 ## Adding WPF ColorPicker via XAML
@@ -119,10 +117,8 @@ grid.Children.Add(colorPicker);
  {% tabs %}
 {% highlight xaml %}
 
-
  <Button  Background="{Binding ElementName=colorPicker, Path=Brush}" ></Button>
 <syncfusion:ColorPicker Name="colorPicker" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
 
 {% endhighlight %}
 {% endtabs %}

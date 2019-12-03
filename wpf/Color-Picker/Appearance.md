@@ -11,9 +11,7 @@ documentation: ug
 
 [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html) can be used as a Standalone editor, which has its own properties just like ColorPicker. 
 
-
  ![ColorEdit Drag and Dropped from toolBox](Getting-Started_images/ColorEdit_Drag_and_Dropped_from_toolBox.png)
-
 
  [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html) consist of delicate properties to edit color value code behind.
 
@@ -63,7 +61,6 @@ Specifies the Alpha or opacity parameter</td>
 
 Header of the ColorPicker can be customized using [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~HeaderTemplate.html) property.
 
-
 {% tabs %}
 {% highlight xaml %}
 
@@ -80,7 +77,6 @@ Header of the ColorPicker can be customized using [HeaderTemplate](https://help.
 {% endtabs %}
 
 ![ColorPicker-HeaderTemplate-WPF](New-User-Interface-Support_images/CustomHeader_ColorPicker.png)
-
 
 ## Setting VisualStyle for ColorPicker and ColorEdit controls  
 
