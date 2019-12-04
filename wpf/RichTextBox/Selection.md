@@ -350,17 +350,15 @@ The SfRichTextBoxAdv control allows you to show the blinking cursor and selectio
 
 * **None** - Don't display neither caret nor selection highlight when the RichTextBox control doesn't have focus.
 
-* **CaretVisible** - Displays the caret (blinking cursor) when the RichTextBox control doesn't have focus.
+* **ShowCaret** - Displays the caret (blinking cursor) when the RichTextBox control doesn't have focus.
 
-* **SelectionHighlightVisible** - Displays the selection highlight when the RichTextBox control doesn't have focus.
-
-* **All** - Displays both the caret (blinking cursor) and selection highlight when the RichTextBox control doesn't have focus.
+* **ShowSelection** - Displays the selection highlight when the RichTextBox control doesn't have focus.
 
 The following code example demonstrates how to display the selection highlight even when the RichTextBox control doesn't have focus.
 
 {% tabs %}
 {% highlight xaml %}
-<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" SelectionVisibilityOnLostFocus="SelectionHighlightVisible"  xmlns:RichTextBoxAdv="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.Wpf" />
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" LostFocusBehavior="ShowSelection"  xmlns:RichTextBoxAdv="clr-namespace:Syncfusion.Windows.Controls.RichTextBoxAdv;assembly=Syncfusion.SfRichTextBoxAdv.Wpf" />
 
 
 {% endhighlight %}
@@ -368,7 +366,7 @@ The following code example demonstrates how to display the selection highlight e
 // Initializes a new instance of RichTextBoxAdv.
 SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 // Displays the selection highlight when the RichTextBox control doesn't have focus.
-richTextBoxAdv. SelectionVisibilityOnLostFocus = SelectionVisibilityOnLostFocus.SelectionHighlightVisible;
+richTextBoxAdv.LostFocusBehavior = LostFocusBehavior.ShowSelection;
 
 
 {% endhighlight %}
@@ -377,7 +375,7 @@ richTextBoxAdv. SelectionVisibilityOnLostFocus = SelectionVisibilityOnLostFocus.
 Dim richTextBoxAdv As New SfRichTextBoxAdv()
 
 ' Displays the selection highlight when the RichTextBox control doesn't have focus.
-richTextBoxAdv.SelectionVisibilityOnLostFocus = SelectionVisibilityOnLostFocus.SelectionHighlightVisible
+richTextBoxAdv.LostFocusBehavior = LostFocusBehavior.ShowSelection
 
 
 {% endhighlight %}
