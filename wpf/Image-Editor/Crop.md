@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image cropping in syncfusion ImageEditor WPF.
-description: Image cropping
+description: This section describes on various ways for selecting the cropping area and also to crop the image with specified bounds SfImageEditor.
 platform: wpf
 control: SfImageEditor
 documentation: ug
@@ -45,7 +45,7 @@ Cropping can be done programmatically using  the following two methods in image 
 
 ### Toggle cropping
 
-Toggle cropping method takes three parameters.
+Toggle cropping method selects the cropping area based on the specified parameters.
 
 ### Crop area selection
 
@@ -67,7 +67,7 @@ The following method gets the ratio as the parameter to select the cropping area
 
 {% highlight C# %} 
 
-editor.ToggleCropping(25,25);
+editor.ToggleCropping(3,1);
 
 {% endhighlight %}
 
