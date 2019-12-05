@@ -96,7 +96,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ### Displaying column summary with title
 
-You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
+You can display summary information with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
 
 Refer [Defining summary for column](#defining-summary-for-column) section to know more about how to defining summary columns.
 
@@ -171,9 +171,9 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns along with title at same time.
+The following screenshot illustrates displaying summary columns with title at same time.
 
-![SummaryColumns along with title in TableSummaryRow for WPF DataGrid](Summaries_images/Summaries_img21.png)
+![SummaryColumns with title in TableSummaryRow for WPF DataGrid](Summaries_images/Summaries_img21.png)
 
 ### Displaying summary for Row
 
@@ -394,7 +394,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 ### Displaying column summary with title
 
-You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
+You can display summary information with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
 
 Refer [Defining summary for column](#defining-summary-for-column-1) section to know more about how to defining summary columns.
 
@@ -468,9 +468,9 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns along with title at same time.
+The following screenshot illustrates displaying summary columns with title at same time.
 
-![SummaryColumns along with title in group summary row for WPF DataGrid](Summaries_images/Summaries_img20.png)
+![SummaryColumns with title in group summary row for WPF DataGrid](Summaries_images/Summaries_img20.png)
 
 ### Displaying summary for Row
 
@@ -642,7 +642,7 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 ### Displaying column summary with title
 
-You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
+You can display summary information with title by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows summary columns. 
 
 Refer [Defining summary for column](#defining-summary-for-column-2) section to know more about how to defining summary columns.
 
@@ -716,9 +716,9 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns along with title at same time.
+The following screenshot illustrates displaying summary columns with title at same time.
 
-![Caption summary columns along with title in WPF DataGrid](Summaries_images/Summaries_img19.png)
+![Caption summary columns with title in WPF DataGrid](Summaries_images/Summaries_img19.png)
 
 ### Displaying summary for Row
 
