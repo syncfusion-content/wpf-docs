@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF ColorPicker Control | Syncfusion
-description: Learn about introduction of Syncfusion WPF ColorPicker control, its feature and more details.
+description: Learn about introduction of Syncfusion WPF ColorPicker control, available features and more details.
 platform: wpf
 control: ColorPicker
 documentation: ug
