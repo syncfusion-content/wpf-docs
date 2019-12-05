@@ -318,9 +318,8 @@ You can add signature in a particular page as `System.Windows.Shapes.Path` by us
 private void button_Click(object sender, RoutedEventArgs e)
 {
 	System.Windows.Shapes.Path signature = new System.Windows.Shapes.Path();
-	//Note: Set your signature appearance as Data for the path here
-
-	//Add signature in the first page of the PDF document at the location: X= 450, Y=750 and with the size: Width=100, Height=100
+	//Note: Set your signature appearance as Data for the path here.
+	//Add signature in the first page of the PDF document at the location: X= 450, Y=750 and with the size: Width=100, Height=100.
 	pdfViewer.AddHandwrittenSignature(signature, 1, new RectangleF(450, 750, 100, 100));
 }
 
@@ -329,9 +328,8 @@ private void button_Click(object sender, RoutedEventArgs e)
 
 Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
     Dim signature As System.Windows.Shapes.Path = New System.Windows.Shapes.Path()
-	'Note: Set your signature appearance as Data for the path here
-
-	'Add signature in the first page of the PDF document at the location: X= 450, Y=750 and with the size: Width=100, Height=100	
+	'Note: Set your signature appearance as Data for the path here.
+	'Add signature in the first page of the PDF document at the location: X= 450, Y=750 and with the size: Width=100, Height=100.
     pdfViewer.AddHandwrittenSignature(signature, 1, New RectangleF(450, 750, 100, 100))
 End Sub
 
@@ -349,15 +347,11 @@ private void button_Click(object sender, RoutedEventArgs e)
 {
 	System.Windows.Shapes.Path signature = new System.Windows.Shapes.Path();
 	//Note: Set your signature appearance using `Data` property of the path here.
-
 	Dictionary<int, List<RectangleF>> bounds = new Dictionary<int, List<RectangleF>>();
-
-	//Add signature bounds for the first page as: X= 450, Y=750, Width=100, Height=100
+	//Add signature bounds for the first page as: X= 450, Y=750, Width=100, Height=100.
 	bounds.Add(1, new List<RectangleF>() { new RectangleF(450, 750, 100, 100) });
-
 	//Add signature bounds for the second page as: X= 350, Y=550, Width=200, Height=200
 	bounds.Add(2, new List<RectangleF>() { new RectangleF(350, 550, 200, 200) });
-
 	pdfViewer.AddHandwrittenSignature(signature, bounds);
 }
 
@@ -367,15 +361,12 @@ private void button_Click(object sender, RoutedEventArgs e)
 Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
     Dim signature As System.Windows.Shapes.Path = New System.Windows.Shapes.Path()
 	'Note: Set your signature appearance using `Data` property of the path here.
-	
     Dim bounds As Dictionary(Of Integer, List(Of RectangleF)) = New Dictionary(Of Integer, List(Of RectangleF))()
-	
-    'Add signature bounds for the first page as: X= 450, Y=750, Width=100, Height=100
+    'Add signature bounds for the first page as: X= 450, Y=750, Width=100, Height=100.
 	bounds.Add(1, New List(Of RectangleF)() From {
         New RectangleF(450, 750, 100, 100)
-    })
-	
-	'Add signature bounds for the second page as: X= 350, Y=550, Width=200, Height=200
+    })	
+	'Add signature bounds for the second page as: X= 350, Y=550, Width=200, Height=200.
     bounds.Add(2, New List(Of RectangleF)() From {
         New RectangleF(350, 550, 200, 200)
     })
