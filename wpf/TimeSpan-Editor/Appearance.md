@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in WPF TimeSpanEdit control | Syncfusion
+title: Appearance-in-WPF-TimeSpanEdit-control | Syncfusion
 description:  Learn about Appearance support in Syncfusion WPF TimeSpanEdit control and more details about the control features.
 platform: wpf
 control: TimeSpanEdit
@@ -11,7 +11,7 @@ documentation: ug
 
 Appearance of TimeSpanEdit can be changed using different Styles.
 
-### Visual Styles
+## Visual Styles
 
 `SkinManager` provides rich and professional look and feel UI for the TimeSpanEdit Control. Some of the available visual styles are as follows:
 
@@ -60,46 +60,46 @@ SkinStorage.SetVisualStyle(timespan,"Blend")
 
 **Blend Theme**
 
-![](Style-images/Blend.png)
+![TimeSpanEdit Blend visual style](Style-images/Blend.png)
 
 
 **Office2007Blue Theme**
 
-![](Style-images/Office2007Blue.png)
+![TimeSpanEdit Office2007Blue visual style](Style-images/Office2007Blue.png)
 
 
 **Office2007Black Theme**
 
-![](Style-images/Office2007Black.png)
+![TimeSpanEdit Office2007Black visual style](Style-images/Office2007Black.png)
 
 
 **Office2007Silver Theme**
 
-![](Style-images/Office2007Silver.png)
+![TimeSpanEdit Office2007Silver visual style](Style-images/Office2007Silver.png)
 
 
 **Office2010Blue Theme**
 
-![](Style-images/Office2010Blue.png)
+![TimeSpanEdit Office2010Blue visual style](Style-images/Office2010Blue.png)
 
 
 **Office2010Black Theme**
 
-![](Style-images/Office2010Black.png)
+![TimeSpanEdit Office2010Black visual style](Style-images/Office2010Black.png)
 
 
 **Office2010Silver Theme**
 
-![](Style-images/Office2010Silver.png)
+![TimeSpanEdit Office2010Silver visual style](Style-images/Office2010Silver.png)
 
 **VS2010 Theme**
 
-![](Style-images/VS2010.png)
+![TimeSpanEdit VS2010 visual style](Style-images/VS2010.png)
 
 **Metro Theme**
 
-![](Style-images/Metro.png)
+![TimeSpanEdit Metro visual style](Style-images/Metro.png)
 
 **Transparent Theme**
 
-![](Style-images/Transparent.png)
+![TimeSpanEdit Transparent visual style](Style-images/Transparent.png)

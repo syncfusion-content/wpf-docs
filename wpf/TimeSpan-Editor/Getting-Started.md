@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting started with WPF TimeSpanEdit control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF TimeSpanEdit control and more details about the control features.
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
@@ -35,7 +35,7 @@ The Syncfusion.Shared.WPF contains the class that handles all UI operations and 
 </tr>
 </table>
 
-# Creating simple application with TimeSpanEdit
+## Creating simple application with TimeSpanEdit
 
 You can create the Windows Forms application with TimeSpanEdit control as follows:
 
@@ -52,7 +52,7 @@ Create a new WPF project in the Visual Studio to display the TimeSpanEdit with t
 
 The `TimeSpanEdit` control can be added to the application by dragging it from the toolbox and dropping it in a designer view. **Syncfusion.Shared.WPF** assembly added automatically in project:
 
-![](Getting-Started_images/img1.png) 
+![ToolBox images](Getting-Started_images/img1.png) 
 
 ## Adding control manually in code
 
@@ -156,7 +156,7 @@ this.Content = timeSpanEdit;
 
 The fields can be formatted to show what the numerals denote i.e. hours minutes or days.
 
-![custom format string images](Custom-format-string_images/Custom-format-string_img1.png)
+![custom format string images](Getting-Started_images/Custom-format-string_img1.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -172,7 +172,7 @@ timeSpanEdit1.Format = @" d 'days' h 'hours'";
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Struture of TimeSpanEdit](Getting-Started_images/Getting-Started_img1.png)
 
 ## TimeSpanEdit members
 
@@ -262,7 +262,7 @@ To view samples:
 
    The Essential Studio Enterprise Edition window is displayed. 
 
-   ![](Getting-Started_images/Getting-Started_img5.png)
+   ![Sample image](Getting-Started_images/Getting-Started_img5.png)
 
 The User Interface edition panel is displayed by default. 
 
@@ -272,10 +272,10 @@ The User Interface edition panel is displayed by default.
 3. Run Online XBAP Samples – View the online XBAP samples  for WPF
 4. Explore Samples-Locate the WPF samples on the disk
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+   ![User interface images](Getting-Started_images/Getting-Started_img6.png)
 
 5. Select Run Locally Installed Samples. The WPF Sample Browser displays.
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+   ![Locally Installed Samples images](Getting-Started_images/Getting-Started_img7.png)
 
 6. On the left pane, go to Editor Controls ->Time Span Edit Demo.

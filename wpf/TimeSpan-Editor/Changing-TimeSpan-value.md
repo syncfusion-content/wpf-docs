@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Changing-the-timespan-value
-description: changing the timespan value
+title: Changing timespan value in WPF TimeSpanEdit control | Syncfusion
+description: Learn about Changing the timespan value in Syncfusion WPF (TimeSpanEdit) control and more details.
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section describes how to edit the value in `TimeSpanEdit` control.
 
-### By Programatically
+### By Programmatically
 
 You can also change the value of timespan using this code.
 

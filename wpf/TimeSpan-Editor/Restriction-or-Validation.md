@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restriction-or-Validation-in-WPF-TimeSpanEdit
-description:  To validation the Min and Max value in TimeSpanEdit.
+title: Restriction or Validation in WPF TimeSpanEdit | Syncfusion
+description:  Learn about Validation support in Syncfusion WPF TimeSpanEdit control and more details about the control features.
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
