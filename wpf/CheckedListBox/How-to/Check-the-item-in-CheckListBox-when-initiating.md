@@ -9,16 +9,12 @@ documentation: ug
 
 # Check the Item in CheckListBox when Initiating
 
-To check the items when initiating the CheckListBox control, use the IsSelected property of ItemContainerStyle_._ The following code illustrates this:
+To check the items when initiating the CheckListBox control, items need to be added in the SelectedItems collection._ The following code illustrates this:
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight c#%}
 
-<syncfusion:CheckListBox.ItemContainerStyle>
-<Style TargetType="syncfusion:CheckListBoxItem">
-<Setter Property="IsSelected" Value="{Binding IsChecked, Mode=TwoWay}"/>
-</Style>
-</syncfusion:CheckListBox.ItemContainerStyle>
+this.ListBox.SelectedItems.Add(this.ListBox.Items[4]);
 
-{% endhighlight  %}
+{%endhighlight%}
 {% endtabs %}
