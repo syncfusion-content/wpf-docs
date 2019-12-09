@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection changed notification | CheckListBox | wpf | Syncfusion
-description: This section describes about Selection changed event in CheckListBox control.
+description: This section describes about Selection changed event and how event could be handled using SelectionChangedEventArgs in CheckListBox control.
 platform: wpf
 control: CheckListBox
 documentation: ug

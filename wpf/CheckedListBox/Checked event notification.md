@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checked event notification | CheckListBox | wpf | Syncfusion
-description: This section describes about Checked event notification in CheckListBox control.
+description: This section describes about Checked event notification in CheckListBox control and how event event could be handled using ItemCheckedEventArgs.
 platform: wpf
 control: CheckListBox
 documentation: ug

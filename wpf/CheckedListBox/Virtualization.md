@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization | CheckListBox | wpf | Syncfusion
-description: This section describes about virtualization in the CheckListBox control.
+description: This section describes how virtualization could be achieved in CheckListBox control.This feature allows the user to load large sets of data without affecting loading or scrolling performance.
 platform: wpf
 control: CheckListBox
 documentation: ug

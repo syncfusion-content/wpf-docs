@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Check the item in CheckListBox when initiating | CheckListBox | wpf | Syncfusion
-description: check the item in checklistbox when initiating? 
+description: This section describes about how to check an item using SelectedItems in CheckListBox on initilization 
 platform: wpf
 control: CheckListBox
 documentation: ug

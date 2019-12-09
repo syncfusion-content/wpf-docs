@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance | CheckListBox | wpf | Syncfusion
-description: This section describes about variuos themes that are available in the CheckListBox control.
+description: This section describes about how to customize CheckListBoxItems,SelectAllItem and GroupItem using their respective templates and various themes that are available in CheckListBox control.
 platform: wpf
 control: CheckListBox
 documentation: ug
