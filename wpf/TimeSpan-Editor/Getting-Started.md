@@ -96,107 +96,83 @@ this.Content = timespan;
 
 {% endtabs %}
 
-## Structure of the TimeSpanEdit control 
+## Value Changed Notification
 
-![](Getting-Started_images/Getting-Started_img1.png)
+The `TimeSpanEdit` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ValueChanged_EV.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
 
-## Appearance
+{%tabs%}
+{% highlight xaml %} 
 
-Appearance of TimeSpanEdit can be changed using different Styles.
-
-### Visual Styles
-
-`SkinManager` provides rich and professional look and feel UI for the TimeSpanEdit Control. Some of the available visual styles are as follows:
-
-* Blend
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* Office2010Blue
-* Office2010Black
-* Office2010Silver
-* VS2010
-* Metro
-* Transparent
-
-The visual style can be applied for the TimeSpanEdit using the `VisualStyle` property of the `SkinStorage`.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<!--TimeSpanEdit Visual Style -->
-<syncfusion:TimeSpanEdit x:Name="Tiem1"  Width="200" Height="23"  Value="10.2:25:52"  syncfusion:SkinStorage.VisualStyle="Blend" />
+<syncfusion:TimeSpanEdit ValueChanged="TimeSpanEdit_ValueChanged"/>
 
 {% endhighlight %}
+{% highlight C# %} 
 
-{% endtabs %}
+TimeSpanEdit timespanedit = new TimeSpanEdit();
+TimeSpanEdit.ValueChanged += new PropertyChangedCallback(TimeSpanEdit_ValueChanged);
+
+{% endhighlight %}
+{%endtabs%}
+
+You can handle the event as follows:
 
 {% tabs %}
+{% highlight C# %}
+
+private void TimeSpanEdit_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    // Get old and new value
+    var newValue = e.NewValue;
+    var oldValue = e.OldValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Min Max Value Restriction
+
+The `Value` of `TimeSpanEdit` can be restricted within maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MaxValue.html) properties. It allows the user to enter the value between `MinValue` and `MaxValue`. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TimeSpanEdit x:Name="timespanedit" Width="100" Height="25" Value="10.11:32:43" MaxValue="21.3:8:5" MinValue="2.4:7:4"/>
+{% endhighlight %}
+{% highlight C# %}
+
+TimeSpanEdit timespanedit = new TimeSpanEdit();
+timespanedit.Width = 100;
+timespanedit.Height = 25;
+//Setting minimum value
+timespanedit.MinValue = 2.4:7:4;
+//Setting maximum value
+timespanedit.MaxValue = 21.3:8:5;
+this.Content = timeSpanEdit;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Formatting the TimeSpanEdit value 
+
+The fields can be formatted to show what the numerals denote i.e. hours minutes or days.
+
+![custom format string images](Custom-format-string_images/Custom-format-string_img1.png)
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:TimeSpanEdit Value="10.2:25:52" Format="d 'days' h 'hours'"  Height="40"/>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
-//Set Visual Style
-SkinStorage.SetVisualStyle(timespan,"Blend");
+timeSpanEdit1.Format = @" d 'days' h 'hours'";
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-'Set Visual Style
-SkinStorage.SetVisualStyle(timespan,"Blend")
-
-{% endhighlight %}
-
 {% endtabs %}
 
-
-**Blend Theme**
-
-![](Style-images/Blend.png)
-
-
-**Office2007Blue Theme**
-
-![](Style-images/Office2007Blue.png)
-
-
-**Office2007Black Theme**
-
-![](Style-images/Office2007Black.png)
-
-
-**Office2007Silver Theme**
-
-![](Style-images/Office2007Silver.png)
-
-
-**Office2010Blue Theme**
-
-![](Style-images/Office2010Blue.png)
-
-
-**Office2010Black Theme**
-
-![](Style-images/Office2010Black.png)
-
-
-**Office2010Silver Theme**
-
-![](Style-images/Office2010Silver.png)
-
-**VS2010 Theme**
-
-![](Style-images/VS2010.png)
-
-**Metro Theme**
-
-![](Style-images/Metro.png)
-
-**Transparent Theme**
-
-![](Style-images/Transparent.png)
-
+![](Getting-Started_images/Getting-Started_img1.png)
 
 ## TimeSpanEdit members
 

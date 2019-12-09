@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Navigation Support
 
-To move from one field to another for example, from day field to minute field keyboard navigation can be used.
+To move from one field to another for example, from day field to minute field keyboard navigation can be used by pressing right arrow key, left arrow key, Space Bar and we can also press advancing character symbols next to field, to navigate one field to another.
 
 ![](Getting-Started_images/k1.png)
 
