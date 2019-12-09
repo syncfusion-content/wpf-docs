@@ -276,6 +276,6 @@ The User Interface edition panel is displayed by default.
 
 5. Select Run Locally Installed Samples. The WPF Sample Browser displays.
 
-   ![Locally Installed Samples images](Getting-Started_images/Getting-Started_img7.png)
+   ![Locally Installed Samples images](Getting-Started_images/Getting-Started_img7.jpg)
 
 6. On the left pane, go to Editor Controls ->Time Span Edit Demo.
