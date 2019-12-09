@@ -69,4 +69,4 @@ Press "h" - you will navigate to `hour` field.
 Press "m" - you will navigate to `Minute` field.
 Press "s" - you will navigate to `Second` field.
 
--- If the format is like this "d'days' h'hours' m'minute' s'second'" and if you press the character key, next to field to navigate the selection to next.
+-- If the format is like "d'days' h'hours' m'minute' s'second'" and you press the character key, next to the field to navigate the selection to the next one.
