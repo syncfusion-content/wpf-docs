@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Watermark in WPF TimeSpanEdit | Syncfusion
-description:  Learn about Watermark in Syncfusion WPF (TimeSpanEdit) control and more details.
+description:  Learn here about Watermark support with Syncfusion WPF TimeSpanEdit control and more details about the control features.
 platform: wpf
 control: TimeSpanEdit
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changing timespan value in WPF TimeSpanEdit control | Syncfusion
-description: Learn about Changing the timespan value in Syncfusion WPF (TimeSpanEdit) control and more details.
+description: Learn here about changing timespan value with Syncfusion WPF TimeSpanEdit control and more details about the control features.
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
@@ -41,9 +41,9 @@ this.Content = timespan;
 
 You can also change the timespan value by using up/down arrow keys by selecting the field or you can be incremented or decremented by scrolling using MouseWheel.
 
-![](Getting-Started_images/scrolling1.png)
+![MouseScroll increment](Getting-Started_images/scrolling1.png)
 
-![](Getting-Started_images/scrolling2.png)
+![MouseScroll Decrement](Getting-Started_images/scrolling2.png)
 
 
 ### Mouse click and drag
@@ -54,9 +54,9 @@ You can increment or decrement the values by enable the `EnableExtendedScrolling
 
 The SpinArrowButtons can be used to increase or decrease the values in any field.
 
-![](Getting-Started_images/sp1.png)
+![Clicking Up button](Getting-Started_images/sp1.png)
 
-![](Getting-Started_images/sp2.png)
+![Clicking Down button](Getting-Started_images/sp2.png)
 
 ## Field navigation
 
