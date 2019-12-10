@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization | CheckListBox | wpf | Syncfusion
-description: This section describes how virtualization could be achieved in CheckListBox control.This feature allows the user to load large sets of data without affecting loading or scrolling performance.
+description: This section describes how large sets of data can be loaded in CheckListBox control using Virtualization.
 platform: wpf
 control: CheckListBox
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Virtualization
 
-UI Viratualization is available in CheckListBox, which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of CheckListBoxItems regardless of items count.
+UI Virtualization is available in CheckListBox, which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of CheckListBoxItems regardless of items count.
 
 * **Model.cs**
 

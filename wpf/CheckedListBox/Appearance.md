@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance | CheckListBox | wpf | Syncfusion
-description: This section describes about how to customize CheckListBoxItems,SelectAllItem and GroupItem using their respective templates and various themes that are available in CheckListBox control.
+description: This section describes about various themes and item customization that are available in CheckListBox control.
 platform: wpf
 control: CheckListBox
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Appearance
 
-## ItemTemplate
+## Item Template
 
-The Itemtemplate is used set DataTemplate which is used to display each item.
+The Item template is used set DataTemplate which is used to display each item.
 
 {% tabs %}
 {% highlight XAML %}
