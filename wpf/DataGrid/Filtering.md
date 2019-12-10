@@ -18,7 +18,7 @@ DataGrid allows you to filter the data programmatically in below ways,
 
 ### View Filtering
 
-View filtering can be achieved by setting [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. You can refresh the view by calling[SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method.
+View filtering can be achieved by setting [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) delegate. You can refresh the view by calling [SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method.
 
 Here, FilterRecords delegate filters the data based on Country name. FilterRecords delegate is assigned to [SfDataGrid.View.Filter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~Filter.html) predicate to filter Country column. After that, [SfDataGrid.View.RefreshFilter](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~RefreshFilter.html) method is called to refresh the records. If the record satisfies the filter conditions, true will be returned. Else false is returned.
  
@@ -48,7 +48,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-N> is not supported when ItemsSource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
+N> View filter is not supported when ItemsSource is [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx).
 
 ### Column Filtering
 
@@ -65,8 +65,8 @@ dataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterT
 
 #### Filter Behavior
 
-* StringTyped - Records are filtered without considering the type and it takes [FilterValue](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterValue.html) type as string.
-* StronglyTyped - Records are filtered by considering the FilterValue underlying type.
+* **StringTyped** - Records are filtered without considering the type and it takes [FilterValue](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~FilterValue.html) type as string.
+* **StronglyTyped** - Records are filtered by considering the FilterValue underlying type.
 
 N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
 
@@ -145,9 +145,9 @@ SfDataGrid lets you to customize the UI Views displayed for particular column or
 
 Below are the options,
 
-1. CheckboxFilter – Displays only Checkbox filter View.
-2. AdvancedFilter – Displays only Advanced filter View.
-3. Both – Displays both filters Views.
+1. **CheckboxFilter** – Displays only Checkbox filter View.
+2. **AdvancedFilter** – Displays only Advanced filter View.
+3. **Both** – Displays both filters Views.
 
 ### Changing filter UI View for Grid
 
@@ -234,9 +234,9 @@ Advanced filter UI provides multiple filter options to filter the data easily. F
 
 Below are the built-in filter types supported.
  
-* Text Filters – Loads various menu options to filter the display text effectively.
-* Number Filters – Loads various menu options to filter the numeric data.
-* Date Filters – Loads various menu options and [DatePicker](https://msdn.microsoft.com/en-in/library/system.windows.controls.datepicker.aspx) to filter DateTime type column.
+* **Text Filters** – Loads various menu options to filter the display text effectively.
+* **Number Filters** – Loads various menu options to filter the numeric data.
+* **Date Filters** – Loads various menu options and [DatePicker](https://msdn.microsoft.com/en-in/library/system.windows.controls.datepicker.aspx) to filter DateTime type column.
 
 <table>
 <tr>
@@ -252,13 +252,13 @@ Date Filters
 </tr>
 <tr>
 <td>
-When the string value is bounded to the {{ '[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }} or the items source is {{ '[dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx)'| markdownify }} ,then `TextFilters` are loaded in {{ '[AdvancedFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
+When the string value is bounded to the {{ '[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }} or the items source is {{ '[dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx)'| markdownify }} ,then <code>TextFilters</code> are loaded in {{ '[AdvancedFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
 </td>
 <td>
-When integer, double, short, decimal, byte or long are bound to the {{ '[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }} then `Number Filters` are loaded in {{ '[AdvancedFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
+When integer, double, short, decimal, byte or long are bound to the {{ '[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }} then <code>Number Filters</code> are loaded in {{ '[AdvancedFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
 </td>
 <td>
-When the DateTime type value is bound to the {{ '[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }}, then `Date Filters` are loaded in {{ '[AdvancedFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
+When the DateTime type value is bound to the {{ '[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)' | markdownify }}, then <code>Date Filters</code> are loaded in {{ '[AdvancedFilterControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)' | markdownify }}.
 </td>
 </tr>
 <tr>
@@ -279,7 +279,9 @@ When the DateTime type value is bound to the {{ '[GridColumn](http://help.syncfu
 <li>Equals</li>
 <li>Does Not Equal</li>
 <li>Begins With</li> 
+<li>Does Not Begin With</li> 
 <li>Ends With</li> 
+<li>Does Not End With</li>
 <li>Contains</li> 
 <li>Does Not Contain</li>
 <li>Empty</li> 
@@ -404,11 +406,11 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
 
-Checkbox Filter with AllowBlankFilters as True
+Checkbox Filter with `AllowBlankFilters` as `True`
 
 ![Filter the NULL values by using the CheckBox Filter view in SfDataGrid WPF](Filtering_images/Filtering_img7.png)
 
-Advanced Filter with AllowBlankFilters as True
+Advanced Filter with `AllowBlankFilters` as `True`
 
 ![Filter the NULL values by using the Advanced Filter view in SfDataGrid WPF](Filtering_images/Filtering_img8.png)
 
@@ -427,11 +429,11 @@ dataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
 
 Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
 
-Checkbox Filter with ImmediateUpdateColumnFilter is True
+Checkbox Filter with `ImmediateUpdateColumnFilter` is `True`
 
 ![Apply the immediate filter in CheckBox Filter view](Filtering_images/Filtering_img9.png)
 
-Advanced Filter with ImmediateUpdateColumnFilter is True
+Advanced Filter with `ImmediateUpdateColumnFilter` is `True`
 
 ![Apply the immediate filter in Advanced Filter view](Filtering_images/Filtering_img10.png)
 
