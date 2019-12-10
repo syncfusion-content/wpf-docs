@@ -193,3 +193,33 @@ Busy Indicator with Cupertino type animation
 
 Busy Indicator with DotCircle type animation
 {:.caption}
+
+![BarChart](AnimationTypes_images/BarChart.png)
+
+Busy Indicator with BarChart type animation
+{:.caption}
+
+![Clock](AnimationTypes_images/Clock.png)
+
+Busy Indicator with Clock type animation
+{:.caption}
+
+![DoubleRing](AnimationTypes_images/DoubleRing.png)
+
+Busy Indicator with DoubleRing type animation
+{:.caption}
+
+![DualRing](AnimationTypes_images/DualRing.png)
+
+Busy Indicator with DualRing type animation
+{:.caption}
+
+![Ripple](AnimationTypes_images/Ripple.png)
+
+Busy Indicator with Ripple type animation
+{:.caption}
+
+![Message](AnimationTypes_images/Message.png)
+
+Busy Indicator with Message type animation
+{:.caption}
