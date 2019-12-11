@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Label Support | SfRangeSlider | wpf | Syncfusion
-description: label support
+description: label support for the Syncfusion wpf range slider controls provide customization for the values which used in the slider.
 platform: wpf
 control: SfRangeSlider 
 documentation: ug
@@ -85,7 +85,7 @@ In the following code example, the CustomCollection property is bound to CustomL
 
 {%endhighlight%}
 
-![](Label-Support_images/Label-Support_img1.png)
+![Label-Support_img1](Label-Support_images/Label-Support_img1.png)
 
 
 
@@ -104,7 +104,7 @@ The default value for [ShowCustomLabels](https://help.syncfusion.com/cr/wpf/Sync
 
 
 
-![](Label-Support_images/Label-Support_img2.png)
+![Label-Support_img2](Label-Support_images/Label-Support_img2.png)
 
 
 
@@ -128,7 +128,7 @@ The following code example illustrates the usage of the LabelPlacement property.
 
 {%endhighlight%}
 
-![](Label-Support_images/Label-Support_img3.png)
+![Label-Support_img3](Label-Support_images/Label-Support_img3.png)
 
 
 
@@ -148,7 +148,7 @@ CustomLabels="{Binding CustomCollection}" LabelPlacement="TopLeft"/>
 
 
 
-![](Label-Support_images/Label-Support_img4.png)
+![Label-Support_img4](Label-Support_images/Label-Support_img4.png)
 
 
 
@@ -168,7 +168,7 @@ The default value of the ShowValueLabels property is false. When set to true, it
 
 {%endhighlight%}
 
-![](Label-Support_images/Label-Support_img5.png)
+![Label-Support_img5](Label-Support_images/Label-Support_img5.png)
 
 
 
@@ -195,7 +195,7 @@ The following code example illustrates the usage of ValuePlacement property. The
 
 {%endhighlight%}
 
-![](Label-Support_images/Label-Support_img6.png)
+![Label-Support_img6](Label-Support_images/Label-Support_img6.png)
 
 
 
@@ -211,7 +211,7 @@ ValuePlacement in Bottom Right
 
 {%endhighlight%}
 
-![](Label-Support_images/Label-Support_img7.png)
+![Label-Support_img7](Label-Support_images/Label-Support_img7.png)
 
 
 
@@ -238,7 +238,7 @@ The following code example illustrates the usage of LabelOrientation property. T
 
 {%endhighlight%}
 
-![](Label-Support_images/Label-Support_img8.png)
+![Label-Support_img8](Label-Support_images/Label-Support_img8.png)
 
 
 
@@ -254,7 +254,7 @@ LabelOrientation as Horizontal
 
 {%endhighlight%}
 
-![](Label-Support_images/Label-Support_img9.png)
+![Label-Support_img9](Label-Support_images/Label-Support_img9.png)
 
 
 
