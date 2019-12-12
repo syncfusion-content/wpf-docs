@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the text input layout control with floating label.
+This section explains the steps required to configure the text input layout control.
 
 ## Adding TextInputLayout reference
 
@@ -17,7 +17,7 @@ Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls
 
 ## Initialize TextInputLayout
 
-Import the Text input layout namespace as demonstrated in the following code snippet.
+Import the text input layout namespace as demonstrated in the following code snippet.
 
 {% tabs %} 
 
