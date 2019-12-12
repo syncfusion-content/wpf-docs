@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains the steps required to configure the text input layout control with floating label.
 
-## Adding ImageEditor reference
+## Adding TextInputLayout reference
 
 Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls) to learn how to add Syncfusion controls in Visual Studio projects through various ways. Refer to this [document](https://help.syncfusion.com/wpf/control-dependencies) to learn about the assemblies required for adding TextInputLayout to your project.
 
