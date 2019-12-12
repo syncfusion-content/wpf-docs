@@ -385,7 +385,7 @@ Below screen shot shows the built-in caption summary of Group.
 
 ### Formatting built-in caption summary
 
-By default, the summary value displayed in CaptionSummaryRow  based on [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionTextFormat.html) property. 
+By default, the summary value displayed in `CaptionSummaryRow`  based on [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionTextFormat.html) property. 
 
 The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 

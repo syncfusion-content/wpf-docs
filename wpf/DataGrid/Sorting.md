@@ -186,7 +186,7 @@ Follow the below steps to add custom comparer to sort using custom logic,
 
 ### Define custom comparer with custom sort logic
 
-In the below code snippet, CustomerName property is compared based on its string length, instead of default string comparison.  
+In the below code snippet, `CustomerName` property is compared based on its string length, instead of default string comparison.  
 
 {% tabs %}
 {% highlight c# %}
@@ -259,7 +259,7 @@ Custom comparer can be added to [SfDataGrid.SortComparers](http://help.syncfusio
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:linq="clr-namespace:Syncfusion.Data;assembly=Syncfusion.Data.WPF"
+<xmlns:linq="clr-namespace:Syncfusion.Data;assembly=Syncfusion.Data.WPF">
 
 <syncfusion:SfDataGrid  x:Name="dataGrid"
                         AllowSorting="True"
