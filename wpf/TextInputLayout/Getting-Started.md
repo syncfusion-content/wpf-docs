@@ -47,7 +47,7 @@ xmlns:inputLayout="http://schemas.syncfusion.com/wpf"
 
 {% endtabs %} 
 
-Then, initialize the itext input layout as demonstrated in the following code snippet.
+Then, initialize the text input layout as demonstrated in the following code snippet.
 
 {% tabs %} 
 
