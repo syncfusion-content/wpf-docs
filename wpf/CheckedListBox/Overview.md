@@ -15,7 +15,8 @@ The CheckListBox control implements a classic list box with check list box items
 
 * Select items on first mouse click
 * Align the check box to the right or left side of the CheckListBox Item
-* Drag items between list boxes
+* Grouping and Sorting support
+* SelectAll support
 * Built-in Visual Styles and Themes support
 
 
