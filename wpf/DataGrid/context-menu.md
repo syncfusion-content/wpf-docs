@@ -9,9 +9,9 @@ documentation: ug
 
 # Context Menu in WPF DataGrid (SfDataGrid)
 
-DataGrid provides an entirely customizable `context menu` to expose the functionality on user interface. You can create `context menu` for different rows in an efficient manner. 
+DataGrid provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
 
-The below code example shows the `context menu` with command bindings.
+The below code example shows the context menu with command bindings.
 
 {% tabs %}
 {% highlight xaml %}
@@ -121,7 +121,7 @@ public class EmployeeInfoViewModel : INotifyPropertyChanged
 
 ## Context menu for record rows
 
-You can set the `context menu` for the data rows by using [SfDataGrid.RecordContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RecordContextMenu.html) property. 
+You can set the context menu for the data rows by using [SfDataGrid.RecordContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RecordContextMenu.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -151,7 +151,7 @@ this.dataGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Delete" });
 ![Context menu added for data rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img1.png)
 
 
-While binding the menu item using `CommandBinding` you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -183,7 +183,7 @@ private static void OnCopyClicked(object obj)
 
 ## Context menu for column header
 
-You can set the `context menu` for the header by using [SfDataGrid.HeaderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderContextMenu.html) property. 
+You can set the context menu for the header by using [SfDataGrid.HeaderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderContextMenu.html) property. 
 {% tabs %}
 {% highlight xaml %}
 
@@ -218,7 +218,7 @@ this.dataGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "BestFit" })
 ![Context menu added for header row in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img2.png)
 
 
-While binding the menu item using `CommandBinding` you can get the parameter as `GridColumnContextMenuInfo` which contains the particular `GridColumn`.
+While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
 
 {% tabs %}
 {% highlight xaml %}
@@ -251,7 +251,7 @@ private static void OnSortAscendingClicked(object obj)
 
 ## Context menu for group drop area
 
-You can set the `context menu` for the `GroupDropArea` by using [SfDataGrid.GroupDropAreaContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropAreaContextMenu.html) property. 
+You can set the context menu for the GroupDropArea by using [SfDataGrid.GroupDropAreaContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropAreaContextMenu.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -279,7 +279,7 @@ this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuItem() { Header = "Clea
 ![Context menu added for GroupDropArea in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img3.png)
 
 
-While binding the menu item using `CommandBinding` you can get the parameter as `GroupDropAreaContextMenuInfo`. 
+While binding the menu item using CommandBinding you can get the parameter as `GroupDropAreaContextMenuInfo`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -310,7 +310,7 @@ private static void OnFullExpandClicked(object obj)
 
 ## Context menu for group item
 
-You can set the `context menu` for the group drop item by using [SfDataGrid.GroupDropItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropItemContextMenu.html) property. 
+You can set the context menu for the group drop item by using [SfDataGrid.GroupDropItemContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropItemContextMenu.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -344,7 +344,7 @@ this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuItem() { Header = "Clea
 ![Context menu added for GroupDropItem in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img4.png)
 
 
-While binding the menu item using `CommandBinding` you can get the parameter as `GridColumnContextMenuInfo` which contains the particular `GridColumn`.
+While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
 
 {% tabs %}
 {% highlight xaml %}
@@ -375,7 +375,7 @@ private static void OnFullCollapseClicked(object obj)
 
 ## Context menu for caption summary wow
 
-You can set the `context menu` for the group caption by using [SfDataGrid.GroupCaptionContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionContextMenu.html) property. 
+You can set the context menu for the group caption by using [SfDataGrid.GroupCaptionContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionContextMenu.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -401,7 +401,7 @@ this.dataGrid.GroupCaptionContextMenu.Items.Add(new MenuItem() { Header = "Colla
 ![Context menu added for group caption rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img5.png)
 
 
-While binding the menu item using `CommandBinding` you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -432,7 +432,7 @@ private static void OnExpandClicked(object obj)
 
 ## Context menu for group summary row
 
-You can set the `context menu` for the group summary by using [SfDataGrid.GroupSummaryContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryContextMenu.html) property. 
+You can set the context menu for the group summary by using [SfDataGrid.GroupSummaryContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryContextMenu.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -456,7 +456,7 @@ this.dataGrid.GroupSummaryContextMenu.Items.Add(new MenuItem() { Header = "Clear
 ![Context menu added for group summary rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img6.png)
 
 
-While binding the menu item using `CommandBinding` you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -489,7 +489,7 @@ private static void OnClearSummaryClicked(object obj)
 
 ## Context menu for table summary row
 
-You can set the `context menu` for the table summary by using [SfDataGrid.TableSummaryContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryContextMenu.html) property. 
+You can set the context menu for the table summary by using [SfDataGrid.TableSummaryContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryContextMenu.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -521,7 +521,7 @@ this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuItem() { Header = "Sum" 
 ![Context menu added for table summary rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img7.png)
 
 
-While binding the menu item using `CommandBinding` you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -566,15 +566,15 @@ private static void OnTotalSummaryCountClicked(object obj)
 
 [GridContextMenuEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs.html) has the following members which provides the information about `GridContextMenuOpening` event.
 
-* [ContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenu.html) **–** Gets the corresponding context menu.
+* [ContextMenu](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenu.html) – Gets the corresponding context menu.
 
-* [ContextMenuInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenuInfo.html) **–** Returns the context menu info based on the row which opens the context menu.
+* [ContextMenuInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenuInfo.html) – Returns the context menu info based on the row which opens the context menu.
 
-* [ContextMenuType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenuType.html) **–** Returns the type of context menu.
+* [ContextMenuType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenuType.html) – Returns the type of context menu.
 
-* [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~RowColumnIndex.html) **–** `RowColumnIndex` of the context menu which is currently going to open. `RowColumnIndex` is updated only for the `RecordContextMenu` and remains left empty.
+* [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~RowColumnIndex.html) – `RowColumnIndex` of the context menu which is currently going to open. `RowColumnIndex` is updated only for the `RecordContextMenu` and remains left empty.
 
-* [Handled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHandledEventArgs~Handled.html) **–** Indicates whether the `GridContextMenuOpening` event is handled or not.
+* [Handled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHandledEventArgs~Handled.html) – Indicates whether the `GridContextMenuOpening` event is handled or not.
 
 ## Customization of context menu
 
@@ -627,7 +627,7 @@ void dataGrid_GridContextMenuOpening(object sender, GridContextMenuEventArgs e)
 
 ### Changing background of Context menu
 
-You can change the appearance of the context menu by customizing the style with TargetType as `ContextMenu`.
+You can change the appearance of the context menu by customizing the style with TargetType as ContextMenu.
 
 {% tabs %}
 {% highlight xaml %}

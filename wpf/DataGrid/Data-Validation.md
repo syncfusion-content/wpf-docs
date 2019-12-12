@@ -17,9 +17,9 @@ Built-in validations through `IDataErrorInfo`, `INotifyDataErrorInfo` and Data a
 
  `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
  
-* `GridValidation.InEdit` **-** display error icon & tips and also doesn’t allows the users to commit the invalid data without allowing users to edit other cells.
-* `GridValidation.InView` **-** displays error icons and tips alone.
-* `GridValidation.None` **-** disables built-in validation support.
+* `GridValidation.InEdit` - display error icon & tips and also doesn’t allows the users to commit the invalid data without allowing users to edit other cells.
+* `GridValidation.InView` - displays error icons and tips alone.
+* `GridValidation.None` - disables built-in validation support.
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
@@ -144,11 +144,11 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 
 ## Built-in validation using Data Annotation
 
-You can validate the data using `Data Annotation Attributes` by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property to `InEdit` or `InView`.
+You can validate the data using **data annotation attributes** by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property to `InEdit` or `InView`.
 
 ### Using different annotations
 
-The numeric type like `int`, `double`, `decimal` properties can be validated using [Range attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx).
+The numeric type like int, double, decimal properties can be validated using [Range attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx).
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ public string CustomerName
 {% endhighlight %}
 {% endtabs %}
 
-The data that has `Heterogeneous` type (combination of number, special character) can be validated using [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx).
+The data that has heterogeneous type (combination of number, special character) can be validated using [RegularExpressions](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.regularexpressionattribute.aspx).
 
 {% tabs %}
 {% highlight c# %}
@@ -937,7 +937,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ### Custom validation through events
 
-`Master-Details View` support to validate the cells and rows using [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) and [RowValidating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) events.
+Master-Details View support to validate the cells and rows using [CurrentCellValidating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) and [RowValidating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) events.
 
 #### Cell Validation
 

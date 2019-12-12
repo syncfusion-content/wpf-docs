@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support to `print` the data displayed in the DataGrid using [SfDataGrid.Print](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Print.html) method. It also provides support to display `print preview` window by calling   [SfDataGrid.ShowPrintPreview](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowPrintPreview.html) method.
+SfDataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Print.html) method. It also provides support to display print preview window by calling   [SfDataGrid.ShowPrintPreview](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowPrintPreview.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -19,7 +19,7 @@ dataGrid.Print();
 
 ## Print Preview
 
-SfDataGrid provides option to display `print preview` to review and customize the document in desired format before printing. `Print preview` window can be opened by calling [SfDataGrid.ShowPrintPreview](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowPrintPreview.html) method.
+SfDataGrid provides option to display print preview to review and customize the document in desired format before printing. Print preview window can be opened by calling [SfDataGrid.ShowPrintPreview](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowPrintPreview.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ dataGrid.ShowPrintPreview();
 
 ## Print Settings
 
-SfDataGrid provides various options to customize `print preview` settings using [SfDataGrid.PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html) property of type [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings.html).
+SfDataGrid provides various options to customize print preview settings using [SfDataGrid.PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html) property of type [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -43,19 +43,19 @@ dataGrid.Print();
 
 ### Print
 
-`Print preview` window has `Print` and `Quick Print` Buttons which needs to be clicked to `print` the SfDataGrid.
+Print preview window has Print and Quick Print Buttons which needs to be clicked to print the SfDataGrid.
 
 ![Print and Quick Print buttons in print preview window of WPF DataGrid](Printing_images/Printing_img2.png)
 
-1. Clicking the `Print` button opens the System print dialog where user can select the `printer` and set the number of copies to be printed.
+1. Clicking the Print button opens the System print dialog where user can select the printer and set the number of copies to be printed.
 
     ![Shows the system print dialog for printing WPF DataGrid](Printing_images/Printing_img3.png)
 
-2. Clicking the `Quick Print` button, directly print the pages using `default printer` without opening the print dialog.
+2. Clicking the Quick Print button, directly print the pages using default printer without opening the print dialog.
 
 ### Scaling
 
-SfDataGrid provides support to `scale` rows or columns or both while printing to fit on one page. `Scaling` options can be changed by setting [PrintSettings.PrintScaleOption](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintScaleOption.html) property.
+SfDataGrid provides support to scale rows or columns or both while printing to fit on one page. Scaling options can be changed by setting [PrintSettings.PrintScaleOption](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintScaleOption.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,13 +65,13 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-`Scaling` options can be changed in `print preview` at runtime by selecting from scaling options drop-down in `print preview`. 
+Scaling options can be changed in print preview at runtime by selecting from scaling options drop-down in print preview. 
 
 ![Print scaling options in print preview window of WPF DataGrid](Printing_images/Printing_img4.png)
 
 ### Column Header on each page
 
-`Column headers` can be printed on each page by enabling [PrintSettings.AllowRepeatHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~AllowRepeatHeaders.html) property while printing.
+Column headers can be printed on each page by enabling [PrintSettings.AllowRepeatHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~AllowRepeatHeaders.html) property while printing.
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ dataGrid.Print();
 
 ### Changing Flow Direction while printing
 
-You can change the `text direction` in print page by using [PrintSettings.PrintFlowDirection](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintFlowDirection.html) property.
+You can change the text direction in print page by using [PrintSettings.PrintFlowDirection](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintFlowDirection.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +95,7 @@ dataGrid.Print();
 
 ### Print with StackedHeaders
 
-SfDataGrid provides support to print the `StackedHeaders` by setting the [PrintSettings.CanPrintStackedHeaders](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~CanPrintStackedHeaders.html) as `true`.
+SfDataGrid provides support to print the StackedHeaders by setting the [PrintSettings.CanPrintStackedHeaders](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~CanPrintStackedHeaders.html) as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,7 +111,7 @@ SfDataGrid provides various options to customize page settings using [SfDataGrid
 
 ### Orientation
 
-SfDataGrid provides support to switch between `Portrait` (more rows but fewer columns) and `Landscape` (more columns but fewer rows) orientation while printing. `Orientation` can be changed by setting [PrintSettings.PrintPageOrientation](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageOrientation.html) Property.
+SfDataGrid provides support to switch between Portrait (more rows but fewer columns) and Landscape (more columns but fewer rows) orientation while printing. Orientation can be changed by setting [PrintSettings.PrintPageOrientation](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageOrientation.html) Property.
 
 {% tabs %}
 {% highlight c# %}
@@ -121,13 +121,13 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-Print `orientation` can be changed in `print preview` at runtime by selecting from orientation drop-down in `print preview`.
+Print orientation can be changed in print preview at runtime by selecting from orientation drop-down in print preview.
 
 ![Page orientation options in print preview window for WPF DataGrid](Printing_images/Printing_img5.png)
 
 ### Page size
 
-SfDataGrid provides support to change the page size. `Page size` can be changed by setting [PrintSettings.PrintPageWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageWidth.html) and [PrintSettings.PrintPageHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeight.html) properties.
+SfDataGrid provides support to change the page size. Page size can be changed by setting [PrintSettings.PrintPageWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageWidth.html) and [PrintSettings.PrintPageHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeight.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -138,13 +138,13 @@ dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-`Page size` can be changed in `print preview` also by selecting from page-size drop-down which displays pre-defined `page sizes`. You can also manually enter custom page width and height in the editors below page-size drop-down and press `OK` to apply the custom width and height for the page.
+Page size can be changed in print preview also by selecting from page-size drop-down which displays pre-defined page sizes. You can also manually enter custom page width and height in the editors below page-size drop-down and press OK to apply the custom width and height for the page.
 
 ![Page size options in print preview window for WPF DataGrid](Printing_images/Printing_img6.png)
 
 ### Page margin
 
-SfDataGrid provides support to change the page margins to adjust content in printed page. `Page margin` can be changed by setting [PrintSettings.PrintPageMargin](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageMargin.html) property.
+SfDataGrid provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting [PrintSettings.PrintPageMargin](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageMargin.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -154,17 +154,17 @@ dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-`Page margin` can be changed in `print preview` also by selecting from pre-defined page margin from margin drop-down. You can manually enter `custom margins` in the editors below margin drop-down and press `OK` to apply the `custom margin`.
+Page margin can be changed in print preview also by selecting from pre-defined page margin from margin drop-down. You can manually enter custom margins in the editors below margin drop-down and press OK to apply the custom margin.
 
 ![Page margin options in print preview window for WPF DataGrid](Printing_images/Printing_img7.png)
 
 ## Setting Header and Footer
 
-SfDataGrid provides a way to display additional content at the `top` (Header) or `bottom` (Footer) of the page while printing. This can be achieved by setting [PrintPageHeaderHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeaderHeight.html) , [PrintPageHeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeaderTemplate.html) , [PrintPageFooterHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterHeight.html)  [PrintPageFooterTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterTemplate.html) properties in [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html).
+SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting [PrintPageHeaderHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeaderHeight.html) , [PrintPageHeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeaderTemplate.html) , [PrintPageFooterHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterHeight.html)  [PrintPageFooterTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterTemplate.html) properties in [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html).
 
 Steps to add page header while printing,
 
-1. Create `DataTemplate` in `Application.Resources`.
+1. Create DataTemplate in `Application.Resources`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -182,7 +182,7 @@ Steps to add page header while printing,
 {% endhighlight %}
 {% endtabs %}
 
-2.Set the above defined `DataTemplate` to [PrintSettings.PrintPageHeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeaderTemplate.html) and assign value for [PrintSettings.PrintPageHeaderHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeaderHeight.html) property also.
+2.Set the above defined DataTemplate to [PrintSettings.PrintPageHeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeaderTemplate.html) and assign value for [PrintSettings.PrintPageHeaderHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageHeaderHeight.html) property also.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,18 +193,18 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-3.Now run the application and you can see `page header` in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterTemplate.html) also.
+3.Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterTemplate.html) also.
 
 ![Customized HeaderTemplate and HeaderHeight in print preview window for WPF DataGrid](Printing_images/Printing_img8.png)
 
 
-N> [PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) is the `DataContext` for [PrintPageControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPageControl.html), where the `header` and `footer` templates are loaded.
+N> [PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) is the `DataContext` for [PrintPageControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPageControl.html), where the header and footer templates are loaded.
 
 ### Printing Current Date time and Page number
 
-You can print current `Date and Time` at each page by setting the  [PrintPageFooterHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterHeight.html)  [PrintPageFooterTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterTemplate.html) properties in [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html).
+You can print current Date and Time at each page by setting the  [PrintPageFooterHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterHeight.html)  [PrintPageFooterTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~PrintPageFooterTemplate.html) properties in [PrintSettings](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~PrintSettings.html).
  
-You can get the `page number` from [PrintPageControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPageControl.html).
+You can get the page number from [PrintPageControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPageControl.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -249,7 +249,7 @@ dataGrid.ShowPrintPreview();
 When you require better performance and don’t want appearance settings (Background and Foreground) to be exported while printing then you can use this printing option by setting [PrintSettings.AllowPrintByDrawing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~AllowPrintByDrawing.html) property to `true`.
  
  
-N> This is default `print mode`. For appearance customization of `rows` and `cells` while printing, refer [printing customization](#printing-customization) section.
+N> This is default print mode. For appearance customization of rows and cells while printing, refer [printing customization](#printing-customization) section.
 
  
 ### Printing using UIElement Rendering
@@ -345,7 +345,7 @@ Unbound row cells
 </table>
 
 
-To provide custom appearance for `Header cells` while printing, [PrintHeaderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintHeaderCell.html) style is customized.
+To provide custom appearance for Header cells while printing, [PrintHeaderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintHeaderCell.html) style is customized.
 
 {% tabs %}
 {% highlight xaml %}
@@ -372,7 +372,7 @@ dataGrid.ShowPrintPreview();
 
 ## Printing Customization
  
-`Printing` operations can be customized by overriding [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html) and its available methods.
+Printing operations can be customized by overriding [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html) and its available methods.
  
 ### Setting different Row Height
  
@@ -415,9 +415,9 @@ dataGrid.ShowPrintPreview();
 
 ### Hiding rows while printing
      
-You can hide specific row by using [GetRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase~GetRowHeight.html) method in [PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) class and setting `height` as 0.
+You can hide specific row by using [GetRowHeight](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase~GetRowHeight.html) method in [PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) class and setting height as 0.
 
-Here, unbound row is excluded while printing. Likewise, you can hide any row based on `record` and `row index`.
+Here, unbound row is excluded while printing. Likewise, you can hide any row based on record and row index.
 
 {% tabs %}
 {% highlight c# %}
@@ -486,7 +486,7 @@ Here, `CustomerName` column is displayed in grid. But it is excluded while print
 
 ### Customize the header text while printing
 
-SfDataGrid allows you to change column `header text` while printing the grid. You can change the Column `header text` by overriding the [GetColumnHeaderText](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetColumnHeaderText.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
+SfDataGrid allows you to change column header text while printing the grid. You can change the Column header text by overriding the [GetColumnHeaderText](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetColumnHeaderText.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -518,13 +518,13 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-Here, `OrderID` column `Header text` is changed as `Order ID` while printing.
+Here, OrderID column Header text is changed as `Order ID` while printing.
 
 ![customize the column header text while printing in WPF DataGrid](Printing_images/Printing_img14.png)
 
 ### Styling Rows when AllowPrintByDrawing enabled
 
-You can apply row styles based on `custom condition` by overriding [OnRenderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~OnRenderCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html) class.
+You can apply row styles based on custom condition by overriding [OnRenderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~OnRenderCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -570,7 +570,7 @@ dataGrid.ShowPrintPreview();
 
 ### Styling Rows when AllowPrintByDrawing disabled
 
-You can apply row styles based on `custom logic` by overriding [GetPrintGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintGridCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
+You can apply row styles based on custom logic by overriding [GetPrintGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintGridCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -674,7 +674,7 @@ Unbound row cells
 
 ### Setup alternate row style when AllowPrintByDrawing enabled
 
-SfDataGrid allows you to apply `alternative row` style by overriding [OnRenderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~OnRenderCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
+SfDataGrid allows you to apply alternative row style by overriding [OnRenderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~OnRenderCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -713,7 +713,7 @@ dataGrid.ShowPrintPreview();
 
 ### Setup alternate row style when AllowPrintByDrawing disabled
 
-SfDataGrid allows you to apply `alternative row` style by overriding [GetPrintGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintGridCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
+SfDataGrid allows you to apply alternative row style by overriding [GetPrintGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintGridCell.html) method in [GridPrintManager](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPrintManager.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -799,7 +799,7 @@ dataGrid.ShowPrintPreview();
 
 ![Column styling with AllowPrintByDrawing enabled while printing in WPF DataGrid](Printing_images/Printing_img19.png)
 
-Here, `OrderID` column `Font Style` and `Background` are changed.
+Here, OrderID column Font Style and Background are changed.
 
 ### Styling Columns when AllowPrintByDrawing disabled
 
@@ -845,7 +845,7 @@ N> [GetColumnWidth](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGr
 
 ### Printing Selected rows
 
-`Selected rows` can be printed by overriding [GetSourceListForPrinting](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase~GetSourceListForPrinting.html) method in [PrintManagerClass](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) class.
+Selected rows can be printed by overriding [GetSourceListForPrinting](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase~GetSourceListForPrinting.html) method in [PrintManagerClass](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -897,11 +897,11 @@ dataGrid.ShowPrintPreview();
 
 ## Creating custom PrintPreview window
 
-You can create `custom print preview` window by adding [PrintPreviewAreaControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html) to preview the view. [PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl~PrintManagerBase.html) will handle the `printing` operations and `PrintPreviewAreaControl` is responsible for preview. 
+You can create custom print preview window by adding [PrintPreviewAreaControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html) to preview the view. [PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl~PrintManagerBase.html) will handle the printing operations and `PrintPreviewAreaControl` is responsible for preview. 
 
 Steps to create `custom print preview` window.
 
-1.Add [PrintPreviewAreaControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html)  and required controls to `print` or `customize` the print settings.
+1.Add [PrintPreviewAreaControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html)  and required controls to print or customize the print settings.
  
 {% tabs %}
 {% highlight xaml %}
@@ -945,7 +945,7 @@ window.ShowDialog();
 {% endhighlight %}
 {% endtabs %}
 
-3.You can `customize print` settings like `scaling`, `Orientation` at runtime by using [PrintPreviewAreaControl.PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl~PrintManagerBase.html) and it will be reflected it `custom print preview` window. 
+3.You can customize print settings like scaling, Orientation at runtime by using [PrintPreviewAreaControl.PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl~PrintManagerBase.html) and it will be reflected it custom print preview window. 
 
 {% tabs %}
 {% highlight c# %}

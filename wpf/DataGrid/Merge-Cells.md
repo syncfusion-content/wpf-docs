@@ -41,7 +41,7 @@ You can span a cell in a row and column by merging the range of cells by setting
  
 ### Merging cells horizontally by fixed range
 
-You can merge the columns in a row by setting the column range using `Left` and `Right` properties of [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html).   
+You can merge the columns in a row by setting the column range using Left and Right properties of [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html).   
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +65,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 
 ### Merging cells vertically by fixed range
 
-You can merge the range of rows for a particular column by setting the row range using `Top` and `Bottom` properties of [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html).
+You can merge the range of rows for a particular column by setting the row range using Top and Bottom properties of [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -89,7 +89,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 
 ### Merging range of cells
 
-You can merge the range of rows and columns by setting the range using `Left`, `Right`, `Top` and `Bottom` properties of [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html).
+You can merge the range of rows and columns by setting the range using Left, Right, Top and Bottom properties of [CoveredCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -402,7 +402,7 @@ void dataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args
 
 ### Export merged cells to Excel
 
-You can export the merged cells to `Excel` by setting the [ExcelExportingOptions.ExportMergedCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportMergedCells.html) property.
+You can export the merged cells to excel by setting the [ExcelExportingOptions.ExportMergedCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions~ExportMergedCells.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -413,7 +413,7 @@ excelExportingOption.ExportMergedCells = true;
 
 ### Export merged cells to PDF
 
-You can export the merged cells to `PDF` by setting the [PdfExportingOptions.ExportMergedCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportMergedCells.html) property.
+You can export the merged cells to PDF by setting the [PdfExportingOptions.ExportMergedCells](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ExportMergedCells.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -424,11 +424,11 @@ pdfExportingOption.ExportMergedCells = true;
 
 ### Limitations
 
-Below are the limitation when using `Cell Merging` in SfDataGrid.
+Below are the limitation when using Cell Merging in SfDataGrid.
 
-1. `Row selection` is not supported.
-2. `Heterogeneous` rows can’t be merged.
-3. Cell loaded with `Template Selector` can’t be merged.
+1. Row selection is not supported.
+2. Heterogeneous rows can’t be merged.
+3. Cell loaded with Template Selector can’t be merged.
 4. [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
 5. With DetailsViewDefinition, Cell merging is not supported if [HideEmptyGridViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HideEmptyGridViewDefinition.html) is `false` or record has DetailsViewDataGrid.
 

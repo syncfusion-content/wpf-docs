@@ -95,7 +95,7 @@ Decides whether the given row index is <code>HeaderTableSummaryRow</code> or not
 
 ## Dispose
 
-The method is associated with `relinquishes` memory and clears all references associated with SfDataGrid. When you call this method, it releases all the reference for SfDataGrid. So the memory it is occupying using the DataGrid is reclaimed. You have to call `SfDataGrid.Dispose` method to release the memory.
+The method is associated with relinquishes memory and clears all references associated with SfDataGrid. When you call this method, it releases all the reference for SfDataGrid. So the memory it is occupying using the DataGrid is reclaimed. You have to call `SfDataGrid.Dispose` method to release the memory.
 
 
 

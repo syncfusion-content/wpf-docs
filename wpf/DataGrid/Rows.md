@@ -273,7 +273,7 @@ You can hide the header row by setting `SfDataGrid.HeaderRowHeight` as `0` (zero
 {% endhighlight %}
 {% endtabs %}
 
-You can also hide the header row of `DetailsViewDataGrid` by setting `HeaderRowHeight` as `0` (zero) to [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html).
+You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHeight` as `0` (zero) to [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html).
 
 
 {% tabs %}
@@ -294,7 +294,7 @@ You can also hide the header row of `DetailsViewDataGrid` by setting `HeaderRowH
 
 ## Freeze panes
 
-DataGrid provides support to freeze the rows and columns at `top` and `bottom` similar to `excel`. You can freeze the rows and columns by setting following properties,
+DataGrid provides support to freeze the rows and columns at top and bottom similar to excel. You can freeze the rows and columns by setting following properties,
 
 <table>
 <tr>
@@ -361,7 +361,7 @@ dataGrid.FrozenRowsCount = 3;
 
 ### Differentiate frozen rows from normal rows
 
-You can differentiate the `frozen rows` and `footer rows` from normal rows by writing style for [VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) and by customizing the `FrozenRow` and `FooterRow` visual states.
+You can differentiate the frozen rows and footer rows from normal rows by writing style for [VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html) and by customizing the `FrozenRow` and `FooterRow` visual states.
 
 
 {% tabs %}
@@ -444,9 +444,9 @@ You can differentiate the `frozen rows` and `footer rows` from normal rows by wr
 ### Disable drag and drop between frozen and non-frozen columns
 
 You can disable the drag and drop between frozen and non-frozen columns by handling [QueryColumnDragging](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryColumnDragging_EV.html) event.
-Using `Reason` property in [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html), you can `cancel` the column dropping operation. 
+Using `Reason` property in [QueryColumnDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html), you can cancel the column dropping operation. 
 
-In the below code, if the Reason is `QueryColumnDraggingReason.Dropping` and the column is dragged from frozen region to non-frozen region or vice versa, you can `cancel` the dropping action by setting `e.Cancel` as `true` in the event.
+In the below code, if the Reason is `QueryColumnDraggingReason.Dropping` and the column is dragged from frozen region to non-frozen region or vice versa, you can cancel the dropping action by setting `e.Cancel` as `true` in the event.
 
 
 {% tabs %}
@@ -485,7 +485,7 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 2. When `AllowFrozenGroupHeaders` is true, frozen rows will not be considered.
 
-3. SfDataGrid has support to freeze the number of rows from `top` or `bottom`. There is no support to freeze a specific row.
+3. SfDataGrid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
 
 N> 1. Header rows, table summary rows and row header are frozen regardless of `FrozenRowsCount` and `FooterRowsCount`.
    2. `FrozenRowsCount` and `FooterRowsCount` values should be less than the number of rows and column visible.

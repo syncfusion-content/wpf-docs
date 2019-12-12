@@ -20,7 +20,7 @@ SfDataGrid arranges the cell and row content using cell and row containers. Belo
 
 ![VisualTree structure of WPF DataGrid](Styles-and-Templates_images/Styles-and-Templates_img31.png)
 
-[RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding `RowGenerator` class and setting it to [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Using this method to customize the row and cell containers allows for customizations that aren’t possible through `styling and conditional styling`.
+[RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding `RowGenerator` class and setting it to [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Using this method to customize the row and cell containers allows for customizations that aren’t possible through styling and conditional styling.
 
 ### Row containers
 Below table shows the different types of grid rows and its container.
@@ -347,7 +347,7 @@ You can download a working demo for the above customization from [here](http://w
 
 ## Editing Style in Visual Studio Designer
 
-You can edit the SfDataGrid style in `Visual Studio Designer` by right clicking it in **design View** and click **Edit Template**.
+You can edit the SfDataGrid style in Visual Studio Designer by right clicking it in design View and click **Edit Template**.
 
 ![Displaying Visual Studio Designer style editing for WPF SfDataGrid](Styles-and-Templates_images/Styles-and-Templates_img2.png)
 
@@ -355,7 +355,7 @@ By clicking **Edit a Copy**, it will generate default template of SfDataGrid in 
 
 ## Editing DataGrid Elements Style in Visual Studio Designer
 
-You can edit the SfDataGrid elements style in `Visual Studio Designer` by right clicking it in **designer view** and click **Edit Additional Templates**.
+You can edit the SfDataGrid elements style in Visual Studio Designer by right clicking it in designer view and click **Edit Additional Templates**.
 
 ![Visual Studio Designer style editing for elements in WPF DataGrid](Styles-and-Templates_images/Styles-and-Templates_img3.png)
 
@@ -378,7 +378,7 @@ You can edit or create new style for the following SfDataGrid elements through *
 15. FilterPopupTemplate
 16. DetailsViewDataGridStyle
 
-N> `Visual Studio Editing` option is available from `Visual Studio 2012` and `Higher` versions only.
+N> Visual Studio Editing option is available from Visual Studio 2012 and higher versions only.
 
 ## Writing Style by TargetType
 
@@ -517,7 +517,7 @@ You can style the alternate rows by setting [SfDataGrid.AlternatingRowStyle](htt
 
 ## Selection
 
-The `foreground` and `background` for the selected row, cell can be customized by setting [SfDataGrid.RowSelectionBrush](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowSelectionBrush.html) and [SfDataGrid.SelectionForegroundBrush](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionForegroundBrush.html) property.
+The foreground and background for the selected row, cell can be customized by setting [SfDataGrid.RowSelectionBrush](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowSelectionBrush.html) and [SfDataGrid.SelectionForegroundBrush](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionForegroundBrush.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -558,7 +558,7 @@ N> `GridColumn.HeaderStyle` takes higher priority than `SfDataGrid.HeaderStyle` 
 
 ### Styling DetailsViewDataGrid header
 
-The header style can be applied to [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) alone by setting [HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property to `DetailsViewDataGrid` in both `XAML` and `code behind`.
+The header style can be applied to [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) alone by setting [HeaderStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property to `DetailsViewDataGrid` in both XAML and code behind.
 
 {% tabs %}
 {% highlight xaml %}
@@ -583,7 +583,7 @@ The header style can be applied to [DetailsViewDataGrid](http://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-If [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is `true`, you can set the header style to `DetailsViewDataGrid` in [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
+If [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGenerateRelations.html) is `true`, you can set the header style to DetailsViewDataGrid in [SfDataGrid.AutoGenerateRelations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -604,7 +604,7 @@ void dataGrid_AutoGeneratingRelations
 
 ### Styling Stacked Headers
 
-The appearance of `stacked header` can be customized by writing style of TargetType [GridStackedHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html).
+The appearance of stacked header can be customized by writing style of TargetType [GridStackedHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -622,7 +622,7 @@ The appearance of `stacked header` can be customized by writing style of TargetT
 
 ### Setting different styles to StackedHeader
 
-You can apply the different style to `stacked header` by overriding the [default renderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) of StackedHeader.
+You can apply the different style to stacked header by overriding the [default renderer](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) of StackedHeader.
 
 {% tabs %}
 {% highlight xaml %}
@@ -704,7 +704,7 @@ this.dataGrid.Columns["OrderID"].CellStyle = null;
 
 ### Styling CaptionSummary cells
 
-The `caption summary cells` can be customized by writing style of TargetType [GridCaptionSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCaptionSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyle.html) property.
+The caption summary cells can be customized by writing style of TargetType [GridCaptionSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCaptionSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -728,7 +728,7 @@ The `caption summary cells` can be customized by writing style of TargetType [Gr
 
 ### Styling CaptionSummary rows
 
-The `caption summary rows` can be customized by writing style of TargetType [GridCaptionSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryRowStyle.html) property.
+The caption summary rows can be customized by writing style of TargetType [GridCaptionSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryRowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -754,7 +754,7 @@ The `caption summary rows` can be customized by writing style of TargetType [Gri
 
 ### Styling GroupSummary cells
 
-The `group summary cells` can be customized by writing style of TargetType [GridGroupSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridGroupSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryCellStyle.html) property.
+The group summary cells can be customized by writing style of TargetType [GridGroupSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridGroupSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryCellStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -778,7 +778,7 @@ The `group summary cells` can be customized by writing style of TargetType [Grid
 
 ### Styling GroupSummary rows
 
-The `group summary rows` can be customized by writing style of TargetType [GridGroupSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRowStyle.html) property.
+The group summary rows can be customized by writing style of TargetType [GridGroupSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -801,7 +801,7 @@ The `group summary rows` can be customized by writing style of TargetType [GridG
 
 ### Styling TableSummary cells
 
-The `table summary cells` can be customized by writing style of TargetType [GridTableSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyle.html) property.
+The table summary cells can be customized by writing style of TargetType [GridTableSummaryCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -823,7 +823,7 @@ The `table summary cells` can be customized by writing style of TargetType [Grid
 
 ### Styling TableSummary rows
 
-The `table summary rows` can be customized by writing style of TargetType [GridTableSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TableSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRowStyle.html) property.
+The table summary rows can be customized by writing style of TargetType [GridTableSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TableSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -845,7 +845,7 @@ The `table summary rows` can be customized by writing style of TargetType [GridT
 
 ### Styling unbound row cells
 
-The `unbound row cells` can be customized by writing style of TargetType [GridUnBoundRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowCellStyle.html) property.
+The unbound row cells can be customized by writing style of TargetType [GridUnBoundRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowCellStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowCellStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -863,7 +863,7 @@ The `unbound row cells` can be customized by writing style of TargetType [GridUn
 
 ### Styling unbound row 
 
-The `unbound rows` can be customized by writing style of TargetType [UnBoundRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowStyle.html) property.
+The unbound rows can be customized by writing style of TargetType [UnBoundRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowStyle](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -881,7 +881,7 @@ The `unbound rows` can be customized by writing style of TargetType [UnBoundRowC
 
 ## Styling AddNewRow
 
-The appearance of `AddNewRow` can customized by writing style of TargetType [AddNewRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AddNewRowControl.html).
+The appearance of AddNewRow can customized by writing style of TargetType [AddNewRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AddNewRowControl.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -902,7 +902,7 @@ The appearance of `AddNewRow` can customized by writing style of TargetType [Add
 
 ## Styling RowHeader
 
-The appearance of `header row` can be customized by writing style of TargetType [HeaderRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.HeaderRowControl.html).
+The appearance of header row can be customized by writing style of TargetType [HeaderRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.HeaderRowControl.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -919,7 +919,7 @@ The appearance of `header row` can be customized by writing style of TargetType 
 
 ### Displaying row index in row header cell
 
-The appearance of `row header` can be customized by writing style of TargetType [RowHeaderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html).
+The appearance of row header can be customized by writing style of TargetType [RowHeaderCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html).
 
 You can also display the row index value in the row header cell by customizing its style.
 
@@ -1008,7 +1008,7 @@ public class GridCellTemplateSelector : DataTemplateSelector
 
 ### Changing HeaderTemplates
 
-You can customize the appearance of particular SfDataGrid `column header` by setting [SfDataGrid.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderTemplate.html) and the particular column header can be customized by setting [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderTemplate.html).
+You can customize the appearance of particular SfDataGrid column header by setting [SfDataGrid.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderTemplate.html) and the particular column header can be customized by setting [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderTemplate.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1034,7 +1034,7 @@ You can customize the appearance of particular SfDataGrid `column header` by set
 
 ### Loading different editor elements in a same column
 
-The different `editor elements` can be loaded in a same template column conditionally based on data by setting [GridTemplateColumn.EditTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplateSelector.html).
+The different editor elements can be loaded in a same template column conditionally based on data by setting [GridTemplateColumn.EditTemplateSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplateSelector.html).
  
 {% tabs %}
 {% highlight xaml %}
@@ -1113,7 +1113,7 @@ The appearance of [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files
  
 ## Styling Sort icon
 
-The appearance of `sort indicator` can be customized by editing the style of [GridHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). Once the `GridHeaderCellControl` style is edited, go to `PART_SortButtonPresenter`.
+The appearance of sort indicator can be customized by editing the style of [GridHeaderCellControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). Once the `GridHeaderCellControl` style is edited, go to PART_SortButtonPresenter.
 
 ### Default GridHeaderCellControl style
 
@@ -1318,8 +1318,8 @@ The appearance of `sort indicator` can be customized by editing the style of [Gr
 {% endhighlight %}
 {% endtabs %}
 
-Totally two paths will be present under the `PART_SortButtonPresenter`. You can change the appearance of `Ascending sort indicator` by customizing first path present in this. 
-Here, `height` and `color` of the `indicator` is customized in the below code example.
+Totally two paths will be present under the PART_SortButtonPresenter. You can change the appearance of Ascending sort indicator by customizing first path present in this. 
+Here, height and color of the indicator is customized in the below code example.
 
 ### Customizing Ascending Sort Indicator
 
@@ -1350,7 +1350,7 @@ Here, `height` and `color` of the `indicator` is customized in the below code ex
 {% endhighlight %}
 {% endtabs %}
 
-And also, you can change the appearance of `Descending sort indicator` by customizing second path present in `PART_SortButtonPresenter`. For example, in the below code example `height` and `color` of the `indicator` is changed.
+And also, you can change the appearance of Descending sort indicator by customizing second path present in PART_SortButtonPresenter. For example, in the below code example height and color of the indicator is changed.
 
 ![Custom ascending sort icon in WPF DataGrid](Styles-and-Templates_images/Styles-and-Templates_img27.png)
 

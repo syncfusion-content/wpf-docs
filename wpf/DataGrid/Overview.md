@@ -13,22 +13,22 @@ The SfDataGrid (DataGrid) control for WPF is used to display collection of data 
 
 Following are the key features of SfDataGrid control
 
-* **Data binding** **–** Supports to bind different types of data sources.
-* **Selection** **–** Support for row and also cell selection.
-* **Editing** **–** Interactive support to edit with different column types.
-* **Columns** **–** Support for various column types including unbound columns.
-* **Sorting** **–** Interactive support to sort the data in SfDataGrid.
-* **Grouping** **–** Interactive support to group the data in SfDataGrid.
-* **Summaries** **–** Extensive support to show concise information about the individual data columns or groups of rows.
-* **Filtering** **–** Interactive support for filtering data as like in Excel.
-* **Data validation** **–** Support to validate the data on errors.
-* **Data virtualization** **–** Support for different modes of data virtualization such as paging, incremental loading.
-* **Master-Detail View** **–** Support to display relational data using hierarchies. 
-* **Printing and Exporting** **–** Support to print and also export the data to Excel, PDF.
-* **Styling** **–** Extensive support for customizing styles of cells and rows in SfDataGrid.
-* **Stacked Headers** **–** Extensive support to show multiple headers called stacked headers.
-* **Unbound rows** **–** Support to display unbound rows.
-* **Touch support** **–** Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
+* **Data binding** – Supports to bind different types of data sources.
+* **Selection** – Support for row and also cell selection.
+* **Editing** – Interactive support to edit with different column types.
+* **Columns** – Support for various column types including unbound columns.
+* **Sorting** – Interactive support to sort the data in SfDataGrid.
+* **Grouping** – Interactive support to group the data in SfDataGrid.
+* **Summaries** – Extensive support to show concise information about the individual data columns or groups of rows.
+* **Filtering** – Interactive support for filtering data as like in Excel.
+* **Data validation** – Support to validate the data on errors.
+* **Data virtualization** – Support for different modes of data virtualization such as paging, incremental loading.
+* **Master-Detail View** – Support to display relational data using hierarchies. 
+* **Printing and Exporting** – Support to print and also export the data to Excel, PDF.
+* **Styling** – Extensive support for customizing styles of cells and rows in SfDataGrid.
+* **Stacked Headers** – Extensive support to show multiple headers called stacked headers.
+* **Unbound rows** – Support to display unbound rows.
+* **Touch support** – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc in touch devices.
 
 ## Choose between different Grid's
 

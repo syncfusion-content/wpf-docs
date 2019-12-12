@@ -9,11 +9,11 @@ documentation: ug
 
 # Paging in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support to manipulate the data using `SfDataPager` control. You can refer [SfDataPager](http://help.syncfusion.com/wpf/sfdatapager) control user guide for more information.
+SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](http://help.syncfusion.com/wpf/sfdatapager) control user guide for more information.
 
 ## Getting started
 
-Follow the below steps to bind `SfDataGrid` with `SfDataPager`.
+Follow the below steps to bind SfDataGrid with SfDataPager.
  
 1. Create `IEnumerable` collection that you want to bind and set it to [SfDataPager.Source](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~source.html) property.
 
@@ -147,9 +147,9 @@ Follow the below steps to load the `ItemsSource` for page in on-demand,
 
 [OnDemandLoadingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs.html) has the following members,
 
-1. `StartIndex` **-** returns the start index based on `PageIndex` (Number of previous pages * PageSize).
+1. `StartIndex` - returns the start index based on `PageIndex` (Number of previous pages * PageSize).
 
-2. `PageSize` **-** denotes the number of records to be displayed in the page.
+2. `PageSize` - denotes the number of records to be displayed in the page.
 
 N> Do not assign `SfDataPager.Source` property while using `OnDemandPaging`.
 
@@ -399,14 +399,14 @@ private void FilterBtn_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-Here, records are filtered based on the `textbox` text in clicking event of `Filter` button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
+Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 5 and it is changed as 3 once the records are filtered.
 ![Shows page count altering for WPF SfDataPager when filtering in WPF DataGrid](Paging_images/Paging_img2.png)
 
 You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/133329/ze/DataPager398566735) from here.
 
 ### Sorting complete collection
 
-You can sort the complete collection with `OnDemandPaging` by using [SfDataGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) event.
+You can sort the complete collection with ‘OnDemandPaging’ by using [SfDataGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanging_EV.html) event.
 In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
 
 
@@ -565,7 +565,7 @@ public class EmployeeInfoRepository
 
 
 ### Limitations
-1. `UI Filtering` is not supported. You can code in application level to filter the data.
-2. `Data processing` operations (Sorting, Grouping) are done only in the current page. 
-3. `Deleting` is not supported. You can code to delete row in application level. 
+1. UI Filtering is not supported. You can code in application level to filter the data.
+2. Data processing operations (Sorting, Grouping) are done only in the current page. 
+3. Deleting is not supported. You can code to delete row in application level. 
 4. Only the navigated pages are exported when `OnDemandPaging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.

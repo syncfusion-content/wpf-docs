@@ -10,9 +10,9 @@ documentation: ug
 
 # Summaries in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support to display the concise information about the data objects using `summaries`. SfDataGrid provides below three different types of `summaryrows`.
+SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 
-* **Table Summary** – Used to display summary information of table either at `top` or `bottom` of SfDataGrid. 
+* **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid. 
 
 * **Group Summary** – used to display summary information of data objects in each group.
 
@@ -24,7 +24,7 @@ Summary rows are represented by using [GridSummaryRow](http://help.syncfusion.co
 
 ## Table Summary
 
-The table summary calculates the summary value over all the records. SfDataGrid allows you to add any number of table summary rows in `top` and `bottom` of SfDataGrid.
+The table summary calculates the summary value over all the records. SfDataGrid allows you to add any number of table summary rows in top and bottom of SfDataGrid.
 
 You can add table summary row in SfDataGrid by adding [GridTableSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRows.html) collection.
 
@@ -157,7 +157,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ### Positioning TableSummaryRow
 
-You can position the table summary either at `top` or `bottom` of SfDataGrid by setting [GridTableSummaryRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow~Position.html) property.
+You can position the table summary either at top or bottom of SfDataGrid by setting [GridTableSummaryRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow~Position.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -237,7 +237,7 @@ this.dataGrid.TableSummaryRows.Add(tablesummaryrow2);
 
 ## Group Summary
 
-Group summary values calculated based on the records in the group and the summary information will be displayed at the `bottom` of each group. You can view the group summary row by expanding the corresponding group header. SfDataGrid allows you to add any number of group summary rows.
+Group summary values calculated based on the records in the group and the summary information will be displayed at the bottom of each group. You can view the group summary row by expanding the corresponding group header. SfDataGrid allows you to add any number of group summary rows.
 
 You can add the group summary rows in SfDataGrid by adding the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) to [SfDataGrid.GroupSummaryRows](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRows.html) collection.
 
@@ -376,7 +376,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 ## Caption Summaries
 
-SfDataGrid provides built-in support for `caption summaries`. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
+SfDataGrid provides built-in support for caption summaries. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
 
 Below screen shot shows the built-in caption summary of Group.
 
@@ -389,9 +389,9 @@ By default, the summary value displayed in `CaptionSummaryRow`  based on [SfData
 
 The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 
-* **ColumnName** **-**   Displays the name of the column currently grouped.
-* **Key**   **-**   Displays the key value of group.
-* **ItemsCount** **-**   Displays the number of items in group.
+* **ColumnName** -   Displays the name of the column currently grouped.
+* **Key**   -   Displays the key value of group.
+* **ItemsCount** -   Displays the number of items in group.
 
 
 ![Built-in caption summary in WPF DataGrid](Summaries_images/Summaries_img8.png)

@@ -118,7 +118,7 @@ this.dataGrid.SearchHelper.SearchForegroundHighlightBrush = Brushes.Red;
 
 ## Move CurrentCell when FindNext and FindPrevious
 
-You can move the current cell along with `FindNext` and `FindPrevious` operation using [MoveCurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~MoveCurrentCell.html) method in selection controller. 
+You can move the current cell along with FindNext and FindPrevious operation using [MoveCurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~MoveCurrentCell.html) method in selection controller. 
 
 
 {% tabs %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Virtualization in WPF DataGrid (SfDataGrid)
 
-SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With `Data virtualization`, [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
+SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
 <table>
 <tr>
@@ -108,9 +108,9 @@ public class ViewModel
 ### Limitations 
 
 1. Data update using [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
-2. `Details View` is not supported.
+2. Details view is not supported.
 3. [AllowFrozenGroupHeaders](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
-4. `DataTable` collection is not supported.
+4. DataTable collection is not supported.
 
 ## Incremental Loading
  
@@ -373,8 +373,8 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Limitations
 
-1. `Deleting` is not supported. You can code to delete row in application level.
-2. `Summary` is not calculated based on [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html).
+1. Deleting is not supported. You can code to delete row in application level.
+2. Summary is not calculated based on [LiveDataUpdateMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html).
 
 ## Paging
 

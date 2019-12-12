@@ -391,7 +391,7 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerName" });
 {% endhighlight %}
 {% endtabs %}
 
-Below is the list of `column types` provided in SfDataGrid.
+Below is the list of column types provided in SfDataGrid.
 
 <table>
 <tr>

@@ -36,7 +36,7 @@ The `SelectionUnit` and [SelectionMode](http://help.syncfusion.com/cr/cref_files
 
 You can disable selection and navigation on particular column by setting [GridColumn.AllowFocus](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowFocus.html) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellActivating_EV.html)  event. 
 
-N> It is not possible to select `header rows`, `table summary rows`, `unbound rows` which are above the table summary row when it’s placed in `top` and the unbound rows which are below table summary rows when it’s placed in `bottom` of SfDataGrid. 
+N> It is not possible to select header rows, table summary rows, unbound rows which are above the table summary row when it’s placed in top and the unbound rows which are below table summary rows when it’s placed in bottom of SfDataGrid. 
 
 ## Multiple Row or Cell Selection
 
@@ -311,7 +311,7 @@ this.dataGrid.UnSelectCell(removeRecord, removeColumn);
 
 ## Selection in Master-Details View
 
-Master-Details View provides support to select one or more rows or cells in [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can’t able to maintain the selection in both `ParentDataGrid` and `DetailsViewDataGrid`. Selection will be maintained either in `ParentDataGrid` or in `DetailsViewDataGrid`.
+Master-Details View provides support to select one or more rows or cells in [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can’t able to maintain the selection in both ParentDataGrid and `DetailsViewDataGrid`. Selection will be maintained either in ParentDataGrid or in `DetailsViewDataGrid`.
 
 ![Selection in Master-Details View in WPF DataGrid](Selection_images/Selection_img9.png)
 
@@ -469,7 +469,7 @@ You can refer [here](http://help.syncfusion.com/wpf/sfdatagrid/master-details-vi
 
 ### Programmatic Selection in DetailsViewDataGrid
 
-You can select data objects while loading `DetailsViewDataGrid` using [DetailsViewLoading](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewLoading_EV.html) event.
+You can select data objects while loading DetailsViewDataGrid using [DetailsViewLoading](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewLoading_EV.html) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1012,7 +1012,7 @@ When the [SelectionMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion
 
 ### Customizing mouse and keyboard behaviors
 
-You can customize `mouse` and `keyboard` behaviors by overriding the `selection controller`. You can refer the section [Customizing Selection Behaviors](https://help.syncfusion.com/wpf/datagrid/selection#customizing-selection-behaviors) to override the selection controller.
+You can customize mouse and keyboard behaviors by overriding the selection controller. You can refer the section [Customizing Selection Behaviors](https://help.syncfusion.com/wpf/datagrid/selection#customizing-selection-behaviors) to override the selection controller.
 
 ## Events Processed on Selection
 
@@ -1020,11 +1020,11 @@ You can customize `mouse` and `keyboard` behaviors by overriding the `selection 
 
 The [CurrentCellActivating](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellActivating_EV.html) event will occurs before moving the current cell to particular cell. [CurrentCellActivatingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs.html) has following members which provides information for `CurrentCellActivatingEvent`.
 
-* [ActivationTrigger](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~ActivationTrigger.html) **–** Returns the reason for moving the current cell.
+* [ActivationTrigger](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~ActivationTrigger.html) – Returns the reason for moving the current cell.
 
-* [CurrentRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~CurrentRowColumnIndex.html) **–** [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.ScrollAxis.RowColumnIndex.html) of the cell where the current cell need to move.
+* [CurrentRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~CurrentRowColumnIndex.html) – [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.ScrollAxis.RowColumnIndex.html) of the cell where the current cell need to move.
 
-* [PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~PreviousRowColumnIndex.html) **–** `RowColumnIndex` of the cell from where the current cell was move.
+* [PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~PreviousRowColumnIndex.html) – `RowColumnIndex` of the cell from where the current cell was move.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1072,11 +1072,11 @@ void dataGrid_CurrentCellActivating(object sender, CurrentCellActivatingEventArg
 
 The [CurrentCellActivated](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellActivated_EV.html) event will occur once the current cell is moved to corresponding cell. [CurrentCellActivatedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs.html) has following members which provides information for `CurrentCellActivated` event.
 
-* [ActivationTrigger](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~ActivationTrigger.html) **–** Returns the reason of the current cell movement.
+* [ActivationTrigger](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~ActivationTrigger.html) – Returns the reason of the current cell movement.
 
-* [CurrentRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~CurrentRowColumnIndex.html) **–** `RowColumnIndex` of the cell where the current cell was moved.
+* [CurrentRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~CurrentRowColumnIndex.html) – `RowColumnIndex` of the cell where the current cell was moved.
 
-* [PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~PreviousRowColumnIndex.html) **–** `RowColumnIndex` of the cell from where the current cell has been moved.
+* [PreviousRowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~PreviousRowColumnIndex.html) – `RowColumnIndex` of the cell from where the current cell has been moved.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1102,9 +1102,9 @@ void dataGrid_CurrentCellActivated(object sender, CurrentCellActivatedEventArgs 
 
 [SelectionChanging](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionChanging_EV.html) event occurs before processing the selection to particular row or cell. This event will be triggered only to the keyboard and mouse interactions. [GridSelectionChangingEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event.  
 
-* [AddedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs~AddedItems.html) **–** Collection of [GridRowInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowInfo.html) or [GridCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellInfo.html) where the selection going to process.
+* [AddedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs~AddedItems.html) – Collection of [GridRowInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowInfo.html) or [GridCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellInfo.html) where the selection going to process.
 
-* [RemovedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs~RemovedItems.html) **–** Collection of `GridRowInfo` or `GridCellInfo` where the selection going to remove.
+* [RemovedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs~RemovedItems.html) – Collection of `GridRowInfo` or `GridCellInfo` where the selection going to remove.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1146,9 +1146,9 @@ private void Datagrid_SelectionChanging(object sender, GridSelectionChangingEven
 
 The [SelectionChanged](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionChanged_EV.html) event will occurs once the selection process has been completed for particular row or cell in SfDataGrid. [GridSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs.html) has following members which provides information for `SelectionChanged` event.
 
-* [AddedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs~AddedItems.html) **–** Collection of [GridRowInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowInfo.html) or [GridCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellInfo.html) where the selection has been processed.
+* [AddedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs~AddedItems.html) – Collection of [GridRowInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowInfo.html) or [GridCellInfo](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellInfo.html) where the selection has been processed.
 
-* [RemovedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs~RemovedItems.html) **–** Collection of `GridRowInfo` or `GridCellInfo` from where the selection has been removed.
+* [RemovedItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs~RemovedItems.html) – Collection of `GridRowInfo` or `GridCellInfo` from where the selection has been removed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1216,15 +1216,15 @@ You can change the current cell border thickness and border color using [Current
 
 You can customize the row selection by editing the control template of corresponding row controls.
 
-* `Data Row / Add New Row` **–** [VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html)
+* `Data Row / Add New Row` – [VirtualizingCellsControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html)
 
-* `CaptionSummary Row` **–** [CaptionSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html)
+* `CaptionSummary Row` – [CaptionSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html)
 
-* `GroupSummary Row` **–** [GroupSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupSummaryRowControl.html)
+* `GroupSummary Row` – [GroupSummaryRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupSummaryRowControl.html)
 
-* `UnBound Row` **–** [UnBoundRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html) 
+* `UnBound Row` – [UnBoundRowControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html) 
 
-* `Filter Row` **-** [FilterRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRowControl.html)
+* `Filter Row` - [FilterRowControl](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRowControl.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1284,11 +1284,11 @@ You can customize the row selection by editing the control template of correspon
 
 You can customize the cell selection by editing the control template of the corresponding cell control.
 
-* `DataRow / AddNewRow` **–** [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html)
+* `DataRow / AddNewRow` – [GridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCell.html)
 
-* `UnBound Row` **–** [GridUnBoundRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
+* `UnBound Row` – [GridUnBoundRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
 
-* `Filter Row` **-** [GridFilterRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
+* `Filter Row` - [GridFilterRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1471,9 +1471,9 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 The SfDataGrid process the selection operations in selection controller. Below are the built-in selection controllers,
 
-* [GridSelectionController](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionController.html) **–** Process selection operations when selection unit as row.
+* [GridSelectionController](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSelectionController.html) – Process selection operations when selection unit as row.
 
-* [GridCellSelectionController](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellSelectionController.html) **–** process selection operations when selection unit as cell or Any.
+* [GridCellSelectionController](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellSelectionController.html) – process selection operations when selection unit as cell or Any.
 
 You can customize the default row selection behaviors by overriding `GridSelectionController` class and set it to `SfDataGrid.SelectionController`.
 
@@ -1674,7 +1674,7 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 ### Avoid CaptionSummaryRow selection on Grouping
 
-While grouping any column, by default the first `CaptionSummaryRow` will be selected when the [CurrentItem](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentItem.html) is null. You can change this action by overriding the [ProcessOnGroupChanged](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridBaseSelectionController~ProcessOnGroupChanged.html) method in selection controller. 
+While grouping any column, by default the first CaptionSummaryRow will be selected when the [CurrentItem](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentItem.html) is null. You can change this action by overriding the [ProcessOnGroupChanged](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridBaseSelectionController~ProcessOnGroupChanged.html) method in selection controller. 
 
 {% tabs %}
 {% highlight c# %}

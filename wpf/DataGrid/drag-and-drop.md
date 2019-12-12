@@ -25,13 +25,13 @@ this.datagrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-While dropping, the dragged records can be added `above` or `below` to the target record based on its drop position
+While dropping, the dragged records can be added above or below to the target record based on its drop position
 
-For example, if you dropped record at the `bottom` of the targeted record, it will be added below the targeted record.
+For example, if you dropped record at the bottom of the targeted record, it will be added below the targeted record.
 
 ![Drag and drop rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img24.png)
 
-If you drop `above` the targeted record, it will be added `above` the targeted record
+If you drop above the targeted record, it will be added above the targeted record
 
 ![Drag and drop rows in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img25.png)
 
@@ -45,12 +45,12 @@ N> The drag selection cannot be performed while the [AllowDraggingRows](https://
 
 ## Drag and drop events
 
-SfDataGrid triggers the following events when drag and drop**:**	
+SfDataGrid triggers the following events when drag and drop:
 
 ### Drag start event
 
 [DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragStart_EV.html)  event occurs when you start to drag the records in datagrid. The [GridRowDragStartEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs.html)  has the following member, which provides information for the `DragStart` event.
-* [DraggingRecords](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs~DraggingRecords.html) **:** Gets the Records which contains the data associated while dragging the rows. 
+* [DraggingRecords](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs~DraggingRecords.html) : Gets the Records which contains the data associated while dragging the rows. 
 
 {% tabs %}
 {% highlight c# %}
@@ -67,11 +67,11 @@ private void RowDragDropController_DragStart(object sender, GridRowDragStartEven
 ### Drag over event
 
 [DragOver](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragOver_EV.html) event occurs continuously while record is dragged within the target SfDataGrid. The [GridRowDragOverEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragOverEventArgs.html) has the following members, which provide information for the `DragOver` event.
-* [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html) **:** Gets a data object that contains the data associated while dragging the rows. 
-* [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html) **:** Gets a value indicating the drop position which is based on dropped location 
+* [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html) : Gets a data object that contains the data associated while dragging the rows. 
+* [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html) : Gets a value indicating the drop position which is based on dropped location 
 * [IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html) **:** Gets a value indicating whether the dragging item is from same DataGrid or not.
-*[ShowDragUI](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragOverEventArgs~ShowDragUI.html) **:** Gets or sets a value indicating the default Dragging UI.  
-* [TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html) **:** Gets a value indicating the target record which is going to drop.
+*[ShowDragUI](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragOverEventArgs~ShowDragUI.html) : Gets or sets a value indicating the default Dragging UI.  
+* [TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html) : Gets a value indicating the target record which is going to drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,10 +88,10 @@ private void RowDragDropController_DragOver(object sender, GridRowDragOverEventA
 ### Drag leave event
 
 [DragLeave](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragLeave_EV.html) event occurs when leave a drag-and-drop operation.The [GridRowDragLeaveEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragLeaveEventArgs.html) has the following members, which provide information for the `DragLeave` event.
-* [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html) **:** Gets a data object that contains the data associated while dragging the rows. 
-* [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html) **:** Gets a value indicating the drop position which is based on dropped location 
-* [IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html) **:** Gets a value indicating whether the dragging item is from same DataGrid or not.
-* [TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html) **:** Gets a value indicating the target record which is going to drop.
+* [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html) : Gets a data object that contains the data associated while dragging the rows. 
+* [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html) : Gets a value indicating the drop position which is based on dropped location 
+* [IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html) : Gets a value indicating whether the dragging item is from same DataGrid or not.
+* [TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html) : Gets a value indicating the target record which is going to drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -108,11 +108,11 @@ private void RowDragDropController_DragLeave(object sender, GridRowDragLeaveEven
 ### Drop event
 
 [Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Drop_EV.html) event occurs when a record is dropping within the target SfDataGrid.The  [GridRowDropEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDropEventArgs.html) has the following members, which provide information for the `Drop` event.
-* [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html) **:** Gets a data object that contains the data associated while dragging the rows. 
-* [DraggingRecords](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs~DraggingRecords.html) **:** Gets the Records which contains the data associated while dragging the rows. 
-* [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html) **:** Gets a value indicating the drop position which is based on dropped location 
-* [IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html) **:** Gets a value indicating whether the dragging item is from same DataGrid or not.
-* [TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html) **:** Gets a value indicating the target record which is going to drop.
+* [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html) : Gets a data object that contains the data associated while dragging the rows. 
+* [DraggingRecords](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragStartEventArgs~DraggingRecords.html) : Gets the Records which contains the data associated while dragging the rows. 
+* [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html) : Gets a value indicating the drop position which is based on dropped location 
+* [IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html) : Gets a value indicating whether the dragging item is from same DataGrid or not.
+* [TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html) : Gets a value indicating the target record which is going to drop.
 
 {% tabs %}
 {% highlight c# %}
@@ -129,10 +129,10 @@ private void RowDragDropController_Drop(object sender, GridRowDropEventArgs e)
 ### Dropped event
 
 [Dropped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Dropped_EV.html) event occurs when a record is dropping within the target SfDataGrid.The [GridRowDroppedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDroppedEventArgs.html) has the following members, which provide information for the `Drop` event.
-* [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html) **:** Gets a data object that contains the data associated while dragging the rows. 
-* [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html) **:** Gets a value indicating the drop position which is based on dropped location 
-* [IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html) **:** Gets a value indicating whether the dragging item is from same DataGrid or not.
-* [TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html) **:** Gets a value indicating the target record which is going to drop.
+* [Data](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~Data.html) : Gets a data object that contains the data associated while dragging the rows. 
+* [DropPosition](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~DropPosition.html) : Gets a value indicating the drop position which is based on dropped location 
+* [IsFromOutSideSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~IsFromOutSideSource.html) : Gets a value indicating whether the dragging item is from same DataGrid or not.
+* [TargetRecord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropEventArgsBase~TargetRecord.html) : Gets a value indicating the target record which is going to drop.
 
 {% tabs %}
 {% highlight c# %}
