@@ -9,7 +9,7 @@ documentation: ug
 
 # CRUD operations in WPF DataGrid (SfDataGrid)
 
-DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/datagrid/editing), [add new row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#built-in-addnewrow), [delete row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#deletion) by pressing <kbd>delete</kbd> key.
+DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/wpf/datagrid/editing), [add new row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#built-in-addnewrow), [delete row](https://help.syncfusion.com/wpf/datagrid/data-manipulation#deletion) by pressing <kbd>Delete</kbd> key.
 
 ## Managing data updates
 
