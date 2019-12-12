@@ -13,7 +13,7 @@ This section explains you the steps required to populate the Chart with data, he
 
 To get start quickly with WPF Chart, you can check on this video:
 <style>#WPFChartVideoTutorial{width : 90% !important; height:400px !important }</style>
-<iframe id='WPFChartVideoTutorial' src='https://youtu.be/5b8nEevQPC8'></iframe>
+<iframe id='WPFChartVideoTutorial' src='https://www.youtube.com/embed/5b8nEevQPC8'></iframe>
 
 ## Adding Chart Reference
 

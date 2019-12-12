@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for the Syncfusion ImageEditor.
-description: Getting start with simple application using SfImageEditor in WPF.
+description: This section describes in step by step on how to get start with simple application using SfImageEditor in WPF in detail.
 platform: wpf
 control: SfImageEditor
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to load an image to the image editor control. It has a built-in toolbar that helps in performing various editing operations such as flip, crop, rotate, save, annotating with shapes and text, zoom, and pan.
+This section explains the steps required to load an image to the image editor control. It has a built-in toolbar that helps in performing various editing operations such as flip, crop, rotate, save, annotating with shapes, text, path (i.e. free hand drawing), zoom, and pan.
 
 ## Adding ImageEditor reference
 
@@ -30,6 +30,18 @@ xmlns:editor="clr-namespace:Syncfusion.UI.Xaml.ImageEditor;assembly=Syncfusion.S
 {% highlight C# %} 
 
 using Syncfusion.UI.Xaml.ImageEditor;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+You can either use the below schemas or the above mentioned namespace to refer the ImageEditor control in xaml.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+xmlns:editor="http://schemas.syncfusion.com/wpf"
 
 {% endhighlight %}
 
