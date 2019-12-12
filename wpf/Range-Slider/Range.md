@@ -9,11 +9,11 @@ documentation: ug
 
 # Range 
 
-The SfRangeSlider control supports to select range of value using two Thumbs.  
+The SfRangeSlider control provides support to select the range of value using two thumbs.  
 
 ## ShowRange  
 
-When ShowRange property is set to true, two Thumbs are placed in the track. One thumb is used to update the start of the range selection and another thumb is used to update the end of the range selection.  
+When ShowRange property is set to true, two thumbs are placed in the track. One thumb is used to update the start of the range selection and another thumb is used to update the end of the range selection.  
 
 {%highlight xaml%}
 
@@ -56,7 +56,7 @@ Gets or sets the end value of the range end.
 
 ## Drag Selected Range
 
-The `AllowRangeDrag` API allows the user to adjust the range in the Range Slider and to drag the range without changing the start and end ranges individually. The default value for `AllowRangeDrag` is false.
+The `AllowRangeDrag` API allows the users to adjust the range in the Range Slider and drag the range without changing the start and end ranges individually. The default value for `AllowRangeDrag` is false.
 
 {% tabs %}
 
