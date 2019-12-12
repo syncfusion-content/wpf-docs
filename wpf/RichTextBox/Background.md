@@ -41,6 +41,9 @@ richTextBoxAdv.Background = new SolidColorBrush(Color.FromRgb(102, 153, 204))
 Pages layout
 ![Pages layout](Image_images/control_page.PNG)
 
+Continuous layout
+![Continuous layout](Image_images/continous_noBackground.PNG)
+
 Block layout
 The block layout always inherits the control background color.
 ![Bolck layout](Image_images/Control_background_block.PNG)
@@ -86,11 +89,7 @@ richTextBoxAdv.OverridesDocumentBackground = true
 {% endtabs %}
 
 Continuous layout:
-With inheriting the control background
 ![Continuous layout](Image_images/continous_layout.PNG)
-
-Without inheriting the control background
-![Continuous layout](Image_images/continous_noBackground.PNG)
 
 ## Setting Background for Document Pages
 
