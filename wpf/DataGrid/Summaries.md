@@ -175,7 +175,7 @@ The following screenshot illustrates displaying summary columns with title at sa
 
 The following are the limitations of displaying column summary along with title at same time for TableSummaryRow:
 
-*Shows column summary along with title for frozen column only for frozencolumncount is lesser than title column count when frozencolumn defined case. 
+*Shows column summary along with title for frozen column only for [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is lesser than `GridSummaryRow.TitleColumnCount` when frozen column defined case. 
 *Does not shows column summary with title at same column.
 
 ### Displaying summary for Row
@@ -475,7 +475,7 @@ The following screenshot illustrates displaying summary columns with title at sa
 
 The following are the limitations of displaying column summary along with title at same time for GroupSummaryRow:
 
-*Shows column summary along with title for frozen column only for frozencolumncount is lesser than title column count when frozencolumn defined case. 
+*Shows column summary along with title for frozen column only for [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is lesser than `GridSummaryRow.TitleColumnCount` when frozen column defined case. 
 *Does not shows column summary with title at same column.
 
 ### Displaying summary for Row
@@ -726,7 +726,7 @@ The following screenshot illustrates displaying summary columns with title at sa
 
 The following are the limitations of displaying column summary along with title at same time for CaptionSummaryRow:
 
-*Shows column summary along with title for frozen column only for frozencolumncount is lesser than title column count when frozencolumn defined case. 
+*Shows column summary along with title for frozen column only for [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is lesser than `GridSummaryRow.TitleColumnCount` when frozen column defined case. 
 *Does not shows column summary with title at same column. 
 
 ### Displaying summary for Row
