@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AnimationTypes | Busy Indicator | wpf | Syncfusion
-description: Syncfusion SfBusyIndicator control provides thirty-two different types of Animation support in WPF platform.
+description: Syncfusion SfBusyIndicator control provides thirty different types of Animation support in WPF platform.
 platform: wpf
 control: Busy Indicator
 documentation: ug
