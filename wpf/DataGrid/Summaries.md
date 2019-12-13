@@ -710,9 +710,10 @@ Used for custom summaries
 </tr>
 </table>
 
-## Calculate summaries for selected records
+## Calculate summary for selected rows
 
 SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the `SfDataGrid.SummaryCalculationUnit` or `GridSummaryRow.CalculationUnit` property.
+This is applicable for all type of summary rows such as table, caption and group summary.
 
 In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
 
@@ -721,7 +722,6 @@ In the below code snippet, the summaries for selected records are calculated for
   <syncfusion:SfDataGrid x:Name="sfDataGrid" 
                         ItemsSource="{Binding Path=Orders}"
                         SelectionMode="Multiple"
-                        SummaryCalculationUnit="AllRows"
                         AutoGenerateColumns="True">
      <syncfusion:SfDataGrid.TableSummaryRows>
          <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Price for all records:{UnitPrice}">
@@ -745,7 +745,6 @@ In the below code snippet, the summaries for selected records are calculated for
 
 {% endhighlight %}
 {% highlight c# %}
- this.sfDataGrid.SummaryCalculationUnit = SummaryCalculationUnit.AllRows;
 
 GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow()
 {
