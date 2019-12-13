@@ -17,8 +17,6 @@ The various elements of DateTimeEdit are illustrated in the following screenshot
 
 ![Structure of WPF DateTimeEdit with Calendar](Getting-Started_images/wpf-datetimeedit-with-calendar.png)
 
-![Structure of WPF DateTimeEdit with Clock](Getting-Started_images/wpf-datetimeedit-with-clock.png)
-
 ## Assembly deployment
 
 Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#datetimeedit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
@@ -62,7 +60,7 @@ To add the DateTimeEdit manually in XAML, follow these steps:
         Title="MainWindow" Height="450" Width="800">
 
 <Grid Name="grid">
-    <syncfusion:DateTimeEdit Name="dateTimeEdit" Height="25" Width="200" />
+    <syncfusion:DateTimeEdit Name="dateTimeEdit" Height="25" Width="200"/>
 </Grid>
 
 </Window>
@@ -115,8 +113,6 @@ grid.Children.Add(dateTimeEdit);
 
 ![overview of WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-overview.png)
 
-N> Add **Syncfusion.SfSkinManager.WPF** and **Syncfusion.Themes.Office2016Colorful.WPF** assemblies to get the above DateTimeEdit UI. You can find more details regarding the list of available built-in themes and the assemblies needs to be referred in the following [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) documentation.
-
 ## Setting date time value
 
 You can set the date using the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property of DateTimeEdit.
@@ -126,7 +122,7 @@ You can set the date using the [DateTime](https://help.syncfusion.com/cr/wpf/Syn
 {% highlight XAML %}
 
 <!--Setting date -->
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/05/2010" Pattern="LongDate"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/05/2010"/>
 
 {% endhighlight %}
 
@@ -143,7 +139,7 @@ dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/SettingDate)
 
-### Date time value changed 
+## Value changed notification
 
 The DateTimeEdit notifies that the value is changed through the [DateTimeChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTimeChanged_EV.html) event. You can use the **OldValue** and **NewValue** properties to get the old and new date time value in the **DateTimeChanged** event.
 
@@ -162,54 +158,7 @@ private void DateTimeEdit_DateTimeChanged(DependencyObject d, DependencyProperty
 
 {% endtabs %}
 
-## Date time format
-
-You can define the format to display the date value in the DateTimeEdit using its [DateTimeFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DateTimeFormat.html) property.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DateTimeEdit_sample"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib"
-        x:Class="DateTimeEdit_sample.MainWindow"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="323" Width="384">
-    <Grid>
-        <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate">
-            <syncfusion:DateTimeEdit.DateTimeFormat>
-                <global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>
-            </syncfusion:DateTimeEdit.DateTimeFormat>
-        </syncfusion:DateTimeEdit>
-    </Grid>
-</Window>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
-dateTimeEdit.Width = 200;
-dateTimeEdit.Height = 25;
-dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
-dateTimeEdit.Pattern = DateTimePattern.ShortDate;
-dateTimeEdit.DateTimeFormat = new DateTimeFormatInfo()
-{
-	ShortDatePattern = "MM/dd/yy hh:mm:ss"
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Setting date time format in WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-format.png)
-
-## Date time pattern
+## Applying built-in pattern
 
 You can change the date-time pattern using the [Pattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property of the DateTimeEdit. The DateTimeEdit control supports the following DateTime format:
 
@@ -230,7 +179,8 @@ You can change the date-time pattern using the [Pattern](https://help.syncfusion
 {% highlight XAML %}
 
 <!--Setting ShortDate Pattern-->
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                         DateTime="07/15/2010" Pattern="ShortDate"/>
 
 {% endhighlight %}
 
@@ -245,27 +195,63 @@ dateTimeEdit.Pattern = DateTimePattern.ShortDate;
 
 ![Setting date time pattern in WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-pattern.png)
 
-## Editing date time
+## Applying custom pattern
 
-The date-time value in the DateTimeEdit can be edited by two ways as follows.
-
-* Default Editing
-* Mask Editing
-
-Editing modes can be changed using the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property of DateTimeEdit. The following code example demonstrates how to type and select date values in the empty DateTimeEdit text box by setting the **CanEdit** property as true.
+You can also set the custom pattern for displaying the date in the DateTimeEdit control by using the [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) property. 
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit Name="dateTimeEdit" Pattern="ShortDate" Height="25" Width="200" IsEmptyDateEnabled="True" CanEdit="True">
-</syncfusion:DateTimeEdit>
+<Grid x:Name="grid">
+    <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                             DateTime="07/15/2010" Pattern="CustomPattern" 
+                             CustomPattern="MM**dd**yy hh:mm:ss"/>
+ </Grid>                         
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-//Setting predefined ShortDate pattern
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
+
+public MainWindow()
+{
+    InitializeComponent();
+    dateTimeEdit.Width = 200;
+    dateTimeEdit.Height = 25;
+    dateTimeEdit.DateTime = new DateTime(2019, 07, 15);
+    dateTimeEdit.Pattern = DateTimePattern.CustomPattern;
+
+    //Setting Custom Pattern
+    dateTimeEdit.CustomPattern = "MM**dd**yy hh:mm:ss";
+    this.grid.Children.Add(dateTimeEdit);
+}
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Setting custom pattern in WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-custom-pattern.png)
+
+N>[CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) support can be enabled by setting the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property to the DateTimePattern.CustomPattern.
+
+## Editing date time
+
+The **DateTimeEdit** control provides support for editing DateTime using text box. It supports both free flow editing and mask based editing. Editing modes can be changed using the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property of DateTimeEdit. The following code example demonstrates free flow editing in the DateTimeEdit by setting the **CanEdit** property as true.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DateTimeEdit Name="dateTimeEdit" Height="25" Width="200" 
+                         DateTime="07/15/2010" CanEdit="True"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+// Enabling editing mode in DateTimeEdit by setting CanEdit property as true.
 dateTimeEdit.CanEdit = true;
 
 {% endhighlight %}
@@ -276,14 +262,16 @@ dateTimeEdit.CanEdit = true;
 
 ## Restrict date range
 
-You can define the start and end dates by setting the [MinDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) and [MaxDateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) properties of the DateTimeEdit.
+Prevents users from selecting a date and time in a particular range by specifying [minimum](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MinDateTime.html) and [maximum](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~MaxDateTime.html) dates in DateTimeEdit control.
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <!--Setting date range -->
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/05/2010" MinDateTime="07/01/2010" MaxDateTime="07/28/2010" Pattern="LongDate"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                         DateTime="07/05/2010" MinDateTime="07/01/2010" 
+                         MaxDateTime="07/28/2010"/>
 
 {% endhighlight %}
 
@@ -301,14 +289,15 @@ dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 28);
 
 ## Watermark for null value
 
-You can set watermark to the content using the [NoneDateText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~NoneDateText.html) property of DateTimeEdit when its value is null.
+The DateTimeEdit control provides support to display a hint information using watermark text when the selected date is null. In addition, it also provides support to define null DateTime value. You can customize the watermark text using the [NoneDateText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~NoneDateText.html) property of DateTimeEdit.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<!--Setting ShortDate Pattern-->
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" CanEdit="True" Height="25" Width="200" NoneDateText="No date is selected" IsEmptyDateEnabled="True" NullValue="{x:Null}"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"
+                         NoneDateText="No date is selected" NullValue="{x:Null}"
+                         IsEmptyDateEnabled="True" CanEdit="True"/>
 
 {% endhighlight %}
 
@@ -323,3 +312,5 @@ dateTimeEdit.NoneDateText = "No date is selected";
 {% endtabs %}
 
 ![WPF DateTimeEdit watermark text](Getting-Started_images/wpf-datetimeedit-watermark.png)
+
+N> The [NullValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~NullValue.html) support in the DateTimeEdit control can be enabled only when setting the [IsEmptyDateEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsEmptyDateEnabled.html) property to `true`.
