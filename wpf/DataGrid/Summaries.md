@@ -788,6 +788,12 @@ Below code, applies `SummaryCalculationUnit.AllRows` for SfDataGrid and `Calcula
 
 ![Calculate summaries for selected records in WPF SfDataGrid](Summaries_images/Summaries_img19.png)
 
+N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
+
+### Limitation
+
+`SummaryCalculationUnit.SelectedRows` or `SummaryCalculationUnit.Mixed` will not be considered for cell selection.
+
 ## Custom summaries
 
 
