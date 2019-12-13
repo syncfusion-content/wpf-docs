@@ -195,7 +195,7 @@ public class SearchHelperExt : SearchHelper
 
 ### Search only selected columns
 
-You can search only selected columns by overriding `SearchCell` method of `SearchHelper`. In the `SearchCell` method, based on MappingName you can skip the columns that you don’t want to search. 
+You can search only selected columns by overriding `SearchCell` method of `SearchHelper`. In the `SearchCell` method, based on `MappingName` you can skip the columns that you don’t want to search. 
 
 In the below code, except `Quantity` column other columns are gets excluded from search. 
 
@@ -230,7 +230,7 @@ public class SearchHelperExt : SearchHelper
 
 ### Select the record based on the SearchText
 
-You can select the records which contains the search text by using GetSearchedRecord method. 
+You can select the records which contains the search text by using `GetSearchedRecord` method. 
 
 {% tabs %}
 {% highlight c# %}
@@ -270,7 +270,7 @@ public class ComboBoxColumnExt : GridComboBoxColumn
 {% endhighlight %}
 {% endtabs %}
 
-You can change the display element of each column by creating new renderer for the particular column and assign to corresponding cell type in SfDataGrid.CellRenderers.
+You can change the display element of each column by creating new renderer for the particular column and assign to corresponding cell type in `SfDataGrid.CellRenderers`.
 
 {% tabs %}
 {% highlight c# %}

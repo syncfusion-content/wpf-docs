@@ -130,9 +130,9 @@ checkListBox.Items.Add(checkListBoxItem2);
 {% endhighlight %}
 {% endtabs %}
 
-## Binding to data
+## Adding items using ItemSource
 
-You can populate the CheckListBox control using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. The [DisplayMemberPath](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.itemscontrol.displaymemberpath) property is used to the name or path of the property displayed for each the data item in the control.
+You can populate the CheckListBox control using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. The [DisplayMemberPath](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.itemscontrol.displaymemberpath) property is used to the name or path of the property displayed for each data item in the control.
 
 * **Model.cs**
 
@@ -192,8 +192,32 @@ public class ViewModel
 </Window.DataContext>
 
 <!--Adding CheckListBox control -->
-<syncfusion:CheckListBox x:Name="checkListBox" IsCheckOnFirstClick="True" Width="120" Height="150" DisplayMemberPath="Name" ItemsSource="{Binding CheckListItems}" />
+<syncfusion:CheckListBox x:Name="checkListBox" Width="120" Height="150" DisplayMemberPath="Name" ItemsSource="{Binding CheckListItems}" />
 {% endhighlight %}
 {% endtabs %}
  
 ![wpf check list box items](Getting-Started_images/wpf-checklistbox-control-items.png)
+
+
+## Check or Uncheck items
+
+The CheckListBox items can be checked or unchecked in a single click either by clicking the checkbox or clicking the content of the item. Also, the checked state of an item can be handled using the Space key or Enter key.
+
+
+## Checked event notification
+
+When the checked state of an item is changed, it will be notified using the  [ItemChecked] event.A CheckListBoxItem can be checked either by using any one of the following ways: 
+
+a. Using keyboard
+b. Using mouse
+c. Programmatically
+
+## Get list of checked items
+
+The CheckListBox control gets all the selected items using the[SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) property and gets single item by using the[SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItem.html) property.
+
+
+
+
+
+
