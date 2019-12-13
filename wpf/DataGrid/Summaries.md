@@ -718,7 +718,7 @@ In the below code snippet, the summaries for selected records are calculated for
 
 {% tabs %}
 {% highlight xaml %}
-  <syncfusion:SfDataGrid x:Name="sfdatagrid" 
+  <syncfusion:SfDataGrid x:Name="sfDataGrid" 
                         ItemsSource="{Binding Path=Orders}"
                         SelectionMode="Multiple"
                         SummaryCalculationUnit="AllRows"
@@ -745,7 +745,7 @@ In the below code snippet, the summaries for selected records are calculated for
 
 {% endhighlight %}
 {% highlight c# %}
- this.sfdatagrid.SummaryCalculationUnit = SummaryCalculationUnit.AllRows;
+ this.sfDataGrid.SummaryCalculationUnit = SummaryCalculationUnit.AllRows;
 
 GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow()
 {
@@ -782,8 +782,8 @@ GridTableSummaryRow tableSummaryRow2 = new GridTableSummaryRow()
     }
 };
 
-this.sfdatagrid.TableSummaryRows.Add(tableSummaryRow1);
-this.sfdatagrid.TableSummaryRows.Add(tableSummaryRow2);
+this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1);
+this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2);
 
 {% endhighlight %}
 {% endtabs %}
