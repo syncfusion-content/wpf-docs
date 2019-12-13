@@ -98,7 +98,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
 
-Refer [Defining summary for column](#defining-summary-for-column) section to know more about how to defining summary columns.
+Refer [Defining summary for column](#defining-summary-for-column) section to know more about how to define summary columns.
 
 In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) is defined along with summary columns.
 
@@ -167,16 +167,16 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns with title at same time for TableSummaryRow.
+The following screenshot illustrates displaying summary columns with title at same time for `TableSummaryRow`.
 
 ![SummaryColumns with title in TableSummaryRow for WPF DataGrid](Summaries_images/Summaries_img21.png)
 
 #### Limitations
 
-The following are the limitations of displaying column summary along with title at same time for TableSummaryRow:
+The following are the limitations of displaying column summary along with title at same time for `TableSummaryRow`:
 
-*Shows column summary along with title for frozen column only for [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is lesser than `GridSummaryRow.TitleColumnCount` when frozen column defined case. 
-*Does not shows column summary with title at same column.
+*If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+*Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
 ### Displaying summary for Row
 
@@ -399,7 +399,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
 
-Refer [Defining summary for column](#defining-summary-for-column-1) section to know more about how to defining summary columns.
+Refer [Defining summary for column](#defining-summary-for-column-1) section to know more about how to define summary columns.
 
 In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) is defined along with summary columns.
 
@@ -467,16 +467,16 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns with title at same time for GroupSummaryRow.
+The following screenshot illustrates displaying summary columns with title at same time for `GroupSummaryRow`.
 
 ![SummaryColumns with title in group summary row for WPF DataGrid](Summaries_images/Summaries_img20.png)
 
 #### Limitations
 
-The following are the limitations of displaying column summary along with title at same time for GroupSummaryRow:
+The following are the limitations of displaying column summary along with title at same time for `GroupSummaryRow`:
 
-*Shows column summary along with title for frozen column only for [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is lesser than `GridSummaryRow.TitleColumnCount` when frozen column defined case. 
-*Does not shows column summary with title at same column.
+*If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+*Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
 ### Displaying summary for Row
 
@@ -650,7 +650,7 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
 
-Refer [Defining summary for column](#defining-summary-for-column-2) section to know more about how to defining summary columns.
+Refer [Defining summary for column](#defining-summary-for-column-2) section to know more about how to define summary columns.
 
 In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) is defined along with summary columns.
 
@@ -718,16 +718,16 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns with title at same time for CaptionSummaryRow.
+The following screenshot illustrates displaying summary columns with title at same time for `CaptionSummaryRow`.
 
 ![Caption summary columns with title in WPF DataGrid](Summaries_images/Summaries_img19.png)
 
 #### Limitations
 
-The following are the limitations of displaying column summary along with title at same time for CaptionSummaryRow:
+The following are the limitations of displaying column summary along with title at same time for `CaptionSummaryRow`:
 
-*Shows column summary along with title for frozen column only for [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is lesser than `GridSummaryRow.TitleColumnCount` when frozen column defined case. 
-*Does not shows column summary with title at same column. 
+*If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+*Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
 ### Displaying summary for Row
 
