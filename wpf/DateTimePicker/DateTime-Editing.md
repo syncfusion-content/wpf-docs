@@ -11,32 +11,9 @@ documentation: ug
 
 The **DateTimeEdit** control provides support for editing DateTime using text box. It supports both free flow editing and mask based editing. 
 
-## Free flow editing
-
-The DateTime can be edited in the textbox of the `DateTimeEdit` control when the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) is true. In default editing mode, the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, the DateTimeEdit control automatically updates the value in the correct pattern on lost focus. i.e, if the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in the editing text box, the DateTimeText will be automatically converted according to the LongDate pattern while pressing the enter key or on lost focus of the control.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
-                         CanEdit="True"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-dateTimeEdit.CanEdit = true;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![WPF DateTimeEdit default editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
-
 ## Mask editing
 
-The mask edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In mask editing mode, the date will be separated into different fields such as date, month, year, minutes, hours, and seconds. The field can be updated by selecting the field and pressing the up or down arrow to increase or decrease the selected field respectively.
+This is the default editing mode. In this mode, you can provide only valid input. Any invalid input given will be automatically corrected or ignored. The mask edit mode provides an easy and reliable way of collecting user input and displaying standard data in a specific format. In mask editing mode, the date will be separated into different fields such as date, month, year, minutes, hours, and seconds. The field can be updated by selecting the field and pressing the up or down arrow to increase or decrease the selected field respectively.
 
 {% tabs %}
 
@@ -52,12 +29,7 @@ The mask edit mode provides an easy and reliable way of collecting user input an
 
 ### Validation
 
-The **DateTimeEdit** control support automatic and manual validation. 
-
-* Automatic validation - This validation is done when mask based editing is enabled in DateTimeEdit. The DateTimeEdit value will be validated and corrected immediately based on the edited input value. 
-* Manual validation - This validation is done when free flow editing is enabled in DateTimeEdit. The **DateTimeEdit** control validates the specified value by an end-user when pressing Enter key or if control lost it focus. If the entered value is invalid, it set the previously SelectedDate as [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) value. Otherwise, it set the specified value to the **DateTime** property of DateTimeEdit control. 
-
-The following table demonstrates some of the validation in DateTimeEdit control:
+In mask editing mode, value will be validated and corrected immediately based on the edited input value.  The following table demonstrates some of the validation in DateTimeEdit control:
 
 <table>
 <tr>
@@ -88,3 +60,31 @@ Pressing the {{'**j**'| markdownify }} key selects {{'**January**'| markdownify 
 Day field of DateTimeEdit can not be selected as it cannot be edited.</td><td>
 - </td></tr>
 </table>
+
+## Free flow editing
+
+The DateTime can be edited in the textbox of the `DateTimeEdit` control when the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) is true. In default editing mode, the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, the DateTimeEdit control automatically updates the value in the correct pattern on lost focus. i.e, if the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in the editing text box, the DateTimeText will be automatically converted according to the LongDate pattern while pressing the enter key or on lost focus of the control.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                         CanEdit="True"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+dateTimeEdit.CanEdit = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF DateTimeEdit default editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
+
+### Validation
+
+The **DateTimeEdit** control validates the specified value by an end-user when pressing Enter key or if control lost it focus. If the entered value is invalid, it set the previously SelectedDate as [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) value. Otherwise, it set the specified value to the **DateTime** property of DateTimeEdit control. 
+
