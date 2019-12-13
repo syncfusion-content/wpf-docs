@@ -710,6 +710,90 @@ Used for custom summaries
 </tr>
 </table>
 
+## Calculate summary for selected rows
+
+SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the `SfDataGrid.SummaryCalculationUnit` or `GridSummaryRow.CalculationUnit` property.
+This is applicable for all type of summary rows such as table, caption and group summary.
+
+In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
+
+{% tabs %}
+{% highlight xaml %}
+  <syncfusion:SfDataGrid x:Name="sfDataGrid" 
+                        ItemsSource="{Binding Path=Orders}"
+                        SelectionMode="Multiple"
+                        AutoGenerateColumns="True">
+     <syncfusion:SfDataGrid.TableSummaryRows>
+         <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Price for all records:{UnitPrice}">
+             <syncfusion:GridSummaryRow.SummaryColumns>
+                 <syncfusion:GridSummaryColumn Name="UnitPrice"
+                                       Format="'{Sum:c}'"
+                                       MappingName="UnitPrice"
+                                       SummaryType="DoubleAggregate" />
+             </syncfusion:GridSummaryRow.SummaryColumns>
+         </syncfusion:GridTableSummaryRow>
+         <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total price for selected records: {UnitPrice}" CalculationUnit="SelectedRows" Position="Top">
+             <syncfusion:GridSummaryRow.SummaryColumns>
+                 <syncfusion:GridSummaryColumn Name="UnitPrice"
+                                       Format="'{Sum:c}'"
+                                       MappingName="UnitPrice"
+                                       SummaryType="DoubleAggregate" />
+             </syncfusion:GridSummaryRow.SummaryColumns>
+         </syncfusion:GridTableSummaryRow>
+     </syncfusion:SfDataGrid.TableSummaryRows>
+ </syncfusion:SfDataGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Position = TableSummaryRowPosition.Top,
+    CalculationUnit = SummaryCalculationUnit.SelectedRows,
+    Title = "Total price for selected records: {PriceAmount}",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+           Name="PriceAmount",
+           Format="{Sum:c}",
+           MappingName="UnitPrice",
+           SummaryType=SummaryType.DoubleAggregate
+        }
+    }
+};
+
+GridTableSummaryRow tableSummaryRow2 = new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Position = TableSummaryRowPosition.Bottom,
+    Title = "Total price for all records: {UnitPrice}",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="UnitPrice",
+            Format="{Sum:c}",
+            MappingName="UnitPrice",
+            SummaryType=SummaryType.DoubleAggregate
+        }
+    }
+};
+
+this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1);
+this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Calculate summaries for selected records in WPF SfDataGrid](Summaries_images/Summaries_img19.png)
+
+N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
+
+### Limitation
+
+`SummaryCalculationUnit.SelectedRows` or `SummaryCalculationUnit.Mixed` will not be considered for cell selection.
 
 ## Custom summaries
 
