@@ -9,7 +9,7 @@ documentation: ug
 
 # Shapes
 
-You can annotate an image by adding shapes such as circle, rectangle, and arrow. Shapes can be added in the following two ways:
+You can annotate an image by adding regular shapes such as circle, rectangle, and arrow. Also image editor provides support to draw path (i.e. free hand sketching). Shapes can be added in the following two ways:
 
 * Using Toolbar
 * Programmatically
@@ -17,6 +17,12 @@ You can annotate an image by adding shapes such as circle, rectangle, and arrow.
 ## Adding shapes using toolbar
 
 To add a shape, click the AddShape icon in the toolbar. This will list out the default shapes, and you can select the desired shape from it. By default, selected shape will be added at the center. You can select and drag the shape to position at the desired location. Upon selecting the shape, handles will be enabled. Handles help in resizing the shapes. Click outside to disable the selection.
+
+## Free hand sketch (Path)
+
+For free hand sketching on the image, select the pen tool in the toolbar, if needed also select the required Stroke and StrokeWidth of the pen from the secondary toolbar. This will let you to draw on the image and you can annotate it by your own shapes, signature or any form of irregular shapes.
+
+N> After selecting the pen tool click and drag on the image to draw.
 
 ## Customization
 
@@ -30,23 +36,25 @@ By selecting the shape icon in the toolbar, a sub toolbar will be generated belo
 
 N> Shapes need to be selected to apply customization from the sub toolbar.
 
+In case of free hand sketching, to apply customization you must select it from the sub toolbar before drawing on the image. You cannot change the customization of the drawn path.
+
 ### Fill
 
-Color picker will be opened on selecting this icon. You can select the desired color from color picker to fill the selected shape. By default, fill is in transparent.
+Color picker will be opened on selecting Fill icon in the secondary toolbar. You can select the desired color from color picker to fill the selected shape. By default, fill is in transparent. This is property is not applicable for free hand sketching.
 
 ### Stroke
 
-On selecting the required color from this color picker, stroke of the selected shape will be updated. By default, stroke will be in Red.
+On selecting the required color from this color picker in the secondary toolbar, you can either update the stroke of the selected shape or can draw a new path with that. By default, stroke will be in Red.
 
 ### Stroke width
 
-You can select the desired stroke width from the listed-out sizes to update the stroke width of the selected shape.
+You can select the desired stroke width from the listed-out sizes either to update the stroke width of the selected shape or to draw a new path.
 
 ![Stroke width](Images/Shapes.jpg) 
 
 ### Delete
 
-To delete the added shape, select the shape, and then click the delete icon from the keyboard.
+To delete the added shape, select the shape, and then use delete key from the keyboard.
 
 ## Adding shapes programmatically
 
@@ -60,6 +68,18 @@ Shapes can be added into an image using the AddShape method. This method takes t
 {% highlight C# %} 
 
 editor.AddShape(ShapeType.Rectangle, new PenSettings());
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+Use the below code to enable free hand sketching programmatically.
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+editor.AddShape(ShapeType.Path, new PenSettings());
 
 {% endhighlight %}
 
@@ -118,6 +138,22 @@ N> Values of the bounds rect will be in percentage. For example (25,25,25,25) wi
 
 ![Shapes](Images/Shapes1.jpg) 
 
+{% tabs %} 
+
+{% highlight C# %} 
+
+            PenSettings penSettings = new PenSettings();
+            penSettings.Opacity = 0.7f;
+            penSettings.Stroke = new SolidColorBrush(Colors.Red);
+            penSettings.StrokeWidth = 3;
+            editor.AddShape(Syncfusion.UI.Xaml.ImageEditor.Enums.ShapeType.Path, penSettings);
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Shapes](Images/Pen.png) 
+
 ## Shape resizing
 
 By default, both shapes and text are resizable. You can also control the resizable using the ResizableElements property in image editor. The following code enables the resizing functionality to both shapes and text.
@@ -126,7 +162,7 @@ By default, both shapes and text are resizable. You can also control the resizab
 
 {% highlight C# %} 
 
- editor.ResizableElements = ImageEditorResizableElements.Shapes | ImageEditorResizableElements.Text;
+ editor.ResizableElements = ImageEditorResizableElements.Shapes;
 
 {% endhighlight %}
 
