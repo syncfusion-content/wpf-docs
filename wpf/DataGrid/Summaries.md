@@ -712,77 +712,79 @@ Used for custom summaries
 
 ## Calculate summaries for selected records
 
-By default, SfDataGrid calculates the summaries for all the records. You can calculate the summaries for selected records also through `SfDataGrid.SummaryCalculationUnit` or `GridSummaryRow.CalculationUnit` property.
+SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the `SfDataGrid.SummaryCalculationUnit` or `GridSummaryRow.CalculationUnit` property.
 
-Below code, applies `SummaryCalculationUnit.AllRows` for SfDataGrid and `CalculationUnit.SelectedRows` for top positioning TableSummaryRow,
+In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
 
 {% tabs %}
 {% highlight xaml %}
- <syncfusion:SfDataGrid x:Name="sfdatagrid" 
-                               ItemsSource="{Binding Path=Orders}"
-                               SelectionMode="Multiple"
-                               SummaryCalculationUnit="AllRows"
-                               AutoGenerateColumns="True">
-            <syncfusion:SfDataGrid.TableSummaryRows>
-                <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Unit Price:{UnitPrice}">
-                    <syncfusion:GridSummaryRow.SummaryColumns>
-                        <syncfusion:GridSummaryColumn Name="UnitPrice"
-                                              Format="'{Sum:c}'"
-                                              MappingName="UnitPrice"
-                                              SummaryType="DoubleAggregate" />
-                    </syncfusion:GridSummaryRow.SummaryColumns>
-                </syncfusion:GridTableSummaryRow>
-                <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Unit price for selected records: {UnitPrice}" CalculationUnit="SelectedRows" Position="Top">
-                    <syncfusion:GridSummaryRow.SummaryColumns>
-                        <syncfusion:GridSummaryColumn Name="UnitPrice"
-                                              Format="'{Sum:c}'"
-                                              MappingName="UnitPrice"
-                                              SummaryType="DoubleAggregate" />
-                    </syncfusion:GridSummaryRow.SummaryColumns>
-                </syncfusion:GridTableSummaryRow>
-            </syncfusion:SfDataGrid.TableSummaryRows>
-        </syncfusion:SfDataGrid>
+  <syncfusion:SfDataGrid x:Name="sfdatagrid" 
+                        ItemsSource="{Binding Path=Orders}"
+                        SelectionMode="Multiple"
+                        SummaryCalculationUnit="AllRows"
+                        AutoGenerateColumns="True">
+     <syncfusion:SfDataGrid.TableSummaryRows>
+         <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Price for all records:{UnitPrice}">
+             <syncfusion:GridSummaryRow.SummaryColumns>
+                 <syncfusion:GridSummaryColumn Name="UnitPrice"
+                                       Format="'{Sum:c}'"
+                                       MappingName="UnitPrice"
+                                       SummaryType="DoubleAggregate" />
+             </syncfusion:GridSummaryRow.SummaryColumns>
+         </syncfusion:GridTableSummaryRow>
+         <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total price for selected records: {UnitPrice}" CalculationUnit="SelectedRows" Position="Top">
+             <syncfusion:GridSummaryRow.SummaryColumns>
+                 <syncfusion:GridSummaryColumn Name="UnitPrice"
+                                       Format="'{Sum:c}'"
+                                       MappingName="UnitPrice"
+                                       SummaryType="DoubleAggregate" />
+             </syncfusion:GridSummaryRow.SummaryColumns>
+         </syncfusion:GridTableSummaryRow>
+     </syncfusion:SfDataGrid.TableSummaryRows>
+ </syncfusion:SfDataGrid>
+
 {% endhighlight %}
 {% highlight c# %}
  this.sfdatagrid.SummaryCalculationUnit = SummaryCalculationUnit.AllRows;
 
-            GridTableSummaryRow tablesummaryrow1 = new GridTableSummaryRow()
-            {
-                ShowSummaryInRow = true,
-                Position = TableSummaryRowPosition.Top,
-                CalculationUnit = SummaryCalculationUnit.SelectedRows,
-                Title= "Total Unit price for selected records: {PriceAmount}",
-                SummaryColumns = new ObservableCollection<ISummaryColumn>()
-                {
-                    new GridSummaryColumn()
-                    {
-                       Name="PriceAmount",
-                       Format="{Sum:c}",
-                       MappingName="UnitPrice",
-                       SummaryType=SummaryType.DoubleAggregate
-                    }
-                }
-            };
+GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Position = TableSummaryRowPosition.Top,
+    CalculationUnit = SummaryCalculationUnit.SelectedRows,
+    Title = "Total price for selected records: {PriceAmount}",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+           Name="PriceAmount",
+           Format="{Sum:c}",
+           MappingName="UnitPrice",
+           SummaryType=SummaryType.DoubleAggregate
+        }
+    }
+};
 
-            GridTableSummaryRow tablesummaryrow2 = new GridTableSummaryRow()
-            {
-                ShowSummaryInRow = true,
-                Position = TableSummaryRowPosition.Bottom,
-                Title = "Total Unit price: {UnitPrice}",
-                SummaryColumns = new ObservableCollection<ISummaryColumn>()
-                {
-                    new GridSummaryColumn()
-                    {
-                        Name="UnitPrice",
-                        Format="{Sum:c}",
-                        MappingName="UnitPrice",
-                        SummaryType=SummaryType.DoubleAggregate
-                    }
-                }
-            };
+GridTableSummaryRow tableSummaryRow2 = new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Position = TableSummaryRowPosition.Bottom,
+    Title = "Total price for all records: {UnitPrice}",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="UnitPrice",
+            Format="{Sum:c}",
+            MappingName="UnitPrice",
+            SummaryType=SummaryType.DoubleAggregate
+        }
+    }
+};
 
-            this.sfdatagrid.TableSummaryRows.Add(tablesummaryrow1);
-            this.sfdatagrid.TableSummaryRows.Add(tablesummaryrow2);
+this.sfdatagrid.TableSummaryRows.Add(tableSummaryRow1);
+this.sfdatagrid.TableSummaryRows.Add(tableSummaryRow2);
+
 {% endhighlight %}
 {% endtabs %}
 
