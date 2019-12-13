@@ -63,7 +63,7 @@ Day field of DateTimeEdit can not be selected as it cannot be edited.</td><td>
 
 ## Free flow editing
 
-The DateTime can be edited in the textbox of the `DateTimeEdit` control when the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) is true. In default editing mode, the value can be assigned in any valid format. Even if the text box text is not in the correct pattern, the DateTimeEdit control automatically updates the value in the correct pattern on lost focus. i.e, if the date time pattern is LongDate with pattern "dddd, MMMM dd, yyyy" and date is entered as "Mar 28 2017" in the editing text box, the DateTimeText will be automatically converted according to the LongDate pattern while pressing the enter key or on lost focus of the control.
+The DateTime value can be edited like a normal textbox editing when the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) is true. Input given by an end-user, will be validated when pressing Enter key or if control lost its focus. If the entered value is invalid, it set the previously SelectedDate as [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) value. Otherwise, it will accept the given input.
 
 {% tabs %}
 
@@ -84,7 +84,4 @@ dateTimeEdit.CanEdit = true;
 
 ![WPF DateTimeEdit default editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
 
-### Validation
-
-The **DateTimeEdit** control validates the specified value by an end-user when pressing Enter key or if control lost it focus. If the entered value is invalid, it set the previously SelectedDate as [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) value. Otherwise, it set the specified value to the **DateTime** property of DateTimeEdit control. 
 
