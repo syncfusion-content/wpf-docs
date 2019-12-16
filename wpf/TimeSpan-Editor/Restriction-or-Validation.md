@@ -37,11 +37,12 @@ timespan.MaxValue = new TimeSpan(31, 0, 0, 0);
 {% endtabs %}
 
 ### Min value
+
 ![Validate the minimum in WPF TimeSpanedit](Restriction-or-validation_images/wpf-TimeSpanEdit-minValue.png)
+
 ### Max value
 
 ![Validate the maximum in WPF TimeSpanedit](Restriction-or-validation_images/wpf-TimeSpanEdit-maxValue.png)
-
 
 ## Read only value
 
