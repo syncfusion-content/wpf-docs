@@ -53,19 +53,34 @@ Create a spell checker instance and set the spell checking options as given belo
 
 {% highlight C# %}
 
-SfSpellChecker SpellChecker = new SfSpellChecker();
+        TextSpellEditor SpellEditor;
 
-SpellChecker.IgnoreUrl = true;
+        public MainWindow()
+        {
+            SpellChecker = new SfSpellChecker();
+            InitializeComponent();
+            SpellEditor = new TextSpellEditor(txtbx);
+            Editor = SpellEditor;
+            SpellChecker.PerformSpellCheckUsingContextMenu(Editor);
+            SpellChecker.IgnoreUrl = true;
+            SpellChecker.IgnoreUpperCaseWords = true;
+            SpellChecker.IgnoreAlphaNumericWords = true;
+            SpellChecker.IgnoreEmailAddress = true;
+            SpellChecker.IgnoreMixedCaseWords = true;
+            SpellChecker.IgnoreHtmlTags = true;
+        }
 
-SpellChecker.IgnoreUpperCaseWords = true;
+        public IEditorProperties Editor
+        {
+            get;
+            set;
+        }
 
-SpellChecker.IgnoreAlphaNumericWords = true;
-
-SpellChecker.IgnoreEmailAddress = true;
-
-SpellChecker.IgnoreMixedCaseWords = true;
-
-SpellChecker.IgnoreHtmlTags = true;
+        public SfSpellChecker SpellChecker
+        {
+            get;
+            set;
+        }
 
 {% endhighlight %}
 
@@ -84,12 +99,31 @@ SpellChecker.IgnoreHtmlTags = true;
 
 {% highlight C# %}
 
-SfSpellChecker SpellChecker = new SfSpellChecker();
+        TextSpellEditor SpellEditor;
+
+        public MainWindow()
+        {
+            SpellChecker = new SfSpellChecker();
+            InitializeComponent();
+            SpellEditor = new TextSpellEditor(txtbx);
+            Editor = SpellEditor;
+            SpellChecker.PerformSpellCheckUsingContextMenu(Editor);
+        }
+
+        public IEditorProperties Editor
+        {
+            get;
+            set;
+        }
+
+        public SfSpellChecker SpellChecker
+        {
+            get;
+            set;
+        }
 
 SpellChecker.GetSuggestions("offce");
-
 SpellChecker.GetPhoneticWords("offce");
-
 SpellChecker.GetAnagrams("offce");
 
 {% endhighlight %}

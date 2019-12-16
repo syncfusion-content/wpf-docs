@@ -24,7 +24,28 @@ The following steps helps to add `SfSpellChecker`.
 
 {% highlight C# %}
 
-Syncfusion.Windows.Controls.SfSpellChecker spellChecker = new Syncfusion.Windows.Controls.SfSpellChecker();
+        TextSpellEditor SpellEditor;
+
+        public MainWindow()
+        {
+            SpellChecker = new SfSpellChecker();
+            InitializeComponent();
+            SpellEditor = new TextSpellEditor(txtbx);
+            Editor = SpellEditor;
+            SpellChecker.PerformSpellCheckUsingContextMenu(Editor);
+        }
+
+        public IEditorProperties Editor
+        {
+            get;
+            set;
+        }
+
+        public SfSpellChecker SpellChecker
+        {
+            get;
+            set;
+        }
 
 {% endhighlight %}
 
@@ -48,7 +69,7 @@ Syncfusion.Windows.Controls.SfSpellChecker spellChecker = new Syncfusion.Windows
          tools for the task at hand. The Ribbon bars will contain the Ribbon tools."
          VerticalAlignment="Stretch" />
          
-<Button HorizontalAlignment="Left"  Content="Spell Check" Click="Button_Click">
+<Button HorizontalAlignment="Center" Width="80" Height="20"  Content="Spell Check" Click="Button_Click">
 
 </Button>
 
@@ -66,142 +87,86 @@ Syncfusion.Windows.Controls.SfSpellChecker spellChecker = new Syncfusion.Windows
 {% highlight C# %}
 
 
-public class TextSpellEditor:IEditorProperties
+   public class TextSpellEditor:IEditorProperties
+    {
+        TextBox textbox;
+        public TextSpellEditor(Control control)
+        {
+            ControlToSpellCheck = control;
+        }
+        public Control ControlToSpellCheck
+        {
+            get
+            {
+                return textbox;
+            }
+            set
+            {
+                textbox = value as TextBox;
+            }
+        }
 
-{
+        public string SelectedText
+        {
+            get
+            {
+                return textbox.SelectedText;
+            }
+            set
+            {
+                textbox.SelectedText = value;
+            }
+        }
 
-TextBox textbox;
+        public string Text
+        {
+            get
+            {
+                return textbox.Text;
+            }
+            set
+            {
+                textbox.Text = value;
+            }
+        }
 
-public TextSpellEditor(Control control)
+        public void Select(int selectionStart, int selectionLength)
+        {
+            textbox.Select(selectionStart, selectionLength);
+        }
 
-{
+        public bool HasMoreTextToCheck()
+        {
+            return false;
+        }
 
-ControlToSpellCheck = control;
+        public void Focus()
+        {
+            textbox.Focus();
+        }
 
-}
-
-public Control ControlToSpellCheck
-
-{
-
-get
-
-{
-
-return textbox;
-
-}
-
-set
-
-{
-
-textbox = value as TextBox;
-
-}
-
-}
-
-public string SelectedText
-
-{
-
-get
-
-{
-
-return textbox.SelectedText;
-
-}
-
-set
-
-{
-
-textbox.SelectedText = value;
-
-}
-
-}
-
-public string Text
-
-{
-
-get
-
-{
-
-return textbox.Text;
-
-}
-
-set
-
-{
-
-textbox.Text = value;
-
-}
-
-}
-
-public void Select(int selectionStart, int selectionLength)
-
-{
-
-textbox.Select(selectionStart, selectionLength);
-
-}
-
-public bool HasMoreTextToCheck()
-
-{
-
-return false;
-
-}
-
-public void Focus()
-
-{
-
-textbox.Focus();
-
-}
-
-public void UpdateTextField()
-
-{
-
-throw new NotImplementedException();
-
-}
-
-}
+        public void UpdateTextField()
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 {% endhighlight %}
 
 {% endtabs %}
- 
+
 5 . In Click event of button call SpellCheck method to TextBox.
 
 {% tabs %}
-
 {% highlight C# %}
 
 private void Button_Click(object sender, RoutedEventArgs e)
-
 {
-
 SpellChecker.PerformSpellCheckUsingDialog(Editor);
-
 }
 
 {% endhighlight %}
-
 {% endtabs %}
-
 
 ![](gettingstarted-images/getting-started.jpeg)
 
