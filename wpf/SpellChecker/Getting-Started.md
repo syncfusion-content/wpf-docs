@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with SfSpellChecker control in WPF
-description: Getting Started with SfSpellChecker control in WPF
+title: Getting Started | SfSpellChecker | wpf | Syncfusion
+description: This section describes about how the SpellChecker control can be assigned to a textbox control.
 platform: WPF
 control: SfSpellChecker
 documentation: ug
@@ -168,7 +168,7 @@ SpellChecker.PerformSpellCheckUsingDialog(Editor);
 {% endhighlight %}
 {% endtabs %}
 
-![](gettingstarted-images/getting-started.jpeg)
+![SpellChecker control](gettingstarted-images/getting-started.jpeg)
 
 
 6 . Suggested word can be replaced by double clicking on the word from the ListBox.
