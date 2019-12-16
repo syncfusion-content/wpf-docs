@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit control members of WPF
-description: Explains about edit control members of WPF
+title: Members of the WPF Syncfusion Syntax Editor control | Syncfusion
+description: Learn about Members of Syncfusion WPF Syntax Editor control, which is a code editor similiar to  Visual studio editor.
 platform: wpf
 control: Syntax Editor
 documentation: ug
