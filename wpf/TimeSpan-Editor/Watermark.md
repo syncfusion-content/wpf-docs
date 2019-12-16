@@ -9,7 +9,7 @@ documentation: ug
 
 # Watermark for null value
 
-## Assign null value
+## Set null value
 
 AllowNull property can be used to set the TimeSpanEdit value to Null. When this property is enabled along with the Value property whose value is Null, then the TimeSpanEdit control will not display any value.
 
