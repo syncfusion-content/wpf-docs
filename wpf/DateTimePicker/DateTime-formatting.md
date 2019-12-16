@@ -37,7 +37,9 @@ The different display formats of the DateTime can be set by the [Pattern](https:
 
 <Grid x:Name="grid">
    <!--Setting FullDateTime Pattern-->
-   <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="235" DateTime="10/15/2019" PatternChanged="DateTimeEdit_PatternChanged" Pattern="FullDateTime"></syncfusion:DateTimeEdit>
+   <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="235" 
+                            DateTime="7/15/2019" Pattern="FullDateTime"
+                            PatternChanged="DateTimeEdit_PatternChanged" />
 </Grid>
 
 {% endhighlight  %}
@@ -49,9 +51,9 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new  Syncfusion.Windows.Sh
 public MainWindow()
 {
     InitializeComponent();
-    dateTimeEdit.Width = 200;
+    dateTimeEdit.Width = 235;
     dateTimeEdit.Height = 25;
-    dateTimeEdit.DateTime = new DateTime(2019, 10, 15);
+    dateTimeEdit.DateTime = new DateTime(2019, 7, 15);
    
     //Setting predefined FullDateTime pattern
     dateTimeEdit.Pattern = DateTimePattern.FullDateTime;
@@ -82,7 +84,9 @@ You can also set the custom pattern for displaying the date in the DateTimeEdit 
 {% highlight XAML %}
 
 <Grid x:Name="grid">
-    <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="10/15/2019" Pattern="CustomPattern" CustomPatternChanged="DateTimeEdit_CustomPatternChanged" CustomPattern="MM/dd/yy hh:mm:ss"></syncfusion:DateTimeEdit>
+    <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                             DateTime="7/15/2019" CustomPatternChanged="DateTimeEdit_CustomPatternChanged" 
+                             Pattern="CustomPattern" CustomPattern="MM**dd**yy" />
 </Grid>
 
 {% endhighlight %}
@@ -96,11 +100,11 @@ public MainWindow()
     InitializeComponent();
     dateTimeEdit.Width = 200;
     dateTimeEdit.Height = 25;
-    dateTimeEdit.DateTime = new DateTime(2019, 10, 15);
+    dateTimeEdit.DateTime = new DateTime(2019, 7, 15);
     dateTimeEdit.Pattern = DateTimePattern.CustomPattern;
 
     //Setting Custom Pattern
-    dateTimeEdit.CustomPattern = "MM/dd/yy hh:mm:ss";
+    dateTimeEdit.CustomPattern = "MM**dd**yy";
 
     // Invoked CustomPatternChanged event of DateTimeEdit
     dateTimeEdit.CustomPatternChanged += DateTimeEdit_CustomPatternChanged;
@@ -121,53 +125,6 @@ private void DateTimeEdit_CustomPatternChanged(DependencyObject d, DependencyPro
 
 N>[CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) support can be enabled by setting the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property to the DateTimePattern.CustomPattern.
 
-## DateTime format
-
-The [DateTimeFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DateTimeFormat.html) property defines the Format to display the date value in the DateTimeEdit control. Using this property you can customize the Standard datetime formats such as the YearMonthPattern, ShortTimePattern, ShortDatePattern, MonthDayPattern, LongTimePattern, LongDatePattern, and FullDateTimePattern. 
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DateTimeEdit_sample"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:global="clr-namespace:System.Globalization;assembly=mscorlib"
-        x:Class="DateTimeEdit_sample.MainWindow"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="323" Width="384">
-    <Grid>
-        <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate">
-            <syncfusion:DateTimeEdit.DateTimeFormat>
-                <global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>
-            </syncfusion:DateTimeEdit.DateTimeFormat>
-        </syncfusion:DateTimeEdit>
-    </Grid>
-</Window>
-
-{% endhighlight  %}
-
-{% highlight C# %}
-
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
-dateTimeEdit.Width = 200;
-dateTimeEdit.Height = 25;
-dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
-dateTimeEdit.Pattern = DateTimePattern.ShortDate;
-dateTimeEdit.DateTimeFormat = new DateTimeFormatInfo()
-{    
-	ShortDatePattern = "MM/dd/yy hh:mm:ss"
-};
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-![WPF DateTimeEdit format](DateTime-Format_images/wpf-datetimeedit-format.png)
-
 ## Change culture 
 
 The DateTimeEdit control provides globalization support that allows you to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. By default, the DateTimeEdit supports system’s current culture. You can change the culture of DateTimeEdit by using the [CultureInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CultureInfo.html) property. 
@@ -176,7 +133,9 @@ The DateTimeEdit control provides globalization support that allows you to desig
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="10/15/2019" Pattern="LongDate" CultureInfo="en-US"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                         DateTime="7/15/2019" Pattern="LongDate" 
+                         CultureInfo="en-US" />
 
 {% endhighlight  %}
 
@@ -185,7 +144,7 @@ The DateTimeEdit control provides globalization support that allows you to desig
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
 dateTimeEdit.Width = 200;
 dateTimeEdit.Height = 25;
-dateTimeEdit.DateTime = new DateTime(2019, 10, 15);
+dateTimeEdit.DateTime = new DateTime(2019, 7, 15);
 dateTimeEdit.Pattern = DateTimePattern.LongDate;
 dateTimeEdit.CultureInfo = new CultureInfo("en-US");
 
@@ -200,7 +159,9 @@ dateTimeEdit.CultureInfo = new CultureInfo("en-US");
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="10/15/2019" Pattern="LongDate" CultureInfo="fr-FR"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                         DateTime="7/15/2019" Pattern="LongDate" 
+                         CultureInfo="fr-FR" />
 
 {% endhighlight %}
 
@@ -209,7 +170,7 @@ dateTimeEdit.CultureInfo = new CultureInfo("en-US");
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new  Syncfusion.Windows.Shared.DateTimeEdit();
 dateTimeEdit.Width = 200;
 dateTimeEdit.Height = 25;
-dateTimeEdit.DateTime = new DateTime(2019, 10, 15);
+dateTimeEdit.DateTime = new DateTime(2019, 7, 15);
 dateTimeEdit.Pattern = DateTimePattern.LongDate;
 dateTimeEdit.CultureInfo = new CultureInfo("fr-FR");
 
