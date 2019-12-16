@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spell-Checking-Options | SfSpellChecker | wpf | Syncfusion
-description: This section describes about various spell check options available in SpellChecker control.
+description: This section describes about various Spell Checking Options available in SpellChecker control and how it can be assigned to the control.
 platform: WPF
 control: SfSpellChecker
 documentation: ug
