@@ -268,6 +268,11 @@ IntellisenseBoxEventHandler<br/><br/></td><td>
 Gets raised before the Intellisense popup is displayed. This event can be used to cancel the Intellisense popup display or change ItemsSource of the Intellisense ListBox and so on.<br/><br/></td></tr>
 <tr>
 <td>
+IntellisenseBoxClosed<br/><br/></td><td>
+EventHandler<br/><br/></td><td>
+This event will be raised after the Intellisense popup is closed. This event can be used to perform any operation related to Intellisense after the popup is closed.<br/><br/></td></tr>
+<tr>
+<td>
 IntellisenseDrillDown<br/><br/></td><td>
 IntellisenseBoxEventHandler<br/><br/></td><td>
 Drill down in Intellisense occurs when the user types  drill down char specified in the CurrentLanguage instance. When the drill down occurs, the Intellisense looks for any sub items are available for the selected Intellisense item and displays the popup if any. This event gets raised before the Intellisense popup is displayed after a drill down char is typed by the user. This event can be used to perform any operations related to Intellisense during drill down. <br/><br/></td></tr>
