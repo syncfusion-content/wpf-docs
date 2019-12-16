@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | SfSpellChecker | wpf | Syncfusion
-description: This section describes about how the SpellChecker control can be assigned to a textbox control.Also describes about IEditorProperties and how it could be assigned to a SpellChecker control. 
+description: This section describes about the basic behaviour of SpellChecker control and how the SpellChecker control can be assigned to a textbox control. 
 platform: WPF
 control: SfSpellChecker
 documentation: ug
