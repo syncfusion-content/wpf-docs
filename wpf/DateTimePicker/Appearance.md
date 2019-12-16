@@ -19,14 +19,17 @@ The DateTimeEdit provides built-in themes which can be applied using SkinStorage
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" IsVisibleRepeatButton="True" RepeatButtonBackground="Violet" RepeatButtonBorderBrush="Red"/>          
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                         IsVisibleRepeatButton="True" RepeatButtonBackground="Violet" 
+                         UpRepeatButtonMargin="1" DownRepeatButtonMargin="1" />          
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 dateTimeEdit.RepeatButtonBackground = Brushes.Violet;
-dateTimeEdit.RepeatButtonBorderBrush = Brushes.Red;
+dateTimeEdit.UpRepeatButtonMargin = new Thickness(1);
+dateTimeEdit.DownRepeatButtonMargin = new Thickness(1);
 
 {% endhighlight %}
 
@@ -48,7 +51,11 @@ You can host a custom calendar by using [DateTimeCalender](https://help.syncfusi
 
 <syncfusion:DateTimeEdit Width="250" Height="25" x:Name="dateTimeEdit">
     <syncfusion:DateTimeEdit.DateTimeCalender>
-        <syncfusion:SfDateSelector Width="250" ShowCancelButton="False" ShowDoneButton="False" SelectorItemWidth="75" Foreground="#333333" SelectorItemHeight="75" SelectorItemSpacing="4.5" Height="430" Margin="0, 2, 0 ,0" SelectedDateTime="{Binding ElementName=dateTimeEdit,Path=DateTime,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+        <syncfusion:SfDateSelector Width="250" ShowCancelButton="False" ShowDoneButton="False" 
+                                   SelectorItemWidth="75" SelectorItemHeight="75" 
+                                   SelectorItemSpacing="4.5" Height="430" Margin="0, 2, 0 ,0" 
+                                   SelectedDateTime="{Binding ElementName=dateTimeEdit,Path=DateTime,
+                                                      Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
         </syncfusion:SfDateSelector>
     </syncfusion:DateTimeEdit.DateTimeCalender>
 </syncfusion:DateTimeEdit>
@@ -92,7 +99,11 @@ You can host a custom clock using the [Clock](https://help.syncfusion.com/cr/wpf
 
 <syncfusion:DateTimeEdit Width="250" Height="25" EnableClassicStyle="True" IsCalendarEnabled="False" x:Name="dateTimeEdit">
     <syncfusion:DateTimeEdit.Clock>
-        <syncfusion:SfTimeSelector Width="248" ShowCancelButton="False" ShowDoneButton="False" SelectorItemWidth="75" Foreground="#333333" SelectorItemHeight="75" SelectorItemSpacing="4.5" BorderThickness="1" Height="430" Margin="0, 0, 0 ,0" SelectedTime="{Binding ElementName=dateTimeEdit,Path=DateTime,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+        <syncfusion:SfTimeSelector Width="248" ShowCancelButton="False" ShowDoneButton="False" 
+                                   SelectorItemWidth="75" SelectorItemHeight="75" Height="430"
+                                   SelectorItemSpacing="4.5" BorderThickness="1" BorderBrush="Black"                   
+                                   SelectedTime="{Binding ElementName=dateTimeEdit,Path=DateTime,
+                                                  Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
         </syncfusion:SfTimeSelector>
     </syncfusion:DateTimeEdit.Clock>
 </syncfusion:DateTimeEdit>
