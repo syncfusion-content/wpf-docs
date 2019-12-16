@@ -35,7 +35,7 @@ this.MultiColumnDropDown.SelectionMode = DropDownSelectionMode.Single;
 
 ![Single item selected in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img1.png)
 
-## Multiple Selection
+## Multi-Selection
 
 You can select multiple rows at same time by setting SelectionMode as Multiple. Further, you can select multiple rows in the following ways
 
@@ -87,7 +87,11 @@ this.MultiColumnDropDown.SeparatorString = "-";
 
 ![Customization of SeparatorString in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img1.png)
 
-### Adding custom header to the dropdown
+### Accessing the selected items
+
+The selected items can be retrieved by using the SelectedItems property. The items can also be added programmatically by using the SelectedItems property.
+
+### Load custom control in drop-down
 
 You can add custom header to the dropdown by setting HeaderTemplate property. For example, you can add textbox at the header of dropdown to search and filter items.
 
@@ -197,6 +201,8 @@ internal class MultiConverter : IMultiValueConverter
 {% endtabs %}
 
 You can refer `Search with TextBox in DropDown` section in this [sample](https://github.com/syncfusion/wpf-demos/tree/master/MultiColumn%20Dropdown/MultiColumnDropDownDemo/CS).
+
+N> You can load custom control in drop-down only when SelectionMode is Multiple.
 
 ## Events
 
