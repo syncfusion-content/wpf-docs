@@ -89,7 +89,7 @@ this.MultiColumnDropDown.SeparatorString = "-";
 
 ### Accessing the selected items
 
-The selected items can be retrieved by using the SelectedItems property. The items can also be added programmatically by using the SelectedItems property.
+The selected items can be retrieved by using the SelectedItems property. The selection can also be added programmatically by using the SelectedItems property.
 
 ### Load custom control in drop-down
 
