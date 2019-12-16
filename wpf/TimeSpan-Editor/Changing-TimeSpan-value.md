@@ -13,24 +13,18 @@ This section describes how to edit the value in `TimeSpanEdit` control.
 
 ### By Programmatically
 
-You can also change the value of timespan using this code.
+You can change the value of timespan using `Value` property.
 
 {% tabs %}
 
 {% highlight C# %}
 
 //Create the instance of TimeSpanEdit
-
 TimeSpanEdit timespan = new TimeSpanEdit();
-
 timespan.Width = 150;
-
 timespan.Height = 30;
-
 timespan.Value = new TimeSpan(3,5,4,3);
-
 //Adding control to the window
-
 this.Content = timespan;
 
 {% endhighlight %}
@@ -41,9 +35,9 @@ this.Content = timespan;
 
 You can also change the timespan value by using up/down arrow keys by selecting the field or you can be incremented or decremented by scrolling using MouseWheel.
 
-![MouseScroll increment](Getting-Started_images/scrolling1.png)
+![MouseScroll increment](Getting-Started_images/MouseWhell-decrement.gif)
 
-![MouseScroll Decrement](Getting-Started_images/scrolling2.png)
+![MouseScroll Decrement](Getting-Started_images/MouseWhell-increment.gif)
 
 
 ### Mouse click and drag
