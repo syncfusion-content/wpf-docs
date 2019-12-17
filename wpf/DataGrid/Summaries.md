@@ -233,13 +233,13 @@ The template for the table summary row can also be loaded based on data object a
 {% tabs %}
 {% highlight xaml %}
 <Window.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </Window.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
 <syncfusion:SfDataGrid.TableSummaryRows>
-    <syncfusion:GridTableSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True" Position="Bottom" TitleTemplateSelector="{StaticResource selectTemplate}">
+    <syncfusion:GridTableSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True" Position="Bottom" TitleTemplateSelector="{StaticResource templateSelector}">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
                                     Format="'{Sum:c}'"
@@ -298,7 +298,7 @@ The template for the defined summary column can be loaded using the `GridSummary
     <syncfusion:GridTableSummaryRow Position="Bottom" ShowSummaryInRow="False">
         <syncfusion:GridTableSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                  Format="'Total UnitPrice : {Sum:c}'"
+                                  Format="'Total Price : {Sum:c}'"
                                   MappingName="UnitPrice"
                                   SummaryType="DoubleAggregate" >
                 <syncfusion:GridSummaryColumn.Template>
@@ -342,7 +342,7 @@ class SummaryColumnConverter : IValueConverter
                     if (columnName == "ProductName")
                         return string.Format("Total Product Count : {0:d}", item.AggregateValues.Values.ToArray());
                     if (columnName == "UnitPrice")
-                        return string.Format("Total UnitPrice : {0:c}", item.AggregateValues.Values.ToArray());
+                        return string.Format("Total Price : {0:c}", item.AggregateValues.Values.ToArray());
                 }
             }
         }
@@ -368,7 +368,7 @@ The template for the defined summary column can also be loaded based on data obj
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </syncfusion:ChromelessWindow.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
@@ -377,9 +377,9 @@ The template for the defined summary column can also be loaded based on data obj
     <syncfusion:GridSummaryRow ShowSummaryInRow="False">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                  Format="'Total UnitPrice : {Sum:c}'"
+                                  Format="'Total Price : {Sum:c}'"
                                   MappingName="UnitPrice"
-                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource selectTemplate}">
+                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource templateSelector}">
             </syncfusion:GridSummaryColumn>
         </syncfusion:GridSummaryRow.SummaryColumns>
     </syncfusion:GridSummaryRow>
@@ -556,7 +556,7 @@ The template for column summary can also be displayed with title template based 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </syncfusion:ChromelessWindow.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
@@ -564,17 +564,17 @@ The template for column summary can also be displayed with title template based 
                        ShowGroupDropArea="True"
                        AllowResizingColumns="True">
     <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource selectTemplate}" >
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource templateSelector}" >
             <syncfusion:GridSummaryRow.SummaryColumns>
                 <syncfusion:GridSummaryColumn Name="PriceAmount"
                           Format="'{Sum:c}'"
                           MappingName="UnitPrice"
-                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource selectTemplate}">
+                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource templateSelector}">
                 </syncfusion:GridSummaryColumn>
                 <syncfusion:GridSummaryColumn Name="ProductCount"
                           Format="'{Count:d}'"
                           MappingName="ProductName"
-                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource selectTemplate}">
+                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource templateSelector}">
                 </syncfusion:GridSummaryColumn>
             </syncfusion:GridSummaryRow.SummaryColumns>
         </syncfusion:GridSummaryRow>
@@ -880,13 +880,13 @@ The template for the group summary row can also be loaded based on data object a
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </syncfusion:ChromelessWindow.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
 <syncfusion:SfDataGrid.GroupSummaryRows>
-    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True" TitleTemplateSelector="{StaticResource selectTemplate}">
+    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True" TitleTemplateSelector="{StaticResource templateSelector}">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
                         Format="'{Sum:c}'"
@@ -944,7 +944,7 @@ The template for the defined summary column can be loaded using the `GridSummary
     <syncfusion:GridSummaryRow ShowSummaryInRow="False">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                  Format="'Total UnitPrice : {Sum:c}'"
+                                  Format="'Total Price : {Sum:c}'"
                                   MappingName="UnitPrice"
                                   SummaryType="DoubleAggregate" >
                 <syncfusion:GridSummaryColumn.Template>
@@ -988,7 +988,7 @@ class SummaryColumnConverter : IValueConverter
                     if (columnName == "ProductName")
                         return string.Format("Total Product Count : {0:d}", item.AggregateValues.Values.ToArray());
                     if (columnName == "UnitPrice")
-                        return string.Format("Total UnitPrice : {0:c}", item.AggregateValues.Values.ToArray());
+                        return string.Format("Total Price : {0:c}", item.AggregateValues.Values.ToArray());
                 }
             }
         }
@@ -1013,7 +1013,7 @@ The template for the defined summary column can also be loaded based on data obj
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </syncfusion:ChromelessWindow.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
@@ -1022,9 +1022,9 @@ The template for the defined summary column can also be loaded based on data obj
     <syncfusion:GridSummaryRow ShowSummaryInRow="False">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                  Format="'Total UnitPrice : {Sum:c}'"
+                                  Format="'Total Price : {Sum:c}'"
                                   MappingName="UnitPrice"
-                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource selectTemplate}">
+                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource templateSelector}">
             </syncfusion:GridSummaryColumn>
         </syncfusion:GridSummaryRow.SummaryColumns>
     </syncfusion:GridSummaryRow>
@@ -1200,7 +1200,7 @@ The template for column summary can also be displayed with title template based 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </syncfusion:ChromelessWindow.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
@@ -1208,17 +1208,17 @@ The template for column summary can also be displayed with title template based 
                        ShowGroupDropArea="True"
                        AllowResizingColumns="True">
     <syncfusion:SfDataGrid.GroupSummaryRows>
-        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource selectTemplate}" >
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource templateSelector}" >
             <syncfusion:GridSummaryRow.SummaryColumns>
                 <syncfusion:GridSummaryColumn Name="PriceAmount"
-                          Format="'Total UnitPrice : {Sum:c}'"
+                          Format="'Total Price : {Sum:c}'"
                           MappingName="UnitPrice"
-                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource selectTemplate}">
+                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource templateSelector}">
                 </syncfusion:GridSummaryColumn>
                 <syncfusion:GridSummaryColumn Name="ProductCount"
                           Format="'Total Product Count : {Count:d}'"
                           MappingName="ProductName"
-                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource selectTemplate}">
+                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource templateSelector}">
                 </syncfusion:GridSummaryColumn>
             </syncfusion:GridSummaryRow.SummaryColumns>
         </syncfusion:GridSummaryRow>
@@ -1472,13 +1472,13 @@ The template for the caption summary row can also be loaded based on data object
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </syncfusion:ChromelessWindow.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
                        ItemsSource="{Binding Orders}">
 <syncfusion:SfDataGrid.CaptionSummaryRow>
-    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} Products" ShowSummaryInRow="True" TitleTemplateSelector="{StaticResource selectTemplate}">
+    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} Products" ShowSummaryInRow="True" TitleTemplateSelector="{StaticResource templateSelector}">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
                         Format="'{Sum:c}'"
@@ -1536,7 +1536,7 @@ The template for the defined summary column can be loaded using the `GridSummary
     <syncfusion:GridSummaryRow ShowSummaryInRow="False">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                  Format="'Total UnitPrice : {Sum:c}'"
+                                  Format="'Total Price : {Sum:c}'"
                                   MappingName="UnitPrice"
                                   SummaryType="DoubleAggregate" >
                 <syncfusion:GridSummaryColumn.Template>
@@ -1580,7 +1580,7 @@ class CaptionSummaryColumnConverter : IValueConverter
                     if (columnName == "ProductName")
                         return string.Format("Total Product Count : {0:d}", item.AggregateValues.Values.ToArray());
                     if (columnName == "UnitPrice")
-                        return string.Format("Total UnitPrice : {0:c}", item.AggregateValues.Values.ToArray());
+                        return string.Format("Total Price : {0:c}", item.AggregateValues.Values.ToArray());
                 }
             }
         }
@@ -1605,7 +1605,7 @@ The template for the defined summary column can also be loaded based on data obj
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </syncfusion:ChromelessWindow.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
@@ -1614,9 +1614,9 @@ The template for the defined summary column can also be loaded based on data obj
     <syncfusion:GridSummaryRow ShowSummaryInRow="False">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="PriceAmount"
-                                  Format="'Total UnitPrice : {Sum:c}'"
+                                  Format="'Total Price : {Sum:c}'"
                                   MappingName="UnitPrice"
-                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource selectTemplate}">
+                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource templateSelector}">
             </syncfusion:GridSummaryColumn>
         </syncfusion:GridSummaryRow.SummaryColumns>
     </syncfusion:GridSummaryRow>
@@ -1791,7 +1791,7 @@ The template for column summary can also be displayed with title template based 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
-    <local:TemplateSelector x:Key="selectTemplate" />
+    <local:TemplateSelector x:Key="templateSelector" />
 </syncfusion:ChromelessWindow.Resources>
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="True"
@@ -1799,17 +1799,17 @@ The template for column summary can also be displayed with title template based 
                        ShowGroupDropArea="True"
                        AllowResizingColumns="True">
     <syncfusion:SfDataGrid.CaptionSummaryRow>
-        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource selectTemplate}" >
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource templateSelector}" >
             <syncfusion:GridSummaryRow.SummaryColumns>
                 <syncfusion:GridSummaryColumn Name="PriceAmount"
                           Format="'{Sum:c}'"
                           MappingName="UnitPrice"
-                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource selectTemplate}">
+                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource templateSelector}">
                 </syncfusion:GridSummaryColumn>
                 <syncfusion:GridSummaryColumn Name="ProductCount"
                           Format="'{Count:d}'"
                           MappingName="ProductName"
-                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource selectTemplate}">
+                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource templateSelector}">
                 </syncfusion:GridSummaryColumn>
             </syncfusion:GridSummaryRow.SummaryColumns>
         </syncfusion:GridSummaryRow>
