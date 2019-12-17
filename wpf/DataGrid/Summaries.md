@@ -161,8 +161,11 @@ The data grid hosts any view(s) inside a table summary for the entire row or for
 
 #### Displaying template for a row
 
+The template for the row can be loaded by using DataTemplate or DataTemplateSelector as follows,
+
 ##### Using template 
-The template can be loaded to the table summary row using `GridSummaryRow.TitleTemplate` property and it can be customized based on the requirement.
+
+The template for the table summary row can be loaded using the GridSummaryRow.TitleTemplate property with GridSummaryRow.ShowSummaryInRow enabled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -225,7 +228,7 @@ class TableSummaryRowConverter : IValueConverter
 
 ##### Using template selector
 
-Table Summary Row provides support to choose different DataTemplate based on underlying data object using  GridTableSummaryRow.TitleTemplateSelector property.
+Table summary row provides support to choose different data template based on underlying data object using  `GridTableSummaryRow.TitleTemplateSelector` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -270,8 +273,10 @@ public class TemplateSelector : DataTemplateSelector
     }
 }
 {% endhighlight %}
-
+{% endtabs %}
 #### Displaying template for a column
+
+The template for the column can be loaded by using DataTemplate or DataTemplateSelector as follows,
 
 ##### Using template
 
@@ -354,8 +359,10 @@ class SummaryColumnConverter : IValueConverter
 
 ##### Using template selector
 
-Table summary column provides support to choose different data template based on underlying data object using GridSummaryColumn.TemplateSelector property.
+Table summary column provides support to choose different data template based on underlying data object using `GridSummaryColumn.TemplateSelector` property.
 
+{% tabs %}
+{% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
     <local:TemplateSelector x:Key="selectTemplate" />
 </syncfusion:ChromelessWindow.Resources>
@@ -486,7 +493,7 @@ The following are the limitations of displaying column summary along with title 
 
 ##### Using template
 
-The template can be loaded to the table summary row and table summary column at same time using `GridSummaryRow.TitleTemplate` and `GridSummaryColumn.Template` properties by defining the `GridSummaryRow.Title` and `GridSummaryRow.TitleColumnCount` properties.
+The template can be loaded to the table summary row and table summary column at same time using `GridSummaryRow.TitleTemplate` and `GridSummaryColumn.Template` properties by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) and `GridSummaryRow.TitleColumnCount` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -538,7 +545,7 @@ The template can be loaded to the table summary row and table summary column at 
 
 ##### Using template selector
 
-Table summary provides support to choose different data template for both table summary row and table summary column using `GridSummaryRow.TitleTemplate` and `GridSummaryColumn.Template` properties by defining the GridSummaryRow.Title and GridSummaryRow.TitleColumnCount.
+Table summary provides support to choose different data template for both table summary row and table summary column using `GridSummaryRow.TitleTemplate` and `GridSummaryColumn.Template` properties by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and GridSummaryRow.TitleColumnCount.
 
 {% tabs %}
 {% highlight xaml %}
@@ -857,7 +864,7 @@ class GroupSummaryRowConverter : IValueConverter
 
 #####  Using template selector
 
-Group Summary Row provides support to choose different DataTemplate based on underlying data object using  GridSummaryRow.TitleTemplateSelector property.
+Group summary row provides support to choose different data template based on underlying data object using  `GridSummaryRow.TitleTemplateSelector` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -901,6 +908,7 @@ public class TemplateSelector : DataTemplateSelector
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 #### Displaying template for a column
 
@@ -984,7 +992,7 @@ class SummaryColumnConverter : IValueConverter
 
 ##### Using template selector
 
-Group summary column provides support to choose different DataTemplate based on underlying data object using  GridSummaryColumn.TemplateSelector property.
+Group summary column provides support to choose different data template based on underlying data object using  `GridSummaryColumn.TemplateSelector` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1117,7 +1125,7 @@ The following are the limitations of displaying column summary along with title 
 
 ##### Using template 
 
-The template can be loaded to the summary row and summary column at same time using `GridSummaryColumn.Template` and `GridSummaryRow.TitleTemplate` properties by defining the GridSummaryRow.Title and GridSummaryRow.TitleColumnCount.
+The template can be loaded to the summary row and summary column at same time using `GridSummaryColumn.Template` and `GridSummaryRow.TitleTemplate` properties by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) and `GridSummaryRow.TitleColumnCount` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1169,7 +1177,7 @@ The template can be loaded to the summary row and summary column at same time us
 
 ##### Using template selector
 
-Group summary provides support to choose different data template for both summary row and summary column by defining the GridSummaryRow.Title and GridSummaryRow.TitleColumnCount.
+Group summary provides support to choose different data template for both summary row and  summary column by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) and `GridSummaryRow.TitleColumnCount`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1437,7 +1445,7 @@ class CaptionSummaryRowConverter : IValueConverter
 
 #####  Using template selector
 
-Caption Summary Row provides support to choose different DataTemplate based on underlying data object using  GridTableSummaryRow.TitleTemplateSelector property.
+Caption summary row provides support to choose different data template based on underlying data object using  `GridTableSummaryRow.TitleTemplateSelector` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1484,6 +1492,7 @@ public class TemplateSelector : DataTemplateSelector
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 #### Displaying template for a column
 
@@ -1567,7 +1576,7 @@ class CaptionSummaryColumnConverter : IValueConverter
 
 ##### Using template selector
 
-Caption Summary column provides support to choose different DataTemplate based on underlying data object using  GridSummaryColumn.TemplateSelector property.
+Caption summary column provides support to choose different data template based on underlying data object using  `GridSummaryColumn.TemplateSelector` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1700,7 +1709,7 @@ The following are the limitations of displaying column summary along with title 
       
 ##### Using template 
        
-The data template can be loaded to the caption summary row and caption summary column at same time using `GridSummaryColumn.Template` and `GridSummaryRow.TitleTemplate` by defining the GridSummaryRow.Title and GridSummaryRow.TitleColumnCount.
+The data template can be loaded to the caption summary row and caption summary column at same time using `GridSummaryColumn.Template` and `GridSummaryRow.TitleTemplate` by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) and `GridSummaryRow.TitleColumnCount` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1752,7 +1761,7 @@ The data template can be loaded to the caption summary row and caption summary c
 
 ##### Using template selector 
 
-Captin summary provides support to choose different data template for both caption summary row and caption summary column using `GridSummaryColumn.TemplateSelector` and `GridSummaryRow.TitleTemplateSelector` by defining the GridSummaryRow.Title and GridSummaryRow.TitleColumnCount.
+Captin summary provides support to choose different data template for both summary row and summary column using `GridSummaryColumn.TemplateSelector` and `GridSummaryRow.TitleTemplateSelector` properties by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) and `GridSummaryRow.TitleColumnCount`.
 
 {% tabs %}
 {% highlight xaml %}
