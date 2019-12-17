@@ -9,7 +9,7 @@ documentation: ug
 
 # Checked event notification
 
-When the checked state of an item is changed,it will be notified using the [ItemChecked] event.The event handler has an argument of type ItemCheckedEventArgs containing data related to this event.
+When the checked state of an item is changed,it will be notified using the [ItemChecked](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.checkedlistbox.itemcheck?view=netframework-4.8) event.The event handler has an argument of type ItemCheckedEventArgs containing data related to this event.
 
 {% tabs %}
 {% highlight XAML %}
