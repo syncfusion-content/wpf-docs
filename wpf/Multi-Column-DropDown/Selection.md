@@ -85,7 +85,7 @@ this.MultiColumnDropDown.SeparatorString = "-";
 {% endhighlight %}
 {% endtabs %}
 
-![Customization of SeparatorString in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img1.png)
+![Customization of SeparatorString in WPF SfMultiColumnDropDownControl](Selection_images/Selection_img3.png)
 
 ### Accessing the selected items
 
