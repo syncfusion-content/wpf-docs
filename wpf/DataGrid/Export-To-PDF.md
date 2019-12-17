@@ -588,7 +588,7 @@ Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid�
 
 You can customize its exporting operation by using [ChildGridExportingEventHandler](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~ChildGridExportingEventHandler.html).
 
-N> While exporting `DetailsViewDataGrid`, [FitAllColumnsInOnePage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~FitAllColumnsInOnePage.html) is set to ‘true’ internally as horizontal pagination is not supported for `DetailsViewDataGrid`.
+N> While exporting `DetailsViewDataGrid`, [FitAllColumnsInOnePage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions~FitAllColumnsInOnePage.html) is set to `true` internally as horizontal pagination is not supported for `DetailsViewDataGrid`.
 
 ### Excluding DetailsViewDataGrid while exporting
 

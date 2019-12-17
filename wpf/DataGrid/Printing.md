@@ -95,7 +95,7 @@ dataGrid.Print();
 
 ### Print with StackedHeaders
 
-SfDataGrid provides support to print the StackedHeaders by setting the [PrintSettings.CanPrintStackedHeaders](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~CanPrintStackedHeaders.html) as ‘true’.
+SfDataGrid provides support to print the StackedHeaders by setting the [PrintSettings.CanPrintStackedHeaders](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~CanPrintStackedHeaders.html) as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -164,7 +164,7 @@ SfDataGrid provides a way to display additional content at the top (Header) or b
 
 Steps to add page header while printing,
 
-1. Create DataTemplate in Application.Resources.
+1. Create DataTemplate in `Application.Resources`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -249,7 +249,7 @@ dataGrid.ShowPrintPreview();
 When you require better performance and don’t want appearance settings (Background and Foreground) to be exported while printing then you can use this printing option by setting [PrintSettings.AllowPrintByDrawing](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintSettings~AllowPrintByDrawing.html) property to `true`.
  
  
-N> This is default print mode. For appearance customization of rows and cells while printing, refer printing [customization section](#printing-customization).
+N> This is default print mode. For appearance customization of rows and cells while printing, refer [printing customization](#printing-customization) section.
 
  
 ### Printing using UIElement Rendering
@@ -480,7 +480,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-Here, CustomerName column is displayed in grid. But it is excluded while printing.
+Here, `CustomerName` column is displayed in grid. But it is excluded while printing.
 
 ![Shows removal column while printing in WPF DataGrid](Printing_images/Printing_img13.png)
 
@@ -518,7 +518,7 @@ dataGrid.ShowPrintPreview();
 {% endhighlight %}
 {% endtabs %}
 
-Here, OrderID column Header text is changed as “Order ID” while printing.
+Here, OrderID column Header text is changed as `Order ID` while printing.
 
 ![customize the column header text while printing in WPF DataGrid](Printing_images/Printing_img14.png)
 
@@ -899,7 +899,7 @@ dataGrid.ShowPrintPreview();
 
 You can create custom print preview window by adding [PrintPreviewAreaControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html) to preview the view. [PrintManagerBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl~PrintManagerBase.html) will handle the printing operations and `PrintPreviewAreaControl` is responsible for preview. 
 
-Steps to create custom print preview window.
+Steps to create `custom print preview` window.
 
 1.Add [PrintPreviewAreaControl](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.PrintPreviewAreaControl.html)  and required controls to print or customize the print settings.
  

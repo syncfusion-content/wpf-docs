@@ -18,7 +18,7 @@ The appearance of SfDataGrid control can be customized by [VisualStyle](https://
 Below example explains how to apply blend theme for SfDataGrid using `SfSkinManager` in an existing application.
 <ul>
 <li>Add reference to <b>Syncfusion.SfSkinManager.Wpf.dll</b> and <b>Syncfusion.Themes.Blend.Wpf.dll</b> assembly.</li>
-<li>Now add reference to `SfSkinManager` namespace and set `SfSkinManager.VisualStyle` attached property to window or SfDataGrid. Setting `VisualStyle` property to window will apply blend theme for all controls in Windows.
+<li>Now add reference to <mark>SfSkinManager</mark> namespace and set <mark>SfSkinManager.VisualStyle</mark> attached property to window or SfDataGrid. Setting <mark>VisualStyle</mark> property to window will apply blend theme for all controls in Windows.
 
 {% tabs %}
 {% highlight xaml %}
