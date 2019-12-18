@@ -144,35 +144,6 @@ inputLayout.InputView = new Entry() { TextBox = "John" };
 
 N> Container color is not applicable for `None' type.
 
-## Disabled state
-
-The text input layout is disabled by setting the `IsEnabled` property to `false`. The color of the container and other UI elements will also be changed to the disabled state, but its color cannot be customized.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<inputLayout:SfTextInputLayout
-    Hint="Name" 
-    IsEnabled="false">
-    <TextBox />
-</inputLayout:SfTextInputLayout>  
- 
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.IsEnabled = false;
-inputLayout.InputView = new TextBox(); 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Disabled state](Images/DisabledState.png)
-
 ## Customize the corner radius of the outline border 
 
 The corner radius of the outlined border can be customized by setting `OutlineCornerRadius` property.

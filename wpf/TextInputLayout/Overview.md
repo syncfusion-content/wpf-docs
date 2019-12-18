@@ -14,11 +14,11 @@ The text input layout control for WPF adds decorative elements such as floating 
 ## Key features
 
 * Displays floating labels when the input view is focused.
-* Displays error labels.
-* Supports filled, outlined, and none container types.
-* Provides RTL support.
-* Provides options to reserve space for assistive labels.
-* Provides options to customize the thickness of stroke width and corner radius.
-* Displays leading and trailing icons.
 * Displays help labels.
-* Displays maximum character count.
+* Displays error labels.
+* Displays character count.
+* Displays leading and trailing icons.
+* Supports filled, outlined, and none container types.
+* Provides options to customize the thickness of the base line.
+* Provides option to customize the corner radius of the outlined border.
+* Provides RTL support.
