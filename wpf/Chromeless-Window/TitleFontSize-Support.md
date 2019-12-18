@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Title bar Font size Support | ChromelessWindow | WPF | Syncfusion
-description: This section briefly describes the ability to set Title bar font size in Chromeless Window
+description: This section briefly describes the ability to set Title bar font size in Syncfusion's Chromeless Window
 platform: wpf
 control: ChromelessWindow
 documentation: ug
