@@ -16,7 +16,7 @@ The default value of the `HintFloatMode` is `Float`.
 
 ## Float
 
-The hint label will be float to the top of input view when the text box get focused.
+The hint label will be float to the top of input view get focused.
 
 {% tabs %} 
 

@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# States and Colors
+# Customization
 
 Based on the text input layout state, the colors will be applied to the hint label, base line, border and assistive labels.
 
@@ -35,7 +35,6 @@ I> The cursor color of the input view is the same as the `Accent` color of the  
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "User name";
 inputLayout.FocusedForeground = Brushes.Green;
-inputLayout.ErrorText = "User name available";
 inputLayout.InputView = new TextBox() { Text = "John" }; 
 
 {% endhighlight %}
@@ -70,7 +69,6 @@ When the input view is unfocused, the `Foreground` property value will be applie
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "User name";
 inputLayout.Foreground = Brushes.Gray;
-inputLayout.ErrorText = "User name available";
 inputLayout.InputView = new TextBox() { Text = "John" }; 
 
 {% endhighlight %}
@@ -91,7 +89,7 @@ When the input layout is set to error state, the `ErrorForeground` property valu
     Hint="Name" 
     ErrorForeground="Red"
     ErrorText="Should not contain special characters"
-    HasError="true">
+    HasError="True">
     <TextBox Text="John/" />
 </inputLayout:SfTextInputLayout>  
  
@@ -174,3 +172,37 @@ inputLayout.InputView = new TextBox();
 {% endtabs %}
 
 ![Disabled state](Images/DisabledState.png)
+
+## Customize the corner radius of the outline border 
+
+The corner radius of the outlined border can be customized by setting `OutlineCornerRadius` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<inputLayout:SfTextInputLayout
+    Hint="Name" 
+    ContainerType="Outlined"
+    OutlineCornerRadius="8">
+    <TextBox />
+</inputLayout:SfTextInputLayout>  
+			
+{% endhighlight %}
+
+{% highlight c# %}
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Name";
+inputLayout.ContainerType = ContainerType.Outlined;
+inputLayout.OutlineCornerRadius = 8;
+inputLayout.InputView = new TextBox(); 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Outline radius](Images/outlineradius.png)
+
+>**NOTE**
+It is only applicable to the `Outlined` type of container.
