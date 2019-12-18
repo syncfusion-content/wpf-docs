@@ -26,7 +26,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF ColorPicker via designer
 
-1) [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) / [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html) can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+1) [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.WPF
 
@@ -36,7 +36,7 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF ColorPicker via XAML
 
-To add the [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) / [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html) manually in XAML, follow these steps:
+To add the [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) manually in XAML, follow these steps:
 
 1) Create a new WPF project in Visual Studio.
 
@@ -61,7 +61,7 @@ To add the [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wp
         Title="MainWindow" Height="450" Width="800">
 
 <Grid Name="grid">
-    <syncfusion:ColorPicker Name="colorPicker" Height="100" Width="280" />
+    <syncfusion:ColorPicker Name="colorPicker" Height="100" Width="280"/>
 </Grid>
 
 {% endhighlight %}
@@ -92,7 +92,7 @@ using Syncfusion.Windows.Shared;
 
 {% endtabs %}
 
-4) Create an instance of [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) / [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html), and add it to the window.
+4) Create an instance of [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html), and add it to the window.
 
 {% tabs %}
 
@@ -110,26 +110,132 @@ grid.Children.Add(colorPicker);
 
 ![ColorPicker Control](Getting-Started_images/ColorPicker_Dropdown.png)
 
-## Bind to a color
+# Select a Color
 
- [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) and [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html) can be easily binded to [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Color.html) as well as [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Brush.html) .
+Selecting solid color or gradient brush through [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be done using [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Color.html) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Brush.html) properties.
 
- {% tabs %}
+## Programmatically
+
+Here color can be picked programmatically by following the few steps below.
+
+### Solid
+
+[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) supports [SolidColorBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netframework-4.8) as well as [Color](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.color?view=netframework-4.8) color selection.
+
+{% tabs %}
 {% highlight xaml %}
 
- <Button  Background="{Binding ElementName=colorPicker, Path=Brush}" ></Button>
-<syncfusion:ColorPicker Name="colorPicker" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+<syncfusion:ColorPicker x:Name="colorPicker" Brush="Yellow"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+colorPicker.Brush = Brushes.Yellow;
 
 {% endhighlight %}
 {% endtabs %}
 
-## Choose a Color
+{% tabs %}
+{% highlight xaml %}
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) consist of delicate input components to select color, such as slider with **Hue Spectrum**,Color selection palette with saturation range, updown controls to get or set color value runtime.
+ <syncfusion:ColorPicker x:Name="colorPicker" Color="Yellow"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+colorPicker.Color = Colors.Yellow;
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![Choose a color from ColorPicker](Getting-Started_images/ColorPicker_select-a-solidcolor.png)
+
+### Gradient
+
+[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) supports gradient brushes which holds multiple colors that blend into each other along an axis.
+
+**Linear Gradient**
+
+[Linear Gradient](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.lineargradientbrush) can be selected by the gradient colors and their location along the gradient axis using the GradientStop objects.
+
+
+{% tabs %}
+{% highlight xaml %}
+
+ <syncfusion:ColorPicker x:Name="colorPicker" Width="200">
+   <syncfusion:ColorPicker.Brush>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+             <GradientStop Color="Yellow" Offset="0.0" />
+             <GradientStop Color="Red" Offset="0.25" />
+             <GradientStop Color="Blue" Offset="0.75" />
+             <GradientStop Color="LimeGreen" Offset="1.0" />
+        </LinearGradientBrush>
+    </syncfusion:ColorPicker.Brush>
+ </syncfusion:ColorPicker>
+{% endhighlight %}
+{% highlight c# %}
+
+LinearGradientBrush linearGradient = new LinearGradientBrush();
+linearGradient.StartPoint = new Point(0.5, 0);
+linearGradient.EndPoint = new Point(0.5, 1);
+linearGradient.GradientStops.Add(new GradientStop(Colors.Yellow, 0.0));
+linearGradient.GradientStops.Add(new GradientStop(Colors.Red, 0.25));
+linearGradient.GradientStops.Add(new GradientStop(Colors.Blue, 0.75));
+linearGradient.GradientStops.Add(new GradientStop(Colors.LimeGreen, 1.0));
+
+colorPicker.Brush = linearGradient;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Choose a Linear Gradient from ColorPicker](Getting-Started_images/ColorPicker_select-a-LinearGradient.png)
+
+**Radial Gradient**
+
+[Radial Gradient](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.radialgradientbrush) is similar to [Linear Gradient](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.lineargradientbrush), except for the axis defined by the circle.
+
+
+{% tabs %}
+{% highlight xaml %}
+
+ <syncfusion:ColorPicker x:Name="colorPicker" Width="200">
+     <syncfusion:ColorPicker.Brush>
+         <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+            <GradientStop Color="Yellow" Offset="0" />
+            <GradientStop Color="Red" Offset="0.25" />
+            <GradientStop Color="Blue" Offset="0.75" />
+            <GradientStop Color="LimeGreen" Offset="1" />
+        </RadialGradientBrush>
+     </syncfusion:ColorPicker.Brush>
+ </syncfusion:ColorPicker>
+{% endhighlight %}
+{% highlight c# %}
+
+RadialGradientBrush radialGradient = new RadialGradientBrush();
+radialGradient.GradientOrigin = new Point(0.5, 0.5);
+radialGradient.Center = new Point(0.5, 0.5);
+radialGradient.RadiusX = 0.5;
+radialGradient.RadiusY = 0.5;
+radialGradient.GradientStops.Add(new GradientStop(Colors.Yellow, 0.0));
+radialGradient.GradientStops.Add(new GradientStop(Colors.Red, 0.25));
+radialGradient.GradientStops.Add(new GradientStop(Colors.Blue, 0.75));
+radialGradient.GradientStops.Add(new GradientStop(Colors.LimeGreen, 1.0));
+
+colorPicker.Brush = radialGradient;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Choose a Radial Gradient from ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
+
+## Interactively
+
+[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) consist of bunch of input components to select color and edit its properties runtime.
 
 ![Choose a color from ColorPicker](Getting-Started_images/ColorPicker_Choose_a_color.gif)
 
-## Color changed notification
+# Color changed notification
 
 Color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~SelectedBrushChanged_EV.html) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~ColorChanged_EV.html).
 
@@ -139,18 +245,33 @@ Color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Sha
 
 colorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
 
-  private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
- {
-         // code here
- }
+private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    // code here
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-## Gradient Brush
+### Disable gradient editor
 
-ColorPicker supports Linear and Radial brush selection along with their property editors.
+Transition from Solid to Gradient brush can be restricted using [IsGradientPropertyEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsGradientPropertyEnabled.html) properties.
 
-![WPF ColorPicker Linear Gradient](Getting-Started_images/ColorPicker_Linear_Gradient.png)
+The following code examples illustrate this:
 
-![WPF ColorPicker Radial Gradient](Getting-Started_images/ColorPicker_Radial_Gradient.png)
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPicker x:Name="colorPicker" IsGradientEditorEnabled="false"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ColorPicker colorPicker = new ColorPicker ();
+colorPicker. IsGradientEditorEnabled =  false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![when EnableSolidToGradientSwitch property is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_IsGradientPropertyEnabled.png)

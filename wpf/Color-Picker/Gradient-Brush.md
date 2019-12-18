@@ -7,65 +7,30 @@ control: ColorPicker
 documentation: ug
 ---
 
-## ColorPicker with Gradient Support
+## What is a gradient brush? 
 
-Color Picker now comes with Gradient tool which returns a brush of type Solid, Linear or Radial. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
+A gradient brush paints an area with multiple colors that blend into each other along an axis. Color Picker now comes with Gradient tool which returns a brush of type Linear and Radial. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
 
 ![ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker_Gradient_Mode.png)
 
-## Switch Brush Type
-
-Brush type can be switched between solid to gradient or vice versa, runtime as well as programmatically. This can be switched using [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~BrushMode.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<Syncfusion: ColorPicker x:Name="colorPicker" BrushMode="Gradient"   ></  Syncfusion: ColorPicker >
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-ColorPicker colorPicker = new ColorPicker ();
-colorPicker.BrushMode = BrushModes.Gradient;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker_BrushMode.png)
-
-### Restrict Solid to Gradient switch
-
-Transition from Solid to Gradient brush can be restricted using  [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~EnableSolidToGradientSwitch.html) and [IsGradientPropertyEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsGradientPropertyEnabled.html) properties.
-
-The following code examples illustrate this:
-
-{% tabs %}
-{% highlight xaml %}
-
-<Syncfusion: ColorPicker x:Name="colorPicker"  EnableSolidToGradientSwitch="true"   ></  Syncfusion: ColorPicker >
-<Syncfusion:ColorEdit x:Name="colorPicker" IsGradientEditorEnabled="false"  EnableSolidToGradientSwitch="false"   ></  Syncfusion: ColorEdit >
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-ColorPicker colorPicker = new ColorPicker ();
-colorPicker.EnableSolidToGradientSwitch =  false;
-colorPicker. IsGradientEditorEnabled =  false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![when EnableSolidToGradientSwitch property is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_IsGradientPropertyEnabled.png)
-
-## Gradient brush editor
+## Gradient Stops
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) has gradient editor similar to that of VisualStudio brush editor. Adding new gradient stops, altering the offset and changing the color of the gradient stops can be done run-time.
 
 ![ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_editing.gif)
 
-## Linear Brush
+### Add remove stops
+
+Gradient stops can be added or removed in existing GradientBrush runtime, 
+
+### Slide stops
+
+### Change color of a stop
+
+### Reverse stops
+
+
+## Configure linear gradient
 
 Start and end point of the selected [Linear Gradient brush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.lineargradientbrush?view=netframework-4.8) can be edited runtime through the input options as well as with their properties listed in below table.
 
@@ -87,7 +52,7 @@ Indicates End point of LinearGradientBrush.</td></tr>
 
 ![ColorPicker Linear Gradient Editor](ColorPicker-with-Gradient-Support_images/ColorPicker_LinearGradient_Editor.png)
 
-## Radial Brush
+## Configure radial gradient
 
 Gradient origin, Centre and Radius of the selected [Radial Gradient brush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.radialgradientbrush?view=netframework-4.8) can be edited runtime through the input options as well as with their properties listed in below table.
 
@@ -116,7 +81,7 @@ Indicates Y value in Radius of RadialGradientBrush.</td></tr>
 
 ![ColorPicker Radial Gradient Editor](ColorPicker-with-Gradient-Support_images/ColorPicker_RadialGradient_Editor.png)
 
-## Property Editor Mode
+## Hide gradient property editor
 
 [GradientPropertyEditorMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~GradientPropertyEditorMode.html) property specifies whether Gradient Editor should be displayed as a Popup or in extended mode.
 
@@ -141,3 +106,24 @@ The GradientEditor is displayed accordingly.
 ![Colorpicker Extended gradientEditor](ColorPicker-with-Gradient-Support_images/Colorpicker_Extended_gradientEditor.png)
 
 ![Colorpicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/Colorpicker_Popup_gradientEditor.png)
+
+## Switch between Solid, Linear, Gradient mode
+
+Brush type can be switched between solid to gradient or vice versa, runtime as well as programmatically. This can be switched using [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~BrushMode.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion: ColorPicker x:Name="colorPicker" BrushMode="Gradient"   ></  Syncfusion: ColorPicker >
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ColorPicker colorPicker = new ColorPicker ();
+colorPicker.BrushMode = BrushModes.Gradient;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker_BrushMode.png)
