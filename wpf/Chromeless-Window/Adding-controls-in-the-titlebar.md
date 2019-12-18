@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding controls in the Title bar
-description: This section briefly describes adding controls in the Chromeless Window Title bar.
+title: Adding controls in the Syncfusion's Chromeless Window Title bar
+description: This section briefly describes the ability to add controls in Syncfusion's Chromeless Window Title bar.
 platform: wpf
 control: ChromelessWindow
 documentation: ug

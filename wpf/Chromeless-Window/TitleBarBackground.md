@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TitleBarBackground
-description: This section briefly describes the ability to set Title bar background in Chromeless Window
+title: Title bar Background | ChromelessWindow | WPF | Syncfusion
+description: This section briefly describes the ability to set Title bar background in Syncfusion's Chromeless Window
 platform: wpf
 control: ChromelessWindow
 documentation: ug

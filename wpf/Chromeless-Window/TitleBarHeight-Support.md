@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TitleBarHeight Support
-description: This section briefly describes the ability to set Title bar height size in Chromeless Window
+title: Title bar Height Support | ChromelessWindow | WPF | Syncfusion
+description: This section briefly describes the ability to set Title bar height in Syncfusion's Chromeless Window
 platform: wpf
 control: ChromelessWindow
 documentation: ug
