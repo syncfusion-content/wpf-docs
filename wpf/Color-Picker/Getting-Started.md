@@ -110,11 +110,11 @@ grid.Children.Add(colorPicker);
 
 ![ColorPicker Control](Getting-Started_images/ColorPicker_Dropdown.png)
 
-# Select a Color
+## Select a Color
 
 Selecting solid color or gradient brush through [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be done using [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Color.html) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Brush.html) properties.
 
-## Programmatically
+### Programmatically
 
 Here color can be picked programmatically by following the few steps below.
 
@@ -235,7 +235,7 @@ colorPicker.Brush = radialGradient;
 
 ![Choose a color from ColorPicker](Getting-Started_images/ColorPicker_Choose_a_color.gif)
 
-# Color changed notification
+### Color changed notification
 
 Color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~SelectedBrushChanged_EV.html) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~ColorChanged_EV.html).
 

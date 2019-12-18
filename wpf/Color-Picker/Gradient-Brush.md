@@ -135,7 +135,7 @@ Brush type can be switched between solid to gradient or vice versa, runtime as w
 
 ![Colorpicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/ColorPicker_Switch_brushes.gif)
 
-Programmatical switching involves [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~BrushMode.html) property.
+Code behind switching involves [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~BrushMode.html) property.
 
 {% tabs %}
 {% highlight xaml %}
