@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series| SfChart | Wpf | Syncfusion
-description: series
+description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -2396,6 +2396,189 @@ In the above screenshot, the second segment’s low value is greater than the fi
 
 
 ## Stacking Charts
+
+### Stacking Line
+
+[`StackingLineSeries`]() resembles multiple types of series of the [`LineSeries`](). Each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](). 
+
+The following code example illustrates how to use [`StackingLineSeries`]():
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:StackingLineSeries  
+
+XBindingPath="MonthlyExpence"    
+
+YBindingPath="Father" 
+
+Interior="#4A4A4A"
+
+ItemsSource="{Binding Data}"/>
+
+<chart:StackingLineSeries
+
+XBindingPath="MonthlyExpence" 
+
+YBindingPath="Mother"
+
+Interior="#BCBCBC"
+
+ItemsSource="{Binding Data}"/> 
+
+<chart:StackingLineSeries 
+
+XBindingPath="MonthlyExpence" 
+
+YBindingPath="Son"
+
+Interior="#7F7F7F"
+
+ItemsSource="{Binding Data}" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+StackingLineSeries series1 = new StackingLineSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "MonthlyExpence",
+
+    YBindingPath ="Father",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+StackingLineSeries series2 = new StackingLineSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "MonthlyExpence",
+
+    YBindingPath = "Mother",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingLineSeries series3 = new StackingLineSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "MonthlyExpence",
+
+    YBindingPath = "Son",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![StackingLine chart type in WPF](Series_images/stackingline.png)
+
+### Stacking Line 100
+
+[`StackingLine100Series`]() resembles [`StackingLinenSeries`]() but the cumulative portion of each stacked element always comes to a total of 100%. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:StackingLine100Series ItemsSource="{Binding Data}" 
+
+XBindingPath="MonthlyExpence" 
+
+YBindingPath="Father" 
+
+Interior="#4A4A4A"
+/>
+
+<chart:StackingLine100Series ItemsSource="{Binding Data}"
+
+XBindingPath="MonthlyExpence"  
+
+YBindingPath="Mother"
+
+Interior="#BCBCBC"/>
+
+<chart:StackingLine100Series ItemsSource="{Binding Data}"
+
+XBindingPath="MonthlyExpence" 
+
+YBindingPath="Son"
+
+Interior="#7F7F7F"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+StackingLine100Series series1 = new StackingLine100Series()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "MonthlyExpence",
+
+    YBindingPath = "Father",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+StackingLine100Series series2 = new StackingLine100Series()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "MonthlyExpence",
+
+    YBindingPath = "Mother",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingLine100Series series3 = new StackingLine100Series()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "MonthlyExpence",
+
+    YBindingPath = "Son",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![StackingLine100 chart type in WPF](Series_images/stackingLine100.png)
 
 ### Stacking Column
 
