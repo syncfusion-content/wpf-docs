@@ -144,7 +144,7 @@ inputLayout.InputView = new Entry() { TextBox = "John" };
 
 N> Container color is not applicable for `None' type.
 
-## Customize the corner radius of the outline border 
+## Ouline corner radius
 
 The corner radius of the outlined border can be customized by setting `OutlineCornerRadius` property.
 
