@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding support in SfMultiColumnDropDownControl.
-description: How to bind the data in SfMultiColumnDropDownControl.
+title: Data Binding in WPF SfMultiColumnDropDownControl | Syncfusion.
+description: How to bind the data, Binding with complex properties and Binding with indexer properties in SfMultiColumnDropDownControl and more details.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -48,7 +48,7 @@ You can populate the drop down list for SfMultiColumnDropDownControl by setting 
 
 Here, `DisplayMember` is `Title` hence the Title property in underlying data object is displayed in the textbox and the `ValueMember` is `OrderID` hence the OrderID property in underlying data object is considered as the `SelectedValue`.
 
-![](Data-Binding_images/Data-Binding_img1.png)
+![Data binding in datagrid wpf](Data-Binding_images/Data-Binding_img1.png)
 
 ## Binding with complex and indexer properties
 
@@ -76,6 +76,8 @@ Binding with complex properties
 {% endhighlight %}
 {% endtabs %}
 
+![Binding with complex properties in datagrid wpf](Data-Binding_images/Data-Binding_img2.png)
+
 Binding with indexer properties
 
 {% tabs %}
@@ -97,3 +99,5 @@ Binding with indexer properties
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
 {% endtabs %}
+
+![Binding with indexer properties in datagrid wpf](Data-Binding_images/Data-Binding_img3.png)
