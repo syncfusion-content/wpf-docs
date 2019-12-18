@@ -108,7 +108,7 @@ inputLayout.InputView = new TextBox();
 
 {% endtabs %}
 
-![None type](Images/None_type.png)
+![None type](Images/HintLabelHidden.png)
 
 
 

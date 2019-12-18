@@ -72,40 +72,6 @@ inputLayout.InputView = new TextBox() { Text = "John" };
 
 ![Filled type](Images/Filled.png)
 
-### Customize the corner radius of the outline border 
-
-The corner radius of the outlined border can be customized by setting `OutlineCornerRadius` property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<inputLayout:SfTextInputLayout
-    Hint="Name" 
-    ContainerType="Outlined"
-    OutlineCornerRadius="8">
-    <TextBox />
-</inputLayout:SfTextInputLayout>  
-			
-{% endhighlight %}
-
-{% highlight c# %}
-
-var inputLayout = new SfTextInputLayout();
-inputLayout.Hint = "Name";
-inputLayout.ContainerType = ContainerType.Outlined;
-inputLayout.OutlineCornerRadius = 8;
-inputLayout.InputView = new TextBox(); 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Outline radius](Images/outlineradius.png)
-
->**NOTE**
-It is only applicable to the `Outlined` type of container.
-
 ## None
 
 The container will have an empty background and enough space.
