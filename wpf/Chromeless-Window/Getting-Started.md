@@ -155,6 +155,38 @@ You can customize the caption height by setting the [TitleBarHeight](https://hel
 
 ![wpf chromeless window title bar height](Getting-Started_images/wpf-chromeless-window-title-height.png)
 
+## Title bar text alignment
+
+The text alignment of the title can be set using the `TitleTextAlignment` property in the Chromeless Window. The various options of the `TitleTextAlignment` are listed below.
+
+* Left
+* Right
+* Center
+* Stretch
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:ChromelessWindow x:Class="Chromeless_Window_Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chromeless_Window_Sample"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.VisualStyle="Office2016Colorful"
+        TitleTextAlignment="Center"
+        Title="Chromeless Window Sample"
+        Height="350" Width="550">
+    <Grid>
+    </Grid>
+</syncfusion:ChromelessWindow>
+{% endhighlight %}
+{% endtabs %}
+
+![Title text alignment](Getting-Started_images/TitleTextAlignment.png)
+
+
 
 ## Title bar icon
 
@@ -178,6 +210,35 @@ You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de
 {% endtabs %}
 
 ![wpf chromeless window icon](Getting-Started_images/wpf-chromeless-window-icon.png)
+
+## Title bar icon alignment
+
+The title bar icon can be aligned to `Left` or `Right` using the `IconAlignment` property in the Chromeless Window. Its various options are listed below.
+
+* Left
+* Right
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:ChromelessWindow x:Class="Chromeless_Window_Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chromeless_Window_Sample"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        skin:SfSkinManager.VisualStyle="Office2016Colorful"
+        TitleTextAlignment="Center"
+        Title="Chromeless Window Sample" IconAlignment="Left"
+        Height="350" Width="550">
+    <Grid>
+    </Grid>
+</syncfusion:ChromelessWindow>
+{% endhighlight %}
+{% endtabs %}
+
+![Chromeless Window icon alignment](Getting-Started_images/wpf-chromeless-window-icon-alignment.png)
 
 ## Customizing the border of ChromelessWindow
 

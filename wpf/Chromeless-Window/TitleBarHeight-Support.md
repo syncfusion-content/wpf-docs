@@ -1,19 +1,19 @@
 ---
 layout: post
 title: TitleBarHeight Support
-description: TitleBarHeight Support
+description: This section briefly describes the ability to set Title bar height size in Chromeless Window
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
 
-# TitleBarHeight Support
+# Title bar Height Support
 
-ChromelessWindow now supports changing the FontSize and TitleBarHeight directly with the **“** **TitleFontSize** **”** and **“** **TitleBarHeight** **”** respectively and there is no need to edit the full template to change this.
+ChromelessWindow now supports changing the title bar font size and height directly with the  `TitleFontSize` and `TitleBarHeight` respectively and there is no need to edit the full template to change this.
 
-TitleBarHeight is a property, which is used to change the height of the TitleBar. By default its value is 30 and we can change this default value as desired 
+`TitleBarHeight` is a property, which is used to change the height of the Title bar. By default its value is 30 and we can change this default value as desired 
 
-Here is the code example for setting the TitleBarHeight Property
+Here is the code example for setting the `TitleBarHeight` Property
 
 {% tabs %}
 
@@ -45,4 +45,4 @@ this.TitleBarHeight = 60;
 
 {% endtabs %}
 
-![](TitleBarHeight-Support_images/TitleBarHeight-Support_img1.jpeg)
+![Setting title bar height](TitleBarHeight-Support_images/TitleBarHeight-Support_img1.jpeg)

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: TitleBarBackground
-description: TitleBarBackground
+description: This section briefly describes the ability to set Title bar background in Chromeless Window
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# TitleBarBackground
+# Title bar Background
 
-The **TitleBarBackground** property can help to set the Background for the TitleBar. By setting the value for this property, user can create custom TitleBars.
+The `TitleBarBackground` property can help to set the background for the Title bar. By setting the value for this property, user can create custom Title bars.
 
 {% tabs %}
 
@@ -42,4 +42,4 @@ Me.TitleBarBackground = New SolidColorBrush(Colors.Red)
 
 The following screen shots illustrate the title bar background changes.
 
-![](TitleBarBackground_images/TitleBarBackground_img1.jpeg)
+![Setting title bar background](TitleBarBackground_images/TitleBarBackground_img1.jpeg)
