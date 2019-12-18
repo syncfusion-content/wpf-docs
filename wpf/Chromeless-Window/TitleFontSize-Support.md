@@ -1,14 +1,14 @@
 ---
 layout: post
-title: TitleFontSize Support
-description: TitleFontSize Support
+title: Title bar Font size Support | ChromelessWindow | WPF | Syncfusion
+description: This section briefly describes the ability to set Title bar font size in Syncfusion's Chromeless Window
 platform: wpf
 control: ChromelessWindow
 documentation: ug
 ---
-# TitleFontSize Support
+# Title bar Font size Support
 
-The FontSize of the ChromelessWindow title can be changed by using **TitleFontSize** property. By default its value is 12, to enable this functionality, change its value as desired
+The Font size of the ChromelessWindow title bar can be changed by using `TitleFontSize` property. By default its value is 12, to enable this functionality, change its value as desired
 
 To set this property, use the below code
 
@@ -41,4 +41,4 @@ Me.TitleFontSize = 25
 
 {% endtabs %}
 
-![](ChromelessWindow-TitleFontSize-Support_images/ChromelessWindow-TitleFontSize-Support_img1.jpeg)
+![Setting font size for the title bar text](ChromelessWindow-TitleFontSize-Support_images/ChromelessWindow-TitleFontSize-Support_img1.jpeg)
