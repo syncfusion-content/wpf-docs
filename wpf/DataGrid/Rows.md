@@ -310,7 +310,7 @@ Description
 {{'[FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FrozenRowsCount.html)'| markdownify }}
 </td>
 <td>
-Set the frozen rows count at `top` of the SfDataGrid.
+Set the frozen rows count at <kbd>top</kbd> of the SfDataGrid.
 </td>
 </tr>
 <tr>
@@ -318,7 +318,7 @@ Set the frozen rows count at `top` of the SfDataGrid.
 {{'[FooterRowsCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterRowsCount.html)'| markdownify }}
 </td>
 <td>
-Set the footer rows count at `bottom` of the SfDataGrid.
+Set the footer rows count at </kbd>bottom</kbd> of the SfDataGrid.
 </td>
 </tr>
 <tr>
@@ -326,7 +326,7 @@ Set the footer rows count at `bottom` of the SfDataGrid.
 {{'[FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html)'| markdownify }}
 </td>
 <td>
-Set the frozen columns count in `left side` of the SfDataGrid. 
+Set the frozen columns count in <kbd>left side</kbd> of the SfDataGrid. 
 </td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ Set the frozen columns count in `left side` of the SfDataGrid.
 {{'[FooterColumnCount](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html)'| markdownify }}
 </td>
 <td>
-Set the frozen columns in `right side` of the SfDataGrid.
+Set the frozen columns in <kbd>right side</kbd> of the SfDataGrid.
 </td>
 </tr>
 </table>
@@ -481,15 +481,11 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 ### Limitations
 
-1. When using `DetailsView` with freeze panes, exception will be raised like “DetailsView is not supported with Freeze panes support”.
+1. When using `DetailsView` with freeze panes, exception will be raised like **DetailsView is not supported with Freeze panes support**.
 
 2. When `AllowFrozenGroupHeaders` is true, frozen rows will not be considered.
 
 3. SfDataGrid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
 
-
-N>
-
-1. Header rows, table summary rows and row header are frozen regardless of `FrozenRowsCount` and `FooterRowsCount`.
-
-2. `FrozenRowsCount` and `FooterRowsCount` values should be less than the number of rows and column visible.
+N> 1. Header rows, table summary rows and row header are frozen regardless of `FrozenRowsCount` and `FooterRowsCount`.
+   2. `FrozenRowsCount` and `FooterRowsCount` values should be less than the number of rows and column visible.

@@ -752,7 +752,7 @@ Using [ExcelExportingOptions.CellsExportingEventHandler](http://help.syncfusion.
 
 You can perform cell level customization such as row-level styling, formatting particular column in the exported worksheet. 
 
-In the below code snippet, NumberFormat for `Unit Price` column is changed in the exported sheet after exporting without using CellsExportingEventHandler. 
+In the below code snippet, NumberFormat for `Unit Price` column is changed in the exported sheet after exporting without using `CellsExportingEventHandler`. 
 
 Reference:
 [http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting](http://help.syncfusion.com/file-formats/xlsio/working-with-cell-or-range-formatting)

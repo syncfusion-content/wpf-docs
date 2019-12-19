@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in SfMultiColumnDropDownControl.
-description: How to handle the filtering in SfMultiColumnDropDownControl.
+title: Filtering in WPF Multi Column Dropdown control | Syncfusion
+description: Learn about the various filtering like case-sensitive filtering, custom filtering and filtering delay in WPF Multi Column Dropdown control and more details.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
@@ -33,7 +33,7 @@ By default, drop down list is filtered based on `SearchCondition.StartsWith` con
 {% endhighlight %}
 {% endtabs %}
 
-![](Filtering_images/Filtering_img1.png)
+![The image describes the AllowIncrementalFiltering support in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img1.png)
 
 ## Case-Sensitive Filtering
 
@@ -82,10 +82,34 @@ public class CustomMultiColumnControl : SfMultiColumnDropDownControl
 
 Here, `Title` is defined as a `DisplayMember`. But it also searches the match case from the `Cast` column also while filtering.
 
-![](Filtering_images/Filtering_img2.png)
+![The image describes the custom filtering by FilterRecord method in SfMultiColumnDropDownControl WPF](Filtering_images/Filtering_img2.png)
 
 
 N> Excel-like filtering is not supported in SfMultiColumnDropDownControl. You can customize the SfMultiColumnDropDownControl ControlTemplate to enable the Excel-like filtering by setting `AllowFiltering` as true in SfDataGrid.
+
+## Filtering Delay
+By default, filtering and auto-completion operations performed while typing in the editor will be delayed for a specified amount of time (milliseconds). The period of delaying filtering and auto-completion operations can be specified by the `FilterDelay` property. The default value for the `FilterDelay` property is `500`.
+{% tabs %}
+{% highlight c# %}
+this.sfMultiColumnDropDown.FilterDelay = 2000;
+{% endhighlight %}
+{% highlight xml %}
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfMultiColumnDropDown"
+                                                 Width="175"
+                                                 Height="30"
+                                                 ItemsSource="{Binding Orders}"
+                                                 DisplayMember="OrderID" 
+                                                 AutoGenerateColumns="False"
+                                                 FilterDelay="2000"
+                                                 SelectedIndex="2">
+            <syncfusion:SfMultiColumnDropDownControl.Columns>
+                <syncfusion:GridTextColumn MappingName="OrderID" />
+                <syncfusion:GridTextColumn MappingName="CustomerID" />
+                <syncfusion:GridTextColumn MappingName="Country" />
+            </syncfusion:SfMultiColumnDropDownControl.Columns>
+        </syncfusion:SfMultiColumnDropDownControl>
+{% endhighlight %}
+{% endtabs %}
 
 ## Limitations
 When setting DataTable as `ItemsSource`, `AllowIncrementalFiltering` is not supported.
