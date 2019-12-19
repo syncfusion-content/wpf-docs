@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in WPF SfMultiColumnDropDownControl | Syncfusion.
-description: How to bind the properties, complex proerties and indexer properties with SfMultiColumnDropDownControl.
+description: How to bind the data, data with complex properties, data with indexer properties in WPF SfMultiColumnDropDownControl.
 platform: wpf
 control: SfMultiColumnDropDownControl
 documentation: ug
