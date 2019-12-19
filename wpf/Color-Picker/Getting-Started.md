@@ -118,7 +118,7 @@ Selecting solid color or gradient brush through [ColorPicker](https://help.syncf
 
 Here color can be picked programmatically by following the few steps below.
 
-### Solid
+#### Solid
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) supports [SolidColorBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netframework-4.8) as well as [Color](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.color?view=netframework-4.8) color selection.
 
@@ -151,7 +151,7 @@ colorPicker.Color = Colors.Yellow;
 
 ![Choose a color from ColorPicker](Getting-Started_images/ColorPicker_select-a-solidcolor.png)
 
-### Gradient
+#### Gradient
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) supports gradient brushes which holds multiple colors that blend into each other along an axis.
 
@@ -229,13 +229,13 @@ colorPicker.Brush = radialGradient;
 
 ![Choose a Radial Gradient from ColorPicker](Getting-Started_images/ColorPicker_select-a-RadialGradient.png)
 
-## Interactively
+### Interactively
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) consist of bunch of input components to select color and edit its properties runtime.
 
 ![Choose a color from ColorPicker](Getting-Started_images/ColorPicker_Choose_a_color.gif)
 
-### Color changed notification
+## Color changed notification
 
 Color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~SelectedBrushChanged_EV.html) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~ColorChanged_EV.html).
 
@@ -253,7 +253,7 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 {% endhighlight %}
 {% endtabs %}
 
-### Disable gradient editor
+## Disable gradient editor
 
 Transition from Solid to Gradient brush can be restricted using [IsGradientPropertyEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsGradientPropertyEnabled.html) properties.
 
