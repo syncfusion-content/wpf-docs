@@ -48,7 +48,7 @@ You can populate the drop down list for SfMultiColumnDropDownControl by setting 
 
 Here, `DisplayMember` is `Title` hence the Title property in underlying data object is displayed in the textbox and the `ValueMember` is `OrderID` hence the OrderID property in underlying data object is considered as the `SelectedValue`.
 
-![Bidning the data with SfMultiColumnDropDownControl Wpf](Data-Binding_images/Data-Binding_img1.png)
+![Binding the data with SfMultiColumnDropDownControl Wpf](Data-Binding_images/Data-Binding_img1.png)
 
 ## Binding with complex and indexer properties
 
