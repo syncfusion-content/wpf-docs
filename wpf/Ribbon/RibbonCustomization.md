@@ -261,6 +261,74 @@ Finally, the Items gets displayed in the QAT
 
 ![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img6.jpg)
 
+## Add custom QAT items
+
+Ribbon provides an option to add items to the QAT which will not be present in the Ribbon. These items can be defined in the `CustomQATItems` collection of the `QuickAccessToolbar` and can be accessed from the QAT Window in the `Commands Not in the Ribbon` and `All Commands` section. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:Ribbon.QuickAccessToolBar>
+    <syncfusion:QuickAccessToolBar QATDropDownVisiblity="Visible">
+        <syncfusion:QuickAccessToolBar.CustomQATItems>
+            <syncfusion:RibbonButton Label="Undo" SmallIcon="/Resources/Undo_01.png" />
+            <syncfusion:RibbonButton Label="Redo" SmallIcon="/Resources/Redo_01.png" />
+            <syncfusion:RibbonButton Label="New" Command="ApplicationCommands.Open" SmallIcon="/Resources/Document-01.png"/>
+        </syncfusion:QuickAccessToolBar.CustomQATItems>
+    </syncfusion:QuickAccessToolBar>
+</syncfusion:Ribbon.QuickAccessToolBar>
+
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+
+RibbonButton undoRibbonButton = new RibbonButton() { Label = "Undo", SmallIcon = new BitmapImage(new Uri("/Resources/Undo_01.png", UriKind.Relative))};
+RibbonButton redoRibbonButton = new RibbonButton() { Label = "Redo", SmallIcon = new BitmapImage(new Uri("/Resources/Redo_01.png", UriKind.Relative))};
+RibbonButton newRibbonButton = new RibbonButton() { Label = "New", SmallIcon = new BitmapImage(new Uri("/Resources/Document-01.png", UriKind.Relative))};
+this.Ribbon.QuickAccessToolBar.CustomQATItems.Add(undoRibbonButton);
+this.Ribbon.QuickAccessToolBar.CustomQATItems.Add(redoRibbonButton);
+this.Ribbon.QuickAccessToolBar.CustomQATItems.Add(newRibbonButton);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Dim undoRibbonButton As New RibbonButton() With {
+	.Label = "Undo",
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Undo_01.png", UriKind.Relative))
+}
+Dim redoRibbonButton As New RibbonButton() With {
+	.Label = "Redo",
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Redo_01.png", UriKind.Relative))
+}
+Dim newRibbonButton As New RibbonButton() With {
+	.Label = "New",
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Document-01.png", UriKind.Relative))
+}
+Me.Ribbon.QuickAccessToolBar.CustomQATItems.Add(undoRibbonButton)
+Me.Ribbon.QuickAccessToolBar.CustomQATItems.Add(redoRibbonButton)
+Me.Ribbon.QuickAccessToolBar.CustomQATItems.Add(newRibbonButton)
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Once these items are added to the Quick Access Toolbar using the `Add` button, it will be visible in the Ribbon QAT and in the QAT Dropdown menu. The visibility of this item in the Ribbon QAT can be toggled by checking/unchecking from the QAT Dropdown menu. 
+
+![Adding CustomQATItem to the QAT](AddingItemstoQuickAccessToolBar_images/Adding_CustomQATItem_To_QAT.png)
+
+![Accessing the CustomQATItem through QAT Dropdown menu](AddingItemstoQuickAccessToolBar_images/CustomQATItem_in_DropDownMenu_QAT.png)
+
+The added `CustomQATItem` in the QAT Dropdown menu can be removed through the QAT Window using the `Remove` button. 
+
+![Removing CustomQATITem from the QAT Dropdown menu](AddingItemstoQuickAccessToolBar_images/Removing_CustomQATItem_from_Dropdown.png)
+
+
 ## Add items from Ribbon context menu		
 QAT can also customized by adding the items from the Ribbon ContextMenu. Select Add to Quick Access Toolbar by right clicking the Ribbon item required to add to the QAT. Then, the respective item gets added as one of the items in the QAT.
 
