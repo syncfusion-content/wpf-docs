@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonGallery in Syncfusion Ribbon control
-description: RibbonGallery in Syncfusion Ribbon control
+description: This section breifly describes the functions of RibbonGallery in Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -25,7 +25,7 @@ To display items as a normal gallery control in the ribbon, set `VisualMode` pro
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img1.jpg)
+![InRibbon Visual mode of Ribbon Gallery](RibbonGallery_images/RibbonGallery_img1.jpg)
 
 
 ## DropDown mode
@@ -42,7 +42,7 @@ To display items as DropDown in the ribbon, set `VisualMode` property as `DropDo
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img2.jpg)
+![DropDown Visual mode of Ribbon Gallery](RibbonGallery_images/RibbonGallery_img2.jpg)
 
 
 ## Ribbon gallery item
@@ -101,7 +101,7 @@ _ribbonGallery.Items.Add(_ribbonGalleryItem2)
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img3.jpg)
+![Items in the RibbonGallery](RibbonGallery_images/RibbonGallery_img3.jpg)
 
 
 ## Ribbon gallery group
@@ -154,7 +154,7 @@ Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grou
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img4.jpg)
+![Groups in the RibbonGallery](RibbonGallery_images/RibbonGallery_img4.jpg)
 
 
 ## Add custom menu items
@@ -228,5 +228,74 @@ _ribbonGallery.MenuItems.Add(_ribbonButton3)
 
 {% endtabs %}
 
-![](RibbonGallery_images/RibbonGallery_img5.jpg)
+![Custom menu items in RibbonGallery](RibbonGallery_images/RibbonGallery_img5.jpg)
+
+## Add custom context menu
+
+Context menu is a type of menu that appears when the right click operation is performed on the control. `RibbonGallery` and `RibbonGalleryItem`'s allows us to display a set of specific commands or options by setting `RibbonContextMenu` to its `ContextMenu` property. This will override the default context menu of the RibbonGallery and its items that is set inside the Ribbon.
+
+{% tabs %}
+{% highlight XAML %}
+<syncfusion:RibbonWindow.Resources>
+    <syncfusion:RibbonContextMenu x:Key="galleryContextMenu" ItemsSource="{Binding}">
+        <syncfusion:RibbonMenuItem Header="Apply Style" IconBarEnabled="True"/>
+        <syncfusion:RibbonMenuItem Header="Remove from Style Gallery" IconBarEnabled="True"/>
+        <Separator />
+        <syncfusion:RibbonMenuItem Header="Minimize Ribbon" IconBarEnabled="True" Click="MinimizeRibbonItem_Click" />
+    </syncfusion:RibbonContextMenu>
+</syncfusion:RibbonWindow.Resources>
+<Grid>
+    <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <syncfusion:RibbonTab Caption="HOME" IsChecked="False"/>
+        <syncfusion:RibbonTab IsChecked="True" Caption="DESIGN">
+            <syncfusion:RibbonBar Header="RibbonBar">
+                <syncfusion:RibbonGallery x:Name="gallery" ContextMenu="{DynamicResource galleryContextMenu}"
+                                          Width="380" SizeForm="Large" Height="67"  ItemHeight="60"  ItemWidth="60" MenuIconBarEnabled="True">
+                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                        <StackPanel>
+                            <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="AaBbCc"/>
+                            <TextBlock TextAlignment="Center" Margin="0,11,0,0" Text="Normal"/>
+                        </StackPanel>
+                    </syncfusion:RibbonGalleryItem>
+                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                        <StackPanel>
+                            <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="AaBbCc"/>
+                            <TextBlock TextAlignment="Center" Margin="0,11,0,0" Text="No Spa.."/>
+                        </StackPanel>
+                    </syncfusion:RibbonGalleryItem>
+                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                        <StackPanel>
+                            <TextBlock FontSize="18" Foreground="DarkBlue" TextAlignment="Center" Margin="0,5,0,0" Text="AaBbCc"/>
+                            <TextBlock TextAlignment="Center" Margin="0,6,0,0" Text="Heading 1"/>
+                        </StackPanel>
+                    </syncfusion:RibbonGalleryItem>
+                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                        <StackPanel>
+                            <TextBlock FontSize="16" Foreground="DarkBlue" TextAlignment="Center" Margin="0,6,0,0" Text="AaBbCc"/>
+                            <TextBlock TextAlignment="Center" Margin="0,8,0,0" Text="Heading 2"/>
+                        </StackPanel>
+                    </syncfusion:RibbonGalleryItem>
+                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                        <StackPanel>
+                            <TextBlock FontSize="14" Foreground="DarkBlue" TextAlignment="Center" Margin="0,7,0,0" Text="AaBbCc"/>
+                            <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="Heading 3"/>
+                        </StackPanel>
+                    </syncfusion:RibbonGalleryItem>
+                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                        <StackPanel>
+                            <TextBlock FontSize="15" Foreground="DarkBlue" TextAlignment="Center" Margin="0,7,0,0" Text="AaBbCc"/>
+                            <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="Heading 4"/>
+                        </StackPanel>
+                    </syncfusion:RibbonGalleryItem>
+                </syncfusion:RibbonGallery>
+            </syncfusion:RibbonBar>
+        </syncfusion:RibbonTab>
+    </syncfusion:Ribbon>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Separate Ribbon context menu for the Gallery and its items](RibbonGallery_images/RibbonGalleryContextMenu.png)
+
 

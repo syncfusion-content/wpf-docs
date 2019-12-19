@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the text input layout control.
+This section explains the steps needed to configure the control of the text input layout.
 
 ## Adding TextInputLayout reference
 
@@ -17,13 +17,13 @@ Refer to this [document](https://help.syncfusion.com/wpf/add-syncfusion-controls
 
 ## Initialize TextInputLayout
 
-Import the text input layout namespace as demonstrated in the following code snippet.
+Import the namespace of the text input layout as shown in the following code snippet.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-xmlns:inputLayout="clr-namespace:Syncfusion.UI.Xaml.TextInputlayout;assembly=Syncfusion.SfTextInputLayout.WPF"
+xmlns:inputLayout="clr-namespace:Syncfusion.UI.Xaml.TextInputLayout;assembly=Syncfusion.SfTextInputLayout.WPF"
 
 {% endhighlight %}
 
@@ -70,8 +70,7 @@ Then, initialize the text input layout as demonstrated in the following code sni
 
 ## Adding hint
 
-Floating label for the text input layout can be added by setting the `Hint` property. Visibility of the hint can be collapsed by setting the `HintVisibility` property to `false`. By default, this property is set to `true`.
-
+Floating label for the text input layout can be added by setting the `Hint` property. We can specify the display state of the hint label using the `HintVisibility` property, the type of which is [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility?view=netframework-4.8).
 {% tabs %} 
 
 {% highlight xaml %} 
