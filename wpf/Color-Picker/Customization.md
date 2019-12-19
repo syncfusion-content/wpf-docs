@@ -7,25 +7,7 @@ control: ColorPicker
 documentation: ug
 ---
 
-## Setting flow direction
 
-Flow Direction of the ColorPicker and ColorEdit controls is set by using the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.8) property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:ColorPicker FlowDirection="RightToLeft" Name="colorPicker"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-colorPicker.FlowDirection = FlowDirection.RightToLeft;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPicker RightToLeft](Layout-Related-Features_images/ColorPicker_RightToLeft.png)
 
 ## Color Palette
 
@@ -45,23 +27,6 @@ colorPicker.FlowDirection = FlowDirection.RightToLeft;
 
 ![WPF ColorPicker IsColorPaletteVisible](ScRGB-Color_images/ColorPicker_ColorPalleteEnabled.png)
 
-## Alpha Visibility
-
-Alpha/Opacity parameter of the color can be altered using delicate slider which handle alpha visibility. This can be disabled by [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsAlphaVisible.html) property.
-
-{% tabs %}
-{% highlight xaml %}
- <syncfusion:ColorEdit  x:Name="ColorEdit2"   IsAlphaVisible="False"/>
-{% endhighlight %}
-
-{% highlight C# %}
-
- ColorEdit2.IsAlphaVisible = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WPF ColorPicker IsAlphaVisible](ScRGB-Color_images/ColorPicker_IsAlphaVisible.png)
 
 ## Gradient brush display mode
 
