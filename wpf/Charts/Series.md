@@ -2399,9 +2399,9 @@ In the above screenshot, the second segment’s low value is greater than the fi
 
 ### Stacking Line
 
-[`StackingLineSeries`]() resembles multiple types of series of the [`LineSeries`](). Each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](). 
+[`StackingLineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) resembles multiple types of series of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries.html). Each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries.html). 
 
-The following code example illustrates how to use [`StackingLineSeries`]():
+The following code example illustrates how to use [`StackingLineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingLineSeries.html):
 
 {% tabs %}
 
@@ -2409,7 +2409,7 @@ The following code example illustrates how to use [`StackingLineSeries`]():
 
 <chart:StackingLineSeries  
 
-XBindingPath="MonthlyExpence"    
+XBindingPath="MonthlyExpenses"    
 
 YBindingPath="Father" 
 
@@ -2419,7 +2419,7 @@ ItemsSource="{Binding Data}"/>
 
 <chart:StackingLineSeries
 
-XBindingPath="MonthlyExpence" 
+XBindingPath="MonthlyExpenses" 
 
 YBindingPath="Mother"
 
@@ -2429,7 +2429,7 @@ ItemsSource="{Binding Data}"/>
 
 <chart:StackingLineSeries 
 
-XBindingPath="MonthlyExpence" 
+XBindingPath="MonthlyExpenses" 
 
 YBindingPath="Son"
 
@@ -2446,7 +2446,7 @@ StackingLineSeries series1 = new StackingLineSeries()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "MonthlyExpence",
+    XBindingPath = "MonthlyExpenses",
 
     YBindingPath ="Father",
 
@@ -2459,7 +2459,7 @@ StackingLineSeries series2 = new StackingLineSeries()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "MonthlyExpence",
+    XBindingPath = "MonthlyExpenses",
 
     YBindingPath = "Mother",
 
@@ -2472,7 +2472,7 @@ StackingLineSeries series3 = new StackingLineSeries()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "MonthlyExpence",
+    XBindingPath = "MonthlyExpenses",
 
     YBindingPath = "Son",
 
@@ -2494,7 +2494,7 @@ chart.Series.Add(series3);
 
 ### Stacking Line 100
 
-[`StackingLine100Series`]() resembles [`StackingLinenSeries`]() but the cumulative portion of each stacked element always comes to a total of 100%. 
+[`StackingLine100Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingLine100Series.html) resembles [`StackingLinenSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
 
 {% tabs %}
 
@@ -2502,7 +2502,7 @@ chart.Series.Add(series3);
 
 <chart:StackingLine100Series ItemsSource="{Binding Data}" 
 
-XBindingPath="MonthlyExpence" 
+XBindingPath="MonthlyExpenses" 
 
 YBindingPath="Father" 
 
@@ -2511,7 +2511,7 @@ Interior="#4A4A4A"
 
 <chart:StackingLine100Series ItemsSource="{Binding Data}"
 
-XBindingPath="MonthlyExpence"  
+XBindingPath="MonthlyExpenses"  
 
 YBindingPath="Mother"
 
@@ -2519,7 +2519,7 @@ Interior="#BCBCBC"/>
 
 <chart:StackingLine100Series ItemsSource="{Binding Data}"
 
-XBindingPath="MonthlyExpence" 
+XBindingPath="MonthlyExpenses" 
 
 YBindingPath="Son"
 
@@ -2534,7 +2534,7 @@ StackingLine100Series series1 = new StackingLine100Series()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "MonthlyExpence",
+    XBindingPath = "MonthlyExpenses",
 
     YBindingPath = "Father",
 
@@ -2547,7 +2547,7 @@ StackingLine100Series series2 = new StackingLine100Series()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "MonthlyExpence",
+    XBindingPath = "MonthlyExpenses",
 
     YBindingPath = "Mother",
 
@@ -2560,7 +2560,7 @@ StackingLine100Series series3 = new StackingLine100Series()
 
     ItemsSource = new ViewModel().Data,
 
-    XBindingPath = "MonthlyExpence",
+    XBindingPath = "MonthlyExpenses",
 
     YBindingPath = "Son",
 
