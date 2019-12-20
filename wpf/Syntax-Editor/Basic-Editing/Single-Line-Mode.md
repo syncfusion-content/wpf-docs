@@ -9,7 +9,7 @@ documentation: ug
 
 ## Single Line Mode
 
-Single Line Mode interprets all lines of code as a single line. It appears as a regular textbox with syntax highlighting, editing, clipboard operation, etc. by setting the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IsMultiLine.html) property to false.The default value is `true`.
+Single Line Mode interprets all lines of code as a single line. It appears as a regular textbox with syntax highlighting, editing, clipboard operation, etc. by setting the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IsMultiLine.html) property to `false`.The default value is `true`.
 
 {% tabs %}
 
