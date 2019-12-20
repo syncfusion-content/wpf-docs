@@ -65,9 +65,9 @@ dataGrid.EditTrigger = EditTrigger.OnTap;
 
 When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~EditorSelectionBehavior.html) property. 
 
-SelectAll – selects the text of edit element loaded inside cell.
+* **SelectAll** – selects the text of edit element loaded inside cell.
 
-MoveLast – places the cursor at the last of edit element loaded inside cell.  
+* **MoveLast** – places the cursor at the last of edit element loaded inside cell.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,17 +86,17 @@ dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 
 SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface. 
 
-The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx). Also when user press <kbd> Esc </kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx). 
+The editing changes in a row will be committed only when user move to next row or pressing enter key in [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx). Also when user press <kbd>Esc</kbd> key, then the changes made in a row will be reverted in [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx). 
 
 `IEditableObject` has the following methods to capture editing, 
 
-[BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) – Gets called to begin edit on underlying data object when cell in a row get into edit mode. 
+* [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) – Gets called to begin edit on underlying data object when cell in a row get into edit mode. 
 
-[CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) – Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
+* [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) – Gets called when user press the <kbd>Esc</kbd> key to discard the changes in a row since last `BeginEdit` call. 
 
-[EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) – Gets called when user move to the next row or press Enter key  to commit changes in underlying data object since last `BeginEdit` call. 
+* [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) – Gets called when user move to the next row or press <kbd>Enter</kbd> key  to commit changes in underlying data object since last `BeginEdit` call. 
 
-In the below code snippet explains the simple implementation of IEditableObject.
+In the below code snippet explains the simple implementation of `IEditableObject`.
 
 {% tabs %}
 {% highlight c# %}
@@ -266,7 +266,7 @@ SfDataGrid triggers the following events during editing.
 
 [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellBeginEdit_EV.html) event occurs when the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) enter into edit mode. [CurrentCellBeginEditEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
+* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 * [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row column index of the DataGrid.
 * [Column](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs~Column.html) : Gets the Grid Column of the SfDataGrid.
 
@@ -319,7 +319,7 @@ void dataGrid_CurrentCellValueChanged(object sender, Syncfusion.UI.Xaml.Grid.Cur
 {% endhighlight %}
 {% endtabs %}
 
-N> GridComboBoxColumn and GridMultiColumnDropList, you have to use the CurrentCellDropDownSelectionChanged event.
+N> `GridComboBoxColumn` and `GridMultiColumnDropList`, you have to use the `CurrentCellDropDownSelectionChanged` event.
 
 ### Combobox column selectionchanged event
 
@@ -420,11 +420,11 @@ WPF DataGrid provides `CellTapped` and `CellDoubleTapped` events to handle cell 
 
 ### Cell tapped event
 
-WPF DataGrid `CellTapped` event occurs when the user clicks or touches a cell in DataGrid with [GridCellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellTappedEventArgs.html). CellTapped event does not occur for the non-selectable cells. The GridCellTappedEventArgs has following members which provides information for `CellTapped` event.
+WPF DataGrid `CellTapped` event occurs when the user clicks or touches a cell in DataGrid with [GridCellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellTappedEventArgs.html). `CellTapped` event does not occur for the non-selectable cells. The `GridCellTappedEventArgs` has following members which provides information for `CellTapped` event.
 * [Column](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~Column.html) - Gets the GridColumn of the tapped cell.
 * [Record](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~Record.html) - Gets the data context of the tapped cell.
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~RowColumnIndex.html) - Gets the RowColumnIndex of the tapped cell.
-* [ChangedButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~ChangedButton.html)-Get the MouseButton associated with the event.
+* [ChangedButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellTappedEventArgs~ChangedButton.html) - Get the MouseButton associated with the event.
 * [OriginalSender](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) - Gets the original reporting source that raised the event.  
 
 {% tabs %}
@@ -446,7 +446,7 @@ private void Datagrid_CellTapped(object sender, GridCellTappedEventArgs e)
 
 ### Cell double tapped event
 
-`CellDoubleTapped` event occurs when the user double clicks or double taps a cell in DataGrid with [GridCellDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellDoubleTappedEventArgs.html). CellDoubleTapped event does not occur for non-selectable cells. GridCellDoubleTappedEventArgs has following members which provides information for `CellDoubleTapped ` event.
+`CellDoubleTapped` event occurs when the user double clicks or double taps a cell in DataGrid with [GridCellDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCellDoubleTappedEventArgs.html). `CellDoubleTapped` event does not occur for non-selectable cells. `GridCellDoubleTappedEventArgs` has following members which provides information for `CellDoubleTapped ` event.
 * [Column](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~Column.html) - Gets the GridColumn of the double tapped cell.
 * [Record](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~Record.html) - Gets the data context of the double tapped cell.
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs~RowColumnIndex.html) - Gets the RowColumnIndex of the double tapped cell.
@@ -518,9 +518,9 @@ You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard intera
 {% endhighlight %}
 {% endtabs %}
 
-N> Enter and Tab keys are always handled by SfDataGrid only.
+N> <kbd>Enter</kbd> and <kbd>Tab</kbd> keys are always handled by `SfDataGrid` only.
 
-### Providing mouse control to UIElement inside template
+### Providing mouse control to UIElement inside Template
 
 You can allow `UIElement` loaded inside template to handle mouse interaction in required cases by setting [VisualContainer.WantsMouseInput](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.VisualContainer~WantsMouseInputProperty.html) attached property to `GridColumn`.
 
@@ -554,7 +554,7 @@ You can change the foreground color of edited cells through the `CellStyleSelect
 Please follow the below steps to highlight the edited cells.
 
 1. Add new property `EditedColumns` in data object to maintain edited column `MappingName`.
-2. Add the MappingName of the column to ` EditedColumns`, in CurrentCellValueChanged to keep track of edited columns in data object. 
+2. Add the `MappingName` of the column to `EditedColumns`, in `CurrentCellValueChanged` event to keep track of edited columns in data object. 
 
 {% tabs %}
 {% highlight c# %}
@@ -574,7 +574,7 @@ private void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
 {% endhighlight %}
 {% endtabs %}
 
-3. Create a style of TargetType `GridCell` and change the Foreground using CellStyleSelector based on ` EditedColumns` property in data object.
+3. Create a style of TargetType `GridCell` and change the Foreground using `CellStyleSelector` based on `EditedColumns` property in data object.
 
 {% tabs %}
 {% highlight xaml %}
@@ -625,7 +625,7 @@ public class CellStyleSelector : StyleSelector
 
 ### Allow editing when pressing minus key
 
-SfDataGrid does not allow the cell to get into the edit mode while pressing the <kbd>Minus</kbd>key or any special character. You can overcome this behavior by customizing the SfDataGrid class, and overriding its OnTextInput () method.
+SfDataGrid does not allow the cell to get into the edit mode while pressing the <kbd>Minus</kbd> key or any special character. You can overcome this behavior by customizing the SfDataGrid class, and overriding its `OnTextInput()` method.
 
 {% tabs %}
 {% highlight c# %}

@@ -141,8 +141,6 @@ LessThanOrEqual
 </tr>
 </table>
 
-*Logical Operations*
-
 <table>
 <tr>
 <th>
@@ -227,7 +225,9 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Price
 You can populate the data for unbound column by handling the [QueryUnBoundColumnValue](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryUnboundColumnValue_EV.html) event.
 [GridUnBoundColumnEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs.html) of the `QueryUnBoundColumnValue` event provides the information about the cell triggered this event. [GridUnBoundColumnValueEventsArgs.OriginalSender](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) returns the DataGrid fired this event for DetailsView. 
 
-You can get or set the `GridUnBoundColumnEventArgs.Value` property based on the [UnBoundAction](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs~UnBoundAction.html). UnBoundAction - `QueryData` denotes the event triggered to query value and cell information and the UnBoundAction - `CommitData` denotes the event triggered to save the edited value. 
+You can get or set the `GridUnBoundColumnEventArgs.Value` property based on the [UnBoundAction](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs~UnBoundAction.html). 
+* UnBoundAction - `QueryData` denotes the event triggered to query value and cell information.
+* UnBoundAction - `CommitData` denotes the event triggered to save the edited value. 
 
 {% tabs %}
 {% highlight c# %}
@@ -343,9 +343,6 @@ In the below code snippet, Foreground of the cells in GridUnBoundColumn changed 
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight c# %}
 public class UnboundCellStyleConverter : IValueConverter
 {
@@ -405,8 +402,8 @@ UnBoundTextColumn
 </tr>
 </table>
 
-If the [GridUnBoundColumn.EditTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplate.html) not defined then the `UnboundTextColumn**`** set as default cell type of `GridUnBoundColumn`. 
-If `GridUnBoundColumn.EditTemplate` property defined then `UnBoundTemplateColumn` set as cell type of `GridUnBoundColumn`
+If the [GridUnBoundColumn.EditTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplate.html) not defined then the `UnboundTextColumn` set as default cell type of `GridUnBoundColumn`. 
+If `GridUnBoundColumn.EditTemplate` property defined then `UnBoundTemplateColumn` set as cell type of `GridUnBoundColumn`.
 
 ### Overriding Existing CellType
 
@@ -452,4 +449,4 @@ You can change the renderer of unbound column by removing the predefined cell ty
 
 ## Templating unbound column
 
-You can load any WPF control in the display mode for `GridUnBoundColumn` by setting [GridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type. You can refer the[CellTemplate](http://help.syncfusion.com/wpf/sfdatagrid/column-types#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](http://help.syncfusion.com/wpf/sfdatagrid/column-types#gridtemplatecolumn) for more information.
+You can load any WPF control in the display mode for `GridUnBoundColumn` by setting [GridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type. You can refer the [CellTemplate](http://help.syncfusion.com/wpf/sfdatagrid/column-types#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](http://help.syncfusion.com/wpf/sfdatagrid/column-types#gridtemplatecolumn) for more information.

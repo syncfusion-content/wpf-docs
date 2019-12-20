@@ -1762,6 +1762,23 @@ Syncfusion.SfInput.WPF
 </tr>
 </table>
 
+## SfTextInputLayout
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTextInputLayout.WPF
+</td>
+<td> 
+Syncfusion.SfTextInputLayout.WPF 
+</td>
+</tr>
+</table>
+
 ## SfTimePicker
 
 <table>

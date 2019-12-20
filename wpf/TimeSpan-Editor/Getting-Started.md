@@ -52,7 +52,7 @@ Create a new WPF project in the Visual Studio to display the TimeSpanEdit with t
 
 The `TimeSpanEdit` control can be added to the application by dragging it from the toolbox and dropping it in a designer view. **Syncfusion.Shared.WPF** assembly added automatically in project:
 
-![ToolBox images](Getting-Started_images/img1.png) 
+![WPF TimeSpanEdit ToolBox images](Getting-Started_images/img1.png) 
 
 ## Adding control manually in code
 

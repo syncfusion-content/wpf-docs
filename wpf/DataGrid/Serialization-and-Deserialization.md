@@ -556,7 +556,7 @@ By default, you cannot serialize the template content in SfDataGrid. This is the
 {% endhighlight %}
 {% endtabs %}
 
-If you want to serialize and deserialize  the template content , you have to reconstruct  the same template during deserialization in  [RestoreColumnProperties](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController~RestoreColumnProperties.html) method.
+If you want to serialize and deserialize the template content, you have to reconstruct the same template during deserialization in [RestoreColumnProperties](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SerializationController~RestoreColumnProperties.html) method.
 
 {% tabs %}
 {% highlight c# %}
