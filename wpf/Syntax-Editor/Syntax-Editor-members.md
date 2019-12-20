@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit control members of WPF
-description: Explains about edit control members of WPF
+title: Members of the WPF Syncfusion Syntax Editor control | Syncfusion
+description: Learn about Members of Syncfusion WPF Syntax Editor control, which is a code editor similiar to  Visual studio editor.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -266,6 +266,11 @@ A property changed event gets raised when the DocumentSource property value is c
 IntellisenseBoxOpening<br/><br/></td><td>
 IntellisenseBoxEventHandler<br/><br/></td><td>
 Gets raised before the Intellisense popup is displayed. This event can be used to cancel the Intellisense popup display or change ItemsSource of the Intellisense ListBox and so on.<br/><br/></td></tr>
+<tr>
+<td>
+IntellisenseBoxClosed<br/><br/></td><td>
+EventHandler<br/><br/></td><td>
+This event will be raised after the Intellisense popup is closed. This event can be used to perform any operation related to Intellisense after the popup is closed.<br/><br/></td></tr>
 <tr>
 <td>
 IntellisenseDrillDown<br/><br/></td><td>
