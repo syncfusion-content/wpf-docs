@@ -28,7 +28,10 @@ You can display the Dropdown Popup by checking the DropDown Button. The visibili
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True" ShowMaskOnNullValue="False" IsCalendarEnabled="False" IsWatchEnabled="True" IsEmptyDateEnabled="True"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230"
+                         EnableClassicStyle="True" ShowMaskOnNullValue="False" 
+                         IsCalendarEnabled="False" IsWatchEnabled="True" 
+                         IsEmptyDateEnabled="True"/>
 
 {% endhighlight %}
 
@@ -40,7 +43,10 @@ You can display the Dropdown Popup by checking the DropDown Button. The visibili
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"  IsCalendarEnabled="True" ShowMaskOnNullValue="False" IsWatchEnabled="False" IsEmptyDateEnabled="True"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" 
+                         EnableClassicStyle="True"  IsCalendarEnabled="True" 
+                         ShowMaskOnNullValue="False" IsWatchEnabled="False" 
+                         IsEmptyDateEnabled="True"/>
 
 {% endhighlight  %}
 
@@ -52,7 +58,9 @@ You can display the Dropdown Popup by checking the DropDown Button. The visibili
 
 {% highlight xaml %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True" IsCalendarEnabled="True" IsWatchEnabled="True" IsEmptyDateEnabled="False"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" 
+                         EnableClassicStyle="True" IsCalendarEnabled="True" 
+                         IsWatchEnabled="True" IsEmptyDateEnabled="False"/>
 
 {% endhighlight %}
 
@@ -64,7 +72,9 @@ You can display the Dropdown Popup by checking the DropDown Button. The visibili
 
 {% highlight xaml %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" EnableClassicStyle="False" IsEmptyDateEnabled="True"  DateTime="07/05/2010" Pattern="LongDate"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                         EnableClassicStyle="False" IsEmptyDateEnabled="True"  
+                         DateTime="07/05/2010" Pattern="LongDate"/>
 
 {% endhighlight  %}
 
@@ -80,8 +90,8 @@ You can edit value of DateTimeEdit using the up-down button by setting the [IsVi
 
 {% highlight XAML %}
 
-<!--Setting ShortDate Pattern-->
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" IsVisibleRepeatButton="True" Pattern="ShortDate"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
+                         DateTime="07/15/2010" IsVisibleRepeatButton="True" />
 
 {% endhighlight %}
 
@@ -93,7 +103,7 @@ dateTimeEdit.IsVisibleRepeatButton = true;
 
 {% endtabs %}
 
-![WPF DateTimeEdit up-down button](Getting-Started_images/wpf-datetimeedit-up-down-button.png)
+![WPF DateTimeEdit up-down button](Dropdown-Popup_images/wpf-datetimeedit-up-down-button.png)
 
 ## Pop-up and up-down buttons functionalities
 
@@ -107,8 +117,7 @@ You can use the Calendar and Clock for changing the Date and Time of the DateTim
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit x:Name="datetimeedit" CanEdit="False" AllowEnter="True">
-</syncfusion:DateTimeEdit>
+<syncfusion:DateTimeEdit x:Name="datetimeedit" CanEdit="False" AllowEnter="True"/>
 
 {% endhighlight %}
 

@@ -155,6 +155,434 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ![Table summary row in WPF DataGrid](Summaries_images/Summaries_img3.png)
 
+### Table summary template
+
+The data grid hosts any view(s) inside a table summary for the entire row or for individual columns by loading a template.
+
+#### Displaying template for a row
+
+The template for the row can be loaded by using [DataTemplate](https://msdn.microsoft.com/en-us/library/system.windows.datatemplate.aspx) or [DataTemplateSelector](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.datatemplateselector?view=netframework-4.8) as follows,
+
+##### Using template 
+
+The template for the table summary row can be loaded using the [GridSummaryRow.TitleTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplate.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TableSummaryRowConverter x:Key="summaryConverter" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.TableSummaryRows>
+    <syncfusion:GridTableSummaryRow Title=" Total Price : {PriceAmount} for {ProductCount} products " ShowSummaryInRow="True" Position="Bottom">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                                    Format="'{Count:d}'"
+                                    MappingName="ProductName"
+                                    SummaryType="CountAggregate" />
+        </syncfusion:GridSummaryRow.SummaryColumns>
+        <syncfusion:GridSummaryRow.TitleTemplate>
+            <DataTemplate>
+                <TextBlock  Text="{Binding Converter={StaticResource summaryConverter}, ConverterParameter= {x:Reference Name= dataGrid}}" Foreground="Blue" Background="Yellow" FontSize="15"></TextBlock>
+            </DataTemplate>
+        </syncfusion:GridSummaryRow.TitleTemplate>
+    </syncfusion:GridTableSummaryRow>
+</syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+class TableSummaryRowConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+
+        var data = value != null ? value as SummaryRecordEntry : null;
+        if (data != null)
+        {
+            SfDataGrid dataGrid = (SfDataGrid)parameter;
+            var unitPrice = SummaryCreator.GetSummaryDisplayText(data, "UnitPrice", dataGrid.View);
+            var count = SummaryCreator.GetSummaryDisplayText(data, "ProductName", dataGrid.View);
+
+            return "Total Price : " + unitPrice.ToString() + " for " + count.ToString() + " Products ";
+        }
+
+        return null;
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Table summary template in WPF DataGrid](Summaries_images/Summaries_img23.png)
+
+##### Using template selector
+
+The template for the table summary row can also be loaded based on data object and the data-bound element using the [GridSummaryRow.TitleTemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplateSelector.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</Window.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.TableSummaryRows>
+    <syncfusion:GridTableSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True" Position="Bottom" TitleTemplateSelector="{StaticResource templateSelector}">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+									
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                                    Format="'{Count:d}'"
+                                    MappingName="ProductName"
+                                    SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryColumn>
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridTableSummaryRow>
+</syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+public class TemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        var summaryRecordEntry = item as SummaryRecordEntry;
+
+        if (summaryRecordEntry.SummaryRow.ShowSummaryInRow)
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryRowTemplate"] as DataTemplate;
+        }
+        else
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryColumnTemplate"] as DataTemplate;
+        }
+
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Displaying template for a column
+
+The template for the summary column can be loaded by using `DataTemplate` or `DataTemplateSelector` as follows,
+
+##### Using template
+
+The template for the defined summary column can be loaded using the [GridSummaryColumn.Template](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Template.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:SummaryColumnConverter x:Key="summaryColumnConverter" />
+</syncfusion:ChromelessWindow.Resources>	
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.TableSummaryRows>
+    <syncfusion:GridTableSummaryRow Position="Bottom" ShowSummaryInRow="False">
+        <syncfusion:GridTableSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                  Format="'Total Price : {Sum:c}'"
+                                  MappingName="UnitPrice"
+                                  SummaryType="DoubleAggregate" >
+                <syncfusion:GridSummaryColumn.Template>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={ StaticResource summaryColumnConverter}, ConverterParameter=UnitPrice }" Foreground="Red" Background="LightBlue"></TextBlock>
+                    </DataTemplate>
+                </syncfusion:GridSummaryColumn.Template>
+            </syncfusion:GridSummaryColumn>
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                                  Format="'Total Product Count : {Count:d}'"
+                                  MappingName="ProductName"
+                                  SummaryType="CountAggregate">
+                <syncfusion:GridSummaryColumn.Template>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={ StaticResource summaryColumnConverter}, ConverterParameter=ProductName }" Foreground="Red" Background="LightBlue"></TextBlock>
+                    </DataTemplate>
+                </syncfusion:GridSummaryColumn.Template>
+            </syncfusion:GridSummaryColumn>
+        </syncfusion:GridTableSummaryRow.SummaryColumns>
+    </syncfusion:GridTableSummaryRow>
+</syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+class SummaryColumnConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        var summaryRecordEntry = value as SummaryRecordEntry;
+        if (summaryRecordEntry != null)
+        {
+            var columnName = parameter.ToString();
+            var summaryRow = summaryRecordEntry.SummaryRow;
+            var summaryCol = summaryRow.SummaryColumns.FirstOrDefault(s => s.MappingName == columnName);
+            var summaryItems = summaryRecordEntry.SummaryValues;
+            if (summaryItems != null && summaryCol != null)
+            {
+                var item = summaryItems.FirstOrDefault(s => s.Name == summaryCol.Name);
+                if (item != null)
+                {
+                    if (columnName == "ProductName")
+                        return string.Format("Total Product Count : {0:d}", item.AggregateValues.Values.ToArray());
+                    if (columnName == "UnitPrice")
+                        return string.Format("Total Price : {0:c}", item.AggregateValues.Values.ToArray());
+                }
+            }
+        }
+
+        return "Value is wrong";
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Table summary template in WPF DataGrid](Summaries_images/Summaries_img24.png)
+
+##### Using template selector
+
+The template for the defined summary column can also be loaded based on data object and the data-bound element using the [GridSummaryColumn.TemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~TemplateSelector.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.TableSummaryRows>
+    <syncfusion:GridSummaryRow ShowSummaryInRow="False">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                  Format="'Total Price : {Sum:c}'"
+                                  MappingName="UnitPrice"
+                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource templateSelector}">
+            </syncfusion:GridSummaryColumn>
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+public class TemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        if (item == null)
+            return null;
+
+        var summaryRecordEntry = item as SummaryRecordEntry;
+
+        if (summaryRecordEntry.SummaryRow.ShowSummaryInRow)
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryRowTemplate"] as DataTemplate;
+        }
+        else
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryColumnTemplate"] as DataTemplate;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Displaying column summary with title
+
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleColumnCount.html) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+
+Refer [Defining summary for column](#defining-summary-for-column) section to know more about how to define summary columns.
+
+In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) is defined along with summary columns.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+    <syncfusion:SfDataGrid.TableSummaryRows>
+       <syncfusion:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Top"
+                                       Title="Total Price : {PriceAmount} for {ProductCount} products">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="CustomerName" 
+                                              Format=" {Count:d}"
+                                              MappingName="CustomerName" 
+                                              SummaryType="CountAggregate" />
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format=" {Sum:c}"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format=" {Count:d}"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />                        
+            </syncfusion:GridSummaryRow.SummaryColumns>
+       </syncfusion:GridTableSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>    
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
+{
+    ShowSummaryInRow = false,
+    Position = TableSummaryRowPosition.Top,
+    Title = "Total Price : {PriceAmount} for {ProductCount} products",
+    TitleColumnCount = 2,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="CustomerName",
+            Format="{Count:d}",
+            MappingName="CustomerName",
+            SummaryType=SummaryType.CountAggregate
+        },
+		
+        new GridSummaryColumn()
+        {
+            Name = "PriceAmount",
+            MappingName="UnitPrice",
+            SummaryType= SummaryType.DoubleAggregate,
+            Format="{Sum:c}"
+        },
+		
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        }        
+    }
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates displaying summary columns with title at same time for `TableSummaryRow`.
+
+![SummaryColumns with title in TableSummaryRow for WPF DataGrid](Summaries_images/Summaries_img21.png)
+
+#### Limitations
+
+The following are the limitations of displaying column summary along with title at same time for `TableSummaryRow`:
+
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+
+#### Displaying template for column summary with title
+
+The template for column summary can also be displayed with title template using `DataTemplate` or `DataTemplateSelector` as follows,
+
+##### Using template
+
+The template for column summary can also be displayed with title template using `GridSummaryRow.TitleColumnCount` property along with defining `GridSummaryRow.TitleTemplate` and `GridSummaryColumn.Template` properties.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TableSummaryRowConverter x:Key="summaryRowConverter"/>
+		<local:SummaryColumnConverter x:Key="summaryColumnConverter" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True"
+                       AllowResizingColumns="True">
+    <syncfusion:SfDataGrid.TableSummaryRows>
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                          Format="'{Sum:c}'"
+                          MappingName="UnitPrice"
+                          SummaryType="DoubleAggregate" >
+                    <syncfusion:GridSummaryColumn.Template>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Converter={ StaticResource summaryColumnConverter}, ConverterParameter=UnitPrice }" Foreground="Red" Background="LightBlue"></TextBlock>
+                        </DataTemplate>
+                    </syncfusion:GridSummaryColumn.Template>
+                </syncfusion:GridSummaryColumn>
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                          Format="'{Count:d}'"
+                          MappingName="ProductName"
+                          SummaryType="CountAggregate">
+                    <syncfusion:GridSummaryColumn.Template>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Converter={ StaticResource summaryColumnConverter}, ConverterParameter=ProductName }" Foreground="Red" Background="LightBlue"></TextBlock>
+                        </DataTemplate>
+                    </syncfusion:GridSummaryColumn.Template>
+                </syncfusion:GridSummaryColumn>
+            </syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryRow.TitleTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding Converter={StaticResource summaryRowConverter}, ConverterParameter= {x:Reference Name= dataGrid}}" Foreground="Blue" Background="Yellow" FontSize="15"></TextBlock>
+                </DataTemplate>
+            </syncfusion:GridSummaryRow.TitleTemplate>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+![SummaryColumns with title in TableSummaryRow for WPF DataGrid](Summaries_images/Summaries_img29.png)
+
+##### Using template selector
+
+The template for column summary can also be displayed with title template based on data object and the data-bound element using `GridSummaryRow.TitleColumnCount` property along with defining `GridSummaryRow.TitleTemplateSelector` and `GridSummaryColumn.TemplateSelector` properties.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True"
+                       AllowResizingColumns="True">
+    <syncfusion:SfDataGrid.TableSummaryRows>
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource templateSelector}" >
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                          Format="'{Sum:c}'"
+                          MappingName="UnitPrice"
+                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource templateSelector}">
+                </syncfusion:GridSummaryColumn>
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                          Format="'{Count:d}'"
+                          MappingName="ProductName"
+                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource templateSelector}">
+                </syncfusion:GridSummaryColumn>
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
 ### Positioning TableSummaryRow
 
 You can position the table summary either at top or bottom of SfDataGrid by setting [GridTableSummaryRow.Position](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow~Position.html) property.
@@ -374,6 +802,431 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 ![Group summaries in a row for WPF DataGrid](Summaries_images/Summaries_img6.png)
 
+### Group summary template
+
+The data grid hosts any view(s) inside a group summary for the entire row or for individual columns by loading a template.
+
+#### Displaying template for a row
+
+The template for the row can be loaded by using `DataTemplate` or `DataTemplateSelector` as follows,
+
+##### Using template
+
+The template for the group summary row can be loaded using the [GridSummaryRow.TitleTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplate.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:GroupSummaryRowConverter x:Key="groupSummaryRowConverter"/>
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.GroupSummaryRows>
+    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                                    Format="'{Count:d}'"
+                                    MappingName="ProductName"
+                                    SummaryType="CountAggregate" />
+        </syncfusion:GridSummaryRow.SummaryColumns>
+        <syncfusion:GridSummaryRow.TitleTemplate>
+            <DataTemplate>
+                <TextBlock  Text="{Binding Converter={StaticResource groupSummaryRowConverter}, ConverterParameter= {x:Reference Name= dataGrid}}" Foreground="Blue" Background="Yellow" FontSize="15"></TextBlock>
+            </DataTemplate>
+        </syncfusion:GridSummaryRow.TitleTemplate>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.GroupSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+class GroupSummaryRowConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+
+        var data = value != null ? value as SummaryRecordEntry : null;
+        if (data != null)
+        {
+            SfDataGrid dataGrid = (SfDataGrid)parameter;
+            var unitPrice = SummaryCreator.GetSummaryDisplayText(data, "UnitPrice", dataGrid.View);
+            var count = SummaryCreator.GetSummaryDisplayText(data, "ProductName", dataGrid.View);
+
+            return "Total Price : " + unitPrice.ToString() + " for " + count.ToString() + " Products ";
+        }
+
+        return null;
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Group summary template in WPF DataGrid](Summaries_images/Summaries_img25.png)
+
+##### Using template selector
+
+The template for the group summary row can also be loaded based on data object and the data-bound element using the [GridSummaryRow.TitleTemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplateSelector.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.GroupSummaryRows>
+    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="True" TitleTemplateSelector="{StaticResource templateSelector}">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                        Format="'{Sum:c}'"
+                        MappingName="UnitPrice"
+                        SummaryType="DoubleAggregate" />
+
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                        Format="'{Count:d}'"
+                        MappingName="ProductName"
+                        SummaryType="CountAggregate" />
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.GroupSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+public class TemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        var summaryRecordEntry = item as SummaryRecordEntry;
+
+        if (summaryRecordEntry.SummaryRow.ShowSummaryInRow)
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryRowTemplate"] as DataTemplate;
+        }
+        else
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryColumnTemplate"] as DataTemplate;
+        }
+
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Displaying template for a column
+
+The template for the summary column can be loaded by using `DataTemplate` or `DataTemplateSelector` as follows,
+
+##### Using Template 
+
+The template for the defined summary column can be loaded using the [GridSummaryColumn.Template](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Template.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:SummaryColumnConverter x:Key="summaryColumnConverter" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.GroupSummaryRows>
+    <syncfusion:GridSummaryRow ShowSummaryInRow="False">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                  Format="'Total Price : {Sum:c}'"
+                                  MappingName="UnitPrice"
+                                  SummaryType="DoubleAggregate" >
+                <syncfusion:GridSummaryColumn.Template>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={ StaticResource summaryColumnConverter}, ConverterParameter=UnitPrice }" Foreground="Red" Background="LightBlue"></TextBlock>
+                    </DataTemplate>
+                </syncfusion:GridSummaryColumn.Template>
+            </syncfusion:GridSummaryColumn>
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                                  Format="'Total Product Count : {Count:d}'"
+                                  MappingName="ProductName"
+                                  SummaryType="CountAggregate">
+                <syncfusion:GridSummaryColumn.Template>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={ StaticResource summaryColumnConverter}, ConverterParameter=ProductName }" Foreground="Red" Background="LightBlue"></TextBlock>
+                    </DataTemplate>
+                </syncfusion:GridSummaryColumn.Template>
+            </syncfusion:GridSummaryColumn>
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.GroupSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+class SummaryColumnConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        var summaryRecordEntry = value as SummaryRecordEntry;
+        if (summaryRecordEntry != null)
+        {
+            var columnName = parameter.ToString();
+            var summaryRow = summaryRecordEntry.SummaryRow;
+            var summaryCol = summaryRow.SummaryColumns.FirstOrDefault(s => s.MappingName == columnName);
+            var summaryItems = summaryRecordEntry.SummaryValues;
+            if (summaryItems != null && summaryCol != null)
+            {
+                var item = summaryItems.FirstOrDefault(s => s.Name == summaryCol.Name);
+                if (item != null)
+                {
+                    if (columnName == "ProductName")
+                        return string.Format("Total Product Count : {0:d}", item.AggregateValues.Values.ToArray());
+                    if (columnName == "UnitPrice")
+                        return string.Format("Total Price : {0:c}", item.AggregateValues.Values.ToArray());
+                }
+            }
+        }
+
+        return "Value is wrong";
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Group summary template in  WPF DataGrid](Summaries_images/Summaries_img26.png)
+
+##### Using template selector
+
+The template for the defined summary column can also be loaded based on data object and the data-bound element using the [GridSummaryColumn.TemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~TemplateSelector.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.GroupSummaryRows>
+    <syncfusion:GridSummaryRow ShowSummaryInRow="False">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                  Format="'Total Price : {Sum:c}'"
+                                  MappingName="UnitPrice"
+                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource templateSelector}">
+            </syncfusion:GridSummaryColumn>
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.GroupSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+public class TemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        if (item == null)
+            return null;
+
+        var summaryRecordEntry = item as SummaryRecordEntry;
+
+        if (summaryRecordEntry.SummaryRow.ShowSummaryInRow)
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryRowTemplate"] as DataTemplate;
+        }
+        else
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryColumnTemplate"] as DataTemplate;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Displaying column summary with title
+
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleColumnCount.html) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+
+Refer [Defining summary for column](#defining-summary-for-column-1) section to know more about how to define summary columns.
+
+In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) is defined along with summary columns.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                             
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+    <syncfusion:SfDataGrid.GroupSummaryRows>
+        <syncfusion:GridSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" 
+                                   Title="Total Price: {PriceAmount} for {ProductCount} Products" >
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="CustomerName" 
+                                              Format=" {Count:d}"
+                                              MappingName="CustomerName" 
+                                              SummaryType="CountAggregate" />
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format=" {Sum:c}"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format=" {Count:d}"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />                        
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.GroupSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
+{
+    ShowSummaryInRow = false,
+    Title = "Total Price: {PriceAmount} for {ProductCount} Products",
+    TitleColumnCount = 2,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="CustomerName",
+            Format="{Count:d}",
+            MappingName="CustomerName",
+            SummaryType=SummaryType.CountAggregate
+        },
+		
+        new GridSummaryColumn()
+        {
+            Name = "PriceAmount",
+            MappingName="UnitPrice",
+            SummaryType= SummaryType.DoubleAggregate,
+            Format="{Sum:c}"
+        },
+		
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        }        
+    }
+});
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates displaying summary columns with title at same time for `GroupSummaryRow`.
+
+![SummaryColumns with title in group summary row for WPF DataGrid](Summaries_images/Summaries_img20.png)
+
+#### Limitations
+
+The following are the limitations of displaying column summary along with title at same time for `GroupSummaryRow`:
+
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+
+#### Displaying template for column summary with title
+
+The template for column summary can also be displayed with title template using `DataTemplate` or `DataTemplateSelector` as follows,
+
+##### Using template 
+
+The template for column summary can also be displayed with title template using `GridSummaryRow.TitleColumnCount` property along with defining `GridSummaryRow.TitleTemplate` and `GridSummaryColumn.Template` properties.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:GroupSummaryRowConverter x:Key="groupSummaryRowConverter"/>
+		<local:SummaryColumnConverter x:Key="summaryColumnConverter" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True"
+                       AllowResizingColumns="True">
+    <syncfusion:SfDataGrid.GroupSummaryRows>
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                          Format="'{Sum:c}'"
+                          MappingName="UnitPrice"
+                          SummaryType="DoubleAggregate" >
+                    <syncfusion:GridSummaryColumn.Template>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Converter={ StaticResource summaryColumnConverter}, ConverterParameter=UnitPrice }" Foreground="Red" Background="LightBlue"></TextBlock>
+                        </DataTemplate>
+                    </syncfusion:GridSummaryColumn.Template>
+                </syncfusion:GridSummaryColumn>
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                          Format="'{Count:d}'"
+                          MappingName="ProductName"
+                          SummaryType="CountAggregate">
+                    <syncfusion:GridSummaryColumn.Template>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Converter={ StaticResource summaryColumnConverter}, ConverterParameter=ProductName }" Foreground="Red" Background="LightBlue"></TextBlock>
+                        </DataTemplate>
+                    </syncfusion:GridSummaryColumn.Template>
+                </syncfusion:GridSummaryColumn>
+            </syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryRow.TitleTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding Converter={StaticResource groupSummaryRowConverter}, ConverterParameter= {x:Reference Name= dataGrid}}" Foreground="Blue" Background="Yellow"  FontSize="15"></TextBlock>
+                </DataTemplate>
+            </syncfusion:GridSummaryRow.TitleTemplate>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.GroupSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+![SummaryColumns with title in group summary row for WPF DataGrid](Summaries_images/Summaries_img30.png)
+
+##### Using template selector
+
+The template for column summary can also be displayed with title template based on data object and the data-bound element using `GridSummaryRow.TitleColumnCount` property along with defining `GridSummaryRow.TitleTemplateSelector` and `GridSummaryColumn.TemplateSelector` properties.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True"
+                       AllowResizingColumns="True">
+    <syncfusion:SfDataGrid.GroupSummaryRows>
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource templateSelector}" >
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                          Format="'Total Price : {Sum:c}'"
+                          MappingName="UnitPrice"
+                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource templateSelector}">
+                </syncfusion:GridSummaryColumn>
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                          Format="'Total Product Count : {Count:d}'"
+                          MappingName="ProductName"
+                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource templateSelector}">
+                </syncfusion:GridSummaryColumn>
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.GroupSummaryRows>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
 ## Caption Summaries
 
 SfDataGrid provides built-in support for caption summaries. The caption summary value calculated based on the records in a group and the summary information will be displayed in the caption of group.
@@ -385,7 +1238,7 @@ Below screen shot shows the built-in caption summary of Group.
 
 ### Formatting built-in caption summary
 
-By default, the summary value displayed in CaptionSummaryRow  based on [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionTextFormat.html) property. 
+By default, the summary value displayed in `CaptionSummaryRow`  based on [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionTextFormat.html) property. 
 
 The default group caption format is `{ColumnName}: {Key} - {ItemsCount} Items`.
 
@@ -540,6 +1393,431 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 
 ![Caption summaries in rows for WPF DataGrid](Summaries_images/Summaries_img11.png)
+
+### Caption summary template
+
+The data grid hosts any view(s) inside a caption summary for the entire row or for individual columns by loading a template.
+
+#### Displaying template for a row
+
+The template for the row can be loaded by using `DataTemplate` or `DataTemplateSelector` as follows,
+
+##### Using template
+
+The template for the caption summary row can be loaded using the [GridSummaryRow.TitleTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplate.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+<local:CaptionSummaryRowConverter x:Key="captionSummaryRowConverter"/>
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.CaptionSummaryRow>
+    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} Products" ShowSummaryInRow="True">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                    Format="'{Sum:c}'"
+                                    MappingName="UnitPrice"
+                                    SummaryType="DoubleAggregate" />
+
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                                    Format="'{Count:d}'"
+                                    MappingName="ProductName"
+                                    SummaryType="CountAggregate" />
+        </syncfusion:GridSummaryRow.SummaryColumns>
+        <syncfusion:GridSummaryRow.TitleTemplate>
+            <DataTemplate>
+                <TextBlock  Text="{Binding Converter={StaticResource captionSummaryRowConverter}, ConverterParameter= {x:Reference Name= dataGrid}}" Foreground="Blue" Background="Yellow" FontSize="15"></TextBlock>
+            </DataTemplate>
+        </syncfusion:GridSummaryRow.TitleTemplate>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+class CaptionSummaryRowConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+
+        var data = value != null ? value as Group : null;
+        if (data != null)
+        {
+            SfDataGrid dataGrid = (SfDataGrid)parameter;
+            var unitPrice = SummaryCreator.GetSummaryDisplayText(data.SummaryDetails, "UnitPrice", dataGrid.View);
+            var count = SummaryCreator.GetSummaryDisplayText(data.SummaryDetails, "ProductName", dataGrid.View);
+
+            return "Total Price : " + unitPrice.ToString() + " for " + count.ToString() + " Products ";
+        }
+
+        return null;
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Caption summary template in rows for WPF DataGrid](Summaries_images/Summaries_img27.png)
+
+##### Using template selector
+
+The template for the caption summary row can also be loaded based on data object and the data-bound element using the [GridSummaryRow.TitleTemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplateSelector.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.CaptionSummaryRow>
+    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} Products" ShowSummaryInRow="True" TitleTemplateSelector="{StaticResource templateSelector}">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                        Format="'{Sum:c}'"
+                        MappingName="UnitPrice"
+                        SummaryType="DoubleAggregate" />
+
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                        Format="'{Count:d}'"
+                        MappingName="ProductName"
+                        SummaryType="CountAggregate" />
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+public class TemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        var summaryRecordEntry = item as SummaryRecordEntry;
+
+        if (summaryRecordEntry.SummaryRow.ShowSummaryInRow)
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryRowTemplate"] as DataTemplate;
+        }
+        else
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryColumnTemplate"] as DataTemplate;
+        }
+
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Displaying template for a column
+
+The template for the summary column can be loaded by using `DataTemplate` or `DataTemplateSelector` as follows,
+
+##### Using template 
+
+The template for the defined summary column can be loaded using the [GridSummaryColumn.Template](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Template.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:CaptionSummaryColumnConverter x:Key="captionSummaryColumnConverter" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.CaptionSummaryRow>
+    <syncfusion:GridSummaryRow ShowSummaryInRow="False">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                  Format="'Total Price : {Sum:c}'"
+                                  MappingName="UnitPrice"
+                                  SummaryType="DoubleAggregate" >
+                <syncfusion:GridSummaryColumn.Template>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={ StaticResource captionsummaryColumnConverter}, ConverterParameter=UnitPrice }" Foreground="Red" Background="LightBlue"></TextBlock>
+                    </DataTemplate>
+                </syncfusion:GridSummaryColumn.Template>
+            </syncfusion:GridSummaryColumn>
+            <syncfusion:GridSummaryColumn Name="ProductCount"
+                                  Format="'Total Product Count : {Count:d}'"
+                                  MappingName="ProductName"
+                                  SummaryType="CountAggregate">
+                <syncfusion:GridSummaryColumn.Template>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Converter={ StaticResource captionsummaryColumnConverter}, ConverterParameter=ProductName }" Foreground="Red" Background="LightBlue"></TextBlock>
+                    </DataTemplate>
+                </syncfusion:GridSummaryColumn.Template>
+            </syncfusion:GridSummaryColumn>
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+class CaptionSummaryColumnConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        var summaryRecordEntry = value as Group;
+        if (summaryRecordEntry != null)
+        {
+            var columnName = parameter.ToString();
+            var summaryRow = summaryRecordEntry.SummaryDetails.SummaryRow;
+            var summaryCol = summaryRow.SummaryColumns.FirstOrDefault(s => s.MappingName == columnName);
+            var summaryItems = summaryRecordEntry.SummaryDetails.SummaryValues;
+            if (summaryItems != null && summaryCol != null)
+            {
+                var item = summaryItems.FirstOrDefault(s => s.Name == summaryCol.Name);
+                if (item != null)
+                {
+                    if (columnName == "ProductName")
+                        return string.Format("Total Product Count : {0:d}", item.AggregateValues.Values.ToArray());
+                    if (columnName == "UnitPrice")
+                        return string.Format("Total Price : {0:c}", item.AggregateValues.Values.ToArray());
+                }
+            }
+        }
+
+        return "Value is wrong";
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Caption summary template in columns for WPF DataGrid](Summaries_images/Summaries_img28.png)
+
+##### Using template selector
+
+The template for the defined summary column can also be loaded based on data object and the data-bound element using the [GridSummaryColumn.TemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~TemplateSelector.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid.CaptionSummaryRow>
+    <syncfusion:GridSummaryRow ShowSummaryInRow="False">
+        <syncfusion:GridSummaryRow.SummaryColumns>
+            <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                  Format="'Total Price : {Sum:c}'"
+                                  MappingName="UnitPrice"
+                                  SummaryType="DoubleAggregate" TemplateSelector="{StaticResource templateSelector}">
+            </syncfusion:GridSummaryColumn>
+        </syncfusion:GridSummaryRow.SummaryColumns>
+    </syncfusion:GridSummaryRow>
+</syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+public class TemplateSelector : DataTemplateSelector
+{
+    public override DataTemplate SelectTemplate(object item, DependencyObject container)
+    {
+        if (item == null)
+            return null;
+
+        var summaryRecordEntry = item as SummaryRecordEntry;
+
+        if (summaryRecordEntry.SummaryRow.ShowSummaryInRow)
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryRowTemplate"] as DataTemplate;
+        }
+        else
+        {
+            return Application.Current.MainWindow.Resources["GridSummaryColumnTemplate"] as DataTemplate;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Displaying column summary with title
+
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleColumnCount.html) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+
+Refer [Defining summary for column](#defining-summary-for-column-2) section to know more about how to define summary columns.
+
+In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) is defined along with summary columns.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True">
+    <syncfusion:SfDataGrid.CaptionSummaryRow>
+        <syncfusion:GridSummaryRow  ShowSummaryInRow="False" TitleColumnCount="2" 
+		                            Title=" {ColumnName} : {Key} - {ItemsCount} Items ">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="CustomerName" 
+                                              Format=" {Count:d}"
+                                              MappingName="CustomerName" 
+                                              SummaryType="CountAggregate" />
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format=" {Sum:c}"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format=" {Count:d}"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
+{
+    ShowSummaryInRow = false,
+    Title = "{ColumnName} : {Key} - {ItemsCount} Items",
+    TitleColumnCount = 2,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="CustomerName",
+            Format="{Count:d}",
+            MappingName="CustomerName",
+            SummaryType=SummaryType.CountAggregate
+        },
+
+        new GridSummaryColumn()
+        {
+            Name = "PriceAmount",
+            MappingName="UnitPrice",
+            SummaryType= SummaryType.DoubleAggregate,
+            Format="{Sum:c}"
+        },
+
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        }
+    }
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates displaying summary columns with title at same time for `CaptionSummaryRow`.
+
+![Caption summary columns with title in WPF DataGrid](Summaries_images/Summaries_img22.png)
+
+#### Limitations
+
+The following are the limitations of displaying column summary along with title at same time for `CaptionSummaryRow`:
+
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+
+#### Displaying template for column summary with title
+
+The template for column summary can also be displayed with title template using `DataTemplate` or `DataTemplateSelector` as follows,
+ 
+##### Using template 
+       
+The template for column summary can also be displayed with title template using `GridSummaryRow.TitleColumnCount` property along with defining `GridSummaryRow.TitleTemplate` and `GridSummaryColumn.Template` properties.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:CaptionSummaryRowConverter x:Key="captionSummaryRowConverter" />
+	<local:CaptionSummaryColumnConverter x:Key="captionSummaryColumnConverter" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True"
+                       AllowResizingColumns="True">
+    <syncfusion:SfDataGrid.CaptionSummaryRow>
+	    <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2">
+	        <syncfusion:GridSummaryRow.SummaryColumns>
+	            <syncfusion:GridSummaryColumn Name="PriceAmount"
+	              Format="'{Sum:c}'"
+	              MappingName="UnitPrice"
+	              SummaryType="DoubleAggregate" >
+	                <syncfusion:GridSummaryColumn.Template>
+	                    <DataTemplate>
+	                        <TextBlock Text="{Binding Converter={ StaticResource captionsummaryColumnConverter}, ConverterParameter=UnitPrice }" Foreground="Red" Background="LightBlue"></TextBlock>
+	                    </DataTemplate>
+	                </syncfusion:GridSummaryColumn.Template>
+	            </syncfusion:GridSummaryColumn>
+	            <syncfusion:GridSummaryColumn Name="ProductCount"
+	              Format="'{Count:d}'"
+	              MappingName="ProductName"
+	              SummaryType="CountAggregate">
+	                <syncfusion:GridSummaryColumn.Template>
+	                    <DataTemplate>
+	                        <TextBlock Text="{Binding Converter={ StaticResource captionsummaryColumnConverter}, ConverterParameter=UnitPrice }" Foreground="Red" Background="LightBlue"></TextBlock>
+	                    </DataTemplate>
+	                </syncfusion:GridSummaryColumn.Template>
+	            </syncfusion:GridSummaryColumn>
+	        </syncfusion:GridSummaryRow.SummaryColumns>
+	        <syncfusion:GridSummaryRow.TitleTemplate>
+	            <DataTemplate>
+	                <TextBlock  Text="{Binding Converter={StaticResource captionSummaryRowConverter}, ConverterParameter= {x:Reference Name= dataGrid}}" Foreground="Blue" Background="Yellow" FontSize="15"></TextBlock>
+	            </DataTemplate>
+	        </syncfusion:GridSummaryRow.TitleTemplate>
+	    </syncfusion:GridSummaryRow>
+	</syncfusion:SfDataGrid.CaptionSummaryRow>	
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
+
+![Caption summary columns with title in WPF DataGrid](Summaries_images/Summaries_img31.png)
+
+##### Using template selector 
+
+The template for column summary can also be displayed with title template based on data object and the data-bound element using `GridSummaryRow.TitleColumnCount` property along with defining `GridSummaryRow.TitleTemplateSelector` and `GridSummaryColumn.TemplateSelector` properties.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+    <local:TemplateSelector x:Key="templateSelector" />
+</syncfusion:ChromelessWindow.Resources>
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       ItemsSource="{Binding Orders}"
+                       ShowGroupDropArea="True"
+                       AllowResizingColumns="True">
+    <syncfusion:SfDataGrid.CaptionSummaryRow>
+        <syncfusion:GridSummaryRow Title="Total Price : {PriceAmount} for {ProductCount} products" ShowSummaryInRow="False" TitleColumnCount="2" TitleTemplateSelector = "{StaticResource templateSelector}" >
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                          Format="'{Sum:c}'"
+                          MappingName="UnitPrice"
+                          SummaryType="DoubleAggregate" TemplateSelector = "{StaticResource templateSelector}">
+                </syncfusion:GridSummaryColumn>
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                          Format="'{Count:d}'"
+                          MappingName="ProductName"
+                          SummaryType="CountAggregate" TemplateSelector = "{StaticResource templateSelector}">
+                </syncfusion:GridSummaryColumn>
+            </syncfusion:GridSummaryRow.SummaryColumns>
+        </syncfusion:GridSummaryRow>
+    </syncfusion:SfDataGrid.CaptionSummaryRow>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% endtabs %}
 
 ## Formatting summary
 
@@ -710,6 +1988,90 @@ Used for custom summaries
 </tr>
 </table>
 
+## Calculate summary for selected rows
+
+SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the `SfDataGrid.SummaryCalculationUnit` or `GridSummaryRow.CalculationUnit` property.
+This is applicable for all type of summary rows such as table, caption and group summary.
+
+In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
+
+{% tabs %}
+{% highlight xaml %}
+  <syncfusion:SfDataGrid x:Name="sfDataGrid" 
+                        ItemsSource="{Binding Path=Orders}"
+                        SelectionMode="Multiple"
+                        AutoGenerateColumns="True">
+     <syncfusion:SfDataGrid.TableSummaryRows>
+         <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total Price for all records:{UnitPrice}">
+             <syncfusion:GridSummaryRow.SummaryColumns>
+                 <syncfusion:GridSummaryColumn Name="UnitPrice"
+                                       Format="'{Sum:c}'"
+                                       MappingName="UnitPrice"
+                                       SummaryType="DoubleAggregate" />
+             </syncfusion:GridSummaryRow.SummaryColumns>
+         </syncfusion:GridTableSummaryRow>
+         <syncfusion:GridTableSummaryRow ShowSummaryInRow="True" Title="Total price for selected records: {UnitPrice}" CalculationUnit="SelectedRows" Position="Top">
+             <syncfusion:GridSummaryRow.SummaryColumns>
+                 <syncfusion:GridSummaryColumn Name="UnitPrice"
+                                       Format="'{Sum:c}'"
+                                       MappingName="UnitPrice"
+                                       SummaryType="DoubleAggregate" />
+             </syncfusion:GridSummaryRow.SummaryColumns>
+         </syncfusion:GridTableSummaryRow>
+     </syncfusion:SfDataGrid.TableSummaryRows>
+ </syncfusion:SfDataGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+GridTableSummaryRow tableSummaryRow1 = new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Position = TableSummaryRowPosition.Top,
+    CalculationUnit = SummaryCalculationUnit.SelectedRows,
+    Title = "Total price for selected records: {PriceAmount}",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+           Name="PriceAmount",
+           Format="{Sum:c}",
+           MappingName="UnitPrice",
+           SummaryType=SummaryType.DoubleAggregate
+        }
+    }
+};
+
+GridTableSummaryRow tableSummaryRow2 = new GridTableSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Position = TableSummaryRowPosition.Bottom,
+    Title = "Total price for all records: {UnitPrice}",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="UnitPrice",
+            Format="{Sum:c}",
+            MappingName="UnitPrice",
+            SummaryType=SummaryType.DoubleAggregate
+        }
+    }
+};
+
+this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow1);
+this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Calculate summaries for selected records in WPF SfDataGrid](Summaries_images/Summaries_img19.png)
+
+N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
+
+### Limitation
+
+`SummaryCalculationUnit.SelectedRows` or `SummaryCalculationUnit.Mixed` will not be considered for cell selection.
 
 ## Custom summaries
 

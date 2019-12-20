@@ -18,11 +18,11 @@ The SfDataGrid provides support to represent additional information of a row usi
 Template view can be generated for the master row by using the [RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html) defined in the [TemplateViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html).
 
 Follow the below steps to define the row template,
-	* Create [TemplateViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html).
-	* Define data template for the [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html) property.
-	* Then add [TemplateViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html) to the [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDefinition.html). 
+* Create [TemplateViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html).
+* Define data template for the [TemplateViewDefinition.RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html) property.
+* Then add [TemplateViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition.html) to the [SfDataGrid.DetailsViewDefinition](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDefinition.html). 
 
-You can bind the row data using the Data.PropertyName (where Data is the underlying object bound).
+You can bind the row data using the `Data.PropertyName` (where Data is the underlying object bound).
 
 {% tabs %}
 {% highlight xaml %}
@@ -268,7 +268,7 @@ Definition
 </tr>
 <tr>
 <td>
-Auto
+<code>Auto</code>
 </td>
 <td>
 Arranges template for the actual size as the {{'[RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html)'| markdownify}} is measured.
@@ -276,7 +276,7 @@ Arranges template for the actual size as the {{'[RowTemplate](http://help.syncfu
 </tr>
 <tr>
 <td>
-Fixed
+<code>Fixed</code>
 </td>
 <td>
 Arranges template for the specified height in {{'[TemplateViewDefinition.Height](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~Height.html)'| markdownify}}.
@@ -284,17 +284,17 @@ Arranges template for the specified height in {{'[TemplateViewDefinition.Height]
 </tr>
 <tr>
 <td>
-ViewPort
+<code>ViewPort</code>
 </td>
 <td>
-Arranges template for the ViewPortHeight when the {{'[RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html)'| markdownify}} actual height is greater than ViewPortHeight.
+Arranges template for the <code>ViewPortHeight</code> when the {{'[RowTemplate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~RowTemplate.html)'| markdownify}} actual height is greater than <code>ViewPortHeight</code>.
 </td>
 </tr>
 </table>
 
 ## Keyboard navigation support for DetailsViewTemplate
 
-In the SfDataGrid, you can navigate from parent row to DetailsViewTemplate and vice-versa using Tab key by default. You can also restrict tab key navigation from parent to DetailsViewTemplate by setting the [TemplateViewDefinition.TemplateNavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~NavigationMode.html) property value to `ExcludeTemplateRow`.
+In the SfDataGrid, you can navigate from parent row to DetailsViewTemplate and vice-versa using <kbd>Tab</kbd> key by default. You can also restrict tab key navigation from parent to DetailsViewTemplate by setting the [TemplateViewDefinition.TemplateNavigationMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.TemplateViewDefinition~NavigationMode.html) property value to `ExcludeTemplateRow`.
 
 {% tabs %}
 {% highlight xaml %}

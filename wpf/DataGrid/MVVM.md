@@ -96,9 +96,9 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 ## Button command binding to ViewModel
 
-You can load a button for the columns in the DataGrid by using GridTemplateColumn. When loading the buttons, you can bind command in ViewModel by using `ElementName` binding.
+You can load a button for the columns in the DataGrid by using [GridTemplateColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html). When loading the buttons, you can bind command in `ViewModel` by using `ElementName` binding.
 
-In the following example, ViewModel command receives the underlying data object as command parameter since the DataContext is binding as command parameter.
+In the following example, `ViewModel` command receives the underlying data object as command parameter since the `DataContext` is binding as command parameter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,7 +129,7 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 ## Binding ComboBoxColumn ItemsSource from ViewModel
 
-You can bind the ItemsSource from ViewModel to `GridComboBoxColumn or GridMultiColumnDropDownList` by using the `ElementName` binding.
+You can bind the `ItemsSource` from `ViewModel` to [GridComboBoxColumn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html) or [GridMultiColumnDropDownList](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html) by using the `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
@@ -173,7 +173,7 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 ## Binding ViewModel ItemsSource to ComboBox inside data template
 
-You can load the `ComboBox` inside the `GridTemplateColumn` and bind the ItemsSource from ViewModel to `ComboBox` by using the `ElementName` binding.
+You can load the `ComboBox` inside the `GridTemplateColumn` and bind the `ItemsSource` from `ViewModel` to `ComboBox` by using the `ElementName` binding.
 
 {% tabs %}
 {% highlight xaml %}
@@ -205,7 +205,7 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 ## Binding DataGrid Columns from ViewModel
 
-You can bind the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) to a property in the ViewModel by having the binding property of type `Syncfusion.SfGrid.UI.Xaml.Grid.Columns`. Thus, you can set binding to the `SfDataGrid.Columns` property that provides `DataContext` of the DataGrid is ViewModel. 
+You can bind the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) to a property in the `ViewModel` by having the `binding` property of type `Syncfusion.SfGrid.UI.Xaml.Grid.Columns`. Thus, you can set binding to the `SfDataGrid.Columns` property that provides `DataContext` of the DataGrid is `ViewModel`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -217,7 +217,7 @@ You can bind the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/w
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the following code example in which the `SfGridColumns` is populated with some `GridTextColumn` when creating the ViewModel instance.
+Refer to the following code example in which the `SfGridColumns` is populated with some `GridTextColumn` when creating the `ViewModel` instance.
 
 {% tabs %}
 {% highlight c# %}
