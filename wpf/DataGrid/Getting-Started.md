@@ -176,7 +176,7 @@ namespace WpfApplication1
 
 SfDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
 
-1. Create data object class named “OrderInfo” and declare properties as shown below,
+1. Create data object class named **OrderInfo** and declare properties as shown below,
 
 {% tabs %}
 {% highlight c# %}
@@ -368,9 +368,9 @@ Property of type Bool.
 </tr>
 </table>
 
-When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingColumn_EV.html) event to customize or cancel the columns before they are added to the SfDataGrid. 
+When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingColumn_EV.html) event to `customize` or `cancel` the columns before they are added to the SfDataGrid. 
 
-You can prevent the automatic column generation by setting [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html# "") property to false. When [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html# "") property is false, you have to define the columns to be displayed as below,
+You can prevent the automatic column generation by setting [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html# "") property to `false`. When [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html# "") property is `false`, you have to define the columns to be displayed as below,
 
 {% tabs %}
 {% highlight xaml %}
