@@ -9,11 +9,11 @@ documentation: ug
 
 # Page Settings
 
-By default, Diagram's page size is decided based on the position of diagramming elements. However, diagram allows you to specify a particular page size and orientation by using PageSettings property of SfDiagram.
+By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized with help of [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
 
-* The `PageWidth` and `PageHeight` properties of `PageSettings` lets you to define the size of the page.
-* The `PageOrientation` property of `PageSettings` lets you to change the basic orientation of the pages.
-* Diagram also allows you to see where page breaks will happen if the diagram is printed using `ShowPageBreaks` property.
+* The `PageWidth` and `PageHeight` properties of `PageSettings` define the size of the page. 
+* The `PageOrientation` property of `PageSettings` used to change the page orientation to portrait or landscape.
+* Page breaks is used as a visual guide to see how pages are split into multiple pages. The `ShowPageBreaks` property will decide on Visibility of Page breaks.
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to enable the multiple page
 
-Diagram allows you to decide whether to create new page or not when you add content beyond the size specified.
+Based on Diagramming element position, the size of the page dynamically increases or decreases in multiples of page width and height with help of `MultiplePage` property of PageSettings.
 
 {% tabs %}
 {% highlight xaml %}
@@ -186,6 +186,69 @@ diagram.PageSettings = new PageSettings()
 | Centimeters | ![Centimeters](Page-Settings_images/UnitCms.PNG) |
 | Inches | ![Inches](Page-Settings_images/UnitInches.png) |
 
+## How to change the scalling of Page
+
+By default, scalling of the page will be 1. You can change the scalling level of the page using `PrintScale` property of `PageSettings` class.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <!--Initialize the page settings -->
+  <syncfusion:SfDiagram.PageSettings>
+    <syncfusion:PageSettings PrintMargin="40" PageWidth="300" PageHeight="300" ShowPageBreaks="True" MultiplePage="True" PrintScale="3" />
+  </syncfusion:SfDiagram.PageSettings>
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Initialize the page settings and print scale value.
+diagram.PageSettings = new PageSettings()
+{
+  PrintMargin = new Thickness(40),
+  PageWidth = 300,
+  PageHeight = 300,
+  ShowPageBreaks = true,
+  MultiplePage = true,
+  //Specify the print scale value.
+  PrintScale = 3,
+};
+            
+{% endhighlight %}
+{% endtabs %}
+
+Also, you can restrict the print scale value to minimum and maximun level of scalling using `MinimumPrintScale` and `MaximumPrintScale` properties.
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <!--Initialize the page settings -->
+  <syncfusion:SfDiagram.PageSettings>
+    <syncfusion:PageSettings PrintMargin="40" PageWidth="300" PageHeight="300" ShowPageBreaks="True" MultiplePage="True" MinimumPrintScale="2" MaximumPrintScale="4"/>
+  </syncfusion:SfDiagram.PageSettings>
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight C# %}
+//Initialize SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Initialize the page settings and print scale value.
+diagram.PageSettings = new PageSettings()
+{
+  PrintMargin = new Thickness(40),
+  PageWidth = 300,
+  PageHeight = 300,
+  ShowPageBreaks = true,
+  MultiplePage = true,
+  //Specify the minimum and maximum print scale values.
+  MinimumPrintScale = 2,
+  MaximumPrintScale = 4,
+};
+            
+{% endhighlight %}
+{% endtabs %}
+
 ## Origin customization of Page
 
 By default, Origin of the diagram page will be at (0,0). A virtual method `AdjustPageOrigin` of PageSettings class is used to customize the origin of the page based on page size (`PageWidth` and `PageHeight`) and diagram elements position which in turn help to reduce the number of pages being printed.
@@ -195,7 +258,7 @@ By default, Origin of the diagram page will be at (0,0). A virtual method `Adjus
 | Properties/Methods | Description | Output |
 |---|---|---|
 | Truncate | To customize the origin based on the page size | ![Truncate](Page-Settings_images/Truncate.gif) |
-| Trim | To customize the origin based on the pixel. Page origin will be position of the most top left element | ![Trim](Page-Settings_images/Trim.PNG) |
+| Trim | To customize the origin based on the pixel. Page origin will be position of the most top left element | ![Trim](Page-Settings_images/Trim.gif) |
 | RowCount | To get the number of pages available in row-wise manner. | ![RowCount](Page-Settings_images/RowCount.PNG) |
 | ColumnCount | To get the number of pages available in column-wise manner.| ![ColumnCount](Page-Settings_images/ColumnCount.png) |
 | PageOrigin | To get the origin of the page | ![PageOrigin](Page-Settings_images/PageOrigin.png)  |
