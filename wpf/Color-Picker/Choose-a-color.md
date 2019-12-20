@@ -7,40 +7,45 @@ control: ColorPicker
 documentation: ug
 ---
 
-## Selection Mode
+### What is solid color?
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) and [ColorEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit.html) controls can be displayed in two different modes. They are HSV and RGB modes. The [VisualizationStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~VisualizationStyle.html) property is used to switch between these modes.
+Solid color comprises a single color created can specify its alpha, red, blue, and green channels or use one of the predefined color provided by the [Colors](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netframework-4.8) class.
 
-## RGB
+## How to choose your color
 
-To set the [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html) as "RGB" for ColorEdit control, use the below code.
+Choosing color from HSV(Hue, saturation and value) explained below
+
+### HUE
+
+Hue is the color portion of the model, expressed as a number from 0 to 360 degrees with all colors fall under certain range. In [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html), Hue parameter can be altered using slider given below.
+
+![WPF ColorPicker Hue editor](Selection-Mode_images/ColorPicker_Hue_editor.png)
+
+### Saturation
+
+Saturation describes the amount of gray in a particular color, from 0 to 100 percent.
+
+![WPF ColorPicker Saturation editor](Selection-Mode_images/ColorPicker_Saturation_editor.png)
+
+### Value/Brightness
+
+Value works in conjunction with saturation and describes the brightness or intensity of the color, from 0-100 percent, where 0 is completely black, and 100 is the brightest and reveals the most color.
+
+![WPF ColorPicker Value editor](Selection-Mode_images/ColorPicker_Value_editor.png)
+
+## Color Format
+
+[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) controls can be displayed in two different modes. They are HSV and RGB modes. The [VisualizationStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~VisualizationStyle.html) property is used to switch between these modes.
+
+### RGB
+
+Color from RGB (Red, green, and blue) color model can be assigned using [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html).RGB
+
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorEdit  Margin="20" VisualizationStyle="RGB" Name="colorEdit"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-ColorEdit colorEdit = new ColorEdit();
-
-colorEdit.VisualizationStyle = ColorSelectionMode.RGB; 
-
-this.Content = colorEdit;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorEdit with RGB selection mode](Selection-Mode_images/ColorEdit_RGB_ColorSelectionMode.png)
-
-To set the [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html) as "RGB" for ColorPicker control, use the below code.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:ColorPicker  Margin="20" VisualizationStyle="RGB" Name="colorpicker"/>
+<syncfusion:ColorPicker  VisualizationStyle="RGB" Name="colorpicker"/>
 
 {% endhighlight %}
 
@@ -57,37 +62,14 @@ this.Content = colorPicker;
 
 ![ColorPicker with RGB selection mode](Selection-Mode_images/ColorPicker_RGB_ColorSelection_Mode.png)
 
-## HSV
+### HSV
 
-To set the [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html) as "HSV" for ColorEdit control, use the below code.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:ColorEdit  Margin="20" VisualizationStyle="HSV" Name="colorEdit"/><
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-ColorEdit colorEdit = new ColorEdit();
-
-VisualizationStyle = ColorSelectionMode.HSV;    
-
-//Adding control to the window
-this.Content = colorEdit;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorEdit with HSV selection mode](Selection-Mode_images/ColorEdit_HSV_ColorSelection_Mode.png)
-
-To set the [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html) as "HSV" for ColorPicker control, use the below code.
+Color from RGB (Red, green, and blue) color model can be assigned using [ColorSelectionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.ColorSelectionMode.html).HSV
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPicker  Margin="20" VisualizationStyle="HSV" Name="colorpicker"/><
+<syncfusion:ColorPicker VisualizationStyle="HSV" Name="colorpicker"/>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -103,11 +85,36 @@ this.Content = colorPicker;
 
 ![ColorPicker with HSV selection mode](Selection-Mode_images/ColorPicker_HSV_ColorSelectionMode.png)
 
+### Hexadecimal format
+
+Hexadecimal color values are also supported in ColorPicker, the built-in textbox helps with color selection and editing.
+
+![ColorPicker with Eye-Dropper](Selection-Mode_images/ColorPicker_Hexadecimal_Color-Code.png)
+
+
 ## Eye Dropper
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) consist of `eye-dropper` which can be dragged across the anywhere on the screen,picks the color it is currently hovering above, along with the associated hexadecimal (HEX) color value.
 
 ![ColorPicker with Eye-Dropper](Selection-Mode_images/ColorPicker_Eyedropper.gif)
+
+## Select a standard color
+
+[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) has build-in color ComboBox to select standard color easily. This can be enabled using [IsColorPaletteVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsColorPaletteVisible.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+ <syncfusion:ColorPicker x:Name="colorPicker" IsColorPaletteVisible="True"/>
+{% endhighlight %}
+
+{% highlight C# %}
+
+ IsColorPaletteVisible.IsColorPaletteVisible = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPicker with Eye-Dropper](Selection-Mode_images/ColorPicker_Standard_Color.gif)
 
 ## Get color name from color property
 
@@ -116,11 +123,11 @@ this.Content = colorPicker;
 {% tabs %}
 {% highlight C# %}
 
-  private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            ColorPicker colorPicker = d as ColorPicker;
-            textBlock.Text = Syncfusion.Windows.Shared.ColorEdit.SuchColor(colorPicker.Color)[0];
-        }
+private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    ColorPicker colorPicker = d as ColorPicker;
+    textBlock.Text = Syncfusion.Windows.Shared.ColorEdit.SuchColor(colorPicker.Color)[0];
+}
 
 {% endhighlight %}
 {% endtabs %}
