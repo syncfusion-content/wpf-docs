@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Adding controls in the Title bar
 
- Users can add adaptive controls such as Button, TextBox, Label, Checkbox, etc to the title bar of the Chromeless Window. The `LeftHeaderItemsSource` property displays the controls stored in it on the left side of the title bar while the `RightHeaderItemsSource`' displays the controls stored in it on the right side of the title bar.
+ Users can add adaptive controls such as Button, TextBox, Label, Checkbox, etc to the title bar of the Chromeless Window. The [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~LeftHeaderItemsSource.html) property holds the controls to be shown on the left side of the title bar likewise the [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~RightHeaderItemsSource.html) property holds the controls to be shown on the right side of the title bar.
 
 {% tabs %}
 {% highlight XAML %}
@@ -45,7 +45,9 @@ public class MyObservableCollection : ObservableCollection<object> { }
 
 ![Title bar items added through collection](Getting-Started_images/Title-bar-items-using-collection.png)
 
-We can also apply data template to define the visual appearance of the data stored in the `LeftHeaderItemsSource` and `RightHeaderItemsSource`. The `LeftHeaderItemTemplate` is used to define the visual appearance of the data stored in the `LeftHeaderItemsSource` while the `RightHeaderItemTemplate` is used to define the visual appearance of the data stored in the `RightHeaderItemsSource`.
+We can also apply data template to define the visual appearance of the data stored in the [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~LeftHeaderItemsSource.html) and [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~RightHeaderItemsSource.html). The [`LeftHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~LeftHeaderItemTemplate.html) is used to define the visual appearance of the data stored in the `LeftHeaderItemsSource` while the [`RightHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~RightHeaderItemTemplate.html) is used to define the visual appearance of the data stored in the `RightHeaderItemsSource`.
+
+In the illustration below, we have defined the [`RightHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~RightHeaderItemTemplate.html) with our `ButtonAdv` control and set the 'Utilities' collection defined in the view model to the[`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~RightHeaderItemsSource.html). The `ButtonAdv`'s properties are bind to the properties from the 'Item' class to define its visual appearance accordingly. The two items in the 'Utilities' collection are now shown as two buttons in the title bar, one with text and the other with an image as defined in the `RightHeaderItemTemplate`.
 
 {% tabs %}
 {% highlight XAML %}
