@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Wpf Scheduler
+title: Localization in Wpf Scheduler | Syncfusion
 description: This section explains about localization support to customize the default strings in Syncfusion WPF Scheduler control.
 platform: wpf
 control: SfSchedule
