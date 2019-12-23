@@ -13,6 +13,7 @@ Localization is the process of customizing the user interface based on a culture
 
 Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by the control. The Scheduler supports localization, and you can create a resource file for any culture to be applied in the schedule.
 
+## Set Current UI Culture to the Application
 Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx)
 
 {% tabs %}
@@ -29,7 +30,7 @@ public MainWindow()
 {% endhighlight  %}
 {% endtabs %}
 
-![WPF Scheduler localization](Localization_images/Localization.png)
+## Localization using Resource file
 
 To localize the Scheduler based on `CurrentUICulture` using resource files, follow the below steps. 
 
@@ -52,8 +53,8 @@ To localize the Scheduler based on `CurrentUICulture` using resource files, foll
 
 7.Add the Name/Value pair in Resource Designer of **Syncfusion.SfSchedule.WPF.fr-FR.resx** file and change its corresponding value to corresponding culture. 
 
-![Shows the added resource file name / value pair in the resource designer in WPF Scheduler](Localization_images/Localization_img4.png)
+![Shows the added resource file name / value pair in the resource designer in WPF Scheduler](Localization_images/Localized-strings.png)
 
-![Shows the localized in French for WPF Scheduler](Localization_images/Localization_img5.png)
+![Shows the localized in French for WPF Scheduler](Localization_images/Localization.png)
 
 You can get the sample from [here](https://github.com/syncfusion/wpf-demos/tree/master/Schedule/Localization/CS)
