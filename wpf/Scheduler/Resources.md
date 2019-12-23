@@ -9,8 +9,8 @@ documentation: ug
 
 # Resources
 
-The Scheduler allows you to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them. Appointments will be grouped based on the resource associated with them only when both the [Resource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~Resource.html) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleResourceTypeCollection.html) properties are set, and also when the Value set for a `Resource` matches with any types specified in the `ScheduleResourceTypeCollection` property.
-For example, you can create appointments for different doctors.
+The Scheduler allows to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them. Appointments will be grouped based on the resource associated with them only when both the [Resource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~Resource.html) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleResourceTypeCollection.html) properties are set, and also when the value set for a `Resource` matches with any types specified in the `ScheduleResourceTypeCollection` property.
+For example, end user can create appointments for different doctors.
 
 {% tabs %}
 {% highlight xaml %}
@@ -41,7 +41,7 @@ Schedule1.Appointments.Add(app1);
 
 ## Creating Resource for Schedule
 
-Let's see the steps to add Resources in Scheduler.
+Let's see the steps to add resources in Scheduler.
 
 The first step is set the [Resource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~Resource.html) in Scheduler
 
@@ -70,7 +70,7 @@ After this, we need to create a [ScheduleResourceTypeCollection](https://help.s
 
 ## Adding ResourceType to a resource collection
 
-After Creating the `ScheduleResourceTypeCollection` add the [ResourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ResourceType.html), here we create the example for ResourceType as Doctors.
+After Creating the `ScheduleResourceTypeCollection` add the [ResourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.ResourceType.html), here we create the example for `ResourceType` as Doctors.
 
 {% tabs %}
 {% highlight xaml %}
@@ -256,6 +256,6 @@ The following screenshot shows a view with default value of `DayViewColumnCount
 
 ![WPF Scheduler dayviewcolumnt with default value](Resources_images/default-value-of-dayviewcolumncount.png)
 
-The following screenshot shows a view with default value of DayViewColumnCount property set to “Two”.
+The following screenshot shows a view with default value of `DayViewColumnCount` property set to “Two”.
 
 ![WPF Scheduler dayviewcolumnt with custom value](Resources_images/dayviewcolumncount-settings.png)
