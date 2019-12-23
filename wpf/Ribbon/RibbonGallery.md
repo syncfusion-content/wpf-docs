@@ -232,7 +232,7 @@ _ribbonGallery.MenuItems.Add(_ribbonButton3)
 
 ## Add custom context menu
 
-Context menu is a type of menu that appears when the right click operation is performed on the control. `RibbonGallery` and `RibbonGalleryItem`'s allows us to display a set of specific commands or options by setting `RibbonContextMenu` to its `ContextMenu` property. This will override the default context menu of the RibbonGallery and its items that is set inside the Ribbon.
+Context menu is a kind of menu that appears when a right-click operation is performed on the target control. `RibbonGallery` and `RibbonGalleryItem`’s allows us to create a set of custom commands or options by setting RibbonContextMenu to its ContextMenu property. This will override the built-in context menu of the RibbonGallery and its items.
 
 {% tabs %}
 {% highlight XAML %}
