@@ -185,7 +185,7 @@ diagram.PageSettings = new PageSettings()
 | Centimeters | ![Centimeters](Page-Settings_images/UnitCms.PNG) |
 | Inches | ![Inches](Page-Settings_images/UnitInches.png) |
 
-## How to change the scalling of Page
+## How to change the scaling of Page
 
 The `PrintScale` property of `PageSettings` class allows you to reduce or enlarge the diagram page to fit into specific area when you print it. The default scaling of the page will be 1 (i.e 100%).
 
