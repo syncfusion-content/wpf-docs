@@ -188,7 +188,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to change the scalling of Page
 
-By default, scalling of the page will be 1. You can change the scalling level of the page using `PrintScale` property of `PageSettings` class.
+The `PrintScale` property of `PageSettings` class will allows you to reduce or enlarge the diagram page to fit into specific area when you print it. The default scaling of the page will be 1 (i.e 100%).
 
 {% tabs %}
 {% highlight xaml %}
@@ -218,7 +218,7 @@ diagram.PageSettings = new PageSettings()
 {% endhighlight %}
 {% endtabs %}
 
-Also, you can restrict the print scale value to minimum and maximun level of scalling using `MinimumPrintScale` and `MaximumPrintScale` properties.
+You can restrict the diagram page scaling to minimum and maximum values by using `MinimumPrintScale` and `MaximumPrintScale` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -249,7 +249,7 @@ diagram.PageSettings = new PageSettings()
 {% endhighlight %}
 {% endtabs %}
 
-## Origin customization of Page
+## How to customize the page origin
 
 By default, Origin of the diagram page will be at (0,0). A virtual method `AdjustPageOrigin` of PageSettings class is used to customize the origin of the page based on page size (`PageWidth` and `PageHeight`) and diagram elements position which in turn help to reduce the number of pages being printed.
 
