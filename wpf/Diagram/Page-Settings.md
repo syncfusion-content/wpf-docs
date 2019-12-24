@@ -9,11 +9,11 @@ documentation: ug
 
 # Page Settings
 
-By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized with help of [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
+By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
 
 * The `PageWidth` and `PageHeight` properties of `PageSettings` define the size of the page. 
 * The `PageOrientation` property of `PageSettings` used to change the page orientation to portrait or landscape.
-* Page breaks is used as a visual guide to see how pages are split into multiple pages. The `ShowPageBreaks` property will decide on Visibility of Page breaks.
+* Page breaks are used as a visual guide to see how the pages split into multiple pages. The `ShowPageBreaks` property decides the Visibility of Page breaks.
 
 {% tabs %}
 {% highlight xaml %}
@@ -31,7 +31,7 @@ By default, Diagram's page size is decided based on the position of diagramming 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
 
-//Initialize the page settings and and page orientation property
+//Initialize the page settings and page orientation property
 diagram.PageSettings = new PageSettings()
 {
   PageOrientation = PageOrientation.Portrait,
@@ -49,7 +49,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to enable the multiple page
 
-Based on Diagramming element position, the size of the page dynamically increases or decreases in multiples of page width and height with help of `MultiplePage` property of PageSettings.
+Based on the diagramming element position, the size of the page dynamically increases or decreases in multiples of page width and height using the `MultiplePage` property of PageSettings.
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,14 +81,13 @@ diagram.PageSettings = new PageSettings()
 
 ![Multiple Pages](Page-Settings_images/MultiplePages.png)
 
-
 ## How to change the page appearance
 
-The appearance of the pages can be customized by using following properties of `PageSettings` class,
+The appearance of the pages can be customized by using the following properties of `PageSettings` class:
 
 * `PageBorderThickness`: Defines the thickness of the  border around the entire page.
 * `PageBackground`: Defines the background colors of the page.
-* `PageBorderBrush`: Defines the color of the page border
+* `PageBorderBrush`: Defines the color of the page border.
 
 {% tabs %}
 {% highlight xaml %}
@@ -122,7 +121,7 @@ diagram.PageSettings = new PageSettings()
 
 ## How to change the margin around the pages
 
-The area between the main content of a page and the page edges can be changed by using `PrintMargin` property. Default value is 24.
+The area between the main content of a page and the page edges can be changed by using the `PrintMargin` property. Default value is 24.
 
 {% tabs %}
 {% highlight xaml %}
@@ -151,9 +150,9 @@ diagram.PageSettings = new PageSettings()
 
 ![PrintMargin](Page-Settings_images/PrintMargin.png)
 
-## How to change the Unit of the page
+## How to change the unit of the page
 
-The measurement Units of the page can be changed by using `Unit` property of `PageSettings` class. Default unit value is Pixels.
+The measurement units of the page can be changed by using the `Unit` property of `PageSettings` class. Default unit value is Pixels.
 
 {% tabs %}
 {% highlight xaml %}
@@ -172,7 +171,7 @@ The measurement Units of the page can be changed by using `Unit` property of `Pa
 {% highlight C# %}
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize the page settings and unit property
+//Initialize the page settings and unit property.
 diagram.PageSettings = new PageSettings()
 {
   Unit = new LengthUnit() { Unit = LengthUnits.Inches },
@@ -186,9 +185,9 @@ diagram.PageSettings = new PageSettings()
 | Centimeters | ![Centimeters](Page-Settings_images/UnitCms.PNG) |
 | Inches | ![Inches](Page-Settings_images/UnitInches.png) |
 
-## How to change the scaling of Page
+## How to change the scalling of Page
 
-The `PrintScale` property of `PageSettings` class will allows you to reduce or enlarge the diagram page to fit into specific area when you print it. The default scaling of the page will be 1 (i.e 100%).
+The `PrintScale` property of `PageSettings` class allows you to reduce or enlarge the diagram page to fit into specific area when you print it. The default scaling of the page will be 1 (i.e 100%).
 
 {% tabs %}
 {% highlight xaml %}
@@ -218,7 +217,7 @@ diagram.PageSettings = new PageSettings()
 {% endhighlight %}
 {% endtabs %}
 
-You can restrict the diagram page scaling to minimum and maximum values by using `MinimumPrintScale` and `MaximumPrintScale` properties.
+You can restrict the diagram page scaling to minimum and maximum values by using the `MinimumPrintScale` and `MaximumPrintScale` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -251,27 +250,27 @@ diagram.PageSettings = new PageSettings()
 
 ## How to customize the page origin
 
-By default, Origin of the diagram page will be at (0,0). A virtual method `AdjustPageOrigin` of PageSettings class is used to customize the origin of the page based on page size (`PageWidth` and `PageHeight`) and diagram elements position which in turn help to reduce the number of pages being printed.
+By default, origin of the diagram page will be at (0,0). A virtual method `AdjustPageOrigin` of PageSettings class is used to customize the origin of the page based on the page size (`PageWidth` and `PageHeight`) and diagram elements position, which in turn helps to reduce the number of pages being printed.
 
-`AdjustPageOrigin` method is having `Info` property in its argument. And it is having following properties and methods,
+The `AdjustPageOrigin` method contains the `Info` property in its argument, and also have the following properties and methods:
 
 | Properties/Methods | Description | Output |
 |---|---|---|
-| Truncate | To customize the origin based on the page size | ![Truncate](Page-Settings_images/Truncate.gif) |
-| Trim | To customize the origin based on the pixel. Page origin will be position of the most top left element | ![Trim](Page-Settings_images/Trim.gif) |
-| RowCount | To get the number of pages available in row-wise manner. | ![RowCount](Page-Settings_images/RowCount.PNG) |
-| ColumnCount | To get the number of pages available in column-wise manner.| ![ColumnCount](Page-Settings_images/ColumnCount.png) |
-| PageOrigin | To get the origin of the page | ![PageOrigin](Page-Settings_images/PageOrigin.png)  |
+| Truncate | Customizes the origin based on the page size. | ![Truncate](Page-Settings_images/Truncate.gif) |
+| Trim | Customizes the origin based on the pixel. Page origin will be position of the most top left element. | ![Trim](Page-Settings_images/Trim.gif) |
+| RowCount | Gets the number of pages available in row-wise manner. | ![RowCount](Page-Settings_images/RowCount.PNG) |
+| ColumnCount | Gets the number of pages available in column-wise manner.| ![ColumnCount](Page-Settings_images/ColumnCount.png) |
+| PageOrigin | Gets the origin of the page. | ![PageOrigin](Page-Settings_images/PageOrigin.png)  |
 
 {% tabs %}
 {% highlight C# %}
 
 //Initialize SfDiagram
 SfDiagram diagram = new SfDiagram();
-//create instance for PageCustomClass using PageSettings
+//Create instance for PageCustomClass using PageSettings
 diagram.PageSettings = new CustomPageSettings();
 
-//Create a custom class which is derived form page setting class
+//Create a custom class which is derived from page setting class
 public class CustomPageSettings : PageSettings
 {
   public override void AdjustPageOrigin()
@@ -290,7 +289,7 @@ public class CustomPageSettings : PageSettings
 {% endhighlight %}
 {% endtabs %}
 
-N> This customization will play role in reducing the number of pages in printing.
+N> This customization plays a role in reducing the number of pages in printing.
 
 {% seealso %}
 
