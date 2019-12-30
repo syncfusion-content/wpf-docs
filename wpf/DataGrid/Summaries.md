@@ -165,7 +165,7 @@ The template for the row can be loaded by using [DataTemplate](https://msdn.micr
 
 ##### Using template 
 
-The template for the table summary row can be loaded using the `GridSummaryRow.TitleTemplate` property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+The template for the table summary row can be loaded using the [GridSummaryRow.TitleTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplate.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -228,7 +228,7 @@ class TableSummaryRowConverter : IValueConverter
 
 ##### Using template selector
 
-The template for the table summary row can also be loaded based on data object and the data-bound element using the `GridSummaryRow.TitleTemplateSelector` property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+The template for the table summary row can also be loaded based on data object and the data-bound element using the [GridSummaryRow.TitleTemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplateSelector.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -284,7 +284,7 @@ The template for the summary column can be loaded by using `DataTemplate` or `Da
 
 ##### Using template
 
-The template for the defined summary column can be loaded using the `GridSummaryColumn.Template` property.
+The template for the defined summary column can be loaded using the [GridSummaryColumn.Template](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Template.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -363,7 +363,7 @@ class SummaryColumnConverter : IValueConverter
 
 ##### Using template selector
 
-The template for the defined summary column can also be loaded based on data object and the data-bound element using the `GridSummaryColumn.TemplateSelector` property.
+The template for the defined summary column can also be loaded based on data object and the data-bound element using the [GridSummaryColumn.TemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~TemplateSelector.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -411,7 +411,7 @@ public class TemplateSelector : DataTemplateSelector
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleColumnCount.html) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
 
 Refer [Defining summary for column](#defining-summary-for-column) section to know more about how to define summary columns.
 
@@ -812,7 +812,7 @@ The template for the row can be loaded by using `DataTemplate` or `DataTemplateS
 
 ##### Using template
 
-The template for the group summary row can be loaded using the `GridSummaryRow.TitleTemplate` property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+The template for the group summary row can be loaded using the [GridSummaryRow.TitleTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplate.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -875,7 +875,7 @@ class GroupSummaryRowConverter : IValueConverter
 
 ##### Using template selector
 
-The template for the group summary row can also be loaded based on data object and the data-bound element using the `GridSummaryRow.TitleTemplateSelector` property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+The template for the group summary row can also be loaded based on data object and the data-bound element using the [GridSummaryRow.TitleTemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplateSelector.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -930,7 +930,7 @@ The template for the summary column can be loaded by using `DataTemplate` or `Da
 
 ##### Using Template 
 
-The template for the defined summary column can be loaded using the `GridSummaryColumn.Template` property.
+The template for the defined summary column can be loaded using the [GridSummaryColumn.Template](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Template.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1008,7 +1008,7 @@ class SummaryColumnConverter : IValueConverter
 
 ##### Using template selector
 
-The template for the defined summary column can also be loaded based on data object and the data-bound element using the `GridSummaryColumn.TemplateSelector` property.
+The template for the defined summary column can also be loaded based on data object and the data-bound element using the [GridSummaryColumn.TemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~TemplateSelector.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1056,7 +1056,7 @@ public class TemplateSelector : DataTemplateSelector
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleColumnCount.html) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
 
 Refer [Defining summary for column](#defining-summary-for-column-1) section to know more about how to define summary columns.
 
@@ -1404,7 +1404,7 @@ The template for the row can be loaded by using `DataTemplate` or `DataTemplateS
 
 ##### Using template
 
-The template for the caption summary row can be loaded using the`GridSummaryRow.TitleTemplate` property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+The template for the caption summary row can be loaded using the [GridSummaryRow.TitleTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplate.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1467,7 +1467,7 @@ class CaptionSummaryRowConverter : IValueConverter
 
 ##### Using template selector
 
-The template for the caption summary row can also be loaded based on data object and the data-bound element using the `GridSummaryRow.TitleTemplateSelector` property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
+The template for the caption summary row can also be loaded based on data object and the data-bound element using the [GridSummaryRow.TitleTemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleTemplateSelector.html) property with [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) enabled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1522,7 +1522,7 @@ The template for the summary column can be loaded by using `DataTemplate` or `Da
 
 ##### Using template 
 
-The template for the defined summary column can be loaded using the `GridSummaryColumn.Template` property.
+The template for the defined summary column can be loaded using the [GridSummaryColumn.Template](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Template.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1600,7 +1600,7 @@ class CaptionSummaryColumnConverter : IValueConverter
 
 ##### Using template selector
 
-The template for the defined summary column can also be loaded based on data object and the data-bound element using the `GridSummaryColumn.TemplateSelector` property.
+The template for the defined summary column can also be loaded based on data object and the data-bound element using the [GridSummaryColumn.TemplateSelector](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~TemplateSelector.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1648,7 +1648,7 @@ public class TemplateSelector : DataTemplateSelector
 
 ### Displaying column summary with title
 
-SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and `GridSummaryRow.TitleColumnCount` property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
+SfDataGrid supports to show column summary and title summary at the same time. You can show column summary along with title by defining the [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html)  and [GridSummaryRow.TitleColumnCount](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~TitleColumnCount.html) property along with defining summary columns. Showing column summary along with title can be only supported if [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) is disabled.
 
 Refer [Defining summary for column](#defining-summary-for-column-2) section to know more about how to define summary columns.
 
@@ -1788,6 +1788,7 @@ The template for column summary can also be displayed with title template using 
 ##### Using template selector 
 
 The template for column summary can also be displayed with title template based on data object and the data-bound element using `GridSummaryRow.TitleColumnCount` property along with defining `GridSummaryRow.TitleTemplateSelector` and `GridSummaryColumn.TemplateSelector` properties.
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:ChromelessWindow.Resources>
