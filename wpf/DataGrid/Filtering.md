@@ -885,3 +885,6 @@ You can change the filter icon style by editing the [FilterToggleButton](http://
 
 When you apply above style to [FilterToggleButton](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterToggleButton.html), FilterIcon changes from Default to Gray and to Red when filtering is applied. When you clear it, it changes from Red to Gray and to default style.
 
+## Apply ICollectionView.Filter and DataView.RowFilter on initial loading
+
+By default, the default filter created by ICollectionView.Filter and DataView.RowFilter will not be applied to the data on initial loading. These filters can be applied on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CanUseViewFilter.html) property. 
