@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Status Bar support | Syntax Editor | WPF | Syncfusion
-description: Edit control provides Status Bar support that shows its default properties in that control by enabling StatusBar Visibility to Visible. 
+title: Status Bar | Syntax Editor | WPF | Syncfusion
+description: The Status Bar in Edit Control shows file path, encoding type, line number and column number. Customization can aslo be achieved in status Bar.
 platform: WPF
 control: Syntax Editor
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Status Bar Support
 
-The Essential WPF provides Status Bar support in Edit Control. It is used in Edit Control to show some information about the file path, encoding type, line number and column number. The default visibility for Status Bar is set as false. 
+ The edit control status bar option is used to view primary information such as the loaded document's file path, encoding type, line number and column number based on the cursor position. By default, status bar visibility is set to be false 
 
 The Status Bar can be enabled/disabled by setting it's visibility and the default properties are displayed in it by enabling the status bar. The Status Bar can be enabled by,
 
@@ -78,7 +78,7 @@ When application executes the following screenshot displays how the Status Bar i
 
 ![Status Bar](Status-Bar_images/StatusBar_Visibility.png)
 
-**Default Properties in Status Bar**
+**Status Bar Properties**
 
 Status bar shows the file path, encoding type, line number and column number. The visibility of each item in the status bar can be customized by using the below properties.
  
