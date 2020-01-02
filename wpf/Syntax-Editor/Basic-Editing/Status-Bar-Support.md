@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Status Bar | Syntax Editor | WPF | Syncfusion
-description: The Status Bar in Edit Control shows file path, encoding type, line number and column number. Customization can aslo be achieved in status Bar.
+description: The Status Bar helps to show information about file path, encoding type, line number and column number in Edit Control.
 platform: WPF
 control: Syntax Editor
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Status Bar Support
 
- The edit control status bar option is used to view primary information such as the loaded document's file path, encoding type, line number and column number based on the cursor position. By default, status bar visibility is set to be false 
+ The Edit Control status bar option is used to view primary information such as the loaded document's file path, encoding type, line number and column number based on the cursor position. By default, status bar visibility is set to be false 
 
 The Status Bar can be enabled/disabled by setting it's visibility and the default properties are displayed in it by enabling the status bar. The Status Bar can be enabled by,
 
@@ -87,7 +87,7 @@ Status bar shows the file path, encoding type, line number and column number. Th
   * **ShowColumnNumber**: It shows the current column number where the cursor is placed on Edit Control. By changing it's visibility user can enable/disable the Column number property.
   * **ShowEncoding**: It shows the current Encoding type of the loaded file in Edit Control. Encoding property can be enable/disable by changing it's visibility property.
 
-User can also able to handle the default properties by changing it's visibility property and it can be achieved by,
+User can also able to handle these properties by changing it's visibility property and it can be achieved by,
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ User can able to customize the default properties by changing it's Visibility. T
 
 Status Bar can be customized by enabling the context menu on right clicking the designer XAML file and in that click edit control template then user can append that template to the current edit control class or can able to create a copy on it. In that, user can be able to modify the status bar template according to their needed.
 
-Then user can able to add a Progress Bar or a TextBox as needed to be displayed in that Status Bar by modifying the default template in it.
+Then user can able to add custom controls such as Progress Bar or TextBox as needed to be displayed in that Status Bar by modifying the default template in it.
 
 The following Screenshots shows how the Status Bar in Edit Control template can be modified and displayed. In this, the Progress Bar and TextBox is added by editing the template of Edit Control,
 
