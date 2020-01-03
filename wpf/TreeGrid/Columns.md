@@ -641,6 +641,24 @@ private void TreeGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+### Retrieve the width of the column after resizing completed
+
+SfTreeGrid allows to get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in ResizingColumns event.
+
+{% tabs %}
+{% highlight c# %}
+this.treeGrid.ResizingColumns += OnResizingColumns;
+
+void OnResizingColumns(object sender, ResizingColumnsEventArgs e)
+{
+    if (e.Reason == Syncfusion.UI.Xaml.Grid.ColumnResizingReason.Resized)
+    {
+        var resizedWidth = e.Width;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Column drag and drop
 
 You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfTreeGrid.AllowDraggingColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowDraggingColumns.html) to `true`.
