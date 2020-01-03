@@ -437,6 +437,23 @@ private void TreeGrid_NodeCollapsed(object sender, NodeCollapsedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## Bind the node expansion state to a bool property in data object
+
+SfTreeGrid supports to expand/collapse the nodes based on the value of a bool property in the underlying data object by using [SfTreeGrid.ExpandStateMappingName](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandStateMappingName.html) property. TreeGrid expand/collapse the node when the specified property value in underlying data object gets changed and vice versa.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Name="treeGrid"
+                       ExpandStateMappingName="IsExpanded"
+                       ChildPropertyName="Children"
+                       ItemsSource="{Binding PersonDetails}"
+                       ShowCheckBox="True"/>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.ExpandStateMappingName = "IsExpanded";
+{% endhighlight %}
+{% endtabs %}
+
 ## LiveNodeUpdateMode
 
 SfTreeGrid listens and responds to the manipulation such as add, delete and data update (property change) at runtime. SfTreeGrid refreshes the sorting based on [SfTreeGrid.LiveNodeUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LiveNodeUpdateMode.html) property. If you set `LiveNodeUpdateMode` as `AllowDataShaping`, sorting will be refreshed on data manipulation and property change.
