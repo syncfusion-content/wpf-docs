@@ -157,11 +157,10 @@ The following screenshot shows the Edit Control after changing the [ShowEncoding
 
 ## Customization of status bar
 
-The status bar can be customized by opening context menu on right clicking the designer XAML file and in that click **Edit Template** then click **Edit a Copy...**. The new dialog will be shown then in that choose the options enabled in combo box **EditControl: Edit1**  which adds the Edit Control template to the current edit control class.  
+The status bar can be customized by opening context menu on right clicking the Edit Control in designer page. In that select **Edit Template** and then click **Edit a Copy...**. A new dialog will be shown in that choose the options enabled in combo box **EditControl: Edit1** which adds the Edit Control template to the current Edit Control class.  
 
-Then user can able to add custom controls such as Progress Bar or TextBox as needed to be displayed in that Status Bar by modifying the default template in it.
+Then user can able to add custom controls such as Progress Bar, TextBox, etc… as needed to be displayed in that status bar by modifying the default template in it. The following screenshots illustrate how to do the same thing step-by-step.
 
-The following Screenshots shows how the Status Bar in Edit Control template can be modified and displayed. In this, the Progress Bar and TextBox is added by editing the template of Edit Control,
 
 ![Status Bar](Status-Bar_images/StatusBar_Template.png)
 
