@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialize the Diagram as XAML and load Diagram from serialized XAML.
-description: How to save and load the Diagram?
+title: Save the Diagram and load Diagram from serialized file | Syncfusion.
+description: How to perform serialize and deserialize operation (save and load) with Diagram and custom classes with custom properties.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -9,66 +9,137 @@ documentation: ug
 
 # Serialization
 
-Serialization is the process of saving and loading the Essential Diagram for state persistence of the SfDiagram.
+Serialization is the process of converting the state of SfDiagram's objects into a stream of bytes to recreate them when needed. Such streams can be stored in a database,as a file or memory. The reverse process is called deserialization.
 
-In SfDiagram, DataContractSerializer is used for Serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram Serialization. It supports saving the SfDiagram to stream. The SfDiagram gets saved with all its properties. On loading, it gets loaded in the current view with all its Nodes and Connectors. As a result, this feature enables you to save the SfDiagram for future use. You can continue working on the SfDiagram by loading the appropriate stream.
+## Save
+
+In SfDiagram, DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram serialization. It supports saving the SfDiagram into stream. The SfDiagram gets saved with all its properties. 
+
+{% tabs %}
 
 {% highlight C# %}
 
-//SfDiagram saved to steam
+            //To Save as stream in file
+            SaveFileDialog dialog = new SaveFileDialog();
+            dialog.Title = "Save XAML";
+            dialog.Filter = "XAML File (*.xaml)|*.xaml";
+            if (dialog.ShowDialog() == true)
+            {
+                using (Stream str = File.Open(dialog.FileName, FileMode.CreateNew))
+                {
+                    sfDiagram.Save(str);
+                }
+            }
 
-SfDiagram sfdiagram = new SfDiagram();
+            //To Save as memory stream
 
-System.IO.MemoryStream str = new System.IO.MemoryStream();
 
-sfdiagram.Save(str);
+        MemoryStream str = new MemoryStream();
 
-//SfDiagram loaded to stream
-
-str.Position = 0;
-
-sfdiagram.Load(str);
+                    sfDiagram.Save(str);  
 
 {% endhighlight %}
 
-## Serialization of Nodes
+{% endtabs %}
 
-The properties in INode interface and Known types are serializable.
+## Load
 
-For example, the following steps illustrate how to serialize the Custom Property:
+On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors in current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
 
-### All serializable [DataMember] custom fields or custom properties in a [DataContract] type must be set to public, and read or write.
+{% tabs %}
 
 {% highlight C# %}
 
-public class NodeContent : INotifyPropertyChanged
+            //Load from saved XAML file
+
+            OpenFileDialog dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == true)
+            {
+                using (Stream myStream = dialog.OpenFile())
+                {
+                    sfDiagram.Load(myStream);
+                }
+            }
+
+            //Load from saved memory stream
+
+            str.Position = 0;
+            sfDiagram.Load(str);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## How to serialize custom properties 
+
+In SfDiagram, you cannot serialize Content, ContentTemplate, Shape, and ShapeStyle of each and every diagramming objects. If you want to preserve the ShapeStyle and ContentTemplate of diagramming objects, keep them in resources and apply once the diagramming objects are added to the Diagram page.  
+
+The custom properties in custom class derived from any of our SfDiagram's interface or from any of the view model classes are serialized with the help of DataMember attribute.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    public class NodeContent : INode
+    {
+        [DataMember]
+        public string NodeType
+        {
+            get;
+            set;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> SfDiagram's interface and view model classes are created without DataContract attribute. So there is no need to add DataContract attribute for a class, which is derived from them.
+
+## How to serialize a custom class 
+
+You can serialize a business class with the help of DataContract attribute and SfDiagram's KnownTypes property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    [DataContract]
+    public class NodeContent
+    {
+        [DataMember]
+        public string NodeType
+        {
+            get;
+            set;
+        }
+    }
+
+	Diagram.KnownTypes = () => new List<Type>()
+    {
+        typeof(NodeContent)
+    };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Refer to the [Save and Load sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_WPF-158395240) to depict all these supports.
+
+## How to load SfDiagram's old version in new version 
+
+You can load any of the old version SfDiagram's stream in new version with the help of upgrade method. Refer to the following code sample.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using (Stream myStream = dialog.OpenFile())
 {
-	[DataMember]
-       public string NodeType
-       {
-		get;
-		set;
-	}
+    sfDiagram.Upgrade(myStream);
+    sfDiagram.Load(myStream);
 }
 
 {% endhighlight %}
 
-### Known types must be specified in code for the custom class.
-
-{% highlight C# %}
-
-sfdiagram.KnownTypes = () => new List<Type>()
-{
-	typeof(NodeContent)
-
-};
-
-{% endhighlight %}
-
-If we need to serialize the NodeType property(custom property) of NodeContent(custom class), then we must add DataMember attribute to NodeType property.
-
-In the preceding code, NodeContent is unknown type to Serializer. So, we must specify the type to the KnownTypes of SfDiagram.
-
-I> We should not add DataMember attribute to the built-in properties of built-in classes(Node, Connector, INode, IConnector,....).
-
-Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/wpf/sfdiagram/exporting "Exporting").
+{% endtabs %}
