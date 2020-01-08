@@ -630,6 +630,373 @@ The final output of application is given below:
 
 ![Configure the region adapter mappings](PatternandPractices_images/Patterns-and-Practices.jpeg)
 
-N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism-6.1)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism)
 
+## Configuring DockingManager with Prism 7.1
 
+This section explains about creating a simple application using `DockingManager` in `PRISM 7.1` pattern. 
+
+### Setting up WPF application
+
+1. Create a WPF application and rename the file `MainWindow.xaml` as `Shell.xaml` and `MainWindow.xaml.cs` as `Shell.xaml.cs`.
+  
+2. Rename the class name MainWindow as Shell in all the occurrences. 
+ 
+3. Add the following required assembly references to the project:
+
+   * Prism
+   * Prism.WPF
+   * Prism.Unity.WPF
+   * Microsoft.Practices.ServiceLocation
+   * Microsoft.Practices.Unity
+   * Microsoft.Practices.Unity.Configuration
+   * Microsoft.Practices.Unity.RegistrationByConvention
+
+4. In the Shell.xaml file, add the namespace definition for Prism Library as given below:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Window x:Class="DockingManagerPrism.App.MainWindow "
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:prism="http://prismlibrary.com/"
+        Title="MainWindow" Height="350" Width="525">
+</Window>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+5. Create an instance of the control in Shell.xaml file and set the attached property `RegionManager.RegionName` for it. Here we have used `DockingManager` control.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager prism:RegionManager.RegionName="MainRegion" UseDocumentContainer="True" DockFill="True" DockFillDocumentMode="Normal"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the DockingManager. 
+
+6. Add the following required assembly references in App.xaml.cs file.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Prism.Ioc;
+using Prism.Modularity;
+using Prism.Regions;
+using Prism.Unity;
+using System.Windows;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+7. Inherit the App class from `PrismApplication` in App.xaml.cs file.
+
+{% tabs %}
+
+{% highlight C# %}
+
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : PrismApplication
+{
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+8. Override the methods `CreateShell`, `RegisterTypes` and `CreateModuleCatalog` as given below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class App : PrismApplication
+{
+    protected override Window CreateShell()
+    {
+        return Container.Resolve<Shell>();
+    }
+
+    protected override void RegisterTypes(IContainerRegistry containerRegistry)
+    {
+
+    }
+    
+    protected override IModuleCatalog CreateModuleCatalog()
+    {
+        ModuleCatalog catalog = new ModuleCatalog();
+        // Need to add the module catalogs here
+        return catalog;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding modules to the project
+
+1. Create as ClassLibrary projects for the modules. Here three class libraries are created for three modules.
+
+2. Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<UserControl x:Class="Program.ProgramView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             syncfusion:DockingManager.Header="Program.cs"
+             syncfusion:DockingManager.State="Document"
+             d:DesignHeight="300" d:DesignWidth="200">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="using System;"/>
+            <TextBlock Text="using System.Windows;"/>
+            <TextBlock Text="using System.Windows.Controls;"/>
+            <TextBlock Text="using System.Windows.Data;"/>
+            <TextBlock Text="using System.Text;"/>
+            <TextBlock Text=""/>
+            <TextBlock Text="namespace Program"/>
+            <TextBlock Text="{"/>
+            <TextBlock Text="public class MyProgram"/>
+            <TextBlock Text=" {"/>
+            <TextBlock Text=""/>
+            <TextBlock Text=" }"/>
+            <TextBlock Text="}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+3. Create a class implementing IModule interface for all the modules in your project. Using `OnInitialized` method register the view to the region using region name (`MainRegion`).
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class ProgramModule : IModule
+{
+    public void OnInitialized(IContainerProvider containerProvider)
+    {
+        var regionManager = containerProvider.Resolve<IRegionManager>();
+        regionManager.RegisterViewWithRegion("MainRegion", typeof(ProgramView));
+    }
+
+    public void RegisterTypes(IContainerRegistry containerRegistry)
+    {
+            
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+4. Add all the modules as reference projects in main application. Add all modules to module catalog and also register it in App.xaml.cs as given below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override void RegisterTypes(IContainerRegistry containerRegistry)
+{
+    containerRegistry.RegisterForNavigation<Toolbox.ToolboxModule>();
+    containerRegistry.RegisterForNavigation<Program.ProgramModule>();
+     containerRegistry.RegisterForNavigation<SolutionExplorer.SolutionExplorerModule>();
+}
+
+protected override IModuleCatalog CreateModuleCatalog()
+{
+    ModuleCatalog catalog = new ModuleCatalog();
+    catalog.AddModule(typeof(Toolbox.ToolboxModule));
+    catalog.AddModule(typeof(Program.ProgramModule));
+    catalog.AddModule(typeof(SolutionExplorer.SolutionExplorerModule));
+    return catalog;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Create RegionAdapter for DockingManager
+
+So, far implementations will work as expected for an ItemsControl. Since `DockingManager` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
+
+1. Create a ClassLibrary project for defining the region adapter and the class should inherit from `RegionAdapterBase` class. In that override the methods, `Adapt` and `CreateRegion`. In Adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class DockingManagerRegionAdapter : RegionAdapterBase<DockingManager>
+{
+    public DockingManagerRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory)
+            : base(regionBehaviorFactory)
+    {
+
+    }
+
+    protected override void Adapt(IRegion region, DockingManager regionTarget)
+    {
+        region.Views.CollectionChanged += (s, e) =>
+        {
+            if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (FrameworkElement element in e.NewItems)
+                {
+                    if (!regionTarget.Children.Contains(element))
+                    {
+                        regionTarget.BeginInit();
+                        regionTarget.Children.Add(element);
+                        regionTarget.EndInit();
+                    }
+                }
+            }
+        };
+    }
+       
+    protected override IRegion CreateRegion()
+    {
+        return new SingleActiveRegion();
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+2. Also, we can activate and deactivate views by creating a behavior class and the class should inherit from `RegionBehavior`, `IHostAwareRegionBehavior` classes. In below code example, shown how to activate and deactivate the document views using `ActiveDocumentChanged` event of `DocumentContainer`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class DocumentRegionActiveAwareBehavior : RegionBehavior, IHostAwareRegionBehavior
+{
+    public const string BehaviorKey = "DocumentRegionActiveAwareBehavior";
+    DependencyObject _hostControl;
+    public DependencyObject HostControl
+    {
+        get { return _hostControl; }
+        set { _hostControl = value as DockingManager; }
+    }
+
+    protected override void OnAttach()
+    {
+        ((HostControl as DockingManager).DocContainer as DocumentContainer).AddTabDocumentAtLast = true;
+        ((HostControl as DockingManager).DocContainer as DocumentContainer).ActiveDocumentChanged += DocumentRegionActiveAwareBehavior_ActiveDocumentChanged;
+    }
+
+    private void DocumentRegionActiveAwareBehavior_ActiveDocumentChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    {
+        if (e.OldValue != null)
+        {
+            var item = e.OldValue;
+
+            //are we dealing with a ContentPane directly
+            if (Region.Views.Contains(item) && Region.ActiveViews.Contains(item))
+            {
+                Region.Deactivate(item);
+            }
+            else
+            {
+                //now check to see if we have any views that were injected
+                var contentControl = item as ContentControl;
+                if (contentControl != null)
+                {
+                    var injectedView = contentControl.Content;
+                    if (Region.Views.Contains(injectedView) && Region.ActiveViews.Contains(injectedView))
+                        Region.Deactivate(injectedView);
+                }
+            }
+        }
+
+        if (e.NewValue != null)
+        {
+            var item = e.NewValue;
+
+            //are we dealing with a ContentPane directly
+            if (Region.Views.Contains(item) && !this.Region.ActiveViews.Contains(item))
+            {
+                Region.Activate(item);
+            }
+            else
+            {
+                //now check to see if we have any views that were injected
+                var contentControl = item as ContentControl;
+                if (contentControl != null)
+                {
+                    var injectedView = contentControl.Content;
+                    if (Region.Views.Contains(injectedView) && !this.Region.ActiveViews.Contains(injectedView))
+                        Region.Activate(injectedView);
+                }
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+3. Override the method `AttachBehaviors` in `DockingManagerRegionAdapter` class and add the created behavior to the region as like below code snippet:
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override void AttachBehaviors(IRegion region, DockingManager regionTarget)
+{
+    base.AttachBehaviors(region, regionTarget);
+    if (!region.Behaviors.ContainsKey(DocumentRegionActiveAwareBehavior.BehaviorKey))
+        region.Behaviors.Add(DocumentRegionActiveAwareBehavior.BehaviorKey, new DocumentRegionActiveAwareBehavior { HostControl = regionTarget });
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Configure the region adapter mappings
+
+Add reference to RegionAdapter project from the main application. Region adapter mapping have to be performed in `App` class. Override the method `ConfigureRegionAdapterMappings` and set the mapping as given below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
+{
+    base.ConfigureRegionAdapterMappings(regionAdapterMappings);
+    regionAdapterMappings.RegisterMapping(typeof(DockingManager), Container.Resolve<DockingManagerRegionAdapter.DockingManagerRegionAdapter>());
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The final output of application is given below:
+
+![WPF DockingManager with prism 7.1](PatternandPractices_images/wpf-docking-manager-prism-7.1.png)
+
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism)
