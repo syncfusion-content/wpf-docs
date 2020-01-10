@@ -826,7 +826,7 @@ NumberGroupSizes</td><td>
 Number of digits in each group</td></tr>
 <tr>
 <td>UseNullOption</td>
-<td>By default, the value of IntegerEdit cells is "0." Set {{'[UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridIntegerEditStyleInfo~UseNullOption.html)'| markdownify}} as "True" to hide or delete the default value in IntegerEdit cells.</td>
+<td>By default, the value of IntegerEdit cells is "0". Set {{'[UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridIntegerEditStyleInfo~UseNullOption.html)'| markdownify}} as "True" to hide or delete the default value in IntegerEdit cells.</td>
 </tr>
 </table>
 
