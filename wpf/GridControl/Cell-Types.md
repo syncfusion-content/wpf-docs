@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell-Types | GridControl | wpf | Syncfusion
-description: This secction provides the list of different cell types of the grid for Syncfusion Essential WPF.
+description: Learn here about the list of different cell types (built-in, custom) of the grid for Syncfusion Essential WPF.
 platform: wpf
 control: Grid Control
 documentation: ug
@@ -824,6 +824,10 @@ String that separates groups of digits</td></tr>
 <td>
 NumberGroupSizes</td><td>
 Number of digits in each group</td></tr>
+<tr>
+<td>UseNullOption</td>
+<td>By default, the value of IntegerEdit cells is "0". Set {{'[UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridIntegerEditStyleInfo~UseNullOption.html)'| markdownify}} as "True" to hide or delete the default value in IntegerEdit cells.</td>
+</tr>
 </table>
 
 
@@ -851,6 +855,9 @@ grid.Model[10, 2].IsEditable = true;
 grid.Model[10, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "@"};
 grid.Model[10, 2].NumberFormat.NumberGroupSizes = sizes;
 grid.Model[10, 2].CellValue = 1000;
+
+grid.Model.ColStyles[3].CellType = "IntegerEdit";
+grid.Model.ColStyles[3].IntegerEdit.UseNullOption = true;
 {% endhighlight %}
 {% endtabs %}
 
