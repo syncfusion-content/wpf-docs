@@ -843,7 +843,13 @@ protected override IModuleCatalog CreateModuleCatalog()
 
 So, far implementations will work as expected for an ItemsControl. Since `DockingManager` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
 
-1. Create a ClassLibrary project for defining the region adapter and the class should inherit from `RegionAdapterBase` class. In that override the methods, `Adapt` and `CreateRegion`. In Adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
+1. Create a ClassLibrary project for defining the region adapter and the class should inherit from `RegionAdapterBase` class. In that override the methods, `Adapt` and `CreateRegion`. There are three types of region class to create a region based on the `ContentControlRegionAdapter`, `ItemsControlRegionAdapter` and `SelectorRegionAdapter` as follows: 
+
+* SingleActiveRegion - The Region that allows a maximum of one active view at a time.
+* AllActiveRegion - The Region that keeps all the views in it as active and de-activation of views are not allowed.
+* Region - The Region that allows multiple active views and and de-activation of views are allowed.
+
+In Adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
 
 {% tabs %}
 
