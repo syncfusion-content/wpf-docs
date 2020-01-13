@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio WPF products
-description: Learn how to install and deploy the Syncfusion WPF component
+title: System Requirements | WPF | Syncfusion
+description: this section provides the information about the system requirements for WPF platform with supported browsers
 platform: wpf
 control: Installation and Deployment
 documentation: ug

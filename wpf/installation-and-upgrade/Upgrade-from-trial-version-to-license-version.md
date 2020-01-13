@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Install and Deployment process of Syncfusion WPF products
-description: Learn how to install and deploy the Syncfusion WPF component
+title: Trial Version to License Version| WPF | Syncfusion
+description: This section provides information about upgrading from Trial version of Essential Studio to Licensed version
 platform: wpf
 control: Installation and Deployment
 documentation: ug
