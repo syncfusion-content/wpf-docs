@@ -630,7 +630,7 @@ The final output of application is given below:
 
 ![Configure the region adapter mappings](PatternandPractices_images/Patterns-and-Practices.jpeg)
 
-N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism/tree/master/PRISM-6.1)
 
 ## Configuring DockingManager with Prism 7.1
 
@@ -1005,4 +1005,4 @@ The final output of application is given below:
 
 ![WPF DockingManager with prism 7.1](PatternandPractices_images/wpf-docking-manager-prism-7.1.png)
 
-N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism/tree/master/PRISM-7.1)
