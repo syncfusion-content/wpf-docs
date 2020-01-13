@@ -232,66 +232,183 @@ _ribbonGallery.MenuItems.Add(_ribbonButton3)
 
 ## Add custom context menu
 
-Context menu is a kind of menu that appears when a right-click operation is performed on the target control. `RibbonGallery` and `RibbonGalleryItem`’s allows us to create a set of custom commands or options by setting RibbonContextMenu to its ContextMenu property. This will override the built-in context menu of the RibbonGallery and its items.
+The context menu is a type of menu that appears when a right-click operation is performed on the target. The ribbon gallery and its items allow to add a custom context menu with user-defined menu items set to the **"ContextMenu"** property. This will override the built-in context menu of the ribbon gallery and its items.
 
 {% tabs %}
 {% highlight XAML %}
+<!-- A custom context menu with user-defined menu items -->
 <syncfusion:RibbonWindow.Resources>
     <syncfusion:RibbonContextMenu x:Key="galleryContextMenu" ItemsSource="{Binding}">
-        <syncfusion:RibbonMenuItem Header="Apply Style" IconBarEnabled="True"/>
-        <syncfusion:RibbonMenuItem Header="Remove from Style Gallery" IconBarEnabled="True"/>
+        <syncfusion:RibbonMenuItem Header="Apply Style" Command="{Binding DataContext.ApplyStyleCommand}" IconBarEnabled="True"/>
+        <syncfusion:RibbonMenuItem Header="Remove from Style Gallery" Command="{Binding DataContext.RemoveItemCommand}" IconBarEnabled="True"/>
         <Separator />
-        <syncfusion:RibbonMenuItem Header="Minimize Ribbon" IconBarEnabled="True" Click="MinimizeRibbonItem_Click" />
+        <syncfusion:RibbonMenuItem Header="Minimize Ribbon" Command="{Binding DataContext.MinimizeRibbonCommand}" IconBarEnabled="True" />
     </syncfusion:RibbonContextMenu>
 </syncfusion:RibbonWindow.Resources>
-<Grid>
-    <syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
-        <syncfusion:RibbonTab Caption="HOME" IsChecked="False"/>
-        <syncfusion:RibbonTab IsChecked="True" Caption="DESIGN">
-            <syncfusion:RibbonBar Header="RibbonBar">
-                <syncfusion:RibbonGallery x:Name="gallery" ContextMenu="{DynamicResource galleryContextMenu}"
-                                          Width="380" SizeForm="Large" Height="67"  ItemHeight="60"  ItemWidth="60" MenuIconBarEnabled="True">
-                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
-                        <StackPanel>
-                            <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="AaBbCc"/>
-                            <TextBlock TextAlignment="Center" Margin="0,11,0,0" Text="Normal"/>
-                        </StackPanel>
-                    </syncfusion:RibbonGalleryItem>
-                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
-                        <StackPanel>
-                            <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="AaBbCc"/>
-                            <TextBlock TextAlignment="Center" Margin="0,11,0,0" Text="No Spa.."/>
-                        </StackPanel>
-                    </syncfusion:RibbonGalleryItem>
-                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
-                        <StackPanel>
-                            <TextBlock FontSize="18" Foreground="DarkBlue" TextAlignment="Center" Margin="0,5,0,0" Text="AaBbCc"/>
-                            <TextBlock TextAlignment="Center" Margin="0,6,0,0" Text="Heading 1"/>
-                        </StackPanel>
-                    </syncfusion:RibbonGalleryItem>
-                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
-                        <StackPanel>
-                            <TextBlock FontSize="16" Foreground="DarkBlue" TextAlignment="Center" Margin="0,6,0,0" Text="AaBbCc"/>
-                            <TextBlock TextAlignment="Center" Margin="0,8,0,0" Text="Heading 2"/>
-                        </StackPanel>
-                    </syncfusion:RibbonGalleryItem>
-                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
-                        <StackPanel>
-                            <TextBlock FontSize="14" Foreground="DarkBlue" TextAlignment="Center" Margin="0,7,0,0" Text="AaBbCc"/>
-                            <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="Heading 3"/>
-                        </StackPanel>
-                    </syncfusion:RibbonGalleryItem>
-                    <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
-                        <StackPanel>
-                            <TextBlock FontSize="15" Foreground="DarkBlue" TextAlignment="Center" Margin="0,7,0,0" Text="AaBbCc"/>
-                            <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="Heading 4"/>
-                        </StackPanel>
-                    </syncfusion:RibbonGalleryItem>
-                </syncfusion:RibbonGallery>
-            </syncfusion:RibbonBar>
-        </syncfusion:RibbonTab>
-    </syncfusion:Ribbon>
-</Grid>
+
+<!-- Replace the custom context menu with the built-in context menu of the ribbon gallery -->
+<syncfusion:Ribbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+    <syncfusion:RibbonTab Caption="HOME" IsChecked="False"/>
+    <syncfusion:RibbonTab IsChecked="True" Caption="DESIGN">
+        <syncfusion:RibbonBar Header="RibbonBar">
+            <syncfusion:RibbonGallery x:Name="gallery" ContextMenu="{DynamicResource galleryContextMenu}"
+                                      Width="380" SizeForm="Large" Height="67"  ItemHeight="60"  ItemWidth="60" MenuIconBarEnabled="True">
+                <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                    <StackPanel>
+                        <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="AaBbCc"/>
+                        <TextBlock TextAlignment="Center" Margin="0,11,0,0" Text="Normal"/>
+                    </StackPanel>
+                </syncfusion:RibbonGalleryItem>
+                <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                    <StackPanel>
+                        <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="AaBbCc"/>
+                        <TextBlock TextAlignment="Center" Margin="0,11,0,0" Text="No Spa.."/>
+                    </StackPanel>
+                </syncfusion:RibbonGalleryItem>
+                <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                    <StackPanel>
+                        <TextBlock FontSize="18" Foreground="DarkBlue" TextAlignment="Center" Margin="0,5,0,0" Text="AaBbCc"/>
+                        <TextBlock TextAlignment="Center" Margin="0,6,0,0" Text="Heading 1"/>
+                    </StackPanel>
+                </syncfusion:RibbonGalleryItem>
+                <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                    <StackPanel>
+                        <TextBlock FontSize="16" Foreground="DarkBlue" TextAlignment="Center" Margin="0,6,0,0" Text="AaBbCc"/>
+                        <TextBlock TextAlignment="Center" Margin="0,8,0,0" Text="Heading 2"/>
+                    </StackPanel>
+                </syncfusion:RibbonGalleryItem>
+                <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                    <StackPanel>
+                        <TextBlock FontSize="14" Foreground="DarkBlue" TextAlignment="Center" Margin="0,7,0,0" Text="AaBbCc"/>
+                        <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="Heading 3"/>
+                    </StackPanel>
+                </syncfusion:RibbonGalleryItem>
+                <syncfusion:RibbonGalleryItem Margin="2" CheckOnClick="False">
+                    <StackPanel>
+                        <TextBlock FontSize="15" Foreground="DarkBlue" TextAlignment="Center" Margin="0,7,0,0" Text="AaBbCc"/>
+                        <TextBlock TextAlignment="Center" Margin="0,9,0,0" Text="Heading 4"/>
+                    </StackPanel>
+                </syncfusion:RibbonGalleryItem>
+            </syncfusion:RibbonGallery>
+        </syncfusion:RibbonBar>
+    </syncfusion:RibbonTab>
+</syncfusion:Ribbon>
+
+{% endhighlight %}
+{% highlight C# %}
+
+/// <summary>
+/// Apply style item command
+/// </summary>
+public DelegateCommand ApplyStyleCommand
+{
+    get
+    {
+        return new DelegateCommand(ApplyStyleCommandAction);
+    }
+}
+
+/// <summary>
+/// Action that occurs when Apply style item is selected from context menu
+/// </summary>
+private void ApplyStyleCommandAction(object param)
+{
+    SelectionForeground = new SolidColorBrush(Color.FromRgb(0, 0, 0));
+    SelectionFontSize = 14;
+    foreach (Paragraph paragraph in paragraphs)
+    {
+        paragraph.LineHeight = 20;
+        paragraph.Foreground = new SolidColorBrush(Color.FromRgb(0, 0, 0));
+        paragraph.FontSize = 14;
+    }
+}
+
+/// <summary>
+/// Remove Item command
+/// </summary>
+public DelegateCommand RemoveItemCommand
+{
+    get
+    {
+        return new DelegateCommand(RemoveItemCommandAction);
+    }
+}
+
+/// <summary>
+/// Action that occurs when Remove item is selected from context menu
+/// </summary>
+private void RemoveItemCommandAction(object param)
+{
+    if (gallery.Items.Count > 0)
+        gallery.Items.RemoveAt(0);
+}
+
+/// <summary>
+/// Minimize ribbon command
+/// </summary>
+public DelegateCommand MinimizeRibbonCommand
+{
+    get
+    {
+        return new DelegateCommand(MinimizeRibbonCommandAction);
+    }
+}
+
+/// <summary>
+/// Action that occurs when minimize ribbon item is selected from context menu
+/// </summary>
+private void MinimizeRibbonCommandAction(object param)
+{
+    this.Ribbon.RibbonState = RibbonState.Hide;
+}
+
+/// <summary>
+/// A class that defines the interface for the command
+/// </summary>
+public class DelegateCommand : ICommand
+{
+    private readonly Action<object> _execute;
+    /// <summary>
+    /// Occurs when changes occur that affect whether or not the command should execute.
+    /// </summary>
+    public event EventHandler CanExecuteChanged;
+
+    /// <summary>
+    /// Constrcutor of the Delegate command
+    /// </summary>
+    /// <param name="execute"></param>
+    public DelegateCommand(Action<object> execute)
+    {
+        _execute = execute;
+    }
+
+    /// <summary>
+    ///  Defines the method that determines whether the command can execute in its current state
+    /// </summary>
+    public bool CanExecute(object parameter)
+    {
+        return true;
+    }
+
+    /// <summary>
+    ///  Defines the method to be called when the command is invoked.
+    /// </summary>
+    public void Execute(object parameter)
+    {
+        _execute(parameter);
+    }
+
+    /// <summary>
+    /// Defines the method that needs to be called when changes occur that affect the command
+    /// </summary>
+    public void RaiseCanExecuteChanged()
+    {
+        if (CanExecuteChanged != null)
+        {
+            CanExecuteChanged(this, EventArgs.Empty);
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
