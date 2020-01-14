@@ -7,13 +7,13 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# WPF CurrencyTextBox Overview
+# WPF PropertyGrid Overview
 
 The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control provides an interface for browsing and editing an object's properties with Blendability support, custom editors, category editors, sorting and grouping supports. The WPF `PropertyGrid` control provides similar features to the Windows Forms `PropertyGrid` control.
 
 ## Control structure
 
-![Default CurrencyTextBox control](Getting-Started_images/Getting-Started_img8.png)
+![Default PropertyGrid control](Getting-Started_images/Getting-Started_img8.png)
 
 ## Features
 
