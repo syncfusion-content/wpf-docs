@@ -437,9 +437,9 @@ private void TreeGrid_NodeCollapsed(object sender, NodeCollapsedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Bind the node expansion state to a bool property in data object
+## Expand/Collapse a node based on mapping property
 
-SfTreeGrid supports to expand/collapse the nodes based on the value of a bool property in the underlying data object by using [SfTreeGrid.ExpandStateMappingName](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandStateMappingName.html) property. TreeGrid expand/collapse the node when the specified property value in underlying data object gets changed and vice versa.
+SfTreeGrid supports to expand/collapse the nodes based on the value of a boolean mapping property in the underlying data object by using [SfTreeGrid.ExpandStateMappingName](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandStateMappingName.html) property. TreeGrid expand/collapse the node when the specified property value in underlying data object gets changed.
 
 {% tabs %}
 {% highlight xaml %}
