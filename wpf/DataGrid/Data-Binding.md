@@ -42,6 +42,9 @@ Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 * Filtering with [TimeSpan](https://msdn.microsoft.com/en-us/library/system.timespan) values is not supported.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
 
+### Apply DataView.RowFilter on initial loading
+
+When DataTable is bounded as `SfDataGrid.ItemsSource`, the [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) will not be applied to the data on initial loading by default. The `DataView.RowFilter` can be applied to the data on initial loading by enabling [CanUseViewFilter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CanUseViewFilter.html) property.
 
 ## Binding with dynamic data object
 
