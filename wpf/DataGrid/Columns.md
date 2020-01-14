@@ -742,9 +742,9 @@ void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Retrieve the width of the column after resizing completed
+### Identify resizing of the column gets completed
 
-SfDataGrid allows to get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in ResizingColumns event.
+SfDataGrid allows you to identify the progress of the resizing of columns through `ResizingColumnsEventArgs.Reason` property. You can get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in `ResizingColumns` event.
 
 {% tabs %}
 {% highlight c# %}
