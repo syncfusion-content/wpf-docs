@@ -41,7 +41,13 @@ propertyGrid.Foreground = Brushes.Red;
 
 ## Setting the Background
 
-The Users can change the background color for the properties of `PropertyGrid's` `SelectedObject` by setting the [ViewBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ViewBackgroundColor.html) property. The default color value of `ViewBackgroundColor` is `White`.
+The Users can change the background color for the properties of `PropertyGrid's` `SelectedObject` in the following ways.
+
+    1.EditableBackground
+    2.ReadOnlyBackground
+    3.ViewBackgroundColor
+
+ by setting the [ViewBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ViewBackgroundColor.html) property. The default color value of `ViewBackgroundColor` is `White`.
 
 {% tabs %}
 {% highlight xaml %}
