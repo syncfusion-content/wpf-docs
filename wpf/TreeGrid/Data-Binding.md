@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding support in SfTreeGrid.
-description: How to bind the data in SfTreeGrid with different collection.
+title: Data Binding | TreeGrid | WPF | Syncfusion
+description: This section explains about the DataBinding support in in Syncfusion WPF TreeGrid (SfTreeGrid) control
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -434,6 +434,23 @@ private void TreeGrid_NodeCollapsed(object sender, NodeCollapsedEventArgs e)
 {
     var node = e.Node;
 }
+{% endhighlight %}
+{% endtabs %}
+
+## Expand/Collapse a node based on mapping property
+
+SfTreeGrid supports to expand/collapse the nodes based on the value of a boolean mapping property in the underlying data object by using [SfTreeGrid.ExpandStateMappingName](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpandStateMappingName.html) property. TreeGrid expand/collapse the node when the specified property value in underlying data object gets changed.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Name="treeGrid"
+                       ExpandStateMappingName="IsExpanded"
+                       ChildPropertyName="Children"
+                       ItemsSource="{Binding PersonDetails}"
+                       ShowCheckBox="True"/>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.ExpandStateMappingName = "IsExpanded";
 {% endhighlight %}
 {% endtabs %}
 
