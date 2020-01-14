@@ -232,7 +232,7 @@ _ribbonGallery.MenuItems.Add(_ribbonButton3)
 
 ## Add custom context menu
 
-The context menu is a type of menu that appears when a right-click operation is performed on the target. The ribbon gallery and its items allow to add a custom context menu with user-defined menu items set to the **"ContextMenu"** property. This will override the built-in context menu of the ribbon gallery and its items.
+The context menu is a type of menu that appears when a right-click operation is performed on the target. The ribbon gallery and its items allow to add a custom context menu with user-defined menu items set to the [`ContextMenu`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonGallery_members.html) property. This will override the built-in context menu of the ribbon gallery and its items.
 
 {% tabs %}
 {% highlight XAML %}
@@ -298,7 +298,7 @@ The context menu is a type of menu that appears when a right-click operation is 
 {% highlight C# %}
 
 /// <summary>
-/// Apply style item command
+/// Command for "ApplyStyle" option in the context menu.
 /// </summary>
 public DelegateCommand ApplyStyleCommand
 {
@@ -309,7 +309,7 @@ public DelegateCommand ApplyStyleCommand
 }
 
 /// <summary>
-/// Action that occurs when Apply style item is selected from context menu
+/// Action that occurs when "ApplyStyle" menu item is selected from the context menu.
 /// </summary>
 private void ApplyStyleCommandAction(object param)
 {
@@ -324,7 +324,7 @@ private void ApplyStyleCommandAction(object param)
 }
 
 /// <summary>
-/// Remove Item command
+/// Command for "RemoveItem" option in the context menu.
 /// </summary>
 public DelegateCommand RemoveItemCommand
 {
@@ -335,7 +335,7 @@ public DelegateCommand RemoveItemCommand
 }
 
 /// <summary>
-/// Action that occurs when Remove item is selected from context menu
+/// Action that occurs when "RemoveItem" is selected from the context menu.
 /// </summary>
 private void RemoveItemCommandAction(object param)
 {
@@ -344,7 +344,7 @@ private void RemoveItemCommandAction(object param)
 }
 
 /// <summary>
-/// Minimize ribbon command
+/// Command for "MinimizeRibbon" option in the context menu.
 /// </summary>
 public DelegateCommand MinimizeRibbonCommand
 {
@@ -355,7 +355,7 @@ public DelegateCommand MinimizeRibbonCommand
 }
 
 /// <summary>
-/// Action that occurs when minimize ribbon item is selected from context menu
+/// Action that occurs when "MinimizeRibbon" item is selected from the context menu.
 /// </summary>
 private void MinimizeRibbonCommandAction(object param)
 {
@@ -363,18 +363,18 @@ private void MinimizeRibbonCommandAction(object param)
 }
 
 /// <summary>
-/// A class that defines the interface for the command
+/// A class that defines the interface for the command.
 /// </summary>
 public class DelegateCommand : ICommand
 {
     private readonly Action<object> _execute;
     /// <summary>
-    /// Occurs when changes occur that affect whether or not the command should execute.
+    /// Raises when changes occur and specifies whether or not the command should be executed.
     /// </summary>
     public event EventHandler CanExecuteChanged;
 
     /// <summary>
-    /// Constrcutor of the Delegate command
+    /// Constructor of the Delegate command
     /// </summary>
     /// <param name="execute"></param>
     public DelegateCommand(Action<object> execute)
@@ -383,7 +383,7 @@ public class DelegateCommand : ICommand
     }
 
     /// <summary>
-    ///  Defines the method that determines whether the command can execute in its current state
+    ///  Defines the method that determines whether the command can execute in its current state.
     /// </summary>
     public bool CanExecute(object parameter)
     {
@@ -399,7 +399,7 @@ public class DelegateCommand : ICommand
     }
 
     /// <summary>
-    /// Defines the method that needs to be called when changes occur that affect the command
+    /// Defines the method to be called when changes occur that affect the command.
     /// </summary>
     public void RaiseCanExecuteChanged()
     {

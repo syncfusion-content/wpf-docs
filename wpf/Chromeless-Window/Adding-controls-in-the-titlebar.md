@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding controls in the Syncfusion's Chromeless Window Title bar
-description: This section briefly describes the ability to add controls in Syncfusion's Chromeless Window Title bar.
+title: Adding controls in Syncfusion Chromeless Window Title Bar
+description: This section briefly describes the ability to add controls in Syncfusion Chromeless Window Title Bar.
 platform: wpf
 control: ChromelessWindow
 documentation: ug
@@ -41,7 +41,7 @@ Provided the option to add adaptive controls such as Button, TextBox, Label, etc
 public class MyObservableCollection : ObservableCollection<object> { }
 
 /// <summary>
-/// Commmand of the Help button
+/// Commmand for the help button.
 /// </summary>
 public DelegateCommand HelpCommand
 {
@@ -52,7 +52,7 @@ public DelegateCommand HelpCommand
 }
 
 /// <summary>
-/// Action that is performed when clicking the Help button
+/// Action that is performed when clicking the help button.
 /// </summary>
 private void HelpCommandAction(object param)
 {
@@ -60,18 +60,18 @@ private void HelpCommandAction(object param)
 }
 
 /// <summary>
-/// A class that defines the interface for the command
+/// A class that defines the interface for the command.
 /// </summary>
 public class DelegateCommand : ICommand
 {
     private readonly Action<object> _execute;
     /// <summary>
-    /// Occurs when changes occur that affect whether or not the command should execute.
+    /// Raises when changes occur and specifies whether or not the command should be executed.
     /// </summary>
     public event EventHandler CanExecuteChanged;
 
     /// <summary>
-    /// Constrcutor of the Delegate command
+    /// Constrcutor of the delegate command.
     /// </summary>
     /// <param name="execute"></param>
     public DelegateCommand(Action<object> execute)
@@ -80,7 +80,7 @@ public class DelegateCommand : ICommand
     }
 
     /// <summary>
-    ///  Defines the method that determines whether the command can execute in its current state
+    ///  Defines the method that determines whether the command can be executed in its current state.
     /// </summary>
     public bool CanExecute(object parameter)
     {
@@ -96,7 +96,7 @@ public class DelegateCommand : ICommand
     }
 
     /// <summary>
-    /// Defines the method that needs to be called when changes occur that affect the command
+    /// Defines the method to be called when changes occur that affect the command.
     /// </summary>
     public void RaiseCanExecuteChanged()
     {
@@ -110,7 +110,7 @@ public class DelegateCommand : ICommand
 {% endhighlight %}
 {% endtabs %}
 
-![Title bar items added through collection](Getting-Started_images/Title-bar-items-using-collection.png)
+![Title Bar items added through collection](Getting-Started_images/Title-bar-items-using-collection.png)
 
 We can also apply data template in-order to define the visual appearance of the items stored in the [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~LeftHeaderItemsSource.html) and [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~RightHeaderItemsSource.html). The [`LeftHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~LeftHeaderItemTemplate.html) is used to define the visual appearance of the items stored in the [`LeftHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~LeftHeaderItemsSource.html) while the [`RightHeaderItemTemplate`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~RightHeaderItemTemplate.html) is used to define the visual appearance of the items stored in the [`RightHeaderItemsSource`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~RightHeaderItemsSource.html).
 
@@ -168,7 +168,7 @@ public class UtilityViewModel
     }
 
     /// <summary>
-    /// Commmand of the Help button
+    /// Commmand for the Help button.
     /// </summary>
     public DelegateCommand HelpCommand
     {
@@ -179,7 +179,7 @@ public class UtilityViewModel
     }
 
     /// <summary>
-    /// Action that is performed when clicking the Help button
+    /// Action that is performed when clicking the help button.
     /// </summary>
     private void HelpCommandAction(object param)
     {
@@ -187,7 +187,7 @@ public class UtilityViewModel
     }
 
     /// <summary>
-    /// Commmand of the Sign in button
+    /// Commmand for the Sign in button.
     /// </summary>
     public DelegateCommand SignInCommand
     {
@@ -198,7 +198,7 @@ public class UtilityViewModel
     }
 
     /// <summary>
-    /// Action that is performed when clicking the Sign in button
+    /// Action that is performed when clicking the Sign in button.
     /// </summary>
     private void SignInCommandAction(object param)
     {
@@ -247,13 +247,13 @@ public class Item
 }
 
 /// <summary>
-/// A class that defines the interface for the command
+/// A class that defines the interface for the command.
 /// </summary>
 public class DelegateCommand : ICommand
 {
     private readonly Action<object> _execute;
     /// <summary>
-    /// Occurs when changes occur that affect whether or not the command should execute.
+    /// Raises when changes occur and specifies whether or not the command should be executed.
     /// </summary>
     public event EventHandler CanExecuteChanged;
 
@@ -267,7 +267,7 @@ public class DelegateCommand : ICommand
     }
 
     /// <summary>
-    ///  Defines the method that determines whether the command can execute in its current state
+    ///  Defines the method that determines whether the command can be executed in its current state.
     /// </summary>
     public bool CanExecute(object parameter)
     {
@@ -283,7 +283,7 @@ public class DelegateCommand : ICommand
     }
 
     /// <summary>
-    /// Defines the method that needs to be called when changes occur that affect the command
+    /// Defines the method to be called when changes occur that affect the command.
     /// </summary>
     public void RaiseCanExecuteChanged()
     {
