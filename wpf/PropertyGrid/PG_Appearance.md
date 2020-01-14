@@ -1,110 +1,201 @@
 ---
 layout: post
 title: Appearance in WPF PropertyGrid control | Syncfusion
-description: Learn about style, theme and appearence customization of Syncfusion WPF property grid control and more details.
+description: Learn about Appearance support in Syncfusion WPF PropertyGrid control and more details about the control features.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF PropertyGrid
 
-## Blendability
+This section deals with the appearance of [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control and contains the following topics.
 
-The PropertyGrid control can easily be editable in blend. You can edit the template of the PropertyGrid control to give a good look and feel for the control using Expression Blend.
+## Setting the Foreground
 
-### Using blendability support in an application
-
-Create the PropertyGrid control using Blend. After creating the PropertyGrid control using Blend, select it and go to “Object” -> “Edit Style” -> “Edit a Copy” to edit the Template of the PropertyGrid control.
-
-![image](Appearance_images/Appearance_img1.png)
-
-This will open a dialog (below) where you can give a name of your own style and define exactly where you would like to store it.
-
-![image](Appearance_images/Appearance_img2.png)
-
-What’s produced through the set of steps is quite a bit of XAML which is placed within your application. This XAML represents the default style for the PropertyGrid control.
-
-![image](Appearance_images/Appearance_img3.png)
-
-Now you can edit each part in the template and create custom look and feel for the control.
-
-## Background and foreground support
-
-You can customize the foreground and background of the PropertyGrid using the following properties,
-
-* LineColor
-* ViewBackground
-* CategoryForeground
-
-### Using background and foreground support in an application
-
-Using LineColor, you can set the background for category heading while grouping.Using CategoryForeground, you can set the foreground for category heading.
+The User can change the foreground color for properties of `PropertyGrid's` [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) by setting the `Foreground` property. The default color value of `Foreground` property is `Blue`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" LineColor="Red" CategoryForeground="Black">
+<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
+                         Foreground="Red">
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
 </syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.Foreground = Brushes.Red;
 
 {% endhighlight %}
 {% endtabs %}
 
-![image](Appearance_images/Appearance_img4.png)
+![PropertyGrid with Red foreground](Appearance_images/Appearance_Foreground.png)
 
-### Properties
+## Setting the Background
 
-Grouping and Sorting Table
+The Users can change the background color for the properties of `PropertyGrid's` `SelectedObject` by setting the [ViewBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ViewBackgroundColor.html) property. The default color value of `ViewBackgroundColor` is `White`.
 
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-ViewBackground</td><td>
-Sets the background for the PropertyGrid control.</td><td>
-DependencyProperty</td><td>
-Brush</td><td>
-</td></tr>
-<tr>
-<td>
-LineColor</td><td>
-Sets the background for category heading while grouping.</td><td>
-DependencyProperty</td><td>
-Brush</td><td>
-</td></tr>
-<tr>
-<td>
-CategoryForeground</td><td>
-Sets the foreground for category heading.</td><td>
-DependencyProperty</td><td>
-Brush</td><td>
-</td></tr>
-</table>
+{% tabs %}
+{% highlight xaml %}
 
-#### Sample link
+<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
+                         ViewBackgroundColor="Cyan">
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
 
-1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
-2. Select Run Locally Installed Samples in WPF Button.
-3. Now expand the PropertyGrid treeview item in the Sample Browser.
-4. Choose any one of the samples listed under it to launch. 
-5. Skins
+{% endhighlight %}
+{% highlight C# %}
 
-The appearance of the PropertyGrid can be customized by using the “VisualStyle” property. The following are the various built-in visual styles for PropertyGrid Control.
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.ViewBackgroundColor = Brushes.Cyan;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid with Cyan background](Appearance_images/Appearance_Background.png)
+
+### Group Header's foreground and background
+
+You can change the foreground and background of the Category Header by setting the [LineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~LineColor.html) property and [CategoryForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CategoryForeground.html) property. The `LineColor` and `CategoryForeground` values applied to the foreground and background of the Category Header only on grouping state.
+
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid"  Width="350" 
+                         LineColor="Cyan" CategoryForeground="Red">
+    <syncfusion:PropertyGrid.SelectedObject>
+        <Button></Button>
+    </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.LineColor = Brushes.Cyan;
+propertyGrid.CategoryForeground = Brushes.Red;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid with group header Red foreground and Cyan background](Appearance_images/Appearance_Groupheader.png)
+
+## Setting ToolTip
+
+ToolTips are used to show the information about the segment, when you mouse over on the segment. You can show or hide the tooltip for the properties in the `PropertyGrid` by handling [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) Property. The default value of `EnableToolTip` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid"  Width="350"
+                         EnableToolTip="False">
+    <syncfusion:PropertyGrid.SelectedObject>
+        <Button></Button>
+    </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.EnableToolTip = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid with tool tip and without tool tip](Appearance_images/Appearance_EnableToolTip.png)
+
+## Theme
+
+The appearance of the `PropertyGrid` control can be customized by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `PropertyGrid` control.
 
 * Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* ShinyBlue
-* ShinyRed
-* SyncOrange
-* VS2010
+* Default
+* Lime
 * Metro
-* Transparent
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* SystemTheme
+* VisualStudio2013
+* VisualStudio2015
+
+For example, the `Blend` style applied to the `PropertyGrid` as shown in the following example code:
+
+{% tabs %}
+{% highlight C# %}
+
+// Namespace for the SfSkinManager.
+
+using Syncfusion.SfSkinManager;
+
+{% endhighlight %}
+{% endtabs %}
+
+
+{% tabs %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+SfSkinManager.SetVisualStyle(propertyGrid, VisualStyles.Blend);
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid with Blend visual style](Appearance_images/Appearance_BlendTheme.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
