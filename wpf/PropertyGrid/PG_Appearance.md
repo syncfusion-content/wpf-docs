@@ -163,6 +163,100 @@ propertyGrid.CategoryForeground = Brushes.Red;
 
 ![PropertyGrid with group header Red foreground and Cyan background](Appearance_images/Appearance_Groupheader.png)
 
+## Setting the FontWeight
+
+The Users can change the font weight for the properties of `PropertyGrid's` `SelectedObject` in the following ways.
+
+    1.FontWeight
+    2.EditableFontWeight
+    3.ReadOnlyFontWeight
+    
+### 1.FontWeight
+
+ You can change the font weight for the properties by setting the `FontWeight` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
+                         FontWeight="Bold">
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.FontWeight = FontWeights.Bold;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid with bold fontweight](Appearance_images/Appearance_BoldFontWeight.png)
+
+### 2.EditableFontWeight
+
+You can change the font weight for the editable properties by setting the [EditableFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EditableFontWeight.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
+                         EditableFontWeight="Bold">
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.EditableFontWeight = FontWeights.Bold;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid editable properties with bold font weight](Appearance_images/Appearance_EditableFontWeight.png)
+
+### 3.ReadOnlyFontWeight
+
+You can change the font weight for the readonly properties by setting the [ReadOnlyFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ReadOnlyFontWeight.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
+                         ReadOnlyFontWeight="Bold">
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.ReadOnlyFontWeight = FontWeights.Bold;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid readonly properties with bold font weight](Appearance_images/Appearance_ReadOnlyFontWeight.png)
+
+N> If you use `EditableFontWeight` or `ReadOnlyFontWeight` properties with `FontWeight`, `EditableFontWeight` and `ReadOnlyFontWeight` properties have higher priority.
+
 ## Setting ToolTip
 
 ToolTips are used to show the information about the segment, when you mouse over on the segment. You can show or hide the tooltip for the properties in the `PropertyGrid` by handling [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) Property. The default value of `EnableToolTip` property is `true`.
