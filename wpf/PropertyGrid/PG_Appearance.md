@@ -43,11 +43,13 @@ propertyGrid.Foreground = Brushes.Red;
 
 The Users can change the background color for the properties of `PropertyGrid's` `SelectedObject` in the following ways.
 
-    1.EditableBackground
-    2.ReadOnlyBackground
-    3.ViewBackgroundColor
+    1.ViewBackgroundColor
+    2.EditableBackground
+    3.ReadOnlyBackground
+    
+### 1.ViewBackgroundColor
 
- by setting the [ViewBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ViewBackgroundColor.html) property. The default color value of `ViewBackgroundColor` is `White`.
+ You can change the background color for the properties by setting the [ViewBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ViewBackgroundColor.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -73,9 +75,67 @@ propertyGrid.ViewBackgroundColor = Brushes.Cyan;
 
 ![PropertyGrid with Cyan background](Appearance_images/Appearance_Background.png)
 
+### 2.EditableBackground
+
+You can change the background color for the editable properties by setting the [EditableBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EditableBackground.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
+                         EditableBackground="Green">
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.EditableBackground = Brushes.Green;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid editable properties with green background](Appearance_images/Appearance_EditableBackground.png)
+
+### 3.ReadOnlyBackground
+
+You can change the background color for the readonly properties by setting the [ReadOnlyBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ReadOnlyBackground.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
+                         ReadOnlyBackground="Red">
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
+propertyGrid.ReadOnlyBackground = Brushes.Red;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid readonly properties with red background](Appearance_images/Appearance_ReadOnlyBackground.png)
+
+N> If you use `EditableBackground` or `ReadOnlyBackground` properties with `ViewBackgroundColor`, `EditableBackground` and `ReadOnlyBackground` properties have higher priority.
+
 ### Group Header's foreground and background
 
-You can change the foreground and background of the Category Header by setting the [LineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~LineColor.html) property and [CategoryForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CategoryForeground.html) property. The `LineColor` and `CategoryForeground` values applied to the foreground and background of the Category Header only on grouping state.
+You can change the foreground and background of the `Category Header` by setting the [LineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~LineColor.html) property and [CategoryForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CategoryForeground.html) property. The `LineColor` value applied to the foreground and `CategoryForeground` value applied to the background of the `Category Header` only on grouping state and when [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property is `true`.
 
 
 {% tabs %}
