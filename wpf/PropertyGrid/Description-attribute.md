@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Description settings for the Properties in WPF PropertyGrid control | Syncfusion
+title: Description settings in WPF PropertyGrid control | Syncfusion
 description: This section explains how a description of the property item has been added through attributes in the WPF PropertyGrid control.
 platform: wpf
 control: PropertyGrid 
