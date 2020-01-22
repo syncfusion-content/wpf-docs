@@ -1,103 +1,239 @@
 ---
 layout: post
-title: Grouping, Sorting Ordering in WPF PropertyGrid | Syncfusion
-description: This section explains about how the property item can be grouped and sorted based on the SortDirection of property grid
+title: Grouping the Properties in WPF PropertyGrid control | Syncfusion
+description: This section explains how the property items can be grouped into the WPF PropertyGrid control.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Grouping and Sorting
+# Grouping the Properties
 
-This section explains about how the property items can be grouped or sorted in PropertyGrid. Property items will be sorted based on the [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property of PropertyGrid.
+Users can combine the properties and create multiple groups according to their needs. [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property decides whether the properties can be grouped or sorted. If the `SortButton` is `clicked`, the property `EnableGrouping` will be `false` and it will be `true` when `GroupButton` is `clicked`.The default value of the `EnableGrouping` property i `false`. If the `EnableGrouping` property is `true`, `PropertyGrid` can groups the property items based on Category Attribute or Display Attribute's GroupName field of the property. 
 
-## Grouping items based on attribute
+## Grouping through Category Attribute
 
-[EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property decides whether the items of property grid can be grouped or sorted. If the SortButton is clicked, the property EnableGrouping will be false and it will be true when GroupButton is clicked. If the property is true, propertyGrid groups the property items based on Category Attribute and Display Attribute's GroupName field of the property. 
-
-### Category Attribute
-
-Property items will be grouped based on the name specified in the [CategoryAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute?view=netframework-4.8). If the property item doesn't have any category name, that property will be grouped under "Misc" category. In following example, Gender property is grouped under "Misc" category.
+Properties in the `PropertyGrid` will be grouped based on the name specified in the [CategoryAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute?view=netframework-4.8). If the property item doesn't have any category name, that property will be grouped under `Misc` category. In following example, `Name` and `DOB` properties is grouped under `Misc` category and `ID` property is grouped under `Identity` category.
 
 {% tabs %}
-
 {% highlight C# %}
 
-        [Category("Identity")]
-        public string ID
+//Model.cs
+
+using System;
+
+using System.ComponentModel;
+
+public class Model
+
+{
+    
+    [Category("Identity")]
+    public string ID
+    {
+        get;
+
+        set;
+    }
+
+    [Category()]
+    public string Name
+    {
+        get;
+
+        set;
+    }
+
+    public DateTime DOB
+    {
+        get;
+
+        set;
+    }
+}
+
+      
+{% endhighlight %}
+{% endtabs %} 
+
+
+{% tabs %}
+{% highlight C# %}
+
+//ViewModel.cs
+
+public class ViewModel
+
+{
+    
+    private Object items = null;
+   
+    public Object Items
+    {
+        get
         {
-            get;
-
-            set;
+            return items;
         }
-
-
-        [Category("Identity")]
-        public DateTime DOB
+        set
         {
-            get;
-
-            set;
+            items = value;
         }
-        
-        public Gender Gender
-        {
-            get;
+    }
 
-            set;
-        }
+    public ViewModel()
+    {
+        Items = new Model() { Name = "John", DOB = new DateTime(2000, 01, 08), ID = "SF001" };
+    }
+
+}
 
 {% endhighlight %} 
- 
 {% endtabs %} 
 
-
-The following illustrates how the properties are grouped based on Category value,
-
-![Properties are grouped based on the value specified in the Category attribute](Grouping-and-sorting Images\Category-Attribute.png)
-
-### Display attribute with GroupName
-
-Property items will be grouped based on the name specified in the [GroupName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.groupname?view=netframework-4.8) field of DisplayAttribute. If the `Category` attribute is not specified in the property then the property items will be grouped with the name specified in the `GroupName` field. 
 
 {% tabs %}
+{% highlight xaml %}
 
+<Window x:Class="PropertyGrid_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropertyGrid_WPF"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="572" Width="800">
+    <Window.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Window.DataContext>
+    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="220" SelectedObject="{Binding Items}" 
+                                 EnableGrouping="True">
+        </syncfusion:PropertyGrid>
+    </Grid>
+</Window>
+
+{% endhighlight %} 
+{% endtabs %} 
+
+![Properties are grouped based on the value specified in the Category attribute](Grouping-and-sorting-Images\Category-Attribute.png)
+
+### Grouping through Display Attribute’s GroupName field
+
+Properties in the `PropertyGrid` will be grouped based on the value specified in the [GroupName] field of [Display] Attribute. If the property item doesn't have any Display Attribute’s GroupName field, that property will be grouped under `Misc` category. In following example, `Name` and `ID` properties is grouped under `Identity` category.
+
+{% tabs %}
 {% highlight C# %}
 
-        [Display(GroupName = "Identity")]
-        public string ID
-        {
-            get;
+//Model.cs
 
-            set;
-        }
+using System;
 
+using System.ComponentModel.DataAnnotations;
 
-        [Display(GroupName = "Identity")]
-        public DateTime DOB
-        {
-            get;
+public class Model
 
-            set;
-        }
+{
+    
+    [Display(GroupName = "Identity")]
+    public string ID
+    {
+        get;
 
-        public Gender Gender
-        {
-            get;
+        set;
+    }
 
-            set;
-        }
+    [Display(GroupName = "Identity")]
+    public string Name
+    {
+        get;
 
-{% endhighlight %}  
+        set;
+    }
 
+    public DateTime DOB
+    {
+        get;
+
+        set;
+    }
+}
+
+      
+{% endhighlight %}
 {% endtabs %} 
 
 
-Here, the `ID` and `DOB` is grouped based on the value specified in GroupName field.
+{% tabs %}
+{% highlight C# %}
 
-![Properties are grouped based on the value specified in the Display attribute](Grouping-and-sorting Images\Category-Attribute.png)   
+//ViewModel.cs
 
-Refer to this [`sample`](https://github.com/SyncfusionExamples/Filtering-the-property-items-of-PropertyGrid-through-attributes) to know how the property items are Categorized through attributes.
+public class ViewModel
+
+{
+    
+    private Object items = null;
+   
+    public Object Items
+    {
+        get
+        {
+            return items;
+        }
+        set
+        {
+            items = value;
+        }
+    }
+
+    public ViewModel()
+    {
+        Items = new Model() { Name = "John", DOB = new DateTime(2000, 01, 08), ID = "SF001" };
+    }
+
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="PropertyGrid_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropertyGrid_WPF"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="572" Width="800">
+    <Window.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Window.DataContext>
+    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="220" SelectedObject="{Binding Items}" 
+                                 EnableGrouping="True">
+        </syncfusion:PropertyGrid>
+    </Grid>
+</Window>
+
+{% endhighlight %} 
+{% endtabs %} 
+
+![Properties are grouped based on the value specified in the GroupName field of the Display attribute](Grouping-and-sorting-Images\Display-GroupName-Attribute.png)
+
+## Expand or Collapse Category group
+
+Category can be collapsed or expanded by clicking the expander which is near to category name  and it can be collapsed or expanded programmatically by using [CollapseCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CollapseCategory.html) and [ExpandCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ExpandCategory.html) methods in the `PropertyGrid`. These methods will accept category name as argument.
+
+
+
+
+
+
 
 ## Grouping and sorting through SortDirection
 
