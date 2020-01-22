@@ -116,7 +116,7 @@ public partial class MainWindow : Window
 
 ## Populating the properties
 
-The `PropertyGrid` allows to display the browsable and editable properties of the particular object specified by the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.Property~SelectedObject.html) property.
+The `PropertyGrid` allows to display the searchable and editable properties of the particular object specified by the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.Property~SelectedObject.html) property.
 
 The properties of the objects can be populated in the following ways,
 
@@ -151,6 +151,6 @@ pGrid.SelectedObject = new Button();
 {% endhighlight %}
 {% endtabs %}
 
-![ Populating the Button`s properties into the PropertyGrid control](Getting-Started_images/Getting-Started_img5.png)
+![ Populating the Button properties into the PropertyGrid control](Getting-Started_images/Getting-Started_img5.png)
 
 ## Name and description of properties

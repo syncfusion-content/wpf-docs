@@ -117,7 +117,7 @@ public class ViewModel
 {% endtabs %} 
 
 
-![Value specified in the Display attribute`s Name field is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
+![Value specified in the Display attribute Name field is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
 
 ## Naming through Display attribute`s Name field
 
