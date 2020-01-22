@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Property DisplayName in WPF PropertyGrid control | Syncfusion
+title: DisplayName of the Properties in WPF PropertyGrid control | Syncfusion
 description: This section explains how the display name of the property item has been customized through attributes.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Display Name of the Properties
+# DisplayName of the Properties in WPF PropertyGrid
 
 This sections explains about how the name of the property item works based on `Display` and `DisplayName` attributes. 
 
 ## Naming through DisplayName attribute
 
-Users may use the Name field of the Display attribute to give a meaningful name for the properties to be displayed in PropertyGrid instead of the property name.
-
-User can use the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_Name) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute to provide a meaningful name for the properties to display in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name. Here, the property `Name` and `ID` will be displayed as `Employee Name` and  `Employee ID`  respectively. 
+Users can use the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_Name) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute to give a meaningful name for the properties to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name.
+Here, the `Name` and `ID` properties will be displayed as `Employee Name` and  `Employee ID`  respectively. 
 
 {% tabs %}
 {% highlight C# %}
@@ -117,7 +116,7 @@ public class ViewModel
 {% endtabs %} 
 
 
-![Value specified in the Display attribute Name field is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
+![Value specified in the Name field of the Display attribute is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
 
 ## Naming through Display attribute`s Name field
 
@@ -220,4 +219,6 @@ public class ViewModel
 {% endtabs %} 
 
 
-![Name specified in the DisplayName attribute is displayed as Name of the property in PropertyGrid](Attribute-Images\DisplayName-Attribute.png)
+![Value specified in the DisplayName attribute is displayed as Name of the property in PropertyGrid](Attribute-Images\DisplayName-Attribute.png)
+
+N> If you use both the `DisplayName` attribute and `Name` field of the `Display` attribute, the `Name` field of the `Display` attribute will have higher priority.
