@@ -7,15 +7,12 @@ control: PropertyGrid
 documentation: ug
 ---
 
+# Sorting the Properties
 
-
-# Sorting and ordering the Properties
-
-Users can sorting and ordering the properties according to their needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property and ordering the properties by [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) Attribute's [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the property. 
-
+Users can sort and order the properties according to their needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
 Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
 
-## Sorting without Ordering
+## Sorting the Properties
 
 Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property as the `Ascending` or `Descending` order based on the property name. If the properties are in the grouped state, then the groups are sorted based on the group name. 
 
@@ -124,7 +121,15 @@ public class ViewModel
 {% endhighlight %} 
 {% endtabs %} 
 
+**SortDirection= Ascending**
 
-![Value specified in the DisplayName attribute is displayed as Name of the property in PropertyGrid](Attribute-Images\DisplayName-Attribute.png)
+![Properties are in ascending order based on property name](Sorting-Images\Properties-AscendingOrder.png)
 
+![Categories are in ascending order based on category name](Sorting-Images\Category-AscendingOrder.png)
+
+**SortDirection= Descending**
+
+![Properties are in descending order based on property name](Sorting-Images\Properties-DescendingOrder.png)
+
+![Categories are in descending order based on category name](Sorting-Images\Category-DescendingOrder.png)
 
