@@ -11,6 +11,36 @@ documentation: ug
 
 Users can combine the properties and create multiple groups according to their needs. You can groups the property items based on `CategoryAttribute` or `Display Attribute`'s `GroupName` field of the property. By default the grouped properties are displayed in normal mode. If you want display the property in group mode, you can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property to `true`. 
 
+![Properties of PropertyGrid is in group mode](Sorting-Images/Grouping.png)
+
+## Show or Hide the Sort Button
+
+The User can change the states of the properties from sorting state to grouping state by the `GroupButton`. You can show or hide the group button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ButtonPanelVisibility.html) property. If you want to hide the `GroupButton`, set the `ButtonPanelVisibility` property as `Collapsed`. The Default value of the `ButtonPanelVisibility` property is `Visible`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="400"
+                         ButtonPanelVisibility="Collapsed">
+    <syncfusion:PropertyGrid.SelectedObject>
+        <Button></Button>
+    </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;propertyGrid.SelectedObject = new Button();
+propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid with and without Sort button panel](Sorting-Images/SortButton_visibility.png)
+
 ## Grouping through Category Attributes
 
 Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be grouped based on the name specified in the [CategoryAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute?view=netframework-4.8). If the property item doesn't have any category name, that property will be grouped under `Misc` category. In following example, `Name` and `DOB` properties is grouped under `Misc` category and `ID` property is grouped under `Identity` category.

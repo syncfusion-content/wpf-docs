@@ -7,10 +7,40 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Sorting the Properties
+# Sorting in WPF PropertyGrid
 
-Users can sort and order the properties according to their needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
+The Users can sort and order the properties according to their needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
 Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
+
+![Properties of PropertyGrid is sorted in ascending order](Sorting-Images/Sorting.png)
+
+## Show or Hide the Sort Button
+
+The User can change the states of the properties from grouping state to sort state by the `SortButton`. You can show or hide the sort button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ButtonPanelVisibility.html) property. If you want to hide the `SortButton`, set the `ButtonPanelVisibility` property as `Collapsed`. The Default value of the `ButtonPanelVisibility` property is `Visible`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="400"
+                         ButtonPanelVisibility="Collapsed">
+    <syncfusion:PropertyGrid.SelectedObject>
+        <Button></Button>
+    </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.Width = 350;
+propertyGrid.Height = 400;propertyGrid.SelectedObject = new Button();
+propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
+
+{% endhighlight %}
+{% endtabs %}
+
+![PropertyGrid with and without group button panel](Sorting-Images/GroupButton_visibility.png)
 
 ## Sorting the Properties
 
