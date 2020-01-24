@@ -11,7 +11,7 @@ documentation: ug
 
 This sections explains about how the name of the property item works based on `Display` and `DisplayName` attributes. 
 
-## Naming through DisplayName attribute
+## Naming through Display attribute`s Name field
 
 Users can use the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_Name) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute to give a meaningful name for the properties to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name.
 Here, the `Name` and `ID` properties will be displayed as `Employee Name` and  `Employee ID`  respectively. 
@@ -118,7 +118,7 @@ public class ViewModel
 
 ![Value specified in the Name field of the Display attribute is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
 
-## Naming through Display attribute`s Name field
+## Naming through DisplayName attribute
 
 User can use the [DisplayName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.8) attribute to provide a meaningful name for the properties in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name. Here, the property `ID` and `DOB` will be displayed as `Employee ID` and `Date of Birth` respectively. 
 
