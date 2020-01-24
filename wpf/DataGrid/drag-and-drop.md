@@ -278,7 +278,52 @@ To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfus
 
 ![Customizing draggable Popup in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img27.png)
 
-### Row drag and drop between DataGrid and ListView
+### To reorder the source collection while drag and drop the row
+
+You can reorder the source collection after drag and drop the row by handling [RowDragDropController.Dropped](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowDragDropController.html) event.
+
+{% tabs %}
+{% highlight c# %}
+sfGrid.RowDragDropController.Dropped += sfGrid_Dropped;
+
+private void sfGrid_Dropped(object sender, GridRowDroppedEventArgs e)
+{
+    if (e.DropPosition != DropPosition.None)
+    {
+        // Get Dragging records
+        ObservableCollection<object> draggingRecords = e.Data.GetData("Records") as ObservableCollection<object>;
+
+        // Gets the TargetRecord from the underlying collection using record index of the TargetRecord (e.TargetRecord)
+        ViewModel model = sfGrid.DataContext as ViewModel;
+        OrderInfo targetRecord = model.OrdersFirstGrid[(int)e.TargetRecord];
+
+        // Use Batch update to avoid data operatons in SfDataGrid during records removing and inserting
+        sfGrid.BeginInit();
+
+        // Removes the dragging records from the underlying collection
+        foreach (OrderInfo item in draggingRecords)
+        {
+            model.OrdersFirstGrid.Remove(item);
+        }
+
+        // Find the target record index after removing the records
+        int targetIndex = model.OrdersFirstGrid.IndexOf(targetRecord);
+        int insertionIndex = e.DropPosition == DropPosition.DropAbove ? targetIndex : targetIndex + 1;
+        insertionIndex = insertionIndex < 0 ? 0 : insertionIndex;
+
+        // Insert dragging records to the target position
+        for (int i = draggingRecords.Count - 1; i >= 0; i--)
+        {
+            model.OrdersFirstGrid.Insert(insertionIndex, draggingRecords[i] as OrderInfo);
+        }
+        sfGrid.EndInit();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Row drag and drop between DataGrid and ListView
 
 To perform dragging between the `ListView` and `SfDataGrid`, by using the [GridRowDragDropController.DragStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~DragStart_EV.html) and [GridRowDragDropController.Drop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridRowDragDropController~Drop_EV.html) events. And you must set the `AllowDrop` property as `true` in the `ListView` while doing the drag and drop operation from `SfDataGrid` with `ListView` control.
 
