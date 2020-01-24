@@ -102,9 +102,9 @@ namespace SfDiagram_WPF
 * **Connector:** Represents the relationship between two nodes. Four types of connectors provided as follows:
 
        1) Orthogonal
-       2) Bezier
+       2) Cubic Bezier
        3) Straight
-       4) Cubic Bezier
+       4) Quadratic Bezier
 
 * **Port:** Acts as the connection points of node or connector and allows you to create connections with only specific points. 
 * **Annotation:** Shows additional information by adding text or labels on nodes and connectors. 
