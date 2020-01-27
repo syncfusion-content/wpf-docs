@@ -22,13 +22,10 @@ Here, the `Name` and `ID` properties will be displayed as `Employee Name` and  `
 //Model.cs
 
 using System;
-
 using System.ComponentModel.DataAnnotations;
 
 public class Model
-
 {
-
     [Display(Name = "Employee Name")] 
     public string Name
     {

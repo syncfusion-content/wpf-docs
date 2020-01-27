@@ -118,7 +118,7 @@ public class ViewModel
 
     public ViewModel()
     {
-        Items = new Model() {Name="John",DOB = new DateTime(2000,12,02), ID = "SF001" };
+        Items = new Model();
     }
 
 }
