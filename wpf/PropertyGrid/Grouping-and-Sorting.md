@@ -9,11 +9,11 @@ documentation: ug
 
 # Grouping the Properties
 
-Users can combine the properties and create multiple groups according to their needs. You can groups the property items based on `CategoryAttribute` or `Display Attribute`'s `GroupName` field of the property. By default the grouped properties are displayed in normal mode. If you want display the property in group mode, you can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property to `true`. 
+Users can combine the properties and create multiple groups according to their needs. You can group the property items based on `CategoryAttribute` or `Display Attribute`'s `GroupName` field of the property. By default, the grouped properties are displayed in normal mode. If you want to display the property in group mode, you can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property to `true`. 
 
 ![Properties of PropertyGrid is in group mode](Sorting-Images/Grouping.png)
 
-## Show or Hide the Sort Button
+## Show or Hide the Group Button
 
 The User can change the states of the properties from sorting state to grouping state by the `GroupButton`. You can show or hide the group button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ButtonPanelVisibility.html) property. If you want to hide the `GroupButton`, set the `ButtonPanelVisibility` property as `Collapsed`. The Default value of the `ButtonPanelVisibility` property is `Visible`.
 
@@ -39,7 +39,7 @@ propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![PropertyGrid with and without Sort button panel](Sorting-Images/SortButton_visibility.png)
+![PropertyGrid with and without Sort button panel](Sorting-Images/GroupButton_visibility.png)
 
 ## Grouping through Category Attributes
 
@@ -141,7 +141,7 @@ public class ViewModel
 
 ![Properties are grouped based on the value specified in the Category attribute](Grouping-and-sorting-Images\Category-Attribute.png)
 
-### Grouping through Display Attribute’s GroupName field
+## Grouping through Display Attribute’s GroupName field
 
 Properties in the `PropertyGrid` will be grouped based on the value specified in the [GroupName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.groupname?view=netframework-4.8) field of [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) Attribute. If the property item doesn't have any Display Attribute’s GroupName field, that property will be grouped under `Misc` category. In following example, `Name` and `ID` properties is grouped under `Identity` category.
 
@@ -245,6 +245,133 @@ public class ViewModel
 
 
 N> If you use both the `Category` attribute and `GroupName` field of the `Display` attribute, the `Category` attribute will have higher priority.
+
+## Grouping through AutoGeneratingPropertyGridItem Event
+
+The user can change the category of the properties by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event.
+To change the property's category, you can set the new category name to the `AutoGeneratingPropertyGridItemEventArgs`'s `Category` property. Based on the value of `Category` property, the properties are grouped.
+
+{% tabs %}
+{% highlight C# %}
+
+//Model.cs
+
+using System;
+
+public class Model
+{
+    [Category("Info")]
+    public string Name
+    {
+        get;
+
+        set;
+    }
+    
+    public DateTime DOB
+    {
+        get;
+
+        set;
+    }
+   
+    public Gender Gender
+    {
+        get;
+
+        set;
+    }
+}
+
+public enum Gender
+{
+    Male,
+
+    Female
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight C# %}
+
+//ViewModel.cs
+
+public class ViewModel
+{
+    private Object items = null;
+
+    public Object Items
+    {
+        get
+        {
+            return items;
+        }
+        set
+        {
+            items = value;
+        }
+    }
+    
+    public ViewModel()
+    {
+        Items = new Model() { Name = "Johnson", Gender= Gender.Male, DOB = new DateTime(2000,01,25), };
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="PropertyGrid_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropertyGrid_WPF"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="572" Width="800">
+    <Window.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Window.DataContext>
+    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+       <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" EnableGrouping="True" SelectedObject="{Binding Items}" AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem">
+       </syncfusion:PropertyGrid>
+    </Grid>
+
+</Window>
+{% endhighlight %} 
+{% endtabs %} 
+
+{% tabs %}
+{% highlight C# %}
+
+private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e)
+{
+    //Name properties will be categorized under "Identity" category.
+    if (e.DisplayName == "Name")
+    {
+        e.Category = "Identity";
+    }
+
+    //Name properties will be categorized under "Basic Info" category.
+    if (e.DisplayName == "Gender" || e.DisplayName=="DOB")
+    {
+        e.Category = "Basic Info";
+    }
+}
+      
+{% endhighlight %} 
+{% endtabs %}
+
+![Properties are grouped based on the value specified in the Category property of the AutoGeneratingPropertyGridItem event](Grouping-and-sorting-Images\AutoGeneratingPropertyGridItem.png)
+
+Here, the category of the `Name` property is changed from `Info` to `Identity` and `DOB`, `Gender` properties are grouped under the `Basic Info` category.
 
 ## Expand or Collapse Category group
 
