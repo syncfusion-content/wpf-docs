@@ -2555,7 +2555,7 @@ The following events are available in SfChart for ChartZoomPanBehavior,
 * [`ResetZooming`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html#)- Occurs when zooming get reset in chart area.
 
 
-## Selection:
+## Selection
 
 SfChart supports selection that enables you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 

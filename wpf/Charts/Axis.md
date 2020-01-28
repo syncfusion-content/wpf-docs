@@ -584,7 +584,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
         <DataTemplate x:Key="postfixLabelTemplate">
 
-             TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
+             <TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
 
         </DataTemplate>
 
@@ -1086,7 +1086,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.SecondaryAxis>
 
-</syncfusion:NumericalAxis ShowLabelBorder="True"  />       
+<syncfusion:NumericalAxis ShowLabelBorder="True"/>       
 
 </syncfusion:SfChart.SecondaryAxis>
 
@@ -2753,7 +2753,7 @@ chart.Annotations.Add(annotation);
 
 ## Inverting axis
 
-Axis can be inverted using the [`IsInversed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~IsInversedProperty.html#) property. The default value of this property is [`False`].
+Axis can be inverted using the [`IsInversed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~IsInversedProperty.html#) property. The default value of this property is [`False`]().
 
 {% tabs %}
 
@@ -4285,7 +4285,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 **Text** **Customization**
 
-[`ChartMultiLevelLabel's`] text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSizeProperty.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamilyProperty.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) properties. It is shown in following code example.
+[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSizeProperty.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamilyProperty.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) properties. It is shown in following code example.
 
 {% tabs %}
 
