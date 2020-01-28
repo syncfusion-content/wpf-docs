@@ -638,11 +638,11 @@ This section explains about creating a simple application using `DockingManager`
 
 ### Setting up WPF application
 
-1. Create a WPF application and rename the file `MainWindow.xaml` as `Shell.xaml` and `MainWindow.xaml.cs` as `Shell.xaml.cs`.
+**Step 1:** Create a WPF application and rename the file `MainWindow.xaml` as `Shell.xaml` and `MainWindow.xaml.cs` as `Shell.xaml.cs`.
   
-2. Rename the class name MainWindow as Shell in all the occurrences. 
+**Step 2:** Rename the class name MainWindow as Shell in all the occurrences. 
  
-3. Add the following required assembly references to the project:
+**Step 3:** Add the following required assembly references to the project:
 
    * Prism
    * Prism.WPF
@@ -652,7 +652,7 @@ This section explains about creating a simple application using `DockingManager`
    * Microsoft.Practices.Unity.Configuration
    * Microsoft.Practices.Unity.RegistrationByConvention
 
-4. In the Shell.xaml file, add the namespace definition for Prism Library as given below:
+**Step 4:** In the Shell.xaml file, add the namespace definition for Prism Library as given below:
 
 {% tabs %}
 
@@ -670,7 +670,7 @@ This section explains about creating a simple application using `DockingManager`
 
 {% endtabs %}
 
-5. Create an instance of the control in Shell.xaml file and set the attached property `RegionManager.RegionName` for it. Here we have used `DockingManager` control.
+**Step 5:** Create an instance of the control in Shell.xaml file and set the attached property `RegionManager.RegionName` for it. Here we have used `DockingManager` control.
 
 {% tabs %}
 
@@ -684,7 +684,7 @@ This section explains about creating a simple application using `DockingManager`
 
 When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the DockingManager. 
 
-6. Add the following required assembly references in App.xaml.cs file.
+**Step 6:** Add the following required assembly references in App.xaml.cs file.
 
 {% tabs %}
 
@@ -700,7 +700,7 @@ using System.Windows;
 
 {% endtabs %}
 
-7. Inherit the App class from `PrismApplication` in App.xaml.cs file.
+**Step 7:** Inherit the App class from `PrismApplication` in App.xaml.cs file.
 
 {% tabs %}
 
@@ -717,7 +717,7 @@ public partial class App : PrismApplication
 
 {% endtabs %}
 
-8. Override the methods `CreateShell`, `RegisterTypes` and `CreateModuleCatalog` as given below.
+**Step 8:** Override the methods `CreateShell`, `RegisterTypes` and `CreateModuleCatalog` as given below.
 
 {% tabs %}
 
@@ -749,9 +749,9 @@ public partial class App : PrismApplication
 
 ### Adding modules to the project
 
-1. Create as ClassLibrary projects for the modules. Here three class libraries are created for three modules.
+**Step 1:** Create as ClassLibrary projects for the modules. Here three class libraries are created for three modules.
 
-2. Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
+**Step 2:** Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
 
 {% tabs %}
 
@@ -789,7 +789,7 @@ public partial class App : PrismApplication
 
 {% endtabs %}
 
-3. Create a class implementing IModule interface for all the modules in your project. Using `OnInitialized` method register the view to the region using region name (`MainRegion`).
+**Step 3:** Create a class implementing IModule interface for all the modules in your project. Using `OnInitialized` method register the view to the region using region name (`MainRegion`).
 
 {% tabs %}
 
@@ -813,7 +813,7 @@ public class ProgramModule : IModule
 
 {% endtabs %}
 
-4. Add all the modules as reference projects in main application. Add all modules to module catalog and also register it in App.xaml.cs as given below:
+**Step 4:** Add all the modules as reference projects in main application. Add all modules to module catalog and also register it in App.xaml.cs as given below:
 
 {% tabs %}
 
@@ -843,7 +843,7 @@ protected override IModuleCatalog CreateModuleCatalog()
 
 So, far implementations will work as expected for an ItemsControl. Since `DockingManager` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
 
-1. Create a ClassLibrary project for defining the region adapter and the class should inherit from `RegionAdapterBase` class. In that override the methods, `Adapt` and `CreateRegion`. There are three types of region class to create a region based on the `ContentControlRegionAdapter`, `ItemsControlRegionAdapter` and `SelectorRegionAdapter` as follows: 
+**Step 1:** Create a ClassLibrary project for defining the region adapter and the class should inherit from `RegionAdapterBase` class. In that override the methods, `Adapt` and `CreateRegion`. There are three types of region class to create a region based on the `ContentControlRegionAdapter`, `ItemsControlRegionAdapter` and `SelectorRegionAdapter` as follows: 
 
 * SingleActiveRegion - The Region that allows a maximum of one active view at a time.
 * AllActiveRegion - The Region that keeps all the views in it as active and de-activation of views are not allowed.
@@ -892,7 +892,7 @@ public class DockingManagerRegionAdapter : RegionAdapterBase<DockingManager>
 
 {% endtabs %}
 
-2. Also, we can activate and deactivate views by creating a behavior class and the class should inherit from `RegionBehavior`, `IHostAwareRegionBehavior` classes. In below code example, shown how to activate and deactivate the document views using `ActiveDocumentChanged` event of `DocumentContainer`.
+**Step 2:** Also, we can activate and deactivate views by creating a behavior class and the class should inherit from `RegionBehavior`, `IHostAwareRegionBehavior` classes. In below code example, shown how to activate and deactivate the document views using `ActiveDocumentChanged` event of `DocumentContainer`.
 
 {% tabs %}
 
@@ -966,7 +966,7 @@ public class DocumentRegionActiveAwareBehavior : RegionBehavior, IHostAwareRegio
 
 {% endtabs %}
 
-3. Override the method `AttachBehaviors` in `DockingManagerRegionAdapter` class and add the created behavior to the region as like below code snippet:
+**Step 3:** Override the method `AttachBehaviors` in `DockingManagerRegionAdapter` class and add the created behavior to the region as like below code snippet:
 
 {% tabs %}
 
