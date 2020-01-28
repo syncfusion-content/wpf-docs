@@ -41,6 +41,7 @@ Below are the limitations when binding DataTable as ItemsSource to SfDataGrid.
 * Custom sorting is not supported.
 * Filtering with [TimeSpan](https://msdn.microsoft.com/en-us/library/system.timespan) values is not supported.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
+* Filtering with sub second components in `DateTime` values is not supported.
 
 ### Apply DataView.RowFilter on initial loading
 

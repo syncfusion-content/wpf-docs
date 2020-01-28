@@ -16,13 +16,13 @@ In CheckListBox, the SelectAll option can be enabled or disabled using the [IsSe
 {%highlight xaml%}
 
   <syncfusion:CheckListBox 
-		    x:Name="checkListBox"
-		    Width="300" 
-			Height="400"
+		        x:Name="checkListBox"
+		        Width="300" 
+			      Height="400"
             HorizontalAlignment="Center" 
             VerticalAlignment="Center"
             Margin="10"
-            ItemsSource="{Binding GetModels}
+            ItemsSource="{Binding GetModels}"
             IsSelectAllEnabled="True">
 </syncfusion:CheckListBox>
 

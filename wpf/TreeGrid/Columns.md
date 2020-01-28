@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in SfTreeGrid for WPF
-description: Columns
+title: Columns | TreeGrid Control for WPF | Syncfusion
+description: This section explains about the columns manipulation and customization in Syncfusion WPF TreeGrid (SfTreeGrid) control
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -358,7 +358,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 Below screenshot shows the customized header template loaded on the header of FirstName column.
 
-![](Columns_images/Columns_img1.jpg)
+![Setting template to auto-generated column](Columns_images/Columns_img1.jpg)
 
 
 ### Data Annotations with AutoGenerateColumns
@@ -475,7 +475,7 @@ public string LastName
 
 The FirstName and LastName column rearranged based on specified order.
 
-![](Columns_images/Columns_img2.jpg)
+![Change the order of the columns](Columns_images/Columns_img2.jpg)
 
 #### Customizing data format 
 
@@ -614,13 +614,13 @@ N> Resizing considers MinWidth and MaxWidth of column.
 
 You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
 
-![](Columns_images/Columns_img3.jpeg)
+![Resizing Columns](Columns_images/Columns_img3.jpeg)
 
 ### Hidden column resizing
 
 SfTreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowResizingHiddenColumns.html) property to `true`.
 
-![](Columns_images/Columns_img4.jpeg)
+![Hidden column resizing](Columns_images/Columns_img4.jpeg)
 
 ### Disable resizing
 
@@ -638,6 +638,24 @@ private void TreeGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 		e.Cancel = true;
 }
 	
+{% endhighlight %}
+{% endtabs %}
+
+### Identify resizing of the column gets completed
+
+SfTreeGrid allows you to identify the progress of the resizing of columns through `ResizingColumnsEventArgs.Reason` property. You can get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in `ResizingColumns` event.
+
+{% tabs %}
+{% highlight c# %}
+this.treeGrid.ResizingColumns += OnResizingColumns;
+
+void OnResizingColumns(object sender, ResizingColumnsEventArgs e)
+{
+    if (e.Reason == Syncfusion.UI.Xaml.Grid.ColumnResizingReason.Resized)
+    {
+        var resizedWidth = e.Width;
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -659,7 +677,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img5.jpg)
+![Column drag and drop](Columns_images/Columns_img5.jpg)
 
 You can enable or disable dragging on particular column using [TreeGridColumn.AllowDragging](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~AllowDragging.html) property.
 {% tabs %}
@@ -725,7 +743,7 @@ this.treeGrid.FooterColumnCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img6.png)
+![Freezing Columns](Columns_images/Columns_img6.png)
 
 ## Stacked Headers
 
@@ -766,7 +784,7 @@ this.treeGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![](Columns_images/Columns_img7.png)
+![Stacked Headers](Columns_images/Columns_img7.png)
 
 ### Adding ChildColumns
 
