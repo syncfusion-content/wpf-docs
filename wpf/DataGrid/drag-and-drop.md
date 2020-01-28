@@ -278,15 +278,15 @@ To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfus
 
 ![Customizing draggable Popup in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img27.png)
 
-### To reorder the source collection while drag and drop the row
+### Reorder the source collection while drag and drop the rows
 
 You can reorder the source collection after drag and drop the row by handling [RowDragDropController.Dropped](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowDragDropController.html) event.
 
 {% tabs %}
 {% highlight c# %}
-sfGrid.RowDragDropController.Dropped += sfGrid_Dropped;
+sfGrid.RowDragDropController.Dropped += OnRowDropped;
 
-private void sfGrid_Dropped(object sender, GridRowDroppedEventArgs e)
+private void OnRowDropped(object sender, GridRowDroppedEventArgs e)
 {
     if (e.DropPosition != DropPosition.None)
     {
