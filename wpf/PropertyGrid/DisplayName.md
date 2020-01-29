@@ -1,89 +1,337 @@
 ---
 layout: post
-title: Property DisplayName in WPF PropertyGrid | Syncfusion
+title: DisplayName of the Properties in WPF PropertyGrid control | Syncfusion
 description: This section explains how the display name of the property item has been customized through attributes.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Display name of the PropertyItem
+# DisplayName of the Properties in WPF PropertyGrid
 
-This sections explains about how the name of the property item works based on Name and DisplayName attributes. 
+This sections explains about how the name of the property item works based on `Display` and `DisplayName` attributes. 
 
-## DisplayName Attribute
+## Naming through Display attribute`s Name field
 
-User can provide a meaningful name in PropertyGrid instead of property name using [DisplayName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.8) attribute. Here, the property `ID` and `DOB` will be displayed as `Employee ID` and `Date of Birth` respectively. 
+Users can use the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_Name) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute to give a meaningful name for the properties to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name.
+Here, the `Name` and `ID` properties will be displayed as `Employee Name` and  `Employee ID`  respectively. 
 
 {% tabs %}
-
 {% highlight C# %}
 
-        [DisplayName("Employee ID")]
-        public string ID
+//Model.cs
+
+using System;
+using System.ComponentModel.DataAnnotations;
+
+public class Model
+{
+    [Display(Name = "Employee Name")] 
+    public string Name
+    {
+        get;
+
+        set;
+    }
+
+    [Display(Name = "Employee ID")]  
+    public string ID
+    {
+        get;
+
+        set;
+    }
+
+    public DateTime DOB
+    {
+        get;
+
+        set;
+    }
+}
+      
+{% endhighlight %}
+{% endtabs %} 
+
+
+{% tabs %}
+{% highlight C# %}
+
+//ViewModel.cs
+
+public class ViewModel
+
+{
+    
+    private Object items = null;
+   
+    public Object Items
+    {
+        get
         {
-            get;
-
-            set;
+            return items;
         }
-
-
-        [DisplayName("Date of Birth")]
-        public DateTime DOB
+        set
         {
-            get;
-
-            set;
+            items = value;
         }
-       
-        public Gender Gender
-        {
-            get;
+    }
 
-            set;
-        }
+    public ViewModel()
+    {
+        Items = new Model() {Name="John",DOB = new DateTime(2000,12,02), ID = "SF001" };
+    }
+
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="PropertyGrid_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropertyGrid_WPF"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="572" Width="800">
+    <Window.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Window.DataContext>
+    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" SelectedObject="{Binding Items}">
+        </syncfusion:PropertyGrid>
+    </Grid>
+</Window>
+
+{% endhighlight %} 
+{% endtabs %} 
+
+
+![Value specified in the Name field of the Display attribute is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
+
+## Naming through DisplayName attribute
+
+User can use the [DisplayName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.8) attribute to provide a meaningful name for the properties in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name. Here, the property `ID` and `DOB` will be displayed as `Employee ID` and `Date of Birth` respectively. 
+
+{% tabs %}
+{% highlight C# %}
+
+//Model.cs
+
+using System;
+
+using System.ComponentModel;
+
+public class Model
+
+{
+
+    public string Name
+    {
+        get;
+
+        set;
+    }
+
+    [DisplayName("Employee ID")]
+    public string ID
+    {
+        get;
+
+        set;
+    }
+
+    [DisplayName("Date of Birth")]
+    public DateTime DOB
+    {
+        get;
+
+        set;
+    }
+}
         
-{% endhighlight %} 
-
+{% endhighlight %}
 {% endtabs %} 
 
-![Name specified in the DisplayName attribute is displayed as Name of the property](Attribute-Images\DisplayName-Attribute.png)
-
-## Display attribute with Name
-
-Based on the name specified in the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8) field of Display attribute, properties will be displayed in the PropertyGrid. Here, the property `ID` and `DOB` will be displayed as `Employee ID` and `Date of Birth` respectively. If the `DisplayName` attribute is not specified then the value specified in the `Name` field will be displayed as property name.
 
 {% tabs %}
-
 {% highlight C# %}
 
-        [Display(Name = "Employee ID")]
-        public string ID
+//ViewModel.cs
+
+public class ViewModel
+{
+    private Object items = null;
+   
+    public Object Items
+    {
+        get
         {
-            get;
-
-            set;
+            return items;
         }
-
-        [Display(Name = "Date of Birth")]
-        public DateTime DOB
+        set
         {
-            get;
-
-            set;
+            items = value;
         }
+    }
 
-        public Gender Gender
-        {
-            get;
+    public ViewModel()
+    {
+        Items = new Model() {Name="John",DOB = new DateTime(2000,12,02), ID = "SF001" };
+    }
 
-            set;
-        }
+}
 
 {% endhighlight %} 
-
 {% endtabs %} 
 
-![Name specified in the Display attribute is displayed as Name of the property](Attribute-Images\DisplayName-Attribute.png)
 
-Refer to this [`sample`](https://github.com/SyncfusionExamples/How-to-set-desired-name-to-the-property-items-of-WPF-PropertyGrid-through-attributes) to know how the display name of the property item has been customized through attributes.
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="PropertyGrid_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropertyGrid_WPF"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="572" Width="800">
+    <Window.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Window.DataContext>
+    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" SelectedObject="{Binding Items}">
+        </syncfusion:PropertyGrid>
+    </Grid>
+</Window>
+{% endhighlight %} 
+{% endtabs %} 
+
+
+![Value specified in the DisplayName attribute is displayed as Name of the property in PropertyGrid](Attribute-Images\DisplayName-Attribute.png)
+
+N> If you use both the `DisplayName` attribute and `Name` field of the `Display` attribute, the `Name` field of the `Display` attribute will have higher priority.
+
+## Naming through AutoGeneratingPropertyGridItem Event
+
+The user can change the name of the properties by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event.
+To change the property's display name, you can set the new name to the `AutoGeneratingPropertyGridItemEventArgs`'s `DisplayName` property. It will displayed as a name of the property in `PropertyGrid`.
+
+{% tabs %}
+{% highlight C# %}
+
+//Model.cs
+
+using System;
+using System.ComponentModel;
+
+public class Model
+{
+    [DisplayName("E_Name")]
+    public string Name
+    {
+        get;
+
+        set;
+    }
+
+    public DateTime DOB
+    {
+        get;
+
+        set;
+    }
+
+    public Gender Gender
+    {
+        get;
+
+        set;
+    }
+}
+
+
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight C# %}
+
+//ViewModel.cs
+
+public class ViewModel
+{
+    private Object items = null;
+
+    public Object Items
+    {
+        get
+        {
+            return items;
+        }
+        set
+        {
+            items = value;
+        }
+    }
+    
+    public ViewModel()
+    {
+        Items = new Model() { Name = "Johnson", Gender= Gender.Male, DOB = new DateTime(2000,01,25), };
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="PropertyGrid_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropertyGrid_WPF"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="572" Width="800">
+    <Window.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Window.DataContext>
+    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem" SelectedObject="{Binding Items}" >
+        </syncfusion:PropertyGrid>
+    </Grid>
+
+</Window>
+{% endhighlight %} 
+{% endtabs %} 
+
+{% tabs %}
+{% highlight C# %}
+
+private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e)
+{   
+    //Name of the "Name" property changed to "Employee Name".
+    if (e.DisplayName == "Name")
+    {
+        e.DisplayName = "Employee Name";
+    }
+}
+      
+{% endhighlight %} 
+{% endtabs %}
+
+![DisplayName of the E_Name property modified to EmployeeName by the DisplayName property of the AutoGeneratingPropertyGridItem event](Attribute-Images\DisplayName-AutoGeneratingPropertyGridItem.png)
+
+Here, the `Name` property name is changed from `E_Name` to `Employee Name`.
