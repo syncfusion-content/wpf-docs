@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF PropertyGrid
 
-This section deals with the appearance of [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control and contains the following topics.
+This section explains about the appearance of [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control
 
 ## Setting the Foreground
 

@@ -152,5 +152,3 @@ pGrid.SelectedObject = new Button();
 {% endtabs %}
 
 ![ Populating the Button properties into the PropertyGrid control](Getting-Started_images/Getting-Started_img5.png)
-
-## Name and description of properties

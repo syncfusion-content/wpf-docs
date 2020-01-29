@@ -232,18 +232,17 @@ To change the property's display name, you can set the new name to the `AutoGene
 
 using System;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 
 public class Model
 {
-    [Description("Employee Name")]
+    [DisplayName("E_Name")]
     public string Name
     {
         get;
 
         set;
-    }        
-    
+    }
+
     public DateTime DOB
     {
         get;
@@ -251,7 +250,6 @@ public class Model
         set;
     }
 
-    [Display(Description = "Gender of the Employee")]
     public Gender Gender
     {
         get;
@@ -259,6 +257,7 @@ public class Model
         set;
     }
 }
+
 
 {% endhighlight %}
 {% endtabs %} 
@@ -310,8 +309,7 @@ public class ViewModel
         <local:ViewModel></local:ViewModel>
     </Window.DataContext>
     <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem" SelectedObject="{Binding Items}" 
-                                 DescriptionPanelVisibility="Visible"  DescriptionPanelHeight="50">
+        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem" SelectedObject="{Binding Items}" >
         </syncfusion:PropertyGrid>
     </Grid>
 
@@ -323,19 +321,17 @@ public class ViewModel
 {% highlight C# %}
 
 private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e)
-{
-    //DOB property new description assigned.
-    if (e.DisplayName == "DOB")
-    {
-        e.Description = "Birth date of the Employee";
-    }
-
-    //Name property description changed.
+{   
+    //Name of the "Name" property changed to "Employee Name".
     if (e.DisplayName == "Name")
     {
-        e.Description = "Name of the Employee";
+        e.DisplayName = "Employee Name";
     }
 }
       
 {% endhighlight %} 
 {% endtabs %}
+
+![DisplayName of the E_Name property modified to EmployeeName by the DisplayName property of the AutoGeneratingPropertyGridItem event](Attribute-Images\DisplayName-AutoGeneratingPropertyGridItem.png)
+
+Here, the `Name` property name is changed from `E_Name` to `Employee Name`.
