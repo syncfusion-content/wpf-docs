@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion's Ribbon control for WPF
-description: A quick tour to initial users on Syncfusion's Ribbon control for WPF
+description: This section briefly describes the basic functions in implementing similar UI as Microsoft Outlook using Syncfusion Ribbon
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -825,7 +825,7 @@ syncfusionskin:SfSkinManager.VisualStyle="Office2013White" >
 
 ### Customize the BackStage Visibility 
 
-The `IsBackStageVisible` property of `Ribbon` enables you to show/hide the `BackStage`. The following code example illustrates how to show or hide `BackStage`.
+The [`IsBackStageVisible`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.Ribbon~IsBackStageVisible.html) property of Ribbon enables you to show/hide the BackStage. The following code example illustrates how to show or hide BackStage.
 
 1. Through Property 
 
@@ -887,7 +887,7 @@ End Sub
 
 3. Through Commands
 
-`Ribbon` control provides the static `Commands` to show/hide the `BackStage` based on the parameter passed to it.
+Ribbon control provides the static command [`OpenBackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonCommands~OpenBackStage.html) to show/hide the BackStage based on the parameter passed to it.
 
 {% tabs %}
 
@@ -902,9 +902,7 @@ End Sub
 
 {% endtabs %}
 
->Note
->
->In order to bind the `OpenBackStage` command, `CommandTarget` and `CommandParameter` must be defined.
+N> In order to bind the [`OpenBackStage`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonCommands~OpenBackStage.html) command, CommandTarget and CommandParameter must be defined.
 
 
 ## Add BackStageCommandButton
