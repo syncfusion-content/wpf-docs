@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion Axis and its types. 
-description: Axis behavior and its types.
+description: This section explains the different types of axis and how to customize the grid lines, tick lines, labels and title of chart axis.
 platform: wpf
 control: SfChart
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion InteractiveFeatures.
-description: Interactive Feature support for SfChart.
+description: This section explains the chart interactive features like Tooltip, TrackBall, Visual Data Editing, Zoom and Pan, Selection, Resizing Scrollbar, CrossHair.
 platform: wpf
 control: SfChart
 documentation: ug
