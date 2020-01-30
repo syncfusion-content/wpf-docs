@@ -28,7 +28,7 @@ A label can be added as a leading icon to the input view by setting the `Leading
     <inputLayout:SfTextInputLayout.LeadingView>
        <Label
            FontFamily="/Assets/Sync FontIcons.ttf#Sync FontIcons"
-           Text="&#x1F5D3;">     
+           Content="&#x1F5D3;">     
        </Label>
     </inputLayout:SfTextInputLayout.LeadingView>
  </inputLayout:SfTextInputLayout> 
@@ -40,7 +40,7 @@ A label can be added as a leading icon to the input view by setting the `Leading
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Birth date";
 inputLayout.LeadingViewPosition = ViewPosition.Inside;
-inputLayout.LeadingView = new Label() { Text = "\U0001F5D3" };
+inputLayout.LeadingView = new Label() { Content = "\U0001F5D3" };
 inputLayout.InputView = new TextBox(); 
 
 {% endhighlight %}
@@ -64,7 +64,7 @@ A label can be added as a trailing icon to the input view by setting the `Traili
     <inputLayout:SfTextInputLayout.TrailingView>
       <Label
          FontFamily="/Assets/Sync FontIcons.ttf#Sync FontIcons"
-         Text="&#x1F5D3;">     
+         Content="&#x1F5D3;">     
       </Label>
     </inputLayout:SfTextInputLayout.TrailingView>
  </inputLayout:SfTextInputLayout> 
@@ -76,7 +76,7 @@ A label can be added as a trailing icon to the input view by setting the `Traili
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Birth date";
 inputLayout.TrailingViewPosition = ViewPosition.Outside; 
-inputLayout. TrailingView = new Label() { Text = "\U0001F5D3" };
+inputLayout. TrailingView = new Label() { Content = "\U0001F5D3" };
 inputLayout.InputView = new TextBox(); 
 
 {% endhighlight %}
