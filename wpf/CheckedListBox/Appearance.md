@@ -96,8 +96,6 @@ The SelectAllTemplate is used to set DataTemplate for the SelectAll item.
 
 ![SelectAllTemplate](Appearance_images/select_all.png)
 
-{% endhighlight %}
-{% endtabs %}
 
 ## ItemContainerStyle
 
