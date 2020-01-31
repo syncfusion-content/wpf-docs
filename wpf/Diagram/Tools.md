@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion Diagram allows to draw, select or pan with click and drag.
-description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
+description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface how to enable or disbale the single and multiple tools to diagram?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -21,17 +21,17 @@ To draw a shape, You have to activate the drawing tool by using the Tool propert
 {% highlight xaml %}
 
 <Style TargetType="Path" x:Key="shapestyle">
-  <Setter Property="Fill" Value="#fbe172"></Setter>
+  <Setter Property="Fill" Value="#fbe172"/>
   <Setter Property="Stroke" Value="Black"/>
-  <Setter Property="Stretch" Value="Fill"></Setter>
+  <Setter Property="Stretch" Value="Fill"/>
 </Style>
 
 <Style TargetType="{x:Type diagram:Node}">
   <Setter Property="Shape" Value="M13.560 67.524 L 21.941 41.731 L 0.000 25.790 L
                                   27.120 25.790 L 35.501 0.000 L 43.882 25.790 L 71.000 
                                   25.790 L 49.061 41.731 L 57.441 67.524 L 35.501 
-                                  51.583 z"></Setter>
- <Setter Property="ShapeStyle" Value="{StaticResource shapestyle}"></Setter>
+                                  51.583 z"/>
+  <Setter Property="ShapeStyle" Value="{StaticResource shapestyle}"/>
 </Style>
 
 {% endhighlight %}

@@ -19,27 +19,23 @@ In SfDiagram, DataContractSerializer is used for serialization. The functionalit
 
 {% highlight C# %}
 
-            //To Save as stream in file
-            SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Title = "Save XAML";
-            dialog.Filter = "XAML File (*.xaml)|*.xaml";
-            if (dialog.ShowDialog() == true)
-            {
-                using (Stream str = File.Open(dialog.FileName, FileMode.CreateNew))
-                {
-                    sfDiagram.Save(str);
-                }
-            }
+//To Save as stream in file
+SaveFileDialog dialog = new SaveFileDialog();
+dialog.Title = "Save XAML";
+dialog.Filter = "XAML File (*.xaml)|*.xaml";
+if (dialog.ShowDialog() == true)
+{
+    using (Stream str = File.Open(dialog.FileName, FileMode.CreateNew))
+    {
+        sfDiagram.Save(str);
+    }
+}
 
-            //To Save as memory stream
-
-
-        MemoryStream str = new MemoryStream();
-
-                    sfDiagram.Save(str);  
+//To Save as memory stream
+MemoryStream str = new MemoryStream();
+sfDiagram.Save(str);  
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Load
@@ -47,24 +43,21 @@ In SfDiagram, DataContractSerializer is used for serialization. The functionalit
 On deserialization, the saved stream is used to load the SfDiagram's nodes and connectors in current view. With this, you can continue working on the earlier saved SfDiagram by loading the appropriate stream.
 
 {% tabs %}
-
 {% highlight C# %}
 
-            //Load from saved XAML file
+//Load from saved XAML file
+OpenFileDialog dialog = new OpenFileDialog();
+if (dialog.ShowDialog() == true)
+{
+    using (Stream myStream = dialog.OpenFile())
+    {
+        sfDiagram.Load(myStream);
+    }
+}
 
-            OpenFileDialog dialog = new OpenFileDialog();
-            if (dialog.ShowDialog() == true)
-            {
-                using (Stream myStream = dialog.OpenFile())
-                {
-                    sfDiagram.Load(myStream);
-                }
-            }
-
-            //Load from saved memory stream
-
-            str.Position = 0;
-            sfDiagram.Load(str);
+//Load from saved memory stream
+str.Position = 0;
+sfDiagram.Load(str);
 
 {% endhighlight %}
 
@@ -77,21 +70,19 @@ In SfDiagram, you cannot serialize Content, ContentTemplate, Shape, and ShapeSty
 The custom properties in custom class derived from any of our SfDiagram's interface or from any of the view model classes are serialized with the help of DataMember attribute.
 
 {% tabs %}
-
 {% highlight C# %}
 
-    public class NodeContent : INode
+public class NodeContent : INode
+{
+    [DataMember]
+    public string NodeType
     {
-        [DataMember]
-        public string NodeType
-        {
-            get;
-            set;
-        }
+        get;
+        set;
     }
+}
 
 {% endhighlight %}
-
 {% endtabs %}
 
 N> SfDiagram's interface and view model classes are created without DataContract attribute. So there is no need to add DataContract attribute for a class, which is derived from them.
@@ -101,27 +92,25 @@ N> SfDiagram's interface and view model classes are created without DataContract
 You can serialize a business class with the help of DataContract attribute and SfDiagram's KnownTypes property. You have to add DataContract attribute to serialize the whole class, which is not derived from a base class without DataContract attribute.
 
 {% tabs %}
-
 {% highlight C# %}
 
-    [DataContract]
-    public class NodeContent
+[DataContract]
+public class NodeContent
+{
+    [DataMember]
+    public string NodeType
     {
-        [DataMember]
-        public string NodeType
-        {
-            get;
-            set;
-        }
+        get;
+        set;
     }
+}
 
-	Diagram.KnownTypes = () => new List<Type>()
-    {
-        typeof(NodeContent)
-    };
+Diagram.KnownTypes = () => new List<Type>()
+{
+    typeof(NodeContent)
+};
 
 {% endhighlight %}
-
 {% endtabs %}
 
 Refer to the [Save and Load sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_WPF-158395240) to depict all these supports.
@@ -131,7 +120,6 @@ Refer to the [Save and Load sample](https://www.syncfusion.com/downloads/support
 You can load any of the old version SfDiagram's stream in new version with the help of upgrade method. Refer to the following code sample.
 
 {% tabs %}
-
 {% highlight C# %}
 
 using (Stream myStream = dialog.OpenFile())
@@ -141,5 +129,4 @@ using (Stream myStream = dialog.OpenFile())
 }
 
 {% endhighlight %}
-
 {% endtabs %}

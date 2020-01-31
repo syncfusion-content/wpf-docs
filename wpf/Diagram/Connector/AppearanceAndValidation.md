@@ -39,11 +39,21 @@ The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows you to d
 </Style>
 
 <!--Initialize the connector with source and target decorators and their styles-->
-<syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200" ConnectorGeometryStyle="{StaticResource connectorLineStyle}" SourceDecorator="{StaticResource Ellipse}" SourceDecoratorStyle="{StaticResource DecoratorFillStyle}" TargetDecorator="{StaticResource ClosedSharp}" TargetDecoratorStyle="{StaticResource DecoratorFillStyle}">
+<syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200" 
+                               ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
+                               SourceDecorator="{StaticResource Ellipse}" 
+                               SourceDecoratorStyle="{StaticResource DecoratorFillStyle}" 
+                               TargetDecorator="{StaticResource ClosedSharp}" 
+                               TargetDecoratorStyle="{StaticResource DecoratorFillStyle}">
 </syncfusion:ConnectorViewModel>
 
 <!--Initialize the connector with source and target decorators and their styles-->
-<syncfusion:ConnectorViewModel SourcePoint="300,100" TargetPoint="400,200"                     ConnectorGeometryStyle="{StaticResource connectorLineStyle}" SourceDecorator="{StaticResource Rectangle}" SourceDecoratorStyle="{StaticResource DecoratorFillStyle}" TargetDecorator="{StaticResource OpenSharp}" TargetDecoratorStyle="{StaticResource DecoratorFillStyle}">
+<syncfusion:ConnectorViewModel SourcePoint="300,100" TargetPoint="400,200"                    
+                               ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
+                               SourceDecorator="{StaticResource Rectangle}" 
+                               SourceDecoratorStyle="{StaticResource DecoratorFillStyle}" 
+                               TargetDecorator="{StaticResource OpenSharp}" 
+                               TargetDecoratorStyle="{StaticResource DecoratorFillStyle}">
 </syncfusion:ConnectorViewModel>
 
 {% endhighlight %}
@@ -102,11 +112,21 @@ Each decorator shapes can be changed as hollow type shapes, which contains a hol
 </Style>
 
 <!--Initialize the connector with hollow style for source and target decortors-->
-<syncfusion:ConnectorViewModel SourcePoint="500,100" TargetPoint="600,200" ConnectorGeometryStyle="{StaticResource connectorLineStyle}" SourceDecorator="{StaticResource Ellipse}" SourceDecoratorStyle="{StaticResource DecoratorHollowStyle}" TargetDecorator="{StaticResource ClosedSharp}" TargetDecoratorStyle="{StaticResource DecoratorHollowStyle}">
+<syncfusion:ConnectorViewModel SourcePoint="500,100" TargetPoint="600,200" 
+                               ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
+                               SourceDecorator="{StaticResource Ellipse}" 
+                               SourceDecoratorStyle="{StaticResource DecoratorHollowStyle}" 
+                               TargetDecorator="{StaticResource ClosedSharp}" 
+                               TargetDecoratorStyle="{StaticResource DecoratorHollowStyle}">
 </syncfusion:ConnectorViewModel>
 
 <!--Initialize the connector with hollow style for source and target decortors-->
-<syncfusion:ConnectorViewModel SourcePoint="700,100" TargetPoint="800,200" ConnectorGeometryStyle="{StaticResource connectorLineStyle}" SourceDecorator="{StaticResource Rectangle}" SourceDecoratorStyle="{StaticResource DecoratorHollowStyle}" TargetDecorator="{StaticResource OpenSharp}" TargetDecoratorStyle="{StaticResource DecoratorHollowStyle}">
+<syncfusion:ConnectorViewModel SourcePoint="700,100" TargetPoint="800,200" 
+                               ConnectorGeometryStyle="{StaticResource connectorLineStyle}"
+                               SourceDecorator="{StaticResource Rectangle}" 
+                               SourceDecoratorStyle="{StaticResource DecoratorHollowStyle}" 
+                               TargetDecorator="{StaticResource OpenSharp}" 
+                               TargetDecoratorStyle="{StaticResource DecoratorHollowStyle}">
 </syncfusion:ConnectorViewModel>
 
 {% endhighlight %}
@@ -243,7 +263,11 @@ The `SegmentDecorator` property allows you to customize the shape within the seg
 </Style>
 
 <!--Initialize the connector with segment decorator shape, its style and length-->
-<syncfusion:ConnectorViewModel SourcePoint="1100,300" TargetPoint="1200,400" ConnectorGeometryStyle="{StaticResource connectorLineStyle}" TargetDecorator="{StaticResource ClosedSharp}" TargetDecoratorStyle="{StaticResource DecoratorFillStyle}" SegmentDecoratorStyle="{StaticResource SegmentDecoratorStyle}">
+<syncfusion:ConnectorViewModel SourcePoint="1100,300" TargetPoint="1200,400" 
+                               ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
+                               TargetDecorator="{StaticResource ClosedSharp}" 
+                               TargetDecoratorStyle="{StaticResource DecoratorFillStyle}" 
+                               SegmentDecoratorStyle="{StaticResource SegmentDecoratorStyle}">
     <syncfusion:ConnectorViewModel.SegmentDecorators>
         <local:SegmentDecoratorCollection>
             <syncfusion:SegmentDecorator Shape="{StaticResource OpenSharp}" Length="0.4"/>
@@ -294,7 +318,11 @@ The `CornerRadius` property allows you to create connectors with rounded corners
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize the connector with corner radious property-->
-<syncfusion:ConnectorViewModel SourcePoint="1300,300" TargetPoint="1400,400" CornerRadius="10" ConnectorGeometryStyle="{StaticResource connectorLineStyle}" TargetDecorator="{StaticResource ClosedSharp}" TargetDecoratorStyle="{StaticResource DecoratorFillStyle}">
+<syncfusion:ConnectorViewModel SourcePoint="1300,300" TargetPoint="1400,400" 
+                               CornerRadius="10" 
+                               ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
+                               TargetDecorator="{StaticResource ClosedSharp}" 
+                               TargetDecoratorStyle="{StaticResource DecoratorFillStyle}">
 </syncfusion:ConnectorViewModel>
 {% endhighlight %}
 
@@ -321,13 +349,21 @@ Padding is used to leave space between the connector’s end point and the objec
 {% tabs %}
 {% highlight xaml %}
 <!--Creating source node-->
-<syncfusion:NodeViewModel ID="sourceNode" UnitWidth="100" UnitHeight="50" OffsetX="1150" OffsetY="480" Shape="{StaticResource Rectangle}"/>
+<syncfusion:NodeViewModel ID="sourceNode" UnitWidth="100" UnitHeight="50" 
+                          OffsetX="1150" OffsetY="480" 
+                          Shape="{StaticResource Rectangle}"/>
 
 <!--Creating target node-->
-<syncfusion:NodeViewModel ID="targetNode" UnitWidth="100" UnitHeight="50" OffsetX="1350" OffsetY="480" Shape="{StaticResource Rectangle}"/>
+<syncfusion:NodeViewModel ID="targetNode" UnitWidth="100" UnitHeight="50" 
+                          OffsetX="1350" OffsetY="480" 
+                          Shape="{StaticResource Rectangle}"/>
 
 <!--Creating connector with source and target padding property-->
-<syncfusion:ConnectorViewModel SourceNodeID="sourceNode" TargetNodeID="targetNode" SourcePadding="5" TargetPadding="5"  ConnectorGeometryStyle="{StaticResource connectorLineStyle}" TargetDecorator="{StaticResource ClosedSharp}" TargetDecoratorStyle{StaticResource DecoratorFillStyle}"/>
+<syncfusion:ConnectorViewModel SourceNodeID="sourceNode" TargetNodeID="targetNode" 
+                               SourcePadding="5" TargetPadding="5"  
+                               ConnectorGeometryStyle="{StaticResource connectorLineStyle}" 
+                               TargetDecorator="{StaticResource ClosedSharp}" 
+                               TargetDecoratorStyle{StaticResource DecoratorFillStyle}"/>
 {% endhighlight %}
 {% highlight C# %}
 
@@ -427,14 +463,18 @@ The size of bridge in a connector can be customized with the `BridgeSpace` prope
 {% tabs %}
 {% highlight xaml %}
 <!--Enable the bridging constraint-->
-<syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Bridging" BridgeDirection="Bottom">
+<syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Bridging" 
+                      BridgeDirection="Bottom">
     <syncfusion:SfDiagram.Connectors>
         <!--Initialize the Connector Collection-->
         <syncfusion:ConnectorCollection>
             <!--Creating connectors-->
-            <syncfusion:ConnectorViewModel SourcePoint="150,80" TargetPoint="150,200"/>
+            <syncfusion:ConnectorViewModel SourcePoint="150,80" 
+                                           TargetPoint="150,200"/>
             <!--specify the bridge space value-->
-            <syncfusion:ConnectorViewModel BridgeSpace="40" SourcePoint="100,100" TargetPoint="250,200" />
+            <syncfusion:ConnectorViewModel BridgeSpace="40" 
+                                           SourcePoint="100,100" 
+                                           TargetPoint="250,200" />
         </syncfusion:ConnectorCollection>
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
@@ -496,7 +536,9 @@ The StrokeThickness, Stroke, and style of the connector and decorators can be cu
 </Style>
 
 <!--Create connector with customized geometry style and target decorator-->
-<syncfusion:ConnectorViewModel ConnectorGeometryStyle="{StaticResource CustomConnectorStyle}" TargetDecoratorStyle="{StaticResource CustomDecoratorStyle}" SourcePoint="300,100" TargetPoint="400,200" />
+<syncfusion:ConnectorViewModel ConnectorGeometryStyle="{StaticResource CustomConnectorStyle}" 
+                               TargetDecoratorStyle="{StaticResource CustomDecoratorStyle}" 
+                               SourcePoint="300,100" TargetPoint="400,200" />
 
 {% endhighlight %}
 {% highlight c# %}

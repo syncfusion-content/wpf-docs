@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Provides guide for measuring in the Diagram Control | Syncfusion. 
-description: how to measure the distance of Nodes and Connectors? 
+description: how to draw rulers over the diagrma page and how measure the distance of Nodes and Connectors using different scales of rulers? 
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -16,27 +16,26 @@ Please refer to the sample from Dashboard->Desktop->WPF->Diagram->GettingStarted
 ## Define Rulers
 
 {% tabs %}
-{% highlight C# %}
-
-diagramcontrol.HorizontalRuler = new Ruler();
-diagramcontrol.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
-
-{% endhighlight %}
-
 {% highlight XAML %}
 
- xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.WPF"
- xmlns:SyncControls="clr-namespace:Syncfusion.UI.Xaml.Diagram.Controls;assembly=Syncfusion.SfDiagram.WPF"
+xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Diagram;assembly=Syncfusion.SfDiagram.WPF"
+xmlns:SyncControls="clr-namespace:Syncfusion.UI.Xaml.Diagram.Controls;assembly=Syncfusion.SfDiagram.WPF"
 
-<Syncfusion:SfDiagram x:Name="diagramcontrol">
-            <Syncfusion:SfDiagram.HorizontalRuler>
-                <SyncControls:Ruler/>
-            </Syncfusion:SfDiagram.HorizontalRuler>
-            <Syncfusion:SfDiagram.VerticalRuler>
-                <SyncControls:Ruler Orientation="Vertical"/>
-            </Syncfusion:SfDiagram.VerticalRuler>
-</Syncfusion:SfDiagram>
+<syncfusion:SfDiagram x:Name="diagram">
+    <syncfusion:SfDiagram.HorizontalRuler>
+        <syncfusion:Ruler/>
+    </syncfusion:SfDiagram.HorizontalRuler>
+    <syncfusion:SfDiagram.VerticalRuler>
+        <syncfusion:Ruler Orientation="Vertical"/>
+    </syncfusion:SfDiagram.VerticalRuler>
+</syncfusion:SfDiagram>
 		
+{% endhighlight %}
+{% highlight C# %}
+
+diagram.HorizontalRuler = new Ruler();
+diagram.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
+
 {% endhighlight %}
 {% endtabs %}
 
