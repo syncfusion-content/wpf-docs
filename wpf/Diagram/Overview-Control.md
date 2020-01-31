@@ -39,12 +39,11 @@ Steps to add Overview control manually in XAML:
         WindowStartupLocation="CenterScreen"
         Title="Overview" Height="720" Width="1200">
     
-<!--Initialize the overview control and bind the diagram control elements to overview-->
-<syncfusion:Overview Source="{Binding ElementName=diagram}" Height="300" Margin="0,25,0,0"/>
+    <!--Initialize the overview control and bind the diagram control elements to overview-->
+    <syncfusion:Overview Source="{Binding ElementName=diagram}" Height="300" Margin="0,25,0,0"/>
 
-<!--Initialize the SfDiagram-->
-<syncfusion:SfDiagram x:Name="diagram" >
-</syncfusion:SfDiagram>
+    <!--Initialize the SfDiagram-->
+    <syncfusion:SfDiagram x:Name="diagram"/>
 </Window>
 	
 {% endhighlight %}	
@@ -62,12 +61,13 @@ Overview control allows Zoom and Pan interactions. The red rectangle indicates t
 {% highlight xaml %}
 
 <!--Initialize the overview control with its constraint-->
-<syncfusion:Overview Source="{Binding ElementName=diagram}" Constraint="Default" Height="300" Margin="0,25,0,0"/>
+<syncfusion:Overview Source="{Binding ElementName=diagram}" 
+                     Constraint="Default" 
+                     Height="300" Margin="0,25,0,0"/>
 
 <!--Initialize the SfDiagram-->
-<syncfusion:SfDiagram x:Name="diagram" >
-</syncfusion:SfDiagram>
-	
+<syncfusion:SfDiagram x:Name="diagram"/>
+
 {% endhighlight %}	
 {% endtabs %}
 

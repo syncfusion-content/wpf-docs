@@ -11,17 +11,19 @@ documentation: ug
 SfDiagram provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~Print().html "PrintingService.Print") method.
 
 ## Direct print
+
 Sfdiagram provides support to directly print the diagram pages using system default printer without opening the print preview window. To print the diagram by calling [SfDiagram.PrintingService.Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~Print().html "SfDiagram.PrintingService.Print") method, refer to the following code sample.
 
 {% tabs %}
 {% highlight c# %}
 
-   diagram.PrintingService.Print();
+diagram.PrintingService.Print();
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Print preview
+
 SfDiagram provides option to display print preview to review and customize the diagram in desired format before printing. Print preview window lets users to navigate through every page, zoom in and out on a page to determine the errors if any, which need to be resolved prior to printing.
 
 Print preview window can be opened by setting [SfDiagram.PrintingService.ShowDialog](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~ShowDialog.html "SfDiagram.PrintingService.ShowDialog") to true and calling the[SfDiagram.PrintingService.Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~Print().html "SfDiagram.PrintingService.Print") method.
@@ -29,9 +31,8 @@ Print preview window can be opened by setting [SfDiagram.PrintingService.ShowDia
 {% tabs %}
 {% highlight c# %}
 
-   diagram.PrintingService.ShowDialog = true;
-
-   diagram.PrintingService.Print();
+diagram.PrintingService.ShowDialog = true;
+diagram.PrintingService.Print();
 
 {% endhighlight %}
 {% endtabs %}
@@ -39,26 +40,29 @@ Print preview window can be opened by setting [SfDiagram.PrintingService.ShowDia
 ![Printing](Printing_images/printing_1.png)
 
 ## Print settings
+
 SfDiagram provides various options to customize print preview settings using the [SfDiagram.PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~PageSettings.html "SfDiagram.PageSettings") and [PrintingService.PrintSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~PrintSettings.html "PrintingService.PrintSettings") properties.
 
 {% tabs %}
 {% highlight c# %}
 
-   diagram.PageSettings=new PageSettings();
-   diagram.PageSettings.PageWidth = 800;
-   diagram.PageSettings.PageHeight = 800;
-   diagram.PageSettings.PageOrientation=PageOrientation.Landscape;
-   diagram.PrintingService.PrintSettings.PageMargin=new Thickness(5);
+diagram.PageSettings=new PageSettings();
+diagram.PageSettings.PageWidth = 800;
+diagram.PageSettings.PageHeight = 800;
+diagram.PageSettings.PageOrientation=PageOrientation.Landscape;
+diagram.PrintingService.PrintSettings.PageMargin=new Thickness(5);
  
 {% endhighlight %}
 {% endtabs %}
+
 ### Print
+
 To print a diagram from the selected printer, click the Print button at the top left corner of the Print Preview window. Also, Print Preview window
 has option to decide how many copies need to be printed. 
 
- ![Printing](Printing_images/print.png)
+![Printing](Printing_images/print.png)
 
- N> Copies will be effective only for real printers.
+N> Copies will be effective only for real printers.
 
 For sample, refer to [Printing](https://www.syncfusion.com/downloads/support/directtrac/243873/ze/Printing_Sample-326239405).
 
@@ -73,7 +77,6 @@ Printer section.
 
 ![Printer List](Printing_images/printerlist.png)
 
- 	
 ### Scaling 
  SfDiagram provides support to scale the diagram whether to print as single page or split into multiple pages. Scaling options can be changed by setting the `PrintingService.PrintManager.SelectedScaleIndex`
 property. 
@@ -104,26 +107,28 @@ diagram.PrintingService.PrintManager.SelectedScaleIndex = 1;
         2) ToPage: Specifies the end page of printing.
 
     
-   ![PrintPageRange](Printing_images/printpagerange.png) 
+![PrintPageRange](Printing_images/printpagerange.png) 
 
-   N> Based on the FromPage and ToPage values, the PageRangeSelection option will change.
+N> Based on the FromPage and ToPage values, the PageRangeSelection option will change.
 
 ### Collation
+
 Collation is used to specify whether a printer collates output when it prints multiple copies of a multipage diagram.
 
     1) Collate - Collated output.
     2) UnCollate - UnCollated output.
 
-  N> Collation applicable when more than one copy of multiple page diagram is printed in real printer.
+N> Collation applicable when more than one copy of multiple page diagram is printed in real printer.
 
 ### Orientation 
+
 SfDiagram provides support to switch between Portrait and Landscape orientation while printing. Orientation can be changed by setting the `PageSettings.PageOrientation` Property.
 
 {% tabs %}
 {% highlight C# %}
 
- diagram.PageSettings=new PageSettings();
- diagram.PageSettings.PageOrientation=PageOrientation.Landscape;
+diagram.PageSettings=new PageSettings();
+diagram.PageSettings.PageOrientation = PageOrientation.Landscape;
 
 {% endhighlight %}
 {% endtabs %}
@@ -136,14 +141,15 @@ The orientation can be changed in print preview window at runtime using orientat
 ![Print Orientation](Printing_images/print_orientation.png)
 
 ### Paper size 
- SfDiagram provides support to change the page size. Page size can be changed by setting the `PageSettings.PageWidth` and `PageSettings.PageHeight` properties.
+
+SfDiagram provides support to change the page size. Page size can be changed by setting the `PageSettings.PageWidth` and `PageSettings.PageHeight` properties.
 
 {% tabs %}
 {% highlight C# %}
 
-  diagram.PageSettings=new PageSettings();
-  diagram.PageSettings.PageWidth = 800;
-  diagram.PageSettings.PageHeight = 800;
+diagram.PageSettings=new PageSettings();
+diagram.PageSettings.PageWidth = 800;
+diagram.PageSettings.PageHeight = 800;
 
 {% endhighlight %}
 {% endtabs %}
@@ -153,12 +159,13 @@ Page size can be changed in print preview window also by selecting any value fro
 ![Print Size](Printing_images/print_size.png)
 
  ### Page margin
+
 SfDiagram provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting `PrintingService.PrintSettings.PageMargin` property.
 
 {% tabs %}
 {% highlight C# %}
 
-   diagram.PrintingService.PrintSettings.PageMargin=new Thickness(5);
+diagram.PrintingService.PrintSettings.PageMargin=new Thickness(5);
 
 {% endhighlight %}
 {% endtabs %}
@@ -178,16 +185,15 @@ Steps for setting Header for printing:
 {% tabs %}
 {% highlight XAML%}
 
- <DataTemplate x:Key="PrintHeaderTemplate">
+<DataTemplate x:Key="PrintHeaderTemplate">
     <TextBlock Text="PageHeader" FontSize="12" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
- </DataTemplate>
+</DataTemplate>
 
 <DataTemplate x:Key="PrintFooterTemplate">
   <TextBlock Text="SfDiagram" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
 </DataTemplate>
 
 {% endhighlight %}
-
 {% endtabs %}
 
 2.Set the above defined DataTemplate to `PrintSettings.PageHeaderTemplate` and `PrintSettings.PageFooterTemplate`, then assign value for `PrintSettings.PageHeaderHeight` and `PrintSettings.PageFooterHeight` properties also.
@@ -195,24 +201,25 @@ Steps for setting Header for printing:
 {% tabs %}
 {% highlight c# %}
 
- diagram.PrintingService.PrintSettings.PageHeaderHeight = 50;
- diagram.PrintingService.PrintSettings.PageHeaderTemplate = this.Resources["PrintHeaderTemplate"] as DataTemplate;
+diagram.PrintingService.PrintSettings.PageHeaderHeight = 50;
+diagram.PrintingService.PrintSettings.PageHeaderTemplate = this.Resources["PrintHeaderTemplate"] as DataTemplate;
  
- diagram.PrintingService.PrintSettings.PageFooterHeight = 50;
- diagram.PrintingService.PrintSettings.PageFooterTemplate =this.Resources["PrintFooterTemplate"] as DataTemplate;
+diagram.PrintingService.PrintSettings.PageFooterHeight = 50;
+diagram.PrintingService.PrintSettings.PageFooterTemplate =this.Resources["PrintFooterTemplate"] as DataTemplate;
 
 {% endhighlight %}
 {% endtabs %}
 
 3.Now, run the application and you can see page header and footer in all the pages. 
 
- ![HeaderAndFooter](Printing_images/headerandfooter.png) 
+![HeaderAndFooter](Printing_images/headerandfooter.png) 
  
 Refer to the Print and Export Sample from the following link.
 
 Sample Link: WPF Dashboard->SfDiagram->Getting Started->Print.
 
 ## Skip empty pages
+
 Sfdiagram provides support to skip the empty pages while navigating through preview and in printed document, thus reduces paper wastage.
 
 The `GetPrintInfo` virtual method of `PrintingService` is used to cancel the empty pages. This method will execute for page navigation, printing each diagram pages, and changes made in the print preview area.
@@ -220,23 +227,24 @@ The `GetPrintInfo` virtual method of `PrintingService` is used to cancel the emp
 {% tabs %}
 {% highlight c# %}
 
-  public class CustomPrintingService : PrintingService
+public class CustomPrintingService : PrintingService
+{
+    protected override void GetPrintInfo(PrintInfo args)
     {
-        protected override void GetPrintInfo(PrintInfo args)
+        if (!(args.Elements as IEnumerable<object>).Any())
         {
-            if (!(args.Elements as IEnumerable<object>).Any())
-            {
-                args.Cancel = true;
-            }
-            else
-                base.GetPrintInfo(args);
+            args.Cancel = true;
         }
+        else
+            base.GetPrintInfo(args);
     }
+}
  
 {% endhighlight %}
 {% endtabs %}
 
 ## Printing event
+
 The `Printing` event will notify the different state of the printing with [PrintingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingEventArgs.html).The argument will provide the print dialog and print state value of the printing. 
 
 | PrintStatus | Description |
@@ -251,12 +259,11 @@ The `Printing` event will notify the different state of the printing with [Print
 {% tabs %}
 {% highlight c# %}
 
-   (diagram.Info as IGraphInfo).Printing += MainWindow_Printing;
+(diagram.Info as IGraphInfo).Printing += MainWindow_Printing;
    
-    private void MainWindow_Printing(object sender, PrintingEventArgs args)
-    {
-       
-    }
+private void MainWindow_Printing(object sender, PrintingEventArgs args)
+{
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -268,50 +275,47 @@ Print preview window's page size drop down will display only the suported paper 
 
 Using the `OnSelectedPrinterChanged` virtual method of `DiagramPrintManager`, you can add the custom pager sizes to the selected printer apart from the default supported paper sizes. Refer to the following code example.
 
-
 {% tabs %}
 {% highlight c# %}
 
-    public class CustomDiagramPrintManager : DiagramPrintManager
+public class CustomDiagramPrintManager : DiagramPrintManager
+{
+    public CustomDiagramPrintManager(PrintingService printingService) : base(printingService)
     {
+    }
 
-        public CustomDiagramPrintManager(PrintingService printingService) : base(printingService)
+    public override void OnSelectedPrinterChanged(PrintQueue printQueue)
+    {
+        if (printQueue.Name.Contains("Microsoft Print to PDF"))
         {
-
-        }
-
-        public override void OnSelectedPrinterChanged(PrintQueue printQueue)
-        {
-
-            if (printQueue.Name.Contains("Microsoft Print to PDF"))
+            List<string> pagesizename = PageSizeOptions.Select(c => c.PageSizeName).ToList();
+            if (!(pagesizename.Contains("Ansi B")))
             {
-                List<string> pagesizename = PageSizeOptions.Select(c => c.PageSizeName).ToList();
-                if (!(pagesizename.Contains("Ansi B")))
-                {
-                    PageSizeOptions.Add(new Syncfusion.Windows.Controls.Printing.PrintPageSize() { PageSizeName = "Ansi B", Size = new Size(1055, 1632) });
-                }
-                if (!(pagesizename.Contains("Ansi C")))
-                {
-                    PageSizeOptions.Add(new Syncfusion.Windows.Controls.Printing.PrintPageSize() { PageSizeName = "Ansi C", Size = new Size(1632, 2112) });
-                }
-                if (!(pagesizename.Contains("Ansi D")))
-                {
-                    PageSizeOptions.Add(new Syncfusion.Windows.Controls.Printing.PrintPageSize() { PageSizeName = "Ansi D", Size = new Size(2112, 3264) });
-                }
-                if (!(pagesizename.Contains("A0")))
-                {
-                    PageSizeOptions.Add(new Syncfusion.Windows.Controls.Printing.PrintPageSize() { PageSizeName = "A0", Size = new Size(3179, 4494) });
-                }
+                PageSizeOptions.Add(new Syncfusion.Windows.Controls.Printing.PrintPageSize() { PageSizeName = "Ansi B", Size = new Size(1055, 1632) });
+            }
+            if (!(pagesizename.Contains("Ansi C")))
+            {
+                PageSizeOptions.Add(new Syncfusion.Windows.Controls.Printing.PrintPageSize() { PageSizeName = "Ansi C", Size = new Size(1632, 2112) });
+            }
+            if (!(pagesizename.Contains("Ansi D")))
+            {
+                PageSizeOptions.Add(new Syncfusion.Windows.Controls.Printing.PrintPageSize() { PageSizeName = "Ansi D", Size = new Size(2112, 3264) });
+            }
+            if (!(pagesizename.Contains("A0")))
+            {
+                PageSizeOptions.Add(new Syncfusion.Windows.Controls.Printing.PrintPageSize() { PageSizeName = "A0", Size = new Size(3179, 4494) });
             }
         }
     }
-    public class CustomPrintingService : PrintingService
+}
+
+public class CustomPrintingService : PrintingService
+{
+    public CustomPrintingService()
     {
-        public CustomPrintingService()
-        {
-            this.PrintManager = new CustomDiagramPrintManager(this);
-        }
+        this.PrintManager = new CustomDiagramPrintManager(this);
     }
+}
  
 {% endhighlight %}
 {% endtabs %}
@@ -323,36 +327,36 @@ However, we have added custom paper sizes manually in the page size drop-down. T
 {% tabs %}
 {% highlight c# %}
 
-    private void MainWindow_Printing(object sender, PrintingEventArgs args)
+private void MainWindow_Printing(object sender, PrintingEventArgs args)
+{
+    if (args.PrintState == PrintStatus.Started)
+    {
+        var customPages = new System.Collections.Generic.Dictionary<string, Size>();
+        var printerName = args.PrintDialog.PrintQueue.Name;
+        if (printerName.Contains("Microsoft Print to PDF"))
         {
-            if (args.PrintState == PrintStatus.Started)
-            {
-                var customPages = new System.Collections.Generic.Dictionary<string, Size>();
-                var printerName = args.PrintDialog.PrintQueue.Name;
-                if (printerName.Contains("Microsoft Print to PDF"))
-                {
-                    customPages.Add("Ansi B", new Size(1055, 1632));
-                    customPages.Add("Ansi C", new Size(1632, 2112));
-                    customPages.Add("Ansi D", new Size(2112, 3264));
-                }
-                else if (printerName.Contains("Microsoft XPS Document Writer"))
-                {
-                    customPages.Add("A0", new Size(3179, 4494));
-                }
+            customPages.Add("Ansi B", new Size(1055, 1632));
+            customPages.Add("Ansi C", new Size(1632, 2112));
+            customPages.Add("Ansi D", new Size(2112, 3264));
+        }
+        else if (printerName.Contains("Microsoft XPS Document Writer"))
+        {
+            customPages.Add("A0", new Size(3179, 4494));
+        }
 
-                foreach (var customPage in customPages)
-                {
-                    if (args.SelectedPageMediaSizeName.Contains(customPage.Key))
-                    {
-                        var pageSize = customPage.Value;
-                        var mediaSize = new PageMediaSize(PageMediaSizeName.Unknown, pageSize.Width, pageSize.Height);
-                        args.PrintDialog.PrintTicket.PageMediaSize = mediaSize;
-                        args.CanUseCustomPageMediaSize = true;
-                        break;
-                    }
-                }
+        foreach (var customPage in customPages)
+        {
+            if (args.SelectedPageMediaSizeName.Contains(customPage.Key))
+            {
+                var pageSize = customPage.Value;
+                var mediaSize = new PageMediaSize(PageMediaSizeName.Unknown, pageSize.Width, pageSize.Height);
+                args.PrintDialog.PrintTicket.PageMediaSize = mediaSize;
+                args.CanUseCustomPageMediaSize = true;
+                break;
             }
         }
+    }
+}
  
 {% endhighlight %}
 {% endtabs %}
@@ -366,10 +370,10 @@ SfDiagram provides backward compatibility to show the older or classic print pre
 {% tabs %}
 {% highlight c# %}
 
-   diagram.PrintingService.ShowDialog = true;
-   diagram.PrintingService.ShowClassicPrintPreview();
- 
+diagram.PrintingService.ShowDialog = true;
+diagram.PrintingService.ShowClassicPrintPreview();
+
 {% endhighlight %}
 {% endtabs %}
 
- ![Classic Print](Printing_images/classic.png)
+![Classic Print](Printing_images/classic.png)

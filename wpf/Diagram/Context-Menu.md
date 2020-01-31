@@ -31,7 +31,6 @@ Diagram provides some default context menu items to ease the execution of some f
 
 ![Default Menu](Context-Menu_images/Context-Menu_img1.png)
 
-
 ## Customize Context Menu
 
 * Apart from the default ContextMenu items, you can define some additional menu items by using `Menu` property of SfDiagram, Node and Connector. Those additional items have to be defined and added to `MenuItems` Property. 
@@ -50,12 +49,12 @@ The following code example illustrates how to add custom context menu items to M
 {% highlight C# %}
 
 DiagramMenuItem menu = new DiagramMenuItem() 
-	{
-		Content = "Delete", 
-		Command = (diagram.Info as IGraphInfo).Commands.Delete,
-		Icon = @"pack://application:,,,/delete.ico"
-	};
-Diagram.Menu.MenuItems.Add(menu);
+{
+	Content = "Delete", 
+	Command = (diagram.Info as IGraphInfo).Commands.Delete,
+	Icon = @"pack://application:,,,/delete.ico"
+};
+diagram.Menu.MenuItems.Add(menu);
 
 {% endhighlight %}
 {% endtabs %}
@@ -95,12 +94,14 @@ The following code example illustrates how to define those events.
 {% tabs %}
 {% highlight C# %}
 
-(Diagram.Info as IGraphInfo).MenuItemClickedEvent += MainPage_MenuItemClickedEvent;
+(diagram.Info as IGraphInfo).MenuItemClickedEvent += 
+	MainPage_MenuItemClickedEvent;
 
-void MainPage_MenuItemClickedEvent(object sender, MenuItemClickedEventArgs args)
+void MainPage_MenuItemClickedEvent(object sender, 
+	MenuItemClickedEventArgs args)
 {
 	//Source – in which object Event get fired
-    //Item - MenuItem     
+    //Item - MenuItem
 }
 
 {% endhighlight %}

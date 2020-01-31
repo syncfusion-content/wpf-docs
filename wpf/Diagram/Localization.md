@@ -13,9 +13,7 @@ Localization is the process of configuring the application to a specific languag
 
 ![Localization](Localization_images/Localization_img1.png)
 
-
 You can refer [Localization](https://help.syncfusion.com/wpf/localization) to add [resource file](https://msdn.microsoft.com/library/aa992030.aspx) in the application.
-
 
 ## Localize the Annotations using ResourceManager
 
@@ -48,7 +46,6 @@ public MainWindow()
 
     //Adding diagram to the main grid of the mainwindow.
     RootGrid.Children.Add(diagram);
-
     
     diagram.Nodes =new ObservableCollection<NodeViewModel>();
 
