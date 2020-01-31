@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF PropertyGrid
 
-This section explains about the appearance of [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control
+This section deals with the appearance of [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control and contains the following topics.
 
 ## Setting the Foreground
 
@@ -334,3 +334,28 @@ SfSkinManager.SetVisualStyle(propertyGrid, VisualStyles.Blend);
 {% endtabs %}
 
 ![PropertyGrid with Blend visual style](Appearance_images/Appearance_BlendTheme.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
