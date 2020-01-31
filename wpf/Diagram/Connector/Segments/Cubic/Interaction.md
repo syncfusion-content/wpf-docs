@@ -25,8 +25,12 @@ While interacting with multiple cubic bezier segments, you can maintain their co
 <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="300,300">
     <syncfusion:ConnectorViewModel.Segments>
         <syncfusion:ConnectorSegments>
-            <syncfusion:CubicCurveSegment BezierSmoothness="SymmetricDistance" Constraints="None" Point1="50,150" Point2="260,150" Point3="200,200"/>
-            <syncfusion:CubicCurveSegment BezierSmoothness="SymmetricDistance" Constraints="None" Point1="100,250" Point2="350,260" />
+            <syncfusion:CubicCurveSegment BezierSmoothness="SymmetricDistance" 
+                                          Constraints="None" Point1="50,150" 
+                                          Point2="260,150" Point3="200,200"/>
+            <syncfusion:CubicCurveSegment BezierSmoothness="SymmetricDistance" 
+                                          Constraints="None" Point1="100,250" 
+                                          Point2="350,260" />
         </syncfusion:ConnectorSegments>
     </syncfusion:ConnectorViewModel.Segments>
 </syncfusion:ConnectorViewModel>
@@ -63,7 +67,3 @@ ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
 };
 {% endhighlight %}
 {% endtabs %}
-
-
-
-

@@ -86,7 +86,8 @@ When snapping, cyan shade color indication lines will be shown. These indication
 <syncfusion:SfDiagram x:Name="diagram">
   <!--Specify the snap indicator style -->
   <syncfusion:SfDiagram.SnapSettings>
-    <syncfusion:SnapSettings SnapToObject="All" SnapIndicatorStyle="{StaticResource snapIndicatorStyle}" />
+    <syncfusion:SnapSettings SnapToObject="All" 
+                             SnapIndicatorStyle="{StaticResource snapIndicatorStyle}" />
   </syncfusion:SfDiagram.SnapSettings>
 </syncfusion:SfDiagram>
 

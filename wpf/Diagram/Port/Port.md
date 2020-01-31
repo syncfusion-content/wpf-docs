@@ -14,6 +14,7 @@ Port is a special connection point on a Node or Connector that you can glue the 
 ![Port representation](Port_images/Port_img2.PNG)
 
 ## Connections
+
 There are two main types of connections: dynamic and port. The difference between these two connections is whether or not a connector remains glued to a specific connection point when you move the attached node or connector.
 
 A dynamic connection is one where the connector will move around the node as you move the node. Diagram will always ensure the connector is the shortest, most direct line possible. You can create a dynamic connection by selecting the entire node (rather than the port) and connect it to another shape (rather than to a port).
@@ -34,54 +35,55 @@ A port on a node can be created using the instance of `NodePort` object. The `No
 
 {% highlight xaml %}
 
-  <!--Style for Node-->
-  <Style TargetType="Syncfusion:Node">
-    <Setter Property="ShapeStyle">
+<!--Style for Node-->
+<Style TargetType="Syncfusion:Node">
+  <Setter Property="ShapeStyle">
     <Setter.Value>
-     <Style TargetType="Path">
-      <Setter Property="Fill" Value="#FF5B9BD5"/>
-      <Setter Property="Stretch" Value="Fill"/>
-      <Setter Property="Stroke" Value="#FFEDF1F6 "/>
-   </Style>
-  </Setter.Value>
- </Setter>
+      <Style TargetType="Path">
+        <Setter Property="Fill" Value="#FF5B9BD5"/>
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Stroke" Value="#FFEDF1F6"/>
+      </Style>
+    </Setter.Value>
+  </Setter>
 </Style>
 
 <!--style for NodePort-->
 <Style TargetType="Syncfusion:NodePort">
-<Setter Property="Shape">
-  <Setter.Value>
-   <RectangleGeometry Rect="0,0,10,10"/>
-  </Setter.Value>
- </Setter>
- <Setter Property="ShapeStyle">
-  <Setter.Value>
-   <Style TargetType="Path">
-    <Setter Property="Stretch" Value="Fill"/>
-    <Setter Property="Fill" Value="#FF808081"/>
-   </Style>
-  </Setter.Value>
- </Setter> 
+  <Setter Property="Shape">
+    <Setter.Value>
+      <RectangleGeometry Rect="0,0,10,10"/>
+    </Setter.Value>
+  </Setter>
+  <Setter Property="ShapeStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Fill" Value="#FF808081"/>
+      </Style>
+    </Setter.Value>
+  </Setter> 
 </Style>
 
-<Syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
+<syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
   <!--Initializes the NodeCollection-->
-  <Syncfusion:SfDiagram.Nodes>
-    <Syncfusion:NodeCollection>
-    <!--Initializes the Node-->
-      <Syncfusion:NodeViewModel  UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}">
-      <!--Initialization of PortCollection-->
-         <Syncfusion:NodeViewModel.Ports>
-           <Syncfusion:PortCollection>
+  <syncfusion:SfDiagram.Nodes>
+    <syncfusion:NodeCollection>
+      <!--Initializes the Node-->
+      <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
+                                OffsetX="100" OffsetY="100" 
+                                Shape="{StaticResource Rectangle}">
+        <!--Initialization of PortCollection-->
+        <syncfusion:NodeViewModel.Ports>
+          <syncfusion:PortCollection>
             <!--Initialization of NodePort-->
-             <Syncfusion:NodePortViewModel x:Name="port">
-             </Syncfusion:NodePortViewModel>
-          </Syncfusion:PortCollection>
-        </Syncfusion:NodeViewModel.Ports>
-      </Syncfusion:NodeViewModel>
-    </Syncfusion:NodeCollection>
-  </Syncfusion:SfDiagram.Nodes>
-</Syncfusion:SfDiagram>
+            <syncfusion:NodePortViewModel x:Name="port"/>
+          </syncfusion:PortCollection>
+        </syncfusion:NodeViewModel.Ports>
+      </syncfusion:NodeViewModel>
+    </syncfusion:NodeCollection>
+  </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -101,11 +103,11 @@ diagram.Connectors = new ConnectorCollection();
 //Create nodeviewmodel
 NodeViewModel node = new NodeViewModel()
 {
-                UnitHeight = 100,
-                UnitWidth = 100,
-                OffsetX = 300,
-                OffsetY = 300,
-                Shape = this.Resources["Rectangle"],                
+    UnitHeight = 100,
+    UnitWidth = 100,
+    OffsetX = 300,
+    OffsetY = 300,
+    Shape = App.Current.Resources["Rectangle"],
 };
 //Define port to the PortCollection of the Node
 (node.Ports as PortCollection).Add(new NodePortViewModel());
@@ -149,16 +151,15 @@ The `Displacement` property is used to dislocate the port by the value given. By
 {% endhighlight %}
 
 {% highlight c# %}
-
- NodePortViewModel port = new NodePortViewModel()
-            {
-                UnitHeight = 7,
-                UnitWidth = 7,
-                NodeOffsetX=1,
-                NodeOffsetY=0.5,
-                //Displace the port 5pixel away from left side
-                Displacement=new Thickness(5,0,0,0)
-            };
+NodePortViewModel port = new NodePortViewModel()
+{
+    UnitHeight = 7,
+    UnitWidth = 7,
+    NodeOffsetX = 1,
+    NodeOffsetY = 0.5,
+    //Displace the port 5pixel away from left side
+    Displacement = new Thickness(5,0,0,0)
+};
 
 {% endhighlight %}
 {% endtabs %}	
@@ -179,63 +180,61 @@ Find the common style for Connector and ConnectorPort.
 {% highlight xaml %}
 <!--Style for the Connector-->
 <Style TargetType="Syncfusion:Connector">
- <Setter Property="ConnectorGeometryStyle">
-  <Setter.Value>
-   <Style TargetType="Path">
-    <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
-    <Setter Property="StrokeThickness" Value="1"></Setter>
-   </Style>
-  </Setter.Value>
- </Setter>
- <Setter Property="TargetDecoratorStyle">
-  <Setter.Value>
-   <Style TargetType="Path">
-    <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
-    <Setter Property="StrokeThickness" Value="1"></Setter>
-   </Style>
-  </Setter.Value>
- </Setter>
+  <Setter Property="ConnectorGeometryStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+        <Setter Property="StrokeThickness" Value="1"></Setter>
+      </Style>
+    </Setter.Value>
+  </Setter>
+  <Setter Property="TargetDecoratorStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Stroke" Value="#FF5B9BD5"></Setter>
+        <Setter Property="StrokeThickness" Value="1"></Setter>
+      </Style>
+    </Setter.Value>
+  </Setter>
 </Style>
 <!--Style For ConnectorPort-->
 <Style TargetType="Syncfusion:ConnectorPort">
- <Setter Property="ShapeStyle">
-  <Setter.Value>
-   <Style TargetType="Path">
-    <Setter Property="Fill" Value="#FF808081"/>
-   </Style>
-  </Setter.Value>
- </Setter>
- <Setter Property="Shape">
-  <Setter.Value>
-   <RectangleGeometry Rect="0,0,10,10"/>
-  </Setter.Value>
- </Setter>
+  <Setter Property="ShapeStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Fill" Value="#FF808081"/>
+      </Style>
+    </Setter.Value>
+  </Setter>
+  <Setter Property="Shape">
+    <Setter.Value>
+      <RectangleGeometry Rect="0,0,10,10"/>
+    </Setter.Value>
+  </Setter>
 </Style>
 
 <!--Initialize the sfdiagram-->
-<Syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
- <!--Initialize the ConnectorCollection-->
- <Syncfusion:SfDiagram.Connectors>
-  <Syncfusion:ConnectorCollection>
-   <!--Initialize the Connector-->
-   <Syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200">
-    <Syncfusion:ConnectorViewModel.Ports>
-     <!--Iitializes the PortCollection-->
-     <Syncfusion:PortCollection>
-      <!--Initializes the ConnectorPort-->
-      <Syncfusion:ConnectorPortViewModel x:Name="Port"  Length="0.5">
-      </Syncfusion:ConnectorPortViewModel>
-     </Syncfusion:PortCollection>
-    </Syncfusion:ConnectorViewModel.Ports>
-   </Syncfusion:ConnectorViewModel>
-  </Syncfusion:ConnectorCollection>
- </Syncfusion:SfDiagram.Connectors>
-</Syncfusion:SfDiagram>
+<syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible">
+  <!--Initialize the ConnectorCollection-->
+  <syncfusion:SfDiagram.Connectors>
+    <syncfusion:ConnectorCollection>
+      <!--Initialize the Connector-->
+      <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200">
+        <syncfusion:ConnectorViewModel.Ports>
+          <!--Iitializes the PortCollection-->
+          <syncfusion:PortCollection>
+            <!--Initializes the ConnectorPort-->
+            <syncfusion:ConnectorPortViewModel x:Name="Port"  Length="0.5"/>
+          </syncfusion:PortCollection>
+        </syncfusion:ConnectorViewModel.Ports>
+      </syncfusion:ConnectorViewModel>
+    </syncfusion:ConnectorCollection>
+  </syncfusion:SfDiagram.Connectors>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
 {% highlight c# %}
-
 //Define diagram
 SfDiagram diagram = new SfDiagram();
 //Initialize the visibility of the port as visible
@@ -244,8 +243,8 @@ diagram.PortVisibility = PortVisibility.Visible;
 diagram.Connectors = new ConnectorCollection();
 ConnectorViewModel connector = new ConnectorViewModel()
 {
- SourcePoint = new Point(100, 100),
- TargetPoint = new Point(200, 200), 
+  SourcePoint = new Point(100, 100),
+  TargetPoint = new Point(200, 200), 
 };
 //Define port to the PortCollection of the connector
 (connector.Ports as PortCollection).Add(new ConnectorPortViewModel());
@@ -279,50 +278,53 @@ A DockPort on a node can be created using the instance of `DockPort` object. The
 {% highlight xaml %}
 
  <!--Style for DockPort-->
- <Style TargetType="Syncfusion:DockPort">
+<Style TargetType="Syncfusion:DockPort">
   <Setter Property="ConnectorGeometryStyle">
-   <Setter.Value>
-    <Style TargetType="Path">
-     <Setter Property="Stroke" Value="Black"></Setter>
-     <Setter Property="StrokeThickness" Value="5"></Setter>
-    </Style>
-   </Setter.Value>
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Stroke" Value="Black"></Setter>
+        <Setter Property="StrokeThickness" Value="5"></Setter>
+      </Style>
+    </Setter.Value>
   </Setter>
- </Style>
+</Style>
 
- <!--Initializes the Node-->
-  <Syncfusion:NodeViewModel x:Name="node" OffsetX="100" OffsetY="100" UnitHeight="100" UnitWidth="100" Shape="{StaticResource Rectangle}">
-    <!--Initializes the PortCollection-->
-      <Syncfusion:NodeViewModel.Ports>
-          <Syncfusion:PortCollection>
-            <!--Initializes the DockPort-->
-            <Syncfusion:DockPortViewModel x:Name="port" SourcePoint="0,1" TargetPoint="1,1">
-          </Syncfusion:DockPortViewModel>
-        </Syncfusion:PortCollection>
-      </Syncfusion:NodeViewModel.Ports>
-    </Syncfusion:NodeViewModel>  
+<!--Initializes the Node-->
+<syncfusion:NodeViewModel x:Name="node" OffsetX="100" OffsetY="100" 
+                          UnitHeight="100" UnitWidth="100" 
+                          Shape="{StaticResource Rectangle}">
+  <!--Initializes the PortCollection-->
+  <syncfusion:NodeViewModel.Ports>
+    <syncfusion:PortCollection>
+      <!--Initializes the DockPort-->
+      <syncfusion:DockPortViewModel x:Name="port" 
+                                    SourcePoint="0,1" 
+                                    TargetPoint="1,1"/>
+    </syncfusion:PortCollection>
+  </syncfusion:NodeViewModel.Ports>
+</syncfusion:NodeViewModel>  
 {% endhighlight %}
 {% highlight c# %}
             
-  //Create nodeviewmodel
-   NodeViewModel node = new NodeViewModel()
-   {
-      UnitHeight = 100,
-      UnitWidth = 100,
-      OffsetX = 100,
-      OffsetY = 100,
-      Shape = this.Resources["Rectangle"]
-   };
+//Create nodeviewmodel
+NodeViewModel node = new NodeViewModel()
+{
+  UnitHeight = 100,
+  UnitWidth = 100,
+  OffsetX = 100,
+  OffsetY = 100,
+  Shape = App.Current.Resources["Rectangle"]
+};
 
-   //Initialize dockportviewmodel to the nodeviewmodel
-   (node.Ports as PortCollection).Add
-      (
-        new DockPortViewModel()
-          {
-             SourcePoint = new Point(0, 1),
-             TargetPoint = new Point(1, 1)
-          }
-      );
+//Initialize dockportviewmodel to the nodeviewmodel
+(node.Ports as PortCollection).Add
+(
+  new DockPortViewModel()
+  {
+      SourcePoint = new Point(0, 1),
+      TargetPoint = new Point(1, 1)
+  }
+);
 
 {% endhighlight %}
 {% endtabs %}
@@ -337,14 +339,14 @@ The appearance of `DockPort` such as stroke and stroke thickness can be customiz
 
 <!--Style for DockPort-->
 <Style TargetType="Syncfusion:DockPort">
- <Setter Property="ConnectorGeometryStyle">
-  <Setter.Value>
-     <Style TargetType="Path">
-       <Setter Property="Stroke" Value="DarkOrange"></Setter>
-       <Setter Property="StrokeThickness" Value="5"></Setter>
-     </Style>
-  </Setter.Value>
- </Setter>
+  <Setter Property="ConnectorGeometryStyle">
+    <Setter.Value>
+      <Style TargetType="Path">
+        <Setter Property="Stroke" Value="DarkOrange"></Setter>
+        <Setter Property="StrokeThickness" Value="5"></Setter>
+      </Style>
+    </Setter.Value>
+  </Setter>
 </Style>
 
 {% endhighlight %}
@@ -354,7 +356,6 @@ The appearance of `DockPort` such as stroke and stroke thickness can be customiz
 
 >N To visualize the DockPort, it is must to specify the SourcePoint , TargetPoint, and ConnectorGeometryStyle properties.
 
-
 ## Padding
 
 Padding is used to leave space between the connector’s end point and the object to where it is connected. The `ConnectorPadding` property of port defines the space to be left between the port bounds and its edges. Default value is 0d.
@@ -363,7 +364,8 @@ Padding is used to leave space between the connector’s end point and the objec
 {% highlight xaml %}
 
 <!--Declaring the ConnectorPadding value-->
-<Syncfusion:NodePortViewModel NodeOffsetX="0" NodeOffsetY="0.5" ConnectorPadding="10"/>
+<syncfusion:NodePortViewModel NodeOffsetX="0" NodeOffsetY="0.5" 
+                              ConnectorPadding="10"/>
 
 {% endhighlight %}
 
@@ -371,10 +373,10 @@ Padding is used to leave space between the connector’s end point and the objec
 
 NodePortViewModel nodePort = new NodePortViewModel()
 {
-    //Declaring the ConnectorPadding value
-    ConnectorPadding = 10,
-    NodeOffsetX = 0,
-    NodeOffsetY = 0.5,
+  //Declaring the ConnectorPadding value
+  ConnectorPadding = 10,
+  NodeOffsetX = 0,
+  NodeOffsetY = 0.5,
 };
 {% endhighlight %}
 {% endtabs %}
@@ -383,20 +385,21 @@ NodePortViewModel nodePort = new NodePortViewModel()
 
 ## HitPadding
 
- Connection can be made from/to nodes, connectors, port or on empty area in a diagram. Making connection with ports are usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area while connecting. Default value is 0d.
+Connection can be made from/to nodes, connectors, port or on empty area in a diagram. Making connection with ports are usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area while connecting. Default value is 0d.
  
- {% tabs %}
- {% highlight c# %}
-  DockPortViewModel np1 = new DockPortViewModel()
+{% tabs %}
+{% highlight c# %}
+DockPortViewModel np1 = new DockPortViewModel()
   {
     Constraints=PortConstraints.Default & ~PortConstraints.InheritHitPadding,
     //Declaring the value for HitPadding
     HitPadding = 50,
     SourcePoint = new Point(1, 0),
     TargetPoint = new Point(1, 1)
-  };
- {% endhighlight %}
- {% endtabs %}
+};
+
+{% endhighlight %}
+{% endtabs %}
  
 ![Port hit padding](Port_images/Port_img12.gif) 
 
@@ -413,9 +416,7 @@ The visibility of ports depends on the properties of `MouseOver`, `Default`, `Co
 | ValidConnection |Specifies to visible the port when mousehover the DiagramElement and enable the PortConstraints as InConnect and Outconnect. |
 | Visible | Port is always visible for the DiagramElement. |
 
-
 To learn more about PortVisibility, refer to [PortVisibility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortVisibility.html).
-
 
 ## Connection direction
 
@@ -424,13 +425,16 @@ The `ConnectionDirection` is a port’s property, which allows users to specify 
 {% tabs %}
 {% highlight xaml %}
 
-<Syncfusion:NodePortViewModel NodeOffsetX="0.5" NodeOffsetY="0.5" Constraints="Connectable,ConnectionDirection" ConnectionDirection="Right"/>
+<syncfusion:NodePortViewModel NodeOffsetX="0.5" NodeOffsetY="0.5" Constraints="Connectable,ConnectionDirection" ConnectionDirection="Right"/>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
-NodePortViewModel port = new NodePortViewModel() { NodeOffsetX = 0.5, NodeOffsetY = 0.5 };
+NodePortViewModel port = new NodePortViewModel()
+{ 
+  NodeOffsetX = 0.5, 
+  NodeOffsetY = 0.5 
+};
 port.Constraints = PortConstraints.Connectable | PortConstraints.ConnectionDirection;
 //Specifying the direction in which connector need to connected to the port
 port.ConnectionDirection = ConnectionDirection.Right;
@@ -463,25 +467,25 @@ For more information , refer to [ConnectionDirection](https://help.syncfusion.co
 
 <!--style for NodePort-->
 <Style TargetType="Syncfusion:NodePort" >
- <Setter Property="Shape">
-   <Setter.Value>
-     <EllipseGeometry RadiusX="5" RadiusY="5"/>
-   </Setter.Value>
- </Setter>
- <Setter Property="ShapeStyle">
+  <Setter Property="Shape">
+    <Setter.Value>
+      <EllipseGeometry RadiusX="5" RadiusY="5"/>
+    </Setter.Value>
+  </Setter>
+  <Setter Property="ShapeStyle">
     <Setter.Value>
       <Style TargetType="Path">
         <Setter Property="Fill" Value="Yellow"/>
       </Style>
     </Setter.Value>
- </Setter> 
+  </Setter> 
 </Style>
 
 <!--Initializes the NodePort-->
-<Syncfusion:NodePortViewModel x:Name="port" UnitWidth="7" UnitHeight="7" NodeOffsetX="1" NodeOffsetY="0.5"/>  
+<syncfusion:NodePortViewModel x:Name="port" UnitWidth="7" UnitHeight="7" 
+                              NodeOffsetX="1" NodeOffsetY="0.5"/>  
     
 {% endhighlight %}
-
 {% highlight c# %}
 
 NodePortViewModel port = new NodePortViewModel()
@@ -498,7 +502,6 @@ NodePortViewModel port = new NodePortViewModel()
 
 ![Port appearance](Port_images/Port_img8.PNG)
 
-
 ## Events
 
 The `PortChangedEvent` will get invoked when you drag the port.
@@ -508,7 +511,6 @@ The `PortChangedEvent` will get invoked when you drag the port.
 * ConnectorPort: The `PortChangedEvent` will notify the `Length` changes with their `OldValue` and `NewValue`.
  
 * DockPort: The `PortChangedEvent` will notify the `SourcePoint`and `TargetPoint` changes with their `OldValue` and `NewValue`.
-
 
  To explore about arguments, refer to [PortChangedEvent](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PortChangedEventArgs.html)
 

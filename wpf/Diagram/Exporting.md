@@ -100,9 +100,9 @@ diagram.Export();
 
 //Initialize the export settings
 ExportSettings settings = new ExportSettings()
-  {  
+{  
     ExportMode = ExportMode.PageSettings,
-  }; 
+}; 
    
 diagram.ExportSettings = settings;         
 //Method to export the SfDiagram
@@ -154,9 +154,9 @@ SfDiagram provides the supports to export any specific region of the diagram by 
 
 //Initialize the export settings with clipping area
 ExportSettings settings = new ExportSettings()
-  {  
+{  
     Clip = new Rect(200,0,200,500),
-  }; 
+}; 
    
 diagram.ExportSettings = settings;         
 //Method to export the SfDiagram
@@ -185,9 +185,9 @@ SfDiagram provides the supports to change the background color of the exported i
 
 //Initialize the export settings with clipping area
 ExportSettings settings = new ExportSettings()
-  {  
+{  
     ExportBackground = new SolidColorBrush(Colors.Blue),
-  }; 
+}; 
    
 diagram.ExportSettings = settings;         
 //Method to export the SfDiagram

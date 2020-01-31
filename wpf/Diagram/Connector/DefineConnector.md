@@ -53,7 +53,9 @@ The `DefaultConnectorType` property allows you to change the connector type. By 
         <!--Initialize the Connector Collection-->
         <syncfusion:ConnectorCollection>
             <!--create the simple connector with source point and target point values-->
-            <syncfusion:ConnectorViewModel x:Name="simpleConnector" SourcePoint="100,100" TargetPoint="200,200" />
+            <syncfusion:ConnectorViewModel x:Name="simpleConnector" 
+                                           SourcePoint="100,100" 
+                                           TargetPoint="200,200" />
         </syncfusion:ConnectorCollection>
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
@@ -90,7 +92,8 @@ Polyline is a continuous line of a segment or a continuous line composed of more
 {% highlight xaml %}
 
 <!--Initialize the Sfdiagram-->
-<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="Line" Tool="ContinuesDraw" DrawingTool="Connector" />
+<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="Line" 
+                      Tool="ContinuesDraw" DrawingTool="Connector" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -153,7 +156,8 @@ The connector can be created by defining the source and target point of the conn
         <!--Initialize the Connector Collection-->
         <syncfusion:ConnectorCollection>
             <!--create the simple connector with source point and target point values-->
-            <syncfusion:ConnectorViewModel x:Name="simpleConnector" SourcePoint="100,100" TargetPoint="200,200" />
+            <syncfusion:ConnectorViewModel x:Name="simpleConnector" 
+                                           SourcePoint="100,100" TargetPoint="200,200" />
         </syncfusion:ConnectorCollection>
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
@@ -194,9 +198,15 @@ The connector can be created between nodes to display the relationship between t
         <!--Initialize the Nodes Collection-->
         <syncfusion:NodeCollection>
             <!--Creating source node-->
-            <syncfusion:NodeViewModel ID="sourceNode" UnitWidth="100" UnitHeight="50" OffsetX="300" OffsetY="200" Shape="{StaticResource Rectangle}"/>
+            <syncfusion:NodeViewModel ID="sourceNode" 
+                                      UnitWidth="100" UnitHeight="50" 
+                                      OffsetX="300" OffsetY="200" 
+                                      Shape="{StaticResource Rectangle}"/>
             <!--Creating target node-->
-            <syncfusion:NodeViewModel ID="targetNode" UnitWidth="100" UnitHeight="50" OffsetX="500" OffsetY="200" Shape="{StaticResource Rectangle}"/>
+            <syncfusion:NodeViewModel ID="targetNode" 
+                                      UnitWidth="100" UnitHeight="50" 
+                                      OffsetX="500" OffsetY="200" 
+                                      Shape="{StaticResource Rectangle}"/>
         </syncfusion:NodeCollection>
     </syncfusion:SfDiagram.Nodes>
 
@@ -204,7 +214,9 @@ The connector can be created between nodes to display the relationship between t
         <!--Initialize the ConnectorCollection-->
         <syncfusion:ConnectorCollection>
             <!--create the connector with source node and target node values-->
-            <syncfusion:ConnectorViewModel x:Name="NodeToNodeConnection" SourceNodeID="sourceNode" TargetNodeID="targetNode"/>
+            <syncfusion:ConnectorViewModel x:Name="NodeToNodeConnection" 
+                                           SourceNodeID="sourceNode" 
+                                           TargetNodeID="targetNode"/>
         </syncfusion:ConnectorCollection>
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
@@ -269,23 +281,33 @@ The `SourcePort`/`SourcePortID` and `TargetPort`/`TargetPortID` properties allow
         <!--Initialize the Nodes Collection-->
         <syncfusion:NodeCollection>
             <!--Creating source node-->
-            <syncfusion:NodeViewModel ID="sourceNode" UnitWidth="100" UnitHeight="50" OffsetX="300" OffsetY="200" Shape="{StaticResource Rectangle}">
+            <syncfusion:NodeViewModel ID="sourceNode" 
+                                      UnitWidth="100" UnitHeight="50" 
+                                      OffsetX="300" OffsetY="200" 
+                                      Shape="{StaticResource Rectangle}">
                 <syncfusion:NodeViewModel.Ports>
                     <!--Initialize the Ports Collection-->
                     <syncfusion:PortCollection>
                         <!--create source node port-->
-                        <syncfusion:NodePortViewModel ID="SourcePort" NodeOffsetX="0" NodeOffsetY="0.5"/>
+                        <syncfusion:NodePortViewModel ID="SourcePort" 
+                                                      NodeOffsetX="0" 
+                                                      NodeOffsetY="0.5"/>
                     </syncfusion:PortCollection>
                 </syncfusion:NodeViewModel.Ports>
             </syncfusion:NodeViewModel>
 
             <!--Creating target node-->
-            <syncfusion:NodeViewModel ID="targetNode" UnitWidth="100" UnitHeight="50" OffsetX="500" OffsetY="200" Shape="{StaticResource Rectangle}">
+            <syncfusion:NodeViewModel ID="targetNode" 
+                                      UnitWidth="100" UnitHeight="50" 
+                                      OffsetX="500" OffsetY="200" 
+                                      Shape="{StaticResource Rectangle}">
                 <syncfusion:NodeViewModel.Ports>
                     <!--Initialize the Ports Collection-->
                     <syncfusion:PortCollection>
                         <!--create source node port-->
-                        <syncfusion:NodePortViewModel ID="TargetPort" NodeOffsetX="1" NodeOffsetY="0.5"/>
+                        <syncfusion:NodePortViewModel ID="TargetPort" 
+                                                      NodeOffsetX="1"
+                                                      NodeOffsetY="0.5"/>
                     </syncfusion:PortCollection>
                 </syncfusion:NodeViewModel.Ports>
             </syncfusion:NodeViewModel>
@@ -296,7 +318,11 @@ The `SourcePort`/`SourcePortID` and `TargetPort`/`TargetPortID` properties allow
         <!--Initialize the ConnectorCollection-->
         <syncfusion:ConnectorCollection>
             <!--create the connector with source node and target node values-->
-            <syncfusion:ConnectorViewModel x:Name="PortToPortConnection" SourcePortID="SourcePort" TargetPortID="TargetPort" SourceNodeID="sourceNode"  TargetNodeID="targetNode"/>
+            <syncfusion:ConnectorViewModel x:Name="PortToPortConnection" 
+                                           SourcePortID="SourcePort" 
+                                           TargetPortID="TargetPort" 
+                                           SourceNodeID="sourceNode"  
+                                           TargetNodeID="targetNode"/>
         </syncfusion:ConnectorCollection>
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>

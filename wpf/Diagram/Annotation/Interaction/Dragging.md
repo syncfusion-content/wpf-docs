@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotation Dragging | Syncfusion 
-description: how to define basic annotations for Node and Connectors
+description: how to drag the annotations of nodes and Connectors and how to customize the dragging behaviour of annotations.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -55,7 +55,9 @@ Diagram allows you to specify the amount of dragging area around the annotation 
 <!--Initialize the AnnotationCollection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the annotation with drag limit value-->
-    <syncfusion:AnnotationEditorViewModel Content="Annotation" Constraints="Draggable,DragLimit" DragLimit="40,80,40,40"/>
+    <syncfusion:AnnotationEditorViewModel Content="Annotation" 
+                                          Constraints="Draggable,DragLimit" 
+                                          DragLimit="40,80,40,40"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}
