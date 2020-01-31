@@ -466,6 +466,8 @@ public class ViewModel
         </syncfusion:PropertyGrid>
     </Grid>
 </Window>
+{% endhighlight %}
+{% endtabs %} 
 
 {% tabs %}
 {% highlight C# %}
