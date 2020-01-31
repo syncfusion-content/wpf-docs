@@ -22,7 +22,9 @@ By default, Diagram's page size is decided based on the position of diagramming 
 <syncfusion:SfDiagram x:Name="diagram">
   <!--Initialize the page settings and page orientation property-->
   <syncfusion:SfDiagram.PageSettings>
-    <syncfusion:PageSettings PageOrientation="Portrait" PageWidth="300" PageHeight="400" ShowPageBreaks="True" />
+    <syncfusion:PageSettings PageOrientation="Portrait" 
+                             PageWidth="300" PageHeight="400" 
+                             ShowPageBreaks="True" />
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 
@@ -58,7 +60,10 @@ Based on the diagramming element position, the size of the page dynamically incr
 <syncfusion:SfDiagram x:Name="diagram">
   <!--Initialize the page settings and its properties-->
   <syncfusion:SfDiagram.PageSettings>
-    <syncfusion:PageSettings PageWidth="500" PageHeight="500" MultiplePage="True" ShowPageBreaks="True" />
+    <syncfusion:PageSettings PageWidth="500" 
+                             PageHeight="500" 
+                             MultiplePage="True" 
+                             ShowPageBreaks="True" />
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 
@@ -95,7 +100,12 @@ The appearance of the pages can be customized by using the following properties 
 <syncfusion:SfDiagram x:Name="diagram">
   <!--Initialize the page settings and its properties-->
   <syncfusion:SfDiagram.PageSettings>
-    <syncfusion:PageSettings PageBorderThickness="5" PageBackground="LightGreen" PageBorderBrush="Black" PageWidth="500" PageHeight="500" MultiplePage="True" ShowPageBreaks="True" />
+    <syncfusion:PageSettings PageBorderThickness="5" 
+                             PageBackground="LightGreen" 
+                             PageBorderBrush="Black" 
+                             PageWidth="500" PageHeight="500" 
+                             MultiplePage="True" 
+                             ShowPageBreaks="True" />
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
@@ -129,7 +139,9 @@ The area between the main content of a page and the page edges can be changed by
 <syncfusion:SfDiagram x:Name="diagram">
   <!--Initialize the page settings and print margin property-->
   <syncfusion:SfDiagram.PageSettings>
-    <syncfusion:PageSettings PrintMargin="40" PageWidth="300" PageHeight="300" ShowPageBreaks="True" />
+    <syncfusion:PageSettings PrintMargin="40" 
+                             PageWidth="300" PageHeight="300" 
+                             ShowPageBreaks="True" />
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
@@ -195,7 +207,11 @@ The `PrintScale` property of `PageSettings` class allows you to reduce or enlarg
 <syncfusion:SfDiagram x:Name="diagram">
   <!--Initialize the page settings -->
   <syncfusion:SfDiagram.PageSettings>
-    <syncfusion:PageSettings PrintMargin="40" PageWidth="300" PageHeight="300" ShowPageBreaks="True" MultiplePage="True" PrintScale="3" />
+    <syncfusion:PageSettings PrintMargin="40" 
+                             PageWidth="300" PageHeight="300" 
+                             ShowPageBreaks="True" 
+                             MultiplePage="True" 
+                             PrintScale="3" />
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
@@ -225,7 +241,12 @@ You can restrict the diagram page scaling to minimum and maximum values by using
 <syncfusion:SfDiagram x:Name="diagram">
   <!--Initialize the page settings -->
   <syncfusion:SfDiagram.PageSettings>
-    <syncfusion:PageSettings PrintMargin="40" PageWidth="300" PageHeight="300" ShowPageBreaks="True" MultiplePage="True" MinimumPrintScale="2" MaximumPrintScale="4"/>
+    <syncfusion:PageSettings PrintMargin="40" 
+                             PageWidth="300" PageHeight="300" 
+                             ShowPageBreaks="True" 
+                             MultiplePage="True" 
+                             MinimumPrintScale="2" 
+                             MaximumPrintScale="4"/>
   </syncfusion:SfDiagram.PageSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}

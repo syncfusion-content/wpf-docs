@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable/Disable the optional features.
-description: How to enable/disable the optional features?
+title: Enable/Disable the optional features | Syncfusion.
+description: How to enable or disable the optional features, behaviours of diagram and how to enable single or multiple feature at a time?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -60,7 +60,7 @@ NodeViewModel node = new NodeViewModel()
   OffsetX = 100,
   OffsetY = 100,  
 };
- //Add NodeViewModel to Nodes Collection
+//Add NodeViewModel to Nodes Collection
 (diagram.Nodes as ObservableCollection<NodeViewModel>).Add(node);
 
 {% endhighlight %}
@@ -108,11 +108,12 @@ The following code example illustrates how to disable creating connections with 
 
 //Create NodePortViewModel (Shape and ShapeStyle Applied from "Data-Binding")
 NodePortViewModel port=	new NodePortViewModel()
-	{
-      UnitWidth= 10,
-	    UnitHeight= 10,
-			Constraints = PortConstraints.Default & ~PortConstraints.Connectable
-	};
+{
+  UnitWidth= 10,
+	UnitHeight= 10,
+	Constraints = PortConstraints.Default & 
+    ~PortConstraints.Connectable
+};
 
 {% endhighlight %}
 {% endtabs %}
@@ -133,11 +134,11 @@ The following code example illustrates how to enable annotation dragging.
 
 //Create a AnnotationEditorViewModel (Style Applied from "Data-Binding")
 AnnotationEditorViewModel anno = new AnnotationEditorViewModel()
-  {
-      Content="Annotation",
-      //Assign Constraint to Select and Drag
-      Constraints=AnnotationConstraints.Selectable|AnnotationConstraints.Draggable,
-  };
+{
+    Content="Annotation",
+    //Assign Constraint to Select and Drag
+    Constraints=AnnotationConstraints.Selectable|AnnotationConstraints.Draggable,
+};
 
 {% endhighlight %}
 {% endtabs %} 

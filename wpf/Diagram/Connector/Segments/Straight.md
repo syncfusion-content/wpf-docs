@@ -93,10 +93,10 @@ ConnectorViewModel connector = new ConnectorViewModel()
     Segments = new ObservableCollection<IConnectorSegment>()
     {
         new StraightSegment()
-            {
-                //Specify the point to split the segment
-                Point = new Point(170,140),
-            },
+        {
+            //Specify the point to split the segment
+            Point = new Point(170,140),
+        },
     }
 };
 

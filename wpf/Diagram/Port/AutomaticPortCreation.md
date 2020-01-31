@@ -15,8 +15,9 @@ Diagram provides an option to create a port dynamically by clicking and dragging
 {% highlight xaml %}
 
 <!--Enables AutomaticPortCreation of SfDiagram to create port at runtime while making connections.-->
-<Syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible" Tool="ContinuesDraw" DrawingTool="Connector" Constraints="Default,AutomaticPortCreation">           
-</Syncfusion:SfDiagram>
+<syncfusion:SfDiagram x:Name="diagram" PortVisibility="Visible" 
+                      Tool="ContinuesDraw" DrawingTool="Connector" 
+                      Constraints="Default,AutomaticPortCreation"/>
 
 {% endhighlight %}
 
@@ -27,7 +28,6 @@ diagram.Tool = Tool.ContinuesDraw;
 diagram.DrawingTool = DrawingTool.Connector;
 //Enables AutomaticPortCreation of SfDiagram to create port at runtime while making connections.
 diagram.Constraints |= GraphConstraints.AutomaticPortCreation;
-
 
 {% endhighlight %}
 {% endtabs %}

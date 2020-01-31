@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualize graphical object using Nodes | Syncfusion
-description: How to visually represent the geometrical information and process flows as nodes?
+description: How to visually represent the geometrical information and process flows as nodes and how to customize their appearance?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -26,7 +26,7 @@ To create a node, you have to define the node object and add that to nodes colle
 
 <!--Resource Dictionary which contains predefined shapes for Node-->
 <ResourceDictionary.MergedDictionaries>
-   <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
+  <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>
 </ResourceDictionary.MergedDictionaries>
 
 <!--Shape style for Node-->
@@ -42,8 +42,10 @@ To create a node, you have to define the node object and add that to nodes colle
     <!--Initialize the NodeCollection-->
     <syncfusion:NodeCollection>
       <!--Initialize the Node-->
-      <syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" ShapeStyle="{StaticResource ShapeStyle}" 
-                                UnitHeight="40" UnitWidth="120"/>      
+      <syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" 
+                                Shape="{StaticResource Ellipse}" 
+                                ShapeStyle="{StaticResource ShapeStyle}" 
+                                UnitHeight="40" UnitWidth="120"/>
       </syncfusion:NodeCollection>
   </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
@@ -61,15 +63,15 @@ diagram.Connectors = new ConnectorCollection();
 //Creating the NodeViewModel
 NodeViewModel Begin = new NodeViewModel()
 {
-    ID = "Begin",
-    UnitWidth = 120,
-    UnitHeight = 40,
-    OffsetX = 300,
-    OffsetY = 60,
-    //Specify shape to the Node from built-in Shape Dictionary
-    Shape = this.Resources["Ellipse"],
-    //Apply style to Shape
-    ShapeStyle = this.Resources["ShapeStyle"] as Style,
+  ID = "Begin",
+  UnitWidth = 120,
+  UnitHeight = 40,
+  OffsetX = 300,
+  OffsetY = 60,
+  //Specify shape to the Node from built-in Shape Dictionary
+  Shape = App.Current.Resources["Ellipse"],
+  //Apply style to Shape
+  ShapeStyle = App.Current.Resources["ShapeStyle"] as Style,
 };
 
 //Add Node to Nodes property of the Diagram
@@ -112,14 +114,15 @@ Node is a ContentControl, so you can use data template to display the content of
 {% highlight xaml %}
 
 <DataTemplate x:Key="NodeTemplate">
-    <Border BorderThickness="2" BorderBrush="Black">
-        <TextBlock Text="NodeTemplate" Width="100" Height="100" Background="White"/>
-    </Border>
+  <Border BorderThickness="2" BorderBrush="Black">
+      <TextBlock Text="NodeTemplate" Width="100" Height="100" Background="White"/>
+  </Border>
 </DataTemplate>
 
 <!--Initialize the Node-->
-<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100" ContentTemplate="{StaticResource NodeTemplate}"/>      
-
+<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
+                          OffsetX="100" OffsetY="100" 
+                          ContentTemplate="{StaticResource NodeTemplate}"/>  
 
 {% endhighlight %}
 
@@ -128,13 +131,13 @@ Node is a ContentControl, so you can use data template to display the content of
 //Define the Node
 NodeViewModel node = new NodeViewModel()
 {
-    //sets the size
-    UnitHeight = 100,
-    UnitWidth = 100,
-    //sets the position
-    OffsetX = 100,
-    OffsetY = 100,    
-    ContentTemplate = this.Resources["NodeTemplate"] as DataTemplate 
+  //sets the size
+  UnitHeight = 100,
+  UnitWidth = 100,
+  //sets the position
+  OffsetX = 100,
+  OffsetY = 100,    
+  ContentTemplate = App.Current.Resources["NodeTemplate"] as DataTemplate
 };
 //Adding Node to Collection
 (diagram.Nodes as NodeCollection).Add(node);
@@ -148,27 +151,28 @@ Node is a ContentControl, so you can set text, image, or any UIElement as node c
 
 {% tabs %}
 {% highlight xaml %}
-      <!--Initialize the Node-->
-      <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" OffsetX="100" OffsetY="100">
-       <!--Assigning user image as Node's Content-->
-       <syncfusion:NodeViewModel.Content>         
-            <Image Source="/Image/user_image.png" Height="100" Width="100"/>         
-       </syncfusion:NodeViewModel.Content>
-      </syncfusion:NodeViewModel>
+<!--Initialize the Node-->
+<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100"
+                          OffsetX="100" OffsetY="100">
+  <!--Assigning user image as Node's Content-->
+  <syncfusion:NodeViewModel.Content>         
+    <Image Source="/Image/user_image.png" Height="100" Width="100"/> 
+  </syncfusion:NodeViewModel.Content>
+</syncfusion:NodeViewModel>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
- Image img = new Image();
- BitmapImage bmp = new BitmapImage();
- bmp.BeginInit();
- bmp.UriSource = new Uri("Image/user_image.png", UriKind.Relative);
- bmp.EndInit();
- img.Stretch = Stretch.Fill;
- img.Source = bmp;
- img.Height = 100;
- img.Width = 100;  
+Image img = new Image();
+BitmapImage bmp = new BitmapImage();
+bmp.BeginInit();
+bmp.UriSource = new Uri("Image/user_image.png", UriKind.Relative);
+bmp.EndInit();
+img.Stretch = Stretch.Fill;
+img.Source = bmp;
+img.Height = 100;
+img.Width = 100;  
 
 //Define the Node
 NodeViewModel node = new NodeViewModel()
@@ -199,23 +203,21 @@ The Shape property of node class allows you to visualize any geometry path as no
   <Setter Property="ShapeStyle">
     <Setter.Value>
       <Style TargetType="Path">
-         <Setter Property="Fill" Value="#FF5B9BD5"/>
-         <Setter Property="Stretch" Value="Fill"/>
-         <Setter Property="Stroke" Value="#FFEDF1F6 "/>
+        <Setter Property="Fill" Value="#FF5B9BD5"/>
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Stroke" Value="#FFEDF1F6 "/>
       </Style>
     </Setter.Value>
   </Setter>
 </Style>
 
 <!--Initialize the Node-->
-  <syncfusion:NodeViewModel UnitWidth="100"
-                                  UnitHeight="100" 
-                                  OffsetX="100" 
-                                  OffsetY="100">
-              <syncfusion:NodeViewModel.Shape>
-                  <RectangleGeometry Rect="100,100,100,100"/>
-              </syncfusion:NodeViewModel.Shape>
-      </syncfusion:NodeViewModel>
+<syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" 
+                          OffsetX="100" OffsetY="100">
+  <syncfusion:NodeViewModel.Shape>
+    <RectangleGeometry Rect="100,100,100,100"/>
+  </syncfusion:NodeViewModel.Shape>
+</syncfusion:NodeViewModel>
    
 {% endhighlight %}
 
@@ -248,7 +250,7 @@ Refer to the following code example to define custom path as node's shape.
 xmlns:sys="clr-namespace:System;assembly=mscorlib"
 
 <sys:String x:Key="Rectangle">
-            M242,1078L231,1078L231,1067L242,1067z
+  M242,1078L231,1078L231,1067L242,1067z
 </sys:String>
 
 <!--Initialize the Sfdiagram-->
@@ -257,9 +259,11 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib"
     <!--Initialize the NodeCollection-->
     <syncfusion:NodeCollection>
       <!--Initialize the Node-->
-          <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="100" OffsetY="100"  Shape="{StaticResource Rectangle}" 
-                                    ShapeStyle="{StaticResource ShapeStyle}"/>            
-   </syncfusion:NodeCollection>
+      <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" 
+                                OffsetX="100" OffsetY="100" 
+                                Shape="{StaticResource Rectangle}" 
+                                ShapeStyle="{StaticResource ShapeStyle}"/>
+    </syncfusion:NodeCollection>
   </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>  
 
@@ -276,10 +280,9 @@ NodeViewModel node = new NodeViewModel()
     //sets the position
     OffsetX = 100,
     OffsetY = 100,
-    Shape=this.Resources["Rectangle"] as Style,
+    Shape= App.Current.Resources["Rectangle"] as Style,
     //Apply style to Shape
-    ShapeStyle = this.Resources["ShapeStyle"] as Style,
-
+    ShapeStyle = App.Current.Resources["ShapeStyle"] as Style,
 };
 //Adding Node to Collection
 (diagram.Nodes as NodeCollection).Add(node);
@@ -287,8 +290,8 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-
 ### Built-in resource
+
 Some basic built-in shapes are provided as ResourceDictionary. For more information, refer to [Shapes](/wpf/sfdiagram/shapes). 
 
 ## Position
@@ -306,8 +309,10 @@ The following table explains how pivot relates Offset values with node boundarie
 {% tabs %}
 {% highlight xaml %}
 
- <!--Initialize the Node with Pivot-->
-   <syncfusion:NodeViewModel UnitHeight="65" UnitWidth="100" OffsetX="100" OffsetY="100" Pivot="0,0" Shape="{StaticResource Rectangle}"/>
+<!--Initialize the Node with Pivot-->
+<syncfusion:NodeViewModel UnitHeight="65" UnitWidth="100" 
+                          OffsetX="100" OffsetY="100" Pivot="0,0" 
+                          Shape="{StaticResource Rectangle}"/>
         
 {% endhighlight %}
 
@@ -348,9 +353,12 @@ The flip types are:
 {% tabs %}
 {% highlight xaml %}
 
- <!--Initialize Vertical Flip to the Node-->
-  <Syncfusion:NodeViewModel Flip="VerticalFlip" UnitHeight="100" UnitWidth="100" OffsetX="200" OffsetY="100" 
-                                              Shape="{StaticResource Triangle}" ShapeStyle="{StaticResource ShapeStyle}"/>
+<!--Initialize Vertical Flip to the Node-->
+<syncfusion:NodeViewModel Flip="VerticalFlip" 
+                          UnitHeight="100" UnitWidth="100" 
+                          OffsetX="200" OffsetY="100" 
+                          Shape="{StaticResource Triangle}" 
+                          ShapeStyle="{StaticResource ShapeStyle}"/>
         
 {% endhighlight %}
 
@@ -365,8 +373,8 @@ The flip types are:
     OffsetY=100,
     //Initialize Vertical Flip to the Node
     Flip = Flip.VerticalFlip,
-    Shape = this.Resources["Triangle"],
-    ShapeStyle = this.Resources["ShapeStyle"] as Style,
+    Shape = App.Current.Resources["Triangle"],
+    ShapeStyle = App.Current.Resources["ShapeStyle"] as Style,
   };
             
 //Adding Node to Collection
@@ -384,21 +392,26 @@ Padding is used to leave space between the connector’s end point and the objec
 {% tabs %}
 {% highlight xaml %}
 
-<Syncfusion:SfDiagram.Nodes>
- <Syncfusion:NodeCollection>
-  <!--Initialize connector padding to the Node-->
-  <Syncfusion:NodeViewModel ID="node1" ConnectorPadding="5" UnitHeight="65" UnitWidth="100" OffsetX="200" OffsetY="200"                                                  Shape="{StaticResource Rectangle}" ShapeStyle="{StaticResource ShapeStyle}"/>
-
-  <Syncfusion:NodeViewModel ID="node2" UnitHeight="65" UnitWidth="100" OffsetX="400" OffsetY="200" Shape="{StaticResource Rectangle}"                                    ShapeStyle="{StaticResource ShapeStyle}"/>
-                 
- </Syncfusion:NodeCollection>
-</Syncfusion:SfDiagram.Nodes>
-<Syncfusion:SfDiagram.Connectors>
-  <Syncfusion:ConnectorCollection>
-   <!--Establish connection between the nodes-->
-   <Syncfusion:ConnectorViewModel SourceNodeID="node1" TargetNodeID="node2"/>
-  </Syncfusion:ConnectorCollection>
-</Syncfusion:SfDiagram.Connectors>
+<syncfusion:SfDiagram.Nodes>
+  <syncfusion:NodeCollection>
+    <!--Initialize connector padding to the Node-->
+    <syncfusion:NodeViewModel ID="node1" ConnectorPadding="5" 
+                              UnitHeight="65" UnitWidth="100" 
+                              OffsetX="200" OffsetY="200" 
+                              Shape="{StaticResource Rectangle}" 
+                              ShapeStyle="{StaticResource ShapeStyle}"/>
+    <syncfusion:NodeViewModel ID="node2" UnitHeight="65" UnitWidth="100" 
+                              OffsetX="400" OffsetY="200" 
+                              Shape="{StaticResource Rectangle}" 
+                              ShapeStyle="{StaticResource ShapeStyle}"/>
+  </syncfusion:NodeCollection>
+</syncfusion:SfDiagram.Nodes>
+<syncfusion:SfDiagram.Connectors>
+  <syncfusion:ConnectorCollection>
+    <!--Establish connection between the nodes-->
+    <syncfusion:ConnectorViewModel SourceNodeID="node1" TargetNodeID="node2"/>
+  </syncfusion:ConnectorCollection>
+</syncfusion:SfDiagram.Connectors>
 
 {% endhighlight %}
 
@@ -447,13 +460,13 @@ You can customize the appearance of a node by changing its `ShapeStyle`. The fol
 
 {% highlight xaml %}
 
-    <Style TargetType="Path" x:key="shapestyle">
-        <Setter Property="Fill" Value="#FF41719C"/>
-        <Setter Property="Stretch" Value="Fill"/>
-        <Setter Property="Stroke" Value="#FFEDF1F6"/>
-        <Setter Property="StrokeDashArray" Value="4,5"/>
-         <Setter Property="StrokeThickness" Value="2"/>
-      </Style>
+<Style TargetType="Path" x:key="shapestyle">
+  <Setter Property="Fill" Value="#FF41719C"/>
+  <Setter Property="Stretch" Value="Fill"/>
+  <Setter Property="Stroke" Value="#FFEDF1F6"/>
+  <Setter Property="StrokeDashArray" Value="4,5"/>
+  <Setter Property="StrokeThickness" Value="2"/>
+</Style>
 
 {% endhighlight %}
 
@@ -525,6 +538,7 @@ To explore about selection and selection related events, refer to [Selection](/w
 ![Rotate Node](Node_images/Rotate.gif)
 
 ## Events
+
 * `ItemTappedEvent` is invoked on clicking the node. To explore about arguments, refer to [ItemTappedEventargs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
 * `ItemDoubleTappedEvent` is invoked on double-clicking the node. To explore about arguments, refer to [ItemDoubleTappedEventargs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
 * `MouseDown` and `MouseUp` are invoked as similar to framework element, which is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, refer to [MouseDownEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and

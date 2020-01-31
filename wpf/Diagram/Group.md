@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group two or more relevant objects.
-description: How to group two or more nodes and connectors?
+title: Group two or more relevant objects | Syncfusion.
+description: How to group two or more nodes and connectors and how to change their size easily using group functionality?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -27,7 +27,7 @@ NodeViewModel node = new NodeViewModel()
 	OffsetX = 100,
 	OffsetY = 100,
 	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+	ShapeStyle = App.Current.Resources["shapestyle"] as Style
 };
 NodeViewModel node1 = new NodeViewModel()
 {
@@ -36,7 +36,7 @@ NodeViewModel node1 = new NodeViewModel()
 	OffsetX = 200,
 	OffsetY = 200,
 	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+	ShapeStyle = App.Current.Resources["shapestyle"] as Style
 };
 
 ObservableCollection<GroupViewModel> groups = new ObservableCollection<GroupViewModel>();
