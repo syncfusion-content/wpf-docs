@@ -9,17 +9,16 @@ documentation: ug
 
 # Appearance in WPF PropertyGrid
 
-This section explains about the appearance of [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control
+This section explains the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control background, foreground, font weight and theme customization.
 
 ## Setting the Foreground
 
-The User can change the foreground color for properties of `PropertyGrid's` [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) by setting the `Foreground` property. The default color value of `Foreground` property is `Blue`.
+The User can change the foreground color for properties of `PropertyGrid.`[SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) by setting the `Foreground` property. The default color value of `Foreground` property is `Blue`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
-                         Foreground="Red">
+<syncfusion:PropertyGrid Foreground="Red" x:Name="propertyGrid">
             <syncfusion:PropertyGrid.SelectedObject>
                 <Button></Button>
             </syncfusion:PropertyGrid.SelectedObject>
@@ -29,8 +28,6 @@ The User can change the foreground color for properties of `PropertyGrid's` [Sel
 {% highlight C# %}
 
 PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.Width = 350;
-propertyGrid.Height = 400;
 propertyGrid.SelectedObject = new Button();
 propertyGrid.Foreground = Brushes.Red;
 
@@ -39,23 +36,14 @@ propertyGrid.Foreground = Brushes.Red;
 
 ![PropertyGrid with Red foreground](Appearance_images/Appearance_Foreground.png)
 
-## Setting the Background
+## Setting the Background and FontWeight
 
-The Users can change the background color for the properties of `PropertyGrid's` `SelectedObject` in the following ways.
-
-    1.ViewBackgroundColor
-    2.EditableBackground
-    3.ReadOnlyBackground
-    
-### 1.ViewBackgroundColor
-
- You can change the background color for the properties by setting the [ViewBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ViewBackgroundColor.html) property.
+The users can change the background and font weight for all the properties by using the [ViewBackgroundColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ViewBackgroundColor.html) and `FontWeight` properties.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
-                         ViewBackgroundColor="Cyan">
+<syncfusion:PropertyGrid ViewBackgroundColor="Cyan" FontWeight="Bold" x:Name="propertyGrid">
             <syncfusion:PropertyGrid.SelectedObject>
                 <Button></Button>
             </syncfusion:PropertyGrid.SelectedObject>
@@ -65,77 +53,49 @@ The Users can change the background color for the properties of `PropertyGrid's`
 {% highlight C# %}
 
 PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.Width = 350;
-propertyGrid.Height = 400;
 propertyGrid.SelectedObject = new Button();
 propertyGrid.ViewBackgroundColor = Brushes.Cyan;
-
+propertyGrid.FontWeight = FontWeights.Bold;
 {% endhighlight %}
 {% endtabs %}
 
-![PropertyGrid with Cyan background](Appearance_images/Appearance_Background.png)
+![PropertyGrid with Cyan background and bold font](Appearance_images/Appearance_Background-Font.png)
 
-### 2.EditableBackground
+### Background and FontWeight for the Editable and Readonly Properties
 
-You can change the background color for the editable properties by setting the [EditableBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EditableBackground.html) property.
+If the user want to differentiate between editable and non-editable properties, you can do this by using [EditableBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EditableBackground.html) and [EditableFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EditableFontWeight.html) properties to highlight editable properties and use the [ReadOnlyBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ReadOnlyBackground.html) and [ReadOnlyFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ReadOnlyFontWeight.html) properties to highlight non-editable properties.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
-                         EditableBackground="Green">
-            <syncfusion:PropertyGrid.SelectedObject>
-                <Button></Button>
-            </syncfusion:PropertyGrid.SelectedObject>
+<syncfusion:PropertyGrid EditableBackground="LightGreen" EditableFontWeight="Bold"
+                         ReadOnlyBackground="LightPink"  ReadOnlyFontWeight="UltraLight"
+                         SelectedObject="{Binding Items}" x:Name="propertyGrid">
 </syncfusion:PropertyGrid>
 
 {% endhighlight %}
 {% highlight C# %}
 
 PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.Width = 350;
-propertyGrid.Height = 400;
-propertyGrid.SelectedObject = new Button();
-propertyGrid.EditableBackground = Brushes.Green;
+propertyGrid.EditableBackground = Brushes.LightGreen;
+propertyGrid.EditableFontWeight = FontWeights.Bold;
+propertyGrid.ReadOnlyBackground = Brushes.LightPink;
+propertyGrid.ReadOnlyFontWeight = FontWeights.UltraLight;
+ViewModel viewModel= new ViewModel();
+propertyGrid.SelectedObject = viewModel.Items;
 
 {% endhighlight %}
 {% endtabs %}
 
-![PropertyGrid editable properties with green background](Appearance_images/Appearance_EditableBackground.png)
+![Different Background and FontWeight applyed to the Editable and Readonly Properties](Appearance_images/Appearance_CustomBackground.png)
 
-### 3.ReadOnlyBackground
+N> If you use `EditableBackground` or `ReadOnlyBackground` properties with `ViewBackgroundColor` property, `EditableBackground` and `ReadOnlyBackground` properties have higher priority.
 
-You can change the background color for the readonly properties by setting the [ReadOnlyBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ReadOnlyBackground.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
-                         ReadOnlyBackground="Red">
-            <syncfusion:PropertyGrid.SelectedObject>
-                <Button></Button>
-            </syncfusion:PropertyGrid.SelectedObject>
-</syncfusion:PropertyGrid>
-
-{% endhighlight %}
-{% highlight C# %}
-
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.Width = 350;
-propertyGrid.Height = 400;
-propertyGrid.SelectedObject = new Button();
-propertyGrid.ReadOnlyBackground = Brushes.Red;
-
-{% endhighlight %}
-{% endtabs %}
-
-![PropertyGrid readonly properties with red background](Appearance_images/Appearance_ReadOnlyBackground.png)
-
-N> If you use `EditableBackground` or `ReadOnlyBackground` properties with `ViewBackgroundColor`, `EditableBackground` and `ReadOnlyBackground` properties have higher priority.
+N> If you use `EditableFontWeight` or `ReadOnlyFontWeight` properties with `FontWeight` property, `EditableFontWeight` and `ReadOnlyFontWeight` properties have higher priority.
 
 ## Group Header's foreground and background
 
-You can change the foreground and background of the `Category Header` by setting the [LineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~LineColor.html) property and [CategoryForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CategoryForeground.html) property. The `LineColor` value applied to the foreground and `CategoryForeground` value applied to the background of the `Category Header` only on grouping state and when [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property is `true`.
+The user can change the background and foreground of the `Category Header` by setting the [LineColor](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~LineColor.html) property and [CategoryForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CategoryForeground.html) property. The `LineColor` value applied to the background and `CategoryForeground` value applied to the foreground of the `Category Header` only on grouping state. To enable grouping state, use the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property as `true`.
 
 
 {% tabs %}
@@ -163,103 +123,9 @@ propertyGrid.CategoryForeground = Brushes.Red;
 
 ![PropertyGrid with group header Red foreground and Cyan background](Appearance_images/Appearance_Groupheader.png)
 
-## Setting the FontWeight
-
-The Users can change the font weight for the properties of `PropertyGrid's` `SelectedObject` in the following ways.
-
-    1.FontWeight
-    2.EditableFontWeight
-    3.ReadOnlyFontWeight
-    
-### 1.FontWeight
-
- You can change the font weight for the properties by setting the `FontWeight` property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
-                         FontWeight="Bold">
-            <syncfusion:PropertyGrid.SelectedObject>
-                <Button></Button>
-            </syncfusion:PropertyGrid.SelectedObject>
-</syncfusion:PropertyGrid>
-
-{% endhighlight %}
-{% highlight C# %}
-
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.Width = 350;
-propertyGrid.Height = 400;
-propertyGrid.SelectedObject = new Button();
-propertyGrid.FontWeight = FontWeights.Bold;
-
-{% endhighlight %}
-{% endtabs %}
-
-![PropertyGrid with bold fontweight](Appearance_images/Appearance_BoldFontWeight.png)
-
-### 2.EditableFontWeight
-
-You can change the font weight for the editable properties by setting the [EditableFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EditableFontWeight.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
-                         EditableFontWeight="Bold">
-            <syncfusion:PropertyGrid.SelectedObject>
-                <Button></Button>
-            </syncfusion:PropertyGrid.SelectedObject>
-</syncfusion:PropertyGrid>
-
-{% endhighlight %}
-{% highlight C# %}
-
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.Width = 350;
-propertyGrid.Height = 400;
-propertyGrid.SelectedObject = new Button();
-propertyGrid.EditableFontWeight = FontWeights.Bold;
-
-{% endhighlight %}
-{% endtabs %}
-
-![PropertyGrid editable properties with bold font weight](Appearance_images/Appearance_EditableFontWeight.png)
-
-### 3.ReadOnlyFontWeight
-
-You can change the font weight for the readonly properties by setting the [ReadOnlyFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ReadOnlyFontWeight.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" Height="400"
-                         ReadOnlyFontWeight="Bold">
-            <syncfusion:PropertyGrid.SelectedObject>
-                <Button></Button>
-            </syncfusion:PropertyGrid.SelectedObject>
-</syncfusion:PropertyGrid>
-
-{% endhighlight %}
-{% highlight C# %}
-
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.Width = 350;
-propertyGrid.Height = 400;
-propertyGrid.SelectedObject = new Button();
-propertyGrid.ReadOnlyFontWeight = FontWeights.Bold;
-
-{% endhighlight %}
-{% endtabs %}
-
-![PropertyGrid readonly properties with bold font weight](Appearance_images/Appearance_ReadOnlyFontWeight.png)
-
-N> If you use `EditableFontWeight` or `ReadOnlyFontWeight` properties with `FontWeight`, `EditableFontWeight` and `ReadOnlyFontWeight` properties have higher priority.
-
 ## Setting ToolTip
 
-ToolTips are used to show the information about the segment, when you mouse over on the segment. You can show or hide the tooltip for the properties in the `PropertyGrid` by handling [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) Property. The default value of `EnableToolTip` property is `true`.
+ToolTip is used to show the information about the segment, when you mouse over on the segment. By default, the tooltip is shown in the `PropertyGrid`. You can hide the tooltip for the properties by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) Property as `false`. The default value of `EnableToolTip` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -308,25 +174,26 @@ The appearance of the `PropertyGrid` control can be customized by using the [SfS
 * VisualStudio2013
 * VisualStudio2015
 
-For example, the `Blend` style applied to the `PropertyGrid` as shown in the following example code:
+Here, the `Blend` style is applied to the `PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
 
-// Namespace for the SfSkinManager.
-
-using Syncfusion.SfSkinManager;
+<syncfusion:PropertyGrid syncfusionskin:SfSkinManager.VisualStyle="Blend" x:Name="propertyGrid" >
+    <syncfusion:PropertyGrid.SelectedObject>
+        <Button></Button>
+    </syncfusion:PropertyGrid.SelectedObject>
+</syncfusion:PropertyGrid>
 
 {% endhighlight %}
 {% endtabs %}
 
-
 {% tabs %}
 {% highlight C# %}
+// Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
 
 PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.Width = 350;
-propertyGrid.Height = 400;
 propertyGrid.SelectedObject = new Button();
 SfSkinManager.SetVisualStyle(propertyGrid, VisualStyles.Blend);
 
