@@ -13,9 +13,9 @@ The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) cont
 
 ## Adding CategoryEditor to PropertyGrid
 
-If user want to display some related properties under the specific Category, you can do it by the `CategoryEditor`. You can add any number of `CategoryEditors`. You must add property names in the `CategoryEditor.Properties` collection which are need to be categorized in the same category. Using the `CategoryEditor.EditorTemplate`, you can create the own template for the categorized properties with value editors. The properties and its value editor can be placed in the `PropertygGrid` as you wish. To display the `CategoryEditor`, you need the enable the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property as `true`.    
+If user want to display some related properties under the specific Category, you can do it by the `CategoryEditor`. You can add any number of `CategoryEditors`. You must add property names in the `CategoryEditor.Properties` collection which are need to be categorized in the same category. Using the `CategoryEditor.EditorTemplate`, you can create the own template for the categorized properties with value editors. The properties and its value editor can be placed in the `PropertyGrid` as you wish. To display the `CategoryEditor`, you need the enable the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property as `true`.    
 
-a) `ColorEdit` control visibility converter for the CategoryEditor template
+a) `ColorEdit` control visibility converter
 
 {% tabs %}
 {% highlight C# %}
