@@ -52,3 +52,4 @@ Here, The `PropertyGrid.SelectedObject` property is binded with the `SelectedEmp
 
 ![Binding with any objects using wpf property grid](Binding-with-any-object_images/Binding-with-any-object_img1.png)
 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-BindingObject) to download the sample that showcases the object binding support. 

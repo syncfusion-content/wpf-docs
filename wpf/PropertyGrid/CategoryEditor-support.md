@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CategoryEditor for the Properties in WPF PropertyGrid control | Syncfusion
+title: CategoryEditor support in WPF PropertyGrid control | Syncfusion
 description: The PropertyGrid control supports several built-in editors, to give a good look and feel for the application using CustomEditors or CategoryEditors.
 platform: wpf
 control: PropertyGrid 
@@ -9,11 +9,11 @@ documentation: ug
 
 # CategoryEditor Support in WPF PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors, to give a good look and feel for the application, use `CustomEditors` or `CategoryEditors`. `CategoryEditor` support enables you to set related properties (one or more properties) under single or multiple Category based on the need. `CategoryEditor` can be applied for `Grouping`. While sorting, default editors will be displayed.
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors, to give a good look and feel for the application, use `CustomEditors` or `CategoryEditors`. `CategoryEditor` support enables you to set related properties (one or more properties) under single or multiple category based on the need. `CategoryEditor` can be applied for `Grouping`. While sorting, default editors will be displayed.
 
 ## Adding CategoryEditor to PropertyGrid
 
-If user want to display some related properties under the specific Category, you can do it by the `CategoryEditor`. You can add any number of `CategoryEditors`. You must add property names in the `CategoryEditor.Properties` collection which are need to be categorized in the same category. Using the `CategoryEditor.EditorTemplate`, you can create the own template for the Categorized properties. To display the `CategoryEditor`, you need the enable the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property as `true`.    
+If user want to display some related properties under the specific Category, you can do it by the `CategoryEditor`. You can add any number of `CategoryEditors`. You must add property names in the `CategoryEditor.Properties` collection which are need to be categorized in the same category. Using the `CategoryEditor.EditorTemplate`, you can create the own template for the categorized properties with value editors. The properties and its value editor can be placed in the `PropertygGrid` as you wish. To display the `CategoryEditor`, you need the enable the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property as `true`.    
 
 a) `ColorEdit` control visibility converter for the CategoryEditor template
 
@@ -66,7 +66,7 @@ public class SelectedIndexToVisibility : IValueConverter
 
 <Window.Resources>
         <local:SelectedIndexToVisibility x:Key="VisConv"/>
-    </Window.Resources>
+</Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -123,6 +123,8 @@ public class SelectedIndexToVisibility : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-Here, the `Background`, `Foreground` and `BorderBrush` properties are categorized under the `A-Brushes` category with `ColorEdit` as value editor by the `CategoryEditor`. Before using the `CategoryEditor`, `Background`, `Foreground` and `BorderBrush` properties are categorized under the `Appearance` category.
+Here, the `Background`, `Foreground` and `BorderBrush` are brush type properties. So, they categorized under the `A-Brushes` category with `ColorEdit` control as value editor. By Default, the properties are arranged like the key-value pairs with unique value editor. Using the `CategoryEditor`, single `ColorEdit` control is act as value editor for the `Background`, `Foreground` and `BorderBrush` properties.
 
 ![PropertyGrid with CategoryEditor](CategoryEditor-support_images/CategoryEditor-support_img1.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-CategoryEditor) to download the sample that showcases the `CategoryEditor` support. 
