@@ -68,9 +68,35 @@ If the user want to differentiate between editable and non-editable properties, 
 {% tabs %}
 {% highlight xaml %}
 
+//Model.cs
+class Employee {
+    public string EmployeeName { get; set; }
+    [Editable(false)]
+    public int EmployeeID { get; set; }     
+    public int Age { get; set; }
+    [ReadOnly(true)]
+    public DateTime DOB { get; set; }
+}
+
+//ViewModel.cs
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee() { EmployeeName = "John", DOB = new DateTime(1995, 01, 08), Age=25, EmployeeID = 036 };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+<Window.DataContext>
+    <local:ViewModel></local:ViewModel>
+</Window.DataContext>
 <syncfusion:PropertyGrid EditableBackground="LightGreen" EditableFontWeight="Bold"
                          ReadOnlyBackground="LightPink"  ReadOnlyFontWeight="UltraLight"
-                         SelectedObject="{Binding Items}" x:Name="propertyGrid">
+                         SelectedObject="{Binding SelectedEmployee}" x:Name="propertyGrid">
 </syncfusion:PropertyGrid>
 
 {% endhighlight %}
@@ -82,7 +108,7 @@ propertyGrid.EditableFontWeight = FontWeights.Bold;
 propertyGrid.ReadOnlyBackground = Brushes.LightPink;
 propertyGrid.ReadOnlyFontWeight = FontWeights.UltraLight;
 ViewModel viewModel= new ViewModel();
-propertyGrid.SelectedObject = viewModel.Items;
+propertyGrid.SelectedObject = viewModel.SelectedEmployee;
 
 {% endhighlight %}
 {% endtabs %}
@@ -122,6 +148,8 @@ propertyGrid.CategoryForeground = Brushes.Red;
 {% endtabs %}
 
 ![PropertyGrid with group header Red foreground and Cyan background](Appearance_images/Appearance_Groupheader.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Apperance) to download the sample that showcases the background and foreground support. 
 
 ## Setting ToolTip
 
@@ -190,6 +218,7 @@ Here, the `Blend` style is applied to the `PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
+
 // Namespace for the SfSkinManager.
 using Syncfusion.SfSkinManager;
 
@@ -201,3 +230,5 @@ SfSkinManager.SetVisualStyle(propertyGrid, VisualStyles.Blend);
 {% endtabs %}
 
 ![PropertyGrid with Blend visual style](Appearance_images/Appearance_BlendTheme.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Themes) to download the sample that showcases the different theme support. 
