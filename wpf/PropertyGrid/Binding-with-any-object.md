@@ -13,7 +13,7 @@ This section describes how the `DotNet` object can be used to bind and display t
 
 ## Binding with any DotNet Object
 
-The User can display the properties of any dotnet object using the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) property. When the `SelectedObject` property is binded with an object, the properties of that object are parsed and displayed in the `PropertyGrid`.
+The User can display the properties of any `DotNet` object using the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) property. When the `SelectedObject` property is binded with an object, the properties of that object are parsed and displayed in the `PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
