@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Dealing with Ribbon
+# Dealing with WPF Ribbon 
 
 Ribbon can be changed into three different states such as `Normal`, `Hide` and `Adorner`
 
