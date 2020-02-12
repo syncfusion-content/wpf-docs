@@ -149,8 +149,6 @@ propertyGrid.CategoryForeground = Brushes.Red;
 
 ![PropertyGrid with group header Red foreground and Cyan background](Appearance_images/Appearance_Groupheader.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Apperance) to download the sample that showcases the background and foreground support. 
-
 ## Setting ToolTip
 
 ToolTip is used to show the information about the segment, when you mouse over on the segment. By default, the tooltip is shown in the `PropertyGrid`. You can hide the tooltip for the properties by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) Property as `false`. The default value of `EnableToolTip` property is `true`.
@@ -178,6 +176,9 @@ propertyGrid.EnableToolTip = false;
 {% endtabs %}
 
 ![PropertyGrid with tool tip and without tool tip](Appearance_images/Appearance_EnableToolTip.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Apperance) to download the sample that showcases the `Background`,`ToolTip` and `Foreground` support. 
+
 
 ## Theme
 

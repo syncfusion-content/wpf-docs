@@ -9,12 +9,11 @@ documentation: ug
 
 # Expand Nested Properties in PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control has support to expand instance properties of a class which has [ExpandableObjectConverter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.expandableobjectconverter?view=netframework-4.8) as its [TypeConverter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=netframework-4.8). 
-User can show the direct property and user can create a sub properties with any number of levels.
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control has support to expand instance properties of a class which has [ExpandableObjectConverter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.expandableobjectconverter?view=netframework-4.8) as its [TypeConverter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=netframework-4.8).
 
-###  Navigate to the sub-properties Properties
+###  Navigate to the sub-properties
 
-The Users can choose whether the sub-properties of the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) can be expanded or not by using the [PropertyExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~PropertyExpandMode.html) property. The Values of `PropertyExpandMode` is `NestedMode` and `FlatMode`. By default, the sub-properties are not shown.  If User want to display the sub-properties, you can set the `PropertyExpandMode`  property as `NestedMode`.
+We can choose whether the sub-properties of the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) can be expanded or not by using the [PropertyExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~PropertyExpandMode.html) property. The Values of `PropertyExpandMode` is `NestedMode` and `FlatMode`. By default, the sub-properties are not shown.  If we want to display the sub-properties, you can set the `PropertyExpandMode`  property as `NestedMode`.
 
 {% tabs %}
 {% highlight C# %}
@@ -75,6 +74,8 @@ public class ViewModel
 {% endhighlight  %}
 {% endtabs %}
 
-Here, In the `Employee` class, `Address` is a direct property. It contains the `State`, `StreetName` and `DoorNo` properties as sub properties. All the sub properties are shown by `PropertyExpandMode` as `NestedMode`. 
+Here, `Address` is a class type property in the `Employee` class. It includes the `City`, `StreetName`, and `DoorNo` properties that are shown by setting `PropertyExpandMode` as `NestedMode`.
 
 ![PropertyGrid show the sub properties](Expand-Nested-Properties_images/Expand-Nested-Properties.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Nested_Properties) to download the sample that showcases the nested property expanding support.

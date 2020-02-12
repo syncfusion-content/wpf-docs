@@ -9,7 +9,7 @@ documentation: ug
 
 # Ordering the Properties
 
-Users can order the properties according to their needs. You can change the order of the properties by [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) Attribute's [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the property.
+We can order the properties according to our needs. We can change the order of the properties by [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) Attribute's [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the property.
 
 ## Ordering using Attribute
 

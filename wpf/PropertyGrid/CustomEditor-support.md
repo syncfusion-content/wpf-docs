@@ -122,9 +122,10 @@ The user can assign the `CustomEditor` to any individual property by the propert
 {% tabs %}
 {% highlight C# %}
 
-//Custom Editor for the EmailId property 
+//CustomEditor for the specfic(EmailID) property
 [Editor("EmailID", typeof(EmailEditor))]
-//Custom Editor for integer type properties
+
+//Custom Editor for the multiple(Tnteger type) properties
 [Editor(typeof(int), typeof(IntegerEditor))]
 
 public class Employee : NotificationObject {
@@ -143,7 +144,9 @@ Here, The `EmailID` is a string property, the `TextBox` is assigned as a default
 
 ## Assigning a CustomEditor using CustomEditorCollection
 
-The user can assign the `CustomEditor` to any particular property and to multiple properties which are in same type. 
+The user can assign the `CustomEditor` to any particular property and to multiple properties which are in same type using the CustomEditorCollection. 
+
+### Assigning a CustomEditor to the specfic property
 
 If the user want to apply custom editor for any particular property, you need to create the `CustomEditor` instance, assign your own editor to the `CustomEditor.Editor` and add the property name to the `CustomEditor.Properties` collection. Then, add the `CustomEditor` instance to the `PropertyGrid.CustomEditorCollection`.
 
@@ -167,7 +170,9 @@ public partial class MainWindow : Window {
 {% endhighlight  %}
 {% endtabs %}
 
-If the user want to apply custom editor for multiple properties which conains same type, you need to create the `CustomEditor` instance, assign your own editor to the `CustomEditor.Editor` and sets the `CustomEditor.HasPropertyType`  property  to `true`. Then, mention the property type to the `CustomEditor.PropertyType`.
+## Assigning a CustomEditor based on the property type
+
+If the user want to apply custom editor for multiple properties which contains same type, you need to create the `CustomEditor` instance, assign your own editor to the `CustomEditor.Editor` and sets the `CustomEditor.HasPropertyType`  property  to `true`. Then, mention the property type to the `CustomEditor.PropertyType`.
 
 {% tabs %}
 {% highlight C# %}
