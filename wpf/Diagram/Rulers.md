@@ -49,4 +49,4 @@ Segment width, the textual description of the ruler segment, and the appearance 
 
 ![CustomRuler](Rulers_images/Rulers_img2.jpeg)
 
-Please refer to the sample to [Customize the Ruler](http://www.syncfusion.com/downloads/support/directtrac/199579/ze/RulerCustomization324121572)
+Please refer to the sample to [Customize the Ruler](https://www.syncfusion.com/downloads/support/directtrac/264308/ze/RulerCustomization-692152295)
