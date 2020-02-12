@@ -146,7 +146,7 @@ Here, The `EmailID` is a string property, the `TextBox` is assigned as a default
 
 The user can assign the `CustomEditor` to any particular property and to multiple properties which are in same type using the CustomEditorCollection. 
 
-### Assigning a CustomEditor to the specfic property
+### Assigning a CustomEditor to the specific property
 
 If the user want to apply custom editor for any particular property, you need to create the `CustomEditor` instance, assign your own editor to the `CustomEditor.Editor` and add the property name to the `CustomEditor.Properties` collection. Then, add the `CustomEditor` instance to the `PropertyGrid.CustomEditorCollection`.
 
