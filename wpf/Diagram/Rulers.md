@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Rulers
+# Rulers in WPF Diagram (SfDiagram)
 
 The Ruler provides a Horizontal and Vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default [Unit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LengthUnit_members.html) of measure is pixels.
 
