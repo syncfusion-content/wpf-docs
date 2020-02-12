@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in WPF PropertyGrid
 
-The Users can sort and order the properties according to their needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
+The user can sorting the properties according to their needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
 Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
 
 ![Properties of PropertyGrid is sorted in ascending order](Sorting-Images/Sorting.png)
@@ -44,7 +44,7 @@ propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 
 ## Sorting the Properties
 
-Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property as the `Ascending` or `Descending` order based on the property name. If the properties are in the grouped state, then the groups are sorted based on the group name. 
+Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property as either `Ascending` or `Descending` order. They sorted based only on the name of the property, not on the display name of the property. If the properties are in the grouped state, then the groups are sorted based on the group name. 
 
 {% tabs %}
 {% highlight C# %}
@@ -148,6 +148,7 @@ public class ViewModel
         </syncfusion:PropertyGrid>
     </Grid>
 </Window>
+
 {% endhighlight %} 
 {% endtabs %} 
 
@@ -163,3 +164,21 @@ public class ViewModel
 
 ![Categories are in descending order based on category name](Sorting-Images\Category-DescendingOrder.png)
 
+## Disable the Sorting
+We can disable the sorting by setting the `SortDirection` property as `null`. When sorting is disabled, the properties are arranged based on the value of the `Order` attributes or on
+ the order they added into the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyItem~SelectedObject.html).
+ 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid1" SortDirection="{x:Null}" SelectedObject="{Binding SelectedEmployee}">
+        </syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.SortDirection = null;
+
+{% endhighlight %} 
+{% endtabs %} 

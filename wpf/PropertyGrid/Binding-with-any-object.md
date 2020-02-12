@@ -7,153 +7,49 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Binding with any Object
+# Binding the Object in WPF PropertyGrid
 
-Denotes the object for which PropertyGrid displays Properties. You can set the SelectedObject property to any object.
+This section describes how the `DotNet` object can be used to bind and display the properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid).
 
-## Binding SelectedObject in an application
+## Binding with any DotNet Object
 
-When the SelectedObject property binds to an object, the properties of that object is then parsed and displayed in the PropertyGrid. In the below example, properties of the Customer class is parsed and displayed in the PropertyGrid.
+The user can display the properties of any `DotNet` object using the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) property. When the `SelectedObject` property is bound with an object, the properties of that object are parsed and displayed in the `PropertyGrid`.
 
 {% tabs %}
+{% highlight C# %}
 
+// Employee class to be explored in property grid.
+public class Employee {
+	public string EmployeeName { get; set; }
+    public string ID { get; set; }
+    public int Age { get; set; }
+	public int Experiance { get; set; }
+}
+
+//Create ViewModel class with a property to be bounded with PropertyGrid.SelectedObject 
+public class ViewModel {
+    public object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee() { EmployeeName = "Johnson", Age = 25, ID = "1234",Experiance =3 };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+<Window.DataContext>
+    <local:ViewModel></local:ViewModel>
+</Window.DataContext>
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}" Name="propertyGrid1" />
 
-{% endhighlight  %}
-
-{% highlight c# %}
-
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
-
-partial class MainWindow :  Window 
-{
-	public MainWindow() 
-	{
-		InitializeComponent();
-		this.propertyGrid.SelectedObject  =  new Customer();
-	}
-}
-public class Customer 
-{
-	private string _name;
-	private int _age;
-	private DateTime _dateOfBirth;
-	private string _SSN;
-	private string _address;
-	ng _email;
-	private bool _frequentBuyer;
-	[CategoryAttribute("ID Settings"),  DescriptionAttribute("Name of the customer")]
-	public string Name 
-	{
-		get 
-		{
-			return _name;
-		}
-		set 
-		{
-			_name  =  value;
-		}
-	}
-	[CategoryAttribute("ID Settings"), DescriptionAttribute("Social Security Number of the customer")]
-	public string SSN 
-	{     get 
-		{
-			return _SSN;
-		}
-		set {}
-		[CategoryAttribute("ID Settings"), DescriptionAttribute("Address of the customer")]
-		public string Address 
-		{
-			get 
-			{
-				return _address;
-			}
-			set 
-			{
-				_address  =  value;
-			}
-		}
-		[CategoryAttribute("ID Settings"), DescriptionAttribute("Date of Birth of the Customer (optional)")]
-		public DateTime DateOfBirth 
-		{
-			get 
-			{
-				return _dateOfBirth;
-			}
-			set 
-			{
-				_dateOfBirth  =  value; 
-			}
-		}
-		[CategoryAttribute("ID Settings"),  DescriptionAttribute("Age of the customer")]
-		public int Age 
-		{ 
-			get 
-			{
-				return _age;
-			}
-			set  
-			{
-				_age  =  value;
-			}
-		}
-		[CategoryAttribute("Marketting Settings"),  DescriptionAttribute("If the customer as bought more than 10 times, this is set to true")]        
-		public bool FrequentBuyer 
-		{ 
-			get 
-			{
-				return _frequentBuyer;
-			}
-			set 
-			{
-				_frequentBuyer  =  value;
-			}
-		}
-		[CategoryAttribute("Marketting Settings"),  DescriptionAttribute("Most current e-mail of the customer")]
-		public string Email 
-		{ 	get 
-			{ 
-				return _email;
-			}
-			set { _email  =  value; 
-			}
-		}
-	} 
-}
-{% endhighlight  %}
-
+{% endhighlight %}
 {% endtabs %}
+
+Here, The `PropertyGrid.SelectedObject` property is binded with the `SelectedEmployee` object. So, the properties of `SelectedEmployee` object is parsed and displayed in the `PropertyGrid`.
 
 ![Binding with any objects using wpf property grid](Binding-with-any-object_images/Binding-with-any-object_img1.png)
 
-### Properties
-
-SelectedObject Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-SelectedObject</td><td>
-Denotes the object for which PropertyGrid displays properties. User can set the SelectedObject property to any object.</td><td>
-DependencyProperty</td><td>
-ObjectDefault Value : Null</td><td>
-</td></tr>
-</table>
-
-#### Sample link
-
-1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
-2. Select   Run Locally Installed Samples in WPF Button.
-3. Now expand the PropertyGrid treeview item in the Sample Browser.
-4. Choose any one of the samples listed under it to launch. 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-BindingObject) to download the sample that showcases the object binding support. 

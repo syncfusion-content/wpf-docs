@@ -1,262 +1,197 @@
 ---
 layout: post
-title: CustomEditor in WPF PropertyGrid | Syncfusion
-description: The PropertyGrid control supports several built-in editors, to give a good look and feel for the application as like in Expression Blend.
+title: CustomEditor support in WPF PropertyGrid control | Syncfusion
+description: Learn about CustomEditor for the Properties of selected object in Syncfusion WPF PropertyGrid control and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# CustomEditor Support
+# CustomEditor Support in WPF PropertyGrid
 
-The PropertyGrid control supports several built-in editors, to give a good look and feel for the application (like in Expression Blend). Using CustomEditors or CategoryEditors. CustomEditor support enables you to set custom value editors for particular properties, instead of default editors.
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors, to give a good look and feel for the application, use `CustomEditors` or `CategoryEditors`. You can make own customized value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html).
 
-## Adding CustomEditor through CustomEditorCollection
+## Creating the CustomEditor 
 
-Using CustomEditorCollection property user can add custom editors to PropertyGrid control. To create CustomEditor user needs to implement ITypeEditor interface. In the below example for Background(Type – Brush), by default ColorPicker will be displayed as ValueEditor. By setting CustomEditor for Background, ColorEdit will be displayed as ValueEditor instead of ColorPicker.
-
+To create `CustomEditor`, you need to implement `ITypeEditor` interface. Here, `SfMaskedEdit` is created with `EmailId` mask as `EmailEditor` and `UpDown` control is created with min, max value as `IntegerEditor`.
 
 {% tabs %}
+{% highlight C# %}
 
-{% highlight xaml %}
+//Custom Editor for the EmailId properties.
+public class EmailEditor : ITypeEditor {
+    SfMaskedEdit maskededit;
+    public void Attach(PropertyViewItem property, PropertyItem info) {
+        if (info.CanWrite) {
+            var binding = new Binding("Value") { Mode = BindingMode.TwoWay, Source = info, ValidatesOnExceptions = true, ValidatesOnDataErrors = true };
+            BindingOperations.SetBinding(maskededit, SfMaskedEdit.ValueProperty, binding);
+        }
+        else {
+            maskededit.IsEnabled = false;
+            var binding = new Binding("Value") { Source = info, ValidatesOnExceptions = true, ValidatesOnDataErrors = true };
+            BindingOperations.SetBinding(maskededit, SfMaskedEdit.ValueProperty, binding);
+        }
+    }
+    public object Create(PropertyInfo propertyInfo) {
+        maskededit = new SfMaskedEdit();
+        maskededit.MaskType = MaskType.RegEx;
+        maskededit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
+        return maskededit;
+    }
+    public void Detach(PropertyViewItem property) {
 
-<Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"> <br>        
-		                       <Button Height="25" Width="100" VerticalAlignment="Top" x:Name="Btn"/> <br> 
-	      	<syncfusion:ProGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="500" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"/> <br>    
-
-</Grid>
-
-{% endhighlight  %}
-
-{% highlight c# %}
-
-/// <summary>
-   
-/// Interaction logic for MainWindow.xaml.
-    
-/// </summary>
-  
-public partial class MainWindow :  Window     
-{
-	/// <summary> 
-	/// Initializes a new instance of the <see cref="MainWindow"/> class.<br>        
-	/// </summary><br>        
-	public MainWindow()  
-	{
-		InitializeComponent();
-		// Creating CustomEditor for Background.
-		CustomEditor editor  =  new CustomEditor();
-		editor.Properties.Add("Background");
-		editor.Editor  =  new ColorEditEditor();
-		this.propertyGrid.CustomEditorCollection.Add(editor);
-	}
+    }
 }
-public class ColorEditEditor :  ITypeEditor 
-{
-	public void Attach(PropertyViewItem property,  PropertyItem info) 
-	{
-		if  (info.CanWrite) 
-		{
-			var binding  =  new Binding("Value")
-			{
-				Mode  =  BindingMode.TwoWay,
-				Source  =  info,
-				ValidatesOnExceptions  =  true,
-				ValidatesOnDataErrors  =  true
-			};
-			BindingOperations.SetBinding(colorEdit,  ColorEdit.BrushProperty,  binding);
-		} 
-		else 
-		{
-			var binding  =  new Binding("Value") 
-			{
-				Mode  =  BindingMode.OneWayToSource,
-				Source  =  info, < br >                     
-				ValidatesOnExceptions  =  true,
-				ValidatesOnDataErrors  =  true
-			};
-			BindingOperations.SetBinding(colorEdit,  ColorEdit.BrushProperty,  binding);
-		}
-	}
-	public ColorEdit colorEdit;
-	public object Create(System.Reflection.PropertyInfo PropertyInfo) 
-	{
-		colorEdit  =  new ColorEdit();
-		return colorEdit;
-	}
-	public void Detach(PropertyViewItem property) 
-	{
-		throw new NotImplementedException();
-	}
+
+//Custom Editor for the integer type properties.
+public class IntegerEditor : ITypeEditor {
+    UpDown upDown;
+    public void Attach(PropertyViewItem property, PropertyItem info) {
+        if (info.CanWrite) {
+            var binding = new Binding("Value") { Mode = BindingMode.TwoWay, Source = info, ValidatesOnExceptions = true, ValidatesOnDataErrors = true };
+            BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
+        }
+        else {
+            upDown.IsEnabled = false;
+            var binding = new Binding("Value") { Source = info, ValidatesOnExceptions = true, ValidatesOnDataErrors = true };
+            BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
+        }
+    }
+    public object Create(PropertyInfo propertyInfo) {
+        upDown = new UpDown();
+        upDown.ApplyZeroColor = false;
+        upDown.MinValue = 0;
+        upDown.MaxValue = 100;
+        upDown.NumberDecimalDigits = 0;
+        return upDown;
+    }
+    public void Detach(PropertyViewItem property) {
+
+    }
 }
 
 {% endhighlight  %}
-
 {% endtabs %}
-
-![PropertyGrid with CustomEditor](CustomEditor-support_images/CustomEditor-support_img1.png)
-
-
-### Properties
-
-CustomEditor Table
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-CustomEditorCollection</td><td>
-CustomEditor support enables you to set custom value editors for particular properties, instead of default editors.</td><td>
-DependencyProperty</td><td>
-CustomEditorCollection</td><td>
-</td></tr>
-</table>
-
-#### Sample link
-
-1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
-2. Select   Run Locally Installed Samples in WPF Button.
-3. Now expand the PropertyGrid treeview item in the Sample Browser.
-4. Choose any one of the samples listed under it to launch. 
-
-## Adding CustomEditor through EditorAttribute
-
-User can apply a custom editor based on the property's Name or Type using [EditorAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8). The following code illustrate, how the custom ImageViewer is applied to the Image property of the Person class.
 
 {% tabs %}
+{% highlight C# %}
 
-{% highlight xaml %}
+//Employee class containing the properties.
+public class Employee : NotificationObject {
+    public string EmailID { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int Experience { get; set; }
+}
 
-<propertyGrid:PropertyGrid x:Name="pgrid">
-
-            <propertyGrid:PropertyGrid.SelectedObject>
-                <local:Person/>                  
-            </propertyGrid:PropertyGrid.SelectedObject>
-
-        </propertyGrid:PropertyGrid>
+class ViewModel {
+    public object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee() { Age = 25, Name = "mark", Experience = 5, EmailID = "mark@gt" };
+    }
+}
 
 {% endhighlight  %}
-
-{% highlight c# %}
-
-[Editor(typeof(ImageSource), typeof(ImageViewer))]
-    public class Person
-    {
-        public Person()
-        {
-            FirstName = "Carl";
-            Age = 30;
-            Email = "carljohnson@gta.com";
-            ID = "0005A";
-            DOB = new DateTime(1987, 10, 16);
-            string path = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            Image = new BitmapImage(new Uri(path + @"\carl.png", UriKind.RelativeOrAbsolute));
-            Designation = "Team Lead";
-        }
-
-        public Country Country
-        {
-            get;
-
-            set;
-        }
-
-        public string Email
-        {
-            get;
-
-            set;
-        }
-
-        public string FirstName
-        {
-            get;
-
-            set;
-        }
-
-        public string Designation
-        {
-            get;
-
-            set;
-        }
-
-        public string ID
-        {
-            get;
-
-            set;
-        }
-
-        public DateTime DOB
-        {
-            get;
-
-            set;
-        }
-
-        public int Age
-        {
-            get;
-
-            set;
-        }
-
-        public ImageSource Image
-        {
-            get;
-
-            set;
-        }
-    }
-
-public class ImageViewer : ITypeEditor
-    {
-
-        public void Attach(PropertyViewItem property, PropertyItem info)
-        {
-
-            var binding = new Binding("Value")
-            {
-                Mode = BindingMode.TwoWay,
-                Source = info,
-                ValidatesOnExceptions = true,
-                ValidatesOnDataErrors = true
-            };
-            BindingOperations.SetBinding(image, Image.SourceProperty, binding);
-
-        }
-
-        Image image;
-        public object Create(PropertyInfo propertyInfo)
-        {
-            image = new Image();
-            image.Source = new BitmapImage();
-            image.MaxHeight = 200;
-            image.MaxWidth = 200;         
-            return image;
-        }
-
-        public void Detach(PropertyViewItem property)
-        {
-            image.Source = null;
-            image = null;
-        }
-    }
-
-	{% endhighlight  %}
-
 {% endtabs %}
 
-![Property grid with specified custom attribute](CustomEditor-support_images/Editor-Attribute.png)
+{% tabs %}
+{% highlight xaml %}
 
-`ImageViewer` editor will be applied to `Image` property even if the name of the property is mentioned in EditorAttribute instead of its type. 
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </Window.DataContext>
+    <Grid>
+        <syncfusion:PropertyGrid x:Name="propertyGrid1" SelectedObject="{Binding SelectedEmployee}" Height="200" Width="400" ></syncfusion:PropertyGrid>
+    </Grid>
+</Window>
 
-Refer to this [`sample`](https://github.com/SyncfusionExamples/How-to-set-custom-editor-for-properties-through-EditorAttribute-in-WPF-PropertyGrid) to know how the custom editor has been set to the class.
+{% endhighlight  %}
+{% endtabs %}
+
+## Assigning a CustomEditor using Editor Attribute
+
+The user can assign the `CustomEditor` to any individual property by the property `Name` and to multiple properties containing the `same type` by using the `Editor` attribute.
+
+{% tabs %}
+{% highlight C# %}
+
+//CustomEditor for the specfic(EmailID) property
+[Editor("EmailID", typeof(EmailEditor))]
+
+//Custom Editor for the multiple(Tnteger type) properties
+[Editor(typeof(int), typeof(IntegerEditor))]
+
+public class Employee : NotificationObject {
+    public string EmailID { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int Experience { get; set; }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+Here, The `EmailID` is a string property, the `TextBox` is assigned as a default editor. We changed it as `SfMaskedEdit` textbox that accepts only inputs which are in the Email id format. Also, we assigned the `IntegerEditor` for the integer type properties, so it applied to the `ID` and `Age` properties. Then, the value editors for the `Id` and `Age` property is changed from `Numeric TextBox` to `Updown` control.
+
+![Property grid with specified custom attribute](CustomEditor-support_images/CustomEditor-Attribute.png)
+
+## Assigning a CustomEditor using CustomEditorCollection
+
+The user can assign the `CustomEditor` to any particular property and to multiple properties which are in same type using the CustomEditorCollection. 
+
+### Assigning a CustomEditor to the specific property
+
+If the user want to apply custom editor for any particular property, you need to create the `CustomEditor` instance, assign your own editor to the `CustomEditor.Editor` and add the property name to the `CustomEditor.Properties` collection. Then, add the `CustomEditor` instance to the `PropertyGrid.CustomEditorCollection`.
+
+{% tabs %}
+{% highlight C# %}
+
+public partial class MainWindow : Window {
+    public MainWindow() {
+        InitializeComponent();
+        CustomEditor editor = new CustomEditor();
+        editor.Editor = new EmailEditor();
+        editor.Properties.Add("EmailID");
+        this.propertyGrid1.CustomEditorCollection.Add(editor);
+        this.DataContext = new ViewModel();
+    }
+}
+
+![CustomEditor applied for EmailID property](CustomEditor-support_images/CustomEditor-Collection1.png)
+
+
+{% endhighlight  %}
+{% endtabs %}
+
+## Assigning a CustomEditor based on the property type
+
+If the user want to apply custom editor for multiple properties which contains same type, you need to create the `CustomEditor` instance, assign your own editor to the `CustomEditor.Editor` and sets the `CustomEditor.HasPropertyType`  property  to `true`. Then, mention the property type to the `CustomEditor.PropertyType`.
+
+{% tabs %}
+{% highlight C# %}
+
+public partial class MainWindow : Window {
+    public MainWindow() {
+        InitializeComponent();
+        CustomEditor editor1 = new CustomEditor();
+        editor1.Editor = new IntegerEditor();
+        editor1.HasPropertyType = true;
+        editor1.PropertyType = typeof(int);
+        this.propertyGrid1.CustomEditorCollection.Add(editor1);
+        this.DataContext = new ViewModel();
+    }
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+![CustomEditor applied for integer type properties](CustomEditor-support_images/CustomEditor-Collection2.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-CustomEditor) to download the sample that showcases the `CustomEditor` support.
