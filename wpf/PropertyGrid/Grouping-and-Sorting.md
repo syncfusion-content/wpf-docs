@@ -434,7 +434,7 @@ public class ViewModel {
 
 ![Properties are grouped based on the value specified in the Category property of the AutoGeneratingPropertyGridItem event](Grouping-and-sorting-Images\AutoGeneratingPropertyGridItem.png)
 
-Here, the `DOB` and `Experience` properties are grouped under the `Additonal Info` category and `Name` and `ID` properties are grouped under the `Basic Info` category
+Here, the `DOB` and `Experience` properties are grouped under the `Additional Info` category and `Name` and `ID` properties are grouped under the `Basic Info` category
 
 ## Expand or Collapse Category group
 
