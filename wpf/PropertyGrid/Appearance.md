@@ -109,11 +109,13 @@ public class ViewModel {
 {% highlight C# %}
 
 PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.DataContext = new ViewModel();
+propertyGrid.SelectedObject = (propertyGrid.DataContext as ViewModel).SelectedEmployee;
 propertyGrid.EditableBackground = Brushes.LightGreen;
 propertyGrid.EditableFontWeight = FontWeights.Bold;
 propertyGrid.ReadOnlyBackground = Brushes.LightPink;
 propertyGrid.ReadOnlyFontWeight = FontWeights.UltraLight;
-ViewModel viewModel= new ViewModel();
+
 propertyGrid.SelectedObject = viewModel.SelectedEmployee;
 
 {% endhighlight %}

@@ -41,7 +41,7 @@ propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 
 ![PropertyGrid with and without Sort button panel](Sorting-Images/GroupButton_visibility.png)
 
-## Grouping through Category Attributes
+## Grouping using Category Attributes
 
 Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be grouped based on the name specified in the [CategoryAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.categoryattribute?view=netframework-4.8). If the property item doesn't have any category name, that property will be grouped under `Misc` category. In following example, `Name` and `DOB` properties is grouped under `Misc` category and `ID` property is grouped under `Identity` category.
 
@@ -141,7 +141,7 @@ public class ViewModel
 
 ![Properties are grouped based on the value specified in the Category attribute](Grouping-and-sorting-Images\Category-Attribute.png)
 
-## Grouping through Display Attribute’s GroupName field
+## Grouping using Display Attribute’s GroupName field
 
 Properties in the `PropertyGrid` will be grouped based on the value specified in the [GroupName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.groupname?view=netframework-4.8) field of [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) Attribute. If the property item doesn't have any Display Attribute’s GroupName field, that property will be grouped under `Misc` category. In following example, `Name` and `ID` properties is grouped under `Identity` category.
 
@@ -246,132 +246,195 @@ public class ViewModel
 
 N> If you use both the `Category` attribute and `GroupName` field of the `Display` attribute, the `Category` attribute will have higher priority.
 
-## Grouping through AutoGeneratingPropertyGridItem Event
+## Grouping the Properties at runtime
 
-The user can change the category of the properties by using the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event.
-To change the property's category, you can set the new category name to the `AutoGeneratingPropertyGridItemEventArgs`'s `Category` property. Based on the value of `Category` property, the properties are grouped.
-
-{% tabs %}
-{% highlight C# %}
-
-//Model.cs
-
-using System;
-
-public class Model
-{
-    [Category("Info")]
-    public string Name
-    {
-        get;
-
-        set;
-    }
-    
-    public DateTime DOB
-    {
-        get;
-
-        set;
-    }
-   
-    public Gender Gender
-    {
-        get;
-
-        set;
-    }
-}
-
-public enum Gender
-{
-    Male,
-
-    Female
-}
-
-{% endhighlight %}
-{% endtabs %} 
+We can group the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event with [AutoGeneratingPropertyGridItemEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html).[Category](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Category.html) property. Based on the value of `Category` property, the properties are grouped.
 
 {% tabs %}
 {% highlight C# %}
 
-//ViewModel.cs
+/// <summary>
+/// A class that represents the AutoGeneratingPropertyGridItem event to AutoGeneratingPropertyGridItem Command
+/// </summary>
+public class EventToCommandBehavior : Behavior<FrameworkElement> {
+    private Delegate _handler;
+    private EventInfo _oldEvent;
 
-public class ViewModel
-{
-    private Object items = null;
+    // Event
+    public string Event { 
+        get { return (string)GetValue(EventProperty); }
+        set { SetValue(EventProperty, value); }
+    }
+    public static readonly DependencyProperty EventProperty =
+        DependencyProperty.Register("Event", 
+        typeof(string),
+        typeof(EventToCommandBehavior), 
+        new PropertyMetadata(null, OnEventChanged));
 
-    public Object Items
-    {
-        get
-        {
-            return items;
-        }
-        set
-        {
-            items = value;
+    // Command
+    public ICommand Command { 
+        get { return (ICommand)GetValue(CommandProperty); } 
+        set { SetValue(CommandProperty, value); }
+    }
+    public static readonly DependencyProperty CommandProperty =
+        DependencyProperty.Register("Command",
+        typeof(ICommand),
+        typeof(EventToCommandBehavior),
+        new PropertyMetadata(null));
+
+    // PassArguments (default: false)
+    public bool PassArguments { 
+        get { return (bool)GetValue(PassArgumentsProperty); }
+        set { SetValue(PassArgumentsProperty, value); } }
+    public static readonly DependencyProperty PassArgumentsProperty = 
+        DependencyProperty.Register("PassArguments",
+        typeof(bool), 
+        typeof(EventToCommandBehavior), 
+        new PropertyMetadata(false));
+
+    private static void OnEventChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+        var beh = (EventToCommandBehavior)d;
+        if (beh.AssociatedObject != null) // is not yet attached at initial load
+            beh.AttachHandler((string)e.NewValue);
+    }
+
+    protected override void OnAttached() {
+        AttachHandler(this.Event); // initial set
+    }
+
+    /// <summary>
+    /// Attaches the handler to the event
+    /// </summary>
+    private void AttachHandler(string eventName) {
+        // detach old event
+        if (_oldEvent != null)
+            _oldEvent.RemoveEventHandler(this.AssociatedObject, _handler);
+
+        // attach new event
+        if (!string.IsNullOrEmpty(eventName)) {
+            EventInfo ei = this.AssociatedObject.GetType().GetEvent(eventName);
+            if (ei != null) {
+                MethodInfo mi = this.GetType().GetMethod("ExecuteCommand",
+                    BindingFlags.Instance | BindingFlags.NonPublic);
+                _handler = Delegate.CreateDelegate(ei.EventHandlerType, this, mi);
+                ei.AddEventHandler(this.AssociatedObject, _handler);
+                _oldEvent = ei; // store to detach in case the Event property changes
+            }
+            else
+                throw new ArgumentException(string.Format
+                    ("The event '{0}' was not found on type '{1}'", 
+                    eventName, this.AssociatedObject.GetType().Name));
         }
     }
-    
-    public ViewModel()
-    {
-        Items = new Model() { Name = "Johnson", Gender= Gender.Male, DOB = new DateTime(2000,01,25), };
+    private void ExecuteCommand(object sender, EventArgs e) {
+        object parameter = this.PassArguments ? e : sender;
+        if (this.Command != null) {
+            if (this.Command.CanExecute(parameter))
+                this.Command.Execute(parameter);
+        }
     }
+}
+
+/// <summary>
+/// A clas that represents the Commend for the AutoGeneratingPropertyGridItem Event 
+/// </summary>
+class UpdaterValue : ICommand {
+    #region ICommand Members  
+    public bool CanExecute(object parameter) {
+        return true;
+    }
+    public event EventHandler CanExecuteChanged {
+        add { CommandManager.RequerySuggested += value; }
+        remove { CommandManager.RequerySuggested -= value; }
+    }
+    public void Execute(object parameter) {
+       //Experience and DOB properties grouped under 'Additional Info' category.
+       if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "Experience") {
+           (parameter as AutoGeneratingPropertyGridItemEventArgs).Category ="Additional Info";
+       }
+       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "DOB")
+       {
+           (parameter as AutoGeneratingPropertyGridItemEventArgs).Category = "Additional Info";
+       }
+       //Name and ID properties grouped under 'Basic Info' category.
+       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "Name") {
+           (parameter as AutoGeneratingPropertyGridItemEventArgs).Category = "Basic Info";
+       }
+       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "ID") {
+           (parameter as AutoGeneratingPropertyGridItemEventArgs).Category = "Basic Info";
+       }           
+   }
+    #endregion
 }
 
 {% endhighlight %} 
 {% endtabs %} 
 
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+public class Employee {
+    public string Name { get; set; }
+    public string ID { get; set; }
+    public DateTime DOB { get; set; }
+    public int Experience { get; set; }
+}
+
+public class ViewModel {
+    private ICommand autoGeneratingPropertyGridItemEventCommand;
+    public object SelectedEmployee { get; set; }
+
+    //Command for the AutoGeneratingPropertyGridItemEvent
+    public ICommand AutoGeneratingPropertyGridItemEventCommand {
+        get { if (autoGeneratingPropertyGridItemEventCommand == null)
+                autoGeneratingPropertyGridItemEventCommand = new UpdaterValue();
+              return autoGeneratingPropertyGridItemEventCommand;
+        }
+        set {
+            autoGeneratingPropertyGridItemEventCommand = value;
+        }
+    }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24),
+            Experience = 5;
+        };
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %} 
 
 {% tabs %}
 {% highlight xaml %}
 
-<Window x:Class="PropertyGrid_WPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PropertyGrid_WPF"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="572" Width="800">
-    <Window.DataContext>
+<syncfusion:PropertyGrid SelectedObject="{Binding IsAsync=True, Path=SelectedEmployee}" 
+                         EnableGrouping="True"
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
-    </Window.DataContext>
-    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-       <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" EnableGrouping="True" SelectedObject="{Binding Items}" AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem">
-       </syncfusion:PropertyGrid>
-    </Grid>
+    </syncfusion:PropertyGrid.DataContext>
+    <i:Interaction.Behaviors>
+        <local:EventToCommandBehavior PassArguments="true" 
+            Event="AutoGeneratingPropertyGridItem" 
+            Command="{Binding Path=AutoGeneratingPropertyGridItemEventCommand}" />
+    </i:Interaction.Behaviors>
+</syncfusion:PropertyGrid>
 
-</Window>
+
 {% endhighlight %} 
 {% endtabs %} 
 
-{% tabs %}
-{% highlight C# %}
-
-private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e)
-{
-    //Name properties will be categorized under "Identity" category.
-    if (e.DisplayName == "Name")
-    {
-        e.Category = "Identity";
-    }
-
-    //Name properties will be categorized under "Basic Info" category.
-    if (e.DisplayName == "Gender" || e.DisplayName=="DOB")
-    {
-        e.Category = "Basic Info";
-    }
-}
-      
-{% endhighlight %} 
-{% endtabs %}
-
 ![Properties are grouped based on the value specified in the Category property of the AutoGeneratingPropertyGridItem event](Grouping-and-sorting-Images\AutoGeneratingPropertyGridItem.png)
 
-Here, the category of the `Name` property is changed from `Info` to `Identity` and `DOB`, `Gender` properties are grouped under the `Basic Info` category.
+Here, the `DOB` and `Experience` properties are grouped under the `Additonal Info` category and `Name` and `ID` properties are grouped under the `Basic Info` category
 
 ## Expand or Collapse Category group
 

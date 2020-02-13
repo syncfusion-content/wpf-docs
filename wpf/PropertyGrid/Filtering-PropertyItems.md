@@ -9,104 +9,48 @@ documentation: ug
 
 # Filtering properties in WPF PropertyGrid
 
-The user can decide the properties which are need to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid). 
+We can decide the properties which are need to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) by hiding the other properties using collections and attributes. 
 
-## Hide the Properties through Collection
+## Hide the Properties using Collection
 
-The User can hide the properties using the [HidePropertiesCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~HidePropertiesCollection.html) property. It is used to hide the mentioned properties which are already present in [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html). Properties can also be hidden at runtime using  `HidePropertiesCollection`.
+We can hide the properties using the [HidePropertiesCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~HidePropertiesCollection.html) property. It is used to hide the mentioned properties which are already present in [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html). Properties can also be hidden at runtime using  `HidePropertiesCollection`.
 
 {% tabs %}
 {% highlight C# %}
 
-//Model.cs
-
-using System;
-using System.ComponentModel;
-
-public class Model
-{
+public class Employee {
     [Category("Identity")]
-    public string Name
-    {
-        get;
-        set;
-    }
-
+    public string Name { get; set; }
     [Category("Contact Details")]
-    public string Email
-    {
-        get;
-        set;
-    }
-
+    public string Email { get; set; }
     [Category("Account Details")]
-    public string Bank
-    {
-        get;
-        set;
-    }
-
+    public string Bank { get; set; }
     [Category("Identity")]
-    public string ID
-    {
-        get;
-        set;
-    }
-    
+    public string ID { get; set; }
     [Category("Account Details")]
-    public string AccountNumber
-    {
-        get;
-        set;
-    }  
+    public string AccountNumber { get; set; }
 }
-        
-{% endhighlight %}
-{% endtabs %} 
 
-{% tabs %}
-{% highlight C# %}
-
-//ViewModel.cs
-
-using System;
-using System.Collections.ObjectModel;
-
-public class ViewModel
-{
-    private Object items = null;
-    private ObservableCollection< string > hideItems = new ObservableCollection< string >();
-
-    public Object Items
+public class ViewModel {
+    private ObservableCollection<string> hidePropertyItems = new ObservableCollection<string>();
+    public Object SelectedEmployee { get; set; }
+    public ObservableCollection<string> HidePropertyItems
     {
-        get
-        {
-            return items;
-        }
-        set
-        {
-            items = value;
-        }
+        get { return hidePropertyItems; }
+        set { hidePropertyItems = value; }
     }
-
-    public ObservableCollection<string> HideItems
-    {
-        get
+    public ViewModel() {
+        var employee = new Employee()
         {
-            return hideItems;
-        }
-        set
-        {
-            hideItems = value;
-        }
-    }
-
-    public ViewModel()
-    {
-        var model = new Model() { AccountNumber="0058", Bank="ABC Bank", Email="John@gta.com", ID="SF005", Name="Johnson"};
-        HideItems.Add(nameof(model.ID));
-        HideItems.Add(nameof(model.Bank));
-        Items = model;
+            AccountNumber = "058",
+            Bank = "ABC Bank",
+            Email = "john@gta.com",
+            ID = "895",
+            Name = "Johnson"
+        };
+        HidePropertyItems.Add(nameof(employee.ID));
+        HidePropertyItems.Add(nameof(employee.Bank));
+        SelectedEmployee = employee;
     }
 }
 
@@ -117,23 +61,24 @@ public class ViewModel
 {% tabs %}
 {% highlight xaml %}
 
-<Window x:Class="PropertyGrid_WPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PropertyGrid_WPF"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="572" Width="800">
-    <Window.DataContext>
+<syncfusion:PropertyGrid HidePropertiesCollection="{Binding HidePropertyItems}" 
+                         SelectedObject="{Binding SelectedEmployee}" 
+                         x:Name="propertyGrid1" Width="350" Height="200" >
+    <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
-    </Window.DataContext>
-    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" HidePropertiesCollection="{Binding HideItems}" SelectedObject="{Binding Items}">
-        </syncfusion:PropertyGrid>
-    </Grid>
-</Window>
+    </syncfusion:PropertyGrid.DataContext>
+
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.HidePropertiesCollection = (propertyGrid1.DataContext as ViewModel).HidePropertyItems;
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+
+
 {% endhighlight %} 
 {% endtabs %} 
 
@@ -141,11 +86,11 @@ public class ViewModel
 
 Here, the `PropertyGrid` hides the properties `Bank` and `ID` which are specified in the `HidePropertiesCollection`.
 
-N>`HidePropertiesCollection` cannot hide the properties which are added through `DynamicDescriptor`.
+N>`HidePropertiesCollection` cannot hide the properties which are added using `DynamicDescriptor`.
 
-## Hide the Properties through Attributes
+## Hide the Properties using Attributes
 
-The User can hide properties by setting the [Browsable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.browsableattribute?view=netframework-4.8) value as `false` or [Bindable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.bindableattribute?view=netframework-4.8) as `false`, which properties will not be displayed in `PropertyGrid`. Functionalities of `Browsable` and `Bindable` attributes are same.  
+We can hide properties by setting the [Browsable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.browsableattribute?view=netframework-4.8) value as `false` or [Bindable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.bindableattribute?view=netframework-4.8) as `false`, which properties will not be displayed in `PropertyGrid`. Functionalities of `Browsable` and `Bindable` attributes are same.  
 
 {% tabs %}
 {% highlight C# %}
@@ -255,7 +200,7 @@ Here, the `PropertyGrid` not displayed the `Name` and `Email` properties which a
 
 N> If you use both the `Browsable` and `Bindable` attributes, the `Browsable` attribute have a higher priority.
 
-## Hide the Properties through AutoGeneratedField
+## Hide the Properties using AutoGeneratedField
 
 If a property has the value of `Browsable` attribute as `true` and `Bindable` attribute as `true` and the [AutoGeneratedField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_AutoGenerateField) of `DisplayAttribute` is `false`, then the property item will not be added to the `Properties` collection of `PropertyGrid` and not visible in the UI. Value of `AutoGeneratedField` has no effect when the property is marked `Browsable` or `Bindable` as `false`.
 
@@ -353,132 +298,186 @@ public class ViewModel
 
 Here, the `PropertyGrid` not displayed the `Bank` and `ID` properties. The `Bank` property is not displayed by value of `Browsable` attribute as `true` and `Bindable` attribute as `true` and the `AutoGeneratedField` of `DisplayAttribute` is `false`.In `ID` property, the `Browsable` is `false`, then the `AutoGeneratedField` property have no effect. 
 
-## Hide the Properties through AutoGeneratingPropertyGridItem event
+## Hide the Properties at runtime
 
-Properties of [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) has been read and the properties will be added to the `Properties` collection of `PropertyGrid`. From the `Properties` collection of `PropertyGrid`, properties will be displayed in the `PropertyGrid`. Generation of properties in the `Properties` collection of `PropertyGrid` can be restricted through [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event by setting `Cancel` property as `true`.  `AutoGeneratingPropertyGridItemEventArgs` provides the information about the properties available in the `PropertyGrid`.
-
+We can hide the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event with [AutoGeneratingPropertyGridItemEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html).Cancel property as `true`.
 
 {% tabs %}
 {% highlight C# %}
 
-//Model.cs
+/// <summary>
+/// A class that represents the AutoGeneratingPropertyGridItem event to AutoGeneratingPropertyGridItem Command
+/// </summary>
+public class EventToCommandBehavior : Behavior<FrameworkElement> {
+    private Delegate _handler;
+    private EventInfo _oldEvent;
 
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+    // Event
+    public string Event { 
+        get { return (string)GetValue(EventProperty); }
+        set { SetValue(EventProperty, value); }
+    }
+    public static readonly DependencyProperty EventProperty =
+        DependencyProperty.Register("Event", 
+        typeof(string),
+        typeof(EventToCommandBehavior), 
+        new PropertyMetadata(null, OnEventChanged));
 
-public class Model
-{
-    public string Name
-    {
-        get;
+    // Command
+    public ICommand Command { 
+        get { return (ICommand)GetValue(CommandProperty); } 
+        set { SetValue(CommandProperty, value); }
+    }
+    public static readonly DependencyProperty CommandProperty =
+        DependencyProperty.Register("Command",
+        typeof(ICommand),
+        typeof(EventToCommandBehavior),
+        new PropertyMetadata(null));
 
-        set;
+    // PassArguments (default: false)
+    public bool PassArguments { 
+        get { return (bool)GetValue(PassArgumentsProperty); }
+        set { SetValue(PassArgumentsProperty, value); } }
+    public static readonly DependencyProperty PassArgumentsProperty = 
+        DependencyProperty.Register("PassArguments",
+        typeof(bool), 
+        typeof(EventToCommandBehavior), 
+        new PropertyMetadata(false));
+
+    private static void OnEventChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+        var beh = (EventToCommandBehavior)d;
+        if (beh.AssociatedObject != null) // is not yet attached at initial load
+            beh.AttachHandler((string)e.NewValue);
     }
 
-    public string Country
-    {
-        get;
-
-        set;
+    protected override void OnAttached() {
+        AttachHandler(this.Event); // initial set
     }
 
-    public string ID
-    {
-        get;
+    /// <summary>
+    /// Attaches the handler to the event
+    /// </summary>
+    private void AttachHandler(string eventName) {
+        // detach old event
+        if (_oldEvent != null)
+            _oldEvent.RemoveEventHandler(this.AssociatedObject, _handler);
 
-        set;
+        // attach new event
+        if (!string.IsNullOrEmpty(eventName)) {
+            EventInfo ei = this.AssociatedObject.GetType().GetEvent(eventName);
+            if (ei != null) {
+                MethodInfo mi = this.GetType().GetMethod("ExecuteCommand",
+                    BindingFlags.Instance | BindingFlags.NonPublic);
+                _handler = Delegate.CreateDelegate(ei.EventHandlerType, this, mi);
+                ei.AddEventHandler(this.AssociatedObject, _handler);
+                _oldEvent = ei; // store to detach in case the Event property changes
+            }
+            else
+                throw new ArgumentException(string.Format
+                    ("The event '{0}' was not found on type '{1}'", 
+                    eventName, this.AssociatedObject.GetType().Name));
+        }
     }
-
-    public string Designation
-    {
-        get;
-
-        set;
-    }
-    
-    public int Age
-    {
-        get;
-
-        set;
+    private void ExecuteCommand(object sender, EventArgs e) {
+        object parameter = this.PassArguments ? e : sender;
+        if (this.Command != null) {
+            if (this.Command.CanExecute(parameter))
+                this.Command.Execute(parameter);
+        }
     }
 }
 
-{% endhighlight %}
-{% endtabs %} 
-
-{% tabs %}
-{% highlight C# %}
-
-//ViewModel.cs
-
-public class ViewModel
-{
-    private Object items = null;
-
-    public Object Items
-    {
-        get
-        {
-            return items;
+/// <summary>
+/// A clas that represents the Commend for the AutoGeneratingPropertyGridItem Event 
+/// </summary>
+class UpdaterValue : ICommand {
+    #region ICommand Members  
+    public bool CanExecute(object parameter) {
+        return true;
+    }
+    public event EventHandler CanExecuteChanged {
+        add { CommandManager.RequerySuggested += value; }
+        remove { CommandManager.RequerySuggested -= value; }
+    }
+    public void Execute(object parameter) {
+        //Name and Experience properties hided in the PropertGrid control.
+        if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "Experience") {
+            (parameter as AutoGeneratingPropertyGridItemEventArgs).Cancel =true;
         }
-        set
-        {
-            items = value;
+        else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "Name") {
+            (parameter as AutoGeneratingPropertyGridItemEventArgs).Cancel = true;
         }
     }
-    
-    public ViewModel()
-    {
-        Items = new Model() { Name = "Johnson", ID = "SF008", Age=30, Country="UnitedStates", Designation="Team Lead"};
-    }
+    #endregion
 }
 
 {% endhighlight %} 
 {% endtabs %} 
 
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+public class Employee {
+    public string Name { get; set; }
+    public string ID { get; set; }
+    public DateTime DOB { get; set; }
+    public int Experience { get; set; }
+}
+
+public class ViewModel {
+    private ICommand autoGeneratingPropertyGridItemEventCommand;
+    public object SelectedEmployee { get; set; }
+
+    //Command for the AutoGeneratingPropertyGridItemEvent
+    public ICommand AutoGeneratingPropertyGridItemEventCommand {
+        get { if (autoGeneratingPropertyGridItemEventCommand == null)
+                autoGeneratingPropertyGridItemEventCommand = new UpdaterValue();
+              return autoGeneratingPropertyGridItemEventCommand;
+        }
+        set {
+            autoGeneratingPropertyGridItemEventCommand = value;
+        }
+    }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24),
+            Experience = 5;
+        };
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %} 
 
 {% tabs %}
 {% highlight xaml %}
 
-<Window x:Class="PropertyGrid_WPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PropertyGrid_WPF"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="572" Width="800">
-    <Window.DataContext>
+<syncfusion:PropertyGrid SelectedObject="{Binding IsAsync=True, Path=SelectedEmployee}" 
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
-    </Window.DataContext>
-    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" SelectedObject="{Binding Items}" AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem">
-        </syncfusion:PropertyGrid>
-    </Grid>
-</Window>
+    </syncfusion:PropertyGrid.DataContext>
+    <i:Interaction.Behaviors>
+        <local:EventToCommandBehavior PassArguments="true" 
+            Event="AutoGeneratingPropertyGridItem" 
+            Command="{Binding Path=AutoGeneratingPropertyGridItemEventCommand}" />
+    </i:Interaction.Behaviors>
+</syncfusion:PropertyGrid>
+
+
 {% endhighlight %} 
 {% endtabs %} 
 
-{% tabs %}
-{% highlight C# %}
-
-private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e)
-{           
-    //Designation and Age properties will not be displayed in PropertyGrid
-    if (e.DisplayName == "Designation" || e.DisplayName =="Age")
-    {
-        e.Cancel = true;
-    }
-}
-      
-{% endhighlight %} 
-{% endtabs %}
-
 ![Designation and Age properties are not displayed in PropertyGrid](Filtering-Images\AutoGeneratingPropertyGridItem.png)
 
-Here, the `Designation` and `Age` properties are not displayed in the `PropertyGrid`, since the properties was restricted to be added in `Properties` collection of the `PropertyGrid`.
+Here, the `Experience` and `Name` properties are not displayed in the `PropertyGrid`, since the properties was restricted to be added in `PropertyGrid` by the `AutoGeneratingPropertyGridItem` event.
 
 
 

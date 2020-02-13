@@ -57,8 +57,8 @@ public class ViewModel {
 {% highlight C# %}
 
 PropertyGrid propertyGrid1 = new PropertyGrid();
-ViewModel viewModel = new ViewModel();
-propertyGrid1.SelectedObject = viewModel.SelectedEmployee;
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
 
 {% endtabs %}
 {% endtabs %}
