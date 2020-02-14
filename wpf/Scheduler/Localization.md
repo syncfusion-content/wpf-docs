@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization| SfSchedule | Wpf | Syncfusion
-description: Localization
+title: Localization in Wpf Scheduler | Syncfusion
+description: This section explains about localization support to customize the default strings in Syncfusion WPF Scheduler control.
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -9,27 +9,52 @@ documentation: ug
 
 # Localization
 
-Localization is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data. Culture is a schema which holds all the information about various standards such as language, DateTime information, currency, speed, and other physical metrics. The culture is represented by a unique string, for example, ―en-US‖ for U.S. English and ―fr‖ for French (common).
+Localization is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data. The culture is represented by a unique string, for example, ―en-US‖ for U.S. English and ―fr‖ for French (common).
 
-Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by the control. The SfSchedule control supports localization, and you can create a resource file for any culture to be applied in the schedule.
+Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by the control. The Scheduler supports localization, and you can create a resource file for any culture to be applied in the schedule.
 
-### Use Cases
+## Set Current UI Culture to the Application
+Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx)
 
-Localization makes your application multilingual by formatting content according to the culture. This involves configuring the application for specific languages. The SfSchedule control allows you to set custom resources through .resx files. You can simply provide the string values in a resource file for a specific culture and set it in your application. The given string values will be set accordingly in the SfSchedule control. The appointment windows, message boxes, and other alert windows will be displayed with text in the local language (culture). If the application is deployed in Japanese culture, then the SfSchedule control will display its contents in French language.
+{% tabs %}
 {% highlight c# %}
 
-
-ApplicationLanguages.PrimaryLanguageOverride = "fr-fr";
+public MainWindow()
+{
+    this.InitializeComponent();
+    //Download resx files from GitHub. https://github.com/syncfusion/wpf-demos/tree/master/Schedule/Localization/CS/Resources
+    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+    System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-FR");
+}
 
 {% endhighlight  %}
+{% endtabs %}
 
-![](Localization_images/Localization_img1.jpeg)
+## Localization using Resource file
 
+To localize the Scheduler based on `CurrentUICulture` using resource files, follow the below steps. 
 
+1.Create new folder and named as **Resources** in your application. 
+2.Add the default resource file of Scheduler into **Resources** folder. You can download the Syncfusion.SfSchedule.WPF.resx [here](https://github.com/syncfusion/wpf-demos/blob/master/Schedule/Localization/CS/Resources/Syncfusion.SfSchedule.WPF.resx).
 
+![Addition of default resource file of WPF Scheduler into Resources folder](Localization_images/Localization_img1.png)
 
+3.Right-click on the Resources folder, select **Add** and then **NewItem**.
 
-## Advantages of Localization
+4.In `Add New Item` wizard, select the **Resource File** option and name the filename as **Syncfusion.SfSchedule.WPF.&lt;culture name&gt;.resx**. For example, you have to give name as **Syncfusion.SfSchedule.WPF.de.resx** for German culture.
+ 
+5.The culture name that indicates the name of language and country. 
 
-The SfSchedule control can be embedded in applications deployed in any culture (e.g., en-US is the culture for English spoken in United States; en-GB is the culture for English spoken in United Kingdom or Great Britain) to provide details and information in the native language of the users.
+![Shows the name of resource file to be added for WPF Scheduler](Localization_images/Localization_img2.png)
 
+6.Now, select `Add` option to add the resource file in **Resources** folder.
+
+![Shows the added resource file for French language in WPF Scheduler](Localization_images/Localization_img3.png)
+
+7.Add the Name/Value pair in Resource Designer of **Syncfusion.SfSchedule.WPF.fr-FR.resx** file and change its corresponding value to corresponding culture. 
+
+![Shows the added resource file name / value pair in the resource designer in WPF Scheduler](Localization_images/Localized-strings.png)
+
+![Shows the localized in French for WPF Scheduler](Localization_images/Localization.png)
+
+You can get the sample from [here](https://github.com/syncfusion/wpf-demos/tree/master/Schedule/Localization/CS)
