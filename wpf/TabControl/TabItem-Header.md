@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Tab Item Header | TabControlExt | wpf | Syncfusion
-description: tab item header
+description: Learn here about how to add the tab item header into Syncfusion WPF TabControlExt and add image to the header.
 platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Tab Item Header
+# TabItem Header of TabControlExt
 
 This section illustrates the Tab Item Header of TabControlExt control and contains the following topics:
 

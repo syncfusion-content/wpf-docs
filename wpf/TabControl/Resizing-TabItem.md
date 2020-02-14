@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resizing the Tab Item | TabControlExt | wpf | Syncfusion
-description: resizing the tab item
+description: Learn here about how to resizing the tab item in Syncfusion WPF TabControlExt control and its modes.
 platform: wpf
 control: TabControlExt
 documentation: ug
