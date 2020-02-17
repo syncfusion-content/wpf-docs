@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WPF Cell Grid Control | Syncfusion
+title: Overview of WPF Grid Control | Excel like Grid | CellGrid | Syncfusion
 description: This section provides an overview of the grid and it's key features for Syncfusion Essential WPF.
 platform: wpf
 control: Grid
@@ -63,7 +63,7 @@ The Grid control supports many cell types to present data. In addition to built-
 
 ![Various Cell Types of the Grid Control](Overview_images/Overview_img5.png)
 
-#### Appearence
+#### Appearance
 
 The Grid control’s appearance can be customized very easily. Common style properties include options to change background or text color, font, alignment, orientation, border, and wrap text. Various cell formats include date-time, currency, numeric, and text formats, and Excel-like comments are supported.
 

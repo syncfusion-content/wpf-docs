@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Grid Control | Syncfusion
-description: getting started	
+title: Getting Started with WPF Grid Control | Excel like Grid | Syncfusion
+description: Getting Started with WPF Grid Control that provides cell-oriented features and acts as an efficient display engine for tabular data that can be customized down to the cell level.
 platform: wpf
 control: Grid Control
 documentation: ug
@@ -134,7 +134,7 @@ void gridControl_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Gri
 
 3.Now, run the application. The grid will appear as follows. 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+![WPF Grid Control](Getting-Started_images/Getting-Started_img10.png)
 
    
 
