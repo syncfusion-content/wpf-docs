@@ -267,7 +267,7 @@ DataGrid provides built-in row (called AddNewRow) that allows user to add new re
 
 When you start editing in AddNewRow, the SfDataGrid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
 
-N> The underlying data object must be defined with default constructor. Otherwise, create instance of data object by handling `AddNewRowInitiating` event.
+N> The underlying data object must be defined with default constructor.
 
 {% tabs %}
 {% highlight xaml %}

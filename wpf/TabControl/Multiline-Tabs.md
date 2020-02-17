@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Layout Type | TabControlExt | wpf | Syncfusion
-description: layout type
+description: Learn here about how to set the layout type of the tab items in the syncfusion WPF TabControlExt control.
 platform: wpf
 control: TabControlExt
 documentation: ug
 ---
 
-# Layout Type
+# Layout Type for TabItem
 
 You can set the layout type for the TabControlExt control by using the [TabItemLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemLayout.html) property. This dependency property sets the layout type of the Tab Item. It provides the following layout types.
 
