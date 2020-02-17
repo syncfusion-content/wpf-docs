@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with WPF Grid Control | Excel like Grid | Syncfusion
-description: Getting Started with WPF Grid Control that provides cell-oriented features and acts as an efficient display engine for tabular data that can be customized down to the cell level.
+title: Getting Started with WPF Grid Control | Syncfusion
+description: Getting Started with WPF Grid Control that acts as an efficient display engine for tabular data that can be customized down to the cell level.
 platform: wpf
 control: Grid Control
 documentation: ug

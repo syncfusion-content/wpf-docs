@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of WPF Grid Control | Excel like Grid | CellGrid | Syncfusion
-description: This section provides an overview of the grid and it's key features for Syncfusion Essential WPF.
+title: Overview of WPF Grid Control | Excel like Grid | Syncfusion
+description: This section provides an overview of the cell grid and it's key features for Syncfusion Essential WPF.
 platform: wpf
 control: Grid
 documentation: ug
