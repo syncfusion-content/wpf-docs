@@ -13,80 +13,33 @@ We can decide the properties which are need to be readonly(non-editable) in [Pro
 
 ## ReadOnly properties using attributes
 
-We can makes the properties as non-editable by using the [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.readonlyattribute?view=netframework-4.8) and [Editable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=netframework-4.8) attributes. When the property is marked as `ReadOnly` or `Editable` as `false`, the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will not allow the user to change the property values.
-
-`Password` property is marked as Editable false and `DOB` is marked as ReadOnly.
+We can makes the properties as non-editable by using the [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.readonlyattribute?view=netframework-4.8) and [Editable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=netframework-4.8) attributes. When the property is marked as `ReadOnly` or `Editable` as `false`, the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will not allow the user to change the property values manually.
 
 {% tabs %}
 {% highlight C# %}
 
-//Model.cs
-
-using System;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-
-public class Model
-{
-    public string Name
-    {
-        get;
-
-        set;
-    }
-
+public class Employee {
+    public string Name { get; set; }
     [ReadOnly(true)]
-    public DateTime DOB
-    {
-        get;
-
-        set;
-    }
-
+    public DateTime DOB { get; set; }
     [Editable(false)]
-    public Gender Gender
-    {
-        get;
-
-        set;
-    }
+    public Gender Gender { get; set; }
 }
 
-public enum Gender
-{
+public enum Gender {
     Male,
     Female
 }
 
-{% endhighlight %}
-{% endtabs %} 
-
-{% tabs %}
-{% highlight C# %}
-
-//ViewModel.cs
-
-using System;
-using System.Collections.ObjectModel;
-
-public class ViewModel 
-{
-    private Object items = null;
-
-    public Object Items
-    {
-        get
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee() 
         {
-            return items;
-        }
-        set
-        {
-            items = value;
-        }
-    }
-    public ViewModel()
-    {
-        Items = new Model() { Name = "Johnson", Gender= Gender.Male, DOB = new DateTime(2000,01,25), };
+            Name = "Johnson", 
+            Gender = Gender.Male,
+            DOB = new DateTime(2000, 01, 25)
+        };
     }
 }
 
@@ -97,28 +50,18 @@ public class ViewModel
 {% tabs %}
 {% highlight xaml %}
 
-<Window x:Class="PropertyGrid_WPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PropertyGrid_WPF"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="572" Width="800">
-    <Window.DataContext>
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"     
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
-    </Window.DataContext>
-    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" SelectedObject="{Binding Items}">
-        </syncfusion:PropertyGrid>
-    </Grid>
-</Window>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
 {% endhighlight %} 
 {% endtabs %} 
 
 
-Here, the `DOB` and `Gender` properties not editable,
+Here, the `DOB` and `Gender` properties not editable by the attributes.
 
 ![DOB and Gender is not editable in PropertyGrid](Attribute-Images\ReadOnly-Editable-Attribute.png)
 

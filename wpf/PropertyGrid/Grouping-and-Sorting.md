@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping the Properties
 
-We can combine the properties and culb them into expandable groups according to our needs. We can group the properties based on `Category` attribute or `Display.GroupName` field. By default, the grouped properties are displayed in list view. If you want to display the property in grouped view, you can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property to `true`. 
+We can combine the properties and club them into expandable groups according to our needs. We can group the properties based on `Category` attribute or `Display.GroupName` field. By default, the grouped properties are displayed in list view. If you want to display the property in grouped view, you can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property to `true`. 
 
 ![Properties of PropertyGrid is in group mode](Sorting-Images/Grouping.png)
 
