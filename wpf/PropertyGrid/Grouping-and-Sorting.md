@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping the Properties
 
-Users can combine the properties and create multiple groups according to their needs. You can group the property items based on `CategoryAttribute` or `Display Attribute`'s `GroupName` field of the property. By default, the grouped properties are displayed in normal mode. If you want to display the property in group mode, you can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property to `true`. 
+We can combine the properties and create multiple groups according to our needs. You can group the property items based on `CategoryAttribute` or `Display Attribute`'s `GroupName` field of the property. By default, the grouped properties are displayed in normal mode. If you want to display the property in group mode, you can set the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property to `true`. 
 
 ![Properties of PropertyGrid is in group mode](Sorting-Images/Grouping.png)
 
@@ -553,3 +553,5 @@ this.propertyGrid1.ExpandCategory("Identity");
 {% endtabs %} 
 
 ![Itentity group has been expanded](Grouping-and-sorting-Images\Expand-Category.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property grouping support using `AutoGeneratingPropertyGridItem` event.

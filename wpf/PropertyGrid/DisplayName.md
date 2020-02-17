@@ -253,3 +253,5 @@ public class ViewModel {
 ![Display name of the ID property changed to Employee ID by the DisplayName property of the AutoGeneratingPropertyGridItemEventArgs](Attribute-Images\DisplayName-AutoGeneratingPropertyGridItem.png)
 
 Here, the `Name` and `DOB`property display name is changed as `Employee Name` and `Date of Birth` by the `AutoGeneratingPropertyGridItemEventArgs.Name` property of the `AutoGeneratingPropertyGridItem` event, not by any attributes.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Display Name` support using `AutoGeneratingPropertyGridItem` event.

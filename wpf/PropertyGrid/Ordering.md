@@ -525,10 +525,11 @@ public class ViewModel {
     </i:Interaction.Behaviors>
 </syncfusion:PropertyGrid>
 
-
 {% endhighlight %} 
 {% endtabs %} 
 
 ![Properties are ordered based on the value specified in the Order property of the AutoGeneratingPropertyGridItem event](Sorting-Images\Ordering-Event.png)
 
-Here, the `Name` property is arrange at `first` and `Experience` property arranged at `fourth` position based on the value specified in the `AutoGeneratingPropertyGridItemArgs.Order` property.
+Here, the `Name` property is arranged at `first` and `Experience` property arranged at `fourth` position based on the value specified in the `AutoGeneratingPropertyGridItemArgs.Order` property.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Description` support using `AutoGeneratingPropertyGridItem` event.

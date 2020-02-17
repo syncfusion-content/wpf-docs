@@ -479,6 +479,8 @@ public class ViewModel {
 
 Here, the `Experience` and `Name` properties are not displayed in the `PropertyGrid`, since the properties was restricted to be added in `PropertyGrid` by the `AutoGeneratingPropertyGridItem` event.
 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property filtering support using `AutoGeneratingPropertyGridItem` event.
+
 
 
 
