@@ -7,13 +7,13 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Ordering the Properties
+# Ordering using attribute
 
 We can order the properties according to our needs. We can change the order of the properties by [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) Attribute's [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the property.
 
 ## Ordering using Attribute
 
-The properties in `PropertyGrid` will be ordered based on the value specified in the [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute. If you need to change the order of the properties, you should set the `SortDirection` property to `null`. The properties can be ordered on the basis of with and without grouping mode. 
+The properties in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be ordered based on the value specified in the [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute. If you need to change the order of the properties, you should set the `SortDirection` property to `null`. The properties can be ordered on the basis of with group mode and without grouping mode. 
 
 {% tabs %}
 {% highlight C# %}
