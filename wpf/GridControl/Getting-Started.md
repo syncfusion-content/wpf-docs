@@ -7,7 +7,7 @@ control: Grid Control
 documentation: ug
 ---
 
-# Getting Started	
+# Getting Started with Grid
 
 This section is designed to help you understand and quickly get started using Essential Grid in your WPF application.
 
