@@ -169,3 +169,5 @@ propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 {% endtabs %}
 
 ![PropertyGrid with and without group button panel](Sorting-Images/SortButton_visibility.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Grouping-Sorting-Ordering) to download the sample that showcases the property sorting support using the attributes.

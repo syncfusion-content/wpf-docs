@@ -405,3 +405,5 @@ SkinStorage.SetVisualStyle(propertyGridInstance, "Office2010Blue");
 * GroupButton—Groups the properties based on Category attribute of the property.
 * SortButton—Displays the properties in sorting order in PropertyGrid.
 * PropertyGrid—Lists all the properties.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Common) to download the sample that showcases the `PropertyGrid` features.

@@ -20,32 +20,26 @@ We can makes the properties as non-editable by using the [ReadOnly](https://docs
 
 public class Employee {
     public string Name { get; set; }
-    [ReadOnly(true)]
+    public string ID { get; set; }
     public DateTime DOB { get; set; }
-    [Editable(false)]
-    public Gender Gender { get; set; }
-}
-
-public enum Gender {
-    Male,
-    Female
+    public int Experience { get; set; }
 }
 
 public class ViewModel {
-    public Object SelectedEmployee { get; set; }
+    public object SelectedEmployee { get; set; }    
     public ViewModel() {
-        SelectedEmployee = new Employee() 
+        SelectedEmployee = new Employee()
         {
-            Name = "Johnson", 
-            Gender = Gender.Male,
-            DOB = new DateTime(2000, 01, 25)
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24),
+            Experience = 5;
         };
     }
 }
 
 {% endhighlight %} 
-{% endtabs %} 
-
+{% endtabs %}
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,9 +55,13 @@ public class ViewModel {
 {% endtabs %} 
 
 
-Here, the `DOB` and `Gender` properties not editable by the attributes.
+Here, the `DOB` and `Gender` property not editable by the attribute.
 
 ![DOB and Gender is not editable in PropertyGrid](Attribute-Images\ReadOnly-Editable-Attribute.png)
+
+N> If you use both the `ReadOnly` attribute and `Editable` attribute, the `ReadOnly` attribute will have higher priority.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-ReadOnlyProperty) to download the sample that showcases the `ReadOnly` property support using attribute.
 
 ## Setting properties as readonly at runtime
 

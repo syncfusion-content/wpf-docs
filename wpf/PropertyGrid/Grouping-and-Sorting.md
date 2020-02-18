@@ -72,6 +72,8 @@ The `Age` and `DOB` properties do not contain any group name, so they are groupe
 
 N> If you use both the `Category` attribute and `GroupName` field of the `Display` attribute, the `Category` attribute will have higher priority.
 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Grouping-Sorting-Ordering) to download the sample that showcases the property grouping support using the attributes.
+
 ## Grouping the Properties at runtime
 
 We can group the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event with [AutoGeneratingPropertyGridItemEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html).[Category](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Category.html) property. Based on the value of `Category` property, the properties are grouped.
@@ -162,7 +164,7 @@ public class EventToCommandBehavior : Behavior<FrameworkElement> {
 }
 
 /// <summary>
-/// A clas that represents the Commend for the AutoGeneratingPropertyGridItem Event 
+/// A class that represents the Commend for the AutoGeneratingPropertyGridItem Event 
 /// </summary>
 class UpdaterValue : ICommand {
     #region ICommand Members  
