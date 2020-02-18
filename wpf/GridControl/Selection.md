@@ -7,7 +7,7 @@ control: Grid
 documentation: ug
 ---
 
-#Selection
+# Selection
 
 There are two modes of selection available in the Grid. They are,
 
