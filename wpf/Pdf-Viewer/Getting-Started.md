@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with PDFViewer
 
 This section demonstrates how to create an application that displays a PDF file using PDF viewer.
 
