@@ -7,6 +7,10 @@ control: ColorPicker
 documentation: ug
 ---
 
+# Edit a gradient brush with WPF ColorPicker
+
+This section gives a brief note on how to create gradient brushes, modify their stops and modify their properties.
+
 ### What is a gradient brush? 
 
 A gradient brush paints an area with multiple colors that blend into each other along an axis. Color Picker now comes with Gradient tool which returns a brush of type Linear and Radial. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
@@ -15,7 +19,7 @@ A gradient brush paints an area with multiple colors that blend into each other 
 
 ## Gradient Stops
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) has gradient editor similar to that of VisualStudio brush editor. Adding new gradient stops, altering the offset and changing the color of the gradient stops can be done run-time.
+WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) has gradient editor similar to that of VisualStudio brush editor. Adding new gradient stops, altering the offset and changing the color of the gradient stops can be done run-time.
 
 ![WPF ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_editing.gif)
 

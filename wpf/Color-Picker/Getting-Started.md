@@ -14,7 +14,7 @@ This section explains how to create a WPF [ColorPicker](https://help.syncfusion.
 
 ## Structure of ColorPicker
 
-The various elements of ColorPicker are illustrated in the following screenshot.
+The various elements of WPF ColorPicker are illustrated in the following screenshot.
 
 ![Structure of WPF ColorPicker](Getting-Started_images/ColorPicker_Structure.png)
 
@@ -44,7 +44,7 @@ To add the [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wp
 
 * Syncfusion.Shared.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the ColorPicker in XAML page.
+3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the ColorPicker in WPF XAML page.
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ grid.Children.Add(colorPicker);
 
 ## Select a Color
 
-Selecting solid color or gradient brush through [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be done using [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Color.html) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Brush.html) properties.
+Selecting solid color or gradient brush through WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be done using [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Color.html) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Brush.html) properties.
 
 ### Programmatically
 
@@ -120,7 +120,7 @@ Here color can be picked programmatically by following the few steps below.
 
 #### Solid
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) supports [SolidColorBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netframework-4.8) as well as [Color](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.color?view=netframework-4.8) color selection.
+WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) supports [SolidColorBrush](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.solidcolorbrush?view=netframework-4.8) as well as [Color](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.color?view=netframework-4.8) color selection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -153,7 +153,7 @@ colorPicker.Color = Colors.Yellow;
 
 #### Gradient
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) supports gradient brushes which holds multiple colors that blend into each other along an axis.
+[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) supports WPF gradient brushes which holds multiple colors that blend into each other along an axis.
 
 **Linear Gradient**
 
@@ -231,7 +231,7 @@ colorPicker.Brush = radialGradient;
 
 ### Interactively
 
-[ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) consist of bunch of input components to select color and edit its properties runtime.
+WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) consist of bunch of input components to select color and edit its properties runtime.
 
 ![Choose a color from ColorPicker](Getting-Started_images/ColorPicker_Choose_a_color.gif)
 
