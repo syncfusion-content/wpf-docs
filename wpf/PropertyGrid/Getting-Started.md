@@ -116,13 +116,38 @@ public partial class MainWindow : Window
 
 ## Populating the properties
 
-The `PropertyGrid` allows to display the searchable and editable properties of the particular object specified by the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.Property~SelectedObject.html) property.
+We can display the properties of any DotNet object using the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.Property~SelectedObject.html) property. When the `SelectedObject` property is bound with an object, the properties of that object are parsed and displayed in the PropertyGrid.
 
-The properties of the objects can be populated in the following ways,
+{% tabs %}
+{% highlight C# %}
 
-### Populating the properties through XAML
+// Employee class to be explored in property grid.
+public class Employee {
+    public string EmployeeName { get; set; }
+    public string ID { get; set; }
+    public int Age { get; set; }
+    public int Experiance { get; set; }
+}
 
-The user can populate the properties of the Object using XAML
+//Create ViewModel class with a property to be bounded with PropertyGrid.SelectedObject 
+public class ViewModel {
+    public object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee() 
+        {
+            EmployeeName = "Johnson",
+            Age = 25,
+            ID = "1234",
+            Experiance =3
+        };
+    }
+}
+
+The properties of the SelectedEmployee object can be populated in the following ways,
+
+### Populating the properties using XAML
+
+We can populate the properties of the Object using XAML
 
 {% tabs %}
 {% highlight xaml %}
@@ -133,27 +158,35 @@ The user can populate the properties of the Object using XAML
     </syncfusion:PropertyGrid.SelectedObject>
 </syncfusion:PropertyGrid>
 
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"
+                         Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
 {% endhighlight %}
 {% endtabs %}
 
-In the above code snippet, the [Button](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.button?view=netframework-4.8) is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the `Button`. 
+In the above code snippet, the SelectedEmployee object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the SelectedEmployee object. 
 
-### Populating the properties through C#
+### Populating the properties using C#
 
-The user can sets the object to the `SelectedObject` property using C# to populate the properties in the `PropertyGrid`.
+We can sets the object to the `SelectedObject` property using C# to populate the properties in the `PropertyGrid`.
 
 {% tabs %}
 {% highlight c# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-pGrid.SelectedObject = new Button();
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ Populating the Button properties into the PropertyGrid control](Getting-Started_images/Getting-Started_img5.png)
+![ Populating the SelectedEmployee object properties into the PropertyGrid control](Getting-Started_images/Binding-with-any-object_img1.png)
 
-### Name and description of properties
+### Name and Description of properties
 
 You can edit the custom object properties using the PropertyGrid. The following example illustrates how to edit the custom object properties.
 

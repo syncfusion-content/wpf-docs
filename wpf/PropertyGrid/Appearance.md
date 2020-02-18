@@ -157,7 +157,7 @@ propertyGrid.CategoryForeground = Brushes.Red;
 
 ## Setting ToolTip
 
-ToolTip is used to show the information about the segment, when you mouse over on the segment. By default, the tooltip is shown in the `PropertyGrid`. You can hide the tooltip for the properties by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) Property as `false`. The default value of `EnableToolTip` property is `true`.
+ToolTip is used to show the information about the segment, when you mouse over on the segment. We can show information about the property name and type using tooltip when hovering the mouse on the properties and its value field. Tooltip is enabled by default, you can disable it by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html)  to `false`.
 
 {% tabs %}
 {% highlight XAML %}

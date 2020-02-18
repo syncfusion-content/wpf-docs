@@ -87,7 +87,7 @@ Based on the value specified in the `Order` field of `Display` attribute, the pr
 
 Here, the `FirstName` property contains the lower order as `0` and categorized under the `Identity` category. Then the `Identity` category ordered as first. After that, `Age` property contains the lower order as `2` from another category, So `Misc` category ordered as `second`  and vice versa.
 
-### Ordering With list view
+### Ordering With listed view
 
 If more than one property has same `Order` value, then the properties with distinct numbers will be added first, then the duplicate order properties will be added. Also, if any of the properties doesn’t have order, that properties will be arranged at last based on the order in which they were added in the class.
 
