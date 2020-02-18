@@ -7,106 +7,59 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Ordering the Properties
+# Ordering using attribute
 
 We can order the properties according to our needs. We can change the order of the properties by [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) Attribute's [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the property.
 
 ## Ordering using Attribute
 
-The properties in `PropertyGrid` will be ordered based on the value specified in the [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute. If you need to change the order of the properties, you should set the `SortDirection` property to `null`. The properties can be ordered on the basis of with and without grouping mode. 
+The properties in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will be ordered based on the value specified in the [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute. If we need to change the order of the properties, we should set the `SortDirection` property to `null`.
 
 {% tabs %}
 {% highlight C# %}
 
-//Model.cs
-
-using System;
-using System.ComponentModel;
-
-public class Model
-{
+public class Employee {
     [Display(Order = 4)]
-    public String Gender
-    {
-        get;
-
-        set;
-    }
-
+    public String Gender { get; set; }
     [Display(Order = 7)]
-    [Category("Address")]        
-    public String Country
-    {
-        get;
-
-        set;
-    }
-    
+    [Category("Address")]
+    public String Country { get; set; }
     [Display(Order = 6)]
     [Category("Contact Details")]
-    public string Email
-    {
-        get;
-
-        set;
-    }
-
+    public string Email { get; set; }
     [Display(Order = 0)]
-    [Category("Identity")]        
-    public string FirstName
-    {
-        get;
-
-        set;
-    }
-
-    public string Designation
-    {
-        get;
-
-        set;
-    }
-    
+    [Category("Identity")]
+    public string FirstName { get; set; }
+    public string Designation { get; set; }
     [Display(Order = 1)]
     [Category("Identity")]
-    public string LastName
-    {
-        get;
-
-        set;
-    }
-   
-    public string ID
-    {
-        get;
-
-        set;
-    }
-
+    public string LastName { get; set; }
+    public string ID { get; set; }
     [Display(Order = 4)]
-    public DateTime DOB
-    {
-        get;
+    public DateTime DOB { get; set; }
 
-        set;
-    }
-
-    
     [Display(Order = 5)]
     [Category("Contact Details")]
-    public string Mobile
-    {
-        get;
-
-        set;
-    }
-
+    public string Mobile { get; set; }
     [Display(Order = 2)]
-    public int Age
-    {
-        get;
+    public int Age { get; set; }
+}
 
-        set;
+public class ViewModel {
+    public Object SelectedEmplyee { get; set; }
+    public ViewModel() {
+        SelectedEmplyee = new Employee() { 
+            FirstName = "Carl", 
+            LastName = "johnson", 
+            Age = 30, 
+            Country = "United States",
+            Designation = "Team Lead",
+            DOB = new DateTime(2000, 12, 01),
+            Email = "carljanson@gta.com", 
+            Gender = "Male",
+            ID = "SF001", 
+            Mobile = "1234567890" 
+        };
     }
 }
         
@@ -114,223 +67,95 @@ public class Model
 {% endtabs %} 
 
 {% tabs %}
-{% highlight C# %}
-
-//ViewModel.cs
-
-public class ViewModel
-{
-    private Object items = null;
-   
-    public Object Items
-    {
-        get
-        {
-            return items;
-        }
-        set
-        {
-            items = value;
-        }
-    }
-
-    public ViewModel()
-    {
-        Items = new Model() { FirstName = "Carl", LastName = "johnson", Age =30, Country= "United States", Designation="Team Lead", DOB= new DateTime(2000, 12, 01), Email="carljanson@gta.com", Gender="Male", ID="SF001", Mobile="1234567890" };
-    }
-}
-
-{% endhighlight %} 
-{% endtabs %} 
-
-
-{% tabs %}
 {% highlight xaml %}
 
-<Window x:Class="PropertyGrid_WPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PropertyGrid_WPF"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="572" Width="800">
-    <Window.DataContext>
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}" EnableGrouping="True" 
+                         SortDirection="{x:Null}" x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
-    </Window.DataContext>
-    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" SelectedObject="{Binding Items}"
-                                 SortDirection="{x:Null}">
-        </syncfusion:PropertyGrid>
-    </Grid>
-</Window>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
 {% endhighlight %} 
-{% endtabs %} 
+{% endtabs %}
 
+### Ordering in Group view
 
-### Ordering With Grouping mode
-
-Based on the value specified in the `Order` field of `Display` attribute, the property items will be ordered and grouped. Groups are ordered according to which group contains the lower ordered property
+Based on the value specified in the `Order` field of `Display` attribute, the property items will be ordered and grouped. Groups are ordered according to group which contains the lower ordered property.
 
 ![Properties are in ordered based on the value specified in the Order field of the Display attribute](Sorting-Images\Categories-Ordering.png)
 
 Here, the `FirstName` property contains the lower order as `0` and categorized under the `Identity` category. Then the `Identity` category ordered as first. After that, `Age` property contains the lower order as `2` from another category, So `Misc` category ordered as `second`  and vice versa.
 
-### Ordering Without Grouping mode
+### Ordering With listed view
 
-If more than one property has same `Order` value, then the properties with distinct numbers will be added first then the duplicate order properties will be added. Also, if any of the properties doesn’t have order, that properties will be arranged at last based on the order in which they were added in the class.
+If more than one property has same `Order` value, then the properties with distinct numbers will be added first, then the duplicate order properties will be added. Also, if any of the properties doesn’t have order, that properties will be arranged at last based on the order in which they were added in the class.
 
 ![Properties are in ordered based on the value specified in the Order field of the Display attribute](Sorting-Images\Properties-Ordering.png)
 
 Here, the property `DOB` and `Gender` has same order but the `Gender` property is added prior than `DOB`. So the `Gender` property will be arranged in `4th` place, and the `DOB` is arranged after Country property. And the other non-specified order properties are arranged based on the order in which they were added to the Class.
 
-## Ordering without Attributes
+## Ordering based on properties defined in class
 
-The Ordering can be performed without using any Attributes. If the `SortDirection` property is `null` and the properties have no custom order then the properties will be ordered according to the order in which they were added to the class.
+The Ordering can be performed without using any Attributes. If the `SortDirection` property is `null` and the properties have no custom order, then the properties will be ordered according to the order in which they were added to the class.
 
 {% tabs %}
 {% highlight C# %}
-
-//Model.cs
 
 using System;
 using System.ComponentModel;
 
-public class Model
-{
+public class Employee {
     [Category("Identity")]
-    public String Gender
-    {
-        get;
-
-        set;
-    }
-    
+    public String Gender { get; set; }
     [Category("Address")]
-    public String Country
-    {
-        get;
-
-        set;
-    }
-    
+    public String Country { get; set; }
     [Category("Contact Details")]
-    public string Email
-    {
-        get;
-
-        set;
-    }
-            
+    public string Email { get; set; }
     [Category("Identity")]
-    public string FirstName
-    {
-        get;
-
-        set;
-    }
-
-    public string Designation
-    {
-        get;
-
-        set;
-    }
-
+    public string FirstName { get; set; }
+    public string Designation { get; set; }
     [Category("Identity")]
-    public string LastName
-    {
-        get;
-
-        set;
-    }
-
-    public string ID
-    {
-        get;
-
-        set;
-    }
-
-    public DateTime DOB
-    {
-        get;
-
-        set;
-    }
-
+    public string LastName { get; set; }
+    public string ID { get; set; }
+    public DateTime DOB { get; set; }
     [Category("Contact Details")]
-    public string Mobile
-    {
-        get;
-
-        set;
-    }
-
-    public int Age
-    {
-        get;
-
-        set;
-    }
+    public string Mobile { get; set; }
+    public int Age { get; set; }
 }
-        
-{% endhighlight %}
-{% endtabs %} 
 
-{% tabs %}
-{% highlight C# %}
-
-//ViewModel.cs
-
-public class ViewModel
-{
-    private Object items = null;
-   
-    public Object Items
-    {
-        get
-        {
-            return items;
-        }
-        set
-        {
-            items = value;
-        }
-    }
-
-    public ViewModel()
-    {
-        Items = new Model() { FirstName = "Carl", LastName = "johnson", Age =30, Country= "United States", Designation="Team Lead", DOB= new DateTime(2000, 12, 01), Email="carljanson@gta.com", Gender="Male", ID="SF001", Mobile="1234567890" };
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee() 
+        { 
+            FirstName = "Carl",
+            LastName = "johnson", 
+            Age = 30,
+            Country = "United States", 
+            Designation = "Team Lead",
+            DOB = new DateTime(2000, 12, 01),
+            Email = "carljanson@gta.com", 
+            Gender = "Male", 
+            ID = "SF001", 
+            Mobile = "1234567890"
+        };
     }
 }
 
 {% endhighlight %} 
-{% endtabs %} 
-
+{% endtabs %}
 
 {% tabs %}
 {% highlight xaml %}
 
-<Window x:Class="PropertyGrid_WPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PropertyGrid_WPF"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="572" Width="800">
-    <Window.DataContext>
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"
+                         SortDirection="{x:Null}" x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
-    </Window.DataContext>
-    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" SelectedObject="{Binding Items}"
-                                 SortDirection="{x:Null}">
-        </syncfusion:PropertyGrid>
-    </Grid>
-</Window>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
 {% endhighlight %} 
 {% endtabs %} 
 
@@ -344,3 +169,194 @@ Here, the properties are arranged from the `Gender` property and end with `Age` 
 Here, the `Gender` property added in the class at `first` and categorized under the `Identity` category. Then the `Identity` category ordered as `first`. After that, `Country` property added in the class from another category, So `Address` category ordered as `second` and vice versa.
 
 N>If you use both `Ordering` and `Sorting`, `Sorting` have higher priority. So the properties are arranged either `Ascending` or `Descending` order according to the sorting value.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Grouping-Sorting-Ordering) to download the sample that showcases the property ordering support using the attributes.
+
+## Changing Property order at runtime
+
+We can set the property order without using the attributes and can change the property order at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html)  event with [AutoGeneratingPropertyGridItemEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html).[Order](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Order.html) property.
+
+{% tabs %}
+{% highlight C# %}
+
+/// <summary>
+/// A class that represents the AutoGeneratingPropertyGridItem event to AutoGeneratingPropertyGridItem Command
+/// </summary>
+public class EventToCommandBehavior : Behavior<FrameworkElement> {
+    private Delegate _handler;
+    private EventInfo _oldEvent;
+
+    // Event
+    public string Event { 
+        get { return (string)GetValue(EventProperty); }
+        set { SetValue(EventProperty, value); }
+    }
+    public static readonly DependencyProperty EventProperty =
+        DependencyProperty.Register("Event", 
+        typeof(string),
+        typeof(EventToCommandBehavior), 
+        new PropertyMetadata(null, OnEventChanged));
+
+    // Command
+    public ICommand Command { 
+        get { return (ICommand)GetValue(CommandProperty); } 
+        set { SetValue(CommandProperty, value); }
+    }
+    public static readonly DependencyProperty CommandProperty =
+        DependencyProperty.Register("Command",
+        typeof(ICommand),
+        typeof(EventToCommandBehavior),
+        new PropertyMetadata(null));
+
+    // PassArguments (default: false)
+    public bool PassArguments { 
+        get { return (bool)GetValue(PassArgumentsProperty); }
+        set { SetValue(PassArgumentsProperty, value); } }
+    public static readonly DependencyProperty PassArgumentsProperty = 
+        DependencyProperty.Register("PassArguments",
+        typeof(bool), 
+        typeof(EventToCommandBehavior), 
+        new PropertyMetadata(false));
+
+    private static void OnEventChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+        var beh = (EventToCommandBehavior)d;
+        if (beh.AssociatedObject != null) // is not yet attached at initial load
+            beh.AttachHandler((string)e.NewValue);
+    }
+
+    protected override void OnAttached() {
+        AttachHandler(this.Event); // initial set
+    }
+
+    /// <summary>
+    /// Attaches the handler to the event
+    /// </summary>
+    private void AttachHandler(string eventName) {
+        // detach old event
+        if (_oldEvent != null)
+            _oldEvent.RemoveEventHandler(this.AssociatedObject, _handler);
+
+        // attach new event
+        if (!string.IsNullOrEmpty(eventName)) {
+            EventInfo ei = this.AssociatedObject.GetType().GetEvent(eventName);
+            if (ei != null) {
+                MethodInfo mi = this.GetType().GetMethod("ExecuteCommand",
+                    BindingFlags.Instance | BindingFlags.NonPublic);
+                _handler = Delegate.CreateDelegate(ei.EventHandlerType, this, mi);
+                ei.AddEventHandler(this.AssociatedObject, _handler);
+                _oldEvent = ei; // store to detach in case the Event property changes
+            }
+            else
+                throw new ArgumentException(string.Format
+                    ("The event '{0}' was not found on type '{1}'", 
+                    eventName, this.AssociatedObject.GetType().Name));
+        }
+    }
+    private void ExecuteCommand(object sender, EventArgs e) {
+        object parameter = this.PassArguments ? e : sender;
+        if (this.Command != null) {
+            if (this.Command.CanExecute(parameter))
+                this.Command.Execute(parameter);
+        }
+    }
+}
+
+/// <summary>
+/// A clas that represents the Commend for the AutoGeneratingPropertyGridItem Event 
+/// </summary>
+class UpdaterValue : ICommand {
+    #region ICommand Members  
+    public bool CanExecute(object parameter) {
+        return true;
+    }
+    public event EventHandler CanExecuteChanged {
+        add { CommandManager.RequerySuggested += value; }
+        remove { CommandManager.RequerySuggested -= value; }
+    }
+    public void Execute(object parameter) {
+       //Experience, DOB, Name and ID  properties ordered by the order property.
+       if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "Experience") {
+           (parameter as AutoGeneratingPropertyGridItemEventArgs).Order = 3;
+       }
+       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "DOB") {
+           (parameter as AutoGeneratingPropertyGridItemEventArgs).Order = 2;
+       }
+       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "Name") {
+           (parameter as AutoGeneratingPropertyGridItemEventArgs).Order = 0;
+       }
+       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "ID") {
+           (parameter as AutoGeneratingPropertyGridItemEventArgs).Order = 1;
+       }
+   }
+    #endregion
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+public class Employee {
+    public string Name { get; set; }
+    public string ID { get; set; }
+    public DateTime DOB { get; set; }
+    public int Experience { get; set; }
+}
+
+public class ViewModel {
+    private ICommand autoGeneratingPropertyGridItemEventCommand;
+    public object SelectedEmployee { get; set; }
+
+    //Command for the AutoGeneratingPropertyGridItemEvent
+    public ICommand AutoGeneratingPropertyGridItemEventCommand {
+        get { if (autoGeneratingPropertyGridItemEventCommand == null)
+                autoGeneratingPropertyGridItemEventCommand = new UpdaterValue();
+              return autoGeneratingPropertyGridItemEventCommand;
+        }
+        set {
+            autoGeneratingPropertyGridItemEventCommand = value;
+        }
+    }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24),
+            Experience = 5;
+        };
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding IsAsync=True, Path=SelectedEmployee}" 
+                         EnableGrouping="True"
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+    <i:Interaction.Behaviors>
+        <local:EventToCommandBehavior PassArguments="true" 
+            Event="AutoGeneratingPropertyGridItem" 
+            Command="{Binding Path=AutoGeneratingPropertyGridItemEventCommand}" />
+    </i:Interaction.Behaviors>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% endtabs %} 
+
+![Properties are ordered based on the value specified in the Order property of the AutoGeneratingPropertyGridItem event](Sorting-Images\Ordering-Event.png)
+
+Here, the `Name` property is arranged at `first` and `Experience` property arranged at `fourth` position based on the value specified in the `AutoGeneratingPropertyGridItemArgs.Order` property.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Description` support using `AutoGeneratingPropertyGridItem` event.

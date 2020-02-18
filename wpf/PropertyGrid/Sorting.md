@@ -9,10 +9,138 @@ documentation: ug
 
 # Sorting in WPF PropertyGrid
 
-The user can sorting the properties according to their needs. You can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
+We can sort the properties according to our needs. We can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
 Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
 
 ![Properties of PropertyGrid is sorted in ascending order](Sorting-Images/Sorting.png)
+
+## Sorting the Properties
+
+Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property. They sorted based only on the name of the property, not on the display name of the property. If the properties are in the grouped state, then the groups are sorted based on the group name either `Ascending` or `Descending` order. 
+
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee();
+    }
+}
+
+public class Employee
+{
+    [Category("Identity")]
+    public string Name { get; set; }
+    [Category("Contact Details")]
+    public string Email { get; set; }
+    [Category("Account Details")]
+    public string Bank { get; set; }     
+    [Category("Identity")]
+    public string ID { get; set; }
+    [Category("Account Details")]
+    public string AccountNumber { get; set; }
+}
+        
+{% endhighlight %}
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"   
+                         SortDirection="Ascending"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% endtabs %} 
+
+**SortDirection= Ascending**
+
+![Properties are in ascending order based on property name](Sorting-Images\Properties-AscendingOrder.png)
+
+![Categories are in ascending order based on category name](Sorting-Images\Category-AscendingOrder.png)
+
+**SortDirection= Descending**
+
+![Properties are in descending order based on property name](Sorting-Images\Properties-DescendingOrder.png)
+
+![Categories are in descending order based on category name](Sorting-Images\Category-DescendingOrder.png)
+
+## Disable the Sorting
+
+We can disable the sorting by setting the `SortDirection` property as `null`. When sorting is disabled, the properties are arranged based on the value of the `Order` attributes or on
+ the order they added into the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyItem~SelectedObject.html).
+ 
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+
+public class Employee {
+    [Category("Identity")]
+    public String Gender { get; set; }
+    [Category("Address")]
+    public String Country { get; set; }
+    [Category("Contact Details")]
+    public string Email { get; set; }
+    [Category("Identity")]
+    public string FirstName { get; set; }
+    public string Designation { get; set; }
+    [Category("Identity")]
+    public string LastName { get; set; }
+    public string ID { get; set; }
+    public DateTime DOB { get; set; }
+    [Category("Contact Details")]
+    public string Mobile { get; set; }
+    public int Age { get; set; }
+}
+
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee() 
+        { 
+            FirstName = "Carl",
+            LastName = "johnson", 
+            Age = 30,
+            Country = "United States", 
+            Designation = "Team Lead",
+            DOB = new DateTime(2000, 12, 01),
+            Email = "carljanson@gta.com", 
+            Gender = "Male", 
+            ID = "SF001", 
+            Mobile = "1234567890"
+        };
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"
+                         SortDirection="{x:Null}" x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% endtabs %} 
+
+![Properties are in sorted based on they added into the Class](Sorting-Images\Property-Default-Ordering.png)
+
+Here, the properties are arranged from the `Gender` property and end with `Age` property by the order in which they were added to the class. 
 
 ## Show or Hide the Sort Button
 
@@ -40,145 +168,6 @@ propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-![PropertyGrid with and without group button panel](Sorting-Images/GroupButton_visibility.png)
+![PropertyGrid with and without group button panel](Sorting-Images/SortButton_visibility.png)
 
-## Sorting the Properties
-
-Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property as either `Ascending` or `Descending` order. They sorted based only on the name of the property, not on the display name of the property. If the properties are in the grouped state, then the groups are sorted based on the group name. 
-
-{% tabs %}
-{% highlight C# %}
-
-//Model.cs
-
-using System;
-using System.ComponentModel;
-
-public class Model
-{
-    [Category("Identity")]
-    public string Name
-    {
-        get;
-        set;
-    }
-
-    [Category("Contact Details")]
-    public string Email
-    {
-        get;
-        set;
-    }
-
-    [Category("Account Details")]
-    public string Bank
-    {
-        get;
-        set;
-    }
-
-    [Category("Identity")]
-    public string ID
-    {
-        get;
-        set;
-    }
-    
-    [Category("Account Details")]
-    public string AccountNumber
-    {
-        get;
-        set;
-    }  
-}
-        
-{% endhighlight %}
-{% endtabs %} 
-
-{% tabs %}
-{% highlight C# %}
-
-//ViewModel.cs
-
-public class ViewModel
-{
-    private Object items = null;
-   
-    public Object Items
-    {
-        get
-        {
-            return items;
-        }
-        set
-        {
-            items = value;
-        }
-    }
-
-    public ViewModel()
-    {
-        Items = new Model();
-    }
-
-}
-
-{% endhighlight %} 
-{% endtabs %} 
-
-
-{% tabs %}
-{% highlight xaml %}
-
-<Window x:Class="PropertyGrid_WPF.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PropertyGrid_WPF"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="572" Width="800">
-    <Window.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </Window.DataContext>
-    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <syncfusion:PropertyGrid x:Name="propertyGrid1" Width="350" Height="200" SelectedObject="{Binding Items}" 
-                                 SortDirection="Ascending">
-        </syncfusion:PropertyGrid>
-    </Grid>
-</Window>
-
-{% endhighlight %} 
-{% endtabs %} 
-
-**SortDirection= Ascending**
-
-![Properties are in ascending order based on property name](Sorting-Images\Properties-AscendingOrder.png)
-
-![Categories are in ascending order based on category name](Sorting-Images\Category-AscendingOrder.png)
-
-**SortDirection= Descending**
-
-![Properties are in descending order based on property name](Sorting-Images\Properties-DescendingOrder.png)
-
-![Categories are in descending order based on category name](Sorting-Images\Category-DescendingOrder.png)
-
-## Disable the Sorting
-We can disable the sorting by setting the `SortDirection` property as `null`. When sorting is disabled, the properties are arranged based on the value of the `Order` attributes or on
- the order they added into the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyItem~SelectedObject.html).
- 
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:PropertyGrid x:Name="propertyGrid1" SortDirection="{x:Null}" SelectedObject="{Binding SelectedEmployee}">
-        </syncfusion:PropertyGrid>
-
-{% endhighlight %} 
-{% highlight C# %}
-
-PropertyGrid propertyGrid1 = new PropertyGrid();
-propertyGrid1.SortDirection = null;
-
-{% endhighlight %} 
-{% endtabs %} 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Grouping-Sorting-Ordering) to download the sample that showcases the property sorting support using the attributes.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Expand Nested Properties in PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control has support to expand instance properties of a class which has [ExpandableObjectConverter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.expandableobjectconverter?view=netframework-4.8) as its [TypeConverter](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.typeconverter?view=netframework-4.8).
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control has support to expand instance properties of a class.
 
 ###  Navigate to the sub-properties
 
@@ -36,12 +36,21 @@ public class Employee {
     public Address Address { get; set; }
 }
 
-public class ViewModel
-{
+public class ViewModel {
     public object SelectedEmployee { get; set; }
     public PropertyExpandModes PropertyExpandMode { get; set; }
-    public ViewModel(){
-        SelectedEmployee = new Employee() { Address = new Address() { State = "New Yark", DoorNo = "10", StreetName = "Martin street" }, Age = 23, ID = "1207", Name = "Mark" };
+    public ViewModel() {
+        SelectedEmployee = new Employee() {                
+            Age = 23,
+            ID = "1207",
+            Name = "Mark",
+            Address = new Address()
+            {
+                State = "New Yark",
+                DoorNo = "10",
+                StreetName = "Martin street"
+            }
+        };
         PropertyExpandMode = PropertyExpandModes.FlatMode;
     }
 }
@@ -52,29 +61,25 @@ public class ViewModel
 {% tabs %}
 {% highlight xaml %}
 
-<Window.DataContext>
-    <local:ViewModel></local:ViewModel>
-</Window.DataContext>
+<syncfusion:PropertyGrid PropertyExpandMode="NestedMode"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
 
-<Grid>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition></ColumnDefinition>
-        <ColumnDefinition Width="200"></ColumnDefinition>
-    </Grid.ColumnDefinitions>
-    <syncfusion:PropertyGrid PropertyExpandMode="{Binding PropertyExpandMode, Mode=TwoWay}" SelectedObject="{Binding SelectedEmployee }" Grid.Column="0" Name="propertyGrid1" Height="300" Width="300" />
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1">
-        <TextBlock FontWeight="Normal" FontFamily="Segoe UI" FontSize="13" Margin="3" Text ="Nested Property Mode" />
-        <ComboBox FontWeight="Bold" FontFamily="Segoe UI" FontSize="13" SelectedValue="{Binding PropertyExpandMode, Mode=TwoWay}"  Margin="3" Name="nestedProperties"  >
-            <syncfusion:PropertyExpandModes>NestedMode</syncfusion:PropertyExpandModes>
-            <syncfusion:PropertyExpandModes>FlatMode</syncfusion:PropertyExpandModes>
-        </ComboBox>
-    </StackPanel>
-</Grid>
+{% endhighlight %} 
+{% highlight C# %}
 
-{% endhighlight  %}
-{% endtabs %}
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+propertyGrid1.PropertyExpandMode = PropertyExpandModes.NestedMode;
+{% endhighlight %} 
+{% endtabs %} 
 
-Here, `Address` is a class type property in the `Employee` class. It includes the `City`, `StreetName`, and `DoorNo` properties that are shown by setting `PropertyExpandMode` as `NestedMode`.
+Here, `Address` is a class type property in the `Employee` class. It includes the `City`, `StreetName`, and `DoorNo` properties that are shown by setting `PropertyExpandMode` property as `NestedMode`.
 
 ![PropertyGrid show the sub properties](Expand-Nested-Properties_images/Expand-Nested-Properties.png)
 
