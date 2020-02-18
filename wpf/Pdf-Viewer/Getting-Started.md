@@ -11,6 +11,10 @@ documentation: ug
 
 This section demonstrates how to create an application that displays a PDF file using PDF viewer.
 
+To get start quickly with WPF PDFViewer, you can check on this video:
+<style>#WPFPDFViewerVideoTutorial{width : 90% !important; height: 400px !important }</style>
+<iframe id='WPFPDFViewerVideoTutorial' src='https://www.youtube.com/embed/H1YBX_-QWKc'></iframe>
+
 ## Assemblies required
 
 The following assemblies are required in your WPF application to use PDF viewer.
