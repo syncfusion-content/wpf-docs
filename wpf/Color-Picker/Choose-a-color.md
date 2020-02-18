@@ -7,13 +7,17 @@ control: ColorPicker
 documentation: ug
 ---
 
+# Choose a color with WPF ColorPicker
+
+This section explains how to choose a solid color from different color models, how to modify their individual properties and also gives brief information about eye dropper, standard colors and Tooltips.
+
 ### What is solid color?
 
 Solid color comprises a single color created can specify its alpha, red, blue, and green channels or use one of the predefined color provided by the [Colors](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=netframework-4.8) class.
 
 ## How to choose your color
 
-Choosing color from HSV(Hue, saturation and value) explained below
+Choosing color from HSV(Hue, saturation and value) explained below.
 
 ### HUE
 
