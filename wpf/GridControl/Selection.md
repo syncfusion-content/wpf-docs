@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Selection | Grid | WPF | Syncfusion
-description: Selection modes of GridControl
+description: This section will explains about the Selection modes and its customizarion for GridControl in WPF
 platform: wpf
 control: Grid
 documentation: ug
 ---
 
-# Selection
+# Selection in WPF GridControl
 
 Selection will highlight the specified range. There are two modes of selection available in the Grid. They are,
 
@@ -157,7 +157,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiExtended;
 SelectionMode - MultiExtended
 {:.caption}
 
-### Selecting rows/colums programmatically
+### Selecting rows/columns programmatically
 
 The entire grid selections are managed by the [GridModel.Selections](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections.html) collection. It exposes several APIs that let you to add, remove and operate on different grid selections. Below is the description of some important properties and APIs:
 
@@ -304,7 +304,7 @@ this.gridControl.Model.Options.ShowCurrentCell = false;
 {% endhighlight  %}
 {% endtabs %}
 
-![showCurrentCell_Image](Selection-Images/ShowCurrentCell.jpeg)
+![showCurrentCell-Image](Selection-Images/ShowCurrentCell.jpeg)
 Selection without current cell
 {:.caption}
 
