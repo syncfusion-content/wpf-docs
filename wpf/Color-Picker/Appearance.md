@@ -7,6 +7,10 @@ control: ColorPicker
 documentation: ug
 ---
 
+# Appearance in WPF ColorPicker
+
+This page contains a brief description of the WPF ColoPicker Header customization options, built-in themes, and other related layout resources.
+
 ## Header Template
 
 Header of the ColorPicker can be customized using [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~HeaderTemplate.html) property.
@@ -71,6 +75,8 @@ Alpha/Opacity parameter of the color can be altered using delicate slider which 
 ![WPF ColorPicker IsAlphaVisible](ScRGB-Color_images/ColorPicker_IsAlphaVisible.png)
 
 ## Setting VisualStyle for ColorPicker control
+
+WPF ColorPicker provides built-in themes which can be applied using SkinStorage and SfSkinManager. Also provides support to create custom theme using theme studio.
 
 You can enhance the appearance of the [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) by using the [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinStorage~VisualStyleProperty.html) property. VisualStyle is an attached property that gets or sets the value for the visual style. Use the following code to set the visual style for the ColorPicker control.
 
