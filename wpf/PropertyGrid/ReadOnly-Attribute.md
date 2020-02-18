@@ -7,13 +7,13 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# ReadOnly properties properties in WPF PropertyGrid
+# ReadOnly properties in WPF PropertyGrid
 
-We can decide the properties which are need to be readonly(non-editable) in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid). It can be achieved by attributes and event.
+We can create a readonly properties by adding a get accessor for the property, but not a set accessor by default. If we want to make property as readonly which contains public get and set accessor, it can be achieved by attributes and event in the  [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid).
 
 ## ReadOnly properties using attributes
 
-We can makes the properties as non-editable by using the [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.readonlyattribute?view=netframework-4.8) and [Editable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=netframework-4.8) attributes. When the property is marked as `ReadOnly` or `Editable` as `false`, the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will not allow the user to change the property values manually.
+We can makes the properties as non-editable by using the [ReadOnly](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.readonlyattribute?view=netframework-4.8) and [Editable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=netframework-4.8) attributes. When the property is marked as `ReadOnly` or `Editable` as `false`, the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) will not allow the user to change the property values.
 
 {% tabs %}
 {% highlight C# %}

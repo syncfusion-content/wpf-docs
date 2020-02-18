@@ -16,7 +16,7 @@ Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The 
 
 ## Sorting the Properties
 
-Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property. They sorted based only on the name of the property, not on the display name of the property. If the properties are in the grouped state, then the groups are sorted based on the group name either `Ascending` or `Descending` order. 
+Properties in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) are sorted by using the `SortDirection` property. They sorted based only on the name of the property, not by the display name of the property. If the properties are in the grouped view, then the groups are sorted based on the group name either `Ascending` or `Descending` order. 
 
 {% tabs %}
 {% highlight C# %}
@@ -144,7 +144,7 @@ Here, the properties are arranged from the `Gender` property and end with `Age` 
 
 ## Show or Hide the Sort Button
 
-The User can change the states of the properties from grouping state to sort state by the `SortButton`. You can show or hide the sort button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ButtonPanelVisibility.html) property. If you want to hide the `SortButton`, set the `ButtonPanelVisibility` property as `Collapsed`. The Default value of the `ButtonPanelVisibility` property is `Visible`.
+We can change the view of the properties from grouped view to sort view by the `SortButton`. We can show or hide the sort button by using the [ButtonPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ButtonPanelVisibility.html) property. If we want to hide the `SortButton`, set the `ButtonPanelVisibility` property as `Collapsed`. The Default value of the `ButtonPanelVisibility` property is `Visible`.
 
 {% tabs %}
 {% highlight xaml %}

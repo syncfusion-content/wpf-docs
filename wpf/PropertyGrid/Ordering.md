@@ -9,7 +9,7 @@ documentation: ug
 
 # Ordering using attribute
 
-We can order the properties according to our needs. We can change the order of the properties by [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) Attribute's [Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8) field of the property.
+We can order the properties according to our needs. We can change the order of the properties by attributes and event.
 
 ## Ordering using Attribute
 
@@ -87,7 +87,7 @@ Based on the value specified in the `Order` field of `Display` attribute, the pr
 
 Here, the `FirstName` property contains the lower order as `0` and categorized under the `Identity` category. Then the `Identity` category ordered as first. After that, `Age` property contains the lower order as `2` from another category, So `Misc` category ordered as `second`  and vice versa.
 
-### Ordering With listed view
+### Ordering With Sort view
 
 If more than one property has same `Order` value, then the properties with distinct numbers will be added first, then the duplicate order properties will be added. Also, if any of the properties doesn’t have order, that properties will be arranged at last based on the order in which they were added in the class.
 
