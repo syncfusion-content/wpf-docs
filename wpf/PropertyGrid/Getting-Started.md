@@ -152,12 +152,6 @@ We can populate the properties of the Object using XAML
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid  Name="propertyGrid1" Height="500" Width="300" >
-    <syncfusion:PropertyGrid.SelectedObject>
-        <Button></Button>
-    </syncfusion:PropertyGrid.SelectedObject>
-</syncfusion:PropertyGrid>
-
 <syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"
                          Name="propertyGrid1" >
     <syncfusion:PropertyGrid.DataContext>
@@ -168,7 +162,7 @@ We can populate the properties of the Object using XAML
 {% endhighlight %}
 {% endtabs %}
 
-In the above code snippet, the SelectedEmployee object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the SelectedEmployee object. 
+In the above code snippet, the `SelectedEmployee` object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the `SelectedEmployee` object. 
 
 ### Populating the properties using C#
 
@@ -186,257 +180,120 @@ propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).Selected
 
 ![ Populating the SelectedEmployee object properties into the PropertyGrid control](Getting-Started_images/Binding-with-any-object_img1.png)
 
-### Name and Description of properties
+## Custom Editor for value editors
 
-You can edit the custom object properties using the PropertyGrid. The following example illustrates how to edit the custom object properties.
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors, to give a good look and feel for the application, use `CustomEditors`. We can make own customized value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html).
 
-1. Create a class called Person and define the properties. 
+### Creating the Custom Editor 
+
+To create `CustomEditor`, we need to implement `ITypeEditor` interface. Here, `SfMaskedEdit` is created with `EmailId` mask as `EmailEditor`.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
-[TypeConverter(typeof(ExpandableObjects))]
-public class Person
-{
-	public Person()
-	{            
-		Name = "Johnson";
-		Age = 30;
-		Mobile = 91983467382;
-		Email = "carljohnson@gta.com";
-		ID = "0005A";
-		DOB = new DateTime(1987, 10, 16);           
-	}
-	[CategoryAttribute("Identity")]
-	[DisplayNameAttribute("Name")]
-	[DescriptionAttribute("Name of the actual person.")]
-	public string Name
-	{
-		get;
-		set;
-	}
-	[CategoryAttribute("Identity")]
-	[DisplayNameAttribute("ID")]
-	[DescriptionAttribute("ID of the actual person.")]
-	public string ID
-	{
-		get;
-		set;
-	}
-	[CategoryAttribute("Identity")]
-	[DisplayNameAttribute("Date of Birth")]
-	[DescriptionAttribute("Birth date of the actual person.")]
-	public DateTime DOB
-	{
-		get;
-		set;
-	}
-	[CategoryAttribute("Contact Details")]
-	[DisplayNameAttribute("Email ID")]
-	[DescriptionAttribute("Email address of the actual person.")]
-	public string Email
-	{
-		get;
-		set;
-	}
-    [CategoryAttribute("Contact Details")]
-	[DisplayNameAttribute("Mobile Number")]
-	[DescriptionAttribute("Contact number of the actual person.")]
-	public long Mobile
-	{
-		get;
-		set;
-	}
-	[CategoryAttribute("Identity")]
-	[DisplayNameAttribute("Age")]
-	[DescriptionAttribute("Age of the actual person.")]
-	public int Age
-	{
-		get;
-		set;
-	}
-    [CategoryAttribute("Identity")]
-	[DisplayNameAttribute("Gender")]
-	[DescriptionAttribute("Gender information of the actual person.")]
-	public Gender Gender
-	{
-		get;
-		set;
-	}
-	[CategoryAttribute("Location")]
-	[DisplayNameAttribute("Country")]
-	[DescriptionAttribute("Country where the person is located.")]
-	public Country Country
-	{
-		get;
-		set;
-	}       
-}
-public enum Country
-{
-	UnitedStates,
-	Germany,
-	Canada,
+//Custom Editor for the EmailId properties.
+public class EmailEditor : ITypeEditor {
+    SfMaskedEdit maskededit;
+    public void Attach(PropertyViewItem property, PropertyItem info) {
+        if (info.CanWrite) {
+            var binding = new Binding("Value")
+            {
+                Mode = BindingMode.TwoWay,
+                Source = info,
+                ValidatesOnExceptions = true,
+                ValidatesOnDataErrors = true
+            };
+            BindingOperations.SetBinding(maskededit, SfMaskedEdit.ValueProperty, binding);
+        }
+        else {
+            maskededit.IsEnabled = false;
+            var binding = new Binding("Value")
+            {
+                Source = info,
+                ValidatesOnExceptions = true,
+                ValidatesOnDataErrors = true
+            };
+            BindingOperations.SetBinding(maskededit, SfMaskedEdit.ValueProperty, binding);
+        }
+    }
+    public object Create(PropertyInfo propertyInfo) {
+        maskededit = new SfMaskedEdit();
+        maskededit.MaskType = MaskType.RegEx;
+        maskededit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
+        return maskededit;
+    }
+    public void Detach(PropertyViewItem property) {
+
+    }
 }
 
-{% endhighlight %}
+{% endhighlight  %}
 {% endtabs %}
 
-2. Set the SelectedObject of the property to the instance of the class Person.
+### Assigning a Custom Editor using Editor Attribute
+
+We can assign the `CustomEditor` to any individual property by name of the property and to multiple properties based on the property type by using the `Editor` attribute.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight C# %}
 
-PropertyGrid pGrid = new PropertyGrid();
-pGrid.SelectedObject = new Person();
-
-{% endhighlight %}
-{% endtabs %}
-
-3. The PropertyGrid will be generated as shown in the following screenshot.
-
-![Property grid exploring properties of Person class](Getting-Started_images/Getting-Started_img6.png)
-
-### Edit properties using custom editor
-
-The PropertyGrid also provides custom editor support. The following example shows how to create the custom editor.
-
-1. Define the custom editor with the ITypeEditor interface as follows:
-
-{% tabs %}
-{% highlight c# %}
-
-public class UpDownEditor : ITypeEditor
-{
-	public void Attach(PropertyViewItem property, PropertyItem info)
-	{
-		if (info.CanWrite)
-		{
-			var binding = new Binding("Value")
-			{
-				Mode = BindingMode.TwoWay,
-				Source = info,
-				ValidatesOnExceptions = true,
-				ValidatesOnDataErrors = true
-			};
-			BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
-		}
-		else
-		{
-			upDown.AllowEdit = false;
-			var binding = new Binding("Value")
-			{
-				Source = info,
-				ValidatesOnExceptions = true,
-				ValidatesOnDataErrors = true
-			};
-			BindingOperations.SetBinding(upDown, UpDown.ValueProperty, binding);
-		}
-	}
-    UpDown upDown;
-	public object Create(PropertyInfo propertyInfo)
-	{
-		upDown = new UpDown()
-		{
-			ApplyZeroColor = false
-		};
-		if (propertyInfo.Name == "FontSize" || propertyInfo.Name == "MinWidth" || propertyInfo.Name == "MinHeight" || propertyInfo.Name == "MaxHeight" || propertyInfo.Name == "MaxWidth" ||
-		propertyInfo.Name == "Height" || propertyInfo.Name == "Width" || propertyInfo.Name == "ActualWidth" || propertyInfo.Name == "ActualHeight")
-		{
-			upDown.MinValue = 0;
-		}
-		if (propertyInfo.Name == "Opacity")
-		{
-			upDown.MinValue = 0.0;
-			upDown.MaxValue = 1.0;
-			upDown.Step = 0.1;
-		}
-		return upDown;
-	}
-	public void Detach(PropertyViewItem property)
-	{
-		throw new NotImplementedException();
-	}
+//CustomEditor for the specific (EmailID) property
+[Editor("EmailID", typeof(EmailEditor))]
+//Custom Editor for the multiple(Integer type) properties
+[Editor(typeof(int), typeof(IntegerEditor))]
+public class Employee : NotificationObject {
+    public string EmailID { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int Experience { get; set; }
 }
 
-{% endhighlight %}
+class ViewModel {
+    public object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Age = 25,
+            Name = "mark",
+            Experience = 5,
+            EmailID = "mark@gt"
+        };
+    }
+}
+
+{% endhighlight  %}
 {% endtabs %}
-
-The UpDownEditor given in the above code snippet is used to edit the double values. Since the UpDown control has features like scroll buttons to increase the value, it makes it easier to edit the property values of type double. 
-
-2. Create an instance of Customer Editor with this UpDownEditor as follows:
-
-{% tabs %}
-{% highlight c# %}
-
-CustomEditor upDownEditor = new CustomEditor() 
-{ 
-	HasPropertyType = true, 			
-	PropertyType = typeof(double), 
-	Editor = new UpDownEditor() 
-};
-
-{% endhighlight %}
-{% endtabs %}
-
-3. Add this custom editor instance to the CustomEditorCollection property of the PropertyGrid as follows:
-
-{% tabs %}
-{% highlight c# %}
- 
-pgridInstance.CustomEditorCollection.Add(brusheditor); 
-
-{% endhighlight %}
-{% endtabs %}
-
-The PropertyGrid displays the UpDownEditor as shown in the following screenshot for the double type values.
-
-![image](Getting-Started_images/Getting-Started_img7.png)
-
-## Visual styles
-
-The PropertyGrid control supports the following built-in visual styles:
-
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* Office2010Blue
-* Office2010Black
-* Office2010Silver
-* Blend
-* Metro
-* Transparent
-
-The visual style can be applied in XAML as follows:
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid
-syncfusion:SkinStorage.VisualStyle="Office2010Blue" />   
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+   </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
 
-{% endhighlight %}
+{% endhighlight  %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+ViewModel viewModel = new ViewModel();
+propertyGrid1.SelectedObject = viewModel.SelectedEmployee;
+
+{% endhighlight  %}
 {% endtabs %}
 
-The PropertyGrid control gets the Office2010Blue look.
 
-The visual styles can be applied in C# as follows:
+Here, The `EmailID` is a string property, the `TextBox` is assigned as a default editor. We changed it as `SfMaskedEdit` textbox that accepts only inputs which are in the email-id format. Also, we assigned the `IntegerEditor` for the integer type properties, so it applied to the `Experience` and `Age` properties. Then, the value editors for the `Experience` and `Age` property is changed from `NumericTextBox` to `Updown` control.
 
-{% tabs %}
-{% highlight c# %}
+![Property grid with specified custom value editor for EmailID property](CustomEditor-support_images/CustomEditor-Attribute.png)
 
-SkinStorage.SetVisualStyle(propertyGridInstance, "Office2010Blue");
 
-{% endhighlight %}
-{% endtabs %}
 
-## Structure of the PropertyGrid control
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-CustomEditor) to download the sample that showcases the `CustomEditor` support.
 
-![image](Getting-Started_images/Getting-Started_img8.png)
 
-* Button panel—Shows the GroupButton and SortButton to help the user at run time.
-* GroupButton—Groups the properties based on Category attribute of the property.
-* SortButton—Displays the properties in sorting order in PropertyGrid.
-* PropertyGrid—Lists all the properties.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Common) to download the sample that showcases the `PropertyGrid` features.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Common) to download the sample that showcases the `PropertyGrid` overall features.
+

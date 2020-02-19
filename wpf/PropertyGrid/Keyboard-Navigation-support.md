@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Navigation between property items
 
-The following table explains how the navigation performed between property items,
+The following table explains how the navigation performed between properties,
 
 <table>
 <th> S.No </th>

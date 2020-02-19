@@ -13,7 +13,7 @@ The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) cont
 
 ###  Navigate to the sub-properties
 
-We can choose whether the sub-properties of the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) can be expanded or not by using the [PropertyExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~PropertyExpandMode.html) property. The Values of `PropertyExpandMode` is `NestedMode` and `FlatMode`. By default, the sub-properties are not shown.  If we want to display the sub-properties, you can set the `PropertyExpandMode`  property as `NestedMode`.
+We can choose whether the sub-properties of the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) can be expanded or not by using the [PropertyExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~PropertyExpandMode.html) property. The Values of `PropertyExpandMode` is `NestedMode` and `FlatMode`. By default, the sub-properties are not shown.  If we want to display the sub-properties, we can set the `PropertyExpandMode`  property as `NestedMode`.
 
 {% tabs %}
 {% highlight C# %}
