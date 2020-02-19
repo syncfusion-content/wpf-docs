@@ -17,7 +17,7 @@ WPF Grid Control supports for range and record selection modes. Selection will h
 
 ## Range Selection
 
-Range selection is a cell-based selection mode that allows you to do a selection across the cell by using the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~AllowSelection.html) property. It accepts value from [GridSelectionFlags](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridSelectionFlags.html) enumeration. Default value for `AllowSelection` is `Any` and the specified range of Cell/Row/Column or Table can be highlighted.
+Range selection is a cell-based selection mode that allows you to do a selection across the cell by using the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~AllowSelection.html) property. It accepts value from [GridSelectionFlags](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridSelectionFlags.html) enumeration. Default value for `AllowSelection` is `Any` and the specified range of Cell/Row/Column or Table can be highlighted using the range section.
 
 The possible values for this type of selection are defined by the enum GridSelectionFlags. To control the selection behavior of the grid, set any of the following flags to the AllowSelection property. 
 
@@ -78,10 +78,7 @@ grid.Model.Options.AllowSelection = GridSelectionFlags.Multiple | GridSelectionF
 {% endhighlight  %}
 {% endtabs %}
 
-![](Working-with-Grid_images/Working-with-Grid_img18.jpeg)
-
-Selecting multiple Columns
-{:.caption}
+![Selecting multiple Columns](Working-with-Grid_images/Working-with-Grid_img18.jpeg)
 
 ## Record Selection
 
