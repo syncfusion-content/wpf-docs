@@ -7,7 +7,7 @@ control: Grid Control
 documentation: ug
 ---
 
-# Cell Types in Grid
+# Cell Types in GridControl
 
 Essential Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the grid control. This attribute of a grid cell is referred to as its Cell Type.
 
