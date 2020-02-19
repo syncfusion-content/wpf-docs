@@ -9,7 +9,55 @@ documentation: ug
 
 # Custom Editor in WPF PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors, to give a good look and feel for the application, use `CustomEditors`. We can make own customized value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html).
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor to the properties.
+
+
+<table>
+<th> S.No </th>
+<th> Property Type </th>
+<th> Default Editor </th>
+<tr>
+<td>1</td>
+<td>int</td>
+<td>IntegerTextBox</td>
+</tr>
+<tr>
+<td>2</td>
+<td>double</td>
+<td>DoubleTextBox</td>
+</tr>
+<tr>
+<td>3</td>
+<td>string</td>
+<td>TextBox</td>
+</tr>
+<tr>
+<td>4</td>
+<td>enum</td>
+<td>ComboBox</td>
+</tr>
+<tr>
+<td>5</td>
+<td>DateTime</td>
+<td>DateTimeEdit</td>
+</tr>
+<tr>
+<tr>
+<td>6</td>
+<td>bool</td>
+<td>CheckBox</td>
+</tr>
+<tr>
+<tr>
+<td>7</td>
+<td>Brush</td>
+<td>ColorPicker</td>
+</tr>
+<tr>
+</table>
+
+
+To give a good look and feel for the application, use `CustomEditors`. We can make own customized value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html).
 
 ## Creating the Custom Editor 
 
