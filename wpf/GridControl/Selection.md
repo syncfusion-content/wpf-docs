@@ -78,7 +78,7 @@ grid.Model.Options.AllowSelection = GridSelectionFlags.Multiple | GridSelectionF
 {% endhighlight  %}
 {% endtabs %}
 
-![Selecting multiple Columns](Working-with-Grid_images/Working-with-Grid_img18.jpeg)
+![Selecting multiple Columns](Selection-Images/MultipleSelection.jpeg)
 
 ## Record Selection
 
@@ -94,7 +94,7 @@ To enable record selection, set the [ListBoxSelectionMode](https://help.syncfusi
 
 ### SelectionMode-One
 
-It allows you to select only one item (record). For example, you have selected a record. Now if you select some other record, the previous record selection will be cleared. Hence it is a `One` record selection mode. The following code is used to set this mode:
+It allows you to select only one item (record). For example, you have selected a record. Now if you select some other record, the previous record selection will be cleared. Hence it is a `One` record selection mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -103,15 +103,13 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.One;
 {% endhighlight  %}
 {% endtabs %}
 
-![SelectionMode-one](Working-with-Grid_images/Working-with-Grid_img22.jpeg)
+![SelectionMode-one](Selection-Images/OneSelectionMode.jpeg)
 
 N> Record can be selected using a single mouse click or using UP or DOWN Arrow Keys
 
 ### SelectionMode - MultiSimple
 
 In this selection mode, you will be able to select multiple items individually. For instance, you have selected a record using mouse and you want to select one more record. Click another record and you will notice that the previous selection is not cleared. Hence You can select multiple records without the need of SHIFT or CTRL keys.
-
-The following code is used to set this mode:
 
 {% tabs %}
 {% highlight c# %}
@@ -120,7 +118,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiSimple;
 {% endhighlight  %}
 {% endtabs %}
 
-![SelectionMode MultiSimple](Working-with-Grid_images/Working-with-Grid_img23.jpeg)
+![SelectionMode MultiSimple](Selection-Images/MultiSimpleMode.jpeg)
 
 N> It does not support the use of SHIFT, CTRL and arrow keys to extend the selection.
 
@@ -134,8 +132,6 @@ You can do any of the following when this selection mode is enabled:
 * You can make random selection by holding down the CTRL key. 
 * Hold down the Shift key and select the records using the UP or DOWN ARROW keys.
 
-The following code is used to set this mode:
-
 {% tabs %}
 {% highlight c# %}
 grid.AllowSelection = GridSelectionFlags.Row;
@@ -143,7 +139,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiExtended;
 {% endhighlight  %}
 {% endtabs %}
 
-![SelectionMode-MultiExtended](Working-with-Grid_images/Working-with-Grid_img24.jpeg)
+![SelectionMode-MultiExtended](Selection-Images/MultiExtendedMode.jpeg)
 
 ## Selecting rows and columns programmatically
 
@@ -215,7 +211,7 @@ Specifies the background color for selection.</td></tr>
 Specifies the foreground color for selection.</td></tr>
 </table>
 
-Below code provides alpha blended selection:
+Customizing `AlphaBlendSelection` background.
 
 {% tabs %}
 {% highlight c# %}
@@ -233,9 +229,9 @@ grid.Model.Options.DrawSelectionOptions = GridDrawSelectionOptions.AlphaBlend;
 {% endhighlight  %}
 {% endtabs %}
 
-![Alpha-blended-selection](Working-with-Grid_images/Working-with-Grid_img19.jpeg)
+![Alpha-blended-selection](Selection-Images/AlphaBlendSelection.jpeg)
 
-Below code lets you set the background of the selection:
+Customizing the background of selected ranges.
 
 {% tabs %}
 {% highlight c# %}
@@ -244,9 +240,9 @@ grid.Model.Options.HighlightSelectionBackground = Brushes.LightBlue;
 {% endhighlight %}
 {% endtabs %}
 
-![Selection Background set to blue](Working-with-Grid_images/Working-with-Grid_img20.jpeg)
+![Selection Background set to blue](Selection-Images/SelectionBackground.jpeg)
 
-Below code lets you set the foreground of the selection:
+Customizing foreground color of selected ranges.
 
 {% tabs %}
 {% highlight c# %}
@@ -255,11 +251,11 @@ grid.Model.Options.HighlightSelectionForeground = Brushes.Red;
 {% endhighlight  %}
 {% endtabs %}
 
-![Foreground of the selection set to pink](Working-with-Grid_images/Working-with-Grid_img21.jpeg)
+![Foreground of the selection set to pink](Selection-Images/SelectionForeground.jpeg)
 
 ## Excel-like Selection Frame
 
-The active selection can be outlined with a selection frame by setting the [GridModelOptions.ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeSelectionFrame.html) property to `true`, as follows:
+The active selection can be outlined with a selection frame by setting the [GridModelOptions.ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeSelectionFrame.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -267,7 +263,9 @@ grid.Model.Options.ExcelLikeSelectionFrame = true;
 {% endhighlight  %}
 {% endtabs %}
 
-![Grid Displaying Excel like Selection Frame](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
+![Grid Displaying Excel like Selection Frame](Selection-Images/ExcelLikeSelectionFrame.jpeg)
+
+N> If multiple ranges are selected, the selection frame is applicable only for `ActiveRange`.
 
 ## CurrentCell
 
@@ -284,7 +282,7 @@ this.gridControl.Model.Options.ShowCurrentCell = false;
 
 ## Excel-like CurrentCell
 
-You can select a current cell in the Grid, similar to the current cell behavior in Microsoft Excel(borders with thickness). This feature can be enabled by setting [GridModelOptions.ExcelLikeCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeCurrentCell.html) property to `true` as follows:  
+You can select a current cell in the Grid, similar to the current cell behavior in Microsoft Excel(borders with thickness). This feature can be enabled by setting [GridModelOptions.ExcelLikeCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeCurrentCell.html) property to `true`.  
 
 {% tabs %}
 {% highlight c# %}
@@ -292,9 +290,9 @@ grid.Model.Options.ExcelLikeCurrentCell = true;
 {% endhighlight  %}
 {% endtabs %}
 
-![Grid Showing Excel like Current Cell Selection](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
+![Grid Showing Excel like Current Cell Selection](Selection-Images/ExcelLikeCurrentCell.jpeg)
 
-N>  If you have selected a current cell within a specified range, the range will be cleared, when you move the current cell selection out of this range.
+N> If you have selected a current cell within a specified range, the range will be cleared, when you move the current cell selection out of this range.
 
 
 ## Highlighting row and column header based on selection
@@ -302,8 +300,6 @@ N>  If you have selected a current cell within a specified range, the range will
 In Excel, whenever a selection is made, the headers of those rows and columns which are involved in the selection will be highlighted. You can get a similar behavior in the Grid by overriding the [OnPrepareRenderCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~OnPrepareRenderCell.html) method.
 
 `OnPrepareRenderCell` method will be invoked for every cell in the grid, when they are about to be rendered. Hence, using this method, the cells which are going to be rendered are identified and their headers are highlighted.
-
-The following code illustrates how to handle this event:
 
 {% tabs %}
 {% highlight c# %}
@@ -326,6 +322,6 @@ class ExcelGrid : GridControl
 {% endhighlight  %}
 {% endtabs %}
 
-![Grid with markup headers](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)
+![Grid with markup headers](Selection-Images/HighLightHeaders.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/Row-and-column-header-highlighting-based-on-selection-in-WPF-Grid-Control)
