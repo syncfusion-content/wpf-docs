@@ -9,7 +9,7 @@ documentation: ug
 
 # ReadOnly properties in WPF PropertyGrid
 
-We can create a readonly properties by adding a get accessor for the property, but not a set accessor by default. If we want to make property as readonly which contains public get and set accessor, it can be achieved by attributes and event in the  [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid).
+We can create a readonly properties by adding a get accessors for the property, but not a set accessors by default. If we want to make property as readonly which contains public get and set accessors, it can be achieved by attributes and event in the  [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid).
 
 ## ReadOnly properties using attributes
 

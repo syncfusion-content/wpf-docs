@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering and Searching the properties in WPF PropertyGrid
 
-We can decide the properties which are need to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) by hiding the unwanted properties using collection and attributes. We can navigate to the particular property by using the default searchbox.
+We can decide the properties which are need to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) by hiding the unwanted properties using collection and attributes. We can navigate to the particular property by using the default SearchBox.
 
 ## Hide the Properties using Collection
 
@@ -471,7 +471,7 @@ propertyGrid1.SearchBoxVisibility = Visibility.Collapsed;
 
 ![SearchBox not displayed in PropertyGrid](Filtering-Images\SearchBox-collapsed.png)
 
-Here, The SearchBox is hided in the `PropertyGrid`.
+Here, The SearchBox is hidden in the `PropertyGrid`.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Grouping-Sorting-Ordering) to download the sample that showcases the property searching in the SearchBox support.
 

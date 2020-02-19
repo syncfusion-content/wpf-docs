@@ -237,9 +237,9 @@ We can assign the `CustomEditor` to any individual property by name of the prope
 {% tabs %}
 {% highlight C# %}
 
-//CustomEditor for the specfic(EmailID) property
+//CustomEditor for the specific (EmailID) property
 [Editor("EmailID", typeof(EmailEditor))]
-//Custom Editor for the multiple(Tnteger type) properties
+//Custom Editor for the multiple(Integer type) properties
 [Editor(typeof(int), typeof(IntegerEditor))]
 public class Employee : NotificationObject {
     public string EmailID { get; set; }
