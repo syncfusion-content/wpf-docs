@@ -11,7 +11,6 @@ documentation: ug
 
 The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor to the properties.
 
-
 <table>
 <th> S.No </th>
 <th> Property Type </th>
@@ -143,11 +142,18 @@ public class IntegerEditor : ITypeEditor {
 {% endhighlight  %}
 {% endtabs %}
 
+## Assigning a Custom Editor using Editor Attribute
+
+We can assign the `CustomEditor` to any individual property by name of the property and to multiple properties based on the property type by using the `Editor` attribute.
+
 {% tabs %}
 {% highlight C# %}
 
-//Employee class containing the properties.
-public class Employee : NotificationObject {
+//CustomEditor for the specfic(EmailID) property
+[Editor("EmailID", typeof(EmailEditor))]
+//Custom Editor for the multiple(Tnteger type) properties
+[Editor(typeof(int), typeof(IntegerEditor))]
+public class Employee {
     public string EmailID { get; set; }
     public string Name { get; set; }
     public int Age { get; set; }
@@ -190,27 +196,6 @@ propertyGrid1.SelectedObject = viewModel.SelectedEmployee;
 {% endhighlight  %}
 {% endtabs %}
 
-## Assigning a Custom Editor using Editor Attribute
-
-We can assign the `CustomEditor` to any individual property by name of the property and to multiple properties based on the property type by using the `Editor` attribute.
-
-{% tabs %}
-{% highlight C# %}
-
-//CustomEditor for the specfic(EmailID) property
-[Editor("EmailID", typeof(EmailEditor))]
-//Custom Editor for the multiple(Tnteger type) properties
-[Editor(typeof(int), typeof(IntegerEditor))]
-public class Employee : NotificationObject {
-    public string EmailID { get; set; }
-    public string Name { get; set; }
-    public int Age { get; set; }
-    public int Experience { get; set; }
-}
-
-{% endhighlight  %}
-{% endtabs %}
-
 Here, The `EmailID` is a string property, the `TextBox` is assigned as a default editor. We changed it as `SfMaskedEdit` textbox that accepts only inputs which are in the email-id format. Also, we assigned the `IntegerEditor` for the integer type properties, so it applied to the `Experience` and `Age` properties. Then, the value editors for the `Experience` and `Age` property is changed from `NumericTextBox` to `Updown` control.
 
 ![Property grid with specified custom attribute](CustomEditor-support_images/CustomEditor-Attribute.png)
@@ -226,15 +211,57 @@ If we want to apply custom editor for any particular property, we need to create
 {% tabs %}
 {% highlight C# %}
 
-public partial class MainWindow : Window {
-    public MainWindow() {
-        InitializeComponent();
-        CustomEditor editor = new CustomEditor();
-        editor.Editor = new EmailEditor();
-        editor.Properties.Add("EmailID");
-        this.propertyGrid1.CustomEditorCollection.Add(editor);
+public class Employee {
+    public string EmailID { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int Experience { get; set; }
+}
+
+class ViewModel {
+    public object SelectedEmployee { get; set; }
+    public CustomEditorCollection customEditorCollection = new CustomEditorCollection();
+    public CustomEditorCollection CustomEditorCollection
+    {
+        get { return customEditorCollection; }
+        set { customEditorCollection = value; }
+    }
+    public ViewModel() {
+        SelectedEmployee = new Employee() { Age = 25, Name = "mark", Experience = 5, EmailID = "mark@gt" };
+
+        // EmailEditor added to the collection and will applied to the "EmailID" property
+        CustomEditor editor1 = new CustomEditor();
+        editor1.Editor = new EmailEditor();
+        editor1.Properties.Add("EmailID");
+        CustomEditorCollection.Add(editor1);
     }
 }
+
+{% endhighlight  %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid CustomEditorCollection="{Binding CustomEditorCollection}" 
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+   </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+ViewModel viewModel = new ViewModel();
+propertyGrid1.SelectedObject = viewModel.SelectedEmployee;
+
+{% endhighlight  %}
+{% endtabs %}
+
+Here, The `EmailID` is a string property, the `TextBox` is assigned as a default editor. We changed it as `SfMaskedEdit` textbox that accepts only inputs which are in the email-id format.
 
 ![CustomEditor applied for EmailID property](CustomEditor-support_images/CustomEditor-Collection1.png)
 
@@ -248,17 +275,52 @@ If we want to apply custom editor for multiple properties which contains same ty
 {% tabs %}
 {% highlight C# %}
 
-public partial class MainWindow : Window {
-    public MainWindow() {
-        InitializeComponent();
-        CustomEditor editor1 = new CustomEditor();
-        editor1.Editor = new IntegerEditor();
-        editor1.HasPropertyType = true;
-        editor1.PropertyType = typeof(int);
-        this.propertyGrid1.CustomEditorCollection.Add(editor1);
-        this.DataContext = new ViewModel();
+public class Employee {
+    public string EmailID { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int Experience { get; set; }
+}
+
+class ViewModel {
+    public object SelectedEmployee { get; set; }
+    public CustomEditorCollection customEditorCollection = new CustomEditorCollection();
+    public CustomEditorCollection CustomEditorCollection
+    {
+        get { return customEditorCollection; }
+        set { customEditorCollection = value; }
+    }
+    public ViewModel() {
+        SelectedEmployee = new Employee() { Age = 25, Name = "mark", Experience = 5, EmailID = "mark@gt" };
+        // IntegerEditor added to the collection and will applied to the "int" type properties
+        CustomEditor editor = new CustomEditor();
+        editor.Editor = new IntegerEditor();
+        editor.HasPropertyType = true;
+        editor.PropertyType = typeof(int);
+        CustomEditorCollection.Add(editor);
     }
 }
+
+{% endhighlight  %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid CustomEditorCollection="{Binding CustomEditorCollection}" 
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+   </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+ViewModel viewModel = new ViewModel();
+propertyGrid1.SelectedObject = viewModel.SelectedEmployee;
 
 {% endhighlight  %}
 {% endtabs %}
