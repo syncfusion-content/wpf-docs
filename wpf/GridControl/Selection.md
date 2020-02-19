@@ -120,7 +120,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiSimple;
 {% endhighlight  %}
 {% endtabs %}
 
-![SelectionMode–MultiSimple](Working-with-Grid_images/Working-with-Grid_img23.jpeg)
+![SelectionMode MultiSimple](Working-with-Grid_images/Working-with-Grid_img23.jpeg)
 
 N> It does not support the use of SHIFT, CTRL and arrow keys to extend the selection.
 
@@ -280,7 +280,7 @@ this.gridControl.Model.Options.ShowCurrentCell = false;
 {% endhighlight  %}
 {% endtabs %}
 
-![Selection without current cell](Selection-Images/ShowCurrentCell.jpeg)
+![Selection without current cell](Selection-Images/ShowCurrentCell.jpg)
 
 ## Excel-like CurrentCell
 
@@ -307,23 +307,25 @@ The following code illustrates how to handle this event:
 
 {% tabs %}
 {% highlight c# %}
-protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
+class ExcelGrid : GridControl
 {
-    base.OnPrepareRenderCell(e);
-
-    if (e.Cell.RowIndex == 0 && Model.SelectedRanges.AnyRangeIntersects(GridRangeInfo.Col(e.Cell.ColumnIndex)))
+    protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
     {
-        e.Style.Background = this.excelOrange;
+        base.OnPrepareRenderCell(e);
+        if (e.Cell.RowIndex == 0 && Model.SelectedRanges.AnyRangeIntersects(GridRangeInfo.Col(e.Cell.ColumnIndex)))
+        {
+            e.Style.Background = this.excelOrange;
+        }
+        else if (e.Cell.ColumnIndex == 0 && Model.SelectedRanges.AnyRangeIntersects(GridRangeInfo.Row(e.Cell.RowIndex)))
+        {
+            e.Style.Background = this.excelOrange;
+        }
     }
-
-    else if (e.Cell.ColumnIndex == 0 && Model.SelectedRanges.AnyRangeIntersects(GridRangeInfo.Row(e.Cell.RowIndex)))
-    {
-        e.Style.Background = this.excelOrange;
-    }
+    private Brush excelOrange = new SolidColorBrush(Color.FromRgb(244, 198, 111));
 }
 {% endhighlight  %}
 {% endtabs %}
 
 ![Grid with markup headers](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)
 
-Demo to [highlight row/column headers based on selection](https://github.com/SyncfusionExamples/Row-and-column-header-highlighting-based-on-selection-in-WPF-Grid-Control)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/Row-and-column-header-highlighting-based-on-selection-in-WPF-Grid-Control)
