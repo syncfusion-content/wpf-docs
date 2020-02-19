@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection | Grid | WPF | Syncfusion
-description: This section will explains about the Selection modes and its customizarion for GridControl in WPF
+title: Range and Record Selection in WPF Grid | Syncfusion
+description: This section will explains about the range and record selection options in WPF Grid Control and different selection modes available.
 platform: wpf
 control: Grid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in WPF GridControl
 
-Selection will highlight the specified range. There are two modes of selection available in the Grid. They are,
+WPF Grid Control supports for range and record selection modes. Selection will highlight the specified range. 
 
 * Range Selection
 * Record Selection 
@@ -157,7 +157,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiExtended;
 SelectionMode - MultiExtended
 {:.caption}
 
-### Selecting rows/columns programmatically
+## Selecting rows and columns programmatically
 
 The entire grid selections are managed by the [GridModel.Selections](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelSelections.html) collection. It exposes several APIs that let you to add, remove and operate on different grid selections. Below is the description of some important properties and APIs:
 
@@ -200,7 +200,7 @@ GetSelectedCols()</td><td>
 Returns the number of selected columns.</td></tr>
 </table>
 
-### Format Selections
+## Selection Appearence Customization
 
 It is possible to modify the appearance of the selection through property settings. The following properties work in combinations to produce some special effects.
 
@@ -278,7 +278,7 @@ grid.Model.Options.HighlightSelectionForeground = Brushes.Red;
 Foreground of the selection set to pink
 {:.caption}
 
-### Excel-like Selection Frame
+## Excel-like Selection Frame
 
 The active selection can be outlined with a selection frame by setting the [GridModelOptions.ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeSelectionFrame.html) property to true, as follows:
 
@@ -295,7 +295,7 @@ Grid Displaying Excel like Selection Frame
 
 ## CurrentCell
 
-By default the CurrentCell cell borders are rendered when a cell is activated. The ShowCurrentCell property is used to enable or disable CurrentCell borders.
+By default the CurrentCell cell borders are rendered when a cell is activated. The `ShowCurrentCell` property is used to enable or disable CurrentCell borders.
 
 {% tabs %}
 {% highlight c# %}
@@ -308,7 +308,7 @@ this.gridControl.Model.Options.ShowCurrentCell = false;
 Selection without current cell
 {:.caption}
 
-### Excel-like CurrentCell
+## Excel-like CurrentCell
 
 You can select a current cell in the Grid, similar to the current cell behavior in Microsoft Excel(borders with thickness). This feature can be enabled by setting [GridModelOptions.ExcelLikeCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeCurrentCell.html) property to _true_, as follows:  
 
@@ -326,7 +326,7 @@ Grid Showing Excel like Current Cell Selection
 N>  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared.
 
 
-### Highlighting row/Column Header
+## Highlighting row and column header based on selection
 
 In Excel, whenever a selection is made, the headers of those rows and columns which are involved in the selection will be highlighted. You can get a similar behavior in the Grid using the OnPrepareRenderCell event.  
 
