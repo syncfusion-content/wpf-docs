@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | CalendarEdit | WPF | Syncfusion
-description: This section describes how to add calendar control into wpf application and its basic features.
+description: This section describes how to add calendar control into wpf application and explore its basic features.
 platform: WPF
 control: CalendarEdit
 documentation: ug
 ---
 
-# Getting Started with Syncfuion CalendarEdit control for WPF
+# Getting Started with Syncfusion CalendarEdit control for WPF
 
 ## Assembly deployment
 
