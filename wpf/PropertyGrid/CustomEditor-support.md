@@ -265,9 +265,6 @@ Here, The `EmailID` is a string property, the `TextBox` is assigned as a default
 
 ![CustomEditor applied for EmailID property](CustomEditor-support_images/CustomEditor-Collection1.png)
 
-{% endhighlight  %}
-{% endtabs %}
-
 ## Assigning a Custom Editor based on the property type
 
 If we want to apply custom editor for multiple properties which contains same type, we need to create the `CustomEditor` instance, assign our own editor to the `CustomEditor.Editor` and sets the `CustomEditor.HasPropertyType`  property  to `true`. Then, mention the property type to the `CustomEditor.PropertyType`.
