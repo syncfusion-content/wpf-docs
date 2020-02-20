@@ -316,7 +316,7 @@ N> This customization plays a role in reducing the number of pages in printing.
 
 [How to add or remove grid lines for diagram page](/wpf/sfdiagram/gridlines)
 
-[How to define scroll setting for diagram page](/wpf/sfdiagram/scroll-settings/scrollstatusandautoscroll)
+[How to define scroll setting for diagram page](https://help.syncfusion.com/wpf/diagram/scroll-settings/scrollstatusandautoscroll)
 
 [How to add rulers for diagram page](/wpf/sfdiagram/rulers)
 
