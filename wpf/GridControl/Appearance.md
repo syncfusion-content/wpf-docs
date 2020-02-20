@@ -7,7 +7,7 @@ control: GridControl
 documentation: ug
 ---
 
-# Appearance
+# Appearance of GridControl
 
 You can customize the appearance of the grid to the cell-level using our Grid properties.
 
