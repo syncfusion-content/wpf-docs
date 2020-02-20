@@ -7,7 +7,7 @@ control: GridControl
 documentation: ug
 ---
 
-# Formula Cells in grid
+# Formula Cells in Grid
 
 Setting the CellType of a cell to a FormulaCell will allow you to enter algebraic expressions using formulas and cell references. Cell references are entries such as A11 for column A row 11 or BA3 for column BA row 3. A formula is a defined calculation from the Formula Library which, is included with Essential Grid. This Formula Library is extensible and allows you to add additional formulas.
 
