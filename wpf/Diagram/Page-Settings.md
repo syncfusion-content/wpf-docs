@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Page Settings
+# Page Settings in WPF Diagram (SfDiagram)
 
 By default, Diagram's page size is decided based on the position of diagramming elements. The size and appearance of the diagram pages can be customized using the [PageSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PageSettings.html "PageSettings") property of SfDiagram. 
 
@@ -316,7 +316,7 @@ N> This customization plays a role in reducing the number of pages in printing.
 
 [How to add or remove grid lines for diagram page](/wpf/sfdiagram/gridlines)
 
-[How to define scroll setting for diagram page](/wpf/sfdiagram/scroll-settings/scrollstatusandautoscroll)
+[How to define scroll setting for diagram page](/wpf/diagram/scroll-settings/scrollstatusandautoscroll)
 
 [How to add rulers for diagram page](/wpf/sfdiagram/rulers)
 
