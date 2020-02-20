@@ -1,22 +1,17 @@
 ---
 layout: post
-title: Appearance | GridControl | wpf | Syncfusion
-description: appearance
+title: Appearance of GridControl | WPF | Syncfusion
+description: Learn here about customize the appearance of grid in the Syncfusion WPF GridControl and different cell styles.
 platform: wpf
-control: Grid Control
+control: GridControl
 documentation: ug
 ---
 
 # Appearance
 
-You can customize the appearance of the grid to the cell-level using our Grid properties. The following topics will guide in using those features:
-
-* Cell Styles-This section discusses on various cell styles available with the grid
-* Covered Ranges-This section elaborates on the adding covered ranges to the grid
-* Banner Cells-This section discusses on steps to create banner cells
+You can customize the appearance of the grid to the cell-level using our Grid properties.
 
 ## Cell Styles
-
 
 The EssentialGrid's cell style architecture plays an integral role in almost every aspect of Essential Grid. The display system hosts a powerful and complete Styles architecture. Settings can be specified at the cell level or at higher levels using parent styles that are referred to as Base Styles. Base Styles can affect a groups of cells. Cell level settings override any higher-level settings and enable easy customization to cell level. With this initial version, Syncfusion's core focus has been on the underlying architecture for displaying cells with virtualized cell editors to enable good performance characteristics.
 
@@ -77,9 +72,7 @@ The following graphic illustrates the effect of using the GridStyleInfo inherita
 
 
 
-![](Appearance_images/Appearance_img1.jpeg)
-
-
+![Change background color of specific cell or row and column in WPF GridControl](Appearance_images/Appearance_img1.jpeg)
 
 ### Style Properties
 
@@ -137,15 +130,13 @@ Output
 
 The code above displays the following output:
 
-![](Appearance_images/Appearance_img2.jpeg)
-
-
+![Change the background color of each columns in WPF GridControl](Appearance_images/Appearance_img2.jpeg)
 
 #### Background
 
 The Background property specifies a background brush for the grid cell. The cell’s background can be painted with either a solid brush or a gradient brush.
 
-N> * Gradient-A gradient brush uses two colors. These colors merge to create a transition or fading effect. * Solid-A solid brush is equipped with only one color.
+N> Gradient-A gradient brush uses two colors. These colors merge to create a transition or fading effect. * Solid-A solid brush is equipped with only one color.
 
 #### Setting Background Brush Type
 
@@ -170,11 +161,7 @@ this.grid.Model[3, 6].Background = new LinearGradientBrush(Colors.Gold, Colors.Y
 
 The following output is generated using the code above.
 
-
-
-![](Appearance_images/Appearance_img3.jpeg)
-
-
+![Applied gradient background color in specific cells in WPF GridControl](Appearance_images/Appearance_img3.jpeg)
 
 #### Visual properties
 
@@ -206,7 +193,7 @@ Determines the angle of rotation of the text</td></tr>
 </table>
 
 
-1. Setting Text, Foreground and Font Properties
+1.Setting Text, Foreground and Font Properties
 
 {% tabs %}
 {%highlight c#%}
@@ -246,17 +233,11 @@ this.grid.Model[8, 5].CellValue = "Font style is Normal";
 
 #### Output
 
-   The following output is generated using the code above.
+The following output is generated using the code above.
 
+![Change the font style and color in WPF GridControl](Appearance_images/Appearance_img4.jpeg)
 
-
-   ![](Appearance_images/Appearance_img4.jpeg)
-
-
-
-
-
-2. Setting Cell Orientation
+2.Setting cell orientation
 
 {% tabs %}
 {%highlight c#%}
@@ -291,17 +272,15 @@ this.grid.Model.RowHeights[12] = 50;
 
 #### Output
 
-   The following output is generated using the code above.
+The following output is generated using the code above.
 
-
-
-   ![](Appearance_images/Appearance_img5.jpeg)
+![Change the font alignment in WPF GridControl](Appearance_images/Appearance_img5.jpeg)
 
 
 
 #### Borders
 
-   Cell borders can be customized to have different color, thickness and style. It is possible to have different border styles for top, bottom, left and right borders for the same cell.
+Cell borders can be customized to have different color, thickness and style. It is possible to have different border styles for top, bottom, left and right borders for the same cell.
 
 #### Setting Borders
 
@@ -352,13 +331,9 @@ this.grid.Model[15, 6].Borders.Right.DashStyle = DashStyles.DashDotDot;
 
 #### Output
 
-   The following output is generated using the code above.
+The following output is generated using the code above.
 
-
-
-   ![](Appearance_images/Appearance_img6.jpeg)
-
-   {:.prettyprint}
+![Change the border style in WPF GridControl](Appearance_images/Appearance_img6.jpeg)
 
 ### Data Formats
 
@@ -431,7 +406,7 @@ s</td><td>
 </table>
 
 
-1. Setting text format
+1.Setting text format
 
 {% tabs %}
 {%highlight c#%}
@@ -491,7 +466,7 @@ foreach (string format in new string[]
 
 The following output is generated using the code above.
 
-![](Appearance_images/Appearance_img7.jpeg)
+![Data formats in WPF GridControl](Appearance_images/Appearance_img7.jpeg)
 
 
 
@@ -531,67 +506,49 @@ The following example illustrates the use of a class that implements the IFormat
 public class CustomNumberFormat : IFormatProvider, ICustomFormatter
 {
     private const int ACCT_LENGTH = 6;
-
     public object GetFormat(Type formatType)
     {
-
-    if (formatType == typeof(ICustomFormatter))
-        return this;
-
-    else
-        return null;
+        if (formatType == typeof(ICustomFormatter))
+            return this;
+        else
+            return null;
     }
-
     public string Format(string fmt, object arg, IFormatProvider formatProvider)
     {
-
         // Provide default formatting, if arg is not double.
-
         if (arg.GetType() != typeof(double))
             return HandleOtherFormats(fmt, arg);
-
         // Provide default formatting for unsupported format strings.
         string ufmt = fmt.ToUpper(CultureInfo.InvariantCulture);
-
         if (!(ufmt == "US" || ufmt == "ES"))
             return HandleOtherFormats(fmt, arg);
-
         // Convert argument to a string.
         string result = arg.ToString();
-
         if (ufmt == "ES")
         {
             CultureInfo esESCulture = CultureInfo.GetCultureInfo("es-ES");
             result = Convert.ToString(arg, esESCulture);
         }
-
         else
         {
             CultureInfo esUSCulture = CultureInfo.GetCultureInfo("es-US");
             result = Convert.ToString(arg, esUSCulture);
         }
-
         // If number is less than 6 characters, pad with leading zeroes.
-
         if (result.Length < ACCT_LENGTH)
             result = result.PadRight(ACCT_LENGTH, '0');
-
         // If number is more than 6 characters, truncate to 6 characters.
-
         if (result.Length > ACCT_LENGTH)
             result = result.Substring(0, ACCT_LENGTH);
             return result;
-        }
-
+    }
     private string HandleOtherFormats(string format, object arg)
     {
 
         if (arg is IFormattable)
             return ((IFormattable)arg).ToString(format, CultureInfo.CurrentCulture);
-
         else if (arg != null)
             return arg.ToString();
-
         else
             return String.Empty;
     }
@@ -603,204 +560,4 @@ The CustomNumberFormat class converts the double value to string based on the cu
 
 The output is shown in the following screenshot:
 
-![](Appearance_images/Appearance_img8.png)
-
-
-
-## Covered Ranges
-
-Covered Cells are cells that span over neighboring cells. The combined cells will act as if they are one single cell visually and programmatically. There are different possible options to form a covered range. You can combine the cells in adjacent rows or columns or both.
-
-### Creating Covered Range
-
-{% tabs %}
-{% highlight c# %}
-this.grid.Model.CoveredCells.Add (new CoveredCellInfo (6, 4, 7, 4));            
-this.grid.Model.CoveredCells.Add (new CoveredCellInfo (6, 6, 7, 6));
-
-cell = this.grid.Model[6, 4];
-cell.CellValue = "Row spanned cell";
-cell.Background = Brushes.BlanchedAlmond;
-cell.HorizontalAlignment = HorizontalAlignment.Center;
-
-cell = this.grid.Model[6, 6];
-cell.CellValue = "Row spanned cell";
-cell.HorizontalAlignment = HorizontalAlignment.Center;
-cell.Background = Brushes.BlanchedAlmond;            
-
-this.grid.Model.CoveredCells.Add (new CoveredCellInfo (9, 4, 11, 6));            
-
-cell = this.grid.Model[9, 4];
-cell.CellValue = "Column and row spanned cell";            
-cell.HorizontalAlignment = HorizontalAlignment.Center;
-cell.Background = Brushes.BlanchedAlmond;            
-
-this.grid.Model.CoveredCells.Add (new CoveredCellInfo (13, 4, 13, 6));            
-
-cell = this.grid.Model[13, 4];
-cell.CellValue = "Column spanned cell";
-cell.Background = Brushes.BlanchedAlmond;
-cell.HorizontalAlignment = HorizontalAlignment.Center;
-{% endhighlight  %}
-{% endtabs %}
-
-### Output
-
-The following output is generated using the code above.
-
-
-
-![](Appearance_images/Appearance_img9.jpeg)
-
-
-
-{%seealso%}
-
-QueryCoveredRange event
-
-{%endseealso%}
-
-## Banner Cells
-
-You can create custom range of cells inside a Grid, which is termed as banner cells. Let us see how to create Banner Cells
-
-### Cell Spanned Backgrounds
-
-Essential Grid lets you span the given background across multiple cells either row-wise, column-wise or both. The information about all the cell spans for a given grid is maintained by the GridModel.CellSpanBackgrounds. Each entry represents an object of CellSpanBackgroundInfo class that defines a cell span. This class exposes properties such as background, border, and more to customize the cell span.
-
-You can also trigger QueryCellSpanBackgrounds event to create and customize cell spans.
-
-### Creating Cell Spans
-
-This example creates three cell spans with gradient backgrounds and a fourth cell span with an image background created through the QueryCellSpanBackgrounds event.
-
-{% tabs %}
-{% highlight c# %}
-CellSpanBackgroundInfo cellspan1 = new CellSpanBackgroundInfo(6, 2, 7, 4);
-cellspan1.Background = new LinearGradientBrush(Colors.IndianRed, Colors.Orange, 90);
-grid.Model.CellSpanBackgrounds.Add(cellspan1);
-
-CellSpanBackgroundInfo cellspan2 = new CellSpanBackgroundInfo(6, 6, 7, 8);
-cellspan2.Background = new LinearGradientBrush(Colors.Magenta, Colors.LightPink, 90);
-grid.Model.CellSpanBackgrounds.Add(cellspan2);
-
-CellSpanBackgroundInfo cellspan3 = new CellSpanBackgroundInfo(9, 4, 13, 6);
-cellspan3.Background = new LinearGradientBrush(Colors.SteelBlue, Colors.LightSteelBlue, 90);
-grid.Model.CellSpanBackgrounds.Add(cellspan3);
-
-grid.QueryCellSpanBackgrounds += new GridQueryCellSpanBackgroundsEventHandler (grid_QueryCellSpanBackgrounds);
-
-void grid_QueryCellSpanBackgrounds(object sender, GridQueryCellSpanBackgroundsEventArgs e)
-{
-
-    if (e.CellRowColumnIndex.ColumnIndex == 4 && e.CellRowColumnIndex.RowIndex == 15)
-    {
-        CellSpanBackgroundInfo item = new CellSpanBackgroundInfo(e.CellRowColumnIndex.RowIndex, e.CellRowColumnIndex.ColumnIndex, 20, 6);
-        item.Background = new ImageBrush(GetImage(@"common\Images\Grid\BannerCells\back2.jpg"));
-        e.Range = new List<CellSpanBackgroundInfo>();
-        e.Range.Add(item);
-        e.Handled = true;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-### Output
-
-The following output is generated using the code above.
-
-![](Appearance_images/Appearance_img10.jpeg)
-
-
-
-{%seealso%}
-
-QueryCellSpanBackgrounds event
-
-{%endseealso%}
-
-## Overlapping Cells 
-
-Overlapping cells behavior occurs when the text exceeds the length of the cell and will float to the adjacent cell in non-editing mode. Flooding behavior specifies whether a previous cell can be allowed to float over the corresponding cell even if it is empty. Floating cell is to enable the cell to float over the next cell while editing despite of the flooding or overlapping behavior.
-
-To assign the FloatingCell behavior to one particular cell or a certain range of cells
-
-The FloatingCell behavior can be assigned to one particular cell or a certain range of cells as follows:
-
-{% tabs %}
-{% highlight c# %}
-//Provided as CellStyle
-grid.Model[4, 1].EnableFloatingCell = true;
-grid.Model[4, 1].FloatCellMode = GridFloatCellsMode.OnDemandCalculation;
-grid
-
-//Provided as ColumnStyle
-grid.Model.ColStyles[2].EnableFloatingCell = true;
-grid.Model.ColStyles[2].FloatCellMode = GridFloatCellsMode.OnDemandCalculation;
-grid.Model.ColStyles[2].FloodCell = false;
-
-//Provided as TableStyle
-grid.Model.Options.EnableFloatingCell = true;
-grid.Model.Options.FloatCellMode = GridFloatCellsMode.OnDemandCalculation;
-grid.Model.Options.FloodCell = false;
-{% endhighlight  %}
-{% endtabs %}
-
-![](Appearance_images/Appearance_img11.png)
-
-
-
-Properties, Methods and Events tables
-
-### Properties
-
-
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-EnableFloatCellFloatCellModeFloodCell</td><td>
-This allows the user to float the cell while typing.This floats the cell in non-editing mode.When the user specifies the property as false it will not allow the previous cell to float over it.</td><td>
-Static PropertyStatic PropertyStatic Property</td><td>
-BooleanGridFloatCellsMode (enum type)Boolean</td><td>
-</td></tr>
-</table>
-
-### Features of Overlapping Cells
-
-### Overlapping Cells
-
-To overlap the cell when it is not in edit mode and calculate according to the flooding and length of the text.
-
-{% tabs %}
-{% highlight c# %}
-this.grid.Model.Options.FloatCellMode = GridFloatCellsMode.OnDemandCalculation; 
-{% endhighlight  %}
-{% endtabs %}
-
-### Flooding
-
-To prevent the overlapping of previous cells.
-
-{% tabs %}
-{% highlight c# %}
-this.grid.Model.Options.FloodCell = false;
-{% endhighlight %}
-{% endtabs %}
-
-### Floating
-
-To enable floating cell behavior by calculating while editing the text.
-
-{% tabs %}
-{% highlight c# %}
-this.grid.Model.Options.EnableFloatingCell = true; 
-{% endhighlight  %}
-{% endtabs %}
+![Applied formatting in specific cells in WPF GridControl](Appearance_images/Appearance_img8.png)
