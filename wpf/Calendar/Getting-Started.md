@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | CalendarEdit | WPF | Syncfusion
-description: This section describes how to add calendar control into wpf application and its basic features.
+description: This section describes how to add calendar control into wpf application and explore its basic features.
 platform: WPF
 control: CalendarEdit
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Syncfusion CalendarEdit control for WPF
 
 ## Assembly deployment
 
@@ -24,7 +24,7 @@ You can create a WPF application with CalendarEdit control using the following s
 1.	[Create a project.](#creating-the-project)
 2.	[Add control via designer.](#adding-control-via-designer)
 3.	[Add control manually in XAML.](#adding-control-manually-in-xaml)
-4.	[Add control manually in C#.](adding-control-manually-in-c)
+4.	[Add control manually in C#.](#adding-control-manually-in-c)
 5.	[Select date.](#selecting-a-date)
 6.	[Select multiple dates.](#selecting-multiple-dates)
 7.	[Set the minimum and maximum dates.](#setting-the-minimum-and-maximum-dates)

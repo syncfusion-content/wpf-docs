@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Virtualization | Therearetwooptionsforexportingagrid | wpf | Syncfusion
-description: grid virtualization
+title: Virtualization of GridControl | wpf | Syncfusion
+description: Learn here about how grid works in virtualize the cells and its modes of the Syncfusion WPF GridControl.
 platform: wpf
 control: Grid Control
 documentation: ug
 ---
 
-# Grid Virtualization
+# Virtualization of the Grid
 
 This section covers the below grid virtualization topics:
 
@@ -15,7 +15,6 @@ This section covers the below grid virtualization topics:
 * Virtual Cells-This section discusses about virtual cells in a grid when under virtual mode
 
 ## Virtual Mode
-
 
 Essential Grid for WPF supports virtual mode, which lets you dynamically provide data to the grid by handling an event, QueryCellInfo. This means that the grid does not store any data in its internal data structures. A virtual grid can display millions of rows as easily as it displays a dozen. The grid also exposes a second event, CommitCellInfo that lets you save the changes made in the UI, to the external data source.
 
@@ -76,14 +75,12 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
                 }
             }
 }
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ### Output
 
-![](Grid-Virtualization_images/Grid-Virtualization_img1.png)
-
-
+![Virtual Mode in WPF GridControl](Grid-Virtualization_images/Grid-Virtualization_img1.png)
 
 ## Virtual Cells
 
@@ -104,10 +101,8 @@ This mechanism will be enabled only if you set SupportsRenderOptimization proper
 public class VirtualizedCellModel : GridCellModel<VirtualizedCellRenderer>
 {
 }
-
 public class VirtualizedCellRenderer : GridVirtualizingCellRenderer<TextBox>
 {
-
     public VirtualizedCellRenderer()
     {
         SupportsRenderOptimization = true;
@@ -115,25 +110,21 @@ public class VirtualizedCellRenderer : GridVirtualizingCellRenderer<TextBox>
         IsControlTextShown = true;
         IsFocusable = true;
     }
-
     protected override void OnRender(DrawingContext dc, RenderCellArgs rca, GridRenderStyleInfo cellInfo)
     {
 
         if (rca.CellUIElements != null)
             return;
-
         // Only if SupportsRenderOptimization is true, otherwise rca.CellVisuals is never null.
         string s = String.Format("Render{0}/{1}", rca.RowIndex, rca.ColumnIndex);
         GridTextBoxPaint.DrawText(dc, rca.CellRect, s, cellInfo);
     }
-
     public override void OnInitializeContent(TextBox textBox, GridRenderStyleInfo style)
     {
         base.OnInitializeContent(textBox, style);
         Thickness margins = style.TextMargins.ToThickness();
 
         // TextBoxView always has a minimum margin of 2 for left and right.
-
         // Margin is hard coded below so that text box behavior is properly emulated.
         margins.Left = Math.Max(0, margins.Left - 2);
         margins.Right = Math.Max(0, margins.Right - 2);
@@ -142,34 +133,28 @@ public class VirtualizedCellRenderer : GridVirtualizingCellRenderer<TextBox>
         VirtualizingCellsControl.SetWantsMouseInput(textBox, true);
         textBox.Text = GetControlText(style);
     }
-
     protected override string GetControlTextFromEditorCore(TextBox uiElement)
     {
         return uiElement.Text;
     }
-
     protected override void OnInitialize()
     {
         base.OnInitialize();
         ControlText = GetControlText(CurrentStyle);
     }
-
     protected override void OnWireUIElement(TextBox textBox)
     {
         base.OnWireUIElement(textBox);
         textBox.TextChanged += new TextChangedEventHandler(textBox_TextChanged);
     }
-
     protected override void OnUnwireUIElement(TextBox textBox)
     {
         base.OnUnwireUIElement(textBox);
         textBox.TextChanged -= new TextChangedEventHandler(textBox_TextChanged);
     }
-
     void textBox_TextChanged(object sender, TextChangedEventArgs e)
     {
         TextBox textBox = (TextBox)sender;
-
         if (!this.IsInArrange && IsCurrentCell(textBox))
         {
             TraceUtil.TraceCurrentMethodInfo(textBox.Text);
@@ -178,16 +163,13 @@ public class VirtualizedCellRenderer : GridVirtualizingCellRenderer<TextBox>
                 RefreshContent(); // reverses change.
         }
     }
-
     protected override void OnGridPreviewTextInput(TextCompositionEventArgs e)
     {
         CurrentCell.ScrollInView();
         CurrentCell.BeginEdit(true);
     }
-
     protected override bool ShouldGridTryToHandlePreviewKeyDown(KeyEventArgs e)
     {
-
         if (CurrentCellUIElement.IsFocused && e.Key != Key.Escape)
             return false;
         return true;
@@ -206,7 +188,7 @@ grid.Model.TableStyle.CellValue = "Edit Me!";
 {% endhighlight  %}
 {% endtabs %}
 
-![](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg)
+![Virtual cells to the WPF GridControl](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg)
 
 
 
