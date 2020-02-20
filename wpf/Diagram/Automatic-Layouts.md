@@ -326,7 +326,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ### Customize margin in layout
 
-The [Margin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.Base.LayoutBase~Margin.html) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
+The [Margin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase~Margin.html) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -965,7 +965,7 @@ Please find [RadialTree Layout sample](https://github.com/syncfusion/wpf-demos/t
 
 ### Customize Bounds in layout
 
-The [Bounds](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.Base.LayoutBase~Bounds.html) Property of `RadialTreeLayout` is used to define the region where the layout to be rendered based on its root. It is valid only for `RadialTreeLayout`.
+The [Bounds](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase~Bounds.html) Property of `RadialTreeLayout` is used to define the region where the layout to be rendered based on its root. It is valid only for `RadialTreeLayout`.
 
 {% tabs %}
 {% highlight xaml %}
