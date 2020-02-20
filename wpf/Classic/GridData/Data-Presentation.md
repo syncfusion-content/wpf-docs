@@ -839,13 +839,13 @@ Numeric & DateTime</td></tr>
 <tr>
 <td>
 and</td><td>
-&gt;value and &lt=value&gt;value and &lt;value&gt;=value and &lt;value&gt;=value and &lt=value</td><td>
+&gt;value and &lt;=value&gt;value and &lt;value&gt;=value and &lt;value&gt;=value and &lt;=value</td><td>
 between</td><td>
 Numeric & DateTime</td></tr>
 <tr>
 <td>
 or</td><td>
-&gt;value or &lt=value&gt;value or &lt;value&gt;=value or &lt;value&gt;=value or &lt=value</td><td>
+&gt;value or &lt;=value&gt;value or &lt;value&gt;=value or &lt;value&gt;=value or &lt;=value</td><td>
 between</td><td>
 Numeric & DateTime</td></tr>
 <tr>
@@ -1203,7 +1203,7 @@ Void </td></tr>
 <tr>
 <td>
 ExpandDetailsViewAt</td><td>
-Using this method, tde DetailsView of a particular record can be expanded.this method gets the record index as an input argument and expand the details view of the corresponding record.</td><td>
+Using this method, the DetailsView of a particular record can be expanded.this method gets the record index as an input argument and expand the details view of the corresponding record.</td><td>
 Record Index</td><td>
 int</td><td>
 Void</td></tr>
@@ -1217,7 +1217,7 @@ Void</td></tr>
 <tr>
 <td>
 CollapseDetailsViewAt</td><td>
-Using this method, you can collapse the details view of a particular record. This method gets tde record index as an input argument and collapse the details view of tde corresponding record.</td><td>
+Using this method, you can collapse the details view of a particular record. This method gets the record index as an input argument and collapse the details view of the corresponding record.</td><td>
 Record Index</td><td>
 int</td><td>
 Void</td></tr>
@@ -1244,13 +1244,13 @@ Routed Event </td></tr>
 <tr>
 <td>
 DetailsViewExpanded</td><td>
-this event is triggered after tde DetailsView is expanded. </td><td>
+this event is triggered after the DetailsView is expanded. </td><td>
 GridDataDetailsViewExpandedEventArgs</td><td>
 Routed Event</td></tr>
 <tr>
 <td>
 DetailsViewCollapsing</td><td>
-this event is triggered before tde DetailsView is collapsed. this event is a cancelable event. By canceling this event, the corresponding DetailsView remains expanded.</td><td>
+this event is triggered before the DetailsView is collapsed. this event is a cancelable event. By canceling this event, the corresponding DetailsView remains expanded.</td><td>
 GridDataValueCancelEventArgs&lt;GridDataRecord&gt;</td><td>
 </td></tr>
 <tr>
