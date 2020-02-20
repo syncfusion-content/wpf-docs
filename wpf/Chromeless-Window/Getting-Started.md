@@ -157,7 +157,7 @@ You can customize the caption height by setting the [TitleBarHeight](https://hel
 
 ## Title bar text alignment
 
-The text alignment of the title can be set using the `TitleTextAlignment` property in the Chromeless Window. The various options of the `TitleTextAlignment` are listed below.
+The text alignment of the title can be set using the [`TitleTextAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~TitleTextAlignment.html) property in the Chromeless Window. The various options of the `TitleTextAlignment` are listed below.
 
 * Left
 * Right
@@ -213,7 +213,7 @@ You can set the caption icon by setting the [Icon](https://docs.microsoft.com/de
 
 ## Title bar icon alignment
 
-The title bar icon can be aligned to `Left` or `Right` using the `IconAlignment` property in the Chromeless Window. Its various options are listed below.
+The title bar icon can be aligned to `Left` or `Right` using the [`IconAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ChromelessWindow~IconAlignment.html) property in the Chromeless Window. Its various options are listed below.
 
 * Left
 * Right

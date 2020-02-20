@@ -214,7 +214,7 @@ c. Programmatically
 
 ## Get list of checked items
 
-The CheckListBox control gets all the selected items using the[SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) property and gets single item by using the[SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItem.html) property.
+The CheckListBox control gets all the selected items using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) property and gets single item by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItem.html) property.
 
 
 

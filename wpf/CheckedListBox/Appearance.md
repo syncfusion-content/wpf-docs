@@ -91,10 +91,11 @@ The SelectAllTemplate is used to set DataTemplate for the SelectAll item.
     </DataTemplate>
 </syncfusion:CheckListBox.SelectAllTemplate>
 
-![SelectAllTemplate](Appearance_images/select_all.png)
-
 {% endhighlight %}
 {% endtabs %}
+
+![SelectAllTemplate](Appearance_images/select_all.png)
+
 
 ## ItemContainerStyle
 
@@ -115,10 +116,13 @@ The ItemContainerStyle is the style that is applied to the container element gen
 
 <syncfusion:CheckListBox 
             Grid.Row="1"
-            Width="300" Height="400"
+            Width="300" 
+            Height="400"
             HorizontalAlignment="Center" 
             VerticalAlignment="Center"
-            Margin="10" ItemsSource="{Binding Vegetables}" ItemContainerStyle="{StaticResource ItemStyle}"
+            Margin="10" 
+            ItemsSource="{Binding Vegetables}" 
+            ItemContainerStyle="{StaticResource ItemStyle}"
             x:Name="ListBox"/>
 
 {% endhighlight %}
@@ -195,7 +199,8 @@ The ItemContainerStyleSelector is used to choose the style to use as ItemContain
             HorizontalAlignment="Center" 
             VerticalAlignment="Center"
             Margin="10" 
-            ItemsSource="{Binding Vegetables}" ItemContainerStyleSelector="{StaticResource StyleSelector}"/>
+            ItemsSource="{Binding Vegetables}" 
+            ItemContainerStyleSelector="{StaticResource StyleSelector}"/>
 
 {% endhighlight %}
 

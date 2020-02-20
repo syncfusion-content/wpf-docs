@@ -30,7 +30,9 @@ Also, the entire connector can be dragged over the page by using the `Constraint
         <!--Initialize the Connector Collection-->
         <syncfusion:ConnectorCollection>
             <!--create the connector with draggable constraint-->
-            <syncfusion:ConnectorViewModel x:Name="simpleConnector" SourcePoint="100,100" TargetPoint="200,200" Constraints="Default,Draggable" />
+            <syncfusion:ConnectorViewModel x:Name="simpleConnector" 
+                                           SourcePoint="100,100" TargetPoint="200,200" 
+                                           Constraints="Default,Draggable" />
         </syncfusion:ConnectorCollection>
     </syncfusion:SfDiagram.Connectors>
 </syncfusion:SfDiagram>
@@ -118,10 +120,10 @@ By default, each connector's routing process is inherited based on the value of 
 {% highlight C# %}
 
 ConnectorViewModel connector = new ConnectorViewModel()
-  {
+{
     SourcePoint = new Point(200, 200),
     TargetPoint = new Point(400, 400),
-  };
+};
 
 //Disable the routing from diagram constraint
 connector.Constraints.Remove(ConnectorConstraints.InheritRouting);

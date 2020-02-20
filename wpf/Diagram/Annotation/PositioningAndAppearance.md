@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotation Positioning and Appearance | Syncfusion 
-description: how to positioning and change the appearance of the annotation
+description: How to positioning the annotations of nodes and connectors and how to change the appearance of the annotation
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -29,12 +29,15 @@ The `Offset` property of `AnnotationEditorViewModel` is used to align the annota
 {% highlight xaml %}
 
 <!--Initialize the Node-->
-<syncfusion:NodeViewModel UnitHeight="100"  UnitWidth="100" Shape="{StaticResource Rectangle}" OffsetX="100" OffsetY="100">
+<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
+                          Shape="{StaticResource Rectangle}" 
+                          OffsetX="100" OffsetY="100">
     <syncfusion:NodeViewModel.Annotations>
         <!--Initialize the Annotation Collection-->
         <syncfusion:AnnotationCollection>
             <!--Initialize the annotation with offset values-->
-            <syncfusion:AnnotationEditorViewModel Content="Offset(0,0)" Offset="0,0"/>
+            <syncfusion:AnnotationEditorViewModel Content="Offset(0,0)" 
+                                                  Offset="0,0"/>
         </syncfusion:AnnotationCollection>
     </syncfusion:NodeViewModel.Annotations>
 </syncfusion:NodeViewModel>
@@ -87,7 +90,10 @@ The `VerticalAlignment` property of `AnnotationEditorViewModel` class is used to
 <!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the Annotation with horizontal and vertical alignment properties-->
-    <syncfusion:AnnotationEditorViewModel Content="Annotation" HorizontalAlignment="Left" VerticalAlignment="Top" Offset="0,0"/>
+    <syncfusion:AnnotationEditorViewModel Content="Annotation" 
+                                          HorizontalAlignment="Left" 
+                                          VerticalAlignment="Top" 
+                                          Offset="0,0"/>
 </syncfusion:AnnotationCollection>
 
 {% endhighlight %}
@@ -310,7 +316,9 @@ Annotations = new ObservableCollection<IAnnotation>()
 <!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the annotation with margin property-->
-    <syncfusion:AnnotationEditorViewModel  Content="Annotation" Margin="0,0,0,-30" RotationReference="Page" />
+    <syncfusion:AnnotationEditorViewModel  Content="Annotation" 
+                                           Margin="0,0,0,-30" 
+                                           RotationReference="Page" />
 </syncfusion:AnnotationCollection>                       
                                 
 {% endhighlight %}
@@ -343,7 +351,8 @@ Diagram allows you to set size for annotations by using the `UnitWidth` and `Uni
 <!--Initialize the AnnotationCollection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the annotation wih size-->
-    <syncfusion:AnnotationEditorViewModel  Content="Annotation" UnitWidth="50" UnitHeight="50" />
+    <syncfusion:AnnotationEditorViewModel Content="Annotation" 
+                                          UnitWidth="50" UnitHeight="50" />
 </syncfusion:AnnotationCollection>                       
                                 
 {% endhighlight %}
@@ -377,7 +386,8 @@ When text overflows node boundaries, you can control it by using the `WrapText` 
 <!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the annotation with wrap text property-->
-    <syncfusion:AnnotationEditorViewModel Content="LengthyAnnotation with wrapping text" WrapText="Wrap"/>
+    <syncfusion:AnnotationEditorViewModel Content="LengthyAnnotation with wrapping text" 
+                                          WrapText="Wrap"/>
 </syncfusion:AnnotationCollection>                    
                                 
 {% endhighlight %}
@@ -412,18 +422,28 @@ Default appearance of the annotations can be customized by using the `EditTempla
 
 <!--Template overriding for view template-->
 <DataTemplate x:Key="viewTemplate">
-    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" FontStyle="Italic" FontSize="12" FontFamily="TimesNewRomen" TextDecorations="Underline" FontWeight="Bold" Foreground="Black"/>
+    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
+               FontStyle="Italic" FontSize="12" 
+               FontFamily="TimesNewRomen" 
+               TextDecorations="Underline" 
+               FontWeight="Bold" 
+               Foreground="Black"/>
 </DataTemplate>
 
 <!--Template overriding for edit template-->
 <DataTemplate x:Key="editTemplate">
-    <TextBox Text="{Binding Path=Content, Mode=TwoWay}" FontStyle="Oblique" FontSize="12" FontFamily="TimesNewRomen" FontWeight="Bold" Foreground="Red"/>
+    <TextBox Text="{Binding Path=Content, Mode=TwoWay}" 
+             FontStyle="Oblique" FontSize="12" 
+             FontFamily="TimesNewRomen" 
+             FontWeight="Bold" Foreground="Red"/>
 </DataTemplate>
 
 <!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the Annotation with view and edit templates-->
-    <syncfusion:AnnotationEditorViewModel Content="Annotation" ViewTemplate="{StaticResource viewTemplate}" EditTemplate="{StaticResource editTemplate}"/>
+    <syncfusion:AnnotationEditorViewModel Content="Annotation" 
+                                          ViewTemplate="{StaticResource viewTemplate}" 
+                                          EditTemplate="{StaticResource editTemplate}"/>
 </syncfusion:AnnotationCollection>
 
 {% endhighlight %}
@@ -436,8 +456,8 @@ Annotations = new ObservableCollection<IAnnotation>()
     {
         Content = "Annotation",
         //Defines the view and edit templates
-        ViewTemplate = this.Resources["viewTemplate"] as DataTemplate,
-        EditTemplate  = this.Resources["editTemplate"] as DataTemplate,
+        ViewTemplate = App.Current.Resources["viewTemplate"] as DataTemplate,
+        EditTemplate  = App.Current.Resources["editTemplate"] as DataTemplate,
     }
 }
 
@@ -454,7 +474,10 @@ Also, diagram have `TextAnnotationViewModel` class to customize the appearance o
 <!--Initialize the Annotation Collection-->
 <syncfusion:AnnotationCollection>
     <!--Initialize the Text Annotation View Model class-->
-    <syncfusion:TextAnnotationViewModel Text="Annotation" FontStyle="Italic" FontSize="12" FontFamily="TimesNewRomen" TextDecorations="Underline" FontWeight="Bold" Foreground="Black"/>
+    <syncfusion:TextAnnotationViewModel Text="Annotation" FontStyle="Italic" 
+                                        FontSize="12" FontFamily="TimesNewRomen" 
+                                        TextDecorations="Underline" 
+                                        FontWeight="Bold" Foreground="Black"/>
 </syncfusion:AnnotationCollection>
                                 
 {% endhighlight %}

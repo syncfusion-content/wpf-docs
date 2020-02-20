@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotation Definition | Syncfusion 
-description: how to define basic annotations for Node and Connectors
+description: how to define basic annotations for Node and Connectors and how to create multiple annotation in various position for nodes and connectors.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -24,7 +24,9 @@ An annotation can be added to a node or connector by defining the annotation obj
         <!--Initialize the Node Collection-->
         <syncfusion:NodeCollection>
             <!--Initialize the node view model-->
-            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="100" OffsetY="100" Shape="{StaticResource Rectangle}" >
+            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" 
+                                      OffsetX="100" OffsetY="100" 
+                                      Shape="{StaticResource Rectangle}" >
                 <!--Initialize the annotations-->
                 <syncfusion:NodeViewModel.Annotations>
                     <!--Initialize the AnnotationCollection-->
