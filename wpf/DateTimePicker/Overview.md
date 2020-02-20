@@ -29,4 +29,4 @@ The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Sync
 
 **Styles** - Provides a rich set of built-in themes and customizes the style of each part of DateTimeEdit.
 
-**Testing** - Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/wpf/datetimeedit/ui-automation#quick-test-professional-qtp) to recognize DateTimeEdit.
+**Testing** - Provides QTP add-in that contains custom libraries, which helps [QTP](https://help.syncfusion.com/wpf/datetimepicker/ui-automation#quick-test-professional-qtp) to recognize DateTimeEdit.
