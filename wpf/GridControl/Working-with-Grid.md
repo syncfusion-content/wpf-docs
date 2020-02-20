@@ -249,33 +249,6 @@ grid.Model.RemoveColumns(2, 3);
 
 You can track the moment the rows or columns are inserted by handling the RowsRemoved and ColumnsRemoved events.
 
-### AutoFit content
-
-The rows heights and column widths can be made to adjust themselves automatically to fit the content by using the methods ResizeRowsToFit() and ResizeColumnsToFit(), which accept the following two parameters:
-
-1. A range of rows or columns whose size should be adjusted 
-2. A GridResizeToFitOptions enumeration value. 
-
-The GridResizeToFitOptions enum value specifies how the resizing action should be performed; whether to include covered cells, hidden cells, headers, and whether or not to shrink size, and the like.
-
-The following code illustrates the usage of ResizeRowsToFit and ResizeColumnsToFit methods:
-
-{% tabs %}
-{% highlight c# %}
-//Auto fit column 3
-grid.Model.ResizeColumnsToFit(GridRangeInfo.Col(3), GridResizeToFitOptions.NoShrinkSize);
-
-//Auto fit row 2
-grid.Model.ResizeRowsToFit(GridRangeInfo.Row(2), GridResizeToFitOptions.NoShrinkSize);
-{% endhighlight %}
-{% endtabs %}
-
-![Auto fit Column 3 in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img12.jpeg)
-
-![Auto fit Row 2 in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img13.jpeg)
-
-
-
 ## Selection Modes
 
 There are two modes of selection available in the Grid. They are,
@@ -544,90 +517,5 @@ Returns the number of selected rows.</td></tr>
 <td>
 GetSelectedCols()</td><td>
 Returns the number of selected columns.</td></tr>
-</table>
-
-## ColumnBasedSizing
-
-ColumnBasedSizing enables you to set width of visible columns based on available width. This feature is useful when column sizing is required for columns based on available width, cell content. Feature can be used when GridDataControl VisibleColumns are set individually with specific widths.
-
-### Applying Width Value  
-
-Columns are sized based on values users set. 
-
-Allowed width values are:
-
-* SizeToCells
-* SizeToHeader
-* Auto
-
-
-N> You can also provide numeric values for *, where * can be preceded by any double value.
-
-The following code illustrates how to set the Width property of GridDataVisibleColumn.
-
-{% tabs %}
-{% highlight xaml %}
-Width Value set to Star:
-<syncfusion:GridDataVisibleColumn MappingName="OrderID" Binding="{Binding OrderID}" Width="1.2*"/>
-
-Width value set to “Double”
-<syncfusion:GridDataVisibleColumn MappingName="CustomerID" Width="40" >
-</syncfusion:GridDataVisibleColumn>
-
-Width value set to “SizeToCells”                   
-<syncfusion:GridDataVisibleColumn MappingName="EmployeeID" Width="SizeToCells" Binding="{Binding EmployeeID}"/>
-
-Width value set to "SizeToHeader”
-<syncfusion:GridDataVisibleColumn MappingName="ShipName" Width="SizeToHeader" Binding="{Binding ShipName}"/>
-</syncfusion:GridDataControl.VisibleColumns>
-{% endhighlight %}
-{% endtabs %}
-
-Define the Width, by using the following code.
-
-{% tabs %}
-{% highlight c# %}
-Width = new GridDataControlLength(value, GridControlLengthUnitType.Star); 
-
-//(or)
-Width = new GridDataControlLength(value); 
-{% endhighlight  %}
-{% endtabs %}
-
-![Customized width of GridDataVisibleColumn in WPF GridControl](Working-with-Grid_images/Working-with-Grid_img25.jpeg)
-
-### Property Details
-
-The following table consists of the property details.
-
-<table>
-<tr>
-<th>
-Name of the Property</th><th>
-Description</th><th>
-Type of Property</th><th>
-Value It Accepts</th><th>
-Property Syntax</th></tr>
-<tr>
-<td>
-ActualWidth</td><td>
-GridDataVisibleColumn’s actual width in double value. Users can only get the value.</td><td>
-Normal</td><td>
-Double</td><td>
-VisibleColumn.ActualWidth  </td></tr>
-<tr>
-<td>
-Width</td><td>
-Holds the width value for GridDataVisibleColumn  in units of GridDataControlLength  </td><td>
-Dependency property</td><td>
-GridDataControlLength</td><td>
-visibleColumn.Width=new GridDataControlLength(value, GridControlLengthUnitType);</td></tr>
-<tr>
-<td>
-MaxLength</td><td>
-Holds the value for maximum records to be considered while calculating cell content size. Default value is 1000. Set as -1 to consider all values.</td><td>
-Normal</td><td>
-int</td><td>
-MaxLength</td></tr>
 </table>
 

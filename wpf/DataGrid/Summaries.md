@@ -1990,7 +1990,7 @@ Used for custom summaries
 
 ## Calculate summary for selected rows
 
-SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the `SfDataGrid.SummaryCalculationUnit` or `GridSummaryRow.CalculationUnit` property.
+SfDataGrid calculates the summaries for all records by default. You can calculate the summaries for selected records by using the [SfDataGrid.SummaryCalculationUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SummaryCalculationUnit.html) or [GridSummaryRow.CalculationUnit](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~CalculationUnit.html) property.
 This is applicable for all type of summary rows such as table, caption and group summary.
 
 In the below code snippet, the summaries for selected records are calculated for the top positioned `TableSummaryRow` and the summaries for all records are calculated for the bottom positioned `TableSummaryRow`.
