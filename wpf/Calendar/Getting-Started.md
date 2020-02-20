@@ -7,7 +7,7 @@ control: CalendarEdit
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Syncfuion CalendarEdit control for WPF
 
 ## Assembly deployment
 
