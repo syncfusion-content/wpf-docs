@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Automatic Layout
+# Automatic Layout in WPF Diagram (SfDiagram)
 
 SfDiagram provides a set of built-in automatic layout algorithms, which is used to arrange nodes automatically based on a predefined layout logic. SfDiagram supports the following built-in automatic layout algorithms:
 
