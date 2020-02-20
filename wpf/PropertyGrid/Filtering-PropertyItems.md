@@ -436,7 +436,7 @@ public class ViewModel {
 <syncfusion:PropertyGrid Name="propertyGrid1" SelectedObject="{Binding SelectedEmployee }" SearchBoxVisibility="Visible" />
 
 {% endhighlight %} 
-% highlight C# %}
+{% highlight C# %}
 
 PropertyGrid propertyGrid1 = new PropertyGrid();
 propertyGrid1.DataContext = new ViewModel();
@@ -459,7 +459,7 @@ Here, The `Age` property is searched in the SearchBox.
 <syncfusion:PropertyGrid Name="propertyGrid1" SelectedObject="{Binding SelectedEmployee }" SearchBoxVisibility="Collapsed" />
 
 {% endhighlight %} 
-% highlight C# %}
+{% highlight C# %}
 
 PropertyGrid propertyGrid1 = new PropertyGrid();
 propertyGrid1.DataContext = new ViewModel();
