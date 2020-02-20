@@ -74,14 +74,7 @@ style.CellType = "CheckBox";
 
 Likewise, you can also add other controls from the table above. A sample output is displayed below.
 
-
-
-![Checkbox cell type](Cell-Types_images/Cell-Types_img1.jpeg)
-
-
-
-Basic Cell Types
-{:.caption}
+![Checkbox cell type in WPF GridControl](Cell-Types_images/Cell-Types_img1.jpeg)
 
 A check box is created in the grid.
 
@@ -96,8 +89,6 @@ This cell type allows you to choose the cell value from a drop-down list. You ca
 N> A foreign key is a field in a relational table that matches the primary key column of another table. The foreign key can be used to cross-reference tables.
 
 The table below lists various properties that can affect combo box cells.
-
-
 
 <table>
 <tr>
@@ -167,16 +158,7 @@ combo1.DropDownStyle = GridDropDownStyle.Editable;
 
 The following output is generated using the code above.
 
-
-
-![Combobox celltype](Cell-Types_images/Cell-Types_img2.jpeg)
-
-
-
-Editable Combo Box using ChoiceList
-{:.caption}
-
-An Editable Combo Box in a Grid is created
+![Editable Combo Box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img2.jpeg)
 
 Setting Up Autocomplete Combo Box 
 
@@ -194,16 +176,7 @@ combo2.DropDownStyle = GridDropDownStyle.AutoComplete;
 
 The following output is generated using the code above.
 
-
-
-![Autocomplete combobox](Cell-Types_images/Cell-Types_img3.jpeg)
-
-
-
-Autocomplete Combo box using  ChoiceList
-{:.caption}
-
-An Autocomplete Combo Box in a Grid is created
+![Autocomplete Combo box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img3.jpeg)
 
 Setting Up Exclusive Combo Box 
 
@@ -221,16 +194,7 @@ combo3.DropDownStyle = GridDropDownStyle.Exclusive;
 
 The following output is generated using the code above.
 
-
-
-![Exclusive combobox](Cell-Types_images/Cell-Types_img4.jpeg)
-
-
-
-Exclusive Combo box using ChoiceList
-{:.caption}
-
-An Exclusive Combo Box in a Grid is created.
+![Exclusive Combo box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img4.jpeg)
 
 #### Using ItemsSource
 
@@ -252,16 +216,7 @@ combo1.DropDownStyle = GridDropDownStyle.Editable;
 
 The following output is generated using the code above.
 
-
-
-![Editable combobox](Cell-Types_images/Cell-Types_img5.jpeg)
-
-
-
-Editable Combo box using ItemsSource
-{:.caption}
-
-An editable Combo Box in a Grid is created.
+![Editable Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img5.jpeg)
 
 Setting Up an Autocomplete Combo Box
 
@@ -281,16 +236,7 @@ combo2.ValueMember = "EmployeeID";
 
 The following output is generated using the code above.
 
-
-
-![Autocomplete combobox](Cell-Types_images/Cell-Types_img6.jpeg)
-
-
-
-Autocomplete Combo box using ItemsSource
-{:.caption}
-
-An Autocomplete Combo Box in a Grid is created
+![Autocomplete Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img6.jpeg)
 
 Setting Up an Exclusive Combo Box
 
@@ -308,16 +254,7 @@ combo3.DropDownStyle = GridDropDownStyle.Exclusive;
 
 The following output is generated using the code above.
 
-
-
-![Exclusive combobox](Cell-Types_images/Cell-Types_img7.jpeg)
-
-
-
-Exclusive Combo box using ItemsSource
-{:.caption}
-
-An Exclusive Combo Box in a Grid is created.
+![Exclusive Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img7.jpeg)
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
 
@@ -350,14 +287,7 @@ dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 
 The following output is generated using the code above.
 
-
-
-![Editable combobox](Cell-Types_images/Cell-Types_img8.jpeg)
-
-
-
-Editable Drop-down List Control
-{:.caption}
+![Editable Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img8.jpeg)
 
 An Editable drop-down list is created.
 
@@ -385,14 +315,7 @@ dropdown2.DropDownStyle = GridDropDownStyle.AutoComplete;
 
 The following output is generated using the code above.
 
-
-
-![Dropdown list celltype](Cell-Types_images/Cell-Types_img9.jpeg)
-
-
-
-Autocomplete Drop-down List Control
-{:.caption}
+![Autocomplete Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img9.jpeg)
 
 Exclusive Drop-down List Bound to LINQ Source with FirstName as its DisplayMember.
 
@@ -417,18 +340,9 @@ dropdown3.DropDownStyle = GridDropDownStyle.Exclusive;
 
 The following output is generated using the code above.
 
-
-
-![Autocomplete dropdown list](Cell-Types_images/Cell-Types_img10.jpeg)
-
-
-
-Exclusive Drop-down List Control
-{:.caption}
+![Exclusive Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img10.jpeg)
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
-
-
 
 ### Currency Cells
 
@@ -495,14 +409,7 @@ grid.Model[6, 2].CellValue = -4.0;
 
 The following output is generated using the code above.
 
-
-
-![Currency celltype](Cell-Types_images/Cell-Types_img11.jpeg)
-
-
-
-Currency Cell
-{:.caption}
+![Currency celltype in WPF GridControl](Cell-Types_images/Cell-Types_img11.jpeg)
 
 Currency Cell with a Negative Currency Value and a Different Negative Pattern
 
@@ -529,14 +436,7 @@ grid.Model[10, 2].CellValue = -14.0;
 
 The following output is generated using the code above.
 
-
-
-![Currency value with nagative pattern](Cell-Types_images/Cell-Types_img12.jpeg)
-
-
-
-Currency Cell
-{:.caption}
+![Currency value with nagative pattern in WPF GridControl](Cell-Types_images/Cell-Types_img12.jpeg)
 
 Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separator and ‘$’ as Currency Symbol
 
@@ -563,24 +463,13 @@ grid.Model[14, 2].CellValue = 36.0;
 
 The following output is generated using the code above.
 
+![Currency Cell with a Positive Value in WPF GridControl](Cell-Types_images/Cell-Types_img13.jpeg)
 
-
-![Currency value with currency settings](Cell-Types_images/Cell-Types_img13.jpeg)
-
-
-
-Currency Cell with a Positive Value
-{:.caption}
-
-N> For complete code, please refer to the following browser sample.
-
-> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo
+N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo
 
 ### Date Time Cells
 
 The Date Time cells incorporate DateTimeEdit controls in grid cells that will help you to interactively set a date and time value. The style properties below are applicable to this cell type.
-
-
 
 <table>
 <tr>
@@ -690,22 +579,13 @@ grid.Model[11, 1].CellValue = DateTime.Now;
 
 The following output is generated using the code above.
 
-
-
-![Datetime celltype](Cell-Types_images/Cell-Types_img14.jpeg)
-
-
-
-DateTime Cell
-{:.caption}
+![Datetime celltype in WPF GridControl](Cell-Types_images/Cell-Types_img14.jpeg)
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo
 
 ### Double Edit Cells
 
 Using DoubleEdit cell type will restrict the user to enter only double (value type) values into the cell. Thus it can be used to display System.Double type values. Below are the style properties that affect this cell.
-
-
 
 <table>
 <tr>
@@ -787,25 +667,13 @@ grid.Model[12, 2].CellValue = 12345678.00;.00;
 
 The following output is generated using the code above.
 
+![Doubleedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img15.jpeg)
 
-
-![Doubleedit celltype](Cell-Types_images/Cell-Types_img15.jpeg)
-
-
-Double Edit Cell
-{:.caption}
-
-N> For complete code, please refer to the following browser sample.
-
-> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo
-
-
+N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo
 
 ### Integer Edit Cells
 
 IntegerEdit is a specialized cell type that restricts the data entry to integers. The table below lists the style properties specific to this cell type.
-
-
 
 <table>
 <tr>
@@ -865,14 +733,7 @@ grid.Model.ColStyles[3].IntegerEdit.UseNullOption = true;
 
 The following output is generated using the code above.
 
-
-
-![Integeredit celltype](Cell-Types_images/Cell-Types_img16.jpeg)
-
-
-
-Integer Edit
-{:.caption}
+![Integeredit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img16.jpeg)
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Integer Edit Cell Demo
 
@@ -910,14 +771,8 @@ maskStyleInfo2.CellValue = "12012007";";
 
 The following output is generated using the code above.
 
+![Maskedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img17.jpeg)
 
-
-![Maskedit celltype](Cell-Types_images/Cell-Types_img17.jpeg)
-
-
-
-Mask Edit Cell
-{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo
 
@@ -1000,14 +855,7 @@ percentStyleInfo2.CellValue = 91;
 
 The following output is generated using the code above.
 
-
-
-![Percentedit celltype](Cell-Types_images/Cell-Types_img18.jpeg)
-
-
-
-Percent Edit Cell
-{:.caption}
+![Percentedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img18.jpeg)
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo
 
@@ -1053,15 +901,7 @@ this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 {% endhighlight  %}
 {% endtabs %}
 
-
-![Richtextbox celltype](Cell-Types_images/Cell-Types_img19.png)
-
-
-
-RichTextBox CellType
-{:.caption}
-
-
+![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img19.png)
 
 ### Up Down Edit Cells
 
@@ -1145,14 +985,8 @@ updownStyleInfo1.CellValue = 10.000;
 
 The following output is generated using the code above.
 
+![Updownedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img20.jpeg)
 
-
-![Updownedit celltype](Cell-Types_images/Cell-Types_img20.jpeg)
-
-
-
-Up Down Edit
-{:.caption}
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo
 
@@ -1205,22 +1039,11 @@ CoveredCells.Add(new CoveredCellInfo(40, 2, 49, 5));
 {% endhighlight  %}
 {% endtabs %}
 
-
-
-
-
 #### Output
 
 The following output is generated using the code above.
 
-
-
-![Nestedgrid](Cell-Types_images/Cell-Types_img21.jpeg)
-
-
-
-Nested Grid
-{:.caption}
+![Nestedgrid in WPF GridControl](Cell-Types_images/Cell-Types_img21.jpeg)
 
 The same way you can nest a grid inside a complete row you can also nest a grid inside a whole column.
 
@@ -1252,7 +1075,6 @@ Model[100, 2].CellValue = nestedGridWithSharedRowsModel;
 CoveredCells.Add(new CoveredCellInfo(100, 2, 100 + nestedGridWithSharedRowsModel.RowCount - 1, 5));
 
 // Setup the top level(parent) nested grid
-
 private GridModel GetNestedGridWithSharedRowsModel()
 {
 GridModel model = new GridModel();
@@ -1444,14 +1266,7 @@ return model;
 
 The following output is generated using the code above.
 
-
-
-![Nested grid-rows tied to the parent grid rows](Cell-Types_images/Cell-Types_img22.jpeg)
-
-
-
-Nested Grid-Rows tied to the Parent Grid Rows
-{:.caption}
+![Nested grid-rows tied to the parent grid rows in WPF GridControl](Cell-Types_images/Cell-Types_img22.jpeg)
 
 Nested Grid Inside a Covered Range with its Columns Tied to the Columns of the Parent Grid
 
@@ -1553,12 +1368,7 @@ The following output is generated using the code above.
 
 
 
-![Nested grid-columns tied to the parent grid columns](Cell-Types_images/Cell-Types_img23.jpeg)
-
-
-
-Nested Grid-Columns tied to the Parent Grid Columns
-{:.caption}
+![Nested grid-columns tied to the parent grid columns in WPF GridControl](Cell-Types_images/Cell-Types_img23.jpeg)
 
 Nested Grid Inside a Covered Range with its Rows and Columns Independent of Parent Grid
 
@@ -1605,20 +1415,11 @@ Model[6, 2].CellValue = model;
 {% endhighlight  %}
 {% endtabs %}
 
-
-
 #### Output
 
 The following output is generated using the code above.
 
-
-
-![Nested grid-rows and columns independent of parent grid](Cell-Types_images/Cell-Types_img24.jpeg)
-
-
-
-Nested Grid-Rows and Columns Independent of Parent Grid
-{:.caption}
+![Nested grid-rows and columns independent of parent grid in WPF GridControl](Cell-Types_images/Cell-Types_img24.jpeg)
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo
 
@@ -1776,17 +1577,9 @@ dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 
 The following output is generated using the code above.
 
-
-
-![Cutom drop-down](Cell-Types_images/Cell-Types_img26.jpeg)
-
-
-
-_Custom Drop-down_
+![Cutom drop-down in WPF GridControl](Cell-Types_images/Cell-Types_img26.jpeg)
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Custom Drop Down Demo
-
-
 
 ### Data Template Cells
 
@@ -1909,12 +1702,7 @@ The following output is generated using the code above.
 
 
 
-![Data template with cell template assigned](Cell-Types_images/Cell-Types_img27.jpeg)
-
-
-
-Data Template with Cell Template Assigned
-{:.caption}
+![Data template with cell template assigned in WPF GridControl](Cell-Types_images/Cell-Types_img27.jpeg)
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo
 
@@ -2051,12 +1839,7 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 
 The following output is generated using the code above.
 
-![Richtextbox celltype](Cell-Types_images/Cell-Types_img28.jpeg)
-
-
-
-Rich Text Box Cell
-{:.caption}
+![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img28.jpeg)
 
 ### Chart Cells
 
@@ -2064,7 +1847,7 @@ Grid provides inherent support to host chart controls. This is achieved by using
 
 #### Example
 
-1. Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
+1.Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -2134,7 +1917,7 @@ public class MyDataCollection : ObservableCollection<MyData>
 {% endhighlight  %}
 {% endtabs %}
 
-2. Bind the above template to the grid cell to form a chart cell.
+2.Bind the above template to the grid cell to form a chart cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -2149,12 +1932,7 @@ grid.Model.RowHeights[2] = 400d;
 
 The following output is generated using the code above.
 
-![Chart cell](Cell-Types_images/Cell-Types_img29.jpeg)
-
-
-
-Chart Cell
-{:.caption}
+![Chart cell in WPF GridControl](Cell-Types_images/Cell-Types_img29.jpeg)
 
 ## Inserting Images into Grid Cells
 
@@ -2162,8 +1940,6 @@ Grid provides inherent support to add images into grid cells. There are two poss
 
 * Style.Image property—Used to insert an image alongside the text in the grid cells.
 * Style.ImageList property—It serves the same purpose as the Image property, points to a collection of images and lets you share the same ImageSource for a group of cells. Once you have selected the images by using the ImageList property, you must set the ImageIndex property for individual cells, to indicate the specific image (from the ImageList) to be inserted into the cell.
-
-
 
 N> If you use both Image and ImageList properties, then the most recent property applied will be considered.
 
@@ -2204,10 +1980,5 @@ grid.Model[2, 2].ImageIndex = 1;
 
 The following output is generated using the code above.
 
-![Text image cell](Cell-Types_images/Cell-Types_img30.jpeg)
-
-
-
-Text Image Cell
-{:.caption}
+![Text image cell in WPF GridControl](Cell-Types_images/Cell-Types_img30.jpeg)
 
