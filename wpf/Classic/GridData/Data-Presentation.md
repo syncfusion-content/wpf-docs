@@ -267,7 +267,7 @@ The following screenshot shows a GDC enabled with sorting feature:
 
 ### Enable/Disable Sorting
 
-It is possible to prevent sorting on specific grid columns or all the columns at once. Grid.AllowSortproperty is set to _true_ by default. Set the Grid.AllowSort property to _false_ to disable sorting on all the columns. To disallow sorting on a particular column, set its visibleColumn.AllowSort property to _false_. The following code illustrates setting these properties:
+It is possible to prevent sorting on specific grid columns or all the columns at once. Grid.AllowSort property is set to _true_ by default. Set the Grid.AllowSort property to _false_ to disable sorting on all the columns. To disallow sorting on a particular column, set its visibleColumn.AllowSort property to _false_. The following code illustrates setting these properties:
 
 #### Disable Sort on All Columns
 
@@ -839,13 +839,13 @@ Numeric & DateTime</td></tr>
 <tr>
 <td>
 and</td><td>
->value and &lt=value&gt;value and &ltvalue&gt;=value and &ltvalue&gt;=value and &lt=value</td><td>
+&gt;value and &lt=value&gt;value and &lt;value&gt;=value and &lt;value&gt;=value and &lt=value</td><td>
 between</td><td>
 Numeric & DateTime</td></tr>
 <tr>
 <td>
 or</td><td>
-&gt;value or &lt=value&gt;value or &ltvalue&gt;=value or &ltvalue&gt;=value or &lt=value</td><td>
+&gt;value or &lt=value&gt;value or &lt;value&gt;=value or &lt;value&gt;=value or &lt=value</td><td>
 between</td><td>
 Numeric & DateTime</td></tr>
 <tr>
@@ -1019,7 +1019,7 @@ NA</td></tr>
 <tr>
 <td>
 EnablePaging</td><td>
-When the property is set as true, it is loaded pagewise</td><td>
+When the property is set as true, it is loaded page wise</td><td>
 NA</td><td>
 Boolean</td><td>
 NA</td></tr>
@@ -1059,7 +1059,7 @@ Reference links </th></tr>
 <tr>
 <td>
 OnDemandDataSourceLoad</td><td>
-tde event is triggered when it moves to tde next page or when tde page changes </td><td>
+the event is triggered when it moves to the next page or when the page changes </td><td>
 PagedRowsMaximumRows</td><td>
 GridDataOnDemandPageLoadingEventArgs</td><td>
 NA </td></tr>
@@ -1196,28 +1196,28 @@ Return Type </th></tr>
 <tr>
 <td>
 ExpandAllDetailsView</td><td>
-Using tdis metdod, tde DetailsView of all records can be expanded. When you want to expand all tde details views at tde same time you can use tdis metdod.</td><td>
+Using this method, the DetailsView of all records can be expanded. When you want to expand all the details views at the same time you can use this method.</td><td>
 </td><td>
 </td><td>
 Void </td></tr>
 <tr>
 <td>
 ExpandDetailsViewAt</td><td>
-Using tdis metdod, tde DetailsView of a particular record can be expanded.tdis metdod gets tde record index as an input argument and expand tde details view of tde corresponding record.</td><td>
+Using this method, tde DetailsView of a particular record can be expanded.this method gets the record index as an input argument and expand the details view of the corresponding record.</td><td>
 Record Index</td><td>
 int</td><td>
 Void</td></tr>
 <tr>
 <td>
 CollapseAllDetailsView</td><td>
-Using tdis metdod, you can collapse all expanded details view at tde same time.</td><td>
+Using this method, you can collapse all expanded details view at the same time.</td><td>
 </td><td>
 </td><td>
 Void</td></tr>
 <tr>
 <td>
 CollapseDetailsViewAt</td><td>
-Using tdis metdod, you can collapse tde details view of a particular record.tdis metdod gets tde record index as an input argument and collapse tde details view of tde corresponding record.</td><td>
+Using this method, you can collapse the details view of a particular record. This method gets tde record index as an input argument and collapse the details view of tde corresponding record.</td><td>
 Record Index</td><td>
 int</td><td>
 Void</td></tr>
@@ -1238,25 +1238,25 @@ Type </th></tr>
 <tr>
 <td>
 DetailsViewExpanding</td><td>
-tdis event triggers before tde DetailsView is expanded.tdis event is a cancelable event. By canceling tdis event, tde corresponding DetailsView remains collapsed.  </td><td>
+this event triggers before the DetailsView is expanded.this event is a cancelable event. By canceling this event, the corresponding DetailsView remains collapsed.  </td><td>
 GridDataDetailsViewExpandingEventArgs</td><td>
 Routed Event </td></tr>
 <tr>
 <td>
 DetailsViewExpanded</td><td>
-tdis event is triggered after tde DetailsView is expanded. </td><td>
+this event is triggered after tde DetailsView is expanded. </td><td>
 GridDataDetailsViewExpandedEventArgs</td><td>
 Routed Event</td></tr>
 <tr>
 <td>
 DetailsViewCollapsing</td><td>
-tdis event is triggered before tde DetailsView is collapsed. tdis event is a cancelable event. By canceling tdis event, tde corresponding DetailsView remains expanded.</td><td>
+this event is triggered before tde DetailsView is collapsed. this event is a cancelable event. By canceling this event, the corresponding DetailsView remains expanded.</td><td>
 GridDataValueCancelEventArgs&lt;GridDataRecord&gt;</td><td>
 </td></tr>
 <tr>
 <td>
 DetailsViewCollapsed</td><td>
-tdis event gets triggered after tde DetailsView get collapsed. </td><td>
+this event gets triggered after the DetailsView get collapsed. </td><td>
 GridDataValueEventArgs&lt;GridDataRecord&gt;</td><td>
 </td></tr>
 </table>
@@ -1842,7 +1842,7 @@ Caption Summaries
 
 ### Table Summaries
 
-The Table Summary is associated with the whole grid table itself. The GridDataControl.TableSummaryRows collection manages summaries of this type. It provides support to add multiple summaries. These summaries are enabled by setting the ShowTableSummariesproperty to true.
+The Table Summary is associated with the whole grid table itself. The GridDataControl.TableSummaryRows collection manages summaries of this type. It provides support to add multiple summaries. These summaries are enabled by setting the ShowTableSummaries property to true.
 
 {% highlight xaml %}
 
@@ -1938,7 +1938,7 @@ Caption Summaries
 
 ## Caption Summaries
 
-Grid provides built-in support for caption summaries, where the summary values are displayed in the group caption cells. You can have only one caption summary row for a grid table. The GridDataControl.CaptionSummaryRow property is used to set up a caption summary. The caption summary is enabled by setting the ShowGroupSummaryInCaptionproperty to true.
+Grid provides built-in support for caption summaries, where the summary values are displayed in the group caption cells. You can have only one caption summary row for a grid table. The GridDataControl.CaptionSummaryRow property is used to set up a caption summary. The caption summary is enabled by setting the ShowGroupSummaryInCaption property to true.
 
 {% highlight xaml %}
 
@@ -2332,7 +2332,7 @@ GridData control can display nested tables in a hierarchy using a master-detail 
 
 where n is a number of records in a table
 
-With the nested tables (one table nested inside another table), each record in the parent table has an ssociated set of records in the child table. Every record in the relation is provided with +/- button called RecordPlusMinus that can be expanded and collapsed to bring the underlying records in the child table for display. The number of tables that can be nested with relations using a GridData control is unlimited.
+With the nested tables (one table nested inside another table), each record in the parent table has an associated set of records in the child table. Every record in the relation is provided with +/- button called RecordPlusMinus that can be expanded and collapsed to bring the underlying records in the child table for display. The number of tables that can be nested with relations using a GridData control is unlimited.
 
 ### The Relations Collection
 
@@ -2606,19 +2606,19 @@ Returns true if both arguments does not have same value.</td><td>
 StartsWith</td><td>
 StartsWith</td><td>
 Returns true if the value starts with the given string.</td><td>
-ProductName StartsWith Chai</td></tr>
+ProductName StartsWith Char</td></tr>
 <tr>
 <td>
 EndsWith</td><td>
 EndsWith</td><td>
 Returns true if the value ends with the specified string.</td><td>
-PruductName EndsWith i</td></tr>
+ProductName EndsWith i</td></tr>
 <tr>
 <td>
 Contains</td><td>
 Contains</td><td>
 Returns true if the value contains the specified string.</td><td>
-ProductName Contains hai</td></tr>
+ProductName Contains ha</td></tr>
 </table>
 
 ### Example
@@ -2681,7 +2681,7 @@ Essential Grid provides support to associate individual cells with ToolTips. Too
 
 Grid exposes a style property named TooltipTemplateKey that is the name of the template to be used for generating tooltip. You can define this template in xaml and then simply assign its name to the style.TooltipTemplateKey property. This infers that any style content that is defined in this template could be used to display the tooltip. Once the template is defined, you need to enable its display by setting the style.ShowTooltip property to true. 
 
-N> If style.ShowToolip is not set, then the default template associated with the Grid is loaded, and the default template would try to show the style.CellValue in a tooltip.
+N> If style.ShowTooltip is not set, then the default template associated with the Grid is loaded, and the default template would try to show the style.CellValue in a tooltip.
 
 #### Example
 
@@ -3185,7 +3185,7 @@ Specifies the PredicateType that is used to combine more than one condition. The
 
 #### Example
 
-Now, let us consider an example for conditional formatting. The first conditional formatter in the following example specifies the filter criteria, “{Frieght} > 200 OR {Frieght} < 500” that applies Yellow background to the cells satisfying this condition. 
+Now, let us consider an example for conditional formatting. The first conditional formatter in the following example specifies the filter criteria, “{Freight} > 200 OR {Freight} < 500” that applies Yellow background to the cells satisfying this condition. 
 
 The second conditional formatter indicates the criteria–“{ShipCountry} Equals USA OR {ShipCountry} Equals UK”. If this condition is satisfied, then the given style, Crimson background and White foreground is applied only to the corresponding record’s ShipCountry field, instead of being applied to the entire row.
 
@@ -3675,7 +3675,7 @@ DoubleEditVisibleColumnStyle</td><td>
 GridDataDoubleEditVisibleColumnControl</td></tr>
 <tr>
 <td>
-IntegerEditVisibleColumnstyle</td><td>
+IntegerEditVisibleColumnStyle</td><td>
 GridDataIntegerEditVisibleColumnControl</td></tr>
 <tr>
 <td>
@@ -4559,7 +4559,7 @@ The Nested Grid Group enables to customize the Nested cell borders by modifying 
 
 N> For Nested grid, Style Manager can be set by the Child Model. By default, Child inherits the styles from Parent.
 
-The following code example illsutrates this.
+The following code example illustrates this.
 
 {% highlight c# %}
 
@@ -4709,7 +4709,7 @@ RowStyle</td><td>
 GridDataRowControl</td></tr>
 <tr>
 <td>
-AlternateRowstyle</td><td>
+AlternateRowStyle</td><td>
 GridDataRowControl</td></tr>
 </table>
 
@@ -4827,7 +4827,7 @@ GridDataControl provides Commands for the following events. This helps write the
 ## QueryCellInfoCommand 
 
 
-QueryCellInfoCommand is widely used to allow customization of each and every cell in the required format. QueryCellInfo accepts an argument of type GridQueryCellInfoEventArgs. The GridQuerryCellInfoEventArgs contains the following customization properties. Now you can make use of this 
+QueryCellInfoCommand is widely used to allow customization of each and every cell in the required format. QueryCellInfo accepts an argument of type GridQueryCellInfoEventArgs. The GridQueryCellInfoEventArgs contains the following customization properties. Now you can make use of this 
 
 ### Properties
 
@@ -4930,7 +4930,7 @@ Data Type </th></tr>
 <tr>
 <td>
 CanAddHiddenColumns</td><td>
-By setting this property to true, you can display the hidden GridDataVisbileColumns in the column chooser window.</td><td>
+By setting this property to true, you can display the hidden GridDataVisibleColumns in the column chooser window.</td><td>
 boolean</td><td>
 boolean</td></tr>
 </table>
@@ -4949,7 +4949,7 @@ Return Type </th></tr>
 <tr>
 <td>
 ShowColumnChooser()</td><td>
-By invoking tdis metdod, tde GridData control’s ColumnChooser window pops up.</td><td>
+By invoking this method, the GridData control’s ColumnChooser window pops up.</td><td>
 Null</td><td>
 ------</td><td>
 Void</td></tr>
