@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range and Record Selection in WPF Grid | Syncfusion
-description: This section will explains about the range and record selection options in WPF Grid Control and different selection modes available.
+title: Range and Record selection in WPF Grid | Syncfusion
+description: This section will explains about the range and record selection options and different selection modes available in WPF Grid Control.
 platform: wpf
 control: Grid
 documentation: ug
@@ -269,12 +269,12 @@ N> If multiple ranges are selected, the selection frame is applicable only for `
 
 ## CurrentCell
 
-By default the CurrentCell cell borders are rendered when a cell is activated. The [ShowCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ShowCurrentCell.html) property is used to show or hide current cell borders.
+When a cell is activated current cell is outlined with a border. You can show or hide current cell outline by setting [ShowCurrentCell](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ShowCurrentCell.html) property.
 
 {% tabs %}
 {% highlight c# %}
 //To disable the current cell.
-this.gridControl.Model.Options.ShowCurrentCell = false; 
+this.gridControl.Model.Options.ShowCurrentCell = true; 
 {% endhighlight  %}
 {% endtabs %}
 
