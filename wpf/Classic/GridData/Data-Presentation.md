@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Data Presentation | GridData (Classic) | wpf | Syncfusion
-description: Data Presentation
+description: Learn here about how the data is grouping, sorting, summaried and its features of the Syncfusion WPF GridDataControl.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Data Presentation
+# Data Presentation of GridData
 
 GridData control data can be presented in several ways. 
 
@@ -60,14 +60,14 @@ dataGridControl.GroupedColumns.Add(groupedCol);
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img54.jpeg)
+![Create a grouping column in WPF GridDataControl](Getting-Started_images/Getting-Started_img54.jpeg)
 
 
 #### Run Time Grouping
 
 Run time grouping is enabled by displaying the group drop area, a placeholder to store the current groups. Such groups can be created interactively through the drag-and-drop operation. For example, to group data against a particular column, drag the desired column header and drop it into the group drop area.
 
-![](Getting-Started_images/Getting-Started_img55.jpeg)
+![Run time grouping is enabled in WPF GridDataControl](Getting-Started_images/Getting-Started_img55.jpeg)
 
 {% seealso %}
 
@@ -97,7 +97,7 @@ dataGrid.GroupedColumns.Add(groupedCol2);
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img56.jpeg)
+![Nested groups in WPF GridDataControl](Getting-Started_images/Getting-Started_img56.jpeg)
 
 {% seealso %}
 
@@ -262,10 +262,8 @@ You can also perform sorting through the code. This requires you to define a num
 
 The following screenshot shows a GDC enabled with sorting feature:
 
-![](Getting-Started_images/Getting-Started_img57.jpeg)
+![Sorting feature is now enabled in WPF GridData control](Getting-Started_images/Getting-Started_img57.jpeg)
 
-Sorting feature is now enabled in GridData control.
-{:.caption}
 
 ### Enable/Disable Sorting
 
@@ -322,9 +320,8 @@ N> When the grid is sorted against multiple columns, the affected column headers
 
 The following screenshot shows a multicolumn sorting enabled GDC:
 
-![](Getting-Started_images/Getting-Started_img58.jpeg)
+![Multicolumn sorting feature is enabled in GridData control](Getting-Started_images/Getting-Started_img58.jpeg)
 
-Multicolumn sorting feature is now enabled in GridData control.
 
 ### Custom Sorting
 
@@ -448,7 +445,7 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
 
 The following screenshot displays the Company Name column with the sorted names according to their length.
 
-![](Getting-Started_images/Getting-Started_img59.jpeg)
+![Sort the column with name in WPF GridDataControl](Getting-Started_images/Getting-Started_img59.jpeg)
 
 ## Filters
 
@@ -502,7 +499,7 @@ Enable Filter for the Whole Grid
 
 The following image shows a GridData control with filter feature enabled for "CompanyName" column:
 
-![](Getting-Started_images/Getting-Started_img60.jpeg)
+![Filter the CompanyName column in WPF GridDataControl](Getting-Started_images/Getting-Started_img60.jpeg)
 
 CompanyName in GridData control is now enabled with filtering feature.
 
@@ -518,7 +515,7 @@ ShowFilters="True" />
 
 The following image illustrates the columns, filtered against the criteria ContactTitle=’Accounting Manager'.
 
-![](Getting-Started_images/Getting-Started_img61.jpeg)
+![Filter the ContactTitle column in WPF GridDataControl](Getting-Started_images/Getting-Started_img61.jpeg)
 
 ### Filters Collection
 
@@ -672,9 +669,9 @@ ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True">
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img62.jpeg)
+![Clear filter in WPF GridDataControl](Getting-Started_images/Getting-Started_img62.jpeg)
 
-![](Getting-Started_images/Getting-Started_img63.jpeg)
+![Clear filter in WPF GridDataControl](Getting-Started_images/Getting-Started_img63.jpeg)
 
 ## Grid FilterBar
 
@@ -723,7 +720,7 @@ This topic explains the implementation of the FilterBar in an application. The f
 
 3. Run the application and use the filtering tokens in the FilterBar. The valid tokens are listed in Tokens to filter the value table. The following is a sample output of FilterBar implementation.
 
-   ![](Getting-Started_images/Getting-Started_img64.png)
+   ![Filterbar with the value in WPF GridDataControl](Getting-Started_images/Getting-Started_img64.png)
 
 
 4. Clearing the Filter
@@ -903,7 +900,7 @@ The Dropdown button is used to filter the required items. We have to set the Fil
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img65.png)
+![Dropdown filter in WPF GridDataControl](Getting-Started_images/Getting-Started_img65.png)
 
 ### Properties, Methods and Events tables
 
@@ -956,7 +953,7 @@ NA</td></tr>
 
 To Edit items in Dropdown list 
 
-![](Getting-Started_images/Getting-Started_img66.png)
+![Edit the dropdown list in WPF GridDataControl](Getting-Started_images/Getting-Started_img66.png)
 
 The behavior is similar to Auto-complete combo box.
 
@@ -998,7 +995,7 @@ ItemsSource for the page load while grid load. In this type sorting, filtering a
 
 Paging Support is a very useful feature to load large amount of data. We can load millions of records in an efficient way.
 
-![](Getting-Started_images/Getting-Started_img67.png)
+![Load large amount of data in WPF GridDataControl](Getting-Started_images/Getting-Started_img67.png)
 
 ### Properties, Methods and Events tables
 
@@ -1425,9 +1422,9 @@ One can easily add the details view to the GridData control by defining the Deta
 
 4. Click on the expander cell in the grid to expand or collapse the details view of that particular record or row.
 
-   ![](Getting-Started_images/Getting-Started_img68.png)
+   ![Expand or collapse details in WPF GridDataControl](Getting-Started_images/Getting-Started_img68.png)
 
-   ![](Getting-Started_images/Getting-Started_img69.png)
+   ![Expand or collapse details in WPF GridDataControl](Getting-Started_images/Getting-Started_img69.png)
 
 ## Column Drag and Drop
 
@@ -1467,10 +1464,7 @@ The following code illustrates dragging at column level:
 
 The following screenshot illustrates column level dragging:
 
-![](Getting-Started_images/Getting-Started_img70.jpeg)
-
-Column level dragging is enabled in the GridData control.
-{:.caption}
+![Column level dragging is enabled in the GridDataControl](Getting-Started_images/Getting-Started_img70.jpeg)
 
 ### Customizing the Drag Indicator
 
@@ -1486,10 +1480,7 @@ dataGrid.Model.TableProperties.DragIndicatorOuterBrush = Brushes.Black;
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img71.jpeg)
-
-The preceding screenshot shows a GDC with customized drag indicator.
-{:.caption}
+![customized drag indicator in WPF GridDataControl](Getting-Started_images/Getting-Started_img71.jpeg)
 
 ## Column Options
 
@@ -1517,7 +1508,7 @@ this.dataGridControl.ShowColumnOptions = true;
 
 The following screenshot illustrates how the ColumnOptions icon is displayed for individual columns.
 
-![](Getting-Started_images/Getting-Started_img72.png)
+![Show the column option icon in WPF GridDataControl](Getting-Started_images/Getting-Started_img72.png)
 
 ### Customization Options
 
@@ -1570,6 +1561,91 @@ Selecting this check box, adjusts the width of the corresponding column to fit i
 <td>
 Width</td><td>
 You can select the appropriate width for the respective column by pressing and dragging the slider handle with the mouse and clicking the Apply width settings button.</td></tr>
+</table>
+
+## ColumnBasedSizing
+
+ColumnBasedSizing enables you to set width of visible columns based on available width. This feature is useful when column sizing is required for columns based on available width, cell content. Feature can be used when GridDataControl VisibleColumns are set individually with specific widths.
+
+### Applying Width Value  
+
+Columns are sized based on values users set. 
+
+Allowed width values are:
+
+* SizeToCells
+* SizeToHeader
+* Auto
+
+
+N> You can also provide numeric values for *, where * can be preceded by any double value.
+
+The following code illustrates how to set the Width property of GridDataVisibleColumn.
+
+{% tabs %}
+{% highlight xaml %}
+Width Value set to Star:
+<syncfusion:GridDataVisibleColumn MappingName="OrderID" Binding="{Binding OrderID}" Width="1.2*"/>
+
+Width value set to “Double”
+<syncfusion:GridDataVisibleColumn MappingName="CustomerID" Width="40" >
+</syncfusion:GridDataVisibleColumn>
+
+Width value set to “SizeToCells”                   
+<syncfusion:GridDataVisibleColumn MappingName="EmployeeID" Width="SizeToCells" Binding="{Binding EmployeeID}"/>
+
+Width value set to "SizeToHeader”
+<syncfusion:GridDataVisibleColumn MappingName="ShipName" Width="SizeToHeader" Binding="{Binding ShipName}"/>
+</syncfusion:GridDataControl.VisibleColumns>
+{% endhighlight %}
+{% endtabs %}
+
+Define the Width, by using the following code.
+
+{% tabs %}
+{% highlight c# %}
+Width = new GridDataControlLength(value, GridControlLengthUnitType.Star); 
+
+//(or)
+Width = new GridDataControlLength(value); 
+{% endhighlight  %}
+{% endtabs %}
+
+![Customized width of GridDataVisibleColumn in WPF GridControl](Getting-Started_images/columnsizing.jpeg)
+
+### Property Details
+
+The following table consists of the property details.
+
+<table>
+<tr>
+<th>
+Name of the Property</th><th>
+Description</th><th>
+Type of Property</th><th>
+Value It Accepts</th><th>
+Property Syntax</th></tr>
+<tr>
+<td>
+ActualWidth</td><td>
+GridDataVisibleColumn’s actual width in double value. Users can only get the value.</td><td>
+Normal</td><td>
+Double</td><td>
+VisibleColumn.ActualWidth  </td></tr>
+<tr>
+<td>
+Width</td><td>
+Holds the width value for GridDataVisibleColumn  in units of GridDataControlLength  </td><td>
+Dependency property</td><td>
+GridDataControlLength</td><td>
+visibleColumn.Width=new GridDataControlLength(value, GridControlLengthUnitType);</td></tr>
+<tr>
+<td>
+MaxLength</td><td>
+Holds the value for maximum records to be considered while calculating cell content size. Default value is 1000. Set as -1 to consider all values.</td><td>
+Normal</td><td>
+int</td><td>
+MaxLength</td></tr>
 </table>
 
 ## Summaries
@@ -1714,7 +1790,7 @@ this.dataGrid.SummaryRows.Add(new GridDataSummaryRow()
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img73.jpeg)
+![Group summaried in WPF GridDataControl](Getting-Started_images/Getting-Started_img73.jpeg)
 
 ### Combining Summary Column Values in the GridDataControl
 
@@ -1752,9 +1828,9 @@ For example, let us consider you want to combine the summaries from all the summ
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img74.jpeg)
+![Before combine the summary values in WPF GridDataControl](Getting-Started_images/Getting-Started_img74.jpeg)
 
-![](Getting-Started_images/Getting-Started_img75.jpeg)
+![After combine the summary values in WPF GridDataControl](Getting-Started_images/Getting-Started_img75.jpeg)
 
 {% seealso %}
 
@@ -1850,7 +1926,7 @@ this.dataGrid.TableSummaryRows.Add(new GridDataSummaryRow()
 {% endhighlight  %}
 
 
-![](Getting-Started_images/Getting-Started_img76.jpeg)
+![Table summaries in WPF GridDataControl](Getting-Started_images/Getting-Started_img76.jpeg)
 
 {% seealso %}
 
@@ -1947,7 +2023,7 @@ this.dataGrid.CaptionSummaryRow = new GridDataSummaryRow()
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img77.jpeg)
+![Caption summaries in WPF GridDataControl](Getting-Started_images/Getting-Started_img77.jpeg)
 
 {% seealso %}
 
@@ -2183,7 +2259,7 @@ This example uses the Stock Portfolio Database that has a column named "Change" 
 		</syncfusion:GridDataControl>
 
    ~~~
-   ![](Getting-Started_images/Getting-Started_img78.jpeg)
+   ![Custom summaries in WPF GridDataControl](Getting-Started_images/Getting-Started_img78.jpeg)
 
 {% seealso %}
 
@@ -2243,7 +2319,7 @@ summaryRow.RowStyle.Background = new SolidColorBrush(Colors.LightGreen);
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img79.jpeg)
+![Summary style in WPF GridDataControl](Getting-Started_images/Getting-Started_img79.jpeg)
 
 ## Hierarchy
 
@@ -2356,7 +2432,7 @@ The following code illustrates binding of the above relation to the grid, and al
 
 The following image shows the output of the above given code:
 
-![](Getting-Started_images/Getting-Started_img80.jpeg)
+![Customize the background of child table in WPF GridDataControl](Getting-Started_images/Getting-Started_img80.jpeg)
 
 The preceding screenshot shows a GDC bound with a nested table whose child table is set with a customized background. 
 
@@ -2440,7 +2516,7 @@ The following code example illustrates the creation of two stacked headers:
 
 Output of the above given code is the following image:
 
-![](Getting-Started_images/Getting-Started_img81.jpeg)
+![Stacked headers in WPF GridDataControl](Getting-Started_images/Getting-Started_img81.jpeg)
 
 The preceding screenshot shows a GridData control with stacked headers.
 
@@ -2579,7 +2655,7 @@ ProductName Contains hai</td></tr>
 
    ~~~
 
-   ![](Getting-Started_images/Getting-Started_img82.jpeg)
+   ![Expression fields in WPF GridDataControl](Getting-Started_images/Getting-Started_img82.jpeg)
 
 
 ### Accessing Expression Values
@@ -2699,7 +2775,7 @@ The example below displays a Chart control in the tooltip host. The grid is boun
    
 Here is a sample screenshot.
 
-![](Getting-Started_images/Getting-Started_img83.jpeg)
+![Tooltip in WPF GridDataControl](Getting-Started_images/Getting-Started_img83.jpeg)
 
 N> For the complete code, refer to the following browser sample.
 
@@ -2740,7 +2816,7 @@ style.Comment = style.Text
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img84.jpeg)
+![Cell comment tip in WPF GridDataControl](Getting-Started_images/Getting-Started_img84.jpeg)
 
 ### CommentTemplateKey Property
 
@@ -2846,7 +2922,7 @@ The following steps illustrate the same:
 
    ~~~
 
-   ![](Getting-Started_images/Getting-Started_img85.jpeg)
+   ![Cell comment tip in WPF GridDataControl](Getting-Started_images/Getting-Started_img85.jpeg)
    
 ### Comment Alignment
 
@@ -2868,7 +2944,7 @@ Style.CommentAlignment = CommentAlignment.Bottom – Left
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img86.jpeg)
+![Comment alignment in WPF GridDataControl](Getting-Started_images/Getting-Started_img86.jpeg)
 
 ## Column Auto Sizing
 
@@ -2892,7 +2968,7 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
    ~~~
    
-   ![](Getting-Started_images/Getting-Started_img87.jpeg)
+   ![Auto sizing the column in WPF GridDataControl](Getting-Started_images/Getting-Started_img87.jpeg)
 
 2. GridControlLengthUnitType.AutoWithLastColumnFill
 
@@ -2910,7 +2986,7 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
    ~~~
 
-   ![](Getting-Started_images/Getting-Started_img88.jpeg)
+   ![Auto sizing the last column in WPF GridDataControl](Getting-Started_images/Getting-Started_img88.jpeg)
 
 3. GridControlLengthUnitType.SizeToCells
 
@@ -2928,7 +3004,7 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
    ~~~
 
-   ![](Getting-Started_images/Getting-Started_img89.jpeg)
+   ![Adjust cell based on content in WPF GridDataControl](Getting-Started_images/Getting-Started_img89.jpeg)
 
 
 4. GridControlLengthUnitType.SizeToHeader
@@ -2947,7 +3023,7 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
    ~~~
 
-   ![](Getting-Started_images/Getting-Started_img90.jpeg)
+   ![Change the header size in WPF GridDataControl](Getting-Started_images/Getting-Started_img90.jpeg)
 
 
 5. GridControlLengthUnitType.Star
@@ -2966,7 +3042,7 @@ This feature allows the grid columns to resize themselves automatically to fit t
 
    ~~~
    
-   ![](Getting-Started_images/Getting-Started_img91.jpeg)
+   ![Change the column width in WPF GridDataControl](Getting-Started_images/Getting-Started_img91.jpeg)
 
 6. MaxLength
 
@@ -3016,7 +3092,7 @@ grid.RowBackground = new SolidColorBrush(Colors.Tan);
 
 The following image corresponds to the output of the above given code:
 
-![](Getting-Started_images/Getting-Started_img92.jpeg)
+![Customized the row background style in WPF GridDataControl](Getting-Started_images/Getting-Started_img92.jpeg)
 
 The row styles of the GDC are customized using background properties.
 
@@ -3054,7 +3130,7 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 The following image corresponds to the output of the above given code:
 
-![](Getting-Started_images/Getting-Started_img93.jpeg)
+![Customize the row styles in WPF GridDataControl](Getting-Started_images/Getting-Started_img93.jpeg)
 
 The row styles of the GDC are customized by handling the QueryCellInfo event.
 
@@ -3167,7 +3243,7 @@ ShowGroupDropArea="True" UpdateMode="PropertyChanged">
 
 The following image shows the output of the above given code:
 
-![](Getting-Started_images/Getting-Started_img94.jpeg)
+![Applied conditional fotmat in row or cell in WPF GridDataControl](Getting-Started_images/Getting-Started_img94.jpeg)
 
 The preceding screenshot shows a GDC applied with conditional formatting.
 
@@ -3411,39 +3487,39 @@ SkinStorage.SetVisualStyle(dataGrid2, "Office2007Blue");
 
  The following images show different visual styles applied to the grid.
 
-![](Getting-Started_images/Getting-Started_img95.png)
+![Applied visual stlyes to Office2007Blue](Getting-Started_images/Getting-Started_img95.png)
 
-![](Getting-Started_images/Getting-Started_img96.png)
+![Applied visual stlyes to Office2007Black](Getting-Started_images/Getting-Started_img96.png)
 
-![](Getting-Started_images/Getting-Started_img97.png)
+![Applied visual stlyes to Office2007silver](Getting-Started_images/Getting-Started_img97.png)
 
-![](Getting-Started_images/Getting-Started_img98.png)
+![Applied visual stlyes to Metro](Getting-Started_images/Getting-Started_img98.png)
 
-![](Getting-Started_images/Getting-Started_img99.png)
+![Applied visual stlyes to Office2010Black](Getting-Started_images/Getting-Started_img99.png)
 
-![](Getting-Started_images/Getting-Started_img100.png)
+![Applied visual stlyes to Office2010Silver](Getting-Started_images/Getting-Started_img100.png)
 
-![](Getting-Started_images/Getting-Started_img101.png)
+![Applied visual stlyes to custom](Getting-Started_images/Getting-Started_img101.png)
 
-![](Getting-Started_images/Getting-Started_img102.png)
+![Applied visual stlyes to Office2010Blue](Getting-Started_images/Getting-Started_img102.png)
 
-![](Getting-Started_images/Getting-Started_img103.png)
+![Applied visual stlyes to Office2013White](Getting-Started_images/Getting-Started_img103.png)
 
-![](Getting-Started_images/Getting-Started_img104.png)
+![Applied visual stlyes to Office2013Black](Getting-Started_images/Getting-Started_img104.png)
 
-![](Getting-Started_images/Getting-Started_img105.png)
+![Applied visual stlyes to Managed](Getting-Started_images/Getting-Started_img105.png)
 
-![](Getting-Started_images/Getting-Started_img106.png)
+![Applied visual stlyes to Office2013LightGray](Getting-Started_images/Getting-Started_img106.png)
 
-![](Getting-Started_images/Getting-Started_img107.png)
+![Applied visual stlyes to Applied visual stlyes to Office2013Blue](Getting-Started_images/Getting-Started_img107.png)
 
-![](Getting-Started_images/Getting-Started_img108.png)
+![Applied visual stlyes to Office2015Colorful](Getting-Started_images/Getting-Started_img108.png)
 
-![](Getting-Started_images/Getting-Started_img109.png)
+![Applied visual stlyes to custom](Getting-Started_images/Getting-Started_img109.png)
 
-![](Getting-Started_images/Getting-Started_img110.png)
+![Applied visual stlyes to Managed](Getting-Started_images/Getting-Started_img110.png)
 
-![](Getting-Started_images/Getting-Started_img111.png)
+![Applied visual stlyes to Metro](Getting-Started_images/Getting-Started_img111.png)
 
 ## Custom Skin
 
@@ -3462,7 +3538,7 @@ this.dataGrid.VisualStyle = VisualStyle.Custom;
 
 The following screenshot shows the custom visual style set for the grid using the above given code: 
 
-![](Getting-Started_images/Getting-Started_img112.png)
+![Applied visual stlyes to custom](Getting-Started_images/Getting-Started_img112.png)
 
 
 Custom Visual Style can be defined for nested tables too. The following code illustrates this: 
@@ -3507,7 +3583,7 @@ Custom Visual Style can be defined for nested tables too. The following code ill
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img113.png)
+![Applied visual stlyes to custom](Getting-Started_images/Getting-Started_img113.png)
 
 N>  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager](/wpf/griddata/data-presentation#adding-styles-to-an-application)_class through Microsoft Expression Blend.
 
@@ -3550,7 +3626,7 @@ Blend Styling Demo sample in the sample browser is purely customized in XAML thr
 
 GridDataControl can be customized by using Microsoft Expression Blend 3 or 4. This can be achieved through StyleManager property of _GridDataStyleManager_ type. The properties used to customize the appearance are defined in the GridDataStyleManager class.
 
-![](Getting-Started_images/Getting-Started_img114.png)
+![Applied visual stlyes to Blend](Getting-Started_images/Getting-Started_img114.png)
 
 
 
@@ -3564,7 +3640,7 @@ GridDataStyleManager properties are organized under the following seven groups, 
 * Value Cell Appearance
 * Nested Grid Appearance
 
-![](Getting-Started_images/Getting-Started_img115.png)
+![Appearance of WPF GridDataControl](Getting-Started_images/Getting-Started_img115.png)
 
 
 
@@ -3612,7 +3688,7 @@ GridDataUpDownEditVisibleColumnControl</td></tr>
 </table>
 
 
-![](Getting-Started_images/Getting-Started_img116.png)
+![Customizing the column appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img116.png)
 
 
 
@@ -3686,7 +3762,7 @@ Obsolete.</td></tr>
 </table>
 
 
-![](Getting-Started_images/Getting-Started_img117.png)
+![Customizing the expander appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img117.png)
 
 
 
@@ -3748,7 +3824,7 @@ Data="M1.5,4.4500742 C2.3284271,4.4500742 3,5.1216469 3,5.9500742 C3,6.77850
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img118.png)
+![Expander appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img118.png)
 
 ### Customizing the Group Area
 
@@ -3835,7 +3911,7 @@ Bottom="{StaticResource GroupCellBorder}"
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img119.png)
+![Customizing group area in WPF GridDataControl](Getting-Started_images/Getting-Started_img119.png)
 
 ### Customizing Group Area Appearance through the GridDataControl
 
@@ -3882,7 +3958,7 @@ DragIndicatorInnerBrush="Gray" DragIndicatorOuterBrush="Brown"/>
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img120.png)
+![Cusotmize the group drop appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img120.png)
 
 ### Customizing the Header Appearance
 
@@ -4036,7 +4112,7 @@ Top="{StaticResource ValueCellBorder}" />
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img121.png)
+![Customize the header appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img121.png)
 
 ### Customizing Header Appearance through the GridDataControl
 
@@ -4105,7 +4181,7 @@ Foreground="Black"/>
 
 {% endhighlight %}
 
-![](Getting-Started_images/Getting-Started_img122.png)
+![Customize the header appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img122.png)
 
 
 
@@ -4216,7 +4292,7 @@ FontSize="13.333" />
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img123.png)
+![Customize the row appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img123.png)
 
 
 
@@ -4418,7 +4494,7 @@ The following code example illustrates the properties defined in this group.
 
 
 
-![](Getting-Started_images/Getting-Started_img124.png)
+![Customize the row appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img124.png)
 
 
 
@@ -4596,9 +4672,9 @@ The following code example illustrates the properties defined in this group.
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img125.png)
+![Customize the cell value appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img125.png)
 
-![](Getting-Started_images/Getting-Started_img126.png)
+![Customize the cell value appearance in WPF GridDataControl](Getting-Started_images/Getting-Started_img126.png)
 
 ### Editing Additional Template and Styles
 
@@ -4643,7 +4719,7 @@ Step by step instructions for Editing Templates
 
 2. Right-click on the GridDataControl and from Object menu, select Edit Additional Templates -> Edit $PartName$Style (e.g. HeaderStyle).  
 
-   ![](Getting-Started_images/Getting-Started_img127.png)
+   ![Edit additional template and change the gradient in WPF GridDataControl](Getting-Started_images/Getting-Started_img127.png)
 
 3. Blend creates a copy of the Template and opens the XAML. All the “Parts” that make up the selected template can be edited to make the required styling changes.
 
@@ -5069,4 +5145,4 @@ private void ColumnChooserBtn_Click(object sender, RoutedEventArgs e)
 
 In the result you can get the column chooser window in your application as shown below.
 
-![](Getting-Started_images/Getting-Started_img128.png)
+![Customize the column chooser in WPF GridDataControl](Getting-Started_images/Getting-Started_img128.png)
