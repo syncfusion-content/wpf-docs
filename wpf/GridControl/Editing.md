@@ -9,7 +9,7 @@ documentation: ug
 
 # Editing in GridControl
 
-This section deals with essential features of Grid control, which are listed below:
+This section explains the clipboard and undo redo support of Grid control.
 
 * Clipboard Support - Elaborates on different clipboard operations
 * Undo or Redo support - Grid supports undo or redo operation to those achieved with Microsoft Office-type applications.
