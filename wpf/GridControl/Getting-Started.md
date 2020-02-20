@@ -19,13 +19,13 @@ The Essential Studio for WPF is comprised of following three types of grid contr
 * [SfDataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) and GridDataControl (classic)
 * [SfTreeGrid](https://www.syncfusion.com/wpf-ui-controls/treegrid) and GridTreeControl (classic)
 
-N: Refer [Choose between different Grid's](https://help.syncfusion.com/wpf/datagrid/overview#choose-between-different-grids) to take closer look at the characteristics of each of these controls. 
+N> Refer [Choose between different Grid's](https://help.syncfusion.com/wpf/datagrid/overview#choose-between-different-grids) to take closer look at the characteristics of each of these controls. 
 
 ## Adding the Grid Control to a WPF Application
 
 In this section, we will see how to add the Grid control to a WPF application and load random data. The Grid control can be added to an application through one of the following methods: through a designer or programmatically.
 
-Adding the Grid Control through a Designer
+### Adding the Grid Control through a Designer
 
 Please follow the steps below to add the Grid control through a designer.
 
@@ -50,13 +50,14 @@ Please follow the steps below to add the Grid control through a designer.
 Instead of adding it through a designer such a Visual Studio, you can add the Grid control programmatically.
 
 1. Create a new WPF application.
+
 2. Add the following Syncfusion assemblies to the project.
    * Syncfusion.Core.dll
    * Syncfusion.Grid.Wpf.dll
    * Syncfusion.GridCommon.Wpf.dll
    * Syncfusion.Shared.Wpf.dll
 
-![WPF Grid Control Assembly References](Getting-Started_images/Getting-Started_img9.png)
+    ![WPF Grid Control Assembly References](Getting-Started_images/Getting-Started_img9.png)
 
 3. Name the root Grid as layoutRoot in the application’s XAML page.
   
@@ -73,9 +74,9 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 {% endtabs %}
       
 
-4.Create ScrollViewer and GridControl in code. 
+4. Create ScrollViewer and GridControl in code. 
 
-5.To add the grid to the view, add GridControl as content of ScrollViewer and then add the ScrollViewer as a child of layoutRoot (Grid).
+5. To add the grid to the view, add GridControl as content of ScrollViewer and then add the ScrollViewer as a child of layoutRoot (Grid).
 
 {% tabs %}
 {%highlight c#%}
@@ -94,7 +95,7 @@ this.layoutRoot.Children.Add(ScrollViewer);           
 
 The Grid control is a cell-based control, so to populate it, RowCount and ColumnCount are mandatory. Once ColumnCount and RowCount are specified, data can be populated by using one of the following methods. 
 
-1. You can populate data by looping through the cells in the Grid control. The following code explains this scenario.
+1.You can populate data by looping through the cells in the Grid control. The following code explains this scenario.
 
 {% tabs %}
 {%highlight c#%}
