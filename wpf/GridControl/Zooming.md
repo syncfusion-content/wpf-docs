@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Zoom In and Zoom Out | GridControl | wpf | Syncfusion
-description: zoom in and zoom out
+description: Learn here about how to change the zooming levels of the Syncfusion WPF GridControl and its property.
 platform: wpf
-control: Grid Control
+control: GridControl
 documentation: ug
 ---
 
@@ -15,7 +15,7 @@ This feature enables the user to change the zoom level of the Grid control that 
 
 When a larger number of cells are updated in the Grid, the user can view the grid cells clearly by increasing the zoom scale. By decreasing the zoom scale, the user can display more cells in the view.
 
-## Properties
+### Properties
 
 
 
@@ -35,11 +35,7 @@ Double</td></tr>
 </table>
 
 
-## Sample Link
-
-You can find a demonstration in the following location:
-
-_...\MyDocuments\Syncfusion\EssentialStudio\<VersionNumber>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Zooming\_
+N> You can find a demonstration in the following location: _...\MyDocuments\Syncfusion\EssentialStudio\<VersionNumber>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Zooming\_
 
 ## Change Zoom Scale of the Grid Control
 
@@ -53,21 +49,8 @@ gridControl.ZoomScale = 1.5;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img1.png)
+![Increased Zoom Scale in WPF GridControl](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img1.png)
 
 
-
-Increased Zoom Scale
-{:.caption}
-
-
-
-![](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img2.png)
-
-
-
-Decreased Zoom Scale
-{:.caption}
-
-
+![Decreased Zoom Scale in WPF GridControl](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img2.png)
 
