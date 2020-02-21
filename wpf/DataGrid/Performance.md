@@ -58,9 +58,9 @@ this.dataGrid.UseDrawing = UseDrawing.Default;
 {% endhighlight %}
 {% endtabs %}
 
-### Imporving loading performance when DataGrid loaded into the ScrollViewer
+### Improving loading performance when DataGrid loaded into the ScrollViewer
 
-When loading datagrid inside other controls disables virtulaization which causes the performance delay. You can improve the loading performance when datagrid loaded into the scrollviewer by setting height for the datagrid.
+When loading datagrid inside other controls disables virtualization which causes the performance delay. You can improve the loading performance when datagrid loaded into the scroll viewer by setting height for the datagrid.
 
 {% tabs %}
 {% highlight xaml %}
