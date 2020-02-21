@@ -58,6 +58,31 @@ this.dataGrid.UseDrawing = UseDrawing.Default;
 {% endhighlight %}
 {% endtabs %}
 
+### Imporving loading performance when DataGrid loaded into the ScrollViewer
+
+When loading datagrid inside other controls disables virtulaization which causes the performance delay. You can improve the loading performance when datagrid loaded into the scrollviewer by setting height for the datagrid.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid 	x:Name="dataGrid" 
+						Height="500" 
+                        FilterRowPosition="FixedTop" 
+                        AllowEditing="False"  
+                        ColumnSizer="Star"  
+                        Margin="0" 
+                        AutoGenerateColumns="False"   
+                        ItemsSource="{Binding ItemsPersonnel}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="Name"/>
+        <syncfusion:GridTextColumn MappingName="Role"/>
+    </syncfusion:SfDataGrid.Columns>
+    <syncfusion:SfDataGrid.SortColumnDescriptions>
+        <syncfusion:SortColumnDescription ColumnName="Name" />
+    </syncfusion:SfDataGrid.SortColumnDescriptions>
+</syncfusion:SfDataGrid> 
+{% endhighlight %}
+{% endtabs %}
+
 ### Limitations
 1. Searching is not supported.
 2. Validation need to be achieved by using Template.
