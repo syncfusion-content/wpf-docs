@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Performance | Grid | WPF | Syncfusion
-description: performance
+title: Performance of WPF GridControl | Syncfusion
+description: Learn here about how to handles the Syncfusion WPF GridControl features and its records, testing process.
 platform: wpf
-control: Grid
+control: GridControl
 documentation: ug
 ---
 
-# Performance
+# Performance of GridControl
 
 Essential Grid is well known for its optimized performance. This section points out a sample that illustrates how to do high frequency updates in Grid control.
-
-## Example 
-
-Let us consider a sample using a FlatDataViewGrid control, which is a regular grid that is bound to a flat data view (flat table, which is not nested and without relations) and is customized to handle refresh updates (refreshing the grid values, which in turn replaces old values with new values). It has a header row with field names and a footer row with summaries. 
 
 ## Sample Architecture
 
@@ -32,11 +28,12 @@ N> Blinking Behavior-You cud see random values get updated frequently and those 
 * When the current cell is active, you can continue editing and modify the contents of the currently active cell even while rows are re-arranged. This is often a requirement in applications that wish to maintain editing compatibility even while processing a large number of updates.
 
 
-![](Performance_images/Performance_img1.jpeg)
+![Trader Grid Test Demo in WPF GridControl](Performance_images/Performance_img1.jpeg)
 
-Trader Grid Test Demo – Performance
-{:.caption}
 
 N> For complete code for this example, refer the following browser sample: 
 ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
 
+### Example 
+
+Let us consider a sample using a FlatDataViewGrid control, which is a regular grid that is bound to a flat data view (flat table, which is not nested and without relations) and is customized to handle refresh updates (refreshing the grid values, which in turn replaces old values with new values). It has a header row with field names and a footer row with summaries. 

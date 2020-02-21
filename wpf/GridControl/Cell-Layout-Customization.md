@@ -7,7 +7,7 @@ control: GridControl
 documentation: ug
 ---
 
-## Cell layout customization
+# Cell layout customization
 
 This section explains the Covered Cells, Banner Cells, Overlapping Cells and Graphic cell of the WPF GridControl.
 
