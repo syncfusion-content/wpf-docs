@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Print and Print Preview | Grid | WPF | Syncfusion
-description: print and print preview
+title: Printing in WPF GridControl | Syncfusion
+description: Learn here about how to support the print and print preview options in the Syncfusion WPF GridControl.
 platform: wpf
-control: Grid
+control: GridControl
 documentation: ug
 ---
 
@@ -25,10 +25,7 @@ this.grid.ShowPrintDialog();
 
 ### Output
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg)
-
-Grid Print Dialog
-{:.caption}
+![Print dialog in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg)
 
 ## Print Dialog Options
 
@@ -38,10 +35,7 @@ The Print Dialog provides numerous options to configure the output.
 
 Clicking the Print button allows the user to send the grid content to the printer for printing.
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg)
-
-Print
-{:.caption}
+![Click print button in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg)
 
 ### Page Size Drop-down
 
@@ -54,10 +48,7 @@ N> The paper sizes are also marked in the following way:
 
 For more information, check the following link: [http://msdn.microsoft.com/en-us/library/system.printing.pagemediasizename.aspx](http://msdn.microsoft.com/en-us/library/system.printing.pagemediasizename.aspx)
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg)
-
-Page Size
-{:.caption}
+![Page size drop down in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg)
 
 ### Color Drop-down
 
@@ -68,50 +59,42 @@ The options in this drop-down allow you select the color for the data to be prin
 * Gray scale—Selecting this option allows the user to print the grid data in a range of shades of gray without apparent color, the darkest shade being black and the lightest shade being white.
 * Unknown—This option can be selected in cases where you receive any print configuration settings which does not fall within the other 3 options. The application that is using this configuration will internally set the color option as unknown in such cases.
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg)
+![Color drop-down in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg)
 
-Color Drop-down
-{:.caption}
 
 ### Zoom Drop-down
 
 The options in this drop-down allow you select the required percentage magnification for viewing the grid data to be printed. Selecting the required option allows you to magnify the preview to various preset zoom levels like 50%, 100%, 200% and 400%. 
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg)
-
-Zoom Drop-down
-{:.caption}
+![Zooming drop-down option in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg)
 
 ### Navigation Options
 
 The Print dialog provides four navigational buttons to navigate the grid preview:
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg)
+![Backward navigation button of printing option in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg)
 
 -This button allows you to move to the first page 
 
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg)
+![Forward navigation button of printing option in WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg)
 
 -This button allows you to move to the last page 
 
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg)
+![Navigation button to move previous page of printing option to WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg)
 
 -This button allows you to move to the previous page 
 
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg)
+![Navigation button to move next page of printing option to WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg)
 
 -This button allows you to move to the next page 
 
 
 The following image shows the next button highlighted for an example.
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg)
-
-Navigation Options
-{:.caption}
+![Navigation Options in printing to WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg)
 
 ## Printing Header and Footer
 
@@ -146,7 +129,5 @@ Headers and Footers can be added to the document to be printed.
 
 The following image is the output of the code above. 
 
-![](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg)
+![Header and Footer in printing page to WPF GridControl](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg)
 
-Header and Footer
-{:.caption}
