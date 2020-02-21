@@ -116,8 +116,6 @@ propertyGrid.EditableFontWeight = FontWeights.Bold;
 propertyGrid.ReadOnlyBackground = Brushes.LightPink;
 propertyGrid.ReadOnlyFontWeight = FontWeights.UltraLight;
 
-propertyGrid.SelectedObject = viewModel.SelectedEmployee;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -218,14 +216,10 @@ Here, the `Blend` style is applied to the `PropertyGrid`.
 </syncfusion:PropertyGrid>
 
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight C# %}
 
 // Namespace for the SfSkinManager.
 using Syncfusion.SfSkinManager;
-
 PropertyGrid propertyGrid = new PropertyGrid();
 propertyGrid.SelectedObject = new Button();
 SfSkinManager.SetVisualStyle(propertyGrid, VisualStyles.Blend);

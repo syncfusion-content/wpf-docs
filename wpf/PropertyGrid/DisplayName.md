@@ -11,7 +11,7 @@ documentation: ug
 
 By default, the property name is displayed in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) . We can change the display name of the properties instead of the property name by using the attributes and event.
 
-## Property display name using Attributes
+## Change property display name using attributes
 
 We can give a meaningful name to the properties that are displayed in the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) instead of the property name by using the [Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_Name) field of the [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute and [DisplayName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.displaynameattribute?view=netframework-4.8) attribute.
 
@@ -22,8 +22,7 @@ using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-public class Employee
-{
+public class Employee {
     [Display(Name = "Employee Name")] 
     public string Name { get; set; }
     [DisplayName("Employee ID")]
@@ -61,11 +60,10 @@ public class ViewModel {
 
 PropertyGrid propertyGrid1 = new PropertyGrid();
 propertyGrid1.DataContext = new ViewModel();
-propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 
 {% endhighlight %} 
-{% endtabs %} 
-
+{% endtabs %}
 
 ![Value specified in the Name field of the Display attribute and DisplayName attributes is displayed as Name of the property in PropertyGrid](Attribute-Images\Display-Name-Attribute.png)
 
@@ -73,9 +71,9 @@ Here, the `Name` and `ID` properties is displayed as `Employee Name` and  `Emplo
 
 N> If you use both the `DisplayName` attribute and `Name` field of the `Display` attribute, the `Name` field of the `Display` attribute will have higher priority.
 
- Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Name-Description) to download the sample that showcases the property `Display Name` support using attributes.
+ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Name-Description) to download the sample that showcases the property `Display Name` support using attributes.
 
-## Changing Property display name at runtime
+## Change property display name at runtime
 
 We can set and change the property display name instead of the property name at runtime without using attributes by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html)  event with [AutoGeneratingPropertyGridItemEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html).[DisplayName](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~DisplayName.html) property.
 
@@ -254,4 +252,4 @@ public class ViewModel {
 
 Here, the `Name` and `DOB`property display name is changed as `Employee Name` and `Date of Birth` by the `AutoGeneratingPropertyGridItemEventArgs.Name` property of the `AutoGeneratingPropertyGridItem` event, not by any attributes.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Display Name` support using `AutoGeneratingPropertyGridItem` event.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Display Name` support using `AutoGeneratingPropertyGridItem` event.

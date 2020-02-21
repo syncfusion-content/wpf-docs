@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WPF PropertyGrid
 
-This section explains how to create a WPF [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control and its features.
+This section explains how to explore the properties of an object using WPF [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control and its usecases.
 
 ## Assembly deployment
 
@@ -38,7 +38,6 @@ To add the `PropertyGrid` control manually in XAML, follow these steps:
    * Syncfusion.PropertyGrid.Wpf
    * Syncfusion.Shared.WPF
    * Syncfusion.Tools.Wpf
-
  
 3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `PropertyGrid` control in XAML page.
 
@@ -88,23 +87,18 @@ using Syncfusion.Windows.PropertyGrid;
 {% tabs %}
 {% highlight C# %}
 
-public partial class MainWindow : Window
-{
-    public MainWindow()
-    {
+public partial class MainWindow : Window {
+    public MainWindow() {
         InitializeComponent();
 
         // Creating an instance of PropertyGrid control
-
         PropertyGrid propertyGrid1 = new PropertyGrid();
 
         // Setting height and width to PropertyGrid
-
         propertyGrid1.Height = 300;
         propertyGrid1.Width = 200;
 
         //Adding PropertyGrid as window content
-
         this.Content = propertyGrid1;
     }
 }
@@ -116,7 +110,7 @@ public partial class MainWindow : Window
 
 ## Populating the properties
 
-We can display the properties of any DotNet object using the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.Property~SelectedObject.html) property. When the `SelectedObject` property is bound with an object, the properties of that object are parsed and displayed in the PropertyGrid.
+We can display the properties of any object using the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.Property~SelectedObject.html) property. When the `SelectedObject` property is bound with an object, the properties of that object are parsed and displayed in the `PropertyGrid`.
 
 {% tabs %}
 {% highlight C# %}
@@ -146,11 +140,7 @@ public class ViewModel {
 {% endhighlight %}
 {% endtabs %}
 
-The properties of the SelectedEmployee object can be populated in the following ways,
-
-### Populating the properties using XAML
-
-We can populate the properties of the Object using XAML
+We can populate the properties of the `SelectedObject` using XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,38 +153,33 @@ We can populate the properties of the Object using XAML
 </syncfusion:PropertyGrid>
 
 {% endhighlight %}
-{% endtabs %}
-
-In the above code snippet, the `SelectedEmployee` object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the `SelectedEmployee` object. 
-
-### Populating the properties using C#
-
-We can sets the object to the `SelectedObject` property using C# to populate the properties in the `PropertyGrid`.
-
-{% tabs %}
 {% highlight c# %}
 
-PropertyGrid propertyGrid1 = new PropertyGrid();
-propertyGrid1.DataContext = new ViewModel();
-propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.DataContext = new ViewModel();
+propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 
 {% endhighlight %}
 {% endtabs %}
 
 ![ Populating the SelectedEmployee object properties into the PropertyGrid control](Getting-Started_images/Binding-with-any-object_img1.png)
 
-## Custom Editor for value editors
+Here, the `SelectedEmployee` object is set as `SelectedObject` for the `PropertyGrid`. Thus, the `PropertyGrid` shows all the properties available in the `SelectedEmployee` object. 
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors, to give a good look and feel for the application, use `CustomEditors`. We can make own customized value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html).
+## Custom Editor as value editors
+
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors for edit the property values. We can assign own value editor(control) as a value editor for the properties instead of default value editors by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html). 
+
+For example, if we create an `EmailID` property as a string type, `TextBox` will assigned as a value editor and all the text will be allowed. If we want to accept the input that is only in the mail id format, we can assign [MaskEdit](https://www.syncfusion.com/wpf-ui-controls/maskedtextbox) control with mail ID mask as the value editor for the `EmailID` property. 
 
 ### Creating the Custom Editor 
 
-To create `CustomEditor`, we need to implement `ITypeEditor` interface. Here, `SfMaskedEdit` is created with `EmailId` mask as `EmailEditor`.
+To create `CustomEditor`, we need to implement `ITypeEditor` interface.
 
 {% tabs %}
 {% highlight C# %}
 
-//Custom Editor for the EmailId properties.
+//Custom Editor with email id mask.
 public class EmailEditor : ITypeEditor {
     SfMaskedEdit maskededit;
     public void Attach(PropertyViewItem property, PropertyItem info) {
@@ -220,6 +205,7 @@ public class EmailEditor : ITypeEditor {
         }
     }
     public object Create(PropertyInfo propertyInfo) {
+        // SfMaskedEdit assigned with EmailId mask
         maskededit = new SfMaskedEdit();
         maskededit.MaskType = MaskType.RegEx;
         maskededit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
@@ -233,17 +219,15 @@ public class EmailEditor : ITypeEditor {
 {% endhighlight %}
 {% endtabs %}
 
-### Assigning a Custom Editor using Editor Attribute
+### Assigning a Custom Editor for the Property
 
-We can assign the `CustomEditor` to any individual property by name of the property and to multiple properties based on the property type by using the `Editor` attribute.
+We will assign the `EmailEditor` as value editor for the `EmailID` property.
 
 {% tabs %}
 {% highlight C# %}
 
-//CustomEditor for the specific (EmailID) property
+//CustomEditor for the EmailID property
 [Editor("EmailID", typeof(EmailEditor))]
-//Custom Editor for the multiple(Integer type) properties
-[Editor(typeof(int), typeof(IntegerEditor))]
 public class Employee : NotificationObject {
     public string EmailID { get; set; }
     public string Name { get; set; }
@@ -280,23 +264,20 @@ class ViewModel {
 {% endhighlight %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid1 = new PropertyGrid();
-ViewModel viewModel = new ViewModel();
-propertyGrid1.SelectedObject = viewModel.SelectedEmployee;
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.DataContext = new ViewModel();
+propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 
 {% endhighlight %}
 {% endtabs %}
 
 
-Here, The `EmailID` is a string property, the `TextBox` is assigned as a default editor. We changed it as `SfMaskedEdit` textbox that accepts only inputs which are in the email-id format. Also, we assigned the `IntegerEditor` for the integer type properties, so it applied to the `Experience` and `Age` properties. Then, the value editors for the `Experience` and `Age` property is changed from `NumericTextBox` to `Updown` control.
+Here, The `EmailID` property is accepts only the inputs which are in the email-id format by the `EmailEditor`.
 
 ![Property grid with specified custom value editor for EmailID property](CustomEditor-support_images/CustomEditor-Attribute.png)
 
 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor) to download the sample that showcases the `CustomEditor` support.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-CustomEditor) to download the sample that showcases the `CustomEditor` support.
-
-
-
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Common) to download the sample that showcases the `PropertyGrid` overall features.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Common) to download the sample that showcases the `PropertyGrid` overall features.
 

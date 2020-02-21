@@ -7,13 +7,13 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Description of the Properties
+# Describes the Properties
 
 We can display the description about the property using the  Description panel which is placed on the bottom of the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control. Description panel visibility can be managed by [DescriptionPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelVisibility.html) property . The default value of the `DescriptionPanelVisibility` is `Collapsed`. To display the Description panel, we should set `DescriptionPanelVisibility`  property value as `Visible` .
 
  We can change Description panel height by using the [DescriptionPanelHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelHeight.html)  property.
 
-## Property Description using Attributes
+## Property Description using attributes
 
 We can give a meaningful description about the properties by using the [Description](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.descriptionattribute?view=netframework-4.8) attribute and [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute's [Description](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.description?view=netframework-4.8) field. This description will be displayed in `PropertyGrid` Description panel while focusing the property or its value editor.
 
@@ -21,7 +21,6 @@ We can give a meaningful description about the properties by using the [Descript
 {% tabs %}
 {% highlight C# %}
 
-//Model.cs
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -66,7 +65,7 @@ public class ViewModel {
 
 PropertyGrid propertyGrid1 = new PropertyGrid();
 propertyGrid1.DataContext = new ViewModel();
-propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 propertyGrid1.DescriptionPanelVisibility = Visibility.Visible;
 propertyGrid1.DescriptionPanelHeight = new GridLength(50);
 
@@ -87,7 +86,7 @@ N> If you use both the `Description` attribute and `Description` field of the `D
 
  Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Name-Description) to download the sample that showcases the property `Description` support using attributes.
 
-## Changing Property Description at runtime
+## Change Property Description at runtime
 
 We can set the property description without using the attributes and can change the property description at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html)  event with [AutoGeneratingPropertyGridItemEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html).[Description](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Description.html) property.
 

@@ -11,9 +11,9 @@ documentation: ug
 
 The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control has support to expand instance properties of a class.
 
-###  Navigate to the sub-properties
+###  Explore the nested properties
 
-We can choose whether the sub-properties of the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) can be expanded or not by using the [PropertyExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~PropertyExpandMode.html) property. The Values of `PropertyExpandMode` is `NestedMode` and `FlatMode`. By default, the sub-properties are not shown.  If we want to display the sub-properties, we can set the `PropertyExpandMode`  property as `NestedMode`.
+We can choose whether the nested properties of the [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html) can be expanded or not by using the [PropertyExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~PropertyExpandMode.html) property.  By default, `PropertyExpandMode` value is `FlatMode`, thus the nested properties are not shown.  If we want to display the nested properties, we can set the `PropertyExpandMode`  property as `NestedMode`.
 
 {% tabs %}
 {% highlight C# %}
@@ -32,7 +32,7 @@ public class Employee {
     public string Name { get; set; }
     public string ID { get; set; }
     public int Age { get; set; }
-    // Property contains the sub properties
+    // Property contains the nested properties
     public Address Address { get; set; }
 }
 
@@ -72,10 +72,11 @@ public class ViewModel {
 {% endhighlight %} 
 {% highlight C# %}
 
-PropertyGrid propertyGrid1 = new PropertyGrid();
-propertyGrid1.DataContext = new ViewModel();
-propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.DataContext = new ViewModel();
+propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 propertyGrid1.PropertyExpandMode = PropertyExpandModes.NestedMode;
+
 {% endhighlight %} 
 {% endtabs %} 
 
@@ -83,4 +84,4 @@ Here, `Address` is a class type property in the `Employee` class. It includes th
 
 ![PropertyGrid show the sub properties](Expand-Nested-Properties_images/Expand-Nested-Properties.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Nested_Properties) to download the sample that showcases the nested property expanding support.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Nested_Properties) to download the sample that showcases the nested property expanding support.
