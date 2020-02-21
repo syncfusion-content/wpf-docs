@@ -143,6 +143,9 @@ public class ViewModel {
     }
 }
 
+{% endhighlight %}
+{% endtabs %}
+
 The properties of the SelectedEmployee object can be populated in the following ways,
 
 ### Populating the properties using XAML
@@ -227,7 +230,7 @@ public class EmailEditor : ITypeEditor {
     }
 }
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ### Assigning a Custom Editor using Editor Attribute
@@ -261,7 +264,7 @@ class ViewModel {
     }
 }
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
@@ -274,14 +277,14 @@ class ViewModel {
    </syncfusion:PropertyGrid.DataContext>
 </syncfusion:PropertyGrid>
 
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight C# %}
 
 PropertyGrid propertyGrid1 = new PropertyGrid();
 ViewModel viewModel = new ViewModel();
 propertyGrid1.SelectedObject = viewModel.SelectedEmployee;
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 
