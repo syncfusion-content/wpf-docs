@@ -123,7 +123,7 @@ gridControl.Model.ExportToExcel(range, excelEngine, 0, mySheet.Range[5,5], @"Sam
 
 
 
-N> For more details, Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Export/Excel%20Export)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Export/Excel%20Export)
 
 ## Exporting to CSV
 

@@ -374,7 +374,7 @@ The following output is generated using the code above.
 
 ![Exclusive Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img7.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Combo%20Box%20Cell)
 
 ## DropdownList cell type
 
