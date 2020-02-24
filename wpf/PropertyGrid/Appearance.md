@@ -110,7 +110,7 @@ public class ViewModel {
 
 PropertyGrid propertyGrid = new PropertyGrid();
 propertyGrid.DataContext = new ViewModel();
-propertyGrid.SelectedObject = (propertyGrid.DataContext as ViewModel).SelectedEmployee;
+propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 propertyGrid.EditableBackground = Brushes.LightGreen;
 propertyGrid.EditableFontWeight = FontWeights.Bold;
 propertyGrid.ReadOnlyBackground = Brushes.LightPink;
@@ -229,4 +229,4 @@ SfSkinManager.SetVisualStyle(propertyGrid, VisualStyles.Blend);
 
 ![PropertyGrid with Blend visual style](Appearance_images/Appearance_BlendTheme.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Themes) to download the sample that showcases the different theming support. 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Themes) to download the sample that showcases the different theming support. 

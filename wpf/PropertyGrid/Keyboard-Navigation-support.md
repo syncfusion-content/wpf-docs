@@ -38,7 +38,7 @@ The following table explains how the navigation performed between properties,
 <tr>
 <td>5</td>
 <td>Left</td>
-<td>Selection will be moved from current property to previous property. When the property {{'**EnableGrouping**'| markdownify }} is true and the Header of the Category group is selected, and the group is expanded, then the Category group will be collapsed, and collapsed category group header remains selected.</td>
+<td>Selection will be moved from current property to previous property. When the property {{'**EnableGrouping**'| markdownify }} is 'true' and the Header of the Category group is selected, and the group is expanded, then the Category group will be collapsed, and collapsed category group header remains selected.</td>
 </tr>
 <tr>
 <td>6</td>
@@ -61,3 +61,6 @@ The following table explains how the navigation performed between properties,
 <td>Esc</td>
 <td>If the property’s value field is focused, then the focus has been moved to property’s name field.</td>
 </tr>
+
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Common) to download the sample that showcases the `PropertyGrid` key navigation feature.

@@ -21,26 +21,34 @@ The properties in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/prop
 public class Employee {
     [Display(Order = 4)]
     public String Gender { get; set; }
+
     [Display(Order = 7)]
     [Category("Address")]
     public String Country { get; set; }
+
     [Display(Order = 6)]
     [Category("Contact Details")]
     public string Email { get; set; }
+
     [Display(Order = 0)]
     [Category("Identity")]
     public string FirstName { get; set; }
+
     public string Designation { get; set; }
+
     [Display(Order = 1)]
     [Category("Identity")]
     public string LastName { get; set; }
+
     public string ID { get; set; }
+
     [Display(Order = 4)]
     public DateTime DOB { get; set; }
 
     [Display(Order = 5)]
     [Category("Contact Details")]
     public string Mobile { get; set; }
+
     [Display(Order = 2)]
     public int Age { get; set; }
 }
@@ -77,6 +85,15 @@ public class ViewModel {
 </syncfusion:PropertyGrid>
 
 {% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.EnableGrouping = true;
+propertyGrid1.SortDirection = null;
+
+{% endhighlight %}
 {% endtabs %}
 
 ### Ordering in Group view
@@ -87,7 +104,7 @@ Based on the value specified in the `Order` field of `Display` attribute, the pr
 
 Here, the `FirstName` property contains the lower order as `0` and categorized under the `Identity` category. Then the `Identity` category ordered as first. After that, `Age` property contains the lower order as `2` from another category, So `Misc` category ordered as `second`  and vice versa.
 
-### Ordering With Sort view
+### Ordering with Sort view
 
 If more than one property has same `Order` value, then the properties with distinct numbers will be added first, then the duplicate order properties will be added. Also, if any of the properties doesn’t have order, that properties will be arranged at last based on the order in which they were added in the class.
 
@@ -108,19 +125,27 @@ using System.ComponentModel;
 public class Employee {
     [Category("Identity")]
     public String Gender { get; set; }
+
     [Category("Address")]
     public String Country { get; set; }
+
     [Category("Contact Details")]
     public string Email { get; set; }
+
     [Category("Identity")]
     public string FirstName { get; set; }
+
     public string Designation { get; set; }
+
     [Category("Identity")]
     public string LastName { get; set; }
+
     public string ID { get; set; }
     public DateTime DOB { get; set; }
+
     [Category("Contact Details")]
     public string Mobile { get; set; }
+
     public int Age { get; set; }
 }
 
@@ -157,6 +182,14 @@ public class ViewModel {
 </syncfusion:PropertyGrid>
 
 {% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.SortDirection = null;
+
+{% endhighlight %}
 {% endtabs %} 
 
 ![Properties are in ordered based on they added into the Class](Sorting-Images\Property-Default-Ordering.png)
@@ -170,11 +203,11 @@ Here, the `Gender` property added in the class at `first` and categorized under 
 
 N>If you use both `Ordering` and `Sorting`, `Sorting` have higher priority. So the properties are arranged either `Ascending` or `Descending` order according to the sorting value.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Grouping-Sorting-Ordering) to download the sample that showcases the property ordering support using the attributes.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Grouping-Sorting-Ordering) to download the sample that showcases the property ordering support using the attributes.
 
-## Changing Property order at runtime
+## Change Property order at runtime
 
-We can set the property order without using the attributes and can change the property order at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html)  event with [AutoGeneratingPropertyGridItemEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html).[Order](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Order.html) property.
+We can set the property order without using the attributes and can change the property order at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html)  event with [AutoGeneratingPropertyGridItemEventArgs.Order](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Order.html) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -359,4 +392,4 @@ public class ViewModel {
 
 Here, the `Name` property is arranged at `first` and `Experience` property arranged at `fourth` position based on the value specified in the `AutoGeneratingPropertyGridItemArgs.Order` property.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Description` support using `AutoGeneratingPropertyGridItem` event.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Description` support using `AutoGeneratingPropertyGridItem` event.

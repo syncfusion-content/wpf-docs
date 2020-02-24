@@ -59,6 +59,14 @@ public class Employee
 </syncfusion:PropertyGrid>
 
 {% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.SortDirection = ListSortDirection.Ascending;
+
+{% endhighlight %} 
 {% endtabs %} 
 
 **SortDirection= Ascending**
@@ -134,6 +142,14 @@ public class ViewModel {
         <local:ViewModel></local:ViewModel>
     </syncfusion:PropertyGrid.DataContext>
 </syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.SortDirection = null;
 
 {% endhighlight %} 
 {% endtabs %} 
