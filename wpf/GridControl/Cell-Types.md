@@ -51,7 +51,7 @@ ComboBox</td><td>
 Used to choose the value</td></tr>
 <tr>
 <td>
-Dropdownlist</td><td>
+DropdownList</td><td>
 “DropDownList”</td><td>
 Used to display the multi column drop-down</td></tr>
 <tr>
