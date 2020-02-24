@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Appointments
+# Appointments in WPF Scheduler
 
 Scheduler control displays appointments based on details such as `StartTime`, `EndTime`, `Subject` and etc in `ScheduleAppointment` class. Also, it support to bind any collection and allows to render appointments based on data object in collection using mapping concept which explained under data binding section. 
 
