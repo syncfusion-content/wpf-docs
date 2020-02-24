@@ -130,7 +130,7 @@ gridcontrol.Model[1, 1].ToolTip = " Grid (" + gridcontrol.Model[1, 1].CellValue 
 //CellToolTipOpening event
 gridcontrol.CellToolTipOpening += Gridcontrol_CellToolTipOpening;
 
- private void Gridcontrol_CellToolTipOpening(object sender, GridCellToolTipOpeningEventArgs e)
+private void Gridcontrol_CellToolTipOpening(object sender, GridCellToolTipOpeningEventArgs e)
 {
     var grids = sender as GridControl;
     if (e.Cell.RowIndex == 1 && e.Cell.ColumnIndex == 1)
