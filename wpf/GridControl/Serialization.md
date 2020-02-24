@@ -119,9 +119,7 @@ void</td></tr>
 </table>
 
 
-### Sample link
-
-Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Serialization)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Serialization)
 
 
 

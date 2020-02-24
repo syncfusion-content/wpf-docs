@@ -514,7 +514,5 @@ Undo()</td><td>
 void</td></tr>
 </table>
 
-#### Sample Link
-
-Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Excel%20Like%20Features/Undo%20Redo)
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Excel%20Like%20Features/Undo%20Redo)
 
