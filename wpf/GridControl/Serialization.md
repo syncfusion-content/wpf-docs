@@ -119,10 +119,9 @@ void</td></tr>
 </table>
 
 
-## Sample Link
+### Sample link
 
-1. Refer to the samples in the shipped Sample Browser. 
-2. Go to Essential Studio WPF Sample Browser  Grid  Serialization GridControl Serialization Demo
+Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Serialization)
 
 
 

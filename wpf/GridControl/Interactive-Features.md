@@ -253,6 +253,4 @@ void</td></tr>
 
 ### Sample Link
 
-Refer to the sample in the shipped Sample Browser. 
-
-Go to Essential Studio WPF Sample Browser Grid GridDataControl-Advanced HiddenRowColDemo.
+Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Excel%20Like%20Features/Hidden%20Row%20Column%20Resizing)

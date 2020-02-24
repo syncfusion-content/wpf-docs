@@ -516,10 +516,5 @@ void</td></tr>
 
 #### Sample Link
 
-To view samples: 
-
-1. Select Start > Programs > Syncfusion > Essential Studio XX.X.X.XX > Dashboard.
-2. Select Run Locally Installed Samples button in the WPF panel.
-3. Expand the Excel-like Features item in the sample browser.
-4. Choose the Undo Redo Demo sample to launch.
+Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Excel%20Like%20Features/Undo%20Redo)
 
