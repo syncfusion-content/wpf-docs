@@ -141,6 +141,7 @@ public class Employee {
     public string LastName { get; set; }
 
     public string ID { get; set; }
+
     public DateTime DOB { get; set; }
 
     [Category("Contact Details")]
@@ -201,7 +202,7 @@ Here, the properties are arranged from the `Gender` property and end with `Age` 
 
 Here, the `Gender` property added in the class at `first` and categorized under the `Identity` category. Then the `Identity` category ordered as `first`. After that, `Country` property added in the class from another category, So `Address` category ordered as `second` and vice versa.
 
-N>If you use both `Ordering` and `Sorting`, `Sorting` have higher priority. So the properties are arranged either `Ascending` or `Descending` order according to the sorting value.
+N> If you use both `Ordering` and `Sorting`, `Sorting` have higher priority. So the properties are arranged either `Ascending` or `Descending` order according to the sorting value.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Grouping-Sorting-Ordering) to download the sample that showcases the property ordering support using the attributes.
 

@@ -85,7 +85,7 @@ Here, the `PropertyGrid` hides the properties `AccountNumber`, `Bank` and `Email
 
 N>`HidePropertiesCollection` cannot hide the properties which are added using `DynamicDescriptor`.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-HidePropertyByCollection) to download the sample that showcases the filtering  support using the `HidePropertiesCollection`.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/HidePropertyByCollection) to download the sample that showcases the filtering  support using the `HidePropertiesCollection`.
 
 ## Hide the Properties using Attributes
 

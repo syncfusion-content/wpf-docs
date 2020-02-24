@@ -9,8 +9,7 @@ documentation: ug
 
 # Sorting in WPF PropertyGrid
 
-We can sort the properties according to our needs. We can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
-Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
+We can sort the properties according to our needs. We can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property. Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
 
 ![Properties of PropertyGrid is sorted in ascending order](Sorting-Images/Sorting.png)
 
@@ -187,4 +186,4 @@ propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 
 ![PropertyGrid with and without group button panel](Sorting-Images/SortButton_visibility.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Grouping-Sorting-Ordering) to download the sample that showcases the property sorting support using the attributes.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Grouping-Sorting-Ordering) to download the sample that showcases the property sorting support using the attributes.

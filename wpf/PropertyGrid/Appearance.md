@@ -178,7 +178,7 @@ propertyGrid1.EnableToolTip = false;
 
 ![PropertyGrid with tool tip and without tool tip](Appearance_images/Appearance_EnableToolTip.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Apperance) to download the sample that showcases the UI customization and styling support. 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Apperance) to download the sample that showcases the UI customization and styling support. 
 
 ## Theme
 
@@ -218,7 +218,7 @@ Here, the `Blend` style is applied to the `PropertyGrid`.
 {% endhighlight %}
 {% highlight C# %}
 
-// Namespace for the SfSkinManager.
+//Namespace for the SfSkinManager.
 using Syncfusion.SfSkinManager;
 PropertyGrid propertyGrid1 = new PropertyGrid();
 propertyGrid1.SelectedObject = new Button();

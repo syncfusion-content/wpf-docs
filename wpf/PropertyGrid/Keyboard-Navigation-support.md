@@ -51,7 +51,7 @@ The following table explains how the navigation performed between properties,
 <td>When the PropertyName field is focused then the focus will be moved to value field and for next {{'**Tab**'| markdownify }} key press, focus will move to next property Name field from current property Value field.
 <br/> 
 <br/>
-<img src="KeyNavigation-Images/Tab-Key-Navigation.png" alt="Explaining Name and Value field">
+<img src="KeyNavigation-Images/Tab-Key-Navigation.png" alt="Explaining Name and Value field"/>
 <br/>
 <br/>
 </td>
@@ -61,6 +61,4 @@ The following table explains how the navigation performed between properties,
 <td>Esc</td>
 <td>If the property’s value field is focused, then the focus has been moved to property’s name field.</td>
 </tr>
-
-
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Common) to download the sample that showcases the `PropertyGrid` key navigation feature.
+<table>

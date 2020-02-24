@@ -72,20 +72,12 @@ To add the `PropertyGrid` control manually in C#, follow these steps:
     * Syncfusion.Shared.WPF
     *  Syncfusion.Tools.Wpf
 
-3. Include the required namespace.
+3. Include the required namespace and create an instance of `PropertyGrid` and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
 
 using Syncfusion.Windows.PropertyGrid;
-
-{% endhighlight %}
-{% endtabs %}
-
-4. Create an instance of PropertyGrid and add it to the window.
-
-{% tabs %}
-{% highlight C# %}
 
 public partial class MainWindow : Window {
     public MainWindow() {
