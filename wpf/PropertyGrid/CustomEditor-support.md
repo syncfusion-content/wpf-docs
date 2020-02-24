@@ -253,10 +253,10 @@ class ViewModel {
 {% endhighlight  %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.DataContext = new ViewModel();
-propertyGrid.SetBinding(PropertyGrid.CustomEditorCollectionProperty, new Binding("CustomEditorCollection"));
-propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.CustomEditorCollectionProperty, new Binding("CustomEditorCollection"));
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 
 {% endhighlight  %}
 {% endtabs %}
@@ -316,10 +316,10 @@ class ViewModel {
 {% endhighlight  %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.DataContext = new ViewModel();
-propertyGrid.SetBinding(PropertyGrid.CustomEditorCollectionProperty, new Binding("CustomEditorCollection"));
-propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.CustomEditorCollectionProperty, new Binding("CustomEditorCollection"));
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 
 {% endhighlight  %}
 {% endtabs %}

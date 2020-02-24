@@ -178,7 +178,8 @@ We can change the view of the properties from grouped view to sort view by the `
 
 PropertyGrid propertyGrid = new PropertyGrid();
 propertyGrid.Width = 350;
-propertyGrid.Height = 400;propertyGrid.SelectedObject = new Button();
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
 propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 
 {% endhighlight %}

@@ -212,124 +212,6 @@ We can set the property order without using the attributes and can change the pr
 {% tabs %}
 {% highlight C# %}
 
-/// <summary>
-/// A class that represents the AutoGeneratingPropertyGridItem event to AutoGeneratingPropertyGridItem Command
-/// </summary>
-public class EventToCommandBehavior : Behavior<FrameworkElement> {
-    private Delegate _handler;
-    private EventInfo _oldEvent;
-
-    // Event
-    public string Event { 
-        get { return (string)GetValue(EventProperty); }
-        set { SetValue(EventProperty, value); }
-    }
-    public static readonly DependencyProperty EventProperty =
-        DependencyProperty.Register("Event", 
-        typeof(string),
-        typeof(EventToCommandBehavior), 
-        new PropertyMetadata(null, OnEventChanged));
-
-    // Command
-    public ICommand Command { 
-        get { return (ICommand)GetValue(CommandProperty); } 
-        set { SetValue(CommandProperty, value); }
-    }
-    public static readonly DependencyProperty CommandProperty =
-        DependencyProperty.Register("Command",
-        typeof(ICommand),
-        typeof(EventToCommandBehavior),
-        new PropertyMetadata(null));
-
-    // PassArguments (default: false)
-    public bool PassArguments { 
-        get { return (bool)GetValue(PassArgumentsProperty); }
-        set { SetValue(PassArgumentsProperty, value); } }
-    public static readonly DependencyProperty PassArgumentsProperty = 
-        DependencyProperty.Register("PassArguments",
-        typeof(bool), 
-        typeof(EventToCommandBehavior), 
-        new PropertyMetadata(false));
-
-    private static void OnEventChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
-        var beh = (EventToCommandBehavior)d;
-        if (beh.AssociatedObject != null) // is not yet attached at initial load
-            beh.AttachHandler((string)e.NewValue);
-    }
-
-    protected override void OnAttached() {
-        AttachHandler(this.Event); // initial set
-    }
-
-    /// <summary>
-    /// Attaches the handler to the event
-    /// </summary>
-    private void AttachHandler(string eventName) {
-        // detach old event
-        if (_oldEvent != null)
-            _oldEvent.RemoveEventHandler(this.AssociatedObject, _handler);
-
-        // attach new event
-        if (!string.IsNullOrEmpty(eventName)) {
-            EventInfo ei = this.AssociatedObject.GetType().GetEvent(eventName);
-            if (ei != null) {
-                MethodInfo mi = this.GetType().GetMethod("ExecuteCommand",
-                    BindingFlags.Instance | BindingFlags.NonPublic);
-                _handler = Delegate.CreateDelegate(ei.EventHandlerType, this, mi);
-                ei.AddEventHandler(this.AssociatedObject, _handler);
-                _oldEvent = ei; // store to detach in case the Event property changes
-            }
-            else
-                throw new ArgumentException(string.Format
-                    ("The event '{0}' was not found on type '{1}'", 
-                    eventName, this.AssociatedObject.GetType().Name));
-        }
-    }
-    private void ExecuteCommand(object sender, EventArgs e) {
-        object parameter = this.PassArguments ? e : sender;
-        if (this.Command != null) {
-            if (this.Command.CanExecute(parameter))
-                this.Command.Execute(parameter);
-        }
-    }
-}
-
-/// <summary>
-/// A clas that represents the Commend for the AutoGeneratingPropertyGridItem Event 
-/// </summary>
-class UpdaterValue : ICommand {
-    #region ICommand Members  
-    public bool CanExecute(object parameter) {
-        return true;
-    }
-    public event EventHandler CanExecuteChanged {
-        add { CommandManager.RequerySuggested += value; }
-        remove { CommandManager.RequerySuggested -= value; }
-    }
-    public void Execute(object parameter) {
-       //Experience, DOB, Name and ID  properties ordered by the order property.
-       if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "Experience") {
-           (parameter as AutoGeneratingPropertyGridItemEventArgs).Order = 3;
-       }
-       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "DOB") {
-           (parameter as AutoGeneratingPropertyGridItemEventArgs).Order = 2;
-       }
-       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "Name") {
-           (parameter as AutoGeneratingPropertyGridItemEventArgs).Order = 0;
-       }
-       else if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "ID") {
-           (parameter as AutoGeneratingPropertyGridItemEventArgs).Order = 1;
-       }
-   }
-    #endregion
-}
-
-{% endhighlight %} 
-{% endtabs %} 
-
-{% tabs %}
-{% highlight C# %}
-
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -342,19 +224,8 @@ public class Employee {
 }
 
 public class ViewModel {
-    private ICommand autoGeneratingPropertyGridItemEventCommand;
     public object SelectedEmployee { get; set; }
 
-    //Command for the AutoGeneratingPropertyGridItemEvent
-    public ICommand AutoGeneratingPropertyGridItemEventCommand {
-        get { if (autoGeneratingPropertyGridItemEventCommand == null)
-                autoGeneratingPropertyGridItemEventCommand = new UpdaterValue();
-              return autoGeneratingPropertyGridItemEventCommand;
-        }
-        set {
-            autoGeneratingPropertyGridItemEventCommand = value;
-        }
-    }
     public ViewModel() {
         SelectedEmployee = new Employee()
         {
@@ -372,21 +243,48 @@ public class ViewModel {
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid SelectedObject="{Binding IsAsync=True, Path=SelectedEmployee}" 
-                         EnableGrouping="True"
-                         x:Name="propertyGrid1" >
+<syncfusion:PropertyGrid AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem"
+                         SortDirection="{x:Null}"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
     <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
     </syncfusion:PropertyGrid.DataContext>
-    <i:Interaction.Behaviors>
-        <local:EventToCommandBehavior PassArguments="true" 
-            Event="AutoGeneratingPropertyGridItem" 
-            Command="{Binding Path=AutoGeneratingPropertyGridItemEventCommand}" />
-    </i:Interaction.Behaviors>
 </syncfusion:PropertyGrid>
 
 {% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.SortDirection = null;
+propertyGrid1.AutoGeneratingPropertyGridItem += PropertyGrid1_AutoGeneratingPropertyGridItem;
+
+{% endhighlight %} 
 {% endtabs %} 
+
+{% tabs %}
+{% highlight C# %}
+
+private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e) {
+    //Experience, DOB, Name and ID  properties ordered by the Order property.
+    if (e.DisplayName == "Experience") {
+        e.Order = 3;
+    }
+    else if (e.DisplayName == "DOB") {
+        e.Order = 2;
+    }
+    else if (e.DisplayName == "Name") {
+        e.Order = 0;
+    }
+    else if (e.DisplayName == "ID") {
+        e.Order = 1;
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %}
 
 ![Properties are ordered based on the value specified in the Order property of the AutoGeneratingPropertyGridItem event](Sorting-Images\Ordering-Event.png)
 

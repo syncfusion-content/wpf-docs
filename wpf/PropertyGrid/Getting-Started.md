@@ -155,9 +155,9 @@ We can populate the properties of the `SelectedObject` using XAML or C#.
 {% endhighlight %}
 {% highlight c# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.DataContext = new ViewModel();
-propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 
 {% endhighlight %}
 {% endtabs %}
@@ -264,9 +264,9 @@ class ViewModel {
 {% endhighlight %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.DataContext = new ViewModel();
-propertyGrid.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 
 {% endhighlight %}
 {% endtabs %}
