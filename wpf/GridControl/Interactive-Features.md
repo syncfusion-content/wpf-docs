@@ -28,7 +28,7 @@ The following image illustrates this feature:
 
 In the above image, you can see the column header 1 being dragged to be placed before column 3.
 
-## Excel Like - Cell drag and drop
+## Excel like - Cell drag and drop
 
 The Excel-like Drag and Drop feature enables dragging content with their styles from cells to different locations and grids. You can use this feature to copy data to one or more locations.
 
