@@ -116,7 +116,7 @@ GridTooltipService.SetTooltipDelay(gridcontrol, 5000);
 
 {% endtabs %}
 
-## Handling ToolTip Opening Event
+## Handling ToolTip opening event
 
 The [CellToolTipOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~CellToolTipOpening_EV.html) event will be triggered when the mouse hover on a cell has valid the ToolTip text.
 
@@ -139,7 +139,7 @@ private void Gridcontrol_CellToolTipOpening(object sender, GridCellToolTipOpenin
 
 ![Change the ToolTip text at run time in WPF GridControl](Tooltip_images/show-tooltip-openingevent.png)
 
-## Show ToolTip for disabled Cell
+## Show ToolTip for disabled cell
 
 You can disable the cell by setting `Enabled` property to `false` and set the tooltip for that disabled cell by setting the `ShowToolTip` and ToolTip text can be customized by setting `ToolTip` property.
 
@@ -272,3 +272,4 @@ gridcontrol.Model[1, 1].ResetValue(GridStyleInfoStore.ToolTipProperty);
 
 {% endtabs %}
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip)
