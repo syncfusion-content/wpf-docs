@@ -31,8 +31,7 @@ N> Blinking Behavior-You cud see random values get updated frequently and those 
 ![Trader Grid Test Demo in WPF GridControl](Performance_images/Performance_img1.jpeg)
 
 
-N> For complete code for this example, refer the following browser sample: 
-...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Performance/TraderGrid%20Test)
 
 ### Example 
 

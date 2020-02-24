@@ -35,7 +35,7 @@ Double</td></tr>
 </table>
 
 
-N> You can find a demonstration in the following location: _...\MyDocuments\Syncfusion\EssentialStudio\<VersionNumber>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Zooming\_
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Zooming)
 
 ## Change Zoom Scale of the Grid Control
 

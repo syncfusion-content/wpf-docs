@@ -9,23 +9,9 @@ documentation: ug
 
 # Cell Types in GridControl
 
-Essential Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the grid control. This attribute of a grid cell is referred to as its Cell Type.
-
-This section lists out various cell controls that can be placed inside the grid cells. Essential Grid currently supports 20+ cell types. The cell types are broadly classified into two categories:
-
-* Built-in cell types—Refer Built-in Cell Types section to know the procedure to add those cell types that are in-built into the grid.
-* Custom cell types—Refer Custom Cell Types section to know the procedure to add add custom-derived cell types to a grid.
-
-You can also insert images into the grid cells. Refer Inserting Images Into Grid Cells section to know the procedure to add images to a grid cell.
-
-## Built-in Cell Types
+Essential Grid allows the inclusion of some special controls in the grid cells. This greatly improves the usability and appearance of the grid control. This attribute of a grid cell is referred to as its Cell Type. This section lists out various cell controls that can be placed inside the grid cells. Essential Grid currently supports 20+ cell types. It also provides support to create and use custom cell types.
 
 Following is the list of built-in cell types:
-
-### Basic Cell Types
-
-This section elaborates you on how to employ basic controls like Check Box, Radio Button and more in a grid cell. The list of cell types and their usages are described below. The table also lists the format string for the individual cell types.
-
 
 <table>
 <tr>
@@ -58,29 +44,161 @@ Provides Click event, which can be triggered to perform required action</td></tr
 Image</td><td>
 “ImageCell”</td><td>
 Used to display pictures</td></tr>
+<tr>
+<td>
+ComboBox</td><td>
+“ComboBox”</td><td>
+Used to choose the value</td></tr>
+<tr>
+<td>
+Dropdownlist</td><td>
+“DropDownList”</td><td>
+Used to display the multi column drop-down</td></tr>
+<tr>
+<td>
+CurrencyEdit</td><td>
+“CurrencyEdit”</td><td>
+Used to display the currency value</td></tr>
+<tr>
+<td>
+DateTimeEdit</td><td>
+“DateTimeEdit”</td><td>
+Used to display the date and time</td></tr>
+<tr>
+<td>
+DoubleEdit</td><td>
+“DoubleEdit”</td><td>
+Used to display the group separators and decimal digits</td></tr>
+<tr>
+<td>
+IntegerEdit</td><td>
+“IntegerEdit”</td><td>
+Used to display the group separators and decimal digits</td></tr>
+<tr>
+<td>
+MaskEdit</td><td>
+“MaskEdit”</td><td>
+Used to edit the cells</td></tr>
+<tr>
+<td>
+PercentEdit</td><td>
+“PercentEdit”</td><td>
+Used to display the percent values</td></tr>
+<tr>
+<td>
+RichTextBox</td><td>
+“RichText”</td><td>
+Used to format the cells</td></tr>
+<tr>
+<td>
+UpDownEdit</td><td>
+“UpDownEdit”</td><td>
+Used to increase or decrease the cell values</td></tr>
+<tr>
+<td>
+NestedGrid</td><td>
+“ScrollGrid”</td><td>
+Used to display the multiple scroller in row and column</td></tr>
 </table>
 
 
-To set up desired cell type, the Style.CellType property must be assigned with the corresponding format string. For instance, if you want to display a Check box control in the cell (2, 2), then you have to use the code below.
+## Setting Cell Type
 
-Displaying a Check Box Control in a cell
+This section elaborates you on how to employ basic controls like Check Box, Radio Button and more in a grid cell.
+
+To set up desired cell type, the [Style.CellType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CellType.html) property must be assigned with the corresponding format string. 
+
+The list of cell types and their usages are described below.
+
+## Header cell type
+
+A header cell type is used as row and column headers in the grid cell.
 
 {% tabs %}
+
+{% highlight C# %}
+
+var style = gridcontrol.Model[1, 2];
+style.CellType = "Header";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Static cell type
+
+The cell is specified as ' Static', that cell can not be changed or edited.
+
+{% tabs %}
+
+{% highlight C# %}
+
+var style = gridcontrol.Model[1, 2];
+style.CellType = "Static";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## CheckBox cell type
+
+The Checkbox cell type is used for toggling options. For instance, if you want to display a Checkbox control in the cell (2, 2), then you have to use the code below.
+
+{% tabs %}
+
 {% highlight c# %}
-GridStyleInfo style = gridControl1.Model[2, 2];
+
+var style = gridControl1.Model[1, 2];
 style.CellType = "CheckBox";
-{% endhighlight  %}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 Likewise, you can also add other controls from the table above. A sample output is displayed below.
 
 ![Checkbox cell type in WPF GridControl](Cell-Types_images/Cell-Types_img1.jpeg)
 
-A check box is created in the grid.
+## Button cell type
 
-N> For complete code, please refer to the following browser sample: ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Basic Cell Type Demo
+The cell type is used to the cell is changed as a button. It provides click event that can be triggered to perform the required option.
 
-### Combo Box Cells
+{% tabs %}
+
+{% highlight c# %}
+
+var style = gridControl1.Model[1, 2];
+style.CellType = "Button";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Image cell type
+
+The cell type is used to display the image in the specified cell.
+
+{% tabs %}
+
+{% highlight c# %}
+
+var style = gridControl1.Model[1, 2];
+style.CellType = "Image";
+style.GridModel.RowHeights[1] = 80;
+Uri fileuri = new Uri(@"..\..\images\Avatar.jpeg", UriKind.Relative);
+Image image = new System.Windows.Controls.Image();
+image.Source = new BitmapImage(fileuri);            
+style.ImageList = new System.Collections.ObjectModel.ObservableCollection<Image>() { image };
+style.GridModel.ColumnWidths[5] = 120;
+style.ImageIndex = 0;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Basic%20Cell%20Type)
+
+## ComboBox cell type
 
 A combo box is a component with a drop-down arrow that users click to display an associated list of choices. The user displays the list by clicking or dragging the drop-down arrow.
 
@@ -258,7 +376,7 @@ The following output is generated using the code above.
 
 N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
 
-### Drop-down List Cells
+## DropdownList cell type
 
 This cell type serves the same purpose as combo box control. The difference is that it will associate a multicolumn drop-down to the owner cell. The other common features like DropDownStyle, ItemsSource, DisplayMember and ValueMember are applicable to this cell too.
 
@@ -288,8 +406,6 @@ dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 The following output is generated using the code above.
 
 ![Editable Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img8.jpeg)
-
-An Editable drop-down list is created.
 
 Autocomplete Drop-down List Bound to LINQ source with ‘FirstName’ as its Display Member and ‘EmployeeID’ as its ValueMember.
 
@@ -342,9 +458,9 @@ The following output is generated using the code above.
 
 ![Exclusive Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img10.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Combo%20Box%20Cell)
 
-### Currency Cells
+## CurrencyEdit cell type
 
 This cell type can be used to represent monetary values to achieve accuracy in the calculations. It will stripe the currency sign in the cell and attempt to parse only the number from the input. Use the GridStyleInfo properties below to customize these cells.
 
@@ -465,9 +581,9 @@ The following output is generated using the code above.
 
 ![Currency Cell with a Positive Value in WPF GridControl](Cell-Types_images/Cell-Types_img13.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Currency%20Cell)
 
-### Date Time Cells
+## DateTimeEdit cell type
 
 The Date Time cells incorporate DateTimeEdit controls in grid cells that will help you to interactively set a date and time value. The style properties below are applicable to this cell type.
 
@@ -581,9 +697,9 @@ The following output is generated using the code above.
 
 ![Datetime celltype in WPF GridControl](Cell-Types_images/Cell-Types_img14.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Date%20Time%20Cell)
 
-### Double Edit Cells
+### DoubleEdit cell type
 
 Using DoubleEdit cell type will restrict the user to enter only double (value type) values into the cell. Thus it can be used to display System.Double type values. Below are the style properties that affect this cell.
 
@@ -669,9 +785,9 @@ The following output is generated using the code above.
 
 ![Doubleedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img15.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Double%20Edit%20Cell)
 
-### Integer Edit Cells
+## IntegerEdit cell type
 
 IntegerEdit is a specialized cell type that restricts the data entry to integers. The table below lists the style properties specific to this cell type.
 
@@ -735,9 +851,9 @@ The following output is generated using the code above.
 
 ![Integeredit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img16.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Integer Edit Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Integer%20Edit%20Cell)
 
-### Mask Edit Cells
+## MaskEdit cell type
 
 MaskEdit cell type allows you to create specially formatted text cells that confirm to an edit mask that you specify. The Style.MaskEdit.Mask property holds the mask string, which will control the format of the input text being entered. The Mask Edit cells are useful when the user wants to display some formatted text such as Social Security Number (SSN), telephone number etc.
 
@@ -774,9 +890,9 @@ The following output is generated using the code above.
 ![Maskedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img17.jpeg)
 
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Mask%20Edit%20Cell)
 
-### Percent Edit Cells
+## PercentEdit cell type
 
 The PercentEdit cell type restricts the data entry to percentage values only. The following are the style properties used with this cell type.
 
@@ -857,9 +973,9 @@ The following output is generated using the code above.
 
 ![Percentedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img18.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Percent%20Edit%20Cell)
 
-### RichTextBox CellType
+## RichText cell type
 
 RichTextBox CellType is used to format the cells, where each character, word or a line can be given different formats. RichTextBox cell type also supports Printing, Importing and Exporting.
 
@@ -903,7 +1019,9 @@ this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 
 ![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img19.png)
 
-### Up Down Edit Cells
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/RichTextBox%20Cell)
+
+## UpDownEdit cell type
 
 UpDownEdit cell type makes the grid cell to host an Up and Down edit control which contains a pair of arrow buttons that increase or decrease the cell value. The style properties applicable to this cell type are provided below.
 
@@ -988,9 +1106,9 @@ The following output is generated using the code above.
 ![Updownedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img20.jpeg)
 
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Up%20Down%20Cell)
 
-### Nested Grid Cells 
+## Nested Grid cell type
 
 Nested grids are an important component of the basic architecture of Essential Grid. They provide for the easy display of complex user interfaces using a flat grid. They also form the underpinnings for the display of hierarchical and grouped data. You can nest grids inside a row, column or covered range. When you nest a grid inside a covered range you can specify whether the rows or columns derive their state from the parent control. You have multiple independent options for both rows and columns.
 
@@ -1421,9 +1539,9 @@ The following output is generated using the code above.
 
 ![Nested grid-rows and columns independent of parent grid in WPF GridControl](Cell-Types_images/Cell-Types_img24.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Nested%20Grid)
 
-## Custom Cell Types
+##  Creating custom cell type
 
 Essential Grid allows you to create custom derived controls to use additional cell types. This requires a cell model class and a cell renderer class. The cell model class creates the actual cell control while the cell renderer class handles the UI requirements of the cell control. The custom cell type can be created by  registering the cell model to the corresponding grid by naming this cell type. It can be enabled by assigning its name to the style.CellType property.
 
@@ -1579,7 +1697,7 @@ The following output is generated using the code above.
 
 ![Cutom drop-down in WPF GridControl](Cell-Types_images/Cell-Types_img26.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Custom Drop Down Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Custom%20Drop%20Down)
 
 ### Data Template Cells
 
@@ -1704,7 +1822,7 @@ The following output is generated using the code above.
 
 ![Data template with cell template assigned in WPF GridControl](Cell-Types_images/Cell-Types_img27.jpeg)
 
-N> For complete code, please refer to the following browser sample. ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Data%20Template%20Cell)
 
 ### Rich Text Box Cells
 
