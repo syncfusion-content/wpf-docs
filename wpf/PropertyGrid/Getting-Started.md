@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started with WPF PropertyGrid
 
-This section explains how to explore the properties of an object using WPF [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control and its use cases.
+This section explains how to explore and edit the properties of an object using WPF [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control.
 
 ## Assembly deployment
 
