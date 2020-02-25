@@ -36,11 +36,15 @@ for(int i = 0; i < gridcontrol.Model.ColumnCount; i++)
     gridcontrol.Model[1, 1].ShowTooltip = true;
 }
 
+{% endhighlight %}
+
+{% endtabs %}
+
 ![ToolTip for specific cell in WPF GridControl](Tooltip_images/show-tooltip-cell.png)
 
 ## ToolTip for row and column
 
-ToolTip can be displayed for any row or colummn by setting the `ShowToolTip` and ToolTip text can be customized by setting the `ToolTip`.
+ToolTip can be displayed for any row or column by setting the `ShowToolTip` and ToolTip text can be customized by setting the `ToolTip`.
 
 {% tabs %}
 
@@ -137,6 +141,10 @@ private void Gridcontrol_CellToolTipOpening(object sender, GridCellToolTipOpenin
         grids.Model[e.Cell.RowIndex, e.Cell.ColumnIndex].ToolTip = "Hello";
 }
 
+{% endhighlight %}
+
+{% endtabs %}
+
 ![Change the ToolTip text at run time in WPF GridControl](Tooltip_images/show-tooltip-openingevent.png)
 
 ## Show ToolTip for disabled cell
@@ -175,6 +183,10 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
         e.Style.Foreground = Brushes.White;
     }
 }
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Highlight the row applied to ToolTip in WPF GridControl](ToolTip_images/show-tooltip-highlight.png)
 
