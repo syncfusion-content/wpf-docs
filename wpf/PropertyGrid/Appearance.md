@@ -18,7 +18,7 @@ We can change the foreground color for properties of [SelectedObject](https://he
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid Foreground="Red" x:Name="propertyGrid">
+<syncfusion:PropertyGrid Foreground="Red" x:Name="propertyGrid1">
     <syncfusion:PropertyGrid.SelectedObject>
          <Button></Button>
     </syncfusion:PropertyGrid.SelectedObject>
@@ -27,9 +27,9 @@ We can change the foreground color for properties of [SelectedObject](https://he
 {% endhighlight %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.SelectedObject = new Button();
-propertyGrid.Foreground = Brushes.Red;
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.SelectedObject = new Button();
+propertyGrid1.Foreground = Brushes.Red;
 
 {% endhighlight %}
 {% endtabs %}
@@ -44,7 +44,7 @@ We can change the background and font weight for all the properties by using the
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid ViewBackgroundColor="Cyan" FontWeight="Bold" 
-                         x:Name="propertyGrid">
+                         x:Name="propertyGrid1">
     <syncfusion:PropertyGrid.SelectedObject>
         <Button></Button>
     </syncfusion:PropertyGrid.SelectedObject>
@@ -53,10 +53,10 @@ We can change the background and font weight for all the properties by using the
 {% endhighlight %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.SelectedObject = new Button();
-propertyGrid.ViewBackgroundColor = Brushes.Cyan;
-propertyGrid.FontWeight = FontWeights.Bold;
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.SelectedObject = new Button();
+propertyGrid1.ViewBackgroundColor = Brushes.Cyan;
+propertyGrid1.FontWeight = FontWeights.Bold;
 {% endhighlight %}
 {% endtabs %}
 
@@ -99,7 +99,7 @@ public class ViewModel {
 
 <syncfusion:PropertyGrid EditableBackground="LightGreen" EditableFontWeight="Bold"
                          ReadOnlyBackground="LightPink"  ReadOnlyFontWeight="UltraLight"
-                         SelectedObject="{Binding SelectedEmployee}" x:Name="propertyGrid" >
+                         SelectedObject="{Binding SelectedEmployee}" x:Name="propertyGrid1" >
     <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
     </syncfusion:PropertyGrid.DataContext>
@@ -108,15 +108,13 @@ public class ViewModel {
 {% endhighlight %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.DataContext = new ViewModel();
-propertyGrid.SelectedObject = (propertyGrid.DataContext as ViewModel).SelectedEmployee;
-propertyGrid.EditableBackground = Brushes.LightGreen;
-propertyGrid.EditableFontWeight = FontWeights.Bold;
-propertyGrid.ReadOnlyBackground = Brushes.LightPink;
-propertyGrid.ReadOnlyFontWeight = FontWeights.UltraLight;
-
-propertyGrid.SelectedObject = viewModel.SelectedEmployee;
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.EditableBackground = Brushes.LightGreen;
+propertyGrid1.EditableFontWeight = FontWeights.Bold;
+propertyGrid1.ReadOnlyBackground = Brushes.LightPink;
+propertyGrid1.ReadOnlyFontWeight = FontWeights.UltraLight;
 
 {% endhighlight %}
 {% endtabs %}
@@ -136,7 +134,7 @@ We can change the background and foreground of the category header by setting th
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid LineColor="Cyan" CategoryForeground="Red"
-                         x:Name="propertyGrid" >
+                         x:Name="propertyGrid1" >
     <syncfusion:PropertyGrid.SelectedObject>
         <Button></Button>
     </syncfusion:PropertyGrid.SelectedObject>
@@ -145,10 +143,10 @@ We can change the background and foreground of the category header by setting th
 {% endhighlight %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.SelectedObject = new Button();
-propertyGrid.LineColor = Brushes.Cyan;
-propertyGrid.CategoryForeground = Brushes.Red;
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.SelectedObject = new Button();
+propertyGrid1.LineColor = Brushes.Cyan;
+propertyGrid1.CategoryForeground = Brushes.Red;
 
 {% endhighlight %}
 {% endtabs %}
@@ -162,7 +160,7 @@ ToolTip is used to show the information about the segment, when you mouse over o
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:PropertyGrid EnableToolTip="False" x:Name="propertyGrid" >
+<syncfusion:PropertyGrid EnableToolTip="False" x:Name="propertyGrid1" >
     <syncfusion:PropertyGrid.SelectedObject>
         <Button></Button>
     </syncfusion:PropertyGrid.SelectedObject>
@@ -171,16 +169,16 @@ ToolTip is used to show the information about the segment, when you mouse over o
 {% endhighlight %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.SelectedObject = new Button();
-propertyGrid.EnableToolTip = false;
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.SelectedObject = new Button();
+propertyGrid1.EnableToolTip = false;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![PropertyGrid with tool tip and without tool tip](Appearance_images/Appearance_EnableToolTip.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Apperance) to download the sample that showcases the UI customization and styling support. 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Apperance) to download the sample that showcases the UI customization and styling support. 
 
 ## Theme
 
@@ -211,28 +209,24 @@ Here, the `Blend` style is applied to the `PropertyGrid`.
 {% highlight xaml %}
 
 <syncfusion:PropertyGrid syncfusionskin:SfSkinManager.VisualStyle="Blend" 
-                         x:Name="propertyGrid" >
+                         x:Name="propertyGrid1" >
     <syncfusion:PropertyGrid.SelectedObject>
         <Button></Button>
     </syncfusion:PropertyGrid.SelectedObject>
 </syncfusion:PropertyGrid>
 
 {% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
 {% highlight C# %}
 
-// Namespace for the SfSkinManager.
+//Namespace for the SfSkinManager.
 using Syncfusion.SfSkinManager;
-
-PropertyGrid propertyGrid = new PropertyGrid();
-propertyGrid.SelectedObject = new Button();
-SfSkinManager.SetVisualStyle(propertyGrid, VisualStyles.Blend);
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.SelectedObject = new Button();
+SfSkinManager.SetVisualStyle(propertyGrid1, VisualStyles.Blend);
 
 {% endhighlight %}
 {% endtabs %}
 
 ![PropertyGrid with Blend visual style](Appearance_images/Appearance_BlendTheme.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Themes) to download the sample that showcases the different theming support. 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Themes) to download the sample that showcases the different theming support. 

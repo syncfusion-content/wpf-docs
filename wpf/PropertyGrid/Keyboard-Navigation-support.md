@@ -38,7 +38,7 @@ The following table explains how the navigation performed between properties,
 <tr>
 <td>5</td>
 <td>Left</td>
-<td>Selection will be moved from current property to previous property. When the property {{'**EnableGrouping**'| markdownify }} is true and the Header of the Category group is selected, and the group is expanded, then the Category group will be collapsed, and collapsed category group header remains selected.</td>
+<td>Selection will be moved from current property to previous property. When the property {{'**EnableGrouping**'| markdownify }} is 'true' and the Header of the Category group is selected, and the group is expanded, then the Category group will be collapsed, and collapsed category group header remains selected.</td>
 </tr>
 <tr>
 <td>6</td>
@@ -51,7 +51,7 @@ The following table explains how the navigation performed between properties,
 <td>When the PropertyName field is focused then the focus will be moved to value field and for next {{'**Tab**'| markdownify }} key press, focus will move to next property Name field from current property Value field.
 <br/> 
 <br/>
-<img src="KeyNavigation-Images/Tab-Key-Navigation.png" alt="Explaining Name and Value field">
+<img src="KeyNavigation-Images/Tab-Key-Navigation.png" alt="Explaining Name and Value field"/>
 <br/>
 <br/>
 </td>
@@ -61,3 +61,4 @@ The following table explains how the navigation performed between properties,
 <td>Esc</td>
 <td>If the property’s value field is focused, then the focus has been moved to property’s name field.</td>
 </tr>
+<table>

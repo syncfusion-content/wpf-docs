@@ -9,13 +9,15 @@ documentation: ug
 
 # Category Editor in WPF PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors, to give a good look and feel for the application `CategoryEditors`. `CategoryEditor` support enables us to set related properties (one or more properties) under single or multiple category based on the need. `CategoryEditor` can be applied for category view. While sorting, default editors will be displayed.
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. `CategoryEditor` support enables us to set the related properties (one or more properties) under single or multiple category based on the need. `CategoryEditor` can be applied in category view. While sorted view, default editors will be applied.
 
 ## Adding Category Editor to PropertyGrid
 
-If we want to display some related properties under the specific category, we can do it by the `CategoryEditor`. We can add any number of `CategoryEditor`. We must add property names in the `CategoryEditor.Properties` collection which are need to be categorized in the same category. Using the `CategoryEditor.EditorTemplate`, we can create the own template for the categorized properties with value editors. The properties and its value editor can be placed in the `PropertyGrid` as our wish. To display the `CategoryEditor`, we need the enable the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property as `true`.    
+If we want to display some related properties under the specific category, we can do it by the `CategoryEditor`. We can add any number of `CategoryEditor`. We must add property names in the `CategoryEditor.Properties` collection which are need to be categorized in the same category. Using the `CategoryEditor.EditorTemplate`, we can create the own template for the categorized properties with its required value editors. The properties and its value editor can be placed in the `PropertyGrid` as our wish. To display the `CategoryEditor`, we need the enable the [EnableGrouping](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableGrouping.html) property as `true`.   
 
-a) `ColorEdit` control visibility converter for the value editors
+For example, the `Background`, `BorderBrush` and `Foreground` are brush type properties. They will categorized under 'A-Brushes' category. ColorEdit controls will assigned as the value editor for the above properties and located in the same place. Based on the property selection, respective `ColorEdit` control will be in the view to pick the color for that property.
+
+a) `ColorEdit` control visibility converter
 
 {% tabs %}
 {% highlight C# %}
@@ -129,8 +131,8 @@ public class SelectedIndexToVisibility : IValueConverter {
 {% endhighlight %}
 {% endtabs %}
 
-Here, the `Background`, `Foreground` and `BorderBrush` are brush type properties. So, they categorized under the `A-Brushes` category with `ColorEdit` control as value editor. By Default, the properties are arranged like the key-value pairs with unique value editor. Using the `CategoryEditor`, single `ColorEdit` control is act as value editor for the `Background`, `Foreground` and `BorderBrush` properties.
+By Default, the properties are arranged like the key-value pairs with its value editor. Using the `CategoryEditor`, the `Background`, `Foreground` and `BorderBrush` property value editors are arranged by our wish.
 
 ![PropertyGrid with CategoryEditor](CategoryEditor-support_images/CategoryEditor-support_img1.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-CategoryEditor) to download the sample that showcases the `CategoryEditor` support. 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CategoryEditor) to download the sample that showcases the `CategoryEditor` support. 

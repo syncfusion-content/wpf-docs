@@ -9,8 +9,7 @@ documentation: ug
 
 # Sorting in WPF PropertyGrid
 
-We can sort the properties according to our needs. We can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property.
-Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
+We can sort the properties according to our needs. We can change the sorting order of the properties by [SortDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SortDirection.html) property. Values of `SortDirection` property is `Ascending`, `Descending` and `Null`. The Default value of the `SortDirection` property is `Ascending` order.
 
 ![Properties of PropertyGrid is sorted in ascending order](Sorting-Images/Sorting.png)
 
@@ -57,6 +56,14 @@ public class Employee
         <local:ViewModel></local:ViewModel>
     </syncfusion:PropertyGrid.DataContext>
 </syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.SortDirection = ListSortDirection.Ascending;
 
 {% endhighlight %} 
 {% endtabs %} 
@@ -136,6 +143,14 @@ public class ViewModel {
 </syncfusion:PropertyGrid>
 
 {% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.SortDirection = null;
+
+{% endhighlight %} 
 {% endtabs %} 
 
 ![Properties are in sorted based on they added into the Class](Sorting-Images\Property-Default-Ordering.png)
@@ -162,7 +177,8 @@ We can change the view of the properties from grouped view to sort view by the `
 
 PropertyGrid propertyGrid = new PropertyGrid();
 propertyGrid.Width = 350;
-propertyGrid.Height = 400;propertyGrid.SelectedObject = new Button();
+propertyGrid.Height = 400;
+propertyGrid.SelectedObject = new Button();
 propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 
 {% endhighlight %}
@@ -170,4 +186,4 @@ propertyGrid1.ButtonPanelVisibility = Visibility.Collapsed;
 
 ![PropertyGrid with and without group button panel](Sorting-Images/SortButton_visibility.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Grouping-Sorting-Ordering) to download the sample that showcases the property sorting support using the attributes.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Grouping-Sorting-Ordering) to download the sample that showcases the property sorting support using the attributes.

@@ -7,13 +7,13 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Description of the Properties
+# Describe the Properties
 
 We can display the description about the property using the  Description panel which is placed on the bottom of the [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control. Description panel visibility can be managed by [DescriptionPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelVisibility.html) property . The default value of the `DescriptionPanelVisibility` is `Collapsed`. To display the Description panel, we should set `DescriptionPanelVisibility`  property value as `Visible` .
 
  We can change Description panel height by using the [DescriptionPanelHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~DescriptionPanelHeight.html)  property.
 
-## Property Description using Attributes
+## Property Description using attributes
 
 We can give a meaningful description about the properties by using the [Description](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.descriptionattribute?view=netframework-4.8) attribute and [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute's [Description](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.description?view=netframework-4.8) field. This description will be displayed in `PropertyGrid` Description panel while focusing the property or its value editor.
 
@@ -21,7 +21,6 @@ We can give a meaningful description about the properties by using the [Descript
 {% tabs %}
 {% highlight C# %}
 
-//Model.cs
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -66,7 +65,7 @@ public class ViewModel {
 
 PropertyGrid propertyGrid1 = new PropertyGrid();
 propertyGrid1.DataContext = new ViewModel();
-propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 propertyGrid1.DescriptionPanelVisibility = Visibility.Visible;
 propertyGrid1.DescriptionPanelHeight = new GridLength(50);
 
@@ -85,120 +84,11 @@ N> If you use both the `Description` attribute and `Description` field of the `D
 
  N> The Display attribute is contained in the [System.ComponentModel.Annotations.dll](https://www.nuget.org/packages/System.ComponentModel.Annotations/) assembly.
 
- Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-Name-Description) to download the sample that showcases the property `Description` support using attributes.
+ Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Name-Description) to download the sample that showcases the property `Description` support using attributes.
 
-## Changing Property Description at runtime
+## Change Property Description at runtime
 
-We can set the property description without using the attributes and can change the property description at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html)  event with [AutoGeneratingPropertyGridItemEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html).[Description](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Description.html) property.
-
-{% tabs %}
-{% highlight C# %}
-
-/// <summary>
-/// A class that represents the AutoGeneratingPropertyGridItem event to AutoGeneratingPropertyGridItem Command
-/// </summary>
-public class EventToCommandBehavior : Behavior<FrameworkElement> {
-    private Delegate _handler;
-    private EventInfo _oldEvent;
-
-    // Event
-    public string Event { 
-        get { return (string)GetValue(EventProperty); }
-        set { SetValue(EventProperty, value); }
-    }
-    public static readonly DependencyProperty EventProperty =
-        DependencyProperty.Register("Event", 
-        typeof(string),
-        typeof(EventToCommandBehavior), 
-        new PropertyMetadata(null, OnEventChanged));
-
-    // Command
-    public ICommand Command { 
-        get { return (ICommand)GetValue(CommandProperty); } 
-        set { SetValue(CommandProperty, value); }
-    }
-    public static readonly DependencyProperty CommandProperty =
-        DependencyProperty.Register("Command",
-        typeof(ICommand),
-        typeof(EventToCommandBehavior),
-        new PropertyMetadata(null));
-
-    // PassArguments (default: false)
-    public bool PassArguments { 
-        get { return (bool)GetValue(PassArgumentsProperty); }
-        set { SetValue(PassArgumentsProperty, value); } }
-    public static readonly DependencyProperty PassArgumentsProperty = 
-        DependencyProperty.Register("PassArguments",
-        typeof(bool), 
-        typeof(EventToCommandBehavior), 
-        new PropertyMetadata(false));
-
-    private static void OnEventChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
-        var beh = (EventToCommandBehavior)d;
-        if (beh.AssociatedObject != null) // is not yet attached at initial load
-            beh.AttachHandler((string)e.NewValue);
-    }
-
-    protected override void OnAttached() {
-        AttachHandler(this.Event); // initial set
-    }
-
-    /// <summary>
-    /// Attaches the handler to the event
-    /// </summary>
-    private void AttachHandler(string eventName) {
-        // detach old event
-        if (_oldEvent != null)
-            _oldEvent.RemoveEventHandler(this.AssociatedObject, _handler);
-
-        // attach new event
-        if (!string.IsNullOrEmpty(eventName)) {
-            EventInfo ei = this.AssociatedObject.GetType().GetEvent(eventName);
-            if (ei != null) {
-                MethodInfo mi = this.GetType().GetMethod("ExecuteCommand",
-                    BindingFlags.Instance | BindingFlags.NonPublic);
-                _handler = Delegate.CreateDelegate(ei.EventHandlerType, this, mi);
-                ei.AddEventHandler(this.AssociatedObject, _handler);
-                _oldEvent = ei; // store to detach in case the Event property changes
-            }
-            else
-                throw new ArgumentException(string.Format
-                    ("The event '{0}' was not found on type '{1}'", 
-                    eventName, this.AssociatedObject.GetType().Name));
-        }
-    }
-    private void ExecuteCommand(object sender, EventArgs e) {
-        object parameter = this.PassArguments ? e : sender;
-        if (this.Command != null) {
-            if (this.Command.CanExecute(parameter))
-                this.Command.Execute(parameter);
-        }
-    }
-}
-
-/// <summary>
-/// A clas that represents the Commend for the AutoGeneratingPropertyGridItem Event 
-/// </summary>
-class UpdaterValue : ICommand {
-    #region ICommand Members  
-    public bool CanExecute(object parameter) {
-        return true;
-    }
-    public event EventHandler CanExecuteChanged {
-        add { CommandManager.RequerySuggested += value; }
-        remove { CommandManager.RequerySuggested -= value; }
-    }
-    public void Execute(object parameter) {
-        //Descrition about the DOB properties is added.
-        if ((parameter as AutoGeneratingPropertyGridItemEventArgs).DisplayName == "DOB") {
-            (parameter as AutoGeneratingPropertyGridItemEventArgs).Description ="Birth date of the Employee";
-        }      
-    }
-    #endregion
-}
-
-{% endhighlight %} 
-{% endtabs %} 
+We can set the property description without using the attributes and can change the property description at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html)  event with [AutoGeneratingPropertyGridItemEventArgs.Description](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs~Description.html) property.
 
 {% tabs %}
 {% highlight C# %}
@@ -215,19 +105,8 @@ public class Employee {
 }
 
 public class ViewModel {
-    private ICommand autoGeneratingPropertyGridItemEventCommand;
     public object SelectedEmployee { get; set; }
 
-    //Command for the AutoGeneratingPropertyGridItemEvent
-    public ICommand AutoGeneratingPropertyGridItemEventCommand {
-        get { if (autoGeneratingPropertyGridItemEventCommand == null)
-                autoGeneratingPropertyGridItemEventCommand = new UpdaterValue();
-              return autoGeneratingPropertyGridItemEventCommand;
-        }
-        set {
-            autoGeneratingPropertyGridItemEventCommand = value;
-        }
-    }
     public ViewModel() {
         SelectedEmployee = new Employee()
         {
@@ -245,19 +124,38 @@ public class ViewModel {
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid SelectedObject="{Binding IsAsync=True, Path=SelectedEmployee}" 
-                         DescriptionPanelVisibility="Visible"
-                         x:Name="propertyGrid1" >
+<syncfusion:PropertyGrid AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem"
+                         DescriptionPanelVisibility="Visible" 
+                         DescriptionPanelHeight="50"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
     <syncfusion:PropertyGrid.DataContext>
         <local:ViewModel></local:ViewModel>
     </syncfusion:PropertyGrid.DataContext>
-    <i:Interaction.Behaviors>
-        <local:EventToCommandBehavior PassArguments="true" 
-            Event="AutoGeneratingPropertyGridItem" 
-            Command="{Binding Path=AutoGeneratingPropertyGridItemEventCommand}" />
-    </i:Interaction.Behaviors>
 </syncfusion:PropertyGrid>
 
+{% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.AutoGeneratingPropertyGridItem += PropertyGrid1_AutoGeneratingPropertyGridItem;
+propertyGrid1.DescriptionPanelVisibility = Visibility.Visible;
+propertyGrid1.DescriptionPanelHeight = new GridLength(50);
+
+{% endhighlight %} 
+{% endtabs %} 
+
+{% tabs %}
+{% highlight C# %}
+
+private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e) {
+    //Description about the DOB properties is added.
+    if (e.DisplayName == "DOB") {
+        e.Description = "Birth date of the Employee";
+    }
+}
 
 {% endhighlight %} 
 {% endtabs %} 
@@ -266,4 +164,4 @@ public class ViewModel {
 
 Here, the `DOB` property description is added by the `AutoGeneratingPropertyGridItemEventArgs.Description` property of the `AutoGeneratingPropertyGridItem` event, not by any attributes.
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/PropertyGrid-AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Description` support using `AutoGeneratingPropertyGridItem` event.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property `Description` support using `AutoGeneratingPropertyGridItem` event.
