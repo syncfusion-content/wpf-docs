@@ -38,13 +38,13 @@ for(int i = 0; i < gridcontrol.Model.ColumnCount; i++)
 
 {% endhighlight %}
 
-{% endtabs}
+{% endtabs %}
 
 ![ToolTip for specific cell in WPF GridControl](Tooltip_images/show-tooltip-cell.png)
 
 ## ToolTip for row and column
 
-ToolTip can be displayed for any row or colummn by setting the `ShowToolTip` and ToolTip text can be customized by setting the `ToolTip`.
+ToolTip can be displayed for any row or column by setting the `ShowToolTip` and ToolTip text can be customized by setting the `ToolTip`.
 
 {% tabs %}
 
