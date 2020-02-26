@@ -30,11 +30,8 @@ ToolTip can be displayed for any cell by setting [ShowToolTip](https://help.sync
 GridTooltipService.SetShowTooltips(gridcontrol, true);
 
 //Set tooltip for particular cell.
-for(int i = 0; i < gridcontrol.Model.ColumnCount; i++)
-{
-    gridcontrol.Model[1, 1].ToolTip = " Grid (" + gridcontrol.Model[1, 1].CellValue +") ";
-    gridcontrol.Model[1, 1].ShowTooltip = true;
-}
+gridcontrol.Model[1, 1].ToolTip = " Grid (" + gridcontrol.Model[1, 1].CellValue +") ";
+gridcontrol.Model[1, 1].ShowTooltip = true;
 
 {% endhighlight %}
 
@@ -192,7 +189,7 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ## Customize the ToolTip
 
-You can customize the appearance of ToolTip for a particular cell or row or column by setting the `DataTemplate` key to [GridStyleInfo.ToolTipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplateKey.html) property.
+You can customize the appearance of ToolTip for a particular cell or row or column by setting the `DataTemplate` key to [GridStyleInfo.ToolTipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplateKey.html) or [GridStyleInfo.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplate.html) property.
 
 **Using ToolTipTemplateKey**
 
