@@ -219,9 +219,11 @@ gridcontrol.Model[1, 1].TooltipTemplateKey = "tooltipTemplate1";
 //Using QueryCellInfo event
 private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-    e.Style.TooltipTemplateKey = "tooltipTemplate1";
     if (e.Cell.RowIndex == 1 && e.Cell.ColumnIndex == 1)
+    {
         e.Style.ToolTip = " Grid (" + e.Cell.RowIndex + "," + e.Cell.ColumnIndex + ") ";
+        e.Style.TooltipTemplateKey = "tooltipTemplate1";
+    }
 }
 
 {% endhighlight %}
@@ -256,9 +258,12 @@ gridcontrol.Model[1, 1].TooltipTemplate = (DataTemplate)this.Resources["tooltipT
 //Using QueryCellInfo event
 private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-    e.Style.TooltipTemplate = (DataTemplate)this.Resources["tooltipTemplate1"];
+    
     if (e.Cell.RowIndex == 1 && e.Cell.ColumnIndex == 1)
+    {
         e.Style.ToolTip = " Grid (" + e.Cell.RowIndex + "," + e.Cell.ColumnIndex + ") ";    
+        e.Style.TooltipTemplate = (DataTemplate)this.Resources["tooltipTemplate1"];
+    }
 }
 
 {% endhighlight %}
