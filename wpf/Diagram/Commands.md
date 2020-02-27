@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion | Explore the frequently used inbuilt commands.
-description:  How to explore and use the inbuilt commands?
+description:  How to explore and use the inbuilt commands to align, position, sizing, grouping, ordering, scaling, serialize the diagram objects in easy way?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -44,7 +44,7 @@ The Alignment commands as follows.
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
-// sets direction as Top
+//sets direction as Top
 graphinfo.Commands.AlignTop.Execute(null);
 
 {% endhighlight %}
@@ -59,10 +59,10 @@ Spacing commands enable you to place selected objects on the page at equal inter
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-// Equally spaces the selected nodes horizontally
+//Equally spaces the selected nodes horizontally
 graphinfo.Commands.SpaceAcross.Execute(null);
 
-// Equally spaces the selected nodes vertically
+//Equally spaces the selected nodes vertically
 graphinfo.Commands.SpaceDown.Execute(null);
 
 {% endhighlight %}
@@ -145,7 +145,7 @@ If the parameter is null, the object will be flipped both horizontally and verti
 {% tabs %}
 {% highlight C# %}
 
-// Apply flip to selected objects.
+//Apply flip to selected objects.
 (diagramcontrol.Info as IGraphInfo).Commands.Flip.Execute(null);
 
 {% endhighlight %}
@@ -181,7 +181,7 @@ The SendToBack command visually moves the selected elements behind all the other
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-// Send To Back
+//Send To Back
 graphinfo.Commands.SendToBack.Execute(null);
 
 {% endhighlight %}
@@ -198,7 +198,7 @@ The SendBackward command visually moves the selected elements behind the underly
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-// Send To Backward
+//Send To Backward
 graphinfo.Commands.SendBackward.Execute(null);
 
 {% endhighlight %}
@@ -213,7 +213,7 @@ The BringForward command visually moves the selected element over the nearest ov
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-// Brings To Forward
+//Brings To Forward
 graphinfo.Commands.BringForward.Execute(null);
 
 {% endhighlight %}
@@ -232,7 +232,7 @@ To execute zoom commands, parameters of type IZoomParameter ([IZoomManipulationP
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-// Zoom to a particular scale.
+//Zoom to a particular scale.
 graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter() 
 { 
 	ZoomTo = 2, ZoomCommand = ZoomCommand.ZoomOut 
@@ -276,10 +276,10 @@ diagram.Constraints |= GraphConstraints.Undoable;
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-// To perform the Undo action in Diagram
+//To perform the Undo action in Diagram
 graphinfo.Commands.Undo.Execute(null);
 
-// To Perform the Redo action in Diagram
+//To Perform the Redo action in Diagram
 graphinfo.Commands.Redo.Execute(null);
 
 {% endhighlight %}
@@ -301,7 +301,7 @@ Nudge commands move the selected elements towards up, down, left or right by 1 p
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
-// Nudge up the selected objects
+//Nudge up the selected objects
 graphinfo.Commands.MoveUp.Execute(null);
 
 {% endhighlight %}
@@ -316,7 +316,7 @@ If the parameter is null, entire Diagram is fit into the view.
 {% highlight C# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
-// To fit the Diagram into the view
+//To fit the Diagram into the view
 graphinfo.Commands.FitToPage.Execute(null);
 
 {% endhighlight %}
@@ -379,28 +379,27 @@ The [GestureCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF
 
 The following code example represents how to define custom command to Save Command (Control + S).
 
-
 {% tabs %}
 {% highlight C# %}
 
- // To define the mouse and keyboard gesture for the commands
-            GestureCommand saveGesture = new GestureCommand()
-            {
-                // Define the command with custom command
-                Command = Save,
-                // Define gesture for custom Command
-                Gesture = new Gesture
-                {
-                    KeyModifiers = ModifierKeys.Control,
-                    KeyState = KeyStates.Down,
-                    Key = Key.S
-                },
-                // Parameter for command - file name for save command
-                Parameter = "diagram"
-            };
+//To define the mouse and keyboard gesture for the commands
+GestureCommand saveGesture = new GestureCommand()
+{
+    //Define the command with custom command
+    Command = Save,
+    //Define gesture for custom Command
+    Gesture = new Gesture
+    {
+        KeyModifiers = ModifierKeys.Control,
+        KeyState = KeyStates.Down,
+        Key = Key.S
+    },
+    //Parameter for command - file name for save command
+    Parameter = "diagram"
+};
 
-            // Add the custom command to the existsing command collection.
-            diagram.CommandManager.Commands.Add(saveGesture);
+//Add the custom command to the existsing command collection.
+diagram.CommandManager.Commands.Add(saveGesture);
 {% endhighlight %}
 {% endtabs %}
 

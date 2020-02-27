@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Basic Shapes with Syncfusion Essential Diagram for WPF.
-description: How do add different shapes to diagram 
+title: Basic Shapes Essential Diagram for WPF | Syncfusion.
+description: How to create collection of symbol pallate to have different shapes to diagram and how to use them in the diagram page?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -16,12 +16,11 @@ The following code example illustrates how to merge shapes into diagram.
 {% tabs %}
 {% highlight xaml %}
 <ResourceDictionary.MergedDictionaries>
-       <!--Initialize Shapes-->
-       <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml" />
+    <!--Initialize Shapes-->
+    <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml" />
 </ResourceDictionary.MergedDictionaries>  
 {% endhighlight %}
 {% endtabs %}
-
 
 ## Basic Shapes
 
@@ -48,7 +47,9 @@ The following code example illustrates how to assign Shape property of the Node.
     <syncfusion:SfDiagram.Nodes>
         <syncfusion:NodeCollection>
             <!--Add Node with basic shape-->
-            <syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth=" 100" OffsetX="100" OffsetY="100"                      Shape="{StaticResource Rectangle}"/>  
+            <syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth="100" 
+                                      OffsetX="100" OffsetY="100" 
+                                      Shape="{StaticResource Rectangle}"/>  
         </syncfusion:NodeCollection>
     </syncfusion:SfDiagram.Nodes>
 </syncfusion:SfDiagram>
@@ -60,13 +61,13 @@ SfDiagram diagram = new SfDiagram();
 
 //Initialize the NodeViewModel
 NodeViewModel node = new NodeViewModel()
-    {
-        UnitHeight = 100,
-        UnitWidth = 100,
-        OffsetX = 100,
-        OffsetY = 100,
-        Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-    };
+{
+    UnitHeight = 100,
+    UnitWidth = 100,
+    OffsetX = 100,
+    OffsetY = 100,
+    Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
+};
 
 // Add the node into Nodes collection
 (diagram.Nodes as NodeCollection).Add(node);
@@ -75,9 +76,9 @@ NodeViewModel node = new NodeViewModel()
 
 Output Node will be,
 
- ![Shapes_image1](Shapes_images\Shapes_image1.PNG)
+![Shapes_image1](Shapes_images\Shapes_image1.PNG)
   
- The list of shapes are available in the resource dictionary as follows
+The list of shapes are available in the resource dictionary as follows
  
 | Shape Category | Shape Name | Output Shape |
 |---|---|---|

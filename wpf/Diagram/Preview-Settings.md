@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion Diagram supports to edit nodes and connectors at runtime.
-description: How to select and edit nodes and connectors during runtime?
+description: How to select and edit nodes and connectors during runtime and how to arrange the node and connectors while dragging?
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -35,10 +35,27 @@ Appearance of the preview can be modified using `PreviewStyle` property of `Prev
 
 var previewStyle = new Style();
 previewStyle.TargetType = typeof(Shape);
-previewStyle.Setters.Add(new Setter() { Property = Shape.StrokeProperty, Value = new SolidColorBrush(Colors.CornflowerBlue) });
-previewStyle.Setters.Add(new Setter() { Property = Shape.StrokeThicknessProperty, Value = 1.5 });
-previewStyle.Setters.Add(new Setter() { Property = Shape.StrokeDashArrayProperty, Value = new DoubleCollection { 3, 3 } });
-this.diagram.PreviewSettings = new PreviewSettings() { PreviewMode = PreviewMode.Preview, ConnectorRefreshingSpan = 300, PreviewStyle = previewStyle };
+previewStyle.Setters.Add(new Setter() 
+{ 
+    Property = Shape.StrokeProperty, 
+    Value = new SolidColorBrush(Colors.CornflowerBlue) 
+});
+previewStyle.Setters.Add(new Setter()
+{
+    Property = Shape.StrokeThicknessProperty, 
+    Value = 1.5
+});
+previewStyle.Setters.Add(new Setter()
+{ 
+    Property = Shape.StrokeDashArrayProperty, 
+    Value = new DoubleCollection { 3, 3 }
+});
+this.diagram.PreviewSettings = new PreviewSettings() 
+{ 
+    PreviewMode = PreviewMode.Preview, 
+    ConnectorRefreshingSpan = 300, 
+    PreviewStyle = previewStyle
+};
 
 {% endhighlight %}
 {% endtabs %}
