@@ -113,7 +113,7 @@ Hexadecimal color values are also supported in ColorPicker, the built-in textbox
 
 {% highlight C# %}
 
- IsColorPaletteVisible.IsColorPaletteVisible = true;
+ colorPicker.IsColorPaletteVisible = true;
 
 {% endhighlight %}
 {% endtabs %}

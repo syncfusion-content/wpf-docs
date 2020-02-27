@@ -7,7 +7,6 @@ control: ColorPicker
 documentation: ug
 ---
 
-
 # Getting Started with ColorPicker
 
 This section explains how to create a WPF [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) and explains about its structure.
@@ -177,13 +176,14 @@ colorPicker.Color = Colors.Yellow;
 {% highlight c# %}
 
 LinearGradientBrush linearGradient = new LinearGradientBrush();
-linearGradient.StartPoint = new Point(0.5, 0);
-linearGradient.EndPoint = new Point(0.5, 1);
+linearGradient.StartPoint = new Point(0, 0);
+linearGradient.EndPoint = new Point(1, 1);
 linearGradient.GradientStops.Add(new GradientStop(Colors.Yellow, 0.0));
 linearGradient.GradientStops.Add(new GradientStop(Colors.Red, 0.25));
 linearGradient.GradientStops.Add(new GradientStop(Colors.Blue, 0.75));
 linearGradient.GradientStops.Add(new GradientStop(Colors.LimeGreen, 1.0));
 
+//Assiging a linear gradient brush for ColorPicker
 colorPicker.Brush = linearGradient;
 
 {% endhighlight %}
@@ -255,23 +255,22 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 
 ## Disable gradient editor
 
-Transition from Solid to Gradient brush can be restricted using [IsGradientPropertyEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsGradientPropertyEnabled.html) properties.
+Transition from Solid to Gradient brush can be restricted using [IsGradientPropertyEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsGradientPropertyEnabled.html) properties. The Default value of 
 
-The following code examples illustrate this:
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPicker x:Name="colorPicker" IsGradientEditorEnabled="false"/>
+<syncfusion:ColorPicker x:Name="colorPicker" IsGradientPropertyEnabled="false"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 ColorPicker colorPicker = new ColorPicker ();
-colorPicker. IsGradientEditorEnabled =  false;
+colorPicker.IsGradientPropertyEnabled = false;
 
 {% endhighlight %}
 {% endtabs %}
 
-![when EnableSolidToGradientSwitch property is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_IsGradientPropertyEnabled.png)
+![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_IsGradientPropertyEnabled.png)
