@@ -135,27 +135,3 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 
 {% endhighlight %}
 {% endtabs %}
-
-## Tooltip
-
-ColorPicker support to show selected color via Tooltip while hovering through the color palette, this can be enabled using [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~EnableToolTip.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:ColorPicker  Width="300" EnableToolTip="True"  Name="colorpicker"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-ColorPicker colorPicker = new ColorPicker();
-
-colorPicker.EnableToolTip = true;
-
-this.Content = colorPicker;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPicker with TooTip support](Selection-Mode_images/ColorPicker_Tooltip.png)

@@ -262,25 +262,25 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 
 ## Switch between Solid, Linear and Gradient brush mode
 
-We can change the brush mode directly by clicking on the corresponding Solid, Linear or Gradient mode buttons which are placed in the bottom right corner of the `ColorPicker`. We can restrict brush mode switching by setting the [IsGradientPropertyEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsGradientPropertyEnabled.html) property value as `false`.  It will hide the Solid, Linear and Gradient brush buttons.
+We can change the brush mode directly by clicking on the corresponding Solid, Linear or Gradient mode buttons which are placed in the bottom right corner of the `ColorPicker`. We can restrict brush mode switching at runtime by setting the [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~EnableSolidToGradientSwitch.html) property value as `false`.  It will hide the Solid, Linear and Gradient brush buttons.
 
 ![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/ColorPicker_Switch_brushes.gif)
 
-**IsGradientPropertyEnabled == false**
+**EnableSolidToGradientSwitch == false**
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPicker x:Name="colorPicker" IsGradientPropertyEnabled="false"/>
+<syncfusion:ColorPicker x:Name="colorPicker" EnableSolidToGradientSwitch="false"/>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 ColorPicker colorPicker = new ColorPicker ();
-colorPicker.IsGradientPropertyEnabled = false;
+colorPicker.EnableSolidToGradientSwitch = false;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_IsGradientPropertyEnabled.png)
+![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_EnableSolidToGradientSwitch.png)
