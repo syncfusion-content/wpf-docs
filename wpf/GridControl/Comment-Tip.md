@@ -56,7 +56,7 @@ for (int i = 1; i < 4; i++)
 
 ![CommentTip for specific row or column in WPF GridControl](Commenttip_images/show-commenttip-column.png)
 
-## Change comment inidcator position
+## Change comment indicator position
 
 You can change the comment indicator at any position in a specific cell or row or column by using `GridCommentStyleInfo`. For example, you set the comment indicator at top position in any cell by using [GridCommentStyleInfo.TopLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftComment.html) or [GridCommentStyleInfo.TopRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopRightComment.html) properties.
 
