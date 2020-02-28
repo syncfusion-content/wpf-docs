@@ -30,17 +30,18 @@ ToolTip can be displayed for any cell by setting [ShowToolTip](https://help.sync
 GridTooltipService.SetShowTooltips(gridcontrol, true);
 
 //Set tooltip for particular cell.
-for(int i = 0; i < gridcontrol.Model.ColumnCount; i++)
-{
-    gridcontrol.Model[1, 1].ToolTip = " Grid (" + gridcontrol.Model[1, 1].CellValue +") ";
-    gridcontrol.Model[1, 1].ShowTooltip = true;
-}
+gridcontrol.Model[1, 1].ToolTip = " Grid (" + gridcontrol.Model[1, 1].CellValue +") ";
+gridcontrol.Model[1, 1].ShowTooltip = true;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![ToolTip for specific cell in WPF GridControl](Tooltip_images/show-tooltip-cell.png)
 
 ## ToolTip for row and column
 
-ToolTip can be displayed for any row or colummn by setting the `ShowToolTip` and ToolTip text can be customized by setting the `ToolTip`.
+ToolTip can be displayed for any row or column by setting the `ShowToolTip` and ToolTip text can be customized by setting the `ToolTip`.
 
 {% tabs %}
 
@@ -137,6 +138,10 @@ private void Gridcontrol_CellToolTipOpening(object sender, GridCellToolTipOpenin
         grids.Model[e.Cell.RowIndex, e.Cell.ColumnIndex].ToolTip = "Hello";
 }
 
+{% endhighlight %}
+
+{% endtabs %}
+
 ![Change the ToolTip text at run time in WPF GridControl](Tooltip_images/show-tooltip-openingevent.png)
 
 ## Show ToolTip for disabled cell
@@ -176,11 +181,15 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
     }
 }
 
+{% endhighlight %}
+
+{% endtabs %}
+
 ![Highlight the row applied to ToolTip in WPF GridControl](ToolTip_images/show-tooltip-highlight.png)
 
 ## Customize the ToolTip
 
-You can customize the appearance of ToolTip for a particular cell or row or column by setting the `DataTemplate` key to [GridStyleInfo.ToolTipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplateKey.html) property.
+You can customize the appearance of ToolTip for a particular cell or row or column by setting the `DataTemplate` key to [GridStyleInfo.ToolTipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplateKey.html) or [GridStyleInfo.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplate.html) property.
 
 **Using ToolTipTemplateKey**
 
@@ -210,9 +219,11 @@ gridcontrol.Model[1, 1].TooltipTemplateKey = "tooltipTemplate1";
 //Using QueryCellInfo event
 private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-    e.Style.TooltipTemplateKey = "tooltipTemplate1";
     if (e.Cell.RowIndex == 1 && e.Cell.ColumnIndex == 1)
+    {
         e.Style.ToolTip = " Grid (" + e.Cell.RowIndex + "," + e.Cell.ColumnIndex + ") ";
+        e.Style.TooltipTemplateKey = "tooltipTemplate1";
+    }
 }
 
 {% endhighlight %}
@@ -247,9 +258,12 @@ gridcontrol.Model[1, 1].TooltipTemplate = (DataTemplate)this.Resources["tooltipT
 //Using QueryCellInfo event
 private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {
-    e.Style.TooltipTemplate = (DataTemplate)this.Resources["tooltipTemplate1"];
+    
     if (e.Cell.RowIndex == 1 && e.Cell.ColumnIndex == 1)
+    {
         e.Style.ToolTip = " Grid (" + e.Cell.RowIndex + "," + e.Cell.ColumnIndex + ") ";    
+        e.Style.TooltipTemplate = (DataTemplate)this.Resources["tooltipTemplate1"];
+    }
 }
 
 {% endhighlight %}
