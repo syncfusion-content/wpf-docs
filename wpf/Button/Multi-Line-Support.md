@@ -14,7 +14,7 @@ ButtonAdv control has the option to display the multiple lines of text using boo
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv x:Name="ButtonAdv" IsMultiLine="True"  Width="85" Height="85" IconHeight="35" IconWidth="35" Label="Hello World!" SizeMode="Large" />
+<syncfusion:ButtonAdv x:Name="ButtonAdv" IsMultiLine="True"  Width="75" Height="75" IconHeight="35" IconWidth="35" Label="Hello World!" SizeMode="Large" />
 
 {% endhighlight %}
 {% endtabs %}
