@@ -1442,50 +1442,29 @@ N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-dem
 
 ## DataTemplate cell type
 
-The cell is specified as "DataBoundTemplate", that cell can not be changed or edited.
+The cell is specified as "DataBoundTemplate", that cell can not be changed or edited. You can show the cell information or text by setting the `DataTemplate` key to [GridStyleInfo.CellItemTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CellItemTemplateKey.html) property.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<DataTemplate x:Key="TextTemplate">
-    <Border BorderBrush="LightSlateGray"
+<Window.Resources>
+    <DataTemplate x:Key="TextTemplate">
+        <Border BorderBrush="LightSlateGray"
             BorderThickness="2"
             CornerRadius="2">
-        <TextBlock Text="{Binding CellBoundValue}" ToolTip="{Binding CellBoundValue}" />
-    </Border>
-</DataTemplate>
-<DataTemplate x:Key="ProgressbarTemplate">
-    <ProgressBar Foreground="Orange"
-                 Background="Linen"
-                 Maximum="20"
-                 Minimum="0"
-                 ToolTip="{Binding CellBoundValue}"
-                 Value="{Binding CellBoundValue}" />
-</DataTemplate>
+            <TextBlock Text="{Binding CellBoundValue}" ToolTip="{Binding CellBoundValue}" />
+        </Border>
+    </DataTemplate>
+</Window.Resources>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-for (int row = 0; row <= 14; row++)
-{
-    for (int coll = 0; coll <= 7; coll++)
-    {
-        if (coll == 2 && row > 0)
-        {
-            gridcontrol.Model[row, coll].CellType = "DataBoundTemplate";
-            gridcontrol.Model[row, coll].CellItemTemplateKey = "TextTemplate";
-            gridcontrol.Model[row, coll].CellValue = gridcontrol.Model[row, coll].RowIndex;            
-        }
-        if (coll == 4 && row > 0)
-        {
-            gridcontrol.Model[row, coll].CellType = "DataBoundTemplate";
-            gridcontrol.Model[row, coll].CellItemTemplateKey = "ProgressbarTemplate";
-            gridcontrol.Model[row, coll].CellEditTemplateKey = "ProgressbarTemplate";
-        }
-    }
-}
+gridcontrol.Model[2, 2].CellType = "DataBoundTemplate";
+gridcontrol.Model[2, 2].CellItemTemplateKey = "TextTemplate";
+gridcontrol.Model[2, 2].CellValue = gridcontrol.Model[2, 2].RowIndex;            
 
 {% endhighlight %}
 
