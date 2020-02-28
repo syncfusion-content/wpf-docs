@@ -322,10 +322,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Editable Combo Box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img2.jpeg)
 
 **Setting Up Autocomplete ComboBox** 
@@ -351,10 +347,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 {% endhighlight %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Autocomplete Combo box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img3.jpeg)
 
@@ -382,10 +374,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Exclusive Combo box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img4.jpeg)
 
 #### Using ItemsSource
@@ -404,9 +392,6 @@ combo1.DropDownStyle = GridDropDownStyle.Editable;
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
 
 ![Editable Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img5.jpeg)
 
@@ -424,9 +409,6 @@ combo2.ValueMember = "EmployeeID";
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
 
 ![Autocomplete Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img6.jpeg)
 
@@ -441,10 +423,6 @@ combo3.ItemsSource = northWind.Employees.Select(emp => emp.FirstName).ToList();
 combo3.DropDownStyle = GridDropDownStyle.Exclusive;
 {% endhighlight  %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Exclusive Combo box using ItemsSource in WPF GridControl](Cell-Types_images/Cell-Types_img7.jpeg)
 
@@ -475,9 +453,6 @@ dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
 
 ![Editable Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img8.jpeg)
 
@@ -501,10 +476,6 @@ dropdown2.DropDownStyle = GridDropDownStyle.AutoComplete;
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Autocomplete Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img9.jpeg)
 
 Exclusive Drop-down List Bound to LINQ Source with FirstName as its DisplayMember.
@@ -525,10 +496,6 @@ dropdown3.DisplayMember = "FirstName";
 dropdown3.DropDownStyle = GridDropDownStyle.Exclusive;
 {% endhighlight  %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Exclusive Drop-down List Control in WPF GridControl](Cell-Types_images/Cell-Types_img10.jpeg)
 
@@ -664,10 +631,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Datetime celltype in WPF GridControl](Cell-Types_images/Cell-Types_img14.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Date%20Time%20Cell)
@@ -753,10 +716,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Currency celltype in WPF GridControl](Cell-Types_images/Cell-Types_img11.jpeg)
 
 Currency Cell with a Negative Currency Value and a Different Negative Pattern
@@ -801,10 +760,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Currency value with nagative pattern in WPF GridControl](Cell-Types_images/Cell-Types_img12.jpeg)
 
 Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separator and ‘$’ as Currency Symbol
@@ -846,10 +801,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 {% endhighlight  %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Currency Cell with a Positive Value in WPF GridControl](Cell-Types_images/Cell-Types_img13.jpeg)
 
@@ -981,10 +932,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Doubleedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img15.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Double%20Edit%20Cell)
@@ -1074,10 +1021,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 {% endhighlight %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Integeredit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img16.jpeg)
 
@@ -1189,10 +1132,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Percentedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img18.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Percent%20Edit%20Cell)
@@ -1251,10 +1190,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 {% endhighlight %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Maskedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img17.jpeg)
 
@@ -1384,10 +1319,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 {% endhighlight %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Updownedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img20.jpeg)
 
@@ -1520,10 +1451,6 @@ Model[40, 2].CellValue = nestedGrid;
 CoveredCells.Add(new CoveredCellInfo(40, 2, 49, 5));
 {% endhighlight  %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Nestedgrid in WPF GridControl](Cell-Types_images/Cell-Types_img21.jpeg)
 
@@ -1744,10 +1671,6 @@ return model;
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Nested grid-rows tied to the parent grid rows in WPF GridControl](Cell-Types_images/Cell-Types_img22.jpeg)
 
 Nested Grid Inside a Covered Range with its Columns Tied to the Columns of the Parent Grid
@@ -1844,12 +1767,6 @@ return model;
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
-
-
 ![Nested grid-columns tied to the parent grid columns in WPF GridControl](Cell-Types_images/Cell-Types_img23.jpeg)
 
 Nested Grid Inside a Covered Range with its Rows and Columns Independent of Parent Grid
@@ -1896,10 +1813,6 @@ for (int n = 0; n < model.RowCount; n++)
 Model[6, 2].CellValue = model;
 {% endhighlight  %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Nested grid-rows and columns independent of parent grid in WPF GridControl](Cell-Types_images/Cell-Types_img24.jpeg)
 
@@ -2055,10 +1968,6 @@ dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
-
 ![Cutom drop-down in WPF GridControl](Cell-Types_images/Cell-Types_img26.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Custom%20Drop%20Down)
@@ -2177,11 +2086,6 @@ void Model_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQue
 }
 {% endhighlight  %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
-
 
 
 ![Data template with cell template assigned in WPF GridControl](Cell-Types_images/Cell-Types_img27.jpeg)
@@ -2317,9 +2221,6 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 {% endhighlight %}
 {% endtabs %}
 
-#### Output
-
-The following output is generated using the code above.
 
 ![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img28.jpeg)
 
@@ -2409,10 +2310,6 @@ cell.CellItemTemplateKey = "DataChart";
 grid.Model.RowHeights[2] = 400d;
 {% endhighlight  %}
 {% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
 
 ![Chart cell in WPF GridControl](Cell-Types_images/Cell-Types_img29.jpeg)
 
