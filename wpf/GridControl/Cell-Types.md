@@ -96,6 +96,11 @@ UpDownEdit</td><td>
 Used to increase or decrease the cell values</td></tr>
 <tr>
 <td>
+DataTemplate</td><td>
+“DataBoundTemplate”</td><td>
+used for cell cannot be changed or edited/td></tr>
+<tr>
+<td>
 NestedGrid</td><td>
 “ScrollGrid”</td><td>
 Used to display the multiple scroller in row and column</td></tr>
@@ -106,9 +111,7 @@ Used to display the multiple scroller in row and column</td></tr>
 
 This section elaborates you on how to employ basic controls like Check Box, Radio Button and more in a grid cell.
 
-To set up desired cell type, the [Style.CellType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CellType.html) property must be assigned with the corresponding format string. 
-
-The list of cell types and their usages are described below.
+To set up desired cell type, the [Style.CellType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CellType.html) property must be assigned with the corresponding format string. The list of cell types and their usages are described below.
 
 ## Header cell type
 
@@ -120,6 +123,12 @@ A header cell type is used as row and column headers in the grid cell.
 
 var style = gridcontrol.Model[1, 2];
 style.CellType = "Header";
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    e.Style.GridModel[1, 2].CellType = "Header";
+}
 
 {% endhighlight %}
 
@@ -136,6 +145,12 @@ The cell is specified as ' Static', that cell can not be changed or edited.
 var style = gridcontrol.Model[1, 2];
 style.CellType = "Static";
 
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    e.Style.GridModel[1, 2].CellType = "Static";
+}
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -150,6 +165,12 @@ The Checkbox cell type is used for toggling options. For instance, if you want t
 
 var style = gridControl1.Model[1, 2];
 style.CellType = "CheckBox";
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    e.Style.GridModel[1, 2].CellType = "CheckBox";
+}
 
 {% endhighlight %}
 
@@ -169,6 +190,18 @@ The cell type is used to the cell is changed as a button. It provides click even
 
 var style = gridControl1.Model[1, 2];
 style.CellType = "Button";
+gridcontrol.CellButtonClick += Gridcontrol_CellButtonClick;
+
+private void Gridcontrol_CellButtonClick(object sender, GridCellButtonClickEventArgs e)
+{
+    MessageBox.Show("Clicked");
+}
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    e.Style.GridModel[1, 2].CellType = "Button";
+}
 
 {% endhighlight %}
 
@@ -253,10 +286,11 @@ Combo-boxes can be added to the Grid in two different ways as follows:
 
 Let us see how to build different kinds of combo boxes using ChoiceList. This allows you to customize the options to be displayed in a drop-down.
 
-Setting Up an Editable Combo Box 
+**Setting Up an Editable ComboBox** 
 
 {% tabs %}
 {% highlight c# %}
+
 StringCollection list = new StringCollection();
 list.Add("One");
 list.Add("Two");
@@ -269,7 +303,23 @@ var combo1 = this.grid.Model[1, 2];
 combo1.CellType = "ComboBox";
 combo1.ChoiceList = list;
 combo1.DropDownStyle = GridDropDownStyle.Editable;
-{% endhighlight  %}
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    StringCollection collection = new StringCollection();
+    collection.Add("list1");
+    collection.Add("list2");
+    collection.Add("list3");
+    
+    //Editable ComboBox
+    var combo = e.Style.GridModel[1, 2];
+    combo.CellType = "ComboBox";
+    combo.ChoiceList = collection;
+    combo.DropDownStyle = GridDropDownStyle.Editable;
+}
+
+{% endhighlight %}
 {% endtabs %}
 
 #### Output
@@ -278,15 +328,27 @@ The following output is generated using the code above.
 
 ![Editable Combo Box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img2.jpeg)
 
-Setting Up Autocomplete Combo Box 
+**Setting Up Autocomplete ComboBox** 
 
 {% tabs %}
 {% highlight c# %}
+
 //Autocomplete combo
-var combo2 = this.grid.Model[2, 2];
+var combo2 = this.grid.Model[1, 2];
 combo2.CellType = "ComboBox";
 combo2.ChoiceList = list;
 combo2.DropDownStyle = GridDropDownStyle.AutoComplete;
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    //AutoComplete ComboBox
+    var combo = e.Style.GridModel[1, 2];
+    combo.CellType = "ComboBox";
+    combo.ChoiceList = collection;
+    combo.DropDownStyle = GridDropDownStyle.AutoComplete;
+}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -296,15 +358,27 @@ The following output is generated using the code above.
 
 ![Autocomplete Combo box using ChoiceList in WPF GridControl](Cell-Types_images/Cell-Types_img3.jpeg)
 
-Setting Up Exclusive Combo Box 
+**Setting Up Exclusive ComboBox** 
 
 {% tabs %}
 {% highlight c# %}
+
 //Exclusive Combo
-var combo3 = this.grid.Model[3, 2];
+var combo3 = this.grid.Model[1, 2];
 combo3.CellType = "ComboBox";
 combo3.ChoiceList = list;
 combo3.DropDownStyle = GridDropDownStyle.Exclusive;
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    //Exclusive ComboBox
+    var combo = e.Style.GridModel[1, 2];
+    combo.CellType = "ComboBox";
+    combo.ChoiceList = collection;
+    combo.DropDownStyle = GridDropDownStyle.Exclusive;
+}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -460,129 +534,6 @@ The following output is generated using the code above.
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Combo%20Box%20Cell)
 
-## CurrencyEdit cell type
-
-This cell type can be used to represent monetary values to achieve accuracy in the calculations. It will stripe the currency sign in the cell and attempt to parse only the number from the input. Use the GridStyleInfo properties below to customize these cells.
-
-<table>
-<tr>
-<th>
-GridStyleInfo Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Cell Type</td><td>
-Set to “CurrencyEdit”.</td></tr>
-<tr>
-<td>
-CurrencyDecimalDigits</td><td>
-Number of decimal places in currency value.</td></tr>
-<tr>
-<td>
-CurrencyDecimalSeparator</td><td>
-String to use as decimal separator.</td></tr>
-<tr>
-<td>
-CurrencyNegativePattern</td><td>
-Format pattern for negative currency values.</td></tr>
-<tr>
-<td>
-CurrencyPositivePattern</td><td>
-Format pattern for positive currency values.</td></tr>
-<tr>
-<td>
-CurrencySymbol</td><td>
-String to use as currency symbol.</td></tr>
-<tr>
-<td>
-CurrencyGroupSizes</td><td>
-Number of digits in each group to the left of the decimal.</td></tr>
-</table>
-
-
-Creating a Currency Cell with a Negative Currency Value with ‘.’ as the Decimal Separator. 
-
-{% tabs %}
-{% highlight c# %}
-int[] sizes = { 2, 3, 4 };   
-grid.Model[6, 2].CellType = "CurrencyEdit";
-grid.Model[6, 2].IsEditable = true;
-grid.Model[6, 2].NumberFormat = new NumberFormatInfo 
-{ 
-CurrencyDecimalDigits = 4, 
-CurrencyDecimalSeparator = ".", 
-CurrencyNegativePattern = 0, 
-CurrencyPositivePattern = 0, 
-CurrencySymbol = "$" 
-};
-
-grid.Model[6, 2].NumberFormat.CurrencyGroupSizes = sizes;
-grid.Model[6, 2].CellValue = -4.0;
-{% endhighlight  %}
-{% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
-
-![Currency celltype in WPF GridControl](Cell-Types_images/Cell-Types_img11.jpeg)
-
-Currency Cell with a Negative Currency Value and a Different Negative Pattern
-
-{% tabs %}
-{% highlight c# %}
-int[] sizes = { 2, 3, 4 };   
-grid.Model[10, 2].CellType = "CurrencyEdit";
-grid.Model[10, 2].IsEditable = true;
-grid.Model[10, 2].NumberFormat = new NumberFormatInfo 
-{ 
-    CurrencyDecimalDigits = 2, 
-    CurrencyDecimalSeparator = ".", 
-    CurrencyNegativePattern = 5, 
-    CurrencyPositivePattern = 1, 
-    CurrencySymbol = "$" 
-};
-
-grid.Model[10, 2].NumberFormat.CurrencyGroupSizes = sizes;
-grid.Model[10, 2].CellValue = -14.0;
-{% endhighlight %}
-{% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
-
-![Currency value with nagative pattern in WPF GridControl](Cell-Types_images/Cell-Types_img12.jpeg)
-
-Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separator and ‘$’ as Currency Symbol
-
-{% tabs %}
-{% highlight c# %}
-int[] sizes = { 2, 3, 4 };   
-grid.Model[14, 2].CellType = "CurrencyEdit";
-grid.Model[14, 2].IsEditable = true;
-grid.Model[14, 2].NumberFormat = new NumberFormatInfo 
-{
-    CurrencyDecimalDigits = 4, 
-    CurrencyDecimalSeparator = ".", 
-    CurrencyNegativePattern = 11, 
-    CurrencyPositivePattern = 2, 
-    CurrencySymbol = "$"
-};
-
-grid.Model[14, 2].NumberFormat.CurrencyGroupSizes = sizes;
-grid.Model[14, 2].CellValue = 36.0;
-{% endhighlight  %}
-{% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
-
-![Currency Cell with a Positive Value in WPF GridControl](Cell-Types_images/Cell-Types_img13.jpeg)
-
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Currency%20Cell)
-
 ## DateTimeEdit cell type
 
 The Date Time cells incorporate DateTimeEdit controls in grid cells that will help you to interactively set a date and time value. The style properties below are applicable to this cell type.
@@ -673,6 +624,7 @@ Setting Date and Time Cells with Different Date Time Patterns.
 
 {% tabs %}
 {% highlight c# %}
+
 grid.Model[5, 1].CellType = "DateTimeEdit";
 grid.Model[5, 1].DateTimeEdit.DateTimePattern = DateTimePattern.LongTime;
 grid.Model[5, 1].CellValue = DateTime.Now;
@@ -688,7 +640,28 @@ grid.Model[9, 1].CellValue = DateTime.Now;
 grid.Model[11, 1].CellType = "DateTimeEdit";
 grid.Model[11, 1].DateTimeEdit.DateTimePattern = DateTimePattern.YearMonth;
 grid.Model[11, 1].CellValue = DateTime.Now;
-{% endhighlight  %}
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    e.Style.GridModel[5, 1].CellType = "DateTimeEdit";
+    e.Style.GridModel[5, 1].DateTimeEdit.DateTimePattern = DateTimePattern.LongTime;
+    e.Style.GridModel[5, 1].CellValue = DateTime.Now;
+
+    e.Style.GridModel[7, 1].CellType = "DateTimeEdit";
+    e.Style.GridModel[7, 1].DateTimeEdit.DateTimePattern = DateTimePattern.FullDateTime;
+    e.Style.GridModel[7, 1].CellValue = DateTime.Now;
+
+    e.Style.GridModel[9, 1].CellType = "DateTimeEdit";
+    e.Style.GridModel[9, 1].DateTimeEdit.DateTimePattern = DateTimePattern.ShortDate;
+    e.Style.GridModel[9, 1].CellValue = DateTime.Now;
+
+    e.Style.GridModel[11, 1].CellType = "DateTimeEdit";
+    e.Style.GridModel[11, 1].DateTimeEdit.DateTimePattern = DateTimePattern.YearMonth;
+    e.Style.GridModel[11, 1].CellValue = DateTime.Now;
+}
+
+{% endhighlight %}
 {% endtabs %}
 
 #### Output
@@ -699,7 +672,190 @@ The following output is generated using the code above.
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Date%20Time%20Cell)
 
-### DoubleEdit cell type
+## CurrencyEdit cell type
+
+This cell type can be used to represent monetary values to achieve accuracy in the calculations. It will stripe the currency sign in the cell and attempt to parse only the number from the input. Use the GridStyleInfo properties below to customize these cells.
+
+<table>
+<tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+Cell Type</td><td>
+Set to “CurrencyEdit”.</td></tr>
+<tr>
+<td>
+CurrencyDecimalDigits</td><td>
+Number of decimal places in currency value.</td></tr>
+<tr>
+<td>
+CurrencyDecimalSeparator</td><td>
+String to use as decimal separator.</td></tr>
+<tr>
+<td>
+CurrencyNegativePattern</td><td>
+Format pattern for negative currency values.</td></tr>
+<tr>
+<td>
+CurrencyPositivePattern</td><td>
+Format pattern for positive currency values.</td></tr>
+<tr>
+<td>
+CurrencySymbol</td><td>
+String to use as currency symbol.</td></tr>
+<tr>
+<td>
+CurrencyGroupSizes</td><td>
+Number of digits in each group to the left of the decimal.</td></tr>
+</table>
+
+
+Creating a Currency Cell with a Negative Currency Value with ‘.’ as the Decimal Separator. 
+
+{% tabs %}
+{% highlight c# %}
+
+int[] sizes = { 2, 3, 4 };   
+grid.Model[6, 2].CellType = "CurrencyEdit";
+grid.Model[6, 2].IsEditable = true;
+grid.Model[6, 2].NumberFormat = new NumberFormatInfo 
+{ 
+    CurrencyDecimalDigits = 4, 
+    CurrencyDecimalSeparator = ".", 
+    CurrencyNegativePattern = 0, 
+    CurrencyPositivePattern = 0, 
+    CurrencySymbol = "$" 
+};
+
+grid.Model[6, 2].NumberFormat.CurrencyGroupSizes = sizes;
+grid.Model[6, 2].CellValue = -4.0;
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    int[] sizes = { 2, 3, 4 };
+    e.Style.GridModel[6, 2].CellType = "CurrencyEdit";
+    e.Style.GridModel[6, 2].IsEditable = true;
+    e.Style.GridModel[6, 2].NumberFormat = new NumberFormatInfo
+    {
+        CurrencyDecimalDigits = 4,
+        CurrencyDecimalSeparator = ".",
+        CurrencyNegativePattern = 0,
+        CurrencyPositivePattern = 0,
+        CurrencySymbol = "$"
+    };
+    e.Style.GridModel[6, 2].NumberFormat.CurrencyGroupSizes = sizes;
+    e.Style.GridModel[6, 2].CellValue = -4.0;
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+#### Output
+
+The following output is generated using the code above.
+
+![Currency celltype in WPF GridControl](Cell-Types_images/Cell-Types_img11.jpeg)
+
+Currency Cell with a Negative Currency Value and a Different Negative Pattern
+
+{% tabs %}
+{% highlight c# %}
+
+int[] sizes = { 2, 3, 4 };   
+grid.Model[10, 2].CellType = "CurrencyEdit";
+grid.Model[10, 2].IsEditable = true;
+grid.Model[10, 2].NumberFormat = new NumberFormatInfo 
+{ 
+    CurrencyDecimalDigits = 2, 
+    CurrencyDecimalSeparator = ".", 
+    CurrencyNegativePattern = 5, 
+    CurrencyPositivePattern = 1, 
+    CurrencySymbol = "$" 
+};
+
+grid.Model[10, 2].NumberFormat.CurrencyGroupSizes = sizes;
+grid.Model[10, 2].CellValue = -14.0;
+
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    int[] sizes = { 2, 3, 4 };
+    e.Style.GridModel[10, 2].CellType = "CurrencyEdit";
+    e.Style.GridModel[10, 2].IsEditable = true;
+    e.Style.GridModel[10, 2].NumberFormat = new NumberFormatInfo
+    {
+        CurrencyDecimalDigits = 2,
+        CurrencyDecimalSeparator = ".",
+        CurrencyNegativePattern = 5,
+        CurrencyPositivePattern = 1,
+        CurrencySymbol = "$"
+    };
+    e.Style.GridModel[10, 2].NumberFormat.CurrencyGroupSizes = sizes;
+    e.Style.GridModel[10, 2].CellValue = -14.0;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Output
+
+The following output is generated using the code above.
+
+![Currency value with nagative pattern in WPF GridControl](Cell-Types_images/Cell-Types_img12.jpeg)
+
+Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separator and ‘$’ as Currency Symbol
+
+{% tabs %}
+{% highlight c# %}
+
+int[] sizes = { 2, 3, 4 };   
+grid.Model[14, 2].CellType = "CurrencyEdit";
+grid.Model[14, 2].IsEditable = true;
+grid.Model[14, 2].NumberFormat = new NumberFormatInfo 
+{
+    CurrencyDecimalDigits = 4, 
+    CurrencyDecimalSeparator = ".", 
+    CurrencyNegativePattern = 11, 
+    CurrencyPositivePattern = 2, 
+    CurrencySymbol = "$"
+};
+grid.Model[14, 2].NumberFormat.CurrencyGroupSizes = sizes;
+grid.Model[14, 2].CellValue = 36.0;
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    int[] sizes = { 2, 3, 4 };
+    e.Style.GridModel[14, 2].CellType = "CurrencyEdit";
+    e.Style.GridModel[14, 2].IsEditable = true;
+    e.Style.GridModel[14, 2].NumberFormat = new NumberFormatInfo
+    {
+        CurrencyDecimalDigits = 4,
+        CurrencyDecimalSeparator = ".",
+        CurrencyNegativePattern = 11,
+        CurrencyPositivePattern = 2,
+        CurrencySymbol = "$"
+    };
+    e.Style.GridModel[6, 2].NumberFormat.CurrencyGroupSizes = sizes;
+    e.Style.GridModel[6, 2].CellValue = 36.0;
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+#### Output
+
+The following output is generated using the code above.
+
+![Currency Cell with a Positive Value in WPF GridControl](Cell-Types_images/Cell-Types_img13.jpeg)
+
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Currency%20Cell)
+
+## DoubleEdit cell type
 
 Using DoubleEdit cell type will restrict the user to enter only double (value type) values into the cell. Thus it can be used to display System.Double type values. Below are the style properties that affect this cell.
 
@@ -733,6 +889,7 @@ Setting up four Double Edit cells using different group separators and decimal d
 
 {% tabs %}
 {% highlight c# %}
+
 int[] sizes = { 2, 3, 4 };
 grid.Model[6, 2].CellType = "DoubleEdit";
 grid.Model[6, 2].NumberFormat = new NumberFormatInfo 
@@ -775,7 +932,52 @@ grid.Model[12, 2].NumberFormat = new NumberFormatInfo
     NumberDecimalDigits = 0 
 };
 grid.Model[12, 2].NumberFormat.NumberGroupSizes = sizes;
-grid.Model[12, 2].CellValue = 12345678.00;.00;
+grid.Model[12, 2].CellValue = 12345678.00;
+
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    int[] sizes = { 2, 3, 4 };
+    e.Style.GridModel[6, 2].CellType = "DoubleEdit";
+    e.Style.GridModel[6, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[6, 2].CellValue = 2345.00;
+    e.Style.GridModel[6, 2].NumberFormat = new NumberFormatInfo
+    {
+        NumberGroupSeparator = ";",
+        NumberDecimalSeparator = ".",
+        NumberDecimalDigits = 4
+    };
+    e.Style.GridModel[8, 2].CellType = "DoubleEdit";
+    e.Style.GridModel[8, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[8, 2].CellValue = 12;
+    e.Style.GridModel[8, 2].NumberFormat = new NumberFormatInfo
+    {
+        NumberGroupSeparator = ",",
+        NumberDecimalSeparator = ".",
+        NumberDecimalDigits = 4
+    };
+
+    e.Style.GridModel[10, 2].CellType = "DoubleEdit";
+    e.Style.GridModel[10, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[10, 2].CellValue = 100;
+    e.Style.GridModel[10, 2].NumberFormat = new NumberFormatInfo
+    {
+        NumberGroupSeparator = ",",
+        NumberDecimalSeparator = ".",
+        NumberDecimalDigits = 1
+    };
+    e.Style.GridModel[12, 2].CellType = "DoubleEdit";
+    e.Style.GridModel[12, 2].NumberFormat = new NumberFormatInfo
+    {
+        NumberGroupSeparator = "@",
+        NumberDecimalSeparator = ".",
+        NumberDecimalDigits = 0
+    };
+    e.Style.GridModel[12, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[12, 2].CellValue = 12345678.00;
+}
+
 {% endhighlight  %}
 {% endtabs %}
 
@@ -821,6 +1023,7 @@ Setting up Three Different Integer Edit Cells.
 
 {% tabs %}
 {% highlight c# %}
+
 int[] sizes = { 2, 3, 4 };
 grid.Model[12, 2].CellType = "IntegerEdit";
 grid.Model[12, 2].IsEditable = true;
@@ -842,6 +1045,33 @@ grid.Model[10, 2].CellValue = 1000;
 
 grid.Model.ColStyles[3].CellType = "IntegerEdit";
 grid.Model.ColStyles[3].IntegerEdit.UseNullOption = true;
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    int[] sizes = { 2, 3, 4 };
+    e.Style.GridModel[12, 2].CellType = "IntegerEdit";
+    e.Style.GridModel[12, 2].IsEditable = true;
+    e.Style.GridModel[12, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "," };
+    e.Style.GridModel[12, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[12, 2].CellValue = 1;
+
+    e.Style.GridModel[8, 2].CellType = "IntegerEdit";
+    e.Style.GridModel[8, 2].IsEditable = true;
+    e.Style.GridModel[8, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ";" };
+    e.Style.GridModel[8, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[8, 2].CellValue = 222222;
+
+    e.Style.GridModel[10, 2].CellType = "IntegerEdit";
+    e.Style.GridModel[10, 2].IsEditable = true;
+    e.Style.GridModel[10, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "@" };
+    e.Style.GridModel[10, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[10, 2].CellValue = 1000;
+
+    e.Style.GridModel.ColStyles[3].CellType = "IntegerEdit";
+    e.Style.GridModel.ColStyles[3].IntegerEdit.UseNullOption = true;
+}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -852,45 +1082,6 @@ The following output is generated using the code above.
 ![Integeredit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img16.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Integer%20Edit%20Cell)
-
-## MaskEdit cell type
-
-MaskEdit cell type allows you to create specially formatted text cells that confirm to an edit mask that you specify. The Style.MaskEdit.Mask property holds the mask string, which will control the format of the input text being entered. The Mask Edit cells are useful when the user wants to display some formatted text such as Social Security Number (SSN), telephone number etc.
-
-#### Example
-
-Setting up Mask Edit cells with different mask string.
-
-{% tabs %}
-{% highlight c# %}
-var maskStyleInfo = this.grid.Model[6, 2];
-maskStyleInfo.CellType = "MaskEdit";
-maskStyleInfo.MaskEdit = GridMaskEditInfo.Default;
-maskStyleInfo.MaskEdit.Mask = "00/00/0000";
-maskStyleInfo.CellValue = 1232313;
-
-var maskStyleInfo1 = this.grid.Model[8, 2];
-maskStyleInfo1.CellType = "MaskEdit";
-maskStyleInfo1.MaskEdit = GridMaskEditInfo.Default;
-maskStyleInfo1.MaskEdit.Mask = "00:00:00";
-maskStyleInfo1.CellValue = 1232313;
-
-var maskStyleInfo2 = this.grid.Model[10, 2];
-maskStyleInfo2.CellType = "MaskEdit";
-maskStyleInfo2.MaskEdit = GridMaskEditInfo.Default;
-maskStyleInfo2.MaskEdit.Mask = "00/00/0000";
-maskStyleInfo2.CellValue = "12012007";";
-{% endhighlight  %}
-{% endtabs %}
-
-#### Output
-
-The following output is generated using the code above.
-
-![Maskedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img17.jpeg)
-
-
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Mask%20Edit%20Cell)
 
 ## PercentEdit cell type
 
@@ -940,6 +1131,7 @@ Double mode displays the values in System.Double format and Percent mode adds a 
 
 {% tabs %}
 {% highlight c# %}
+
 var percentStyleInfo = this.grid.Model[7, 2];
 percentStyleInfo.CellType = "PercentEdit";
 
@@ -964,7 +1156,37 @@ percentStyleInfo2.NumberFormat = new NumberFormatInfo()
 };
 percentStyleInfo2.PercentEditMode = PercentEditMode.DoubleMode;
 percentStyleInfo2.CellValue = 91;
-{% endhighlight  %}
+
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    var percentStyleInfo = e.Style.GridModel[7, 2];
+    percentStyleInfo.CellType = "PercentEdit";
+    percentStyleInfo.NumberFormat = new NumberFormatInfo()
+    {
+        PercentSymbol = "%",
+        PercentGroupSizes = new int[] { 1, 2, 3 },
+        PercentDecimalDigits = 2,
+        PercentGroupSeparator = ",",
+    };
+    percentStyleInfo.PercentEditMode = PercentEditMode.PercentMode;
+    percentStyleInfo.CellValue = 19;
+
+    var percentStyleInfo2 = e.Style.GridModel[9, 2];
+    percentStyleInfo2.CellType = "PercentEdit";
+    percentStyleInfo2.NumberFormat = new NumberFormatInfo()
+    {
+        PercentSymbol = "%",
+        PercentGroupSizes = new int[] { 3 },
+        PercentDecimalDigits = 4,
+        PercentGroupSeparator = ",",
+    };
+    percentStyleInfo2.PercentEditMode = PercentEditMode.DoubleMode;
+    percentStyleInfo2.CellValue = 91;
+}
+
+{% endhighlight %}
 {% endtabs %}
 
 #### Output
@@ -975,51 +1197,69 @@ The following output is generated using the code above.
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Percent%20Edit%20Cell)
 
-## RichText cell type
+## MaskEdit cell type
 
-RichTextBox CellType is used to format the cells, where each character, word or a line can be given different formats. RichTextBox cell type also supports Printing, Importing and Exporting.
+MaskEdit cell type allows you to create specially formatted text cells that confirm to an edit mask that you specify. The Style.MaskEdit.Mask property holds the mask string, which will control the format of the input text being entered. The Mask Edit cells are useful when the user wants to display some formatted text such as Social Security Number (SSN), telephone number etc.
 
-RichTextBox CellType can be defined in the Grid using the following code snippet:
+#### Example
+
+Setting up Mask Edit cells with different mask string.
 
 {% tabs %}
 {% highlight c# %}
-//Cell type as RichText and Cell Value as FlowDocument
-this.grid.Model[rowIndex, colIndex].CellType = "RichText";
-this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 
-//The Cell Value for RichTextBox must be in FlowDocument as shown below. 
+var maskStyleInfo = this.grid.Model[6, 2];
+maskStyleInfo.CellType = "MaskEdit";
+maskStyleInfo.MaskEdit = GridMaskEditInfo.Default;
+maskStyleInfo.MaskEdit.Mask = "00/00/0000";
+maskStyleInfo.CellValue = 1232313;
 
-// Flow document type is supported for Rich Text Cell Type.
-FlowDocument _flowDocument = new FlowDocument();
-Paragraph _paragraph = new Paragraph();
+var maskStyleInfo1 = this.grid.Model[8, 2];
+maskStyleInfo1.CellType = "MaskEdit";
+maskStyleInfo1.MaskEdit = GridMaskEditInfo.Default;
+maskStyleInfo1.MaskEdit.Mask = "00:00:00";
+maskStyleInfo1.CellValue = 1232313;
 
-Run _run1 = new Run();
-_run1.Text = "This is RichText box Cell Type";
-_run1.TextDecorations = TextDecorations.Underline;
+var maskStyleInfo2 = this.grid.Model[10, 2];
+maskStyleInfo2.CellType = "MaskEdit";
+maskStyleInfo2.MaskEdit = GridMaskEditInfo.Default;
+maskStyleInfo2.MaskEdit.Mask = "00/00/0000";
+maskStyleInfo2.CellValue = "12012007";
 
-Run _run2 = new Run();
-_run2.Text = "Various formatting can be done in Single Cell.";
-_run1.FontWeight = FontWeights.Bold;
-_run2.Foreground = Brushes.Green;
 
-Run _run3 = new Run();
-_run3.Text = "Rich Text cell type also supports Images";
-_run3.FontSize = 16;
-_run3.FontStyle = FontStyles.Italic;
-_paragraph.Inlines.Add(_run1);
-_paragraph.Inlines.Add(_run2);
-_paragraph.Inlines.Add(_run3);
-_flowDocument.Blocks.Add(_paragraph);
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    var maskStyleInfo = e.Style.GridModel[6, 2];
+    maskStyleInfo.CellType = "MaskEdit";
+    maskStyleInfo.MaskEdit = GridMaskEditInfo.Default;
+    maskStyleInfo.MaskEdit.Mask = "00/00/0000";
+    maskStyleInfo.CellValue = 1232313;
 
-//Cell type as RichText and Cell Value as FlowDocument
-this.grid.Model[rowIndex, colIndex].CellType = "RichText";
-this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
-{% endhighlight  %}
+    var maskStyleInfo1 = e.Style.GridModel[8, 2];
+    maskStyleInfo1.CellType = "MaskEdit";
+    maskStyleInfo1.MaskEdit = GridMaskEditInfo.Default;
+    maskStyleInfo1.MaskEdit.Mask = "00:00:00";
+    maskStyleInfo1.CellValue = 1232313;
+
+    var maskStyleInfo2 = e.Style.GridModel[10, 2];
+    maskStyleInfo2.CellType = "MaskEdit";
+    maskStyleInfo2.MaskEdit = GridMaskEditInfo.Default;
+    maskStyleInfo2.MaskEdit.Mask = "00/00/0000";
+    maskStyleInfo2.CellValue = "12012007";
+}
+
+{% endhighlight %}
 {% endtabs %}
 
-![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img19.png)
+#### Output
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/RichTextBox%20Cell)
+The following output is generated using the code above.
+
+![Maskedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img17.jpeg)
+
+
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Mask%20Edit%20Cell)
 
 ## UpDownEdit cell type
 
@@ -1077,6 +1317,7 @@ The code below sets up two different Up and Down controls in grid cells.
 
 {% tabs %}
 {% highlight c# %}
+
 var updownStyleInfo = this.grid.Model[6, 2];
 updownStyleInfo.CellType = "UpDownEdit";
 updownStyleInfo.NumberFormat = new NumberFormatInfo { NumberGroupSeparator = " ", NumberDecimalDigits = 3 };
@@ -1096,6 +1337,51 @@ updownStyleInfo1.UpDownEdit.FocusedForeground = Brushes.Bisque ;
 updownStyleInfo1.UpDownEdit.MaxValue = 100.00;
 updownStyleInfo1.UpDownEdit.MinValue = 0;
 updownStyleInfo1.CellValue = 10.000;
+
+var updownStyleInfo2 = this.grid.Model[10, 2];
+updownStyleInfo2.CellType = "UpDownEdit";
+updownStyleInfo2.NumberFormat = new NumberFormatInfo { NumberGroupSeparator = " ", NumberDecimalDigits = 3 };
+updownStyleInfo2.UpDownEdit.FocusedBackground = Brushes.BurlyWood;
+updownStyleInfo2.UpDownEdit.FocusedBorderBrush = Brushes.Red;
+updownStyleInfo2.UpDownEdit.FocusedForeground = Brushes.Yellow;
+updownStyleInfo2.UpDownEdit.MaxValue = 10.00;
+updownStyleInfo2.UpDownEdit.MinValue = 0;
+updownStyleInfo2.CellValue = 10.000;
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    var updownStyleInfo = e.Style.GridModel[6, 2];
+    updownStyleInfo.CellType = "UpDownEdit";
+    updownStyleInfo.NumberFormat = new NumberFormatInfo { NumberGroupSeparator = " ", NumberDecimalDigits = 3 };
+    updownStyleInfo.UpDownEdit.FocusedBackground = Brushes.Tan;
+    updownStyleInfo.UpDownEdit.FocusedBorderBrush = Brushes.Red;
+    updownStyleInfo.UpDownEdit.FocusedForeground = Brushes.Yellow;
+    updownStyleInfo.UpDownEdit.MaxValue = 10.00;
+    updownStyleInfo.UpDownEdit.MinValue = 0;
+    updownStyleInfo.CellValue = 10.000;
+
+    var updownStyleInfo1 = e.Style.GridModel[8, 2];
+    updownStyleInfo1.CellType = "UpDownEdit";
+    updownStyleInfo1.NumberFormat = new NumberFormatInfo { NumberGroupSeparator = " ", NumberDecimalDigits = 3 };
+    updownStyleInfo1.UpDownEdit.FocusedBackground = Brushes.BlueViolet;
+    updownStyleInfo1.UpDownEdit.FocusedBorderBrush = Brushes.Red;
+    updownStyleInfo1.UpDownEdit.FocusedForeground = Brushes.Bisque;
+    updownStyleInfo1.UpDownEdit.MaxValue = 100.00;
+    updownStyleInfo1.UpDownEdit.MinValue = 0;
+    updownStyleInfo1.CellValue = 10.000;
+
+    var updownStyleInfo2 = e.Style.GridModel[10, 2];
+    updownStyleInfo2.CellType = "UpDownEdit";
+    updownStyleInfo2.NumberFormat = new NumberFormatInfo { NumberGroupSeparator = " ", NumberDecimalDigits = 3 };
+    updownStyleInfo2.UpDownEdit.FocusedBackground = Brushes.BurlyWood;
+    updownStyleInfo2.UpDownEdit.FocusedBorderBrush = Brushes.Red;
+    updownStyleInfo2.UpDownEdit.FocusedForeground = Brushes.Yellow;
+    updownStyleInfo2.UpDownEdit.MaxValue = 10.00;
+    updownStyleInfo2.UpDownEdit.MinValue = 0;
+    updownStyleInfo2.CellValue = 10.000;
+}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -1107,6 +1393,84 @@ The following output is generated using the code above.
 
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Up%20Down%20Cell)
+
+## RichText cell type
+
+RichTextBox CellType is used to format the cells, where each character, word or a line can be given different formats. RichTextBox cell type also supports Printing, Importing and Exporting.
+
+RichTextBox CellType can be defined in the Grid using the following code snippet:
+
+{% tabs %}
+{% highlight c# %}
+//Cell type as RichText and Cell Value as FlowDocument
+this.grid.Model[rowIndex, colIndex].CellType = "RichText";
+this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
+
+//The Cell Value for RichTextBox must be in FlowDocument as shown below. 
+
+// Flow document type is supported for Rich Text Cell Type.
+FlowDocument _flowDocument = new FlowDocument();
+Paragraph _paragraph = new Paragraph();
+
+Run _run1 = new Run();
+_run1.Text = "This is RichText box Cell Type";
+_run1.TextDecorations = TextDecorations.Underline;
+
+Run _run2 = new Run();
+_run2.Text = "Various formatting can be done in Single Cell.";
+_run1.FontWeight = FontWeights.Bold;
+_run2.Foreground = Brushes.Green;
+
+Run _run3 = new Run();
+_run3.Text = "Rich Text cell type also supports Images";
+_run3.FontSize = 16;
+_run3.FontStyle = FontStyles.Italic;
+_paragraph.Inlines.Add(_run1);
+_paragraph.Inlines.Add(_run2);
+_paragraph.Inlines.Add(_run3);
+_flowDocument.Blocks.Add(_paragraph);
+
+//Cell type as RichText and Cell Value as FlowDocument
+this.grid.Model[rowIndex, colIndex].CellType = "RichText";
+this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
+{% endhighlight  %}
+{% endtabs %}
+
+![Richtextbox celltype in WPF GridControl](Cell-Types_images/Cell-Types_img19.png)
+
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/RichTextBox%20Cell)
+
+## DataTemplate cell type
+
+The cell is specified as "DataBoundTemplate", that cell can not be changed or edited. You can show the cell information or text by setting the `DataTemplate` key to [GridStyleInfo.CellItemTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CellItemTemplateKey.html) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Window.Resources>
+    <DataTemplate x:Key="TextTemplate">
+        <Border BorderBrush="LightSlateGray"
+            BorderThickness="2"
+            CornerRadius="2">
+            <TextBlock Text="{Binding CellBoundValue}" ToolTip="{Binding CellBoundValue}" />
+        </Border>
+    </DataTemplate>
+</Window.Resources>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+gridcontrol.Model[2, 2].CellType = "DataBoundTemplate";
+gridcontrol.Model[2, 2].CellItemTemplateKey = "TextTemplate";
+gridcontrol.Model[2, 2].CellValue = gridcontrol.Model[2, 2].RowIndex;            
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Data%20Template%20Cell)
 
 ## Nested Grid cell type
 
