@@ -45,7 +45,7 @@ We can change the gradient colors by changing the color of gradient stops. Color
 
 ## Create Linear Gradient colors
 
-We can create linear gradient colors by programmatically using the `LinearGradientbrush` with its `LinearGradientbrush.GradientStops`, `StartPoint` and `EndPoint` properties or can create and change it at runtime by using `GradientStopsEditor` and `StartPoint`, `EndPoint` input options available in the `GradientPropertyEditor`. By default, the linear gradient colors are combined horizontally by start and end points. The default value of `StartPoint` is (0.5, 0) and `EndPoint` is (0.5, 1).
+We can create linear gradient colors by programmatically using the `LinearGradientBrush` with its `LinearGradientBrush.GradientStops`, `StartPoint` and `EndPoint` properties or can create and change it at runtime by using `GradientStopsEditor` and `StartPoint`, `EndPoint` input options available in the `GradientPropertyEditor`. By default, the linear gradient colors are combined horizontally by start and end points. The default value of `StartPoint` is (0.5, 0) and `EndPoint` is (0.5, 1).
 
 ![ColorPicker with LinearGradient Editor](ColorPicker-with-Gradient-Support_images/ColorPicker_LinearGradient_Mode.png)
 
@@ -220,7 +220,7 @@ Here, Radial Gradient created by the gradient colors and their location along th
 
 ![ColorPicker with gradient color reverse button](ColorPicker-with-Gradient-Support_images/ColorPicker_Reverse_Button.gif)
 
-## Show selected Gradient Color Name
+## Show selected Gradient Color name
 
 By default, the selected Gradient mode name is displayed in `ColorPicker`. If we want to display the selected gradient color name instead of the Gradient mode name, use the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~GradientBrushDisplayMode.html) value as `Extended`. The default value of `GradientBrushDisplayMode` property is `Default`.
 
@@ -269,8 +269,6 @@ colorPicker.GradientPropertyEditorMode =  GradientPropertyEditorMode.Popup;
 
 ## Switch between Solid, Gradient mode
 
-### Solid brush Mode to Gradient brush mode
-
 We can change the brush mode from solid to gradient or vice versa at runtime as well as programmatically. By default, the `Solid` brush mode is enabled. If we want `Gradient` brush mode, use the [BrushMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~BrushMode.html) property value as `Gradient`.
 
 {% tabs %}
@@ -300,7 +298,7 @@ We can change the brush mode directly by clicking on the corresponding Solid, Li
 
 ## Disable Switching between Solid, Linear and Gradient brush mode
 
- If we want to disable the Solid, Linear and Gradient brush mode transition, use the [IsGradientPropertyEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsGradientPropertyEnabled.html) property value as `false`. It will hide the Solid, Linear and Gradient brush button. The Default value of `IsGradientPropertyEnabled` property is `true`.
+ If we want to disable the Solid, Linear and Gradient brush mode transition, use the [IsGradientPropertyEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsGradientPropertyEnabled.html) property value as `false`. It will hide the Solid, Linear and Gradient brush buttons. The Default value of `IsGradientPropertyEnabled` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
