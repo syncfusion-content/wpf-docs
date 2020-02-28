@@ -2047,6 +2047,8 @@ Following are the limitations of Master-Details View in SfDataGrid.
 
 ## See Also
 
+[How to maintain the DetailsView expanded state when Sorting and Grouping the DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/11032)
+
 [How to set the background for selected DetailsViewGrid?](https://www.syncfusion.com/kb/9329/)
 
 [How to load the button command inside the Detailsview datagrid column and setting AncestorLevel?](https://www.syncfusion.com/kb/7205)
