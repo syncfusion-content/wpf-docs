@@ -26,7 +26,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 * Syncfusion.Shared.WPF
 * Syncfusion.Tools.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the [TabSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter.html) control in XAML page.
 
 {% tabs %}
 
@@ -42,55 +42,13 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
-{% endhighlight %}
-
-{% endtabs %}
-
-4) Add the [TabSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitter.html) control with required optimal name by using included namespace.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:TabSplitter Height="280" Width="400">
-    <syncfusion:TabSplitterItem>                
-        <syncfusion:TabSplitterItem.TopPanelItems>
-            <syncfusion:SplitterPage Header="XAML" />
-        </syncfusion:TabSplitterItem.TopPanelItems>
-        <syncfusion:TabSplitterItem.BottomPanelItems>
-            <syncfusion:SplitterPage Header="Design" />
-        </syncfusion:TabSplitterItem.BottomPanelItems>
-    </syncfusion:TabSplitterItem>        
-</syncfusion:TabSplitter>
+<Grid Name="grid">
+        <syncfusion:TabSplitter Name="tabSplitter" Height="280" Width="400" />
+</Grid>
 
 {% endhighlight %}
 
 {% endtabs %}
-
-5) Add any one of the control to the splitter page of TabSplitter and add the content into the splitter page.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:TabSplitterItem Header="Window1.xaml">                
-    <syncfusion:TabSplitterItem.TopPanelItems>
-        <syncfusion:SplitterPage Header="XAML">
-            <Label Content="Xaml" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        </syncfusion:SplitterPage>
-    </syncfusion:TabSplitterItem.TopPanelItems>
-    <syncfusion:TabSplitterItem.BottomPanelItems>
-        <syncfusion:SplitterPage Header="Design">
-            <Label Content="Design" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        </syncfusion:SplitterPage>
-    </syncfusion:TabSplitterItem.BottomPanelItems>
-</syncfusion:TabSplitterItem>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Shows the splitter pages in WPF TabSplitter](Getting-Started_images/TabSplitter_design.png)
 
 ## Adding the TabSplitter control via C#
 
@@ -131,9 +89,26 @@ grid.Children.Add(tabSplitter);
 
 {% endtabs %}
 
-5) Add the splitter item into the TabSplitter control by using [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~Header.html) property.
+![WPF TabSplitter control](Getting-Started_images/TabSplitter_control.png)
+
+## Adding splitter item
+
+1) You can add the splitter item into the TabSplitter control by using [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~Header.html) property. The TabSplitter items contains a collection of panel items. The panel items are [TopPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~TopPanelItems.html) and [BottomPanelItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~BottomPanelItems.html). You can also split the pages in TabSplitter item by using the [SplitterPage](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SplitterPage.html).
 
 {% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabSplitterItem Header="Window1.xaml">                
+    <syncfusion:TabSplitterItem.TopPanelItems>
+        <syncfusion:SplitterPage Header="XAML" />        
+    </syncfusion:TabSplitterItem.TopPanelItems>
+    <syncfusion:TabSplitterItem.BottomPanelItems>
+        <syncfusion:SplitterPage Header="Design" />
+    </syncfusion:TabSplitterItem.BottomPanelItems>
+</syncfusion:TabSplitterItem>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -159,9 +134,26 @@ tabSplitter.Items.Add(tabSplitterItem1);
 
 {% endtabs %}
 
-6) Add any one of the control to the splitter page of TabSplitter and add the content into the splitter page.
+2) Add any one of the control to the splitter page of TabSplitter and add the content into the splitter page.
 
 {% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:TabSplitterItem Header="Window1.xaml">                
+    <syncfusion:TabSplitterItem.TopPanelItems>
+        <syncfusion:SplitterPage Header="XAML">
+            <Label Content="Xaml" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        </syncfusion:SplitterPage>
+    </syncfusion:TabSplitterItem.TopPanelItems>
+    <syncfusion:TabSplitterItem.BottomPanelItems>
+        <syncfusion:SplitterPage Header="Design">
+            <Label Content="Design" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        </syncfusion:SplitterPage>
+    </syncfusion:TabSplitterItem.BottomPanelItems>
+</syncfusion:TabSplitterItem>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -186,7 +178,7 @@ splitterPage1.Content = label1;
 
 ## Tab orientation
 
-The TabSplitter control can be oriented horizontally or vertically using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~Orientation.html) property.
+The Tabsplitter items are placed horizontally or vertically by using the [Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~Orientation.html) property.
 
 {% tabs %}
 
@@ -207,9 +199,9 @@ tabSplitterItem1.Orientation = Orientation.Vertical;
 
 ![Vertical orientation of WPF TabSplitter](Getting-Started_images/TabSplitter_vertical.png)
 
-## Collapse tab groups
+## Collapsing bottom panel
 
-You can collapse the tab groups by setting the [IsCollapsedBottomPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~IsCollapsedBottomPanel.html) property to `true`.
+You can collapse or expand the bottom panel by setting the [IsCollapsedBottomPanel](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~IsCollapsedBottomPanel.html) property to `true`. The default value is `false`.
 
 {% tabs %}
 
