@@ -228,7 +228,7 @@ N> You can also customize the comment tip window in any position of comment tip 
 
 ## Remove CommentTip
 
-The `ResetTopLeftComment` method is used to remove the comment tip that is placed in the top left position of any cell.
+The [ResetTopLeftComment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~ResetTopLeftComment.html) method is used to remove the comment tip that is placed in the top left position of any cell.
 
 {% tabs %}
 
@@ -247,3 +247,5 @@ if (grid.Model[1, 2].RowIndex == 1 && grid.Model[1, 2].ColumnIndex == 2)
 {% endhighlight %}
 
 {% endtabs %}
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip)
