@@ -34,7 +34,7 @@ We can customize the header of the `ColorPicker` by using the [HeaderTemplate](h
 
 ## Change flow direction
 
-We can change the flow direction of the `ColorPicker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Deafult value of `FlowDirection` property is `LeftToRight`.
+We can change the flow direction of the `ColorPicker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
