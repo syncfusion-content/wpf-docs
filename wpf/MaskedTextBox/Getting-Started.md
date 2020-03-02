@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started| SfMaskedEdit | Wpf | Syncfusion
-description: Learn here about this section explains about how to create SfMaskedEdit control in WPF application.
+description: Learn here about this section explains about how to create the SfMaskedEdit control in WPF application.
 platform: wpf
 control: SfMaskedEdit
 documentation: ug

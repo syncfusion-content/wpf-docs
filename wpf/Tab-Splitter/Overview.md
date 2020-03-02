@@ -7,7 +7,7 @@ control: TabSplitter
 documentation: ug
 ---
 
-# Overview
+# Overview of WPF TabSplitter
 
 TabSplitter is similar to VS 2008 style Split view of Tabbed Groups.
 

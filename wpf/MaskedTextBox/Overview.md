@@ -7,7 +7,7 @@ control: SfMaskedEdit
 documentation: ug
 ---
 
-# Overview
+# Overview of WPF SfMaskedEdit
 
 The Masked text box is an advanced version of the Entry control that restricts your input of certain types such as characters, text, and numbers by using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
 

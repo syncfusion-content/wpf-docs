@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | TabSplitter | wpf | Syncfusion
-description: Learn here about this section explains about how to add TabSpliiter control in to WPF application.
+description: Learn here about this section explains about how to add the TabSpliiter control in to WPF application.
 platform: wpf
 control: TabSplitter
 documentation: ug
@@ -65,9 +65,9 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 {% endhighlight %}
 
-{% endtabs}
+{% endtabs %}
 
-5) Add any one of the control to the splitter page of TabSplitter andd add the content into the splitter page.
+5) Add any one of the control to the splitter page of TabSplitter and add the content into the splitter page.
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ grid.Children.Add(tabSplitter);
 
 {% endtabs %}
 
-5) Add the splitter item into the TabSpliiter control by using [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~Header.html) property.
+5) Add the splitter item into the TabSplitter control by using [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabSplitterItem~Header.html) property.
 
 {% tabs %}
 

@@ -7,7 +7,7 @@ control: SfMaskedEdit
 documentation: ug
 ---
 
-# ValidationMode
+# ValidationMode of SfMaskedEdit
 
 Input validation is based on the value of [ValidationMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~ValidationMode.html) property. Enum values of this property are: 
 
