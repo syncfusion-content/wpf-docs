@@ -19,6 +19,8 @@ Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-depe
 
 ## Adding the TabSplitter control via XAML
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-tabsplitter-example)
+
 1) Create a new WPF application via Visual Studio.
 
 2) Add the following assembly reference to this project.
