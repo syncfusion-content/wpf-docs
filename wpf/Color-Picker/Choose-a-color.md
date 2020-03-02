@@ -117,6 +117,46 @@ colorPicker.IsColorPaletteVisible = true;
 
 ![ColorPicker with standard color combobox](Selection-Mode_images/ColorPicker_Standard_Color.gif)
 
+## Color and Brush changed notification
+
+Selected Color and Brush changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~SelectedBrushChanged_EV.html) and [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~ColorChanged_EV.html) events.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPicker ColorChanged="ColorPicker_ColorChanged"
+                        SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
+                        Name="colorPicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+ColorPicker  colorPicker = new ColorPicker();
+colorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
+colorPicker.ColorChanged += ColorPicker_ColorChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+
+{% tabs %}
+{% highlight xaml %}
+
+//Invoked when the selected color is changed
+private void ColorPicker_ColorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    // Enter your code here
+}
+
+//Invoked when the selected brush is changed
+private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    // Enter your code here
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Get color name from color property
 
 `ColorPicker` come along with method which returns the nearest names of [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Color.html) property, this can be obtained by [SuchColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~SuchColor.html) method. We can get similar four color names of the `Color` property by passing the index value from 0 to 3 in the `SuchColor` method.
@@ -148,3 +188,6 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 {% endtabs %}
 
 ![ColorPicker with selected color name](Selection-Mode_images/ColorPicker_Selected_ColorName.png)
+ 
+
+ We can edit and choose a gradient colors which is explained in the [Edit a Gradient Brush](https://help.syncfusion.com/wpf/color-picker/gradient-brush) page.
