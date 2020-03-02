@@ -98,7 +98,7 @@ Used to increase or decrease the cell values</td></tr>
 <td>
 DataTemplate</td><td>
 “DataBoundTemplate”</td><td>
-used for cell cannot be changed or edited/td></tr>
+used for cell cannot be changed or edited</td></tr>
 <tr>
 <td>
 NestedGrid</td><td>
