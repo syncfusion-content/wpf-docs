@@ -11,9 +11,14 @@ documentation: ug
 
 TabSplitter is similar to VS 2008 style Split view of Tabbed Groups.
 
+![Overview of TabSplitter](Overview_images/overview.png)
+
 ## Features
 
-* Swapping of two groups
-* Collapse and Expand Tab Groups
-* Toggle between vertical and horizontal layouts
-* Visual Customization of TabSplitter
+**Swap** - Provides support to swapping the two tab groups.
+
+**Collapse and Expand** - Provides support to collapse and expand the tab groups.
+
+**Layout** - Provides support to toggle between vertical and horizontal layouts.
+
+**Appearance** - Provides support to set the Background, Foreground color to TabSplitter.
