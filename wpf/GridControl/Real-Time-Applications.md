@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Real Time Applications | Grid | WPF | Syncfusion
-description: real time applications
+title: Real Time Applications in WPF GridControl | Syncfusion
+description: Learn here about how to use the application with high frequency updates in the Syncfusion WPF GridControl.
 platform: wpf
 control: Grid
 documentation: ug
@@ -15,13 +15,7 @@ Grids can be adopted in many real time applications where the database is of cru
 
 Grid can be used in applications with frequent updates, for example stock values in share market. When grid is switched over to virtual mode, it reforms itself as a light weight control that consumes a very little memory and processing power, and provides a very small latency under heavy load. Such virtual grids are typically useful when there is a need to display enormous data very quickly.  
 
-### Sample
-
-A sample which demonstrates such an application is available in the following sample installation location:
-
-...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
-
-N> Refer Performance Optimization section which elaborates on this sample.
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Performance/TraderGrid%20Test)
 
 ## Excel-like UI Applications
 
@@ -43,10 +37,8 @@ grid.Model.Options.ExcelLikeCurrentCell = true;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
+![Showing Excel like Current Cell Selection in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
 
-Grid Showing Excel like Current Cell Selection
-{:.caption}
 
 N>  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared.
 
@@ -61,10 +53,8 @@ grid.Model.Options.ExcelLikeSelectionFrame = true;
 {% endhighlight  %}
 {% endtabs %}
 
-![](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
+![Displaying Excel like Selection Frame in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
 
-Grid Displaying Excel like Selection Frame
-{:.caption}
 
 c. Formula Cells
 
@@ -76,10 +66,8 @@ grid.Model.TableStyle.CellType = "FormulaCell";
 {% endhighlight  %}
 {% endtabs %}
 
-![](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)
+![WPF GridControl with Excel like Formula Cell](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)
 
-Grid with Excel like Formula Cell
-{:.caption}
 
 d. Markup Headers
 
@@ -108,30 +96,21 @@ protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
 {% endhighlight  %}
 {% endtabs %}
 
-![](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)
+![WPF GridControl with markup headers](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)
 
-Grid with markup headers
-{:.caption}
 
 e. Workbook of Sheets
 
 You can create a workbook with multiple sheets similar to excel, using a Tab control, where individual tab represents a worksheet embedded within a Grid control.
 
 
-![](Real-Time-Applications_images/Real-Time-Applications_img5.jpeg)
+![WPF GridControl with workbook of sheets](Real-Time-Applications_images/Real-Time-Applications_img5.jpeg)
 
-Grid with workbook of sheets
-{:.caption}
 
-Sample Output
+![Complete application in WPF GridControl](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)
 
-![](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)
 
-Complete Sample Output
-{:.caption}
-
-N> For the complete code for this example, refer the following browser sample:  
-...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Product%20Showcase/Excel%20Like%20UI)
 
 
 
