@@ -98,7 +98,7 @@ Used to increase or decrease the cell values</td></tr>
 <td>
 DataTemplate</td><td>
 “DataBoundTemplate”</td><td>
-used for cell cannot be changed or edited/td></tr>
+used for cell cannot be changed or edited</td></tr>
 <tr>
 <td>
 NestedGrid</td><td>
@@ -834,9 +834,7 @@ Number of decimal places</td></tr>
 </table>
 
 
-#### Example
-
-Setting up four Double Edit cells using different group separators and decimal digits.
+For example, setting up four Double Edit cells using different group separators and decimal digits.
 
 {% tabs %}
 {% highlight c# %}
@@ -964,9 +962,7 @@ Number of digits in each group</td></tr>
 </table>
 
 
-#### Example
-
-Setting up Three Different Integer Edit Cells. 
+For example, setting up Three Different Integer Edit Cells. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1064,9 +1060,7 @@ Number of digits that appear after the decimal.</td></tr>
 </table>
 
 
-#### Example
-
-Setting up two Percent Edit cells with different group sizes and decimal digits. 
+For example, setting up two Percent Edit cells with different group sizes and decimal digits. 
 
 The first cell operates in Percent mode of editing while the second cell follows Double mode.
 
@@ -1140,9 +1134,7 @@ N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-dem
 
 MaskEdit cell type allows you to create specially formatted text cells that confirm to an edit mask that you specify. The Style.MaskEdit.Mask property holds the mask string, which will control the format of the input text being entered. The Mask Edit cells are useful when the user wants to display some formatted text such as Social Security Number (SSN), telephone number etc.
 
-#### Example
-
-Setting up Mask Edit cells with different mask string.
+For example, setting up Mask Edit cells with different mask string.
 
 {% tabs %}
 {% highlight c# %}
@@ -1246,9 +1238,7 @@ Background brush; applied only when the cell is in focus</td></tr>
 </table>
 
 
-#### Example
-
-The code below sets up two different Up and Down controls in grid cells.
+For example, the code below sets up two different Up and Down controls in grid cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -1415,9 +1405,7 @@ GridCellNestedGridModel is the class to be used as model class for this cell typ
 
 In this case, the grid will maintain its own row heights. When you resize rows the grid will also notify the parent grid that its total height is changed. While scrolling you can scroll row by row through the nested grid. The nested grid will have no separate scrollbars. They are shared with the parent grid.
 
-#### Example
-
-The code below implements a nested scroll grid. The GridCellNestedScrollGridModel is the model class to be used.
+For example, the code below implements a nested scroll grid. The GridCellNestedScrollGridModel is the model class to be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -1460,9 +1448,7 @@ Nested Grid Inside a Covered Range with its Rows Tied to the Rows of the Parent 
 
 In this case, the grid will have its own unique column widths but the row heights are shared with the parent grid. When scrolling through rows in the nested grid you also scroll the rows in the parent grid to keep them in sync. The nested grid will have no separate scrollbars. They are shared with the parent grid. When you resize rows they will also be resized in the parent grid and vice versa.
 
-#### Example
-
-The codes below show a grid whose cell contains a nested grid, which again contains a nested grid in its cell, and this second nested grid again contains a nested grid in its cell and thus forming four grids nested within one another.
+For example, the below codes show a grid whose cell contains a nested grid, which again contains a nested grid in its cell, and this second nested grid again contains a nested grid in its cell and thus forming four grids nested within one another.
 
 To specify shared row layout, use Shared option of GridNestedAxisLayout enum in the first parameter.
 
@@ -1677,9 +1663,7 @@ Nested Grid Inside a Covered Range with its Columns Tied to the Columns of the P
 
 In this case the grid will have its own unique row height but the column widths are shared with the parent grid. When scrolling through columns in the nested grid you also scroll the columns in the parent grid to keep them in sync. The nested grid will have no scrollbars. They are shared with the parent grid. When you resize columns they will also be resized in parent grid and vice versa.
 
-#### Example
-
-To specify shared column layout, use Shared option of GridNestedAxisLayout enum in the second parameter.
+For example, to specify shared column layout, use Shared option of GridNestedAxisLayout enum in the second parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -1773,9 +1757,7 @@ Nested Grid Inside a Covered Range with its Rows and Columns Independent of Pare
 
 In this case, the nested grid maintains its own row heights and column widths. You can scroll through this grid without scrolling the parent grid. Resizing rows and columns in this grid will also not affect the parent grid.
 
-#### Example
-
-To make rows and columns independent of parent grid, the GridNestedAxisLayout enum must be set to Normal in both the parameters.
+For example, to make rows and columns independent of parent grid, the GridNestedAxisLayout enum must be set to Normal in both the parameters.
 
 {% tabs %}
 {% highlight c# %}
@@ -1829,8 +1811,6 @@ Examples of custom cell types are discussed in later sections.
 ### Custom Drop-down Cells
 
 This cell displays customized drop-downs in grid cells. To attach a drop-down to a grid cell, you need to derive from GridCellDropDownCellModel and GridCellDropDownCellRenderer classes.
-
-#### Example
 
 For example, let us create a custom drop-down which lists an image alongside text in each entry and sets the text of the current drop-down selection as the cell value. The cell model class just creates the cell type by calling the cell renderer. The cell renderer then loads the cell with ImageTextListBoxItem (a custom control having two properties, Image and Text) to show image alongside text. The renderer then overrides the ArrangeUIElement method in order to bind the drop down to the data source, which is a collection of ImageTextListBoxItem and sets its current selection based on current cell value. It triggers the ComboBoxSelectionChanged event to set the new cell value based on the current drop-down selection. 
 
@@ -1980,7 +1960,6 @@ N> To create a cell type that hosts a WPF control, you should derive it from Gri
 
 The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and overrides OnInitializeContent and sets the Content Control template to Style.CellItemTemplate value.
 
-#### Example
 
 #### CellModel Class
 
@@ -2096,9 +2075,7 @@ N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-dem
 
 The Rich Text control will allow you to display and edit rich text in grid cells. The control will allow you to modify the rich text through in-place editing.
 
-#### Example
-
-It can be built by hosting the Rich Text Box control in grid cells. To host this control, the cell renderer must be derived from GridVirtualizingCellRenderer, whose OnInitializeContent should be overridden to provide the content (as Flow Document) for the rich text box. 
+For example, It can be built by hosting the Rich Text Box control in grid cells. To host this control, the cell renderer must be derived from GridVirtualizingCellRenderer, whose OnInitializeContent should be overridden to provide the content (as Flow Document) for the rich text box. 
 
 #### CellModel class
 
@@ -2227,8 +2204,6 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 ### Chart Cells
 
 Grid provides inherent support to host chart controls. This is achieved by using Data Template cells. 
-
-#### Example
 
 1.Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
 
