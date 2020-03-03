@@ -28,7 +28,7 @@ The following image illustrates this feature:
 
 In the above image, you can see the column header 1 being dragged to be placed before column 3.
 
-## Excel Like - Cell drag and drop
+## Excel like - Cell drag and drop
 
 The Excel-like Drag and Drop feature enables dragging content with their styles from cells to different locations and grids. You can use this feature to copy data to one or more locations.
 
@@ -251,8 +251,4 @@ ColumnWidths</td><td>
 void</td></tr>
 </table>
 
-### Sample Link
-
-Refer to the sample in the shipped Sample Browser. 
-
-Go to Essential Studio WPF Sample Browser Grid GridDataControl-Advanced HiddenRowColDemo.
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Excel%20Like%20Features/Hidden%20Row%20Column%20Resizing)

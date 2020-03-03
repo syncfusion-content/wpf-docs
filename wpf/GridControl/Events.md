@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | GridControl | wpf | Syncfusion
-description: events
+title: Events of WPF GridControl | Syncfusion
+description: Learn here about how to declares the events of Syncfusion WPF GridControl and handle the event operation.
 platform: wpf
-control: Grid Control
+control: GridControl
 documentation: ug
 ---
 
-# Events
+# Events in GridControl
 
 Grid control declares a number of events that it can raise in response to an activity either by the user or by the system. An Event is a message that is triggered to notify an object or a class of the occurrence of an action. When an event is triggered, all the event handlers are notified. Following are the Grid control events:
 
@@ -110,12 +110,8 @@ The following output is generated using the code above.
 
 
 
-![](Events_images/Events_img1.jpeg)
+![QueryCellInfo and CommitCellInfo in WPF GridControl](Events_images/Events_img1.jpeg)
 
-
-
-QueryCellInfo and CommitCellInfo
-{:.caption}
 
 ## QueryBaseStyles
 
@@ -181,12 +177,7 @@ this.grid.QueryBaseStyles += new GridQueryBaseStylesEventHandler(grid_QueryBaseS
 
 The following output is generated using the code above.
 
-![](Events_images/Events_img2.jpeg)
-
-
-
-QueryBaseStyles
-{:.caption}
+![QueryBaseStyles event in WPF GridControl](Events_images/Events_img2.jpeg)
 
 ## QueryCoveredRange
 
@@ -245,12 +236,7 @@ void grid_QueryCoveredRange(object sender, GridQueryBaseStylesEventArgs e)
 
 The following output is generated using the code above.
 
-![](Events_images/Events_img3.jpeg)
-
-
-
-QueryCoveredRange
-{:.caption}
+![QueryCoveredRange event in WPF GridControl](Events_images/Events_img3.jpeg)
 
 ## QueryCellSpanBackgrounds
 
@@ -307,12 +293,7 @@ void grid_QueryCellSpanBackgrounds(object sender, GridQueryCellSpanBackgroundsEv
 
 The following output is generated using the code above.
 
-![](Events_images/Events_img4.jpeg)
-
-
-
-QueryCellSpanBackgrounds
-{:.caption}
+![QueryCellSpanBackgrounds event in WPF GridControl](Events_images/Events_img4.jpeg)
 
 ## ResizingRows and ResizingColumns
 
@@ -1026,14 +1007,7 @@ void grid_CellButtonClick(object sender, GridCellButtonClickEventArgs e)
 
 The following output is generated using the code above.
 
-
-
-![](Events_images/Events_img5.jpeg)
-
-
-
-CellButtonClick
-{:.caption}
+![CellButtonClick in WPF GridControl](Events_images/Events_img5.jpeg)
 
 ## CellClick
 
@@ -1066,12 +1040,7 @@ The following output is generated using the code above.
 
 
 
-![](Events_images/Events_img6.jpeg)
-
-
-
-CellClick
-{:.caption}
+![CellClick event in WPF GridControl](Events_images/Events_img6.jpeg)
 
 ## Cell Mouse Events
 
@@ -1129,39 +1098,18 @@ void grid_CellMouseDown(object sender, GridCellMouseControllerEventArgs args)
 
 The following outputs are generated using the code above.
 
-![](Events_images/Events_img7.jpeg)
+![MouseUp event in WPF GridControl](Events_images/Events_img7.jpeg)
 
 
 
-MouseUp
-{:.caption}
+![MouseMove event in WPF GridControl](Events_images/Events_img8.jpeg)
 
 
-
-![](Events_images/Events_img8.jpeg)
-
+![MouseHover event in WPF GridControl](Events_images/Events_img9.jpeg)
 
 
-MouseMove
-{:.caption}
+![MouseDown event in WPF GridControl](Events_images/Events_img10.jpeg)
 
-
-
-![](Events_images/Events_img9.jpeg)
-
-
-
-MouseHover
-{:.caption}
-
-
-
-![](Events_images/Events_img10.jpeg)
-
-
-
-MouseDown
-{:.caption}
 
 ## CurrentCellActivating
 
