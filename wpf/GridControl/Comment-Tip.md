@@ -60,6 +60,7 @@ for (int i = 1; i < 4; i++)
 
 You can change the comment indicator at any position in a specific cell or row or column by using `GridCommentStyleInfo`. For example, you set the comment indicator at top position in any cell by using [GridCommentStyleInfo.TopLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftComment.html) or [GridCommentStyleInfo.TopRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopRightComment.html) properties.
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip)
 
 {% tabs %}
 
@@ -68,36 +69,28 @@ You can change the comment indicator at any position in a specific cell or row o
 GridCommentStyleInfo styleInfo = new GridCommentStyleInfo();
 
 // set the comment for specific cell
-string comment = grid.Model[1, 0].CellValue + ": \nPopulation rate in " + grid.Model[1, 2].ColumnIndex + " is " + grid.Model[1, 2].CellValue;
-if (grid.Model[1, 2].RowIndex == 1 && grid.Model[1,2].ColumnIndex == 2)
-{
-    styleInfo.TopLeftCommentBrush = Brushes.Red;
-    styleInfo.TopLeftComment = comment;
-    grid.Model[1, 2].GridCommentStyleInfo = styleInfo;
-}
+grid.Model[1, 2].GridCommentStyleInfo.TopLeftCommentBrush = Brushes.Red;
+grid.Model[1, 2].GridCommentStyleInfo.TopLeftCommentBrush = Brushes.Red;
+grid.Model[1, 2].GridCommentStyleInfo.TopLeftComment = grid.Model[1, 0].CellValue + ": \nPopulation rate in " + grid.Model[1, 2].ColumnIndex + " is " + grid.Model[1, 2].CellValue;
 
 //Set comment tip for specific row
 for (int i = 1; i <= 4; i++)
 {
     //Set comment tip for specific row
-    string comment = grid.Model[1, 0].CellValue + ": \nPopulation rate in " + grid.Model[1, i].ColumnIndex + " is " + grid.Model[1, i].CellValue;
     if (grid.Model[1, i].RowIndex == 1 && grid.Model[1, i].ColumnIndex > 0)
     {
-        styleInfo.TopLeftCommentBrush = Brushes.Red;
-        styleInfo.TopLeftComment = comment;
-        grid.Model[1, i].GridCommentStyleInfo = styleInfo;
+        grid.Model[1, i].GridCommentStyleInfo.TopLeftCommentBrush = Brushes.Red;
+        grid.Model[1, i].GridCommentStyleInfo.TopLeftComment = grid.Model[1, 0].CellValue + ": \nPopulation rate in " + grid.Model[1, i].ColumnIndex + " is " + grid.Model[1, i].CellValue;
     }
 }
 
 //Set comment tip for specific column
 for (int i = 1; i < 4; i++)
 {
-    string comment = grid.Model[i, 0].CellValue + ": \nPopulation rate in " + grid.Model[i, 2].RowIndex + " is " + grid.Model[i, 2].CellValue;
     if (grid.Model[i, 2].ColumnIndex == 2 && grid.Model[i, 2].RowIndex > 0)
     {
-        styleInfo.TopLeftCommentBrush = Brushes.Red;
-        styleInfo.TopLeftComment = comment;
-        grid.Model[i, 2].GridCommentStyleInfo = styleInfo;
+        grid.Model[i, 2].GridCommentStyleInfo.TopLeftCommentBrush = Brushes.Red;
+        grid.Model[i, 2].GridCommentStyleInfo.TopLeftComment = grid.Model[i, 0].CellValue + ": \nPopulation rate in " + grid.Model[i, 2].RowIndex + " is " + grid.Model[i, 2].CellValue;
     }
 }
 
@@ -107,7 +100,7 @@ for (int i = 1; i < 4; i++)
 
 ![Change the comment indicator position in WPF GridControl](Commenttip_images/show-commenttip-indicatorposition.png)
 
-N> Similarly, You can also change the remaining position(TopRight, BottomLeft and BottomRight) of comment indicator.
+N> Similarly, You can also change the comment indicator as the following position(TopRightComment, BottomLeftComment and BottomRightComment).
 
 ## Set CommentTip using QueryCellInfo
 
@@ -124,25 +117,22 @@ private void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
     //Set comment tip for specific cell
     if (e.Style.RowIndex == 1 && e.Style.ColumnIndex == 2)
     {
-        gridStyleInfo.TopLeftCommentBrush = Brushes.Red;
-        gridStyleInfo.TopLeftComment = e.Style.GridModel[1, 0].CellValue + ": \nPopulation rate in " + e.Style.ColumnIndex + " is " + e.Style.CellValue.ToString();
-        e.Style.GridCommentStyleInfo = gridStyleInfo;
+        e.Style.GridCommentStyleInfo.TopLeftCommentBrush = Brushes.Red;
+        e.Style.GridCommentStyleInfo.TopLeftComment = e.Style.GridModel[1, 0].CellValue + ": \nPopulation rate in " + e.Style.ColumnIndex + " is " + e.Style.CellValue.ToString();
     }
 
     //set comment tip for specific row
     if (e.Style.RowIndex == 1 && e.Style.ColumnIndex > 0)
     {
-        gridStyleInfo.TopLeftCommentBrush = Brushes.Red;
-        gridStyleInfo.TopLeftComment = e.Style.GridModel[1, 0].CellValue + ": \nPopulation rate in " + e.Style.ColumnIndex + " is " + e.Style.CellValue.ToString();
-        e.Style.GridCommentStyleInfo = gridStyleInfo;
+        e.Style.GridCommentStyleInfo.TopLeftCommentBrush = Brushes.Red;
+        e.Style.GridCommentStyleInfo.TopLeftComment = e.Style.GridModel[1, 0].CellValue + ": \nPopulation rate in " + e.Style.ColumnIndex + " is " + e.Style.CellValue.ToString();
     }
 
     //Set comment tip for specific column
     if (e.Style.ColumnIndex == 2)
     {
-        gridStyleInfo.TopLeftCommentBrush = Brushes.Red;
-        gridStyleInfo.TopLeftComment = e.Style.GridModel[e.Style.RowIndex,0].CellValue + "\nPopulation rate in " + e.Style.RowIndex + " is " + e.Style.CellValue.ToString();
-        e.Style.GridCommentStyleInfo = gridStyleInfo;
+        e.Style.GridCommentStyleInfo.TopLeftCommentBrush = Brushes.Red;
+        e.Style.GridCommentStyleInfo.TopLeftComment = e.Style.GridModel[e.Style.RowIndex, 0].CellValue + ": \nPopulation rate in " + e.Style.RowIndex + " is " + e.Style.CellValue.ToString();
     }
 }
 
@@ -152,6 +142,8 @@ private void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 ![CommentTip for row and column using QueryCellInfo in WPF GridControl](Commenttip_images/show-commenttip-row_column.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_using_querycellinfo)
+
 ## Handling CommentTip opening event
 
 The `CellCommentOpening` event will be triggered when the mouse hover on the cell has a comment indicator.
@@ -160,15 +152,9 @@ The `CellCommentOpening` event will be triggered when the mouse hover on the cel
 
 {% highlight C# %}
 
-string comment = grid.Model[1, 0].CellValue + ": \nPopulation rate in " + grid.Model[1, 2].ColumnIndex + " is " + grid.Model[1, 2].CellValue;
-if (grid.Model[1, 2].RowIndex == 1 && grid.Model[1, 2].ColumnIndex == 2)
-{
-    styleInfo.TopLeftCommentBrush = Brushes.Red;
-    styleInfo.TopLeftComment = comment;
-    grid.Model[1, 2].GridCommentStyleInfo = styleInfo;
-}
-
 //CellCommentOpening event
+grid.CellCommentOpening += Grid_CellCommentOpening;
+
 grid.CellCommentOpening += Grid_CellCommentOpening;
 private void Grid_CellCommentOpening(object sender, GridCellCommentOpeningEventArgs e)
 {
@@ -185,14 +171,14 @@ private void Grid_CellCommentOpening(object sender, GridCellCommentOpeningEventA
 
 ## Customize the CommentTip
 
-The size and font of the comment tip window can be customized by setting the `DataTemplate` key to [GridCommentStyleInfo.TopLeftCommentTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftCommentTemplateKey.html) property. The foreground and background color can be changed by using the `Foreground` and `Background` properties of the comment tip.
+The comment can be customized by defining a TopLeftComment in the DataTemplate and assigning to the `GridCommentStyleInfo.TopLeftCommentTemplateKey` property of the GridControl. You can show the customized changes in comment tip window by using `GridRendererStyleInfo.Comment` property. Otherwise you can't see any customized changes.
 
 {% tabs %}
 
 {% highlight XAML %}
 
 <Window.Resources>
-    <DataTemplate x:Key="TopLeftCommentTemplate">
+    <DataTemplate x:Key="TopLeftComment">
         <Border x:Name="border" BorderThickness="1" BorderBrush="DarkBlue" BorderThickness="1">
             <TextBlock Background="Purple" Foreground="White" FontSize="14" FontStyle="Italic" Text="{Binding Comment}" />
         </Border>
@@ -203,17 +189,14 @@ The size and font of the comment tip window can be customized by setting the `Da
 
 {% highlight C# %}
 
-styleInfo.TopLeftCommentTemplateKey = "TopLeftCommentTemplate";
+grid.Model[1, 2].GridCommentStyleInfo.TopLeftCommentTemplateKey = "TopLeftComment";
 
 //Using QueryCellInfo event
  private void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 {            
     if (e.Style.RowIndex == 1 && e.Style.ColumnIndex == 2)
     {
-        gridStyleInfo.TopLeftCommentBrush = Brushes.Red;
-        gridStyleInfo.TopLeftComment = e.Style.GridModel[1, 0].CellValue + ": \nPopulation rate in " + e.Style.ColumnIndex + " is " + e.Style.CellValue.ToString();
-        gridStyleInfo.TopLeftCommentTemplateKey = "TopLeftCommentTemplate";
-        e.Style.GridCommentStyleInfo = gridStyleInfo;
+        e.Style.GridCommentStyleInfo.TopLeftCommentTemplateKey = "TopLeftComment";
     }
 }
 
@@ -225,27 +208,5 @@ styleInfo.TopLeftCommentTemplateKey = "TopLeftCommentTemplate";
 
 
 N> You can also customize the comment tip window in any position of comment tip indicator using `DataTemplate`.
-
-## Remove CommentTip
-
-The [ResetTopLeftComment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~ResetTopLeftComment.html) method is used to remove the comment tip that is placed in the top left position of any cell.
-
-{% tabs %}
-
-{% highlight C# %}
-
-string comment = grid.Model[1, 0].CellValue + ": \nPopulation rate in " + grid.Model[1, 2].ColumnIndex + " is " + grid.Model[1, 2].CellValue;
-if (grid.Model[1, 2].RowIndex == 1 && grid.Model[1, 2].ColumnIndex == 2)
-{
-    styleInfo.TopLeftCommentBrush = Brushes.Red;
-    styleInfo.TopLeftComment = comment;
-    styleInfo.ResetTopLeftComment();
-    styleInfo.TopLeftCommentTemplateKey = "TopLeftCommentTemplate";
-    grid.Model[1, 2].GridCommentStyleInfo = styleInfo;
-}
-
-{% endhighlight %}
-
-{% endtabs %}
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip)
