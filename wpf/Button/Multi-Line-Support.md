@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multi Line Support | wpf | Syncfusion
-description: this section deals with how to enable the multiline of text support in a buttonadv control on wpf platform.
+description: This section deals with how to enable the multiline of text support in a buttonadv control on wpf platform.
 platform: wpf
 control: ButtonAdv
 documentation: ug
