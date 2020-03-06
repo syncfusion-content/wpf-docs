@@ -61,6 +61,8 @@ gridcontrol.Model.ColStyles[1].ShowTooltip = true;
 
 ![Tooltip for specific row in WPF GridControl](Tooltip_images/show-tooltip-rows.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_simple)
+
 ## Set ToolTip in QueryCellInfo event
 
 You can set the ToolTip to a specific cell or row or column by using the [QueryCellInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridControlBase~QueryCellInfo_EV.html) event.
@@ -88,6 +90,8 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endtabs %}
 
 ![ToolTip for row or column using QueryCellInfo in WPF GridControl](Tooltip_images/show-tooltip-querycell.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_using_querycellinfo)
 
 ## Show or hide the ToolTip
 
@@ -170,6 +174,8 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endhighlight %}
 
 {% endtabs %}
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/Tooltip_event)
 
 ## Identify whether cell has ToolTip
 
@@ -282,6 +288,8 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ![Customize the ToolTip for WPF GridControl](Tooltip_images/show-tooltip-customization.png)
 
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_customization)
+
 ## Remove the ToolTip
 
 The `ResetValue` method is used to remove the ToolTip for any cell or row or column in GridControl and to reset the ToolTip value to the default values.
@@ -295,5 +303,3 @@ gridcontrol.Model[1, 1].ResetValue(GridStyleInfoStore.ToolTipProperty);
 {% endhighlight %}
 
 {% endtabs %}
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip)

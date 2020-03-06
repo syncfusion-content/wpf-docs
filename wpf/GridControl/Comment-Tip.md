@@ -179,7 +179,7 @@ The comment can be customized by defining a TopLeftComment in the DataTemplate a
 
 <Window.Resources>
     <DataTemplate x:Key="TopLeftComment">
-        <Border x:Name="border" BorderThickness="1" BorderBrush="DarkBlue" BorderThickness="1">
+        <Border x:Name="border" BorderThickness="1" BorderBrush="DarkBlue">
             <TextBlock Background="Purple" Foreground="White" FontSize="14" FontStyle="Italic" Text="{Binding Comment}" />
         </Border>
     </DataTemplate>
@@ -209,4 +209,4 @@ grid.Model[1, 2].GridCommentStyleInfo.TopLeftCommentTemplateKey = "TopLeftCommen
 
 N> You can also customize the comment tip window in any position of comment tip indicator using `DataTemplate`.
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip)
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_customization)
