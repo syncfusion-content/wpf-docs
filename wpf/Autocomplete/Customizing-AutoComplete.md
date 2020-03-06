@@ -180,18 +180,14 @@ This feature allows the users to set the drop down icon for the Text Box control
         xmlns:local="clr-namespace:Demo_Sample"
         mc:Ignorable="d"
         Title="IsSelectedItemsVisibleInDropDown" Height="450" Width="800">
-    <StackPanel VerticalAlignment="Center">
         <StackPanel VerticalAlignment="Center" Margin="20">
-            <StackPanel VerticalAlignment="Center" Margin="0,20,0,20" HorizontalAlignment="Left">
-                <TextBlock Text="DropDownIcon:"/>
-            </StackPanel>
+            <TextBlock Text="DropDownIcon:" VerticalAlignment="Center"/>
             <editors:SfTextBoxExt HorizontalAlignment="Left" 
                                   x:Name="autoComplete1" 
                                   ShowDropDownButton="True"
                                   VerticalAlignment="Center"
                                   Height="40" Width="200"/>
         </StackPanel>
-    </StackPanel>
 </Window>
 
 {% endhighlight %}
@@ -223,11 +219,11 @@ namespace Demo_Sample
 
             List<string> list = new List<string>()
             {
-                 "India",
-                 "Uganda",
-                 "Ukraine",
-                 "Canada",
-                 "United Arab Emirates"
+                    "Lucas",
+                    "James",
+                    "Jacob",
+                    "Alan",
+                    "Alex",
             };
 
             autoComplete1.AutoCompleteSource = list;
@@ -289,12 +285,11 @@ namespace Demo_Sample
             InitializeComponent();
             List<string> items = new List<string>()
             {
-                    "Alan",
                     "Lucas",
-                    "Alex",
                     "James",
-                    "Bill",
-                    "Bailey",
+                    "Jacob",
+                    "Alan",
+                    "Alex",
             };
 
             autoComplete.AutoCompleteSource = items;

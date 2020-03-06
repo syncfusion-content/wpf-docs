@@ -425,12 +425,11 @@ namespace Demo_Sample
             InitializeComponent();
             List<string> items = new List<string>()
             {
-                    "Alan",
                     "Lucas",
-                    "Alex",
                     "James",
-                    "Bill",
-                    "Bailey",
+                    "Jacob",
+                    "Alan",
+                    "Alex",
             };
 
             autoComplete.AutoCompleteSource = items;
@@ -459,11 +458,8 @@ This feature allows the users to provide the path for the Image to be displayed 
         xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
         mc:Ignorable="d"
         Title="ImageMemberPath" Height="450" Width="800">
-    <StackPanel VerticalAlignment="Center">
         <StackPanel VerticalAlignment="Center" Margin="20">
-            <StackPanel VerticalAlignment="Center" Margin="0,20,0,20" HorizontalAlignment="Left">
-                <TextBlock Text="ImageMemberPath:"/>
-            </StackPanel>
+            <TextBlock Text="ImageMemberPath:"  VerticalAlignment="Center"/>
             <editors:SfTextBoxExt HorizontalAlignment="Left"
                                   AutoCompleteMode="Suggest"
                                   SearchItemPath="Name"
@@ -483,7 +479,6 @@ This feature allows the users to provide the path for the Image to be displayed 
                 </editors:SfTextBoxExt.AutoCompleteItemTemplate>
             </editors:SfTextBoxExt>
         </StackPanel>
-    </StackPanel>
 </Window>
 
 {% endhighlight %}

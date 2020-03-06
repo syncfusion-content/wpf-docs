@@ -32,7 +32,6 @@ Selected items will be displayed with a customizable token representation and th
         mc:Ignorable="d"
         Title="Token" Height="450" Width="800">
     <StackPanel VerticalAlignment="Center">
-        <StackPanel VerticalAlignment="Center" Margin="20">
             <TextBlock Text="None:"/>
             <editors:SfTextBoxExt HorizontalAlignment="Left" 
                                   x:Name="autoComplete1" 
@@ -50,7 +49,6 @@ Selected items will be displayed with a customizable token representation and th
                                   AutoCompleteMode="Suggest"
                                   VerticalAlignment="Center"
                                   Height="40" Width="200"/>
-        </StackPanel>
     </StackPanel>
 </Window>
 
@@ -73,11 +71,11 @@ namespace Demo_Sample
             InitializeComponent();
             List<string> list = new List<string>()
             {
-                 "India",
-                 "Uganda",
-                 "Ukraine",
-                 "Canada",
-                 "United Arab Emirates"
+                    "Lucas",
+                    "James",
+                    "Jacob",
+                    "Alan",
+                    "Alex",
             };
 
             autoComplete1.AutoCompleteSource = list;
@@ -86,4 +84,4 @@ namespace Demo_Sample
     }
 }
 
-![Token Representation](Auto-Complete_images/TokensWrapMode.png)
+![Token Representation](Auto-Complete_images/Token.png)
