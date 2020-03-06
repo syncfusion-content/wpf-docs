@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# AutoComplete
+# AutoComplete | SfTextBoxExt
 
 The AutoComplete functionality provides several modes of suggestions to users while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that the users can choose from different options.
 

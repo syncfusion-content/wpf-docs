@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selected values of AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: Learn how to retrieve selected value from AutoComplete in SfTextBoxExt
+description: This section provides the details about how to retrieve selected value from AutoComplete in SfTextBoxExt
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
