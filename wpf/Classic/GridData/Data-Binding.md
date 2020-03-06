@@ -849,7 +849,7 @@ Type </th></tr>
 <td>
 RowValidating</td><td>
 Triggers while focus moves from current row to any other row.</td><td>
-GridDataRowValidatingEventArgs contains the following arguments:IsValid: Boolean property to validate tde row values.NewValues: Values which are edited in current row.Record: Current row record.RowIndex: Index of current row.</td><td>
+GridDataRowValidatingEventArgs contains the following arguments:IsValid: Boolean property to validate the row values.NewValues: Values which are edited in current row.Record: Current row record.RowIndex: Index of current row.</td><td>
 GridDataRowValidatingEventhandler</td></tr>
 </table>
 
