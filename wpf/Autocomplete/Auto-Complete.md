@@ -378,3 +378,164 @@ namespace SfDatePickerSample
 {% endhighlight %}
 {% endtabs %}
 
+### NoResultsFoundTemplate
+
+When the entered item is not in the suggestion list, AutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the NoResultsFoundTemplate property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="Demo_Sample.NoResultsFound"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo_Sample"
+        mc:Ignorable="d">
+    <StackPanel VerticalAlignment="Center">
+        <TextBlock Text="NoResultsFound:" HorizontalAlignment="Center" Height="30"/>
+        <editors:SfTextBoxExt x:Name="autoComplete"
+                              AutoCompleteMode="Suggest"
+                              HorizontalAlignment="Center" 
+                              Width="200" Height="40">
+            <editors:SfTextBoxExt.NoResultsFoundTemplate>
+                <DataTemplate>
+                    <Label Content="No Results Found" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </DataTemplate>
+            </editors:SfTextBoxExt.NoResultsFoundTemplate>
+        </editors:SfTextBoxExt>
+    </StackPanel>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using System.Collections.Generic;
+using System.Windows;
+namespace Demo_Sample
+{
+    /// <summary>
+    /// Interaction logic for NoResultsFound.xaml
+    /// </summary>
+    public partial class NoResultsFound : Window
+    {
+        public NoResultsFound()
+        {
+            InitializeComponent();
+            List<string> items = new List<string>()
+            {
+                    "Alan",
+                    "Lucas",
+                    "Alex",
+                    "James",
+                    "Bill",
+                    "Bailey",
+            };
+
+            autoComplete.AutoCompleteSource = items;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![NoResultsFoundTemplate](Auto-Complete_images/NoResultsFoundTemplate.png)
+
+## ImageMemberPath
+
+This feature allows the users to provide the path for the Image to be displayed in the Text Box control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="Demo_Sample.ImageMemberPath"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo_Sample"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        mc:Ignorable="d"
+        Title="ImageMemberPath" Height="450" Width="800">
+    <StackPanel VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Center" Margin="20">
+            <StackPanel VerticalAlignment="Center" Margin="0,20,0,20" HorizontalAlignment="Left">
+                <TextBlock Text="ImageMemberPath:"/>
+            </StackPanel>
+            <editors:SfTextBoxExt HorizontalAlignment="Left"
+                                  AutoCompleteMode="Suggest"
+                                  SearchItemPath="Name"
+                                  ImageMemberPath="Image"
+                                  MultiSelectMode="Token" TokensWrapMode="None"
+                                  Height="40"
+                                  AutoCompleteSource="{Binding Employees}"
+                                  VerticalAlignment="Center"
+                                  Width="200">
+                <editors:SfTextBoxExt.AutoCompleteItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Image}" Margin="2" Stretch="Uniform" Width="12"/>
+                            <TextBlock Text="{Binding Name}" Margin="5 2"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </editors:SfTextBoxExt.AutoCompleteItemTemplate>
+            </editors:SfTextBoxExt>
+        </StackPanel>
+    </StackPanel>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using System.Windows;
+namespace Demo_Sample
+{
+    /// <summary>
+    /// Interaction logic for ImageMemberPath.xaml
+    /// </summary>
+    public partial class ImageMemberPath : Window
+    {
+        public ImageMemberPath()
+        {
+            InitializeComponent();
+            this.DataContext = new EmployeeViewModel();
+        }
+    }
+}
+
+Employee Class:
+
+  public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Image { get; set; }
+    }
+
+EmployeeViewModel class:
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com", Image = "a0.png" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com", Image = "a1.png" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com", Image = "a2.png" });
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+![ImageMemberPath](Auto-Complete_images/ImageMemberPath.png)

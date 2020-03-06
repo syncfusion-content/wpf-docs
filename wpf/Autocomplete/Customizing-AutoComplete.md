@@ -162,3 +162,144 @@ namespace AutoCompleteSample
 {% endtabs %}
 
 ![Dropdown background color](Auto-Complete_images/drop_down_background_color.png)
+
+## DropDownIcon
+
+This feature allows the users to set the drop down icon for the Text Box control using `ShowDropDownButton`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Window x:Class="Demo_Sample.IsSelectedItemsVisibleInDropDown"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo_Sample"
+        mc:Ignorable="d"
+        Title="IsSelectedItemsVisibleInDropDown" Height="450" Width="800">
+    <StackPanel VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Center" Margin="20">
+            <StackPanel VerticalAlignment="Center" Margin="0,20,0,20" HorizontalAlignment="Left">
+                <TextBlock Text="DropDownIcon:"/>
+            </StackPanel>
+            <editors:SfTextBoxExt HorizontalAlignment="Left" 
+                                  x:Name="autoComplete1" 
+                                  ShowDropDownButton="True"
+                                  VerticalAlignment="Center"
+                                  Height="40" Width="200"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System.Collections.Generic;
+using System.Windows;
+using Syncfusion.Windows.Controls.Input;
+
+namespace Demo_Sample
+{
+    /// <summary>
+    /// Interaction logic for IsSelectedItemsVisibleInDropDown.xaml
+    /// </summary>
+    public partial class IsSelectedItemsVisibleInDropDown : Window
+    {
+        public IsSelectedItemsVisibleInDropDown()
+        {
+            InitializeComponent();
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                VerticalAlignment = VerticalAlignment.Center,
+                Width = 200,
+                Height = 40,
+                ShowDropDownButton = true,
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+            };
+
+            List<string> list = new List<string>()
+            {
+                 "India",
+                 "Uganda",
+                 "Ukraine",
+                 "Canada",
+                 "United Arab Emirates"
+            };
+
+            autoComplete1.AutoCompleteSource = list;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DropdownIcon](Auto-Complete_images/DropDownIcon.png)
+
+## EnableAutoSize
+
+This feature allows the control to grow in size when the additional tokens are added behind the view.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Window x:Class="Demo_Sample.EnableAutoSize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        xmlns:local="clr-namespace:Demo_Sample"
+        mc:Ignorable="d"
+        Title="EnableAutoSize" Height="450" Width="800">
+    <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="EnableAutoSize:" Height="40" HorizontalAlignment="Center"/>
+            <editors:SfTextBoxExt x:Name="autoComplete"
+                                  MultiSelectMode="Token"
+                                  TokensWrapMode="Wrap"
+                                  AutoCompleteMode="Suggest"
+                                  HorizontalAlignment="Center"                         
+                                  EnableAutoSize="True"
+                                  Width="200"/>
+
+    </StackPanel>
+</Window>
+
+{% endhighlight %}
+
+{% highlight c# %}
+using System.Collections.Generic;
+using System.Windows;
+
+namespace Demo_Sample
+{
+    /// <summary>
+    /// Interaction logic for EnableAutoSize.xaml
+    /// </summary>
+    public partial class EnableAutoSize : Window
+    {
+        public EnableAutoSize()
+        {
+            InitializeComponent();
+            List<string> items = new List<string>()
+            {
+                    "Alan",
+                    "Lucas",
+                    "Alex",
+                    "James",
+                    "Bill",
+                    "Bailey",
+            };
+
+            autoComplete.AutoCompleteSource = items;
+        }
+    }     
+}
+
+![EnableAutoSize](Auto-Complete_images/EnableAutoSize.png)

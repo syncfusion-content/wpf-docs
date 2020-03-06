@@ -283,3 +283,118 @@ namespace AutoCompleteSample
 {% endtabs %}
 
 ![suggestion index](Auto-Complete_images/Auto-Complete_img27.png)
+
+## SelectedValue
+
+The `SelectedValue` property is used to retrieve the selected value from the suggestion list.
+
+### How to set the SelectedValue
+
+The following code snippet demonstrates how to set `SelectedValue`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Window x:Class="Demo_Sample.SelectedValue"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo_Sample"
+        mc:Ignorable="d"
+        Title="SelectedValue" Height="450" Width="800">
+    <StackPanel VerticalAlignment="Center">
+        <StackPanel VerticalAlignment="Center" Margin="20">
+            <StackPanel VerticalAlignment="Center" Margin="0,20,0,20" HorizontalAlignment="Left">
+                <TextBlock Text="SelectedValue:"/>
+            </StackPanel>
+            <editors:SfTextBoxExt HorizontalAlignment="Left"                                
+                                  x:Name="autoComplete"
+                                  MaxDropDownHeight="100"
+                                  MultiSelectMode="None"  
+                                  AutoCompleteMode="Suggest"                                                                                       
+                                  SearchItemPath="Name"
+                                  ValueMemberPath="Email"
+                                  AutoCompleteSource="{Binding Employees}"
+                                  VerticalAlignment="Center"                                
+                                  SelectedItemChanged="AutoComplete_SelectedItemChanged"
+                                  Height="40" 
+                                  Width="200"
+                              />
+        </StackPanel>
+    </StackPanel>
+</Window>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Windows;
+
+namespace Demo_Sample
+{
+    /// <summary>
+    /// Interaction logic for SelectedValue.xaml
+    /// </summary>
+    public partial class SelectedValue : Window
+    {
+        public SelectedValue()
+        {
+            InitializeComponent();
+            this.DataContext = new EmployeeViewModel();
+        }
+
+        private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if ((d as SfTextBoxExt).SelectedValue != null)
+            {
+                MessageBox.Show((d as SfTextBoxExt).SelectedValue.ToString(), "SelectedValue", MessageBoxButton.OK, MessageBoxImage.None);               
+            }
+        }
+    }
+}
+
+EmployeeViewModel Class:
+
+using System.Collections.Generic;
+using System.Windows;
+
+namespace Demo_Sample
+{
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com", Image = "a0.png" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com", Image = "a1.png" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com", Image = "a2.png" });
+        }
+    }
+}
+
+Employee Class:
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Image { get; set; }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![The selected value](Auto-Complete_images/SelectedValue.png)
