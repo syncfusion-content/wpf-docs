@@ -848,9 +848,9 @@ Type </th></tr>
 <tr>
 <td>
 RowValidating</td><td>
-Triggers while focus moves from current row to any otder row.</td><td>
-GridDataRowValidatingEventArgs contains tde following arguments:IsValid: Boolean property to validate tde row values.NewValues: Values which are edited in current row.Record: Current row record.RowIndex: Index of current row.</td><td>
-GridDataRowValidatingEventdandler</td></tr>
+Triggers while focus moves from current row to any other row.</td><td>
+GridDataRowValidatingEventArgs contains the following arguments:IsValid: Boolean property to validate tde row values.NewValues: Values which are edited in current row.Record: Current row record.RowIndex: Index of current row.</td><td>
+GridDataRowValidatingEventhandler</td></tr>
 </table>
 
 N> Once IsValid is set as false, the current cell doesn’t leave from edit mode until IsValid is set as true.
@@ -1627,7 +1627,7 @@ Return Type </th></tr>
 <tr>
 <td>
 IsInUnboundRows(int RowIndex)</td><td>
-this method checks if tde rows provided is an unbound row or not.this can be accessed from Grid Model as grid.Model.IsInUnboundRows(row);</td><td>
+this method checks if the rows provided is an unbound row or not.this can be accessed from Grid Model as grid.Model.IsInUnboundRows(row);</td><td>
 (int RowIndex) </td><td>
 Integer</td><td>
 Boolean  </td></tr>

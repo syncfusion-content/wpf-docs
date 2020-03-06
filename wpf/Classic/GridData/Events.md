@@ -6,7 +6,7 @@ platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Events
+# Events in GridDataControl
 
 The GridData control declares a number of events that it can handle, in response to the activities either by the end user or by the system. An event is a message that is handled, to notify an object or a class of the occurrence of an action. When an event is handled, all the event handlers are notified.
 

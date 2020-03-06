@@ -41,9 +41,9 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img129.jpeg)
+![Before exporting the data from WPF GridData control](Getting-Started_images/Getting-Started_img129.jpeg)
 
-![](Getting-Started_images/Getting-Started_img130.jpeg)
+![After exporting the data to spreadsheet from WPF GridData control](Getting-Started_images/Getting-Started_img130.jpeg)
 
 The above images shows how the entire content of the GridDataControl is exported to an Excel Spreadsheet.
 
@@ -77,9 +77,9 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 N> Only the visible child's contents are exported.
 
-![](Getting-Started_images/Getting-Started_img131.jpeg)
+![Before exporting the nested child data from WPF GridData control](Getting-Started_images/Getting-Started_img131.jpeg)
 
-![](Getting-Started_images/Getting-Started_img132.jpeg)
+![After exporting the nested child data from WPF GridData control](Getting-Started_images/Getting-Started_img132.jpeg)
 
 The above images shows how the GridControl, with Nested Child is exported to an Excel Spreadsheet.
 
@@ -99,9 +99,9 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 N> Only the visible grouping contents are exported.
 
-![](Getting-Started_images/Getting-Started_img133.jpeg)
+![Before exporting the grouping data from WPF GridData control](Getting-Started_images/Getting-Started_img133.jpeg)
 
-![](Getting-Started_images/Getting-Started_img134.jpeg)
+![After exporting the grouping data from WPF GridData control](Getting-Started_images/Getting-Started_img134.jpeg)
 
 The above images shows how the GridControl, with Grouping is exported to an Excel Spreadsheet.
 
@@ -133,11 +133,11 @@ Me.gdc.Model.ExportToCSV("Sample.csv")
 
 When the code runs, the following output displays.
 
-![](Getting-Started_images/Getting-Started_img135.jpeg)
+![Before exporting the grid from WPF GridData control to CSV](Getting-Started_images/Getting-Started_img135.jpeg)
 
 When you are ready to export the entire grid, click Export to CSV; the grid content can then be converted to CSV format. 
 
-![](Getting-Started_images/Getting-Started_img136.jpeg)
+![After exporting the grid from WPF GridData control to CSV](Getting-Started_images/Getting-Started_img136.jpeg)
 
 ## Export to PDF
 
@@ -247,7 +247,7 @@ yncfusionyncfusion:GridDataVisibleColumn He”derText="Shi” Address" 
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img137.png)
+![Export entire data to the WPF GridData control](Getting-Started_images/Getting-Started_img137.png)
 
 #### Exporting to PdfGrid
 
@@ -297,7 +297,7 @@ if (sfd.ShowDialog() == true)
 
 The following screenshot shows the exported pdf document:
 
-![](Getting-Started_images/Getting-Started_img138.png)
+![Export the PDF document in WPF GridData control](Getting-Started_images/Getting-Started_img138.png)
 
 #### Exporting to PdfLightTable Document
 
@@ -344,13 +344,13 @@ if (sfd.ShowDialog() == true)
 
 {% endhighlight  %}
 
-![](Getting-Started_images/Getting-Started_img139.png)
+![Exporitng to PDF table in WPF GridDataControl](Getting-Started_images/Getting-Started_img139.png)
 
 #### Export Selected Range
 
 You can convert the selected range of the GridData control into a pdf file.
 
-![](Getting-Started_images/Getting-Started_img140.png)
+![Export selected ranges in WPF GridData control](Getting-Started_images/Getting-Started_img140.png)
 
 #### Exporting to PdfGrid
 
@@ -401,7 +401,7 @@ if (sfd.ShowDialog() == true)
 
 The following screenshot shows the exported pdf document of a selected range of the GridData control:
 
-![](Getting-Started_images/Getting-Started_img141.png)
+![Exproting to PDF grid in WPF GridData control](Getting-Started_images/Getting-Started_img141.png)
 
 #### Exporting to PdfLightTable Document
 
@@ -451,7 +451,7 @@ using ( Stream stream = sfd.OpenFile())
 
 The following screenshot shows the exported PdfLightTable document of the selected range of the GridData control.
 
-![](Getting-Started_images/Getting-Started_img142.png)
+![Exporting to Adobe reader document in WPF GridData control](Getting-Started_images/Getting-Started_img142.png)
 
 #### Export GridDataControl with Grouping
 
@@ -459,13 +459,13 @@ The GridData control converts the content of the GridData control to a pdf docum
 
 The following screenshot illustrates how the GridData control appears as a pdf file after grouping the data.
 
-![](Getting-Started_images/Getting-Started_img143.png)
+![Before exporting WPF GridData control with grouping data](Getting-Started_images/Getting-Started_img143.png)
 
-![](Getting-Started_images/Getting-Started_img144.png)
+![After exporting WPF GridData control with grouping data](Getting-Started_images/Getting-Started_img144.png)
 
 The following screenshot illustrates how the GridData control appears as a PdfLightTable document after grouping the data.
 
-![](Getting-Started_images/Getting-Started_img145.png)
+![Export the grouping data in WPF GridData control](Getting-Started_images/Getting-Started_img145.png)
 
 #### Exporting Customized GridData Control 
 
@@ -717,13 +717,13 @@ SaveFileDialog sfd = new SaveFileDialog
 
 The below screenshot shows the customized blend styling of the GridData control.
 
-![](Getting-Started_images/Getting-Started_img146.png)
+![WPF GridData control with Blend style](Getting-Started_images/Getting-Started_img146.png)
 
 #### Exported PDF Document
 
 The screenshot below shows a PDF document of the blend styling GridData control.
 
-![](Getting-Started_images/Getting-Started_img147.png)
+![Export the WPF GridData control with Blend style to PDF document](Getting-Started_images/Getting-Started_img147.png)
 
 ## Serialization in GridDataControl
 
