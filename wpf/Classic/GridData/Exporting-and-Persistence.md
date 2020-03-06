@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting and persistence | GridData (Classic) | wpf | Syncfusion
-description: Exporting and persistence
+description: Learn here about how to exporting and persistence of Syncfusion WPF GridData control and serialize the XML file and string.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
@@ -171,7 +171,7 @@ Essential GridData control allows you to export the GridData control’s entire 
 
 #### Use Case Scenario
 
-A large data can be maintained asPDFpdf file and the entire content of the GridData control can be exported iPDF a pdf file.
+A large data can be maintained as PDF file and the entire content of the GridData control can be exported iPDF a pdf file.
 
 The following XAML code example shows, how the GridData control is defined in an application.
 

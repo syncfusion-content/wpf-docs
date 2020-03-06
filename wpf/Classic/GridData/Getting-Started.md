@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | GridData (Classic) | wpf | Syncfusion
-description: getting started	
+description: Getting Started with WPF GridData Control that acts as an efficient display engine for tabular data that can be customized down to the cell level.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
@@ -965,7 +965,7 @@ A self-relational collection is a collection of objects in which each object has
 
    ~~~
    
-2. Bind ItemsSource of GridTreeControl and assign ChilPropertyName—these can be set in either XAML or code.
+2. Bind ItemsSource of GridTreeControl and assign ChildPropertyName—these can be set in either XAML or code.
 
    ~~~ xaml
 

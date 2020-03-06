@@ -1,12 +1,12 @@
 ---
 layout: post
 title: MVVM Enhancements | GridData (Classic) | wpf | Syncfusion
-description: MVVM Enhancements
+description: Learn here about how to bind the Syncfusion WPF GridData control using the MVVM enhancements and its commands.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# MVVM Enhancements
+# MVVM Enhancements in GridDataControl
 
 ## View – View Model Communication
 
@@ -30,7 +30,7 @@ You can add commands to a GridData control in the following three ways:
 
 This section explains how to add GridDataControlRecordsSelectionChangedCommandWithEventArgs command to the GridData control. The actual event arguments are passed to the Command method as parameters.
 
-The following code example illustrates how to define the GridDataControlRecordsSelectionChangeddCommandWithEventArgs command in XAML.
+The following code example illustrates how to define the GridDataControlRecordsSelectionChangedCommandWithEventArgs command in XAML.
 
 {% highlight xaml %}
 
