@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Token support in AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: This section provides details about how to enable multi selection in AutoComplete (SfTextBoxExt).
+description: This section provides the details about how to enable multi selection mode in AutoComplete in SfTextBoxExt.
 platform: WPF
 control: SfTextBoxExt
 documentation: ug
 ---
 
 ## Multiple Selection in Xamarin SfAutoComplete
+
 Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
 
 * Token Representation
