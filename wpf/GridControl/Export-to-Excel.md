@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Export Options | GridControl | wpf | Syncfusion
-description: export options
+title: Export to excel in WPF GridControl | Syncfusion
+description: Learn here about how to export the data from Syncfusion WPF GridControl to Excel sheet and its features.
 platform: wpf
-control: Grid Control
+control: GridControl
 documentation: ug
 ---
 
-# Export Options
+# Export to Excel in Grid
+
+This section explains about Exporting to Excel and its features of WPF GridControl
 
 ## Exporting to Excel
 
@@ -19,14 +21,13 @@ The GridExcelConverter class provides support for exporting data from a Grid con
 
 ### Features
 
-
 There are three options for exporting a Grid control: 
 
 * Converting the entire content of a grid
 * Converting a selected content of the grid
 * Pass the Excel Engine
-### Entire Content
 
+### Entire Content
 
 You can convert the entire content of a GridData control to an Excel Spreadsheet. You can also avail the option for specifying the version of the Excel file using the ExcelVersion enum. The version can be one of the following: 
 
@@ -44,15 +45,10 @@ gridControl.Model.ExportToExcel(@"Sample.xlsx", ExcelVersion.Excel2007);
 {% endhighlight  %}
 {% endtabs %}
 
-![](Export-Options_images/Export-Options_img1.jpeg)
+![Convert an entire content of data to excel sheet in WPF GridControl](Export-Options_images/Export-Options_img1.jpeg)
 
 
-
-
-
-![](Export-Options_images/Export-Options_img2.jpeg)
-
-
+![Convert an entire content of data to excel sheet in WPF GridControl](Export-Options_images/Export-Options_img2.jpeg)
 
 The images above show how the entire content of the Grid control is exported to an Excel spreadsheet.
 
@@ -96,13 +92,10 @@ gridControl.Model.ExportToExcel(range, mySheet, excelRange, @"Sample2.xls", Exce
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-Options_images/Export-Options_img3.jpeg)
+![Select the specific range in excel sheet](Export-Options_images/Export-Options_img3.jpeg)
 
 
-
-
-
-![](Export-Options_images/Export-Options_img4.jpeg)
+![Select the specific range of WPF GridControl export to specific range on excel sheet](Export-Options_images/Export-Options_img4.jpeg)
 
 
 
@@ -123,17 +116,14 @@ gridControl.Model.ExportToExcel(range, excelEngine, 0, mySheet.Range[5,5], @"Sam
 {% endtabs %}
 
 
-![](Export-Options_images/Export-Options_img5.jpeg)
+![Select the specific range in excel sheet](Export-Options_images/Export-Options_img5.jpeg)
+
+
+![Select the specific range of WPF GridControl export to specific range on excel sheet](Export-Options_images/Export-Options_img6.jpeg)
 
 
 
-
-
-![](Export-Options_images/Export-Options_img6.jpeg)
-
-
-
-N> For more details, refer the following browser sample: ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\ExcelExport\GridControl Excel Export Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Export/Excel%20Export)
 
 ## Exporting to CSV
 
@@ -171,15 +161,12 @@ When the code runs, the following output displays.
 
 
 
-![](Export-Options_images/Export-Options_img7.jpeg)
-
-
+![Before export the whole grid to CSV format in WPF GridControl](Export-Options_images/Export-Options_img7.jpeg)
 
 When you are ready to export the entire grid, click Export Whole Grid; the grid content will then be converted to CSV format. 
 
 
-
-![](Export-Options_images/Export-Options_img8.jpeg)
+![After export the whole grid to CSV format in WPF GridControl](Export-Options_images/Export-Options_img8.jpeg)
 
 
 
@@ -190,33 +177,26 @@ You can convert selected grid content to CSV format by using the following code:
 {%tabs%}
 {% highlight c# %}
 GridRangeInfoList rangeList = gc.Model.SelectedRanges;
-
-            if (rangeList.Count > 0)
-            {
-                GridRangeInfo range = rangeList[0];
-                gc.Model.ExportToCSV(range, "Sample.csv");
+if (rangeList.Count > 0)
+{
+    GridRangeInfo range = rangeList[0];
+    gc.Model.ExportToCSV(range, "Sample.csv");
 }
 {% endhighlight  %}
 {% highlight vbnet %}
 Dim rangeList As GridRangeInfoList = gc.Model.SelectedRanges
 If rangeList.Count > 0 Then
-Dim range As GridRangeInfo = rangeList(0)
-gc.Model.ExportToCSV(range, "Sample.csv")
+    Dim range As GridRangeInfo = rangeList(0)
+    gc.Model.ExportToCSV(range, "Sample.csv")
 End If
 {% endhighlight  %}
 {%endtabs%}
 
 When the code runs, the following output displays.
 
-
-
-![](Export-Options_images/Export-Options_img9.jpeg)
-
-
+![Before export the selected range in grid to CSV format in WPF GridControl](Export-Options_images/Export-Options_img9.jpeg)
 
 To export a selection, highlight the portion of the grid you want to export, and then click Export Selected Range; the selected grid content will then be exported to a CSV file.
 
-![](Export-Options_images/Export-Options_img10.jpeg)
-
-
+![After export the selected range in grid to CSV format in WPF GridControl](Export-Options_images/Export-Options_img10.jpeg)
 

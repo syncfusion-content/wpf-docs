@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Excel Importing | GridControl | wpf | Syncfusion
-description: excel importing
+title: Import from excel in WPF GridControl | Syncfusion
+description: Learn here about how to importing the entire workbook, layout and data from excel in Syncfusion WPF GridControl.
 platform: wpf
-control: Grid Control
+control: GridControl
 documentation: ug
 ---
 
-# Excel Importing
+# Import from Excel in Grid
 
 Essential Grid WPF provides an in-built support for Excel Importing. This feature allows you to import the Excel Workbook into a GridControl, while preserving styles, formulas, named ranges, conditional formatting, freezing pane and bookmarks.
 
@@ -31,14 +31,7 @@ You can get the [GridModelImportExtensions](https://help.syncfusion.com/cr/wpf/S
 
 This feature can be used to view the Excel workbook into applications with the same set of styles and to edit the data in run time. You can also view the Excel workbook into web application with the same set of styles and borders.
 
-## Sample Link
-
-To view samples: 
-
-1. Select Start -> Programs -> Syncfusion -> Essential Studio XX.X.X.XX -> Dashboard.
-2. Select   Run Locally Installed Samples in WPF Button.
-3. Now expand the Import item in the Sample Browser.
-4. Choose the Excel Import samples to launch. 
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Import/Excel%20Import)
 
 
 
@@ -172,8 +165,6 @@ NA</td></tr>
 
 You can Import the entire Excel Spreadsheet to a GridControl. You can also import the Excel97to2003 and Excel2007to2010 formats
 
-Importing the single sheet to a GridControl
-
 In order to import the single sheet to grid control, open the file and pass this file as stream to the ImportFromExcel method as illustrated in the following code snippet:
 
 {% tabs %}
@@ -188,8 +179,6 @@ this.gridControl.Model.ImportFromExcel(new MemoryStream(file));
 
 
 ### Importing the entire workbook to a GridControl
-
-Open the workbook
 
 To import the entire workbook to a GridControl, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet:
 
@@ -218,8 +207,6 @@ GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcel(workBook
 {% endtabs %}
 
 ### Importing the entire workbook to a virtual GridControl
-
-Open the workbook
 
 To import the entire workbook to a virtual GridControl, initially you have to open the workbook by using the XlsIO library as shown in the following code snippet. 
 

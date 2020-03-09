@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Testability Frameworks | Grid | WPF | Syncfusion
-description: testability frameworks
+title: Testing in  WPF GridControl | Syncfusion
+description: Learn here about how to test the Syncfusion WPF GridControl UI automation and testing with Coded UI.
 platform: wpf
-control: Grid
+control: GridControl
 documentation: ug
 ---
 
@@ -18,10 +18,7 @@ Microsoft UI Automation provides a single, generalized interface that automation
 With the Grid control, UI Automation is enabled for writing testable applications. It involves the patterns below.
 
 
-![](Testability-Frameworks_images/Testability-Frameworks_img1.png)
-
-Grid UI Automation Providers
-{:.caption}
+![WPF GridControl UI Automation Providers](Testability-Frameworks_images/Testability-Frameworks_img1.png)
 
 Grid control is customized for maximum performance, and thus the visuals are always virtualized. Automation Elements are generated for these live visuals alone. The different sets of automation providers implemented, provide access to the inner elements.
 
@@ -34,10 +31,8 @@ Following are the different sets of identifiers that can be obtained for the Gri
 
 Each cell in the grid is considered as an Automation Element, which in itself has some providers implemented. The following figure displays the different sets of identifiers for a Grid Cell Element.
 
-![](Testability-Frameworks_images/Testability-Frameworks_img2.png)
+![Cell element automation provider in WPF GridControl](Testability-Frameworks_images/Testability-Frameworks_img2.png)
 
-Grid Cell Element Automation Provider
-{:.caption}
 
 Following are the different set of identifiers that can be obtained for each Grid Cell Element:
 
@@ -61,9 +56,7 @@ The following set of instructions illustrates the same.
 1. Create a WPF sample application with references added up for Syncfusion assemblies.
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img3.png)
-
-   Syncfusion Assemblies referenced in the WPF Application
+   ![Syncfusion Assemblies referenced in the WPF Application](Testability-Frameworks_images/Testability-Frameworks_img3.png)
 
 2.Create a console project as shown below.
 
@@ -91,10 +84,7 @@ private void InitGrid()
 
 3.Enter the path where the output of the Window sample has to be saved, in the Output path field.
 
-![](Testability-Frameworks_images/Testability-Frameworks_img4.png)
-
-Specifying the Output Path
-{:.caption}
+![Specifying the Output Path](Testability-Frameworks_images/Testability-Frameworks_img4.png)
 
 N> Mention the output path as the Console application's bin\Debug directory.
 
@@ -157,10 +147,7 @@ You can get the Extension Project of Coded UI from [this](http://www.syncfusion.
 
 The architectural diagram is as follows:
 
-![](Testability-Frameworks_images/Testability-Frameworks_img5.jpeg)
-
-Architectural Diagram
-{:.caption}
+![Architectural Diagram of WPF GridControl testing process](Testability-Frameworks_images/Testability-Frameworks_img5.jpeg)
 
 * Grid Test Plugin implements the necessary details to communicate with the VS 2010 Test Framework.
 * The Grid application host runs with a .NET Remoting channel hosted internally to communicate with the Test plugin through an interface. The data is then channeled across to the VS 2010 Test Framework to identify the Cells.
@@ -247,18 +234,12 @@ N> The GridControlTestApplication works only with a single Grid instance in the 
 
 1. Create a new Test Project in VS2010,
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img6.jpeg)
-
-   New Project
-   {:.caption}
-
+   ![Crea new test project](Testability-Frameworks_images/Testability-Frameworks_img6.jpeg)
+   
 2. Add a new Coded UI Test item for the project.
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img7.jpeg)
-
-   Add Coded UI Test
-   {:.caption}
-
+   ![Add Coded UI Test into the project](Testability-Frameworks_images/Testability-Frameworks_img7.jpeg)
+   
 3. Add a TestMethod called HelloWorld_Test.
 
 The following code illustrates this.
@@ -275,42 +256,26 @@ public void HelloWorld_Test()
 
   * Right-click on the TestMethod body and then select as below,
 
-  ![](Testability-Frameworks_images/Testability-Frameworks_img8.jpeg)
-  
-  Generate Code
-  {:.caption}
-  
+  ![Generate code for Coded UI Test](Testability-Frameworks_images/Testability-Frameworks_img8.jpeg)
+    
 5.Click on the record button to perform actions, you can add a Hello World text in a grid cell [x, y] in this scenario.
 
-
-  ![](Testability-Frameworks_images/Testability-Frameworks_img9.jpeg)
-  
-  UI Recorder
-  {:.caption}
-
-  ![](Testability-Frameworks_images/Testability-Frameworks_img10.jpeg)
-  
-  Hello World Text In a Cell
-  {:.caption}
-  
+  ![UI Recorder of Coded UI Test](Testability-Frameworks_images/Testability-Frameworks_img9.jpeg)
+    
+  ![Added Hello World text in a Cell](Testability-Frameworks_images/Testability-Frameworks_img10.jpeg)
+    
 6.Click on Generate code in the Coded UI Test Builder.
 
-  ![](Testability-Frameworks_images/Testability-Frameworks_img11.jpeg)
-  
-  Add And Generate
-  {:.caption}
-
+  ![Add And Generate code in coded UI test builder](Testability-Frameworks_images/Testability-Frameworks_img11.jpeg)
+    
 7.You can assert the cell value using the cross-hair present in the Coded UI Test builder. 
 
 8.Click on the cross-hair and hover to the Hello World cell.
 
   N> The assert window is displayed as below.
   
-  ![](Testability-Frameworks_images/Testability-Frameworks_img12.jpeg)
-  
-  Assert Window
-  {:.caption}
-
+  ![Show the Assert Window](Testability-Frameworks_images/Testability-Frameworks_img12.jpeg)
+    
 9.Add asserts to the properties displayed in the assert window and generate the assert method.
 
 10.Close the Coded UI Test builder. 
@@ -334,18 +299,13 @@ public void HelloWorld_Test()
 1. Build and run the Grid WPF application.
 2. Build the test project and run the Unit tests using VS 2010.
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img13.jpeg)
+   ![Test list in Coded UI testing](Testability-Frameworks_images/Testability-Frameworks_img13.jpeg)
    
-   Test List
-   {:.caption}
-
 3. Run the test HelloWorld_Test.
 
    * This will automatically focus the running Grid application and perform automated testing.
    
    N> The sample test procedure mentioned above requires the sample to be run individually, in normal automated testing, this would be included in the TestInitialize method to start the application.
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img14.jpeg)
+   ![Show the test result](Testability-Frameworks_images/Testability-Frameworks_img14.jpeg)
    
-   Test Result
-   {:.caption}

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Serialization Support | Grid | WPF | Syncfusion
-description: This section explains that how the data in the grid are serialized to xml file for reuse it later for Syncfusion Essential WPF.
+title: Serialization in WPF GridControl | Syncfusion
+description: Learn here about how the data in the grid are serialized to xml file for reuse it later for Syncfusion Essential WPF.
 platform: wpf
-control: Grid
+control: GridControl
 documentation: ug
 ---
 
@@ -19,10 +19,10 @@ Serialization can be implemented for the applications which need to save its dat
 
 The following sample application explains the implementation of the Serialization support to GirdControl.
 
-1. Create an application. Create a WPF application and add the GridControl to it. 
-2. Call the Serialization support methods
+1.Create an application. Create a WPF application and add the GridControl to it. 
+2.Call the Serialization support methods
 
-   In the application, create three buttons. The first button to call the Serialize() method, the second button to make changes to the Grid and the third button is to call the Deserialize() method. The following code snippet explains the implementation of Serialization.
+In the application, create three buttons. The first button to call the Serialize() method, the second button to make changes to the Grid and the third button is to call the Deserialize() method. The following code snippet explains the implementation of Serialization.
 
 {% tabs %}
 {% highlight c# %}
@@ -119,10 +119,7 @@ void</td></tr>
 </table>
 
 
-## Sample Link
-
-1. Refer to the samples in the shipped Sample Browser. 
-2. Go to Essential Studio WPF Sample Browser  Grid  Serialization GridControl Serialization Demo
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Serialization)
 
 
 
