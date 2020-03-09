@@ -19,7 +19,7 @@ Solid color comprises a single color with its alpha, red, blue, and green channe
 
 Choosing color from HSV(Hue, saturation and value) explained below.
 
-### HUE
+### Hue
 
 Hue is the color portion of the model, expressed as a number between 0 and 360 degrees, with all colors falling within a certain range. In [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html), the Hue value can be modified using the slider or H-Hue value editor.
 
