@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | GridData (Classic) | wpf | Syncfusion
-description: getting started	
+description: Getting Started with WPF GridData Control that acts as an efficient display engine for tabular data that can be customized down to the cell level.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
 
-# Getting Started	
+# Getting Started with GridData
 
 This section is designed to help you understand and quickly get started using Essential Grid in your WPF application. Control appearance and structure are defined and the Essential Grid’s relevant classes are depicted.
 
@@ -31,7 +31,7 @@ This is a general-purpose grid that can be used in any form, either holding its 
 
 In the Grid control, each cell acts as a single entity, which is suitable for applications such as Excel simulator, where the data in the grid cells are not interrelated and need to be maintained in the specific cells themselves. You can also operate this control in virtual mode, where data is not stored in the grid’s internal data structure but comes from an external source like a data table, for example. In virtual mode, data is dynamically loaded into the grid on demand or when users need to view the data.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![WPF GridControl overview](Getting-Started_images/Getting-Started_img1.png)
 
 ### GridData Control
 
@@ -39,13 +39,13 @@ The GridData control is designed to be bound with a data source. In the GridData
 
 For more detailed information about data source connections, refer to the Data Binding section. 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![WPF GridDataControl overview](Getting-Started_images/Getting-Started_img2.png)
 
 ### GridTree Control
 
 The GridTree control serves as a multicolumn tree control that is optimized to display thousands of items. This control uses a load-on-demand architecture to quickly generate a tree view. You can toggle the view of the underlying nodes by clicking the plus-minus glyphs of a root node. This control provides complete customization options such as custom level styles, glyphs, node images, and more.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![WPF GridTreeControl overview](Getting-Started_images/Getting-Started_img3.png)
 
 ## Class Diagram 
 
@@ -53,11 +53,11 @@ The following illustration depicts the Class Diagram for Essential Grid for WPF.
 
 ### Control Hierarchy
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Control hierarchy in WPF GridData control](Getting-Started_images/Getting-Started_img4.png)
 
 ### Model Hierarchy
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Model hierarchy in WPF GridData control](Getting-Started_images/Getting-Started_img5.png)
 
 ## Add Essential Grid to an Application
 
@@ -75,15 +75,15 @@ Please follow the steps below to add the Grid control through a designer.
 2. Open the Designer window.
 3. Drag ScrollViewer from the Toolbox and drop it in the Designer window (Since the Grid control doesn’t have a built-in ScrollViewer, to make the grid flow based on data, the grid should be placed inside the ScrollViewer control.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+   ![Drag the ScrollViewer from toolbox](Getting-Started_images/Getting-Started_img6.png)
 
 4. Drag GridControl from the Toolbox and drop it inside the ScrollViewer.
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+   ![Drag the GridControl from toolbox](Getting-Started_images/Getting-Started_img7.png)
 
 5. Once you drag GridControl and drop it in ScrollViewer, the grid control is added to the designer and its dependent assemblies are added to the project.
 
-   ![](Getting-Started_images/Getting-Started_img8.png)
+   ![WPF GridControl added to the designer](Getting-Started_images/Getting-Started_img8.png)
 
 ### Programmatically Adding the Grid Control
 
@@ -97,7 +97,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
    3. Syncfusion.GridCommon.Wpf.dll
    4. Syncfusion.Shared.Wpf.dll
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+   ![Added assemblies to the WPF GridData control project](Getting-Started_images/Getting-Started_img9.png)
 
 3. Name the root Grid as layoutRoot in the application’s XAML page.
 
@@ -185,7 +185,7 @@ The Grid control is a cell-based control, so to populate it, RowCount and Column
 
 3. Now, run the application. The grid appears as follows. 
 
-   ![](Getting-Started_images/Getting-Started_img10.png)
+   ![Show the data of WPF GridControl](Getting-Started_images/Getting-Started_img10.png)
 
 ### Add the GridData Control to a WPF Application
 
@@ -202,7 +202,7 @@ This section shows you how to add a GridData control to a WPF application and ho
    4. Syncfusion.GridCommon.Wpf.dll
    5. Syncfusion.Shared.Wpf.dll
 
-   ![](Getting-Started_images/Getting-Started_img13.png)
+   ![Added assemblies to the project](Getting-Started_images/Getting-Started_img13.png)
 
 3. Name the root grid as layoutRoot in the application’s XAML page.
 
@@ -342,7 +342,7 @@ This section explains how to bind a data table from a database to the GridData c
 
 Once the application runs, the following output is generated.
 
-![](Getting-Started_images/Getting-Started_img14.png)
+![Binding data tables to the WPF GridData control](Getting-Started_images/Getting-Started_img14.png)
 
 #### Samples
 
@@ -498,7 +498,7 @@ To view samples, follow these steps:
 
 When the application runs, the following output is generated.
 
-![](Getting-Started_images/Getting-Started_img15.png)
+![Binding with IEnumerable collection of WPF GridData control](Getting-Started_images/Getting-Started_img15.png)
 
 ### Add the GridTree Control to a WPF Application
 
@@ -514,7 +514,7 @@ This section demonstrates how to add a GridTree control to a WPF application and
    3. Syncfusion.GridCommon.Wpf.dll
    4. Syncfusion.Shared.Wpf.dll
    
-   ![](Getting-Started_images/Getting-Started_img18.png)
+   ![Added assemblies for WPF GridTreeControl](Getting-Started_images/Getting-Started_img18.png)
 
 3. Name the root grid as layoutRoot in the application’s XAML page.	
 
@@ -791,7 +791,7 @@ To populate data using this event, follow these steps:
 
 When the application runs, the following output is generated.
 
-![](Getting-Started_images/Getting-Started_img19.png)
+![Show the output of WPF GridTreeControl](Getting-Started_images/Getting-Started_img19.png)
 
 #### Samples
 
@@ -965,7 +965,7 @@ A self-relational collection is a collection of objects in which each object has
 
    ~~~
    
-2. Bind ItemsSource of GridTreeControl and assign ChilPropertyName—these can be set in either XAML or code.
+2. Bind ItemsSource of GridTreeControl and assign ChildPropertyName—these can be set in either XAML or code.
 
    ~~~ xaml
 
@@ -1041,7 +1041,7 @@ A self-relational collection is a collection of objects in which each object has
 
 When the application runs, the following output is generated.
 
-![](Getting-Started_images/Getting-Started_img20.png)
+![Binding the collection of WPF GridTree control](Getting-Started_images/Getting-Started_img20.png)
 
 #### Samples
 
@@ -1216,7 +1216,7 @@ The following steps explain how to bind a data view from a database to the GridT
    
 When the application runs, the following output is generated.
 
-![](Getting-Started_images/Getting-Started_img21.png)
+![Binding a data view to the WPF GridTree control](Getting-Started_images/Getting-Started_img21.png)
 
 #### Sample
 

@@ -101,6 +101,11 @@ DataTemplate</td><td>
 used for cell cannot be changed or edited</td></tr>
 <tr>
 <td>
+Hyperlink</td><td>
+“Hyperlink”</td><td>
+Used to navigate to another cell</td></tr>
+<tr>
+<td>
 NestedGrid</td><td>
 “ScrollGrid”</td><td>
 Used to display the multiple scroller in row and column</td></tr>
@@ -635,6 +640,222 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Date%20Time%20Cell)
 
+## IntegerEdit cell type
+
+IntegerEdit is a specialized cell type that restricts the data entry to integers. The table below lists the style properties specific to this cell type.
+
+<table>
+<tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+Cell Type</td><td>
+Set to “IntegerEdit”</td></tr>
+<tr>
+<td>
+NumberGroupSeparator</td><td>
+String that separates groups of digits</td></tr>
+<tr>
+<td>
+NumberGroupSizes</td><td>
+Number of digits in each group</td></tr>
+<tr>
+<td>UseNullOption</td>
+<td>By default, the value of IntegerEdit cells is "0". Set {{'[UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridIntegerEditStyleInfo~UseNullOption.html)'| markdownify}} as "True" to hide or delete the default value in IntegerEdit cells.</td>
+</tr>
+</table>
+
+
+For example, setting up Three Different Integer Edit Cells. 
+
+{% tabs %}
+{% highlight c# %}
+
+int[] sizes = { 2, 3, 4 };
+grid.Model[12, 2].CellType = "IntegerEdit";
+grid.Model[12, 2].IsEditable = true;
+grid.Model[12, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ","};
+grid.Model[12, 2].NumberFormat.NumberGroupSizes = sizes;
+grid.Model[12, 2].CellValue = 1;
+
+grid.Model[8, 2].CellType = "IntegerEdit";
+grid.Model[8, 2].IsEditable = true;
+grid.Model[8, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ";"};
+grid.Model[8, 2].NumberFormat.NumberGroupSizes = sizes;
+grid.Model[8, 2].CellValue = 222222;
+
+grid.Model[10, 2].CellType = "IntegerEdit";
+grid.Model[10, 2].IsEditable = true;
+grid.Model[10, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "@"};
+grid.Model[10, 2].NumberFormat.NumberGroupSizes = sizes;
+grid.Model[10, 2].CellValue = 1000;
+
+grid.Model.ColStyles[3].CellType = "IntegerEdit";
+grid.Model.ColStyles[3].IntegerEdit.UseNullOption = true;
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    int[] sizes = { 2, 3, 4 };
+    e.Style.GridModel[12, 2].CellType = "IntegerEdit";
+    e.Style.GridModel[12, 2].IsEditable = true;
+    e.Style.GridModel[12, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "," };
+    e.Style.GridModel[12, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[12, 2].CellValue = 1;
+
+    e.Style.GridModel[8, 2].CellType = "IntegerEdit";
+    e.Style.GridModel[8, 2].IsEditable = true;
+    e.Style.GridModel[8, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ";" };
+    e.Style.GridModel[8, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[8, 2].CellValue = 222222;
+
+    e.Style.GridModel[10, 2].CellType = "IntegerEdit";
+    e.Style.GridModel[10, 2].IsEditable = true;
+    e.Style.GridModel[10, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "@" };
+    e.Style.GridModel[10, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[10, 2].CellValue = 1000;
+
+    e.Style.GridModel.ColStyles[3].CellType = "IntegerEdit";
+    e.Style.GridModel.ColStyles[3].IntegerEdit.UseNullOption = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Integeredit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img16.jpeg)
+
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Integer%20Edit%20Cell)
+
+## DoubleEdit cell type
+
+Using DoubleEdit cell type will restrict the user to enter only double (value type) values into the cell. Thus it can be used to display System.Double type values. Below are the style properties that affect this cell.
+
+<table>
+<tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
+<tr>
+<td>
+Cell Type</td><td>
+Set to “DoubleEdit”</td></tr>
+<tr>
+<td>
+NumberGroupSeparator</td><td>
+String that separates groups of digits to the left of the decimal</td></tr>
+<tr>
+<td>
+NumberDecimalSeparator</td><td>
+String to use as decimal separator</td></tr>
+<tr>
+<td>
+NumberDecimalDigits</td><td>
+Number of decimal places</td></tr>
+</table>
+
+
+For example, setting up four Double Edit cells using different group separators and decimal digits.
+
+{% tabs %}
+{% highlight c# %}
+
+int[] sizes = { 2, 3, 4 };
+grid.Model[6, 2].CellType = "DoubleEdit";
+grid.Model[6, 2].NumberFormat = new NumberFormatInfo 
+{ 
+    NumberGroupSeparator = ";", 
+    NumberDecimalSeparator = ".", 
+    NumberDecimalDigits = 4 
+};
+
+grid.Model[6, 2].NumberFormat.NumberGroupSizes = sizes;
+grid.Model[6, 2].CellValue = 2345.00; 
+
+grid.Model[8, 2].CellType = "DoubleEdit";
+grid.Model[8, 2].NumberFormat = new NumberFormatInfo 
+{ 
+    NumberGroupSeparator = ",", 
+    NumberDecimalSeparator = ".", 
+    NumberDecimalDigits = 4 
+};
+
+grid.Model[8, 2].NumberFormat.NumberGroupSizes = sizes;
+grid.Model[8, 2].CellValue = 12;
+
+grid.Model[10, 2].CellType = "DoubleEdit";
+grid.Model[10, 2].NumberFormat = new NumberFormatInfo 
+{ 
+    NumberGroupSeparator = ",", 
+    NumberDecimalSeparator = ".", 
+    NumberDecimalDigits = 1 
+};
+
+grid.Model[10, 2].NumberFormat.NumberGroupSizes = sizes;
+grid.Model[10, 2].CellValue = 100;
+
+grid.Model[12, 2].CellType = "DoubleEdit";
+grid.Model[12, 2].NumberFormat = new NumberFormatInfo 
+{ 
+    NumberGroupSeparator = "@", 
+    NumberDecimalSeparator = ".", 
+    NumberDecimalDigits = 0 
+};
+grid.Model[12, 2].NumberFormat.NumberGroupSizes = sizes;
+grid.Model[12, 2].CellValue = 12345678.00;
+
+
+//Using QueryCellInfo event
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{ 
+    int[] sizes = { 2, 3, 4 };
+    e.Style.GridModel[6, 2].CellType = "DoubleEdit";
+    e.Style.GridModel[6, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[6, 2].CellValue = 2345.00;
+    e.Style.GridModel[6, 2].NumberFormat = new NumberFormatInfo
+    {
+        NumberGroupSeparator = ";",
+        NumberDecimalSeparator = ".",
+        NumberDecimalDigits = 4
+    };
+    e.Style.GridModel[8, 2].CellType = "DoubleEdit";
+    e.Style.GridModel[8, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[8, 2].CellValue = 12;
+    e.Style.GridModel[8, 2].NumberFormat = new NumberFormatInfo
+    {
+        NumberGroupSeparator = ",",
+        NumberDecimalSeparator = ".",
+        NumberDecimalDigits = 4
+    };
+
+    e.Style.GridModel[10, 2].CellType = "DoubleEdit";
+    e.Style.GridModel[10, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[10, 2].CellValue = 100;
+    e.Style.GridModel[10, 2].NumberFormat = new NumberFormatInfo
+    {
+        NumberGroupSeparator = ",",
+        NumberDecimalSeparator = ".",
+        NumberDecimalDigits = 1
+    };
+    e.Style.GridModel[12, 2].CellType = "DoubleEdit";
+    e.Style.GridModel[12, 2].NumberFormat = new NumberFormatInfo
+    {
+        NumberGroupSeparator = "@",
+        NumberDecimalSeparator = ".",
+        NumberDecimalDigits = 0
+    };
+    e.Style.GridModel[12, 2].NumberFormat.NumberGroupSizes = sizes;
+    e.Style.GridModel[12, 2].CellValue = 12345678.00;
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+![Doubleedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img15.jpeg)
+
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Double%20Edit%20Cell)
+
 ## CurrencyEdit cell type
 
 This cell type can be used to represent monetary values to achieve accuracy in the calculations. It will stripe the currency sign in the cell and attempt to parse only the number from the input. Use the GridStyleInfo properties below to customize these cells.
@@ -805,222 +1026,6 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 ![Currency Cell with a Positive Value in WPF GridControl](Cell-Types_images/Cell-Types_img13.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Currency%20Cell)
-
-## DoubleEdit cell type
-
-Using DoubleEdit cell type will restrict the user to enter only double (value type) values into the cell. Thus it can be used to display System.Double type values. Below are the style properties that affect this cell.
-
-<table>
-<tr>
-<th>
-GridStyleInfo Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Cell Type</td><td>
-Set to “DoubleEdit”</td></tr>
-<tr>
-<td>
-NumberGroupSeparator</td><td>
-String that separates groups of digits to the left of the decimal</td></tr>
-<tr>
-<td>
-NumberDecimalSeparator</td><td>
-String to use as decimal separator</td></tr>
-<tr>
-<td>
-NumberDecimalDigits</td><td>
-Number of decimal places</td></tr>
-</table>
-
-
-For example, setting up four Double Edit cells using different group separators and decimal digits.
-
-{% tabs %}
-{% highlight c# %}
-
-int[] sizes = { 2, 3, 4 };
-grid.Model[6, 2].CellType = "DoubleEdit";
-grid.Model[6, 2].NumberFormat = new NumberFormatInfo 
-{ 
-    NumberGroupSeparator = ";", 
-    NumberDecimalSeparator = ".", 
-    NumberDecimalDigits = 4 
-};
-
-grid.Model[6, 2].NumberFormat.NumberGroupSizes = sizes;
-grid.Model[6, 2].CellValue = 2345.00; 
-
-grid.Model[8, 2].CellType = "DoubleEdit";
-grid.Model[8, 2].NumberFormat = new NumberFormatInfo 
-{ 
-    NumberGroupSeparator = ",", 
-    NumberDecimalSeparator = ".", 
-    NumberDecimalDigits = 4 
-};
-
-grid.Model[8, 2].NumberFormat.NumberGroupSizes = sizes;
-grid.Model[8, 2].CellValue = 12;
-
-grid.Model[10, 2].CellType = "DoubleEdit";
-grid.Model[10, 2].NumberFormat = new NumberFormatInfo 
-{ 
-    NumberGroupSeparator = ",", 
-    NumberDecimalSeparator = ".", 
-    NumberDecimalDigits = 1 
-};
-
-grid.Model[10, 2].NumberFormat.NumberGroupSizes = sizes;
-grid.Model[10, 2].CellValue = 100;
-
-grid.Model[12, 2].CellType = "DoubleEdit";
-grid.Model[12, 2].NumberFormat = new NumberFormatInfo 
-{ 
-    NumberGroupSeparator = "@", 
-    NumberDecimalSeparator = ".", 
-    NumberDecimalDigits = 0 
-};
-grid.Model[12, 2].NumberFormat.NumberGroupSizes = sizes;
-grid.Model[12, 2].CellValue = 12345678.00;
-
-
-//Using QueryCellInfo event
-private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
-{ 
-    int[] sizes = { 2, 3, 4 };
-    e.Style.GridModel[6, 2].CellType = "DoubleEdit";
-    e.Style.GridModel[6, 2].NumberFormat.NumberGroupSizes = sizes;
-    e.Style.GridModel[6, 2].CellValue = 2345.00;
-    e.Style.GridModel[6, 2].NumberFormat = new NumberFormatInfo
-    {
-        NumberGroupSeparator = ";",
-        NumberDecimalSeparator = ".",
-        NumberDecimalDigits = 4
-    };
-    e.Style.GridModel[8, 2].CellType = "DoubleEdit";
-    e.Style.GridModel[8, 2].NumberFormat.NumberGroupSizes = sizes;
-    e.Style.GridModel[8, 2].CellValue = 12;
-    e.Style.GridModel[8, 2].NumberFormat = new NumberFormatInfo
-    {
-        NumberGroupSeparator = ",",
-        NumberDecimalSeparator = ".",
-        NumberDecimalDigits = 4
-    };
-
-    e.Style.GridModel[10, 2].CellType = "DoubleEdit";
-    e.Style.GridModel[10, 2].NumberFormat.NumberGroupSizes = sizes;
-    e.Style.GridModel[10, 2].CellValue = 100;
-    e.Style.GridModel[10, 2].NumberFormat = new NumberFormatInfo
-    {
-        NumberGroupSeparator = ",",
-        NumberDecimalSeparator = ".",
-        NumberDecimalDigits = 1
-    };
-    e.Style.GridModel[12, 2].CellType = "DoubleEdit";
-    e.Style.GridModel[12, 2].NumberFormat = new NumberFormatInfo
-    {
-        NumberGroupSeparator = "@",
-        NumberDecimalSeparator = ".",
-        NumberDecimalDigits = 0
-    };
-    e.Style.GridModel[12, 2].NumberFormat.NumberGroupSizes = sizes;
-    e.Style.GridModel[12, 2].CellValue = 12345678.00;
-}
-
-{% endhighlight  %}
-{% endtabs %}
-
-![Doubleedit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img15.jpeg)
-
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Double%20Edit%20Cell)
-
-## IntegerEdit cell type
-
-IntegerEdit is a specialized cell type that restricts the data entry to integers. The table below lists the style properties specific to this cell type.
-
-<table>
-<tr>
-<th>
-GridStyleInfo Property</th><th>
-Description</th></tr>
-<tr>
-<td>
-Cell Type</td><td>
-Set to “IntegerEdit”</td></tr>
-<tr>
-<td>
-NumberGroupSeparator</td><td>
-String that separates groups of digits</td></tr>
-<tr>
-<td>
-NumberGroupSizes</td><td>
-Number of digits in each group</td></tr>
-<tr>
-<td>UseNullOption</td>
-<td>By default, the value of IntegerEdit cells is "0". Set {{'[UseNullOption](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridIntegerEditStyleInfo~UseNullOption.html)'| markdownify}} as "True" to hide or delete the default value in IntegerEdit cells.</td>
-</tr>
-</table>
-
-
-For example, setting up Three Different Integer Edit Cells. 
-
-{% tabs %}
-{% highlight c# %}
-
-int[] sizes = { 2, 3, 4 };
-grid.Model[12, 2].CellType = "IntegerEdit";
-grid.Model[12, 2].IsEditable = true;
-grid.Model[12, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ","};
-grid.Model[12, 2].NumberFormat.NumberGroupSizes = sizes;
-grid.Model[12, 2].CellValue = 1;
-
-grid.Model[8, 2].CellType = "IntegerEdit";
-grid.Model[8, 2].IsEditable = true;
-grid.Model[8, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ";"};
-grid.Model[8, 2].NumberFormat.NumberGroupSizes = sizes;
-grid.Model[8, 2].CellValue = 222222;
-
-grid.Model[10, 2].CellType = "IntegerEdit";
-grid.Model[10, 2].IsEditable = true;
-grid.Model[10, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "@"};
-grid.Model[10, 2].NumberFormat.NumberGroupSizes = sizes;
-grid.Model[10, 2].CellValue = 1000;
-
-grid.Model.ColStyles[3].CellType = "IntegerEdit";
-grid.Model.ColStyles[3].IntegerEdit.UseNullOption = true;
-
-//Using QueryCellInfo event
-private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
-{ 
-    int[] sizes = { 2, 3, 4 };
-    e.Style.GridModel[12, 2].CellType = "IntegerEdit";
-    e.Style.GridModel[12, 2].IsEditable = true;
-    e.Style.GridModel[12, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "," };
-    e.Style.GridModel[12, 2].NumberFormat.NumberGroupSizes = sizes;
-    e.Style.GridModel[12, 2].CellValue = 1;
-
-    e.Style.GridModel[8, 2].CellType = "IntegerEdit";
-    e.Style.GridModel[8, 2].IsEditable = true;
-    e.Style.GridModel[8, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = ";" };
-    e.Style.GridModel[8, 2].NumberFormat.NumberGroupSizes = sizes;
-    e.Style.GridModel[8, 2].CellValue = 222222;
-
-    e.Style.GridModel[10, 2].CellType = "IntegerEdit";
-    e.Style.GridModel[10, 2].IsEditable = true;
-    e.Style.GridModel[10, 2].NumberFormat = new NumberFormatInfo { NumberGroupSeparator = "@" };
-    e.Style.GridModel[10, 2].NumberFormat.NumberGroupSizes = sizes;
-    e.Style.GridModel[10, 2].CellValue = 1000;
-
-    e.Style.GridModel.ColStyles[3].CellType = "IntegerEdit";
-    e.Style.GridModel.ColStyles[3].IntegerEdit.UseNullOption = true;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-![Integeredit celltype in WPF GridControl](Cell-Types_images/Cell-Types_img16.jpeg)
-
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Cell%20Types/Integer%20Edit%20Cell)
 
 ## PercentEdit cell type
 
