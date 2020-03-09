@@ -1,12 +1,12 @@
 ---
 layout: post
 title: MVVM Enhancements | GridData (Classic) | wpf | Syncfusion
-description: MVVM Enhancements
+description: Learn here about how to bind the Syncfusion WPF GridData control using the MVVM enhancements and its commands.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# MVVM Enhancements
+# MVVM Enhancements in GridDataControl
 
 ## View – View Model Communication
 
@@ -14,7 +14,7 @@ In MVVM, commands are used to communicate between the View and View Model when a
 
 To support the EventToCommand approach, commands have been added for all events in the GridData control and tables to provide complete MVVM support.
 
-![](Getting-Started_images/Getting-Started_img162.png)
+![View and View Model communication](Getting-Started_images/Getting-Started_img162.png)
 
 GridData control has two commands for each event. The first one passes the event argument to the command as parameter, and the second one does not pass any parameter to the command. This apart, the command parameter can also be changed at Sample level.
 
@@ -30,7 +30,7 @@ You can add commands to a GridData control in the following three ways:
 
 This section explains how to add GridDataControlRecordsSelectionChangedCommandWithEventArgs command to the GridData control. The actual event arguments are passed to the Command method as parameters.
 
-The following code example illustrates how to define the GridDataControlRecordsSelectionChangeddCommandWithEventArgs command in XAML.
+The following code example illustrates how to define the GridDataControlRecordsSelectionChangedCommandWithEventArgs command in XAML.
 
 {% highlight xaml %}
 
@@ -85,7 +85,7 @@ this.SelectedCustomerID = "Customer ID : " + data.CustomerID;
 
 When you select a record while running your application, the SelectedItemChanged command is triggered with the actual GridDataRecordsSelectionChangedEventArgs event argument.
 
-![](Getting-Started_images/Getting-Started_img163.png)
+![Adding commands to WPF GridData control](Getting-Started_images/Getting-Started_img163.png)
 
 ### Sample Location
 
@@ -97,7 +97,7 @@ A sample application can be downloaded from the following location:
 
 This section illustrates how to add the GridDataControlRecordsSelectionChangedCommand command to the GridData control and pass the GridData control as customer parameter.
 
-The following code example can be used to define GridDataControlRecordsSelectionChangeddCommand in XAML.
+The following code example can be used to define GridDataControlRecordsSelectionChangedCommand in XAML.
 
 {% highlight xaml %}
 
@@ -154,12 +154,12 @@ void SelectedItemChangedMethod(object parameter)
 
 When you select a record while running your application, the SelectedItemChanged command gets triggered with the custom GridDataControl parameter.
 
-![](Getting-Started_images/Getting-Started_img164.png)
+![Command with custom parameter in WPF GridData control](Getting-Started_images/Getting-Started_img164.png)
 
 
 If there is no parameter set in the View, then the parameter is passed in the method call.
 
-![](Getting-Started_images/Getting-Started_img165.png)
+![Null parameter value set in View of WPF GridData control](Getting-Started_images/Getting-Started_img165.png)
 
 #### Sample Location
 
@@ -224,7 +224,7 @@ Now, bind the behavior to the GridData control. The following code example illus
 
 When you hover the mouse over a row while running your application, the overridden behavior class triggers and returns the current record.
 
-![](Getting-Started_images/Getting-Started_img166.png)
+![Override the mouse hover behavior method in WPF GridData control](Getting-Started_images/Getting-Started_img166.png)
 
 #### Sample Location
 
