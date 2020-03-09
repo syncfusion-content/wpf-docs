@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Events | GridData (Classic) | wpf | Syncfusion
-description: Events
+description: Learn here about how to use the subscribe and unsubscribe the events in the Syncfusion WPF GridData control.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Events
+# Events in GridDataControl
 
 The GridData control declares a number of events that it can handle, in response to the activities either by the end user or by the system. An event is a message that is handled, to notify an object or a class of the occurrence of an action. When an event is handled, all the event handlers are notified.
 
@@ -51,7 +51,7 @@ private void dataGrid_MouseMove(object sender, MouseEventArgs e)
 
 N> These Grid WPF mouse events are more advantageous than using any other default mouse events because the default mouse events are controlled by Mouse Controller that makes it very hard to access the underlying data; whereas in case of Grid mouse events, it is directly possible to access the underlying data easily.
 
-## Unsubscribing the events
+## Unsubscribe the events
 
 If you do not want the grid to listen to the event, you can unwire the event from the grid as follows.
 
