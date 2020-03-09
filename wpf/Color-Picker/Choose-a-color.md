@@ -189,5 +189,6 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 
 ![ColorPicker with selected color name](Selection-Mode_images/ColorPicker_Selected_ColorName.png)
  
-
  We can edit and choose a gradient colors which is explained in the [Edit a Gradient Brush](https://help.syncfusion.com/wpf/color-picker/gradient-brush) page.
+
+ Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/ChooseColor) to download the sample that showcases how to choosing a color from the `ColorPicker`.

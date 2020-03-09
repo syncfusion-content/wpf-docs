@@ -315,3 +315,7 @@ colorPicker.EnableSolidToGradientSwitch = false;
 {% endtabs %}
 
 ![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_EnableSolidToGradientSwitch.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/LinearGradient) to download the sample that showcases the Linear GradientBrush and its additional features.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/RadialGradient) to download the sample that showcases the Radial GradientBrush and its additional features.

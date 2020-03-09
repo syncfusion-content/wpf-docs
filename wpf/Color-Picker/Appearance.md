@@ -92,6 +92,8 @@ colorPicker.EnableToolTip = true;
 
 ![ColorPicker with TooTip support](Selection-Mode_images/ColorPicker_Tooltip.png)
 
+Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Appearance) to download the sample that showcases the UI customization and styling support.
+
 ## Theme
 
 We can customize the appearance of the `ColorPicker` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `ColorPicker` control.
@@ -136,3 +138,5 @@ SfSkinManager.SetVisualStyle(colorPicker, VisualStyles.Blend);
 {% endtabs %}
 
 ![ColorPicker with Blend visual style](Layout-Related-Features_images/ColorPicker_BlendTheme.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Themes) to download the sample that showcases the different theming support.
