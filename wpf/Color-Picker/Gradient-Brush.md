@@ -13,7 +13,7 @@ This section gives a brief note on how to create gradient brushes, modify their 
 
 ### What is a gradient brush? 
 
-A gradient brush paints an area with multiple colors that blend into each other along an axis. [ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) now comes with Gradient tool which returns a brush of type Linear and Radial gradient colors. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
+A gradient brush paints an area with multiple colors that blend into each other along an axis. [ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) now comes with Gradient tools which returns a brush of type Linear and Radial gradient colors. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
 
 ![ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker_Gradient_Mode.png)
 
@@ -21,7 +21,7 @@ A gradient brush paints an area with multiple colors that blend into each other 
 
 We can add a multiple color combination for the gradient brush using the `GradientStopsEditor`. We can add new gradient stops, change the offset and change the color of the gradient stops at run-time. The created gradient stops are combined together provides a gradient color.
 
-![ColorPicker with GradientStopsEditors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_editing.gif)
+![ColorPicker with GradientStopsEditors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_editing.png)
 
 ### Add or Remove Gradient Colors
 
@@ -218,7 +218,7 @@ Here, Radial Gradient created by the gradient colors and their location along th
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) comes with the reverse button which helps in changing the gradient colors upside down or in case of radial gradient inside out. 
 
-![ColorPicker with gradient color reverse button](ColorPicker-with-Gradient-Support_images/ColorPicker_Reverse_Button.gif)
+![ColorPicker with gradient color reverse button](ColorPicker-with-Gradient-Support_images/ColorPicker_Reverse_Button_change.png)
 
 ## Show selected Gradient Color name
 
@@ -238,7 +238,7 @@ colorPicker.GradientBrushDisplayMode =  GradientBrushDisplayMode.Extended;
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker displays the selected gradient color name](ColorPicker-with-Gradient-Support_images/Gradient_ColorName.gif)
+![ColorPicker displays the selected gradient color name](ColorPicker-with-Gradient-Support_images/Gradient_ColorName.png)
 
 ## Show Gradient Property Editor
 
@@ -294,7 +294,7 @@ Here, The `ColorPicker` is in Gradient brush mode.
 
 We can change the brush mode directly by clicking on the corresponding Solid, Linear or Gradient mode buttons which are placed in the bottom right corner of the `ColorPicker`.
 
-![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/ColorPicker_Switch_brushes.gif)
+![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/ColorPicker_Switch_brushes.png)
 
 ## Disable Switching between Solid, Linear and Gradient brush mode at runtime
 
