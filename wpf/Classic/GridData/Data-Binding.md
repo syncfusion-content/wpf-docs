@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding | GridData (Classic) | WPF | Syncfusion
-description: Data Binding in WPF GridData control
+description: Learn here about Data Binding support in Syncfusion WPF GridData control and how to bind the properties.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
@@ -688,8 +688,8 @@ Type </th></tr>
 <td>
 CurrentCellValidating</td><td>
 It triggered while editing complete </td><td>
-CurrentCellValidatingEventArgsCancel: Boolean property to cancel tde commit.NewValue: Values tdat we have edited.OldVaue: Values before editing.Style: Style for tde current editing cell.</td><td>
-CurrentCellValidatingEventdandler. </td></tr>
+CurrentCellValidatingEventArgsCancel: Boolean property to cancel the commit.NewValue: Values that we have edited.OldValue: Values before editing.Style: Style for the current editing cell.</td><td>
+CurrentCellValidatingEventhandler. </td></tr>
 </table>
 
 
@@ -848,9 +848,9 @@ Type </th></tr>
 <tr>
 <td>
 RowValidating</td><td>
-Triggers while focus moves from current row to any otder row.</td><td>
-GridDataRowValidatingEventArgs contains tde following arguments:IsValid: Boolean property to validate tde row values.NewValues: Values which are edited in current row.Record: Current row record.RowIndex: Index of current row.</td><td>
-GridDataRowValidatingEventdandler</td></tr>
+Triggers while focus moves from current row to any other row.</td><td>
+GridDataRowValidatingEventArgs contains the following arguments:IsValid: Boolean property to validate the row values.NewValues: Values which are edited in current row.Record: Current row record.RowIndex: Index of current row.</td><td>
+GridDataRowValidatingEventhandler</td></tr>
 </table>
 
 N> Once IsValid is set as false, the current cell doesn’t leave from edit mode until IsValid is set as true.
@@ -1134,7 +1134,7 @@ You can create an unbound column by instantiating the class GridDataUnboundVisib
 
 N> Sorting and filtering operations does not work with an unbound column unless the column is associated with the item source that is bound.  So, it is good to turn off the filters wherever applicable.
 
-The following example adds an unbound column and displays the record values in the format {Frieght:c} for {ShipCity}. 
+The following example adds an unbound column and displays the record values in the format {Freight:c} for {ShipCity}. 
 {% highlight xaml %}
 
 <syncfusion:GridDataControl x:Name="dataGrid2" AutoPopulateColumns="True" 
@@ -1627,7 +1627,7 @@ Return Type </th></tr>
 <tr>
 <td>
 IsInUnboundRows(int RowIndex)</td><td>
-tdis metdod checks if tde rows provided is an unbound row or not.tdis can be accessed from Grid Model as grid.Model.IsInUnboundRows(row);</td><td>
+this method checks if the rows provided is an unbound row or not.this can be accessed from Grid Model as grid.Model.IsInUnboundRows(row);</td><td>
 (int RowIndex) </td><td>
 Integer</td><td>
 Boolean  </td></tr>

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Performance | GridData (Classic) | wpf | Syncfusion
-description: Performance
+description: Learn here about how to maintain the Syncfusion WPF GridData control Performance and PLINQ supports.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# Performance
+# Performance in GridData control
 
 Essential Grid has a high performance standard, where you can make the grid to work with large amounts of data with few property settings, without a performance hit. It provides complete support for Virtual Mode, where the data is loaded only on demand and thus saves the memory consumption and provides quick response. It also handles very high frequency updates and refresh scenarios. The following topic discusses this:
 
@@ -136,9 +136,7 @@ N> For complete code of this example, refer the following browser sample: ...\My
 
 ## PLINQ Support in GridDataControl
 
-[PLINQ](http://msdn.microsoft.com/en-us/library/dd997425.aspx) is the parallel implementation of the standard LINQ. GridDataControl uses a QueryableCollectionView that works on top of LINQ expressions for performing major operations such as Sorting, Filtering, Grouping and Summaries calculation. Since PLINQ works on top of LINQ expression trees, QueryableCollectionView now has a property UsePLINQ = true / false (this class implements _IParallelizableView_ interface) that would add a AsParallel() to change it into a Parallel Query. Sorting, Grouping and Summary operations would be automatically done in parallel when this property is set.
-
-_Plinq support_
+[PLINQ](http://msdn.microsoft.com/en-us/library/dd997425.aspx) is the parallel implementation of the standard LINQ. GridDataControl uses a QueryableCollectionView that works on top of LINQ expressions for performing major operations such as Sorting, Filtering, Grouping and Summaries calculation. Since PLINQ works on top of LINQ expression trees, QueryableCollectionView now has a property UsePLINQ = true / false (this class implements _IParallelizable View_ interface) that would add a AsParallel() to change it into a Parallel Query. Sorting, Grouping and Summary operations would be automatically done in parallel when this property is set.
 
 {% tabs %}
 
