@@ -258,14 +258,7 @@ colorPicker.GradientPropertyEditorMode =  GradientPropertyEditorMode.Popup;
 {% endhighlight %}
 {% endtabs %}
 
-**GradientPropertyEditorMode="Popup"**
-
-![Colorpicker with popup gradientpropertyEditor](ColorPicker-with-Gradient-Support_images/Colorpicker_Popup_gradientEditor.png)
-
-**GradientPropertyEditorMode="Extended"**
-
-![Colorpicker with extended gradientpropertyEditor](ColorPicker-with-Gradient-Support_images/Colorpicker_Extended_gradientEditor.png)
-
+![Colorpicker with popup and expanded gradient property editor](ColorPicker-with-Gradient-Support_images/Colorpicker_Popup_gradientEditor.png)
 
 ## Switch between Solid, Gradient mode
 
