@@ -2410,7 +2410,7 @@ You can download the sample demo [here](http://www.syncfusion.com/downloads/supp
 
 [How to load a button in CaptionSummaryRow and prevent expanding and collapsing of groups upon clicking it?](https://www.syncfusion.com/kb/7842)
 
-[How to display the Numberformat info in GridSummaryColumn?](https://www.syncfusion.com/kb/6669)
+[How to display the NumberFormatInfo in GridSummaryColumn?](https://www.syncfusion.com/kb/6669)
 
 [How to apply different styles to the GridTableSummaryRow?](https://www.syncfusion.com/kb/5319)
 
