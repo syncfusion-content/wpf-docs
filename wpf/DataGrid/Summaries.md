@@ -440,9 +440,7 @@ In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [Gr
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />                        
             </syncfusion:GridSummaryRow.SummaryColumns>
-       </syncfusion:GridTableSummaryRow>
-    </syncfusion:SfDataGrid.TableSummaryRows>    
-	<syncfusion:SfDataGrid.TableSummaryRows>
+       </syncfusion:GridTableSummaryRow>      	
        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Bottom"
                                        Title="Total Price : {PriceAmount} for {ProductCount} products">
             <syncfusion:GridSummaryRow.SummaryColumns>
