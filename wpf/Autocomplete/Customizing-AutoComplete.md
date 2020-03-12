@@ -297,4 +297,8 @@ namespace Demo_Sample
     }     
 }
 
+
+{% endhighlight %}
+
+{% endtabs %}
 ![EnableAutoSize](Auto-Complete_images/EnableAutoSize.png)
