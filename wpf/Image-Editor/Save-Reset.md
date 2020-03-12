@@ -147,6 +147,30 @@ This event occurs after the image has been saved to the destination location. Th
 
 {% endtabs %} 
 
+### File name support for saving image
+
+Using this feature we can save the image in the specified name using the ImageSaving event. 
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+        <editor:SfImageEditor x:Name="editor" ImageSaving="editor_ImageSaving" ImageSource="Assets\Buldingimage.jpeg">
+        </editor:SfImageEditor>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+        private void editor_ImageSaving(object sender, ImageSavingEventArgs e)
+        {
+            e.FileName = "SavedImage";
+        }
+  
+{% endhighlight %}
+
+{% endtabs %} 
+
 ### Reset events
 
 The Reset functionality has the following two events:

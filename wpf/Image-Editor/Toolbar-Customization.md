@@ -108,3 +108,9 @@ This event occurs when an item in the toolbar is selected. `ToolbarItemSelectedE
 {% endtabs %} 
 
 ![Custom Item](Images/ToolbarCustomItem.png) 
+
+## Image picker support
+
+We can Browse images in a local folder and load them in the Image Editor using toolbar item browse icon. 
+
+![Image picker support in WPF](Images/ImagePicker.png) 
