@@ -2399,3 +2399,25 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 ![Customize the group caption text format in WPF DataGrid](Summaries_images/Summaries_img18.png)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1006707349.zip). 
+
+## See Also
+
+[How to show vertical border to the column wise summary rows?](https://www.syncfusion.com/kb/10038)
+
+[How to define summary rows using AttachedProperty in datagrid](https://www.syncfusion.com/kb/9838)
+
+[How to add a textbox under each group and binding a underlying property on that?](https://www.syncfusion.com/kb/9295)
+
+[How to load a button in CaptionSummaryRow and prevent expanding and collapsing of groups upon clicking it?](https://www.syncfusion.com/kb/7842)
+
+[How to display the NumberFormatInfo in GridSummaryColumn?](https://www.syncfusion.com/kb/6669)
+
+[How to apply different styles to the GridTableSummaryRow?](https://www.syncfusion.com/kb/5319)
+
+[How to use NumberFormatInfo in the SummaryColumn of the GridTableSummaryRow?](https://www.syncfusion.com/kb/5312)
+
+[How to Change the GroupCaptionText based on Display member of the GridComboboxColumn?](https://www.syncfusion.com/kb/3446)
+
+[How to customize the CaptionSummaryCell text in the SfDataGrid?](https://www.syncfusion.com/kb/3249)
+
+[How to Set the horizontal alignment on summary columns?](https://www.syncfusion.com/kb/2485)
