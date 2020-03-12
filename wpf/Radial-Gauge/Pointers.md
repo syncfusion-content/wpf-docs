@@ -231,6 +231,91 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img4.png)
 
+### Setting tail for needle pointer
+
+Tail of the needle pointer can be customized by using the `TailFill`, `TailLengthFactor`, `TailStroke`, and `TailStrokeThickness` properties.
+
+* `TailFill` - Fill color to needle pointer’s tail.
+
+* `TailLengthFactor` - Length factor of needle pointer’s tail. It’s range is 0 to 1.
+
+* `TailStroke` - Stroke to needle pointer’s tail.
+
+* `TailStrokeThickness` - Set the stroke thickness to needle pointer’s tail.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge >
+    <gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale >
+      <gauge:CircularScale.Pointers>
+            <gauge:CircularPointer 
+			Value="30" 
+			PointerType="NeedlePointer"
+            TailLengthFactor="0.3"
+			TailStroke="#ed7d31"
+			TailFill="#ed7d31"
+			NeedlePointerStrokeThickness="3"
+			NeedlePointerType="Tapered" 
+			KnobFill="White"     
+			NeedlePointerVisibility="Visible"
+			NeedlePointerStroke="#ed7d31" />
+      <gauge:CircularPointer
+           Value="50"
+	       PointerType="NeedlePointer"
+		   TailLengthFactor="0.4"
+	       TailStroke="#ed7d31"
+           TailFill="#ed7d31"
+           KnobFill="White"
+           NeedlePointerStrokeThickness="3"
+           NeedlePointerType="Tapered" 
+           NeedlePointerVisibility="Visible"
+           NeedlePointerStroke="#ed7d31"  />
+    </gauge:CircularScale.Pointers>
+    </gauge:CircularScale>
+    </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.PointerType = PointerType.NeedlePointer;
+            circularPointer.Value = 30;
+            circularPointer.TailLengthFactor = 0.3;
+            circularPointer.TailStroke = new SolidColorBrush(Color.FromRgb(237,125,49));
+            circularPointer.TailFill = new SolidColorBrush(Color.FromRgb(237, 125, 49));
+            circularPointer.NeedlePointerStrokeThickness = 3;
+            circularPointer.NeedlePointerType = NeedlePointerType.Tapered;
+            circularPointer.KnobFill = new SolidColorBrush(Colors.White);
+            circularPointer.NeedlePointerVisibility = Visibility.Visible;
+            circularPointer.NeedlePointerStroke = new SolidColorBrush(Color.FromRgb(237, 125, 49));
+            mainscale.Pointers.Add(circularPointer);
+            CircularPointer circularPointer2 = new CircularPointer();
+            circularPointer2.PointerType = PointerType.NeedlePointer;
+            circularPointer2.Value = 50;
+            circularPointer2.TailLengthFactor = 0.3;
+            circularPointer2.TailStroke = new SolidColorBrush(Color.FromRgb(237, 125, 49));
+            circularPointer2.TailFill = new SolidColorBrush(Color.FromRgb(237, 125, 49));
+            circularPointer2.NeedlePointerStrokeThickness = 3;
+            circularPointer2.NeedlePointerType = NeedlePointerType.Tapered;
+            circularPointer2.KnobFill = new SolidColorBrush(Colors.White);
+            circularPointer2.NeedlePointerVisibility = Visibility.Visible;
+            circularPointer2.NeedlePointerStroke = new SolidColorBrush(Color.FromRgb(237, 125, 49));
+            mainscale.Pointers.Add(circularPointer2);
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Pointers - Circular Gauge](Pointers_images/TailImage.png)
+
 ## Range pointer
 
 The range pointer is an accenting line or shaded background range that can be placed on a gauge to mark values. 
@@ -498,6 +583,49 @@ sfCircularGauge.Scales.Add(mainscale);
 {% endtabs %}
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img9.png)
+
+### Setting range cap for range pointer
+
+The `RangeCap` property provides options to position the range cap of the RangePointer, which contains the start, end, both, and none options. The RangeCap property is an enum property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge >
+        <gauge:SfCircularGauge.Scales>
+              <gauge:CircularScale x:Name="scale" SweepAngle="360" RimStroke="LightGray"  RimStrokeThickness="30" RangePointerPosition="Custom" RangePointerOffset="0.5">
+                   <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="RangePointer" RangePointerStrokeThickness="30" RangeCap="Both" RangePointerStroke="LightSkyBlue" Value="75"/>
+                    </gauge:CircularScale.Pointers>
+              </gauge:CircularScale>
+         </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.RangePointerPosition = RangePointerPosition.Custom;
+            mainscale.SweepAngle = 360;
+            mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            mainscale.RimStrokeThickness = 30;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.PointerType = PointerType.RangePointer;
+            circularPointer.RangePointerStrokeThickness = 30;
+            circularPointer.RangeCap = RangeCap.Both;
+            circularPointer.RangePointerStroke = new SolidColorBrush(Colors.LightSkyBlue);
+            circularPointer.Value = 75;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RangeCap for Circular Gauge RangePointer](Pointers_images/RangeCap.png)
 
 ## Symbol pointer
 

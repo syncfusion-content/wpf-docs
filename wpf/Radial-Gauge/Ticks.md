@@ -300,3 +300,42 @@ sfCircularGauge.Scales.Add(mainscale);
 {% endtabs %}
 
 ![](Ticks_images/Ticks_img5.png)
+
+### Show ticks
+
+The `ShowTicks` property allows you to enable or disable the ticks of circular gauge.
+
+N> Default value of the ShowTicks property is true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge >
+         <gauge:SfCircularGauge.Scales >
+               <gauge:CircularScale ShowTicks="False" x:Name="scale" RimStroke="LightGray" >
+                    <gauge:CircularScale.Pointers>
+                         <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                     </gauge:CircularScale.Pointers>
+               </gauge:CircularScale>
+         </gauge:SfCircularGauge.Scales> 
+	</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            mainscale.ShowTicks = false;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Show tick support in Xamarin.Forms Circular Gauge](Ticks_images/Show-ticks.png)

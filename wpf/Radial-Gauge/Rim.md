@@ -231,3 +231,41 @@ sfCircularGauge.Scales.Add(circularScale);
 {% endtabs %}
 
 ![](Rim_images/Rim_img4.png)
+
+### Show rim
+
+The `ShowRim` property is a Boolean property, which is used to enable or disable the rim in circular gauge.
+
+N> Default value of the ShowRim property is true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <gauge:SfCircularGauge  HeaderAlignment="Bottom">
+           <gauge:SfCircularGauge.Scales >
+                 <gauge:CircularScale ShowRim="False" x:Name="scale" >
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+		</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.ShowRim = false;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Show rim support in WPF Circular Gauge](Rim_images/show-rim.png)

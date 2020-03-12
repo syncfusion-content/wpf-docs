@@ -456,3 +456,165 @@ mainscale.Pointers.Add(circularPointer);
 {% endtabs %}
 
 ![](Labels_images/Labels_img8.png)
+
+### Show labels
+
+The `ShowLabels` property is a Boolean property, which is used to enable or disable the labels in circular gauge.
+
+N> Default value of the ShowLabels property is true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <gauge:SfCircularGauge>
+           <gauge:SfCircularGauge.Scales >
+                 <gauge:CircularScale ShowLabels="False" x:Name="scale" RimStroke="LightGray" >
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+		</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.ShowLabels = false;
+			mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Circular Gauge Label Image](Labels_images/Show-labels.png)
+
+### Edge label customization
+
+You can customize the edge label by using the `ShowFirstLabel` and `ShowLastLabel` properties, which are Boolean properties.
+
+* `ShowFirstLabel` property is used to enable or disable first label. Default value of the ShowFirstLabel property is true.
+
+* `ShowLastLabel` property is used to enable or disable the last label. Default value of the ShowLastLabel property is true.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <gauge:SfCircularGauge>
+           <gauge:SfCircularGauge.Scales >
+                 <gauge:CircularScale ShowFirstLabel = "False" StartValue = "0" EndValue = "12" Interval ="1" MinorTicksPerInterval = "5" StartAngle = "270" SweepAngle = "360" x:Name="scale" RimStroke="LightGray" >
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+		</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.StartValue = 0;
+            mainscale.Interval = 1;
+            mainscale.MinorTicksPerInterval = 5;
+            mainscale.EndValue = 12;
+            mainscale.StartAngle = 270;
+            mainscale.SweepAngle = 360;
+            mainscale.ShowFirstLabel = false;
+            mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![WPF Circular Gauge Label Image](Labels_images/Label-edge-customization.png)
+
+## Events
+
+You can change the default label by hooking the `LabelCreated` event. Based on your requirements, the labels can be changed by using the `LabelText` property of `LabelCreatedEventArgs`.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Scales >
+                    <gauge:CircularScale  x:Name="scale"  LabelCreated="scale_LabelCreated" SweepAngle="360" StartAngle="270" StartValue="0" EndValue="16" Interval="2" RimStroke="LightGray" MinorTicksPerInterval="1" ShowLastLabel="False"  >
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+             </gauge:SfCircularGauge.Scales>
+		</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.StartValue = 0;
+            mainscale.Interval = 2;
+            mainscale.MinorTicksPerInterval = 1;
+            mainscale.EndValue = 16;
+            mainscale.StartAngle = 270;
+            mainscale.SweepAngle = 360;
+			mainscale.LabelCreated += scale_LabelCreated;
+            mainscale.ShowLastLabel = false;
+            mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+			
+		   private void scale_LabelCreated(object sender, LabelCreatedEventArgs e)
+           {
+            switch ((string)e.LabelText)
+            {
+
+                case "0":
+                    e.LabelText = "N";
+                    break;
+                case "2":
+                    e.LabelText = "NE";
+                    break;
+                case "4":
+                    e.LabelText = "E";
+                    break;
+                case "6":
+                    e.LabelText = "SE";
+                    break;
+                case "8":
+                    e.LabelText = "S";
+                    break;
+                case "10":
+                    e.LabelText = "SW";
+                    break;
+                case "12":
+                    e.LabelText = "W";
+                    break;
+                case "14":
+                    e.LabelText = "NW";
+                    break;
+            }
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Label Created Event Image](Labels_images/Label_Created.png)
