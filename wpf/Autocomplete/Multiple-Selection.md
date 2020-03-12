@@ -56,6 +56,7 @@ Selected items will be displayed with a customizable token representation and th
 {% endhighlight %}
 
 {% highlight c# %}
+
 using Syncfusion.Windows.Controls.Input;
 using System.Collections.Generic;
 using System.Windows;
@@ -84,5 +85,8 @@ namespace Demo_Sample
         }
     }
 }
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Token Representation](Auto-Complete_images/Token.png)
