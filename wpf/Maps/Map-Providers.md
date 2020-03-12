@@ -269,4 +269,119 @@ The following screenshot illustrates the AerialWithLabel view.
 ![](Map-Providers_images/Map-Providers_img4.png)
 
 
+## Calculate zoom level
 
+This feature allows set the initial zoom level automatically in two ways.
+
+* Distance Radius(KM/miles)
+* Geo-bounds(Northeast, Southwest)
+
+### Distance Radius 
+
+Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of ImageryLayer.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <syncfusion:SfMap>
+            <syncfusion:SfMap.Layers>
+                <syncfusion:ImageryLayer Center="30.9709225, -100.2187212" Radius="50" DistanceType="KiloMeter" >
+                </syncfusion:ImageryLayer>
+            </syncfusion:SfMap.Layers>
+        </syncfusion:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMap maps = new SfMap();
+            ImageryLayer layer = new ImageryLayer();
+            layer.Center = new Point(30.9709225, -100.2187212);
+            layer.Radius = 50;
+            layer.DistanceType = DistanceType.KiloMeter;
+            maps.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Geo-bounds
+
+Calculate the initial zoom level automatically based on the LatLngBounds of ImageryLayer.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <maps:SfMap>
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer x:Name="layer">
+                    <maps:ImageryLayer.LatLngBounds>
+                        <maps:LatLngBounds Northeast="36.9628066,-122.0194722" Southwest="36.9628066,-122.0194722" >
+                        </maps:LatLngBounds>
+                    </maps:ImageryLayer.LatLngBounds>
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMap maps = new SfMap();
+            ImageryLayer layer = new ImageryLayer();
+            LatLngBounds bounds = new LatLngBounds();
+            bounds.Northeast = new Point(36.9628066, -122.0194722);
+            bounds.Southwest = new Point(36.9628066, -122.0194722);
+            layer.LatLngBounds = bounds;
+            maps.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> When setting LatLngBounds and DistanceRadius at the same time, the priority is DistanceRadius and calculate zoom level based Radius value.
+
+![WPF SfMaps zoom level changed image](Map-Providers_images/Zoom_Level.png)
+
+## Calculate the map tile layer bounds
+
+Calculate imagery layer pixel bounds while zooming, panning and Geo-Coordinate value changing.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <maps:SfMap>
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer x:Name="layer"  Center="30.9709225, -100.2187212" CenterChanged="layer_CenterChanged">
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+      </maps:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MapBound : ContentPage
+    {
+        ImageryLayer layer = new ImageryLayer();
+        public MapBound()
+        {
+            InitializeComponent();
+            SfMap maps = new SfMap();
+            layer.Center = new Point(30.9709225, -100.2187212);
+            layer.CenterChanged += layer_CenterChanged;
+            maps.Layers.Add(layer);
+            this.Content = maps;
+        }
+        private void layer_CenterChanged(object sender, CenterChangedEventArgs e)
+        {
+            var pixelbounds = layer.MapBounds;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}

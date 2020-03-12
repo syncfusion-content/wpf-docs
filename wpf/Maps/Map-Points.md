@@ -238,4 +238,41 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 ![](Map-Points_images/Map-Points_img1.png)
 
+## Convert geo-coordinate point for ShapeFileLayer and ImageryLayer
 
+We can Convert a geo-coordinate point to a screen point and  screen point to geo-coordinate using `GeopointToViewPoint` method and `GetLatLonFromPoint
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="but" Content="Button"  Click="but_Click"/>
+        <maps:SfMap Grid.Row="1" ZoomLevel="5">
+          <maps:SfMap.Layers>
+            <maps:ImageryLayer x:Name="layer">
+            </maps:ImageryLayer>
+          </maps:SfMap.Layers>
+        </maps:SfMap>
+    </Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void but_Click(object sender, RoutedEventArgs e)
+        {
+            Point pixelPoint = layer.GeopointToViewPoint(21.00, 78.00);
+            Point longitudeLatitude = layer.GetLatLonFromPoint(pixelPoint);
+            layer.Center = longitudeLatitude;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Set the center from screen point](Map-Points_images/Center_Point_Changed.png)
