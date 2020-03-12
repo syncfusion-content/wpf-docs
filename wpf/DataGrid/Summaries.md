@@ -442,6 +442,25 @@ In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [Gr
             </syncfusion:GridSummaryRow.SummaryColumns>
        </syncfusion:GridTableSummaryRow>
     </syncfusion:SfDataGrid.TableSummaryRows>    
+	<syncfusion:SfDataGrid.TableSummaryRows>
+       <syncfusion:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Bottom"
+                                       Title="Total Price : {PriceAmount} for {ProductCount} products">
+            <syncfusion:GridSummaryRow.SummaryColumns>
+                <syncfusion:GridSummaryColumn Name="CustomerName" 
+                                              Format=" {Count:d}"
+                                              MappingName="CustomerName" 
+                                              SummaryType="CountAggregate" />
+                <syncfusion:GridSummaryColumn Name="PriceAmount"
+                                              Format=" {Sum:c}"
+                                              MappingName="UnitPrice"
+                                              SummaryType="DoubleAggregate" />
+                <syncfusion:GridSummaryColumn Name="ProductCount"
+                                              Format=" {Count:d}"
+                                              MappingName="ProductName"
+                                              SummaryType="CountAggregate" />                        
+            </syncfusion:GridSummaryRow.SummaryColumns>
+       </syncfusion:GridTableSummaryRow>
+    </syncfusion:SfDataGrid.TableSummaryRows>    
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -449,6 +468,40 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {
     ShowSummaryInRow = false,
     Position = TableSummaryRowPosition.Top,
+    Title = "Total Price : {PriceAmount} for {ProductCount} products",
+    TitleColumnCount = 2,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="CustomerName",
+            Format="{Count:d}",
+            MappingName="CustomerName",
+            SummaryType=SummaryType.CountAggregate
+        },
+		
+        new GridSummaryColumn()
+        {
+            Name = "PriceAmount",
+            MappingName="UnitPrice",
+            SummaryType= SummaryType.DoubleAggregate,
+            Format="{Sum:c}"
+        },
+		
+        new GridSummaryColumn()
+        {
+            Name="ProductCount",
+            MappingName="ProductName",
+            SummaryType=SummaryType.CountAggregate,
+            Format="{Count:d}"
+        }        
+    }
+});
+
+this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
+{
+    ShowSummaryInRow = false,
+    Position = TableSummaryRowPosition.Bottom,
     Title = "Total Price : {PriceAmount} for {ProductCount} products",
     TitleColumnCount = 2,
     SummaryColumns = new ObservableCollection<ISummaryColumn>()
