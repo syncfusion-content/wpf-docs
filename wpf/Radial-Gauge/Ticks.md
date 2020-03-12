@@ -23,49 +23,42 @@ The length, stroke, and stroke thickness of a tick are set using the `TickLength
 
 {% highlight xml %}
 
-    <gauge:SfCircularGauge >
-
-    <gauge:SfCircularGauge.Scales>
-            
-    <gauge:CircularScale     MinorTicksPerInterval="3"     TickLength="20" TickStroke="Brown"  
-     TickStrokeThickness="2"  SmallTickStroke="White">
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-
-    </gauge:SfCircularGauge>
+           <gauge:SfCircularGauge x:Name="gauge">
+                <gauge:SfCircularGauge.Scales >
+                    <gauge:CircularScale  x:Name="scale"  MinorTicksPerInterval="3" >
+                        <gauge:CircularScale.MajorTickSettings>
+                            <gauge:MajorTickSetting  Length="20" Stroke="Brown" StrokeThickness="2"  />
+                        </gauge:CircularScale.MajorTickSettings>
+                        <gauge:CircularScale.MinorTickSettings>
+                            <gauge:MinorTickSetting  Stroke="White"  />
+                        </gauge:CircularScale.MinorTickSettings>
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+            </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
-
-SfCircularGauge sfCircularGauge = new SfCircularGauge();
-
-CircularScale mainscale = new CircularScale();
-
-mainscale.MinorTicksPerInterval = 3;
-
-mainscale.TickLength = 20;
-
-mainscale.TickStroke = new SolidColorBrush(Colors.Brown);
-
-mainscale.SmallTickStroke = new SolidColorBrush(Colors.White);
-
-mainscale.TickStrokeThickness = 2;
-
-CircularPointer circularPointer = new CircularPointer();
-
-circularPointer.NeedlePointerVisibility = Visibility.Hidden;
-
-mainscale.Pointers.Add(circularPointer);
-
+ 
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.MinorTicksPerInterval = 3;
+            MajorTickSetting majorTickSetting = new MajorTickSetting();
+            majorTickSetting.Length = 20;
+            majorTickSetting.Stroke = new SolidColorBrush(Colors.Brown);
+            majorTickSetting.StrokeThickness = 2;
+            mainscale.MajorTickSettings = majorTickSetting;
+            MinorTickSetting minorTickSetting = new MinorTickSetting();
+            minorTickSetting.Stroke = new SolidColorBrush(Colors.White);
+            mainscale.MinorTickSettings = minorTickSetting;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+			
 {% endhighlight %}
 
 {% endtabs %}
@@ -78,48 +71,35 @@ mainscale.Pointers.Add(circularPointer);
 
 {% highlight xml %}
 
-    <gauge:SfCircularGauge >
-
-    <gauge:SfCircularGauge.Scales>
-
-    <gauge:CircularScale     MinorTicksPerInterval="3"      SmallTickLength="10" SmallTickStroke="Blue"   SmallTickStrokeThickness="2"  >
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-
-    </gauge:SfCircularGauge>
+            <gauge:SfCircularGauge x:Name="gauge">
+                <gauge:SfCircularGauge.Scales >
+                    <gauge:CircularScale  x:Name="scale"  MinorTicksPerInterval="3" >
+                        <gauge:CircularScale.MinorTickSettings>
+                            <gauge:MinorTickSetting  Length="10" Stroke="Blue" StrokeThickness="2"   />
+                        </gauge:CircularScale.MinorTickSettings>
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+            </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularGauge sfCircularGauge = new SfCircularGauge();
-
-CircularScale mainscale = new CircularScale();
-
-mainscale.MinorTicksPerInterval = 3;
-
-mainscale.SmallTickLength = 10;
-
-mainscale.SmallTickStroke = new SolidColorBrush(Colors.Blue);
-
-mainscale.SmallTickStrokeThickness = 2;
-
-CircularPointer circularPointer = new CircularPointer();
-
-circularPointer.NeedlePointerVisibility = Visibility.Hidden;
-
-mainscale.Pointers.Add(circularPointer);
-
-sfCircularGauge.Scales.Add(mainscale);
-
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.MinorTicksPerInterval = 3;
+            MinorTickSetting minorTickSetting = new MinorTickSetting();
+            minorTickSetting.Length = 10;
+            minorTickSetting.Stroke = new SolidColorBrush(Colors.Blue);
+            minorTickSetting.StrokeThickness = 2;
+            mainscale.MinorTickSettings = minorTickSetting;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
 {% endhighlight %}
 
 {% endtabs %}
@@ -186,62 +166,116 @@ sfCircularGauge.Scales.Add(mainscale);
 
 The major and minor ticks can be positioned far away from the rim using the following two ways:
  
-    1. Using the `MajorTickOffset` and `MinorTickOffset` properties. First, set the `TickPosition` property to custom, and then set the offset of the tick.
+1. Using the `MajorTickSettings` and `MinorTickSettings` `Offset`, `StartOffset`, and `EndOffset` properties. First, set the `TickPosition` property to custom, and then set the offset of the tick.
+
+#### Offset
+
+For relative position you can use `Offset` property, for setting the `Offset` to the Ticks.
 
 {% tabs %}
 
 {% highlight xml %}
 
-    <gauge:SfCircularGauge >
-
-    <gauge:SfCircularGauge.Scales>
-
-    <gauge:CircularScale  TickPosition="Custom"   MinorTicksPerInterval="3" MinorTickOffset="0.5"
-     MajorTickOffset="0.5">
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-            
-    </gauge:SfCircularGauge>
+          <gauge:SfCircularGauge x:Name="gauge">
+                <gauge:SfCircularGauge.Scales >
+                    <gauge:CircularScale  TickPosition="Custom" x:Name="scale"  MinorTicksPerInterval="3" >
+                        <gauge:CircularScale.MajorTickSettings>
+                            <gauge:MajorTickSetting  Offset="0.5"/>
+                        </gauge:CircularScale.MajorTickSettings>
+                        <gauge:CircularScale.MinorTickSettings>
+                            <gauge:MinorTickSetting  Offset="0.5"/>
+                        </gauge:CircularScale.MinorTickSettings>
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+            </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularGauge sfCircularGauge = new SfCircularGauge();
-
-CircularScale mainscale = new CircularScale();
-
-mainscale.TickPosition = TickPosition.Custom;
-
-mainscale.MajorTickOffset = 0.5;
-
-mainscale.MinorTickOffset = 0.5;
-
-mainscale.MinorTicksPerInterval = 3;
-
-CircularPointer circularPointer = new CircularPointer();
-
-circularPointer.NeedlePointerVisibility = Visibility.Hidden;
-
-mainscale.Pointers.Add(circularPointer);
-
-sfCircularGauge.Scales.Add(mainscale);
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.TickPosition = TickPosition.Custom;
+            mainscale.MinorTicksPerInterval = 3;
+            MajorTickSetting majorTickSetting = new MajorTickSetting();
+            majorTickSetting.Offset = 0.5;
+            mainscale.MajorTickSettings = majorTickSetting;
+            MinorTickSetting minorTickSetting = new MinorTickSetting();
+            minorTickSetting.Offset = 0.5;
+            mainscale.MinorTickSettings = minorTickSetting;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img4.png)
+![Tick Offset image](Ticks_images/Ticks_img4.png)
 
-    2. Placing the ticks inside the scale, outside the scale, or across the scale by selecting one of the options available in the `TickPosition` property. They are:
+#### StartOffset, EndOffset
+
+For absolute position you can use `StartOffset`, `EndOffset` properties of `MajorTickSettings` and `MinorTickSettings`.
+
+{% tabs %}
+
+{% highlight xml %}
+
+         <gauge:SfCircularGauge x:Name="gauge">
+            <gauge:SfCircularGauge.Scales >
+                <gauge:CircularScale  x:Name="scale" TickPosition="Custom" MinorTicksPerInterval="3" >
+                    <gauge:CircularScale.MajorTickSettings>
+                        <gauge:MajorTickSetting  StartOffset="0.5" EndOffset="0.7" Length="20" Stroke="Brown" StrokeThickness="2"  />
+                    </gauge:CircularScale.MajorTickSettings>
+                    <gauge:CircularScale.MinorTickSettings>
+                        <gauge:MinorTickSetting  Stroke="Brown" StartOffset="0.6" EndOffset="0.7"   StrokeThickness="2"  />
+                    </gauge:CircularScale.MinorTickSettings>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+			
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.TickPosition = TickPosition.Custom;
+            mainscale.MinorTicksPerInterval = 3;
+            MajorTickSetting majorTickSetting = new MajorTickSetting();
+            majorTickSetting.StartOffset = 0.5;
+            majorTickSetting.EndOffset = 0.7;
+            majorTickSetting.Length = 20;
+            majorTickSetting.Stroke = new SolidColorBrush(Colors.Brown);
+            majorTickSetting.StrokeThickness = 2;
+            mainscale.MajorTickSettings = majorTickSetting;
+            MinorTickSetting minorTickSetting = new MinorTickSetting();
+            minorTickSetting.StartOffset = 0.6;
+            minorTickSetting.EndOffset = 0.7;
+            minorTickSetting.Stroke = new SolidColorBrush(Colors.Brown);
+            minorTickSetting.StrokeThickness = 2;
+            mainscale.MinorTickSettings = minorTickSetting;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![Tick StartOffset EndOffset image](Ticks_images/Tick_Start_End_Offset.png)
+
+![Inner,Outer Offset Image for Range](Ranges_images/Range-Inner-Outer-Offset.png)
+
+2. Placing the ticks inside the scale, outside the scale, or across the scale by selecting one of the options available in the `TickPosition` property. They are:
 
 1.	Inside (Default)
 
