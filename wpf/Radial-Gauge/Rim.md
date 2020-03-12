@@ -269,3 +269,42 @@ N> Default value of the ShowRim property is true.
 {% endtabs %}
 
 ![Show rim support in WPF Circular Gauge](Rim_images/show-rim.png)
+
+### StartOffset and EndOffset for rim
+
+* `StartOffset` - Sets the rim start offset position. Its range is from 0 to 1.
+* `EndOffset` - Sets the rim end offset position. Its range is from 0 to 1.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <gauge:SfCircularGauge x:Name="gauge">
+             <gauge:SfCircularGauge.Scales >
+                  <gauge:CircularScale  x:Name="scale" RimStartOffset="0.6" RimEndOffset="0.7" RimStroke="LightGray"  >
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                  </gauge:CircularScale>
+             </gauge:SfCircularGauge.Scales>
+         </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            mainscale.RimStartOffset = 0.6;
+            mainscale.RimEndOffset = 0.7;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![Start and End offset support in WPF Circular Gauge rim](Rim_images/rim-offset.png)
