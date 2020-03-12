@@ -14,19 +14,29 @@ You can add any custom shapes or views to an image using the `AddCustomView` met
 
 {% highlight xaml %}
 
-        <editor:SfImageEditor  x:Name="editor" ImageSource="Assets\RoadView.jpeg" >
-        </editor:SfImageEditor>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+           <Button x:Name="but" Click="Button_Click" Content="CustomView" />
+            <editor:SfImageEditor Grid.Row="1" x:Name="editor" ImageSource="Assets\RoadView.jpeg" >
+            </editor:SfImageEditor>
+        </Grid>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
           BitmapImage bitmapImage = new BitmapImage();
           bitmapImage.BeginInit();
           bitmapImage.UriSource = new Uri(@"Assets/adventure.jpg", UriKind.Relative);
           bitmapImage.EndInit();
           Image image = new Image() { Height = 100, Width = 100 , Source=bitmapImage} ;
           editor.AddCustomView(image, new CustomViewSettings());
+	    }
   
 {% endhighlight %}
 
