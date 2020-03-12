@@ -532,29 +532,21 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img8.png)
 
-2.	Using the `RangePointerOffset` property. First, set the `RangePointerPosition` to custom, and then set the `RangePointerOffset` property.
+2.	Using the `Offset` property. First, set the `RangePointerPosition` to custom, and then set the `Offset` property.
 
 {% tabs %}
 
 {% highlight xml %}
 
     <gauge:SfCircularGauge >
-
-    <gauge:SfCircularGauge.Scales>
-
-    <gauge:CircularScale RangePointerPosition="Custom" RangePointerOffset="0.5">
-
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer PointerType="RangePointer" RangePointerStroke="HotPink" Value="60"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-
-    </gauge:SfCircularGauge>
+        <gauge:SfCircularGauge.Scales >
+            <gauge:CircularScale  x:Name="scale" RangePointerPosition="Custom">
+                <gauge:CircularScale.Pointers>
+                       gauge:CircularPointer PointerType="RangePointer" Offset="0.5" RangePointerStroke="LightGray" Value="60"/>
+                </gauge:CircularScale.Pointers>
+           </gauge:CircularScale>
+        </gauge:SfCircularGauge.Scales>	
+   </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -564,13 +556,15 @@ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
 CircularScale mainscale = new CircularScale();
 
-mainscale.RangePointerOffset = 0.5;
-
 mainscale.RangePointerPosition = RangePointerPosition.Custom;
 
 CircularPointer circularPointer = new CircularPointer();
 
 circularPointer.PointerType = PointerType.RangePointer;
+
+circularPointer.Offset = 0.5;
+
+circularPointer.RangePointerStroke = new SolidColorBrush(Colors.LightGray);
 
 circularPointer.Value = 90;
 
@@ -594,7 +588,7 @@ The `RangeCap` property provides options to position the range cap of the RangeP
 
     <gauge:SfCircularGauge >
         <gauge:SfCircularGauge.Scales>
-              <gauge:CircularScale x:Name="scale" SweepAngle="360" RimStroke="LightGray"  RimStrokeThickness="30" RangePointerPosition="Custom" RangePointerOffset="0.5">
+              <gauge:CircularScale x:Name="scale" SweepAngle="360" RimStroke="LightGray"  RimStrokeThickness="30" RangePointerPosition="Custom">
                    <gauge:CircularScale.Pointers>
                         <gauge:CircularPointer PointerType="RangePointer" RangePointerStrokeThickness="30" RangeCap="Both" RangePointerStroke="LightSkyBlue" Value="75"/>
                     </gauge:CircularScale.Pointers>
@@ -781,6 +775,48 @@ sfCircularGauge.Scales.Add(mainscale);
 {% endtabs %}
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img12.png)
+
+### Setting offset for SymbolPointers
+
+The `Offset` property in the CircularPointer can be placed SymbolPointer in desired position of rim.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <gauge:SfCircularGauge >
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="SymbolPointer" Offset="0.5" Symbol="Triangle"  Value="60"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+		
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.PointerType = PointerType.SymbolPointer;
+            circularPointer.Value = 60;
+            circularPointer.Symbol = Symbol.Triangle;
+            circularPointer.Offset = 0.5;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+            CircularPointer circularPointer1 = new CircularPointer();
+            circularPointer1.NeedlePointerVisibility = Visibility.Hidden;
+            circularPointer1.PointerType = PointerType.NeedlePointer;
+            mainscale.Pointers.Add(circularPointer1);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SymbolPointer with offset image](Pointers_images/Symbol_Offset.png)
 
 ### Setting multiple pointers
 
