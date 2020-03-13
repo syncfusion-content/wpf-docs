@@ -1349,3 +1349,19 @@ You can download a working demo for the above customization from [here](http://w
  
 1. Non editable columns will not support custom validation except [GridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html).
 2. `CurrentCellValidating` event will not triggered for [GridTemplateColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) and [GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html). 
+
+## See Also
+
+[How to navigate to the error cells in datagrid via button click?](https://www.syncfusion.com/kb/9600)
+
+[How to validate the AddNewRow value based on already existing records?](https://www.syncfusion.com/kb/6596)
+
+[How to show the validation tooltip without hovering the red indicator in cell?](https://www.syncfusion.com/kb/6234)
+
+[How to fire RowValidating event for GridCheckBoxColumn in SfDataGrid](https://www.syncfusion.com/kb/5954)
+
+[How to remove the top-right corner error mark from the GridCell by pressing Esc key when validated by handling the CurrentCellValidating event?](https://www.syncfusion.com/kb/5317)
+
+[How to change the validation error template color?](https://www.syncfusion.com/kb/2574)
+
+[How to wire the RowValidating event after pasted the content to datagrid?](https://www.syncfusion.com/kb/9432)
