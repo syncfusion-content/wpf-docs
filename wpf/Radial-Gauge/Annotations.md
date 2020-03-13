@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotations support for Syncfusion SfCircularGauge control in WPF.
-description: Annotations
+description: This section describes Setting view to annotation and it's feature in SfCircularGauge control WPF platform.
 platform: wpf
 control: SfCircularGauge
 documentation: ug

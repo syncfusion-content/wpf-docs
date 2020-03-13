@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Rim | SfCircularGauge | Wpf | Syncfusion
-description: Rim 
+description: This section describes SfCircularGauge Rim customization and position the rim based on the RadiusFactor value and Radius value.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Rim 
+# SfCircularGauge Rim customization
 
 Scale determines the structure of a circular gauge by using a circular rim. By setting the `StartAngle` and `SweepAngle` properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
 

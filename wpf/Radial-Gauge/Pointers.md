@@ -7,7 +7,7 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-# Pointers
+# CircularScale Pointers customization
 
 Pointers are used to indicate values on the scale. Value of the pointer can be modified using the `Value` property.
 
