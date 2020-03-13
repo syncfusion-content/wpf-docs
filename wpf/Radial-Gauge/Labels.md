@@ -59,7 +59,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img1.png)
+![Label stroke customization image](Labels_images/Label_Stroke_customization.png)
 
 ## Label font customization
 
@@ -115,7 +115,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img2.png)
+![Label font customization image](Labels_images/Label_Font_customization.png)
 
 ## Setting position for labels
 
@@ -175,7 +175,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img3.png)
+![Setting position for labels image](Labels_images/Setting_Position_for_labels.png)
 
 2.	Positioning the labels far away from the ticks using the `LabelOffset` property. First, set the `LabelPosition` to custom, and then position the label using the `LabelOffset` property.
 
@@ -225,7 +225,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img4.png)
+![Positioning labels image](Labels_images/Positioning_labels .png)
 
 ### Setting smart labels
 
@@ -303,7 +303,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img5.png)
+![Setting smart labels image](Labels_images/Setting_Smart_labels.png)
 
 ## Setting number of fraction digits for labels
 
@@ -353,7 +353,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img6.png)
+![Fraction_Digits_fo_lables](Labels_images/Fraction_Digits_for_lables.png)
 
 ## Setting postfix and prefix for labels
 
@@ -407,7 +407,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img7.png)
+![Postfix for lables image](Labels_images/Postfix_for_lables.png)
 
 ### Label prefix
 
@@ -455,7 +455,7 @@ mainscale.Pointers.Add(circularPointer);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img8.png)
+![Prefix for lables image](Labels_images/Prefix_for_lables.png)
 
 ### Show labels
 
