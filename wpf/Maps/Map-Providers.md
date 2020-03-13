@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Map Providers | SfMap | wpf | Syncfusion
-description: map providers
+description: Describes the adding Open Street Map, Bing map and other imagery layer support in WPF SfMaps control
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Providers
+# SfMaps control map Providers
 
 SfMap control supports map providers such as OpenStreetMap that can be added to any layers in maps.
 

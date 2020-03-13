@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Map Points | SfMap | wpf | Syncfusion
-description: map points
+description: Describes customizing the MapPoint, about MapPoint, MapPointTemplate, MapPointPopupTemplate in WPF SfMaps control
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Points
+# SfMaps control Map Points
 
 Points are one of the record type in shape file layer. Points are used to specify the specific point in the map. For example used to specify the capital of countries. Points in the shape file given as latitude and longitude coordinates in the shapes file. Those points should be converted as map points.
 
