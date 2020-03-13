@@ -20,7 +20,7 @@ OpenStreetMap is a map of the entire world. The OpenStreetMap allows you to view
 You can enable this feature by setting the layerType property value as "OSM".
 
 {% highlight xaml %}
-
+ 
 
 
 
@@ -35,7 +35,7 @@ You can enable this feature by setting the layerType property value as "OSM".
 
         </syncfusion:SfMap >
 {% endhighlight %}
-![](Map-Providers_images/Map-Providers_img1.png)
+![OSM map image](Map-Providers_images/OSM_Map_image.png)
 
 
 ### Markers
@@ -120,7 +120,7 @@ The default appearance of the Marker can be customized by using the MarkerTempla
 
 {% endhighlight %}
 
-![](Map-Providers_images/Map-Providers_img6.png)
+![Marker Template image](Map-Providers_images/Marker_Template_image.png)
 
 ### Adding Multiple Layers in OSM
 
@@ -164,7 +164,7 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 
 {% endtabs %}
 
-![](Map-Providers_images/Map-Providers_img5.png)
+![SubShapeFileLayer image](Map-Providers_images/SubShapeFileLayer_image.png)
 
 ## Bing Map
 
@@ -184,13 +184,13 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 
 {% highlight xaml %}
+       
 
 
 
 
 
-
-        <syncfusion:SfMap>
+	   <syncfusion:SfMap>
 
             <syncfusion:SfMap.Layers>
 
@@ -206,7 +206,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 The following screenshot illustrates the Aerial View
 
-![](Map-Providers_images/Map-Providers_img2.png)
+![Bing map Aerial View image](Map-Providers_images/Bing_map_Aerial_View_image.png)
 
 
 
@@ -220,7 +220,7 @@ The following screenshot illustrates the Aerial View
 
 
 
-        <syncfusion:SfMap>
+       <syncfusion:SfMap>
 
             <syncfusion:SfMap.Layers>
 
@@ -236,7 +236,7 @@ The following screenshot illustrates the Aerial View
 
 The following screenshot illustrates the Road view.
 
-'![](Map-Providers_images/Map-Providers_img3.png)
+'![Bing map Road View image](Map-Providers_images/Bing_map_Road_View_image.png)
 
 
 
@@ -266,7 +266,7 @@ The following screenshot illustrates the Road view.
 
 The following screenshot illustrates the AerialWithLabel view.
 
-![](Map-Providers_images/Map-Providers_img4.png)
+![Bing map Aerial With Label_View_image](Map-Providers_images/Bing_map_Aerial_With_Label_View_image.png)
 
 
 ## Calculate zoom level

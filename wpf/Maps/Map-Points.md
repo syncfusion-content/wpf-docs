@@ -84,7 +84,7 @@ MapPointIcon is used for Customizing points shapes.It can be customized by follo
 
 {% endhighlight %}
 
-![](Map-Points_images/Map-Points_img2.png)
+![Map Points icon image in WPF SfMap](Map-Points_images/Map_Points_Icon_image.png)
 
 ## MapPointPopup
 
@@ -236,7 +236,7 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 {% endhighlight %}
 
-![](Map-Points_images/Map-Points_img1.png)
+![Map Points and popup image in WPF SfMap](Map-Points_images/Map_Points_Popup_image.png)
 
 ## Convert geo-coordinate point for ShapeFileLayer and ImageryLayer
 
