@@ -68,7 +68,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Rim_images/Rim_img1.png)
+![Rim startValue enadValue image](Rim_images/Rim_StartValue_EnadValue.png)
 
 ## Rim customization
 
@@ -122,7 +122,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Rim_images/Rim_img2.png)
+![Rim customization image](Rim_images/Rim_customization.png)
 
 ## Setting position for rim
 
@@ -180,7 +180,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Rim_images/Rim_img3.png)
+![Rim with RadiusFactor image](Rim_images/Rim_with_RadiusFactor.png)
 
 ### Setting radius for rim
 
@@ -230,7 +230,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Rim_images/Rim_img4.png)
+![Rim with Radius image](Rim_images/Rim_with_Radius.png)
 
 ### Show rim
 

@@ -63,7 +63,7 @@ The length, stroke, and stroke thickness of a tick are set using the `TickLength
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img1.png)
+![Major Ticks image](Ticks_images/Major_Ticks.png)
 
 ### Customize minor ticks for scale
 
@@ -104,7 +104,7 @@ The length, stroke, and stroke thickness of a tick are set using the `TickLength
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img2.png)
+![ Mino ticks image](Ticks_images/ Minor_Ticks.png)
 
 ## Setting shape for tick
 
@@ -160,7 +160,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img3.png)
+![Triangle shapes ticks image](Ticks_images/Triangle_Shape_Ticks.png)
 
 ## Setting position for tick
 
@@ -215,7 +215,7 @@ For relative position you can use `Offset` property, for setting the `Offset` to
 
 {% endtabs %}
 
-![Tick Offset image](Ticks_images/Ticks_img4.png)
+![Tick Offset image](Ticks_images/Custom_Position_Ticks.png)
 
 #### StartOffset, EndOffset
 
@@ -305,7 +305,7 @@ For absolute position you can use `StartOffset`, `EndOffset` properties of `Majo
 
     </gauge:SfCircularGauge.Scales>
 
-    /gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -333,7 +333,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img5.png)
+![Outer position ticks image](Ticks_images/Outer_Position_Ticks.png)
 
 ### Show ticks
 
