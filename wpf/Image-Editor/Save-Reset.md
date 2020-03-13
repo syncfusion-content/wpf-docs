@@ -109,6 +109,7 @@ This event occurs before the image is saved to the destination location. [`Image
 
 * `Cancel` - Cancels the saving functionality.
 * [`Stream`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs~Stream.html) - Stream of the image that is going to be saved.
+* `FileName` - You can save the image in the specified name using the `ImageSaving` event. 
 
 Hence, you can control the saving using the `Cancel` property, and you can also access the stream as needed.
 
@@ -116,14 +117,22 @@ The following code cancels the default saving and saves the stream in the specif
 
 {% tabs %} 
 
+{% highlight xaml %}
+
+        <editor:SfImageEditor x:Name="editor" ImageSaving="editor_ImageSaving" ImageSource="Assets\Buldingimage.jpeg">
+        </editor:SfImageEditor>
+
+{% endhighlight %}
+
 {% highlight C# %} 
 
- private void Editor_ImageSaving(object sender, ImageSavingEventArgs args)
+        private void Editor_ImageSaving(object sender, ImageSavingEventArgs args)
         {
             args.Cancel = true; 
             FileStream stream = new FileStream(@"E:\Images\Resized.jpg", FileMode.Create);
             args.Stream.CopyTo(stream);
             stream.Seek(0, 0);
+		    args.FileName = "SavedImage";
         }
 
 {% endhighlight %}
@@ -143,30 +152,6 @@ This event occurs after the image has been saved to the destination location. Th
             string filePath = args.Location;
         }
 
-{% endhighlight %}
-
-{% endtabs %} 
-
-### File name support for saving image
-
-Using this feature we can save the image in the specified name using the ImageSaving event. 
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-        <editor:SfImageEditor x:Name="editor" ImageSaving="editor_ImageSaving" ImageSource="Assets\Buldingimage.jpeg">
-        </editor:SfImageEditor>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-        private void editor_ImageSaving(object sender, ImageSavingEventArgs e)
-        {
-            e.FileName = "SavedImage";
-        }
-  
 {% endhighlight %}
 
 {% endtabs %} 

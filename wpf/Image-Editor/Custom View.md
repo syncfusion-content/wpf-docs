@@ -69,4 +69,4 @@ The CustomViewSettings is defined to set the values for `CanMaintainAspectRatio`
 
 {% endhighlight %}
 
-![SfImageEditor](ImageEditor_images/CustomView.png)
+![SfImageEditor](ImageEditor_images/CustomView.jpg)
