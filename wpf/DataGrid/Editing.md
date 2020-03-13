@@ -713,7 +713,7 @@ public class SfDataGridExt : SfDataGrid
 
 [How to edit SfDataGrid Template column by single tap?](https://www.syncfusion.com/kb/3206)
 
-[How to set the Copy and Paste option of the Grid by using ContextMenu and SfRibbion?](https://www.syncfusion.com/kb/3203)
+[How to set the Copy and Paste option of the Grid by using ContextMenu and SfRibbon?](https://www.syncfusion.com/kb/3203)
 
 [How to hide the rows based on condition in SfDataGrid?](https://www.syncfusion.com/kb/3190)
 
