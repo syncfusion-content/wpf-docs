@@ -7,7 +7,7 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-# Ranges 
+# CircularScale Ranges customization
 
 Range is a visual element, which begins and ends at the specified values within a scale.
 

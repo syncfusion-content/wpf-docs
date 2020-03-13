@@ -206,7 +206,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 The following screenshot illustrates the Aerial View
 
-![Bing map Aerial View image](Map-Providers_images/Bing_map_Aerial_View_image.png)
+![Bing map Aerial View image](Map-Providers_images/Bing_map_Aerial_View_image.jpg)
 
 
 
@@ -236,7 +236,7 @@ The following screenshot illustrates the Aerial View
 
 The following screenshot illustrates the Road view.
 
-'![Bing map Road View image](Map-Providers_images/Bing_map_Road_View_image.png)
+'![Bing map Road View image](Map-Providers_images/Bing_map_Road_View_image.jpg)
 
 
 
@@ -266,7 +266,7 @@ The following screenshot illustrates the Road view.
 
 The following screenshot illustrates the AerialWithLabel view.
 
-![Bing map Aerial With Label_View_image](Map-Providers_images/Bing_map_Aerial_With_Label_View_image.png)
+![Bing map Aerial With Label_View_image](Map-Providers_images/Bing_map_Aerial_With_Label_View_image.jpg)
 
 
 ## Calculate zoom level
