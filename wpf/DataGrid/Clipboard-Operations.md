@@ -572,3 +572,22 @@ public class CustomCopyPaste : GridCutCopyPaste
 }
 {% endhighlight %}
 {% endtabs %}
+
+## See Also
+
+[How to copy active cell value alone when SelectionUnit as Row](https://www.syncfusion.com/kb/9913)
+
+[How to paste the copied row in AddNewRow?](https://www.syncfusion.com/kb/6865)
+
+[How to paste the empty string while using Cell selection?](https://www.syncfusion.com/kb/6699)
+
+[How to paste the data by custom column order instead of the first column in the SfDataGrid when SelectionUnit is a Row?](https://www.syncfusion.com/kb/5321)
+
+[How to add the copied rows as new rows in the SfDataGrid while pasting?](https://www.syncfusion.com/kb/4812)
+
+[How to copy one row and paste it into all the selected rows like Excel in the SfDataGrid?](https://www.syncfusion.com/kb/4710)
+
+[How to copy one cell and paste it into all the selected cells in the SfDataGrid like the Excel?](https://www.syncfusion.com/kb/4678)
+
+[How to copy the column and paste it as a new column by ContextMenu in SfDataGrid?](https://www.syncfusion.com/kb/3245)
+
