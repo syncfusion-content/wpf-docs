@@ -1701,3 +1701,73 @@ public class GridSelectionControllerExt : GridSelectionController
 
 {% endhighlight %}
 {% endtabs %}
+
+## See Also
+
+[How to disable the row selection while clicking on the checkbox column](https://www.syncfusion.com/kb/9909)
+
+[How to copy active cell value alone when SelectionUnit as Row](https://www.syncfusion.com/kb/9913)
+
+[How to improve the performance while selecting rows using Shift key ?](https://www.syncfusion.com/kb/9434)
+
+[How to scroll and select record programmatically ?](https://www.syncfusion.com/kb/8624)
+
+[How to prevent the selection while pressing rightclick ?](https://www.syncfusion.com/kb/7743)
+
+[How to get the SelectedItem of the DetailsView?](https://www.syncfusion.com/kb/6922)
+
+[How to add a new row continuously in AddNewRow without moving the selection to next row?](https://www.syncfusion.com/kb/6867)
+
+[How to change the CheckBoxColumn values based on row selection?](https://www.syncfusion.com/kb/6710)
+
+[How to bind SelectedItem and CurrentItem in DetailsViewDataGrid](https://www.syncfusion.com/kb/6704)
+
+[How to select the rows based on a CellValue?](https://www.syncfusion.com/kb/6697)
+
+[How to change the cell value of selectedcells when end edit?](https://www.syncfusion.com/kb/6655)
+
+[How to clear selection while grouping/ungrouping?](https://www.syncfusion.com/kb/6650)
+
+[How to search and select record in SfDataGrid?](https://www.syncfusion.com/kb/6604)
+
+[How to read cell values from SelectedItems?](https://www.syncfusion.com/kb/6384)
+
+[How to add a new record in specific DetailsViewDataGrid ?](https://www.syncfusion.com/kb/6287)
+
+[How to move selection to newly added record using AddNewRow?](https://www.syncfusion.com/kb/6042)
+
+[How to paste the data by custom column order instead of the first column in the SfDataGrid when SelectionUnit is a Row?](https://www.syncfusion.com/kb/5321)
+
+[How to remove the top-right corner error mark from the GridCell by pressing Esc key when validated by handling the CurrentCellValidating event?](https://www.syncfusion.com/kb/5317)
+
+[How to programmatically select the records of the Master-DetailsView at run time?](https://www.syncfusion.com/kb/5315)
+
+[How to accomplish RecordNavigationBar in the SfDataGrid like Syncfusion WindowsForms DataBoundGrid?](https://www.syncfusion.com/kb/5303)
+
+[How to select the entire column in SfDataGrid ?](https://www.syncfusion.com/kb/5072)
+
+[How to move the CurrentCell to the first column of the AddNewRow when the Tab key is pressed from the last column and its position is at the Bottom of the SfDataGrid?](https://www.syncfusion.com/kb/4736)
+
+[How to navigate the current cell within the selected ranges as in Excel, while pressing Enter or Tab key in SfDataGrid?](https://www.syncfusion.com/kb/4668)
+
+[How to add selection to data rows of each group on expanding its CaptionSummaryRow?](https://www.syncfusion.com/kb/4211)
+
+[How to change the Enter key behavior in SfDataGrid?](https://www.syncfusion.com/kb/3815)
+
+[How to change the Enter key behavior to insert line break when the CurrentCell is in the edit mode?](https://www.syncfusion.com/kb/3727)
+
+[How to show the selection of row/cell when setting the background for SfDataGrid GridCell?](https://www.syncfusion.com/kb/3182)
+
+[How to set Border for the Selected Rows?](https://www.syncfusion.com/kb/3157)
+
+[How to bind the SelectedItems property of SfDataGrid to ViewModel property?](https://www.syncfusion.com/kb/3070)
+
+[How to get information from the selected cells when using cell selection?](https://www.syncfusion.com/kb/3009)
+
+[How to avoid selection while grouping and ungrouping in SfDataGrid?](https://www.syncfusion.com/kb/2531)
+
+[How to change the background and foreground for the selected row or cell?](https://www.syncfusion.com/kb/2507)
+
+[How to set current cell on particular row when DataGrid loaded?](https://www.syncfusion.com/kb/2473)
+
+[How to select the multiple rows on the SfDataGrid?](https://www.syncfusion.com/kb/2440)
