@@ -104,7 +104,7 @@ The length, stroke, and stroke thickness of a tick are set using the `TickLength
 
 {% endtabs %}
 
-![ Mino ticks image](Ticks_images/ Minor_Ticks.png)
+![Minor ticks image](Ticks_images/Minor_Ticks.png)
 
 ## Setting shape for tick
 

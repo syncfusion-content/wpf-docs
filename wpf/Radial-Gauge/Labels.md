@@ -225,7 +225,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% endtabs %}
 
-![Positioning labels image](Labels_images/Positioning_labels .png)
+![Positioning labels image](Labels_images/Positioning_labels.png)
 
 ### Setting smart labels
 
