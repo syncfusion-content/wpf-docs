@@ -1742,7 +1742,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
 [How to programmatically select the records of the Master-DetailsView at run time?](https://www.syncfusion.com/kb/5315)
 
-[How to accomplish RecordNavigationBar in the SfDataGrid like Syncfusion WindowsForms DataBoundGrid?](https://www.syncfusion.com/kb/5303)
+[How to accomplish RecordNavigationBar in the SfDataGrid like Syncfusion Windows Forms DataBoundGrid?](https://www.syncfusion.com/kb/5303)
 
 [How to select the entire column in SfDataGrid ?](https://www.syncfusion.com/kb/5072)
 
