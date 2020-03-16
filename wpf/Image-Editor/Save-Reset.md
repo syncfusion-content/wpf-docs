@@ -132,7 +132,7 @@ The following code cancels the default saving and saves the stream in the specif
             FileStream stream = new FileStream(@"E:\Images\Resized.jpg", FileMode.Create);
             args.Stream.CopyTo(stream);
             stream.Seek(0, 0);
-args.FileName = "SavedImage";
+            args.FileName = "SavedImage";
         }
 
 {% endhighlight %}
