@@ -74,11 +74,11 @@ for (int i = 1; i < 4; i++)
 
 ![CommentTip for specific row or column in WPF GridControl](Commenttip_images/show-commenttip-column.png)
 
-N> View sample in [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_simple)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_simple)
 
 ## Change comment indicator position
 
-Setting [Comment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~Comment.html) property always displays comment indicator at top right corner of the cell. You can change the comment indicator position for a specific cell by using [GridCommentStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo.html). For example, you can set the comment indicator at top position in any cell by setting [GridCommentStyleInfo.TopLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftComment.html) or [GridCommentStyleInfo.TopRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopRightComment.html) properties.
+Setting [Comment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~Comment.html) property always displays comment indicator at top right corner of the cell. You can change the comment indicator position for a specific cell by using [GridCommentStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo.html). For example, you can set the comment indicator at top position for any cell by setting [GridCommentStyleInfo.TopLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftComment.html) or [GridCommentStyleInfo.TopRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopRightComment.html) properties.
 
 N> You can display comment for all four corners at the same time. 
 
@@ -119,12 +119,12 @@ for (int i = 1; i < 4; i++)
 {% endtabs %}
 
 
-N> View sample in [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip)
 
 
 ![Change the comment indicator position in WPF GridControl](Commenttip_images/show-commenttip-indicatorposition.png)
 
-N> Similarly, You can also set the comment indicator at bottom position in any cell or row or column by setting the [BottomLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomLeftComment.html) and [BottomRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomRightComment.html) properties.
+N> Similarly, You can also set the comment indicator at bottom position for any cell or row or column by setting the [BottomLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomLeftComment.html) and [BottomRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomRightComment.html) properties.
 
 ## Set CommentTip using QueryCellInfo
 
@@ -166,7 +166,7 @@ private void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 ![CommentTip for row and column using QueryCellInfo in WPF GridControl](Commenttip_images/show-commenttip-row_column.png)
 
-N> View sample in [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_using_querycellinfo)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_using_querycellinfo)
 
 ## Handling CommentTip opening event
 
@@ -237,4 +237,4 @@ grid.Model[1, 2].GridCommentStyleInfo.TopLeftCommentTemplateKey = "TopLeftCommen
 ![Customize the comment tip window in WPF GridControl](Commenttip_images/show-commenttip-window.png)
 
 
-N> View sample in [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_customization)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_customization)
