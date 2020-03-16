@@ -238,9 +238,9 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 ![Map Points and popup image in WPF SfMap](Map-Points_images/Map_Points_Popup_image.png)
 
-## Convert geo-coordinate point for ShapeFileLayer and ImageryLayer
+## Convert Geo-coordinate point for ShapeFileLayer and ImageryLayer
 
-We can Convert a geo-coordinate point to a screen point and  screen point to geo-coordinate using `GeopointToViewPoint` method and `GetLatLonFromPoint`.
+We can Convert a Geo-coordinate point to a screen point and  screen point to Geo-coordinate using `GeopointToViewPoint` method and `GetLatLonFromPoint`.
 
 {% tabs %}
 
