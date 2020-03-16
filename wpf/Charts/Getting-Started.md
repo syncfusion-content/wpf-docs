@@ -237,7 +237,7 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wp
 
   <syncfusion:SfChart.SecondaryAxis>
   
-      <syncfusion:NumericalAxis Header="Height(in cm)" >                        
+      <syncfusion:NumericalAxis Header="Height(in cm)" />                        
 
   </syncfusion:SfChart.SecondaryAxis>
     
