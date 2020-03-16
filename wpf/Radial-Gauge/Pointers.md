@@ -124,7 +124,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Needle pointer customization
 
-The length of a needle is controlled using the `NeedleLengthFactor` property. The minimum and maximum bounds of the `NeedleLengthFactor` property are 0 and 1. The needle’s UI is customized using the `NeedlePointerStroke` and `NeedlePointerStrokeThickness` properties. The size of the pointer cap can be modified by changing the `PointerCapDiameter` property, and color can be modified using the `PointerCapStroke` property.
+The length of a needle is controlled using the `NeedleLengthFactor` property. The minimum and maximum bounds of the `NeedleLengthFactor` property are 0 and 1. The needle’s UI is customized using the `NeedlePointerStroke` and `NeedlePointerStrokeThickness` properties. The size of the pointer cap can be modified by changing the `PointerCapDiameter` property, and color can be modified using the `KnobStroke` property.
 
 {% tabs %}
 
@@ -138,7 +138,7 @@ The length of a needle is controlled using the `NeedleLengthFactor` property. Th
 
     <gauge:CircularScale.Pointers>
 
-    <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle" NeedlePointerStroke="DeepSkyBlue"     PointerCapDiameter="20" PointerCapStroke="DeepSkyBlue"
+    <gauge:CircularPointer PointerType="NeedlePointer" NeedlePointerType="Triangle" NeedlePointerStroke="DeepSkyBlue"     PointerCapDiameter="20" KnobStroke="DeepSkyBlue"
     NeedleLengthFactor="0.5" NeedlePointerStrokeThickness="10"/>
 
     </gauge:CircularScale.Pointers>
@@ -171,7 +171,7 @@ circularPointer.NeedleLengthFactor = 0.5;
 
 circularPointer.PointerCapDiameter = 20;
 
-circularPointer.PointerCapStroke = new SolidColorBrush(Colors.DeepSkyBlue);
+circularPointer.KnobStroke = new SolidColorBrush(Colors.DeepSkyBlue);
 
 mainscale.Pointers.Add(circularPointer);
 
@@ -835,7 +835,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
     <gauge:CircularScale.Pointers>
 
     <gauge:CircularPointer PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
-     NeedlePointerType="Tapered" PointerCapStroke="#39B2C6" />
+     NeedlePointerType="Tapered" KnobStroke="#39B2C6" />
 
     <gauge:CircularPointer PointerType="RangePointer"  Value="100"/>
 
@@ -868,7 +868,7 @@ circularPointer.Value = 60;
 
 circularPointer.NeedlePointerType = NeedlePointerType.Tapered;
 
-circularPointer.PointerCapStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
+circularPointer.KnobStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
 
 mainscale.Pointers.Add(circularPointer);
 
@@ -923,7 +923,7 @@ The `EnableAnimation` property is a Boolean property that enables or disables th
     <gauge:CircularScale.Pointers>
 
     <gauge:CircularPointer PointerType="NeedlePointer" NeedleLengthFactor="0.4" Value="60"
-    NeedlePointerType="Triangle" PointerCapStroke="#39B2C6" PointerCapDiameter="20"/>
+    NeedlePointerType="Triangle" KnobStroke="#39B2C6" PointerCapDiameter="20"/>
 
     <gauge:CircularPointer PointerType="RangePointer"  Value="100" RangePointerStroke="#39B2C6"/>
 
@@ -959,7 +959,7 @@ The `EnableAnimation` property is a Boolean property that enables or disables th
 
             circularPointer.PointerCapDiameter = 20;
 
-            circularPointer.PointerCapStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
+            circularPointer.KnobStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
 
             mainscale.Pointers.Add(circularPointer);
 
