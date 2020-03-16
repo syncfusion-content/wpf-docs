@@ -240,7 +240,7 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 ## Convert geo-coordinate point for ShapeFileLayer and ImageryLayer
 
-We can Convert a geo-coordinate point to a screen point and  screen point to geo-coordinate using `GeopointToViewPoint` method and `GetLatLonFromPoint
+We can Convert a geo-coordinate point to a screen point and  screen point to geo-coordinate using `GeopointToViewPoint` method and `GetLatLonFromPoint`.
 
 {% tabs %}
 
