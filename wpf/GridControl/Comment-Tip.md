@@ -14,7 +14,7 @@ Comment Tip can be added to individual cells, rows and columns to show more info
 
 ## Comment Tip for specific cell
 
-The comment tip can be added to the specific cell by setting the [Comment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~Comment.html) property. The comment text will be displayed in the comment tip window. 
+The comment tip can be added to the specific cell by setting the [Comment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~Comment.html) property. The comment indicator will be shown at the top right corner of the cell.
 
 {% tabs %}
 
@@ -30,7 +30,7 @@ grid.Model[1, 2].Comment = grid.Model[1, 0].CellValue + ":\nPopulation rate in "
 
 ## Comment Tip for row and column
 
-The Comment tip can be added to specific row or column by setting the [Comment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~Comment.html) property. The comment text will be displayed in the comment tip window.
+The Comment tip can be added to specific row or column by setting the [Comment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~Comment.html) property. The comment indicator will be shown at the top right corner of the cell.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ for (int i = 1; i < 4; i++)
 
 ![CommentTip for specific row or column in WPF GridControl](Commenttip_images/show-commenttip-column.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_simple)
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_simple)
 
 ## Change comment indicator position
 
@@ -119,12 +119,12 @@ for (int i = 1; i < 4; i++)
 {% endtabs %}
 
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip)
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip)
 
 
 ![Change the comment indicator position in WPF GridControl](Commenttip_images/show-commenttip-indicatorposition.png)
 
-N> Similarly, You can also change the comment indicator as the following position([TopRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopRightComment.html), [BottomLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomLeftComment.html) and [BottomRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomRightComment.html)).
+N> Similarly, You can also set the comment indicator at bottom position in any cell or row or column by setting the [BottomLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomLeftComment.html) and [BottomRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomRightComment.html) properties.
 
 ## Set CommentTip using QueryCellInfo
 
@@ -166,7 +166,7 @@ private void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 ![CommentTip for row and column using QueryCellInfo in WPF GridControl](Commenttip_images/show-commenttip-row_column.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_using_querycellinfo)
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_using_querycellinfo)
 
 ## Handling CommentTip opening event
 
@@ -195,7 +195,9 @@ private void Grid_CellCommentOpening(object sender, GridCellCommentOpeningEventA
 
 ## Customize the CommentTip
 
-The comment tip appearance can be customized by defining DataTemplate. The DataTemplate can be assigned to [GridStyleInfo.CommentTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CommentTemplateKey.html). If you are using [TopLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftComment.html), [TopRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopRightComment.html), [BottomRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomRightComment.html), or [BottomLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomLeftComment.html) then you need to assign template to its corresponding template key property namely [GridCommentStyleInfo.TopLeftCommentTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftCommentTemplateKey.html), …
+The comment tip appearance can be customized by defining DataTemplate. The DataTemplate can be assigned to [GridStyleInfo.CommentTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~CommentTemplateKey.html). If you are using [TopLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftComment.html), [TopRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopRightComment.html), [BottomRightComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomRightComment.html), or [BottomLeftComment](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomLeftComment.html) then you need to assign template to its corresponding template key property namely [GridCommentStyleInfo.TopLeftCommentTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopLeftCommentTemplateKey.html), [GridCommentStyleInfo.TopRightCommentTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~TopRightCommentTemplateKey.html), [GridCommentStyleInfo.BottomLeftCommentTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomLeftCommentTemplateKey.html) or [GridCommentStyleInfo.BottomRightCommentTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridCommentStyleInfo~BottomRightCommentTemplateKey.html).
+
+[GridStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo.html) which holds cell information is the `DataContext` for data template of comment. 
 
 In the below code TopLeft comment is customized.
 
@@ -235,4 +237,4 @@ grid.Model[1, 2].GridCommentStyleInfo.TopLeftCommentTemplateKey = "TopLeftCommen
 ![Customize the comment tip window in WPF GridControl](Commenttip_images/show-commenttip-window.png)
 
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_customization)
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-CommentTip/tree/master/commenttip_customization)
