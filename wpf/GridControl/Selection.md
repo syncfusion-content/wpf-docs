@@ -347,7 +347,7 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 [How to get first and last selected row index](https://www.syncfusion.com/kb/11183)
 
-[How to set extended selectionmode in to select a row when user-click-a-cell](https://www.syncfusion.com/kb/11185)
+[How to set extended selection mode in to select a row when user-click-a-cell](https://www.syncfusion.com/kb/11185)
 
 [How to avoid selection header cell](https://www.syncfusion.com/kb/11186)
 
