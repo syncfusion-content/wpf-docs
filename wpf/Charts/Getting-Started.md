@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started Xamarin Chart (SfChart)
 
 This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
@@ -237,7 +237,7 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wp
 
   <syncfusion:SfChart.SecondaryAxis>
   
-      <syncfusion:NumericalAxis Header="Height(in cm)" >                        
+      <syncfusion:NumericalAxis Header="Height(in cm)" />                        
 
   </syncfusion:SfChart.SecondaryAxis>
     
