@@ -278,18 +278,34 @@ This feature allows set the initial zoom level automatically in two ways.
 
 ### Distance Radius 
 
+N> DistanceType default value is KiloMeter.
+
 Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of ImageryLayer.
 
 {% tabs %}
 
 {% highlight xml %}
 
-       <syncfusion:SfMap>
-            <syncfusion:SfMap.Layers>
-                <syncfusion:ImageryLayer Center="30.9709225, -100.2187212" Radius="50" DistanceType="KiloMeter" >
-                </syncfusion:ImageryLayer>
-            </syncfusion:SfMap.Layers>
-        </syncfusion:SfMap>
+      <Window.Resources>
+        <ResourceDictionary >
+            <DataTemplate x:Key="markerTemplate">
+                <Grid Margin="-12,-30,0,0">
+                    <Canvas>
+                        <Image Source="pin.png" Height="30"/>
+                    </Canvas>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+	
+    <Grid>
+        <maps:SfMap>
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer MarkerTemplate="{StaticResource ResourceKey=markerTemplate}" Markers="{Binding Models}" Center="38.909804, -77.043442" Radius="5" DistanceType="KiloMeter" >
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+    </Grid>
 
 {% endhighlight %}
 
@@ -297,10 +313,28 @@ Calculate the initial zoom level automatically based on the `Radius` and `Distan
 
             SfMap maps = new SfMap();
             ImageryLayer layer = new ImageryLayer();
-            layer.Center = new Point(30.9709225, -100.2187212);
-            layer.Radius = 50;
+            layer.Center = new Point(38.909804, -77.043442);
+            layer.Radius = 5;
             layer.DistanceType = DistanceType.KiloMeter;
+            layer.Markers = obj.Models;
+            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
             maps.Layers.Add(layer);
+			
+	  public class Model
+      {
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+      }
+			
+	   public class ViewModel
+       {
+          public ObservableCollection<Model> Models { get; set; }
+          public ViewModel()
+          {
+            this.Models = new ObservableCollection<Model>();
+            this.Models.Add(new Model() { Latitude = "38.909804", Longitude = "-77.043442" });
+         }
+      }
 
 {% endhighlight %}
 
@@ -314,16 +348,29 @@ Calculate the initial zoom level automatically based on the LatLngBounds of Imag
 
 {% highlight xml %}
 
-       <maps:SfMap>
+        <Window.Resources>
+        <ResourceDictionary >
+            <DataTemplate x:Key="markerTemplate">
+                <Grid Margin="-12,-30,0,0">
+                    <Canvas>
+                        <Image Source="pin.png" Height="30"/>
+                    </Canvas>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <maps:SfMap>
             <maps:SfMap.Layers>
-                <maps:ImageryLayer x:Name="layer">
+                <maps:ImageryLayer LayerType="OSM" MarkerTemplate="{StaticResource ResourceKey=markerTemplate}"  Markers="{Binding Models}"  >
                     <maps:ImageryLayer.LatLngBounds>
-                        <maps:LatLngBounds Northeast="36.9628066,-122.0194722" Southwest="36.9628066,-122.0194722" >
+                        <maps:LatLngBounds Northeast="38.909804, -77.043442" Southwest="38.909804, -77.043442" >
                         </maps:LatLngBounds>
                     </maps:ImageryLayer.LatLngBounds>
                 </maps:ImageryLayer>
             </maps:SfMap.Layers>
         </maps:SfMap>
+    </Grid>
 
 {% endhighlight %}
 
@@ -332,10 +379,28 @@ Calculate the initial zoom level automatically based on the LatLngBounds of Imag
             SfMap maps = new SfMap();
             ImageryLayer layer = new ImageryLayer();
             LatLngBounds bounds = new LatLngBounds();
-            bounds.Northeast = new Point(36.9628066, -122.0194722);
-            bounds.Southwest = new Point(36.9628066, -122.0194722);
+            bounds.Northeast = new Point(38.909804, -77.043442);
+            bounds.Southwest = new Point(38.909804, -77.043442);
             layer.LatLngBounds = bounds;
+            layer.Markers = obj.Models;
+            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
             maps.Layers.Add(layer);
+			
+	  public class Model
+      {
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+      }
+			
+	   public class ViewModel
+       {
+          public ObservableCollection<Model> Models { get; set; }
+          public ViewModel()
+          {
+            this.Models = new ObservableCollection<Model>();
+            this.Models.Add(new Model() { Latitude = "38.909804", Longitude = "-77.043442" });
+         }
+      }
 
 {% endhighlight %}
 
@@ -343,7 +408,7 @@ Calculate the initial zoom level automatically based on the LatLngBounds of Imag
 
 N> When setting LatLngBounds and DistanceRadius at the same time, the priority is DistanceRadius and calculate zoom level based Radius value.
 
-![WPF SfMaps zoom level changed image](Map-Providers_images/Zoom_Level.png)
+![WPF SfMaps zoom level changed image](Map-Providers_images/Zoom_Level.jpg)
 
 ## Calculate the map tile layer bounds
 
