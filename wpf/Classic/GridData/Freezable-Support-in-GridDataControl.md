@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Freezable Support in GridDataControl | GridData (Classic) | wpf | Syncfusion
+title: Freezable Support in GridDataControl | wpf | Syncfusion
 description: Learn here about how to provide the freeze the data and inheritance context in the Syncfusion WPF GridDataControl.
 platform: wpf
 control: GridData (Classic)
