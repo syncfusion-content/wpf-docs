@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Map Points | SfMap | wpf | Syncfusion
-description: Describes customizing the MapPoint, about MapPoint, MapPointTemplate, MapPointPopupTemplate in WPF SfMaps control
+description:This section describes customizing the MapPoint, about MapPointTemplate, MapPointPopupTemplate in WPF SfMaps control
 platform: wpf
 control: SfMap
 documentation: ug
