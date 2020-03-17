@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion InteractiveFeatures.
-description: This section explains how the SfChart provides interactive features such as zooming, selection, and tracking data points.
+description: How to show the functionality of WPF Chart with available interaction options such as zooming, selecting, and tracking the data points.
 platform: wpf
 control: SfChart
 documentation: ug
