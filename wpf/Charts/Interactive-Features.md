@@ -300,7 +300,7 @@ chart.Series.Add(series2);
 
 N>By default the VerticalAlignment of the Tooltip is Top
 
-**VerticalOffset** **and** **HorizontalOffset**
+**VerticalOffset and HorizontalOffset**
 
 The tooltip can be positioned at a particular distance from the cursor horizontally using [`HorizontalOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetHorizontalOffset.html#) and vertically using [`VerticalOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetVerticalOffset.html#) properties.
 
@@ -433,7 +433,7 @@ chart.Series.Add(series);
 
 N> The tooltip by default will be displayed for 1000 milliseconds.
 
-**Show** **Delay**
+**Show Delay**
 
 ToolTip also has support for delay the time to display by setting [`SetInitialShowDelay`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetInitialShowDelay.html#) property in milliseconds.
 
@@ -717,7 +717,7 @@ chart.Behaviors.Add(behavior);
 ![TrackBall support in WPF Chart](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
-**Customization** **of** **TrackBall** **Line**
+**Customization of TrackBall Line**
 
 SfChart allows you to customize the appearance of  trackball vertical line using [`LineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LineStyle.html#) property.
 
@@ -907,7 +907,7 @@ chart.Behaviors.Add(behavior);
 ![Alignment support for trackball axis label in WPF Chart](Interactive-Features_images/Interactive-Features_img12.jpeg)
 
 
-**Customization** **of** **Axis** **Label**
+### Customization of Axis Label
 
 You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~TrackBallLabelTemplate.html#) property in ChartAxis as in the below code snippet.
 
@@ -1060,7 +1060,7 @@ chart.Behaviors.Add(behavior);
 ![Alignment support for trackball series label in WPF Chart](Interactive-Features_images/Interactive-Features_img14.jpeg)
 
 
-**LabelDisplayMode**
+### LabelDisplayMode
 
 When there is a multiple series, by default the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayMode.html#) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html).
 
@@ -1173,7 +1173,7 @@ The following screenshot illustrates the trackball label for financial series, w
 ![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping2.png)
 
 
-**TrackBall for Technical Indicators**
+### TrackBall for Technical Indicators
 
 In trackball label, the data point value of the technical indicator also can be displayed by enabling [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~ShowTrackballInfoProperty.html) of technical indicator. It is shown in the following code example.
 
@@ -1216,6 +1216,8 @@ chart.TechnicalIndicators.Add(average);
 ![TrackBall for Technical Indicators support in WPF](Interactive-Features_images/indicator.png)
 
 N> By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~ShowTrackballInfoProperty.html) value of technical indicators is false.
+
+### TrackBallLabelTemplate
 
 [`TrackBallLabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TrackBallLabelTemplate.html#) property in [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#) allows you to customize the appearance of series label in trackball.
 
@@ -1335,14 +1337,14 @@ chart.Behaviors.Add(behavior);
 
 The following events are available in ChartTrackBallBehavior,
 
-##PositionChanging
+**PositionChanging**
 
 The [`PositionChanging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanging_EV.html) event occurs when the [`trackball`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) position is changing from current mouse position to new mouse position. This argument contains the following information.
 
 * [`Cancel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs~Cancel.html) - Gets or sets a value that indicates whether to show the trackball on new mouse pointer position.
 * [`PointInfos`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs~PointInfos.html) - Gets or sets the current [`ChartPointInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
 
-##PositionChanged
+**PositionChanged**
 
 The [`PositionChanged`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanged_EV.html) event occurs when the [`trackball`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) position is changed from current mouse position to new mouse position. This argument contains the following information.
 
