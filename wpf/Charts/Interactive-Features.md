@@ -7,11 +7,11 @@ control: SfChart
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive features
 
 SfChart provides interactive features such as zooming, selection, and tracking data points.
 
-The following interactive features are supported in SfChart.
+The following interactive features are supported in SfChart:
 
 * ToolTip
 * TrackBall
@@ -88,11 +88,11 @@ chart.Series.Add(series2);
 
 ### Aligning the ToolTip
 
-The tooltip can be aligned with respect to the cursor position using [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip_members.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip_members.html#) properties.
+The tooltip can be aligned with respect to the cursor position using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip_members.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip_members.html#) properties.
 
 **HorizontalAlignment**
 
-The following code example illustrates the positioning of tooltip to left of the cursor.
+The following code example explains the positioning of tooltip to the left of the cursor.
 
 {% tabs %}
 
@@ -158,7 +158,7 @@ N> By default the horizontal alignment is center for the tooltip.
 
 **VerticalAlignment**
 
-The following code example illustrates the positioning of tooltip to bottom of the cursor.
+The following code example explains the positioning of tooltip to the bottom of the cursor.
 
 {% tabs %}
 
@@ -223,7 +223,7 @@ chart.Series.Add(series2);
 
 **ToolTipMargin**
 
-You can also set the distance for the margin to be positioned from the cursor using ToolTipMargin property as in the below code snippet.
+You can also set the distance for the margin to be positioned from the cursor using the ToolTipMargin property as in the following code snippet.
 
 {% tabs %}
 
@@ -298,11 +298,11 @@ chart.Series.Add(series2);
 ![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
-N>By default the VerticalAlignment of the Tooltip is Top
+N>By default, the VerticalAlignment of the Tooltip is Top.
 
 **VerticalOffset and HorizontalOffset**
 
-The tooltip can be positioned at a particular distance from the cursor horizontally using [`HorizontalOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetHorizontalOffset.html#) and vertically using [`VerticalOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetVerticalOffset.html#) properties.
+The tooltip can be positioned at a particular distance from the cursor horizontally using the [`HorizontalOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetHorizontalOffset.html#) and vertically using [`VerticalOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetVerticalOffset.html#) properties.
 
 {% tabs %}
 
@@ -382,7 +382,7 @@ chart.Series.Add(series2);
 
 ![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
-### ToolTip Duration
+### ToolTip duration
 
 This property [`ShowDuration`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetShowDuration.html#) in [`ChartToolTip`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip.html#) sets the duration time for tooltip to be displayed in milliseconds.
 
@@ -435,7 +435,7 @@ N> The tooltip by default will be displayed for 1000 milliseconds.
 
 **Show delay**
 
-ToolTip also has support for delay the time to display by setting [`SetInitialShowDelay`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetInitialShowDelay.html#) property in milliseconds.
+ToolTip also has support to delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetInitialShowDelay.html#) property in milliseconds.
 
 The following code example demonstrates the tooltip will be delayed for 1 second at the before display.
 
@@ -482,7 +482,7 @@ chart.Series.Add(series);
 
 ### Animation for ToolTip
 
-You can also provide animation effects for tooltip by setting [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetEnableAnimation.html#) property as true as shown in the below code snippet.
+You can also provide animation effects for tooltip by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetEnableAnimation.html#) property to true as shown in the following code snippet.
 
 {% tabs %}
 
@@ -529,7 +529,7 @@ chart.Series.Add(series);
 
 ### Customizing the Tooltip
 
-[`ToolTipTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TooltipTemplate.html#) property allows you to customize the default appearance of the tooltip as illustrated in the below code snippet.
+The [`ToolTipTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TooltipTemplate.html#) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
 
 {% tabs %}
 
@@ -603,7 +603,7 @@ chart.Series.Add(series2);
 
 ## TrackBall
 
-[`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) enables you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
+The [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 
 ### Adding TrackBall to the SfChart
 
@@ -635,7 +635,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-To view the TrackBall in the particular Axis you have to enable the ShowTrackBallInfo property in that axis as in the below code snippet.
+To view the TrackBall in the particular Axis, you have to enable the ShowTrackBallInfo property in that axis as in the following code snippet.
 
 {% tabs %}
 
@@ -671,7 +671,7 @@ The default appearance of the trackball in primary axis (CategoryAxis).
 ![TrackBall support in WPF Chart](Interactive-Features_images/Interactive-Features_img7.jpeg)
 
 
-The Trackball is composed of the following parts.
+The Trackball is composed of the following parts:
 
 1. Vertical Line
 
@@ -683,9 +683,9 @@ The Trackball is composed of the following parts.
 
 ### Vertical Line
 
-The vertical line in the trackball is visible when you initialize the TrackBallBehavior.If you want to collapse the visibility of the trackball line then you have to set ShowLine to false.
+The vertical line in the trackball is visible when you initialize the TrackBallBehavior.If you want to collapse the visibility of the trackball line, then you have to set ShowLine to false.
 
-The following code snippet illustrates the collapsing the visibility of trackball line.
+The following code snippet explains how to collapse the visibility of trackball line.
 
 {% tabs %}
 
@@ -719,9 +719,9 @@ chart.Behaviors.Add(behavior);
 
 **Customization of TrackBall Line**
 
-SfChart allows you to customize the appearance of  trackball vertical line using [`LineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LineStyle.html#) property.
+SfChart allows you to customize the appearance of  trackball vertical line using the [`LineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LineStyle.html#) property.
 
-The following code snippet illustrates the customization of trackball line.
+The following code snippet explains the customization of trackball line.
 
 {% tabs %}
 
@@ -773,7 +773,7 @@ chart.Behaviors.Add(trackball);
 
 ### Symbol
 
-By default the trackball symbol is displayed as ellipse, to change the default style of the symbol using [`ChartTrackBallStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~ChartTrackBallStyle.html#) property.
+By default, the trackball symbol is displayed as ellipse to change the default style of the symbol using [`ChartTrackBallStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~ChartTrackBallStyle.html#) property.
 
 {% tabs %}
 
@@ -973,11 +973,11 @@ chart.PrimaryAxis = new NumericalAxis()
 
 ### Series Label
 
-When the trackball is hovered over you can view the label is also displayed over the series in addition the axis label.
+When the trackball is hovered over, you can view the label is also displayed over the series in addition the axis label.
 
 **ShowTrackballInfo**
 
-`ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the below code example:
+The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/wpf/sfchart/interactive-features#trackball) label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the below code example:
 
 {% tabs %}
 
@@ -1022,7 +1022,7 @@ When the trackball is hovered over you can view the label is also displayed over
 
 The trackball label displayed over the series can be aligned using [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelHorizontalAlignment.html#) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelVerticalAlignment.html#) properties. By default the series label will be horizontally aligned to the left and vertically to the top.
 
-The following code snippet illustrates the aligning the series label to the center of the trackball.
+The following code snippet explains how to align the series label to the center of the trackball.
 
 {% tabs %}
 
@@ -1299,7 +1299,7 @@ chart.Series.Add(series);
 
 **Applying** **Palette** **to** **the** **Series** **Label**
 
-Palette or Interior color of the Series is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~UseSeriesPalette.html#) to True as shown in the below code snippet.
+Palette or interior color of the Series is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~UseSeriesPalette.html#) to True as shown in the following code snippet.
 
 {% tabs %}
 
@@ -1335,7 +1335,7 @@ chart.Behaviors.Add(behavior);
 
 ### Events
 
-The following events are available in ChartTrackBallBehavior,
+The following events are available in ChartTrackBallBehavior:
 
 **PositionChanging**
 
@@ -1376,13 +1376,13 @@ The [`ChartPointInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.
 * [`X`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~X.html) - Gets the x-coordinate of the trackball label.
 * [`Y`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartPointInfo~Y.html) - Gets the y-coordinate of the trackball label.
 
-## Visual Data Editing
+## Visual data editing
 
 SfChart has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
 
-### Segment Dragging
+### Segment dragging
 
-Segment Dragging defines the dragging a particular point or segment based on the series type. The segment dragging can be enabled using [`EnableSegmentDragging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~EnableSegmentDragging.html#) property as true.
+Segment Dragging defines the dragging a particular point or segment based on the series type. The segment dragging can be enabled using the [`EnableSegmentDragging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~EnableSegmentDragging.html#) property to true.
 
 **Line Series**
 
@@ -1523,9 +1523,9 @@ chart.Series.Add(series)
 
 ![Segment dragging support in WPF Chart](Interactive-Features_images/Interactive-Features_img55.jpg)
 
-N> By default the DragDirection of the scatter series is XY.
+N> By default, the DragDirection of the scatter series is XY.
 
-### Series Dragging
+### Series dragging
 
 SfChart provides support to drag the LineSeries and SplineSeries. This allows the series to move to a new position by dragging. To enable the series dragging, you have to set [`EnableSeriesDragging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySeriesDraggingBase~EnableSeriesDragging.html#) property to true.
 
@@ -1816,7 +1816,7 @@ chart.Series.Add(series);
 
 ### Updating the Dragged Values to the Source
 
-When dragging the series or segment at run time, to update the underlying data based on the values you have to set the [`UpdateSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~UpdateSource.html#) property to true as in the below code snippet.
+When dragging the series or segment at run time, to update the underlying data based on the values you have to set the [`UpdateSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~UpdateSource.html#) property to true as in the following code snippet.
 
 {% tabs %}
 
@@ -2266,7 +2266,7 @@ chart.Behaviors.Add(zooming);
 
 **Maximum** **Zoom** **Level**
 
-You can also limit the zooming by setting [`MaximumZoomLevel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~MaximumZoomLevel.html#) property as shown in the below code snippet.
+You can also limit the zooming by setting [`MaximumZoomLevel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~MaximumZoomLevel.html#) property as shown in the following code snippet.
 
 {% tabs %}
 
@@ -2379,7 +2379,7 @@ chart.Behaviors.Add(zooming);
 
 **Customization** **of** **Zooming** **Toolbar**
 
-Zooming Toolbar can be customized using the following API’s
+Zooming Toolbar can be customized using the following APIs:
 
 * [`ToolBarBackground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~ToolBarBackground.html#)- Represents the zooming toolkit background.
 * [`ToolBarItems`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~ToolBarItems.html#)- Collection value that contains zooming toolkit items. 
@@ -2550,7 +2550,7 @@ chart.Behaviors.Add(zooming);
 
 ### Events
 
-The following events are available in SfChart for ChartZoomPanBehavior,
+The following events are available in SfChart for ChartZoomPanBehavior:
 
 * [`ZoomChanging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanging_EV.html#)- Occurs when zoom started in chart area.
 * [`ZoomChanged`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanged_EV.html#)- Occurs when zooming done in chart area.
@@ -2560,9 +2560,9 @@ The following events are available in SfChart for ChartZoomPanBehavior,
 * [`ResetZooming`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html#)- Occurs when zooming get reset in chart area.
 
 
-## Selection:
+## Selection
 
-SfChart supports selection that enables you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
+SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 
 ### Adding Selection Behavior to SfChart
 
@@ -3024,7 +3024,7 @@ chart.Series.Add(series);
 
 **Series** **Selection**
 
-The following code example demonstrates the series selection with adornments 
+The following code example demonstrates the series selection with adornments. 
 
 {% tabs %}
 
@@ -3682,7 +3682,7 @@ chart.Behaviors.Add(behavior);
 
 Vertical axis label is displayed when the horizontal line in contact with x axis.The label can be aligned using [`VerticalAxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior~VerticalAxisLabelAlignment.html#) property.
 
-Axis Label can be aligned by Near, Far, Center, Auto and None Options.
+Axis Label can be aligned by Near, Far, Center, Auto, and None Options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
