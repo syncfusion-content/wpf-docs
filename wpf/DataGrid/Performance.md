@@ -44,6 +44,23 @@ You can style the cell and row conditionally in below three ways,
 
 Conditional styling using converter provides better performance compare to Data Trigger approach and Style selector approach. You can refer [Styles and Template](https://help.syncfusion.com/wpf/datagrid/styles-and-templates) section for more information.
 
+### Improving loading performance when DataGrid loaded into the ScrollViewer
+
+Loading DataGrid inside other controls disables the virtualization which results in performance delay. You can improve the loading performance when DataGrid is loaded into the `ScrollViewer` by setting `SfDataGrid.Height`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid" 
+                        Height="500"
+                        FilterRowPosition="FixedTop"
+                        AllowEditing="False"
+                        ColumnSizer="Star"
+                        Margin="0"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding ItemsPersonnel}" />
+{% endhighlight %}
+{% endtabs %}
+
 ### Improving loading and scrolling performance using LightWeightTemplate
 
 You can improve the loading and scrolling performance in SfDataGrid by setting [SfDataGrid.UseDrawing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UseDrawing.html) property as `Default`. When using this property, the grid cell content and its borders are drawn instead of loading `UIElement` and hence it reduces the `VisualTree` of SfDataGrid to improve the loading and scrolling performance. 
@@ -58,32 +75,7 @@ this.dataGrid.UseDrawing = UseDrawing.Default;
 {% endhighlight %}
 {% endtabs %}
 
-### Improving loading performance when DataGrid loaded into the ScrollViewer
-
-When loading datagrid inside other controls disables virtualization which causes the performance delay. You can improve the loading performance when datagrid loaded into the scroll viewer by setting height for the datagrid.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid 	x:Name="dataGrid" 
-						Height="500" 
-                        FilterRowPosition="FixedTop" 
-                        AllowEditing="False"  
-                        ColumnSizer="Star"  
-                        Margin="0" 
-                        AutoGenerateColumns="False"   
-                        ItemsSource="{Binding ItemsPersonnel}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="Name"/>
-        <syncfusion:GridTextColumn MappingName="Role"/>
-    </syncfusion:SfDataGrid.Columns>
-    <syncfusion:SfDataGrid.SortColumnDescriptions>
-        <syncfusion:SortColumnDescription ColumnName="Name" />
-    </syncfusion:SfDataGrid.SortColumnDescriptions>
-</syncfusion:SfDataGrid> 
-{% endhighlight %}
-{% endtabs %}
-
-### Limitations
+#### Limitations
 1. Searching is not supported.
 2. Validation need to be achieved by using Template.
 3. Cannot able to set `BorderThickness` in four ways (Left, Top, Right, Bottom). We can use one double value for setting the BorderThickness. 
