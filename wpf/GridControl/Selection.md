@@ -343,11 +343,11 @@ class ExcelGrid : GridControl
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/Row-and-column-header-highlighting-based-on-selection-in-WPF-Grid-Control)
 
 
-## See Also
+## See also
 
 [How to get first and last selected row index](https://www.syncfusion.com/kb/11183)
 
-[How to set extended selection mode in to select a row when user-click-a-cell](https://www.syncfusion.com/kb/11185)
+[How to set extended selection mode to select a row when user-click-a-cell](https://www.syncfusion.com/kb/11185)
 
 [How to avoid selection header cell](https://www.syncfusion.com/kb/11186)
 
