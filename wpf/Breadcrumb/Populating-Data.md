@@ -409,3 +409,7 @@ x:Name="Window" Title="MainWindow" UseLayoutRounding="True" Width="640" Heig
 The image displayed below shows the output of the above code—items bound to XML data.
 
 ![](Populating-Data_images/Populating-Data_img5.png)
+
+## See Also
+
+[How to load items in WPF HierarchyNavigator (Breadcrumb) control in on-demand?](https://www.syncfusion.com/kb/11221/how-to-load-items-in-wpf-hierarchynavigator-breadcrumb-control-in-on-demand)
