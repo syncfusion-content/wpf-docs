@@ -46,7 +46,7 @@ Conditional styling using converter provides better performance compare to Data 
 
 ### Improving loading performance when DataGrid loaded into the ScrollViewer
 
-Loading DataGrid inside other controls disables the virtualization which results in performance delay. You can improve the loading performance when DataGrid is loaded into the `ScrollViewer` by setting `SfDataGrid.Height`.
+Loading DataGrid within other controls disables the virtualization resulting in performance delay. By setting 'SfDataGrid.Height' you can improve the performance when loading DataGrid into the 'ScrollViewer'.
 
 {% tabs %}
 {% highlight xaml %}
