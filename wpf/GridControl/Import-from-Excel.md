@@ -31,14 +31,7 @@ You can get the [GridModelImportExtensions](https://help.syncfusion.com/cr/wpf/S
 
 This feature can be used to view the Excel workbook into applications with the same set of styles and to edit the data in run time. You can also view the Excel workbook into web application with the same set of styles and borders.
 
-## Sample Link
-
-To view samples: 
-
-1. Select Start -> Programs -> Syncfusion -> Essential Studio XX.X.X.XX -> Dashboard.
-2. Select   Run Locally Installed Samples in WPF Button.
-3. Now expand the Import item in the Sample Browser.
-4. Choose the Excel Import samples to launch. 
+N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Import/Excel%20Import)
 
 
 

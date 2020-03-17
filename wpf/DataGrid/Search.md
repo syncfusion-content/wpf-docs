@@ -374,3 +374,11 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, Combo
 
 {% endhighlight %}
 {% endtabs %}
+
+## See Also
+
+[How to apply search and filter for one column in SfDataGrid?](https://www.syncfusion.com/kb/9297)
+
+[How to filter the records with searching when underlying items source is DataTable in SfDataGrid?](https://www.syncfusion.com/kb/9290)
+
+[How to perform incremental search ?](https://www.syncfusion.com/kb/8505)

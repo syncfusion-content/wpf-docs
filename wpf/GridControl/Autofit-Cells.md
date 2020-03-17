@@ -15,8 +15,8 @@ This section explains about AutoFit content of WPF GridControl.
 
 The rows heights and column widths can be made to adjust themselves automatically to fit the content by using the methods ResizeRowsToFit() and ResizeColumnsToFit(), which accept the following two parameters:
 
-1.A range of rows or columns whose size should be adjusted 
-2.A GridResizeToFitOptions enumeration value. 
+1. A range of rows or columns whose size should be adjusted 
+2. A GridResizeToFitOptions enumeration value. 
 
 The GridResizeToFitOptions enum value specifies how the resizing action should be performed, whether to include covered cells, hidden cells, headers, and whether or not to shrink size, and the like.
 

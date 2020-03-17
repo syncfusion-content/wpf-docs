@@ -36,10 +36,6 @@ Essential Grid's Formula Library contains the mathematical functions that are av
 
 ![Sample formula library usage](Formulacells_images/formulacells.jpeg)
 
-
-Sample Formula Library Usage
-{:.caption}
-
 In the above image, cell A2 has a formula that uses four different library functions: Sqrt, Pow, Cos, and Sin.
 
 ### Supported Arithmetic Operators and Calculation Precedence

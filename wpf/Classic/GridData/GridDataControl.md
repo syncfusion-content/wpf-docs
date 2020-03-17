@@ -1,20 +1,20 @@
 ---
 layout: post
 title: GridData Control | GridData (Classic) | wpf | Syncfusion
-description: GridData Control
+description: Learn here about usage of the Syncfusion WPF GridData Control and its designed scenarios and its key features.
 platform: wpf
 control: GridData (Classic)
 documentation: ug
 ---
-# GridData Control
+# WPF GridData Control
 
 
-The GridData control is specifically designed for the scenarios, where you need to bound the grid to an external data source and customize the data view by performing the operations such as grouping, sorting, summarizing, filtering, conditional formats and unbound fields. It attains the fundamental features by deriving from the GridControlBaseclass and hence adapts most of the features of Grid control, which are discussed in the previous sections. It can display nested grids with hierarchical data and can also display multiple unrelated tables in one grid.
+The GridData control is specifically designed for the scenarios, where you need to bound the grid to an external data source and customize the data view by performing the operations such as grouping, sorting, summarizing, filtering, conditional formats and unbound fields. It attains the fundamental features by deriving from the GridControlBase class and hence adapts most of the features of Grid control, which are discussed in the previous sections. It can display nested grids with hierarchical data and can also display multiple unrelated tables in one grid.
 
 ## Major Control Classes
 
-* GridDataControl (GDC) is the main control class of this control. It is templated with GridDataControlBaseImpl class thatis based on GridControlBase class. GDC exposes numerous properties and methods that are available for the end-user to setup the grid in the desired manner.
-* The GridDataTableModelserves as the model class for GDC. It stores all the data information of the grid and provides methods to completely initialize the grid.  It also provides methods to attach the grid later to the GDC, for rendering.
+* GridDataControl (GDC) is the main control class of this control. It is templated with GridDataControlBaseImpl class that is based on GridControlBase class. GDC exposes numerous properties and methods that are available for the end-user to setup the grid in the desired manner.
+* The GridDataTableModel serves as the model class for GDC. It stores all the data information of the grid and provides methods to completely initialize the grid.  It also provides methods to attach the grid later to the GDC, for rendering.
 * The GridDataTableProperties defines property values for the Grid Table that lets you customize the appearance and behavior of the GDC.
 * As a data bound grid, GDC displays tabular data where each row corresponds to a data record and every column stands for data field of the data source. You wrap all the columns in a group together and manipulate them. The GridDataVisibleColumn class is used for this purpose. It groups the columns that are visible in the screen and holds information about each column.
 * The GridDataStyleInfo class, which is derived from GridStyleInfo, provides user-friendly access to all the cell level properties that control the appearance of the cell. It holds all the information  of the cell.
