@@ -896,3 +896,8 @@ public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRendere
 ![WPF DataGrid filter row](FilterRow_images/FilterRow_img12.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GridMultiselect1545001818).
+
+## See Also
+[How to load the symbols in FilterRow and perform actions based on that ?](https://www.syncfusion.com/kb/9310)
+
+[How to show filter status message in SfDataGrid?](https://www.syncfusion.com/kb/7616)
