@@ -433,7 +433,7 @@ chart.Series.Add(series);
 
 N> The tooltip by default will be displayed for 1000 milliseconds.
 
-**Show Delay**
+**Show delay**
 
 ToolTip also has support for delay the time to display by setting [`SetInitialShowDelay`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetInitialShowDelay.html#) property in milliseconds.
 
@@ -907,7 +907,7 @@ chart.Behaviors.Add(behavior);
 ![Alignment support for trackball axis label in WPF Chart](Interactive-Features_images/Interactive-Features_img12.jpeg)
 
 
-### Customization of Axis Label
+### Customization of axis label
 
 You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~TrackBallLabelTemplate.html#) property in ChartAxis as in the below code snippet.
 
