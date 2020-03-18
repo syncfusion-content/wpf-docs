@@ -837,7 +837,7 @@ Far-Axis label is positioned far from the position of trackball.
 
 Near- Axis label is near to the position of trackball.
 
-Center-Axis label is aligned to the center of the trackball. By default the axis label will positioned in center.
+Center-Axis label is aligned to the center of the trackball. By default, the axis label will positioned in center.
 
 **Far**
 
@@ -1020,7 +1020,7 @@ The `ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion
 
 **Alignment** **of** **Series** **Label**
 
-The trackball label displayed over the series can be aligned using [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelHorizontalAlignment.html#) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelVerticalAlignment.html#) properties. By default the series label will be horizontally aligned to the left and vertically to the top.
+The trackball label displayed over the series can be aligned using the [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelHorizontalAlignment.html#) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelVerticalAlignment.html#) properties. By default, the series label will be horizontally aligned to the left and vertically to the top.
 
 The following code snippet explains how to align the series label to the center of the trackball.
 
@@ -1062,7 +1062,7 @@ chart.Behaviors.Add(behavior);
 
 ### LabelDisplayMode
 
-When there is a multiple series, by default the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayMode.html#) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html).
+When there is a multiple series, by default, the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayMode.html#) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html).
 
 **FloatAllPoints**
 
@@ -1164,11 +1164,11 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-The following screenshot illustrates the trackball label for multiple series, when [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
+The following screenshot illustrates the trackball label for multiple series, when the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
 
 ![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping1.png)
 
-The following screenshot illustrates the trackball label for financial series, when [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
+The following screenshot illustrates the trackball label for financial series, when the [`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelDisplayModeProperty.html) property value is GroupAllPoints.
 
 ![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping2.png)
 
@@ -1529,7 +1529,7 @@ N> By default, the DragDirection of the scatter series is XY.
 
 SfChart provides support to drag the LineSeries and SplineSeries. This allows the series to move to a new position by dragging. To enable the series dragging, you have to set [`EnableSeriesDragging`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySeriesDraggingBase~EnableSeriesDragging.html#) property to true.
 
-The following code snippet explains the series dragging feature in LineSeries
+The following code snippet explains the series dragging feature in LineSeries.
 
 {% tabs %}
 
@@ -1573,9 +1573,9 @@ chart.Series.Add(series);
 ![Segment dragging support in WPF Chart](Interactive-Features_images/Interactive-Features_img21.jpeg)
 
 
-N>In line and Spline Series if segment and series dragging is enabled, the series dragging is having higher priority over segment dragging.
+N>In line and Spline Series, if segment and series dragging is enabled, the series dragging is having higher priority over segment dragging.
 
-### Adding ToolTip for Dragging
+### Adding ToolTip for dragging
 
 While the series or segment is dragged by default you can view the tooltip showing the new y value. To disable the tooltip while dragging you have to set the [`EnableDragToolTip`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~EnableDragTooltip.html) as false.
 
@@ -1915,7 +1915,7 @@ chart.Series.Add(series);
 
 ### Events
 
-Series with visual data editing has support for following events,
+Series with visual data editing has support for following events:
 
 * [`DragStart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragStart_EV.html#)- Occurs when segment/series drag started. 
 * [`DragDelta`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragDelta_EV.html#)- Occurs when segment/series dragging.
@@ -3481,9 +3481,9 @@ chart.SecondaryAxis = new NumericalAxis()
 ![Cross hair support in WPF Chart](Interactive-Features_images/Interactive-Features_img46.jpeg)
 
 
-Cross hair is composed of the following parts.
+Cross hair is composed of the following parts:
 
-1. Vertical and horizontal line.
+1. Vertical and horizontal line
 
 2. Axis Labels
 
