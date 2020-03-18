@@ -70,6 +70,34 @@ dataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterT
 
 N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable.aspx) as items Source, [IsCaseSensitive](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate~IsCaseSensitive.html) property in [FilterPredicate](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.FilterPredicate.html) is not applicable, since DataTable does not support CaseSensitive filtering.
 
+#### Improving performance while adding multiple FilterPredicates to the column in loop
+
+You can suspend the data operation while adding the multiple `FilterPredicates` to the column for bulk updates by calling [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~BeginInit.html) and [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, before and after the data operation.
+
+{% tabs %}
+{% highlight c# %}
+private void OnApplyFilterPredicate(object obj)
+{
+    var dataGrid = obj as SfDataGrid;            
+    var columns = dataGrid.Columns["EmployeeId"];
+    dataGrid.View.BeginInit();
+    foreach (var filterValue in FilterValues)
+    {
+        columns.FilterPredicates.Add(new FilterPredicate()
+        {
+            FilterType = FilterType.Equals,
+            FilterValue = filterValue,
+            FilterBehavior = FilterBehavior.StronglyTyped,
+            FilterMode = ColumnFilter.Value,
+            PredicateType = PredicateType.Or,
+            IsCaseSensitive = true
+        });
+    }            
+    dataGrid.View.EndInit();
+}
+{% endhighlight %}
+{% endtabs %}
+
 ### Clear Filtering
 
 SfDataGrid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
