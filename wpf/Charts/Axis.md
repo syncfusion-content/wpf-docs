@@ -2753,7 +2753,7 @@ chart.Annotations.Add(annotation);
 
 ## Inverting axis
 
-Axis can be inverted using the [`IsInversed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~IsInversedProperty.html#) property. The default value of this property is [`False`]().
+Axis can be inverted using the [`IsInversed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~IsInversedProperty.html#) property. The default value of this property is [`False`].
 
 {% tabs %}
 
