@@ -475,7 +475,7 @@ Refer to this [`link`](https://help.syncfusion.com/uwp/sfchart/legend) to learn 
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you click on the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowTooltip.html)  property to true.
+Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowTooltip.html)  property to true.
 
 {% tabs %} 
 
