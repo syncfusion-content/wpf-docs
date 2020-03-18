@@ -744,7 +744,7 @@ void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 
 ### Identify resizing of the column gets completed
 
-SfDataGrid allows you to identify the progress of the resizing of columns through `ResizingColumnsEventArgs.Reason` property. You can get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in `ResizingColumns` event.
+SfDataGrid allows you to identify the progress of the resizing of columns through [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs~Reason.html) property. You can get the width of the column after resizing completed by getting [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs~Width.html) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ColumnResizingReason.html) in [ResizingColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ResizingColumns_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
