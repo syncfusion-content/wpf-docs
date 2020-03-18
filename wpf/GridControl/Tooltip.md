@@ -41,7 +41,7 @@ gridcontrol.Model[1, 1].ShowTooltip = true;
 
 ## ToolTip for row and column
 
-ToolTip can be displayed for any row or column by setting the `ShowToolTip` and ToolTip text can be customized by setting the `ToolTip`.
+ToolTip can be displayed for any row or column by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowTooltip.html) and ToolTip text can be customized by setting the [ToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ToolTip.html).
 
 {% tabs %}
 
@@ -60,6 +60,8 @@ gridcontrol.Model.ColStyles[1].ShowTooltip = true;
 {% endtabs %}
 
 ![Tooltip for specific row in WPF GridControl](Tooltip_images/show-tooltip-rows.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_simple)
 
 ## Set ToolTip in QueryCellInfo event
 
@@ -89,9 +91,11 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ![ToolTip for row or column using QueryCellInfo in WPF GridControl](Tooltip_images/show-tooltip-querycell.png)
 
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_using_querycellinfo)
+
 ## Show or hide the ToolTip
 
-You can show or hide the ToolTip in a specific cell or row or column by setting the `ShowToolTip` property to `false`.
+You can show or hide the ToolTip in a specific cell or row or column by setting the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowTooltip.html) property to `false`.
 
 {% tabs %}
 
@@ -144,9 +148,9 @@ private void Gridcontrol_CellToolTipOpening(object sender, GridCellToolTipOpenin
 
 ![Change the ToolTip text at run time in WPF GridControl](Tooltip_images/show-tooltip-openingevent.png)
 
-## Show ToolTip for disabled cell
+## Hide ToolTip for disabled cell
 
-You can disable the cell by setting `Enabled` property to `false` and set the tooltip for that disabled cell by setting the `ShowToolTip` and ToolTip text can be customized by setting `ToolTip` property.
+You can disable the cell by setting `Enabled` property to `false`. If you want to hide the tooltip for this disabled cell, you need to set the [ShowToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~ShowTooltip.html) property to `false`.
 
 {% tabs %}
 
@@ -154,11 +158,24 @@ You can disable the cell by setting `Enabled` property to `false` and set the to
 
 gridcontrol.Model[1, 1].Enabled = false;
 gridcontrol.Model[1, 1].ToolTip = " Grid (" + gridcontrol.Model[1, 1].CellValue + ") ";
-gridcontrol.Model[1, 1].ShowTooltip = true;
+gridcontrol.Model[1, 1].ShowTooltip = false;
+
+//Using QueryCellInfo
+private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
+{
+    if (e.Cell.RowIndex == 1 && e.Cell.ColumnIndex == 1)
+    {
+        e.Style.Enabled = false;
+        e.Style.ToolTip = " Grid (" + e.Cell.RowIndex + "," + e.Cell.ColumnIndex + ") ";        
+        e.Style.ShowTooltip = false;
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/Tooltip_event)
 
 ## Identify whether cell has ToolTip
 
@@ -189,7 +206,9 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 
 ## Customize the ToolTip
 
-You can customize the appearance of ToolTip for a particular cell or row or column by setting the `DataTemplate` key to [GridStyleInfo.ToolTipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplateKey.html) or [GridStyleInfo.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplate.html) property.
+The tooltip appearance can be customized by defining DataTemplate. The DataTemplate can be assigned to the [GridStyleInfo.ToolTipTemplateKey](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplateKey.html) or [GridStyleInfo.ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo~TooltipTemplate.html) property. If you are using tooltipTemplate1 then you need to assign template to its corresponding template key property namely `GridStyleInfo.ToolTipTemplate` or `GridStyleInfo.ToolTipTemplateKey`.
+
+[GridStyleInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridStyleInfo.html) which holds cell information is the `DataContext` for data template of ToolTip.
 
 **Using ToolTipTemplateKey**
 
@@ -257,8 +276,7 @@ gridcontrol.Model[1, 1].TooltipTemplate = (DataTemplate)this.Resources["tooltipT
 
 //Using QueryCellInfo event
 private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
-{
-    
+{    
     if (e.Cell.RowIndex == 1 && e.Cell.ColumnIndex == 1)
     {
         e.Style.ToolTip = " Grid (" + e.Cell.RowIndex + "," + e.Cell.ColumnIndex + ") ";    
@@ -271,6 +289,8 @@ private void Gridcontrol_QueryCellInfo(object sender, GridQueryCellInfoEventArgs
 {% endtabs %}
 
 ![Customize the ToolTip for WPF GridControl](Tooltip_images/show-tooltip-customization.png)
+
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip/tree/master/ToolTip_customization)
 
 ## Remove the ToolTip
 
@@ -285,5 +305,3 @@ gridcontrol.Model[1, 1].ResetValue(GridStyleInfoStore.ToolTipProperty);
 {% endhighlight %}
 
 {% endtabs %}
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/WPF-GridControl-ToolTip)
