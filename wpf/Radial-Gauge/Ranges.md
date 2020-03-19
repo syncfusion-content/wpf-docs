@@ -7,7 +7,7 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-# CircularScale Ranges customization
+# Range support in SfCircularGauge
 
 Range is a visual element, which begins and ends at the specified values within a scale.
 
@@ -408,69 +408,106 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Range offset
 
-You can place the range by using `RangeOffset` property. First, set the `RangePosition` to custom, and then set the `RangeOffset` property.
+The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways
+
+1. Setting `Offset` and `StrokeThickness` properties
+
+2. Setting `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties.
+
+N>For using this feature need to set the `RangePosition` as custom in the `Rim`.
+
+#### Offset and StrokeThickness
+
+For absolute position you can use `Offset` and `StrokeThickness` properties of Range. For setting the `Offset` and `StrokeThickness` to the range.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
-    <gauge:SfCircularGauge>
-
-    <gauge:SfCircularGauge.Scales>
-
-    <gauge:CircularScale RangePosition="Custom" RangeOffset="0.6">
-
-    <gauge:CircularScale.Ranges>
-
-    <gauge:CircularRange StartValue="0" EndValue="100"/>
-
-    </gauge:CircularScale.Ranges>
-                    
-    <gauge:CircularScale.Pointers>
-
-    <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-
-    </gauge:CircularScale.Pointers>
-
-    </gauge:CircularScale>
-
-    </gauge:SfCircularGauge.Scales>
-
-    </gauge:SfCircularGauge>
-
+            <gauge:SfCircularGauge x:Name="gauge">
+                <gauge:SfCircularGauge.Scales >
+                    <gauge:CircularScale  x:Name="scale" RangePosition="Custom" RimStroke="LightGray">
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                        <gauge:CircularScale.Ranges>
+                            <gauge:CircularRange StartValue = "0" EndValue = "100" Stroke="MediumTurquoise" Offset = "0.3" StrokeThickness = "20"  ></gauge:CircularRange>                      </gauge:CircularScale.Ranges>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+            </gauge:SfCircularGauge>
+			
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCircularGauge sfCircularGauge = new SfCircularGauge();
-
-CircularScale mainscale = new CircularScale();
-
-mainscale.RangeOffset = 0.6;
-
-mainscale.RangePosition = RangePosition.Custom;
-
-CircularRange circularRange = new CircularRange();
-
-circularRange.StartValue = 0;
-
-circularRange.EndValue = 100;
-
-mainscale.Ranges.Add(circularRange);
-
-CircularPointer circularPointer = new CircularPointer();
-
-circularPointer.NeedlePointerVisibility = Visibility.Hidden;
-
-mainscale.Pointers.Add(circularPointer);
-
-sfCircularGauge.Scales.Add(mainscale);
-
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.RangePosition = RangePosition.Custom;
+            CircularRange circularRange = new CircularRange();
+            circularRange.StartValue = 0;
+            circularRange.EndValue = 100;
+            circularRange.Stroke = new SolidColorBrush(Colors.MediumTurquoise);
+            circularRange.StrokeThickness = 20;
+            circularRange.Offset = 0.3;
+            mainscale.Ranges.Add(circularRange);
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+			
 {% endhighlight %}
 
 {% endtabs %}
 
-![Ranges - Circular Gauge](Ranges_images/Ranges_img6.png)
+![Offset Image for Range](Ranges_images/Range-Offset.png)
+
+#### InnerStartOffset, InnerEndOffset, OuterStartOffset, and OuterEndOffset
+
+For relative position you can use `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of Range. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+            <gauge:SfCircularGauge x:Name="gauge">
+                <gauge:SfCircularGauge.Scales >
+                    <gauge:CircularScale  x:Name="scale" RangePosition="Custom" RimStroke="LightGray">
+                        <gauge:CircularScale.Pointers>
+                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
+                        </gauge:CircularScale.Pointers>
+                        <gauge:CircularScale.Ranges>
+                            <gauge:CircularRange StartValue="10" EndValue="80" InnerStartOffset = "0.83" InnerEndOffset = "0.6" OuterStartOffset = "0.85" OuterEndOffset =" 0.8"  Stroke="MediumTurquoise" ></gauge:CircularRange>             
+                        </gauge:CircularScale.Ranges>
+                    </gauge:CircularScale>
+                </gauge:SfCircularGauge.Scales>
+            </gauge:SfCircularGauge>
+			
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.RangePosition = RangePosition.Custom;
+            CircularRange circularRange = new CircularRange();
+            circularRange.StartValue = 10;
+            circularRange.EndValue = 80;
+            circularRange.Stroke = new SolidColorBrush(Colors.MediumTurquoise);
+            circularRange.InnerStartOffset = 0.83;
+            circularRange.InnerEndOffset = 0.6;
+            circularRange.OuterStartOffset = 0.85;
+            circularRange.OuterEndOffset = 0.8;
+            mainscale.Ranges.Add(circularRange);
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![Inner,Outer Offset Image for Range](Ranges_images/Range-Inner-Outer-Offset.png)
 
 ## Setting multiple ranges
 
@@ -580,105 +617,3 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img7.png)
 
-### Range offset
-
-The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways
-
-1. Setting `Offset` property
-
-2. Setting `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties.
-
-N>For using this feature need to set the `RangePosition` as custom in the `Rim`.
-
-#### Offset
-
-For relative position you can use `Offset` property of Range. For setting the `Offset` to the range.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-            <gauge:SfCircularGauge x:Name="gauge">
-                <gauge:SfCircularGauge.Scales >
-                    <gauge:CircularScale  x:Name="scale" RangePosition="Custom" RimStroke="LightGray">
-                        <gauge:CircularScale.Pointers>
-                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                        </gauge:CircularScale.Pointers>
-                        <gauge:CircularScale.Ranges>
-                            <gauge:CircularRange StartValue = "0" EndValue = "100" Stroke="MediumTurquoise" Offset = "0.3" StrokeThickness = "20"  ></gauge:CircularRange>                      </gauge:CircularScale.Ranges>
-                    </gauge:CircularScale>
-                </gauge:SfCircularGauge.Scales>
-            </gauge:SfCircularGauge>
-			
-{% endhighlight %}
-
-{% highlight c# %}
-
-            SfCircularGauge sfCircularGauge = new SfCircularGauge();
-            CircularScale mainscale = new CircularScale();
-            mainscale.RangePosition = RangePosition.Custom;
-            CircularRange circularRange = new CircularRange();
-            circularRange.StartValue = 0;
-            circularRange.EndValue = 100;
-            circularRange.Stroke = new SolidColorBrush(Colors.MediumTurquoise);
-            circularRange.StrokeThickness = 20;
-            circularRange.Offset = 0.3;
-            mainscale.Ranges.Add(circularRange);
-            CircularPointer circularPointer = new CircularPointer();
-            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
-            mainscale.Pointers.Add(circularPointer);
-            sfCircularGauge.Scales.Add(mainscale);
-			
-{% endhighlight %}
-
-{% endtabs %}
-
-![Offset Image for Range](Ranges_images/Range-Offset.png)
-
-#### InnerStartOffset, InnerEndOffset, OuterStartOffset, and OuterEndOffset
-
-For absolute position you can use `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of Range. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-            <gauge:SfCircularGauge x:Name="gauge">
-                <gauge:SfCircularGauge.Scales >
-                    <gauge:CircularScale  x:Name="scale" RangePosition="Custom" RimStroke="LightGray">
-                        <gauge:CircularScale.Pointers>
-                            <gauge:CircularPointer NeedlePointerVisibility="Hidden"/>
-                        </gauge:CircularScale.Pointers>
-                        <gauge:CircularScale.Ranges>
-                            <gauge:CircularRange StartValue="10" EndValue="80" InnerStartOffset = "0.83" InnerEndOffset = "0.6" OuterStartOffset = "0.85" OuterEndOffset =" 0.8"  Stroke="MediumTurquoise" ></gauge:CircularRange>             
-                        </gauge:CircularScale.Ranges>
-                    </gauge:CircularScale>
-                </gauge:SfCircularGauge.Scales>
-            </gauge:SfCircularGauge>
-			
-{% endhighlight %}
-
-{% highlight c# %}
-
-            SfCircularGauge sfCircularGauge = new SfCircularGauge();
-            CircularScale mainscale = new CircularScale();
-            mainscale.RangePosition = RangePosition.Custom;
-            CircularRange circularRange = new CircularRange();
-            circularRange.StartValue = 10;
-            circularRange.EndValue = 80;
-            circularRange.Stroke = new SolidColorBrush(Colors.MediumTurquoise);
-            circularRange.InnerStartOffset = 0.83;
-            circularRange.InnerEndOffset = 0.6;
-            circularRange.OuterStartOffset = 0.85;
-            circularRange.OuterEndOffset = 0.8;
-            mainscale.Ranges.Add(circularRange);
-            CircularPointer circularPointer = new CircularPointer();
-            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
-            mainscale.Pointers.Add(circularPointer);
-            sfCircularGauge.Scales.Add(mainscale);
-			
-{% endhighlight %}
-
-{% endtabs %}
-
-![Inner,Outer Offset Image for Range](Ranges_images/Range-Inner-Outer-Offset.png)

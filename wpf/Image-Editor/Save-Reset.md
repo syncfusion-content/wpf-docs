@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Save Reset in WPF Image Editor
+# Save and Reset functionality in Image Editor
 
 Image can be saved along with the changes. An image can be saved in the following two ways:
 

@@ -7,7 +7,7 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-# CircularScale Labels customization
+# Labels support in SfCircularGauge
 
 The `Scale` labels associate numeric values with major scale tick marks.
 

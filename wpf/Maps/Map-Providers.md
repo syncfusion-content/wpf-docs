@@ -7,7 +7,7 @@ control: SfMap
 documentation: ug
 ---
 
-# SfMaps control map Providers
+# Map providers support in SfMap
 
 SfMap control supports map providers such as OpenStreetMap that can be added to any layers in maps.
 

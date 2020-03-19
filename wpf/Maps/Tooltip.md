@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip support for SfMaps control
 
-Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the ShowTooltip property to true, and set the ValuePath property of tooltip.
+Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the `ShowTooltip` property to true, and set the ValuePath property of tooltip.
 
 Tooltip is displayed by tapping the following elements:
 • Shapes
@@ -201,7 +201,7 @@ The maps control provides options to design your own template for tooltip using 
 
 ### Tooltip opening event
 
-This event occurs whenever you select a shape, bubble, or marker. You will get the Data and TooltipType properties as arguments from TooltipOpeningEventArgs handler, and you can cancel the event for a particular shape using the Cancel property.
+This event occurs whenever you select a shape, bubble, or marker. You will get the `Data` and `TooltipType` properties as arguments from `TooltipOpeningEventArgs` handler, and you can cancel the event for a particular shape using the `Cancel` property.
 
 {% tabs %}
 

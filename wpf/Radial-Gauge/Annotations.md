@@ -7,9 +7,9 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-#Annotations in WPF Circular Gauge (SfCircularGauge)
+#Annotations support in SfCircular Gauge
 
-SfCircularGauge supports Annotations, which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using Annotations property.
+SfCircularGauge supports annotations, which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using `Annotations` property.
 
 ## Setting view annotation
 
