@@ -124,7 +124,7 @@ N> **Syncfusion.SfShared.Wpf** assembly should be included in Xaml or import **u
 
 ### Notifying transition completed
 
-As long as the tile is frozen, transitions occur repeatedly in hubtile for each specified interval. [HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event fires on each transition completion. Below example demonstrates the working of HubTileTransitionCompleted event in SfHubTile.
+As long as the tile is frozen, transitions occur repeatedly in hubtile for each specified interval.[HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event fires on each transition completion. Below example demonstrates the working of HubTileTransitionCompleted event in SfHubTile.
 
 {% tabs %}
 {% highlight XAML%}
@@ -209,9 +209,9 @@ Several hub tiles can be grouped using the [GroupName](https://help.syncfusion.c
 
 ![wpf hubtile grouping](Getting-Started_images/wpf-hubtile-grouping.gif)
 
-## Freezing/Unfreezing 
+## Freezing/UnFreezing 
 
- By the following two ways you can set freezing/unfreezing to the HubTile:
+Freezing helps to stop the animating the contents of the tile while UnFreezing helps to continue animating the content of the tile. By the following two ways you can set freezing/unfreezing to the HubTile:
  1. [Freezing/UnFreezing via Property](#freezing/unfreezing-via-property)                          
  2. [Freezing/UnFreezing via HubTileService Class](#Freezing/UnFreezing-via-hubtileservice-class)
 

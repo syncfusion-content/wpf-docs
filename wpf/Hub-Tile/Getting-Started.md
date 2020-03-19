@@ -27,7 +27,7 @@ In this walk through, you will create WPF application that contains SfHubTile an
 
 HubTile and PulsingTile controls can be added to the application by dragging  SfHubTile and SfPulsingTile from Toolbox and dropping it in Designer view. 
 
-![wpf hub tile control added by designer](Getting-Started_images/Getting-started_img5.png)
+![wpf hub tile control added by designer](Getting-Started_images/SfHubTile.png)
 
 ![wpf pulsing tile control added by designer](Getting-Started_images/SfPulsingTile.png)
 
