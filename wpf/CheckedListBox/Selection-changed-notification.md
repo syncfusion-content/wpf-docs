@@ -11,8 +11,8 @@ documentation: ug
 
 The [SelectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectionChanged_EV.html) event is raised while selecting an item at the execution time.The [SelectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.selectionchangedeventargs?redirectedfrom=MSDN&view=netframework-4.8) has the following members that provides information for the SelectionChanging event:
 
-* Added items : Gets a collection of the underlying data objects in which the selection has to be processed.
-* Removed items : Gets a collection of the underlying data objects in which the selection has to be removed.
+* **Added items** : Gets a collection of the underlying data objects in which the selection has to be processed.
+* **Removed items** : Gets a collection of the underlying data objects in which the selection has to be removed.
 
 {% tabs %}
 {% highlight XAML %}
