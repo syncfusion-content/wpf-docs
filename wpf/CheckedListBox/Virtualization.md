@@ -7,7 +7,7 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Virtualization
+# Virtualization in WPF CheckListBox
 
 UI Virtualization support is enabled by default in [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), which allows the users to load large sets of data without affecting loading or scrolling performance. This feature allows users to reduce the loading time of CheckListBoxItems regardless of items count.
 

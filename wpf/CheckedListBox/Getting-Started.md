@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with WPF CheckListBox control | CheckListBox | WPF | Syncfusion
+title: Getting started with WPF CheckListBox control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF CheckListBox control and more details about the control features.
 platform: WPF
 control: CheckListBox
@@ -200,7 +200,7 @@ checkListBox.DisplayMemberPath = "Name";
 
 ## Check or Uncheck items
 
-The `CheckListBox` items can be checked or unchecked in a single click either by clicking the `CheckBox` or clicking the content of the item. Also, the checked state of an item can be handled using the `Space` key. If we wants to make some item as checked using programatically, add that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) collection.
+The `CheckListBox` items can be checked or unchecked in a single click either by clicking the `CheckBox` or clicking the content of the item. Also, the checked state of an item can be handled using the `Space` key. If we wants to make some item as checked using programmatically, add that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) collection.
 
 ![CheckListBox items check and uncheck](Getting-Started_images/CheckItems.gif)
 

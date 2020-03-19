@@ -7,7 +7,7 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Check items
+# Check the items in WPF CheckListBox
 
 In [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox), items present in the control can be checked or unchecked either by using any one of the following ways:
 

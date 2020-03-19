@@ -7,7 +7,7 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Grouping
+# Grouping in WPF CheckListBox
 
  By default, the [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) items are in the listed view. We can group the `CheckListBox` items by adding the group description to the `CollectionView.GroupDescriptions` collection.
 
@@ -42,7 +42,7 @@ class ViewModel {
         Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
         Vegetables.Add(new Vegetable { Price = "$30", Name = "Nopal", Category = "Bulb and Stem" });
 
-        //Initialize the checklistbox LoadedCommand
+        //Initialize the CheckListBox LoadedCommand
         LoadedCommand = new DelegateCommand<object>(OnLoaded);
     }
 }

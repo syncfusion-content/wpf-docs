@@ -7,7 +7,7 @@ control: CheckListBox
 documentation: ug
 ---
 
-# Sorting
+# Sorting in WPF CheckListBox
 
  By default, the [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) are arranged based on the order they added in to the `Items`  collection. We can sort the `CheckListBox` items by adding the sorting direction to the `CollectionView.SortDescriptions` collection. The `CheckListBox` items can be sorted either in ascending or descending order based on the user’s perspective.
 
@@ -44,7 +44,7 @@ class ViewModel {
         Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
         Vegetables.Add(new Vegetable { Price = "$30", Name = "Nopal", Category = "Bulb and Stem" });
 
-        //Initialize the checklistbox LoadedCommand
+        //Initialize the CheckListBox LoadedCommand
         LoadedCommand = new DelegateCommand<object>(OnLoaded);
     }
 }

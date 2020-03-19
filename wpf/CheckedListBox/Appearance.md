@@ -475,7 +475,7 @@ public class MyTemplateSelector : DataTemplateSelector {
 
 ![CheckListBox items with different DataTemplates](Appearance_images/ItemTemplateSelector.png)
 
-Here, the `Leaf and Salad` and `Bulb and Stem` group items have same data template and the `Beans` group items have seperate data template.
+Here, the `Leaf and Salad` and `Bulb and Stem` group items have same data template and the `Beans` group items have separate data template.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/ItemTemplateSelector) to download the sample that showcases the `ItemTemplateSelector` support.
 
@@ -573,7 +573,7 @@ public class VegetableStyleSelector : StyleSelector {
 
 ![CheckListBox items with different styles](Appearance_images/ItemContainerStyleSelection.png)
 
-Here, the `Groupstyle` is applied to the group header and the `ItemStyle` is applied to the child items. 
+Here, the `GroupStyle` is applied to the group header and the `ItemStyle` is applied to the child items. 
 
 Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/ItemContainerStyleSelection) to download the sample that showcases the `ItemContainerStyleSelector` support.
 
