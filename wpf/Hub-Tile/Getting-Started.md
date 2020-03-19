@@ -25,12 +25,7 @@ In this walk through, you will create WPF application that contains SfHubTile an
 
 ### Adding control via Designer
 
-In order to add control via Designer, do the below steps:
-
-1. Add the below required assembly references to the project,
-	* Syncfusion.SfHubTile.WPF
-	* Syncfusion.SfShared.WPF
-2. SfHubTile and SfPulsingTile controls can be added to the application by dragging it from Toolbox and dropping it in Designer view. 
+HubTile and PulsingTile controls can be added to the application by dragging  SfHubTile and SfPulsingTile from Toolbox and dropping it in Designer view. 
 
 ![wpf hub tile control added by designer](Getting-Started_images/Getting-started_img5.png)
 
@@ -100,7 +95,7 @@ namespace SfHubTileSample
 {% endhighlight %}
 {% endtabs %}
 
-## Setting Title, Header and Image on tile
+## Setting Title, Header and Image in tile
 You can set the title, header and image for the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html), [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) and [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) properties.
 
 ![wpf hub tile structure](Getting-Started_images/hubtileimage.png)
