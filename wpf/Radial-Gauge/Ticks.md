@@ -21,7 +21,7 @@ The length, stroke, and stroke thickness of a tick are set using the `TickLength
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
            <gauge:SfCircularGauge x:Name="gauge">
                 <gauge:SfCircularGauge.Scales >
@@ -69,7 +69,7 @@ The length, stroke, and stroke thickness of a tick are set using the `TickLength
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
             <gauge:SfCircularGauge x:Name="gauge">
                 <gauge:SfCircularGauge.Scales >
@@ -174,7 +174,7 @@ For relative position you can use `Offset` property, for setting the `Offset` to
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
           <gauge:SfCircularGauge x:Name="gauge">
                 <gauge:SfCircularGauge.Scales >
@@ -223,7 +223,7 @@ For absolute position you can use `StartOffset`, `EndOffset` properties of `Majo
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
          <gauge:SfCircularGauge x:Name="gauge">
             <gauge:SfCircularGauge.Scales >
@@ -343,7 +343,7 @@ N> Default value of the ShowTicks property is true.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge >
          <gauge:SfCircularGauge.Scales >

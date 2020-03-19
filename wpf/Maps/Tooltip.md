@@ -20,7 +20,7 @@ Tooltip is displayed by tapping the following elements:
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
           <maps:SfMap>
             <maps:SfMap.Layers>               
@@ -130,7 +130,7 @@ The following code sample shows all the above customizations.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <maps:ShapeFileLayer.ToolTipSettings>
          <maps:ToolTipSetting ValuePath="State" PointerLength="18" FontFamily="Segoe UI" FontStyle="Italic" FontSize="20" Foreground="White" Margin="10" Background="Green"  Stroke="Black" StrokeThickness="2" ShowDuration="2000" />
@@ -165,7 +165,7 @@ The maps control provides options to design your own template for tooltip using 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <maps:ShapeFileLayer.ToolTipSettings>
           <maps:ToolTipSetting ValuePath="Candidate" ShowDuration="3000">
@@ -205,7 +205,7 @@ This event occurs whenever you select a shape, bubble, or marker. You will get t
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <maps:SfMap MapToolTipOpening="Map_MapToolTipOpening" >
             <maps:SfMap.Layers>               
@@ -241,7 +241,7 @@ This event occurs whenever you select a shape, bubble, or marker. You will get t
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
           <maps:SfMap x:Name="map">
             <maps:SfMap.Layers>               
@@ -346,7 +346,7 @@ This event occurs whenever you select a shape, bubble, or marker. You will get t
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
           <maps:SfMap>
             <maps:SfMap.Layers>
@@ -410,7 +410,7 @@ This event occurs whenever you select a shape, bubble, or marker. You will get t
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <maps:SfMap>
             <maps:SfMap.Layers>               

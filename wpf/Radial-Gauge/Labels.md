@@ -465,7 +465,7 @@ N> Default value of the ShowLabels property is true.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <gauge:SfCircularGauge>
            <gauge:SfCircularGauge.Scales >
@@ -506,7 +506,7 @@ You can customize the edge label by using the `ShowFirstLabel` and `ShowLastLabe
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <gauge:SfCircularGauge>
            <gauge:SfCircularGauge.Scales >
@@ -549,7 +549,7 @@ You can change the default label by hooking the `LabelCreated` event. Based on y
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
        <gauge:SfCircularGauge>
             <gauge:SfCircularGauge.Scales >

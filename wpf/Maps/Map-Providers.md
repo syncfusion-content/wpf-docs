@@ -284,7 +284,7 @@ Calculate the initial zoom level automatically based on the `Radius` and `Distan
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <Window.Resources>
         <ResourceDictionary >
@@ -346,7 +346,7 @@ Calculate the initial zoom level automatically based on the LatLngBounds of Imag
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <Window.Resources>
         <ResourceDictionary >
@@ -416,7 +416,7 @@ Calculate imagery layer pixel bounds while zooming, panning and Geo-Coordinate v
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <maps:SfMap>
             <maps:SfMap.Layers>

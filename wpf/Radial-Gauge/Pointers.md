@@ -245,7 +245,7 @@ Tail of the needle pointer can be customized by using the `TailFill`, `TailLengt
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge >
     <gauge:SfCircularGauge.Scales>
@@ -536,7 +536,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge >
         <gauge:SfCircularGauge.Scales >
@@ -584,7 +584,7 @@ The `RangeCap` property provides options to position the range cap of the RangeP
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge >
         <gauge:SfCircularGauge.Scales>
@@ -782,7 +782,7 @@ The `Offset` property in the CircularPointer can be placed SymbolPointer in desi
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
        <gauge:SfCircularGauge >
             <gauge:SfCircularGauge.Scales>

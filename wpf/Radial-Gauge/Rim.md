@@ -240,7 +240,7 @@ N> Default value of the ShowRim property is true.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
        <gauge:SfCircularGauge  HeaderAlignment="Bottom">
            <gauge:SfCircularGauge.Scales >
@@ -277,7 +277,7 @@ N> Default value of the ShowRim property is true.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <gauge:SfCircularGauge x:Name="gauge">
              <gauge:SfCircularGauge.Scales >

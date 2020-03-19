@@ -596,7 +596,7 @@ For relative position you can use `Offset` property of Range. For setting the `O
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
             <gauge:SfCircularGauge x:Name="gauge">
                 <gauge:SfCircularGauge.Scales >
@@ -641,7 +641,7 @@ For absolute position you can use `InnerStartOffset`, `InnerEndOffset`, `OuterSt
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
             <gauge:SfCircularGauge x:Name="gauge">
                 <gauge:SfCircularGauge.Scales >
