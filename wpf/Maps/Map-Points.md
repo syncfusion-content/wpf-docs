@@ -244,7 +244,7 @@ We can Convert a Geo-coordinate point to a screen point and  screen point to Geo
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <Grid>
         <Grid.RowDefinitions>

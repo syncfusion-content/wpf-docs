@@ -22,7 +22,7 @@ The following code is used to create the Annotations.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfCircularGauge>
                 <gauge:SfCircularGauge.Annotations>
