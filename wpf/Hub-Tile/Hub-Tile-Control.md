@@ -51,7 +51,7 @@ The Title specifies the content to be displayed at the top of the tile. You can 
 
 ![wpf hubtile title](Getting-Started_images/wpf-tile-setting-title-hubtile.png)
 
-## Setting Image Content 
+## Setting Image 
 
 The ImageSource specifies the image to be displayed at the center of the tile. You can set the image to the tile by setting the image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) property.
 
@@ -72,9 +72,9 @@ The ImageSource specifies the image to be displayed at the center of the tile. Y
 
 ![wpf hubtile image](Getting-Started_images/wpf-tile-setting-image-hubtile.png)
 
-## Animation and Transitions
+## Transitions
 
-The HubTile control supports various transitions which causes the tile to animate primary tile content to secondary tile content  by setting [HubTileTransitions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitions.html) property. These transitions are based on the specified interval set by the [Interval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~Interval.html) property of SfHubTile. The SfHubTile control provides the following built-in transitions:
+The HubTile control supports various transitions which causes the tile to change from primary tile content to secondary tile content  by setting [HubTileTransitions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitions.html) property. These transitions are based on the specified interval set by the [Interval](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~Interval.html) property of SfHubTile. The SfHubTile control provides the following built-in transitions:
    1. Slide transition
    2. Fade transition
 
@@ -124,7 +124,7 @@ N> **Syncfusion.SfShared.Wpf** assembly should be included in Xaml or import **u
 
 ### Notifying transition completed
 
-As long as the tile is frozen, transitions occur repeatedly in hubtile for each specified interval.[HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event fires on each transition completion. Below example demonstrates the working of HubTileTransitionCompleted event in SfHubTile.
+As long as the tile is frozen, transitions occur repeatedly in hubtile for each specified interval. [HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event fires on each transition completion. Below example demonstrates the working of HubTileTransitionCompleted event in SfHubTile.
 
 {% tabs %}
 {% highlight XAML%}
@@ -166,7 +166,7 @@ As long as the tile is frozen, transitions occur repeatedly in hubtile for each 
 
 ## Grouping
 
-Several hub tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) property of hubtile. The group name will be used when the entire group of tiles needs to be freezed.
+Grouping describes the set of tiles which are placed together. Several hub tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) property of hubtile. The group name will be used when the entire group of tiles needs to be freezed.
 
 {% tabs %}
 {% highlight XAML %}
@@ -211,7 +211,7 @@ Several hub tiles can be grouped using the [GroupName](https://help.syncfusion.c
 
 ## Freezing/UnFreezing 
 
-Freezing helps to stop the animating the contents of the tile while UnFreezing helps to continue animating the content of the tile. By the following two ways you can set freezing/unfreezing to the HubTile:
+Freezing helps to stop animating the contents of the tile while UnFreezing helps to continue animating the content of the tile. By the following two ways you can set freezing/unfreezing to the HubTile:
  1. [Freezing/UnFreezing via Property](#freezing/unfreezing-via-property)                          
  2. [Freezing/UnFreezing via HubTileService Class](#Freezing/UnFreezing-via-hubtileservice-class)
 
@@ -477,7 +477,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
  ### Command binding
 
-   [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of Click event in MVVM pattern. 
+   Command specifies the operation to be performed when the control is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of Click event in MVVM pattern. 
 
    {% tabs %}
    {% highlight XAML%} 
@@ -539,7 +539,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
 ### Animations
 
-  While pressing the center of the tile, the tile press animation occurs by setting properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) which determines the depth of scaling effect while pressing the  center of the tile and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) which specifies the time taken for the single tile press animation.
+The tile press animation causes the entire tile to be zoomed in/out at speicfied interval and is done by setting properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) which determines the depth of scaling effect while pressing the  center of the tile and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) which specifies the time taken for the single tile press animation.
 
    {% tabs %}
    {% highlight XAML %}

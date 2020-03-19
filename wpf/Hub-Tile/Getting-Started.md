@@ -13,7 +13,7 @@ This section gives an overview for working with the HubTile and PulsingTile cont
 
 ## Assembly deployment
 
-Refer [SfHubTile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [SfPulsingTile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or NuGet package needs to be added as reference to use the SfHubTile and SfPulsingTile control in any application.
+Refer [HubTile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [PulsingTile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or NuGet package needs to be added as reference to use the HubTile and PulsingTile control in any application.
 
 ## Creating simple application with HubTile and PulsingTile
 
@@ -38,7 +38,7 @@ In order to add control manually in XAML, do the below steps,
 1. Add the below required assembly references to the project,
 	* Syncfusion.SfHubTile.WPF
 	* Syncfusion.SfShared.WPF
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfHubTile control namespace **Syncfusion.Windows.Controls.Notification** in XAML page.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or namespace **Syncfusion.Windows.Controls.Notification** in XAML page.
 3. Declare SfHubTile and SfPulsingTile controls in XAML page.
 
 {% tabs %}
@@ -66,7 +66,7 @@ In order to add control manually in C#, do the below steps,
 1. Add the below required assembly references to the project,
 	* Syncfusion.SfHubTile.WPF
 	* Syncfusion.SfShared.WPF
-2. Import SfHubTile namespace **using Syncfusion.Windows.Controls.Notification;**.
+2. Import namespace **using Syncfusion.Windows.Controls.Notification;**.
 3. Create SfHubTile and SfPulsingTile controls instance and add it to the window.
 
 {% tabs %}
@@ -96,6 +96,7 @@ namespace SfHubTileSample
 {% endtabs %}
 
 ## Setting Title, Header and Image in tile
+
 You can set the title, header and image for the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html), [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) and [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) properties.
 
 ![wpf hub tile structure](Getting-Started_images/hubtileimage.png)
