@@ -9,14 +9,21 @@ documentation: ug
 
 # Overview
 
-The HubTile control provides live updates and notifications similar to Windows 8 and Windows Phone. A hub tile can have an image, title, and header to update in the tile.
+ Tile provides live update and notification similar to the tile functionality in Windows Desktop and Windows Phone. The tile can have an image, title and header to update on the tile.
 
 ## Key Features
 
-* Hub Tile – The control provides notifications through various transition effects.
-* Pulsing Tile – The control zooms in and out and translates the content across the x- and y- axis.
-* Freezing – A hub tile can be frozen.
+* HubTile –Supports tile feature similar to the tile feature of Windows Desktop and Windows Phone. It also supports various transition effects. It also provides support for displaying secondary content.
 
-![SfHubTile image](Overview_images/Overview_img1.png)
+* PulsingTile – Supports tile feature similar to music and video tile in Windows Phone. The control allows the content to be zoomed in/out and translates the content across the x-axis and y-axis.
+  
+* Grouping - Support for grouping multiple tiles together.
 
+* Freezing/Unfreezing – Support for freezing and unfreezing the tile.
+
+* Themes -  Support for customizing the tile using different themes.
+
+![SfHubTile image](Overview_images/Overview_image1.png)
+
+![SfPulsingTile image](Overview_images/Overview_image2.png)
 

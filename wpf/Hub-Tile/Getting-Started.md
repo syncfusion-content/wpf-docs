@@ -9,26 +9,28 @@ documentation: ug
 
 # Getting Started
 
+This section gives an overview for working with the HubTile and PulsingTile control.
+
 ## Assembly deployment
 
 Refer [SfHubTile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [SfPulsingTile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or NuGet package needs to be added as reference to use the SfHubTile and SfPulsingTile control in any application.
 
 ## Creating simple application with HubTile and PulsingTile
 
-In this walk through, you will create WPF application that contains SfHubTile and SfPulsingTile control. 
+In this walk through, you will create WPF application that contains SfHubTile and SfPulsingTile control. Create a new WPF Project in Visual Studio to display HubTile and PulsingTile with data objects. By the following ways, you can add the controls: 
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in XAML](#adding-control-manually-in-xaml)
-4. [Adding control manually in C#](#adding-control-manually-in-c)
-
-### Creating the project
-
-Create new WPF Project in Visual Studio to display SfHubTile and SfPulsingTile with data objects.
+1. [Adding control via Designer](#adding-control-via-designer)
+2. [Adding control manually in XAML](#adding-control-manually-in-xaml)
+3. [Adding control manually in C#](#adding-control-manually-in-c)
 
 ### Adding control via Designer
 
-SfHubTile and SfPulsingTile controls can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+In order to add control via Designer, do the below steps:
+
+1. Add the below required assembly references to the project,
+	* Syncfusion.SfHubTile.WPF
+	* Syncfusion.SfShared.WPF
+2. SfHubTile and SfPulsingTile controls can be added to the application by dragging it from Toolbox and dropping it in Designer view. 
 
 ![wpf hub tile control added by designer](Getting-Started_images/Getting-started_img5.png)
 
@@ -52,16 +54,17 @@ In order to add control manually in XAML, do the below steps,
         x:Class="WpfApplication1.MainWindow"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-    	<!--HubTile-->
-		<syncfusion:SfHubTile Content="SfHubTile" Grid.Column="0" />
-		<!--Pulse Tile-->
-		<syncfusion:SfPulsingTile Content="SfPulsingTile" Grid.Column="1"/>
-    </Grid>
+<!--HubTile-->
+ <syncfusion:SfHubTile Grid.Column="0" Content="This is a HubTile"/>
+
+<!--PulsingTile-->
+<syncfusion:SfPulsingTile Grid.Column="1" Content="This is a PulsingTile" />
+</Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}
 
-### Adding control manually in C\#
+### Adding control manually in C#
 
 In order to add control manually in C#, do the below steps,
 
@@ -76,78 +79,39 @@ In order to add control manually in C#, do the below steps,
 using Syncfusion.Windows.Controls.Notification;
 namespace SfHubTileSample
 {
+
 	public partial class MainWindow : Window
 	{
 		public MainWindow()
 		{
 			InitializeComponent();
+
 			// HubTile
 			SfHubTile hubTile = new SfHubTile();
 			grid.Children.Add(hubTile);			
-			//Pulse Tile
+
+			//PulsingTile
 			SfPulsingTile pulseTile = new SfPulsingTile();
 			grid.Children.Add(pulseTile);
 		}
 	}
-}
+	}
+
 {% endhighlight %}
 {% endtabs %}
 
-## Setting Header for Tile
+## Setting Title, Header and Image on tile
+You can set the title, header and image for the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html), [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) and [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) properties.
 
-You can set the header for tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+![wpf hub tile structure](Getting-Started_images/hubtileimage.png)
 
-{% tabs %}
-{% highlight XAML %}
-<!-- HubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile"/>
-<!-- Pulsing Tile -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="Pulsing Tile"/>
-{% endhighlight %}
-{% highlight C# %}
-//Setting header for HubTile
-hubTile.Header = "HubTile";
-//Setting header for Pulsing Tile
-pulseTile.Header = "Pulsing Tile";
-{% endhighlight %}
-{% endtabs %}
+![wpf pulsing tile structure](Getting-Started_images/pulsingtileimage.png)
 
-![wpf tile header](Getting-Started_images/wpf-tile-setting-header.png)
+N> The title will be displayed at the top of the tile. The header will be displayed at the bottom of the tile. An image will be displayed at the center of the tile.
 
-## Setting Title for Tile
 
-You can set the title for tile by setting [Title](ttps://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
 
-{% tabs %}
-{% highlight XAML %}
-<!-- HubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Title="This is title area."/>
-<!--Pulsing Tile-->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="This is title area."/>
-{% endhighlight %}
-{% highlight C# %}
-//Setting title for HubTile
-hubTile.Title = "This is title area.";
-//Setting title for Pulsing Tile
-pulseTile.Title = "This is title area.";
-{% endhighlight %}
-{% endtabs %}
 
-![wpf tile title](Getting-Started_images/wpf-tile-setting-title.png)
 
-## Setting Image for Tile
 
-You can set the image for tile by setting the image path in [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) property.
 
-{% tabs %}
-{% highlight XAML %}
-<!--HubTile--> 
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="Assets\New Mail.png"/>
-<!--Pulsing Tile-->
-<syncfusion:SfPulsingTile x:Name="pulsingTile">
-	<Image Source="Assets/PulsingTile.jpg" Stretch="UniformToFill"  VerticalAlignment="Center" HorizontalAlignment="Center"  Height="200" />
-</syncfusion:SfPulsingTile>
-{% endhighlight %}
-{% endtabs %}
-
-![wpf tile image](Getting-Started_images/wpf-tile-setting-image.png)
