@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Syncfusion Axis and its types. 
-description: Axis behavior and its types.
+description: This section explains the different types of axis and how to customize the grid lines, tick lines, labels and title of chart axis.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
 
-# Axis
+# Axis in WPF Charts (SfChart)
 
 [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) is used to locate a data point inside the chart area. Generally, to locate a data point two axes are required along vertical and horizontal direction. The vertical axis or y-axis usually represents numerical values. The horizontal axis or x-axis represents categorical or numerical or date and time values. 
 
@@ -584,7 +584,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
         <DataTemplate x:Key="postfixLabelTemplate">
 
-             TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
+             <TextBlock FontSize="10" VerticalAlignment="Center" Text="K"/>
 
         </DataTemplate>
 
@@ -1086,7 +1086,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 <syncfusion:SfChart.SecondaryAxis>
 
-</syncfusion:NumericalAxis ShowLabelBorder="True"  />       
+<syncfusion:NumericalAxis ShowLabelBorder="True"/>       
 
 </syncfusion:SfChart.SecondaryAxis>
 
@@ -4285,7 +4285,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 **Text** **Customization**
 
-[`ChartMultiLevelLabel's`] text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSizeProperty.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamilyProperty.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) properties. It is shown in following code example.
+[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSizeProperty.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamilyProperty.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) properties. It is shown in following code example.
 
 {% tabs %}
 
