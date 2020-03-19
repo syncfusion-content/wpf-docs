@@ -226,3 +226,31 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
 </Window.Resources>
 {% endhighlight %}
 {% endtabs %}
+
+## Improving performance while adding multiple FilterPredicates to the column in loop
+
+You can improve the performance of filtering by suspending the data operation while adding `FilterPredicates` to the column for bulk updates by calling [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~BeginInit.html) and [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, before and after the data operation.
+
+{% tabs %}
+{% highlight c# %}
+private void OnApplyFilterPredicate(object obj)
+{
+    var dataGrid = obj as SfDataGrid;            
+    var gridColumn = dataGrid.Columns["EmployeeId"];
+    dataGrid.View.BeginInit();
+    foreach (var filterValue in FilterValues)
+    {
+        gridColumn.FilterPredicates.Add(new FilterPredicate()
+        {
+            FilterType = FilterType.Equals,
+            FilterValue = filterValue,
+            FilterBehavior = FilterBehavior.StronglyTyped,
+            FilterMode = ColumnFilter.Value,
+            PredicateType = PredicateType.Or,
+            IsCaseSensitive = true
+        });
+    }            
+    dataGrid.View.EndInit();
+}
+{% endhighlight %}
+{% endtabs %}

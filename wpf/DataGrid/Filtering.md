@@ -72,18 +72,18 @@ N> When you use [DataTable](https://msdn.microsoft.com/en-us/library/system.data
 
 #### Improving performance while adding multiple FilterPredicates to the column in loop
 
-You can suspend the data operation while adding the multiple `FilterPredicates` to the column for bulk updates by calling [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~BeginInit.html) and [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, before and after the data operation.
+You can improve the performance of filtering by suspending the data operation while adding `FilterPredicates` to the column for bulk updates by calling [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~BeginInit.html) and [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Data.WPF~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, before and after the data operation.
 
 {% tabs %}
 {% highlight c# %}
 private void OnApplyFilterPredicate(object obj)
 {
     var dataGrid = obj as SfDataGrid;            
-    var columns = dataGrid.Columns["EmployeeId"];
+    var gridColumn = dataGrid.Columns["EmployeeId"];
     dataGrid.View.BeginInit();
     foreach (var filterValue in FilterValues)
     {
-        columns.FilterPredicates.Add(new FilterPredicate()
+        gridColumn.FilterPredicates.Add(new FilterPredicate()
         {
             FilterType = FilterType.Equals,
             FilterValue = filterValue,
