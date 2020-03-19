@@ -9,35 +9,32 @@ documentation: ug
 
 # Appearance in WPF ColorPicker
 
-This page contains a brief description of the WPF ColoPicker Header customization options, built-in themes, and other related layout resources.
+This section explains different UI customization, styling, theming options available in [ColoPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) control.
 
-## Header Template
+## Change Header Template
 
-Header of the ColorPicker can be customized using [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~HeaderTemplate.html) property.
+We can customize the header of the `ColorPicker` by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~HeaderTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}
 
 <DataTemplate x:Key="CustomHeaderTemplate" DataType="syncfusion:ColorPicker">
-  <StackPanel Orientation="Horizontal">
-    <Border Name="selectedColorRect"
-     HorizontalAlignment="Left" 
-     Width="20" Height="20" Margin="2" 
-     Background="{Binding Color,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:ColorPicker}}, Converter={StaticResource ColorToBrush}}"/>
-  </StackPanel>
+    <StackPanel Orientation="Horizontal">
+        <Ellipse Fill="{Binding Brush, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:ColorPicker}}}"
+                 Name="selectedColorEllipse" HorizontalAlignment="Left" Width="20" Height="20" Margin="2" />
+    </StackPanel>
 </DataTemplate>
 
-<sync:ColorPicker  HeaderTemplate="{StaticResource CustomHeaderTemplate}"/>
+<syncfusion:ColorPicker  HeaderTemplate="{StaticResource CustomHeaderTemplate}" Name="colorPicker" Width ="50" Height="30"/>
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker-HeaderTemplate-WPF](New-User-Interface-Support_images/CustomHeader_ColorPicker.png)
+![ColorPicker with custom header template](New-User-Interface-Support_images/CustomHeader_ColorPicker.png)
 
+## Change flow direction
 
-## Setting flow direction
-
-Right to left layout of the ColorPicker is set by using the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.flowdirection?view=netframework-4.8) property.
+We can change the flow direction of the `ColorPicker` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -45,63 +42,101 @@ Right to left layout of the ColorPicker is set by using the [FlowDirection](http
 <syncfusion:ColorPicker FlowDirection="RightToLeft" Name="colorPicker"/>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
+ColorPicker colorPicker= new ColorPicker();
 colorPicker.FlowDirection = FlowDirection.RightToLeft;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker RightToLeft](Layout-Related-Features_images/ColorPicker_RightToLeft.png)
-
+![ColorPicker with RightToLeft flow direction](Layout-Related-Features_images/ColorPicker_RightToLeft.png)
 
 ## Alpha Visibility
 
-Alpha/Opacity parameter of the color can be altered using delicate slider which handle alpha visibility. This can be disabled by [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsAlphaVisible.html) property.
-
-{% tabs %}
-{% highlight xaml %}
- <syncfusion:ColorPicker x:Name="colorPicker" IsAlphaVisible="False"/>
-{% endhighlight %}
-
-{% highlight C# %}
-
- colorPicker.IsAlphaVisible = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![WPF ColorPicker IsAlphaVisible](ScRGB-Color_images/ColorPicker_IsAlphaVisible.png)
-
-## Setting VisualStyle for ColorPicker control
-
-WPF ColorPicker provides built-in themes which can be applied using SkinStorage and SfSkinManager. Also provides support to create custom theme using theme studio.
-
-You can enhance the appearance of the [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) by using the [VisualStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinStorage~VisualStyleProperty.html) property. VisualStyle is an attached property that gets or sets the value for the visual style. Use the following code to set the visual style for the ColorPicker control.
+We can change the opacity of the selected color by using the A-Alpha value editor or delicate slider in the `ColorPicker`. We can hide the A-Alpha value editor and delicate slider by using the [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsAlphaVisible.html) property value as `false`. The default value of the `IsAlphaVisible` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPicker  syncfusion:SkinStorage.VisualStyle="Office2013" Name="colorPicker"/>
+<syncfusion:ColorPicker IsAlphaVisible="False" x:Name="colorPicker" />
 
 {% endhighlight %}
-
 {% highlight C# %}
 
- SkinStorage.SetVisualStyle(colorPicker, "Office2013"); 
+ColorPicker colorPicker = new ColorPicker();
+colorPicker.IsAlphaVisible = false;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPicker Blend](Layout-Related-Features_images/ColorPicker_BlendTheme.png)
+![ColorPicker hides the Alpha slider and vale editor](ScRGB-Color_images/ColorPicker_IsAlphaVisible.png)
 
-![ColorPicker Office2016](Layout-Related-Features_images/ColorPicker_Office2016.png)
+## Setting ToolTip
 
-![ColorPicker VisualStudio2013](Layout-Related-Features_images/ColorPicker_VisualStudio2013.png)
+ToolTip is used to show the information about the segment, when you mouse over on the segment. We can show information about the selected color name using tooltip when click and dragging the mouse on the color palette. Tooltip is enabled by default, you can disable it by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~EnableToolTip.html) to `false`.
 
-![ColorPicker Office2010](Layout-Related-Features_images/ColorPicker_Office2010.png)
+{% tabs %}
+{% highlight XAML %}
 
-![ColorPicker Office2007](Layout-Related-Features_images/ColorPicker_Office2007.png)
+<syncfusion:ColorPicker EnableToolTip="True"  Name="colorPicker"/>
 
-![ColorPicker Office2013](Layout-Related-Features_images/ColorPicker_Office2013.png)
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPicker colorPicker = new ColorPicker();
+colorPicker.EnableToolTip = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPicker with TooTip support](Selection-Mode_images/ColorPicker_Tooltip.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Appearance) to download the sample that showcases the UI customization and styling support.
+
+## Theme
+
+We can customize the appearance of the `ColorPicker` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `ColorPicker` control.
+
+* Blend
+* Default
+* Lime
+* Metro
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* SystemTheme
+* VisualStudio2013
+* VisualStudio2015
+
+Here, the `Blend` style is applied to the `ColorPicker`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPicker syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                         x:Name="colorPicker" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
+
+ColorPicker colorPicker = new ColorPicker();
+SfSkinManager.SetVisualStyle(colorPicker, VisualStyles.Blend);
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPicker with Blend visual style](Layout-Related-Features_images/ColorPicker_BlendTheme.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/Themes) to download the sample that showcases the different theming support.

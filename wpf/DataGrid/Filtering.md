@@ -887,3 +887,38 @@ You can change the filter icon style by editing the [FilterToggleButton](http://
 {% endtabs %}
 
 When you apply above style to [FilterToggleButton](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FilterToggleButton.html), FilterIcon changes from Default to Gray and to Red when filtering is applied. When you clear it, it changes from Red to Gray and to default style.
+
+## See Also
+[How to display values with underscore in check boxes of the filter control?](https://www.syncfusion.com/kb/10163)
+
+[How to serialize the filtered values based on FilterMode of the column](https://www.syncfusion.com/kb/9900)
+
+[How to apply search and filter for one column in SfDataGrid?](https://www.syncfusion.com/kb/9297)
+
+[How to customize the Filtering and Sorting icons in the SfDataGrid ?](https://www.syncfusion.com/kb/8184)
+
+[How to change the Filter Predicate showing in CheckBoxFilter UI ?](https://www.syncfusion.com/kb/7736)
+
+[How to show filter status message in SfDataGrid?](https://www.syncfusion.com/kb/7616)
+
+[How to localize the filter values in GridCheckBoxColumn ?](https://www.syncfusion.com/kb/6787)
+
+[How to load NumberFilters in AdvanceFilters using Dynamic Collection?](https://www.syncfusion.com/kb/6766)
+
+[How to search and select record in SfDataGrid?](https://www.syncfusion.com/kb/6604)
+
+[How to skip the frozen row data from filtering in the SfDataGrid?](https://www.syncfusion.com/kb/5088)
+
+[How to filter the records based on display text in the SfDataGrid?](https://www.syncfusion.com/kb/4905)
+
+[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://www.syncfusion.com/kb/4052)
+
+[How to Save and Reload the filters in SfDataGrid?](https://www.syncfusion.com/kb/3196)
+
+[How to Customize the Excel like Filtering Items Source in SfDataGrid?](https://www.syncfusion.com/kb/3123)
+
+[How to clear the filtering for all columns using HeaderContextMenu?](https://www.syncfusion.com/kb/2506)
+
+[How to change the FilterToggleButton color while filtering?](https://www.syncfusion.com/kb/2482)
+
+[How to access the filtered records from SfDataGrid?](https://www.syncfusion.com/kb/2425)

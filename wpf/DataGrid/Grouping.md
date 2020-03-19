@@ -626,3 +626,32 @@ The [SfDataGrid.GroupCollapsed](http://help.syncfusion.com/cr/cref_files/wpf/Syn
 [GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member.
 
 [Group](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs~Group.html) - Gets the collapsed group.
+
+## See Also
+[How to remove the gridline of WPF DataGrid (SfDataGrid) with grouping?](https://www.syncfusion.com/kb/11009)
+
+[How to maintain expanded state of groups in printing?](https://www.syncfusion.com/kb/10042)
+
+[How to show vertical border to the column wise summary rows?](https://www.syncfusion.com/kb/10038)
+
+[How to define summary rows using AttachedProperty in datagrid](https://www.syncfusion.com/kb/9838)
+
+[How to displaying Group header name based on other column](https://www.syncfusion.com/kb/7837)
+
+[How to clear selection while grouping/ungrouping?](https://www.syncfusion.com/kb/6650)
+
+[How to add selection to data rows of each group on expanding its CaptionSummaryRow?](https://www.syncfusion.com/kb/4211)
+
+[How to change the CaptionSummaryRow Style based on the grouping level?](https://www.syncfusion.com/kb/4147)
+
+[How to Change the GroupCaptionText based on Display member of the GridComboboxColumn?](https://www.syncfusion.com/kb/3446)
+
+[How to add controls like TextBox in GroupDropArea?](https://www.syncfusion.com/kb/3370)
+
+[How to customize the CaptionSummaryCell text in the SfDataGrid?](https://www.syncfusion.com/kb/3249)
+
+[How to apply the Custom Grouping while grouping the column using GroupDropArea?](https://www.syncfusion.com/kb/2732)
+
+[How to avoid selection while grouping and ungrouping in SfDataGrid?](https://www.syncfusion.com/kb/2531)
+
+[How to customize the GroupDropArea?](https://www.syncfusion.com/kb/2434)

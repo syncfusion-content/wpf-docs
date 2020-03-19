@@ -1967,7 +1967,7 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 
 ### Cancel the navigation
 
-You can cancel the navigation by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `false`. 
+You can cancel the navigation by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `true`. 
 
 {% tabs %}
 {% highlight c# %}
