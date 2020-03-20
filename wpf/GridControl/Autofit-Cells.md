@@ -7,7 +7,7 @@ control: GridControl
 documentation: ug
 ---
 
-# Overview
+# Autofit cells in GridControl 
 
 GridControl provides support to autofit rows and columns based on the content of cells.
 
@@ -86,7 +86,7 @@ of a covered range is resized. </td></tr>
 <tr>
 <td>
 NoShrinkSize</td><td>
-This option autofits the cells without shrinking the original size.For example, while auto fitting the cells, if the size is reduced than the normal size of the cell due to the content, you can use this option to retain the original size without shrinking. </td></tr>
+This option autofit the cells without shrinking the original size.For example, while auto fitting the cells, if the size is reduced than the normal size of the cell due to the content, you can use this option to retain the original size without shrinking. </td></tr>
 <tr>
 <td>
 IncludeHeaders</td><td>
@@ -94,8 +94,8 @@ This option includes row/column header while auto fitting the cells.</td></tr>
 <tr>
 <td>
 IncludeCellsWithinCoveredRange</td><td>
-`ResizeCoveredCells` option only autofits the last row or column of a covered range. But this option
-autofits the columns or rows before the last one also.</td></tr>
+`ResizeCoveredCells` option only autofit the last row or column of a covered range. But this option
+autofit the columns or rows before the last one also.</td></tr>
 <tr>
 <td>
 IncludeHiddenCells</td><td>
