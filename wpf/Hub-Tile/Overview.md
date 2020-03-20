@@ -13,7 +13,7 @@ documentation: ug
 
 ## Key Features
 
-* HubTile – Supports tile feature similar to Windows Desktop and Windows Phone. It also supports various transition effects and also provides support for displaying secondary content.
+* HubTile – Supports tile feature similar to Windows Desktop and Windows Phone. It also supports various transition effects and also provides support for displaying primary and secondary content.
 
 * PulsingTile – Supports tile feature similar to music and video tiles in Windows Phone. The control allows the content to be zoomed in/out and translates the content across the x-axis and y-axis.
   

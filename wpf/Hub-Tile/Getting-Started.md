@@ -9,15 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section gives an overview for working with the HubTile and PulsingTile control.
+This section gives an overview for working with the HubTile and PulsingTile controls.
 
 ## Assembly deployment
 
-Refer [HubTile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [PulsingTile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or NuGet package needs to be added as reference to use the HubTile and PulsingTile control in any application.
+Refer [HubTile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [PulsingTile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies to get the list of assemblies or NuGet package needs to be added as reference to use the HubTile and PulsingTile control in any application.
 
 ## Creating simple application with HubTile and PulsingTile
 
-In this walk through, you will create WPF application that contains SfHubTile and SfPulsingTile control. Create a new WPF Project in Visual Studio to display HubTile and PulsingTile with data objects. By the following ways, you can add the controls: 
+In this walk through, you will create WPF application that contains HubTile and PulsingTile control. Create a new WPF Project in Visual Studio to display HubTile and PulsingTile with data objects. By the following ways, you can add the controls: 
 
 1. [Adding control via Designer](#adding-control-via-designer)
 2. [Adding control manually in XAML](#adding-control-manually-in-xaml)
@@ -25,12 +25,20 @@ In this walk through, you will create WPF application that contains SfHubTile an
 
 ### Adding control via Designer
 
-HubTile and PulsingTile controls can be added to the application by dragging  SfHubTile and SfPulsingTile from Toolbox and dropping it in Designer view. 
+HubTile and PulsingTile controls can be added to the application by dragging  SfHubTile and SfPulsingTile from Toolbox and dropping it in Designer view. After dropping the controls in Designer View, the assemblies such as **Syncfusion.SfHubTile.WPF** and **Syncfusion.SfShared.WPF** gets added into the project.The following code snippet will be added into XAML.
+
+{% tabs %}
+{% highlight XAML %}
+<SampleLayout.WPF:SfHubTile Content="SfHubTile" HorizontalAlignment="Left" Margin="335,113,0,0" VerticalAlignment="Top"/>
+{% endhighlight %}
+{% endtabs %}
+
+ SampleLayout.WPF in XAML is an auto generated namespace.
 
 ![wpf hub tile control added by designer](Getting-Started_images/SfHubTile.png)
 
 ![wpf pulsing tile control added by designer](Getting-Started_images/SfPulsingTile.png)
-
+	
 ### Adding control manually in XAML
 
 In order to add control manually in XAML, do the below steps,

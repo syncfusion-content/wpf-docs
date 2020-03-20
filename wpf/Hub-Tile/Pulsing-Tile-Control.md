@@ -13,13 +13,26 @@ documentation: ug
 
 ## Setting Header content
 
-The Header defines the content to be displayed at the bottom of the tile. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+Header is used to display the contents at the bottom of the tile. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+
 
 {% tabs %}
 {% highlight XAML %}
 
 <!-- SfPulsingTile -->
 <syncfusion:SfPulsingTile x:Name="pulsingTile" Header="PulsingTile"/>
+<!--setting header as image-->
+<syncfusion:SfPulsingTile x:Name="pulsingTile" >
+     <syncfusion:SfPulsingTile.Header>
+     <Image Source="Assets/syncfusion.png" Stretch="None" >
+     </syncfusion:SfPulsingTile.Header>
+</syncfusion:SfPulsingTile>
+<!--setting header as control-->
+<syncfusion:SfPulsingTile x:Name="pulsingTile" >
+     <syncfusion:SfPulsingTile.Header>
+     <TextBox Text="Header in the tile" Background="LightBlue" >
+     </syncfusion:SfPulsingTile.Header>
+</syncfusion:SfHubTile>
 {% endhighlight %}
 {% highlight C# %}
 
@@ -33,13 +46,25 @@ The Header defines the content to be displayed at the bottom of the tile. You ca
 
 ## Setting Title content
 
-The Title defines the content to be displayed at the top of the tile. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
+ Title is used to display the contents at the top of the tile. The content can be an image, a text or a control, etc. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
 
 {% tabs %}
 {% highlight XAML %}
 
 <!--SfPulsingTile-->
 <syncfusion:SfPulsingTile x:Name="pulsingTile" Title="This is title area in pulsingtile"/>
+<!--setting title as image-->
+<syncfusion:SfPulsingTile x:Name="pulsingTile">
+<syncfusion:SfPulsingTile.Title>
+  <Image Source="Assets/syncfusion.png" Stretch="None"/>
+  </syncfusion:SfPulsingTile.Title>
+  </syncfusion:SfPulsingTile>
+ <!--setting title as control--> 
+ <syncfusion:SfPulsingTile x:Name="pulsingTile">
+<syncfusion:SfPulsingTile.Title>
+   <TextBox Text="This is a title area" Background="LightBlue" >
+  </syncfusion:SfPulsingTile.Title>
+  </syncfusion:SfPulsingTile>
 {% endhighlight %}
 {% highlight C# %}
 
@@ -50,6 +75,10 @@ The Title defines the content to be displayed at the top of the tile. You can se
 {% endtabs %}
 
 ![wpf setting pulsingtile title](Getting-Started_images/wpf-tile-setting-title-pulsingtile.png)
+
+![wpf setting pulsingtile title as image](Getting-Started_images/wpf-pulsingtile-title-image.png)
+
+![wpf pulsingtile title as control](Getting-Started_images/wpf-pulsingtile-title-control.png)
 
 ## Setting Image content
 
@@ -510,6 +539,53 @@ N> The tile press animation occurs only if the [OverrideDefualtStates](https://h
 ![wpf pulsingtile tile press animation](Getting-Started_images/wpf-pulsingtile-tilepress-animation.gif)
 
 ## Appearance and Styling
+
+## Customizing Header
+
+ Header of the  tile is customized by setting the properties such as [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) and [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) as below.
+
+HeaderStyle is used to customize the header of the tile by setting the required properties .
+
+{% tabs %}
+{% highlight XAML%}
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="Assets/New Mail.png"  Title="This is title area." Header="HubTile">
+<!--For setting Header Style-->
+ <sync:SfHubTile.HeaderStyle>
+    <Style TargetType="ContentControl">
+    <Setter Property="VerticalAlignment" Value="Bottom"/>
+    <Setter Property="Foreground" Value="Yellow"/>
+    <Setter Property="FontSize" Value="18"/>
+    <Setter Property="FontFamily" Value="ALGERIAN"/>
+    </Style>
+    </sync:SfHubTile.HeaderStyle>
+  </syncfusion:SfHubTile>  
+{% endhighlight %}
+{% endtabs %}
+
+![wpf hubtile headerstyle](Getting-Started_images/wpf-hubtile-header-style.png)
+
+ HeaderTemplate is used to customize the header of the tile by adding required controls into the template.
+
+{% tabs %}
+{% highlight XAML %}
+   
+   <syncfusion:SfHubTile x:Name="hubTile" ImageSource="Assets/New Mail.png" Width="250"  Title="This is a title area." Header="HubTile">
+    <sync:SfHubTile.HeaderTemplate>
+        <DataTemplate>
+        <Grid>
+         <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+           <ColumnDefinition/>
+         </Grid.ColumnDefinitions>
+          <Label>Header</Label>
+          <TextBox Text="Displays header" TextWrapping="Wrap" Grid.Column="1" TextAlignment="Right" Background="LightBlue"/>
+        </Grid>
+        </DataTemplate>
+   </sync:SfHubTile.HeaderTemplate>-->
+{% endhighlight %}
+{% endtabs %}
+
+![wpf hubtile header template](Getting-Started_images/wpf-hubtile-header-template.png)
 
 ### Customizing  Title
 
