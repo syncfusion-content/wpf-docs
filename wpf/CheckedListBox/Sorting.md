@@ -12,7 +12,7 @@ documentation: ug
  By default, the [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) are arranged based on the order they added in to the `Items`  collection. We can sort the `CheckListBox` items by adding the sorting direction to the `CollectionView.SortDescriptions` collection. The `CheckListBox` items can be sorted either in ascending or descending order based on the user’s perspective.
 
 {% tabs %}
-{%highlight C#}
+{% highlight C# %}
 
 //Model.cs
 class Vegetable {
@@ -49,11 +49,11 @@ class ViewModel {
     }
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
-{%highlight xaml%}
+{% highlight xaml %}
 
 <syncfusion:CheckListBox ItemsSource="{Binding Vegetables}" DisplayMemberPath="Name"
                          Name="checkListBox">
@@ -67,7 +67,7 @@ class ViewModel {
     </i:Interaction.Triggers>
 </syncfusion:CheckListBox>
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 Here, the `Vegetables` items are sorted in ascending order based on their name.

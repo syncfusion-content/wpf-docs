@@ -14,7 +14,7 @@ documentation: ug
  The selection state of group header varies based on the checked or unchecked state of the child items. Group can be expanded or collapsed and the child items present in the group can be checked or unchecked based on the user’s perspective.
 
 {% tabs %}
-{%highlight C#}
+{% highlight C# %}
 
 //Model.cs
 class Vegetable {
@@ -47,11 +47,11 @@ class ViewModel {
     }
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
-{%highlight xaml%}
+{% highlight xaml %}
 
 <syncfusion:CheckListBox ItemsSource="{Binding Vegetables}" DisplayMemberPath="Name"
                          Name="checkListBox">
@@ -65,7 +65,7 @@ class ViewModel {
     </i:Interaction.Triggers>
 </syncfusion:CheckListBox>
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 Here, the `Vegetables` items are grouped based on their price.
@@ -79,7 +79,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/
  We can create a multi-level nested groups for the `CheckListBox` items by adding the two or more group descriptions to the `CollectionView.GroupDescriptions` collection. Child level groups are created by order of group descriptions added to the collection.
 
 {% tabs %}
-{%highlight C#}
+{% highlight C# %}
 
 //Model.cs
 class Vegetable {
@@ -118,11 +118,11 @@ class ViewModel {
     }
 }
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
-{%highlight xaml%}
+{% highlight xaml %}
 
 <syncfusion:CheckListBox ItemsSource="{Binding Vegetables}" DisplayMemberPath="Name"
                          Name="checkListBox">
@@ -136,7 +136,7 @@ class ViewModel {
     </i:Interaction.Triggers>
 </syncfusion:CheckListBox>
 
-{%endhighlight%}
+{% endhighlight %}
 {% endtabs %}
 
 Here, the `Vegetables` items are grouped based on their Category and then, the categorized properties are grouped by price.
