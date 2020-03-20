@@ -106,7 +106,7 @@ TreeViewAdv allow user to expand or collapse each item by enabling or disabling 
 
 ![WPF TreeViewAdv Expand_the_Item](Expand_the_item_images/Expand_the_item_img1.jpeg)
 
-You can download the sample [here](https://github.com/SyncfusionExamples/how-to-programmatically-expand-an-item-in-wpf-treeview-treeviewadv)
+N> [View the sample in GitHub](https://github.com/SyncfusionExamples/how-to-programmatically-expand-an-item-in-wpf-treeview-treeviewadv)
 
 ## Animation type
 
