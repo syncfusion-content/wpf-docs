@@ -48,7 +48,7 @@ The [GridTreeControl](https://help.syncfusion.com/wpf/classic/gridtree/overview)
 
 ### GridDataControl and SfDataGrid
 
-The [GridDataControl](http://help.syncfusion.com/wpf/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) controls are used to display collection of data in rows and columns. These controls support the data binding directly. 
+The [GridDataControl](https://help.syncfusion.com/wpf/classic/griddata/overview) and [SfDataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) controls are used to display collection of data in rows and columns. These controls support the data binding directly. 
 
 1. **SfDataGrid** - SfDataGrid is designed based on the WPF template-based architecture that provides support to customize the Grid easily and fully supports binding. 
 2. **GridDataControl** - GridDataControl is designed based on the cell-oriented architecture of the Windows Forms Grid control that provides more control over cells and supports for Excel-like features. 
