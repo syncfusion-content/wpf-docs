@@ -13,6 +13,7 @@ The PDF Viewer supports following cursor modes for easy interaction with the PDF
 
 * Selection mode 
 * Panning mode
+* Marquee zoom mode
 
 ## Selection mode
 
@@ -57,6 +58,29 @@ pdfViewerControl.Load("Sample.pdf");
 
 Dim pdfViewerControl As PdfViewerControl = New PdfViewerControl()
 pdfViewerControl.CursorMode = PdfViewerCursorMode.HandTool
+pdfViewerControl.Load("Sample.pdf")
+
+{% endhighlight %}
+{% endtabs %}
+
+## Marquee zoom mode
+
+In this mode, you can zoom a particular area of a PDF document by dragging the area using the zoom tool or keyboard actions. You can marquee a section by left click and drag using your mouse. By pressing the `Ctrl` key, you can decrease the zoom level. Refer to the following code to enable the marquee zoom mode in `PdfViewerControl`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+PdfViewerControl pdfViewerControl = new PdfViewerControl();
+pdfViewerControl.CursorMode = PdfViewerCursorMode.MarqueeZoom;
+pdfViewerControl.Load("Sample.pdf");
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+Dim pdfViewerControl As PdfViewerControl = New PdfViewerControl()
+pdfViewerControl.CursorMode = PdfViewerCursorMode.MarqueeZoom
 pdfViewerControl.Load("Sample.pdf")
 
 {% endhighlight %}
