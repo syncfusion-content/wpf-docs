@@ -49,3 +49,34 @@ pdfviewer1.GotoPage(2)
 
 {% endhighlight %}
 {% endtabs %}
+
+## Navigate to the horizontal and vertical offset
+You can now scroll to the given horizontal and vertical offset of the PDF document programmatically using the ScrollTo method of PdfViewerControl. Refer to the following code to scroll the PDF document to the horizontal and vertical offset of 160 and 400 respectively.
+
+{% tabs %}
+{% highlight C# %}
+
+//Initialize PDF Viewer.
+PdfViewerControl pdfViewer1 = new PdfViewerControl();
+
+//Load the PDF.
+pdfViewer1.Load("Sample.pdf");
+
+//Navigate to the horizontal and vertical offset of 160 and 400 respectively
+pdfViewer1.ScrollTo (160, 400);
+
+{% endhighlight %}
+
+{% highlight vbnet %}
+
+'Initialize PDF Viewer.
+Private pdfViewer1 As New PdfViewerControl()
+
+'Load the PDF.
+pdfViewer1.Load("Sample.pdf")
+
+'Navigate to the horizontal and vertical offset of 160 and 400 respectively
+pdfViewer1.ScrollTo (160, 400)
+
+{% endhighlight %}
+{% endtabs %}
