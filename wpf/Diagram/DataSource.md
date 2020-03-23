@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in WPF Diagram (SfDiagram)
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 
