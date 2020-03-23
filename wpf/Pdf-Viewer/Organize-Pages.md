@@ -201,7 +201,7 @@ End Sub
 {% endtabs %}
 
 ## Get the selected page indexes
-You can get the selected page indexes of the PDF document in the organizing pages window. The `PageSelected` event indicates that a page(s) is selected and the `SelectedPages` property of the `PageSelectedEventArgs` provides you the index of the pages that are currently selected. The following code shows how to wire the event in PdfViewerControl.
+You can get the selected page indexes of the PDF document in the organizing pages window. The `PageSelected` event indicates that a page(s) is selected and the `SelectedPages` property of the `PageSelectedEventArgs` provides you the index of the pages that are currently selected. The following code shows how to wire the event in `PdfViewerControl`.
 
 {% tabs %}
 {% highlight c# %}
