@@ -51,6 +51,35 @@ pdfDocumentView.GoToBookmark(bookmark(0))
 {% endhighlight %}
 {% endtabs %}
 
+You can also perform the same in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) using the [GotoBookmark(PdfBookmark)](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~GoToBookmark.html) method. Refer to the following code sample.
+
+{% tabs %}
+{% highlight c# %}
+
+//Loads the PDF document in PdfLoadedDocument
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(documentStream);
+
+//Retrieves the bookmark collection from the loaded PDF document
+PdfBookmarkBase bookmark = loadedDocument.Bookmarks;
+
+//Navigate to the specified bookmark destination offset
+pdfViewerControl.GoToBookmark(bookmark[0]);
+
+{% endhighlight %}
+{% highlight VB %}
+
+Loads the PDF document in PdfLoadedDocument
+Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument(documentStream)
+
+`Retrieves the bookmark collection from the loaded PDF document
+Dim bookmark As PdfBookmarkBase = loadedDocument.Bookmarks
+
+`Navigate to the specified bookmark destination offset
+pdfViewerControl.GoToBookmark(bookmark(0))
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Enabling and disabling bookmark feature
 
 You can enable and disable the bookmark button from the built-in toolbar using the `IsBookmarkEnabled` property available in `PdfViewerControl`.
