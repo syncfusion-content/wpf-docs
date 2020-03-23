@@ -353,6 +353,10 @@ N> Download demo application from [GitHub](https://github.com/SyncfusionExamples
 
 [How to programmatically invert selection](https://www.syncfusion.com/kb/11195)
 
+[How to exclude header while copying](https://www.syncfusion.com/kb/11194)
+
+[How to invoke CommitCellInfo event](https://www.syncfusion.com/kb/11193)
+
 [How to change the selected cell border color](https://www.syncfusion.com/kb/11223)
 
 [How to highlighted selected cells with border color for each cell](https://www.syncfusion.com/kb/11222)
