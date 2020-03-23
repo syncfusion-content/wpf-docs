@@ -200,6 +200,24 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Get the selected page indexes
+You can get the selected page indexes of the PDF document in the organizing pages window. The `PageSelected` event indicates that a page(s) is selected and the `SelectedPages` property of the `PageSelectedEventArgs` provides you the index of the pages that are currently selected. The following code shows how to wire the event in PdfViewerControl.
+
+{% tabs %}
+{% highlight c# %}
+
+// Hook the page selected event.  
+pdfViewer.PageSelected += PdfViewer_PageSelected;  
+private void PdfViewer_PageSelected(object sender, PageSelectedEventArgs e)  
+{  
+	// Get the selected pages. 
+	if (e.SelectedPages.Length != 0) 
+		selectedPages = e.SelectedPages; 
+}  
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Disabling page organizer
 
 You can remove the page organizer icon from left pane of the ‘PdfViewerControl’ by setting the ‘PageOrganizerSettings.IsIconVisible’ property to false. 
