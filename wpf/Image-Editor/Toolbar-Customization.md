@@ -114,3 +114,81 @@ This event occurs when an item in the toolbar is selected. `ToolbarItemSelectedE
 We can Browse images in a local folder and load them in the Image Editor using toolbar item browse icon. 
 
 ![Image picker support in WPF](Images/ImagePicker.png) 
+
+## Commands
+
+Invoke commands from the custom toolbar to customize toolbar items of the image editor. Must set the `CommandTarget` while use the Command.
+
+<table>
+<tr>
+<td>
+Command<br/><br/></td><td>
+Description<br/><br/></td></tr>
+<tr>
+<td>
+BrowseImage<br/><br/></td><td>
+Browsing the local folder any image can be loaded directly in the Image Editor.<br/><br/></td></tr>
+<tr>
+<td>
+Save<br/><br/></td><td>
+Saves the edited image.<br/><br/></td></tr>
+<tr>
+<td>
+Undo<br/><br/></td><td>
+Reverses the last performed action..<br/><br/></td></tr>
+<tr>
+<td>
+Redo<br/><br/></td><td>
+Restores the actions carried out by Undo..<br/><br/></td></tr>
+<tr>
+<td>
+Reset<br/><br/></td><td>
+Resets the transforms applied on the image.<br/><br/></td></tr>
+<tr>
+<td>
+ResetZoom<br/><br/></td><td>
+Resets the zooming applied to the image.<br/><br/></td></tr>
+<tr>
+<td>
+IncreaseZoom<br/><br/></td><td>
+Used to increase the edited image zoom level.<br/><br/></td></tr>
+<tr>
+<td>
+DecreaseZoom<br/><br/></td><td>
+Used to decrease the edited image zoom level.<br/><br/></td></tr>
+<tr>
+<td>
+Select<br/><br/></td><td>
+Opens the find and replace window with the selected quick find tab.<br/><br/></td></tr>
+<tr>
+<td>
+Pan<br/><br/></td><td>
+Finds all the occurrences of the specified text.<br/><br/></td></tr>
+<tr>
+<td>
+</table>
+
+This can be done as in the below code snippet.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <editor:SfImageEditor Grid.Column="0" x:Name="imageEditor" ImageSource="Assets\RoadView.jpeg">
+            <editor:SfImageEditor.ToolbarSettings>
+                <editor:ToolbarSettings IsToolbarVisiblity="False"></editor:ToolbarSettings>
+            </editor:SfImageEditor.ToolbarSettings>
+        </editor:SfImageEditor>
+		
+          <Button  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="White"
+                    Width="Auto" CommandTarget="{Binding ElementName=imageEditor}"
+                    Content="Save" Command="{x:Static editor:ImageEditorCommands.Save}"></Button>
+    </Grid>
+{% endhighlight %}
+
+![Custom Item](Images/ToolbarCustomization.png) 
