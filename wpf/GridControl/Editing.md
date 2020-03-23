@@ -514,5 +514,11 @@ Undo()</td><td>
 void</td></tr>
 </table>
 
-N> Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Excel%20Like%20Features/Undo%20Redo)
+N> [View sample in GitHub](https://github.com/syncfusion/wpf-demos/tree/master/GridControl/Excel%20Like%20Features/Undo%20Redo)
 
+
+## See also
+
+[How to exclude header while copying](https://www.syncfusion.com/kb/11194)
+
+[How to invoke CommitCellInfo event](https://www.syncfusion.com/kb/11193)
