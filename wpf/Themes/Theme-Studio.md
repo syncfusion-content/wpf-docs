@@ -1,214 +1,146 @@
 ---
 layout: post
-title: Overview and complete guide to WPF Theme Studio | Syncfusion
-description: Desktop-based, intuitive UI customization tool for easy customization of skins and themes for the Syncfusion control suite
-platform: wpf
-control: Themes
+title: Getting Started| ThemeStudio | WPF | Syncfusion
+description: Getting Started ThemeStudio
+platform: WPF
+control: ThemeStudio
 documentation: ug
 ---
 
 # Overview
 
-The Theme Studio is a desktop-based, intuitive UI customization tool for easy customization of skins and themes for the Syncfusion control suite.
+Theme Studio for WPF can be used to create and apply new theme for Syncfusion controls from an existing theme. The primary goal here is to deliver an appearance rich Syncfusion controls that suits bests for every user application, based on their needs. 
 
-It comprises of many features such as predefined themes, Import and Export option to facilitate your process of getting custom skins for matching your visual representation of app.
+## Customizing theme color from theme studio
 
-![Shows the WPF theme studio Main window](ThemeStudio_images/ThemeStudio_img1.png)
+In theme studio utility, each theme has a unique common variable list. When user change the common variable color code value, it will reflect in all the Syncfusion WPFcontrols. All Syncfusion WPF control styles are derived from these theme-based common variables. This common variable list is handled inside the theme studio application for customizing theme-based colors. 
 
-## Applying predefined themes in Theme Studio
+Let us now see the step-by-step procedure to launch and work with the theme studio utility below.
 
-To apply predefined themes, we need to choose the needed themes from Themes List available in drop down near `Personalize` Heading. 
+
+**Step 1:**
+
+On installing the "Syncfusion WPF" suite, lunch and select "Theme Studio" from the start-up panel.
+
+![Theme Studio for WPF](ThemeStudio_images/ThemeStudio_img25.png)
+
+
+**Step 2:**
+
+The theme studio application form has been divided into two sections: the controls preview section on the right, and the theme customization section on the left.
+
+![Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Built-in-Dark.png)
+
+**Step 3:**
+
+To apply predefined themes, we need to choose the needed themes from Themes List available in ComboBox in the TopLeft Corner. 
 
 The following list of predefined themes are currently provided in theme studio,
+* Material Light
+* Material Dark
+* Material Light Blue
+* Material Dark Blue
+* Default
 
-* Metro
-* Blend
-* Office2010Blue
-* Office2010Black
-* Office2010Silver
-* Office2013White
-* Office2013LightGray
-* Office2013DarkGray
-* VisualStudio2013
-* Lime
-* Saffron
-* Office365
-* Office2016Colorful
-* Office2016White
-* Office2016DarkGray
-* VisualStudio2015
+![Shows the List of Themes in ThemeStudio](ThemeStudio_images/ThemeStudio-Selection-Dark.png)
 
-![Shows the list of themes in ThemeStudio](ThemeStudio_images/ThemeStudio_img2.png)
+**Step 4:**
 
+Click the color pickers in the theme customization section to select the desired color.
 
-## Applying customized skin in Theme Studio
+![Choose color in Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Color-Selection.png)
 
-We are currently providing 7 set of categories to customize the control colors. Each category containing different collection of color properties.
 
-![Shows the default colors option of the control](ThemeStudio_images/ThemeStudio_img3.png)
+**Step 5:**
 
+The Syncfusion WPF controls will be rendered with the newly selected colors in the preview section, after selecting the desired color. 
 
-![Shows the header colors option of the control](ThemeStudio_images/ThemeStudio_img4.png)
+![Color reflected in controls loaded inside Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Color-Selection-Change.png)
 
 
-![Shows the hover colors option of the control](ThemeStudio_images/ThemeStudio_img5.png)
+## Export the customized theme
+ 
+You can export the custom theme after changing the theme colors.
 
 
-![Shows the active colors option of the control](ThemeStudio_images/ThemeStudio_img6.png)
+**Step 1:**
 
+Click the Export button in the top right corner below the exit of the theme studio application. 
 
-![Shows the content colors of the control](ThemeStudio_images/ThemeStudio_img7.png)
+![Export option in Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Export-Dark.png)
 
 
-![Shows the range colors of the control](ThemeStudio_images/ThemeStudio_img8.png)
+**Step 2:**
 
+Now the export dialog appears with an option to select either entire controls or just the desired control(s). This option is useful when you have integrated a selective list of Syncfusion WPF controls in your application. The theme studio will filter only the selected controls and customize the final output for those controls alone thereby reducing the final output assembly size. 
 
-![Shows the ticks colors of the control](ThemeStudio_images/ThemeStudio_img9.png)
+![Export dialog in Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Export-Dialog-Dark.png)
+**Step 3:**
 
+The download theme will come as an assembly (*.dll) file that contains color codes for the selected Syncfusion WPF controls. 
 
-The hexadecimal color code can be given as input in Text area and press enter to apply the custom skin color.
+![Export Theme assembly from Theme Studio for WPF](ThemeStudio_images/Theme-Assembly-Theme-studio.png)
 
-![Shows the hexadecimal color code input box](ThemeStudio_images/ThemeStudio_img10.png)
 
-To select desired color, click the colored button to display a popup with solid color palettes, gradient check box and Advance option.
+N> You can enter the assembly name of your own choice while exporting. But remember that the assembly (*.dll) name will be custom theme name, when you refer it in your WPF application. 
 
-![Shows the popup with solid color palettes](ThemeStudio_images/ThemeStudio_img11.png)
 
-Color Palette 
-{:.caption}
+## Using customized theme in a WPF application
 
+You can now add the exported assembly in your WPF application and set the custom theme to the appropriate controls. In this illustration, we are going to witness the custom theme set for SfDataGrid. 
 
-* `Solid Color Palettes`: Provides set of color palettes with 8 variants.
-* `Advance Option`: To choose wide range of colors, click Advance button option.
+**Step 1:**
 
-![Shows the advance color range window](ThemeStudio_images/ThemeStudio_img12.png)
+Attach the exported assembly (*.dll) in your Windows Forms project.
 
-Advance Color Picker 
-{:.caption}
+![Export dialog in Theme Studio for WPF](ThemeStudio_images/Export-dialog-theme-studio.png)
 
-* `Gradient Check Box`: To choose gradient colors, select the “Gradient” check box to display a popup with 24 gradient palettes.
+**Step 2:**
 
-![Shows the popup with 24 gradient palettes](ThemeStudio_images/ThemeStudio_img13.png)
+Load the Theme assembly in Program.cs of your application and the initialize a SfDataGrid control in the main form and set it’s "ThemeName" property exactly to the assembly name.
 
-Gradient Palette 
-{:.caption}
+{% tabs %}
+{% highlight c# %}
 
-N> Gradient Support has been provided only for Background color properties residing in Default, Header, Hover and Active categories.
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey());
+            SkinManager.LoadAssembly(typeof(VioletTheme).Assembly);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+    }
+	
+sfDataGrid1.ThemeName = "VioletTheme";
+	
+{% endhighlight %}
+{% highlight vb %}
 
-## Exporting Custom theme from Theme Studio
+Module Program
+    <STAThread>
+    Private Sub Main()
+        Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey())
+        SkinManager.LoadAssembly(GetType(VioletTheme).Assembly)
+        Application.EnableVisualStyles()
+        Application.SetCompatibleTextRenderingDefault(False)
+        Application.Run(New Form1())
+    End Sub
+End Module
 
-To export custom theme, click `Export` button to display a popup containing option to select the controls to be exported. 
+sfDataGrid1.ThemeName = "VioletTheme"
 
-Select the control by checking the desired control’s check box or check `Select All` option in the popup to select all the controls. 
+{% endhighlight %}
+{% endtabs %}
 
-Click the `Export` button once selected the desired controls and provide a name for the customized theme. 
+**Step 3:**
 
-![Shows the Control list while export](ThemeStudio_images/ThemeStudio_img16.png)
+Compile and run the WPF application and you can now witness the custom theme applied to SfDataGrid control at run-time. 
 
-
-N> To obtain the customized themes for multiple controls in a single XAML file, check the `Merge and Export` option before clicking `Export` button.
-
-The color values for customized theme will be saved in `*.wpft` format file. Along with `*.wpft` file, two folders `Framework Controls` and `Syncfusion Controls` are also generated.
-
-* `Framework Controls`: This folder contains the resource dictionary XAML files of Framework controls.
-
-* `Syncfusion Controls`: This folder contains the resource dictionary XAML files of selected Syncfusion controls.
-
-![Shows the exported folders](ThemeStudio_images/ThemeStudio_img17.png)
-
-Output Folder 
-{:.caption}
-
-## Importing Custom theme to Theme Studio
-
-To import custom theme, click `Import` button for choosing `*.wpft` file containing customized skin color values. After importing, we can visualize the loaded custom skin color applied to controls.
-
-![Shows the customizedTheme file.](ThemeStudio_images/ThemeStudio_img18.png)
-
-## Applying generated resource XAML in application
-
-To [export](#exporting-custom-theme-from-theme-studio) the customized skin, click the `Export` button. The exported custom skin contains resource dictionary XAML files of Syncfusion controls and Framework Controls.
-
-### Adding the XAML files to WPF Application
-
-* Open Visual Studio 20xx and create a WPF project.
-
-* Add the necessary dll's for the controls used.
-
-    For example, add SfRadialMenu Control to the application. The `SfRadialMenu` control requires `Syncfusion.SfRadialMenu.WPF` assembly and dependency assembly `Syncfusion.SfShared.WPF`.
-
-* The exported XAML file of controls can be obtained from the Output folder as described in the [export](#exporting-custom-theme-from-theme-studio) topic.
-
-* To add the exported file from Output folder to application, right click on application and click the add existing item. Now, browse the Output folder.
-
-    ![Shows the window for add the item to application](ThemeStudio_images/ThemeStudio_img21.jpg)
-
-* The Output folder contains `Syncfusion Controls`  folder and `Framework Controls` folder. 
-
-    ![Shows the exported folders and file](ThemeStudio_images/ThemeStudio_img19.png)
-
-* From `Syncfusion Controls` folder, browse the required XAML file and add to the project. Confirm the file filter selection has All files or Xaml file.
-
-    ![Shows the exported xaml file of the control](ThemeStudio_images/ThemeStudio_img20.png)
-
-* Now, the exported XAML file added to the project.
-
-    ![Shows the added xaml file in application](ThemeStudio_images/ThemeStudio_img14.png)
-
-* Now, initialize the SfRadialMenu control in the `MainWindow.xaml` as below:
-
-    {% tabs %}
-
-    {% highlight xaml %}
-
-    <syncfusion:SfRadialMenu x:Name="RadialMenu">
-        <syncfusion:SfRadialMenuItem Header="Cut">
-            <syncfusion:SfRadialMenuItem Header="Cut"/>
-        </syncfusion:SfRadialMenuItem>
-        <syncfusion:SfRadialMenuItem Header="Copy">
-            <syncfusion:SfRadialMenuItem Header="Copy"/>
-        </syncfusion:SfRadialMenuItem>
-        <syncfusion:SfRadialMenuItem Header="Paste">
-            <syncfusion:SfRadialMenuItem Header="Paste"/>
-        </syncfusion:SfRadialMenuItem>
-    </syncfusion:SfRadialMenu>
-
-    {% endhighlight %}
-
-    {% endtabs %}
-
-* Merge the `SfRadialMenu.xaml` in the application resources using `MergedDictionaries`.
-
-    {% tabs %}
-
-    {% highlight xaml %}
-
-    <Application.Resources> 
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="SfRadialMenu.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Application.Resources>
-
-    {% endhighlight %}
-
-    {% endtabs %}
-
-* Run the sample and the below output will be obtained:
-
-    ![Shows the output of the Control with applied theme](ThemeStudio_images/ThemeStudio_img15.png)
-
-* To apply this theme to MS control, get the MS control.xaml file from `Framework Controls` folder. 
-
-    ![Shows the MS Control xaml file in Framework folder](ThemeStudio_images/ThemeStudio_img22.jpg)
-
-* Do the above steps, to add this file to the project. 
-
-* Now, initialize the any MS control in the `MainWindow.xaml`
-
-* Here, custom theme applied for MS ComboBox.
-
-    ![Shows the output of the Microsoft ComboBox with applied theme](ThemeStudio_images/ThemeStudio_img23.jpg)
-
-
+![Theme applied in SfDataGrid](ThemeStudio_images/Theme-applied-SfDataGrid.png)
