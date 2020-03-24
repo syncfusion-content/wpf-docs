@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Download Syncfusion WPF components
-description: how to download the trial or licensed version of Syncfusion WPF components
+description: This section provides information about how to download the trial or licensed version of Syncfusion WPF components
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Download Installer
+# Download Essential Studio WPF
 
 You can download either Trial or Licensed version of WPF installer. 
 
