@@ -22,7 +22,7 @@ Let us now see the step-by-step procedure to launch and work with the theme stud
 
 On installing the "Syncfusion WPF" suite, lunch and select "Theme Studio" from the start-up panel.
 
-![Theme Studio for WPF](ThemeStudio_images/ThemeStudio_img25.png)
+![Theme Studio for WPF](ThemeStudio_images/Built-ThemeStudio.png)
 
 
 **Step 2:**
@@ -42,7 +42,7 @@ The following list of predefined themes are currently provided in theme studio,
 * Material Dark Blue
 * Default
 
-![Shows the List of Themes in ThemeStudio](ThemeStudio_images/ThemeStudio-Selection-Dark.png)
+![Shows the List of Themes in ThemeStudio](ThemeStudio_images/Themes-Selection-Dark.png)
 
 **Step 4:**
 
@@ -77,67 +77,45 @@ Now the export dialog appears with an option to select either entire controls or
 ![Export dialog in Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Export-Dialog-Dark.png)
 **Step 3:**
 
-The download theme will come as an assembly (*.dll) file that contains color codes for the selected Syncfusion WPF controls. 
+You can select the required folder to be selected for Theme Export. The download theme will come as an assembly (*.dll) file that contains color codes for the selected Syncfusion WPF controls. 
 
-![Export Theme assembly from Theme Studio for WPF](ThemeStudio_images/Theme-Assembly-Theme-studio.png)
-
-
-N> You can enter the assembly name of your own choice while exporting. But remember that the assembly (*.dll) name will be custom theme name, when you refer it in your WPF application. 
+![Export Theme assembly from Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Browse-Export.png)
 
 
-## Using customized theme in a WPF application
+ You can enter the assembly name of your own choice while exporting. But remember that the assembly (*.dll) name will be custom theme name, when you refer it in your WPF application. 
 
-You can now add the exported assembly in your WPF application and set the custom theme to the appropriate controls. In this illustration, we are going to witness the custom theme set for SfDataGrid. 
 
-**Step 1:**
+## Add customized theme in a WPF application
+**Add Themes as a Project**
 
-Attach the exported assembly (*.dll) in your Windows Forms project.
+`SfSkinManager` control helps to apply the built-in themes to the Syncfusion UI controls for WPF. You can select it export theme folder that were atated above and add them as a project to the WPF Application.  To apply Visual Studio style, use “Syncfusion.Themes.MaterialDark.WPF_2013.csproj”. 
 
-![Export dialog in Theme Studio for WPF](ThemeStudio_images/Export-dialog-theme-studio.png)
 
-**Step 2:**
 
-Load the Theme assembly in Program.cs of your application and the initialize a SfDataGrid control in the main form and set it’s "ThemeName" property exactly to the assembly name.
+**Add SfSkinManager to the WPF Application**
+
+ There are several ways to add `SfSkinManager` in to Visual Studio WPF project.
+The following steps help to add through XAML Code
+
+1) Create a WPF project in Visual Studio and refer to the SfSkinManager assembly (Syncfusion.SfSkinManager.Wpf)
+2) Include an XML namespace for the assembly to the Main window.
 
 {% tabs %}
-{% highlight c# %}
 
-    static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey());
-            SkinManager.LoadAssembly(typeof(VioletTheme).Assembly);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
-    }
-	
-sfDataGrid1.ThemeName = "VioletTheme";
-	
-{% endhighlight %}
-{% highlight vb %}
+{% highlight XAML %}
 
-Module Program
-    <STAThread>
-    Private Sub Main()
-        Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(DemoCommon.FindLicenseKey())
-        SkinManager.LoadAssembly(GetType(VioletTheme).Assembly)
-        Application.EnableVisualStyles()
-        Application.SetCompatibleTextRenderingDefault(False)
-        Application.Run(New Form1())
-    End Sub
-End Module
-
-sfDataGrid1.ThemeName = "VioletTheme"
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusionskin ="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />
 
 {% endhighlight %}
+
 {% endtabs %}
+
+**Step2**
+
 
 **Step 3:**
 
