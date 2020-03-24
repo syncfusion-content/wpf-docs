@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  Organize Pages using PDF Viewer WPF | Syncfusion
-description: Rotate, delete and reorder pages of the PDF Document using Syncfusion PDF Viewer WPF.
+description: Rotate, rearrange, and delete pages in a PDF file using a miniature preview of the PDF pages with PDF Viewer WPF.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Organize pages
+# Organize pages in WPF Pdf Viewer
 
 Organize pages support allows you to rotate, rearrange, and delete pages from a PDF document using a miniature preview of the PDF pages.
 
@@ -196,6 +196,25 @@ Private Sub button1_Click(sender As Object, e As RoutedEventArgs)
     'Gets rotation angle of page with index 0 
     Dim rotatedAngle As PdfPageRotateAngle = pdfviewer.PageOrganizer.GetPageRotation(0)
 End Sub
+
+{% endhighlight %}
+{% endtabs %}
+
+## Get the selected page indexes
+
+You can get the selected page indexes of the PDF document in the organizing pages window. The [PageSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PageSelected_EV.html) event indicates that a page(s) is selected and the [SelectedPages](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PageSelectedEventArgs~SelectedPages.html) property of the [PageSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PageSelectedEventArgs.html) provides you the index of the pages that are currently selected. The following code shows how to wire the event in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
+
+{% tabs %}
+{% highlight c# %}
+
+// Hook the page selected event.  
+pdfViewer.PageSelected += PdfViewer_PageSelected;  
+private void PdfViewer_PageSelected(object sender, PageSelectedEventArgs e)  
+{  
+	// Get the selected pages. 
+	if (e.SelectedPages.Length != 0) 
+		selectedPages = e.SelectedPages; 
+}  
 
 {% endhighlight %}
 {% endtabs %}
