@@ -111,7 +111,7 @@ This event occurs when an item in the toolbar is selected. `ToolbarItemSelectedE
 
 ## Image picker support
 
-You can Browse images in a local folder and load them in the Image Editor using the toolbar item browse icon. 
+You can browse images in a local folder and load them in the Image Editor using the toolbar item browse icon. 
 
 ![Image picker support in WPF](Images/ImagePicker.png) 
 
