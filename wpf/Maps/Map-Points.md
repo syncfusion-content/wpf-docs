@@ -9,7 +9,7 @@ documentation: ug
 
 # Map Points support in SfMap
 
-Points are one of the record type in shape file layer. Points are used to specify the specific point in the map. For example used to specify the capital of countries. Points in the shape file given as latitude and longitude coordinates in the shapes file. Those points should be converted as map points.
+Points are one of the record type in shape file layer. Points are used to specify the specific point in the map. For example, used to specify the capital of countries. Points in the shape file is given as latitude and longitude coordinates in the shapes file. Those points should be converted as MapPoints.
 
 ## Customizing the MapPoint
 
@@ -57,7 +57,7 @@ MapPointTemplate is a DataTemplate type, used to customize or override the defau
 
 ## MapPointIcon
 
-MapPointIcon is used for Customizing points shapes.It can be customized by following shapes
+MapPointIcon is used for customizing points shapes.It can be customized by following shapes:
 
 * Rectangle
 
@@ -88,11 +88,11 @@ MapPointIcon is used for Customizing points shapes.It can be customized by follo
 
 ## MapPointPopup
 
-MapPointPopup is a popup, displayed when the point is moved on MapPoint. It shows additional information from the object bounded with the MapPoint. You can get the object from dbf file.
+MapPointPopup is a popup, displayed when the point is moved to MapPoint. It shows additional information from the object bounded with the MapPoint. You can get the object from dbf file.
 
 ### MapPointPopupTemplate
 
-MapPointPopupTemplate is a DataTemplate used to expose the template for the MapPoint. 
+MapPointPopupTemplate is a DataTemplate, used to expose the template for the MapPoint. 
 
 {% highlight xaml %}
 
@@ -238,9 +238,9 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 ![Map Points and popup image in WPF SfMap](Map-Points_images/Map_Points_Popup_image.png)
 
-## Convert Geo-coordinate point for ShapeFileLayer and ImageryLayer
+## Convert a Geo-coordinate point for ShapeFileLayer and ImageryLayer
 
-We can Convert a Geo-coordinate point to a screen point and  screen point to Geo-coordinate using `GeopointToViewPoint` method and `GetLatLonFromPoint`.
+You can convert a Geo-coordinate point to a screen point and  screen point to Geo-coordinate using the `GeopointToViewPoint` method and `GetLatLonFromPoint`.
 
 {% tabs %}
 
