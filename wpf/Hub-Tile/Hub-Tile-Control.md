@@ -13,12 +13,13 @@ documentation: ug
 
 ## Setting Header content
 
-Header is used to display the contents at the bottom of the tile. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+Header is a name given to the tile that describes the functionality of the tile. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+The below example defines a tile that represents mail application.
 
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile"/>
+<syncfusion:SfHubTile x:Name="hubTile" Header="Mail"/>
 <!--setting header as an image-->
 <syncfusion:SfHubTile x:Name="hubTile">
    <syncfusion:SfHubTile.Header>
@@ -28,7 +29,7 @@ Header is used to display the contents at the bottom of the tile. The  content o
 <!--setting header as a control-->
 <syncfusion:SfHubTile x:Name="hubTile" Width="200">
    <syncfusion:SfHubTile.Header>
-        <TextBox Text="SYNCFUSION" />
+          <TextBlock Text="SYNCFUSION" Foreground="White" FontSize="13"/>
         </syncfusion:SfHubTile.Header>
   </syncfusion:SfHubTile>      
 {% endhighlight %}
@@ -36,12 +37,12 @@ Header is used to display the contents at the bottom of the tile. The  content o
 
 	//Setting header on HubTile
 	SfHubTile hubTile = new SfHubTile();
-	hubTile.Header = "HubTile";
+	hubTile.Header = "Mail";
 
 {% endhighlight %}
 {% endtabs %}
 
-![wpf tile header](Getting-Started_images/wpf-tile-setting-header-hubtile.png)
+![wpf tile header](Getting-Started_images/wpf-hubtile-header.png)
 
 ![wpf hubtile header as image](Getting-Started_images/wpf-hubtile-header-image.png)
 
@@ -49,12 +50,12 @@ Header is used to display the contents at the bottom of the tile. The  content o
 
 ## Setting Title content 
 
- Title is used to display the contents at the top of the tile. The content can be an image, a text or a control, etc. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
+ Title is used to display the notifications and updates in the tile. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
 
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Title="This is title area in hubtile."/>
+<syncfusion:SfHubTile x:Name="hubTile" Title="New mail from Syncfusion"/>
 <!--setting title as  an image-->
 <syncfusion:SfHubTile x:Name="hubTile">
    <syncfusion:SfHubTile.Title>
@@ -570,7 +571,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
 ### Animations
 
-The tile press animation causes the entire tile to be zoomed in/out at speicfied interval. You can set tile press animation by setting properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html)  and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) in the HubTile. The ScaleDepth is used to customize the depth of scaling effect while pressing the center of the tile. The TilePressDuration is used to determine the time taken for the single tile press animation.
+The tile press animation causes the entire tile to be zoomed in/out at specified interval. You can set tile press animation by setting properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html)  and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) in the HubTile. The ScaleDepth is used to customize the depth of scaling effect while pressing the center of the tile. The TilePressDuration is used to determine the time taken for the single tile press animation.
 
    {% tabs %}
    {% highlight XAML %}
@@ -627,8 +628,7 @@ HeaderStyle is used to customize the header of the tile by setting the required 
           <ColumnDefinition Width="Auto"/>
            <ColumnDefinition/>
          </Grid.ColumnDefinitions>
-          <Label>Header</Label>
-          <TextBox Text="Displays header" TextWrapping="Wrap" Grid.Column="1" TextAlignment="Right" Background="LightBlue"/>
+           <Image Source="D:/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>          <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />
         </Grid>
         </DataTemplate>
    </syncfusion:SfHubTile.HeaderTemplate>-->
@@ -636,7 +636,6 @@ HeaderStyle is used to customize the header of the tile by setting the required 
 {% endtabs %}
 
 ![wpf hubtile header template](Getting-Started_images/wpf-hubtile-header-template.png)
-
 ### Customizing Title
 
  Title of the tile is customized by setting [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TitleStyle.html) property as below.
@@ -658,8 +657,8 @@ HeaderStyle is used to customize the header of the tile by setting the required 
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-                <TextBlock Text="Title" />
-                <TextBox Text="This is title area." Height="20"  VerticalAlignment="Top" Background="LightBlue" Grid.Column="1" TextAlignment="Right" Width="156"/>
+         <Image Source="D:/syncfusion.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None"/>
+         <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />                                </Grid>
             </Grid>
             </DataTemplate>
         </Setter.Value>
