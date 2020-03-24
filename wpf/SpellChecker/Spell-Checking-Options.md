@@ -7,7 +7,7 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Spell Check
+# Spell Check using the SfSpellChecker
 
 The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of email id’s and addresses, HTML tags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
 
@@ -265,4 +265,4 @@ public class TextSpellEditor : IEditorProperties {
 
 ![SpellChecker restrict the speck check completed notification message box](gettingstarted-images/SpellCheckCompletedEventArgs_ShowMessageBox.png)
 
-Click [here](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/SfSpellChecker) to downlaod the sample that showcases the speck check completed notification restriction.
+Click [here](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/SfSpellChecker) to download the sample that showcases the speck check completed notification restriction.
