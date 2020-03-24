@@ -9,14 +9,14 @@ documentation: ug
 
 #Annotations support in SfCircular Gauge
 
-SfCircularGauge supports annotations, which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using `Annotations` property.
+SfCircularGauge supports annotations, which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images can also be added by using `Annotations` property.
 
-## Setting view annotation
+## Setting a view annotation
 
-When the annotation allows you to place custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the Annotations:
+When the annotation allows you to place the custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the Annotations:
 
-* `Angle` : Used to place the View at the given Angle.
-* `Offset` : Used to move the View from the center to edge of the circular gauge. The value should be range from 0 to 1.
+* `Angle` : Used to place the view at the given angle.
+* `Offset` : Used to move the view from the center to edge of the circular gauge. The value should be ranges from 0 to 1.
 
 The following code is used to create the Annotations.
 
