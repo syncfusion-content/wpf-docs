@@ -11,14 +11,14 @@ documentation: ug
 
 Image can be saved along with the changes. An image can be saved in the following two ways:
 
-* Saving image using toolbar
-* Saving image programmatically
+* Saving an image using the toolbar.
+* Saving an image programmatically.
 
-## Saving image using toolbar
+## Saving an image using the toolbar
 
 To save an image, click the save icon in the toolbar. You can choose the desired location from the save file dialog to save the edited image.
 
-## Saving image programmatically
+## Saving an image programmatically
 
 An image can be saved programmatically using the Save method in image editor as follows. The save method takes the following three parameters:
 
@@ -68,7 +68,7 @@ editor.Save(null, default(Size), @"E:\Images\");
 
 ### Image format
 
-You can specify the format in which image has to be saved as the parameter in Save method as follows.
+You can specify the format, in which image has to be saved as the parameter in Save method as follows.
 
 {% tabs %} 
 
@@ -96,7 +96,7 @@ editor.Reset();
 
 ## Events
 
-### Saving events
+### Saving an events
 
 Image editor has the following two events:
 
