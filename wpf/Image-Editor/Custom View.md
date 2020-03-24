@@ -8,11 +8,11 @@ documentation: ug
 ---
 # CustomView in SfImageEditor
 
-This feature allows you to add a custom view in the Image Editor and provide different customization options. 
+This feature allows you to add a custom view in the Image Editor and provide the different customization options. 
 
-## Add custom view on image editor
+## Add a custom view on image editor
 
-You can add any custom shapes or views to an image using the `AddCustomView` method in the image editor control. To add a custom view, specify the view and its desired `CustomViewSettings` as shown in the following code snippet.
+You can add any custom shapes or views to an image using the `AddCustomView` method in the Image Editor control. To add a custom view, specify the view and its desired `CustomViewSettings` as shown in the following code snippet.
 
 {% tabs %} 
 
@@ -48,17 +48,17 @@ You can add any custom shapes or views to an image using the `AddCustomView` met
 
 ## Customize the custom view
 
-The CustomViewSettings is defined to set the values for `CanMaintainAspectRatio` , `Bounds` and `Angle` .
+The CustomViewSettings is defined to set the values for `CanMaintainAspectRatio` , `Bounds`, and `Angle` .
 
-* `CanMaintainAspectRatio` property is used to decide whether the aspect ratio value needs to be maintained when resizing the custom view.
+* `CanMaintainAspectRatio` property is used to decide, whether the aspect ratio value needs to be maintained when resizing the custom view.
 
 * `Bounds` property is used to set the bounds of the custom view. Using this property, you can position the custom view wherever you want on the image. In percentage, the value should fall between 0 and 100.
 
 * `Angle` property is used to set the angle of the custom view. Using this property, you can rotate the custom view at desired angle.
 
-* `IsResizable` property is indicating whether to resize the custom view or not. Default value of IsResizable is true.
+* `IsResizable` property is indicating, whether to resize the custom view or not. Default value of IsResizable is true.
 
-* `IsRotatable` property is indicating whether to rotate the custom view or not. Default value of IsResizable is false.
+* `IsRotatable` property is indicating, whether to rotate the custom view or not. Default value of IsResizable is false.
 
 {% highlight C# %}
 
