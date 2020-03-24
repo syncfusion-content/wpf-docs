@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Bookmark Navigation
+# Bookmark Navigation in WPF Pdf Viewer
 
 PDF Viewer control allows users to navigate to the bookmarks present in the loaded PDF document at UI level. 
 
@@ -68,7 +68,7 @@ pdfViewerControl.GoToBookmark(bookmark[0]);
 {% endhighlight %}
 {% highlight VB %}
 
-Loads the PDF document in PdfLoadedDocument
+`Loads the PDF document in PdfLoadedDocument
 Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument(documentStream)
 
 `Retrieves the bookmark collection from the loaded PDF document
