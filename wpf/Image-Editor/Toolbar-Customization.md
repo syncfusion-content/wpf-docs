@@ -33,7 +33,7 @@ editor.ToolbarSettings.IsToolbarVisibility = true;
 
 {% endtabs %} 
 
-### Add item
+### Add a item
 
 You can add additional items to the toolbar and can perform your own operation. To add an additional item, specify the toolbar item, and add it in the ToolbarItems collection as demonstrated in following code snippet. You can specify your own template using the `IconTemplate` property in `ToolbarItem`.
 
@@ -59,9 +59,9 @@ editor.ToolbarSettings.ToolbarItems.Add(new ToolbarItem() { IconTemplate = grid.
 
 ### Customization
 
-You can change the [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~Background.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~BorderColor.html) of the toolbar. Also, you can change the height of the main toolbar using the [`HeaderToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~HeaderToolbarHeight.html) property and the height of the sub toolbar can be changed using the [`SubItemToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~SubItemToolbarHeight.html) property and the footer toolbar height can be changed using the [`FooterToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~FooterToolbarHeight.html).
+You can change the [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~Background.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~BorderColor.html) of the toolbar. Also, you can change the height of the main toolbar using the [`HeaderToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~HeaderToolbarHeight.html) property, and the height of the sub toolbar can be changed using the [`SubItemToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~SubItemToolbarHeight.html) property, and the footer toolbar height can be changed using the [`FooterToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~FooterToolbarHeight.html).
 
-This can be done as in the below code snippet.
+This can be done as in the following code snippet.
 
 {% tabs %} 
 
@@ -111,13 +111,13 @@ This event occurs when an item in the toolbar is selected. `ToolbarItemSelectedE
 
 ## Image picker support
 
-We can Browse images in a local folder and load them in the Image Editor using toolbar item browse icon. 
+You can Browse images in a local folder and load them in the Image Editor using the toolbar item browse icon. 
 
 ![Image picker support in WPF](Images/ImagePicker.png) 
 
 ## Commands
 
-Invoke commands from the custom toolbar to customize toolbar items of the image editor. Must set the `CommandTarget` while use the Command.
+Invoke commands from the custom toolbar to customize toolbar items of the image editor. Must set the `CommandTarget` while using the Command.
 
 <table>
 <tr>
