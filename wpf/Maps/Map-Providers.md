@@ -13,9 +13,9 @@ SfMap control supports map providers such as OpenStreetMap that can be added to
 
 ## Open Street Map
 
-OpenStreetMap is a map of the entire world. The OpenStreetMap allows you to view, edit and use geographical data in a collaborative way from any place on the Earth.
+OpenStreetMap is a map of the entire world. The OpenStreetMap allows you to view, edit, and use geographical data in a collaborative way from any place on the Earth.
 
-### Enable OSM
+### Enable an OSM
 
 You can enable this feature by setting the layerType property value as "OSM".
 
@@ -122,13 +122,13 @@ The default appearance of the Marker can be customized by using the MarkerTempla
 
 ![Marker Template image](Map-Providers_images/Marker_Template_image.png)
 
-### Adding Multiple Layers in OSM
+### Adding a multiple layers in OSM
 
 Multiple layers can be added in the ImageryLayer itself. They have to be added in SubShapeFileLayers within the ImageryLayer.
 
 ### SubShapeFileLayers
 
-SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is also a type of shapefile layer. The following code adds multiple layers in the ImageryLayer.
+SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is also a type of shapefile layer. The following code adds the multiple layers in the ImageryLayer.
 
 {% tabs %}
 
@@ -170,7 +170,7 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 
 Bing Map is a key feature in accessing the external geospatial imagery services for deep-zoom satellite view.
 
-### Enable Bing Map 
+### Enable a Bing Map 
 
 You can enable this feature by defining the LayerType as “bing”. 
 
@@ -204,7 +204,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 
 
-The following screenshot illustrates the Aerial View
+The following screenshot illustrates the Aerial View.
 
 ![Bing map Aerial View image](Map-Providers_images/Bing_map_Aerial_View_image.jpg)
 
@@ -269,9 +269,9 @@ The following screenshot illustrates the AerialWithLabel view.
 ![Bing map Aerial With Label_View_image](Map-Providers_images/Bing_map_Aerial_With_Label_View_image.jpg)
 
 
-## Calculate zoom level
+## Calculate a zoom level
 
-This feature allows set the initial zoom level automatically in two ways.
+This feature allows you to set the initial zoom level automatically in two ways:
 
 * Distance Radius(KM/miles)
 * Geo-bounds(Northeast, Southwest)
@@ -406,13 +406,13 @@ Calculate the initial zoom level automatically based on the LatLngBounds of Imag
 
 {% endtabs %}
 
-N> When setting LatLngBounds and DistanceRadius at the same time, the priority is DistanceRadius and calculate zoom level based Radius value.
+N> When setting LatLngBounds and DistanceRadius at the same time, the priority is DistanceRadius, and calculate zoom level based on Radius value.
 
 ![WPF SfMaps zoom level changed image](Map-Providers_images/Zoom_Level.jpg)
 
 ## Calculate the map tile layer bounds
 
-Calculate imagery layer pixel bounds while zooming, panning and Geo-Coordinate value changing.
+Calculate the imagery layer pixel bounds while zooming, panning, and Geo-Coordinate value changing.
 
 {% tabs %}
 
