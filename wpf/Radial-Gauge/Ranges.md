@@ -11,7 +11,7 @@ documentation: ug
 
 Range is a visual element, which begins and ends at the specified values within a scale.
 
-## Setting start and end values for range
+## Setting a start and end values for range
 
 The start and end values of ranges are set by using the `StartValue` and `EndValue` properties.
 
@@ -75,7 +75,7 @@ The start and end values of ranges are set by using the `StartValue` and `EndVal
 
 ## Range customization
 
-A range’s UI is customized by using the `Stroke`, `StrokeThickness`, and `Offset` properties. First, set the `RangePosition` property to custom, and then set the `Offset`.
+A ranges UI is customized by using the `Stroke`, `StrokeThickness`, and `Offset` properties. First, set the `RangePosition` property to custom, and then set the `Offset`.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ A range’s UI is customized by using the `Stroke`, `StrokeThickness`, and `Offs
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img2.png)
 
-## Setting width for range
+## Setting a width for range
 
 The appearance of the circular range is customized by setting the `StartWidth` and `EndWidth` properties.
 
@@ -202,7 +202,7 @@ The appearance of the circular range is customized by setting the `StartWidth` a
 
 ## Binding range stroke
 
-You can bind the range’s stroke to the tick lines and labels within its range by setting the `BindRangeStrokeToLabels` and `BindRangeStrokeToTicks` properties to true.
+You can bind the ranges stroke to the tick lines and labels within its range by setting the `BindRangeStrokeToLabels` and `BindRangeStrokeToTicks` properties to true.
 
 {% tabs %}
 
@@ -298,7 +298,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img4.png)
 
-## Setting position for range
+## Setting a position for range
 
 The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
 
@@ -408,9 +408,9 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ### Range offset
 
-The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways
+The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
 
-1. Setting `Offset` and `StrokeThickness` properties
+1. Setting `Offset` and `StrokeThickness` properties.
 
 2. Setting `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties.
 
@@ -418,7 +418,7 @@ N>For using this feature need to set the `RangePosition` as custom in the `Rim`.
 
 #### Offset and StrokeThickness
 
-For absolute position you can use `Offset` and `StrokeThickness` properties of Range. For setting the `Offset` and `StrokeThickness` to the range.
+For absolute position, you can use `Offset` and `StrokeThickness` properties of Range. For setting the `Offset` and `StrokeThickness` to the range.
 
 {% tabs %}
 
@@ -463,7 +463,7 @@ For absolute position you can use `Offset` and `StrokeThickness` properties of R
 
 #### InnerStartOffset, InnerEndOffset, OuterStartOffset, and OuterEndOffset
 
-For relative position you can use `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of Range. 
+For relative position, you can use `InnerStartOffset`, `InnerEndOffset`, `OuterStartOffset`, and `OuterEndOffset` properties of Range. 
 
 {% tabs %}
 
@@ -485,6 +485,7 @@ For relative position you can use `InnerStartOffset`, `InnerEndOffset`, `OuterSt
 {% endhighlight %}
 
 {% highlight c# %}
+
 
             SfCircularGauge sfCircularGauge = new SfCircularGauge();
             CircularScale mainscale = new CircularScale();
@@ -509,7 +510,7 @@ For relative position you can use `InnerStartOffset`, `InnerEndOffset`, `OuterSt
 
 ![Inner,Outer Offset Image for Range](Ranges_images/Range-Inner-Outer-Offset.png)
 
-## Setting multiple ranges
+## Setting a multiple ranges
 
 In addition to the default range, you can add n number of ranges to a scale by using the `Ranges` property.
 
