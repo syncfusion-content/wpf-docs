@@ -7,19 +7,53 @@ control: SfDatePicker
 documentation: ug
 ---
 
-# SelectorItem Customization
+# SelectorItem Customization of WPF SfDatePicker
 
-## SelectorItemWidth and SelectorItemHeight
+We can change the date selector items width, height and spacing.
 
-The item size in the SfDateSelector control can be changed by setting the [SelectorItemWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemWidth.html) and [SelectorItemHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemHeight.html) properties.
+## SfDateSelector item width and height
 
+The item size in the `SfDateSelector` control can be changed by setting the [SelectorItemWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemWidth.html) and [SelectorItemHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemHeight.html) properties. The default value of the `SelectorItemWidth` and `SelectorItemHeight` properties is `80` and `70`. 
 
+{% tabs %}
+{% highlight XAML %}
 
-## SelectorItemSpacing 
+<syncfusion:SfDatePicker SelectorItemWidth="100" 
+                         SelectorItemHeight="100" 
+	                     x:Name="sfDatePicker"/>
 
-The [SelectorItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemSpacing.html) property provides the space between the items in SfDateSelector.
+{% endhighlight %}
+{% highlight c# %}
 
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.SelectorItemWidth = 100;
+sfDatePicker.SelectorItemHeight = 100;
 
+{% endhighlight %}
+{% endtabs %}
+
+![SfDateSelector item width and height changed](Customizing-DropDown_images/SelectorItemWidth.png)
+
+## SfDateSelector item spacing
+ 
+We can change the space between `SfDateSelector` date, month and year items by using the [SelectorItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemSpacing.html). The default value of the `SelectorItemSpacing` property is `4`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfDatePicker SelectorItemSpacing="50" 
+	                     x:Name="sfDatePicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.SelectorItemSpacing = 50;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfDateSelector item with custom spacing](Customizing-DropDown_images/SelectorItemSpacing.png)
 
 ## SelectorItemCount
 

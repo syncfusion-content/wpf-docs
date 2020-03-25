@@ -9,71 +9,32 @@ documentation: ug
 
 # Footer
 
-## Done and Cancel Buttons
+## Ok and Cancel buttons
 
-The done and cancel buttons can be made visible or hidden using the following properties.
+The selected date from the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) can be updated in the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property on after clicking `Ok` buttons. 
 
-## ShowDoneButton
+## Show or hide the ok and cancel button
 
-The [ShowDoneButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~ShowDoneButton.html) property is used to show or hide the done button. The default value is true.
-
-The following code sample shows how to hide the done button:
+If we want to hide the `Ok` and `Cancel` buttons, you can use the 
+[SfDateSelector.ShowDoneButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~ShowDoneButton.html) and [SfDateSelector.ShowCancelButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~ShowCancelButton.html) properties values as `false`. The default value of `SfDateSelector.ShowDoneButton` and `SfDateSelector.ShowCancelButton` properties values is `true`.
 
 {% highlight XAML %}
 
-	<syncfusion:SfDatePicker VerticalAlignment="Center"
-
-                               HorizontalAlignment="Center"
-
-                               Width="200">
-
-            <syncfusion:SfDatePicker.SelectorStyle>
-
-                <Style TargetType="syncfusion:SfDateSelector">
-
-                    <Setter Property="ShowDoneButton" Value="False"/>
-
-                </Style>
-
-            </syncfusion:SfDatePicker.SelectorStyle>  
-
-        </syncfusion:SfDatePicker>
+<syncfusion:SfDatePicker Name="sfdatePicker" 
+                         IsDropDownOpen="True"
+                         Width="200">
+    <syncfusion:SfDatePicker.SelectorStyle>
+        <Style TargetType="syncfusion:SfDateSelector">
+            <!--Ok button hided-->
+            <Setter Property="ShowDoneButton" Value="False"/>
+            <!--Cancel button hided-->
+            <Setter Property="ShowCancelButton" Value="False"/>
+        </Style>
+    </syncfusion:SfDatePicker.SelectorStyle>
+</syncfusion:SfDatePicker>
 		
 {% endhighlight %}
 
-![Show done button](Features_images/Features_img11.png)
+![SfdatePicker hides the cancel and done button](Features_images/Features_img11.png)
 
-
-
-
-## ShowCancelButton
-
-The [ShowCancelButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~ShowCancelButton.html) property is used to show or hide the cancel button. The default value is true.
-
-The following code sample shows how to hide the cancel button:
-
-{% highlight XAML %}
-
-
-
-	<syncfusion:SfDatePicker VerticalAlignment="Center"
-
-                               HorizontalAlignment="Center"
-
-                               Width="200">
-
-            <syncfusion:SfDatePicker.SelectorStyle>
-
-                <Style TargetType="syncfusion:SfDateSelector">
-
-			<Setter Property="ShowCancelButton" Value="False"/>
-
-                </Style>
-
-            </syncfusion:SfDatePicker.SelectorStyle>        
-			
-			</syncfusion:SfDatePicker>
-
-			{% endhighlight  %}
-			
-![Show cancel button](Features_images/Features_img12.png)
+Click [here]() to download the sample that showcases the `OK` and `Cancel` button visibility.

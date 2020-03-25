@@ -9,6 +9,12 @@ documentation: ug
 
 # Getting started
 
+This section explains how to create a WPF [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker.html) and explains about its structure.
+
+## Structure of SfDatePicker
+
+![WPF SfDatePickerControl](GettingStarted_images/SfDatePicker.png)
+
 ## Assembly deployment
 
 Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfdatepicker) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
