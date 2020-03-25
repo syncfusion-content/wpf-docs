@@ -117,7 +117,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Label font customization image](Labels_images/Label_Font_customization.png)
 
-## Setting position for labels
+## Setting a position for labels
 
   The `Labels` can be placed inside the scale, outside the scale, or on the scale using the following two ways:
      
@@ -227,15 +227,15 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Positioning labels image](Labels_images/Positioning_labels.png)
 
-### Setting smart labels
+### Setting a smart labels
 
-Smart labels allow to change the numeric scale type of the labels displayed in a gauge scale and customize the labels by adding prefixes or suffixes to the scale labels.
+Smart labels allow to change the numeric scale type of the labels displayed in a gauge scale, and customize the labels by adding prefixes or suffixes to the scale labels.
 
-### Enable/disable smart labels
+### Enable or disable smart labels
 
 The `EnableSmartLabels` property is a Boolean property that enables or disables the smart label feature of the circular gauge.
 
-## Setting numeric scale type
+## Setting a numeric scale type
 
 The `NumericScaleType` property allows to set the type of label. The following types can be applied to labels:
 
@@ -305,7 +305,7 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Setting smart labels image](Labels_images/Setting_Smart_labels.png)
 
-## Setting number of fraction digits for labels
+## Setting a number of fraction digits for labels
 
 The `NoOfFractionDigit` property is used to set the number of fractional digits to be displayed in the scale labels.
 
@@ -355,9 +355,9 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Fraction_Digits_fo_lables](Labels_images/Fraction_Digits_for_lables.png)
 
-## Setting postfix and prefix for labels
+## Setting a postfix and prefix for labels
 
-You can postfix/prefix values to the scale labels using the `LabelPostfix` and `LabelPrefix` properties, respectively.
+You can postfix or prefix values to the scale labels using the `LabelPostfix` and `LabelPrefix` properties, respectively.
 
 ### Label postfix
 
@@ -500,7 +500,7 @@ N> Default value of the ShowLabels property is true.
 
 You can customize the edge label by using the `ShowFirstLabel` and `ShowLastLabel` properties, which are Boolean properties.
 
-* `ShowFirstLabel` property is used to enable or disable first label. Default value of the ShowFirstLabel property is true.
+* `ShowFirstLabel` property is used to enable or disable the first label. Default value of the ShowFirstLabel property is true.
 
 * `ShowLastLabel` property is used to enable or disable the last label. Default value of the ShowLastLabel property is true.
 
