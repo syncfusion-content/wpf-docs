@@ -9,18 +9,17 @@ documentation: ug
 
 # PulsingTile 
 
- The PulsingTile control allows to create a tile similar to music and video hubtile in Windows Phone. The content zooms in/out randomly with random translation in X-axis and Y- axis. This section explains about the features of PulsingTile.
+ The PulsingTile control allows to create a tile similar to music and video hubtile in Windows Phone. The content zooms in/out randomly with random movement in the X-axis and Y- axis. This section explains about the features of PulsingTile.
 
 ## Setting Header content
 
-Header is used to display the contents at the bottom of the tile. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
-
+Header is a name given to the tile that describes the functionality of the tile. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.THe below example demonstrates a music tile with header as music.
 
 {% tabs %}
 {% highlight XAML %}
 
 <!-- SfPulsingTile -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="PulsingTile"/>
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="Music"/>
 <!--setting header as image-->
 <syncfusion:SfPulsingTile x:Name="pulsingTile" >
      <syncfusion:SfPulsingTile.Header>
@@ -46,7 +45,7 @@ Header is used to display the contents at the bottom of the tile. The  content o
 
 ## Setting Title content
 
- Title is used to display the contents at the top of the tile. The content can be an image, a text or a control, etc. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
+ Title is used to display the notifications in the tile. The content can be an image, a text or a control, etc. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -423,9 +422,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
 ## Press Notifications and Animations
 
- When a tile is pressed, it performs certain animations and it is notified by Click event and it also supports Command binding.  
-  
-### Click event
+ Certain changes occurs when the tile is pressed and is notified by the click event and the command property of the HubTile. 
 
   The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
 
@@ -460,8 +457,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
  ### Command binding
 
-   [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of Click event in MVVM pattern. 
-
+     Command specifies the operation to be performed when the tile is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of click event in MVVM pattern.
    {% tabs %}
    {% highlight XAML%} 
    <syncfusion:SfPulsingTile Header="PulsingTile" Title="TitleArea." PulseScale="3" PulseDuration="00:00:003" Command="{Binding PulsingTileCommand}" CommandParameter="{Binding ElementName=PulsingTile}">
@@ -524,7 +520,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
 ### Animations
 
-  While pressing the center of the tile, the tile press animation occurs by setting properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) determines the depth of scaling effect while pressing the  center of the tile and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) specifies the time taken for the single tile press animation.
+The tile press animation causes the entire tile to be zoomed in/out at specified interval. You can set tile press animation by setting properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html)  and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) in the HubTile. The ScaleDepth is used to customize the depth of scaling effect while pressing the center of the tile. The TilePressDuration is used to determine the time taken for the single tile press animation.
 
    {% tabs %}
    {% highlight XAML %}
@@ -540,7 +536,7 @@ N> The tile press animation occurs only if the [OverrideDefualtStates](https://h
 
 ## Appearance and Styling
 
-## Customizing Header
+### Customizing Header
 
  Header of the  tile is customized by setting the properties such as [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) and [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) as below.
 
@@ -548,44 +544,42 @@ HeaderStyle is used to customize the header of the tile by setting the required 
 
 {% tabs %}
 {% highlight XAML%}
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="Assets/New Mail.png"  Title="This is title area." Header="HubTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="This is title area." Header="PulsingTile">
 <!--For setting Header Style-->
- <sync:SfHubTile.HeaderStyle>
+ <syncfuison:SfPulsingTile.HeaderStyle>
     <Style TargetType="ContentControl">
     <Setter Property="VerticalAlignment" Value="Bottom"/>
     <Setter Property="Foreground" Value="Yellow"/>
     <Setter Property="FontSize" Value="18"/>
     <Setter Property="FontFamily" Value="ALGERIAN"/>
     </Style>
-    </sync:SfHubTile.HeaderStyle>
-  </syncfusion:SfHubTile>  
+    </syncfusion:SfPulsingTile.HeaderStyle>
+  </syncfusion:SfPulsingTile>  
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile headerstyle](Getting-Started_images/wpf-hubtile-header-style.png)
+
 
  HeaderTemplate is used to customize the header of the tile by adding required controls into the template.
 
 {% tabs %}
 {% highlight XAML %}
    
-   <syncfusion:SfHubTile x:Name="hubTile" ImageSource="Assets/New Mail.png" Width="250"  Title="This is a title area." Header="HubTile">
-    <sync:SfHubTile.HeaderTemplate>
+   <syncfusion:SfPulsingTile x:Name="pulsingTile" Width="250"  Title="This is a title area." Header="PulsingTile">
+   <Image Source="Assets/PulsingTile.png" Stretch="None"/>
+    <syncfusion:SfPulsingTile.HeaderTemplate>
         <DataTemplate>
         <Grid>
          <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto"/>
            <ColumnDefinition/>
          </Grid.ColumnDefinitions>
-          <Label>Header</Label>
-          <TextBox Text="Displays header" TextWrapping="Wrap" Grid.Column="1" TextAlignment="Right" Background="LightBlue"/>
+           <Image Source="Assets/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>          <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />
         </Grid>
         </DataTemplate>
-   </sync:SfHubTile.HeaderTemplate>-->
+   </syncfusion:SfPulsingTile.HeaderTemplate>-->
 {% endhighlight %}
 {% endtabs %}
-
-![wpf hubtile header template](Getting-Started_images/wpf-hubtile-header-template.png)
 
 ### Customizing  Title
 

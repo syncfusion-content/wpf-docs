@@ -628,7 +628,7 @@ HeaderStyle is used to customize the header of the tile by setting the required 
           <ColumnDefinition Width="Auto"/>
            <ColumnDefinition/>
          </Grid.ColumnDefinitions>
-           <Image Source="D:/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>          <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />
+           <Image Source="Assets/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>          <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />
         </Grid>
         </DataTemplate>
    </syncfusion:SfHubTile.HeaderTemplate>-->
@@ -657,7 +657,7 @@ HeaderStyle is used to customize the header of the tile by setting the required 
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-         <Image Source="D:/syncfusion.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None"/>
+         <Image Source="Assets/syncfusion.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None"/>
          <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />                                </Grid>
             </Grid>
             </DataTemplate>
