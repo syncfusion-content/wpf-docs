@@ -13,7 +13,7 @@ documentation: ug
 
 ## Setting Header content
 
-Header is a name given to the tile that describes the functionality of the tile. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+Header is a name given to the tile that describes the functionality of the tile.The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
 The below example defines a tile that represents mail application.
 
 {% tabs %}
