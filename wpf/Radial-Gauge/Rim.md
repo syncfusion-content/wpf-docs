@@ -11,7 +11,7 @@ documentation: ug
 
 Scale determines the structure of a circular gauge by using a circular rim. By setting the `StartAngle` and `SweepAngle` properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
 
-The `StartValue` and `EndValue` properties determine the overall range of the circular rim.
+The `StartValue` and `EndValue` properties, determine the overall range of the circular rim.
 
 {% tabs %}
 
@@ -124,13 +124,13 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ![Rim customization image](Rim_images/Rim_customization.png)
 
-## Setting position for rim
+## Setting a position for rim
 
 You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref_files/wpf/gauge/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge~Scales.html) in the following two ways:
 1.	 `RadiusFactor` property.
 2.	 `Radius` property.
 
-### Setting radius factor for rim
+### Setting a radius factor for rim
 
 The value for `RadiusFactor` should be specified in offset value. 
 
@@ -182,7 +182,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ![Rim with RadiusFactor image](Rim_images/Rim_with_RadiusFactor.png)
 
-### Setting radius for rim
+### Setting a radius for rim
 
 You can set the `Radius` of rim in pixel value.
 
