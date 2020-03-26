@@ -13,7 +13,7 @@ documentation: ug
 
 ## Setting Header content
 
-Header is a name given to the tile that describes the functionality of the tile. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.THe below example demonstrates a music tile with header as music.
+Header is a name given to the tile that describes the functionality of the tile. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property. The below example demonstrates a music tile with header as music.
 
 {% tabs %}
 {% highlight XAML %}
@@ -41,7 +41,7 @@ Header is a name given to the tile that describes the functionality of the tile.
 {% endhighlight %}
 {% endtabs %}
 
-![wpf setting  pulsingtile header](Getting-Started_images/wpf-tile-setting-header-pulsingtile.png)
+![wpf setting  pulsingtile header](Getting-Started_images/wpf-pulsingtile-header.png)
 
 ## Setting Title content
 
@@ -73,7 +73,7 @@ Header is a name given to the tile that describes the functionality of the tile.
 {% endhighlight %}
 {% endtabs %}
 
-![wpf setting pulsingtile title](Getting-Started_images/wpf-tile-setting-title-pulsingtile.png)
+![wpf setting pulsingtile title](Getting-Started_images/wpf-pulsingtile-title.png)
 
 ![wpf setting pulsingtile title as image](Getting-Started_images/wpf-pulsingtile-title-image.png)
 
@@ -558,7 +558,7 @@ HeaderStyle is used to customize the header of the tile by setting the required 
 {% endhighlight %}
 {% endtabs %}
 
-
+![wpf pulsingtile header style](Getting-Started_images/wpf-pulsingtile-headerstyle.png)
 
  HeaderTemplate is used to customize the header of the tile by adding required controls into the template.
 
@@ -573,14 +573,17 @@ HeaderStyle is used to customize the header of the tile by setting the required 
          <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto"/>
            <ColumnDefinition/>
-         </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
            <Image Source="Assets/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>          <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />
         </Grid>
         </DataTemplate>
-   </syncfusion:SfPulsingTile.HeaderTemplate>-->
+   </syncfusion:SfPulsingTile.HeaderTemplate>
+   </syncfusion:SfPulsingTile>
+
 {% endhighlight %}
 {% endtabs %}
 
+![wpf pulsingtile setting headertemplate](Getting-Started_images/wpf-pulsingtile-headertemplate.png)
 ### Customizing  Title
 
 The Title of the tile is customized by setting [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TitleStyle.html) property.

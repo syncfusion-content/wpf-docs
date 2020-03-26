@@ -78,7 +78,7 @@ The below example defines a tile that represents mail application.
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile title](Getting-Started_images/wpf-tile-setting-title-hubtile.png)
+![wpf hubtile title](Getting-Started_images/wpf-hubtile-title.png)
 
 ![wpf hubtile title as image](Getting-Started_images/wpf-hubtile-title-image.png)
 
@@ -620,7 +620,7 @@ HeaderStyle is used to customize the header of the tile by setting the required 
 {% tabs %}
 {% highlight XAML %}
    
-   <syncfusion:SfHubTile x:Name="hubTile" ImageSource="Assets/New Mail.png" Width="250"  Title="This is a title area." Header="HubTile">
+   <syncfusion:SfHubTile x:Name="hubTile" ImageSource="Assets/New Mail.png"  Title="This is a title area." Header="HubTile">
     <syncfusion:SfHubTile.HeaderTemplate>
         <DataTemplate>
         <Grid>
@@ -631,11 +631,13 @@ HeaderStyle is used to customize the header of the tile by setting the required 
            <Image Source="Assets/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>          <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />
         </Grid>
         </DataTemplate>
-   </syncfusion:SfHubTile.HeaderTemplate>-->
+   </syncfusion:SfHubTile.HeaderTemplate>
+   </syncfusion:SfHubTile>
 {% endhighlight %}
 {% endtabs %}
 
 ![wpf hubtile header template](Getting-Started_images/wpf-hubtile-header-template.png)
+
 ### Customizing Title
 
  Title of the tile is customized by setting [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TitleStyle.html) property as below.
