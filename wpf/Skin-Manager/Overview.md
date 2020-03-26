@@ -7,7 +7,7 @@ control: SkinManager
 documentation: ug
 ---
 
-# SkinManager
+# SkinManager Overview
 
 The Skin Manager Framework provides a convenient way to give the appealing appearance to the WPF controls as well as the Syncfusion controls.
 
