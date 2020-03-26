@@ -139,4 +139,4 @@ We can change the year selector template by using the [YearCellTemplate](https:/
 			
 ![SfSpellChecker with Year cell template](Features_images/Features_img9.png)
 
-Click [here]() to dowload the sample that showcases the `SfDateSelector` template customization. 
+Click [here]() to download the sample that showcases the `SfDateSelector` template customization. 
