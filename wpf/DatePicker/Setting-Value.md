@@ -128,7 +128,7 @@ sfDatePicker.MaxDate = new DateTime(2020, 6, 30);
 
 Here, the users can select the year from 2019 to 2021 only. 
 
-## Selected Date changed notification
+## Date changed notification
 
 When the selected date of `SfDatePicker`is changed, it will be notified by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~ValueChanged_EV.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
 
