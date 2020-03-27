@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in WPF Diagram (SfDiagram)
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 
@@ -499,4 +499,4 @@ public class DataItems : ObservableCollection<ItemInfo>
 
 ![Flowchart](DataSource_images/DataSource_Flowchart.png)
 
-Please find the [Flowchart Layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support.
+Please find the [Flowchart Layout sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Flowchart_Layout-2088923614-1032196453.zip) to depict this support.
