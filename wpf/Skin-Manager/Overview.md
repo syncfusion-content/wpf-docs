@@ -251,32 +251,10 @@ SkinStorage.SetMetroBrush(this, Brushes.Green);
 Metro Customization Demo
 {:.caption}
 
-## ResourceDictionary path for Syncfusion themes
-
-Resource Dictionary path for Syncfusion themes are tabulated below:
-
-Replace “< CurrentVisualStyle>“  with the  required  VisualStyle name 
-
-Ex:
-
-To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the application:
-
-{% tabs %}
-{% highlight xaml %}
-
-<ResourceDictionary>
-<ResourceDictionary.MergedDictionaries>
-<ResourceDictionary  Source="/Syncfusion.Shared.WPF;Component/SkinManager/Office2010BlueStyle.xaml"/>
-</ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
-
-{% endhighlight %}
-{% endtabs %}
-
 
 ## Performance improvement
 
-The performance of SkinManager can be improved by enabling the EnableOptimization property as shown below.
+The performance of SkinManager can be improved by enabling the EnableOptimization property. This proeprty allows to merge the theme file to an entire application directly, rather than merging themes to each individual controls in the application. This can be acheived by below code snippet.
 
 {% tabs %}
 {% highlight xaml %}
@@ -301,6 +279,30 @@ The performance of SkinManager can be improved by enabling the EnableOptimizatio
 
 {% endhighlight %}
 {% endtabs %}
+
+
+## ResourceDictionary path for Syncfusion themes
+
+Resource Dictionary path for Syncfusion themes are tabulated below:
+
+Replace “< CurrentVisualStyle>“  with the  required  VisualStyle name 
+
+Ex:
+
+To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the application:
+
+{% tabs %}
+{% highlight xaml %}
+
+<ResourceDictionary>
+<ResourceDictionary.MergedDictionaries>
+<ResourceDictionary  Source="/Syncfusion.Shared.WPF;Component/SkinManager/Office2010BlueStyle.xaml"/>
+</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ### Controls table
 
