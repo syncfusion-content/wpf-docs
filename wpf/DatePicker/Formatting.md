@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formatting options in SfDatePicker control | Syncfusion
-description: Deals with  Formatting options of SfDatePicker control for WPF
+description: This page explain about how to display the date in various format in the WPF SfDatePicker control and items features.
 platform: wpf
 control: SfDatePicker
 documentation: ug

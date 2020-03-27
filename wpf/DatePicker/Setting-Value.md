@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting Value in WPF SfDatePicker control | Syncfusion
-description: Setting Null Value for SfDatePicker control for WPF
+description: This page explains about how to set or select a date in various ways from the WPF SfDatePicker control.
 platform: wpf
 control: SfDatePicker
 documentation: ug
@@ -57,7 +57,7 @@ sfDatePicker.Value = null;
 
 ## Set selected value on lost focus
 
-By default, the selected value of `SfDateSelector` can be direclty sets to the `Value` property when `OK` button is clicked. We can update the `Value` property only on control lost it focus by setting the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`.  
+By default, the selected value of `SfDateSelector` can be directly sets to the `Value` property when `OK` button is clicked. We can update the `Value` property only on control lost it focus by setting the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`.  
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF SfDatePicker control | Syncfusion
-description: Explains about overview and Keyfeatures of SfDatePicker control for WPF
+description: This page explains about overview of the WPF SfDatePicker control and its overall customazation features.
 platform: wpf
 control: SfDatePicker
 documentation: ug

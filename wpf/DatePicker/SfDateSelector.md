@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Explains about DateSelector in WPF SfDatePicker control | Syncfusion
-description: Explains about the DateSelector of SfDatePicker control for WPF
+description: This page explains about how to customize the date selector and select a date in various ways from the WPF SfDatePicker control.
 platform: wpf
 control: SfDatePicker
 documentation: ug
@@ -167,7 +167,7 @@ sfDatePicker.SelectorItemHeight = 100;
 
 ## DateSelector item spacing and item count
  
-We can change the space between `SfDateSelector` date, month and year items by using the [SelectorItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemSpacing.html)and also can change displaying date selector count by using the [SelectorItemCount](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemCount.html) property. The default value of the `SelectorItemSpacing` property is `4` and `SelectorItemCount` property is `4`.
+We can change the space between `SfDateSelector` date, month and year items by using the [SelectorItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemSpacing.html) and also can change displaying date selector count by using the [SelectorItemCount](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemCount.html) property. The default value of the `SelectorItemSpacing` property is `4` and `SelectorItemCount` property is `4`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -188,7 +188,7 @@ sfDatePicker.SelectorItemSpacing = 50;
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/SfDateSelector-templates) to download the sample that showcases the `SfDateSelector` template customization. 
 
-## Ok and Cancel button visibility
+## OK and Cancel button visibility
 
 The selected date from the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) can be updated in the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property on after clicking `OK` buttons. 
 

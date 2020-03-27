@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DropDown Customization SfDatePicker control | Syncfusion
-description: Explains about DropDown Customization of the SfDatePicker control for WPF
+description: This page explain about how to Customization the Drop Down of the WPF SfDatePicker control and items features.
 platform: wpf
 control:  SfDatePicker
 documentation: ug
