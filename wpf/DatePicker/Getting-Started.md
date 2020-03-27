@@ -114,6 +114,42 @@ sfDatePicker.Value = new DateTime(2021,5,30);
 
 ![SfDatePicker displaying selected value](Features_images/Features_img17.png)
 
+## Date changed notification
+
+When the selected date of `SfDatePicker`is changed, it will be notified by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~ValueChanged_EV.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
+
+* **OldValue** : Gets a date which is previously selected.
+
+* **NewValue** : Gets a date which is currently selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfDatePicker ValueChanged="SfdatePicker_ValueChanged" 
+                         Name="sfDatePicker"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.ValueChanged += SfdatePicker_ValueChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void SfdatePicker_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {          
+    Console.WriteLine("The Old selected Date: " + e.OldValue.ToString());
+    Console.WriteLine("The Newly selected Date: " + e.NewValue.ToString());            
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Display the date using the FormatString
 
  We can display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~FormatString.html) property.
