@@ -1,62 +1,59 @@
 ---
 layout: post
-title: Deals with  Formatting options | SfDatePicker | WPF | Syncfusion
-description: Deals with  Formatting options of SfDatePicker control for WPF
+title: Formatting options in SfDatePicker control | Syncfusion
+description: This page explain about how to display the date in various format in the WPF SfDatePicker control and items features.
 platform: wpf
 control: SfDatePicker
 documentation: ug
 ---
 
-# Formatting
+# Date Formatting in WPF SfDatePicker
 
-The SfDatePicker control allows the user to format the display text in various ways.
+The [SfDatePicker](https://www.syncfusion.com/wpf-ui-controls/datepicker) control allows the user to format the display date in various ways.
 
-## Using the FormatString
+## Display the date using the FormatString
 
-The [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~FormatString.html) property determines the format specifier by which the display text has to be formatted.
+ We can display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~FormatString.html) property.
 
-The following code sample shows how to create a date picker with a [month day pattern](http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.monthdaypattern(v=vs.71).aspx): 
-
+{% tabs %}
 {% highlight xaml %}
 
+<syncfusion:SfDatePicker x:Name="sfDatePicker" 
+                         FormatString="M"/>
 
+{% endhighlight %}
+{% highlight C# %}
 
-		<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.FormatString = "M";
 
-            <syncfusion:SfDatePicker VerticalAlignment="Center" 
+{% endhighlight %}
+{% endtabs %}
 
-                                   Width="200" Margin="15"
-
-                                   FormatString="M"/>
-
-
-
-		</Grid>
-
-
-{% endhighlight  %}
-
-
-![Format string](Features_images/Features_img1.png)
+![SfDatePicker selected date with month format](Features_images/Features_img1.png)
 
 ## Specifying format for the DateSelector
 
-The [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorFormatString.html) property used to specify format for the DateSelector
+We can enable the user to select only the date or month or year from the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorFormatString.html) property.
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<syncfusion:SfDatePicker x:Name="sfDatePicker" 
+                         SelectorFormatString="M"/>
 
-    <syncfusion:SfDatePicker SelectorFormatString="M"   x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" />
+{% endhighlight %}
+{% highlight C# %}
 
-	</Grid>
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.SelectorFormatString = "M";
 
-{% endhighlight  %}
+{% endhighlight %}
+{% endtabs %}
 
+![SfDatePicker contains only month selector](Features_images/Features_img2.png)
 
-![Selector format string](Features_images/Features_img2.png)
-
+Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the display date formatting and date selection formatting by the `SfDatePicker`.
 
 N> A detailed explanation of standard date time formatting is available [here](http://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.71).aspx). The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.
+
