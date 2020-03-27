@@ -1,12 +1,13 @@
 ---
 layout: post
-title: DropDown Customization | SfDatePicker | WPF | Syncfusion
+title: DropDown Customization SfDatePicker control | Syncfusion
 description: Explains about DropDown Customization of the SfDatePicker control for WPF
 platform: wpf
 control:  SfDatePicker
 documentation: ug
 ---
-# Customizing DropDown of WPF SfDatePicker
+
+# Customizing DropDown in WPF SfDatePicker
 
 We can customize the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) visibility, drop down button visibility and height of the `SfDateSelector`.
 
@@ -74,3 +75,5 @@ sfDatePicker.ShowDropDownButton = false;
 {% endtabs %}
 
 ![SfDatePicker hides the drop down button](Customizing-DropDown_images/Customizing-DropDown_img3.png)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/SfDateSelector-ItemCustomization) to download the sample that showcases the DropDown customization support.
