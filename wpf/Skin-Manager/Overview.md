@@ -254,7 +254,7 @@ Metro Customization Demo
 
 ## Performance improvement
 
-The performance of SkinManager can be improved by enabling the EnableOptimization property. This proeprty allows to merge the theme file to an entire application directly, rather than merging themes to each individual controls in the application. This can be acheived by below code snippet.
+The performance of SkinManager can be improved by enabling the EnableOptimization property. This property allows to merge the theme file to an entire application directly, rather than merging themes to each individual controls in the application. This can be achieved by below code snippet.
 
 {% tabs %}
 {% highlight xaml %}
