@@ -135,11 +135,11 @@ Saves the edited image.<br/><br/></td></tr>
 <tr>
 <td>
 Undo<br/><br/></td><td>
-Reverses the last performed action..<br/><br/></td></tr>
+Reverses the last performed action.<br/><br/></td></tr>
 <tr>
 <td>
 Redo<br/><br/></td><td>
-Restores the actions carried out by Undo..<br/><br/></td></tr>
+Restores the actions carried out by Undo.<br/><br/></td></tr>
 <tr>
 <td>
 Reset<br/><br/></td><td>
@@ -159,11 +159,11 @@ Used to decrease the edited image zoom level.<br/><br/></td></tr>
 <tr>
 <td>
 Select<br/><br/></td><td>
-Opens the find and replace window with the selected quick find tab.<br/><br/></td></tr>
+Used to select the items such as Shapes, Text, Custom view added on the image.<br/><br/></td></tr>
 <tr>
 <td>
 Pan<br/><br/></td><td>
-Finds all the occurrences of the specified text.<br/><br/></td></tr>
+Used to Pan the image when it is in zoomed state.<br/><br/></td></tr>
 <tr>
 <td>
 </table>
