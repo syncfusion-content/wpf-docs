@@ -127,7 +127,7 @@ Description<br/><br/></td></tr>
 <tr>
 <td>
 BrowseImage<br/><br/></td><td>
-Browsing the local folder any image can be loaded directly in the Image Editor.<br/><br/></td></tr>
+Browses the local folder to pick and load the image  to an image editor.<br/><br/></td></tr>
 <tr>
 <td>
 Save<br/><br/></td><td>
@@ -143,7 +143,7 @@ Restores the actions carried out by Undo.<br/><br/></td></tr>
 <tr>
 <td>
 Reset<br/><br/></td><td>
-Resets the transforms applied on the image.<br/><br/></td></tr>
+Clears all the editing done on the image and brings to an initial state.<br/><br/></td></tr>
 <tr>
 <td>
 ResetZoom<br/><br/></td><td>
@@ -151,11 +151,11 @@ Resets the zooming applied to the image.<br/><br/></td></tr>
 <tr>
 <td>
 IncreaseZoom<br/><br/></td><td>
-Used to increase the edited image zoom level.<br/><br/></td></tr>
+Zoom In the image by increasing the zoom level from its current state.<br/><br/></td></tr>
 <tr>
 <td>
 DecreaseZoom<br/><br/></td><td>
-Used to decrease the edited image zoom level.<br/><br/></td></tr>
+Zoom Out the image by decreasing the zoom level from its current state.<br/><br/></td></tr>
 <tr>
 <td>
 Select<br/><br/></td><td>
