@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Enable Multiline Support
 
-ButtonAdv control has the option to display the multiple lines of text using boolean property `IsMultiLine`. 
+[ButtonAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv.html) control has the option to display the multiple lines of text using boolean property `IsMultiLine`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -20,5 +20,7 @@ ButtonAdv control has the option to display the multiple lines of text using boo
 {% endtabs %}
 
 ![WPF ButtonAdv MultiLine](Multi-Line-Support_images/Multi-Line-Support_img1.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-show-the-multi-line-text-in-wpf-button)
 
 N> This property is applicable only for large size mode buttons.
