@@ -9,7 +9,7 @@ documentation: ug
 
 # PulsingTile 
 
- The PulsingTile control allows to create a tile similar to music and video hubtile in Windows Phone. The content zooms in/out randomly with random movement in the X-axis and Y- axis. This section explains about the features of PulsingTile.
+ The PulsingTile control allows to create a tile similar to music and video tiles in Windows Phone. The content zooms in/out randomly with random movement along the X-axis and Y- axis. This section explains about the features of PulsingTile.
 
 ## Setting Header content
 
@@ -29,9 +29,9 @@ Header is a name given to the tile that describes the functionality of the tile.
 <!--setting header as control-->
 <syncfusion:SfPulsingTile x:Name="pulsingTile" >
      <syncfusion:SfPulsingTile.Header>
-     <TextBox Text="Header in the tile" Background="LightBlue" >
+     <TextBlock Text="SYNCFUSION" Foreground="White" FontSize="13" >
      </syncfusion:SfPulsingTile.Header>
-</syncfusion:SfHubTile>
+</syncfusion:SfPulsingTile>
 {% endhighlight %}
 {% highlight C# %}
 
@@ -42,6 +42,8 @@ Header is a name given to the tile that describes the functionality of the tile.
 {% endtabs %}
 
 ![wpf setting  pulsingtile header](Getting-Started_images/wpf-pulsingtile-header.png)
+![wpf setting pulsingtile image](Getting-Started_images/wpf-pulsingtile-header-image.png)
+![wpf setting pulsingtile control](Getting-Started_images/wpf-pulsingtile-header-control.png)
 
 ## Setting Title content
 
@@ -51,7 +53,7 @@ Header is a name given to the tile that describes the functionality of the tile.
 {% highlight XAML %}
 
 <!--SfPulsingTile-->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="This is title area in pulsingtile"/>
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="Now Playing-Song Name"/>
 <!--setting title as image-->
 <syncfusion:SfPulsingTile x:Name="pulsingTile">
 <syncfusion:SfPulsingTile.Title>
@@ -422,7 +424,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
 ## Press Notifications and Animations
 
- Certain changes occurs when the tile is pressed and is notified by the click event and the command property of the HubTile. 
+ Certain changes occurs when the tile is pressed and is notified by the click event and the command property of the PulsingTile. 
 
   The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
 
@@ -457,7 +459,8 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
  ### Command binding
 
-     Command specifies the operation to be performed when the tile is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of click event in MVVM pattern.
+ Command specifies the operation to be performed when the tile is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of click event in MVVM pattern.
+ 
    {% tabs %}
    {% highlight XAML%} 
    <syncfusion:SfPulsingTile Header="PulsingTile" Title="TitleArea." PulseScale="3" PulseDuration="00:00:003" Command="{Binding PulsingTileCommand}" CommandParameter="{Binding ElementName=PulsingTile}">
