@@ -6,7 +6,7 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Getting Started
+# Getting Started of State Persistence
 
 State persistence is the combined process of serialization and deserialization. 
 
