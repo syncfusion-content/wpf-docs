@@ -28,3 +28,73 @@ The following code example demonstrates how to bind commands for performing undo
 {% endtabs %}
 
 N> In order to perform undo/redo, the standard keyboard shortcuts such as CTRL + Z, CTRL + Y can also be used.
+
+## Enable/Disable Undo Redo
+
+###Disable Undo for all the editing actions
+
+In SfRichTextBoxAdv, the Undo functionality is enabled by default. You can disable it by using the `IsUndoEnabled` property of the `EditorSettings` class.
+
+The following code example demonstrates how to disable the Undo functionality in `SfRichTextBoxAdv`.
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv">
+	<Syncfusion:SfRichTextBoxAdv.EditorSettings>
+		<Syncfusion:EditorSettings IsUndoEnabled="False"/>
+	</Syncfusion:SfRichTextBoxAdv.EditorSettings>
+</Syncfusion:SfRichTextBoxAdv>
+
+
+{% endhighlight %}
+{% highlight c# %}
+// Defines the SfRichTextBoxAdv control with undo operation disabled.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+richTextBoxAdv.EditorSettings.IsUndoEnabled = false;
+
+
+{% endhighlight %}
+{% highlight VB %}
+' Defines the SfRichTextBoxAdv control with undo operation disabled.
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+richTextBoxAdv.EditorSettings.IsUndoEnabled = false
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This API is supported starting from release version v18.1.0.X.
+
+###Disable Undo for style modification actions
+
+In SfRichTextBoxAdv, the Undo functionality is enabled by default for all the editing operations. If you want to disable the Undo functionality for modifying an existing style alone. You can disable it by using the `CanUndoStyle` property of the `EditorSettings` class.
+
+The following code example demonstrates how to disable the Undo support for modifying an existing style in `SfRichTextBoxAdv`.
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfRichTextBoxAdv x:Name="richTextBoxAdv">
+	<Syncfusion:SfRichTextBoxAdv.EditorSettings>
+		<Syncfusion:EditorSettings CanUndoStyle="False"/>
+	</Syncfusion:SfRichTextBoxAdv.EditorSettings>
+</Syncfusion:SfRichTextBoxAdv>
+
+
+{% endhighlight %}
+{% highlight c# %}
+// Defines the SfRichTextBoxAdv control with document style undo operation disabled.
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+richTextBoxAdv.EditorSettings.CanUndoStyle = false;
+
+
+{% endhighlight %}
+{% highlight VB %}
+' Defines the SfRichTextBoxAdv control with document style undo operation disabled.
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+richTextBoxAdv.EditorSettings.CanUndoStyle = false
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This API is supported starting from release version v18.1.0.X.
