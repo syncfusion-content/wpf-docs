@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence | Docking Manager | Syncfusion
-description: Learn how to serialize and de-serialize the state of DockingManager child windows
+title: State Persistence in DockingManager | Docking Manager | Syncfusion
+description: Learn how to serialize and de-serialize the state of DockingManager child windows using various functionalities.
 platform: wpf
 control: DockingManager
 documentation: ug
