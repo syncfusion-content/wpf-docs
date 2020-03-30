@@ -13,7 +13,7 @@ This section gives an overview for working with the HubTile and PulsingTile cont
 
 ## Assembly deployment
 
-Refer [HubTile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [PulsingTile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies to get the list of assemblies or NuGet package needs to be added as reference to use the HubTile and PulsingTile control in any application.
+Refer [HubTile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [PulsingTile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or NuGet package needs to be added as reference to use the HubTile and PulsingTile control in any application.
 
 ## Creating simple application with HubTile and PulsingTile
 
@@ -78,6 +78,16 @@ In order to add control manually in C#, do the below steps,
 3. Create SfHubTile and SfPulsingTile controls instance and add it to the window.
 
 {% tabs %}
+{% highlight XAML %}
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="WpfApplication1.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="grid">
+	</Grid>
+	</Window>
+
+{% endhighlight %}
 {% highlight C# %}
 using Syncfusion.Windows.Controls.Notification;
 namespace SfHubTileSample

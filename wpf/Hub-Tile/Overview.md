@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
- Tile provides live update and notification similar to the tile functionality in Windows Desktop and Windows Phone. The tile can have an image, title and header to update on the tile.
+The tile provides live updates and notification similar to the tile functionality in Windows Desktop and Windows Phone. The tile can have an image, title and header to update on the tile.
 
 ## Key Features
 

@@ -51,6 +51,7 @@ The below example defines a tile that represents mail application.
 ## Setting Title content 
 
  Title is used to display the notifications and updates in the tile. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
+The below example represents the notifications in mail applications.
 
 {% tabs %}
 {% highlight XAML %}
@@ -86,7 +87,7 @@ The below example defines a tile that represents mail application.
 
 ## Setting Image 
 
- ImageSource is used to display the image at the center of the tile. You can set the image to the tile by setting the image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) property.
+  You can set the image to the tile by setting the image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -615,7 +616,7 @@ HeaderStyle is used to customize the header of the tile by setting the required 
 
 ![wpf hubtile headerstyle](Getting-Started_images/wpf-hubtile-header-style.png)
 
- HeaderTemplate is used to customize the header of the tile by adding required controls into the template.
+ HeaderTemplate is used to customize the header of the tile by using HeaderTemplate property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -660,9 +661,9 @@ HeaderStyle is used to customize the header of the tile by setting the required 
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
          <Image Source="Assets/syncfusion.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None"/>
-         <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />                                </Grid>
+         <TextBlock Text="SYNCFUSION"  Grid.Column="1" />             
             </Grid>
-            </DataTemplate>
+           </DataTemplate>
         </Setter.Value>
         </Setter>
         </Style>
