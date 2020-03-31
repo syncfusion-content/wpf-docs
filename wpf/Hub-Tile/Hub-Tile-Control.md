@@ -343,35 +343,6 @@ HubTile transitions occurs repeatedly at each specified interval. [HubTileTransi
 {% endhighlight %}
 {% endtabs %}
 
-5. Converter class is used to set the ImagePath to an ImageSource by converting the ImagePath  which is specified as string in Viewmodel.
-#### Converter
-{% tabs %}
-{% highlight C#}
-
-        public class ImageConverter : IValueConverter
-        {
-            public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-            {
-                if (value != null)
-                {
-                string str = value.ToString();
-                var image = new Image();
-                image.Source = new BitmapImage(new Uri(str,UriKind.RelativeOrAbsolute));
-                return image.Source;
-                }
-                else
-                {
-                    return value;
-                }
-            }
-            public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-            {
-                throw new System.NotImplementedException();
-            }
-        }
-    {% endhighlight %}
-    {% endtabs %}  
-
 ## Freezing/UnFreezing 
 
 Freezing provides support to stop animating the tile contents. UnFreezing provides support to keep the tile content animated. By the following two ways you can set freezing/unfreezing to the HubTile:
