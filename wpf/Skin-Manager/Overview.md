@@ -252,9 +252,9 @@ Metro Customization Demo
 {:.caption}
 
 
-## Performance improvement
+## Performance
 
-The performance of SkinManager can be improved by enabling the EnableOptimization property. This property allows to merge the theme file to an entire application directly, rather than merging themes to each individual controls in the application. This can be achieved by below code snippet.
+The performance of SkinManager can be improved by setting the [EnableOptimization](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinStorage~SetEnableOptimization.html) property. So, all themes resource dictionaries merged to `Application.Resources` instead of merging resource dictionaries to each individual controls in the application. 
 
 {% tabs %}
 {% highlight xaml %}
