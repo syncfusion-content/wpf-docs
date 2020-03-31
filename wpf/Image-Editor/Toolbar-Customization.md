@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar customization in syncfusion SfImageEditor WPF.
-description: Toolbar customization.
+description: This section describes how to customize the toolbar and toolbar item selected event in SfImageEditor control for WPF platform.
 platform: wpf
 control: SfImageEditor
 documentation: ug
@@ -33,7 +33,7 @@ editor.ToolbarSettings.IsToolbarVisibility = true;
 
 {% endtabs %} 
 
-### Add item
+### Add a item
 
 You can add additional items to the toolbar and can perform your own operation. To add an additional item, specify the toolbar item, and add it in the ToolbarItems collection as demonstrated in following code snippet. You can specify your own template using the `IconTemplate` property in `ToolbarItem`.
 
@@ -59,9 +59,9 @@ editor.ToolbarSettings.ToolbarItems.Add(new ToolbarItem() { IconTemplate = grid.
 
 ### Customization
 
-You can change the [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~Background.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~BorderColor.html) of the toolbar. Also, you can change the height of the main toolbar using the [`HeaderToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~HeaderToolbarHeight.html) property and the height of the sub toolbar can be changed using the [`SubItemToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~SubItemToolbarHeight.html) property and the footer toolbar height can be changed using the [`FooterToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~FooterToolbarHeight.html).
+You can change the [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~Background.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~BorderColor.html) of the toolbar. Also, you can change the height of the main toolbar using the [`HeaderToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~HeaderToolbarHeight.html) property, and the height of the sub toolbar can be changed using the [`SubItemToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~SubItemToolbarHeight.html) property, and the footer toolbar height can be changed using the [`FooterToolbarHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ToolbarSettings~FooterToolbarHeight.html).
 
-This can be done as in the below code snippet.
+This can be done as in the following code snippet.
 
 {% tabs %} 
 
@@ -108,3 +108,87 @@ This event occurs when an item in the toolbar is selected. `ToolbarItemSelectedE
 {% endtabs %} 
 
 ![Custom Item](Images/ToolbarCustomItem.png) 
+
+## Image picker support
+
+You can browse images in a local folder and load them in the Image Editor using the toolbar item browse icon. 
+
+![Image picker support in WPF](Images/ImagePicker.png) 
+
+## Commands
+
+Invoke commands from the custom toolbar to customize toolbar items of the image editor. Must set the `CommandTarget` while using the Command.
+
+<table>
+<tr>
+<td>
+Command<br/><br/></td><td>
+Description<br/><br/></td></tr>
+<tr>
+<td>
+BrowseImage<br/><br/></td><td>
+Browses the local folder to pick and load the image  to an image editor.<br/><br/></td></tr>
+<tr>
+<td>
+Save<br/><br/></td><td>
+Saves the edited image.<br/><br/></td></tr>
+<tr>
+<td>
+Undo<br/><br/></td><td>
+Reverses the last performed action.<br/><br/></td></tr>
+<tr>
+<td>
+Redo<br/><br/></td><td>
+Restores the actions carried out by Undo.<br/><br/></td></tr>
+<tr>
+<td>
+Reset<br/><br/></td><td>
+Clears all the editing done on the image and brings to an initial state.<br/><br/></td></tr>
+<tr>
+<td>
+ResetZoom<br/><br/></td><td>
+Resets the zooming applied to the image.<br/><br/></td></tr>
+<tr>
+<td>
+IncreaseZoom<br/><br/></td><td>
+Zoom In the image by increasing the zoom level from its current state.<br/><br/></td></tr>
+<tr>
+<td>
+DecreaseZoom<br/><br/></td><td>
+Zoom Out the image by decreasing the zoom level from its current state.<br/><br/></td></tr>
+<tr>
+<td>
+Select<br/><br/></td><td>
+Used to select the items such as Shapes, Text, Custom view added on the image.<br/><br/></td></tr>
+<tr>
+<td>
+Pan<br/><br/></td><td>
+Used to Pan the image when it is in zoomed state.<br/><br/></td></tr>
+<tr>
+<td>
+</table>
+
+This can be done as in the below code snippet.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <editor:SfImageEditor Grid.Column="0" x:Name="imageEditor" ImageSource="Assets\RoadView.jpeg">
+            <editor:SfImageEditor.ToolbarSettings>
+                <editor:ToolbarSettings IsToolbarVisiblity="False"></editor:ToolbarSettings>
+            </editor:SfImageEditor.ToolbarSettings>
+        </editor:SfImageEditor>
+		
+          <Button  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Background="White"
+                    Width="Auto" CommandTarget="{Binding ElementName=imageEditor}"
+                    Content="Save" Command="{x:Static editor:ImageEditorCommands.Save}"></Button>
+    </Grid>
+{% endhighlight %}
+
+![Custom Item](Images/ToolbarCustomization.png) 

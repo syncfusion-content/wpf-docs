@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Map Points | SfMap | wpf | Syncfusion
-description: map points
+description: This section describes customizing the MapPoint, about MapPointTemplate, MapPointPopupTemplate in WPF SfMaps control
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Map Points
+# Map Points support in SfMap
 
-Points are one of the record type in shape file layer. Points are used to specify the specific point in the map. For example used to specify the capital of countries. Points in the shape file given as latitude and longitude coordinates in the shapes file. Those points should be converted as map points.
+Points are one of the record type in shape file layer. Points are used to specify the specific point in the map. For example, used to specify the capital of countries. Points in the shape file is given as latitude and longitude coordinates in the shapes file. Those points should be converted as MapPoints.
 
 ## Customizing the MapPoint
 
@@ -57,7 +57,7 @@ MapPointTemplate is a DataTemplate type, used to customize or override the defau
 
 ## MapPointIcon
 
-MapPointIcon is used for Customizing points shapes.It can be customized by following shapes
+MapPointIcon is used for customizing points shapes.It can be customized by following shapes:
 
 * Rectangle
 
@@ -84,15 +84,15 @@ MapPointIcon is used for Customizing points shapes.It can be customized by follo
 
 {% endhighlight %}
 
-![](Map-Points_images/Map-Points_img2.png)
+![Map Points icon image in WPF SfMap](Map-Points_images/Map_Points_Icon_image.png)
 
 ## MapPointPopup
 
-MapPointPopup is a popup, displayed when the point is moved on MapPoint. It shows additional information from the object bounded with the MapPoint. You can get the object from dbf file.
+MapPointPopup is a popup, displayed when the point is moved to MapPoint. It shows additional information from the object bounded with the MapPoint. You can get the object from dbf file.
 
 ### MapPointPopupTemplate
 
-MapPointPopupTemplate is a DataTemplate used to expose the template for the MapPoint. 
+MapPointPopupTemplate is a DataTemplate, used to expose the template for the MapPoint. 
 
 {% highlight xaml %}
 
@@ -236,6 +236,43 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 {% endhighlight %}
 
-![](Map-Points_images/Map-Points_img1.png)
+![Map Points and popup image in WPF SfMap](Map-Points_images/Map_Points_Popup_image.png)
 
+## Convert a Geo-coordinate point for ShapeFileLayer and ImageryLayer
 
+You can convert a Geo-coordinate point to a screen point and  screen point to Geo-coordinate using the `GeopointToViewPoint` method and `GetLatLonFromPoint`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+      <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="but" Content="Button"  Click="but_Click"/>
+        <maps:SfMap Grid.Row="1" ZoomLevel="5">
+          <maps:SfMap.Layers>
+            <maps:ImageryLayer x:Name="layer">
+            </maps:ImageryLayer>
+          </maps:SfMap.Layers>
+        </maps:SfMap>
+    </Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void but_Click(object sender, RoutedEventArgs e)
+        {
+            Point pixelPoint = layer.GeopointToViewPoint(21.00, 78.00);
+            Point longitudeLatitude = layer.GetLatLonFromPoint(pixelPoint);
+            layer.Center = longitudeLatitude;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Set the center from screen point](Map-Points_images/Center_Point_Changed.png)
