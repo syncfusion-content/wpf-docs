@@ -29,7 +29,10 @@ HubTile and PulsingTile controls can be added to the application by dragging  Sf
 
 {% tabs %}
 {% highlight XAML %}
-<SampleLayout.WPF:SfHubTile Content="SfHubTile" HorizontalAlignment="Left" Margin="335,113,0,0" VerticalAlignment="Top"/>
+<!--For HubTile-->
+<SampleLayout.WPF:SfHubTile Content="SfHubTile" HorizontalAlignment="Left" Margin="321,137,0,0" VerticalAlignment="Top"/>
+<!--For PulsingTile-->
+<SampleLayout.WPF:SfPulsingTile Content="SfPulsingTile" HorizontalAlignment="Left" Margin="331,137,0,0" VerticalAlignment="Top"/>
 {% endhighlight %}
 {% endtabs %}
 

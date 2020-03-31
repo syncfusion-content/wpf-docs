@@ -13,7 +13,7 @@ documentation: ug
 
 ## Setting Header content
 
-Header is a name given to the tile that describes the functionality of the tile. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
+Header is a name for the tile which describes the tile's functionality. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
 The below example defines a tile that represents mail application.
 
 {% tabs %}
@@ -50,7 +50,7 @@ The below example defines a tile that represents mail application.
 
 ## Setting Title content 
 
- Title is used to display the notifications and updates in the tile. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
+ Title is used to display alerts and updates in the tile. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
 The below example represents the notifications in mail applications.
 
 {% tabs %}
@@ -66,7 +66,7 @@ The below example represents the notifications in mail applications.
 <!--setting title as a control-->
 <syncfusion:SfHubTile x:Name="hubTile" Width="300">
    <syncfusion:SfHubTile.Title>
-        <TextBox Text="This is title area."/>
+        <TextBlock Text="SYNCFUSION" Foreground="White" FontSize="13"/>
         </syncfusion:SfHubTile.Title>
   </syncfusion:SfHubTile>      
 {% endhighlight %}
@@ -74,7 +74,7 @@ The below example represents the notifications in mail applications.
 
 	//Setting title on HubTile
 	SfHubTile hubTile = new SfHubTile();
-	hubTile.Title = "This is title area in hubtile.";
+	hubTile.Title = "New Mail from Syncfusion";
 
 {% endhighlight %}
 {% endtabs %}
@@ -158,7 +158,7 @@ N> **Syncfusion.SfShared.Wpf** assembly should be included in Xaml or import **u
 
 ### Notifications on transitions
 
-As long as the tile is frozen, transitions occur repeatedly in hubtile for each specified interval. [HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event rises on each transition completion. Below example demonstrates the working of HubTileTransitionCompleted event in HubTile.
+HubTile transitions occurs repeatedly at each specified interval. [HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event rises on each transition completion. Below example demonstrates the working of HubTileTransitionCompleted event in HubTile.
 
 {% tabs %}
 {% highlight XAML%}
@@ -242,6 +242,135 @@ As long as the tile is frozen, transitions occur repeatedly in hubtile for each 
 {% endtabs %}
 
 ![wpf hubtile grouping](Getting-Started_images/wpf-hubtile-grouping.gif)
+
+### Grouping via DataBinding
+
+ Below example demonstartes how to populate a group of hubtiles inside a listview in MVVM pattern.
+1. Create a new WPF project.
+2. Create a  Model class and specify the elements of the HubTile 
+#### Model
+
+  {% tabs %}
+  {% highlight C#%}
+    
+    public class HubtileModel
+      {
+
+        public string Header { get; set; }
+ 
+        public string Imagesource { get; set; }
+
+        public TimeSpan Interval { get; set; }
+        
+        public string Secondarycontent { get; set; }
+     }
+   {% endhighlight %}
+   {% endtabs %}
+
+3. Create a ViewModel class Where the collection has been declared and populate the items into it.
+ #### ViewModel
+
+ {% tabs %}
+ {% highlight C# %}
+
+      public class Viewmodel
+      {
+        public ObservableCollection<HubtileModel> Items { get; set; }
+        public Viewmodel()
+        {
+            Items = new ObservableCollection<HubtileModel>();
+            PopulateData();
+            
+        }
+
+        private void PopulateData()
+        {
+            HubtileModel hub1 = new HubtileModel { Header="Mail",Imagesource=@"/Assets/New Mail.png",Interval=TimeSpan.FromSeconds(3.0),Secondarycontent="This is the Secondarycontent of the tile" };
+            HubtileModel hub2 = new HubtileModel { Header = "Word", Imagesource = @"/Assets/Word.png",Interval=TimeSpan.FromSeconds(3.0),Secondarycontent = "This is the Secondarycontent of the tile" };
+            HubtileModel hub3 = new HubtileModel { Header = "Paint", Imagesource = @"/Assets/Painting Brush.png",Interval=TimeSpan.FromSeconds(3.0), Secondarycontent = "This is the Secondarycontent of the tile" };
+            HubtileModel hub4 = new HubtileModel { Header = "NotePad", Imagesource = @"/Assets/Note.png",Interval=TimeSpan.FromSeconds(3.0), Secondarycontent = "This is the Secondarycontent of the tile" };
+            Items.Add(hub1);
+           Items.Add(hub2);
+            Items.Add(hub3);
+            Items.Add(hub4);
+        }  
+{% endhighlight %}
+{% endtabs %}
+
+4. In XAML bind the collection to the ListView control and use ItemTemplate to populate HubTile control into it.
+
+{% tabs %}
+{% highlight XAML%}
+<Window x:Class="HubTileGrouping_Sample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HubTileGrouping_Sample"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:viewmodel="clr-namespace:HubTileGrouping_Sample.ViewModel"
+        xmlns:shared="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.SfShared.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:ImageConverter x:Key="Image"/>
+    </Window.Resources>
+    <Window.DataContext>
+        <vm:Viewmodel/>
+    </Window.DataContext>
+    <Grid>
+    <ListView x:Name="List" ItemsSource="{Binding Items}" >
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+            <syncfusion:SfHubTile Header="{Binding Header}" Interval="{Binding Interval}" ImageSource="{Binding Imagesource,Converter={StaticResource Image}}">
+            <syncfusion:SfHubTile.SecondaryContentTemplate>
+            <DataTemplate>
+            <TextBlock Text="This is the secodary content of the tile displayed at each transition" TextWrapping="Wrap" FontStyle="Italic" FontSize="15" Foreground="White"/>
+            </DataTemplate>
+            </syncfusion:SfHubTile.SecondaryContentTemplate>
+            <syncfusion:SfHubTile.HubTileTransitions>
+            <shared:FadeTransition/>
+            </syncfusion:SfHubTile.HubTileTransitions>
+            </syncfusion:SfHubTile>
+            </StackPanel>
+
+        </DataTemplate>
+    </ListView.ItemTemplate>
+    </ListView>
+    </Grid>
+  </Window>
+{% endhighlight %}
+{% endtabs %}
+
+5. Converter class is used to set the ImagePath to an ImageSource by converting the ImagePath  which is specified as string in Viewmodel.
+#### Converter
+{% tabs %}
+{% highlight C#}
+
+        public class ImageConverter : IValueConverter
+        {
+            public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+            {
+                if (value != null)
+                {
+                string str = value.ToString();
+                var image = new Image();
+                image.Source = new BitmapImage(new Uri(str,UriKind.RelativeOrAbsolute));
+                return image.Source;
+                }
+                else
+                {
+                    return value;
+                }
+            }
+            public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+            {
+                throw new System.NotImplementedException();
+            }
+        }
+    {% endhighlight %}
+    {% endtabs %}  
 
 ## Freezing/UnFreezing 
 
@@ -476,7 +605,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
  
  ## Notifications and Animations
 
-  Certain changes occurs when the tile is pressed and is notified by the click event and the command property of the HubTile. 
+  Once the tile is pressed, it is notified by the click event and the command property of the HubTile. 
   
   The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
 
@@ -572,7 +701,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
 ### Animations
 
-The tile press animation causes the entire tile to be zoomed in/out at specified interval. You can set tile press animation by setting properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html)  and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) in the HubTile. The ScaleDepth is used to customize the depth of scaling effect while pressing the center of the tile. The TilePressDuration is used to determine the time taken for the single tile press animation.
+The tile press animation takes place when the center of the tile is pressed. The tile press animation causes the entire tile to be zoomed in/out at specified interval. You can set tile press animation by setting properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html)  and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) in the HubTile. The ScaleDepth is used to customize the depth of scaling effect while pressing the center of the tile. The TilePressDuration is used to determine the time taken for the single tile press animation.
 
    {% tabs %}
    {% highlight XAML %}
@@ -676,7 +805,7 @@ HeaderStyle is used to customize the header of the tile by setting the required 
 
 ### Customizing SecondaryContent
 
- You can customize the secondary content by the following two ways:
+ SecondaryContent specifies the contents to be displayed when the primary tile content changes during HubTileTransitions in the HubTile. You can customize the secondary content by the following two ways:
  1. [Customizing SecondaryContent via property](#customizing-secondarycontent-via-property)      
  2. [Customzing SecondaryContent via template](#customizing-secondarycontent-via-template)
 
