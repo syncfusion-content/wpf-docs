@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview| SkinManager | WPF | Syncfusion
+title: Overview of SkinManager| SkinManager | WPF | Syncfusion
 description: WPF Skin Manager Framework provides a convenient way to give the appealing appearance to the Syncfusion WPF controls at one place.
 platform: wpf
 control: SkinManager
 documentation: ug
 ---
 
-# SkinManager
+# SkinManager Overview
 
 The Skin Manager Framework provides a convenient way to give the appealing appearance to the WPF controls as well as the Syncfusion controls.
 
@@ -251,6 +251,36 @@ SkinStorage.SetMetroBrush(this, Brushes.Green);
 Metro Customization Demo
 {:.caption}
 
+
+## Performance
+
+The performance of SkinManager can be improved by setting the [EnableOptimization](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SkinStorage~SetEnableOptimization.html) property. So, all themes resource dictionaries merged to `Application.Resources` instead of merging resource dictionaries to each individual controls in the application. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ChromelessWindow x:Class="Sample.MainWindow"  x:Name="window" 
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x=http://schemas.microsoft.com/winfx/2006/xaml 
+                             xmlns:sfSample="clr-namespace:Sample"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+                             Title="MainWindow"
+                             syncfusion:SkinStorage.EnableOptimization="True" 
+                             syncfusion:SkinStorage.VisualStyle="Office2010Blue" >
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+ SkinStorage.SetEnableOptimization(window, true);
+ SkinStorage.SetVisualStyle(DependencyObject Object, “Office2010Blue”);
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## ResourceDictionary path for Syncfusion themes
 
 Resource Dictionary path for Syncfusion themes are tabulated below:
@@ -266,12 +296,13 @@ To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the a
 
 <ResourceDictionary>
 <ResourceDictionary.MergedDictionaries>
-<ResourceDictionary  Source="/Syncfusion.Shared.WPF;Component/SkinManager/                Office2010BlueStyle.xaml"/>
+<ResourceDictionary  Source="/Syncfusion.Shared.WPF;Component/SkinManager/Office2010BlueStyle.xaml"/>
 </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
 
 {% endhighlight %}
 {% endtabs %}
+
 
 ### Controls table
 

@@ -1,18 +1,20 @@
 ---
 layout: post
-title: State Persistence | Docking Manager | Syncfusion
-description: Learn how to serialize and de-serialize the state of DockingManager child windows
+title: State Persistence in DockingManager | Docking Manager | Syncfusion
+description: Learn how to serialize and de-serialize the state of DockingManager child windows using various functionalities.
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Getting Started
+# Getting Started of State Persistence
 
 State persistence is the combined process of serialization and deserialization. 
 
 DockingManager provides built-in state persistence functionality to save and load at different states and sides. It also provides [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DeleteDockState().html) and [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ResetState.html) Method to work on state functionality.
 
 To reset the DockingManager state, call [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ResetState.html) method of DockingManager instance.
+
+N> DockingManager serializes and de-serializes the controls using `Name` property. So, ensure to set `Name` property for all child controls. The name of children in saved layout should be same as the name of children in DockingManager to load the saved layout. `LoadDockState` returns `true` or `false` to notify whether de-serialization process has been successful.
 
 {% tabs %}
 
@@ -109,7 +111,7 @@ Since the DockingManager state persistence feature implemented in such a way tha
 
 ### Notification for load DockState
 
-When the children collection of DockingManager is changed dynamically after persisting the layout, incorrect layout may load.  Success of loading of persisted state can be decided by return value of [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~LoadDockState().html) method. When the child count is same and then DockingManager checks the Name of the child in the collection, if the Name of the child in loaded state is different from the persisted child in the collection, DockingManager fails to load the saved layout. In such cases, false value will be returned by the `LoadDockState` method of DockingManager.
+When the children collection of DockingManager is changed dynamically after persisting the layout, incorrect layout may load.  Success of loading of persisted state can be decided by return value of [LoadDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~LoadDockState().html) method. When the child count is same and then DockingManager checks the Name of the child in the collection. if the Name of the child in loaded state is different from the persisted child in the collection, DockingManager fails to load the saved layout. In such cases, `false` value will be returned by the `LoadDockState` method of DockingManager.
 
 ## Various formats to Save / Load states
 
