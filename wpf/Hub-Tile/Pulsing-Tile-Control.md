@@ -13,7 +13,7 @@ documentation: ug
 
 ## Setting Header content
 
-Header is a name given to the tile that describes the functionality of the tile. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property. The below example demonstrates a music tile with header as music.
+Header is a name for the tile that describes the tile's functionality. The  content of the header can be an image, a text or a control, etc. You can set header to the tile by setting [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property. The below example demonstrates a music tile with header as music.
 
 {% tabs %}
 {% highlight XAML %}
@@ -49,7 +49,7 @@ Header is a name given to the tile that describes the functionality of the tile.
 
 ## Setting Title content
 
- Title is used to display the notifications in the tile. The content can be an image, a text or a control, etc. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property. The below example demonstrates the music tile with specific notifications.
+ Title is used to display alerts and updates in the tile. The content can be an image, a text or a control, etc. You can set title to the tile by setting [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property. The below example demonstrates the music tile with specific notifications.
 
 {% tabs %}
 {% highlight XAML %}
@@ -73,7 +73,7 @@ Header is a name given to the tile that describes the functionality of the tile.
 
     //Setting title for PulsingTile
     SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Title = "This is title area in pulsingtile.";
+    pulsingTile.Title = "Now Playing-Song Name";
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,7 +127,7 @@ You can change animation of the pulsing tile by using PulseScale, RadiusX and Ra
 
 ### Duration of scaling animation
 
-The time required to complete a single scaling animation in the pulsingtile is set by [PulseDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~PulseDuration.html) property.  
+The time required to complete a single scaling animation is achieved by setting the [PulseDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~PulseDuration.html) property.  
 
 {% tabs %}
 {% highlight XAML %}
@@ -190,7 +190,7 @@ Horizontal translation allows the content of the tile to move from left to right
 
 ### Duration of translation
 
-The time taken for translating the content along the x-axis and y-axis is set by [TranslateDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~TranslateDuration.html) property.
+The time taken for translating the content along the x-axis and y-axis is achieved by setting the [TranslateDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfPulsingTile~TranslateDuration.html) property.
 
 {% tabs %}
 {% highlight XAML %}
