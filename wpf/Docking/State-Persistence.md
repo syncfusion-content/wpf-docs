@@ -14,7 +14,7 @@ DockingManager provides built-in state persistence functionality to save and loa
 
 To reset the DockingManager state, call [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ResetState.html) method of DockingManager instance.
 
-N> DockingManager serializes and de-serializes the controls using `Name` property. So, ensure to set `Name` property for all child controls. The name of children in saved layout should be same as the name of children in DockingManager to load the saved layout. `LoadDockState` returns `true` or `false` to notify whether de-serialization succeeded.
+N> DockingManager serializes and de-serializes the controls using `Name` property. So, ensure to set `Name` property for all child controls. The name of children in saved layout should be same as the name of children in DockingManager to load the saved layout. `LoadDockState` returns `true` or `false` to notify whether de-serialization process has been successful.
 
 {% tabs %}
 
