@@ -152,3 +152,5 @@ richTextBoxAdv.LoadAsyncSettings.ShowPageNumber = false
 {% endhighlight %}
 
 {% endtabs %}
+
+N> This API is supported starting from release version v17.4.0.X.

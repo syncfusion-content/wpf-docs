@@ -382,6 +382,8 @@ richTextBoxAdv.LostFocusBehavior = LostFocusBehavior.ShowSelection
 
 {% endtabs %}
 
+N> This API is supported starting from release version v17.4.0.X.
+
 ## How to determine the editing context type
 
 The SfRichTextBoxAdv control allows you to know the editing context type based on the selected content. The following are the editing context types:
