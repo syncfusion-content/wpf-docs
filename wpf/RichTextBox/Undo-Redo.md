@@ -1,12 +1,12 @@
 ---
-title: Undo Redo
-description: undo-redo
+title: Undo Redo | WPF RichTextBox | Syncfusion
+description: This section illustrates about editing history preservation support in WPF RichTextBox control.
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: undo-redo
 ---
-# Undo Redo
+# Undo Redo in WPF RichTextBox
 
 The SfRichTextBoxAdv provides history preservation support, which means each editing operation performed against its document content will be preserved in history. You can easily undo any editing action with ease. The undone actions will also be preserved in a separate stack enabling you to redo the action again.
 
