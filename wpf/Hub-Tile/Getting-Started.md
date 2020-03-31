@@ -25,7 +25,7 @@ In this walk through, you will create WPF application that contains HubTile and 
 
 ### Adding control via Designer
 
-HubTile and PulsingTile controls can be added to the application by dragging  SfHubTile and SfPulsingTile from Toolbox and dropping it in Designer view. After dropping the controls in Designer View, the assemblies such as **Syncfusion.SfHubTile.WPF** and **Syncfusion.SfShared.WPF** gets added into the project.The following code snippets will be added into XAML.
+HubTile and PulsingTile controls can be added to the application by dragging  SfHubTile and SfPulsingTile from Toolbox and dropping it in Designer view. After dropping the controls in designer view, the assemblies such as **Syncfusion.SfHubTile.WPF** and **Syncfusion.SfShared.WPF** gets added into the project.The following code snippets will be added into XAML.
 
 {% tabs %}
 {% highlight XAML %}
@@ -93,6 +93,7 @@ In order to add control manually in C#, do the below steps,
 {% endhighlight %}
 {% highlight C# %}
 using Syncfusion.Windows.Controls.Notification;
+
 namespace SfHubTileSample
 {
 
@@ -111,7 +112,7 @@ namespace SfHubTileSample
 			grid.Children.Add(pulseTile);
 		}
 	}
-	}
+}
 
 {% endhighlight %}
 {% endtabs %}
