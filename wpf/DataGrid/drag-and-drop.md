@@ -280,7 +280,7 @@ To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfus
 
 ### Customize draggable popup to show corresponding dragging row data 
 
-To customize draggable popup to show corresponding dragging row data, use the [RowDragDropTemplate](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowDragDropTemplate.html) property in the SfDataGrid.
+You can show the corresponding dragging row data in draggable popup by using `RowDragDropTemplate` property in the SfDataGrid.
 
 {% tabs %}
 {% highlight xaml %}
