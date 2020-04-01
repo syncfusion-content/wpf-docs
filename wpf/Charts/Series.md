@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series| SfChart | Wpf | Syncfusion
-description: Learn how to create plotting area properties and customization of chart header, area,multiple areas,serialization and chart events
+description: Learn how to create a plotting area properties and customization of chart header, area,multiple areas,serialization, and chart events
 platform: wpf
 control: SfChart
 documentation: ug
