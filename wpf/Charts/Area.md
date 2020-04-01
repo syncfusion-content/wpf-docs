@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion WPF Chart Area and its properties. 
-description: Learn how to create a plotting area properties, Chart Header, Area Customization,Multiple Area, Serialization, Chart events.
+description: Learn how to create a plotting area properties and customiztaion of chart header, area, multiple area, serialization, and chart events.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -922,10 +922,10 @@ The [`ResetZooming`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfC
 
 This [`SeriesBoundsChanged`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesBoundsChanged_EV.html) event occurs when the size of the chart is changed. The event arguments contain the following information.
 
-* [`NewBounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBoundsEventArgs~NewBounds.html) – Gets the [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) of the chart after the chart’s size changed.
-* [`OldBounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBoundsEventArgs~OldBounds.html) – Gets the [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) of the chart before the chart’s size changed.
+* [`NewBounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBoundsEventArgs~NewBounds.html) – Gets the [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) of the chart after the charts size changed.
+* [`OldBounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBoundsEventArgs~OldBounds.html) – Gets the [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) of the chart before the charts size changed.
 
-The [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) is the region that contains the series excluding axis and chart header. This region is highlighted in red border in the chart below.
+The [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) is the region that contains the series excluding axis and chart header. This region is highlighted in red border in the chart as follows.
 
 
 **See also**
