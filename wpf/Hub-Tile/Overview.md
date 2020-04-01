@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Hub Tile | WPF | Syncfusion
-description: WPF Hub Tile provides live tile updates and notifications to your application same as produced in live tile feature in latest Windows OS.
+description: WPF Tile Control provides the application with live updates and notifications similar to Windows Desktop and Windows Phone.
 platform: WPF
 control: SfHubTile
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Overview
 
-The tile provides live updates and notification similar to the tile functionality in Windows Desktop and Windows Phone. The tile can have an image, title and header to update on the tile.
+The WPF hub tile and pulsing tile controls are used to create a UI similar to the tile feature in Windows Desktop and Mobile. It can be arranged in different layouts and provides updates and notifications with various transitions effects.
 
 ## Key Features
 
-* HubTile – Supports tile feature similar to Windows Desktop and Windows Phone. It also supports various transition effects and also provides support for displaying primary and secondary content.
+* Hub Tile – Supports tile feature similar to Windows Desktop and Windows Phone. It also supports various transition effects and provides support for the display of primary and secondary content for updates and notifications.
 
-* PulsingTile – Supports tile feature similar to music and video tiles in Windows Phone. The control allows the content to be zoomed in/out and translates the content across the x-axis and y-axis.
+* Pulsing Tile – Supports tile feature similar to music and video tiles in Windows Phone. The control allows the content to be zoomed in/out and translates the content across the x-axis and y-axis.
   
 * Grouping - Support for grouping multiple tiles together.
 
