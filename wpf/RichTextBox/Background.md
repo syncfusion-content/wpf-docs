@@ -127,3 +127,5 @@ Pages layout:
 
 Continuous layout:
 ![Continuos layout](Image_images/continous_layout.PNG)
+
+N> This API is supported starting from release version v17.4.0.X.
