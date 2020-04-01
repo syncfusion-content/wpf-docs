@@ -426,7 +426,7 @@ You can unfreeze a single tile or a group of tiles using [UnFreeze](https://help
 
 ## Notifications and Animations
 
- Certain changes occurs when the tile is pressed and is notified by the click event and the command property of the PulsingTile. 
+Once the tile is pressed, it is notified by the click event and the command property of the PulsingTile. 
 
   The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
 
