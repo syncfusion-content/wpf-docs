@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Interaction
+# Interactions on diagram
 
 ## Selection
 
