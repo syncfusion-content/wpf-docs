@@ -6,7 +6,7 @@ control: SfRichTextBoxAdv
 documentation: ug
 keywords: import, export, load, save
 ---
-# Import and Export
+# Import and Export in WPF RichTextBox
 
 The SfRichTextBoxAdv allows you to import/export word documents (.docx, .doc), rich text format documents (.rtf), HTML documents (.htm, .html), XAML documents (.xaml) and text documents (.txt).
 The following sample code demonstrates how to import contents from a file into SfRichTextBoxAdv.
@@ -152,3 +152,5 @@ richTextBoxAdv.LoadAsyncSettings.ShowPageNumber = false
 {% endhighlight %}
 
 {% endtabs %}
+
+N> This API is supported starting from release version v17.4.0.X.
