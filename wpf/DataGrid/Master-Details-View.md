@@ -2044,3 +2044,41 @@ Following are the limitations of Master-Details View in SfDataGrid.
 5. Master-Details View doesn’t support Freeze Pane.
 6. Master-Details View doesn’t support `AutoRowHeight`.
 7. For `DetailsViewDataGrid`, `SelectionMode`, `SelectionUnit`, `NavigationMode`, `DetailsViewPadding` properties are assigned from its parent grid only. So both parent DataGrid and `DetailsViewDataGrid` cannot have different values for these properties.
+
+## See Also
+
+[How to maintain the DetailsView expanded state when Sorting and Grouping the DataGrid (SfDataGrid)?](https://www.syncfusion.com/kb/11032)
+
+[How to set the background for selected DetailsViewGrid?](https://www.syncfusion.com/kb/9329/)
+
+[How to load the button command inside the Detailsview datagrid column and setting AncestorLevel?](https://www.syncfusion.com/kb/7205)
+
+[How to export the DetailsView records in expanded state to Excel?](https://www.syncfusion.com/kb/7199)
+
+[How to print the SfDataGrid with DetailsView?](https://www.syncfusion.com/kb/6937)
+
+[How to get the SelectedItem of the DetailsView?](https://www.syncfusion.com/kb/6922)
+
+[How to bind SelectedItem and CurrentItem in DetailsViewDataGrid](https://www.syncfusion.com/kb/6704)
+
+[How to get the CurrentCell for DetailsViewDatagrid at runtime?](https://www.syncfusion.com/kb/6308)
+
+[How to add a new record in specific DetailsViewDataGrid ?](https://www.syncfusion.com/kb/6287)
+
+[How to hide the key mapping column in DetailsViewDataGrid?](https://www.syncfusion.com/kb/6204)
+
+[How to resize the parent grid and DetailsViewDataGrid simultaneously?](https://www.syncfusion.com/kb/5279)
+
+[How to create Custom Column in the DetailsViewDataGrid?](https://www.syncfusion.com/kb/4237)
+
+[How to change the background color of the Header alone in DetailsView or Nested Grid?](https://www.syncfusion.com/kb/3209)
+
+[How to prevent resizing the last column, when parent Grid width is less than the child Grid width?](https://www.syncfusion.com/kb/3109)
+
+[How to change the ColumnSizer for the Nested grid?](https://www.syncfusion.com/kb/2478)
+
+[How to get the parent grid while editing the child grid?](https://www.syncfusion.com/kb/2472)
+
+[How to enable NestedGrid when I don't have relations in my datasource](https://www.syncfusion.com/kb/2458)
+
+[How to hide the HeaderRow in Nested Grid?](https://www.syncfusion.com/kb/2443)

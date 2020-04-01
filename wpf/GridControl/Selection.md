@@ -1,27 +1,43 @@
 ---
 layout: post
 title: Range and Record selection in WPF Grid | Syncfusion
-description: This section will explains about the range and record selection options and different selection modes available in WPF Grid Control.
+description: This section will explains about the range and record selection options and different selection modes available in WPF GridControl.
 platform: wpf
-control: Grid
+control: GridControl
 documentation: ug
 ---
 
 # Selection in WPF GridControl
 
-WPF Grid Control supports for range and record selection modes. Selection will highlight the specified range. 
+WPF GridControl supports for range and record selection modes. Selection will highlight the specified range. 
 
-* Range Selection
-* Record Selection 
+## Selection modes
 
+There are two modes of selection available in the GridControl. They are,
 
-## Range Selection
+* Range selection
+* Record selection 
+
+### Range selection
+
+1. In Range selection, you will be able to select cell ranges; but the selections will have no knowledge of nested tables, grouping or sorting and hence the functionality is limited like a data bound grid (GridData control). 
+2. To use the model selection capability, set AllowSelections to any flag except none.
+3. Selection can be made through keyboard and mouse.
+
+### Record selection 
+
+1. It is designed specifically for the data bound grids.
+2. In Record selection, the complete grid records (rows) will be selected and these selections function properly with nested tables, sorting, and so on. 
+3. To use the record selections, you must set AllowSelections to none and then set ListBoxSelectionMode to any flag except none.
+4. Selection can be made through keyboard and mouse with some restriction. For more details, see Record-based Selection in this topic.
+
+## Range selection
 
 Range selection is a cell-based selection mode that allows you to do a selection across the cell by using the [AllowSelection](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~AllowSelection.html) property. It accepts value from [GridSelectionFlags](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridSelectionFlags.html) enumeration. Default value for `AllowSelection` is `Any` and the specified range of Cell/Row/Column or Table can be highlighted using the range section.
 
 The possible values for this type of selection are defined by the enum GridSelectionFlags. To control the selection behavior of the grid, set any of the following flags to the AllowSelection property. 
 
-### Selection Flags
+### Selection flags
 
 <table>
 <tr>
@@ -80,7 +96,7 @@ grid.Model.Options.AllowSelection = GridSelectionFlags.Multiple | GridSelectionF
 
 ![Selecting multiple Columns](Selection-Images/MultipleSelection.jpeg)
 
-## Record Selection
+## Record selection
 
 This type of selection mechanism allows selection in terms of record (entire row). It is not cell-based. This selection mode is specifically designed for a data-bound grid, in which the grid data can be organized as a collection of record rows. 
 
@@ -184,7 +200,7 @@ Returns the number of selected rows.</td></tr>
 Returns the number of selected columns.</td></tr>
 </table>
 
-## Selection appearance Customization
+## Selection appearance customization
 
 It is possible to modify the appearance of the selection through property settings. The following properties work in combinations to produce some special effects.
 
@@ -253,7 +269,7 @@ grid.Model.Options.HighlightSelectionForeground = Brushes.Red;
 
 ![Foreground of the selection set to pink](Selection-Images/SelectionForeground.jpeg)
 
-## Excel-like Selection Frame
+## Excel-like selection frame
 
 The active selection can be outlined with a selection frame by setting the [GridModelOptions.ExcelLikeSelectionFrame](https://help.syncfusion.com/cr/wpf/Syncfusion.Grid.Wpf~Syncfusion.Windows.Controls.Grid.GridModelOptions~ExcelLikeSelectionFrame.html) property to `true`.
 
@@ -325,3 +341,14 @@ class ExcelGrid : GridControl
 ![Grid with markup headers](Selection-Images/HighLightHeaders.jpeg)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/Row-and-column-header-highlighting-based-on-selection-in-WPF-Grid-Control)
+
+
+## See also
+
+[How to get first and last selected row index](https://www.syncfusion.com/kb/11183)
+
+[How to set extended selection mode to select a row when user-click-a-cell](https://www.syncfusion.com/kb/11185)
+
+[How to avoid selection header cell](https://www.syncfusion.com/kb/11186)
+
+[How to programmatically invert selection](https://www.syncfusion.com/kb/11195)

@@ -1,343 +1,393 @@
 ---
 layout: post
 title: Filtering items in WPF PropertyGrid control | Syncfusion
-description: This section explains about how the property items are filtered through attributes, event and proeprty of PropertyGrid
+description: This section explains about how the property items are filtered through attributes, event and property of WPF PropertyGrid control
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Filtering property items
+# Filtering and Searching the properties in WPF PropertyGrid
 
-The user can decide the properties which are need to be displayed in PropertyGrid. This section explains about how the visibility of property items are handled in different ways,
+We can decide the properties which are need to be displayed in [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) by hiding the unwanted properties using collection and attributes. We can navigate to the particular property by using the default SearchBox.
 
-## Option to Hide the items
+## Hide the Properties using Collection
 
-In PropertyGrid, [HidePropertiesCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~HidePropertiesCollection.html) property is used to hide the mentioned properties which are already present in SelectedObject. Properties can also be hide at the run time using this property.
+We can hide the properties using the [HidePropertiesCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~HidePropertiesCollection.html) property. It is used to hide the mentioned properties which are already present in [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html). Properties can also be hidden at runtime using  `HidePropertiesCollection`.
 
 {% tabs %}
+{% highlight C# %}
 
+public class Employee {
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public string Bank { get; set; }
+    public string ID { get; set; }
+    public string AccountNumber { get; set; }
+    public int Age { get; set; }
+    public int Experience { get; set; }
+}
+
+ public class ViewModel {
+    private ObservableCollection<string> hidePropertyItems = new ObservableCollection<string>();
+    public Object SelectedEmployee { get; set; }
+    public ObservableCollection<string> HidePropertyItems
+    {
+        get { return hidePropertyItems; }
+        set { hidePropertyItems = value; }
+    }
+    public ViewModel() {
+        var employee = new Employee()
+        { 
+            Email = "john@gta.com",
+            AccountNumber="23456784",
+            Bank="ABC bank",
+            Name = "Johnson",
+            Experience=5,
+            ID = "895",
+            Age = 35,
+        };
+        HidePropertyItems.Add(nameof(employee.AccountNumber));
+        HidePropertyItems.Add(nameof(employee.Email));
+        HidePropertyItems.Add(nameof(employee.Bank));
+        SelectedEmployee = employee;
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+
+{% tabs %}
 {% highlight xaml %}
 
-<syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"  Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center"  VerticalAlignment="Stretch" LineColor="Red" CategoryForeground="Black">
+<syncfusion:PropertyGrid HidePropertiesCollection="{Binding HidePropertyItems}" 
+                         SelectedObject="{Binding SelectedEmployee}" 
+                         x:Name="propertyGrid1" Width="350" Height="200" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
 </syncfusion:PropertyGrid>
 
-{% endhighlight  %}
-
-{% highlight c# %}
-
-this.propertyGrid.HidePropertiesCollection.Add("ActualWidth");
-this.propertyGrid.HidePropertiesCollection.Add("ActualHeight");
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-N>`HidePropertiesCollection` cannot hide the properties which are added through `DynamicDescriptor`.
-
-## Browsable and Bindable Attribute
-
-If the property has [Browsable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.browsableattribute?view=netframework-4.8) as false or [Bindable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.bindableattribute?view=netframework-4.8) as false, that properties will not be shown in PropertyGrid. Functionalities of Browsable and Bindable attributes are same. 
-
-{% tabs %}
-
-{% highlight C# %}
-
-        [Browsable(false)]
-        public string ID
-        {
-            get;
-
-            set;
-        }
-
-
-        [Bindable(false)]
-        public DateTime DOB
-        {
-            get;
-
-            set;
-        }
-       
-        public Gender Gender
-        {
-            get;
-
-            set;
-        }
-       
-        public Country Country
-        {
-            get;
-
-            set;
-        }
-        
 {% endhighlight %} 
-
-{% endtabs %} 
-
-
-The following screenshot illustrates that the ID and DOB properties are not displayed in the property grid.
-
-![ID and DOB is not displayed in propertygrid](Filtering-Images\Bindable-Browsable-Attribute.png)
-
-## Display attribute with AutoGeneratedField
-
-If a property has the value of `Browsable` attribute is true and `Bindable` attribute is true and the [AutoGeneratedField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_AutoGenerateField) of DisplayAttribute is false then the property item will not be added to the property collection of PropertyGrid and not visible in the UI. Value of AutoGeneratedField has no effect when the property is marked Browsable or Bindable as false.
-
-{% tabs %}
-
 {% highlight C# %}
 
-        [Display(Description = "ID of the employee")]
-        public string ID
-        {
-            get;
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
 
-            set;
-        }
-
-
-        [Display(AutoGenerateField = false)]
-        public DateTime DOB
-        {
-            get;
-
-            set;
-        }
-
-        [Browsable(false)]
-        [Display(AutoGenerateField = true)]
-        public Gender Gender
-        {
-            get;
-
-            set;
-        }
-        
-        public Country Country
-        {
-            get;
-
-            set;
-        }
-
-{% endhighlight %}  
-
+{% endhighlight %} 
 {% endtabs %} 
 
+![AccountNumber, Bank and Email properties are not displayed in PropertyGrid](Filtering-Images\HideItemCollection.png)
 
-The following screenshot illustrates that DOB and Gender properties are not displayed in property grid.
+Here, the `PropertyGrid` hides the properties `AccountNumber`, `Bank` and `Email` properties which are specified in the `HidePropertiesCollection`.
 
-![Gender and DOB is not added in propertygrid](Filtering-Images\AutoGeneratedField.png)  
+N>`HidePropertiesCollection` cannot hide the properties which are added using `DynamicDescriptor`.
 
-Refer to this [`sample`](https://github.com/SyncfusionExamples/Filtering-the-property-items-of-PropertyGrid-through-attributes) to get details about filtering properties through attributes.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/HidePropertyByCollection) to download the sample that showcases the filtering  support using the `HidePropertiesCollection`.
 
-## Restrict generation of property items through event
+## Hide the Properties using Attributes
 
-Properties of SelectedObject has been read and the properties will be added to the property collection of PropertyGrid. From the collection of property grid, property item will be displayed in the grid. Generation of property items in the property collection of PropertyGrid can be restricted through [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event by setting `Cancel` property as `true`.  `AutoGeneratingPropertyGridItemEventArgs` provides the information about the property item of PropertyGrid.
-
-<table>
-<tr>
-<th> S.No </th>
-<th> Argument </th>
-<th> Data Type </th>
-<th> Details </th>
-</tr>
-<tr>
-<td> 1</td>
-<td> DisplayName </td>
-<td> String </td>
-<td> Specifies the display name of the property item and the display name can be modified through this.
-</td>
-</tr>
-</tr>
-<tr>
-<td> 2</td>
-<td> ReadOnly </td>
-<td> Boolean </td>
-<td> Specifies whether the property value is editable or not. 
-</td>
-</tr>
-</tr>
-<tr>
-<td> 3</td>
-<td> Description </td>
-<td> String </td>
-<td> Specifies the description about the property item of the PropertyGrid and the description can be modified through this.
-</td>
-</tr>
-</tr>
-<tr>
-<td> 4</td>
-<td> Category </td>
-<td> String </td>
-<td> Specifies the Category of property item. Based on the category property items will be grouped and the category can be modified through this.
-</td>
-</tr>
-</tr>
-<tr>
-<td> 5</td>
-<td> Order </td>
-<td> Nullable int </td>
-<td> Specifies the order of the property item. Based on the order property item will be arranged in the property grid and the order of the property item can be modified through this. 
-</td>
-</tr>
-</table>
+We can hide properties by setting the [Browsable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.browsableattribute?view=netframework-4.8) value as `false` or [Bindable](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.bindableattribute?view=netframework-4.8) as `false`, which properties will not be displayed in `PropertyGrid`. Functionalities of `Browsable` and `Bindable` attributes are same.  
 
 {% tabs %}
-
 {% highlight C# %}
 
-    [Editor(typeof(ImageSource), typeof(ImageViewer))]
-    public class Person
-    {
-        public Person()
+using System;
+using System.ComponentModel;
+
+public class Employee {
+    [Browsable(false)]
+    public string Bank { get; set; }
+    [Bindable(false)]
+    public string AccountNumber { get; set; }
+    [Browsable(false)]
+    public string Email { get; set; }
+    public string Name { get; set; } 
+    public string ID { get; set; }       
+    public int Age { get; set; }
+    public int Experience { get; set; }
+}
+
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
         {
-            FirstName = "Carl";
-            LastName = "Johnson";
-            Age = 30;
-            Mobile = 91983467382;
-            Email = "carljohnson@gta.com";
-            ID = "0005A";
-            DOB = new DateTime(1987, 10, 16);
-            string path = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            Image = new BitmapImage(new Uri(path + @"\carl.png", UriKind.RelativeOrAbsolute));
-            Designation = "Team Lead";
-        }
-        
-        public Gender Gender
-        {
-            get;
-
-            set;
-        }
-
-        public Country Country
-        {
-            get;
-
-            set;
-        }
-
-        public string Email
-        {
-            get;
-
-            set;
-        }
-
-        public string FirstName
-        {
-            get;
-
-            set;
-        }
-
-        public string Designation
-        {
-            get;
-
-            set;
-        }
-
-        public string LastName
-        {
-            get;
-
-            set;
-        }
-
-        public string ID
-        {
-            get;
-
-            set;
-        }
-
-        public DateTime DOB
-        {
-            get;
-
-            set;
-        }
-
-        public long Mobile
-        {
-            get;
-
-            set;
-        }
-
-        public int Age
-        {
-            get;
-
-            set;
-        }
-
-        public ImageSource Image
-        {
-            get;
-
-            set;
-        }
+            Email = "john@gta.com",
+            AccountNumber = "23456784",
+            Bank = "ABC bank",
+            Name = "Johnson",
+            Experience = 5,
+            ID = "895",
+            Age = 35,
+        };
     }
-{% endhighlight %}  
-{% endtabs %}
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
-<propertyGrid:PropertyGrid BorderThickness="0" x:Name="pgrid"
-                                     SearchBoxVisibility="Visible" 
-                                     ButtonPanelVisibility="Visible"
-                               DescriptionPanelVisibility="Visible"
-                                     DefaultPropertyPath="Age"
-                                     AutoGeneratingPropertyGridItem="Pgrid_AutoGeneratingPropertyGridItem"
-                                     SortDirection="{x:Null}" EnableGrouping="True"
-                                     SelectedPropertyItem="{Binding SelectedPropertyItem, Mode=TwoWay}">
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"                   
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
 
-            <propertyGrid:PropertyGrid.SelectedObject>
-                <local:Person/>                  
-            </propertyGrid:PropertyGrid.SelectedObject>
-
-        </propertyGrid:PropertyGrid>
-      
 {% endhighlight %}
-
 {% highlight C# %}
 
-private void Pgrid_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e)
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+
+{% endhighlight %}
+{% endtabs %} 
+
+![AccountNumber, Bank and Email properties are not displayed in PropertyGrid](Filtering-Images\HideItem-Attribute.png)
+
+Here, the `PropertyGrid` not displayed the `AccountNumber`, `Bank` and `Email` properties which are specified `Browsable` and `Bindable` attribute value as `false`. 
+
+N> If we use both the `Browsable` and `Bindable` attributes, the `Browsable` attribute have a higher priority.
+
+### Hide the Properties using Display.AutoGeneratedField
+
+If a property has the value of `Browsable` attribute as `true` and `Bindable` attribute as `true`, then properties are not hidden. We can hide the property by using the [AutoGeneratedField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?view=netframework-4.8#System_ComponentModel_DataAnnotations_DisplayAttribute_AutoGenerateField) of `Display` as `false`. Value of `AutoGeneratedField` has no effect when the property is marked `Browsable` or `Bindable` as `false`.
+
+{% tabs %}
+{% highlight C# %}
+
+public class Employee
+{        
+    [Browsable(true)]
+    [Bindable(true)]
+    [Display(AutoGenerateField = false)]
+    public string Bank { get; set; }
+    [Display(AutoGenerateField = false)]
+    [Browsable(true)]
+    [Bindable(true)]
+    public string AccountNumber { get; set; }  
+    [Browsable(false)]
+    [Bindable(true)]
+    [Display(AutoGenerateField = false)]
+    public string ID { get; set; }      
+    public string Email { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public int Experience { get; set; }
+}
+
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
         {
-            if (e.DisplayName == "Image")
-            {
-                e.Cancel = true;
-            }
+            Email = "john@gta.com",
+            AccountNumber = "23456784",
+            Bank = "ABC bank",
+            Name = "Johnson",
+            Experience = 5,
+            ID = "895",
+            Age = 35,
+        };
+    }
+}
 
-            if(e.DisplayName == "DOB")
-            {
-                e.Order = 0;
-                e.DisplayName = "Date of Birth";
-                e.Category = "Itentity";
-                e.Description = "Birth date of the employee";
-                e.ReadOnly = true;
-            }
-        }
-      
 {% endhighlight %} 
+{% endtabs %} 
 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"          
+                         x:Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+
+{% endhighlight %} 
+{% endtabs %} 
+
+![AccountNumber and Bank properties are not displayed in PropertyGrid](Filtering-Images\HideItem-AutoField.png)
+
+Here, the `PropertyGrid` not displayed the `Bank` and `AccountNumber` properties. The `Bank` and `AccountNumber` property are not displayed by value of `Browsable` attribute as `true` and `Bindable` attribute as `true` and the `AutoGeneratedField` of `DisplayAttribute` is `false`.In `ID` property, the `Browsable` is `false`, then the `AutoGeneratedField` property have no effect. 
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/HidePropertyByAttribute) to download the sample that showcases the filtering  support using the attributes.
+
+## Hide the Properties at runtime
+
+We can hide the properties in the `PropertyGrid` without using the attributes at runtime by handling the [AutoGeneratingPropertyGridItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~AutoGeneratingPropertyGridItem_EV.html) event with [AutoGeneratingPropertyGridItemEventArgs.Cancel](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.AutoGeneratingPropertyGridItemEventArgs.html) property as `true`.
+   
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+public class Employee {
+    public string Name { get; set; }
+    public string ID { get; set; }
+    public DateTime DOB { get; set; }
+    public int Experience { get; set; }
+}
+
+public class ViewModel {
+    public object SelectedEmployee { get; set; }
+
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24),
+            Experience = 5;
+        };
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid AutoGeneratingPropertyGridItem="PropertyGrid1_AutoGeneratingPropertyGridItem"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+propertyGrid1.AutoGeneratingPropertyGridItem += PropertyGrid1_AutoGeneratingPropertyGridItem;
+
+{% endhighlight %} 
+{% endtabs %} 
+
+{% tabs %}
+{% highlight C# %}
+
+private void PropertyGrid1_AutoGeneratingPropertyGridItem(object sender, AutoGeneratingPropertyGridItemEventArgs e) {
+    //Name and Experience properties hided in the PropertGrid control.
+    if (e.DisplayName == "Experience") {
+        e.Cancel = true;
+    }
+    else if (e.DisplayName == "Name") {
+        e.Cancel = true;
+    }
+}
+
+{% endhighlight %} 
+{% endtabs %} 
+
+![Designation and Age properties are not displayed in PropertyGrid](Filtering-Images\AutoGeneratingPropertyGridItem.png)
+
+Here, the `Experience` and `Name` properties are not displayed in the `PropertyGrid`, since the properties was restricted to be added in `PropertyGrid` by the `AutoGeneratingPropertyGridItem` event.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/AutoGeneratingPropertyGridItem%20event) to download the sample that showcases the property filtering support using `AutoGeneratingPropertyGridItem` event.
+
+## Searching the Properties
+
+If the `PropertyGrid.SelectedObject` contains more properties, it is difficult to find the specific property. Now, we can easily get the required properties by searching the property name in the SearchBox. SearchBox will be filter and display the properties which are contains the searched text. SearchBox is shown by default, we can hide it by setting [SearchBoxVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SearchBoxVisibility.html) property as `Collapsed`.
+
+{% tabs %}
+{% highlight C# %}
+
+public class Employee {
+    public int Age { get; set; }
+    public string Name { get; set; }
+    public string EmailID { get; set; }
+    public string ID { get; set; }
+}
+
+public class ViewModel {
+    public object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        { 
+            EmailID="johnson@gta.com",
+            Age = 23, 
+            ID = "1207", 
+            Name = "John Son"
+        };
+    }
+}
+
+{% endhighlight %} 
 {% endtabs %}
 
-The following screenshot illustrates that the `Image` property item is not displayed in the PropertyGrid, since the item was restricted to be added in collection and all the settings of `DOB` has been modified. 
+**SearchBoxVisibility = Visible**
 
-![Properties are grouped based on the value specified in the Category attribute](Filtering-Images\Event-PropertyItem.png)
+{% tabs %}
+{% highlight xaml %}
 
-Here, the `Date of Birth` property has been grouped under the specified category,
+<syncfusion:PropertyGrid Name="propertyGrid1" SelectedObject="{Binding SelectedEmployee }" SearchBoxVisibility="Visible" />
 
-![Properties are grouped based on the value specified in the Category attribute](Filtering-Images\Event-CategoryItemChanged.png)
+{% endhighlight %} 
+{% highlight C# %}
 
-Refer to this [`sample`](https://github.com/SyncfusionExamples/Filtering-properties-of-WPF-PropertyGrid-through-event) to get details about filtering properties through event.
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+propertyGrid1.SearchBoxVisibility = Visibility.Visible;
+
+{% endhighlight %} 
+{% endtabs %}
+
+![SearchBox filter the Age property in PropertyGrid](Filtering-Images\Searching.png)
+
+Here, The `Age` property is searched in the SearchBox.                                             
+
+**SearchBoxVisibility = Collapsed**
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid Name="propertyGrid1" SelectedObject="{Binding SelectedEmployee }" SearchBoxVisibility="Collapsed" />
+
+{% endhighlight %} 
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SelectedObject = (propertyGrid1.DataContext as ViewModel).SelectedEmployee;
+propertyGrid1.SearchBoxVisibility = Visibility.Collapsed;
+
+{% endhighlight %} 
+{% endtabs %}
+
+![SearchBox not displayed in PropertyGrid](Filtering-Images\SearchBox-collapsed.png)
+
+Here, The SearchBox is hidden in the `PropertyGrid`.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Grouping-Sorting-Ordering) to download the sample that showcases the property searching in the SearchBox support.
+
+                                           
+
+
+
+
+
+
 
