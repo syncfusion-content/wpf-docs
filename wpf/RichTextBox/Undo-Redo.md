@@ -31,7 +31,7 @@ N> In order to perform undo/redo, the standard keyboard shortcuts such as CTRL +
 
 ## Enable/Disable Undo Redo
 
-###Disable Undo for all the editing actions
+### Disable Undo for all the editing actions
 
 In SfRichTextBoxAdv, the Undo functionality is enabled by default. You can disable it by using the `IsUndoEnabled` property of the `EditorSettings` class.
 
@@ -65,7 +65,7 @@ richTextBoxAdv.EditorSettings.IsUndoEnabled = false
 
 N> This API is supported starting from release version v18.1.0.X.
 
-###Disable Undo for style modification actions
+### Disable Undo for style modification actions
 
 In SfRichTextBoxAdv, the Undo functionality is enabled by default for all the editing operations. If you want to disable the Undo functionality for modifying an existing style alone. You can disable it by using the `CanUndoStyle` property of the `EditorSettings` class.
 
