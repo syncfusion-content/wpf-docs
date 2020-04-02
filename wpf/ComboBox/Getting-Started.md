@@ -36,7 +36,7 @@ Create new project in Visual Studio to display ComboBoxAdv.
 
 ComboBox (ComboBoxAdv) can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly will be added automatically.
 
-![Adding control via designer](Getting-Started_images/Adding-Control-via-designer.png)
+![Adding control via designer](Getting-Started_images/ComboBoxAdv_img2.png)
 
 ### Adding control manually in XAML
 
@@ -204,7 +204,7 @@ namespace ComboBox
 
 Now, run the application and you can expert the below output.
 
-![Displaying WPF ComboBox](Getting-Started_images/Displaying-WPF-ComboBox.png)
+![Displaying WPF ComboBox](Getting-Started_images/ComboBoxAdv_img3.png)
 
 ## Feature summary
 
