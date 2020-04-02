@@ -178,6 +178,6 @@ public class Intervals : List<double>
 
 {% seealso %}
 
-[How to snap the objects on gridlines](/wpf/sfdiagram/snapping)
+[How to snap the objects on gridlines](/wpf/diagram/snapping/definesnapping)
 
 {% endseealso %}
