@@ -26,17 +26,19 @@ We can check or uncheck the particular item by add or remove that items into the
 //Model.cs
 class Vegetable {
     public string Category { get; set; }
-    public string Price { get; set; }
+    public int Price { get; set; }
     public string Name { get; set; }
 }
 
 //ViewModel.cs
 class ViewModel : NotificationObject {
-    private ObservableCollection<Vegetable> vegetables = new ObservableCollection<Vegetable>();
-    private ObservableCollection<object> checkedVegetables = new ObservableCollection<object>();
+    private ObservableCollection<Vegetable> vegetables =
+        new ObservableCollection<Vegetable>();
+    private ObservableCollection<object> checkedVegetables = 
+        new ObservableCollection<object>();
 
     //Vegetables collection
-    public ObservableCollection<Vegetable> Vegetables        {
+    public ObservableCollection<Vegetable> Vegetables {
         get {
             return vegetables;
         }
@@ -46,7 +48,7 @@ class ViewModel : NotificationObject {
         }
     }
 
-    //Checked vegetable collection
+    //Selected vegetable collection
     public ObservableCollection<object> CheckedVegetables {
         get {
             return checkedVegetables;
@@ -57,16 +59,22 @@ class ViewModel : NotificationObject {
         }
     }
     public ViewModel() {
-        //Adding a vegetables details into the Vegetables collection
+        //Adding a vegetables details
         Vegetables = new ObservableCollection<Vegetable>();
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Yarrow", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Cabbage", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Horse gram", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Green bean", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Nopal", Category = "Bulb and Stem" });
-        
-        //Adding a checked vegetable into the CheckedVegetables collection
+        Vegetables.Add(new Vegetable { Price = 10,
+            Name = "Yarrow", Category = "Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price = 20,
+            Name = "Cabbage", Category = "Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price = 30,
+            Name = "Horse gram", Category = "Beans" });
+        Vegetables.Add(new Vegetable { Price = 20,
+            Name = "Green bean", Category = "Beans" });
+        Vegetables.Add(new Vegetable { Price = 10,
+            Name = "Onion",Category = "Bulb and Stem"});
+        Vegetables.Add(new Vegetable { Price = 30, 
+            Name = "Nopal", Category = "Bulb and Stem"});
+
+        //Adding a selected vegetable
         CheckedVegetables = new ObservableCollection<object>();
         CheckedVegetables.Add(Vegetables[0]);
         CheckedVegetables.Add(Vegetables[2]);
@@ -80,16 +88,15 @@ class ViewModel : NotificationObject {
 {% tabs %}
 {% highlight xaml%}
 
- <syncfusion:CheckListBox ItemsSource="{Binding Vegetables}"
-                          SelectedItems="{Binding CheckedVegetables}" 
-                          DisplayMemberPath="Name"
-                          Name="checkListBox">
-     <i:Interaction.Triggers>
-         <i:EventTrigger EventName="Loaded">
-             <i:InvokeCommandAction Command="{Binding SelectionChangedCommand}" CommandParameter="{Binding ElementName=checkListBox}" />
-         </i:EventTrigger>
-     </i:Interaction.Triggers>
- </syncfusion:CheckListBox>
+<syncfusion:CheckListBox ItemsSource="{Binding Vegetables}"
+                         SelectedItems="{Binding CheckedVegetables}" 
+                         DisplayMemberPath="Name"
+                         Margin="30"
+                         Name="checkListBox">
+    <syncfusion:CheckListBox.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:CheckListBox.DataContext>
+</syncfusion:CheckListBox>
 
 {%endhighlight%}
 {% endtabs %}
@@ -106,41 +113,54 @@ We can change the item’s checked state by using the [CheckListBoxItem.IsChecke
 {% highlight C#%}
 
 //Model.cs
-public class Model {
+public class GroupItem {
     public string Name { get; set; }
     public string GroupName { get; set; }
     public bool IsChecked { get; set; }
 }
-
 //ViewModel.cs
-public class ViewModel {
-    private ObservableCollection<Model> collection = new ObservableCollection<Model>();
-    public ObservableCollection<Model> Collection {
-        get { return collection; }
-        set { collection = value; }
+public class ViewModel : NotificationObject {
+    private ObservableCollection<GroupItem> virtualCollection;
+    private ObservableCollection<GroupDescription> groupDescriptions;
+
+    public ObservableCollection<GroupItem> VirtualCollection {
+        get {
+            return virtualCollection;
+        }
+        set {
+            virtualCollection = value;
+            RaisePropertyChanged("VirtualCollection");
+        }
     }
-
-    public ICommand LoadedCommand { get; set; }
-    public void OnLoaded(object param) {
-        CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(Collection);
-
-        //Adding group description
-        view.GroupDescriptions.Add(new PropertyGroupDescription("GroupName"));
+    public ObservableCollection<GroupDescription> GroupDescriptions {
+        get {
+            return groupDescriptions;
+        }
+        set {
+            groupDescriptions = value;
+            RaisePropertyChanged("GroupDescriptions");
+        }
     }
-
     public ViewModel() {
-        Collection = new ObservableCollection<Model>();
-        for (int i = 0; i < 100; i++) {
-            for (int j = 0; j < 10; j++) {
-                Model myitem = new Model() { Name = "Module " + i.ToString(), GroupName = "Group" + j.ToString() };
+        GroupDescriptions = new ObservableCollection<GroupDescription>();
+        VirtualCollection = new ObservableCollection<GroupItem>();
+        for (int i = 0; i < 1000; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                GroupItem myitem = new GroupItem() 
+                { 
+                    Name = "Module " + i.ToString(), 
+                    GroupName = "Group" + j.ToString() 
+                };
                 if (i % 2 == 0)
+                {
+                    //Define a checked state for items
                     myitem.IsChecked = true;
-                Collection.Add(myitem);
+                }
+                VirtualCollection.Add(myitem);
             }
         }
-
-        //Initialize the checklistbox LoadedCommand
-        LoadedCommand = new DelegateCommand<object>(OnLoaded);
     }
 }
 
@@ -150,32 +170,40 @@ public class ViewModel {
 {% tabs %}
 {% highlight xaml%}
 
-<syncfusion:CheckListBox ItemsSource="{Binding Collection}"           
-                 DisplayMemberPath="Name"
-                 Name="checkListBox">
-    <syncfusion:CheckListBox.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </syncfusion:CheckListBox.DataContext>
-    <i:Interaction.Triggers>
-        <i:EventTrigger EventName="Loaded">
-            <i:InvokeCommandAction Command="{Binding LoadedCommand}" />
-        </i:EventTrigger>
-    </i:Interaction.Triggers>
+<Window.Resources>
+    
+    <!-- Define view model with group description -->
+    <local:ViewModel x:Key="viewModel">
+        <local:ViewModel.GroupDescriptions>
+            
+            <!-- Define group details -->
+            <PropertyGroupDescription PropertyName="GroupName" />
+        </local:ViewModel.GroupDescriptions>
+    </local:ViewModel>
+</Window.Resources>
+<Grid>
+    <syncfusion:CheckListBox ItemsSource="{Binding VirtualCollection}"
+                             GroupDescriptions="{Binding GroupDescriptions}"
+                             DataContext="{StaticResource viewModel}"
+                             DisplayMemberPath="Name" 
+                             Name="checkListBox"
+                             Margin="20">
+        
+                    <!--Binding the IsChecked property from ViewModel-->
+                    <syncfusion:CheckListBox.ItemContainerStyle>
+                        <Style TargetType="syncfusion:CheckListBoxItem">
+                            <Setter Property="IsChecked" Value="{Binding IsChecked}"/>
+                        </Style>
+                    </syncfusion:CheckListBox.ItemContainerStyle>
 
-    <!--Binding the IsChecked property from ViewModel-->
-    <syncfusion:CheckListBox.ItemContainerStyle>
-        <Style TargetType="syncfusion:CheckListBoxItem">
-            <Setter Property="IsChecked" Value="{Binding IsChecked}"/>
-        </Style>
-    </syncfusion:CheckListBox.ItemContainerStyle>
-
-    <!--Disable the Virtualization to update the checked item-->
-    <syncfusion:CheckListBox.ItemsPanel>
-        <ItemsPanelTemplate>
-            <StackPanel></StackPanel>
-        </ItemsPanelTemplate>
-    </syncfusion:CheckListBox.ItemsPanel>
-</syncfusion:CheckListBox>
+                    <!--Disable the Virtualization to update the checked item-->
+                    <syncfusion:CheckListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel></StackPanel>
+                        </ItemsPanelTemplate>
+                    </syncfusion:CheckListBox.ItemsPanel>
+                </syncfusion:CheckListBox>
+</Grid>
 
 {%endhighlight%}
 {% endtabs %}
