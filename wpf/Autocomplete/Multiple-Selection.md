@@ -19,6 +19,14 @@ Select multiple items from a suggestion list. There are two ways to perform mult
 
 Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
 
+### Wrap Mode of Token
+
+The selected item can be displayed as token inside SfAutoComplete in two ways. They are
+
+* `Wrap` - When `TokensWrapMode` is set to `Wrap` the selected items will be wrap to the next line of the SfAutoComplete.
+
+* `None` - When `TokensWrapMode` is set to `None` the selected item will be wrap in horizontal orientation.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -90,3 +98,10 @@ namespace Demo_Sample
 {% endtabs %}
 
 ![Token Representation](Auto-Complete_images/Token.png)
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ImageMemberPath-2093350688) link.
+
+## Delimiter
+
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
+

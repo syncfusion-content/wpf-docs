@@ -16,7 +16,7 @@ Suggestions can be shown in number of ways. TextBoxExt supports the following Au
 * SuggestAppend: Shows the suggestion in the drop-down list and appends the first suggestion to the text.
 * None: In None mode, the Search algorithm starts even when the item is not available in the DataSource.
 
-The default value of AutoCompleteMode is None.
+The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteModeProperty.html) is None.
 
 ## Suggesting Choices in List
 
@@ -326,6 +326,8 @@ namespace AutoCompleteSample
 SuggestAppend mode
 {:.caption}
 
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SuggestionMode913577965) link.
 ### None
 
 This option neither appends text nor opens the drop-down list of suggestions. 

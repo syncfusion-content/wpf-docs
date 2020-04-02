@@ -201,6 +201,8 @@ namespace AutoCompleteSample
 
 ![GettingStarted](GettingStarted_images/AutoCompleteSource.png)
 
+Find sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_WPF958872664) link.
+
 ## Selected Items
 
 Index of the selected item can be retrieved by using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndexProperty.html) property. The selected item of the AutoComplete can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItemProperty.html) property.

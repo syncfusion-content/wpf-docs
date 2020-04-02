@@ -55,7 +55,7 @@ Create a collection attribute and populate the collection with items.
 
 {% endhighlight %}
 
-Bind the Employees collection to the AutoCompleteSource property of TextBoxExt.
+Bind the Employees collection to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSourceProperty.html) property of TextBoxExt.
 
 {% tabs %}
 {% highlight xaml %}
@@ -253,9 +253,9 @@ namespace SfDatePickerSample
 Drop down list with image
 {:.caption}
 
-### Ignore case
+## Ignore case
 
-This option allows the control to filter suggestions by ignoring the case. The default value is false.
+[IgnoreCase](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCaseProperty.html) option allows the control to filter suggestions by ignoring the case. The default value is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -318,9 +318,9 @@ namespace SfDatePickerSample
 Ignore Case
 {:.caption}
 
-### Popup delay
+## Popup delay
 
-The PopupDelay specifies the delay after which the suggestion popup should open. 
+The [PopupDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~PopupDelayProperty.html) specifies the delay after which the suggestion popup should open. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -378,7 +378,7 @@ namespace SfDatePickerSample
 {% endhighlight %}
 {% endtabs %}
 
-### NoResultsFoundTemplate
+## NoResultsFoundTemplate
 
 When the entered item is not in the suggestion list, AutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the NoResultsFoundTemplate property.
 
@@ -464,7 +464,8 @@ This feature allows the users to provide the path for the Image to be displayed 
                                   AutoCompleteMode="Suggest"
                                   SearchItemPath="Name"
                                   ImageMemberPath="Image"
-                                  MultiSelectMode="Token" TokensWrapMode="None"
+                                  MultiSelectMode="Token" 
+                                  TokensWrapMode="None"
                                   Height="40"
                                   AutoCompleteSource="{Binding Employees}"
                                   VerticalAlignment="Center"
@@ -534,3 +535,5 @@ EmployeeViewModel class:
 {% endtabs %}
 
 ![ImageMemberPath](Auto-Complete_images/ImageMemberPath.png)
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ImageMemberPath-2093350688) link.
