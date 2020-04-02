@@ -13,7 +13,7 @@ This section gives an overview for working with the Hub Tile and Pulsing Tile co
 
 ## Assembly deployment
 
-Refer [HubTile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [PulsingTile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or NuGet package needs to be added as reference to use the Hub Tile and Pulsing Tile control in any application.
+Refer [Hub Tile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [Pulsing Tile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or NuGet package needs to be added as reference to use the Hub Tile and Pulsing Tile control in any application.
 
 ## Creating simple application with Hub Tile and Pulsing Tile
 
@@ -59,12 +59,13 @@ In order to add control manually in XAML, follow the below steps:
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
         x:Class="WpfApplication1.MainWindow"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <!--Hub Tile-->
-        <syncfusion:SfHubTile Grid.Column="0" Content="This is a Hub Tile"/>
-
-        <!--PulsingTile-->
-        <syncfusion:SfPulsingTile Grid.Column="1" Content="This is a Pulsing Tile" />
+	<Grid>
+		
+		<!--Hub Tile-->
+    	<syncfusion:SfHubTile Content="This is a Hub Tile"/>
+		
+		<!--PulsingTile-->
+		<syncfusion:SfPulsingTile Content="This is a Pulsing Tile"/>
     </Grid>
 </Window>
 {% endhighlight %}
@@ -86,9 +87,9 @@ In order to add control manually in C#, follow the below steps:
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="WpfApplication1.MainWindow"
         Title="MainWindow" Height="350" Width="525">
-    <Grid x:Name="grid">
+	<Grid x:Name="grid">
 	</Grid>
-	</Window>
+</Window>
 
 {% endhighlight %}
 {% highlight C# %}

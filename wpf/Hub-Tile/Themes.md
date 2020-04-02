@@ -33,20 +33,19 @@ Below example explains how to apply blend theme for HubTile and PulsingTile usin
       Width="1200" Height="720"
      WindowStartupLocation="CenterScreen">
 <Grid>
-    <!--SfHubTile-->						 
-    <syncfusion:SfHubTile x:Name="hubtile"Header="HubTile" skinManager:SfSkinManager.VisualStyle="Blend" Title="TitleArea."/>
- <!--SfPulsingTile-->						
-  <syncfusion:SfPulsingTile x:Name="pulsingtile" Header="PulsingTile" skinManager:SfSkinManager.VisualStyle="Blend" Title="Title area.">
-			<Image Source="Assests/PulsingTile.jpg"/>	
+<!--SfHubTile-->						 
+<syncfusion:SfHubTile x:Name="hubtile"Header="HubTile" skinManager:SfSkinManager.VisualStyle="Blend" Title="TitleArea."/>
+<!--SfPulsingTile-->						
+<syncfusion:SfPulsingTile x:Name="pulsingtile" Header="PulsingTile" skinManager:SfSkinManager.VisualStyle="Blend" Title="Title area.">
+	<Image Source="Assests/PulsingTile.jpg"/>	
 </syncfusion:SfPulsingTile>	
 </Grid>
 </Window>		 
 										
 {% endhighlight %}
-{% highlight c# %}
-using Syncfusion.SfSkinManager;
-
-SfSkinManager.SetVisualStyle(this, VisualStyles.Blend); 
+{% highlight C# %}
+    
+    SfSkinManager.SetVisualStyle(this, VisualStyles.Blend); 
 
 {% endhighlight %}
 {% endtabs %}
