@@ -161,14 +161,12 @@ public class Employee {
 
 //EmployeesCollection.cs
 public class EmployeesCollection : ObservableCollection<Employee> {
-    public EmployeesCollection() {        
-    }
 }
+
 
 //ViewModel.cs
 public class ViewModel : NotificationObject {
-    private ObservableCollection<GroupDescription> groupDescriptions =
-        new ObservableCollection<GroupDescription>();
+    private ObservableCollection<GroupDescription> groupDescriptions;
     private EmployeesCollection employeesCollection;
 
     public ObservableCollection<GroupDescription> GroupDescriptions {
@@ -193,10 +191,7 @@ public class ViewModel : NotificationObject {
 
     public ViewModel() {
         EmployeesCollection = new EmployeesCollection();
-        //Adding group description to the GroupDescriptions collection
         GroupDescriptions = new ObservableCollection<GroupDescription>();
-        GroupDescriptions.Add(new PropertyGroupDescription("DOB", new DateConverter("Year")));
-        GroupDescriptions.Add(new PropertyGroupDescription("DOB", new DateConverter("Month")));
     }
 }   
 
@@ -208,12 +203,9 @@ public class ViewModel : NotificationObject {
 
 //Converter for the Custom Grouping 
 public class DateConverter : IValueConverter {
-    string Category;
-    public DateConverter(string category) {
-        Category = category;
-    }
-    public object Convert(object value, Type targetType, 
-        object parameter, CultureInfo culture) {
+    public string Category { get; set; }
+
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture) {
         DateTime result;
         string MyString = value.ToString();
         DateTime.TryParse(MyString, out result);
@@ -221,12 +213,14 @@ public class DateConverter : IValueConverter {
         if (Category == "Year") {
             //Grouping the employee who are all born on 1980-1990 
             if ((DateTime.Compare(new DateTime(1980, 01, 01), result)) <= 0 &&
-                (DateTime.Compare(new DateTime(1990, 12, 31), result)) >= 0) {
+                (DateTime.Compare(new DateTime(1990, 12, 31), result)) >= 0)
+            {
                 return "Birth Year(1980 - 1990)";
             }
             //Grouping the employee who are all born on 1990-2000 
             else if ((DateTime.Compare(new DateTime(1991, 01, 01), result)) <= 0 &&
-                (DateTime.Compare(new DateTime(2000, 12, 31), result)) >= 0) {
+                (DateTime.Compare(new DateTime(2000, 12, 31), result)) >= 0)
+            {
                 return "Birth Year(1991 - 2000)";
             }
         }
@@ -263,12 +257,13 @@ public class DateConverter : IValueConverter {
 {% highlight xaml %}
 
 <Window.Resources>
-    <local:EmployeesCollection x:Key="EmployeesCollection">
+    <!-- Define employee details-->
+    <local:EmployeesCollection x:Key="employees">
         <local:Employee Name="Daniel" DOB="02/15/1983" Age="37"/>
         <local:Employee Name="James" DOB="06/29/1988" Age="32"/>
         <local:Employee Name="Michael" DOB="06/10/1987" Age="33"/>
         <local:Employee Name="Daniel" DOB="08/23/1980" Age="40"/>
-        <local:Employee Name="John" DOB="12/22/1990, " Age="30"/>
+        <local:Employee Name="John" DOB="12/22/1990" Age="30"/>
         <local:Employee Name="Paul" DOB="04/08/1997" Age="23"/>
         <local:Employee Name="Mark" DOB="08/05/1994" Age="26"/>
         <local:Employee Name="George" DOB="10/01/1998" Age="22"/>
@@ -276,17 +271,26 @@ public class DateConverter : IValueConverter {
         <local:Employee Name="Thomes" DOB="10/08/1995" Age="25"/>
         <local:Employee Name="Steven" DOB="12/15/1982" Age="38"/>
     </local:EmployeesCollection>
+    
+    <!-- Define view model with group description -->
+    <local:DateConverter Category="Year" x:Key="year"/>
+    <local:DateConverter Category="Month"  x:Key="month"/>
+    <local:ViewModel x:Key="viewModel">
+        <local:ViewModel.GroupDescriptions>
+            <PropertyGroupDescription PropertyName="DOB" 
+                                      Converter="{StaticResource year}"/>
+            <PropertyGroupDescription PropertyName="DOB"
+                                      Converter="{StaticResource month}"/>
+        </local:ViewModel.GroupDescriptions>
+    </local:ViewModel>
 </Window.Resources>
 <Grid>
-    <syncfusion:CheckListBox ItemsSource="{StaticResource ResourceKey=EmployeesCollection}"
+    <syncfusion:CheckListBox ItemsSource="{StaticResource ResourceKey=employees}"
                              GroupDescriptions="{Binding GroupDescriptions}"
+                             DataContext="{StaticResource viewModel}"
                              DisplayMemberPath="Name"
                              Name="checkListBox"
-                             Margin="20" >
-        <syncfusion:CheckListBox.DataContext>
-            <local:ViewModel></local:ViewModel>
-        </syncfusion:CheckListBox.DataContext>            
-    </syncfusion:CheckListBox>
+                             Margin="20"/>
 </Grid>
 
 {% endhighlight %}
