@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Gridlines
+# How to add gridlines to diagram
 
 **Gridlines** are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 
