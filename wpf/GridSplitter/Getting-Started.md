@@ -1,208 +1,295 @@
 ---
 layout: post
-title: Getting Started with SfGridSplitter control for WPF
-description: Getting Started with SfGridSplitter control for WPF
+title: Getting started with WPF SfGridSplitter control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF SfGridSplitter control and more details about the control features.
 platform: WPF
 control: SfGridSplitter
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF SfGridSplitter
 
-This section explains how to create snapping styled splitter using `SfGridSplitter` control.
+This section explains how to create a WPF [SfGridSplitter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter.html) and explains about its structure.
 
-## Planning the layout 
+## Structure of SfGridSplitter
 
-Number of grid splitters required is based on the number of elements in layout and their arrangement. Here we are having four elements (Calculator, Calendar, images) and these elements are arranged horizontally as two sets, each set has two items that were arranged vertically. This layout required three grid splitters to resize all the elements in all proportions. Split the grid to required number of rows and columns as given below:
+![WPF SfGridSplitter Control](Getting-Started-images/Grid-Splitter.png)
 
-{% tabs %}
+## Visual representation 
 
-{% highlight XAML %}
+![Getting started with SfGridSplitter](Positioning-GridSplitter-images/Getting_started.gif)
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+## Assembly deployment
 
-    <Grid.ColumnDefinitions>
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfgridsplitter) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-    <ColumnDefinition Width="0.5*" MinWidth="50"/>
+You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-    <ColumnDefinition Width="25"/>
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-    <ColumnDefinition MinWidth="50"/>
+## Adding control manually in XAML
 
-    </Grid.ColumnDefinitions>
+To add the control manually in XAML, follow the given steps:
 
-    <Grid>
-
-    <Grid.RowDefinitions>
-
-    <RowDefinition MinHeight="50"/>
-
-    <RowDefinition Height="Auto"/>
-
-    <RowDefinition Height="0.5*" MinHeight="50"/>
-
-    </Grid.RowDefinitions>
-
-    </Grid>
-
-    <Grid Grid.Column="2">
-
-    <Grid.RowDefinitions>
-
-    <RowDefinition Height="0.5*" MinHeight="50"/>
-
-    <RowDefinition Height="Auto"/>
-
-    <RowDefinition MinHeight="50"/>
-
-    </Grid.RowDefinitions>
-
-    </Grid>
-
-    </Grid>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Adding controls to layout 
-
-Add the elements to grid and place them in cells leaving the middle row or column free for grid splitter as given below:
+1.	Add the following required assembly references to the project:
+    * Syncfusion.SfInput.WPF
+    * Syncfusion.SfShared.WPF
+2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3.	Declare the `SfGridSplitter` control in the XAML page.
 
 {% tabs %}
-
 {% highlight XAML %}
 
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="SfGridSplitterSample.MainWindow"
+        Title="SfGridSplitter Sample" Height="350" Width="525">
     <Grid>
-    <Grid.ColumnDefinitions>
-    <ColumnDefinition Width="0.5*" MinWidth="50"/>
-    <ColumnDefinition Width="25"/>
-    <ColumnDefinition MinWidth="50"/>
-    </Grid.ColumnDefinitions>
-    <Grid>
-    <Grid.RowDefinitions>
-    <RowDefinition MinHeight="50"/>
-    <RowDefinition Height="Auto"/>
-    <RowDefinition Height="0.5*" MinHeight="50"/>
-    </Grid.RowDefinitions>
-    <input:SfCalculator Width="NaN" Height="NaN"
-    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-
-    <Grid Grid.Row="2" Background="LightCoral">
-    <Grid.ColumnDefinitions>
-    <ColumnDefinition />
-    <ColumnDefinition />
-    </Grid.ColumnDefinitions>
-    <Path Fill="White" Stretch="Uniform" Margin="20"
-    Data="M14.911999,36.994997C14.911999,36.994997 20.409431,39.888113 31.999999,39.888112 43.590566,39.888113 49.087998,36.994997 49.087998,36.994997 49.087998,45.05326 43.336564,54.082996 31.999999,54.082996 20.663433,54.082996 14.911999,45.05326 14.911999,36.994997z M41.99056,22.008999C44.746226,22.008999 49.482999,25.443786 49.482999,27.004935 49.482999,28.566084 44.746226,27.004935 41.99056,27.004935 39.234794,27.004935 36.996001,28.760077 36.996001,27.004935 36.996001,25.248492 39.234794,22.008999 41.99056,22.008999z M22.00962,22.008999C24.765454,22.008999 27.005,25.248492 27.005,27.004935 27.005,28.760077 24.765454,27.004935 22.00962,27.004935 19.253886,27.004935 14.517,28.566084 14.516999,27.004935 14.517,25.443786 19.253886,22.008999 22.00962,22.008999z M31.999999,4.9947777C17.11,4.9947777 4.99545,17.109299 4.99545,31.999999 4.99545,46.890699 17.11,59.005199 31.999999,59.005199 46.89,59.005199 59.0052,46.890699 59.0052,31.999999 59.0052,17.109299 46.89,4.9947777 31.999999,4.9947777z M31.999999,0C49.6732,0 64.000001,14.326799 64.000001,31.999999 64.000001,49.673199 49.6732,63.999998 31.999999,63.999998 14.3268,63.999998 0,49.673199 0,31.999999 0,14.326799 14.3268,0 31.999999,0z"/>
-    <Path Fill="White" Stretch="Uniform" Margin="20"
-    Grid.Column="1"
-    Data="M49.041,37.888998C46.583956,45.443701 40.718889,48.415001 32.000286,48.415001 27.0004,48.415001 22.603999,47.9606 22.604,44.614201 22.603999,41.767899 27.038799,44.0765 32.000286,44.0765 39.541216,44.0765 44.432205,44.4202 49.041,37.888998z M31.920897,26.381837C31.152713,26.381837,30.415843,26.489504,29.733346,26.686669L29.536378,26.747936 29.525844,27.284274C29.255528,34.056179 24.868841,36.202001 20.9238,36.202001 17.615057,36.202001 12.370603,34.779371 10.520255,29.166882L10.460608,28.966284 10.250998,28.948714C8.9134722,28.829189,7.419548,28.619898,5.9481936,28.260834L5.5973196,28.171415 5.5229349,28.820141C5.4319,29.713738 5.3852587,30.620273 5.3852587,31.537498 5.3852587,46.213104 17.325372,58.15193 32.000513,58.15193 46.675554,58.15193 58.615786,46.213104 58.615786,31.537498 58.615786,30.620273 58.569143,29.713738 58.478109,28.820142L58.403692,28.171154 58.051794,28.260834C56.580442,28.619898,55.086519,28.829189,53.748995,28.948714L53.543726,28.96592 53.480742,29.166883C51.630381,34.779371 46.385902,36.202001 43.077257,36.202001 39.132236,36.202001 34.745478,34.056179 34.475158,27.284274L34.465663,26.800868 34.397585,26.776595C33.63586,26.522463,32.798822,26.381837,31.920897,26.381837z M32.000513,4.9231281C20.30626,4.9231281,10.348776,12.504359,6.7860508,23.010435L6.6705694,23.365368 7.1620426,23.494185C7.9243679,23.675234,8.7222767,23.811754,9.508605,23.913207L9.8758688,23.955598 9.8849068,23.863807C10.149009,21.776664 11.976937,21.691 20.9238,21.691 24.058201,21.691 26.212001,21.901933 27.582201,22.622825L27.783659,22.737643 28.232927,22.582504C29.383512,22.213504 30.625788,22.011999 31.920897,22.011999 33.401072,22.011999 34.812228,22.275189 36.096364,22.750804L36.15559,22.774247 36.17085,22.764043C37.523363,21.929124 39.746655,21.691 43.077257,21.691 52.024075,21.691 53.851995,21.776664 54.116095,23.863807L54.125051,23.954759 54.493399,23.912269C55.279299,23.810934,56.07667,23.674575,56.838507,23.493682L57.330282,23.364805 57.214983,23.010435C53.652227,12.504359,43.694687,4.9231281,32.000513,4.9231281z M32.000513,0C45.88052,0,57.666513,8.9660902,61.881887,21.422423L61.997049,21.777128 62.204645,21.825213C62.736212,21.975394 63.221319,22.304366 63.561129,22.792625 64.286856,23.840112 64.089018,25.253878 63.141394,26.063838L63.073172,26.116389 63.1756,26.734601C63.414896,28.300633 63.539,29.904572 63.539,31.537498 63.539,48.955387 49.418562,63.074999 32.000513,63.074999 14.582464,63.074999 0.46199989,48.955387 0.46199989,31.537498 0.46199989,29.904572 0.58610535,28.300633 0.8253994,26.7346L0.9277153,26.117068 0.85861588,26.063837C-0.088972092,25.253878 -0.28686905,23.840112 0.43883705,22.792625 0.7769413,22.304366 1.2604656,21.975394 1.7913322,21.825213L2.0043793,21.775813 2.1191158,21.422423C6.3344965,8.9660902,18.120505,0,32.000513,0z"/>
+        <!-- Adding SfGridSplitter control -->
+        <syncfusion:SfGridSplitter x:Name="sfGridSplitter"
+                                   HorizontalAlignment="Stretch"/>
     </Grid>
-    </Grid>
-
-    <Grid Grid.Column="2">
-    <Grid.RowDefinitions>
-    <RowDefinition Height="0.5*" MinHeight="50"/>
-    <RowDefinition Height="Auto"/>
-    <RowDefinition MinHeight="50"/>
-    </Grid.RowDefinitions>
-    <Grid Background="LightSkyBlue">
-    <Grid.ColumnDefinitions>
-    <ColumnDefinition />
-    <ColumnDefinition />
-    </Grid.ColumnDefinitions>
-    <Path Fill="White" Stretch="Uniform" Margin="20"
-    Data="F1M31.9258,2.66919C15.5654,2.66919 2.30273,15.9323 2.30273,32.2968 2.30273,48.6575 15.5654,61.9192 31.9258,61.9192 48.2864,61.9192 61.5527,48.6575 61.5527,32.2968 61.5527,15.9323 48.2864,2.66919 31.9258,2.66919z M22.8698,18.0287L25.3492,16.8241 30.5482,27.5298 28.0677,28.7356 22.8698,18.0287z M31.708,38.4453C29.2285,38.4453 27.22,36.4348 27.22,33.957 27.22,31.4752 29.2285,29.4648 31.708,29.4648 34.1875,29.4648 36.1998,31.4752 36.1998,33.957 36.1998,36.4348 34.1875,38.4453 31.708,38.4453z M52.1797,32.6459C51.9912,21.7317 43.1016,12.9387 32.1436,12.9387 21.1855,12.9387 12.2979,21.7317 12.1107,32.6459L7.6048,32.6459C7.79327,19.2473 18.7054,8.44263 32.1436,8.44263 45.5833,8.44263 56.4935,19.2473 56.6823,32.6459L52.1797,32.6459z"/>
-    <Path Fill="White" Stretch="Uniform" Margin="20"
-    Grid.Column="1"
-    Data="M54.678001,29.745001C55.782101,29.745001 56.678001,30.639589 56.678001,31.745201 56.678001,32.849312 55.782101,33.743999 54.678001,33.743999 53.573803,33.743999 52.678001,32.849312 52.678001,31.745201 52.678001,30.639589 53.573803,29.745001 54.678001,29.745001z M9.6049852,29.745001C10.710406,29.745001 11.605,30.639589 11.605,31.745201 11.605,32.849312 10.710406,33.743999 9.6049852,33.743999 8.5008631,33.743999 7.605,32.849312 7.6049995,31.745201 7.605,30.639589 8.5008631,29.745001 9.6049852,29.745001z M32.141899,29.640001C33.303566,29.640001 34.244999,30.581547 34.244999,31.743101 34.244999,32.904556 33.303566,33.846001 32.141899,33.846001 30.980234,33.846001 30.040001,32.904556 30.040001,31.743101 30.040001,30.581547 30.980234,29.640001 32.141899,29.640001z M32.141949,28.528999C30.365778,28.528999 28.927,29.967823 28.927,31.743851 28.927,33.519878 30.365778,34.959999 32.141949,34.959999 33.917923,34.959999 35.358002,33.519878 35.358002,31.743851 35.358002,29.967823 33.917923,28.528999 32.141949,28.528999z M11.834315,19.202999C12.938407,19.202999 13.833,20.100267 13.833,21.204451 13.833,22.308733 12.938407,23.206001 11.834315,23.206001 10.727523,23.206001 9.8330002,22.308733 9.8330002,21.204451 9.8330002,20.100267 10.727523,19.202999 11.834315,19.202999z M51.338799,17.869999C52.444199,17.869999 53.339996,18.767065 53.339996,19.871 53.339996,20.974934 52.444199,21.872 51.338799,21.872 50.2346,21.872 49.339996,20.974934 49.339996,19.871 49.339996,18.767065 50.2346,17.869999 51.338799,17.869999z M32.142097,14.799L37.459999,33.722927 32.142097,38.917 26.823999,33.846531z M44.015198,10.546C45.119499,10.546 46.014,11.442888 46.014,12.54695 46.014,13.652112 45.119499,14.548 44.015198,14.548 42.909698,14.548 42.014,13.652112 42.014,12.54695 42.014,11.442888 42.909698,10.546 44.015198,10.546z M20.2677,10.546C21.373199,10.546 22.268999,11.442888 22.268999,12.54695 22.268999,13.652112 21.373199,14.548 20.2677,14.548 19.163599,14.548 18.268999,13.652112 18.268999,12.54695 18.268999,11.442888 19.163599,10.546 20.2677,10.546z M32.142002,7.3320007C33.247402,7.3320003 34.142002,8.2266035 34.142002,9.3308249 34.142002,10.436426 33.247402,11.331 32.142002,11.331 31.037701,11.331 30.142,10.436426 30.142,9.3308249 30.142,8.2266035 31.037701,7.3320003 32.142002,7.3320007z M32,5.2864323C17.246099,5.2864318 5.2865601,17.247374 5.2865601,31.99995 5.2865601,46.753826 17.246099,58.71331 32,58.71331 46.754002,58.71331 58.7136,46.753826 58.7136,31.99995 58.7136,17.247374 46.754002,5.2864318 32,5.2864323z M32,0C49.673199,0 64,14.326778 64,31.99995 64,49.673122 49.673199,64 32,64 14.3268,64 0,49.673122 0,31.99995 0,14.326778 14.3268,0 32,0z"/>
-    </Grid>
-    <input:CalendarEdit  Grid.Row="2" HorizontalAlignment="Center"
-            VerticalAlignment="Stretch"  Width="NaN" Height="NaN"
-                        FontSize="14" /> 
-    </Grid>
-
-
-    </Grid>
+</Window>
 
 {% endhighlight %}
-
 {% endtabs %}
 
+## Add control manually in C\#
 
+To add the control manually in C#, follow the given steps:
 
-## Placing the splitter  
-
-Refer to the following assemblies which are required for creating SfGridSplitter.
-
-1. Syncfusion.SfInput.WPF
-2. Syncfusion.SfShared.WPF
-
-Create the instances of SfGridSplitter and place them in between elements that are to be resized.
+1.	Add the following required assembly references to the project:
+    * Syncfusion.SfInput.WPF
+    * Syncfusion.SfShared.WPF
+2.	Import the `SfGridSplitter` namespace **using Syncfusion.Windows.Controls.Input;**.
+3.	Create an `SfGridSplitter` instance, and add it to the window.
 
 {% tabs %}
+{% highlight C# %}
 
-{% highlight XAML %}
+using Syncfusion.Windows.Controls.Input;
+namespace SfGridSplitterSample {    
+    public partial class MainWindow : Window {
+        public MainWindow() {
+            InitializeComponent();
 
-    <Grid>
-    <Grid.ColumnDefinitions>
-    <ColumnDefinition Width="0.5*" MinWidth="50"/>
-    <ColumnDefinition Width="25"/>
-    <ColumnDefinition MinWidth="50"/>
-    </Grid.ColumnDefinitions>
-    <Rectangle Grid.ColumnSpan="3" Fill="LightGray" Opacity="0.2"/>
-    <Grid>
-    <Grid.RowDefinitions>
-    <RowDefinition MinHeight="50"/>
-    <RowDefinition Height="Auto"/>
-    <RowDefinition Height="0.5*" MinHeight="50"/>
-    </Grid.RowDefinitions>
+            //Creating an instance of SfGridSplitter control
+            SfGridSplitter sfGridSplitter = new SfGridSplitter();
+            sfGridSplitter.HorizontalAlignment = HorizontalAlignment.Stretch;
 
-    <input:SfCalculator Width="NaN" Height="NaN"
-    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-    <input:SfGridSplitter Grid.Row="1"/>
-    <Grid Grid.Row="2" Background="LightCoral">
-    <Grid.ColumnDefinitions>
-    <ColumnDefinition />
-    <ColumnDefinition />
-    </Grid.ColumnDefinitions>
-    <Path Fill="White" Stretch="Uniform" Margin="20"
-    Data="M14.911999,36.994997C14.911999,36.994997 20.409431,39.888113 31.999999,39.888112 43.590566,39.888113 49.087998,36.994997 49.087998,36.994997 49.087998,45.05326 43.336564,54.082996 31.999999,54.082996 20.663433,54.082996 14.911999,45.05326 14.911999,36.994997z M41.99056,22.008999C44.746226,22.008999 49.482999,25.443786 49.482999,27.004935 49.482999,28.566084 44.746226,27.004935 41.99056,27.004935 39.234794,27.004935 36.996001,28.760077 36.996001,27.004935 36.996001,25.248492 39.234794,22.008999 41.99056,22.008999z M22.00962,22.008999C24.765454,22.008999 27.005,25.248492 27.005,27.004935 27.005,28.760077 24.765454,27.004935 22.00962,27.004935 19.253886,27.004935 14.517,28.566084 14.516999,27.004935 14.517,25.443786 19.253886,22.008999 22.00962,22.008999z M31.999999,4.9947777C17.11,4.9947777 4.99545,17.109299 4.99545,31.999999 4.99545,46.890699 17.11,59.005199 31.999999,59.005199 46.89,59.005199 59.0052,46.890699 59.0052,31.999999 59.0052,17.109299 46.89,4.9947777 31.999999,4.9947777z M31.999999,0C49.6732,0 64.000001,14.326799 64.000001,31.999999 64.000001,49.673199 49.6732,63.999998 31.999999,63.999998 14.3268,63.999998 0,49.673199 0,31.999999 0,14.326799 14.3268,0 31.999999,0z"/>
-    <Path Fill="White" Stretch="Uniform" Margin="20"
-    Grid.Column="1"
-    Data="M49.041,37.888998C46.583956,45.443701 40.718889,48.415001 32.000286,48.415001 27.0004,48.415001 22.603999,47.9606 22.604,44.614201 22.603999,41.767899 27.038799,44.0765 32.000286,44.0765 39.541216,44.0765 44.432205,44.4202 49.041,37.888998z M31.920897,26.381837C31.152713,26.381837,30.415843,26.489504,29.733346,26.686669L29.536378,26.747936 29.525844,27.284274C29.255528,34.056179 24.868841,36.202001 20.9238,36.202001 17.615057,36.202001 12.370603,34.779371 10.520255,29.166882L10.460608,28.966284 10.250998,28.948714C8.9134722,28.829189,7.419548,28.619898,5.9481936,28.260834L5.5973196,28.171415 5.5229349,28.820141C5.4319,29.713738 5.3852587,30.620273 5.3852587,31.537498 5.3852587,46.213104 17.325372,58.15193 32.000513,58.15193 46.675554,58.15193 58.615786,46.213104 58.615786,31.537498 58.615786,30.620273 58.569143,29.713738 58.478109,28.820142L58.403692,28.171154 58.051794,28.260834C56.580442,28.619898,55.086519,28.829189,53.748995,28.948714L53.543726,28.96592 53.480742,29.166883C51.630381,34.779371 46.385902,36.202001 43.077257,36.202001 39.132236,36.202001 34.745478,34.056179 34.475158,27.284274L34.465663,26.800868 34.397585,26.776595C33.63586,26.522463,32.798822,26.381837,31.920897,26.381837z M32.000513,4.9231281C20.30626,4.9231281,10.348776,12.504359,6.7860508,23.010435L6.6705694,23.365368 7.1620426,23.494185C7.9243679,23.675234,8.7222767,23.811754,9.508605,23.913207L9.8758688,23.955598 9.8849068,23.863807C10.149009,21.776664 11.976937,21.691 20.9238,21.691 24.058201,21.691 26.212001,21.901933 27.582201,22.622825L27.783659,22.737643 28.232927,22.582504C29.383512,22.213504 30.625788,22.011999 31.920897,22.011999 33.401072,22.011999 34.812228,22.275189 36.096364,22.750804L36.15559,22.774247 36.17085,22.764043C37.523363,21.929124 39.746655,21.691 43.077257,21.691 52.024075,21.691 53.851995,21.776664 54.116095,23.863807L54.125051,23.954759 54.493399,23.912269C55.279299,23.810934,56.07667,23.674575,56.838507,23.493682L57.330282,23.364805 57.214983,23.010435C53.652227,12.504359,43.694687,4.9231281,32.000513,4.9231281z M32.000513,0C45.88052,0,57.666513,8.9660902,61.881887,21.422423L61.997049,21.777128 62.204645,21.825213C62.736212,21.975394 63.221319,22.304366 63.561129,22.792625 64.286856,23.840112 64.089018,25.253878 63.141394,26.063838L63.073172,26.116389 63.1756,26.734601C63.414896,28.300633 63.539,29.904572 63.539,31.537498 63.539,48.955387 49.418562,63.074999 32.000513,63.074999 14.582464,63.074999 0.46199989,48.955387 0.46199989,31.537498 0.46199989,29.904572 0.58610535,28.300633 0.8253994,26.7346L0.9277153,26.117068 0.85861588,26.063837C-0.088972092,25.253878 -0.28686905,23.840112 0.43883705,22.792625 0.7769413,22.304366 1.2604656,21.975394 1.7913322,21.825213L2.0043793,21.775813 2.1191158,21.422423C6.3344965,8.9660902,18.120505,0,32.000513,0z"/>
-    </Grid>
-    </Grid>
-    <input:SfGridSplitter Grid.Column="1" VerticalAlignment="Stretch" />
-    <Grid Grid.Column="2">
-    <Grid.RowDefinitions>
-    <RowDefinition Height="0.5*" MinHeight="50"/>
-    <RowDefinition Height="Auto"/>
-    <RowDefinition MinHeight="50"/>
-    </Grid.RowDefinitions>
-    <Grid Background="LightSkyBlue">
-    <Grid.ColumnDefinitions>
-    <ColumnDefinition />
-    <ColumnDefinition />
-    </Grid.ColumnDefinitions>
-    <Path Fill="White" Stretch="Uniform" Margin="20"
-    Data="F1M31.9258,2.66919C15.5654,2.66919 2.30273,15.9323 2.30273,32.2968 2.30273,48.6575 15.5654,61.9192 31.9258,61.9192 48.2864,61.9192 61.5527,48.6575 61.5527,32.2968 61.5527,15.9323 48.2864,2.66919 31.9258,2.66919z M22.8698,18.0287L25.3492,16.8241 30.5482,27.5298 28.0677,28.7356 22.8698,18.0287z M31.708,38.4453C29.2285,38.4453 27.22,36.4348 27.22,33.957 27.22,31.4752 29.2285,29.4648 31.708,29.4648 34.1875,29.4648 36.1998,31.4752 36.1998,33.957 36.1998,36.4348 34.1875,38.4453 31.708,38.4453z M52.1797,32.6459C51.9912,21.7317 43.1016,12.9387 32.1436,12.9387 21.1855,12.9387 12.2979,21.7317 12.1107,32.6459L7.6048,32.6459C7.79327,19.2473 18.7054,8.44263 32.1436,8.44263 45.5833,8.44263 56.4935,19.2473 56.6823,32.6459L52.1797,32.6459z"/>
-    <Path Fill="White" Stretch="Uniform" Margin="20"
-    Grid.Column="1"
-    Data="M54.678001,29.745001C55.782101,29.745001 56.678001,30.639589 56.678001,31.745201 56.678001,32.849312 55.782101,33.743999 54.678001,33.743999 53.573803,33.743999 52.678001,32.849312 52.678001,31.745201 52.678001,30.639589 53.573803,29.745001 54.678001,29.745001z M9.6049852,29.745001C10.710406,29.745001 11.605,30.639589 11.605,31.745201 11.605,32.849312 10.710406,33.743999 9.6049852,33.743999 8.5008631,33.743999 7.605,32.849312 7.6049995,31.745201 7.605,30.639589 8.5008631,29.745001 9.6049852,29.745001z M32.141899,29.640001C33.303566,29.640001 34.244999,30.581547 34.244999,31.743101 34.244999,32.904556 33.303566,33.846001 32.141899,33.846001 30.980234,33.846001 30.040001,32.904556 30.040001,31.743101 30.040001,30.581547 30.980234,29.640001 32.141899,29.640001z M32.141949,28.528999C30.365778,28.528999 28.927,29.967823 28.927,31.743851 28.927,33.519878 30.365778,34.959999 32.141949,34.959999 33.917923,34.959999 35.358002,33.519878 35.358002,31.743851 35.358002,29.967823 33.917923,28.528999 32.141949,28.528999z M11.834315,19.202999C12.938407,19.202999 13.833,20.100267 13.833,21.204451 13.833,22.308733 12.938407,23.206001 11.834315,23.206001 10.727523,23.206001 9.8330002,22.308733 9.8330002,21.204451 9.8330002,20.100267 10.727523,19.202999 11.834315,19.202999z M51.338799,17.869999C52.444199,17.869999 53.339996,18.767065 53.339996,19.871 53.339996,20.974934 52.444199,21.872 51.338799,21.872 50.2346,21.872 49.339996,20.974934 49.339996,19.871 49.339996,18.767065 50.2346,17.869999 51.338799,17.869999z M32.142097,14.799L37.459999,33.722927 32.142097,38.917 26.823999,33.846531z M44.015198,10.546C45.119499,10.546 46.014,11.442888 46.014,12.54695 46.014,13.652112 45.119499,14.548 44.015198,14.548 42.909698,14.548 42.014,13.652112 42.014,12.54695 42.014,11.442888 42.909698,10.546 44.015198,10.546z M20.2677,10.546C21.373199,10.546 22.268999,11.442888 22.268999,12.54695 22.268999,13.652112 21.373199,14.548 20.2677,14.548 19.163599,14.548 18.268999,13.652112 18.268999,12.54695 18.268999,11.442888 19.163599,10.546 20.2677,10.546z M32.142002,7.3320007C33.247402,7.3320003 34.142002,8.2266035 34.142002,9.3308249 34.142002,10.436426 33.247402,11.331 32.142002,11.331 31.037701,11.331 30.142,10.436426 30.142,9.3308249 30.142,8.2266035 31.037701,7.3320003 32.142002,7.3320007z M32,5.2864323C17.246099,5.2864318 5.2865601,17.247374 5.2865601,31.99995 5.2865601,46.753826 17.246099,58.71331 32,58.71331 46.754002,58.71331 58.7136,46.753826 58.7136,31.99995 58.7136,17.247374 46.754002,5.2864318 32,5.2864323z M32,0C49.673199,0 64,14.326778 64,31.99995 64,49.673122 49.673199,64 32,64 14.3268,64 0,49.673122 0,31.99995 0,14.326778 14.3268,0 32,0z"/>
-    </Grid>
-    <input:SfGridSplitter Grid.Row="1"/>
-    <input:CalendarEdit  Grid.Row="2" HorizontalAlignment="Center"
-            VerticalAlignment="Stretch"  Width="NaN" Height="NaN"
-                        FontSize="14" /> 
-    </Grid>
-
-    </Grid>
+            //Adding SfGridSplitter as window content
+            this.Content = sfGridSplitter;
+        } 
+    }
+}
 
 {% endhighlight %}
-
 {% endtabs %}
 
+![SfGridSplitter control added by code](Getting-Started-images/WPF-Grid-Splitter.png)
 
-![](Overview-images/Overview-img1.jpeg)
+## Horizontal splitter
+
+If we want to resize the elements which are horizantally arranged into the rows of container, place the `SfGridSplitter` on middle row of the container and use the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="auto" />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+    <Border BorderThickness="1" BorderBrush="Black"  Grid.Row="0">
+        <TextBlock TextWrapping="Wrap"                    
+                   Background="Black"
+                   Foreground="White"
+                   Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
+                   />
+    </Border>
+    <syncfusion:SfGridSplitter Name="gridSplitter"
+                               HorizontalAlignment="Stretch" 
+                               ResizeBehavior="PreviousAndNext"
+                               Width="auto"
+                               Grid.Row="1">
+    </syncfusion:SfGridSplitter>
+    <syncfusion:SfCalculator Grid.Row="2">           
+    </syncfusion:SfCalculator>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfGridSplitter with moves horizantally](Positioning-GridSplitter-images/Horizontal_Splitter_img.png)
+
+## Vertical splitter
+
+If we want to resize the elements which are vertically arranged into the columns of container, place the `SfGridSplitter` on middle column of the container and use the `VerticalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="auto" />
+        <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Border BorderThickness="1" BorderBrush="Black"  Grid.Column="0">
+        <TextBlock TextWrapping="Wrap"                    
+               Background="Black"
+               Foreground="White"
+               Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
+               />
+    </Border>
+    <syncfusion:SfGridSplitter Name="gridSplitter"
+                               VerticalAlignment="Stretch"
+                               ResizeBehavior="PreviousAndNext"
+                               Width="auto"
+                               Grid.Column="1">
+    </syncfusion:SfGridSplitter>
+    <syncfusion:SfCalculator Grid.Column="2">
+    </syncfusion:SfCalculator>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfGridSplitter with moves vertically](Positioning-GridSplitter-images/Vertical_Splitter_img.png)
+
+N> We can restrict the moving location of the grid splitter (Left or Right or Bottom or Top) by setting the value for `ResizeBehavior` property. The `ResizeBehavior` value must be assigned based on the row or column where the grid splitter placed.
+
+## Move Splitter 
+
+If we want to resize the elements in the container using the grid splitter with particular resize interval, we can set the value for `DragIncrement` and `KeyboardIncrement` properties. If we move the splitter using the mouse, `DragIncrement` property values is used as resize interval. If we move the splitter using the Up-Down buttons, `KeyboardIncrement` property values is used as resize interval. The default value of `DragIncrement` property is `1` and `KeyboardIncrement` propery is `20`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="auto" />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+    <Border BorderThickness="1" BorderBrush="Black"  Grid.Row="0">
+        <TextBlock Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
+                   TextWrapping="Wrap" />
+    </Border>
+    <syncfusion:SfGridSplitter DragIncrement="50"
+                               KeyboardIncrement="50"
+                               HorizontalAlignment="Stretch"
+                               Width="auto"
+                               Grid.Row="1">
+    </syncfusion:SfGridSplitter>
+    <syncfusion:SfCalculator Grid.Row="2">           
+    </syncfusion:SfCalculator>
+</Grid>
+{% endhighlight %}
+{% endtabs %}
+
+![SfGridSplitter with move interval](Positioning-GridSplitter-images/Move-Interval.gif)
+
+### Move splitter programmatically
+
+We can move the splitter and resize the affected columns or rows programmatically with certain pixels by passing the pixel value in [MoveSplitter(Double)](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~MoveSplitter(Double).html) method.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="auto" />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+    <Border BorderThickness="1" BorderBrush="Black"  Grid.Row="0">
+        <TextBlock Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
+                   TextWrapping="Wrap" />
+    </Border>
+    <syncfusion:SfGridSplitter Name="gridSplitter"
+                               HorizontalAlignment="Stretch"
+                               Width="auto"
+                               Grid.Row="1">
+    </syncfusion:SfGridSplitter>
+    <syncfusion:SfCalculator Grid.Row="2">           
+    </syncfusion:SfCalculator>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+//GridSplitter moves 50 pixels.
+gridSplitter.MoveSplitter(50);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Expand or collapse the grid elements
+
+We can collapse or expands the element in either side of the splitter by cliking the collapse buttons. We can show or hide the collapse button by using the [EnableCollapseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~EnableCollapseButton.html) property value as `true`. The default value of `EnableCollapseButton` is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="auto" />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+    <Border BorderThickness="1" BorderBrush="Black"  Grid.Row="0">
+        <TextBlock Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
+                   TextWrapping="Wrap" />
+    </Border>
+    <syncfusion:SfGridSplitter EnableCollapseButton="True"
+                               HorizontalAlignment="Stretch"
+                               Width="auto"
+                               Grid.Row="1" >        
+    </syncfusion:SfGridSplitter>
+    <syncfusion:SfCalculator Grid.Row="2">            
+    </syncfusion:SfCalculator>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfGridSplitter with expand or collapse elements using button](Positioning-GridSplitter-images/EnableCollapseButton.gif)
+
+## Enable preview
+
+We can directly redistribute the row or columns by using `SfGridSplitter`. If we want to preview the location of redistributing row or columns before it changed, we can use the  [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~ShowsPreview.html) property as `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="auto" />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+    <Border BorderThickness="1" BorderBrush="Black"  Grid.Row="0">
+        <TextBlock Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
+                   TextWrapping="Wrap" />
+    </Border>
+    <syncfusion:SfGridSplitter ShowsPreview="True"
+                               HorizontalAlignment="Stretch"
+                               Width="auto"
+                               Grid.Row="1" >        
+    </syncfusion:SfGridSplitter>
+    <syncfusion:SfCalculator Grid.Row="2">            
+    </syncfusion:SfCalculator>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfGridSplitter with Enable preview](Positioning-GridSplitter-images/ShowsPreview.png)
+
+
