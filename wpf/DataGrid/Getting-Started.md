@@ -511,7 +511,7 @@ Represents SfDataGrid column that hosts textual or template-specified content wh
 GridMultiColumnDropdownList
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[SfMultiColumnDropDownControl](http://help.syncfusion.com/wpf/sfmulticolumndropdown/overview)'|markdownify}} in its cells.
+Represents SfDataGrid column that hosts {{'[SfMultiColumnDropDownControl](https://help.syncfusion.com/wpf/multi-column-dropdown/overview)'|markdownify}} in its cells.
 </td>
 </tr>
 </table>
