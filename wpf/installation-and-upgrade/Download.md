@@ -1,71 +1,71 @@
 ---
 layout: post
-title: Download Syncfusion WPF components
-description: This section provides information about how to download the trial or licensed version of Syncfusion WPF components
+title: Installation and Deployment for Syncfusion WPF products
+description: Learn here about how to install and deploy the trail or license version of Syncfusion WPF components
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Download Essential Studio WPF
+# Download WPF Installer
 
-You can download either Trial or Licensed version of WPF installer. 
+You can download the installer from [Syncfusion.com](https://www.syncfusion.com) website. 
 
 
 ## Download the Trial Version
 
-There are two ways to download the 30-days trial.
+There are two ways to download our 30-day trial.
 
 ### Free Trial Page
 
-1. Evaluate the 30-days free trial from [Free Trial](https://www.syncfusion.com/downloads) page.
-2. Once you fill the required details or made the login using the account registered with Syncfusion, you can download the trial installer in the confirmation page.
-3. Trial installers can be downloaded only for the latest version.
-4. Download the trial installer from the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page before the trial expires. (Refer the below screenshot).
+1. You can evaluate our 30-day free trial from [Free Trial](https://www.syncfusion.com/downloads) page.
+2. Once you fill the required form or made the login using the your Syncfusion registered account you can download the trial installer in the confirmation page.
+3. You can download the latest version trial installer. 
+4. You can unlock the installer using the unlock key, also you can unlock the installer using the Syncfusion registered login credential.
+5. You can download the trial installer using the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page under your registered account at any time before the trial expire. (Refer the below screenshot).
  
     ![Trail and downloads of Syncfusion Essential Studio](download-images/trail-download.png)
-5. Click **Download** button to download the installer.
-6. To download the other installers product, click **More Download Options**.
 
 ### Start Trial Page
-1. Evaluate the 30-days free trial from [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page.
-2. Login with the Syncfusion account to access this page.
-3. Start the trial by clicking on the required product. 
+1. You can evaluate our 30-day free trial from [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page.
+2. You should login using your Syncfusion account to access this page.
+3. You can start your trail by clicking on the required product. 
 
-    N> Trial cannot be activated again for the same product for which the trial is not expired.
+    N> If you already using the trail products and it’s not expired, you couldn’t start the trial again for same product.
 
-4. Once trial started, latest version trial installer can be downloaded from the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. 
-5. Currently active trial products are listed in [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. 
+4. After you started the trial, you can download the latest version trial installer using the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. 
+5. In [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page, you can find your current active trial products. Trials, which you done in both Free Trial Page and Start trial pages are listed here.
+6. Use the Download (element 1 in below screenshot) button to download the installer of respective product.
+7. Online installer can be downloaded from this page.
+8. No need of unlock key to unlock the online installer.
+9. You can unlock the installer using the Syncfusion registered login credential.
 
-    ![License and downloads of Syncfusion Essential Studio](download-images/trail-download.png)
-	
-6. Click **Download** button to download the installer.
-7. To download the other installers product, click **More Download Options**.
+    ![License and downloads of Syncfusion Essential Studio](download-images/license-installer.png)
 
-    N> License key for the active trial products can be generated from [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.License key is mandatory for using the trial products in the application. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
+    N> You can generate the license key for your active trial products from [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key will be mandatory to use our trial products in your application. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
 
 
 ## Download the License Version
 
-1. In [License & Downloads](https://www.syncfusion.com/account/downloads) page, licensed installers can be downloaded for the products for which you hold the active license.  
-2. Both the active and expired license information are displayed in the above page.
-3. Licenses are listed based on SKU names.
-4. Click **Download** button to download the installer.
+1. You can find your available licensed products which under your registered Syncfusion account in [License & Downloads](https://www.syncfusion.com/account/downloads) page.  
+2. You can find all the licenses (both active licenses and expired licenses) which are under your account.
+3. You can find the licenses listed based on SKU names.
+4. Use the Download (element 1 in below screenshot) button to download the installer of respective product.
 5. Latest version installer will be downloaded from this page.
-6. To download older versions, click [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio).
+6. You can navigate to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in below screenshot) to download older version installers.
+7. From 16.2 version online installer will be downloaded by default, and earlier versions offline installer will be downloaded.
 
-7. From v16.2, web installer will be downloaded by default while clicking the Download button. For earlier versions, offline installer will be downloaded.
+    N> Online Installer have been introduced from the release version 16.2.
 
-    N> Syncfusion started providing web installers from v16.2.
-
-8. To download the other installers product, click **More Download Options**.
-
-9. EXE, Zip and PKG formats are available to download for Windows, Mac and Linux. All are Offline Installer. 
+8. You can navigate to More Downloads Options (element 3 in below screenshot) to download other installers.
+9. EXE and Zip format available to download for Windows OS. Both are Offline Installer. 
+10. No need of unlock key to unlock the online installer.
+11. You can unlock the installer using the unlock key for versions earlier to 16.2, also you can unlock the installer using the Syncfusion registered login credential.
 
     ![License and downloads of Syncfusion Essential Studio](download-images/license-download.png)
 
-    N> License key for the licensed products can be generated from [License & Downloads](https://www.syncfusion.com/account/downloads) page. This license key will be required only from release version 16.2. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
+    N> You can generate the license key for your licensed products from [License & Downloads](https://www.syncfusion.com/account/downloads) page. This license key will be required only from release version 16.2. To know more about License key, refer this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key). 
 
   
 

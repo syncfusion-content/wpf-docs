@@ -209,3 +209,7 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
 </Window.Resources>
 {% endhighlight %}
 {% endtabs %}
+
+## Improving performance while adding multiple FilterPredicates to the column in loop
+
+For more details, refer the [Filtering](https://help.syncfusion.com/wpf/datagrid/filtering#improving-performance-while-adding-multiple-filterpredicates-to-the-column-in-loop) section.
