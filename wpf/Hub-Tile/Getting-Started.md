@@ -13,7 +13,7 @@ This section gives an overview for working with the Hub Tile and Pulsing Tile co
 
 ## Assembly deployment
 
-Refer [Hub Tile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [Pulsing Tile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or NuGet package needs to be added as reference to use the Hub Tile and Pulsing Tile control in any application.
+Refer [Hub Tile](https://help.syncfusion.com/wpf/control-dependencies#sfhubtile) and [Pulsing Tile](https://help.syncfusion.com/wpf/control-dependencies#sfpulsingtile) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) needs to be added as reference to use the Hub Tile and Pulsing Tile control in any application.
 
 ## Creating simple application with Hub Tile and Pulsing Tile
 
@@ -25,14 +25,14 @@ In this walk through, a WPF application that contains Hub Tile and Pulsing Tile 
 
 ### Adding control via Designer
 
-Hub Tile and Pulsing Tile controls can be added to the application by dragging SfHubTile and SfPulsingTile from toolbox and dropping it in designer view. After dropping the controls in designer View, the assemblies such as **Syncfusion.SfHubTile.WPF** and **Syncfusion.SfShared.WPF** gets added into the project automatically. The following code snippets will also be added to XAML.
+Hub Tile and Pulsing Tile controls can be added to the application by dragging SfHubTile and SfPulsingTile from toolbox and dropping it in designer view. After dropping the controls in designer view, the assemblies such as **Syncfusion.SfHubTile.WPF** and **Syncfusion.SfShared.WPF** gets added into the project automatically. The following code snippets will also be added to XAML.
 
 {% tabs %}
 {% highlight XAML %}
 <!--For Hub Tile-->
-<syncfusion:SfHubTile Content="SfHubTile" HorizontalAlignment="Left" Margin="321,137,0,0" VerticalAlignment="Top"/>
+<syncfusion:SfHubTile Content="SfHubTile" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 <!--For Pulsing Tile-->
-<syncfusion:SfPulsingTile Content="SfPulsingTile" HorizontalAlignment="Left" Margin="331,137,0,0" VerticalAlignment="Top"/>
+<syncfusion:SfPulsingTile Content="SfPulsingTile" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,7 +66,7 @@ In order to add control manually in XAML, follow the below steps:
 		
 		<!--PulsingTile-->
 		<syncfusion:SfPulsingTile Content="This is a Pulsing Tile"/>
-    </Grid>
+  </Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}
@@ -78,7 +78,7 @@ In order to add control manually in C#, follow the below steps:
 1. Add the below required assembly references to the project.
 	* Syncfusion.SfHubTile.WPF
 	* Syncfusion.SfShared.WPF
-2. Import the namespace **using Syncfusion.Windows.Controls.Notification;**.
+2. Import the **Syncfusion.Windows.Controls.Notification** namespace.
 3. Create SfHubTile and SfPulsingTile controls instance and add it to the window.
 
 {% tabs %}
