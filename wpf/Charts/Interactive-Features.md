@@ -1255,10 +1255,9 @@ N> By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/w
 
                                  XBindingPath="Demand" 
                                      
-                                 YBindingPath="Year2010"/>
+                                 YBindingPath="Year2010"
                                  
-                                 TrackBallLabelTemplate="{StaticResource labelTemplate}"
-                                 />
+                                 TrackBallLabelTemplate="{StaticResource labelTemplate}"/>
           
 </syncfusion:SfChart>
 

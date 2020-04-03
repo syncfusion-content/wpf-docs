@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Node
+# Node and its customization 
 
 The nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
@@ -104,7 +104,7 @@ You can use text, image, controls, panels, or any UIElement or template to visua
    1)Content template
    2)Content 
    3)Geometry
-   4)Custom path
+   4)Custom shapes
    5)Built-in resource
 
 ### Using content template
@@ -240,7 +240,10 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-### Custom path
+### Custom shapes
+
+#### How to add custom shape using path data
+
 Refer to the following code example to define custom path as node's shape.
  
 {% tabs %}
@@ -289,6 +292,183 @@ NodeViewModel node = new NodeViewModel()
 
 {% endhighlight %}
 {% endtabs %}
+
+![Path Node](Node_images/Node_Path.png)
+
+#### How to add custom shape using data template
+
+Refer to the following code example to define data template for node's custom shape,
+ 
+{% tabs %}
+{% highlight xaml %}
+
+<DataTemplate x:Key="Square">
+  <Path Stretch="Fill" Data="M242,1078L231,1078L231,1067L242,1067z" Fill="#FF5B9BD5" Stroke="#FFC4C4C4" StrokeThickness="2"/>
+</DataTemplate>
+
+<!--Initialize the Sfdiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <syncfusion:SfDiagram.Nodes>
+    <!--Initialize the NodeCollection-->
+    <syncfusion:NodeCollection>
+      <!--Initialize the Node-->
+      <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="100" OffsetY="100" ContentTemplate="{StaticResource Square}" />
+    </syncfusion:NodeCollection>
+  </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>  
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Define the Node
+NodeViewModel node = new NodeViewModel()
+{
+    //sets the size
+    UnitHeight = 100,
+    UnitWidth = 100,
+    //sets the position
+    OffsetX = 100,
+    OffsetY = 100,
+    ContentTemplate = this.Resources["Square"] as DataTemplate,
+};
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Path Node](Node_images/Node_DataTemplate.png)
+
+#### How to add image as node shape
+
+Refer to the following code example to add image as node shape,
+ 
+{% tabs %}
+{% highlight xaml %}
+
+<DataTemplate x:Key="User">
+  <Image Stretch="Uniform" HorizontalAlignment="Center" Source="Images\User.png"/>
+</DataTemplate>
+
+<!--Initialize the Sfdiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <syncfusion:SfDiagram.Nodes>
+    <!--Initialize the NodeCollection-->
+    <syncfusion:NodeCollection>
+      <!--Initialize the Node-->
+      <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="100" OffsetY="100" ContentTemplate="{StaticResource User}" />
+    </syncfusion:NodeCollection>
+  </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>  
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Define the Node
+NodeViewModel node = new NodeViewModel()
+{
+    //sets the size
+    UnitHeight = 100,
+    UnitWidth = 100,
+    //sets the position
+    OffsetX = 100,
+    OffsetY = 100,
+    ContentTemplate = this.Resources["User"] as DataTemplate,
+};
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Path Node](Node_images/Node_user.png)
+
+#### How to add framework element as node content
+
+Refer to the following code example to add framework elements as node content,
+ 
+{% tabs %}
+{% highlight xaml %}
+
+<DataTemplate x:Key="UserProfile">
+  <Border  BorderThickness="1" Background ="#2E95D8" 
+                    BorderBrush="LightGray">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="60" />
+        <ColumnDefinition Width="100" />
+      </Grid.ColumnDefinitions>
+      <Grid Grid.Column="0">
+        <Border Grid.Column="0" VerticalAlignment="Stretch"
+                            Background="Transparent"
+                            BorderBrush="#FF5DC3B1"
+                            Padding="5">
+          <Image Stretch="Uniform" HorizontalAlignment="Center" Source="Images\User.png"/>
+        </Border>
+      </Grid>
+      <Grid Grid.Column="1">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="25" />
+          <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Name" Grid.Row="0"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center"
+                               FontFamily="Segoe UI"
+                               FontSize="12"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               Text="Daniel Tonini"
+                               TextAlignment="Left" />
+        <TextBlock x:Name="Designation" Grid.Row="1"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               FontFamily="Segoe UI"
+                               FontSize="11"
+                               FontWeight="SemiBold"
+                               Foreground="White"
+                               Text="Project Lead"
+                               TextAlignment="Left" />
+      </Grid>
+    </Grid>
+  </Border>
+</DataTemplate>
+
+<!--Initialize the Sfdiagram-->
+<syncfusion:SfDiagram x:Name="diagram">
+  <syncfusion:SfDiagram.Nodes>
+    <!--Initialize the NodeCollection-->
+    <syncfusion:NodeCollection>
+      <!--Initialize the Node-->
+      <syncfusion:NodeViewModel UnitWidth="150" UnitHeight="50" OffsetX="100" OffsetY="100" ContentTemplate="{StaticResource UserProfile}" />
+    </syncfusion:NodeCollection>
+  </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>  
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Define the Node
+NodeViewModel node = new NodeViewModel()
+{
+    //sets the size
+    UnitHeight = 50,
+    UnitWidth = 150,
+    //sets the position
+    OffsetX = 100,
+    OffsetY = 100,
+    ContentTemplate = this.Resources["UserProfile"] as DataTemplate,
+};
+//Adding Node to Collection
+(diagram.Nodes as NodeCollection).Add(node);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Path Node](Node_images/Node_frameworkElements.png)
 
 ### Built-in resource
 

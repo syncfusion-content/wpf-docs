@@ -1,24 +1,24 @@
 ---
 layout: post
 title: Saving edited image in syncfusion SfImageEditor WPF.
-description: Image saving
+description: This section describes how to save the image using toolbar and programmatically, reset the image, and saving events in SfImageEditor control for WPF platform.
 platform: wpf
 control: SfImageEditor
 documentation: ug
 ---
 
-# Save
+# Save and Reset functionality in Image Editor
 
 Image can be saved along with the changes. An image can be saved in the following two ways:
 
-* Saving image using toolbar
-* Saving image programmatically
+* Saving an image using the toolbar.
+* Saving an image programmatically.
 
-## Saving image using toolbar
+## Saving an image using the toolbar
 
 To save an image, click the save icon in the toolbar. You can choose the desired location from the save file dialog to save the edited image.
 
-## Saving image programmatically
+## Saving an image programmatically
 
 An image can be saved programmatically using the Save method in image editor as follows. The save method takes the following three parameters:
 
@@ -68,7 +68,7 @@ editor.Save(null, default(Size), @"E:\Images\");
 
 ### Image format
 
-You can specify the format in which image has to be saved as the parameter in Save method as follows.
+You can specify the format, in which image has to be saved as the parameter in Save method as follows.
 
 {% tabs %} 
 
@@ -96,7 +96,7 @@ editor.Reset();
 
 ## Events
 
-### Saving events
+### Saving an events
 
 Image editor has the following two events:
 
@@ -109,6 +109,7 @@ This event occurs before the image is saved to the destination location. [`Image
 
 * `Cancel` - Cancels the saving functionality.
 * [`Stream`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs~Stream.html) - Stream of the image that is going to be saved.
+* `FileName` - You can save the image in the specified name using the `ImageSaving` event. 
 
 Hence, you can control the saving using the `Cancel` property, and you can also access the stream as needed.
 
@@ -116,14 +117,22 @@ The following code cancels the default saving and saves the stream in the specif
 
 {% tabs %} 
 
+{% highlight xaml %}
+
+        <editor:SfImageEditor x:Name="editor" ImageSaving="editor_ImageSaving" ImageSource="Assets\Buldingimage.jpeg">
+        </editor:SfImageEditor>
+
+{% endhighlight %}
+
 {% highlight C# %} 
 
- private void Editor_ImageSaving(object sender, ImageSavingEventArgs args)
+        private void Editor_ImageSaving(object sender, ImageSavingEventArgs args)
         {
             args.Cancel = true; 
             FileStream stream = new FileStream(@"E:\Images\Resized.jpg", FileMode.Create);
             args.Stream.CopyTo(stream);
             stream.Seek(0, 0);
+            args.FileName = "SavedImage";
         }
 
 {% endhighlight %}
