@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip feature in Chart WPF
+title: ToolTip feature in Syncfusion SfChart WPF
 description: How to enable and customize the tooltip in SfChart
 platform: wpf
 control: SfChart
@@ -514,7 +514,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-## Customizing the Appearence
+## Customizing the Appearance
 
 The [`ToolTipTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TooltipTemplate.html#) property allows you to customize the default appearance of the tooltip as explained in the following code snippet.
 

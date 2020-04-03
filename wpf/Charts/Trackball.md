@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trackball feature in Chart WPF
+title: Trackball feature in Syncfusion SfChart WPF
 description: How to enable and customize the trackball behavior in SfChart
 platform: wpf
 control: SfChart
