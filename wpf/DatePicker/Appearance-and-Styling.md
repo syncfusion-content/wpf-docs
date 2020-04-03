@@ -33,7 +33,7 @@ We can change a foreground of the `SfDatePicker` by using the `Foreground` prope
 ![SfDatePicker with various foreground](Appearance-and-Styling_images/Foreground.png)
 
 
-## Setting the Foreground
+## Setting the Background
 
 We can change a background of the `SfDatePicker` by using the `background` property and also we can change the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) items and selected date item background by using the `Background` and [SfDateSelector.AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AccentBrush.html) properties of `SfDateSelector`.
 
@@ -81,13 +81,19 @@ We can prompt the user with some information by using the [Watermark](https://he
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker Watermark="Select the Date" Name="sfDatePicker"/>
+<syncfusion:SfDatePicker Watermark="Select the Date"
+                         AllowNull="True"  
+                         Value="{x:Null}"
+                         Name="sfDatePicker" >
+</syncfusion:SfDatePicker>
 
 {% endhighlight %}
 {% highlight C# %}
 
-SfDatePicker sfDatePicker= new SfDatePicker();
-sfDatePicker.Watermark="Select the Date";
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.Watermark = "Select the Date";
+sfDatePicker.AllowNull = true;
+sfDatePicker.Value = null;
 
 {% endhighlight %}
 {% endtabs %}
