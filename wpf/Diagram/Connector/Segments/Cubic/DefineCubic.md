@@ -120,5 +120,52 @@ ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
+Vectors also can be used to define the control points of the cubic bezier segments by using `Vector1`, `Vector2` properties of `CubicCurveSegment` class. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--create the connector with cubic curve segments with vector points-->
+<syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="300,300">
+    <syncfusion:ConnectorViewModel.Segments>
+        <syncfusion:ConnectorSegments>
+            <syncfusion:CubicCurveSegment Vector1="-50,50" Vector2="60,-50" Point3="200,200"/>
+            <syncfusion:CubicCurveSegment Vector1="-100,50" Vector2="50,-40" />
+        </syncfusion:ConnectorSegments>
+    </syncfusion:ConnectorViewModel.Segments>
+</syncfusion:ConnectorViewModel>
+                 
+{% endhighlight %}
+
+{% highlight C# %}
+
+//create the connector with cubic bezier segments
+ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
+{
+    SourcePoint = new Point(100, 100),
+    TargetPoint = new Point(300, 300),
+    Segments = new ObservableCollection<IConnectorSegment>()
+    {
+        //Specify the segment as cubic curve segment
+        new CubicCurveSegment()
+        {
+            //Specifies the left side control point as vector
+            Vector1 = new Vector(-50,50),
+            //Specifies the right side control point as vector
+            Vector2 = new Vector(60,-50),
+            //Specifies the ending point of the segment
+            Point3 = new Point(200,200),
+        },
+        new CubicCurveSegment()
+        {
+            Vector1 = new Vector(-100,50),
+            Vector2 = new Vector(50,-40),
+        }
+    }
+};
+
+{% endhighlight %}
+{% endtabs %}
+
 ![Cubic curve segments](Connector_images/MultipleCubicSegments.PNG) &ensp;&ensp;&ensp;&ensp; ![Cubic curve segments](Connector_images/CubicSegmentEdit.png)
 

@@ -7,14 +7,15 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Segments
+# Types of the Segments in connectors
 
-The path of the Connector is defined with a collection of `Segments` and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are four types of segments,
+The path of the Connector is defined with a collection of `Segments` and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are five types of segments,
 
 * Straight
 * Orthogonal
 * Cubic curve
 * Quadratic curve
+* Arc segments
 
 ## Straight segments
 
