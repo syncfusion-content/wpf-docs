@@ -152,7 +152,7 @@ private void SfdatePicker_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ## Display the date using the FormatString
 
- We can display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~FormatString.html) property.
+ We can edit and display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~FormatString.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,7 +196,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree
 
 ## Set selected value on lost focus
 
-By default, the selected value of `SfDateSelector` can be directly sets to the `Value` property when `OK` button is clicked. We can update the `Value` property only on control lost it focus by setting the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`.  
+By default, the selected date of DateSelector can be sets to the `SfDatePicker.Value` property by clicking the `OK` button. If We want to update the selected date of DateSelector to the `SfDatePicker.Value` property automatically without clicking the OK button, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. This is value updated after the DateSelector lost its focus. The default value of `SetValueOnLostFocus` property is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -213,6 +213,6 @@ sfDatePicker.SetValueOnLostFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker value updated on when control lost its focus](Features_images/Features_img15.png)
+![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/SfDatePicker-Value-setting) to download the sample that showcases the value setting support in the `SfDatePicker`.

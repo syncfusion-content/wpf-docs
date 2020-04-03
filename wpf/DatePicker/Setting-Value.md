@@ -57,7 +57,7 @@ sfDatePicker.Value = null;
 
 ## Set selected value on lost focus
 
-By default, the selected value of `SfDateSelector` can be directly sets to the `Value` property when `OK` button is clicked. We can update the `Value` property only on control lost it focus by setting the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`.  
+By default, the selected date of `SfDateSelector` can be sets to the `SfDatePicker.Value` property by clicking the `OK` button. If We want to update the selected date of `SfDateSelector` to the `SfDatePicker.Value` property automatically without clicking the OK button, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. This is value updated after the `SfDateSelector` lost its focus. The default value of `SetValueOnLostFocus` property is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ sfDatePicker.SetValueOnLostFocus = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker value updated on when control lost its focus](Features_images/Features_img15.png)
+![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
 
 ## Setting the Input Scope for the On-Screen Keyboard
 
@@ -124,7 +124,7 @@ sfDatePicker.MaxDate = new DateTime(2020, 6, 30);
 {% endhighlight %}
 {% endtabs %}
 
-![SfDatePicker with Input Scope for the On-Screen Keyboard](Features_images/Features_img16.png)
+![SfTimePicker with max-min date range](Features_images/Features_img16.png)
 
 Here, the users can select the year from 2019 to 2021 only. 
 

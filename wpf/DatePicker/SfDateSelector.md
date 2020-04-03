@@ -17,13 +17,13 @@ The visual elements of the date selector can be customized using the [SelectorSt
 
 ## Change the Cell templates
 
-We can changes the template for the each selection Date, Month or Year list by the `DayCellTemplate`, `MonthCellTemplate` or `YearCellTemplate` which are available in the `SfDateSelector`.
+We can changes the template for the each selection Date, Month or Year list by using the `DayCellTemplate`, `MonthCellTemplate` or `YearCellTemplate` which are available in the `SfDateSelector`.
 
 N> The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
 
 ## Change the DayCell Template
 
-We can change the date selector template by using the [DayCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~DayCellTemplate.html) property. In that, we can add any image, icon or text with the day number.
+We can change the day selector template by using the [DayCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector~DayCellTemplate.html) property. In that, we can add any image, icon or text with the day values.
 
 {% highlight xaml %}
 
@@ -144,7 +144,7 @@ We can change the year selector template by using the [YearCellTemplate](https:/
 
 ## Change size of cells
 
-The item size in the `SfDateSelector` control can be changed by setting the [SelectorItemWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemWidth.html) and [SelectorItemHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemHeight.html) properties. The default value of the `SelectorItemWidth` and `SelectorItemHeight` properties is `80` and `70`. 
+We can change the cell size in the `SfDateSelector` control by setting the [SelectorItemWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemWidth.html) and [SelectorItemHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemHeight.html) properties. The default value of the `SelectorItemWidth` and `SelectorItemHeight` properties is `80` and `70`. 
 
 {% tabs %}
 {% highlight XAML %}
@@ -165,9 +165,9 @@ sfDatePicker.SelectorItemHeight = 100;
 
 ![SfDateSelector item width and height changed](Customizing-DropDown_images/SelectorItemWidth.png)
 
-## DateSelector item spacing and item count
+## DateSelector item spacing
  
-We can change the space between `SfDateSelector` date, month and year items by using the [SelectorItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemSpacing.html) and also can change displaying date selector count by using the [SelectorItemCount](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemCount.html) property. The default value of the `SelectorItemSpacing` property is `4` and `SelectorItemCount` property is `4`.
+We can change the space between `SfDateSelector` date, month and year items by using the [SelectorItemSpacing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorItemSpacing.html) property. The default value of the `SelectorItemSpacing` property is `4`.
 
 {% tabs %}
 {% highlight XAML %}

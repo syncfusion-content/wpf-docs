@@ -1,186 +1,222 @@
 ---
 layout: post
-title: Getting Started documentation of SfTimePicker control  for WPF
-description: Getting Started documentation of SfTimePicker control  for WPF
-platform: wpf
+title: Getting started with WPF SfTimePicker control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF SfTimePicker control and more details about the control features.
+platform: WPF
 control: SfTimePicker
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with WPF SfTimePicker
 
-This section describes how to design a `SfTimePicker` control in a WPF application and overview of its basic functionalities.
+This section explains how to create a WPF [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker.html) and explains about its structure.
 
-# Creating simple application with SfTimePicker
+## Structure of SfTimePicker
 
-The SfTimePicker control can be added to an application by using Visual Studio and Blend.
+![WPF SfTimePicker Control](GettingStarted_images/SfTimePicker.png)
 
-You can create the WPF application with SfTimePicker control as follows:
+## Assembly deployment
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftimepicker) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Create a WPF project in Visual Studio and refer to the following assemblies.
+You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-## Creating the project
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-The steps to create a SfTimePicker control by using Visual Studio in C# are as follows:
+## Add control through designer
 
-1.	Open Visual Studio.
-
-2.	On the File menu, select New -> Project. This opens the New Project Dialog box.
-
-## Adding control via designer
-
-SfTimePicker control can be added to the application by dragging it from the toolbox and dropping it in a designer view. The following required assembly references will be added automatically:
+The `SfTimePicker` control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![](GettingStarted_images/img1.png)
+![SfTimePicker control added by designer](GettingStarted_images/img1.png)
 
-## Adding control manually in code
+## Adding control manually in XAML
 
-The following code sample shows how to create the SfTimePicker from code-behind and XAML. 
+To add the control manually in XAML, follow the given steps:
+
+1.	Add the following required assembly references to the project:
+    * Syncfusion.SfInput.WPF
+    * Syncfusion.SfShared.WPF
+2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+3.	Declare the `SfTimePicker` control in the XAML page.
 
 {% tabs %}
-
 {% highlight XAML %}
 
-	<Window x:Class="SfTimePicker_WPF"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:SfTimePicker_WPF" WindowState="Maximized"
-        xmlns:input="http://schemas.syncfusion.com/wpf"
-        Title="TimePicker" Height="300" Width="300">
-
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="SfTimePickerSample.MainWindow"
+        Title="SfTimePicker Sample" Height="350" Width="525">
     <Grid>
-        <input:SfTimePicker x:Name="datePicker" VerticalAlignment="Center" Width="200" />
+        <!-- Adding SfTimePicker control -->
+        <syncfusion:SfTimePicker x:Name="sfTimePicker" 
+                                 Width="200"/>
     </Grid>
-    </Window>
+</Window>
 
 {% endhighlight %}
+{% endtabs %}
 
+## Add control manually in C\#
+
+To add the control manually in C#, follow the given steps:
+
+1.	Add the following required assembly references to the project:
+    * Syncfusion.SfInput.WPF
+    * Syncfusion.SfShared.WPF
+2.	Import the `SfTimePicker` namespace **using Syncfusion.Windows.Controls.Input;**.
+3.	Create an `SfTimePicker` instance, and add it to the window.
+
+{% tabs %}
 {% highlight C# %}
 
-	     SfTimePicker datepicker = new SfTimePicker();
-         grid.Children.Add(timepicker);
+using Syncfusion.Windows.Controls.Input;
+namespace SfTimePickerSample {    
+    public partial class MainWindow : Window {
+        public MainWindow() {
+            InitializeComponent();
+
+            //Creating an instance of SfTimePicker control
+            SfTimePicker sfTimePicker = new SfTimePicker();
+
+            //Adding SfTimePicker as window content
+            this.Content = sfTimePicker;
+        } 
+    }
+}
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim datepicker As SfTimePicker = New SfTimePicker
-grid.Children.Add(timepicker)
-
-{% endhighlight %}
-
 {% endtabs %}
 
-![](GettingStarted_images/Gettingstarted_Img2.png)
+![SfTimePicker control added by code](GettingStarted_images/wpf-time-picker.png)
 
-## Formatting the display text
+## Setting the time
 
-The SfTimePicker control allows users to format the display text in various ways.
-
-The `FormatString` property determines the format specifier by which the display text has to be formatted.
-
-The example below shows how to create a time picker with a [Long Time pattern](http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.longtimepattern(v=vs.71).aspx).
+We can set or change the selected time by using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property.
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
-
-	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
-            <syncfusion:SfTimePicker VerticalAlignment="Center" 
-
-                                   Width="200" Margin="15"
-
-                                   FormatString="HH:mm:ss"/>
-
-	</Grid>
+<syncfusion:SfTimePicker  Value="04:45:00"
+						  Name="sfTimePicker" />
 
 {% endhighlight %}
-
-{% endtabs %}
-
-![](Features_images/Features_img1.png)
-
-### Specifying format for the TimeSelector
-
-The SelectorFormatString property used to specify format for the TimeSelector
-
-{% tabs %}
-
-{% highlight XAML %}
-
-	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
-    <syncfusion:SfTimePicker HorizontalAlignment="Center" VerticalAlignment="Center" 
-
-                                   Width="200" Margin="15"
-
-                                   SelectorFormatString="HH:mm:ss"/>
-	</Grid>
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![](Features_images/Features_img2.png)
-
-## Localization support
-
-Localization is the process of making application as multi-lingual, by formatting the content according to cultures.
-
-## Creating Resource file and adding value to the resource string based on Culture
-
-Add a resource file(.resx) in the application and assign key values to the resource string based on the culture. Refer below screenshot,
-
-![](Localization-images/localization-img1.png)
-
-## Assign a Current UI culture to the application
-
-While initializing the application, CurrentCulture and CurrentUICulture should be mentioned in code, so that application will get the appropriate values provided in resource file.
-
-{% tabs %}
-
-{% highlight XAML %}
- 
- <syncfusion:SfTimePicker HorizontalAlignment="Center" VerticalAlignment="Center" FormatString="dddd, MMMM dd, yyyy h:mm:ss tt"/>
-
-{% endhighlight %}
-
 {% highlight C# %}
 
-            CultureInfo culture = new System.Globalization.CultureInfo("ar-SA");
-            culture.DateTimeFormat.AMDesignator = "صباحا";
-            culture.DateTimeFormat.PMDesignator = "مساء";
-            System.Threading.Thread.CurrentThread.CurrentCulture = culture;
-            System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
+SfTimePicker sfTimePicker= new SfTimePicker();
+sfTimePicker.Value = new TimeSpan(04, 45, 00);
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-Dim culture As CultureInfo = New System.Globalization.CultureInfo("ar-SA")
-culture.DateTimeFormat.AMDesignator = "5('-'"
-culture.DateTimeFormat.PMDesignator = "E3'!"
-System.Threading.Thread.CurrentThread.CurrentCulture = culture
-System.Threading.Thread.CurrentThread.CurrentUICulture = culture
-
-{% endhighlight %}
-
 {% endtabs %}
 
-![](Localization-images/localization-img3.png)
+![SfTimePicker displaying selected value](Features_images/Features_img17.png)
 
-Value field of SfTimePicker is localized
-{:.caption}
+## Time changed notification
 
-![](Localization-images/localization-img2.png)
+When the selected time of `SfTimePicker`is changed, it will be notified by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~ValueChanged_EV.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
 
-Display text "Choose Time" and Meridiem(AM/PM) is localized
-{:.caption}
+* **OldValue** : Gets a time which is previously selected.
+
+* **NewValue** : Gets a time which is currently selected.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:SfTimePicker ValueChanged="SftimePicker_ValueChanged" 
+                         Name="sfTimePicker"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.ValueChanged += SftimePicker_ValueChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void SftimePicker_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {          
+    Console.WriteLine("The Old selected time: " + e.OldValue.ToString());
+    Console.WriteLine("The Newly selected time: " + e.NewValue.ToString());            
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Display the time using the FormatString
+
+ We can edit and display the selected time with various formatting like short time, long time, universal time and 24 hour time formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~FormatString.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker x:Name="sfTimePicker" 
+                         FormatString="HH:mm:ss"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.FormatString = "HH:mm:ss";
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfTimePicker with 24 hour time format](Features_images/Features_img1.png)
+
+Here, `SfTimePicker` with 24 hour time format
+
+## Specifying format for the TimeSelector
+
+We can allow the user to select only the particualar hour, minutes, seconds or meridiem value from the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SelectorFormatString.html) property.  By default, the hour, minutes and meridiem value selector is enabled in the `SfTimeSelector`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker x:Name="sfTimePicker" 
+                         SelectorFormatString="h/t"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.SelectorFormatString = "h/t";
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfTimePicker contains only hour and meridiem value selelctor](Features_images/Features_img2.png)
+
+Here, the `SfTimeSelector` with only hour and meridiem value selelctor.
+
+Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the edit, display time formatting and time selection formatting by the `SfTimePicker`.
+
+## Set selected value on lost focus
+
+By default, the selected time of TimeSelector can be sets to the `SfTimePicker.Value` property by clicking the `OK` button. If We want to update the selected time of TimeSelector to the `SfTimePicker.Value` property automatically without clicking the OK button, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SetValueOnLostFocus.html) property value as `true`. This is value updated after the TimeSelector lost its focus. The default value of `SetValueOnLostFocus` property is false.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker  SetValueOnLostFocus="True"
+				          Name="sfTimePicker" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker= new SfTimePicker();
+sfTimePicker.SetValueOnLostFocus = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfTimePicker value updated on when SfTimeSelector lost its focus](Features_images/Features_img15.gif)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/SfTimePicker-Value-setting) to download the sample that showcases the value setting support in the `SfTimePicker`.
