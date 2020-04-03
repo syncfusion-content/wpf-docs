@@ -39,20 +39,20 @@ Header can act as the name of the tile, that is placed at the bottom explaining 
 {% highlight C# %}
 
 	// For setting header as text use this code.
-	SfHubTile hubtile = new SfHubTile();
-	hubtile.Header = "Mail";
+	SfHubTile hubTile = new SfHubTile();
+	hubTile.Header = "Mail";
     
     //For setting header as image use this code.
-    SfHubTile hubtile = new SfHubTile();
+    SfHubTile hubTile = new SfHubTile();
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/syncfusion.png",UriKind.RelativeOrAbsolute)),Stretch = Stretch.None };
-    hubtile.Header = image;
+    hubTile.Header = image;
    
     //For setting header as control use this code.
-    SfHubTile hubtile = new SfHubTile();
+    SfHubTile hubTile = new SfHubTile();
     TextBlock textblock = new TextBlock(){Text = "SYNCFUSION", Foreground = Brushes.White, FontSize = 13} ; 
-    hubtile.Header = textblock;
+    hubTile.Header = textblock;
 
-    grid.Children.Add(hubtile);
+    grid.Children.Add(hubTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,20 +91,20 @@ Title can be used to display updates and notifications in a tile. The content of
 {% highlight C# %}
 
 	//Setting title on Hub Tile.
-	SfHubTile hubtile = new SfHubTile();
-	hubtile.Title = "New Mail from Syncfusion";
+	SfHubTile hubTile = new SfHubTile();
+	hubTile.Title = "New Mail from Syncfusion";
 
     //For setting title as image use this code.
-    SfHubTile hubtile = new SfHubTile();
+    SfHubTile hubTile = new SfHubTile();
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/syncfusion.png",UriKind.RelativeOrAbsolute)), Stretch =Stretch.None,HorizontalAlignment = HorizontalAlignment.Left };
-    hubtile.Title = image;
+    hubTile.Title = image;
    
     // For setting title as control use this code.
-    SfHubTile hubtile = new SfHubTile();
+    SfHubTile hubTile = new SfHubTile();
     TextBlock textblock = new TextBlock(){Text = "SYNCFUSION", Foreground = Brushes.White, FontSize = 13} ; 
-    hubtile.Title = textblock;
+    hubTile.Title = textblock;
 
-    grid.Children.Add(hubtile);
+    grid.Children.Add(hubTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -123,17 +123,17 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!--SfHubTile--> 
-<syncfusion:SfHubTile x:Name="hubtile" ImageSource="/Assets/New Mail.png"/>
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png"/>
 </Grid>
 
 {% endhighlight %}
 {% highlight C# % }
 
     //Setting image for hub tile
-    SfHubTile hubtile = new SfHubTile();
-    hubtile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute));
+    SfHubTile hubTile = new SfHubTile();
+    hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute));
 
-    grid.Children.Add(hubtile);
+    grid.Children.Add(hubTile);
 {% endhighlight %}
 {% endtabs %}
 
@@ -179,37 +179,37 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 {% endhighlight %}
 {% highlight C# %}
 
-    SfHubTile hubtile= new SfHubTile();
-    hubtile.Header = "HubTile";
-    hubtile.Title = "Title area";
-    hubtile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
-    hubtile.HubTileTransitions.Add(new SlideTransition());
+    SfHubTile hubTile= new SfHubTile();
+    hubTile.Header = "HubTile";
+    hubTile.Title = "Title area";
+    hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
+    hubTile.HubTileTransitions.Add(new SlideTransition());
 
     //For setting secondary content as an image use this code.
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
-    hubtile.SecondaryContent = image;
-    hubtile.Interval = TimeSpan.FromSeconds(3.0);
+    hubTile.SecondaryContent = image;
+    hubTile.Interval = TimeSpan.FromSeconds(3.0);
 
     //For setting secondary content as a control use this code.
-    SfHubTile hubtile= new SfHubTile();
-    hubtile.Header = "HubTile";
-    hubtile.Title = "Title area";
-    hubtile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
-    hubtile.HubTileTransitions.Add(new SlideTransition());
+    SfHubTile hubTile= new SfHubTile();
+    hubTile.Header = "HubTile";
+    hubTile.Title = "Title area";
+    hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
+    hubTile.HubTileTransitions.Add(new SlideTransition());
     TextBlock textblock = new TextBlock() { Text = "This is the secondary content of the tile displayed at each transition", TextWrapping = TextWrapping.Wrap, FontSize = 15, Foreground = Brushes.White };
-    hubtile.SecondaryContent = textblock;
-    hubtile.Interval = TimeSpan.FromSeconds(3.0);
+    hubTile.SecondaryContent = textblock;
+    hubTile.Interval = TimeSpan.FromSeconds(3.0);
   
     //For setting secondary content as text use this code.
-    SfHubTile hubtile= new SfHubTile();
-    hubtile.Header = "HubTile";
-    hubtile.Title = "Title area";
-    hubtile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
-    hubtile.HubTileTransitions.Add(new SlideTransition());
-    hubtile.SecondaryContent = "Secondary content of tile";
-    hubtile.Interval = TimeSpan.FromSeconds(3.0);
+    SfHubTile hubTile= new SfHubTile();
+    hubTile.Header = "HubTile";
+    hubTile.Title = "Title area";
+    hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
+    hubTile.HubTileTransitions.Add(new SlideTransition());
+    hubTile.SecondaryContent = "Secondary content of tile";
+    hubTile.Interval = TimeSpan.FromSeconds(3.0);
 
-    grid.Children.Add(hubtile);
+    grid.Children.Add(hubTile);
 {% endhighlight %}
 {% endtabs %}    
 
@@ -253,31 +253,31 @@ The Hub Tile control supports various transitions which causes the tile to chang
 {% endhighlight %}
 {% highlight C# %}
 
-    SfHubTile hubtile = new SfHubTile();
+    SfHubTile hubTile = new SfHubTile();
 
     //Setting header
-    hubtile.Header ="HubTile";
+    hubTile.Header ="HubTile";
 
     //Setting title    
-    hubtile.Title ="Title area";
+    hubTile.Title ="Title area";
     
     //Setting image
-    hubtile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute)); 
+    hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute)); 
 
     //For setting secondary content
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
-    hubtile.SecondaryContent = image;
+    hubTile.SecondaryContent = image;
 
     //For Slide transition use this code.
-    hubtile.HubTileTransitions.Add(new SlideTransition());
+    hubTile.HubTileTransitions.Add(new SlideTransition());
 
     //For Fade transition use this code.
-    hubtile.HubTileTransitions.Add(new FadeTransition());
+    hubTile.HubTileTransitions.Add(new FadeTransition());
 
     //Setting transition interval
-    hubtile.Interval = TimeSpan.FromSeconds(3.0);
+    hubTile.Interval = TimeSpan.FromSeconds(3.0);
 
-    grid.Children.Add(hubtile);
+    grid.Children.Add(hubTile);
 {% endhighlight %}
 {% endtabs %}
 
@@ -312,11 +312,11 @@ Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTrans
     {
         protected override void Invoke(object parameter)
         {
-          var hubtile = this.AssociatedObject as SfHubTile;
-          MainWindow window = VisualUtils.FindAncestor(hubtile, typeof(MainWindow)) as MainWindow;
-          if ((window != null) && (hubtile != null))
+          var hubTile = this.AssociatedObject as SfHubTile;
+          MainWindow window = VisualUtils.FindAncestor(hubTile, typeof(MainWindow)) as MainWindow;
+          if ((window != null) && (hubTile != null))
           {
-            window.hubtile.Background=Brushes.Green;
+            window.hubTile.Background=Brushes.Green;
           }
         }
     }
@@ -365,48 +365,48 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 {% endhighlight %}
 {% highlight C# %}
     
-    WrapPanel wrappanel = new WrapPanel();
-    wrappanel.Orientation = Orientation.Horizontal;
+    WrapPanel wrapPanel = new WrapPanel();
+    wrapPanel.Orientation = Orientation.Horizontal;
     grid.Children.Add(wrappanel);
 
     //SfHubTile 1
-    SfHubTile hubtileone= new SfHubTile();
-    hubtileone.Header = "HubTile";
-    hubtileone.Title = "Title area";
-    hubtileone.HubTileTransitions.Add(new SlideTransition());
-    hubtileone.Interval = TimeSpan.FromSeconds(3.0);
+    SfHubTile hubTileOne= new SfHubTile();
+    hubTileOne.Header = "HubTile";
+    hubTileOne.Title = "Title area";
+    hubTileOne.HubTileTransitions.Add(new SlideTransition());
+    hubTileOne.Interval = TimeSpan.FromSeconds(3.0);
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
-    hubtileone.SecondaryContent = image;
+    hubTileOne.SecondaryContent = image;
         
     //SfHubTile 2
-    SfHubTile hubtiletwo= new SfHubTile();
-    hubtiletwo.Header = "HubTile";
-    hubtiletwo.Title = "Title area";
-    hubtiletwo.HubTileTransitions.Add(new SlideTransition());
-    hubtiletwo.Interval = TimeSpan.FromSeconds(3.0);
+    SfHubTile hubTileTwo= new SfHubTile();
+    hubTileTwo.Header = "HubTile";
+    hubTileTwo.Title = "Title area";
+    hubTileTwo.HubTileTransitions.Add(new SlideTransition());
+    hubTileTwo.Interval = TimeSpan.FromSeconds(3.0);
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
-    hubtiletwo.SecondaryContent = image;
-    Thickness margin = hubtiletwo.Margin;
+    hubTileTwo.SecondaryContent = image;
+    Thickness margin = hubTileTwo.Margin;
     margin.Left = 10;
-    hubtiletwo.Margin = margin;
+    hubTileTwo.Margin = margin;
 
     //SfHubTile 3
-    SfHubTile hubtilethree= new SfHubTile();
-    hubtilethree.Header = "HubTile";
-    hubtilethree.Title = "Title area";
-    hubtilethree.HubTileTransitions.Add(new SlideTransition());
-    hubtilethree.Interval = TimeSpan.FromSeconds(3.0);
+    SfHubTile hubTileThree= new SfHubTile();
+    hubTileThree.Header = "HubTile";
+    hubTileThree.Title = "Title area";
+    hubTileThree.HubTileTransitions.Add(new SlideTransition());
+    hubTileThree.Interval = TimeSpan.FromSeconds(3.0);
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
-    hubtilethree.SecondaryContent = image;
+    hubTileThree.SecondaryContent = image;
     
     //Setting group name
-    hubtileone.GroupName = "Applications";
-    hubtiletwo.GroupName = "Applications";
-	hubtilethree.GroupName = "Applications";
+    hubTileOne.GroupName = "Applications";
+    hubTileTwo.GroupName = "Applications";
+	hubTileThree.GroupName = "Applications";
 
-    wrappanel.Children.Add(hubtileone);
-    wrappanel.Children.Add(hubtiletwo);
-    wrappanel.Children.Add(hubtilethree);
+    wrapPanel.Children.Add(hubTileOne);
+    wrapPanel.Children.Add(hubTileTwo);
+    wrapPanel.Children.Add(hubTileThree);
 {% endhighlight %}
 {% endtabs %}
 
@@ -421,12 +421,12 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
 {% tabs %}
 {% highlight C#%}
     
-    public class HubtileModel
+    public class Model
     {
 
         public string Header { get; set; }
  
-        public string Imagesource { get; set; }
+        public string ImageSource { get; set; }
 
         public TimeSpan Interval { get; set; }
         
@@ -442,19 +442,19 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
 
     public class ViewModel
     {
-        public ObservableCollection<HubtileModel> Items { get; set; }
+        public ObservableCollection<Model> Items { get; set; }
         public ViewModel()
         {
-            Items = new ObservableCollection<HubtileModel>();
+            Items = new ObservableCollection<Model>();
             PopulateData(); 
         }
 
         private void PopulateData()
         {
-            HubtileModel hub1 = new HubtileModel { Header= "Mail",Imagesource=@"/Assets/New Mail.png", Interval=TimeSpan.FromSeconds(3.0),};
-            HubtileModel hub2 = new HubtileModel { Header = "Word", Imagesource = @"/Assets/Word.png", Interval=TimeSpan.FromSeconds(3.0),};
-            HubtileModel hub3 = new HubtileModel { Header = "Paint", Imagesource = @"/Assets/Painting Brush.png", Interval=TimeSpan.FromSeconds(3.0),};
-            HubtileModel hub4 = new HubtileModel { Header = "NotePad", Imagesource = @"/Assets/Note.png",Interval=TimeSpan.FromSeconds(3.0),};
+            Model hub1 = new Model { Header= "Mail",ImageSource=@"/Assets/New Mail.png", Interval=TimeSpan.FromSeconds(3.0),};
+            Model hub2 = new Model { Header = "Word", ImageSource = @"/Assets/Word.png", Interval=TimeSpan.FromSeconds(3.0),};
+            Model hub3 = new Model { Header = "Paint", ImageSource = @"/Assets/Painting Brush.png", Interval=TimeSpan.FromSeconds(3.0),};
+            Model hub4 = new Model { Header = "NotePad", ImageSource = @"/Assets/Note.png",Interval=TimeSpan.FromSeconds(3.0),};
             Items.Add(hub1);
             Items.Add(hub2);
             Items.Add(hub3);
@@ -535,18 +535,18 @@ The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf
 {% endhighlight %}
 {% highlight C# %}
     
-    SfHubTile hubtile= new SfHubTile();
-    hubtile.Header = "HubTile";
-    hubtile.Title = "Title area.";
-    hubtile.HubTileTransitions.Add(new SlideTransition());
+    SfHubTile hubTile= new SfHubTile();
+    hubTile.Header = "HubTile";
+    hubTile.Title = "Title area.";
+    hubTile.HubTileTransitions.Add(new SlideTransition());
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
-    hubtile.SecondaryContent = image;
-    hubtile.Interval=TimeSpan.FromSeconds(3.0);
+    hubTile.SecondaryContent = image;
+    hubTile.Interval=TimeSpan.FromSeconds(3.0);
 
     //Setting freeze property
-    hubtile.IsFrozen = true;
+    hubTile.IsFrozen = true;
 
-    gird.Children.Add(hubtile);
+    gird.Children.Add(hubTile);
 {% endhighlight %}
 {% endtabs %}
  
@@ -571,18 +571,18 @@ The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/w
 {% endhighlight %}
 {% highlight C# %}
 
-    SfHubTile hubtile= new SfHubTile();
-    hubtile.Header = "HubTile";
-    hubtile.Title = "Title area";
-    hubtile.HubTileTransitions.Add(new SlideTransition());
+    SfHubTile hubTile= new SfHubTile();
+    hubTile.Header = "HubTile";
+    hubTile.Title = "Title area";
+    hubTile.HubTileTransitions.Add(new SlideTransition());
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
-    hubtile.SecondaryContent = image;
-    hubtile.Interval = TimeSpan.FromSeconds(3.0);
+    hubTile.SecondaryContent = image;
+    hubTile.Interval = TimeSpan.FromSeconds(3.0);
 
     //Setting Unfreeze property
-    hubtile.IsFrozen = false;
+    hubTile.IsFrozen = false;
 
-    grid.Children.Add(hubtile);
+    grid.Children.Add(hubTile);
 {% endhighlight %}
 {% endtabs %}
 
@@ -659,9 +659,9 @@ A single tile or a group of tiles can be freezed by using [Freeze](https://help.
         {
             protected override void Invoke(object parameter)
             {
-                var hubtile = this.AssociatedObject as SfHubTile;
-                MainWindow window = VisualUtils.FindAncestor(hubtile, typeof(MainWindow)) as MainWindow;
-                if (window != null && hubtile != null)
+                var hubTile = this.AssociatedObject as SfHubTile;
+                MainWindow window = VisualUtils.FindAncestor(hubTile, typeof(MainWindow)) as MainWindow;
+                if (window != null && hubTile != null)
                 {
                     //For a single tile
                     HubTileService.Freeze(window.hubTileOne); 
@@ -742,9 +742,9 @@ A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
         {
             protected override void Invoke(object parameter)
             {
-                var hubtile = this.AssociatedObject as SfHubTile;
-                MainWindow window = VisualUtils.FindAncestor(hubtile, typeof(MainWindow)) as MainWindow;
-                if (window != null && hubtile != null)
+                var hubTile = this.AssociatedObject as SfHubTile;
+                MainWindow window = VisualUtils.FindAncestor(hubTile, typeof(MainWindow)) as MainWindow;
+                if (window != null && hubTile != null)
                 {
 		            //For a single tile use this code
 		            HubTileService.UnFreeze(window.hubTileOne);
@@ -769,23 +769,23 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusi
 
 {% tabs %}
 {% highlight XAML%} 
-<syncfusion:SfHubTile x:Name="hubtile"  GroupName="HubTiles" Interval="00:00:03"  Header="Hubtile" Title="This is title area." ImageSource="/Assets/New Mail.png">
+<syncfusion:SfHubTile x:Name="hubTile"  GroupName="HubTiles" Interval="00:00:03"  Header="Hubtile" Title="This is title area." ImageSource="/Assets/New Mail.png">
 	<i:Interaction.Triggers>
         <i:EventTrigger EventName="Click">
-            <local:Clickevent/>
+            <local:ClickEvent/>
         </i:EventTrigger>
     </i:Interaction.Triggers>
 </syncfusion:SfHubTile>
 {% endhighlight %}
 {% highlight C# %}
       
-    public class Clickevent : TargetedTriggerAction<SfHubTile>
+    public class ClickEvent : TargetedTriggerAction<SfHubTile>
     {
         protected override void Invoke(object parameter)
         {
-            var hubtile = this.AssociatedObject as SfHubTile;
+            var hubTile = this.AssociatedObject as SfHubTile;
             MainWindow window = VisualUtils.FindAncestor(hubtile, typeof(MainWindow)) as MainWindow;
-            if ((window != null) && (hubtile != null))
+            if ((window != null) && (hubTile != null))
             {
                 MessageBox.Show("Hub Tile is Clicked");
             }
@@ -823,31 +823,31 @@ Command specifies the operation to be performed when the tile is pressed. [Comma
 	public class Viewmodel
     {
 
-        private ICommand hubtilecommand;
+        private ICommand hubTileCommand;
 
         public ICommand HubTileCommand
         {
             get 
             { 
-                return hubtilecommand ?? (hubtilecommand = new Command(true, ()=>MyAction("HubTileCommand")));
+                return hubTileCommand ?? (hubTileCommand = new Command(true, ()=>MyAction("HubTileCommand")));
             }
         }
         private void MyAction(string parameter)
         {
            if (parameter.Equals("HubTileCommand"))
             {
-              string msg = string.Format("Hub Tile Command executed");
-              MessageBox.Show(msg);
+              string meesage = string.Format("Hub Tile Command executed");
+              MessageBox.Show(meesage);
             }
         }
     }
 	public class Command : ICommand
     {
-        private bool _canexecute;
+        private bool _canExecute;
         private Action _execute;
-        public Command(bool Canexecute, Action Execute)
+        public Command(bool CanExecute, Action Execute)
         {
-            _canexecute = Canexecute;
+            _canExecute = CanExecute;
             _execute = Execute;
         }
 
@@ -855,7 +855,7 @@ Command specifies the operation to be performed when the tile is pressed. [Comma
 
         public bool CanExecute(object parameter)
         {
-            return _canexecute;
+            return _canExecute;
         }
 
         public void Execute(object parameter)
@@ -885,20 +885,20 @@ The tile press animation takes place when the center of the tile is pressed. The
 {% endhighlight %}
 {% highlight C# %}
 
-    SfHubTile hubtile = new SfHubTile();
-    hubtile.Header = "Hubtile";
-    hubtile.Title = "TitleArea";
-    hubtile.Interval = TimeSpan.FromSeconds(3.0);
-    hubtile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute)); 
-    hubtile.HubTileTransitions.Add(new SlideTransition());
+    SfHubTile hubTile = new SfHubTile();
+    hubTile.Header = "HubTile";
+    hubTile.Title = "TitleArea";
+    hubTile.Interval = TimeSpan.FromSeconds(3.0);
+    hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute)); 
+    hubTile.HubTileTransitions.Add(new SlideTransition());
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/HubTile.png",UriKind.RelativeOrAbsolute)) };
-    hubtile.SecondaryContent = image;
+    hubTile.SecondaryContent = image;
 
     //Setting tile press duration and scale depth
-    hubtile.TilePressDuration = TimeSpan.FromSeconds(2.0);
-    hubtile.ScaleDepth = 2;
+    hubTile.TilePressDuration = TimeSpan.FromSeconds(2.0);
+    hubTile.ScaleDepth = 2;
 
-    grid.Children.Add(hubtile);
+    grid.Children.Add(hubTile);
 
 {% endhighlight %}
 {% endtabs %}
