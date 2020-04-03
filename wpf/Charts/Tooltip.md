@@ -1,14 +1,14 @@
 ---
 layout: post
 title: ToolTip feature in Syncfusion SfChart WPF
-description: How to enable and customize the tooltip in SfChart
+description: How to enable and customize the tooltip in Essential WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
 
 ---
 
-# ToolTip
+# ToolTip in WPF Charts (SfChart)
 
 The ToolTip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 

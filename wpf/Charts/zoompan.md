@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Zooming and Panning
+# Zooming and Panning in WPF Charts (SfChart)
 
 SfChart allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Trackball feature in Syncfusion SfChart WPF
-description: How to enable and customize the trackball behavior in SfChart
+description: How to enable and customize the trackball behavior in Essential WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# TrackBall
+# TrackBall in WPF Charts (SfChart)
 
 The [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 

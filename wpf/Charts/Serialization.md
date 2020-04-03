@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Serialization in Syncfusion SfChart WPF.
-description: Serialization support in SfChart.
+description: Serialization and Deserialization support in Essential WPF Chart (SfChart).
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Serialization
+# Serialization in WPF Charts (SfChart)
 
 SfChart supports serialization and deserialization to save the settings of the chart and reload. 
 

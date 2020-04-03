@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion WPF Chart Area and its properties. 
-description: Guide for plotting area properties and behaviors.
+description: Guide (Virtual rectangular area) for plotting area properties and it's behaviors in WPF Chart (SfChart).
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Area	
+# Area in WPF Charts (SfChart)
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 
