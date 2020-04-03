@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Hub Tile  | SfHubTile | WPF | Syncfusion
-description: This section explains how to customize the hub tile and its supporting features.
+description: This section briefly demonstrates how to customize the hub tile control and its supporting features.
 platform: WPF
 control: SfHubTile
 documentation: ug
 ---
 
-# Hub Tile
+# WPF Hub Tile control
 
 The Hub Tile control supports the tile feature similar to the live tile feature of Windows Desktop and Windows Phone. This section explains about the supporting features of Hub Tile control.
 
@@ -213,11 +213,11 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 {% endhighlight %}
 {% endtabs %}    
 
-![wpf hubtile secondarycontent as text](Getting-Started_images/wpf-hubtile-secondarycontent-text.gif)
+![wpf hubtile secondarycontent as text](Getting-Started_images/wpf-hubtile-secondarycontent-text.png)
 
-![wpf hubtile secondarycontent as image](Getting-Started_images/wpf-hubtile-slidetransition.gif)
+![wpf hubtile secondarycontent as image](Getting-Started_images/wpf-hubtile-slide-transition.png)
 
-![wpf hubtile secondaryconten as control](Getting-Started_images/wpf-hubtile-secondarycontent-control.gif)
+![wpf hubtile secondaryconten as control](Getting-Started_images/wpf-hubtile-secondarycontent-control.png)
 
 ## Transitions
 
@@ -281,8 +281,9 @@ The Hub Tile control supports various transitions which causes the tile to chang
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile  slide transition](Getting-Started_images/wpf-hubtile-slidetransition.gif)
-![wpf hubtile fade transition](Getting-Started_images/wpf-hubtile-fadetransition.gif)
+![wpf hubtile  slide transition](Getting-Started_images/wpf-hubtile-slide-transition.png)
+
+![wpf hubtile fade transition](Getting-Started_images/wpf-hubtile-fade-transition.png)
 
 N> **Syncfusion.SfShared.Wpf** assembly should be included in XAML or import **using Syncfusion.Windows.Controls;** namespace at code behind to support built-in transitions.
 
@@ -292,12 +293,12 @@ Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTrans
 
 {% tabs %}
 {% highlight XAML%}
-<syncfusion:SfHubTile x:Name="hubtile" Header="HubTile" Title="TitleArea." ImageSource="/Assets/New mail.png" Interval="00:00:03" >
+<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile" Title="TitleArea." ImageSource="/Assets/New mail.png" Interval="00:00:03" >
 	<syncfusion:SfHubTile.HubTileTransitions>
 	    <shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
 	<syncfusion:SfHubTile.SecondaryContent>
-	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill">
+	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill"/>
 	</syncfusion:SfHubTile.SecondaryContent>
 	<i:Interaction.Triggers>
         <i:EventTrigger EventName="HubTileTransitionCompleted">
@@ -323,7 +324,7 @@ Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTrans
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile transition completed](Getting-Started_images/wpf-hubtile-transitioncompleted.gif)
+![wpf hubtile transition completed](Getting-Started_images/wpf-hubtile-transitioncompleted.png)
 
 ## Grouping
 
@@ -367,7 +368,7 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
     
     WrapPanel wrapPanel = new WrapPanel();
     wrapPanel.Orientation = Orientation.Horizontal;
-    grid.Children.Add(wrappanel);
+    grid.Children.Add(wrapPanel);
 
     //SfHubTile 1
     SfHubTile hubTileOne= new SfHubTile();
@@ -410,7 +411,7 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile grouping](Getting-Started_images/wpf-hubtile-grouping.gif)
+![wpf hubtile grouping](Getting-Started_images/wpf-hubtile-grouping.jpg)
 
 ### Grouping via DataBinding
 
@@ -586,7 +587,7 @@ The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/w
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile unfreeze a tile](Getting-Started_images/wpf-hubtile-slidetransition.gif)
+![wpf hubtile unfreeze a tile](Getting-Started_images/wpf-hubtile-slide-transition.png)
 
 ### Freezing/unfreezing the tiles
 
@@ -722,9 +723,9 @@ A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 	    <shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
 	<i:Interaction.Triggers>
-	    <i:EventTriggers EventName="Loaded">
+	    <i:EventTrigger EventName="Loaded">
 	        <local:UnfreezeTiles/>
-        <i:EventTriggers/>   
+        </i:EventTrigger>   
 	</i:Interaction.Triggers>
 </syncfusion:SfHubTile>
 </WrapPanel>
@@ -758,8 +759,8 @@ A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile unfreeze a single tile](Getting-Started_images/wpf-hubtile-slidetransition.gif)
-![wpf hubtile unfreeze a group of tiles](Getting-Started_images/wpf-hubtile-grouping.gif)
+![wpf hubtile unfreeze a single tile](Getting-Started_images/wpf-hubtile-slide-transition.png)
+![wpf hubtile unfreeze a group of tiles](Getting-Started_images/wpf-hubtile-grouping.jpg)
  
 ## Notifications
 
@@ -784,7 +785,7 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusi
         protected override void Invoke(object parameter)
         {
             var hubTile = this.AssociatedObject as SfHubTile;
-            MainWindow window = VisualUtils.FindAncestor(hubtile, typeof(MainWindow)) as MainWindow;
+            MainWindow window = VisualUtils.FindAncestor(hubTile, typeof(MainWindow)) as MainWindow;
             if ((window != null) && (hubTile != null))
             {
                 MessageBox.Show("Hub Tile is Clicked");
@@ -836,8 +837,8 @@ Command specifies the operation to be performed when the tile is pressed. [Comma
         {
            if (parameter.Equals("HubTileCommand"))
             {
-              string meesage = string.Format("Hub Tile Command executed");
-              MessageBox.Show(meesage);
+              string message = string.Format("Hub Tile Command executed");
+              MessageBox.Show(message);
             }
         }
     }
@@ -904,8 +905,6 @@ The tile press animation takes place when the center of the tile is pressed. The
 {% endtabs %}
 
 N> The tile press animation occurs only if the [OverrideDefualtStates](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~OverrideDefaultStates.html) property is said to be **false**. 
-
-![wpf hubtile tile press animation](Getting-Started_images/wpf-hubtile-tilepress-animation.gif)
 
 ## Appearance and styling
 
@@ -1041,4 +1040,4 @@ The secondary content of the tile can be customized by using the [SecondaryConte
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile secondary content customization using secondary content template](Appearance-Styling_images/wpf-hubtile-secondarycontenttemplate.gif)
+![wpf hubtile secondary content customization using secondary content template](Getting-Started_images/wpf-hubtile-secondarycontenttemplate.jpg)

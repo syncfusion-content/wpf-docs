@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Pulsing Tile | SfPulsingTile | WPF | Syncfusion
-description: This section explains how to customize the pulsing tile and its supporting features.
+description: This section briefly describes how to customize the pulsing tile control and its supporting features.
 platform: WPF
 control: SfPulsingTile
 documentation: ug
 ---
 
-# Pulsing Tile 
+# WPF Pulsing Tile control
 
 The Pulsing Tile control allows to create a tile similar to music and video tiles in Windows Phone. The content zooms in/out randomly with random movement along the X-axis and Y-axis. This section explains about the supporting features of Pulsing Tile control.
 
@@ -190,7 +190,7 @@ The time required to complete a single scaling animation is achieved by setting 
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTile.Content = image; 
 
-	//Setting pulseduration
+	//Setting pulse duration
 	pulsingTile.PulseDuration = TimeSpan.FromSeconds(3.0);
 
     grid.Children.Add(pulsingTile);
@@ -198,7 +198,13 @@ The time required to complete a single scaling animation is achieved by setting 
 {% endhighlight %}
 {% endtabs %}
 
-![wpf pulsingtile animation using pulse scale](Getting-Started_images/wpf-pulsingtile-animation-pulsescale.gif)
+Before applying pulse scale to the Pulsing Tile:
+
+![wpf pulsingtile before animation](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
+
+After applying pulse scale to the Pulsing Tile :
+
+![wpf pulsingtile animation using pulse scale](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
 
 ### Horizontal translation
 
@@ -228,7 +234,7 @@ Horizontal translation allows the content of the tile to move from left to right
 {% endhighlight %}
 {% endtabs %}
 
-![wpf pulsingtile animation using radiusx](Getting-Started_images/wpf-pulsingtile-animation-radiusx.gif)
+![wpf pulsingtile animation using radiusx](Getting-Started_images/wpf-pulsingtile-radiusx.gif)
 
 ### Vertical translation
  
@@ -257,7 +263,7 @@ Vertical translation allows the content of the tile to move up and down along th
 {% endhighlight %}
 {% endtabs %}
 
-![wpf pulsingtile animation by radiusy](Getting-Started_images/wpf-pulsingtile-animation-radiusy.gif)
+![wpf pulsingtile animation by radiusy](Getting-Started_images/wpf-pulsingtile-radiusy.gif)
 
 ### Duration of horizontal and vertical translation
 
@@ -344,17 +350,17 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
     pulsingTileThree.PulseDuration = TimeSpan.FromSeconds(3.0);
    
     //Setting group name
-    pulsingtileone.GroupName = "Applications";
-    pulsingtiletwo.GroupName = "Applications";
+    pulsingTileOne.GroupName = "Applications";
+    pulsingTileTwo.GroupName = "Applications";
     pulsingTileThree.GroupName = "Applications";
 
     wrapPanel.Children.Add(pulsingtileone);
-    wrapPanel.Children.Add(pulsingtiletwo);
+    wrapPanel.Children.Add(pulsingTileTwo);
     wrapPanel.Children.Add(pulsingTileThree);
 {% endhighlight %}
 {% endtabs %}
 
-![wpf pulsingtile unfreezebygroupname](Getting-Started_images/wpf-pulsingtile-grouping.gif)
+![wpf pulsingtile unfreezebygroupname](Getting-Started_images/wpf-pulsingtile-grouping.png)
 
 ## Freezing/Unfreezing
 
@@ -367,7 +373,7 @@ The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!-- SfPulsingTile -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="PulsingTile" IsFrozen="True" Title="This is title area." PulseScale="3" PulseDuration="00:00:03" >
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="PulsingTile" IsFrozen="True"  PulseScale="3" PulseDuration="00:00:03" >
     <Image Source="/Assets/PulsingTile.jpg"
 	HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
@@ -388,7 +394,7 @@ The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf
 {% endhighlight %}
 {% endtabs %}
  
-![wpf pulsingtile freeze a tile](Getting-Started_images/wpf-pulsing-tile.png)
+![wpf pulsingtile freeze a tile](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
 
 The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to **false**.
 
@@ -416,7 +422,13 @@ The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/w
 {% endhighlight %}
 {% endtabs %}
 
-![wpf pulsingtile unfreeze a tile](Getting-Started_images/wpf-pulsingtile-animation-pulsescale.gif)
+Before the Pulsing Tile is unfreezed:
+
+![wpf pulsingtile before unfreezing a tile](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
+
+After unfreezing the Pulsing Tile:
+
+![wpf pulsingtile unfreeze a tile](Getting-Started_images/wpf-pulsingtile-pulsescale.jpg)
 
 ### Freezing/unfreezing the tiles
 
@@ -562,9 +574,21 @@ A Single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![wpf pulsingtile unfreeze a single tile](Getting-Started_images/wpf-pulsingtile-animation-pulsescale.gif)
+Before unfreezing a single tile:
 
-![wpf pulsingtile unfreeze a group of tiles](Getting-Started_images/wpf-pulsingtile-grouping.gif)
+![wpf pulsingtile before unfreezing a single tile](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
+
+After unfreezing a single tile:
+
+![wpf pulsingtile unfreeze a single tile](Getting-Started_images/wpf-pulsingtile-pulsescale.jpg)
+
+Before unfreezing a group of tiles:
+
+![wpf pulsingtile before unfreezing a group of tiles](Getting-Started_images/wpf-pulsingtile-freezebygroupname.png)
+
+After unfreezing a group of tiles:
+
+![wpf pulsingtile unfreeze a group of tiles](Getting-Started_images/wpf-pulsingtile-unfreezebygroupname.jpg)
 
 ## Notifications
 Once the tile is pressed, it is notified by the click event and the command property of the Pulsing Tile. 
@@ -702,7 +726,6 @@ The tile press animation takes place when the center of the tile is pressed. The
 
 N> The tile press animation occurs only if the [OverrideDefualtStates](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~OverrideDefaultStates.html) property is said to be **false**.
 
-![wpf pulsingtile tile press animation](Getting-Started_images/wpf-pulsingtile-tilepress-animation.gif)
 
 ## Appearance and styling
 
