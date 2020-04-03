@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trackball feature in Syncfusion SfChart WPF
-description: How to enable and customize the trackball behavior in Essential WPF Chart (SfChart)
+description: How to enable, customize the trackball behavior, label and technical indicators in Essential WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug

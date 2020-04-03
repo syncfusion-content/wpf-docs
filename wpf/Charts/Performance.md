@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance| SfChart | Wpf | Syncfusion
-description: How to boost the performance of Essential WPF Chart (SfChart) with high volume data
+description: How to boost the performance of Essential WPF Chart (SfChart) when there is a need to plot high volume data.
 platform: wpf
 control: SfChart
 documentation: ug

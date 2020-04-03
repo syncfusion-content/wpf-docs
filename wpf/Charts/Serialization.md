@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization in Syncfusion SfChart WPF.
-description: Serialization and Deserialization support in Essential WPF Chart (SfChart).
+description: Essental WPF Chart (SfChart) supports serialization and deserialization to save the settings of the chart and reload.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -26,7 +26,6 @@ This can be done using [`Serialize`](https://help.syncfusion.com/cr/cref_files/w
 </chart:SfChart.Annotations>
 
 
-
 <chart:SfChart.PrimaryAxis>
 
 <chart:CategoryAxis Header="X Axis" />
@@ -34,13 +33,11 @@ This can be done using [`Serialize`](https://help.syncfusion.com/cr/cref_files/w
 </chart:SfChart.PrimaryAxis>
 
 
-
 <chart:SfChart.SecondaryAxis>
 
 <chart:NumericalAxis Header="Y Axis" />
 
 </chart:SfChart.SecondaryAxis>
-
 
 
 <chart:ColumnSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category"
