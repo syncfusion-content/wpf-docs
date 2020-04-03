@@ -38,7 +38,7 @@ Hub Tile and Pulsing Tile controls can be added to the application by dragging S
 
 N> "syncfusion" in XAML is an auto generated namespace.
 
-![wpf hub tile control added by designer](Getting-Started_images/SfHubTile.png)
+![wpf hub tile control added by designer](Getting-Started_images/Hubtile.png)
 
 ![wpf pulsing tile control added by designer](Getting-Started_images/Pulsingtile.png)
 	
