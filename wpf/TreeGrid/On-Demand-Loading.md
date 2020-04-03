@@ -254,7 +254,7 @@ public void Execute(object parameter)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](https://github.com/AmalRajUmapathySelvam/How-to-load-data-on-demand-in-wpf-treegrid).
+You can download the sample demo [here](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-in-wpf-treegrid).
 
 ##  Using RequestTreeItems Event
 
