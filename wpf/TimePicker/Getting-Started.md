@@ -175,7 +175,7 @@ Here, `SfTimePicker` with 24 hour time format
 
 ## Specifying format for the TimeSelector
 
-We can allow the user to select only the particualar hour, minutes, seconds or meridiem value from the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SelectorFormatString.html) property.  By default, the hour, minutes and meridiem value selector is enabled in the `SfTimeSelector`.
+We can allow the user to select only the particular hour, minutes, seconds or meridiem value from the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SelectorFormatString.html) property.  By default, the hour, minutes and meridiem value selector is enabled in the `SfTimeSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ sfTimePicker.SelectorFormatString = "h/t";
 
 ![SfTimePicker contains only hour and meridiem value selelctor](Features_images/Features_img2.png)
 
-Here, the `SfTimeSelector` with only hour and meridiem value selelctor.
+Here, the `SfTimeSelector` with only hour and meridiem value selector.
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the edit, display time formatting and time selection formatting by the `SfTimePicker`.
 
