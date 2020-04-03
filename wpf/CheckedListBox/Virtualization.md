@@ -14,36 +14,49 @@ UI Virtualization support is enabled by default in [CheckListBox](https://www.sy
 {% tabs %}
 {% highlight C# %}
 
+//Model.cs 
 public class Model {
     public string Name { get; set; }
     public string GroupName { get; set; }
 }
-public class ViewModel {
+
+//ViewModel.cs
+public class ViewModel : NotificationObject    {
+    private ObservableCollection<GroupDescription> groupDescriptions;
     private ObservableCollection<Model> collection = new ObservableCollection<Model>();
     public ObservableCollection<Model> Collection {
-        get { return collection; }
-        set { collection = value;}
+        get { 
+            return collection;
+        }
+        set { 
+            collection = value; 
+        }
     }
 
-    public ICommand LoadedCommand { get; set; }
-    public void OnLoaded(object param) {
-        CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(Collection);
-
-        //Adding group description
-        view.GroupDescriptions.Add(new PropertyGroupDescription("GroupName"));
+    public ObservableCollection<GroupDescription> GroupDescriptions {
+        get {
+            return groupDescriptions;
+        }
+        set {
+            groupDescriptions = value;
+            RaisePropertyChanged("GroupDescriptions");
+        }
     }
 
     public ViewModel() {
+        GroupDescriptions = new ObservableCollection<GroupDescription>();
+
+        //Define virtualisation items
         Collection = new ObservableCollection<Model>();
-        for (int i = 0; i < 10000; i++) {
-            for (int j = 0; j < 10; j++) {
-                Model myitem = new Model() { Name = "Module " + i.ToString(), GroupName = "Group" + j.ToString() };
-                Collection.Add(myitem);
+        for (int i = 0; i < 1000; i++) {
+            for (int j = 0; j < 10; j++) {                  
+                Collection.Add( new Model()
+                {
+                    Name = "Module " + i.ToString(),
+                    GroupName = "Group" + j.ToString() 
+                });
             }
         }
-
-        //Initialize the checklistbox LoadedCommand
-        LoadedCommand = new DelegateCommand<object>(OnLoaded);
     }
 }
 
@@ -53,19 +66,22 @@ public class ViewModel {
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:CheckListBox ItemsSource="{Binding Collection}"
-                         DisplayMemberPath="Name" 
-                         Name="checkListBox"
-                         Margin="20">
-    <syncfusion:CheckListBox.DataContext>
-        <local:ViewModel></local:ViewModel>
-    </syncfusion:CheckListBox.DataContext>
-    <i:Interaction.Triggers>
-        <i:EventTrigger EventName="Loaded">
-            <i:InvokeCommandAction Command="{Binding LoadedCommand}" />
-        </i:EventTrigger>
-    </i:Interaction.Triggers>
-</syncfusion:CheckListBox>
+<Window.Resources>
+    <local:ViewModel x:Key="viewModel">
+        <local:ViewModel.GroupDescriptions>
+            <PropertyGroupDescription PropertyName="GroupName" />
+        </local:ViewModel.GroupDescriptions>
+    </local:ViewModel>
+</Window.Resources>
+<Grid>
+    <syncfusion:CheckListBox ItemsSource="{Binding Collection}" 
+                             GroupDescriptions="{Binding GroupDescriptions}"
+                             DataContext="{StaticResource viewModel}"
+                             DisplayMemberPath="Name" 
+                             Name="checkListBox"
+                             Margin="20">
+    </syncfusion:CheckListBox>
+</Grid>
 
 {% endhighlight %}
 {% endtabs %}
