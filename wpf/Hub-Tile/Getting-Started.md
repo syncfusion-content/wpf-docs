@@ -40,7 +40,7 @@ N> "syncfusion" in XAML is an auto generated namespace.
 
 ![wpf hub tile control added by designer](Getting-Started_images/SfHubTile.png)
 
-![wpf pulsing tile control added by designer](Getting-Started_images/SfPulsingTile.png)
+![wpf pulsing tile control added by designer](Getting-Started_images/Pulsingtile.png)
 	
 ### Adding control manually in XAML
 

@@ -7,7 +7,7 @@ control: SfHubTile
 documentation: ug
 ---
 
-# WPF Hub Tile and Pusling Tile Overview
+# WPF Hub Tile and Pulsing Tile Overview
 
 The WPF hub tile and pulsing tile controls are used to create a UI similar to the tile feature in Windows Desktop and Mobile. It can be arranged in different layouts and provides updates and notifications with various transitions effects.
 

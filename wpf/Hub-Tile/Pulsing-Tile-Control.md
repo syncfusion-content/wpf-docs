@@ -204,7 +204,7 @@ Before applying pulse scale to the Pulsing Tile:
 
 After applying pulse scale to the Pulsing Tile :
 
-![wpf pulsingtile animation using pulse scale](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
+![wpf pulsingtile animation using pulse scale](Getting-Started_images/wpf-pulsingtile-pulsescale.jpg)
 
 ### Horizontal translation
 
@@ -354,7 +354,7 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
     pulsingTileTwo.GroupName = "Applications";
     pulsingTileThree.GroupName = "Applications";
 
-    wrapPanel.Children.Add(pulsingtileone);
+    wrapPanel.Children.Add(pulsingTileOne);
     wrapPanel.Children.Add(pulsingTileTwo);
     wrapPanel.Children.Add(pulsingTileThree);
 {% endhighlight %}
