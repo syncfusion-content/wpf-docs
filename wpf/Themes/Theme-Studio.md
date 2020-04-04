@@ -11,7 +11,7 @@ documentation: ug
 
 Theme Studio for WPF can be used to create and apply new theme for Syncfusion controls from an existing theme. The primary goal here is to deliver an appearance rich Syncfusion controls that suits bests for every user application, based on their needs. 
 
-## Supportive Themes in Theme Studio
+# Supported themes
 
 The following list of predefined themes are currently provided in theme studio,
 * Material Light
@@ -19,9 +19,9 @@ The following list of predefined themes are currently provided in theme studio,
 * Material Light Blue
 * Material Dark Blue
 
-## Creating Custom Theme
+# Creating custom theme
 
-### Customizing theme color from Theme Studio
+## Customizing theme color from theme studio
 
 In theme studio utility, each theme has a unique common variable list.  When user changes the common variable color code value, it will be reflected  in all the Syncfusion WPF controls. All Syncfusion WPF control styles are derived from these theme-based common variables. This common variable list is handled inside the theme studio application for customizing theme-based colors. 
 
@@ -46,7 +46,6 @@ The theme studio application has been divided into two sections: the controls pr
 To apply predefined themes, we need to select the appropriate themes from Themes List available in ComboBox in the TopLeft Corner. 
 
 
-
 ![Shows the List of Themes in ThemeStudio](ThemeStudio_images/ThemeStudio-Theme-Selection.png)
 
 **Step 4:**
@@ -63,9 +62,9 @@ The Syncfusion WPF controls will be rendered with the newly selected colors in t
 ![Color reflected in controls loaded inside Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Color-Selection-Change.png)
 
 
-### Export the customized theme
+## Exporting theme project
  
-You can export the custom theme after changing the theme colors.
+Let us see the step-by-step procedure for exporting theme project from theme studio.
 
 
 **Step 1:**
@@ -77,25 +76,26 @@ Click the Export button in the top right corner below the exit of the theme stud
 
 **Step 2:**
 
-Now the export dialog appears with an option to select either entire controls or just the desired control(s). This option is useful when you have integrated a selective list of Syncfusion WPF controls in your application. The theme studio will filter only the selected controls and customize the final output for those controls alone. 
+Now the export dialog appears with the option to select either the entire controls or just the desired control(s). This option is useful only for selective list of Syncfusion WPF controls in the application. The theme studio will filter only the selected controls and customize the final output for those controls alone. 
 
 ![Export dialog in Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Export-1.png)
+
 **Step 3:**
 
-You may select the required folder for Theme Export to be selected. On exporting, the download theme will come as a Theme Project that contains color codes for the selected Syncfusion WPF controls. 
+ Select the required folder for Theme Export to be selected. When exporting, the download theme will come as a Theme Project that contains color codes for the selected Syncfusion WPF controls. 
 
 ![Export Theme assembly from Theme Studio for WPF](ThemeStudio_images/ThemeStudio-Export-Dialog-1.png)
 
 ![Add Theme as Project for Theme Export](ThemeStudio_images/ThemeStudio-Themes-Folder.png)
 
 
-### Ensuring Version and Key
+## Ensuring version and generating theme assembly
 
-Let us now see the step by step procedure for the setting the target framework, version and key for refering Exported theme Project.
+Let us see the step by step procedure for ensuring version and generating theme assembly for exported theme project.
 
 **Step 1:**
 
-The following Target Framework should be set for corresponding exported theme project.
+The following exported theme project should be attached for corresponding target frameworks into the WPF application.
 
 <table>
 <tr>
@@ -120,36 +120,45 @@ Syncfusion.Themes.MaterialDark.WPF_2012.csproj</td></tr>
 Syncfusion.Themes.MaterialDark.WPF_2010.csproj</td></tr>
 <tr>
 <td>
-.Net Framework 3.0</td><td>
+.Net Core 3</td><td>
 Syncfusion.Themes.MaterialDark.WPF_NETCore.csproj</td><tr>
-<tr>
-<td>
 </table>
 
 **Step 2:**
 
-Generate the strong named assemblies by creating a KeyPair     in the exported theme project by clicking the properties, select the signing tab and click the `Sign the assembly` checkbox to create a key pair through visual studio or just add if key pair is already generated.
+Ensure the version of the exported theme project with the Syncfusion assembly(.dll) by checking the version of the Assemblyinfo.cs file inside the properties. For example, exported theme project `Syncfusion.Themes.MaterialDark.WPF_2013.csproj` is attached to the existing sample with the target framework `.NET Framework 4.5.1` and version is set in the Assemblyinfo.cs.
 
- ![Signing dialog box for creating new keypair](ThemeStudio_images/ThemeStudio-Strong-Name-Key.png)
+
+![Setting Assembly Version in Properties](ThemeStudio_images/ThemeStudio-Assembly-Version.png)
+
+Ensure that common Keys are to be commented out, as the private keys files (.snk) are used to generate assembly which is located below the assembly version in Assemblyinfo.cs.
+
+
+![Commmenting out common keys in Properties](ThemeStudio_images/ThemeStudio-Common-Key.png)
+
 
 
 **Step 3:**
 
-Ensure the version of an assembly with the exported theme project by checking the version in Assemblyinfo.cs file in Properties. After ensuring, commented out the key file in Assemblyinfo.cs below the assembly version and run the project through `Release` mode.
+To generate theme assembly, if private key pair is already created then add it to the exported theme project in signing tab inside the properties. If the key pair is not created [create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) through visual studio. Ensure that exported theme project should rebuild through release mode to generate theme assembly.
 
-**Step 4:**
 
- Now add the exported theme project as an assembly (.dll) from the release folder of the export theme project into your WPF project.
+ ![Signing dialog box for creating new keypair](ThemeStudio_images/ThemeStudio-Strong-Name-Key.png)
+
+
+
+## Integrating custom theme to application
+
+Let us see the step by step procedure for adding exported theme project as assembly(.dll) and witness the custom theme set for Docking Manager.  
+
+ **Step 1:**
+
+ Now add the exported theme project as an assembly (.dll) from the release folder of the export theme project into the WPF project.
 
 
  ![Add reference for the Theme Export Project](ThemeStudio_images/ThemeStudio-Reference-1.png)
 
-
-### Integrating custom theme into a WPF application
-
-You can now add the exported theme project in your WPF application and set the custom theme to the appropriate controls. In this illustration, we are going to witness the custom theme set for DockingManager.
- 
-**Step 1:**
+**Step 2:**
 
 `SfSkinManager` control helps to apply the built-in themes to the Syncfusion UI controls for WPF.
  There are several ways to add `SfSkinManager` in to Visual Studio WPF project.
@@ -172,9 +181,9 @@ The following steps help to add through XAML Code
 
 {% endtabs %}
 
-**Step 2:**
+**Step 3:**
 
-Any built-in themes can applied to the required control by `VisualStyle` attached property of the SfSkinManager.  Now, apply the value as `MaterialDark` to the VisualStyle property of the SfSkinManager for the Docking Manager control.
+Any built-in themes can applied to the required control by `VisualStyle` attached property of the SfSkinManager. Now, apply the value as `MaterialDark` to the VisualStyle property of the SfSkinManager for the Docking Manager control.
 
 
 {% tabs %}
@@ -206,9 +215,10 @@ Any built-in themes can applied to the required control by `VisualStyle` attache
 
 {% tabs %}
 
-**Step 3:**
 
-Compile and run the WPF application in `Release` mode and you can now witness the custom theme applied to DockingManager control at run-time. 
+**Step 4:**
+
+Compile and run the WPF application and witness the custom theme being applied to DockingManager control at run-time. 
 
 ![Apply Visual Style to the controls](ThemeStudio_images/ThemeStudio-Output1.png)
 
