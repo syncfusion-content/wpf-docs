@@ -123,7 +123,7 @@ The title, header and image for the tile can be set by using [Title](https://hel
 
 ![wpf hub tile structure](Getting-Started_images/wpf-hubtile.png)
 
-![wpf pulsing tile structure](Getting-Started_images/pulsingtileimage.png)
+![wpf pulsing tile structure](Getting-Started_images/pulsingtile-image.png)
 
 N> The title will be displayed at the top of the tile. The header will be displayed at the bottom of the tile. The image will be displayed at the center of the tile.
 

@@ -237,7 +237,7 @@ Horizontal translation allows the content of the tile to move from left to right
 {% endhighlight %}
 {% endtabs %}
 
-![wpf pulsingtile animation using radiusx](Getting-Started_images/wpf-pulsingtile-radiusx.gif)
+![wpf pulsingtile animation using radiusx](Getting-Started_images/wpf-pulsingtile-radius-x.gif)
 
 ### Vertical translation
  
@@ -267,7 +267,7 @@ Vertical translation allows the content of the tile to move up and down along th
 {% endhighlight %}
 {% endtabs %}
 
-![wpf pulsingtile animation by radiusy](Getting-Started_images/wpf-pulsingtile-radiusy.gif)
+![wpf pulsingtile animation by radiusy](Getting-Started_images/wpf-pulsingtile-radius-y.gif)
 
 ### Duration of horizontal and vertical translation
 
