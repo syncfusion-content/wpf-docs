@@ -225,7 +225,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 
 ![wpf hubtile secondarycontent as image](Getting-Started_images/wpf-hubtile-slide-transition.png)
 
-![wpf hubtile secondaryconten as control](Getting-Started_images/wpf-hubtile-secondary-content-control.gif)
+![wpf hubtile secondaryconten as control](Getting-Started_images/wpf-hubtile-secondary-control.gif)
 
 ## Transitions
 
