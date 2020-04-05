@@ -19,7 +19,7 @@ Header can act as the name of the tile, that is placed at the bottom explaining 
 {% highlight XAML %}
 <Grid x:Name=grid>
 <!--For setting header as text use this code.-->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="Music"/>
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Foreground="White" Header="Music"/>
 
 <!--For setting header as an image use this code.-->
 <syncfusion:SfPulsingTile x:Name="pulsingTile" >
@@ -41,6 +41,7 @@ Header can act as the name of the tile, that is placed at the bottom explaining 
     //For setting header on as text use this code.
     SfPulsingTile pulsingTile = new SfPulsingTile();
     pulsingTile.Header = "Music";
+    pulsingTile.Foreground = Brushes.White;
 
     //For setting header as image use this code.
     SfPulsingTile pulsingTile = new SfPulsingTile();
@@ -71,7 +72,7 @@ Title can be used to display updates and notifications in a tile. The content ca
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!--For setting title as text use this code.-->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="Now Playing-Song Name"/>
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="Now Playing-Song Name" Foreground="White"/>
 
 <!--For setting title as an image use this code.-->
 <syncfusion:SfPulsingTile x:Name="pulsingTile">
@@ -93,6 +94,7 @@ Title can be used to display updates and notifications in a tile. The content ca
     //Setting title for Pulsing Tile.
     SfPulsingTile pulsingTile = new SfPulsingTile();
     pulsingTile.Title = "Now Playing-Song Name";
+    pulsingTile.Foreground = Brushes.White;
 
     //For setting title as image use this code.
     SfPulsingTile pulsingTile = new SfPulsingTile();
@@ -150,15 +152,15 @@ Scaling animation causes the content of the tile to zoom in/out and it is achiev
 {% highlight XAML %}
 <!-- SfPulsingTile-->
 <Grid x:Name="grid">
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Width="200" Height="200" PulseScale="2" Header="PulsingTile" >
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Width="200" Height="200" PulseScale="2" Header="Music"  Title="This is title area." Foreground="White">
     <Image Source="/Assets/PulsingTile.jpg" Stretch="None" VerticalAlignment="Center" HorizontalAlignment="Center"  />
 </syncfusion:SfPulsingTile>
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
     
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "PulsingTile";
+    SfPulsingTile pulsingTile = new SfPulsingTile();    pulsingTile.Header = "Music";
+    pulsingTile.Title = "This is title area.";
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTile.Content = image; 
 
@@ -178,7 +180,7 @@ The time required to complete a single scaling animation is achieved by setting 
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!-- SfPulsingTile -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile"  PulseDuration="00:00:03" Header="PulsingTile" >
+<syncfusion:SfPulsingTile x:Name="pulsingTile"  PulseDuration="00:00:03" Header="Music"  Title="This is title area." Foreground="White" >
     <Image Source="/Assets/PulsingTile.jpg" Stretch="None" VerticalAlignment="Center" HorizontalAlignment="Center" />
 </syncfusion:SfPulsingTile>
 </Grid>
@@ -186,7 +188,8 @@ The time required to complete a single scaling animation is achieved by setting 
 {% highlight C# %}
 
     SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "PulsingTile";
+    pulsingTile.Header = "Music";
+    pulsingTile.Title = "This is title area.";
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTile.Content = image; 
 
@@ -204,7 +207,7 @@ Before applying pulse scale to the Pulsing Tile:
 
 After applying pulse scale to the Pulsing Tile :
 
-![wpf pulsingtile animation using pulse scale](Getting-Started_images/wpf-pulsingtile-pulsescale.jpg)
+![wpf pulsingtile animation using pulse scale](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
 
 ### Horizontal translation
 
@@ -214,15 +217,15 @@ Horizontal translation allows the content of the tile to move from left to right
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!-- SfPulsingTile -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" RadiusX="100" Header="PulsingTile" >
+<syncfusion:SfPulsingTile x:Name="pulsingTile" RadiusX="100" Header="Music" Title="This is title area." Foreground="White">
 	<Image Source="/Assets/PulsingTile.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" />
 </syncfusion:SfPulsingTile>
 </Grid>
 {% endhighlight %}
 {% highlight C# %}
     
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "PulsingTile";
+    SfPulsingTile pulsingTile = new SfPulsingTile();    pulsingTile.Header = "Music";
+    pulsingTile.Title = "This is title area.";
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTile.Content = image; 
 
@@ -244,7 +247,7 @@ Vertical translation allows the content of the tile to move up and down along th
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!-- SfPulsingTile  -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile"  RadiusY="100" Header="PulsingTile" >
+<syncfusion:SfPulsingTile x:Name="pulsingTile"  RadiusY="100" Header="Music" Title="This is title area." Foreground="White">
 	<Image Source="/Assets/PulsingTile.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" />
 </syncfusion:SfPulsingTile>
 </Grid>
@@ -252,7 +255,8 @@ Vertical translation allows the content of the tile to move up and down along th
 {% highlight C# %}
 
     SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "PulsingTile";
+    pulsingTile.Header = "Music";
+    pulsingTile.Title = "This is title area.";
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTile.Content = image; 
 
@@ -272,7 +276,7 @@ The time taken for translating the content along the x-axis and y-axis is achiev
 {% tabs %}
 {% highlight XAML %}
 <Grid x:Name="grid">
-<syncfusion:SfPulsingTile x:Name="pulsingTile" RadiusX=100 RadiusY=100 TranslateDuration="00:00:03" Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTile" RadiusX=100 Title="This is title area." Foreground="White"  RadiusY=100 TranslateDuration="00:00:03" Header="Music">
     <Image Source="/Assets/PulsingTile.jpg" Stretch="UniformToFill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 </syncfusion:SfPulsingTile> 
 </Grid>
@@ -280,7 +284,9 @@ The time taken for translating the content along the x-axis and y-axis is achiev
 {% highlight C# %}
 	
     SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "PulsingTile";
+    pulsingTile.Header = "Music";
+    pulsingTile.Title = "This is title area.";
+    pulsingTile.Foreground = Brushes.White;
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTile.Content = image; 
 
@@ -300,17 +306,17 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 <Grid x:Name="grid">
 <WrapPanel Orientation="Horizontal">
 <!-- SfPulsingTile 1-->
-<syncfusion:SfPulsingTile x:Name="pulsingTileOne" GroupName="Applications" Header="PulsingTile" PulseScale="3" PulseDuration="00:00:03" >   
+<syncfusion:SfPulsingTile x:Name="pulsingTileOne" Title="This is title area." Foreground="White" GroupName="Applications" Header="Music" PulseScale="3" PulseDuration="00:00:03" >   
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
 
 <!-- SfPulsingTile 2-->
-<syncfusion:SfPulsingTile x:Name="pulsingTileTwo" GroupName="Applications" Margin="10" PulseScale="3" PulseDuration="00:00:03" Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTileTwo" Title="This is title area." Foreground="White" GroupName="Applications" Margin="10" PulseScale="3" PulseDuration="00:00:03" Header="Music">
     <Image Source="/Assets/PulsingTile.jpg"  HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
 
 <!-- SfPulsingTile 3-->
-<syncfusion:SfPulsingTile x:Name="pulsingTileThree" GroupName="Applications"  PulseScale="3" PulseDuration="00:00:03" Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTileThree" Title="This is title area." Foreground="White" GroupName="Applications"  PulseScale="3" PulseDuration="00:00:03" Header="Music">
     <Image Source="/Assets/PulsingTile.jpg"  HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
 </WrapPanel>
@@ -324,7 +330,9 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
     
     //SfPulsingTile 1
     SfPulsingTile pulsingTileOne = new SfPulsingTile();
-    pulsingTileOne.Header = "PulsingTile";
+    pulsingTileOne.Header = "Music";
+    pulsingTileOne.Title = "This is title area.";
+    pulsingTileOne.Foreground = Brushes.White;
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTileOne.Content = image;
     pulsingTileOne.PulseScale = 3;
@@ -332,7 +340,9 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
   
     //SfPulsingTile 2
     SfPulsingTile pulsingTileTwo = new SfPulsingTile();
-    pulsingTileTwo.Header = "PulsingTile";
+    pulsingTileTwo.Header = "Music";
+    pulsingTileTwo.Title = "This is title area.";
+    pulsingTileTwo.Foreground = Brushes.White;
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTileTwo.Content = image;
     pulsingTileTwo.PulseScale = 3;
@@ -343,7 +353,9 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
  
     //SfPulsingTile 3
     SfPulsingTile pulsingTileThree = new SfPulsingTile();
-    pulsingTileThree.Header = "PulsingTile";
+    pulsingTileThree.Header = "Music";
+    pulsingTileThree.Title = "This is title area.";
+    pulsingTileThree.Foreground = Brushes.White;
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTileThree.Content = image;
     pulsingTileThree.PulseScale = 3;
@@ -373,7 +385,7 @@ The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!-- SfPulsingTile -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="PulsingTile" IsFrozen="True"  PulseScale="3" PulseDuration="00:00:03" >
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="Music" IsFrozen="True" Foreground="White" Title="This is title area." PulseScale="3" PulseDuration="00:00:03" >
     <Image Source="/Assets/PulsingTile.jpg"
 	HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
@@ -382,7 +394,8 @@ The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf
 {% highlight C# %}
 
     SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "PulsingTile";
+    pulsingTile.Header = "Music";
+    pulsingTile.Title = "This is title area.";
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTile.Content = image;   
     pulsingTile.PulseScale = 3;
@@ -402,7 +415,7 @@ The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/w
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!-- SfPulsingTile -->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="PulsingTile" IsFrozen="False"  PulseScale="3" PulseDuration="00:00:03"  >
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Header="Music" Foreground="white" IsFrozen="False" Title="This is title area."  PulseScale="3" PulseDuration="00:00:03"  >
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
 </Grid>
@@ -410,7 +423,8 @@ The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/w
 {% highlight C# %}
 
     SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "PulsingTile";
+    pulsingTile.Header = "Music";
+    pulsingTile.Title = "This is title area.";
     Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
     pulsingTile.Content = image; 
     pulsingTile.PulseScale = 3;
@@ -428,7 +442,7 @@ Before the Pulsing Tile is unfreezed:
 
 After unfreezing the Pulsing Tile:
 
-![wpf pulsingtile unfreeze a tile](Getting-Started_images/wpf-pulsingtile-pulsescale.jpg)
+![wpf pulsingtile unfreeze a tile](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
 
 ### Freezing/unfreezing the tiles
 
@@ -454,17 +468,17 @@ A single tile or a group of tiles can be freezed by using [Freeze](https://help.
 <Grid>
 <WrapPanel>
 <!--SfPulsingTile 1-->
-<syncfusion:SfPulsingTile x:Name="pulsingTileOne" GroupName="Applications" Header="PulsingTile" PulseScale="3" PulseDuration="00:00:03" >
+<syncfusion:SfPulsingTile x:Name="pulsingTileOne" Foregroudn="White" GroupName="Applications" Header="Music" PulseScale="3" Title="This is title area." PulseDuration="00:00:03" >
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
 
 <!-- SfPulsingTile 2-->
-<syncfusion:SfPulsingTile x:Name="pulsingTileTwo" GroupName="Applications" Margin="10" PulseScale="3" PulseDuration="00:00:03" Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTileTwo" Foreground="White" GroupName="Applications" Margin="10" PulseScale="3" Title="This is title area." PulseDuration="00:00:03" Header="Music">
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
 
 <!-- SfPulsingTile 3-->
-<syncfusion:SfPulsingTile x:Name="pulsingTileThree" GroupName="Applications"  PulseScale="3" PulseDuration="00:00:03" Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTileThree" Foreground=White" GroupName="Applications"  PulseScale="3" PulseDuration="00:00:03" Title="This is title area." Header="Music">
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     <i:Interaction.Triggers>
 	    <i:EventTrigger EventName="Loaded">
@@ -524,17 +538,17 @@ A Single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 <Grid>
 <WrapPanel>
   <!--SfPulsingTile1-->      
-<syncfusion:SfPulsingTile x:Name="pulsingTileOne" GroupName="Applications" Header="PulsingTile" PulseScale="3" PulseDuration="00:00:03" >
+<syncfusion:SfPulsingTile x:Name="pulsingTileOne" GroupName="Applications" Header="Music" Foreground="White" PulseScale="3" Title="This is title area." PulseDuration="00:00:03" >
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
 
 <!-- SfPulsingTile 2-->
-<syncfusion:SfPulsingTile x:Name="pulsingTileTwo" GroupName="Applications" Margin="10" PulseScale="3" PulseDuration="00:00:03" Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTileTwo" GroupName="Applications" Margin="10" Foreground="White" PulseScale="3" Title="This is title area." PulseDuration="00:00:03" Header="Music">
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/> 
 </syncfusion:SfPulsingTile>
 
 <!-- SfPulsingTile 3-->
-<syncfusion:SfPulsingTile x:Name="pulsingTileThree" GroupName="Applications" PulseScale="3" PulseDuration="00:00:03" Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTileThree" GroupName="Applications" Foreground="White" PulseScale="3" PulseDuration="00:00:03" Title="This is title area." Header="Music">
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/> 
     <i:Interaction.Triggers>
 	    <i:EventTrigger EventName="Loaded">
@@ -580,7 +594,7 @@ Before unfreezing a single tile:
 
 After unfreezing a single tile:
 
-![wpf pulsingtile unfreeze a single tile](Getting-Started_images/wpf-pulsingtile-pulsescale.jpg)
+![wpf pulsingtile unfreeze a single tile](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
 
 Before unfreezing a group of tiles:
 
@@ -588,7 +602,7 @@ Before unfreezing a group of tiles:
 
 After unfreezing a group of tiles:
 
-![wpf pulsingtile unfreeze a group of tiles](Getting-Started_images/wpf-pulsingtile-unfreezebygroupname.jpg)
+![wpf pulsingtile unfreeze a group of tiles](Getting-Started_images/wpf-pulsingtile-grouping.png)
 
 ## Notifications
 Once the tile is pressed, it is notified by the click event and the command property of the Pulsing Tile. 
@@ -597,7 +611,7 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusi
 
 {% tabs %}
 {% highlight XAML%} 
-<syncfusion:SfPulsingTile Header="PulsingTile" Title="TitleArea." PulseScale="3" PulseDuration="00:00:03" >
+<syncfusion:SfPulsingTile Header="Music" Foreground="White" Title="This is title area." PulseScale="3" PulseDuration="00:00:03" >
     <Image Source="/Assets/PulsingTile.jpg"/>
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Click">
@@ -616,7 +630,7 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusi
             MainWindow window = VisualUtils.FindAncestor(pulsingTile, typeof(MainWindow)) as MainWindow;
             if ((window != null) && (pulsingTile != null))
             {
-                MessageBox.Show("Pulsing Tile is Clicked");
+                MessageBox.Show("Pulsing Tile has been Clicked");
             }
         }
     }
@@ -643,7 +657,7 @@ Command specifies the operation to be performed when the tile is pressed. [Comma
     <local:Viewmodel/>
 </Window.DataContext>
 <Grid x:Name="grid">
-<syncfusion:SfPulsingTile Header="pulsingtile" Title="TitleArea." PulseScale="3" PulseDuration="00:00:03" Command="{Binding PulsingTileCommand}" CommandParameter="{Binding ElementName=pulsingtile}">
+<syncfusion:SfPulsingTile Header="Music" Title="This is title area." PulseScale="3" PulseDuration="00:00:03" Command="{Binding PulsingTileCommand}" CommandParameter="{Binding ElementName=pulsingtile}">
     <Image Source="/Assets/PulsingTile.jpg" Stretch="None"/>
 </syncfusion:SfPulsingTile>
 </Grid>
@@ -703,7 +717,7 @@ The tile press animation takes place when the center of the tile is pressed. The
 {% tabs %}
 {% highlight XAML %}
 <Grid x:Name="grid">
-<syncfusion:SfPulsingTile Header="pulsingtile" Title="TitleArea." PulseScale="3" PulseDuration="00:00:03" TilePressDuration="00:00:03" ScaleDepth="2">
+<syncfusion:SfPulsingTile Header="Music" Title="This is title area." Foreground="White" PulseScale="3" PulseDuration="00:00:03" TilePressDuration="00:00:03" ScaleDepth="2">
     <Image Source="/Assets/PulsingTile.jpg" Stretch="None"/>
 </syncfusion:SfPulsingTile>
 </Grid>
@@ -711,7 +725,7 @@ The tile press animation takes place when the center of the tile is pressed. The
 {% highlight C# %}
 
     SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "PulsingTile";
+    pulsingTile.Header = "Music";
     pulsingTile.Title = "TitleArea.";
     pulsingTile.PulseScale = 3;
     pulsingTile.PulseDuration = TimeSpan.FromSeconds(3.0);
@@ -735,15 +749,14 @@ Header of the tile can be customized by setting the properties such as [HeaderSt
 
 {% tabs %}
 {% highlight XAML%}
-<syncfusion:SfPulsingTile x:Name="pulsingtile" Title="This is title area." Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingtile" Foreground="White" Title="This is title area." Header="Music">
 <Image Source="/Assets/PulsingTile.jpg" Margin="-1"/>
 
     <!--For setting header style-->
     <syncfuison:SfPulsingTile.HeaderStyle>
         <Style TargetType="ContentControl">
         <Setter Property="VerticalAlignment" Value="Bottom"/>
-        <Setter Property="Foreground" Value="Yellow"/>
-        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontSize" Value="17"/>
         <Setter Property="FontFamily" Value="ALGERIAN"/>
         </Style>
     </syncfusion:SfPulsingTile.HeaderStyle>
@@ -757,7 +770,7 @@ Header of the tile can be customized by setting the properties such as [HeaderSt
 {% tabs %}
 {% highlight XAML %}
    
-<syncfusion:SfPulsingTile x:Name="pulsingTile"  Title="This is a title area." Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Foreground="White" Title="This is a title area." Header="Music">
     <Image Source="/Assets/PulsingTile.png" Stretch="None"/>
 
     <!--For setting header template-->
@@ -766,9 +779,9 @@ Header of the tile can be customized by setting the properties such as [HeaderSt
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Image Source="/Assets/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>        <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />
+            <Image Source="/Assets/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>        <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="17"  />
         </Grid>
         </DataTemplate>
    </syncfusion:SfPulsingTile.HeaderTemplate>
@@ -785,24 +798,24 @@ The [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syn
 {% tabs %}
 {% highlight XAML %}
 <!--SfPulsingTile-->
-<syncfusion:SfPulsingTile x:Name="pulsingtile" Title="Title" Header="PulsingTile">
+<syncfusion:SfPulsingTile x:Name="pulsingtile" Foreground="White" Title="Title" Header="Music">
     <Image Source="/Assets/PulsingTile.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
     <!-- For setting title style -->
 	<syncfusion:SfPulsingTile.TitleStyle>
         <Style TargetType="ContentControl">
         <Setter Property="Foreground" Value="White"/>
-        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontSize" Value="17"/>
         <Setter Property="ContentTemplate">
         <Setter.Value>
             <DataTemplate>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <Image Source="/Assets/syncfusion.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None"/>
-                <TextBlock Text="SYNCFUSION" Grid.Column="1"  />   
+                <TextBlock Text="SYNCFUSION" Grid.Column="1" />   
             </Grid>
             </DataTemplate>
         </Setter.Value>

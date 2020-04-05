@@ -19,7 +19,7 @@ Header can act as the name of the tile, that is placed at the bottom explaining 
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!--For setting header as text use this code. -->
-<syncfusion:SfHubTile x:Name="hubtile" Header="Mail"/>
+<syncfusion:SfHubTile x:Name="hubtile" Header="Mail" Foreground="White"/>
 
 <!--For setting header as an image use this code.-->
 <syncfusion:SfHubTile x:Name="hubtile">
@@ -41,6 +41,7 @@ Header can act as the name of the tile, that is placed at the bottom explaining 
 	// For setting header as text use this code.
 	SfHubTile hubTile = new SfHubTile();
 	hubTile.Header = "Mail";
+    hubTile.Foreground = Brushes.White;
     
     //For setting header as image use this code.
     SfHubTile hubTile = new SfHubTile();
@@ -71,7 +72,7 @@ Title can be used to display updates and notifications in a tile. The content of
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!--For setting title as text use this code.-->
-<syncfusion:SfHubTile x:Name="hubTile" Title="New mail from Syncfusion"/>
+<syncfusion:SfHubTile x:Name="hubTile" Title="You have 10 unread mails." Foreground="White"/>
 
 <!--For setting title as an image use this code.-->
 <syncfusion:SfHubTile x:Name="hubTile">
@@ -92,7 +93,8 @@ Title can be used to display updates and notifications in a tile. The content of
 
 	//Setting title on Hub Tile.
 	SfHubTile hubTile = new SfHubTile();
-	hubTile.Title = "New Mail from Syncfusion";
+	hubTile.Title = "You have 10 unread mails.";
+    hubTile.Foreground = Brushes.White;
 
     //For setting title as image use this code.
     SfHubTile hubTile = new SfHubTile();
@@ -111,7 +113,7 @@ Title can be used to display updates and notifications in a tile. The content of
 
 ![wpf hubtile title](Getting-Started_images/wpf-hubtile-title.png)
 
-![wpf hubtile title as image](Getting-Started_images/wpf-hubtile-title-image.png)
+![wpf hubtile title as image](Getting-Started_images/wpf-hubtile-image.png)
 
 ![wpf hubtile title as control](Getting-Started_images/wpf-hubtile-title-control.png)
 
@@ -152,7 +154,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
         Title="MainWindow" Height="350" Width="525">
 <Grid x:Name="grid">
 <!--For setting secondary content as image use this code.-->
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="Title area." Header="HubTile" Interval="00:00:03">
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="This is title area." Header="Mail" Foreground="White" Interval="00:00:03">
 	<syncfusion:SfHubTile.HubTileTransitions>
 		<shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
@@ -163,10 +165,13 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 </syncfusion:SfHubTile>
 
 <!--For setting secondary content as text use this code.-->
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="Title area." Header="HubTile" Interval="00:00:03" SecondaryContent="This is the secondary content of the tile"/>
-
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="This is title area." Header="Mail" Foreground="White" Interval="00:00:03" SecondaryContent="Secondary content of tile">
+	<syncfusion:SfHubTile.HubTileTransitions>
+		<shared:SlideTransition/>
+	</syncfusion:SfHubTile.HubTileTransitions>
+</syncfusion:SfHubTile>
 <!--For setting secondary content as control use this code.-->
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="Title area." Header="HubTile" Interval="00:00:03">
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="This is title area." Header="Mail" Foreground="White" Interval="00:00:03">
 	<syncfusion:SfHubTile.HubTileTransitions>
 		<shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
@@ -180,8 +185,9 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 {% highlight C# %}
 
     SfHubTile hubTile= new SfHubTile();
-    hubTile.Header = "HubTile";
-    hubTile.Title = "Title area";
+    hubTile.Header = "Mail";
+    hubTile.Title  = "This is title area.";
+    hubTile.Foreground = Brushes.White;
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
     hubTile.HubTileTransitions.Add(new SlideTransition());
 
@@ -192,8 +198,9 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 
     //For setting secondary content as a control use this code.
     SfHubTile hubTile= new SfHubTile();
-    hubTile.Header = "HubTile";
-    hubTile.Title = "Title area";
+    hubTile.Header = "Mail";
+    hubTile.Title  = "This is title area.";
+    hubTile.Foreground = Brushes.White;
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
     hubTile.HubTileTransitions.Add(new SlideTransition());
     TextBlock textblock = new TextBlock() { Text = "This is the secondary content of the tile displayed at each transition", TextWrapping = TextWrapping.Wrap, FontSize = 15, Foreground = Brushes.White };
@@ -202,8 +209,9 @@ The image can be set to the tile by setting image path to the [ImageSource](http
   
     //For setting secondary content as text use this code.
     SfHubTile hubTile= new SfHubTile();
-    hubTile.Header = "HubTile";
-    hubTile.Title = "Title area";
+    hubTile.Header = "Mail";
+    hubTile.Title  = "This is title area.";
+    hubTile.Foreground = Brushes.White; 
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
     hubTile.HubTileTransitions.Add(new SlideTransition());
     hubTile.SecondaryContent = "Secondary content of tile";
@@ -217,7 +225,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 
 ![wpf hubtile secondarycontent as image](Getting-Started_images/wpf-hubtile-slide-transition.png)
 
-![wpf hubtile secondaryconten as control](Getting-Started_images/wpf-hubtile-secondarycontent-control.png)
+![wpf hubtile secondaryconten as control](Getting-Started_images/wpf-hubtile-secondarycontent-control.gif)
 
 ## Transitions
 
@@ -236,7 +244,7 @@ The Hub Tile control supports various transitions which causes the tile to chang
         Title="MainWindow" Height="350" Width="525">
 <Grid>
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="Title area." Header="HubTile" Interval="00:00:03">
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="This is title area." Header="Mail" Foreground="White" Interval="00:00:03">
 	<syncfusion:SfHubTile.HubTileTransitions>
 	    <!--For SlideTransition use this code.-->
 		<shared:SlideTransition/>
@@ -257,9 +265,10 @@ The Hub Tile control supports various transitions which causes the tile to chang
 
     //Setting header
     hubTile.Header ="HubTile";
+    hubTile.Foreground = Brushes.White; 
 
     //Setting title    
-    hubTile.Title ="Title area";
+    hubTile.Title  = "This is title area.";
     
     //Setting image
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute)); 
@@ -293,7 +302,7 @@ Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTrans
 
 {% tabs %}
 {% highlight XAML%}
-<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile" Title="TitleArea." ImageSource="/Assets/New mail.png" Interval="00:00:03" >
+<syncfusion:SfHubTile x:Name="hubTile" Header="Mail" Foreground="White" Title="This is title area." ImageSource="/Assets/New mail.png" Interval="00:00:03" >
 	<syncfusion:SfHubTile.HubTileTransitions>
 	    <shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
@@ -335,7 +344,7 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 <Grid x:Name="grid">
 <WrapPanel Orientation="Horizontal">
 <!-- SfHubTile 1-->
-<syncfusion:SfHubTile x:Name="hubTileOne" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="Title area." Interval="00:00:03" Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileOne" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="This is title area." Foreground="White" Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 	   <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -344,7 +353,7 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 	</syncfusion:SfHubTile.HubTileTransitions>
 </syncfusion:SfHubTile>
 <!-- SfHubTile 2-->
-<syncfusion:SfHubTile x:Name="hubTileTwo" Margin="10" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="Title area." Interval="00:00:03" Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileTwo" Margin="10" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="This is title area." Foreground="White"  Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -353,7 +362,7 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 	</syncfusion:SfHubTile.HubTileTransitions>
 </syncfusion:SfHubTile>
 <!-- SfHubTile 3-->
-<syncfusion:SfHubTile x:Name="hubTileThree" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="Title area." Interval="00:00:03" Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileThree" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="This is title area." Foreground="White"  Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -372,8 +381,9 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 
     //SfHubTile 1
     SfHubTile hubTileOne= new SfHubTile();
-    hubTileOne.Header = "HubTile";
-    hubTileOne.Title = "Title area";
+    hubTileOne.Header = "Mail";
+    hubTileOne.Title  = "This is title area.";
+    hubTile.Foreground = Brushes.White; 
     hubTileOne.HubTileTransitions.Add(new SlideTransition());
     hubTileOne.Interval = TimeSpan.FromSeconds(3.0);
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
@@ -381,8 +391,9 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
         
     //SfHubTile 2
     SfHubTile hubTileTwo= new SfHubTile();
-    hubTileTwo.Header = "HubTile";
-    hubTileTwo.Title = "Title area";
+    hubTileTwo.Header = "Mail";
+    hubTileTwo.Title  = "This is title area.";
+    hubTile.Foreground = Brushes.White; 
     hubTileTwo.HubTileTransitions.Add(new SlideTransition());
     hubTileTwo.Interval = TimeSpan.FromSeconds(3.0);
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
@@ -393,8 +404,9 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 
     //SfHubTile 3
     SfHubTile hubTileThree= new SfHubTile();
-    hubTileThree.Header = "HubTile";
-    hubTileThree.Title = "Title area";
+    hubTileThree.Header = "Mail";
+    hubTileThree.Title  = "This is title area.";
+    hubTile.Foreground = Brushes.White; 
     hubTileThree.HubTileTransitions.Add(new SlideTransition());
     hubTileThree.Interval = TimeSpan.FromSeconds(3.0);
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
@@ -522,7 +534,7 @@ The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Header="Hubtile" IsFrozen="True" Title="Title area." ImageSource="/Assets/New Mail.png" Interval="00:00:03" HorizontalAlignment="Center" VerticalAlignment="Center"  >
+<syncfusion:SfHubTile x:Name="hubTile" Header="Mail" Foreground="White" IsFrozen="True" Title="This is title area." ImageSource="/Assets/New Mail.png" Interval="00:00:03" HorizontalAlignment="Center" VerticalAlignment="Center"  >
     <!-- For setting secondary content -->
 	<syncfusion:SfHubTile.SecondaryContent>
 		<Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
@@ -537,8 +549,9 @@ The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf
 {% highlight C# %}
     
     SfHubTile hubTile= new SfHubTile();
-    hubTile.Header = "HubTile";
+    hubTile.Header = "Mail";
     hubTile.Title = "Title area.";
+    hubTile.Foreground = Brushes.White; 
     hubTile.HubTileTransitions.Add(new SlideTransition());
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
     hubTile.SecondaryContent = image;
@@ -559,7 +572,7 @@ The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/w
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Header="HubTile" IsFrozen="False" Title="Title area" ImageSource="Assests/New Mail.png" HorizontalAlignment="Center" VerticalAlignment="Center" >
+<syncfusion:SfHubTile x:Name="hubTile" Header="Mail" Foreground="White" IsFrozen="False" Title="This is title area." ImageSource="Assests/New Mail.png" HorizontalAlignment="Center" VerticalAlignment="Center" >
     <!-- For setting secondary content -->
 	<syncfusion:SfHubTile.SecondaryContent>
 	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
@@ -573,8 +586,9 @@ The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/w
 {% highlight C# %}
 
     SfHubTile hubTile= new SfHubTile();
-    hubTile.Header = "HubTile";
-    hubTile.Title = "Title area";
+    hubTile.Header = "Mail";
+    hubTile.Title  = "This is title area.";
+    hubTile.Foreground = Brushes.White; 
     hubTile.HubTileTransitions.Add(new SlideTransition());
     Image image = new Image() { Source = new BitmapImage(new Uri(@"/Assets/HubTile.png", UriKind.RelativeOrAbsolute)) };
     hubTile.SecondaryContent = image;
@@ -614,7 +628,7 @@ A single tile or a group of tiles can be freezed by using [Freeze](https://help.
 <Grid>
 <WrapPanel>
 <!-- SfHubTile 1-->
-<syncfusion:SfHubTile x:Name="hubTileOne" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="TitleArea." Interval="00:00:03" Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileOne" Foreground="White" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="This is title area." Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -623,7 +637,7 @@ A single tile or a group of tiles can be freezed by using [Freeze](https://help.
 	</syncfusion:SfHubTile.HubTileTransitions>
 </syncfusion:SfHubTile>
 <!-- SfHubTile 2-->
-<syncfusion:SfHubTile x:Name="hubTileTwo" GroupName="Application" Margin="10" ImageSource="/Assets/New Mail.png" Title="TitleArea." Interval="00:00:03"  Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileTwo" Foreground="White" GroupName="Application" Margin="10" ImageSource="/Assets/New Mail.png" Title="This is title area." Interval="00:00:03"  Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -632,7 +646,7 @@ A single tile or a group of tiles can be freezed by using [Freeze](https://help.
 	</syncfusion:SfHubTile.HubTileTransitions>
 </syncfusion:SfHubTile>
 <!--SfHubTile 3-->
-<syncfusion:SfHubTile x:Name="hubTileThree" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="TitleArea." Interval="00:00:03" Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileThree" Foreground="White"GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="This is title area." Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 		<Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -697,7 +711,7 @@ A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 <Grid>
 <WrapPanel>
 <!-- SfHubTile 1-->
-<syncfusion:SfHubTile x:Name="hubTileOne" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="Title area." Interval="00:00:03" Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileOne" Foreground="White" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="This is title area." Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -706,7 +720,7 @@ A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 	</syncfusion:SfHubTile.HubTileTransitions>
 </syncfusion:SfHubTile>
 <!-- SfHubTile 2-->
-<syncfusion:SfHubTile x:Name="hubTileTwo" GroupName="Applications" Margin="10" ImageSource="/Assets/New Mail.png" Title="Title area." Interval="00:00:03" Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileTwo" Foreground="White" GroupName="Applications" Margin="10" ImageSource="/Assets/New Mail.png" Title="This is title area." Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -715,7 +729,7 @@ A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 	</syncfusion:SfHubTile.HubTileTransitions>
 </syncfusion:SfHubTile>
 <!--SfHubTile 3-->
-<syncfusion:SfHubTile x:Name="hubTileThree" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="Title area." Interval="00:00:03" Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTileThree" Foreground="White" GroupName="Applications" ImageSource="/Assets/New Mail.png" Title="This is title area." Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.SecondaryContent>
 	    <Image Source="/Assets/HubTile.png" Stretch="UniformToFill" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
@@ -770,7 +784,7 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusi
 
 {% tabs %}
 {% highlight XAML%} 
-<syncfusion:SfHubTile x:Name="hubTile"  GroupName="HubTiles" Interval="00:00:03"  Header="Hubtile" Title="This is title area." ImageSource="/Assets/New Mail.png">
+<syncfusion:SfHubTile x:Name="hubTile" Interval="00:00:03"  Header="Mail" Foreground="White" Title="This is title area." ImageSource="/Assets/New Mail.png">
 	<i:Interaction.Triggers>
         <i:EventTrigger EventName="Click">
             <local:ClickEvent/>
@@ -788,12 +802,13 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusi
             MainWindow window = VisualUtils.FindAncestor(hubTile, typeof(MainWindow)) as MainWindow;
             if ((window != null) && (hubTile != null))
             {
-                MessageBox.Show("Hub Tile is Clicked");
+                MessageBox.Show("Hub Tile has been clicked");
             }
         }
     }
 {% endhighlight %}
 {% endtabs %} 
+
 
 ### Command binding
 
@@ -815,7 +830,7 @@ Command specifies the operation to be performed when the tile is pressed. [Comma
    <local:Viewmodel/>
 </Window.DataContext>
 <Grid x:Name="grid">
-<syncfusion:SfHubTile x:Name="hubtile" Command="{Binding HubTileCommand}" CommandParameter="{Binding ElementName=hubtile}"  Interval="00:00:03" Header="Hubtile" Title="This is title area." ImageSource="/Assets/New Mail.png"/>
+<syncfusion:SfHubTile x:Name="hubtile" Command="{Binding HubTileCommand}" CommandParameter="{Binding ElementName=hubtile}"  Interval="00:00:03" Header="Mail" Foreground="White" Title="This is title area." ImageSource="/Assets/New Mail.png"/>
 </Grid>
 </Window>
 {% endhighlight %}
@@ -874,7 +889,7 @@ The tile press animation takes place when the center of the tile is pressed. The
 {% tabs %}
 {% highlight XAML %}
 <Grid x:Name="grid">
-<syncfusion:SfHubTile x:Name="hubtile" TilePressDuration="00:00:02" ScaleDepth="2" Interval="00:00:03" Title="TitleArea" Header="Hubtile"  ImageSource="/Assets/New Mail.png">  
+<syncfusion:SfHubTile x:Name="hubtile" TilePressDuration="00:00:02" ScaleDepth="2" Interval="00:00:03" Title="This is title area" Header="Mail" Foreground="White" ImageSource="/Assets/New Mail.png">  
     <syncfusion:SfHubTile.HubTileTransitions>
         <shared1:SlideTransition/>
     </syncfusion:SfHubTile.HubTileTransitions>
@@ -887,8 +902,8 @@ The tile press animation takes place when the center of the tile is pressed. The
 {% highlight C# %}
 
     SfHubTile hubTile = new SfHubTile();
-    hubTile.Header = "HubTile";
-    hubTile.Title = "TitleArea";
+    hubTile.Header = "Mail";
+    hubTile.Title = "This is title area";
     hubTile.Interval = TimeSpan.FromSeconds(3.0);
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute)); 
     hubTile.HubTileTransitions.Add(new SlideTransition());
@@ -914,13 +929,12 @@ Header of the tile can be customized by setting the properties such as [HeaderSt
 
 {% tabs %}
 {% highlight XAML%}
-<syncfusion:SfHubTile x:Name="hubtile" ImageSource="/Assets/New Mail.png"  Title="This is title area." Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubtile" ImageSource="/Assets/New Mail.png"  Title="This is title area." Foreground="White" Header="Mail">
 
     <!--For setting header style-->
     <syncfusion:SfHubTile.HeaderStyle>
         <Style TargetType="ContentControl">
         <Setter Property="VerticalAlignment" Value="Bottom"/>
-        <Setter Property="Foreground" Value="Yellow"/>
         <Setter Property="FontSize" Value="18"/>
         <Setter Property="FontFamily" Value="ALGERIAN"/>
         </Style>
@@ -934,7 +948,7 @@ Header of the tile can be customized by setting the properties such as [HeaderSt
 {% tabs %}
 {% highlight XAML %}
    
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png"  Title="This is a title area." Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png"  Title="This is a title area." Foreground="White" Header="Mail">
 
     <!--For setting header template-->
     <syncfusion:SfHubTile.HeaderTemplate>
@@ -942,10 +956,10 @@ Header of the tile can be customized by setting the properties such as [HeaderSt
         <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
             <Image Source="/Assets/syncfusion.png" HorizontalAlignment="Left" Stretch="None"/>    
-            <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="11"  />
+            <TextBlock Text="SYNCFUSION" Foreground="White" Grid.Column="1" FontSize="17"  />
         </Grid>
         </DataTemplate>
     </syncfusion:SfHubTile.HeaderTemplate>
@@ -962,7 +976,7 @@ The [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syn
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png"  Title="This is a title area." Header="HubTile">
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png"  Title="This is a title area." Header="Mail">
 
     <!-- For setting title style -->
     <syncfusion:SfHubTile.TitleStyle>
@@ -975,10 +989,10 @@ The [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syn
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <Image Source="/Assets/syncfusion.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="None"/>
-            <TextBlock Text="SYNCFUSION"  Grid.Column="1" /> 
+            <TextBlock Text="SYNCFUSION" FontSize="17" Grid.Column="1" /> 
         </Grid>
         </DataTemplate>
         </Setter.Value>
@@ -1001,7 +1015,7 @@ The secondary content of the tile can be customized by setting the [SecondaryCon
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile" Width="200" ImageSource="/Assets/New Mail.png" Title="This is title area." Interval="00:00:03" Header="Hubtile">
+<syncfusion:SfHubTile x:Name="hubTile" Foreground="White"  ImageSource="/Assets/New Mail.png" Title="This is title area." Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.HubTileTransitions>
         <shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
@@ -1021,7 +1035,7 @@ The secondary content of the tile can be customized by using the [SecondaryConte
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
-<syncfusion:SfHubTile x:Name="hubTile"  ImageSource="/Assets/New Mail.png" Title="This is title area." Width="200" Height="200" Interval="00:00:03" Header="Hubtile">
+<syncfusion:SfHubTile x:Name="hubTile"  ImageSource="/Assets/New Mail.png" Title="This is title area." Foreground="White" Height="200" Interval="00:00:03" Header="Mail">
 	<syncfusion:SfHubTile.HubTileTransitions>
 		<shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
@@ -1029,10 +1043,15 @@ The secondary content of the tile can be customized by using the [SecondaryConte
  <!--setting secondary content template-->
     <syncfusion:SfHubTile.SecondaryContentTemplate>
         <DataTemplate>
-        <StackPanel Orientation="Vertical" >
+        <Grid>
+            <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
             <Image Source="/Assets/HubTile.png" />
-            <CheckBox x:Name="checkbox" Margin="10" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}"/>
-            <TextBlock  Text="This is the secondary content of the tile displayed at each transition" Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
+            <CheckBox x:Name="checkbox" Grid.Row="1" Foreground="White" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}" Foreground="White"/>
+            <TextBlock Grid.Row="2" Text="This is the secondary content of the tile displayed at each transition" Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
             </StackPanel>
         </DataTemplate>
     </syncfusion:SfHubTile.SecondaryContentTemplate>
@@ -1040,4 +1059,4 @@ The secondary content of the tile can be customized by using the [SecondaryConte
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile secondary content customization using secondary content template](Getting-Started_images/wpf-hubtile-secondarycontenttemplate.jpg)
+![wpf hubtile secondary content customization using secondary content template](Getting-Started_images/wpf-hubtile-secondary-content-template.jpg)

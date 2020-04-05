@@ -34,9 +34,9 @@ Below example explains how to apply blend theme for Hub Tile and Pulsing Tile us
      WindowStartupLocation="CenterScreen">
 <Grid>
 <!--SfHubTile-->						 
-<syncfusion:SfHubTile x:Name="hubtile"Header="HubTile" skinManager:SfSkinManager.VisualStyle="Blend" Title="TitleArea."/>
+<syncfusion:SfHubTile x:Name="hubtile"Header="HubTile" skinManager:SfSkinManager.VisualStyle="Blend" Title="This is title area."/>
 <!--SfPulsingTile-->						
-<syncfusion:SfPulsingTile x:Name="pulsingtile" Header="PulsingTile" skinManager:SfSkinManager.VisualStyle="Blend" Title="Title area.">
+<syncfusion:SfPulsingTile x:Name="pulsingtile" Header="PulsingTile" skinManager:SfSkinManager.VisualStyle="Blend" Title="This is title area.">
 	<Image Source="Assests/PulsingTile.jpg"/>	
 </syncfusion:SfPulsingTile>	
 </Grid>

@@ -121,7 +121,7 @@ namespace SfHubTileSample
 
 The title, header and image for the tile can be set by using [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html), [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) and [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) properties respectively.
 
-![wpf hub tile structure](Getting-Started_images/hubtileimage.png)
+![wpf hub tile structure](Getting-Started_images/wpf-hubtile.png)
 
 ![wpf pulsing tile structure](Getting-Started_images/pulsingtileimage.png)
 
