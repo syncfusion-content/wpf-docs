@@ -88,7 +88,7 @@ We change the `ControlTemplate` of the UpButton and DownButton templates by usin
 
 ![SfGridSplitter with expand or collapse button template](Positioning-GridSplitter-images/Collapsebuttontemplate.png)
 
-### Setting style for Preview gridsplitter
+### Setting style for Preview GridSplitter
 
 We can change the UI and style of the preview grid splitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~PreviewStyle.html) property. We can see the effect of `PreviewStyle` only on when `ShowsPreview` property value is `true`.
 
