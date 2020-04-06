@@ -196,7 +196,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree
 
 ## Set selected value on lost focus
 
-By default, the selected date of DateSelector can be sets to the `SfDatePicker.Value` property by clicking the `OK` button. If We want to update the selected date of DateSelector to the `SfDatePicker.Value` property automatically without clicking the OK button, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. This is value updated after the DateSelector lost its focus. The default value of `SetValueOnLostFocus` property is false.
+By default, the selected date of DateSelector can be sets to the `SfDatePicker.Value` property by clicking the `OK` button. If we want to update the selected date of DateSelector to the `SfDatePicker.Value` property automatically without clicking the OK button, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. This is value updated after the DateSelector lost its focus. The default value of `SetValueOnLostFocus` property is false.
 
 {% tabs %}
 {% highlight xaml %}

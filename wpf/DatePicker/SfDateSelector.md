@@ -17,7 +17,7 @@ The visual elements of the date selector can be customized using the [SelectorSt
 
 ## Change the Cell templates
 
-We can changes the template for the each selection Date, Month or Year list by using the `DayCellTemplate`, `MonthCellTemplate` or `YearCellTemplate` which are available in the `SfDateSelector`.
+We can changes the template for the Date, Month or Year selector by using the `DayCellTemplate`, `MonthCellTemplate` or `YearCellTemplate` which are available in the `SfDateSelector`.
 
 N> The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
 

@@ -17,7 +17,7 @@ The visual elements of the time selector can be customized using the [SelectorSt
 
 ## Change the Cell templates
 
-We can changes the template for the each selection hour, minute or meridiem list by using the `HourCellTemplate`,  `MinuteCellTemplate` or `MeridiemCellTemplate` which are available in the `SfTimeSelector`.
+We can changes the template for the each hour, minute or meridiem selector by using the `HourCellTemplate`,  `MinuteCellTemplate` or `MeridiemCellTemplate` which are available in the `SfTimeSelector`.
 
 N> The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
 
@@ -27,8 +27,9 @@ We can change the hour selector template by using the [HourCellTemplate](https:/
 
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker VerticalAlignment="Center"
-                         HorizontalAlignment="Center"
+<syncfusion:SfTimePicker DropDownHeight="380" 
+                         SelectorItemHeight="70" 
+                         SelectorItemWidth="70" 
                          Width="200"
                          Name="sfTimePicker">
 
@@ -68,8 +69,9 @@ We can change the minute selector template by using the [MinuteCellTemplate](htt
 
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker VerticalAlignment="Center"
-                         HorizontalAlignment="Center"
+<syncfusion:SfTimePicker DropDownHeight="380" 
+                         SelectorItemHeight="70" 
+                         SelectorItemWidth="70"
                          Width="200"
                          Name="sfTimePicker">
 
@@ -108,8 +110,9 @@ We can change the meridiem selector template by using the [MeridiemCellTemplate]
 
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker VerticalAlignment="Center"
-                         HorizontalAlignment="Center"
+<syncfusion:SfTimePicker DropDownHeight="380" 
+                         SelectorItemHeight="70" 
+                         SelectorItemWidth="70"
                          Width="200"
                          Name="sfTimePicker">
 
@@ -184,33 +187,6 @@ sfTimePicker.SelectorItemSpacing = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimeSelector item with custom spacing](Customizing-DropDown_images/SelectorItemSpacing.png)
+![SfTimeSelector item with custom spacing](Features_images/SelectorItemSpacing.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/SfTimeSelector-templates) to download the sample that showcases the `SfTimeSelector` template customization. 
-
-## OK and Cancel button visibility
-
-The selected time from the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) can be updated in the [SfTimePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property on after clicking `OK` buttons. If we want to hide the `Ok` and `Cancel` buttons, you can use the 
-[SfTimeSelector.ShowDoneButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~ShowDoneButton.html) and [SfTimeSelector.ShowCancelButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~ShowCancelButton.html) properties values as `false`. The default value of `SfTimeSelector.ShowDoneButton` and `SfTimeSelector.ShowCancelButton` properties values is `true`.
-
-{% highlight XAML %}
-
-<syncfusion:SfTimePicker Name="sfTimePicker" 
-                         IsDropDownOpen="True"
-                         Width="200"
-                         Name="sfTimePicker">
-    <syncfusion:SfTimePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfTimeSelector">
-            <!--Ok button hided-->
-            <Setter Property="ShowDoneButton" Value="False"/>
-            <!--Cancel button hided-->
-            <Setter Property="ShowCancelButton" Value="False"/>
-        </Style>
-    </syncfusion:SfTimePicker.SelectorStyle>
-</syncfusion:SfTimePicker>
-		
-{% endhighlight %}
-
-![SfTimePicker hides the cancel and done button](Features_images/Features_img11.png)
-
-Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/SfTimeSelector-footer) to download the sample that showcases the `OK` and `Cancel` button visibility.
