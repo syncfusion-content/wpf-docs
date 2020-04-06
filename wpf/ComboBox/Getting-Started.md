@@ -206,6 +206,8 @@ Now, run the application and you can expert the below output.
 
 ![Displaying WPF ComboBox](Getting-Started_images/ComboBoxAdv_img3.png)
 
+N> [View the same in GitHub](https://help.syncfusion.com/wpf/treeview/expand-the-item)
+
 ## Feature summary
 
 The features of the ComboBoxAdv control are listed below:
