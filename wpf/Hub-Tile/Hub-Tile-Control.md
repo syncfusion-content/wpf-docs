@@ -423,7 +423,7 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 {% endhighlight %}
 {% endtabs %}
 
-![wpf hubtile grouping](Getting-Started_images/wpf-hubtile-grouping.jpg)
+![wpf hubtile grouping](Getting-Started_images/wpf-hubtile-groupingtiles.jpg)
 
 ### Grouping via DataBinding
 
@@ -774,7 +774,7 @@ A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 {% endtabs %}
 
 ![wpf hubtile unfreeze a single tile](Getting-Started_images/wpf-hubtile-slide-transition.png)
-![wpf hubtile unfreeze a group of tiles](Getting-Started_images/wpf-hubtile-grouping.jpg)
+![wpf hubtile unfreeze a group of tiles](Getting-Started_images/wpf-hubtile-groupingtiles.jpg)
  
 ## Notifications
 
@@ -1020,7 +1020,7 @@ The secondary content of the tile can be customized by setting the [SecondaryCon
         <shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
    	<syncfusion:SfHubTile.SecondaryContent>
-	    <Image Source="/Assets/HubTile.png" Stretch="Fill" ToolTip="Secondarycontent" Margin="-1"/>
+	    <Image Source="/Assets/HubTile.png" Stretch="Fill" ToolTip="Secondary Content" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
 </syncfusion:SfHubTile>
 {% endhighlight %}
