@@ -15,17 +15,12 @@ The data collection that is passed to the chart can have NaN or Null values that
 
 {% highlight C# %}
 
-Fruits.Add(new Model() { FruitName = "Mango", People = 5 });
-
-Fruits.Add(new Model() { FruitName = "Apple", People = 27 });
-
-Fruits.Add(new Model() { FruitName = "Orange", People = Double.NaN });
-
-Fruits.Add(new Model() { FruitName = "Grapes", People = 15 });
-
-Fruits.Add(new Model() { FruitName = "Banana", People = 5 });
-
-Fruits.Add(new Model() { FruitName = "Blueberry", People = 20 });
+    Fruits.Add(new Model() { FruitName = "Mango", People = 5 });
+    Fruits.Add(new Model() { FruitName = "Apple", People = 27 });
+    Fruits.Add(new Model() { FruitName = "Orange", People = Double.NaN });
+    Fruits.Add(new Model() { FruitName = "Grapes", People = 15 });
+    Fruits.Add(new Model() { FruitName = "Banana", People = 5 });
+    Fruits.Add(new Model() { FruitName = "Blueberry", People = 20 });
 
 {% endhighlight %}
 
@@ -55,51 +50,40 @@ The following code examples shows how to display the empty points:
 
 {% highlight xaml %}
 
-<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+    <chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
 
-ShowEmptyPoints="True"                              
+    ShowEmptyPoints="True" ItemsSource="{Binding Fruits}" >
 
-ItemsSource="{Binding Fruits}" >
+        <chart:LineSeries.AdornmentsInfo>
 
-<chart:LineSeries.AdornmentsInfo>
+            <chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
 
-<chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
+        </chart:LineSeries.AdornmentsInfo>
 
-</chart:LineSeries.AdornmentsInfo>
-
-</chart:LineSeries>
+    </chart:LineSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-LineSeries series = new LineSeries()
-{
+    LineSeries series = new LineSeries()
+    {   
+        ItemsSource = new ViewModel().Fruits,
+        XBindingPath = "FruitName",
+        YBindingPath = "People",
+        ShowEmptyPoints = true,
+        Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    };
 
-    ItemsSource = new ViewModel().Fruits,
+    ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowLabel = true,
+        LabelPosition = AdornmentsLabelPosition.Auto
+    };
 
-    XBindingPath = "FruitName",
+    series.AdornmentsInfo = adornmentInfo;
 
-    YBindingPath = "People",
-
-    ShowEmptyPoints = true,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
-};
-
-ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-{
-
-    ShowLabel = true,
-
-    LabelPosition = AdornmentsLabelPosition.Auto
-
-};
-
-series.AdornmentsInfo = adornmentInfo;
-
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -116,55 +100,40 @@ The following code example shows the [`EmptyPointValue`](https://help.syncfusion
 
 {% highlight xaml %}
 
-<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+    <chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
 
-ShowEmptyPoints="True"     
+    ShowEmptyPoints="True" EmptyPointValue="Average" ItemsSource="{Binding Fruits}" >
 
-EmptyPointValue="Average"
+        <chart:LineSeries.AdornmentsInfo>
 
-ItemsSource="{Binding Fruits}" >
+            <chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
 
-<chart:LineSeries.AdornmentsInfo>
+        </chart:LineSeries.AdornmentsInfo>
 
-<chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
-
-</chart:LineSeries.AdornmentsInfo>
-
-</chart:LineSeries>
+    </chart:LineSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-LineSeries series = new LineSeries()
-{
+    LineSeries series = new LineSeries()
+    {
+        ItemsSource = new ViewModel().Fruits,
+        XBindingPath = "FruitName",
+        YBindingPath = "People",
+        ShowEmptyPoints = true,
+        EmptyPointValue = EmptyPointValue.Average,
+        Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    };
 
-    ItemsSource = new ViewModel().Fruits,
+    ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowLabel = true,
+        LabelPosition = AdornmentsLabelPosition.Auto
+    };
 
-    XBindingPath = "FruitName",
-
-    YBindingPath = "People",
-
-    ShowEmptyPoints = true,
-
-    EmptyPointValue = EmptyPointValue.Average,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
-};
-
-ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-{
-
-    ShowLabel = true,
-
-    LabelPosition = AdornmentsLabelPosition.Auto
-
-};
-
-series.AdornmentsInfo = adornmentInfo;
-
-chart.Series.Add(series);
+    series.AdornmentsInfo = adornmentInfo;
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -191,32 +160,24 @@ The following code example illustrates the use of [`EmptyPointStyle`](https://he
 
 {% highlight xaml %}
 
-<chart:ColumnSeries  ItemsSource="{Binding EmptyPointDatas}" Interior="#bcbcbc"
+    <chart:ColumnSeries  ItemsSource="{Binding EmptyPointDatas}" Interior="#bcbcbc" XBindingPath="Category" 
 
-XBindingPath="Category" YBindingPath="Value" 
-
-ShowEmptyPoints="True"/>
+     YBindingPath="Value" ShowEmptyPoints="True"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries series = new ColumnSeries()
-{
+    ColumnSeries series = new ColumnSeries()
+    {
+        ItemsSource = new ViewModel().EmptyPointDatas,
+        XBindingPath = "Category",
+        YBindingPath = "Value",
+        ShowEmptyPoints = true,
+        Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    };
 
-    ItemsSource = new ViewModel().EmptyPointDatas,
-
-    XBindingPath = "Category",
-
-    YBindingPath = "Value",
-
-    ShowEmptyPoints = true,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
-};
-
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -235,59 +196,42 @@ This option is used to add Symbol for the empty points as in the below code exam
 
 {% highlight xaml %}
 
-<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+    <chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
 
-ShowEmptyPoints="True"     
+    ShowEmptyPoints="True" EmptyPointValue="Average" EmptyPointStyle="Symbol" ItemsSource="{Binding Fruits}" >
 
-EmptyPointValue="Average"
+        <chart:LineSeries.AdornmentsInfo>
 
-EmptyPointStyle="Symbol"
+            <chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
 
-ItemsSource="{Binding Fruits}" >
+        </chart:LineSeries.AdornmentsInfo>
 
-<chart:LineSeries.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
-
-</chart:LineSeries.AdornmentsInfo>
-
-</chart:LineSeries>
+    </chart:LineSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-LineSeries series = new LineSeries()
-{
+    LineSeries series = new LineSeries()
+    {
+        ItemsSource = new ViewModel().Fruits,
+        XBindingPath = "FruitName",
+        YBindingPath = "People",
+        ShowEmptyPoints = true,
+        EmptyPointValue = EmptyPointValue.Average,
+        EmptyPointStyle = EmptyPointStyle.Symbol,
+        Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    };
 
-    ItemsSource = new ViewModel().Fruits,
+    ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowLabel = true,
+        LabelPosition = AdornmentsLabelPosition.Auto
+    };
 
-    XBindingPath = "FruitName",
+    series.AdornmentsInfo = adornmentInfo;
 
-    YBindingPath = "People",
-
-    ShowEmptyPoints = true,
-
-    EmptyPointValue = EmptyPointValue.Average,
-
-    EmptyPointStyle = EmptyPointStyle.Symbol,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
-};
-
-ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-{
-
-    ShowLabel = true,
-
-    LabelPosition = AdornmentsLabelPosition.Auto
-
-};
-
-series.AdornmentsInfo = adornmentInfo;
-
-chart.Series.Add(series);
+    chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -304,62 +248,43 @@ This option combines above two options, which draw a symbol with defined [`Empty
 
 {% highlight xaml %}
 
-<chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
+    <chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
 
-ShowEmptyPoints="True"     
+    ShowEmptyPoints="True" EmptyPointValue="Average" EmptyPointStyle="SymbolAndInterior"
 
-EmptyPointValue="Average"
+    EmptyPointInterior="Red" ItemsSource="{Binding Fruits}" >
 
-EmptyPointStyle="SymbolAndInterior"
+        <chart:LineSeries.AdornmentsInfo>
 
-EmptyPointInterior="Red"
+            <chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
 
-ItemsSource="{Binding Fruits}" >
+        </chart:LineSeries.AdornmentsInfo>
 
-<chart:LineSeries.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto"/>
-
-</chart:LineSeries.AdornmentsInfo>
-
-</chart:LineSeries>
+    </chart:LineSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-LineSeries series = new LineSeries()
-{
+    LineSeries series = new LineSeries()
+    {
+        ItemsSource = new ViewModel().Fruits,
+        XBindingPath = "FruitName",
+        YBindingPath = "People",
+        ShowEmptyPoints = true,
+        EmptyPointValue = EmptyPointValue.Average,
+        EmptyPointStyle = EmptyPointStyle.SymbolAndInterior,
+        EmptyPointInterior = new SolidColorBrush(Colors.Red),
+        Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+    };
 
-    ItemsSource = new ViewModel().Fruits,
-
-    XBindingPath = "FruitName",
-
-    YBindingPath = "People",
-
-    ShowEmptyPoints = true,
-
-    EmptyPointValue = EmptyPointValue.Average,
-
-    EmptyPointStyle = EmptyPointStyle.SymbolAndInterior,
-
-    EmptyPointInterior = new SolidColorBrush(Colors.Red),
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
-};
-
-ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-{
-
-    ShowLabel = true,
-
-    LabelPosition = AdornmentsLabelPosition.Auto
-
-};
+    ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+    {
+        ShowLabel = true,
+        LabelPosition = AdornmentsLabelPosition.Auto
+    };
 
 series.AdornmentsInfo = adornmentInfo;
-
 chart.Series.Add(series);
 
 {% endhighlight %}
@@ -378,43 +303,26 @@ You can add any custom shape for the empty point symbol. The following code exam
 {% highlight xaml %}
 
  <syncfusion:SfChart x:Name="chart">
-
     <syncfusion:SfChart.Resources>
-
         <DataTemplate x:Key="symbolTemplate">
-
             <Canvas>
-
                         <Grid Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" >
-
-                            <Ellipse StrokeDashArray="1,1" Height="50" 
-                                     
-                                     Width="50" Stroke="Gray" StrokeThickness="2" 
-                                     
+                            <Ellipse StrokeDashArray="1,1" Height="50"                                      
+                                     Width="50" Stroke="Gray" StrokeThickness="2"                                      
                                      Margin="-15,-15,0,0" Fill="Transparent"/>
 
-                            <Ellipse  StrokeDashArray="1,3" Height="35" Width="35"
-                                      
-                                      Stroke="Gray" StrokeThickness="2" Margin="-15,-15,0,0"
-                                      
+                            <Ellipse  StrokeDashArray="1,3" Height="35" Width="35"                                      
+                                      Stroke="Gray" StrokeThickness="2" Margin="-15,-15,0,0"                                      
                                       Fill="LightGray"/>
-
                         </Grid>
-
              </Canvas>
-
         </DataTemplate>
-
      </syncfusion:SfChart.Resources>
 
-    <syncfusion:LineSeries XBindingPath="XValue" Interior="#BCBCBC" 
-                                   
-                           YBindingPath="YValue" ShowEmptyPoints="True"    
-                                   
-                           EmptyPointValue="Average" EmptyPointStyle="Symbol"
-                                   
-                           EmptyPointInterior="Red" ItemsSource="{Binding Data}"
-                                   
+    <syncfusion:LineSeries XBindingPath="XValue" Interior="#BCBCBC"                                    
+                           YBindingPath="YValue" ShowEmptyPoints="True"                                       
+                           EmptyPointValue="Average" EmptyPointStyle="Symbol"                                   
+                           EmptyPointInterior="Red" ItemsSource="{Binding Data}"                                   
                            EmptyPointSymbolTemplate="{StaticResource symbolTemplate}"/>
 
 </syncfusion:SfChart>
@@ -423,28 +331,20 @@ You can add any custom shape for the empty point symbol. The following code exam
 
 {% highlight c# %}
 
-LineSeries series = new LineSeries()
-{
+    LineSeries series = new LineSeries()
+    {
 
-    ItemsSource = new ViewModel().Fruits,
+        ItemsSource = new ViewModel().Fruits,
+        XBindingPath = "FruitName",
+        YBindingPath = "People",
+        Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
+        ShowEmptyPoints = true,
+        EmptyPointValue = EmptyPointValue.Average,
+        EmptyPointStyle = EmptyPointStyle.Symbol,
+        EmptyPointInterior =new SolidColorBrush(Colors.Red),
+        EmptyPointSymbolTemplate = chart.Resources["symbolTemplate"] as DataTemplate
 
-    XBindingPath = "FruitName",
-
-    YBindingPath = "People",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
-
-    ShowEmptyPoints = true,
-
-    EmptyPointValue = EmptyPointValue.Average,
-
-    EmptyPointStyle = EmptyPointStyle.Symbol,
-
-    EmptyPointInterior =new SolidColorBrush(Colors.Red),
-
-    EmptyPointSymbolTemplate = chart.Resources["symbolTemplate"] as DataTemplate
-
-};
+    };
 
 chart.Series.Add(series);
 
@@ -472,3 +372,396 @@ The following section illustrates few chart types and its behavior with EmptyPoi
 **Accumulation** **Series** **with** **EmptyPoint** **as** **Average**
 
 ![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_12.png)
+
+## Grouping Stacked Series
+
+You can group the stacked similar series using [`GroupingLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingSeriesBase~GroupingLabel.html#) property of stacked series. The stacked series which contains the same [`GroupingLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingSeriesBase~GroupingLabel.html#) will be stacked in a single group.
+
+The following code example shows how to group the stacking series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <chart:StackingColumnSeries Interior="#4A4A4A" GroupingLabel="Group1" XBindingPath="Year" 
+         YBindingPath="Quarter1" ItemsSource="{Binding AnnualDetails}"/>
+
+        <chart:StackingColumnSeries Interior="#BCBCBC" GroupingLabel="Group1" XBindingPath="Year" 
+          YBindingPath="Quarter2" ItemsSource="{Binding AnnualDetails}"/>
+
+        <chart:StackingColumnSeries Interior="#7F7F7F" GroupingLabel="Group2" XBindingPath="Year"
+          YBindingPath="Quarter3" ItemsSource="{Binding AnnualDetails}"/>
+
+        <chart:StackingColumnSeries Interior="#343434" GroupingLabel="Group2" XBindingPath="Year"
+          YBindingPath="Quarter4" ItemsSource="{Binding AnnualDetails}"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfChart chart = new SfChart();
+
+            StackingColumnSeries series1 = new StackingColumnSeries()
+            {
+                ItemsSource = new ViewModel().AnnualDetails,
+                XBindingPath = "Year",
+                YBindingPath = "Quarter1",
+                GroupingLabel = "Group1",
+                Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+            };
+
+            StackingColumnSeries series2 = new StackingColumnSeries()
+            {
+                ItemsSource = new ViewModel().AnnualDetails,
+                XBindingPath = "Year",
+                YBindingPath = "Quarter2",
+                GroupingLabel = "Group1",
+                Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+            };
+
+            StackingColumnSeries series3 = new StackingColumnSeries()
+            {
+                ItemsSource = new ViewModel().AnnualDetails,
+                XBindingPath = "Year",
+                YBindingPath = "Quarter3",
+                GroupingLabel = "Group2",
+                Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+            };
+
+            StackingColumnSeries series4 = new StackingColumnSeries()
+            {
+                ItemsSource = new ViewModel().AnnualDetails,
+                XBindingPath = "Year",
+                YBindingPath = "Quarter4",
+                GroupingLabel = "Group2",
+                Interior = new SolidColorBrush(Color.FromRgb(0x34, 0x34, 0x34))
+            };
+
+            chart.Series.Add(series1);
+            chart.Series.Add(series2);
+            chart.Series.Add(series3);
+            chart.Series.Add(series4);
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of stacking series in WPF Chart](Series_images/groupingstacking.png)
+
+## Vertical Charts
+
+SfChart provides support for vertical charts. You can plot vertical chart for any chart using [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CartesianSeries~IsTransposed.html#) and [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html#) properties.
+
+### OpposedPosition
+
+Allows to position the axis in the opposite direction to the default position. The following code example illustrates placing the primary and secondary axes in opposite direction.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis  OpposedPosition="True" />
+    </chart:SfChart.PrimaryAxis>
+
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis Minimum="0" Maximum="40" Interval="10" OpposedPosition="True"/>
+    </chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    chart.PrimaryAxis = new CategoryAxis()
+    {
+         OpposedPosition = true
+    };
+
+    chart.SecondaryAxis = new NumericalAxis()
+    {
+         Minimum = 0,
+        Maximum = 40,
+        Interval = 10,
+        OpposedPosition = true
+    };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Opposed position support in WPF Chart](Vertical-Charts_images/VerticalCharts_1.png)
+
+
+### IsTransposed
+
+This property used to switch the plotting of the series to vertical.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <chart:LineSeries  IsTransposed="True" ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
+
+    YBindingPath="ItemsCount" >
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    LineSeries series = new LineSeries()
+    {
+        IsTransposed = true,
+        ItemsSource = new ViewModel().SneakersDetail,
+        XBindingPath = "Brand",
+        YBindingPath = "ItemsCount"
+    };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_2.png)
+
+
+The following example demonstrates the vertical charts.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <chart:SfChart>
+
+        <chart:SfChart.ColumnDefinitions>
+
+            <chart:ChartColumnDefinition />
+
+            <chart:ChartColumnDefinition/>
+
+        </chart:SfChart.ColumnDefinitions>
+
+        <chart:SfChart.PrimaryAxis>
+
+            <chart:CategoryAxis  ShowGridLines="False“ />            
+
+        </chart:SfChart.PrimaryAxis>
+
+        <chart:SfChart.SecondaryAxis>
+
+            <chart:NumericalAxis/>
+
+        </chart:SfChart.SecondaryAxis>          
+
+        <chart:LineSeries  IsTransposed="True" ItemsSource="{Binding SneakersDetail}" XBindingPath="Brand" 
+
+        YBindingPath="ItemsCount" >
+
+            <chart:LineSeries.AdornmentsInfo>
+
+                <chart:ChartAdornmentInfo  ShowMarker="True" Symbol="Ellipse" SymbolHeight="10" SymbolInterior="#7f7f7f" SymbolWidth="10" />   
+
+            </chart:LineSeries.AdornmentsInfo>
+
+        </chart:LineSeries>
+
+        <chart:LineSeries  Interior="DarkGray" IsTransposed="True" ItemsSource="{Binding SneakersDetail}"  
+        XBindingPath="Brand" YBindingPath="postion" >
+
+            <chart:LineSeries.AdornmentsInfo>
+
+                <chart:ChartAdornmentInfo ShowLabel="False" ShowMarker="True" Symbol="Ellipse" SymbolHeight="10" 
+
+                SymbolInterior="DarkGray" SymbolWidth="10" />
+
+            </chart:LineSeries.AdornmentsInfo>
+
+        <chart:LineSeries.YAxis>
+
+            <chart:NumericalAxis />
+
+        </chart:LineSeries.YAxis>
+
+    </chart:LineSeries>
+
+    </chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    SfChart chart = new SfChart();
+
+    chart.ColumnDefinitions.Add(new ChartColumnDefinition());
+    chart.ColumnDefinitions.Add(new ChartColumnDefinition());   
+    chart.PrimaryAxis = new CategoryAxis()
+    {
+        ShowGridLines = true
+    };
+
+    NumericalAxis axis = new NumericalAxis();
+    chart.SecondaryAxis = axis;
+    ChartBase.SetColumn(axis, 1);
+    LineSeries series1 = new LineSeries()
+    {
+        IsTransposed = true,
+        ItemsSource = new ViewModel().SneakersDetail,
+        XBindingPath = "Brand",
+        YBindingPath = "ItemsCount"
+    };
+
+    ChartAdornmentInfo adornmentInfo1 = new ChartAdornmentInfo()
+    {
+        ShowMarker = true,
+        Symbol = ChartSymbol.Ellipse,
+        SymbolHeight = 10,
+        SymbolWidth = 10,
+        SymbolInterior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
+    };
+
+    LineSeries series2 = new LineSeries()
+    {
+        IsTransposed = true,
+        Interior = new SolidColorBrush(Colors.DarkGray),
+        ItemsSource = new ViewModel().SneakersDetail,
+        XBindingPath = "Brand",
+        YBindingPath = "position",
+        YAxis = new NumericalAxis()
+    };
+
+    ChartAdornmentInfo adornmentInfo2 = new ChartAdornmentInfo()
+    {
+        ShowLabel = false,
+        ShowMarker = true,
+        Symbol = ChartSymbol.Ellipse,
+        SymbolHeight = 10,
+        SymbolWidth = 10,
+        SymbolInterior = new SolidColorBrush(Colors.DarkGray),
+    };
+
+series1.AdornmentsInfo = adornmentInfo1;
+series2.AdornmentsInfo = adornmentInfo2;
+
+ChartBase.SetColumn(series1, 0);
+ChartBase.SetColumn(series2, 1);
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Transposing the chart in WPF](Vertical-Charts_images/VerticalCharts_3.png)
+
+
+## Customize Series
+
+CustomTemplate property is used to customize the chart series. It supports the following series
+
+* BarSeries
+* BubbleSeries
+* ColumnSeries
+* LineSeries
+* ScatterSeries
+* SplineSeries
+* StackingBarSeries
+* StackingBar100Series
+* StackingColumnSeries
+* StackingColumn100Series
+* StepLineSeries
+* FastLineSeries
+* RangeColumnSeries
+
+The respective segment of each series will be your DataTemplate context, which contains the following properties in common. This will be used to plot the custom shapes for the series.
+
+* [`XData`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~XData.html#)-Returns the actual X value of the segment.
+* [`YData`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~YData.html#)-Returns the actual Y value of the segment.
+* [`Item`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSegment~Item.html#)-Returns the underlying model object of the segment.
+* [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSegment~Interior.html#)-Returns the brush color of the segment.
+
+The following code example illustrates the use of [`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~CustomTemplate.html#) property:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncfusion:SfChart x:Name="chart">
+
+     <syncfusion:SfChart.Resources>
+
+            <local:ScatterInteriorConverter x:Key="scatterInteriorConverter"/>
+
+            <local:ScatterAngleConverter x:Key="scatterAngleConverter"/>
+
+            <DataTemplate x:Key="seriesTemplate">
+
+                <Canvas>
+
+                    <Path Fill="{Binding Converter={StaticResource scatterInteriorConverter}}"
+                              
+                          Stretch="Fill" Height="{Binding ScatterHeight}"
+                              
+                          Width="{Binding ScatterWidth}" RenderTransformOrigin="0.5,0.5"
+                              
+                          Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
+                              
+                          Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,
+                              
+                              0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
+
+                          <Path.RenderTransform>
+
+                                <RotateTransform Angle="{Binding Converter={StaticResource scatterAngleConverter}}"/>
+
+                          </Path.RenderTransform>
+
+                        </Path>
+
+                    </Canvas>
+
+                </DataTemplate>
+
+    </syncfusion:SfChart.Resources>
+
+    <syncfusion:ScatterSeries  ScatterHeight="20" ScatterWidth="20" Interior="Gray"
+                                       
+                                XBindingPath="Year" YBindingPath="Count" 
+                                       
+                                ItemsSource="{Binding Data}"
+                                
+                                CustomTemplate="{StaticResource seriesTemplate}"/>
+
+</syncfusion:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ScatterSeries series = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "Count",
+
+    ScatterHeight = 20,
+
+    ScatterWidth = 20,
+
+    Interior = new SolidColorBrush(Colors.DarkGray),
+
+    CustomTemplate = chart.Resources["seriesTemplate"] as DataTemplate
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing series in WPF Chart](Styling-and-Customization_images/palette_9.png)
+
+The BarSeries, BubbleSeries, ColumnSeries, LineSeries, ScatterSeries and StepLineSeries have been customized using the [`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~CustomTemplate.html#) property. Refer to this [`sample`](https://github.com/SyncfusionExamples/how-to-customize-the-chart-series-in-wpf-sfchart) for complete series CustomTemplate.
+
+![Customizing series in Syncfusion WPF SfChart](Styling-and-Customization_images/CustomTemplate.png)    
