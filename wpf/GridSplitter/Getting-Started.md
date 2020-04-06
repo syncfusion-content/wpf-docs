@@ -17,7 +17,7 @@ This section explains how to create a WPF [SfGridSplitter](https://help.syncfusi
 
 ## Visual representation 
 
-![Getting started with SfGridSplitter](Positioning-GridSplitter-images/Getting_started.gif)
+![Getting started with SfGridSplitter](Positioning-GridSplitter-images/Getting_started1.png)
 
 ## Assembly deployment
 
@@ -91,7 +91,7 @@ namespace SfGridSplitterSample {
 
 ## Horizontal splitter
 
-If we want to resize the elements which are horizantally arranged into the rows of container, place the `SfGridSplitter` on middle row of the container and use the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+If we want to resize the elements which are horizontally arranged into the rows of container, place the `SfGridSplitter` on middle row of the container and use the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -163,7 +163,7 @@ N> We can restrict the moving location of the grid splitter (Left or Right or Bo
 
 ## Move Splitter 
 
-If we want to resize the elements in the container using the grid splitter with particular resize interval, we can set the value for `DragIncrement` and `KeyboardIncrement` properties. If we move the splitter using the mouse, `DragIncrement` property values is used as resize interval. If we move the splitter using the Up-Down buttons, `KeyboardIncrement` property values is used as resize interval. The default value of `DragIncrement` property is `1` and `KeyboardIncrement` propery is `20`.
+If we want to resize the elements in the container using the grid splitter with particular resize interval, we can set the value for `DragIncrement` and `KeyboardIncrement` properties. If we move the splitter using the mouse, `DragIncrement` property values is used as resize interval. If we move the splitter using the Up-Down buttons, `KeyboardIncrement` property values is used as resize interval. The default value of `DragIncrement` property is `1` and `KeyboardIncrement` property is `20`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -232,7 +232,7 @@ gridSplitter.MoveSplitter(50);
 
 ## Expand or collapse the grid elements
 
-We can collapse or expands the element in either side of the splitter by cliking the collapse buttons. We can show or hide the collapse button by using the [EnableCollapseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~EnableCollapseButton.html) property value as `true`. The default value of `EnableCollapseButton` is `false`.
+We can collapse or expands the element in either side of the splitter by clicking the collapse buttons. We can show or hide the collapse button by using the [EnableCollapseButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~EnableCollapseButton.html) property value as `true`. The default value of `EnableCollapseButton` is `false`.
 
 {% tabs %}
 {% highlight XAML %}
