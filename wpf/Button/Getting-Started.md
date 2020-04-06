@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started | ButtonAdv | WPF | Syncfusion
-description: This section describes how to add ButtonAdv control in WPF application and illustrates setting the image on button control. 
+title: Getting Started | Button | WPF | Syncfusion
+description: Learn how to add WPF Button (ButtonAdv) control and its basic features like image sizing options and size modes to an application here. 
 platform: wpf
 control: ButtonAdv
 documentation: ug
----
+----
 
-# Getting Started
+# Getting Started with Button
 
-This section guides you on getting started with the ButtonAdv control. It describes you about the control structure, basic settings, implementation and members.
+This section provides an overview of how to work with Button control. It describes the control structure, the control initialization  and the image setting to the control.
 
 ## Control structure
 
@@ -18,67 +18,159 @@ This section guides you on getting started with the ButtonAdv control. It descri
 Control Structure
 {:.caption}
 
-## Add ButtonAdv control to an application
+## Assembly deployment
 
-The ButtonAdv control is available in the following assembly:
+Refer [ButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#buttonadv) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) needs to be added as reference to use the ButtonAdv control in any application.
 
-*  Syncfusion.Shared.WPF
+## Creating simple application with Button
 
-## Setting label
+In this walk through, will create WPF application that contains Button control. By the following ways, one can add the controls:
 
-The following code explains how to declare the ButtonAdv control using XAML.
+1. [Adding control via designer](#Adding-control-via-designer)
+
+2. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
+
+3. [Adding control manually in C#](#Adding-control-manually-in-C#)
+
+### Adding control via designer
+
+Button control can be added to the application by dragging **ButtonAdv** from toolbox and dropping it in designer view. After dropping the control in designer view, the assembly **Syncfusion.Shared.WPF** gets added into the project automatically. The following code snippets will also be added into the XAML.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv Label="Hello World"/>
+<syncfusion:ButtonAdv x:Name="buttonAdv" Label="Button"/>
 
 {% endhighlight %}
 {% endtabs %}
 
-The ButtonAdv control can be created using the C# code as follows:
+![Getting Started](Getting-Started_images/Getting-Started_img2.png)
+
+N> **syncfusion** in XAML is an auto generated namespace.
+
+### Adding control manually in XAML
+
+In order to add the control manually in XAML, follow the below steps.
+
+1. Add the below required assembly reference to the project.
+
+    * Syncfusion.Shared.WPF
+
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+
+3. Declare ButtonAdv control in XAML page.
+
+{% tabs %}
+{% highlight xaml %}
+
+  <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:local="clr-namespace:Buttonadv_GetStart_Sample"
+         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+         xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+         mc:Ignorable="d"
+         Title="MainWindow" Height="450" Width="800">
+        <Grid>
+        <syncfusion:ButtonAdv Height="44"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="162"/>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
+
+### Adding control manually in C#
+
+In order to the add control manually in C#, do the below steps.
+
+1. Add the below required assembly reference to the project.
+
+    * Syncfusion.Shared.WPF
+
+2. Import namespace using **Syncfusion.Windows.Tools.Controls**;.
+
+3. Create ButtonAdv control instance and add it to the window.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:local="clr-namespace:Buttonadv_GetStart_Sample"
+         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+         xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+         mc:Ignorable="d"
+         Title="MainWindow" Height="450" Width="800">
+        <Grid x:Name="Root">
+        </Grid>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+
+
+ using Syncfusion.Windows.Tools.Controls;
+  {
+   public MainWindow()
+   {
+        {
+            InitializeComponent();
+            ButtonAdv button = new ButtonAdv();
+            button.Height=44;
+            button.Width=31;
+            Root.Childran.Add(button);
+        }
+    }
+
+{% endhighlight  %}
+{% endtabs %}
+
+## Setting label
+
+The label on the button is a text that explains its action to the end-user. Apply the text by using the [Label](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~Label.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ButtonAdv Label="Button"/>
+
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
+button.Label = "Button";
 
-button.Label = "Hello World";
-
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
-![Setting Label](Getting-Started_images/Getting-Started_img2.png)
+![Setting Label](Getting-Started_images/Getting-Started_img4.png)
 
-Typical ButtonAdv Control
-{:.caption}
+## Setting size mode
 
-## Set size mode
+Size mode is used to render button control in different pre-defined sizes based on application demand. Apply the size mode by setting the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~SizeMode.html) property.
 
-The size mode of the ButtonAdv control can be easily modified by using the property SizeMode. The SizeMode is the enum property which contains the following values:
+ The **SizeMode** is an enumeration which contains the following values:
 
 * Small
 * Normal
 * Large
 
-## Small mode
+### Small mode
 
-When the SizeMode is set to Small, the ButtonAdv control is displayed without the label and only icon is present in it.
-
-Use the following code example to set the SizeMode to Small:
+When the mode is set to **Small**, the control is displayed without the label. Only icon will be present in it.
 
 {% tabs %}
 {% highlight xaml %}
 
 <sync:ButtonAdv SizeMode="Small" Label="Hello World"/>
 
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-
 button.Label = "Hello World";
-
 button.SizeMode = SizeMode.Small;
 
 {% endhighlight  %}
@@ -86,27 +178,20 @@ button.SizeMode = SizeMode.Small;
 
 ![Small Mode](Getting-Started_images/Getting-Started_img3.png)
 
-ButtonAdv Control with Small SizeMode
-{:.caption}
+### Normal mode
 
-## Normal mode
-
-The ButtonAdv control retains the default appearance, when the SizeMode is set to Normal.
-
-Use the following code example to set the SizeMode to Normal:
+In a normal size button, a small image with the text on the side will be displayed.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Normal" Label="Hello World"/>
+<syncfusion:ButtonAdv SizeMode="Normal" Label="Button"/>
 
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-
-button.Label = "Hello World";
-
+button.Label = "Button";
 button.SizeMode = SizeMode.Normal;
 
 {% endhighlight %}
@@ -114,279 +199,118 @@ button.SizeMode = SizeMode.Normal;
 
 ![Normal Mode](Getting-Started_images/Getting-Started_img4.png)
 
-ButtonAdv control with Normal SizeMode
-{:.caption}
+### Large mode
 
-## Large mode
-
-When the SizeMode is set to Large, the ButtonAdv control is displayed with large icon and provides multiline support.
-
-Use the following code example to set the SizeMode to Large:
+In a large size button, a large image along with the text at the bottom will be displayed.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Large" Label="Hello World"/>
+<syncfusion:ButtonAdv SizeMode="Large" Label="Button large"/>
 
 {% endhighlight  %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-
-button.Label = "Hello World";
-
+button.Label = "Button large";
 button.SizeMode = SizeMode.Large;
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Large Mode](Getting-Started_images/Getting-Started_img5.png)
 
-ButtonAdv controls with Large SizeMode
-{:.caption}
-
 ## Setting image
 
-The image displayed on the control can be set using the following two properties:
+The image option helps to provide pictorial representation of the button. Image can be added either using the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~SmallIcon.html) property or [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~LargeIcon.html) property.
 
-* SmallIcon—To set the image when SizeMode is Normal or Small.
-* LargeIcon—To set the image when SizeMode is Large.
+**SmallIcon** — This property will be used to set the image when size mode is **Normal** or **Small**.
+**LargeIcon** — This property will be used to set the image when size mode is **Large**.
 
-The SmallIcon property can be set as follows:
+### Setting small icon
+
+The **SmallIcon** property can be set as follows:
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/>
+<syncfusion:ButtonAdv SizeMode="Small" Label="Button" SmallIcon="employee.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-
-button.Label = "Hello World";
-
+button.Label = "Button";
 button.SizeMode = SizeMode.Small;
-
 button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Setting Image](Getting-Started_images/Getting-Started_img6.png)
 
-Small Sized ButtonAdv Control with image
-{:.caption}
-
-The SmallIcon property can be set even when the SizeMode is Normal:
+The **SmallIcon** property can be set even when the SizeMode is **Normal**:
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
+<syncfusion:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Button"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-
-button.Label = "Hello World";
-
+button.Label = "Button";
 button.SizeMode = SizeMode.Normal;
-
 button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight  %}
 {% endtabs %}
 
-![Normal Mode Image](Getting-Started_images/Getting-Started_img7.png)
+![Normal-Image](Getting-Started_images/Getting-Started_img7.png)
 
-Normal Sized ButtonAdv Control with Image
-{:.caption}
+### Setting large icon
 
-The LargeIcon property can be set as follows:
+The **LargeIcon** property can be set as follows:
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/>
+<sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Button large"/>
 
-{% endhighlight  %}
+{% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-
-button.Label = "Hello World";
-
+button.Label = "Button large";
 button.SizeMode = SizeMode.Large;
-
-button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
+button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Large Mode Image](Getting-Started_images/Getting-Started_img8.png)
 
-Large Sized ButtonAdv Control with Image
-{:.caption}
+## Setting icon width and height
 
-## Set icon width and height
-
-The Icon size can be customized using the following two properties:
-
-* IconWidth
-* IconHeight
-
-![Icon Size](Getting-Started_images/Getting-Started_img9.png)
-
-ButtonAdv Control with IconSize(80,80)
-{:.caption}
-
-![Icon Size Image](Getting-Started_images/Getting-Started_img10.png)
-
-ButtonAdv Control with IconSize(20,20)
-{:.caption}
-
-The IconWidth and IconHeight can be set as follows:
+Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IconWidth.html) and [IconHeight] (https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IconHeight.html) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  />
+<syncfusion:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Button"  SmallIcon ="female.png"  />
 
 {% endhighlight %}
 {% highlight c# %}
 
-ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.IconWidth=20;button.IconHeight=20;
+ButtonAdv button = new ButtonAdv();
+button.Label = "Button";
+button.IconWidth=20;
+button.IconHeight=20;
 
 {% endhighlight %}
 {% endtabs %}
 
-## ButtonAdv members
+![Icon Size Image](Getting-Started_images/Getting-Started_img10.png)
 
-### Properties
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Type</th><th>
-Value it accepts</th><th>
-Description</th><th>
-Default Value</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-Label</td><td>
-String</td><td>
-String</td><td>
-The Label Property of this element can be set to any string value</td><td>
-Null</td><td>
-Label</td></tr>
-<tr>
-<td>
-SizeMode</td><td>
-SizeMode</td><td>
-Normal,Small,        Large</td><td>
-Represents the Size of the element, that can be Normal, Small or Large</td><td>
-Normal</td><td>
-SizeMode</td></tr>
-<tr>
-<td>
-SmallIcon</td><td>
-ImageSource</td><td>
-Image URL</td><td>
-Represents the Image displayed in the element, when size form is Small or Normal</td><td>
--</td><td>
-SmallIcon</td></tr>
-<tr>
-<td>
-LargeIcon</td><td>
-ImageSource</td><td>
-Image URL</td><td>
-Represents the Image displayed in the element, when size form is Large</td><td>
-Null</td><td>
-LargeIcon</td></tr>
-<tr>
-<td>
-IsCheckable</td><td>
-Boolean</td><td>
-True or False</td><td>
-Button will act as a Checkable item if true</td><td>
-False</td><td>
-Checkable Support</td></tr>
-<tr>
-<td>
-IsChecked</td><td>
-Boolean</td><td>
-True or False</td><td>
-Represents the Checked state of the element</td><td>
-False</td><td>
-Checkable Support</td></tr>
-<tr>
-<td>
-IsMultiline</td><td>
-Boolean</td><td>
-True or False</td><td>
-Represents whether the Label displayed in two line or not</td><td>
-True</td><td>
-MultiLine Support</td></tr>
-<tr>
-<td>
-Command</td><td>
-ICommand</td><td>
-ICommand</td><td>
-Represents the command to invoke when the button is pressed</td><td>
-Null</td><td>
-Command Binding</td></tr>
-<tr>
-<td>
-CommandParameter</td><td>
-Object</td><td>
-Object</td><td>
-Represents the parameter to pass the Command property.</td><td>
-Null</td><td>
-Command Binding</td></tr>
-<tr>
-<td>
-IconWidth</td><td>
-double</td><td>
-double</td><td>
-Represents the width of the icon. </td><td>
-16.0</td><td>
-IconSize</td></tr>
-<tr>
-<td>
-IconHeight</td><td>
-double</td><td>
-double</td><td>
-Represents the height of the icon.</td><td>
-16.0</td><td>
-IconSize</td></tr>
-</table>
-
-### Events
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Event Type</th><th>
-Event Args Parameter</th><th>
-Description</th><th>
-Reference Link</th></tr>
-<tr>
-<td>
-Click</td><td>
-RoutedEventHandler</td><td>
-RoutedEvent Args</td><td>
-Occurs when ButtonAdv is pressed.</td><td>
-Click</td></tr>
-<tr>
-<td>
-Checked</td><td>
-RoutedEventHandler</td><td>
-RoutedEventArgs</td><td>
-Occurs when the Button is Checked.</td><td>
-Checked</td></tr>
-</table>
+![Icon Size](Getting-Started_images/Getting-Started_img9.png)
