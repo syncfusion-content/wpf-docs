@@ -20,7 +20,38 @@ documentation: ug
 * Pie
 * Doughnut
 
+## Column Charts
 
+Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries3D`]
+(https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)
+
+
+% tabs %}
+
+{% highlight xaml %}
+
+        <chart:ColumnSeries3D Interior="LightGreen" ItemsSource="{Binding CategoricalData}"  
+            XBindingPath="Year" YBindingPath="Metal"></chart:ColumnSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   ColumnSeries3D series = new ColumnSeries3D()
+        {
+            ItemsSource = new CategoryDataViewModel().CategoricalData,
+            XBindingPath = "Year",
+            YBindingPath = "Plastic",
+            Interior=new SolidColorBrush(Colors.LightGreen)
+        };
+
+chart3D.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Column Charts support in WPF 3D Chart](3D-Charts_images/Chart-3D-ColumnSeries.png)
 
 ### Create a simple chart series
 
