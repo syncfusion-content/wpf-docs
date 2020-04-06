@@ -1,13 +1,15 @@
 ---
 layout: post
-title: EmptyPoints| SfChart | Wpf | Syncfusion
-description: emptypoints
+title: Series customization | SfChart | Wpf | Syncfusion
+description: Explains the grouping, empty points and other customization options of Series in WPF Charts (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Empty Points
+# Series customization in WPF Charts (SfChart)
+
+## Empty Points
 
 The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 
@@ -38,7 +40,7 @@ By default, ShowEmptyPoints property is false. So the empty points will not be r
 ![Empty points support in WPF Chart](EmptyPoints_images/emptypoint_3.png)
 
 
-## Display Empty Points
+### Display Empty Points
 
 You can show these empty points by setting the [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html#) property as True. So we need to define the value for this empty points and that can be defined using [`EmptyPointValue`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html#) property.
 
@@ -171,7 +173,7 @@ chart.Series.Add(series);
 ![Displaying empty points in WPF Chart](EmptyPoints_images/emptypoint_5.png)
 
 
-## Customizing Empty Points
+### Customizing Empty Points
 
 You can customize the empty points using [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html#) property. The following are the values of EmptyPointStyle:
 
@@ -179,7 +181,7 @@ You can customize the empty points using [`EmptyPointStyle`](https://help.syncfu
 * [`Symbol`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html) - Used to add symbols for the empty points.
 * [`SymbolAndInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html) - This is similar to Symbol, which includes empty point brush also.
 
-### Interior
+**Interior**
 
 This option fills an interior indicating the empty points and this custom brush can be defined using the [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#) property.
 
@@ -225,7 +227,7 @@ chart.Series.Add(series);
 
 N> This is the default value for [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html#). So when you enable empty points using [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html#) , empty point segment render with this [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#).
 
-### Symbol
+**Symbol**
 
 This option is used to add Symbol for the empty points as in the below code example.
 
@@ -294,7 +296,7 @@ chart.Series.Add(series);
 ![Adding symbol for empty points in WPF Chart](EmptyPoints_images/emptypoint_7.png)
 
 
-### Symbol and Interior
+**Symbol and Interior**
 
 This option combines above two options, which draw a symbol with defined [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html#). The following code example shows the use of this value.
 
@@ -367,7 +369,7 @@ chart.Series.Add(series);
 ![Symbol and interior support in WPF Chart](EmptyPoints_images/emptypoint_8.png)
 
 
-### Custom Symbol
+**Custom Symbol**
 
 You can add any custom shape for the empty point symbol. The following code example shows how to add your custom shapes:
 
@@ -453,7 +455,7 @@ chart.Series.Add(series);
 ![Custom symbol for empty points in WPF Chart](EmptyPoints_images/emptypoint_9.png)
 
 
-## EmptyPoints and Series
+### EmptyPoints and Series
 
 The following section illustrates few chart types and its behavior with EmptyPoints.
 

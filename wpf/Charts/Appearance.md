@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Customization| SfChart | Wpf | Syncfusion
-description: styling and customization
+description: Explains the customizing and styling options to apply different kinds of themes or palettes to WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
@@ -391,8 +391,7 @@ chart.Legend = new ChartLegend()
 ![Customizing legend in WPF Chart](Styling-and-Customization_images/palette_7.png)
 
 
-If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details.
-
+If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details
 ## Customize ToolTip
 
 SfChart provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TooltipTemplate.html#) property.
