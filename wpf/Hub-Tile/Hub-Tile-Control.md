@@ -1020,7 +1020,7 @@ The secondary content of the tile can be customized by setting the [SecondaryCon
         <shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
    	<syncfusion:SfHubTile.SecondaryContent>
-	    <Image Source="/Assets/HubTile.png" Stretch="Fill" ToolTip="SecondaryContent" Margin="-1"/>
+	    <Image Source="/Assets/HubTile.png" Stretch="Fill" ToolTip="Secondary Content" Margin="-1"/>
 	</syncfusion:SfHubTile.SecondaryContent>
 </syncfusion:SfHubTile>
 {% endhighlight %}
