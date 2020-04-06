@@ -17,8 +17,6 @@ The following interactive features are supported in SfChart:
 * Resizing Scrollbar
 * CrossHair
 
-
-
 ## Visual data editing
 
 SfChart has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
