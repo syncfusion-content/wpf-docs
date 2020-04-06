@@ -13,13 +13,13 @@ We can change the value of [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syn
 
 ## Setting Time using property
 
-We can set or change the selected time by using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property.
+We can set or change the selected time by using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property. If we not assign any value for the `Value` property, it will automatically assign the current system time as `Value` property value.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfTimePicker  Value="04:45:00"
-						  Name="sfTimePicker" />
+                          Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -34,14 +34,14 @@ sfTimePicker.Value = new TimeSpan(04, 45, 00);
 
 ## Setting Null Value
 
-If we want to set null value for the `SfTimePicker`, set the [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~AllowNull.html) property as `true` and [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property as `null`.
+If we want to set null value for the `SfTimePicker`, set the [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~AllowNull.html) property as `true` and [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property as `null`. If `AllowNull` property is `false`, then the current system time is updated in `Value` property and displayed instead of `null`. 
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfTimePicker  AllowNull="True" 
                           Value="{x:Null}"
-						  Name="sfTimePicker" />
+                          Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -55,15 +55,69 @@ sfTimePicker.Value = null;
 
 ![SfTimePicker displaying null value](Features_images/Features_img13.png)
 
+## Setting WaterMark text
+
+We can prompt the user with some information by using the [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Watermark.html) property. This will apply on when the `SfTimePicker` contains the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property as `null` and [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~AllowNull.html) property as `true`.  If `AllowNull` property is `false`, then the current system time is updated in  `Value` property and displayed instead of `Watermark` text.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker Watermark="Select the Time"
+                         AllowNull="True"  
+                         Value="{x:Null}"
+                         Name="sfTimePicker" >
+</syncfusion:SfTimePicker>
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker = new SfTimePicker();
+sfTimePicker.Watermark = "Select the Time";
+sfTimePicker.AllowNull = true;
+sfTimePicker.Value = null;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfTimePicker with watermark text](Features_images/Watermark.png)
+
+### Setting WaterMark Template
+
+We can change the template of the `Watermark` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~WatermarkTemplate.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker Name="sfTimePicker" 
+                         AllowNull="True" 
+                         Value="{x:Null}" 
+                         Watermark="Select the Time" >
+    <syncfusion:SfTimePicker.WatermarkTemplate >
+        <DataTemplate>
+            <Border Background="Yellow">
+                <TextBlock Foreground="Blue"
+                           FontWeight="Bold"  
+                           Text="{Binding}" 
+                           TextAlignment="Center"/>
+            </Border>
+        </DataTemplate>
+    </syncfusion:SfTimePicker.WatermarkTemplate>
+</syncfusion:SfTimePicker>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfTimePicker with watermarktemplate](Features_images/WatermarkTemplate.png)
+
 ## Set selected value on lost focus
 
-By default, the selected time of TimeSelector can be sets to the `SfTimePicker.Value` property by clicking the `OK` button. If We want to update the selected time of TimeSelector to the `SfTimePicker.Value` property automatically without clicking the OK button, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SetValueOnLostFocus.html) property value as `true`. This is value updated after the TimeSelector lost its focus. The default value of `SetValueOnLostFocus` property is false.
+If we want to update the selected time of `SfTimeSelector` to the `SfTimeSelector.Value` property by moving the focus from `SfTimeSelector` to anywhere, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SetValueOnLostFocus.html) property value as `true`. By default, the selected time of `SfTimeSelector` can be sets to the `SfTimeSelector.Value` property only by clicking the `OK` button, otherwise the selected value not updated by the move focus.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfTimePicker  SetValueOnLostFocus="True"
-				          Name="sfTimePicker" />
+                          Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -103,7 +157,7 @@ sfTimePicker.InputScope = InputScopeNameValue.Time;
 
 ## Restrict selecting time limit
 
-we can restrict the user to select a time in the specific time limit by setting the value for the [MinTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~MinTime.html) and [MaxTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~MaxTime.html) properties.
+we can restrict the user to select a time in the specific time limit by setting the value for the [MinTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~MinTime.html) and [MinTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~MaxTime.html) properties.  If we assign the value for the `Value` property lower than `MinTime`, then `MinTime` will be the selected time. If we assign the value for the `Value` property higher than `MinTime`, then `MinTime` will be the selected time.
 
 {% tabs %}
 {% highlight xaml %}

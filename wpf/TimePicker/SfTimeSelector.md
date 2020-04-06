@@ -9,7 +9,7 @@ documentation: ug
 
 # TimeSelector in WPF SfTimePicker
 
-The [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) control opens inside the drop-down popup.
+The [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) is a sub-control of [SfTimePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker.html) which opens inside the drop-down popup and used to select the time for the `SfTimePicker`. It contains the hour, minutes and meridiem selection cells for select the time. The selected time of the `SfTimeSelector` is assigned to the [SfTimePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~Value.html) property. 
 
 ![SfTimeSelector](Features_images/Features_img3.png)
 
@@ -19,11 +19,11 @@ The visual elements of the time selector can be customized using the [SelectorSt
 
 We can changes the template for the each hour, minute or meridiem selector by using the `HourCellTemplate`,  `MinuteCellTemplate` or `MeridiemCellTemplate` which are available in the `SfTimeSelector`.
 
-N> The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
+N> The DataContext of Hour, Minute, Meridiem Selection cell is [DateTimeWrapper](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.DateTimeWrapper.html).
 
 ## Change the HourCell Template
 
-We can change the hour selector template by using the [HourCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~HourCellTemplate.html) property. In that, we can add any image, icon or text with the hour values.
+We can change the hour selector template by using the [HourCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~HourCellTemplate.html) property. In that, we can add like image, icon or text with the hour values.
 
 {% highlight xaml %}
 
@@ -65,7 +65,7 @@ We can change the hour selector template by using the [HourCellTemplate](https:/
 
 ## Change the MinuteCell Template
 
-We can change the minute selector template by using the [MinuteCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~MinuteCellTemplate.html) property. In that, we can add any image, icon or text with the minute values.
+We can change the minute selector template by using the [MinuteCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~MinuteCellTemplate.html) property. In that, we can add like image, icon or text with the minute values.
 
 {% highlight xaml %}
 
@@ -106,7 +106,7 @@ We can change the minute selector template by using the [MinuteCellTemplate](htt
 
 ## Change the MeridiemCell Template
 
-We can change the meridiem selector template by using the [MeridiemCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~MeridiemCellTemplate.html) property. In that, we can add any image, icon or text with the meridiem values.
+We can change the meridiem selector template by using the [MeridiemCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector~MeridiemCellTemplate.html) property.In that, we can add like image, icon or text with the meridiem values.
 
 {% highlight xaml %}
 

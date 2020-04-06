@@ -95,13 +95,13 @@ namespace SfTimePickerSample {
 
 ## Setting the time
 
-We can set or change the selected time by using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property.
+We can set or change the selected time by using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~Value.html) property. If we not assign any value for the `Value` property, it will automatically assign the current system time as `Value` property value.
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfTimePicker  Value="04:45:00"
-						  Name="sfTimePicker" />
+                          Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
@@ -152,7 +152,7 @@ private void SftimePicker_ValueChanged(DependencyObject d, DependencyPropertyCha
 
 ## Display the time using the FormatString
 
- We can edit and display the selected time with various formatting like short time, long time, universal time and 24 hour time formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~FormatString.html) property.
+ We can edit and display the selected time with various formatting like short time, long time, universal time and 24 hour time formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~FormatString.html) property. The default value of `FormatString` property is `"h:mm tt"`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -175,7 +175,7 @@ Here, `SfTimePicker` with 24 hour time format
 
 ## Specifying format for the TimeSelector
 
-We can allow the user to select only the particular hour, minutes, seconds or meridiem value from the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SelectorFormatString.html) property.  By default, the hour, minutes and meridiem value selector is enabled in the `SfTimeSelector`.
+We can allow the user to select the pair of hour, minutes, seconds and meridiem selector or any single selector cell from the [SfTimeSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimeSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SelectorFormatString.html) property.  The default value of `SelectorFormatString` property is `"h:mm tt"` and the hour, minutes and meridiem value selector is enabled in the `SfTimeSelector`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -192,7 +192,7 @@ sfTimePicker.SelectorFormatString = "h/t";
 {% endhighlight %}
 {% endtabs %}
 
-![SfTimePicker contains only hour and meridiem value selelctor](Features_images/Features_img2.png)
+![SfTimePicker contains only hour and meridiem value selector](Features_images/Features_img2.png)
 
 Here, the `SfTimeSelector` with only hour and meridiem value selector.
 
@@ -200,13 +200,13 @@ Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree
 
 ## Set selected value on lost focus
 
-By default, the selected time of TimeSelector can be sets to the `SfTimePicker.Value` property by clicking the `OK` button. If We want to update the selected time of TimeSelector to the `SfTimePicker.Value` property automatically without clicking the OK button, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SetValueOnLostFocus.html) property value as `true`. This is value updated after the TimeSelector lost its focus. The default value of `SetValueOnLostFocus` property is false.
+If we want to update the selected time of `SfTimeSelector` to the `SfTimeSelector.Value` property by moving the focus from `SfTimeSelector` to anywhere, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~SetValueOnLostFocus.html) property value as `true`. By default, the selected time of `SfTimeSelector` can be sets to the `SfTimeSelector.Value` property only by clicking the `OK` button, otherwise the selected value not updated by the move focus.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfTimePicker  SetValueOnLostFocus="True"
-				          Name="sfTimePicker" />
+<syncfusion:SfTimePicker  SetValueOnLostFocus="True" 
+                          Name="sfTimePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
