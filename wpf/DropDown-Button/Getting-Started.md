@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started| Dropdown Button | WPF | Syncfusion
-description: Learn here about how to add WPF Dropdown Button control to an application and its basic functionality.
+description: Learn how to add WPF Dropdown Button (DropDownButtonAdv) control and its basic features like image sizing options and size modes to an application here.
 platform: wpf
 control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Dropdown Button
 
 This section provides an overview of how to work with Dropdown Button control. It describes the control structure, the control initialization, the image setting for the control and adding items to the Dropdown Button control.
 
@@ -79,7 +79,7 @@ In order to add the control manually in XAML, follow the below steps.
 
 ### Adding control manually in C#
 
-In order to add control manually in c#, do the below steps.
+In order to add control manually in C#, do the below steps.
 
 1. Add the below required assembly references to the project.
 
@@ -116,7 +116,7 @@ namespace DropDownButtonSample
             DropDownButtonAdv dropdownButtonAdv = new DropDownButtonAdv();
             dropdownButtonAdv.Height=44;
             dropdownButtonAdv.Width=31;
-            Root.Childran.Add(dropdownButtonAdv);
+            Root.Children.Add(dropdownButtonAdv);
 
         }
     }

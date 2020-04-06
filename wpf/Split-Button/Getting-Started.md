@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | Split Button | WPF | Syncfusion
-description: Learn here about how to add WPF Split Button control to an application and its basic functionality.
+description: Learn how to add WPF Split Button (SplitButtonAdv) control and its basic features like image sizing options and size modes to an application here
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Split Button
 
 This section provides an overview of how to work with Split Button control. It describes the control structure, the control initialization and the image setting for the control and add items to the control.
 
@@ -77,9 +77,9 @@ In order to add the control manually in XAML, follow the below steps.
 {% endhighlight %}
 {% endtabs %}
 
-### Adding control manually in c#
+### Adding control manually in C#
 
-In order to add control manually in c#, do the below steps.
+In order to add control manually in C#, do the below steps.
 
 1. Add the below required assembly references to the project.
 
@@ -225,7 +225,7 @@ button.SizeMode = SizeMode.Large;
 
 ## Setting image
 
-The image option helps to provide picotrial representation of the button. Image can be added either using the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~SmallIcon.html) or [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~LargeIcon.html) property.
+The image option helps to provide pictorial representation of the button. Image can be added either using the [SmallIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~SmallIcon.html) or [LargeIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~LargeIcon.html) property.
 
 **SmallIcon** — This property will be used to set the image when size mode is **Normal** or **Small**.
 **LargeIcon** — This property will be used to set the image when size mode is **Large**.

@@ -7,7 +7,7 @@ control: SplitButtonAdv
 documentation: ug
 ---
 
-# Overview
+# WPF Split Button Overview
 
 The split button is a combination of a button and a menu control. The button itself provides a default selection or when the arrow is clicked, displays a dropdown list for other possible selections.
 

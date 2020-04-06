@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Overview
+# WPF Dropdown Button Overview
 
 The WPF dropdown button (or DropDownButtonAdv) provides advanced menu-like appearance to the button UI. When the arrow is clicked, it displays a dropdown list with various options for selection.
 
