@@ -7,7 +7,7 @@ control: ButtonAdv
 documentation: ug
 ---
 
-# WPF Button Overview
+# WPF Button (ButtonAdv) Overview
 
 The Button (or ButtonAdv) is a basic button control with image options and multi-line support which is used to design complex forms and applications. The control is shipped with a commanding support that provides compatibility in MVVM design pattern by attaching commands to the control, which will get executed when it gets clicked.
 
