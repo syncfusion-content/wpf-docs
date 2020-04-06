@@ -95,7 +95,7 @@ Let us see the step by step procedure for ensuring version and generating theme 
 
 **Step 1:**
 
-The following exported theme project should be attached for corresponding target frameworks into the WPF application.
+The following exported theme project should be attached for corresponding target frameworks used in the WPF application.
 
 <table>
 <tr>
@@ -131,7 +131,7 @@ Ensure the version of the exported theme project with the Syncfusion assembly(.d
 
 ![Setting Assembly Version in Properties](ThemeStudio_images/ThemeStudio-Assembly-Version.png)
 
-Ensure that common Keys are to be commented out, as the private keys files (.snk) are used to generate assembly which is located below the assembly version in Assemblyinfo.cs.
+Ensure that common Keys are commented out which is located below the assembly version in Assemblyinfo.cs, since the private key files (.snk) should be used for generating theme assembly.
 
 
 ![Commmenting out common keys in Properties](ThemeStudio_images/ThemeStudio-Common-Key.png)
@@ -140,10 +140,10 @@ Ensure that common Keys are to be commented out, as the private keys files (.snk
 
 **Step 3:**
 
-To generate theme assembly, if private key pair is already created then add it to the exported theme project in signing tab inside the properties. If the key pair is not created [create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) through visual studio. Ensure that exported theme project should rebuild through release mode to generate theme assembly.
+To generate theme assembly, if private key pair is already created then add it to the exported theme project in signing tab inside the properties. [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) through visual studio if the key pair is not created . Click the `Sign the assembly` checkbox to activate the key pair for generating theme assembly. Ensure that exported theme project should be rebuild through `Release` mode for generating theme assembly.
 
 
- ![Signing dialog box for creating new keypair](ThemeStudio_images/ThemeStudio-Strong-Name-Key.png)
+ ![Signing Checkbox for creating new keypair](ThemeStudio_images/ThemeStudio-Signing-Assembly.png)
 
 
 
@@ -153,7 +153,7 @@ Let us see the step by step procedure for adding exported theme project as assem
 
  **Step 1:**
 
- Now add the exported theme project as an assembly (.dll) from the release folder of the export theme project into the WPF project.
+ Now add the exported theme project as an assembly (.dll) from the `Release` folder of the export theme project into the WPF project.
 
 
  ![Add reference for the Theme Export Project](ThemeStudio_images/ThemeStudio-Reference-1.png)
@@ -212,8 +212,6 @@ Any built-in themes can applied to the required control by `VisualStyle` attache
 {% endhighlight %}
 
 {% endtabs %}
-
-{% tabs %}
 
 
 **Step 4:**
