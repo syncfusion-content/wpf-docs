@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Watermark | SfTextBoxExt | wpf | Syncfusion
-description: This section provides details about AutoComplete WaterMark & WaterMark templates.
+description: This section provides the details about SfTextBoxExt WaterMark support & WaterMark templates support.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug

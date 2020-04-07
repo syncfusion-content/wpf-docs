@@ -25,8 +25,8 @@ TextBoxExt is an extended version of the TextBox control. Most of the functional
 * **Diacritic Sense**: The control provides populating the items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard.
 * **Highlighting Text**: The control provides highlighting the matching text in the Suggestion list based on the input given in it.
 * **Custom filter**: AutoComplete provides the users to filter the item in the Suggestion list based on their filtering condition.
-* **Multi Seletion Support**: Select multiple items from a suggestion list.
-* **SuggestionBox adjustment**: Agjust the position of popup relative to the control.
+* **Multi Seletion Support**: Selecting multiple items from a suggestion list.
+* **SuggestionBox adjustment**: Adjust the position of popup relative to the control.
 * **EnableAutoSize**: AutoSizing can be enabled in AutoComplete control so that the control will extend its layout based on the token size.
 * **AutoComplete template**: We can set our own template.
 * **NoResultsFoundTemplate**: We can set the desire text, if the typing item is doesn't exist in the collection.
