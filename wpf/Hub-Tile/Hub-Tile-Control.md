@@ -13,7 +13,7 @@ The Hub Tile control supports the tile feature similar to the live tile feature 
 
 ## Setting header content
 
-Header can act as the name of the tile, that is placed at the bottom explaining its purpose. The content of the header can be an image, a text or a control, etc. The header can be set to the tile by using the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property. The below example defines a tile that represents mail application.
+Header can act as the name of the tile, that is placed at the bottom explaining its purpose. The content of the header can be an image, a text or a control, etc. The header can be set to the tile by using the [Header](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~Header.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -66,7 +66,7 @@ Header can act as the name of the tile, that is placed at the bottom explaining 
 
 ## Setting title content 
 
-Title can be used to display updates and notifications in a tile. The content of the title can be an image, a text or a control, etc. The title can be set to the tile by using the [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property. The below example represents the notifications in mail applications.
+Title can be used to display updates and notifications in a tile. The content of the title can be an image, a text or a control, etc. The title can be set to the tile by using the [Title](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Title.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -119,7 +119,7 @@ Title can be used to display updates and notifications in a tile. The content of
 
 ## Setting image 
 
-The image can be set to the tile by setting image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) property.
+The image acts as a pictorial representation of the purpose of tile control. The image can be set to the tile by setting image path to the [ImageSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ImageSource.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -129,7 +129,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 </Grid>
 
 {% endhighlight %}
-{% highlight C# % }
+{% highlight C# %}
 
     //Setting image for hub tile
     SfHubTile hubTile = new SfHubTile();
@@ -143,7 +143,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 
 ## Setting secondary content
 
-[SecondaryContent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContent.html) specifies the content to be dislayed when the tile content of the tile changes during each transition, that is, from primary view. Secondary content can be an image, a text or a control.
+The [secondary content](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContent.html) specifies the content to be displayed when the tile content of the tile changes during each transition, that is, from primary view. Secondary content can be an image, a text or a control.
 {% tabs %}
 {% highlight XAML %}
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -165,7 +165,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 </syncfusion:SfHubTile>
 
 <!--For setting secondary content as text use this code.-->
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="This is title area." Header="Mail" Foreground="White" Interval="00:00:03" SecondaryContent="Secondary content of tile">
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="This is title area." Width="200" Height="200" Header="Mail" Foreground="White" Interval="00:00:03" SecondaryContent="This is the secondary content.">
 	<syncfusion:SfHubTile.HubTileTransitions>
 		<shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
@@ -176,7 +176,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 		<shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
     <syncfusion:SfHubTile.SecondaryContent>
-        <TextBlock Text="This is the secondary content of the tile displayed at each transition" TextWrapping="Wrap" FontSize="15" Foreground="White"/>
+        <TextBlock Text="This is the secondary content of the tile displayed at each transition." TextWrapping="Wrap" FontSize="15" Foreground="White"/>
     </syncfusion:SfHubTile.SecondaryContent>
 </syncfusion:SfHubTile>
 </Grid>
@@ -203,7 +203,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
     hubTile.Foreground = Brushes.White;
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
     hubTile.HubTileTransitions.Add(new SlideTransition());
-    TextBlock textblock = new TextBlock() { Text = "This is the secondary content of the tile displayed at each transition", TextWrapping = TextWrapping.Wrap, FontSize = 15, Foreground = Brushes.White };
+    TextBlock textblock = new TextBlock() { Text = "This is the secondary content of the tile displayed at each transition.", TextWrapping = TextWrapping.Wrap, FontSize = 15, Foreground = Brushes.White };
     hubTile.SecondaryContent = textblock;
     hubTile.Interval = TimeSpan.FromSeconds(3.0);
   
@@ -214,7 +214,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
     hubTile.Foreground = Brushes.White; 
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
     hubTile.HubTileTransitions.Add(new SlideTransition());
-    hubTile.SecondaryContent = "Secondary content of tile";
+    hubTile.SecondaryContent = "This is the secondary content.";
     hubTile.Interval = TimeSpan.FromSeconds(3.0);
 
     grid.Children.Add(hubTile);
@@ -225,7 +225,46 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 
 ![wpf hubtile secondarycontent as image](Getting-Started_images/wpf-hubtile-slide-transition.png)
 
-![wpf hubtile secondaryconten as control](Getting-Started_images/wpf-hubtile-secondary-control.gif)
+![wpf hubtile secondarycontent as control](Getting-Started_images/wpf-hubtile-secondary-control.gif)
+
+## Animation
+
+The tile press animation takes place when the center of the tile is pressed. The tile press animation causes the entire tile to be zoomed in/out at specified interval. The tile press animation can be set by using properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) in the Hub Tile. The [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) is used to customize the depth of scaling effect while pressing the center of the tile. The [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) is used to determine the time taken for the single tile press animation.
+
+{% tabs %}
+{% highlight XAML %}
+<Grid x:Name="grid">
+<syncfusion:SfHubTile x:Name="hubtile" TilePressDuration="00:00:02" ScaleDepth="2" Interval="00:00:03" Title="This is title area" Header="Mail" Foreground="White" ImageSource="/Assets/New Mail.png">  
+    <syncfusion:SfHubTile.HubTileTransitions>
+        <shared1:SlideTransition/>
+    </syncfusion:SfHubTile.HubTileTransitions>
+    <syncfusion:SfHubTile.SecondaryContent>
+        <Image Source="/Assets/HubTile.png" Stretch="UniformToFill"/>
+    </syncfusion:SfHubTile.SecondaryContent>
+</syncfusion:SfHubTile>
+</Grid>
+{% endhighlight %}
+{% highlight C# %}
+
+    SfHubTile hubTile = new SfHubTile();
+    hubTile.Header = "Mail";
+    hubTile.Title = "This is title area";
+    hubTile.Interval = TimeSpan.FromSeconds(3.0);
+    hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute)); 
+    hubTile.HubTileTransitions.Add(new SlideTransition());
+    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/HubTile.png",UriKind.RelativeOrAbsolute)) };
+    hubTile.SecondaryContent = image;
+
+    //Setting tile press duration and scale depth
+    hubTile.TilePressDuration = TimeSpan.FromSeconds(2.0);
+    hubTile.ScaleDepth = 2;
+
+    grid.Children.Add(hubTile);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The tile press animation occurs only if the [OverrideDefaultStates](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~OverrideDefaultStates.html) property is said to be **false**. 
 
 ## Transitions
 
@@ -301,7 +340,7 @@ N> **Syncfusion.SfShared.Wpf** assembly should be included in XAML or import **u
 Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event rises on each transition completion. Below example demonstrates the working of the event in the Hub Tile.
 
 {% tabs %}
-{% highlight XAML%}
+{% highlight XAML %}
 <syncfusion:SfHubTile x:Name="hubTile" Header="Mail" Foreground="White" Title="This is title area." ImageSource="/Assets/New mail.png" Interval="00:00:03" >
 	<syncfusion:SfHubTile.HubTileTransitions>
 	    <shared:SlideTransition/>
@@ -315,8 +354,8 @@ Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTrans
         </i:EventTrigger>
     </i:Interaction.Triggers>
 </syncfusion:SfHubTile>
-{% endhighlight%}
-{% highlight C#%}
+{% endhighlight %}
+{% highlight C# %}
       
 	public class HubTileTransitionCompleted : TargetedTriggerAction<SfHubTile>
     {
@@ -337,7 +376,7 @@ Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTrans
 
 ## Grouping
 
-Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) property of hub tile control. The group name will be used when the entire group of tiles needs to be freezed/unfreezed.
+Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) property of hub tile control. The group name will be used when the entire group of tiles needs to be freeze/unfreeze.
 
 {% tabs %}
 {% highlight XAML %}
@@ -427,28 +466,25 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 
 ### Grouping via DataBinding
 
-Grouping several hub tiles can also be done by populating hub tile into a collection by providing proper binding to the collection. Below example demonstartes how to populate a group of hub tiles inside a listview in MVVM pattern.
-1. Create a new WPF project.
-2. Create a Model class and specify the elements of the Hub Tile. 
+Grouping several hub tiles can also be done by populating hub tile into a collection by providing proper binding to the collection. Below example demonstrates how to populate a group of hub tiles inside a listview in MVVM pattern.
+
+* Create a new WPF project and add a **Model** class specifying the elements of the Hub Tile. 
 
 {% tabs %}
-{% highlight C#%}
+{% highlight C# %}
     
     public class Model
     {
-
         public string Header { get; set; }
  
         public string ImageSource { get; set; }
 
-        public TimeSpan Interval { get; set; }
-        
-        
+        public TimeSpan Interval { get; set; }   
     }
 {% endhighlight %}
 {% endtabs %}
 
-3. Create a ViewModel class Where the collection has been declared and populate the items into it.
+* Create a **ViewModel** class where the collection has been declared and populate the items into it.
 
 {% tabs %}
 {% highlight C# %}
@@ -477,10 +513,10 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
 {% endhighlight %}
 {% endtabs %}
 
-4. In XAML bind the collection to the ListView control and use ItemTemplate to populate Hub Tile control into it.
+* In XAML, bind the collection to the ListView control and use ItemTemplate to populate Hub Tile control into it.
 
 {% tabs %}
-{% highlight XAML%}
+{% highlight XAML %}
 <Window x:Class="HubTileGrouping_Sample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -506,7 +542,7 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
         <syncfusion:SfHubTile Header="{Binding Header}" Interval="{Binding Interval}" ImageSource="{Binding Imagesource,Converter={StaticResource Image}}">
         <syncfusion:SfHubTile.SecondaryContentTemplate>
             <DataTemplate>
-                <TextBlock Text="This is the secodary content of the tile displayed at each transition" TextWrapping="Wrap" FontStyle="Italic" FontSize="15" Foreground="White"/>
+                <TextBlock Text="This is the secondary content of the tile displayed at each transition." TextWrapping="Wrap" FontStyle="Italic" FontSize="15" Foreground="White"/>
             </DataTemplate>
         </syncfusion:SfHubTile.SecondaryContentTemplate>
         <syncfusion:SfHubTile.HubTileTransitions>
@@ -528,7 +564,7 @@ Freezing provides support to stop animating the tile contents. Unfreezing provid
 
 ### Freezing/unfreezing via property
 
-The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to be **true**.
+The tile can be frozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to be **true**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -566,7 +602,7 @@ The tile can be freezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf
  
 ![wpf hubtile freeze a single tile](Getting-Started_images/wpf-hubtile-single-tile-freezing.png)
 
-The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to **false**.
+The tile can be unfrozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~IsFrozen.html) property to **false**.
 
 {% tabs %}
 {% highlight XAML %}
@@ -603,13 +639,15 @@ The tile can be unfreezed by setting [IsFrozen](https://help.syncfusion.com/cr/w
 
 ![wpf hubtile unfreeze a tile](Getting-Started_images/wpf-hubtile-slide-transition.png)
 
-### Freezing/unfreezing the tiles
+### Freezing/unfreezing via methods
 
-The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService.html) class provides helper methods such as [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~Freeze.html) and [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) to freeze and unfreeze the animation by passing a Hub Tile instance or [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) as an argument. Add required **System.Windows.Interactivity** assembly reference in application. Import schema for interactivity **http://schemas.microsoft.com/expression/2010/interactivity** in XAML or **using System.Windows.Interactivity** namespace in C#.
+The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService.html) class provides helper methods such as [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~Freeze.html) and [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) to freeze and unfreeze the animation by passing a Hub Tile instance or [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) as an argument. 
+* Add required **System.Windows.Interactivity** assembly reference in application. 
+* Import schema for interactivity **http://schemas.microsoft.com/expression/2010/interactivity** in XAML or **using System.Windows.Interactivity** namespace in C#.
 
 N> The [HubTileService](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService.html) class allows to set the freeze/unfreeze state of the tile after the tiles are loaded.
 
-A single tile or a group of tiles can be freezed by using [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~Freeze.html) method.
+A single tile or a group of tiles can be frozen by using [Freeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~Freeze.html) method.
 
 {% tabs %}
 {% highlight XAML %}
@@ -690,10 +728,15 @@ A single tile or a group of tiles can be freezed by using [Freeze](https://help.
 {% endhighlight %}
 {% endtabs %}
 
+Single tile:
+
 ![wpf hubtile freeze a single tile](Getting-Started_images/wpf-hubtile-single-tile-freezing.png)
+
+Group of tiles:
+
 ![wpf hubtile freeze a group of tiles](Getting-Started_images/wpf-hubtile-freezebygroupname.png)
 
-A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) method.
+A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) method.
  
 {% tabs %}
 {% highlight XAML %}
@@ -773,17 +816,24 @@ A single tile or a group of tiles can be unfreezed by using [UnFreeze](https://h
 {% endhighlight %}
 {% endtabs %}
 
+Single tile:
+
 ![wpf hubtile unfreeze a single tile](Getting-Started_images/wpf-hubtile-slide-transition.png)
+
+Group of tiles:
+
 ![wpf hubtile unfreeze a group of tiles](Getting-Started_images/wpf-hubtile-groupingtiles.jpg)
  
 ## Notifications
 
-Once the tile is pressed, it is notified by the click event and the command property of the Hub Tile. 
+Once the tile is pressed, it is notified by the click event and the command property of the Hub Tile.
+
+### Event
   
 The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
 
 {% tabs %}
-{% highlight XAML%} 
+{% highlight XAML %} 
 <syncfusion:SfHubTile x:Name="hubTile" Interval="00:00:03"  Header="Mail" Foreground="White" Title="This is title area." ImageSource="/Assets/New Mail.png">
 	<i:Interaction.Triggers>
         <i:EventTrigger EventName="Click">
@@ -882,53 +932,14 @@ Command specifies the operation to be performed when the tile is pressed. [Comma
 {% endhighlight %}   
 {% endtabs %}
 
-### Animations
-
-The tile press animation takes place when the center of the tile is pressed. The tile press animation causes the entire tile to be zoomed in/out at specified interval. The tile press animation can be set by using properties such as [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) and [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) in the Hub Tile. The [ScaleDepth](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~ScaleDepth.html) is used to customize the depth of scaling effect while pressing the center of the tile. The [TilePressDuration](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~TilePressDuration.html) is used to determine the time taken for the single tile press animation.
-
-{% tabs %}
-{% highlight XAML %}
-<Grid x:Name="grid">
-<syncfusion:SfHubTile x:Name="hubtile" TilePressDuration="00:00:02" ScaleDepth="2" Interval="00:00:03" Title="This is title area" Header="Mail" Foreground="White" ImageSource="/Assets/New Mail.png">  
-    <syncfusion:SfHubTile.HubTileTransitions>
-        <shared1:SlideTransition/>
-    </syncfusion:SfHubTile.HubTileTransitions>
-    <syncfusion:SfHubTile.SecondaryContent>
-        <Image Source="/Assets/HubTile.png" Stretch="UniformToFill"/>
-    </syncfusion:SfHubTile.SecondaryContent>
-</syncfusion:SfHubTile>
-</Grid>
-{% endhighlight %}
-{% highlight C# %}
-
-    SfHubTile hubTile = new SfHubTile();
-    hubTile.Header = "Mail";
-    hubTile.Title = "This is title area";
-    hubTile.Interval = TimeSpan.FromSeconds(3.0);
-    hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png",UriKind.RelativeOrAbsolute)); 
-    hubTile.HubTileTransitions.Add(new SlideTransition());
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/HubTile.png",UriKind.RelativeOrAbsolute)) };
-    hubTile.SecondaryContent = image;
-
-    //Setting tile press duration and scale depth
-    hubTile.TilePressDuration = TimeSpan.FromSeconds(2.0);
-    hubTile.ScaleDepth = 2;
-
-    grid.Children.Add(hubTile);
-
-{% endhighlight %}
-{% endtabs %}
-
-N> The tile press animation occurs only if the [OverrideDefualtStates](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~OverrideDefaultStates.html) property is said to be **false**. 
-
 ## Appearance and styling
 
 ### Customizing header
 
-Header of the tile can be customized by setting the properties such as [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) and [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html). [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) is used to customize the header of the tile by setting its appropriate properties. [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) is used to customize the visual appearance of header by adding user-defined template.
+Header of the tile can be customized either through [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) or [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) as shown below. [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) is used to customize the header of the tile by setting its appropriate properties. [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) is used to customize the visual appearance of header by adding user-defined template.
 
 {% tabs %}
-{% highlight XAML%}
+{% highlight XAML %}
 <syncfusion:SfHubTile x:Name="hubtile" ImageSource="/Assets/New Mail.png"  Title="This is title area." Foreground="White" Header="Mail">
 
     <!--For setting header style-->
@@ -1007,11 +1018,11 @@ The [TitleStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syn
 
 ### Customizing secondary content
 
-By the following two ways the [SecondaryContent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContent.html) of the Hub Tile can be customized:
+By the following two ways the secondary content of the Hub Tile can be customized:
 
 #### Customizing secondary content via property
  
-The secondary content of the tile can be customized by setting the [SecondaryContent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContent.html) property like below.
+The secondary content of the tile can be customized by using the appropriate [SecondaryContent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContent.html) property like below.
 {% tabs %}
 {% highlight XAML %}
 <!-- SfHubTile -->
@@ -1030,7 +1041,7 @@ The secondary content of the tile can be customized by setting the [SecondaryCon
 
 #### Customizing secondary content via template
  
-The secondary content of the tile can be customized by using the [SecondaryContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContentTemplate.html) property too.
+The secondary content of the tile can be customized by using the [SecondaryContentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~SecondaryContentTemplate.html) property like below.
 
 {% tabs %}
 {% highlight XAML %}
@@ -1051,7 +1062,7 @@ The secondary content of the tile can be customized by using the [SecondaryConte
             </Grid.RowDefinitions>
             <Image Source="/Assets/HubTile.png" />
             <CheckBox x:Name="checkbox" Grid.Row="1" Foreground="White" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}" Foreground="White"/>
-            <TextBlock Grid.Row="2" Text="This is the secondary content of the tile displayed at each transition" Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
+            <TextBlock Grid.Row="2" Text="This is the secondary content of the tile displayed at each transition." Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
             </StackPanel>
         </DataTemplate>
     </syncfusion:SfHubTile.SecondaryContentTemplate>

@@ -50,14 +50,11 @@ Below example explains how to apply blend theme for Hub Tile and Pulsing Tile us
 {% endhighlight %}
 {% endtabs %}
 
-* Now run the application and can see the blend theme applied for Hub Tile and Pulsing Tile.
+* Now run the application and can see the blend theme applied for Hub Tile and Pulsing Tile respectively.
 
 ![Display hubtile control with blend theme applied](Getting-Started_images/Themes_images_hubtile.png)
 
 ![Display pulsingtile control with blend theme applied](Getting-Started_images/Themes-images-pulsingtile.png)
-
-
-N> Refer below theme studio documentation to know more about `SfSkinManger` and its various features such as theming WPF framework controls, changing themes at runtime and applying themes globally in the application.
 
 ## Applying themes using Theme Studio
 
