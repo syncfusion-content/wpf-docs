@@ -101,7 +101,7 @@ In order to add control manually in C#, do the below steps.
         <Grid x:Name="Root">
         </Grid>
 </Window>
-% endhighlight %}
+{% endhighlight %}
 {% highlight c# %}
 
 using Syncfusion.Windows.Tools.Controls;
@@ -111,13 +111,11 @@ namespace DropDownButtonSample
     {
         public MainWindow()
         {
-
             InitializeComponent();
             DropDownButtonAdv dropdownButtonAdv = new DropDownButtonAdv();
             dropdownButtonAdv.Height=44;
             dropdownButtonAdv.Width=31;
             Root.Children.Add(dropdownButtonAdv);
-
         }
     }
 }
