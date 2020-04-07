@@ -47,10 +47,155 @@ The following code example illustrates how to initialize the adornment.
 
 ![Chart 3D support in WPF](3D-Charts_images/Chart-3D-Adornment.png)
 
+Each adornment can be represented by the following:
 
-## Customizing Adornments 
+    * Marker- Displays the desired symbol at the (X, Y) point.
+    * Label - Displays the segment label content at the (X, Y) point.
+    * ConnectorLine - Line used to connect the (X, Y) point and the label element.
 
-[`Adornments`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Adornments.html) are used to indicate corresponding data point values and can be customized using the following properties:
+## Marker
+
+To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowMarker.html#) property as True. By default, there is no symbol displayed, you have to add the desired symbol using Symbol property.
+
+The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
+            YBindingPath="Plastic">
+            <chart:ColumnSeries3D.AdornmentsInfo>
+                 <chart:ChartAdornmentInfo3D ShowMarker="True" Symbol="Diamond" SymbolInterior="Brown"></chart:ChartAdornmentInfo3D>
+            </chart:ColumnSeries3D.AdornmentsInfo>
+        </chart:ColumnSeries3D>  
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ColumnSeries3D series = new ColumnSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Plastic"
+            };
+
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+            {
+                ShowMarker = true,
+                SymbolInterior = new SolidColorBrush(Colors.Brown),
+                Symbol = ChartSymbol.Diamond
+            };
+
+        series.AdornmentsInfo = adornmentInfo;
+
+        chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Symbol support in WPF Chart](3D-Charts_images/Adornment_Marker.png)
+
+## Label
+
+SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
+            YBindingPath="Plastic">
+                <chart:ColumnSeries3D.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo3D ShowLabel="True" SegmentLabelContent="LabelContentPath" AdornmentsPosition="Top"></chart:ChartAdornmentInfo3D>
+                </chart:ColumnSeries3D.AdornmentsInfo>
+        </chart:ColumnSeries3D>  
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ColumnSeries3D series = new ColumnSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Plastic"
+            };
+
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+            {
+                ShowLabel = true,
+                SegmentLabelContent=LabelContent.LabelContentPath,
+                AdornmentsPosition=AdornmentsPosition.Top
+            };
+
+        series.AdornmentsInfo = adornmentInfo;
+
+        chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+| SegmentLabelContent values | Description | Output |
+|---|--|---|
+| DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](3D-Charts_images/Adorn_DateTime.png) |
+|LabelContentPath | Displays the y value|![ LabelContentPath in Adornment](3D-Charts_images/Adorn_LabelContent.png)|
+| Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](3D-Charts_images/Adorn_Percentage.png) |
+| XValue | Displays the X value of series' point|![ XValue in Adornment](3D-Charts_images/Adorn_Xvalue.png) |
+| YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](3D-Charts_images/Adorn_YofTop.png) |
+| YValue | Displays the Y value of series' point| ![ YValue in Adornment](3D-Charts_images/Adorn_YValue.png) |
+
+
+## ConnectorLine
+
+You can add connector line for the adornments using [`ShowConnectorLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowConnectorLine.html#) property. Also this connector line can be customized using [`ConnectorHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorHeight.html#), [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html#) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorRotationAngle.html#) properties.
+
+
+The following code example shows the how to add connector line:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
+            YBindingPath="Plastic">
+                <chart:ColumnSeries3D.AdornmentsInfo>
+                    <chart:ChartAdornmentInfo3D ShowLabel="True" ConnectorHeight="10" ShowConnectorLine="True" LabelPosition="Outer"></chart:ChartAdornmentInfo3D>
+                </chart:ColumnSeries3D.AdornmentsInfo>
+        </chart:ColumnSeries3D>  
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ColumnSeries3D series = new ColumnSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Plastic"
+            };
+
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+            {
+                ShowLabel = true,
+                LabelPosition = AdornmentsLabelPosition.Outer,
+                ShowConnectorLine = true,
+                ConnectorHeight = 10
+            };
+
+        series.AdornmentsInfo = adornmentInfo;
+
+        chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Connector Line in WPF Chart](3D-Charts_images/Adorn_ConnectorLine.png)
 
 <table>
 <tr>

@@ -60,8 +60,7 @@ ChartAxis supports the following types.
             {
                 PrimaryAxis = new NumericalAxis3D(),
 
-                SecondaryAxis = new NumericalAxis3D()
-               
+                SecondaryAxis = new NumericalAxis3D()               
             };
 
 {% endhighlight %}
@@ -69,7 +68,6 @@ ChartAxis supports the following types.
 {% endtabs %}
 
 ### CategoryAxis3D
-
 
 [`CategoryAxis3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis3D.html#) - it is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
 
