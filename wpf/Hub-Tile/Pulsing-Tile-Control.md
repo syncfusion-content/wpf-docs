@@ -72,7 +72,7 @@ Title can be used to display updates and notifications in a tile. The content ca
 {% highlight XAML %}
 <Grid x:Name="grid">
 <!--For setting title as text use this code.-->
-<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="Now Playing-Song Name" Foreground="White"/>
+<syncfusion:SfPulsingTile x:Name="pulsingTile" Title="Now Playing - Song Name" Foreground="White"/>
 
 <!--For setting title as an image use this code.-->
 <syncfusion:SfPulsingTile x:Name="pulsingTile">
@@ -93,7 +93,7 @@ Title can be used to display updates and notifications in a tile. The content ca
 
     //Setting title for Pulsing Tile.
     SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Title = "Now Playing-Song Name";
+    pulsingTile.Title = "Now Playing - Song Name";
     pulsingTile.Foreground = Brushes.White;
 
     //For setting title as image use this code.
@@ -436,12 +436,6 @@ The tile can be unfreeze by setting [IsFrozen](https://help.syncfusion.com/cr/wp
 {% endhighlight %}
 {% endtabs %}
 
-Before the Pulsing Tile unfreeze:
-
-![wpf pulsingtile before unfreezing a tile](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
-
-After unfreezing the Pulsing Tile:
-
 ![wpf pulsingtile unfreeze a tile](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
 
 ### Freezing/unfreezing the tiles
@@ -517,7 +511,12 @@ A single tile or a group of tiles can be freeze by using [Freeze](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
+Single tile:
+
 ![wpf pulsingtile freeze a single tile](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
+
+Group of tiles:
+
 ![wpf pulsingtile freeze a group of tiles](Getting-Started_images/wpf-pulsingtile-freezebygroupname.png)
 
 A Single tile or a group of tiles can be unfreeze by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) method.
@@ -588,19 +587,11 @@ A Single tile or a group of tiles can be unfreeze by using [UnFreeze](https://he
 {% endhighlight %}
 {% endtabs %}
 
-Before unfreezing a single tile:
-
-![wpf pulsingtile before unfreezing a single tile](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
-
-After unfreezing a single tile:
+Single tile:
 
 ![wpf pulsingtile unfreeze a single tile](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
 
-Before unfreezing a group of tiles:
-
-![wpf pulsingtile before unfreezing a group of tiles](Getting-Started_images/wpf-pulsingtile-freezebygroupname.png)
-
-After unfreezing a group of tiles:
+Group of tiles:
 
 ![wpf pulsingtile unfreeze a group of tiles](Getting-Started_images/wpf-pulsingtile-grouping.png)
 

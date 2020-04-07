@@ -165,7 +165,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 </syncfusion:SfHubTile>
 
 <!--For setting secondary content as text use this code.-->
-<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="This is title area." Header="Mail" Foreground="White" Interval="00:00:03" SecondaryContent="Secondary content of tile">
+<syncfusion:SfHubTile x:Name="hubTile" ImageSource="/Assets/New Mail.png" Title="This is title area." Width="200" Height="200" Header="Mail" Foreground="White" Interval="00:00:03" SecondaryContent="This is the secondary content.">
 	<syncfusion:SfHubTile.HubTileTransitions>
 		<shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
@@ -176,7 +176,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 		<shared:SlideTransition/>
 	</syncfusion:SfHubTile.HubTileTransitions>
     <syncfusion:SfHubTile.SecondaryContent>
-        <TextBlock Text="This is the secondary content of the tile displayed at each transition" TextWrapping="Wrap" FontSize="15" Foreground="White"/>
+        <TextBlock Text="This is the secondary content of the tile displayed at each transition." TextWrapping="Wrap" FontSize="15" Foreground="White"/>
     </syncfusion:SfHubTile.SecondaryContent>
 </syncfusion:SfHubTile>
 </Grid>
@@ -203,7 +203,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
     hubTile.Foreground = Brushes.White;
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
     hubTile.HubTileTransitions.Add(new SlideTransition());
-    TextBlock textblock = new TextBlock() { Text = "This is the secondary content of the tile displayed at each transition", TextWrapping = TextWrapping.Wrap, FontSize = 15, Foreground = Brushes.White };
+    TextBlock textblock = new TextBlock() { Text = "This is the secondary content of the tile displayed at each transition.", TextWrapping = TextWrapping.Wrap, FontSize = 15, Foreground = Brushes.White };
     hubTile.SecondaryContent = textblock;
     hubTile.Interval = TimeSpan.FromSeconds(3.0);
   
@@ -214,7 +214,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
     hubTile.Foreground = Brushes.White; 
     hubTile.ImageSource = new BitmapImage(new Uri(@"/Assets/New Mail.png", UriKind.RelativeOrAbsolute));
     hubTile.HubTileTransitions.Add(new SlideTransition());
-    hubTile.SecondaryContent = "Secondary content of tile";
+    hubTile.SecondaryContent = "This is the secondary content.";
     hubTile.Interval = TimeSpan.FromSeconds(3.0);
 
     grid.Children.Add(hubTile);
@@ -225,7 +225,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 
 ![wpf hubtile secondarycontent as image](Getting-Started_images/wpf-hubtile-slide-transition.png)
 
-![wpf hubtile secondaryconten as control](Getting-Started_images/wpf-hubtile-secondary-control.gif)
+![wpf hubtile secondarycontent as control](Getting-Started_images/wpf-hubtile-secondary-control.gif)
 
 ## Transitions
 
@@ -506,7 +506,7 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
         <syncfusion:SfHubTile Header="{Binding Header}" Interval="{Binding Interval}" ImageSource="{Binding Imagesource,Converter={StaticResource Image}}">
         <syncfusion:SfHubTile.SecondaryContentTemplate>
             <DataTemplate>
-                <TextBlock Text="This is the secodary content of the tile displayed at each transition" TextWrapping="Wrap" FontStyle="Italic" FontSize="15" Foreground="White"/>
+                <TextBlock Text="This is the secondary content of the tile displayed at each transition." TextWrapping="Wrap" FontStyle="Italic" FontSize="15" Foreground="White"/>
             </DataTemplate>
         </syncfusion:SfHubTile.SecondaryContentTemplate>
         <syncfusion:SfHubTile.HubTileTransitions>
@@ -690,7 +690,12 @@ A single tile or a group of tiles can be freeze by using [Freeze](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
+Single tile:
+
 ![wpf hubtile freeze a single tile](Getting-Started_images/wpf-hubtile-single-tile-freezing.png)
+
+Group of tiles:
+
 ![wpf hubtile freeze a group of tiles](Getting-Started_images/wpf-hubtile-freezebygroupname.png)
 
 A single tile or a group of tiles can be unfreeze by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) method.
@@ -773,7 +778,12 @@ A single tile or a group of tiles can be unfreeze by using [UnFreeze](https://he
 {% endhighlight %}
 {% endtabs %}
 
+Single tile:
+
 ![wpf hubtile unfreeze a single tile](Getting-Started_images/wpf-hubtile-slide-transition.png)
+
+Group of tiles:
+
 ![wpf hubtile unfreeze a group of tiles](Getting-Started_images/wpf-hubtile-groupingtiles.jpg)
  
 ## Notifications
@@ -1051,7 +1061,7 @@ The secondary content of the tile can be customized by using the [SecondaryConte
             </Grid.RowDefinitions>
             <Image Source="/Assets/HubTile.png" />
             <CheckBox x:Name="checkbox" Grid.Row="1" Foreground="White" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}" Foreground="White"/>
-            <TextBlock Grid.Row="2" Text="This is the secondary content of the tile displayed at each transition" Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
+            <TextBlock Grid.Row="2" Text="This is the secondary content of the tile displayed at each transition." Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
             </StackPanel>
         </DataTemplate>
     </syncfusion:SfHubTile.SecondaryContentTemplate>
