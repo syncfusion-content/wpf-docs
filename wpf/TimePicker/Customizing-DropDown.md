@@ -53,4 +53,4 @@ sfTimePicker.ShowDropDownButton = false;
 
 ![SfTimePicker hides the drop down button](Features_images/Customizing-DropDown_img3.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/SfTimeSelector-ItemCustomization) to download the sample that showcases the DropDown customization support.
+Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/TimeSelectorItem) to download the sample that showcases the DropDown customization support.

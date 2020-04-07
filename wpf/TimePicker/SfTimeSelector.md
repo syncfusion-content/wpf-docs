@@ -189,4 +189,4 @@ sfTimePicker.SelectorItemSpacing = 50;
 
 ![SfTimeSelector item with custom spacing](Features_images/SelectorItemSpacing.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/SfTimeSelector-templates) to download the sample that showcases the `SfTimeSelector` template customization. 
+Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/TimeSelectorTemplates) to download the sample that showcases the `SfTimeSelector` template customization. 

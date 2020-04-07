@@ -239,4 +239,4 @@ private void SftimePicker_ValueChanged(DependencyObject d, DependencyPropertyCha
 {% endhighlight %}
 {% endtabs %}
 
-Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/SfTimePicker-Value-setting) to download the sample that showcases the input types and selected time with its notification supports.
+Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the input types and selected time with its notification supports.

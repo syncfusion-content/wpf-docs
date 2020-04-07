@@ -53,4 +53,4 @@ sfDatePicker.ShowDropDownButton = false;
 
 ![SfDatePicker hides the drop down button](Customizing-DropDown_images/Customizing-DropDown_img3.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/SfDateSelector-ItemCustomization) to download the sample that showcases the DropDown customization support.
+Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/DateSelectorItem) to download the sample that showcases the DropDown customization support.

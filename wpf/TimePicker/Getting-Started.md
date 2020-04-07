@@ -219,4 +219,4 @@ sfTimePicker.SetValueOnLostFocus = true;
 
 ![SfTimePicker value updated on when SfTimeSelector lost its focus](Features_images/Features_img15.gif)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/SfTimePicker-Value-setting) to download the sample that showcases the value setting support in the `SfTimePicker`.
+Click [here](https://github.com/SyncfusionExamples/wpf-time-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the value setting support in the `SfTimePicker`.

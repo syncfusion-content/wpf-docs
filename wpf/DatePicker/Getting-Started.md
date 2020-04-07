@@ -216,4 +216,4 @@ sfDatePicker.SetValueOnLostFocus = true;
 
 ![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/SfDatePicker-Value-setting) to download the sample that showcases the value setting support in the `SfDatePicker`.
+Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the value setting support in the `SfDatePicker`.
