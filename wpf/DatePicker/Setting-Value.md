@@ -130,6 +130,31 @@ sfDatePicker.SetValueOnLostFocus = true;
 
 ![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
 
+## Setting the date using editing
+
+[AllowInlineEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AllowInlineEditing.html)
+
+If we want to perform the validation after the user completly entering their date inputs, use the [AllowInlineEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AllowInlineEditing.html) property value as `true`. Then the entered date value is validated with the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~FormatString.html) property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected date will be set as defalut format value.
+
+By Default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the date format.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDatePicker Name="sfDatePicker" 
+                         AllowInlineEditing="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker= new SfDatePicker();
+sfDatePicker.AllowInlineEditing = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfDatePicker with inline date editing](Features_images/AllowInlineEditing.gif)
+
 ## Setting the Input Scope for the On-Screen Keyboard
 
 We can change the input type of the on-screen keyboard by using the [InputScope](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~InputScope.html) property. When the `InputScope` property set to `Number`, only the numeric keypad will be visible in the on-screen keyboard.
@@ -155,7 +180,6 @@ sfDatePicker.InputScope = InputScopeNameValue.Date;
 
 ![SfDatePicker with Input Scope for the On-Screen Keyboard](Features_images/Features_img14.png)
 
-
 ## Restrict selecting date limit
 
 we can restrict the user to select a date in the specific date limit by setting the value for the [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~MaxDate.html) properties. If we assign the value for the `DateTime` property lower than `MinDate`, then `MinDate` will be the selected date. If we assign the value for the `DateTime` property higher than `MaxDate`, then `MaxDate` will be the selected date.
@@ -180,7 +204,7 @@ sfDatePicker.MaxDate = new DateTime(2020, 6, 30);
 
 ![SfTimePicker with max-min date range](Features_images/Features_img16.png)
 
-Here, the users can select the year from 2019 to 2021 only. 
+Here, the users can select the year from `2019` to `2021` only. 
 
 ## Date changed notification
 

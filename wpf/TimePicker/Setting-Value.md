@@ -130,6 +130,29 @@ sfTimePicker.SetValueOnLostFocus = true;
 
 ![SfTimePicker value updated on when SfTimeSelector lost its focus](Features_images/Features_img15.gif)
 
+## Setting the time using editing
+
+If we want to perform the validation after the user completly entering their time inputs, use the [AllowInlineEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~AllowInlineEditing.html) property value as `true`. Then the entered time value is validated with the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~FormatString.html) property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as defalut format value.
+
+By Default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTimePicker Name="sfTimePicker" 
+                         AllowInlineEditing="True" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfTimePicker sfTimePicker= new SfDatePicker();
+sfTimePicker.AllowInlineEditing = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfDatePicker with inline time editing](Features_images/AllowInlineEditing.gif)
+
 ## Setting the Input Scope for the On-Screen Keyboard
 
 We can change the input type of the on-screen keyboard by using the [InputScope](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~InputScope.html) property. When the `InputScope` property set to `Number`, only the numeric keypad will be visible in the on-screen keyboard.
