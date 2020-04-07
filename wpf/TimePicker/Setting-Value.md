@@ -132,9 +132,9 @@ sfTimePicker.SetValueOnLostFocus = true;
 
 ## Setting the time using editing
 
-If we want to perform the validation after the user completly entering their time inputs, use the [AllowInlineEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~AllowInlineEditing.html) property value as `true`. Then the entered time value is validated with the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~FormatString.html) property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as defalut format value.
+If we want to perform the validation after the user completely entering their time inputs, use the [AllowInlineEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~AllowInlineEditing.html) property value as `true`. Then the entered time value is validated with the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTimePicker~FormatString.html) property value by pressing the `Enter` key or lost focus. If entered value is not suit with `FormatString` property, the selected time will be set as default format value.
 
-By Default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.
+By default, the user entering each input numbers are automatically validated with the `FormatString` formats and assigned the proper value for it, then it will move to next input part of the time format.
 
 {% tabs %}
 {% highlight xaml %}
