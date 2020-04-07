@@ -131,7 +131,7 @@ The label on the button is a text that explains its action to the end-user. Appl
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv Label="Button"/>
+<syncfusion:ButtonAdv Label="Log-in"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -140,7 +140,7 @@ The label on the button is a text that explains its action to the end-user. Appl
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Label = "Button";
+button.Label = "Log-in";
 
 {% endhighlight %}
 {% endtabs %}
@@ -164,13 +164,13 @@ When the mode is set to **Small**, the control is displayed without the label. O
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Small" Label="Hello World"/>
+<sync:ButtonAdv SizeMode="Small" Label="Log-in"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Label = "Hello World";
+button.Label = "Log-in";
 button.SizeMode = SizeMode.Small;
 
 {% endhighlight  %}
@@ -185,13 +185,13 @@ In a normal size button, a small image with the text on the side will be display
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Normal" Label="Button"/>
+<syncfusion:ButtonAdv SizeMode="Normal" Label="Log-in"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Label = "Button";
+button.Label = "Log-in";
 button.SizeMode = SizeMode.Normal;
 
 {% endhighlight %}
@@ -206,13 +206,13 @@ In a large size button, a large image along with the text at the bottom will be 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Large" Label="Button large"/>
+<syncfusion:ButtonAdv SizeMode="Large" Label="Log-in"/>
 
 {% endhighlight  %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Label = "Button large";
+button.Label = "Log-in";
 button.SizeMode = SizeMode.Large;
 
 {% endhighlight %}
@@ -234,15 +234,15 @@ The **SmallIcon** property can be set as follows:
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Small" Label="Button" SmallIcon="employee.png"/>
+<syncfusion:ButtonAdv SizeMode="Small" Label="Syncfusion" SmallIcon="syncfusion.png"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Label = "Button";
+button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Small;
-button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 {% endhighlight %}
 {% endtabs %}
@@ -254,15 +254,15 @@ The **SmallIcon** property can be set even when the SizeMode is **Normal**:
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Button"/>
+<syncfusion:ButtonAdv SizeMode="Normal" SmallIcon="syncfusion.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Label = "Button";
+button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Normal;
-button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 {% endhighlight  %}
 {% endtabs %}
@@ -276,15 +276,15 @@ The **LargeIcon** property can be set as follows:
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Button large"/>
+<sync:ButtonAdv SizeMode="Large" LargeIcon="syncfusion.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Label = "Button large";
+button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Large;
-button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 {% endhighlight %}
 {% endtabs %}
@@ -298,19 +298,35 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Button"  SmallIcon ="female.png"  />
+<syncfusion:ButtonAdv x:Name="button1" SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Syncfusion"  SmallIcon ="syncfusion.png"  />
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-button.Label = "Button";
-button.IconWidth=20;
-button.IconHeight=20;
-
+button1.Label = "Syncfusion";
+button1.IconWidth=20;
+button1.IconHeight=20;
+button1.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 {% endhighlight %}
 {% endtabs %}
 
-![Icon Size Image](Getting-Started_images/Getting-Started_img10.png)
+![Icon Size Image](Getting-Started_images/Getting-Started_img9.png)
 
-![Icon Size](Getting-Started_images/Getting-Started_img9.png)
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ButtonAdv x:Name="button2"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion"  SmallIcon ="syncfusion.png"  />
+
+{% endhighlight %}
+{% highlight c# %}
+
+ButtonAdv button1 = new ButtonAdv();
+button2.Label = "Syncfusion";
+button2.IconWidth=30;
+button2.IconHeight=30;
+button2.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
+{% endhighlight %}
+{% endtabs %}
+
+![Icon Size](Getting-Started_images/Getting-Started_img10.png)
