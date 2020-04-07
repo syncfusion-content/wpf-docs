@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Hub Tile | WPF | Syncfusion
+title: Overview | Tile | WPF | Syncfusion
 description: WPF Tile Control provides the application with live updates and notifications similar to Windows Desktop and Windows Phone.
 platform: WPF
 control: SfHubTile
@@ -22,8 +22,3 @@ The WPF hub tile and pulsing tile controls are used to create a UI similar to th
 * Freezing/Unfreezing – Support for freezing and unfreezing the tile.
 
 * Themes -  Support for customizing the tile using different themes.
-
-![SfHubTile image](Overview_images/Overview_image1.png)
-
-![SfPulsingTile image](Overview_images/Overview_image2.png)
-
