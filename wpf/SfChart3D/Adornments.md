@@ -7,7 +7,7 @@ control: SfChart3D
 documentation: ug
 ---
 
-## Adornments in WPF Chart (SfChart3D)
+# Adornments in WPF Chart (SfChart3D)
 
 Adornments are used to provide information about the data points to the user. Values from data point(x, y) or other custom properties from a data source can be displayed.You can add a shape and label to adorn each data point.
 

@@ -56,7 +56,7 @@ Then initialize an empty chart with two axes as shown below,
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
      SfChart3D Chart3D = new SfChart3D()
         {

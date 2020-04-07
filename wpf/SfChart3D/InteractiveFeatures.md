@@ -3,7 +3,7 @@ layout: post
 title: Interaction| SfChart3D | Wpf | Syncfusion
 description: Explains the interactive options such as dynamic rotation, segment selection, and dynamic segment explode for circular series in WPF Chart (SfChart3D)
 platform: wpf
-control: SfChart
+control: SfChart3D
 documentation: ug
 ---
 
@@ -76,7 +76,7 @@ The following code example can be used to set series selection in a SfChart3D.
 
         </chart:ColumnSeries3D >
     </chart:SfChart3D >
-    
+
 {% endhighlight %}
 
 The following screenshot is an example of a SfChart3D with series selection.
