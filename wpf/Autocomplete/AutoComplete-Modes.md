@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# AutoComplete mode
+# AutoComplete Modes in WPF SfAutoComplete.
 
 Suggestions can be shown in number of ways. TextBoxExt supports the following AutoComplete modes:
 

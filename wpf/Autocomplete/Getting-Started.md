@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Getting Started
+# Getting started with SfAutoComplete.
 
 ## Assembly deployment
 

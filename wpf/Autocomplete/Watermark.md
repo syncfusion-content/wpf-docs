@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Watermark | SfTextBoxExt | wpf | Syncfusion
-description: watermark
+description: This section provides details about AutoComplete WaterMark & WaterMark templates.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Watermark
+# WaterMark in WPF SfAutocomplete.
 
 The control will prompt the user with some information, when it is not in focus and contains an empty string.
 

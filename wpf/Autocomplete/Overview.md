@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Overview
+# WPF SfTextBoxExt (SfAutoComplete) Overview.
 
 TextBoxExt is an extended version of the TextBox control. Most of the functionality of TextBoxExt is inherited from the [SfTextBox](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.textbox) class.
 
