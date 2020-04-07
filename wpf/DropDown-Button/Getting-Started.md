@@ -22,7 +22,7 @@ Control Structure
 
 Refer [DropDownButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#dropdownbuttonadv) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) needs to be added as reference to use the DropDownButtonAdv control in any application.
 
-## Creating simple application with DropDownButton
+## Creating simple application with Dropdown Button
 
 In this walk through, will create WPF application that contains Dropdown Button control. By the following ways, one can add the controls:
 
@@ -223,14 +223,14 @@ The **SmallIcon** property can be set as follows:
 
 {% tabs %}
 {% highlight xaml %} 
-<syncfusion:DropDownButtonAdv SizeMode="Small" Label="Syncfusion" SmallIcon="employee.png"/> 
+<syncfusion:DropDownButtonAdv SizeMode="Small" Label="Syncfusion" SmallIcon="syncfusion.png"/> 
 {% endhighlight %} 
 
 {% highlight c# %}  
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Small;
-button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 {% endhighlight %} 
 {% endtabs %}
@@ -242,7 +242,7 @@ The **SmallIcon** property can be set even when the sizeMode is **Normal**:
 {% tabs %}
 {% highlight xaml %} 
 
-<syncfusion:DropDownButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Syncfusion"/>
+<syncfusion:DropDownButtonAdv SizeMode="Normal" SmallIcon="syncfusion.png" Label="Syncfusion"/>
 
  {% endhighlight %} 
 
@@ -250,7 +250,7 @@ The **SmallIcon** property can be set even when the sizeMode is **Normal**:
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Normal;
-button.SmallIcon = new BitmapImage(new Uri(".png")); 
+button.SmallIcon = new BitmapImage(new Uri("syncfusion.png")); 
 {% endhighlight %} 
 {% endtabs %}
 
@@ -262,14 +262,14 @@ The **LargeIcon** property can be set as follows:
 
 {% tabs %}
 {% highlight xaml %} 
-<syncfusion:DropDownButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Syncfusion"/> 
+<syncfusion:DropDownButtonAdv SizeMode="Large" LargeIcon="syncfusion.png" Label="Syncfusion"/> 
 {% endhighlight %} 
 
 {% highlight c# %} 
 DropDownButtonAdv button = new DropDownButtonAdv();
 button.Label = "Syncfusion";
 button.SizeMode = SizeMode.Large;
-button.LargeIcon = new BitmapImage(new Uri("syncfusion logo.png")); 
+button.LargeIcon = new BitmapImage(new Uri("syncfusion.png")); 
 {% endhighlight %}
 {% endtabs %}
 
@@ -283,47 +283,65 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:DropDownButtonAdv SizeMode="Normal" IconHeight="20" IconWidth="20" Label="Syncfusion" SmallIcon ="syncfusion logo.png"  />
+<syncfusion:DropDownButtonAdv x:Name="button1" SizeMode="Normal" IconHeight="20" IconWidth="20" Label="Syncfusion" SmallIcon ="syncfusion.png"  />
 
 {% endhighlight %}
 {% highlight c# %}
 
-DropDownButtonAdv button = new DropDownButtonAdv();
-button.Label = "Syncfusion";
-button.IconWidth=20;
-button.IconHeight=20;
-button.LargeIcon = new BitmapImage(new Uri("syncfusion logo.png"));
+DropDownButtonAdv button1 = new DropDownButtonAdv();
+button1.Label = "Syncfusion";
+button1.IconWidth=20;
+button1.IconHeight=20;
+button1.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 {% endhighlight %}
 {% endtabs %}
 
 ![Icon Size Image](Getting-Started_images/Getting-Started_img10.png)
 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DropDownButtonAdv x:Name="button2"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion"  SmallIcon ="syncfusion.png"  />
+
+{% endhighlight %}
+{% highlight c# %}
+
+DropDownButtonAdv button1 = new DropDownButtonAdv();
+button2.Label = "Syncfusion";
+button2.IconWidth=30;
+button2.IconHeight=30;
+button2.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
+{% endhighlight %}
+{% endtabs %}
+
+
 ![Icon Size](Getting-Started_images/Getting-Started_img9.png)
 
-## Adding items to DropDownButtonAdv
+## Adding items to Dropdown Button
 
 The DropDownMenuGroup acts as a container for the DropDownButtonAdv control. It provides options to add menu items and also options like header name, resizing and scrollbar.
 
 {% tabs %}
 {% highlight xaml %} 
-<shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="Letter.png">
-<shared:DropDownMenuGroup>      
-<shared:DropDownMenuItem Header="Menu Item 1"/>      
-<shared:DropDownMenuItem Header="Menu Item 2"/>    
-<shared:DropDownMenuItem Header="Menu Item 3"/> 
-</shared:DropDownMenuGroup>
-</shared:DropDownButtonAdv>
+<syncfusion:DropDownButtonAdv Label="WordArt" x:Name="button" SizeMode="Normal">
+<syncfusion:DropDownMenuGroup>
+<syncfusion:DropDownMenuItem Header="Item 1"/>      
+<syncfusion:DropDownMenuItem Header="Item 2"/>    
+<syncfusion:DropDownMenuItem Header="Item 3"/> 
+</syncfusion:DropDownMenuGroup>
+</syncfusion:DropDownButtonAdv>
 {% endhighlight %} 
 
 {% highlight c# %} 
 DropDownButtonAdv button = new DropDownButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem menuItem1 = new DropDownMenuItem();
-DropDownMenuItem menuItem2 = new DropDownMenuItem();
-DropDownMenuItem menuItem3 = new DropDownMenuItem();
-menu.Items.Add(menuItem1);
-menu.Items.Add(menuItem2);
-menu.Items.Add(menuItem3);
+DropDownMenuItem Item1 = new DropDownMenuItem{ Header="Item 1" };
+DropDownMenuItem Item2 = new DropDownMenuItem{ Header ="Item 2" };
+DropDownMenuItem Item3 = new DropDownMenuItem{ Header ="Item 3" };
+menu.Items.Add(Item 1);
+menu.Items.Add(Item 2);
+menu.Items.Add(Item 3);
+button.Label="WordArt";
 button.Content = menu; 
 {% endhighlight %}
 {% endtabs %}

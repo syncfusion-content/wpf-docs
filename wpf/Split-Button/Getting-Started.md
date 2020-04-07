@@ -99,7 +99,7 @@ In order to add control manually in C#, do the below steps.
          xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
          mc:Ignorable="d"
          Title="MainWindow" Height="450" Width="800">
-        <Grid Root>
+        <Grid x:Name="Root">
         </Grid>
 </Window>
 
@@ -116,7 +116,7 @@ namespace ButtonSample
             SplitButtonAdv splitButtonAdv = new SplitButtonAdv();
             splitButtonAdv.Height=44;
             splitButtonAdv.Width=31;
-            Root.Childran.Add(splitButtonAdv);
+            Root.Children.Add(splitButtonAdv);
         }
     }
 }
@@ -131,14 +131,14 @@ The label on the button is a text that explains its action to the end-user. Appl
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv Label="Split Button"/>
+<syncfusion:SplitButtonAdv Label="Colors"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-button.Label = "Split Button";
+button.Label = "Colors";
 
 {% endhighlight %}
 {% endtabs %}
@@ -163,14 +163,14 @@ When the mode is set to **Small**, the control is displayed without the label. O
 
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Small" Label="Split Button"/>
+<syncfusion:SplitButtonAdv SizeMode="Small" Label="Colors"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-button.Label = "Split Button";
+button.Label = "Colors";
 button.SizeMode = SizeMode.Small;
 
 {% endhighlight %}
@@ -187,14 +187,14 @@ In a normal size button, a small image with the text on the side will be display
 
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Normal" Label="Split Button"/>
+<syncfusion:SplitButtonAdv SizeMode="Normal" Label="Colors"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-button.Label = "Split Button";
+button.Label = "Colors";
 button.SizeMode = SizeMode.Normal;
 
 {% endhighlight %}
@@ -208,13 +208,13 @@ In a large size button, a large image along with the text at the bottom will be 
 
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv SizeMode="Large" Label="Split Button Large"/>
+<syncfusion:SplitButtonAdv SizeMode="Large" Label="Colors"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
-button.Label = "Split Button Large";
+button.Label = "Colors";
 button.SizeMode = SizeMode.Large;
 
 {% endhighlight %}
@@ -261,7 +261,7 @@ The **SmallIcon** property can be set even when the sizeMode is **Normal**:
 
 {% highlight xaml %}
 
-<sync:SplitButtonAdv SizeMode="Normal" SmallIcon="Syncfusion  logo.png" Label="Syncfusion"/>
+<sync:SplitButtonAdv SizeMode="Normal" SmallIcon="Syncfusion logo.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 
@@ -316,33 +316,49 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% endhighlight %}
 {% highlight c# %}
 
-SplitButtonAdv button = new SplitButtonAdv();
-button.Label = "Syncfusion";
-button.IconWidth=20;
-button.IconHeight=20;
-
+SplitButtonAdv button1 = new SplitButtonAdv();
+button1.Label = "Syncfusion";
+button1.IconWidth=20;
+button1.IconHeight=20;
+button1.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 {% endhighlight %}
 {% endtabs %}
 
 ![Icon Size Image](Getting-Started_images/Getting-Started_img10.png)
 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SplitButtonAdv x:Name="button2"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion"  SmallIcon ="syncfusion.png"  />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SplitButtonAdv button1 = new SplitButtonAdv();
+button2.Label = "Syncfusion";
+button2.IconWidth=30;
+button2.IconHeight=30;
+button2.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
+{% endhighlight %}
+{% endtabs %}
+
 ![Icon Size](Getting-Started_images/Getting-Started_img9.png)
 
-## Adding items to SplitButtonAdv
+## Adding items to Split Button
 
-The DropDownMenuGroup acts as a container for the DropDownButtonAdv control. It provides options to add menu items and also options like header name, resizing and scrollbar.
+The DropDownMenuGroup acts as a container for the Split Button control. It provides options to add menu items and also options like header name, resizing and scrollbar.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="Letter.png">
-<shared:DropDownMenuGroup>
-<shared:DropDownMenuItem Header="Menu Item 1"/>
-<shared:DropDownMenuItem Header="Menu Item 2"/>
-<shared:DropDownMenuItem Header="Menu Item 3"/>
-</shared:DropDownMenuGroup>
-</shared:SplitButtonAdv>
+<syncfusion:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="Letter.png">
+<syncfusion:DropDownMenuGroup>
+<syncfusion:DropDownMenuItem Header="Item 1"/>
+<syncfusion:DropDownMenuItem Header="Item 2"/>
+<syncfusion:DropDownMenuItem Header="Item 3"/>
+</syncfusion:DropDownMenuGroup>
+</syncfusion:SplitButtonAdv>
 
 {% endhighlight %}
 
@@ -350,13 +366,13 @@ The DropDownMenuGroup acts as a container for the DropDownButtonAdv control. It 
 
 SplitButtonAdv button = new SplitButtonAdv();
 DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem menuItem1 = new DropDownMenuItem();
-DropDownMenuItem menuItem2 = new DropDownMenuItem();
-DropDownMenuItem menuItem3 = new DropDownMenuItem();
-menu.Items.Add(menuItem1);
-menu.Items.Add(menuItem2);
-menu.Items.Add(menuItem3);
-button.Content = menuItem1;
+DropDownMenuItem Item1 = new DropDownMenuItem{ Header="Item 1" };
+DropDownMenuItem Item2 = new DropDownMenuItem{ Header ="Item 2" };
+DropDownMenuItem Item3 = new DropDownMenuItem{ Header ="Item 3" };
+menu.Items.Add(Item1);
+menu.Items.Add(Item2);
+menu.Items.Add(Item3);
+button.Content = menu;
 
 {% endhighlight %}
 
