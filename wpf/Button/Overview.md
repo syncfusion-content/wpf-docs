@@ -26,9 +26,3 @@ The Button (or ButtonAdv) is a basic button control with image options and multi
 * **Localization** - Provides support to customize the text in the user interface based on the local culture.
 
 * **Right-to-left (RTL)** - The text direction and layout of the control can be displayed in the right-to-left direction.
-
-![Overview image](Overview_images/Overview_img1.png)
-
-
-
-
