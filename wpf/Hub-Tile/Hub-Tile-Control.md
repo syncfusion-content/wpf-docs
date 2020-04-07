@@ -129,7 +129,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 </Grid>
 
 {% endhighlight %}
-{% highlight C# % }
+{% highlight C# %}
 
     //Setting image for hub tile
     SfHubTile hubTile = new SfHubTile();
@@ -301,7 +301,7 @@ N> **Syncfusion.SfShared.Wpf** assembly should be included in XAML or import **u
 Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTransitionCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.SfHubTile~HubTileTransitionCompleted_EV.html) event rises on each transition completion. Below example demonstrates the working of the event in the Hub Tile.
 
 {% tabs %}
-{% highlight XAML%}
+{% highlight XAML %}
 <syncfusion:SfHubTile x:Name="hubTile" Header="Mail" Foreground="White" Title="This is title area." ImageSource="/Assets/New mail.png" Interval="00:00:03" >
 	<syncfusion:SfHubTile.HubTileTransitions>
 	    <shared:SlideTransition/>
@@ -315,8 +315,8 @@ Hub Tile transitions occurs repeatedly at each specified interval. [HubTileTrans
         </i:EventTrigger>
     </i:Interaction.Triggers>
 </syncfusion:SfHubTile>
-{% endhighlight%}
-{% highlight C#%}
+{% endhighlight %}
+{% highlight C# %}
       
 	public class HubTileTransitionCompleted : TargetedTriggerAction<SfHubTile>
     {
@@ -432,7 +432,7 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
 2. Create a Model class and specify the elements of the Hub Tile. 
 
 {% tabs %}
-{% highlight C#%}
+{% highlight C# %}
     
     public class Model
     {
@@ -480,7 +480,7 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
 4. In XAML bind the collection to the ListView control and use ItemTemplate to populate Hub Tile control into it.
 
 {% tabs %}
-{% highlight XAML%}
+{% highlight XAML %}
 <Window x:Class="HubTileGrouping_Sample.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -783,7 +783,7 @@ Once the tile is pressed, it is notified by the click event and the command prop
 The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
 
 {% tabs %}
-{% highlight XAML%} 
+{% highlight XAML %} 
 <syncfusion:SfHubTile x:Name="hubTile" Interval="00:00:03"  Header="Mail" Foreground="White" Title="This is title area." ImageSource="/Assets/New Mail.png">
 	<i:Interaction.Triggers>
         <i:EventTrigger EventName="Click">
@@ -928,7 +928,7 @@ N> The tile press animation occurs only if the [OverrideDefualtStates](https://h
 Header of the tile can be customized by setting the properties such as [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) and [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html). [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) is used to customize the header of the tile by setting its appropriate properties. [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) is used to customize the visual appearance of header by adding user-defined template.
 
 {% tabs %}
-{% highlight XAML%}
+{% highlight XAML %}
 <syncfusion:SfHubTile x:Name="hubtile" ImageSource="/Assets/New Mail.png"  Title="This is title area." Foreground="White" Header="Mail">
 
     <!--For setting header style-->

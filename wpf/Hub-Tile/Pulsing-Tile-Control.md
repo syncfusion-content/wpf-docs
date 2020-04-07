@@ -128,7 +128,7 @@ The image can be set to the tile by setting image path to the [ImageSource](http
 <syncfusion:SfPulsingTile x:Name="pulsingtile" ImageSource="/Assets/PulsingTile.jpg"/>
 </Grid>
 {% endhighlight %}
-{% highlight C# % }
+{% highlight C# %}
 
     //Setting image for Pulsing Tile
     SfPulsingTile pulsingTile = new SfPulsingTile();
@@ -610,7 +610,7 @@ Once the tile is pressed, it is notified by the click event and the command prop
 The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Click_EV.html) event rises whenever the tile is pressed.
 
 {% tabs %}
-{% highlight XAML%} 
+{% highlight XAML %} 
 <syncfusion:SfPulsingTile Header="Music" Foreground="White" Title="This is title area." PulseScale="3" PulseDuration="00:00:03" >
     <Image Source="/Assets/PulsingTile.jpg"/>
     <i:Interaction.Triggers>
@@ -642,7 +642,7 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusi
 Command specifies the operation to be performed when the tile is pressed. [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~Command.html) and [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~CommandParameter.html) are used instead of click event in MVVM pattern.
 
 {% tabs %}
-{% highlight XAML%} 
+{% highlight XAML %} 
 <Window x:Class="Pulsingtile.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -748,7 +748,7 @@ N> The tile press animation occurs only if the [OverrideDefualtStates](https://h
 Header of the tile can be customized by setting the properties such as [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) and [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) as below. [HeaderStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderStyle.html) is used to customize the header of the tile by setting its appropriate properties. [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfShared.Wpf~Syncfusion.Windows.Primitives.HeaderedContentControl~HeaderTemplate.html) is used to customize the visual appearance of the header by adding user-defined template.
 
 {% tabs %}
-{% highlight XAML%}
+{% highlight XAML %}
 <syncfusion:SfPulsingTile x:Name="pulsingtile" Foreground="White" Title="This is title area." Header="Music">
 <Image Source="/Assets/PulsingTile.jpg" Margin="-1"/>
 
