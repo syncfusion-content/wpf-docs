@@ -14,7 +14,7 @@ documentation: ug
 * [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~PrimaryAxis.html) – Gets or sets the horizontal x axis for the chart.
 * [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~SecondaryAxis.html) – Gets or sets the vertical y axis for the chart.
 
-Additionaly, SfChart3D have horizontal (z) Axis called Depth Axis.
+Additionally, SfChart3D have horizontal (z) Axis called Depth Axis.
 
 * [`DepthAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~DepthAxis.html#) - Gets or sets the horizontal z axis for the chart.
 

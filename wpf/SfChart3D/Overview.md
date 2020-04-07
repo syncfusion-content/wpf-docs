@@ -11,7 +11,7 @@ documentation: ug
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 
-![3D support in WPF Chart](3D-Charts_images/Charts-3D.png)
+![WPF Chart support SfChart3D](3D-Charts_images/Charts-3D.png)
 
 
 ## Key features
