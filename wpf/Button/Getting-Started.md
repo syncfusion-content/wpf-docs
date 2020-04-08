@@ -5,7 +5,7 @@ description: Learn how to add WPF Button (ButtonAdv) control and its basic featu
 platform: wpf
 control: ButtonAdv
 documentation: ug
-----
+---
 
 # Getting Started with Button
 
