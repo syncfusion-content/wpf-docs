@@ -30,7 +30,7 @@ Hub Tile and Pulsing Tile controls can be added to the application by dragging S
 {% tabs %}
 {% highlight XAML %}
 <!--For Hub Tile-->
-<syncfusion:SfHubTile Content="SfHubTile" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+<syncfusion:SfHubTile HorizontalAlignment="Left" VerticalAlignment="Top"/>
 <!--For Pulsing Tile-->
 <syncfusion:SfPulsingTile Content="SfPulsingTile" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 {% endhighlight %}
