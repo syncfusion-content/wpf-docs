@@ -13,6 +13,9 @@ ChartSeries is the visual representation of the data. SfChart3D offers eight typ
 
 * Column
 * Bar
+* Line
+* Scatter
+* Area
 * Stacking column 
 * Stacking column 100 
 * Stacking bar
@@ -39,7 +42,7 @@ The following code example illustrates how to use ColumnSeries3D:
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D Interior="LightGreen" ItemsSource="{Binding CategoricalData}"  
+        <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}"  
             XBindingPath="Year" YBindingPath="Metal"></chart:ColumnSeries3D>
 
 {% endhighlight %}
@@ -92,6 +95,80 @@ chart3D.Series.Add(series);
 {% endtabs %}
 
 ![Bar Charts support in WPF 3D Chart](3D-Charts_images/Bar3D.png)
+
+### Spacing
+
+[`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) property of series is used to decide the width of a segment. [`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) value ranges from 0 to 1. The following code illustrates how to set [`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) property of the series,
+
+% tabs %}
+
+{% highlight xaml %}
+
+        <chart:ColumnSeries3D chart:ChartSeriesBase.Spacing="0.6" ItemsSource="{Binding CategoricalData}"  
+            XBindingPath="Year" YBindingPath="Plastic"></chart:ColumnSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   ColumnSeries3D series = new ColumnSeries3D()
+        {
+            ItemsSource = new CategoryDataViewModel().CategoricalData,
+            XBindingPath = "Year",
+            YBindingPath = "Plastic"
+        };
+        ChartSeriesBase.SetSpacing(series, 0.6);
+
+chart3D.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Spacing support in WPF 3D Chart](3D-Charts_images/Column_Spacing.png)
+
+**SegmentSpacing**
+
+[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property in series,
+
+% tabs %}
+
+{% highlight xaml %}
+
+        <chart:ColumnSeries3D SegmentSpacing="0.6" ItemsSource="{Binding CategoricalData}"  
+            XBindingPath="Year" YBindingPath="Plastic"></chart:ColumnSeries3D>
+        <chart:ColumnSeries3D SegmentSpacing="0.6" ItemsSource="{Binding CategoricalData}"  
+            XBindingPath="Year" YBindingPath="Iron"></chart:ColumnSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+   ColumnSeries3D series = new ColumnSeries3D()
+        {
+            ItemsSource = new CategoryDataViewModel().CategoricalData,
+            XBindingPath = "Year",
+            YBindingPath = "Plastic"
+            SegmentSpacing = 0.6,
+        };
+
+    ColumnSeries3D series1 = new ColumnSeries3D()
+        {
+            ItemsSource = new CategoryDataViewModel().CategoricalData,
+            XBindingPath = "Year",
+            YBindingPath = "Iron"
+            SegmentSpacing = 0.6,
+        };
+       
+    chart3D.Series.Add(series);
+    chart3D.Series.Add(series1);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Spacing support in WPF 3D Chart](3D-Charts_images/Column_SegmentSpacing.png)
 
 ## Line Charts
 Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries3D.html#) using given data.
@@ -451,9 +528,20 @@ The DoughnutSeries3D can be added to chart as in below code example:
 
 ![Doughnut support in WPF 3D Chart](3D-Charts_images/Doughnut3D.png)
 
+### Coefficient
+
+The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries3D~DoughnutCoefficient.html#)  and [`CircleCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~CircleCoefficient.html) property to define the inner circle of Doughnut and Pie Charts.
+
+
+**Doughnut Chart**
+![Doughnut support in WPF 3D Chart](3D-Charts_images/Doughnut_Co.png)
+
+
 ## Dynamic explode
 
 This feature allows users to explode a particular segment in a circular series using [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.PieSeries3D~ExplodeOnMouseClick.html). This can also be achieved by setting the [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeIndex.html) or [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeAll.html) property. 
+
+
 
 The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
 

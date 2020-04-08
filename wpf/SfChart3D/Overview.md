@@ -17,11 +17,8 @@ documentation: ug
 ## Key features
 
 * SfChart3D supports eight types of chart [`Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~Series.html).Each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.
-* Perspective view.
 * Allows you to map the data from the specified path, by achieving, Data binding concept.
 * Animations allows to animate the chart series on loading, and whenever the ItemsSource changes.
-* Empty point support.
-* Dynamic update.
 * Dynamic rotation allows to view the best possible view of data dynamically using a mouse or touch device.
 * Selection support allows to select Segment and series programmatically or user interaction.
 
