@@ -37,7 +37,7 @@ this.MultiColumnDropDown.SelectionMode = DropDownSelectionMode.Single;
 
 ## Multi-Selection
 
-You can select multiple rows at same time by setting [SelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectionModeProperty.html) as Multiple. Further, you can select multiple rows in the following ways
+You can select multiple rows at same time by setting [SelectionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl~SelectionModeProperty.html) as `Multiple`. Further, you can select multiple rows in the following ways
 
 1. By clicking on the respective rows.
 2. By dragging mouse on the dropdown grid.
