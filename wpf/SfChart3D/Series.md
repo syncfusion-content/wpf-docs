@@ -93,6 +93,102 @@ chart3D.Series.Add(series);
 
 ![Bar Charts support in WPF 3D Chart](3D-Charts_images/Bar3D.png)
 
+## Line Charts
+Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries3D.html#) using given data.
+
+% tabs %}
+
+{% highlight xaml %}
+
+        <chart:LineSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
+            YBindingPath="Plastic"></chart:LineSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        LineSeries3D line = new LineSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Plastic"
+            };
+
+chart3D.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Column Charts support in WPF 3D Chart](3D-Charts_images/LineSeries3D.png)
+
+### Scatter Chart
+
+[`ScatterSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html#) is similar to bubble series when each point being represented by an ellipse with equal size. 
+
+This size can be defined by using below properties.
+
+* [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html#) 
+* [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html#) properties.
+
+% tabs %}
+
+{% highlight xaml %}
+
+     <chart:ScatterSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+         YBindingPath="Plastic"></chart:ScatterSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+        ScatterSeries3D series = new ScatterSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Plastic"
+            };
+
+        chart3D.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Scatter chart support in WPF 3D Chart](3D-Charts_images/ScatterSeries3D.png)
+
+## Area Chart
+[`AreaSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AreaSeries3D.html#) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
+
+% tabs %}
+
+{% highlight xaml %}
+
+        <chart:AreaSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
+            YBindingPath="Plastic"></chart:AreaSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+        AreaSeries3D series = new AreaSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Plastic"
+            };
+
+        chart3D.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Scatter chart support in WPF 3D Chart](3D-Charts_images/AreaSeries3D.png)
+
+
 ## Stacking Charts
 
 ### Stacking Column
