@@ -53,7 +53,7 @@ In order to add the control manually in XAML, follow the below steps.
 
     * Syncfusion.Shared.WPF
 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the control namespace `Syncfusion.Windows.Tools.Controls` in XAML page.
 
 3. Declare SplitButtonAdv control in XAML page.
 
@@ -71,6 +71,7 @@ In order to add the control manually in XAML, follow the below steps.
         <syncfusion:SplitButtonAdv Height="44"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="162"/>
     </Grid>
 </Window>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,10 +83,9 @@ In order to add control manually in C#, do the below steps.
 
     * Syncfusion.Shared.WPF
 
-2. Import the **Syncfusion.Windows.Tools.Controls** namespace.
+2. Import the `Syncfusion.Windows.Tools.Controls` namespace.
 
 3. Create ButtonAdv control instance and add it to the window.
-
 
 {% tabs %}
 {% highlight xaml %}
@@ -96,12 +96,14 @@ In order to add control manually in C#, do the below steps.
          xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
          mc:Ignorable="d"
          Title="MainWindow" Height="450" Width="800">
-        <Grid x:Name="Root">
-        </Grid>
+    <Grid x:Name="Root">
+
+    </Grid>
 </Window>
 
 {% endhighlight %}
 {% highlight c# %}
+
 using Syncfusion.Windows.Tools.Controls;
 namespace ButtonSample
 {
@@ -131,7 +133,6 @@ The label on the button is a text that explains its action to the end-user. Appl
 <syncfusion:SplitButtonAdv Label="Colors"/>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
@@ -157,13 +158,11 @@ The **SizeMode** is an enumeration which contains the following values:
 When the mode is set to **Small**, the control is displayed without the label. Only icon will be present in it.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <syncfusion:SplitButtonAdv SizeMode="Small" Label="Colors"/>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
@@ -181,13 +180,11 @@ button.SizeMode = SizeMode.Small;
 In a normal size button, a small image with the text on the side will be displayed.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <syncfusion:SplitButtonAdv SizeMode="Normal" Label="Colors"/>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
@@ -202,7 +199,6 @@ button.SizeMode = SizeMode.Normal;
 In a large size button, a large image along with the text at the bottom will be displayed.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <syncfusion:SplitButtonAdv SizeMode="Large" Label="Colors"/>
@@ -215,7 +211,6 @@ button.Label = "Colors";
 button.SizeMode = SizeMode.Large;
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Size-Mode-Large](Getting-Started_images/Getting-Started_img5.png)
@@ -230,13 +225,11 @@ The image option helps to provide pictorial representation of the button. Image 
 The **SmallIcon** property can be set as follows:
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <syncfusion:SplitButtonAdv SizeMode="Small" Label="Syncfusion" SmallIcon="syncfusion logo.png"/>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
@@ -245,7 +238,6 @@ button.SizeMode = SizeMode.Small;
 button.SmallIcon = new BitmapImage(new Uri("syncfusion logo.png"));
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Small Image](Getting-Started_images/Getting-Started_img6.png)
@@ -253,14 +245,11 @@ button.SmallIcon = new BitmapImage(new Uri("syncfusion logo.png"));
 The **SmallIcon** property can be set even when the sizeMode is **Normal**.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<sync:SplitButtonAdv SizeMode="Normal" SmallIcon="Syncfusion logo.png" Label="Syncfusion"/>
+<syncfusion:SplitButtonAdv SizeMode="Normal" SmallIcon="Syncfusion logo.png" Label="Syncfusion"/>
 
 {% endhighlight %}
-
-
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
@@ -269,7 +258,6 @@ button.SizeMode = SizeMode.Normal;
 button.SmallIcon = new BitmapImage(new Uri("syncfusion logo.png"));
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Small Image](Getting-Started_images/Getting-Started_img7.png)
@@ -277,13 +265,11 @@ button.SmallIcon = new BitmapImage(new Uri("syncfusion logo.png"));
 The **LargeIcon** property can be set as follows:
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<sync:SplitButtonAdv SizeMode="Large" LargeIcon="Syncfusion logo.png" Label="Syncfusion"/>
+<syncfusion:SplitButtonAdv SizeMode="Large" LargeIcon="Syncfusion logo.png" Label="Syncfusion"/>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
@@ -292,7 +278,6 @@ button.SizeMode = SizeMode.Large;
 button.LargeIcon = new BitmapImage(new Uri("syncfusion logo.png"));
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Large Image](Getting-Started_images/Getting-Started_img8.png)
@@ -342,19 +327,17 @@ button2.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 The DropDownMenuGroup acts as a container for the Split Button control. It provides options to add menu items and also options like header name, re-sizing and scrollbar.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <syncfusion:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="Letter.png">
-<syncfusion:DropDownMenuGroup>
-<syncfusion:DropDownMenuItem Header="Item 1"/>
-<syncfusion:DropDownMenuItem Header="Item 2"/>
-<syncfusion:DropDownMenuItem Header="Item 3"/>
-</syncfusion:DropDownMenuGroup>
+    <syncfusion:DropDownMenuGroup>
+        <syncfusion:DropDownMenuItem Header="Item 1"/>
+        <syncfusion:DropDownMenuItem Header="Item 2"/>
+        <syncfusion:DropDownMenuItem Header="Item 3"/>
+    </syncfusion:DropDownMenuGroup>
 </syncfusion:SplitButtonAdv>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
@@ -368,7 +351,6 @@ menu.Items.Add(Item3);
 button.Content = menu;
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ![Drop-Down-item](Getting-Started_images/Getting-Started_img11.png)
