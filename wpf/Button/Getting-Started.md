@@ -5,7 +5,7 @@ description: Learn how to add WPF Button (ButtonAdv) control and its basic featu
 platform: wpf
 control: ButtonAdv
 documentation: ug
-----
+---
 
 # Getting Started with Button
 
@@ -14,9 +14,6 @@ This section provides an overview of how to work with Button control. It describ
 ## Control structure
 
 ![Getting Started](Getting-Started_images/Getting-Started_img1.png)
-
-Control Structure
-{:.caption}
 
 ## Assembly deployment
 
@@ -134,9 +131,7 @@ The label on the button is a text that explains its action to the end-user. Appl
 <syncfusion:ButtonAdv Label="Log-in"/>
 
 {% endhighlight %}
-{% endtabs %}
 
-{% tabs %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
@@ -227,8 +222,6 @@ The image option helps to provide pictorial representation of the button. Image 
 **SmallIcon** — This property will be used to set the image when size mode is **Normal** or **Small**.
 **LargeIcon** — This property will be used to set the image when size mode is **Large**.
 
-### Setting small icon
-
 The **SmallIcon** property can be set as follows:
 
 {% tabs %}
@@ -249,7 +242,7 @@ button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 ![Setting Image](Getting-Started_images/Getting-Started_img6.png)
 
-The **SmallIcon** property can be set even when the SizeMode is **Normal**:
+The **SmallIcon** property can be set even when the SizeMode is **Normal**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -268,8 +261,6 @@ button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 {% endtabs %}
 
 ![Normal-Image](Getting-Started_images/Getting-Started_img7.png)
-
-### Setting large icon
 
 The **LargeIcon** property can be set as follows:
 
@@ -293,7 +284,7 @@ button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 ## Setting icon width and height
 
-Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IconWidth.html) and [IconHeight] (https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IconHeight.html) properties respectively.
+Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IconWidth.html) and [IconHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IconHeight.html) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}

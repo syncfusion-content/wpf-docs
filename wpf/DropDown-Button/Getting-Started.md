@@ -15,9 +15,6 @@ This section provides an overview of how to work with Dropdown Button control. I
 
 ![Control Structure](Getting-Started_images/Getting-Started_img1.png)
 
-Control Structure
-{:.caption}
-
 ## Assembly deployment
 
 Refer [DropDownButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#dropdownbuttonadv) control dependencies section to get the list of assemblies or [NuGet package](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) needs to be added as reference to use the DropDownButtonAdv control in any application.
@@ -215,8 +212,6 @@ The image option helps to provide pictorial representation of the button. Image 
 **SmallIcon** — This property will be used to set the image when size mode is **Normal** or **Small**.
 **LargeIcon** — This property will be used to set the image when size mode is **Large**.
 
-### Setting Small icon
-
 The **SmallIcon** property can be set as follows:
 
 {% tabs %}
@@ -235,7 +230,7 @@ button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 ![Small Image](Getting-Started_images/Getting-Started_img6.png)
 
-The **SmallIcon** property can be set even when the sizeMode is **Normal**:
+The **SmallIcon** property can be set even when the sizeMode is **Normal**.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -253,8 +248,6 @@ button.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 {% endtabs %}
 
 ![Normal-Image](Getting-Started_images/Getting-Started_img7.png)
-
-### Setting large icon
 
 The **LargeIcon** property can be set as follows:
 
@@ -276,7 +269,7 @@ button.LargeIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 ## Setting icon width and height
 
-Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IconWidth.html) and [IconHeight] (https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IconHeight.html) properties respectively.
+Icon width and icon height can be set using [IconWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IconWidth.html) and [IconHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IconHeight.html) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -317,7 +310,7 @@ button2.SmallIcon = new BitmapImage(new Uri("syncfusion.png"));
 
 ## Adding items to Dropdown Button
 
-The DropDownMenuGroup acts as a container for the DropDownButtonAdv control. It provides options to add menu items and also options like header name, resizing and scrollbar.
+The DropDownMenuGroup acts as a container for the Dropdown Button control. It provides options to add menu items and also options like header name, re-sizing and scrollbar.
 
 {% tabs %}
 {% highlight xaml %} 

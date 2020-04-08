@@ -31,7 +31,5 @@ The WPF dropdown button (or DropDownButtonAdv) provides advanced menu-like appea
 
 * **Right-to-left (RTL)** - The text direction and layout of the control can be displayed in the right-to-left direction.
 
-* **Custom items** - Provides support to add custom items to Dropdown menu group.
-
-![DropDownButtonAdv-Overview](Overview_images/Overview_img1.png)
+* **Custom Items** - Provides support to add custom items to dropdown menu group.
 

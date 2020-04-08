@@ -31,9 +31,7 @@ The split button is a combination of a button and a menu control. The button its
 
 * **Right-to-left (RTL)** - The text direction and layout of the control can be displayed in the right-to-left direction.
 
-* **Custom items** - Provides support to add custom items to Dropdown menu group.
-
-![SplitButton - Overview](Overview_images/Overview_img1.png)
+* **Custom Items** - Provides support to add custom items to dropdown menu group.
 
 
 
