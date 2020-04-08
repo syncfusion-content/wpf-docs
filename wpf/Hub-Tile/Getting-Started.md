@@ -54,20 +54,20 @@ In order to add control manually in XAML, follow the below steps:
 
 {% tabs %}
 {% highlight XAML %}
-<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
-        x:Class="WpfApplication1.MainWindow"
-        Title="MainWindow" Height="350" Width="525">
-	<Grid>
-		
-		<!--Hub Tile-->
-    	<syncfusion:SfHubTile Content="This is a Hub Tile"/>
-		
-		<!--PulsingTile-->
-		<syncfusion:SfPulsingTile Content="This is a Pulsing Tile"/>
-   </Grid>
-</Window>
+
+	<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+			x:Class="WpfApplication1.MainWindow"
+			Title="MainWindow" Height="350" Width="525">
+		<Grid>
+		  <!--Hub Tile-->
+		  <syncfusion:SfHubTile Content="This is a Hub Tile"/>
+		  <!--Pulsing Tile-->
+		  <syncfusion:SfPulsingTile Content="This is a Pulsing Tile"/>
+		</Grid>
+	</Window>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -93,26 +93,25 @@ In order to add control manually in C#, follow the below steps:
 
 {% endhighlight %}
 {% highlight C# %}
-using Syncfusion.Windows.Controls.Notification;
-namespace SfHubTileSample
-{
 
-	public partial class MainWindow : Window
+	using Syncfusion.Windows.Controls.Notification;
+	namespace SfHubTileSample
 	{
-		public MainWindow()
+	  public partial class MainWindow : Window
+	  {
+	    public MainWindow()
 		{
-			InitializeComponent();
-
-			// Hub Tile
-			SfHubTile hubTile = new SfHubTile();
-			grid.Children.Add(hubTile);			
-
-			//Pulsing Tile
-			SfPulsingTile pulseTile = new SfPulsingTile();
-			grid.Children.Add(pulseTile);
+		   InitializeComponent();
+		   // Hub Tile
+		   SfHubTile hubTile = new SfHubTile();
+		   grid.Children.Add(hubTile);	
+		   
+		   //Pulsing Tile
+		   SfPulsingTile pulseTile = new SfPulsingTile();
+		   grid.Children.Add(pulseTile);
 		}
-	}
-}
+	  }
+    }
 
 {% endhighlight %}
 {% endtabs %}
