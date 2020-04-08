@@ -49,7 +49,7 @@ In order to add control manually in XAML, follow the below steps:
 1. Add the below required assembly references to the project.
 	* Syncfusion.SfHubTile.WPF
 	* Syncfusion.SfShared.WPF
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
+2. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the tile control namespace `Syncfusion.Windows.Controls.Notification` in XAML page.
 3. Declare SfHubTile and SfPulsingTile controls in XAML page.
 
 {% tabs %}
@@ -66,7 +66,7 @@ In order to add control manually in XAML, follow the below steps:
 		
 		<!--PulsingTile-->
 		<syncfusion:SfPulsingTile Content="This is a Pulsing Tile"/>
-  </Grid>
+   </Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}
@@ -78,7 +78,7 @@ In order to add control manually in C#, follow the below steps:
 1. Add the below required assembly references to the project.
 	* Syncfusion.SfHubTile.WPF
 	* Syncfusion.SfShared.WPF
-2. Import the **Syncfusion.Windows.Controls.Notification** namespace.
+2. Import the `Syncfusion.Windows.Controls.Notification` namespace.
 3. Create SfHubTile and SfPulsingTile controls instance and add it to the window.
 
 {% tabs %}
