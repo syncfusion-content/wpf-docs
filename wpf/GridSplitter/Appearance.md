@@ -132,3 +132,5 @@ We can change the UI and style of the preview grid splitter by using the [SfGrid
 {% endtabs %}
 
 ![SfGridSplitter with ellipse shape preview grid splitter](Positioning-GridSplitter-images/PreviewStyle.gif)
+
+Click [here](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) to download the sample that showcase the `SfGridSplitter` apperance and styling supports.

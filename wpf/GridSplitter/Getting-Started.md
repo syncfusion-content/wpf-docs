@@ -292,4 +292,4 @@ We can directly redistribute the row or columns by using `SfGridSplitter`. If we
 
 ![SfGridSplitter with Enable preview](Positioning-GridSplitter-images/ShowsPreview.png)
 
-
+Click [here](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) to download the sample that showcase the `SfGridSplitter` features.
