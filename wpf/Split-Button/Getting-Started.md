@@ -158,7 +158,6 @@ The **SizeMode** is an enumeration which contains the following values:
 When the mode is set to **Small**, the control is displayed without the label. Only icon will be present in it.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <syncfusion:SplitButtonAdv SizeMode="Small" Label="Colors"/>
@@ -248,7 +247,7 @@ The **SmallIcon** property can be set even when the sizeMode is **Normal**.
 {% tabs %}
 {% highlight xaml %}
 
-<sync:SplitButtonAdv SizeMode="Normal" SmallIcon="Syncfusion logo.png" Label="Syncfusion"/>
+<syncfusion:SplitButtonAdv SizeMode="Normal" SmallIcon="Syncfusion logo.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -268,7 +267,7 @@ The **LargeIcon** property can be set as follows:
 {% tabs %}
 {% highlight xaml %}
 
-<sync:SplitButtonAdv SizeMode="Large" LargeIcon="Syncfusion logo.png" Label="Syncfusion"/>
+<syncfusion:SplitButtonAdv SizeMode="Large" LargeIcon="Syncfusion logo.png" Label="Syncfusion"/>
 
 {% endhighlight %}
 {% highlight c# %}
