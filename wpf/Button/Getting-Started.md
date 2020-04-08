@@ -53,21 +53,21 @@ In order to add the control manually in XAML, follow the below steps.
 
     * Syncfusion.Shared.WPF
 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the control namespace `Syncfusion.Windows.Tools.Controls` in XAML page.
 
 3. Declare ButtonAdv control in XAML page.
 
 {% tabs %}
 {% highlight xaml %}
 
-  <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:local="clr-namespace:Buttonadv_GetStart_Sample"
          xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
          xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
          mc:Ignorable="d"
          Title="MainWindow" Height="450" Width="800">
-        <Grid>
+    <Grid>
         <syncfusion:ButtonAdv Height="44"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="162"/>
     </Grid>
 </Window>
@@ -82,7 +82,7 @@ In order to the add control manually in C#, do the below steps.
 
     * Syncfusion.Shared.WPF
 
-2. Import namespace using **Syncfusion.Windows.Tools.Controls**;.
+2. Import the `Syncfusion.Windows.Tools.Controls` namespace.
 
 3. Create ButtonAdv control instance and add it to the window.
 
@@ -96,17 +96,16 @@ In order to the add control manually in C#, do the below steps.
          xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
          mc:Ignorable="d"
          Title="MainWindow" Height="450" Width="800">
-        <Grid x:Name="Root">
-        </Grid>
+    <Grid x:Name="Root">
+
+    </Grid>
 </Window>
 
 {% endhighlight %}
 {% highlight c# %}
 
-
-
  using Syncfusion.Windows.Tools.Controls;
-  {
+ {
    public MainWindow()
    {
         {
@@ -114,9 +113,10 @@ In order to the add control manually in C#, do the below steps.
             ButtonAdv button = new ButtonAdv();
             button.Height=44;
             button.Width=31;
-            Root.Childran.Add(button);
+            Root.Children.Add(button);
         }
     }
+ }  
 
 {% endhighlight  %}
 {% endtabs %}
@@ -131,7 +131,6 @@ The label on the button is a text that explains its action to the end-user. Appl
 <syncfusion:ButtonAdv Label="Log-in"/>
 
 {% endhighlight %}
-
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
@@ -159,7 +158,7 @@ When the mode is set to **Small**, the control is displayed without the label. O
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Small" Label="Log-in"/>
+<syncfusion:ButtonAdv SizeMode="Small" Label="Log-in"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -289,7 +288,7 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv x:Name="button1" SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Syncfusion"  SmallIcon ="syncfusion.png"  />
+<syncfusion:ButtonAdv x:Name="button1" SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Syncfusion"  SmallIcon ="syncfusion.png" />
 
 {% endhighlight %}
 {% highlight c# %}
