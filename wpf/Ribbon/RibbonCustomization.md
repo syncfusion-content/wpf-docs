@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon Customization in Syncfusion Ribbon control
-description: Customize Ribbon through RibbonContextMenu and Customise window
+description: This section explains the options to Customize Ribbon through RibbonContextMenu and Customise window
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -38,12 +38,12 @@ SmallIcon="/Resources/FormatPainter16.png"  />
 
 The below RibbonContextMenu gets generated when the user right click on the ribbon
 
-![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcc26813.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img1.jpg)
+![Accessing Ribbon context menu through right click](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img1.jpg)
 
 
 It displays along with "Add to Quick Access ToolBar" function while clicking at the RibbonItem as like in the below screenshot
 
-![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcc2d14d.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img2.jpg)
+![Options in Ribbon context menu](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img2.jpg)
 
 
 ## Adding custom item to the ContextMenu
@@ -69,7 +69,7 @@ Ribbon Context Menu supports display of custom items. To add the custom item, se
 {% endtabs %}
 
 
-![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLcd86ccb.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img3.jpg)
+![Adding custom items to the context menu](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img3.jpg)
 
 
 ## How to disable the RibbonContextMenu
@@ -123,15 +123,15 @@ End Sub
 
 The following snapshot gets generated before handling the RibbonContextMenu event
 
-![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLce6a396.PNG](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img4.jpg)
+![Before handling the Ribbon context menu](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img4.jpg)
 
 
 After the event is handled, the output gets display as follows
 
-![](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img5.jpg)
+![Disabling Ribbon context menu](CustomizeRibbonthroughRibbonContextMenu_images/CustomizeRibbonthroughRibbonContextMenu_img5.jpg)
 
 
-# Add items to QuickAccessToolBar (QAT)
+## Add items to QuickAccessToolBar (QAT)
 
 Quick Access Toolbar is used to group the frequently used commands above or under the Ribbon, and it allows to add or remove commands to it. It is placed next to the ApplicationMenu to provide end users with the easy accessibility.
 
@@ -185,7 +185,7 @@ Ribbon.QuickAccessToolBar = QAT
 
 {% endtabs %}
 
-![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img1.jpg)
+![Adding default items](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img1.jpg)
 
 
 ## Add items to QAT Menu items
@@ -242,34 +242,102 @@ Me.Ribbon.QuickAccessToolBar.QATMenuItems.Add(pasteRibbonButton)
 
 The “Paste” QATMenuItem has been selected and it is displayed as one of the items in the QAT. 
 
-![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML6da0b2.PNG](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img2.jpg)
+![Adding items to QAT menu items](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img2.jpg)
 
 
-![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML6d3ac4.PNG](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img3.jpg)
+![Item added to the QAT](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img3.jpg)
 
 
 ## Add items to QAT customize window
 
 To open QAT Customize Window, select `MoreCommands` option from the ContextMenu of the QAT. In the QAT Customized Window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the Command to add to the QuickAccessToolBar and add commands to the right Pane of the Quick Access ToolBar Dialog by clicking Add Button. Finally click OK.
 
-![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img4.jpg)
+![Adding items to QAT customize window](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img4.jpg)
 
 
-![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img5.jpg)
+![Adding items to QAT](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img5.jpg)
 
 Finally, the Items gets displayed in the QAT
 
-![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img6.jpg)
+![Items displayed in the QAT](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img6.jpg)
+
+## Add custom QAT items
+
+Ribbon control provides an option to add items to the QAT that will not be present in the Ribbon. These items can be defined in the [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.QuickAccessToolBar~CustomQATItems.html) collection of the **QuickAccessToolbar** and can be accessed from the QAT Window in the **"Commands Not in the Ribbon"** and **"All Commands"** section. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:Ribbon.QuickAccessToolBar>
+    <syncfusion:QuickAccessToolBar QATDropDownVisiblity="Visible">
+        <syncfusion:QuickAccessToolBar.CustomQATItems>
+            <syncfusion:RibbonButton Label="Undo" SmallIcon="/Resources/Undo_01.png" />
+            <syncfusion:RibbonButton Label="Redo" SmallIcon="/Resources/Redo_01.png" />
+            <syncfusion:RibbonButton Label="New" Command="ApplicationCommands.Open" SmallIcon="/Resources/Document-01.png"/>
+        </syncfusion:QuickAccessToolBar.CustomQATItems>
+    </syncfusion:QuickAccessToolBar>
+</syncfusion:Ribbon.QuickAccessToolBar>
+
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+
+RibbonButton undoRibbonButton = new RibbonButton() { Label = "Undo", SmallIcon = new BitmapImage(new Uri("/Resources/Undo_01.png", UriKind.Relative))};
+RibbonButton redoRibbonButton = new RibbonButton() { Label = "Redo", SmallIcon = new BitmapImage(new Uri("/Resources/Redo_01.png", UriKind.Relative))};
+RibbonButton newRibbonButton = new RibbonButton() { Label = "New", SmallIcon = new BitmapImage(new Uri("/Resources/Document-01.png", UriKind.Relative))};
+this.Ribbon.QuickAccessToolBar.CustomQATItems.Add(undoRibbonButton);
+this.Ribbon.QuickAccessToolBar.CustomQATItems.Add(redoRibbonButton);
+this.Ribbon.QuickAccessToolBar.CustomQATItems.Add(newRibbonButton);
+
+{% endhighlight %}
+
+
+{% highlight VB %}
+
+Dim undoRibbonButton As New RibbonButton() With {
+	.Label = "Undo",
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Undo_01.png", UriKind.Relative))
+}
+Dim redoRibbonButton As New RibbonButton() With {
+	.Label = "Redo",
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Redo_01.png", UriKind.Relative))
+}
+Dim newRibbonButton As New RibbonButton() With {
+	.Label = "New",
+	.SmallIcon = New BitmapImage(New Uri("/Resources/Document-01.png", UriKind.Relative))
+}
+Me.Ribbon.QuickAccessToolBar.CustomQATItems.Add(undoRibbonButton)
+Me.Ribbon.QuickAccessToolBar.CustomQATItems.Add(redoRibbonButton)
+Me.Ribbon.QuickAccessToolBar.CustomQATItems.Add(newRibbonButton)
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Once the [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.QuickAccessToolBar~CustomQATItems.html) are added to the Quick Access Toolbar using the **Add** button, it will be visible in the Ribbon QAT and in the QAT Dropdown menu. The visibility of this item in the Ribbon QAT can be toggled by checking/unchecking from the QAT Dropdown menu. 
+
+![Adding CustomQATItem to the QAT](AddingItemstoQuickAccessToolBar_images/Adding_CustomQATItem_To_QAT.png)
+
+![Accessing the CustomQATItem through QAT Dropdown menu](AddingItemstoQuickAccessToolBar_images/CustomQATItem_in_DropDownMenu_QAT.png)
+
+The added [`CustomQATItems`](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.QuickAccessToolBar~CustomQATItems.html) in the QAT Dropdown menu can be removed through the QAT Window using the **Remove** button. 
+
+![Removing CustomQATITem from the QAT Dropdown menu](AddingItemstoQuickAccessToolBar_images/Removing_CustomQATItem_from_Dropdown.png)
+
 
 ## Add items from Ribbon context menu		
 QAT can also customized by adding the items from the Ribbon ContextMenu. Select Add to Quick Access Toolbar by right clicking the Ribbon item required to add to the QAT. Then, the respective item gets added as one of the items in the QAT.
 
-![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTML16431f9.PNG](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img7.jpg)
+![Accessing items through context menu](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img7.jpg)
 
 
-![](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img8.jpg)
+![Adding items through context menu](AddingItemstoQuickAccessToolBar_images/AddingItemstoQuickAccessToolBar_img8.jpg)
 
-# Add custom RibbonTab and RibbonBar
+## Add custom RibbonTab and RibbonBar
 
 The following section illustrates how to customize Ribbon at the run time
 
@@ -285,31 +353,31 @@ QAT can be Customized further by using the following options
 
 	In the QAT Customized window, the list of Commands is available. The Commands can be filtered only from the Particular tab by using `Choose commands from` option. Then, select the commands to be added to the QAT and add the command to Right Pane of the QAT Dialog by clicking `Add` Button. Finally, Click OK. Now, the selected command gets added in the QAT.
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img1.jpg)
+	![Adding items to the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img1.jpg)
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img2.jpg)
+	![Items displayed in the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img2.jpg)
 
 2. Remove
 
 	QAT items can be removed at the Run time. In the QAT Customize window, select the Command to be deleted from the QAT Dialog,and then click Remove Button. In the following screenshot, Redo command gets deleted and the output is changed according to it.
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img3.jpg)
+	![Removing the items from the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img3.jpg)
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img4.jpg)
+	![Item removed from the Ribbon QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img4.jpg)
 
 3. Reset
 
 	To restore the QAT to its default content, use this `Reset` option.
 
-	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLb81ba81.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img5.jpg)
+	![Resetting the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img5.jpg)
 
 4. Reorder
 
 	QAT also supports to reorder the items by clicking the Up and down arrow at the left of the QAT Dialog. 
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img6.jpg)
+	![Reordering the items in the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img6.jpg)
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img7.jpg)
+	![Items reordered in the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img7.jpg)
 
 
 ### Customize Ribbon with RibbonTab and RibbonBar
@@ -322,25 +390,25 @@ QAT can also support to customize Ribbon Tab and RibbonBar while running. To cus
 
 3. You can add `RibbonTab` and `RibbonBar` by selecting New Tab and New Group Options Respectively.
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img8.jpg)
+	![Adding tab and bar from QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img8.jpg)
 
 4. To move the tab up and down, select the tab to be moved and click the button at the right-side corner accordingly. Similarly, the group can be moved within the tab.
 
 5. By using the `Rename` option, rename any particular Tab/Group present in the Ribbon by selecting it.
 
-	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLb9b87bb.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img9.jpg)
+	![Renaming the tab and bars through QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img9.jpg)
 
 6. The visibility of any particular Tab can be changed by enabling the checkbox of the corresponding selection.
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img10.jpg)
+	![Changing the visibility of the tabs through QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img10.jpg)
 
 7. By using `Delete` option, the Custom RibbonBar and RibbonTab can be deleted. But, this option does not work in the case of original content.
 
-	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLb9c3957.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img11.jpg)
+	![Deleting Tabs and bars through QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img11.jpg)
 
 8. To delete all the Ribbon Customization, use `Reset All Customization` from the Reset Drop Down Menu.
 
-	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLb9d29e2.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img12.jpg)
+	![Deleting all the Ribbon customizations done in the QAT](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img12.jpg)
 
 After customizing the RibbonTab and RibbonBar, RibbonItems can be customized. Customizing Ribbon Item concepts are explained as follows.
 
@@ -352,21 +420,21 @@ The steps to customize the Ribbon Item are as follows
 
 2.  To add the item under the right-side column of a newly added `RibbonBar` and `RibbonTab`, select the item from left-side column and click the `Add` button.
 
-	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLba692c1.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img13.jpg)
+	![Adding items to the newly added tab](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img13.jpg)
 
 3. Also, the Ribbon Item from the RibbonBar can be removed that is added recently by using `Remove` option
 
-	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLbb23805.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img14.jpg)
+	![Removing the items from tab through QAT Window](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img14.jpg)
 
 4. The order of the RibbonItem within the RibbonBar can be changed by using `Up` and `Down` arrow
 
 5. By using the Rename option,the RibbonItem can be renamed
 
-	![C:/Users/SUGAPR~1/AppData/Local/Temp/SNAGHTMLbb2d36a.PNG](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img15.jpg)
+	![Renaming the ribbon items](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img15.jpg)
 
 6. Click `OK` button. The Changes are reflected in the output window.
 
-	![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img16.jpg)
+	![Clicking Ok reflects the changes to the Ribbon](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img16.jpg)
 
 
 ## How to disable the customization in Ribbon
@@ -406,5 +474,5 @@ In the following screenshot, customizing Ribbon is disabled and it shows only th
 
 
 
-![](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img17.jpg)
+![Disabling the Customize ribbon option](AddingcustomRibbonTabandRibbonBar_images/AddingcustomRibbonTabandRibbonBar_img17.jpg)
 

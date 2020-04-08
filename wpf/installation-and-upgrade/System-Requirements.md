@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio WPF products
-description: Learn how to install and deploy the Syncfusion WPF component
+title: System Requirements | WPF | Syncfusion
+description: this section provides the information about the system requirements for WPF platform with supported browsers
 platform: wpf
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# System Requirements
+# System Requirements for WPF
 
 The following topic describes the system requirements for Syncfusion WPF platform.
 
@@ -25,7 +25,7 @@ The following topic describes the system requirements for Syncfusion WPF platfor
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 5.5 GB of available space may be required. However, 650 MB free space is required in boot drive even if you are installing the setup in other drive.
+* Hard disk: up to 5.5 GB of available space may be required. However, 650 MB free space is required in boot drive even if you are installing in other drive.
 
 ### Development Environment
 

@@ -1,13 +1,19 @@
 ---
 layout: post
-title: Getting Started | CheckListBox | WPF | Syncfusion
-description: This section describes how to add check listbox control into wpf application and its basic features.
+title: Getting started with WPF CheckListBox control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF CheckListBox control and more details about the control features.
 platform: WPF
 control: CheckListBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting started with WPF CheckListBox
+
+This section explains how to display and select the required items using WPF [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/checkedlistbox) control.
+
+## Control Structure
+
+![CheckListBox Control structure](Getting-Started_images/Control_Structure_GS.png)
 
 ## Assembly deployment
 
@@ -17,39 +23,31 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-## Creating simple application with CheckListBox
+## Adding WPF CheckListBox via designer
 
-You can create a WPF application with CheckListBox control using the following steps:
+You can add the [CheckListBox](https://www.syncfusion.com/wpf-ui-controls/CheckedListBox) control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
 
-1.	[Create a project.](#creating-a-project)
-2.	[Add control via designer.](#adding-control-via-designer)
-3.	[Add control manually in XAML.](#adding-control-manually-in-xaml)
-4.	[Add control manually in C#.](#adding-control-manually-in-c)
-5.	[Add items using CheckListBoxItem.](#adding-items-using-checklistboxitem)
-6.	[Bind to data.](#binding-to-data)
+* Syncfusion.Shared.WPF
+* Syncfusion.Tools.Wpf
 
-## Creating a project
-
-Create a new WPF project in Visual Studio to display the CheckListBox with functionalities.
-
-## Adding control via designer
-
-The CheckListBox control can be added to an application by dragging it from the toolbox to a designer view. The required assembly references will be added automatically.
-
-![wpf check list box control added by designer](Getting-Started_images/wpf-checklistbox-control-added-by-designer.png)
+![CheckListBox Control added by designer](Getting-Started_images/wpf-checklistbox-control-added-by-designer.png)
  
-## Adding control manually in XAML
+## Adding WPF CheckListBox via XAML
 
-To add control manually in XAML, follow the given steps:
+To add the `CheckListBox` control manually in XAML, follow these steps:
+1. Create a new WPF project in Visual Studio.
 
-1.	Add the following required assembly references to the project:
-    * Syncfusion.Tools.WPF
-    * Syncfusion.Shared.WPF 
-2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
-3.	Declare the CheckListBox control in XAML page.
+2. Add the  following assembly references to the project,
+   * Syncfusion.Shared.WPF
+   * Syncfusion.Tools.Wpf
+ 
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `CheckListBox` control in XAML page.
+
+4.	Declare the `CheckListBox` control in XAML page.
 
 {% tabs %}
 {% highlight XAML %}
+
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
@@ -57,122 +55,111 @@ To add control manually in XAML, follow the given steps:
         Title="CheckListBox Sample" Height="350" Width="525">
     <Grid>
         <!--Adding CheckListBox control -->
-        <syncfusion:CheckListBox x:Name="checkListBox" Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <syncfusion:CheckListBox x:Name="checkListBox" Width="200" Height="300" />
     </Grid>
 </Window>
 {% endhighlight %}
 {% endtabs %}
 
-## Adding control manually in C\#
+## Adding WPF CheckListBox via C\#
 
-To add control manually in C#, follow the given steps:
+To add the `CheckListBox` control manually in C#, follow these steps:
 
-1.	Add the following required assembly references to the project:
-    * Syncfusion.Tools.WPF
-    * Syncfusion.Shared.WPF 
-2.	Import the CheckListBox namespace **using Syncfusion.Windows.Tools.Controls;**.
-3.	Create a CheckListBox instance, and add it to the window.
+1. Create a new WPF application via Visual Studio.
+
+2. Add the  following assembly references to the project,
+    * Syncfusion.Shared.WPF
+    * Syncfusion.Tools.Wpf
+
+3. Include the required namespace and create an instance of `CheckListBox` and add it to the window.
+
+4.	Declare the `CheckListBox` control using C#.
 
 {% tabs %}
 {% highlight C# %}
+
 using Syncfusion.Windows.Tools.Controls;
-namespace CheckListBoxSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-			InitializeComponent();
-			//Creating an instance of CheckListBox control
-			CheckListBox checkListBox = new CheckListBox();
-			//Adding CheckListBox as window content
-			this.Content = checkListBox;
-        }
-    } 
+
+public partial class MainWindow : Window {
+    public MainWindow() {
+        InitializeComponent();
+
+        //Creating an instance of CheckListBox control
+        CheckListBox checkListBox = new CheckListBox();
+
+        //Adding CheckListBox as window content
+        this.Content = checkListBox;
+    }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
-## Adding items using CheckListBoxItem
+## Populating items using CheckListBoxItem
 
-You can add the items inside the CheckListBox control using [CheckListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html).
+You can add the items inside the `CheckListBox` control using [CheckListBoxItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBoxItem.html).
 
 {% tabs %}
 {% highlight XAML %}
+
 <!-- Adding CheckListBox -->
 <syncfusion:CheckListBox Name="checkListBox">
-<!-- Adding CheckListBox items -->
-<syncfusion:CheckListBoxItem Content="Mexico"/> 
-<syncfusion:CheckListBoxItem Content="Canada" /> 
-<syncfusion:CheckListBoxItem Content="Bermuda" />
-<syncfusion:CheckListBoxItem Content="Belize" />
-<syncfusion:CheckListBoxItem Content="Panama" />
+    <!-- Adding CheckListBox items -->
+   <syncfusion:CheckListBoxItem Content="Mexico" IsChecked="True" />
+   <syncfusion:CheckListBoxItem Content="Canada" IsChecked="False"/>
+   <syncfusion:CheckListBoxItem Content="Bermuda"  IsChecked="True"/>
 </syncfusion:CheckListBox>
+
 {% endhighlight %}
 {% highlight C# %}
+
 // Creating an instance of CheckListBox
 CheckListBox checkListBox = new CheckListBox();
 
 // Creating an instance of CheckListBoxItem
-CheckListBoxItem checkListBoxItem1 = new CheckListBoxItem();
-CheckListBoxItem checkListBoxItem2 = new CheckListBoxItem();
-
-// Adding content to CheckListBoxItem
-checkListBoxItem1.Content = "Mexico";
-checkListBoxItem1.Content = "Bermuda";
+CheckListBoxItem checkListBoxItem1 = new CheckListBoxItem() { Content = "Mexico",IsChecked= true };
+CheckListBoxItem checkListBoxItem2 = new CheckListBoxItem() { Content = "Canada", IsChecked = false };
+CheckListBoxItem checkListBoxItem3 = new CheckListBoxItem() { Content = "Bermuda", IsChecked = true };
 
 // Adding CheckListBoxItem to CheckListBox
-checkListBox.Items.Add(checkListBoxItem1); 
-checkListBox.Items.Add(checkListBoxItem2); 
+checkListBox.Items.Add(checkListBoxItem1);
+checkListBox.Items.Add(checkListBoxItem2);
+checkListBox.Items.Add(checkListBoxItem3);
+
 {% endhighlight %}
 {% endtabs %}
 
-## Binding to data
+## Populating items using collection
 
-You can populate the CheckListBox control using the [ItemsSource](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemssourceproperty?view=netframework-4.7.2) property. The [DisplayMemberPath](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.itemscontrol.displaymemberpath) property is used to the name or path of the property displayed for each the data item in the control.
-
-* **Model.cs**
+You can populate items to the `CheckListBox` control by using the `ItemsSource` property. The `DisplayMemberPath` property is used to the name or path of the property displayed for each data item in the control.
 
 {% tabs %}
 {% highlight C# %}
-public class CountryListModel
-{
+
+//Model.cs
+public class CountryListModel {
 	public string Name { get; set; }
 	public string Description { get; set; }
 }
-{% endhighlight %}
-{% endtabs %}
 
-
-* **ViewModel.cs**
-
-{% tabs %}
-{% highlight C# %}
-public class ViewModel
-{
+//ViewModel.cs
+public class ViewModel {
 	private ObservableCollection<CountryListModel> checkList;
-	public ObservableCollection<CountryListModel> CheckListItems
-	{
-		get
-		{
+	public ObservableCollection<CountryListModel> CheckListItems {
+		get {
 			return checkList;
 		}
-		set
-		{
+		set	{
 			checkList = value;
-			RaisePropertyChanged("CheckListItems");
 		}
 	}
-	public ViewModel()
-	{
+
+	public ViewModel() {
 		CheckListItems = new ObservableCollection<CountryListModel>();
 		populateItem();
 	}
-	private void populateItem()
-	{
+
+	private void populateItem()	{
 		CheckListItems.Add(new CountryListModel() { Name = "Mexico", Description = "Mexico" });
 		CheckListItems.Add(new CountryListModel() { Name = "Canada", Description = "Canada " });
 		CheckListItems.Add(new CountryListModel() { Name = "Bermuda", Description = "Bermuda" });
@@ -180,6 +167,7 @@ public class ViewModel
 		CheckListItems.Add(new CountryListModel() { Name = "Panama", Description = "Panama" });
 	}
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -187,13 +175,74 @@ public class ViewModel
 
 {% tabs %}
 {% highlight XAML %}
-<Window.DataContext>
-    <local:ViewModel/>
-</Window.DataContext>
 
 <!--Adding CheckListBox control -->
-<syncfusion:CheckListBox x:Name="checkListBox" IsCheckOnFirstClick="True" Width="120" Height="150" DisplayMemberPath="Name" ItemsSource="{Binding CheckListItems}" />
+<syncfusion:CheckListBox ItemsSource="{Binding CheckListItems}"
+                         DisplayMemberPath="Name" 
+                         x:Name="checkListBox">
+    <syncfusion:CheckListBox.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:CheckListBox.DataContext>>
+</syncfusion:CheckListBox>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CheckListBox checkListBox = new CheckListBox();
+checkListBox.DataContext = new ViewModel();
+checkListBox.ItemsSource = (checkListBox.DataContext as ViewModel).CheckListItems;
+checkListBox.DisplayMemberPath = "Name";
+
 {% endhighlight %}
 {% endtabs %}
  
-![wpf check list box items](Getting-Started_images/wpf-checklistbox-control-items.png)
+![CheckListBox control items displayed](Getting-Started_images/wpf-checklistbox-control-items.png)
+
+## Check or Uncheck items
+
+The `CheckListBox` items can be checked or unchecked in a single click either by clicking the `CheckBox` or clicking the content of the item. Also, the checked state of an item can be handled using the `Space` key. If we wants to make some item as checked using programmatically, add that items into the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) collection.
+
+![CheckListBox items check and uncheck](Getting-Started_images/CheckItems.gif)
+
+## Checked event notification
+
+When the checked state of an item is changed, it will be notified by using the [ItemChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~ItemChecked_EV.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
+
+{% tabs %}
+{% highlight XAML %}
+
+<!--Adding CheckListBox control -->
+<syncfusion:CheckListBox ItemChecked="CheckListBox_ItemChecked"  
+                         x:Name="checkListBox">
+</syncfusion:CheckListBox>
+
+{% endhighlight %}
+{% highlight C# %}
+
+CheckListBox checkListBox = new CheckListBox();
+checkListBox.ItemChecked += CheckListBox_ItemChecked;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void CheckListBox_ItemChecked(object sender, ItemCheckedEventArgs e)
+{
+    Console.WriteLine("ItemChecked event is raised");
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Get list of checked items
+
+The `CheckListBox` control gets all the checked items using the [SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItems.html) property. We can also get the currently selected item which is in either checked or unchecked state by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CheckListBox~SelectedItem.html) property.
+
+![CheckListBox with checked items count](Getting-Started_images/CheckItems_Count.gif)
+
+Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Getting-Started
+) to download the sample that showcases the basic features of `CheckListBox` control.

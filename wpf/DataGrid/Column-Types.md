@@ -779,11 +779,11 @@ GridColumn allows  you to change the alignment of `GridCell` and `GridHeaderCell
 
 ### GridTextColumnBase properties
 
-* Text decorations - You can [decorate](https://msdn.microsoft.com/en-us/library/system.windows.textdecorations.aspx) column’s data using [TextDecorations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTextColumnBase~TextDecorations.html) property.
+* **Text decorations** - You can [decorate](https://msdn.microsoft.com/en-us/library/system.windows.textdecorations.aspx) column’s data using [TextDecorations](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTextColumnBase~TextDecorations.html) property.
 
-* Text trimming - You can [trim](https://msdn.microsoft.com/en-us/library/system.windows.texttrimming.aspx) the column’s data using [TextTrimming](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTextColumnBase~TextTrimming.html) property.
+* **Text trimming** - You can [trim](https://msdn.microsoft.com/en-us/library/system.windows.texttrimming.aspx) the column’s data using [TextTrimming](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTextColumnBase~TextTrimming.html) property.
 
-* Text wrapping - You can [wrap](https://msdn.microsoft.com/en-us/library/system.windows.textwrapping.aspx) the column’s data using [TextWrapping](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTextColumnBase~TextWrapping.html) property.
+* **Text wrapping** - You can [wrap](https://msdn.microsoft.com/en-us/library/system.windows.textwrapping.aspx) the column’s data using [TextWrapping](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTextColumnBase~TextWrapping.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -953,7 +953,7 @@ this.dataGrid.Columns.Add(new GridCurrencyColumn() { MappingName = "UnitPrice", 
 
 * [CurrencyGroupSizes](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyGroupSizes.html) - You can specify [the number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencygroupsizes.aspx) before the decimal point on currency value using `CurrencyGroupSizes` property. 
 
-* Pattern - You can format the pattern for both [positive](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencypositivepattern.aspx) and [negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencynegativepattern.aspx) currency values through [CurrencyPositivePattern](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyPositivePattern.html) and [CurrencyNegativePattern](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyNegativePattern.html). 
+* `Pattern` - You can format the pattern for both [positive](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencypositivepattern.aspx) and [negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.currencynegativepattern.aspx) currency values through [CurrencyPositivePattern](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyPositivePattern.html) and [CurrencyNegativePattern](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrencyColumn~CurrencyNegativePattern.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1011,7 +1011,7 @@ this.dataGrid.Columns.Add(new GridPercentColumn() { HeaderText = "Discount", Map
 
 * [PercentGroupSizes](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentGroupSizes.html) **-** You can specify [the number of digits in each group](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentgroupsizes.aspx) before the decimal point through `PercentGroupSizes` property. 
 
-* Pattern **-** You can specify the pattern for both [positive](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentpositivepattern.aspx) and [negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentnegativepattern.aspx) percent values through [PercentPositivePattern](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentPositivePattern.html) and [PercentNegativePattern](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentNegativePattern.html).
+* `Pattern` **-** You can specify the pattern for both [positive](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentpositivepattern.aspx) and [negative](https://msdn.microsoft.com/en-us/library/system.globalization.numberformatinfo.percentnegativepattern.aspx) percent values through [PercentPositivePattern](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentPositivePattern.html) and [PercentNegativePattern](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridPercentColumn~PercentNegativePattern.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1967,7 +1967,7 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 
 ### Cancel the navigation
 
-You can cancel the navigation by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `false`. 
+You can cancel the navigation by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `true`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -2301,7 +2301,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 
 ### Styling selector column
 
-The style of checkbox in record cells can be customized using the CellStyle property.
+The style of checkbox in record cells can be customized using the `CellStyle` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2328,7 +2328,7 @@ The style of checkbox in record cells can be customized using the CellStyle prop
 
 ![wpf datagrid selector column with styled checkbox in record cells](Column-Types_images/Column-Types_img31.png)
 
-As above, style of the header check box can be customized using the HeaderCellStyle property.
+As above, style of the header check box can be customized using the `HeaderCellStyle` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2358,7 +2358,7 @@ As above, style of the header check box can be customized using the HeaderCellSt
 
 ### Limitations
 
-The following are the limitations of GridCheckBoxSelectorColumn:
+The following are the limitations of `GridCheckBoxSelectorColumn`:
 
 * Selector column does not support cell selection.
 * Selector column does not support data operations such as sorting, filtering, and grouping.

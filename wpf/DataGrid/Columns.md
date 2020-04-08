@@ -742,6 +742,24 @@ void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+### Identify resizing of the column gets completed
+
+SfDataGrid allows you to identify the progress of the resizing of columns through [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs~Reason.html) property. You can get the width of the column after resizing completed by getting [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs~Width.html) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.ColumnResizingReason.html) in [ResizingColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ResizingColumns_EV.html) event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.ResizingColumns += OnResizingColumns;
+
+void OnResizingColumns(object sender, ResizingColumnsEventArgs e)
+{
+    if (e.Reason == Syncfusion.UI.Xaml.Grid.ColumnResizingReason.Resized)
+    {
+        var resizedWidth = e.Width;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## DataGrid column drag and drop
 
 You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowDraggingColumns.html) to `true`.

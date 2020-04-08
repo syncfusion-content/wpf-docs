@@ -1,23 +1,27 @@
 ---
 layout: post
-title: Overview | PropertyGrid  | WPF | Syncfusion
-description: WPF PropertyGrid control is a Visual Studio-like property editor which supports browsing properties of an object in detailed manner based on the data type.
+title: About WPF PropertyGrid control | Syncfusion
+description: Learn about introduction of Syncfusion WPF PropertyGrid control and more details about the control features.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Overview
+# WPF PropertyGrid Overview
 
-The PropertyGrid control provides an interface for browsing the properties of an object with support for Blendability, custom editors, category editors, sorting, and grouping. The PropertyGrid control provides similar features to the Windows Forms PropertyGrid. The PropertyGrid control supports several built-in editors, and custom or category editors can also be added to give the control a custom look and feel.
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control provides an interface for browsing and editing an object's properties with Blendability support, custom editors, category editors, sorting and grouping supports. The WPF `PropertyGrid` control provides similar features to the Windows Forms `PropertyGrid` control.
 
-### Feature summary
+## Control structure
 
-* Binding with any objects—Denotes the object for which PropertyGrid displays properties.
-* Custom Editor—CustomEditor support enables you to set custom value editors for particular properties, instead of default editors.
-* Category Editor—CategoryEditor support enables you to set related properties (one or more properties) on a custom control.
-* Grouping—PropertyGrid group the properties based on Category attribute of the property.
-* Sorting—PropertyGrid supports sorting in both ascending and descending order.
-* Skin
-* Blendability—PropertyGrid control can easily be editable in blend.
-* Code sharing—Provides code sharing with Silverlight.
+![Default PropertyGrid control](Getting-Started_images/Getting-Started_img8.png)
+
+## Features
+
+* Binding with any objects — Denotes the object that properties displayed in the `PropertyGrid`.
+* Custom Editor — `CustomEditor` support enables you to set custom value editors for particular properties, instead of default editors.
+* Category Editor — `CategoryEditor` support allows you to set the related properties (one or more properties) to be categorized.
+* Grouping — `PropertyGrid` groups the properties based on the property's `Category` attribute.
+* Sorting — `PropertyGrid` supports both `ascending` and `descending` order sorting.
+* Skin - `PropertyGrid` provides a variety of skin themes.
+* Blendability — `PropertyGrid` control can be easily customized in a blend.
+* Code sharing — Provides code sharing with `Silverlight`.

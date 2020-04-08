@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion Diagram supports to nodes, connectors and page at runtime.
-description: How to select and edit nodes and connectors during runtime?
+description: How to select, edit, Zoom, delete nodes and connectors during runtime while interacing on the diagram page?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Interaction
+# How to interact with diagram
 
 ## Selection
 
@@ -62,11 +62,9 @@ The following code example illustrates how to select/unselect an item through pr
 {% highlight C# %}
 
 // Selects an elements 
-
 node.IsSelected = true;
 
 // Unselect an element
-
 node.IsSelected = false;
 
 {% endhighlight %}
@@ -83,7 +81,6 @@ Selected objects can be deleted by <kdb> Delete </kdb> and In-built Delete comma
 * `ItemDeletedEvent` will notify you with the deleted item in argument. To explore about arguments , please refer to [ItemDeletedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDeletedEventArgs.html).
 
 * `ItemDeletingEvent` will notify you with the item , option to cancel the deleting operation of item. To explore about arguments , please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html)   
-
 
 ## Dragging based on DragLimit
 
@@ -105,14 +102,12 @@ Diagram provides support to drop a node/connector over another node/connector. D
 {% highlight C# %}
 
 //Enable of AllowDrop Constraints for Node
-
 Node.Constraints |= NodeConstraints.AllowDrop;
 
 {% endhighlight %}
 {% endtabs %}
 
 * `ItemDropEvent`, `DragEnter`, `DragOver` and `DragLeave` events will notify you the Source and elements that are interacted with the dropped element(target).To explore about arguments, please refer to [ItemDropEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs.html) .
-
 
 ## Quick Command
 
@@ -123,25 +118,23 @@ Quick Commands are used to execute the commonly or frequently used commands arou
 {% tabs %}
 {% highlight C# %}
 
- // Element to represent the frequently used commands
-            QuickCommandViewModel quick = new QuickCommandViewModel()
-            {
-                // Outer part of quick command.
-                Shape = this.Resources["Ellipse"],
-               // appearence of shape.
-                ShapeStyle = this.Resources["QuickCommandstyle"] as Style,
-                //Inner part of quick command and it allows to host any UI elements
-                Content =
-                    "M3.7399902,0L16,12.258972 28.26001,0 32,3.7399902 19.73999,16 32,28.258972 28.26001,32 16,19.73999 3.7399902,32 0,28.258972 12.26001,16 0,3.7399902z",
-               
-                Command = (Diagram.Info as IGraphInfo).Commands.Delete
-            };
+//Element to represent the frequently used commands
+QuickCommandViewModel quick = new QuickCommandViewModel()
+{
+    //Outer part of quick command.
+    Shape = App.Current.Resources["Ellipse"],
+    //appearence of shape.
+    ShapeStyle = App.Current.Resources["QuickCommandstyle"] as Style,
+    //Inner part of quick command and it allows to host any UI elements
+    Content = "M3.7399902,0L16,12.258972 28.26001,0 32,3.7399902 19.73999,16 32,28.258972 28.26001,32 16,19.73999 3.7399902,32 0,28.258972 12.26001,16 0,3.7399902z",
+    Command = (Diagram.Info as IGraphInfo).Commands.Delete
+};
 
-            // Adding new QuickCommand object in Commands collection
-            (Diagram.SelectedItems as SelectorViewModel).Commands = new QuickCommandCollection()
-            {
-                quick
-            };
+//Adding new QuickCommand object in Commands collection
+(Diagram.SelectedItems as SelectorViewModel).Commands = new QuickCommandCollection()
+{
+    quick
+};
 
 {% endhighlight %}
 {% endtabs %}   
@@ -183,13 +176,11 @@ For more information about HitPadding for Connector, refer to [Hit Padding](/wpf
 
 * Diagram can be zoomed in or out by using Ctrl + mouse wheel.
 
-
 ## Keyboard
 
 Diagram provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
 
 The following table illustrates List of Commands with key Gesture.
-
 
 | Shortcut Key | Command | Description |
 |---|---|---|
@@ -228,18 +219,17 @@ Selected objects can be deleted by <kdb> Delete </kdb> and In-built Delete comma
 
 (diagram.Info as IGraphInfo).ItemDeletingEvent += MainWindow_ItemDeletingEvent;
 
-        /// <summary>
-        /// DiagramPreviewEventArgs is the Base class for EventArgs.
-        /// Casting the args will help us to get ItemDeletingEventArgs.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
-        private void MainWindow_ItemDeletingEvent(object sender, DiagramPreviewEventArgs args)
-        {
-            //For Deleting Node Without its Dependent Connector
-
-            (args as ItemDeletingEventArgs).DeleteDependentConnector = false;
-        }
+/// <summary>
+/// DiagramPreviewEventArgs is the Base class for EventArgs.
+/// Casting the args will help us to get ItemDeletingEventArgs.
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="args"></param>
+private void MainWindow_ItemDeletingEvent(object sender, DiagramPreviewEventArgs args)
+{
+    //For Deleting Node Without its Dependent Connector
+    (args as ItemDeletingEventArgs).DeleteDependentConnector = false;
+}
         
 {% endhighlight %}
 {% endtabs %}

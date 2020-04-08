@@ -13,7 +13,7 @@ SfDataGrid allows you to validate the data and display hints in case of validati
  
 ## Built-in validations
 
-Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) properties.
+Built-in validations through `IDataErrorInfo`, `INotifyDataErrorInfo` and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) properties.
 
  `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
  
@@ -23,7 +23,7 @@ Built-in validations through IDataErrorInfo, INotifyDataErrorInfo and Data annot
 
 ## Built-in validation using IDataErrorInfo / INotifyDataErrorInfo
 
-SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx)/[INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx).
+SfDataGrid provides support to validate the data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx) / [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx).
  
 ### Using IDataErrorInfo
  
@@ -439,7 +439,7 @@ You can change the validation error template shape of the GridCell by changing
 
 ### Change the color of error icon
 
-You can change the validation error template color of the GridCell by changing the `Fill` property of the path in the `PART_InValidCellBorder` of GridCell.
+You can change the validation error template color of the `GridCell` by changing the `Fill` property of the path in the `PART_InValidCellBorder` of `GridCell`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -587,7 +587,7 @@ You can change the validation error template color of the GridCell by changing
 
 ### Change the cursor over error icon
 
-You can change the validation error template cursor of the GridCell by changing the `Cursor` property of the path codes in the `PART_InValidCellBorder` of GridCell.
+You can change the validation error template cursor of the `GridCell` by changing the `Cursor` property of the path codes in the `PART_InValidCellBorder` of `GridCell`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -741,7 +741,7 @@ You can change the validation error template cursor of the GridCell by changin
 
 ## Data validation error tip (help tip) customization
 
-You can customize the error tip by editing the style of `ValidationToolTipTemplate`. Get the style of `ValidationToolTipTemplate` by editing the GridCell style.
+You can customize the error tip by editing the style of `ValidationToolTipTemplate`. Get the style of `ValidationToolTipTemplate` by editing the `GridCell` style.
 
 ### Change the background and foreground color of error tip
 
@@ -868,7 +868,7 @@ public string Error
 
 ### Using INotifyDataErrorInfo
 
-You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx). By default error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
+You can show the error information in row header by setting [INotifyDataErrorInfo.HasErrors](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.haserrors.aspx). By default error message **Row Containing Error** will be displayed.  You can change this by changing `RowErrorMessage` in the **resx** file.
 
 {% tabs %}
 {% highlight c# %}
@@ -896,7 +896,7 @@ You can do both built-in and custom validation of data in `DetailsViewDataGrid`.
 
 ### Built-in validations
 
-You can validate the bound data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx)/[INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) or [Data Annotation](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx) Attributes by setting [GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property of [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html).
+You can validate the bound data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx) / [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) or [Data Annotation](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.aspx) Attributes by setting [GridValidationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property of [ViewDefinition.DataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1349,3 +1349,19 @@ You can download a working demo for the above customization from [here](http://w
  
 1. Non editable columns will not support custom validation except [GridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html).
 2. `CurrentCellValidating` event will not triggered for [GridTemplateColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) and [GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html). 
+
+## See Also
+
+[How to navigate to the error cells in datagrid via button click?](https://www.syncfusion.com/kb/9600)
+
+[How to validate the AddNewRow value based on already existing records?](https://www.syncfusion.com/kb/6596)
+
+[How to show the validation tooltip without hovering the red indicator in cell?](https://www.syncfusion.com/kb/6234)
+
+[How to fire RowValidating event for GridCheckBoxColumn in SfDataGrid](https://www.syncfusion.com/kb/5954)
+
+[How to remove the top-right corner error mark from the GridCell by pressing Esc key when validated by handling the CurrentCellValidating event?](https://www.syncfusion.com/kb/5317)
+
+[How to change the validation error template color?](https://www.syncfusion.com/kb/2574)
+
+[How to wire the RowValidating event after pasted the content to datagrid?](https://www.syncfusion.com/kb/9432)

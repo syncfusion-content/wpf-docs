@@ -13,8 +13,8 @@ SfDataGrid provides various built-in options to optimize the performance when ha
  
 ## Improving scrolling performance
 
-You can improve the scrolling performance in SfDataGrid by setting [SfDataGrid.ScrollMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ScrollMode.html) property to “Async”.
-This property enables the SfDataGrid to scroll the rows asynchronously with fade in animation.
+You can improve the scrolling performance in SfDataGrid by setting [SfDataGrid.ScrollMode](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ScrollMode.html) property to **Async**.
+This property enables the SfDataGrid to scroll the rows `asynchronously` with fade in animation.
  
 {% tabs %}
 {% highlight xaml %}
@@ -42,11 +42,11 @@ You can style the cell and row conditionally in below three ways,
 2. Using Data triggers
 3. Using Style selectors
 
-Conditional styling using converter provides better performance compare to Data Trigger approach and Style selector approach. You can refer Styles and template section for more information.
+Conditional styling using converter provides better performance compare to Data Trigger approach and Style selector approach. You can refer [Styles and Template](https://help.syncfusion.com/wpf/datagrid/styles-and-templates) section for more information.
 
 ### Improving loading and scrolling performance using LightWeightTemplate
 
-You can improve the loading and scrolling performance in SfDataGrid by setting [SfDataGrid.UseDrawing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UseDrawing.html) property as ‘Default’. When using this property, the grid cell content and its borders are drawn instead of loading `UIElement` and hence it reduces the VisualTree of SfDataGrid to improve the scrolling and loading performance. 
+You can improve the loading and scrolling performance in SfDataGrid by setting [SfDataGrid.UseDrawing](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UseDrawing.html) property as `Default`. When using this property, the grid cell content and its borders are drawn instead of loading `UIElement` and hence it reduces the `VisualTree` of SfDataGrid to improve the loading and scrolling performance. 
 {% tabs %}
 {% highlight xaml %}
 <Syncfusion:SfDataGrid x:Name="dataGrid"  
@@ -58,20 +58,20 @@ this.dataGrid.UseDrawing = UseDrawing.Default;
 {% endhighlight %}
 {% endtabs %}
 
-### Limitations
+#### Limitations
 1. Searching is not supported.
 2. Validation need to be achieved by using Template.
 3. Cannot able to set `BorderThickness` in four ways (Left, Top, Right, Bottom). We can use one double value for setting the BorderThickness. 
-4. UseDrawing is not supported to get the property value while using dynamic type so need to use UseBindingValue as ‘true’ 
-5. UseDrawing is completely supported for below grid elements.
+4. `UseDrawing` is not supported to get the property value while using dynamic type so need to use `UseBindingValue` as `true` 
+5. `UseDrawing` is completely supported for below grid elements.
    * GridCell
    * GridUnBoundRowCell
-6. UseDrawing is not supported to UIElement content for the below grid elements (Support only for border).
+6. `UseDrawing` is not supported to UIElement content for the below grid elements (Support only for border).
    * GridIndentCell
    * GridCaptionSummaryCell
    * GridGroupSummaryCell
    * GridTableSummaryCell
-7. UseDrawing is not supported for the below grid elements.
+7. `UseDrawing` is not supported for the below grid elements.
    * GridHeaderCellControl
    * GridRowHeaderCell
    * GridRowHeaderIndentCell
@@ -177,7 +177,7 @@ public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
 
 ### Loading performance - On demand summary calculation for group and caption summary
 
-You can calculate the Caption and Group summary on-demand by setting [SfDataGrid.SummaryCalculationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SummaryCalculationMode.html) as ‘CalculationMode.OndemandCaptionSummary’ or ‘CalculationMode.OndemandGroupSummary’. You can set this property when you are loading more number of summary columns on summary row or more number of group summaries to improve loading performance. On-demand summary calculation will calculate summaries for the summary rows which are visible and summaries for other rows will be calculated only when it comes into view. 
+You can calculate the Caption and Group summary on-demand by setting [SfDataGrid.SummaryCalculationMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SummaryCalculationMode.html) as `CalculationMode.OndemandCaptionSummary` or `CalculationMode.OndemandGroupSummary`. You can set this property when you are loading more number of summary columns on summary row or more number of group summaries to improve loading performance. On-demand summary calculation will calculate summaries for the summary rows which are visible and summaries for other rows will be calculated only when it comes into view. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -192,7 +192,7 @@ this.datagrid.SummaryCalculationMode = CalculationMode.OnDemandCaptionSummary | 
 
 ## Improving UI Filter loading time
 
-SfDataGrid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl~CanGenerateUniqueItems.html) property to false. By default `GridFilterControl` loads unique items in popup which takes more time to load.
+SfDataGrid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl~CanGenerateUniqueItems.html) property to `false`. By default `GridFilterControl` loads unique items in popup which takes more time to load.
 
 `CanGenerateUniqueItems` property loading `TextBox` to filter instead of `ComboBox` in advanced filter UI View.
 
@@ -209,3 +209,7 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
 </Window.Resources>
 {% endhighlight %}
 {% endtabs %}
+
+## Improving performance while adding multiple FilterPredicates to the column in loop
+
+For more details, refer the [Filtering](https://help.syncfusion.com/wpf/datagrid/filtering#improving-performance-while-adding-multiple-filterpredicates-to-the-column-in-loop) section.

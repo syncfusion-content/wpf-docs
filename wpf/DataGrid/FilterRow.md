@@ -40,7 +40,7 @@ bool isFilterRowIndex = this.dataGrid.IsFilterRowIndex(1);
 {% endhighlight %}
 {% endtabs %}
 
-**Note:**The above helper methods are available in [Syncfusion.UI.Xaml.Grid.Helpers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers_namespace.html) namespace
+N> The above helper methods are available in [Syncfusion.UI.Xaml.Grid.Helpers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.Helpers_namespace.html) namespace
 
 ## Built-in Editors
 By default, FilterRow loads the editors based on underlying property type to filter the data easily. You can change the default editors by using [GridColumn.FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html) property.
@@ -194,22 +194,22 @@ Below are the filter conditions supported by different filter row editors in SfD
 </tr>
 <tr>
 <td>
-When integer, double, short, decimal, byte or long are bound to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, the Numeric editor type are loaded in FilterRowCell.
+When integer, double, short, decimal, byte or long are bound to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, the <code>Numeric</code> editor type are loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~FilterRowCell.html)'| markdownify }}.
 
 </td>
 <td>
-When string value is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items is dynamic, then TextBox editor type are loaded in FilterRowCell.
+When string value is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items is dynamic, then <code>TextBox</code> editor type are loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~FilterRowCell.html)'| markdownify }}.
 
 </td>
 <td>
-When DateTime type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then DateTime editor is loaded in FilterRowCell.
+When DateTime type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then <code>DateTime</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~FilterRowCell.html)'| markdownify }}.
 
 </td>
 <td>
-When Boolean type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then CheckBoxEditor is loaded in FilterRowCell
+When Boolean type is bounded to the {{'[GridColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then <code>CheckBox</code> editor is loaded in {{'[FilterRowCell](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCellRenderer%602~FilterRowCell.html)'| markdownify }}.
 </td>
 <td>
-If we need the ComboBox and MultiSelectComboBox we have to set the {{'[FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html)'| markdownify }}.
+If we need the <code>ComboBox</code> and <code>MultiSelectComboBox</code> we have to set the {{'[FilterRowEditorType](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html)'| markdownify }}.
 
 </td>
 </tr>
@@ -235,7 +235,9 @@ The default filter condition is Begins With, the below filter conditions are ava
 <li>Null</li> 
 <li>Not Null</li> 
 <li>Begins With</li>
+<li>Does Not Begin With</li>
 <li>Ends With</li>
+<li>Does Not End With</li>
 <li>Contains</li>
 <li>Does Not Contain</li>
 <li>Empty</li>
@@ -435,7 +437,7 @@ public MainWindow()
 {% endtabs %}
 
 ### Customizing filter options for particular columns 
-By default, TextBox editor will display the string related conditions like Begins With, Ends With, Contains, Does Not Contain, Empty, Not Empty filter row conditions in drop down. The below code shows how to display the custom filter row conditions in TextBox editor by overriding the [OpenFilterOptionPopup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell~OpenFilterOptionPopup.html) method in a [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html) class.
+By default, TextBox editor will display the string related conditions like Begins With, Does Not Begin With, Ends With, Does Not End With, Contains, Does Not Contain, Empty, Not Empty filter row conditions in drop down. The below code shows how to display the custom filter row conditions in TextBox editor by overriding the [OpenFilterOptionPopup](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell~OpenFilterOptionPopup.html) method in a [GridFilterRowCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -843,7 +845,7 @@ public class GridFilterRowNumericRendererExt : GridFilterRowNumericRenderer
 
 ## Customizing GridFilterRowMultiSelectRenderer 
 
-By default, in SfDataGrid ComboBox is loaded while enter into edit mode in FilterRow but you can customize the GridFilterRowMultiSelectRenderer for display the combobox while FilterRow loading itself.
+By default, in SfDataGrid ComboBox is loaded while enter into edit mode in FilterRow but you can customize the [GridFilterRowMultiSelectRenderer] (https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowMultiSelectRenderer.html) for display the combobox while FilterRow loading itself.
 
 {% tabs %}
 {% highlight xaml %}
@@ -894,3 +896,8 @@ public class GridMultiSelectComboBoxRendererExt: GridFilterRowMultiSelectRendere
 ![WPF DataGrid filter row](FilterRow_images/FilterRow_img12.png)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GridMultiselect1545001818).
+
+## See Also
+[How to load the symbols in FilterRow and perform actions based on that ?](https://www.syncfusion.com/kb/9310)
+
+[How to show filter status message in SfDataGrid?](https://www.syncfusion.com/kb/7616)

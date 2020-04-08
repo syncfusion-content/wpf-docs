@@ -1,26 +1,55 @@
 ---
 layout: post
-title: Range Adorner | IntegerTextBox | wpf | Syncfusion
-description: range adorner
+title: Range Adorner in WPF IntegerTextBox control | Syncfusion
+description: Learn about Range Adorner support in Syncfusion WPF IntegerTextBox control and more details about the control features.
 platform: wpf
 control: IntegerTextBox 
 documentation: ug
 ---
 
-# Range Adorner
+# Range Adorner in WPF IntegerTextBox 
 
-The [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property is used to show the adorner range based on the minimum and maximum values given to that control.
+[Value](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~Value.html) of [IntegerTextBox](https://www.syncfusion.com/wpf-ui-controls/integer-textbox) can be visually indicated like a progress bar using range-adorner feature, this feature is disabled by default. You can show the adorner over `IntegerTextBox` control by setting [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property to `true`. Default value of `EnableRangeAdorner` is `false`. The adorner layer can be filled in the control area on the basis of the minimum and maximum values with considering the given value.  Range Adorner is not displayed when a `MinValue` or `MaxValue` property is not set.
 
-![Range adorner](Range-Adorner_images/Range-Adorner_img1.png)
+{% tabs %}
+{% highlight XAML %}
 
+<syncfusion:IntegerTextBox x:Name="integerTextBox" Value="63" MinValue="0" MaxValue="100" EnableRangeAdorner="True" />
 
-## Adding range adorner to an application 
+{% endhighlight %}
+{% highlight C# %}
 
-The [EnableRangeAdorner](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableRangeAdorner.html) property must be set either in XAML or the code file.
+IntegerTextBox integerTextBox = new IntegerTextBox();
+integerTextBox.MinValue = 0;
+integerTextBox.MaxValue = 100;
+integerTextBox.Value = 63;
+integerTextBox.EnableRangeAdorner =true;
 
-{%tabs%}
-{% highlight xaml %} EnableRangeAdorner="True" {% endhighlight %}
+{% endhighlight %}
+{% endtabs %}
 
-{% highlight C# %} control.EnableRangeAdorner = true;{% endhighlight %} 
+![IntegerTextBox default background of Range Adorner ](Range-Adorner_images/Range-Adorner_img1.png)
 
-{%endtabs%}
+## Changing background of range-adorner
+
+You can change the background color of the range adorner using [RangeAdornerBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~RangeAdornerBackground.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:IntegerTextBox x:Name="integerTextBox" MinValue="0" MaxValue="100" Value="57" EnableRangeAdorner="True" RangeAdornerBackground="LightGreen"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+IntegerTextBox integerTextBox = new IntegerTextBox();
+integerTextBox.MinValue = 0;
+integerTextBox.MaxValue = 100;
+integerTextBox.Value = 57;
+integerTextBox.EnableRangeAdorner = true;
+integerTextBox.RangeAdornerBackground = Brushes.LightGreen;
+
+{% endhighlight %}
+{% endtabs %}
+
+![IntegerTextBox customized background of Range Adorner ](Range-Adorner_images/Range-Adorner-Background_img1.png)

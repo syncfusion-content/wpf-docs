@@ -9,6 +9,11 @@ documentation: ug
 
 # Getting started with WPF DataGrid (SfDataGrid)
 
+This section provides a quick overview for working with the SfDataGrid for WPF. Walk through the entire process of creating a real world of this control.
+
+To get start quickly with WPF DataGrid, you can check on this video:
+<style>#WPFDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
+<iframe id='WPFDataGridVideoTutorial' src='https://www.youtube.com/embed/1t4nXyDA9l0'></iframe>
 
 ## Assembly deployment
 
@@ -171,7 +176,7 @@ namespace WpfApplication1
 
 SfDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
 
-1. Create data object class named “OrderInfo” and declare properties as shown below,
+1. Create data object class named **OrderInfo** and declare properties as shown below,
 
 {% tabs %}
 {% highlight c# %}
@@ -363,9 +368,9 @@ Property of type Bool.
 </tr>
 </table>
 
-When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingColumn_EV.html) event to customize or cancel the columns before they are added to the SfDataGrid. 
+When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingColumn_EV.html) event to `customize` or `cancel` the columns before they are added to the SfDataGrid. 
 
-You can prevent the automatic column generation by setting [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html# "") property to false. When [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html# "") property is false, you have to define the columns to be displayed as below,
+You can prevent the automatic column generation by setting [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html# "") property to `false`. When [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html# "") property is `false`, you have to define the columns to be displayed as below,
 
 {% tabs %}
 {% highlight xaml %}
@@ -506,7 +511,7 @@ Represents SfDataGrid column that hosts textual or template-specified content wh
 GridMultiColumnDropdownList
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[SfMultiColumnDropDownControl](http://help.syncfusion.com/wpf/sfmulticolumndropdown/overview)'|markdownify}} in its cells.
+Represents SfDataGrid column that hosts {{'[SfMultiColumnDropDownControl](https://help.syncfusion.com/wpf/multi-column-dropdown/overview)'|markdownify}} in its cells.
 </td>
 </tr>
 </table>

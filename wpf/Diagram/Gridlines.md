@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Gridlines are pattern of lines | Syncfusion.
-description: Visual guidance while dragging or arranging the objects
+description: How to create visual guidance while dragging or arranging the objects on the diagram page and how to customize the visual guidance appearance?
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Gridlines
+# How to add gridlines to diagram
 
 **Gridlines** are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 
@@ -16,11 +16,11 @@ The `SnapConstraints` property of SnapSettings class allows you to control the v
 {% tabs %}
 {% highlight xaml %}
 <!--Initialize SfDiagram-->
-<syncfusion:SfDiagram x:Name="diagram" >
-  <!--Initialize SnapSettings constraints to show Gridlines-->
-  <syncfusion:SfDiagram.SnapSettings >
-    <syncfusion:SnapSettings SnapConstraints="ShowLines"/>
-  </syncfusion:SfDiagram.SnapSettings>
+<syncfusion:SfDiagram x:Name="diagram">
+    <!--Initialize SnapSettings constraints to show Gridlines-->
+    <syncfusion:SfDiagram.SnapSettings>
+        <syncfusion:SnapSettings SnapConstraints="ShowLines"/>
+    </syncfusion:SfDiagram.SnapSettings>
 </syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight C# %}
@@ -153,19 +153,19 @@ SfDiagram diagram = new SfDiagram();
 Intervals intervals = new Intervals { 0.25, 10, 0.5, 20, 1, 30, 1.25, 40, 1.5, 50 };
 //Initialize Snap Setting constraints with HorizontalGridlines and VerticalGridlines values
 diagram.SnapSettings = new SnapSettings()
+{
+    SnapConstraints = SnapConstraints.ShowLines,
+    HorizontalGridlines = new Gridlines()
     {
-        SnapConstraints = SnapConstraints.ShowLines,
-        HorizontalGridlines = new Gridlines()
-            {
-                //Define lines interval value
-                LinesInterval = intervals,
-            },
-        VerticalGridlines = new Gridlines()
-            {
-                //Define lines interval value
-                LinesInterval = intervals,
-            },
-    };
+        //Define lines interval value
+        LinesInterval = intervals,
+    },
+    VerticalGridlines = new Gridlines()
+    {
+        //Define lines interval value
+        LinesInterval = intervals,
+    },
+};
 
 //Creates collection for the double values.
 public class Intervals : List<double>
@@ -178,6 +178,6 @@ public class Intervals : List<double>
 
 {% seealso %}
 
-[How to snap the objects on gridlines](/wpf/sfdiagram/snapping)
+[How to snap the objects on gridlines](/wpf/diagram/snapping/definesnapping)
 
 {% endseealso %}

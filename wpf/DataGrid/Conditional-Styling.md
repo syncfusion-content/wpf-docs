@@ -18,15 +18,19 @@ You can style the DataGrid and its inner elements (cells, rows and columns) cond
 <table>
 <tr>
 <td>
+<th>
 Approach
+</th>
 </td>
 <td>
+<th>
 Performance
+</th>
 </td>
 </tr>
 <tr>
 <td>
-Using Converter
+<code>Using Converter</code>
 </td>
 <td>
 Provide good performance when compared other two ways.
@@ -34,7 +38,7 @@ Provide good performance when compared other two ways.
 </tr>
 <tr>
 <td>
-Using Data Triggers
+<code>Using Data Triggers</code>
 </td>
 <td>
 When compared to converter, performance is slow while styling more number of columns or rows.
@@ -42,7 +46,7 @@ When compared to converter, performance is slow while styling more number of col
 </tr>
 <tr>
 <td>
-Using StyleSelector
+<code>Using StyleSelector</code>
 </td>
 <td>
 It affects scrolling performance while styling more number of columns based on number of columns visible.
@@ -435,7 +439,7 @@ Here, caption summary cells are customized based on `TotalPrice` summary value.
 
 ### Conditional styling of caption summary cells using style selector
 
-The appearance of caption summary cell can be customized conditionally based on summary value by setting [SfDataGrid.CaptionSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyleSelector.html) and you can get the container as GridCaptionSummaryCell using StyleSelector.
+The appearance of caption summary cell can be customized conditionally based on summary value by setting [SfDataGrid.CaptionSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyleSelector.html) and you can get the container as `GridCaptionSummaryCell` using StyleSelector.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1191,7 +1195,7 @@ Here, table summary cells are customized based on `TotalPrice` summary value.
 
 ### Conditional styling of table summary cell using style selector
 
-The appearance of table summary cell can be customized conditionally based on summary value by setting [SfDataGrid.TableSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyleSelector.html) and you can get the container as GridTableSummaryCell in StyleSelector.
+The appearance of table summary cell can be customized conditionally based on summary value by setting [SfDataGrid.TableSummaryCellStyleSelector](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyleSelector.html) and you can get the container as `GridTableSummaryCell` in StyleSelector.
 
 {% tabs %}
 {% highlight xaml %}

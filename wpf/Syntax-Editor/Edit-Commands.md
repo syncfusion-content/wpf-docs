@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit Commands of the Edit Control for WPF
-description: Explains about Edit Commands of the Edit Control for WPF
+title: Edit Commands | Syntax Editor | WPF | Syncfusion
+description: This section briefly explains how the Edit Command works in Syntax Editor for Syncfusion Essential WPF.
 platform: wpf
 control: Syntax Editor
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Edit Commands
 
-Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, and so on. The built-in RoutedUICommands can be bound to the edit control by using the **Command** property of the external controls such as button, menu item, and so on. The following lines of code can be used to bind the RoutedUICommands with external controls.
+Essential edit for WPF contains built-in RoutedUICommands for all editing and file operations such as select all, cut, copy, paste, new, open, save, save as and so on. The built-in RoutedUICommands can be bound to the edit control by using the **Command** property of the external controls such as button, menu item, and so on. The following lines of code can be used to bind the RoutedUICommands with external controls.
 
 {% tabs %}
 
@@ -24,6 +24,8 @@ Essential edit for WPF contains built-in RoutedUICommands for all editing and fi
 <MenuItem Command="{x:Static sfedit:EditCommands.Open}" CommandTarget="{Binding ElementName=Edit1}"/>
 
 <MenuItem Command="{x:Static sfedit:EditCommands.Save}" CommandTarget="{Binding ElementName=Edit1}"/>
+
+<MenuItem Command="{x:Static sfedit:EditCommands.SaveAs}" CommandTarget="{Binding ElementName=Edit1}"/>
 
 </MenuItem>
 
@@ -50,6 +52,6 @@ Grid.Row="1" >
 
 The following image displays **Open** edit command window.
 
-![](Edit-Commands_images/Edit-Commands_img1.jpeg)
+![Edit Commands enabled in Syntax Editor](Edit-Commands_images/Edit-Commands_img1.png)
 
 

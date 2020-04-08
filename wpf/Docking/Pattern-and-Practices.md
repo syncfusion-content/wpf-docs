@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Patterns and Practices of Syncfusion DockingManager control for WPF
-description: MVVM and PRISM support with DockingManager control
+description: Learn here about the MVVM and PRISM support with Essential studio Windows Forms DockingManager control
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -17,10 +17,10 @@ Here a simple text-reader application is used to demonstrate this approach.
 ![MVVM](PatternandPractices_images/PatternandPractices_img1.jpeg)
 
 
-1. `DocumentsView`: The pane that lists all the available documents and tooltip display the path of the document.
-2. `PropertiesView`: The pane that shows the properties of a document. Our PropertyGrid control is used here.
-3. `DocumentView`: The pane that uses the WPF flow-document reader to display the content of a file.
-4. `CommandView`: The view has two commands: `Open` Document and `Exit`. Executing an Open Document action opens the Open File Dialog. The document that opened, added to the existing documents list. Other commands like Close Document and New Document can also be implemented the same way.
+1. **DocumentsView** - The pane that lists all the available documents and tooltip display the path of the document.
+2. **PropertiesView** - The pane that shows the properties of a document. Our PropertyGrid control is used here.
+3. **DocumentView** - The pane that uses the WPF flow-document reader to display the content of a file.
+4. **CommandView** - The view has two commands: `Open` Document and `Exit`. Executing an Open Document action opens the Open File Dialog. The document that opened, added to the existing documents list. Other commands like Close Document and New Document can also be implemented the same way.
 5. The project structure looks like this:
 
 ![MVVM](PatternandPractices_images/PatternandPractices_img2.jpeg)
@@ -37,8 +37,6 @@ The adapter is simply a user control that contains DockingManager as its content
 
 </mvvm:dockingadapter>
 
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -51,6 +49,7 @@ The text-reader application maintains a collection of workspaces. A workspace ca
 The text-reader application is just for the sample and contains very basic operations.
 
 This article and sample intend to showcase the MVVM support for the docking manager.
+
 The adapter user control also determines the state of the element, whether it should be added to the DockingManager as a dock element or document tab.
 
 The adapter can be further customized to add elements as floating or auto-hidden.
@@ -73,41 +72,27 @@ Since WPF has an implicit template approach, it is easy to apply visuals to the 
 {% tabs %}
 
 {% highlight XAML %}
+
 <application.resources>
-
-<datatemplate datatype="{x:Type local:Document}">
-
-<grid>
-
-<local:documentview>
-
-</local:documentview></grid>
-
-</datatemplate>
-
-<datatemplate datatype="{x:Type local:DocumentsViewModel}">
-
-<grid>
-
-<local:documentsview>
-
-</local:documentsview></grid>
-
-</datatemplate>
-
-<datatemplate datatype="{x:Type local:PropertiesViewModel}">
-
-<grid>
-
-<local:propertiesview>
-
-</local:propertiesview></grid>
-
-</datatemplate>
-
+    <datatemplate datatype="{x:Type local:Document}">
+        <grid>
+            <local:documentview>
+            </local:documentview>
+        </grid>
+    </datatemplate>
+    <datatemplate datatype="{x:Type local:DocumentsViewModel}">
+        <grid>
+            <local:documentsview>
+            </local:documentsview>
+        </grid>
+    </datatemplate>
+    <datatemplate datatype="{x:Type local:PropertiesViewModel}">
+        <grid>
+            <local:propertiesview>
+            </local:propertiesview>
+        </grid>
+    </datatemplate>
 </application.resources>
-
-
 
 {% endhighlight %}
 
@@ -115,9 +100,7 @@ Since WPF has an implicit template approach, it is easy to apply visuals to the 
 
 Following this approach, the docking adapter can also be treated as a normal item control and can be used in any MVVM application.
 
-#### Sample link
-
-[http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip](http://www.syncfusion.com/downloads/Support/DirectTrac/94251/DockingDemo2143110883.zip)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm)
 
 ## MVVMLight
 
@@ -137,10 +120,9 @@ The following steps explains how to create sample project with MVVMLight templat
 
 4.Attach DockingAdapter project to the DockingManagerMVVMLight project from MVVM sample. Create necessary ViewModels and Views with perfect naming conventions. Once the ItemsSource has been set to DockingAdapter children will be populate.
 
-DockingManager MVVMLight sample has been created following the above steps and it can be downloaded from below link,
+DockingManager MVVMLight sample has been created following the above steps.
 
-#### Sample Link:
-[http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DockingDemo_MVVMLight601815308.zip)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-mvvm-light)
 
 ## Practice with PRISM
 
@@ -148,15 +130,11 @@ The following steps helps to create sample project in the PRISM 5.0.
 
 1.Create a New WPF project and add the following references to the solution project.
 
-Microsoft.Practices.Composite.dll
-
-Microsoft.Practices.Composite.Presentation.dll
-
-Microsoft.Practices.Composite.UnityExtensions.dll
-
-Microsoft.Practices.ServiceLocation.dll
-
-Microsoft.Practices.Unity.dll
+* Microsoft.Practices.Composite.dll
+* Microsoft.Practices.Composite.Presentation.dll
+* Microsoft.Practices.Composite.UnityExtensions.dll
+* Microsoft.Practices.ServiceLocation.dll
+* Microsoft.Practices.Unity.dll
 
 2.Rename MainWindow to Shell in the Project.
 
@@ -169,34 +147,18 @@ Here MainWindow is treated as shell, so returning the MainWindow in the CreateSh
 {% highlight C# %}
 
 public class BootStrapper : UnityBootstrapper
-
 {
-
-protected override System.Windows.DependencyObject CreateShell()
-
-{
-
-return new MainWindow();
-
+    protected override System.Windows.DependencyObject CreateShell()
+    {
+        return new MainWindow();
+    }
+    protected override void InitializeModules()
+    {
+        base.InitializeModules();
+        App.Current.MainWindow = (Window)this.Shell;
+        App.Current.MainWindow.Show();
+    }
 }
-
-protected override void InitializeModules()
-
-{
-
-base.InitializeModules();
-
-App.Current.MainWindow = (Window)this.Shell;
-
-App.Current.MainWindow.Show();
-
-}
-
-}
-
-
-
-
 
 {% endhighlight %}
 
@@ -204,27 +166,15 @@ App.Current.MainWindow.Show();
 
 Public Class BootStrapper
 	Inherits UnityBootstrapper
-
-Protected Overrides Function CreateShell() As System.Windows.DependencyObject
-
-
-Return New MainWindow()
-
-End Function
-
-Protected Overrides Sub InitializeModules()
-
-
-MyBase.InitializeModules()
-
-App.Current.MainWindow = CType(Me.Shell, Window)
-
-App.Current.MainWindow.Show()
-
-End Sub
-
+    Protected Overrides Function CreateShell() As System.Windows.DependencyObject
+        Return New MainWindow()
+    End Function
+    Protected Overrides Sub InitializeModules()
+        MyBase.InitializeModules()
+        App.Current.MainWindow = CType(Me.Shell, Window)
+        App.Current.MainWindow.Show()
+    End Sub
 End Class 
-
 
 {% endhighlight %}
 
@@ -238,21 +188,13 @@ End Class
 {% highlight C# %}
 
 public partial class App : Application
-
 {
-
-protected override void OnStartup(StartupEventArgs e)
-
-{
-
-base.OnStartup(e);
-
-Bootstrapper bootstrapper = new Bootstrapper();
-
-bootstrapper.Run();
-
-}
-
+    protected override void OnStartup(StartupEventArgs e)
+    {
+        base.OnStartup(e);
+        Bootstrapper bootstrapper = new Bootstrapper();
+        bootstrapper.Run();
+    }
 }
 
 {% endhighlight %}
@@ -261,19 +203,11 @@ bootstrapper.Run();
 
 Partial Public Class App
 	Inherits Application
-
-
-Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
-
-
-MyBase.OnStartup(e)
-
-Dim bootstrapper As New Bootstrapper()
-
-bootstrapper.Run()
-
-End Sub
-
+        Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
+        MyBase.OnStartup(e)
+            Dim bootstrapper As New Bootstrapper()
+            bootstrapper.Run()
+        End Sub
 End Class 
 
 {% endhighlight %}
@@ -282,13 +216,10 @@ End Class
 
 
 5.Next, create regions in the shell. To do this, first add the following namespace in the shell Window.
+
 {% highlight XAML %}
 
 xmlns:prsm="http://www.codeplex.com/prism"
-
-
-
-
 
 {% endhighlight %}
 
@@ -297,31 +228,18 @@ In the following code example, a region called “MainRegion” has been created
 {% tabs %}
 
 {% highlight XAML %}
+
 <Window x:Class="DockingManagerPrism.App.MainWindow "
-
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-xmlns:prsm="http://www.codeplex.com/prism"
-
-Title="MainWindow" Height="350" Width="525">
-
-<Grid>
-
-<syncfusion:DockingManager prsm:RegionManager.RegionName="MainRegion"  DockFill="True">
-
-</syncfusion:DockingManager>
-
-</Grid>
-
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:prsm="http://www.codeplex.com/prism"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <syncfusion:DockingManager prsm:RegionManager.RegionName="MainRegion"  DockFill="True">
+        </syncfusion:DockingManager>
+    </Grid>
 </Window>
-
-
-
-
 
 {% endhighlight %}
 
@@ -352,33 +270,20 @@ Also add the following Prism assemblies:
 {% highlight C# %}
 
 protected override void ConfigureModuleCatalog()
-
 {
-
-base.ConfigureModuleCatalog();
-
-ModuleCatalog moduleCatalog = (ModuleCatalog)this.ModuleCatalog;
-
-moduleCatalog.AddModule(typeof(DockingModule));
-
+    base.ConfigureModuleCatalog();
+    ModuleCatalog moduleCatalog = (ModuleCatalog)this.ModuleCatalog;
+    moduleCatalog.AddModule(typeof(DockingModule));
 }
 
-
-
 {% endhighlight %}
-
 
 {% highlight VB %}
 
 Protected Overrides Sub ConfigureModuleCatalog()
-
-
-MyBase.ConfigureModuleCatalog()
-
-Dim moduleCatalog As ModuleCatalog = CType(Me.ModuleCatalog, ModuleCatalog)
-
-moduleCatalog.AddModule(GetType(DockingModule))
-
+    MyBase.ConfigureModuleCatalog()
+    Dim moduleCatalog As ModuleCatalog = CType(Me.ModuleCatalog, ModuleCatalog)
+    moduleCatalog.AddModule(GetType(DockingModule))
 End Sub 
 
 {% endhighlight %}
@@ -390,22 +295,18 @@ End Sub
 {% tabs %}
 
 {% highlight XAML %}
+
 <UserControl x:Class="DockingManagerPrism.Modules.BottomLeftModule"
-           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-           xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
-           xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-           syncfusion:DockingManager.Header="BottomLeftModule" syncfusion:DockingManager.State="Dock"
-           syncfusion:DockingManager.SideInDockedMode="Left" d:DesignHeight="300" d:DesignWidth="300">
-
-<Grid>
-
-</Grid>
-
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
+            xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+            syncfusion:DockingManager.Header="BottomLeftModule" syncfusion:DockingManager.State="Dock"
+            syncfusion:DockingManager.SideInDockedMode="Left" d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+    </Grid>
 </UserControl>
-
-
 
 {% endhighlight %}
 
@@ -418,35 +319,21 @@ After creating View for the Module, register the view as Module using the follow
 {% tabs %}
 
 {% highlight C# %}
+
 public class DockingModule : IModule
-
 {
-
-private readonly IRegionManager regionManager;
-
-public DockingModule(IRegionManager regionManager)
-
-{
-
-this.regionManager = regionManager;
-
+    private readonly IRegionManager regionManager;
+    public DockingModule(IRegionManager regionManager)
+    {
+        this.regionManager = regionManager;
+    }
+    public void Initialize()
+    {
+        regionManager.RegisterViewWithRegion("MainRegion", typeof(BottomLeftModule));
+        regionManager.RegisterViewWithRegion("MainRegion", typeof(BottomRightModule));
+        regionManager.RegisterViewWithRegion("MainRegion", typeof(TopModule));
+    }
 }
-
-public void Initialize()
-
-{
-
-regionManager.RegisterViewWithRegion("MainRegion", typeof(BottomLeftModule));
-
-regionManager.RegisterViewWithRegion("MainRegion", typeof(BottomRightModule));
-
-regionManager.RegisterViewWithRegion("MainRegion", typeof(TopModule));
-
-}
-
-}
-
-
 
 {% endhighlight %}
 
@@ -454,28 +341,15 @@ regionManager.RegisterViewWithRegion("MainRegion", typeof(TopModule));
 
 Public Class DockingModule
 	Implements IModule
-
-
-Private ReadOnly regionManager As IRegionManager
-
-Public Sub New(ByVal regionManager As IRegionManager)
-
-
-Me.regionManager = regionManager
-
-End Sub
-
-Public Sub Initialize()
-
-
-regionManager.RegisterViewWithRegion("MainRegion", GetType(BottomLeftModule))
-
-regionManager.RegisterViewWithRegion("MainRegion", GetType(BottomRightModule))
-
-regionManager.RegisterViewWithRegion("MainRegion", GetType(TopModule))
-
-End Sub
-
+    Private ReadOnly regionManager As IRegionManager
+    Public Sub New(ByVal regionManager As IRegionManager)
+        Me.regionManager = regionManager
+    End Sub
+    Public Sub Initialize()
+        regionManager.RegisterViewWithRegion("MainRegion", GetType(BottomLeftModule))
+        regionManager.RegisterViewWithRegion("MainRegion", GetType(BottomRightModule))
+        regionManager.RegisterViewWithRegion("MainRegion", GetType(TopModule))
+    End Sub
 End Class 
 
 {% endhighlight %}
@@ -517,17 +391,11 @@ Essential WPF controls are flexible with all the `Prism` versions. This section 
 {% highlight XAML %}
 
 <Window x:Class="DockingManagerPrism.App.MainWindow "
-
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-xmlns:prism="http://prismlibrary.com/"
-
-Title="MainWindow" Height="350" Width="525">
-
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:prism="http://prismlibrary.com/"
+        Title="MainWindow" Height="350" Width="525">
 </Window>
 
 {% endhighlight %}
@@ -559,11 +427,8 @@ When we create an instance for Shell, it will resolve the value of the RegionMan
 {% highlight C# %}
 
 using System.Windows;
-
 using Microsoft.Practices.Unity;
-
 using Prism.Unity;
-
 using Prism.Modularity;
 
 {% endhighlight %}
@@ -579,35 +444,20 @@ using Prism.Modularity;
 {% highlight C# %}
 
 public class Bootstrapper: UnityBootstrapper 
-
 {
-
-protected override DependencyObject CreateShell()
-
-{
-
-return Container.Resolve<Shell>();
-
-}
-
-protected override void InitializeShell()
-
-{
-
-Application.Current.MainWindow.Show();
-
-}
-
-protected override void ConfigureModuleCatalog()
-
-{
-
-ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
-
-// Need to add the module catalogs here
-
-}
-
+    protected override DependencyObject CreateShell()
+    {
+        return Container.Resolve<Shell>();
+    }
+    protected override void InitializeShell()
+    {
+        Application.Current.MainWindow.Show();
+    }
+    protected override void ConfigureModuleCatalog()
+    {
+        ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
+        // Need to add the module catalogs here
+    }
 }
 
 {% endhighlight %}
@@ -621,15 +471,10 @@ ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
 {% highlight C# %}
 
 protected override void OnStartup(StartupEventArgs e)
-
 {
-
-base.OnStartup(e);
-
-Bootstrapper bootstrapper = new Bootstrapper();
-
-bootstrapper.Run();
-
+    base.OnStartup(e);
+    Bootstrapper bootstrapper = new Bootstrapper();
+    bootstrapper.Run();
 }
 
 {% endhighlight %}
@@ -647,57 +492,31 @@ bootstrapper.Run();
 {% highlight XAML %}
 
 <UserControl x:Class="Program.ProgramView"
-
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-
-xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-
-mc:Ignorable="d"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-syncfusion:DockingManager.Header="Program.cs"
-
-syncfusion:DockingManager.State="Document"
-
-d:DesignHeight="300" d:DesignWidth="200">
-
-<Grid>
-
-<StackPanel Orientation="Vertical">
-
-<TextBlock Text="using System;"/>
-
-<TextBlock Text="using System.Windows;"/>
-
-<TextBlock Text="using System.Windows.Controls;"/>
-
-<TextBlock Text="using System.Windows.Data;"/>
-
-<TextBlock Text="using System.Text;"/>
-
-<TextBlock Text=""/>
-
-<TextBlock Text="namespace Program"/>
-
-<TextBlock Text=" {"/>
-
-<TextBlock Text="     public class MyProgram"/>
-
-<TextBlock Text=" {"/>
-
-<TextBlock Text=""/>
-
-<TextBlock Text=" }"/>
-
-<TextBlock Text="}"/>
-
-</StackPanel>
-
-</Grid>
-
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             syncfusion:DockingManager.Header="Program.cs"
+             syncfusion:DockingManager.State="Document"
+             d:DesignHeight="300" d:DesignWidth="200">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="using System;"/>
+            <TextBlock Text="using System.Windows;"/>
+            <TextBlock Text="using System.Windows.Controls;"/>
+            <TextBlock Text="using System.Windows.Data;"/>
+            <TextBlock Text="using System.Text;"/>
+            <TextBlock Text=""/>
+            <TextBlock Text="namespace Program"/>
+            <TextBlock Text="{"/>
+            <TextBlock Text="public class MyProgram"/>
+            <TextBlock Text=" {"/>
+            <TextBlock Text=""/>
+            <TextBlock Text=" }"/>
+            <TextBlock Text="}"/>
+        </StackPanel>
+    </Grid>
 </UserControl>
 
 {% endhighlight %}
@@ -711,27 +530,16 @@ d:DesignHeight="300" d:DesignWidth="200">
 {% highlight C# %}
 
 public class ProgramModule : IModule
-
 {
-
-private readonly IRegionManager regionManager;
-
-public ProgramModule(IRegionManager regionManager)
-
-{
-
-this.regionManager = regionManager;
-
-}
-
-public void Initialize()
-
-{
-
-regionManager.RegisterViewWithRegion("MainRegion", typeof(ProgamView));
-
-}
-
+    private readonly IRegionManager regionManager;
+    public ProgramModule(IRegionManager regionManager)
+    {
+        this.regionManager = regionManager;
+    }
+    public void Initialize()
+    {
+        regionManager.RegisterViewWithRegion("MainRegion", typeof(ProgamView));
+    }
 }
 
 {% endhighlight %}
@@ -745,17 +553,11 @@ regionManager.RegisterViewWithRegion("MainRegion", typeof(ProgamView));
 {% highlight C# %}
 
 protected override void ConfigureModuleCatalog()
-
 {
-
-ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
-
-catalog.AddModule(typeof(SolutionExplorer.SolutionExplorerModule));
-
-catalog.AddModule(typeof(Toolbox.ToolboxModule));
-
-catalog.AddModule(typeof(Program.ProgramModule));
-
+    ModuleCatalog catalog = (ModuleCatalog)ModuleCatalog;
+    catalog.AddModule(typeof(SolutionExplorer.SolutionExplorerModule));
+    catalog.AddModule(typeof(Toolbox.ToolboxModule));
+    catalog.AddModule(typeof(Program.ProgramModule));
 }
 
 {% endhighlight %}
@@ -773,55 +575,29 @@ Create a ClassLibrary project for defining the region adapter and the class shou
 {% highlight C# %}
 
 public class DockingManagerRegionAdapter : RegionAdapterBase<DockingManager>
-
 {
-
-public DockingManagerRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory)
-
-: base(regionBehaviorFactory)
-
-{
-
-}
-
-protected override void Adapt(IRegion region, DockingManager regionTarget)
-
-{
-
-region.Views.CollectionChanged += delegate
-
-{
-
-foreach (var child in region.Views.Cast<UserControl>())
-
-{
-
-if (!regionTarget.Children.Contains(child))
-
-{
-
-regionTarget.BeginInit();
-
-regionTarget.Children.Add(child);
-
-regionTarget.EndInit();
-
-}
-
-}
-
-};
-
-}
-
-protected override IRegion CreateRegion()
-
-{
-
-return new AllActiveRegion();
-
-}
-
+    public DockingManagerRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory) : base(regionBehaviorFactory)
+    {
+    }
+    protected override void Adapt(IRegion region, DockingManager regionTarget)
+    {
+        region.Views.CollectionChanged += delegate
+        {
+            foreach (var child in region.Views.Cast<UserControl>())
+            {
+                if (!regionTarget.Children.Contains(child))
+                {
+                    regionTarget.BeginInit();
+                    regionTarget.Children.Add(child);
+                    regionTarget.EndInit();
+                }
+            }
+        };
+    }
+    protected override IRegion CreateRegion()
+    {
+        return new AllActiveRegion();
+    }
 }
 
 {% endhighlight %}
@@ -837,21 +613,13 @@ Add reference to RegionAdapter project from the main application. Region adapter
 {% highlight C# %}
 
 protected override Prism.Regions.RegionAdapterMappings ConfigureRegionAdapterMappings()
-
 {
-
-RegionAdapterMappings regionAdapterMappings = base.ConfigureRegionAdapterMappings();
-
-if (regionAdapterMappings != null)
-
-{
-
-regionAdapterMappings.RegisterMapping(typeof(DockingManager), Container.Resolve<DockingManagerRegionAdapter.DockingManagerRegionAdapter>());
-
-}
-
-return regionAdapterMappings;
-
+    RegionAdapterMappings regionAdapterMappings = base.ConfigureRegionAdapterMappings();
+    if (regionAdapterMappings != null)
+    {
+        regionAdapterMappings.RegisterMapping(typeof(DockingManager), Container.Resolve<DockingManagerRegionAdapter.DockingManagerRegionAdapter>());
+    }
+    return regionAdapterMappings;
 }
 
 {% endhighlight %}
@@ -862,6 +630,379 @@ The final output of application is given below:
 
 ![Configure the region adapter mappings](PatternandPractices_images/Patterns-and-Practices.jpeg)
 
-#### **Sample link:** [PRISM Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PRISM_6_DockingManager_Demo1726639343.zip)
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism/tree/master/PRISM-6.1)
 
+## Configuring DockingManager with Prism 7.1
 
+This section explains about creating a simple application using `DockingManager` in `PRISM 7.1` pattern. 
+
+### Setting up WPF application
+
+**Step 1:** Create a WPF application and rename the file `MainWindow.xaml` as `Shell.xaml` and `MainWindow.xaml.cs` as `Shell.xaml.cs`.
+  
+**Step 2:** Rename the class name MainWindow as Shell in all the occurrences. 
+ 
+**Step 3:** Add the following required assembly references to the project:
+
+   * Prism
+   * Prism.WPF
+   * Prism.Unity.WPF
+   * Microsoft.Practices.ServiceLocation
+   * Microsoft.Practices.Unity
+   * Microsoft.Practices.Unity.Configuration
+   * Microsoft.Practices.Unity.RegistrationByConvention
+
+**Step 4:** In the Shell.xaml file, add the namespace definition for Prism Library as given below:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Window x:Class="DockingManagerPrism.App.MainWindow "
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:prism="http://prismlibrary.com/"
+        Title="MainWindow" Height="350" Width="525">
+</Window>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 5:** Create an instance of the control in Shell.xaml file and set the attached property `RegionManager.RegionName` for it. Here we have used `DockingManager` control.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:DockingManager prism:RegionManager.RegionName="MainRegion" UseDocumentContainer="True" DockFill="True" DockFillDocumentMode="Normal"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+When we create an instance for Shell, it will resolve the value of the RegionManager.RegionName attached property and create a region for connecting it with the DockingManager. 
+
+**Step 6:** Add the following required assembly references in App.xaml.cs file.
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Prism.Ioc;
+using Prism.Modularity;
+using Prism.Regions;
+using Prism.Unity;
+using System.Windows;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 7:** Inherit the App class from `PrismApplication` in App.xaml.cs file.
+
+{% tabs %}
+
+{% highlight C# %}
+
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : PrismApplication
+{
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 8:** Override the methods `CreateShell`, `RegisterTypes` and `CreateModuleCatalog` as given below.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public partial class App : PrismApplication
+{
+    protected override Window CreateShell()
+    {
+        return Container.Resolve<Shell>();
+    }
+
+    protected override void RegisterTypes(IContainerRegistry containerRegistry)
+    {
+
+    }
+    
+    protected override IModuleCatalog CreateModuleCatalog()
+    {
+        ModuleCatalog catalog = new ModuleCatalog();
+        // Need to add the module catalogs here
+        return catalog;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding modules to the project
+
+**Step 1:** Create as ClassLibrary projects for the modules. Here three class libraries are created for three modules.
+
+**Step 2:** Design views for all the modules in their projects as required. We have created UserControl as views and configured the attached properties of `DockingManager` for it. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<UserControl x:Class="Program.ProgramView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+             syncfusion:DockingManager.Header="Program.cs"
+             syncfusion:DockingManager.State="Document"
+             d:DesignHeight="300" d:DesignWidth="200">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="using System;"/>
+            <TextBlock Text="using System.Windows;"/>
+            <TextBlock Text="using System.Windows.Controls;"/>
+            <TextBlock Text="using System.Windows.Data;"/>
+            <TextBlock Text="using System.Text;"/>
+            <TextBlock Text=""/>
+            <TextBlock Text="namespace Program"/>
+            <TextBlock Text="{"/>
+            <TextBlock Text="public class MyProgram"/>
+            <TextBlock Text=" {"/>
+            <TextBlock Text=""/>
+            <TextBlock Text=" }"/>
+            <TextBlock Text="}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 3:** Create a class implementing IModule interface for all the modules in your project. Using `OnInitialized` method register the view to the region using region name (`MainRegion`).
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class ProgramModule : IModule
+{
+    public void OnInitialized(IContainerProvider containerProvider)
+    {
+        var regionManager = containerProvider.Resolve<IRegionManager>();
+        regionManager.RegisterViewWithRegion("MainRegion", typeof(ProgramView));
+    }
+
+    public void RegisterTypes(IContainerRegistry containerRegistry)
+    {
+            
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 4:** Add all the modules as reference projects in main application. Add all modules to module catalog and also register it in App.xaml.cs as given below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override void RegisterTypes(IContainerRegistry containerRegistry)
+{
+    containerRegistry.RegisterForNavigation<Toolbox.ToolboxModule>();
+    containerRegistry.RegisterForNavigation<Program.ProgramModule>();
+     containerRegistry.RegisterForNavigation<SolutionExplorer.SolutionExplorerModule>();
+}
+
+protected override IModuleCatalog CreateModuleCatalog()
+{
+    ModuleCatalog catalog = new ModuleCatalog();
+    catalog.AddModule(typeof(Toolbox.ToolboxModule));
+    catalog.AddModule(typeof(Program.ProgramModule));
+    catalog.AddModule(typeof(SolutionExplorer.SolutionExplorerModule));
+    return catalog;
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Create RegionAdapter for DockingManager
+
+So, far implementations will work as expected for an ItemsControl. Since `DockingManager` is not an ItemsControl, we need a region adapter to notify that regions should be mapped into Children property. 
+
+**Step 1:** Create a ClassLibrary project for defining the region adapter and the class should inherit from `RegionAdapterBase` class. In that override the methods, `Adapt` and `CreateRegion`. There are three types of region class to create a region based on the `ContentControlRegionAdapter`, `ItemsControlRegionAdapter` and `SelectorRegionAdapter` as follows: 
+
+* SingleActiveRegion - The Region that allows a maximum of one active view at a time.
+* AllActiveRegion - The Region that keeps all the views in it as active and de-activation of views are not allowed.
+* Region - The Region that allows multiple active views and and de-activation of views are allowed.
+
+In Adapt method, add the regions to DockingManager.Children whenever the regions collection is changed as shown below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class DockingManagerRegionAdapter : RegionAdapterBase<DockingManager>
+{
+    public DockingManagerRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory)
+            : base(regionBehaviorFactory)
+    {
+
+    }
+
+    protected override void Adapt(IRegion region, DockingManager regionTarget)
+    {
+        region.Views.CollectionChanged += (s, e) =>
+        {
+            if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (FrameworkElement element in e.NewItems)
+                {
+                    if (!regionTarget.Children.Contains(element))
+                    {
+                        regionTarget.BeginInit();
+                        regionTarget.Children.Add(element);
+                        regionTarget.EndInit();
+                    }
+                }
+            }
+        };
+    }
+       
+    protected override IRegion CreateRegion()
+    {
+        return new SingleActiveRegion();
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 2:** Also, we can activate and deactivate views by creating a behavior class and the class should inherit from `RegionBehavior`, `IHostAwareRegionBehavior` classes. In below code example, shown how to activate and deactivate the document views using `ActiveDocumentChanged` event of `DocumentContainer`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+public class DocumentRegionActiveAwareBehavior : RegionBehavior, IHostAwareRegionBehavior
+{
+    public const string BehaviorKey = "DocumentRegionActiveAwareBehavior";
+    DependencyObject _hostControl;
+    public DependencyObject HostControl
+    {
+        get { return _hostControl; }
+        set { _hostControl = value as DockingManager; }
+    }
+
+    protected override void OnAttach()
+    {
+        ((HostControl as DockingManager).DocContainer as DocumentContainer).AddTabDocumentAtLast = true;
+        ((HostControl as DockingManager).DocContainer as DocumentContainer).ActiveDocumentChanged += DocumentRegionActiveAwareBehavior_ActiveDocumentChanged;
+    }
+
+    private void DocumentRegionActiveAwareBehavior_ActiveDocumentChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    {
+        if (e.OldValue != null)
+        {
+            var item = e.OldValue;
+
+            //are we dealing with a ContentPane directly
+            if (Region.Views.Contains(item) && Region.ActiveViews.Contains(item))
+            {
+                Region.Deactivate(item);
+            }
+            else
+            {
+                //now check to see if we have any views that were injected
+                var contentControl = item as ContentControl;
+                if (contentControl != null)
+                {
+                    var injectedView = contentControl.Content;
+                    if (Region.Views.Contains(injectedView) && Region.ActiveViews.Contains(injectedView))
+                        Region.Deactivate(injectedView);
+                }
+            }
+        }
+
+        if (e.NewValue != null)
+        {
+            var item = e.NewValue;
+
+            //are we dealing with a ContentPane directly
+            if (Region.Views.Contains(item) && !this.Region.ActiveViews.Contains(item))
+            {
+                Region.Activate(item);
+            }
+            else
+            {
+                //now check to see if we have any views that were injected
+                var contentControl = item as ContentControl;
+                if (contentControl != null)
+                {
+                    var injectedView = contentControl.Content;
+                    if (Region.Views.Contains(injectedView) && !this.Region.ActiveViews.Contains(injectedView))
+                        Region.Activate(injectedView);
+                }
+            }
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Step 3:** Override the method `AttachBehaviors` in `DockingManagerRegionAdapter` class and add the created behavior to the region as like below code snippet:
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override void AttachBehaviors(IRegion region, DockingManager regionTarget)
+{
+    base.AttachBehaviors(region, regionTarget);
+    if (!region.Behaviors.ContainsKey(DocumentRegionActiveAwareBehavior.BehaviorKey))
+        region.Behaviors.Add(DocumentRegionActiveAwareBehavior.BehaviorKey, new DocumentRegionActiveAwareBehavior { HostControl = regionTarget });
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Configure the region adapter mappings
+
+Add reference to RegionAdapter project from the main application. Region adapter mapping have to be performed in `App` class. Override the method `ConfigureRegionAdapterMappings` and set the mapping as given below:
+
+{% tabs %}
+
+{% highlight C# %}
+
+protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
+{
+    base.ConfigureRegionAdapterMappings(regionAdapterMappings);
+    regionAdapterMappings.RegisterMapping(typeof(DockingManager), Container.Resolve<DockingManagerRegionAdapter.DockingManagerRegionAdapter>());
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The final output of application is given below:
+
+![WPF DockingManager with prism 7.1](PatternandPractices_images/wpf-docking-manager-prism-7.1.png)
+
+N> [Download sample from GitHub](https://github.com/SyncfusionExamples/working-with-wpf-docking-manager-and-prism/tree/master/PRISM-7.1)

@@ -186,7 +186,7 @@ Follow the below steps to add custom comparer to sort using custom logic,
 
 ### Define custom comparer with custom sort logic
 
-In the below code snippet, CustomerName property is compared based on its string length, instead of default string comparison.  
+In the below code snippet, `CustomerName` property is compared based on its string length, instead of default string comparison.  
 
 {% tabs %}
 {% highlight c# %}
@@ -259,7 +259,7 @@ Custom comparer can be added to [SfDataGrid.SortComparers](http://help.syncfusio
 
 {% tabs %}
 {% highlight xaml %}
-xmlns:linq="clr-namespace:Syncfusion.Data;assembly=Syncfusion.Data.WPF"
+<xmlns:linq="clr-namespace:Syncfusion.Data;assembly=Syncfusion.Data.WPF">
 
 <syncfusion:SfDataGrid  x:Name="dataGrid"
                         AllowSorting="True"
@@ -363,3 +363,14 @@ void dataGrid_SortColumnsChanging(object sender, Syncfusion.UI.Xaml.Grid.GridSor
 
 [SfDataGrid.SortColumnsChanged](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~SortColumnsChanged_EV.html) event occurs when the sorting is applied to the column.
 [GridSortColumnsChangedEventArgs](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSortColumnsChangedEventArgs.html) provides information for `SortColumnsChanged` event. 
+
+## See Also
+[How to sort a column in WPF DataGrid?](https://www.syncfusion.com/kb/10797)
+
+[How to customize the Filtering and Sorting icons in the SfDataGrid ?](https://www.syncfusion.com/kb/8184)
+
+[How to sort multiple column without pressing Ctrl key in SfDataGrid?](https://www.syncfusion.com/kb/7160)
+
+[How to change the position of FilterToggleButton and SortIcon in header cell of SfDataGrid?](https://www.syncfusion.com/kb/4052)
+
+[How to sort your binded collection of ViewModel?](https://www.syncfusion.com/kb/2461)

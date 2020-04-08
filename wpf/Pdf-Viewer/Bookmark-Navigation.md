@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Bookmark Navigation
+# Bookmark Navigation in WPF Pdf Viewer
 
 PDF Viewer control allows users to navigate to the bookmarks present in the loaded PDF document at UI level. 
 
@@ -47,6 +47,35 @@ Dim bookmark As PdfBookmarkBase = loadedDocument.Bookmarks
 
 `Navigate to the specified bookmark destination offset
 pdfDocumentView.GoToBookmark(bookmark(0))
+
+{% endhighlight %}
+{% endtabs %}
+
+You can also perform the same in [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) using the [GotoBookmark(PdfBookmark)](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~GoToBookmark.html) method. Refer to the following code sample.
+
+{% tabs %}
+{% highlight c# %}
+
+//Loads the PDF document in PdfLoadedDocument
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(documentStream);
+
+//Retrieves the bookmark collection from the loaded PDF document
+PdfBookmarkBase bookmark = loadedDocument.Bookmarks;
+
+//Navigate to the specified bookmark destination offset
+pdfViewerControl.GoToBookmark(bookmark[0]);
+
+{% endhighlight %}
+{% highlight VB %}
+
+`Loads the PDF document in PdfLoadedDocument
+Dim loadedDocument As PdfLoadedDocument = New PdfLoadedDocument(documentStream)
+
+`Retrieves the bookmark collection from the loaded PDF document
+Dim bookmark As PdfBookmarkBase = loadedDocument.Bookmarks
+
+`Navigate to the specified bookmark destination offset
+pdfViewerControl.GoToBookmark(bookmark(0))
 
 {% endhighlight %}
 {% endtabs %}
