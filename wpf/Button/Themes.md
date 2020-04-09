@@ -11,7 +11,7 @@ documentation: ug
 
 Button supports various themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provided support to create custom theme using [Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio).
 
-# Applying themes using SkinManager
+## Applying themes using SkinManager
 
 The appearance of Button control can be customized by using [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.SfSkinManager.html). The list of available themes and assemblies can be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
 
