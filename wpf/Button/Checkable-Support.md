@@ -1,40 +1,37 @@
 ---
 layout: post
-title: Checkable Support | ToedittheButtonAdv | wpf | Syncfusion
-description: checkable support
+title: Button | Toggle Button | WPF | Syncfusion
+description: This section explores how to use button control as a toggle button, similar to the on/off view, based on the requirement.
 platform: wpf
 control: ButtonAdv
 documentation: ug
 ---
 
-# Checkable Support
+# Checkable support in WPF Button (ButtonAdv)
 
-The ButtonAdv Control can also be used as checkboxes, if the IsCheckable property is set to true.
+The button control can also be used as a toggle button, similar to the on/off view when the [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsCheckable.html) property is set to **true**. The default value of this property is **false**.
 
-You can set the ButtonAdv control in checked state using the following code examples:
+N> In addition to [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsCheckable.html) property, the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsChecked.html) property helps to check the button by default. In other words, during initial rendering, the button will appear in **on** state using the later property.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv SizeMode="Normal" IsCheckable="True" IsChecked="True"/>
+    <syncfusion:ButtonAdv Label="Log-in" SmallIcon="image/employee.png" SizeMode="Normal" IsCheckable="True" IsChecked="True"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-ButtonAdv button = new ButtonAdv();
+    ButtonAdv button = new ButtonAdv();
+    button.Label = "Log-in";
+    button.SizeMode = SizeMode.Normal;
+    button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+    button.IsCheckable = true;
+    button.IsChecked = true;
 
-button.Label = "Hello World";
-
-button.SizeMode = SizeMode.Large;
-
-button.SmallIcon = new BitmapImage(new Uri("employee.png"));
-
-button.IsCheckable = true;button.IsChecked = true;
-
-{% endhighlight  %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Checkable Image](Checkable-Support_images/Checkable-Support_img1.png)
 
-Checkable ButtonAdv Control
+Checkable Button control
 {:.caption}
