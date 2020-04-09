@@ -7,7 +7,7 @@ control: ThemeStudio
 documentation: ug
 ---
 
-# Overview
+# WPF Theme Studio Overview
 
 The WPF Theme Studio helps users transform their visual presentation into a new theme in minutes. End users can select an appropriate base theme, change its primary color, preview and export it as a theme project, and utilize it in their applications for a rich user interface experience.
 
@@ -131,7 +131,7 @@ Ensure that `sf.snk` path is commented out which is located below the assembly v
 
 **Step 3:**
 
-To generate theme assembly, use the private key pair if it is already created by referring it to the exported theme project in signing tab inside the application properties or [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) through visual studio if the private key pair is not created. 
+To generate theme assembly, use the private key pair if it is already created by referring it to the exported theme project in signing tab inside the application properties or [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) through Visual Studio if the private key pair is not created. 
 
 Click the `Sign the assembly` checkbox to use the private key pair for generating theme assembly. Ensure that exported theme project should be rebuild through `Release` mode for generating theme assembly.
 
