@@ -736,13 +736,15 @@ A single tile or a group of tiles can be frozen by using [Freeze](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-Single tile:
-
 ![wpf hubtile freeze a single tile](Getting-Started_images/wpf-hubtile-single-tile-freezing.png)
 
-Group of tiles:
+Single tile
+{:.caption}
 
 ![wpf hubtile freeze a group of tiles](Getting-Started_images/wpf-hubtile-freezebygroupname.png)
+
+Group of tiles
+{:.caption}
 
 A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) method.
  
