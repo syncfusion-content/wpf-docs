@@ -162,4 +162,4 @@ Reset parameter is used to define the behavior of Reset Command.
 {% endhighlight %}
 {% endtabs %}
 
-Please find the [Zoom and Reset Command Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Zoom_Command1860880159) to depict these commands.
+Please find the [Zoom and Reset Command Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Zoom%20Command) to depict these commands.

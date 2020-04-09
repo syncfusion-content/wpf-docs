@@ -65,4 +65,4 @@ documentation: ug
 ![ExpandCollapse](Commands_Images/Commands_img21.gif)
 
 
-Please find the [ExpandCollapse sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Expand_and_Collapse_command-1346555197) to depict this command.
+Please find the [ExpandCollapse sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Expand%20and%20Collapse%20command) to depict this command.

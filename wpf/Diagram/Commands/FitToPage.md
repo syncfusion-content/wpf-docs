@@ -61,4 +61,4 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ![Region](Commands_Images/Commands_img20.gif)
 
-Please find the [Fit to page sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Fit_to_page_command1640128507) to depict this command.
+Please find the [Fit to page sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Fit%20to%20page%20command) to depict this command.

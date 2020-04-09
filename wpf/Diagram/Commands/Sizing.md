@@ -58,4 +58,4 @@ graphinfo.Commands.SameWidth.Execute(null);
 
 ![Sizing commands](Commands_Images/Commands_img5.gif)
 
-Please find the [Sizing commands sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Sizing_Commands1595367346) to depict these commands.
+Please find the [Sizing commands sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Sizing%20Commands) to depict these commands.

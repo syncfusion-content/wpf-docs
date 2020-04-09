@@ -93,4 +93,4 @@ The following code example represents how to define custom command to Save Comma
 {% endhighlight %}
 {% endtabs %}
 
-Find the [Custom Command sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomCommand-503255620) to depict this support.
+Find the [Custom Command sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/CustomCommand) to depict this support.

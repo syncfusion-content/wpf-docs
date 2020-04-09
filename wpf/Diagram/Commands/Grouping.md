@@ -43,4 +43,4 @@ graphinfo.Commands.UnGroup.Execute(null);
 
 ![Group/UnGroup gif](Commands_Images/Commands_img12.gif)
 
-Please find the [Group/UnGroup commands sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Grouping_Commands-1595065611) to depict these commands.
+Please find the [Group/UnGroup commands sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Grouping%20Commands) to depict these commands.

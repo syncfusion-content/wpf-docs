@@ -45,4 +45,4 @@ graphinfo.Commands.SpaceDown.Execute(null);
 
 ![SPace Down](Commands_images/Commands_img4.gif)
 
-Please find the [Spacing commands sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Spacing_Commands1910544000) to depict these commands.
+Please find the [Spacing commands sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Spacing%20Commands) to depict these commands.

@@ -49,4 +49,4 @@ Flip command is used to mirror the selected object's content and port in diagram
 
 ![Represents the flip](Commands_images/Commands_img7.gif)
 
-Please find the [Flip command sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Flip_Command-1776556582) to depict this command.
+Please find the [Flip command sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Flip%20Command) to depict this command.
