@@ -62,7 +62,7 @@ chart3D.Series.Add(series);
 
 {% endtabs %}
 
-![Column Charts support in WPF 3D Chart](3D-Charts_images/ColumnSeries3D.png)
+![Column Charts support in WPF 3D Chart](3D-Charts_images/Series/ColumnSeries3D.png)
 
 ## Bar Charts
 
@@ -94,7 +94,7 @@ chart3D.Series.Add(series);
 
 {% endtabs %}
 
-![Bar Charts support in WPF 3D Chart](3D-Charts_images/Bar3D.png)
+![Bar Charts support in WPF 3D Chart](3D-Charts_images/Series/Bar3D.png)
 
 ### Spacing
 
@@ -125,7 +125,7 @@ chart3D.Series.Add(series);
 
 {% endtabs %}
 
-![Spacing support in WPF 3D Chart](3D-Charts_images/Column_Spacing.png)
+![Spacing support in WPF 3D Chart](3D-Charts_images/Series/Column_Spacing.png)
 
 **SegmentSpacing**
 
@@ -168,7 +168,7 @@ chart3D.Series.Add(series);
 
 {% endtabs %}
 
-![Spacing support in WPF 3D Chart](3D-Charts_images/Column_SegmentSpacing.png)
+![Spacing support in WPF 3D Chart](3D-Charts_images/Series/Column_SegmentSpacing.png)
 
 ## Line Charts
 Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries3D.html#) using given data.
@@ -197,7 +197,7 @@ chart3D.Series.Add(series);
 
 {% endtabs %}
 
-![Column Charts support in WPF 3D Chart](3D-Charts_images/LineSeries3D.png)
+![Column Charts support in WPF 3D Chart](3D-Charts_images/Series/LineSeries3D.png)
 
 ### Scatter Chart
 
@@ -233,7 +233,7 @@ This size can be defined by using below properties.
 
 {% endtabs %}
 
-![Scatter chart support in WPF 3D Chart](3D-Charts_images/ScatterSeries3D.png)
+![Scatter chart support in WPF 3D Chart](3D-Charts_images/Series/ScatterSeries3D.png)
 
 ## Area Chart
 [`AreaSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AreaSeries3D.html#) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
@@ -263,7 +263,7 @@ This size can be defined by using below properties.
 
 {% endtabs %}
 
-![Scatter chart support in WPF 3D Chart](3D-Charts_images/AreaSeries3D.png)
+![Scatter chart support in WPF 3D Chart](3D-Charts_images/Series/AreaSeries3D.png)
 
 
 ## Stacking Charts
@@ -319,7 +319,7 @@ The following code example illustrates how to use StackingColumnSeries3D:
 
 {% endtabs %}
 
-![Stacking Charts support in WPF 3D Chart](3D-Charts_images/StackingColumn3D.png)
+![Stacking Charts support in WPF 3D Chart](3D-Charts_images/Series/StackingColumn3D.png)
 
 ### Stacking Column 100
 
@@ -363,7 +363,7 @@ The following code example illustrates how to use StackingColumn100Series3D:
 
 {% endtabs %}
 
-![Stacking Charts support in WPF 3D Chart](3D-Charts_images/StackingColumn1003D.png)
+![Stacking Charts support in WPF 3D Chart](3D-Charts_images/Series/StackingColumn1003D.png)
 
 ### Stacking Bar
 
@@ -417,7 +417,7 @@ The following code example illustrates how to use StackingBarSeries3D:
 
 {% endtabs %}
 
-![Stacking bar support in WPF 3D Chart](3D-Charts_images/StackingBar3D.png)
+![Stacking bar support in WPF 3D Chart](3D-Charts_images/Series/StackingBar3D.png)
 
 ### Stacking Bar 100
 
@@ -460,7 +460,7 @@ The following code example illustrates how to use StackingBar100Series3D:
 
 {% endtabs %}
 
-![Stacking Bar support in WPF 3D Chart](3D-Charts_images/StackingBar1003D.png)
+![Stacking Bar support in WPF 3D Chart](3D-Charts_images/Series/StackingBar1003D.png)
 
 ## Pie Chart
 
@@ -493,7 +493,7 @@ The following code example illustrates the PieSeries3D.
 
 {% endtabs %}
 
-![Stacking Bar support in WPF 3D Chart](3D-Charts_images/Pie3D.png)
+![Stacking Bar support in WPF 3D Chart](3D-Charts_images/Series/Pie3D.png)
 
 
 ## Doughnut
@@ -526,7 +526,7 @@ The DoughnutSeries3D can be added to chart as in below code example:
 
 {% endtabs %}
 
-![Doughnut support in WPF 3D Chart](3D-Charts_images/Doughnut3D.png)
+![Doughnut support in WPF 3D Chart](3D-Charts_images/Series/Doughnut3D.png)
 
 ### Coefficient
 
@@ -557,7 +557,7 @@ The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfu
 
 {% endtabs %}
 
-![Doughnut support in WPF 3D Chart](3D-Charts_images/Doughnut_Co.png)
+![Doughnut support in WPF 3D Chart](3D-Charts_images/Series/Doughnut_Co.png)
 
 ### Semi Pie and Doughnut
 
@@ -590,7 +590,7 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syn
 
 {% endtabs %}
 
-![Doughnut support in WPF 3D Chart](3D-Charts_images/Semi_Doughnut.png)
+![Doughnut support in WPF 3D Chart](3D-Charts_images/Series/Semi_Doughnut.png)
 
 **Pie**
 {% tabs %}
@@ -620,7 +620,7 @@ By using custom [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syn
 
 {% endtabs %}
 
-![Doughnut support in WPF 3D Chart](3D-Charts_images/Semi_Pie.png)
+![Doughnut support in WPF 3D Chart](3D-Charts_images/Series/Semi_Pie.png)
 
 ## Dynamic explode
 
@@ -656,4 +656,4 @@ The following code example illustrates how to enable dynamic explode for circula
 
 {% endtabs %}
 
-![Dynamic explode support in WPF 3D Chart](3D-Charts_images/Dynamicexplode3D.png)
+![Dynamic explode support in WPF 3D Chart](3D-Charts_images/Series/Dynamicexplode3D.png)

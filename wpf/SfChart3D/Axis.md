@@ -235,4 +235,4 @@ The following code example illustrates how to create Depth Axis.
 
 {% endtabs %}
 
-![Depth Axis in WPF 3D Chart](3D-Charts_images/DepthAxis.png)
+![Depth Axis in WPF 3D Chart](3D-Charts_images/Axis/DepthAxis.png)

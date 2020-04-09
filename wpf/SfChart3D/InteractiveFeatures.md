@@ -17,10 +17,13 @@ documentation: ug
 
 The following code example illustrates how to enable the dynamic rotation:
 
+{% tabs %}
 {% highlight xaml %}
 
-<Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
+<Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600"/>
+
 {% endhighlight %}
+{% endtabs %}
  
 ## SegmentSelection
 
@@ -46,7 +49,7 @@ The following code example illustrates how to set the selection brush for indivi
 {% endhighlight %}
 The following screenshot illustrates the result of the above code example.
 
-![Segment selection support in WPF 3D Chart](3D-Charts_images/Charts-3D_img3.png)
+![Segment selection support in WPF 3D Chart](3D-Charts_images/Interaction/SegmentSelection.png)
 
 ## SeriesSelection
 
@@ -81,7 +84,7 @@ The following code example can be used to set series selection in a SfChart3D.
 
 The following screenshot is an example of a SfChart3D with series selection.
 
-![Series selection support in WPF 3D Chart](3D-Charts_images/Charts-3D_img4.png)
+![Series selection support in WPF 3D Chart](3D-Charts_images/Interaction/SeriesSelection.png)
 
 
 

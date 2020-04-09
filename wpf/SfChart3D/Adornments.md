@@ -45,7 +45,7 @@ The following code example illustrates how to initialize the adornment.
 
 {% endtabs %}
 
-![Chart 3D support in WPF](3D-Charts_images/Chart-3D-Adornment.png)
+![Chart 3D support in WPF](3D-Charts_images/Adornments/Chart-3D-Adornment.png)
 
 Each adornment can be represented by the following:
 
@@ -97,7 +97,7 @@ The following code example demonstrates the column series with [`Diamond`](https
 
 {% endtabs %}
 
-![Symbol support in WPF Chart](3D-Charts_images/Adornment_Marker.png)
+![Symbol support in WPF Chart](3D-Charts_images/Adornments/Adornment_Marker.png)
 
 ### Customization of Symbol
 
@@ -153,7 +153,7 @@ The following code example demonstrates the basic customization of symbol size a
 
 {% endtabs %}
 
-![ Custom Symbol in Adornment](3D-Charts_images/SymblBasic.png) 
+![ Custom Symbol in Adornment](3D-Charts_images/Adornments/SymblBasic.png) 
 
 **SymbolTemplate**
 
@@ -222,7 +222,7 @@ The following code example demonstrates how to use SymbolTemplate.
 
 {% endtabs %}
 
-![ Custom Symbol in Adornment](3D-Charts_images/SymbolCustom.png) 
+![ Custom Symbol in Adornment](3D-Charts_images/Adornments/SymbolCustom.png) 
 
 ## Label
 
@@ -267,12 +267,12 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](3D-Charts_images/Adorn_DateTime.png) |
-|LabelContentPath | Displays the y value|![ LabelContentPath in Adornment](3D-Charts_images/Adorn_LabelContent.png)|
-| Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](3D-Charts_images/Adorn_Percentage.png) |
-| XValue | Displays the X value of series' point|![ XValue in Adornment](3D-Charts_images/Adorn_Xvalue.png) |
-| YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](3D-Charts_images/Adorn_YofTop.png) |
-| YValue | Displays the Y value of series' point| ![ YValue in Adornment](3D-Charts_images/Adorn_YValue.png) |
+| DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](3D-Charts_images/Adornments/Adorn_DateTime.png) |
+|LabelContentPath | Displays the y value|![ LabelContentPath in Adornment](3D-Charts_images/Adornments/Adorn_LabelContent.png)|
+| Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](3D-Charts_images/Adornments/Adorn_Percentage.png) |
+| XValue | Displays the X value of series' point|![ XValue in Adornment](3D-Charts_images/Adornments/Adorn_Xvalue.png) |
+| YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](3D-Charts_images/Adornments/Adorn_YofTop.png) |
+| YValue | Displays the Y value of series' point| ![ YValue in Adornment](3D-Charts_images/Adornments/Adorn_YValue.png) |
 
 ### Label Rotation
 
@@ -315,7 +315,7 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 
 {% endtabs %}
 
-![Adornments label rotation support in WPF Chart](3D-Charts_images/Label_Rotation.png)
+![Adornments label rotation support in WPF Chart](3D-Charts_images/Adornments/Label_Rotation.png)
 
 ### Customization
 
@@ -378,7 +378,7 @@ The following code example demonstrates the customization of label using the abo
 
 {% endtabs %}
 
-![Adornments label content customization support in WPF Chart](3D-Charts_images/Label_appearance.png)
+![Adornments label content customization support in WPF Chart](3D-Charts_images/Adornments/Label_appearance.png)
 
 ## Applying Series Brush
 
@@ -424,7 +424,7 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 
 {% endtabs %}
 
-![Series brush for adornments background support in WPF Chart](3D-Charts_images/Label_palette.png)
+![Series brush for adornments background support in WPF Chart](3D-Charts_images/Adornments/Label_palette.png)
 
 ## Label Format
 
@@ -471,7 +471,7 @@ The following code example demonstrates the label having three decimal digits:
 
 {% endtabs %}
 
-![Adornments label format support in WPF Chart](3D-Charts_images/Label_Format.png)
+![Adornments label format support in WPF Chart](3D-Charts_images/Adornments/Label_Format.png)
 
 
 ## ConnectorLine
@@ -519,7 +519,7 @@ The following code example shows the how to add connector line:
 
 {% endtabs %}
 
-![Connector Line in WPF Chart](3D-Charts_images/Adorn_ConnectorLine.png)
+![Connector Line in WPF Chart](3D-Charts_images/Adornments/Adorn_ConnectorLine.png)
 
 ### ConnectorType
 
@@ -573,8 +573,8 @@ The following code example shows the how to specify connector type:
 
 | ConnectorType | Output |
 |--|--|
-| Line | ![Connector Line in WPF Chart](3D-Charts_images/Adorn_Line.png) |
-| Bezier | ![Bezier in WPF Chart](3D-Charts_images/Adorn_Bezier.png)|
+| Line | ![Connector Line in WPF Chart](3D-Charts_images/Adornments/Adorn_Line.png) |
+| Bezier | ![Bezier in WPF Chart](3D-Charts_images/Adornments/Adorn_Bezier.png)|
 
 N> ConnectorType.StraightLine behavior does not applicable for 3D series.
 
@@ -607,7 +607,7 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 
 {% endtabs %}
 
-![Connector line style support in WPF Chart](3D-Charts_images/ConnectorLine_Customization.png)
+![Connector line style support in WPF Chart](3D-Charts_images/Adornments/ConnectorLine_Customization.png)
 
 ## Positioning the Adornments
 
@@ -662,9 +662,9 @@ The following code example shows the how to specify connector type:
 
 | AdornmentsPosition | Output |
 |--|--|
-| Top | ![Top Position in WPF Chart](3D-Charts_images/Adorn_Top.png) |
-| Bottom | ![Bottom Position in WPF Chart](3D-Charts_images/Adorn_Bottom.png) |
-| TopAndBottom | ![TopAndBottom Position in WPF Chart](3D-Charts_images/Adorn_TopAndBottom.png) |
+| Top | ![Top Position in WPF Chart](3D-Charts_images/Adornments/Adorn_Top.png) |
+| Bottom | ![Bottom Position in WPF Chart](3D-Charts_images/Adornments/Adorn_Bottom.png) |
+| TopAndBottom | ![TopAndBottom Position in WPF Chart](3D-Charts_images/Adornments/Adorn_TopAndBottom.png) |
 
 ### Advanced Positioning
 
@@ -682,10 +682,10 @@ The following section shows few examples for this LabelPosition behavior with re
 
 | LabelPosition | Column Series | Line Series|
 |--|--|--|
-| Auto | ![Auto Position in WPF Chart](3D-Charts_images/Label_Auto_Column.png) | ![Auto Position in WPF Chart](3D-Charts_images/Label_Auto_Line.png) |
-| Inner | ![Inner Position in WPF Chart](3D-Charts_images/Label_Inner_Column.png) | ![Auto Position in WPF Chart](3D-Charts_images/Label_Inner_Line.png) |
-| Outer | ![Outer Position in WPF Chart](3D-Charts_images/Label_Outer_Column.png) | ![Auto Position in WPF Chart](3D-Charts_images/Label_Outer_Line.png) |
-| Center | ![Auto Position in WPF Chart](3D-Charts_images/Label_Center_Column.png) | ![Auto Position in WPF Chart](3D-Charts_images/Label_Center_Line.png) |
+| Auto | ![Auto Position in WPF Chart](3D-Charts_images/Adornments/Label_Auto_Column.png) | ![Auto Position in WPF Chart](3D-Charts_images/Adornments/Label_Auto_Line.png) |
+| Inner | ![Inner Position in WPF Chart](3D-Charts_images/Adornments/Label_Inner_Column.png) | ![Auto Position in WPF Chart](3D-Charts_images/Adornments/Label_Inner_Line.png) |
+| Outer | ![Outer Position in WPF Chart](3D-Charts_images/Adornments/Label_Outer_Column.png) | ![Auto Position in WPF Chart](3D-Charts_images/Adornments/Label_Outer_Line.png) |
+| Center | ![Auto Position in WPF Chart](3D-Charts_images/Adornments/Label_Center_Column.png) | ![Auto Position in WPF Chart](3D-Charts_images/Adornments/Label_Center_Line.png) |
 
 
 ## Smart Labels
@@ -736,6 +736,6 @@ The following code example demonstrates the EnableSmartLabels property:
 
 {% endtabs %}
 
-![Smart Labels in WPF Chart](3D-Charts_images/SmartLabels.png)
+![Smart Labels in WPF Chart](3D-Charts_images/Adornments/SmartLabels.png)
 
 N> For circular series, the adornment position can be changed to [`Inside`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html), [`Outside`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) using the [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~LabelPosition.html) property.
