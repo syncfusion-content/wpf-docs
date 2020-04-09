@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Zoom command
+# Zoom command in WPF Diagram(SfDiagram)
 
 Zoom commands are used to do zoom-in and zoom-out operations on the Diagram view. This command is also used to do scroll and pan operations with its parameter. 
 

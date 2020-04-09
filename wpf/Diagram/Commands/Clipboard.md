@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Clipboard commands
+# Clipboard commands in WPF Diagram(SfDiagram)
 
 Clipboard commands are used to cut or copy selected diagram objects to the clipboard and paste the valid clipboard content into the diagram page.
 

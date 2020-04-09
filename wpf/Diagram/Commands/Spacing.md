@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Spacing commands
+# Spacing commands in WPF Diagram(SfDiagram)
 
 Spacing commands are used to place selected objects on the page at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
 

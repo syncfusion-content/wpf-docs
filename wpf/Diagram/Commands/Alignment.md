@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Alignment commands
+# Alignment commands in WPF Diagram(SfDiagram)
 
 Alignment commands are used to align the selected objects such as Nodes and Connectors on a page with respect to a reference object(first item in selection list).
 

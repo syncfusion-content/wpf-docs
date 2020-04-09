@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# FitToPage
+# FitToPage in WPF Diagram(SfDiagram)
 
 FitToPage commands are used to bring the entire Diagram into the view. [IFitToPage parameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter_members.html) is used to customize the FitToPage command behavior.
 If the parameter is null, entire Diagram is fit into the view.

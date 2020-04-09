@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Grouping commands
+# Grouping commands in WPF Diagram(SfDiagram)
 
 Grouping commands are used to group/ungroup the selected diagramming objects such as node and connector in the diagram.
 

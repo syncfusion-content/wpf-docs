@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Z – Order
+# Z – Order in WPF Diagram(SfDiagram)
 
 Z – Order commands are used to visually arrange the selected objects such as Nodes and Connectors on the diagram page with its Z-order values.
 

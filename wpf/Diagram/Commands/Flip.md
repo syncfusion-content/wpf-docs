@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Flip command
+# Flip command in WPF Diagram(SfDiagram)
 
 Flip command is used to mirror the selected object's content and port in diagram page in both horizontal and vertical direction. 
 

@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Sizing commands
+# Sizing commands in WPF Diagram(SfDiagram)
 
 Sizing commands are used to resize all selected object based on width, height and size of the reference object (FirstSelectedItem).
 
