@@ -36,7 +36,7 @@ Below example explains how to apply blend theme for button using `SfSkinManager`
             xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
             Title="MainWindow" Height="450" Width="800">
         <Grid>
-            <syncfusion:ButtonAdv x:Name="button" skinManager:SfSkinManager.VisualStyle="Blend"  Label="Sign in with your Syncfusion Account" Sizemode="Large" LargeIcon="image\employee.png"/>
+            <syncfusion:ButtonAdv x:Name="button" skinManager:SfSkinManager.VisualStyle="Blend" Label="Sign in with your Syncfusion Account" Sizemode="Large" LargeIcon="image\employee.png"/>
         </Grid> 
     </Window>
 
