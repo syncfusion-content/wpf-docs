@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Legend | SfChart | Wpf | Syncfusion
-description: legend
+description: How to configure the chart legend and customize the appearance of the legend title, Icons, labels, and ItemTemplate in WPF Chart (SfChart)
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Legend
+# Legend in WPF Charts (SfChart)
 
 [`Legend`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) provides metadata which helps for identifying elements in chart like [chart series](https://help.syncfusion.com/wpf/sfchart/series), 
 [technical indicators](https://help.syncfusion.com/wpf/sfchart/technical-indicators), and [trendlines](https://help.syncfusion.com/wpf/sfchart/trendlines). 
@@ -35,12 +35,12 @@ chart.Legend = new ChartLegend();
 
 {% endtabs %}
 
-![Legend support in WPF Chart](Legend_images/legend_overview.png)
+![Legend support in WPF Chart](Legend_images/legend_overview_pie.png)
 
 
 Each legend composed of the following parts:
 
-![Legend support in WPF Chart](Legend_images/legend_overview_1.png)
+![Legend support in WPF Chart](Legend_images/legend_overview_elements_pie.png)
 
 
 ## Legend Icon

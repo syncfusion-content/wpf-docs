@@ -40,21 +40,21 @@ Header can act as the name of the tile, that is placed at the bottom explaining 
 {% endhighlight %}
 {% highlight C# %}
 
-    //For setting header on as text use this code.
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "Music";
-    pulsingTile.Foreground = Brushes.White;
+//For setting header on as text use this code.
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Header = "Music";
+pulsingTile.Foreground = Brushes.White;
 
-    //For setting header as image use this code.
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/syncfusion.png",UriKind.RelativeOrAbsolute))};
-    pulsingTile.Header = image;
+//For setting header as image use this code.
+SfPulsingTile pulsingTile = new SfPulsingTile();
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/syncfusion.png",UriKind.RelativeOrAbsolute))};
+pulsingTile.Header = image;
 
-    //For setting header as control use this code.
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    TextBlock textblock = new TextBlock(){Text = "SYNCFUSION", Foreground = Brushes.White, FontSize = 13} ;
-    pulsingTile.Header = textblock;
-    grid.Children.Add(pulsingTile);
+//For setting header as control use this code.
+SfPulsingTile pulsingTile = new SfPulsingTile();
+TextBlock textblock = new TextBlock(){Text = "SYNCFUSION", Foreground = Brushes.White, FontSize = 13} ;
+pulsingTile.Header = textblock;
+grid.Children.Add(pulsingTile);
     
 {% endhighlight %}
 {% endtabs %}
@@ -94,21 +94,21 @@ Title can be used to display updates and notifications in a tile. The content ca
 {% endhighlight %}
 {% highlight C# %}
 
-    //Setting title for Pulsing Tile.
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Title = "Now Playing - Song Name";
-    pulsingTile.Foreground = Brushes.White;
+//Setting title for Pulsing Tile.
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Title = "Now Playing - Song Name";
+pulsingTile.Foreground = Brushes.White;
 
-    //For setting title as image use this code.
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/syncfusion.png",UriKind.RelativeOrAbsolute)),Stretch=Stretch.None,HorizontalAlignment=HorizontalAlignment.Left};
-    pulsingTile.Title = image; 
+//For setting title as image use this code.
+SfPulsingTile pulsingTile = new SfPulsingTile();
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/syncfusion.png",UriKind.RelativeOrAbsolute)),Stretch=Stretch.None,HorizontalAlignment=HorizontalAlignment.Left};
+pulsingTile.Title = image; 
 
-    // For setting title as control use this code.
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    Textblock textblock = new TextBlock(){Text = "SYNCFUSION", Foreground = Brushes.White, FontSize = 13} ; 
-    pulsingTile.Title = textblock;
-    grid.Children.Add(pulsingTile);
+// For setting title as control use this code.
+SfPulsingTile pulsingTile = new SfPulsingTile();
+Textblock textblock = new TextBlock(){Text = "SYNCFUSION", Foreground = Brushes.White, FontSize = 13} ; 
+pulsingTile.Title = textblock;
+grid.Children.Add(pulsingTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -134,10 +134,10 @@ The image acts as a pictorial representation of the purpose of tile control. The
 {% endhighlight %}
 {% highlight C# %}
 
-    //Setting image for Pulsing Tile
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.ImageSource = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute));
-    grid.Children.Add(pulsingTile);
+//Setting image for Pulsing Tile
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.ImageSource = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute));
+grid.Children.Add(pulsingTile);
         
 {% endhighlight %}
 {% endtabs %}
@@ -163,15 +163,16 @@ Scaling animation causes the content of the tile to zoom in/out and it is achiev
 {% endhighlight %}
 {% highlight C# %}
     
-    SfPulsingTile pulsingTile = new SfPulsingTile();  
-    pulsingTile.Header = "Music";
-    pulsingTile.Title = "This is title area.";
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTile.Content = image; 
+SfPulsingTile pulsingTile = new SfPulsingTile();  
+pulsingTile.Header = "Music";
+pulsingTile.Title = "This is title area.";
+pulsingTile.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTile.Content = image; 
 
-    // Setting pulse scale
-    pulsingTile.PulseScale = 2;
-    grid.Children.Add(pulsingTile);
+// Setting pulse scale
+pulsingTile.PulseScale = 2;
+grid.Children.Add(pulsingTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -191,15 +192,16 @@ The time required to complete a single scaling animation is achieved by setting 
 {% endhighlight %}
 {% highlight C# %}
 
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "Music";
-    pulsingTile.Title = "This is title area.";
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTile.Content = image; 
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Header = "Music";
+pulsingTile.Title = "This is title area.";
+pulsingTile.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTile.Content = image; 
 
-    //Setting pulse duration
-    pulsingTile.PulseDuration = TimeSpan.FromSeconds(3.0);
-    grid.Children.Add(pulsingTile);
+//Setting pulse duration
+pulsingTile.PulseDuration = TimeSpan.FromSeconds(3.0);
+grid.Children.Add(pulsingTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -226,16 +228,17 @@ The tile press animation takes place when the center of the tile is pressed. The
 {% endhighlight %}
 {% highlight C# %}
 
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "Music";
-    pulsingTile.Title = "This is title area.";
-    pulsingTile.PulseScale = 3;
-    pulsingTile.PulseDuration = TimeSpan.FromSeconds(3.0);
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Header = "Music";
+pulsingTile.Title = "This is title area.";
+pulsingTile.Foreground = Brushes.White;
+pulsingTile.PulseScale = 3;
+pulsingTile.PulseDuration = TimeSpan.FromSeconds(3.0);
 
-    //setting tile press duration and scale depth
-    pulsingTile.TilePressDuration = TimeSpan.FromSeconds(3.0);
-    pulsingTile.ScaleDepth = 2;      
-    grid.Children.Add(pulsingTile);
+//setting tile press duration and scale depth
+pulsingTile.TilePressDuration = TimeSpan.FromSeconds(3.0);
+pulsingTile.ScaleDepth = 2;      
+grid.Children.Add(pulsingTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -259,15 +262,16 @@ Horizontal translation allows the content of the tile to move from left to right
 {% endhighlight %}
 {% highlight C# %}
     
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "Music";
-    pulsingTile.Title = "This is title area.";
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTile.Content = image; 
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Header = "Music";
+pulsingTile.Title = "This is title area.";
+pulsingTile.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTile.Content = image; 
 
-    //Setting radiusX
-    pulsingTile.RadiusX = 100;
-    grid.Children.Add(pulsingTile);
+//Setting radiusX
+pulsingTile.RadiusX = 100;
+grid.Children.Add(pulsingTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -291,15 +295,16 @@ Vertical translation allows the content of the tile to move up and down along th
 {% endhighlight %}
 {% highlight C# %}
 
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "Music";
-    pulsingTile.Title = "This is title area.";
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTile.Content = image; 
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Header = "Music";
+pulsingTile.Title = "This is title area.";
+pulsingTile.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTile.Content = image; 
 
-    //Setting radiusY
-    pulsingTile.RadiusY = 100;
-    grid.Children.Add(pulsingTile); 
+//Setting radiusY
+pulsingTile.RadiusY = 100;
+grid.Children.Add(pulsingTile); 
 
 {% endhighlight %}
 {% endtabs %}
@@ -322,16 +327,16 @@ The time taken for translating the content along the x-axis and y-axis is achiev
 {% endhighlight %}
 {% highlight C# %}
 	
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "Music";
-    pulsingTile.Title = "This is title area.";
-    pulsingTile.Foreground = Brushes.White;
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTile.Content = image; 
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Header = "Music";
+pulsingTile.Title = "This is title area.";
+pulsingTile.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTile.Content = image; 
 
-    //Setting translate duration
-    pulsingTile.TranslateDuration = TimeSpan.FromSeconds(3.0);
-    grid.Children.Add(pulsingTile); 
+//Setting translate duration
+pulsingTile.TranslateDuration = TimeSpan.FromSeconds(3.0);
+grid.Children.Add(pulsingTile); 
 
 {% endhighlight %}
 {% endtabs %}
@@ -365,50 +370,50 @@ Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/c
 {% endhighlight %}
 {% highlight C# %}
      
-    WrapPanel wrapPanel = new WrapPanel();
-    wrapPanel.Orientation = Orientation.Horizontal;
-    grid.Children.Add(wrapPanel);
+WrapPanel wrapPanel = new WrapPanel();
+wrapPanel.Orientation = Orientation.Horizontal;
+grid.Children.Add(wrapPanel);
 
-    //SfPulsingTile 1
-    SfPulsingTile pulsingTileOne = new SfPulsingTile();
-    pulsingTileOne.Header = "Music";
-    pulsingTileOne.Title = "This is title area.";
-    pulsingTileOne.Foreground = Brushes.White;
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTileOne.Content = image;
-    pulsingTileOne.PulseScale = 3;
-    pulsingTileOne.PulseDuration = TimeSpan.FromSeconds(3.0);
+//SfPulsingTile 1
+SfPulsingTile pulsingTileOne = new SfPulsingTile();
+pulsingTileOne.Header = "Music";
+pulsingTileOne.Title = "This is title area.";
+pulsingTileOne.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTileOne.Content = image;
+pulsingTileOne.PulseScale = 3;
+pulsingTileOne.PulseDuration = TimeSpan.FromSeconds(3.0);
 
-    //SfPulsingTile 2
-    SfPulsingTile pulsingTileTwo = new SfPulsingTile();
-    pulsingTileTwo.Header = "Music";
-    pulsingTileTwo.Title = "This is title area.";
-    pulsingTileTwo.Foreground = Brushes.White;
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTileTwo.Content = image;
-    pulsingTileTwo.PulseScale = 3;
-    pulsingTileTwo.PulseDuration = TimeSpan.FromSeconds(3.0);
-    Thickness margin = pulsingTileTwo.Margin;
-    margin.Left = 10;
-    pulsingTileTwo.Margin = margin;
+//SfPulsingTile 2
+SfPulsingTile pulsingTileTwo = new SfPulsingTile();
+pulsingTileTwo.Header = "Music";
+pulsingTileTwo.Title = "This is title area.";
+pulsingTileTwo.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTileTwo.Content = image;
+pulsingTileTwo.PulseScale = 3;
+pulsingTileTwo.PulseDuration = TimeSpan.FromSeconds(3.0);
+Thickness margin = pulsingTileTwo.Margin;
+margin.Left = 10;
+pulsingTileTwo.Margin = margin;
 
-    //SfPulsingTile 3
-    SfPulsingTile pulsingTileThree = new SfPulsingTile();
-    pulsingTileThree.Header = "Music";
-    pulsingTileThree.Title = "This is title area.";
-    pulsingTileThree.Foreground = Brushes.White;
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTileThree.Content = image;
-    pulsingTileThree.PulseScale = 3;
-    pulsingTileThree.PulseDuration = TimeSpan.FromSeconds(3.0);
+//SfPulsingTile 3
+SfPulsingTile pulsingTileThree = new SfPulsingTile();
+pulsingTileThree.Header = "Music";
+pulsingTileThree.Title = "This is title area.";
+pulsingTileThree.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTileThree.Content = image;
+pulsingTileThree.PulseScale = 3;
+pulsingTileThree.PulseDuration = TimeSpan.FromSeconds(3.0);
 
-    //Setting group name
-    pulsingTileOne.GroupName = "Applications";
-    pulsingTileTwo.GroupName = "Applications";
-    pulsingTileThree.GroupName = "Applications";
-    wrapPanel.Children.Add(pulsingTileOne);
-    wrapPanel.Children.Add(pulsingTileTwo);
-    wrapPanel.Children.Add(pulsingTileThree);
+//Setting group name
+pulsingTileOne.GroupName = "Applications";
+pulsingTileTwo.GroupName = "Applications";
+pulsingTileThree.GroupName = "Applications";
+wrapPanel.Children.Add(pulsingTileOne);
+wrapPanel.Children.Add(pulsingTileTwo);
+wrapPanel.Children.Add(pulsingTileThree);
         
 {% endhighlight %}
 {% endtabs %}
@@ -436,16 +441,17 @@ The tile can be frozen by setting [IsFrozen](https://help.syncfusion.com/cr/wpf/
 {% endhighlight %}
 {% highlight C# %}
 
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "Music";
-    pulsingTile.Title = "This is title area.";
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTile.Content = image;   
-    pulsingTile.PulseScale = 3;
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Header = "Music";
+pulsingTile.Title = "This is title area.";
+pulsingTile.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTile.Content = image;   
+pulsingTile.PulseScale = 3;
 
-    //Setting freeze property
-    pulsingTile.IsFrozen = true;
-    grid.Children.Add(pulsingTile);
+//Setting freeze property
+pulsingTile.IsFrozen = true;
+grid.Children.Add(pulsingTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -467,16 +473,17 @@ The tile can be unfrozen by setting [IsFrozen](https://help.syncfusion.com/cr/wp
 {% endhighlight %}
 {% highlight C# %}
 
-    SfPulsingTile pulsingTile = new SfPulsingTile();
-    pulsingTile.Header = "Music";
-    pulsingTile.Title = "This is title area.";
-    Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
-    pulsingTile.Content = image; 
-    pulsingTile.PulseScale = 3;
+SfPulsingTile pulsingTile = new SfPulsingTile();
+pulsingTile.Header = "Music";
+pulsingTile.Title = "This is title area.";
+pulsingTile.Foreground = Brushes.White;
+Image image = new Image(){Source = new BitmapImage(new Uri(@"/Assets/PulsingTile.jpg",UriKind.RelativeOrAbsolute))};
+pulsingTile.Content = image; 
+pulsingTile.PulseScale = 3;
 
-    //Setting unfreeze property
-    pulsingTile.IsFrozen = false;
-    grid.Children.Add(pulsingTile);
+//Setting unfreeze property
+pulsingTile.IsFrozen = false;
+grid.Children.Add(pulsingTile);
 
 {% endhighlight %}
 {% endtabs %}
@@ -535,37 +542,40 @@ A single tile or a group of tiles can be frozen by using [Freeze](https://help.s
 {% endhighlight %}
 {% highlight C# %}
 
-    using Syncfusion.Windows.Controls.Notification;
-    using Syncfusion.Windows.Shared;
-    using System.Windows.Interactivity;
-    namespace PulsingTile_Grouping
+using Syncfusion.Windows.Controls.Notification;
+using Syncfusion.Windows.Shared;
+using System.Windows.Interactivity;
+namespace PulsingTile_Grouping
+{
+    public class FreezeTiles : TargetedTriggerAction<SfPulsingTile>
     {
-       public class FreezeTiles : TargetedTriggerAction<SfPulsingTile>
-       {
-          protected override void Invoke(object parameter)
-          {
+        protected override void Invoke(object parameter)
+        {
             var pulsingTile = this.AssociatedObject as SfPulsingTile;
             MainWindow window = VisualUtils.FindAncestor(pulsingTile, typeof(MainWindow)) as MainWindow;
             if (window != null && pulsingTile != null)
             { 
-               //For a single tile use this code.
-               HubTileService.Freeze(window.pulsingTileOne);   
-               //For Group of Tiles use this code.
-               HubTileService.Freeze("Applications");
+                //For a single tile use this code.
+                HubTileService.Freeze(window.pulsingTileOne);   
+                //For Group of Tiles use this code.
+                HubTileService.Freeze("Applications");
             }
-          }
-       }
+        }
     }
+}
+
 {% endhighlight %}
 {% endtabs %}
 
-Single tile:
-
 ![wpf pulsingtile freeze a single tile](Getting-Started_images/wpf-pulsingtile-freezeasingletile.png)
 
-Group of tiles:
+Single tile
+{:.caption}
 
 ![wpf pulsingtile freeze a group of tiles](Getting-Started_images/wpf-pulsingtile-freezebygroupname.png)
+
+Group of tiles
+{:.caption}
 
 A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileService~UnFreeze.html) method.
 
@@ -611,38 +621,40 @@ A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://he
 {% endhighlight %}
 {% highlight C# %}
 
-    using Syncfusion.Windows.Controls.Notification;
-    using Syncfusion.Windows.Shared;
-    using System.Windows.Interactivity;
-
-    namespace PulsingTile_Grouping
+using Syncfusion.Windows.Controls.Notification;
+using Syncfusion.Windows.Shared;
+using System.Windows.Interactivity;
+namespace PulsingTile_Grouping
+{
+    public class UnfreezeTiles : TargetedTriggerAction<SfPulsingTile>
     {
-       public class UnfreezeTiles : TargetedTriggerAction<SfPulsingTile>
-       {
-         protected override void Invoke(object parameter)
-         {
+        protected override void Invoke(object parameter)
+        {
             var pulsingTile = this.AssociatedObject as SfPulsingTile;
             MainWindow window = VisualUtils.FindAncestor(pulsingTile, typeof(MainWindow)) as MainWindow;
             if (window != null && pulsingTile != null)
             { 
-               //For a single tile use this code.
-               HubTileService.UnFreeze(window.pulsingTileOne); 
-               //For group of tiles use this code.
-               HubTileService.UnFreeze("Applications");
+                //For a single tile use this code.
+                HubTileService.UnFreeze(window.pulsingTileOne); 
+                //For group of tiles use this code.
+                HubTileService.UnFreeze("Applications");
             }
-         }
-       }
+        }
     }
+}
+
 {% endhighlight %}
 {% endtabs %}
 
-Single tile:
-
 ![wpf pulsingtile unfreeze a single tile](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
 
-Group of tiles:
+Single tile
+{:.caption}
 
 ![wpf pulsingtile unfreeze a group of tiles](Getting-Started_images/wpf-pulsingtile-grouping.png)
+
+Group of tiles
+{:.caption}
 
 ## Notifications
 Once the tile is pressed, it is notified by the click event and the command property of the Pulsing Tile. 
@@ -664,18 +676,18 @@ The [Click](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusi
 {% endhighlight %}
 {% highlight C# %}
       
-    public class ClickEvent : TargetedTriggerAction<SfPulsingTile>
+public class ClickEvent : TargetedTriggerAction<SfPulsingTile>
+{
+    protected override void Invoke(object parameter)
     {
-       protected override void Invoke(object parameter)
-       {
-         var pulsingTile = this.AssociatedObject as SfPulsingTile;
-         MainWindow window = VisualUtils.FindAncestor(pulsingTile, typeof(MainWindow)) as MainWindow;
-         if ((window != null) && (pulsingTile != null))
-         {
+        var pulsingTile = this.AssociatedObject as SfPulsingTile;
+        MainWindow window = VisualUtils.FindAncestor(pulsingTile, typeof(MainWindow)) as MainWindow;
+        if ((window != null) && (pulsingTile != null))
+        {
             MessageBox.Show("Pulsing Tile has been Clicked");
-         }
-       }
+        }
     }
+}
 
 {% endhighlight %}
 {% endtabs %} 
@@ -710,44 +722,44 @@ Command specifies the operation to be performed when the tile is pressed. [Comma
 {% endhighlight %}
 {% highlight C# %}
            
-	public class Viewmodel
+public class Viewmodel
+{
+    private ICommand  pulsingTileCommand;
+    public ICommand PulsingTileCommand
     {
-       private ICommand  pulsingTileCommand;
-       public ICommand PulsingTileCommand
-       {
         get
         { 
-          return pulsingTileCommand ?? (pulsingTileCommand = new Command(true, ()=>MyAction("PulsingTileCommand")));
+            return pulsingTileCommand ?? (pulsingTileCommand = new Command(true, ()=>MyAction("PulsingTileCommand")));
         }
-       }
-       private void MyAction(string parameter)
-       {
+    }
+    private void MyAction(string parameter)
+    {
         if (parameter.Equals("PulsingTileCommand"))
         {
-           string message = string.Format("Pulsing Tile Command executed");
-           MessageBox.Show(message);
+            string message = string.Format("Pulsing Tile Command executed");
+            MessageBox.Show(message);
         }
-       }
     }
-	public class Command : ICommand
+}
+public class Command : ICommand
+{
+    private bool _canExecute;
+    private Action _execute;
+    public Command(bool CanExecute, Action Execute)
     {
-       private bool _canExecute;
-       private Action _execute;
-       public Command(bool CanExecute, Action Execute)
-       {
-          _canExecute = CanExecute;
-          _execute = Execute;
-       }
-       public event EventHandler CanExecuteChanged;
-       public bool CanExecute(object parameter)
-       {
-          return _canExecute;
-       }
-       public void Execute(object parameter)
-       {
-          _execute();
-       }
+        _canExecute = CanExecute;
+        _execute = Execute;
     }
+    public event EventHandler CanExecuteChanged;
+    public bool CanExecute(object parameter)
+    {
+        return _canExecute;
+    }
+    public void Execute(object parameter)
+    {
+        _execute();
+    }
+}
 
 {% endhighlight %}   
 {% endtabs %}
