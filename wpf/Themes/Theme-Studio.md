@@ -116,7 +116,7 @@ Syncfusion.Themes.MaterialDark.WPF_2010.csproj</td></tr>
 <tr>
 <td>
 .Net Core 3</td><td>
-Syncfusion.Themes.MaterialDark.WPF_NETCore.csproj</td><tr>
+Syncfusion.Themes.MaterialDark.WPF_NETCore.csproj</td></tr>
 </table>
 
 **Step 2:**
