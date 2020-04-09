@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-## Multiple Selection in Xamarin SfAutoComplete
+## Multiple Selection in WPF AutoComplete (SfTextBoxExt)
 
 Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
 

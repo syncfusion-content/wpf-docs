@@ -33,7 +33,7 @@ We can change a foreground of the `SfDatePicker` by using the `Foreground` prope
 ![SfDatePicker with various foreground](Appearance-and-Styling_images/Foreground.png)
 
 
-## Setting the Foreground
+## Setting the Background
 
 We can change a background of the `SfDatePicker` by using the `background` property and also we can change the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) items and selected date item background by using the `Background` and [SfDateSelector.AccentBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AccentBrush.html) properties of `SfDateSelector`.
 
@@ -73,53 +73,5 @@ sfDatePicker.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 ![SfDatePicker with RightToLeft flow direction](Appearance-and-Styling_images/Appearance-flowdirection.png)
-
-## Setting WaterMark text
-
-We can prompt the user with some information by using the [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Watermark.html) property. This will apply on when the `SfDatePicker` contains the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property as `null` and [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AllowNull.html) property as `true` . 
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfDatePicker Watermark="Select the Date" Name="sfDatePicker"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-SfDatePicker sfDatePicker= new SfDatePicker();
-sfDatePicker.Watermark="Select the Date";
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfDatePicker with watermark text](Appearance-and-Styling_images/Watermark.png)
-
-### Setting WaterMark Template
-
-We can change the template of the `Watermark` by using the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~WatermarkTemplate.html) property.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfDatePicker Name="sfDatePicker" 
-                         AllowNull="True" 
-                         Value="{x:Null}" 
-                         Watermark="Select the Date" >
-    <syncfusion:SfDatePicker.WatermarkTemplate >
-        <DataTemplate>
-            <Border Background="Yellow">
-                <TextBlock Foreground="Blue"
-                           FontWeight="Bold"  
-                           Text="{Binding}" 
-                           TextAlignment="Center"/>
-            </Border>
-        </DataTemplate>
-    </syncfusion:SfDatePicker.WatermarkTemplate>
-</syncfusion:SfDatePicker>
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfDatePicker with watermarktemplate](Appearance-and-Styling_images/WatermarkTemplate.png)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Apperance) to download the sample that showcases the different UI customization and styling supports.
