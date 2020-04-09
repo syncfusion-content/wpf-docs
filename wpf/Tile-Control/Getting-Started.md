@@ -101,13 +101,13 @@ namespace SfHubTileSample
 	{
 		public MainWindow()
 		{          
-				InitializeComponent();
-				// Hub Tile
-				SfHubTile hubTile = new SfHubTile();
-				grid.Children.Add(hubTile);
-				//Pulsing Tile
-				SfPulsingTile pulseTile = new SfPulsingTile();
-				grid.Children.Add(pulseTile);
+			InitializeComponent();
+			// Hub Tile
+			SfHubTile hubTile = new SfHubTile();
+			grid.Children.Add(hubTile);
+			//Pulsing Tile
+			SfPulsingTile pulseTile = new SfPulsingTile();
+			grid.Children.Add(pulseTile);
 		}
 	}
 }

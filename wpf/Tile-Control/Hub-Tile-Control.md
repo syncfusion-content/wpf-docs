@@ -818,10 +818,10 @@ namespace HubTile_Grouping
             MainWindow window = VisualUtils.FindAncestor(hubTile, typeof(MainWindow)) as MainWindow;
             if (window != null && hubTile != null)
             {
-	          //For a single tile use this code
-	          HubTileService.UnFreeze(window.hubTileOne);
-	          //For group of tiles use this code
-	          HubTileService.UnFreeze("Applications");
+	            //For a single tile use this code
+	            HubTileService.UnFreeze(window.hubTileOne);
+	            //For group of tiles use this code
+	            HubTileService.UnFreeze("Applications");
             }
         }
     }
@@ -941,7 +941,7 @@ public class Command : ICommand
     {
         _execute();
     }
-   }
+}
 
 {% endhighlight %}   
 {% endtabs %}
