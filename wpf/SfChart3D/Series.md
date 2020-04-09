@@ -532,10 +532,95 @@ The DoughnutSeries3D can be added to chart as in below code example:
 
 The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries3D~DoughnutCoefficient.html#)  and [`CircleCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~CircleCoefficient.html) property to define the inner circle of Doughnut and Pie Charts.
 
+{% tabs %}
 
-**Doughnut Chart**
+{% highlight xaml %}
+
+        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}" DoughnutCoefficient="0.7"   
+            XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        DoughnutSeries3D series = new DoughnutSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Iron",
+                DoughnutCoefficient=0.7
+            };
+
+        chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![Doughnut support in WPF 3D Chart](3D-Charts_images/Doughnut_Co.png)
 
+### Semi Pie and Doughnut
+
+By using custom [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~StartAngle.html#) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EndAngle.html#) properties, you can draw pie series in different shapes such as semicircular or quarter circular series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <chart:DoughnutSeries3D StartAngle="180" EndAngle="360" ItemsSource="{Binding CategoricalData}" 
+        DoughnutCoefficient="0.7" XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        DoughnutSeries3D series = new DoughnutSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Iron",
+                DoughnutCoefficient=0.7,
+                StartAngle=180,
+                EndAngle=360
+            };
+
+        chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Doughnut support in WPF 3D Chart](3D-Charts_images/Semi_Doughnut.png)
+
+**Pie**
+{% tabs %}
+
+{% highlight xaml %}
+
+        <chart:PieSeries3D StartAngle="180" EndAngle="360" ItemsSource="{Binding CategoricalData}" 
+        CircleCoefficient="0.7" XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        PieSeries3D series = new PieSeries3D()
+            {
+                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                XBindingPath = "Year",
+                YBindingPath = "Iron",
+                CircleCoefficient=0.7,
+                StartAngle=180,
+                EndAngle=360
+            };
+
+        chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Doughnut support in WPF 3D Chart](3D-Charts_images/Semi_Pie.png)
 
 ## Dynamic explode
 
@@ -545,7 +630,10 @@ This feature allows users to explode a particular segment in a circular series u
 
 The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
 
+{% tabs %}
+
 {% highlight xaml %}
+
     <chart:SfChart3D EnableRotation="True"  Tilt="-30" Rotation="45"
             Depth="30" PerspectiveAngle="90" Width="500" Height="500">
 
@@ -566,5 +654,6 @@ The following code example illustrates how to enable dynamic explode for circula
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![Dynamic explode support in WPF 3D Chart](3D-Charts_images/Dynamicexplode3D.png)
