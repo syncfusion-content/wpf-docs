@@ -225,8 +225,6 @@ The header of the chart acts as the title to provide quick information to the us
 
 ## Enable data labels
 
-## Enable data labels
-
 You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) property of [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) to True.
 
 {% tabs %} 
@@ -264,7 +262,7 @@ Refer to [`this`](https://help.syncfusion.com/wpf/sfchart3D/adornments) link  to
 
 ## Enable legend
 
-You can enable legend using the [`SfChart.Legend`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) property as follows.
+You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) property as follows.
 
 {% tabs %} 
 
@@ -331,8 +329,6 @@ Additionally, you need to set label for each series using the [`Label`](https://
 
 {% endtabs %}  
 
-Refer to this [`link`](https://help.syncfusion.com/wpf/sfchart/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize legend.
-
 ## Enable tooltip
 
 Tooltips are used to show information about the segment, when you click the segment. You can enable tooltip by setting series [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowTooltip.html)  property to true.
@@ -371,8 +367,6 @@ Tooltips are used to show information about the segment, when you click the segm
 {% endhighlight %}
 
 {% endtabs %}
-
-Refer to [`this`](https://help.syncfusion.com/uwp/sfchart/interactive-features#tooltip) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip.
 
 The following code example gives you the complete code of above configurations.
 

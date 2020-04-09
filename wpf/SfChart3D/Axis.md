@@ -23,13 +23,13 @@ Additionally, SfChart3D have horizontal (z) Axis called Depth Axis.
 
 ChartAxis supports the following types.
 
-* NumericalAxis3D
-* CategoryAxis3D
-* DateTimeAxis3D
-* TimeSpanAxis3D
-* LogarithmicAxis3D
+* NumericalAxis
+* CategoryAxis
+* DateTimeAxis
+* TimeSpanAxis
+* LogarithmicAxis
 
-### NumericalAxis3D
+### Numerical Axis
 
 [`NumericalAxis3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.NumericalAxis3D.html#) is used to plot numerical values to the chart and can be defined for both PrimaryAxis and SecondaryAxis.
 
@@ -67,7 +67,7 @@ ChartAxis supports the following types.
 
 {% endtabs %}
 
-### CategoryAxis3D
+### Category Axis
 
 [`CategoryAxis3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CategoryAxis3D.html#) - it is an indexed based axis that plots values based on the index of the data point collection. The points are equally spaced here.
 
@@ -97,7 +97,7 @@ ChartAxis supports the following types.
 
 {% endtabs %}
 
-### DateTimeAxis3D
+### DateTime Axis
 
 [`DateTimeAxis3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DateTimeAxis3D.html#) - it is used to plot DateTime values and  it is widely used to make financial charts in places like the Stock Market, where index plotting is done every day.
 
@@ -127,7 +127,7 @@ ChartAxis supports the following types.
 
 {% endtabs %}
 
-### LogarithmicAxis3D
+### Logarithmic Axis
 
 [`LogarithmicAxis3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LogarithmicAxis3D.html#) - it is used to plot the logarithmic scale for the chart. The Logarithmic values will be plotted based on the logarithmic base value as 10.
 
@@ -157,7 +157,7 @@ ChartAxis supports the following types.
 
 {% endtabs %}
 
-### TimeSpanAxis3D
+### TimeSpan Axis
 
 [`TimeSpanAxis3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TimeSpanAxis3D.html#) - it is used to plot the time span values in the PrimaryAxis. TimeSpanAxis has the advantage of plotting data with milliseconds difference. The limitation of TimeSpanAxis is that it can only accept timespan values (hh:mm:ss) and date time values are not accepted.
 

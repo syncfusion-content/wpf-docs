@@ -25,7 +25,7 @@ The following code example illustrates how to enable the dynamic rotation:
 {% endhighlight %}
 {% endtabs %}
  
-## SegmentSelection
+## Segment Selection
 
 To enable segment selection in a 3D chart, set the SegmentSelectionBrush property in chart series.
 
@@ -51,7 +51,7 @@ The following screenshot illustrates the result of the above code example.
 
 ![Segment selection support in WPF 3D Chart](3D-Charts_images/Interaction/SegmentSelection.png)
 
-## SeriesSelection
+## Series Selection
 
 Series selection support is used to highlight the series programmatically or by user interaction. Also you can get a series SelectedIndex, PreviousSelectedIndex value in SelectionChanged event arguments. 
 

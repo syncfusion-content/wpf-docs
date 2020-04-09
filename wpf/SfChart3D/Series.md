@@ -127,7 +127,7 @@ chart3D.Series.Add(series);
 
 ![Spacing support in WPF 3D Chart](3D-Charts_images/Series/Column_Spacing.png)
 
-**SegmentSpacing**
+**Segment Spacing**
 
 [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property in series,
 
@@ -496,7 +496,7 @@ The following code example illustrates the PieSeries3D.
 ![Stacking Bar support in WPF 3D Chart](3D-Charts_images/Series/Pie3D.png)
 
 
-## Doughnut
+## Doughnut Chart
 
 [`DoughnutSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.DoughnutSeries3D.html#) is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
 
