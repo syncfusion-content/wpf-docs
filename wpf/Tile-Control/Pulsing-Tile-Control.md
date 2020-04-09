@@ -636,13 +636,15 @@ A single tile or a group of tiles can be unfrozen by using [UnFreeze](https://he
 {% endhighlight %}
 {% endtabs %}
 
-Single tile:
-
 ![wpf pulsingtile unfreeze a single tile](Getting-Started_images/wpf-pulsingtile-pulsescale.png)
 
-Group of tiles:
+Single tile
+{:.caption}
 
 ![wpf pulsingtile unfreeze a group of tiles](Getting-Started_images/wpf-pulsingtile-grouping.png)
+
+Group of tiles
+{:.caption}
 
 ## Notifications
 Once the tile is pressed, it is notified by the click event and the command property of the Pulsing Tile. 
