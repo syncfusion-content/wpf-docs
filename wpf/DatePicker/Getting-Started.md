@@ -1,13 +1,19 @@
 ---
 layout: post
-title: Getting Started | SfDatePicker | WPF | Syncfusion
-description: This section describes how to add date picker control into wpf application.
+title: Getting started with WPF SfDatePicker control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF SfDatePicker control and more details about the control features.
 platform: WPF
 control: SfDatePicker
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with WPF SfDatePicker
+
+This section explains how to create a WPF [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker.html) and explains about its structure.
+
+## Structure of SfDatePicker
+
+![WPF SfDatePicker Control](GettingStarted_images/SfDatePicker.png)
 
 ## Assembly deployment
 
@@ -17,22 +23,14 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-## Creating a simple application with SfDatePicker
-
-You can create a WPF application with SfDatePicker control using the following steps:
-
-## Create a project
-
-Create a new WPF project in Visual Studio to display the SfDatePicker control with their functionalities.
-
 ## Add control through designer
 
-The SfDatePicker control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
+The `SfDatePicker` control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
 * Syncfusion.SfInput.WPF
 * Syncfusion.SfShared.WPF
 
-![wpf date picker control added by designer](GettingStarted_images/wpf-date-picker-control-added-by-designer.png)
+![SfDatePicker control added by designer](GettingStarted_images/wpf-date-picker-control-added-by-designer.png)
 
 ## Adding control manually in XAML
 
@@ -42,10 +40,11 @@ To add the control manually in XAML, follow the given steps:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
 2.	Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in the XAML page.
-3.	Declare the SfDatePicker control in the XAML page.
+3.	Declare the `SfDatePicker` control in the XAML page.
 
 {% tabs %}
 {% highlight XAML %}
+
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
@@ -53,9 +52,11 @@ To add the control manually in XAML, follow the given steps:
         Title="SfDatePicker Sample" Height="350" Width="525">
     <Grid>
         <!-- Adding SfDatePicker control -->
-        <syncfusion:SfDatePicker x:Name="sfdatePicker" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="200"/>
+        <syncfusion:SfDatePicker x:Name="sfDatePicker" 
+                                 Width="200"/>
     </Grid>
 </Window>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,122 +67,153 @@ To add the control manually in C#, follow the given steps:
 1.	Add the following required assembly references to the project:
     * Syncfusion.SfInput.WPF
     * Syncfusion.SfShared.WPF
-2.	Import the SfDatePicker namespace **using Syncfusion.Windows.Controls.Input;**.
-3.	Create an SfDatePicker instance, and add it to the window.
+2.	Import the `SfDatePicker` namespace **using Syncfusion.Windows.Controls.Input;**.
+3.	Create an `SfDatePicker` instance, and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
+
 using Syncfusion.Windows.Controls.Input;
-namespace SfDatePickerSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
+namespace SfDatePickerSample {    
+    public partial class MainWindow : Window {
+        public MainWindow() {
             InitializeComponent();
+
             //Creating an instance of SfDatePicker control
-            SfDatePicker sfdatePicker = new SfDatePicker();
+            SfDatePicker sfDatePicker = new SfDatePicker();
+
             //Adding SfDatePicker as window content
-            this.Content = sfdatePicker;
+            this.Content = sfDatePicker;
         } 
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf date picker control added by code](GettingStarted_images/wpf-date-picker.png)
+![SfDatePicker control added by code](GettingStarted_images/wpf-date-picker.png)
 
-## Format the display text
+## Setting the Date
 
-The SfDatePicker control allows users format the display text in various ways. The [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~FormatString.html) property determines the format specifier, by which the display text has to be formatted.
+We can set or change the selected date by using [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~DateTime.html) property. If we not assign any value for the `DateTime` property, it will automatically assign the current system date as `DateTime` property value.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDatePicker  DateTime="5/30/2021"
+                          Name="sfDatePicker" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker= new SfDatePicker();
+sfDatePicker.DateTime = new DateTime(2021,5,30);
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfDatePicker displaying selected value](Features_images/Features_img17.png)
+
+## Date changed notification
+
+When the selected date of `SfDatePicker`is changed, it will be notified by using the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~ValueChanged_EV.html) event. You can get the details about the checked item in [ItemCheckedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.ItemCheckedEventArgs.html).
+
+* **OldValue** : Gets a date which is previously selected.
+
+* **NewValue** : Gets a date which is currently selected.
 
 {% tabs %}
 {% highlight XAML %}
-<!-- Setting format -->
-<syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center" Width="200" HorizontalAlignment="Center" FormatString="M"/>
+
+<syncfusion:SfDatePicker ValueChanged="SfdatePicker_ValueChanged" 
+                         Name="sfDatePicker"/>
+
 {% endhighlight %}
 {% highlight C# %}
-//Setting format
-sfdatePicker.FormatString = "M";
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.ValueChanged += SfdatePicker_ValueChanged;
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf date picker month format](GettingStarted_images/wpf-date-picker-format.png)
-
-### Specify format for the DateSelector
-
-The [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorFormatString.html) property is used to specify the format for DateSelector.
+You can handle the event as follows:
 
 {% tabs %}
-{% highlight XAML %}
-<!-- Setting specify format -->
-<syncfusion:SfDatePicker SelectorFormatString="M" x:Name="sfdatePicker" VerticalAlignment="Center" Width="200" Margin="15" />
-{% endhighlight %}
 {% highlight C# %}
-//Setting specify format 
-sfdatePicker.SelectorFormatString="M";
+
+private void SfdatePicker_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {          
+    Console.WriteLine("The Old selected Date: " + e.OldValue.ToString());
+    Console.WriteLine("The Newly selected Date: " + e.NewValue.ToString());            
+}
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf date picker month selector](GettingStarted_images/wpf-date-picker-month-format.png)
+## Display the date using the FormatString
 
-### Set selected value in SfDatePicker on focus lost
-
-Enable the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property to apply the selected value of `SfDateSelector` in `SfDatePicker` on its lost focus. 
+ We can edit and display the selected date with various formatting like date, month and year formats by using the [FormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~FormatString.html) property. The default value of `FormatString` property is `"d"`.
 
 {% tabs %}
-{% highlight XAML %}
-<syncfusion:SfDatePicker x:Name="sfdatePicker" SetValueOnLostFocus="True" />
-{% endhighlight %}
+{% highlight xaml %}
+
+<syncfusion:SfDatePicker x:Name="sfDatePicker" 
+                         FormatString="M"/>
+
+{% endhighlight  %}
 {% highlight C# %}
-// Enabling SetValueOnLostFocus
-sfdatePicker.SetValueOnLostFocus = true;
-{% endhighlight %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.FormatString = "M";
+
+{% endhighlight  %}
 {% endtabs %}
 
-## Localization support
+![SfDatePicker selected date with month format](Features_images/Features_img1.png)
 
-Localization is the process of making an application as multi-lingual by formatting the content according to different cultures.
+## Specifying format for the DateSelector
 
-### Create resource file and add value to the resource string based on the culture
-
-Add a resource file(.resx) in the application, and assign key values to the resource string based on the culture. The following screenshot illustrates how to create a resource file and add values to the resource string based on the culture. 
-
-![wpf date picker localization resx file](GettingStarted_images/wpf-date-picker-localization-resource-file.png)
-
-### Assign the current UI culture to application
-
-When initializing the application, [CurrentCulture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.currentculture?view=netframework-4.7.2) and [CurrentUICulture](https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread.currentuiculture?view=netframework-4.7.2) should be mentioned in code, so that the application will get the appropriate values provided in the resource file.
+We can allow the user to select the pair of date, month and year selector or any single selector cell from the [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) by using the [SelectorFormatString](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SelectorFormatString.html) property. The default value of `SelectorFormatString` property is `"M/d/yyyy"` and the date, time and year value selector is enabled in the `SfDateSelector`.
 
 {% tabs %}
-{% highlight XAML %}
-<syncfusion:SfDatePicker Name="sfdatePicker" HorizontalAlignment="Center" VerticalAlignment="Center" FormatString="dddd, MMMM dd, yyyy h:mm:ss tt"/>
+{% highlight xaml %}
+
+<syncfusion:SfDatePicker x:Name="sfDatePicker" 
+                         SelectorFormatString="M"/>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+SfDatePicker sfDatePicker = new SfDatePicker();
+sfDatePicker.SelectorFormatString = "M";
+
+{% endhighlight  %}
+{% endtabs %}
+
+![SfDatePicker contains only month selector](Features_images/Features_img2.png)
+Here, we can only able to select the month value from the `SfDateSelector`
+
+Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Formatting) to download the sample that showcases the display date formatting and date selection formatting by the `SfDatePicker`.
+
+## Set selected value on lost focus
+
+If we want to update the selected date of `SfDateSelector` to the `SfDatePicker.DateTime` property by moving the focus from `SfDateSelector` to anywhere, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. By default, the selected date of `SfDateSelector` can be sets to the `SfDatePicker.DateTime` property only by clicking the `OK` button, otherwise the selected value not updated by the move focus.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDatePicker  SetValueOnLostFocus="True"
+                          Name="sfDatePicker" />
+
 {% endhighlight %}
 {% highlight C# %}
-CultureInfo culture = new System.Globalization.CultureInfo("ar-SA");
-culture.DateTimeFormat.AMDesignator = "صباحا";
-culture.DateTimeFormat.PMDesignator = "مساء";
-System.Threading.Thread.CurrentThread.CurrentCulture = culture;
-System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
-{% endhighlight %}
-{% highlight VB %}
-Dim culture As CultureInfo = New System.Globalization.CultureInfo("ar-SA")
-culture.DateTimeFormat.AMDesignator = "5('-'"
-culture.DateTimeFormat.PMDesignator = "E3'!"
-System.Threading.Thread.CurrentThread.CurrentCulture = culture
-System.Threading.Thread.CurrentThread.CurrentUICulture = culture
+
+SfDatePicker sfDatePicker= new SfDatePicker();
+sfDatePicker.SetValueOnLostFocus = true;
+
 {% endhighlight %}
 {% endtabs %}
 
-![wpf date picker localization](GettingStarted_images/wpf-date-picker-localization.png)
+![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
 
-Value field of SfDatePicker is localized
-{:.caption}
-
-![wpf date picker selector localization](GettingStarted_images/wpf-date-picker-selection-field-localization.png)
-
-Display text "Choose Date" is localized to ar-SA culture
-{:.caption}
+Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the value setting support in the `SfDatePicker`.
