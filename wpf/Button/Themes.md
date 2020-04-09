@@ -7,7 +7,7 @@ control: ButtonAdv
 documentation: ug
 ---
 
-# Themes
+# Themes in WPF Button (ButtonAdv)
 
 Button supports various themes which can be applied using [SfSkinManager](https://help.syncfusion.com/wpf/themes/getting-started) and also provided support to create custom theme using [Theme Studio](https://help.syncfusion.com/wpf/themes/theme-studio).
 
