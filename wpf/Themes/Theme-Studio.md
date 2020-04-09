@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | ThemeStudio | WPF | Syncfusion
-description: This section explores how to create and apply new theme from a predefined collection of themes using Theme Studio for WPF.
+description: Desktop-based, intuitive UI customization tool for easy customization of skins and themes for the Syncfusion control suite.
 platform: WPF
 control: ThemeStudio
 documentation: ug
