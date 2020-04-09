@@ -113,11 +113,11 @@ Diagram.KnownTypes = () => new List<Type>()
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the [Save and Load sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_WPF-158395240) to depict all these supports.
+Refer to the [Save and Load sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Serialization) to depict all these supports.
 
 ## How to load SfDiagram's old version in new version 
 
-You can load any of the old version SfDiagram's stream in new version with the help of upgrade method. Refer to the following code sample.
+You can load any of the old version SfDiagram's stream in new version with the help of upgrade method. Refer to the following code example.
 
 {% tabs %}
 {% highlight C# %}
