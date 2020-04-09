@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Serialization
+# Serialization in WPF Diagram (SfDiagram)
 
 Serialization is the process of converting the state of SfDiagram's objects into a stream of bytes to recreate them when needed. Such streams can be stored in a database,as a file or memory. The reverse process is called deserialization.
 
