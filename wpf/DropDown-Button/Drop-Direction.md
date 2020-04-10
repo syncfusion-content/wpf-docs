@@ -63,11 +63,11 @@ N> The default value is **BottomLeft**.
     dropdownbutton.DropDirection = DropDirection.BottomLeft;
     dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\country.png"));
     DropDownMenuGroup menu = new DropDownMenuGroup();
-    DropDownMenuItem Item1 = new DropDownMenuItem{ Header ="India", Icon =new BitmapImage(new Uri("images\india.png")), HorizontalAlignment="Left"};
-    DropDownMenuItem Item2 = new DropDownMenuItem{ Header ="France", Icon =new BitmapImage(new Uri("images\france.png")), HorizontalAlignment="Left"};
-    DropDownMenuItem Item3 = new DropDownMenuItem{ Header ="Germany", Icon =new BitmapImage(new Uri("images\germany.png")), HorizontalAlignment="Left"};
-    DropDownMenuItem Item4 = new DropDownMenuItem{ Header ="Canada", Icon =new BitmapImage(new Uri("images\canada.png")), HorizontalAlignment="Left"};
-    DropDownMenuItem Item5 = new DropDownMenuItem{ Header ="China", Icon =new BitmapImage(new Uri("images\china.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri("images\india.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri("images\france.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri("images\germany.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="Canada", Icon =new BitmapImage(new Uri("images\canada.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item5 = new DropDownMenuItem() { Header ="China", Icon =new BitmapImage(new Uri("images\china.png")), HorizontalAlignment="Left"};
     menu.Items.Add(Item1);
     menu.Items.Add(Item2);
     menu.Items.Add(Item3);

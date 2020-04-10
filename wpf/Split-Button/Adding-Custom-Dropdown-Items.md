@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Adding custom items | Dropdown Button Control | WPF | Syncfusion
-description: This section will explain how to add the custom dropdown menu item to the dropdown menu group and enable/disable the icon in icon bar.
+title: Adding custom Dropdown Items | SplitButton Control | WPF | Syncfusion
+description: This section will explore how to add the custom dropdown item to the DropDownMenu Group and enable and enable/disable the icon in icon bar.
 platform: WPF
-control: DropDownButtonAdv
+control: SplitButtonAdv
 documentation: ug
 ---
 
-# Custom dropdown items in WPF Dropdown Button (DropdownButtonAdv)
+# Custom Dropdown items in WPF Split Button (SplitButtonAdv)
 
-## Adding custom dropdown menu items
+## Populate custom items
 
 The dropdown menu group has option to load custom items apart from actual dropdown menu items. One can populate the custom items using the [MoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~MoreItems.html) property.
 
@@ -18,7 +18,7 @@ N> The **MoreItems** property has return type `ObservableCollection<UIElement>`,
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv Label="Colors" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="images\colors.png">
+    <syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SizeMode="Normal" SmallIcon="images\colors.png">
         <syncfusion:DropDownMenuGroup IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
             <syncfusion:DropDownMenuGroup.MoreItems>
                 <Label Content="More Items"/>
@@ -40,11 +40,12 @@ N> The **MoreItems** property has return type `ObservableCollection<UIElement>`,
                 </syncfusion:DropDownMenuItem.Icon>
             </syncfusion:DropDownMenuItem>
         </syncfusion:DropDownMenuGroup>
-    </syncfusion:DropDownButtonAdv>
+    </syncfusion:SplitButtonAdv>
 
+ {% endhighlight %}
  {% highlight c# %}
- 
-    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+
+    SplitButtonAdv splitbutton = new SplitButtonAdv();
     DropDownMenuGroup menu = new DropDownMenuGroup();
     DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
     DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
@@ -55,25 +56,25 @@ N> The **MoreItems** property has return type `ObservableCollection<UIElement>`,
     menu.Items.Add(Item3);
     menu.MoreItems.Add(Item4);
     menu.IconBarEnabled = true;
-    menu.IsMoreItemsIconTrayEnabled = false;
-    dropdownbutton.Content = menu;
-    dropdownbutton.Label = "Colors";
-    dropdownbutton.SizeMode = SizeMode.Normal;
-    dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+    menu.IsMoreItemsIconTrayEnabled = true;
+    splitbutton.Content = menu;
+    splitbutton.Label = "Country";
+    splitbutton.SizeMode = SizeMode.Normal;
+    splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
 
 {% endhighlight %}
 {% endtabs %}
 
 ![More-item](Moreitems_images/More_item_img1.png)
 
-## Setting custom menu items icon bar visibility
+## Setting custom items IconBar visibility
 
-The custom menu item icon bar option helps to enable/disable the vertical bar next to the Dropdown menu item icon by setting the [IsMoreItemsIconTrayEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IsMoreItemsIconTrayEnabled.html) property either to **true** or **false**.
+he custom menu item icon bar option helps to enable/disable the vertical bar next to the Dropdown menu item icon by setting the [IsMoreItemsIconTrayEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IsMoreItemsIconTrayEnabled.html) property either to **true** or **false**.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv Label="Colors" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="images\colors.png">
+    <syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SizeMode="Normal" SmallIcon="images\colors.png">
         <syncfusion:DropDownMenuGroup IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
             <syncfusion:DropDownMenuGroup.MoreItems>
                 <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="More Items">
@@ -97,11 +98,12 @@ The custom menu item icon bar option helps to enable/disable the vertical bar ne
                 </syncfusion:DropDownMenuItem.Icon>
             </syncfusion:DropDownMenuItem>
         </syncfusion:DropDownMenuGroup>
-    </syncfusion:DropDownButtonAdv>
+    </syncfusion:SplitButtonAdv>
 
+{% endhighlight %}
 {% highlight c# %}
- 
-    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+
+    SplitButtonAdv splitbutton = new SplitButtonAdv();
     DropDownMenuGroup menu = new DropDownMenuGroup();
     DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
     DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
@@ -112,12 +114,11 @@ The custom menu item icon bar option helps to enable/disable the vertical bar ne
     menu.Items.Add(Item3);
     menu.MoreItems.Add(Item4);
     menu.IconBarEnabled = true;
-    menu.IsMoreItemsIconTrayEnabled = true;
-    dropdownbutton.Content = menu;
-    dropdownbutton.Label = "Country";
-    dropdownbutton.SizeMode = SizeMode.Normal;
-    dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
-
+    menu.IsMoreItemsIconTrayEnabled = false;
+    splitbutton.Content = menu;
+    splitbutton.Label = "Colors";
+    splitbutton.SizeMode = SizeMode.Normal;
+    splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
 
 {% endhighlight %}
 {% endtabs %}

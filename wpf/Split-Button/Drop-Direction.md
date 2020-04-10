@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Drop Direction | SplitButton | wpf | Syncfusion
-description: drop direction
+title: Dropdown Direction | Split Button Control | WPF | Syncfusion
+description: This section explores how to change the popup direction in the Split Button control while clicking the dropdown arrow.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Drop Direction
+# Dropdown direction in WPF Split Button (SplitButtonAdv)
 
-The DropDown Direction can be changed by using the DropDirection property. The Enum takes the following values:
+Dropdown direction is used to change the position of the popup being loaded while pressing dropdown arrow. The direction can be changed using the [DropDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~DropDirection.html) enumeration.
+
+The [DropDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~DropDirection.html) enumeration comprises of following values: 
 
 * Left
 * Right
@@ -18,62 +20,90 @@ The DropDown Direction can be changed by using the DropDirection property. The E
 * TopLeft
 * TopRight
 
-
-
-The default value is BottomLeft.
-
-The DropDirection property can be set as follows:
-
-## To set BottomLeft DropDirection
+N> The default value is **BottomLeft**.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:SplitButtonAdv  DropDirection="BottomLeft"/>
+    <syncfusion:SplitButtonAdv DropDirection="BottomLeft" SmallIcon="images\colors.png" Label="Colors">
+        <syncfusion:DropDownMenuGroup>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\orange.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="SkyBlue">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\skyblue.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Yellow">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\yellow.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+                <syncfusion:DropDownMenuItem.Icon   >
+                    <Image Source="images\red.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\black.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+        </syncfusion:DropDownMenuGroup>
+    </syncfusion:SplitButtonAdv>
+    
+{% endhighlight %}
+{% highlight c# %}
+
+    SplitButtonAdv splitbutton = new SplitButtonAdv();
+    splitbutton.Label = "Colors";
+    splitbutton.DropDirection = DropDirection.BottomLeft;
+    splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+    DropDownMenuGroup menu = new DropDownMenuGroup();
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Skyblue", Icon=new BitmapImage(new Uri("images\skyblue.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Yellow", Icon=new BitmapImage(new Uri("images\yellow.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="Red", Icon=new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item5 = new DropDownMenuItem() { Header ="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
+    menu.Items.Add(Item1);
+    menu.Items.Add(Item2);
+    menu.Items.Add(Item3);
+    menu.Items.Add(Item4);
+    menu.Items.Add(Item5);
+    splitbutton.Content=menu;
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Drop-Direction_images/Drop-Direction_img1.png)
+![Drop-Direction](Drop-Direction_images/Drop-Direction_img1.png)
 
+Drop Direction - BottomLeft
+{:.caption}
 
+![Drop-Direction](Drop-Direction_images/Drop-Direction_img2.png)
 
-## To set BottomRight drop direction
+Drop Direction - BottomRight
+{:.caption}
 
-{% tabs %}
-{% highlight xaml %}
+![Drop-Direction](Drop-Direction_images/Drop-Direction_img3.png)
 
-<sync:SplitButtonAdv  DropDirection="BottomRight"/>
+Drop Direction - Right
+{:.caption}
 
-{% endhighlight %}
-{% endtabs %}
+![Drop-Direction](Drop-Direction_images/Drop-Direction_img4.png)
 
-![](Drop-Direction_images/Drop-Direction_img2.png)
+Drop Direction - Left
+{:.caption}
 
+![Drop-Direction](Drop-Direction_images/Drop-Direction_img5.png)
 
+Drop Direction - TopLeft
+{:.caption}
 
-## To set Right drop direction
+![Drop-Direction](Drop-Direction_images/Drop-Direction_img6.png)
 
-{% tabs %}
-{% highlight xaml %}
-
-<sync:SplitButtonAdv  DropDirection="Right"/>
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Drop-Direction_images/Drop-Direction_img3.png)
-
-
-
-## To set Left drop direction
-
-{% tabs %}
-{% highlight xaml %}
-
-<sync:SplitButtonAdv  DropDirection="Left"/>
-
-{% endhighlight %}
-{% endtabs %}
-
-![](Drop-Direction_images/Drop-Direction_img4.png)
+Drop Direction - TopRight
+{:.caption}

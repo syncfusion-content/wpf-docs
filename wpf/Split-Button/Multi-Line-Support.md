@@ -1,29 +1,37 @@
 ---
 layout: post
-title: Multi Line Support | SplitButton | wpf | Syncfusion
-description: multi line support
+title: Multiline Text | Split Button Control | WPF | Syncfusion
+description: This section explains how to display multiple lines of text along with image and large size mode in a Split Button control.
 platform: wpf
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Multi Line Support
+## Multiline support in WPF Split Button (SplitButtonAdv)
 
-The label displayed on the button can be a line or two, when the property IsMultiLine is set to true. The default value is true.
+Multiline support is used to render text content of the Split Button control in multiple lines for precise view. One can apply the multiline text by using the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IsMultiLine.html) property.
 
-Multiline support can be enabled by using the following code:
+N> This property is only applicable for large size mode of the Split Button.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:SplitButtonAdv SizeMode="Large" IsMultiLine="False"/>
+    <syncfusion:SplitButtonAdv Label="Sign in with your Syncfusion Account" LargeIcon="employee.png" SizeMode="Large" IsMultiLine="True"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+    SplitButtonAdv splitbutton = new SplitButtonAdv();
+    splitbutton.Label = "Sign in with your Syncfusion Account";
+    splitbutton.IsMultiLine =true;
+    splitbutton.SizeMode = SizeMode.Large;
+    splitbutton.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Multi-Line-Support_images/Multi-Line-Support_img1.png)
+![Multiline](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
-N> This property only applicable for Large Size Mode Buttons.
 
 
 

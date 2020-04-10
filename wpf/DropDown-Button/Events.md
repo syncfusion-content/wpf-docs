@@ -142,9 +142,9 @@ The event occurs when the dropdown menu item is checked or unchecked, that is, o
 
     DropDownMenuItem dropDownMenuItem  = new DropDownMenuItem();
     dropDownMenuItem.IsCheckable=true;
-    dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(DropDownMenuItem_IsCheckedChanged); 
+    dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(dropDownMenuItem_IsCheckedChanged); 
     
-    private void DropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    private void dropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
 
     }

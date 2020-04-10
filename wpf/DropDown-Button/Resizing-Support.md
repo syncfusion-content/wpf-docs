@@ -39,15 +39,16 @@ The dropdown menu group popup height can be increased or decreased using the res
 
     DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
     DropDownMenuGroup menu = new DropDownMenuGroup();
-    DropDownMenuItem Item1 = new DropDownMenuItem{ Header ="India", Icon =new BitmapImage(new Uri("images\india.png")), HorizontalAlignment="Left"};
-    DropDownMenuItem Item2 = new DropDownMenuItem{ Header ="France", Icon =new BitmapImage(new Uri("images\france.png")), HorizontalAlignment="Left"};
-    DropDownMenuItem Item3 = new DropDownMenuItem{ Header ="Germany", Icon =new BitmapImage(new Uri("images\germany.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri("images\india.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri("images\france.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri("images\germany.png")), HorizontalAlignment="Left"};
     menu.Items.Add(Item1);
     menu.Items.Add(Item2);
     menu.Items.Add(Item3);
     menu.IsResizable = true;
     dropdownbutton.Content = menu;
     dropdownbutton.Label = "Country";
+    dropdownbutton.DropDirection = DropDirection.BottomRight;
     dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\country.png"));
 
 {% endhighlight %}
