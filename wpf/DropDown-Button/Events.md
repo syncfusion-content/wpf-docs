@@ -109,8 +109,6 @@ The event occurs after closing the dropdown menu popup and any action can be han
 
 The event occurs when the dropdown menu item is clicked and any action can be handled in respective event handler.
 
-N> The event must be registered individually for each item on the menu.
-
 {% tabs %}
 {% highlight xaml %} 
 
@@ -132,7 +130,7 @@ N> The event must be registered individually for each item on the menu.
 
 ### IsCheckedChanged
 
-The event occur when the dropdown menu item is checked or unchecked, that is, only when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~IsCheckable.html) property is set to **true**. Any action can be handled in the respective event handler.
+The event occurs when the dropdown menu item is checked or unchecked, that is, only when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~IsCheckable.html) property is set to **true**. Any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 

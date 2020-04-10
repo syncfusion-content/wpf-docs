@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize Dropdown Menu Items | Split Button Control | WPF | Syncfusion
+title: Dropdown Menu Items | Split Button Control | WPF | Syncfusion
 description: This section explores how to set the drop-down item icon, icon bar visibility, scrollbar visibility, and checkable support.
 platform: WPF
 control: SplitButtonAdv
 documentation: ug
 ---
 
-# Customization of dropdown menu items in WPF Split Button (SplitButtonAdv)
+# Customization of dropdown menu items in WPF Split Button
 
 ## Setting icon for dropdown menu items
 
@@ -54,7 +54,7 @@ The icon option helps to provide pictorial representation of the dropdown menu i
 
 The icon bar option helps to enable/disable the vertical bar next to the Dropdown menu item icon. One can change the icon bar visibility by setting the [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IconBarEnabled.html) property to **true** or **false**.
 
-N> The defult value of [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IconBarEnabled.html) is `false`.
+N> The default value of [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IconBarEnabled.html) is `false`.
 
 % tabs %}
 {% highlight xaml %}

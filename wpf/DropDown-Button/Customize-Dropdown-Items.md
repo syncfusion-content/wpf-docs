@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Customization of dropdown menu items in WPF Dropdown Button (DropDownButtonAdv)
+# Customization of dropdown menu items in WPF Dropdown Button
 
 ## Setting icon for dropdown menu items
 
