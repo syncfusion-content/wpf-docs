@@ -1,32 +1,40 @@
 ---
 layout: post
-title: Multi Line Support| | Wpf | Syncfusion
-description: multi line support
+title: Multiline Text | Dropdown Button Control | WPF | Syncfusion
+description: This section explains how to display multiple lines of text along with image and large size mode of a dropdown button control.
 platform: wpf
 control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Multi Line Support
+# Multiline support in WPF Dropdown Button (DropDownButtonAdv)
 
-The label displayed in the button can be a line or two, when the property IsMultiLine is set to true. The default value is true.
+Multiline support is used to render text content of the Dropdown Button control in multiple lines for precise view. One can apply the multiline text by using the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IsMultiLine.html) property.
 
-Multiline support can be enabled by using the following code:
-
+N> This property is only applicable for large size mode of the Dropdown Button.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:DropDownButtonAdv SizeMode="Large" IsMultiLine="False"/>
+    <syncfusion:DropDownButtonAdv Label="Sign in with your Syncfusion Account" LargeIcon="image\employee.png" SizeMode="Large" IsMultiLine="True"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+    dropdownbutton.SizeMode = SizeMode.Large;
+    dropdownbutton.Label = "Sign in with your Syncfusion Account";
+    dropdownbutton.IsMultiLine =true;
+    dropdownbutton.LargeIcon = new BitmapImage(new Uri("image\employee.png"));
 
 {% endhighlight %}
 {% endtabs %}
 
-![](Multi-Line-Support_images/Multi-Line-Support_img1.png)
+![Multiline](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
 
 
-N> This property only applicable for Large Size Mode Buttons.
+
 
 
 
