@@ -345,9 +345,9 @@ The DropDownMenuGroup acts as a container for the Dropdown Button control. It pr
 
     DropDownButtonAdv button = new DropDownButtonAdv();
     DropDownMenuGroup menu = new DropDownMenuGroup();
-    DropDownMenuItem Item1 = new DropDownMenuItem{ Header="Item 1" };
-    DropDownMenuItem Item2 = new DropDownMenuItem{ Header ="Item 2" };
-    DropDownMenuItem Item3 = new DropDownMenuItem{ Header ="Item 3" };
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Item 1" };
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Item 2" };
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Item 3" };
     menu.Items.Add(Item 1);
     menu.Items.Add(Item 2);
     menu.Items.Add(Item 3);
