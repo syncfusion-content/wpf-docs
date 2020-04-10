@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Customization of dropdown menu items in WPF Dropdown Button
+# Customization of dropdown menu items in WPF Dropdown Button (DropDownButtonAdv)
 
 ## Setting icon for dropdown menu items
 
@@ -16,7 +16,7 @@ The icon option helps to provide pictorial representation of the dropdown menu i
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\country.png">
+    <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" DropDirection="BottomRight" SizeMode="Normal" SmallIcon="Images\country.png">
         <syncfusion:DropDownMenuGroup>
             <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
                 <syncfusion:DropDownMenuItem.Icon>
@@ -41,6 +41,7 @@ The icon option helps to provide pictorial representation of the dropdown menu i
     menu.Items.Add(Item3);
     dropdownbutton.Content = menu;
     dropdownbutton.Label = "Country";
+    dropdownbutton.DropDirection = DropDirection.BottomRight;
     dropdownbutton.SizeMode = SizeMode.Normal;
     dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png"));
 
@@ -58,7 +59,7 @@ The icon option helps to provide pictorial representation of the dropdown menu i
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\country.png">
+    <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" DropDirection="BottomRight" SizeMode="Normal" SmallIcon="Images\country.png">
         <syncfusion:DropDownMenuGroup IconBarEnabled="True">
             <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
                 <syncfusion:DropDownMenuItem.Icon>
@@ -85,6 +86,7 @@ The icon option helps to provide pictorial representation of the dropdown menu i
     dropdownbutton.Content = menu;
     dropdownbutton.Label = "Country";
     dropdownbutton.SizeMode = SizeMode.Normal;
+    dropdownbutton.DropDirection = DropDirection.BottomRight;
     dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png"));
 
 {% endhighlight %}
@@ -99,7 +101,7 @@ The dropdown menu group supports built-in scrollbar to show large number of menu
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\country.png">
+    <syncfusion:DropDownButtonAdv Label="Country" DropDirection="BottomRight" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\country.png">
         <syncfusion:DropDownMenuGroup MaxHeight="111" ScrollBarVisibility="Visible">
             <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
                 <syncfusion:DropDownMenuItem.Icon>
@@ -151,6 +153,7 @@ The dropdown menu group supports built-in scrollbar to show large number of menu
                         <Image Source="Image\pakistan.png"/>
                     </syncfusion:DropDownMenuItem.Icon>
                 </syncfusion:DropDownMenuItem>
+        </syncfusion:DropDownMenuGroup>
     </syncfusion:DropDownButtonAdv>
 
 {% endhighlight %}
@@ -183,6 +186,7 @@ The dropdown menu group supports built-in scrollbar to show large number of menu
     dropdownbutton.Content = menu;
     dropdownbutton.Label = "Country";
     dropdownbutton.SizeMode = SizeMode.Normal;
+    dropdownbutton.DropDirection = DropDirection.BottomRight;
     dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png"));
 
 {% endhighlight %}
@@ -197,7 +201,7 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv Label="Country" x:Name="button" SizeMode="Normal" SmallIcon="Images\country.png">
+    <syncfusion:DropDownButtonAdv Label="Country" DropDirection="BottomRight" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="Images\country.png">
         <syncfusion:DropDownMenuGroup>
             <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India" IsChecked="True" IsCheckable="True"/>
             <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France" IsChecked="True" IsCheckable="True"/>
@@ -219,6 +223,7 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
     dropdownbutton.Content = menu;
     dropdownbutton.Label = "Country";
     dropdownbutton.SizeMode = SizeMode.Normal;
+    dropdownbutton.DropDirection = DropDirection.BottomRight;
     dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png"));
     
 {% endhighlight %}

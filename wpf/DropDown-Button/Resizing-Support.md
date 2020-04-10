@@ -48,6 +48,7 @@ The dropdown menu group popup height can be increased or decreased using the res
     menu.IsResizable = true;
     dropdownbutton.Content = menu;
     dropdownbutton.Label = "Country";
+    dropdownbutton.DropDirection = DropDirection.BottomRight;
     dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\country.png"));
 
 {% endhighlight %}

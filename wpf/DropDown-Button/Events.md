@@ -109,6 +109,8 @@ The event occurs after closing the dropdown menu popup and any action can be han
 
 The event occurs when the dropdown menu item is clicked and any action can be handled in respective event handler.
 
+N> The event must be registered individually for each item on the menu.
+
 {% tabs %}
 {% highlight xaml %} 
 
@@ -130,7 +132,7 @@ The event occurs when the dropdown menu item is clicked and any action can be ha
 
 ### IsCheckedChanged
 
-The event occurs when the dropdown menu item is checked or unchecked, that is, only when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~IsCheckable.html) property is set to **true**. Any action can be handled in the respective event handler.
+The event occur when the dropdown menu item is checked or unchecked, that is, only when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~IsCheckable.html) property is set to **true**. Any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -142,9 +144,9 @@ The event occurs when the dropdown menu item is checked or unchecked, that is, o
 
     DropDownMenuItem dropDownMenuItem  = new DropDownMenuItem();
     dropDownMenuItem.IsCheckable=true;
-    dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(DropDownMenuItem_IsCheckedChanged); 
+    dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(dropDownMenuItem_IsCheckedChanged); 
     
-    private void DropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    private void dropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
 
     }
