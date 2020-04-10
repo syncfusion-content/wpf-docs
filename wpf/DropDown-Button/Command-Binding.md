@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Command binding for menu items in WPF Dropdown Button (DropDownButtonAdv)
+# Command binding for menu items in WPF Dropdown Button
 
 The command and command parameter properties allow to execute any action on clicking the dropdown menu items.
 
