@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events | Dropdown Button Control | WPF | Syncfusion
-description: This section explores how to use Dropdown Button events available for dropdown opening, opened, closing, closed, etc. operations in-order to perform the required action.
+description: This section explores how to use Dropdown Button events available for dropdown opening, closing, etc. operations in-order to perform the required action.
 platform: WPF
 control: DropDownButtonAdv
 documentation: ug

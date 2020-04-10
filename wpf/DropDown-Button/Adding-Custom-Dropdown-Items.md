@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding custom dropdown menu item | Dropdown Button Control | WPF | Syncfusion
+title: Adding custom items | Dropdown Button Control | WPF | Syncfusion
 description: This section will explain how to add the custom dropdown menu item to the dropdown menu group and enable/disable the icon in icon bar.
 platform: WPF
 control: DropDownButtonAdv
