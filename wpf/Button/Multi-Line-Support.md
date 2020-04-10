@@ -1,24 +1,33 @@
 ---
 layout: post
-title: Multi Line Support | wpf | Syncfusion
-description: This section deals with how to enable the multiline of text support in a buttonadv control on wpf platform.
-platform: wpf
+title: Multiline | ButtonAdv | WPF | Syncfusion
+description: This section explores how to display multiple lines of text along with the image in large size mode of a button control.
+platform: WPF
 control: ButtonAdv
 documentation: ug
 ---
 
-# How to Enable Multiline Support
+# Multiline support in WPF Button (ButtonAdv)
 
-ButtonAdv control has the option to display the multiple lines of text using boolean property `IsMultiLine`. 
+Multiline support is used to render text content of the Button control in multiple lines for precise view. One can apply the multiline text by using the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsMultiLine.html) property.
+
+N> This property is only applicable for large size mode button.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
-<syncfusion:ButtonAdv x:Name="ButtonAdv" IsMultiLine="True"  Width="75" Height="75" IconHeight="35" IconWidth="35" Label="Hello World!" SizeMode="Large" />
+    <syncfusion:ButtonAdv x:Name="ButtonAdv" IsMultiLine="True" LargeIcon="image1/employee.png" Label="Sign in with your Syncfusion Account" SizeMode="Large" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+    ButtonAdv button = new ButtonAdv();
+    button.SizeMode = SizeMode.Large;
+    button.LargeIcon = new BitmapImage(new Uri("employee.png"));
+    button.IsMultiLine="true";
+    button.Label = "Sign in with your Syncfusion Account";
 
 {% endhighlight %}
 {% endtabs %}
 
 ![WPF ButtonAdv MultiLine](Multi-Line-Support_images/Multi-Line-Support_img1.png)
-
-N> This property is applicable only for large size mode buttons.
