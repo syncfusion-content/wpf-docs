@@ -368,4 +368,59 @@ We can directly redistribute the row or columns by using `SfGridSplitter`. If we
 
 ![SfGridSplitter with deferred resizing](Positioning-GridSplitter-images/ShowsPreview.png)
 
+
+## Grid splitter for the merged columns or rows
+
+If we want resize the merged columns or rows, place the grid splitter on next or previous row or column of the grid.
+
+<Border
+    Margin="10"
+    BorderBrush="DarkGray"
+    BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center"
+            Grid.Row="0"
+            Grid.Column="0" TextAlignment="Center"
+             Text="Panel 1">
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Grid.Row="2"
+            Grid.Column="0" Text="Panel 2">
+        </TextBlock>
+
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Grid.RowSpan="3"
+            Grid.Column="2" Text="Panel 3">
+        </TextBlock>
+
+        <!--Horizontal Splitter-->
+        <syncfusion:SfGridSplitter Grid.Row="1"
+                                   Grid.Column="0"
+                                   Height="5"
+                                   HorizontalAlignment="Stretch"
+                                   ResizeBehavior="PreviousAndNext">
+        </syncfusion:SfGridSplitter>
+
+        <!--Vertical Splitter-->
+        <syncfusion:SfGridSplitter Grid.RowSpan="3"
+                                   Grid.Column="1"
+                                   Width="5"
+                                   VerticalAlignment="Stretch"
+                                   ResizeBehavior="PreviousAndNext">
+        </syncfusion:SfGridSplitter>
+    </Grid>
+</Border>
+
+![Grid splitter for the merged columns or rows](Positioning-GridSplitter-images/Columspan_img.png)
+
 Click [here](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) to download the sample that showcase the `SfGridSplitter` features.
