@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Getting Started with Dropdown Button
+# Getting Started with Dropdown Button (DropDownButtonAdv)
 
 This section provides an overview of how to work with Dropdown Button control. It describes the control structure, the control initialization, the image setting for the control and adding items to the Dropdown Button control.
 
