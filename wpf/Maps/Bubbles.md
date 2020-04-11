@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Bubbles | SfMap | wpf | Syncfusion
-description: bubbles
+description: This section explores how to add Bubbles, customizing bubble symbols and applying range color mapping in Maps.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Bubbles
+# Bubbles in WPF Maps (SfMap)
 
 Bubbles in the Maps control represent the under-bound data values of the map. Bubbles are scattered throughout map shapes that contain bound values.
 
@@ -116,7 +116,7 @@ To add bubbles to a map, the bubble marker setting has to be added to the shape 
 {% endhighlight %}
 
 
-![](Bubbles_images/Bubbles_img1.png)
+![Adding Bubbles](Bubbles_images/Bubbles_img1.png)
 
 
 
@@ -144,7 +144,7 @@ Gets or sets the type of bubble symbol needed to be used in maps.</td></tr>
 <td>
 CustomTemplate</td><td>
 DataTemplate</td><td>
-Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should be set as 'Custom' to show a customized bubble shape._' | markdownify }}</td></tr>
+Gets or sets the template to customize the bubble.</td></tr>
 </table>
 
 {% highlight xaml %}
@@ -218,7 +218,7 @@ Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should
 
 
 
-![](Bubbles_images/Bubbles_img2.png)
+![Bubble with Star Symbol](Bubbles_images/Bubbles_img2.png)
 
 
 
@@ -340,7 +340,7 @@ Create the “Model” and the “ViewModel” as mentioned in the Data Binding 
 
 {% endhighlight %}
 
-![](Bubbles_images/Bubbles_img3.png)
+![RangeColorMapping](Bubbles_images/Bubbles_img3.png)
 
 
 
