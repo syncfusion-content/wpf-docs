@@ -42,7 +42,8 @@ N> The **MoreItems** property has return type `ObservableCollection<UIElement>`,
         </syncfusion:DropDownMenuGroup>
     </syncfusion:DropDownButtonAdv>
 
- {% highlight c# %}
+{% endhighlight %}
+{% highlight c# %}
  
     DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
     DropDownMenuGroup menu = new DropDownMenuGroup();
@@ -99,6 +100,7 @@ The custom menu item icon bar option helps to enable/disable the vertical bar ne
         </syncfusion:DropDownMenuGroup>
     </syncfusion:DropDownButtonAdv>
 
+{% endhighlight %}
 {% highlight c# %}
  
     DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
@@ -117,7 +119,6 @@ The custom menu item icon bar option helps to enable/disable the vertical bar ne
     dropdownbutton.Label = "Country";
     dropdownbutton.SizeMode = SizeMode.Normal;
     dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
-
 
 {% endhighlight %}
 {% endtabs %}
