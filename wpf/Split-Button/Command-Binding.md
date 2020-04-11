@@ -7,9 +7,9 @@ control: SplitButtonAdv
 documentation: ug
 ---
 
-# Command binding in WPF Split Button (SplitButtonAdv)
+# Command Binding in WPF Split Button (SplitButtonAdv)
 
-The command and command parameter properties allow to execute any action on clicking either button or dropdown menu items.
+The command and command parameter properties allow to execute any action on clicking either the button or the dropdown menu items.
 
 ## Command
 

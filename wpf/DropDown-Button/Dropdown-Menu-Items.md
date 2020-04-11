@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Customization of dropdown menu items in WPF Dropdown Button
+# Dropdown Menu Items in WPF Dropdown Button (DropDownButtonAdv)
 
 ## Setting icon for dropdown menu items
 
@@ -194,6 +194,55 @@ The dropdown menu group supports built-in scrollbar to show large number of menu
 
  ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img3.png)
 
+## Resizing dropdown menu
+
+The dropdown menu group height can be increased or decreased using the resizing gripper. One can enable the resizing behavior by setting the [IsResizable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IsResizable.html) property to **true**.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:DropDownButtonAdv Label="Country" x:Name="dropdownbutton" SmallIcon="images\country.png">
+        <syncfusion:DropDownMenuGroup IsResizable="True">
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\india.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France">
+                <syncfusion:DropDownMenuItem.Icon   >
+                    <Image Source="images\france.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\germany.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+        </syncfusion:DropDownMenuGroup>
+    </syncfusion:DropDownButtonAdv>
+
+{% endhighlight %}
+{% highlight c# %}
+
+    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+    DropDownMenuGroup menu = new DropDownMenuGroup();
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header ="India", Icon =new BitmapImage(new Uri("images\india.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri("images\france.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri("images\germany.png")), HorizontalAlignment="Left"};
+    menu.Items.Add(Item1);
+    menu.Items.Add(Item2);
+    menu.Items.Add(Item3);
+    menu.IsResizable = true;
+    dropdownbutton.Content = menu;
+    dropdownbutton.Label = "Country";
+    dropdownbutton.DropDirection = DropDirection.BottomRight;
+    dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\country.png"));
+
+{% endhighlight %}
+{% endtabs %}
+
+![Resizing](Resizing-Support_images/Resizing-Support_img1.png)
+
 ## Checkable dropdown menu items
 
 The checkable option helps to check/uncheck the dropdown menu item on selection by setting the [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~IsCheckable.html) property to **true**.
@@ -230,3 +279,119 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 {% endtabs %}
 
 ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img4.png)
+
+## Adding custom dropdown menu items
+
+The dropdown menu group has option to load custom items apart from actual dropdown menu items. One can populate the custom items using the [MoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~MoreItems.html) property.
+
+N> The **MoreItems** property has return type `ObservableCollection<UIElement>`, so it can accept any UIElement as its child items.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:DropDownButtonAdv Label="Colors" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="images\colors.png">
+        <syncfusion:DropDownMenuGroup IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
+            <syncfusion:DropDownMenuGroup.MoreItems>
+                <Label Content="More Items"/>
+            </syncfusion:DropDownMenuGroup.MoreItems>
+            </syncfusion:DropDownMenuGroup.MoreItems>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
+                syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\black.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+                <syncfusion:DropDownMenuItem.Icon   >
+                    <Image Source="images\orange.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\red.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+        </syncfusion:DropDownMenuGroup>
+    </syncfusion:DropDownButtonAdv>
+
+{% endhighlight %}
+{% highlight c# %}
+ 
+    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+    DropDownMenuGroup menu = new DropDownMenuGroup();
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Red", Icon=new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
+    Label Item4 = new Label() { Content ="More Items" };
+    menu.Items.Add(Item1);
+    menu.Items.Add(Item2);
+    menu.Items.Add(Item3);
+    menu.MoreItems.Add(Item4);
+    menu.IconBarEnabled = true;
+    menu.IsMoreItemsIconTrayEnabled = false;
+    dropdownbutton.Content = menu;
+    dropdownbutton.Label = "Colors";
+    dropdownbutton.SizeMode = SizeMode.Normal;
+    dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+
+{% endhighlight %}
+{% endtabs %}
+
+![More-item1](Moreitems_images/More_item_img2.png)
+
+## Setting icon bar visibility for custom dropdown menu items
+
+The custom dropdown menu items icon visibility can be enabled/disabled by setting the [IsMoreItemsIconTrayEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IsMoreItemsIconTrayEnabled.html) property either to **true** or **false**.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:DropDownButtonAdv Label="Colors" x:Name="dropdownbutton" SizeMode="Normal" SmallIcon="images\colors.png">
+        <syncfusion:DropDownMenuGroup IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
+            <syncfusion:DropDownMenuGroup.MoreItems>
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="More Items">
+                    <syncfusion:DropDownMenuItem.Icon>
+                        <Image Source="images\skyblue.png"/>
+                    </syncfusion:DropDownMenuItem.Icon>
+             </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
+                syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\black.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+                <syncfusion:DropDownMenuItem.Icon   >
+                    <Image Source="images\orange.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\red.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+        </syncfusion:DropDownMenuGroup>
+    </syncfusion:DropDownButtonAdv>
+
+{% endhighlight %}
+{% highlight c# %}
+ 
+    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+    DropDownMenuGroup menu = new DropDownMenuGroup();
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Red", Icon=new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="More Items", Icon=new BitmapImage(new Uri("images\skyblue.png")), HorizontalAlignment="Left"};
+    menu.Items.Add(Item1);
+    menu.Items.Add(Item2);
+    menu.Items.Add(Item3);
+    menu.MoreItems.Add(Item4);
+    menu.IconBarEnabled = true;
+    menu.IsMoreItemsIconTrayEnabled = true;
+    dropdownbutton.Content = menu;
+    dropdownbutton.Label = "Country";
+    dropdownbutton.SizeMode = SizeMode.Normal;
+    dropdownbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+
+{% endhighlight %}
+{% endtabs %}
+
+![More-item](Moreitems_images/More_item_img1.png)

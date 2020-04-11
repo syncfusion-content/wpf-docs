@@ -7,7 +7,7 @@ control: SplitButtonAdv
 documentation: ug
 ---
 
-# Styles and templates in WPF Split Button (SplitButtonAdv)
+# Styles and Templates in WPF Split Button (SplitButtonAdv)
 
 WPF styles and templates is a suite of features that allow developers and designers to create visual compelling effects and consistent appearance of the products. 
 
