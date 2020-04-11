@@ -38,7 +38,7 @@ Column charts plot discrete rectangles for the given values. The following code 
 
 The following code example illustrates how to use ColumnSeries3D:
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
