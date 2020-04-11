@@ -56,7 +56,7 @@ The icon bar option helps to enable/disable the vertical bar next to the Dropdow
 
 N> The default value of [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IconBarEnabled.html) is `false`.
 
-% tabs %}
+{% tabs %}
 {% highlight xaml %}
 
     <syncfusion:SplitButtonAdv Label="Country" DropDirection="BottomRight" x:Name="splitbutton" SizeMode="Normal" SmallIcon="Images\country.png">
