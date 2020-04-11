@@ -7,45 +7,45 @@ control: ColorPicker
 documentation: ug
 ---
 
-# Edit a gradient brush with WPF ColorPicker
+# Select gradient color with WPF ColorPicker
 
-This section gives a brief note on how to create gradient brushes, modify their colors and modify their properties.
+This section gives a brief note on how to create gradient color, modify their colors and modify their properties.
 
-### What is a gradient brush? 
+### What is a gradient color? 
 
-A gradient brush paints an area with multiple colors that blend into each other along an axis. [ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) now comes with Gradient tools which returns a brush of type Linear and Radial gradient colors. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
+A gradient color paints an area with multiple colors that blend into each other along an axis. [ColorPicker](https://www.syncfusion.com/wpf-ui-controls/colorpicker) now comes with Gradient tools which returns a brush of type Linear and Radial gradient colors. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
 
 ![ColorPicker with Gradient Mode](ColorPicker-with-Gradient-Support_images/ColorPicker_Gradient_Mode.png)
 
-## Gradient Colors
+## Create Gradient colors using GradientStops Editor
 
-We can add a multiple color combination for the gradient brush using the `GradientStopsEditor`. We can add new gradient stops, change the offset and change the color of the gradient stops at run-time. The created gradient stops are combined together provides a gradient color.
+We can add a multiple color combination for the gradient color using the `GradientStopsEditor`. We can add new gradient stops, change the offset and change the color of the gradient stops at run-time. The created gradient stops are combined together provides a gradient color.
 
 ![ColorPicker with GradientStopsEditors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_editing.png)
 
-### Add or Remove Gradient Colors
+### Add or Remove Gradientstops
 
-We can add a more gradient colors by using the gradient stops. Gradient stops can be added to existing gradient by clicking on the `GradientStopEditor`. 
+We can add a more colors for the gradient color by using the gradient stops. Gradient stops can be added to existing gradient by clicking on the `GradientStopEditor`. 
 
 To remove a gradient stops, select the gradient stop which want to be remove and press `Delete` key or mouse drag it away, so that it will removed from the `GradientStopsEditor`.
 
 ![ColorPicker with add and removing gradient colors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_Adding.gif)
 
-### Arrange Gradient Colors
+### Rearrange Gradientstops
 
-We can re-arrange the gradient colors by adjusting the gradient stops. Gradient stops positions can be altered just by dragging it along the `GradientStopEditor`. The Gradient color will be generated on the basis of the order of the gradient stops arranged.
+We can re-arrange the color combination of the gradient color by adjusting the gradient stops. Gradient stops positions can be altered just by dragging it along the `GradientStopEditor`. The Gradient color will be generated on the basis of the order of the gradient stops arranged.
 
 ![ColorPicker with arranging the gradient colors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_Arranging.gif)
 
-### Change the Gradient Colors
+### Change Gradientstops Colors
 
-We can change the gradient colors by changing the color of gradient stops. Color of a gradient stops changed by selecting that particular gradient stop and change the color from the color picker.
+We can change the colors for created gradient color by changing the color of gradient stops. Color of a gradient stops changed by selecting that particular gradient stop and change the color from the color picker.
 
 ![ColorPicker with changing the gradient colors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_Changing.gif)
 
 ## Create Linear Gradient colors
 
-We can create linear gradient colors by programmatically using the `LinearGradientBrush` with its `LinearGradientBrush.GradientStops`, `StartPoint` and `EndPoint` properties or can create and change it at runtime by using `GradientStopsEditor` and `StartPoint`, `EndPoint` input options available in the `GradientPropertyEditor`. By default, the linear gradient colors are combined horizontally by start and end points. The default value of `StartPoint` is (0.5, 0) and `EndPoint` is (0.5, 1).
+We can create linear gradient color by programmatically using the `LinearGradientBrush` with its `LinearGradientBrush.GradientStops`, `StartPoint` and `EndPoint` properties or can create and change it at runtime by using `GradientStopsEditor` and `StartPoint`, `EndPoint` input options available in the `GradientPropertyEditor`. By default, the linear gradient colors are combined horizontally by start and end points. The default value of `StartPoint` is (0.5, 0) and `EndPoint` is (0.5, 1).
 
 ![ColorPicker with LinearGradient Editor](ColorPicker-with-Gradient-Support_images/ColorPicker_LinearGradient_Mode.png)
 
@@ -115,11 +115,11 @@ Here, Linear Gradient created by the gradient colors and their location along th
 
 ![ColorPicker with Horizontal Linear Gradient Editor](ColorPicker-with-Gradient-Support_images/Default_LinearGradient.png)
 
-**Diagonal Linear Gradient (StartPoint(0,0), EndPoint(1,1))**
+#### Diagonal Linear Gradient (StartPoint(0,0), EndPoint(1,1))
 
 ![ColorPicker Linear Gradient Editor](ColorPicker-with-Gradient-Support_images/LinearGradient_Example_1.png)
 
-**Vertical Linear Gradient (StartPoint(0, 0.5), EndPoint(1, 0.5)**
+#### Vertical Linear Gradient (StartPoint(0, 0.5), EndPoint(1, 0.5)
 
 ![ColorPicker Linear Gradient Editor](ColorPicker-with-Gradient-Support_images/LinearGradient_Example_2.png)
 
@@ -202,25 +202,25 @@ Here, Radial Gradient created by the gradient colors and their location along th
 
 ![ColorPicker with Radial Gradient Editor](ColorPicker-with-Gradient-Support_images/Default_RadialGradient.png)
 
-**Gradient Origin (0.25, 0.25)**
+#### Gradient Origin (0.25, 0.25)
 
 ![ColorPicker Radial Gradient Editor with Gradient Origin point](ColorPicker-with-Gradient-Support_images/RadialGradient_Origin.png)
 
-**Centre (0.25, 0.25)**
+#### Centre (0.25, 0.25)
 
 ![ColorPicker Radial Gradient Editor with Centre point](ColorPicker-with-Gradient-Support_images/RadialGradient_Centre.png)
 
-**Radius (0.25, 0.25)**
+#### Radius (0.25, 0.25)
 
 ![ColorPicker Radial Gradient Editor with Radius](ColorPicker-with-Gradient-Support_images/RadialGradient_Radius.png)
 
-### Reverse the Gradient Colors
+## Reverse the Gradient Colors
 
 [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) comes with the reverse button which helps in changing the gradient colors upside down or in case of radial gradient inside out. 
 
 ![ColorPicker with gradient color reverse button](ColorPicker-with-Gradient-Support_images/ColorPicker_Reverse_Button_change.png)
 
-## Show selected Gradient Color name
+## Show selected gradient color name
 
 By default, the selected Gradient mode name is displayed in `ColorPicker`. If we want to display the selected gradient color name instead of the Gradient mode name, use the [GradientBrushDisplayMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~GradientBrushDisplayMode.html) value as `Extended`. The default value of `GradientBrushDisplayMode` property is `Default`.
 
@@ -240,7 +240,7 @@ colorPicker.GradientBrushDisplayMode =  GradientBrushDisplayMode.Extended;
 
 ![ColorPicker displays the selected gradient color name](ColorPicker-with-Gradient-Support_images/Gradient_ColorName.png)
 
-## Show Gradient Property Editor
+## Show gradient color value editor
 
 We can display the gradient property editor either in popup mode or in extended mode. By default, the gradient property editor is displayed in the extended mode. If we want display the gradient property editor only in a popup, use the [GradientPropertyEditorMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~GradientPropertyEditorMode.html) property value as `PopUp`. 
 
@@ -308,6 +308,37 @@ colorPicker.EnableSolidToGradientSwitch = false;
 {% endtabs %}
 
 ![ColorPicker Solid to Gradient brush transition is disabled](ColorPicker-with-Gradient-Support_images/ColorPicker_EnableSolidToGradientSwitch.png)
+
+## Gradient color changed notification
+
+Selected gradient color changed in [ColorPicker](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker.html) can be examined using [SelectedBrushChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~SelectedBrushChanged_EV.html) event.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPicker SelectedBrushChanged="ColorPicker_SelectedBrushChanged"
+                        Name="colorPicker"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+ColorPicker  colorPicker = new ColorPicker();
+colorPicker.SelectedBrushChanged += ColorPicker_SelectedBrushChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+//Invoked when the selected brush is changed
+private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
+    // Enter your code here
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 Click [here](https://github.com/SyncfusionExamples/wpf-colorpicker-examples/tree/master/Samples/LinearGradient) to download the sample that showcases the Linear GradientBrush and its additional features.
 
