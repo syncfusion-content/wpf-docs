@@ -7,7 +7,7 @@ control: ButtonAdv
 documentation: ug
 ---
 
-# Command binding in WPF Button (ButtonAdv)
+# MVVM in WPF Button (ButtonAdv)
 
 The command and command parameter properties allow to execute any action on clicking the button control.
 
