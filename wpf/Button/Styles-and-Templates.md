@@ -40,7 +40,7 @@ All resources will be displayed on the XAML file of the application after perfor
 Button control edited in Expression Blend
 {:.caption}
 
-## Edit Appearance in Visual Studio
+## Edit appearance in Visual Studio
 
 * Open the application in Visual Studio.
 * Open design view and select the Button control. Now right Click on the Button control and you can see some menu options showing up.
