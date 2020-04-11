@@ -144,7 +144,7 @@ Gets or sets the type of bubble symbol needed to be used in maps.</td></tr>
 <td>
 CustomTemplate</td><td>
 DataTemplate</td><td>
-Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should be set as 'Custom' to show a customized bubble shape._' | markdownify }}</td></tr>
+Gets or sets the template to customize the bubble.</td></tr>
 </table>
 
 {% highlight xaml %}
