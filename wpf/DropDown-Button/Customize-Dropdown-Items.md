@@ -229,5 +229,4 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 {% endhighlight %}
 {% endtabs %}
 
-
 ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img4.png)
