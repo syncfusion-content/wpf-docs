@@ -23,11 +23,11 @@ Refer [SplitButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#spli
 
 In this walk through, you will create WPF application that contains Split Button control. By the following ways, one can add the controls:
 
-1. [Adding control via designer](#Adding-control-via-designer)
+1. [Adding control via designer](#adding-control-via-designer)
 
-2. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
+2. [Adding control manually in XAML](#adding-control-manually-in-XAML)
 
-3. [Adding control manually in C#](#Adding-control-manually-in-C#)
+3. [Adding control manually in C#](#adding-control-manually-in-C#)
 
 ### Adding control via designer
 
@@ -156,7 +156,7 @@ The **SizeMode** is an enumeration which contains the following values:
 
 ### Small mode
 
-When the mode is set to **Small**, the control is displayed without the label. Only icon will be present in it.
+When the mode is set to small, the control is displayed without the label. Only icon will be present in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -172,7 +172,6 @@ When the mode is set to **Small**, the control is displayed without the label. O
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ![Size-Mode-Small](Getting-Started_images/Getting-Started_img3.png)
 
@@ -194,6 +193,8 @@ In a normal size button, a small image with the text on the side will be display
 
 {% endhighlight %}
 {% endtabs %}
+
+![Size-Mode-Normal](Getting-Started_images/Getting-Started_img4.png)
 
 ### Large mode
 
@@ -304,7 +305,7 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Icon Size Image](Getting-Started_images/Getting-Started_img10.png)
+![Icon Size Image](Getting-Started_images/Getting-Started_img9.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -323,7 +324,7 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![Icon Size](Getting-Started_images/Getting-Started_img9.png)
+![Icon Size](Getting-Started_images/Getting-Started_img10.png)
 
 ## Adding items to Split Button
 

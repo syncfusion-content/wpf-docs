@@ -5,7 +5,7 @@ description: Learn how to add WPF Button (ButtonAdv) control and its basic featu
 platform: wpf
 control: ButtonAdv
 documentation: ug
-----
+---
 
 # Getting Started with Button
 
@@ -23,11 +23,11 @@ Refer [ButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#buttonadv
 
 In this walk through, will create WPF application that contains Button control. By the following ways, one can add the controls:
 
-1. [Adding control via designer](#Adding-control-via-designer)
+1. [Adding control via designer](#adding-control-via-designer)
 
-2. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
+2. [Adding control manually in XAML](#adding-control-manually-in-XAML)
 
-3. [Adding control manually in C#](#Adding-control-manually-in-C#)
+3. [Adding control manually in C#](#adding-control-manually-in-C#)
 
 ### Adding control via designer
 
@@ -36,7 +36,7 @@ Button control can be added to the application by dragging **ButtonAdv** from to
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ButtonAdv x:Name="buttonAdv" Label="Button"/>
+<syncfusion:ButtonAdv x:Name="buttonAdv" Label="ButtonAdv"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -53,7 +53,7 @@ In order to add the control manually in XAML, follow the below steps.
 
     * Syncfusion.Shared.WPF
 
-2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2. Import Syncfusion WPF schema `http://schemas.syncfusion.com/wpf` or the control namespace `Syncfusion.Windows.Tools.Controls` in XAML page.
 
 3. Declare ButtonAdv control in XAML page.
 
@@ -82,7 +82,7 @@ In order to the add control manually in C#, do the below steps.
 
     * Syncfusion.Shared.WPF
 
-2. Import namespace using **Syncfusion.Windows.Tools.Controls**;.
+2. Import the **Syncfusion.Windows.Tools.Controls** namespace.
 
 3. Create ButtonAdv control instance and add it to the window.
 
@@ -114,7 +114,7 @@ In order to the add control manually in C#, do the below steps.
             ButtonAdv button = new ButtonAdv();
             button.Height=44;
             button.Width=31;
-            Root.Childran.Add(button);
+            Root.Children.Add(button);
         }
     }
 
@@ -154,7 +154,7 @@ Size mode is used to render button control in different pre-defined sizes based 
 
 ### Small mode
 
-When the mode is set to **Small**, the control is displayed without the label. Only icon will be present in it.
+When the mode is set to small, the control is displayed without the label. Only icon will be present in it.
 
 {% tabs %}
 {% highlight xaml %}

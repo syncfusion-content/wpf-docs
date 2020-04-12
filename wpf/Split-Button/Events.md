@@ -106,7 +106,7 @@ The event occurs before closing the dropdown menu popup and any action can be ha
 
 ## Click
 
-The events occurs when the Split button control is clicked and any action can be handled in the respective event handler.
+The events occurs when the Split Button control is clicked and any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %}
@@ -127,7 +127,7 @@ The events occurs when the Split button control is clicked and any action can be
 {% endhighlight %}
 {% endtabs %}
 
-## Events in Dropdown menu item
+## Events for dropdown menu items
 
 ### Click
 
