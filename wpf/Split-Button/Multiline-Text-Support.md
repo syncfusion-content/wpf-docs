@@ -9,7 +9,7 @@ documentation: ug
 
 ## Multiline Text in WPF Split Button (SplitButtonAdv)
 
-Multiline support is used to render text content of the Split Button control in multiple lines for precise view. One can apply the multiline text by using the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IsMultiLine.html) property.
+Multiline text support is used to render text content of the Split Button control in multiple lines for precise view. One can apply the multiline text by using the [IsMultiLine](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~IsMultiLine.html) property.
 
 N> This property is only applicable for large size mode of the Split Button.
 
