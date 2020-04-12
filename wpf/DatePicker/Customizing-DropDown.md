@@ -32,29 +32,6 @@ sfDatePicker.DropDownHeight = 300;
 
 ![SfDatePicker with DropDownHeight](Customizing-DropDown_images/Customizing-DropDown_img2.png)
 
-## Show or hide SfDateSelector
-
-We can show or hide the drop down date selector programmatically at any time to select the date by using the [IsDropDownOpen](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~IsDropDownOpen.html) property as either `true` or `false`. The default value of `IsDropDownOpen` property is `false`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:SfDatePicker IsDropDownOpen="True" 
-	                     x:Name="sfDatePicker"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfDatePicker sfDatePicker = new SfDatePicker();
-sfDatePicker.IsDropDownOpen = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfDatePicker shows the date selector drop down](Customizing-DropDown_images/Customizing-DropDown_img1.png)
-
-Here, initially the `SfDatePicker` shows the date selector drop down.
-
 ## Show or hide DropDown button
 
 If we want to restrict the user to selecting a date from a drop down date selector, we can hide the drop down button by using the [ShowDropDownButton](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~ShowDropDownButton.html) property value as `false`. The default value of `ShowDropDownButton` property is `true`.
@@ -76,4 +53,4 @@ sfDatePicker.ShowDropDownButton = false;
 
 ![SfDatePicker hides the drop down button](Customizing-DropDown_images/Customizing-DropDown_img3.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/SfDateSelector-ItemCustomization) to download the sample that showcases the DropDown customization support.
+Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/DateSelectorItem) to download the sample that showcases the DropDown customization support.

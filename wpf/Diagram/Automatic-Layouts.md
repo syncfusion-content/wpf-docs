@@ -442,7 +442,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ![HierarchicalLayout](Automatic-Layouts_images/Automatic-Layouts_img8.png)
 
-Please find the [HierarchicalTree layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Hierarchical%20Tree) to depict this layout.
+Please find the [HierarchicalTree layout sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Hierarchical%20Tree) to depict this layout.
 
 ## Organization layout 
 
@@ -746,7 +746,7 @@ private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
 
 ![Organization Layout with Assistant](Automatic-Layouts_images/Automatic-Layouts_img10.png)
 
-Find the [Organization Tree layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Organization%20Chart) to depict this layout.
+Find the [Organization Tree layout sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Organization%20Chart) to depict this layout.
 
 ### How to create a parent - child relation with dropped nodes from stencil
 
@@ -807,7 +807,7 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 
 ![Organization Layout from stencil](Automatic-Layouts_images/AutomaticLayout_Gif1.gif)
 
-Please find the [Demo sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/OrgChart_with_drag_and_dropped_nodes-1402243198) to depict this support.
+Please find the [Demo sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/OrgChart%20with%20drag%20and%20dropped%20nodes) to depict this support.
 
 ## Radial-Tree layout
 
@@ -961,7 +961,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ![RadialLayout](Automatic-Layouts_images/Automatic-Layouts_img9.png)
 
-Please find [RadialTree Layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Radial%20Tree) to depict this layout.
+Please find [RadialTree Layout sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Radial%20Tree) to depict this layout.
 
 ### Customize Bounds in layout
 
@@ -1382,4 +1382,4 @@ layoutManager.Layout = new FlowchartLayout()
 {% endhighlight %}
 {% endtabs %}
 
-Please find [Flowchart sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Flowchart%20Layout) to depict this support.
+Please find [Flowchart sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Flowchart%20Layout) to depict this support.
