@@ -476,12 +476,27 @@ Grouping several hub tiles can also be done by populating hub tile into a collec
 
 {% tabs %}
 {% highlight C# %}
-    
+
 public class Model
 {
-    public string Header { get; set; }
-    public string ImageSource { get; set; }
-    public TimeSpan Interval { get; set; }   
+    private string header;
+    private string imageSource;
+    private TimeSpan interval;
+    public string Header
+    {
+        get { return header; }
+        set { header = value; }
+    }
+    public string ImageSource
+    {
+        get { return imageSource; }
+        set { imageSource = value; }
+    }
+    public TimeSpan Interval
+    {
+        get { return interval; }
+        set { interval = value; }
+    }
 }
 
 {% endhighlight %}
@@ -494,24 +509,39 @@ public class Model
 
 public class ViewModel
 {
-    public ObservableCollection<Model> Items { get; set; }
+    private ObservableCollection<Model> items;
     public ViewModel()
     {
-       Items = new ObservableCollection<Model>();
-        PopulateData(); 
-    }
-    private void PopulateData()
+        Items = new ObservableCollection<Model>();
+        PopulateItems();
+    }      
+    public ObservableCollection<Model> Items
     {
-        Model hub1 = new Model { Header= "Mail",ImageSource=@"/Assets/New Mail.png", Interval=TimeSpan.FromSeconds(3.0),};
-        Model hub2 = new Model { Header = "Word", ImageSource = @"/Assets/Word.png", Interval=TimeSpan.FromSeconds(3.0),};
-        Model hub3 = new Model { Header = "Paint", ImageSource = @"/Assets/Painting Brush.png", Interval=TimeSpan.FromSeconds(3.0),};
-        Model hub4 = new Model { Header = "NotePad", ImageSource = @"/Assets/Note.png",Interval=TimeSpan.FromSeconds(3.0),};
+        get { return items; }
+        set { items = value; }
+    }
+    private void PopulateItems()
+    {
+        Model hub1 = new Model { Header = "Mail", ImageSource = @"/Assets/New Mail.png", Interval = TimeSpan.FromSeconds(3.0) };
+        Model hub2 = new Model { Header = "Word", ImageSource = @"/Assets/Word.png", Interval = TimeSpan.FromSeconds(3.0) };
+        Model hub3 = new Model { Header = "Paint",ImageSource = @"/Assets/Painting Brush.png", Interval = TimeSpan.FromSeconds(3.0) };
+        Model hub4 = new Model { Header = "NotePad",ImageSource = @"/Assets/Note.png", Interval = TimeSpan.FromSeconds(3.0) };
+        Model hub5 = new Model { Header = "Microsoft Store ", ImageSource = @"/Assets/Store.png", Interval = TimeSpan.FromSeconds(3.0) };
+        Model hub6 = new Model { Header = "Clock", ImageSource = @"/Assets/Clock.png", Interval = TimeSpan.FromSeconds(3.0) };
+        Model hub7 = new Model { Header = "Calculator", ImageSource = @"/Assets/Calculator.png", Interval = TimeSpan.FromSeconds(3.0) };
+        Model hub8 = new Model { Header = "Excel", ImageSource = @"/Assets/Excel.png", Interval = TimeSpan.FromSeconds(3.0) };
+        Model hub9 = new Model { Header = "Microsoft Edge", ImageSource = @"/Assets/MicroSoft Edge.png", Interval = TimeSpan.FromSeconds(3.0) };
         Items.Add(hub1);
         Items.Add(hub2);
         Items.Add(hub3);
         Items.Add(hub4);
+        Items.Add(hub5);
+        Items.Add(hub6);
+        Items.Add(hub7);
+        Items.Add(hub8);
+        Items.Add(hub9);
     }
-}    
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -528,7 +558,6 @@ public class ViewModel
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HubTileGrouping_Sample"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:viewmodel="clr-namespace:HubTileGrouping_Sample.ViewModel"
         xmlns:shared="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.SfShared.Wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -536,32 +565,37 @@ public class ViewModel
         <local:ImageConverter x:Key="Image"/>
     </Window.Resources>
     <Window.DataContext>
-        <viewmodel:ViewModel/>
+        <local:ViewModel/>
     </Window.DataContext>
     <Grid>
-        <ListView x:Name="List" ItemsSource="{Binding Items}" >
+        <ListView
+            x:Name="List"
+            ItemsSource="{Binding Items}"
+            ScrollViewer.VerticalScrollBarVisibility="Disabled">
         <ListView.ItemTemplate>
         <DataTemplate>
-        <StackPanel Orientation="Horizontal">
-        <syncfusion:SfHubTile Header="{Binding Header}" Interval="{Binding Interval}" ImageSource="{Binding Imagesource,Converter={StaticResource Image}}">
-        <syncfusion:SfHubTile.SecondaryContentTemplate>
-            <DataTemplate>
-                <TextBlock Text="This is the secondary content of the tile displayed at each transition." TextWrapping="Wrap" FontStyle="Italic" FontSize="15" Foreground="White"/>
-            </DataTemplate>
-        </syncfusion:SfHubTile.SecondaryContentTemplate>
-        <syncfusion:SfHubTile.HubTileTransitions>
-                <shared:FadeTransition/>
-        </syncfusion:SfHubTile.HubTileTransitions>
+        <syncfusion:SfHubTile
+            Title="{Binding Title}"
+            Foreground="White"
+            Header="{Binding Header}"
+            ImageSource="{Binding ImageSource, Converter={StaticResource Image}}"
+            Interval="{Binding Interval}">
         </syncfusion:SfHubTile>
-        </StackPanel>
         </DataTemplate>
         </ListView.ItemTemplate>
+        <ListBox.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapPanel  Orientation="Vertical" />
+            </ItemsPanelTemplate>
+        </ListBox.ItemsPanel>
         </ListView>
     </Grid>
 </Window>
 
 {% endhighlight %}
 {% endtabs %}
+
+![wpf hub tile grouping via databinding](Getting-Started_images/wpf-hubtile-grouping-binding.png)
 
 ## Freezing/Unfreezing 
 

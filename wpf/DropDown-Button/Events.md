@@ -1,90 +1,153 @@
 ---
 layout: post
-title: Events| DropDownButtonAdv | Wpf | Syncfusion
-description: events
-platform: wpf
+title: Events | Dropdown Button Control | WPF | Syncfusion
+description: This section explores how to use Dropdown Button events available for dropdown opening, closing, etc. operations in-order to perform the required action.
+platform: WPF
 control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Events
+# Events in WPF Dropdown Button (DropDownButtonAdv)
 
-The DropDownButtonAdv control comprises the following events:
+The Dropdown Button control comprises of various pre-defined events to perform any required action that are illustrated below.
 
 ## DropDownOpening
 
-This event occurs before opening the DropDown.
-
-The following code adds the DropDownOpening event handler to the DropDownButtonAdv control:
-
+The event occurs before opening the dropdown menu popup and any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 
-<shared:DropDownButtonAdv DropDownOpening="DropDownButtonAdv_DropDownOpening"/>
-{% endhighlight %}
 
-{% highlight C# %} 
-DropDownButtonAdv button = new DropDownButtonAdv();
-button.DropDownOpening +=new CancelEventHandler(button_DropDownOpening);
+    <syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownOpening="dropdownbutton_DropDownOpening"/>
+
+{% endhighlight %}
+{% highlight c# %} 
+
+    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+    dropdownbutton.DropDownOpening +=new CancelEventHandler(dropdownbutton_DropDownOpening);
+
+    private void dropdownbutton_DropDownOpening(object sender, System.ComponentModel.CancelEventArgs e)
+    {
+
+    }
+
 {% endhighlight %}
 {% endtabs %}
-
 
 ## DropDownOpened
 
-This event occurs after opened the DropDown.
-
-The following code adds the DropDownOpened event handler to the DropDownButtonAdv control:
-
-
+The event occurs after opening the dropdown menu popup and any action can be handled in respective event handler.
 
 {% tabs %}
 {% highlight xaml %}
-<shared:DropDownButtonAdv DropDownOpened="DropDownButtonAdv_DropDownOpened"/> 
-{% endhighlight %}
 
-{% highlight C# %} 
-DropDownButtonAdv button = new DropDownButtonAdv();
-button.DropDownOpened +=new RoutedEventHandler(button_DropDownOpened); 
+    <syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownOpened="dropdownbutton_DropDownOpened"/> 
+
+{% endhighlight %}
+{% highlight C# %}
+
+    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+    dropdownbutton.DropDownOpened +=new RoutedEventHandler(dropdownbutton_DropDownOpened); 
+
+    private void dropdownbutton_DropDownOpened(object sender, RoutedEventArgs e)
+    {
+
+    }
+
 {% endhighlight %} 
 {% endtabs %}
 
-
 ## DropDownClosing
 
-This event occurs before closing the DropDown.
-
-The following code adds the DropDownClosing event handler to the DropDownButtonAdv control:
-
-
+The event occurs before closing the dropdown menu popup and any action can be handled in respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 
-<shared:DropDownButtonAdv DropDownClosing="DropDownButtonAdv_DropDownClosing"/>
-{% endhighlight %}
 
+    <syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownClosing="dropdownbutton_DropDownClosing"/>
+
+{% endhighlight %}
 {% highlight C# %} 
-DropDownButtonAdv button = new DropDownButtonAdv();
-button.DropDownClosing +=new CancelEventHandler(button_DropDownClosing);
+
+    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+    dropdownbutton.DropDownClosing +=new CancelEventHandler(dropdownbutton_DropDownClosing);
+
+    private void dropdownbutton_DropDownClosing(object sender, System.ComponentModel.CancelEventArgs e)
+    {
+
+    }
+
 {% endhighlight %}
 {% endtabs %}
 
 ## DropDownClosed 
 
-This event occurs after closed the DropDown.
-
-The following code adds the DropDownClosed event handler to the DropDownButtonAdv control:
-
+The event occurs after closing the dropdown menu popup and any action can be handled in respective event handler.
 
 {% tabs %}
 {% highlight xaml %} 
-<shared:DropDownButtonAdv DropDownClosed="DropDownButtonAdv_DropDownClosed"/> 
-{% endhighlight %} 
 
+    <syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownClosed="dropdownbutton_DropDownClosed"/> 
+
+{% endhighlight %} 
 {% highlight C# %} 
-DropDownButtonAdv button = new DropDownButtonAdv();
-button.DropDownClosed +=new RoutedEventHandler(button_DropDownClosed); 
+
+    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+    dropdownbutton.DropDownClosed +=new RoutedEventHandler(dropdownbutton_DropDownClosed); 
+
+    private void dropdownbutton_DropDownClosed(object sender, RoutedEventArgs e)
+    {
+
+    }
+
 {% endhighlight %} 
 {% endtabs %}
 
+## Events for dropdown menu items
 
+### Click
+
+The event occurs when the dropdown menu item is clicked and any action can be handled in respective event handler.
+
+{% tabs %}
+{% highlight xaml %} 
+
+    <syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" Click="dropDownMenuItem_Click/> 
+
+{% endhighlight %} 
+{% highlight C# %} 
+
+    DropDownMenuItem dropDownMenuItem = new DropDownMenuItem();
+    dropDownMenuItem.Click +=new RoutedEventHandler(dropDownMenuItem_Click);
+
+    private void dropDownMenuItem_Click(object sender, RoutedEventArgs e)
+    {
+
+    } 
+
+{% endhighlight %} 
+{% endtabs %}
+
+### IsCheckedChanged
+
+The event occurs when the dropdown menu item is checked or unchecked, that is, only when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~IsCheckable.html) property is set to **true**. Any action can be handled in the respective event handler.
+
+{% tabs %}
+{% highlight xaml %} 
+
+     <syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" IsCheckable="True" IsCheckedChanged="DropDownMenuItem_IsCheckedChanged"/>
+
+{% endhighlight %} 
+{% highlight C# %} 
+
+    DropDownMenuItem dropDownMenuItem  = new DropDownMenuItem();
+    dropDownMenuItem.IsCheckable=true;
+    dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(dropDownMenuItem_IsCheckedChanged); 
+    
+    private void dropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    {
+
+    }
+
+{% endhighlight %} 
+{% endtabs %}

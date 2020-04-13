@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with suggestion box
 
-Suggestion box is a drop-down list box that displays the filtered suggestions inside a popup. This section explains the properties that deal with drop-down list in the AutoComplete control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the AutoComplete control.
 
 ## Suggestion box placement mode
 
@@ -339,7 +339,7 @@ No drop down list
 
 ## Maximum suggestion box height
 
-The maximum height of the suggestion box in the Autocomplete control can be changed using the `MaximumDropDownHeight` property.
+The maximum height of the suggestion box in the Autocomplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MaxDropDownHeightProperty.html) property.
 
 {% tabs %}
 
@@ -430,7 +430,7 @@ namespace AutoCompleteSample
 
 ## Opening suggestion box on focus
 
-Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. At that time, suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [ShowSuggestionsOnFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowSuggestionsOnFocusProperty.html) property. At that time, suggestion list is the complete list of data source.
 
 {% tabs %}
 

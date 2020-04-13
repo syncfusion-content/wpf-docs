@@ -25,6 +25,10 @@ The phenomenon of string comparison for filtering suggestions can be changed by 
 12. EqualsOrdinal
 13. EqualsOrdinalCaseSensitive
 14. Custom
+15. EndsWith
+16. EndsWithCaseSensitive
+17. EndsWithOrdinal
+18. EndsWithOrdinalCaseSensitive
 
 The default value is StartsWith.
 
@@ -134,7 +138,7 @@ None case
 
 ## StartsWith
 
-TDisplays all matches that begin with the typed characters in the control. This strategy is insensitive to the case.
+Displays all matches that begin with the typed characters in the control. This strategy is insensitive to the case.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1478,3 +1482,401 @@ Custom case
 {:.caption}
 
 N> Append mode always only works with StartsWith behavior. If the typed text is not the same as the start text of any item, nothing will be append even if the auto complete mode is set to Append or SuggestAppend.
+
+## EndsWith
+
+Displays all matches that end with the typed characters in the control. This strategy is insensitive to the case.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <Window.Content>
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="200"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="EndsWith"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Data;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.DataContext = viewModel;
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.EndsWith,
+                Width = 200
+            };
+
+            Binding autoCompleteSourceBinding = new Binding();
+            autoCompleteSourceBinding.Source = viewModel;
+            autoCompleteSourceBinding.Path = new PropertyPath("Employees");
+            BindingOperations.SetBinding(textBoxExt, SfTextBoxExt.AutoCompleteSourceProperty, autoCompleteSourceBinding);
+
+            this.Content = textBoxExt;
+        }
+    }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![EndsWith](Auto-Complete_images/EndsWith.png)
+
+EndsWith case
+{:.caption}
+
+## EndsWithCaseSensitive
+
+Displays all matches that end with the typed characters in the control. This strategy is case-sensitive.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <Window.Content>
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="200"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="EndsWithCaseSensitive"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Data;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.DataContext = viewModel;
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.EndsWithCaseSensitive,
+                Width = 200
+            };
+
+            Binding autoCompleteSourceBinding = new Binding();
+            autoCompleteSourceBinding.Source = viewModel;
+            autoCompleteSourceBinding.Path = new PropertyPath("Employees");
+            BindingOperations.SetBinding(textBoxExt, SfTextBoxExt.AutoCompleteSourceProperty, autoCompleteSourceBinding);
+
+            this.Content = textBoxExt;
+        }
+    }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "JAMES", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![EndsWith](Auto-Complete_images/EndsWithCaseSensitive.png)
+
+EndsWithCaseSensitive case
+{:.caption}
+
+## EndsWithOrdinal
+
+The control returns all possible matches ending with the text typed by the user based on the OrdinalIgnoreCase.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <Window.Content>
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="200"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="EndsWithOrdinal"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Data;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.DataContext = viewModel;
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.EndsWithOrdinal,
+                Width = 200
+            };
+
+            Binding autoCompleteSourceBinding = new Binding();
+            autoCompleteSourceBinding.Source = viewModel;
+            autoCompleteSourceBinding.Path = new PropertyPath("Employees");
+            BindingOperations.SetBinding(textBoxExt, SfTextBoxExt.AutoCompleteSourceProperty, autoCompleteSourceBinding);
+
+            this.Content = textBoxExt;
+        }
+    }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## EndsWithOrdinalCaseSensitive
+
+The control returns all possible matches, ending with the text typed by the user by Ordinal, which is case sensitive.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <Window.Content>
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="200"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="EndsWithOrdinalCaseSensitive"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Data;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.DataContext = viewModel;
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.EndsWithOrdinalCaseSensitive,
+                Width = 200
+            };
+
+            Binding autoCompleteSourceBinding = new Binding();
+            autoCompleteSourceBinding.Source = viewModel;
+            autoCompleteSourceBinding.Path = new PropertyPath("Employees");
+            BindingOperations.SetBinding(textBoxExt, SfTextBoxExt.AutoCompleteSourceProperty, autoCompleteSourceBinding);
+
+            this.Content = textBoxExt;
+        }
+    }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
