@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Snapping
+# Snapping and customization
 
 When you draw, resize, or move a diagramming element in the page, you can set it, so that it will align or snap to the nearest intersection in the page even when the grid is visible or not. However, you can control the alignment and snap-to capabilities of elements by using the snapping option of SfDiagram.
 

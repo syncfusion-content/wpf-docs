@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Connector
+# Connector types and creation
 
 Connectors are objects used to create link between two points or nodes to indicate the flow of operation or relationships between them.
 

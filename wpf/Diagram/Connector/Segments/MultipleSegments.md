@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Multiple segments
+# Multiple segments creation
 
 Multiple segments can be added in a single connector one after another. you can add above four type of segments in single connector at a time.
 

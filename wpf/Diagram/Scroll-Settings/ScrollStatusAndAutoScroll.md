@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Scroll Settings
+# Scroll Settings and customization
 
 The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mouse wheel can be used to scroll the diagram. Diagram’s scroll settings allows you to read the current scroll status, view port size, current zoom, and zoom factor values.
 

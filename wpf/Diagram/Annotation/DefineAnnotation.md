@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Annotation
+# Define Annotation and multiple annotations
 
 Annotation is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at run time. Multiple annotations can be added to a node or connector.
 

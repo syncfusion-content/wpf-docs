@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Shapes
+# Shapes Resource Dictionary
 
 We have provided some basic built-in shapes as ResourceDictionary.
 

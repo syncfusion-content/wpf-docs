@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Tools
+# Drawing tools and tool selection
 
 ## Drawing Tools
 
