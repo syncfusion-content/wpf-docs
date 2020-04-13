@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Styles and templates in WPF Dropdown Button (DropDownButtonAdv)
+# Styles and Templates in WPF Dropdown Button (DropDownButtonAdv)
 
 WPF styles and templates is a suite of features that allow developers and designers to create visual compelling effects and consistent appearance of the products. 
 

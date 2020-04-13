@@ -7,7 +7,7 @@ control: ButtonAdv
 documentation: ug
 ---
 
-# Checkable support in WPF Button (ButtonAdv)
+# Toggle State in WPF Button (ButtonAdv)
 
 The button control can also be used as a toggle button, similar to the on/off view when the [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsCheckable.html) property is set to **true**. The default value of this property is **false**.
 

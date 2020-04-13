@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Getting Started with Dropdown Button
+# Getting Started with Dropdown Button (DropDownButtonAdv)
 
 This section provides an overview of how to work with Dropdown Button control. It describes the control structure, the control initialization, the image setting for the control and adding items to the Dropdown Button control.
 
@@ -23,11 +23,11 @@ Refer [DropDownButtonAdv](https://help.syncfusion.com/wpf/control-dependencies#d
 
 In this walk through, will create WPF application that contains Dropdown Button control. By the following ways, one can add the controls:
 
-1. [Adding control via designer](#Adding-control-via-designer)
+1. [Adding control via designer](#adding-control-via-designer)
 
-2. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
+2. [Adding control manually in XAML](#adding-control-manually-in-XAML)
 
-3. [Adding control manually in C#](#Adding-control-manually-in-C#)
+3. [Adding control manually in C#](#adding-control-manually-in-C#)
 
 ### Adding control via designer
 
@@ -36,7 +36,7 @@ Dropdown Button control can be added to the application by dragging **DropDownBu
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv x:Name="dropdownButtonAdv" Label="Dropdown Button"/>
+    <syncfusion:DropDownButtonAdv x:Name="dropdownButtonAdv" Label="Drop Down Button"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -156,7 +156,7 @@ Size mode is used to render Dropdown Button control in different pre-defined siz
 
 ### Small mode
 
-When the mode is set to **Small**, the control is displayed without the label. Only icon will be present in it.
+When the mode is set to small, the control is displayed without the label. Only icon will be present in it.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -193,6 +193,8 @@ In a normal size button, a small image with the text on the side will be display
 
 {% endhighlight %}
 {% endtabs %}
+
+![Sizemode-Normal](Getting-Started_images/Getting-Started_img4.png)
 
 ### Large mode
 

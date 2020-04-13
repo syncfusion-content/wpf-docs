@@ -7,15 +7,13 @@ control: ButtonAdv
 documentation: ug
 ---
 
-# Command binding in WPF Button (ButtonAdv)
+# MVVM in WPF Button (ButtonAdv)
 
 The command and command parameter properties allow to execute any action on clicking the button control.
 
 ## Command
 
-The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8).
-
-The Command can be binded as follows:
+The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). The Command can be binded as follows:
 
 {% tabs %}
 {% highlight xaml %}

@@ -7,7 +7,7 @@ control: DropDownButtonAdv
 documentation: ug
 ---
 
-# Dropdown direction in WPF Dropdown Button (DropDownButtonAdv)
+# Dropdown Direction in WPF Dropdown Button (DropDownButtonAdv)
 
 Dropdown direction is used to change the position of the popup being loaded while clicking the dropdown arrow. The direction can be changed using the [DropDirection](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButtonAdv~DropDirection.html) enumeration.
 

@@ -103,7 +103,7 @@ The event occurs after closing the dropdown menu popup and any action can be han
 {% endhighlight %} 
 {% endtabs %}
 
-## Events in Dropdown menu item
+## Events for dropdown menu items
 
 ### Click
 

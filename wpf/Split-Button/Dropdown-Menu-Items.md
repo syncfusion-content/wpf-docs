@@ -7,7 +7,7 @@ control: SplitButtonAdv
 documentation: ug
 ---
 
-# Customization of dropdown menu items in WPF Split Button
+# Dropdown Menu Items in WPF Split Button (SplitButtonAdv)
 
 ## Setting icon for dropdown menu items
 
@@ -56,7 +56,7 @@ The icon bar option helps to enable/disable the vertical bar next to the Dropdow
 
 N> The default value of [IconBarEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IconBarEnabled.html) is `false`.
 
-% tabs %}
+{% tabs %}
 {% highlight xaml %}
 
     <syncfusion:SplitButtonAdv Label="Country" DropDirection="BottomRight" x:Name="splitbutton" SizeMode="Normal" SmallIcon="Images\country.png">
@@ -231,3 +231,167 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 
 
 ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img4.png)
+
+## Resizing dropdown menu
+
+The dropdown menu group popup height can be increased or decreased using the resizing gripper. One can enable the resizing behavior by setting the [IsResizable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IsResizable.html) property to **true**.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SmallIcon="images\colors.png">
+        <syncfusion:DropDownMenuGroup IsResizable=”True”>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\orange.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Sky Blue">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\skyblue.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\red.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+        </syncfusion:DropDownMenuGroup>
+    </syncfusion:SplitButtonAdv>
+
+{% endhighlight %}
+{% highlight c# %}
+
+    SplitButtonAdv splitbutton = new SplitButtonAdv();
+    DropDownMenuGroup menu = new DropDownMenuGroup();
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Orange", Icon =new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Sky Blue", Icon =new BitmapImage(new Uri("images\skyblue.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Red", Icon =new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
+    menu.Items.Add(Item1);
+    menu.Items.Add(Item2);
+    menu.Items.Add(Item3);
+    menu.IsResizable = true;
+    splitbutton.Content = menu;
+    splitbutton.Label = "Colors";
+    splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+
+{% endhighlight %}
+{% endtabs %}
+
+![Resizing](Resizing-Support_images/Resizing-Support_img1.png)
+
+## Adding custom dropdown menu items
+
+The dropdown menu group has option to load custom items apart from actual dropdown menu items. One can populate the custom items using the [MoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~MoreItems.html) property.
+
+N> The **MoreItems** property has return type `ObservableCollection<UIElement>`, so it can accept any UIElement as its child items.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SizeMode="Normal" SmallIcon="images\colors.png">
+        <syncfusion:DropDownMenuGroup IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
+            <syncfusion:DropDownMenuGroup.MoreItems>
+                <Label Content="More Items"/>
+            </syncfusion:DropDownMenuGroup.MoreItems>
+            </syncfusion:DropDownMenuGroup.MoreItems>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
+                syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\black.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+                <syncfusion:DropDownMenuItem.Icon   >
+                    <Image Source="images\orange.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\red.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+        </syncfusion:DropDownMenuGroup>
+    </syncfusion:SplitButtonAdv>
+
+ {% endhighlight %}
+ {% highlight c# %}
+
+    SplitButtonAdv splitbutton = new SplitButtonAdv();
+    DropDownMenuGroup menu = new DropDownMenuGroup();
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Red", Icon=new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
+    Label Item4 = new Label() { Content ="More Items" };
+    menu.Items.Add(Item1);
+    menu.Items.Add(Item2);
+    menu.Items.Add(Item3);
+    menu.MoreItems.Add(Item4);
+    menu.IconBarEnabled = true;
+    menu.IsMoreItemsIconTrayEnabled = true;
+    splitbutton.Content = menu;
+    splitbutton.Label = "Country";
+    splitbutton.SizeMode = SizeMode.Normal;
+    splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+
+{% endhighlight %}
+{% endtabs %}
+
+![More-item1](Moreitems_images/More_item_img2.png)
+
+## Setting icon bar visibility for custom dropdown menu items
+
+The custom dropdown menu items icon visibility can be enabled/disabled by setting the [IsMoreItemsIconTrayEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~IsMoreItemsIconTrayEnabled.html) property either to **true** or **false**.
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SizeMode="Normal" SmallIcon="images\colors.png">
+        <syncfusion:DropDownMenuGroup IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
+            <syncfusion:DropDownMenuGroup.MoreItems>
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="More Items">
+                    <syncfusion:DropDownMenuItem.Icon>
+                        <Image Source="images\skyblue.png"/>
+                    </syncfusion:DropDownMenuItem.Icon>
+             </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
+                syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\black.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+                <syncfusion:DropDownMenuItem.Icon   >
+                    <Image Source="images\orange.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+                <syncfusion:DropDownMenuItem.Icon>
+                    <Image Source="images\red.png"/>
+                </syncfusion:DropDownMenuItem.Icon>
+            </syncfusion:DropDownMenuItem>
+        </syncfusion:DropDownMenuGroup>
+    </syncfusion:SplitButtonAdv>
+
+{% endhighlight %}
+{% highlight c# %}
+
+    SplitButtonAdv splitbutton = new SplitButtonAdv();
+    DropDownMenuGroup menu = new DropDownMenuGroup();
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Red", Icon=new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="More Items", Icon=new BitmapImage(new Uri("images\skyblue.png")), HorizontalAlignment="Left"};
+    menu.Items.Add(Item1);
+    menu.Items.Add(Item2);
+    menu.Items.Add(Item3);
+    menu.MoreItems.Add(Item4);
+    menu.IconBarEnabled = true;
+    menu.IsMoreItemsIconTrayEnabled = false;
+    splitbutton.Content = menu;
+    splitbutton.Label = "Colors";
+    splitbutton.SizeMode = SizeMode.Normal;
+    splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+
+{% endhighlight %}
+{% endtabs %}
+
+![More-item](Moreitems_images/More_item_img1.png)
