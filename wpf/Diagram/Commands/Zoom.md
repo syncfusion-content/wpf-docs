@@ -11,7 +11,7 @@ documentation: ug
 
 Zoom commands are used to do zoom-in and zoom-out operations on the Diagram view. This command is also used to do scroll and pan operations with its parameter. 
 
-To execute zoom commands, parameter of type IZoomParameter [IZoomPositionParameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter_members.html) have to be passed.
+To execute zoom commands, parameter of type IZoomParameter [IZoomPositionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ZoomPositionParameter_members.html) have to be passed.
 
 ## Zoom position parameter
 
@@ -137,7 +137,7 @@ For VerticalScroll
 
 ## Reset
 
-Reset command is used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. If we want to customize the Reset command we can use [IReset](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ResetParameter_members.html) as parameter.
+Reset command is used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram. If we want to customize the Reset command we can use [IReset](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ResetParameter_members.html) as parameter.
 
 ### ResetParameter
 

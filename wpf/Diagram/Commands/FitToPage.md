@@ -9,7 +9,7 @@ documentation: ug
 
 # FitToPage in WPF Diagram(SfDiagram)
 
-FitToPage commands are used to bring the entire Diagram into the view. [IFitToPage parameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter_members.html) is used to customize the FitToPage command behavior.
+FitToPage commands are used to bring the entire Diagram into the view. [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is used to customize the FitToPage command behavior.
 If the parameter is null, entire Diagram is fit into the view.
 
 {% tabs %}
@@ -24,7 +24,7 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ## FitToPageParameter
 
-[IFitToPage parameter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter_members.html) is used to customize the FitToPage command behavior.
+[IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter_members.html) is used to customize the FitToPage command behavior.
 
 ### CanZoomIn
 
