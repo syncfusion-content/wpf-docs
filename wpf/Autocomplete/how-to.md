@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Events
+# Events in SfTextBoxExt
 
 ## SuggestionsChanged Event
 
