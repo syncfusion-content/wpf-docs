@@ -18,70 +18,95 @@ We can change the background color of `SfGridSplitter` by setting the `Backgroun
 {% tabs %}
 {% highlight XAML %}
 
-<Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition />
-        <RowDefinition Height="auto" />
-        <RowDefinition />
-    </Grid.RowDefinitions>
-    <Border BorderThickness="1"
-            BorderBrush="Black"  
-            Grid.Row="0">
-        <TextBlock Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
-                   TextWrapping="Wrap" />
-    </Border>
-    <syncfusion:SfGridSplitter Background="Green"
-                               HorizontalAlignment="Stretch"
-                               Width="auto"
-                               Grid.Row="1">
-    </syncfusion:SfGridSplitter>
-    <syncfusion:SfCalculator Grid.Row="2">           
-    </syncfusion:SfCalculator>
-</Grid>
+<Border
+    Margin="10"
+    BorderBrush="DarkGray"
+    BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   Text="Panel 1">
+        </TextBlock>
+        <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   TextAlignment="Center"
+                   Text="Panel 2">
+        </TextBlock>
+        
+        <!--Grid Splitter-->
+        <syncfusion:SfGridSplitter Background="Green"
+                                   HorizontalAlignment="Stretch"
+                                   Width="auto"
+                                   Grid.Row="1">
+        </syncfusion:SfGridSplitter>
+    </Grid>
+</Border>
 
 {% endhighlight %}
 {% endtabs %}
 
 ![SfGridSplitter with green background](Positioning-GridSplitter-images/Background.png)
 
-## Collapse button templates
+## Collapse buttons template
 
-We change the `ControlTemplate` of the UpButton and DownButton templates by using the `UpButtonTemplate` and `DownButtonTemplate` properties. We can see the effect of collapse button templates only on when `EnableCollapseButton` property value is `true`.
+We change the `ControlTemplate` of the `UpButton` and `DownButton` by using the `UpButtonTemplate` and `DownButtonTemplate` properties. We can see the effect of collapse button templates only on when `EnableCollapseButton` property value is `true`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition />
-        <RowDefinition Height="auto" />
-        <RowDefinition />
-    </Grid.RowDefinitions>
-    <Border BorderThickness="1" BorderBrush="Black"  Grid.Row="0">
-        <TextBlock Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
-                   TextWrapping="Wrap" />
-    </Border>
-    <syncfusion:SfGridSplitter EnableCollapseButton="True"
-                               HorizontalAlignment="Stretch"
-                               Width="auto" 
-                               Grid.Row="1">
-        <!--Up button template-->
-        <syncfusion:SfGridSplitter.UpButtonTemplate>
-            <ControlTemplate>
-                <TextBlock Background="Yellow">Up CollapseButton</TextBlock>
-            </ControlTemplate>
-        </syncfusion:SfGridSplitter.UpButtonTemplate>
-        
-        <!--Down button template-->
-        <syncfusion:SfGridSplitter.DownButtonTemplate>
-            <ControlTemplate>
-                <TextBlock Background="Yellow">Down CollapseButton</TextBlock>
-            </ControlTemplate>
-        </syncfusion:SfGridSplitter.DownButtonTemplate>
-    </syncfusion:SfGridSplitter>
-    <syncfusion:SfCalculator Grid.Row="2">           
-    </syncfusion:SfCalculator>
-</Grid>
+<Border
+    Margin="10"
+    BorderBrush="DarkGray"
+    BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   Text="Panel 1">
+        </TextBlock>
+        <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   TextAlignment="Center"
+                   Text="Panel 2">
+        </TextBlock>
+
+        <!--Grid Splitter-->
+        <syncfusion:SfGridSplitter EnableCollapseButton="True"
+                                   HorizontalAlignment="Stretch"
+                                   Width="auto"
+                                   Grid.Row="1">
+            <!--Up button template-->
+            <syncfusion:SfGridSplitter.UpButtonTemplate>
+                <ControlTemplate>
+                    <Ellipse Width="20" Height="20" Fill="Yellow"/>
+                </ControlTemplate>
+            </syncfusion:SfGridSplitter.UpButtonTemplate>
+
+            <!--Down button template-->
+            <syncfusion:SfGridSplitter.DownButtonTemplate>
+                <ControlTemplate>
+                    <Ellipse Width="20" Height="20" Fill="Orange"/>
+                </ControlTemplate>
+            </syncfusion:SfGridSplitter.DownButtonTemplate>
+        </syncfusion:SfGridSplitter>
+    </Grid>
+</Border>
+
 
 {% endhighlight %}
 {% endtabs %}
@@ -95,38 +120,51 @@ We can change the UI and style of the preview grid splitter by using the [SfGrid
 {% tabs %}
 {% highlight XAML %}
 
-<Grid>
-    <Grid.RowDefinitions>
-        <RowDefinition />
-        <RowDefinition Height="auto" />
-        <RowDefinition />
-    </Grid.RowDefinitions>
-    <Border BorderThickness="1" BorderBrush="Black"  Grid.Row="0">
-        <TextBlock Text="Capturing and extracting information is one of the most important tasks a developer can perform, and making this task more engaging without relying entirely on specialized tools is an efficient way to improve productivity. In Data Capture and Extraction with C# Succinctly, author Ed Freitas guides readers toward getting more out of C# in minimal time. Email has become a pillar of our modern and connected society, and it now serves as a primary means of communication. Because each email is filled with valuable information, data extraction has emerged as a worthwhile skill set for developers in today's business world."
-                   TextWrapping="Wrap" />
-    </Border>
-    <syncfusion:SfGridSplitter ShowsPreview="True"
-                               HorizontalAlignment="Stretch"
-                               Width="auto"
-                               Grid.Row="1" >
-        <syncfusion:SfGridSplitter.PreviewStyle>
-            <Style TargetType="Control">
-                <Setter Property="Background" Value="Red"/>
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="Control">
-                            <Grid x:Name="Root" Opacity="0.5">
-                                <Ellipse Fill="{TemplateBinding Background}"/>
-                            </Grid>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>                
-        </syncfusion:SfGridSplitter.PreviewStyle>     
-    </syncfusion:SfGridSplitter>
-    <syncfusion:SfCalculator Grid.Row="2">            
-    </syncfusion:SfCalculator>
-</Grid>
+<Border
+    Margin="10"
+    BorderBrush="DarkGray"
+    BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   Text="Panel 1">
+        </TextBlock>
+        <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   TextAlignment="Center"
+                   Text="Panel 2">
+        </TextBlock>
+        
+        <!--Grid Splitter-->
+        <syncfusion:SfGridSplitter ShowsPreview="True"
+                           HorizontalAlignment="Stretch"
+                           Width="auto"
+                           Grid.Row="1" >
+            <syncfusion:SfGridSplitter.PreviewStyle>
+                <Style TargetType="Control">
+                    <Setter Property="Background" Value="Red"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Control">
+                                <Grid x:Name="Root" Opacity="0.5">
+                                    <Ellipse Fill="{TemplateBinding Background}"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </syncfusion:SfGridSplitter.PreviewStyle>
+        </syncfusion:SfGridSplitter>
+    </Grid>
+</Border>
 
 {% endhighlight %}
 {% endtabs %}
