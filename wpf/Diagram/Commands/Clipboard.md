@@ -13,7 +13,7 @@ Clipboard commands are used to cut or copy selected diagram objects to the clipb
 
 ## Cut command
 
-Cut command is used to cut the selected diagram objects to the clipboard. Cut command can be executed by the keyboard shortcut CTRL + X.
+[Cut](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Cut.html) command is used to cut the selected diagram objects to the clipboard. Cut command can be executed by the keyboard shortcut CTRL + X.
 
 {% tabs %}
 {% highlight C# %}
@@ -28,7 +28,7 @@ graphinfo.Commands.Cut.Execute(null);
 
 ## Copy command
 
-Copy command is used to copy the selected diagram objects to the clipboard. Copy command can be executed by the keyboard shortcut CTRL + C.
+[Copy](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Copy.html) command is used to copy the selected diagram objects to the clipboard. Copy command can be executed by the keyboard shortcut CTRL + C.
 
 {% tabs %}
 {% highlight C# %}
@@ -43,7 +43,7 @@ graphinfo.Commands.Copy.Execute(null);
 
 ## Paste command
 
-Paste command is used to paste the clipboard content to the diagram page. Paste command can be executed by the keyboard shortcut CTRL + V.
+[Paste](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Paste.html) command is used to paste the clipboard content to the diagram page. Paste command can be executed by the keyboard shortcut CTRL + V.
 
 {% tabs %}
 {% highlight C# %}
@@ -58,7 +58,7 @@ graphinfo.Commands.Paste.Execute(null);
 
 ## Duplicate command
 
-Duplicate command is used to copy the selected diagram objects to the clipboard and paste the clipboard content to the diagram page. Duplicate command can be executed by the keyboard shortcut CTRL + D.
+[Duplicate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Duplicate.html) command is used to copy the selected diagram objects to the clipboard and paste the clipboard content to the diagram page. Duplicate command can be executed by the keyboard shortcut CTRL + D.
 
 {% tabs %}
 {% highlight C# %}

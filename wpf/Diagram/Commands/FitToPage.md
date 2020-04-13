@@ -9,7 +9,7 @@ documentation: ug
 
 # FitToPage in WPF Diagram(SfDiagram)
 
-FitToPage commands are used to bring the entire Diagram into the view. [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is used to customize the FitToPage command behavior.
+[FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~FitToPage.html) commands are used to bring the entire Diagram into the view. [IFitToPage parameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter.html) is used to customize the FitToPage command behavior.
 If the parameter is null, entire Diagram is fit into the view.
 
 {% tabs %}
@@ -28,13 +28,13 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ### CanZoomIn
 
-`CanZoomIn` is used to set whether small diagram gets zoom in to whole view or not.
+[CanZoomIn](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter~CanZoomIn.html) is used to set whether small diagram gets zoom in to whole view or not.
 
 ![CanZoomIn](Commands_Images/Commands_img18.gif)
 
 ### FitToPage 
 
-`FitToPage` is used to enable or disable the fit to page behavior with respect to height or width.
+[FitToPage](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter~FitToPage.html) is used to enable or disable the fit to page behavior with respect to height or width.
 
 | Values | Description |
 | --- | --- |
@@ -47,7 +47,7 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ### Region
 
-`Region` is used to set the region where to perform fittopage in diagram.
+[Region](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter~Region.html) is used to set the region where to perform fittopage in diagram.
 
 | Values | Description |
 | --- | --- |
@@ -57,7 +57,7 @@ graphinfo.Commands.FitToPage.Execute(null);
 
 ### FocusArea 
 
-`FocusArea` is used to set the focus area to execute `FitToPage` command in custom region. 
+[FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FitToPageParameter~FocusArea.html) is used to set the focus area to execute `FitToPage` command in custom region. 
 
 ![Region](Commands_Images/Commands_img20.gif)
 

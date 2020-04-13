@@ -9,7 +9,7 @@ documentation: ug
 
 # Command Manager in WPF Diagram(SfDiagram)
 
-CommandManager is used to map the user gestures (keyboard, mouse) with SfDiagram commands and helps to include new gesture commands in SfDiagram. Refer to the following table for built-in commands with Key Gesture and Mouse Gesture.
+[CommandManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CommandManager.html) is used to map the user gestures (keyboard, mouse) with SfDiagram commands and helps to include new gesture commands in SfDiagram. Refer to the following table for built-in commands with Key Gesture and Mouse Gesture.
 
 List of Commands and Key Gesture:
 

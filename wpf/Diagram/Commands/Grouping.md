@@ -13,7 +13,7 @@ Grouping commands are used to group/ungroup the selected diagramming objects suc
 
 ## Group command
 
-Group command is used to group the selected diagramming objects in the diagram page. Group command can be executed by the keyboard shortcut CTRL + G.
+[Group](help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Group.html) command is used to group the selected diagramming objects in the diagram page. Group command can be executed by the keyboard shortcut CTRL + G.
 
 {% tabs %}
 {% highlight C# %}
@@ -28,7 +28,7 @@ graphinfo.Commands.Group.Execute(null);
 
 ## UnGroup command
 
-UnGroup command is used to ungroup the selected group diagramming objects in the diagram page. UnGroup command can be executed by the keyboard shortcut CTRL + G.
+[UnGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~UnGroup.html) command is used to ungroup the selected group diagramming objects in the diagram page. UnGroup command can be executed by the keyboard shortcut CTRL + G.
 
 {% tabs %}
 {% highlight C# %}
