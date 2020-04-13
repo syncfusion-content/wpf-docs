@@ -267,7 +267,7 @@ data.Add(new ItemInfo("n21", "#941100")
 
 ![Multi parent](DataSource_images/DataSource_img3.png)
 
-Please find the [Multi parent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
+Please find the [Multi parent layout sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DataSource/Multi%20Parent) to depict this support. 
 
 ## FlowchartDataSourceSettings
 
@@ -499,4 +499,4 @@ public class DataItems : ObservableCollection<ItemInfo>
 
 ![Flowchart](DataSource_images/DataSource_Flowchart.png)
 
-Please find the [Flowchart Layout sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Flowchart_Layout-2088923614-1032196453.zip) to depict this support.
+Please find the [Flowchart Layout sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DataSource/Flowchart%20Layout) to depict this support.

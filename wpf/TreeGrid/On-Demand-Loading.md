@@ -256,7 +256,7 @@ public void Execute(object parameter)
 
 You can download the sample demo [here](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-in-wpf-treegrid).
 
-##  Using RequestTreeItems Event
+## Using RequestTreeItems Event
 
 SfTreeGrid supports to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html) event. `RequestTreeItems` event is triggered at the time of loading and when user expand any node at runtime.
 
