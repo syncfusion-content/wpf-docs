@@ -15,8 +15,6 @@ AutoComplete provides a way to handle the selected item using the `SelectedItem`
 
 The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
 
-### How to set the SelectedItem
-
 The following code snippet demonstrates how to set [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItemProperty.html).
 
 {% tabs %}
@@ -192,8 +190,6 @@ namespace AutoCompleteSample
 
 AutoComplete provides a way to get the selected values using the `SuggestionIndex` property.
 
-### Retrieving the index of selected item
-
 When an item is selected from suggestion list, its index can be retrieved using the `SuggestionIndex` property.
 
 The [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndexProperty.html) property holds the index of selected item in suggestion list.
@@ -287,8 +283,6 @@ namespace AutoCompleteSample
 ## SelectedValue
 
 The `SelectedValue` property is used to retrieve the selected value from the suggestion list.
-
-### How to set the SelectedValue
 
 The following code snippet demonstrates how to set `SelectedValue`.
 

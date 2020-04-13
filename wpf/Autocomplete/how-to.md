@@ -9,7 +9,7 @@ documentation: ug
 
 # Events
 
-## How to get the suggestions from the suggestion box
+## SuggestionsChanged Event
 
 After the filtering begins, the SuggestionsChanged event will be triggered. The argument contains the following information.
 
@@ -132,7 +132,7 @@ namespace AutoCompleteSample
 {% endhighlight %}
 {% endtabs %}
 
-## How to find out if the suggestion box is opened or closed
+## SuggestionPopupOpened
 
 The `SuggestionPopupOpened` event will be triggered whenever the suggestion box appears in the application.
 
@@ -240,6 +240,8 @@ namespace AutoCompleteSample
 
 {% endhighlight %}
 {% endtabs %}
+
+## SuggestionPopupClosed
 
 The `SuggestionPopupClosed` event will be triggered whenever the suggestion box disappears from the application.
 

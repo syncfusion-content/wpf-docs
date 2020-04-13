@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizing AutoComplete
 
-AutoComplete provides user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
+AutoComplete provides user-friendly customizing options for both text box and drop-down. This section explains customize the entire AutoComplete control.
 
 ## Customizing the text box
 
