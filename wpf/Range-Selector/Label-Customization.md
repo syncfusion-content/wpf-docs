@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Label Customization | SfDateTimeRangeNavigator | wpf | Syncfusion
-description: label customization
+description: This section explores how to customize the label with Intervals, Formatters and also visibility of label bars in DateTimeRangeNavigator
 platform: wpf
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Label Customization
+# Label Customization in DateTimeRangeNavigator
 
 The date-time range navigator control helps users to visualize large data in a simplified manner. The timespan of data is represented in the higher level bar and lower level bar. The timespan calculates data smartly and provides suitable date-time format and interval, by default.
 
@@ -178,7 +178,7 @@ Allows to customize the label style using the LabelBarStyle property, and this p
 Defines the label style for labels in the selected region.</td></tr>
 <tr>
 <td>
-{{'['Position'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~Position.html)'| markdownify }}</td><td>
+{{'[`Position`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~Position.html)'| markdownify }}</td><td>
 Positions the upper and lower labels inside or outside the label bar.</td></tr>
 </table>
 
