@@ -97,3 +97,5 @@ diagram.ScrollSettings = new ScrollSettings()
 {% endtabs %}
 
 ![AutoScroll border](Scroll-Settings_images/AutoScrollBorder.gif)
+
+Find the [Scroll Settings sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/ScrollSettings) to depict the Scroll Settings.

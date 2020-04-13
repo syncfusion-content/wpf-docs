@@ -64,5 +64,4 @@ ConnectorViewModel multipleSegments = new ConnectorViewModel()
 
 ![Multiple Segments](Connector_images/MultipleSegments.PNG)
 
-For Adding Connector and Segments sample, please refer to [Segments](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AddConnector1815455151.zip "Segments")
-
+Find the [Connector appearance and validation sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Segments) to depict the connector appearance and validation.

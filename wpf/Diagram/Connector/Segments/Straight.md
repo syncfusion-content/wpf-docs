@@ -155,6 +155,4 @@ private void Diagram_ItemTappedEvent(object sender, DiagramEventArgs args)
 
 N> Segment splitting will be supported only for straight segments.
 
-
-
-
+Find the [Straight segment sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Straight%20Segment) to depict the Straight segment.

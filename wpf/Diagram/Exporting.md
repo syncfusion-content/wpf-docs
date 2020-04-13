@@ -197,3 +197,5 @@ diagram.Export();
 {% endtabs %}
 
 ![Background](Exporting_images/ExportingBackground.png)
+
+Find the [Exporting sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Exporting) to depict the Exporting.

@@ -139,6 +139,8 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 
 For more information about changing drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
 
+Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.
+
 ## Create connector 
 
 Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of [Segments](/wpf/sfdiagram/connector/interaction/segments/straight "Segments").
@@ -400,6 +402,8 @@ ConnectorViewModel PortToPortConnection = new ConnectorViewModel()
 ![connection between ports](Connector_images/PortToPortConnection.PNG)
 
 For more details about Ports, refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
+
+Find the [Connector creation sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Create%20Connector) to depict the connector creation.
 
 ## Draw connectors
 

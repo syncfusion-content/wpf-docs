@@ -104,6 +104,8 @@ diagram.OutlineSettings = new OutlineSettings()
 
 ![Custom Outline](Virtualization_images/CustomOutline.gif)
 
+Find the [Virtualization sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Virtualization) to depict the Virtualization.
+
 {% seealso %}
 
 [How to serialize the diagram control](/wpf/sfdiagram/serialization)

@@ -148,3 +148,5 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endtabs %}
 
 ![Multiple Annotations](Annotation_images/annotation_img21.png) &ensp;&ensp;&ensp;&ensp;&ensp; ![Multiple Annotations](Annotation_images/MultipleAnnotationConnector.png)
+
+Find the [Annotations sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations) to depict the annotation.

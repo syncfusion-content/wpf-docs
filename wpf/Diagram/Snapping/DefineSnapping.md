@@ -148,3 +148,5 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines | SnapConstrain
 Diagram allows snapping on dock ports while making new connection on it and dragging connection over dock ports.
 
 ![Snap to object](Gridlines_images/DockPortSnapping.gif)
+
+Find the [Snapping sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Snapping) to depict the Snapping.
