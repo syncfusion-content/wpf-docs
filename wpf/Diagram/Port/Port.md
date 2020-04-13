@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Ports
+# Ports creation and customization 
 
 Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the node is moved.
 

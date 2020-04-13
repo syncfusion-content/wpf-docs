@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Stencil
+# Stencil creation and customization 
 
 Stencil has a collection of Symbols and it is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram.
 
