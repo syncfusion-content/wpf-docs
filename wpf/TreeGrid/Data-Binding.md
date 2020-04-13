@@ -7,7 +7,7 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in WPF TreeGrid (SfTreeGrid)
 
 SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSource.html) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically using [RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html) or [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LoadOnDemandCommand.html).
 If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604.aspx)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19.aspx), SfTreeGrid will not refresh the UI automatically.
