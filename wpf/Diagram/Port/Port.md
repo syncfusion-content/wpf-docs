@@ -385,7 +385,7 @@ NodePortViewModel nodePort = new NodePortViewModel()
 
 ## HitPadding
 
-Connection can be made from/to nodes, connectors, port or on empty area in a diagram. Making connection with ports are usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area while connecting. Connector can be created by click and dragging on any point of hit padding region of ports and drawn connector can be dropped on any point of hit padding region of ports. Default value is 0d.
+Connection can be made from or to nodes, connectors, port or on an empty area in a diagram. Making a connection with ports is usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when the mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area when connecting. The connector can be created by clicking and dragging to any point of hit padding of ports and can be dropped at any point of hit padding region of ports. Default value is 0d.
 
 {% tabs %}
 {% highlight c# %}

@@ -96,7 +96,7 @@ Based on the `BlockPosition` the dragging of Block occurs.
 
 ### How to drag the elements to vertical or horizontal
 
-Diagram elements of Nodes and Connectors can be dragged in horizontal or vertical direction. To achieve this dragging, hold down the Shift key while you drag the objects.
+Diagram elements of the Nodes and Connectors can be dragged in the either horizontal or vertical direction. To achieve this, hold down the shift key when you drag the objects.
 
 ![Shift dragging](Interaction_images/ShiftDrag.gif)
 
