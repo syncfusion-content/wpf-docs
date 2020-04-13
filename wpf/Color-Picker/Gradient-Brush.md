@@ -23,7 +23,7 @@ We can add a multiple color combination for the gradient color using the `Gradie
 
 ![ColorPicker with GradientStopsEditors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_editing.png)
 
-### Add or Remove Gradientstops
+### Add or Remove GradientStops
 
 We can add a more colors for the gradient color by using the gradient stops. Gradient stops can be added to existing gradient by clicking on the `GradientStopEditor`. 
 
@@ -31,13 +31,13 @@ To remove a gradient stops, select the gradient stop which want to be remove and
 
 ![ColorPicker with add and removing gradient colors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_Adding.gif)
 
-### Rearrange Gradientstops
+### Rearrange GradientStops
 
 We can re-arrange the color combination of the gradient color by adjusting the gradient stops. Gradient stops positions can be altered just by dragging it along the `GradientStopEditor`. The Gradient color will be generated on the basis of the order of the gradient stops arranged.
 
 ![ColorPicker with arranging the gradient colors](ColorPicker-with-Gradient-Support_images/ColorPicker_Stopper_Arranging.gif)
 
-### Change Gradientstops Colors
+### Change GradientStops Colors
 
 We can change the colors for created gradient color by changing the color of gradient stops. Color of a gradient stops changed by selecting that particular gradient stop and change the color from the color picker.
 

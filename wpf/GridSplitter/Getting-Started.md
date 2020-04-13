@@ -91,7 +91,7 @@ namespace SfGridSplitterSample {
 
 ## Resize the grid rows
 
-If we want to resize the specfic grid rows, place the `SfGridSplitter` on next or pervious row and set the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+If we want to resize the specific grid rows, place the `SfGridSplitter` on next or previous row and set the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -136,7 +136,7 @@ If we want to resize the specfic grid rows, place the `SfGridSplitter` on next o
 
 ## Resize the grid columns
 
-If we want to resize the specfic grid columns, place the `SfGridSplitter` on next or pervious column and set the `VerticalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
+If we want to resize the specific grid columns, place the `SfGridSplitter` on next or previous column and set the `VerticalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -181,7 +181,7 @@ If we want to resize the specfic grid columns, place the `SfGridSplitter` on nex
 
 N> We can restrict the moving location of the grid splitter (Left or Right or Bottom or Top) by setting the value for `ResizeBehavior` property. The `ResizeBehavior` value must be assigned based on the row or column where the grid splitter placed.
 
-## Resizing the grid rows and colums with specific pixel
+## Resizing the grid rows and columns with specific pixel
 
 If we want to resize the rows or columns of grid with particular pixel interval, Set the pixel value for `DragIncrement` and `KeyboardIncrement` properties. If we move the splitter using the mouse, `DragIncrement` property values is used as resize pixel interval. If we move the splitter using the Up-Down buttons, `KeyboardIncrement` property values is used as resize pixel interval. The default value of `DragIncrement` property is `1` and `KeyboardIncrement` property is `20`.
 
