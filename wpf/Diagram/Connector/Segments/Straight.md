@@ -9,7 +9,7 @@ documentation: ug
 
 # Types of the Segments in connectors
 
-The path of the Connector is defined with a collection of `Segments` and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are five types of segments,
+The path of the Connector is defined with a collection of [Segments](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~Segments.html) and each segment represents a line between two points. By default, connector type will be identified using the value of [DefaultConnectorType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~DefaultConnectorType.html) property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are five types of segments,
 
 * Straight
 * Orthogonal
@@ -19,7 +19,7 @@ The path of the Connector is defined with a collection of `Segments` and each se
 
 ## Straight segments
 
-Straight segment allows to create a straight-line connector between two end points or two nodes. To create a straight line, specify the segment as `StraightSegment` and add it to the connector's segments collection.
+Straight segment allows to create a straight-line connector between two end points or two nodes. To create a straight line, specify the segment as [StraightSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.StraightSegment.html) and add it to the connector's segments collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -69,7 +69,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 A straight-line connector can be edited by adding a new StraightSegment into the Segments collections of a Connector.
 
-Straight segments can be split into multiple straight lines using `Point` property of  `StraightSegment` class.
+Straight segments can be split into multiple straight lines using [Point](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.StraightSegment~Point.html) property of `StraightSegment` class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,13 +108,13 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 ## How to add or remove the straight segments at run time
 
-Straight segments can be split into multiple straight segments interactively by click on the segemnts. This can be achieved by using `AddRemoveStraightSegmentArgs` class and its properties.
+Straight segments can be split into multiple straight segments interactively by click on the segemnts. This can be achieved by using [AddRemoveStraightSegmentArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AddRemoveStraightSegmentArgs.html) class and its properties.
 
 `AddRemoveStraightSegmentArgs` class is having below properties,
 
-* Point: To specify the splitting point on the segment
-* SegmentEditing: To specify that segments are going to be added or removed
-* HitPadding: To specify the vicinity area around the connector
+* [Point](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AddRemoveStraightSegmentArgs~Point.html): To specify the splitting point on the segment
+* [SegmentEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AddRemoveStraightSegmentArgs~SegmentEditing.html): To specify that segments are going to be added or removed
+* [HitPadding](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.AddRemoveStraightSegmentArgs~HitPadding.html): To specify the vicinity area around the connector
 
 Following code example illustrates how to add or remove straight segements when click on any point of the segment,
 
@@ -155,7 +155,3 @@ private void Diagram_ItemTappedEvent(object sender, DiagramEventArgs args)
 | SegmentEditing.Toggle | New segment will be added at the tapped point if there is no segment at that point or exisiting segment will be deleted | ![Pivot connector](Connector_images/SegmentEditingToggle.gif) |
 
 N> Segment splitting will be supported only for straight segments.
-
-
-
-
