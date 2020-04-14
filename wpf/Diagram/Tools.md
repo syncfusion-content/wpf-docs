@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Tools
+# Drawing tools and tool selection
 
 ## Drawing Tools
 
@@ -176,3 +176,5 @@ diagram.Tool = Tool.SingleSelect | Tool.ZoomPan;
  
 {% endhighlight %}
 {% endtabs %}
+
+Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.

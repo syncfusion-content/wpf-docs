@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Segments
+# Straight Segments creation and customization
 
 The path of the Connector is defined with a collection of `Segments` and each segment represents a line between two points. By default, connector type will be identified using the value of `DefaultConnectorType` property of Diagram. It changes the entire connectors type in the diagram but when you define the segment then the particular connector will be displayed based on the segment created. There are four types of segments,
 
@@ -155,6 +155,4 @@ private void Diagram_ItemTappedEvent(object sender, DiagramEventArgs args)
 
 N> Segment splitting will be supported only for straight segments.
 
-
-
-
+Find the [Straight segment sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Straight%20Segment) to depict the Straight segment.
