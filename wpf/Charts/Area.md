@@ -920,7 +920,7 @@ The [`ResetZooming`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfC
 
 ### SeriesBoundsChanged
 
-This [`SeriesBoundsChanged`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesBoundsChanged_EV.html) event occurs when the size of the chart is changed. The event arguments contain the following information.
+The [`SeriesBoundsChanged`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesBoundsChanged_EV.html) event occurs when the size of the chart is changed. The event arguments contain the following information.
 
 * [`NewBounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBoundsEventArgs~NewBounds.html) – Gets the [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) of the chart after the charts size changed.
 * [`OldBounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBoundsEventArgs~OldBounds.html) – Gets the [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) of the chart before the charts size changed.
