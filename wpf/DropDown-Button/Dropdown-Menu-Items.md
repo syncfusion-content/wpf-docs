@@ -294,9 +294,8 @@ N> The **MoreItems** property has return type `ObservableCollection<UIElement>`,
             <syncfusion:DropDownMenuGroup.MoreItems>
                 <Label Content="More Items"/>
             </syncfusion:DropDownMenuGroup.MoreItems>
-            </syncfusion:DropDownMenuGroup.MoreItems>
             <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
-                syncfusion:DropDownMenuItem.Icon>
+                <syncfusion:DropDownMenuItem.Icon>
                     <Image Source="images\black.png"/>
                 </syncfusion:DropDownMenuItem.Icon>
             </syncfusion:DropDownMenuItem>
@@ -352,7 +351,8 @@ The custom dropdown menu items icon visibility can be enabled/disabled by settin
                     <syncfusion:DropDownMenuItem.Icon>
                         <Image Source="images\skyblue.png"/>
                     </syncfusion:DropDownMenuItem.Icon>
-             </syncfusion:DropDownMenuItem>
+                </syncfusion:DropDownMenuItem>
+            </syncfusion:DropDownMenuGroup.MoreItems>
             <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
                 syncfusion:DropDownMenuItem.Icon>
                     <Image Source="images\black.png"/>
