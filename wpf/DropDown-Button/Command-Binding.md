@@ -19,7 +19,7 @@ The Command can be binded as follows:
 {% tabs %}
 {% highlight xaml %}
 
-    <Window x:Class="DropDownButton_Sample.MainWindow"
+    <Window x:Class="DropDown_Button_Command_Binding.MainWindow"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"

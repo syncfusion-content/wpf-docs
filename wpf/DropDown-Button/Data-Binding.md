@@ -18,7 +18,7 @@ Create a class that holds the model properties of the menu items. For example, `
 {% tabs %}
 {% highlight C# %}
 
-    class Country
+    public class Country
     {
         private string name;
 
@@ -57,7 +57,7 @@ Create a class that populates the list of model object representing dropdown men
 {% tabs %}
 {% highlight C# %}
 
-    class CountryViewModel
+    public class CountryViewModel
     {
         private List<Country> dropDownItems;
 
