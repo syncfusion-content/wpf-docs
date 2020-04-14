@@ -100,33 +100,22 @@ colorPicker.Height=100;
 
 ## Select a Color
 
-We can select a solid color or gradient brush from a `ColorPicker` using the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Color.html) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Brush.html) properties.
+We can select a solid color or gradient color from a `ColorPicker` using the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Color.html) and [Brush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~Brush.html) properties.
 
 ### Select Solid Color
 
-We can select the solid color by using the `Color` and `Brush` properties.
+We can select the solid color by using the `Color` property.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPicker x:Name="colorPicker" Brush="Yellow"/>
+ <syncfusion:ColorPicker x:Name="colorPicker"
+                         Color="Yellow"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-colorPicker.Brush = Brushes.Yellow;
-
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight xaml %}
-
- <syncfusion:ColorPicker x:Name="colorPicker" Color="Yellow"/>
-
-{% endhighlight %}
-{% highlight c# %}
-
+ColorPicker colorPicker = new ColorPicker();
 colorPicker.Color = Colors.Yellow;
 
 {% endhighlight %}
@@ -136,11 +125,11 @@ colorPicker.Color = Colors.Yellow;
 
 ### Select a Gradient Color
 
-We can select a linear or radial gradient brushes  which holds the multiple colors from the `ColorPicker`.
+We can select a linear or radial gradient color which holds the multiple colors from the `ColorPicker`.
 
-**Linear Gradient**
+#### Linear Gradient ####
 
-Linear Gradient can be selected by the gradient colors and their location along the gradient axis using the `GradientStops` objects and [StartPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Startpoint.html) and [EndPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Endpoint.html) properties. Based on the `StartPoint` and `EndPoint`, the selected colors will be combined in linear manner.
+Linear Gradient color can be selected by the multiple colors and their location along the gradient axis using the `GradientStops` objects and [StartPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Startpoint.html) and [EndPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~Endpoint.html) properties. Based on the `StartPoint` and `EndPoint`, the selected colors will be combined in linear manner.
 
 {% tabs %}
 {% highlight xaml %}
@@ -176,9 +165,9 @@ colorPicker.Brush = linearGradient;
 
 ![Choose a Linear Gradient from ColorPicker](Getting-Started_images/ColorPicker_select-a-LinearGradient.png)
 
-**Radial Gradient**
+#### Radial Gradient ####
 
-Radial Gradient is similar to Linear Gradient, except for the axis defined by the circle. Based on the [GradientOrigin](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~GradientOrigin.html), `Center` and `RadiusPoint` properties values, the selected gradient colors are combined in a circle manner. 
+Radial Gradient color is similar to Linear Gradient color, except for the axis defined by the circle. Based on the [GradientOrigin](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorEdit~GradientOrigin.html), `Center` and `RadiusPoint` properties values, the selected gradient colors are combined in a circle manner. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -241,9 +230,8 @@ colorPicker.ColorChanged += ColorPicker_ColorChanged;
 {% endhighlight %}
 {% endtabs %}
 
-
 {% tabs %}
-{% highlight xaml %}
+{% highlight c# %}
 
 //Invoked when the selected color is changed
 private void ColorPicker_ColorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -260,13 +248,35 @@ private void ColorPicker_SelectedBrushChanged(DependencyObject d, DependencyProp
 {% endhighlight %}
 {% endtabs %}
 
+## Change opacity of the color
+
+We can change the opacity of the selected color by using the A-Alpha value editor or delicate slider in the `ColorPicker`. We can hide the A-Alpha value editor and delicate slider by using the [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsAlphaVisible.html) property value as `false`. The default value of the `IsAlphaVisible` property is `true`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPicker IsAlphaVisible="False" x:Name="colorPicker" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPicker colorPicker = new ColorPicker();
+colorPicker.IsAlphaVisible = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPicker hides the Alpha slider and vale editor](ScRGB-Color_images/ColorPicker_IsAlphaVisible.png)
+
 ## Switch between Solid, Linear and Gradient brush mode
 
-We can change the brush mode directly by clicking on the corresponding Solid, Linear or Gradient mode buttons which are placed in the bottom right corner of the `ColorPicker`. We can restrict brush mode switching at runtime by setting the [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~EnableSolidToGradientSwitch.html) property value as `false`.  It will hide the Solid, Linear and Gradient brush buttons.
+We can change the color selection mode directly by clicking on the corresponding Solid, Linear or Gradient brush mode buttons which are placed in the bottom right corner of the `ColorPicker`.
 
 ![ColorPicker popup gradientEditor](ColorPicker-with-Gradient-Support_images/ColorPicker_Switch_brushes.gif)
 
-**EnableSolidToGradientSwitch == false**
+### Restrict the brush mode from Solid to Gradient
+
+ We can restrict color selection mode switching at runtime by setting the [EnableSolidToGradientSwitch](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~EnableSolidToGradientSwitch.html) property value as `false`.  It will hide the Solid, Linear and Gradient brush switch buttons.
 
 {% tabs %}
 {% highlight xaml %}

@@ -6,7 +6,7 @@ control: SfRichTextBoxAdv
 documentation: ug
 keywords: selection
 ---
-# Selection
+# Selection in WPF RichTextBox
 
 The SfRichTextBoxAdv supports selecting a portion of the document either through UI interactions by using mouse, touch, keyboard or through supported APIs.
 The following sample code demonstrates how to retrieve text position from document using paragraph instance and offset value.
@@ -381,6 +381,8 @@ richTextBoxAdv.LostFocusBehavior = LostFocusBehavior.ShowSelection
 {% endhighlight %}
 
 {% endtabs %}
+
+N> This API is supported starting from release version v17.4.0.X.
 
 ## How to determine the editing context type
 

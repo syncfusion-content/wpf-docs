@@ -164,8 +164,6 @@ Used to select the items such as Shapes, Text, Custom view added on the image.<b
 <td>
 Pan<br/><br/></td><td>
 Used to Pan the image when it is in zoomed state.<br/><br/></td></tr>
-<tr>
-<td>
 </table>
 
 This can be done as in the below code snippet.
@@ -190,5 +188,7 @@ This can be done as in the below code snippet.
                     Content="Save" Command="{x:Static editor:ImageEditorCommands.Save}"></Button>
     </Grid>
 {% endhighlight %}
+
+{% endtabs %}
 
 ![Custom Item](Images/ToolbarCustomization.png) 
