@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Annotation
+# Define Annotation and multiple annotations
 
 Annotation is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at run time. Multiple annotations can be added to a node or connector.
 
@@ -148,3 +148,5 @@ Annotations = new ObservableCollection<IAnnotation>()
 {% endtabs %}
 
 ![Multiple Annotations](Annotation_images/annotation_img21.png) &ensp;&ensp;&ensp;&ensp;&ensp; ![Multiple Annotations](Annotation_images/MultipleAnnotationConnector.png)
+
+Find the [Annotations sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Annotations) to depict the annotation.

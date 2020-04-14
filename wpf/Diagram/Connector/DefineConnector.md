@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Connector
+# Connector types and creation
 
 Connectors are objects used to create link between two points or nodes to indicate the flow of operation or relationships between them.
 
@@ -138,6 +138,8 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 ![Line connector](Connector_images/FreeHandDrawing.gif)
 
 For more information about changing drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
+
+Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.
 
 ## Create connector 
 
@@ -400,6 +402,8 @@ ConnectorViewModel PortToPortConnection = new ConnectorViewModel()
 ![connection between ports](Connector_images/PortToPortConnection.PNG)
 
 For more details about Ports, refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
+
+Find the [Connector creation sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Create%20Connector) to depict the connector creation.
 
 ## Draw connectors
 

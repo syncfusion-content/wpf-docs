@@ -164,3 +164,5 @@ diagram.LineRoutingSettings.RoutingType = RoutingTypes.Classic;
 
 {% endhighlight %}
 {% endtabs %}
+
+Find the [Connector interactions sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Connector%20Interactions) to depict the connector interactions.
