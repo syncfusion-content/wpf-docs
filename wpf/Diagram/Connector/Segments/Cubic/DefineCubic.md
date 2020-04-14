@@ -13,7 +13,7 @@ Cubic curve segments are used to create curve segments and the curves are config
 
 ## how to create cubic curve segments
 
-To create a Curve line, you should specify the segment as `CubicCurveSegment`.
+To create a Curve line, you should specify the segment as [CubicCurveSegment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -69,7 +69,7 @@ Cubic bezier segments are annotated with thumbs to represent the control points.
 
 ## How to add multiple cubic bezier segments
 
-'n' number of cubic bezier segments can be added into single connector by using `Point1`, `Point2` and `Point3` properties of `CubicCurveSegment` class. 
+'n' number of cubic bezier segments can be added into single connector by using [Point1](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Point1.html), [Point2](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Point2.html) and [Point3](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Point3.html) properties of `CubicCurveSegment` class. 
 
 *   Point1: Specifies the left side control point of the segment.
 *   Point2: Specifies the right side control point of the segment.
@@ -113,6 +113,53 @@ ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
         {
             Point1 = new Point(100,250),
             Point2 = new Point(350,260),
+        }
+    }
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+Vectors also can be used to define the control points of the cubic bezier segments by using [Vector1](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Vector1.html), [Vector2](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CubicCurveSegment~Vector2.html) properties of `CubicCurveSegment` class. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--create the connector with cubic curve segments with vector points-->
+<syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="300,300">
+    <syncfusion:ConnectorViewModel.Segments>
+        <syncfusion:ConnectorSegments>
+            <syncfusion:CubicCurveSegment Vector1="-50,50" Vector2="60,-50" Point3="200,200"/>
+            <syncfusion:CubicCurveSegment Vector1="-100,50" Vector2="50,-40" />
+        </syncfusion:ConnectorSegments>
+    </syncfusion:ConnectorViewModel.Segments>
+</syncfusion:ConnectorViewModel>
+                 
+{% endhighlight %}
+
+{% highlight C# %}
+
+//create the connector with cubic bezier segments
+ConnectorViewModel cubicBezierConnector = new ConnectorViewModel()
+{
+    SourcePoint = new Point(100, 100),
+    TargetPoint = new Point(300, 300),
+    Segments = new ObservableCollection<IConnectorSegment>()
+    {
+        //Specify the segment as cubic curve segment
+        new CubicCurveSegment()
+        {
+            //Specifies the left side control point as vector
+            Vector1 = new Vector(-50,50),
+            //Specifies the right side control point as vector
+            Vector2 = new Vector(60,-50),
+            //Specifies the ending point of the segment
+            Point3 = new Point(200,200),
+        },
+        new CubicCurveSegment()
+        {
+            Vector1 = new Vector(-100,50),
+            Vector2 = new Vector(50,-40),
         }
     }
 };
