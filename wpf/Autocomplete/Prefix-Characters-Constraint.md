@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prefix characters of Auto Complete | SfTextBoxExt | wpf | Syncfusion
-description: Learn how to set minimum Prefix Characters in AutoComplete
+description: This section provides the details about how to set minimum Prefix Characters in AutoComplete for displayed character after a few entries.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Prefix Characters Constraint
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the `MinimumPrefixCharacters` property, and its default value is 1.
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the [MinimumPrefixCharacter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MinimumPrefixCharactersProperty.html)` property, and its default value is 1.
 
 {% tabs %}
 

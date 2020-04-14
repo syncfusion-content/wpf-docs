@@ -13,7 +13,7 @@ Suggestion box is the drop-down list box, which displays the filtered suggestion
 
 ## Suggestion box placement mode
 
-The SuggestionBoxPlacement property defines the position of popup relative to the control. It contains three built-in options:
+The [SuggestionBoxPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionBoxPlacementProperty.html) property defines the position of popup relative to the control. It contains three built-in options:
 
 1. Top
 2. Bottom

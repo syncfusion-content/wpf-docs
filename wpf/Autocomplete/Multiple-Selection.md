@@ -9,11 +9,11 @@ documentation: ug
 
 ## Multiple Selection in WPF AutoComplete (SfTextBoxExt)
 
-Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
+Select multiple items from a suggestion list using `MultiSelectMode` property. There are two ways to perform multi selection in autocomplete. The default value of MultiSelectMode is None.
 
 * Token Representation
 
-*  Delimiter
+* Delimiter
 
 ## Token Representation
 
