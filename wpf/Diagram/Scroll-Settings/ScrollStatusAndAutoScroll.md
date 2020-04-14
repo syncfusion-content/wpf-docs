@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Scroll Settings
+# Scroll Settings and customization
 
 The diagram can be scrolled by using the vertical and horizontal scrollbars. In addition to the scrollbars, mouse wheel can be used to scroll the diagram. Diagram’s scroll settings allows you to read the current scroll status, view port size, current zoom, and zoom factor values.
 
@@ -97,3 +97,5 @@ diagram.ScrollSettings = new ScrollSettings()
 {% endtabs %}
 
 ![AutoScroll border](Scroll-Settings_images/AutoScrollBorder.gif)
+
+Find the [Scroll Settings sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/ScrollSettings) to depict the Scroll Settings.

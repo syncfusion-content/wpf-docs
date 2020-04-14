@@ -312,6 +312,8 @@ public class CustomPageSettings : PageSettings
 
 N> This customization plays a role in reducing the number of pages in printing.
 
+Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/PageSettings) to depict the Page Settings.
+
 {% seealso %}
 
 [How to add or remove grid lines for diagram page](/wpf/sfdiagram/gridlines)

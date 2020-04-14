@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Gridlines
+# How to add gridlines to diagram
 
 **Gridlines** are crisscross lines drawn in diagram page like the lines on traditional graph paper. It helps to position the diagram elements on the diagram page.
 
@@ -176,8 +176,10 @@ public class Intervals : List<double>
 
 ![Snap to Gridlines](Gridlines_images/LineIntervals.png)
 
+Find the [Gridlines sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Gridlines) to depict the Gridlines.
+
 {% seealso %}
 
-[How to snap the objects on gridlines](/wpf/sfdiagram/snapping)
+[How to snap the objects on gridlines](/wpf/diagram/snapping/definesnapping)
 
 {% endseealso %}

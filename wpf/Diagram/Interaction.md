@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Interactions on diagram
+# How to interact with diagram
 
 ## Selection
 
@@ -234,54 +234,4 @@ private void MainWindow_ItemDeletingEvent(object sender, DiagramPreviewEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-## How to override the default cursors while interact with diagramming elements?
-
-While mouse hover on the diagramming objects, different cursors will be appearing on each object for different actions. For example, when we mouse hover on the rotator thumb, then rotator cursor will be shown.
-
-![RotatorCursor](Interaction_images/RotatorCursor.png)
-
-These cursors can be customized by overriding the virtual method [SetCursor()](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~SetCursor.html) of `SfDiagram` class. The `SetCursor()` method, takes [SetCursorArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html) as argument which is used to know the objects under the mouse cursor while modifying the cursors of them.
-
-* Source –  To know the object on which item the mouse is interacting.
-* Action – To know the action tool of the element.
-* SourceType – To know the parent element of the object.
-* ControlPointType – To know the control point of the object the object.
-* Cursor – To customize the cursor of the object.
-
-{% tabs %}
-{% highlight xaml %}
-
-<!--Create new diagram for custom diagram class-->
-<local:CustomClass PortVisibility="Visible" x:Name="diagram"/> 
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-//Create custom class of SfDiagram to override the cursor.
-public class CustomClass:SfDiagram
-{
-    //Override method to customize the default cursors of diagram objects
-    protected override void SetCursor(SetCursorArgs args)
-    {
-        if (args.Source is INode)
-        {
-            args.Cursor = Cursors.No;
-        }
-        else if (args.Source is IConnector)
-        {
-            args.Cursor = Cursors.Hand;
-        }
-        else if (args.Source is IPort)
-        {
-            args.Cursor = Cursors.SizeAll;
-        }
-        else
-        {
-           base.SetCursor(args);
-        }
-    }
-}
-{% endhighlight %}
-{% endtabs %}
 
