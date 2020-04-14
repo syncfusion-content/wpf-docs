@@ -9,7 +9,7 @@ documentation: ug
 
 # Highlighting matched text
 
-You can highlight matching characters in a suggestion list to pick an item with more clarity using [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TextHighlightModeProperty.html) property. The default value of TextHightlightMode is None. The matching text can be highlighted in the following two ways:
+You can highlight matching characters in a suggestion list to pick an item with more clarity using [TextHighlightMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TextHighlightModeProperty.html) property. The default value of TextHighlightMode is None. The matching text can be highlighted in the following two ways:
 
 * First occurrence
 * Multiple occurrence
