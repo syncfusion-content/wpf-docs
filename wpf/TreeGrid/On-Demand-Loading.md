@@ -28,13 +28,13 @@ SfTreeGrid allows you to load child items only when they are requested to load o
 {% endhighlight %}
 {% highlight c# %}
 public class ViewModel : NotificationObject
-{ <% endtabs %>
+{
     public ICommand CommandLoad
     { get; set; }
+	
     /// <summary>
     /// Initializes a new instance of the <see cref="ViewModel"/> class.
     /// </summary>
-
     public ViewModel()
     {
         CommandLoad = new LoadCommand();
@@ -219,7 +219,7 @@ class LoadCommand : ICommand
 
 ### Handling expander visibility
 
-SfTreeGrid shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecute?view=netframework-4.8) method of `LoadOnDemandCommand`. If `CanExecute returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not displayed for that node. `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`.
+SfTreeGrid shows the expander for a particular node based on return value of [CanExecute](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand.canexecute?view=netframework-4.8) method of `LoadOnDemandCommand`. If `CanExecute` returns `true`, then expander icon is displayed for that node. If `CanExecute` returns `false`, then expander icon will not displayed for that node. `CanExecute` method gets called to decide the visibility of expander icon and before executing `LoadOnDemandCommand`.
 
 {% tabs %}
 {% highlight c# %}

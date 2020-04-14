@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Shapes
+# Shapes Resource Dictionary
 
 We have provided some basic built-in shapes as ResourceDictionary.
 
@@ -207,8 +207,7 @@ The list of shapes are available in the resource dictionary as follows
 |  |ThermalElement | ![ThermalElement](Shapes_images\ElectricalThermalElement.PNG)|
 |  | ThermoCouple| ![ThermoCouple](Shapes_images\ElectricalThermoCouple.PNG)|
 
-
-
+Find the [Shapes sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Shapes) to depict the shapes.
 
 
 

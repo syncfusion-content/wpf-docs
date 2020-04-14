@@ -99,7 +99,7 @@ In this walk through, you will create WPF application with SfTreeGrid control.
 4. [Adding control manually in C#](#adding-control-manually-in-c)
 5. [Binding self-relational data in SfTreeGrid](#binding-self-relational-data-in-sftreegrid)
 6. [Binding nested collection with SfTreeGrid](#binding-nested-collection-with-sftreegrid) 
-7. [Populate SfTreeGrid in on-demand](#populate-sftreegrid-in-on-demand-unbound-mode)
+7. [Populate SfTreeGrid in on-demand](https://help.syncfusion.com/wpf/treegrid/on-demand-loading)
 8. [Defining Columns](#defining-columns)
 9. [Selection](#selection)
 10. [Sorting](#sorting)
