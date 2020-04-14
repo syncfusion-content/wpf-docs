@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started| MenuAdv | Wpf | Syncfusion
-description: This section deals with explain about the Getting Started with WPF Menu (MenuAdv) control on WPF platform
+description: This section deals with explain about the getting started with menu (MenuAdv) control on WPF platform
 platform: wpf
 control: MenuAdv
 documentation: ug
@@ -65,7 +65,7 @@ The [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusio
 
 	![Output](Getting-Started_images/Getting-Started_img7.png)
 
-N> You can customize the appearance of the MenuItemAdv using the template-editing feature available in the Expression Blend.
+N> You can customize the appearance of the [MenuItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuItemAdv.html) using the template-editing feature available in the Expression Blend.
 
 ### Through XAML
 
@@ -104,7 +104,7 @@ using Syncfusion.Windows.Shared;
 
 {% endhighlight %}
 
-Next, create the MenuAdv as follows.
+Next, create the [MenuAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.MenuAdv.html) as follows.
 
 {% highlight C# %}
 
