@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Orthogonal segment
+# Orthogonal segment creation and routing
 
 Orthogonal segments are used to create line segments that are perpendicular at their point of intersection.
 
