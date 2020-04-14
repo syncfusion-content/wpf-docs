@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Getting Started
+# Getting started with SfAutoComplete.
 
 ## Assembly deployment
 
@@ -200,6 +200,8 @@ namespace AutoCompleteSample
 {% endtabs %}
 
 ![GettingStarted](GettingStarted_images/AutoCompleteSource.png)
+
+Find sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_WPF958872664) link.
 
 ## Selected Items
 
