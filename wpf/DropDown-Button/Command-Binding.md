@@ -11,14 +11,15 @@ documentation: ug
 
 The command and command parameter properties allow to execute any action on clicking the dropdown menu items.
 
-## Command
+* **Command** - The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
+* **CommandParameter** - The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
 
-The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8).
+The Command can be binded as follows:
 
 {% tabs %}
 {% highlight xaml %}
 
-    <Window x:Class="DropDownButton_Sample.MainWindow"
+    <Window x:Class="DropDown_Button_Command_Binding.MainWindow"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -29,120 +30,166 @@ The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.i
             mc:Ignorable="d"
             xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
             Title="MainWindow" Height="450" Width="800">
-        <Window.Resources>
-            <local:DropDownViewModel x:Key="dropdownViewModel"/>
-        </Window.Resources>
-        <Grid>
-            <syncfusion:DropDownButtonAdv SizeMode="Large" LargeIcon="Employee-WF.png" >
-                <syncfusion:DropDownMenuGroup>
-                    <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="India" Command="{Binding DropDownCommand, Source={StaticResource dropdownViewModel}}"/>
-                </syncfusion:DropDownMenuGroup >
-            <syncfusion:DropDownButtonAdv/>
-        </Grid>
+            <Window.DataContext>
+                <local:DropDownViewModel />
+            </Window.DataContext>
+            <Grid VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="270"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox IsChecked="{Binding CanPerformAction}" Content="Can perform action in dropdown menu item"/>
+                <syncfusion:DropDownButtonAdv Label="Country" SizeMode="Large" LargeIcon="Images\flaglarge.png"  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Height="58" Width="89">
+                    <syncfusion:DropDownMenuGroup>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="India" Command="{Binding ClickCommand}" CommandParameter="India">
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/india.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="France" Command="{Binding ClickCommand}" CommandParameter="France" >
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/france.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="Germany" Command="{Binding ClickCommand}" CommandParameter="Germany" >
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/germany.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="Canada" Command="{Binding ClickCommand}" CommandParameter="Canada" >
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/Canada.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="China" Command="{Binding ClickCommand}" CommandParameter="China" >
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/china.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                    </syncfusion:DropDownMenuGroup >
+                </syncfusion:DropDownButtonAdv>
+            </Grid>
     </window>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    public class DropDownButton_Command : ICommand
-    {     
-        Action<Object> execute;
+    public class DelegateCommand<T> : ICommand
+    {
+        private Predicate<T> _canExecute;
+        private Action<T> _method;
+        bool _canExecuteCache = true;
 
-        Func<object, bool> canexecute;
-
-        public DropDownButton_Command(Action<Object> execute,Func<object, bool> canexecute)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DelegateCommand"/> class.
+        /// </summary>
+        /// <param name="method">The method.</param>
+        public DelegateCommand(Action<T> method)
+            : this(method, null)
         {
-            this.execute = execute;
-            this.canexecute = canexecute;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DelegateCommand"/> class.
+        /// </summary>
+        /// <param name="method">The method.</param>
+        /// <param name="canExecute">The can execute.</param>
+        public DelegateCommand(Action<T> method, Predicate<T> canExecute)
+        {
+            _method = method;
+            _canExecute = canExecute;
+        }
+
+        /// <summary>
+        /// Defines the method that determines whether the command can execute in its current state.
+        /// </summary>
+        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
+        /// <returns>
+        /// true if this command can be executed; otherwise, false.
+        /// </returns>
         public bool CanExecute(object parameter)
         {
-            return true;
+            if (_canExecute != null)
+            {
+                bool tempCanExecute = _canExecute((T)parameter);
+
+                if (_canExecuteCache != tempCanExecute)
+                {
+                    _canExecuteCache = tempCanExecute;
+                    this.RaiseCanExecuteChanged();
+                }
+            }
+
+            return _canExecuteCache;
         }
 
+        /// <summary>
+        /// Raises CanExecuteChanged event to notify changes in command status.
+        /// </summary>
+        public void RaiseCanExecuteChanged()
+        {
+            if (CanExecuteChanged != null)
+            {
+                CanExecuteChanged(this, new EventArgs());
+            }
+        }
+
+        /// <summary>
+        /// Defines the method to be called when the command is invoked.
+        /// </summary>
+        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
         public void Execute(object parameter)
         {
-            execute(parameter);
+            if (_method != null)
+                _method.Invoke((T)parameter);
         }
 
+        #region ICommand Members
+
+        /// <summary>
+        /// 
+        /// </summary>
         public event EventHandler CanExecuteChanged;
+
+        #endregion
     }
 
-    public class DropDownViewModel
+    class DropDownViewModel: NotificationObject
     {
-        public DropDownButton_Command DropDownCommand { get; set; }
+        private bool _canperformaction = true;
 
-        public ViewModel()
+        public DropDownViewModel()
         {
-            DropDownCommand = new DropDownButton_Command(Execute, CanExecute);
+            ClickCommand = new DelegateCommand<object>(ClickAction, CanPerformClickAction);
         }
-        public bool CanExecute(object parameter)
+        public bool CanPerformAction
         {
-            return true;
+            get
+            {
+                return _canperformaction;
+            }
+            set
+            {
+                _canperformaction = value;
+                this.ClickCommand.RaiseCanExecuteChanged();
+                this.RaisePropertyChanged("CanPerformAction");
+            }
         }
 
-        public void Execute(object parameter)
+        private bool CanPerformClickAction(object parameter)
         {
-            MessageBox.Show("Button Clicked");
+            return CanPerformAction;
+        }
+
+        public DelegateCommand<object> ClickCommand { get; set; }
+
+        private void ClickAction(object parameter)
+        {
+            MessageBox.Show(parameter.ToString() + " dropdown menu item has been clicked");
         }
     }
 
 {% endhighlight %}
 {% endtabs %}
 
-## Command Parameter
-
-The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation.
-
-{% tabs %}
-{% highlight xaml %}
-
-    <Window x:Class="DropDownButton_Sample.MainWindow"
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-            xmlns:local="clr-namespace:Button_Sample"
-            xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
-            xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-            mc:Ignorable="d"
-            xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-            Title="MainWindow" Height="450" Width="800">
-        <Window.Resources>
-            <local:DropDownViewModel x:Key="dropdownViewModel"/>
-        </Window.Resources>
-        <Grid>
-            <Syncfusion:Label x:Name="Mylabel" Content="Hello"/>
-            <syncfusion:DropDownButtonAdv SizeMode="Large" LargeIcon="Employee-WF.png" >
-                <syncfusion:DropDownMenuGroup >
-                    <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="India" Command="{Binding DropDownCommand, Source={StaticResource dropdownViewModel}}" CommandParameter="{Binding Path=Label, ElementName=Mylabel}"/>
-                </syncfusion:DropDownMenuGroup >
-            <syncfusion:DropDownButtonAdv/>
-        </Grid>
-    </window>
-
-{% endhighlight %}
-{% highlight c# %}
-
-    public class DropDownViewModel
-    {
-        public DropDownButton_Command DropDownCommand { get; set; }
-        public ViewModel()
-        {
-            DropDownCommand = new DropDownButton_Command(Execute, CanExecute);
-        }
-
-        public bool CanExecute(object parameter)
-        {
-            return true;
-        }
-
-        public void Execute(object parameter)
-        {
-            MessageBox.Show(parameter.ToString());
-        }
-    }
-
-{% endhighlight %}
-{% endtabs %}
+Click [here](https://github.com/SyncfusionExamples/wpf-dropdownbuttonadv-examples/tree/master/Samples/Command-Binding) to download the sample that showcases how to provide command binding for `DropDownButtonAdv` control.

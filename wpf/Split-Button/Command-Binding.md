@@ -11,14 +11,15 @@ documentation: ug
 
 The command and command parameter properties allow to execute any action on clicking either the button or the dropdown menu items.
 
-## Command
+* **Command** - The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
+* **CommandParameter** - The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
 
-The [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.SplitButtonAdv~Command.html) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8).
+The Command can be binded as follows:
 
 {% tabs %}
 {% highlight xaml %}
-    
-    <Window x:Class="SplitButton_Sample.MainWindow"
+
+    <Window x:Class="Split_Button_Command_Binding.MainWindow"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -29,147 +30,169 @@ The [Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusio
             mc:Ignorable="d"
             xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
             Title="MainWindow" Height="450" Width="800">
-        <Window.Resources>
-            <local:SplitViewModel x:Key="SplitViewModel"/>
-        </Window.Resources>
-        <Grid>
-            <syncfusion:SplitButtonAdv SizeMode="Large" Command="{Binding SplitCommand, Source={StaticResource SplitViewModel}}" LargeIcon="Employee-WF.png">
-                <syncfusion:DropDownMenuGroup >
-                    <syncfusion:DropDownMenuItem Header="India" Command="{Binding MenuItemCommand, Source={StaticResource SplitViewModel}}"/>
-                </syncfusion:DropDownMenuGroup >
-            <syncfusion:SplitButtonAdv/>
-        </Grid>
+            <Window.DataContext>
+                <local:SplitViewModel/>
+            </Window.DataContext>
+            <Grid VerticalAlignment="Center" HorizontalAlignment="Left">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <CheckBox IsChecked="{Binding CanPerformAction}" Grid.Row="0" Content="Can perform action in split button"/>
+                <CheckBox IsChecked="{Binding CanPerformActionItem}" Grid.Row="1" Content="Can perform action in drop down items"/>
+
+                <syncfusion:SplitButtonAdv Label="Country" SizeMode="Large" LargeIcon="Images\flaglarge.png" Command="{Binding ClickCommand}" CommandParameter="Action completed" Grid.Row="2" Height="72" Width="122">
+                    <syncfusion:DropDownMenuGroup>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="India" Command="{Binding DropDownCommand}" CommandParameter="India">
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/india.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="France" Command="{Binding DropDownCommand}" CommandParameter="France" >
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/france.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="Germany" Command="{Binding DropDownCommand}" CommandParameter="Germany" >
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/germany.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="Canada" Command="{Binding DropDownCommand}" CommandParameter="Canada" >
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/Canada.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                        <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="China" Command="{Binding DropDownCommand}" CommandParameter="China" >
+                            <syncfusion:DropDownMenuItem.Icon>
+                                <Image Source="Images/china.png"/>
+                            </syncfusion:DropDownMenuItem.Icon>
+                        </syncfusion:DropDownMenuItem>
+                    </syncfusion:DropDownMenuGroup >
+                </syncfusion:SplitButtonAdv>
+            </Grid>
     </window>
+
 {% endhighlight %}
 {% highlight c# %}
 
-    public  class SplitButton_Command : ICommand
-    {     
-        Action<Object> execute;
+    public class DelegateCommand<T> : ICommand
+    {
+        private Predicate<T> _canExecute;
+        private Action<T> _method;
+        bool _canExecuteCache = true;
 
-        Func<object, bool> canexecute;
-
-        public SplitButton_Command(Action<Object> execute,Func<object, bool> canexecute)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DelegateCommand"/> class.
+        /// </summary>
+        /// <param name="method">The method.</param>
+        public DelegateCommand(Action<T> method)
+            : this(method, null)
         {
-            this.execute = execute;
-            this.canexecute = canexecute;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DelegateCommand"/> class.
+        /// </summary>
+        /// <param name="method">The method.</param>
+        /// <param name="canExecute">The can execute.</param>
+        public DelegateCommand(Action<T> method, Predicate<T> canExecute)
+        {
+            _method = method;
+            _canExecute = canExecute;
+        }
+
+        /// <summary>
+        /// Defines the method that determines whether the command can execute in its current state.
+        /// </summary>
+        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
+        /// <returns>
+        /// true if this command can be executed; otherwise, false.
+        /// </returns>
         public bool CanExecute(object parameter)
         {
-            return true;
+            if (_canExecute != null)
+            {
+                bool tempCanExecute = _canExecute((T)parameter);
+
+                if (_canExecuteCache != tempCanExecute)
+                {
+                    _canExecuteCache = tempCanExecute;
+                    this.RaiseCanExecuteChanged();
+                }
+            }
+
+            return _canExecuteCache;
         }
 
+        /// <summary>
+        /// Raises CanExecuteChanged event to notify changes in command status.
+        /// </summary>
+        public void RaiseCanExecuteChanged()
+        {
+            if (CanExecuteChanged != null)
+            {
+                CanExecuteChanged(this, new EventArgs());
+            }
+        }
+
+        /// <summary>
+        /// Defines the method to be called when the command is invoked.
+        /// </summary>
+        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
         public void Execute(object parameter)
         {
-            execute(parameter);
+            if (_method != null)
+                _method.Invoke((T)parameter);
         }
 
+        #region ICommand Members
+
+        /// <summary>
+        /// 
+        /// </summary>
         public event EventHandler CanExecuteChanged;
 
+        #endregion
     }
 
-    public  class SplitViewModel
+    class DropDownViewModel: NotificationObject
     {
-        public SplitButton_Command SplitCommand { get; set; }
-        public SplitButton_Command MenuItemCommand { get; set; }
+        private bool _canperformaction = true;
 
-        public SplitViewModel()
+        public DropDownViewModel()
         {
-            SplitCommand = new SplitButton_Command(Execute, CanExecute);
-            MenuItemCommand= new SplitButton_Command(ExecuteMenuItem, CanExecuteMenuItem);
+            ClickCommand = new DelegateCommand<object>(ClickAction, CanPerformClickAction);
         }
-        public bool CanExecute(object parameter)
+        public bool CanPerformAction
         {
-            return true;
-        }
-
-        public void Execute(object parameter)
-        {
-            MessageBox.Show("Split Button Clicked");
-        }
-
-        public bool CanExecuteMenuItem(object parameter)
-        {
-            return true;
+            get
+            {
+                return _canperformaction;
+            }
+            set
+            {
+                _canperformaction = value;
+                this.ClickCommand.RaiseCanExecuteChanged();
+                this.RaisePropertyChanged("CanPerformAction");
+            }
         }
 
-        public void ExecuteMenuItem(object parameter)
+        private bool CanPerformClickAction(object parameter)
         {
-            MessageBox.Show("Drop down menu item Clicked");
+            return CanPerformAction;
+        }
+
+        public DelegateCommand<object> ClickCommand { get; set; }
+
+        private void ClickAction(object parameter)
+        {
+            MessageBox.Show(parameter.ToString() + " dropdown menu item has been clicked");
         }
     }
 
 {% endhighlight %}
 {% endtabs %}
 
-## Command Parameter
-
-The [CommandParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.SplitButtonAdv~CommandParameter.html) property allows the user to provide additional data required in the command handler in-order to perform any operation.
-
-{% tabs %}
-{% highlight xaml %}
-
-    <Window x:Class="SplitButton_Sample.MainWindow"
-                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                xmlns:local="clr-namespace:Button_Sample"
-                xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
-                xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-                mc:Ignorable="d"
-                xmlns:syncfusionskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-                Title="MainWindow" Height="450" Width="800">
-            <Window.Resources>
-                <local:SplitViewModel x:Key="SplitViewModel"/>
-            </Window.Resources>
-        <Grid>
-            <Syncfusion:Label x:Name="Mylabel" Content="Hello"/>
-            <Syncfusion:Label x:Name="Menuitem" Content="Menuitem Clicked"/>
-            <syncfusion:SplitButtonAdv SizeMode="Large" Command="{Binding SplitCommand, Source={StaticResource SplitViewModel}}" CommandParameter="{Binding Path=Label, ElementName=Mylabel}"/> LargeIcon="Employee-WF.png">
-                <syncfusion:DropDownMenuGroup>
-                    <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="India" Command="{Binding MenuItemCommand, Source={StaticResource SplitViewModel}}" CommandParameter="{Binding Path=Label, ElementName=Menuitem}"/>
-                </syncfusion:DropDownMenuGroup >
-            <syncfusion:SplitButtonAdv/>
-        </Grid>
-    </window>
-
-{% endhighlight %}
-{% highlight c# %}
-
-    public  class SplitViewModel
-    {
-        public SplitButton_Command SplitCommand { get; set; }
-        public SplitButton_Command MenuItemCommand { get; set; }
-
-        public SplitViewModel()
-        {
-            SplitCommand = new SplitButton_Command(Execute, CanExecute);
-            MenuItemCommand= new SplitButton_Command(ExecuteMenuItem, CanExecuteMenuItem);
-        }
-
-        public bool CanExecute(object parameter)
-        {
-            return true;
-        }
-
-        public void Execute(object parameter)
-        {
-            MessageBox.Show(parameter.ToString());
-        } 
-
-        public bool CanExecuteMenuItem(object parameter)
-        {
-            return true;
-        }
-
-        public void ExecuteMenuItem(object parameter)
-        {
-            MessageBox.Show(parameter.ToString());
-        } 
-    }
-    
-
-{% endhighlight %}
-{% endtabs %}
+Click [here](https://github.com/SyncfusionExamples/wpf-splitbuttonadv-examples/blob/master/Samples/Command-Binding) to download the sample that showcases how to provide command binding for `SplitButtonAdv` control.
