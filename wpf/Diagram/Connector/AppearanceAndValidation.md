@@ -602,7 +602,7 @@ This support is used to decide on which element connector is going dock with dia
 
 ### Connection parameter
 
-The [ConnectionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectionParameter.html) calss is used to get or set the connection validation objects and their values. The list of arguments are as follows:
+The [ConnectionParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectionParameter.html) class is used to get or set the connection validation objects and their values. The list of arguments are as follows:
 
 | Type | Name | Type | Description |
 |---|---|---|---|
