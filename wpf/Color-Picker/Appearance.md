@@ -18,14 +18,23 @@ We can customize the header of the `ColorPicker` by using the [HeaderTemplate](h
 {% tabs %}
 {% highlight xaml %}
 
-<DataTemplate x:Key="CustomHeaderTemplate" DataType="syncfusion:ColorPicker">
+<DataTemplate x:Key="CustomHeaderTemplate" 
+              DataType="syncfusion:ColorPicker">
     <StackPanel Orientation="Horizontal">
-        <Ellipse Fill="{Binding Brush, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:ColorPicker}}}"
-                 Name="selectedColorEllipse" HorizontalAlignment="Left" Width="20" Height="20" Margin="2" />
+        <Ellipse Fill="{Binding Brush,
+            RelativeSource={RelativeSource FindAncestor,
+            AncestorType={x:Type syncfusion:ColorPicker}}}"
+                 Name="selectedColorEllipse" 
+                 HorizontalAlignment="Left"
+                 Width="20" Height="20"
+                 Margin="2" />
     </StackPanel>
 </DataTemplate>
 
-<syncfusion:ColorPicker  HeaderTemplate="{StaticResource CustomHeaderTemplate}" Name="colorPicker" Width ="50" Height="30"/>
+<syncfusion:ColorPicker  HeaderTemplate="{StaticResource CustomHeaderTemplate}"
+                         Name="colorPicker" 
+                         Width ="50" Height="30"/>
+
 
 {% endhighlight %}
 {% endtabs %}
@@ -51,26 +60,6 @@ colorPicker.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 ![ColorPicker with RightToLeft flow direction](Layout-Related-Features_images/ColorPicker_RightToLeft.png)
-
-## Alpha Visibility
-
-We can change the opacity of the selected color by using the A-Alpha value editor or delicate slider in the `ColorPicker`. We can hide the A-Alpha value editor and delicate slider by using the [IsAlphaVisible](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.ColorPicker~IsAlphaVisible.html) property value as `false`. The default value of the `IsAlphaVisible` property is `true`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:ColorPicker IsAlphaVisible="False" x:Name="colorPicker" />
-
-{% endhighlight %}
-{% highlight C# %}
-
-ColorPicker colorPicker = new ColorPicker();
-colorPicker.IsAlphaVisible = false;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPicker hides the Alpha slider and vale editor](ScRGB-Color_images/ColorPicker_IsAlphaVisible.png)
 
 ## Setting ToolTip
 
