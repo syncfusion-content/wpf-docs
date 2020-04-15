@@ -9,7 +9,7 @@ documentation: ug
 
 # Node and its customization 
 
-The nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
+The nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data, and it represents the functions of a complete system in regards of how it interacts with external entities.
 
 ![Node Content](Node_images/Node_Content.PNG)
 
@@ -86,17 +86,15 @@ Now, node will be as follows.
 
 ### Add node from stencil
 
-Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
+Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil").
 
 ### Create node through data source
 
-Nodes can be generated automatically with the information provided through data source. For more information about data source, 
-
-refer to [Data Source](/wpf/sfdiagram/datasource "DataSource").
+Nodes can be generated automatically with the information provided through data source. For more information about data source, refer to the [Data Source](/wpf/sfdiagram/datasource "DataSource").
 
 ### Draw nodes
 
-Nodes can be interactively drawn by clicking and dragging the Diagram surface by using the **Drawing Tool**. For more information about drawing nodes, refer to [Draw Nodes](/wpf/sfdiagram/tools#drawing-tools:shapes "Draw Nodes").
+Nodes can be drawn interactively by clicking and dragging the Diagram surface by using the **Drawing Tool**. For more information about drawing nodes, refer to the [Draw Nodes](/wpf/sfdiagram/tools#drawing-tools:shapes "Draw Nodes").
 
 ## Visualize a node
 
@@ -194,7 +192,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Using geometry
 
-The Shape property of node class allows you to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
+The Shape property of the node class allows you to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
 
 {% tabs %}
 {% highlight xaml %}
@@ -472,11 +470,11 @@ NodeViewModel node = new NodeViewModel()
 
 ### Built-in resource
 
-Some basic built-in shapes are provided as ResourceDictionary. For more information, refer to [Shapes](/wpf/sfdiagram/shapes). 
+Some basic built-in shapes are provided as ResourceDictionary. For more information, refer to the [Shapes](/wpf/sfdiagram/shapes). 
 
 ## Position
 
-Position of a node is controlled by using its `OffsetX` and `OffsetY` properties. By default, these Offset properties represent the distance between origin of the diagram’s page and node’s center point. You may expect this Offset values to represent the distance between page origin and node’s top left corner instead of center. `Pivot` property helps solve this problem. Default value of node’s pivot point is (0.5, 0.5), that means center of node.
+Position of a node is controlled by using its `OffsetX` and `OffsetY` properties. By default, these Offset properties represent the distance between origin of the diagram’s page and node’s center point. You may expect this Offset values to represent the distance between page origin and node’s top left corner instead of center. The `Pivot` property helps solve this problem. Default value of node’s pivot point is (0.5, 0.5), that means center of node.
 
 The following table explains how pivot relates Offset values with node boundaries:
 
@@ -524,11 +522,11 @@ NodeViewModel node = new NodeViewModel()
 Diagram provides support to flip the node.`Flip` is performed to give the mirrored node of the original element.
 The flip types are:
 * Flip
- `Flip`, which involves both vertical and horizontal changes of the element. 
+ `Flip` that involves both vertical and horizontal changes of the element. 
 * VerticalFlip
- `VerticalFlip`, which involves changes in the vertical direction of the element.
+ `VerticalFlip` that involves changes in the vertical direction of the element.
 * HorizontalFlip
- `HorizontalFlip`, which involves changes in the horizontal direction of the element.
+ `HorizontalFlip` that involves changes in the horizontal direction of the element.
 
 {% tabs %}
 {% highlight xaml %}
@@ -676,23 +674,23 @@ Node can be selected by clicking (tap) it.
 
 * The `IsSelected` Property is used to select or unselect the node at runtime.
 
-* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments, refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
+* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
 
-* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To explore about arguments, refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
+* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
 
 ![Select Node](Node_images/Node_img7.jpg)
 
-To explore about selection and selection related events, refer to [Selection](/wpf/sfdiagram/interaction#selection) .
+To explore about selection and selection related events, refer to the [Selection](/wpf/sfdiagram/interaction#selection).
 
 ### Drag  
 
 * Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 
-* Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to [PreviewSettings](https://help.syncfusion.com/wpf/sfdiagram/preview-settings). 
+* Instead of dragging original object, preview of the node alone can be dragged. For preview dragging, refer to the [PreviewSettings](https://help.syncfusion.com/wpf/sfdiagram/preview-settings). 
 
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](https://help.syncfusion.com/wpf/diagram/snapping/definesnapping "Snapping").
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
 
-* `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values. Along with that, this event will give information about interaction state. To explore about aruguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![Drag Node](Node_images/Drag.gif)
 
@@ -700,10 +698,10 @@ To explore about selection and selection related events, refer to [Selection](/w
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
-* Enable [AspectRatio](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) NodeConstraints to maintain the aspect ratio of the node while its being resized. 
-* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](https://help.syncfusion.com/wpf/diagram/snapping/definesnapping "Snapping").
+* Enable [AspectRatio](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) NodeConstraints to maintain the aspect ratio of the node when its being resized. 
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to the [Snapping](https://help.syncfusion.com/wpf/sfdiagram/snapping "Snapping").
 
-* `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![Resize Node](Node_images/Resize.gif)
 
@@ -711,22 +709,22 @@ To explore about selection and selection related events, refer to [Selection](/w
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
 * The node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the Node) appears while rotating the node to represent the static point. For more information about pivot, refer to [Position](/wpf/sfdiagram/node#position "Position").
+* Pivot thumb (thumb at the middle of the Node) appears when rotating the node to represent the static point. For more information about pivot, refer to [Position](/wpf/sfdiagram/node#position "Position").
 
-* `NodeChangedEvent` will notify the `RotateAngle` changes with their old and new values. Along with that, this event will give information about iteraction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
+* The `NodeChangedEvent` will notify the `RotateAngle` changes with their old and new values. Along with that, this event will give information about iteraction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
 ![Rotate Node](Node_images/Rotate.gif)
 
 ## Events
 
-* `ItemTappedEvent` is invoked on clicking the node. To explore about arguments, refer to [ItemTappedEventargs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
-* `ItemDoubleTappedEvent` is invoked on double-clicking the node. To explore about arguments, refer to [ItemDoubleTappedEventargs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
-* `MouseDown` and `MouseUp` are invoked as similar to framework element, which is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, refer to [MouseDownEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
+* The `ItemTappedEvent` is invoked on clicking the node. To explore about arguments, refer to the [ItemTappedEventargs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
+* The `ItemDoubleTappedEvent` is invoked on double-clicking the node. To explore about arguments, refer to the [ItemDoubleTappedEventargs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
+* The `MouseDown` and `MouseUp` are invoked as similar to framework element that is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, refer to the [MouseDownEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
 [MouseUpEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
 
 ## Constraints
 
-The `Constraints` property of node allows you to enable or disable certain features. For more information about node constraints, refer to [Node Constraints](/wpf/sfdiagram/constraints#node-constraints "Node Constraints").
+The `Constraints` property of node allows you to enable or disable certain features. For more information about node constraints, refer to the [Node Constraints](/wpf/sfdiagram/constraints#node-constraints "Node Constraints").
 
 ## See Also
  
