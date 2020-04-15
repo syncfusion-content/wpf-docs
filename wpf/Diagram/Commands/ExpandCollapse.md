@@ -9,19 +9,19 @@ documentation: ug
 
 # ExpandCollapse command in WPF Diagram(SfDiagram)
 
-[ExpandCollapse](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~ExpandCollapse.html) command is used to show or hide children and view only the relevant nodes in the diagram. The ExpandCollapse command will be executed with [ExpandCollapseParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html) where the parameter contains the information about node which need to be expanded or collapsed. The IsExpanded property of Node is used to expand or collapse the children nodes. 
+The [ExpandCollapse](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~ExpandCollapse.html) command is used to show or hide children and view only the relevant nodes in the diagram. The ExpandCollapse command will be executed with the [ExpandCollapseParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html) where the parameter contains the information about node that need to be expanded or collapsed. The IsExpanded property of node is used to expand or collapse the children nodes. 
 
 ## ExpandCollapseParameter 
 
-[ExpandCollapseParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html) is used to compress a view of a hierarchy so that only the roots of each Elements are visible. The opposite of collapse is expand, which makes the entire Elements visible.
+The [ExpandCollapseParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter.html) is used to compress a view of a hierarchy so that only the roots of each elements are visible. The opposite of collapse is expand that makes the entire elements visible.
 
 ### Node
 
-[Node](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter~Node.html) is used to set the node that is to be act as root element.
+The [Node](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter~Node.html) is used to set the node that is to be act as root element.
 
 ### IsUpdateLayout
 
-[IsUpdateLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter~IsUpdateLayout.html) is used to set whether the layout to be update or not after the command execution.
+The [IsUpdateLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ExpandCollapseParameter~IsUpdateLayout.html) is used to set whether the layout to be updated or not after the command execution.
 
 {% tabs %}
 {% highlight C# %}
@@ -32,7 +32,7 @@ documentation: ug
                 {
                     IsUpdateLayout = true,
 
-                    // Set the node which is going to be show or hide its children
+                    // Set the node that is going to be show or hide its children
                     node = args.Item as NodeViewModel,
                 };
 
@@ -48,7 +48,7 @@ documentation: ug
                 {
                     IsUpdateLayout = true,
 
-                    // Set the node which is going to be show or hide its children
+                    // Set the node that is going to be show or hide its children
                     node = args.Item as NodeViewModel,
                 };
                 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
