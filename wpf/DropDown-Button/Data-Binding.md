@@ -337,4 +337,4 @@ N> For more information on Command Binding, please refer [Command-Binding](https
 
 ![Data-Binding](DropDownButtonAdv_Binding_images/DropDownButtonAdv_Binding_img2.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-dropdownbuttonadv-examples/tree/master/Samples/Data-Binding) to download the sample that showcases how to bind data and commands to the `DropDownButtonAdv` control.
+Click [here](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Data-Binding) to download the sample that showcases how to bind data and commands to the `DropDownButtonAdv` control.

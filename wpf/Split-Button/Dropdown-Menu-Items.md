@@ -239,21 +239,21 @@ The dropdown menu group popup height can be increased or decreased using the res
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SmallIcon="images\colors.png">
+    <syncfusion:SplitButtonAdv Label="Country" x:Name="splitbutton" SmallIcon="images\country.png">
         <syncfusion:DropDownMenuGroup IsResizable=”True”>
-            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="India">
                 <syncfusion:DropDownMenuItem.Icon>
-                    <Image Source="images\orange.png"/>
+                    <Image Source="images\india.png"/>
                 </syncfusion:DropDownMenuItem.Icon>
             </syncfusion:DropDownMenuItem>
-            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Sky Blue">
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="France">
                 <syncfusion:DropDownMenuItem.Icon>
-                    <Image Source="images\skyblue.png"/>
+                    <Image Source="images\france.png"/>
                 </syncfusion:DropDownMenuItem.Icon>
             </syncfusion:DropDownMenuItem>
-            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Germany">
                 <syncfusion:DropDownMenuItem.Icon>
-                    <Image Source="images\red.png"/>
+                    <Image Source="images\germany.png"/>
                 </syncfusion:DropDownMenuItem.Icon>
             </syncfusion:DropDownMenuItem>
         </syncfusion:DropDownMenuGroup>
@@ -264,16 +264,16 @@ The dropdown menu group popup height can be increased or decreased using the res
 
     SplitButtonAdv splitbutton = new SplitButtonAdv();
     DropDownMenuGroup menu = new DropDownMenuGroup();
-    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Orange", Icon =new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
-    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Sky Blue", Icon =new BitmapImage(new Uri("images\skyblue.png")), HorizontalAlignment="Left"};
-    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Red", Icon =new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item1 = new DropDownMenuItem() { Header="India", Icon =new BitmapImage(new Uri("images\india.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="France", Icon =new BitmapImage(new Uri("images\france.png")), HorizontalAlignment="Left"};
+    DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Germany", Icon =new BitmapImage(new Uri("images\germany.png")), HorizontalAlignment="Left"};
     menu.Items.Add(Item1);
     menu.Items.Add(Item2);
     menu.Items.Add(Item3);
     menu.IsResizable = true;
     splitbutton.Content = menu;
     splitbutton.Label = "Colors";
-    splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+    splitbutton.SmallIcon = new BitmapImage(new Uri("images\country.png"));
 
 {% endhighlight %}
 {% endtabs %}

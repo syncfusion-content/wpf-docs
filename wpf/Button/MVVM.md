@@ -170,4 +170,4 @@ The Command can be binded as follows:
 {% endhighlight %}
 {% endtabs %}
 
-Click [here](https://github.com/SyncfusionExamples/wpf-buttonadv-samples/tree/master/Samples/MVVM) to download the sample that showcases how to bind commands to the `ButtonAdv` control.
+Click [here](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/MVVM) to download the sample that showcases how to bind commands to the `ButtonAdv` control.

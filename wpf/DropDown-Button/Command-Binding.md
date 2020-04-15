@@ -192,4 +192,4 @@ The Command can be binded as follows:
 {% endhighlight %}
 {% endtabs %}
 
-Click [here](https://github.com/SyncfusionExamples/wpf-dropdownbuttonadv-examples/tree/master/Samples/Command-Binding) to download the sample that showcases how to provide command binding for `DropDownButtonAdv` control.
+Click [here](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Command-Binding) to download the sample that showcases how to provide command binding for `DropDownButtonAdv` control.
