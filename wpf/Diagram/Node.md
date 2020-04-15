@@ -192,7 +192,7 @@ NodeViewModel node = new NodeViewModel()
 
 ### Using geometry
 
-The Shape property of the node class allows you to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
+The Shape property of the node class allows to visualize any geometry path as node's content. Refer to the following code example to define geometry for node's shape.
 
 {% tabs %}
 {% highlight xaml %}
