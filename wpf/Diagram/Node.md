@@ -731,3 +731,5 @@ The `Constraints` property of node allows you to enable or disable certain featu
  * [How to add Annotations to the Node](https://help.syncfusion.com/wpf/sfdiagram/annotation).
  * [How to add Port to the Node](https://help.syncfusion.com/wpf/sfdiagram/port#node-port).
  * [How to add Nodes to the stencil](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements).
+ * [How to apply built-in theme for node and connector](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector)
+ * [How to customize the connection indicator style of node and port](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port)

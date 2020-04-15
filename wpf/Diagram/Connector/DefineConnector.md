@@ -419,3 +419,6 @@ Connectors can be predefined and added to the stencil. You can drop those connec
 
 For more information about adding connectors from stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
 
+## See Also
+
+* [How to apply built-in theme for node and connector](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector)

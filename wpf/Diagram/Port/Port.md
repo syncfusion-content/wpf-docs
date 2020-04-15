@@ -533,3 +533,5 @@ The `Constraints` property allows you to enable or disable certain behaviors of 
 * [How to connect only with port not with node](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
 
 * [How to validate the connection and port visibility (inport and outport) in the diagram](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
+
+* [How to customize the connection indicator style of node and port](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port)
