@@ -7,11 +7,11 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Events
+# Events in SfTextBoxExt
 
-## How to get the suggestions from the suggestion box
+## SuggestionsChanged Event
 
-After the filtering begins, the SuggestionsChanged event will be triggered. The argument contains the following information.
+After the filtering begins, the [SuggestionsChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionsChanged_EV.html) event will be triggered. The argument contains the following information.
 
 <table>
 <tr>
@@ -132,9 +132,9 @@ namespace AutoCompleteSample
 {% endhighlight %}
 {% endtabs %}
 
-## How to find out if the suggestion box is opened or closed
+## SuggestionPopupOpened
 
-The `SuggestionPopupOpened` event will be triggered whenever the suggestion box appears in the application.
+The [SuggestionPopupOpened](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionPopupOpened_EV.html) event will be triggered whenever the suggestion box appears in the application.
 
 You can execute your own set of codes once the suggestion popup is opened and visible to the application in the respective event handler.
 
@@ -241,7 +241,9 @@ namespace AutoCompleteSample
 {% endhighlight %}
 {% endtabs %}
 
-The `SuggestionPopupClosed` event will be triggered whenever the suggestion box disappears from the application.
+## SuggestionPopupClosed
+
+The [SuggestionPopupClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionPopupClosed_EV.html) event will be triggered whenever the suggestion box disappears from the application.
 
 You can execute your own set of codes once the suggestion popup is completely closed in the respective event handler.
 
