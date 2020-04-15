@@ -356,7 +356,7 @@ N> For more information on how to bind data with command actions for Split Butto
                 <syncfusion:DropDownMenuGroup ItemsSource="{Binding DropDownItems}">
                     <syncfusion:DropDownMenuGroup.ItemTemplate>
                         <DataTemplate>
-                            <syncfusion:DropDownMenuItem Header="{Binding Name}">
+                            <syncfusion:DropDownMenuItem Header="{Binding Name}" HorizontalAlignment="Left">
                                 <syncfusion:DropDownMenuItem.Icon>
                                     <Image Source="{Binding Flag}"/>
                                 </syncfusion:DropDownMenuItem.Icon>
