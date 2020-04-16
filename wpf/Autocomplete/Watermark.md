@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Watermark | SfTextBoxExt | wpf | Syncfusion
-description: watermark
+description: This section provides the details about SfTextBoxExt WaterMark support & WaterMark templates support.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Watermark
+# WaterMark in WPF SfAutocomplete.
 
-The control will prompt the user with some information, when it is not in focus and contains an empty string.
+The control will prompt the user with some information when it is not in focus and contains an empty string.
 
 ## Using the Watermark
 
-Watermark property allows the users to specify some information, when the text is empty. For illustration let us create a simple textbox, where the user is asked to enter names separated by a comma,
+[Watermark](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Watermark.html) property, allows the users to specify some information when the text is empty. For illustration, let us create a simple textbox where the user is asked to enter names separated by a comma.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ namespace AutoCompleteSample
 
 ![Watermark_Text](Watermark_images/Watermark_img1.png)
 
-N> The Watermark property is of the object type so any Framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
+N> The Watermark property is of the object type. So, any framework elements can be hosted as Watermark content. The following example shows how to host an image and text as Watermark content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -167,7 +167,7 @@ namespace AutoCompleteSample
 
 ## Using the Watermark template
 
-Any business object can be bound to the Watermark property and that object can be decorated by applying the WatermarkTemplate property.
+Any business object can be bound to the Watermark property and that object can be decorated by applying the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~WatermarkTemplate.html)  property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -250,3 +250,5 @@ namespace AutoCompleteSample
 {% endtabs %}
 
 ![Watermark_View](Watermark_images/Watermark_img3.png)
+
+The complete Getting Started sample is available in [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_WPF754375762) link.

@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Multiple segments
+# Multiple segments creation
 
 Multiple segments can be added in a single connector one after another. you can add above four type of segments in single connector at a time.
 
@@ -64,5 +64,4 @@ ConnectorViewModel multipleSegments = new ConnectorViewModel()
 
 ![Multiple Segments](Connector_images/MultipleSegments.PNG)
 
-For Adding Connector and Segments sample, please refer to [Segments](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AddConnector1815455151.zip "Segments")
-
+Find the [Segments sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Segments) to depict the connector appearance and validation.

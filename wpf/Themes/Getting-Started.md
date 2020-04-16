@@ -6,7 +6,7 @@ platform: wpf
 control: Themes
 documentation: ug
 ---
-# Themes
+# Themes Getting Started with SkinManager
 
 `SfSkinManager` control helps to apply the built-in themes to the Syncfusion UI controls for WPF. Refer to the following built in themes and its available assemblies.
 
@@ -15,6 +15,22 @@ documentation: ug
 <th>
 Styles</th><th>
 Assemblies</th></tr>
+<tr>
+<td>
+MaterialLight</td><td>
+Syncfusion.Themes.MaterialLight.Wpf.dll</td></tr>
+<tr>
+<td>
+MaterialDark</td><td>
+Syncfusion.Themes.MaterialDark.Wpf.dll</td></tr>
+<tr>
+<td>
+MaterialLightBlue</td><td>
+Syncfusion.Themes.MaterialLightBlue.Wpf.dll</td></tr>
+<tr>
+<td>
+MaterialDarkBlue</td><td>
+Syncfusion.Themes.MaterialDarkBlue.Wpf.dll</td></tr>
 <tr>
 <td>
 Metro</td><td>
