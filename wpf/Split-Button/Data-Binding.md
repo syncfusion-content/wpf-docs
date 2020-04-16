@@ -337,4 +337,4 @@ N> For more information on Command Binding, please refer [Command-Binding](https
 
 ![Data-Binding](SplitButtonAdv_Binding_images/SplitButtonAdv_Binding_img2.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-splitbuttonadv-examples/blob/master/Samples/Data-Binding) to download the sample that showcases how to bind data and commands to the `SplitButtonAdv` control.
+Click [here](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Data-Binding) to download the sample that showcases how to bind data and commands to the `SplitButtonAdv` control.
