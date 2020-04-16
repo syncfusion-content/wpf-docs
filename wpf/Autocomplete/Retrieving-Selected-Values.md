@@ -11,7 +11,7 @@ documentation: ug
 
 ## SelectedValue
 
-The `SelectedValue` property is used to retrieve the selected values from the suggestion list.
+The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedValue.html) property is used to retrieve the selected values from the suggestion list.
 
 The following code snippet demonstrates how to set `SelectedValue`.
 
@@ -124,11 +124,11 @@ Employee Class:
 
 ## Retrieving selected values
 
-AutoComplete provides a way to get the selected values using the `SuggestionIndex` property.
+AutoComplete provides a way to get the selected values using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property.
 
 When an item is selected from suggestion list, their index can be retrieved using the `SuggestionIndex` property.
 
-The [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndexProperty.html) property, holds the index of selected items in suggestion list.
+The `SuggestionIndex     property, holds the index of selected items in suggestion list.
 
 The following code example demonstrates how to retrieve SuggestionIndex.
 
@@ -218,9 +218,9 @@ namespace AutoCompleteSample
 
 ## SelectedItem
 
-The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
+The [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
 
-The following code snippet demonstrates how to set [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItemProperty.html).
+The following code snippet demonstrates how to set `SelectedItem`.
 
 {% tabs %}
 
@@ -298,7 +298,7 @@ namespace AutoCompleteSample
 
 ### Retrieving selected items
 
-AutoComplete provides a way to get the selected items using the `SelectionChanged` event.
+AutoComplete provides a way to get the selected items using the [SelectionChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItemChanged_EV.html) event.
 
 The following code example demonstrates how to retrieve SelectedItem.
 

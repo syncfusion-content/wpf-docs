@@ -9,7 +9,7 @@ documentation: ug
 
 ## Multiple selection in WPF AutoComplete (SfTextBoxExt)
 
-Select the multiple items from a suggestion list using the`MultiSelectMode` property. There are two ways to perform multi-selection in autocomplete. The default value of MultiSelectMode is None.
+Select the multiple items from a suggestion list using the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property. There are two ways to perform multi-selection in autocomplete. The default value of MultiSelectMode is None.
 
 * Token Representation
 
@@ -23,9 +23,9 @@ Selected items will be displayed with a customizable token representation and th
 
 The selected items can be displayed as token inside the SfAutoComplete in two ways:
 
-* `Wrap` - When `TokensWrapMode` is set to `Wrap`, the selected items will be wrapped to the next line of the SfAutoComplete.
+* `Wrap` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `Wrap`, the selected items will be wrapped to the next line of the SfAutoComplete.
 
-* `None` - When `TokensWrapMode` is set to `None`, the selected items will be wrapped in horizontal orientation.
+* `None` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `None`, the selected items will be wrapped in horizontal orientation.
 
 {% tabs %}
 
@@ -225,7 +225,7 @@ Get the sample from [this](https://www.syncfusion.com/downloads/support/directtr
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character with the `Delimiter` property.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character with the [Delimiter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property.
 
 {% tabs %}
 
