@@ -864,13 +864,15 @@ namespace HubTile_Grouping
 {% endhighlight %}
 {% endtabs %}
 
-Single tile:
-
 ![wpf hubtile unfreeze a single tile](Getting-Started_images/wpf-hubtile-slide-transition.png)
 
-Group of tiles:
+Single tile
+{:.caption}
 
 ![wpf hubtile unfreeze a group of tiles](Getting-Started_images/wpf-hubtile-groupingtiles.jpg)
+
+Group of tiles
+{:.caption}
  
 ## Notifications
 
