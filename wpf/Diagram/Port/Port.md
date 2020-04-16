@@ -533,3 +533,5 @@ The `Constraints` property allows you to enable or disable certain behaviors of 
 * [How to connect only with port not with node](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
 
 * [How to validate the connection and port visibility (inport and outport) in the diagram](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
+
+* [How to achieve Zoom In or Zoom Out functionality to Ports](https://www.syncfusion.com/kb/11405/how-to-achieve-zoom-in-or-zoom-out-functionality-to-ports-in-wpf-diagramsfdiagram)
