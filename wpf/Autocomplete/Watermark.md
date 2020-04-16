@@ -13,7 +13,7 @@ The control will prompt the user with some information when it is not in focus a
 
 ## Using the Watermark
 
-[Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~WatermarkProperty.html) property, allows the users to specify some information when the text is empty. For illustration, let us create a simple textbox where the user is asked to enter names separated by a comma.
+[Watermark](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Watermark.html) property, allows the users to specify some information when the text is empty. For illustration, let us create a simple textbox where the user is asked to enter names separated by a comma.
 
 {% tabs %}
 {% highlight xaml %}
@@ -167,7 +167,7 @@ namespace AutoCompleteSample
 
 ## Using the Watermark template
 
-Any business object can be bound to the Watermark property and that object can be decorated by applying the [WatermarkTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~WatermarkTemplateProperty.html)  property.
+Any business object can be bound to the Watermark property and that object can be decorated by applying the [WatermarkTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~WatermarkTemplate.html)  property.
 
 {% tabs %}
 {% highlight xaml %}
