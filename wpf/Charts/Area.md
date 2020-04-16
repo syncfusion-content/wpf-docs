@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Area WPF Chart (SfChart)
+# Area in WPF Chart (SfChart)
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 
@@ -18,7 +18,7 @@ The following are the major properties of chart(SfChart):
 * [`Legend`](https://help.syncfusion.com/wpf/sfchart/legend#) –  Gets or sets the legend for the chart.
 * [`Series`](https://help.syncfusion.com/wpf/sfchart/series#) –  Gets or sets the list of series in the chart.
 * [`TechnicalIndicators`](https://help.syncfusion.com/wpf/sfchart/technical-indicators#) –  Gets or sets the various financial indicators for the chart.
-* [`Behaviors`](https://help.syncfusion.com/wpf/sfchart/interactive-features#)–  Used to add one more interactive features to the chart.
+* [`Behaviors`](https://help.syncfusion.com/wpf/sfchart/interactive-features#) –  Used to add one more interactive features to the chart.
 
 ## Chart Header
 
