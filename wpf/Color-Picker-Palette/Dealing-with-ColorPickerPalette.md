@@ -304,7 +304,7 @@ colorPickerPalette.Height = 40;
 
 ![ColorPickerPalette with custom color tab](Dealing-with-ColorPickerPalette_images/CustomColorPanel.png)
 
-N> If we set `IsCustomTabVisible` and `IsStandardTabVisible` property value as `false`, then MoreColor panel automatically hided.
+N> If we set `IsCustomTabVisible` and `IsStandardTabVisible` property value as `false`, then MoreColor panel automatically hides.
 
 ## Color changed notification
 
@@ -403,9 +403,9 @@ colorPickerPalette.Height = 40;
 ![ColorPickerPalette color item size changed](Dealing-with-ColorPickerPalette_images/ColorSize.png)
 
 
-## Change color palatte size
+## Change color palette size
 
-We can change the color palatte pop size by using the [PopupWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~PopupWidth.html) and [PopupHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~PopupHeight.html) properties. Based on the popup color palette size, the color items are resized. The default value of `PopupWidth` and `PopupHeight` properties is `175` and `200`.
+We can change the color palette pop size by using the [PopupWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~PopupWidth.html) and [PopupHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~PopupHeight.html) properties. Based on the popup color palette size, the color items are resized. The default value of `PopupWidth` and `PopupHeight` properties is `175` and `200`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -436,7 +436,7 @@ N> If we set both `PopupWidth` & `PopupHeight` and `BorderWidth` & `BorderHeight
 
 ## Change header and more color icons
 
-We can set the icons for control header which is placed left to the DropDown button and more color panel header by using the [Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Icon.html) and [MoreColorsIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~MoreColorsIcon.html) properties. We can change the icon size for the control icon and morecolor icon by using the [IconSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~IconSize.html) and [MoreColorsIconSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~MoreColorsIconSize.html) properties. The default value of `` and `` properties is 
+We can set the icons for control header which is placed left to the DropDown button and more color panel header by using the [Icon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Icon.html) and [MoreColorsIcon](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~MoreColorsIcon.html) properties. We can change the icon size for the control icon and more color icon by using the [IconSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~IconSize.html) and [MoreColorsIconSize](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~MoreColorsIconSize.html) properties.
 
 {% tabs %}
 {% highlight xaml %}

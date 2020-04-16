@@ -82,6 +82,6 @@ colorPickerPalette.Height = 60;
 
 Here, the `Blend` style is applied to the `ColorPickerPalette`.
 
-Click [here]() to download the sample that showcases the apperance customization and  different theming supports.
+Click [here]() to download the sample that showcases the appearance customization and  different theming supports.
 
 
