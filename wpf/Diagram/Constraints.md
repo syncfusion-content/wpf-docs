@@ -14,7 +14,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 
 ## Graph Constraints
 
-[GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allows to enable or disable the following behaviors.By default , `Zoomable` , `Pannable` , `PanRails` , `Relationship` , `Events` , `AutoScroll` , `PageEditing` constraints are enabled for diagram.
+[GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html) allows to enable or disable the following behaviors.By default , `GraphConstraints.Zoomable` , `GraphConstraints.Pannable` , `PanRails` , `Relationship` , `Events` , `AutoScroll` , `PageEditing` constraints are enabled for diagram.
 
 |Constraints|Description|
 |--|--|
@@ -34,9 +34,9 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 |`None` |Disable all SfDiagram constraints|
 |`Outline` |Enable or disables the outline of diagram elements while loading.|
 |`PageEditing`|Enables or disables the page editing options such as Selectable, Draggable, Connectable, Drop, Resizable, Rotatable, ContextMenu, DrawingTool, Commands.|
-|`Pannable`	|Enables or disables the panning of diagram over both X and Y axis.|
-|`PannableX` |Enables or disables the panning of diagram over X-axis.|
-|`PannableY`	|Enables or disables the panning of diagram over Y -axis.|
+|`GraphConstraints.Pannable`	|Enables or disables the panning of diagram over both X and Y axis.|
+|`GraphConstraints.PannableX` |Enables or disables the panning of diagram over X-axis.|
+|`GraphConstraints.PannableY`	|Enables or disables the panning of diagram over Y -axis.|
 |`PanRails`	|Enables or disables the panning actions on the x-axis (horizontal panning) and y-axis (vertical panning) in SfDiagram.|
 |`PanRailsX`	|Enables or disables the pan rails of diagram in X-axis|
 |`PanRailsY	`|Enables or disables the pan rails of diagram in Y -axis|
@@ -47,7 +47,7 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 |`Selectable`	|Enables or disable the selection action of diagram and its child elements.|
 |`Undoable`	|Enables or disables the undo or redo action on diagram.|
 |`Virtualize`	|Enables or disables the virtualizing behavior of diagram.|
-|`Zoomable`	|Enables or disables the zooming of diagram.|
+|`GraphConstraints.Zoomable`	|Enables or disables the zooming of diagram.|
 
 The following code example illustrates how to disable page editing.
 
