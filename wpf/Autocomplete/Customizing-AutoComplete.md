@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: This section provides the details about how to customizing features in WPF SfTextBoxExt control using following properties.
+description: This section provides the details how to customizing features in WPF SfTextBoxExt control using following properties.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Customizing AutoComplete
 
-AutoComplete provides user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
+AutoComplete provides the user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
 
 ## Customizing the text box
 
@@ -165,7 +165,7 @@ namespace AutoCompleteSample
 
 ## DropDownIcon
 
-This feature allows the users to set the drop down icon for the Text Box control using `ShowDropDownButton`.
+This feature allows the users to set the drop-down icon for the text box control using the `ShowDropDownButton`.
 
 {% tabs %}
 

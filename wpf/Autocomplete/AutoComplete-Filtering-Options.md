@@ -9,7 +9,7 @@ documentation: ug
 
 # AutoComplete Filtering Options
 
-The phenomenon of string comparison for filtering suggestions can be changed by using the `SuggestionMode` property. The default filtering strategy is “StartsWith” and is case-insensitive.
+The phenomenon of string comparison for filtering suggestions can be changed by using the [SuggestionMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionModeProperty.html) property. The default filtering strategy is “StartsWith” and is case-insensitive.
 
 1. None
 2. StartsWith
@@ -138,7 +138,7 @@ None case
 
 ## StartsWith
 
-Displays all matches that begin with the typed characters in the control. This strategy is insensitive to the case.
+Displays all matches that begins with the typed characters in the control. This strategy is case-insensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -240,7 +240,7 @@ StartsWith case
 
 ## StartsWithCaseSensitive
 
-Displays all matches that start with the typed characters in the control. This strategy is case-sensitive.
+Displays all matches that starts with the typed characters in the control. This strategy is case-sensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -444,7 +444,7 @@ StartsWithOrdinal case
 
 ## StartsWithOrdinalCaseSensitive
 
-The control returns all possible matches, starting with the text typed by the user by Ordinal, which is case sensitive.
+The control returns all possible matches starting with the text typed by the user by Ordinal, which is case sensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -546,7 +546,7 @@ StartsWithOrdinalCaseSensitive case
 
 ## Contains
 
-Displays all matches that contain typed characters in the control. This strategy is case-insensitive.
+Displays all matches that contains typed characters in the control. This strategy is case-insensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -648,7 +648,7 @@ Contains case
 
 ## ContainsCaseSensitive
 
-The control return all possible matches that contains the text typed by the user, which is culture and case sensitive.
+The control returns all possible matches that contains the text typed by the user, which is culture and case-sensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -750,7 +750,7 @@ ContainsCaseSensitive case
 
 ## ContainsOrdinal
 
-The control return all possible matches that contains the text typed by the user based on OrdinalIgnoreCase.
+The control returns all possible matches that contains the text typed by the user based on the OrdinalIgnoreCase.
 
 {% tabs %}
 {% highlight xaml %}
@@ -852,7 +852,7 @@ ContainsOrdinal case
 
 ## ContainsOrdinalCaseSensitive
 
-The control return all possible matches that contains the text typed by the user based on Ordinal which is case sensitive.
+The control returns all possible matches that contains the text typed by the user based on the Ordinal, which is case-sensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -954,7 +954,7 @@ ContainsOrdinalCaseSensitive
 
 ## Equals
 
-Displays all words that completely match the typed characters in the control. This strategy is insensitive to the case.
+Displays all words that completely matches the typed characters in the control. This strategy is case-insensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1056,7 +1056,7 @@ Equals case
 
 ## EqualsCaseSensitive
 
-Displays all words that completely match the typed characters in the control. This strategy is case-sensitive.
+Displays all words that completely matches the typed characters in the control. This strategy is case-sensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1158,7 +1158,7 @@ EqualsCaseSensitive case
 
 ## EqualsOrdinal
 
-The control return all possible matches that equals the text typed by the user based on OrdinalIgnoreCase.
+The control returns all possible matches that equals the text typed by the user based on the OrdinalIgnoreCase.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1260,7 +1260,7 @@ EqualsOrdinal case
 
 ## EqualsOrdinalCaseSensitive
 
-The control return all possible matches that equals the text typed by the user based on Ordinal, which is case sensitive.
+The control returns all possible matches that equals the text typed by the user based on the Ordinal, which is case-sensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1362,7 +1362,7 @@ EqualsOrdinalCaseSensitive case
 
 ## Custom
 
-The control return all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text
+The control returns all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1481,11 +1481,11 @@ namespace AutoCompleteSample
 Custom case
 {:.caption}
 
-N> Append mode always only works with StartsWith behavior. If the typed text is not the same as the start text of any item, nothing will be append even if the auto complete mode is set to Append or SuggestAppend.
+N> Append mode always works with StartsWith behavior. If the typed text is not the same as the start text of any item, nothing will be append even if the auto complete mode is set to Append or SuggestAppend.
 
 ## EndsWith
 
-Displays all matches that end with the typed characters in the control. This strategy is insensitive to the case.
+Displays all matches that ends with the typed characters in the control. This strategy is case-insensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1587,7 +1587,7 @@ EndsWith case
 
 ## EndsWithCaseSensitive
 
-Displays all matches that end with the typed characters in the control. This strategy is case-sensitive.
+Displays all matches that ends with the typed characters in the control. This strategy is case-sensitive.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1786,7 +1786,7 @@ namespace AutoCompleteSample
 
 ## EndsWithOrdinalCaseSensitive
 
-The control returns all possible matches, ending with the text typed by the user by Ordinal, which is case sensitive.
+The control returns all possible matches ending with the text typed by the user by Ordinal, which is case-sensitive.
 
 {% tabs %}
 {% highlight xaml %}
