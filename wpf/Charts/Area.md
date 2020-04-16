@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion WPF Chart Area and its properties. 
-description: Guide (Virtual rectangular area) for plotting area properties and it's behaviors in WPF Chart (SfChart).
+description: Learn how to create a plotting area properties and customiztaion of chart header, area, multiple area, serialization, and chart events.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Area in WPF Chart (SfChart)
+# Area WPF Chart (SfChart)
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
 
@@ -18,7 +18,7 @@ The following are the major properties of chart(SfChart):
 * [`Legend`](https://help.syncfusion.com/wpf/sfchart/legend#) –  Gets or sets the legend for the chart.
 * [`Series`](https://help.syncfusion.com/wpf/sfchart/series#) –  Gets or sets the list of series in the chart.
 * [`TechnicalIndicators`](https://help.syncfusion.com/wpf/sfchart/technical-indicators#) –  Gets or sets the various financial indicators for the chart.
-* [`Behaviors`](https://help.syncfusion.com/wpf/sfchart/interactive-features#) – Used to add one more interactive features to the chart.
+* [`Behaviors`](https://help.syncfusion.com/wpf/sfchart/interactive-features#)–  Used to add one more interactive features to the chart.
 
 ## Chart Header
 
@@ -917,6 +917,16 @@ The [`ResetZooming`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfC
 * [`Axis`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs~Axis.html) - Gets an instance of the axis whose range is changed when panning. This event is triggered for each axis in the chart.
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs~Cancel.html) - Gets or Sets a value that indicates whether the panning should be canceled.
 * [`PreviousZoomRange`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs~PreviousZoomRange.html) - Gets the previous visible range of the axis.
+
+### SeriesBoundsChanged
+
+The [`SeriesBoundsChanged`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesBoundsChanged_EV.html) event occurs when the size of the chart is changed. The event arguments contain the following information.
+
+* [`NewBounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBoundsEventArgs~NewBounds.html) – Gets the [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) of the chart after the charts size changed.
+* [`OldBounds`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBoundsEventArgs~OldBounds.html) – Gets the [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) of the chart before the charts size changed.
+
+The [`SeriesClipRect`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesClipRect.html) is the region that contains the series excluding axis and chart header. This region is highlighted in red border in the chart as follows.
+
 
 **See also**
 
