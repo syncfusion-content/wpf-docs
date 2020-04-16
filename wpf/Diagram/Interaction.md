@@ -94,6 +94,12 @@ Based on the `BlockPosition` the dragging of Block occurs.
 * `Abort`- If this boolean is set to true, then dragging is occurs within the limit.
 * `Cancel`- If this boolean is set to true, then the dragging of element does not occurs.   
 
+### How to drag the elements to vertical or horizontal
+
+Diagram elements of the Nodes and Connectors can be dragged in the either horizontal or vertical direction. To achieve this, hold down the shift key when you drag the objects.
+
+![Shift dragging](Interaction_images/ShiftDrag.gif)
+
 ## Drag and Drop Nodes over other elements
 
 Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `AllowDrop` constraints property for both node and connector.

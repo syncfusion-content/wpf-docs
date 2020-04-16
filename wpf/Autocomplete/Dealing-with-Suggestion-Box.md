@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Suggestion box AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: This section provides details of the suggestion box and its placement in AutoComplete in SfTextBoxExt.
+description: This section provides the details of the suggestion box and its placement in AutoComplete in SfTextBoxExt.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Dealing with suggestion box
 
-Suggestion box is a drop-down list box that displays the filtered suggestions inside a popup. This section explains the properties that deal with drop-down list in the AutoComplete control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the AutoComplete control.
 
 ## Suggestion box placement mode
 
-The SuggestionBoxPlacement property defines the position of popup relative to the control. It contains three built-in options:
+The [SuggestionBoxPlacement](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionBoxPlacement.html) property, defines the position of popup relative to the control. It contains three built-in options:
 
 1. Top
 2. Bottom
@@ -339,7 +339,7 @@ No drop down list
 
 ## Maximum suggestion box height
 
-The maximum height of the suggestion box in the Autocomplete control can be changed using the `MaximumDropDownHeight` property.
+The maximum height of the suggestion box in the Autocomplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MaxDropDownHeight.html) property.
 
 {% tabs %}
 
@@ -430,7 +430,7 @@ namespace AutoCompleteSample
 
 ## Opening suggestion box on focus
 
-Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. At that time, suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [ShowSuggestionsOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowSuggestionsOnFocus.html) property. At that time, suggestion list is the complete list of data source.
 
 {% tabs %}
 
