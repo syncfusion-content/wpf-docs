@@ -116,7 +116,7 @@ namespace SfDatePickerSample
 
 At this point, the control is populated with the list of employees. But the Employee model contains two properties Name and Email, so we should tell the control, by which property it has to provide the suggestions. In this case, let us make the control to provide the suggestions based on the Name.
 
-The SearchItemPath property specifies the property path, by which the filtering has to be done.
+The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SearchItemPath.html) property specifies the property path, by which the filtering has to be done.
 
 {% tabs %}
 {% highlight xaml %}
