@@ -9,11 +9,11 @@ documentation: ug
 
 # WaterMark in WPF SfAutocomplete.
 
-The control will prompt the user with some information, when it is not in focus and contains an empty string.
+The control will prompt the user with some information when it is not in focus and contains an empty string.
 
 ## Using the Watermark
 
-[Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~WatermarkProperty.html) property allows the users to specify some information, when the text is empty. For illustration let us create a simple textbox, where the user is asked to enter names separated by a comma,
+[Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~WatermarkProperty.html) property, allows the users to specify some information when the text is empty. For illustration, let us create a simple textbox where the user is asked to enter names separated by a comma.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ namespace AutoCompleteSample
 
 ![Watermark_Text](Watermark_images/Watermark_img1.png)
 
-N> The Watermark property is of the object type so any Framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
+N> The Watermark property is of the object type. So, any framework elements can be hosted as Watermark content. The following example shows how to host an image and text as Watermark content.
 
 {% tabs %}
 {% highlight xaml %}
