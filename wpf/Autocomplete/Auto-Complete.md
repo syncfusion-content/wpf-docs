@@ -9,7 +9,7 @@ documentation: ug
 
 # AutoComplete | SfTextBoxExt
 
-The AutoComplete functionality provides several modes of suggestions to users while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that the users can choose from different options.
+The AutoComplete functionality provides the several modes of suggestions to users while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that the users can choose from the different options.
 
 ## AutoComplete source
 
@@ -55,7 +55,7 @@ Create a collection attribute and populate the collection with items.
 
 {% endhighlight %}
 
-Bind the Employees collection to the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSourceProperty.html) property of TextBoxExt.
+Bind the Employees collection to the [AutoCompleteSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSource.html) property of TextBoxExt.
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,9 +114,9 @@ namespace SfDatePickerSample
 {% endhighlight %}
 {% endtabs %}
 
-At this point, the control is populated with the list of employees. But the Employee model contains two properties Name and Email, so we should tell the control, by which property, it has to provide suggestions. In this case, let us make the control to provide suggestions based on Name.
+At this point, the control is populated with the list of employees. But the Employee model contains two properties Name and Email, so we should tell the control, by which property it has to provide the suggestions. In this case, let us make the control to provide the suggestions based on the Name.
 
-The SearchItemPath property specifies the property path by which the filtering has to be done.
+The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SearchItemPath.html) property specifies the property path, by which the filtering has to be done.
 
 {% tabs %}
 {% highlight xaml %}
@@ -183,7 +183,7 @@ N> The default value of the AutoCompleteMode property is None. So, running the c
 
 ## AutoComplete item template
 
-The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteItemTemplateSelectorProperty.html) helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list item.
+The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteItemTemplate.html) helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list item.
 
 {% tabs %}
 {% highlight xaml %}
@@ -255,7 +255,7 @@ Drop down list with image
 
 ## Ignore case
 
-[IgnoreCase](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCaseProperty.html) option allows the control to filter suggestions by ignoring the case. The default value is false.
+[IgnoreCase](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html) option allows the control to filter suggestions by ignoring the case. The default value is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -320,7 +320,7 @@ Ignore Case
 
 ## Popup delay
 
-The [PopupDelay](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~PopupDelayProperty.html) specifies the delay after which the suggestion popup should open. 
+The [PopupDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~PopupDelay.html) specifies the delay after, which the suggestion popup should open. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -380,7 +380,7 @@ namespace SfDatePickerSample
 
 ## NoResultsFoundTemplate
 
-When the entered item is not in the suggestion list, AutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundTemplate` property.
+When the entered item is not in the suggestion list, AutoComplete displays a text indicating that there is no search results found. You can set the desire text to be displayed for indicating no results found with the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~NoResultsFoundTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -444,7 +444,7 @@ namespace Demo_Sample
 
 ## ImageMemberPath
 
-This feature allows the users to provide the path for the Image to be displayed in the Text Box control using `ImageMemberPath` property.
+This feature allows the users to provide the path for the image to be displayed in the text box control using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property.
 
 {% tabs %}
 {% highlight xaml %}
