@@ -7,9 +7,9 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-## Multiple Selection in WPF AutoComplete (SfTextBoxExt)
+## Multiple selection in WPF AutoComplete (SfTextBoxExt)
 
-Select multiple items from a suggestion list using `MultiSelectMode` property. There are two ways to perform multi selection in autocomplete. The default value of MultiSelectMode is None.
+Select the multiple items from a suggestion list using the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property. There are two ways to perform multi-selection in autocomplete. The default value of MultiSelectMode is None.
 
 * Token Representation
 
@@ -19,13 +19,13 @@ Select multiple items from a suggestion list using `MultiSelectMode` property. T
 
 Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
 
-### Wrap Mode of Token
+### Wrap mode of token
 
-The selected item can be displayed as token inside SfAutoComplete in two ways. They are
+The selected items can be displayed as token inside the SfAutoComplete in two ways:
 
-* `Wrap` - When `TokensWrapMode` is set to `Wrap` the selected items will be wrap to the next line of the SfAutoComplete.
+* `Wrap` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `Wrap`, the selected items will be wrapped to the next line of the SfAutoComplete.
 
-* `None` - When `TokensWrapMode` is set to `None` the selected item will be wrap in horizontal orientation.
+* `None` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `None`, the selected items will be wrapped in horizontal orientation.
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ namespace Demo_Sample
 
 Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ImageMemberPath-2093350688) link.
 
-## Customization of Tokens.
+## Customization of Tokens
 
 Using styles override we can customize the tokens.
 
@@ -225,7 +225,7 @@ Get the sample from [this](https://www.syncfusion.com/downloads/support/directtr
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character with the [Delimiter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property.
 
 {% tabs %}
 
