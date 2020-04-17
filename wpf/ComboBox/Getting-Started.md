@@ -10,13 +10,13 @@ documentation: ug
 This section provides a quick overview for working with the ComboBox (ComboBoxAdv).
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#comboboxadv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#comboboxadv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control in any application.
 
 You can find more details about installing the NuGet package in a WPF application in the following link:
 [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-## Creating simple application with ComboBox (ComboBoxAdv)
-By following the below steps, You will create WPF application that contains ComboBox.
+## Creating Application with ComboBoxAdv control
+In this walk through, user will create a WPF application that contains [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control.
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
 3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
@@ -24,11 +24,11 @@ By following the below steps, You will create WPF application that contains Comb
 5. [Creating Data Model for sample application](#Creating Data Model for sample application)
 6. [Binding to Data ](#Creating Data Model for sample application)
 
-### Creating the project 
-Create new project in Visual Studio to display ComboBoxAdv.
+### Creating project 
+Create new project in Visual Studio to display [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
 ### Adding control via designer
-[ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) (ComboBoxAdv) can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly will be added automatically.
+The [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/ComboBoxAdv_img2.png)
 
@@ -36,21 +36,21 @@ Create new project in Visual Studio to display ComboBoxAdv.
 In order to add control manually in XAML, do the below steps,
 1. Add the below required assembly references to the project,
            * Syncfusion.Shared.WPF
-2.  Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**.
+2.  Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
 3. Declare ComboBoxAdv in XAML page.
 {% tabs %}
 {% highlight xaml %}
-<Window x:Class="ComboBox.MainWindow"
+<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ComboBox" xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:GettingStartedComboBox"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="GettingStartedComboBox.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <syncfusion:ComboBoxAdv x:Name="comboBoxAdv1" DefaultText="Choose Items" Height="70" Width="170" ItemsSource="{Binding Countries}" DisplayMemberPath="Name"  SelectedValuePath="Code" SelectedValueDelimiter=" - ">
-        </syncfusion:ComboBoxAdv>
+        <syncfusion:ComboBoxAdv Height="30" Width="150"/>
     </Grid>
 </Window>
 {% endhighlight %}
@@ -61,8 +61,8 @@ In order to add control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
            * Syncfusion.Shared.WPF
-2. Import Wizard namespace **Syncfusion.Windows.Tools.Controls**.
-3. Create Wizard control instance and add it to the page.
+2. Import ComboBoxAdv namespace **Syncfusion.Windows.Tools.Controls**.
+3. Create ComboBoxAdv control instance and add it to the page.
 {% tabs %}
 {% highlight c# %}
 using System.Windows;
@@ -79,8 +79,8 @@ namespace ComboBox
             InitializeComponent();
             ComboBoxAdv comboBoxAdv = new ComboBoxAdv();
             this.Content = comboBoxAdv;
-            comboBoxAdv.Height = 70;
-            comboBoxAdv.Width = 140;
+            comboBoxAdv.Height = 30;
+            comboBoxAdv.Width = 150;
             comboBoxAdv.DefaultText = "choose Items";
         }
     }
@@ -89,87 +89,99 @@ namespace ComboBox
 {% endtabs %}
 
 ### Creating Data Model for sample application
-1. Create data object class named **Model** and declare properties as shown below,
+1. Create data object class named **PopulationInfo** and declare properties as shown below,
 {% tabs %}
 {% highlight c# %}
-namespace ComboBox
-{
-    public class Model
+ public class PopulationInfo
     {
-        private string text;
-        public string Text
+        private string continent;
+        private double population;
+        private string country;
+        private double growth;
+
+        public string Continent
         {
-            get { return text; }
-            set { text = value; }
+            get { return continent; }
+            set { continent = value; }
+        }
+
+        public string Country
+        {
+            get { return country; }
+            set { country = value; }
+        }
+
+        public double Growth
+        {
+            get { return growth; }
+            set { growth = value; }
+        }
+
+        public double Population
+        {
+            get { return population; }
+            set { population = value; }
         }
     }
-}
 {% endhighlight %}
 {% endtabs %}
+
+N> If you want your data object (PopulationInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface.
+
 2. Create a **ViewModel** class with several data objects in constructor.
 {% tabs %} 
 {% highlight c# %}
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-namespace ComboBox
+public class PopulationViewModel
 {
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Model> products;
-        public ObservableCollection<Model> Products
-        {
-            get
-            {
-                return products;
-            }
-            set
-            {
-                products = value;
-                RaisePropertyChanged("Products");
-            }
-        }
-        public ViewModel()
-        {
-            Products = new ObservableCollection<Model>();
-            Products.Add(new Model() { Text = "Item 1" });
-            Products.Add(new Model() { Text = "Item 2" });
-            Products.Add(new Model() { Text = "Item 3" });
-            Products.Add(new Model() { Text = "Item 4" });
-            Products.Add(new Model() { Text = "Item 5" });
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void RaisePropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
+     public PopulationViewModel()
+     {
+         this.PopulationDetails = new ObservableCollection<PopulationInfo>();
+         PopulationDetails.Add(new PopulationInfo() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "Asia", Country = "Malaysia", Growth = 1, Population = 29672000 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "North America", Country = "United States", Growth = 4, Population = 315645000 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "North America", Country = "Mexico", Growth = 2, Population = 112336538 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "North America", Country = "Canada", Growth = 1, Population = 35056064 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "South America", Country = "Colombia", Growth = 1, Population = 47000000 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "South America", Country = "Brazil", Growth = 3, Population = 193946886 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000 });
+         PopulationDetails.Add(new PopulationInfo() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775 });
+     }
+
+     public ObservableCollection<PopulationInfo> PopulationDetails
+     {
+         get;
+         set;
+     }
 }
 {% endhighlight %}
 {% endtabs %}
 
 ### Binding to Data 
-Bind the collection created in previous step to `ComboBoxAdv.ItemsSource` property in XAML by setting ViewModel as `DataContext`.
+To bind the [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in previous step to `ComboBoxAdv.ItemsSource` property in XAML by setting `PopulationViewModel` as `DataContext`.
+
 {% tabs %}
 {% highlight xaml %}
-<Window x:Class="ComboBox.MainWindow"
+<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ComboBox" xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:GettingStartedComboBox"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="GettingStartedComboBox.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <syncfusion:ComboBoxAdv 
-            Name="comboBoxAdv" 
-            ItemsSource="{Binding Products}"
-            DisplayMemberPath="Text"
-            SelectedValue="{Binding SelectedItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-            VerticalAlignment="Center" 
-            HorizontalAlignment="Center" 
-            Width="126"/>
+        <Grid.DataContext>
+            <local:PopulationViewModel/>
+        </Grid.DataContext>
+        <syncfusion:ComboBoxAdv x:Name="comboBoxAdv" Height="30" Width="200" ItemsSource="{Binding PopulationDetails}"/>
     </Grid>
 </Window>
+
 {% endhighlight %}
 {% highlight c# %}
 namespace ComboBox
@@ -179,28 +191,87 @@ namespace ComboBox
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new ViewModel();
+            this.DataContext = new PopulationViewModel();
         }
     }
 }
 {% endhighlight %}
 {% endtabs %}
+
+### Binding display member
+
+`DisplayMemberPath` denotes the path to a value on the data object for visual presentation of item to be displayed in combobox drop down list and displays the selected item in combobox.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid>
+    <Grid.DataContext>
+        <local:PopulationViewModel/>
+    </Grid.DataContext>
+    <syncfusion:ComboBoxAdv x:Name="comboBoxAdv" Height="30" Width="200" ItemsSource="{Binding PopulationDetails}" DisplayMemberPath="Country"/>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+// Initialize the display member path to comboboxadv.
+this.comboBoxAdv.DisplayMemberPath = "Country";
+{% endhighlight %}
+{% endtabs %}
+
 Now, run the application and you can expert the below output.
 
 ![Displaying WPF ComboBox](Getting-Started_images/ComboBoxAdv_img3.png)
+
 N> [View the sample in GitHub](https://github.com/SyncfusionExamples/bind-the-data-to-comboboxadv)
 
-## Feature summary
-The features of the ComboBoxAdv control are listed below:
-* AllowMultiSelect—ComboBoxAdv allows multiple selection
-* DefaultText—ComboBoxAdv displays a string when none of the items is selected 
-* SelectedValueDelimiter—It allows customizing the delimiter string displayed between selected items
+### Defining ItemTemplate
 
-## Use case scenarios
-If multiple choices are allowed for the user, then the ComboBoxAdv is useful to display those multiple choices. Instead of displaying all the choices initially,the choices displayed with in the drop-down whenever the user click on the ComboBoxAdv control.
+You can customize the visualization of data object using the [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8). The Item template of [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) can be customized as below.
 
-## Default selection behavior
-By default, [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~AllowMultiSelect.html) property of ComboboxAdv is false. Therefore, it allows users to select only one item from drop-down. In default selection, previous selection has been cleared when new item is selected.
+{% tabs %}
+{% highlight xaml %}
 
-The following screenshot displays the default selection behavior of ComboBoxAdv.
-![ComboBoxAdv_img1](Getting-Started_images/ComboBoxAdv_img1.png)
+<Grid>
+    <Grid.DataContext>
+        <local:PopulationViewModel/>
+    </Grid.DataContext>
+    <syncfusion:ComboBoxAdv x:Name="comboBoxAdv" Height="30" Width="200" ItemsSource="{Binding PopulationDetails}">
+      <syncfusion:ComboBoxAdv.ItemTemplate>
+        <DataTemplate>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Country}"/>
+                <TextBlock Text=" - "/>
+                <TextBlock Text="{Binding Continent}"/>
+            </StackPanel>
+        </DataTemplate>
+      </syncfusion:ComboBoxAdv.ItemTemplate>
+    </syncfusion:ComboBoxAdv>
+</Grid>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+Now the combobox will display as like below.
+
+![Item template](Getting-Started_images/ComboBoxAdv_img4.png)
+
+### Selection
+If multiple choices are allowed for the user, then the ComboBoxAdv is useful to display and select those multiple choices. It allows the user to select multiple items from the drop down list. To enable this you have to enable [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~AllowMultiSelect.html) property. 
+
+<Grid>
+    <Grid.DataContext>
+        <local:PopulationViewModel/>
+    </Grid.DataContext>
+    <syncfusion:ComboBoxAdv x:Name="comboBoxAdv" Height="30" Width="200" ItemsSource="{Binding PopulationDetails}" DisplayMemberPath="Country" AllowMultiSelect="True">
+    </syncfusion:ComboBoxAdv>
+</Grid>
+
+Now while selecting the multiple items it looks like this.
+
+![Multiple selection](Getting-Started_images/ComboBoxAdv_img5.png)
+
+### Editing
+ComboBoxAdv also provides the user to edit the text. This can be enabled by using the [IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~IsEditable.html) property. Enabling this property makes the ComboBoxAdv control to be displayed like below
+
+![Editable](Getting-Started_images/ComboBoxAdv_img6.png)
