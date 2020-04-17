@@ -528,10 +528,10 @@ The `Constraints` property allows you to enable or disable certain behaviors of 
 
 ## See Also
 
-* [How to control the visibility of Ports](https://www.syncfusion.com/kb/6687/how-to-control-the-visibility-of-ports)
+* [How to control the visibility of Ports?](https://www.syncfusion.com/kb/6687/how-to-control-the-visibility-of-ports)
 
-* [How to connect only with port not with node](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
+* [How to connect only with port not with node?](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
 
-* [How to validate the connection and port visibility (inport and outport) in the diagram](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
+* [How to validate the connection and port visibility (inport and outport) in the diagram?](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
 
-* [How to achieve Zoom In or Zoom Out functionality to Ports](https://www.syncfusion.com/kb/11405/how-to-achieve-zoom-in-or-zoom-out-functionality-to-ports-in-wpf-diagramsfdiagram)
+* [How to achieve Zoom In or Zoom Out functionality to Ports?](https://www.syncfusion.com/kb/11405/how-to-achieve-zoom-in-or-zoom-out-functionality-to-ports-in-wpf-diagramsfdiagram)

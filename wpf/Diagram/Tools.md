@@ -177,7 +177,7 @@ diagram.Tool = Tool.SingleSelect | Tool.ZoomPan;
 {% endhighlight %}
 {% endtabs %}
 
-Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools)
 
 ## How to override the default cursors while interaction
 
@@ -236,6 +236,6 @@ public class CustomClass:SfDiagram
 
 {% seealso %}
 
-[How to override the default cursors while interaction](https://www.syncfusion.com/kb/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
+[How to override the default cursors while interaction?](https://www.syncfusion.com/kb/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
 
 {% endseealso %}
