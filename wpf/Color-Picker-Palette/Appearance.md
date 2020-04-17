@@ -37,8 +37,6 @@ colorPickerPalette.Height = 60;
 
 ![ColorPickerPalette with Right To Left flow direction](Appearance_images/rtl.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-checked-listbox-examples/tree/master/Samples/Apperance) to download the sample that showcases the styling and RTL supports.
-
 ## Theme
 
 We can customize the appearance of the `ColorPickerPalette` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `ColorPickerPalette` control.
@@ -73,7 +71,7 @@ using Syncfusion.SfSkinManager;
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
 SfSkinManager.SetVisualStyle(colorPickerPalette, VisualStyles.Blend);
 colorPickerPalette.Width = 60;
-colorPickerPalette.Height = 60;
+colorPickerPalette.Height = 40;
 
 {% endhighlight %}
 {% endtabs %}
@@ -82,6 +80,6 @@ colorPickerPalette.Height = 60;
 
 Here, the `Blend` style is applied to the `ColorPickerPalette`.
 
-Click [here]() to download the sample that showcases the appearance customization and  different theming supports.
+Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Themes) to download the sample that showcases the appearance customization and  different theming supports.
 
 

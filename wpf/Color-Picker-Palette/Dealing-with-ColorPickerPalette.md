@@ -13,7 +13,7 @@ This section explains the different types of colors available in the [ColorPicke
 
 ## Accessing a Color programmatically
 
-We can get or change the selected color of the `ColorPickerPalette` by setting the value to the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Color.html) property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorName.html) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
+We can get or change the selected color of the `ColorPickerPalette` programmatically by setting the value to the [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Color.html) property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorName.html) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -214,9 +214,9 @@ public class ViewModel : NotificationObject {
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette with custom color items](Dealing-with-ColorPickerPalette_images/CustomColor.png)
+![ColorPickerPalette with own color items](Dealing-with-ColorPickerPalette_images/CustomColor.png)
 
-Click [here]() to download the sample that showcases how to your own color items into the palette.
+Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/CustomColors) to download the sample that showcases how to add your own color items into the palette.
 
 ##  Recently used color items
 
@@ -402,7 +402,6 @@ colorPickerPalette.Height = 40;
 
 ![ColorPickerPalette color item size changed](Dealing-with-ColorPickerPalette_images/ColorSize.png)
 
-
 ## Change color palette size
 
 We can change the color palette pop size by using the [PopupWidth](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~PopupWidth.html) and [PopupHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~PopupHeight.html) properties. Based on the popup color palette size, the color items are resized. The default value of `PopupWidth` and `PopupHeight` properties is `175` and `200`.
@@ -455,4 +454,4 @@ We can set the icons for control header which is placed left to the DropDown but
 
 ![ColorPickerPalette popup size changed](Dealing-with-ColorPickerPalette_images/Icons.png)
 
-Click [here]() to download the sample that showcases features and  different type color items with its panel visibility customization.
+Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/ColorPickerPalatte) to download the sample that showcases features and  different type color items with its panel visibility customization.

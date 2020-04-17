@@ -38,7 +38,7 @@ You can find more details about installing the NuGet package in a WPF applicatio
 
 ## Adding WPF ColorPickerPalette via designer
 
-You can add the `ColorPickerPalette` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically:
+You can add the `ColorPickerPalette` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
 * Syncfusion.Shared.WPF
 
@@ -113,7 +113,7 @@ public partial class MainWindow : Window {
 
 ## Accessing a Color programmatically
 
-We can set or change the selected color of the `ColorPickerPalette` by setting the value for [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Color.html) property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorName.html) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
+We can set or change the selected color of the `ColorPickerPalette` programmatically by setting the value for [Color](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Color.html) property. If we want know the selected color name, use the [ColorName](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorName.html) property that holds the name of the selected color item. The default value of `Color` and `ColorName` property is `Black` and `Color`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -226,9 +226,9 @@ public class ViewModel : NotificationObject {
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette with custom color items](Dealing-with-ColorPickerPalette_images/CustomColor.png)
+![ColorPickerPalette with own color items](Dealing-with-ColorPickerPalette_images/CustomColor.png)
 
-Click [here]() to download the sample that showcases how to your own color items into the palette. We can hide the RecentlyUsedPanel by using the [RecentlyUsedPanelVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~RecentlyUsedPanelVisibility.html) property value as `Collapsed`
+Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/CustomColors) to download the sample that showcases how to add your own color items into the palette. 
 
 ##  Recently used color items
 
@@ -258,7 +258,7 @@ colorPickerPalette.Height = 40;
 
 ## Choosing a color from MoreColor window
 
-If we want more standard and custom colors to select, click the more color option and select the color from standard color tab or custom color tab and click the `Ok` button. 
+If we wants more standard and custom colors to select, click the more color option and select the color from standard color tab or custom color tab and click the `Ok` button. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -282,5 +282,6 @@ colorPickerPalette.Height = 40;
 
 ![ColorPickerPalette with more color panel](Getting-Started_images/MoreColorWindow.gif)
 
-Click [here]() to download the sample that showcases features and  different type color items with its panel visibility customization.
+N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/dealing-with-colorpickerpalette) page that explains the panel visibility support.
 
+Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/ColorPickerPalatte) to download the sample that showcases different type of color items with its panel visibility customization.
