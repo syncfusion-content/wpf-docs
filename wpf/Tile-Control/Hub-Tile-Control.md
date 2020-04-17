@@ -1119,7 +1119,7 @@ The secondary content of the tile can be customized by using the [SecondaryConte
             <Image Source="/Assets/HubTile.png" />
             <CheckBox x:Name="checkbox" Grid.Row="1" Foreground="White" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}" Foreground="White"/>
             <TextBlock Grid.Row="2" Text="This is the secondary content of the tile displayed at each transition." Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
-            </StackPanel>
+        </Grid>
         </DataTemplate>
     </syncfusion:SfHubTile.SecondaryContentTemplate>
 </syncfusion:SfHubTile>
