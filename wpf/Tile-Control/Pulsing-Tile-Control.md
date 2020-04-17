@@ -341,7 +341,7 @@ grid.Children.Add(pulsingTile);
 {% endhighlight %}
 {% endtabs %}
 
-View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Pulsing%20Tile/Getting%20Started) in Github
+View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Pulsing%20Tile/Getting%20Started) in GitHub.
 
 ## Grouping
 
