@@ -1383,3 +1383,7 @@ layoutManager.Layout = new FlowchartLayout()
 {% endtabs %}
 
 Please find [Flowchart sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Flowchart%20Layout) to depict this support.
+
+## See Also
+ 
+ * [How to create parent and child relationship by drag and drop nodes?](https://www.syncfusion.com/kb/11401/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagramsfdiagram).
