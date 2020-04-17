@@ -411,8 +411,8 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 <small> - SfBusyIndicator</small></p>
 </td>
 <td>
-<p><a href="https://help.syncfusion.com/wpf/hub-tile/getting-started">Hub Tile</a>
-<small> - SfHubTile</small></p>
+<p><a href="https://help.syncfusion.com/wpf/tile-control/overview">Tile Control</a>
+</p>
 </td>
 <td>
 <a href="https://help.syncfusion.com/wpf/notify-icon/getting-started">Notify Icon</a>
