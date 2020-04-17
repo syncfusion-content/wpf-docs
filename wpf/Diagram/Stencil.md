@@ -361,7 +361,7 @@ The custom symbol collections can be added to the stencil by defining the custom
 
 N> Custom symbol collections should be added in the App.xaml file.
 
-### How to customize the symbols
+### How to customize the default appearance of the symbols in the built-in categories
 
 Built-in symbol categories symbol sizes are equivalent to Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~PrepareSymbolViewModel.html) virtual method of the stencil class. Symbols can be modified by using the following properties of  `PrepareSymbolViewModel` method,
 
