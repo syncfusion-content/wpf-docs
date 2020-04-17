@@ -1117,7 +1117,7 @@ The secondary content of the tile can be customized by using the [SecondaryConte
             <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Image Source="/Assets/HubTile.png" />
-            <CheckBox x:Name="checkbox" Grid.Row="1" Foreground="White" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}" Foreground="White"/>
+            <CheckBox x:Name="checkbox" Grid.Row="1" Foreground="White" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}" />
             <TextBlock Grid.Row="2" Text="This is the secondary content of the tile displayed at each transition." Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
         </Grid>
         </DataTemplate>
