@@ -84,6 +84,8 @@ Now, node will be as follows.
 
 ![Add node](Node_images/addNode.png)
 
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Node/Sample-for-NodeCreation)
+
 ### Add node from stencil
 
 Nodes can be predefined and added to the stencil and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to the [Stencil](/wpf/sfdiagram/stencil "Stencil").
@@ -472,6 +474,8 @@ NodeViewModel node = new NodeViewModel()
 
 Some basic built-in shapes are provided as ResourceDictionary. For more information, refer to the [Shapes](/wpf/sfdiagram/shapes). 
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Node/Node-with-CustomShapes)
+
 ## Position
 
 Position of a node is controlled by using its `OffsetX` and `OffsetY` properties. By default, these Offset properties represent the distance between origin of the diagram’s page and node’s center point. You may expect this Offset values to represent the distance between page origin and node’s top left corner instead of center. The `Pivot` property helps solve this problem. Default value of node’s pivot point is (0.5, 0.5), that means center of node.
@@ -664,6 +668,8 @@ return style;
 
 ![Node appearance](Node_images/Node_img4.PNG)
  
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Node/Node-with-properties)
+
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the node interactively. 
@@ -728,6 +734,8 @@ The `Constraints` property of node allows you to enable or disable certain featu
 
 ## See Also
  
- * [How to add Annotations to the Node](https://help.syncfusion.com/wpf/sfdiagram/annotation).
- * [How to add Port to the Node](https://help.syncfusion.com/wpf/sfdiagram/port#node-port).
- * [How to add Nodes to the stencil](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements).
+ * [How to add Annotations to the Node?](https://help.syncfusion.com/wpf/sfdiagram/annotation).
+ * [How to add Port to the Node?](https://help.syncfusion.com/wpf/sfdiagram/port#node-port).
+ * [How to add Nodes to the stencil?](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements).
+ * [How to apply built-in theme for node and connector?](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagramsfdiagram)
+ * [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
