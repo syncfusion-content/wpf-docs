@@ -85,6 +85,8 @@ DiagramMenuItem mi = new DiagramMenuItem()
 
 ![Node Custom Menu](Context-Menu_images/Context-Menu_img3.png)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/ContextMenu) 
+
 ## Events
 
 * `MenuItemClickedEvent`will invoke when you click the menu items. To explore about arguments, refer to [MenuItemClickedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MenuItemClickedEventArgs.html)

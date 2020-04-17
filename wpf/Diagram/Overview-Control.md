@@ -51,7 +51,7 @@ Steps to add Overview control manually in XAML:
 
 ![Overview](Overview-Control_images/Overview-Control_img1.jpeg)
 
-For more, refer to [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Overview474986272).
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Overview).
 
 ## Interaction
 
