@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Overview Control
+# Overview Control in WPF Diagram (SfDiagram)
 
 Overview control is used to display a preview (overall view) of the entire content of a Diagram. This helps you to look overall picture of large diagram and easy to navigate (pan or zoom) to a particular position of the page.
 

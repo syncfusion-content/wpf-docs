@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started in WPF Diagram (SfDiagram)
 
 ## Assembly deployment
 
