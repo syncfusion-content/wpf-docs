@@ -421,4 +421,4 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 
 ## See Also
 
-* [How to apply built-in theme for node and connector](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector)
+* [How to apply built-in theme for node and connector?](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagramsfdiagram)
