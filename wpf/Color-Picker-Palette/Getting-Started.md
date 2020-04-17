@@ -24,7 +24,7 @@ This section explains how to create a WPF [ColorPickerPalette](https://help.sync
 * The More Colors Option provides wide range of color in addition to colors in the palette.
 * The Theme Variant Colors represents the Theme colors with variant.
 
-## More Color Window
+### More Color Window
 
 ![ColorPickerPalette control structure](Getting-Started_images/MoreColorControl_Structure_GS.png)
 
@@ -139,9 +139,9 @@ colorPickerPalette.Height = 40;
 
 Here, `Red` color is selected color in the `ColorPickerPalette`.
 
-## Select color from color palette panels
+## Select color from color palette
 
-We can select a different colors from Theme Color and Standard Color panels. we can show or hide the variant colors of the base Theme Colors and Standard Colors by using the [GenerateThemeVariants](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~GenerateThemeVariants.html) and [GenerateStandardVariants](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~GenerateStandardVariants.html) properties.
+We can select a different colors from Theme Color and Standard Color panels. we can show or hide the variant colors of the base Theme Colors and Standard Colors by using the [GenerateThemeVariants](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~GenerateThemeVariants.html) and [GenerateStandardVariants](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~GenerateStandardVariants.html) properties value as `true` or `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -283,5 +283,41 @@ colorPickerPalette.Height = 40;
 ![ColorPickerPalette with more color panel](Getting-Started_images/MoreColorWindow.gif)
 
 N> We can show or hide all color panels. Refer the [Dealing with ColorPickerPalette](https://help.syncfusion.com/wpf/color-picker-palette/dealing-with-colorpickerpalette) page that explains the panel visibility support.
+
+## Color changed notification
+
+The selected color changed in `ColorPickerPalette` can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorChanged_EV.html) event. The `ColorChanged` event contains the old and newly selected color values in the `OldValue`, `NewValue` properties.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette ColorChanged="ColorPickerPalette_ColorChanged"
+                               Name="ColorPickerPalette" 
+                               Width="60"
+                               Height="40">
+</syncfusion:ColorPickerPalette>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+colorPickerPalette.ColorChanged += ColorPickerPalette_ColorChanged;
+colorPickerPalette.Width = 60;
+colorPickerPalette.Height = 40;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+//Invoked when the selected color is changed
+private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    Console.WriteLine(e.OldValue.ToString());
+    Console.WriteLine(e.NewValue.ToString());
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/ColorPickerPalatte) to download the sample that showcases different type of color items with its panel visibility customization.

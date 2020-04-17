@@ -30,7 +30,7 @@ We can change the flow direction of the `ColorPickerPalette` layout from right t
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
 colorPickerPalette.FlowDirection = FlowDirection.RightToLeft;
 colorPickerPalette.Width = 60;
-colorPickerPalette.Height = 60;
+colorPickerPalette.Height = 40;
 
 {% endhighlight %}
 {% endtabs %}
