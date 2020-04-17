@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-# Overview
+# WPF ComboBox (ComboBoxAdv) Overview
 
 The [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) control allows the component that allows user to type a value or choose an option from a list of predefined options. It has several out of the box features such as data binding, multiselction, editing and more.
 
