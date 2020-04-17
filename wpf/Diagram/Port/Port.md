@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Ports
+# Ports creation and customization 
 
 Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the node is moved.
 
@@ -385,23 +385,31 @@ NodePortViewModel nodePort = new NodePortViewModel()
 
 ## HitPadding
 
-Connection can be made from/to nodes, connectors, port or on empty area in a diagram. Making connection with ports are usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area while connecting. Default value is 0d.
- 
+Connection can be made from or to nodes, connectors, port or on an empty area in a diagram. Making a connection with ports is usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when the mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area when connecting. The connector can be created by clicking and dragging to any point of hit padding of ports and can be dropped at any point of hit padding region of ports. Default value is 0d.
+
 {% tabs %}
 {% highlight c# %}
-DockPortViewModel np1 = new DockPortViewModel()
-  {
+DockPortViewModel dockPort = new DockPortViewModel()
+{
     Constraints=PortConstraints.Default & ~PortConstraints.InheritHitPadding,
     //Declaring the value for HitPadding
-    HitPadding = 50,
+    HitPadding = 40,
     SourcePoint = new Point(1, 0),
-    TargetPoint = new Point(1, 1)
+    TargetPoint = new Point(1, 1),
 };
 
+NodePortViewModel nodePort = new NodePortViewModel()
+{
+    Constraints = PortConstraints.Default & ~PortConstraints.InheritHitPadding,
+    //Declaring the value for HitPadding
+    HitPadding = 40,
+    NodeOffsetX = 0,
+    NodeOffsetY = 0.5,
+};
 {% endhighlight %}
 {% endtabs %}
  
-![Port hit padding](Port_images/Port_img12.gif) 
+![Port hit padding](Port_images/Hitpadding.gif) 
 
 ### PortVisibility
 
