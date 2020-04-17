@@ -331,6 +331,8 @@ NodeViewModel node = new NodeViewModel()
 
 ![Dock port](Port_images/Port_img10.png)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Simple-PortCreation)
+
 ### Geometry Style
 The appearance of `DockPort` such as stroke and stroke thickness can be customized using the `ConnectorGeometryStyle` property.
 
@@ -509,6 +511,8 @@ NodePortViewModel port = new NodePortViewModel()
 {% endtabs %}
 
 ![Port appearance](Port_images/Port_img8.PNG)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Port-Customization)
 
 ## Events
 
