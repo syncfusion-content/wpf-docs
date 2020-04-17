@@ -341,6 +341,8 @@ grid.Children.Add(pulsingTile);
 {% endhighlight %}
 {% endtabs %}
 
+View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Pulsing%20Tile/Getting%20Started) in Github
+
 ## Grouping
 
 Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) property of pulsing tile control. The group name will be used when the entire group of tiles needs to be freeze/unfreeze.
