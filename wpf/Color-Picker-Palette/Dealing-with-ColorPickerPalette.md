@@ -456,4 +456,4 @@ We can set the icons for control header which is placed left to the DropDown but
 
 ![ColorPickerPalette popup size changed](Dealing-with-ColorPickerPalette_images/Icons.png)
 
-Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/ColorPickerPalatte) to download the sample that showcases features and  different type color items with its panel visibility customization.
+Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) to download the sample that showcases features and  different type color items with its panel visibility customization.

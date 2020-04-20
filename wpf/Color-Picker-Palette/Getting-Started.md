@@ -320,4 +320,4 @@ private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPrope
 {% endhighlight %}
 {% endtabs %} 
 
-Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/ColorPickerPalatte) to download the sample that showcases different type of color items with its panel visibility customization.
+Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) to download the sample that showcases different type of color items with its panel visibility customization.
