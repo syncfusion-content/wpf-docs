@@ -7,7 +7,9 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Keyboard Navigation between property items
+# Keyboard Navigation
+
+## Keyboard Navigation between property items
 
 The following table explains how the navigation performed between properties,
 
@@ -62,3 +64,54 @@ The following table explains how the navigation performed between properties,
 <td>If the property’s value field is focused, then the focus has been moved to property’s name field.</td>
 </tr>
 <table>
+
+
+## Handling focus of the editors
+
+By default property grid will handle the keyboard navigation, so pressing keydown(Up and Down) will move the focus to next/previous editor from current editor. For all built-in editors, moving focus to next editor will be handled by PropertyGrid. To achieve this focus handling behavior in custom editors, that editors need to be overrides the `ShouldPropertyGridTryToHandleKeyDown` method which the editors has inherited from `BaseTypeEditor` instead of `ITypeEditor`.
+
+If the method `ShouldPropertyGridTryToHandleKeyDown` returns true, the proeprty grid control should be allowed to handle the key down events based on the key, and the editor will handles the key down event for `false` value.
+
+{% tabs %}
+{% highlight C# %}
+
+public class PasswordEditor : IBaseTypeEditor
+    {
+        public override void Attach(PropertyViewItem property, PropertyItem info)
+        {
+            if(info.CanWrite)
+            {
+                passwordBox.IsEnabled = true;
+            }
+            else
+            {
+                passwordBox.IsEnabled = false;
+            }
+            passwordBox.Password = info.Value.ToString();
+        }
+
+        PasswordBox passwordBox;
+        public override object Create(PropertyInfo propertyInfo)
+        {
+            passwordBox = new PasswordBox(); 
+            return passwordBox;
+        }
+
+        public override void Detach(PropertyViewItem property)
+        {
+            passwordBox = null;
+        }
+
+        /// <summary>
+        /// Here, the property grid should not handle the focus of the editor which means, while doing key navigation the next focuable editor will not be focused. And the PasswordEditor will have the focus and handles the key down event.
+        /// </summary>
+        public override bool ShouldPropertyGridTryToHandleKeyDown(Key key)
+        {
+            return false;
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %} 
+
+
