@@ -7,7 +7,7 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# Keyboard Navigation
+# PropertyItems navigation and Focusing editor through keyboard
 
 ## Keyboard Navigation between property items
 
@@ -70,7 +70,7 @@ The following table explains how the navigation performed between properties,
 
 By default property grid will handle the keyboard navigation, so pressing keydown(Up and Down) will move the focus to next/previous editor from current editor. For all built-in editors, moving focus to next editor will be handled by PropertyGrid. To achieve this focus handling behavior in custom editors, that editors need to be overrides the `ShouldPropertyGridTryToHandleKeyDown` method which the editors has inherited from `BaseTypeEditor` instead of `ITypeEditor`.
 
-If the method `ShouldPropertyGridTryToHandleKeyDown` returns true, the proeprty grid control should be allowed to handle the key down events based on the key, and the editor will handles the key down event for `false` value.
+If the method `ShouldPropertyGridTryToHandleKeyDown` returns true, the property grid control should be allowed to handle the key down events based on the key, and the editor will handles the key down event for `false` value.
 
 {% tabs %}
 {% highlight C# %}
