@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Exporting
+# Exporting and customization
 
 SfDiagram provides the support to export its content as image/XPS files using the [Export](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Export.html "Export") method.
 SfDiagram can be exported in the following File formats.
@@ -197,3 +197,5 @@ diagram.Export();
 {% endtabs %}
 
 ![Background](Exporting_images/ExportingBackground.png)
+
+Find the [Exporting sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Exporting) to depict the Exporting.

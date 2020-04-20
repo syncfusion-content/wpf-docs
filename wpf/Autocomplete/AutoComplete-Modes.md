@@ -7,20 +7,20 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# AutoComplete mode
+# AutoComplete modes in WPF SfAutoComplete.
 
 Suggestions can be shown in number of ways. TextBoxExt supports the following AutoComplete modes:
 
-* Suggest: Shows the suggestion in the drop down list.
-* Append: Appends the first suggestion to the text.
-* SuggestAppend: Shows the suggestion in the drop-down list and appends the first suggestion to the text.
-* None: In None mode, the Search algorithm starts even when the item is not available in the DataSource.
+* **Suggest:** Shows the suggestion in the drop-down list.
+* **Append:** Appends the first suggestion to the text.
+* **SuggestAppend**: Shows the suggestion in the drop-down list and appends the first suggestion to the text.
+* **None:** In None mode, the search algorithm starts even when the item is not available in the data source.
 
-The default value of AutoCompleteMode is None.
+The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteModeProperty.html) is None.
 
-## Suggesting Choices in List
+## Suggesting choices in list
 
-Filtered suggestions are shown in a drop-down list. Users can choose an item from the list.
+Filtered suggestions are shown in a drop-down list by using the`AutoCompleteMode` is `Suggest`. Users can choose an item from the list.
 
 {% tabs %}
 {% highlight xaml %}
@@ -123,7 +123,7 @@ Filtered suggestions displayed in drop-down list
 
 ## Appending suggestion to text
 
-The first item in filtered suggestions is appended to the text of SfAutoComplete. Drop-down is still closed in this mode.
+The first item in filtered suggestions is appended to the text of SfAutoComplete by setting the `AutoCompleteMode` as `Append`. Drop-down is still closed in this mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -221,11 +221,11 @@ namespace AutoCompleteSample
 
 ![Append](Auto-Complete_images/Auto-Complete_img3.png)
 
-N> The text will be attached to the first matched item by default, but users can still search using keyboard up and down to other items.
+N> The text will be attached to the first matched item by default, but users can still search using the keyboard up and down to other items.
 
 ## Suggesting choices and appending suggestions to text
 
-The text will be appended to the first matched item in the suggestions collection, in addition to opening the drop-down list.
+The text will be appended to the first matched item in the suggestions collection by setting the `AutoCompleteMode` as `SuggestAppend`, in addition to opening the drop-down list.
 
 {% tabs %}
 {% highlight xaml %}
@@ -326,6 +326,8 @@ namespace AutoCompleteSample
 SuggestAppend mode
 {:.caption}
 
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SuggestionMode913577965) link.
 ### None
 
 This option neither appends text nor opens the drop-down list of suggestions. 

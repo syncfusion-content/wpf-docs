@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion | Explore the Group and UnGroup commands.
-description: Grouping commands are used to group or ungroup the selected diagramming objects (node or connector) in the diagram page.
+description: The Grouping commands are used to group or ungroup the selected diagramming objects (node or connector) in the diagram page.
 platform: wpf
 control: SfDiagram
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Grouping commands in WPF Diagram(SfDiagram)
 
-Grouping commands are used to group/ungroup the selected diagramming objects such as node and connector in the diagram.
+The Grouping commands are used to group or ungroup the selected diagramming objects such as node and connector in the diagram.
 
 ## Group command
 
-[Group](help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Group.html) command is used to group the selected diagramming objects in the diagram page. Group command can be executed by the keyboard shortcut CTRL + G.
+The [Group](help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Group.html) command is used to group the selected diagramming objects in the diagram page. The Group command can be executed by the keyboard shortcut CTRL + G.
 
 {% tabs %}
 {% highlight C# %}
@@ -28,7 +28,7 @@ graphinfo.Commands.Group.Execute(null);
 
 ## UnGroup command
 
-[UnGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~UnGroup.html) command is used to ungroup the selected group diagramming objects in the diagram page. UnGroup command can be executed by the keyboard shortcut CTRL + G.
+The [UnGroup](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~UnGroup.html) command is used to ungroup the selected group diagramming objects in the diagram page. UnGroup command can be executed by the keyboard shortcut CTRL + G.
 
 {% tabs %}
 {% highlight C# %}
@@ -43,4 +43,4 @@ graphinfo.Commands.UnGroup.Execute(null);
 
 ![Group/UnGroup gif](Commands_Images/Commands_img12.gif)
 
-Please find the [Group/UnGroup commands sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Grouping%20Commands) to depict these commands.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Grouping%20Commands)

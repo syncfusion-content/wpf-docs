@@ -7,13 +7,13 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Getting Started
+# Getting started with SfAutoComplete.
 
 ## Assembly deployment
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to this [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftextboxext) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-Refer to the [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages) documentation to find more details about installing the NuGet package in a WPF application.
+Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages) documentation to find more details about installing the NuGet package in a WPF application.
 
 ## Creating a simple application with SfTextBoxExt
 
@@ -23,7 +23,7 @@ You can create a WPF application with SfTextBoxExt control using the following s
 
 Create a new WPF project in Visual Studio to display the SfTextBoxExt control with their functionalities.
 
-## Add control through designer
+## Add a control using the designer
 
 The SfTextBoxExt control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
@@ -69,7 +69,7 @@ To add the control manually in XAML, follow the given steps:
 {% endhighlight %}
 {% endtabs %}
 
-## Add control manually in C#
+## Add a control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
@@ -116,7 +116,7 @@ namespace SfDatePickerSample
 
 ## Populating AutoComplete with Data
 
-To populate the AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSourceProperty.html) property to `IEnumerable` implementation.
+To populate the AutoComplete with data, set the [AutoCompleteSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteSource.html) property to `IEnumerable` implementation.
 
 For further details, refer to [AutoComplete with Data](https://help.syncfusion.com/wpf/autocomplete/auto-complete).
 
@@ -201,8 +201,10 @@ namespace AutoCompleteSample
 
 ![GettingStarted](GettingStarted_images/AutoCompleteSource.png)
 
+Find sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_WPF958872664) link.
+
 ## Selected Items
 
-Index of the selected item can be retrieved by using the [SuggestionIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndexProperty.html) property. The selected item of the AutoComplete can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItemProperty.html) property.
+Index of the selected items can be retrieved by using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property. The selected items of the AutoComplete can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property.
 
 For further details, refer to [Retrieving selected values](https://help.syncfusion.com/wpf/autocomplete/retrieving-selected-values).

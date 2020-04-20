@@ -11,7 +11,7 @@ documentation: ug
 
 The [Undo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Undo.html) command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The [Redo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IDiagramCommands~Redo.html) command restores the last editing action if no other actions have occurred since the last undo.
 
-Undo and Redo actions are disabled by default, to enable this you can use `Constraints` property of the SfDiagram.  Please refer to the [GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html)
+Undo and Redo actions are disabled by default, to enable this you can use the `Constraints` property of the SfDiagram.  Please refer to the [GraphConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.GraphConstraints.html)
 
 {% tabs %}
 {% highlight C# %}
@@ -38,4 +38,4 @@ graphinfo.Commands.Redo.Execute(null);
 
 ![Undo Redo gif](Commands_Images/Commands_img16.gif)
 
-Please refer the [Undo Redo Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Undo%20Redo) to depict these commands.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Undo%20Redo)

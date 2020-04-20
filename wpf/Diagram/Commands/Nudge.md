@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Syncfusion | Explore the Nudge commands.
-description: Nudge commands are used to move the selected elements such as nodes and connectors in diagram page towards up, down, left or right by 1 pixel.
+description: Nudge commands are used to move the selected elements such as nodes and connectors in diagram page towards up, down, left, or right by 1 pixel.
 platform: wpf
 control: SfDiagram
 documentation: ug
 ---
 
-# Nudge in WPF Diagram(SfDiagram)
+# Nudge in the WPF Diagram(SfDiagram)
 
-Nudge commands are used to move the selected elements towards up, down, left or right by 1 pixel. [IMoveParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IMoveParameter_members.html) is provided to customize the movement of the selected objects. The Nudge Commands as follows.
+Nudge commands are used to move the selected elements towards up, down, left, or right by 1 pixel. The [IMoveParameter](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IMoveParameter_members.html) is provided to customize the movement of the selected objects. The Nudge Commands as follows.
 
 | Commands | Description |
 |---|---|
@@ -31,4 +31,4 @@ Nudge commands are used to move the selected elements towards up, down, left or 
 
 ![Nudge gif](Commands_Images/Commands_img17.gif)
 
-Please find the [Nudge Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Nudge%20Commands) to depict these commands.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Nudge%20Commands) 

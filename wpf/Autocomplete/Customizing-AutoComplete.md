@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing AutoComplete | SfTextBoxExt | wpf | Syncfusion
-description: This section provides the details about how to customizing features in WPF SfTextBoxExt control using following properties.
+description: This section provides the details how to customizing features in WPF SfTextBoxExt control using following properties.
 platform: wpf
 control: SfTextBoxExt
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Customizing AutoComplete
 
-AutoComplete provides user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
+AutoComplete provides the user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
 
 ## Customizing the text box
 
-The `Text`, `FontSize`, `FontWeight`, and `FontFamily` properties are used to customize the text box.
+The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontWeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), and [FontFamily](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#) properties are used to customize the text box.
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ namespace AutoCompleteSample
 
 ### Changing the background color of suggestion box
 
-The `DropDownBackground` property is used to modify the background color of suggestion box. The following code example demonstrates how to change the background color of suggestion box.
+The [DropDownBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~DropDownBackground.html) property is used to modify the background color of suggestion box. The following code example demonstrates how to change the background color of suggestion box.
 
 {% tabs %}
 
@@ -165,7 +165,7 @@ namespace AutoCompleteSample
 
 ## DropDownIcon
 
-This feature allows the users to set the drop down icon for the Text Box control using `ShowDropDownButton`.
+This feature allows the users to set the drop-down icon for the text box control using the [ShowDropDownButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowDropDownButton.html).
 
 {% tabs %}
 
@@ -239,7 +239,9 @@ namespace Demo_Sample
 
 ## EnableAutoSize
 
-This feature allows the control to grow in size when the additional tokens are added behind the view.
+AutoSizing can be enabled in AutoComplete control so that the control will extend its layout based on the token size.
+
+[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the AutoSizing in AutoComplete control. To enable the API, you need to set the MultiSelectMode as Token and TokensWrapMode as Wrap. The default value of EnableAutoSize is false.
 
 {% tabs %}
 

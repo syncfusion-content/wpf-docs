@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Ports
+# Ports creation and customization 
 
 Port is a special connection point on a Node or Connector that you can glue the connectors. When you glue a connector to a node or port, they stay connected, even if one of the node is moved.
 
@@ -331,6 +331,8 @@ NodeViewModel node = new NodeViewModel()
 
 ![Dock port](Port_images/Port_img10.png)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Simple-PortCreation)
+
 ### Geometry Style
 The appearance of `DockPort` such as stroke and stroke thickness can be customized using the `ConnectorGeometryStyle` property.
 
@@ -385,23 +387,31 @@ NodePortViewModel nodePort = new NodePortViewModel()
 
 ## HitPadding
 
-Connection can be made from/to nodes, connectors, port or on empty area in a diagram. Making connection with ports are usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area while connecting. Default value is 0d.
- 
+Connection can be made from or to nodes, connectors, port or on an empty area in a diagram. Making a connection with ports is usually difficult as thickness is usually small. To make it easy to connect, it should be possible to connect when the mouse comes near its vicinity area. The `HitPadding` property allows us to customize the vicinity area when connecting. The connector can be created by clicking and dragging to any point of hit padding of ports and can be dropped at any point of hit padding region of ports. Default value is 0d.
+
 {% tabs %}
 {% highlight c# %}
-DockPortViewModel np1 = new DockPortViewModel()
-  {
+DockPortViewModel dockPort = new DockPortViewModel()
+{
     Constraints=PortConstraints.Default & ~PortConstraints.InheritHitPadding,
     //Declaring the value for HitPadding
-    HitPadding = 50,
+    HitPadding = 40,
     SourcePoint = new Point(1, 0),
-    TargetPoint = new Point(1, 1)
+    TargetPoint = new Point(1, 1),
 };
 
+NodePortViewModel nodePort = new NodePortViewModel()
+{
+    Constraints = PortConstraints.Default & ~PortConstraints.InheritHitPadding,
+    //Declaring the value for HitPadding
+    HitPadding = 40,
+    NodeOffsetX = 0,
+    NodeOffsetY = 0.5,
+};
 {% endhighlight %}
 {% endtabs %}
  
-![Port hit padding](Port_images/Port_img12.gif) 
+![Port hit padding](Port_images/Hitpadding.gif) 
 
 ### PortVisibility
 
@@ -502,6 +512,8 @@ NodePortViewModel port = new NodePortViewModel()
 
 ![Port appearance](Port_images/Port_img8.PNG)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/Port-Customization)
+
 ## Events
 
 The `PortChangedEvent` will get invoked when you drag the port.
@@ -520,8 +532,10 @@ The `Constraints` property allows you to enable or disable certain behaviors of 
 
 ## See Also
 
-* [How to control the visibility of Ports](https://www.syncfusion.com/kb/6687/how-to-control-the-visibility-of-ports)
+* [How to control the visibility of Ports?](https://www.syncfusion.com/kb/6687/how-to-control-the-visibility-of-ports)
 
-* [How to connect only with port not with node](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
+* [How to connect only with port not with node?](https://www.syncfusion.com/kb/9455/how-to-connect-only-with-port-not-with-node)
 
-* [How to validate the connection and port visibility (inport and outport) in the diagram](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
+* [How to validate the connection and port visibility (inport and outport) in the diagram?](https://www.syncfusion.com/kb/9553/how-to-validate-the-connection-and-port-visibility-inport-and-outport-in-the-diagram)
+
+* [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
