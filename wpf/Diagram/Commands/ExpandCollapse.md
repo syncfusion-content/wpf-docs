@@ -65,4 +65,4 @@ The [IsUpdateLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF
 ![ExpandCollapse](Commands_Images/Commands_img21.gif)
 
 
-Please find the [ExpandCollapse sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Expand%20and%20Collapse%20command) to depict this command.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Expand%20and%20Collapse%20command)
