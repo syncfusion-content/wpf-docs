@@ -189,6 +189,6 @@ This can be done as in the below code snippet.
     </Grid>
 {% endhighlight %}
 
-{% endtabs %} 
+{% endtabs %}
 
 ![Custom Item](Images/ToolbarCustomization.png) 
