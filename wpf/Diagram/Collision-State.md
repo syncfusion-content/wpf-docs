@@ -11,7 +11,7 @@ documentation: ug
 
 SfDiagram provide supports to arrange the nodes and connectors neatly by adjusting node's position. For example, on a diagram with full of nodes and connectors, you want to place a node without intersecting any other elements.
 
-Using [CollisionState](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CollisionState_members.html) and `GetCollisionFreeLocation` method, you can able to find a possible position without intersecting others for any given node.
+Using [CollisionState](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CollisionState_members.html) and `GetCollisionFreeLocation` method, you can able to find a possible position without intersecting others for any given node.
 
 {% tabs %}
 {% highlight C# %}
@@ -124,4 +124,4 @@ In addition to this,`IgnoreList` property of CollisionState allows you to restri
 
 ![list to ignore for detecting overlapping](Interaction_images/AutomaticAlignment_img3.gif)
 
-A sample can be downloaded from the following location:[Automatic-Alignment]http://www.syncfusion.com/downloads/support/directtrac/177341/ze/Automatic-Alignment942886659.zip
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Collision%20State)
