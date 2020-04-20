@@ -99,4 +99,4 @@ graphinfo.Commands.AlignCenter.Execute(null);
 
 ![Gif for Align commands](Commands_Images/Commands_img2.gif)
 
-Please find the [Alignment Commands sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Alignment%20Commands) to depict these commands. 
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Alignment%20Commands)
