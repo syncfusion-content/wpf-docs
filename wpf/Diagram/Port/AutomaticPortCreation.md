@@ -34,6 +34,8 @@ diagram.Constraints |= GraphConstraints.AutomaticPortCreation;
 
 ![AutomaticPortCreation](Port_images/AutomaticPortCreation.gif)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/AutomaticPortCreation)
+
 ## Port Dragging
 
  Diagram provides the support to drag the port interactively within the limit.

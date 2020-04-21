@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu in WPF Diagram (SfDiagram)
 
 In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. Diagram provided some in-built ContextMenu items and allows to define custom menu items.
 
@@ -84,6 +84,8 @@ DiagramMenuItem mi = new DiagramMenuItem()
 {% endtabs %}
 
 ![Node Custom Menu](Context-Menu_images/Context-Menu_img3.png)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/ContextMenu) 
 
 ## Events
 
