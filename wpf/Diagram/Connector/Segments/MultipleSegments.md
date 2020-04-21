@@ -64,4 +64,11 @@ ConnectorViewModel multipleSegments = new ConnectorViewModel()
 
 ![Multiple Segments](Connector_images/MultipleSegments.PNG)
 
-Find the [Segments sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Segments) to depict the connector appearance and validation.
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Segments)
+
+{% seealso %}
+
+[How to get or set the positions of the segments by programmatically?](https://www.syncfusion.com/kb/11344/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-wpf-diagramsfdiagram)
+
+{% endseealso %}
+
