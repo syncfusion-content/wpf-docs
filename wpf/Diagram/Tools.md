@@ -177,4 +177,69 @@ diagram.Tool = Tool.SingleSelect | Tool.ZoomPan;
 {% endhighlight %}
 {% endtabs %}
 
-Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools)
+
+## How to override the default cursors while interaction
+
+While mouse hovers on the diagramming objects, different cursors will be appearing on each object for different actions. For example, when we mouse hover on the rotator thumb, then rotator cursor will be shown.
+
+![Rotator Cursor](Tools_images/RotatorCursor.png)
+
+These cursors can be customized by overriding the virtual method [SetCursor()](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~SetCursor.html) of the SfDiagram class. The `SetCursor()` method takes the [SetCursorArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html) as an argument that is used to know the objects under the mouse cursor when modifying the cursors of them.
+
+* [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs~Action.html) – To know the action tool of the element.
+
+* [ControlPointType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs~ControlPointType.html) – To know the control point of the object.
+
+* [Cursor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs~Cursor.html) – To customize the cursor of the object.
+
+* [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs~Source.html) –  To know the object on which item the mouse is interacting.
+
+* [SourceType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs~SourceType.html) – To know the parent element of the object.
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--Create new diagram for custom diagram class-->
+<local:CustomClass PortVisibility="Visible" x:Name="diagram"/>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Create custom class of SfDiagram to override the cursor.
+public class CustomClass:SfDiagram
+{
+    //Override method to customize the default cursors of diagram objects
+    protected override void SetCursor(SetCursorArgs args)
+    {
+        if (args.Source is INode)
+        {
+            args.Cursor = Cursors.No;
+        }
+        else if (args.Source is IConnector)
+        {
+            args.Cursor = Cursors.Hand;
+        }
+        else if (args.Source is IPort)
+        {
+            args.Cursor = Cursors.SizeAll;
+        }
+        else
+        {
+           base.SetCursor(args);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Set Cursor](Tools_images/SetCursor.gif)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
+
+{% seealso %}
+
+[How to override the default cursors while interaction?](https://www.syncfusion.com/kb/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
+
+{% endseealso %}
