@@ -11,62 +11,14 @@ documentation: ug
 
 You can display the Dropdown Popup by checking the DropDown Button. The visibility of the DropDown popup can be enabled by setting the [IsPopupEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsPopupEnabled.html) property to true. The Dropdown pop-up in DateTimeEdit controls contains the following parts:
 
-* Calendar Button
-* Clock Button
-* None Button
 * Calendar
 * Clock
 * Today Button
+* None Button
 
 ## Enable / Disable the pop-up buttons
 
-* Calendar Button visibility can be enabled by setting the [IsCalendarEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsCalendarEnabled.html) property to true. 
-* Clock Button visibility can be enabled by setting the [IsWatchEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsWatchEnabled.html) property to true. 
 * None Button visibility can be enabled by setting the [IsEmptyDateEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsEmptyDateEnabled.html) property to true.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230"
-                         EnableClassicStyle="True" ShowMaskOnNullValue="False" 
-                         IsCalendarEnabled="False" IsWatchEnabled="True" 
-                         IsEmptyDateEnabled="True"/>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Disabled the calendar button in WPF DateTimeEdit](Dropdown-Popup_images/wpf-datetimeedit-disabled-calendar-button.png)
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" 
-                         EnableClassicStyle="True"  IsCalendarEnabled="True" 
-                         ShowMaskOnNullValue="False" IsWatchEnabled="False" 
-                         IsEmptyDateEnabled="True"/>
-
-{% endhighlight  %}
-
-{% endtabs %}
-
-![Disabled the clock button in WPF DateTimeEdit](Dropdown-Popup_images/wpf-datetimeedit-disabled-clock-button.png)
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" 
-                         EnableClassicStyle="True" IsCalendarEnabled="True" 
-                         IsWatchEnabled="True" IsEmptyDateEnabled="False"/>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Disabled the none button in WPF DateTimeEdit](Dropdown-Popup_images/wpf-datetimeedit-disabled-none-button.png)
 
 {% tabs %}
 
