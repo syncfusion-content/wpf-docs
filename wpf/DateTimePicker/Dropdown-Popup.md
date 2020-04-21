@@ -7,7 +7,7 @@ control: DateTimeEdit
 documentation: ug
 ---
 
-# Dropdown Pop-up
+# Dropdown Pop-up in WPF DateTimeEdit
 
 You can display the Dropdown Popup by checking the DropDown Button. The visibility of the DropDown popup can be enabled by setting the [IsPopupEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsPopupEnabled.html) property to true. The Dropdown pop-up in DateTimeEdit controls contains the following parts:
 

@@ -7,7 +7,7 @@ control: DateTimeEdit
 documentation: ug
 ---
 
-# Appearance     
+# Appearance in WPF DateTimeEdit    
 
 The DateTimeEdit provides built-in themes which can be applied using SkinStorage and SfSkinManager. Also provides support to create custom theme using theme studio. You can customize the appearance of calendar, clock, up-down and drop-down buttons in the DateTimeEdit.
 
