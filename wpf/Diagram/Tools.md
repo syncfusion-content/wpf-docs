@@ -234,6 +234,10 @@ public class CustomClass:SfDiagram
 {% endhighlight %}
 {% endtabs %}
 
+![Set Cursor](Tools_images/SetCursor.gif)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
+
 {% seealso %}
 
 [How to override the default cursors while interaction?](https://www.syncfusion.com/kb/11407/how-to-override-the-default-cursors-while-interaction-in-wpf-diagramsfdiagram)
