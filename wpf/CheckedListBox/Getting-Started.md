@@ -160,11 +160,11 @@ public class ViewModel {
 	}
 
 	private void populateItem()	{
-		CheckListItems.Add(new CountryListModel() { Name = "Mexico", Description = "Mexico" });
-		CheckListItems.Add(new CountryListModel() { Name = "Canada", Description = "Canada " });
-		CheckListItems.Add(new CountryListModel() { Name = "Bermuda", Description = "Bermuda" });
-		CheckListItems.Add(new CountryListModel() { Name = "Beize", Description = "Beize" });
-		CheckListItems.Add(new CountryListModel() { Name = "Panama", Description = "Panama" });
+		CheckListItems.Add(new CountryListModel() { Name="Mexico", Description="Mexico"});
+		CheckListItems.Add(new CountryListModel() { Name="Canada", Description="Canada"});
+		CheckListItems.Add(new CountryListModel() { Name="Bermuda", Description="Bermuda"});
+		CheckListItems.Add(new CountryListModel() { Name="Beize", Description="Beize"});
+		CheckListItems.Add(new CountryListModel() { Name="Panama", Description="Panama"});
 	}
 }
 

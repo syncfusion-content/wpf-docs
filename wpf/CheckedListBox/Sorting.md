@@ -17,7 +17,7 @@ documentation: ug
 //Model.cs
 class Vegetable {
     public string Category { get; set; }
-    public string Price { get; set; }
+    public int Price { get; set; }
     public string Name { get; set; }
 }
 
@@ -37,12 +37,12 @@ class ViewModel {
     }
     public ViewModel() {
         Vegetables = new ObservableCollection<Vegetable>();
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Yarrow", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Cabbage", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Horse gram", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Green bean", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Nopal", Category = "Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price = 10, Name = "Yarrow", Category = "Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price = 20, Name = "Cabbage", Category = "Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price = 30, Name = "Horse gram", Category = "Beans" });
+        Vegetables.Add(new Vegetable { Price = 20, Name = "Green bean", Category = "Beans" });
+        Vegetables.Add(new Vegetable { Price = 10, Name = "Onion", Category = "Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price = 30, Name = "Nopal", Category = "Bulb and Stem" });
 
         //Initialize the CheckListBox LoadedCommand
         LoadedCommand = new DelegateCommand<object>(OnLoaded);
