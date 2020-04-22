@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started in WPF Diagram (SfDiagram)
 
 ## Assembly deployment
 
@@ -481,7 +481,7 @@ Now, the output will be as follows.
 
 ![CompleteDiagram](Getting-Started_images\completeDiagram.png)
     
-Find the flow diagram sample from this link: [FlowChart](http://www.syncfusion.com/downloads/support/directtrac/205629/ze/FlowDiagram_XAML-1022159515).
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/Simple-FlowChart-Creation)
 
 ### Flowchart creation using stencil
 
@@ -720,7 +720,7 @@ We have represented the steps to interact with stencil such as drag and drop ele
 
 ![StencilDiagram](Getting-Started_images\StencilDiagram.gif)
 
-Download the complete stencil sample from [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/StencilCreation339429762).
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/StencilCreation)
 
 For more information about stencil, please [refer](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements). 
 
@@ -902,7 +902,7 @@ The output will be as follows.
 
 ![OrgLayout](Getting-Started_images\orglayout.PNG)
 
-Download the complete sample from [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Orgchartcreation1902878733)
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/GettingStarted/Simple-OrganizationLayout-Creation)
 
 For more information about Layout, [refer](https://help.syncfusion.com/wpf/sfdiagram/automatic-layouts)
 

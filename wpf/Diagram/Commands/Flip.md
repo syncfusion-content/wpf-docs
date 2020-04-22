@@ -49,4 +49,4 @@ The [Flip](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusio
 
 ![Represents the flip](Commands_images/Commands_img7.gif)
 
-Please find the [Flip command sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Flip%20Command) to depict this command.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Flip%20Command)

@@ -13,14 +13,14 @@ documentation: ug
 
 ### Visibility
 
-Toolbar can be made visible or hidden using the `IsToolbarVisibility` property in the [`ToolbarSettings`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ToolbarSettings.html).
+Toolbar can be made visible or hidden using the `IsToolbarVisiblity` property in the [`ToolbarSettings`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfImageEditor.WPF~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~ToolbarSettings.html).
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
   <editor:SfImageEditor.ToolbarSettings>
-        <editor:ToolbarSettings IsToolbarVisibility="True" />
+        <editor:ToolbarSettings IsToolbarVisiblity="True" />
   </editor:SfImageEditor.ToolbarSettings>
 
 {% endhighlight %}
