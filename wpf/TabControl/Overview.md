@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of WPF TabControl | Syncfusion
-description: WPF TabControl provides a tab based navigation functionality. It provides close button for tabs, tab ordering, and editable tab headers.
+title: Overview of WPF TabControlExt | Syncfusion
+description: WPF TabControlExt provides a tab based navigation functionality. It provides close button for tabs, tab ordering, and editable tab headers.
 platform: wpf
-control: TabControl
+control: TabControlExt
 documentation: ug
 ---
 
 # Overview
 
-The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) is similar to the dividers in a notebook or the labels in a file cabinet. By using TabControl, an application can define multiple pages for the same area of a window. TabControlExt contains the TabItemExt, which is used to define Tab Items for TabControlAdv. By clicking a tab item header, the data corresponding to that particular tab item will be displayed.
+The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html) is similar to the dividers in a notebook or the labels in a file cabinet. By using `TabControl`, an application can define multiple pages for the same area of a window. `TabControl` contains the [TabItemExt](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt.html), which is used to define Tab Items for `TabControl`. By clicking a tab item header, the data corresponding to that particular tab item will be displayed.
 
 ![Overview of TabControlExt control](Overview_images/overview.png)
 
@@ -27,11 +27,11 @@ The [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfus
 
 **Selection** - Provides support to select the tabs quickly through keyboard or mouse interaction.
 
-**Styles** - Provides a rich set of built-in themes and customizes the style of each part of TabControl.
+**Styles** - Provides a rich set of built-in themes and customizes the style of each part of `TabControl`.
 
-**Drag and drop** - Provides support to reorder the tabs by dragging and dropping headers and change the color of drag marker while dragging the tab page in TabControl.
+**Drag and drop** - Provides support to reorder the tabs by dragging and dropping headers and change the color of drag marker while dragging the tab page in `TabControl`.
 
-**Scrolling** - Provides support to scroll the tab items to next, previous, first, and last in TabControl.
+**Scrolling** - Provides support to scroll the tab items to next, previous, first, and last in `TabControl`.
 
 **Images** - Provides support to add images to the tab header and also aligns the header image to any position.
 
