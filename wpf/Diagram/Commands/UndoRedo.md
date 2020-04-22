@@ -38,4 +38,4 @@ graphinfo.Commands.Redo.Execute(null);
 
 ![Undo Redo gif](Commands_Images/Commands_img16.gif)
 
-Please refer the [Undo Redo Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Undo%20Redo) to depict these commands.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Undo%20Redo)

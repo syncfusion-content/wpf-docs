@@ -31,4 +31,4 @@ Nudge commands are used to move the selected elements towards up, down, left, or
 
 ![Nudge gif](Commands_Images/Commands_img17.gif)
 
-Please find the [Nudge Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Nudge%20Commands) to depict these commands.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Nudge%20Commands) 
