@@ -378,7 +378,7 @@ public class HubTileTransitionCompleted : TargetedTriggerAction<SfHubTile>
 
 ![wpf hubtile transition completed](Getting-Started_images/wpf-hubtile-transitioncompleted.png)
 
-View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Hub%20Tile/Getting%20Started) in GitHub.
+N> The example will cover topics such as setting header, image, title, secondary content and Hub Tile control transitions. View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Hub%20Tile/Getting%20Started) in GitHub.
 
 ## Grouping
 

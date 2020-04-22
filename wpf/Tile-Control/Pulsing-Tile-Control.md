@@ -341,7 +341,7 @@ grid.Children.Add(pulsingTile);
 {% endhighlight %}
 {% endtabs %}
 
-View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Pulsing%20Tile/Getting%20Started) in GitHub.
+N> The example will cover topics such as setting header, image, title and Pulsing Tile control animations and translations. View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Pulsing%20Tile/Getting%20Started) in GitHub.
 
 ## Grouping
 
