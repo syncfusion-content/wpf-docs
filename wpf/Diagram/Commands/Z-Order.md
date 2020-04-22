@@ -75,4 +75,4 @@ graphinfo.Commands.BringForward.Execute(null);
 
 ![Represents the bring forward](Commands_images/Commands_img9.gif)
 
-Please find the [Z-Order sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Z-Order%20Commands) to depict these commands.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Z-Order%20Commands)

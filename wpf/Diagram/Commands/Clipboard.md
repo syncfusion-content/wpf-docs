@@ -73,4 +73,4 @@ graphinfo.Commands.Duplicate.Execute(null);
 
 ![Clipboard gif](Commands_Images/Commands_img11.gif)
 
-Please find the [Clipboard commands sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Clipboard%20commands) to depict these commands.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Clipboard%20commands)
