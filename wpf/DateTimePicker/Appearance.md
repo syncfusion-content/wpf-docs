@@ -7,7 +7,7 @@ control: DateTimeEdit
 documentation: ug
 ---
 
-# Appearance     
+# Appearance in WPF DateTimeEdit    
 
 The DateTimeEdit provides built-in themes which can be applied using SkinStorage and SfSkinManager. Also provides support to create custom theme using theme studio. You can customize the appearance of calendar, clock, up-down and drop-down buttons in the DateTimeEdit.
 
@@ -49,16 +49,16 @@ You can host a custom calendar by using [DateTimeCalender](https://help.syncfusi
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit Width="250" Height="25" x:Name="dateTimeEdit">
-    <syncfusion:DateTimeEdit.DateTimeCalender>
-        <syncfusion:SfDateSelector Width="250" ShowCancelButton="False" ShowDoneButton="False" 
+ <syncfusion:DateTimeEdit Width="250" Height="25" x:Name="dateTimeEdit">
+            <syncfusion:DateTimeEdit.DateTimeCalender>
+                <syncfusion:SfDateSelector Width="250" ShowCancelButton="False" ShowDoneButton="False" 
                                    SelectorItemWidth="75" SelectorItemHeight="75" 
-                                   SelectorItemSpacing="4.5" Height="430" Margin="0, 2, 0 ,0" 
+                                   SelectorItemSpacing="4.5" Height="430" 
                                    SelectedDateTime="{Binding ElementName=dateTimeEdit,Path=DateTime,
                                                       Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-        </syncfusion:SfDateSelector>
-    </syncfusion:DateTimeEdit.DateTimeCalender>
-</syncfusion:DateTimeEdit>
+                </syncfusion:SfDateSelector>
+            </syncfusion:DateTimeEdit.DateTimeCalender>
+        </syncfusion:DateTimeEdit>
 
 {% endhighlight %}
 
@@ -91,22 +91,21 @@ private void DateTimeEdit_IsDropDownOpenChanged(DependencyObject d, DependencyPr
 
 ### Custom clock
 
-You can host a custom clock using the [Clock](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~Clock.html) property of DateTimeEdit. You can enable or disable the clock by setting [EnableClassicStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~EnableClassicStyle.html) and [IsWatchEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsWatchEnabled.html) properties to true.
-
+You can host a custom clock using the [Clock](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~Clock.html) property of DateTimeEdit. You can enable the clock by setting [DropDownView](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DropDownView.html)  property as `Clock`.
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit Width="250" Height="25" EnableClassicStyle="True" IsCalendarEnabled="False" x:Name="dateTimeEdit">
-    <syncfusion:DateTimeEdit.Clock>
-        <syncfusion:SfTimeSelector Width="248" ShowCancelButton="False" ShowDoneButton="False" 
+  <syncfusion:DateTimeEdit Width="250" Height="25" DropDownView="Clock" x:Name="dateTimeEdit">
+            <syncfusion:DateTimeEdit.Clock>
+                <syncfusion:SfTimeSelector Width="248" ShowCancelButton="False" ShowDoneButton="False" 
                                    SelectorItemWidth="75" SelectorItemHeight="75" Height="430"
-                                   SelectorItemSpacing="4.5" BorderThickness="1" BorderBrush="Black"                   
+                                   SelectorItemSpacing="4.5"                  
                                    SelectedTime="{Binding ElementName=dateTimeEdit,Path=DateTime,
                                                   Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
-        </syncfusion:SfTimeSelector>
-    </syncfusion:DateTimeEdit.Clock>
-</syncfusion:DateTimeEdit>
+                </syncfusion:SfTimeSelector>
+            </syncfusion:DateTimeEdit.Clock>
+        </syncfusion:DateTimeEdit>
 
 {% endhighlight %}
 

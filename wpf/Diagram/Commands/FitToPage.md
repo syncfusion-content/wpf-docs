@@ -61,4 +61,4 @@ The [FocusArea](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Sync
 
 ![Region](Commands_Images/Commands_img20.gif)
 
-Please find the [Fit to page sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Fit%20to%20page%20command) to depict this command.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Fit%20to%20page%20command)
