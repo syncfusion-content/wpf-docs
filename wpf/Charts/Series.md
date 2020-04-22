@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series| SfChart | Wpf | Syncfusion
-description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
+description: Learn how to create a plotting area properties and customization of chart header, area,multiple areas,serialization, and chart events.
 platform: wpf
 control: SfChart
 documentation: ug
