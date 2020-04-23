@@ -129,7 +129,7 @@ We change the `DataTemplate` of the each `CheckListBox` items by using the `Item
 //Model.cs
 class Vegetable {
     public string Category { get; set; }
-    public string Price { get; set; }
+    public int Price { get; set; }
     public string Name { get; set; }
 }
 
@@ -138,17 +138,17 @@ class ViewModel {
     public ObservableCollection<Vegetable> Vegetables { get; set; }
     public ViewModel() {
         Vegetables = new ObservableCollection<Vegetable>();
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Yarrow", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Pumpkins", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Cabbage", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Spinach", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Wheat Grass", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Horse gram", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Chickpea", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Green bean", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Garlic", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Nopal", Category = "Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Yarrow", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Pumpkins", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Cabbage", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Spinach", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Wheat Grass", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Horse gram", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Chickpea", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Green bean", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Garlic", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Onion", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Nopal", Category="Bulb and Stem" });
     }
 }
 
@@ -191,7 +191,7 @@ We change the `DataTemplate` of the group header items by using the `GroupTempla
 //Model.cs
 class Vegetable {
     public string Category { get; set; }
-    public string Price { get; set; }
+    public int Price { get; set; }
     public string Name { get; set; }
 }
 
@@ -207,17 +207,17 @@ class ViewModel {
     }
     public ViewModel() {
         Vegetables = new ObservableCollection<Vegetable>();
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Yarrow", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Pumpkins", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Cabbage", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Spinach", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Wheat Grass", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Horse gram", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Chickpea", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Green bean", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Garlic", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Nopal", Category = "Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Yarrow", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Pumpkins", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Cabbage", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Spinach", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Wheat Grass", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Horse gram", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Chickpea", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Green bean", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Garlic", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Onion", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Nopal", Category="Bulb and Stem" });
 
         //Initialize the checklistbox LoadedCommand
         LoadedCommand = new DelegateCommand<object>(OnLoaded);
@@ -268,7 +268,7 @@ We change the `DataTemplate` of the `SelectAll` item by using the `SelectAllTemp
 //Model.cs
 class Vegetable {
     public string Category { get; set; }
-    public string Price { get; set; }
+    public int Price { get; set; }
     public string Name { get; set; }
 }
 
@@ -277,17 +277,17 @@ class ViewModel {
     public ObservableCollection<Vegetable> Vegetables { get; set; }
     public ViewModel() {
         Vegetables = new ObservableCollection<Vegetable>();
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Yarrow", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Pumpkins", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Cabbage", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Spinach", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Wheat Grass", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Horse gram", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Chickpea", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Green bean", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Garlic", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Nopal", Category = "Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Yarrow", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Pumpkins", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Cabbage", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Spinach", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Wheat Grass", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Horse gram", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Chickpea", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Green bean", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Garlic", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Onion", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Nopal", Category="Bulb and Stem" });
     }
 }
 
@@ -390,7 +390,7 @@ We can change the various `DataTemplate` for the `CheckListBox` items based on t
 //Model.cs
 public class Vegetable {
     public string Category { get; set; }
-    public string Price { get; set; }
+    public int Price { get; set; }
     public string Name { get; set; }
 }
 
@@ -406,17 +406,17 @@ class ViewModel {
     }
     public ViewModel() {
         Vegetables = new ObservableCollection<Vegetable>();
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Yarrow", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Pumpkins", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Cabbage", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Spinach", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Wheat Grass", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Horse gram", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Chickpea", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Green bean", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Garlic", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Nopal", Category = "Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Yarrow", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Pumpkins", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Cabbage", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Spinach", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Wheat Grass", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Horse gram", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Chickpea", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Green bean", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Garlic", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Onion", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Nopal", Category="Bulb and Stem" });
 
         //Initialize the checklistbox LoadedCommand
         LoadedCommand = new DelegateCommand<object>(OnLoaded);
@@ -489,7 +489,7 @@ We can choose the style for the `CheckListBox` items based on the provided logic
 //Model.cs
 public class Vegetable {
     public string Category { get; set; }
-    public string Price { get; set; }
+    public int Price { get; set; }
     public string Name { get; set; }
 }
 
@@ -505,17 +505,17 @@ class ViewModel {
     }
     public ViewModel() {
         Vegetables = new ObservableCollection<Vegetable>();
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Yarrow", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Pumpkins", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Cabbage", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Spinach", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Wheat Grass", Category = "Leafy and Salad" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Horse gram", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Chickpea", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Green bean", Category = "Beans" });
-        Vegetables.Add(new Vegetable { Price = "$30", Name = "Garlic", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$10", Name = "Onion", Category = "Bulb and Stem" });
-        Vegetables.Add(new Vegetable { Price = "$20", Name = "Nopal", Category = "Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Yarrow", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Pumpkins", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Cabbage", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Spinach", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Wheat Grass", Category="Leafy and Salad" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Horse gram", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Chickpea", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Green bean", Category="Beans" });
+        Vegetables.Add(new Vegetable { Price=30, Name="Garlic", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=10, Name="Onion", Category="Bulb and Stem" });
+        Vegetables.Add(new Vegetable { Price=20, Name="Nopal", Category="Bulb and Stem" });
 
         //Initialize the checklistbox LoadedCommand
         LoadedCommand = new DelegateCommand<object>(OnLoaded);

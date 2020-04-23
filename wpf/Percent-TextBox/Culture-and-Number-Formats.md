@@ -143,7 +143,7 @@ N> When you use both `NumberFormat` and  `Culture`, the `NumberFormat` will have
 
 ## Positive Value Pattern
 
-You can use the [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentPositivePattern.html) property to customize the location of the percent symbol and the positive percent values. In the table below,"$" denotes the symbol of the percent, and "n" denotes the number.
+You can use the [PercentPositivePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentPositivePattern.html) property to customize the location of the percent symbol and the positive percent values. In the table below,"%" denotes the symbol of the percent, and "n" denotes the number.
 
 **PercentPositivePattern table**
 
@@ -195,7 +195,7 @@ percentTextBox.PercentPositivePattern = 3;
 
 ## Negative Value Pattern
 
-You can use the [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentNegativePattern.html) property to customize the location of the percent symbol and the negative percent values. In the table below,"$" denotes the symbol of the percent, and "n" denotes the number.
+You can use the [PercentNegativePattern](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.PercentTextBox~PercentNegativePattern.html) property to customize the location of the percent symbol and the negative percent values. In the table below,"%" denotes the symbol of the percent, and "n" denotes the number.
 
 **PercentNegativePattern table**
 

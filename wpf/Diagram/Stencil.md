@@ -547,6 +547,139 @@ public class CustomStencil : Stencil
 
 ![CustomPreview](Stencil_images/Stencil_img16.jpeg)
 
+## Symbol categories
+
+There are plenty of shapes available in the diagram resource dictionary. It takes more time and allows repeated code snippets to add all symbols to stencil. To avoid this, shapes are split and categorized as a list of symbols in the [StencilCategory](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.StencilCategory_members.html "StencilCategory") class. You can add more than one category using the [Categories](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~Categories.html) property of the stencil class.
+
+`Categories` can be mentioned by using the following properties of `StencilCategory` class,
+
+* Keys – Specifies the static resource key name value of the category collection.
+* Title – Specifies the title that should be displayed as a header of the category collection.
+
+The following are the built-in categories being available in the diagram resource dictionary,
+
+* BasicShapes
+* FlowShapes
+* ArrowShapes
+* DataFlowShapes
+* UMLActivity
+* UMLUseCase
+* UMLRelationship
+* ElectricalShapes
+
+{% tabs %}
+{% highlight xaml %}
+<!--Initialize the stencil-->
+<Stencil:Stencil x:Name="stencil">
+    <!--Initialize the stencil categories-->
+    <Stencil:Stencil.Categories>
+        <Stencil:StencilCategoryCollection>
+            <!--Specify the basic shapes category with title and resource key-->
+            <Stencil:StencilCategory Title="Basic Shapes" Keys="{StaticResource BasicShapes}"/>
+        </Stencil:StencilCategoryCollection>
+    </Stencil:Stencil.Categories>
+</Stencil:Stencil>
+{% endhighlight %}
+{% endtabs %}
+
+![Basic Shapes](Stencil_images/CategoryBasicShapes.png)
+
+### How to add custom shapes categories into the stencil
+
+The custom symbol collections can be added to the stencil by defining the custom symbol's resource collection.
+
+{% tabs %}
+{% highlight xaml %}
+
+<!--custom path data-->
+<sys:String x:Key="CustomPath">
+    F1M1.66,0.25C0.882,0.25,0.25,0.881,0.25,1.66L0.25,24.622C0.25,25.401,0.882,26.032,1.66,26.032L4.48,26.032C5.259,26.032,5.89,25.401,5.89,24.622L5.89,1.66C5.89,0.881,5.259,0.25,4.48,0.25z
+</sys:String>
+
+<!--custom shapes collection-->
+<x:Array Type="sys:String" x:Key="customShapeCollection">
+    <sys:String>Rectangle</sys:String>
+    <sys:String>Cube</sys:String>
+    <sys:String>Triangle</sys:String>
+    <sys:String>Ellipse</sys:String>
+    <sys:String>CustomPath</sys:String>
+</x:Array>
+
+<!--Initialize the stencil-->
+<Stencil:Stencil x:Name="stencil">
+    <!--Initialize the stencil categories-->
+    <Stencil:Stencil.Categories>
+        <Stencil:StencilCategoryCollection>
+            <!--Specify the custom shapes category with title and resource key-->
+            <Stencil:StencilCategory Title="Custom shapes" Keys="{StaticResource customShapeCollection}"/>
+        </Stencil:StencilCategoryCollection>
+    </Stencil:Stencil.Categories>
+</Stencil:Stencil>
+{% endhighlight %}
+{% endtabs %}
+
+![Custom Shapes collection](Stencil_images/CustomShapes.png)
+
+N> Custom symbol collections should be added in the App.xaml file.
+
+### How to customize the default appearance of the symbols in the built-in categories
+
+Built-in symbol categories symbol sizes are equivalent to Visio symbol size. Each symbol available in the category collection can be customized by the [PrepareSymbolViewModel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~PrepareSymbolViewModel.html) virtual method of the stencil class. Symbols can be modified by using the following properties of  `PrepareSymbolViewModel` method,
+
+* `Item`: To modify the symbol and its properties.
+* `SymbolName`: To know the name of the symbol.
+* `CategoryName`: To know the name of the category.
+
+Also, you can decide whether a symbol can be added to stencil symbol collection or not. It can be achieved by using the `Cancel` property of [CanAddSymbol](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.Stencil~CanAddSymbol.html) virtual method of stencil class. 
+
+{% tabs %}
+{% highlight C# %}
+/// <summary>
+/// Custom class for stencil view model.
+/// </summary>
+public class StencilViewModel : Stencil
+{
+    /// <summary>
+    /// Overridden method to change the symbol.
+    /// </summary>
+    /// <param name="Item">Item value of the shape</param>
+    /// <param name="SymbolName">Name of the symbol</param>
+    /// <param name="CategoryName">Name of the category</param>
+    /// <returns>Return the item of the shape</returns>
+    protected override object PrepareSymbolViewModel(object Item, string SymbolName, string CategoryName)
+    {
+        if (SymbolName == "Rectangle")
+        {
+            (Item as INode).UnitWidth = 80;
+            (Item as INode).UnitHeight = 40;
+            return Item;
+        }
+        else
+            return base.PrepareSymbolViewModel(Item, SymbolName, CategoryName);
+    }
+
+    /// <summary>
+    /// Overidden method to decide whether a symbol can be added or not
+    /// </summary>
+    /// <param name="symbolName">Name of the symbol</param>
+    /// <param name="categoryName">Name of the category</param>
+    /// <returns>Return the boolean</returns>
+    protected override bool CanAddSymbol(string symbolName, string categoryName)
+    {
+        if (symbolName == "Triangle")
+        {
+            return false;            
+        }
+
+        return base.CanAddSymbol(symbolName, categoryName);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Stencil/StencilCategory)
+
 ## Events
 
 * The `Expanded Event` and `Collapsed Event` are notified to provide interactions in the SymbolGroup. To explore about arguments refer to the [SymbolGroupExpandCollapseEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs.html)
@@ -596,7 +729,7 @@ private void MainWindow_ItemAdded(object sender, ItemAddedEventArgs args)
 
 The `Constraints` property of stencil allows you to enable or disable certain features. For more information about stencil constraints, refer to the [StencilConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.StencilConstraints.html).
 
- ## See Also
+## See Also
 
 * [How to drag and drop elements from treeview ?](https://www.syncfusion.com/kb/10574/how-to-drag-and-drop-elements-from-treeview-in-wpf-diagramsfdiagram)
 * [How to refresh the stencil when adding new symbol in symbol source ?](https://www.syncfusion.com/kb/9928/how-to-refresh-the-stencil-when-adding-new-symbol-in-symbol-source)
