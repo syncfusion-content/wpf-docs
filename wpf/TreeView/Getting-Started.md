@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started 
-description: Getting Started of TreeViewAdv explains how to implement the TreeViewAdv control to the Application 
+title: Getting Started of TreeViewAdv
+description: Getting Started of TreeViewAdv explains how to implement the TreeViewAdv control to the application and its basic functions
 platform: wpf
 control: TreeViewAdv
 documentation: ug
