@@ -276,4 +276,4 @@ Now while selecting the multiple items it looks like this.
 
 ## See Also
 
-[How to define maximum number of items to be shown in comboboxadv dropdown?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
+[How to define maximum number of items to be shown in combobox dropdown?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
