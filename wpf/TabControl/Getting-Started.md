@@ -115,7 +115,7 @@ You can add the tabitem using the `Items` property of `TabControl`. You can set 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl">
+<syncfusion:TabControlExt Name="tabControlExt">
     <syncfusion:TabItemExt Header="tabItem1">
         <TextBlock Name="textBlock" Text="This is the first tab item." />
     </syncfusion:TabItemExt>
@@ -149,11 +149,11 @@ TabItemExt tabItemExt3 = new TabItemExt()
     Content= new TextBlock() { Text= "This is the third tab item" }  
 };
 
-// Creating an instances of tabitems and adding the tabitems into the TabControl
-TabControlExt tabControl = new TabControlExt();
-tabControl.Items.Add(tabItemExt1);
-tabControl.Items.Add(tabItemExt2);
-tabControl.Items.Add(tabItemExt3);
+// Creating an instances of TabControl and adding the tabitems into the TabControl
+TabControlExt tabControlExt = new TabControlExt();
+tabControlExt.Items.Add(tabItemExt1);
+tabControlExt.Items.Add(tabItemExt2);
+tabControlExt.Items.Add(tabItemExt3);
 
 {% endhighlight %}
 {% endtabs %}
@@ -191,7 +191,7 @@ You can select a particular tabitem in `TabControl` by setting the `TabItemExt.I
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TabControlExt Name="tabControl">
+<syncfusion:TabControlExt Name="tabControlExt">
     <syncfusion:TabItemExt Header="tabItem1" Name="tabItemExt1"/>
     <syncfusion:TabItemExt Header="tabItem2" Name="tabItemExt2" />
     <syncfusion:TabItemExt Header="tabItem3" Name="tabItemExt3"    
@@ -213,7 +213,7 @@ Here, `tabItem3` is selected.
 
 ### Tab selection changed notification
 
-The `TabControl` notifies that the selected tabitem is changed by user through the [SelectedChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemChangedEvent_EV.html) event. You can use the [OldSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs~OldSelectedItem.html) and [NewSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs~NewSelectedItem.html) properties to get the old and new selected tabitem in the `SelectedItemChangedEvent` event.
+The `TabControl` notifies that the selected tabitem is changed by user through the [SelectedItemChangedEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemChangedEvent_EV.html) event. You can use the [OldSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs~OldSelectedItem.html) and [NewSelectedItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.SelectedItemChangedEventArgs~NewSelectedItem.html) properties to get the old and new selected tabitem in the `SelectedItemChangedEvent` event.
 
 {% tabs %}
 {% highlight XAML %}
@@ -255,9 +255,9 @@ The following options are supported to show close the button in `TabControl`.
 
 * **Common** - Only, `TabControl` shows the close button.
 
-* **Individual** - The close button displayed only in the headers of tabitems.
+* **Individual** - The close button displayed only in the headers of tab items.
 
-* **Both** - `TabControl` and tabitems displays the close button.
+* **Both** - `TabControl` and tab items displays the close button.
 
 * **Hide** - The close button is not visible.
 
