@@ -254,7 +254,7 @@ public void Execute(object parameter)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-using-command-in-wpf-treegrid).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-using-command-in-wpf-treegrid).
 
 ## Load on demand using event
 
@@ -407,4 +407,4 @@ public class ViewModel
 You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RepopulateTree.html) method.
 ![Populating SfTreeGrid](Getting-Started_images/Getting-Started_img4.gif)
 
-You can download the sample demo [here](https://github.com/syncfusion/wpf-demos/tree/master/TreeGrid/OnDemandLoadingDemo).
+N> [View Sample in GitHub](https://github.com/syncfusion/wpf-demos/tree/master/TreeGrid/OnDemandLoadingDemo).
