@@ -61,25 +61,4 @@ dateTimeEdit.IsVisibleRepeatButton = true;
 
 You can use the Calendar and Clock for changing the Date and Time of the DateTimeEdit control. Also, by clicking the None Button you can set the null value to the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property of the DateTimeEdit control. 
 
-## Open and Close drop-down through Keyboard
 
-`DateTimeEdit` dropdown popup can be opened and closed by pressing `Enter` key. This behavior can be enabled by setting the [AllowEnter](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~AllowEnter.html) property of DateTimeEdit to true.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DateTimeEdit x:Name="datetimeedit" CanEdit="False" AllowEnter="True"/>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-datetimeedit.CanEdit = false;
-datetimeedit.AllowEnter = true;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> Dropdown popup of DateTimeEdit cannot be opened by pressing Enter Key when [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) Property set to `True`.
