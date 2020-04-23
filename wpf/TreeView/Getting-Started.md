@@ -16,7 +16,7 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-## Add TreeViewAdv 
+## Add TreeViewAdv to Project
 
 The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control can be added to project by the following ways.
 
@@ -95,7 +95,7 @@ To add the [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf
 
 {% highlight C# %}
 
-using Syncfusion.Windows.Shared;
+using Syncfusion.Windows.Tools.Controls;
 
 {% endhighlight %}
 
