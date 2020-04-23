@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started of TreeViewAdv
+title: Getting Started of TreeViewAdv | Syncfusion
 description: Getting Started of TreeViewAdv explains how to implement the TreeViewAdv control to the application and its basic functions
 platform: wpf
 control: TreeViewAdv
