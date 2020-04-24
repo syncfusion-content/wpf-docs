@@ -106,6 +106,7 @@ In order to add control manually in C#, do the below steps.
 {% highlight c# %}
 
     using Syncfusion.Windows.Tools.Controls;
+    
     namespace ButtonSample
     {
         public partial class MainWindow : Window
@@ -184,7 +185,7 @@ In a normal size button, a small image with the text on the side will be display
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SplitButtonAdv SizeMode="Normal" SmallIcon="Images\olor.png" Label="Colors"/>
+    <syncfusion:SplitButtonAdv SizeMode="Normal" SmallIcon="Images\color.png" Label="Colors"/>
 
 {% endhighlight %}
 {% highlight c# %}

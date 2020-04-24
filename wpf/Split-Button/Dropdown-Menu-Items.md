@@ -280,7 +280,7 @@ The dropdown menu group popup height can be increased or decreased using the res
 
 ![Resizing](Resizing-Support_images/Resizing-Support_img1.png)
 
-N> View [Sample]() in GitHub. This sample that showcases how to addd its features like Setting icon for dropdown menu items, scrollbar visibility,Resizing dropdown menu and Checkable dropdown menu items.
+N> View [Sample]() in GitHub. This sample that showcases how to add its features like Setting icon for dropdown menu items, scrollbar visibility,Resizing dropdown menu and Checkable dropdown menu items.
 
 ## Adding custom dropdown menu items
 

@@ -105,6 +105,7 @@ In order to the add control manually in C#, do the below steps.
 {% highlight c# %}
 
     using Syncfusion.Windows.Tools.Controls;
+    
     namespace Button_Getting_Started
     {   
         public partial class MainWindow : Window

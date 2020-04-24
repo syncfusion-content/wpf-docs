@@ -14,8 +14,6 @@ The command and command parameter properties allow to execute any action on clic
 * **Command** - The [Command](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.command?view=netframework-4.8) property accept all commands derived from interface [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.8). 
 * **CommandParameter** - The [CommandParameter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommandsource.commandparameter?view=netframework-4.8) property allows the user to provide additional data required in the command handler in-order to perform any operation. 
 
-The Command can be binded as follows:
-
 {% tabs %}
 {% highlight xaml %}
 

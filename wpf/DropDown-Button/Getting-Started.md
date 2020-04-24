@@ -107,6 +107,7 @@ In order to add control manually in C#, do the below steps.
 {% highlight c# %}
 
     using Syncfusion.Windows.Tools.Controls;
+
     namespace DropDownButtonSample
     {
         public partial class MainWindow : Window

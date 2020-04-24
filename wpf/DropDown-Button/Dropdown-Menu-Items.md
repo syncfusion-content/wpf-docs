@@ -260,7 +260,7 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 
 ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img4.png)
 
-N> View [Sample]() in GitHub. This sample that showcases how to addd its features like Setting icon for dropdown menu items, scrollbar visibility,Resizing dropdown menu and Checkable dropdown menu items.
+N> View [Sample]() in GitHub. This sample that showcases how to add its features like Setting icon for dropdown menu items, scrollbar visibility,Resizing dropdown menu and Checkable dropdown menu items.
 
 ## Adding custom dropdown menu items
 
