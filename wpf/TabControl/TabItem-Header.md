@@ -235,7 +235,7 @@ This section explains how to select tab item and selection functionalities in th
 
 ##  Select tab item using mouse and key interaction
 
-You can select a particular tab item by using the mouse click on the tab header. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item. You can get the seleted item by using the `SelectedItem` property. By default, the first tab item is selected.
+You can select a particular tab item by using the mouse click on the tab header. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
 
 N> You can select only one tab item at a time.
 
@@ -303,7 +303,7 @@ tabControlExt.IsCustomTabItemContextMenuEnabled = true;
 
 ## Change selected tab header font weight
 
-You can change the seleted tab header font weight by using the [SelectedItemFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemFontWeight.html) property. The default value of `SelectedItemFontWeight` property is `SemiBold`.
+You can change the selected tab header font weight by using the [SelectedItemFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemFontWeight.html) property. The default value of `SelectedItemFontWeight` property is `SemiBold`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -392,7 +392,7 @@ tabControlExt.CloseButtonType = CloseButtonType.Both;
 
 ### Show or hide close button for specific tab item
 
-You can show or hide close button for particual tab item by using the [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property. The `TabItemExt.CloseButtonState` is effective only when the `CloseButtonType` property is set to one among `Individual`, `Extended`, or `Both`. 
+You can show or hide close button for particular tab item by using the [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property. The `TabItemExt.CloseButtonState` is effective only when the `CloseButtonType` property is set to one among `Individual`, `Extended`, or `Both`. 
 
 <table>
 <tr>
@@ -439,9 +439,9 @@ tabItemExt2.CloseButtonState = Visibility.Collapsed;
 
 You can restrict or allow the tab item closing by using either property or event. 
 
-## Restrict closing the tab item using propety
+## Restrict closing the tab item using property
 
-You can restrict the closing functionality of specfic tabitem using the [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property. When the `TabItemExt.CanClose` property is set to `false`, the corresponding tab item will be non-closable. The default value of `CanClose` property is `true`.
+You can restrict the closing functionality of specific tabitem using the [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property. When the `TabItemExt.CanClose` property is set to `false`, the corresponding tab item will be non-closable. The default value of `CanClose` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -642,7 +642,7 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 
 ###  Rotating the Tab items
 
-Whenever the `TabStripPlacement` is set to `Left` or `Right`, the tab headers are vertically arranged. To improve the user readability, the tab items can be rotated by using the [RotateTextWhenVertical](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~RotateTextWhenVertical.html) property as `true`. The defalut value of `RotateTextWhenVertical` property is `false`.
+Whenever the `TabStripPlacement` is set to `Left` or `Right`, the tab headers are vertically arranged. To improve the user readability, the tab items can be rotated by using the [RotateTextWhenVertical](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~RotateTextWhenVertical.html) property as `true`. The default value of `RotateTextWhenVertical` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
