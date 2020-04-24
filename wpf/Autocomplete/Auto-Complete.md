@@ -538,7 +538,7 @@ EmployeeViewModel class:
 
 Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ImageMemberPath-2093350688) link.
 
-## Filtering option
+## Filtering options
 
 The phenomenon of string comparison for filtering suggestions can be changed by using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionMode.html) property. The default filtering strategy is “StartsWith” and is case-insensitive.
 
@@ -689,7 +689,6 @@ The control returns all possible matches ending with the text typed by the user 
 </tr>
 </table>
 
-### StartsWith
 
 {% tabs %}
 {% highlight xaml %}
