@@ -18,6 +18,6 @@ Split Button control themes can be customized using SkinManager. Refer the docum
 ![Theme](Theme-Support_images/Theme-Support_img1.png)
 
 
-## Applying themes using Theme studio
+## Applying themes using Theme Studio
 
 Split Button control themes can be customized using theme studio. Refer the documentation [link](https://help.syncfusion.com/wpf/themes/theme-studio) for more information.

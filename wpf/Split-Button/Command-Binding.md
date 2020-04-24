@@ -195,4 +195,4 @@ The Command can be binded as follows:
 {% endhighlight %}
 {% endtabs %}
 
-Click [here](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Command-Binding) to download the sample that showcases how to provide command binding for `SplitButtonAdv` control.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Command-Binding) in GitHub. This sample that showcases how to provide command binding for `SplitButtonAdv` control.

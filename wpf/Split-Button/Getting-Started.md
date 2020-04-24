@@ -25,9 +25,9 @@ In this walk through, you will create WPF application that contains Split Button
 
 1. [Adding control via designer](#adding-control-via-designer)
 
-2. [Adding control manually in XAML](#adding-control-manually-in-XAML)
+2. [Adding control manually in XAML](#adding-control-manually-in-xaml)
 
-3. [Adding control manually in C#](#adding-control-manually-in-C#)
+3. [Adding control manually in C#](#adding-control-manually-in-c#)
 
 ### Adding control via designer
 
@@ -36,7 +36,7 @@ Split Button control can be added to the application by dragging **SplitButtonAd
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv x:Name="splitButtonAdv" Label="Split Button"/>
+    <syncfusion:SplitButtonAdv x:Name="splitButtonAdv" Label="Split Button"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -330,6 +330,8 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 
 ![Icon Size](Getting-Started_images/Getting-Started_img10.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample that showcases how to add Split Button control and its basic features like image sizing options and size modes.
+
 ## Adding items to Split Button
 
 The DropDownMenuGroup acts as a container for the Split Button control. It provides options to add menu items and also options like header name, re-sizing and scrollbar.
@@ -442,7 +444,5 @@ N> For more information on how to bind data with command actions for Split Butto
 
 ![Drop-Down-item](Getting-Started_images/Getting-Started_img11.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Getting-Started) to download the sample that showcases how to add Split Button control and its basic features like image sizing options and size modes.
-
-Click [here](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Add-Menu-Items) to download the sample that showcases how to bind menu items to split button control.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Add-Menu-Items) in GitHub.
 

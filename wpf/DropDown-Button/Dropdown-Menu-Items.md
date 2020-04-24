@@ -260,6 +260,8 @@ The checkable option helps to check/uncheck the dropdown menu item on selection 
 
 ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img4.png)
 
+N> View [Sample]() in GitHub. This sample that showcases how to addd its features like Setting icon for dropdown menu items, scrollbar visibility,Resizing dropdown menu and Checkable dropdown menu items.
+
 ## Adding custom dropdown menu items
 
 The dropdown menu group has option to load custom items apart from actual dropdown menu items. One can populate the custom items using the [MoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~MoreItems.html) property.
@@ -375,3 +377,5 @@ The custom dropdown menu items icon visibility can be enabled/disabled by settin
 {% endtabs %}
 
 ![More-item](Moreitems_images/More_item_img1.png)
+
+N> View [Sample]() in GitHub.
