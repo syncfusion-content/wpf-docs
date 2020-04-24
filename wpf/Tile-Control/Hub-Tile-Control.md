@@ -378,7 +378,7 @@ public class HubTileTransitionCompleted : TargetedTriggerAction<SfHubTile>
 
 ![wpf hubtile transition completed](Getting-Started_images/wpf-hubtile-transitioncompleted.png)
 
-N> The example covers topics such as setting header, image, title, secondary content and transitions in Hub Tile control. View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Hub%20Tile/Getting%20Started) in GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Hub%20Tile/Getting%20Started) in GitHub. The sample covers topics such as setting header, image, title, secondary content and transitions in Hub Tile control. 
 
 ## Grouping
 
@@ -601,7 +601,7 @@ public class ViewModel
 
 ![wpf hub tile grouping via databinding](Getting-Started_images/wpf-hubtile-grouping-binding.png)
 
-View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Hub%20Tile/Windows-10-like-tiles) in GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Hub%20Tile/Windows-10-like-tiles) in GitHub.
 
 ## Freezing/Unfreezing 
 
