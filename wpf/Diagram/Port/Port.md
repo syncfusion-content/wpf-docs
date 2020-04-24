@@ -541,3 +541,5 @@ The `Constraints` property allows you to enable or disable certain behaviors of 
 * [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
 
 * [How to add multiple ports for the node?](https://www.syncfusion.com/kb/11435/how-to-add-multiple-ports-for-node-in-the-wpf-diagramsfdiagram)
+
+* [How to decide whether to drag or draw a connection on port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf)
