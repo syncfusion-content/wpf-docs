@@ -689,7 +689,6 @@ The control returns all possible matches ending with the text typed by the user 
 </tr>
 </table>
 
-### StartsWith
 
 {% tabs %}
 {% highlight xaml %}
