@@ -323,3 +323,382 @@ tabControlExt.SelectedItemFontWeight = FontWeights.UltraLight;
 {% endtabs %}
 
 ![TabControl SelectedItem font weight changed to UltraLight](Tab-Item-Header_images/SelectedItemFontWeight.png)
+
+
+
+
+
+# Closing or Hiding tab item
+
+This section explains how to closing the tab item and its functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+
+## Closing tab item 
+
+You can close the selected tab by clicking the close button which is placed top-right corner of the tab panel. You also close any tab by clicking mouse middle button.You can enable it by setting the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseTabOnMiddleClick.html) property value as `true`. The default value of `CloseTabOnMiddleClick` property is `false`.
+
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt CloseTabOnMiddleClick="True"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.CloseTabOnMiddleClick = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tabs closing by close button and mouse middle button click](Closable-tabs-images/CloseMiddleClick.png)
+
+## Show or hide close button
+
+You can show or hide the close button in each tabs and tab panel by using the [CloseButtonType](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseButtonType.html) property. 
+
+The following Close button modes are supported by the `TabControl`.
+
+* Common – The single close button is displayed commonly for all tab items in the tab panel.
+* Individual – The close button is displayed individually for each tab items in the tab panel.
+* Both – The close button is displayed individually for each tab item and also displayed in the tab panel.
+* Hide – All close buttons is hidden in the tab panel.
+* IndividualOnMouseOver - The close button is displayed when the mouse hovers over the tab item in the tab panel.
+* Extended - The Close button is displayed in the selected tab and mousing hovering tab in the tab panel.
+
+![Tab items with various visibility of close button](Closable-tabs-images/CloseButtonType.png)
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt CloseButtonType="Both"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tab1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt Header="tab2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.CloseButtonType = CloseButtonType.Both;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Common close button and individul close buttons shown in tab panel](Closable-tabs-images/CloseButtonType_Both.png)
+
+### Show or hide close button for specific tab item
+
+You can show or hide close button for particual tab item by using the [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property. The `TabItemExt.CloseButtonState` is effective only when the `CloseButtonType` property is set to one among `Individual`, `Extended`, or `Both`. 
+
+<table>
+<tr>
+<td>
+<b> CloseButtonState </b> <br/><br/></td><td>
+<b> Description </b> <br/><br/></td></tr>
+<tr>
+<td>
+Visible<br/><br/></td><td>
+The close button of TabItemExt is visible<br/><br/></td></tr>
+<tr>
+<td>
+Collapsed<br/><br/></td><td>
+The close button of TabItemExt is collapsed<br/><br/></td></tr>
+</table>
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt CloseButtonType="Both"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt CloseButtonState="Visible" 
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt CloseButtonState="Collapsed"
+                           Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.CloseButtonType = CloseButtonType.Both;
+
+//Changing the particular item close button visibility
+tabItemExt1.CloseButtonState = Visibility.Visible;
+tabItemExt2.CloseButtonState = Visibility.Collapsed;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the particular item close button visibility in tab panel](Closable-tabs-images/CloseButtonState.png)
+
+
+## Restrict or allow closing the tab item
+
+You can restrict or allow the tab item closing by using either property or event. 
+
+## Restrict closing the tab item using propety
+
+You can restrict the closing functionality of specfic tabitem using the [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property. When the `TabItemExt.CanClose` property is set to `false`, the corresponding tab item will be non-closable. The default value of `CanClose` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+ 
+<syncfusion:TabControlExt CloseButtonType="Individual"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt CanClose="False"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt CanClose="True" 
+                           Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.CloseButtonType = CloseButtonType.Individual;
+
+//Restrict and allow the particular item close button
+tabItemExt1.CanClose = false;
+tabItemExt2.CanClose = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab item cannot be closed by CanClose property](Closable-tabs-images/CanClose.png)
+
+Here, `tabItem1` cancel button is disabled.
+
+## Restrict closing the tab item using event
+
+The closing of tab item can be restricted by setting `e.Cancel` to `true` in [OnCloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~OnCloseButtonClick_EV.html) event. `e` represents the event argument [CloseTabEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CloseTabEventArgs.html) for `OnCloseButtonClick` event. The default value of `e.Cancel` is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt OnCloseButtonClick="TabControlExt_OnCloseButtonClick" >
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.OnCloseButtonClick += TabControlExt_OnCloseButtonClick;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void TabControlExt_OnCloseButtonClick(object sender, CloseTabEventArgs e) {
+    if(e.TargetTabItem.Header.ToString() == "tabItem1") {
+        e.Cancel = true;
+    }               
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+Here, `tabItem1` cannot be closed.
+
+## Hide or delete item when closing a tab
+
+You can decide whether the tab item can be only hidden from the view or removed from the items collection of `TabControl` by using the [CloseMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) property while closing it. If you set `CloseMode` property as `Hide`, the tab item will be hidden and the selection will be moved to previous index while hiding it. Also, if the property `CloseMode` is `Delete`, the tab item will be removed from the items collection and the selection will be retained in the same index while removing it. The default value of the `CloseMode` property is `Hide`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt CloseMode="Delete"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.CloseMode = CloseMode.Delete;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items will delete from items collection](Closable-tabs-images/CloseMode.png)
+
+## Tab item closed notification
+
+When the tab item is closed, it will be notified by using the [TabClosed](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabClosed_EV.html) event. You can get the details about the closed tab item from [CloseTabEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CloseTabEventArgs.html).
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabClosed="TabControlExt_TabClosed" >
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.TabClosed += TabControlExt_TabClosed;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void TabControlExt_TabClosed(object sender, CloseTabEventArgs e) {
+    var deletedItem = e.TargetTabItem;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+# Arranging tab items
+
+This section explains how to arrange the tab item and its alignment functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+
+## Rearrange position of tab items
+
+If you want to rearrange the tab items position, drag that item and drop to anywhere you want to place it in the tab panel. You can restrict it by setting the [AllowDragDrop](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~AllowDragDrop.html) property value as `false`. The default value of `AllowDragDrop` property is `true`. The drag marker will preview the location, where you drop the dragged tab item.
+
+ {% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt AllowDragDrop="True" >
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.AllowDragDrop = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items are rearranged by drag and drop](Tab-Item-Header_images/ChangePosition.gif)
+
+### change drag marker color
+
+You can change the drag marker color by setting the color value for the [DragMarkerColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~DragMarkerColor.html) property. The default value of `DragMarkerColor` property is `Black`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt DragMarkerColor="Red" 
+                          AllowDragDrop="True">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.DragMarkerColor = Brushes.Red;
+tabControlExt.AllowDragDrop = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items drag marker color changed to red color](Tab-Item-Header_images/DragMarkerColor.png)
+
+## Tab items Alignment
+
+Tab items can be aligned to any side of the `TabControl` by using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) property. The default value of `TabStripPlacement` property is `Top`.
+
+The following TabStrip placement options are supported by the `TabControl`.
+
+* Top - Tab items are placed at top of the `TabControl`.
+* Bottom - Tab items are placed at bottom of the `TabControl`.
+* Left - Tab items are placed at left side of the `TabControl`.
+* Right - Tab items are placed at right side of the `TabControl`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabStripPlacement="Bottom">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.TabStripPlacement = Dock.Bottom;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items are arranged bottom of the TabControl](Tab-Item-Header_images/TabStripPlacement.png)
+
+###  Rotating the Tab items
+
+Whenever the `TabStripPlacement` is set to `Left` or `Right`, the tab headers are vertically arranged. To improve the user readability, the tab items can be rotated by using the [RotateTextWhenVertical](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~RotateTextWhenVertical.html) property as `true`. The defalut value of `RotateTextWhenVertical` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt RotateTextWhenVertical="True"
+                          TabStripPlacement="Right">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.RotateTextWhenVertical = true;
+tabControlExt.TabStripPlacement = Dock.Right;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab headers are arranged horizontally in the TabControl](Tab-Item-Header_images/RotateTextWhenVertical.png)
+
+## Change tab item layout 
+
+ If you add more tabs and they exceed the `TabControl` size, then they are in collapsed state and can navigate to that tabs only by using the scroll button. You can show all the tabs in the tab panel by setting the [TabItemLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemLayout.html) property value as `MultiLine` or `MultiLineWithFullWidth`. The default value of `TabItemLayout` property is `Single`.
+
+`TabControl` provides the following layout types.
+
+* SingleLine – Tab items are displayed in single line
+* MultiLine – Tab items are shrunk and displayed in multiple lines
+* MultiLineWithFillWidth – Tab items are displayed in multiple lines without being shrunk
+
+![Tab items with various tab layouts](Tab-Item-Header_images/TabItemLayout.png)
+
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabItemLayout="MultiLine" 
+                          TabItemLayout="MultiLine" 
+                          Width="300"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.TabItemLayout = TabItemLayoutType.MultiLine;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items with multiple layouts](Tab-Item-Header_images/TabItemLayout_Multiple.png)
+
+
+
+
+
