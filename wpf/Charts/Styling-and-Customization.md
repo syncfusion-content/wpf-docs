@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Customization| SfChart | Wpf | Syncfusion
-description: styling and customization
+description: This section explains how to customize the WPF Chart (SfChart) with its available customization and styling options
 platform: wpf
 control: SfChart
 documentation: ug
@@ -270,27 +270,52 @@ chart.ColorModel = colorModel;
 
 ## SegmentColorPath
 
-The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPathProperty.html) property of series. The following code illustrates how to bind the color to the series with [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPathProperty.html) property.
+The color of the chart segments can be updated by binding their corresponding model property from the `ItemsSource` collection to its [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property of series as follows.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ColumnSeries  SegmentColorPath="ColorPath">
-
+<chart:ColumnSeries ItemsSource="{Binding Data}"
+                    XBindingPath="XValue" 
+                    YBindingPath="YValue" 
+                    SegmentColorPath="SegmentColor">
+                    
 </chart:ColumnSeries>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries series = new ColumnSeries()
- 
+public class ViewModel
 {
-        
-   SegmentColorPath = "SegmentColor"
-            
+    public ObservableCollection<Model> Data { get; set; }
+
+    public ViewModel()
+    {
+        Data = new ObservableCollection<Model>();
+        Data.Add(new Model() { XValue = "Jewelry", YValue = 10, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 0, 255, 255)) });
+        Data.Add(new Model() { XValue = "Electronics", YValue = 50,
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 238, 130, 238))});
+        Data.Add(new Model() { XValue = "Research", YValue = 30, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 255, 165, 0)) });
+        Data.Add(new Model() { XValue = "Investment", YValue = 40, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 255, 105, 180)) });
+        Data.Add(new Model() { XValue = "Others", YValue = 20,
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 152, 251, 152)) });
+    }
+}
+
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    SegmentColorPath = "SegmentColor"
 };
+
 
 {% endhighlight %}
 
@@ -298,7 +323,7 @@ ColumnSeries series = new ColumnSeries()
 
 ![SegmentColorPath in WPF Chart](Styling-and-Customization_images/segmentcolor.png)
 
-N> SegmentColorPath property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType is Area).
+N> `SegmentColorPath` property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType are Area).
 
 
 ## Customize Legends
