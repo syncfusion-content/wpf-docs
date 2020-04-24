@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Customization| SfChart | Wpf | Syncfusion
-description: This section explains how the WPF Chart(SfChart) can be customized with its available customization and styling options
+description: This section explains how to customize the WPF Chart (SfChart) its available customization and styling options
 platform: wpf
 control: SfChart
 documentation: ug
