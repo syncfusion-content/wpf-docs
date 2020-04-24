@@ -7,7 +7,7 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-#Annotations support in SfCircular Gauge
+# Annotations support in SfCircular Gauge
 
 SfCircularGauge supports annotations, which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images can also be added by using `Annotations` property.
 
