@@ -140,6 +140,62 @@ public class IntegerEditor : ITypeEditor {
 {% endhighlight  %}
 {% endtabs %}
 
+## Creating the Custom Editor when SelectedObject is of dynamic type
+
+If the `SelectedObject` of PropertyGrid is of type `dynamic`, `ExpandoObject` or `ICustomTypeDescriptor` we need to create the `CustomEditor` class by inheriting [BaseTypeEditor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html). You can initialize a new instance of the custom editor using the `BaseTypeEditor.Create(PropertyDescriptor propertyDescriptor)` function. Below example shows, how to get the value of dymamic properties using its PropertyDescriptor and apply the value in `ComboEditor` to ComboBox objects.
+
+{% tabs %}
+
+{% highlight C# %}
+
+//Custom Editor for the List<string> type properties.
+public class ComboEditor : BaseTypeEditor
+{
+    ComboBox comboBox;
+      
+    public override void Attach(PropertyViewItem property, PropertyItem info)
+    {
+        var binding = new Binding("Value")
+        {
+            Mode = BindingMode.TwoWay,
+            Source = info,
+            ValidatesOnExceptions = true,
+            ValidatesOnDataErrors = true
+        };
+        BindingOperations.SetBinding(comboBox, ComboBox.SelectedItemProperty, binding);
+    }
+
+    public override object Create(PropertyInfo PropertyInfo)
+    {
+        throw new NotImplementedException();
+    }
+
+    public override object Create(PropertyDescriptor PropertyDescriptor)
+    {
+        comboBox = new ComboBox();
+        // Getting the values of dynamic property
+        dynamic comboBoxItemsList = PropertyDescriptor.GetValue(PropertyDescriptor.Name);
+        foreach (dynamic items in comboBoxItemsList)
+        {
+            comboBox.Items.Add(items);
+        }
+
+        comboBox.SelectedIndex = 0;
+        return comboBox;
+    }
+
+    public override void Detach(PropertyViewItem property)
+    {
+        comboBox = null;
+    }
+}
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor/CustomEditor-dynamic-type-selected-object).
+
 ## Assigning a Custom Editor using Editor Attribute
 
 We can assign the `CustomEditor` to any individual property by name of the property and to multiple properties based on the property type by using the `Editor` attribute.
