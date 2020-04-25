@@ -25,9 +25,9 @@ In this walk through, will create WPF application that contains Button control. 
 
 1. [Adding control via designer](#adding-control-via-designer)
 
-2. [Adding control manually in XAML](#adding-control-manually-in-XAML)
+2. [Adding control manually in XAML](#adding-control-manually-in-xaml)
 
-3. [Adding control manually in C#](#adding-control-manually-in-C#)
+3. [Adding control manually in C#](#adding-control-manually-in-c#)
 
 ### Adding control via designer
 
@@ -105,6 +105,7 @@ In order to the add control manually in C#, do the below steps.
 {% highlight c# %}
 
     using Syncfusion.Windows.Tools.Controls;
+    
     namespace Button_Getting_Started
     {   
         public partial class MainWindow : Window
@@ -330,4 +331,4 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 
 ![Icon Size](Getting-Started_images/Getting-Started_img10.png)
 
-Click [here](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/Getting-Started) to download the sample that showcases how to add button control and its basic features like image sizing options and size modes.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add button control and its basic features like image sizing options and size modes.
