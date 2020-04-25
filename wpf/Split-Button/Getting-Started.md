@@ -331,7 +331,7 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 
 ![Icon Size](Getting-Started_images/Getting-Started_img10.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample that showcases how to add Split Button control and its basic features like image sizing options and size modes.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add Split Button control and its basic features like image sizing options and size modes.
 
 ## Adding items to Split Button
 

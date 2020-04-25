@@ -333,7 +333,7 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 
 ![Icon Size](Getting-Started_images/Getting-Started_img9.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample that showcases how to add Dropdown Button control and its basic features like image sizing options and size modes.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add Dropdown Button control and its basic features like image sizing options and size modes.
 
 ## Adding items to Dropdown Button
 

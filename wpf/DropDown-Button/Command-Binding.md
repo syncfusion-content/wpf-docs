@@ -190,4 +190,4 @@ The command and command parameter properties allow to execute any action on clic
 {% endhighlight %}
 {% endtabs %}
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Command-Binding) in GitHub. This sample that showcases how to provide command binding for `DropDownButtonAdv` control.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Command-Binding) in GitHub. This sample showcases how to provide command binding for `DropDownButtonAdv` control.

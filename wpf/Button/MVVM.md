@@ -168,4 +168,4 @@ The command and command parameter properties allow to execute any action on clic
 {% endhighlight %}
 {% endtabs %}
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/MVVM) in GitHub.This sample that showcases how to bind commands to the `ButtonAdv` control.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-button-examples/blob/master/Samples/MVVM) in GitHub. This sample showcases how to bind commands to the `ButtonAdv` control.
