@@ -16,16 +16,16 @@ N> This property is only applicable for large size mode of the Dropdown Button.
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv Label="Sign in with your Syncfusion Account" LargeIcon="image\employee.png" SizeMode="Large" IsMultiLine="True"/>
+<syncfusion:DropDownButtonAdv Label="Sign in with your Syncfusion Account" LargeIcon="image\employee.png" SizeMode="Large" IsMultiLine="True"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
-    dropdownbutton.SizeMode = SizeMode.Large;
-    dropdownbutton.Label = "Sign in with your Syncfusion Account";
-    dropdownbutton.IsMultiLine =true;
-    dropdownbutton.LargeIcon = new BitmapImage(new Uri("image\employee.png"));
+DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+dropdownbutton.SizeMode = SizeMode.Large;
+dropdownbutton.Label = "Sign in with your Syncfusion Account";
+dropdownbutton.IsMultiLine =true;
+dropdownbutton.LargeIcon = new BitmapImage(new Uri("image\employee.png"));
 
 {% endhighlight %}
 {% endtabs %}

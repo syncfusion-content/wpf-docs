@@ -18,18 +18,18 @@ The events occurs when the button control is clicked and any action can be handl
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:ButtonAdv Click="button_Click"/>
+<syncfusion:ButtonAdv Click="button_Click"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    ButtonAdv button = new ButtonAdv();
-    button.Click += new RoutedEventHandler(button_Click);
+ButtonAdv button = new ButtonAdv();
+button.Click += new RoutedEventHandler(button_Click);
 
-    private void button_Click(object sender, RoutedEventArgs e)
-    {
+private void button_Click(object sender, RoutedEventArgs e)
+{
 
-    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -41,19 +41,19 @@ The event occurs when the button control is utilized as toggle button, that is, 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:ButtonAdv IsCheckable="true" Checked="button_Checked"/>
+<syncfusion:ButtonAdv IsCheckable="true" Checked="button_Checked"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    ButtonAdv button = new ButtonAdv();
-    button.IsCheckable = true;
-    button.Checked += new RoutedEventHandler(button_Checked);
+ButtonAdv button = new ButtonAdv();
+button.IsCheckable = true;
+button.Checked += new RoutedEventHandler(button_Checked);
 
-    private void button_Checked(object sender, RoutedEventArgs e)
-    {
+private void button_Checked(object sender, RoutedEventArgs e)
+{
           
-    }
+}
   
 {% endhighlight  %}
 {% endtabs %}

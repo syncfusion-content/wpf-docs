@@ -67,9 +67,9 @@ In order to add the control manually in XAML, follow the below steps.
         xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-        <Grid>
-            <syncfusion:ButtonAdv Height="44"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="162"/>
-        </Grid>
+    <Grid>
+        <syncfusion:ButtonAdv Height="44"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="162"/>
+    </Grid>
 </Window>
 
 {% endhighlight %}
@@ -97,8 +97,9 @@ In order to the add control manually in C#, do the below steps.
         xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-        <Grid x:Name="Root">
-        </Grid>
+    <Grid x:Name="Root">
+
+    </Grid>
 </Window>
 
 {% endhighlight %}
@@ -106,20 +107,20 @@ In order to the add control manually in C#, do the below steps.
 
 using Syncfusion.Windows.Tools.Controls;
     
-namespace Button_Getting_Started
-{   
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
+    namespace Button_Getting_Started
+    {   
+        public partial class MainWindow : Window
         {
-            InitializeComponent();
-            ButtonAdv button = new ButtonAdv();
-            button.Height=44;
-            button.Width=31;
-            Root.Children.Add(button);
+            public MainWindow()
+            {
+                InitializeComponent();
+                ButtonAdv button = new ButtonAdv();
+                button.Height=44;
+                button.Width=31;
+                Root.Children.Add(button);
+            }
         }
     }
-}
 
 {% endhighlight  %}
 {% endtabs %}
@@ -150,7 +151,7 @@ button.SmallIcon = new BitmapImage(new Uri("image/usersmall.png" , UriKind.Relat
 
 Size mode is used to render button control in different pre-defined sizes based on application demand. Apply the size mode by setting the [SizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~SizeMode.html) property.
 
-The **SizeMode** is an enumeration which contains the following values:
+ The **SizeMode** is an enumeration which contains the following values:
 
 * Small
 * Normal

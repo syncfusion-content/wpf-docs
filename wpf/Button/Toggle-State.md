@@ -16,17 +16,17 @@ N> In addition to [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Sh
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:ButtonAdv Label="Log-in" SmallIcon="image/employee.png" SizeMode="Normal" IsCheckable="True" IsChecked="True"/>
+<syncfusion:ButtonAdv Label="Log-in" SmallIcon="image/employee.png" SizeMode="Normal" IsCheckable="True" IsChecked="True"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    ButtonAdv button = new ButtonAdv();
-    button.Label = "Log-in";
-    button.SizeMode = SizeMode.Normal;
-    button.SmallIcon = new BitmapImage(new Uri("employee.png"));
-    button.IsCheckable = true;
-    button.IsChecked = true;
+ButtonAdv button = new ButtonAdv();
+button.Label = "Log-in";
+button.SizeMode = SizeMode.Normal;
+button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+button.IsCheckable = true;
+button.IsChecked = true;
 
 {% endhighlight %}
 {% endtabs %}
