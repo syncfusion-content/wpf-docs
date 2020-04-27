@@ -250,8 +250,6 @@ You can customize the visualization of data object using the [ItemTemplate](http
 {% endhighlight %}
 {% endtabs %}
 
-Now the combobox will display as like below.
-
 ![Item template](Getting-Started_images/ComboBoxAdv_img4.png)
 
 ### Selection
@@ -265,7 +263,6 @@ If multiple choices are allowed for the user, then the ComboBoxAdv is useful to 
     </syncfusion:ComboBoxAdv>
 </Grid>
 
-Now while selecting the multiple items it looks like this.
 
 ![Multiple selection](Getting-Started_images/ComboBoxAdv_img5.png)
 
