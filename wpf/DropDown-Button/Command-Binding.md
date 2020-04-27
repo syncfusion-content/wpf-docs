@@ -190,4 +190,4 @@ class DropDownViewModel: NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Command-Binding) in GitHub. This sample showcases how to provide command binding for `DropDownButtonAdv` control.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Command-Binding) in GitHub. This sample showcases how to provide command binding for `DropDownButtonAdv` control.

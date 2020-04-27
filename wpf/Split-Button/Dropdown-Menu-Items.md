@@ -260,7 +260,7 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("images\country.png"));
 
 ![Resizing](Resizing-Support_images/Resizing-Support_img1.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Customize-Menu-Items) in GitHub. This sample showcases how to set the drop-down item icon, icon bar visibility, scrollbar visibility, and checkable support.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Customize-Menu-Items) in GitHub. This sample showcases how to set the drop-down item icon, icon bar visibility, scrollbar visibility, and checkable support.
 
 ## Adding custom dropdown menu items
 
@@ -415,4 +415,4 @@ namespace SplitButton_Custom_Items
 
 ![More-item](Moreitems_images/More_item_img2.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items IconBar in Split Button control.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items IconBar in Split Button control.

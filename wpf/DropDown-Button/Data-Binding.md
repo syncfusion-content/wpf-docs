@@ -337,4 +337,4 @@ public class CountryViewModel: NotificationObject
 
 ![Data-Binding](DropDownButtonAdv_Binding_images/DropDownButtonAdv_Binding_img2.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Data-Binding) in GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Data-Binding) in GitHub.
