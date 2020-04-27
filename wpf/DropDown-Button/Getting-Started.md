@@ -332,7 +332,7 @@ button2.SmallIcon = new BitmapImage(new Uri(Images\syncfusion.png", UriKind.Rela
 
 ![Icon Size](Getting-Started_images/Getting-Started_img9.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add Dropdown Button control and its basic features like image sizing options and size modes.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Getting-Started) in GitHub. This sample showcases how to add dropdown button control and its basic features like image sizing options and size modes.
 
 ## Adding items to Dropdown Button
 

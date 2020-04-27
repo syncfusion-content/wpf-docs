@@ -415,4 +415,4 @@ namespace SplitButton_Custom_Items
 
 ![More-item](Moreitems_images/More_item_img2.png)
 
-N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items IconBar in Split Button control.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items icon bar in split button control.

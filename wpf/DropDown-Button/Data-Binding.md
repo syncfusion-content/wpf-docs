@@ -138,7 +138,7 @@ public partial class MainWindow:Window
 
 Bind the command to [DropDownMenuItem.Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~Command.html) property of [DropDownMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html). For example, `ClickCommand` has been bounded to `DropDownMenuItem`.
 
-N> For more information on Command Binding, please refer [Command-Binding](https://help.syncfusion.com/wpf/dropdown-button/command-binding)
+N> For more information on Command Binding, please refer [Command Binding](https://help.syncfusion.com/wpf/dropdown-button/command-binding)
 
 {% tabs %}
 {% highlight xaml %}
