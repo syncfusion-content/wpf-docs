@@ -18,18 +18,18 @@ The event occurs before opening the dropdown menu popup and any action can be ha
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownOpening="dropdownbutton_DropDownOpening"/>
+<syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownOpening="dropdownbutton_DropDownOpening"/>
 
 {% endhighlight %}
 {% highlight c# %} 
 
-    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
-    dropdownbutton.DropDownOpening +=new CancelEventHandler(dropdownbutton_DropDownOpening);
+DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+dropdownbutton.DropDownOpening +=new CancelEventHandler(dropdownbutton_DropDownOpening);
 
-    private void dropdownbutton_DropDownOpening(object sender, System.ComponentModel.CancelEventArgs e)
-    {
+private void dropdownbutton_DropDownOpening(object sender, System.ComponentModel.CancelEventArgs e)
+{
 
-    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -41,18 +41,18 @@ The event occurs after opening the dropdown menu popup and any action can be han
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownOpened="dropdownbutton_DropDownOpened"/> 
+<syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownOpened="dropdownbutton_DropDownOpened"/> 
 
 {% endhighlight %}
 {% highlight C# %}
 
-    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
-    dropdownbutton.DropDownOpened +=new RoutedEventHandler(dropdownbutton_DropDownOpened); 
+DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+dropdownbutton.DropDownOpened +=new RoutedEventHandler(dropdownbutton_DropDownOpened); 
 
-    private void dropdownbutton_DropDownOpened(object sender, RoutedEventArgs e)
-    {
+private void dropdownbutton_DropDownOpened(object sender, RoutedEventArgs e)
+{
 
-    }
+}
 
 {% endhighlight %} 
 {% endtabs %}
@@ -64,18 +64,18 @@ The event occurs before closing the dropdown menu popup and any action can be ha
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownClosing="dropdownbutton_DropDownClosing"/>
+<syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownClosing="dropdownbutton_DropDownClosing"/>
 
 {% endhighlight %}
 {% highlight C# %} 
 
-    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
-    dropdownbutton.DropDownClosing +=new CancelEventHandler(dropdownbutton_DropDownClosing);
+DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+dropdownbutton.DropDownClosing +=new CancelEventHandler(dropdownbutton_DropDownClosing);
 
-    private void dropdownbutton_DropDownClosing(object sender, System.ComponentModel.CancelEventArgs e)
-    {
+private void dropdownbutton_DropDownClosing(object sender, System.ComponentModel.CancelEventArgs e)
+{
 
-    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -87,18 +87,18 @@ The event occurs after closing the dropdown menu popup and any action can be han
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownClosed="dropdownbutton_DropDownClosed"/> 
+<syncfusion:DropDownButtonAdv x:Name="dropdownbutton" DropDownClosed="dropdownbutton_DropDownClosed"/> 
 
 {% endhighlight %} 
 {% highlight C# %} 
 
-    DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
-    dropdownbutton.DropDownClosed +=new RoutedEventHandler(dropdownbutton_DropDownClosed); 
+DropDownButtonAdv dropdownbutton = new DropDownButtonAdv();
+dropdownbutton.DropDownClosed +=new RoutedEventHandler(dropdownbutton_DropDownClosed); 
 
-    private void dropdownbutton_DropDownClosed(object sender, RoutedEventArgs e)
-    {
+private void dropdownbutton_DropDownClosed(object sender, RoutedEventArgs e)
+{
 
-    }
+}
 
 {% endhighlight %} 
 {% endtabs %}
@@ -112,18 +112,18 @@ The event occurs when the dropdown menu item is clicked and any action can be ha
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" Click="dropDownMenuItem_Click/> 
+<syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" Click="dropDownMenuItem_Click/> 
 
 {% endhighlight %} 
 {% highlight C# %} 
 
-    DropDownMenuItem dropDownMenuItem = new DropDownMenuItem();
-    dropDownMenuItem.Click +=new RoutedEventHandler(dropDownMenuItem_Click);
+DropDownMenuItem dropDownMenuItem = new DropDownMenuItem();
+dropDownMenuItem.Click +=new RoutedEventHandler(dropDownMenuItem_Click);
 
-    private void dropDownMenuItem_Click(object sender, RoutedEventArgs e)
-    {
+private void dropDownMenuItem_Click(object sender, RoutedEventArgs e)
+{
 
-    } 
+} 
 
 {% endhighlight %} 
 {% endtabs %}
@@ -135,19 +135,19 @@ The event occurs when the dropdown menu item is checked or unchecked, that is, o
 {% tabs %}
 {% highlight xaml %} 
 
-     <syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" IsCheckable="True" IsCheckedChanged="DropDownMenuItem_IsCheckedChanged"/>
+<syncfusion:DropDownMenuItem x:Name="dropDownMenuItem" IsCheckable="True" IsCheckedChanged="DropDownMenuItem_IsCheckedChanged"/>
 
 {% endhighlight %} 
 {% highlight C# %} 
 
-    DropDownMenuItem dropDownMenuItem  = new DropDownMenuItem();
-    dropDownMenuItem.IsCheckable=true;
-    dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(dropDownMenuItem_IsCheckedChanged); 
+DropDownMenuItem dropDownMenuItem  = new DropDownMenuItem();
+dropDownMenuItem.IsCheckable=true;
+dropDownMenuItem.IsCheckedChanged +=new RoutedEventHandler(dropDownMenuItem_IsCheckedChanged); 
     
-    private void dropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-    {
+private void dropDownMenuItem_IsCheckedChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+{
 
-    }
+}
 
 {% endhighlight %} 
 {% endtabs %}

@@ -16,16 +16,16 @@ N> This property is only applicable for large size mode of the Split Button.
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SplitButtonAdv Label="Sign in with your Syncfusion Account" LargeIcon="image\userlarge.png" SizeMode="Large" IsMultiLine="True"/>
+<syncfusion:SplitButtonAdv Label="Sign in with your Syncfusion Account" LargeIcon="image\userlarge.png" SizeMode="Large" IsMultiLine="True"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    SplitButtonAdv splitbutton = new SplitButtonAdv();
-    splitbutton.Label = "Sign in with your Syncfusion Account";
-    splitbutton.IsMultiLine =true;
-    splitbutton.SizeMode = SizeMode.Large;
-    splitbutton.SmallIcon = new BitmapImage(new Uri("image\userlarge.png"));
+SplitButtonAdv splitbutton = new SplitButtonAdv();
+splitbutton.Label = "Sign in with your Syncfusion Account";
+splitbutton.IsMultiLine =true;
+splitbutton.SizeMode = SizeMode.Large;
+splitbutton.SmallIcon = new BitmapImage(new Uri("image\userlarge.png"));
 
 {% endhighlight %}
 {% endtabs %}

@@ -36,7 +36,7 @@ Dropdown Button control can be added to the application by dragging **DropDownBu
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv x:Name="dropdownButtonAdv" Label="Drop Down Button"/>
+<syncfusion:DropDownButtonAdv x:Name="dropdownButtonAdv" Label="Drop Down Button"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -60,18 +60,17 @@ In order to add the control manually in XAML, follow the below steps.
 {% tabs %}
 {% highlight xaml %}
 
-    <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:local="clr-namespace:DropDownButtonadv_GetStart_Sample"
-            xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-            xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
-            mc:Ignorable="d"
-            Title="MainWindow" Height="450" Width="800">
-        <Grid>
-            <syncfusion:DropDownButtonAdv Height="44"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="162" />
-        </Grid>
-
-    </Window>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DropDownButtonadv_GetStart_Sample"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <syncfusion:DropDownButtonAdv Height="44"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="162" />
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,22 +90,22 @@ In order to add control manually in C#, do the below steps.
 {% tabs %}
 {% highlight xaml %}
 
-    <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:local="clr-namespace:DropDownButtonadv_GetStart_Sample"
-            xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-            xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
-            mc:Ignorable="d"
-            Title="MainWindow" Height="450" Width="800">
-        <Grid x:Name="Root">
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:DropDownButtonadv_GetStart_Sample"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:Syncfusion="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="Root">
 
-        </Grid>
-    </Window>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    using Syncfusion.Windows.Tools.Controls;
+using Syncfusion.Windows.Tools.Controls;
 
     namespace DropDownButtonSample
     {
@@ -133,14 +132,14 @@ The label on the button is a text that explains its action to the end-user. Appl
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv SmallIcon="Images\flagsmall.png" Label="Country"/>
+<syncfusion:DropDownButtonAdv SmallIcon="Images\flagsmall.png" Label="Country"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-    DropDownButtonAdv button = new DropDownButtonAdv();
-    button.Label = "Country";
-    button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute)); 
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.Label = "Country";
+button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute)); 
 
 {% endhighlight %}
 {% endtabs %}
@@ -164,15 +163,15 @@ When the mode is set to small, the control is displayed without the label. Only 
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv SmallIcon="Images\flagsmall.png" SizeMode="Small" Label="Country"/> 
+<syncfusion:DropDownButtonAdv SmallIcon="Images\flagsmall.png" SizeMode="Small" Label="Country"/> 
 
 {% endhighlight %} 
 {% highlight c# %}
 
-    DropDownButtonAdv button = new DropDownButtonAdv();
-    button.Label = "Country";
-    button.SizeMode = SizeMode.Small; 
-    button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute));
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.Label = "Country";
+button.SizeMode = SizeMode.Small; 
+button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -186,15 +185,15 @@ In a normal size button, a small image with the text on the side will be display
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv SizeMode="Normal" SmallIcon="Images\flagsmall.png" Label="Country"/> 
+<syncfusion:DropDownButtonAdv SizeMode="Normal" SmallIcon="Images\flagsmall.png" Label="Country"/> 
 
 {% endhighlight %}
 {% highlight c# %}
 
-    DropDownButtonAdv button = new DropDownButtonAdv();
-    button.Label = "Country";
-    button.SizeMode = SizeMode.Normal;
-    button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute));
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.Label = "Country";
+button.SizeMode = SizeMode.Normal;
+button.SmallIcon = new BitmapImage(new Uri("Images\flagsmall.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -208,15 +207,15 @@ In a large size button, a large image along with the text at the bottom will be 
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv LargeIcon="Images\flaglarge.png" SizeMode="Large" Label="Country"/> 
+<syncfusion:DropDownButtonAdv LargeIcon="Images\flaglarge.png" SizeMode="Large" Label="Country"/> 
 
 {% endhighlight %} 
 {% highlight c# %}
 
-    DropDownButtonAdv button = new DropDownButtonAdv();
-    button.Label = "Country";
-    button.SizeMode = SizeMode.Large;
-    button.LargeIcon = new BitmapImage(new Uri("Images\flaglarge.png", UriKind.RelativeOrAbsolute));
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.Label = "Country";
+button.SizeMode = SizeMode.Large;
+button.LargeIcon = new BitmapImage(new Uri("Images\flaglarge.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %} 
 {% endtabs %}
@@ -235,15 +234,15 @@ The **SmallIcon** property can be set as follows:
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv SizeMode="Small" Label="Syncfusion" SmallIcon ="Images\syncfusion.png"/> 
+<syncfusion:DropDownButtonAdv SizeMode="Small" Label="Syncfusion" SmallIcon ="Images\syncfusion.png"/> 
 
 {% endhighlight %} 
 {% highlight c# %}  
 
-    DropDownButtonAdv button = new DropDownButtonAdv();
-    button.Label = "Syncfusion";
-    button.SizeMode = SizeMode.Small;
-    button.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.Label = "Syncfusion";
+button.SizeMode = SizeMode.Small;
+button.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %} 
 {% endtabs %}
@@ -255,15 +254,15 @@ The **SmallIcon** property can be set even when the sizeMode is **Normal**.
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv SizeMode="Normal" SmallIcon ="image\syncfusion.png" Label="Syncfusion"/>
+<syncfusion:DropDownButtonAdv SizeMode="Normal" SmallIcon ="image\syncfusion.png" Label="Syncfusion"/>
 
 {% endhighlight %} 
 {% highlight c# %} 
 
-    DropDownButtonAdv button = new DropDownButtonAdv();
-    button.Label = "Syncfusion";
-    button.SizeMode = SizeMode.Normal;
-    button.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute)); 
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.Label = "Syncfusion";
+button.SizeMode = SizeMode.Normal;
+button.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute)); 
 
 {% endhighlight %} 
 {% endtabs %}
@@ -275,15 +274,15 @@ The **LargeIcon** property can be set as follows:
 {% tabs %}
 {% highlight xaml %} 
 
-    <syncfusion:DropDownButtonAdv SizeMode="Large" LargeIcon="Images\syncfusion.png" Label="Syncfusion"/> 
+<syncfusion:DropDownButtonAdv SizeMode="Large" LargeIcon="Images\syncfusion.png" Label="Syncfusion"/> 
 
 {% endhighlight %} 
 {% highlight c# %} 
 
-    DropDownButtonAdv button = new DropDownButtonAdv();
-    button.Label = "Syncfusion";
-    button.SizeMode = SizeMode.Large;
-    button.LargeIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute)); 
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.Label = "Syncfusion";
+button.SizeMode = SizeMode.Large;
+button.LargeIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute)); 
 
 {% endhighlight %}
 {% endtabs %}
@@ -298,16 +297,16 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv x:Name="button1" SizeMode="Normal" IconHeight="20" IconWidth="20" Label="Syncfusion" SmallIcon ="Images\syncfusion.png" />
+<syncfusion:DropDownButtonAdv x:Name="button1" SizeMode="Normal" IconHeight="20" IconWidth="20" Label="Syncfusion" SmallIcon ="Images\syncfusion.png" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-    DropDownButtonAdv button1 = new DropDownButtonAdv();
-    button1.Label = "Syncfusion";
-    button1.IconWidth=20;
-    button1.IconHeight=20;
-    button1.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+DropDownButtonAdv button1 = new DropDownButtonAdv();
+button1.Label = "Syncfusion";
+button1.IconWidth=20;
+button1.IconHeight=20;
+button1.SmallIcon = new BitmapImage(new Uri("Images\syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -317,16 +316,16 @@ Icon width and icon height can be set using [IconWidth](https://help.syncfusion.
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:DropDownButtonAdv x:Name="button2"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion"  SmallIcon ="Images\syncfusion.png" />
+<syncfusion:DropDownButtonAdv x:Name="button2"  SizeMode="Normal" IconHeight="30" IconWidth="30"  Label="Syncfusion"  SmallIcon ="Images\syncfusion.png" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-    DropDownButtonAdv button2 = new DropDownButtonAdv();
-    button2.Label = "Syncfusion";
-    button2.IconWidth=30;
-    button2.IconHeight=30;
-    button2.SmallIcon = new BitmapImage(new Uri(Images\syncfusion.png", UriKind.RelativeOrAbsolute));
+DropDownButtonAdv button2 = new DropDownButtonAdv();
+button2.Label = "Syncfusion";
+button2.IconWidth=30;
+button2.IconHeight=30;
+button2.SmallIcon = new BitmapImage(new Uri(Images\syncfusion.png", UriKind.RelativeOrAbsolute));
 
 {% endhighlight %}
 {% endtabs %}
@@ -344,7 +343,7 @@ N> For more information on how to bind data with command actions for Split Butto
 {% tabs %}
 {% highlight xaml %} 
 
-    <Window x:Class="Dropdown_Button_Menuitem_Binding.MainWindow"
+<Window x:Class="Dropdown_Button_Menuitem_Binding.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -371,76 +370,76 @@ N> For more information on how to bind data with command actions for Split Butto
             </syncfusion:DropDownMenuGroup>
         </syncfusion:DropDownButtonAdv>
     </Grid>
-    </window>
+</window>
 
 {% endhighlight %} 
 {% highlight c# %} 
 
-    public class Country
-    {
-        private string name;
+public class Country
+{
+    private string name;
 
-        public string Name
+    public string Name
+    {
+        get
         {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
+            return name;
         }
-        private BitmapImage flag;
-        public BitmapImage Flag
+        set
         {
-            get
-            {
-                return flag;
-            }
-            set
-            {
-                flag = value;
-            }
+            name = value;
         }
     }
+    private BitmapImage flag;
+    public BitmapImage Flag
+    {
+        get
+        {
+            return flag;
+        }
+        set
+        {
+            flag = value;
+        }
+    }
+}
     
-    public class CountryViewModel
+public class CountryViewModel
+{
+    private List<Country> dropDownItems;
+
+    public List<Country> DropDownItems
     {
-        private List<Country> dropDownItems;
-
-        public List<Country> DropDownItems
+        get
         {
-            get
-            {
-                return dropDownItems;
-            }
-            set
-            {
-                dropDownItems = value;
-            }
+            return dropDownItems;
         }
-
-        public CountryViewModel()
+        set
         {
-            DropDownItems = new List<Country>();
-            DropDownItems.Add(new Country()
-            {
-                Name = "India",
-                Flag = new BitmapImage(new Uri("/Images/india.png", UriKind.RelativeOrAbsolute))
-            });
-            DropDownItems.Add(new Country()
-            {
-                Name = "France",
-                Flag = new BitmapImage(new Uri("/Images/france.png", UriKind.RelativeOrAbsolute))
-            });
-            DropDownItems.Add(new Country()
-            {
-                Name = "Germany",
-                Flag = new BitmapImage(new Uri("/Images/germany.png", UriKind.RelativeOrAbsolute))
-            });
+            dropDownItems = value;
         }
     }
+
+    public CountryViewModel()
+    {
+        DropDownItems = new List<Country>();
+        DropDownItems.Add(new Country()
+        {
+            Name = "India",
+            Flag = new BitmapImage(new Uri("/Images/india.png", UriKind.RelativeOrAbsolute))
+        });
+        DropDownItems.Add(new Country()
+        {
+            Name = "France",
+            Flag = new BitmapImage(new Uri("/Images/france.png", UriKind.RelativeOrAbsolute))
+        });
+        DropDownItems.Add(new Country()
+        {
+            Name = "Germany",
+            Flag = new BitmapImage(new Uri("/Images/germany.png", UriKind.RelativeOrAbsolute))
+        });
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
