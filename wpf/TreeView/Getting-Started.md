@@ -6,7 +6,7 @@ platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Getting Started of TreeViewAdv
+# Getting Started with WPF TreeView (TreeViewAdv)
 
 This section explains how to create Tree layout using [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control.
 
@@ -66,10 +66,7 @@ To add the [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf
 
 <Grid>
 <syncfusion:TreeViewAdv Height="160" Width="160" HorizontalAlignment="Center"
-VerticalAlignment="Center" syncfusion:DockingManager.DockToFill="True" >
-<syncfusion:TreeViewItemAdv Header="WPF" />
-<syncfusion:TreeViewItemAdv Header="Winrt" />
-</syncfusion:TreeViewAdv>
+VerticalAlignment="Center" syncfusion:DockingManager.DockToFill="True" />
 </Grid>
 </Window>
 
@@ -115,17 +112,6 @@ using Syncfusion.Windows.Tools.Controls;
             treeView.Width = 150;
             treeView.HorizontalAlignment = HorizontalAlignment.Center;
 
-            //Creating Items
-            TreeViewItemAdv item1 = new TreeViewItemAdv();
-            item1.Header = "WPF";
-
-            TreeViewItemAdv item2 = new TreeViewItemAdv();
-            item2.Header = "Winrt";
-
-            //Adding items in TreeViewAdv
-            treeView.Items.Add(item1);
-            treeView.Items.Add(item2);
-
             //Adding control in MainWindow
             this.Content = treeView;
 
@@ -136,7 +122,7 @@ using Syncfusion.Windows.Tools.Controls;
 
 ## Adding TreeView item to TreeViewAdv control
 
-The TreeviewItem is added to a TreeViewAdv control either by using XAML or C# codes. The following code example lets you to create and add treeview items to the TreeViewAdv using [TreeViewItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewItemAdv.html).
+The TreeviewItem is added to a [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control either by using XAML or C# codes. The following code example lets you to create and add treeview items to the TreeViewAdv using [TreeViewItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewItemAdv.html).
 
 {% tabs %}
 
@@ -204,7 +190,7 @@ Title="MainWindow" Height="350" Width="525">
 
 ## Set VisualStyle
 
-TreeViewAdv supports various visual styles by using the SkinStorage. To apply Visual Studio style on the current layout, refer the below code to apply the value Metro to the VisualStyle property of the SkinStorage for the Window
+[TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) supports various visual styles by using the SkinStorage. To apply Visual Studio style on the current layout, refer the below code to apply the value Metro to the VisualStyle property of the SkinStorage for the Window
 
 {% tabs %}
 
@@ -214,10 +200,9 @@ TreeViewAdv supports various visual styles by using the SkinStorage. To apply Vi
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-syncfusion:SkinStorage.VisualStyle="Metro"
 Title="MainWindow" Height="350" Width="525">
 <Grid>
-<syncfusion:TreeViewAdv x:Name="Tree">
+<syncfusion:TreeViewAdv syncfusion:SkinStorage.VisualStyle="Metro" x:Name="Tree">
 <syncfusion:TreeViewItemAdv Header="WPF" />
 <syncfusion:TreeViewItemAdv Header="Winrt" />
 <syncfusion:TreeViewItemAdv Header="Silverlight" />
@@ -243,7 +228,7 @@ Title="MainWindow" Height="350" Width="525">
 
 ## Setting ItemsSource for TreeviewAdv
 
-The following code snippet sets a collection used to generate the Items of the TreeViewAdv control.
+The following code snippet sets a collection used to generate the Items of the [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control.
 
 {% tabs %}
 
@@ -306,3 +291,21 @@ End Class
 {% endtabs %}  
 
 ![ItemSource for TreeViewAdv](Getting_Started_images/Getting_Started_img2.jpeg)
+
+## Multiple Selection in TreeViewAdv
+
+The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control supports selecting multiple items by using the CTRL or SHIFT keys. The selected items are dragged to any item or node within the same control or to another TreeViewAdv control. This is achieved by enabling the [AllowMultiSelect](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~AllowMultiSelect.html) property. Click [here](https://help.syncfusion.com/wpf/treeview/selecting-node#enable-to-allow-multiple-selection-in-treeviewadv) to get detailed informartion on AllowMultiSelect function.
+
+![Multi Selecting of TreeViewAdv](Getting_Started_images/Getting_Started_img3.png)
+
+## Drag and Drop in TreeViewAdv
+
+By enabling the [AllowDragDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~AllowDragDrop.html) property TreeViewAdv control allows us to drag TreeView items from one location to another. By using the [DraggingContainerOpacity](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~DraggingContainerOpacity.html) property, we can change the opacity value of the dragged element. It is useful to be able to view the content behind the dragged element. Click [here](https://help.syncfusion.com/wpf/treeview/dragging-treeview-items) to get detailed information on drag and drop of TreeViewAdv items.
+
+![DragAndDrop with DraggingContainerOpacity](Getting_Started_images/Getting_Started_img4.png)
+
+## MultiColumn TreeView in TreeViewAdv
+
+TreeView control can be created with multiple columns by setting the [MultiColumnEnable](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~MultiColumnEnable.html) property to true. Click [here](https://help.syncfusion.com/wpf/treeview/creating-a-multicolumn-treeview) to get detailed information on how to create MultiColumn TreeViewAdv.
+
+![MultiColumnTreeView in TreeViewAdv](Getting_Started_images/Getting_Started_img5.png)
