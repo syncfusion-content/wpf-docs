@@ -260,6 +260,8 @@ splitbutton.SmallIcon = new BitmapImage(new Uri("images\country.png"));
 
 ![Resizing](Resizing-Support_images/Resizing-Support_img1.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Customize-Menu-Items) in GitHub. This sample showcases how to set the drop-down item icon, icon bar visibility, scrollbar visibility, and checkable support.
+
 ## Adding custom dropdown menu items
 
 The dropdown menu group has option to load custom items apart from actual dropdown menu items. One can populate the custom items using the [MoreItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuGroup~MoreItems.html) property.
@@ -269,53 +271,73 @@ N> The **MoreItems** property has return type `ObservableCollection<UIElement>`,
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SizeMode="Normal" SmallIcon="images\colors.png">
-    <syncfusion:DropDownMenuGroup IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
-        <syncfusion:DropDownMenuGroup.MoreItems>
-            <Label Content="More Items"/>
-        </syncfusion:DropDownMenuGroup.MoreItems>
-        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
-            <syncfusion:DropDownMenuItem.Icon>
-                <Image Source="images\black.png"/>
-            </syncfusion:DropDownMenuItem.Icon>
-        </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
-            <syncfusion:DropDownMenuItem.Icon   >
-                <Image Source="images\orange.png"/>
-            </syncfusion:DropDownMenuItem.Icon>
-        </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
-            <syncfusion:DropDownMenuItem.Icon>
-                <Image Source="images\red.png"/>
-            </syncfusion:DropDownMenuItem.Icon>
-        </syncfusion:DropDownMenuItem>
-    </syncfusion:DropDownMenuGroup>
-</syncfusion:SplitButtonAdv>
+<Window x:Class="SplitButton_Custom_Items.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SplitButton_Custom_Items"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:ColorViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <syncfusion:SplitButtonAdv Label="Colors" SizeMode="Normal" SmallIcon="Images\colors.png">
+            <syncfusion:DropDownMenuGroup  IconBarEnabled="True" MoreItems="{Binding Items}" IsMoreItemsIconTrayEnabled="False">
+                <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="Black">
+                    <syncfusion:DropDownMenuItem.Icon>
+                        <Image Source="Images\black.png"/>
+                    </syncfusion:DropDownMenuItem.Icon>
+                </syncfusion:DropDownMenuItem>
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+                    <syncfusion:DropDownMenuItem.Icon>
+                        <Image Source="Images\orange.png"/>
+                    </syncfusion:DropDownMenuItem.Icon>
+                </syncfusion:DropDownMenuItem>
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+                    <syncfusion:DropDownMenuItem.Icon>
+                        <Image Source="Images\red.png"/>
+                    </syncfusion:DropDownMenuItem.Icon>
+                </syncfusion:DropDownMenuItem>
+            </syncfusion:DropDownMenuGroup>
+        </syncfusion:SplitButtonAdv>
+    </Grid>
+</Window>
 
  {% endhighlight %}
  {% highlight c# %}
 
-SplitButtonAdv splitbutton = new SplitButtonAdv();
-DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Red", Icon=new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
-Label Item4 = new Label() { Content ="More Items" };
-menu.Items.Add(Item1);
-menu.Items.Add(Item2);
-menu.Items.Add(Item3);
-menu.MoreItems.Add(Item4);
-menu.IconBarEnabled = true;
-menu.IsMoreItemsIconTrayEnabled = true;
-splitbutton.Content = menu;
-splitbutton.Label = "Country";
-splitbutton.SizeMode = SizeMode.Normal;
-splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+using Syncfusion.Windows.Shared;
+using System;
+using System.Collections.ObjectModel;
+using System.Windows;
+using System.Windows.Controls;
+
+namespace SplitButton_Custom_Items
+{
+    public class ColorViewModel : NotificationObject
+    {
+        public ObservableCollection<UIElement> items = new ObservableCollection<UIElement>();
+
+        public ObservableCollection<UIElement> Items
+        {
+            get { return items; }
+            set { items = value; RaisePropertyChanged("Items"); }
+        }
+
+        public ColorViewModel()
+        {
+            Items.Add(new Label() { Content = "More Items" });
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-![More-item1](Moreitems_images/More_item_img2.png)
+![More-item1](Moreitems_images/More_item_img1.png)
 
 ## Setting icon bar visibility for custom dropdown menu items
 
@@ -324,54 +346,73 @@ The custom dropdown menu items icon visibility can be enabled/disabled by settin
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SizeMode="Normal" SmallIcon="images\colors.png">
-    <syncfusion:DropDownMenuGroup IconBarEnabled="True" IsMoreItemsIconTrayEnabled="False">
-        <syncfusion:DropDownMenuGroup.MoreItems>
-            <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="More Items">
-                <syncfusion:DropDownMenuItem.Icon>
-                    <Image Source="images\skyblue.png"/>
-                </syncfusion:DropDownMenuItem.Icon>
-            </syncfusion:DropDownMenuItem>
-        </syncfusion:DropDownMenuGroup.MoreItems>
-        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Black">
-            <syncfusion:DropDownMenuItem.Icon>
-                <Image Source="images\black.png"/>
-            </syncfusion:DropDownMenuItem.Icon>
-        </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
-            <syncfusion:DropDownMenuItem.Icon   >
-                <Image Source="images\orange.png"/>
-            </syncfusion:DropDownMenuItem.Icon>
-        </syncfusion:DropDownMenuItem>
-        <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
-            <syncfusion:DropDownMenuItem.Icon>
-                <Image Source="images\red.png"/>
-            </syncfusion:DropDownMenuItem.Icon>
-        </syncfusion:DropDownMenuItem>
-    </syncfusion:DropDownMenuGroup>
-</syncfusion:SplitButtonAdv>
+<Window x:Class="SplitButton_Custom_Items.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SplitButton_Custom_Items"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:ColorViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <syncfusion:SplitButtonAdv Label="Colors" x:Name="splitbutton" SizeMode="Normal" SmallIcon="Images\colors.png">
+            <syncfusion:DropDownMenuGroup  IconBarEnabled="True" MoreItems="{Binding Colors}" IsMoreItemsIconTrayEnabled="True">
+                <syncfusion:DropDownMenuItem  HorizontalAlignment="Left" Header="Black">
+                    <syncfusion:DropDownMenuItem.Icon>
+                        <Image Source="Images\black.png"/>
+                    </syncfusion:DropDownMenuItem.Icon>
+                </syncfusion:DropDownMenuItem>
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Orange">
+                    <syncfusion:DropDownMenuItem.Icon>
+                        <Image Source="Images\orange.png"/>
+                    </syncfusion:DropDownMenuItem.Icon>
+                </syncfusion:DropDownMenuItem>
+                <syncfusion:DropDownMenuItem HorizontalAlignment="Left" Header="Red">
+                    <syncfusion:DropDownMenuItem.Icon>
+                        <Image Source="Images\red.png"/>
+                    </syncfusion:DropDownMenuItem.Icon>
+                </syncfusion:DropDownMenuItem>
+            </syncfusion:DropDownMenuGroup>
+        </syncfusion:SplitButtonAdv>
+    </Grid>
+</Window>
 
 {% endhighlight %}
 {% highlight c# %}
 
-SplitButtonAdv splitbutton = new SplitButtonAdv();
-DropDownMenuGroup menu = new DropDownMenuGroup();
-DropDownMenuItem Item1 = new DropDownMenuItem() { Header="Black", Icon=new BitmapImage(new Uri("images\black.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item2 = new DropDownMenuItem() { Header ="Orange", Icon=new BitmapImage(new Uri("images\orange.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item3 = new DropDownMenuItem() { Header ="Red", Icon=new BitmapImage(new Uri("images\red.png")), HorizontalAlignment="Left"};
-DropDownMenuItem Item4 = new DropDownMenuItem() { Header ="More Items", Icon=new BitmapImage(new Uri("images\skyblue.png")), HorizontalAlignment="Left"};
-menu.Items.Add(Item1);
-menu.Items.Add(Item2);
-menu.Items.Add(Item3);
-menu.MoreItems.Add(Item4);
-menu.IconBarEnabled = true;
-menu.IsMoreItemsIconTrayEnabled = false;
-splitbutton.Content = menu;
-splitbutton.Label = "Colors";
-splitbutton.SizeMode = SizeMode.Normal;
-splitbutton.SmallIcon = new BitmapImage(new Uri("images\colors.png"));
+using Syncfusion.Windows.Shared;
+using Syncfusion.Windows.Tools.Controls;
+using System;
+using System.Collections.ObjectModel;
+using System.Windows;
+using System.Windows.Media.Imaging;
+
+namespace SplitButton_Custom_Items
+{
+    public class ColorViewModel : NotificationObject
+    {
+        public ObservableCollection<UIElement> color = new ObservableCollection<UIElement>();
+
+        public ObservableCollection<UIElement> Colors
+        {
+            get { return color; }
+            set { color = value; RaisePropertyChanged("Colors"); }
+        }
+
+        public ColorViewModel()
+        {
+            Colors.Add(new DropDownMenuItem() { Header = "More Items", Icon = new Image() { Source = new BitmapImage(new Uri("/Images/skyblue.png", UriKind.RelativeOrAbsolute)) } });
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-![More-item](Moreitems_images/More_item_img1.png)
+![More-item](Moreitems_images/More_item_img2.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-split-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items IconBar in Split Button control.
