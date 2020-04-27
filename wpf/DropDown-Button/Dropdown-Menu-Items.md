@@ -260,7 +260,7 @@ dropdownbutton.SmallIcon = new BitmapImage(new Uri("Images\country.png", UriKind
 
 ![popup-item](DropDownMenuItem_images/DropDownMenuItem_img4.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Customize-Menu-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items IconBar in Dropdown control.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Customize-Menu-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items icon bar in dropdown button control.
 
 ## Adding custom dropdown menu items
 
@@ -411,4 +411,4 @@ public class ColorViewModel : NotificationObject
 
 ![More-item](Moreitems_images/More_item_img2.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items IconBar in Dropdown control.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/tree/master/Samples/Add-Custom-Items) in GitHub. This sample showcases how to add custom dropdown menu items and handle visibility of custom items icon bar in dropdown button control.

@@ -138,7 +138,7 @@ public partial class MainWindow:Window
 
 Bind the command to [DropDownMenuItem.Command](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem~Command.html) property of [DropDownMenuItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.DropDownMenuItem.html). For example, `ClickCommand` has been bounded to `DropDownMenuItem`.
 
-N> For more information on Command Binding, please refer [Command-Binding](https://help.syncfusion.com/wpf/dropdown-button/command-binding)
+N> For more information on Command Binding, please refer [Command Binding](https://help.syncfusion.com/wpf/dropdown-button/command-binding)
 
 {% tabs %}
 {% highlight xaml %}
@@ -337,4 +337,4 @@ public class CountryViewModel: NotificationObject
 
 ![Data-Binding](DropDownButtonAdv_Binding_images/DropDownButtonAdv_Binding_img2.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Data-Binding) in GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-dropdown-button-examples/blob/master/Samples/Data-Binding) in GitHub.
