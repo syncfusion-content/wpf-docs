@@ -38,7 +38,7 @@ Column charts plot discrete rectangles for the given values. The following code 
 
 The following code example illustrates how to use ColumnSeries3D:
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -70,7 +70,7 @@ Bar series are similar to column series, excepts its orientation. The following 
 
 The following code example illustrates how to use BarSeries3D:
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -100,7 +100,7 @@ chart3D.Series.Add(series);
 
 [`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) property of series is used to decide the width of a segment. [`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) value ranges from 0 to 1. The following code illustrates how to set [`Spacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SpacingProperty.html) property of the series,
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -131,7 +131,7 @@ chart3D.Series.Add(series);
 
 [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property in series,
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -173,7 +173,7 @@ chart3D.Series.Add(series);
 ## Line Charts
 Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries3D.html#) using given data.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -208,7 +208,7 @@ This size can be defined by using below properties.
 * [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html#) 
 * [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html#) properties.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -238,7 +238,7 @@ This size can be defined by using below properties.
 ## Area Chart
 [`AreaSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AreaSeries3D.html#) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -273,7 +273,7 @@ This size can be defined by using below properties.
 
 The following code example illustrates how to use StackingColumnSeries3D:
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -327,7 +327,7 @@ The following code example illustrates how to use StackingColumnSeries3D:
 
 The following code example illustrates how to use StackingColumn100Series3D:
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -371,7 +371,7 @@ The following code example illustrates how to use StackingColumn100Series3D:
 
 The following code example illustrates how to use StackingBarSeries3D:
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -425,7 +425,7 @@ The following code example illustrates how to use StackingBarSeries3D:
 
 The following code example illustrates how to use StackingBar100Series3D:
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -468,7 +468,7 @@ The following code example illustrates how to use StackingBar100Series3D:
 
 The following code example illustrates the PieSeries3D.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
