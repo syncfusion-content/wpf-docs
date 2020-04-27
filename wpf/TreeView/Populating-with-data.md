@@ -214,6 +214,8 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 ![Add WPF TreeView item using data binding](Populating_with_data_images/Populating_with_data_img1.jpeg)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/Add-wpf-treeviewadv-items-by-databinding-in-XML)
+
 ### Binding to object
 
 TreeViewAdv supports object binding. The following example illustrates data binding:

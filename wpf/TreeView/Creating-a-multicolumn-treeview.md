@@ -105,6 +105,8 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 
 ![Multiple columns with header and items in WPF TreeView](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img2.jpeg)
 
+[View sample in GitHub](https://github.com/SyncfusionExamples/Create-multiple-column-in-wpf-treeviewadv)
+
 
 ## Auto-Resize of columns in Multicolumn TreeView
 
