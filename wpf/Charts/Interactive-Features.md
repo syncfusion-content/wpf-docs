@@ -16,6 +16,10 @@ The following interactive features are supported in SfChart:
 * Visual Data Editing
 * Resizing Scrollbar
 * CrossHair
+* ToolTip
+* TrackBall
+* Zoom and Pan
+* Selection
 
 ## Visual data editing
 
@@ -1228,3 +1232,23 @@ The default appearance of the crosshair axis labels can be customized by using t
 {% endtabs %}
 
 ![Crosshair axis labels customization in WPF](Interactive-Features_images/crossHairTemplate.png)
+
+## Tooltip
+The ToolTip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries.html#). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment.
+
+Refer to this [`link`](https://help.syncfusion.com/wpf/charts/Tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip appearance and its alignment.
+
+## Trackball
+The [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) allows you to track a data point closer to the cursor position.
+
+Refer to this [`link`](https://help.syncfusion.com/wpf/charts/Trackball) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize trackball.
+
+## Zoom and pan
+Zooming and panning provides you to take a close-up look of the data point plotted in the series. SfChart allows you to zoom the chart area with the help of the zoom feature. 
+
+Refer to this [`link`](https://help.syncfusion.com/wpf/charts/zoompan) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize zooming modes and its toolbar.
+
+## Selection
+SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
+
+Refer to this [`link`](https://help.syncfusion.com/wpf/charts/Selection) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize the types of selection an its style.
