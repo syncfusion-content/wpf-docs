@@ -270,3 +270,7 @@ If multiple choices are allowed for the user, then the ComboBoxAdv is useful to 
 [IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~IsEditable.html) property helps to edit the text in [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
 ![Editable](Getting-Started_images/ComboBoxAdv_img6.png)
+
+## See Also
+
+[How to define maximum number of items to be shown in combobox dropdown?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
