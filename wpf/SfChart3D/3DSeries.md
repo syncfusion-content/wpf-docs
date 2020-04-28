@@ -199,7 +199,7 @@ chart3D.Series.Add(series);
 
 ![Column Charts support in WPF 3D Chart](3D-Charts_images/Series/LineSeries3D.png)
 
-### Scatter Chart
+## Scatter Chart
 
 [`ScatterSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html#) is similar to bubble series when each point being represented by an ellipse with equal size. 
 
