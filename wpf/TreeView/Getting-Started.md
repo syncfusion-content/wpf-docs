@@ -294,7 +294,7 @@ End Class
 
 ## Multiple Selection in TreeViewAdv
 
-The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control supports selecting multiple items by using the CTRL or SHIFT keys. The selected items are dragged to any item or node within the same control or to another TreeViewAdv control. This is achieved by enabling the [AllowMultiSelect](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~AllowMultiSelect.html) property. Click [here](https://help.syncfusion.com/wpf/treeview/selecting-node#enable-to-allow-multiple-selection-in-treeviewadv) to get detailed informartion on AllowMultiSelect function.
+The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control supports selecting multiple items by using the CTRL or SHIFT keys. The selected items are dragged to any item or node within the same control or to another TreeViewAdv control. This is achieved by enabling the [AllowMultiSelect](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~AllowMultiSelect.html) property. Click [here](https://help.syncfusion.com/wpf/treeview/selecting-node#enable-to-allow-multiple-selection-in-treeviewadv) to get detailed information on AllowMultiSelect function.
 
 ![Multi Selecting of TreeViewAdv](Getting_Started_images/Getting_Started_img3.png)
 
