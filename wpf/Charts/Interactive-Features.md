@@ -1251,4 +1251,4 @@ Refer to this [`link`](https://help.syncfusion.com/wpf/charts/zoompan) to learn 
 ## Selection
 SfChart supports selection that allows you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#). 
 
-Refer to this [`link`](https://help.syncfusion.com/wpf/charts/Selection) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customiza the types of selection an its style.
+Refer to this [`link`](https://help.syncfusion.com/wpf/charts/Selection) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) to customize the types of selection an its style.
