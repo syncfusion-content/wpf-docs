@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Group
+# Group and its customization
 
 Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 
