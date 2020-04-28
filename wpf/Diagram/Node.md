@@ -741,3 +741,4 @@ The `Constraints` property of node allows you to enable or disable certain featu
 * [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
 * [How to host different UI elements as node content?](https://www.syncfusion.com/kb/9456/how-to-host-different-ui-elements-as-node-content-in-the-wpf-diagramsfdiagram)
 * [How to restrict the child node dragging whereas allow group dragging?](https://www.syncfusion.com/kb/11462/how-to-restrict-the-child-node-dragging-whereas-allow-group-dragging-in-wpf)
+* [How to restrict the node dragging within boundaries?](https://www.syncfusion.com/kb/6690/how-to-restrict-the-node-dragging-within-boundaries-in-the-wpf-diagramsfdiagram)
