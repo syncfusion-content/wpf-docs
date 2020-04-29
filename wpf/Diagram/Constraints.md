@@ -195,7 +195,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %} 
 
-![GraphConstraints](Constraints_images/Contraintsgif.gif)
+![GraphConstraints](Constraints_images/ContraintsAll.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Constraints-Node-Connector-Graph)
 
@@ -236,7 +236,7 @@ NodePortViewModel port=	new NodePortViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![GraphConstraints](Constraints_images/portgif.gif)
+![GraphConstraints](Constraints_images/portconnect.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Port-Constraints-sample)
 
