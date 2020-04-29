@@ -6,7 +6,7 @@ platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Printing
+# Printing and its customization
 
 SfDiagram provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~Print().html "PrintingService.Print") method.
 
