@@ -75,43 +75,68 @@ If the method `ShouldPropertyGridTryToHandleKeyDown` returns true, the property 
 {% tabs %}
 {% highlight C# %}
 
-public class PasswordEditor : IBaseTypeEditor
+public class ComboBoxEditor : BaseTypeEditor
     {
+        ComboBox enumCombo;
+
         public override void Attach(PropertyViewItem property, PropertyItem info)
         {
-            if(info.CanWrite)
-            {
-                passwordBox.IsEnabled = true;
-            }
-            else
-            {
-                passwordBox.IsEnabled = false;
-            }
-            passwordBox.Password = info.Value.ToString();
+            var binding = base.CreatePropertyInfoBinding(info, enumCombo);
+            BindingOperations.SetBinding(enumCombo, ComboBox.SelectedItemProperty, binding);
         }
 
-        PasswordBox passwordBox;
-        public override object Create(PropertyInfo propertyInfo)
+        public override object Create(PropertyInfo PropertyInfo)
         {
-            passwordBox = new PasswordBox(); 
-            return passwordBox;
+            return this.CreateEditor(PropertyInfo.PropertyType);
+        }
+
+        public override object Create(PropertyDescriptor PropertyDescriptor)
+        {
+            return this.CreateEditor(PropertyDescriptor.PropertyType);
         }
 
         public override void Detach(PropertyViewItem property)
         {
-            passwordBox = null;
+            if (enumCombo != null)
+            {
+                BindingOperations.ClearAllBindings(enumCombo);
+                BindingOperations.ClearBinding(enumCombo, ComboBox.SelectedItemProperty);
+            }
+            enumCombo.ItemsSource = null;
+            enumCombo.Items.Clear();
+            enumCombo = null;
+        }
+
+        public override bool ShouldPropertyGridTryToHandleKeyDown(Key key)
+        {
+            if(key == Key.Up || key == Key.Down)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         /// <summary>
-        /// Here, the property grid should not handle the focus of the editor which means, while doing key navigation the next focuable editor will not be focused. And the PasswordEditor will have the focus and handles the key down event.
+        /// Creates and initializes a new instance of the ComboBox editor.
         /// </summary>
-        public override bool ShouldPropertyGridTryToHandleKeyDown(Key key)
+        /// <param name="propertyType">The property type</param>
+        /// <returns>The EnumComboEditor</returns>
+        private ComboBox CreateEditor(Type propertyType)
         {
-            return false;
+            enumCombo = new ComboBox()
+            {
+                ItemsSource = EnumHelper.GetValues(propertyType),
+                BorderThickness = new Thickness(0)
+            };
+            return enumCombo;
         }
+
+
     }
 
 {% endhighlight %}
 {% endtabs %} 
 
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor/How-to-prevent-moving-focus-to-next-editor-propertygrid) to download the sample that showcases how to prevent propertygrid from handling key down event of the editors through `ShouldPropertyGridTryToHandleKeyDown` method.
 
