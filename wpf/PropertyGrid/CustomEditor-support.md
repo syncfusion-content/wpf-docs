@@ -140,9 +140,9 @@ public class IntegerEditor : ITypeEditor {
 {% endhighlight  %}
 {% endtabs %}
 
-## Creating the Custom Editor when SelectedObject is of dynamic type
+## Creating Custom Editor for a dynamic property.
 
-If the `SelectedObject` of PropertyGrid is of type `dynamic`, `ExpandoObject` or `ICustomTypeDescriptor` we need to create the `CustomEditor` class by inheriting [BaseTypeEditor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html). You can initialize a new instance of the custom editor using the `BaseTypeEditor.Create(PropertyDescriptor propertyDescriptor)` function. Below example shows, how to get the value of dynamic properties using its PropertyDescriptor and apply the value in `ComboEditor` to ComboBox objects.
+If the `SelectedObject` has a property of type `dynamic`, `ExpandoObject` or `ICustomTypeDescriptor`, we can create `CustomEditor` class by inheriting [BaseTypeEditor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.BaseTypeEditor.html). You can initialize a new instance of the custom editor using the `BaseTypeEditor.Create(PropertyDescriptor propertyDescriptor)` function. Below example shows, how to get the value of dynamic properties using its PropertyDescriptor and apply the value in `ComboEditor` to ComboBox objects.
 
 {% tabs %}
 
@@ -165,11 +165,13 @@ public class ComboEditor : BaseTypeEditor
         BindingOperations.SetBinding(comboBox, ComboBox.SelectedItemProperty, binding);
     }
 
+    // Create a custom editor for a normal property
     public override object Create(PropertyInfo PropertyInfo)
     {
         throw new NotImplementedException();
     }
-
+    
+    // Create a custom editor for a dynamic property
     public override object Create(PropertyDescriptor PropertyDescriptor)
     {
         comboBox = new ComboBox();
