@@ -537,3 +537,250 @@ EmployeeViewModel class:
 ![ImageMemberPath](Auto-Complete_images/ImageMemberPath.png)
 
 Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ImageMemberPath-2093350688) link.
+
+## Filtering options
+
+The phenomenon of string comparison for filtering suggestions can be changed by using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionMode.html) property. The default filtering strategy is “StartsWith” and is case-insensitive.
+
+<table>
+<tr>
+<th>SuggestionMode</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>None</td>
+<td>
+The control returns the entire collection without filtering when text is typed by the user.
+</td>
+</tr>
+<tr>
+<td>
+StartsWith
+</td>
+<td>
+Displays all matches that begins with the typed characters in the control. This strategy is case-insensitive.
+</td>
+</tr>
+<tr>
+<td>
+StartsWithCaseSensitive
+</td>
+<td>
+Displays all matches that starts with the typed characters in the control. This strategy is case-sensitive.
+</td>
+</tr>
+<tr>
+<td>
+StartsWithOrdinal
+</td>
+<td>
+The control returns all possible matches starting with the text typed by the user based on the OrdinalIgnoreCase.
+</td>
+</tr>
+<tr>
+<td>
+StartsWithOrdinalCaseSensitive
+</td>
+<td>
+The control returns all possible matches starting with the text typed by the user by Ordinal, which is case sensitive.
+</td>
+</tr>
+<tr>
+<td>
+Contains
+</td>
+<td>
+Displays all matches that contains typed characters in the control. This strategy is case-insensitive.
+</td>
+</tr>
+<tr>
+<td>
+ContainsCaseSensitive
+</td>
+<td>
+The control returns all possible matches that contains the text typed by the user, which is culture and case-sensitive.
+</td>
+</tr>
+<tr>
+<td>
+ContainsOrdinal
+</td>
+<td>
+The control returns all possible matches that contains the text typed by the user based on the OrdinalIgnoreCase.
+</td>
+</tr>
+<tr>
+<td>
+ContainsOrdinalCaseSensitive
+</td>
+<td>
+The control returns all possible matches that contains the text typed by the user based on the Ordinal, which is case-sensitive.
+</td>
+</tr>
+<tr>
+<td>Equals</td>
+<td>
+Displays all words that completely matches the typed characters in the control. This strategy is case-insensitive.
+</td>
+</tr>
+<tr>
+<td>
+EqualsCaseSensitive
+</td>
+<td>
+Displays all words that completely matches the typed characters in the control. This strategy is case-sensitive.
+</td>
+</tr>
+<tr>
+<td>
+EqualsOrdinal
+</td>
+<td>
+The control returns all possible matches that equals the text typed by the user based on the OrdinalIgnoreCase.
+</td>
+</tr>
+<tr>
+<td>
+EqualsOrdinalCaseSensitive
+</td>
+<td>
+The control returns all possible matches that equals the text typed by the user based on the Ordinal, which is case-sensitive.
+</td>
+</tr>
+<tr>
+<td>
+Custom
+</td>
+<td>
+The control returns all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
+</td>
+</tr>
+<tr>
+<td>
+EndsWith
+</td>
+<td>
+Displays all matches that ends with the typed characters in the control. This strategy is case-insensitive.
+</td>
+</tr>
+<tr>
+<td>
+EndsWithCaseSensitive
+</td>
+<td>
+Displays all matches that ends with the typed characters in the control. This strategy is case-sensitive.
+</td>
+</tr>
+<tr>
+<td>
+EndsWithOrdinal
+</td>
+<td>
+The control returns all possible matches ending with the text typed by the user based on the OrdinalIgnoreCase.
+</td>
+</tr>
+<tr>
+<td>
+EndsWithOrdinalCaseSensitive
+</td>
+<td>
+The control returns all possible matches ending with the text typed by the user by Ordinal, which is case-sensitive.
+</td>
+</tr>
+</table>
+
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="AutoCompleteSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoCompleteSample"
+        mc:Ignorable="d"
+        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:EmployeeViewModel/>
+    </Window.DataContext>
+    <Window.Content>
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      Width="400"
+                                      SearchItemPath="Name"
+                                      SuggestionMode="StartsWith"
+                                      AutoCompleteMode="Suggest"
+                                      AutoCompleteSource="{Binding Employees}"/>
+    </Window.Content>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.Windows.Controls.Input;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Data;
+
+namespace AutoCompleteSample
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.DataContext = viewModel;
+            SfTextBoxExt textBoxExt = new SfTextBoxExt()
+            {
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                SearchItemPath = "Name",
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                SuggestionMode = SuggestionMode.StartsWith,
+                Width = 400
+            };
+
+            Binding autoCompleteSourceBinding = new Binding();
+            autoCompleteSourceBinding.Source = viewModel;
+            autoCompleteSourceBinding.Path = new PropertyPath("Employees");
+            BindingOperations.SetBinding(textBoxExt, SfTextBoxExt.AutoCompleteSourceProperty, autoCompleteSourceBinding);
+
+            this.Content = textBoxExt;
+        }
+    }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+
+    public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
+            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
+            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![StartsWith](Auto-Complete_images/Auto-Complete_img7.png)

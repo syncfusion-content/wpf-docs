@@ -9,11 +9,11 @@ documentation: ug
 
 # Load On Demand in WPF TreeGrid (SfTreeGrid)
 
-SfTreeGrid supports to load the data in on-demand. It helps to load the child items from services when end-user expands the node. This can be achieved by using the [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LoadOnDemandCommand.html) command or [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html) event as follows                                                                                          
+SfTreeGrid supports to load the data in on-demand. It helps to load the child items from services when end-user expands the node. This can be achieved by using the [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LoadOnDemandCommand.html) command or [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html) event as follows.                                                                                          
 
-## Using LoadOnDemandCommand
+## Load on demand using command
 
-SfTreeGrid allows you to load child items only when they are requested to load on-demand. Initially populate the root Nodes by assigning `SfTreeGrid.ItemsSource` and then when any node is expanded, child items can be loaded using [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LoadOnDemandCommand.html)
+SfTreeGrid allows you to load child items only when they are requested to load on-demand. Initially populate the root Nodes by assigning `SfTreeGrid.ItemsSource` and then when any node is expanded, child items can be loaded using [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LoadOnDemandCommand.html).
 
 
 {% tabs %}
@@ -254,21 +254,40 @@ public void Execute(object parameter)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample demo [here](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-in-wpf-treegrid).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-using-command-in-wpf-treegrid).
 
-## Using RequestTreeItems Event
+## Load on demand using event
 
-SfTreeGrid supports to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html) event. `RequestTreeItems` event is triggered at the time of loading and when user expand any node at runtime.
+SfTreeGrid supports to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html) event. `RequestTreeItems` event is triggered at the time of loading and when user expand any node at runtime. SfTreeGrid gets the root and leaf nodes through this event handler.
+`TreeGridRequestTreeItemsEventArgs.ParentItem` denotes the data object looking for its child nodes. If it is null, it denotes SfTreeGrid requesting root nodes.
 
 In the below example SfTreeGrid is populated through `SfTreeGrid.RequestTreeItems` instead of setting [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSource.html).
 
-### Creating Data Model
-
-You must create data model for application to populate the SfTreeGrid in on-demand. 
-
-1. Creating data object class named `EmployeeInfo` and declare properties as shown below,
 
 {% tabs %}
+{% highlight c# %}
+ViewModel viewModel = new ViewModel();
+treeGrid.RequestTreeItems += TreeGrid_RequestTreeItems;
+      
+private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEventArgs args)
+{
+
+    if (args.ParentItem == null)
+    {
+        args.ChildItems = viewModel.Employees.Where(x => x.ReportsTo == -1);
+    }
+
+    else
+    {
+        EmployeeInfo employee = args.ParentItem as EmployeeInfo;
+
+        if (employee != null)
+        {
+            args.ChildItems = viewModel.GetEmployees().Where(x => x.ReportsTo == employee.ID);
+        }
+    }
+}
+{% endhighlight %}
 {% highlight c# %}
 public class EmployeeInfo
 {
@@ -316,11 +335,6 @@ public class EmployeeInfo
     }
 }
 {% endhighlight %}
-{% endtabs %}
-
-Create a `ViewModel` class with Employees property and Employees property is initialized with several data objects in constructor.
-
-{% tabs %}
 {% highlight c# %}
 public class ViewModel
 {
@@ -390,38 +404,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-### Populating TreeGrid
-
-Populate the data for SfTreeGrid in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html) event. SfTreeGrid gets the root and leaf nodes through this event handler.
-`TreeGridRequestTreeItemsEventArgs.ParentItem` denotes the data object looking for its child nodes. If it is null, it denotes SfTreeGrid requesting root nodes.
-
-{% tabs %}
-{% highlight c# %}
-ViewModel viewModel = new ViewModel();
-treeGrid.RequestTreeItems += TreeGrid_RequestTreeItems;
-      
-private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEventArgs args)
-{
-
-    if (args.ParentItem == null)
-    {
-        args.ChildItems = viewModel.Employees.Where(x => x.ReportsTo == -1);
-    }
-
-    else
-    {
-        EmployeeInfo employee = args.ParentItem as EmployeeInfo;
-
-        if (employee != null)
-        {
-            args.ChildItems = viewModel.GetEmployees().Where(x => x.ReportsTo == employee.ID);
-        }
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
 You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RepopulateTree.html) method.
-![Populating SfTreeGrid](Getting-Started_images/Getting-Started_img4.png)
+![Populating SfTreeGrid](Getting-Started_images/Getting-Started_img4.gif)
 
-You can download the sample demo [here](https://github.com/syncfusion/wpf-demos/tree/master/TreeGrid/OnDemandLoadingDemo).
+N> [View Sample in GitHub](https://github.com/syncfusion/wpf-demos/tree/master/TreeGrid/OnDemandLoadingDemo).
