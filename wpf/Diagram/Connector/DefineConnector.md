@@ -92,7 +92,7 @@ Polyline is a continuous line of a segment or a continuous line composed of more
 {% highlight xaml %}
 
 <!--Initialize the Sfdiagram-->
-<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="Line" 
+<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="PolyLine" 
                       Tool="ContinuesDraw" DrawingTool="Connector" />
 
 {% endhighlight %}
