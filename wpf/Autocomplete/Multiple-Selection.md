@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-## Multiple selection in WPF AutoComplete (SfTextBoxExt)
+# Multiple selection in WPF AutoComplete (SfTextBoxExt)
 
 Select the multiple items from a suggestion list using the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property. There are two ways to perform multi-selection in autocomplete. The default value of MultiSelectMode is None.
 

@@ -113,7 +113,7 @@ Diagram.KnownTypes = () => new List<Type>()
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the [Save and Load sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Serialization) to depict all these supports.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Serialization)
 
 ## How to load SfDiagram's old version in new version 
 

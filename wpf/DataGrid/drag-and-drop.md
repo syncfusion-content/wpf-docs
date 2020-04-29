@@ -278,7 +278,7 @@ To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfus
 
 ![Customizing draggable Popup in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img27.png)
 
-### Customize draggable popup to show corresponding dragging row data 
+### Customizing draggable popup to show corresponding dragging row data 
 
 You can customize the dragging popup to show the corresponding drag row data by customizing the `RowDragDropTemplate` with binding the data from the `DraggingRecords` property.
 

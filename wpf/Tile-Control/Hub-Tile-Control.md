@@ -378,6 +378,8 @@ public class HubTileTransitionCompleted : TargetedTriggerAction<SfHubTile>
 
 ![wpf hubtile transition completed](Getting-Started_images/wpf-hubtile-transitioncompleted.png)
 
+N> View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Hub%20Tile/Getting%20Started) in GitHub. The sample covers topics such as setting header, image, title, secondary content and transitions in Hub Tile control. 
+
 ## Grouping
 
 Several tiles can be grouped using the [GroupName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfHubTile.Wpf~Syncfusion.Windows.Controls.Notification.HubTileBase~GroupName.html) property of hub tile control. The group name will be used when the entire group of tiles needs to be freeze/unfreeze.
@@ -551,43 +553,45 @@ public class ViewModel
 {% tabs %}
 {% highlight XAML %}
 
-<Window x:Class="HubTileGrouping_Sample.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:HubTileGrouping_Sample"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        xmlns:shared="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.SfShared.Wpf"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+<Window x:Class="HubTile_Data_Binding.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    xmlns:local="clr-namespace:HubTile_Data_Binding"
+    xmlns:shared="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.SfShared.Wpf"
+    Title="Hub Tile Data Binding Demo"    
+    ResizeMode="NoResize"
+    Width="700"
+    Height="600"
+    Icon="App.ico"
+    WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <local:ImageConverter x:Key="Image"/>
+        <local:ImageConverter x:Key="Image" />
     </Window.Resources>
     <Window.DataContext>
-        <local:ViewModel/>
+        <local:ViewModel />
     </Window.DataContext>
-    <Grid>
+    <Grid HorizontalAlignment="Center">
         <ListView
-            x:Name="List"
+            x:Name="List" 
             ItemsSource="{Binding Items}"
-            ScrollViewer.VerticalScrollBarVisibility="Disabled">
-        <ListView.ItemTemplate>
-        <DataTemplate>
-        <syncfusion:SfHubTile
-            Title="{Binding Title}"
-            Foreground="White"
-            Header="{Binding Header}"
-            ImageSource="{Binding ImageSource, Converter={StaticResource Image}}"
-            Interval="{Binding Interval}">
-        </syncfusion:SfHubTile>
-        </DataTemplate>
-        </ListView.ItemTemplate>
-        <ListBox.ItemsPanel>
-            <ItemsPanelTemplate>
-                <WrapPanel  Orientation="Vertical" />
-            </ItemsPanelTemplate>
-        </ListBox.ItemsPanel>
+            ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="10" BorderBrush="White" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <syncfusion:SfHubTile
+                        Title="{Binding Title}"
+                        Foreground="White"
+                        Header="{Binding Header}"
+                        ImageSource="{Binding ImageSource, Converter={StaticResource Image}}"
+                        Interval="{Binding Interval}">
+                    </syncfusion:SfHubTile>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Margin="10"  Orientation="Vertical" />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
         </ListView>
     </Grid>
 </Window>
@@ -596,6 +600,8 @@ public class ViewModel
 {% endtabs %}
 
 ![wpf hub tile grouping via databinding](Getting-Started_images/wpf-hubtile-grouping-binding.png)
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-tile-control-examples/tree/master/Hub%20Tile/Windows-10-like-tiles) in GitHub.
 
 ## Freezing/Unfreezing 
 
@@ -1111,9 +1117,9 @@ The secondary content of the tile can be customized by using the [SecondaryConte
             <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Image Source="/Assets/HubTile.png" />
-            <CheckBox x:Name="checkbox" Grid.Row="1" Foreground="White" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}" Foreground="White"/>
+            <CheckBox x:Name="checkbox" Grid.Row="1" Foreground="White" Content="Freeze" IsChecked="{Binding ElementName=hubtile,Path=IsFrozen}" />
             <TextBlock Grid.Row="2" Text="This is the secondary content of the tile displayed at each transition." Foreground="White" FontSize="12" TextWrapping="Wrap" FontStyle="Italic"/>
-            </StackPanel>
+        </Grid>
         </DataTemplate>
     </syncfusion:SfHubTile.SecondaryContentTemplate>
 </syncfusion:SfHubTile>

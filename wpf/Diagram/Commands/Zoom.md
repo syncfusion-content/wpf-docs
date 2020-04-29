@@ -162,4 +162,4 @@ The [Reset](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-Please find the [Zoom and Reset Command Sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Zoom%20Command) to depict these commands.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Commands/Zoom%20Command)

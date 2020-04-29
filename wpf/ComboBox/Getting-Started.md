@@ -36,7 +36,7 @@ The [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncf
 In order to add control manually in XAML, do the below steps,
 1. Add the below required assembly references to the project,
            * Syncfusion.Shared.WPF
-2.  Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+2.  Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page or Syncfusion.Windows.Tools.Controls namespace.
 3. Declare ComboBoxAdv in XAML page.
 {% tabs %}
 {% highlight xaml %}
@@ -125,8 +125,6 @@ namespace ComboBox
     }
 {% endhighlight %}
 {% endtabs %}
-
-N> If you want your data object (PopulationInfo class) to automatically reflect property changes, then the object must implement **INotifyPropertyChanged** interface.
 
 2. Create a **ViewModel** class with several data objects in constructor.
 {% tabs %} 
@@ -226,7 +224,7 @@ N> [View the sample in GitHub](https://github.com/SyncfusionExamples/bind-the-da
 
 ### Defining ItemTemplate
 
-You can customize the visualization of data object using the [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8). The Item template of [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) can be customized as below.
+You can customize the visualization of data object using the [ItemTemplate](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.itemscontrol.itemtemplate?view=netframework-4.8).
 
 {% tabs %}
 {% highlight xaml %}
@@ -272,6 +270,10 @@ Now while selecting the multiple items it looks like this.
 ![Multiple selection](Getting-Started_images/ComboBoxAdv_img5.png)
 
 ### Editing
-ComboBoxAdv also provides the user to edit the text. This can be enabled by using the [IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~IsEditable.html) property. Enabling this property makes the ComboBoxAdv control to be displayed like below
+[IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~IsEditable.html) property helps to edit the text in [ComboBox](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
 ![Editable](Getting-Started_images/ComboBoxAdv_img6.png)
+
+## See Also
+
+[How to define maximum number of items to be shown in combobox dropdown?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
