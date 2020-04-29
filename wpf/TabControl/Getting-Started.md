@@ -184,6 +184,32 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 
 ![Positioning tabitems at the bottom in WPF TabControl](Getting-Started_images/wpf-tabcontrol-orientation.png)
 
+## Display mode of the TabControl
+
+If you want to show tab items without its headers in the `TabControl`, use the [FullScreenMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~FullScreenMode.html) property. If you set `FullScreenMode` property value as `ControlMode`, then it will auto hide headers and show it only on when hover the mouse on repesctive tab header placed area. You can also display the `TabControl` in the full window by setting the `FullScreenMode` property value as `WindowMode`. The default value of `FullScreenMode` property is `None`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt FullScreenMode="ControlMode"
+                          TabStripPlacement="Bottom"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+    <syncfusion:TabItemExt Header="tabItem3" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.FullScreenMode = FullScreenMode.ControlMode;
+tabControlExt.TabStripPlacement = Dock.Bottom;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Show the tab item without its header](Getting-Started_images/FullScreenMode.gif)
+
 ## Selecting TabItem
 
 You can select a particular tabitem in `TabControl` by setting the `TabItemExt.IsSelected` property to `true`. You can select only one tab at a time.
@@ -502,3 +528,6 @@ tabItem2.ContextMenuItems.Add(customMenuItem1);
 {% endtabs %}
 
 ![Added custom context menu for tabitems in WPF TabControl](Getting-Started_images/wpf-tabcontrol-customcontextmenu.png)
+
+
+

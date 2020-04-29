@@ -13,7 +13,7 @@ This section explains how to set header text and UI customization of the tab hea
 
 ![Tab items with header text](Tab-Item-Header_images/Header_base.png)
 
-## Adding tab item header
+## Setting tab item header
 
 You can add a text for the each tab headers by using the `TabItemExt.Header` property.
 
@@ -66,6 +66,12 @@ tabControlExt.EnableLabelEdit = true;
 {% endtabs %}
 
 ![Tab items header text changed at runtime](Tab-Item-Header_images/Header_runtime.png)
+
+## Custom UI for the edit tab item header
+
+You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
+
+Please refer [this] page to know more details about `EditHeaderTemplate`.
 
 ## Setting size and alignment of tab header
 
@@ -225,6 +231,78 @@ tabControlExt.HideHeaderOnSingleChild = true;
 
 ![TabControl contains single item without tab header](Tab-Item-Header_images/NoTabheader.png)
 
+## Change tab item background
+
+If you want to change the tab item and its header panel background, use the `Background` and [TabPanelBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabPanelBackground.html) properties. You can change the hover background of all tab headers by using the [TabItemHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemHoverBackground.html) property. You can also change the indivual tab item header background and its hover background by using the `TabItemExt.Background` and [TabItemExt.HoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~HoverBackground.html) properties. 
+
+N> If you use both `TabItemHoverBackground` and `TabItemExt.HoverBackground` for the tab item, the `TabItemExt.HoverBackground` have higher priority for that tab item.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Background="LightPink"
+                          TabPanelBackground="Green"
+                          TabItemHoverBackground="Orange" 
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt HoverBackground="LightPink" 
+                           Background="Red"
+                           Header="tabItem1"
+                           Name="tabItemExt1"/>
+    <syncfusion:TabItemExt HoverBackground="Green" 
+                           Background="Blue"
+                           Header="tabItem2"
+                           Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Setting the tab items panel, headers and its hover background 
+tabControlExt.Background = Brushes.LightPink;
+tabControlExt.TabPanelBackground = Brushes.Green;
+tabControlExt.TabItemHoverBackground = Brushes.Orange;
+
+//Setting the header and hover background for the particular tab item
+tabItemExt1.Background = Brushes.Red;
+tabItemExt2.Background = Brushes.Blue;
+tabItemExt1.HoverBackground = Brushes.LightPink;
+tabItemExt2.HoverBackground = Brushes.Green;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items with various background](Tab-Item-Header_images/Background.png)
+
+## Change tab item foreground
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabItemHoverForeground="Green"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Foreground="Red" 
+                           Header="tabItem1"
+                           Name="tabItemExt1"/>
+    <syncfusion:TabItemExt Foreground="Blue" 
+                           Header="tabItem2"
+                           Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Setting the tab items hover foreground 
+tabControlExt.TabItemHoverForeground = Brushes.Green;
+
+//Setting the header and item foreground for the particular tab item
+tabItemExt1.Foreground = Brushes.Red;
+tabItemExt2.Foreground = Brushes.Blue;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items with various foreground](Tab-Item-Header_images/Foreground.png)
+
 
 
 
@@ -280,7 +358,7 @@ private void TabControlExt_SelectedItemChangedEvent(object sender, SelectedItemC
 
 ## Load the previously selected tab item content
 
-By default, the `TabControl` unloads the previously selected tab item content when selected item is changed. You can restrict it by setting the [IsDisableUnloadTabItemExtContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsDisableUnloadTabItemExtContent.html) property value as `true`. The default value of `IsDisableUnloadTabItemExtContent` property is `false`.
+If you want to load the previously selected tab item in background after new tab item is selected, use the [IsDisableUnloadTabItemExtContent](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsDisableUnloadTabItemExtContent.html) property value as `true`. The default value of `IsDisableUnloadTabItemExtContent` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -303,12 +381,12 @@ tabControlExt.IsCustomTabItemContextMenuEnabled = true;
 
 ## Change selected tab header font weight
 
-You can change the selected tab header font weight by using the [SelectedItemFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemFontWeight.html) property. The default value of `SelectedItemFontWeight` property is `SemiBold`.
+If you want to highlight the selected tab header, change the font of tab header from semi bold to extra bold by using the [SelectedItemFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemFontWeight.html) property. The default value of `SelectedItemFontWeight` property is `SemiBold`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TabControlExt SelectedItemFontWeight="UltraLight"
+<syncfusion:TabControlExt SelectedItemFontWeight="ExtraBold"
                           Name="tabControlExt">
     <syncfusion:TabItemExt Header="tabItem1" Name="tabItemExt1"/>
     <syncfusion:TabItemExt Header="tabItem2" Name="tabItemExt2"/>
@@ -317,12 +395,37 @@ You can change the selected tab header font weight by using the [SelectedItemFon
 {% endhighlight %}
 {% highlight C# %}
 
-tabControlExt.SelectedItemFontWeight = FontWeights.UltraLight;
+tabControlExt.SelectedItemFontWeight = FontWeights.ExtraBold;
 
 {% endhighlight %}
 {% endtabs %}
 
-![TabControl SelectedItem font weight changed to UltraLight](Tab-Item-Header_images/SelectedItemFontWeight.png)
+![TabControl SelectedItem font weight changed to ExtraBold](Tab-Item-Header_images/SelectedItemFontWeight.png)
+
+## Change selected tab header background and foreground 
+
+You can change the highlighting background and foreground of the selected tab item by using the [TabItemSelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemSelectedForeground.html) and [TabItemSelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~.html) properties. The default value of `TabItemSelectedForeground` property is `Black`  and `TabItemSelectedBackground` property is `Lavender`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabItemSelectedForeground="Red" 
+                          TabItemSelectedBackground="Green"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.TabItemSelectedForeground = Brushes.Red;
+tabControlExt.TabItemSelectedBackground = Brushes.Green;
+
+{% endhighlight %}
+{% endtabs %}
+
+![TabControl SelectedItem background and foreground changed](Tab-Item-Header_images/SelectedItemBackground.png)
 
 
 
@@ -640,7 +743,7 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 
 ![Tab items are arranged bottom of the TabControl](Tab-Item-Header_images/TabStripPlacement.png)
 
-###  Rotating the Tab items
+### Rotating the tab items
 
 Whenever the `TabStripPlacement` is set to `Left` or `Right`, the tab headers are vertically arranged. To improve the user readability, the tab items can be rotated by using the [RotateTextWhenVertical](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~RotateTextWhenVertical.html) property as `true`. The default value of `RotateTextWhenVertical` property is `false`.
 
@@ -664,7 +767,7 @@ tabControlExt.TabStripPlacement = Dock.Right;
 
 ![Tab headers are arranged horizontally in the TabControl](Tab-Item-Header_images/RotateTextWhenVertical.png)
 
-## Change tab item layout 
+## Arrange tab item in multiple line
 
  If you add more tabs and they exceed the `TabControl` size, then they are in collapsed state and can navigate to that tabs only by using the scroll button. You can show all the tabs in the tab panel by setting the [TabItemLayout](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemLayout.html) property value as `MultiLine` or `MultiLineWithFullWidth`. The default value of `TabItemLayout` property is `Single`.
 
@@ -681,7 +784,6 @@ tabControlExt.TabStripPlacement = Dock.Right;
 {% highlight XAML %}
 
 <syncfusion:TabControlExt TabItemLayout="MultiLine" 
-                          TabItemLayout="MultiLine" 
                           Width="300"
                           Name="tabControlExt">
     <syncfusion:TabItemExt Header="tabItem1" />
@@ -699,6 +801,705 @@ tabControlExt.TabItemLayout = TabItemLayoutType.MultiLine;
 ![Tab items with multiple layouts](Tab-Item-Header_images/TabItemLayout_Multiple.png)
 
 
+
+
+# Switching between tab items
+
+This section explains how to switching between tab item in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+
+##  Navigate using mouse and keys interaction
+
+You can navigate from one tab to any other tab by using the mouse click on the tab header. You also use the `Left-Arrow` and `Right-Arrow` key , to navigate the previous tab item or next tab item from the current tab item.
+
+![Tab items selected by clicking the tab header](Tab-Item-Header_images/SelectItem.gif)
+
+## Navigate using scroll button
+
+If you add more tab items, then some tab headers are collapsed. If you navigate to the collapsed tab items, click the scroll button which is placed in the top-right corner of the tab header panel. You can auto visible or hide the scroll button by using the [TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollButtonVisibility.html) property value as `Auto` or `Hidden`. You can easily navigate to first or last or next or previous tab items by setting the [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollStyle.html) property value as `Extended`, then it will show the `First`, `Last`, `Next`, `Previous` button options. The default value of the `TabScrollStyle` property is `Normal`.
+
+The following `TabScrollStyle` supported by the `TabControl` control.
+
+* Extended Mode - Provides the Next, Previous, Last and First navigation options
+* Normal Mode – Provides the Next and Previous navigation options only
+
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabScrollButtonVisibility="Auto"
+                          TabScrollStyle="Extended" 
+                          Width="300"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Auto;
+tabControlExt.TabScrollStyle = TabScrollStyle.Extended;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items navigate by using the scroll buttons](Tab-Item-Header_images/.png)
+
+
+## Navigate using tab list menu
+
+You can easily navigate to any tab item by using the tab list menu which is placed in the top-right corner of the tab header panel .The header of all tab item’s are shown as a menu item in the tab list menu. You can hide this tab list menu by using the [ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property value as `false`.  The default value of `ShowTabListContextMenu` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt ShowTabListContextMenu="True"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.ShowTabListContextMenu = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items navigate by tab menu items](Tab-Item-Header_images/ShowTabListContextMenu.png)
+
+
+# Add new tab item using New button
+
+This section explains how to create new tab items using new button and its UI customization in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
+
+## Adding New tab button and new tab item
+
+You can add a new tab item at runtime by clicking the new button. You can enable it by using the [IsNewButtonEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonEnabled.html) property. You should handle the click action of the New Button and add a new tab items to `TabControl` by using the [NewButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonClick_EV.html) event. The new button can be aligned first or last position in the tab item header panel by using the [NewButtonAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonAlignment.html) property. The default value of `IsNewButtonEnabled` property is `false` and `NewButtonAlignment` property is `Last`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt IsNewButtonEnabled="True"
+                          NewButtonAlignment="Last"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.IsNewButtonEnabled = true;
+tabControlExt.NewButtonAlignment = NewButtonAlignment.Last;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle the event as follows:
+
+{% tabs %}
+{% highlight C# %}
+
+private void tabControlExt_NewButtonClick(object sender, EventArgs e) {
+    TabItemExt tabItemExt1 = new TabItemExt()
+    {
+        Header = "tabItem"+ (tabControlExt.Items.Count + 1),
+        Content = new TextBlock() { Text = "This is the content area of TabItem" }
+    };
+
+    //Adding new tab item into the TabControl.
+    tabControlExt.Items.Add(tabItemExt1);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![New tab item added by new button click](NewButton-Feature_images/NewButton.png)
+
+ ## Auto hide new button when no child tab item
+
+The `TabControl` automatically hides the new button on when no child tab item present in the `TabControl`. If you want to always show the new button, use the [IsNewButtonClosedonNoChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonClosedonNoChild.html) property value as `false`. The default value of `HideHeaderOnSingleChild` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt IsNewButtonClosedonNoChild="False"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Content="This is the first tab item"
+                           Header="tabItem1"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.IsNewButtonClosedonNoChild = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![TabControl always show the new button](NewButton-Feature_images/NewButtonShow.png)
+
+## Custom UI for new button
+
+If you wants to change the UI for the new button, use the [NewButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonTemplate.html) or [NewButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonStyle.html)  properties. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt IsNewButtonEnabled="True"
+                          x:Name="tabControlExt">
+    <syncfusion:TabControlExt.NewButtonTemplate>
+        <ControlTemplate>
+            <Button Background="Red" 
+                    Content=" + "></Button>
+        </ControlTemplate>
+    </syncfusion:TabControlExt.NewButtonTemplate>
+    <syncfusion:TabItemExt Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Change background of new button
+
+If you want to change the background of the new button, use the [NewButtonBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonBackground.html) property. The defalut value of `NewButtonBackground` property is `null`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt NewButtonBackground="Red"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Content="This is the first tab item"
+                           Header="tabItem1"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.NewButtonBackground = Brushes.Red;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Red color applied for the new button background](NewButton-Feature_images/NewButtonBackground.png)
+
+
+
+
+
+
+# Pin or Unpin the tab items
+
+This section explains the pin and unpin tab items support in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
+
+## Enabling pin and unpin behaviors
+
+If you want to pin or unpin the tab items, use the [TabItemExt.AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property as `true`. When this property is set to `false`, the pin and unpin behaviors of tab item will be disabled. The default value of the `TabItemExt.AllowPin` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+ 
+<syncfusion:TabControlExt  Name="tabControlExt">
+    <syncfusion:TabItemExt AllowPin="True"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt AllowPin="True" 
+                           Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabItemExt1.AllowPin = true;
+tabItemExt2.AllowPin = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Functionality of PinButton
+
+ When the corresponding tab item is pinned, it will be inserted at first position of the tab header panel(if its not have any pinned tab. Otherwise, the pinned tab item will be added next to last pinned item). When the tab item is unpinned, it will be placed after to the pinned tab items.
+
+## Pin and Unpin tab items using PinButton
+
+If you want to pin or unpin the tab item using the pin button, use the [TabItemExt.ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ShowPin.html) property value as `true` and set the `TabItemExt.AllowPin` property value as `true`. The defalut value of `TabItemExt.ShowPin` property is `false`, so the PinButton is collapsed from header panel of the tab item.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt  Name="tabControlExt">
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True" 
+                           Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Showing the pin buttons
+tabItemExt1.ShowPin = true;
+tabItemExt2.ShowPin = true;
+
+//Enabling the pin buttons
+tabItemExt1.AllowPin = true;
+tabItemExt2.AllowPin = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Displaying PinButton to specific items](pin-unpin-tabs-images\displaying-pinbutton.png)
+
+N> If the `ShowPin` property is `true`, and the `AllowPin` property is `false`, the PinButton will be displayed as a disabled button.
+
+## Pin and Unpin the tab items programmatically
+
+You can pin or unpin the tab items programmatically by using the [TabItemExt.IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~IsPinned.html) property. If the `TabItemExt.IsPinned` property is set to `true`, the corresponding item will be pinned. Also, if the `TabItemExt.IsPinned` property is set as `false` and the item is pinned, then it will be unpinned. The default value of `TabItemExt.IsPinned` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControlExt">
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True"
+                           IsPinned="False"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True" 
+                           IsPinned="True"
+                           Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Pin or unpin the tab items programmatically
+tabItemExt1.IsPinned = false;
+tabItemExt2.IsPinned = true;
+
+//Showing the pin buttons
+tabItemExt1.ShowPin = true;
+tabItemExt2.ShowPin = true;
+
+//Enabling the pin buttons
+tabItemExt1.AllowPin = true;
+tabItemExt2.AllowPin = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items pinned and unpinned programmatically](pin-unpin-tabs-images\Ispinned-pinbutton.png)
+
+## Pin and Unpin tab items using ContextMenu
+
+You can pin or unpin the tab items using the context menu. You can enable it by setting the `TabItemExt.AllowPin` property value as `true`. If the `TabItemExt.AllowPin` property is `true`, and the tab item is not pinned, "Pin Tab" option will be visible. If the tab item is pinned already, "Unpin Tab" option will be visible in the context menu. 
+
+N> If you want to show the pin and unpin buttons , use the `TabItemExt.ShowPin` value as `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControlExt">
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True"
+                           IsPinned="False"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True" 
+                           IsPinned="True"
+                           Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Pin or unpin the tab items programmatically
+tabItemExt1.IsPinned = false;
+tabItemExt2.IsPinned = true;
+
+//Showing the pin buttons
+tabItemExt1.ShowPin = true;
+tabItemExt2.ShowPin = true;
+
+//Enabling the pin buttons
+tabItemExt1.AllowPin = true;
+tabItemExt2.AllowPin = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Displays option to pin and Unpin the tab items](pin-unpin-tabs-images\unpintab-option-contextmenu.png)
+
+## Re-order pinned tabs
+
+You can re-order the pinned item within the pinned items and re-order the un-pinned item within the unpinned, but re-ordering between pinned and unpinned or unpinned and pinned has been restricted. If the pinned tab item is dropped inside the unpinned tab items, the dragged item will be inserted at the last position of pinned tab item and if the unpinned tab item is dropped inside pinned tab items, the dragged item will be inserted after the last pinned item.
+
+![Re-ordering pin and unpinned tab items](pin-unpin-tabs-images\Reorder.gif)
+
+
+
+
+
+
+# Context menu in WPF TabControl (TabControlExt)
+
+This section explains how to show the tab list and tab item context menu and add custom context menu in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+
+## Default tab item context menu
+
+You can close the one or more tab items by using the context menu. You can enable it by using the  [ShowTabItemContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabItemContextMenu.html) property to `true`. You can open this context menu by right click on tab header. The default value of `ShowTabItemContextMenu` property is `false`.
+
+The built-in tabitem context menu has the following menu items:
+
+* Close - Closes the selected tab item.
+* Close All But This - Closes all the tab items, except the selected tab item.
+* Close All - Closes all the tab items.
+
+N> The [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) in `TabControl` is an enum that includes option `Hide` and `Delete`. When you click any default options (Close, Close All and Close All But This) in tabitem context menu and when the `CloseMode` is set to `Hide`, the tabitem moves to the hidden state or when the `CloseMode` is set to `Delete`, the tabitem is completely deleted from `TabControl`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt ShowTabItemContextMenu="True" 
+                          CloseMode="Hide"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Content="This is the first tab item"
+                           Header="tabItem1"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.ShowTabItemContextMenu = true;
+tabControlExt.CloseMode = CloseMode.Hide;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Enable context menu of tab item in TabControl](Contextmenu_images/wpf-tabcontrol-contextmenu.gif)
+
+### Tab item context menu events
+
+Closing the tab items using the context menu can be notified by following events.
+
+* `Close` option - [OnCloseButtonClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~OnCloseButtonClick_EV.html) event
+* `Close All But This` option - [OnCloseOtherTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~OnCloseOtherTabs_EV.html ) event
+* `Close All` option - [OnCloseAllTabs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~OnCloseAllTabs_EV.html) event.
+
+You can use the [CloseTabEventArgs.ClosingTabItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CloseTabEventArgs~ClosingTabItems.html) property to find out which tabitem is closing from the `OnCloseOtherTabs` and  `OnCloseAllTabs` events and use the [CloseTabEventArgs.TargetTabItem](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CloseTabEventArgs~TargetTabItem.html) property to find out which tabitem is closing from the `OnCloseButtonClick` event.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt OnCloseAllTabs="TabControlExt_OnCloseAllTabs"
+                          OnCloseButtonClick="TabControlExt_OnCloseButtonClick"
+                          OnCloseOtherTabs="TabControlExt_OnCloseAllTabs"
+                          Name="tabControlExt">
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.OnCloseAllTabs += TabControlExt_OnCloseAllTabs;
+tabControlExt.OnCloseButtonClick += TabControlExt_OnCloseButtonClick;
+tabControlExt.OnCloseOtherTabs += TabControlExt_OnCloseOtherTabs;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can hadle this events as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void TabControlExt_OnCloseAllTabs(object sender, CloseTabEventArgs e) {
+    var closingTabItems = e.ClosingTabItems;
+}
+private void TabControlExt_OnCloseButtonClick(object sender, CloseTabEventArgs e) {
+    var closingTabItems = e.ClosingTabItems;
+}
+private void TabControlExt_OnCloseOtherTabs(object sender, CloseTabEventArgs e) {
+    var closingTabItems = e.ClosingTabItems;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Adding custom context menu item for the tab items
+
+You can add the custom context menu item for the tab item using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ContextMenuItems.html) property. You can enable it by setting the [TabControlExt.IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsCustomTabItemContextMenuEnabled.html) property to `true`. The default value of `TabControlExt.IsCustomTabItemContextMenuEnabled` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt IsCustomTabItemContextMenuEnabled="True"
+                  Name="tabControlExt" >
+    <syncfusion:TabItemExt Header="tabItem1">
+        
+        <!--Adding custom context menu items-->
+        <syncfusion:TabItemExt.ContextMenuItems>
+            <syncfusion:CustomMenuItem Header="Edit" />
+        </syncfusion:TabItemExt.ContextMenuItems>
+    </syncfusion:TabItemExt>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+// Enable custom tabitem context menu
+tabControlExt.IsCustomTabItemContextMenuEnabled = true;
+
+// Adding custom context menu for the tabitem
+CustomMenuItem customMenuItem = new CustomMenuItem();
+customMenuItem.Header = "Edit";
+tabItemExt1.ContextMenuItems.Add(customMenuItem);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Added custom context menu for tabitem in TabControl](Contextmenu_images/wpf-tabcontrol-customcontextmenu.png)
+
+### Show only custom context menu items
+
+If you want to show only custom context menu items in the default context menu, then you can collapse the default context menu item using [TabControlExt.DefaultContextMenuItemVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~DefaultContextMenuItemVisibility.html) property value as `false`. The default value of `TabControlExt.DefaultContextMenuItemVisibility` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt IsCustomTabItemContextMenuEnabled="True"
+                          DefaultContextMenuItemVisibility="Collapsed"
+                          Name="tabControlExt" >
+    <syncfusion:TabItemExt Header="tabItemExt1">
+        <syncfusion:TabItemExt.ContextMenuItems>
+            <syncfusion:CustomMenuItem Header="Edit" />
+            <syncfusion:CustomMenuItem Header="Copy" />
+            <syncfusion:CustomMenuItem Header="Paste" />
+        </syncfusion:TabItemExt.ContextMenuItems>
+    </syncfusion:TabItemExt>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Collapse the default contextmenu visibility
+tabControlExt.DefaultContextMenuItemVisibility = Visibility.Collapsed;
+
+//Adding custom context menu for the first tabitem
+CustomMenuItem customMenuItem1 = new CustomMenuItem() { Header = "Edit"};
+CustomMenuItem customMenuItem2 = new CustomMenuItem() { Header = "Copy"};
+CustomMenuItem customMenuItem3 = new CustomMenuItem() { Header = "Paste"};
+
+tabItemExt1.ContextMenuItems.Add(customMenuItem1);
+tabItemExt1.ContextMenuItems.Add(customMenuItem2);
+tabItemExt1.ContextMenuItems.Add(customMenuItem3);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Show only the custom context menu items in Default context menu](Contextmenu_images/wpf-tabcontrol-disabledefaultmenu.png)
+
+### Custom UI for default tab item context menu
+
+You can customize the default tab item context menu appearance for the each tab items by using the [TabItemExt.TabItemContextMenuItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~TabItemContextMenuItemTemplate.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.Resources>
+
+    <!--Custom data template for the TabItem ContextMenu-->
+    <DataTemplate x:Key="TabItemContextMenuItemTemplate"
+          DataType="syncfusion:TabItemExt">
+        <TextBlock FontFamily="Calibri"
+                   Foreground="Blue"
+                   FontStyle="Oblique"
+                   Text="{Binding}"/>
+    </DataTemplate>
+</Window.Resources>
+
+<syncfusion:TabControlExt ShowTabItemContextMenu="True" 
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt TabItemContextMenuItemTemplate="{StaticResource TabItemContextMenuItemTemplate}"
+                           Header="tabItem1"/>
+    <syncfusion:TabItemExt TabItemContextMenuItemTemplate="{StaticResource TabItemContextMenuItemTemplate}"
+                           Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customize the default tab item context menu](Contextmenu_images/wpf-tabcontrol-style1.png)
+
+## Tab list menu for switching tabs
+
+You can easily navigate to any tab item by using the tab list menu which is placed in the top-right corner of the tab header panel .The header of all tab item’s are shown as a menu item in the tab list menu. You can hide this tab list menu by using the [ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property value as `false`.  The default value of `ShowTabListContextMenu` property is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt ShowTabListContextMenu="True"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.ShowTabListContextMenu = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items navigate by tab menu items](Tab-Item-Header_images/ShowTabListContextMenu.png)
+
+### Custom UI for tab list menu item
+
+You can customize the tab list menu appearance by using the [TabListContextMenuItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabListContextMenuItemTemplate.html ) property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt ShowTabListContextMenu="True" 
+                          Name="tabControlExt" >
+    <syncfusion:TabControlExt.TabListContextMenuItemTemplate>
+        <DataTemplate>
+            <TextBlock FontFamily="Calibri"
+                       Foreground="Blue"
+                       FontStyle="Oblique"
+                       Text="{Binding}"/>
+        </DataTemplate>
+    </syncfusion:TabControlExt.TabListContextMenuItemTemplate>
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customize the tab list context menu](Contextmenu_images/wpf-tabcontrol-style.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Appearance
+
+This section explains different UI customization, theming options available in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
+
+## Change flow direction
+
+You can change the flow direction of the `TabControl` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt FlowDirection="RightToLeft"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Content="This is the first tab item"
+                           Header="tabItem1"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.FlowDirection = FlowDirection.RightToLeft;
+
+{% endhighlight %}
+{% endtabs %}
+
+![TabControl with RightToLeft flow direction](Tab-Item-Header_images/FlowDirection.png)
+
+## Theme
+
+You can customize the appearance of the `TabControl` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `TabControl` control.
+
+* Blend
+* Default
+* Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
+* Metro
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* SystemTheme
+* VisualStudio2013
+* VisualStudio2015
+
+Here, the `Blend` style is applied to the `TabControl`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:TabControlExt syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                          Name="tabControlExt">
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
+
+TabControlExt tabControlExt = new TabControlExt();
+SfSkinManager.SetVisualStyle(tabControlExt, VisualStyles.Blend);
+
+{% endhighlight %}
+{% endtabs %}
+
+![TabControl with Blend visual style](Tab-Item-Header_images/BlendTheme.png)
+
+N> View [Sample]() in GitHub
 
 
 

@@ -94,4 +94,6 @@ The following images illustrates the same,
 
 ## Re-order pinned tabs
 
-Users can re-order the pinned item within the pinned items collection and re-order the un-pinned item within the unpinned item collection, but re-ordering between pinned and unpinned or unpinned and pinned has been restricted. If the pinned tab item is dropped in the unpinned tab item collection, the dragged item will be inserted at the last index of pinned tab item collection and if the un pinned tab item is dropped in pinned tab item collection, the dragged item will be inserted at zeroth index of un-pinned tab item collection.
+You can re-order the pinned item within the pinned items and re-order the un-pinned item within the unpinned, but re-ordering between pinned and unpinned or unpinned and pinned has been restricted. If the pinned tab item is dropped inside the unpinned tab items, the dragged item will be inserted at the last position of pinned tab item and if the unpinned tab item is dropped inside pinned tab items, the dragged item will be inserted after the last pinned item.
+
+![Re-ordering pin and unpinned tab items](pin-unpin-tabs-images\Reorder.gif)
