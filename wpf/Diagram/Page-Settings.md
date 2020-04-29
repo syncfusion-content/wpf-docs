@@ -328,4 +328,6 @@ Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagra
 
 [How to interact with diagram page ](/wpf/sfdiagram/interaction)
 
+[How to add multiple diagram pages?](https://www.syncfusion.com/kb/11463/how-to-add-multiple-diagram-pages-in-the-wpf-diagramsfdiagram)
+
 {% endseealso %}

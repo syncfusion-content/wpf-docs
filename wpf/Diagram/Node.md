@@ -734,9 +734,12 @@ The `Constraints` property of node allows you to enable or disable certain featu
 
 ## See Also
  
- * [How to add Annotations to the Node?](https://help.syncfusion.com/wpf/sfdiagram/annotation).
- * [How to add Port to the Node?](https://help.syncfusion.com/wpf/sfdiagram/port#node-port).
- * [How to add Nodes to the stencil?](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements).
- * [How to apply built-in theme for node and connector?](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagramsfdiagram)
- * [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
- * [How to host different UI elements as node content?](https://www.syncfusion.com/kb/9456/how-to-host-different-ui-elements-as-node-content-in-the-wpf-diagramsfdiagram)
+* [How to add Annotations to the Node?](https://help.syncfusion.com/wpf/sfdiagram/annotation)
+* [How to add Port to the Node?](https://help.syncfusion.com/wpf/sfdiagram/port#node-port)
+* [How to add Nodes to the stencil?](https://help.syncfusion.com/wpf/sfdiagram/stencil#using-diagramelements)
+* [How to apply built-in theme for node and connector?](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagramsfdiagram)
+* [How to customize the connection indicator style of node and port?](https://www.syncfusion.com/kb/11400/how-to-customize-the-connection-indicator-style-of-node-and-port-in-wpf-diagramsfdiagram)
+* [How to host different UI elements as node content?](https://www.syncfusion.com/kb/9456/how-to-host-different-ui-elements-as-node-content-in-the-wpf-diagramsfdiagram)
+* [How to restrict the child node dragging whereas allow group dragging?](https://www.syncfusion.com/kb/11462/how-to-restrict-the-child-node-dragging-whereas-allow-group-dragging-in-wpf)
+* [How to restrict the node dragging within boundaries?](https://www.syncfusion.com/kb/6690/how-to-restrict-the-node-dragging-within-boundaries-in-the-wpf-diagramsfdiagram)
+* [How to show assistants to the parent node of the organization layout?](https://www.syncfusion.com/kb/10183/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf)
