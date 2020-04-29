@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Value binding of PropertyItem in WPF PropertyGrid | Syncfusion
+title: Update value on lost focus in WPF PropertyGrid | Syncfusion
 description: Learn about the binding modes that determines when to update the values of property item in PropertyGrid control.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Value binding of PropertyItem in PropertyGrid
+# Update value on lost focus in PropertyGrid
 
 We can update the value of property item either immediately when the editor property changes or during the editor's lost focus using [UpdateSourceMode](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~UpdateSourceMode.html) property of PropertyGrid. Values of `UpdateSourceMode` are `Immediately`, `ReturnOrLostFocus`. The default value is `Immediately`.
 
 ## Binding modes 
 
- If the property `UpdateSourceMode` is `Immediately`, value of property item will be updated immediately when the editor property changes. Also, if the property `UpdateSourceMode` is `ReturnOrLostFocus`, value of property item will be updated only when editor lost its focus or when enter key is pressed
+ If the property `UpdateSourceMode` is `Immediately`, value of property item will be updated immediately when the editor property changes. Also, if the property `UpdateSourceMode` is `ReturnOrLostFocus`, value of property item will be updated only when editor lost its focus or when enter key is pressed.
 
 {% tabs %}
 
