@@ -138,5 +138,5 @@ public class ComboBoxEditor : BaseTypeEditor
 {% endhighlight %}
 {% endtabs %} 
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor/How-to-prevent-moving-focus-to-next-editor-propertygrid) to download the sample that showcases how to prevent propertygrid from handling key down event of the editors through `ShouldPropertyGridTryToHandleKeyDown` method.
+Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor/How-to-prevent-moving-focus-to-next-editor-propertygrid) to download the sample that showcases how to prevent property grid from handling key down event of the editors through `ShouldPropertyGridTryToHandleKeyDown` method.
 
