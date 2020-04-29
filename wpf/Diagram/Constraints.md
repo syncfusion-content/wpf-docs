@@ -59,8 +59,6 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 {% endhighlight %}
 {% endtabs %}
 
-![GraphConstraints](Constraints_images/Pageediting.gif)
-
 ## Node Constraints
 
 [NodeConstraints](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeConstraints.html) allows to enable or disable the following behaviors of Node.By default Selectable, Connectable, Inherit, RoutingObstacle, PivotDraggable, Delete and ThemeStyle constraints are enabled for Node.
@@ -135,8 +133,6 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![NodeConstraints](Constraints_images/nodeimage.png)
-
 ## Connector Constraints
 
 [ConnectorConstraints](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorConstraints.html) allows to enable or disable the following behaviors of Connectors. By default Selectable, EndDraggable, Inherit, Thumbs, Connectable, Delete, BridgeObstacle and ThemeStyle constraints are enabled for connector.
@@ -199,7 +195,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %} 
 
-![GraphConstraints](Constraints_images/Connectorselection.gif)
+![GraphConstraints](Constraints_images/Contraintsgif.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Constraints-Node-Connector-Graph)
 
@@ -239,6 +235,8 @@ NodePortViewModel port=	new NodePortViewModel()
 
 {% endhighlight %}
 {% endtabs %}
+
+![GraphConstraints](Constraints_images/portgif.gif)
 
 [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Constraints/Port-Constraints-sample)
 
@@ -347,6 +345,8 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines;
 
 {% endhighlight %}
 {% endtabs %}
+
+Refer [Snapping](https://help.syncfusion.com/wpf/diagram/snapping/definesnapping) for details.
 
 ### Inherit behaviors
 
