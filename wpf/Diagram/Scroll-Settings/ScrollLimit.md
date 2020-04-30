@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Scroll limit
+# Scroll limit in WPF Diagram (SfDiagram)
 
 The scroll limit allows you to define the scrollable region of the Diagram while mouse scrolling on the page. The `ScrollLimit` property of scroll settings helps to limit the scrolling area. It includes the following options:
 
