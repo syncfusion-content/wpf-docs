@@ -92,7 +92,7 @@ Polyline is a continuous line of a segment or a continuous line composed of more
 {% highlight xaml %}
 
 <!--Initialize the Sfdiagram-->
-<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="Line" 
+<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="PolyLine" 
                       Tool="ContinuesDraw" DrawingTool="Connector" />
 
 {% endhighlight %}
@@ -424,3 +424,7 @@ For more information about adding connectors from stencil, refer to [Stencil](/w
 * [How to apply built-in theme for node and connector?](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagramsfdiagram)
 
 * [How to decide whether to drag or draw a connection on port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf)
+
+* [How to customize the context menu?](https://www.syncfusion.com/kb/10467/how-to-customize-the-contextmenu-in-wpf-sfdiagram)
+
+* [How to create port at runtime though SetTool?](https://www.syncfusion.com/kb/11446/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
