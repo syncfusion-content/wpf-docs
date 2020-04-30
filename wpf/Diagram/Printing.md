@@ -381,3 +381,7 @@ diagram.PrintingService.ShowClassicPrintPreview();
 {% endtabs %}
 
 ![Classic Print](Printing_images/classic.png)
+
+## See Also
+
+* [How to customize the Header or Footer of the print preview?](https://www.syncfusion.com/kb/11481/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagramsfdiagram)
