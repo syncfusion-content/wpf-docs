@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Adornments| SfChart | Wpf | Syncfusion
-description: adornments
+description: Learn how to add markers, data point labels, connector lines, event, formatting label content and configure the custom templates to the SfChart Adornments.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Adornments
+# Adornments in WPF Charts (SfChart)
 
 Chart adornments are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 
@@ -614,9 +614,7 @@ The following code example demonstrates displaying the string value which is tak
 
     <syncfusion:SfChart.Resources>
 
-                <local:AdornmentLabelConverter x:Key="labelConverter"/>
-
-                <DataTemplate >
+                <DataTemplate x:Key="labelTemplate">
 
                     <Border CornerRadius="2" BorderBrush="Black"
                             
@@ -626,7 +624,7 @@ The following code example demonstrates displaying the string value which is tak
                                    
                                    FontSize="11" Foreground="Black"
                                    
-                                   Text="{Binding Converter={StaticResource labelConverter}}"/>
+                                   Text="{Binding Item.Demand}"/>
 
                     </Border>
 
@@ -700,30 +698,6 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 series.AdornmentsInfo = adornmentInfo;
 
 chart.Series.Add(series);
-
-
-public class AdornmentLabelConverter : IValueConverter
-{
-
-    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-
-    {
-
-        ChartPieAdornment adornment = value as ChartPieAdornment;
-
-        return (adornment.Item as GoldDemand).Demand;
-
-    }
-
-    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-
-    {
-
-        return value;
-
-    }
-
-}
 
 {% endhighlight %}
 
