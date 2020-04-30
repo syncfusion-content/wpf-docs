@@ -9,13 +9,48 @@ documentation: ug
 
 # Drawing tools and tool selection
 
+## Tool Selection
+
+There are some functionalities that can be achieved by clicking and dragging on the Diagram surface. They are as follows.
+
+* Draw selection rectangle – MultipleSelect tool
+* Pan the Diagram – Zoom pan
+* Draw Nodes/Connectors – ContinuousDraw / DrawOnce
+
+As all the three behaviors are completely different, You can achieve only one behavior at a time based on the tool that you choose. When more than one of those are applied, a tool is activated based on the precedence given in the following table.
+
+| Tools | Description |
+|---|---|
+| ContinuesDraw | Allows you to draw the Nodes or Connectors continuously. Once it is activated, you cannot perform any other interaction in the Diagram. |
+| DrawOnce | Allows you to draw single Node or Connector. Once you complete the DrawOnce action, SingleSelect and MultipleSelect tools are automatically enabled. |
+| ZoomPan | Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers Node/Connector. Panning is enebled when cursor hovers the Diagram. |
+| MultipleSelect | Allows you to select multiple Nodes and Connectors. When you enable both the MultipleSelect and ZoomPan tools, cursor hovers the Diagram. When panning is enabled, you cannot select multiple Nodes. |
+| SingleSelect | Allows you to select individual or Connectors. |
+| None | Disables all tools. |
+
+You can set the desired tool to the [Tool](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Tool.html) property of the Diagram. The following code illustrates how to enable single/multiple tools.
+
+{% tabs %}
+{% highlight C# %}
+
+//To Enable Single Tool
+diagram.Tool = Tool.SingleSelect;
+
+//To Enable multiple tools
+diagram.Tool = Tool.SingleSelect | Tool.ZoomPan; 
+ 
+{% endhighlight %}
+{% endtabs %}
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools)
+
 ## Drawing Tools
 
-Drawing tool allow you to draw any kind of node/connector during runtime by clicking and dragging on the Diagram page.
+[DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~DrawingTool.html) allow you to draw any kind of node/connector during runtime by clicking and dragging on the Diagram page.
 
 ### Shapes
 
-To draw a shape, You have to activate the drawing tool by using the Tool property and you need to set the event for GetDrawType.
+To draw a shape, You have to activate the drawing tool by using the `Tool` property and you need to set the event for GetDrawType.
 
 {% tabs %}
 {% highlight xaml %}
@@ -87,7 +122,7 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 ### Connectors
 
-To draw Connectors, you have to set the Connector to DrawingTool property. The drawing tool can be activated by using the Tool property as shown. The following code example illustrates how to draw a straight line Connector.
+To draw Connectors, you have to set the Connector to `DrawingTool` property. The `DrawingTool` can be activated by using the `Tool` property as shown. The following code example illustrates how to draw a straight line Connector.
 
 {% tabs %}
 {% highlight xaml %}
@@ -126,7 +161,7 @@ Diagram allows you to establish connection with Node/Port as soon as you click o
 
 ### FreeHand drawing
 
-Draw Bezier connections using freehand drawing. [DrawingTool](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DrawingTool.html) property is used to choose the FreeHand drawing.
+Free hand drwing connections will be drawn by using `DrawingTool` property.
 
 {% tabs %}
 {% highlight C# %}
@@ -142,42 +177,56 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 
 ![free hand drawing](Interaction_images/FreeHand_img1.gif)
 
-FreeFormEvent will notify the current drawing Connector and drawing State in [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs_members.html). 
+[FreeFormEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~FreeFormDrawingEvent_EV.html) will notify the current drawing Connector and drawing State in [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs_members.html). 
 
-## Tool Selection
+## How to override the default tool of diagram elements
 
-There are some functionalities that can be achieved by clicking and dragging on the Diagram surface. They are as follows.
+Each objects in diagram control have deafult actions while interact on them. Those default actions can be customized by overriding the virtual method [SetTool](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~SetTool.html) of the `SfDiagram` class. The `SetTool` method takes the [SetToolArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetToolArgs.html) as an argument that is used to know the objects under the mouse when modifying the tools of them.
 
-* Draw selection rectangle – MultipleSelect tool
-* Pan the Diagram – Zoom pan
-* Draw Nodes/Connectors – ContinuousDraw / DrawOnce
+* [Source](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetToolArgs~Source.html) –  To know the object on which item the mouse is interacting.
 
-As all the three behaviors are completely different, You can achieve only one behavior at a time based on the tool that you choose. When more than one of those are applied, a tool is activated based on the precedence given in the following table.
-
-| Tools | Description |
-|---|---|
-| ContinuesDraw | Allows you to draw the Nodes or Connectors continuously. Once it is activated, you cannot perform any other interaction in the Diagram. |
-| DrawOnce | Allows you to draw single Node or Connector. Once you complete the DrawOnce action, SingleSelect and MultipleSelect tools are automatically enabled. |
-| ZoomPan | Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers Node/Connector. Panning is enebled when cursor hovers the Diagram. |
-| MultipleSelect | Allows you to select multiple Nodes and Connectors. When you enable both the MultipleSelect and ZoomPan tools, cursor hovers the Diagram. When panning is enabled, you cannot select multiple Nodes. |
-| SingleSelect | Allows you to select individual or Connectors. |
-| None | Disables all tools. |
-
-You can set the desired tool to the Tool property of the Diagram. The following code illustrates how to enable single/multiple tools.
+* [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetToolArgs~Action.html) - To customize the tools of the diagram object.
 
 {% tabs %}
+{% highlight xaml %}
+
+<!--Create new diagram for custom diagram class-->
+<local:CustomClass PortVisibility="Visible" x:Name="diagram"/>
+
+{% endhighlight %}
+
 {% highlight C# %}
 
-//To Enable Single Tool
-diagram.Tool = Tool.SingleSelect;
-
-//To Enable multiple tools
-diagram.Tool = Tool.SingleSelect | Tool.ZoomPan; 
- 
+//Create custom class of SfDiagram to override the tools.
+public class CustomClass:SfDiagram
+{
+    //Override method to customize the default tools of diagram objects
+    protected override void SetTool(SetToolArgs args)
+    {
+        if (args.Source is INode)
+        {
+            args.Action = ActiveTool.Pan;
+        }
+        else if (args.Source is IConnector)
+        {
+            args.Action = ActiveTool.Draw;
+        }
+        else if (args.Source is IPort)
+        {
+            args.Action = ActiveTool.Drag;
+        }
+        else
+        {
+            base.SetTool(args);
+        }
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools)
+![Set Tool](Tools_images/SetToolOverride.gif)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools/SetToolSample)
 
 ## How to override the default cursors while interaction
 
@@ -185,7 +234,7 @@ While mouse hovers on the diagramming objects, different cursors will be appeari
 
 ![Rotator Cursor](Tools_images/RotatorCursor.png)
 
-These cursors can be customized by overriding the virtual method [SetCursor()](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~SetCursor.html) of the SfDiagram class. The `SetCursor()` method takes the [SetCursorArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html) as an argument that is used to know the objects under the mouse cursor when modifying the cursors of them.
+These cursors can be customized by overriding the virtual method [SetCursor()](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~SetCursor.html) of the `SfDiagram` class. The `SetCursor()` method takes the [SetCursorArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs.html) as an argument that is used to know the objects under the mouse cursor when modifying the cursors of them.
 
 * [Action](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SetCursorArgs~Action.html) – To know the action tool of the element.
 
