@@ -110,3 +110,7 @@ void MainPage_MenuItemClickedEvent(object sender,
 {% endtabs %}
 
 * `MenuOpening` event will notify when you perform right click on Diagram/Node/Connector.To explore about arguments, refer to [MenuOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MenuOpeningEventArgs.html).
+
+## See Also
+
+* [How to customize the context menu?](https://www.syncfusion.com/kb/10467/how-to-customize-the-contextmenu-in-wpf-sfdiagram)
