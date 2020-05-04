@@ -17,9 +17,9 @@ You can close the one or more tab items by using the context menu. You can enabl
 
 The built-in tabitem context menu has the following menu items:
 
-* Close - Closes the selected tab item.
-* Close All But This - Closes all the tab items, except the selected tab item.
-* Close All - Closes all the tab items.
+* `Close` - Closes the selected tab item.
+* `Close All But This` - Closes all the tab items, except the selected tab item.
+* `Close All` - Closes all the tab items.
 
 N> The [CloseMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~CloseMode.html) in `TabControl` is an enum that includes option `Hide` and `Delete`. When you click any default options (Close, Close All and Close All But This) in tabitem context menu and when the `CloseMode` is set to `Hide`, the tabitem moves to the hidden state or when the `CloseMode` is set to `Delete`, the tabitem is completely deleted from `TabControl`.
 
@@ -84,7 +84,7 @@ private void TabControlExt_OnCloseAllTabs(object sender, CloseTabEventArgs e) {
     var closingTabItems = e.ClosingTabItems;
 }
 private void TabControlExt_OnCloseButtonClick(object sender, CloseTabEventArgs e) {
-    var closingTabItems = e.ClosingTabItems;
+    var closingTabItem = e.TargetTabItem;
 }
 private void TabControlExt_OnCloseOtherTabs(object sender, CloseTabEventArgs e) {
     var closingTabItems = e.ClosingTabItems;
@@ -95,7 +95,7 @@ private void TabControlExt_OnCloseOtherTabs(object sender, CloseTabEventArgs e) 
 
 ### Adding custom context menu item for the tab items
 
-You can add the custom context menu item for the tab item using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ContextMenuItems.html) property. You can enable it by setting the [TabControlExt.IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsCustomTabItemContextMenuEnabled.html) property to `true`. The default value of `TabControlExt.IsCustomTabItemContextMenuEnabled` property is `false`.
+You can add the custom context menu item for the tab item using the [TabItemExt.ContextMenuItems](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ContextMenuItems.html) property. You can perform any operation by handling the `CustomMenuItem.Click` event. You can enable it by setting the [TabControlExt.IsCustomTabItemContextMenuEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsCustomTabItemContextMenuEnabled.html) property to `true`. The default value of `TabControlExt.IsCustomTabItemContextMenuEnabled` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -191,9 +191,11 @@ You can customize the default tab item context menu appearance for the each tab 
 
 <syncfusion:TabControlExt ShowTabItemContextMenu="True" 
                           Name="tabControlExt">
-    <syncfusion:TabItemExt TabItemContextMenuItemTemplate="{StaticResource TabItemContextMenuItemTemplate}"
+    <syncfusion:TabItemExt TabItemContextMenuItemTemplate=
+                                "{StaticResource TabItemContextMenuItemTemplate}"
                            Header="tabItem1"/>
-    <syncfusion:TabItemExt TabItemContextMenuItemTemplate="{StaticResource TabItemContextMenuItemTemplate}"
+    <syncfusion:TabItemExt TabItemContextMenuItemTemplate=
+                                "{StaticResource TabItemContextMenuItemTemplate}"
                            Header="tabItem2" />
 </syncfusion:TabControlExt>
 

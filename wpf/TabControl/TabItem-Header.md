@@ -74,7 +74,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
 
-Please refer [this](https://help.syncfusion.com/wpf/tabcontrol/databinding#custom-ui-for-the-edit-tab-item-header) page to know more details about `EditHeaderTemplate`.
+Please refer [Custom UI for the edit tab item header](https://help.syncfusion.com/wpf/tabcontrol/databinding#custom-ui-for-the-edit-tab-item-header) topic to know more details about `EditHeaderTemplate`.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub
 
@@ -159,10 +159,10 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 You can align the tab item header image by using the [TabItemExt.ImageAlignment](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ImageAlignment.html) property. You can set a margin for the image by using the [TabItemExt.IconMargin](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~IconMargin.html) property. The default value of `TabItemExt.ImageAlignment` property is `LeftOfText` and `TabItemExt.IconMargin` property is `0,0,0,4`.  You can align the image to any one of the following positions.
 
-* AboveText - Images are placed above the tab item header text.
-* BelowText – Images are placed below the tab item header text.
-* LeftOfText – Images are placed to the left of the tab item header text.
-* RightOfText – Images are placed to the right of the tab item header text.
+* `AboveText` - Images are placed above the tab item header text.
+* `BelowText` – Images are placed below the tab item header text.
+* `LeftOfText` – Images are placed to the left of the tab item header text.
+* `RightOfText` – Images are placed to the right of the tab item header text.
 
 {% tabs %}
 {% highlight xaml %}

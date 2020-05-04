@@ -126,7 +126,7 @@ You can restrict or allow the tab item closing by using either property or event
 
 ### Restrict closing the tab item using property
 
-You can restrict the closing functionality of specific tab item using the [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property. When the `TabItemExt.CanClose` property is set to `false`, the corresponding tab item will be non-closable. The default value of `CanClose` property is `true`.
+You can restrict the closing functionality of specific tab item using the [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property. When the `TabItemExt.CanClose` property is set to `false`, the corresponding tab item will be non-closable. The default value of `TabItemExt.CanClose` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}

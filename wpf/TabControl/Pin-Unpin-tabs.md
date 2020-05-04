@@ -9,7 +9,7 @@ documentation: ug
 
 # Pin or Unpin the tab items in TabControl
 
-This section explains the pin and unpin tab items support in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
+This section explains the pin and unpin tab items in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
 
 ## Enabling pin and unpin behaviors
 
