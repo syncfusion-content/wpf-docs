@@ -57,7 +57,7 @@ private void tabControlExt_NewButtonClick(object sender, EventArgs e) {
 
 ![New tab item added by new button click](NewButton-Feature_images/NewButton.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
 
  ## Auto hide new button when no child tab item
 
@@ -82,7 +82,7 @@ tabControlExt.IsNewButtonClosedonNoChild = false;
 
 ![TabControl always show the new button](NewButton-Feature_images/NewButtonShow.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
 
 ## Custom UI for new button
 
@@ -108,7 +108,7 @@ If you wants to change the UI for the new button, use the [NewButtonTemplate](ht
 
 ![Custom UI for the new button](NewButton-Feature_images/CustomNewButton.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
 
 ## Change background of new button
 
@@ -133,4 +133,4 @@ tabControlExt.NewButtonBackground = Brushes.Red;
 
 ![Red color applied for the new button background](NewButton-Feature_images/NewButtonBackground.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub

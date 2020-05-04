@@ -33,7 +33,7 @@ tabControlExt.AllowDragDrop = true;
 
 ![Tab items are rearranged by drag and drop](Tab-Item-Header_images/ChangePosition.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ArranageTabs) in GitHub
 
 ### change drag marker color
 
@@ -59,7 +59,7 @@ tabControlExt.AllowDragDrop = true;
 
 ![Tab items drag marker color changed to red color](Tab-Item-Header_images/DragMarkerColor.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ArranageTabs) in GitHub
 
 ## Tab items alignment
 
@@ -90,7 +90,7 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 
 ![Tab items are arranged bottom of the TabControl](Tab-Item-Header_images/TabStripPlacement.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tabs%20Placement) in GitHub
 
 ### Rotating the tab items
 
@@ -116,7 +116,7 @@ tabControlExt.TabStripPlacement = Dock.Right;
 
 ![Tab headers are arranged horizontally in the TabControl](Tab-Item-Header_images/RotateTextWhenVertical.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tabs%20Placement) in GitHub
 
 ## Arrange tab item in multiple line
 
@@ -129,7 +129,6 @@ N> View [Sample]() in GitHub
 * MultiLineWithFillWidth – Tab items are displayed in multiple lines without being shrunk
 
 ![Tab items with various tab layouts](Tab-Item-Header_images/TabItemLayout.png)
-
 
 {% tabs %}
 {% highlight XAML %}
@@ -151,7 +150,7 @@ tabControlExt.TabItemLayout = TabItemLayoutType.MultiLine;
 
 ![Tab items with multiple layouts](Tab-Item-Header_images/TabItemLayout_Multiple.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ArranageTabs) in GitHub
 
 
 ## Switching between tab items
@@ -196,7 +195,7 @@ tabControlExt.TabScrollStyle = TabScrollStyle.Extended;
 
 ![Tab items navigate by using the scroll buttons](Tab-Item-Header_images/TabScrollButtonVisibility.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tabs%20Placement) in GitHub
 
 ### Navigate using tab list menu
 
@@ -221,4 +220,5 @@ tabControlExt.ShowTabListContextMenu = true;
 
 ![Tab items navigate by tab menu items](Tab-Item-Header_images/ShowTabListContextMenu.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 

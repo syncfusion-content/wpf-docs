@@ -34,7 +34,9 @@ tabControlExt.CloseTabOnMiddleClick = true;
 
 ![Tabs closing by close button and mouse middle button click](Closable-tabs-images/CloseMiddleClick.png)
 
-N> View [Sample]() in GitHub
+You can also close the tab items using the default tab item context menu. Refer this [page](https://help.syncfusion.com/wpf/tabcontrol/contextmenu#default-tab-item-context-menu) to know more about the closing the tab item using context menu.
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
 ## Show or hide close button
 
@@ -70,7 +72,7 @@ tabControlExt.CloseButtonType = CloseButtonType.Both;
 
 ![Common close button and individul close buttons shown in tab panel](Closable-tabs-images/CloseButtonType_Both.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
 ### Show or hide close button for specific tab item
 
@@ -116,7 +118,7 @@ tabItemExt2.CloseButtonState = Visibility.Collapsed;
 
 ![Changing the particular item close button visibility in tab panel](Closable-tabs-images/CloseButtonState.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
 ## Restrict or allow closing the tab item
 
@@ -153,7 +155,7 @@ tabItemExt2.CanClose = true;
 
 Here, `tabItem1` cancel button is disabled.
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
 ### Restrict closing the tab item using event
 
@@ -191,7 +193,7 @@ private void TabControlExt_OnCloseButtonClick(object sender, CloseTabEventArgs e
 
 Here, `tabItem1` cannot be closed.
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
 ## Hide or delete item when closing a tab
 
@@ -216,7 +218,7 @@ tabControlExt.CloseMode = CloseMode.Delete;
 
 ![Tab items will delete from items collection](Closable-tabs-images/CloseMode.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
 ## Tab item closed notification
 

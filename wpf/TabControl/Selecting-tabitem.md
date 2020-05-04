@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to select tab item and selection functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
-##  Select tab item using mouse and key interaction
+## Select tab item using mouse and key interaction
 
 You can select a particular tab item by using the mouse click on the tab header. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
 
@@ -79,7 +79,7 @@ tabControlExt.IsDisableUnloadTabItemExtContent = true;
 
 ![TabControl loads the previously selected tab item content](Tab-Item-Header_images/Loadall.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/SelectedItem) in GitHub
 
 ## Change selected tab header font weight
 
@@ -104,7 +104,7 @@ tabControlExt.SelectedItemFontWeight = FontWeights.ExtraBold;
 
 ![TabControl SelectedItem font weight changed to ExtraBold](Tab-Item-Header_images/SelectedItemFontWeight.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/SelectedItem) in GitHub
 
 ## Change selected tab header background and foreground 
 
@@ -131,5 +131,5 @@ tabControlExt.TabItemSelectedBackground = Brushes.Green;
 
 ![TabControl SelectedItem background and foreground changed](Tab-Item-Header_images/SelectedItemBackground.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/SelectedItem) in GitHub
 

@@ -34,6 +34,8 @@ tabControlExt.FlowDirection = FlowDirection.RightToLeft;
 
 ![TabControl with RightToLeft flow direction](Tab-Item-Header_images/FlowDirection.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Themes) in GitHub
+
 ## Theme
 
 You can customize the appearance of the `TabControl` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `TabControl` control.
@@ -84,4 +86,4 @@ SfSkinManager.SetVisualStyle(tabControlExt, VisualStyles.Blend);
 
 ![TabControl with Blend visual style](Tab-Item-Header_images/BlendTheme.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Themes) in GitHub

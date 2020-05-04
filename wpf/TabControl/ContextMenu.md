@@ -44,7 +44,7 @@ tabControlExt.CloseMode = CloseMode.Hide;
 
 ![Enable context menu of tab item in TabControl](Contextmenu_images/wpf-tabcontrol-contextmenu.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
 ### Tab item context menu events
 
@@ -127,7 +127,7 @@ tabItemExt1.ContextMenuItems.Add(customMenuItem);
 
 ![Added custom context menu for tabitem in TabControl](Contextmenu_images/wpf-tabcontrol-customcontextmenu.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
 ### Show only custom context menu items
 
@@ -168,7 +168,7 @@ tabItemExt1.ContextMenuItems.Add(customMenuItem3);
 
 ![Show only the custom context menu items in Default context menu](Contextmenu_images/wpf-tabcontrol-disabledefaultmenu.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
 ### Custom UI for default tab item context menu
 
@@ -202,7 +202,7 @@ You can customize the default tab item context menu appearance for the each tab 
 
 ![Customize the default tab item context menu](Contextmenu_images/wpf-tabcontrol-style1.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Templates) in GitHub
 
 ## Tab list menu for switching tabs
 
@@ -227,7 +227,7 @@ tabControlExt.ShowTabListContextMenu = true;
 
 ![Tab items navigate by tab menu items](Tab-Item-Header_images/ShowTabListContextMenu.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
 ### Custom UI for tab list menu item
 
@@ -255,4 +255,4 @@ You can customize the tab list menu appearance by using the [TabListContextMenuI
 
 ![Customize the tab list context menu](Contextmenu_images/wpf-tabcontrol-style.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Templates) in GitHub

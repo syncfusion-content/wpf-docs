@@ -162,9 +162,11 @@ tabControlExt.Items.Add(tabItemExt3);
 
 Please refer [this](https://help.syncfusion.com/wpf/tabcontrol/databinding) page to know about how to add a tab item using Data Binding.
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Getting-Started) in GitHub
+
 ## Placement of TabItem
 
-You can place the tabitem header at any of the four sides of TabControl using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) property.
+You can place the tabitem header at any of the four sides of `TabControl` using the [TabStripPlacement](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlSettings~TabStripPlacement.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -185,6 +187,8 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 {% endtabs %}
 
 ![Positioning tabitems at the bottom in WPF TabControl](Getting-Started_images/wpf-tabcontrol-orientation.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tabs%20Placement) in GitHub
 
 ## Display mode of the TabControl
 
@@ -214,30 +218,13 @@ tabControlExt.TabStripPlacement = Dock.Bottom;
 
 ## Selecting TabItem
 
-You can select a particular tabitem in `TabControl` by setting the `TabItemExt.IsSelected` property to `true`. You can select only one tab at a time.
+You can select a particular tab item by using the mouse click on the tab header. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
 
-{% tabs %}
-{% highlight XAML %}
+N> You can select only one tab item at a time.
 
-<syncfusion:TabControlExt Name="tabControlExt">
-    <syncfusion:TabItemExt Header="tabItem1" Name="tabItemExt1"/>
-    <syncfusion:TabItemExt Header="tabItem2" Name="tabItemExt2" />
-    <syncfusion:TabItemExt Header="tabItem3" Name="tabItemExt3"    
-                           IsSelected="True"/>
-</syncfusion:TabControlExt>
+![Tab items selected by clicking the tab header](Tab-Item-Header_images/SelectItem.gif)
 
-
-{% endhighlight %}
-{% highlight C# %}
-
-tabItemExt3.IsSelected = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-Here, `tabItem3` is selected.
-
-![Selected tabitem in WPF TabControl](Getting-Started_images/wpf-tabcontrol-selectedtab.png)
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/SelectedItem) in GitHub
 
 ### Tab selection changed notification
 
@@ -314,6 +301,8 @@ tabControlExt.CloseButtonType = CloseButtonType.Both;
 
 ![WPF TabControl and TabItem displays the close button](Getting-Started_images/wpf-tabcontrol-closebutton.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
+
 ### Disable particular tab close button
 
 You can disable the users from closing on particular tabitem by setting [TabItemExt.CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CanClose.html) property as `false`.
@@ -344,6 +333,8 @@ In the below screenshot, second tabitem `TabItemExt.CanClose` property is `false
 
 ![Disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-disableclosebutton.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
+
 ### Hide particular tab close button
 
 If you want to hide the visibility of close button in particular tabitem, then you can collapse using [TabItemExt.CloseButtonState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~CloseButtonState.html) property value as `Collapsed`.
@@ -358,7 +349,6 @@ If you want to hide the visibility of close button in particular tabitem, then y
                            CloseButtonState="Collapsed" 
                            CanClose="False"/>
 </syncfusion:TabControlExt>
-
 
 {% endhighlight %}
 {% highlight C# %}
@@ -378,6 +368,8 @@ tabItem2.CloseButtonState = Collapsed;
 ![Collapse and disable the second tabitem close button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-collapse.png)
 
 Here, `tabItem2` close button is collapsed.
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Closing) in GitHub
 
 ## Add new TabItem using new button
 
@@ -415,9 +407,11 @@ private void TabControlExt_NewButtonClick(object sender, EventArgs e) {
 
 ![Enable the new button in WPF TabControl](Getting-Started_images/wpf-tabcontrol-newbutton.png)
 
-## Show or hide TabList context menu
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
 
-You can show the tab list context menu by setting the [TabControlExt.ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property to `true` in `TabControl`.
+## Tab list menu for switching tabs
+
+You can easily navigate to any tab item by using the tab list menu which is placed in the top-right corner of the tab header panel .The header of all tab item’s are shown as a menu item in the tab list menu. You can hide this tab list menu by using the [ShowTabListContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~ShowTabListContextMenu.html) property value as `false`.  The default value of `ShowTabListContextMenu` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -437,6 +431,8 @@ tabControlExt.ShowTabListContextMenu = true;
 {% endtabs %}
 
 ![Tablist Context menu of tabitem in WPF TabControl](Getting-Started_images/wpf-tabcontrol-tablistcontextmenu.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
 ## Enable or disable tab navigation bar
 
@@ -462,6 +458,8 @@ tabControlExt.TabScrollStyle = TabScrollStyle.Extended;
 {% endtabs %}
 
 ![Enable tab navigation bar in WPF TabControl](Getting-Started_images/wpf-tabcontrol-navigation.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tabs%20Placement) in GitHub
 
 ## Show or hide built-in context menu
 
@@ -530,6 +528,8 @@ tabItem2.ContextMenuItems.Add(customMenuItem1);
 {% endtabs %}
 
 ![Added custom context menu for tabitems in WPF TabControl](Getting-Started_images/wpf-tabcontrol-customcontextmenu.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
 ## Localization support
 

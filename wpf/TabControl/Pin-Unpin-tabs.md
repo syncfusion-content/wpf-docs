@@ -25,7 +25,6 @@ If you want to pin or unpin the tab items, use the [TabItemExt.AllowPin](https:/
                            Header="tabItem2" Name="tabItemExt2"/>
 </syncfusion:TabControlExt>
 
-
 {% endhighlight %}
 {% highlight C# %}
 
@@ -34,6 +33,8 @@ tabItemExt2.AllowPin = true;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Pin-UnPin) in GitHub
 
 ## Functionality of PinButton
 
@@ -71,9 +72,9 @@ tabItemExt2.AllowPin = true;
 
 ![Displaying PinButton to specific items](pin-unpin-tabs-images\displaying-pinbutton.png)
 
-N> View [Sample]() in GitHub
-
 N> If the `ShowPin` property is `true`, and the `AllowPin` property is `false`, the PinButton will be displayed as a disabled button.
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Pin-UnPin) in GitHub
 
 ## Pin and Unpin the tab items programmatically
 
@@ -113,7 +114,7 @@ tabItemExt2.AllowPin = true;
 
 ![Tab items pinned and unpinned programmatically](pin-unpin-tabs-images\Ispinned-pinbutton.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Pin-UnPin) in GitHub
 
 ## Pin and Unpin tab items using ContextMenu
 

@@ -23,8 +23,6 @@ Here, `Model` class defined with `Header` and `Content` properties and `ViewMode
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-tabcontrol-databinding)
 
-
-
 {% tabs %}
 {% highlight C# %}
 
@@ -109,7 +107,7 @@ public class ViewModel : NotificationObject {
 
 ![TabControl auto creates tabitem using data binding](Databinding_images/wpf-tabcontrol-databinding.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub
 
 ## TabItem Header
 
@@ -167,6 +165,8 @@ Below code is used to define the tabitem header using `ItemTemplate` property.
 {% endtabs %}
 
 ![Added header to tabitem in WPF TabControl](Databinding_images/wpf-tabcontrol-binding_header.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub
 
 ## TabItem content
 
@@ -238,4 +238,4 @@ You can customize the editing tab item header appearance for the each tab items 
 
 ![Custom UI of the editable header](Databinding_images/wpf-tabcontrol-binding_Editableheader.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub

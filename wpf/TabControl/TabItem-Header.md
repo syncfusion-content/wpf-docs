@@ -68,13 +68,15 @@ tabControlExt.EnableLabelEdit = true;
 
 ![Tab items header text changed at runtime](Tab-Item-Header_images/Header_runtime.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Header) in GitHub
 
 ## Custom UI for the edit tab item header
 
 You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
 
 Please refer [this](https://help.syncfusion.com/wpf/tabcontrol/databinding#custom-ui-for-the-edit-tab-item-header) page to know more details about `EditHeaderTemplate`.
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub
 
 ## Setting size and alignment of tab header
 
@@ -151,7 +153,7 @@ tabItemExt1.ImageHeight = 20;
 
 ![Tab item header with image](Tab-Item-Header_images/Tab-Item-Header_img1.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Header) in GitHub
 
 ### Tab header image alignment
 
@@ -188,7 +190,7 @@ tabItemExt1.IconMargin = new Thickness(2);
 
 ![Tab item header image placed above to the text](Tab-Item-Header_images/Tab-Item-Header_img2.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Header) in GitHub
 
 ## Setting tooltip
 
@@ -238,7 +240,7 @@ tabControlExt.HideHeaderOnSingleChild = true;
 
 ![TabControl contains single item without tab header](Tab-Item-Header_images/NoTabheader.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Header) in GitHub
 
 ## Change tab item background
 
