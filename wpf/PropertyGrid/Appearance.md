@@ -153,6 +153,53 @@ propertyGrid1.CategoryForeground = Brushes.Red;
 
 ![PropertyGrid with group header Red foreground and Cyan background](Appearance_images/Appearance_Groupheader.png)
 
+## Customize the height of PropertyViewItem and PropertyCatagoryViewItem 
+
+We can customize the height of [PropertyViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyViewItem.html) and [PropertyCatagoryViewItem](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyCatagoryViewItem.html) using its `Padding` property by overriding style in PropertyGrid. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Window x:Class="PropertyGrid_CustomEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropertyGrid_CustomEditor"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="600">
+    <Window.Resources>
+        <Style TargetType="syncfusion:PropertyViewItem" >
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style TargetType="syncfusion:PropertyCatagoryViewItem">
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <syncfusion:PropertyGrid Margin="10" x:Name="propertyGrid1" >
+            <syncfusion:PropertyGrid.SelectedObject>
+                <Button></Button>
+            </syncfusion:PropertyGrid.SelectedObject>
+        </syncfusion:PropertyGrid>
+    </Grid>
+</Window>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.SelectedObject = new Button();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customized the height of PropertyViewItem in PropertyGrid](Appearance_images/wpf-propertygrid-customized-propertyviewitem.png)
+
 ## Setting ToolTip
 
 ToolTip is used to show the information about the segment, when you mouse over on the segment. We can show information about the property name and type using tooltip when hovering the mouse on the properties and its value field. Tooltip is enabled by default, you can disable it by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html)  to `false`.
