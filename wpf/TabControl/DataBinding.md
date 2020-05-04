@@ -198,7 +198,6 @@ You can define the tab item content using `ContentTemplate` property. Otherwise,
 
 You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
 
-
 {% tabs %}
 {% highlight XAML %}
 

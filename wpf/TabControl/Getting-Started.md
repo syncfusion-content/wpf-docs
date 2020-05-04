@@ -158,7 +158,9 @@ tabControlExt.Items.Add(tabItemExt3);
 {% endhighlight %}
 {% endtabs %}
 
-![Adding tabitems into WPF TabControl](Getting-Started_images/wpf-tabcontrol-addtabitem.png)
+![Adding tabitems into WPF TabControl](Getting-Started_images/wpf-tabcontrol-addtabitem.png) 
+
+Please refer [this](https://help.syncfusion.com/wpf/tabcontrol/databinding) page to know about how to add a tab item using Data Binding.
 
 ## Placement of TabItem
 
@@ -528,6 +530,15 @@ tabItem2.ContextMenuItems.Add(customMenuItem1);
 {% endtabs %}
 
 ![Added custom context menu for tabitems in WPF TabControl](Getting-Started_images/wpf-tabcontrol-customcontextmenu.png)
+
+## Localization support
+
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `TabControl` control by adding resource file for each language.
+
+Refer the following links to know more about how provide a localization support for the `TabControl`,
+
+* https://help.syncfusion.com/wpf/localization
+* https://github.com/syncfusion/wpf-controls-localization-resx-files
 
 
 
