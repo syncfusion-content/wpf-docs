@@ -738,3 +738,4 @@ The `Constraints` property of stencil allows you to enable or disable certain fe
 * [How to expand all SymbolGroups ?](https://www.syncfusion.com/kb/5878/how-to-expand-all-symbolgroups)
 * [How to get the base Node interface while dropping a Symbol from Stencil to SfDiagram ?](https://www.syncfusion.com/kb/5880/how-to-get-the-base-node-interface-while-dropping-a-symbol-from-the-stencil-to-the)
 * [How to use different User Controls into Stencil?](https://www.syncfusion.com/kb/11459/how-to-use-different-user-controls-into-stencil-in-the-wpf-diagramsfdiagram)
+* [How to restrict the symbol dropping from the SymbolPalette?](https://www.syncfusion.com/kb/11492/how-to-restrict-the-symbol-dropping-from-the-symbolpalette-in-the-wpf-diagramsfdiagram)
