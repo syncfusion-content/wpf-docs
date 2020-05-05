@@ -68,9 +68,9 @@ The following table explains how the navigation performed between properties,
 
 ## Handling focus of the editors
 
-By default property grid will handle the keyboard navigation, so pressing keydown(Up and Down) will move the focus to next/previous editor from current editor. For all built-in editors, moving focus to next editor will be handled by PropertyGrid. To achieve this focus handling behavior in custom editors, that editors need to be overrides the `ShouldPropertyGridTryToHandleKeyDown` method which the editors has inherited from `BaseTypeEditor` instead of `ITypeEditor`.
+By default property grid will handle the keyboard navigation, so pressing keydown(Up and Down) will move the focus to next/previous editor from current editor. For all built-in editors, moving focus to next editor will be handled by PropertyGrid. For custom editors, property navigation (focus) will not happen if custom editor handles up or down key. To overide keboard navigation for custom editors, override `ShouldPropertyGridTryToHandleKeyDown` method from `BaseTypeEditor`.
 
-If the method `ShouldPropertyGridTryToHandleKeyDown` returns true, the property grid control should be allowed to handle the key down events based on the key, and the editor will handles the key down event for `false` value.
+For example, if you use `ComboBox` as custom editor, up and down key will be handled by it. So, property navigation will not happen. You can override `ShouldPropertyGridTryToHandleKeyDown` and return true, to allow property grid control to handle the key down events. When it returns false, the editor will handles the key down event.
 
 {% tabs %}
 {% highlight C# %}
@@ -138,5 +138,5 @@ public class ComboBoxEditor : BaseTypeEditor
 {% endhighlight %}
 {% endtabs %} 
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor/How-to-prevent-moving-focus-to-next-editor-propertygrid) to download the sample that showcases how to prevent property grid from handling key down event of the editors through `ShouldPropertyGridTryToHandleKeyDown` method.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor/How-to-prevent-moving-focus-to-next-editor-propertygrid) in GitHub.
 
