@@ -9,7 +9,7 @@ documentation: ug
 
 # Keyboard Navigation in WPF PropertyGrid control
 
-In this section, we will see keyboard shortcuts and how to override the default navigation.
+In this section, we will see available keyboard shortcuts and how to override the default navigation.
 
 ## Keyboard Navigation between property items
 
