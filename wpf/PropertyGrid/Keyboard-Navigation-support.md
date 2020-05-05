@@ -7,7 +7,9 @@ control: PropertyGrid
 documentation: ug
 ---
 
-# PropertyItems navigation and Focusing editor through keyboard
+# Keyboard Navigation in WPF PropertyGrid control
+
+In this section, we will see keyboard shortcuts and how to override the default navigation.
 
 ## Keyboard Navigation between property items
 
