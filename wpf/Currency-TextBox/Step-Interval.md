@@ -87,9 +87,9 @@ currencyTextBox.EnableExtendedScrolling = true;
 
 ![Changing the CurrencyTextBox value by Click and Drag](Step-Interval_images/Step-Interval_DragandDrop.gif)
 
-## Select All on focus
+## Allow or restrict selection on focus
 
-`CurrencyTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property to `true` and when the control got focus. The default value of the `TextSelectionOnFocus` property is `true`.
+`CurrencyTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property to `true` and when the control got focus.  If you want to restrict the selection on when control got focus, use the `TextSelectionOnFocus` property value as `false`. The default value of the `TextSelectionOnFocus` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}
