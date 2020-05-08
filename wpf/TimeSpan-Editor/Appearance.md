@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance-in-WPF-TimeSpanEdit-control | Syncfusion
-description:  Learn about Appearance support in Syncfusion WPF TimeSpanEdit control and more details about the control features.
+title: Appearance of the WPF TimeSpanEdit control | Syncfusion
+description: Learn about UI customization, theme support in Syncfusion WPF TimeSpanEdit control and more details about the control features.
 platform: wpf
 control: TimeSpanEdit
 documentation: ug
@@ -9,97 +9,128 @@ documentation: ug
 
 # Appearance in WPF TimeSpanEdit
 
-Appearance of TimeSpanEdit can be changed using different Styles.
+This section explains different UI customization and theming options available in [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TimeSpanEdit.html).
 
-## Visual Styles
+## Setting the background
 
-`SkinManager` provides rich and professional look and feel UI for the TimeSpanEdit Control. Some of the available visual styles are as follows:
-
-* Blend
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* Office2010Blue
-* Office2010Black
-* Office2010Silver
-* VS2010
-* Metro
-* Transparent
-
-The visual style can be applied for the TimeSpanEdit using the `VisualStyle` property of the `SkinStorage`.
+You can change the background color and selection brush color of `TimeSpanEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `` and `SelectionBrush` property is ``.
 
 {% tabs %}
-
 {% highlight XAML %}
 
-<!--TimeSpanEdit Visual Style -->
-<syncfusion:TimeSpanEdit x:Name="Tiem1"  Width="200" Height="23"  Value="10.2:25:52"  syncfusion:SkinStorage.VisualStyle="Blend" />
+<syncfusion:TimeSpanEdit Background="Yellow"
+                         SelectionBrush="Red"
+                         Value="35.12:45:52"
+                         Name="timeSpanEdit"/>
 
 {% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight C# %}
 
-//Set Visual Style
-SkinStorage.SetVisualStyle(timespan,"Blend");
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+timeSpanEdit.Background = Brushes.Yellow;
+timeSpanEdit.SelectionBrush = Brushes.Red;
+timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-'Set Visual Style
-SkinStorage.SetVisualStyle(timespan,"Blend")
-
-{% endhighlight %}
-
 {% endtabs %}
 
+![TimeSpanEdit with yellow background](Apperance_images/Background.png)
 
-**Blend Theme**
+## Setting the foreground
 
-![TimeSpanEdit Blend visual style](Style-images/Blend.png)
+You can change the foreground color by using the `Foreground` property. The default value of `Foreground` property is ``.
 
+{% tabs %}
+{% highlight XAML %}
 
-**Office2007Blue Theme**
+<syncfusion:TimeSpanEdit Foreground="Red"
+                         Value="35.12:45:52"
+                         Name="timeSpanEdit"/>
 
-![TimeSpanEdit Office2007Blue visual style](Style-images/Office2007Blue.png)
+{% endhighlight %}
+{% highlight C# %}
 
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+timeSpanEdit.Foreground = Brushes.Red;
+timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 
-**Office2007Black Theme**
+{% endhighlight %}
+{% endtabs %}
 
-![TimeSpanEdit Office2007Black visual style](Style-images/Office2007Black.png)
+![TimeSpanEdit with red foreground](Apperance_images/Foreground.png)
 
+## Change flow direction
 
-**Office2007Silver Theme**
+You can change the flow direction of the `TimeSpanEdit` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The default value of `FlowDirection` property is `LeftToRight`.
 
-![TimeSpanEdit Office2007Silver visual style](Style-images/Office2007Silver.png)
+{% tabs %}
+{% highlight XAML %}
 
+<syncfusion:TimeSpanEdit FlowDirection="RightToLeft"
+                         Value="35.12:45:52"
+                         Name="timeSpanEdit"/>
 
-**Office2010Blue Theme**
+{% endhighlight %}
+{% highlight C# %}
 
-![TimeSpanEdit Office2010Blue visual style](Style-images/Office2010Blue.png)
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+timeSpanEdit.FlowDirection = FlowDirection.RightToLeft;
+timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 
+{% endhighlight %}
+{% endtabs %}
 
-**Office2010Black Theme**
+![TimeSpanEdit with RightToLeft flow direction](Apperance_images/FlowDirection.png)
 
-![TimeSpanEdit Office2010Black visual style](Style-images/Office2010Black.png)
+N> View [Sample]() in GitHub
 
+## Theme
 
-**Office2010Silver Theme**
+You can customize the appearance of the `TimeSpanEdit` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `TimeSpanEdit` control.
 
-![TimeSpanEdit Office2010Silver visual style](Style-images/Office2010Silver.png)
+* Blend
+* Default
+* Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
+* Metro
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* SystemTheme
+* VisualStudio2013
+* VisualStudio2015
 
-**VS2010 Theme**
+Here, the `Blend` style is applied to the `TimeSpanEdit`.
 
-![TimeSpanEdit VS2010 visual style](Style-images/VS2010.png)
+{% tabs %}
+{% highlight xaml %}
 
-**Metro Theme**
+<syncfusion:TimeSpanEdit syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                         Name="timeSpanEdit"/>
 
-![TimeSpanEdit Metro visual style](Style-images/Metro.png)
+{% endhighlight %}
+{% highlight C# %}
 
-**Transparent Theme**
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
 
-![TimeSpanEdit Transparent visual style](Style-images/Transparent.png)
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+SfSkinManager.SetVisualStyle(timeSpanEdit, VisualStyles.Blend);
+
+{% endhighlight %}
+{% endtabs %}
+
+![TimeSpanEdit with Blend visual style](Apperance_images/BlendTheme.png)
+
+N> View [Sample]() in GitHub
