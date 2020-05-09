@@ -100,7 +100,7 @@ public partial class MainWindow : Window {
 
 ## Set or change time span value
 
-You can set or change the selected time of the `TimeSpanEdit` programmatically by setting the value to the `Value` property. You can also change the selected time at runtime using the mouse and keyborad interaction. Please refer the [Change time span value](https://help.syncfusion.com/wpf/timespan-editor/dealing-with-timespanedit#change-the-time-value) page to know more about the mouse and keyboard interaction to change the value. The default value of `Value` property is `0.0:0:0`.
+You can set or change the selected time of the `TimeSpanEdit` programmatically by setting the value to the `Value` property. You can also change the selected time at runtime using the mouse and keyboard interaction. Please refer the [Change time span value](https://help.syncfusion.com/wpf/timespan-editor/dealing-with-timespanedit#change-the-time-value) page to know more about the mouse and keyboard interaction to change the value. The default value of `Value` property is `0.0:0:0`.
 
 {% tabs %}
 {% highlight XAML %}
