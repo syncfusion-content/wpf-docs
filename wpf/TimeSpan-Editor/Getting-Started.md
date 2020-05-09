@@ -100,7 +100,7 @@ public partial class MainWindow : Window {
 
 ## Set or change time span value
 
-You can set or change the selected time of the `TimeSpanEdit` programmatically by setting the value to the `Value` property. You can also change the selected time at runtime using the mouse and keyborad interaction. Please refer the [Change time span value](https://help.syncfusion.com/wpf/timespan-editor/dealing-with-timespanedit#change-the-time-value) page to know more about the mouse and keyborad interaction to change the value. The default value of `Value` property is `0.0:0:0`.
+You can set or change the selected time of the `TimeSpanEdit` programmatically by setting the value to the `Value` property. You can also change the selected time at runtime using the mouse and keyborad interaction. Please refer the [Change time span value](https://help.syncfusion.com/wpf/timespan-editor/dealing-with-timespanedit#change-the-time-value) page to know more about the mouse and keyboard interaction to change the value. The default value of `Value` property is `0.0:0:0`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -210,4 +210,13 @@ timeSpanEdit.Value = new TimeSpan(5, 2, 25, 52);
 ![Time span value restriction within min-max value limit](Deals-with-TimeSpanEdit_images/MinMax_Value.png)
 
 N> View [Sample]() in GitHub
+
+## Localization support
+
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `TimeSpanEdit` control by adding resource file for each language.
+
+Refer the following links to know more about how provide a localization support for the `TimeSpanEdit`,
+
+* [https://help.syncfusion.com/wpf/localization](https://help.syncfusion.com/wpf/localization)
+* [https://github.com/syncfusion/wpf-controls-localization-resx-files](https://github.com/syncfusion/wpf-controls-localization-resx-files)
 
