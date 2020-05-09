@@ -2,280 +2,212 @@
 layout: post
 title: Getting started with WPF TimeSpanEdit control | Syncfusion
 description: Learn here about getting started with Syncfusion WPF TimeSpanEdit control and more details about the control features.
-platform: wpf
+platform: WPF
 control: TimeSpanEdit
 documentation: ug
 ---
 
-# Getting started
+# Getting started with WPF TimeSpanEdit
 
-This section describes how to design a `TimeSpanEdit` control in a WPF application and overview of its basic functionalities.
+This section explains how to create a WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit.html) and explains about its structure and features.
 
+## Control Structure
+
+![TimeSpanEdit control structure](Getting-Started_images/Control_Structure.png)
 
 ## Assembly deployment
 
-The below assembly should be added as references to use the TimeSpanEdit Control in any application:
+Refer to the [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#timespanedit) section to get the list of assemblies or NuGet package that needs to be added as reference to use the control in any application.
 
-<table>
-<tr>
-<td>
-{{'**Required assembly**'| markdownify }}
-</td>
-<td>
-{{'**Description**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.Shared.WPF
-</td>
-<td>
-The Syncfusion.Shared.WPF contains the class that handles all UI operations and contains helper class of TimeSpanEdit control.
-</td>
-</tr>
-</table>
+You can find more details about installing the NuGet package in a WPF application in the following link: 
 
-## Creating simple application with TimeSpanEdit
+[How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages)
 
-You can create the Windows Forms application with TimeSpanEdit control as follows:
+## Adding WPF TimeSpanEdit via designer
 
-1. [Creating project](#creating-the-project)
-2. [Adding control via Designer](#adding-control-via-designer)
-3. [Adding control manually in code](#adding-control-manually-in-code)
+You can add the `TimeSpanEdit` control to an application by dragging it from the toolbox to a view of the designer. The following dependent assembly will be added automatically.
 
+* Syncfusion.Shared.WPF
 
-### Creating the project
+![TimeSpanEdit Control added by designer](Getting-Started_images/img1.png) 
+ 
+## Adding WPF TimeSpanEdit via XAML
 
-Create a new WPF project in the Visual Studio to display the TimeSpanEdit with time information.
+To add the `TimeSpanEdit` control manually in XAML, follow these steps:
+1. Create a new WPF project in Visual Studio.
 
-## Adding control via designer
+2. Add the  following assembly references to the project,
+   * Syncfusion.Shared.WPF
+ 
+3. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** and declare the `TimeSpanEdit` control in XAML page.
 
-The `TimeSpanEdit` control can be added to the application by dragging it from the toolbox and dropping it in a designer view. **Syncfusion.Shared.WPF** assembly added automatically in project:
-
-![WPF TimeSpanEdit ToolBox images](Getting-Started_images/img1.png) 
-
-## Adding control manually in code
-
-To add control manually in C#, follow the given steps:
-
-1. Add **Syncfusion.Shared.WPF** assembly to the project:
-
-2. Include the namespace `Syncfusion.Windows.Shared`
+4.	Declare the `TimeSpanEdit` control in XAML page.
 
 {% tabs %}
+{% highlight XAML %}
 
-{% highlight C# %}
-
-using Syncfusion.Windows.Shared;
-
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        x:Class="TimeSpanEditSample.MainWindow"
+        Title="TimeSpanEdit Sample" Height="350" Width="525">
+    <Grid>
+        <!--Adding TimeSpanEdit control -->
+        <syncfusion:TimeSpanEdit x:Name="timeSpanEdit" 
+                                       Width="100" 
+                                       Height="25" />
+    </Grid>
+</Window>
 {% endhighlight %}
-
 {% endtabs %}
 
-3. Create `TimeSpanEdit` control instance and add it to the Window.
+## Adding WPF TimeSpanEdit via C\#
 
-{% tabs %}
+To add the `TimeSpanEdit` control manually in C#, follow these steps:
 
-{% highlight C# %}
+1. Create a new WPF application via Visual Studio.
 
-//Create the instance of TimeSpanEdit
+2. Add the  following assembly references to the project,
+    * Syncfusion.Shared.WPF
 
-TimeSpanEdit timespan = new TimeSpanEdit();
+3. Include the required namespace and create an instance of `TimeSpanEdit` and add it to the window.
 
-timespan.Width = 150;
-
-timespan.Height = 30;
-
-timespan.VerticalAlignment = VerticalAlignment.Top;
-
-//Adding control to the window
-
-this.Content = timespan; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Value Changed Notification
-
-The `TimeSpanEdit` control can notifies the value changes through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ValueChanged_EV.html) event. You can get old value and new Value from `OldValue` and `NewValue` properties in `ValueChanged` event.
-
-{%tabs%}
-{% highlight xaml %} 
-
-<syncfusion:TimeSpanEdit ValueChanged="TimeSpanEdit_ValueChanged"/>
-
-{% endhighlight %}
-{% highlight C# %} 
-
-TimeSpanEdit timespanedit = new TimeSpanEdit();
-TimeSpanEdit.ValueChanged += new PropertyChangedCallback(TimeSpanEdit_ValueChanged);
-
-{% endhighlight %}
-{%endtabs%}
-
-You can handle the event as follows:
+4.	Declare the `TimeSpanEdit` control using C#.
 
 {% tabs %}
 {% highlight C# %}
 
-private void TimeSpanEdit_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-{
-    // Get old and new value
-    var newValue = e.NewValue;
-    var oldValue = e.OldValue;
+using Syncfusion.Windows.Tools.Controls;
+
+public partial class MainWindow : Window {
+    public MainWindow() {
+        InitializeComponent();
+
+        //Creating an instance of TimeSpanEdit control
+        TimeSpanEdit timeSpanEdit = new timeSpanEdit();
+        timeSpanEdit.Width = 100;
+        timeSpanEdit.Height = 25;        
+
+        //Adding TimeSpanEdit as window content
+        this.Content = timeSpanEdit;
+    }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-## Min Max Value Restriction
+![TimeSpanEdit control added by xaml and code](Getting-Started_images/Getting-Started_Designer.png)
 
-The `Value` of `TimeSpanEdit` can be restricted within maximum and minimum limit. You can define the minimum and maximum values by setting the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MinValue.html) and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MaxValue.html) properties. It allows the user to enter the value between `MinValue` and `MaxValue`. 
+## Set or change time span value
+
+You can set or change the selected time of the `TimeSpanEdit` programmatically by setting the value to the `Value` property. You can also change the selected time at runtime using the mouse and keyborad interaction. Please refer the [Change time span value](https://help.syncfusion.com/wpf/timespan-editor/dealing-with-timespanedit#change-the-time-value) page to know more about the mouse and keyborad interaction to change the value. The default value of `Value` property is `0.0:0:0`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TimeSpanEdit x:Name="timespanedit" Width="100" Height="25" Value="10.11:32:43" MaxValue="21.3:8:5" MinValue="2.4:7:4"/>
+<syncfusion:TimeSpanEdit Value="10.11:32:43"
+                         Name="timeSpanEdit" />
+
 {% endhighlight %}
 {% highlight C# %}
 
-TimeSpanEdit timespanedit = new TimeSpanEdit();
-timespanedit.Width = 100;
-timespanedit.Height = 25;
-//Setting minimum value
-timespanedit.MinValue = 2.4:7:4;
-//Setting maximum value
-timespanedit.MaxValue = 21.3:8:5;
-this.Content = timeSpanEdit;
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+timeSpanEdit.Value = new TimeSpan(10, 11, 32, 43);
 
 {% endhighlight %}
 {% endtabs %}
 
-## Formatting the TimeSpanEdit value 
+![Time span value changed by programmatically](Deals-with-TimeSpanEdit_images/Value_progammatically.png)
 
-The fields can be formatted to show what the numerals denote i.e. hours minutes or days.
+N> View [Sample]() in GitHub
 
-![custom format string images](Getting-Started_images/Custom-format-string_img1.png)
+## Change display format of time span
+
+You can format the each fields to show what the numerals denotes i.e. hours, minutes or days by using the [Format](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~Format.html) property. The default value of `Format` is `d.h:m:s`. You can show only the days, hours or minutes values by using any one the following respective fields to the `Format` property.
+
+* d - It displays the days value.
+* h - It displays the hours value.
+* m - It displays the minutes value.
+* s - It displays the seconds value.
 
 {% tabs %}
-{% highlight xaml %}
+{% highlight XAML %}
 
-<syncfusion:TimeSpanEdit Value="10.2:25:52" Format="d 'days' h 'hours'"  Height="40"/>
+<syncfusion:TimeSpanEdit Format="d 'days' h 'hours' m 'minutes' s 'sec'" 
+                         Value="25.08:33:10"
+                         Name="timeSpanEdit" />
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-timeSpanEdit1.Format = @" d 'days' h 'hours'";
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+timeSpanEdit.Format = "d 'days' h 'hours' m 'minutes' s 'sec'";
+timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 
 {% endhighlight %}
 {% endtabs %}
 
-![Struture of TimeSpanEdit](Getting-Started_images/Getting-Started_img1.png)
+![TimeSpanEdit formats the displayed time span](Deals-with-TimeSpanEdit_images/Formatting.png)
 
-## TimeSpanEdit members
+N> View [Sample]() in GitHub
 
-### Properties
+## Value Changed Notification
 
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th><th>
-Type Of Property</th><th>
-Acceptable Value</th></tr>
-<tr>
-<td>
-MaxValue</td><td>
-Gets or sets the maximum value that can be accepted by the control</td><td>
-TimeSpan</td><td>
-Any value of type TimeSpan</td></tr>
-<tr>
-<td>
-MinValue</td><td>
-Gets or sets the minimum value that can be accepted by the control</td><td>
-TimeSpan</td><td>
-Any Value of type TimeSpan</td></tr>
-<tr>
-<td>
-AllowNull</td><td>
-Gets or sets a value indicating whether the control can accept the null value</td><td>
-bool</td><td>
-True/False</td></tr>
-<tr>
-<td>
-NullString</td><td>
-Gets or sets a value that will be displayed when the value is null</td><td>
-string</td><td>
-Any string</td></tr>
-<tr>
-<td>
-Value</td><td>
-Gets or sets the value of the control</td><td>
-TimeSpan</td><td>
-Any value of type TimeSpan</td></tr>
-<tr>
-<td>
-ShowArrowButtons</td><td>
-Gets or Sets a value whether the up down button can be visible</td><td>
-bool</td><td>
-True/False</td></tr>
-<tr>
-<td>
-IncrementOnScrolling</td><td>
-Gets or sets a value indicating whether to increment or decrement the selected option</td><td>
-bool</td><td>
-True/False</td></tr>
-<tr>
-<td>
-Format</td><td>
-Gets or sets the custom format strings. The word given between single quotes is displayed as it is. But the following tokens are replaced with values in the custom format string. d – replaced with days value , h – replaced with hours value , m – replaced with minutes value, s – replaced with seconds value , z- replaced with milliseconds valueExample :The following format string : d ‘Days’ h ‘Hours’ m ‘Minutes’Displayed as : 10 Days 20 Hours 30 Minutes</td><td>
-string</td><td>
-Any string</td></tr>
-</table>
+The selected time span changed in `TimeSpanEdit` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ValueChanged_EV.html) event. The `ValueChanged` event contains the old and newly selected time span values in the `OldValue` and `NewValue` properties.
 
+{% tabs %}
+{% highlight XAML %}
 
-### Events
+<syncfusion:TimeSpanEdit ValueChanged="TimeSpanEdit_ValueChanged"
+                         Name="timeSpanEdit" />
 
-<table>
-<tr>
-<th>
-Event</th><th>
-Description</th><th>
-Argument</th><th>
-Type</th></tr>
-<tr>
-<td>
-ValueChanged</td><td>
-This event is fired when the value of the control is changed</td><td>
-Value</td><td>
-PropertyChangedCallback</td></tr>
-</table>
+{% endhighlight %}
+{% highlight C# %}
 
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+timeSpanEdit.ValueChanged += TimeSpanEdit_ValueChanged;
 
-##  Samples link
+{% endhighlight %}
+{% endtabs %}
 
-To view samples:
+You can handle this event as follows,
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio <XX.X.X.XX> -->Dashboard.
+{% tabs %}
+{% highlight C# %}
 
-   The Essential Studio Enterprise Edition window is displayed. 
+private void TimeSpanEdit_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    //Get old and new values
+    var oldValue = e.OldValue;
+    var newValue = e.NewValue;
+}
 
-   ![Sample image](Getting-Started_images/Getting-Started_img5.png)
+{% endhighlight %}
+{% endtabs %}
 
-The User Interface edition panel is displayed by default. 
+## Restrict the time within minimum and maximum time span
 
-1. Select WPF from the samples listed. The following options will be displayed. You can view the samples in the following three ways:
-1. Run Locally Installed Samples-View the locally installed Tools samples for WPF using the sample browser
-2. Run Online Samples-View the online samples for WPF
-3. Run Online XBAP Samples – View the online XBAP samples  for WPF
-4. Explore Samples-Locate the WPF samples on the disk
+The selecting time in `TimeSpanEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MinValue.html) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MaxValue.html) properties.
 
-   ![User interface images](Getting-Started_images/Getting-Started_img6.png)
+{% tabs %}
+{% highlight XAML %}
 
-5. Select Run Locally Installed Samples. The WPF Sample Browser displays.
+<syncfusion:TimeSpanEdit MinValue="2.0:0:0"
+                         MaxValue="10.0:0:0"
+                         Value="5.2:25:52" 
+                         Name="timeSpanEdit" />
 
-   ![Locally Installed Samples images](Getting-Started_images/Getting-Started_img7.jpg)
+{% endhighlight %}
+{% highlight C# %}
 
-6. On the left pane, go to Editor Controls ->Time Span Edit Demo.
+TimeSpanEdit timeSpanEdit = new TimeSpanEdit();
+timeSpanEdit.MinValue = new TimeSpan(2, 0, 0, 0);
+timeSpanEdit.MaxValue = new TimeSpan(10, 0, 0, 0);
+timeSpanEdit.Value = new TimeSpan(5, 2, 25, 52);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Time span value restriction within min-max value limit](Deals-with-TimeSpanEdit_images/MinMax_Value.png)
+
+N> View [Sample]() in GitHub
+

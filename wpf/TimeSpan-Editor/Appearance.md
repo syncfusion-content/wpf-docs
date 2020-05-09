@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in WPF TimeSpanEdit
 
-This section explains different UI customization and theming options available in [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TimeSpanEdit.html).
+This section explains different UI customization and theming options available in [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit.html).
 
 ## Setting the background
 
@@ -36,6 +36,8 @@ timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 
 ![TimeSpanEdit with yellow background](Apperance_images/Background.png)
 
+N> View [Sample]() in GitHub
+
 ## Setting the foreground
 
 You can change the foreground color by using the `Foreground` property. The default value of `Foreground` property is ``.
@@ -58,6 +60,8 @@ timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 {% endtabs %}
 
 ![TimeSpanEdit with red foreground](Apperance_images/Foreground.png)
+
+N> View [Sample]() in GitHub
 
 ## Change flow direction
 

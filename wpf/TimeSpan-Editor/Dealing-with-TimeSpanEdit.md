@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with TimeSpanEdit
 
-This section explains how to change the time value and time formats in the WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.TimeSpanEdit.html).
+This section explains how to change the time value and time formats in the WPF [TimeSpanEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit.html).
 
 ![TimeSpanEdit control time fields](Getting-Started_images/Control_Structure.png)
 
@@ -19,9 +19,9 @@ If you want to manually change the day, hour or minute values, before that you n
 
 ![Date, hour and minute field navigation in TimeSpanEdit](Deals-with-TimeSpanEdit_images/Time_field.gif)
 
-##  Change the time value 
+## Change the time value 
 
- You can  change the time value of `TimeSpanEdit` by programmatically and using mouse or key interactions.
+ You can change the time value of `TimeSpanEdit` by programmatically and using mouse or key interactions.
 
 ### Change time programmatically
 
@@ -67,6 +67,8 @@ timeSpanEdit.Value = new TimeSpan(25, 09, 32, 43);
 
 ![Time span value changed by UpDown buttons](Deals-with-TimeSpanEdit_images/Updown_buttons.gif)
 
+N> View [Sample]() in GitHub
+
 ### Change time on mouse wheel
 
 You can increase or decrease the time by mouse scrolling over the `TimeSpanEdit`. If you want to restrict the user to change time by using mouse scrolling, use the [IncrementOnScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~IncrementOnScrolling.html) property value as `false`. The default value of `IncrementOnScrolling` property is `true`.
@@ -90,6 +92,8 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 32, 43);
 
 ![Time span value changed by mouse wheel](Deals-with-TimeSpanEdit_images/MouseWheel.png)
 
+N> View [Sample]() in GitHub
+
 ### Change time on click and drag
 
 You can increase or decrease the time by click and dragging the mouse on up or down, use the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~EnableExtendedScrolling.html) property value as `true`. Before that, the control should be in an unfocused state. The default value of `EnableExtendedScrolling` property is `false`.
@@ -112,6 +116,8 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 {% endtabs %}
 
 ![Time span value changed by mouse click and dragging ](Deals-with-TimeSpanEdit_images/EnableExtendedScrolling.png)
+
+N> View [Sample]() in GitHub
 
 ### Change time using keyboard interaction
 
@@ -142,6 +148,8 @@ timeSpanEdit.Value = null;
 
 ![TimeSpanEdit contains the null value](Deals-with-TimeSpanEdit_images/NullValue.png)
 
+N> View [Sample]() in GitHub
+
 ## Setting null text
 
 If you want to display any text instead of null value, use the [NullString](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~NullString.html) property to setting the null text. You can enable it by setting the `AllowNull` property as `true` and `Value` property as `null`. The default value of `NullString` property is `string.Empty`.
@@ -166,6 +174,8 @@ timeSpanEdit.Value = null;
 {% endtabs %}
 
 ![TimeSpanEdit contains the null text](Deals-with-TimeSpanEdit_images/NullString.png)
+
+N> View [Sample]() in GitHub
 
 ## Change display format of time span
 
@@ -195,6 +205,8 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 
 ![TimeSpanEdit formats the displayed time span](Deals-with-TimeSpanEdit_images/Formatting.png)
 
+N> View [Sample]() in GitHub
+
 ### Display milliseconds
 
 If you want to show the milliseconds in the time span, use the character `z` in the format string of the `Format` property.
@@ -219,6 +231,8 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10, 6);
 {% endtabs %}
 
 ![TimeSpanEdit displays the milliseconds](Deals-with-TimeSpanEdit_images/Milliseconds.png)
+
+N> View [Sample]() in GitHub
 
 ## Value Changed Notification
 
@@ -274,6 +288,8 @@ timeSpanEdit.IsReadOnly = true;
 
 ![TimeSpanEdit restrict the user input](Deals-with-TimeSpanEdit_images/IsReadOnly.png)
 
+N> View [Sample]() in GitHub
+
 ## Restrict the time within minimum and maximum time span
 
 The selecting time in `TimeSpanEdit` can be restricted within the maximum and minimum time span limits. Once the selected time has reached the minimum or maximum time span limits , the selected time does not exceed the limit. You can change the minimum and maximum time span limits by using the [MinValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MinValue.html) property and [MaxValue](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~MaxValue.html) properties.
@@ -298,4 +314,6 @@ timeSpanEdit.Value = new TimeSpan(5, 2, 25, 52);
 {% endtabs %}
 
 ![Time span value restriction within min-max value limit](Deals-with-TimeSpanEdit_images/MinMax_Value.png)
+
+N> View [Sample]() in GitHub
 
