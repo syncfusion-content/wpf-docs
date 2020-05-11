@@ -98,7 +98,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ### Change time on click and drag
 
-You can increase or decrease the time by click and dragging the mouse on up or down, use the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~EnableExtendedScrolling.html) property value as `true`. Before that, the control should be in an unfocused state. The default value of `EnableExtendedScrolling` property is `false`.
+You can increase or decrease the time by click and dragging the mouse on up or down, use the [EnableExtendedScrolling](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~EnableExtendedScrolling.html) property value as `true`. This is effective only on when control is in unfocused state. The default value of `EnableExtendedScrolling` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}

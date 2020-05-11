@@ -13,7 +13,7 @@ This section explains different UI customization and theming options available i
 
 ## Setting the background
 
-You can change the background color and selection brush color of `TimeSpanEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `` and `SelectionBrush` property is ``.
+You can change the background color and selection color of `TimeSpanEdit` by using the `Background` and `SelectionBrush` property. The default value of `Background` property is `White` and `SelectionBrush` property is `Royal Blue`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -40,7 +40,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespaned
 
 ## Setting the foreground
 
-You can change the foreground color by using the `Foreground` property. The default value of `Foreground` property is ``.
+You can change the foreground color by using the `Foreground` property. The default value of `Foreground` property is `Black`.
 
 {% tabs %}
 {% highlight XAML %}
