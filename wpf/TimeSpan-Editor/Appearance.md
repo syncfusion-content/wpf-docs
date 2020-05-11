@@ -36,7 +36,7 @@ timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 
 ![TimeSpanEdit with yellow background](Apperance_images/Background.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/Appearance) in GitHub
 
 ## Setting the foreground
 
@@ -61,7 +61,7 @@ timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 
 ![TimeSpanEdit with red foreground](Apperance_images/Foreground.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/Appearance) in GitHub
 
 ## Change flow direction
 
@@ -86,7 +86,7 @@ timeSpanEdit.Value = new TimeSpan(35, 12, 45, 52);
 
 ![TimeSpanEdit with RightToLeft flow direction](Apperance_images/FlowDirection.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/Appearance) in GitHub
 
 ## Theme
 
@@ -137,4 +137,4 @@ SfSkinManager.SetVisualStyle(timeSpanEdit, VisualStyles.Blend);
 
 ![TimeSpanEdit with Blend visual style](Apperance_images/BlendTheme.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/Themes) in GitHub

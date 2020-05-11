@@ -119,7 +119,7 @@ timeSpanEdit.Value = new TimeSpan(10, 11, 32, 43);
 
 ![Time span value changed by programmatically](Deals-with-TimeSpanEdit_images/Value_progammatically.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ## Change display format of time span
 
@@ -149,7 +149,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 
 ![TimeSpanEdit formats the displayed time span](Deals-with-TimeSpanEdit_images/Formatting.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ## Value Changed Notification
 
@@ -209,7 +209,7 @@ timeSpanEdit.Value = new TimeSpan(5, 2, 25, 52);
 
 ![Time span value restriction within min-max value limit](Deals-with-TimeSpanEdit_images/MinMax_Value.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ## Localization support
 

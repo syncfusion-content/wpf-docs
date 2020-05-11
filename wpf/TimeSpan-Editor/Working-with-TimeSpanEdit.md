@@ -44,6 +44,8 @@ timeSpanEdit.Value = new TimeSpan(10, 11, 32, 43);
 
 ![Time span value changed by programmatically](Deals-with-TimeSpanEdit_images/Value_progammatically.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
+
 ### Change time using updown buttons
 
 You can increase or decrease the time by pressing the Up or Down arrow buttons in the `TimeSpanEdit`. If you want to restrict the user to change time by clicking the UpDown buttons, use the [ShowArrowButtons](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~ShowArrowButtons.html) property value as `false`. It will hides the Arrow buttons. The default value of `ShowArrowButtons` property is `true`.
@@ -67,7 +69,7 @@ timeSpanEdit.Value = new TimeSpan(25, 09, 32, 43);
 
 ![Time span value changed by UpDown buttons](Deals-with-TimeSpanEdit_images/Updown_buttons.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ### Change time on mouse wheel
 
@@ -92,7 +94,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 32, 43);
 
 ![Time span value changed by mouse wheel](Deals-with-TimeSpanEdit_images/MouseWheel.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ### Change time on click and drag
 
@@ -117,7 +119,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 
 ![Time span value changed by mouse click and dragging ](Deals-with-TimeSpanEdit_images/EnableExtendedScrolling.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ### Change time using keyboard interaction
 
@@ -148,7 +150,7 @@ timeSpanEdit.Value = null;
 
 ![TimeSpanEdit contains the null value](Deals-with-TimeSpanEdit_images/NullValue.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ## Setting null text
 
@@ -175,7 +177,7 @@ timeSpanEdit.Value = null;
 
 ![TimeSpanEdit contains the null text](Deals-with-TimeSpanEdit_images/NullString.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ## Change display format of time span
 
@@ -205,7 +207,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10);
 
 ![TimeSpanEdit formats the displayed time span](Deals-with-TimeSpanEdit_images/Formatting.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ### Display milliseconds
 
@@ -232,7 +234,7 @@ timeSpanEdit.Value = new TimeSpan(25, 08, 33, 10, 6);
 
 ![TimeSpanEdit displays the milliseconds](Deals-with-TimeSpanEdit_images/Milliseconds.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ## Value Changed Notification
 
@@ -288,7 +290,7 @@ timeSpanEdit.IsReadOnly = true;
 
 ![TimeSpanEdit restrict the user input](Deals-with-TimeSpanEdit_images/IsReadOnly.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
 ## Restrict the time within minimum and maximum time span
 
@@ -315,5 +317,5 @@ timeSpanEdit.Value = new TimeSpan(5, 2, 25, 52);
 
 ![Time span value restriction within min-max value limit](Deals-with-TimeSpanEdit_images/MinMax_Value.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
