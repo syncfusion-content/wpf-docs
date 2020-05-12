@@ -321,3 +321,13 @@ private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPrope
 {% endtabs %} 
 
 Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) to download the sample that showcases different type of color items with its panel visibility customization.
+
+## Localization support
+
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `ColorPickerPalette` control by adding resource file for each language.
+
+Refer the following links to know more about how provide a localization support for the ColorPickerPalette,
+
+* [https://help.syncfusion.com/wpf/localization](https://help.syncfusion.com/wpf/localization)
+
+* [https://github.com/syncfusion/wpf-controls-localization-resx-files](https://github.com/syncfusion/wpf-controls-localization-resx-files)
