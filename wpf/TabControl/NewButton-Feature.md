@@ -59,7 +59,7 @@ private void tabControlExt_NewButtonClick(object sender, EventArgs e) {
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/NewButton) in GitHub
 
- ## Auto hide new button when no child tab item
+## Auto hide new button when no child tab item
 
 The `TabControl` automatically hides the new button on when no child tab item present in the `TabControl`. If you want to always show the new button, use the [IsNewButtonClosedonNoChild](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~IsNewButtonClosedonNoChild.html) property value as `false`. The default value of `IsNewButtonClosedonNoChild` property is `true`.
 

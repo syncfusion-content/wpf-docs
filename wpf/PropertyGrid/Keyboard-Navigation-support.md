@@ -65,8 +65,7 @@ The following table explains how the navigation performed between properties,
 <td>Esc</td>
 <td>If the property’s value field is focused, then the focus has been moved to property’s name field.</td>
 </tr>
-<table>
-
+</table>
 
 ## Handling focus of the editors
 
@@ -77,7 +76,7 @@ For example, if you use `ComboBox` as custom editor, up and down key will be han
 {% tabs %}
 {% highlight C# %}
 
-public class ComboBoxEditor : BaseTypeEditor
+    public class ComboBoxEditor : BaseTypeEditor
     {
         ComboBox enumCombo;
 
