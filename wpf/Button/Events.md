@@ -1,50 +1,59 @@
 ---
 layout: post
-title: Events | ButtonAdv | wpf | Syncfusion
-description: events
+title: Event | ButtonAdv | WPF | Syncfusion
+description: This section explores how to use the button control events such as click and checked in-order to perform the required action.
 platform: wpf
 control: ButtonAdv
 documentation: ug
 ---
 
-# Events
+# Events in WPF Button (ButtonAdv)
 
-The ButtonAdv control comprises the following events:
+The ButtonAdv comprises of the pre-defined events that are illustrated below.
 
-* Click—The event occurs when the ButtonAdv Control is clicked.
+## Click
 
-The following code adds the Click event handler to the ButtonAdv control:
+The events occurs when the button control is clicked and any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv Click="button_Click"/></td></tr>
+<syncfusion:ButtonAdv Click="button_Click"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-
 button.Click += new RoutedEventHandler(button_Click);
+
+private void button_Click(object sender, RoutedEventArgs e)
+{
+
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-* Checked—The event occurs when the element is checked.
+## Checked
 
-The following code adds the Checked event handler to the ButtonAdv control:
+The event occurs when the button control is utilized as toggle button, that is, when [IsCheckable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ButtonAdv~IsCheckable.html) property value is set to **true**. Any action can be handled in the respective event handler.
 
 {% tabs %}
 {% highlight xaml %}
 
-<sync:ButtonAdv Checked="button_Checked"/>
+<syncfusion:ButtonAdv IsCheckable="true" Checked="button_Checked"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
 ButtonAdv button = new ButtonAdv();
-
+button.IsCheckable = true;
 button.Checked += new RoutedEventHandler(button_Checked);
 
+private void button_Checked(object sender, RoutedEventArgs e)
+{
+          
+}
+  
 {% endhighlight  %}
 {% endtabs %}
