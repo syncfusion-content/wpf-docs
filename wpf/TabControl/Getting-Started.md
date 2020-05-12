@@ -535,8 +535,8 @@ Localization is the process of translating the application resources into differ
 
 Refer the following links to know more about how provide a localization support for the `TabControl`,
 
-* https://help.syncfusion.com/wpf/localization
-* https://github.com/syncfusion/wpf-controls-localization-resx-files
+* [https://help.syncfusion.com/wpf/localization](https://help.syncfusion.com/wpf/localization)
+* [https://github.com/syncfusion/wpf-controls-localization-resx-files](https://github.com/syncfusion/wpf-controls-localization-resx-files)
 
 
 
