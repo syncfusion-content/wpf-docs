@@ -152,9 +152,9 @@ timeSpanEdit.Value = null;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
-## Setting null text
+## Show watermark when value is null
 
-If you want to display any text instead of null value, use the [NullString](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~NullString.html) property to setting the null text. You can enable it by setting the `AllowNull` property as `true` and `Value` property as `null`. The default value of `NullString` property is `string.Empty`.
+If you want to display any watermark text instead of null value, use the [NullString](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TimeSpanEdit~NullString.html) property to setting the watermark text. You can enable it by setting the `AllowNull` property as `true` and `Value` property as `null`. The default value of `NullString` property is `string.Empty`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -269,7 +269,7 @@ private void TimeSpanEdit_ValueChanged(DependencyObject d, DependencyPropertyCha
 {% endhighlight %}
 {% endtabs %}
 
-## Restrict user input
+## ReadOnly support
 
 If you want to restrict the inputs from the user, use the `IsReadOnly` property value as `true`. However, value can be changed programmatically in readonly mode and the user can still select text. The default value of `IsReadOnly` property is `false`.
 
