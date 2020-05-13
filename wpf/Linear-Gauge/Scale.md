@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scale | SfLinearGauge | Wpf | Syncfusion
-description: Scale 
+description: Learn how to add scale to the Syncfusion linear gauge and customize the appearance of the scale in WPF platform 
 platform: wpf
 control: SfLinearGauge
 documentation: ug
@@ -55,7 +55,7 @@ The `MainScale` is a linear scale integrates ticks, labels, ranges, and pointers
 
 {% endtabs %}
 
-![](Scale_images/Scale_img1.png)
+![Linear Gauge Scale](Scale_images/Scale_img1.png)
 
 ## Setting minimum and maximum values for a scale
 
@@ -102,7 +102,7 @@ To change the minimum and maximum values of a linear scale, use the `Minimum` an
 
 {% endtabs %}
 
-![](Scale_images/Scale_img2.png)
+![Linear Gauge Scale Value](Scale_images/Scale_img2.png)
 
 ## Setting interval for a scale
 
@@ -156,7 +156,7 @@ N> We can specify the interval value upto 5 decimal places while showing labels 
 
 {% endtabs %}
 
-![](Scale_images/Scale_img3.png)
+![Linear Gauge Interval](Scale_images/Scale_img3.png)
 
 ## Scale customization
 
@@ -210,7 +210,7 @@ You can customize the color, length, size, and position of the `LinearScale` usi
 
 {% endtabs %}
 
-![](Scale_images/Scale_img4.png)
+![Linear Gauge Scale Customization](Scale_images/Scale_img4.png)
 
 ### Size customization
 
@@ -267,7 +267,7 @@ Size of the scale can be customized using the following two properties.
 
 {% endtabs %}
 
-![](Scale_images/Scale_img7.png)
+![Linear Gauge Scale Size Customization](Scale_images/Scale_img7.png)
 
 ## Setting scale direction
 
@@ -317,7 +317,7 @@ You can set the scale position to its forward and backward using the `ScalePosit
 
 {% endtabs %}
 
-![](Scale_images/Scale_img5.png)
+![Linear Gauge Scale Direction](Scale_images/Scale_img5.png)
 
 ## Setting position for a scale
 
@@ -383,4 +383,4 @@ You can set the scale position using the `ScaleBarPositionFactor` property. Firs
 
 {% endtabs %}
 
-![](Scale_images/Scale_img6.png)
+![Linear Gauge scale position](Scale_images/Scale_img6.png)
