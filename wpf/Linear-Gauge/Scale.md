@@ -108,6 +108,8 @@ To change the minimum and maximum values of a linear scale, use the `Minimum` an
 
 The `Interval` property allows to set intervals for scale. The default value of the `Interval` property is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
 
+N> We can specify the interval value upto 5 decimal places while showing labels of linear scale. 
+
 {% tabs %}
 
 {% highlight xml %}
