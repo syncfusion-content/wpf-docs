@@ -240,4 +240,6 @@ private void MainWindow_ItemDeletingEvent(object sender, DiagramPreviewEventArgs
 {% endhighlight %}
 {% endtabs %}
 
+## See Also
 
+* [How to restrict the diagram objects dragging in the positive side](https://www.syncfusion.com/kb/11521/how-to-restrict-the-diagram-objects-dragging-in-the-positive-side-in-the)

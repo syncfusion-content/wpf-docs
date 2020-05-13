@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Drag Limit
+# Drag Limit of the objects
 
 The drag limit allows you to define the dragging region of the Diagram while diagram objects are getting dragged. The `DragLimit` property of scroll settings class helps to limit the dragging area. It includes the following options:
 
@@ -67,5 +67,7 @@ private void Diagram_SelectorChangedEvent(object sender, SelectorChangedEventArg
 [How to add the gridlines for the diagram control](/wpf/diagram/gridlines)
 
 [How to add the rulers for the diagram control](/wpf/diagram/rulers)
+
+[How to restrict the diagram objects dragging in the positive side](https://www.syncfusion.com/kb/11521/how-to-restrict-the-diagram-objects-dragging-in-the-positive-side-in-the)
 
 {% endseealso %}

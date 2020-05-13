@@ -1388,3 +1388,4 @@ layoutManager.Layout = new FlowchartLayout()
  
 * [How to create parent and child relationship by drag and drop nodes?](https://www.syncfusion.com/kb/11401/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagramsfdiagram)
 * [How to show assistants to the parent node of the organization layout?](https://www.syncfusion.com/kb/10183/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf)
+* [How to create treeview and diagram with editing options?](https://www.syncfusion.com/kb/11491/how-to-create-treeview-and-diagram-with-editing-options-in-the-wpf-diagramsfdiagram)
