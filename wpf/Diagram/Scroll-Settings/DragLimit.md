@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Drag Limit
+# Drag Limit of the objects
 
 The drag limit allows you to define the dragging region of the Diagram while diagram objects are getting dragged. The `DragLimit` property of scroll settings class helps to limit the dragging area. It includes the following options:
 
