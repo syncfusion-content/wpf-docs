@@ -271,5 +271,80 @@ Here, The `EmailID` property is accepts only the inputs which are in the email-i
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/CustomEditor) to download the sample that showcases the `CustomEditor` support.
 
+## Selected property item changed notification
+
+The property item selection changed in `PropertyGrid` can be examined using [SelectedPropertyItemChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedPropertyItemChanged_EV.html) event. The `SelectedPropertyItemChanged` event contains the old and newly selected property item details in the `OldValue` and  `NewValue` properties.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedPropertyItemChanged="PropertyGrid_SelectedPropertyItemChanged"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.SelectedPropertyItemChanged += PropertyGrid_SelectedPropertyItemChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle this event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void PropertyGrid_SelectedPropertyItemChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    var oldPropertyItem = e.OldValue;
+    var newPropertyItem = e.NewValue;            
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Property item value changed notification
+
+The property item value changed in `PropertyGrid` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ValueChanged_EV.html) event. The `ValueChanged` event contains the old and newly changed property values by the `OldValue` and `NewValue` properties and `Property` contains the property item whose values is changed.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid ValueChanged="PropertyGrid_ValueChanged"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+PropertyGrid propertyGrid = new PropertyGrid();
+propertyGrid.ValueChanged += PropertyGrid_ValueChanged;
+
+{% endhighlight %}
+{% endtabs %}
+
+You can handle this event as follows,
+
+{% tabs %}
+{% highlight C# %}
+
+private void PropertyGrid_ValueChanged(object sender, ValueChangedEventArgs args) {
+    var valueChangedPropertyItem = args.Property;
+    var newValue = args.NewValue;
+    var oldValue = args.OldValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Common) to download the sample that showcases the `PropertyGrid` overall features.
 

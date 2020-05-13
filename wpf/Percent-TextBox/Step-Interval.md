@@ -64,7 +64,7 @@ percentTextBox.ScrollInterval = 3;
 
 ## Change Value on Click and Drag
 
-The `PercentTextBox` allows you to increase or decrease the percent value based on the `ScrollInterval` by click and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. `PercentTextBox` percent value increases when the cursor moves to the right or the top of the screen and decreases when you click an drag the mouse to the left or the bottom of the screen. Before that, the control should be in an unfocused state.
+The `PercentTextBox` allows you to increase or decrease the percent value based on the `ScrollInterval` by click and dragging the mouse when the [EnableExtendedScrolling](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~EnableExtendedScrolling.html) property is `true`. `PercentTextBox` percent value increases when the cursor moves to the right or the top of the screen and decreases when you click and drag the mouse to the left or the bottom of the screen. Before that, the control should be in an unfocused state.
 
 {% tabs %}
 {% highlight XAML %}
@@ -87,9 +87,9 @@ percentTextBox.EnableExtendedScrolling = true;
 
 ![Changing the PercentTextBox percent value by Click and Drag](Step-Interval_images/Step-Interval_DragandDrop.gif)
 
-## Select All on focus
+## Allow or restrict selection on focus
 
-`PercentTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property to `true` and when the control got focus. The default value of the `TextSelectionOnFocus` property is `true`.
+`PercentTextBox` allows you to automatically select text by setting [TextSelectionOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~TextSelectionOnFocus.html) property to `true` and when the control got focus.  If you want to restrict the selection on when control got focus, use the `TextSelectionOnFocus` property value as `false`. The default value of the `TextSelectionOnFocus` property is `true`.
 
 {% tabs %}
 {% highlight XAML %}

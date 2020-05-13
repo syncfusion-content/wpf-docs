@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a MultiColumn TreeView in WPF | Syncfusion
-description: This section describes about how to create the WPF MultiColumn TreeView.
+description: This section explains how to create the WPF MultiColumn TreeView, and how to use its different properties.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
@@ -104,6 +104,8 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 {% endtabs %}
 
 ![Multiple columns with header and items in WPF TreeView](Creating_a_multicolumn_treeview_images/Creating_a_multicolumn_treeview_img2.jpeg)
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/Create-multiple-column-in-wpf-treeviewadv)
 
 
 ## Auto-Resize of columns in Multicolumn TreeView

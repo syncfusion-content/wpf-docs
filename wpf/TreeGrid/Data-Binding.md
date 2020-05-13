@@ -7,16 +7,17 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in WPF TreeGrid (SfTreeGrid)
 
-SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSource.html) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically with [RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html).
+SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ItemsSource.html) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically using [RequestTreeItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RequestTreeItems_EV.html) or [LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~LoadOnDemandCommand.html).
 If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604.aspx)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19.aspx), SfTreeGrid will not refresh the UI automatically.
 
 Below are the ways to bind the data source to SfTreeGrid.
 
 * [Populate data using self-relational binding](https://help.syncfusion.com/wpf/sftreegrid/getting-started#binding-self-relational-data-in-sftreegrid)
 * [Populate data using nested collection](https://help.syncfusion.com/wpf/sftreegrid/getting-started#binding-nested-collection-with-sftreegrid)
-* [Populate data with `RequestTreeItems` event](https://help.syncfusion.com/wpf/sftreegrid/getting-started#populate-sftreegrid-in-on-demand-unbound-mode)
+* [Populate data with `RequestTreeItems` event](https://help.syncfusion.com/wpf/treegrid/on-demand-loading#using-requesttreeitems-event)
+* [Populate data with `LoadOnDemandCommand`](https://help.syncfusion.com/wpf/treegrid/on-demand-loading#using-loadondemandcommand)
 
 ## Binding with IEnumerable
 
@@ -496,7 +497,7 @@ SfTreeGrid creates different types of views derived from TreeGridView based on d
 
 [TreeGridNestedView](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridNestedView.html)             -  While populating data using nested collection
 
-[TreeGridUnboundView](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridUnboundView.html)         -  While populating data with `RequestTreeItems` event
+[TreeGridUnboundView](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridUnboundView.html)         -  While populating data with `RequestTreeItems` event or `LoadOnDemandCommand` command
 
 ### Events
 

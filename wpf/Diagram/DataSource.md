@@ -19,11 +19,11 @@ Diagram can be populated with the nodes and connectors based on the information 
 
 * The DataSourceSettings `Root` property is used to define the root node for the diagram populated from the data source.
 
-To explore those properties, refer to [DataSourceSettings](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings_members.html)
+To explore those properties, refer to [DataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings_members.html)
 
 ## Defining DataSource
 
-`DataSource` can be a collection of any business objects or collection of nodes. If you use collection of business objects as datasource, then nodes has been created automatically to populate a layout. As a collection of objects, datasource has the functionalities of add, remove, reset, and move. The following code example explains the defining of `DataSource` using business objects.
+[DataSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DataSourceSettings~DataSource.html) can be a collection of any business objects or collection of nodes. If you use collection of business objects as datasource, then nodes has been created automatically to populate a layout. As a collection of objects, datasource has the functionalities of add, remove, reset, and move. The following code example explains the defining of `DataSource` using business objects.
 
 {% tabs %}
 {% highlight xaml %}
@@ -267,11 +267,11 @@ data.Add(new ItemInfo("n21", "#941100")
 
 ![Multi parent](DataSource_images/DataSource_img3.png)
 
-Please find the [Multi parent layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Multi%20Parent) to depict this support. 
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DataSource/Multi%20Parent)
 
 ## FlowchartDataSourceSettings
 
-`FlowchartDataSourceSettings` is the derived class of `DataSourceSettings`, which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
+[FlowchartDataSourceSettings](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FlowchartDataSourceSettings_members.html) is the derived class of `DataSourceSettings`, which contains the mapping properties.These properties are used to map the data member in the underlying data object to the datasource item.
 
 `ContentMapping`: Maps the content in the underlying data object to data source item.
 
@@ -499,4 +499,4 @@ public class DataItems : ObservableCollection<ItemInfo>
 
 ![Flowchart](DataSource_images/DataSource_Flowchart.png)
 
-Please find the [Flowchart Layout sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Flowchart_Layout-2088923614-1032196453.zip) to depict this support.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DataSource/Flowchart%20Layout)

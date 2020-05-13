@@ -34,6 +34,8 @@ diagram.Constraints |= GraphConstraints.AutomaticPortCreation;
 
 ![AutomaticPortCreation](Port_images/AutomaticPortCreation.gif)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Port/AutomaticPortCreation)
+
 ## Port Dragging
 
  Diagram provides the support to drag the port interactively within the limit.
@@ -45,4 +47,6 @@ diagram.Constraints |= GraphConstraints.AutomaticPortCreation;
 
 ## See Also
 
-* [How to decide whether to drag or draw a port at runtime](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime)
+* [How to decide whether to drag or draw a port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime)
+
+* [How to create port at runtime though SetTool?](https://www.syncfusion.com/kb/11446/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)
