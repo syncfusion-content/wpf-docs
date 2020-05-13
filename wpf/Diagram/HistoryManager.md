@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# History Manager
+# History Manager(Undo and Redo)
 
 Diagram provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
 
