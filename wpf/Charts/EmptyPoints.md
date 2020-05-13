@@ -1,13 +1,13 @@
 ---
 layout: post
 title: EmptyPoints| SfChart | Wpf | Syncfusion
-description: Emptypoints support in WPF chart (SfChart) to validate and decide how to display the NAN or null values in data points.
+description: emptypoints
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# Empty Points in WPF Chart (SfChart)
+# Empty Points
 
 The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 
@@ -73,17 +73,26 @@ ItemsSource="{Binding Fruits}" >
 
 LineSeries series = new LineSeries()
 {
+
     ItemsSource = new ViewModel().Fruits,
+
     XBindingPath = "FruitName",
+
     YBindingPath = "People",
+
     ShowEmptyPoints = true,
+
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
+
     ShowLabel = true,
+
     LabelPosition = AdornmentsLabelPosition.Auto
+
 };
 
 series.AdornmentsInfo = adornmentInfo;

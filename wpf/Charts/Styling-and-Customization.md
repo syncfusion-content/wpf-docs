@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Customization| SfChart | Wpf | Syncfusion
-description: Explains the customizing and styling options to apply different kinds of themes or palettes to WPF Chart (SfChart)
+description: This section explains how to customize the WPF Chart (SfChart) with its available customization and styling options
 platform: wpf
 control: SfChart
 documentation: ug
@@ -270,27 +270,52 @@ chart.ColorModel = colorModel;
 
 ## SegmentColorPath
 
-The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPathProperty.html) property of series. The following code illustrates how to bind the color to the series with [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPathProperty.html) property.
+The color of the chart segments can be updated by binding their corresponding model property from the `ItemsSource` collection to its [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property of series as follows.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ColumnSeries  SegmentColorPath="ColorPath">
-
+<chart:ColumnSeries ItemsSource="{Binding Data}"
+                    XBindingPath="XValue" 
+                    YBindingPath="YValue" 
+                    SegmentColorPath="SegmentColor">
+                    
 </chart:ColumnSeries>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries series = new ColumnSeries()
- 
+public class ViewModel
 {
-        
-   SegmentColorPath = "SegmentColor"
-            
+    public ObservableCollection<Model> Data { get; set; }
+
+    public ViewModel()
+    {
+        Data = new ObservableCollection<Model>();
+        Data.Add(new Model() { XValue = "Jewelry", YValue = 10, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 0, 255, 255)) });
+        Data.Add(new Model() { XValue = "Electronics", YValue = 50,
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 238, 130, 238))});
+        Data.Add(new Model() { XValue = "Research", YValue = 30, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 255, 165, 0)) });
+        Data.Add(new Model() { XValue = "Investment", YValue = 40, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 255, 105, 180)) });
+        Data.Add(new Model() { XValue = "Others", YValue = 20,
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 152, 251, 152)) });
+    }
+}
+
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    SegmentColorPath = "SegmentColor"
 };
+
 
 {% endhighlight %}
 
@@ -298,7 +323,7 @@ ColumnSeries series = new ColumnSeries()
 
 ![SegmentColorPath in WPF Chart](Styling-and-Customization_images/segmentcolor.png)
 
-N> SegmentColorPath property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType is Area).
+N> `SegmentColorPath` property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType are Area).
 
 
 ## Customize Legends
@@ -391,7 +416,8 @@ chart.Legend = new ChartLegend()
 ![Customizing legend in WPF Chart](Styling-and-Customization_images/palette_7.png)
 
 
-If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details
+If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details.
+
 ## Customize ToolTip
 
 SfChart provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TooltipTemplate.html#) property.
@@ -518,3 +544,116 @@ chart.Series.Add(series);
 ![Customizing tooltip in WPF Chart](Styling-and-Customization_images/palette_8.png)
 
 
+## Customize Series
+
+CustomTemplate property is used to customize the chart series. It supports the following series
+
+* BarSeries
+* BubbleSeries
+* ColumnSeries
+* LineSeries
+* ScatterSeries
+* SplineSeries
+* StackingBarSeries
+* StackingBar100Series
+* StackingColumnSeries
+* StackingColumn100Series
+* StepLineSeries
+* FastLineSeries
+* RangeColumnSeries
+
+The respective segment of each series will be your DataTemplate context, which contains the following properties in common. This will be used to plot the custom shapes for the series.
+
+* [`XData`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~XData.html#)-Returns the actual X value of the segment.
+* [`YData`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSegment~YData.html#)-Returns the actual Y value of the segment.
+* [`Item`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSegment~Item.html#)-Returns the underlying model object of the segment.
+* [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSegment~Interior.html#)-Returns the brush color of the segment.
+
+The following code example illustrates the use of [`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~CustomTemplate.html#) property:
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <syncfusion:SfChart x:Name="chart">
+
+     <syncfusion:SfChart.Resources>
+
+            <local:ScatterInteriorConverter x:Key="scatterInteriorConverter"/>
+
+            <local:ScatterAngleConverter x:Key="scatterAngleConverter"/>
+
+            <DataTemplate x:Key="seriesTemplate">
+
+                <Canvas>
+
+                    <Path Fill="{Binding Converter={StaticResource scatterInteriorConverter}}"
+                              
+                          Stretch="Fill" Height="{Binding ScatterHeight}"
+                              
+                          Width="{Binding ScatterWidth}" RenderTransformOrigin="0.5,0.5"
+                              
+                          Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
+                              
+                          Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,
+                              
+                              0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
+
+                          <Path.RenderTransform>
+
+                                <RotateTransform Angle="{Binding Converter={StaticResource scatterAngleConverter}}"/>
+
+                          </Path.RenderTransform>
+
+                        </Path>
+
+                    </Canvas>
+
+                </DataTemplate>
+
+    </syncfusion:SfChart.Resources>
+
+    <syncfusion:ScatterSeries  ScatterHeight="20" ScatterWidth="20" Interior="Gray"
+                                       
+                                XBindingPath="Year" YBindingPath="Count" 
+                                       
+                                ItemsSource="{Binding Data}"
+                                
+                                CustomTemplate="{StaticResource seriesTemplate}"/>
+
+</syncfusion:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ScatterSeries series = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "Count",
+
+    ScatterHeight = 20,
+
+    ScatterWidth = 20,
+
+    Interior = new SolidColorBrush(Colors.DarkGray),
+
+    CustomTemplate = chart.Resources["seriesTemplate"] as DataTemplate
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing series in WPF Chart](Styling-and-Customization_images/palette_9.png)
+
+The BarSeries, BubbleSeries, ColumnSeries, LineSeries, ScatterSeries and StepLineSeries have been customized using the [`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries~CustomTemplate.html#) property. Refer to this [`sample`](https://github.com/SyncfusionExamples/how-to-customize-the-chart-series-in-wpf-sfchart) for complete series CustomTemplate.
+
+![Customizing series in Syncfusion WPF SfChart](Styling-and-Customization_images/CustomTemplate.png)    
