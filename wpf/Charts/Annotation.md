@@ -159,7 +159,7 @@ You can also add annotation for a particular axis when there is multiple axes us
                 X2 = 4
             };
 
-            chart.Annotations.Add(annotation);
+        chart.Annotations.Add(annotation);
 
         SplineSeries splineSeries = new SplineSeries()
             {
@@ -175,9 +175,9 @@ You can also add annotation for a particular axis when there is multiple axes us
                 YBindingPath = "Server2"
             };
 
-            chart.Series.Add(splineSeries);
+        chart.Series.Add(splineSeries);
 
-            chart.Series.Add(scatterSeries);
+        chart.Series.Add(scatterSeries);
 
 {% endhighlight %}
 
@@ -193,9 +193,9 @@ You can also add annotation for a particular axis when there is multiple axes us
 
 {% highlight xml %}
 
-            <chart:SfChart.Annotations>
-                <chart:TextAnnotation X1="1.5" Y1="15" Text="Text Annotation"></chart:TextAnnotation>
-            </chart:SfChart.Annotations>
+        <chart:SfChart.Annotations>
+            <chart:TextAnnotation X1="1.5" Y1="15" Text="Text Annotation"></chart:TextAnnotation>
+        </chart:SfChart.Annotations>
             
 {% endhighlight %}
 
@@ -203,7 +203,8 @@ You can also add annotation for a particular axis when there is multiple axes us
 
         TextAnnotation annotation=new TextAnnotation()
         {
-            X1 = 1.5, Y1 = 15,
+            X1 = 1.5, 
+            Y1 = 15,
             Text="Text Annotation"
         };
 
@@ -215,41 +216,64 @@ chart.Annotations.Add(annotation);
 
 ![Text Annotation](Annotation_images/Text_Annotation.jpeg)
 
-### Editing Text Annotation
+### Customizing Text Annotation
 
-SfChart provides you with an editing option for the text in any annotations. When text annotation is enabled editing, if we click the text annotation it switches to edit mode which provide easy way of customizing the text at run time.You can enable the editing mode in TextAnnotation using [`EnableEditing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableEditing.html#) property.
+SfChart provides you with an editing option for the text in any annotations. When text annotation is enabled editing, if we click the text annotation it switches to edit mode which provide easy way of customizing the text at run time.
 
-The following code example and screenshot demonstrate [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation.html#) while editing the text.
+The following properties are used to customize the text:
 
-{% highlight xaml %}
+* [`EnableEditing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableEditing.html#) - Used to define whether the text in TextAnnotation can be edited or not.
 
-<syncfusion:SfChart.Annotations>
+* ['Angle'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation~Angle.html#) - Used to get or set the angle for rotating the Annotation.
 
-<syncfusion:TextAnnotation  CoordinateUnit="Axis"                                           
+* ['EnableClipping'] (https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableClipping.html#) - Used to define whether annotation should clip while crossing with boundary.
 
-Text="Annotation"
+* ['Foreground'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~Foreground.html) - Used to change the text color.
 
-EnableEditing="True"
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontSize.html#)– An int value that represents the font size of the annotation text.
 
-HorizontalAlignment="Stretch"
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontFamily.html#)– Represents the font family of the annotation text.
 
-VerticalAlignment="Stretch"
+* [`FontStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontStyle.html#)– Represents the font style of the annotation text.
 
-FontWeight="Bold"
+* [`FontWeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontWeight.html#)- Represents the font weight of the annotation text.
 
-Foreground="Black"
+* [`FontStretch`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontStretch.html) - Represents the font stretch for the annotation description.
 
-Angle="90"
 
-X1="3.5" Y1="500" >
+{% tabs %}
 
-</syncfusion:TextAnnotation>
+{% highlight xml %}
 
-</syncfusion:SfChart.Annotations>
+            <chart:TextAnnotation X1="1.5" Y1="15" Foreground="Green"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                FontStyle="Italic" FontSize="14" EnableEditing="True" FontFamily="Segoe UI" Text="Text Annotation">
+            </chart:TextAnnotation>
 
 {% endhighlight %}
 
-![Editing text annotation support in WPF Chart](Annotation_images/Annotation_img5.jpeg)
+{% highlight c# %}
+
+       TextAnnotation annotation = new TextAnnotation()
+            {
+                X1 = 1.5,
+                Y1 = 15,
+                Text = "Text Annotation",
+                EnableEditing=true,
+                Foreground=new SolidColorBrush(Colors.Green),
+                FontSize=14,
+                FontFamily=new FontFamily("Segoe UI"),
+                FontStyle=FontStyles.Italic,
+                HorizontalAlignment=HorizontalAlignment.Stretch,
+                VerticalAlignment=VerticalAlignment.Stretch
+            };
+
+    chart.Annotations.Add(annotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Editing text annotation support in WPF Chart](Annotation_images/TextAnnotation_Editing.jpeg)
 
 
 ## Shape Annotation
@@ -257,8 +281,13 @@ X1="3.5" Y1="500" >
 [`ShapeAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#) allows you to add annotations in the form of shapes such as rectangle, ellipse,horizontal line and vertical line  at the specific area of interest, in the chart area.
 
 * [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EllipseAnnotation.html#)- Used to draw a circle or an ellipse over the chart area.
+
 * [`RectangleAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RectangleAnnotation.html#)- Used to draw a rectangle over the chart area.
+
+*['LineAnnotation'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation.html#) - Used to draw a line over the chart area.
+
 * [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html#)- Used to draw a vertical line across the chart area.
+
 * [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html#) - Used to add a horizontal line across the chart area.
 
 The following API’s are commonly used in all ShapeAnnotation:
@@ -274,292 +303,249 @@ The following API’s are commonly used in all ShapeAnnotation:
 * [`CanResize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~CanResize.html#)  - A Boolean value that represent to resize the Annotation.
 
 
-### Customization options for LineAnnotation
+### Ellipse Annotation
 
-
-**GrabExtent** 
-
-`GrabExtent` property of [`LineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation.html#) allows user to extent the hit visible area, while performing dragging and resizing. We need to set the desired pixel value for GrabExtent property and it can be set as shown in the below code example:
+The ['EllipseAnnotation'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.EllipseAnnotation.html#) is used to draw an oval or a circle in specific points over the chart area.
 
 
 {% tabs %}
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Annotations>
- 
-<syncfusion:LineAnnotation X1="0" X2="3" Y1="1500" Y2="1500"     
-                               GrabExtent="10" 
-                               Stroke="DarkGray" CanDrag="True"   
-                               CanResize="True"/>
-     
-</syncfusion:SfChart.Annotations>
+        <chart:EllipseAnnotation X1="2" Y1="15" X2="3" Y2="18" Text="Ellipse"></chart:EllipseAnnotation>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-LineAnnotation annotation = new LineAnnotation()
+        EllipseAnnotation ellipse = new EllipseAnnotation()
             {
-                X1 = 0,
+                X1 = 2,
+                Y1 = 15,
                 X2 = 3,
-                Y1 = 1500,
-                Y2 = 1500,
-                CanDrag = true,
-                Stroke = new SolidColorBrush(Colors.DarkGray),
-                CanResize = true,
-                GrabExtent = 10
+                Y2 = 18,
+                Text = "Ellipse"
             };
-            
-chart.Annotations.Add(annotation);
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Customizing line annotation support in WPF Chart](Annotation_images/GrabExtent.png)
+![Ellipse Annotation](Annotation_images/Ellipse_Annotation.jpeg)
 
+### Rectangle Annotation
 
-**Toggling** **LineAnnotation** **Visibility**
+The ['RectangleAnnotation'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RectangleAnnotation.html#) is used to draw a rectangle or a square in specific points over the chart area.
 
-[`LineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation.html#) by default will be visible. You can also collapse the visibility of the line annotation using [`ShowLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~ShowLine.html#) property.
+{% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
 
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:HorizontalLineAnnotation X1="-0.5" X2="3.5"
-
-Stroke="DarkGray"
-
-StrokeThickness="1"
-
-ShowLine="False"
-
-Fill="LightGray"                                                      
-
-Y1="1500" >                    
-
-</syncfusion:HorizontalLineAnnotation>
-
-<syncfusion:VerticalLineAnnotation  Stroke="DarkGray" StrokeThickness="1"                                                   
-
-X1="1.5" >
-
-</syncfusion:VerticalLineAnnotation>
-
-</syncfusion:SfChart.Annotations>
+        <chart:RectangleAnnotation X1="2" Y1="15" X2="3" Y2="18" Text="Rectangle"></chart:RectangleAnnotation>
 
 {% endhighlight %}
 
-![Visibility support for line annotation in WPF Chart](Annotation_images/Annotation_img6.jpeg)
+{% highlight c# %}
 
+        RectangleAnnotation ellipse = new RectangleAnnotation()
+            {
+                X1 = 2,
+                Y1 = 15,
+                X2 = 3,
+                Y2 = 18,
+                Text = "Rectangle"
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Rectangle Annotation](Annotation_images/Rectangle_Annotation.jpeg)
+
+### Line Annotation
+
+The ['LineAnnotation'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation.html#) is used to draw a line in specific points over the chart area.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <chart:LineAnnotation X1="2" Y1="14" X2="3.5" Y2="18" Text="Line"></chart:LineAnnotation>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        LineAnnotation line = new LineAnnotation()
+            {
+                X1 = 2,
+                Y1 = 14,
+                X2 = 3.5,
+                Y2 = 18,
+                Text = "Line"
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Line Annotation](Annotation_images/Line_Annotation.jpeg)
+
+### Vertical and Horizontal line annotation
+
+The ['VerticalLineAnnotation'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html#) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html#) are used to draw vertical and horizontal lines in specific points over the chart area.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <chart:VerticalLineAnnotation X1="3"></chart:VerticalLineAnnotation>
+        <chart:HorizontalLineAnnotation X1="0" Y1="11" X2="6" Y2="11"></chart:HorizontalLineAnnotation>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        HorizontalLineAnnotation hor = new HorizontalLineAnnotation()
+            {
+                X1 = 0,
+                Y1 = 10,
+                X2 = 6,
+                Y2 = 10
+            };
+
+        VerticalLineAnnotation ver = new VerticalLineAnnotation()
+            {
+                X1 = 3
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Vertical and Horizontal line annotation](Annotation_images/Ver_Hor_Annotation.jpeg)
+
+### Customizing Line Annotation
+The appearance of the LineAnnotation, VerticalLineAnnotation and HorizontalLineAnnotation can be customized with use of following properties.
+
+* ['GrabExtent'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~GrabExtent.html) - Used to extent the hit visible area while performing dragging and resizing.
+
+* [`ShowLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~ShowLine.html#) - Used to collapse the visibility of the line annotation.
+
+* ['LineCap'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html)
+
+* [`ShowAxisLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~ShowAxisLabel.html#) - Used to display the axis labels in which the line is placed
+
+**Adding arrow to line annotation**
+
+To display single headed arrow, set the ['LineCap'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html) property to ['Arrow'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineCap.html). The default value of the ['LineCap'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html) property is ['None'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineCap.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <chart:LineAnnotation X1="1" Y1="10" X2="5" Y2="10" Text="Line" LineCap="Arrow"></chart:LineAnnotation>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        LineAnnotation ellipse = new LineAnnotation()
+            {
+                X1 = 1,
+                Y1 = 10,
+                X2 = 5,
+                Y2 = 10,
+                Text = "Line",
+                LineCap=LineCap.Arrow
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Line Annotation](Annotation_images/LineAnnotation_Cap.jpeg)
 
 **Displaying** **Axis** **Labels** **for** **LineAnnotation**
 
 [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html#) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html#) also displays the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~ShowAxisLabel.html#) property to true as in the below code snippet.
 
-{% highlight xaml %}
 
-<syncfusion:SfChart.Annotations>
+{% tabs %}
 
-<syncfusion:HorizontalLineAnnotation X1="-0.5" X2="3.5"
+{% highlight xml %}
 
-Stroke="DarkGray"
-
-StrokeThickness="1"
-
-ShowAxisLabel="True"
-
-Fill="LightGray"                                                      
-
-Y1="1500" >                    
-
-</syncfusion:HorizontalLineAnnotation>
-
-<syncfusion:VerticalLineAnnotation  Stroke="DarkGray" 
-
-StrokeThickness="1"                                                    
-
-ShowAxisLabel="True"
-
-X1="1.5" >
-
-</syncfusion:VerticalLineAnnotation>
-
-</syncfusion:SfChart.Annotations>
+        <chart:VerticalLineAnnotation X1="3"  ShowAxisLabel="True"></chart:VerticalLineAnnotation>
+        <chart:HorizontalLineAnnotation X1="0" Y1="11" X2="6" Y2="11"  ShowAxisLabel="True"></chart:HorizontalLineAnnotation>
 
 {% endhighlight %}
 
-![Displaying axis label for line annotation in WPF Chart](Annotation_images/Annotation_img7.jpeg)
+{% highlight c# %}
 
+        HorizontalLineAnnotation hor = new HorizontalLineAnnotation()
+            {
+                X1 = 0,
+                Y1 = 10,
+                X2 = 6,
+                Y2 = 10,
+                ShowAxisLabel=true
+               
+            };
 
-**AxisLabelTemplate**
-
-You can also customize the default appearance of the axis label using [`AxisLabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~AxisLabelTemplate.html#) property as in the below code snippet.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:HorizontalLineAnnotation X1="-0.5" X2="3.5"
-
-Stroke="DarkGray"
-
-StrokeThickness="1"                                                     
-
-ShowAxisLabel="True"                                                                                                       
-
-Y1="1500" >  
-
-<syncfusion:HorizontalLineAnnotation.AxisLabelTemplate>
-
-<DataTemplate>
-
-<Border BorderBrush="DarkGray" 
-
-BorderThickness="1" CornerRadius="5" 
-
-Background="LightGray">
-
-<TextBlock Foreground="Black" 
-
-FontSize="11"
-
-Text="{Binding}">                                    
-
-</TextBlock>
-
-</Border>
-
-</DataTemplate>
-
-</syncfusion:HorizontalLineAnnotation.AxisLabelTemplate>
-
-</syncfusion:HorizontalLineAnnotation>
-
-</syncfusion:SfChart.Annotations>
+        VerticalLineAnnotation ver = new VerticalLineAnnotation()
+            {
+                X1 = 3,
+                ShowAxisLabel=true
+            };
 
 {% endhighlight %}
 
-![Customizing axis label in WPF Chart](Annotation_images/Annotation_img8.jpeg)
+{% endtabs %}
 
+![Displaying axis label for line annotation in WPF Chart](Annotation_images/Line_AxisLabel.jpeg)
 
-**Adding** **Arrow** **to** **LineAnnotation**
+Also, axis label can be customized the default appearance using [`AxisLabelTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~AxisLabelTemplate.html#) property.
 
-To display single headed arrow you can modify the line annotation by setting [`LineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html#) property to [`Arrow`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineCap.html). By default the [`LineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html#) property value in none.
+### Adding text in shape annotation
 
-![Arrow support for line annotation in WPF Chart](Annotation_images/Annotation_img9.jpeg)
+For all the shape annotations, the text can be displayed by using the [`Text`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~Text.html) property.
 
-### Adding Text in ShapeAnnotation
-
-For all the annotations like Text, Shape, Image and Line, you can display the text for the annotation using Text property as in the below code snippet.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:EllipseAnnotation  X1="2.5" Y1="1500" 
-
-Fill="LightBlue" Text="Annotation"                                               
-
-X2="3.6" Y2="1680" >
-
-</syncfusion:EllipseAnnotation>
-
-</syncfusion:SfChart.Annotations>
-
-{% endhighlight %}
-
-![Customizing text for shape annotation in WPF Chart](Annotation_images/Annotation_img10.jpeg)
-
-
-### Aligning Text in ShapeAnnotation
+**Customizing text in shape annotation**
 
 The text alignment can be changed using [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~HorizontalTextAlignment.html#) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~VerticalTextAlignment.html#) properties. 
 
-**EllipseAnnotation**
-
+{% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:EllipseAnnotation  X1="2.5" Y1="1500" 
-
-HorizontalTextAlignment="Center"
-
-VerticalTextAlignment="Center"
-
-Fill="LightBlue" Text="Annotation"                                               
-
-X2="3.6" Y2="1680" >
-
-</syncfusion:EllipseAnnotation>
-
-</syncfusion:SfChart.Annotations>
+  <chart:EllipseAnnotation  X1="1.5" Y1="12" Fill="SkyBlue" HorizontalTextAlignment="Center" 
+    VerticalTextAlignment="Center" Foreground="Brown" Text="Ellipse" X2="3" Y2="15" >
+                    </chart:EllipseAnnotation>   
 
 {% endhighlight %}
 
-![Alignment support for the text of shape annotation in WPF Chart](Annotation_images/Annotation_img11.jpeg)
+{% highlight c# %}
 
-
-**Line** **Annotation**
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:HorizontalLineAnnotation Text="Line Annotation" 
-
-X1="2" X2="3.5"
-
-Stroke="Black"
-
-StrokeThickness="1"
-
-HorizontalTextAlignment="Center" 
-
-VerticalTextAlignment="Bottom"
-
-Y1="1500" >                    
-
-</syncfusion:HorizontalLineAnnotation>
-
-</syncfusion:SfChart.Annotations>
+        EllipseAnnotation ellipse = new EllipseAnnotation()
+            {
+                X1 = 1.5,
+                Y1 = 12,
+                X2 = 3,
+                Y2 = 15,
+                Fill = new SolidColorBrush(Colors.SkyBlue),
+                HorizontalTextAlignment =HorizontalAlignment.Center,
+                VerticalTextAlignment = VerticalAlignment.Center,
+                Foreground = new SolidColorBrush(Colors.Brown),
+                Text = "Ellipse"               
+            };
 
 {% endhighlight %}
 
-![Alignment support for the text of shape annotation in WPF Chart](Annotation_images/Annotation_img12.jpeg)
-
-
-**Image** **Annotation**
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:ImageAnnotation  Text="Annotation" 
-
-HorizontalTextAlignment="Center"
-
-VerticalTextAlignment="Top"
-
-ImageSource="Images\Graduate.png"
-
-X1="2.5" Y1="1200" X2="3.6" Y2="1700" >                    
-
-</syncfusion:ImageAnnotation>            
-
-</syncfusion:SfChart.Annotations>
-
-{% endhighlight %}
-
-![Alignment support for the text of shape annotation in WPF Chart](Annotation_images/Annotation_img13.jpeg)
+{% endtabs %}
+![Alignment support for the text of shape annotation in WPF Chart](Annotation_images/Text_Shape_Annotation.jpeg)
 
 N> [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~HorizontalTextAlignment.html#) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~VerticalTextAlignment.html#) properties are not applicable for [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation.html#).
 
-### Customization of ShapeAnnotation
+### Customizing the Shape Annotation
 
 SfChart allows customization of shape annotation using the following properties.
 
@@ -572,41 +558,36 @@ SfChart allows customization of shape annotation using the following properties.
 * [`StrokeLineJoin`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeLineJoin.html#) - Represents the line join of the annotation outline.
 * [`StrokeMiterLimit`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeMiterLimit.html#) - Represents the limit on the ratio of the miter length to half of the annotation shape.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:HorizontalLineAnnotation X1="-0.5" X2="3.5"
-
-Stroke="DarkGray"
-
-StrokeThickness="3"
-
-HorizontalTextAlignment="Center" 
-
-VerticalTextAlignment="Bottom"
-
-Fill="LightGray" 
-
-StrokeDashArray="1,1"                                                                                       
-
-StrokeStartLineCap="Square"
-
-StrokeEndLineCap="Square"
-
-StrokeDashCap="Round"
-
-StrokeDashOffset="1.5"
-
-Y1="1500" >                    
-
-</syncfusion:HorizontalLineAnnotation>
-
-</syncfusion:SfChart.Annotations>
+  <chart:RectangleAnnotation  X1="1.5" Y1="12" Fill="LightGray" Stroke="Brown" StrokeDashArray="5,2"             HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Rectangle" X2="3" Y2="14" >
+                    </chart:RectangleAnnotation>                           
 
 {% endhighlight %}
 
-![Shape annotations customization support in WPF Chart](Annotation_images/Annotation_img14.jpeg)
+{% highlight c# %}
+
+        RectangleAnnotation rectangle = new RectangleAnnotation()
+            {
+                X1 = 1.5,
+                Y1 = 12,
+                X2 = 3,
+                Y2 = 14,
+                Fill = new SolidColorBrush(Colors.LightGray),
+                HorizontalTextAlignment =HorizontalAlignment.Center,
+                VerticalTextAlignment = VerticalAlignment.Center,
+                Stroke=new SolidColorBrush(Colors.Brown),
+                StrokeDashArray= new DoubleCollection() { 5,2},
+                Text = "Rectangle"
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Shape annotations customization support in WPF Chart](Annotation_images/Rectangle_Customize.jpeg)
 
 
 ## Image Annotation
@@ -620,91 +601,17 @@ The following API’s are used in ImageAnnotation
 * [`X2`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~X2.html#)- Represents the X2 Coordinate of the Annotation.****
 * [`Y2`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~Y2.html#)- Represents the Y2 Coordinate of the Annotation.****
 
-{% highlight xaml %}
-
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:ImageAnnotation  CoordinateUnit="Axis"     
-
-ImageSource="apple.png"
-
-X1="3" Y1="1200" X2="4" Y2="1450" />
-
-<syncfusion:ImageAnnotation  CoordinateUnit="Axis" ImageSource="Fruit-Banana-01.png"                                            
-
-X1="2" Y1="1000" X2="3" Y2="1400"/>
-
-<syncfusion:ImageAnnotation  CoordinateUnit="Axis" ImageSource="Fruit-Grapes.png"
-
-HorizontalAlignment="Center"
-
-VerticalAlignment="Center"
-
-X1="1" Y1="1350" X2="2" Y2="1750" />
-
-<syncfusion:ImageAnnotation  CoordinateUnit="Axis" ImageSource="Fruit-Strawberry.png"
-
-HorizontalAlignment="Center"
-
-VerticalAlignment="Center"
-
-X1="0" Y1="1350" X2="1" Y2="1600" >
-
-</syncfusion:ImageAnnotation>
-
-</syncfusion:SfChart.Annotations>
-
-{% endhighlight %}
-
-![Image annotation type in WPF Chart](Annotation_images/Annotation_img15.jpeg)
-
-
-**Rotating** **the** **image** **in** **ImageAnnotation**
+{% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:ImageAnnotation  Angle="-90" CoordinateUnit="Axis" ImageSource="apple.png"
-
-HorizontalAlignment="Center"
-
-VerticalAlignment="Top"
-
-X1="3" Y1="1300" X2="3.5" Y2="1450" />
-
-<syncfusion:ImageAnnotation  Angle="-90" CoordinateUnit="Axis" ImageSource="Fruit-Banana-01.png"                                            
-
-HorizontalAlignment="Center"
-
-VerticalAlignment="Center"
-
-X1="2" Y1="1000" X2="2.5" Y2="1400"/>
-
-<syncfusion:ImageAnnotation   Angle="-90" CoordinateUnit="Axis" ImageSource="Fruit-Grapes.png"
-
-HorizontalAlignment="Center"
-
-VerticalAlignment="Center"
-
-X1="1" Y1="1350" X2="1.5" Y2="1750" />
-
-<syncfusion:ImageAnnotation   Angle="-90" CoordinateUnit="Axis" ImageSource="Fruit-Strawberry.png"
-
-HorizontalAlignment="Center"
-
-VerticalAlignment="Center"
-
-X1="0" Y1="1350" X2="0.5" Y2="1650" >
-
-</syncfusion:ImageAnnotation>
-
-</syncfusion:SfChart.Annotations>
+        <chart:ImageAnnotation ImageSource="rain.jpg"  X1="2.5" Y1="16" X2="3.5" Y2="18"></chart:ImageAnnotation>                       
 
 {% endhighlight %}
 
-![Rotation support for image annotation in WPF Chart](Annotation_images/Annotation_img16.jpeg)
+{% endtabs %}
 
+![Image annotation type in WPF Chart](Annotation_images/Image_Annotation.jpeg)
 
 ## Interactivity
 
@@ -974,12 +881,7 @@ The following screenshot explains that even when x value is provided out of boun
 
 The text in annotation can be customized using the following API’s
 
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontSize.html#)– An int value that represents the font size of the annotation text.
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontFamily.html#)– Represents the font family of the annotation text.
-* [`FontStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontStyle.html#)– Represents the font style of the annotation text.
-* [`FontWeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontWeight.html#)- Represents the font weight of the annotation text.
-* [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~Foreground.html#)– Represents the brush value of the annotation text color. 
-* [`FontStretch`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontStretch.html) - Represents the font stretch for the annotation description.
+
 
 The following code example demonstrates the customization of annotation text.
 
