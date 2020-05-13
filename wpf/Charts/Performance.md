@@ -15,4 +15,14 @@ documentation: ug
 * You also have Fast Series types for financial charts like HiLo and HiLoOpenClose and they are named as FastHiLoBitmapSeries and FastHiLoOpenCloseBitmapSeries respectively.
 
 
+## Deferred real-time updates
+
+You can hold and resume the series updates in dynamic update scenarios using the below methods.
+
+[`SuspendSeriesNotification`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~SuspendSeriesNotification.html#)
+
+[`ResumeSeriesNotification`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartBase~ResumeSeriesNotification.html#)
+
+
+
 
