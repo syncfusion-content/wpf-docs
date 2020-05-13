@@ -73,17 +73,26 @@ ItemsSource="{Binding Fruits}" >
 
 LineSeries series = new LineSeries()
 {
+
     ItemsSource = new ViewModel().Fruits,
+
     XBindingPath = "FruitName",
+
     YBindingPath = "People",
+
     ShowEmptyPoints = true,
+
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
+
     ShowLabel = true,
+
     LabelPosition = AdornmentsLabelPosition.Auto
+
 };
 
 series.AdornmentsInfo = adornmentInfo;

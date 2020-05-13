@@ -614,7 +614,9 @@ The following code example demonstrates displaying the string value which is tak
 
     <syncfusion:SfChart.Resources>
 
-                <DataTemplate x:Key="labelTemplate">
+                <local:AdornmentLabelConverter x:Key="labelConverter"/>
+
+                <DataTemplate >
 
                     <Border CornerRadius="2" BorderBrush="Black"
                             
@@ -624,7 +626,7 @@ The following code example demonstrates displaying the string value which is tak
                                    
                                    FontSize="11" Foreground="Black"
                                    
-                                   Text="{Binding Item.Demand}"/>
+                                   Text="{Binding Converter={StaticResource labelConverter}}"/>
 
                     </Border>
 
@@ -698,6 +700,30 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 series.AdornmentsInfo = adornmentInfo;
 
 chart.Series.Add(series);
+
+
+public class AdornmentLabelConverter : IValueConverter
+{
+
+    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+
+    {
+
+        ChartPieAdornment adornment = value as ChartPieAdornment;
+
+        return (adornment.Item as GoldDemand).Demand;
+
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+
+    {
+
+        return value;
+
+    }
+
+}
 
 {% endhighlight %}
 
