@@ -108,8 +108,6 @@ To change the minimum and maximum values of a linear scale, use the `Minimum` an
 
 The `Interval` property allows to set intervals for scale. The default value of the `Interval` property is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
 
-N> We can specify the interval value upto 5 decimal places while showing labels of linear scale. 
-
 {% tabs %}
 
 {% highlight xml %}
@@ -271,7 +269,7 @@ Size of the scale can be customized using the following two properties.
 
 ## Setting scale direction
 
-You can set the scale position to its forward and backward using the `ScalePosition` property.
+You can set the scale position to its forward and backward using the [`ScaleDirection`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleDirection.html) property.
 
 {% tabs %}
 
