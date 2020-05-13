@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 3D Charts| SfChart | Wpf | Syncfusion
-description: 3d charts
+description: Learn here about getting started with simple application using WPF 3d chart (SfChart3D) control and more details.
 platform: wpf
 control: SfChart
 documentation: ug
 ---
 
-# 3D Charts
+# WPF 3D Charts (SfChart3D)
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 
