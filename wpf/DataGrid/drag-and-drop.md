@@ -278,6 +278,45 @@ To customize draggable popup, use the [RowDragDropTemplate](https://help.syncfus
 
 ![Customizing draggable Popup in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img27.png)
 
+### Customizing draggable popup to show corresponding dragging row data 
+
+You can customize the dragging popup to show the corresponding drag row data by customizing the `RowDragDropTemplate` with binding the data from the `DraggingRecords` property.
+
+{% tabs %}
+{% highlight xaml %}
+<DataTemplate x:Key="dragdroptemplate">
+        <Border x:Name="border" Width="250"    
+                    Background="#ececec"   
+                    BorderBrush="#c8c8c8"  Height="60"  
+                    BorderThickness="1.2">
+                 <Grid  VerticalAlignment="Center" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="OrderID : " Grid.Row="0" Grid.Column="0" />
+                    <TextBlock Text="{Binding DraggingRecords[0].OrderID}" Grid.Row="0" Grid.Column="1"/>
+                    <TextBlock Text="CustomerID : " Grid.Row="1" Grid.Column="0"/>
+                    <TextBlock Text="{Binding DraggingRecords[0].CustomerID}" Grid.Row="1" Grid.Column="1"/>
+                </Grid>
+        </Border>
+</DataTemplate>
+
+<Syncfusion:SfDataGrid x:Name="datagrid" 
+                               AllowDraggingRows="True"
+                               AllowDrop="True"
+                               RowDragDropTemplate="{StaticResource dragdroptemplate}"
+                               ItemsSource="{Binding OrderDetails}"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customizing draggable Popup to show corresponding dragging row data in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img31.png)
+
 ### Reorder the source collection while drag and drop the rows
 
 You can reorder the source collection after drag and drop the row by handling [RowDragDropController.Dropped](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowDragDropController.html) event.

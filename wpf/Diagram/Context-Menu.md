@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu in WPF Diagram (SfDiagram)
 
 In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. Diagram provided some in-built ContextMenu items and allows to define custom menu items.
 
@@ -85,6 +85,8 @@ DiagramMenuItem mi = new DiagramMenuItem()
 
 ![Node Custom Menu](Context-Menu_images/Context-Menu_img3.png)
 
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/ContextMenu) 
+
 ## Events
 
 * `MenuItemClickedEvent`will invoke when you click the menu items. To explore about arguments, refer to [MenuItemClickedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MenuItemClickedEventArgs.html)
@@ -108,3 +110,7 @@ void MainPage_MenuItemClickedEvent(object sender,
 {% endtabs %}
 
 * `MenuOpening` event will notify when you perform right click on Diagram/Node/Connector.To explore about arguments, refer to [MenuOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.MenuOpeningEventArgs.html).
+
+## See Also
+
+* [How to customize the context menu?](https://www.syncfusion.com/kb/10467/how-to-customize-the-contextmenu-in-wpf-sfdiagram)

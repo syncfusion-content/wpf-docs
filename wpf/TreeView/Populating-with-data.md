@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating WPF TreeView with Data | Syncfusion
-description: This section describes about how to populate wpf treeview using treeview items and binding. 
+description: This section describes about how to populate wpf TreeViewAdv using TreeViewItemAdv and data binding. 
 platform: wpf
 control: TreeViewAdv
 documentation: ug
@@ -213,6 +213,8 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 4. TreeViewAdv will be created as follows:
 
 ![Add WPF TreeView item using data binding](Populating_with_data_images/Populating_with_data_img1.jpeg)
+
+[View Sample in GitHub](https://github.com/SyncfusionExamples/Add-wpf-treeviewadv-items-by-databinding-in-XML)
 
 ### Binding to object
 

@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Connector
+# Connector types and creation
 
 Connectors are objects used to create link between two points or nodes to indicate the flow of operation or relationships between them.
 
@@ -23,7 +23,7 @@ Diagram supports to create five types of connectors. They are:
 *   `QuadraticBezier`
 *   `PolyLine`
 
-The `DefaultConnectorType` property allows you to change the connector type. By default, the diagram connector type is `Orthogonal`.
+The [DefaultConnectorType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~DefaultConnectorType.html) property allows you to change the connector type. By default, the diagram connector type is `Orthogonal`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,13 +86,13 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ### How to draw polyline
 
-Polyline is a continuous line of a segment or a continuous line composed of more line segments. When you click the diagram page, a line will be drawn, and then new segments will be kept on added for every click on page. Line drawing will be stopped when double-click the page. This polyline will be drawn using the `Tool`, `DrawingTool`, and `DefaultConnectorType` properties.
+Polyline is a continuous line of a segment or a continuous line composed of more line segments. When you click the diagram page, a line will be drawn, and then new segments will be kept on added for every click on page. Line drawing will be stopped when double-click the page. This polyline will be drawn using the [Tool](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Tool.html), [DrawingTool](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~DrawingTool.html), and `DefaultConnectorType` properties.
 
 {% tabs %}
 {% highlight xaml %}
 
 <!--Initialize the Sfdiagram-->
-<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="Line" 
+<syncfusion:SfDiagram x:Name="diagram" DefaultConnectorType="PolyLine" 
                       Tool="ContinuesDraw" DrawingTool="Connector" />
 
 {% endhighlight %}
@@ -139,13 +139,15 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 
 For more information about changing drawing tool of diagram, refer to [Tools](/wpf/sfdiagram/tools "Tools").
 
+Find the [Drawing tools sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools) to depict the Tools.
+
 ## Create connector 
 
 Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of [Segments](/wpf/sfdiagram/connector/interaction/segments/straight "Segments").
 
 ## Create connectors through connection points
 
-The connector can be created by defining the source and target point of the connection. The `SourcePoint` and `TargetPoint` properties, which are `Point` type allows you to set or get the start and end points of a connection.
+The connector can be created by defining the source and target point of the connection. The [SourcePoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~SourcePoint.html) and [TargetPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~TargetPoint.html) properties, which are `Point` type allows you to set or get the start and end points of a connection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -188,7 +190,7 @@ ConnectorViewModel simpleConnector = new ConnectorViewModel()
 
 ## Create connection between nodes
 
-The connector can be created between nodes to display the relationship between them. The `SourceNode`/`SourceNodeID` and `TargetNode`/`TargetNodeID` properties allows you to represent the nodes to be connected.
+The connector can be created between nodes to display the relationship between them. The [SourceNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~SourceNode.html)/[SourceNodeID](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~SourceNodeID.html) and [TargetNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~TargetNode.html)/[TargetNodeID](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~TargetNodeID.html) properties allows you to represent the nodes to be connected.
 
 {% tabs %}
 {% highlight xaml %}
@@ -270,7 +272,7 @@ ConnectorViewModel nodeToNodeConnection = new ConnectorViewModel()
 
 By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with ports.
 
-The `SourcePort`/`SourcePortID` and `TargetPort`/`TargetPortID` properties allows you to create connections between some specific points of Source/Target nodes. 
+The [SourcePort](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~SourcePort.html)/[SourcePortID](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~SourcePortID.html) and [TargetPort](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~TargetPort.html)/[TargetPortID](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ConnectorViewModel~TargetPortID.html) properties allows you to create connections between some specific points of Source/Target nodes. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -401,6 +403,8 @@ ConnectorViewModel PortToPortConnection = new ConnectorViewModel()
 
 For more details about Ports, refer to [Port](https://help.syncfusion.com/wpf/sfdiagram/port "Port").
 
+Find the [Connector creation sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Connector/Create%20Connector) to depict the connector creation.
+
 ## Draw connectors
 
 Connectors can be interactively drawn by clicking and dragging on the diagram surface by using the drawing tool. For more information about drawing connectors, refer to [Drawing Tools](/wpf/sfdiagram/tools#drawing-tools:connectors "Drawing Tools").
@@ -415,3 +419,12 @@ Connectors can be predefined and added to the stencil. You can drop those connec
 
 For more information about adding connectors from stencil, refer to [Stencil](/wpf/sfdiagram/stencil "Stencil").
 
+## See Also
+
+* [How to apply built-in theme for node and connector?](https://www.syncfusion.com/kb/11409/how-to-apply-built-in-theme-for-node-and-connector-in-wpf-diagramsfdiagram)
+
+* [How to decide whether to drag or draw a connection on port at runtime?](https://www.syncfusion.com/kb/9622/how-to-decide-whether-to-drag-or-draw-a-connection-on-port-at-runtime-in-the-wpf)
+
+* [How to customize the context menu?](https://www.syncfusion.com/kb/10467/how-to-customize-the-contextmenu-in-wpf-sfdiagram)
+
+* [How to create port at runtime though SetTool?](https://www.syncfusion.com/kb/11446/how-to-create-port-at-runtime-through-set-tool-in-wpf-diagram-sfdiagram)

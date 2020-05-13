@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Virtualization
+# Virtualization and customization
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded and remaining objects will be loaded only when they come into view. 
 
@@ -103,6 +103,8 @@ diagram.OutlineSettings = new OutlineSettings()
 {% endtabs %}
 
 ![Custom Outline](Virtualization_images/CustomOutline.gif)
+
+Find the [Virtualization sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Virtualization) to depict the Virtualization.
 
 {% seealso %}
 
