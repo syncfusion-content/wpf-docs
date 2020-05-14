@@ -49,8 +49,8 @@ Multiple selected elements are visually represented as shown.
 
 |SingleSelectionMode|Description|
 |--|--|
-|Select|Enables or disables singleselectionmode as Select. It is used to stop Unselection again click the same node which means the node remains always selected.|
-|ToggleSelection|Enables or disables singleselectionmode as ToggleSelection.It is used to perform selection or unselection again click the same node.|
+|Select|Enables or disables single selection mode as Select. It is used to stop Unselection again click the same node which means the node remains always selected.|
+|ToggleSelection|Enables or disables single selection mode as ToggleSelection.It is used to perform selection or unselection again click the same node.|
 
 {% tabs %}
 {% highlight Xaml %}
