@@ -1826,63 +1826,6 @@ chart.Annotations.Add(annotation);
 
 ![Annotation resizing mode support in WPF Chart](Annotation_images/Annotation_img23.jpeg)
 
-
-## Annotation Clipping
-
-SfChart allows you to clip the annotation if the annotation crosses the boundary by setting [`EnableClipping`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableClipping.html#) property to True as in the below code snippet.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:ImageAnnotation  HorizontalTextAlignment="Center"
-
-VerticalTextAlignment="Top"
-
-EnableClipping="True"
-
-ImageSource="Images\Graduate.png"
-
-X1="4" Y1="1200" X2="7" Y2="1700" >                    
-
-</syncfusion:ImageAnnotation>            
-
-</syncfusion:SfChart.Annotations>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-
-ImageAnnotation annotation=new ImageAnnotation()
-{
-        
-    X1 = 4, Y1 = 1200, X2 = 7, Y2 = 1700,
-
-    HorizontalAlignment = HorizontalAlignment.Center,
-
-    VerticalAlignment = VerticalAlignment.Top,
-
-    EnableClipping = true,
-
-    ImageSource = new BitmapImage(new Uri("@Image/Graduate.png",UriKind.RelativeOrAbsolute))
-
-};
-
-chart.Annotations.Add(annotation);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The following screenshot explains that even when x value is provided out of bounds the image annotation is placed inside the chart area.
-
-![Annotation clipping support in WPF Chart](Annotation_images/Annotation_img24.jpeg)
-
-
 ## Customizing Text in Annotation
 
 The text in annotation can be customized using the following API’s

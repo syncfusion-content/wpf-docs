@@ -562,8 +562,9 @@ SfChart allows customization of shape annotation using the following properties.
 
 {% highlight xaml %}
 
-  <chart:RectangleAnnotation  X1="1.5" Y1="12" Fill="LightGray" Stroke="Brown" StrokeDashArray="5,2"             HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Rectangle" X2="3" Y2="14" >
-                    </chart:RectangleAnnotation>                           
+        <chart:RectangleAnnotation  X1="1.5" Y1="12" Fill="LightGray" Stroke="Brown" StrokeDashArray="5,2"                     HorizontalTextAlignment="Center" VerticalTextAlignment="Center" 
+        Text="Rectangle" X2="3" Y2="14" >
+        </chart:RectangleAnnotation>                           
 
 {% endhighlight %}
 
@@ -579,7 +580,7 @@ SfChart allows customization of shape annotation using the following properties.
                 HorizontalTextAlignment =HorizontalAlignment.Center,
                 VerticalTextAlignment = VerticalAlignment.Center,
                 Stroke=new SolidColorBrush(Colors.Brown),
-                StrokeDashArray= new DoubleCollection() { 5,2},
+                StrokeDashArray= new DoubleCollection() { 5,2 },
                 Text = "Rectangle"
             };
 
@@ -594,7 +595,7 @@ SfChart allows customization of shape annotation using the following properties.
 
 SfChart provides support to add images as Annotation over the chart area, using the class [ImageAnnotation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation.html#). 
 
-The following API’s are used in ImageAnnotation
+The following API’s are used in ImageAnnotation.
 
 * [`Angle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation~Angle.html#)  – An integer value that represents the rotation angle for the text in Annotation.
 * [`ImageSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~ImageSource.html#)  - Represents the source from where the image must be added.
@@ -875,79 +876,6 @@ X1="4" Y1="1200" X2="7" Y2="1700" >
 The following screenshot explains that even when x value is provided out of bounds the image annotation is placed inside the chart area.
 
 ![Annotation clipping support in WPF Chart](Annotation_images/Annotation_img24.jpeg)
-
-
-## Customizing Text in Annotation
-
-The text in annotation can be customized using the following API’s
-
-
-
-The following code example demonstrates the customization of annotation text.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.Annotations>
-
-<syncfusion:EllipseAnnotation  X1="2.5" Y1="1500" 
-
-Stroke="DarkGray"   
-
-Text="Annotation"
-
-FontSize="12" Foreground="DarkGray"
-
-FontStyle="Italic" FontWeight="Bold"
-
-Fill="LightGray" ShowToolTip="True"                                                                                            
-
-X2="3.6" Y2="1680">                    
-
-</syncfusion:EllipseAnnotation>
-
-</syncfusion:SfChart.Annotations>
-
-{% endhighlight %}
-
-![Annotation text customization support in WPF Chart](Annotation_images/Annotation_img25.jpeg)
-
-Text can also be customized by setting [`ContentTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~ContentTemplate.html#) property as in the below code snippet.
-
-{% highlight xaml %}
-
-<syncfusion:SfChart.Annotations>           
-
-<syncfusion:TextAnnotation  CoordinateUnit="Pixel"                                           
-
-X1="266" Y1="4" >
-
-<syncfusion:TextAnnotation.ContentTemplate>
-
-<DataTemplate>
-
-<Border Height="20" Width="80" BorderBrush="Black" CornerRadius="2" Background="LightGray" >
-
-<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" 
-
-FontFamily="Calibri (Body)"
-
-FontWeight="SemiBold" Foreground="Black" FontSize="12" 
-
-Text="Gold Demand" FontStyle="Italic"></TextBlock>
-
-</Border>
-
-</DataTemplate>
-
-</syncfusion:TextAnnotation.ContentTemplate>
-
-</syncfusion:TextAnnotation>
-
-</syncfusion:SfChart.Annotations>
-
-{% endhighlight %}
-
-![Annotation text customization support in WPF Chart](Annotation_images/Annotation_img26.jpeg)
 
 ## Events
 
