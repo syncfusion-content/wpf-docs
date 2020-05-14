@@ -42,7 +42,7 @@ diagram.Tool = Tool.SingleSelect | Tool.ZoomPan;
 {% endhighlight %}
 {% endtabs %}
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools)
 
 ## Drawing Tools
 
@@ -169,9 +169,6 @@ Free hand drwing connections will be drawn by using `DrawingTool` property.
 // Enable the FreeHand drawing
 diagram.DrawingTool = DrawingTool.FreeHand;
 
-// Enable the Tool
-//diagram.Tool = Tool.DrawOnce;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -285,7 +282,7 @@ public class CustomClass:SfDiagram
 
 ![Set Cursor](Tools_images/SetCursor.gif)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
 
 {% seealso %}
 
