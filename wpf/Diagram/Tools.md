@@ -42,7 +42,7 @@ diagram.Tool = Tool.SingleSelect | Tool.ZoomPan;
 {% endhighlight %}
 {% endtabs %}
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/DrawingTools)
 
 ## Drawing Tools
 
@@ -169,13 +169,10 @@ Free hand drwing connections will be drawn by using `DrawingTool` property.
 // Enable the FreeHand drawing
 diagram.DrawingTool = DrawingTool.FreeHand;
 
-// Enable the Tool
-//diagram.Tool = Tool.DrawOnce;
-
 {% endhighlight %}
 {% endtabs %}
 
-![free hand drawing](Interaction_images/FreeHand_img1.gif)
+![free hand drawing](Tools_images/FreeHand_img1.gif)
 
 [FreeFormEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~FreeFormDrawingEvent_EV.html) will notify the current drawing Connector and drawing State in [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs_members.html). 
 
@@ -285,7 +282,7 @@ public class CustomClass:SfDiagram
 
 ![Set Cursor](Tools_images/SetCursor.gif)
 
-[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Tools)
 
 {% seealso %}
 
