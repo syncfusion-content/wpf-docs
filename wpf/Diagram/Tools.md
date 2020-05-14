@@ -172,7 +172,7 @@ diagram.DrawingTool = DrawingTool.FreeHand;
 {% endhighlight %}
 {% endtabs %}
 
-![free hand drawing](Interaction_images/FreeHand_img1.gif)
+![free hand drawing](Tools_images/FreeHand_img1.gif)
 
 [FreeFormEvent](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~FreeFormDrawingEvent_EV.html) will notify the current drawing Connector and drawing State in [FreeFormDrawingEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.FreeFormDrawingEventArgs_members.html). 
 
