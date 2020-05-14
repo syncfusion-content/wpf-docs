@@ -84,9 +84,9 @@ Select the required folder for Theme Export to be selected. When exporting, the 
 
 ![Add Theme as Project for Theme Export](ThemeStudio_images/ThemeStudio-Themes-Folder.png)
 
-### Ensuring version and generating theme assembly
+### Generating theme assembly
 
-Let us see the step by step procedure for ensuring version and generating theme assembly for exported theme project.
+Let us see the step by step procedure for ensuring generating theme assembly for exported theme project.
 
 **Step 1:**
 
@@ -119,19 +119,10 @@ Syncfusion.Themes.MaterialDark.WPF_2010.csproj</td></tr>
 Syncfusion.Themes.MaterialDark.WPF_NETCore.csproj</td></tr>
 </table>
 
+
 **Step 2:**
 
-Ensure the version of the exported theme project with the Syncfusion assembly(.dll) version by checking the version in the AssemblyInfo.cs file. For example, exported theme project `Syncfusion.Themes.MaterialDark.WPF_2013.csproj` is attached to the existing application with the target framework `.NET Framework 4.5.1` and version is modified in the `AssemblyInfo.cs` similar to the Syncfusion assembly version used in the application.
-
-![Setting Assembly Version in Properties](ThemeStudio_images/ThemeStudio-Assembly-Version.png)
-
-Ensure that `sf.snk` path is commented out which is located below the assembly version in `AssemblyInfo.cs`, since the end user's private key (.snk) should be used to generate theme assembly from exported project.
-
-![Commmenting out common keys in Properties](ThemeStudio_images/ThemeStudio-Common-Key.png)
-
-**Step 3:**
-
-To generate theme assembly, use the private key pair if it is already created by referring it to the exported theme project in signing tab inside the application properties or [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) through Visual Studio if the private key pair is not created. 
+To generate theme assembly, use the private key pair if it is already created by referring it to the exported theme project in signing tab inside the application properties or [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) through Visual Studio if the private key pair is not created or use the auto-generated snk file `ThemeStudio.snk` from the Export Folder. 
 
 Click the `Sign the assembly` checkbox to use the private key pair for generating theme assembly. Ensure that exported theme project should be rebuild through `Release` mode for generating theme assembly.
 
