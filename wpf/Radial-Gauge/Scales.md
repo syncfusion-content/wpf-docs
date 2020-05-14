@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scales| SfCircularGauge | Wpf | Syncfusion
-description: This section describes how to set scales and customize the scales in the SfCircularGauge control for Xamarin.Forms
+description: This section explains how to set scales and customize the scales for WPF in Syncfusion circular gauge control.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
@@ -204,7 +204,7 @@ The `Interval` property allows you to set the interval for a scale.
 
 ![Circular Scale Interval Image](Scales_images/Scales_img4.png)
 
-N> We can specify the interval value upto 5 decimal places while showing labels of linear scale.
+N> You can specify the interval value upto 5 decimal places while showing the labels of linear scale.
 
 ## Setting scale direction for scale
 
