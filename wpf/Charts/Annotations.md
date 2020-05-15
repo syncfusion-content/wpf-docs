@@ -660,7 +660,7 @@ The following code example demonstrates the dragging the rectangle annotation.
 ![Annotation dragging support in WPF Chart](Annotation_images/Annotation_Drag.png)
 
 
-Also, the direction of dragging can be customizied by using [`DraggingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~DraggingMode.html#) property.
+Also, the direction of dragging can be customized by using [`DraggingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~DraggingMode.html#) property.
 
 **Resizing** **the** **Annotation**
 
