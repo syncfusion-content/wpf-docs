@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Undo and Redo
+# Undo/Redo and its Customization 
 
 Diagram provides built-in support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through shortcut keys or through commands.
 
@@ -63,7 +63,7 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Undoable;
 
 ## How to Customize the Undo Redo process
 
-History list allows to revert or restore single and multiple changes through a single undo/redo command. The purpose of custom undo redo perocess is to store actions which are not done through default undo redo history list. Appearance level changes and its history informations did not stored in the history list.  For example, revert/restore the fill color change of multiple elements at a time. To store multiple actions at a time, actions should be logged using [CompositeTransactions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CompositeTransactions.html) class.
+History list allows to revert or restore single and multiple changes through a single undo/redo command. The purpose of custom undo redo process is to store actions which are not done through default undo redo history list. Appearance level changes and its history informations did not stored in the history list.  For example, revert/restore the fill color change of multiple elements at a time. To store multiple actions at a time, actions should be logged using [CompositeTransactions](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.CompositeTransactions.html) class.
 
 To achieve this you need to customize the [HistoryManager](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.HistoryManager.html) class of diagram control and need to override the Undo Redo methods.
 
