@@ -122,7 +122,7 @@ Syncfusion.Themes.MaterialDark.WPF_NETCore.csproj</td></tr>
 
 **Step 2:**
 
-The exported theme project should be build in `Release` mode to generate theme assembly.
+The exported theme project should be rebuild in `Release` mode to generate theme assembly.
 
 The export theme project has default `ThemeStudio.snk` key pair, if it is not required use the private key pair which is already created by referring it to the export theme project inside the application properties or [Create a new key pair](https://docs.microsoft.com/en-us/dotnet/standard/assembly/create-public-private-key-pair) through Visual Studio if the private key pair is not created externally.
 
