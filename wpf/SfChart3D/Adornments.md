@@ -7,15 +7,15 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Adornments in WPF Chart (SfChart3D)
+# Adornments in WPF 3D Chart (SfChart3D)
 
 Adornments are used to provide information about the data points to the user. Values from data point(x, y) or other custom properties from a data source can be displayed.You can add a shape and label to adorn each data point.
 
 Each adornment can be represented by the following:
 
-    * Marker- Displays the desired symbol at the (X, Y) point.
-    * Label - Displays the segment label content at the (X, Y) point.
-    * ConnectorLine - Line used to connect the (X, Y) point and the label element.
+* Marker- Displays the desired symbol at the (X, Y) point.
+* Label - Displays the segment label content at the (X, Y) point.
+* ConnectorLine - Line used to connect the (X, Y) point and the label element.
 
     
 The following code example illustrates how to initialize the adornment.
