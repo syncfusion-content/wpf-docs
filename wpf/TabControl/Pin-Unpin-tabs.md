@@ -1,97 +1,163 @@
 ---
 layout: post
-title: Pin and Unpin the TabItems in TabControlExt | Syncfusion | WPF
-description: Explains about pinning and unpinning behavior of TabItems in the TabControlExt for WPF
+title: Pin and Unpin the TabItems in WPF TabControlExt control | Syncfusion
+description: Learn about pin and unpin tab item support in Syncfusion WPF TabControlExt control and more details about the control features.
 platform: wpf
 control: TabControlExt
 documentation: ug
 ---
-# Pin and Unpin tab items
 
-This section explains the pin and unpin tab items support in TabControlExt.
+# Pin or Unpin the tab items in TabControl
 
-## Enabling/disabling pinning behavior
+This section explains the pin and unpin tab items in [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html). 
 
-The [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property of TabItemExt decides whether the TabItemExt could be pinnable or not. The corresponding tab item will be pinned when the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property is set to true. When this property is set to false, the pin and unpin behaviors of TabItem will be disabled. The default value of the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property is false.
+## Enabling pin and unpin behaviors
+
+If you want to pin or unpin the tab items, use the [TabItemExt.AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property as `true`. When this property is set to `false`, the pin and unpin behaviors of tab item will be disabled. The default value of the `TabItemExt.AllowPin` property is `false`.
 
 {% tabs %}
-
 {% highlight XAML %}
-
-  <syncfusion:TabControlExt>
-
-            <syncfusion:TabItemExt Header="Beijing" AllowPin="True" />
-            
-            <syncfusion:TabItemExt Header="Madagascar" AllowPin="True"/>                      
-            
+ 
+<syncfusion:TabControlExt  Name="tabControlExt">
+    <syncfusion:TabItemExt AllowPin="True"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt AllowPin="True" 
+                           Header="tabItem2" Name="tabItemExt2"/>
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
+{% highlight C# %}
 
+tabItemExt1.AllowPin = true;
+tabItemExt2.AllowPin = true;
+
+{% endhighlight %}
 {% endtabs %}
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Pin-UnPin) in GitHub
+
+## Functionality of PinButton
+
+ When the corresponding tab item is pinned, it will be inserted at first position of the tab header panel(if its not have any pinned tab. Otherwise, the pinned tab item will be added next to last pinned item). When the tab item is unpinned, it will be placed after to the pinned tab items.
 
 ## Pin and Unpin tab items using PinButton
 
-The PinButton will be visible in the TabItemExt only when the [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ShowPin.html) property is set to true. The default value of this property is false, so the PinButton will be collapsed from header panel of tab item.
+If you want to pin or unpin the tab item using the pin button, use the [TabItemExt.ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ShowPin.html) property value as `true` and set the `TabItemExt.AllowPin` property value as `true`. The default value of `TabItemExt.ShowPin` property is `false`, so the PinButton is collapsed from header panel of the tab item.
 
 {% tabs %}
-
 {% highlight XAML %}
 
-  <syncfusion:TabControlExt>
-
-            <syncfusion:TabItemExt Header="Beijing" AllowPin="True" ShowPin="True" />
-            
-            <syncfusion:TabItemExt Header="Madagascar" ShowPin="False"/>    
-
-            <syncfusion:TabItemExt Header="New York" AllowPin="False" ShowPin="True" />
-            
-            <syncfusion:TabItemExt Header="London" ShowPin="False"/>                   
-            
+<syncfusion:TabControlExt  Name="tabControlExt">
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True" 
+                           Header="tabItem2" Name="tabItemExt2"/>
 </syncfusion:TabControlExt>
 
 {% endhighlight %}
+{% highlight C# %}
 
+//Showing the pin buttons
+tabItemExt1.ShowPin = true;
+tabItemExt2.ShowPin = true;
+
+//Enabling the pin buttons
+tabItemExt1.AllowPin = true;
+tabItemExt2.AllowPin = true;
+
+{% endhighlight %}
 {% endtabs %}
 
 ![Displaying PinButton to specific items](pin-unpin-tabs-images\displaying-pinbutton.png)
 
-If the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property is true, the PinButton will be enabled and will be visible. If the [ShowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~ShowPin.html) property is true, and the [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) property is false, the PinButton will be displayed as a disabled button.
+N> If the `ShowPin` property is `true`, and the `AllowPin` property is `false`, the PinButton will be displayed as a disabled button.
 
-### Functionality of PinButton
-
-When the pin button of the TabItemExt is visible, the corresponding TabItem can be pinned or unpinned from the Tabcontrol. When the corresponding TabItem is pinned, it will be inserted at first position of the TabItems collection(if the pinned tab item collection has zero count. Otherwise, the pinned tab item will be added to the existing collection). When the TabItem is unpinned, it will be removed from the pinned tab item collection and added to the first position of the unpinned tab item collection.
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Pin-UnPin) in GitHub
 
 ## Pin and Unpin the tab items programmatically
 
-TabItems can be pinned or unpinned from the TabControlExt using [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~IsPinned.html) property of TabItemExt. If the property [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~IsPinned.html) is set to true, the corresponding item will be added to respective index. Also,if the property [IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~IsPinned.html) is set as false, the tab item will be removed from pinned collection and added to unpinned tab item collection. The default value of the property is False.
-
-## Pin and Unpin tab items through ContextMenu
-
-The pin or unpin operations can be done through TabItemExt's ContextMenu also. If the property [AllowPin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~AllowPin.html) is true, and the TabItem is not pinned, "Pin Tab" option will be visible. If the TabItem is pinned already, "Unpin Tab" will be visible. 
+You can pin or unpin the tab items programmatically by using the [TabItemExt.IsPinned](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabItemExt~IsPinned.html) property. If the `TabItemExt.IsPinned` property is set to `true`, the corresponding item will be pinned. Also, if the `TabItemExt.IsPinned` property is set as `false` and the item is pinned, then it will be unpinned. The default value of `TabItemExt.IsPinned` property is `false`.
 
 {% tabs %}
 {% highlight XAML %}
-<syncfusion:TabControlExt>
 
-            <syncfusion:TabItemExt Header="Beijing" AllowPin="True" />
-            
-            <syncfusion:TabItemExt Header="Madagascar" AllowPin="True"/>    
-
-            <syncfusion:TabItemExt Header="New York" AllowPin="True />
-            
-            <syncfusion:TabItemExt Header="London" AllowPin="True"/>                   
-            
+<syncfusion:TabControlExt Name="tabControlExt">
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True"
+                           IsPinned="False"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True" 
+                           IsPinned="True"
+                           Header="tabItem2" Name="tabItemExt2"/>
 </syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Pin or unpin the tab items programmatically
+tabItemExt1.IsPinned = false;
+tabItemExt2.IsPinned = true;
+
+//Showing the pin buttons
+tabItemExt1.ShowPin = true;
+tabItemExt2.ShowPin = true;
+
+//Enabling the pin buttons
+tabItemExt1.AllowPin = true;
+tabItemExt2.AllowPin = true;
+
 {% endhighlight %}
 {% endtabs %}
 
-The following images illustrates the same,
+![Tab items pinned and unpinned programmatically](pin-unpin-tabs-images\Ispinned-pinbutton.png)
 
-![Displays option to pin the TabItemExt](pin-unpin-tabs-images\pintab-option-contextmenu.png)
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Pin-UnPin) in GitHub
 
-![Displays option to Unpin the TabItemExt](pin-unpin-tabs-images\unpintab-option-contextmenu.png)
+## Pin and Unpin tab items using ContextMenu
+
+You can pin or unpin the tab items using the context menu. You can enable it by setting the `TabItemExt.AllowPin` property value as `true`. If the `TabItemExt.AllowPin` property is `true`, and the tab item is not pinned, "Pin Tab" option will be visible. If the tab item is pinned already, "Unpin Tab" option will be visible in the context menu. 
+
+N> If you want to show the pin and unpin buttons , use the `TabItemExt.ShowPin` value as `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt Name="tabControlExt">
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True"
+                           IsPinned="False"
+                           Header="tabItem1" Name="tabItemExt1"/>
+    <syncfusion:TabItemExt ShowPin="True" 
+                           AllowPin="True" 
+                           IsPinned="True"
+                           Header="tabItem2" Name="tabItemExt2"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Pin or unpin the tab items programmatically
+tabItemExt1.IsPinned = false;
+tabItemExt2.IsPinned = true;
+
+//Showing the pin buttons
+tabItemExt1.ShowPin = true;
+tabItemExt2.ShowPin = true;
+
+//Enabling the pin buttons
+tabItemExt1.AllowPin = true;
+tabItemExt2.AllowPin = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Displays option to pin and Unpin the tab items](pin-unpin-tabs-images\unpintab-option-contextmenu.png)
 
 ## Re-order pinned tabs
 
-Users can re-order the pinned item within the pinned items collection and re-order the un-pinned item within the unpinned item collection, but re-ordering between pinned and unpinned or unpinned and pinned has been restricted. If the pinned tab item is dropped in the unpinned tab item collection, the dragged item will be inserted at the last index of pinned tab item collection and if the un pinned tab item is dropped in pinned tab item collection, the dragged item will be inserted at zeroth index of un-pinned tab item collection.
+You can re-order the pinned item within the pinned items and re-order the un-pinned item within the unpinned, but re-ordering between pinned and unpinned or unpinned and pinned has been restricted. If the pinned tab item is dropped inside the unpinned tab items, the dragged item will be inserted at the last position of pinned tab item and if the unpinned tab item is dropped inside pinned tab items, the dragged item will be inserted after the last pinned item. You can disable this reordering by using th `AllowDragDrop` property as `false`.
+
+![Re-ordering pin and unpinned tab items](pin-unpin-tabs-images\Reorder.gif)

@@ -1,145 +1,85 @@
 ---
 layout: post
-title: Appearance| ColorPickerPalette | Wpf | Syncfusion
-description: appearance
+title: Appearance of the WPF ColorPickerPalette control | Syncfusion
+description: Learn about UI customization, styling, theme support in Syncfusion WPF ColorPickerPalette control and more details about the control features.
 platform: wpf
 control: ColorPickerPalette
 documentation: ug
 ---
 
-# Appearance
+# Appearance in WPF ColorPickerPalette
 
-The appearance of the ColorPickerPalette control can be customized by using the VisualStyle property. The following are the various built-in visual styles for ColorPickerPalette control.
+This section explains different UI customization, styling, theming options available in [ColorPickerPalette](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette.html) control.
 
-* Metro
-* Blend
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* Office2010Black
-* Office2010Blue
-* Office2010Silver
-* Office2013
-* Office2003
-* VS2010
-* Transparent
+## Change flow direction
 
-In the below code example, Metro theme is applied to the ColorPickerPalette control. 
+We can change the flow direction of the `ColorPickerPalette` layout from right to left by setting the `FlowDirection` property value as `RightToLeft`. The Default value of `FlowDirection` property is `LeftToRight`.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<syncfusion:ColorPickerPalette x:Name="colorPickerPalette" Color="Orange" syncfusion:SkinStorage.VisualStyle="Metro"  ThemePanelVisibility="Visible" Width="200" Height="50”/> 
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SkinStorage.SetVisualStyle(colorPickerPalette, "Metro"); 
-
-{% endhighlight %}
-
-{% highlight VB %}
-
-SkinStorage.SetVisualStyle(colorPickerPalette, "Metro")
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-Metro
-
-![](Appearance_images/Appearance_img6.png)
-
-Blend
-
-![](Appearance_images/Appearance_img2.png)
-
-Office2007Blue
-
-![](Appearance_images/Appearance_img1.png)
-
-
-Office2007Black
-
-![](Appearance_images/Appearance_img4.png)
-
-
-Office2007Silver
-
-![](Appearance_images/Appearance_img5.png)
-
-
-Office2003
-
-![](Appearance_images/Appearance_img3.png)
-
-Transparent
-
-![](Appearance_images/Appearance_img7.png)
-
-Office2010Blue
-
-![](Appearance_images/Appearance_img8.png)
-
-Office2010Black
-
-![](Appearance_images/Appearance_img9.png)
-
-Office2010Silver
-
-![](Appearance_images/Appearance_img10.png)
-
-Office2013
-
-![](Appearance_images/Appearance_img11.png)
-
-## MouseOverBackGround Color of ColorPickerPalette
-
-You can change the background color of the ColorPickerPalette at mouse over, based on the brush color set in the MouseOverBackground property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:ColorPickerPalette  x:Name="ColorPickerPalette1" MouseOverBackground="Green">       
+<syncfusion:ColorPickerPalette FlowDirection="RightToLeft"
+                               Name="colorPickerPalette" 
+                               Width="60"
+                               Height="40">
 </syncfusion:ColorPickerPalette>
 
 {% endhighlight %}
-
 {% highlight C# %}
 
-ColorPickerPalette ColorPickerPalette1 = new ColorPickerPalette();
-ColorPickerPalette1.MouseOverBackground = Brushes.Green;
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+colorPickerPalette.FlowDirection = FlowDirection.RightToLeft;
+colorPickerPalette.Width = 60;
+colorPickerPalette.Height = 40;
 
 {% endhighlight %}
-
-{% highlight VB %}
-
-ColorPickerPalette ColorPickerPalette1 = new ColorPickerPalette()
-ColorPickerPalette1.MouseOverBackground = Brushes.Green
-
-{% endhighlight %}
-
 {% endtabs %}
 
-### Properties
+![ColorPickerPalette with Right To Left flow direction](Appearance_images/rtl.png)
 
+## Theme
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-MouseOverBackgroundBrush </td><td>
-Gets or sets the MouseOver BackgroundBrush value of the ColorPickerPalette.</td><td>
-Brush </td><td>
-N/A </td></tr>
-</table>
+We can customize the appearance of the `ColorPickerPalette` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method. The following are the various built-in visual styles for `ColorPickerPalette` control.
+
+* Blend
+* Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
+* Metro
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* VisualStudio2013
+* VisualStudio2015
+
+{% tabs %}
+{% highlight C# %}
+
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+SfSkinManager.SetVisualStyle(colorPickerPalette, VisualStyles.Blend);
+colorPickerPalette.Width = 60;
+colorPickerPalette.Height = 40;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette with Blend visual style](Appearance_images/blend.png)
+
+Here, the `Blend` style is applied to the `ColorPickerPalette`.
+
+Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Themes) to download the sample that showcases the appearance customization and  different theming supports.
+
 

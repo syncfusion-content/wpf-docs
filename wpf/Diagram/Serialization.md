@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Serialization
+# Serialization in WPF Diagram (SfDiagram)
 
 Serialization is the process of converting the state of SfDiagram's objects into a stream of bytes to recreate them when needed. Such streams can be stored in a database,as a file or memory. The reverse process is called deserialization.
 
@@ -113,11 +113,11 @@ Diagram.KnownTypes = () => new List<Type>()
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the [Save and Load sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Serialization_WPF-158395240) to depict all these supports.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Serialization)
 
 ## How to load SfDiagram's old version in new version 
 
-You can load any of the old version SfDiagram's stream in new version with the help of upgrade method. Refer to the following code sample.
+You can load any of the old version SfDiagram's stream in new version with the help of upgrade method. Refer to the following code example.
 
 {% tabs %}
 {% highlight C# %}

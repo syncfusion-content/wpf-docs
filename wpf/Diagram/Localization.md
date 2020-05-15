@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Localization
+# Localization in WPF Diagram (SfDiagram)
 
 Localization is the process of configuring the application to a specific language. `SfDiagram` provides support to localize all the static text used for annotation and context menu contents.
 
@@ -74,7 +74,7 @@ public MainWindow()
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfDiagram.WPF781862701.zip).
+[View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Localization)
 
 
 

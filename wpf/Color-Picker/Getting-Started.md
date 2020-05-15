@@ -23,13 +23,11 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF ColorPicker via designer
 
-1) `ColorPicker` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+`ColorPicker` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.Shared.WPF
 
    ![ColorPicker Drag and dropped from ToolBox](Getting-Started_images/ColorPicker_Drag_and_dropped_from_ToolBox.png)
-
-2. Set the properties for the ColorPicker in the design mode, using the Smart Tag feature.
 
 ## Adding WPF ColorPicker via XAML
 

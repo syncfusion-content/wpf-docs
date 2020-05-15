@@ -23,11 +23,11 @@ Additionally, SfChart3D have horizontal (z) Axis called Depth Axis.
 
 ChartAxis supports the following types.
 
-* NumericalAxis
-* CategoryAxis
-* DateTimeAxis
-* TimeSpanAxis
-* LogarithmicAxis
+* Numerical Axis
+* Category Axis
+* DateTime Axis
+* TimeSpan Axis
+* Logarithmic Axis
 
 ### Numerical Axis
 
