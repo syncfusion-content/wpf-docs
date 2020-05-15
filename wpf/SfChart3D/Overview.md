@@ -7,7 +7,7 @@ control: SfChart3D
 documentation: ug
 ---
 
-# WPF 3D Chart (SfChart3D) Overview 
+# WPF 3D Charts (SfChart3D) Overview 
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 
