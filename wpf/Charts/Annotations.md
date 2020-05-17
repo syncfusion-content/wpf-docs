@@ -694,7 +694,7 @@ You can resize the annotation by enabling [`CanResize`](https://help.syncfusion.
 ![Annotation resizing support in WPF Chart](Annotation_images/Annotation_Resize.png)
 
 
-Also, the direction of resizing can be customizied by using [`ResizingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation~ResizingMode.html#) property.
+Also, the direction of resizing can be customized by using [`ResizingMode`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation~ResizingMode.html#) property.
 
 
 ## ToolTip
