@@ -176,7 +176,7 @@ if (image != null)
 {% endhighlight %}
 {% endtabs %}
 
-N> To maintain the aspect ratio of output images, you are required to pass the value ‘true’ for the `keepAspectRatio` parameter.
+N> To maintain the aspect ratio of output images, you are required to pass the value `true` for the `keepAspectRatio` parameter.
 
 ## Exporting with a custom image resolution
 
