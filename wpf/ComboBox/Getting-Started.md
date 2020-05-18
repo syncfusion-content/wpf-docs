@@ -274,3 +274,5 @@ If multiple choices are allowed for the user, then the ComboBoxAdv is useful to 
 ## See Also
 
 [How to define maximum number of items to be shown in combobox dropdown?](https://www.syncfusion.com/forums/153490/number-of-visible-items-in-comboboxadv-wpf)
+
+[How to filter dropdown items in WPF editable ComboBoxAdv?](https://www.syncfusion.com/kb/11499/how-to-filter-dropdown-items-in-wpf-editable-comboboxadv)
