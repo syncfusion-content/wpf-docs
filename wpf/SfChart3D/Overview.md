@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3D Charts| SfChart | Wpf | Syncfusion
-description: Overview and the highlighting features (Chart elements and interactive features) of the Essential WPF Chart (SfChart3D)
+description: Learn how to create the 3D charts and their features such as types, axis, data binding, dynamic rotation, interactivity and depth axis.
 platform: wpf
 control: SfChart3D
 documentation: ug
@@ -18,8 +18,9 @@ documentation: ug
 
 * SfChart3D supports different type of [`Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~Series.html) which can be used for different data visualizations.Each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.
 
-* Supports several axes types which can be used with the charts. There are axes specialized for Numerical, Category, DateTime, 
-   TimeSpan, Logarithmic scenarios.
+* Supports several axes types which can be used with the charts. There are axes specialized for Numerical,          Category, DateTime, TimeSpan, Logarithmic scenarios.
+
+* SfChart3D supports DepthAxis (Z Axis) helps us to plot chart data based on X, Y and Z Co – ordinates.
 
 * Supports multiple axes that can be stacked and spanned for multiple panes.
 
