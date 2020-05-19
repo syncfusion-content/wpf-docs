@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Printing PDF Files 
+# Printing PDF Files in WPF Pdf Viewer
 
 PDF Viewer allows printing loaded PDFs using the Print button in the toolbar. The following Print dialog opens upon triggering the Print button.
 
