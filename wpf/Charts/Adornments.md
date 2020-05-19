@@ -11,8 +11,6 @@ documentation: ug
 
 Chart adornments are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 
-![Adornments support in WPF Chart](Adornments_images/Adornment_Overview.png)
-
 Each adornment can be represented by the following:
 
 * Label - Displays the segment label content at the (X, Y) point.
@@ -29,12 +27,11 @@ Labels are enabled by default but you can also change the visibility of the labe
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic">
-                <chart:ColumnSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowLabel="True" SegmentLabelContent="LabelContentPath" AdornmentsPosition="Top"></chart:ChartAdornmentInfo>
-                </chart:ColumnSeries.AdornmentsInfo>
-        </chart:ColumnSeries>  
+        <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
+                <syncfusion:ColumnSeries.AdornmentsInfo>
+                    <syncfusion:ChartAdornmentInfo></syncfusion:ChartAdornmentInfo>
+                </syncfusion:ColumnSeries.AdornmentsInfo>
+        </syncfusion:ColumnSeries> 
 
 {% endhighlight %}
 
@@ -42,19 +39,15 @@ Labels are enabled by default but you can also change the visibility of the labe
 
         ColumnSeries series = new ColumnSeries()
             {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic"
+                ItemsSource = ViewModel().Demands,
+                XBindingPath = "Demands",
+                YBindingPath = "Value",
+                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
             };
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                SegmentLabelContent=LabelContent.LabelContentPath,
-                AdornmentsPosition=AdornmentsPosition.Top
-            };
-
+        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo();
         series.AdornmentsInfo = adornmentInfo;
         chart.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -111,9 +104,9 @@ In the following image, you can see the decimal position will be rounded off to 
 
 {% highlight xaml %}
 
-            <chart:ColumnSeries.AdornmentsInfo>
-                <chart:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer" LabelRotationAngle="45"></chart:ChartAdornmentInfo>
-            </chart:ColumnSeries.AdornmentsInfo>
+        <syncfusion:ColumnSeries.AdornmentsInfo>
+             <syncfusion:ChartAdornmentInfo LabelPosition="Outer" LabelRotationAngle="45" ShowLabel="True"></syncfusion:ChartAdornmentInfo>
+        </syncfusion:ColumnSeries.AdornmentsInfo>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -128,7 +121,7 @@ In the following image, you can see the decimal position will be rounded off to 
 
 {% endtabs %}
 
-![Adornments label rotation support in WPF Chart](Adornments_images/LabelRotation.png)
+![Adornments label rotation support in WPF Chart](Adornments_images/LabelRotation.jpg)
 
 ### Customizing Labels
 
@@ -149,38 +142,36 @@ The following code example demonstrates the customization of label using the abo
 
 {% highlight xaml %}
 
-            <chart:ColumnSeries ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
-            YBindingPath="Server2">
-                <chart:ColumnSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo Foreground="Black" FontSize="11" Background="Orange" ShowLabel="True"
-                    FontFamily="Calibri" BorderBrush="Black" BorderThickness="1" Margin="1" FontStyle="Italic"   />
-                </chart:ColumnSeries.AdornmentsInfo>
-            </chart:ColumnSeries>
+        <syncfusion:ColumnSeries.AdornmentsInfo>
+            <syncfusion:ChartAdornmentInfo LabelPosition="Outer" Foreground="Black" FontSize="11" FontFamily="Calibri" BorderBrush="Black" BorderThickness="1" Margin="1" FontStyle="Italic"  Background="DarkGray" ShowLabel="True">                        
+            </syncfusion:ChartAdornmentInfo>
+        </syncfusion:ColumnSeries.AdornmentsInfo>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            ColumnSeries series = new ColumnSeries();
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
             {
+
                 ShowLabel = true,
+                LabelPosition = AdornmentsLabelPosition.Outer,
                 Foreground = new SolidColorBrush(Colors.Black),
                 BorderBrush = new SolidColorBrush(Colors.Black),
-                Background = new SolidColorBrush(Colors.Orange),
+                Background = new SolidColorBrush(Colors.DarkGray),
                 BorderThickness = new Thickness(1),
                 Margin = new Thickness(1),
                 FontStyle = FontStyles.Italic,
                 FontFamily = new FontFamily("Calibri"),
                 FontSize = 11
             };
-            series.AdornmentsInfo = adornmentInfo;
+
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Adornments label content customization support in WPF Chart](Adornments_images/Custom_Label.png)
+![Adornments label content customization support in WPF Chart](Adornments_images/Custom_Label.jpg)
 
 ## Marker
 
@@ -193,26 +184,27 @@ The following code example demonstrates the column series with [`Diamond`](https
 
 {% highlight xaml %}
 
-            <chart:ColumnSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowMarker="True" Symbol="Diamond" SymbolInterior="Brown"></chart:ChartAdornmentInfo>
-            </chart:ColumnSeries.AdornmentsInfo>  
+        <syncfusion:ColumnSeries.AdornmentsInfo>
+            <syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolInterior="Black" Symbol="Diamond">
+            </syncfusion:ChartAdornmentInfo>
+        </syncfusion:ColumnSeries.AdornmentsInfo> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
             {
                 ShowMarker = true,
                 Symbol = ChartSymbol.Diamond,
-                SymbolInterior=new SolidColorBrush(Colors.Brown)          
+                SymbolInterior=new SolidColorBrush(Colors.Black)          
             };
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Symbol support in WPF Chart](Adornments_images/Maker.png)
+![Symbol support in WPF Chart](Adornments_images/Marker.jpg)
 
 
 ### Customizing Markers
@@ -229,10 +221,9 @@ SfChart provides support more customization for markers in adornments.
 
 {% highlight xaml %}
 
-            <chart:ColumnSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowMarker="True" SymbolHeight="15" SymbolWidth="15" SymbolStroke="DarkGray"  Symbol="Triangle" 
-                        SymbolInterior="Brown"></chart:ChartAdornmentInfo>
-            </chart:ColumnSeries.AdornmentsInfo>
+            <syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolStroke="Black" SymbolHeight="10" 
+            SymbolWidth="10" SymbolInterior="DarkGray" Symbol="Ellipse">
+            </syncfusion:ChartAdornmentInfo>o>
 
 {% endhighlight %}
 
@@ -241,18 +232,18 @@ SfChart provides support more customization for markers in adornments.
             ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
             {
                 ShowMarker = true,
-                SymbolStroke = new SolidColorBrush(Colors.DarkGray),
-                SymbolInterior = new SolidColorBrush(Colors.Brown),
-                SymbolHeight = 15,
-                SymbolWidth = 15,
-                Symbol = ChartSymbol.Triangle
+                SymbolStroke = new SolidColorBrush(Colors.Black),
+                SymbolInterior = new SolidColorBrush(Colors.DarkGray),
+                SymbolHeight = 10,
+                SymbolWidth = 10,
+                Symbol = ChartSymbol.Ellipse
             };
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Symbol customization support in WPF Chart](Adornments_images/Custom_Marker.png)
+![Symbol customization support in WPF Chart](Adornments_images/Custom_Marker.jpg)
 
 
 **SymbolTemplate**
@@ -264,6 +255,7 @@ The following code example demonstrates how to use SymbolTemplate.
 {% highlight xaml %}
 
     <Window.Resources>
+ 
         <DataTemplate x:Key="symbolTemplate">
             <Grid>
                 <Grid Name="backgroundGrid" Width="24" Height="24" Visibility="Visible">
@@ -297,18 +289,19 @@ The following code example demonstrates how to use SymbolTemplate.
                 </Path>
             </Grid>
         </DataTemplate>
+
     </Window.Resources>
 
 <Grid>
-        <chart:SfChart  Width="500" Height="500" >
+        <chart:SfChart  Width="400" Height="300" >
     ...
             
-        <chart:ColumnSeries ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
-            YBindingPath="Server1">
-            <chart:ColumnSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowMarker="True" SymbolTemplate="{StaticResource symbolTemplate}"></chart:ChartAdornmentInfo>
-            </chart:ColumnSeries.AdornmentsInfo>
-        </chart:ColumnSeries>
+        <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
+            <syncfusion:ColumnSeries.AdornmentsInfo>
+                    <syncfusion:ChartAdornmentInfo ShowMarker="True" AdornmentsPosition="Top" SymbolTemplate="{StaticResource symbolTemplate}">
+                    </syncfusion:ChartAdornmentInfo>
+            </syncfusion:ColumnSeries.AdornmentsInfo>
+         </syncfusion:ColumnSeries>
 
     ...
         </chart:SfChart>
@@ -321,14 +314,15 @@ The following code example demonstrates how to use SymbolTemplate.
     ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
     {
         AdornmentsPosition = AdornmentsPosition.Top,
-        SymbolTemplate = chart.Resources["symbolTemplate"] as DataTemplate
+        SymbolTemplate = chart.Resources["symbolTemplate"] as DataTemplate,
+        Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
     };
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Template support for symbol in WPF Chart](Adornments_images/Marker_SymbolTemplate.png)
+![Template support for symbol in WPF Chart](Adornments_images/Marker_SymbolTemplate.jpg)
 
 ## Adornment Position
 
@@ -347,9 +341,8 @@ The following code example explains the positioning of adornments in the middle 
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries.AdornmentsInfo>
-                <chart:ChartAdornmentInfo  ShowMarker="True" Symbol="Hexagon" SymbolInterior="Orange" AdornmentsPosition="TopAndBottom"/>
-        </chart:ColumnSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo ShowMarker="True" AdornmentsPosition="TopAndBottom" SymbolInterior="DarkGray"  Symbol="Ellipse">
+        </syncfusion:ChartAdornmentInfo>
 
 {% endhighlight %}
 
@@ -359,8 +352,8 @@ The following code example explains the positioning of adornments in the middle 
             ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
             {
                 ShowMarker = true,
-                Symbol = ChartSymbol.Hexagon,
-                SymbolInterior = new SolidColorBrush(Colors.Orange),
+                Symbol = ChartSymbol.Ellipse,
+                SymbolInterior = new SolidColorBrush(Colors.DarkGray),
                 AdornmentsPosition=AdornmentsPosition.TopAndBottom
             };
         series.AdornmentsInfo = adornmentInfo;
@@ -369,7 +362,7 @@ The following code example explains the positioning of adornments in the middle 
 
 {% endtabs %}
 
-![TopAndBottom Adornment](Adornments_images/TopBottom.png)
+![TopAndBottom Adornment](Adornments_images/TopBottom.jpg)
 
 Also, you can define the label alignment using  [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HorizontalAlignment.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~VerticalAlignment.html#) properties.
 
@@ -385,13 +378,6 @@ The following are the values for this property:
 * [`Inner`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
 * [`Outer`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
 * [`Center`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-
-The following section shows few examples for this LabelPosition behavior with respect to the series.
-
-| | |
-|--|--|
-|![Auto Column](Adornments_images/Default_Column.png)|![Auto Series](Adornments_images/Default_Spline.png)|
-
 
 The following code sample illustrates the center position of data marker labels,
 
@@ -417,7 +403,7 @@ The following code sample illustrates the center position of data marker labels,
 
 | | |
 |--|--|
-|![Auto Column](Adornments_images/Center_Column.png)|![Auto Series](Adornments_images/Center_Spline.png)|
+|![center Column](Adornments_images/Center_Column.jpg)|![center Series](Adornments_images/Center_Spline.jpg)|
 
 The following code sample illustrates the inner position of data marker labels,
 
@@ -443,7 +429,7 @@ The following code sample illustrates the inner position of data marker labels,
 
 | | |
 |--|--|
-|![Auto Column](Adornments_images/Inner_Column.png)|![Auto Series](Adornments_images/Inner_Spline.png)|
+|![Inner Column](Adornments_images/Inner_Column.jpg)|![Inner Series](Adornments_images/Inner_Spline.jpg)|
 
 
 The following code sample illustrates the outer position of data marker labels,
@@ -470,7 +456,7 @@ The following code sample illustrates the outer position of data marker labels,
 
 | | |
 |--|--|
-|![Auto Column](Adornments_images/Outer_Column.png)|![Auto Series](Adornments_images/Outer_Spline.png)|
+|![Outer Column](Adornments_images/Outer_Column.jpg)|![Outer Series](Adornments_images/Outer_Spline.jpg)|
 
 ## Smart Labels
 
@@ -482,7 +468,7 @@ The following code example demonstrates the EnableSmartLabels property:
 
 {% highlight xaml %}
 
-            <chart:PieSeries  ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
+            <chart:PieSeries Interior="#777777" ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
             YBindingPath="Plastic" EnableSmartLabels="True" LabelPosition="OutsideExtended" ExplodeAll="True" ExplodeRadius="3">
                 <chart:PieSeries.AdornmentsInfo>
                     <chart:ChartAdornmentInfo ShowLabel="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True"></chart:ChartAdornmentInfo>
@@ -502,7 +488,8 @@ The following code example demonstrates the EnableSmartLabels property:
                 ExplodeAll = true,
                 ExplodeRadius = 3,
                 Palette = ChartColorPalette.Custom,
-                LabelPosition=CircularSeriesLabelPosition.OutsideExtended
+                LabelPosition=CircularSeriesLabelPosition.OutsideExtended,
+                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
             };
 
             ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
@@ -561,11 +548,10 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 
 {% highlight xaml %}
 
-  <Window.Resources>
+    <Window.Resources>
         <DataTemplate x:Key="adornmentTemplate">
-            <StackPanel Orientation="Vertical">
-               
-                <Path Grid.Row="0"  Stretch="Uniform" Fill="OrangeRed"                              
+            <StackPanel Orientation="Vertical">               
+                <Path Grid.Row="0"  Stretch="Uniform" Fill="#FF0F0E0E"                              
                            Width="15" Height="15" Margin="0,0,0,0"                              
                            RenderTransformOrigin="0.5,0.5">
                     <Path.Data>
@@ -587,13 +573,14 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
     </Window.Resources>
 
      <Grid>
-        <chart:SfChart Width="400" Height="400">
+        <chart:SfChart Width="400" Height="300">
          ...
-            <chart:ColumnSeries ItemsSource="{Binding Performance}" XBindingPath="ServerLoad" YBindingPath="Server1">
-                <chart:ColumnSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo  ShowLabel="True" LabelTemplate="{StaticResource adornmentTemplate}" LabelPosition="Outer"/>
-                </chart:ColumnSeries.AdornmentsInfo>
-            </chart:ColumnSeries>
+            <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
+                <syncfusion:ColumnSeries.AdornmentsInfo>
+                    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelTemplate="{StaticResource adornmentTemplate}"
+                        LabelPosition="Outer"></syncfusion:ChartAdornmentInfo>
+                </syncfusion:ColumnSeries.AdornmentsInfo>
+            </syncfusion:ColumnSeries>
         ...
         </chart:SfChart>
     </Grid>
@@ -604,9 +591,10 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 
         ColumnSeries series = new ColumnSeries()
             {
-                ItemsSource = new ServerViewModel().Performance,
-                XBindingPath = "ServerLoad",
-                YBindingPath = "Server1",
+                ItemsSource = new ViewModel().Demands,
+                XBindingPath = "Category",
+                YBindingPath = "Value",
+                 Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
             };
 
             ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
@@ -616,6 +604,7 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
                 LabelTemplate = this.Resources["adornmentTemplate"] as DataTemplate
             };
         series.AdornmentsInfo = adornmentInfo;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -642,9 +631,9 @@ The following code example shows the customization options for connector line:
 
     <Window.Resources>
 
-         <Style TargetType="Path" x:Key="connectorLineStyle">
-            <Setter Property="Stroke" Value="Orange"/>
-            <Setter Property="StrokeThickness" Value="2"></Setter>
+        <Style TargetType="Path" x:Key="lineStyle">
+            <Setter Property="StrokeDashArray" Value="10,7,5"/>
+            <Setter Property="Stroke" Value="Black"/>
         </Style>
 
     </Window.Resources>
@@ -653,14 +642,11 @@ The following code example shows the customization options for connector line:
         <chart:SfChart Width="400" Height="400">
          ...
 
-        <chart:PieSeries  ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
-            YBindingPath="Server1" EnableSmartLabels="True" LabelPosition="OutsideExtended" ExplodeAll="True" ExplodeRadius="3">
-                <chart:PieSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowLabel="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True"
-                       ConnectorLineStyle="{StaticResource connectorLineStyle}" >                        
-                    </chart:ChartAdornmentInfo>
-                </chart:PieSeries.AdornmentsInfo>
-        </chart:PieSeries>
+        <syncfusion:PieSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="FloatValue" LabelPosition="OutsideExtended">
+                <syncfusion:PieSeries.AdornmentsInfo>
+                    <syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorLineStyle="{StaticResource lineStyle}"ShowConnectorLine="True" LabelPosition="Outer"></syncfusion:ChartAdornmentInfo>
+                </syncfusion:PieSeries.AdornmentsInfo>
+        </syncfusion:PieSeries>
 
         ...
         </chart:SfChart>
@@ -675,11 +661,8 @@ The following code example shows the customization options for connector line:
                 ItemsSource = new ServerViewModel().Performance,
                 XBindingPath = "Year",
                 YBindingPath = "Plastic",
-                EnableSmartLabels = true,
-                ExplodeAll = true,
-                ExplodeRadius = 3,
-                Palette = ChartColorPalette.Custom,
-                LabelPosition = CircularSeriesLabelPosition.OutsideExtended
+                LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
+                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
             };
 
         ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
@@ -687,9 +670,8 @@ The following code example shows the customization options for connector line:
                 ShowLabel = true,
                 ShowConnectorLine = true,
                 UseSeriesPalette = true,
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center,
-                ConnectorLineStyle=this.Resources["connectorLineStyle"] as Style
+                ConnectorLineStyle=this.Resources["lineStyle"] as Style
+                LabelPosition =AdornmentsLabelPosition.Outer,
             };
         series.AdornmentsInfo = adornmentInfo;
 
@@ -697,7 +679,7 @@ The following code example shows the customization options for connector line:
 
 {% endtabs %}
 
-![Connector line for adornments support in WPF Chart](Adornments_images/Connector_Line.png)
+![Connector line for adornments support in WPF Chart](Adornments_images/connectorline.png)
 
 **Connector Type**
 
@@ -708,12 +690,11 @@ The following code example shows the customization options for connector line:
 
 {% highlight xaml %}
 
-        <chart:PieSeries  ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
+        <chart:PieSeries Interior="#777777" ItemsSource="{Binding Performance}" XBindingPath="ServerLoad"
             YBindingPath="Server1" EnableSmartLabels="True" ConnectorType="Bezier" LabelPosition="OutsideExtended">
                 <chart:PieSeries.AdornmentsInfo>
                     <chart:ChartAdornmentInfo HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"                                            
-                                              ShowConnectorLine="True" 
+                                              VerticalAlignment="Center"    ShowConnectorLine="True" 
                                               ConnectorHeight="80" ShowLabel="True" />
                 </chart:PieSeries.AdornmentsInfo>
         </chart:PieSeries>
@@ -731,7 +712,8 @@ The following code example shows the customization options for connector line:
                 ExplodeAll = true,
                 ExplodeRadius = 3,
                 ConnectorType=ConnectorMode.Bezier,
-                LabelPosition = CircularSeriesLabelPosition.OutsideExtended
+                LabelPosition = CircularSeriesLabelPosition.OutsideExtended,
+                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
             };
 
         ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
