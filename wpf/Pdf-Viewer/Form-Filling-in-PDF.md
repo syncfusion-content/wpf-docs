@@ -68,7 +68,7 @@ namespace PdfViewer
     }
 }
 
-N> The sample project of PDF form filling using the Syncfusion PDF Viewer is available in the [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/PDF Viewer/Form Filling/Pdf Viewer Form Filling).
+N> The sample project of PDF form filling using the Syncfusion PDF Viewer is available in the [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/PDF%20Viewer/Form%20Filling/Pdf%20Viewer%20Form%20Filling).
 
 {% endhighlight %}
 {% endtabs %}
