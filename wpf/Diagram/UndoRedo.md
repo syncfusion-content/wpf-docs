@@ -287,11 +287,10 @@ public struct NodeState
         _mFill = fill;
     }
 }
-
-![HistoryManager](HistoryManager_images/FillColorChange.gif)
-
 {% endhighlight %}
 {% endtabs %}
+
+![HistoryManager](HistoryManager_images/FillColorChange.gif)
 
 ## How to restrict Undo/Redo
 
@@ -377,7 +376,4 @@ private void Diagram_NodeChangedEvent(object sender, ChangeEventArgs<object, Nod
 
 ## See Also
 
-* [How to add commands for diagram?](/wpf/sfdiagram/commands)
-
-* [How to enable virtualization for diagram?](/wpf/sfdiagram/virtualization)
-
+* [How to add enable undo and redo using commands?](/wpf/sfdiagram/commands/undoredo)
