@@ -1029,8 +1029,8 @@ The corresponding DateTime value will be given as values for X1 and X2 propertie
         </chart:SfChart.SecondaryAxis>
 
         <chart:SfChart.Annotations>
-            <chart:RectangleAnnotation X1="2015/2/1" X2="2015/4/1" Y1="20" Y2="30" 
-                                  						 Stroke="Purple" StrokeThickness="2"/>
+            <chart:RectangleAnnotation  X1="2019/12/17" Y1="1200" X2="2020/02/19" Y2="1300" >
+                    </chart:RectangleAnnotation>
         </chart:SfChart.Annotations>
 
 {% endhighlight %}
@@ -1042,9 +1042,7 @@ The corresponding DateTime value will be given as values for X1 and X2 propertie
             chart.SecondaryAxis = new NumericalAxis();
             RectangleAnnotation annotation = new RectangleAnnotation()
             {
-                X1 = new DateTime(2015,2,1), X2 = new DateTime(2015,4,1), Y1 = 20, Y2 = 30,        
-                Stroke = new SolidColorBrush(Colors.Purple),
-                StrokeThickness = 2
+                X1 = new DateTime(2019,12,17), X2 = new DateTime(2020,02,19), Y1 = 1200, Y2 = 1300,  
             };
             chart.Annotations.Add(annotation);
 
@@ -1052,7 +1050,7 @@ The corresponding DateTime value will be given as values for X1 and X2 propertie
 
 {% endtabs %}
 
-![Annotation based on axis in WPF](Annotation_images/DateTimeAnnotation.png)
+![Annotation based on axis in WPF](Annotation_images/DateTimeAnnotation.jpg)
 
 ## Events
 
