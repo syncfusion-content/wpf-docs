@@ -121,7 +121,7 @@ In the following image, you can see the decimal position will be rounded off to 
 
 {% endtabs %}
 
-![Adornments label rotation support in WPF Chart](Adornments_images/LabelRotation.jpg)
+![Adornments label rotation support in WPF Chart](Adornments_images/label_rotation.png)
 
 ### Customizing Labels
 
@@ -171,7 +171,7 @@ The following code example demonstrates the customization of label using the abo
 
 {% endtabs %}
 
-![Adornments label content customization support in WPF Chart](Adornments_images/Custom_Label.jpg)
+![Adornments label content customization support in WPF Chart](Adornments_images/Custom_Label.png)
 
 ## Marker
 
@@ -204,7 +204,7 @@ The following code example demonstrates the column series with [`Diamond`](https
 
 {% endtabs %}
 
-![Symbol support in WPF Chart](Adornments_images/Marker.jpg)
+![Symbol support in WPF Chart](Adornments_images/Marker.png)
 
 
 ### Customizing Markers
@@ -243,7 +243,7 @@ SfChart provides support more customization for markers in adornments.
 
 {% endtabs %}
 
-![Symbol customization support in WPF Chart](Adornments_images/Custom_Marker.jpg)
+![Symbol customization support in WPF Chart](Adornments_images/Custom_Marker.png)
 
 
 **SymbolTemplate**
@@ -322,7 +322,7 @@ The following code example demonstrates how to use SymbolTemplate.
 
 {% endtabs %}
 
-![Template support for symbol in WPF Chart](Adornments_images/Marker_SymbolTemplate.jpg)
+![Template support for symbol in WPF Chart](Adornments_images/Marker_SymbolTemplate.png)
 
 ## Adornment Position
 
@@ -362,7 +362,7 @@ The following code example explains the positioning of adornments in the middle 
 
 {% endtabs %}
 
-![TopAndBottom Adornment](Adornments_images/TopBottom.jpg)
+![TopAndBottom Adornment](Adornments_images/TopBottom.png)
 
 Also, you can define the label alignment using  [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HorizontalAlignment.html#) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~VerticalAlignment.html#) properties.
 
@@ -403,7 +403,7 @@ The following code sample illustrates the center position of data marker labels,
 
 | | |
 |--|--|
-|![center Column](Adornments_images/Center_Column.jpg)|![center Series](Adornments_images/Center_Spline.jpg)|
+|![center Column](Adornments_images/Center_Column.png)|![center Series](Adornments_images/Center_Spline.png)|
 
 The following code sample illustrates the inner position of data marker labels,
 
@@ -429,7 +429,7 @@ The following code sample illustrates the inner position of data marker labels,
 
 | | |
 |--|--|
-|![Inner Column](Adornments_images/Inner_Column.jpg)|![Inner Series](Adornments_images/Inner_Spline.jpg)|
+|![Inner Column](Adornments_images/Inner_Column.png)|![Inner Series](Adornments_images/Inner_Spline.png)|
 
 
 The following code sample illustrates the outer position of data marker labels,
@@ -456,7 +456,7 @@ The following code sample illustrates the outer position of data marker labels,
 
 | | |
 |--|--|
-|![Outer Column](Adornments_images/Outer_Column.jpg)|![Outer Series](Adornments_images/Outer_Spline.jpg)|
+|![Outer Column](Adornments_images/Outer_Column.png)|![Outer Series](Adornments_images/Outer_Spline.png)|
 
 ## Smart Labels
 
