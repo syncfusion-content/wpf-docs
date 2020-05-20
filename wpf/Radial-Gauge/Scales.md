@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scales| SfCircularGauge | Wpf | Syncfusion
-description: Scales
+description: This section explains how to set scales and customize the scales for WPF in Syncfusion circular gauge control.
 platform: wpf
 control: SfCircularGauge
 documentation: ug
@@ -44,7 +44,7 @@ A range is a visual element, which begins and ends at the specified values withi
 
 {% endtabs %}
 
-![](Scales_images/Scales_img1.png)
+![Circular Gauge Scale Image](Scales_images/Scales_img1.png)
 
 ## Setting start and end values for scale
 
@@ -96,7 +96,7 @@ The `StartValue` and `EndValue` properties allow you to set the start and end va
 
 {% endtabs %}
 
-![](Scales_images/Scales_img2.png)
+![Circular Scale With Start And End Value Image](Scales_images/Scales_img2.png)
 
 ## Setting start and sweep angles for scale
 
@@ -148,7 +148,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gaug
 
 {% endtabs %}
 
-![](Scales_images/Scales_img3.png)
+![Circular Scale With Start And Sweep Angle Image](Scales_images/Scales_img3.png)
 
 ## Setting interval for scale
 
@@ -202,7 +202,9 @@ The `Interval` property allows you to set the interval for a scale.
 
 {% endtabs %}
 
-![](Scales_images/Scales_img4.png)
+![Circular Scale Interval Image](Scales_images/Scales_img4.png)
+
+N> You can specify the interval value upto 5 decimal places while showing the labels of linear scale.
 
 ## Setting scale direction for scale
 
@@ -252,7 +254,7 @@ The `SweepDirection` property allows you to render the gauge scale in either clo
 
 {% endtabs %}
 
-![](Scales_images/Scales_img5.png)
+![Circular Scale Direction Image](Scales_images/Scales_img5.png)
 
 ## Setting multiple scales for circular gauge
 
@@ -422,7 +424,7 @@ You can add multiple scales to the same circular gauge and customize all the sca
 
 {% endtabs %}
 
-![](Scales_images/Scales_img6.png)
+![Multiple Scales Image](Scales_images/Scales_img6.png)
 
 
 
