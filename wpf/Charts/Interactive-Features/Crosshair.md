@@ -81,7 +81,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Cross hair support in WPF Chart](/Interactive-Features_images/Interactive-Features_img46.jpeg)
+![Cross hair support in WPF Chart](Interactive-Features_images/Interactive-Features_img46.jpeg)
 
 
 Cross hair is composed of the following parts:
@@ -141,7 +141,7 @@ chart.Behaviors.Add(crosshair);
 
 {% endtabs %}
 
-![Cross hair line style in WPF Chart](/Interactive-Features_images/Interactive-Features_img47.jpeg)
+![Cross hair line style in WPF Chart](Interactive-Features_images/Interactive-Features_img47.jpeg)
 
 
 **VerticalLineStyle**
@@ -191,7 +191,7 @@ chart.Behaviors.Add(crosshair);
 
 {% endtabs %}
 
-![Cross hair line style in WPF Chart](/Interactive-Features_images/Interactive-Features_img48.jpeg)
+![Cross hair line style in WPF Chart](Interactive-Features_images/Interactive-Features_img48.jpeg)
 
 
 ## Horizontal axis label
@@ -210,7 +210,7 @@ Axis Label can be aligned by Near, Far, Center, Auto and None Options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
-![Axis label alignment support for cross hair in WPF Chart](/Interactive-Features_images/Interactive-Features_img49.jpeg)
+![Axis label alignment support for cross hair in WPF Chart](Interactive-Features_images/Interactive-Features_img49.jpeg)
 
 
 **Far**
@@ -244,7 +244,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Axis label alignment support for cross hair in WPF Chart](/Interactive-Features_images/Interactive-Features_img50.jpeg)
+![Axis label alignment support for cross hair in WPF Chart](Interactive-Features_images/Interactive-Features_img50.jpeg)
 
 
 **Near**
@@ -278,7 +278,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Axis label alignment support for cross hair in WPF Chart](/Interactive-Features_images/Interactive-Features_img51.jpeg)
+![Axis label alignment support for cross hair in WPF Chart](Interactive-Features_images/Interactive-Features_img51.jpeg)
 
 
 ## Vertical axis label
@@ -289,7 +289,7 @@ Axis Label can be aligned by Near, Far, Center, Auto, and None Options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
-![Axis label alignment support for cross hair in WPF Chart](/Interactive-Features_images/Interactive-Features_img52.jpeg)
+![Axis label alignment support for cross hair in WPF Chart](Interactive-Features_images/Interactive-Features_img52.jpeg)
 
 
 **Near**
@@ -323,7 +323,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Axis label alignment support for cross hair in WPF Chart](/Interactive-Features_images/Interactive-Features_img53.jpeg)
+![Axis label alignment support for cross hair in WPF Chart](Interactive-Features_images/Interactive-Features_img53.jpeg)
 
 **Far**
 
@@ -356,7 +356,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Axis label alignment support for cross hair in WPF Chart](/Interactive-Features_images/Interactive-Features_img54.jpeg)
+![Axis label alignment support for cross hair in WPF Chart](Interactive-Features_images/Interactive-Features_img54.jpeg)
 
 ## Customization of Crosshair axis labels
 
@@ -430,4 +430,4 @@ The default appearance of the crosshair axis labels can be customized by using t
 
 {% endtabs %}
 
-![Crosshair axis labels customization in WPF](/Interactive-Features_images/crossHairTemplate.png)
+![Crosshair axis labels customization in WPF](Interactive-Features_images/crossHairTemplate.png)

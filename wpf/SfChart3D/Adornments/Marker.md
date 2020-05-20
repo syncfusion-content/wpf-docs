@@ -53,7 +53,7 @@ The following code example demonstrates the column series with [`Diamond`](https
 
 {% endtabs %}
 
-![Symbol support in WPF Chart](/3D-Charts_images/Adornments/Adornment_Marker.png)
+![Symbol support in WPF Chart](Adornments-Images/Adornment_Marker.png)
 
 ### Customization of Symbol
 
@@ -109,7 +109,7 @@ The following code example demonstrates the basic customization of symbol size a
 
 {% endtabs %}
 
-![ Custom Symbol in Adornment](/3D-Charts_images/Adornments/SymblBasic.png) 
+![ Custom Symbol in Adornment](Adornments-Images/SymblBasic.png) 
 
 **SymbolTemplate**
 
@@ -178,5 +178,5 @@ The following code example demonstrates how to use SymbolTemplate.
 
 {% endtabs %}
 
-![ Custom Symbol in Adornment](/3D-Charts_images/Adornments/SymbolCustom.png) 
+![ Custom Symbol in Adornment](Adornments-Images/SymbolCustom.png) 
 

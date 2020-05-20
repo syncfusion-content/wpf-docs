@@ -58,7 +58,7 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-![Segment dragging support in WPF Chart](/Interactive-Features_images/Interactive-Features_img19.jpg)
+![Segment dragging support in WPF Chart](Interactive-Features_images/Interactive-Features_img19.jpg)
 
 
 **Column Series**
@@ -106,7 +106,7 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-![Segment dragging support in WPF Chart](/Interactive-Features_images/Interactive-Features_img20.jpg)
+![Segment dragging support in WPF Chart](Interactive-Features_images/Interactive-Features_img20.jpg)
 
 **Scatter Series**
 
@@ -152,7 +152,7 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-![Segment dragging support in WPF Chart](/Interactive-Features_images/Interactive-Features_img55.jpg)
+![Segment dragging support in WPF Chart](Interactive-Features_images/Interactive-Features_img55.jpg)
 
 N> By default, the DragDirection of the scatter series is XY.
 
@@ -201,7 +201,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Segment dragging support in WPF Chart](/Interactive-Features_images/Interactive-Features_img21.jpeg)
+![Segment dragging support in WPF Chart](Interactive-Features_images/Interactive-Features_img21.jpeg)
 
 
 N>In line and Spline Series, if segment and series dragging is enabled, the series dragging is having higher priority over segment dragging.
@@ -256,7 +256,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adding tooltip for dragging in WPF Chart](/Interactive-Features_images/Interactive-Features_img22.jpeg)
+![Adding tooltip for dragging in WPF Chart](Interactive-Features_images/Interactive-Features_img22.jpeg)
 
 
 ### Drag Tooltip Template
@@ -338,7 +338,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing tooltip while dragging in WPF Chart](/Interactive-Features_images/Interactive-Features_img23.jpg)
+![Customizing tooltip while dragging in WPF Chart](Interactive-Features_images/Interactive-Features_img23.jpg)
 
 ### Drag Tooltip Style
 
@@ -394,7 +394,7 @@ series.DragTooltipStyle = new ChartDragTooltipStyle()
 
 {% endtabs %}
 
-![Customizing tooltip while dragging in WPF Chart](/Interactive-Features_images/Interactive-Features_img56.jpg)
+![Customizing tooltip while dragging in WPF Chart](Interactive-Features_images/Interactive-Features_img56.jpg)
 
 **Rounding** **Off** **the** **Dragged** **Value**
 

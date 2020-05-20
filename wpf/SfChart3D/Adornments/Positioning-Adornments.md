@@ -60,9 +60,9 @@ The following code example shows the how to specify connector type:
 
 | AdornmentsPosition | Output |
 |--|--|
-| Top | ![Top Position in WPF Chart](/3D-Charts_images/Adornments/Adorn_Top.png) |
-| Bottom | ![Bottom Position in WPF Chart](/3D-Charts_images/Adornments/Adorn_Bottom.png) |
-| TopAndBottom | ![TopAndBottom Position in WPF Chart](/3D-Charts_images/Adornments/Adorn_TopAndBottom.png) |
+| Top | ![Top Position in WPF Chart](Adornments-Images/Adorn_Top.png) |
+| Bottom | ![Bottom Position in WPF Chart](Adornments-Images/Adorn_Bottom.png) |
+| TopAndBottom | ![TopAndBottom Position in WPF Chart](Adornments-Images/Adorn_TopAndBottom.png) |
 
 ### Advanced Positioning
 
@@ -80,8 +80,8 @@ The following section shows few examples for this LabelPosition behavior with re
 
 | LabelPosition | Column Series | Line Series|
 |--|--|--|
-| Auto | ![Auto Position in WPF Chart](/3D-Charts_images/Adornments/Label_Auto_Column.png) | ![Auto Position in WPF Chart](/3D-Charts_images/Adornments/Label_Auto_Line.png) |
-| Inner | ![Inner Position in WPF Chart](/3D-Charts_images/Adornments/Label_Inner_Column.png) | ![Auto Position in WPF Chart](/3D-Charts_images/Adornments/Label_Inner_Line.png) |
-| Outer | ![Outer Position in WPF Chart](/3D-Charts_images/Adornments/Label_Outer_Column.png) | ![Auto Position in WPF Chart](/3D-Charts_images/Adornments/Label_Outer_Line.png) |
-| Center | ![Auto Position in WPF Chart](/3D-Charts_images/Adornments/Label_Center_Column.png) | ![Auto Position in WPF Chart](/3D-Charts_images/Adornments/Label_Center_Line.png) |
+| Auto | ![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Line.png) |
+| Inner | ![Inner Position in WPF Chart](Adornments-Images/Label_Inner_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Inner_Line.png) |
+| Outer | ![Outer Position in WPF Chart](Adornments-Images/Label_Outer_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Outer_Line.png) |
+| Center | ![Auto Position in WPF Chart](Adornments-Images/Label_Center_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Center_Line.png) |
 
