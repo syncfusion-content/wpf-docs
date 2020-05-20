@@ -178,7 +178,7 @@ Line series join points on a plot by straight lines, showing data trends at equa
 {% highlight xaml %}
 
         <chart:LineSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic"></chart:LineSeries3D>
+            YBindingPath="Metal"></chart:LineSeries3D>
 
 {% endhighlight %}
 
@@ -188,7 +188,7 @@ Line series join points on a plot by straight lines, showing data trends at equa
             {
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
-                YBindingPath = "Plastic"
+                YBindingPath = "Metal"
             };
 
 chart3D.Series.Add(series);
@@ -212,8 +212,9 @@ This size can be defined by using below properties.
 
 {% highlight xaml %}
 
-     <chart:ScatterSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-         YBindingPath="Plastic"></chart:ScatterSeries3D>
+      <chart:ScatterSeries3D  ItemsSource="{Binding DataPoints}"  
+            XBindingPath="Year" YBindingPath="Germany">
+    </chart:ScatterSeries3D>
 
 {% endhighlight %}
 
@@ -222,9 +223,9 @@ This size can be defined by using below properties.
 
         ScatterSeries3D series = new ScatterSeries3D()
             {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                ItemsSource = new ViewModel().DataPoints,
                 XBindingPath = "Year",
-                YBindingPath = "Plastic"
+                YBindingPath = "Germany"
             };
 
         chart3D.Series.Add(series);
@@ -493,7 +494,7 @@ The following code example illustrates the PieSeries3D.
 
 {% endtabs %}
 
-![Pie Chart support in WPF 3D Chart](3D-Charts_images/Series/PieSeries3D.png)
+![Pie Chart support in WPF 3D Chart](3D-Charts_images/Series/Pie3D.png)
 
 
 ## Doughnut Chart
@@ -536,7 +537,7 @@ The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfu
 
 {% highlight xaml %}
 
-        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}" DoughnutCoefficient="0.7"   
+        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}" DoughnutCoefficient="0.5"   
             XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
 
 {% endhighlight %}
@@ -548,7 +549,7 @@ The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfu
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
                 YBindingPath = "Iron",
-                DoughnutCoefficient=0.7
+                DoughnutCoefficient=0.5
             };
 
         chart.Series.Add(series);
