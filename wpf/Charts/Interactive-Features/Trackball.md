@@ -11,7 +11,7 @@ documentation: ug
 
 The [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) allows you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 
-### Adding TrackBall to the SfChart
+## Adding TrackBall to the SfChart
 
 You can create an instance [`ChartTrackBallBehavior`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart~Behaviors.html) collection.
 
@@ -87,7 +87,7 @@ The Trackball is composed of the following parts:
 
 4. Series Label
 
-### Vertical Line
+## Vertical Line
 
 The vertical line in the trackball is visible when you initialize the TrackBallBehavior.If you want to collapse the visibility of the trackball line, then you have to set ShowLine to false.
 
@@ -177,7 +177,7 @@ chart.Behaviors.Add(trackball);
 ![TrackBall line customization in WPF Chart](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
-### Symbol
+## Symbol
 
 By default, the trackball symbol is displayed as ellipse to change the default style of the symbol using [`ChartTrackBallStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~ChartTrackBallStyle.html#) property.
 
@@ -227,7 +227,7 @@ chart.Behaviors.Add(trackball);
 ![Symbol for trackball in WPF Chart](Interactive-Features_images/Interactive-Features_img10.jpeg)
 
 
-### Axis Label
+## Axis Label
 
 The axis label will be viewed when the ShowTrackBallInfo property is set to true. If you want to collapse the visibility of axis label in trackball then you have to set ShowTrackballInfo as false.
 
@@ -579,7 +579,7 @@ The following screenshot illustrates the trackball label for financial series, w
 ![LabelDisplayMode support for trackball in WPF Chart](Interactive-Features_images/grouping2.png)
 
 
-### TrackBall for Technical Indicators
+## TrackBall for Technical Indicators
 
 In trackball label, the data point value of the technical indicator also can be displayed by enabling [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator~ShowTrackballInfoProperty.html) of technical indicator. It is shown in the following code example.
 
@@ -738,7 +738,7 @@ chart.Behaviors.Add(behavior);
 ![Applying palette to the trackball series label in WPF Chart](Interactive-Features_images/Interactive-Features_img18.jpeg)
 
 
-### Events
+## Events
 
 The following events are available in ChartTrackBallBehavior:
 

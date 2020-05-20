@@ -35,7 +35,7 @@ using Syncfusion.UI.Xaml.Charts;
 
 {% endtabs %}
 
-Then initialize an empty chart with ['PrimaryAxis'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~PrimaryAxis.html) and ['SecondaryAxis'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~SecondaryAxis.html)as shown below,
+Then initialize an empty chart with [PrimaryAxis](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~PrimaryAxis.html) and [SecondaryAxis](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~SecondaryAxis.html) as shown below,
 
 {% tabs %}
 
