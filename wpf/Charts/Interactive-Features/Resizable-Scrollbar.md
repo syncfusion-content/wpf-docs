@@ -40,7 +40,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Adding scrollbar to axis in WPF Chart](/Interactive-Features_images/Interactive-Features_img41.jpeg)
+![Adding scrollbar to axis in WPF Chart](Interactive-Features_images/Interactive-Features_img41.jpeg)
 
 ## Deferred Scrolling
 
@@ -104,7 +104,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Resizing the scrollbar in WPF Chart](/Interactive-Features_images/Interactive-Features_img42.jpeg)
+![Resizing the scrollbar in WPF Chart](Interactive-Features_images/Interactive-Features_img42.jpeg)
 
 
 ## Scrollbar for Touch Mode
@@ -138,7 +138,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Scrollbar for touch mode support in WPF Chart](/Interactive-Features_images/Interactive-Features_img43.jpeg)
+![Scrollbar for touch mode support in WPF Chart](Interactive-Features_images/Interactive-Features_img43.jpeg)
 
 
 ### Thumb Label
@@ -176,7 +176,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Thumb label for scrollbar in WPF Chart](/Interactive-Features_images/Interactive-Features_img44.jpeg)
+![Thumb label for scrollbar in WPF Chart](Interactive-Features_images/Interactive-Features_img44.jpeg)
 
 
 ### Thumb Label Template
@@ -242,5 +242,5 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Label template support for scrollbar thumb in WPF Chart](/Interactive-Features_images/Interactive-Features_img45.jpeg)
+![Label template support for scrollbar thumb in WPF Chart](Interactive-Features_images/Interactive-Features_img45.jpeg)
 

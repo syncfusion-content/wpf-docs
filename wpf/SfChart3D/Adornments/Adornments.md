@@ -52,7 +52,7 @@ The following code example illustrates how to initialize the adornment.
 
 {% endtabs %}
 
-![Chart 3D support in WPF](/3D-Charts_images/Adornments/Chart-3D-Adornment.png)
+![Chart 3D support in WPF](Adornments-Images/Chart-3D-Adornment.png)
 
 ## Applying Series Brush
 
@@ -98,7 +98,7 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 
 {% endtabs %}
 
-![Series brush for adornments background support in WPF Chart](/3D-Charts_images/Adornments/Label_palette.png)
+![Series brush for adornments background support in WPF Chart](Adornments-Images/Label_palette.png)
 
 ## Smart Labels
 
@@ -148,6 +148,6 @@ The following code example demonstrates the EnableSmartLabels property:
 
 {% endtabs %}
 
-![Smart Labels in WPF Chart](/3D-Charts_images/Adornments/SmartLabels.png)
+![Smart Labels in WPF Chart](Adornments-Images/SmartLabels.png)
 
 N> For circular series, the adornment position can be changed to [`Inside`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html), [`Outside`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.html) using the [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~LabelPosition.html) property.

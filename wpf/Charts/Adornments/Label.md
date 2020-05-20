@@ -46,12 +46,12 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 
 | SegmentLabelContent values | Description | Output |
 |---|--|---|
-| DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](/Adornments_images/Datetime.png) |
-|LabelContentPath | Displays the y value|![ LabelContentPath in Adornment](/Adornments_images/LabelContentPath.png)|
-| Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](/Adornments_images/Percentage.png) |
-| XValue | Displays the X value of series' point|![ XValue in Adornment](/Adornments_images/Xvalue.png) |
-| YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](/Adornments_images/YofTot.png) |
-| YValue | Displays the Y value of series' point| ![ YValue in Adornment](/Adornments_images/YValue.png) |
+| DateTime | Displays LabelContent.DateTime value | ![ DateTime in Adornment](Adornments_images/Datetime.png) |
+|LabelContentPath | Displays the y value|![ LabelContentPath in Adornment](Adornments_images/LabelContentPath.png)|
+| Percentage | Displays the percentage value of series' point among other points |![ Percentage in Adornment](Adornments_images/Percentage.png) |
+| XValue | Displays the X value of series' point|![ XValue in Adornment](Adornments_images/Xvalue.png) |
+| YofTot | Displays the value of Y of total values' point|![ YofTot in Adornment](Adornments_images/YofTot.png) |
+| YValue | Displays the Y value of series' point| ![ YValue in Adornment](Adornments_images/YValue.png) |
 
 ## Label Format
 
@@ -82,7 +82,7 @@ The following code example demonstrates the y value having three decimal digits.
 
 In the following image, you can see the decimal position will be rounded off to two digits by default.
 
-![Adornments label format support in WPF Chart](/Adornments_images/label_format.png)
+![Adornments label format support in WPF Chart](Adornments_images/label_format.png)
 
 ## Label Rotation
 
@@ -109,7 +109,7 @@ In the following image, you can see the decimal position will be rounded off to 
 
 {% endtabs %}
 
-![Adornments label rotation support in WPF Chart](/Adornments_images/label_rotation.png)
+![Adornments label rotation support in WPF Chart](Adornments_images/label_rotation.png)
 
 ## Customizing Labels
 
@@ -159,7 +159,7 @@ The following code example demonstrates the customization of label using the abo
 
 {% endtabs %}
 
-![Adornments label content customization support in WPF Chart](/Adornments_images/Custom_Label.png)
+![Adornments label content customization support in WPF Chart](Adornments_images/Custom_Label.png)
 
 ## LabelTemplate
 
@@ -230,7 +230,7 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 
 {% endtabs %}
 
-![LabelTemplate support for adornments in WPF Chart](/Adornments_images/label_template.png)
+![LabelTemplate support for adornments in WPF Chart](Adornments_images/label_template.png)
 
 
 ## Connector Line
@@ -300,7 +300,7 @@ The following code example shows the customization options for connector line:
 
 {% endtabs %}
 
-![Connector line for adornments support in WPF Chart](/Adornments_images/connectorline.png)
+![Connector line for adornments support in WPF Chart](Adornments_images/connectorline.png)
 
 **Connector Type**
 
@@ -353,7 +353,7 @@ The following code example shows the customization options for connector line:
 
 | ConnectorType | Output |
 |--|--|
-| Line | ![Connector line with Line type](/Adornments_images/Line.png) |
-| Bezier | ![Connector line with Bezier type](/Adornments_images/Bezier.png) |
-| StraightLine | ![Connector line with StraightLine type](/Adornments_images/StraightLine.png) |
+| Line | ![Connector line with Line type](Adornments_images/Line.png) |
+| Bezier | ![Connector line with Bezier type](Adornments_images/Bezier.png) |
+| StraightLine | ![Connector line with StraightLine type](Adornments_images/StraightLine.png) |
 

@@ -98,7 +98,7 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 
 {% endtabs %}
 
-![Adornments label rotation support in WPF Chart](/3D-Charts_images/Adornments/Label_Rotation.png)
+![Adornments label rotation support in WPF Chart](Adornments-Images/Label_Rotation.png)
 
 ## Customizing the label
 
@@ -161,7 +161,7 @@ The following code example demonstrates the customization of label using the abo
 
 {% endtabs %}
 
-![Adornments label content customization support in WPF Chart](/3D-Charts_images/Adornments/Label_appearance.png)
+![Adornments label content customization support in WPF Chart](Adornments-Images/Label_appearance.png)
 
 ## Label Format
 
@@ -208,7 +208,7 @@ The following code example demonstrates the label having three decimal digits:
 
 {% endtabs %}
 
-![Adornments label format support in WPF Chart](/3D-Charts_images/Adornments/Label_Format.png)
+![Adornments label format support in WPF Chart](Adornments-Images/Label_Format.png)
 
 
 ## ConnectorLine
@@ -256,7 +256,7 @@ The following code example shows the how to add connector line:
 
 {% endtabs %}
 
-![Connector Line in WPF Chart](/3D-Charts_images/Adornments/Adorn_ConnectorLine.png)
+![Connector Line in WPF Chart](Adornments-Images/Adorn_ConnectorLine.png)
 
 ### Connector Type
 
@@ -310,8 +310,8 @@ The following code example shows the how to specify connector type:
 
 | ConnectorType | Output |
 |--|--|
-| Line | ![Connector Line in WPF Chart](/3D-Charts_images/Adornments/Adorn_Line.png) |
-| Bezier | ![Bezier in WPF Chart](3D-Charts_images/Adornments/Adorn_Bezier.png)|
+| Line | ![Connector Line in WPF Chart](Adornments-Images/Adorn_Line.png) |
+| Bezier | ![Bezier in WPF Chart](Adornments-Images/Adorn_Bezier.png)|
 
 N> ConnectorType.StraightLine behavior does not applicable for 3D series.
 
@@ -344,4 +344,4 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 
 {% endtabs %}
 
-![Connector line style support in WPF Chart](/3D-Charts_images/Adornments/ConnectorLine_Customization.png)
+![Connector line style support in WPF Chart](Adornments-Images/ConnectorLine_Customization.png)
