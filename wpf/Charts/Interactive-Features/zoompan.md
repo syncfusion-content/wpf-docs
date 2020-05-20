@@ -83,7 +83,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Zooming support in WPF Chart](Interactive-Features_images/Interactive-Features_img24.jpeg)
+![Zooming support in WPF Chart](/Interactive-Features_images/Interactive-Features_img24.jpeg)
 
 **Mouse** **Wheel** **Zooming**
 
@@ -219,7 +219,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Selection zooming support in WPF Chart](Interactive-Features_images/Interactive-Features_img25.jpeg)
+![Selection zooming support in WPF Chart](/Interactive-Features_images/Interactive-Features_img25.jpeg)
 
 
 **Customization** **of** **Selection** **Rectangle**
@@ -269,7 +269,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Customizing selection rectangle support in WPF Chart](Interactive-Features_images/Interactive-Features_img26.jpeg)
+![Customizing selection rectangle support in WPF Chart](/Interactive-Features_images/Interactive-Features_img26.jpeg)
 
 
 **Zooming** **Mode**
@@ -309,7 +309,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Zoom mode support in WPF Chart](Interactive-Features_images/Interactive-Features_img27.jpeg)
+![Zoom mode support in WPF Chart](/Interactive-Features_images/Interactive-Features_img27.jpeg)
 
 
 Zooming along Y axis
@@ -345,7 +345,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Zoom mode support in WPF Chart](Interactive-Features_images/Interactive-Features_img28.jpeg)
+![Zoom mode support in WPF Chart](/Interactive-Features_images/Interactive-Features_img28.jpeg)
 
 **Maximum** **Zoom** **Level**
 
@@ -417,7 +417,7 @@ chart.Behaviors.Add(zooming);
 
 The following image depicts the default view of the zooming toolbar.
 
-![Zooming toolbar in WPF Chart](Interactive-Features_images/Interactive-Features_img29.jpeg)
+![Zooming toolbar in WPF Chart](/Interactive-Features_images/Interactive-Features_img29.jpeg)
 
 
 **Positioning** **the** **zooming** **toolbar**
@@ -457,7 +457,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![Positioning the zooming toolbar in WPF Chart](Interactive-Features_images/Interactive-Features_img30.jpeg)
+![Positioning the zooming toolbar in WPF Chart](/Interactive-Features_images/Interactive-Features_img30.jpeg)
 
 
 **Customization** **of** **Zooming** **Toolbar**

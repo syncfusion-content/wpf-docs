@@ -70,7 +70,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in WPF Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![Tooltip support in WPF Chart](/Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 
 ## Aligning the ToolTip
@@ -139,7 +139,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Chart](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Tooltip alignment support in WPF Chart](/Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 N> By default the horizontal alignment is center for the tooltip.
 
@@ -205,7 +205,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in WPF Char](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Tooltip alignment support in WPF Char](/Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 **ToolTipMargin**
@@ -282,7 +282,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in WPF Char](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![Margin for tooltip in WPF Char](/Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 N>By default, the VerticalAlignment of the Tooltip is Top.
@@ -367,7 +367,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![VerticalOffset and HorizontalOffset support for tooltip in WPF Chart](/Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 ## ToolTip duration
 
@@ -586,5 +586,5 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip customization support in WPF Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
+![Tooltip customization support in WPF Chart](/Interactive-Features_images/Interactive-Features_img6.jpeg)
 

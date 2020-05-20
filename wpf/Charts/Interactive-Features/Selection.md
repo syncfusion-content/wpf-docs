@@ -97,7 +97,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Segment selection support in WPF Chart](Interactive-Features_images/Interactive-Features_img34.jpeg)
+![Segment selection support in WPF Chart](/Interactive-Features_images/Interactive-Features_img34.jpeg)
 
 **SplineSeries**
 
@@ -172,7 +172,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Segment selection support in WPF Chart](Interactive-Features_images/Interactive-Features_img35.jpeg)
+![Segment selection support in WPF Chart](/Interactive-Features_images/Interactive-Features_img35.jpeg)
 
 ## Series Selection
 
@@ -263,7 +263,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Series selection support in WPF Chart](Interactive-Features_images/Interactive-Features_img36.jpeg)
+![Series selection support in WPF Chart](/Interactive-Features_images/Interactive-Features_img36.jpeg)
 
 N>By default the segment selection is true, so for selecting series you have to set the EnableSegmentSelection property to false.
 
@@ -350,7 +350,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Segments selection with adornments in WPF Chart](Interactive-Features_images/Interactive-Features_img39.jpeg)
+![Segments selection with adornments in WPF Chart](/Interactive-Features_images/Interactive-Features_img39.jpeg)
 
 **Series** **Selection**
 
@@ -485,7 +485,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Series selection with adornments in WPF Chart](Interactive-Features_images/Interactive-Features_img40.jpeg)
+![Series selection with adornments in WPF Chart](/Interactive-Features_images/Interactive-Features_img40.jpeg)
 
 ## Selection Mode
 
@@ -561,7 +561,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![Selection style support in WPF Chart](Interactive-Features_images/Interactive-Features_img37.jpeg)
+![Selection style support in WPF Chart](/Interactive-Features_images/Interactive-Features_img37.jpeg)
 
 
 ### Changing Cursor while Selection
@@ -601,7 +601,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![Changing cursor while selection support in WPF Chart](Interactive-Features_images/Interactive-Features_img38.jpeg)
+![Changing cursor while selection support in WPF Chart](/Interactive-Features_images/Interactive-Features_img38.jpeg)
 
 ## Events
 
