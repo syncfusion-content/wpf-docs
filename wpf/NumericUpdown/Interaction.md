@@ -17,7 +17,7 @@ The `UpDown` control allows to increase or decrease the value by pressing <kbd>u
 
 ### Increment or decrement value in mouse wheel 
 
-When the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property is `true`, the user can increase or decrease the current value by scrolling over UpDown control.
+You can increase or decrease the current value by scrolling over `UpDown` control. You can enable it by setting the [IsScrollingOnCircle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown~IsScrollingOnCircle.html) property as `true`. You can disable the value changing on mouse scrolling by using the `IsScrollingOnCircle` property as `false`. The default value of `IsScrollingOnCircle` property is `true`. 
 
 {% tabs %}
 
