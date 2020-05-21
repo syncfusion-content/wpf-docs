@@ -131,27 +131,27 @@ The items in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.
 
 {% highlight c# %}
 
-    public MainWindow()
-        {
-            InitializeComponent();
+public MainWindow()
+{
+    InitializeComponent();
 
-            ComboBoxAdv comboBoxAdv = new ComboBoxAdv() { Height=30,Width= 200
-                ,HorizontalAlignment= HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center };
+    ComboBoxAdv comboBoxAdv = new ComboBoxAdv() { Height=30,Width= 200
+    ,HorizontalAlignment= HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center };
 
-            ComboBoxItemAdv item1 = new ComboBoxItemAdv() { Content = "Denmark" };
-            ComboBoxItemAdv item2 = new ComboBoxItemAdv() { Content = "New Zealand" };
-            ComboBoxItemAdv item3 = new ComboBoxItemAdv() { Content = "Canada" };
-            ComboBoxItemAdv item4 = new ComboBoxItemAdv() { Content = "Russia" };
-            ComboBoxItemAdv item5 = new ComboBoxItemAdv() { Content = "Japan" };
+    ComboBoxItemAdv item1 = new ComboBoxItemAdv() { Content = "Denmark" };
+    ComboBoxItemAdv item2 = new ComboBoxItemAdv() { Content = "New Zealand" };
+    ComboBoxItemAdv item3 = new ComboBoxItemAdv() { Content = "Canada" };
+    ComboBoxItemAdv item4 = new ComboBoxItemAdv() { Content = "Russia" };
+    ComboBoxItemAdv item5 = new ComboBoxItemAdv() { Content = "Japan" };
 
-            comboBoxAdv.Items.Add(item1);
-            comboBoxAdv.Items.Add(item2);
-            comboBoxAdv.Items.Add(item3);
-            comboBoxAdv.Items.Add(item4);
-            comboBoxAdv.Items.Add(item5);
+    comboBoxAdv.Items.Add(item1);
+    comboBoxAdv.Items.Add(item2);
+    comboBoxAdv.Items.Add(item3);
+    comboBoxAdv.Items.Add(item4);
+    comboBoxAdv.Items.Add(item5);
 
-            this.Content = comboBoxAdv;
-        }
+    this.Content = comboBoxAdv;
+}
 
 {% endhighlight %}
 
@@ -166,8 +166,8 @@ The items in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.
 1. Create data object class named **PopulationInfo** and declare properties as shown below,
 {% tabs %}
 {% highlight c# %}
- public class PopulationInfo
-    {
+public class PopulationInfo
+{
         private string continent;
         private double population;
         private string country;
@@ -196,7 +196,7 @@ The items in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.
             get { return population; }
             set { population = value; }
         }
-    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -233,7 +233,7 @@ public class PopulationViewModel
 {% endtabs %}
 
 ### Binding to Data 
-To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in previous step to [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv_members.html#) property in XAML by setting `PopulationViewModel` as `DataContext`.
+To bind the [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) to data, bind the collection created in previous step to [ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv_members.html#) property in XAML by setting `PopulationViewModel` as `DataContext`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -272,7 +272,7 @@ namespace ComboBox
 
 ### Binding display member
 
-[`DisplayMemberPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv_members.html#) denotes the path to a value on the data object for visual presentation of item to be displayed in combobox drop down list and displays the selected item in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
+[DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv_members.html#) denotes the path to a value on the data object for visual presentation of item to be displayed in combobox drop down list and displays the selected item in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
 {% tabs %}
 {% highlight xaml %}
