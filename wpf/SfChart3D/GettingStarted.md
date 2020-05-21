@@ -7,7 +7,7 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Getting Started with WPF 3D Charts (SfChart3D)
+# Getting Started with WPF 3D Chart (SfChart3D)
 
 This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 

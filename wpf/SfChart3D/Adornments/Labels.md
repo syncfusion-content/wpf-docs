@@ -7,7 +7,7 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Label in WPF 3D Charts (SfChart3D)  
+# Label in WPF 3D Chart (SfChart3D)  
 
 SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
 
@@ -18,7 +18,7 @@ SfChart provides the support to customize the label content using [`SegmentLabel
         <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
             YBindingPath="Plastic">
                 <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowLabel="True" SegmentLabelContent="LabelContentPath" AdornmentsPosition="Top"></chart:ChartAdornmentInfo3D>
+                    <chart:ChartAdornmentInfo3D ShowLabel="True" SegmentLabelContent="DateTime" AdornmentsPosition="Top"></chart:ChartAdornmentInfo3D>
                 </chart:ColumnSeries3D.AdornmentsInfo>
         </chart:ColumnSeries3D>  
 
@@ -36,7 +36,7 @@ SfChart provides the support to customize the label content using [`SegmentLabel
         ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
             {
                 ShowLabel = true,
-                SegmentLabelContent=LabelContent.LabelContentPath,
+                SegmentLabelContent=LabelContent.DateTime,
                 AdornmentsPosition=AdornmentsPosition.Top
             };
 
@@ -48,14 +48,42 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 
 {% endtabs %}
 
-| SegmentLabelContent values | Description |
-|---|--|
-| DateTime | Displays LabelContent.DateTime value | 
-|LabelContentPath | Displays the y value|
-| Percentage | Displays the percentage value of series' point among other points |
-| XValue | Displays the X value of series' point|
-| YofTot | Displays the value of Y of total values' point|
-| YValue | Displays the Y value of series' point| 
+**DateTime**
+
+[LabelContent.DateTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays LabelContent.DateTime value.
+
+![DateTime support in WPF Chart](Adornments-Images/Adorn_DateTime.png)
+
+**LabelContentPath**
+
+[LabelContent.LabelContentPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the y value by default.
+
+![LabelContentPath support in WPF Chart](Adornments-Images/Adorn_LabelContent.png)
+
+**Percentage**
+
+[LabelContent.Percentage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the percentage value of series' point among other points.
+
+![Percentage support in WPF Chart](Adornments-Images/Adorn_Percentage.png)
+
+**XValue**
+
+[LabelContent.XValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the X value of series' point
+
+![XValue support in WPF Chart](Adornments-Images/Adorn_Xvalue.png)
+
+**YofTot**
+
+[LabelContent.YofTot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the value of Y of total values' point
+
+![YofTot support in WPF Chart](Adornments-Images/Adorn_YofTop.png)
+
+**YValue**
+
+[LabelContent.YValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) Displays the Y value of series' point.
+
+![YValue support in WPF Chart](Adornments-Images/Adorn_YValue.png)
+
 
 ## Label Rotation
 
@@ -65,10 +93,10 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D  ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-        YBindingPath="Plastic">                
+        <chart:ColumnSeries3D  ItemsSource="{Binding Demands}" XBindingPath="Category"
+        YBindingPath="Value">                
                 <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowLabel="True" LabelRotationAngle="45" LabelPosition="Outer"></chart:ChartAdornmentInfo3D>
+                    <chart:ChartAdornmentInfo3D LabelRotationAngle="45" UseSeriesPalette="True" ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
                 </chart:ColumnSeries3D.AdornmentsInfo>
         </chart:ColumnSeries3D>
 
@@ -78,16 +106,19 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 
         ColumnSeries3D series = new ColumnSeries3D()
             {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
+                ItemsSource = new StockViewModel().Demands,
+                XBindingPath = "Category",
+                YBindingPath = "Value",
             };
 
         ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
             {
                 ShowLabel = true,
                 LabelRotationAngle=45,
-                LabelPosition=AdornmentsLabelPosition.Outer
+                LabelPosition=AdornmentsLabelPosition.Outer,
+                UseSeriesPalette=true,
+                BorderBrush = new SolidColorBrush(Colors.White),
+                BorderThickness = new Thickness(1),
             };
 
         series.AdornmentsInfo = adornmentInfo;
@@ -118,11 +149,12 @@ The following code example demonstrates the customization of label using the abo
 {% tabs %}
 
 {% highlight xaml %}
-            <chart:ColumnSeries3D  ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic">                
+
+            <chart:ColumnSeries3D  ItemsSource="{Binding Demands}" XBindingPath="Category"
+            YBindingPath="Value">                 
                     <chart:ColumnSeries3D.AdornmentsInfo>
-                        <chart:ChartAdornmentInfo3D ShowLabel="True" LabelPosition="Outer"
-                            Foreground="Black" Background="SkyBlue" FontFamily="Calibri" BorderBrush="Aqua"  BorderThickness="1" Margin="1" FontSize="11" FontStyle="Italic" ></chart:ChartAdornmentInfo3D>
+                        <chart:ChartAdornmentInfo3D  ShowLabel="True" FontStyle="Italic" FontFamily="Segoe UI" Background="DarkGray" BorderBrush="LightGray" Foreground="White" BorderThickness="1">                   
+                    </chart:ChartAdornmentInfo3D>
                     </chart:ColumnSeries3D.AdornmentsInfo>
             </chart:ColumnSeries3D>
 
@@ -132,25 +164,21 @@ The following code example demonstrates the customization of label using the abo
 
         ColumnSeries3D series = new ColumnSeries3D()
             {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
+                ItemsSource = new StockViewModel().Demands,
+                XBindingPath = "Category",
+                YBindingPath = "Value",
             };
 
            ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
             {
-
                 ShowLabel = true,
                 LabelPosition = AdornmentsLabelPosition.Outer,
-                Foreground = new SolidColorBrush(Colors.Black),
-                BorderBrush = new SolidColorBrush(Colors.Aqua),
-                Background = new SolidColorBrush(Colors.SkyBlue),
+                Foreground = new SolidColorBrush(Colors.White),
+                BorderBrush = new SolidColorBrush(Colors.LightGray),
+                Background = new SolidColorBrush(Colors.DarkGray),
                 BorderThickness = new Thickness(1),
-                Margin = new Thickness(1),
                 FontStyle = FontStyles.Italic,
-                FontFamily = new FontFamily("Calibri"),
-                FontSize = 11
-
+                FontFamily = new FontFamily("Segoe UI"),
             };
 
         series.AdornmentsInfo = adornmentInfo;
@@ -178,7 +206,7 @@ The following code example demonstrates the label having three decimal digits:
             YBindingPath="Plastic">                
                     <chart:ColumnSeries3D.AdornmentsInfo>
                         <chart:ChartAdornmentInfo3D ShowLabel="True" LabelPosition="Outer"
-                        SegmentLabelFormat="#.00" ></chart:ChartAdornmentInfo3D>
+                        SegmentLabelFormat="#.###" ></chart:ChartAdornmentInfo3D>
                     </chart:ColumnSeries3D.AdornmentsInfo>
         </chart:ColumnSeries3D>
 
@@ -197,7 +225,7 @@ The following code example demonstrates the label having three decimal digits:
             {
                 ShowLabel = true,
                 AdornmentsPosition = AdornmentsPosition.Top,
-                SegmentLabelFormat = "0.000"
+                SegmentLabelFormat = "#.###"
             };
 
         series.AdornmentsInfo = adornmentInfo;
@@ -222,12 +250,12 @@ The following code example shows the how to add connector line:
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic">
-                <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowLabel="True" ConnectorHeight="10" ShowConnectorLine="True" LabelPosition="Outer"></chart:ChartAdornmentInfo3D>
-                </chart:ColumnSeries3D.AdornmentsInfo>
-        </chart:ColumnSeries3D>  
+        <chart:PieSeries3D ItemsSource="{Binding Demands}" XBindingPath="Category"
+            YBindingPath="Value" LabelPosition="OutsideExtended">
+                <chart:PieSeries3D.AdornmentsInfo>
+                   <chart:ChartAdornmentInfo3D ShowConnectorLine="True" ConnectorHeight="15" UseSeriesPalette="True" ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+                </chart:PieSeries3D.AdornmentsInfo>
+        </chart:PieSeries3D>  
 
 {% endhighlight %}
 
@@ -237,15 +265,18 @@ The following code example shows the how to add connector line:
             {
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
-                YBindingPath = "Plastic"
+                YBindingPath = "Plastic",
+                pie.LabelPosition=CircularSeriesLabelPosition.OutsideExtended
             };
 
         ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
             {
-                ShowLabel = true,
-                LabelPosition = AdornmentsLabelPosition.Outer,
+                ShowLabel = true,              
                 ShowConnectorLine = true,
-                ConnectorHeight = 10
+                ConnectorHeight = 15,
+                UseSeriesPalette=true,
+                BorderBrush = new SolidColorBrush(Colors.White),
+                BorderThickness = new Thickness(1)
             };
 
         series.AdornmentsInfo = adornmentInfo;
@@ -268,13 +299,13 @@ The following code example shows the how to specify connector type:
 
 {% highlight xaml %}
 
-        <chart:PieSeries3D  ItemsSource="{Binding CategoricalData}" ConnectorType="Line" 
-            CircleCoefficient="0.7" EnableSmartLabels="True" LabelPosition="OutsideExtended" 
-            XBindingPath="Year" YBindingPath="Plastic">
+         <chart:PieSeries3D Palette="BlueChrome" ItemsSource="{Binding DataPoints}"  
+            XBindingPath="Year" ConnectorType="Line" LabelPosition="OutsideExtended" YBindingPath="India">
                 <chart:PieSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowLabel="True" SegmentLabelContent="LabelContentPath" ConnectorHeight="80" ShowConnectorLine="True" LabelPosition="Outer"></chart:ChartAdornmentInfo3D>
+                    <chart:ChartAdornmentInfo3D ShowConnectorLine="True"
+                                                UseSeriesPalette="True" ShowLabel="True" ></chart:ChartAdornmentInfo3D>
                 </chart:PieSeries3D.AdornmentsInfo>
-        </chart:PieSeries3D> 
+            </chart:PieSeries3D>
 
 {% endhighlight %}
 
@@ -282,36 +313,33 @@ The following code example shows the how to specify connector type:
 
         PieSeries3D series = new PieSeries3D()
             {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                ItemsSource = new ViewModel().DataPoints,
                 XBindingPath = "Year",
-                YBindingPath = "Plastic",
+                YBindingPath = "India",
                 LabelPosition=CircularSeriesLabelPosition.OutsideExtended,
-                ConnectorType=ConnectorMode.Line,
-                CircleCoefficient=0.7,
-                EnableSmartLabels=true
+                ConnectorType=ConnectorMode.Line
             };
 
         ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
             {
                 ShowLabel = true,
-                SegmentLabelContent = LabelContent.LabelContentPath,
-                LabelPosition=AdornmentsLabelPosition.Outer,
-                ShowConnectorLine = true,
-                ConnectorHeight=80
+                ShowConnectorLine = true
              };
 
         series.AdornmentsInfo = adornmentInfo;
-
         chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-| ConnectorType | Output |
-|--|--|
-| Line | ![Connector Line in WPF Chart](Adornments-Images/Adorn_Line.png) |
-| Bezier | ![Bezier in WPF Chart](Adornments-Images/Adorn_Bezier.png)|
+ **Line** 
+ 
+ ![Connector Line in WPF Chart](Adornments-Images/Adorn_Line.png) 
+
+ **Bezier**
+ 
+  ![Bezier in WPF Chart](Adornments-Images/Adorn_Bezier.png)|
 
 N> ConnectorType.StraightLine behavior does not applicable for 3D series.
 

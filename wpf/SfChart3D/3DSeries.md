@@ -7,7 +7,7 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Series in WPF 3D Chart (SfChart3D)
+# Series in WPF 3D Charts (SfChart3D)
 
 ChartSeries is the visual representation of the data. SfChart3D offers eight types of series. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 

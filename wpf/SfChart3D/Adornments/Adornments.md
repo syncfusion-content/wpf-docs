@@ -7,7 +7,7 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Adornments in WPF 3D Charts (SfChart3D)
+# Adornments in WPF 3D Chart (SfChart3D)
 
 Adornments are used to provide information about the data points to the user. Values from data point(x, y) or other custom properties from a data source can be displayed.You can add a shape and label to adorn each data point.
 
@@ -63,42 +63,26 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 {% tabs %}
 
 {% highlight xaml %}
+      
+        <chart:ChartAdornmentInfo3D ShowLabel="True" LabelPosition="Outer"
+                UseSeriesPalette="True" ></chart:ChartAdornmentInfo3D>
 
-        <chart:ColumnSeries3D  ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic">                
-                    <chart:ColumnSeries3D.AdornmentsInfo>
-                        <chart:ChartAdornmentInfo3D ShowLabel="True" LabelPosition="Outer"
-                        UseSeriesPalette="True" ></chart:ChartAdornmentInfo3D>
-                    </chart:ColumnSeries3D.AdornmentsInfo>
-        </chart:ColumnSeries3D>
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
-            {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
-            };
-
         ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
             {
-
                 ShowLabel = true,
                 LabelPosition = AdornmentsLabelPosition.Outer,
                 UseSeriesPalette=true
             };
 
-        series.AdornmentsInfo = adornmentInfo;
-
-        chart.Series.Add(series);
-
 {% endhighlight %}
 
 {% endtabs %}
 
-![Series brush for adornments background support in WPF Chart](Adornments-Images/Label_palette.png)
+
 
 ## Smart Labels
 

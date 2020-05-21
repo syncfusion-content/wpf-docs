@@ -26,7 +26,7 @@ The following code example shows the how to specify connector type:
         <chart:ColumnSeries3D  ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
             YBindingPath="Plastic">
                 <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowMarker="True" SymbolHeight="10" SymbolWidth="10" Symbol="Diamond" AdornmentsPosition="Top" SymbolInterior="Brown"></chart:ChartAdornmentInfo3D>
+                    <chart:ChartAdornmentInfo3D ShowMarker="True" SymbolHeight="10" SymbolWidth="10" Symbol="Diamond" AdornmentsPosition="TopAndBottom" SymbolInterior="Brown"></chart:ChartAdornmentInfo3D>
                 </chart:ColumnSeries3D.AdornmentsInfo>
         </chart:ColumnSeries3D>
 
@@ -45,7 +45,7 @@ The following code example shows the how to specify connector type:
                 ShowMarker = true,
                 SymbolInterior = new SolidColorBrush(Colors.Brown),
                 Symbol = ChartSymbol.Diamond,
-                AdornmentsPosition=AdornmentsPosition.Top,
+                AdornmentsPosition=AdornmentsPosition.TopAndBottom,
                 SymbolHeight=10,
                 SymbolWidth=10
             };
@@ -58,13 +58,9 @@ The following code example shows the how to specify connector type:
 
 {% endtabs %}
 
-| AdornmentsPosition | Output |
-|--|--|
-| Top | ![Top Position in WPF Chart](Adornments-Images/Adorn_Top.png) |
-| Bottom | ![Bottom Position in WPF Chart](Adornments-Images/Adorn_Bottom.png) |
-| TopAndBottom | ![TopAndBottom Position in WPF Chart](Adornments-Images/Adorn_TopAndBottom.png) |
+![TopAndBottom Position in WPF Chart](Adornments-Images/Adorn_TopAndBottom.png)
 
-### Advanced Positioning
+### Label Position
 
 Other than the above positioning options, SfChart providing additional customization option to position the adornments smartly based on series types using [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelPosition.html#) property.
 
@@ -78,10 +74,154 @@ The following are the values for this property:
 
 The following section shows few examples for this LabelPosition behavior with respect to the series.
 
-| LabelPosition | Column Series | Line Series|
-|--|--|--|
-| Auto | ![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Line.png) |
-| Inner | ![Inner Position in WPF Chart](Adornments-Images/Label_Inner_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Inner_Line.png) |
-| Outer | ![Outer Position in WPF Chart](Adornments-Images/Label_Outer_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Outer_Line.png) |
-| Center | ![Auto Position in WPF Chart](Adornments-Images/Label_Center_Column.png) | ![Auto Position in WPF Chart](Adornments-Images/Label_Center_Line.png) |
+**Auto**
+
+
+The [`Auto`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of Labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)
+ and [`LineSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
+
+ {% tabs %}
+
+{% highlight xaml %}
+
+         <chart:ChartAdornmentInfo3D  UseSeriesPalette="True" LabelPosition="Auto"
+            ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+            {
+                ShowMarker = true,
+                BorderBrush = new SolidColorBrush(Colors.White),
+                LabelPosition=AdornmentsLabelPosition.Auto,
+                UseSeriesPalette=true,              
+                BorderThickness = new Thickness(1),
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Columm Series**
+
+![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Column.png) 
+
+**Line Series**
+
+ ![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Line.png)
+
+
+**Inner**
+
+The [`Inner`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of Labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)
+ and [`LineSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
+
+ {% tabs %}
+
+{% highlight xaml %}
+
+         <chart:ChartAdornmentInfo3D  UseSeriesPalette="True" LabelPosition="Inner"
+            ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+            {
+                ShowMarker = true,
+                BorderBrush = new SolidColorBrush(Colors.White),
+                LabelPosition=AdornmentsLabelPosition.Inner,
+                UseSeriesPalette=true,              
+                BorderThickness = new Thickness(1),
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+**Columm Series**
+
+![Inner Position in WPF Chart](Adornments-Images/Label_Inner_Column.png) 
+ 
+ **Line Series**
+ 
+![Inner Position in WPF Chart](Adornments-Images/Label_Inner_Line.png) 
+
+**Outer**
+
+The [`Outer`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of Labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)
+ and [`LineSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
+
+ {% tabs %}
+
+{% highlight xaml %}
+
+         <chart:ChartAdornmentInfo3D  UseSeriesPalette="True" LabelPosition="Outer"
+            ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+            {
+                ShowMarker = true,
+                BorderBrush = new SolidColorBrush(Colors.White),
+                LabelPosition=AdornmentsLabelPosition.Outer,
+                UseSeriesPalette=true,              
+                BorderThickness = new Thickness(1),
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Columm Series**
+
+ ![Outer Position in WPF Chart](Adornments-Images/Label_Outer_Column.png) 
+ 
+**Line Series**
+
+  ![Auto Position in WPF Chart](Adornments-Images/Label_Outer_Line.png) 
+
+**Center**
+
+The [`Center`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html) position of Labels with respect to [`ColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)
+ and [`LineSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineSeries3D.html#).
+
+ {% tabs %}
+
+{% highlight xaml %}
+
+         <chart:ChartAdornmentInfo3D  UseSeriesPalette="True" LabelPosition="Center"
+            ShowLabel="True" BorderBrush="White" BorderThickness="1"></chart:ChartAdornmentInfo3D>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
+            {
+                ShowMarker = true,
+                BorderBrush = new SolidColorBrush(Colors.White),
+                LabelPosition=AdornmentsLabelPosition.Center,
+                UseSeriesPalette=true,              
+                BorderThickness = new Thickness(1),
+            };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Columm Series**
+
+![Auto Position in WPF Chart](Adornments-Images/Label_Center_Column.png) 
+
+ **Line Series**
+
+ ![Auto Position in WPF Chart](Adornments-Images/Label_Center_Line.png) |
 
