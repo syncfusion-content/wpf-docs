@@ -31,5 +31,6 @@ The control does not stick with one type of keyboard, so it can be populate the 
 
 {% endtabs %}
 
-![Diacritic](Auto-Complete_images/Diacritic.png)
+![Diacritic](Diacritic_Sensitivity_images/Diacritic.png)
 
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Diacritic_Sample-1404432176) link.

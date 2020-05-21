@@ -7,7 +7,7 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Getting Started
+# Getting started with SfAutoComplete.
 
 ## Assembly deployment
 
@@ -123,9 +123,15 @@ Create a collection attribute and populate the collection with items.
         public EmployeeViewModel()
         {
             Employees = new List<Employee>();
-            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
-            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
-            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Eric", Email = "Eric@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "James", Email = "James@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Jacob", Email = "Jacob@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Lucas", Email = "Lucas@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Mark", Email = "Mark@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Aldan", Email = "Aldan@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Aldrin", Email = "Aldrin@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Alan", Email = "Alan@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Aaron", Email = "Aaron@syncfusion.com" });
         }
     }
 
@@ -147,9 +153,7 @@ Create a collection attribute and populate the collection with items.
 
 ![GettingStarted](GettingStarted_images/AutoCompleteSource.png)
 
-Find sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_WPF958872664) link.
-
-## Autocomplete modes 
+## AutoComplete modes 
 
 Suggestions can be shown in number of ways. TextBoxExt supports the following.
 
@@ -202,7 +206,7 @@ The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncf
 {% endhighlight %}
 {% endtabs %}
 
-![Suggest](Auto-Complete_images/Auto-Complete_img2.png)
+![GettingStarted](GettingStarted_images/AutoCompleteMode.png)
 
 Filtered suggestions displayed in drop-down list
 {:.caption}
@@ -211,4 +215,6 @@ Filtered suggestions displayed in drop-down list
 
 Index of the selected items can be retrieved by using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property. The selected items of the AutoComplete can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property.
 
-For further details, refer to [Retrieving selected values](https://help.syncfusion.com/wpf/autocomplete/retrieving-selected-values).
+For further details, refer to [Retrieving SelectedValue](https://help.syncfusion.com/wpf/autocomplete/Single-and-multiple-Selection#retrieving-selectedValue) and [Setting and retrieving SelectedItem](https://help.syncfusion.com/wpf/autocomplete/Single-and-multiple-Selection#setting-and-retrieving-selectedItem).
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_Started_Sample-45883559) link.

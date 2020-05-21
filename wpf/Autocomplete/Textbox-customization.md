@@ -28,7 +28,7 @@ AutoComplete provides the user-friendly customizing options for both text box an
 {% endhighlight %}
 {% endtabs %}
 
-![Watermark_Text](Watermark_images/Watermark_img1.png)
+![Watermark_Text](Textbox_customization_images/Watermark.png)
 
 N> The Watermark property is of the object type. So, any framework elements can be hosted as Watermark content. The following example shows how to host an image and text as Watermark content.
 
@@ -54,7 +54,7 @@ N> The Watermark property is of the object type. So, any framework elements can 
 {% endhighlight %}
 {% endtabs %}
 
-![Watermark_View](Watermark_images/Watermark_img2.png)
+![Watermark_View](Textbox_customization_images/Watermark_img.png)
 
 ### Water mark template 
 
@@ -85,7 +85,7 @@ Any business object can be bound to the Watermark property and that object can b
 {% endhighlight %}
 {% endtabs %}
 
-![Watermark_View](Watermark_images/Watermark_img3.png)
+![Watermark_View](Textbox_customization_images/WatermarkTemplate.png)
 
 
 ## Customizing the text box
@@ -110,7 +110,7 @@ The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~
 
 {% endtabs %}
 
-![AutoComplete Customization](Auto-Complete_images/Customization.png)
+![AutoComplete Customization](Textbox_customization_images/Customization.png)
 
 
 
@@ -135,4 +135,7 @@ This feature allows the users to set the drop-down icon for the text box control
 
 {% endtabs %}
 
-![DropdownIcon](Auto-Complete_images/DropDownIcon.png)
+![DropdownIcon](Textbox_customization_images/DropDownIcon.png)
+
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Textbox_customization_Sample682649633) link.

@@ -40,7 +40,7 @@ It highlights the first position of the matching characters in the suggestion li
 
 {% endtabs %}
 
-![First Occurrance](Auto-Complete_images/FirstOccurrance.png)
+![First Occurrance](Highlighting_matched_text_images/FirstOccurrance.png)
 
 ## Multiple occurrence
 
@@ -65,4 +65,7 @@ It highlights the matching character that presents everywhere in the suggestion 
 
 {% endtabs %}
 
-![Multiple Occurrance](Auto-Complete_images/MultipleOccurrance.png)
+![Multiple Occurrance](Highlighting_matched_text_images/MultipleOccurrance.png)
+
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/TextHighlightMode_Sample-1983909002) link.

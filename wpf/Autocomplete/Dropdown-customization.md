@@ -32,7 +32,7 @@ The [DropDownBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusio
 
 {% endtabs %}
 
-![Dropdown background color](Auto-Complete_images/drop_down_background_color.png)
+![Dropdown background color](Dropdown_customization_images/drop_down_background_color.png)
 
 
 ## Dropdown placement 
@@ -65,7 +65,7 @@ The drop-down list will open at the top of the control.
 {% endhighlight %}
 {% endtabs %}
 
-![Top](Auto-Complete_images/Auto-Complete_img22.png)
+![Top](Dropdown_customization_images/Top.png)
 
 Drop down list opening at the top
 {:.caption}
@@ -91,7 +91,7 @@ The drop-down list will open at the bottom of the control.
 {% endhighlight %}
 {% endtabs %}
 
-![Bottom](Auto-Complete_images/Auto-Complete_img23.png)
+![Bottom](Dropdown_customization_images/Bottom.png)
 
 Drop down list opening at the bottom
 {:.caption}
@@ -116,7 +116,7 @@ The drop-down list will not open.
 {% endhighlight %}
 {% endtabs %}
 
-![None](Auto-Complete_images/Auto-Complete_img24.png)
+![None](Dropdown_customization_images/None.png)
 
 No drop down list
 {:.caption}
@@ -141,7 +141,7 @@ The maximum height of the suggestion box in the Autocomplete control can be chan
 
 {% endtabs %}
 
-![MaxDropDownHeight](Auto-Complete_images/maximum_drop_down_height.png)
+![MaxDropDownHeight](Dropdown_customization_images/maximum_drop_down_height.png)
 
 ## Open dropdown on focus 
 
@@ -163,7 +163,7 @@ Suggestion box can be shown whenever the control receives focus using the [ShowS
 
 {% endtabs %}
 
-![ShowSuggestionsOnFocus](Auto-Complete_images/suggestion_on_focus.png)
+![ShowSuggestionsOnFocus](Dropdown_customization_images/suggestion_on_focus.png)
 
 ## Open dropdown with a delay 
 
@@ -182,3 +182,7 @@ The [PopupDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInpu
 
 {% endhighlight %}
 {% endtabs %}
+
+
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Dropdown_customization_Sample-901636434) link.

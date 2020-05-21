@@ -15,7 +15,6 @@ The AutoComplete functionality provides the several modes of suggestions while t
 
 The TextBoxExt control can be populated with a predefined list of items, which will assist while typing. It can be choose one item from the filtered list.
 
-For illustration, let us create a textbox, which will populate a list of employees.
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,12 +23,14 @@ For illustration, let us create a textbox, which will populate a list of employe
                               VerticalAlignment="Center" 
                               Width="300"
                               Height="40"
+                              SearchItemPath="Name"
                               AutoCompleteMode="Suggest"
                               AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
 {% endtabs %}
 
+![AutoCompleteSource](AutoComplete_and_filtering_images/AutoCompleteSource.png)
 
 ## SearchItemPath
 
@@ -49,7 +50,7 @@ The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Sf
 {% endhighlight %}
 {% endtabs %}
 
-![AutoCompleteSource](Auto-Complete_images/Auto-Complete_img1.png)
+![SearchItemPath](AutoComplete_and_filtering_images/SearchItemPath.png)
 
 N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the AutoComplete modes will be provided in the next section.
 
@@ -82,7 +83,7 @@ The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syn
 {% endhighlight %}
 {% endtabs %}
 
-![ItemTemplate](Auto-Complete_images/Auto-Complete_img5.png)
+![ItemTemplate](AutoComplete_and_filtering_images/ItemTemplate.png)
 
 Drop down list with image
 {:.caption}
@@ -247,14 +248,14 @@ The control returns all possible matches ending with the typed text based on the
                                       Width="400"
                                       Height="40"
                                       SearchItemPath="Name"
-                                      SuggestionMode="StartsWith"
+                                      SuggestionMode="Contains"
                                       AutoCompleteMode="Suggest"
                                       AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
 {% endtabs %}
 
-![StartsWith](Auto-Complete_images/Auto-Complete_img7.png)
+![Contains](AutoComplete_and_filtering_images/Contains.png)
 
 ## Prefix characters constraint
 
@@ -268,6 +269,7 @@ Instead of displaying suggestion list on every character entry, matches can be f
                               VerticalAlignment="Center" 
                               Width="300"
                               Height="40"
+                              SearchItemPath="Name"
                               AutoCompleteMode="Suggest"
                               MinimumPrefixCharacters="2"
                               AutoCompleteSource="{Binding Employees}" />
@@ -276,7 +278,7 @@ Instead of displaying suggestion list on every character entry, matches can be f
 
 {% endtabs %}
 
-![Minimum Prefix Length](Auto-Complete_images/Auto-Complete_img21.png)
+![Minimum Prefix Length](AutoComplete_and_filtering_images/MinimumPrefixCharacters.png)
 
 Minimum Prefix Length case
 {:.caption}
@@ -301,14 +303,14 @@ Minimum Prefix Length case
 {% endhighlight %}
 {% endtabs %}
 
-![Ignore Case](Auto-Complete_images/Auto-Complete_img20.png)
+![Ignore Case](AutoComplete_and_filtering_images/IgnoreCase.png)
 
 Ignore Case
 {:.caption}
 
 ## Showing image in token and dropdown 
 
-This feature allows the users to provide the path for the image to be displayed in the text box control using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property.
+To show the image in token using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property and show the image in dropdown by the way of AutoCompleteItemTemplate support. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -323,23 +325,28 @@ This feature allows the users to provide the path for the image to be displayed 
                                   AutoCompleteSource="{Binding Employees}"
                                   VerticalAlignment="Center"
                                   Width="200">
-                <editors:SfTextBoxExt.AutoCompleteItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{Binding Image}" Margin="2" Stretch="Uniform" Width="12"/>
-                            <TextBlock Text="{Binding Name}" Margin="5 2"/>
+            <editors:SfTextBoxExt.AutoCompleteItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Height="40">
+                        <Image Source="{Binding Image}" Margin="2" Height="35" Stretch="Uniform" Width="35"/>
+                        <StackPanel  Margin="2"
+                                            Orientation="Vertical">
+                            <TextBlock Text="{Binding Name}" Margin="4,2,4,0" FontSize="12" Foreground="Black"/>
+                            <TextBlock Text="{Binding Email}" Margin="4,1,2,2" FontSize="10" Foreground="Gray"/>
                         </StackPanel>
-                    </DataTemplate>
-                </editors:SfTextBoxExt.AutoCompleteItemTemplate>
+                    </StackPanel>
+                </DataTemplate>
+            </editors:SfTextBoxExt.AutoCompleteItemTemplate>
             </editors:SfTextBoxExt>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![ImageMemberPath](Auto-Complete_images/ImageMemberPath.png)
+![ImageMemberPath](AutoComplete_and_filtering_images/ImageMemberPath.png)
 
-Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ImageMemberPath-2093350688) link.
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ImageMemberPath_Sample662865314) link.
 
 
 ## Display a message when suggestions are empty 
@@ -366,6 +373,8 @@ When the entered item is not in the suggestion list, AutoComplete displays a tex
 {% endhighlight %}
 {% endtabs %}
 
-![NoResultsFoundTemplate](Auto-Complete_images/NoResultsFoundTemplate.png)
+![NoResultsFoundTemplate](AutoComplete_and_filtering_images/NoResultsFoundTemplate.png)
 
 
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_and_filtering_Sample887305638) link.
