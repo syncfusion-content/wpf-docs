@@ -221,7 +221,7 @@ The following code example demonstrates the label having three decimal digits:
                 YBindingPath = "Plastic",
             };
 
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
             {
                 ShowLabel = true,
                 AdornmentsPosition = AdornmentsPosition.Top,

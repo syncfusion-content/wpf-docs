@@ -26,7 +26,7 @@ The following code example shows the how to specify connector type:
         <chart:ColumnSeries3D  ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
             YBindingPath="Plastic">
                 <chart:ColumnSeries3D.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo3D ShowMarker="True" SymbolHeight="10" SymbolWidth="10" Symbol="Diamond" AdornmentsPosition="TopAndBottom" SymbolInterior="Brown"></chart:ChartAdornmentInfo3D>
+                    <chart:ChartAdornmentInfo3D ShowMarker="True" SymbolHeight="10" SymbolWidth="10" Symbol="Diamond" AdornmentsPosition="TopAndBottom" SymbolInterior="#FF64B5F6"></chart:ChartAdornmentInfo3D>
                 </chart:ColumnSeries3D.AdornmentsInfo>
         </chart:ColumnSeries3D>
 
@@ -43,15 +43,12 @@ The following code example shows the how to specify connector type:
         ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D()
             {
                 ShowMarker = true,
-                SymbolInterior = new SolidColorBrush(Colors.Brown),
-                Symbol = ChartSymbol.Diamond,
                 AdornmentsPosition=AdornmentsPosition.TopAndBottom,
                 SymbolHeight=10,
                 SymbolWidth=10
             };
 
         series.AdornmentsInfo = adornmentInfo;
-
         chart.Series.Add(series);
 
 {% endhighlight %}

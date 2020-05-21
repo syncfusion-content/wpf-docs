@@ -42,7 +42,7 @@ The following code example illustrates how to initialize the adornment.
                 YBindingPath = "Plastic"                
             };
 
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo() { ShowLabel = true };
+        ChartAdornmentInfo3D adornmentInfo = new ChartAdornmentInfo3D() { ShowLabel = true };
 
         series.AdornmentsInfo = adornmentInfo;
 
