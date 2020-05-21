@@ -104,7 +104,7 @@ The [`Auto`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WP
 
 {% endtabs %}
 
-**Columm Series**
+**Column Series**
 
 ![Auto Position in WPF Chart](Adornments-Images/Label_Auto_Column.png) 
 
@@ -143,7 +143,7 @@ The [`Inner`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.W
 {% endtabs %}
 
 
-**Columm Series**
+**Column Series**
 
 ![Inner Position in WPF Chart](Adornments-Images/Label_Inner_Column.png) 
  
@@ -180,7 +180,7 @@ The [`Outer`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.W
 
 {% endtabs %}
 
-**Columm Series**
+**Column Series**
 
  ![Outer Position in WPF Chart](Adornments-Images/Label_Outer_Column.png) 
  
@@ -217,7 +217,7 @@ The [`Center`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.
 
 {% endtabs %}
 
-**Columm Series**
+**Column Series**
 
 ![Auto Position in WPF Chart](Adornments-Images/Label_Center_Column.png) 
 
