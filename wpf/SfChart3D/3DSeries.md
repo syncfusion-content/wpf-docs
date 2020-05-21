@@ -7,7 +7,7 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Series in WPF Chart (SfChart3D)
+# Series in WPF 3D Chart (SfChart3D)
 
 ChartSeries is the visual representation of the data. SfChart3D offers eight types of series. Based on your requirements and specifications, any type of Series can be added for data visualization. 
 
@@ -26,7 +26,7 @@ ChartSeries is the visual representation of the data. SfChart3D offers eight typ
 The following APIs are common for the most of the series types:
 
 * [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html) – A string property that represents the X values for the series.
-* [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XyDataSeries~YBindingPath.html) – A string property that represents the Y values for the series.
+* [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XyDataSeries3D~YBindingPath.html) – A string property that represents the Y values for the series.
 Eight types of chart [`Series`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~Series.html).
 * [`Interior`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Interior.html) – Represents the brush to fill the series.
 
@@ -178,7 +178,7 @@ Line series join points on a plot by straight lines, showing data trends at equa
 {% highlight xaml %}
 
         <chart:LineSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
-            YBindingPath="Plastic"></chart:LineSeries3D>
+            YBindingPath="Metal"></chart:LineSeries3D>
 
 {% endhighlight %}
 
@@ -188,7 +188,7 @@ Line series join points on a plot by straight lines, showing data trends at equa
             {
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
-                YBindingPath = "Plastic"
+                YBindingPath = "Metal"
             };
 
 chart3D.Series.Add(series);
@@ -201,19 +201,20 @@ chart3D.Series.Add(series);
 
 ## Scatter Chart
 
-[`ScatterSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html#) is similar to bubble series when each point being represented by an ellipse with equal size. 
+[`ScatterSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries3D.html#) will represent each point by a Rectangle with equal size. 
 
 This size can be defined by using below properties.
 
-* [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html#) 
-* [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html#) properties.
+* [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries3D~ScatterHeight.html#) 
+* [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ScatterSeries3D~ScatterWidth.html#)
 
 {% tabs %}
 
 {% highlight xaml %}
 
-     <chart:ScatterSeries3D ItemsSource="{Binding CategoricalData}"  XBindingPath="Year"
-         YBindingPath="Plastic"></chart:ScatterSeries3D>
+      <chart:ScatterSeries3D  ItemsSource="{Binding DataPoints}"  
+            XBindingPath="Year" YBindingPath="Germany">
+    </chart:ScatterSeries3D>
 
 {% endhighlight %}
 
@@ -222,9 +223,9 @@ This size can be defined by using below properties.
 
         ScatterSeries3D series = new ScatterSeries3D()
             {
-                ItemsSource = new CategoryDataViewModel().CategoricalData,
+                ItemsSource = new ViewModel().DataPoints,
                 XBindingPath = "Year",
-                YBindingPath = "Plastic"
+                YBindingPath = "Germany"
             };
 
         chart3D.Series.Add(series);
@@ -269,7 +270,7 @@ This size can be defined by using below properties.
 ## Stacking Charts
 
 ### Stacking Column
-[`StackingColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingColumnSeries3D.html#) resembles multiple types of ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
+[`StackingColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StackingColumnSeries3D.html#) resembles multiple types of ColumnSeries3D. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
 
 The following code example illustrates how to use StackingColumnSeries3D:
 
@@ -493,7 +494,7 @@ The following code example illustrates the PieSeries3D.
 
 {% endtabs %}
 
-![Stacking Bar support in WPF 3D Chart](3D-Charts_images/Series/Pie3D.png)
+![Pie Chart support in WPF 3D Chart](3D-Charts_images/Series/Pie3D.png)
 
 
 ## Doughnut Chart
@@ -536,7 +537,7 @@ The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfu
 
 {% highlight xaml %}
 
-        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}" DoughnutCoefficient="0.7"   
+        <chart:DoughnutSeries3D ItemsSource="{Binding CategoricalData}" DoughnutCoefficient="0.5"   
             XBindingPath="Year" YBindingPath="Iron"> </chart:DoughnutSeries3D>
 
 {% endhighlight %}
@@ -548,7 +549,7 @@ The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfu
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
                 YBindingPath = "Iron",
-                DoughnutCoefficient=0.7
+                DoughnutCoefficient=0.5
             };
 
         chart.Series.Add(series);
@@ -561,7 +562,7 @@ The [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfu
 
 ### Semi Pie and Doughnut
 
-By using custom [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~StartAngle.html#) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EndAngle.html#) properties, you can draw pie series in different shapes such as semicircular or quarter circular series.
+By using custom [`StartAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~StartAngle.html#) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~EndAngle.html#) properties, you can draw pie series in different shapes such as semicircular or quarter circular series.
 
 {% tabs %}
 

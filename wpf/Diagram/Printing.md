@@ -6,7 +6,7 @@ platform: wpf
 control: SfDiagram
 documentation: ug
 ---
-# Printing
+# Printing and its customization
 
 SfDiagram provides support to print the content displayed in the diagram page using the [PrintingService.Print](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PrintingService~Print().html "PrintingService.Print") method.
 
@@ -176,7 +176,7 @@ Page margin can be changed in print preview also by selecting from predefined pa
 
 ## Header and Footer
 
-SfDiagram provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting the `PageHeaderHeight`, `PageHeaderTemplate`, `PageFooterHeight, and `PageFooterTemplate` properties in PrintSettings.
+SfDiagram provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting the [PageHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Printing.PrintSettingsBase~PageHeaderHeight.html), [PageHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Printing.PrintSettingsBase~PageHeaderTemplate.html), [PageFooterHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Printing.PrintSettingsBase~PageFooterHeight.html), and [PageFooterTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.Printing.PrintSettingsBase~PageFooterTemplate.html) properties in PrintSettings.
 
 Steps for setting Header for printing:
 
@@ -190,7 +190,13 @@ Steps for setting Header for printing:
 </DataTemplate>
 
 <DataTemplate x:Key="PrintFooterTemplate">
-  <TextBlock Text="SfDiagram" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontSize="12">
+        <TextBlock.Text>
+            <Binding Path="PageIndex"
+                RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type Printing:PrintPageControl}}"
+                StringFormat="Page : {0}" />
+                </TextBlock.Text>
+            </TextBlock>
 </DataTemplate>
 
 {% endhighlight %}
@@ -214,9 +220,7 @@ diagram.PrintingService.PrintSettings.PageFooterTemplate =this.Resources["PrintF
 
 ![HeaderAndFooter](Printing_images/headerandfooter.png) 
  
-Refer to the Print and Export Sample from the following link.
-
-Sample Link: WPF Dashboard->SfDiagram->Getting Started->Print.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Printing/CustomHeaderFooter)
 
 ## Skip empty pages
 
@@ -377,3 +381,7 @@ diagram.PrintingService.ShowClassicPrintPreview();
 {% endtabs %}
 
 ![Classic Print](Printing_images/classic.png)
+
+## See Also
+
+* [How to customize the Header or Footer of the print preview?](https://www.syncfusion.com/kb/11481/how-to-customize-the-header-or-footer-of-the-print-preview-in-the-wpf-diagramsfdiagram)

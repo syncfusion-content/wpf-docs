@@ -312,6 +312,8 @@ public class CustomPageSettings : PageSettings
 
 N> This customization plays a role in reducing the number of pages in printing.
 
+Find the [Page Settings sample](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/PageSettings) to depict the Page Settings.
+
 {% seealso %}
 
 [How to add or remove grid lines for diagram page](/wpf/sfdiagram/gridlines)
@@ -325,5 +327,9 @@ N> This customization plays a role in reducing the number of pages in printing.
 [How to export the diagram page](/wpf/sfdiagram/exporting)
 
 [How to interact with diagram page ](/wpf/sfdiagram/interaction)
+
+[How to add multiple diagram pages?](https://www.syncfusion.com/kb/11463/how-to-add-multiple-diagram-pages-in-the-wpf-diagramsfdiagram)
+
+[How to use the property grid for diagram?](https://www.syncfusion.com/kb/11482/how-to-use-the-property-grid-in-the-wpf-diagramsfdiagram)
 
 {% endseealso %}

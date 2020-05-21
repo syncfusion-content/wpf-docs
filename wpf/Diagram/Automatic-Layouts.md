@@ -178,7 +178,7 @@ diagram.DataSourceSettings = new DataSourceSettings()
 
 ## Defining layout
 
-You can use the [LayoutManager.Layout](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager~Layout.html "LayoutManager.Layout") property to specify any one of the layouting algorithm.
+You can use the [LayoutManager.Layout](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager~Layout.html "LayoutManager.Layout") property to specify any one of the layouting algorithm.
 
 {% tabs %}
 {% highlight xaml %}
@@ -222,7 +222,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ## Updating layout
 
-The [RefreshFrequency](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager~RefreshFrequency.html) property of LayoutManager is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved, or resized. Also, you can decide when the nodes should be arranged for every diagram load or only for the first load. Find the description for each condition in the following table.
+The [RefreshFrequency](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager~RefreshFrequency.html) property of LayoutManager is used to re-arrange the nodes in the diagram area when a node is added, deleted, moved, or resized. Also, you can decide when the nodes should be arranged for every diagram load or only for the first load. Find the description for each condition in the following table.
 
 | Refresh Frequencies | Description|
 | --- | --- |
@@ -272,7 +272,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ### Customize tree orientation in layout
 
-[Orientation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Orientation.html) of `DirectedTreeLayout` is used to arrange the tree layout based on the direction. Orientation is only valid for hierarchical and organization layout. The default value for orientation is TopToBottom. The different orientation types are defined in the following table:
+[Orientation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Orientation.html) of `DirectedTreeLayout` is used to arrange the tree layout based on the direction. Orientation is only valid for hierarchical and organization layout. The default value for orientation is TopToBottom. The different orientation types are defined in the following table:
 
 | Orientation Type | Description |
 |---|---|---|
@@ -302,7 +302,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ### Avoiding connector segment overlapping in layout
 
-The [AvoidSegmentOverlapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~AvoidSegmentOverlapping.html) property of `DirectedTreeLayout` is used to decide whether segment of each connector from a single parent is distributed automatically or not. It is only valid for hierarchical and multi-parent layout.
+The [AvoidSegmentOverlapping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~AvoidSegmentOverlapping.html) property of `DirectedTreeLayout` is used to decide whether segment of each connector from a single parent is distributed automatically or not. It is only valid for hierarchical and multi-parent layout.
 
 {% tabs %}
 {% highlight xaml %}
@@ -326,7 +326,7 @@ diagram.LayoutManager = new LayoutManager()
 
 ### Customize margin in layout
 
-The [Margin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase~Margin.html) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
+The [Margin](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase~Margin.html) property of `DirectedTreeLayout` is used to provide space between the bounds of the tree layout to the diagram. The default margin value is `50`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -352,7 +352,7 @@ diagram.LayoutManager = new LayoutManager()
 
 The hierarchical tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root.
 
-To arrange the nodes in hierarchical structure, specify the [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType") as hierarchical tree.
+To arrange the nodes in hierarchical structure, specify the [LayoutType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType") as hierarchical tree.
 
 {% tabs %}
 {% highlight xaml %}
@@ -442,13 +442,13 @@ diagram.LayoutManager = new LayoutManager()
 
 ![HierarchicalLayout](Automatic-Layouts_images/Automatic-Layouts_img8.png)
 
-Please find the [HierarchicalTree layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Hierarchical%20Tree) to depict this layout.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Hierarchical%20Tree)
 
 ## Organization layout 
 
 An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, type should be set to LayoutType.Organization in `DirectedTreeLayout`.
 
-To arrange the nodes in organization structure , specify the [LayoutType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType") as Organization.
+To arrange the nodes in organization structure , specify the [LayoutType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout~Type.html "LayoutType") as Organization.
 
 {% tabs %}
 {% highlight xaml %}
@@ -671,7 +671,7 @@ diagram.LayoutManager = new LayoutManager()
 
 You can change the chart type and orientation of organization layout by using the GetLayoutInfo event of the SfDiagram. This event will fire for each time when an organization layout gets updated. Default chart type is Alternate and default orientation is Vertical.
 
-For GetLayoutInfo, refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~GetLayoutInfo_EV.html "GetLayoutInfo").
+For GetLayoutInfo, refer to, [GetLayoutInfo](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.IGraphInfo~GetLayoutInfo_EV.html "GetLayoutInfo").
 
 **Event Arguments:**
 
@@ -746,7 +746,7 @@ private void MainWindow_GetLayoutInfo(object sender, LayoutInfoArgs args)
 
 ![Organization Layout with Assistant](Automatic-Layouts_images/Automatic-Layouts_img10.png)
 
-Find the [Organization Tree layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Organization%20Chart) to depict this layout.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Organization%20Chart)
 
 ### How to create a parent - child relation with dropped nodes from stencil
 
@@ -807,13 +807,13 @@ private void MainWindow_ItemDropEvent(object sender, ItemDropEventArgs args)
 
 ![Organization Layout from stencil](Automatic-Layouts_images/AutomaticLayout_Gif1.gif)
 
-Please find the [Demo sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/OrgChart_with_drag_and_dropped_nodes-1402243198) to depict this support.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/OrgChart%20with%20drag%20and%20dropped%20nodes)
 
 ## Radial-Tree layout
 
 The Radial-Tree layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radically around the child nodes.  
 
-The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout as the Radial-Tree Layout positions the nodes based on the [LayoutRoot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout~LayoutRoot.html "LayoutRoot").
+The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout as the Radial-Tree Layout positions the nodes based on the [LayoutRoot](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.RadialTreeLayout~LayoutRoot.html "LayoutRoot").
 
 {% tabs %}
 {% highlight xaml %}
@@ -961,11 +961,11 @@ diagram.LayoutManager = new LayoutManager()
 
 ![RadialLayout](Automatic-Layouts_images/Automatic-Layouts_img9.png)
 
-Please find [RadialTree Layout sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Radial%20Tree) to depict this layout.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Radial%20Tree)
 
 ### Customize Bounds in layout
 
-The [Bounds](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase~Bounds.html) Property of `RadialTreeLayout` is used to define the region where the layout to be rendered based on its root. It is valid only for `RadialTreeLayout`.
+The [Bounds](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Layout.LayoutBase~Bounds.html) Property of `RadialTreeLayout` is used to define the region where the layout to be rendered based on its root. It is valid only for `RadialTreeLayout`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1382,4 +1382,9 @@ layoutManager.Layout = new FlowchartLayout()
 {% endhighlight %}
 {% endtabs %}
 
-Please find [Flowchart sample](https://github.com/syncfusion/wpf-demos/tree/master/Diagram/Automatic%20Layout/Flowchart%20Layout) to depict this support.
+[View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Automatic%20Layout/Flowchart%20Layout)
+
+## See Also
+ 
+* [How to create parent and child relationship by drag and drop nodes?](https://www.syncfusion.com/kb/11401/how-to-create-parent-and-child-relationship-by-drag-and-drop-nodes-in-wpf-diagramsfdiagram)
+* [How to show assistants to the parent node of the organization layout?](https://www.syncfusion.com/kb/10183/how-to-show-assistants-to-the-parent-node-of-the-organization-layout-in-wpf)
