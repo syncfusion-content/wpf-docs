@@ -129,14 +129,13 @@ using Syncfusion.Windows.Edit;
 
 {% highlight C# %}
 
-        public MainWindow()
-        {
-            InitializeComponent();
-
-            //Initializing EditControl and setting necessary property values.
-            EditControl editControl = new EditControl() {Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
-            this.Content = editControl;
-        }
+public MainWindow()
+{
+        InitializeComponent();
+        //Initializing EditControl and setting necessary property values.
+        EditControl editControl = new EditControl() {Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
+        this.Content = editControl;
+}
 
 {% endhighlight %}
 

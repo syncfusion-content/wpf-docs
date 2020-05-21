@@ -24,17 +24,15 @@ The following functions enables text navigation in the Syntax Editor in terms of
 
 {% highlight C# %}
 
+//To move cursor to previous index
 this.editControl.MoveToPreviousIndex();
-
-this.editControl.MoveToNextIndex();
 
 {% endhighlight %}
 
 {% highlight VB %}
 
+//To move cursor to previous index
 Me.editControl.MoveToPreviousIndex()
-
-Me.editControl.MoveToNextIndex()
 
 {% endhighlight %}
 
@@ -53,16 +51,14 @@ The following functions enables text navigation in the Syntax Editor in terms of
 
 {% highlight C# %}
 
+//To move cursor to next word
 this.editControl.MoveToNextWord();
-
-this.editControl.MoveToPreviousWord();
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Me.editControl.MoveToNextWord()
-
+//To move cursor to next word
 Me.editControl.MoveToPreviousWord()
 
 {% endhighlight %}
@@ -85,25 +81,15 @@ The following functions enables text navigation in the Syntax Editor in terms of
 
 {% highlight C# %}
 
+//To move cursor to next line
 this.editControl.MoveToNextLine();
-
-this.editControl.MoveToPreviousLine();
-
-this.editControl.MoveToLineStart();
-
-this.editControl.MoveToLineEnd();
 
 {% endhighlight %}
 
 {% highlight VB %}
 
+//To move cursor to next line
 Me.editControl.MoveToNextLine()
-
-Me.editControl.MoveToPreviousLine()
-
-Me.editControl.MoveToLineStart()
-
-Me.editControl.MoveToLineEnd()
 
 {% endhighlight %}
 
