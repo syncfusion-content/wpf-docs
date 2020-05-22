@@ -7,7 +7,7 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Axis in WPF 3D Charts (SfChart3D)
+# Axis in WPF 3D Chart (SfChart3D)
 
 [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis.html#) is used to locate a data point inside the chart area. Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis and a horizontal (X) axis. 
 

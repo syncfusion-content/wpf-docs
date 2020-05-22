@@ -71,19 +71,19 @@ The following code example demonstrates the basic customization of symbol size a
 
 {% highlight xaml %}
 
-        <chart:ColumnSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
+        <chart:LineSeries3D ItemsSource="{Binding CategoricalData}" XBindingPath="Year"
             YBindingPath="Plastic">
-            <chart:ColumnSeries3D.AdornmentsInfo>
+            <chart:LineSeries3D.AdornmentsInfo>
                 <chart:ChartAdornmentInfo3D AdornmentsPosition="Top" ShowMarker="True" SymbolHeight="15" SymbolWidth="15" 
                           SymbolInterior="Brown" SymbolStroke="DarkGray" Symbol="Triangle" />
-            </chart:ColumnSeries3D.AdornmentsInfo>
-        </chart:ColumnSeries3D>  
+            </chart:LineSeries3D.AdornmentsInfo>
+        </chart:LineSeries3D>  
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        ColumnSeries3D series = new ColumnSeries3D()
+        LineSeries3D series = new LineSeries3D()
             {
                 ItemsSource = new CategoryDataViewModel().CategoricalData,
                 XBindingPath = "Year",
