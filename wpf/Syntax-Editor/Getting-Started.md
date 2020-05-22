@@ -157,7 +157,7 @@ The [DocumentSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Ed
 
 {% highlight XAML %}
 
-<sfedit:EditControl x:Name="editControl" DocumentSource="C:\Content.txt" ShowLineNumber="False" EnableOutlining="False"/>
+<syncfusion:EditControl x:Name="editControl" DocumentSource="C:\Content.txt" ShowLineNumber="False" EnableOutlining="False"/>
 
 {% endhighlight %}
 
@@ -253,7 +253,7 @@ The [DocumentLanguage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.
 
 {% highlight XAML %}
 
-<sfedit:EditControl x:Name="editControl" DocumentLanguage="CSharp" DocumentSource="C:\Source.cs" FontSize="13"/>
+<syncfusion:EditControl x:Name="editControl" DocumentLanguage="CSharp" DocumentSource="C:\Source.cs" FontSize="13"/>
 
 {% endhighlight %}
 

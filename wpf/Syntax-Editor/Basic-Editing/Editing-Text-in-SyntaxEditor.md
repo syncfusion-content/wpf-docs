@@ -91,8 +91,8 @@ If <kbd>ENTER</kbd> key is pressed when the [IndentationOptions](https://help.sy
 
 {% highlight XAML %}
 
-<sfedit:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" TabSpaces="10" IndentingOptions="None" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
-</sfedit:EditControl>
+<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" TabSpaces="10" IndentingOptions="None" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
+</syncfusion:EditControl>
 
 {% endhighlight %}
 
@@ -117,8 +117,8 @@ When the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Sync
 
 {% highlight XAML %}
 
-<sfedit:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" TabSpaces="10" IndentingOptions="Smart" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
-</sfedit:EditControl>
+<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" TabSpaces="10" IndentingOptions="Smart" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
+</syncfusion:EditControl>
 
 {% endhighlight %}
 
@@ -142,8 +142,8 @@ When the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Sync
 
 {% highlight XAML %}
 
-<sfedit:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" TabSpaces="10" IndentingOptions="Block" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
-</sfedit:EditControl>
+<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" TabSpaces="10" IndentingOptions="Block" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
+</syncfusion:EditControl>
 
 {% endhighlight %}
 
