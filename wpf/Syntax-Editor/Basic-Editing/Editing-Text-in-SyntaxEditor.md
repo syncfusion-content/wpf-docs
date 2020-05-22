@@ -85,7 +85,7 @@ The Indentation can be performed using IndentationOption by the following values
 * Block
 
 #### IndentationOptions (None)
-If Enter is pressed when the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IndentingOptions.html) is set to None, the text will not indent.
+If <kbd>ENTER</kbd> key is pressed when the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IndentingOptions.html) is set to None, the text will not indent.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ If Enter is pressed when the [IndentationOptions](https://help.syncfusion.com/cr
 ![IndentingOption as None](Editing-Text-in-EditControl_images/EditControl_IndentingOption_None.gif)
 
 #### IndentationOptions (Smart)
-When the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IndentingOptions.html) is set to Smart, the next line is indented by one tab size from the first column of the previous line on pressing Enter.
+When the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IndentingOptions.html) is set to Smart, the next line is indented by one tab size from the first column of the previous line on pressing <kbd>ENTER</kbd> key.
 
 
 {% tabs %}
@@ -136,7 +136,7 @@ When the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Sync
 ![IndentingOption as Smart](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Smart.gif)
 
 #### IndentationOptions (Block)
-When the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IndentingOptions.html) is set to Block, the next line begins at the same column as the previous line on pressing the ENTER key.
+When the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IndentingOptions.html) is set to Block, the next line begins at the same column as the previous line on pressing the <kbd>ENTER</kbd> key.
 
 {% tabs %}
 
@@ -162,7 +162,7 @@ When the [IndentationOptions](https://help.syncfusion.com/cr/cref_files/wpf/Sync
 
 ### TabSpaces in EditControl
 
-[EditControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl_members.html) supports changing the number of spaces to be added in editor when <kbd>TAB</kbd> or <kbd>SPACE</kbd> key is pressed. By pressing any of these keys, the appropriate number of tabs or spaces will be added to the beginning of each line in the selected block.You can also set the tab size to the desired number of spaces by using the [TabSpaces](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~TabSpaces.html) property in the [EditControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl_members.html). By default, the TabSpace property value is set to 4.
+[EditControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl_members.html) supports changing the number of spaces to be added in editor when <kbd>TAB</kbd> key is pressed. The required number of tabs or spaces can be added to the beginning of each line in the selected block by using the [TabSpaces](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~TabSpaces.html) property in the EditControl. By default, the TabSpace property value is set to 4.
 
 {% tabs %}
 
