@@ -9,11 +9,11 @@ documentation: ug
 
 # AutoComplete and filtering 
 
-The AutoComplete functionality provides the several modes of suggestions while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that it can be choose from the different options.
+The AutoComplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that it can choose from the different options.
 
 ## AutoComplete source
 
-The TextBoxExt control can be populated with a predefined list of items, which will assist while typing. It can be choose one item from the filtered list.
+The `TextBoxExt` control can be populated with a predefined list of items, which will assist while typing. It can choose one item from the filtered list.
 
 
 {% tabs %}
@@ -54,9 +54,9 @@ The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Sf
 
 N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the AutoComplete modes will be provided in the next section.
 
-## Customize using ItemTemplate
+## Customize using the ItemTemplate
 
-The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteItemTemplate.html) helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list item.
+The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteItemTemplate.html) helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list items.
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,12 +85,12 @@ The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syn
 
 ![ItemTemplate](AutoComplete_and_filtering_images/ItemTemplate.png)
 
-Drop down list with image
+Drop-down list with image
 {:.caption}
 
 ## Filtering options
 
-The phenomenon of string comparison for filtering suggestions can be changed by using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionMode.html) property. The default filtering strategy is “StartsWith” and is case-insensitive.
+The phenomenon of string comparison for filtering suggestions can be changed using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionMode.html) property. The default filtering strategy is “StartsWith” and it is case-insensitive.
 
 <table>
 <tr>
@@ -116,7 +116,7 @@ Displays all matches that begins with the typed characters in the control. This 
 StartsWithCaseSensitive
 </td>
 <td>
-Displays all matches that starts with the typed characters in the control. This strategy is case-sensitive.
+Displays all matches that begins with the typed characters in the control. This strategy is case-sensitive.
 </td>
 </tr>
 <tr>
@@ -124,7 +124,7 @@ Displays all matches that starts with the typed characters in the control. This 
 StartsWithOrdinal
 </td>
 <td>
-The control returns all possible matches starting with the typed text based on the OrdinalIgnoreCase.
+The control returns all possible matches that begins with the typed text based on the OrdinalIgnoreCase.
 </td>
 </tr>
 <tr>
@@ -132,7 +132,7 @@ The control returns all possible matches starting with the typed text based on t
 StartsWithOrdinalCaseSensitive
 </td>
 <td>
-The control returns all possible matches starting with the typed text based on the Ordinal, which is case sensitive.
+The control returns all possible matches that begins with the typed text based on the Ordinal, which is case-sensitive.
 </td>
 </tr>
 <tr>
@@ -148,7 +148,7 @@ Displays all matches that contains typed characters in the control. This strateg
 ContainsCaseSensitive
 </td>
 <td>
-The control returns all possible matches that contains the typed text which is culture and case-sensitive.
+The control returns all possible matches that contains the typed text, which is culture and case-sensitive.
 </td>
 </tr>
 <tr>
@@ -186,7 +186,7 @@ Displays all words that completely matches the typed characters in the control. 
 EqualsOrdinal
 </td>
 <td>
-The control returns all possible matches that equals the text typed based on the OrdinalIgnoreCase.
+The control returns all possible matches that equals the typed text based on the OrdinalIgnoreCase.
 </td>
 </tr>
 <tr>
@@ -286,7 +286,7 @@ Minimum Prefix Length case
 
 ## Working with case sensitivity
 
-[IgnoreCase](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html) option allows the control to filter suggestions by ignoring the case. The default value is false.
+[IgnoreCase](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html) option allows the control to filter the suggestions by ignoring the case. The default value is false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -308,9 +308,9 @@ Minimum Prefix Length case
 Ignore Case
 {:.caption}
 
-## Showing image in token and dropdown 
+## Showing image in token and drop-down 
 
-To show the image in token using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property and show the image in dropdown by the way of AutoCompleteItemTemplate support. 
+To show the image in token using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property and show the image in drop-down by the way of AutoCompleteItemTemplate support. 
 
 {% tabs %}
 {% highlight xaml %}
