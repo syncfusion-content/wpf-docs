@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection Range in WPF CalendarEdit| Syncfusion
-description: This section explains how to set a selection range to select a date in within the particular range.
+description: Learn about selection range support in Syncfusion WPF CalendarEdit control and more details about the control features.
 platform: wpf
 control: CalendarEdit
 documentation: ug
