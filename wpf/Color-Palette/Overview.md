@@ -15,7 +15,7 @@ documentation: ug
 
 ## Key features
 
-Color Swatches – You can choose different color items from the diffrent swatches colors.
+Color Swatches – You can choose different color items from the different swatches colors.
 
 SelectedColor – Returns the currently selected color.
 

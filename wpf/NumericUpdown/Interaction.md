@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Interaction with WPF UpDown control | Syncfusion
-description: This section explains about keyboard and mouse interaction in WPF UpDown control.
+description: Learn about keyboard and mouse interaction support in Syncfusion WPF NumericUpdown control and more details about the control features.
 platform: wpf
 control: UpDown
 documentation: ug
 ---
 
-# Interaction
+# Interaction in WPF NumericUpdown
 
 This section explains about how to change the value by using mouse and keyboard in WPF [UpDown](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.UpDown.html) control.
 

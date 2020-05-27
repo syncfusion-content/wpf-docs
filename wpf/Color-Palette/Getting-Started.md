@@ -62,7 +62,7 @@ To add the `ColorPalette` manually in XAML, follow these steps:
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette added  by xaml code](Getting-Started_images/ColorPalette_img.png)
+![ColorPalette added by xaml code](Getting-Started_images/ColorPalette_img.png)
 
 ## Adding WPF ColorPalette via C#
 
@@ -95,7 +95,7 @@ SfColorPalette colorPalette = new SfColorPalette();
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPalette added by C# code](Getting-Started_images/ColorPalette_img.png)
+![ColorPalette added by code behind](Getting-Started_images/ColorPalette_img.png)
 
 N> View [Sample]() in GitHub
 

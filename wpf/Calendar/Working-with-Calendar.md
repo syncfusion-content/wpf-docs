@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Calendar | CalendarEdit | WPF | Syncfusion
-description: working with calendar
+title: Working with Calendar in WPF CalendarEdit | Syncfusion
+description: This section explains how to use calendar and what are the features available in the WPF CalendarEdit 
 platform: wpf
 control: CalendarEdit
 documentation: ug

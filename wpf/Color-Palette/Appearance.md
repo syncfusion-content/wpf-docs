@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About WPF SfColorPalette Control | Syncfusion
-description: This page includes a brief description about the SfColorPalette UI customization options.
+description: Learn about Appearance support in Syncfusion WPF SfColorPalette control and more details about the control features.
 platform: wpf
 control: SfColorPalette
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started Wwith WPF DocumentContainer | Syncfusion
-description: This section discusses how to created tab groups and explains its basic features and structure.
+description: Learn about creating tab groups support in Syncfusion WPF DocumentContainer control and more details about the control features.
 platform: wpf
 control: DocumentContainer
 documentation: ug
 ---
 
-# Creating tab groups
+# Creating tab groups in WPF DocumentContainer
 
 you can create tab groups for the tabitem of TDI mode [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) by dragging and also using the options in context menu items.
 

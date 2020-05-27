@@ -6,7 +6,7 @@ platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Auto Hide Window
+# Auto Hide Window in WPF DockingManager
 
 AutoHide window is one of the state in the DockingManager. To enable Auto hidden for DockingManager's children, set its `State` value as `AutoHidden`.
 
