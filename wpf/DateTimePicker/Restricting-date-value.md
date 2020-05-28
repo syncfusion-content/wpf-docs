@@ -210,7 +210,7 @@ private void DateTimeEdit_Loaded(object sender, RoutedEventArgs e) {
 
 ![Block particular dates in WPF DateTimeEdit](Maximum-and-Minimum-Value_images/BlackOutDays.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/BlackOutdates) in GitHub
 
 ## ReadOnly 
 

@@ -311,4 +311,4 @@ You can differentiate the particular day from other days by setting that date va
 
 ![Custom appearance for the particular Day cell](Working-with-Calendar_images/SpecialDays.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/SpecialDays) in GitHub

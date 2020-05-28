@@ -41,8 +41,6 @@ this.Content = calendarEdit;
 
 You can restrict the user to select the dates within some range by blocking the particular dates in the `CalendarEdit`. You can also block the more date ranges by adding that date ranges into the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDates.html) collection.
 
-
-
 {% tabs %}
 {% highlight xaml %}
 
@@ -63,4 +61,4 @@ You can restrict the user to select the dates within some range by blocking the 
 
 ![Block particular dates in WPF CalendarEdit](Selecting-Multiple-Dates_images/BlackOutDays.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/Blackoutdates) in GitHub

@@ -97,7 +97,7 @@ SfColorPalette colorPalette = new SfColorPalette();
 
 ![ColorPalette added by code behind](Getting-Started_images/ColorPalette_img.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding) in GitHub
 
 ## Select a Color
 
@@ -105,7 +105,7 @@ You can select any color by clicking the respective color item in the `ColorPale
 
 ![Select a color from the ColorPalette](Getting-Started_images/ColorPalette_SelectedColor.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding) in GitHub
 
 ## Binding a selected color
 
@@ -155,7 +155,7 @@ public class ColorToSolidColorBrushValueConverter : IValueConverter {
 
 ![Binding a selected color in ColorPalette](Getting-Started_images/Binding.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding) in GitHub
 
 ## Navigate to the list of swatches
 
@@ -167,4 +167,4 @@ You can navigate and select a different colors from the different swatches by cl
 
 ![Navigate and changes the color swatches in ColorPalette](Getting-Started_images/Navigate_swatches.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding) in GitHub

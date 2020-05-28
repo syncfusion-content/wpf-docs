@@ -32,7 +32,7 @@ SfColorPalette.Foreground = Brushes.Red;
 
 ![ColorPalette with Red foreground](Appearance_images/Appearance_Foreground.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/Appearance) in GitHub
 
 ## Setting the Background
 
@@ -55,7 +55,7 @@ SfColorPalette.Background = Brushes.Red;
 
 ![ColorPalette with Red background](Appearance_images/Appearance_Background.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/Appearance) in GitHub
 
 ## Change flow direction
 
@@ -78,4 +78,4 @@ SfColorPalette.FlowDirection = FlowDirection.RightToLeft;
 
 ![ColorPalette with RightToLeft flow direction](Appearance_images/FlowDirection_RightToLeft.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/Appearance) in GitHub

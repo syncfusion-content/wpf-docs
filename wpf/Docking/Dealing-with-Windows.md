@@ -1590,5 +1590,5 @@ private void SyncDockingManager_PreviewDockHints(object sender, PreviewDockHints
 ### OuterDockAbility:
 ![OuterDockability changed at runtime](Dealing-with-Windows_images/OutterDockability.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/PreviewDockHints) in GitHub
 

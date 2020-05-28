@@ -563,7 +563,7 @@ SyncDockingManager.IsAnimationEnabledOnMouseOver = false;
 
 {% endtabs %}
 
-## Allow or restrict Dragging auto hide window
+## Allow or restrict dragging the AutoHide Window
 
 You can allow dragging of the auto hide window in the `DockingManager` by using the [CanDragAutoHidden](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanDragAutoHidden.html) property value as `true`. You can restrict it by setting the `CanDragAutoHidden` property value as `false`. The default value of `CanDragAutoHidden` property is `false`.
 
@@ -612,7 +612,7 @@ dockingManager.Children.Add(AutoHideWindow2);
 
 ![Auto hide window dragging restricted](Auto-Hide-Window_images/RestrictDragAutoHideItem.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/AutoHideWindow-Dragging) in GitHub
 
 ## Pinning / UnPinning All Window
 
