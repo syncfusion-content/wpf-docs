@@ -15,7 +15,7 @@ This section explains how to change the time value and time formats in the WPF [
 
 ## Date, hour and minute field navigation
 
-If you want to manually change the day, hour or minute values, before that you navigate to the respective field by using the mouse or move `Left-Right` keys in the keyboard.
+By default, the focus field will be navigated automatically after the value has been validated to the corresponding field.If you want to manually change the day, hour or minute values, before that you navigate to the respective field by using the mouse or move the `Left-Right` keys in the keyboard.
 
 ![Date, hour and minute field navigation in TimeSpanEdit](Deals-with-TimeSpanEdit_images/Time_field.gif)
 

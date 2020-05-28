@@ -173,6 +173,45 @@ private void DateTimeEdit_MinDateTimeChanged(DependencyObject d, DependencyPrope
 
 {% endtabs %}
 
+## Block particular dates 
+
+You can restrict the user to select the date within some range by blocking the particular date in the `DateTimeEdit`. If you try to set the blackout dates as the selected datetime through editing or when pressing down arrow, it will reset the previous valid date from `StartDate` of blackout dates in `DateTimeEdit`. If you try to set the blackout dates as the selected datetime  by pressing down arrow, it will reset the next valid date from `EndDate` of blackout dates in `DateTimeEdit`.
+
+N> If you try to set the `DateTime` value which contained in blackout dates collection or  try to add the selected `DateTime` value in blackout dates collection, its throws the `Specified argument was out of the range of valid values`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DateTimeEdit Loaded="DateTimeEdit_Loaded" 
+                         Name="dateTimeEdit"/>
+
+{% endhighlight  %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the blockout days
+private void DateTimeEdit_Loaded(object sender, RoutedEventArgs e) {
+    //Setting start and end range for blocking dates
+    DateTime StartDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+    DateTime EndDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day - 2);
+    Syncfusion.Windows.Controls.CalendarDateRange blackOutDays = new Syncfusion.Windows.Controls.CalendarDateRange() 
+    {
+        Start = StartDate, 
+        End = EndDate
+    };
+    Syncfusion.Windows.Controls.Calendar calendar = dateTimeEdit.DateTimeCalender as Syncfusion.Windows.Controls.Calendar;
+    calendar.BlackoutDates.Add(blackOutDays);
+}
+
+{% endhighlight  %}
+{% endtabs %}
+
+![Block particular dates in WPF DateTimeEdit](Maximum-and-Minimum-Value_images/BlackOutDays.gif)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/BlackOutdates) in GitHub
+
 ## ReadOnly 
 
 The DateTimeEdit cannot allow the user input, edits when **IsReadOnly** property is sets to true. However, value can be changed programmatically in readonly mode.
