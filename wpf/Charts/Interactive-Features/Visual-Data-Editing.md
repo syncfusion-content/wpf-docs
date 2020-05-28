@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-## Visual data editing in WPF Charts (SfChart)
+# Visual data editing in WPF Charts (SfChart)
 
 SfChart has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
 

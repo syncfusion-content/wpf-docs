@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 3D Charts| SfChart | Wpf | Syncfusion
+title: WPF 3D Charts (SfChart3D) Overview | SfChart | Wpf | Syncfusion
 description: Learn how to create the 3D charts and their features such as types, axis, data binding, dynamic rotation, interactivity and depth axis.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# WPF 3D Chart (SfChart3D) Overview 
+# WPF 3D Charts (SfChart3D) Overview 
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 
