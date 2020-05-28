@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Calendar | CalendarEdit | WPF | Syncfusion
-description: working with calendar
+title: Working with Calendar in WPF CalendarEdit | Syncfusion
+description: This section explains how to use calendar and what are the features available in the WPF CalendarEdit 
 platform: wpf
 control: CalendarEdit
 documentation: ug
@@ -276,3 +276,39 @@ Run the code. The output is as follows:
 ![Date range](Working-with-Calendar_images/Working-with-Calendar_img9.jpeg)
 
 ![Date range](Working-with-Calendar_images/Working-with-Calendar_img10.jpeg)
+
+## Highlight the particular Day cell
+
+You can differentiate the particular day from other days by setting that date value to the [SpecialDate.Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~Date.html) property and adding `SpecialDate.Date` into the [SpecialDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SpecialDates.html) collection. You can use the [SpecialDate.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~CellTemplate.html) property to customize the `SpecialDate` day cell appearance. 
+
+{% tabs %}
+{% highlight XAML %}
+
+<Window.Resources>
+    <DataTemplate x:Key="special_date">
+        <TextBlock Text="{Binding Day}"
+                   Background="Yellow"/>
+    </DataTemplate>
+</Window.Resources>
+
+<Grid>
+    <syncfusion:CalendarEdit Name="calendarEdit">
+        <syncfusion:CalendarEdit.SpecialDates>
+
+            <!--Adding special dates into SpecialDates collection for highlight-->
+            <syncfusion:SpecialDate Date="05/11/2020"
+                                    CellTemplate="{StaticResource special_date }"/>
+            <syncfusion:SpecialDate Date="05/22/2020" 
+                                    CellTemplate="{StaticResource special_date }"/>
+            <syncfusion:SpecialDate Date="05/25/2020" 
+                                    CellTemplate="{StaticResource special_date }"/>
+        </syncfusion:CalendarEdit.SpecialDates>
+    </syncfusion:CalendarEdit>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Custom appearance for the particular Day cell](Working-with-Calendar_images/SpecialDays.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/SpecialDays) in GitHub
