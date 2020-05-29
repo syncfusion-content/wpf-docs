@@ -7,9 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Adornments in WPF Charts (SfChart)
+# Data Markers in WPF Charts (SfChart)
 
-Chart adornments are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
+Chart adornments (Data Markers) are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 
 Each adornment can be represented by the following:
 

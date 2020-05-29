@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Positioning the Adornment in WPF Charts (SfChart)
+# Positioning the Data Markers in WPF Charts (SfChart)
 
 The positioning of adornments inside the series is defined using [`AdornmentPosition`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~AdornmentsPosition.html#) property. 
 
