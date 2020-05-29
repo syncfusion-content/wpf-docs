@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Viewing PDF Files 
+# Viewing PDF Files in WPF Pdf Viewer
 
 PDF Viewer allows you to easily open and view the PDF files interactively using the <b>Open</b> button in the built-in toolbar as well as from code behind using the available APIs.
 
