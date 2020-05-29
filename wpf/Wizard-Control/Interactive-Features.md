@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features | Wizard | wpf | Syncfusion
-description: interactive features
+title: Interactive Features of Wizard Control | Wizard | wpf | Syncfusion
+description: This section gives detailed description about the Interactive features available and their function in Wizard Control.
 platform: wpf
 control: Wizard
 documentation: ug
@@ -9,74 +9,32 @@ documentation: ug
 
 # Interactive Features
 
-This section illustrates the following interactive feature of Wizard control. 
+This section illustrates the following interactive feature of [Wizard Control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl.html). 
 
-## Adding Wizard Page to the Wizard Control
+## Popualating pages in Wizard Control
 
-You can add any number of wizard pages to the Wizard control. They are plenty of properties in the Wizard control that are used to customize the look and feel of the wizard page.
+The pages can be added to [Wizard Control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl.html) by following ways,
 
-To add a wizard page to the Wizard control, use the below code
+* Populating by Wizard Pages
+* Populating by Data Binding
+
+## Populating by Wizard Pages
+
+You can add any number of [wizard pages](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage.html) to the [Wizard Control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl.html) and there are plenty of properties in the Wizard control that are used to customize the appearance and function of the wizard pages.
 
 {%tabs%}
+
 {% highlight xaml %}
 
-
-
-
 <syncfusion:WizardControl Name="wizardControl">
-
-    <syncfusion:WizardPage Name="wizardPage"/>
-
+<syncfusion:WizardPage Name="wizardPage1"/>
+<syncfusion:WizardPage Name="wizardPage2"/>
 </syncfusion:WizardControl>
 {% endhighlight %}
 
 {% highlight C# %}
 
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
-
-WizardPage wizardPage = new WizardPage();
-
-wizardControl.Items.Add(wizardPage);  
-{% endhighlight %}
-{%endtabs%}
-
-
-
-![](Interactive-Features_images/Interactive-Features_img1.jpeg)
-
-
-
-
-
-To add two wizard pages to the Wizard control, refer the below code
-
-{%tabs%}
-{% highlight xaml %}
-
-
-
-
-<syncfusion:WizardControl Name="wizardControl">
-
-    <syncfusion:WizardPage Name="wizardPage1"/>
-
-    <syncfusion:WizardPage Name="wizardPage2"/>
-
-</syncfusion:WizardControl>
-{% endhighlight %}
-
-{% highlight C# %}
-
-
-
-
-WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage1 = new WizardPage();
 
@@ -85,19 +43,149 @@ WizardPage wizardPage2 = new WizardPage();
 wizardControl.Items.Add(wizardPage1);     
 
 wizardControl.Items.Add(wizardPage2);
+
+this.Content = wizardControl;
+
 {% endhighlight %}
 
 {%endtabs%}
 
-![](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![WizardControl FinalPage](Interactive-Features_images/Interactive-Features_img2.jpeg)
+
+## Populating by Data Binding
+
+Below steps will explain on how to add the Items through [ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl_members.html#) property of [Wizard Control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl.html).
+
+1.Create a Model class with the necessary properties.
+
+{% highlight C# %}
+
+public class Model : NotificationObject
+{
+private string title;
+
+public string Title
+{
+get
+{
+return title;
+}
+set
+{
+title = value;
+RaisePropertyChanged("Title");
+}
+}
+
+private string content;
+
+public string Content
+{
+get
+{
+return content;
+}
+set
+{
+content = value;
+RaisePropertyChanged("Description");
+}
+}     
+
+}
+
+{% endhighlight %}
+
+2.Create collection of PageItems in ViewModel class to populate pages.
+
+{% highlight C# %}
+
+private ObservableCollection<Model> items;
+
+public ObservableCollection<Model> PageItems
+{
+get
+{
+return items;
+}
+
+set
+{
+items = value;
+RaisePropertyChanged("PageItems");
+}
+
+}
+
+{% endhighlight %}
+
+3.Populate the PageItems collection as follows.
+
+{% highlight C# %}
+
+private void PopulatePageItems()
+{
+
+items.Add(new Model { Title = "XML Developer's Guide", Content = "An in-depth look at creating applications with XML."});
+
+items.Add(new Model { Title = "Midnight Rain", Content = "A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world."});
+
+items.Add(new Model { Title = "Oberon's Legacy", Content = "In post apocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London."});
+
+items.Add(new Model { Title = "Lover Birds", Content = "When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled."});
+
+items.Add(new Model { Title = "Science Fiction", Content = "After an inadvertent trip through a Heisenberg Uncertainty Device, James discovers the problems of being quantum."});
+
+}
+
+{% endhighlight %}
+
+4.Create a ViewModel instance and use it as DataContext for the Root Window.
+
+{% highlight XAML %}
+
+<Window.DataContext>
+ <local:ViewModel/>
+</Window.DataContext>    
+
+{% endhighlight %}
+
+5.Bind the PageItems collection to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl_members.html#) property of the WizardControl. Content of the WizardPage can be displayed using the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl_members.html#) property.
+
+{% highlight XAML %}
+
+<Window.DataContext>
+ <local:ViewModel/>
+</Window.DataContext>
+    
+<Window.Resources>
+    <Style x:Key="WizardPageStyle" TargetType="syncfusion:WizardPage">
+            <Setter Property="Title" Value="{Binding Title}"/>
+            <Setter Property="PageType" Value="Exterior"/>
+            <Setter Property="BannerImage" Value="/Images/W_O-BG.png"/>
+    </Style>
+</Window.Resources>
+    
+<Grid>
+<syncfusion:WizardControl x:Name="wizardcontrol" ItemContainerStyle="{StaticResource WizardPageStyle}" ItemsSource="{Binding PageItems}">
+    <syncfusion:WizardControl.ItemTemplate>
+        <DataTemplate>
+            <TextBlock Text="{Binding Content}" TextWrapping="Wrap"/>
+        </DataTemplate>
+    </syncfusion:WizardControl.ItemTemplate>
+</syncfusion:WizardControl>
+</Grid>
+
+{% endhighlight %}
+
+![DataBinding of WizardControl](Interactive-Features_images/data-binding_img1.png)
+
+N> [ViewSample in GitHub](https://github.com/SyncfusionExamples/Populating-WPF-wizard-control-by-DataBinding).
 
 
+### Selecting an Wizard Page 
 
-
-
-## Wizard Page
-
-`SelectedWizardPage` property is used to select the wizard page from the WizardControl. Since the type of SelectedWizardPage is WizardPage, binding is needed to set selected wizard page through XAML. The following code explains how to select the wizard page in XAML,
+[SelectedWizardPage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~SelectedWizardPage.html) property is used to select the wizard page from the WizardControl. Since the type of [SelectedWizardPage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~SelectedWizardPage.html) is WizardPage, binding is needed to set selected wizard page through XAML. The following code explains how to select the wizard page in XAML and in C#,
 
 {% tabs %}
 
@@ -121,19 +209,17 @@ wizardControl.Items.Add(wizardPage2);
 
 {% highlight C# %}
 
-// "grid" is the name of grid control
-
+//Initializing the Wizard control
 WizardControl wizardControl = new WizardControl();
 
-grid.Children.Add(wizardControl);
-
+//Creating Wizard pages
 WizardPage wizardPage1 = new WizardPage();
 
 WizardPage wizardPage2 = new WizardPage();
 
 WizardPage wizardPage3 = new WizardPage();
 
-wizardControl.Foreground = Brushes.SlateBlue;    
+wizardControl.Foreground = Brushes.SlateBlue;
 
 wizardPage1.Title = "Wizard Page1";
 
@@ -147,44 +233,36 @@ wizardControl.Items.Add(wizardPage2);
 
 wizardControl.Items.Add(wizardPage3);
 
-wizardControl.SelectedWizardPage = wizardPage2; 
+wizardControl.SelectedWizardPage = wizardPage2;
+
+this.Content = wizardControl;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![WizardControl MultiplePages](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 ### Title and Description
 
-You can set the title and description for the wizard page by using the Title and Description properties respectively.
-
-Use the following code snippet to set these properties.
+You can set the title and description for the [wizard page](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage.html) by using the [Title](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~Title.html) and [Description](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~Description.html) properties respectively.
 
 {%tabs%}
+
 {% highlight xaml %}
-
-
-
 
 <syncfusion:WizardControl Name="wizardControl">
 
-    <syncfusion:WizardPage Name="wizardPage" Foreground="Navy" Title="WizardPage1"
-
-Description="This is the first page of wizard" />
+<syncfusion:WizardPage Name="wizardPage" Foreground="Navy" Title="WizardPage1" Description="This is the first page of wizard" />
 
 </syncfusion:WizardControl>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();
 
@@ -194,48 +272,44 @@ wizardPage.Foreground = Brushes.Navy;
 
 wizardPage.Title = "WizardPage1";
 
-wizardPage.Description = "This is the first page of wizard"
+wizardPage.Description = "This is the first page of wizard";
+
+this.Content = wizardControl;
+
 {% endhighlight %}
+
 {%endtabs%}
 
-![](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![WizardPage with Title and Description](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
-### Wizard Page Type
+## Wizard Page Type
 
-You can set the type of the wizard page by using the PageType property. There are three types of wizard pages.
+You can set the type of the [WizardPage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage.html) by using the [PageType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~PageType.html) property. There are three types of wizard pages.
 
 * Blank
 * Interior
 * Exterior
 
+### Wizard Page as Blank
 
-
-Use the below code snippet to set the PageType as Blank.
+The [PageType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~PageType.html) with Blank has no content or control in it.
 
 {%tabs%}
+
 {% highlight xaml %}
-
-
-
 
 <syncfusion:WizardControl Name="wizardControl">
 
-    <syncfusion:WizardPage Name="wizardPage" PageType="Blank"/>
+<syncfusion:WizardPage Name="wizardPage" PageType="Blank"/>
 
 </syncfusion:WizardControl>
+
 {% endhighlight %}
-
-
 
 {% highlight C# %}
 
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();
 
@@ -243,131 +317,110 @@ wizardControl.Items.Add(wizardPage);
 
 wizardPage.PageType = WizardPageType.Blank;    
 
+this.Content = wizardControl;
+
 {% endhighlight %}
 
 {%endtabs%}
 
-![](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![WizardPageType](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
+### Wizard Page as Interior
 
-
-
-Use the following code snippet to set the PageType as Interior.
+The [PageType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~PageType.html) with Interior value has the BannerImage occupies the whole page.
 
 {%tabs%}
+
 {% highlight xaml %}
-
-
-
 
 <syncfusion:WizardControl Name="wizardControl">
 
-    <syncfusion:WizardPage Name="wizardPage" PageType="Interior"/>
+<syncfusion:WizardPage Name="wizardPage" PageType="Interior"/>
 
 </syncfusion:WizardControl>
 
 {% endhighlight %}
 
-
 {% highlight C# %}
 
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();
 
 wizardControl.Items.Add(wizardPage);
 
 wizardPage.PageType = WizardPageType.Interior;  
+
+this.Content = wizardControl;
+
 {% endhighlight %}
 
 {%endtabs%}
-Use the following code snippet to set the PageType as Exterior.
+
+![WizardPageType Interior](Interactive-Features_images/Interactive-Features_img10.png)
+
+### Wizard Page as Exterior
+
+The [PageType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~PageType.html) with Exterior value has the BannerImage occupies the left position of the page.
 
 {%tabs%}
+
 {% highlight xaml %}
-
-
-
 
 <syncfusion:WizardControl Name="wizardControl">
 
-    <syncfusion:WizardPage Name="wizardPage" PageType="Exterior"/>
+ <syncfusion:WizardPage Name="wizardPage" PageType="Exterior"/>
 
 </syncfusion:WizardControl>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();
 
 wizardControl.Items.Add(wizardPage);
 
-wizardPage.PageType = WizardPageType.Exterior;    
+wizardPage.PageType = WizardPageType.Exterior; 
+
+this.Content = wizardControl;
+
 {% endhighlight %}
 
 {%endtabs%}
-![](Interactive-Features_images/Interactive-Features_img6.jpeg)
+
+![WizardPageType Exterior](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
+## Navigation Buttons of Wizard Page
 
-
-{%seealso%}
-
-Minimum Width for the Banner Image on the Exterior Wizard Page, Minimum Height for the Interior Wizard Page Header
-
-{%endseealso%}
-
-### Navigation Buttons of Wizard Page
-
-This topic illustrates the following about Navigation buttons:
+This topic illustrates the following about Navigation buttons of Wizard page:
 
 * Enabling or Disabling the Navigation Buttons
 * Showing or Hiding the Navigation Buttons
 * Text for the Navigation Buttons
 
-
-
 #### Enabling or Disabling the Navigation Buttons
 
-You can enable or disable the Back, Cancel, Next and Finish navigation buttons in the wizard control and wizard page. This is done by using the BackEnabled, CancelEnabled, NextEnabled and FinishEnabled properties respectively.
-
-Here is the code snippet.
+You can enable or disable the Back, Cancel, Next and Finish navigation buttons in the wizard control and wizard page. This is done by using the [BackEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~BackEnabled.html), [CancelEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~CancelEnabled.html), [NextEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~NextEnabled.html) and [FinishEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~FinishEnabled.html) properties respectively.
 
 {%tabs%}
+
 {% highlight xaml %}
 
+<syncfusion:WizardControl Name="wizardControl" BackEnabled="True" FinishEnabled="True"NextEnabled="True" CancelEnabled="True">
 
-
-
-<syncfusion:WizardControl Name="wizardControl" BackEnabled="True" FinishEnabled="True"
-
-NextEnabled="True" CancelEnabled="True">
-
-    <syncfusion:WizardPage Name="wizardPage"/>
+<syncfusion:WizardPage Name="wizardPage"/>
 
 </syncfusion:WizardControl>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();           
 
@@ -381,46 +434,33 @@ wizardControl.FinishEnabled = true;
 
 wizardControl.CancelEnabled = true;  
 
+this.Content = wizardControl;
+
 {% endhighlight %}
+
 {%endtabs%}
 
-![](Interactive-Features_images/Interactive-Features_img7.jpeg)
-
-
-
+![Navigaton Buttons Enabling](Interactive-Features_images/Interactive-Features_img7.jpeg)
 
 #### Showing or Hiding the Navigation Buttons
 
-You can show or hide the Back, Cancel, Next, Help and Finish navigation buttons in the wizard control and wizard page. This is done by using the BackVisible, CancelVisible, NextVisible, HelpVisible and FinishVisible properties respectively. 
-
-To set these properties, refer the below code.
+You can show or hide the Back, Cancel, Next, Help and Finish navigation buttons in the wizard control and wizard page by using the [BackVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~BackVisible.html), [CancelVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~CancelVisible.html), [NextVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~NextVisible.html), [HelpVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~HelpVisible.html) and [FinishVisible](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardPage~FinishVisible.html) properties respectively. 
 
 {%tabs%}
 
 {% highlight xaml %}
 
+<syncfusion:WizardControl Name="wizardControl" BackVisible="False" NextVisible="True" CancelVisible="True" HelpVisible="True" FinishVisible="False">
 
-
-
-<syncfusion:WizardControl Name="wizardControl" BackVisible="False" NextVisible="True" 
-
-CancelVisible="True" HelpVisible="True" FinishVisible="False">
-
-    <syncfusion:WizardPage Name="wizardPage"/>
+<syncfusion:WizardPage Name="wizardPage"/>
 
 </syncfusion:WizardControl>
-{% endhighlight %}
 
+{% endhighlight %}
 
 {% highlight C# %}
 
-
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();
 
@@ -436,45 +476,34 @@ wizardControl.NextVisible = true;
 
 wizardControl.HelpVisible = true; 
 
+this.Content = wizardControl;
+
 {% endhighlight %}
 
 {%endtabs%}
 
-![](Interactive-Features_images/Interactive-Features_img8.jpeg)
-
-
+![Navigation Button visibility](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
 #### Text for the Navigation Buttons
 
-You can set custom text for the Back, Next, Finish, Help and Cancel navigation buttons in the Wizard control. This is done by using the BackText, NextText, FinishText, HelpText and CancelText properties as follows. 
-
+You can set custom text for the Back, Next, Finish, Help and Cancel navigation buttons in the Wizard control by using the [BackText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~BackText.html), [NextText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~NextText.html), [FinishText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~FinishText.html), [HelpText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~HelpText.html) and [CancelText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~CancelText.html) properties.
 
 {%tabs%}
+
 {% highlight xaml %}
 
+<syncfusion:WizardControl Name="wizardControl" BackText="Previous" HelpText="Help" CancelText="Exit" FinishText="Finish" NextText="Next">
 
-
-
-<syncfusion:WizardControl Name="wizardControl" BackText="Previous" 
-
-HelpText="Help" CancelText="Exit" FinishText="Finish" NextText="Next">
-
-    <syncfusion:WizardPage Name="wizardPage"/>
+<syncfusion:WizardPage Name="wizardPage"/>
 
 </syncfusion:WizardControl>
-
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();           
 
@@ -490,41 +519,38 @@ wizardControl.HelpText = "Help";
 
 wizardControl.FinishText = "Finish";
 
+this.Content = wizardControl;
+
 {% endhighlight %}
 
 {%endtabs%}
 
-![](Interactive-Features_images/Interactive-Features_img9.jpeg)
+![NavigationButton texts](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
-N> You can set custom text for the navigation buttons in the wizard control only. You cannot set custom text for the navigation buttons in the wizard page.
+N> You can set custom text for the navigation buttons in the wizard control but not for the navigation buttons in the wizard page.
 
 
-
-
-{%seealso%}
-
-Next Page and Previous Page Navigation
-
-{%endseealso%}
-
-### Working with Wizard Control
-
-This section contains the following topics:
-
-#### Next Page and Previous Page Navigation
+## Next Page and Previous Page Navigation
 
 You can set the navigation to the Next and Previous pages by using the NextPage and PreviousPage properties respectively. To set these properties, use the below code.
 
+{%tabs%}
+
+{% highlight xaml %}
+
+{% endhighlight %}
+
+<syncfusion:WizardControl Name="wizardControl" >
+<syncfusion:WizardPage Name="wizardPage1" Title="page1"  NextPage="{Binding ElementName=wizardPage4}"/>
+<syncfusion:WizardPage Name="wizardPage2" Title="page2" PreviousPage="{Binding ElementName=wizardPage3}"/>
+<syncfusion:WizardPage Name="wizardPage3" Title="page3"/>
+<syncfusion:WizardPage Name="wizardPage4" Title="page4"/>
+</syncfusion:WizardControl>
 
 {% highlight C# %}
 
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage1 = new WizardPage();
 
@@ -550,129 +576,74 @@ wizardPage1.NextPage = wizardPage3;
 
 wizardPage3.PreviousPage = wizardPage1;  
 
+this.Content = wizardControl;
+
 {% endhighlight %}
 
-{%seealso%}
+{%endtabs%}
 
-Navigation Buttons
+## Closing the Wizard Window
 
-{%endseealso%}
-
-#### Closing the Wizard Window
-
-You can close the Wizard control window by clicking the Cancel or Finish button by enabling the CloseWindowOnCancel or CloseWindowOnFinish properties respectively.
-
-To enable these properties, refer the below code
+You can close the Wizard control window by clicking the Cancel or Finish button by enabling the [FinishButtonClosesWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~FinishButtonClosesWindow.html) or [CancelButtonCancelsWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~CancelButtonCancelsWindow.html) properties respectively.
 
 {%tabs%}
+
 {% highlight xaml %}
 
-
-
-
-<syncfusion:WizardControl Name="wizardControl" CloseWindowOnCancel="True" CloseWindowOnFinish="True">
-
-    <syncfusion:WizardPage Name="wizardPage"/>
-
+<syncfusion:WizardControl Name="wizardControl" FinishButtonClosesWindow="True" CancelButtonCancelsWindow="True">
+<syncfusion:WizardPage Name="wizardPage"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
 
-
 {% highlight C# %}
 
-
-
-
 WizardControl wizardControl = new WizardControl();
-
-grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();
 
 wizardControl.Items.Add(wizardPage);
 
-wizardControl.CloseWindowOnCancel = true;
+wizardControl.CancelButtonCancelsWindow = true;
 
-wizardControl.CloseWindowOnFinish = true; 
+wizardControl.FinishButtonClosesWindow = true;
+
+this.Content = wizardControl;
+
 {% endhighlight %}
+
 {%endtabs%}
 
 ## Event for Next Button in Wizard Control  
 
-The Next Button event has been implemented in Wizard Control in order to do operations such as displaying a message box and making the thread to sleep before navigating to the next page.
+The Next Button event has been implemented in Wizard Control in order to do operations such as displaying a message box and making the thread to sleep before navigating to the next page. It can be implemented as shown in below code snippet for performing required operation when Next button is clicked.
 
-### Use Case Scenario
-
-Users can use this event to do valid code of operations such as displaying a message box and making the thread to sleep before navigating to the next page in Wizard Control.
-
-### Events
-
-<table>
-<tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-Next</td><td>
-The Next button is clicked in Wizard Control</td><td>
--</td><td>
-Routed Event</td><td>
--</td></tr>
-</table>
-
-
-### Adding Next Button Event to an Application 
-
-
-
-#### Use the following code snippet to define the Next Button Event for Wizard control:
-
-
+{% tabs %}
 
 {% highlight xaml %}
 
-
-
-		<syncfusion:WizardControl Name="wizardControl" 
-
-                                        Next="wizardControl_Next">
-
-<!-- Welcome page -->
-
-			<syncfusion:WizardPage Name="wizPage1"                           Title="Welcome to the Installation Setup Wizard" PageType="Exterior"                                     
-
-Description="This will install Software on your computer." BackVisible="False"
-
-CancelVisible="True" FinishVisible="False" HelpVisible="True">
-
-
-
-<StackPanel Orientation="Vertical">
-
-<TextBlock TextWrapping="Wrap" Margin="0,10,10,10" Text="It is recommended that you close all other applications before continuing."/>
-
-<TextBlock Margin="0,10,10,10" Text="Click Next to continue, or Cancel to exit Setup."/>
-
-<TextBlock Margin="0,10,10,10" Text="For more information, click Help."/>
-
-</StackPanel>
-
-
-
-</syncfusion:WizardPage>
-
-                          </syncfusion:WizardControl>
+<syncfusion:WizardControl Name="wizardControl" CancelEnabled="False" CancelVisible="False" Next="wizardControl_Next" FinishButtonClosesWindow="True" CancelButtonCancelsWindow="True" >
+<syncfusion:WizardPage Name="wizardPage1" Title="page1"  />
+<syncfusion:WizardPage Name="wizardPage2" Title="page2" />
+<syncfusion:WizardPage x:Name="wizardPage3" Title="page3"/>
+<syncfusion:WizardPage Name="wizardPage4" Title="page4"/>
+</syncfusion:WizardControl>
 
 {% endhighlight %}
 
-#### Samples Location
+{% highlight C# %}
 
-The samples are located in the following location:
+    private void wizardControl_Next(object sender, RoutedEventArgs e)
+        {
+            var obj = sender as WizardControl;
 
-[http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=WizardSample607850358.zip](http://www.syncfusion.com/uploads/redirect.aspx?&team=support&file=WizardSample607850358.zip)
+            if (obj.CancelVisible != true && obj.CancelEnabled != true)
+            {
+                obj.SelectedWizardPage = wizardPage2;
+            }
+        }
+
+{% endhighlight %}
+
+{%endtabs%}
 
