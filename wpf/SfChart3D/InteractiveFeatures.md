@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction| SfChart3D | Wpf | Syncfusion
+title: Interactive Features in WPF 3D Charts| SfChart3D | Wpf | Syncfusion
 description: Explains the interactive options such as dynamic rotation, segment selection, and dynamic segment explode for circular series in WPF Chart (SfChart3D)
 platform: wpf
 control: SfChart3D
@@ -18,11 +18,13 @@ documentation: ug
 The following code example illustrates how to enable the dynamic rotation:
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600"/>
 
 {% endhighlight %}
+
 {% endtabs %}
  
 ## Segment Selection
@@ -57,6 +59,7 @@ The following code example illustrates how to set the selection brush for indivi
                 Width=300,
                 Height=280
             };
+
             ColumnSeries3D series = new ColumnSeries3D()
             {
                 ItemsSource = new StockViewModel().DataPoints,
@@ -65,7 +68,9 @@ The following code example illustrates how to set the selection brush for indivi
                 SegmentSelectionBrush = new SolidColorBrush(Colors.SkyBlue),
                 SegmentSpacing = 0.5
             };
+            
             chart3D.Series.Add(series);
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -84,7 +89,7 @@ The following code example can be used to set series selection in a SfChart3D.
 
 {% highlight xaml %}
 
-     <chart:SfChart3D EnableRotation="True"  PerspectiveAngle="50" 
+            <chart:SfChart3D EnableRotation="True"  PerspectiveAngle="50" 
                                 EnableSeriesSelection="True" SeriesSelectedIndex="0"
                                  Rotation="29" Depth="100" Palette="BlueChrome" Width="300" Height="280">
           
@@ -101,7 +106,7 @@ The following code example can be used to set series selection in a SfChart3D.
 
 {% highlight c# %}
 
-            SfChart3D chart3D = new SfChart3D()
+        SfChart3D chart3D = new SfChart3D()
             {
                 EnableSeriesSelection=true,
                 EnableRotation=true,
@@ -113,7 +118,8 @@ The following code example can be used to set series selection in a SfChart3D.
                 Width=300,
                 Height=280
             };
-            ColumnSeries3D series = new ColumnSeries3D()
+
+        ColumnSeries3D series = new ColumnSeries3D()
             {
                 ItemsSource = new StockViewModel().Demands,
                 XBindingPath = "Category",
@@ -122,7 +128,7 @@ The following code example can be used to set series selection in a SfChart3D.
                 SegmentSpacing = 0.5
             };
 
-            ColumnSeries3D series1 = new ColumnSeries3D()
+        ColumnSeries3D series1 = new ColumnSeries3D()
             {
                 ItemsSource = new StockViewModel().Demands,
                 XBindingPath = "Category",
@@ -130,8 +136,9 @@ The following code example can be used to set series selection in a SfChart3D.
                 SeriesSelectionBrush = new SolidColorBrush(Colors.SkyBlue),
                 SegmentSpacing = 0.5
             };
-            chart3D.Series.Add(series);
-            chart3D.Series.Add(series1);
+
+        chart3D.Series.Add(series);
+        chart3D.Series.Add(series1);
 
 {% endhighlight %}
 

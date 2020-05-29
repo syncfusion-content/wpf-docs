@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series| SfChart | Wpf | Syncfusion
+title: Series in WPF 3D Charts (SfChart3D)| SfChart | Wpf | Syncfusion
 description: This section explains the different types of charts and its basic properties in WPF Chart (SfChart3D)
 platform: wpf
 control: SfChart3D
