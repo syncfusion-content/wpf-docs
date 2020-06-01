@@ -153,21 +153,45 @@ tabControlExt.TabItemLayout = TabItemLayoutType.MultiLine;
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ArranageTabs) in GitHub
 
 
-## Navigate using mouse and keys interaction
+## Navigate using mouse or keyboard
 
-You can navigate from one tab to any other tab by using the mouse click on the tab header. You also use the `Left-Arrow` and `Right-Arrow` key or `F2` key or `Ctrl + F2` key , to navigate the previous tab item or next tab item from the current tab item.
+You can navigate from one tab to any other tab by using the mouse click on the tab header. You can use the `Ctrl + Tab` key to navigate to the next tab item when control not in focused state. You also use the `Left-Arrow` and `Right-Arrow` key, to navigate the previous tab item or next tab item from the current tab item.
 
 ![Tab items selected by clicking the tab header](Tab-Item-Header_images/SelectItem.gif)
 
 ## Navigate using scroll button
 
-If you add more tab items, then some tab headers are collapsed. If you navigate to the collapsed tab items, click the scroll button which is placed in the top-right corner of the tab header panel. You can auto visible or hide the scroll button by using the [TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollButtonVisibility.html) property value as `Auto` or `Hidden`. You can easily navigate to first or last or next or previous tab items by setting the [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollStyle.html) property value as `Extended`, then it will show the `First`, `Last`, `Next`, `Previous` button options. The default value of the `TabScrollStyle` property is `Normal`.
+If you add more tab items, then some tab headers are collapsed. If you navigate to the collapsed tab items, click the scroll button which is placed in the top-right corner of the tab header panel. You can auto visible or hide the scroll button by using the [TabScrollButtonVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollButtonVisibility.html) property value as `Auto` or `Hidden`.
 
 The following `TabScrollStyle` supported by the `TabControl` control.
 
 * Extended Mode - Provides the Next, Previous, Last and First navigation options
 * Normal Mode – Provides the Next and Previous navigation options only
 
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabScrollButtonVisibility="Auto"
+                          Width="300"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Auto;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tab items navigate by using the scroll buttons](Tab-Item-Header_images/TabScrollButtonVisibility1.png)
+
+### Navigate using scroll button in extended mode
+
+You can easily navigate to first or last or next or previous tab items by setting the [TabScrollStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabScrollStyle.html) property value as `Extended`, then it will show the `First`, `Last`, `Next`, `Previous` button options in the scroll button. The default value of the `TabScrollStyle` property is `Normal`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -183,7 +207,6 @@ The following `TabScrollStyle` supported by the `TabControl` control.
 {% endhighlight %}
 {% highlight C# %}
 
-tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Auto;
 tabControlExt.TabScrollStyle = TabScrollStyle.Extended;
 
 {% endhighlight %}

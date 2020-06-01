@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains how to select tab item and selection functionalities in the [TabControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt.html).
 
-## Select tab item using mouse and key interaction
+## Select tab item using mouse or keyboard
 
-You can select a particular tab item by using the mouse click on the tab header. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
+You can select a particular tab item by using the mouse click on the tab header. You can use the `Ctrl + Tab` key to select a next tab item when control not in focused state. You also use the `Left-Arrow` and `Right-Arrow` key , to select the previous tab item or next tab item of current selected tab item when control in focused state. You can get the selected item by using the `SelectedItem` property. By default, the first tab item is selected.
 
 N> You can select only one tab item at a time.
 
@@ -81,7 +81,37 @@ tabControlExt.IsDisableUnloadTabItemExtContent = true;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/SelectedItem) in GitHub
 
-## Change selected tab header font weight
+## Display mode of the selected tab item
+
+If you want to show tab items without its headers in the `TabControl`, use the [FullScreenMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~FullScreenMode.html) property. If you set `FullScreenMode` property value as `ControlMode`, then it will auto hide headers and show it only on when hover the mouse on respective tab header placed area. You can also display the `TabControl` in the full window by setting the `FullScreenMode` property value as `WindowMode`. The default value of `FullScreenMode` property is `None`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt FullScreenMode="ControlMode"
+                          TabStripPlacement="Bottom"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" />
+    <syncfusion:TabItemExt Header="tabItem2" />
+    <syncfusion:TabItemExt Header="tabItem3" />
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.FullScreenMode = FullScreenMode.ControlMode;
+tabControlExt.TabStripPlacement = Dock.Bottom;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Show the tab item without its header](Getting-Started_images/FullScreenMode.gif)
+
+## Customize selected tab item header
+
+You can change the selected tab item header font weight, background and foreground.
+
+### Change selected tab header font weight
 
 If you want to highlight the selected tab header, change the font of tab header from semi bold to extra bold by using the [SelectedItemFontWeight](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~SelectedItemFontWeight.html) property. The default value of `SelectedItemFontWeight` property is `SemiBold`.
 
@@ -106,7 +136,7 @@ tabControlExt.SelectedItemFontWeight = FontWeights.ExtraBold;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/SelectedItem) in GitHub
 
-## Change selected tab header background and foreground 
+### Change selected tab header background and foreground 
 
 You can change the highlighting background and foreground of the selected tab item by using the [TabItemSelectedForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabItemSelectedForeground.html) and [TabItemSelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~.html) properties. The default value of `TabItemSelectedForeground` property is `Black`  and `TabItemSelectedBackground` property is `Lavender`.
 
@@ -132,4 +162,3 @@ tabControlExt.TabItemSelectedBackground = Brushes.Green;
 ![TabControl SelectedItem background and foreground changed](Tab-Item-Header_images/SelectedItemBackground.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/SelectedItem) in GitHub
-
