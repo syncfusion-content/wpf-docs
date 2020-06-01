@@ -15,15 +15,15 @@ Refer to this [Control Dependencies](https://help.syncfusion.com/wpf/control-dep
 
 Refer to this [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages) documentation to find more details about installing the NuGet package in a WPF application.
 
-## Creating a simple application with SfTextBoxExt
+## Creating a simple application
 
-You can create a WPF application with SfTextBoxExt control using the following steps:
+Create a WPF application with SfTextBoxExt control using the following steps:
 
-## Create a project
+### Create a project
 
 Create a new WPF project in Visual Studio to display the SfTextBoxExt control with their functionalities.
 
-## Add a control using the designer
+### Add a control using the designer
 
 The SfTextBoxExt control can be added to an application by dragging it from the toolbox to a designer view. The following required assembly references will be added automatically:
 
@@ -32,7 +32,7 @@ The SfTextBoxExt control can be added to an application by dragging it from the 
 
 ![DesignerView](GettingStarted_images/Designer.png)
 
-## Adding control manually in XAML
+### Adding control manually in XAML
 
 To add the control manually in XAML, follow the given steps:
 
@@ -45,16 +45,6 @@ To add the control manually in XAML, follow the given steps:
 {% tabs %}
 {% highlight XAML %}
 
-<Window x:Class="AutoCompleteSample.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AutoCompleteSample"
-        mc:Ignorable="d"
-        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
-        Title="MainWindow" Height="450" Width="800">
-    <Window.Content>
         <Grid>
             <editors:SfTextBoxExt HorizontalAlignment="Center" 
                                   VerticalAlignment="Center" 
@@ -63,13 +53,11 @@ To add the control manually in XAML, follow the given steps:
                                   Width="200" 
                                   Text="Hello! World..."/>
         </Grid>
-    </Window.Content>
-</Window>
-
+  
 {% endhighlight %}
 {% endtabs %}
 
-## Add a control manually in C#
+### Add a control manually in C#
 
 To add the control manually in C#, follow the given steps:
 
@@ -82,18 +70,6 @@ To add the control manually in C#, follow the given steps:
 {% tabs %}
 {% highlight C# %}
 
-using Syncfusion.Windows.Controls.Input;
-using System.Windows;
-
-namespace SfDatePickerSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
             SfTextBoxExt textBoxExt = new SfTextBoxExt()
             {
                 HorizontalContentAlignment = HorizontalAlignment.Center,
@@ -103,11 +79,6 @@ namespace SfDatePickerSample
                 Height = 40,
                 Text = "Hello! World..."
             };
-
-            this.Content = textBoxExt;
-        } 
-    }
-}
 
 {% endhighlight %}
 {% endtabs %}
@@ -120,91 +91,130 @@ To populate the AutoComplete with data, set the [AutoCompleteSource](https://hel
 
 For further details, refer to [AutoComplete with Data](https://help.syncfusion.com/wpf/autocomplete/auto-complete).
 
+For illustration, let us create a textbox, which will populate a list of employees.
+
+The Employee model will be as follows.
+
+
+{% highlight c# %}
+
+public class Employee
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+	
+{% endhighlight %}
+
+
+Create a collection attribute and populate the collection with items.
+
+{% highlight c# %}
+
+ public class EmployeeViewModel
+    {
+        private List<Employee> employees;
+        public List<Employee> Employees
+        {
+            get { return employees; }
+
+            set { employees = value; }
+        }
+        public EmployeeViewModel()
+        {
+            Employees = new List<Employee>();
+            Employees.Add(new Employee() { Name = "Eric", Email = "Eric@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "James", Email = "James@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Jacob", Email = "Jacob@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Lucas", Email = "Lucas@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Mark", Email = "Mark@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Aldan", Email = "Aldan@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Aldrin", Email = "Aldrin@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Alan", Email = "Alan@syncfusion.com" });
+            Employees.Add(new Employee() { Name = "Aaron", Email = "Aaron@syncfusion.com" });
+        }
+    }
+
+{% endhighlight %}
+
 {% tabs %}
 {% highlight xaml %}
 
-<Window x:Class="AutoCompleteSample.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AutoCompleteSample"
-        mc:Ignorable="d"
-        xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
-        Title="MainWindow" Height="450" Width="800">
-    <Window.Content>
-        <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center"
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                              VerticalAlignment="Center" 
+                              Width="300"
+                              Height="40"
+                              SearchItemPath="Name"
                               AutoCompleteMode="Suggest"
-                              SuggestionMode="StartsWith"
-                              ShowSuggestionsOnFocus="True"
-                              Width="200">
-            <editors:SfTextBoxExt.AutoCompleteSource>
-                <x:Array Type="sys:String" 
-             xmlns:sys="clr-namespace:System;assembly=mscorlib">
-                    <sys:String>India</sys:String>
-                    <sys:String>Uganda</sys:String>
-                    <sys:String>Ukraine</sys:String>
-                    <sys:String>Canada</sys:String>
-                    <sys:String>United Arab Emirates</sys:String>
-                </x:Array>
-            </editors:SfTextBoxExt.AutoCompleteSource>
-        </editors:SfTextBoxExt>
-    </Window.Content>
-</Window>
-
-{% endhighlight %}
-{% highlight c# %}
-
-using Syncfusion.Windows.Controls.Input;
-using System.Collections.Generic;
-using System.Windows;
-
-namespace AutoCompleteSample
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-            SfTextBoxExt textBoxExt = new SfTextBoxExt()
-            {
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center,
-                Width = 200,
-                AutoCompleteMode = AutoCompleteMode.Suggest,
-                SuggestionMode = SuggestionMode.StartsWith,
-                ShowSuggestionsOnFocus = true
-            };
-
-            List<string> list = new List<string>()
-            {
-                 "India",
-                 "Uganda",
-                 "Ukraine",
-                 "Canada",
-                 "United Arab Emirates"
-            };
-
-            textBoxExt.AutoCompleteSource = list;
-            this.Content = textBoxExt;
-        }
-    }
-}
+                              AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
 {% endtabs %}
 
 ![GettingStarted](GettingStarted_images/AutoCompleteSource.png)
 
-Find sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete_WPF958872664) link.
+## AutoComplete modes 
 
-## Selected Items
+Suggestions can be shown in number of ways. TextBoxExt supports the following.
+
+<table>
+<tr>
+<th>AutoCompleteMode</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Suggest</td>
+<td>
+Shows the suggestion in the drop-down list user.
+</td>
+</tr>
+<tr>
+<td>Append</td>
+<td>
+Appends the first suggestion to the text.
+</td>
+</tr>
+<tr>
+<td>SuggestAppend</td>
+<td>
+Shows the suggestion in the drop-down list and appends the first suggestion to the text.
+</td>
+</tr>
+<tr>
+<td>None</td>
+<td>
+In None mode, the search algorithm starts even when the item is not available in the data source.
+</td>
+</tr>
+</table>
+
+The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteModeProperty.html) is None.
+
+
+{% tabs %}
+{% highlight xaml %}
+
+        <editors:SfTextBoxExt HorizontalAlignment="Center" 
+                                 VerticalAlignment="Center" 
+                                 Width="300"
+                                 Height="40"
+                                 SearchItemPath="Name"
+                                 AutoCompleteMode="Suggest"
+                                 SuggestionMode="StartsWith"
+                                 AutoCompleteSource="{Binding Employees}" />
+
+{% endhighlight %}
+{% endtabs %}
+
+![GettingStarted](GettingStarted_images/AutoCompleteMode.png)
+
+Filtered suggestions displayed in drop-down list
+{:.caption}
+
+## Selection 
 
 Index of the selected items can be retrieved by using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property. The selected items of the AutoComplete can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property.
 
-For further details, refer to [Retrieving selected values](https://help.syncfusion.com/wpf/autocomplete/retrieving-selected-values).
+For further details, refer to [Retrieving SelectedValue](https://help.syncfusion.com/wpf/autocomplete/Single-and-multiple-Selection#retrieving-selectedValue) and [Setting and retrieving SelectedItem](https://help.syncfusion.com/wpf/autocomplete/Single-and-multiple-Selection#setting-and-retrieving-selectedItem).
+
+Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_Started_Sample-45883559) link.
