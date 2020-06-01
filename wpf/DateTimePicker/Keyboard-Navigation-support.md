@@ -70,28 +70,28 @@ The following table explains how the navigation performed between datetime field
 </tr>
 <tr>
 <td>7</td>
-<td>Func + PageUp</td>
+<td>PageUp</td>
 <td>Move to previous month, date or year from the corresponding selection view.</td>
 <td>
 <img src="Keyboard_navigation_images/FuncUp.png" alt="Navigate to previous date or month or year"/></td>
 </tr>
 <tr>
 <td>8</td>
-<td>Func + PageDown</td>
+<td>PageDown</td>
 <td>Move to next month, date or year from the corresponding selection view.</td>
 <td>
 <img src="Keyboard_navigation_images/FuncDown.png" alt="Navigate to next date or month or year"/></td>
 </tr>
 <tr>
 <td>9</td>
-<td>Func + Home</td>
+<td>Home</td>
 <td>Select first date or month or year or decade of the current selection view.</td>
 <td>
 <img src="Keyboard_navigation_images/FuncHome.png" alt="Navigate to first date or month or year"/></td>
 </tr>
 <tr>
 <td>10</td>
-<td>Func + End</td>
+<td>End</td>
 <td>Select last date or month or year or decade of the current selection view.</td>
 <td>
 <img src="Keyboard_navigation_images/FuncEnd.png" alt="Navigate to last date or month or year"/></td>

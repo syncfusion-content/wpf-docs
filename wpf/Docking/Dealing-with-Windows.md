@@ -420,7 +420,7 @@ Grid1.Children.Add(dockingmanager)
 
 {% endtabs %}
 
-## Detect the adding and removing docking child in DockingManager
+## Event to notify when a child is added or removed
 
 If you want to know while docking child added or removed from the `DockingManager`, it can be notified by using the [ChildrenCollectionChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ChildrenCollectionChanged_EV.html) event. It receives an argument of type `NotifyCollectionChangedEventArgs` containing the following information about the event.
 
