@@ -84,25 +84,6 @@ editControl.Text = @"Setting multi-line text" + Environment.NewLine + "from C# u
 #### IndentationOptions (None)
 When <kbd>ENTER</kbd>  key is pressed, edit cursor will move to beginning of the next line.
 
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" IndentingOptions="None" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
-</syncfusion:EditControl>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    EditControl editControl = new EditControl() {Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
-
-    editControl.IndentingOptions = IndentingOptions.None;
-    this.Content = editControl;
-
-{% endhighlight %}    
-{% endtabs %}     
-
 ![IndentingOption as None](Editing-Text-in-EditControl_images/EditControl_IndentingOption_None.gif)
 
 #### IndentationOptions (Smart)
@@ -115,11 +96,28 @@ When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with sa
 
 ![IndentingOption as Block](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Block.gif)
 
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" IndentingOptions="Smart" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
+</syncfusion:EditControl>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+EditControl editControl = new EditControl() {IsAutoIndentationEnabled = true, Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
+editControl.IndentingOptions = IndentingOptions.Smart;
+
+{% endhighlight %}    
+{% endtabs %}   
+
 ### TabSpaces in EditControl
 
-[EditControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl_members.html) supports changing the number of spaces to be added in editor when <kbd>TAB</kbd> key is pressed. The required number of tabs or spaces can be added to the beginning of each line in the selected block by using the [TabSpaces](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~TabSpaces.html) property in the EditControl. By default, the TabSpace property value is set to 4.
+[EditControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl_members.html) supports for changing the number of empty spaces to be added for singe Tab key press by setting  [TabSpaces](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~TabSpaces.html) property. The default value is 4.
 
-{% tabs %}
+ {% tabs %}
 
 {% highlight XAML %}
 
@@ -129,10 +127,8 @@ When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with sa
 
 {% highlight C# %}
 
-    EditControl editControl = new EditControl() {Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
-
-    editControl.TabSpaces = 10;
-    this.Content = editControl;
+EditControl editControl = new EditControl() {Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
+editControl.TabSpaces = 10;
 
 {% endhighlight %}    
 {% endtabs %}        
