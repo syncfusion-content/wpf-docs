@@ -345,59 +345,22 @@ The following code example shows the customization options for connector line:
                 VerticalAlignment = VerticalAlignment.Center,
                 ConnectorHeight= 80
             };
-        s## Smart Labels
 
-When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EnableSmartLabels.html#) property.
-
-The following code example demonstrates the EnableSmartLabels property:
-
-{% tabs %}
-
-{% highlight xaml %}
-
-            <chart:PieSeries Interior="#777777" ItemsSource="{Binding CategoricalData}" ConnectorType="Bezier" XBindingPath="Year"
-            YBindingPath="Plastic" EnableSmartLabels="True" LabelPosition="OutsideExtended" ExplodeAll="True" ExplodeRadius="3">
-                <chart:PieSeries.AdornmentsInfo>
-                    <chart:ChartAdornmentInfo ShowLabel="True" HorizontalAlignment="Center" VerticalAlignment="Center" ShowConnectorLine="True"></chart:ChartAdornmentInfo>
-                </chart:PieSeries.AdornmentsInfo>
-            </chart:PieSeries>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            PieSeries series = new PieSeries()
-            {
-                ItemsSource = new ViewModel().Tax,
-                XBindingPath = "Year",
-                YBindingPath = "Plastic",
-                EnableSmartLabels = true,
-                ExplodeAll = true,
-                ExplodeRadius = 3,
-                Palette = ChartColorPalette.Custom,
-                LabelPosition=CircularSeriesLabelPosition.OutsideExtended,
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-            };
-
-            ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
-            {
-                ShowLabel = true,
-                ShowConnectorLine = true,
-                UseSeriesPalette = true,
-                HorizontalAlignment = HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center
-            };
-            series.AdornmentsInfo = adornmentInfo;
-
-{% endhighlight %}
+    {% endhighlight %}
 
 {% endtabs %}
 
-| ConnectorType | Output |
-|--|--|
-| Line | ![Connector line with Line type](Adornments_images/Line.png) |
-| Bezier | ![Connector line with Bezier type](Adornments_images/Bezier.png) |
-| StraightLine | ![Connector line with StraightLine type](Adornments_images/StraightLine.png) |
+ **Line** 
+ 
+ ![Connector Line in WPF Chart](Adornments_images/Line.png) 
+
+ **StraightLine**
+
+![Connector line with StraightLine type](Adornments_images/StraightLine.png)
+
+ **Bezier**
+ 
+  ![Bezier in WPF Chart](Adornments_images/Bezier.png)
 
 ## Applying Series Brush
 
