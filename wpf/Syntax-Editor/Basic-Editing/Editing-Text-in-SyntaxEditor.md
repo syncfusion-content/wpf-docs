@@ -108,48 +108,10 @@ When <kbd>ENTER</kbd>  key is pressed, edit cursor will move to beginning of the
 #### IndentationOptions (Smart)
 When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with one tab space.
 
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" IndentingOptions="Smart" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
-</syncfusion:EditControl>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    EditControl editControl = new EditControl() {Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
-
-    editControl.IndentingOptions = IndentingOptions.Smart;
-    this.Content = editControl;
-
-{% endhighlight %}    
-{% endtabs %}      
-
 ![IndentingOption as Smart](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Smart.gif)
 
 #### IndentationOptions (Block)
 When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with same indentation of current line.
-ENT
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" IndentingOptions="Block" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
-</syncfusion:EditControl>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    EditControl editControl = new EditControl() {Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
-
-    editControl.IndentingOptions = IndentingOptions.Block;
-    this.Content = editControl;
-
-{% endhighlight %}    
-{% endtabs %}      
 
 ![IndentingOption as Block](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Block.gif)
 
