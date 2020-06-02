@@ -394,7 +394,7 @@ AutoSizing can be enabled in AutoComplete control so that the control will exten
 
 ![EnableAutoSize](Single_and_multiple_selection_images/EnableAutoSize.png)
 
-See also[Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single_and_multiple_selection_images#multiple-selection-using-tokens) topic in AutoComplete.
+See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in AutoComplete.
 
 ## Multiple selection using delimiter 
 
@@ -424,7 +424,7 @@ When selecting the multiple items, the selected items can be divided with a desi
 
 This feature allows to provide the path for the image to be displayed in the text box control using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property.
 
-For further details, refer to [Showing image in token and dropdown](https://help.syncfusion.com/wpf/autocomplete/getting-started#showing-image-in-token-and-dropdown).
+For further details, refer to [Showing image in token and dropdown](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#showing-image-in-token-and-dropdown).
 
 
 Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Single_and_multiple_selection_Sample239442634) link.
