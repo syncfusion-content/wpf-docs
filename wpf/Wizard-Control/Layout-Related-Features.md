@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout Related Features | ####UsethefollowingcodesnippettodefinetheNextButtonEventforWizard | wpf | Syncfusion
-description: This section gives detailed description on layout related features of WizardControl
+title: Layout Related Features | wpf | Syncfusion
+description: This section gives detailed description on layout related features and their functions of the WizardControl.
 platform: wpf
 control: Wizard
 documentation: ug
