@@ -387,13 +387,15 @@ Multiple items selection acheived by SelectedItems property.
 comboBoxAdv.AllowMultiSelect = true;
 
 ObservableCollection<ComboBoxItemAdv> itemCollection = new ObservableCollection<ComboBoxItemAdv>();
-    foreach (var item in comboBoxAdv.Items)
-    {
-        if ((item as ComboBoxItemAdv).Content.ToString() == "Australia" || ((item as ComboBoxItemAdv).Content.ToString() == "UK"))
-            itemCollection.Add(item as ComboBoxItemAdv);
-    }
+foreach (var item in comboBoxAdv.Items)
+{
+    if ((item as ComboBoxItemAdv).Content.ToString() == "Australia" || ((item as ComboBoxItemAdv).Content.ToString() == "UK"))
+    itemCollection.Add(item as ComboBoxItemAdv);
+}
 comboBoxAdv.SelectedItems = itemCollection;
 
+{% endhighlight %}
+{% endtabs %}
 
 
 ## See Also
