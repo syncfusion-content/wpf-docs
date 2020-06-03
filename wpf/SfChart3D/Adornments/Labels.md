@@ -7,8 +7,11 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Label in WPF 3D Charts (SfChart3D)  
+# Data Label in WPF 3D Charts (SfChart3D)  
 
+ Data points can be easily annotated with labels to help improve the readability of data.
+
+## Define Label Content
 SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
 
 {% tabs %}
@@ -333,13 +336,9 @@ The following code example shows the how to specify connector type:
 
 {% endtabs %}
 
- **Line** 
- 
- ![Connector Line in WPF Chart](Adornments-Images/Adorn_Line.png) 
-
- **Bezier**
- 
-  ![Bezier in WPF Chart](Adornments-Images/Adorn_Bezier.png)|
+| Line | Bezier |
+|--|--|
+| ![Connector Line in WPF Chart](Adornments-Images/Adorn_Line.png)| ![Bezier in WPF Chart](Adornments-Images/Adorn_Bezier.png)|
 
 N> ConnectorType.StraightLine behavior does not applicable for 3D series.
 

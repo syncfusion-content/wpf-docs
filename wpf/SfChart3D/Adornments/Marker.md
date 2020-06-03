@@ -7,7 +7,11 @@ control: SfChart3D
 documentation: ug
 ---
 
-# Marker in WPF 3D Charts (SfChart3D) 
+# Data Marker in WPF 3D Charts (SfChart3D) 
+
+Data Marker is used to mark the data points with built-in available shapes.
+
+## Define Data Marker
 
 To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowMarker.html#) property as True. By default, there is no symbol displayed, you have to add the desired symbol using Symbol property.
 

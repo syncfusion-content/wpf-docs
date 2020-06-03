@@ -33,8 +33,7 @@ Eight types of chart [`Series`](https://help.syncfusion.com/cr/cref_files/wpf/Sy
 
 ## Column Charts
 
-Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries3D`]
-(https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)
+Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)
 
 The following code example illustrates how to use ColumnSeries3D:
 
