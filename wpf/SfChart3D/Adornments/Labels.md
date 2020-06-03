@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label in WPF 3D Charts (SfChart3D)| SfChart | Wpf | Syncfusion
+title: Label in WPF 3D Charts (SfChart3D)| SfChart3D | Wpf | Syncfusion
 description: Learn how to create the 3D charts and their features such as types, axis, data binding, dynamic rotation, interactivity and depth axis.
 platform: wpf
 control: SfChart3D
@@ -12,7 +12,7 @@ documentation: ug
  Data points can be easily annotated with labels to help improve the readability of data.
 
 ## Define Label Content
-SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
+SfChart3D provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
 
 {% tabs %}
 
@@ -403,7 +403,7 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 
 ## Smart Labels
 
-When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EnableSmartLabels.html#) property.
+When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart3D provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EnableSmartLabels.html#) property.
 
 The following code example demonstrates the EnableSmartLabels property:
 

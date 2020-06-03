@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis in WPF 3D Charts (SfChart3D)| SfChart | Wpf | Syncfusion 
+title: Axis in WPF 3D Charts (SfChart3D)| SfChart3D | Wpf | Syncfusion 
 description: Explains the parts of axis, types of axis, it's behavior and customization options in WPF Chart (SfChart3D).
 platform: wpf
 control: SfChart3D
