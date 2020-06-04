@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | TileView | wpf | Syncfusion
-description: This section gives detailed description of Getting Started information in TileView control.
+description: This section gives detailed information of Getting Started information ofTileView control in application.
 platform: wpf
 control: TileView Control
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started of TileViewControl
 
 This section describes how to design a [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) control in a WPF application and overview of its basic functionalities.
 
@@ -15,7 +15,7 @@ This section describes how to design a [TileViewControl](https://help.syncfusion
 
 ![Structure of TileView control](Getting-Started_images/Getting-Started_img1.png)
 
-# Creating simple application with TileViewControl
+## Creating simple application with TileViewControl
 
 The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html)  can be added to an application using Visual Studio and Blend.
 
@@ -24,7 +24,7 @@ You can create the WPF application with [TileViewControl](https://help.syncfusio
 1. [Creating project](#creating-the-project)
 2. [Adding control via designer](#adding-control-via-designer)
 3. [Adding control manually in XAML](#adding-control-manually-in-XAML)
-3. [Adding control manually in c#](#adding-control-manually-in-code)
+3. [Adding control manually in C#](#adding-control-manually-in-code)
 
 ## Creating the project
 
@@ -114,7 +114,7 @@ Title="MainWindow" Height="450" Width="700" >
 
 {% endtabs %}
 
-## Adding control manually in c#
+## Adding control manually in C#
 
 To create the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) through C#, include the following namespace to the directives list.
 
@@ -172,7 +172,7 @@ tvControl.Items.Add(tvitem4)
 
 ![TileViewControl added by codebehind](Getting-Started_images/Getting-Started_img8.png)
 
-### Adding IsSelected to an Application 
+### Selection using IsSelected in TileViewControl 
 
 You can set the TileViewItem to be selected when [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) is loaded by using [IsSelected](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem~IsSelected.html) property in respective [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html).
 
@@ -214,7 +214,7 @@ tvitem1.IsSelected = true
 
 {% endtabs %}
 
-## Maximizig TileViewItem in TileViewControl
+## Maximizing TileViewItem in TileViewControl
 
 You can maximize the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) by clicking on its header after enabling the [ClickHeaderToMaximize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl~ClickHeaderToMaximize.html) property in [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html).The TileViewItem’s state will remain same if you click on the header of the TileViewItem which is in maximized state
 
