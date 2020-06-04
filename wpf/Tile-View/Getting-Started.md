@@ -13,7 +13,7 @@ This section describes how to design a [TileViewControl](https://help.syncfusion
 
 ## Structure of the TileViewControl
 
-![Structure of TileView control](Getting-Started_images/Getting-Started_img1.png)
+![Structure of TileView control](Getting-Started_images/Getting-Started_img1.jpg)
 
 ## Creating simple application with TileViewControl
 
@@ -76,7 +76,7 @@ The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.S
 6. Once the Collection Editor window opens, click Add another item. The Select Object window will open. 
 7. Select [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) by typing _TileViewItem_ in the search box, and then click OK.
 
-     ![](Getting-Started_images/Getting-Started_img7.png)
+     ![Adding TileViewItem](Getting-Started_images/Getting-Started_img7.png)
 
 8. Configure the [TileViewItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewItem.html) using the properties in the Collection Editor.
 
