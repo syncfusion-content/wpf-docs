@@ -13,7 +13,7 @@ This section explains accessing the [SfMaskedEdit](https://help.syncfusion.com/c
 
 ## Restrict the user to enter valid data
 
-You can restrict the user to enter the valid input without any custom validation by creating the mask pattern as your requirement. You can enable the mask by setting the mask pattern to the [Mask](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~Mask.html) property and set the [MaskType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~MaskType.html) property value as `Regex`. The default value of `Mask` property is `null` and `MaskType` property is `Simple`. The following table demonstrates the mask elements with its descritpion,
+You can restrict the user to enter the valid input without any custom validation by creating the mask pattern as your requirement. You can enable the mask by setting the mask pattern to the [Mask](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~Mask.html) property and set the [MaskType](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~MaskType.html) property value as `Regex`. The default value of `Mask` property is `null` and `MaskType` property is `Simple`. The following table demonstrates the mask elements with its description,
 
 <table>
 <tr>
@@ -160,7 +160,7 @@ You can create your custom mask as follows,
 <table>
 <tr>
 <th>
-Mask usecase </th><th>
+Mask use case </th><th>
 Pattern</th><th>
 Example</th></tr>
 <tr>
@@ -264,7 +264,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Setting the value
 
-You can set the value for the `SfMakedEdit` by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~Value.html) property. Based on the mask, the value of `Value` property is formatted. The default value of `Value` property is `null`.
+You can set the value for the `SfMaskedEdit` by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~Value.html) property. Based on the mask, the value of `Value` property is formatted. The default value of `Value` property is `null`.
 
 {% tabs %}
 {% highlight xaml %}

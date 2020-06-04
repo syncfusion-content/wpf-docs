@@ -134,7 +134,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-maskedtext
 
 ## Setting the value
 
-You can set the value for the `SfMakedEdit` by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~Value.html) property. Based on the mask, the value of `Value` property is formatted. The default value of `Value` property is `null`.
+You can set the value for the `SfMaskedEdit` by using the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfMaskedEdit~Value.html) property. Based on the mask, the value of `Value` property is formatted. The default value of `Value` property is `null`.
 
 {% tabs %}
 {% highlight xaml %}
