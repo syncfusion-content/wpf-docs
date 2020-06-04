@@ -83,7 +83,7 @@ The following code sample illustrates the center position of data marker labels,
 
 {% endtabs %}
 
-| | |
+| Column | Spline |
 |--|--|
 |![center Column](Adornments_images/Center_Column.png)|![center Series](Adornments_images/Center_Spline.png)|
 
@@ -109,7 +109,7 @@ The following code sample illustrates the inner position of data marker labels,
 
 {% endtabs %}
 
-| | |
+| Column | Spline |
 |--|--|
 |![Inner Column](Adornments_images/Inner_Column.png)|![Inner Series](Adornments_images/Inner_Spline.png)|
 
@@ -136,7 +136,7 @@ The following code sample illustrates the outer position of data marker labels,
 
 {% endtabs %}
 
-| | |
+| Column | Spline |
 |--|--|
 |![Outer Column](Adornments_images/Outer_Column.png)|![Outer Series](Adornments_images/Outer_Spline.png)|
 

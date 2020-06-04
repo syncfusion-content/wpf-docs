@@ -7,8 +7,11 @@ control: SfChart
 documentation: ug
 ---
 
-# Label in WPF Charts (SfChart)
+# Data Label in WPF Charts (SfChart)
 
+Data points can be easily annotated with labels to help improve the readability of data.
+
+## Define Label Content
 Labels are enabled by default but you can also change the visibility of the labels using ['ShowLabel'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of ['ChartAdornmentInfo'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html). 
 
 {% tabs %}

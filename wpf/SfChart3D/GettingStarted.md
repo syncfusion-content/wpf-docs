@@ -17,7 +17,7 @@ Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls)
 
 ## Initialize chart
 
-Import the SfChart namespace in your XAML page.
+Import the SfChart3D namespace in your XAML page.
 
 {% tabs %}
   

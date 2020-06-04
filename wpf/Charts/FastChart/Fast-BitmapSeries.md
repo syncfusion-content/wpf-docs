@@ -7,54 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-# Fast Charts in WPF Charts (SfChart)
+# Fast Bitmap Series in WPF Charts (SfChart)
 
-## Fast Line
-
-The [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries.html#) is a special kind of line series that can render a collection with a huge number of datapoints. FastLine is rendered using polyline segment. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:FastLineSeries x:Name="FastLineSeries" ItemsSource="{Binding Data}"
-
-XBindingPath="Date" Interior="#7F7F7F"
-
-YBindingPath="Value"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-FastLineSeries series = new FastLineSeries()
-{
-
-    ItemsSource = new ViewModel().Data,
-
-    XBindingPath = "Date",
-
-    YBindingPath = "Value",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
-};
-
-chart.Series.Add(series);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![FastLine chart type in WPF](Series_images/fastline.png)
-
-The following line properties are available for FastLineSeries:
-
-* [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~Stroke.html#)
-* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashArray.html#)
-* [`StrokeDashOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html# )
-* [`StrokeDashCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html#)
-* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries~StrokeThickness.html#)
+A fast bitmap chart displays a series of segments rendered using WritableBitmap. 
 
 ## Fast Line Bitmap 
 
@@ -95,7 +50,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastLineBitmap chart type in WPF](Series_images/fastlinebitmap.png)
+![FastLineBitmap chart type in WPF](FastChart_Images/fastlinebitmap.png)
 
 Like FastLineSeries, this bitmap series is also having line properties. 
 
@@ -140,10 +95,10 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastLine Chart in WPF](Series_images/fastlinealiasing.png)
+![AntiAliasing support for FastLine Chart in WPF](FastChart_Images/fastlinealiasing.png)
 
 
-## Fast Column
+## Fast Column Bitmap
 
 [`FastColumnBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html#) is used to boost up the performance of the ColumnSeries.
 
@@ -180,11 +135,11 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastColumnBitmap chart type in WPF](Series_images/fastcolumn.png)
+![FastColumnBitmap chart type in WPF](FastChart_Images/fastcolumn.png)
 
-## Fast Bar
+## Fast Bar Bitmap
 
-FastBarBitmapSeries is used to boost up the performance of the series.
+['FastBarBitmapSeries'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastBarBitmapSeries.html) is used to boost up the performance of the series.
 
 {% tabs %}
 
@@ -219,12 +174,12 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastBarBitmap chart type in WPF](Series_images/fastbar.png)
+![FastBarBitmap chart type in WPF](FastChart_Images/fastbar.png)
 
 
-## Fast Candle
+## Fast Candle Bitmap
 
-FastCandleBitmapSeries renders using bitmap and it displays each data point as a combination of a vertical column and a vertical line, like CandleSeries. 
+['FastCandleBitmapSeries'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastCandleBitmapSeries.html) renders using bitmap and it displays each data point as a combination of a vertical column and a vertical line, like CandleSeries. 
 
 {% tabs %}
 
@@ -267,10 +222,10 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastCandleBitmap chart type in WPF](Series_images/fastcandle.png)
+![FastCandleBitmap chart type in WPF](FastChart_Images/fastcandle.png)
 
 
-## Fast HiLo
+## Fast HiLo Bitmap
 
 [`FastHiLoBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoBitmapSeries.html#) represents a series of line segments with high and low values rendered using WritableBitmap. 
 
@@ -309,9 +264,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastHiLoBitmap chart type in WPF](Series_images/fasthilo.png)
+![FastHiLoBitmap chart type in WPF](FastChart_Images/fasthilo.png)
 
-## Fast OHLC
+## Fast OHLC Bitmap
 
 [`FastHiLoOpenCloseBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html#) are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
 
@@ -354,9 +309,9 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastHiLoOpenCloseBitmap chart type in WPF](Series_images/fastohlc.png)
+![FastHiLoOpenCloseBitmap chart type in WPF](FastChart_Images/fastohlc.png)
 
-## Fast Scatter
+## Fast Scatter Bitmap
 
 [`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#) used to render high number scatter points. The [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterHeight.html#) and [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterWidth.html#) also available as in ScatterSeries. [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
 
@@ -401,10 +356,10 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastScatterBitmap chart type in WPF](Series_images/fastscatter.png)
+![FastScatterBitmap chart type in WPF](FastChart_Images/fastscatter.png)
 
 
-## Fast Step Line
+## Fast Step Line Bitmap
 
 [`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#) is the high performance version of StepLineSeries.
 
@@ -441,7 +396,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![FastStepLineBitmap chart type in WPF](Series_images/faststepline.png)
+![FastStepLineBitmap chart type in WPF](FastChart_Images/faststepline.png)
 
 The anti aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html#) property of FastStepLineBitmapSeries as in below code snippet:
 
@@ -480,49 +435,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![AntiAliasing support for FastStepLineBitmap chart type in WPF](Series_images/faststepline_alias.png)
-
-
-## Fast Stacking Column
-
-[`FastStackingColumnSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html#) similar to StackingColumnSeries except that it loads faster and provides better performance. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:FastStackingColumnBitmapSeries StrokeThickness="5"
-
-ItemsSource="{Binding MedalDetails}”       
-
-XBindingPath="CountryName" YBindingPath="GoldMedals"  
-
-Interior="#4A4A4A" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-FastStackingColumnBitmapSeries series = new FastStackingColumnBitmapSeries()
-{
-
-    ItemsSource = new ViewModel().MedalDetails,
-
-    XBindingPath = "CountryName",
-
-    YBindingPath = "GoldMedals",
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
-};
-
-chart.Series.Add(series);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![FastStackingColumnBitmap chart type in WPF](Series_images/faststackingcolumn.png)
+![AntiAliasing support for FastStepLineBitmap chart type in WPF](FastChart_Images/faststepline_alias.png)
 
 
 ## Fast Range Area
@@ -566,7 +479,7 @@ chart.Series.Add(fastRangeAreaBitmapSeries);
 
 {% endtabs %}
 
-![Fast Range Area Bitmap Series](Series_images/fastrangeareabitmapseries.png)
+![Fast Range Area Bitmap Series](FastChart_Images/fastrangeareabitmapseries.png)
 
 The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries~EnableAntiAliasing.html) property of FastRangeAreaBitmapSeries as in below code snippet:
 
@@ -611,4 +524,4 @@ chart.Series.Add(fastRangeAreaBitmapSeries);
 
 {% endtabs %}
 
-![Fast Range Area Bitmap Series With Anit-Aliasing Enabled](Series_images/fastrangeareabitmapantialiasing.png)
+![Fast Range Area Bitmap Series With Anit-Aliasing Enabled](FastChart_Images/fastrangeareabitmapantialiasing.png)
