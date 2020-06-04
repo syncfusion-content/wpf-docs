@@ -215,6 +215,6 @@ Filtered suggestions displayed in drop-down list
 
 Index of the selected items can be retrieved by using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property. The selected items of the AutoComplete can be retrieved by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property.
 
-For further details, refer to [Retrieving SelectedValue](https://help.syncfusion.com/wpf/autocomplete/Single-and-multiple-Selection#retrieving-selectedValue) and [Setting and retrieving SelectedItem](https://help.syncfusion.com/wpf/autocomplete/Single-and-multiple-Selection#setting-and-retrieving-selectedItem).
+For further details, refer to [Retrieving SelectedValue](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#retrieving-selectedvalue) and [Setting and retrieving SelectedItem](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#setting-and-retrieving-selecteditem).
 
 Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_Started_Sample-45883559) link.
