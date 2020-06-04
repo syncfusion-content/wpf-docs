@@ -1353,12 +1353,12 @@ Context menu options
 </td>
 <td>
 
-![Dock window with default context menu](Dealing-with-Windows_images/Default-menu.jpg)
+<Img alt="Dock window with default context menu" src="Dealing-with-Windows_images/Default-menu.jpg"/>
 
 </td>
 <td>
 
-![Dock window with VS2010 context menu](Dealing-with-Windows_images/VS2010-menu.jpg)
+<Img alt="Dock window with VS2010 context menu" src="Dealing-with-Windows_images/VS2010-menu.jpg"/>
 
 </td>
 </tr>
@@ -1396,12 +1396,12 @@ Context menu option when window is in `Auto-Hide` state
 </td>
 <td>
 
-![Auto-Hide window with default context menu](Dealing-with-Windows_images/AutoHide_Window_Default-Menu.jpg)
+<Img alt="Auto-Hide window with default context menu"  src="Dealing-with-Windows_images/AutoHide_Window_Default-Menu.jpg"/>
 
 </td>
 <td>
 
-![Auto-Hide window with VS2010 context menu](Dealing-with-Windows_images/AutoHide_Window_VS2010-Menu.jpg)
+<Img alt="Auto-Hide window with VS2010 context menu"  src="Dealing-with-Windows_images/AutoHide_Window_VS2010-Menu.jpg"/> 
 
 </td>
 </tr>
