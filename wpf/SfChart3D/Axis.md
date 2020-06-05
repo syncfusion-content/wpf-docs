@@ -39,7 +39,6 @@ ChartAxis supports the following types.
 {% highlight xaml %}
 
     <chart:SfChart3D>
-
             <!--PrimaryAxis-->
             <chart:SfChart3D.PrimaryAxis>
                 <chart:NumericalAxis3D/>
@@ -49,7 +48,6 @@ ChartAxis supports the following types.
             <chart:SfChart3D.SecondaryAxis>
                 <chart:NumericalAxis3D />
             </chart:SfChart3D.SecondaryAxis>
-
     </chart:SfChart3D>
 
 {% endhighlight %}
@@ -76,12 +74,10 @@ ChartAxis supports the following types.
 {% highlight xaml %}
 
     <chart:SfChart3D>
-
             <!--PrimaryAxis-->
             <chart:SfChart3D.PrimaryAxis>
                 <chart:CategoryAxis3D/>
             </chart:SfChart3D.PrimaryAxis>
-
     </chart:SfChart3D>
 
 {% endhighlight %}
@@ -106,12 +102,10 @@ ChartAxis supports the following types.
 {% highlight xaml %}
 
     <chart:SfChart3D>
-
             <!--PrimaryAxis-->
             <chart:SfChart3D.PrimaryAxis>
                 <chart:DateTimeAxis3D/>
             </chart:SfChart3D.PrimaryAxis>
-
     </chart:SfChart3D>
 
 {% endhighlight %}
@@ -136,12 +130,10 @@ ChartAxis supports the following types.
 {% highlight xaml %}
 
     <chart:SfChart3D>
-
             <!--SecondaryAxis-->
             <chart:SfChart3D.SecondaryAxis>
                 <chart:LogarithmicAxis3D />
             </chart:SfChart3D.SecondaryAxis>
-
     </chart:SfChart3D>
 
 {% endhighlight %}
@@ -166,12 +158,10 @@ ChartAxis supports the following types.
 {% highlight xaml %}
 
     <chart:SfChart3D>
-
             <!--PrimaryAxis-->
             <chart:SfChart3D.PrimaryAxis>
                 <chart:TimeSpanAxis3D/>
             </chart:SfChart3D.PrimaryAxis>
-
     </chart:SfChart3D>
 
 {% endhighlight %}
@@ -216,7 +206,6 @@ The following code example illustrates how to create Depth Axis.
 {% highlight C# %} 
 
             SfChart3D chart = new SfChart3D();
-
             chart.Rotation = 43;
             chart.Tilt = 10;
             chart.Margin = new Thickness(120, 20, 120, 30);
@@ -250,7 +239,6 @@ In this type of chart, multiple series can be plotted in [`DepthAxis`](https://h
 {% highlight xaml %}
 
 <chart:SfChart3D x:Name="chart" Rotation="43" >
-
           . . . 
             <chart:SfChart3D.DepthAxis>
                 <chart:NumericalAxis3D Interval="1"/>
@@ -265,7 +253,6 @@ In this type of chart, multiple series can be plotted in [`DepthAxis`](https://h
                                 YBindingPath="YValue"                         
                                 ItemsSource="{Binding Data2}" 
                                 Label="Second"/>
-
         </chart:SfChart3D>
 
 

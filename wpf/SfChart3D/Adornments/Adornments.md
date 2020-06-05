@@ -24,18 +24,18 @@ The following code example illustrates how to initialize the adornment.
 
 {% highlight xaml %}
 
-    <chart:StackingBarSeries3D ItemsSource="{Binding CategoricalDatas}" XBindingPath="Year" YBindingPath="Plastic">
+    <chart:ColumnSeries3D ItemsSource="{Binding CategoricalDatas}" XBindingPath="Year" YBindingPath="Plastic">
                 <!--AdornmentsInfo-->
-        <chart:StackingBarSeries3D.AdornmentsInfo>
+        <chart:ColumnSeries3D.AdornmentsInfo>
             <chart:ChartAdornmentInfo3D UseSeriesPalette="True" BorderBrush="White" BorderThickness="1" ShowLabel="True" ></chart:ChartAdornmentInfo3D>
-        </chart:StackingBarSeries3D.AdornmentsInfo>
-    </chart:StackingBarSeries3D>
+        </chart:ColumnSeries3D.AdornmentsInfo>
+    </chart:ColumnSeries3D>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-        StackingBarSeries3D series = new StackingBarSeries3D()
+        ColumnSeries3D series = new ColumnSeries3D()
             {
                 ItemsSource = new ViewModel().CategoricalData,
                 XBindingPath = "Year",
