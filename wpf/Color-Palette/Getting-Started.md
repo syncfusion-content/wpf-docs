@@ -18,81 +18,112 @@ Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-depe
 
 Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
 
-## Adding WPF ColorPalette via designer
+## Creating Application with SfColorPalette control
 
-[SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+In this walk through, user will create a WPF application that contains [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) control.
+
+ 1. Creating project
+ 2. Adding  control via designer.
+ 3. Adding  control manually in XAML.
+ 4. Adding  control manually in C#.
+
+### Creating project
+
+Below section provides detailed information to create new project in Visual Studio to display [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html).
+
+### Adding control via designer
+
+The [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembly will be added automatically.
 
 * Syncfusion.SfColorPalette.WPF
 * Syncfusion.SfShared.WPF
 
 ![ColorPalette Drag and dropped from ToolBox](Getting-Started_images/ColorPalette_Drag_and_dropped_from_ToolBox.png)
 
-## Adding WPF ColorPalette via XAML
+### Adding control manually in XAML
 
-To add the [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) manually in XAML, follow these steps:
+In order to add [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) control manually in XAML, do the below steps,
 
-1) Create a new WPF project in Visual Studio.
+1. Add the below required assembly references to the project,
 
-2) Add the following required assembly reference to the project:
+	  * Syncfusion.SfColorPalette.Wpf
 
-* Syncfusion.SfColorPalette.WPF
-* Syncfusion.SfShared.WPF
+    * Syncfusion.SfShared.Wpf
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) in WPF XAML page.
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** or SfColorPalette namespace [**Syncfusion.Windows.Controls.Media**](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media_namespace.html) in XAML page.
+
+3. Declare [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) control in XAML page.
 
 {% tabs %}
-{% highlight XAML %}
 
-<Window x:Class="ColorPalette_sample.MainWindow"
+{% highlight xaml %}
+
+<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ColorPalette_sample"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:Check_UG"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="Check_UG.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-<Grid Name="grid">
-    <syncfusion:SfColorPalette Name="colorPalette" />
+<Grid>
+<syncfusion:SfColorPalette HorizontalAlignment="Left" Margin="90,50,0,0" VerticalAlignment="Top" Height="206" Width="239"/>
+
 </Grid>
+</Window>
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![ColorPalette added by xaml code](Getting-Started_images/ColorPalette_img.png)
 
-## Adding WPF ColorPalette via C#
+### Adding control manually in C#
 
-To add the `ColorPalette` manually in C#, follow these steps:
+In order to add [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) control manually in C#, do the below steps,
 
-1) Create a new WPF application via Visual Studio.
+1. Add the below required assembly references to the project,
 
-2) Add the following required assembly references to the project:
+	  * Syncfusion.SfColorPalette.Wpf
 
-* Syncfusion.SfColorPalette.WPF
-* Syncfusion.SfShared.WPF
+    * Syncfusion.SfShared.Wpf
 
-3) Include the required namespace.
+2. Import SfColorPalette namespace **Syncfusion.Windows.Controls.Media** .
 
 {% tabs %}
-{% highlight C# %}
+
+{% highlight c# %}
 
 using Syncfusion.Windows.Controls.Media;
 
 {% endhighlight %}
+
 {% endtabs %}
 
-4) Create an instance of [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html), and add it to the window.
+3. Create [sfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) control instance and add it to the Page.
 
 {% tabs %}
-{% highlight C# %}
 
-SfColorPalette colorPalette = new SfColorPalette();
+{% highlight c# %}
+
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            SfColorPalette colorPalette = new SfColorPalette();
+            colorPalette.Height = 300;
+            colorPalette.Width = 200;
+
+            this.Content = colorPalette;
+        }
+    }
 
 {% endhighlight %}
-{% endtabs %}
 
-![ColorPalette added by code behind](Getting-Started_images/ColorPalette_img.png)
+{% endtabs %}
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding)
 
@@ -164,4 +195,4 @@ You can navigate and select a different colors from the different swatches by cl
 
 ![Navigate and changes the color swatches in ColorPalette](Getting-Started_images/Navigate_swatches.gif)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding).
