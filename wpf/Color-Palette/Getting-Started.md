@@ -9,11 +9,8 @@ documentation: ug
 
 # Getting Started with WPF ColorPalette (SfColorPalette)
 
-This section explains how to create a WPF [ColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) and explains about its structure and features.
+This section explains how to create a WPF [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) and explains about its structure and features.
 
-## Structure of ColorPalette
-
-![Structure of WPF ColorPalette](Getting-Started_images/Getting-Started_img1.png)
 
 ## Assembly deployment
 
@@ -23,16 +20,16 @@ Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-inte
 
 ## Adding WPF ColorPalette via designer
 
-`ColorPalette` can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
+[SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically:
 
 * Syncfusion.SfColorPalette.WPF
 * Syncfusion.SfShared.WPF
 
-   ![ColorPalette Drag and dropped from ToolBox](Getting-Started_images/ColorPalette_Drag_and_dropped_from_ToolBox.png)
+![ColorPalette Drag and dropped from ToolBox](Getting-Started_images/ColorPalette_Drag_and_dropped_from_ToolBox.png)
 
 ## Adding WPF ColorPalette via XAML
 
-To add the `ColorPalette` manually in XAML, follow these steps:
+To add the [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) manually in XAML, follow these steps:
 
 1) Create a new WPF project in Visual Studio.
 
@@ -41,7 +38,7 @@ To add the `ColorPalette` manually in XAML, follow these steps:
 * Syncfusion.SfColorPalette.WPF
 * Syncfusion.SfShared.WPF
 
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the `ColorPalette` in WPF XAML page.
+3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) in WPF XAML page.
 
 {% tabs %}
 {% highlight XAML %}
@@ -85,7 +82,7 @@ using Syncfusion.Windows.Controls.Media;
 {% endhighlight %}
 {% endtabs %}
 
-4) Create an instance of `ColorPalette`, and add it to the window.
+4) Create an instance of [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html), and add it to the window.
 
 {% tabs %}
 {% highlight C# %}
@@ -97,21 +94,21 @@ SfColorPalette colorPalette = new SfColorPalette();
 
 ![ColorPalette added by code behind](Getting-Started_images/ColorPalette_img.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding)
 
 ## Select a Color
 
-You can select any color by clicking the respective color item in the `ColorPalette`. You can get selected color from the [SelectedColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette~SelectedColor.html) property. If you selecting any color, then the selected color will be displayed as tooltip.
+You can select any color by clicking the respective color item in the [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) You can get selected color from the [SelectedColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette~SelectedColor.html) property. If you selecting any color, then the selected color will be displayed as tooltip.
 
 ![Select a color from the ColorPalette](Getting-Started_images/ColorPalette_SelectedColor.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding)
 
 ## Binding a selected color
 
-You can bind the selected color of `ColorPalette` to any objects by using the `SelectedColor` property.
+You can bind the selected color of [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) to any objects by using the [SelectedColor](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette~SelectedColor.html) property.
 
-Here, the `SelectedColor` of the `ColorPalette` bind with the `Rectangle.Fill` property with color to brush converter.
+Here, the `SelectedColor` of the `SfColorPalette` bind with the `Rectangle.Fill` property with color to brush converter.
 
 {% tabs %}
 {% highlight C# %}
@@ -155,11 +152,11 @@ public class ColorToSolidColorBrushValueConverter : IValueConverter {
 
 ![Binding a selected color in ColorPalette](Getting-Started_images/Binding.gif)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding) in GitHub
+N>  [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-sfcolorpalette-examples/tree/master/Samples/DataBinding)
 
 ## Navigate to the list of swatches
 
-You can navigate and select a different colors from the different swatches by clicking the Swatches button which is placed on the right top corner of the `ColorPalette` control.
+You can navigate and select a different colors from the different swatches by clicking the Swatches button which is placed on the right top corner of the [SfColorPalette](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfColorPalette.Wpf~Syncfusion.Windows.Controls.Media.SfColorPalette.html) control.
 
 ### List of swatches
 
