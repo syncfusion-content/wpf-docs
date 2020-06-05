@@ -51,41 +51,14 @@ SfChart3D provides the support to customize the label content using [`SegmentLab
 
 {% endtabs %}
 
-**DateTime**
-
-[LabelContent.DateTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays LabelContent.DateTime value.
-
-![DateTime support in WPF Chart](Adornments-Images/Adorn_DateTime.png)
-
-**LabelContentPath**
-
-[LabelContent.LabelContentPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the y value by default.
-
-![LabelContentPath support in WPF Chart](Adornments-Images/Adorn_LabelContent.png)
-
-**Percentage**
-
-[LabelContent.Percentage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the percentage value of series' point among other points.
-
-![Percentage support in WPF Chart](Adornments-Images/Adorn_Percentage.png)
-
-**XValue**
-
-[LabelContent.XValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the X value of series' point
-
-![XValue support in WPF Chart](Adornments-Images/Adorn_Xvalue.png)
-
-**YofTot**
-
-[LabelContent.YofTot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the value of Y of total values' point
-
-![YofTot support in WPF Chart](Adornments-Images/Adorn_YofTop.png)
-
-**YValue**
-
-[LabelContent.YValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) Displays the Y value of series' point.
-
-![YValue support in WPF Chart](Adornments-Images/Adorn_YValue.png)
+|LabelContent|Output|
+|--|--|
+|[LabelContent.DateTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays LabelContent.DateTime value.|![DateTime support in WPF Chart](Adornments-Images/Adorn_DateTime.png)|
+|[LabelContent.LabelContentPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the y value by default.|![LabelContentPath support in WPF Chart](Adornments-Images/Adorn_LabelContent.png)|
+|[LabelContent.Percentage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the percentage value of series' point among other points.|![Percentage support in WPF Chart](Adornments-Images/Adorn_Percentage.png)|
+|[LabelContent.XValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the X value of series' point.|![XValue support in WPF Chart](Adornments-Images/Adorn_Xvalue.png)|
+|[LabelContent.YofTot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the value of Y of total values' point.|![YofTot support in WPF Chart](Adornments-Images/Adorn_YofTop.png)|
+|[LabelContent.YValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) Displays the Y value of series' point.|![YValue support in WPF Chart](Adornments-Images/Adorn_YValue.png)|
 
 
 ## Label Rotation
@@ -138,14 +111,14 @@ SfChart3D provides the support to customize the label content using [`SegmentLab
 
 The following properties are used to customize the adornment label.
 
-* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderBrush.html#)
-* [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderThickness.html#)
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Margin.html#)
-* [`FontStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontStyle.html#)
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontSize.html#)
-* [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Foreground.html#)
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontFamily.html#)
-* [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Background.html)
+* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderBrush.html#) - used to change the border color.
+* [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderThickness.html#) - used to change the thickness of the border.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Margin.html#) - used to change the margin size for label.
+* [`FontStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontStyle.html#) -  used to change font family of the label.
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontSize.html#) -  used to change font size of the label.
+* [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Foreground.html#) - used to change the color of the label.
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontFamily.html#) -  used to change the font family of the label.
+* [`Background`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Background.html) - used to change the label background color.
 
 The following code example demonstrates the customization of label using the above properties:
 
@@ -375,7 +348,7 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 
 ## Applying Series Brush
 
-[`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~UseSeriesPalette.html#) property is used to set the interior of the series to the adornment background. 
+The [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~UseSeriesPalette.html#) property is used to apply the series color to background color of data marker labels.
 
 For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior color will be reflected in adornment background.
 
