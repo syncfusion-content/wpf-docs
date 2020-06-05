@@ -11,7 +11,7 @@ documentation: ug
 
 This section illustrates the following interactive feature of [Wizard Control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl.html). 
 
-## Popualating pages in Wizard Control
+## Populating pages in Wizard Control
 
 The pages can be added to [Wizard Control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl.html) by following ways,
 
