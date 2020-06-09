@@ -19,4 +19,9 @@ The Syncfusion TileViewControl acts as a container that holds a set of TileViewI
 * In vertical minimized position, the TileViewItem are arranged at the right side or left side of the maximized TileViewItem.
 
 
+## Structure of the TileViewControl
+
+![Structure of TileView control](Getting-Started_images/Getting-Started_img1.jpg)
+
+
 
