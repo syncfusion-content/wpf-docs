@@ -53,12 +53,12 @@ SfChart3D provides the support to customize the label content using [`SegmentLab
 
 |LabelContent|Output|
 |--|--|
-|[LabelContent.DateTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays LabelContent.DateTime value.|![DateTime support in WPF Chart](Adornments-Images/Adorn_DateTime.png)|
-|[LabelContent.LabelContentPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the y value by default.|![LabelContentPath support in WPF Chart](Adornments-Images/Adorn_LabelContent.png)|
-|[LabelContent.Percentage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the percentage value of series' point among other points.|![Percentage support in WPF Chart](Adornments-Images/Adorn_Percentage.png)|
-|[LabelContent.XValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the X value of series' point.|![XValue support in WPF Chart](Adornments-Images/Adorn_Xvalue.png)|
-|[LabelContent.YofTot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) displays the value of Y of total values' point.|![YofTot support in WPF Chart](Adornments-Images/Adorn_YofTop.png)|
-|[LabelContent.YValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) Displays the Y value of series' point.|![YValue support in WPF Chart](Adornments-Images/Adorn_YValue.png)|
+|[LabelContent.DateTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html)|![DateTime support in WPF Chart](Adornments-Images/Adorn_DateTime.png)|
+|[LabelContent.LabelContentPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html)|![LabelContentPath support in WPF Chart](Adornments-Images/Adorn_LabelContent.png)|
+|[LabelContent.Percentage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) |![Percentage support in WPF Chart](Adornments-Images/Adorn_Percentage.png)|
+|[LabelContent.XValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) |![XValue support in WPF Chart](Adornments-Images/Adorn_Xvalue.png)|
+|[LabelContent.YofTot](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) |![YofTot support in WPF Chart](Adornments-Images/Adorn_YofTop.png)|
+|[LabelContent.YValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelContent.html) |![YValue support in WPF Chart](Adornments-Images/Adorn_YValue.png)|
 
 
 ## Label Rotation
