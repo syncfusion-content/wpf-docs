@@ -7,7 +7,7 @@ control: TileView Control
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding of TileViewControl
 
 The topics under this section explain the data binding support for the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html).
 

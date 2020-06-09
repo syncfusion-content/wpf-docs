@@ -7,7 +7,7 @@ control: TileView Control
 documentation: ug
 ---
 
-# Overview
+# Overview of TileViewControl
 
 The Syncfusion TileViewControl acts as a container that holds a set of TileViewItems, in which you can host rich information. You can maximize, minimize and drag the items of the TileViewControl in a matrix position to achieve the best layout. The TileViewControl supports Hi-Fi User Interface that includes the features mentioned below.
 
