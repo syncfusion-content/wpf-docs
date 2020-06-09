@@ -81,18 +81,15 @@ editControl.Text = @"Setting multi-line text" + Environment.NewLine + "from C# u
 * Smart
 * Block
 
-#### IndentationOptions (None)
-When <kbd>ENTER</kbd>  key is pressed, edit cursor will move to beginning of the next line.
+When IndentingOption is None and <kbd>ENTER</kbd> key is pressed, edit cursor will move to beginning of the next line.
 
 ![IndentingOption as None](Editing-Text-in-EditControl_images/EditControl_IndentingOption_None.gif)
 
-#### IndentationOptions (Smart)
-When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with one tab space.
+When IndentingOption is Smart and <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with one tab space.
 
 ![IndentingOption as Smart](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Smart.gif)
 
-#### IndentationOptions (Block)
-When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with same indentation of current line.
+When IndentingOption is Block and <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with same indentation of current line.
 
 ![IndentingOption as Block](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Block.gif)
 
