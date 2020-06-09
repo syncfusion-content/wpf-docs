@@ -37,8 +37,6 @@ wizardControl.Items.Add(wizardPage);
 
 wizardControl.InteriorPageHeaderMinHeight = 150; 
 
-this.Content = wizardControl;
-
 {% endhighlight %}
 
 {%endtabs%}
@@ -70,8 +68,6 @@ WizardPage wizardPage = new WizardPage();
 wizardControl.Items.Add(wizardPage);
 
 wizardPage.BannerBackground = Brushes.Navy;
-
-this.Content = wizardControl;
 
 {% endhighlight %}
 
@@ -107,8 +103,6 @@ WizardPage wizardPage = new WizardPage();
 wizardControl.Items.Add(wizardPage);
 
 wizardPage.BannerImage = new BitmapImage(new Uri("/Image/sync.bmp", UriKind.RelativeOrAbsolute));  
-
-this.Content = wizardControl;
 
 {% endhighlight %}
 
@@ -148,8 +142,6 @@ wizardPage.PageType = WizardPageType.Exterior;
 
 wizardControl.ExteriorPageBannerImageMinWidth = 10;
 
-this.Content = wizardControl;
-
 {% endhighlight %}
 
 {%endtabs%}
@@ -177,7 +169,7 @@ The appearance of the Wizard control can be customized by using the “VisualSty
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizard" syncfusion:SkinStorage.VisualStyle="Blend">
-    <syncfusion:WizardPage  PageType="Exterior">
+    <syncfusion:WizardPage>
             <TextBlock Text="This is an example project for themes in Wizard control" />
     </syncfusion:WizardPage>
     <syncfusion:WizardPage />
