@@ -100,7 +100,7 @@ The phenomenon of string comparison for filtering suggestions can be changed usi
 <tr>
 <td>None</td>
 <td>
-The control returns the entire collection without filtering when text is typed by the user.
+The control returns the entire collection without filtering when text is typed.
 </td>
 </tr>
 <tr>
