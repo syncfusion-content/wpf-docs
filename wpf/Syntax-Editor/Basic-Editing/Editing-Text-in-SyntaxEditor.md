@@ -77,19 +77,15 @@ editControl.Text = @"Setting multi-line text" + Environment.NewLine + "from C# u
 ## Indentation in EditControl
 [EditControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl_members.html) allows to auto indent the text when enter key pressed to add new lines. Auto indentation can be enabled by setting [IsAutoIndentationEnabled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IsAutoIndentationEnabled.html) to 'true'. Auto indentation works based on [IndentingOptions](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~IndentingOptions.html) property which has following options,
 
-* None
-* Smart
-* Block
-
-When IndentingOption is None and <kbd>ENTER</kbd> key is pressed, edit cursor will move to beginning of the next line.
+* None - When <kbd>ENTER</kbd> key is pressed, edit cursor will move to beginning of the next line.
 
 ![IndentingOption as None](Editing-Text-in-EditControl_images/EditControl_IndentingOption_None.gif)
 
-When IndentingOption is Smart and <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with one tab space.
+* Smart - When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with one tab space.
 
 ![IndentingOption as Smart](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Smart.gif)
 
-When IndentingOption is Block and <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with same indentation of current line.
+* Block - When <kbd>ENTER</kbd> key is pressed, edit cursor will move to next line with same indentation of current line.
 
 ![IndentingOption as Block](Editing-Text-in-EditControl_images/EditControl_IndentingOption_Block.gif)
 
@@ -97,7 +93,7 @@ When IndentingOption is Block and <kbd>ENTER</kbd> key is pressed, edit cursor w
 
 {% highlight XAML %}
 
-<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" IndentingOptions="Smart" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
+<syncfusion:EditControl Name="Edit1" Background="White" Margin="0" IsAutoIndentationEnabled="True" IndentingOptions="Block" Foreground="Black" ShowLineNumber="True" EnableIntellisense="False">
 </syncfusion:EditControl>
 
 {% endhighlight %}
@@ -105,7 +101,7 @@ When IndentingOption is Block and <kbd>ENTER</kbd> key is pressed, edit cursor w
 {% highlight C# %}
 
 EditControl editControl = new EditControl() {IsAutoIndentationEnabled = true, Height = 200, Width = 200, Background = Brushes.White, Foreground = Brushes.Black };
-editControl.IndentingOptions = IndentingOptions.Smart;
+editControl.IndentingOptions = IndentingOptions.Block;
 
 {% endhighlight %}    
 {% endtabs %}   
