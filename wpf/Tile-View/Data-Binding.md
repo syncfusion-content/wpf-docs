@@ -65,7 +65,6 @@ public class ViewModel
 
 {% endtabs %}
   
-
 3. Create a _ViewModel_ instance and use it as _DataContext_ for the root window.
 
 {% tabs %}
