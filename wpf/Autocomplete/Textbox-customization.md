@@ -14,7 +14,7 @@ AutoComplete provides the user-friendly customizing options for both text box an
 
 ## Water mark 
 
-[Watermark](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Watermark.html) property, allows the users to specify some information when the text is empty. For illustration, let us create a simple textbox where the user is asked to enter names separated by a comma.
+[Watermark](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Watermark.html) property, allows to specify some information when the text is empty. For illustration, let us create a simple textbox and indicate enter names separated by a comma.
 
 {% tabs %}
 {% highlight xaml %}
@@ -116,7 +116,7 @@ The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~
 
 ## Setting the Dropdown Icon 
 
-This feature allows the users to set the drop-down icon for the text box control using the [ShowDropDownButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowDropDownButton.html).
+This feature allows to set the drop-down icon for the text box control using the [ShowDropDownButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowDropDownButton.html).
 
 {% tabs %}
 
