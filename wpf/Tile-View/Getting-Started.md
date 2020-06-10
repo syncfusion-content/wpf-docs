@@ -63,7 +63,7 @@ The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.S
 
      ![TileViewControl by Blend Designer](Getting-Started_images/Getting-Started_img5.png)
 
-3. To add items to the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using the Collection Editor, select TileViewControl and go to Properties andclick Items (Collection) under Common Properties.
+3. To add items to the [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.TileViewControl_members.html) using the Collection Editor, select TileViewControl and go to Properties and click Items (Collection) under Common Properties.
 
      ![CollectionEditor in Blend](Getting-Started_images/Getting-Started_img6.png)
 
