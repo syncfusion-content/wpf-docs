@@ -60,7 +60,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Custom UI for drop down button
 
-You can customize the drodpwn button appearance by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DropDownButtonTemplate.html) property.
+You can customize the dropdown button appearance by using the [DropDownButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DropDownButtonTemplate.html) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -192,7 +192,7 @@ dateTimeEdit.AbbreviatedMonthNames = new string[]
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/MonthNames) in GitHub
 
-## Change week day names
+## Change weekday names
 
 You can change the popup calendar week day names by adding the respective new names to the [AbbreviatedMonthNames](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~AbbreviatedMonthNames.html) property. The default value of `AbbreviatedMonthNames` property is `null`.
 

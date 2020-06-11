@@ -7,7 +7,7 @@ control: DateTimeEdit
 documentation: ug
 ---
 
-# Restrict and formatting date value in WPF DateTimePicker (DateTimeEdit)
+# Restrict date time value in WPF DateTimePicker (DateTimeEdit)
 
 This section explains how to select a date and time in a particular range by specifying minimum and maximum dates and formatting the datetime in [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) control.
 

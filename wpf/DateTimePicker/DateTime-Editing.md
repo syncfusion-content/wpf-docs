@@ -158,28 +158,6 @@ The following table explains how the navigation performed between datetime field
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
-## Change date time flow editing
-
-You can change the `DateTime` value like a normal textbox editing by setting the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property value as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus. If the entered value is invalid, it set the previously selected date as `DateTime` value. Otherwise, it will accept the given input.
-
-{% tabs %}
-{% highlight XAML %}
-
-<syncfusion:DateTimeEdit Name="dateTimeEdit"
-                         CanEdit="True"/>
-
-{% endhighlight %}
-{% highlight C# %}
-DateTimeEdit dateTimeEdit= new DateTimeEdit();
-dateTimeEdit.CanEdit = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-![DateTimeEdit with free flow editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
-
-N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
-
 ## Change date time programmatically
 
 You can set or change the selected datetime of the `DateTimeEdit` programmatically by setting the value to the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~DateTime.html) property.
@@ -257,6 +235,28 @@ class ViewModel : NotificationObject {
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Data-Binding) in GitHub
 
+## Change date time flow editing
+
+You can change the `DateTime` value like a normal textbox editing by setting the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property value as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus. If the entered value is invalid, it set the previously selected date as `DateTime` value. Otherwise, it will accept the given input.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DateTimeEdit Name="dateTimeEdit"
+                         CanEdit="True"/>
+
+{% endhighlight %}
+{% highlight C# %}
+DateTimeEdit dateTimeEdit= new DateTimeEdit();
+dateTimeEdit.CanEdit = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+![DateTimeEdit with free flow editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
+
 ## Change date time on mouse wheel
 
 You can increase or decrease the datetime by select the respective fields and mouse scrolling over the `DateTimeEdit`. If you want to restrict the user to change datetime by using mouse scrolling, use the [EnableMouseWheelEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~EnableMouseWheelEdit.html) property value as `false`. The default value of `EnableMouseWheelEdit` property is `true`.
@@ -282,7 +282,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change date time using up-down button
 
-You can change the value of the datetime by selecting the respective date, month, year, minutes, hours, or seconds field and pressing the up or down button to increase or decrease the selected field respectively. By default, the updown button are hided. you can show the UpDown button by setting the [IsVisibleRepeatButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsVisibleRepeatButton.html)  property value as `true`.
+You can change the value of the datetime by selecting the respective date, month, year, minutes, hours, or seconds field and pressing the up or down button to increase or decrease the selected field respectively. By default, the updown button are hidden. you can show the UpDown button by setting the [IsVisibleRepeatButton](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~IsVisibleRepeatButton.html)  property value as `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -363,7 +363,7 @@ You can change the background and UI of the updown button.
 
 ### Change updown background
 
-If you want to change the updown button background, use the [RepeatButtonBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~RepeatButtonBackground.html) property. You can also change the margin of the up and down button seperately by using the [DownRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonMargin.html) and [UpRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonMargin.html) properties. The default value of `RepeatButtonBackground` property is `` and 
+If you want to change the updown button background, use the [RepeatButtonBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~RepeatButtonBackground.html) property. You can also change the margin of the up and down button separately by using the [DownRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonMargin.html) and [UpRepeatButtonMargin](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonMargin.html) properties. The default value of `RepeatButtonBackground` property is `Gainsboro`  and `UpRepeatButtonMargin` & `DownRepeatButtonMargin` properties is `{0,0,0,0}`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -394,7 +394,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ### Custom UI for up and down button
 
-You can customize the up and down button appearance seperately by using the [UpRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonTemplate.html) and [DownRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonTemplate.html) properties.
+You can customize the up and down button appearance separately by using the [UpRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~UpRepeatButtonTemplate.html) and [DownRepeatButtonTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DownRepeatButtonTemplate.html) properties.
 
 {% tabs %}
 {% highlight XAML %}
@@ -435,7 +435,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Change month using alpha keys
 
-You can change the month which is in abbreviated form or digit form, can be edited by select the month field and pressing the initial letter of respective month. You can enable it by settiing the [EnableAlphaKeyNavigation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~EnableAlphaKeyNavigation.html) value as `true` and `CanEdit` property as `false`. The default value of `EnableAlphaKeyNavigation` property is `false`.
+You can change the month which is in abbreviated form or digit form, can be edited by select the month field and pressing the initial letter of respective month. You can enable it by setting the [EnableAlphaKeyNavigation](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit~EnableAlphaKeyNavigation.html) value as `true` and `CanEdit` property as `false`. The default value of `EnableAlphaKeyNavigation` property is `false`.
 
 For example, If you pressing the `j` key, then it will selects `January`. On subsequent presses of the `j` key selects `June` and then `July`.
 

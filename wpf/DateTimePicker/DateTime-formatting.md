@@ -101,7 +101,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Custom display pattern
 
-You can also set the custom pattern for displaying the datetime in the `DateTimeEdit` control by using the [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) property. You can enable the custom display pattern by setting the `Pattern` propety value as `CustomPattern`.
+You can also set the custom pattern for displaying the datetime in the `DateTimeEdit` control by using the [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) property. You can enable the custom display pattern by setting the `Pattern` property value as `CustomPattern`.
 
 {% tabs %}
 {% highlight XAML %}
