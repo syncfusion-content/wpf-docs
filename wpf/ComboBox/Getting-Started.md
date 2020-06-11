@@ -323,20 +323,13 @@ You can customize the visualization of data object using the [ItemTemplate](http
 
 ![Item template](Getting-Started_images/ComboBoxAdv_img4.png)
 
-## Selection
+## Selection 
 
-[ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) supports single and multiple selection of items. By default the selection of items in ComboBoxAdv is single selection, irrespective of the number of items. In order to select multiple items in ComboBoxAdv, you can enable the  [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~AllowMultiSelect.html) property and select those multiple items from the drop down list. 
+[ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html) supports single and multiple selection of items. By default the selection of items in ComboBoxAdv is single selection. In order to select multiple items in ComboBoxAdv, enable the [AllowMultiSelect](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~AllowMultiSelect.html) property and select those multiple items from the drop down list.
 
-<Grid>
-    <Grid.DataContext>
-        <local:PopulationViewModel/>
-    </Grid.DataContext>
-    <syncfusion:ComboBoxAdv x:Name="comboBoxAdv" Height="30" Width="200" ItemsSource="{Binding PopulationDetails}" DisplayMemberPath="Country" AllowMultiSelect="True">
-    </syncfusion:ComboBoxAdv>
-</Grid>
+![MultiSelection](Getting-Started_images/ComboBoxAdv_img5.png)
 
-![Multiple selection](Getting-Started_images/ComboBoxAdv_img5.png)
-
+ You can select the item or get the index of the selected item by using the [SelectedIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv_members.html#) property. When an item is selected in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html), you can get their information using [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv_members.html#) or [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv_members.html#) property. For multiple selected items, use [SelectedItems]([SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~SelectedItems.html)) property. The selection of the items can be handled using [SelectionChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv_members.html#) event.
 ## Editing
 [IsEditable](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv~IsEditable.html) property helps to edit the text in [ComboBoxAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ComboBoxAdv.html).
 
