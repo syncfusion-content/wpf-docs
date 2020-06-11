@@ -267,11 +267,11 @@ The following properties are used to customize the text:
 
 * [`EnableEditing`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableEditing.html#) - Used to define whether the text in TextAnnotation can be edited or not.
 
-* ['Angle'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation~Angle.html#) - Used to get or set the angle for rotating the Annotation.
+* [`Angle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.TextAnnotation~Angle.html#) - Used to get or set the angle for rotating the Annotation.
 
-* ['EnableClipping'] (https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableClipping.html#) - Used to define whether annotation should clip while crossing with boundary.
+* ['EnableClipping'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~EnableClipping.html#) - Used to define whether annotation should clip while crossing with boundary.
 
-* ['Foreground'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~Foreground.html) - Used to change the text color.
+* [`Foreground`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~Foreground.html) - Used to change the text color.
 
 * [`FontSize`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~FontSize.html#)– An int value that represents the font size of the annotation text.
 
@@ -324,11 +324,12 @@ The following properties are used to customize the text:
 
 * [`RectangleAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.RectangleAnnotation.html#)- Used to draw a rectangle over the chart area.
 
-*['LineAnnotation'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation.html#) - Used to draw a line over the chart area.
+* [`LineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation.html#) - Used to draw a line over the chart area.
 
 * [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html#)- Used to draw a vertical line across the chart area.
 
 * [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html#) - Used to add a horizontal line across the chart area.
+
 
 The following API’s are commonly used in all ShapeAnnotation:
 
@@ -472,11 +473,11 @@ The ['VerticalLineAnnotation'](https://help.syncfusion.com/cr/cref_files/wpf/Syn
 ### Customizing Line Annotation
 The appearance of the LineAnnotation, VerticalLineAnnotation and HorizontalLineAnnotation can be customized with use of following properties.
 
-* ['GrabExtent'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~GrabExtent.html) - Used to extent the hit visible area while performing dragging and resizing.
+* [`GrabExtent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~GrabExtent.html) - Used to extent the hit visible area while performing dragging and resizing.
 
 * [`ShowLine`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~ShowLine.html#) - Used to collapse the visibility of the line annotation.
 
-* ['LineCap'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html)
+* [`LineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html)
 
 * [`ShowAxisLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~ShowAxisLabel.html#) - Used to display the axis labels in which the line is placed
 
@@ -594,11 +595,11 @@ N> [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syn
 SfChart allows customization of shape annotation using the following properties.
 
 * [`Stroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~Stroke.html#) - Represents the brush for the annotation outline.
-* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeThickness.html#)- Represents the thickness of the annotation outline.
-* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeDashArray.html# )- Represents the DashArray of the annotation stroke.
+* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeThickness.html#) - Represents the thickness of the annotation outline.
+* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeDashArray.html# ) - Represents the DashArray of the annotation stroke.
 * [`StrokeDashCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeDashCap.html#)- Represents the DashCap of the annotation stroke.
-* [`StrokeDashOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeDashOffset.html#)- Represents the DashOffset of the annotation stroke.
-* [`StrokeEndLineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeEndLineCap.html#)- Represents the end line cap of the annotation stroke.
+* [`StrokeDashOffset`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeDashOffset.html#) - Represents the DashOffset of the annotation stroke.
+* [`StrokeEndLineCap`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeEndLineCap.html#) - Represents the end line cap of the annotation stroke.
 * [`StrokeLineJoin`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeLineJoin.html#) - Represents the line join of the annotation outline.
 * [`StrokeMiterLimit`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ShapeAnnotation~StrokeMiterLimit.html#) - Represents the limit on the ratio of the miter length to half of the annotation shape.
 
@@ -648,21 +649,22 @@ The following API’s are used in ImageAnnotation.
 
 * [`Angle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation~Angle.html#)  – An integer value that represents the rotation angle for the text in Annotation.
 * [`ImageSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~ImageSource.html#)  - Represents the source from where the image must be added.
-* [`X2`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~X2.html#)- Represents the X2 Coordinate of the Annotation.****
-* [`Y2`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~Y2.html#)- Represents the Y2 Coordinate of the Annotation.****
+* [`X2`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~X2.html#) - Represents the X2 Coordinate of the Annotation.
+* [`Y2`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ImageAnnotation~Y2.html#) - Represents the Y2 Coordinate of the Annotation.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-            <syncfusion:ImageAnnotation  Text="Annotation" HorizontalTextAlignment="Center" VerticalTextAlignment="Top" ImageSource="Images\Graduate.png" X1="2.5" Y1="1200" X2="3.6" Y2="1700" >
-            </syncfusion:ImageAnnotation>                       
+        <syncfusion:ImageAnnotation  Text="Annotation" HorizontalTextAlignment="Center" 
+            VerticalTextAlignment="Top" ImageSource="Images\Graduate.png" X1="2.5" Y1="1200" X2="3.6" Y2="1700" >
+        </syncfusion:ImageAnnotation>                       
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-            ImageAnnotation annotation = new ImageAnnotation()
+        ImageAnnotation annotation = new ImageAnnotation()
             {
                 Text = "Annotation",
                 HorizontalTextAlignment = HorizontalAlignment.Center,
@@ -673,7 +675,6 @@ The following API’s are used in ImageAnnotation.
                 Y2 = "1700",
                 ImageSource = new BitmapImage(new Uri(@"Images\Graduate.png", UriKind.RelativeOrAbsolute))
             };
-
 
 {% endhighlight %}
 
@@ -703,7 +704,8 @@ The following code example demonstrates the dragging the rectangle annotation.
 
 {% highlight xaml %}
 
-        <chart:RectangleAnnotation  X1="0.6" CanDrag="True" X2="2.2" Y2="1500" Y1="1800" Stroke="DarkGray" Fill="LightGray" Opacity="0.5" >
+        <chart:RectangleAnnotation  X1="0.6" CanDrag="True" X2="2.2" Y2="1500" Y1="1800" 
+                Stroke="DarkGray" Fill="LightGray" Opacity="0.5">
         </chart:RectangleAnnotation>
 
 {% endhighlight %}
@@ -739,7 +741,8 @@ You can resize the annotation by enabling [`CanResize`](https://help.syncfusion.
 
 {% highlight xaml %}
 
-        <chart:RectangleAnnotation  X1="0.6" CanResize="True" X2="2.2" Y2="1500" Y1="1800" Stroke="DarkGray" Fill="LightGray" Opacity="0.5" >
+        <chart:RectangleAnnotation  X1="0.6" CanResize="True" X2="2.2" Y2="1500" Y1="1800" 
+            Stroke="DarkGray" Fill="LightGray" Opacity="0.5" >
         </chart:RectangleAnnotation>
 
 {% endhighlight %}
@@ -782,7 +785,8 @@ The following code example demonstrates the default tooltip.
 
 {% highlight xaml %}
 
-        <chart:EllipseAnnotation  X1="2.5" Y1="1500" X2="3.6" Y2="1680" ShowToolTip="True" ToolTipContent="Annotation">
+        <chart:EllipseAnnotation  X1="2.5" Y1="1500" X2="3.6" Y2="1680" 
+            ShowToolTip="True" ToolTipContent="Annotation">
         </chart:EllipseAnnotation>
             
 {% endhighlight %}
@@ -864,17 +868,17 @@ SfChart allows you to clip the annotation if the annotation crosses the boundary
 
 {% highlight xaml %}
 
-            <chart:SfChart.Annotations>            
+        <chart:SfChart.Annotations>            
                   
-                <chart:ImageAnnotation ImageSource="Images\Graduate.png"  X1="6" Y1="16" X2="9" Y2="18" EnableClipping="True"></chart:ImageAnnotation>
+            <chart:ImageAnnotation ImageSource="Images\Graduate.png"  X1="6" Y1="16" X2="9" Y2="18"     EnableClipping="True"/>
 
-            </chart:SfChart.Annotations>
+        </chart:SfChart.Annotations>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfChart chart = new SfChart();
+    SfChart chart = new SfChart();
 
         ImageAnnotation image = new ImageAnnotation()
             {
@@ -901,7 +905,6 @@ The following screenshot explains that even when x value is provided out of boun
 The value of X1, X2, Y1, and Y2 properties of annotation will differ based on the axis type. The following table illustrates how to set the values for X1 and X2 properties of annotation based on the corresponding primary axis.
 
 <table>
-
 <tr>
 <th>
 SI.No
@@ -1056,16 +1059,16 @@ The corresponding DateTime value will be given as values for X1 and X2 propertie
 
 SfChart provides the following events in [`Annotation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation_members.html#).
 
-* [`Selected`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~Selected_EV.html#)- Occurs when the annotation is selected.
-* [`UnSelected`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~UnSelected_EV.html#)- Occurs when annotation is deselected.
-* [`DragStarted`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~DragStarted_EV.html#)- Occurs at the start of the dragging.
-* [`DragDelta`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~DragDelta_EV.html#)- Occurs when the drag takes place.
-* [`DragCompleted`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~DragCompleted_EV.html#)- Occurs when the dragging is completed. You can cancel the dragging by using Cancel argument.
+* [`Selected`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~Selected_EV.html#) - Occurs when the annotation is selected.
+* [`UnSelected`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~UnSelected_EV.html#) - Occurs when annotation is deselected.
+* [`DragStarted`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~DragStarted_EV.html#) - Occurs at the start of the dragging.
+* [`DragDelta`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~DragDelta_EV.html#) - Occurs when the drag takes place.
+* [`DragCompleted`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation~DragCompleted_EV.html#) - Occurs when the dragging is completed. You can cancel the dragging by using Cancel argument.
 * [`DragEnter`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation_members.html#) - Occurs when the cursor is moved over the annotation for dragging.
 * [`DragLeave`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.StraightLineAnnotation_members.html#)- Occurs when the cursor leaves the annotation after dragging.
 * [`MouseDown`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~MouseDown_EV.html#) - Occurs when any mouse button is pressed while the pointer is over the annotation.
-* [`MouseUp`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~MouseUp_EV.html#)- Occurs when any mouse button is released while the pointer is over the annotation.
-* [`MouseLeftButtonDown`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~MouseLeftButtonDown_EV.html#)- Occurs when the left mouse button is pressed while the mouse pointer is over the annotation.
+* [`MouseUp`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~MouseUp_EV.html#) - Occurs when any mouse button is released while the pointer is over the annotation.
+* [`MouseLeftButtonDown`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~MouseLeftButtonDown_EV.html#) - Occurs when the left mouse button is pressed while the mouse pointer is over the annotation.
 * [`MouseRightButtonDown`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~MouseRightButtonDown_EV.html#)- Occurs when the right mouse button is pressed while the mouse pointer is over the annotation.
 * [`MouseRightButtonUp`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~MouseRightButtonUp_EV.html#) - Occurs when the right mouse button is released while the mouse pointer is over the annotation.
 * [`MouseMove`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.Annotation~MouseMove_EV.html#) - Occurs when the mouse pointer moves while over the annotation.
