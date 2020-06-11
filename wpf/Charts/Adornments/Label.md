@@ -9,41 +9,9 @@ documentation: ug
 
 # Data Label in WPF Charts (SfChart)
 
-Data points can be easily annotated with labels to help improve the readability of data.
+Data points can be easily annotated with labels to help improve the readability of data. Labels are enabled by default but you can also change the visibility of the labels using ['ShowLabel'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of ['ChartAdornmentInfo'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html). 
 
 ## Define Label Content
-Labels are enabled by default but you can also change the visibility of the labels using ['ShowLabel'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of ['ChartAdornmentInfo'](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html). 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-        <syncfusion:ColumnSeries Interior="#777777" ItemsSource="{Binding Demands}" XBindingPath="Category" YBindingPath="Value">
-                <syncfusion:ColumnSeries.AdornmentsInfo>
-                    <syncfusion:ChartAdornmentInfo></syncfusion:ChartAdornmentInfo>
-                </syncfusion:ColumnSeries.AdornmentsInfo>
-        </syncfusion:ColumnSeries> 
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-        ColumnSeries series = new ColumnSeries()
-            {
-                ItemsSource = ViewModel().Demands,
-                XBindingPath = "Demands",
-                YBindingPath = "Value",
-                Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-            };
-        ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo();
-        series.AdornmentsInfo = adornmentInfo;
-        chart.Series.Add(series);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Label Content
 
 SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html#) property. This property allows you to define the value to be displayed as adornment label.
 

@@ -14,10 +14,10 @@ documentation: ug
 
 Vertical(Y) axis always uses numerical scale. Horizontal(X) axis supports the following types of scale:
 
-    * Category
-    * Numeric
-    * Date time
-    * Logarithmic Axis
+* Category
+* Numeric
+* Date time
+* Logarithmic Axis
 
 The following are the API’s in ChartAxis
 
