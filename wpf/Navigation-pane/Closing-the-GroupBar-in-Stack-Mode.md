@@ -51,7 +51,7 @@ groupBar.IsCloseButtonEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-# Maximum number of Visible Items in OverFlowPanel
+## Maximum number of Visible Items in OverFlowPanel
 
 User can customize the maximum number of Visible Items to be displayed in the StackMode OverflowPanel, using the property StackVisibleItemsCount. 
 

@@ -107,7 +107,7 @@ _buttonPanel.Items.Add(_splitButton)
 ![](ArrangingRibbonitemsusingButtonPanel_images/ArrangingRibbonitemsusingButtonPanel_img2.jpeg)
 
 
-# Changing size of ribbon items
+## Changing size of ribbon items
 
 `SizeForm` is used to set the size of the Ribbon items that are added inside the Ribbon control.
 
@@ -161,7 +161,7 @@ The code to set SizeForm for the above controls is illustrated below
 
 ![](ChangingSizeofRibbonitems_images/ChangingSizeofRibbonitems_img1.jpeg)
 
-# Add command to RibbonLauncherButton
+## Add command to RibbonLauncherButton
 
 Ribbon instance now provides command support for RibbonBar LauncherButton. It provides the following options.
 
@@ -203,7 +203,7 @@ The font size for the selected text is increased when launcher button is clicked
 
 ![](AddingcommandtoRibbonLauncherButton_images/AddingcommandtoRibbonLauncherButton_img1.jpeg)
 
-# Show HelpButton in RibbonWindow
+## Show HelpButton in RibbonWindow
 
 The HelpButton displays the information about the application.To enable this HelpButton in `Office2013` theme, set `ShowHelpButton` as `True` 
 
