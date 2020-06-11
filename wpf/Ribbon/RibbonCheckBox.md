@@ -61,4 +61,4 @@ ribbonBar2.Items.Add(ribbonCheckBox)
 
 ## See Also
 
-[How to add the RibbonCheckBox in WPF Ribbon control with MVVM pattern?](https://github.com/SyncfusionExamples/How-to-add-the-ribboncheckbox-in-wpf-ribbon-control-with-mvvm-pattern).
+[How to bind the RibbonCheckBox in WPF Ribbon control with MVVM pattern?](https://github.com/SyncfusionExamples/How-to-bind-the-ribboncheckbox-in-wpf-ribbon-control-with-mvvm-pattern).
