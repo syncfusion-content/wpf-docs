@@ -19,13 +19,13 @@ You can change the foreground color for `ColorPalette` by setting the `Foregroun
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette Foreground="Red"
-                           Name="SfColorPalette"/>
+                           Name="sfColorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfColorPalette sfColorPalette = new SfColorPalette();
-SfColorPalette.Foreground = Brushes.Red;
+sfColorPalette.Foreground = Brushes.Red;
 
 {% endhighlight %}
 {% endtabs %}
@@ -42,13 +42,13 @@ You can change the background color for `ColorPalette` by setting the `Backgroun
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette Background="Red"
-                           Name="SfColorPalette"/>
+                           Name="sfColorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfColorPalette sfColorPalette = new SfColorPalette();
-SfColorPalette.Background = Brushes.Red;
+sfColorPalette.Background = Brushes.Red;
 
 {% endhighlight %}
 {% endtabs %}
@@ -65,13 +65,13 @@ You can change the flow direction of the `ColorPalette` layout from right to lef
 {% highlight xaml %}
 
 <syncfusion:SfColorPalette FlowDirection="RightToLeft"
-                           Name="SfColorPalette"/>
+                           Name="sfColorPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfColorPalette sfColorPalette = new SfColorPalette();
-SfColorPalette.FlowDirection = FlowDirection.RightToLeft;
+sfColorPalette.FlowDirection = FlowDirection.RightToLeft;
 
 {% endhighlight %}
 {% endtabs %}
