@@ -427,4 +427,4 @@ This feature allows to provide the path for the image to be displayed in the tex
 For further details, refer to [Showing image in token and dropdown](https://help.syncfusion.com/wpf/autocomplete/autocomplete-and-filtering#showing-image-in-token-and-dropdown).
 
 
-Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Single_and_multiple_selection_Sample239442634) link.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Single-and-multiple-selection) in GitHub
