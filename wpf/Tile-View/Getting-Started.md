@@ -57,8 +57,7 @@ The [TileViewControl](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.S
 1. Create a WPF project in Expression Blend and refer the following assemblies.
 
    1. Syncfusion.Shared.Wpf
-   2. Syncfusion.Core
-
+   
 2. Drag TileViewControl from the Toolbox and drop it in the Designer area. 
 
      ![TileViewControl by Blend Designer](Getting-Started_images/Getting-Started_img5.png)
