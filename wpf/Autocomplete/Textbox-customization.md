@@ -138,4 +138,4 @@ This feature allows to set the drop-down icon for the text box control using the
 ![DropdownIcon](Textbox_customization_images/DropDownIcon.png)
 
 
-Get the [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Textbox-customization) from GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Textbox-customization) in GitHub

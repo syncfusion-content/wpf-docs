@@ -346,7 +346,7 @@ To show the image in token using the [ImageMemberPath](https://help.syncfusion.c
 ![ImageMemberPath](AutoComplete_and_filtering_images/ImageMemberPath.png)
 
 
-Get the [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/ImageMemberPath) from GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/ImageMemberPath) in GitHub
 
 
 ## Display a message when suggestions are empty 
@@ -377,4 +377,4 @@ When the entered item is not in the suggestion list, AutoComplete displays a tex
 
 
 
-Get the [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/AutoComplete-and-filtering) from GitHub.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/AutoComplete-and-filtering) in GitHub
