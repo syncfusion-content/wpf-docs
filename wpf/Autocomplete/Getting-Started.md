@@ -217,4 +217,4 @@ Index of the selected items can be retrieved using the [SuggestionIndex](https:/
 
 For further details, refer to the [Retrieving SelectedValue](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#retrieving-selectedvalue) and [Setting and retrieving SelectedItem](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#setting-and-retrieving-selecteditem).
 
-Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_Started_Sample-45883559) link.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Getting-Started) in GitHub
