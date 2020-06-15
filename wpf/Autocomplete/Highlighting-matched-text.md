@@ -68,4 +68,4 @@ It highlights the matching character that presents everywhere in the suggestion 
 ![Multiple Occurrance](Highlighting_matched_text_images/MultipleOccurrance.png)
 
 
-Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/TextHighlightMode_Sample-1983909002) link.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/TextHighlightMode) in GitHub

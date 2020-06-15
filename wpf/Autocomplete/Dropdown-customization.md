@@ -185,4 +185,4 @@ The [PopupDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInpu
 
 
 
-Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Dropdown_customization_Sample-901636434) link.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Dropdown-customization) in GitHub

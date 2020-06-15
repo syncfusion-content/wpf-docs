@@ -33,4 +33,4 @@ The control does not stick with one type of keyboard, so it can be populated the
 
 ![Diacritic](Diacritic_Sensitivity_images/Diacritic.png)
 
-Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Diacritic_Sample-1404432176) link.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Diacritic-sensitivity) in GitHub
