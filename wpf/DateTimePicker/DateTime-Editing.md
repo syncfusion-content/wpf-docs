@@ -9,7 +9,7 @@ documentation: ug
 
 # Change DateTime in WPF DateTimePicker (DateTimeEdit)
 
-The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) control provides support for changing date time using text box. It supports both free flow editing and mask based editing. 
+The [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) control provides support for changing date time using text box. It supports both free form editing and mask based editing. 
 
 ## Mask editing
 
@@ -235,7 +235,7 @@ class ViewModel : NotificationObject {
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Data-Binding) in GitHub
 
-## Free-form editing
+## Free form editing
 
 You can change the `DateTime` value like a normal textbox editing by setting the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property value as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus. If the entered value is invalid, it set the previously selected date as `DateTime` value. Otherwise, it will accept the given input.
 
@@ -253,7 +253,7 @@ dateTimeEdit.CanEdit = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DateTimeEdit with free flow editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
+![DateTimeEdit with free form editing](Editing-Support_images/wpf-datetimeedit-default-mode.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/Dropdown-Options) in GitHub
 
