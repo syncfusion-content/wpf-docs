@@ -47,7 +47,7 @@ tabControlExt.Items.Add(tabItemExt3);
 
 ## Edit tab item header at runtime
 
-You can edit the text of the tab header at runtime by double clicking the tab header or selected a tab and pressing `F2` or `Ctrl + F2` key. You can restrict this editing by using the [EnableLabelEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EnableLabelEdit.html) property value as `false`. The default value of `EnableLabelEdit` property is `true`.
+You can edit the text of the tab header at runtime by double clicking the tab header or selected a tab and pressing `Ctrl + F2` key. You can restrict this editing by using the [EnableLabelEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EnableLabelEdit.html) property value as `false`. The default value of `EnableLabelEdit` property is `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 You can customize the editing tab item header appearance for the each tab items by using the [EditHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~EditHeaderTemplate.html) property.
 
-Please refer [Custom UI for the edit tab item header](https://help.syncfusion.com/wpf/tabcontrol/databinding#custom-ui-for-the-edit-tab-item-header) topic to know more details about `EditHeaderTemplate`.
+Please refer [Editing tab header](https://help.syncfusion.com/wpf/tabcontrol/databinding#editing-tab-header) topic to know more details about `EditHeaderTemplate`.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Databinding) in GitHub
 
@@ -241,6 +241,10 @@ tabControlExt.HideHeaderOnSingleChild = true;
 ![TabControl contains single item without tab header](Tab-Item-Header_images/NoTabheader.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/Tab-Header) in GitHub
+
+## Customize tab item header
+
+You can change the tab item header background and foreground.
 
 ## Change tab item background
 

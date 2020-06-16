@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection Range | CalendarEdit | WPF | Syncfusion
-description: selection range
+title: Selection Range in WPF CalendarEdit| Syncfusion
+description: Learn about selection range support in Syncfusion WPF CalendarEdit control and more details about the control features.
 platform: wpf
 control: CalendarEdit
 documentation: ug
 ---
 
-# Selection Range
+# Selection Range in WPF CalendarEdit
 
 You can set the selection range mode for CalendarEdit control in two different ways, using the [SelectionRangeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SelectionRangeMode.html) property. They are as follows.
 
@@ -36,3 +36,29 @@ this.Content = calendarEdit;
 
 {% endhighlight %}
 {% endtabs %}
+
+## Block particular dates 
+
+You can restrict the user to select the dates within some range by blocking the particular dates in the `CalendarEdit`. You can also block the more date ranges by adding that date ranges into the [BlackoutDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDates.html) collection.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:CalendarEdit x:Name="calendarEdit">
+    <syncfusion:CalendarEdit.BlackoutDates>    
+        <syncfusion:BlackoutDatesRange StartDate="1/01/2020" EndDate="1/10/2020"/>
+        <syncfusion:BlackoutDatesRange StartDate="5/01/2020" EndDate="{x:Static system:DateTime.Today}"/>
+    </syncfusion:CalendarEdit.BlackoutDates>
+</syncfusion:CalendarEdit>
+
+
+{% endhighlight  %}
+{% highlight C# %}
+
+
+{% endhighlight  %}
+{% endtabs %}
+
+![Block particular dates in WPF CalendarEdit](Selecting-Multiple-Dates_images/BlackOutDays.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/Blackoutdates) in GitHub
