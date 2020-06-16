@@ -7,9 +7,9 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Diacritic Sensitivity
+# Diacritic sensitivity
 
-The control does not stick with one type of keyboard, so it can be populate the items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Enable or disable the diacritic sensitivity using the [IgnoreDiacritic](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreDiacritic.html) property. The following code example demonstrates how to enable the diacritic sensitivity. The items in the suggestion list will be populated by entering any diacritic character of that alphabet.
+The control does not stick with one type of keyboard, so it can be populated the items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Enable or disable the diacritic sensitivity using the [IgnoreDiacritic](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreDiacritic.html) property. The following code example demonstrates how to enable the diacritic sensitivity. The items in the suggestion list will be populated by entering any diacritic character of that alphabet.
 
 {% tabs %}
 
@@ -33,4 +33,4 @@ The control does not stick with one type of keyboard, so it can be populate the 
 
 ![Diacritic](Diacritic_Sensitivity_images/Diacritic.png)
 
-Get the sample from [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Diacritic_Sample-1404432176) link.
+N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/tree/master/Samples/Diacritic-sensitivity) in GitHub

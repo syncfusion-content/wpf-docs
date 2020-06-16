@@ -7,14 +7,16 @@ control: DateTimeEdit
 documentation: ug
 ---
 
-# DateTime formatting
+# DateTime formatting in WPF DateTimePicker (DateTimeEdit)
 
-The DateTime [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) helps you to specify the date-time display pattern for the `DateTimeEdit` control. The display format of the date in the `DateTimeEdit` control can be customized by the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) and [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) properties.
+you can specify the selected datetime display format in the [DateTimeEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeEdit.html) by using the predefined patterns and custom patterns.
 
 ## Predefined display patterns
 
-The `DateTimeEdit` control supports the following patterns: 
+You can display the selected date time in the predefined patterns
+by setting the pattern value to the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property. The default value of `Pattern` property is `ShortDate`.
 
+The `DateTimeEdit` control supports the following patterns:
 * LongDate 
 * LongTime 
 * ShortDate 
@@ -29,155 +31,145 @@ The `DateTimeEdit` control supports the following patterns:
 
 ![Setting date time pattern in WPF DateTimeEdit](Getting-Started_images/wpf-datetimeedit-pattern.png)
 
-The different display formats of the DateTime can be set by the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property. Also, the DateTimeEdit notifies that the pattern is changed through the [PatternChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~PatternChanged_EV.html) event. You can use the **OldValue** and **NewValue** properties to get the old and new pattern in the **PatternChanged** event. The following code snippet illustrates how to set the format as FullDateTime:
-
 {% tabs %}
-
 {% highlight XAML %}
 
-<Grid x:Name="grid">
-   <!--Setting FullDateTime Pattern-->
-   <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="235" 
-                            DateTime="7/15/2019" Pattern="FullDateTime"
-                            PatternChanged="DateTimeEdit_PatternChanged" />
-</Grid>
+<syncfusion:DateTimeEdit Pattern="FullDateTime" 
+                         Name="dateTimeEdit" />
+
 
 {% endhighlight  %}
-
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new  Syncfusion.Windows.Shared.DateTimeEdit();
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.Pattern = DateTimePattern.FullDateTime;
 
-public MainWindow()
-{
-    InitializeComponent();
-    dateTimeEdit.Width = 235;
-    dateTimeEdit.Height = 25;
-    dateTimeEdit.DateTime = new DateTime(2019, 7, 15);
-   
-    //Setting predefined FullDateTime pattern
-    dateTimeEdit.Pattern = DateTimePattern.FullDateTime;
-
-    // Invoked pattern changed event
-    dateTimeEdit.PatternChanged += DateTimeEdit_PatternChanged;
-
-    this.grid.Children.Add(dateTimeEdit);
-}
-
-private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-{
-   Console.WriteLine("PatternChanged event is fired"); 
-}
-
-{% endhighlight  %}
-
-{% endtabs %} 
+{% endhighlight %}
+{% endtabs %}
 
 ![Setting full date time pattern in WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-fulldatetime-pattern.png)
 
-## Custom display pattern
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/DateTimeFormatting) in GitHub
 
-You can also set the custom pattern for displaying the date in the DateTimeEdit control by using the [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) property. Also, the DateTimeEdit notifies that the custom pattern is changed through the [CustomPatternChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPatternChanged_EV.html) event. You can use the **OldValue** and **NewValue** properties to get the old and new custom pattern in the **CustomPatternChanged** event.
+### Pattern Changed notification
+
+The `DateTimeEdit` notifies that the pattern is changed through the [PatternChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~PatternChanged_EV.html) event. You can get the old and new pattern by using the `OldValue` and `NewValue` properties in the `PatternChanged` event.
 
 {% tabs %}
-
-{% highlight XAML %}
-
-<Grid x:Name="grid">
-    <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
-                             DateTime="7/15/2019" CustomPatternChanged="DateTimeEdit_CustomPatternChanged" 
-                             Pattern="CustomPattern" CustomPattern="MM**dd**yy" />
-</Grid>
-
-{% endhighlight %}
-
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.PatternChanged += DateTimeEdit_PatternChanged;
 
-public MainWindow()
-{
-    InitializeComponent();
-    dateTimeEdit.Width = 200;
-    dateTimeEdit.Height = 25;
-    dateTimeEdit.DateTime = new DateTime(2019, 7, 15);
-    dateTimeEdit.Pattern = DateTimePattern.CustomPattern;
-
-    //Setting Custom Pattern
-    dateTimeEdit.CustomPattern = "MM**dd**yy";
-
-    // Invoked CustomPatternChanged event of DateTimeEdit
-    dateTimeEdit.CustomPatternChanged += DateTimeEdit_CustomPatternChanged;
-
-    this.grid.Children.Add(dateTimeEdit);
-}
-
-private void DateTimeEdit_CustomPatternChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-{
-    Console.WriteLine("CustomPatternChanged event is fired"); 
+private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    //Get old and new pattern values
+    var oldPattern = e.OldValue;
+    var newPattern = e.NewValue;
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-{% endtabs %} 
+## Change datetime format
+
+you can change the date time format by using the [DateTimeFormat](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~DateTimeFormat.html)  property. The default value of `` property is ``.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DateTimeEdit Name="dateTimeEdit">
+    <syncfusion:DateTimeEdit.DateTimeFormat>
+        <global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>
+    </syncfusion:DateTimeEdit.DateTimeFormat>
+</syncfusion:DateTimeEdit>
+
+{% endhighlight  %}
+{% highlight C# %}
+
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.DateTimeFormat = new DateTimeFormatInfo()
+{ 
+    ShortDatePattern = "MM/dd/yy hh:mm:ss" 
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting datetime format for WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-DateTimeFormat.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/DateTimeFormatting) in GitHub
+
+## Custom display pattern
+
+You can also set the custom pattern for displaying the datetime in the `DateTimeEdit` control by using the [CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) property. You can enable the custom display pattern by setting the `Pattern` property value as `CustomPattern`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DateTimeEdit CustomPattern="MM**dd**yy" 
+                         Pattern="CustomPattern" 
+                         Name="dateTimeEdit" />
+
+
+{% endhighlight  %}
+{% highlight C# %}
+
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.CustomPattern = "MM**dd**yy";
+dateTimeEdit.Pattern = DateTimePattern.CustomPattern;
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Setting custom pattern in WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-custom-pattern.png)
 
-N>[CustomPattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPattern.html) support can be enabled by setting the [Pattern](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~Pattern.html) property to the DateTimePattern.CustomPattern.
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/DateTimeFormatting) in GitHub
+
+### Custom pattern Changed notification
+
+The `DateTimeEdit` notifies that the custom pattern is changed through the [CustomPatternChanged](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CustomPatternChanged_EV.html) event. You can get the old and new custom pattern by using the `OldValue` and `NewValue` properties in the `CustomPatternChanged` event.
+
+{% tabs %}
+{% highlight C# %}
+
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.CustomPatternChanged += dateTimeEdit_CustomPatternChanged;
+
+private void dateTimeEdit_CustomPatternChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+    //Get old and new custom pattern values
+    var oldCustomPattern = e.OldValue;
+    var newCustomPattern = e.NewValue;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/DateTimeFormatting) in GitHub
 
 ## Change culture 
 
-The DateTimeEdit control provides globalization support that allows you to design and develop a world-ready application that supports localized interfaces and regional data for users in multiple cultures. By default, the DateTimeEdit supports system’s current culture. You can change the culture of DateTimeEdit by using the [CultureInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CultureInfo.html) property. 
+By default, the `DateTimeEdit` supports system’s current culture. You can change the culture of `DateTimeEdit` by using the [CultureInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CultureInfo.html) property. Based on the value of `CultureInfo` property, `DateTimeEdit` control elements localized.
+
+![Setting various culture in WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-culture1.png)
 
 {% tabs %}
-
 {% highlight XAML %}
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
-                         DateTime="7/15/2019" Pattern="LongDate" 
-                         CultureInfo="en-US" />
+<syncfusion:DateTimeEdit CultureInfo="en-US" 
+                         Pattern="FullDateTime"
+                         Name="dateTimeEdit" />
+
 
 {% endhighlight  %}
-
 {% highlight C# %}
 
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
-dateTimeEdit.Width = 200;
-dateTimeEdit.Height = 25;
-dateTimeEdit.DateTime = new DateTime(2019, 7, 15);
-dateTimeEdit.Pattern = DateTimePattern.LongDate;
-dateTimeEdit.CultureInfo = new CultureInfo("en-US");
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-
-![Setting culture in WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-culture.png)
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" 
-                         DateTime="7/15/2019" Pattern="LongDate" 
-                         CultureInfo="fr-FR" />
+DateTimeEdit dateTimeEdit = new DateTimeEdit();
+dateTimeEdit.CultureInfo = new CultureInfo("fr-FR");
+dateTimeEdit.Pattern = DateTimePattern.FullDateTime;
 
 {% endhighlight %}
+{% endtabs %}
 
-{% highlight C# %}
+![Setting US culture in WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-culture.png)
 
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new  Syncfusion.Windows.Shared.DateTimeEdit();
-dateTimeEdit.Width = 200;
-dateTimeEdit.Height = 25;
-dateTimeEdit.DateTime = new DateTime(2019, 7, 15);
-dateTimeEdit.Pattern = DateTimePattern.LongDate;
-dateTimeEdit.CultureInfo = new CultureInfo("fr-FR");
-
-{% endhighlight  %}
-
-{% endtabs %} 
-
-![Setting french culture in WPF DateTimeEdit](DateTime-Format_images/wpf-datetimeedit-french-culture.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-date-time-edit-examples/tree/master/Samples/DateTimeFormatting)
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-examples/tree/master/Samples/DateTimeFormatting) in GitHub
