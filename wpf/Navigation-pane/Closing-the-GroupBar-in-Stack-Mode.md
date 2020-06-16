@@ -89,6 +89,6 @@ GroupBar.StackVisibleItemsCount = 2;
 {% endhighlight %}
 {% endtabs %}
 
-![Maximum Number of Visible Items](GroupBar_StackMode_images/Maximumnumberofvisibleitems.png)
+![Maximum Number of Visible Items of WPF navigation pane](GroupBar_StackMode_images/Maximumnumberofvisibleitems.png)
 
 Note: This property is applicable for SfSkinManager Office2016 themes. 
