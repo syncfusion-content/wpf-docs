@@ -289,9 +289,9 @@ N> View [Sample](https://github.com/SyncfusionExamples/wpf-datetimepicker-exampl
 
 ## Editing date time
 
-`DateTimeEdit` supports both free flow editing(like normal textbox editing) and mask based editing. Editing modes can be changed using the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property of `DateTimeEdit`. You can enable free low editing mode by setting the `CanEdit` property as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus in the free flow editing mode. 
+`DateTimeEdit` supports both free form editing(like normal textbox editing) and mask based editing. Editing modes can be changed using the [CanEdit](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DateTimeBase~CanEdit.html) property of `DateTimeEdit`. You can enable free low editing mode by setting the `CanEdit` property as `true`. Input given by an end-user, will be validated when pressing `Enter` key or if control lost its focus in the free form editing mode. 
 
- The following code example demonstrates free flow editing.
+ The following code example demonstrates free form editing.
 
 {% tabs %}
 {% highlight XAML %}
