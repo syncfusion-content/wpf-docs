@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | ReportDesigner | wpf | Syncfusion
-description: getting started
+description: Learn here about getting started with Syncfusion WPF Report Designer control and more details.
 platform: wpf
 control: Report Designer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF ReportDesigner
 
 ## Creating Report Designer through Visual Studio
 
