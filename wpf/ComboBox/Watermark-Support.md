@@ -7,7 +7,7 @@ control: ComboBoxAdv
 documentation: ug
 ---
 
-## Default Text
+# Default Text
 
 It displays the default text in the ComboBoxAdv when none of the items is selected in the drop down list.
 
