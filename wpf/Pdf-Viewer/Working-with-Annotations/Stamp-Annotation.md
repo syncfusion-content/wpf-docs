@@ -207,6 +207,63 @@ The following image illustrates how to delete the included annotation from the P
 
 ![Delete stamp annotation](Annotation-images\Stamp-Annotation-6.png)
 
+## Add custom stamps in the toolbar
+
+The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) allows you to add the custom stamps as images in the toolbar using the [StampAnnotations](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerToolbarSettings~StampAnnotations.html) collection. You can select and include the stamp at the required location of the page using a mouse-tap. Refer to the following code to clear the existing standard stamps and to add a custom stamp in the toolbar.
+
+{% tabs %}
+{% highlight C# %}
+
+using Syncfusion.Windows.PdfViewer;
+using System;
+using System.Windows;
+using System.Windows.Media.Imaging;
+
+namespace PdfViewerDemo
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        # region Constructor
+        public MainWindow()
+        {
+            InitializeComponent();
+        
+            //load the PDF document
+            pdfViewer.Load(@"HTTP Succinctly.pdf");
+
+            //wire the DocumentLoaded event
+            pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
+        }
+        #endregion
+
+        private void PdfViewer_DocumentLoaded(object sender, System.EventArgs args)
+        {
+            // Clear the existing standard stamps if not needed.
+            pdfViewer.ToolbarSettings.StampAnnotations.Clear();
+
+            //Load the custom image from the local disk.
+            System.Windows.Controls.Image customImage = new System.Windows.Controls.Image();
+            customImage.Source = new BitmapImage(new Uri(@"..\..\Data\AdventureCycle.jpg", UriKind.RelativeOrAbsolute));
+            
+            //Create custom stamp from the image.
+            PdfStampAnnotation customStamp = new PdfStampAnnotation(customImage);
+
+            //Add the custom stamp in the toolbar
+            pdfViewer.ToolbarSettings.StampAnnotations.Add(customStamp);
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+After executing the code, you can see the custom stamp has been added in the toolbar as shown in the following picture.
+
+![Custom Stamp](Annotation-images\custom-stamp.png)
+
 ## Keyboard shortcuts
 
 The below keyboard shortcuts are available to customize the annotation in the PDF document.
