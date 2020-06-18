@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stamp Annotation in PDF Viewer WPF | Syncfusion
-description: Adding, modifying and deleting stamp annotation in PDF document using Syncfusion PDF Viewer WPF.
+description: PDF Viewer provides the ability to add, move, resize and deleting stamp annotation in PDF document. It also supports adding custom stamps as images.
 platform: wpf
 control: PDF Viewer
 documentation: ug
@@ -231,10 +231,10 @@ namespace PdfViewerDemo
         {
             InitializeComponent();
         
-            //load the PDF document
+            //load the PDF document.
             pdfViewer.Load(@"HTTP Succinctly.pdf");
 
-            //wire the DocumentLoaded event
+            //wire the DocumentLoaded event.
             pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
         }
         #endregion
@@ -251,7 +251,7 @@ namespace PdfViewerDemo
             //Create custom stamp from the image.
             PdfStampAnnotation customStamp = new PdfStampAnnotation(customImage);
 
-            //Add the custom stamp in the toolbar
+            //Add the custom stamp in the toolbar.
             pdfViewer.ToolbarSettings.StampAnnotations.Add(customStamp);
         }
     }
