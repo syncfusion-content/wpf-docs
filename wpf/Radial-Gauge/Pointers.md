@@ -1035,7 +1035,7 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 {% endhighlight %}
 {% endtabs %}
 
-![Pointers dragging](Pointers_images/Pointer_dragging.gif)
+![Pointer dragging](Pointers_images/Pointer_dragging.gif)
 
 ## Events
 
