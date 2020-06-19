@@ -39,6 +39,27 @@ colorPickerPalette.Height = 40;
 
 Here, `Red` color is selected color in the `ColorPickerPalette`.
 
+## Setting null value
+
+You can set a null color value for the selected color by setting the color code `#00000000` or `Colors.Transparent` for `Color` property to indicate the null value.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette Color="Transparent"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+colorPickerPalette.Color = Colors.Transparent;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette with selected null color](Dealing-with-ColorPickerPalette_images/Nullvalue.png)
+
 ## Setting automatic color
 
 If we want to change the default selected color on application launching, set the value for [AutomaticColor](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~AutomaticColor.html) property. If we changed the selected color, then we can easily make the default color as selected color by clicking the automatic color panel. We can hide the automatic color visibility by setting the [AutomaticColorVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~AutomaticColorVisibility.html) property value as `Collapsed`. The default value of `AutomaticColor` property is `Black` and the default value of `AutomaticColorVisibility` property is `Visible`.
@@ -457,3 +478,37 @@ We can set the icons for control header which is placed left to the DropDown but
 ![ColorPickerPalette popup size changed](Dealing-with-ColorPickerPalette_images/Icons.png)
 
 Click [here](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) to download the sample that showcases features and  different type color items with its panel visibility customization.
+
+## Hide the drop down button
+
+You can hide the dropdown button in the `ColorPickerPalette` by setting the dropdown button visibility as `Collapsed`. You can open a popup color palette by clicking the header of the `ColorPickerPalette`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette Loaded="ColorPickerPalette_Loaded"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+colorPickerPalette.Loaded += ColorPickerPalette_Loaded;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight C# %}
+
+private void ColorPickerPalette_Loaded(object sender, RoutedEventArgs e) {
+    var dropDown = (Border)(sender as ColorPickerPalette).Template.FindName("UpDownBorder", colorPickerPalette);
+    if (dropDown != null) {
+        dropDown.Visibility = Visibility.Collapsed;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette hides the dropdown button](Dealing-with-ColorPickerPalette_images/HiddenDropDown.gif)

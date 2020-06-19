@@ -180,6 +180,32 @@ TryCast(DockingManager1.DocContainer, DocumentContainer).IsAllowMDIResize = Fals
 
 {% endtabs %}
 
+## Closing TDI tab items on mouse middle click
+
+You can close the document windows by clicking the mouse middle button on the document header. You can enable it by using the [CloseTabOnMiddleClick](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CloseTabOnMiddleClick.html) property as `true` and the [ContainerMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ContainerMode.html) is set to `TDI` and [CanClose](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~CanClose.html) property as `true`. The default value of `CloseTabOnMiddleClick` property is `false`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:DockingManager x:Name="DockingManager1"
+                           UseDocumentContainer="True"
+                           ContainerMode="TDI" 
+                           CloseTabOnMiddleClick="True">
+    <ContentControl x:Name="Content1"
+                    syncfusion:DockingManager.Header="Document1"
+                    syncfusion:DockingManager.State="Document" 
+                    syncfusion:DockingManager.CanClose="True"/>
+</syncfusion:DockingManager>
+
+{% endhighlight %}
+{% highlight C# %}
+
+this.DockingManager1.CloseTabOnMiddleClick = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Different Keyboard Navigation Modes
 
 DockingManager allows to navigate between children (Both  TDI and MDI) windows easily using the keyboard keys with combination of `CTRL` `+` `TAB` in five different modes by [SwitchMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SwitchMode.html) property of the DockingManager.

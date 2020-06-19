@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Text Navigation in Syntax Editor | Syncfusion 
-description: Explains about Text Navigation support in Syntax Editor for WPF
+description: This section gives detailed explanation about the Text Navigation support in Syntax Editor control for WPF
 platform: wpf
 control: Syntax Editor
 documentation: ug
 ---
-# Text Navigation
+# Text Navigation of EditControl
 
-Syntax Editor offers extensive support to text navigation. Users can perform navigation between characters, words, and line items using the built-in functions or keyboard shortcut keys. This section briefly explains navigation of text in the Syntax Editor.
+Syntax Editor offers extensive support to text navigation. Users can perform navigation between characters, words, and line items using the built-in functions or keyboard shortcut keys.
 
 ## Programmatic Navigation
 
@@ -16,105 +16,84 @@ Syntax Editor offers extensive support to text navigation. Users can perform nav
 
 The following functions enables text navigation in the Syntax Editor in terms of characters or columns.
 
-<table>
-<tr>
-<td>
-<b>Functions</b><br/><br/></td><td>
-<b>Descriptions</b><br/><br/></td></tr>
-<tr>
-<td>
+1. [MoveToPreviousIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousIndex.html) to move cursor position in backward position. 
 
-[MoveToPreviousIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousIndex.html)<br/><br/></td><td>
-Moves the cursor to a position backward in current line item.<br/><br/></td></tr>
-<tr>
-<td>
+2. [MoveToNextIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextIndex.html) to move cursor position in forward position in .
 
-[MoveToNextIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextIndex.html)<br/><br/></td><td>
-Moves the cursor to a position forward in current line item.<br/><br/></td></tr>
-</table>
+{% tabs %}
 
 {% highlight C# %}
 
+//To move cursor to previous index
 this.editControl.MoveToPreviousIndex();
 
-this.editControl.MoveToNextIndex();
+{% endhighlight %}
+
+{% highlight VB %}
+
+//To move cursor to previous index
+Me.editControl.MoveToPreviousIndex()
 
 {% endhighlight %}
+
+{% endtabs %}
+
 
 ### Word based navigation
 
 The following functions enables text navigation in the Syntax Editor in terms of words.
 
-<table>
-<tr>
-<td>
-<b>Functions</b><br/><br/></td><td>
-<b>Descriptions</b><br/><br/></td></tr>
-<tr>
-<td>
+1. [MoveToNextWord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextWord.html) moves cursor to start position of next word.
 
-[MoveToNextWord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextWord.html)<br/><br/></td><td>
-Moves the cursor to the start position of the next word.<br/><br/></td></tr>
-<tr>
-<td>
+2. [MoveToPreviousWord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousWord.html) moves cursor to start position of previous word.
 
-[MoveToPreviousWord](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousWord.html)<br/><br/></td><td>
-Moves the cursor to the start position of the previous word.<br/><br/></td></tr>
-</table>
+{% tabs %}
 
 {% highlight C# %}
 
+//To move cursor to next word
 this.editControl.MoveToNextWord();
 
-this.editControl.MoveToPreviousWord();
+{% endhighlight %}
+
+{% highlight VB %}
+
+//To move cursor to next word
+Me.editControl.MoveToPreviousWord()
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Line based navigation
 
 The following functions enables text navigation in the Syntax Editor in terms of lines.
 
-<table>
-<tr>
-<td>
-<b>Functions</b><br/><br/></td><td>
-<b>Descriptions</b><br/><br/></td></tr>
-<tr>
-<td>
+1. [MoveToNextLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextLine.html) to move cursor to same position on next line.
 
+2. [MoveToPreviousLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousLine.html) to move cursor to same position on previous line.
 
-[MoveToNextLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToNextLine.html)<br/><br/></td><td>
+3. [MoveToLineStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineStart.html) to move cursor to start postion of current line.
 
-Moves the cursor to the same position on the next line item.<br/><br/></td></tr>
-<tr>
-<td>
+4. [MoveToLineEnd](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineEnd.html) to move cursor to end postion of current line.
 
-[MoveToPreviousLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToPreviousLine.html) <br/><br/></td><td>
-
-Moves the cursor to the same position on the previous line item.<br/><br/></td></tr>
-<tr>
-<td>
-
-[MoveToLineStart](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineStart.html)<br/><br/></td><td>
-Moves the cursor to the start position of the current line item.<br/><br/></td></tr>
-<tr>
-<td>
-
-[MoveToLineEnd](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Edit.Wpf~Syncfusion.Windows.Edit.EditControl~MoveToLineEnd.html)<br/><br/></td><td>
-Moves the cursor to the end position of the current line item.<br/><br/></td></tr>
-</table>
+{% tabs %}
 
 {% highlight C# %}
 
+//To move cursor to next line
 this.editControl.MoveToNextLine();
 
-this.editControl.MoveToPreviousLine();
+{% endhighlight %}
 
-this.editControl.MoveToLineStart();
+{% highlight VB %}
 
-this.editControl.MoveToLineEnd();
+//To move cursor to next line
+Me.editControl.MoveToNextLine()
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Keyboard Navigation
 
@@ -127,27 +106,26 @@ The following keyboard shortcuts are supported for cursor navigation in Syntax E
 <b> Descriptions </b> <br/><br/></td></tr>
 <tr>
 <td>
-Right arrow<br/><br/><br/><br/></td><td>
-Moves the cursor to a position forward in the current line item.<br/><br/></td></tr>
+Right arrow<br/><br/></td><td>Moves the cursor to a position forward in the current line item.<br/><br/></td></tr>
 <tr>
 <td>
-Left arrow<br/><br/><br/><br/></td><td>
+Left arrow<br/><br/></td><td>
 Moves the cursor to the end position of the current line item.<br/><br/></td></tr>
 <tr>
 <td>
-Down arrow<br/><br/><br/><br/></td><td>
+Down arrow<br/><br/></td><td>
 Moves the cursor to the same position on the next line item.<br/><br/></td></tr>
 <tr>
 <td>
-Up arrow<br/><br/><br/><br/></td><td>
+Up arrow<br/><br/></td><td>
 Moves the cursor to the same position on the previous line item.<br/><br/></td></tr>
 <tr>
 <td>
-Home<br/><br/><br/><br/></td><td>
+Home<br/><br/></td><td>
 Moves the cursor to the start position of the current line item.<br/><br/></td></tr>
 <tr>
 <td>
-End<br/><br/><br/><br/></td><td>
+End<br/><br></td><td>
 Moves the cursor to the end position of the current line item. <br/><br/></td></tr>
 <tr>
 <td>
@@ -159,10 +137,10 @@ Ctrl + Left arrow<br/><br/></td><td>
 Moves the cursor to the start position of the previous word.<br/><br/></td></tr>
 <tr>
 <td>
-Ctrl + Home<br/><br/><br/><br/></td><td>
-Moves the cursor to the document start position.<br/><br/><br/><br/></td></tr>
+Ctrl + Home<br/><br/></td><td>
+Moves the cursor to the document start position.<br/><br/></td></tr>
 <tr>
 <td>
-Ctrl + End<br/><br/><br/><br/></td><td>
+Ctrl + End<br/><br/></td><td>
 Moves the cursor to the end position of document. <br/><br/></td></tr>
 </table>
