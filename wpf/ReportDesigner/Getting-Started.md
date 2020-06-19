@@ -7,7 +7,7 @@ control: Report Designer
 documentation: ug
 ---
 
-# Getting Started with WPF ReportDesigner
+# Getting Started with WPF Report Designer
 
 ## Creating Report Designer through Visual Studio
 
