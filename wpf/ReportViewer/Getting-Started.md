@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | ReportViewer | WPF | Syncfusion
-description: Learn here about getting started with Syncfusion WPF Report Viewer control and more details.
+description: You can learn here about getting started with Syncfusion WPF Report Viewer control and more details.
 platform: wpf
 control: ReportViewer
 documentation: ug
