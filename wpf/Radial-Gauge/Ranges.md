@@ -618,3 +618,65 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img7.png)
 
+### Setting gradient color for range
+
+You can give color transition to range by specifying the different colors based on range value.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale>
+                    <gauge:CircularScale.Ranges>
+                        <gauge:CircularRange StartValue="0" EndValue="100" Offset="0.6"
+                                       InnerStartOffset = "0.83" InnerEndOffset = "0.6" OuterStartOffset = "0.85" OuterEndOffset =" 0.8">
+                            <gauge:CircularRange.GradientStops>
+                                <gauge:GaugeGradientStop Value="35" Color="Green"/>
+                                <gauge:GaugeGradientStop Value="65" Color="#FFDD00"/>
+                                <gauge:GaugeGradientStop Value="100" Color="Red"/>
+                            </gauge:CircularRange.GradientStops>
+                        </gauge:CircularRange>
+                    </gauge:CircularScale.Ranges>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+         SfCircularGauge sfCircularGauge = new SfCircularGauge();
+         CircularScale mainscale = new CircularScale();
+         CircularRange circularRange = new CircularRange();
+         circularRange.StartValue = 0;
+         circularRange.EndValue = 100;
+         circularRange.InnerStartOffset = 0.83;
+         circularRange.InnerEndOffset = 0.6;
+		 circularRange.OuterStartOffset = 0.85;
+		 circularRange.OuterEndOffset = 0.8;
+         ObservableCollection<GaugeGradientStop> gradientColor1 = new ObservableCollection<GaugeGradientStop>();
+         GaugeGradientStop gaugeGradientStop = new GaugeGradientStop();
+         gaugeGradientStop.Value = 35;
+         gaugeGradientStop.Color = Colors.Green;
+         circularRange.GradientStops.Add(gaugeGradientStop);
+         GaugeGradientStop gaugeGradientStop1 = new GaugeGradientStop();
+         gaugeGradientStop1.Value = 65;
+         gaugeGradientStop1.Color = Colors.Yellow;
+         circularRange.GradientStops.Add(gaugeGradientStop1);
+         GaugeGradientStop gaugeGradientStop2 = new GaugeGradientStop();
+         gaugeGradientStop2.Value = 100;
+         gaugeGradientStop2.Color = Colors.Red;
+         circularRange.GradientStops.Add(gaugeGradientStop2);
+         mainscale.Ranges.Add(circularRange);
+         CircularPointer circularPointer = new CircularPointer();
+         circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+         mainscale.Pointers.Add(circularPointer);
+         fCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Ranges - GradientStops](Ranges_images/Gradient-image.png)
