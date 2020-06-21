@@ -47,4 +47,4 @@ comboBox.DefaultText = "..Choose Items..";
 {% endhighlight %}
 {% endtabs %}
 
-![](ComboBoxAdv_images/ComboBoxAdv_img10.png)
+![Adding default text of watermark-support in WPF combobox](ComboBoxAdv_images/ComboBoxAdv_img10.png)
