@@ -7,7 +7,7 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-## Scales 
+# Scales in WPF Radial Gauge 
 
 Scales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale.html) elements, which integrate labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 
