@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Elements | OLAP Client | WPF | Syncfusion
-description: You can learn here about elements support in Syncfusion WPF OLAP Client control and more details.
+description: You can learn here about OLAP elements support in Syncfusion WPF OLAP Client control and more details.
 platform: wpf
 control: OLAP Client
 documentation: ug
