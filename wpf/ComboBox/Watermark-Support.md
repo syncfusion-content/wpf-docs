@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DefaultText Support | wpf | Syncfusion
-description: Learn about watermark support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more details. 
+description: Learn here about watermark support in Syncfusion WPF ComboBox (ComboBoxAdv) control and more details. 
 platform: wpf
 control: ComboBoxAdv
 documentation: ug
