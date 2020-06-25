@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  Markers in Syncfusion Map control
-description: This section describes about adding marker, customizing marker, marker alignment support in WPF SfMaps control.
+description: This section describes about adding marker, customize the marker, marker alignment, customize the labels and Marker selected event support in WPF SfMaps control.
 platform: wpf
 control: SfMap
 documentation: ug
 ---
 
-# Markers in WPF Maps 
+# Markers in WPF SfMaps control
 
 Markers are used to show some messages on maps.
 
