@@ -134,7 +134,7 @@ See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/auto
 
 ## Multiple selection using delimiter 
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter.Delimiter character can be set with the [Delimiter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property. Enable the Delimiter mode need to set the MulitiSelectMode as Delimiter. The default value of Delimiter is comma. 
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter.Delimiter character can be set with the [Delimiter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property. Enable the Delimiter mode need to set the MultiSelectMode as Delimiter. The default value of Delimiter is comma. 
 
 
 {% tabs %}
@@ -331,7 +331,7 @@ EmployeeViewModel Class:
 
 ### Retrieving SelectedValue 
 
-The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedValue.html) property is used to retrieve the selected values from the suggestion list, it can be retrieved the value depends on the [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ValueMemberPath.html) propery. 
+The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedValue.html) property is used to retrieve the selected values from the suggestion list, it can be retrieved the value depends on the [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ValueMemberPath.html) property. 
 
 
 {% tabs %}
