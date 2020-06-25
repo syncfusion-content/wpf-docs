@@ -27,7 +27,7 @@ Any number of markers can be added to the shape file layers using the `Markers` 
 
         <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"  Markers="{Binding Models}" ItemsSource="{Binding Models}">
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"  Markers="{Binding Models}" >
                 </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>
@@ -102,7 +102,7 @@ The maps control provides the support for defining the custom markers using the 
     <Grid>
         <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"  Markers="{Binding Models}" ItemsSource="{Binding Models}" MarkerTemplate="{StaticResource markerTemplate}">
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp"  Markers="{Binding Models}"  MarkerTemplate="{StaticResource markerTemplate}">
                </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>
@@ -146,7 +146,7 @@ The shape of a marker icons can be customized using the `MarkerIconType` propert
 
          <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerIconType="Diamond" MarkerIconSize="30,20"  MarkerIconFill="Green"  Markers="{Binding Models}" ItemsSource="{Binding Models}" >
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerIconType="Diamond" MarkerIconSize="30,20"  MarkerIconFill="Green"  Markers="{Binding Models}" >
                </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>
@@ -181,7 +181,7 @@ You can set the image as marker icon by setting the icon type as an image. Set `
 
         <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerIconType="Image" MarkerIconSource="pin.png" MarkerIconSize="30,30" Markers="{Binding Models}" ItemsSource="{Binding Models}" >
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerIconType="Image" MarkerIconSource="pin.png" MarkerIconSize="30,30" Markers="{Binding Models}"  >
                </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>
@@ -220,7 +220,7 @@ You can customize the marker labels using the `FontSize`, `LabelForeground`, `Fo
 
          <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerLabelFontSize="30" MarkerLabelForeground="Red" MarkerLabelFontStyle="Italic" MarkerLabelFontWeight="Bold" MarkerLabelFontFamily="Segoe UI" Markers="{Binding Models}" ItemsSource="{Binding Models}" >
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerLabelFontSize="30" MarkerLabelForeground="Red" MarkerLabelFontStyle="Italic" MarkerLabelFontWeight="Bold" MarkerLabelFontFamily="Segoe UI" Markers="{Binding Models}" >
                </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>
@@ -265,7 +265,7 @@ The `HorizontalAlignment` property is used to position the marker icon in x-axis
         <Grid>
             <syncfusion:SfMap>
                 <syncfusion:SfMap.Layers>
-                    <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.usa_state.shp" MarkerIconSize="30,30" MarkerLabelFontSize="30" MarkerHorizontalAlignment="Near" Markers="{Binding Models}" ItemsSource="{Binding Models}" >
+                    <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.usa_state.shp" MarkerIconSize="30,30" MarkerLabelFontSize="30" MarkerHorizontalAlignment="Near" Markers="{Binding Models}"  >
                     </syncfusion:ShapeFileLayer>
                 </syncfusion:SfMap.Layers>
             </syncfusion:SfMap>
@@ -305,7 +305,7 @@ The `VerticalAlignment` property is used to position the marker icon in y-axis. 
         <Grid>
             <syncfusion:SfMap>
                 <syncfusion:SfMap.Layers>
-                    <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.usa_state.shp" MarkerIconSize="30,30" MarkerLabelFontSize="30" MarkerVerticalAlignment="Near" Markers="{Binding Models}" ItemsSource="{Binding Models}" >
+                    <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.usa_state.shp" MarkerIconSize="30,30" MarkerLabelFontSize="30" MarkerVerticalAlignment="Near" Markers="{Binding Models}" >
                     </syncfusion:ShapeFileLayer>
                 </syncfusion:SfMap.Layers>
             </syncfusion:SfMap>
@@ -355,7 +355,7 @@ If you add any view for marker using the `MarkerTemplate` property from `MarkerS
     <Grid>
         <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerSelected="ShapeFileLayer_MarkerSelected" MarkerSelectionMode="Single"  Markers="{Binding Models}" ItemsSource="{Binding Models}" >
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerSelected="ShapeFileLayer_MarkerSelected" MarkerSelectionMode="Single"  Markers="{Binding Models}"  >
                </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>
@@ -413,7 +413,7 @@ If you set any view for the `MarkerTemplate` property of MarkerSelectedEventArgs
     <Grid>
         <syncfusion:SfMap>
             <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerSelected="ShapeFileLayer_MarkerSelected" Markers="{Binding Models}" ItemsSource="{Binding Models}" >
+                <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.world1.shp" MarkerSelected="ShapeFileLayer_MarkerSelected" Markers="{Binding Models}"  >
                </syncfusion:ShapeFileLayer>
             </syncfusion:SfMap.Layers>
         </syncfusion:SfMap>

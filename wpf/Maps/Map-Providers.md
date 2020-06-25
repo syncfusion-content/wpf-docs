@@ -450,3 +450,75 @@ Calculate the imagery layer pixel bounds while zooming, panning, and Geo-Coordin
 {% endhighlight %}
 
 {% endtabs %}
+
+## Pinch Zooming
+
+If you want to zoom the imagery layer using fingers by touch, then you have to set `IsManipulationEnabled` property to true as shown in the below code snippet.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <Grid>
+                    <Canvas Margin="-12,-30,0,0">
+                        <Image Source="pin.png" Height="30" />
+                        <TextBlock HorizontalAlignment="Center" Margin="0,30,0,0" FontSize="20" FontFamily="Segoe UI" Text="{Binding Label}"/>
+                    </Canvas>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid>
+            <syncfusion:SfMap ZoomLevel="3">
+                <syncfusion:SfMap.Layers>
+                    <syncfusion:ImageryLayer  Markers="{Binding Models}"  IsManipulationEnabled="True" MarkerTemplate="{StaticResource markerTemplate}">
+                    </syncfusion:ImageryLayer>
+                </syncfusion:SfMap.Layers>
+            </syncfusion:SfMap>
+        </Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMap maps = new SfMap();
+            ImageryLayer layer = new ImageryLayer();
+            layer.Markers = view.Models;
+            maps.ZoomLevel = 3;
+            layer.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
+            maps.IsManipulationEnabled = true;
+            maps.Layers.Add(layer);
+            this.Content = maps;
+			
+    public class ViewModel
+    {
+        public ObservableCollection<Model> Models { get; set; }
+        public ViewModel()
+        {
+            this.Models = new ObservableCollection<Model>();
+            this.Models.Add(new Model() { Label = "USA", Latitude = "38.8833N", Longitude = "77.0167W" });
+            this.Models.Add(new Model() { Label = "Brazil ", Latitude = "15.7833S", Longitude = "47.8667W" });
+            this.Models.Add(new Model() { Label = "India ", Latitude = "21.0000N", Longitude = "78.0000E" });
+            this.Models.Add(new Model() { Label = "China ", Latitude = "35.0000N", Longitude = "103.0000E" });
+            this.Models.Add(new Model() { Label = "Indonesia ", Latitude = "6.1750S", Longitude = "106.8283E" });
+        }
+    }
+
+    public class Model
+    {
+        public string Label { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> IsManipulationEnabled default value is false.
+
+![WPF SfMaps pinch zoom image](Map-Providers_images/Marker_PinchZooming.gif)
