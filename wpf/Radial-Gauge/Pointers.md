@@ -1041,10 +1041,10 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 
 ### Value changing event
 
-Pointer value changing can be examined using `ValueChanging` event. The `ValueChanging` event contains `OldValue`, `NewValue`, and `Cancel` properties.
-OldValue: Contains pointer old value.
-NewValue : Contains pointer new value.
-Cancel : You can control the pointer value changing functionality using the `Cancel` argument when set the cancel value to true.
+Pointer value changing can be examined using the `ValueChanging` event. The `ValueChanging` event contains `OldValue`, `NewValue`, and `Cancel` properties.
+`OldValue`: Contains pointer old value.
+`NewValue`: Contains pointer new value.
+`Cancel`: You can control the pointer value changing functionality using the `Cancel` argument when setting the cancel value to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1089,7 +1089,7 @@ Cancel : You can control the pointer value changing functionality using the `Can
 
 ### Value changed event
 
-Pointer value changed can be examined using `ValueChanged` event. The `ValueChanged` event contains `Value` property.
+Pointer value changed can be examined using the `ValueChanged` event. The `ValueChanged` event contains `Value` property.
 Value : Contains pointer value.
 
 {% tabs %}
