@@ -33,6 +33,14 @@ MaterialDarkBlue</td><td>
 Syncfusion.Themes.MaterialDarkBlue.Wpf.dll</td></tr>
 <tr>
 <td>
+Office2019Colorful</td><td>
+Syncfusion.Themes.Office2019Colorful.Wpf.dll</td></tr>
+<tr>
+<td>
+Office2019Black</td><td>
+Syncfusion.Themes.Office2019Black.Wpf.dll</td></tr>
+<tr>
+<td>
 Metro</td><td>
 Syncfusion.Themes.Metro.Wpf.dll</td></tr>
 <tr>
