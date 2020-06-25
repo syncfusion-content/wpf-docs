@@ -11,7 +11,7 @@ documentation: ug
 
 ### Description 
 
-TextBoxExt is an extended version of the TextBox control. Most of the functionality of TextBoxExt is inherited from the [SfTextBox](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.textbox) class.
+TextBoxExt is an extended version of the TextBox control. Most of the functionality of TextBoxExt is inherited from the [TextBox](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.textbox) class.
 
 ![TextBoxExt - Overview](Overview_images/Overview_img1.png)
 

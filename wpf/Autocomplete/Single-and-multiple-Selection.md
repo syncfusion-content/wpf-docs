@@ -26,7 +26,7 @@ The selected items can be displayed as token inside the SfAutoComplete in two wa
 
 * `Wrap` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `Wrap`, the selected items will be wrapped to the next line of the SfAutoComplete.
 
-* `None` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `None`, the selected items will be wrapped in horizontal orientation.
+* `None` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `None`, the selected items will be arranged in horizontal orientation.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ The selected items can be displayed as token inside the SfAutoComplete in two wa
 
 ### Customization of Tokens
 
-Using styles override used for customize the tokens.
+Override the style of the token used for customization. 
 
 Please find the code snippet for the Customization of Tokens.
 
@@ -108,7 +108,7 @@ Please find the code snippet for the Customization of Tokens.
 
 AutoSizing can be enabled in AutoComplete control so that the control will extend its layout based on the token size.
 
-[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the AutoSizing in AutoComplete control. To enable the API, need to set the MultiSelectMode as Token and TokensWrapMode as Wrap. The default value of EnableAutoSize is false.
+[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the AutoSizing in AutoComplete control. To enable the API, need to set the MultiSelectMode as Token and TokensWrapMode as Wrap and the control height should not be provide. The default value of EnableAutoSize is false.
 
 {% tabs %}
 
@@ -134,7 +134,8 @@ See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/auto
 
 ## Multiple selection using delimiter 
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. It Can be Set delimiter character with the [Delimiter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter.Delimiter character can be set with the [Delimiter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property. Enable the Delimiter mode need to set the MulitiSelectMode as Delimiter. The default value of Delimiter is comma. 
+
 
 {% tabs %}
 
@@ -330,7 +331,7 @@ EmployeeViewModel Class:
 
 ### Retrieving SelectedValue 
 
-The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedValue.html) property is used to retrieve the selected values from the suggestion list.
+The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedValue.html) property is used to retrieve the selected values from the suggestion list, it can be retrieved the value depends on the [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ValueMemberPath.html) propery. 
 
 
 {% tabs %}
@@ -377,7 +378,7 @@ The [SelectedValue](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfI
 
 When an item is selected from suggestion list, their index can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property.
 
-The `SuggestionIndex property, holds the index of selected items in suggestion list.
+The `SuggestionIndex` property, holds the index of selected items in suggestion list.
 
 The following code example demonstrates how to retrieve SuggestionIndex.
 

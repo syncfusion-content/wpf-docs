@@ -34,7 +34,7 @@ The `TextBoxExt` control can be populated with a predefined list of items, which
 
 ## SearchItemPath
 
-The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SearchItemPath.html) property specifies the property path, by which the filtering has to be done.
+The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SearchItemPath.html) property specifies the suggestion items path, by which the filtering has to be done.
 
 {% tabs %}
 {% highlight xaml %}

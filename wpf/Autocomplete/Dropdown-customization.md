@@ -145,7 +145,7 @@ The maximum height of the suggestion box in the `Autocomplete` control can be ch
 
 ## Open the drop-down on focus 
 
-Suggestion box can be shown whenever the control receives focus using the [ShowSuggestionsOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowSuggestionsOnFocus.html) property. At that time, suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [ShowSuggestionsOnFocus](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ShowSuggestionsOnFocus.html) property. At that time, show the suggestion items with complete list of data source.
 
 {% tabs %}
 
