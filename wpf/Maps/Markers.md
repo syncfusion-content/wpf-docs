@@ -77,7 +77,7 @@ Any number of markers can be added to the shape file layers using the `Markers` 
 
 {% endtabs %}
 
-![Marker Adding Image](Images/Marker_images/Marker_AddingImg.png)
+![Marker Adding Image](Marker_images/Marker_AddingImg.png)
 
 ## Add custom marker
 
@@ -124,7 +124,7 @@ The maps control provides the support for defining the custom markers using the 
 
 {% endtabs %}
 
-![Custom Marker Image](Images/Marker_images/Marker_CustomMarkerImg.png)
+![Custom Marker Image](Marker_images/Marker_CustomMarkerImg.png)
 
 ## Customizing marker icons
 
@@ -169,7 +169,7 @@ The shape of a marker icons can be customized using the `MarkerIconType` propert
 
 {% endtabs %}
 
-![Marker Icon Image](Images/Marker_images/Marker_IconImg.png)
+![Marker Icon Image](Marker_images/Marker_IconImg.png)
 
 ### Setting a image marker icon
 
@@ -208,7 +208,7 @@ You can set the image as marker icon by setting the icon type as Image. Set `Mar
 
 {% endtabs %}
 
-![Marker Icon Image](Images/Marker_images/Marker_IconImageSource.png)
+![Marker Icon Image](Marker_images/Marker_IconImageSource.png)
 
 ## Customizing labels
 
@@ -244,7 +244,7 @@ You can customize the marker labels using `FontSize`, `LabelForeground`, `FontSt
 
 {% endtabs %}
 
-![Marker Custom Label Image](Images/Marker_images/Marker_CustomLabel.png)
+![Marker Custom Label Image](Marker_images/Marker_CustomLabel.png)
 
 ## Marker Alignment
 
@@ -288,7 +288,7 @@ The `HorizontalAlignment` property is used to position the marker icon in x-axis
 
 {% endtabs %}
 
-![Marker Custom Label Image](Images/Marker_images/Marker_HorizontalAlignment.png)
+![Marker Custom Label Image](Marker_images/Marker_HorizontalAlignment.png)
 
 ### Setting a vertical alignment
 
@@ -328,7 +328,7 @@ The `VerticalAlignment` property is used to position the marker icon in y-axis. 
 
 {% endtabs %}
 
-![Marker Custom Label Image](Images/Marker_images/Marker_VerticalAlignment.png)
+![Marker Custom Label Image](Marker_images/Marker_VerticalAlignment.png)
 
 N> The default marker icon position for VerticalAlignment and HorizontalAlignment is Center.
 
@@ -382,7 +382,7 @@ If you add any view for marker using `MarkerTemplate` property from `MarkerSelec
 
 {% endtabs %}
 
-![Marker Selection Mode Image](Images/Marker_images/Marker_SelectionMode.png)
+![Marker Selection Mode Image](Marker_images/Marker_SelectionMode.png)
 
 ## Events
 
@@ -443,5 +443,5 @@ If you set any view for the `MarkerTemplate` property of MarkerSelectedEventArgs
 
 {% endtabs %}
 
-![Marker Selected Event Image](Images/Marker_images/Marker Selected Event.png)
+![Marker Selected Event Image](Marker_images/Marker Selected Event.png)
 
