@@ -112,13 +112,13 @@ The maps control provides the support for defining the custom markers using the 
 
 {% highlight c# %}
 
-  SfMap maps = new SfMap();
-  ShapeFileLayer shape = new ShapeFileLayer();
-  shape.Uri = "Maps.ShapeFiles.world1.shp";
-  shape.MarkerTemplate=Resources["markerTemplate"] as DataTemplate;
-  shape.Markers = view.Models;
-  maps.Layers.Add(shape);
-  this.Content = maps;
+	SfMap maps = new SfMap();
+	ShapeFileLayer shape = new ShapeFileLayer();
+	shape.Uri = "Maps.ShapeFiles.world1.shp";
+	shape.MarkerTemplate=Resources["markerTemplate"] as DataTemplate;
+	shape.Markers = view.Models;
+	maps.Layers.Add(shape);
+	this.Content = maps;
 
 {% endhighlight %}
 
