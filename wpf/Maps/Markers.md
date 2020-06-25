@@ -382,7 +382,7 @@ If you add any view for marker using `MarkerTemplate` property from `MarkerSelec
 
 {% endtabs %}
 
-![Marker Selection Mode Image](Marker_images/Marker_SelectionMode.png)
+![Marker Selection Mode Image](Marker_images/Marker_SelectionMode.gif)
 
 ## Events
 
