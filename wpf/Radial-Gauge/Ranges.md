@@ -654,8 +654,8 @@ You can give color transition to range by specifying the different colors based 
          circularRange.EndValue = 100;
          circularRange.InnerStartOffset = 0.83;
          circularRange.InnerEndOffset = 0.6;
-		 circularRange.OuterStartOffset = 0.85;
-		 circularRange.OuterEndOffset = 0.8;
+         circularRange.OuterStartOffset = 0.85;	
+         circularRange.OuterEndOffset = 0.8;
          ObservableCollection<GaugeGradientStop> gradientColor1 = new ObservableCollection<GaugeGradientStop>();
          GaugeGradientStop gaugeGradientStop = new GaugeGradientStop();
          gaugeGradientStop.Value = 35;
