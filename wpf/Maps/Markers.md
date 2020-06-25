@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Markers in Syncfusion Map control
-description: This section describes about adding marker, customizing the marker, customize the labels and event support in WPF SfMaps control.
+title: Markers in Syncfusion Map control
+description: This section describes about adding marker, customizing the marker, customizing the labels, and event support in WPF `SfMaps` control.
 platform: wpf
 control: SfMap
 documentation: ug
@@ -15,11 +15,11 @@ Markers are used to show some messages on maps.
 
 Any number of markers can be added to the shape file layers using the `Markers` property. Each marker contains the following properties:
 
-`Label` : Displays some messages on maps.
+`Label`: Displays some messages on maps.
 
-`Latitude` : Specifies y-axis position of the marker.
+`Latitude`: Specifies y-axis position of the marker.
 
-`Longitude` : Specifies x-axis position of the marker.
+`Longitude`: Specifies x-axis position of the marker.
 
 {% tabs %}
 
@@ -79,7 +79,7 @@ Any number of markers can be added to the shape file layers using the `Markers` 
 
 ![Marker Adding Image](Marker_images/Marker_AddingImg.png)
 
-## Add custom marker
+## Add a custom marker
 
 The maps control provides the support for defining the custom markers using the `MarkerTemplate` property.
 
@@ -171,9 +171,9 @@ The shape of a marker icons can be customized using the `MarkerIconType` propert
 
 ![Marker Icon Image](Marker_images/Marker_IconImg.png)
 
-### Setting a image marker icon
+### Setting an image marker icon
 
-You can set the image as marker icon by setting the icon type as Image. Set `MarkerIconSource` to get the image from local path.
+You can set the image as marker icon by setting the icon type as an image. Set `MarkerIconSource` to get the image from local path.
 
 {% tabs %}
 
@@ -212,7 +212,7 @@ You can set the image as marker icon by setting the icon type as Image. Set `Mar
 
 ## Customizing labels
 
-You can customize the marker labels using `FontSize`, `LabelForeground`, `FontStyle`,  `FontWeight`  properties.
+You can customize the marker labels using the `FontSize`, `LabelForeground`, `FontStyle`, and `FontWeight` properties.
 
 {% tabs %}
 
@@ -334,7 +334,7 @@ N> The default marker icon position for VerticalAlignment and HorizontalAlignmen
 
 ## Selection Mode
 
-If you add any view for marker using `MarkerTemplate` property from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the `MarkerSelectionMode` property. If set selection mode as `Single`, then it will be removed the old view of marker and load the initially rendered marker. If set selection mode as `Multiple`, then marker template is does not reset.
+If you add any view for marker using the `MarkerTemplate` property from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the `MarkerSelectionMode` property. If set selection mode as `Single`, then it will be removed the old view of marker and load the initially rendered marker. If set selection mode as `Multiple`, then the marker template does not reset.
 
 {% tabs %}
 
@@ -386,11 +386,11 @@ If you add any view for marker using `MarkerTemplate` property from `MarkerSelec
 
 ## Events
 
-The `MarkerSelected` event is fired when a marker is selected. The `MarkerTemplate`, `SelectedMarker` and `IsSelected` will be passed to MarkerSelectedEventArgs.
+The `MarkerSelected` event is fired when a marker is selected. The `MarkerTemplate`, `SelectedMarker`, and `IsSelected` will be passed to MarkerSelectedEventArgs.
 
 If you set any view for the `MarkerTemplate` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
 
-`SelectedMarker`: Contain selected marker data.
+`SelectedMarker`: Contains selected marker data.
 
 `IsSelected`: Used to identify whether the marker is selected or unselected.
 
