@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started of State Persistence
 
-State persistence is the combined process of serialization and deserialization. 
+Layout of docking manager can be saved and loaded back using serialization feature. You can also arrage and save multiple layouts, for the same set of children. Latter you can load any one of those saved layout or toggle from one to another.
 
 DockingManager provides built-in state persistence functionality to save and load at different states and sides. It also provides [DeleteDockState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~DeleteDockState().html) and [ResetState](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~ResetState.html) Method to work on state functionality.
 
@@ -105,7 +105,7 @@ DockingManager allows to save a complex layout also. For example, it also saves 
 
 ## Serialize the dynamically added children
 
-`DockingManager` compares the child collection of saved layout with current layout of it internally and loads correctly when the DockingManager's children collection remains same. If the children collection changed dynamically after serialization, the child items which is available in the current layout will be loaded with the saved properties and the modified items (Added / Removed) will be ignored from the layout. 
+When you try to load a previously saved state of `DockingManager`, it compares the child collection of saved layout with current layout and loads correctly when the DockingManager's children collection remains same. Extra child might be added or existing child might have been closed, before loading a saved layout. During such mismatch, modified childs (Added / Closed) will be ignored from the layout, and tries to keep layout close to saved layout.
 
 ### Notification for load DockState
 
