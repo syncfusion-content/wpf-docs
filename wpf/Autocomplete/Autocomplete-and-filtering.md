@@ -9,7 +9,7 @@ documentation: ug
 
 # AutoComplete and filtering 
 
-The AutoComplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that it can choose from the different options.
+The `AutoComplete` functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that it can choose from the different options.
 
 ## AutoComplete source
 
@@ -34,7 +34,7 @@ The `TextBoxExt` control can be populated with a predefined list of items, which
 
 ## SearchItemPath
 
-The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SearchItemPath.html) property specifies the suggestion items path, by which the filtering has to be done.
+The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SearchItemPath.html) property, specifies the suggestion items path, by which the filtering has to be done.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,7 +52,7 @@ The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Sf
 
 ![SearchItemPath](AutoComplete_and_filtering_images/SearchItemPath.png)
 
-N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the AutoComplete modes will be provided in the next section.
+N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the `AutoComplete` modes will be provided in the next section.
 
 ## Customize using the ItemTemplate
 
