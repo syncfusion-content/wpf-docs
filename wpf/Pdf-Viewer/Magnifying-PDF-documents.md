@@ -35,7 +35,7 @@ pdfviewer1.ZoomTo(150)
 {% endhighlight %}
 {% endtabs %}
 
-The magnification can also be set by updating the `Zoom` property of the PDF Viewer.
+The magnification can also be set by updating the [Zoom](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Zoom.html) property of the PDF Viewer.
 {% tabs %}
 {% highlight c# %}
 
@@ -51,7 +51,7 @@ pdfviewer1.Zoom = 250
 
 ## Current zoom percentage
 
-Current magnification percentage of the PDF Viewer can be acquired with the use of the property `ZoomPercentage`
+Current magnification percentage of the PDF Viewer can be acquired with the use of the property [ZoomPercentage](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ZoomPercentage.html)
 
 {% tabs %}
 {% highlight c# %}
