@@ -105,7 +105,7 @@ DockingManager allows to save a complex layout also. For example, it also saves 
 
 ## Serialize the dynamically added children
 
-DockingManager compares the child collection of saved layout with current layout of it internally and loads correctly when the DockingManager's children collection remains same. If the children collection changed dynmaically after seialization, the child items which is available in the current layout will be loaded with the saved properties and the modified items (Added / Removed) will be ignored from the layout. 
+`DockingManager` compares the child collection of saved layout with current layout of it internally and loads correctly when the DockingManager's children collection remains same. If the children collection changed dynamically after serialization, the child items which is available in the current layout will be loaded with the saved properties and the modified items (Added / Removed) will be ignored from the layout. 
 
 ### Notification for load DockState
 
