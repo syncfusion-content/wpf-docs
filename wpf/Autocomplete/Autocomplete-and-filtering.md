@@ -77,8 +77,6 @@ The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syn
                         </DataTemplate>
                     </editors:SfTextBoxExt.AutoCompleteItemTemplate>
                 </editors:SfTextBoxExt>
-        </Window.Content>
-</Window>
 
 {% endhighlight %}
 {% endtabs %}
