@@ -614,7 +614,7 @@ Schedule.AppointmentMapping.EndTimeZone = "EndTimeZone";
 {% endhighlight %}
 {% endtabs %}
 
-#### Setting data source for SfSchedule  
+#### Setting ItemsSource for SfScheduler  
 
 Create meetings of type `ObservableCollection <Meeting>`  and assign those appointments collection `Meetings` to the `ItemsSource` property of `SfScheduler`.
 
