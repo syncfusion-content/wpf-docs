@@ -1049,11 +1049,11 @@ Pointer value changing can be examined using the `ValueChanging` event. The `Val
 {% tabs %}
 {% highlight xaml %}
 
-        <gauge:SfCircularGauge>
+         <gauge:SfCircularGauge>
             <gauge:SfCircularGauge.Scales>
                 <gauge:CircularScale>
                     <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer ValueChanging="CircularPointer_ValueChanging" />
+                        <gauge:CircularPointer EnableDragging="True" ValueChanging="CircularPointer_ValueChanging" Value="20" Symbol="InvertedTriangle" PointerType="SymbolPointer" />
                     </gauge:CircularScale.Pointers>
                 </gauge:CircularScale>
             </gauge:SfCircularGauge.Scales>
@@ -1070,6 +1070,10 @@ Pointer value changing can be examined using the `ValueChanging` event. The `Val
             SfCircularGauge circularGauge = new SfCircularGauge();
             CircularScale scale = new CircularScale();
             CircularPointer circularPointer = new CircularPointer();
+            circularPointer.EnableDragging = true;
+            circularPointer.Value = 20;
+            circularPointer.Symbol = Symbol.InvertedTriangle;
+            circularPointer.PointerType = PointerType.SymbolPointer;
             circularPointer.ValueChanging += CircularPointer_ValueChanging;
             scale.Pointers.Add(circularPointer);
             circularGauge.Scales.Add(scale);
@@ -1078,9 +1082,10 @@ Pointer value changing can be examined using the `ValueChanging` event. The `Val
 
         private void CircularPointer_ValueChanging(object sender, ValueChangingEventArgs e)
         {
-            var oldValue = e.OldValue;
-            var newValue = e.NewValue;
-            bool cancel = e.Cancel;
+            if (e.NewValue > 30 && e.NewValue < 70)
+            {
+                e.Cancel = true;
+            }
         }
     }
 
