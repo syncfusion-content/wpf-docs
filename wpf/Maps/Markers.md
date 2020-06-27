@@ -291,10 +291,14 @@ The `HorizontalAlignment` property is used to position the marker icon in x-axis
             SfMap maps = new SfMap();
             ShapeFileLayer shape = new ShapeFileLayer();
             shape.Uri = "Maps.ShapeFiles.usa_state.shp";
+            shape.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
             shape.Markers = view.Models;
-			shape.MarkerIconSize = new Size(30, 30);
-            shape.MarkerLabelFontSize = 30;
             shape.MarkerHorizontalAlignment = MarkerAlignment.Near;
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeStrokeThickness = 1;
+            shapeSetting.ShapeStroke = new SolidColorBrush(Colors.Black);
+            shapeSetting.ShapeFill = new SolidColorBrush(Colors.LightGreen);
+            shape.ShapeSettings = shapeSetting;
             maps.Layers.Add(shape);
 
 {% endhighlight %}
@@ -315,14 +319,28 @@ The `VerticalAlignment` property is used to position the marker icon in y-axis. 
 
 {% highlight xaml %}
 
-        <Grid>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <Grid>
+                    <StackPanel Margin="-12,-30,0,0" Height="50" Orientation="Horizontal">
+                        <Image Source="pin.png" Height="30" />
+                        <TextBlock HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" Margin="10" FontSize="30" FontFamily="Segoe UI" Text="{Binding Label}"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+         <Grid>
             <syncfusion:SfMap>
                 <syncfusion:SfMap.Layers>
-                    <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.usa_state.shp" MarkerIconSize="30,30" MarkerLabelFontSize="30" MarkerVerticalAlignment="Near" Markers="{Binding Models}" >
+                    <syncfusion:ShapeFileLayer   MarkerTemplate="{StaticResource markerTemplate}"  Uri="Maps.ShapeFiles.usa_state.shp"  MarkerVerticalAlignment="Near" Markers="{Binding Models}"  >
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="LightGreen" ShapeStroke="Black" ShapeStrokeThickness="1">
+                            </syncfusion:ShapeSetting>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
                     </syncfusion:ShapeFileLayer>
                 </syncfusion:SfMap.Layers>
             </syncfusion:SfMap>
-        </Grid>		
+        </Grid>
 
 {% endhighlight %}
 
@@ -331,10 +349,14 @@ The `VerticalAlignment` property is used to position the marker icon in y-axis. 
             SfMap maps = new SfMap();
             ShapeFileLayer shape = new ShapeFileLayer();
             shape.Uri = "Maps.ShapeFiles.usa_state.shp";
+            shape.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
             shape.Markers = view.Models;
-			shape.MarkerIconSize = new Size(30, 30);
-            shape.MarkerLabelFontSize = 30;
             shape.MarkerVerticalAlignment = MarkerAlignment.Near;
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeStrokeThickness = 1;
+            shapeSetting.ShapeStroke = new SolidColorBrush(Colors.Black);
+            shapeSetting.ShapeFill = new SolidColorBrush(Colors.LightGreen);
+            shape.ShapeSettings = shapeSetting;
             maps.Layers.Add(shape);
 
 {% endhighlight %}
