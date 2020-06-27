@@ -992,45 +992,72 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 {% tabs %}
 {% highlight xml %}
 
-        <gauge:SfCircularGauge>
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale RimStroke ="DeepSkyBlue" RimStrokeThickness ="20" RadiusFactor="1" ShowTicks="False"
-                               StartValue="0" EndValue="100" Interval="10" LabelOffset="0.75" LabelStroke ="Gray" FontSize  ="15">
+        <gauge:SfCircularGauge >
+             <gauge:SfCircularGauge.Scales >
+                <gauge:CircularScale LabelPosition="Custom"  Grid.Row="1" RimStroke ="LightGray" RadiusFactor="1" ShowTicks="False"
+                         RimStrokeThickness="30"     StartValue="0" EndValue="100" Interval="10" LabelOffset="0.75" LabelStroke ="Black" FontSize  ="15">
+                    <gauge:CircularScale.Ranges>
+                        <gauge:CircularRange StrokeThickness="30" StartValue="0" x:Name="range" EndValue="25" Stroke="DeepSkyBlue"/>
+                    </gauge:CircularScale.Ranges>
                     <gauge:CircularScale.Pointers>
                         <gauge:CircularPointer PointerType="SymbolPointer" Symbol="InvertedTriangle" SymbolPointerHeight="18" SymbolPointerWidth="18"
-                               SymbolPointerStroke="DarkBlue" Value="30" EnableAnimation="False" EnableDragging="True"/>
+                             ValueChanged="CircularPointer_ValueChanged"  SymbolPointerStroke="DarkBlue" Value="25" EnableAnimation="False" EnableDragging="True"/>
                     </gauge:CircularScale.Pointers>
                 </gauge:CircularScale>
             </gauge:SfCircularGauge.Scales>
         </gauge:SfCircularGauge>
 
+
 {% endhighlight %}
 {% highlight c# %}
 
+    public partial class PointerDragging : Window
+    {
+        CircularRange range = new CircularRange();
+
+        public PointerDragging()
+        {
+            InitializeComponent();
             SfCircularGauge circularGauge = new SfCircularGauge();
             CircularScale scale = new CircularScale();
-            scale.RimStroke = new SolidColorBrush(Colors.DeepSkyBlue);
-            scale.RimStrokeThickness = 20;
+            scale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            scale.RimStrokeThickness = 30;
             scale.RadiusFactor = 1;
             scale.ShowTicks = false;
             scale.StartValue = 0;
             scale.EndValue = 100;
             scale.Interval = 10;
             scale.LabelOffset = 0.75;
-            scale.LabelStroke = new SolidColorBrush(Colors.Gray);
+            scale.LabelStroke = new SolidColorBrush(Colors.Black);
             scale.FontSize = 15;
+            scale.LabelPosition = LabelPosition.Custom;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false ;
             CircularPointer circularPointer = new CircularPointer();
             circularPointer.PointerType = PointerType.SymbolPointer;
             circularPointer.Symbol = Symbol.InvertedTriangle;
-            circularPointer.Value = 30;
+            circularPointer.Value = 25;
             circularPointer.SymbolPointerStroke = new SolidColorBrush(Colors.DarkBlue);
             circularPointer.SymbolPointerHeight = 18;
             circularPointer.EnableAnimation = false;
             circularPointer.EnableDragging = true;
             circularPointer.SymbolPointerWidth = 18;
+            circularPointer.ValueChanged += CircularPointer_ValueChanged;
+            range.StrokeThickness = 30;
+            range.StartValue = 0;
+            range.EndValue = 25;
+            range.Stroke = new SolidColorBrush(Colors.DeepSkyBlue);
+            scale.Ranges.Add(range);
             scale.Pointers.Add(circularPointer);
             circularGauge.Scales.Add(scale);
             this.Content = circularGauge;
+        }
+
+        private void CircularPointer_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            range.EndValue = e.Value;
+        }
+    }
 
 {% endhighlight %}
 {% endtabs %}
