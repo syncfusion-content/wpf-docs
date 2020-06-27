@@ -519,6 +519,4 @@ If you want to zoom the imagery layer using fingers by touch, then you have to e
 
 {% endtabs %}
 
-N> IsManipulationEnabled default value is false.
-
 ![WPF SfMaps pinch zoom image](Map-Providers_images/Marker_PinchZooming.gif)
