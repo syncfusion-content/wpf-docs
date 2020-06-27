@@ -261,15 +261,28 @@ The `HorizontalAlignment` property is used to position the marker icon in x-axis
 {% tabs %}
 
 {% highlight xaml %}
-
-        <Grid>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <Grid>
+                    <StackPanel Margin="-12,-30,0,0" Height="50" Orientation="Horizontal">
+                        <Image Source="pin.png" Height="30" />
+                        <TextBlock HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" Margin="10" FontSize="30" FontFamily="Segoe UI" Text="{Binding Label}"/>
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+         <Grid>
             <syncfusion:SfMap>
                 <syncfusion:SfMap.Layers>
-                    <syncfusion:ShapeFileLayer Uri="Maps.ShapeFiles.usa_state.shp" MarkerIconSize="30,30" MarkerLabelFontSize="30" MarkerHorizontalAlignment="Near" Markers="{Binding Models}"  >
+                    <syncfusion:ShapeFileLayer   MarkerTemplate="{StaticResource markerTemplate}"  Uri="Maps.ShapeFiles.usa_state.shp"  MarkerHorizontalAlignment="Near" Markers="{Binding Models}"  >
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
+                            <syncfusion:ShapeSetting ShapeFill="LightGreen" ShapeStroke="Black" ShapeStrokeThickness="1">
+                            </syncfusion:ShapeSetting>
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
                     </syncfusion:ShapeFileLayer>
                 </syncfusion:SfMap.Layers>
             </syncfusion:SfMap>
-        </Grid>	
+        </Grid>
 
 {% endhighlight %}
 
