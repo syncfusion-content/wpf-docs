@@ -169,7 +169,7 @@ The shape of a marker icons can be customized using the `MarkerIconType` propert
 
 {% endtabs %}
 
-![Marker Icon Image](Marker_images/Marker_IconImg.png)
+![Marker Icon Image](Marker_images/Marker_Type.png)
 
 ### Setting an image marker icon
 
