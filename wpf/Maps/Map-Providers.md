@@ -451,9 +451,9 @@ Calculate the imagery layer pixel bounds while zooming, panning, and Geo-Coordin
 
 {% endtabs %}
 
-## Pinch Zooming
+## Pinch zooming
 
-If you want to zoom the imagery layer using fingers by touch, then you have to set `IsManipulationEnabled` property to true as shown in the below code snippet.
+If you want to zoom the imagery layer using fingers by touch, then you have to enable `EnableZoom` and `IsManipulationEnabled` property of map control.
 
 {% tabs %}
 
