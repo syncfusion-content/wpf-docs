@@ -200,32 +200,66 @@ propertyGrid1.SelectedObject = new Button();
 
 ![Customized the height of PropertyViewItem in PropertyGrid](Appearance_images/wpf-propertygrid-customized-propertyviewitem.png)
 
-## Setting ToolTip
+## Tooltip support
 
-ToolTip is used to show the information about the segment, when you mouse over on the segment. We can show information about the property name and type using tooltip when hovering the mouse on the properties and its value field. Tooltip is enabled by default, you can disable it by setting [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html)  to `false`.
+You can get the value and description about the property item through tooltip when hover the mouse on the respective property item and its value field. If the property item not contains any description, tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) property as `false`. The default value of `EnableToolTip` property is `true`.
 
 {% tabs %}
-{% highlight XAML %}
-
-<syncfusion:PropertyGrid EnableToolTip="False" x:Name="propertyGrid1" >
-    <syncfusion:PropertyGrid.SelectedObject>
-        <Button></Button>
-    </syncfusion:PropertyGrid.SelectedObject>
-</syncfusion:PropertyGrid>
-
-{% endhighlight %}
 {% highlight C# %}
 
-PropertyGrid propertyGrid1 = new PropertyGrid();
-propertyGrid1.SelectedObject = new Button();
-propertyGrid1.EnableToolTip = false;
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+public class Employee {
+    [Description("Name of the employee")]
+    public string Name { get; set; }
+    public string ID { get; set; }
+    [Description("Birth date of the employee")]
+    public DateTime DOB { get; set; }
+}
+
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24)
+        };
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
-![PropertyGrid with tool tip and without tool tip](Appearance_images/Appearance_EnableToolTip.png)
+{% tabs %}
+{% highlight xaml %}
 
-Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Apperance) to download the sample that showcases the UI customization and styling support. 
+<syncfusion:PropertyGrid EnableToolTip="True"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.EnableToolTip = true;
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tooltip show the property description](Getting-Started_images/EnableTooltip.gif)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Apperance) in GitHub
 
 ## Theme
 
