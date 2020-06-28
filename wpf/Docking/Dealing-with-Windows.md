@@ -1576,7 +1576,7 @@ You can handle the event as follows,
 {% highlight C# %}
 
 private void SyncDockingManager_PreviewDockHints(object sender, PreviewDockHintsEventArgs e) {
-    e.DockAbility = DockAbility.Horizontal | DockAbility.Bottom;
+    e.DockAbility = DockAbility.Top;
     e.OuterDockAbility = OuterDockAbility.Top;
 }
 
@@ -1588,6 +1588,7 @@ private void SyncDockingManager_PreviewDockHints(object sender, PreviewDockHints
 ![InnerDockability changed at runtime](Dealing-with-Windows_images/InnerDockability.png)
 
 ### OuterDockAbility:
+
 ![OuterDockability changed at runtime](Dealing-with-Windows_images/OutterDockability.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/PreviewDockHints) in GitHub

@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-# MDI/ TDI functionalities
+# MDI/ TDI functionalities in
 
 The MDI and TDI functionalities are applicable for the Document window in the DockingManager. So Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface.
 
