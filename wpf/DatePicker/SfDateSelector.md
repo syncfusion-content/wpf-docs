@@ -9,7 +9,7 @@ documentation: ug
 
 # DateSelector in WPF SfDatePicker
 
-The [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) is a sub-control of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker.html) which opens inside the drop-down popup and used to select the date for the `SfDatePicker`. It contains the date, month and year selection cells for select the date. The selected date of the `SfDateSelector` is assigned to the [SfDatePicker.DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~DateTime.html) property. 
+The [SfDateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDateSelector.html) is a sub-control of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker.html) which opens inside the drop-down popup and used to select the date for the `SfDatePicker`. It contains the date, month and year selection cells for select the date. The selected date of the `SfDateSelector` is assigned to the [SfDatePicker.Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property. 
 
 ![SfDateSelector](Features_images/Features_img3.png)
 

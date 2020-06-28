@@ -70,6 +70,66 @@ class ViewModel : NotificationObject
 
 ![Binding a value to DoubleTextBox](Changing-Double-Value_images/ValueBinding.png)
 
+## Change double value by pasting the clipboard's text
+
+By default, `DoubleTextBox` simply replaces the whole value by copied value with the current number format. If you want to replace or insert the copied value on specific place, use the [PasteMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PasteMode.html) property value as `Advanced`. The default value of `PasteMode` property is `Default`. 
+
+The following table explains the pasting behaviour in `Advanced` paste mode,
+
+<table>
+<tr>
+<th> S.No </th>
+<th> Action </th>
+<th> Pasting behaviour in Advanced paste mode</th>
+</tr>
+<tr>
+<td>1</td>
+<td>When the whole value is selected</td>
+<td>It simply replaces the whole value by copied value with the current number format.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>When the cursor is at some position and the copied value does not contain a number decimal separator</td>
+<td>It inserts the copied value into the current cursor position.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>When the cursor is at some position and the copied value contains a number decimal separator</td>
+<td>It won’t perform pasting operation.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>When the cursor is at some position and the control value is 0 or null</td>
+<td>It simply replaces the whole value by copied value with the current number format.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>When a part of the number is selected</td>
+<td>If the selected value contains a number decimal separator, then copied value must contain number decimal separator. Otherwise, it won’t perform pasting operation. 
+
+If the selected text does not contain a number decimal separator, then copied value must not contain number decimal separator. Otherwise, it won’t perform pasting operation.</td>
+</tr>
+</table>
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:DoubleTextBox PasteMode="Advanced" 
+                           Value="12345.67"
+                           Name="doubleTextBox"/>
+
+{% endhighlight %}                       
+{% highlight C# %}
+
+DoubleTextBox doubleTextBox = new DoubleTextBox();
+doubleTextBox.PasteMode = PasteMode.Advanced;
+doubleTextBox.Value = 12345.67;
+
+{% endhighlight %}
+{%endtabs%}
+
+![DoubleTextBox pasting the copied value in specific place](Changing-Double-Value_images/Pasting.png)
+
 ## Value Changed Event
 
 The `DoubleTextbox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.DoubleTextBox~ValueChanged_EV.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.
