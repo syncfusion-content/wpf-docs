@@ -86,19 +86,19 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrol
 
 ## Custom template for the new button
 
-If you wants to change the UI for the new button, use the [NewButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonTemplate.html) or [NewButtonStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewButtonStyle.html)  properties. 
+If you wants to change the UI for the new button, use the [NewTabButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~NewTabButtonTemplate.html) property. 
 
 {% tabs %}
 {% highlight XAML %}
 
 <syncfusion:TabControlExt IsNewButtonEnabled="True"
                           x:Name="tabControlExt">
-    <syncfusion:TabControlExt.NewButtonTemplate>
-        <ControlTemplate>
+    <syncfusion:TabControlExt.NewTabButtonTemplate>
+        <DataTemplate>
             <Button Background="Red" 
                     Content=" + "></Button>
-        </ControlTemplate>
-    </syncfusion:TabControlExt.NewButtonTemplate>
+        </DataTemplate>
+    </syncfusion:TabControlExt.NewTabButtonTemplate>
     <syncfusion:TabItemExt Header="tabItem1" Name="tabItemExt1"/>
     <syncfusion:TabItemExt Header="tabItem2" Name="tabItemExt2"/>
 </syncfusion:TabControlExt>
