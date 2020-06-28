@@ -7,7 +7,9 @@ control: DocumentContainer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF DocumentContainer
+
+This section describes how to add [DocumentContainer](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer.html) control into wpf application and its basic functionalities.
 
 ## Assembly deployment
 
@@ -167,3 +169,23 @@ documentContainer.Mode=DocumentContainerMode.TDI;
 * **MDI**
 
 ![wpf document conainer mdi mode](Getting-Started_images/wpf-document-container-mdi.png)
+
+## Minimizing MDI window
+
+You can minimize the `MDI` window by setting the [CanMDIMinimize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CanMDIMinimize.html) property as `true`. The default value of `CanMDIMinimize` property is `false`. The minimized  MDI windows are arranged one by one in the bottom-left corner of the window.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DocumentContainer Name="DocContainer"
+                              CanMDIMinimize="True" 
+                              Mode="MDI">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"/>
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window1"/>
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Document Container"/>
+</syncfusion:DocumentContainer>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Minimizing MDI window in Document Container](Minimizing-MDI-window_images/Minimizing-MDI-window_img1.jpeg)

@@ -55,63 +55,7 @@ We can change the background color of `SfGridSplitter` by setting the `Backgroun
 
 ![SfGridSplitter with green background](Positioning-GridSplitter-images/Background.png)
 
-## Collapse buttons template
-
-We change the `ControlTemplate` of the `UpButton` and `DownButton` by using the `UpButtonTemplate` and `DownButtonTemplate` properties. We can see the effect of collapse button templates only on when `EnableCollapseButton` property value is `true`.
-
-{% tabs %}
-{% highlight XAML %}
-
-<Border
-    Margin="10"
-    BorderBrush="DarkGray"
-    BorderThickness="1">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition Height="auto" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" 
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   TextAlignment="Center"
-                   Text="Panel 1">
-        </TextBlock>
-        <TextBlock Grid.Row="2"
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center" 
-                   TextAlignment="Center"
-                   Text="Panel 2">
-        </TextBlock>
-
-        <!--Grid Splitter-->
-        <syncfusion:SfGridSplitter EnableCollapseButton="True"
-                                   HorizontalAlignment="Stretch"
-                                   Width="auto"
-                                   Grid.Row="1">
-            <!--Up button template-->
-            <syncfusion:SfGridSplitter.UpButtonTemplate>
-                <ControlTemplate>
-                    <Ellipse Width="20" Height="20" Fill="Yellow"/>
-                </ControlTemplate>
-            </syncfusion:SfGridSplitter.UpButtonTemplate>
-
-            <!--Down button template-->
-            <syncfusion:SfGridSplitter.DownButtonTemplate>
-                <ControlTemplate>
-                    <Ellipse Width="20" Height="20" Fill="Orange"/>
-                </ControlTemplate>
-            </syncfusion:SfGridSplitter.DownButtonTemplate>
-        </syncfusion:SfGridSplitter>
-    </Grid>
-</Border>
-
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfGridSplitter with expand or collapse button template](Positioning-GridSplitter-images/Collapsebuttontemplate.png)
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) in GitHub
 
 ### Setting style for Preview GridSplitter
 
@@ -171,4 +115,84 @@ We can change the UI and style of the preview grid splitter by using the [SfGrid
 
 ![SfGridSplitter with ellipse shape preview grid splitter](Positioning-GridSplitter-images/PreviewStyle.gif)
 
-Click [here](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) to download the sample that showcase the `SfGridSplitter` appearance and styling supports.
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) in GitHub
+
+## Theme
+
+You can customize the appearance of the `SfGridSplitter` control by using the [SfSkinManager.SetVisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinmanager.Wpf~Syncfusion.SfSkinmanager.SfSkinmanager~SetVisualStyle.html) method and `SfSkinManager.VisualStyle` property . The following are the various built-in visual styles for `SfGridSplitter` control.
+
+* Blend
+* Default
+* Lime
+* MaterialDark
+* MaterialDarkBlue
+* MaterialLight
+* MaterialLightBlue
+* Metro
+* Office2010Black
+* Office2010Blue
+* Office2010Silver
+* Office2013DarkGray
+* Office2013LightGray
+* Office2013White
+* Office2016Colorful
+* Office2016DarkGray
+* Office2016White
+* Office365
+* Saffron
+* SystemTheme
+* VisualStudio2013
+* VisualStudio2015
+
+Here, the `Blend` style is applied to the `SfGridSplitter`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Border
+    Margin="10"
+    BorderBrush="DarkGray"
+    BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   Text="Panel 1">
+        </TextBlock>
+        <TextBlock Grid.Row="2"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   TextAlignment="Center"
+                   Text="Panel 2">
+        </TextBlock>
+        
+        <!--Grid Splitter-->
+        <syncfusion:SfGridSplitter syncfusionskin:SfSkinManager.VisualStyle="Blend" 
+                                   EnableCollapseButton="True"
+                                   HorizontalAlignment="Stretch"
+                                   Width="auto"
+                                   Grid.Row="1"/>
+    </Grid>
+</Border>
+
+{% endhighlight %}
+{% highlight C# %}
+
+//Namespace for the SfSkinManager.
+using Syncfusion.SfSkinManager;
+
+SfGridSplitter sfGridSplitter = new SfGridSplitter();
+SfSkinManager.SetVisualStyle(sfGridSplitter, VisualStyles.Blend);
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfGridSplitter with Blend visual style](Positioning-GridSplitter-images/Theme.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Themes) in GitHub

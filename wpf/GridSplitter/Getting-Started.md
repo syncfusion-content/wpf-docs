@@ -89,6 +89,8 @@ namespace SfGridSplitterSample {
 
 ![SfGridSplitter control added by code](Getting-Started-images/WPF-Grid-Splitter.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+
 ## Resize the grid rows
 
 If we want to resize the specific grid rows, place the `SfGridSplitter` on next or previous row and set the `HorizontalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
@@ -134,6 +136,8 @@ If we want to resize the specific grid rows, place the `SfGridSplitter` on next 
 
 ![Resize the grid rows using SfGridSplitter](Positioning-GridSplitter-images/Horizontal_Splitter_img.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+
 ## Resize the grid columns
 
 If we want to resize the specific grid columns, place the `SfGridSplitter` on next or previous column and set the `VerticalAlignment` property as `Stretch` and `ResizeBehavior` property value as `PreviousAndNext`.
@@ -178,6 +182,8 @@ If we want to resize the specific grid columns, place the `SfGridSplitter` on ne
 {% endtabs %}
 
 ![Resize the grid columns using SfGridSplitter](Positioning-GridSplitter-images/Vertical_Splitter_img.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
 
 N> We can restrict the moving location of the grid splitter (Left or Right or Bottom or Top) by setting the value for `ResizeBehavior` property. The `ResizeBehavior` value must be assigned based on the row or column where the grid splitter placed.
 
@@ -227,6 +233,8 @@ If we want to resize the rows or columns of grid with particular pixel interval,
 
 
 ![Resizing the grid rows and colums with specific pixel](Positioning-GridSplitter-images/Move-Interval.gif)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
 
 ### Resize the grid rows or columns programmatically
 
@@ -324,6 +332,207 @@ We can collapse or expands the element in either side of the splitter by clickin
 
 ![Show or hide the grid row and columns](Positioning-GridSplitter-images/EnableCollapseButton.gif)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+
+## Custom UI for Collapse buttons 
+
+If you you want to change the UI of horizontal splitter up and down collapse button separately, use the [UpButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~UpButtonTemplate.html) and [DownButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~DownButtonTemplate.html) properties. If you want to change the UI of vertical splitter left and right collapse button, use the [LeftButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~LeftButtonTemplate.html) and [RightButtonTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~RightButtonTemplate.html) properties 
+
+N> You can see the effect of collapse button templates only on when `EnableCollapseButton` property value is `true`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Border
+    Margin="10"
+    BorderBrush="DarkGray"
+    BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock  HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Grid.Row="0"
+                    Grid.Column="0" 
+                    TextAlignment="Center"
+                    Text="Panel 1"/>
+
+        <TextBlock HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   Text="Panel 2"/>
+
+        <TextBlock HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Grid.RowSpan="3"
+                   Grid.Column="2"
+                   Text="Panel 3"/>
+
+        <!--Horizontal Splitter-->
+        <syncfusion:SfGridSplitter Grid.Row="1"
+                                   Grid.Column="0"
+                                   Height="5"
+                                   HorizontalAlignment="Stretch"
+                                   EnableCollapseButton="True"
+                                   ResizeBehavior="PreviousAndNext">
+
+            <!--Up button template-->
+            <syncfusion:SfGridSplitter.UpButtonTemplate>
+                <DataTemplate>
+                    <Ellipse Width="20" Height="20" Fill="Blue"/>
+                </DataTemplate>
+            </syncfusion:SfGridSplitter.UpButtonTemplate>
+
+            <!--Down button template-->
+            <syncfusion:SfGridSplitter.DownButtonTemplate>
+                <DataTemplate>
+                    <Ellipse Width="20" Height="20" Fill="Orange"/>
+                </DataTemplate>
+            </syncfusion:SfGridSplitter.DownButtonTemplate>              
+        </syncfusion:SfGridSplitter>
+
+        <!--Vertical Splitter-->
+        <syncfusion:SfGridSplitter Grid.RowSpan="3"
+                                   Grid.Column="1"
+                                   Width="5"
+                                   VerticalAlignment="Stretch"
+                                   EnableCollapseButton="True"
+                                   ResizeBehavior="PreviousAndNext"    
+                                   ShowsPreview="True">
+            <!--Left button template-->
+            <syncfusion:SfGridSplitter.LeftButtonTemplate>
+                <DataTemplate>
+                    <Ellipse Width="20" Height="20" Fill="Red"/>
+                </DataTemplate>
+            </syncfusion:SfGridSplitter.LeftButtonTemplate>
+
+            <!--Right button template-->
+            <syncfusion:SfGridSplitter.RightButtonTemplate>
+                <DataTemplate>
+                    <Ellipse Width="20" Height="20" Fill="Green"/>
+                </DataTemplate>
+            </syncfusion:SfGridSplitter.RightButtonTemplate>
+        </syncfusion:SfGridSplitter>
+    </Grid>
+</Border>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfGridSplitter with expand or collapse button template](Positioning-GridSplitter-images/Collapsebuttontemplate.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) in GitHub
+
+## Custom UI for expander gripper
+
+If you you want to change the UI of vertical and horizontal splitter gripper separately, use the [VerticalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~VerticalGripperTemplate.html) and [HorizontalGripperTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~HorizontalGripperTemplate.html) properties.
+
+{% tabs %}
+{% highlight XAML %}
+
+<Border
+    Margin="10"
+    BorderBrush="DarkGray"
+    BorderThickness="1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock  HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Grid.Row="0"
+                    Grid.Column="0" 
+                    Text="Panel 1"/>
+
+        <TextBlock HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Grid.Row="2"
+                   Grid.Column="0" 
+                   Text="Panel 2"/>
+
+        <TextBlock HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Grid.RowSpan="3"
+                   Grid.Column="2" 
+                   Text="Panel 3"/>
+
+        <!--Horizontal Splitter-->
+        <syncfusion:SfGridSplitter Grid.Row="1"
+                                   Grid.Column="0"
+                                   Height="20"
+                                   HorizontalAlignment="Stretch"
+                                   EnableCollapseButton="True"
+                                   ResizeBehavior="PreviousAndNext"
+                                   ShowsPreview="True">
+
+            <!--Horizontal Gripper Template-->
+            <syncfusion:SfGridSplitter.HorizontalGripperTemplate>
+                <DataTemplate>
+                    <TextBlock Background="Blue" 
+                               Foreground="White"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center" 
+                               HorizontalAlignment="Center"
+                               Text="Click and drag" 
+                               Width="90"
+                               Height="20"/>
+                </DataTemplate>
+            </syncfusion:SfGridSplitter.HorizontalGripperTemplate>   
+        </syncfusion:SfGridSplitter>
+
+        <!--Vertical Splitter-->
+        <syncfusion:SfGridSplitter Grid.RowSpan="3"
+                                   Grid.Column="1"
+                                   Width="20"
+                                   VerticalAlignment="Stretch"
+                                   EnableCollapseButton="True"
+                                   ResizeBehavior="PreviousAndNext"  
+                                   ShowsPreview="True">
+
+            <!--Vertical GripperTemplate-->
+            <syncfusion:SfGridSplitter.VerticalGripperTemplate>
+                <DataTemplate>
+                    <TextBlock Background="Red" 
+                               Foreground="White"
+                               TextAlignment="Center"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center" 
+                               Text="Click and drag" 
+                               Width="90" 
+                               Height="20">
+                        <TextBlock.LayoutTransform>
+                            <RotateTransform Angle="-90"/>
+                        </TextBlock.LayoutTransform>
+                    </TextBlock>
+                </DataTemplate>
+            </syncfusion:SfGridSplitter.VerticalGripperTemplate>
+        </syncfusion:SfGridSplitter>
+    </Grid>
+</Border>
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfGridSplitter with custom gripper](Positioning-GridSplitter-images/Gripper.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Custom-Gripper) in GitHub
+
 ## Deferred resizing
 
 We can directly redistribute the row or columns by using `SfGridSplitter`. If we want to preview the location of redistributing row or columns before it changed, we can use the [ShowsPreview](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~ShowsPreview.html) property as `true`.
@@ -368,10 +577,14 @@ We can directly redistribute the row or columns by using `SfGridSplitter`. If we
 
 ![SfGridSplitter with deferred resizing](Positioning-GridSplitter-images/ShowsPreview.png)
 
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
 
 ## Grid splitter for the merged columns or rows
 
 If we want resize the merged columns or rows, place the grid splitter on next or previous row or column of the grid.
+
+{% tabs %}
+{% highlight XAML %}
 
 <Border
     Margin="10"
@@ -421,6 +634,10 @@ If we want resize the merged columns or rows, place the grid splitter on next or
     </Grid>
 </Border>
 
+{% endhighlight %}
+{% endtabs %}
+
 ![Grid splitter for the merged columns or rows](Positioning-GridSplitter-images/Columspan_img.png)
 
-Click [here](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) to download the sample that showcase the `SfGridSplitter` features.
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+
