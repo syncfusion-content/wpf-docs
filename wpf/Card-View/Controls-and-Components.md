@@ -274,7 +274,7 @@ private void EndEdit_Click(object sender, RoutedEventArgs e) {
 
 ![Editing cardview items programmatically](Controls-and-Components_images/EditMode.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-card-view-examples/tree/master/Samples/CardView-EditMode) in GitHub
 
 ## Header Panel
 
