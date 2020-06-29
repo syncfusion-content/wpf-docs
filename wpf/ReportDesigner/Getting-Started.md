@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | ReportDesigner | wpf | Syncfusion
-description: getting started
+description: You can learn here about getting started with Syncfusion WPF Report Designer control and more details.
 platform: wpf
 control: Report Designer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Report Designer
 
 ## Creating Report Designer through Visual Studio
 
@@ -19,7 +19,7 @@ You can create a simple application through the Visual Studio Designer with the 
 
    Drag and drop the ReportDesigner control from the Toolbox to the XAML Page.
    
-   ![](Getting-Started_images/Getting-Started_img1.png)
+   ![WPF ReportDesigner drag and drop from toolbox](Getting-Started_images/Getting-Started_img1.png)
    
 3. Add the following assemblies.
 
@@ -63,7 +63,7 @@ You can create a simple application through the Visual Studio Designer with the 
    
 6. Run the sample application and you can see the Report Designer as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![Report details of WPF ReportDesigner](Getting-Started_images/Getting-Started_img2.png)
 
 ## Load RDL Reports
 
@@ -75,7 +75,7 @@ You can create a simple application through the Visual Studio Designer with the 
    
 2. Run the sample application and you can see the Report Designer for corresponding RDL report as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![RDL Report details of WPF ReportViewer](Getting-Started_images/Getting-Started_img3.png)
    
 ## Load RDLC Reports
 
@@ -88,4 +88,4 @@ You can create a simple application through the Visual Studio Designer with the 
    
 2. Run the sample application and you can see the Report Designer for corresponding RDLC report as displayed in the following screenshot.
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+   ![RDLC Report details of WPF ReportViewer](Getting-Started_images/Getting-Started_img4.png)
