@@ -26,6 +26,12 @@ documentation: ug
                                   Watermark="Enter names separated by comma (Ex : John, Kate)"/>
 
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.Watermark= "Enter names separated by comma (Ex : John, Kate)";
+
+{% endhighlight %}
 {% endtabs %}
 
 ![Watermark_Text](Textbox_customization_images/Watermark.png)
@@ -107,6 +113,15 @@ The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~
             </editors:SfTextBoxExt>
 
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.Text = "TextBox";
+            textBoxExt.FontSize = 20;
+            textBoxExt.FontWeight = FontWeights.Bold;
+            textBoxExt.FontFamily = new FontFamily("Times New Roman");
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -132,7 +147,12 @@ This feature allows to set the drop-down icon for the TextBox control using the 
                               AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
+{% highlight c# %}
 
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.ShowDropDownButton = true;
+
+{% endhighlight %}
 {% endtabs %}
 
 ![DropdownIcon](Textbox_customization_images/DropDownIcon.png)

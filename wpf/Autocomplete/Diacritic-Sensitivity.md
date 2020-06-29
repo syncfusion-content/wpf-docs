@@ -28,6 +28,12 @@ The control does not stick with one type of keyboard, so it can be populated the
                               AutoCompleteSource="{Binding DiacriticCollenction}"/>
 
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.IgnoreDiacritic = false;
+
+{% endhighlight %}
 
 {% endtabs %}
 

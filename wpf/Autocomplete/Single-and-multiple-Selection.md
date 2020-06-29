@@ -42,6 +42,12 @@ The selected items can be displayed as token inside the `AutoComplete` in two wa
                                   Width="200"/>
 
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.MultiSelectMode = MultiSelectMode.Token;
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -125,6 +131,14 @@ AutoSizing can be enabled in `AutoComplete` control so that the control will ext
                                   Width="200"/>
 
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.MultiSelectMode = MultiSelectMode.Token;
+            textBoxExt.TokensWrapMode = TokensWrapMode.Wrap;
+            textBoxExt.EnableAutoSize = true;
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -149,6 +163,12 @@ When selecting the multiple items, the selected items can be divided with a desi
                               SearchItemPath="Name"
                               AutoCompleteMode="Suggest"
                               AutoCompleteSource="{Binding Employees}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.MultiSelectMode = MultiSelectMode.Delimiter;
 
 {% endhighlight %}
 

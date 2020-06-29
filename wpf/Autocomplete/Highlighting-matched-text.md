@@ -37,6 +37,12 @@ It highlights the first position of the matching characters in the suggestion li
                               AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.TextHighlightMode = OccurrenceMode.FirstOccurrence;
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -60,6 +66,12 @@ It highlights the matching character that presents everywhere in the suggestion 
                               HighlightedTextColor="Red"
                               TextHighlightMode="MultipleOccurrence"
                               AutoCompleteSource="{Binding Employees}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.TextHighlightMode = OccurrenceMode.MultipleOccurrence;
 
 {% endhighlight %}
 

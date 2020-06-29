@@ -9,7 +9,7 @@ documentation: ug
 
 # Drop-down customization 
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties that deals with drop-down list in the `AutoComplete` control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties that deals with drop-down list in the `Autocomplete` control.
 
 ## Customize the background 
 
@@ -29,7 +29,12 @@ The [DropDownBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusio
                               AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
+{% highlight c# %}
 
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.DropDownBackground = new SolidColorBrush(Colors.AliceBlue);
+
+{% endhighlight %}
 {% endtabs %}
 
 ![Dropdown background color](Dropdown_customization_images/drop_down_background_color.png)
@@ -63,6 +68,12 @@ The drop-down list will open at the top of the control.
                                   AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
+
+{% endhighlight %}
 {% endtabs %}
 
 ![Top](Dropdown_customization_images/Top.png)
@@ -89,6 +100,12 @@ The drop-down list will open at the bottom of the control.
                                   AutoCompleteSource="{Binding Employees}"/>
   
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
+
+{% endhighlight %}
 {% endtabs %}
 
 ![Bottom](Dropdown_customization_images/Bottom.png)
@@ -114,6 +131,12 @@ The drop-down list will not open.
                                   AutoCompleteSource="{Binding Employees}"/>
     
 {% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
+
+{% endhighlight %}
 {% endtabs %}
 
 ![None](Dropdown_customization_images/None.png)
@@ -138,7 +161,12 @@ The maximum height of the suggestion box in the `Autocomplete` control can be ch
                                   AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
+{% highlight c# %}
 
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.MaxDropDownHeight = 500;
+
+{% endhighlight %}
 {% endtabs %}
 
 ![MaxDropDownHeight](Dropdown_customization_images/maximum_drop_down_height.png)
@@ -160,7 +188,12 @@ Suggestion box can be shown whenever the control receives focus using the [ShowS
                                   AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
+{% highlight c# %}
 
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.ShowSuggestionsOnFocus = true;
+
+{% endhighlight %}
 {% endtabs %}
 
 ![ShowSuggestionsOnFocus](Dropdown_customization_images/suggestion_on_focus.png)
@@ -179,6 +212,12 @@ The [PopupDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInpu
                                   PopupDelay="00:00:02"
                                   AutoCompleteMode="Suggest"
                                   AutoCompleteSource="{Binding Employees}"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+            SfTextBoxExt textBoxExt = new SfTextBoxExt();
+            textBoxExt.PopupDelay = new TimeSpan(00,00,02);
 
 {% endhighlight %}
 {% endtabs %}

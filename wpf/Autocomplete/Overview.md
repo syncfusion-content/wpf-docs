@@ -17,7 +17,7 @@ TextBoxExt is an extended version of the TextBox control. Most of the functional
 
 ### Key features
 
-* **AutoComplete modes**: The control provides the suggestions based on a predefined collection while typing.
+* **Autocomplete modes**: The control provides the suggestions based on a predefined collection while typing.
 * **Watermark**: The control will prompt some information when it is not in focus and contains an empty string.
 * **Filtering suggestion items**: Suggestions can be filtered in 18 different modes like StartsWith, EndWith, Contains, Equals, and Custom. `AutoComplete` provides the both case-sensitive and insensitive modes.
 * **Popup delay**: The filtering process can be delayed. Displaying filtered suggestions from a drop-down list may also be delayed for a period of time.
@@ -30,6 +30,6 @@ TextBoxExt is an extended version of the TextBox control. Most of the functional
 * **Multi Selection Support**: Selecting multiple items from a suggestion list.
 * **SuggestionBox adjustment**: Adjust the position of popup relative to the control.
 * **EnableAutoSize**: AutoSizing can be enabled in `AutoComplete` control so that the control will extend its layout based on the token size.
-* **AutoComplete template**: It can be used for own template.
+* **Autocomplete template**: It can be used for own template.
 * **NoResultsFoundTemplate**: Set the desire text, if the typing item does not exists in the collection.
 * **Retrieving the selection**: Retrieve the selected item, index, and value. 
