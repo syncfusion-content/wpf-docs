@@ -68,7 +68,7 @@ private void sfRadialSlider_DrawLabel(object sender, DrawLabelEventArgs e) {
 
 ![Change tick label text formatting](Ticks_images/LabelEdit.gif)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Label-Formatting) in GitHub
 
 ## Custom UI for tick label
 
@@ -95,4 +95,4 @@ You can change the UI of the each tick labels available in the `SfRadialSlider` 
 
 ![Custom UI for tick label](Ticks_images/CustomUI.png)
 
-N> View [Sample]() in GitHub
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Custon-Label) in GitHub
