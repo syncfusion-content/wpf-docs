@@ -264,9 +264,8 @@ The `HorizontalAlignment` property is used to position the marker icon in x-axis
         <ResourceDictionary>
             <DataTemplate x:Key="markerTemplate">
                 <Grid>
-                    <StackPanel Margin="-12,-30,0,0" Height="50" Orientation="Horizontal">
-                        <Image Source="pin.png" Height="30" />
-                        <TextBlock HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" Margin="10" FontSize="30" FontFamily="Segoe UI" Text="{Binding Label}"/>
+				    <StackPanel Margin="-12,-20,0,0" Height="60"  Width="100" Orientation="Horizontal" Background="Transparent">
+                        <Image Source="pin.png" Height="60"  />
                     </StackPanel>
                 </Grid>
             </DataTemplate>
@@ -321,10 +320,9 @@ The `VerticalAlignment` property is used to position the marker icon in y-axis. 
 
         <ResourceDictionary>
             <DataTemplate x:Key="markerTemplate">
-                <Grid>
-                    <StackPanel Margin="-12,-30,0,0" Height="50" Orientation="Horizontal">
-                        <Image Source="pin.png" Height="30" />
-                        <TextBlock HorizontalAlignment="Center" Foreground="Blue" VerticalAlignment="Center" Margin="10" FontSize="30" FontFamily="Segoe UI" Text="{Binding Label}"/>
+                <Grid>                    
+				    <StackPanel Margin="-12,-20,0,0" Height="60"  Width="100" Orientation="Horizontal" Background="Transparent">
+                        <Image Source="pin.png" Height="60"  />
                     </StackPanel>
                 </Grid>
             </DataTemplate>
