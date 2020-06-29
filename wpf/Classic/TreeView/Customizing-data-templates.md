@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Data Templates
-description: Customizing Data Templates
+title: Customizing Data Templates | Syncfusion
+description: This section describes how to customize the syncfusion treeview(TreeViewAdv) control using the data templates.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
@@ -314,7 +314,7 @@ Title="MainWindow" Height="350" Width="525">
 
 {% endtabs %}
 
-![](Customizing_data_templates_images/Customizing_data_templates_img1.jpeg)
+![Customizing the TreeViewItemAdv](Customizing_data_templates_images/Customizing_data_templates_img1.jpeg)
 
 ## Item template selector
 
@@ -407,7 +407,7 @@ End Class
 
 The TreeViewAdv generates as shown in the following screenshot:
 
-![](Customizing_data_templates_images/Customizing_data_templates_img2.jpeg)
+![ItemTemplateSelector in TreeViewAdv](Customizing_data_templates_images/Customizing_data_templates_img2.jpeg)
 
 
 ## Edit template
@@ -448,7 +448,7 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 
 While editing the TreeViewItemAdv appears as shown in the following screen shot:
 
-![](Customizing_data_templates_images/Customizing_data_templates_img3.jpeg)
+![EditTemplate in TreeViewAdv](Customizing_data_templates_images/Customizing_data_templates_img3.jpeg)
 
 
 ## Edit template selector
@@ -550,7 +550,7 @@ End Class
 
 The TreeViewAdv generates as shown in the following screenshot:
 
-![](Customizing_data_templates_images/Customizing_data_templates_img4.jpeg)
+![EditedTemplateSelector in TreeViewAdv](Customizing_data_templates_images/Customizing_data_templates_img4.jpeg)
 
 
 ## Header template
@@ -591,7 +591,7 @@ Title="MainWindow" Height="350" Width="525">
 
 {% endtabs %}
 
-![](Customizing_data_templates_images/Customizing_data_templates_img5.jpeg)
+![HeaderTemplate in TreeViewAdv](Customizing_data_templates_images/Customizing_data_templates_img5.jpeg)
 
 
 ## Cell template 
@@ -648,4 +648,4 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 
 {% endtabs %}
 
-![](Customizing_data_templates_images/Customizing_data_templates_img6.jpeg)
+![CellTemplate in TreeViewAdv](Customizing_data_templates_images/Customizing_data_templates_img6.jpeg)

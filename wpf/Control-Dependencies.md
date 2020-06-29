@@ -1838,6 +1838,25 @@ Syncfusion.DataGridExcelExport.Wpf
 </tr>
 </table>
 
+## SfTreeView
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTreeView.WPF <br/>
+Syncfusion.SfBusyIndicator.WPF <br/>
+Syncfusion.SfGridCommon.WPF
+</td>
+<td> 
+Syncfusion.SfTreeView.WPF
+</td>
+</tr>
+</table>
+
 ## SfTreeMap
 
 <table>
