@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dock Hints | DockAbility | DockingManager | WPF | Syncfusion
-description: Changing the state of the window through Dock hints of the DockingManager
+description: This section explains how the state of the window changed through dock hints of the DockingManager and how it can be enabled/disabled
 platform: wpf
 control: DockingManager
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Guidance to place the window in desired place
 
-State of the dock children can be changed through the dock hints. This section explains how the dock item can be docked / documented with the help of Dockhints and how the dock hints can be disabled/ enabled at run time.
+State of the dock children can be changed through the dock hints. This section explains how the dock item can be docked / documented with the help of Dock hints and how the dock hints can be disabled/ enabled at run time.
 
 ## DockHints
 
-When user drags the window Dragprovider appears with Dock hints, using the dock hints the window can be placed(docked or documented) to its desired place. If the window is dragged over the document area drag provider will be displayed with 9 hints, 
+When user drags the window Drag Provider appears with Dock hints, using the dock hints the window can be placed(docked or documented) to its desired place. If the window is dragged over the document area drag provider will be displayed with 9 hints, 
 
 ![DragProvider with 9 dock hints](Dock-hints-images/dock-hints-8.png)
 
@@ -25,11 +25,11 @@ Otherwise the provider will be displayed with 5 hints.
 
 User can document the dragged window with the existing tab group through the center dock hint. New Tab group can be created at any sides(left, top, right and bottom) through the hints which is adjacent to the center dock hint. Dragged window can be docked at any side using the hints which is outer side of the drag provider.
 
-![DragProvider with 9 dock hints](Dock-hints-images/dock-hints-8-functionality.png)
+![9 dock hints functionality](Dock-hints-images/dock-hints-8-functionality.png)
 
 Using center dock hint, dragged window can be docked in the existing dock window. Also the window can be docked to any side of the targeted window through the outer side of the drag provider.
 
-![DragProvider with 5 dock hints](Dock-hints-images/dock-hints-4-functionality.png)
+![5 dock hints functionality](Dock-hints-images/dock-hints-4-functionality.png)
 
 ## Restrict docking by disabling inner and outer dock hints
 
@@ -283,7 +283,7 @@ If the DockAbility is `DocumentAll`, all the dock hints which allows the window 
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockAbility-documentall.png)
+![DragProvider with all document hints](Dock-hints-images/dock-hints-dockAbility-documentall.png)
 
 ### Left, Right, Top, Bottom, Tabbed
 
@@ -405,7 +405,7 @@ The dock hints which are arranged vertically in the DragProvider will be enabled
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockAbility-vertical.png)
+![DragProvider with vertical dock hints](Dock-hints-images/dock-hints-dockAbility-vertical.png)
 
 ### Horizontal
 
@@ -467,7 +467,7 @@ The dock hints which are arranged horizontally in the DragProvider will be enabl
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockAbility-horizontal.png)
+![DragProvider with horizontal dock hints](Dock-hints-images/dock-hints-dockAbility-horizontal.png)
 
 ### None
 
@@ -475,7 +475,7 @@ None of the dock hints will be visible, if the DockAbility is `None`.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/PreviewDockHints) in GitHub
 
-## Handle visibility of the outer dockhints through OuterDockAbility
+## Handle visibility of the outer dock hints through OuterDockAbility
 
 By setting `DockAbility` property to the dragged window, both inner and outer dockability has been handled. To handle the visibility of the outer dockability alone, [OuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~OuterDockAbilityProperty.html) property is used. The values which is assinged to the `OuterDockAbility` will be effective only if the [UseOuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseOuterDockAbility.html) property is true.
 
