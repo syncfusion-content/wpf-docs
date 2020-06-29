@@ -473,9 +473,9 @@ If you want to zoom the imagery layer using fingers by touch, then you have to e
     </Window.Resources>
     <Grid>
         <Grid>
-            <syncfusion:SfMap ZoomLevel="3">
+            <syncfusion:SfMap ZoomLevel="3" IsManipulationEnabled="True" EnableZoom="True">
                 <syncfusion:SfMap.Layers>
-                    <syncfusion:ImageryLayer  Markers="{Binding Models}"  IsManipulationEnabled="True" MarkerTemplate="{StaticResource markerTemplate}">
+                    <syncfusion:ImageryLayer  Markers="{Binding Models}" MarkerTemplate="{StaticResource markerTemplate}">
                     </syncfusion:ImageryLayer>
                 </syncfusion:SfMap.Layers>
             </syncfusion:SfMap>
@@ -491,6 +491,7 @@ If you want to zoom the imagery layer using fingers by touch, then you have to e
             maps.ZoomLevel = 3;
             layer.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
             maps.IsManipulationEnabled = true;
+            maps.EnableZoom = true;
             maps.Layers.Add(layer);
             this.Content = maps;
 			
