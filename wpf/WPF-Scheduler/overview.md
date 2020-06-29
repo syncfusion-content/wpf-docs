@@ -8,7 +8,7 @@ documentation: ug
 
 # WPF Scheduler (SfScheduler) Overview
 
-Essential Scheduler for WPF provides all the common scheduling functionalities to create and manage appointments as well as exposes a gesture friendly UI to perform all common operations likes selection, navigation, etc. **Essential** **Schedule** is a perfect solution for developers looking to add advanced, feature rich **Scheduler** to their applications.
+The WPF Scheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
 
 ![Scheduler in WPF](GettingStarted_images/gettingstarted.png)
 
@@ -17,9 +17,21 @@ Essential Scheduler for WPF provides all the common scheduling functionalities t
 
 **Built-in Views** — Scheduler provides five different types of views such as Day, WorkWeek, Week, Timeline and Month.
 
-**Recurrence Appointment** — Recurring appointments can be created with Daily, weekly, monthly, and yearly recurrence patterns which is supported in ICalc standard.
+**Appointments** - Appointments contain information on events scheduled at specific times. In addition to default appointments, users can use their own collections to connect a business entity to an appointment by mapping their fields, such as start time, end time, subject, notes, and recurrence.
 
-**Customization** — Control has simple APIs allowing for elegant customizations. You can edit the look to match the rest of your application.
+**Recurrence Appointment** — Easily configure recurring events on a daily, weekly, monthly, or yearly basis. You can also skip or change the occurrence of a recurring appointment.
 
-**Localization** — The built-in content of the user interface can be changed according to culture that is needed. Also, it has built-in culture support for basic items such us day and month text representations.
+**Appointment Mapping** - Scheduler control supports to mapp any collection that implements the IEnumerable interface to populate appointments.
+
+**Appointment Editor** - You can easily create, edit, or delete appointments using the built-in appointment editor.
+
+**Time zone** - Display appointments created in various time zones in the system time zone. Appointment start and end times are also automatically adjusted and displayed based on daylight savings time.
+
+**First day of the week** - Customize the first day of the week as needed. The default first day is Sunday.
+
+**Flexible working days** - Customize the work days in a workweek so that the remaining days will be hidden from view.
+
+**Appearance Customization** — Provide a unique look to your scheduler with event appearance customization.
+
+**Localization** — Display the current date and time by following the globalized date and time formats, and localize all available static texts in scheduler.
 

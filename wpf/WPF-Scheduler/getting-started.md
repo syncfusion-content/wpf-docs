@@ -14,15 +14,25 @@ This section provides you an overview for working with Scheduler for WPF and als
 ## Assembly deployment
 Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#SfScheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages). You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
 
+## Create simple application with SfSchedule
 
-## Create a project
+* [Creating project](#Creating-project)
+* [Adding control via Designer](#Adding-control-via-Designer)
+* [Adding control manually in XAML](#Adding-control-manually-in-XAML)
+* [Adding control manually in C#](#Adding-control-manually-in-C#)  
+
+### Creating project
 In Visual Studio, create a new WPF project to show the features of the scheduler control and add the following namespace to the added assemblies.
 
 Assembly: `Syncfusion.SfScheduler.WPF`
 
 Namespace: `Syncfusion.UI.Xaml.Scheduler`
 
-## Adding Scheduler to the project
+### Adding control via Designer
+
+Scheuler control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+
+### Adding control manually in XAML
 
 To add the control manually in XAML page, follow the given steps:
 
@@ -57,7 +67,6 @@ To add the control manually in XAML page, follow the given steps:
 <Window.DataContext>
     <local:MeetingDetails/>
 </Window.DataContext>
-
 <Grid>
     <syncfusion:SfScheduler x:Name="Schedule"
                 ItemsSource="{Binding Events}"
@@ -78,6 +87,13 @@ To add the control manually in XAML page, follow the given steps:
 </Grid>
 </Window>
 {% endhighlight %}
+{% endtabs %}
+
+### Adding control manually in C#
+
+To add the control manually in C# page,Add the `Syncfusion.SfScheduler.WPF` assembly reference to the project.
+
+{% tabs %}
 {% highlight c#%}
 using Syncfusion.UI.Xaml.Scheduler;
 namespace GettingStarted
@@ -92,83 +108,9 @@ namespace GettingStarted
 {% endtabs %}
    
 
-## Changing Schedule Views   
+## Change different Scheduler Views  
     
-Scheduler control provides five different types of views to display dates and it can be assigned to the control by using [ScheduleView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ScheduleView.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.  
-
-Scheduler control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`.
-    
-{% tabs %}  
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" FirstDayOfWeek="Tuesday"/> 
-{% endhighlight %}   
-{% highlight c# %}
-//setting first day of the week    
-Schedule.FirstDayOfWeek = DayOfWeek.Thursday;   
-{% endhighlight %}  
-{% endtabs %}   
-    
-![First Day of week](GettingStarted_images/DayOfWeek.png)   
-
-### Day View   
-    
-`Day` is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.   
-    
-{% tabs %}   
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Day"/>  
-{% endhighlight %}   
-{% highlight c# %}
-Schedule.ViewType =SchedulerViewType.Day; 
-{% endhighlight %}   
-{% endtabs %}   
-    
-![Day View](GettingStarted_images/Day.png)   
-
-### Week View   
- 
-`Week` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.  
-    
-{% tabs %}   
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week"/>
-{% endhighlight %}   
-{% highlight c# %}
-Schedule.ViewType =SchedulerViewType.Week;   
-{% endhighlight %}   
-{% endtabs %}   
-    
-![Week View](GettingStarted_images/Week.png)  
-
-### Work Week View   
- 
-`WorkWeekView` is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.  
-    
-{% tabs %}   
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="WorkWeek"> 
-{% endhighlight %}   
-{% highlight c# %}
-Schedule.ViewType =SchedulerViewType.WorkWeek;
-{% endhighlight %}   
-{% endtabs %}   
-    
-![Work Week View](GettingStarted_images/WorkWeekView.png)   
-
-### Timeline view   
- 
-`Timeline` displays the dates in horizontal time axis with the desired day's count. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature.  
-    
-{% tabs %}   
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Timeline"/>  
-{% endhighlight %}   
-{% highlight c# %}
-Schedule.ViewType =SchedulerViewType.Timeline;  
-{% endhighlight %}   
-{% endtabs %}   
-    
-![Timeline view](GettingStarted_images/Timeline.png)	
+Scheduler control provides five different types of views to display dates and it can be assigned to the control by using `SchedulerViewType` property. By default the control is assigned with `MonthView`. Current date will be displayed initially for all the Schedule views.  
 
 ### Month View   
     
@@ -185,13 +127,16 @@ Schedule.ViewType =SchedulerViewType.Month;
     
 ![Month View](GettingStarted_images/Month.png)
 
-## Binding data to SfSchedule control   
+## Events/Appointments data mapping
+
+* [Create an event Data Model](#creating-custom-class-for-appointments) 
+* [Create view model](#create-view-model)
+* [Bind to Scheduler appointment](#Bind-to-Scheduler-appointment)  
+* [Add Scheduler items source.](#Add-Scheduler-items-source.) 
   
-Scheduler control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [ItemSource] property of `Schedule`.  
+### Create an event Data Model 
   
-### Adding Appointments   
-  
-`ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as `StartTime`, `EndTime`, `Subject` and some additional information about the appointment can be added using `Color`, `Notes`, `Location`, `IsAllDay`, `IsRecursive` properties.    
+`ScheduleAppointment` is used to create the scheduler events or appointments, which holds the details about the appointment to be rendered in schedule.   
   
 {% tabs %}     
 {% highlight c# %}
@@ -208,317 +153,40 @@ clientMeeting.StartTime = startTime;
 clientMeeting.EndTime = endTime;
 clientMeeting.Subject = "ClientMeeting";
 appointmentCollection.Add(clientMeeting);
-            Schedule.ItemsSource = appointmentCollection;
+Schedule.ItemsSource = appointmentCollection;
 {% endhighlight %}   
 {% endtabs %}   
 
-### Adding Custom Appointments   
-  
-You can also map custom appointments data to our scheduler.   
-  
->**NOTE**
-CustomAppointment class should contain two DateTime fields and a string field as mandatory.
- 
-Here steps to render `MeetingRoomScheduler` using SfScheduler control with respective custom data properties created in a class Meeting.  
-  
-* [Creating custom class for appointments](#creating-custom-class-for-appointments) 
-* [Creating view model](#creating-view-model)
-* [Mapping custom class](#mapping-custom-class)  
-* [Setting data source for SfSchedule](#setting-data-source-for-sfschedule)  
-
-#### Creating custom class for appointments
- 
-You can create a custom class `Meeting` with mandatory fields "From", "To" and "EventName". 
- 
-{% tabs %}   
-{% highlight c# %}
-  
-    public class Meeting : NotificationObject
-    {
-        DateTime from, to;
-        string eventName;
-        bool isAllDay;
-        string startTimeZone, endTimeZone;
-        Brush color;
-        public Meeting()
-        {
-        }
-
-        public DateTime From
-        {
-            get { return from; }
-            set
-            {
-                from = value;
-                RaisePropertyChanged("From");
-            }
-        }
-
-        public DateTime To
-        {
-            get { return to; }
-            set
-            {
-                to = value;
-                RaisePropertyChanged("To");
-            }
-        }
-
-        public bool IsAllDay
-        {
-            get { return isAllDay; }
-            set
-            {
-                isAllDay = value;
-                RaisePropertyChanged("IsAllDay");
-            }
-        }
-        public string EventName
-        {
-            get { return eventName; }
-            set
-            {
-                eventName = value;
-                RaisePropertyChanged("EventName");
-            }
-        }
-        public string StartTimeZone
-        {
-            get { return startTimeZone; }
-            set
-            {
-                startTimeZone = value;
-                RaisePropertyChanged("StartTimeZone");
-            }
-        }
-        public string EndTimeZone
-        {
-            get { return endTimeZone; }
-            set
-            {
-                endTimeZone = value;
-                RaisePropertyChanged("EndTimeZone");
-            }
-        }
-
-        public Brush Color
-        {
-            get { return color; }
-            set
-            {
-                color = value;
-                RaisePropertyChanged("Color");
-            }
-        }
-    }
-{% endhighlight %}   
-{% endtabs %}   
-    
->**NOTE**
-You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
-
-#### Creating view model 
+### Create view model 
 
 You can schedule meetings for a particular day by setting `From` and `To` of `Meeting` class.Also you can change subject and color of appointment using `EventName` and `color` of Meeting class. In a separate ViewModel class you can describe the collection of custom appointments.  
 
 {% tabs %}   
 {% highlight c# %} 
 public class ScheduleViewModel : NotificationObject
-    {
-        #region Properties
+    {  
+        private List<DateTime> startTimeCollection;     
+        public ObservableCollection<Meeting> Appointments{ get; set; }
 
-        /// <summary>
-        /// color collection
-        /// </summary>
-        private List<Brush> colorCollection;
-
-        /// <summary>
-        /// start time collection
-        /// </summary>
-        private List<DateTime> startTimeCollection;
-
-        /// <summary>
-        /// end time collection
-        /// </summary>
-        private List<DateTime> endTimeCollection;
-
-        #endregion Properties
-
-        #region Constructor
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ScheduleViewModel" /> class.
-        /// </summary>
         public ScheduleViewModel()
         {
             this.Appointments = new ObservableCollection<Meeting>();
-            this.CreateStartTimeCollection();
-            this.CreateEndTimeCollection();
-            this.CreateSubjectCollection();
-            this.CreateColorCollection();
             this.IntializeAppoitments();
         }
 
-        #endregion Constructor
-
-        /// <summary>
-        /// Gets or sets appointments
-        /// </summary>
-        public ObservableCollection<Meeting> Appointments
-        {
-            get;
-            set;
-        }
-
-        #region Methods
-
-        #region GettingTimeRanges
-
-        /// <summary>
-        /// Method for get timing range.
-        /// </summary>
-        /// <returns>return time collection</returns>
-        private List<Point> GettingTimeRanges()
-        {
-            List<Point> randomTimeCollection = new List<Point>();
-            randomTimeCollection.Add(new Point(9, 11));
-            randomTimeCollection.Add(new Point(12, 14));
-            randomTimeCollection.Add(new Point(15, 17));
-
-            return randomTimeCollection;
-        }
-
-        #endregion GettingTimeRanges
-
-        #region InitializeAppointments
-        /// <summary>
-        /// Initialize appointments
-        /// </summary>
-        /// <param name="count">count value</param>
         private void IntializeAppoitments()
         {
-            Random randomTime = new Random();
-            List<Point> randomTimeCollection = this.GettingTimeRanges();
-
-            DateTime date;
-            DateTime dateFrom = DateTime.Now.AddDays(-100);
-            DateTime dateTo = DateTime.Now.AddDays(100);
-            var random = new Random();
-            var dateCount = random.Next(4);
-            DateTime dateRangeStart = DateTime.Now.AddDays(0);
-            DateTime dateRangeEnd = DateTime.Now.AddDays(1);
-
-            for (date = dateFrom; date < dateTo; date = date.AddDays(1))
-            {
-                if (date.Day % 7 != 0)
-                {
-                    for (int additionalAppointmentIndex = 0; additionalAppointmentIndex < 1; additionalAppointmentIndex++)
-                    {
-                        Meeting meeting = new Meeting();
-                        int hour = randomTime.Next((int)randomTimeCollection[additionalAppointmentIndex].X, (int)randomTimeCollection[additionalAppointmentIndex].Y);
-                        meeting.From = new DateTime(date.Year, date.Month, date.Day, hour, 0, 0);
-                        meeting.To = meeting.From.AddHours(1);
-                        meeting.EventName = this.currentDayMeetings[randomTime.Next(9)];
-                        meeting.Color = this.colorCollection[randomTime.Next(9)];
-                        meeting.IsAllDay = false;
-                        meeting.StartTimeZone = string.Empty;
-                        meeting.EndTimeZone = string.Empty;
-                        this.Appointments.Add(meeting);
-                    }
-                }
-                else
-                {
-                    Meeting meeting = new Meeting();
-                    meeting.From = new DateTime(date.Year, date.Month, date.Day, randomTime.Next(9, 11), 0, 0);
-                    meeting.To = meeting.From.AddDays(2).AddHours(1);
-                    meeting.EventName = this.currentDayMeetings[randomTime.Next(9)];
-                    meeting.Color = this.colorCollection[randomTime.Next(9)];
-                    meeting.IsAllDay = true;
-                    meeting.StartTimeZone = string.Empty;
-                    meeting.EndTimeZone = string.Empty;
-                    this.Appointments.Add(meeting);
-                }
-            }
-
-            // Minimum Height Meetings
-            DateTime minDate;
-            DateTime minDateFrom = DateTime.Now.AddDays(-2);
-            DateTime minDateTo = DateTime.Now.AddDays(2);
-
-            for (minDate = minDateFrom; minDate < minDateTo; minDate = minDate.AddDays(1))
-            {
-                Meeting meeting = new Meeting();
-                meeting.From = new DateTime(minDate.Year, minDate.Month, minDate.Day, randomTime.Next(9, 18), 30, 0);
-                meeting.To = meeting.From;
-                meeting.EventName = this.minTimeMeetings[randomTime.Next(0, 4)];
-                meeting.Color = this.colorCollection[randomTime.Next(0, 10)];
-                meeting.StartTimeZone = string.Empty;
-                meeting.EndTimeZone = string.Empty;
-                
-                this.Appointments.Add(meeting);
-            }
+            Meeting meeting = new Meeting();
+            meeting.From = new DateTime(date.Year, date.Month, date.Day, randomTime.Next(9, 11), 0, 0);
+            meeting.To = meeting.From.AddDays(2).AddHours(1);
+            meeting.EventName = this.currentDayMeetings[randomTime.Next(9)];
+            meeting.Color = this.colorCollection[randomTime.Next(9)];
+            meeting.IsAllDay = true;
+            meeting.StartTimeZone = string.Empty;
+            meeting.EndTimeZone = string.Empty;
+            this.Appointments.Add(meeting);
         }
 
-        #endregion InitializeAppointments
-
-        #region SubjectCollection
-
-        /// <summary>
-        /// Subject collection
-        /// </summary>
-        ////creating subject collection
-        private void CreateSubjectCollection()
-        {
-            this.teamManagement = new List<string>();
-            this.teamManagement.Add("General Meeting");
-            this.teamManagement.Add("Plan Execution");
-            this.teamManagement.Add("Project Plan");
-            this.teamManagement.Add("Consulting");
-            this.teamManagement.Add("Performance Check");
-            this.teamManagement.Add("General Meeting");
-            this.teamManagement.Add("Plan Execution");
-            this.teamManagement.Add("Project Plan");
-            this.teamManagement.Add("Consulting");
-            this.teamManagement.Add("Performance Check");
-        }
-
-        #endregion SubjectCollection
-
-        #region creating color collection
-
-        /// <summary>
-        /// color collection
-        /// </summary>
-        ////creating color collection
-        private void CreateColorCollection()
-        {
-            this.colorCollection = new List<Brush>();
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFA2C139")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFD80073")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1BA1E2")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFE671B8")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFF09609")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00ABA9")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFE671B8")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1BA1E2")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFD80073")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFA2C139")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFA2C139")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFD80073")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFE671B8")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00ABA9")));
-        }
-
-        #endregion creating color collection
-
-        #region CreateStartTimeCollection
-
-        /// <summary>
-        /// start time collection
-        /// </summary>
-        //// creating StartTime collection
         private void CreateStartTimeCollection()
         {
             this.startTimeCollection = new List<DateTime>();
@@ -533,42 +201,15 @@ public class ScheduleViewModel : NotificationObject
                 count++;
             }
         }
-
-        #endregion CreateStartTimeCollection
-
-        #region CreateEndTimeCollection
-
-        /// <summary>
-        /// end time collection
-        /// </summary>
-        ////  creating EndTime collection
-        private void CreateEndTimeCollection()
-        {
-            this.endTimeCollection = new List<DateTime>();
-            DateTime currentDate = DateTime.Now;
-            int count = 0;
-            for (int i = -5; i < 5; i++)
-            {
-                DateTime endTime = new DateTime(currentDate.Year, currentDate.Month, currentDate.Day, this.randomNums[count] + 1, 0, 0);
-                DateTime endDateTime = endTime.AddDays(i);
-                if (i == -3 || i == 3)
-                {
-                    endDateTime = endTime.AddDays(i).AddHours(22);
-                }
-
-                this.endTimeCollection.Add(endDateTime);
-                count++;
-            }
-        }
-
-        #endregion CreateEndTimeCollection
-
-        #endregion Methods
     }
 {% endhighlight %}
 {% endtabs %}   
 
-#### Mapping custom class  
+
+>**NOTE**
+You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
+
+### Bind to Scheduler appointment
 
 You can map those properties of `Meeting` class with our schedule control by using `SfScheduler.AppointmentMapping`.   
 
@@ -605,9 +246,9 @@ Schedule.AppointmentMapping.EndTimeZone = "EndTimeZone";
 {% endtabs %}
 
 You can download the entire source code of creating CustomAppointment for WPF from
-here [SchedulerGettingStarted](https://github.com/SyncfusionExamples/scheduler-data-binding-demo)
+here [SchedulerDataBindingDemo](https://github.com/SyncfusionExamples/scheduler-data-binding-demo)
 
-#### Setting ItemsSource for SfScheduler  
+### Add Scheduler items source.
 
 Create meetings of type `ObservableCollection <Meeting>`  and assign those appointments collection `Meetings` to the `ItemsSource` property of `SfScheduler`.
 
@@ -630,3 +271,18 @@ Schedule.ItemsSource = meetingDetails.Events;
 You can download the entire source code of this demo for WPF from
 here [SchedulerGettingStarted](https://github.com/SyncfusionExamples/scheduler_getting_started_demo)
 
+## Change first day of week
+
+Scheduler control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using `FirstDayOfWeek` property of `SfSchedule`.
+    
+{% tabs %}  
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" FirstDayOfWeek="Tuesday"/> 
+{% endhighlight %}   
+{% highlight c# %}
+//setting first day of the week    
+Schedule.FirstDayOfWeek = DayOfWeek.Thursday;   
+{% endhighlight %}  
+{% endtabs %}   
+    
+![First Day of week](GettingStarted_images/DayOfWeek.png) 
