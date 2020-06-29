@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF 3D Charts (SfChart3D) | Syncfusion
+title: Getting Started with WPF SfChart3D | Syncfusion
 description: Learn here about getting started with simple application using WPF chart (SfChart3D) control and more details.
 platform: wpf
 control: SfChart3D
 documentation: ug
 ---
 
-# Getting Started with WPF 3D Charts (SfChart3D)
+# Getting Started with WPF Charts (SfChart3D)
 
 This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to learn to get started with the Chart.
 
@@ -17,7 +17,7 @@ Refer to this [article](https://help.syncfusion.com/wpf/add-syncfusion-controls)
 
 ## Initialize chart
 
-Import the SfChart3D namespace in your XAML page.
+Import the SfChart namespace in your XAML page.
 
 {% tabs %}
   
@@ -35,7 +35,7 @@ using Syncfusion.UI.Xaml.Charts;
 
 {% endtabs %}
 
-Then initialize an empty chart with [PrimaryAxis](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~PrimaryAxis.html) and [SecondaryAxis](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~SecondaryAxis.html) as shown below,
+Then initialize an empty chart with two axes as shown below,
 
 {% tabs %}
 
@@ -149,9 +149,9 @@ this.DataContext = new UsersViewModel();
 
 ## Populate chart with data
 
-As we are going to visualize the comparison of heights in the data model, add [`ColumnSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ColumnSeries3D.html)  to [`SfChart3D.Series`]( https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D~Series.html) property, and then bind the Data property of the above ViewModel to the [`ColumnSeries3D.ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ItemsSource.html) property as follows.
+As we are going to visualize the comparison of heights in the data model, add ColumnSeries to SfChart3D.Series property, and then bind the Data property of the above ViewModel to the ColumnSeries.ItemsSource property as follows.
 
->N You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XyDataSeries3D~YBindingPath.html) properties, so that [`SfChart3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart3D.html) would fetch values from the respective properties in the data model to plot the series.
+N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.XyDataSeries~YBindingPath.html) properties, so that [`SfChart`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.SfChart.html) would fetch values from the respective properties in the data model to plot the series.
 
 
 {% tabs %}
@@ -225,7 +225,7 @@ The header of the chart acts as the title to provide quick information to the us
 
 ## Enable data labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentsInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries3D~AdornmentsInfo.html) property of [`ChartSeries3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries3D_members.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of [`ChartAdornmentInfo3D`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo3D.html) to True.
+You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) property of [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeries.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) to True.
 
 {% tabs %} 
 
@@ -252,7 +252,7 @@ You can add data labels to improve the readability of the chart and it can be en
 
 {% highlight C# %} 
 
-series.AdornmentsInfo = new ChartAdornmentInfo3D (){ ShowLabel = true }; 
+series.AdornmentsInfo = new ChartAdornmentInfo (){ ShowLabel = true }; 
 
 {% endhighlight %}
 
@@ -287,7 +287,7 @@ You can enable legend using the [`Legend`](https://help.syncfusion.com/cr/cref_f
 
 {% highlight C# %} 
 
-chart.Legend = new ChartLegend(); 
+chart.Legend = new ChartLegend (); 
 
 {% endhighlight %}
 
@@ -323,6 +323,7 @@ Additionally, you need to set label for each series using the [`Label`](https://
             YBindingPath = "NoOfUsers",
             Label = "UserProfile"
         };
+
 
 {% endhighlight %}
 
@@ -422,7 +423,7 @@ The following code example gives you the complete code of above configurations.
 
 {% highlight C# %}
 
-        SfChart3D chart = new SfChart3D() { Header = "Chart", Height = 500, Width = 500 };
+    SfChart3D chart = new SfChart3D() { Header = "Chart", Height = 500, Width = 500 };
 
             //Adding horizontal axis to the chart 
             CategoryAxis3D primaryAxis = new CategoryAxis3D();

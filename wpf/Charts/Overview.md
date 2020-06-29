@@ -11,11 +11,9 @@ documentation: ug
 
 SfChart provides a perfect way to visualize data with a high level of user interactivity that focus on development,productivity and simplicity of use. SfChart also provides a wide variety of charting features that can be used to visualize large quantities of data, flexibility of binding data and user customization. 
 
-<div style="float:center;">
-    ![Overview of WPF Chart](Overview_images/Overview.png)
-</div>
-
+![Overview of WPF Chart](Overview_images/Overview_img1.png)
     
+
 
 ## Key features
 
