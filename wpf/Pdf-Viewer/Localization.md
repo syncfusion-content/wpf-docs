@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Localization
+# Localization in Syncfusion PDF Viewer
 
 Localization is the process of configuring the application to a specific language. `PdfViewerControl` provides support to localize all the static text used for tooltip and context menu contents. Localization can be done by adding resource file (Resx) in the application.
 The following table shows the default values for the common text used in the `PdfViewerControl` which is in `en-US` culture:
