@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ContextMenuType| SfSchedule | Wpf | Syncfusion
-description: Learn here about contextmenutype of Syncfusion WPF Scheduler control
+description: This section explain about contextmenutype of Syncfusion WPF Scheduler control
 platform: wpf
 control: SfSchedule
 documentation: ug

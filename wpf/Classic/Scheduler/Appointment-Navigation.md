@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment Navigation| SfSchedule | Wpf | Syncfusion
-description:Learn here about appointment navigation of Syncfusion WPF Scheduler control and more details. 
+description: This section explain about appointment navigation of Syncfusion WPF Scheduler control and more details. 
 platform: wpf
 control: SfSchedule
 documentation: ug

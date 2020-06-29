@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import and Export| SfSchedule | Wpf | Syncfusion
-description: This section explains how to import and export WPF Scheduler into an application
+description: This section explains how to import and export WPF Scheduler control into an application
 platform: wpf
 control: SfSchedule
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commands| SfSchedule | Wpf | Syncfusion
-description::Learn here about commands of Syncfusion WPF Scheduler control
+description: This section explain about commands of Syncfusion WPF Scheduler control
 platform: wpf
 control: SfSchedule
 documentation: ug

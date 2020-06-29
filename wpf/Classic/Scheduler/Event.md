@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event| SfSchedule | Wpf | Syncfusion
-description: event
+description: This section explain about event of Syncfusion WPF Scheduler control
 platform: wpf
 control: SfSchedule
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time Zone| SfSchedule | Wpf | Syncfusion
-description: This section explains about how to use the time zone for ScheduleAppointment in WPF Scheduler.
+description: This section explains about how to use the time zone for ScheduleAppointment in WPF Scheduler control
 platform: wpf
 control: SfSchedule
 documentation: ug
