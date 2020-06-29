@@ -317,6 +317,28 @@ You can customize the dragging popup to show the corresponding drag row data by 
 
 ![Customizing draggable Popup to show corresponding dragging row data in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img31.png)
 
+### Changing the row drop indicator.
+
+By default, row drop indicator is `Arrow`. To change row drop indicator as line, set the `sfDataGrid.RowDropIndicatorMode` as `Line`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid Name="datagrid"
+                       AllowDraggingRows="True" 
+					   AllowDrop="True" 
+					   RowDropIndicatorMode="Line" 
+					   ItemsSource="{Binding EmployeeDetails}" />
+{% endhighlight %}
+{% highlight c# %}
+
+this.dataGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the row drop indicator in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img32.png)
+
+
 ### Reorder the source collection while drag and drop the rows
 
 You can reorder the source collection after drag and drop the row by handling [RowDragDropController.Dropped](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowDragDropController.html) event.
