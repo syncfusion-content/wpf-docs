@@ -114,20 +114,17 @@ You can create and manage the `TreeViewNode` objects by yourself to display the 
 
 {% tabs %}
 {% highlight xaml %}
-
 <Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GettingStarted"
-        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" 
-        xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF" x:Class="GettingStarted.MainWindow"
+        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF" x:Class="GettingStarted.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
-        <Syncfusion:SfTreeView HorizontalAlignment="Left" Height="250" Margin="318,0,0,0" VerticalAlignment="Center" Width="250">
+        <Syncfusion:SfTreeView HorizontalAlignment="Left" Height="414" Margin="318,0,0,0" VerticalAlignment="Center" Width="250">
             <Syncfusion:SfTreeView.Nodes>
                 <Engine:TreeViewNode Content="Grains" IsExpanded="True">
                     <Engine:TreeViewNode.ChildNodes>
@@ -137,7 +134,7 @@ You can create and manage the `TreeViewNode` objects by yourself to display the 
                                 <Engine:TreeViewNode Content="Barley"/>
                             </Engine:TreeViewNode.ChildNodes>
                         </Engine:TreeViewNode>
-                        <Engine:TreeViewNode Content="OilSeeds">
+                        <Engine:TreeViewNode Content="Oilseeds">
                             <Engine:TreeViewNode.ChildNodes>
                                 <Engine:TreeViewNode Content="Safflower"/>
                             </Engine:TreeViewNode.ChildNodes>
@@ -152,7 +149,7 @@ You can create and manage the `TreeViewNode` objects by yourself to display the 
                 </Engine:TreeViewNode>
                 <Engine:TreeViewNode Content="Vegetables" IsExpanded="true">
                     <Engine:TreeViewNode.ChildNodes>
-                        <Engine:TreeViewNode Content="Root vegetables" IsExpanded="true">
+                        <Engine:TreeViewNode Content="Root Vegetables" IsExpanded="true">
                             <Engine:TreeViewNode.ChildNodes>
                                 <Engine:TreeViewNode Content="Potato"/>
                                 <Engine:TreeViewNode Content="Carrot"/>
@@ -160,8 +157,8 @@ You can create and manage the `TreeViewNode` objects by yourself to display the 
                         </Engine:TreeViewNode>
                         <Engine:TreeViewNode Content="Podded">
                             <Engine:TreeViewNode.ChildNodes>
-                                <Engine:TreeViewNode Content="peanut"/>
-                                <Engine:TreeViewNode Content="lentil"/>
+                                <Engine:TreeViewNode Content="Peanut"/>
+                                <Engine:TreeViewNode Content="Lentil"/>
                             </Engine:TreeViewNode.ChildNodes>
                         </Engine:TreeViewNode>
                     </Engine:TreeViewNode.ChildNodes>
