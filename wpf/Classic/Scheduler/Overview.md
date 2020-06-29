@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview| Schedule | WPF | Syncfusion
-description: Overview of Schedule control in WPF. It allows user to create and manage appointments.
+description: This section describes about the quick overview and Key features of Scehduler (SfScheduler) control in WPF platform.
 platform: wpf
 control: SfSchedule
 documentation: ug
