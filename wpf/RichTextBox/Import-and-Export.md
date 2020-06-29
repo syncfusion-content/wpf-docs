@@ -154,3 +154,49 @@ richTextBoxAdv.LoadAsyncSettings.ShowPageNumber = false
 {% endtabs %}
 
 N> This API is supported starting from release version v17.4.0.X.
+
+
+## Events for Import and Export settings
+
+The SfRichTextBoxAdv for wpf also provides several events that enables you to design/modify the existing behavior according to your requirement. The following table lists out the events available in the SfRichTextBoxAdv.
+
+### Events Table
+
+<table>
+<tr>
+<th>
+Events </th><th>
+Description </th><th>
+Arguments </th><th>
+Type </th></tr>
+<tr>
+<td>
+DocumentChanging</td><td>
+This event is triggered when Opening a document.</td><td>
+N/A</td><td>
+N/A</td></tr>
+<tr>
+<td>
+DocumentChanged</td><td>
+This event is triggered when the document is changed.</td><td>
+N/A</td><td>
+N/A</td></tr>
+<tr>
+<td>
+DodumentSaving</td><td>
+This event is triggered when saving a document.</td><td>
+N/A</td><td>
+N/A</td></tr>
+<tr>
+<td>
+DodumentSaved</td><td>
+This event is triggered when the document is saved.</td><td>
+N/A</td><td>
+N/A</td></tr>
+</table>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This API is supported starting from release version v18.2.0.X.
