@@ -16,16 +16,9 @@ The Theme Studio helps users transform their visual presentation into a new them
 The WPF Theme Studio comes with the following set of themes,
 
 * Material Light
-
 * Material Dark
-
 * Material Light Blue
-
 * Material Dark Blue
-
-* Office 2019 Colorful
-
-* Office 2019 Black
 
 ## Creating custom theme
 
