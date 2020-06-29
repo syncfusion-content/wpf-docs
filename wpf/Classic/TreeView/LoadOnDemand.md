@@ -1,12 +1,12 @@
 ---
 layout: post
-title: LoadOnDemand
-description: LoadOnDemand
+title: On-demand Loading in TreeGrid | Syncfusion.
+description: This section explains how to load the data in on-demand using the command or using the event in TreeView for syncfusion Essential Wpf.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# LoadOnDemand
+# Load On Demand in WPF TreeView (TreeViewAdv)
 
 The LoadOnDemand feature enables users to load items dynamically when a particular TreeViewItem is expanded. Hence the items are loaded on demand and reduce the loading time.
 

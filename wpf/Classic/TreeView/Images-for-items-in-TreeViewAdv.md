@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Images for items in TreeViewAdv
-description: Images for items in TreeViewAdv
+title: Images for items in TreeViewAdv | Syncfusion.
+description: This section describes how to load images in the items of Syncfusion WPF treeview(TreeViewAdv).
 platform: wpf
 control: TreeViewAdv
 documentation: ug

@@ -6,7 +6,7 @@ platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Overview
+# WPF TreeView (TreeViewAdv) Overview
 
 TreeViewAdv control displays hierarchical data in a tree structure, and has items that can be expanded and collapsed. TreeViewAdv includes all essential features as well as certain advanced features that make the control unique and extra-ordinary. Properties of the TreeViewAdv control enable users to achieve desired layouts and outputs by using both XAML and C# code with ease.
 

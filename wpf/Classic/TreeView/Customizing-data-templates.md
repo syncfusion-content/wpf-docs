@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Data Templates
-description: Customizing Data Templates
+title: Customizing Data Templates | Syncfusion
+description: This section describes how to customize the syncfusion treeview(TreeViewAdv) control using the data templates.
 platform: wpf
 control: TreeViewAdv
 documentation: ug

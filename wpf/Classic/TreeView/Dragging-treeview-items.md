@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WPF TreeView Items Dragging | Syncfusion
-description: This section describes about how to perform drag and drop operations in WPF TreeView.
+description: This section describes about how to perform drag and drop operations in Syncfusion WPF TreeView(TreeViewAdv).
 platform: wpf
 control: TreeViewAdv
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand/Collapse Images
-description: Expand/Collapse Images
+title: Expand/Collapse Images | Syncfusion.
+description: This section describes about the expand and collapse features in the Wpf Syncfusion TreeView(TreeViewAdv).
 platform: wpf
 control: TreeViewAdv
 documentation: ug

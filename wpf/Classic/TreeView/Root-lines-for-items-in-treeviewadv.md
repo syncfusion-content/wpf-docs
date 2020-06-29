@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Root Lines for Items in TreeViewAdv
-description: Root Lines for Items in TreeViewAdv
+title: Root Lines for Items in TreeViewAdv | Syncfusion
+description: This section describes about how to display the Root Lines for Items in Wpf syncfusion TreeView(TreeViewAdv). 
 platform: wpf
 control: TreeViewAdv
 documentation: ug
