@@ -30,7 +30,7 @@ Namespace: `Syncfusion.UI.Xaml.Scheduler`
 
 ### Adding control via Designer
 
-Scheuler control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+Scheduler control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ### Adding control manually in XAML
 

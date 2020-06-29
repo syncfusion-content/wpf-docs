@@ -21,7 +21,7 @@ The WPF Scheduler control is used to schedule and manage appointments through an
 
 **Recurrence Appointment** — Easily configure recurring events on a daily, weekly, monthly, or yearly basis. You can also skip or change the occurrence of a recurring appointment.
 
-**Appointment Mapping** - Scheduler control supports to mapp any collection that implements the IEnumerable interface to populate appointments.
+**Appointment Mapping** - Scheduler control supports to map any collection that implements the IEnumerable interface to populate appointments.
 
 **Appointment Editor** - You can easily create, edit, or delete appointments using the built-in appointment editor.
 
