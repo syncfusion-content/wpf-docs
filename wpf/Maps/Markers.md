@@ -276,8 +276,8 @@ The `HorizontalAlignment` property is used to position the marker icon in x-axis
                 <syncfusion:SfMap.Layers>
                     <syncfusion:ShapeFileLayer   MarkerTemplate="{StaticResource markerTemplate}"  Uri="Maps.ShapeFiles.usa_state.shp"  MarkerHorizontalAlignment="Near" Markers="{Binding Models}"  >
                         <syncfusion:ShapeFileLayer.ShapeSettings>
-                            <syncfusion:ShapeSetting ShapeFill="LightGreen" ShapeStroke="Black" ShapeStrokeThickness="1">
-                            </syncfusion:ShapeSetting>
+                            <syncfusion:ShapeSetting ShapeFill="LightGray" ShapeStroke="Black" ShapeStrokeThickness="1">
+						     </syncfusion:ShapeSetting>
                         </syncfusion:ShapeFileLayer.ShapeSettings>
                     </syncfusion:ShapeFileLayer>
                 </syncfusion:SfMap.Layers>
@@ -297,7 +297,7 @@ The `HorizontalAlignment` property is used to position the marker icon in x-axis
             ShapeSetting shapeSetting = new ShapeSetting();
             shapeSetting.ShapeStrokeThickness = 1;
             shapeSetting.ShapeStroke = new SolidColorBrush(Colors.Black);
-            shapeSetting.ShapeFill = new SolidColorBrush(Colors.LightGreen);
+            shapeSetting.ShapeFill = new SolidColorBrush(Colors.LightGray);
             shape.ShapeSettings = shapeSetting;
             maps.Layers.Add(shape);
 
@@ -334,7 +334,7 @@ The `VerticalAlignment` property is used to position the marker icon in y-axis. 
                 <syncfusion:SfMap.Layers>
                     <syncfusion:ShapeFileLayer   MarkerTemplate="{StaticResource markerTemplate}"  Uri="Maps.ShapeFiles.usa_state.shp"  MarkerVerticalAlignment="Near" Markers="{Binding Models}"  >
                         <syncfusion:ShapeFileLayer.ShapeSettings>
-                            <syncfusion:ShapeSetting ShapeFill="LightGreen" ShapeStroke="Black" ShapeStrokeThickness="1">
+                            <syncfusion:ShapeSetting ShapeFill="LightGray" ShapeStroke="Black" ShapeStrokeThickness="1">
                             </syncfusion:ShapeSetting>
                         </syncfusion:ShapeFileLayer.ShapeSettings>
                     </syncfusion:ShapeFileLayer>
@@ -355,7 +355,7 @@ The `VerticalAlignment` property is used to position the marker icon in y-axis. 
             ShapeSetting shapeSetting = new ShapeSetting();
             shapeSetting.ShapeStrokeThickness = 1;
             shapeSetting.ShapeStroke = new SolidColorBrush(Colors.Black);
-            shapeSetting.ShapeFill = new SolidColorBrush(Colors.LightGreen);
+            shapeSetting.ShapeFill = new SolidColorBrush(Colors.LightGray);
             shape.ShapeSettings = shapeSetting;
             maps.Layers.Add(shape);
 
