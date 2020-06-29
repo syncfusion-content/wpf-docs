@@ -25,11 +25,11 @@ Otherwise the provider will be displayed with 5 hints.
 
 User can document the dragged window with the existing tab group through the center dock hint. New Tab group can be created at any sides(left, top, right and bottom) through the hints which is adjacent to the center dock hint. Dragged window can be docked at any side using the hints which is outer side of the drag provider.
 
-![Document area's dock hints functionality](Dock-hints-images/dock-hints-8-functionality.png)
+![Document area dock hints functionality](Dock-hints-images/dock-hints-8-functionality.png)
 
 Using center dock hint, dragged window can be docked in the existing dock window. Also the window can be docked to any side of the targeted window through the outer side of the drag provider.
 
-![Dock area's dock hints functionality](Dock-hints-images/dock-hints-4-functionality.png)
+![Dock area dock hints functionality](Dock-hints-images/dock-hints-4-functionality.png)
 
 ## Restrict docking by disabling inner and outer dock hints
 
