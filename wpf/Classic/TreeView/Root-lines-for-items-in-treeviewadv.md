@@ -49,4 +49,4 @@ treeViewAdv.ShowRootLines = False
 
 {% endtabs %} 
 
-![](Root_lines_for_items_in_treeviewadv_images/Root_lines_for_items_in_treeviewadv_img1.jpeg)
+![Root Lines for Items in TreeViewAdv](Root_lines_for_items_in_treeviewadv_images/Root_lines_for_items_in_treeviewadv_img1.jpeg)

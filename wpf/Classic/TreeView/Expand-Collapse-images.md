@@ -60,4 +60,4 @@ item2.ExpandedImageSource = New BitmapImage(New Uri("/Folder_Expanded.png", UriK
 
 {% endtabs %}  
 
-![](Expand_Collapse_images_images/Expand_Collapse_images_img1.jpeg)
+![setting image for expand and collapse button](Expand_Collapse_images_images/Expand_Collapse_images_img1.jpeg)
