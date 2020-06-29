@@ -173,7 +173,7 @@ The shape of a marker icons can be customized using the `MarkerIconType` propert
 
 ### Setting an image marker icon
 
-You can set the image as marker icon by setting the icon type as an image. Set `MarkerIconSource` to get the image from local path.
+You can set the image as marker icon by setting the icon type as an Image and set `MarkerIconSource` to get the image from local path.
 
 {% tabs %}
 

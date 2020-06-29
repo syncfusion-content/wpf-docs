@@ -618,9 +618,9 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img7.png)
 
-### Setting a gradient color for range
+### Setting gradient color for range
 
-You can give color transition to range by specifying the different colors based on range value.
+You can give color transition to range by specifying the different colors using the `GradientStops` property of range. By using the `Value` and `Color` properties of `GradientStops`, you can adjust the color transition range for each color.
 
 {% tabs %}
 
