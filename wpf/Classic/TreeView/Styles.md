@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Styles
-description: Styles
+title: Styles in TreeViewAdv | Syncfusion
+description: This section explains about the styling customization of elements in TreeView control for syncfusion Essential Wpf.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Styles
+# Styling in WPF TreeView(TreeViewAdv)
 
 This section deals with the following Styles supported by TreeViewAdv control
 
@@ -67,7 +67,7 @@ Title="MainWindow" Height="350" Width="400">
 
 {% endtabs %}
 
-![](Styles_images/Styles_img1.jpeg)
+![Customize the style of the Drag Indicator in TreeViewAdv](Styles_images/Styles_img1.jpeg)
 
 ## Setting expand style   	
 
@@ -139,7 +139,7 @@ Trigger Property="ToggleButton.IsChecked" Value="True">
 
 {% endtabs %}
 
-![](Styles_images/Styles_img2.jpeg)
+![Customize appearance of expand and collapse in TreeViewAdv](Styles_images/Styles_img2.jpeg)
 
 ##  Setting item container style
 
@@ -188,6 +188,6 @@ The following example can be used to set this property.
 
 {% endtabs %}
 
-![](Styles_images/Styles_img3.jpeg)
+![Setting item container style in TreeViewAdv](Styles_images/Styles_img3.jpeg)
 
 

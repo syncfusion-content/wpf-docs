@@ -1,12 +1,12 @@
 ---
 layout: post
 title: WPF TreeView Sorting | Syncfusion
-description: How to sort treeview items in WPF treeview and also explains about performing custom sorting.
+description: This section describes about how to sort treeview items in WPF treeview and also explains about performing custom sorting in Wpf Treeview(TreeViewAdv).
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# TreeView - Sorting
+# Sorting in Wpf TreeView(TreeViewAdv).
 
 TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run time. The `Sorting` property of the control allows you to specify the direction of sorting. The sorting options are as follows.
 
