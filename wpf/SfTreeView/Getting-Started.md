@@ -13,7 +13,7 @@ This section provides a quick overview for getting started with the `SfTreeView`
 
 ## Assembly Deployment
 
-Refer to the Control Dependencies section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftreeview) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
 Refer to this documentation to find more details about installing nuget packages in a WPF application.
 
@@ -36,6 +36,8 @@ The SfTreeView control can be added to project by the following ways.
 #### Adding SfTreeView by designer.
 
 SfTreeView control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+
+![Displaying the addition of WPF SfTreeView control via the designer](GettingStarted_images/Gettingstarted_image1.png)
 
 #### Adding SfTreeView by XAML.
 
@@ -169,10 +171,9 @@ You can create and manage the `TreeViewNode` objects by yourself to display the 
     </Grid>
 </Window>
 {% endhighlight %}
-{% highlight c# %}
-
-{% endhighlight %}
 {% endtabs %}
+
+![Populating nodes without data source in SfTreeView ](GettingStarted_images/Gettingstarted_image2.png)
 
 ### Bind to a hierarchical data source - Bound Mode
 

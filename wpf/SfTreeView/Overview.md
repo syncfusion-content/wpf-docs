@@ -21,7 +21,3 @@ The Syncfusion WPF TreeView is a data-oriented control that displays data in a h
 * Root lines: Support to show the lines between tree nodes.
 
 ![Overview in WPF TreeView](Overview_images/Overview.png)
-
-
-
-
