@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ContextMenuType| SfSchedule | Wpf | Syncfusion
-description: contextmenutype 
+description: Learn here about contextmenutype of Syncfusion WPF Scheduler control
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# ContextMenuType 
+# ContextMenuType of WPF SfSchedule
 
 The collection of MenuItem elements can be organized by ContextMenuType property.
 {% tabs %}

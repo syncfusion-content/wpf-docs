@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Visible Dates customization| SfSchedule | Wpf | Syncfusion
-description: visible dates customization
+description: This section explains about how to visible dates customization for ScheduleAppointment in WPF Scheduler.
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Visible Dates customization
+# Visible Dates customization Of WPF SfSchedule
 
 All views in the schedule have their own number of visible dates. The SfSchedule control allows users to view multiple dates in the day and time line views.
 

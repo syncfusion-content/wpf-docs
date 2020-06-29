@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Reminder
+# Reminder Of WPF SFSchedule
 
 Schedule alerts you for particular appointment with reminder window when enable the [EnableReminderTimer](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableReminderTimer.html) property. Reminder window supports to `Dismiss` or `DismissAll` or set the `SnoozeTime` for reminder appointments.
 

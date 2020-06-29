@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# SfSchedule
+# SfSchedule of WPF SfSchedule
 
 ## Introduction
 

@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# TimeLine view
+# TimeLine view Of WPF SfSchedule
 `Timeline` view displays the dates with the appropriate day count in the horizontal time axis. When moving right or left, you can see the past or future events. With an intuitive drag-and-drop feature, each view shows events accurately through time slots.
 
 {% tabs %}
