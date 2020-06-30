@@ -995,13 +995,13 @@ private void RowDragDropController_DragOver(object sender, TreeGridRowDragOverEv
 By default, row drop indicator is `Arrow`. To change row drop indicator as line, set the `SfTreeGrid.RowDropIndicatorMode` as `Line`.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfTreeGrid Margin="5"
                        Name="sfTreeGrid" AutoExpandMode="RootNodesExpanded"
 					   AllowDraggingRows="True" AllowDrop="True" 
                        ItemsSource="{Binding Employees}"
-                       RowDropIndicatorMode="Line" />					   
+                       RowDropIndicatorMode="Line" />	   
 					   
 {% endhighlight %}
 {% highlight c# %}
@@ -1011,4 +1011,4 @@ sfTreeGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the row drop indicator](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img7.jpeg)
+![Changing the row drop indicator](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img7.png)
