@@ -156,43 +156,34 @@ richTextBoxAdv.LoadAsyncSettings.ShowPageNumber = false
 N> This API is supported starting from release version v17.4.0.X.
 
 
-## Events for Import and Export settings
+## Events to notify document starts and completes loading and saving
 
-The SfRichTextBoxAdv for wpf also provides several events that enables you to design/modify the existing behavior according to your requirement. The following table lists out the events available in the SfRichTextBoxAdv.
+SfRichTextBoxAdv control also provides below events to notify document starts and completes loading and saving.
+
 
 ### Events Table
 
 <table>
 <tr>
 <th>
-Events </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th></tr>
+Event </th><th>
+Description </th></tr>
 <tr>
 <td>
 DocumentChanging</td><td>
-This event is triggered when Opening a document.</td><td>
-N/A</td><td>
-N/A</td></tr>
+This event is triggered when the document starts loading.</td></tr>
 <tr>
 <td>
 DocumentChanged</td><td>
-This event is triggered when the document is changed.</td><td>
-N/A</td><td>
-N/A</td></tr>
+This event is triggered after the document is successfully loaded.</td></tr>
 <tr>
 <td>
 DodumentSaving</td><td>
-This event is triggered when saving a document.</td><td>
-N/A</td><td>
-N/A</td></tr>
+This event is triggered when the document starts saving.</td></tr>
 <tr>
 <td>
 DodumentSaved</td><td>
-This event is triggered when the document is saved.</td><td>
-N/A</td><td>
-N/A</td></tr>
+This event is triggered after the document is successfully saved.</td></tr>
 </table>
 
 {% endhighlight %}
