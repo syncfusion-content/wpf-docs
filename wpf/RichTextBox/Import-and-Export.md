@@ -178,11 +178,11 @@ DocumentChanged</td><td>
 This event is triggered after the document is successfully loaded.</td></tr>
 <tr>
 <td>
-DodumentSaving</td><td>
+DocumentSaving</td><td>
 This event is triggered when the document starts saving.</td></tr>
 <tr>
 <td>
-DodumentSaved</td><td>
+DocumentSaved</td><td>
 This event is triggered after the document is successfully saved.</td></tr>
 </table>
 
