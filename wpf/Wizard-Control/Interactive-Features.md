@@ -27,8 +27,8 @@ You can add any number of [wizard pages](https://help.syncfusion.com/cr/cref_fil
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl">
-<syncfusion:WizardPage Name="wizardPage1"/>
-<syncfusion:WizardPage Name="wizardPage2"/>
+    <syncfusion:WizardPage Name="wizardPage1"/>
+    <syncfusion:WizardPage Name="wizardPage2"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -142,7 +142,7 @@ private void PopulatePageItems()
 {% highlight XAML %}
 
 <Window.DataContext>
- <local:ViewModel/>
+    <local:ViewModel/>
 </Window.DataContext>    
 
 {% endhighlight %}
@@ -152,7 +152,7 @@ private void PopulatePageItems()
 {% highlight XAML %}
 
 <Window.DataContext>
- <local:ViewModel/>
+    <local:ViewModel/>
 </Window.DataContext>
     
 <Window.Resources>
@@ -189,13 +189,9 @@ N> [ViewSample in GitHub](https://github.com/SyncfusionExamples/Populating-WPF-w
 {% highlight XAML %}
 
 <syncfusion:WizardControl Name="WizardControl" SelectedWizardPage="{Binding ElementName=wizard2}" Foreground="SlateBlue">
-
-<syncfusion:WizardPage Title="Wizard Page1" x:Name="wizard1"/>
-
-<syncfusion:WizardPage Title="Wizard Page2" x:Name="wizard2"/>
-
-<syncfusion:WizardPage Title="Wizard Page3" x:Name="wizard3"/>
-
+    <syncfusion:WizardPage Title="Wizard Page1" x:Name="wizard1"/>
+    <syncfusion:WizardPage Title="Wizard Page2" x:Name="wizard2"/>
+    <syncfusion:WizardPage Title="Wizard Page3" x:Name="wizard3"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -248,9 +244,7 @@ You can set the title and description for the [wizard page](https://help.syncfus
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl">
-
-<syncfusion:WizardPage Name="wizardPage" Foreground="Navy" Title="WizardPage1" Description="This is the first page of wizard" />
-
+    <syncfusion:WizardPage Name="wizardPage" Foreground="Navy" Title="WizardPage1" Description="This is the first page of wizard" />
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -299,9 +293,7 @@ The [PageType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wp
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl">
-
- <syncfusion:WizardPage Name="wizardPage" PageType="Exterior"/>
-
+    <syncfusion:WizardPage Name="wizardPage" PageType="Exterior"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -340,9 +332,7 @@ You can enable or disable the Back, Cancel, Next and Finish navigation buttons i
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl" BackEnabled="True" FinishEnabled="True"NextEnabled="True" CancelEnabled="True">
-
-<syncfusion:WizardPage Name="wizardPage"/>
-
+    <syncfusion:WizardPage Name="wizardPage"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -378,9 +368,7 @@ You can show or hide the Back, Cancel, Next, Help and Finish navigation buttons 
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl" BackVisible="False" NextVisible="True" CancelVisible="True" HelpVisible="True" FinishVisible="False">
-
-<syncfusion:WizardPage Name="wizardPage"/>
-
+    <syncfusion:WizardPage Name="wizardPage"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -419,9 +407,7 @@ You can set custom text for the Back, Next, Finish, Help and Cancel navigation b
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl" BackText="Previous" HelpText="Help" CancelText="Exit" FinishText="Finish" NextText="Next">
-
-<syncfusion:WizardPage Name="wizardPage"/>
-
+    <syncfusion:WizardPage Name="wizardPage"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -465,10 +451,10 @@ You can set the navigation to the Next and Previous pages of [WizardPage](https:
 {% endhighlight %}
 
 <syncfusion:WizardControl Name="wizardControl" >
-<syncfusion:WizardPage Name="wizardPage1" Title="page1"  NextPage="{Binding ElementName=wizardPage4}"/>
-<syncfusion:WizardPage Name="wizardPage2" Title="page2" PreviousPage="{Binding ElementName=wizardPage3}"/>
-<syncfusion:WizardPage Name="wizardPage3" Title="page3"/>
-<syncfusion:WizardPage Name="wizardPage4" Title="page4"/>
+    <syncfusion:WizardPage Name="wizardPage1" Title="page1"  NextPage="{Binding ElementName=wizardPage4}"/>
+    <syncfusion:WizardPage Name="wizardPage2" Title="page2" PreviousPage="{Binding ElementName=wizardPage3}"/>
+    <syncfusion:WizardPage Name="wizardPage3" Title="page3"/>
+    <syncfusion:WizardPage Name="wizardPage4" Title="page4"/>
 </syncfusion:WizardControl>
 
 {% highlight C# %}
@@ -512,7 +498,7 @@ You can close the [Wizard control](https://help.syncfusion.com/cr/cref_files/wpf
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl" FinishButtonClosesWindow="True" CancelButtonCancelsWindow="True">
-<syncfusion:WizardPage Name="wizardPage"/>
+    <syncfusion:WizardPage Name="wizardPage"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -542,25 +528,25 @@ You can use the [Next](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl" CancelEnabled="False" CancelVisible="False" Next="wizardControl_Next" FinishButtonClosesWindow="True" CancelButtonCancelsWindow="True" >
-<syncfusion:WizardPage Name="wizardPage1" Title="page1"  />
-<syncfusion:WizardPage Name="wizardPage2" Title="page2" />
-<syncfusion:WizardPage x:Name="wizardPage3" Title="page3"/>
-<syncfusion:WizardPage Name="wizardPage4" Title="page4"/>
+    <syncfusion:WizardPage Name="wizardPage1" Title="page1"  />
+    <syncfusion:WizardPage Name="wizardPage2" Title="page2" />
+    <syncfusion:WizardPage x:Name="wizardPage3" Title="page3"/>
+    <syncfusion:WizardPage Name="wizardPage4" Title="page4"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    private void wizardControl_Next(object sender, RoutedEventArgs e)
-        {
-            var obj = sender as WizardControl;
+private void wizardControl_Next(object sender, RoutedEventArgs e)
+{
+    var obj = sender as WizardControl;
 
-            if (obj.CancelVisible != true && obj.CancelEnabled != true)
-            {
-                obj.SelectedWizardPage = wizardPage2;
-            }
-        }
+    if (obj.CancelVisible != true && obj.CancelEnabled != true)
+    {
+        obj.SelectedWizardPage = wizardPage2;
+    }
+}
 
 {% endhighlight %}
 
