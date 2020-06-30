@@ -874,7 +874,8 @@ By default, the drop position will be indicated with arrows. To change the drop 
                        AllowDraggingRows="True" 
                        AllowDrop="True" 
                        ChildPropertyName="ReportsTo"
-                       ItemsSource="{Binding Employees}" />					   
+                       ItemsSource="{Binding Employees}" 
+					   RowDropIndicatorMode="Line" />					   
 {% endhighlight %}
 {% highlight c# %}
 
