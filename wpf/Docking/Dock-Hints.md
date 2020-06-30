@@ -494,7 +494,7 @@ None of the dock hints will be enabled, if the DockAbility is `None`.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/PreviewDockHints) in GitHub
 
-## Restrict outter dockability
+## Restrict outer dockability
 
 By setting `DockAbility` property to the dragged window, both inner and outer dockability has been handled. To disabled of the outer dockability alone, [OuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~OuterDockAbilityProperty.html) property is used. The values which is assinged to the `OuterDockAbility` will be effective only if the [UseOuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseOuterDockAbility.html) property is true.
 
