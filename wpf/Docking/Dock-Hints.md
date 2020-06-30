@@ -11,9 +11,24 @@ documentation: ug
 
 State of the dock children can be changed through the dock hints. This section explains how the dock item can be docked / documented with the help of Dock hints and how the dock hints can be disabled/ enabled at run time.
 
-## DockHints
+Terminologies:
 
-When user drags the window Drag Provider appears with Dock hints, using the dock hints the window can be placed(docked or documented) to its desired place. If the window is dragged over the document area drag provider will be displayed with 9 hints, 
+1. Source Window - Window that is being dragged
+2. Target Window - Window on which source window is going to be dropped
+5. Document Window - A special window which is usually used to host document for editing
+6. Dock Window - A normal window used to dock its child window in all four directions
+3. Drag Provider - A prompt indicating dockable regions for docking
+4. Dock Hints - Iconic indication of a region
+
+![Adding a window to Document window](Dock-hints-images/document-hints-terminologies.png)
+Dock to document window
+
+![Adding a window to dock window](Dock-hints-images/dock-hints-terminologies.png)
+Dock to normal window
+
+## Dock a window to desired direction
+
+When user drag a window over another window, drag provider appears with dock hints. Based on dock hints, the window can be placed(docked or documented) to its desired place. If the window is dragged over the document area drag provider will be displayed with 9 hints, 
 
 ![DragProvider with 9 dock hints](Dock-hints-images/dock-hints-8.png)
 
@@ -21,13 +36,17 @@ Otherwise the provider will be displayed with 5 hints.
 
 ![DragProvider with 4 dock hints](Dock-hints-images/dock-hints-4.png)
 
-## Functionalities of the DockHints
-
-User can document the dragged window with the existing tab group through the center dock hint. New Tab group can be created at any sides(left, top, right and bottom) through the hints which is adjacent to the center dock hint. Dragged window can be docked at any side using the hints which is outer side of the drag provider.
+### Dock to document window
+1. User can document the dragged window with the existing tab group through the center dock hint. 
+2. New Tab group can be created at any sides(left, top, right and bottom) through the hints which is adjacent to the center dock hint. 
+3. Dragged window can be docked at any side using the hints which is outer side of the drag provider.
 
 ![Document area dock hints functionality](Dock-hints-images/dock-hints-8-functionality.png)
 
-Using center dock hint, dragged window can be docked in the existing dock window. Also the window can be docked to any side of the targeted window through the outer side of the drag provider.
+### Dock to normal window
+
+1. Using center dock hint, dragged window can be added as a tab to existing dock window. 
+2. Also the window can be docked to any side of the targeted window through the outer side of the drag provider.
 
 ![Dock area dock hints functionality](Dock-hints-images/dock-hints-4-functionality.png)
 
@@ -471,17 +490,17 @@ The dock hints which are arranged horizontally in the DragProvider will be enabl
 
 ### None
 
-None of the dock hints will be visible, if the DockAbility is `None`.
+None of the dock hints will be enabled, if the DockAbility is `None`.
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/PreviewDockHints) in GitHub
 
-## Handle visibility of the outer dock hints through OuterDockAbility
+## Restrict outter dockability
 
-By setting `DockAbility` property to the dragged window, both inner and outer dockability has been handled. To handle the visibility of the outer dockability alone, [OuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~OuterDockAbilityProperty.html) property is used. The values which is assinged to the `OuterDockAbility` will be effective only if the [UseOuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseOuterDockAbility.html) property is true.
+By setting `DockAbility` property to the dragged window, both inner and outer dockability has been handled. To disabled of the outer dockability alone, [OuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~OuterDockAbilityProperty.html) property is used. The values which is assinged to the `OuterDockAbility` will be effective only if the [UseOuterDockAbility](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~UseOuterDockAbility.html) property is true.
 
-## Change the dock hints visibility at run-time
+## Restrict docking at run-time
 
-You can change the dock hints visibility at run-time by handling [PreviewDockHints](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~PreviewDockHints_EV.html) event in the `DockingManager`. It helps to handle before displaying the dock hints when drag the windows in `DockingManager` based on mouse hovered window. This event will be triggered for both inner dockability and outer dockability while drag the windows. It receives an argument of type [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.PreviewDockHintsEventArgs.html) containing the following information about the event.
+You can disabled the dock hints at run-time by handling [PreviewDockHints](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~PreviewDockHints_EV.html) event in the `DockingManager`. It helps to handle before displaying the dock hints when drag the windows in `DockingManager` based on mouse hovered window. This event will be triggered for both inner dockability and outer dockability while drag the windows. It receives an argument of type [PreviewDockHintsEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.PreviewDockHintsEventArgs.html) containing the following information about the event.
 
 <table>
 <tr>
@@ -497,11 +516,11 @@ You can change the dock hints visibility at run-time by handling [PreviewDockHin
 </tr>
 <tr>
 <td>DockAbility</td>
-<td>Gets or sets the dockability to decide the visibility of dock hints on mouse hover the target window.</td>
+<td>Gets or sets the DockAbility, to restrict docking on target window.</td>
 </tr>
 <tr>
 <td>OuterDockAbility</td>
-<td>Gets or sets the OuterDockability to decide the visibility of dock hints on edges of DockingManager.</td>
+<td>Gets or sets the OuterDockability, to restrict docking on edges of DockingManager.</td>
 </tr>
 </table>
 
