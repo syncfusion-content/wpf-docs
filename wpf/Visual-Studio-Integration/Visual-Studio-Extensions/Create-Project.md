@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Create WPF Project
+# Create WPF application
 
 Syncfusion provides the Visual Studio Project Templates for the Syncfusion WPF platform to create the Syncfusion WPF Application by adding the required Syncfusion assemblies and XMAL. 
 
