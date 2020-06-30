@@ -39,7 +39,6 @@ It highlights the first position of the matching characters in the suggestion li
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.TextHighlightMode = OccurrenceMode.FirstOccurrence;
 
 {% endhighlight %}
@@ -70,7 +69,6 @@ It highlights the matching character that presents everywhere in the suggestion 
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.TextHighlightMode = OccurrenceMode.MultipleOccurrence;
 
 {% endhighlight %}

@@ -9,11 +9,11 @@ documentation: ug
 
 # Autocomplete and filtering 
 
-The `Autocomplete` functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that it can choose from the different options.
+The Autocomplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that it can choose from the different options.
 
 ## Autocomplete source
 
-The [TextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items, which will assist while typing. It can choose one item from the filtered list.
+The [SfTextBoxExt](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt.html) control can be populated with a predefined list of items, which will assist while typing. It can choose one item from the filtered list.
 
 
 {% tabs %}
@@ -52,7 +52,6 @@ The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Sf
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.SearchItemPath = "Name";
 
 {% endhighlight %}
@@ -60,7 +59,7 @@ The [SearchItemPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Sf
 
 ![SearchItemPath](AutoComplete_and_filtering_images/SearchItemPath.png)
 
-N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the `Autocomplete` modes will be provided in the next section.
+N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the Autocomplete modes will be provided in the next section.
 
 ## Customize using the ItemTemplate
 
@@ -261,7 +260,6 @@ The control returns all possible matches ending with the typed text based on the
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.SuggestionMode = SuggestionMode.Contains;
 
 {% endhighlight %}
@@ -289,7 +287,6 @@ Instead of displaying suggestion list on every character entry, matches can be f
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.MinimumPrefixCharacters = 2;
 
 {% endhighlight %}
@@ -321,7 +318,6 @@ Minimum Prefix Length case
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.IgnoreCase = true;
 
 {% endhighlight %}
@@ -375,7 +371,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/t
 
 ## Display a message when suggestions are empty 
 
-When the entered item is not in the suggestion list, `Autocomplete` displays a text indicating that there is no search results found. You can set the desire text to be displayed for indicating no results found with the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~NoResultsFoundTemplate.html) property.
+When the entered item is not in the suggestion list, Autocomplete displays a text indicating that there is no search results found. You can set the desire text to be displayed for indicating no results found with the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~NoResultsFoundTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}

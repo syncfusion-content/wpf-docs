@@ -9,7 +9,7 @@ documentation: ug
 
 # Drop-down customization 
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties that deals with drop-down list in the `Autocomplete` control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties that deals with drop-down list in the Autocomplete control.
 
 ## Customize the background 
 
@@ -31,7 +31,6 @@ The [DropDownBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusio
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.DropDownBackground = new SolidColorBrush(Colors.AliceBlue);
 
 {% endhighlight %}
@@ -70,7 +69,6 @@ The drop-down list will open at the top of the control.
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 
 {% endhighlight %}
@@ -102,7 +100,6 @@ The drop-down list will open at the bottom of the control.
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
 
 {% endhighlight %}
@@ -133,7 +130,6 @@ The drop-down list will not open.
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
 
 {% endhighlight %}
@@ -146,7 +142,7 @@ No drop-down list.
 
 ## Setting the maximum height 
 
-The maximum height of the suggestion box in the `Autocomplete` control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MaxDropDownHeight.html) property.
+The maximum height of the suggestion box in the Autocomplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MaxDropDownHeight.html) property.
 
 {% tabs %}
 
@@ -163,7 +159,6 @@ The maximum height of the suggestion box in the `Autocomplete` control can be ch
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.MaxDropDownHeight = 500;
 
 {% endhighlight %}
@@ -190,7 +185,6 @@ Suggestion box can be shown whenever the control receives focus using the [ShowS
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.ShowSuggestionsOnFocus = true;
 
 {% endhighlight %}
@@ -216,7 +210,6 @@ The [PopupDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInpu
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.PopupDelay = new TimeSpan(00,00,02);
 
 {% endhighlight %}

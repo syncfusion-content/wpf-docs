@@ -22,9 +22,9 @@ Selection for the control depends on the [MultiSelectMode](https://help.syncfusi
 
 Selected items will be displayed with a customizable token representation and it can be remove each tokenized item with the close button.
 
-The selected items can be displayed as token inside the `AutoComplete` in two ways:
+The selected items can be displayed as token inside the AutoComplete in two ways:
 
-* `Wrap` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `Wrap`, the selected items will be wrapped to the next line of the `AutoComplete`.
+* `Wrap` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `Wrap`, the selected items will be wrapped to the next line of the AutoComplete.
 
 * `None` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `None`, the selected items will be arranged in horizontal orientation.
 
@@ -44,7 +44,6 @@ The selected items can be displayed as token inside the `AutoComplete` in two wa
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.MultiSelectMode = MultiSelectMode.Token;
 
 {% endhighlight %}
@@ -112,9 +111,9 @@ Please find the code snippet for the Customization of Tokens.
 
 ### Enable autosize in token mode 
 
-AutoSizing can be enabled in `AutoComplete` control so that the control will extend its layout based on the token size.
+AutoSizing can be enabled in AutoComplete control so that the control will extend its layout based on the token size.
 
-[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the AutoSizing in `AutoComplete` control. To enable the API, need to set the MultiSelectMode as Token and TokensWrapMode as Wrap and the control height should not be provided. The default value of `EnableAutoSize` is false.
+[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the AutoSizing in AutoComplete control. To enable the API, need to set the MultiSelectMode as Token and TokensWrapMode as Wrap and the control height should not be provided. The default value of `EnableAutoSize` is false.
 
 {% tabs %}
 
@@ -133,7 +132,6 @@ AutoSizing can be enabled in `AutoComplete` control so that the control will ext
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.MultiSelectMode = MultiSelectMode.Token;
             textBoxExt.TokensWrapMode = TokensWrapMode.Wrap;
             textBoxExt.EnableAutoSize = true;
@@ -144,7 +142,7 @@ AutoSizing can be enabled in `AutoComplete` control so that the control will ext
 
 ![EnableAutoSize](Single_and_multiple_selection_images/EnableAutoSize.png)
 
-See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in `AutoComplete`.
+See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/autocomplete/single-and-multiple-selection#multiple-selection-using-tokens) topic in AutoComplete.
 
 ## Multiple selection using delimiter 
 
@@ -167,7 +165,6 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.MultiSelectMode = MultiSelectMode.Delimiter;
 
 {% endhighlight %}

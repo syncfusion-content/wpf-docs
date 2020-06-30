@@ -9,7 +9,7 @@ documentation: ug
 
 # Textbox customization 
 
-`AutoComplete` provides the user-friendly customizing options for text box. This section explains how to customize the entire `AutoComplete` control.
+AutoComplete provides the user-friendly customizing options for text box. This section explains how to customize the entire AutoComplete control.
 
 
 ## Water mark 
@@ -28,7 +28,6 @@ documentation: ug
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.Watermark= "Enter names separated by comma (Ex : John, Kate)";
 
 {% endhighlight %}
@@ -96,7 +95,7 @@ Any business object can be bound to the Watermark property and that object can b
 
 ## Customizing the TextBox
 
-The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontWeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), and [FontFamily](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#) properties are used to customize the text in the `AutoComplete` control.
+The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontWeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), and [FontFamily](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#) properties are used to customize the text in the AutoComplete control.
 
 {% tabs %}
 
@@ -115,7 +114,6 @@ The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.Text = "TextBox";
             textBoxExt.FontSize = 20;
             textBoxExt.FontWeight = FontWeights.Bold;
@@ -149,7 +147,6 @@ This feature allows to set the drop-down icon for the TextBox control using the 
 {% endhighlight %}
 {% highlight c# %}
 
-            SfTextBoxExt textBoxExt = new SfTextBoxExt();
             textBoxExt.ShowDropDownButton = true;
 
 {% endhighlight %}
