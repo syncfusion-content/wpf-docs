@@ -146,6 +146,27 @@ private void RowDragDropController_Dropped(object sender, GridRowDroppedEventArg
 {% endhighlight %}
 {% endtabs %}
 
+## Changing the row drop indicator
+
+By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the `sfDataGrid.RowDropIndicatorMode` as `Line`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid Name="dataGrid"
+                       ItemsSource="{Binding OrdersListDetails}"
+                       AllowDrop="True"
+                       AllowDraggingRows="True"
+                       RowDropIndicatorMode="Line" />
+{% endhighlight %}
+{% highlight c# %}
+
+this.dataGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the row drop indicator in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img32.png)
+
 ## Customizing row drag and drop operation
 
 ### Disable dragging of certain rows in WPF DataGrid
@@ -316,28 +337,6 @@ You can customize the dragging popup to show the corresponding drag row data by 
 {% endtabs %}
 
 ![Customizing draggable Popup to show corresponding dragging row data in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img31.png)
-
-### Changing the row drop indicator.
-
-By default, row drop indicator is `Arrow`. To change row drop indicator as line, set the `sfDataGrid.RowDropIndicatorMode` as `Line`.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid Name="datagrid"
-                       AllowDraggingRows="True" 
-					   AllowDrop="True" 
-					   RowDropIndicatorMode="Line" 
-					   ItemsSource="{Binding EmployeeDetails}" />
-{% endhighlight %}
-{% highlight c# %}
-
-this.dataGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Changing the row drop indicator in wpf datagrid](Interactive-Features_images/InteractiveFeatures_img32.png)
-
 
 ### Reorder the source collection while drag and drop the rows
 
