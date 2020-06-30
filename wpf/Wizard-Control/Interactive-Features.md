@@ -491,7 +491,7 @@ wizardPage3.PreviousPage = wizardPage1;
 
 ## Closing the Wizard Window
 
-You can close the [Wizard control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl_members.html) window by clicking the Cancel or Finish button by enabling the [FinishButtonClosesWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~FinishButtonClosesWindow.html) or [CancelButtonCancelsWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~CancelButtonCancelsWindow.html) properties respectively.
+You can close the [Wizard control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl_members.html) window by clicking the Finish or Cancel button by enabling the [FinishButtonClosesWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~FinishButtonClosesWindow.html) or [CancelButtonCancelsWindow](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl~CancelButtonCancelsWindow.html) properties respectively.
 
 {%tabs%}
 
