@@ -195,7 +195,7 @@ You can set the image as marker icon by setting the icon type as an Image and se
             SfMap maps = new SfMap();
             ShapeFileLayer shape = new ShapeFileLayer();
             shape.Uri = "Maps.ShapeFiles.world1.shp";
-			shape.MarkerIconSize = new Size(30, 30);
+            shape.MarkerIconSize = new Size(30, 30);
             shape.Markers = view.Models;
             shape.MarkerIconType = MarkerIcon.Image;
             BitmapImage bimage = new BitmapImage();
@@ -266,7 +266,7 @@ The `HorizontalAlignment` property is used to position the marker icon horizonta
         <ResourceDictionary>
             <DataTemplate x:Key="markerTemplate">
                 <Grid>
-				    <StackPanel Margin="-12,-20,0,0" Height="60"  Width="100" Orientation="Horizontal" Background="Transparent">
+                    <StackPanel Margin="-12,-20,0,0" Height="60"  Width="100" Orientation="Horizontal" Background="Transparent">
                         <Image Source="pin.png" Height="60"  />
                     </StackPanel>
                 </Grid>
@@ -322,8 +322,8 @@ The `VerticalAlignment` property is used to position the marker icon vertically.
 
         <ResourceDictionary>
             <DataTemplate x:Key="markerTemplate">
-                <Grid>                    
-				    <StackPanel Margin="-12,-20,0,0" Height="60"  Width="100" Orientation="Horizontal" Background="Transparent">
+                <Grid>
+                    <StackPanel Margin="-12,-20,0,0" Height="60"  Width="100" Orientation="Horizontal" Background="Transparent">
                         <Image Source="pin.png" Height="60"  />
                     </StackPanel>
                 </Grid>
