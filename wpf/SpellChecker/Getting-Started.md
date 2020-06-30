@@ -289,7 +289,7 @@ Specifies whether or not to ignore mixed case words during Spell Check.
 The Default value is False.<br/><br/></td><td>
 Ex:
 
-AbCDeFgH <br/><br/></td></tr>
+AbCDeFH <br/><br/></td></tr>
 <tr>
 <td>
 IgnoreUpperCaseWords<br/><br/></td><td>
