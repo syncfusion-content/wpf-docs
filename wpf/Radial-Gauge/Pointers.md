@@ -984,3 +984,181 @@ The `EnableAnimation` property is a Boolean property that enables or disables th
 {% endtabs %}
 
 ![Pointers - Circular Gauge](Pointers_images/Pointers_img14.gif)
+
+## Pointer dragging
+
+Symbol pointer and needle pointer can be dragged over the scale value by setting the `EnableDragging` property as true. Pointers can be moved to the respective position.
+
+{% tabs %}
+{% highlight xml %}
+
+        <gauge:SfCircularGauge >
+             <gauge:SfCircularGauge.Scales >
+                <gauge:CircularScale LabelPosition="Custom"  Grid.Row="1" RimStroke ="LightGray" RadiusFactor="1" ShowTicks="False"
+                         RimStrokeThickness="30"     StartValue="0" EndValue="100" Interval="10" LabelOffset="0.75" LabelStroke ="Black" FontSize  ="15">
+                    <gauge:CircularScale.Ranges>
+                        <gauge:CircularRange StrokeThickness="30" StartValue="0" x:Name="range" EndValue="25" Stroke="DeepSkyBlue"/>
+                    </gauge:CircularScale.Ranges>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="SymbolPointer" Symbol="InvertedTriangle" SymbolPointerHeight="18" SymbolPointerWidth="18"
+                             ValueChanged="CircularPointer_ValueChanged"  SymbolPointerStroke="DarkBlue" Value="25" EnableAnimation="False" EnableDragging="True"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+
+{% endhighlight %}
+{% highlight c# %}
+
+    public partial class PointerDragging : Window
+    {
+        CircularRange range = new CircularRange();
+
+        public PointerDragging()
+        {
+            InitializeComponent();
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            CircularScale scale = new CircularScale();
+            scale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            scale.RimStrokeThickness = 30;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.LabelOffset = 0.75;
+            scale.LabelStroke = new SolidColorBrush(Colors.Black);
+            scale.FontSize = 15;
+            scale.LabelPosition = LabelPosition.Custom;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false ;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.PointerType = PointerType.SymbolPointer;
+            circularPointer.Symbol = Symbol.InvertedTriangle;
+            circularPointer.Value = 25;
+            circularPointer.SymbolPointerStroke = new SolidColorBrush(Colors.DarkBlue);
+            circularPointer.SymbolPointerHeight = 18;
+            circularPointer.EnableAnimation = false;
+            circularPointer.EnableDragging = true;
+            circularPointer.SymbolPointerWidth = 18;
+            circularPointer.ValueChanged += CircularPointer_ValueChanged;
+            range.StrokeThickness = 30;
+            range.StartValue = 0;
+            range.EndValue = 25;
+            range.Stroke = new SolidColorBrush(Colors.DeepSkyBlue);
+            scale.Ranges.Add(range);
+            scale.Pointers.Add(circularPointer);
+            circularGauge.Scales.Add(scale);
+            this.Content = circularGauge;
+        }
+
+        private void CircularPointer_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            range.EndValue = e.Value;
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Pointer dragging](Pointers_images/Pointer_dragging.gif)
+
+## Events
+
+### Value changing event
+
+Called during a drag when the user is selecting before a new value for the pointer by dragging. The `ValueChangingEventArgs` contains `OldValue`, `NewValue`, and `Cancel` properties.
+`OldValue`: Contains pointer old value.
+`NewValue`: Contains pointer new value.
+`Cancel`: To restrict the update of current drag pointer value, set `ValueChangingArgs.cancel` is true.
+
+{% tabs %}
+{% highlight xaml %}
+
+         <gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer EnableDragging="True" ValueChanging="CircularPointer_ValueChanging" Value="20" Symbol="InvertedTriangle" PointerType="SymbolPointer" />
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+{% highlight C# %}
+
+    public partial class PointerDragging : Window
+    {
+        public PointerDragging()
+        {
+            InitializeComponent();
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            CircularScale scale = new CircularScale();
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.EnableDragging = true;
+            circularPointer.Value = 20;
+            circularPointer.Symbol = Symbol.InvertedTriangle;
+            circularPointer.PointerType = PointerType.SymbolPointer;
+            circularPointer.ValueChanging += CircularPointer_ValueChanging;
+            scale.Pointers.Add(circularPointer);
+            circularGauge.Scales.Add(scale);
+            this.Content = circularGauge;
+        }
+
+        private void CircularPointer_ValueChanging(object sender, ValueChangingEventArgs e)
+        {
+            if (e.NewValue > 30 && e.NewValue < 70)
+            {
+                e.Cancel = true;
+            }
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
+
+### Value changed event
+
+Called during a drag when the user is selecting a new value for the pointer by dragging. The `ValueChangedEventArgs` contains `Value` property.
+Value : Contains drag pointer value.
+
+{% tabs %}
+{% highlight xaml %}
+
+        <gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer ValueChanged="CircularPointer_ValueChanged" />
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+{% highlight C# %}
+
+    public partial class PointerDragging : Window
+    {
+        public PointerDragging()
+        {
+            InitializeComponent();
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            CircularScale scale = new CircularScale();
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.ValueChanged += CircularPointer_ValueChanged;
+            scale.Pointers.Add(circularPointer);
+            circularGauge.Scales.Add(scale);
+            this.Content = circularGauge;
+        }
+
+        private void CircularPointer_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            var value = e.Value;
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
