@@ -20,9 +20,7 @@ You can set the minimum height for the header of the Interior wizard page by usi
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl" InteriorPageHeaderMinHeight="150">
-
-<syncfusion:WizardPage Name="wizardPage" />
-
+    <syncfusion:WizardPage Name="wizardPage" />
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -52,9 +50,7 @@ You can set the background color of the banner for the [Wizard Control](https://
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl">
-
-<syncfusion:WizardPage Name="wizardPage" BannerBackground="Navy"/>
-
+    <syncfusion:WizardPage Name="wizardPage" BannerBackground="Navy"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -87,9 +83,7 @@ N> You can set the banner image either on the interior or exterior wizard page b
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl">
-
-<syncfusion:WizardPage Name="wizardPage" BannerImage="/Image/sync.bmp"/>
-
+    <syncfusion:WizardPage Name="wizardPage" BannerImage="/Image/sync.bmp"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -119,9 +113,7 @@ You can set the minimum width of the banner image on the 'Exterior' wizard page 
 {% highlight xaml %}
 
 <syncfusion:WizardControl Name="wizardControl" ExteriorPageBannerImageMinWidth="10">
-
-<syncfusion:WizardPage Name="wizardPage" PageType="Exterior" BannerImage="/Image/sync.bmp"/>
-
+    <syncfusion:WizardPage Name="wizardPage" PageType="Exterior" BannerImage="/Image/sync.bmp"/>
 </syncfusion:WizardControl>
 
 {% endhighlight %}
@@ -150,30 +142,37 @@ wizardControl.ExteriorPageBannerImageMinWidth = 10;
 
 ## Setting Visual Styles for Wizard Control
 
-The appearance of the Wizard control can be customized by using the “VisualStyle” property of SfSkinManager. The following are the various built-in skins for Wizard Control:
+The appearance of  can be customized by [VisualStyle](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html) attached property of the [SfSkinManager](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSkinManager.WPF~Syncfusion.SfSkinManager.VisualStyles.html). You can find the list of available built-in themes and the assemblies needs to be referred in the below documentation [link](https://help.syncfusion.com/wpf/themes/getting-started).
 
-* Blend
-* Office2003
-* Office2007Blue
-* Office2007Black
-* Office2007Silver
-* ShinyBlue
-* ShinyRed
-* SyncOrange
-* VS2010
-* Metro
-* Transparent
+Below example explains how to apply blend theme for [Wizard Control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl.html) using SfSkinManager in an existing application.
+
+1. Add reference to **Syncfusion.SfSkinManager.Wpf.dll** and **Syncfusion.Themes.Blend.Wpf.dll** assembly.
+2. Now add reference to SfSkinManager namespace and set SfSkinManager.VisualStyle attached property to window or [Wizard Control](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.WizardControl.html). Setting VisualStyle property to window will apply blend theme for all controls in Windows.
 
 {%tabs%}
 
 {% highlight xaml %}
 
-<syncfusion:WizardControl Name="wizard" syncfusion:SkinStorage.VisualStyle="Blend">
-    <syncfusion:WizardPage>
-            <TextBlock Text="This is an example project for themes in Wizard control" />
-    </syncfusion:WizardPage>
-    <syncfusion:WizardPage />
-</syncfusion:WizardControl>
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:WPF_ForDocumentation"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+    x:Class="WPF_ForDocumentation.MainWindow"
+    xmlns:skinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF" 
+    mc:Ignorable="d"
+    Name="mainWindow"
+    Title="MainWindow" Height="350" Width="500" >
+    <syncfusion:WizardControl Name="wizard" skinManager:SfSkinManager.VisualStyle="Blend">
+        <syncfusion:WizardPage>
+           <TextBlock Text="This is an example project for themes in Wizard control" />
+        </syncfusion:WizardPage>
+        <syncfusion:WizardPage />
+    </syncfusion:WizardControl>
+</Window>
+
 
 {% endhighlight %}
 
