@@ -20,11 +20,12 @@ Terminologies:
 3. Drag Provider - A prompt indicating dockable regions for docking
 4. Dock Hints - Iconic indication of a region
 
-![Adding a window to Document window](Dock-hints-images/document-hints-terminologies.png)
 Dock to document window
+![Adding a window to Document window](Dock-hints-images/document-hints-terminologies.png)
 
-![Adding a window to dock window](Dock-hints-images/dock-hints-terminologies.png)
 Dock to normal window
+![Adding a window to dock window](Dock-hints-images/dock-hints-terminologies.png)
+
 
 ## Dock a window to desired direction
 
@@ -58,7 +59,7 @@ Dock hints of the DragProvider can be disabled / enabled through attached proper
 
 When the DockAbility of the window is set as `All`, all the dock hints of the DockingManager will be enabled in the DockingManager's DragProvider. Default value of the `DockAbility` property is `All`.
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockAbility-All.png)
+![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockability-All.png)
 
 ### DockLeft, DockRight, DockTop, DockBottom, DockTabbed
 
@@ -180,7 +181,7 @@ When the DockAbility is `DockAll`, all the dock hints which allows the window to
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockAbility-dockall1.png)
+![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockability-dockall1.png)
 
 ### DocumentLeft, DocumentRight, DocumentTop, DocumentBottom, DocumentTabbed
 
@@ -302,7 +303,7 @@ If the DockAbility is `DocumentAll`, all the dock hints which allows the window 
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all document hints](Dock-hints-images/dock-hints-dockAbility-documentall.png)
+![DragProvider with all document hints](Dock-hints-images/dock-hints-dockability-documentall.png)
 
 ### Left, Right, Top, Bottom, Tabbed
 
@@ -424,7 +425,7 @@ The dock hints which are arranged vertically in the DragProvider will be enabled
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with vertical dock hints](Dock-hints-images/dock-hints-dockAbility-vertical.png)
+![DragProvider with vertical dock hints](Dock-hints-images/dock-hints-dockability-vertical.png)
 
 ### Horizontal
 
@@ -486,7 +487,7 @@ The dock hints which are arranged horizontally in the DragProvider will be enabl
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with horizontal dock hints](Dock-hints-images/dock-hints-dockAbility-horizontal.png)
+![DragProvider with horizontal dock hints](Dock-hints-images/dock-hints-dockability-horizontal.png)
 
 ### None
 
@@ -589,7 +590,7 @@ private void DockingManager_PreviewDockHints(object sender, PreviewDockHintsEven
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockAbility-preview-event.png)
+![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockability-preview-event.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-docking-manager-wpf-examples/tree/master/Samples/PreviewDockHints) in GitHub
 
