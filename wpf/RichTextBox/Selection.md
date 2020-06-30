@@ -438,3 +438,5 @@ Dim isDeleted As Boolean = richTextBoxAdv.Selection.Delete()
 {% endhighlight %}
 
 {% endtabs %}
+
+N> This API is supported starting from release version v18.2.0.X.
