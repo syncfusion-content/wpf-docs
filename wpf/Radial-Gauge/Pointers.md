@@ -1068,10 +1068,10 @@ Symbol pointer and needle pointer can be dragged over the scale value by setting
 
 ### Value changing event
 
-Called during a drag when the user is selecting before a new value for the pointer by dragging. The `ValueChanging` event contains `OldValue`, `NewValue`, and `Cancel` properties.
+Called during a drag when the user is selecting before a new value for the pointer by dragging. The `ValueChangingEventArgs` handler contains `OldValue`, `NewValue`, and `Cancel` properties.
 `OldValue`: Contains pointer old value.
 `NewValue`: Contains pointer new value.
-`Cancel`: You can control the pointer value changing functionality using the `Cancel` argument when setting the cancel value to true.
+`Cancel`: To restrict the update of current drag pointer value, set `ValueChangingArgs.cancel` is true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1121,8 +1121,8 @@ Called during a drag when the user is selecting before a new value for the point
 
 ### Value changed event
 
-Called during a drag when the user is selecting a new value for the pointer by dragging. The `ValueChanged` event contains `Value` property.
-Value : Contains pointer value.
+Called during a drag when the user is selecting a new value for the pointer by dragging. The `ValueChangedEventArgs` handler contains `Value` property.
+Value : Contains drag pointer value.
 
 {% tabs %}
 {% highlight xaml %}

@@ -122,7 +122,7 @@ The default appearance of the Marker can be customized by using the MarkerTempla
 
 ![Marker Template image](Map-Providers_images/Marker_Template_image.png)
 
-Refer to this link for customizing marker icons, labels, marker alignment, marker selection and events. 
+Refer to this [`link`](<a href="/wpf/Maps/markers">Markers</a>) for customizing marker icons, labels, marker alignment, marker selection and events. 
 
 ### Adding a multiple layers in OSM
 
