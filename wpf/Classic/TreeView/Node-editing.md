@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Node Editing in WPF TreeView | Syncfusion
-description: This section describes about how to edit the node at runtime in WPF TreeView.
+description: This section describes about how to edit the node at runtime in Syncfusion WPF TreeView(TreeViewAdv).
 platform: wpf
 control: TreeViewAdv
 documentation: ug
 ---
-# Node Editing
+# Node Editing in Wpf TreeView(TreeViewAdv).
 
 TreeViewAdv allow user to edit/non-edit the tree node items at runtime, by enable/disable IsEditable property. Default value of this property is true. At runtime, you can edit a node, by simply clicking the node text
 
