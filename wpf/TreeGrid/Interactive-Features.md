@@ -1011,4 +1011,4 @@ sfTreeGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line
 {% endhighlight %}
 {% endtabs %}
 
-![Changing the row drop indicator](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img9.jpeg)
+![Changing the row drop indicator](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img7.jpeg)
