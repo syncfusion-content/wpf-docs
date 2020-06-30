@@ -9,7 +9,7 @@ documentation: ug
 
 # Textbox customization 
 
-Autocomplete provides the user-friendly customizing options for text box. This section explains how to customize the entire Autocomplete control.
+AutoComplete provides the user-friendly customizing options for text box. This section explains how to customize the entire AutoComplete control.
 
 
 ## Water mark 
@@ -19,16 +19,16 @@ Autocomplete provides the user-friendly customizing options for text box. This s
 {% tabs %}
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                  VerticalAlignment="Center" 
-                                  Width="300" 
-                                  Height="50"
-                                  Watermark="Enter names separated by comma (Ex : John, Kate)"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300" 
+                      Height="50"
+                      Watermark="Enter names separated by comma (Ex : John, Kate)"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.Watermark= "Enter names separated by comma (Ex : John, Kate)";
+textBoxExt.Watermark= "Enter names separated by comma (Ex : John, Kate)";
 
 {% endhighlight %}
 {% endtabs %}
@@ -40,10 +40,10 @@ N> The Watermark property is of the object type. So, any framework elements can 
 {% tabs %}
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Center"
-                                  VerticalAlignment="Center" 
-                                  Height="50"
-                                  Width="300">
+<editors:SfTextBoxExt HorizontalAlignment="Center"
+                      VerticalAlignment="Center" 
+                      Height="50"
+                      Width="300">
                 <editors:SfTextBoxExt.Watermark>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="Windows 8.png" 
@@ -54,7 +54,7 @@ N> The Watermark property is of the object type. So, any framework elements can 
                                    Opacity="0.5"/>
                     </StackPanel>
                 </editors:SfTextBoxExt.Watermark>
-            </editors:SfTextBoxExt>
+</editors:SfTextBoxExt>
 
 {% endhighlight %}
 {% endtabs %}
@@ -95,29 +95,29 @@ Any business object can be bound to the Watermark property and that object can b
 
 ## Customizing the TextBox
 
-The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontWeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), and [FontFamily](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#) properties are used to customize the text in the Autocomplete control.
+The [Text](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), [FontWeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#), and [FontFamily](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreCase.html#) properties are used to customize the text in the AutoComplete control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <editors:SfTextBoxExt x:Name="textBoxExt" 
-                              Text="TextBox"
-                              FontSize="20"
-                              FontWeight="Bold"
-                              FontFamily="Times New Roman"
-                              HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="200">
-            </editors:SfTextBoxExt>
+<editors:SfTextBoxExt x:Name="textBoxExt" 
+                      Text="TextBox"
+                      FontSize="20"
+                      FontWeight="Bold"
+                      FontFamily="Times New Roman"
+                      HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="200">
+</editors:SfTextBoxExt>
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.Text = "TextBox";
-            textBoxExt.FontSize = 20;
-            textBoxExt.FontWeight = FontWeights.Bold;
-            textBoxExt.FontFamily = new FontFamily("Times New Roman");
+textBoxExt.Text = "TextBox";
+textBoxExt.FontSize = 20;
+textBoxExt.FontWeight = FontWeights.Bold;
+textBoxExt.FontFamily = new FontFamily("Times New Roman");
 
 {% endhighlight %}
 
@@ -135,19 +135,19 @@ This feature allows to set the drop-down icon for the TextBox control using the 
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              ShowDropDownButton="True"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      ShowDropDownButton="True"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.ShowDropDownButton = true;
+textBoxExt.ShowDropDownButton = true;
 
 {% endhighlight %}
 {% endtabs %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Drop-down customization 
 
-Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties that deals with drop-down list in the Autocomplete control.
+Suggestion box is the drop-down list box, which displays the filtered suggestions inside a pop-up. This section explains the properties that deals with drop-down list in the AutoComplete control.
 
 ## Customize the background 
 
@@ -19,19 +19,19 @@ The [DropDownBackground](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusio
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Width="300"
-                              Height="40"
-                              SearchItemPath="Name"
-                              AutoCompleteMode="Suggest"
-                              DropDownBackground="AliceBlue"
-                              AutoCompleteSource="{Binding Employees}" />
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      AutoCompleteMode="Suggest"
+                      DropDownBackground="AliceBlue"
+                      AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.DropDownBackground = new SolidColorBrush(Colors.AliceBlue);
+textBoxExt.DropDownBackground = new SolidColorBrush(Colors.AliceBlue);
 
 {% endhighlight %}
 {% endtabs %}
@@ -56,20 +56,20 @@ The drop-down list will open at the top of the control.
 {% tabs %}
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center"
-                                  VerticalAlignment="Center"
-                                  Width="300"
-                                  Height="40"
-                                  SearchItemPath="Name"
-                                  SuggestionBoxPlacement="Top"
-                                  AutoCompleteMode="Suggest"
-                                  SuggestionMode="StartsWith"
-                                  AutoCompleteSource="{Binding Employees}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      SuggestionBoxPlacement="Top"
+                      AutoCompleteMode="Suggest"
+                      SuggestionMode="StartsWith"
+                      AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
+textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 
 {% endhighlight %}
 {% endtabs %}
@@ -87,20 +87,20 @@ The drop-down list will open at the bottom of the control.
 {% tabs %}
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center"
-                                  VerticalAlignment="Center"
-                                  Width="300"
-                                  Height="40"
-                                  SearchItemPath="Name"
-                                  SuggestionBoxPlacement="Bottom"
-                                  AutoCompleteMode="Suggest"
-                                  SuggestionMode="StartsWith"
-                                  AutoCompleteSource="{Binding Employees}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      SuggestionBoxPlacement="Bottom"
+                      AutoCompleteMode="Suggest"
+                      SuggestionMode="StartsWith"
+                      AutoCompleteSource="{Binding Employees}"/>
   
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
+textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
 
 {% endhighlight %}
 {% endtabs %}
@@ -117,20 +117,20 @@ The drop-down list will not open.
 {% tabs %}
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center"
-                                  VerticalAlignment="Center"
-                                  Width="300"
-                                  Height="40"
-                                  SearchItemPath="Name"
-                                  SuggestionBoxPlacement="None"
-                                  AutoCompleteMode="Suggest"
-                                  SuggestionMode="StartsWith"
-                                  AutoCompleteSource="{Binding Employees}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Width="300"
+                      Height="40"
+                      SearchItemPath="Name"
+                      SuggestionBoxPlacement="None"
+                      AutoCompleteMode="Suggest"
+                      SuggestionMode="StartsWith"
+                      AutoCompleteSource="{Binding Employees}"/>
     
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
+textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
 
 {% endhighlight %}
 {% endtabs %}
@@ -142,24 +142,24 @@ No drop-down list.
 
 ## Setting the maximum height 
 
-The maximum height of the suggestion box in the Autocomplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MaxDropDownHeight.html) property.
+The maximum height of the suggestion box in the AutoComplete control can be changed using the [MaximumDropDownHeight](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MaxDropDownHeight.html) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                  VerticalAlignment="Center" 
-                                  Width="400"
-                                  SearchItemPath="Name"
-                                  MaxDropDownHeight="500"
-                                  AutoCompleteMode="Suggest"
-                                  AutoCompleteSource="{Binding Employees}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="400"
+                      SearchItemPath="Name"
+                      MaxDropDownHeight="500"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.MaxDropDownHeight = 500;
+textBoxExt.MaxDropDownHeight = 500;
 
 {% endhighlight %}
 {% endtabs %}
@@ -174,18 +174,18 @@ Suggestion box can be shown whenever the control receives focus using the [ShowS
 
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                  VerticalAlignment="Center" 
-                                  Width="400"
-                                  SearchItemPath="Name"
-                                  ShowSuggestionsOnFocus="True"
-                                  AutoCompleteMode="Suggest"
-                                  AutoCompleteSource="{Binding Employees}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="400"
+                      SearchItemPath="Name"
+                      ShowSuggestionsOnFocus="True"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.ShowSuggestionsOnFocus = true;
+textBoxExt.ShowSuggestionsOnFocus = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -199,18 +199,18 @@ The [PopupDelay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInpu
 {% tabs %}
 {% highlight xaml %}
 
-            <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                                  VerticalAlignment="Center" 
-                                  Width="400"
-                                  SearchItemPath="Name"
-                                  PopupDelay="00:00:02"
-                                  AutoCompleteMode="Suggest"
-                                  AutoCompleteSource="{Binding Employees}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Width="400"
+                      SearchItemPath="Name"
+                      PopupDelay="00:00:02"
+                      AutoCompleteMode="Suggest"
+                      AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.PopupDelay = new TimeSpan(00,00,02);
+textBoxExt.PopupDelay = new TimeSpan(00,00,02);
 
 {% endhighlight %}
 {% endtabs %}

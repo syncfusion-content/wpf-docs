@@ -15,22 +15,22 @@ The control does not stick with one type of keyboard, so it can be populated the
 
 {% highlight xaml %}
 
-        <editors:SfTextBoxExt HorizontalAlignment="Center" 
-                              VerticalAlignment="Center" 
-                              Height="40"
-                              Width="200"
-                              AutoCompleteMode="Suggest"
-                              SuggestionMode="Contains"
-                              IgnoreDiacritic="False"
-                              HighlightedTextColor="Red"
-                              TextHighlightMode="MultipleOccurrence"
-                              SearchItemPath="Item"
-                              AutoCompleteSource="{Binding DiacriticCollenction}"/>
+<editors:SfTextBoxExt HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" 
+                      Height="40"
+                      Width="200"
+                      AutoCompleteMode="Suggest"
+                      SuggestionMode="Contains"
+                      IgnoreDiacritic="False"
+                      HighlightedTextColor="Red"
+                      TextHighlightMode="MultipleOccurrence"
+                      SearchItemPath="Item"
+                      AutoCompleteSource="{Binding DiacriticCollenction}"/>
 
 {% endhighlight %}
 {% highlight c# %}
 
-            textBoxExt.IgnoreDiacritic = false;
+textBoxExt.IgnoreDiacritic = false;
 
 {% endhighlight %}
 
