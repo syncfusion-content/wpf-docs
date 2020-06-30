@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Images for items in TreeViewAdv
-description: Images for items in TreeViewAdv
+title: Images for items in TreeViewAdv | Syncfusion.
+description: This section describes how to load and customize the images in the items of Treeview for syncfusion Essential Wpf.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
@@ -56,7 +56,7 @@ item2.RightImageSource = New BitmapImage(New Uri("/Right tick.png", UriKind.Rela
 {% endtabs %}  
 
 
-![](Images_for_items_in_TreeViewAdv_images/Images_for_items_in_TreeViewAdv_img1.jpeg)
+![load images to TreeViewAdv items](Images_for_items_in_TreeViewAdv_images/Images_for_items_in_TreeViewAdv_img1.jpeg)
 
 
 ## Customize image size in TreeViewItemAdv
@@ -104,4 +104,4 @@ item1.ImageWidth = 25
 
 {% endtabs %}  
 
-![](Images_for_items_in_TreeViewAdv_images/Images_for_items_in_TreeViewAdv_img2.jpeg)
+![Customize image size in TreeViewItemAdv](Images_for_items_in_TreeViewAdv_images/Images_for_items_in_TreeViewAdv_img2.jpeg)

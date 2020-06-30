@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand/Collapse Images
-description: Expand/Collapse Images
+title: Expand/Collapse Images | Syncfusion.
+description: This section describes about the expand and collapse features in the Wpf Syncfusion TreeView(TreeViewAdv).
 platform: wpf
 control: TreeViewAdv
 documentation: ug
@@ -60,4 +60,4 @@ item2.ExpandedImageSource = New BitmapImage(New Uri("/Folder_Expanded.png", UriK
 
 {% endtabs %}  
 
-![](Expand_Collapse_images_images/Expand_Collapse_images_img1.jpeg)
+![setting image for expand and collapse button](Expand_Collapse_images_images/Expand_Collapse_images_img1.jpeg)
