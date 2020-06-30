@@ -862,6 +862,29 @@ Sample for dragging and dropping between TreeViewAdv and SfTreeGrid: [Sample](ht
 
 ![Drag and drop between treegrid and treeviewadv](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img5.jpeg)
 
+### Changing the row drop indicator
+
+By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the `sfTreeGrid.RowDropIndicatorMode` as `Line`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Margin="5"
+                       Name="sfTreeGrid" 
+                       AutoExpandMode="RootNodesExpanded"
+                       AllowDraggingRows="True" 
+                       AllowDrop="True" 
+                       ChildPropertyName="ReportsTo"
+                       ItemsSource="{Binding Employees}" />					   
+{% endhighlight %}
+{% highlight c# %}
+
+sfTreeGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the row drop indicator](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img7.png)
+
 ### Customizing drag-and-drop rows
 
 SfTreeGrid processes row drag and drop operations in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class. You can customize the row drag-and-drop operations using the events in the [SfTreeGrid.RowDragDropController](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html).
@@ -989,24 +1012,3 @@ private void RowDragDropController_DragOver(object sender, TreeGridRowDragOverEv
 }
 {% endhighlight %}
 {% endtabs %}
-
-### Changing the row drop indicator
-
-By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the `sfTreeGrid.RowDropIndicatorMode` as `Line`.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfTreeGrid Margin="5"
-                       Name="sfTreeGrid" AutoExpandMode="RootNodesExpanded"
-					   AllowDraggingRows="True" AllowDrop="True" 
-                       ItemsSource="{Binding Employees}"
-                       RowDropIndicatorMode="Line" />					   
-{% endhighlight %}
-{% highlight c# %}
-
-sfTreeGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line;
-
-{% endhighlight %}
-{% endtabs %}
-
-![Changing the row drop indicator](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img7.png)
