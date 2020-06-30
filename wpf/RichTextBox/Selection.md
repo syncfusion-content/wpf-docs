@@ -421,38 +421,19 @@ The following code sample demonstrates how to delete the selected portion of the
 {% tabs %}
 {% highlight Xaml %}
 <!-- Binds button to the DeleteKeyCommand -->
-<Button Content="Delete" Command="{Binding ElementName=richTextBoxAdv, Path=DeleteKeyCommand, Mode=TwoWay}" />
-
-{% tabs %}
-{% highlight C# %}
-public void Delete()
-{
-    // Executes delete command.
-    if (richTextBoxAdv.DeleteKeyCommand.CanExecute(null))
-        richTextBoxAdv.DeleteKeyCommand.Execute(null);
-}
+<Button Content="Delete" Command="RichTextBoxAdv:SfRichTextBoxAdv.DeleteKeyCommand" CommandTarget="{Binding ElementName=richTextBoxAdv}"/>
 
 
 The following code sample demonstrates how to delete the selected portion of the document using the Delete method. This method is valid only when the selection is non-empty, and it returns true if the selected content is deleted. Otherwise false.
 
 {% tabs %}
-{% highlight c# %} 
-public override bool CanExecuteCommand(object parameter)
-        {
-            if (OwnerControl != null && OwnerControl.Selection != null && !OwnerControl.Selection.IsCleared && !OwnerControl.IsPastingContent)
-                return !OwnerControl.Selection.IsEmpty;
-            return false;
-        }
+{% highlight c# %}
+//Deletes the selected content in SfRichTextBoxAdv control.
+bool isDeleted = richTextBoxAdv.Selection.Delete();
 
-protected override void ExecuteCommand(object parameter)
-        {
-            if (OwnerControl.IsReadOnlyMode || !OwnerControl.IsDocumentLoaded || OwnerControl.IsPastingContent)
-                return;
-            OwnerControl.Viewer.HandleDeleteKey();
-            base.ExecuteCommand(parameter);
-        }
-
-
+{% tabs %}
+{% highlight VB %} 
+Dim isDeleted As Boolean = richTextBoxAdv.Selection.Delete()
 
 {% endhighlight %}
 
