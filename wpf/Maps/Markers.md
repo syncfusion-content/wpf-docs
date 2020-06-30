@@ -13,7 +13,9 @@ Markers are used to show some messages on maps.
 
 ## Adding the marker
 
-Any number of markers can be added to the shape file layers using the `Markers` property. Each marker contains the following properties:
+Any number of markers can be added to the shape file layer or the imagery layer using the `Markers` property. Each marker contains the following properties:
+
+N> You must create a model that contains properties such as Latitude and Longitude to add a marker in maps. If you want to add text with default marker, add Label property with your model.
 
 `Label`: Displays some messages on maps.
 
@@ -252,11 +254,11 @@ You can align the maps marker horizontally and vertically using the `HorizontalA
 
 ### Setting a horizontal alignment
 
-The `HorizontalAlignment` property is used to position the marker icon in x-axis. The marker icon can be positioned using the following ways in x-axis:
+The `HorizontalAlignment` property is used to position the marker icon horizontally. The marker icon can be positioned using the following ways:
 
-* `Near`: Specifies the near position of the marker icon for the given latitude and longitude values in x-axis position.
-* `Center`: Specifies the center position of the marker icon for the given latitude and longitude values in x-axis position.
-* `Far`: Specifies the far position of the marker icon for the given latitude and longitude values in x-axis position.
+* `Near`: Specifies the near position of the marker icon for the given latitude and longitude values.
+* `Center`: Specifies the center position of the marker icon for the given latitude and longitude values.
+* `Far`: Specifies the far position of the marker icon for the given latitude and longitude values.
 
 {% tabs %}
 
@@ -308,11 +310,11 @@ The `HorizontalAlignment` property is used to position the marker icon in x-axis
 
 ### Setting a vertical alignment
 
-The `VerticalAlignment` property is used to position the marker icon in y-axis. The marker icon can be positioned using the following ways in y-axis:
+The `VerticalAlignment` property is used to position the marker icon vertically. The marker icon can be positioned using the following ways:
 
-* `Near`: Specifies the near position of the marker icon for the given latitude and longitude values in y-axis position.
-* `Center`: Specifies the center position of the marker icon for the given latitude and longitude values in y-axis position.
-* `Far`: Specifies the far position of the marker icon for the given latitude and longitude values in y-axis position.
+* `Near`: Specifies the near position of the marker icon for the given latitude and longitude values.
+* `Center`: Specifies the center position of the marker icon for the given latitude and longitude values.
+* `Far`: Specifies the far position of the marker icon for the given latitude and longitude values.
 
 {% tabs %}
 
