@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Binding SelectedItem of TreeViewAdv in MVVM Pattern
-description: Binding SelectedItem of TreeViewAdv in MVVM Pattern
+title: Binding SelectedItem of TreeViewAdv in MVVM Pattern | Syncfusion
+description: This section describes how to bind the SelectedItem of syncfusion treeview(TreeViewAdv) in MVVM Pattern.
 platform: wpf
 control: TreeViewAdv
 documentation: ug
