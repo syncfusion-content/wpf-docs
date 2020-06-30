@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Add References| Wpf | Syncfusion
-description: add a syncfusion references via syncfusion reference manger
+description: Syncfusion Reference Manger extension is add-in to add the Syncfusion references into the WinForms application
 platform: wpf
 control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Add References
+# Add Reference for WPF
 
 Syncfusion Reference Manager is the Visual Studio Add-In for WPF platform. It adds the Syncfusion assembly reference to the project, either from the GAC location or from where Essential Studio is installed. It can also migrate the projects that contain the old versions of the Syncfusion assembly reference to newer or specific versions of the Syncfusion assembly reference. It supports Microsoft Visual Studio 2013 or higher. This Visual Studio extension is included from Essential Studio 2013 Volume 3 release.
 
