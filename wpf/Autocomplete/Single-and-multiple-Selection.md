@@ -22,7 +22,7 @@ Selection for the control depends on the [MultiSelectMode](https://help.syncfusi
 
 Selected items will be displayed with a customizable token representation and it can be remove each tokenized item with the close button.
 
-The selected items can be displayed as token inside the AutoComplete in two ways:
+The selected items can be displayed as token inside the Autocomplete in two ways:
 
 * `Wrap` - When [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) is set to `Wrap`, the selected items will be wrapped to the next line of the AutoComplete.
 
@@ -111,9 +111,9 @@ Please find the code snippet for the Customization of Tokens.
 
 ### Enable autosize in token mode 
 
-AutoSizing can be enabled in AutoComplete control so that the control will extend its layout based on the token size.
+AutoSizing can be enabled in Autocomplete control so that the control will extend its layout based on the token size.
 
-[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the AutoSizing in AutoComplete control. To enable the API, need to set the MultiSelectMode as Token and TokensWrapMode as Wrap and the control height should not be provided. The default value of `EnableAutoSize` is false.
+[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the AutoSizing in Autocomplete control. To enable the API, need to set the MultiSelectMode as Token and TokensWrapMode as Wrap and the control height should not be provided. The default value of `EnableAutoSize` is false.
 
 {% tabs %}
 
