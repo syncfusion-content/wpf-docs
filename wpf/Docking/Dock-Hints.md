@@ -181,7 +181,7 @@ When the DockAbility is `DockAll`, all the dock hints which allows the window to
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockability-dockall1.png)
+![DragProvider with all dock hints](Dock-hints-images/dock-hints-dockability-DockAll1.png)
 
 ### DocumentLeft, DocumentRight, DocumentTop, DocumentBottom, DocumentTabbed
 
@@ -303,7 +303,7 @@ If the DockAbility is `DocumentAll`, all the dock hints which allows the window 
 {% endhighlight %}
 {% endtabs %}
 
-![DragProvider with all document hints](Dock-hints-images/dock-hints-dockability-documentall.png)
+![DragProvider with all document hints](Dock-hints-images/dock-hints-dockability-documentAll.png)
 
 ### Left, Right, Top, Bottom, Tabbed
 
