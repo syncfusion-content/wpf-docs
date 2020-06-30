@@ -6,7 +6,7 @@ control: SfRichTextBoxAdv
 documentation: ug
 keywords: commands
 ---
-# Commands
+# Commands in UWP RichTextBox (SfRichTextBoxAdv)
 
 Commands are a way to handle user interface (UI) actions. They are a loosely coupled way to bind the UI to the logic that performs the action. The SfRichTextBoxAdv supports commands for mostly used operations which are classified below.
 
