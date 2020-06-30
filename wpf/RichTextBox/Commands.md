@@ -1,6 +1,6 @@
 ---
 title: Commands | WPF RichTextBox | Syncfusion
-description: This section illustrates the list of built-in commands supported in WPF RichTextBox control
+description: This section illustrates the list of built-in commands supported in WPF RichTextBox control (SfRichTextBoxAdv).
 platform: wpf
 control: SfRichTextBoxAdv
 documentation: ug
