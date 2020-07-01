@@ -32,7 +32,7 @@ If you want to spell check the given document quickly and get a suitable suggest
 `Ispell` dictionary contains two files as follows,
 
 * Affix file with grammar rules- `*.aff`, 
-* Basic Words file - `*.xlg` file.
+* Basic Words file - `*.xlg` or `*.dic` file.
 
 ### Adding Ispell Dictionary
 
