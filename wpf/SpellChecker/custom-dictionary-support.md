@@ -34,11 +34,9 @@ If you want to spell check the given document quickly and get a suitable suggest
 * Affix file with grammar rules- `*.aff`, 
 * Basic Words file - `*.xlg` file.
 
-N> Download various culture's [Basic Words and Grammar](https://www.cs.hmc.edu/~geoff/ispell.html) files.
-
 ### Adding Ispell Dictionary
 
-1. [Download](https://www.cs.hmc.edu/~geoff/ispell.html) the required culture's `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add your `IspellDictionary`'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/IspellAdding.png)
 
@@ -184,8 +182,6 @@ N> You can add multiple `IspellDictionary` with various culture files into the `
 
 ![SpellCheck using Ispell dictionary](Dictionary_images/Ispell.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/IspellCheck) in GitHub
-
  ## SpellCheck using OpenOffice dictionary
 
 If you want to spell check the given document with high accuracy than `IspellDictionary`, use the `OpenOffice` dictionary. It provides a more suggestion words than the `IspellDictionary`. 
@@ -197,11 +193,9 @@ If you want to spell check the given document with high accuracy than `IspellDic
 
 N> `Ispell` and `OpenOffice` have different rules in the Affix files, you can't use the same Affix files for both dictionaries.
 
-N> Download various culture's [Basic Words and Grammar](https://github.com/wooorm/dictionaries/tree/main/dictionaries) files.
-
 ### Adding OpenOffice Dictionary
 
-1. [Download](https://github.com/wooorm/dictionaries/tree/main/dictionaries) the required culture's `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add your `OpenOfficeDictionary`'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/OpenOfficeAdding.png)
 
@@ -348,8 +342,6 @@ N> You can add multiple `OpenOfficeDictionary` with various culture files into t
 
 ![SpellCheck using OpenOffice dictionary](Dictionary_images/OpenOffice.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/OpenOfficeSpellCheck) in GitHub
-
 ## SpellCheck using HunSpell dictionary
 
 If you want to spell check the given document with high accuracy and more suitable suggestions for the error words than the `OpenOffice` dictionary, use the `HunSpell` dictionary. It is used for any language with rich morphology and complex word compounding and character encoding.
@@ -359,11 +351,9 @@ If you want to spell check the given document with high accuracy and more suitab
 * Affix file with grammar rules- `*.aff`, 
 * Basic Words file - `*.dic` file.
 
-N> Download various culture's [Basic Words and Grammar](https://github.com/wooorm/dictionaries/tree/main/dictionaries) files.
-
 ### Adding HunSpell Dictionary
 
-1. [Download](https://github.com/wooorm/dictionaries/tree/main/dictionaries) the required culture's `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add your `HunspellDictionary`'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/HunspellAdding.png)
 
@@ -506,8 +496,6 @@ N> You can add multiple `HunSpellDictionary` with various culture files into the
 
 ![SpellCheck using HunSpell dictionary](Dictionary_images/HunSpell.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/HunSpellCheck) in GitHub
-
 ## SpellCheck using Custom Dictionary
 
 If you want to skip or make the error or custom word as correct word, add that word into the custom dictionary text file. You can add that word on before perform spell check by directly adding that words into the custom dictionary text file and also can add the error word into the custom dictionary text file at runtime by clicking the `Add to Dictionary` button. Then, while performing next spell check, Custom dictionary text file contained words are considered as a correct words.  
@@ -629,19 +617,6 @@ public partial class MainWindow : Window {
         //Creating a culture instance
         CultureInfo culture = new CultureInfo("en-US");
 
-        // Adding HunSpell dictonaries in Dictionaries collection
-        SpellChecker.Dictionaries = new DictionaryCollection();
-
-        //Add US culture HunSpell dictionary
-        SpellChecker.Dictionaries.Add(
-            new HunspellDictionary()
-            {
-                Culture = culture,
-                GrammarUri = new Uri("/CustomSpellCheck;component//English/en-US.aff", UriKind.Relative),
-                DictionaryUri = new Uri("/CustomSpellCheck;component//English/en-US.dic", UriKind.Relative)
-            }
-        );
-
         // Get the current PROJECT directory
         string projectDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
 
@@ -673,5 +648,3 @@ N> You can add multiple `CustomDictionary` with various culture files into the `
 ![SpellCheck using Custom dictionary](Dictionary_images/CustomDictionary.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/CustomSpellCheck) in GitHub
-
-
