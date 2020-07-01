@@ -618,3 +618,89 @@ sfCircularGauge.Scales.Add(mainscale);
 
 ![Ranges - Circular Gauge](Ranges_images/Ranges_img7.png)
 
+### Setting gradient color for range
+
+You can give color transition to range by specifying the different colors using the `GradientStops` property of range. By using the `Value` and `Color` properties of `GradientStops`, you can adjust the color transition range for each color.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+       <gauge:SfCircularGauge>
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale LabelStroke ="IndianRed" LabelOffset="0.77" LabelPosition="Custom" MinorTicksPerInterval="5"  RangePosition="Custom" TickPosition="Custom" RimStroke="White">
+                    <gauge:CircularScale.Ranges>
+                        <gauge:CircularRange StartValue="0" EndValue="85" Offset="0.5" StrokeThickness="40" >
+                            <gauge:CircularRange.GradientStops>
+                                <gauge:GaugeGradientStop Value="15" Color="OrangeRed"/>
+                                <gauge:GaugeGradientStop Value="50" Color="#FFDD00"/>
+                                <gauge:GaugeGradientStop Value="80" Color="Green"/>
+                            </gauge:CircularRange.GradientStops>
+                        </gauge:CircularRange>
+                    </gauge:CircularScale.Ranges>
+                    <gauge:CircularScale.MajorTickSettings>
+                        <gauge:MajorTickSetting  Length="20" Stroke="IndianRed" StrokeThickness="2"  Offset="0.7"  />
+                    </gauge:CircularScale.MajorTickSettings>
+                    <gauge:CircularScale.MinorTickSettings>
+                        <gauge:MinorTickSetting  Stroke="IndianRed"  StrokeThickness="2"  Offset="0.65"  />
+                    </gauge:CircularScale.MinorTickSettings>
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="NeedlePointer" Visibility="Collapsed"/>
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            CircularScale mainscale = new CircularScale();
+            mainscale.RimStroke = new SolidColorBrush(Colors.White);
+            mainscale.LabelStroke = new SolidColorBrush(Colors.IndianRed);
+            mainscale.LabelOffset = 0.77;
+            mainscale.LabelPosition = LabelPosition.Custom;
+            mainscale.MinorTicksPerInterval = 5;
+            mainscale.RangePosition = RangePosition.Custom;
+            mainscale.TickPosition = TickPosition.Custom;
+            CircularRange circularRange = new CircularRange();
+            circularRange.StartValue = 0;
+            circularRange.EndValue = 85;
+            circularRange.Offset = 0.5;
+            circularRange.StrokeThickness = 40;
+            ObservableCollection<GaugeGradientStop> gradientColor1 = new ObservableCollection<GaugeGradientStop>();
+            GaugeGradientStop gaugeGradientStop = new GaugeGradientStop();
+            gaugeGradientStop.Value = 15;
+            gaugeGradientStop.Color = Colors.Green;
+            circularRange.GradientStops.Add(gaugeGradientStop);
+            GaugeGradientStop gaugeGradientStop1 = new GaugeGradientStop();
+            gaugeGradientStop1.Value = 50;
+            gaugeGradientStop1.Color = Colors.Yellow;
+            circularRange.GradientStops.Add(gaugeGradientStop1);
+            GaugeGradientStop gaugeGradientStop2 = new GaugeGradientStop();
+            gaugeGradientStop2.Value = 80;
+            gaugeGradientStop2.Color = Colors.Red;
+            circularRange.GradientStops.Add(gaugeGradientStop2);
+            mainscale.Ranges.Add(circularRange);
+            MajorTickSetting majorTickSetting = new MajorTickSetting();
+            majorTickSetting.Length = 20;
+            majorTickSetting.Stroke = new SolidColorBrush(Colors.IndianRed);
+            majorTickSetting.StrokeThickness = 2;
+            majorTickSetting.Offset = 0.7;
+            mainscale.MajorTickSettings = majorTickSetting;
+            MinorTickSetting minorTickSetting = new MinorTickSetting();
+            minorTickSetting.Stroke = new SolidColorBrush(Colors.IndianRed);
+            minorTickSetting.StrokeThickness = 2;
+            minorTickSetting.Offset = 0.65;
+            mainscale.MinorTickSettings = minorTickSetting;
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.NeedlePointerVisibility = Visibility.Hidden;
+            mainscale.Pointers.Add(circularPointer);
+            sfCircularGauge.Scales.Add(mainscale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Ranges - GradientStops](Ranges_images/Gradient-image.png)
