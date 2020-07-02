@@ -1629,6 +1629,29 @@ Syncfusion.SfSchedule.WPF
 </tr>
 </table>
 
+## SfScheduler
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfScheduler.WPF <br/>
+Syncfusion.SfInput.WPF<br/>
+Syncfusion.SfSkinManager.WPF<br/>
+Syncfusion.SfShared.WPF <br/>
+Syncfusion.Shared.WPF<br/>
+Syncfusion.Themes.MaterialLight.WPF<br/>
+Syncfusion.Shared.WPF
+</td>
+<td> 
+Syncfusion.SfScheduler.WPF
+</td>
+</tr>
+</table>
+
 ## SfSmithChart
 
 <table>
