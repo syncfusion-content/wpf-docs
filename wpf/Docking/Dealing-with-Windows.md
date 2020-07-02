@@ -524,63 +524,6 @@ DockingManager.SetCanDockonFloat(Item1, false);
 
 {% endtabs %}
 
-## Restricting Docking by Drag Providers
-
-DockingManager allows to dock the children in different sides using the DragProviders. To restrict dock ability of the dock children to any particular side, set the property [DockAbility](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockItem~DockAbility.html) with the required values.
-
-* Setting DockAbility as Horizontal – Restrict the children to dock only on Horizontal side by providing the Horizontal Drag providers.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<syncfusion:DockingManager>
-	
-<ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.DockAbility="Horizontal">
-	
-</ContentControl>
-
-</syncfusion:DockingManager>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-DockingManager.SetDockAbility(window1, DockAbility.Horizontal);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Setting Dockability as horizontal to the DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img7.jpeg)
-
-* Setting DockAbility as Vertical  – Restrict the children to dock only on Vertical side by providing the Vertical Drag providers
-
-{% tabs %}
-
-{%highlight XAML %}
-
-<syncfusion:DockingManager >
-
-<ContentControl syncfusion:DockingManager.Header="Document1" syncfusion:DockingManager.DockAbility="Vertical">
-
-</ContentControl>
-
-</syncfusion:DockingManager>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-DockingManager.SetDockAbility(window1, DockAbility.Vertical);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Setting Dockability as vertical to the DockingManager](Dealing-with-Windows_images/Dealing-with-Windows_img8.jpeg)
-
-
 ## Customizing a window
 
 A Docking window can be customized using the property [HeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~HeaderBackground.html), [SelectedHeaderBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~SelectedHeaderBackground.html), [HeaderMouseHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DockingManager~HeaderMouseOverBackground.html) with the desired brush values respectively.
