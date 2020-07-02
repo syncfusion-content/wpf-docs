@@ -95,19 +95,19 @@ namespace SfDatePickerSample {
 
 ## Setting the Date
 
-We can set or change the selected date by using [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~DateTime.html) property. If we not assign any value for the `DateTime` property, it will automatically assign the current system date as `DateTime` property value.
+We can set or change the selected date by using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property. If we not assign any value for the `Value` property, it will automatically assign the current system date as `Value` property value.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker  DateTime="5/30/2021"
+<syncfusion:SfDatePicker  Value="5/30/2021"
                           Name="sfDatePicker" />
 
 {% endhighlight %}
 {% highlight C# %}
 
 SfDatePicker sfDatePicker= new SfDatePicker();
-sfDatePicker.DateTime = new DateTime(2021,5,30);
+sfDatePicker.Value = new DateTime(2021,5,30);
 
 {% endhighlight %}
 {% endtabs %}
@@ -197,7 +197,7 @@ Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree
 
 ## Set selected value on lost focus
 
-If we want to update the selected date of `SfDateSelector` to the `SfDatePicker.DateTime` property by moving the focus from `SfDateSelector` to anywhere, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. By default, the selected date of `SfDateSelector` can be sets to the `SfDatePicker.DateTime` property only by clicking the `OK` button, otherwise the selected value not updated by the move focus.
+If we want to update the selected date of `SfDateSelector` to the `SfDatePicker.Value` property by moving the focus from `SfDateSelector` to anywhere, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. By default, the selected date of `SfDateSelector` can be sets to the `SfDatePicker.Value` property only by clicking the `OK` button, otherwise the selected value not updated by the move focus.
 
 {% tabs %}
 {% highlight xaml %}
