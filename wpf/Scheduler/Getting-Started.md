@@ -93,6 +93,8 @@ Schedule.ViewType =SchedulerViewType.Month;
 {% endhighlight %}   
 {% endtabs %}   
 
+![WPF scheduler Month view](GettingStarted_images/month-view.png)
+
 ## Appointments
 `SfScheduler` has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. You need to allocate the collection generated to `Appointments` property.
 
@@ -121,7 +123,7 @@ Schedule.ItemsSource = appointmentCollection;
 {% endtabs %} 
 
 You can download the entire source code of this demo for WPF from
-here [SchedulerGettingStarted](https://github.com/SyncfusionExamples/scheduler_getting_started_demo)
+here [SchedulerGettingStarted](https://github.com/SyncfusionExamples/wpf-scheduler-getting-started-demo)
 
 ### Events/Appointments data mapping
 
@@ -458,7 +460,7 @@ Create meetings of type `ObservableCollection<Events>` and assign those appointm
 {% endtabs %}
 
 You can download the entire source code of creating CustomAppointment for WPF from
-here [SchedulerDataBindingDemo](https://github.com/SyncfusionExamples/scheduler-data-binding-demo)
+here [SchedulerDataBindingDemo](https://github.com/SyncfusionExamples/wpf-scheduler-data-binding-demo)
 
 ## Change first day of week
 
@@ -473,3 +475,5 @@ SfScheduler control will be rendered with `Sunday` as the first day of the week,
 Schedule.FirstDayOfWeek = DayOfWeek.Thursday;   
 {% endhighlight %}  
 {% endtabs %}   
+
+![WPF scheduler FirstDayOfWeek](GettingStarted_images/change-first-day.png)
