@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Month view
+# Month view Of WPF SfSchedule
 Scheduler used to display entire dates of the specific month, current month will be displayed by default initially. `Month` view displays the month of dates similar to calendar and displays appointments for each day in a cell similar to outlook. 
 
 ## Change header date format

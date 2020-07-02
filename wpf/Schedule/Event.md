@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Event| SfSchedule | Wpf | Syncfusion
-description: event
+description: This section explain about how to use and handle event of Syncfusion WPF Scheduler control and more details. 
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Event
+# Event of WPF SfSchedule
 
 Event can be used for various operation such as Appointment Editor Opening and Closed or while opening or closing the Context Menu and events ItemsSourceChanged, ScheduleTapped, ScheduleDoubleTapped are used for customization purposes.
 

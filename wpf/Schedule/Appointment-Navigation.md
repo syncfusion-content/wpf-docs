@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appointment Navigation| SfSchedule | Wpf | Syncfusion
-description: appointment navigation
+description: This section explain about appointment navigation of Syncfusion WPF Scheduler control and more details. 
 platform: wpf
 control: SfSchedule
 documentation: ug
@@ -39,7 +39,7 @@ this.grid.Children.Add(schedule);
 {% endhighlight  %}
 {% endtabs %}
 
-![](Appointment-Navigation_images/Appointment-Navigation_img1.png)
+![AppointmentNavigation](Appointment-Navigation_images/Appointment-Navigation_img1.png)
 
 
 
@@ -64,7 +64,7 @@ Previous appointment navigation button can be customized by PreviousNavigationBu
 
 {% endhighlight  %}
 
-![](Appointment-Navigation_images/Appointment-Navigation_img2.png)
+![AppointmentNavigationImage2](Appointment-Navigation_images/Appointment-Navigation_img2.png)
 
 
 
@@ -89,7 +89,7 @@ By using the NextNavigationButtonTemplate property the next appointment navigati
 
 
 
-![](Appointment-Navigation_images/Appointment-Navigation_img3.png)
+![AppointmentNavigationImage3](Appointment-Navigation_images/Appointment-Navigation_img3.png)
 
 
 

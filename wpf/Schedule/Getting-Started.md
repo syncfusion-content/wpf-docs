@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started of WPF SfSchedule control
 This section gives you an overview of how to work with [SfSchedule](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSchedule.WPF~Syncfusion.UI.Xaml.Schedule.SfSchedule.html) and also includes a walk-through to configure real-time `SfSchedule` command.
 
 ## Assembly deployment

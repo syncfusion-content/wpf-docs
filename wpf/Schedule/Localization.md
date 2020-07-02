@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Localization
+# Localization of WPF SfSchedule
 
 Localization is the process of customizing the user interface based on a culture specific to a particular country or region in order to display regional data. The culture is represented by a unique string, for example, ―en-US‖ for U.S. English and ―fr‖ for French (common).
 

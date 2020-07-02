@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Import and Export| SfSchedule | Wpf | Syncfusion
-description: import and export
+description: This section explains how to import and export of Syncfusion WPF Scheduler control and more details. 
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Import and Export
+# Import and Export of WPF SfSchedule
 
 The schedule control allows users to export or import appointments and events as an .ics files. Appointments and events scheduled with the control can be exported as an .ics file and opened or imported in other schedulers such as Microsoft Outlook, Google Calendar, or any other scheduler supporting .ics files. 
 
@@ -31,7 +31,7 @@ The exported .ics file will be saved in specified location. These exported files
 
 
 
-![](Import-and-Export_images/Import-and-Export_img1.png)
+![ImportandExportimg1](Import-and-Export_images/Import-and-Export_img1.png)
 
 
 
@@ -53,7 +53,7 @@ If the imported calendar has already been given a name, it can be imported into 
 
 
 
-![](Import-and-Export_images/Import-and-Export_img2.png)
+![ImportandExportimg2](Import-and-Export_images/Import-and-Export_img2.png)
 
 
 
