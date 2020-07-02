@@ -211,35 +211,6 @@ timeSpanEdit.Value = new TimeSpan(5, 2, 25, 52);
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-timespanedit-control-examples/tree/master/Samples/TimeSpanEdit-Features) in GitHub
 
-## Move focus to next or previous control
-
-If you want to move the focus from `TimeSpanEdit` to next or previous control in an application, then press the `Tab` or `Shift + Tab` key.
-
-<table> 
-<tr>
-<th> S.No </th>
-<th> Key </th>
-<th> Description</th>
-<th> Image</th>
-</tr>
-<tr>
-<td>1</td>
-<td>Tab</td>
-<td>Move focus to next control.</td>
-<td>
-<img src="Getting-Started_images/Tab.gif" alt="Move focus to next control when press tab key"/>
-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Shift + Tab</td>
-<td>Move focus to previous control.</td>
-<td>
-<img src="Getting-Started_images/ShiftTab.gif" alt="Move focus to previous control when press shift + tab key"/>
-</td>
-</tr>
-</table>
-
 ## Localization support
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the `TimeSpanEdit` control by adding resource file for each language.

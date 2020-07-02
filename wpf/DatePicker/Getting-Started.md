@@ -217,32 +217,3 @@ sfDatePicker.SetValueOnLostFocus = true;
 ![SfDatePicker value updated on when SfDateSelector lost its focus](Features_images/Features_img15.gif)
 
 Click [here](https://github.com/SyncfusionExamples/wpf-date-picker-examples/tree/master/Samples/Value-setting) to download the sample that showcases the value setting support in the `SfDatePicker`.
-
-## Move focus to next or previous control
-
-If you want to move the focus from `SfDatePicker` to next or previous control in an application, then press the `Tab` or `Shift + Tab` key.
-
-<table> 
-<tr>
-<th> S.No </th>
-<th> Key </th>
-<th> Description</th>
-<th> Image</th>
-</tr>
-<tr>
-<td>1</td>
-<td>Tab</td>
-<td>Move focus to next control.</td>
-<td>
-<img src="GettingStarted_images/Tab.gif" alt="Move focus to next control when press tab key"/>
-</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Shift + Tab</td>
-<td>Move focus to previous control.</td>
-<td>
-<img src="GettingStarted_images/ShiftTab.gif" alt="Move focus to previous control when press shift + tab key"/>
-</td>
-</tr>
-</table>
