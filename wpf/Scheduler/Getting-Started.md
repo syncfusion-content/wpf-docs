@@ -92,8 +92,6 @@ namespace GettingStarted
 Schedule.ViewType =SchedulerViewType.Month;
 {% endhighlight %}   
 {% endtabs %}   
-    
-![Month View](GettingStarted_images/Month.png)
 
 ## Appointments
 `SfScheduler` has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. You need to allocate the collection generated to `Appointments` property.
@@ -475,5 +473,3 @@ SfScheduler control will be rendered with `Sunday` as the first day of the week,
 Schedule.FirstDayOfWeek = DayOfWeek.Thursday;   
 {% endhighlight %}  
 {% endtabs %}   
-    
-![First Day of week](GettingStarted_images/DayOfWeek.png) 

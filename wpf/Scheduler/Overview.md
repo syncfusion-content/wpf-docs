@@ -10,8 +10,6 @@ documentation: ug
 
 The WPF SfScheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar.
 
-![SfScheduler in WPF](GettingStarted_images/gettingstarted.png)
-
 
 ## Key features
 
