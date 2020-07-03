@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-# Appearance
+# Appearance of WPF AutoComplete
 
 The Appearance of the AutoComplete control can be changed using the VisualStyle property. The following styles are supported by AutoComplete control.
 
