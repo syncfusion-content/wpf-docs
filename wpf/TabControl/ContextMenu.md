@@ -231,14 +231,16 @@ tabControlExt.ShowTabListContextMenu = true;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
-### Show only enabled, disabled or hidden tab items on tab list context menu
+### Show hidden tab items in tab list context menu
 
-By default, all the tab items except hidden items are listed in the tab list context menu. If you wants to show only the hidden tab items into tab list context menu to navigate, use the [TabListContextMenuOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabListContextMenuOptions.html) property value as `ShowHiddenItems`. If you wants to show only the enabled tab items into tab list context menu to navigate, use the `TabListContextMenuOptions` property value as `ShowEnabledItems`. If you wants to show only the disabled tab items into tab list context menu to navigate, use the `TabListContextMenuOptions` property value as `ShowDisabledItems`. The default value of `TabListContextMenuOptions` property is `Default`.
+By default, all the tab items except hidden items are listed in the tab list context menu. If you wants to show the hidden tab items into tab list context menu to navigate, use the [TabListContextMenuOptions](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TabControlExt~TabListContextMenuOptions.html) property value as `Default, ShowHiddenItems`. 
+
+You can set the multiple options for the `TabListContextMenuOptions` to show different types of tab items into the context menu. The default value of `TabListContextMenuOptions` property is `Default`.
 
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:TabControlExt TabListContextMenuOptions="ShowHiddenItems"
+<syncfusion:TabControlExt TabListContextMenuOptions="Default, ShowHiddenItems"
                           ShowTabListContextMenu="True"
                           Name="tabControlExt">
     <syncfusion:TabItemExt Header="tabItem1" Visibility="Collapsed"/>
@@ -253,14 +255,74 @@ By default, all the tab items except hidden items are listed in the tab list con
 {% highlight C# %}
 
 tabControlExt.ShowTabListContextMenu = true;
-tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.ShowHiddenItems;
+tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.Default | 
+                                          TabListContextMenuOptions.ShowHiddenItems;
 
 {% endhighlight %}
 {% endtabs %}
 
-![TabControl show only enabled, disabled or hidden tab items on tab list context menu](Tab-Item-Header_images/ShowHiddenTabListContextMenu.png)
+![TabControl shows hidden tab items in tab list context menu](Tab-Item-Header_images/HiddenItems.png)
+
+### Show specific type tab items in tab list context menu
+
+If you want to show the specific type tab items in tab list context menu, set the single option to the `TabListContextMenuOptions` property. If you wants to show only the hidden tab items into tab list context menu to navigate, use the `TabListContextMenuOptions` property value as `ShowHiddenItems`. If you wants to show only the enabled tab items into tab list context menu to navigate, use the `TabListContextMenuOptions` property value as `ShowEnabledItems`. If you wants to show only the disabled tab items into tab list context menu to navigate, use the `TabListContextMenuOptions` property value as `ShowDisabledItems`.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabListContextMenuOptions="ShowEnabledItems"
+                          ShowTabListContextMenu="True"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" Visibility="Collapsed"/>
+    <syncfusion:TabItemExt Header="tabItem2"/>
+    <syncfusion:TabItemExt Header="tabItem3" Visibility="Collapsed"/>
+    <syncfusion:TabItemExt Header="tabItem4" IsEnabled="False"/>
+    <syncfusion:TabItemExt Header="tabItem5"/>
+    <syncfusion:TabItemExt Header="tabItem6" Visibility="Collapsed"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.ShowTabListContextMenu = true;
+tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.ShowEnabledItems;
+
+{% endhighlight %}
+{% endtabs %}
+
+![TabControl show only enabled, disabled or hidden tab items on tab list context menu](Tab-Item-Header_images/SingleOption.png)
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabListContextMenuOptions) in GitHub
+
+### Show multi-type tab items in tab list context menu
+
+If you want to show the multiple type of tab items like enabled, disabled or hidden tab items together in tab list context menu, set the multiple options for the `TabListContextMenuOptions` property.
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:TabControlExt TabListContextMenuOptions="ShowEnabledItems, ShowDisabledItems"
+                          ShowTabListContextMenu="True"
+                          Name="tabControlExt">
+    <syncfusion:TabItemExt Header="tabItem1" Visibility="Collapsed"/>
+    <syncfusion:TabItemExt Header="tabItem2"/>
+    <syncfusion:TabItemExt Header="tabItem3" Visibility="Collapsed"/>
+    <syncfusion:TabItemExt Header="tabItem4" IsEnabled="False"/>
+    <syncfusion:TabItemExt Header="tabItem5"/>
+    <syncfusion:TabItemExt Header="tabItem6" Visibility="Collapsed"/>
+</syncfusion:TabControlExt>
+
+{% endhighlight %}
+{% highlight C# %}
+
+tabControlExt.ShowTabListContextMenu = true;
+tabControlExt.TabListContextMenuOptions = TabListContextMenuOptions.ShowEnabledItems | 
+                                          TabListContextMenuOptions.ShowDisabledItems
+
+{% endhighlight %}
+{% endtabs %}
+
+![TabControl multiple type of tab items on tab list context menu](Tab-Item-Header_images/MultiOption.png)
 
 ### Custom template for the tab list context menu
 

@@ -194,9 +194,9 @@ tabControlExt.TabItemLayout = TabItemLayoutType.MultiLineStar;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/TabControlLayout) in GitHub
 
-## Restrict shrunk or enlarge the tabs
+## Restrict size of a TabItem
 
-You restrict the user to shrunk or enlarging any tab item with certain range on any `TabItemLayout` modes by using the `TabItemExt.MinWidth` and `TabItemExt.MaxWidth` properties.
+ By default, size of the tab item is based on its content. When content size changes, tab item size also changes. You can restrict it for any `TabItemLayout` modes by using the`TabItemExt.Width`, `TabItemExt.MinWidth` and `TabItemExt.MaxWidth` properties. You can resize the tab item only within the `TabItemExt.MinWidth` and `TabItemExt.MaxWidth` values.
 
 {% tabs %}
 {% highlight XAML %}
