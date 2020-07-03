@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | AutoComplete | wpf | Syncfusion
-description: appearance
+title: Appearance of WPF AutoComplete | Syncfusion
+description: Learn here about how to set the different style of theme to the Syncfusion WPF AutoComplete control.
 platform: wpf
 control: AutoComplete
 documentation: ug
@@ -39,57 +39,94 @@ SkinStorage.SetVisualStyle(autoComplete, "Office2007Blue");
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.png)
+![Set Windows theme to WPF AutoComplete](Appearance_images/Appearance_img1.png)
 
 Windows7
 {:.caption}
 
-![](Appearance_images/Appearance_img2.png)
+![Set Blend theme to WPF AutoComplete](Appearance_images/Appearance_img2.png)
 
 Blend
 {:.caption}
 
-![](Appearance_images/Appearance_img3.png)
+![Set Office2007Blue theme to WPF AutoComplete](Appearance_images/Appearance_img3.png)
 
 Office2007Blue
 {:.caption}
 
-![](Appearance_images/Appearance_img4.png)
+![Set Office2007Black theme to WPF AutoComplete](Appearance_images/Appearance_img4.png)
 
 Office2007Black
 {:.caption}
 
-![](Appearance_images/Appearance_img5.png)
+![Set Office2007Silver theme to WPF AutoComplete](Appearance_images/Appearance_img5.png)
 
 Office2007Silver
 {:.caption}
 
-![](Appearance_images/Appearance_img6.png)
+![Set Office2003 theme to WPF AutoComplete](Appearance_images/Appearance_img6.png)
 
 Office2003
 {:.caption}
 
-![](Appearance_images/Appearance_img7.png)
+![Set ShinyRed theme to WPF AutoComplete](Appearance_images/Appearance_img7.png)
 
 ShinyRed
 {:.caption}
 
-![](Appearance_images/Appearance_img8.png)
+![Set ShinyBlue theme to WPF AutoComplete](Appearance_images/Appearance_img8.png)
 
 ShinyBlue
 {:.caption}
 
-![](Appearance_images/Appearance_img9.png)
+![Set SyncOrange theme to WPF AutoComplete](Appearance_images/Appearance_img9.png)
 
 SyncOrange
 {:.caption}
 
-![](Appearance_images/Appearance_img10.png)
+![Set Metro theme to WPF AutoComplete](Appearance_images/Appearance_img10.png)
 
 Metro
 {:.caption}
 
-![](Appearance_images/Appearance_img11.png)
+![Set the Transparent theme to AutoComplete](Appearance_images/Appearance_img11.png)
 
 Transparent
 {:.caption}
+
+## Show the shadow effect
+
+You can show the shadow effect of AutoComplete by using [DropShadowEffect](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.effects.dropshadoweffect?view=netcore-3.1). You can also set the shadow distance by using [ShadowDepth](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.effects.dropshadoweffect.shadowdepthproperty?view=netcore-3.1) property.
+
+Refer the below code for your reference.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:AutoComplete Height="30" Width="150" Text="AutoComplete">
+    <syncfusion:AutoComplete.Effect>
+        <DropShadowEffect ShadowDepth="10" Color="LightGray" Opacity="2" />
+    </syncfusion:AutoComplete.Effect>
+</syncfusion:AutoComplete>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+AutoComplete autoComplete = new AutoComplete();
+autoComplete.Height = 30;
+autoComplete.Width = 150;
+autoComplete.Text = "AutoComplete";
+DropShadowEffect shadowEffect = new DropShadowEffect();
+shadowEffect.ShadowDepth = 10;
+shadowEffect.Color = Colors.LightGray;
+shadowEffect.Opacity = 2;
+autoComplete.Effect = shadowEffect;
+grid.Children.Add(autoComplete);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Show the shadow effects of WPF AutoComplete](Appearance_images/wpf-autocomplete-shadow.png)
