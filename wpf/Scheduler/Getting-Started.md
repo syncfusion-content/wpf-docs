@@ -236,31 +236,25 @@ By setting `From` and `To` of `Meeting` class, you can schedule meetings for a s
 
 {% tabs %}   
 {% highlight c# %} 
-public class ScheduleViewModel
+   public class ScheduleViewModel
     {
-        private List<string> teamManagement;
         private List<string> currentDayMeetings;
         private List<string> minTimeMeetings;
         private List<Brush> colorCollection;
-        private List<DateTime> startTimeCollection;
-        private List<DateTime> endTimeCollection;
-        private List<int> randomNums = new List<int>();
+
         public ScheduleViewModel()
         {
             this.Events = new ObservableCollection<Meeting>();
-            this.CreateRandomNumbersCollection();
-            this.CreateStartTimeCollection();
-            this.CreateEndTimeCollection();
-            this.CreateSubjectCollection();
-            this.CreateColorCollection();
             this.InitializeDataForBookings();
             this.IntializeAppoitments();
         }
+
         public ObservableCollection<Meeting> Events
         {
             get;
             set;
         }
+
         private List<Point> GettingTimeRanges()
         {
             List<Point> randomTimeCollection = new List<Point>();
@@ -270,6 +264,7 @@ public class ScheduleViewModel
 
             return randomTimeCollection;
         }
+
         private void InitializeDataForBookings()
         {
             this.currentDayMeetings = new List<string>();
@@ -277,13 +272,15 @@ public class ScheduleViewModel
             this.currentDayMeetings.Add("Plan Execution");
 
             this.minTimeMeetings = new List<string>();
-            this.minTimeMeetings.Add("Work log alert");
+            this.minTimeMeetings.Add("Client Metting");
             this.minTimeMeetings.Add("Birthday wish alert");
 
             this.colorCollection = new List<Brush>();
             this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF339933")));
             this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00ABA9")));
             this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFE671B8")));
+            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1BA1E2")));
+            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFD80073")));
         }
         private void IntializeAppoitments()
         {
@@ -308,7 +305,7 @@ public class ScheduleViewModel
                         int hour = randomTime.Next((int)randomTimeCollection[additionalAppointmentIndex].X, (int)randomTimeCollection[additionalAppointmentIndex].Y);
                         meeting.From = new DateTime(date.Year, date.Month, date.Day, hour, 0, 0);
                         meeting.To = meeting.From.AddHours(1);
-                        meeting.EventName = this.currentDayMeetings[randomTime.Next(1)];
+                        meeting.EventName = this.currentDayMeetings[randomTime.Next(2)];
                         meeting.Color = this.colorCollection[randomTime.Next(2)];
                         meeting.IsAllDay = false;
                         meeting.StartTimeZone = string.Empty;
@@ -321,7 +318,7 @@ public class ScheduleViewModel
                     Meeting meeting = new Meeting();
                     meeting.From = new DateTime(date.Year, date.Month, date.Day, randomTime.Next(9, 11), 0, 0);
                     meeting.To = meeting.From.AddDays(2).AddHours(1);
-                    meeting.EventName = this.currentDayMeetings[randomTime.Next(1)];
+                    meeting.EventName = this.currentDayMeetings[randomTime.Next(2)];
                     meeting.Color = this.colorCollection[randomTime.Next(2)];
                     meeting.IsAllDay = true;
                     meeting.StartTimeZone = string.Empty;
@@ -346,66 +343,9 @@ public class ScheduleViewModel
                 this.Events.Add(meeting);
             }
         }
-        private void CreateSubjectCollection()
-        {
-            this.teamManagement = new List<string>();
-            this.teamManagement.Add("General Meeting");
-            this.teamManagement.Add("Plan Execution");
-            this.teamManagement.Add("Project Plan");
-            this.teamManagement.Add("Consulting");
-        }
-        private void CreateColorCollection()
-        {
-            this.colorCollection = new List<Brush>();
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFA2C139")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFD80073")));
-            this.colorCollection.Add(new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF1BA1E2")));
-        }
-        private void CreateRandomNumbersCollection()
-        {
-            this.randomNums = new List<int>();
-
-            Random rand = new Random();
-
-            for (int i = 0; i < 10; i++)
-            {
-                int random = rand.Next(9, 15);
-                this.randomNums.Add(random);
-            }
-        }
-        private void CreateStartTimeCollection()
-        {
-            this.startTimeCollection = new List<DateTime>();
-            DateTime currentDate = DateTime.Now;
-
-            int count = 0;
-            for (int i = -5; i < 5; i++)
-            {
-                DateTime startTime = new DateTime(currentDate.Year, currentDate.Month, currentDate.Day, this.randomNums[count], 0, 0);
-                DateTime startDateTime = startTime.AddDays(i);
-                this.startTimeCollection.Add(startDateTime);
-                count++;
-            }
-        }
-        private void CreateEndTimeCollection()
-        {
-            this.endTimeCollection = new List<DateTime>();
-            DateTime currentDate = DateTime.Now;
-            int count = 0;
-            for (int i = -5; i < 5; i++)
-            {
-                DateTime endTime = new DateTime(currentDate.Year, currentDate.Month, currentDate.Day, this.randomNums[count] + 1, 0, 0);
-                DateTime endDateTime = endTime.AddDays(i);
-                if (i == -3 || i == 3)
-                {
-                    endDateTime = endTime.AddDays(i).AddHours(22);
-                }
-
-                this.endTimeCollection.Add(endDateTime);
-                count++;
-            }
-        }
     }
+}
+
 {% endhighlight %}
 {% endtabs %}   
 
@@ -437,6 +377,7 @@ You can map those properties of `Meeting` class with our `SfScheduler` control b
   appointmentMapping.AppointmentBackground = "color";
   appointmentMapping.StartTimeZone = "StartTimeZone";
   appointmentMapping.EndTimeZone = "EndTimeZone";
+  Schedule.AppointmentMapping = appointmentMapping;
 {% endhighlight %}
 {% endtabs %}
 
