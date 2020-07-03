@@ -46,7 +46,7 @@ grid1.Children.Add(SfBusyIndicator)
 {% endtabs %}
 
 
-![](Header_images/Header_img1.png)
+![Header](Header_images/Header_img1.png)
 
 Busy Indicator with header
 {:.caption}
@@ -74,7 +74,7 @@ Header template can be used to get or set the template that defines how the head
 
 {% endtabs %}
 
-![](Header_images/Header_img2.png)
+![Header_Template](Header_images/Header_img2.png)
 
 Busy Indicator with header template
 {:.caption}

@@ -50,7 +50,7 @@ Grid1.Children.Add(SfBusyIndicator)
 {% endtabs %}
 
 
-![](Sizing_images/Sizing_img1.png)
+![ViewboxHeight](Sizing_images/Sizing_img1.png)
 
 
 ## ViewBoxWidth
@@ -97,7 +97,7 @@ Grid1.Children.Add(SfBusyIndicator)
 {% endtabs %}
 
 
-![](Sizing_images/Sizing_img2.png)
+![ViewBoxWidth](Sizing_images/Sizing_img2.png)
 
 Busy Indicator with height and width
 {:.caption}

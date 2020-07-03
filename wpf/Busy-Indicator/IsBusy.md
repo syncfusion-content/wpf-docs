@@ -33,7 +33,7 @@ busyIndicator.IsBusy = true;
 
 {% endtabs %}
 
-![](IsBusy_images/IsBusy_img1.png)
+![IsBusy](IsBusy_images/IsBusy_img1.png)
 
 Busy Indicator
 {:.caption}
