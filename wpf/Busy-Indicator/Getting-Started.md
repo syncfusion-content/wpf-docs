@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | Busy Indicator | wpf | Syncfusion
-description: getting started
+description: This section describes how to initialize the Syncfusion SfBusyIndicator control in WPF platform.
 platform: wpf
 control: Busy Indicator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF Busy Indicator (SfBusyIndicator)
 
 Namespace: Syncfusion.Windows.Controls.Notification.
 

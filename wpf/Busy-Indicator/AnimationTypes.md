@@ -7,7 +7,7 @@ control: Busy Indicator
 documentation: ug
 ---
 
-# AnimationTypes
+# AnimationTypes in WPF Busy Indicator (SfBusyIndicator)
 
 The AnimationTypes property for the SfBusyIndicator allows the user to set one of the animations from the built-in animations as the busy indicator.
 
