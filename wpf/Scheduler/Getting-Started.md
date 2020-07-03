@@ -82,8 +82,6 @@ namespace GettingStarted
     
 `SfScheduler` control provides five different types of views to display dates and it can be assigned to the control by using `ViewType` property. By default the control is assigned with `MonthView`. Current date will be displayed initially for all the Schedule views.  
 
-### Month View     
-
 {% tabs %}   
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Month">
