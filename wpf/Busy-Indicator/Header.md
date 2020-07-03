@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Header | Busy Indicator | wpf | Syncfusion
 description: header
@@ -78,3 +78,6 @@ Header template can be used to get or set the template that defines how the head
 
 Busy Indicator with header template
 {:.caption}
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Header) in GitHub

@@ -101,3 +101,8 @@ Grid1.Children.Add(SfBusyIndicator)
 
 Busy Indicator with height and width
 {:.caption}
+
+
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Sizing) in GitHub

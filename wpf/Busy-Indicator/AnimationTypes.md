@@ -223,3 +223,7 @@ Busy Indicator with Ripple type animation
 
 Busy Indicator with Message type animation
 {:.caption}
+
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/AnimationType) in GitHub

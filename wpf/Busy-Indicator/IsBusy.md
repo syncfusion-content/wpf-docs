@@ -37,3 +37,6 @@ busyIndicator.IsBusy = true;
 
 Busy Indicator
 {:.caption}
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/IsBusy) in GitHub
