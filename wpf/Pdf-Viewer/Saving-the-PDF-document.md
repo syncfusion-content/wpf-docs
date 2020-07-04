@@ -9,55 +9,56 @@ documentation: ug
 
 # Saving the PDF document
 
-PDF Viewer also allows you to save the PDF document that is being displayed in the PDF Viewer. The following code example illustrates the same.
-
+PDF Viewer allows you to save the PDF document that is being displayed in the PDF Viewer. It helps you to keep the file up to date with any modifications and prevent your work from being lost. The [Save](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~Save.html) method of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) allows you to save the modified PDF file to a specific path in the local disk. Refer to the following code to achieve the same in a button click event from the application level.
 {% tabs %}
 {% highlight c# %}
+using System.Windows;
 
-//Initialize PDF Viewer.
+namespace PdfViewer
+{
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        #region Constructor
+        public MainWindow()
+        {
+            InitializeComponent();
+            //Load the PDF
+            pdfViewer.Load("Sample.pdf");
+        }
+        #endregion
 
-PdfViewerControl pdfViewer1 = new PdfViewerControl();
-
-
-
-//Load the PDF.
-
-pdfViewer1.Load("Sample.pdf");
-
-
-//Acquire the document loaded into the PDF Viewer
-
-PdfLoadedDocument lDoc = pdfviewer1.LoadedDocument;
-
-
-
-//Save the document
-
-lDoc.Save("Sample.pdf");
-
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            //Save the PDF file to a specific file path after doing any modifications, 
+            //by passing the file name as a parameter to `Save` method
+            pdfViewer.Save("Saved.pdf");
+        }
+    }
+}
 {% endhighlight %}
 
 {% highlight vbnet %}
+Imports System.Windows
 
-'Initialize PDF Viewer.
+Namespace PdfViewer
+    Public Partial Class MainWindow
+        Inherits Window
 
-Private pdfViewer1 As New PdfViewerControl()
+        Public Sub New()
+            InitializeComponent()
+            'Load the PDF
+            pdfViewer.Load("Sample.pdf")
+        End Sub
 
-
-
-'Load the PDF.
-
-pdfViewer1.Load("Sample.pdf")
-
-'Acquire the document loaded into the PDF Viewer
-
-Dim lDoc As PdfLoadedDocument = pdfviewer1.LoadedDocument
-
-
-
-'Save the document
-
-lDoc.Save("Sample.pdf")
-
+        Private Sub SaveButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            'Save the PDF file to a specific file path after doing any modifications, 
+            'by passing the file name as a parameter to the Save method
+            pdfViewer.Save("Saved.pdf")
+        End Sub
+    End Class
+End Namespace
 {% endhighlight %}
 {% endtabs %}
