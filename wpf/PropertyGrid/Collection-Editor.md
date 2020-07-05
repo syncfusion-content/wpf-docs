@@ -9,7 +9,7 @@ documentation: ug
 
 # Collection Editor in WPF PropertyGrid
 
-You can add, remove or edit the collection type property item by using the `Collection Editor` in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid.html).
+You can edit (add, remove) a collection type of property such as List, ObservableCollection using the `Collection Editor` in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid.html).
 
 ## How to add or remove items in collection using collection editor
 
@@ -17,9 +17,9 @@ You can add or remove the new items into the collection type properties by click
 
 ![PropertyGrid collection Editor with collection as selected object](CollectionEditor_Images/CollectionEditor_Structure.png)
 
-N> Collection type property must be derived from the `IList` type to add or remove the items in collection property of `SelectedObject`. The `IList` type collection property element must contains the parameterless constructor to update the items in the collection, otherwise you can only remove the items in the collection property.
+N> Collection type property must be derived from the `IList` type to edit the collection properties in  the `SelectedObject`. The `IList` collection property must contain the non-parameter constructor to edit the items in the collection, otherwise only the items in the collection property can be removed.
 
-N> You cannot able to editing and modifying the collection for primitives types and string (List<int>, List<string>). 
+N> You will not be able to edit a collection of primitive type, such as `List<int>` and `List<string>`. 
 
 
 ## Collection Editor for selected collection object

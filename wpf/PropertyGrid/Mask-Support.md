@@ -9,18 +9,109 @@ documentation: ug
 
 # Restrict user input in WPF PropertyGrid
 
-You can now restrict the user input for the property items by using the attributes and mask editor in the [PropertyGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid.html).
+ You can restrict the user from providing invalid input using MaskAttribute, for example emails, phone numbers, zip codes, currency, etc.
 
-N> Add the following assembly references to use the mask attribute and mask editor
+# Restrict user input using built-in editor
 
-* Syncfusion.SfInput.WPF
-* Syncfusion.SfShared.WPF
+ The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties and its allow the valid inputs based on property type.
+
+<table>
+<th> S.No </th>
+<th> Property Type </th>
+<th> Default Editor </th>
+<tr>
+<td>1</td>
+<td>int</td>
+<td>IntegerTextBox</td>
+</tr>
+<tr>
+<td>2</td>
+<td>double</td>
+<td>DoubleTextBox</td>
+</tr>
+<tr>
+<td>3</td>
+<td>string</td>
+<td>TextBox</td>
+</tr>
+<tr>
+<td>4</td>
+<td>enum</td>
+<td>ComboBox</td>
+</tr>
+<tr>
+<td>5</td>
+<td>DateTime</td>
+<td>DateTimeEdit</td>
+</tr>
+<tr>
+<td>6</td>
+<td>bool</td>
+<td>CheckBox</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Brush</td>
+<td>ColorPicker</td>
+</tr>
+</table>
+
+{% tabs %}
+{% highlight C# %}
+
+// Employee class to be explored in property grid.
+public class Employee {
+    public string EmployeeName { get; set; }
+    public string ID { get; set; }
+    public int Age { get; set; }
+    public int Experiance { get; set; }
+}
+
+public class ViewModel {
+    public object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee() 
+        {
+            EmployeeName = "Johnson",
+            Age = 25,
+            ID = "1234",
+            Experiance =3
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid SelectedObject="{Binding SelectedEmployee}"
+                         Name="propertyGrid1" >
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+
+{% endhighlight %}
+{% endtabs %}
+
+![Restrict user input using built-in editor in the PropertyGrid control](Getting-Started_images/Binding-with-any-object_img1.png)
+
+ Here, `Age`, `Experiance` and `ID` properties is a `int` type properties, they allow only the whole number inputs. `EmployeeName` is a string type property, so `TextBox` is assigned as a value editor and all the text will be allowed.
 
 ## Restrict user input using attributes
 
 You can restrict the user to enter particular character or value for the one or more specific property item by setting the `Regex` based mask to the `MaskAttribute` property.
 
-N> You must create the property as either `Object` or `string` type to use mask attribute.
+N> You can apply mask attribute to property of type Object or string only.
 
 {% tabs %}
 {% highlight C# %}

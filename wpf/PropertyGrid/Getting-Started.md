@@ -36,6 +36,8 @@ To add the `PropertyGrid` control manually in XAML, follow these steps:
 
 2. Add the  following assembly references to the project,
    * Syncfusion.PropertyGrid.Wpf
+   * Syncfusion.SfInput.WPF
+   * Syncfusion.SfShared.WPF
    * Syncfusion.Shared.WPF
    * Syncfusion.Tools.Wpf
  
