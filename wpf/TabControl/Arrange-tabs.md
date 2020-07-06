@@ -308,9 +308,9 @@ tabControlExt.ShowTabListContextMenu = true;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-tabcontrolext-examples/tree/master/Samples/ContextMenu) in GitHub
 
-## Navigate to the hidden items using mouse scroll
+## Scroll items using mouse wheel
 
-If you want to navigate to the hidden tabs on the `TabItemLayout.SingleLine` layout mode, hover the mouse on tab header and scroll the mouse to backward or forward direction.
+You can scroll the tab items in `TabItemLayout.SingleLine` layout mode, by mouse over tab header and scroll the mouse backward or forward direction.
 
 ![Navigate to the hidden items using mouse scroll](Tab-Item-Header_images/Scroll.png)
 
