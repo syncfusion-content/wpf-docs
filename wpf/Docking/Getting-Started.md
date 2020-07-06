@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Getting Started with Syncfusion DockingManager control for WPF
-description: A quick tour to initial users on Syncfusion DockingManager control for WPF
+description: This section explains how to implements a similar UI as Visual Studio by using the WPF DockingManager control. 
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
-# Getting Started
+# Getting Started with WPF DockingManager
 
 This section explains how to implement a similar UI as Visual Studio by using the DockingManager. 
 

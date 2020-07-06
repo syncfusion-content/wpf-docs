@@ -13,7 +13,7 @@ We can change the value of [SfDatePicker](https://help.syncfusion.com/cr/wpf/Syn
 
 ## Setting Date using property
 
-We can set or change the selected date by using [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~DateTime.html) property. If we not assign any value for the `DateTime` property, it will automatically assign the current system date as `DateTime` property value.
+We can set or change the selected date by using [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property. If we not assign any value for the `Value` property, it will automatically assign the current system date as `Value` property value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -34,13 +34,13 @@ sfDatePicker.Value = new DateTime(2021,5,30);
 
 ## Setting Null Value
 
-If we want to set null value for the `SfDatePicker`, set the [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AllowNull.html) property as `true` and [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~DateTime.html) property as `null`. If `AllowNull` property is `false`, then the current system date is updated in  `DateTime` property and displayed instead of `null`. 
+If we want to set null value for the `SfDatePicker`, set the [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AllowNull.html) property as `true` and [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property as `null`. If `AllowNull` property is `false`, then the current system date is updated in  `Value` property and displayed instead of `null`. 
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfDatePicker  AllowNull="True" 
-                          DateTime="{x:Null}"
+                          Value="{x:Null}"
                           Name="sfDatePicker" />
 
 {% endhighlight %}
@@ -48,7 +48,7 @@ If we want to set null value for the `SfDatePicker`, set the [AllowNull](https:/
 
 SfDatePicker sfDatePicker= new SfDatePicker();
 sfDatePicker.AllowNull = true;
-sfDatePicker.DateTime = null;
+sfDatePicker.Value = null;
 
 {% endhighlight %}
 {% endtabs %}
@@ -57,14 +57,14 @@ sfDatePicker.DateTime = null;
 
 ## Setting WaterMark text
 
-We can prompt the user with some information by using the [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Watermark.html) property. This will apply on when the `SfDatePicker` contains the [DateTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~DateTime.html) property as `null` and [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AllowNull.html) property as `true` . If `AllowNull` property is `false`, then the current system date is updated in  `DateTime` property and displayed instead of `Watermark` text. 
+We can prompt the user with some information by using the [Watermark](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Watermark.html) property. This will apply on when the `SfDatePicker` contains the [Value](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~Value.html) property as `null` and [AllowNull](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~AllowNull.html) property as `true` . If `AllowNull` property is `false`, then the current system date is updated in  `Value` property and displayed instead of `Watermark` text. 
 
 {% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfDatePicker Watermark="Select the Date"
                          AllowNull="True"  
-                         DateTime="{x:Null}"
+                         Value="{x:Null}"
                          Name="sfDatePicker" >
 </syncfusion:SfDatePicker>
 
@@ -74,7 +74,7 @@ We can prompt the user with some information by using the [Watermark](https://he
 SfDatePicker sfDatePicker = new SfDatePicker();
 sfDatePicker.Watermark = "Select the Date";
 sfDatePicker.AllowNull = true;
-sfDatePicker.DateTime = null;
+sfDatePicker.Value = null;
 
 {% endhighlight %}
 {% endtabs %}
@@ -90,7 +90,7 @@ We can change the template of the `Watermark` by using the [WatermarkTemplate](h
 
 <syncfusion:SfDatePicker Name="sfDatePicker" 
                          AllowNull="True" 
-                         DateTime="{x:Null}" 
+                         Value="{x:Null}" 
                          Watermark="Select the Date" >
     <syncfusion:SfDatePicker.WatermarkTemplate >
         <DataTemplate>
@@ -111,7 +111,7 @@ We can change the template of the `Watermark` by using the [WatermarkTemplate](h
 
 ## Set selected value on lost focus
 
-If we want to update the selected date of `SfDateSelector` to the `SfDatePicker.DateTime` property by moving the focus from `SfDateSelector` to anywhere, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. By default, the selected date of `SfDateSelector` can be sets to the `SfDatePicker.DateTime` property only by clicking the `OK` button, otherwise the selected value not updated by the move focus.
+If we want to update the selected date of `SfDateSelector` to the `SfDatePicker.Value` property by moving the focus from `SfDateSelector` to anywhere, use the [SetValueOnLostFocus](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~SetValueOnLostFocus.html) property value as `true`. By default, the selected date of `SfDateSelector` can be sets to the `SfDatePicker.Value` property only by clicking the `OK` button, otherwise the selected value not updated by the move focus.
 
 {% tabs %}
 {% highlight xaml %}
@@ -180,7 +180,7 @@ sfDatePicker.InputScope = InputScopeNameValue.Date;
 
 ## Restrict selecting date limit
 
-we can restrict the user to select a date in the specific date limit by setting the value for the [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~MaxDate.html) properties. If we assign the value for the `DateTime` property lower than `MinDate`, then `MinDate` will be the selected date. If we assign the value for the `DateTime` property higher than `MaxDate`, then `MaxDate` will be the selected date.
+we can restrict the user to select a date in the specific date limit by setting the value for the [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfDatePicker~MaxDate.html) properties. If we assign the value for the `Value` property lower than `MinDate`, then `MinDate` will be the selected date. If we assign the value for the `Value` property higher than `MaxDate`, then `MaxDate` will be the selected date.
 
 {% tabs %}
 {% highlight xaml %}
