@@ -1,19 +1,15 @@
 ---
 layout: post
-title: Restrict user input in WPF PropertyGrid control | Syncfusion
-description: This section explains how the Restrict user input of the property item has been customized through attributes and editors.
+title: Built-in editor support in WPF PropertyGrid control | Syncfusion
+description: Learn about Built-in editor for the Properties of selected object in Syncfusion WPF PropertyGrid control and more details.
 platform: wpf
 control: PropertyGrid 
 documentation: ug
 ---
 
-# Restrict user input in WPF PropertyGrid
+# Built-in editor in WPF PropertyGrid
 
- You can restrict the user from providing invalid input using MaskAttribute, for example emails, phone numbers, zip codes, currency, etc.
-
-## Restrict user input using built-in editor
-
- The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties and its allow the valid inputs based on property type.
+ The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties and it allows only the valid inputs based on property type.
 
 <table>
 <th> S.No </th>
@@ -107,9 +103,9 @@ propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("Selec
 
  Here, `Age`, `Experience` and `ID` properties is a `int` type properties, they allow only the whole number inputs. `EmployeeName` is a string type property, so `TextBox` is assigned as a value editor and all the text will be allowed.
 
-## Restrict user input using attributes
+## Built-in mask attribute to restrict user input 
 
-You can restrict the user to enter particular character or value for the one or more specific property item by setting the `Regex` based mask to the `MaskAttribute` property.
+You can restrict the user from providing invalid input for the one or more specific property by setting the `Regex` based mask to the `MaskAttribute`. For example emails, phone numbers, zip codes, currency, etc.
 
 N> You can apply mask attribute to property of type `Object` or `string` only.
 
@@ -163,7 +159,7 @@ Here, the partial and wrong inputs are highlighted by the red color border.
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Mask_Attributes) in GitHub
 
-## Restrict user input using custom mask editor
+## MaskEditor to restrict user input 
 
 You can restrict the user to enter particular character or value for the one or more specific property item by using the `Regex` based mask to the custom editor's `Mask` property which is derived from the `MaskEditor`.
 
