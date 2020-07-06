@@ -21,8 +21,7 @@ N> Collection type property must be derived from the `IList` type to edit the co
 
 N> You will not be able to edit a collection of primitive type, such as `List<int>` and `List<string>`. 
 
-
-## Collection Editor for selected collection object
+## Edit a selected object, which is of type collection
 
 If you directly assign the collection instance as [SelectedObject](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~SelectedObject.html), it generates value editor for the each collection property items.
 
@@ -84,7 +83,7 @@ propertyGrid1.PropertyExpandMode = PropertyExpandModes.NestedMode;
 
 N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/DirectCollectionEditor) on GitHub
 
-## Collection Editor for selected object's collection property
+## Edit a selected object, which has a property of type collection.
 
 You can add, remove or edit the collection type property item by using the `Collection Editor`.
 
