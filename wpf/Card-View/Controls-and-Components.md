@@ -135,13 +135,13 @@ cardview.CanEdit = false;
 
 {% endhighlight  %}
 
-## Editing cardview items programmatically
+## Start card editing programmatically
 
 By default, editing mode can be started by double-clicking the `CardViewItem` or by pressing the `F2` key and can stop the editing to putting selected `CardViewItem` into view mode by clicking the `Esc` or `Enter` key. 
 
 You can use the [BeginEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~BeginEdit.html) and [EndEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.CardView~EndEdit.html) methods to make the selected item to editing mode and change the edit mode to view mode for the selected item. In the edit mode, `EditItemTemplate` is applied and in the view mode `ItemTemplate` is applied to the selected item.
 
-N> You must set the `CanEdit` property as `true` to enable the Editing and view mode programmatically.
+N> You must set the `CanEdit` property as `true` to perform `BeginEdit` or `EndEdit`.
 
 {% tabs %}
 {% highlight C# %}
