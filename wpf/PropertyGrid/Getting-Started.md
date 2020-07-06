@@ -36,6 +36,8 @@ To add the `PropertyGrid` control manually in XAML, follow these steps:
 
 2. Add the  following assembly references to the project,
    * Syncfusion.PropertyGrid.Wpf
+   * Syncfusion.SfInput.WPF
+   * Syncfusion.SfShared.WPF
    * Syncfusion.Shared.WPF
    * Syncfusion.Tools.Wpf
  
@@ -308,6 +310,67 @@ private void PropertyGrid_SelectedPropertyItemChanged(DependencyObject d, Depend
 {% endhighlight %}
 {% endtabs %}
 
+## Tooltip support
+
+You can get the value and description about the property item through tooltip when hover the mouse on the respective property item and its value field. If the property item not contains any description, tooltip shows the property display name. You can restrict the tooltip support by setting the [EnableToolTip](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~EnableToolTip.html) property as `false`. The default value of `EnableToolTip` property is `true`.
+
+{% tabs %}
+{% highlight C# %}
+
+using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+public class Employee {
+    [Description("Name of the employee")]
+    public string Name { get; set; }
+    public string ID { get; set; }
+    [Description("Birth date of the employee")]
+    public DateTime DOB { get; set; }
+}
+
+public class ViewModel {
+    public Object SelectedEmployee { get; set; }
+    public ViewModel() {
+        SelectedEmployee = new Employee()
+        {
+            Name = "John",
+            ID = "381",
+            DOB = new DateTime(1995, 12, 24)
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:PropertyGrid EnableToolTip="True"
+                         SelectedObject="{Binding SelectedEmployee}"
+                         x:Name="propertyGrid1">
+    <syncfusion:PropertyGrid.DataContext>
+        <local:ViewModel></local:ViewModel>
+    </syncfusion:PropertyGrid.DataContext>
+</syncfusion:PropertyGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+PropertyGrid propertyGrid1 = new PropertyGrid();
+propertyGrid1.EnableToolTip = true;
+propertyGrid1.DataContext = new ViewModel();
+propertyGrid1.SetBinding(PropertyGrid.SelectedObjectProperty, new Binding("SelectedEmployee"));
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![Tooltip show the property description](Getting-Started_images/EnableTooltip.gif)
+
+N> View [Sample](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Apperance) in GitHub
+
 ## Property item value changed notification
 
 The property item value changed in `PropertyGrid` can be examined using [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~ValueChanged_EV.html) event. The `ValueChanged` event contains the old and newly changed property values by the `OldValue` and `NewValue` properties and `Property` contains the property item whose values is changed.
@@ -347,4 +410,6 @@ private void PropertyGrid_ValueChanged(object sender, ValueChangedEventArgs args
 {% endtabs %}
 
 Click [here](https://github.com/SyncfusionExamples/wpf-property-grid-examples/tree/master/Samples/Common) to download the sample that showcases the `PropertyGrid` overall features.
+
+
 

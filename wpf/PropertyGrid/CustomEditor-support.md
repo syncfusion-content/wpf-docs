@@ -9,52 +9,9 @@ documentation: ug
 
 # Custom Editor in WPF PropertyGrid
 
-The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties.
+The [PropertyGrid](https://www.syncfusion.com/wpf-ui-controls/propertygrid) control supports several built-in editors. Based on the property type, the built-in editors automatically assigned as value editor for the properties. You can assign own value editor(control) for the properties instead of default value editor by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html).
 
-<table>
-<th> S.No </th>
-<th> Property Type </th>
-<th> Default Editor </th>
-<tr>
-<td>1</td>
-<td>int</td>
-<td>IntegerTextBox</td>
-</tr>
-<tr>
-<td>2</td>
-<td>double</td>
-<td>DoubleTextBox</td>
-</tr>
-<tr>
-<td>3</td>
-<td>string</td>
-<td>TextBox</td>
-</tr>
-<tr>
-<td>4</td>
-<td>enum</td>
-<td>ComboBox</td>
-</tr>
-<tr>
-<td>5</td>
-<td>DateTime</td>
-<td>DateTimeEdit</td>
-</tr>
-<tr>
-<td>6</td>
-<td>bool</td>
-<td>CheckBox</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Brush</td>
-<td>ColorPicker</td>
-</tr>
-</table>
-
- We can assign own value editor(control) for the properties instead of default value editor by using the [Editor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.editorattribute?view=netframework-4.8) attribute or [CustomEditorCollection](https://help.syncfusion.com/cr/wpf/Syncfusion.PropertyGrid.Wpf~Syncfusion.Windows.PropertyGrid.PropertyGrid~CustomEditorCollection.html).
-
- For example, if we have an `EmailID` property as a string type, `TextBox` is assigned as a value editor and all the text will be allowed. If we want to accept the input that is only in the mail id format, we can assign [MaskedEdit](https://www.syncfusion.com/wpf-ui-controls/maskedtextbox) control with mail ID mask as the value editor for the `EmailID` property. 
+ For example, if you creates an `EmailID` property as a string type, `TextBox` is assigned as a value editor and all the text will be allowed. If you want to accept the input that is only in the mail id format, you can assign [MaskedEdit](https://www.syncfusion.com/wpf-ui-controls/maskedtextbox) control with email-id mask as the value editor for the `EmailID` property. 
 
 ## Creating the Custom Editor
 
