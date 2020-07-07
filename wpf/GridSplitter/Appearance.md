@@ -55,11 +55,11 @@ We can change the background color of `SfGridSplitter` by setting the `Backgroun
 
 ![SfGridSplitter with green background](Positioning-GridSplitter-images/Background.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
-### Setting style for Preview GridSplitter
+### Custom drag preview
 
-We can change the UI and style of the preview grid splitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~PreviewStyle.html) property. We can see the effect of `PreviewStyle` only on when `ShowsPreview` property value is `true`.
+We can change the custom UI of the preview grid splitter by using the [SfGridSplitter.PreviewStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfGridSplitter~PreviewStyle.html) property. We can see the effect of `PreviewStyle` only on when `ShowsPreview` property value is `true`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -115,7 +115,7 @@ We can change the UI and style of the preview grid splitter by using the [SfGrid
 
 ![SfGridSplitter with ellipse shape preview grid splitter](Positioning-GridSplitter-images/PreviewStyle.gif)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
 ## Theme
 
@@ -195,4 +195,4 @@ SfSkinManager.SetVisualStyle(sfGridSplitter, VisualStyles.Blend);
 
 ![SfGridSplitter with Blend visual style](Positioning-GridSplitter-images/Theme.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Themes) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Themes) 

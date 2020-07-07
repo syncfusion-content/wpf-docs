@@ -12,16 +12,16 @@ documentation: ug
 This section provides you an overview for working with SfScheduler for WPF and also provides a walk through to configure SfScheduler control in real time scenario.   
 
 ## Assembly deployment
-Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#SfScheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages). You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
+Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages). You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
 
 ## Create simple application with SfScheduler
 
 In this section, you will create WPF application with SfScheduler control.
 
-* [Creating project](#Creating-project)
-* [Adding control via Designer](#Adding-control-via-Designer)
-* [Adding control manually in XAML](#Adding-control-manually-in-XAML)
-* [Adding control manually in C#](#Adding-control-manually-in-C#)  
+* [Creating project](#creating-project)
+* [Adding control via Designer](#adding-control-via-designer)
+* [Adding control manually in XAML](#adding-control-manually-in-xaml)
+* [Adding control manually in C#](#adding-control-manually-in-c)  
 
 ### Creating project
 In Visual Studio, create a new WPF project to show the features of the SfScheduler control and add the following namespace to the added assemblies.
@@ -129,11 +129,10 @@ You can also map custom appointments data to our scheduler.
 
 Here steps to render meetings using `SfScheduler` control with respective custom data properties created in a class `Meeting`.
 
-* [Create an event Data Model](#creating-custom-class-for-appointments) 
+* [Create an event Data Model](#create-an-event-data-model) 
 * [Create view model](#create-view-model)
-* [Bind to Scheduler appointment](#Bind-to-Scheduler-appointment)  
-* [Add Scheduler items source.](#Add-Scheduler-items-source.) 
-* [Bind item source for Scheduler](#Bind-item-source-for-Scheduler)
+* [Bind to SfScheduler appointment](#bind-to-sfscheduler-appointment)  
+* [Bind item source for Scheduler](#bind-item-source-for-sfscheduler)
   
 #### Create an event Data Model 
   
