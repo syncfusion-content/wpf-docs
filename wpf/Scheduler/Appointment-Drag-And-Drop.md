@@ -10,13 +10,13 @@ documentation: ug
 Scheduler supports to reschedule the appointment by performing the drag and drop operation. This support is available for all views except 'Month' view.
 
 ## AppointmentDragOver event
-Scheduler notifies by `AppointmentDragOver` when drag the appointment. `AppointmentDraggingEventArgs` has following members which provides information for `AppointmentDragOver` event.
+Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentDragOver_EV.html) when drag the appointment. [AppointmentDragEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html) has following members which provides information for `AppointmentDragOver` event.
 
-`Appointment` - Gets the Appointment that is dragging.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs~Appointment.html) - Gets the Appointment that is dragging.
 
-`DraggingPoint` - Gets the dragging point of schedule appointment UI.
+[DraggingPoint](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs~DraggingPoint.html) - Gets the dragging point of schedule appointment UI.
 
-`DraggingTime` - Gets the dragging time of the dragging appointment object.
+[DraggingTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs~DraggingTime.html) - Gets the dragging time of the dragging appointment object.
 
 {% tabs %}
 {% highlight c# %}
@@ -30,11 +30,12 @@ this.Schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
 {% endtabs %}
 
 ## AppointmentDragStarting event
-Scheduler notifies by `AppointmentDragStarting` when start to drag the appointment. 
-`AppointmentDragStartingEventArgs` has following members which provides information for `AppointmentDragStarting` event.
+Scheduler notifies by [AppointmentDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentDragStarting_EV.html) when start to drag the appointment. 
+[AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDragStartingEventArgs.html) has following members which provides information for `AppointmentDragStarting` event.
 
-`Appointment` - Get the selected appointment.
-`Cancel`- To avoid appointment dragging by enabling this property.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDragStartingEventArgs~Appointment.html) - Get the selected appointment.
+
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid appointment dragging by enabling this property.
 
 {% tabs %}
 {% highlight c# %}
@@ -48,14 +49,14 @@ private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStar
 {% endtabs %}
 
 ## AppointmentDropping event
-Scheduler notifies by `AppointmentDropping` when you drop the appointment.
- `AppointmentDroppingEventArgs` has following members which provides information for `AppointmentDropping` event.
+Scheduler notifies by [AppointmentDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentDropping_EV.html) when you drop the appointment.
+ [AppointmentDroppingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDroppingEventArgs.html) has following members which provides information for `AppointmentDropping` event.
 
-`Appointment` - Gets the selected appointment that is dragged and dropped.
+[Appointment](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDroppingEventArgs~Appointment.html) - Gets the selected appointment that is dragged and dropped.
 
-`DropTime` - Gets the dropped time of the dragged appointment.
+[DropTime](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDroppingEventArgs~DropTime.html) - Gets the dropped time of the dragged appointment.
 
-`Cancel` - To avoid appointment dropping by enabling this property.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=netcore-3.1) - To avoid appointment dropping by enabling this property.
 
 {% tabs %}
 {% highlight c# %}
