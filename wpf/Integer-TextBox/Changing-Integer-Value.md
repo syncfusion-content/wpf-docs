@@ -70,6 +70,64 @@ class ViewModel : NotificationObject
 
 ![Binding a value to IntegerTextBox](Changing-Integer-Value_images/Binding.png)
 
+## Change integer value by pasting the clipboard's text
+
+By default, `IntegerTextBox` simply replaces the whole value by copied value with the current number format. If you want to replace or insert the copied value on specific place, use the [PasteMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.EditorBase~PasteMode.html) property value as `Advanced`. The default value of `PasteMode` property is `Default`. 
+
+The following table explains the pasting behaviour in `Advanced` paste mode,
+
+<table>
+<tr>
+<th> S.No </th>
+<th> Action </th>
+<th> Pasting behaviour in Advanced paste mode</th>
+</tr>
+<tr>
+<td>1</td>
+<td>When the whole value is selected</td>
+<td>It simply replaces the whole value by copied value with the current number format.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>When the cursor is at some position and the copied value does not contain a number decimal separator</td>
+<td>It inserts the copied value into the current cursor position.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>When the cursor is at some position and the copied value contains a number decimal separator</td>
+<td>It won’t perform pasting operation.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>When the cursor is at some position and the control value is 0 or null</td>
+<td>It simply replaces the whole value by copied value with the current number format.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>When a part of the number is selected and copied value contains number decimal separator</td>
+<td> it won’t perform pasting operation.</td>
+</tr>
+</table>
+
+{%tabs%}
+{% highlight xaml %}
+
+<syncfusion:IntegerTextBox PasteMode="Advanced" 
+                           Value="12345"
+                           Name="integerTextBox"/>
+
+{% endhighlight %}                       
+{% highlight C# %}
+
+IntegerTextBox integerTextBox = new IntegerTextBox();
+integerTextBox.PasteMode = PasteMode.Advanced;
+integerTextBox.Value = 12345;
+
+{% endhighlight %}
+{%endtabs%}
+
+![IntegerTextBox pasting the copied value in specific place](Changing-Integer-Value_images/Pasting.png)
+
 ## Value Changed Event
 
 The `IntegerTextBox` control can notify changes in value through the [ValueChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.IntegerTextBox~ValueChanged_EV.html) event. In `ValueChanged` event, you can get old value and new value from the `OldValue` and  `NewValue` properties.

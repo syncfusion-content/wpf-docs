@@ -154,3 +154,36 @@ richTextBoxAdv.LoadAsyncSettings.ShowPageNumber = false
 {% endtabs %}
 
 N> This API is supported starting from release version v17.4.0.X.
+
+
+## Events to notify document starts and completes loading and saving
+
+SfRichTextBoxAdv control also provides below events to notify document starts and completes loading and saving.
+
+
+### Events Table
+
+<table>
+<tr>
+<th>
+Event </th><th>
+Description </th></tr>
+<tr>
+<td>
+DocumentChanging</td><td>
+This event is triggered when the document starts loading.</td></tr>
+<tr>
+<td>
+DocumentChanged</td><td>
+This event is triggered after the document is successfully loaded.</td></tr>
+<tr>
+<td>
+DocumentSaving</td><td>
+This event is triggered when the document starts saving.</td></tr>
+<tr>
+<td>
+DocumentSaved</td><td>
+This event is triggered after the document is successfully saved.</td></tr>
+</table>
+
+N> This API is supported starting from release version v18.2.0.X.
