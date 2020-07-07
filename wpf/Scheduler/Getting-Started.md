@@ -18,10 +18,10 @@ Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/c
 
 In this section, you will create WPF application with SfScheduler control.
 
-* [Creating project](#Creating-project)
-* [Adding control via Designer](#Adding-control-via-Designer)
-* [Adding control manually in XAML](#Adding-control-manually-in-XAML)
-* [Adding control manually in C#](#Adding-control-manually-in-C#)  
+* [Creating project](#creating-project)
+* [Adding control via Designer](#adding-control-via-designer)
+* [Adding control manually in XAML](#adding-control-manually-in-xaml)
+* [Adding control manually in C#](#adding-control-manually-in-c)  
 
 ### Creating project
 In Visual Studio, create a new WPF project to show the features of the SfScheduler control and add the following namespace to the added assemblies.
@@ -129,11 +129,10 @@ You can also map custom appointments data to our scheduler.
 
 Here steps to render meetings using `SfScheduler` control with respective custom data properties created in a class `Meeting`.
 
-* [Create an event Data Model](#creating-custom-class-for-appointments) 
+* [Create an event Data Model](#create-an-event-data-model) 
 * [Create view model](#create-view-model)
-* [Bind to Scheduler appointment](#Bind-to-Scheduler-appointment)  
-* [Add Scheduler items source.](#Add-Scheduler-items-source.) 
-* [Bind item source for Scheduler](#Bind-item-source-for-Scheduler)
+* [Bind to SfScheduler appointment](#bind-to-sfscheduler-appointment)  
+* [Bind item source for Scheduler](#bind-item-source-for-sfscheduler)
   
 #### Create an event Data Model 
   
