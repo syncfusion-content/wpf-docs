@@ -186,8 +186,4 @@ DocumentSaved</td><td>
 This event is triggered after the document is successfully saved.</td></tr>
 </table>
 
-{% endhighlight %}
-
-{% endtabs %}
-
 N> This API is supported starting from release version v18.2.0.X.
