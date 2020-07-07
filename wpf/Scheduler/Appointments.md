@@ -181,7 +181,6 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
 
-![AllDay Appointment in  WPF Scheduler](appointments_images/adding-alldayappointments.png)
 
 N>Appointment that lasts through an entire day (exact 24 hours) will be considered as all day appointment without setting IsAllDay property. For example 06/29/2020 12:00AM to 06/30/2020 12:00AM.
 
@@ -235,8 +234,6 @@ scheduleAppointmentCollection.Add(scheduleAppointment);
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
-
-![Recurring Appointment in  WPF Scheduler](appointments_images/adding-recurringappointments.png)
 
 ### Creating the custom recurrence appointment
 For creating the custom recurrence appointment, you need to create a custom class `Meeting` with mandatory fields `from`, `to`, and `recurrenceRule`.
@@ -385,7 +382,6 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endtabs %}
 
 N>Exception dates should be Universal Time Coordinates (UTC) time zone.
-![Schedule Recurrring Appointment in  WPF Scheduler](appointments_images/adding-ScheduleRecurringAppointment.png)
 
 ### Add exception appointment to the recurrence pattern
 You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add changed occurrence, ensure to set `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment.
@@ -431,8 +427,6 @@ Schedule.ItemsSource=RecursiveAppointmentCollection;
 N>• RecurrenceId should be a recurrence pattern appointment object.
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
 • The recurrenceExceptionDates should be in a Universal Time Coordinates (UTC) time zone.
-
-![Schedule Exception Appointment in  WPF Scheduler](appointments_images/Ading-ScheduleExceptionAppointment.png)
 
 ### Create recurrence exceptions for custom appointment
 You can add the recurrence exception appointments and recurrence exception dates to the CustomAppointment or remove them from CustomAppointment, you can create a custom class `Meeting` with mandatory fields `RecurrenceExceptionDates` and `RecurrenceId`.
@@ -487,8 +481,6 @@ Schedule.ItemsSource = customAppointmentCollection;
  
  N> Exception dates should be Universal Time Coordinates (UTC) time zone.
  
- ![Custom recurring Appointment in  WPF Scheduler](appointments_images/adding-CustomRecurringAppointment.png)
-
 ## Add an exception appointment to the recurrence pattern
 You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment.
 You should map the equivalent properties of  `RecurrenceId` and `RecurrenceExceptionDates` properties from the business object to `RecurrenceId` and `RecurrenceExceptionDates` properties of `AppointmentMapping`.
@@ -545,8 +537,6 @@ Schedule.ItemsSource = RecursiveAppointmentCollection;
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from the recurrence pattern.
 • The recurrenceExceptions should be in a Universal Time Coordinates (UTC) time zone.
 
-![Custom Exception Appointment in WPF Scheduler](appointments_images/Adding-CustomExceptionAppointment.png)
-
 ## Appearance customization
 The default appearance of schedule appointment can be customized in all views by using the `AppointmentTemplate` and `AppointmentTemplateSelector` properties of `ViewSettingsBase`. You can use the `AllDayAppointmentTemplate` property of `DaysViewSettings` to customize the appearance of all day appointments in day, week and work week views.
 {% tabs %}
@@ -578,7 +568,5 @@ Orientation="Horizontal">
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% endtabs %}
-
-![Appearance Customization in WPF Scheduler](appointments_images/Adding-AppearanceCustomization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-appearance-customization)
