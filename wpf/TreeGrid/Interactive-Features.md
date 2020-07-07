@@ -864,7 +864,7 @@ Sample for dragging and dropping between TreeViewAdv and SfTreeGrid: [Sample](ht
 
 ### Changing the row drop indicator
 
-By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the `sfTreeGrid.RowDropIndicatorMode` as `Line`.
+By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the [sfTreeGrid.RowDropIndicatorMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDropIndicatorMode.html) as `Line`.
 
 {% tabs %}
 {% highlight xaml %}
