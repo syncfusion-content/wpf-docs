@@ -369,30 +369,54 @@ private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPrope
 
 You can customize the appearance of the  `ColorPickerPalette` header and can display the selected color name in the header by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~HeaderTemplate.html) property.
 
+N> The `DataContext` of `HeaderTemplate` is `ColorPickerPalette`
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPickerPalette Name="colorPickerPalette" 
-                               Width="170"
-                               Height="50">
-    <syncfusion:ColorPickerPalette.HeaderTemplate >
-        <DataTemplate >
-            <Grid Margin="2">
+<Window.Resources>
+    <DataTemplate x:Key="Custom_HeaderTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid  x:Name="IconGrid" 
+                   Margin="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBlock Text="{Binding 
-                    ColorName,
-                    RelativeSource={RelativeSource FindAncestor, 
-                                                   AncestorLevel=1,
-                                                   AncestorType={x:Type syncfusion:ColorPickerPalette}},
-                                                   UpdateSourceTrigger=PropertyChanged}"/>
-                <Border x:Name="color_border" Grid.Row="1"/>
+                <Image x:Name="image" 
+                       Source="/images/fill.png"
+                       Height="12" 
+                       Width="12"/>
+                <Border Name="color_border" 
+                        Grid.Row="1" 
+                        Height="3">
+                    <Border.Background>
+                        <SolidColorBrush Color="{Binding Color, 
+                            RelativeSource={RelativeSource FindAncestor, 
+                                AncestorLevel=1,
+                                AncestorType={x:Type syncfusion:ColorPickerPalette}}, 
+                                UpdateSourceTrigger=PropertyChanged}"/>
+                    </Border.Background>
+                </Border>
             </Grid>
-        </DataTemplate>
-    </syncfusion:ColorPickerPalette.HeaderTemplate>
-</syncfusion:ColorPickerPalette>
+            <TextBlock Padding="1" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center" Grid.Column="1" 
+                       Text="Shape Fill" FontSize="11"
+                       Width="auto"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+<Grid>
+    <syncfusion:ColorPickerPalette HeaderTemplate="{DynamicResource Custom_HeaderTemplate}"
+                                   Name="ColorPickerPallete2"                                  
+                                   Margin="10"
+                                   Mode="Split"/>
+</Grid>
 
 {% endhighlight %}
 {% endtabs %}
