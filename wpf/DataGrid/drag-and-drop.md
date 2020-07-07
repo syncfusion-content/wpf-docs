@@ -148,7 +148,7 @@ private void RowDragDropController_Dropped(object sender, GridRowDroppedEventArg
 
 ## Changing the row drop indicator
 
-By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the `sfDataGrid.RowDropIndicatorMode` as `Line`.
+By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the [sfDataGrid.RowDropIndicatorMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowDropIndicatorMode.html) as `Line`.
 
 {% tabs %}
 {% highlight xaml %}
