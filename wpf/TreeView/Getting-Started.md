@@ -196,7 +196,7 @@ You can create a tree view by binding the ItemsSource to a hierarchical data sou
     <Grid>
         <syncfusion:SfTreeView x:Name="sfTreeView" 
                                ChildPropertyName="SubFiles"
-                               ItemsSource="{Binding ImageNodeInfo}">							   
+                               ItemsSource="{Binding ImageNodeInfo}"  >							   
         </syncfusion:SfTreeView>							   
     </Grid>
 </Window>
