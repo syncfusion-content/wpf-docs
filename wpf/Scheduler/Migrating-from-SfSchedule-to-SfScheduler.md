@@ -79,20 +79,154 @@ Description</th></tr>
 <td>Appointments,ItemsSource</td>
 <td>ItemsSource</td>
 <td>Gets or sets a items source to the scheduler.</td></tr>
-</table>
-
-The following table compares the AppointmentMapping APIs,
-
-<table>
-<tr>
-<th>
-SfSchedule</th><th>
-SfScheduler</th><th>
-Description</th></tr>
 <tr>
 <td>AppointmentMapping</td>
 <td>AppointmentMapping</td>
 <td>Gets or sets the mapping to the appointment.</td></tr>
+</table>
+
+The following table compares the `ScheduleAppointment` APIs,
+
+<table>
+<tr>
+<th>
+SfSchedule(ScheduleAppointment)</th><th>
+SfScheduler(ScheduleAppointment)</th><th>
+Description</th></tr>
+<tr>
+<td>Subject</td>
+<td>Subject</td>
+<td>Gets or sets the subject for the appointment.</td></tr>
+<tr>
+<td>Notes</td>
+<td>Notes</td>
+<td>Gets or sets the notes for an appointment.</td></tr>
+<tr>
+<td>Location</td>
+<td>Location</td>
+<td>Gets or sets the location for an appointment.</td></tr>
+<tr>
+<td>AppointmentBackground</td>
+<td>AppointmentBackground</td>
+<td>Gets or sets the appointment color.</td></tr>
+<tr>
+<td>StartTime</td>
+<td>StartTime</td>
+<td>Gets or sets the start date and time of the appointment.</td></tr>
+<tr>
+<td>EndTime</td>
+<td>EndTime</td>
+<td>Gets or sets the end date and time of the appointment.</td></tr>
+<tr>
+<td>-</td>
+<td>ActualStartTime</td>
+<td>Gets the internal start time which is converted based on start time zone applied.</td></tr>
+<tr>
+<td>-</td>
+<td>ActualEndTime</td>
+<td>Gets the internal end time which is converted based on start time zone applied.</td></tr>
+<tr>
+<td>StartTimeZone</td>
+<td>StartTimeZone</td>
+<td>Gets or sets time zone for the start time of the appointment.</td></tr>
+<tr>
+<td>EndTimeZone</td>
+<td>EndTimeZone</td>
+<td>Gets or sets time zone for the end time of the appointment.</td></tr>
+<tr>
+<td>IsRecursive</td>
+<td>IsRecursive</td>
+<td>Gets a value indicating whether the appointment is recurrence appointment or not.</td></tr>
+<tr>
+<td>-</td>
+<td>RecurrenceProperties</td>
+<td>Gets or sets the properties for maintaining recurrence information.</td></tr>
+<tr>
+<td>AllDay</td>
+<td>IsAllDay</td>
+<td>Gets or sets a value indicating whether the appointment's duration is equal one day or not.</td></tr>
+<tr>
+<td>RecurrenceRule</td>
+<td>RecurrenceRule</td>
+<td> Gets or sets a value indicating whether the appointment should be recursive.</td></tr>
+<tr>
+<td>RecursiveExceptionDates</td>
+<td>RecurrenceExceptionDates</td>
+<td>Gets or sets the properties for maintaining recurrence rule exception Dates.</td></tr>
+<tr>
+<td>-</td>
+<td>RecurrenceId</td>
+<td>Gets or sets an unique ID for referring recurrence appointment.</td></tr>
+<tr>
+<td>-</td>
+<td>ResourceIdCollection</td>
+<td>Gets or sets the resource id collection.</td></tr>
+<tr>
+<td>-</td>
+<td>Data</td>
+<td>Gets the data object associated with appointment.</td></tr>
+</table>
+
+The following table compares the `AppointmentMapping` APIs,
+
+<table>
+<tr>
+<th>
+SfSchedule(AppointmentMapping)</th><th>
+SfScheduler(AppointmentMapping)</th><th>
+Description</th></tr>
+<tr>
+<td>SubjectMapping</td>
+<td>Subject</td>
+<td>Gets or sets the Subject property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>NotesMapping</td>
+<td>Notes</td>
+<td>Gets or sets the Notes property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>LocationMapping</td>
+<td>Location</td>
+<td>Gets or sets the Location property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>AppointmentBackgroundMapping</td>
+<td>AppointmentBackground</td>
+<td>Gets or sets the AppointmentBackground property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>StartTimeMapping</td>
+<td>StartTime</td>
+<td>Gets or sets the StartTime property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>EndTimeMapping</td>
+<td>EndTime</td>
+<td>Gets or sets the EndTime property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>StartTimeZoneMapping</td>
+<td>StartTimeZone</td>
+<td>Gets or sets the StartTimeZone property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>EndTimeZoneMapping</td>
+<td>EndTimeZone</td>
+<td>Gets or sets the EndTimeZone property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>-</td>
+<td>MinimumAppointmentHeight</td>
+<td>Gets or sets the MinimumAppointmentHeight property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>AllDayMapping</td>
+<td>IsAllDay</td>
+<td>Gets or sets the IsAllDay property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>RecurrenceRuleMapping</td>
+<td>RecurrenceRule</td>
+<td> Gets or sets the RecurrenceRule property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>RecursiveExceptionDatesMapping</td>
+<td>RecurrenceExceptionDates</td>
+<td> Gets or sets the RecurrenceExceptionDates property for mapping to the schedule appointment.</td></tr>
+<tr>
+<td>-</td>
+<td>RecurrenceId</td>
+<td>Gets or sets the RecurrenceId property for mapping to the schedule appointment.</td></tr>
 </table>
 
 You can see the list of the rich set of features in `SfScheduler` over `SfSchedule` as follows:
