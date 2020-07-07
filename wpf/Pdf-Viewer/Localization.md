@@ -7,7 +7,7 @@ control: PDF Viewer
 documentation: ug
 ---
 
-# Localization in Syncfusion PDF Viewer
+# Localization in WPF Pdf Viewer
 
 Localization is the process of configuring the application to a specific language. `PdfViewerControl` provides support to localize all the static text used for tooltip and context menu contents. Localization can be done by adding resource file (Resx) in the application.
 The following table shows the default values for the common text used in the `PdfViewerControl` which is in `en-US` culture:
@@ -352,3 +352,20 @@ Current zoom level</td></tr>
 The following screenshot shows the `PdfViewerControl` in French language
 
 ![Localization](Localization_images/Localization_image1.png)
+
+## Localize Resource File with Different Assembly or Namespace
+
+In general, [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) try to read the resource file from executing assembly and its default namespace by using [Assembly.GetExecuteAssembly](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.getexecutingassembly.aspx) method. When the resource file is located at different assembly or namespace, then it can be set to the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) by using `LocalizationManager.SetResources` method.
+
+{% tabs %}
+{% highlight c# %}
+public MainWindow()
+{
+    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("fr-FR");
+	
+	// Set the Custom assembly and namespace for the localization.
+	LocalizationManager.SetResources(typeof(Custom_Class).Assembly, "ClassLibrary");
+    InitializeComponent();
+}    
+{% endhighlight %}
+{% endtabs %}
