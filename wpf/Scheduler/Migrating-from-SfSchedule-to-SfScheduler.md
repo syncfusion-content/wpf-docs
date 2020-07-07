@@ -83,6 +83,10 @@ Description</th></tr>
 <td>AppointmentMapping</td>
 <td>AppointmentMapping</td>
 <td>Gets or sets the mapping to the appointment.</td></tr>
+<tr>
+<td>AppointmentMapping</td>
+<td>AppointmentMapping</td>
+<td>Gets or sets the mapping to the appointment.</td></tr>
 </table>
 
 The following table compares the `ScheduleAppointment` APIs,
@@ -138,10 +142,6 @@ Description</th></tr>
 <td>IsRecursive</td>
 <td>Gets a value indicating whether the appointment is recurrence appointment or not.</td></tr>
 <tr>
-<td>-</td>
-<td>RecurrenceProperties</td>
-<td>Gets or sets the properties for maintaining recurrence information.</td></tr>
-<tr>
 <td>AllDay</td>
 <td>IsAllDay</td>
 <td>Gets or sets a value indicating whether the appointment's duration is equal one day or not.</td></tr>
@@ -159,12 +159,12 @@ Description</th></tr>
 <td>Gets or sets an unique ID for referring recurrence appointment.</td></tr>
 <tr>
 <td>-</td>
-<td>ResourceIdCollection</td>
-<td>Gets or sets the resource id collection.</td></tr>
-<tr>
-<td>-</td>
 <td>Data</td>
 <td>Gets the data object associated with appointment.</td></tr>
+<tr>
+<td>-</td>
+<td>Type</td>
+<td>Gets the type of appointment.</td></tr>
 </table>
 
 The following table compares the `AppointmentMapping` APIs,
@@ -207,10 +207,6 @@ Description</th></tr>
 <td>EndTimeZoneMapping</td>
 <td>EndTimeZone</td>
 <td>Gets or sets the EndTimeZone property for mapping to the schedule appointment.</td></tr>
-<tr>
-<td>-</td>
-<td>MinimumAppointmentHeight</td>
-<td>Gets or sets the MinimumAppointmentHeight property for mapping to the schedule appointment.</td></tr>
 <tr>
 <td>AllDayMapping</td>
 <td>IsAllDay</td>
