@@ -353,7 +353,7 @@ You can spell check any language(culture) by adding the respective culture to th
 
 The following dictionary types are used for spell-checking,
 
- * HunSpell
+ * Hunspell
  * Ispell
  * OpenOffice
 
