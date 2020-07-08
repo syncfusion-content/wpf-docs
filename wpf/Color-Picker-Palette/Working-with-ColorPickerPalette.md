@@ -456,11 +456,13 @@ N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-p
 
 ## ColorPickerPalette as a command button
 
-By default, you can open a popup color palette by clicking anywhere on the `ColorPickerPalette`. If you want to select the last selected color by click on left side button and without opening the palette, use the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Mode.html) property as `Split` mode. It will trigger the color changed event by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~SelectedCommand.html) and it contains the last selected color. In the `Split` mode, color palette opened only by click on the drop down button.
+By default, ColorPickerPalette acts like a dropdown. It opening a color palette when clicking anywhere on the header. By setting the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Mode.html) property to `Split`, it acts like a button and dropdown as explained below.
+1. When clicking on the dropdown arrow button, It acts like a dropdown.
+2. When you click on the header area, it acts like a button and [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~SelectedCommand.html) will be triggered. Using this command, you can do some action like applying the selected color as background of selected text.
 
 ![ColorPickerPalette in drop down and split mode](Dealing-with-ColorPickerPalette_images/Mode.png)
 
-For example, if you want to apply a last selected color to a any TextEditor's selected text, you need not open the popup or remember the color to be applied and choose it.
+For example, if you want to apply a last selected color as a foreground to a TextEditor's selected text. You can direct click the button instead of opening the dropdown and selecting an already selected color again.
 
 {% tabs %}
 {% highlight C# %}
