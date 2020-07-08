@@ -399,7 +399,7 @@ The schedule All Day panel appointment count can be customized by `MinimumAllDay
 {% highlight xaml %}
  <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
     <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings MaximumAllDayAppointmentsCount="2" />
+        <syncfusion:DaysViewSettings MaximumAllDayAppointmentsCount="5" />
     </syncfusion:SfScheduler.DaysViewSettings>
 </syncfusion:SfScheduler>
 {% endhighlight %}
