@@ -89,7 +89,7 @@ namespace SfGridSplitterSample {
 
 ![SfGridSplitter control added by code](Getting-Started-images/WPF-Grid-Splitter.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter)
 
 ## Resize the grid rows
 
@@ -136,7 +136,7 @@ If we want to resize the specific grid rows, place the `SfGridSplitter` on next 
 
 ![Resize the grid rows using SfGridSplitter](Positioning-GridSplitter-images/Horizontal_Splitter_img.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter)
 
 ## Resize the grid columns
 
@@ -183,7 +183,7 @@ If we want to resize the specific grid columns, place the `SfGridSplitter` on ne
 
 ![Resize the grid columns using SfGridSplitter](Positioning-GridSplitter-images/Vertical_Splitter_img.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
 N> We can restrict the moving location of the grid splitter (Left or Right or Bottom or Top) by setting the value for `ResizeBehavior` property. The `ResizeBehavior` value must be assigned based on the row or column where the grid splitter placed.
 
@@ -234,7 +234,7 @@ If we want to resize the rows or columns of grid with particular pixel interval,
 
 ![Resizing the grid rows and colums with specific pixel](Positioning-GridSplitter-images/Move-Interval.gif)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
 ### Resize the grid rows or columns programmatically
 
@@ -332,7 +332,7 @@ We can collapse or expands the element in either side of the splitter by clickin
 
 ![Show or hide the grid row and columns](Positioning-GridSplitter-images/EnableCollapseButton.gif)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
 ## Custom UI for Collapse buttons 
 
@@ -430,7 +430,7 @@ N> You can see the effect of collapse button templates only on when `EnableColla
 
 ![SfGridSplitter with expand or collapse button template](Positioning-GridSplitter-images/Collapsebuttontemplate.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Appearance) 
 
 ## Custom UI for expander gripper
 
@@ -531,7 +531,7 @@ If you you want to change the UI of vertical and horizontal splitter gripper sep
 
 ![SfGridSplitter with custom gripper](Positioning-GridSplitter-images/Gripper.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Custom-Gripper) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/Custom-Gripper)
 
 ## Deferred resizing
 
@@ -577,7 +577,7 @@ We can directly redistribute the row or columns by using `SfGridSplitter`. If we
 
 ![SfGridSplitter with deferred resizing](Positioning-GridSplitter-images/ShowsPreview.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
 ## Grid splitter for the merged columns or rows
 
@@ -639,5 +639,5 @@ If we want resize the merged columns or rows, place the grid splitter on next or
 
 ![Grid splitter for the merged columns or rows](Positioning-GridSplitter-images/Columspan_img.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-gridsplitter-control-examples/tree/master/Samples/GridSplitter) 
 
