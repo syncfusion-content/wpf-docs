@@ -376,33 +376,3 @@ You can customize the default appearance of view header by setting `ViewHeaderTe
 {% endtabs %}
 
 ![ViewHeader appearance customization in WPF Scheduler](DaysView_Images/adding-ViewHeaderappearancecustomization.png)
-
-## Change all day appointment display count
-The schedule All Day panel appointment count can be customized by `MinimumAllDayAppointmentsCount` and `MaximumAllDayAppointmentsCount` properties of `DaysViewSettings`.
-
- ### Minimum all day appointments count
- You can customize the all day appointments count of the `AllDay` panel in day , week , work week views by setting `MinimumAllDayAppointmentsCount` property of `DaysViewSettings` in `SfScheduler`.
-
-{% tabs %}
-{% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings MinimumAllDayAppointmentsCount="2" />
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
-{% endhighlight %}
-{% endtabs %}
-
-### Maximum all day appointments count
- You can customize the all day appointments count of the `AllDay` panel in day , week , work week views by setting `MaximumAllDayAppointmentsCount` property of `DaysViewSettings` in `SfScheduler`.
- {% tabs %}
-{% highlight xaml %}
- <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-    <syncfusion:SfScheduler.DaysViewSettings>
-        <syncfusion:DaysViewSettings MaximumAllDayAppointmentsCount="5" />
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
-{% endhighlight %}
-{% endtabs %}
-
-![Change all day appointment display count in WPF Scheduler](DaysView_Images/adding-Changealldayappointmentdisplaycount.png)
