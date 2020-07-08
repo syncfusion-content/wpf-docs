@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeNode Checkbox in WPF TreeView Cntrol | Syncfusion
+title: TreeNode Checkbox in WPF TreeView Control | Syncfusion
 description: The WPF TreeView provides support for loading Checkbox in each node and allows users to check/uncheck the corresponding node.
 platform: wpf
 control: SfTreeView
 documentation: ug
 ---
 
-# Checkbox
+# TreeNode Checkbox in TreeView control
 
 SfTreeView provides support for loading `CheckBox` in each node, and allows users to check/uncheck the corresponding node. So, you should add checkbox in the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemTemplate.html) of the `SfTreeView` and bind the [IsChecked](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode~IsChecked.html) property of the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html).
 
