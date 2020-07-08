@@ -410,7 +410,7 @@ SfScheduler control will be rendered with `Sunday` as the first day of the week,
 {% endhighlight %}   
 {% highlight c# %}
 //setting first day of the week    
-Schedule.FirstDayOfWeek = DayOfWeek.Thursday;   
+Schedule.FirstDayOfWeek = DayOfWeek.Monday;   
 {% endhighlight %}  
 {% endtabs %}   
 
