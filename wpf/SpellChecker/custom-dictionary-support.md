@@ -17,7 +17,7 @@ You can use a default and custom dictionaries to spell check the document based 
 
 ## Load your own dictionaries for any language
 
-You can add your own dictionay to [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~Dictionaries.html) collection. `SfSpellChecker` support 3 standard dictionary file format:
+You can add your own dictionary to [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~Dictionaries.html) collection. `SfSpellChecker` support 3 standard dictionary file format:
 
  * 1.Hunspell
  * 2.Ispell
@@ -42,7 +42,7 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) to know how to confure SfSpellChecker.
+N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) to know how to configure SfSpellChecker.
 
 {% tabs %}
 {% highlight C# %}
