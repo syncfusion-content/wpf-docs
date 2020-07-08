@@ -13,13 +13,11 @@ You can use a default and custom dictionaries to spell check the document based 
 
 ## Default SpellCheck Dictionary
 
-[SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker.html) provides predefined dictionary for `English` language and provides a suitable suggestion of the error words.
+[SfSpellChecker](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker.html) provides built-in dictionary for `English` language and it provides  suitable suggestion of the error words.
 
-## SpellCheck dictionaries for any culture 
+## Load your own dictionaries for any language
 
-You can spell check any language(culture) by adding the respective culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~Culture.html) property and add the dictionaries which contains the respective culture's basic word file and grammar file to the [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~Dictionaries.html) collection.
-
-The following dictionary types are used for spell-checking,
+You can add your own dictionay to [SfSpellChecker.Dictionaries](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~Dictionaries.html) collection. `SfSpellChecker` support 3 standard dictionary file format:
 
  * 1.Hunspell
  * 2.Ispell
@@ -27,9 +25,7 @@ The following dictionary types are used for spell-checking,
  
 ## SpellCheck using Hunspell dictionary
 
-If you want to spell check the given document with high accuracy and more suitable suggestions for the error words, use the `Hunspell` dictionary. It is used for any language with rich morphology and complex word compounding and character encoding.
-
-`Hunspell` dictionary contains two files as follows,
+You can check spelling mistakes using `Hunspell` dictionary format. This format contains files as follows,
 
 * Affix file with grammar rules- `*.aff`, 
 * Basic Words file - `*.dic` file.
@@ -46,7 +42,7 @@ If you want to spell check the given document with high accuracy and more suitab
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The following code snippets only explain the insertion of the Hunspell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
+N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) to know how to confure SfSpellChecker.
 
 {% tabs %}
 {% highlight C# %}
@@ -81,7 +77,7 @@ N> You can add multiple `HunspellDictionary` with various culture files into the
 
 ## SpellCheck using Ispell dictionary
 
-If you want to spell check the given document quickly and get a suitable suggestions for the error words, use the `Spell` dictionary. It is much smaller and more effective to spell check.
+You can check spelling mistakes using `Ispell` dictionary format. This format contains files as follows,
 
 `Ispell` dictionary contains two files as follows,
 
@@ -135,7 +131,7 @@ N> You can add multiple `IspellDictionary` with various culture files into the `
 
 ## SpellCheck using OpenOffice dictionary
 
-If you want to spell check the given document with high accuracy, use the `OpenOffice` dictionary. It provides a more suggestion words. 
+You can check spelling mistakes using `OpenOffice` dictionary format. This format contains files as follows,
 
 `OpenOffice` dictionary contains two files as follows,
 
