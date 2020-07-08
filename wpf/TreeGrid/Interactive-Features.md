@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive feature | TreeGrid | WPF | Syncfusion
-description: This section explains about the Interactive Features in SfTreeGrid.
+description: This section explains about the Interactive Features and other customization in Syncfusion WPF TreeGrid(SfTreeGrid) control.
 platform: wpf
 control: SfTreeGrid
 documentation: ug
@@ -861,6 +861,32 @@ private void Treeview_Drop(object sender, DragEventArgs e)
 Sample for dragging and dropping between TreeViewAdv and SfTreeGrid: [Sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-between-treegrid-and-treeviewadv).
 
 ![Drag and drop between treegrid and treeviewadv](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img5.jpeg)
+
+### Changing the row drop indicator
+
+By default, the drop position will be indicated with arrows. To change the drop indicator as line, then set the [sfTreeGrid.RowDropIndicatorMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDropIndicatorMode.html) as `Line`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Margin="5"
+                       Name="sfTreeGrid" 
+                       AutoExpandMode="RootNodesExpanded"
+                       AllowDraggingRows="True" 
+                       AllowDrop="True" 
+                       ChildPropertyName="ReportsTo"
+                       ItemsSource="{Binding Employees}"
+                       ParentPropertyName="ID"
+                       SelfRelationRootValue="-1" "
+                       RowDropIndicatorMode="Line" />			   
+{% endhighlight %}
+{% highlight c# %}
+
+sfTreeGrid.RowDropIndicatorMode = Syncfusion.UI.Xaml.Grid.DropIndicatorMode.Line;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing the row drop indicator](Row-Drag-and-Drop_images/Row-Drag-and-Drop_img7.png)
 
 ### Customizing drag-and-drop rows
 

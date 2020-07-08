@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maximizing MDI window| DocumentContainer | Wpf | Syncfusion
-description: maximizing mdi window
+title: Maximizing MDI window in WPF DocumentContainer control | Syncfusion
+description: Learn about Maximizing the MDI window support in Syncfusion WPF DocumentContainer control and more details.
 platform: wpf
 control: DocumentContainer
 documentation: ug
@@ -9,28 +9,43 @@ documentation: ug
 
 # Maximizing MDI window
 
-You can maximize the MDI window by setting the CanMDIMaximize property to True. The following code snippet shows the MDI Window in the maximized state.
+You can maximize the `MDI` window by setting the [CanMDIMaximize](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DocumentContainer~CanMDIMaximize.html) property as `true`. The default value of `CanMDIMaximize` property is `false`.
 
-
-
+{% tabs %}
 {% highlight xaml %}
 
-
-
-<!-- Adding Document Container -->
-
-<syncfusion:DocumentContainer Name="DocContainer" CanMDIMaximize = "True"  Mode="MDI">
-
-<FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features">
-
-</FlowDocumentScrollViewer>
-
-
+<syncfusion:DocumentContainer Name="DocContainer"
+                              CanMDIMaximize="True" 
+                              Mode="MDI">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"/>
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window1"/>
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Document Container"/>
 </syncfusion:DocumentContainer>
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Maximizing-MDI-window_images/Maximizing-MDI-window_img1.jpeg)
+![Maximizing MDI window in Document Container](Maximizing-MDI-window_images/Maximizing-MDI-window_img1.jpeg)
+
+## Restrict Maximizing the MDI window
+
+You can restrict maximizing the `MDI` window by setting the `CanMDIMaximize` property as `false`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:DocumentContainer Name="DocContainer"
+                              CanMDIMaximize="False" 
+                              Mode="MDI">
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"/>
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Window1"/>
+    <FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Document Container"/>
+</syncfusion:DocumentContainer>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Restrict the Maximizing MDI window in Document Container](Maximizing-MDI-window_images/Restrict_Maximizing.png)
 
 
 
