@@ -170,8 +170,8 @@ ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppoin
 //Adding schedule appointment in the schedule appointment collection 
 scheduleAppointmentCollection.Add(new ScheduleAppointment()
 {
-    StartTime = new DateTime(2020, 06, 30, 10, 0, 0),
-    EndTime = new DateTime(2020, 06, 30, 12, 0, 0),
+    StartTime = new DateTime(2020, 07, 07, 10, 0, 0),
+    EndTime = new DateTime(2020, 07, 07, 12, 0, 0),
     Subject = "Client Meeting",
     Location = "Hutchison road",
     IsAllDay = true,
@@ -181,6 +181,7 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
 
+![AllDay Appointment in  WPF Scheduler](appointments_images/adding-alldayappointments.png)
 
 N>Appointment that lasts through an entire day (exact 24 hours) will be considered as all day appointment without setting IsAllDay property. For example 06/29/2020 12:00AM to 06/30/2020 12:00AM.
 
@@ -221,10 +222,10 @@ ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppoin
 //Adding schedule appointment in schedule appointment collection 
 var scheduleAppointment = new ScheduleAppointment()
 {
-    StartTime = new DateTime(2020, 06, 28, 10, 0, 0),
-    EndTime = new DateTime(2020, 06, 28, 12, 0, 0),
+    StartTime = new DateTime(2020, 07, 05, 10, 0, 0),
+    EndTime = new DateTime(2020, 07, 05, 11, 0, 0),
     Subject = "Occurs every alternate day",
-    AppointmentBackground= new SolidColorBrush(Colors.Blue),
+    AppointmentBackground = new SolidColorBrush(Colors.RoyalBlue),
 };
 //Creating recurrence rule
 scheduleAppointment.RecurrenceRule = "FREQ=DAILY;INTERVAL=2;COUNT=10";
@@ -234,6 +235,8 @@ scheduleAppointmentCollection.Add(scheduleAppointment);
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs%}
+
+![Recurring Appointment in  WPF Scheduler](appointments_images/adding-recurringappointments.png)
 
 ### Creating the custom recurrence appointment
 For creating the custom recurrence appointment, you need to create a custom class `Meeting` with mandatory fields `from`, `to`, and `recurrenceRule`.
@@ -360,17 +363,17 @@ ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppoin
 //Adding recurrence appointment in the schedule appointment collection 
 var recurrenceAppointment = new ScheduleAppointment()
 {
-    StartTime = new DateTime(2020, 06, 28, 10, 0, 0),
-    EndTime = new DateTime(2020, 06, 28, 12, 0, 0),
+    StartTime = new DateTime(2020, 07, 05, 10, 0, 0),
+    EndTime = new DateTime(2020, 07, 05, 11, 0, 0),
     Subject = "Occurs Daily",
-    AppointmentBackground = new SolidColorBrush(Colors.Red)
+    AppointmentBackground = new SolidColorBrush(Colors.LimeGreen)
 };
 //Adding recurrence appointment in the schedule appointment collection
 scheduleAppointmentCollection.Add(recurrenceAppointment);
 // Creating the recurrence rule
 recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
 // Create the new exception date.
-var exceptionDate = new DateTime(2020, 06, 30);
+var exceptionDate = new DateTime(2020, 07, 08);
 // Add RecurrenceExceptionDates to appointment.
 recurrenceAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
 {
@@ -383,6 +386,8 @@ Schedule.ItemsSource = scheduleAppointmentCollection;
 
 N>Exception dates should be Universal Time Coordinates (UTC) time zone.
 
+![Schedule Recurrring Appointment in  WPF Scheduler](appointments_images/adding-ScheduleRecurringAppointment.png)
+
 ### Add exception appointment to the recurrence pattern
 You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add changed occurrence, ensure to set `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment.
 
@@ -394,15 +399,15 @@ ScheduleAppointmentCollection RecursiveAppointmentCollection = new ScheduleAppoi
 var scheduleAppointment = new ScheduleAppointment
 {
     Subject = "Daily scrum meeting",
-    StartTime = new DateTime(2020, 6, 28, 10, 0, 0),
-    EndTime = new DateTime(2020, 6, 28, 12, 0, 0),
-    AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000FF")),
+    StartTime = new DateTime(2020, 07, 05, 10, 0, 0),
+    EndTime = new DateTime(2020, 07, 05, 11, 0, 0),
+    AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00BFFF")),
     RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10"
 };
 //Adding schedule appointment in the schedule appointment collection
 RecursiveAppointmentCollection.Add(scheduleAppointment);
 //Add ExceptionDates to avoid occurrence on specific dates.
-DateTime changedExceptionDate = scheduleAppointment.StartTime.AddDays(4).Date;
+DateTime changedExceptionDate = scheduleAppointment.StartTime.AddDays(3).Date;
 scheduleAppointment.RecurrenceExceptionDates = new ObservableCollection<DateTime>()
 {
     changedExceptionDate,
@@ -412,21 +417,22 @@ var exceptionAppointment = new ScheduleAppointment()
 {
     Subject = "Scrum meeting - Changed Occurrence",
     StartTime = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 12, 0, 0),
-    EndTime = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 14, 0, 0),
-    AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF0000")),
+    EndTime = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 13, 0, 0),
+    AppointmentBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF1493")),
     RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10",
     RecurrenceId = scheduleAppointment
 };
-
 RecursiveAppointmentCollection.Add(exceptionAppointment);
 //Adding schedule appointment collection to the ItemsSource of SfScheduler
-Schedule.ItemsSource=RecursiveAppointmentCollection;
+ Schedule.ItemsSource = RecursiveAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
 N>• RecurrenceId should be a recurrence pattern appointment object.
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
 • The recurrenceExceptionDates should be in a Universal Time Coordinates (UTC) time zone.
+
+![Schedule Exception Appointment in  WPF Scheduler](appointments_images/Adding-ScheduleExceptionAppointment.png)
 
 ### Create recurrence exceptions for custom appointment
 You can add the recurrence exception appointments and recurrence exception dates to the CustomAppointment or remove them from CustomAppointment, you can create a custom class `Meeting` with mandatory fields `RecurrenceExceptionDates` and `RecurrenceId`.
@@ -437,33 +443,52 @@ To add the exception dates in the recurrence series of custom appointment, add t
 
 {% tabs %}
 {% highlight c# %}
-public ObservableCollection<DateTime> RecurrenceExceptionDates { get; set; } = new ObservableCollection<DateTime>();
-public string EventName { get; set; }
-public DateTime From { get; set; }
-public DateTime To { get; set; }
-public Brush Color { get; set; }
-public string RecurrenceRule { get; set; }
+public class Meeting
+{
+    public ObservableCollection<DateTime> RecurrenceExceptions { get; set; } = new ObservableCollection<DateTime>();
+    public string EventName { get; set; }
+    public DateTime From { get; set; }
+    public DateTime To { get; set; }
+    public Brush Color { get; set; }
+    public string RecurrenceRule { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
 You should map this custom property `RecurrenceExceptionDates` of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the scheduled appointment.
 
 {% tabs %}
+% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+    <syncfusion:SfScheduler.AppointmentMapping>
+        <syncfusion:AppointmentMapping
+            Subject="EventName"
+            StartTime="From"
+            EndTime="To"
+            AppointmentBackground="Color"
+            IsAllDay="IsAllDay"
+            StartTimeZone="StartTimeZone"
+            RecurrenceRule="RecurrenceRule"
+            RecurrenceExceptionDates="RecurrenceExceptions"
+            EndTimeZone="EndTimeZone"/>
+    </syncfusion:SfScheduler.AppointmentMapping>
+</syncfusion:SfScheduler>
+{% endhighlight %}
 {% highlight c# %}
 // Creating an instance for custom appointment collection
-ObservableCollection<Meeting> customAppointmentCollection  = new ObservableCollection<Meeting>();
+ObservableCollection<Meeting> customAppointmentCollection = new ObservableCollection<Meeting>();
 // data mapping for custom appointments.
 AppointmentMapping dataMapping = new AppointmentMapping();
 dataMapping.RecurrenceExceptionDates = "RecurrenceExceptionDates";
 // Create the new exception date.
-var exceptionDate = new DateTime(2020, 06, 30);
+var exceptionDate = new DateTime(2020, 07, 09);
 //Adding custom appointment in the custom appointment collection 
 var recurrenceAppointment = new Meeting()
 {
-    From = new DateTime(2020, 06, 28, 10, 0, 0),
-    To = new DateTime(2020, 06, 28, 12, 0, 0),
+    From = new DateTime(2020, 07, 05, 10, 0, 0),
+    To = new DateTime(2020, 07, 05, 11, 0, 0),
     EventName = "Occurs Daily",
-    BackColor = new SolidColorBrush(Colors.Blue),
+    Color = new SolidColorBrush(Colors.LightSeaGreen),
 };
 // Creating recurrence rule
 recurrenceAppointment.RecurrenceRule = "FREQ=DAILY;COUNT=20";
@@ -480,6 +505,8 @@ Schedule.ItemsSource = customAppointmentCollection;
 {% endtabs %}
  
  N> Exception dates should be Universal Time Coordinates (UTC) time zone.
+
+ ![Custom recurring Appointment in  WPF Scheduler](appointments_images/adding-CustomRecurringAppointment.png)
  
 ## Add an exception appointment to the recurrence pattern
 You can also add an exception appointment which is changed or modified occurrence of the recurrence pattern appointment to the `ItemsSource` of Scheduler. To add changed occurrence, ensure to set the `RecurrenceId` of that occurrence and add the date of that occurrence to `RecurrenceExceptionDates` of recurrence pattern appointment. The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment.
@@ -504,9 +531,9 @@ this.RecursiveAppointmentCollection = new ObservableCollection<Meeting>();
 Meeting dailyEvent = new Meeting
 {
     EventName = "Daily scrum meeting",
-    From = new DateTime(2020, 06, 28, 10, 0, 0),
-    To = new DateTime(2020, 06, 28, 12, 0, 0),
-    BackColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF0000FF")),
+    From = new DateTime(2020, 07, 05, 10, 0, 0),
+    To = new DateTime(2020, 07, 05, 11, 0, 0),
+    BackColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF00BFFF")),
     RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10"
 };
 //Adding custom appointment in the custom appointment collection
@@ -516,14 +543,14 @@ DateTime changedExceptionDate = dailyEvent.From.AddDays(2).Date;
 dailyEvent.RecurrenceExceptions = new ObservableCollection<DateTime>()
 {
     changedExceptionDate,
- };
+};
 //Change start time or end time of an occurrence.
 Meeting changedEvent = new Meeting
 {
     EventName = "Scrum meeting - Changed Occurrence",
-    From = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 13, 0, 0),
-    To = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 15, 0, 0),
-    BackColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF0000")),
+    From = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 12, 0, 0),
+    To = new DateTime(changedExceptionDate.Year, changedExceptionDate.Month, changedExceptionDate.Day, 13, 0, 0),
+    BackColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFFF1493")),
     RecurrenceRule = "FREQ=DAILY;INTERVAL=1;COUNT=10",
     RecurrenceId = dailyEvent,
 };
@@ -536,6 +563,8 @@ Schedule.ItemsSource = RecursiveAppointmentCollection;
  N>RecurrenceId should be a recurrence pattern appointment object.
 • The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from the recurrence pattern.
 • The recurrenceExceptions should be in a Universal Time Coordinates (UTC) time zone.
+
+![Custom Exception Appointment in WPF Scheduler](appointments_images/Adding-CustomExceptionAppointment.png)
 
 ## Appearance customization
 The default appearance of schedule appointment can be customized in all views by using the `AppointmentTemplate` and `AppointmentTemplateSelector` properties of `ViewSettingsBase`. You can use the `AllDayAppointmentTemplate` property of `DaysViewSettings` to customize the appearance of all day appointments in day, week and work week views.
@@ -560,7 +589,7 @@ Orientation="Horizontal">
 </Window.Resources>
 {% endhighlight %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week" ItemsSource="{Binding Appointments}">
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
 <syncfusion:SfScheduler.DaysViewSettings>
     <syncfusion:DaysViewSettings 
         AppointmentTemplate="{StaticResource appointmentTemplate}"/>
@@ -568,5 +597,7 @@ Orientation="Horizontal">
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% endtabs %}
+
+![Appearance Customization in WPF Scheduler](appointments_images/Adding-AppearanceCustomization.png)
 
 N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-appearance-customization)
