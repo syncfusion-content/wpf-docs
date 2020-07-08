@@ -25,13 +25,14 @@ scheduleAppointmentCollection.Add(new ScheduleAppointment()
 	Location = "Hutchison road", 
 }); 
 
-### AppointmentCollectionChanged
 //Adding schedule appointment collection to the ItemSource of SfScheduler
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
 {% endtabs %}
 
 ![ScheduleAppointment in  WPF Scheduler](appointments_images/adding-appointments.png)
+
+### AppointmentCollectionChanged
 
 ## Scheduler item source and Mapping
 The `Scheduler` supports to bind any collection that implements the IEnumerable interface to populate appointments. You can map properties in business object to `ScheduleAppointment` by configuring the `AppointmentMapping` property. The following table that property shows mapping property details to `ScheduleAppointment`.
