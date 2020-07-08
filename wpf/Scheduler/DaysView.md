@@ -69,7 +69,7 @@ N>
 * Scheduler Appointments UI, which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 * No need to specify the decimal point values for `StartHour` and `EndHour`, if you don’t want to set the minutes.
 * The number of time slots will be calculated based on total minutes of a day and time interval (total minutes of a day ((start hour - end hour) * 60) / time interval).
-* If custom timeInterval is given, then the number of time slots calculated based on the given TimeInterval should result in integer value (total minutes % timeInterval = 0), otherwise next immediate time interval that result in integer value when divide total minutes of a day will be considered. For example, if TimeInterval=2 Hours 15 minutes and total minutes = 1440 (24 Hours per day), then `TimeInterval` will be changed to ‘144’ (1440%144=0) by considering (total minutes % TimeInterval = 0), it will return integer value for time slots rendering.
+* If custom timeInterval is given, then the number of time slots calculated based on the given `TimeInterval` should result in integer value (total minutes % timeInterval = 0), otherwise next immediate time interval that result in integer value when divide total minutes of a day will be considered. For example, if TimeInterval=2 Hours 15 minutes and total minutes = 1440 (24 Hours per day), then `TimeInterval` will be changed to ‘144’ (1440%144=0) by considering (total minutes % TimeInterval = 0), it will return integer value for time slots rendering.
 * If the custom `StartHour` and `EndHour` are given, then the number of time slots calculated based on given `StartHour` and `EndHour` should result in integer value, otherwise next immediate `TimeInterval` will be considered until the result is integer value. For example, if `StartHour` is 9 (09:00AM), `EndHour` is 18.25 (06:15 PM), `TimeInterval` is 30 minutes, and total minutes = 555 ((18.25-9)*60), then the `TimeInterval` will be changed to ’37 minutes’ (555%37=0) by considering (total minutes % timeInterval = 0). it will return integer value for time slots rendering.
 
 ## Special time regions
@@ -99,8 +99,8 @@ You can enable or disable the touch interaction of `SpecialTimeRegion` using the
 Schedule.ViewType = SchedulerViewType.Week;
 Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-    StartTime = new System.DateTime(2020, 07, 07, 12, 0, 0),
-    EndTime = new System.DateTime(2020, 07, 07, 13, 0, 0),
+    StartTime = new System.DateTime(2020, 07, 07, 13, 0, 0),
+    EndTime = new System.DateTime(2020, 07, 07, 14, 0, 0),
     Text = "Lunch",
     CanEdit = false,
     Background = Brushes.Black,
@@ -108,6 +108,7 @@ Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 });
 {% endhighlight %}
 {% endtabs %}
+
 ![Selection restriction in timeslots in WPF Scheduler](DaysView_Images/adding-Selectionrestrictionintimeslots.png)
 
 N>NOTE
@@ -144,8 +145,8 @@ The recurring time region on a daily, weekly, monthly, or yearly interval. The r
 Schedule.ViewType = SchedulerViewType.Week;
 Schedule.DaysViewSettings.SpecialTimeRegions.Add(new SpecialTimeRegion
 {
-    StartTime = new System.DateTime(2020, 05, 05, 12, 0, 0),
-    EndTime = new System.DateTime(2020, 05, 05, 13, 0, 0),
+    StartTime = new System.DateTime(2020, 07, 05, 13, 0, 0),
+    EndTime = new System.DateTime(2020, 07, 05, 14, 0, 0),
     Text = "Lunch",
     CanEdit = false,
     Background = Brushes.Black,
@@ -219,6 +220,8 @@ The `SpecialTimeRegion` background color can be customized by using the `Backgro
         </syncfusion:DaysViewSettings>
     </syncfusion:SfScheduler.DaysViewSettings>
 </syncfusion:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
 
 ![Special time region customization in WPF Scheduler](DaysView_Images/adding-Specialtimeregioncustomization.png)
 
