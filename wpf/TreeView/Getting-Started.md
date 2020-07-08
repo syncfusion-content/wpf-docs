@@ -1,311 +1,635 @@
 ---
 layout: post
-title: Getting Started of TreeViewAdv | Syncfusion
-description: Getting Started of TreeViewAdv explains how to implement the TreeViewAdv control to the application and its basic functions
+title: Getting started with WPF TreeView control | Syncfusion
+description: Learn here about getting started with Syncfusion WPF TreeView (SfTreeView) control and more details. 
 platform: wpf
-control: TreeViewAdv
+control: SfTreeView
 documentation: ug
 ---
-# Getting Started with WPF TreeView (TreeViewAdv)
 
-This section explains how to create Tree layout using [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control.
+# Getting started with WPF TreeView (SfTreeView)
 
-## Assembly deployment
+This section provides a quick overview for getting started with the `SfTreeView` for WPF. Walk through the entire process of creating a real world of this control.
 
-Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#treeviewadv) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
+## Assembly Deployment
 
-Refer to this [documentation](https://help.syncfusion.com/wpf/visual-studio-integration/nuget-packages) to find more details about installing nuget packages in a WPF application.
+Refer to the [Control Dependencies](https://help.syncfusion.com/wpf/control-dependencies#sftreeview) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the control in any application.
 
-## Add TreeViewAdv to Project
+Refer to this documentation to find more details about installing nuget packages in a WPF application.
 
-The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control can be added to project by the following ways.
+## Creating simple application with SfTreeView
 
-1. Adding TreeViewAdv by designer.
-2. Adding TreeViewAdv by XAML.
-3. Adding TreeViewAdv by C#.
+* Creating the project
+* Add SfTreeView to Project
+* Populating Nodes without data source - Unbound Mode
+* Bind to a hierarchical data source - Bound Mode
+* Bind to a Hierarchy Property Descriptors data source - Bound Mode
 
-## Adding WPF TreeViewAdv via designer
+### Creating the project
 
-1) The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) can be added to an application by dragging it from the toolbox to a designer view. The following dependent assemblies will be added automatically.
+Create new WPF Project in Visual Studio to display [SfTreeView](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF.html) with data objects.
 
-*  Syncfusion.Tools.Wpf
+### Add SfTreeView to Project
 
-*  Syncfusion.Shared.Wpf
+The SfTreeView control can be added to project by the following ways.
 
-![Drag and drop WPF TreeViewAdv from toolbox](Getting_Started_images/TreeViewAdv_GettingStarted.jpg)
+#### Adding SfTreeView by designer.
 
-2) Set the properties for TreeViewAdv in design mode using the SmartTag feature.
+SfTreeView control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-## Adding WPF TreeViewAdv via XAML
+![Displaying the addition of WPF SfTreeView control via the designer](GettingStarted_images/Gettingstarted_image1.png)
 
-To add the [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) manually in XAML, follow these steps:
+#### Adding SfTreeView by XAML.
 
-1) Create a new WPF project in Visual Studio.
+In order to add control manually in XAML, do the below steps,
 
-2) Add the following required assembly references to the project:
+1. Add the below required assembly references to the project,
 
-*  Syncfusion.Tools.Wpf
-
-*  Syncfusion.Shared.Wpf
-
-3) Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf**, and declare the TreeViewAdv in XAML page.
+	* Syncfusion.SfBusyIndicator.WPF
+	* Syncfusion.SfTreeView.WPF
+	* Syncfusion.SfGridCommon.WPF
+	
+2. Import Syncfusion WPF schema **http://schemas.syncfusion.com/wpf** in XAML page.
+3. Declare SfTreeView control in XAML page.
 
 {% tabs %}
+{% highlight xaml %}
 
-{% highlight XAML %}
-
-<Window x:Class="TreeViewAdv_sample.MainWindow"
+<Window x:Class="GettingStarted.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TreeViewAdv_sample"
+        xmlns:local="clr-namespace:GettingStarted"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-
-<Grid>
-<syncfusion:TreeViewAdv Height="160" Width="160" HorizontalAlignment="Center"
-VerticalAlignment="Center" syncfusion:DockingManager.DockToFill="True" />
-</Grid>
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <syncfusion:SfTreeView x:Name="treeView" />
+    </Grid>
 </Window>
 
 {% endhighlight %}
-
 {% endtabs %}
 
-## Adding WPF TreeViewAdv via C#
+#### Adding SfTreeView by C#.
 
-To add the [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) manually in C#, follow these steps:
+In order to add control manually in C#, do the below steps,
 
-1) Create a new WPF application via Visual Studio.
-
-2) Add the following required assembly references to the project:
-
-*  Syncfusion.Tools.Wpf
-
-*  Syncfusion.Shared.Wpf
-
-3) Include the required namespace.
+1. Add the below required assembly references to the project,
+	* Syncfusion.SfBusyIndicator.WPF
+	* Syncfusion.SfTreeView.WPF
+	* Syncfusion.SfGridCommon.WPF
+2. Import SfTreeView namespace **using Syncfusion.UI.Xaml.TreeView** .
+3. Create SfTreeView control instance and add it to the Page.
 
 {% tabs %}
+{% highlight c# %}
 
-{% highlight C# %}
+using Syncfusion.UI.Xaml.TreeView;
+using System.Windows;
 
-using Syncfusion.Windows.Tools.Controls;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-4) Create an instance of [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html), and add it to the window.
-
-{% tabs %}
-
-{% highlight C# %}
-
-            //Initializing TreeViewAdv 
-            TreeViewAdv treeView = new TreeViewAdv();
-
-            //Setting Height,Width and HorizontalAlignment
-            treeView.Height = 150;
-            treeView.Width = 150;
-            treeView.HorizontalAlignment = HorizontalAlignment.Center;
-
-            //Adding control in MainWindow
-            this.Content = treeView;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-## Adding TreeView item to TreeViewAdv control
-
-The TreeviewItem is added to a [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control either by using XAML or C# codes. The following code example lets you to create and add treeview items to the TreeViewAdv using [TreeViewItemAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewItemAdv.html).
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window x:Class="WpfApplication1.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-Title="MainWindow" Height="350" Width="525">
-<Grid>
-<syncfusion:TreeViewAdv x:Name="Tree">
-<syncfusion:TreeViewItemAdv Header="WPF" />
-<syncfusion:TreeViewItemAdv Header="Winrt" />
-<syncfusion:TreeViewItemAdv Header="Silverlight" />
-<syncfusion:TreeViewItemAdv Header="WindowPhone" />
-<syncfusion:TreeViewItemAdv Header="UniversalWindows" />
-</syncfusion:TreeViewAdv>
-</Grid>
-</Window>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
+namespace GettingStarted
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-
-            TreeViewAdv treeView = new TreeViewAdv() { Name = "Tree" };
-            treeView.Height = 150;
-            treeView.Width = 150;
-            treeView.HorizontalAlignment = HorizontalAlignment.Center;
-
-            TreeViewItemAdv item1 = new TreeViewItemAdv();
-            item1.Header = "WPF";
-
-            TreeViewItemAdv item2 = new TreeViewItemAdv();
-            item2.Header = "Winrt";
-
-            TreeViewItemAdv item3 = new TreeViewItemAdv();
-            item3.Header = "Silverlight";
-
-            TreeViewItemAdv item4 = new TreeViewItemAdv();
-            item4.Header = "WindowPhone";
-
-            TreeViewItemAdv item5 = new TreeViewItemAdv();
-            item5.Header = "UniversalWindows";
-
-            treeView.Items.Add(item1);
-            treeView.Items.Add(item2);
-            treeView.Items.Add(item3);
-            treeView.Items.Add(item4);
-            treeView.Items.Add(item5);
-
-            this.Content = treeView;
-
+            SfTreeView treeView = new SfTreeView();
+            Root_Grid.Children.Add(treeView);
         }
-    }
-{% endhighlight %}
-
-{% endtabs %}
-
-## Set VisualStyle
-
-[TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) supports various visual styles by using the SkinStorage. To apply Visual Studio style on the current layout, refer the below code to apply the value Metro to the VisualStyle property of the SkinStorage for the Window
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window x:Class="WpfApplication1.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-Title="MainWindow" Height="350" Width="525">
-<Grid>
-<syncfusion:TreeViewAdv syncfusion:SkinStorage.VisualStyle="Metro" x:Name="Tree">
-<syncfusion:TreeViewItemAdv Header="WPF" />
-<syncfusion:TreeViewItemAdv Header="Winrt" />
-<syncfusion:TreeViewItemAdv Header="Silverlight" />
-<syncfusion:TreeViewItemAdv Header="WindowPhone" />
-<syncfusion:TreeViewItemAdv Header="UniversalWindows"/>
-</syncfusion:TreeViewAdv>
-</Grid>
-</Window>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    TreeViewAdv treeView = new TreeViewAdv();
-    SkinStorage.SetVisualStyle(treeView, "Metro");
-    this.Content = treeView;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Visual style for TreeViewAdv](Getting_Started_images/Getting_Started_img1.jpeg)
-
-## Setting ItemsSource for TreeviewAdv
-
-The following code snippet sets a collection used to generate the Items of the [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<Window x:Class="WpfApplication1.MainWindow"
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-syncfusion:SkinStorage.VisualStyle="Metro"
-xmlns:local="clr-namespace:WpfApplication1"
-Title="MainWindow" Height="350" Width="525">
-<Window.Resources>
-<local:TechnologyList x:Key="technologyList" />
-</Window.Resources>
-<Grid>
-<syncfusion:TreeViewAdv x:Name="Tree" ItemsSource="{StaticResource technologyList}" >
-</syncfusion:TreeViewAdv>
-</Grid>
-</Window>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-{% tabs %}
-
-{% highlight C# %}
-
-public class TechnologyList : ObservableCollection<string>
-{
-    public TechnologyList()
-    {
-        this.Add("WPF");
-        this.Add("Winrt");
-        this.Add("Silverlight");
-        this.Add("WindowPhone");
-        this.Add("UniversalWindows");
     }
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-{% highlight VB %}
+### Populating Nodes without data source - Unbound Mode
 
-Public Class TechnologyList
-Inherits ObservableCollection(Of String)
-Public Sub New()
-Me.Add("WPF")
-Me.Add("Winrt")
-Me.Add("Silverlight")
-Me.Add("WindowPhone")
-Me.Add("UniversalWindows")
-End Sub
-End Class
+You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a tree view, you use a `SfTreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the [SfTreeView.Nodes](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~Nodes.html) collection. Each `TreeViewNode` can have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require.
+
+{% tabs %}
+{% highlight xaml %}
+<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GettingStarted"
+        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF" x:Class="GettingStarted.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Syncfusion:SfTreeView HorizontalAlignment="Left" Height="414" Margin="318,0,0,0" VerticalAlignment="Center" Width="250">
+            <Syncfusion:SfTreeView.Nodes>
+                <Engine:TreeViewNode Content="Grains" IsExpanded="True">
+                    <Engine:TreeViewNode.ChildNodes>
+                        <Engine:TreeViewNode Content="Cereals" IsExpanded="True">
+                            <Engine:TreeViewNode.ChildNodes>
+                                <Engine:TreeViewNode Content="Rice"/>
+                                <Engine:TreeViewNode Content="Barley"/>
+                            </Engine:TreeViewNode.ChildNodes>
+                        </Engine:TreeViewNode>
+                        <Engine:TreeViewNode Content="Oilseeds">
+                            <Engine:TreeViewNode.ChildNodes>
+                                <Engine:TreeViewNode Content="Safflower"/>
+                            </Engine:TreeViewNode.ChildNodes>
+                        </Engine:TreeViewNode>
+                    </Engine:TreeViewNode.ChildNodes>
+                </Engine:TreeViewNode>
+                <Engine:TreeViewNode Content="Fruits" IsExpanded="true">
+                    <Engine:TreeViewNode.ChildNodes>
+                        <Engine:TreeViewNode Content="Orange"/>
+                        <Engine:TreeViewNode Content="Apples" IsExpanded="true"/>
+                    </Engine:TreeViewNode.ChildNodes>
+                </Engine:TreeViewNode>
+                <Engine:TreeViewNode Content="Vegetables" IsExpanded="true">
+                    <Engine:TreeViewNode.ChildNodes>
+                        <Engine:TreeViewNode Content="Root Vegetables" IsExpanded="true">
+                            <Engine:TreeViewNode.ChildNodes>
+                                <Engine:TreeViewNode Content="Potato"/>
+                                <Engine:TreeViewNode Content="Carrot"/>
+                            </Engine:TreeViewNode.ChildNodes>
+                        </Engine:TreeViewNode>
+                        <Engine:TreeViewNode Content="Podded">
+                            <Engine:TreeViewNode.ChildNodes>
+                                <Engine:TreeViewNode Content="Peanut"/>
+                                <Engine:TreeViewNode Content="Lentil"/>
+                            </Engine:TreeViewNode.ChildNodes>
+                        </Engine:TreeViewNode>
+                    </Engine:TreeViewNode.ChildNodes>
+                </Engine:TreeViewNode>
+            </Syncfusion:SfTreeView.Nodes>
+        </Syncfusion:SfTreeView>
+    </Grid>
+</Window>
+{% endhighlight %}
+{% endtabs %}
+
+![Populating nodes without data source in SfTreeView ](GettingStarted_images/Gettingstarted_image2.png)
+
+### Bind to a hierarchical data source - Bound Mode
+
+You can create a tree view by binding the ItemsSource to a hierarchical data source. To create a tree view using data binding, set a hierarchical collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemsSource.html) property. Then in the [ItemTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemTemplate.html) and [ExpanderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ExpanderTemplate.html), set the child items collection to the `ItemsSource` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="NodeWithImageDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NodeWithImageDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
+        mc:Ignorable="d">
+    
+    <Window.DataContext>
+        <local:FileManagerViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <syncfusion:SfTreeView x:Name="sfTreeView" 
+                               ChildPropertyName="SubFiles"
+                               ItemsSource="{Binding ImageNodeInfo}"  >							   
+        </syncfusion:SfTreeView>							   
+    </Grid>
+</Window>
 
 {% endhighlight %}
+{% highlight c# %}
 
-{% endtabs %}  
+public class FileManager : INotifyPropertyChanged
+{
+   private string fileName;
+   private ImageSource imageIcon;
+   private ObservableCollection<FileManager> subFiles;
 
-![ItemSource for TreeViewAdv](Getting_Started_images/Getting_Started_img2.jpeg)
+   public ObservableCollection<FileManager> SubFiles
+   {
+      get { return subFiles; }
+      set
+      {
+         subFiles = value;
+         RaisedOnPropertyChanged("SubFiles");
+      }
+   }
 
-## Multiple Selection in TreeViewAdv
+   public string ItemName
+   {
+      get { return fileName; }
+      set
+      {
+         fileName = value;
+         RaisedOnPropertyChanged("FolderName");
+      }
+   }
+   
+   public ImageSource ImageIcon
+   {
+       get { return imageIcon; }
+       set
+       {
+          imageIcon = value;
+          RaisedOnPropertyChanged("ImageIcon");
+       }
+   }
 
-The [TreeViewAdv](https://help.syncfusion.com/cr/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv.html) control supports selecting multiple items by using the CTRL or SHIFT keys. The selected items are dragged to any item or node within the same control or to another TreeViewAdv control. This is achieved by enabling the [AllowMultiSelect](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~AllowMultiSelect.html) property. Click [here](https://help.syncfusion.com/wpf/treeview/selecting-node#enable-to-allow-multiple-selection-in-treeviewadv) to get detailed information on AllowMultiSelect function.
+   public event PropertyChangedEventHandler PropertyChanged;
 
-![Multi Selecting of TreeViewAdv](Getting_Started_images/Getting_Started_img3.png)
+   public void RaisedOnPropertyChanged(string _PropertyName)
+   {
+      if (PropertyChanged != null)
+      {
+         PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+      }
+   }
+}
 
-## Drag and Drop in TreeViewAdv
+{% endhighlight %}
+{% highlight c# %}
 
-By enabling the [AllowDragDrop](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~AllowDragDrop.html) property TreeViewAdv control allows us to drag TreeView items from one location to another. By using the [DraggingContainerOpacity](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~DraggingContainerOpacity.html) property, we can change the opacity value of the dragged element. It is useful to be able to view the content behind the dragged element. Click [here](https://help.syncfusion.com/wpf/treeview/dragging-treeview-items) to get detailed information on drag and drop of TreeViewAdv items.
+public class FileManagerViewModel
+{
+   private ObservableCollection<FileManager> imageNodeInfo;
 
-![DragAndDrop with DraggingContainerOpacity](Getting_Started_images/Getting_Started_img4.png)
+   public FileManagerViewModel()
+   {
+      GenerateSource();
+   }
 
-## MultiColumn TreeView in TreeViewAdv
+   public ObservableCollection<FileManager> ImageNodeInfo
+   {
+      get { return imageNodeInfo; }
+      set { this.imageNodeInfo = value; }
+   }
 
-TreeView control can be created with multiple columns by setting the [MultiColumnEnable](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.TreeViewAdv~MultiColumnEnable.html) property to true. Click [here](https://help.syncfusion.com/wpf/treeview/creating-a-multicolumn-treeview) to get detailed information on how to create MultiColumn TreeViewAdv.
+   private void GenerateSource()
+   {
+      var nodeImageInfo = new ObservableCollection<FileManager>();
+      Assembly assembly = typeof(GettingStated).GetTypeInfo().Assembly;
+      var doc = new FileManager() { ItemName = "Documents", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
+      var download = new FileManager() { ItemName = "Downloads", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
+      var mp3 = new FileManager() { ItemName = "Music", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
+      var pictures = new FileManager() { ItemName = "Pictures", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
+      var video = new FileManager() { ItemName = "Videos", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
 
-![MultiColumnTreeView in TreeViewAdv](Getting_Started_images/Getting_Started_img5.png)
+      var pollution = new FileManager() { ItemName = "Environmental Pollution.docx", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_word.png", assembly) };
+      var globalWarming = new FileManager() { ItemName = "Global Warming.ppt", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_ppt.png", assembly) };
+      var sanitation = new FileManager() { ItemName = "Sanitation.docx", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_word.png", assembly) };
+      var socialNetwork = new FileManager() { ItemName = "Social Network.pdf", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_pdf.png", assembly) };
+      var youthEmpower = new FileManager() { ItemName = "Youth Empowerment.pdf", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_pdf.png", assembly) };
+
+      var games = new FileManager() { ItemName = "Game.exe", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_exe.png", assembly) };
+      var tutorials = new FileManager() { ItemName = "Tutorials.zip", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_zip.png", assembly) };
+      var TypeScript = new FileManager() { ItemName = "TypeScript.7z", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_zip.png", assembly) };
+      var uiGuide = new FileManager() { ItemName = "UI-Guide.pdf", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_pdf.png", assembly) };
+
+      var song = new FileManager() { ItemName = "Goutiest", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_mp3.png", assembly) };
+
+      var camera = new FileManager() { ItemName = "Camera Roll", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_folder.png", assembly) };
+      var stone = new FileManager() { ItemName = "Stone.jpg", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_png.png", assembly) };
+      var wind = new FileManager() { ItemName = "Wind.jpg", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_png.png", assembly) };
+
+      var img0 = new FileManager() { ItemName = "WIN_20160726_094117.JPG", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_img0.png", assembly) };
+      var img1 = new FileManager() { ItemName = "WIN_20160726_094118.JPG", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_img1.png", assembly) };
+
+      var video1 = new FileManager() { ItemName = "Naturals.mp4", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_video.png", assembly) };
+      var video2 = new FileManager() { ItemName = "Wild.mpg", ImageIcon = ImageSource.FromResource("GettingStartedBound.Icons.treeview_video.png", assembly) };
+
+      doc.SubFiles = new ObservableCollection<FileManager>
+      {
+         pollution,
+         globalWarming,
+         sanitation,
+         socialNetwork,
+         youthEmpower
+      };
+
+      download.SubFiles = new ObservableCollection<FileManager>
+      {
+         games,
+         tutorials,
+         TypeScript,
+         uiGuide
+      };
+
+      mp3.SubFiles = new ObservableCollection<FileManager>
+      {
+         song
+      };
+
+      pictures.SubFiles = new ObservableCollection<FileManager>
+      {
+         camera,
+         stone,
+         wind
+      };
+      
+      camera.SubFiles = new ObservableCollection<FileManager>
+      {
+         img0,
+         img1
+      };
+
+      video.SubFiles = new ObservableCollection<FileManager>
+      {
+         video1,
+         video2
+      };
+
+      nodeImageInfo.Add(doc);
+      nodeImageInfo.Add(download);
+      nodeImageInfo.Add(mp3);
+      nodeImageInfo.Add(pictures);
+      nodeImageInfo.Add(video);
+      imageNodeInfo = nodeImageInfo;
+  }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Bind to a Hierarchy Property Descriptors data source - Bound Mode
+
+ You can create a tree view by binding the `ItemsSource` to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the [ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemsSource.html) property, and then set the TargetType and [ChildPropertyName](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ChildPropertyName.html) property values in [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~HierarchyPropertyDescriptors.html).
+ 
+ {% tabs %}
+{% highlight xaml %}
+
+<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:treeViewEngine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" >
+		
+	<Window.DataContext>
+        <local:FileManagerViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <syncfusion:SfTreeView x:Name="treeView" ItemsSource="{Binding ImageNodeInfo}">
+            <sfTreeView:SfTreeView.HierarchyPropertyDescriptors>
+                <treeviewengine:HierarchyPropertyDescriptor TargetType="{x:Type local:Folder}" ChildPropertyName="Files"/>
+                <treeviewengine:HierarchyPropertyDescriptor TargetType="{x:Type local:File}" ChildPropertyName="SubFiles"/>
+            </sfTreeView:SfTreeView.HierarchyPropertyDescriptors>
+        </syncfusion:SfTreeView>
+    </Grid>
+</Window>
+
+{% endhighlight %}
+{% highlight c# %}
+public class Folder : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+    private ObservableCollection<File> files;
+
+    public Folder()
+    {
+    }
+
+    public ObservableCollection<File> Files
+    {
+        get { return files; }
+        set
+        {
+            files = value;
+            RaisedOnPropertyChanged("SubFiles");
+        }
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FileName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+public class File : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+    private ObservableCollection<SubFile> subFiles;
+
+    public File()
+    {
+    }
+
+    public ObservableCollection<SubFile> SubFiles
+    {
+        get { return subFiles; }
+        set
+        {
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
+        }
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FileName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+public class SubFile : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+
+    public SubFile()
+    {
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FolderName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+{% endhighlight %}
+{% highlight c# %}
+
+public class FileManagerViewModel
+{
+    public ObservableCollection<Folder> Folders { get; set; }
+
+    public ObservableCollection<File> Files { get; set; }
+
+    public ObservableCollection<SubFile> SubFiles { get; set; }
+
+    public FileManagerViewModel()
+    {
+        this.Folders = GetFiles();
+    }
+
+    private ObservableCollection<Folder> GetFiles()
+    {
+        var nodeImageInfo = new ObservableCollection<Folder>();
+        Assembly assembly = typeof(NodeWithImage).GetTypeInfo().Assembly;
+
+        var doc = new Folder() { FileName = "Documents", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var download = new Folder() { FileName = "Downloads", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var mp3 = new Folder() { FileName = "Music", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var pictures = new Folder() { FileName = "Pictures", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var video = new Folder() { FileName = "Videos", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+
+        var pollution = new File() { FileName = "Environmental Pollution.docx", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_word.png", assembly) };
+        var globalWarming = new File() { FileName = "Global Warming.ppt", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_ppt.png", assembly) };
+        var sanitation = new File() { FileName = "Sanitation.docx", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_word.png", assembly) };
+        var socialNetwork = new File() { FileName = "Social Network.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+        var youthEmpower = new File() { FileName = "Youth Empowerment.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+
+        var games = new File() { FileName = "Game.exe", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_exe.png", assembly) };
+        var tutorials = new File() { FileName = "Tutorials.zip", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_zip.png", assembly) };
+        var typeScript = new File() { FileName = "TypeScript.7z", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_zip.png", assembly) };
+        var uiGuide = new File() { FileName = "UI-Guide.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+
+        var song = new File() { FileName = "Gouttes", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_mp3.png", assembly) };
+
+        var camera = new File() { FileName = "Camera Roll", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var stone = new File() { FileName = "Stone.jpg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_png.png", assembly) };
+        var wind = new File() { FileName = "Wind.jpg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_png.png", assembly) };
+
+        var img0 = new SubFile() { FileName = "WIN_20160726_094117.JPG", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_img0.png", assembly) };
+        var img1 = new SubFile() { FileName = "WIN_20160726_094118.JPG", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_img1.png", assembly) };
+
+        var video1 = new File() { FileName = "Naturals.mp4", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_video.png", assembly) };
+        var video2 = new File() { FileName = "Wild.mpeg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_video.png", assembly) };
+
+        doc.Files = new ObservableCollection<File>
+            {
+                pollution,
+                globalWarming,
+                sanitation,
+                socialNetwork,
+                youthEmpower
+            };
+
+        download.Files = new ObservableCollection<File>
+            {
+                games,
+                tutorials,
+                typeScript,
+                uiGuide
+            };
+
+        mp3.Files = new ObservableCollection<File>
+            {
+                song
+            };
+
+        pictures.Files = new ObservableCollection<File>
+            {
+                camera,
+                stone,
+                wind
+            };
+
+        camera.SubFiles = new ObservableCollection<SubFile>
+            {
+                img0,
+                img1
+            };
+
+        video.Files = new ObservableCollection<File>
+            {
+                video1,
+                video2
+            };
+
+        nodeImageInfo.Add(doc);
+        nodeImageInfo.Add(download);
+        nodeImageInfo.Add(mp3);
+        nodeImageInfo.Add(pictures);
+        nodeImageInfo.Add(video);
+        return nodeImageInfo;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
