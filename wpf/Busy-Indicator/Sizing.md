@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sizing | Busy Indicator | wpf | Syncfusion
-description: sizing
+description: This section describes how to renderer the Syncfusion SfBusyIndicator control with perticular height and width. 
 platform: wpf
 control: Busy Indicator
 documentation: ug
 ---
 
-# Sizing
+# Sizing in WPF Busy Indicator (SfBusyIndicator)
 
 ## ViewBoxHeight
 
@@ -50,7 +50,7 @@ Grid1.Children.Add(SfBusyIndicator)
 {% endtabs %}
 
 
-![](Sizing_images/Sizing_img1.png)
+![ViewboxHeight](Sizing_images/Sizing_img1.png)
 
 
 ## ViewBoxWidth
@@ -97,7 +97,12 @@ Grid1.Children.Add(SfBusyIndicator)
 {% endtabs %}
 
 
-![](Sizing_images/Sizing_img2.png)
+![ViewBoxWidth](Sizing_images/Sizing_img2.png)
 
 Busy Indicator with height and width
 {:.caption}
+
+
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Sizing) in GitHub
