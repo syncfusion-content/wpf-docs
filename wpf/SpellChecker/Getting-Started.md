@@ -110,7 +110,7 @@ public class TextSpellEditor : IEditorProperties {
                  VerticalContentAlignment="Top"/>
         <Button HorizontalAlignment="Center"
                 Content="Spell Check"
-                Click="Button_Click">
+                Click="SpellCheck_ButtonClick">
         </Button>
     </StackPanel>
 </Grid>
@@ -141,7 +141,7 @@ public partial class MainWindow : Window {
     }
     
     //Call SpellCheck method to open SpellCheck on button click
-    private void Button_Click(object sender, RoutedEventArgs e) {
+    private void SpellCheck_ButtonClick(object sender, RoutedEventArgs e) {
         SpellChecker.PerformSpellCheckUsingDialog(Editor);
     }
 }
@@ -153,7 +153,7 @@ public partial class MainWindow : Window {
 
 N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/SfSpellChecker) in GitHub
 
-## How to SpellCheck using SfSpellChecker
+## Fix spelling mistakes using spell check dialog
 
 1. You can open a `SfSpellChecker` by clicking `Spell Check` button and then `SpellChecker` opened as pop-up with `TextSpellEditor`. 
 
@@ -165,7 +165,7 @@ N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples
 
 N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/SfSpellChecker) in GitHub
 
-## SpeckCheck using ContextMenu
+## Fix spelling mistakes using context menu
 
 You can simply correct the spell error words by choosing the correct option from listed suggestions from the ContextMenu. You can enable context menu suggestion by using the [PerformSpellCheckUsingContextMenu](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~PerformSpellCheckUsingContextMenu.html) method and can get the suggestion words by right click on the error word. The Error words are differentiated by red underlining.
 
@@ -205,7 +205,7 @@ public partial class MainWindow : Window {
 
 N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/SfSpellChecker) in GitHub
 
-## Getting Suggestions for Error Word
+## Get suggestions for misspelled word
 
 You can get the suggestion list by passing the error word in the below methods.
 
@@ -360,13 +360,13 @@ The following dictionary types are used for spell-checking,
  N> Refer the [Dictionary for any culture]
 (https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#spellCheck-dictionaries-for-any-culture) page to know more about how to add and use the Dictionary for any culture to an application.
 
-## SpellCheck using Custom Dictionary
+## Add custom words to dictionary
 
 If you want to skip or make the error or custom word as correct word, add that word into the custom dictionary text file. You can add that word on before perform spell check by directly adding that words into the custom dictionary text file and also can add the error word into the custom dictionary text file at runtime by clicking the `Add to Dictionary` button. Then, while performing next spell check, Custom dictionary text file contained words are considered as a correct words.
 
-N> Refer the [Custom Dictionary](https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#spellCheck-using-Custom-Dictionary) page to know more about how to add and use the custom dictionary to an application.
+N> Refer the [Custom Dictionary](https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#adding-custom-dictionary) page to know more about how to add and use the custom dictionary to an application.
 
-## SpellCheckCompleted Notification
+## Event to notify when spell check is completed
 
 By default, when the spell check is completed, it will be notified by using the message box that showing the `Spell check is completed` message. If you want to restrict that message box, you can handle the [SpellCheckCompleted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~SpellCheckCompleted_EV.html) event and set the [SpellCheckCompletedEventArgs.ShowMessageBox](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SpellCheckCompletedEventArgs~ShowMessageBox.html) to `false`.
 
