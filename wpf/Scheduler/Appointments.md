@@ -566,42 +566,6 @@ N>RecurrenceId should be a recurrence pattern appointment object.
 
 ![Custom Exception Appointment in WPF Scheduler](appointments_images/Adding-CustomExceptionAppointment.png)
 
-## Appearance customization
-The default appearance of schedule appointment can be customized in all views by using the `AppointmentTemplate` and `AppointmentTemplateSelector` properties of `ViewSettingsBase`. You can use the `AllDayAppointmentTemplate` property of `DaysViewSettings` to customize the appearance of all day appointments in day, week and work week views.
-{% tabs %}
-{% highlight xaml %}
-<Window.Resources>
-<DataTemplate x:Key="appointmentTemplate">
-<StackPanel Background="{Binding Background}"  
-VerticalAlignment="Stretch" 
-HorizontalAlignment="Stretch"
-Orientation="Horizontal">
-<TextBlock Margin="5"
-    VerticalAlignment="Center"
-    Text="Meeting" 
-    TextTrimming="CharacterEllipsis"
-    TextWrapping="Wrap"
-    TextAlignment="Left"
-    FontWeight="Bold"
-/>
-</StackPanel>
-</DataTemplate>
-</Window.Resources>
-{% endhighlight %}
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
-<syncfusion:SfScheduler.DaysViewSettings>
-    <syncfusion:DaysViewSettings 
-        AppointmentTemplate="{StaticResource appointmentTemplate}"/>
-    </syncfusion:SfScheduler.DaysViewSettings>
-</syncfusion:SfScheduler>
-{% endhighlight %}
-{% endtabs %}
-
-![Appearance Customization in WPF Scheduler](appointments_images/Adding-AppearanceCustomization.png)
-
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-appearance-customization)
-
 ## Appointment editing
 
 ### Adding appointments
@@ -780,3 +744,39 @@ this.Schedule.AppointmentResizing += Schedule_AppointmentResizing;
         }
 {% endhighlight %}
 {% endtabs %}
+
+## Appearance customization
+The default appearance of schedule appointment can be customized in all views by using the `AppointmentTemplate` and `AppointmentTemplateSelector` properties of `ViewSettingsBase`. You can use the `AllDayAppointmentTemplate` property of `DaysViewSettings` to customize the appearance of all day appointments in day, week and work week views.
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>
+<DataTemplate x:Key="appointmentTemplate">
+<StackPanel Background="{Binding Background}"  
+VerticalAlignment="Stretch" 
+HorizontalAlignment="Stretch"
+Orientation="Horizontal">
+<TextBlock Margin="5"
+    VerticalAlignment="Center"
+    Text="Meeting" 
+    TextTrimming="CharacterEllipsis"
+    TextWrapping="Wrap"
+    TextAlignment="Left"
+    FontWeight="Bold"
+/>
+</StackPanel>
+</DataTemplate>
+</Window.Resources>
+{% endhighlight %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
+<syncfusion:SfScheduler.DaysViewSettings>
+    <syncfusion:DaysViewSettings 
+        AppointmentTemplate="{StaticResource appointmentTemplate}"/>
+    </syncfusion:SfScheduler.DaysViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% endtabs %}
+
+![Appearance Customization in WPF Scheduler](appointments_images/Adding-AppearanceCustomization.png)
+
+N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-appearance-customization)
