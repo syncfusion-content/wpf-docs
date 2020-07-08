@@ -25,6 +25,7 @@ scheduleAppointmentCollection.Add(new ScheduleAppointment()
 	Location = "Hutchison road", 
 }); 
 
+### AppointmentCollectionChanged
 //Adding schedule appointment collection to the ItemSource of SfScheduler
 Schedule.ItemsSource = scheduleAppointmentCollection;
 {% endhighlight %}
