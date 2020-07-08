@@ -46,7 +46,7 @@ If you want to spell check the given document with high accuracy and more suitab
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The follwing code snippets only explain the insertion of the Hunspell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
+N> The following code snippets only explain the insertion of the Hunspell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
 
 {% tabs %}
 {% highlight C# %}
@@ -100,7 +100,7 @@ If you want to spell check the given document quickly and get a suitable suggest
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The follwing code snippets only explain the insertion of the Ispell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
+N> The following code snippets only explain the insertion of the Ispell dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
 
 {% tabs %}
 {% highlight C# %}
@@ -156,7 +156,7 @@ N> `Ispell` have different rules in the Affix files, so you can't use the `OpenO
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The follwing code snippets only explain the insertion of the OpenOffice dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
+N> The following code snippets only explain the insertion of the OpenOffice dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
 
 {% tabs %}
 {% highlight c# %}
@@ -205,7 +205,7 @@ If you want to skip or make the error or custom word as correct word, add that w
 
 4. Setting the required culture to the `SfSpellChecker.Culture` property.
 
-N> The follwing code snippets only explain the insertion of the custom dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
+N> The following code snippets only explain the insertion of the custom dictionary to the `SpellChecker`. You can get code snippets to add a `SpellChecker`, from [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) topic.
 
 {% tabs %}
 {% highlight C# %}
@@ -292,5 +292,5 @@ SpellChecker.Culture = culture;
 
 ![SpellCheck using Hunspell dictionary](Dictionary_images/HunSpell.png)
 
-Here, `SpellChecker.Culture` is `fr-FR` culture. So, french cultured `Hunspell` dictionary is used as speck check dictionary.
+Here, `SpellChecker.Culture` is `fr-FR` culture. So, `fr-FR` cultured `Hunspell` dictionary is used as speck check dictionary.
 
