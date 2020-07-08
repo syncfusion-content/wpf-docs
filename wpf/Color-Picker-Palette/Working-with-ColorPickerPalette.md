@@ -331,7 +331,7 @@ N> If we set `IsCustomTabVisible` and `IsStandardTabVisible` property value as `
 
 ## Color changed notification
 
-The selected color changed in `ColorPickerPalette` can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorChanged_EV.html) event. The `ColorChanged` event contains the old and newly selected color values in the `OldValue`, `NewValue` properties.
+The selected color changed in `ColorPickerPalette` can be examined using [ColorChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~ColorChanged_EV.html) event. The `ColorChanged` event contains the old and newly selected color values in the `OldValue`, `NewValue` properties. You can also get the color changed notification by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~SelectedCommand.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -365,37 +365,206 @@ private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPrope
 {% endhighlight %}
 {% endtabs %} 
 
+## Custom UI for the ColorPickerPalette header with selected color name
+
+You can customize the appearance of the  `ColorPickerPalette` header and can display the selected color name in the header by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~HeaderTemplate.html) property.
+
+N> The `DataContext` of `HeaderTemplate` is `ColorPickerPalette`
+{% tabs %}
+{% highlight xaml %}
+
+<Window.Resources>
+    <DataTemplate x:Key="Custom_HeaderTemplate">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid  x:Name="IconGrid" 
+                   Margin="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="image" 
+                       Source="/images/fill.png"
+                       Height="12" 
+                       Width="12"/>
+                <Border Name="color_border" 
+                        Grid.Row="1" 
+                        Height="3">
+                    <Border.Background>
+                        <SolidColorBrush Color="{Binding Color, 
+                            RelativeSource={RelativeSource FindAncestor, 
+                                AncestorLevel=1,
+                                AncestorType={x:Type syncfusion:ColorPickerPalette}}, 
+                                UpdateSourceTrigger=PropertyChanged}"/>
+                    </Border.Background>
+                </Border>
+            </Grid>
+            <TextBlock Padding="1" 
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center" Grid.Column="1" 
+                       Text="Shape Fill" FontSize="11"
+                       Width="auto"/>
+        </Grid>
+    </DataTemplate>
+</Window.Resources>
+<Grid>
+    <syncfusion:ColorPickerPalette HeaderTemplate="{DynamicResource Custom_HeaderTemplate}"
+                                   Name="ColorPickerPallete2"                                  
+                                   Margin="10"
+                                   Mode="Split"/>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette with Custom UI](Appearance_images/HeaderTemplate.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/HeaderTemplate) in GitHub
+
 ## Tooltip support
 
 Tooltip is used to show the information about the segment, when you mouse over on the segment. We can show information about the name of the color item using tooltip when hovering the mouse on the specific color item.
 
 ![ColorPickerPalette with tooltip support](Appearance_images/tooltip.gif)
 
-## Expanded mode
+## Open a popup color palette only by dropdown button
 
-If we want to directly use the `ColorPickerPalette` without drop down, set the [IsExpanded](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~IsExpanded.html) property value as `true`. The default value of `IsExpanded` is `true`.
+By default, you can open a popup color palette to select the color by clicking anywhere on the `ColorPickerPalette`. If you want to open a popup color palette only by using dropdown button, use the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Mode.html) property value as `Split`. The default value of `Mode` property is `DropDown`.
 
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:ColorPickerPalette IsExpanded="true"
-                               Name="colorPickerPalette" 
-                               Width="60"
-                               Height="40">
-</syncfusion:ColorPickerPalette>
+<syncfusion:ColorPickerPalette Mode="Split"
+                               Name="colorPickerPalette"/>
 
 {% endhighlight %}
 {% highlight C# %}
 
 ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
-colorPickerPalette.IsExpanded = true;
-colorPickerPalette.Width = 60;
-colorPickerPalette.Height = 40;
+colorPickerPalette.Mode = PickerMode.Split;
 
 {% endhighlight %}
 {% endtabs %}
 
-![ColorPickerPalette with expanded mode](Dealing-with-ColorPickerPalette_images/Expanded.png)
+![ColorPickerPalette with Split mode](Dealing-with-ColorPickerPalette_images/Split.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) in GitHub
+
+## Expanded mode
+
+If you want to directly use the palette without drop down button, set the `Mode` property value as `Palette`. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette Mode="Palette"
+                               Name="colorPickerPalette"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
+colorPickerPalette.Mode = PickerMode.Palette;
+
+{% endhighlight %}
+{% endtabs %}
+
+![ColorPickerPalette with Palette mode](Dealing-with-ColorPickerPalette_images/Expanded.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) in GitHub
+
+## Choose a color without opening a Palette
+
+If you want to select the last selected color by clicking on left side button and without opening the palette, use the `Mode` property as `Split` mode. It will trigger the color changed event by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~SelectedCommand.html) and it contains the last selected color. 
+
+For example, if you want to apply a last selected color to a any TextEditor's selected text, you need not open the popup or remember the color to be applied and choose it.
+
+{% tabs %}
+{% highlight C# %}
+
+//ViewModel.cs
+public class ViewModel : NotificationObject
+{  
+    private ICommand selectionChangedCommand;
+    private ICommand loadedChangedCommand;
+    private RichTextBox TextBox;
+   
+    public ICommand SelectionChangedCommand {
+        get {
+            return selectionChangedCommand;
+        }
+    }
+
+    public ICommand LoadedChangedCommand {
+        get {
+            return loadedChangedCommand;
+        }
+    }
+
+    public void Loadedmethod(object param) {
+        TextBox = param as RichTextBox;
+    }
+    public void PropertyChangedHandler(object param) {
+        if (param != null && TextBox != null) {
+            ColorSelectedCommandArgs groupItem = param as ColorSelectedCommandArgs;
+            TextRange range = new TextRange(TextBox.Selection.Start, TextBox.Selection.End);
+            range.ApplyPropertyValue(FlowDocument.ForegroundProperty, groupItem.Brush);
+        }
+    }
+    public ViewModel() {
+        selectionChangedCommand = new DelegateCommand<object>(PropertyChangedHandler);
+        loadedChangedCommand = new DelegateCommand<object>(Loadedmethod);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:ColorPickerPalette  Name="colorpickerpalette" 
+                                Mode="Split"
+                                SelectedCommand="{Binding SelectionChangedCommand}"
+                                Width="60" 
+                                Height="40">
+  
+ </syncfusion:ColorPickerPalette>
+
+ <RichTextBox Name="richTextBox"
+              Height="297" 
+              Width="331">
+     <i:Interaction.Triggers>
+         <i:EventTrigger EventName="Loaded">
+             <i:InvokeCommandAction Command="{Binding LoadedChangedCommand}"
+                                    CommandParameter="{Binding ElementName=richTextBox}"/>
+         </i:EventTrigger>
+     </i:Interaction.Triggers>
+     <FlowDocument>
+         <Paragraph FontSize="14">Hello, world!</Paragraph>
+         <Paragraph FontStyle="Italic" 
+                    TextAlignment="Left"
+                    FontSize="14">Thanks to the RichTextBox control, 
+                                  this FlowDocument is completely editable!</Paragraph>
+     </FlowDocument>
+ </RichTextBox>
+
+
+{% endhighlight %}
+{% highlight C# %}
+
+colorPickerPalette.Mode = PickerMode.Split;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Choose a color without opening a Palette](Dealing-with-ColorPickerPalette_images/SplitColor.png)
+
+N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/TextColorSelection) in GitHub
 
 ## Change color item size
 
