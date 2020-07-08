@@ -188,58 +188,54 @@ public class ViewModel : NotificationObject {
                              ItemsSource="{Binding CardViewItems}">
             <syncfusion:CardView.EditItemTemplate>
                 <DataTemplate>
-                    <ListBox>
-                        <ListBoxItem HorizontalContentAlignment="Stretch">
-                            <Grid >
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="75"/>
-                                    <ColumnDefinition />
-                                </Grid.ColumnDefinitions>
-                                <TextBlock Text="Name:"/>
-                                <TextBox Grid.Column="1"                                 
-                             Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
-                            </Grid>
-                        </ListBoxItem>
-                        <ListBoxItem HorizontalContentAlignment="Stretch">
-                            <Grid >
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="75"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock Text="Age:"/>
-                                <TextBox  Grid.Column="1"
-                                          Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"/>
-                            </Grid>
-                        </ListBoxItem>
-                    </ListBox>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Name:"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                        <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"    
+                                 Grid.Row="0"
+                                 Grid.Column="1"/>
+                        <TextBlock Text="Age:" 
+                                   Grid.Row="1"
+                                   Grid.Column="0"/>
+                        <TextBox Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"
+                                 Grid.Row="1" 
+                                 Grid.Column="1"/>
+                    </Grid>
                 </DataTemplate>
             </syncfusion:CardView.EditItemTemplate>
             <syncfusion:CardView.ItemTemplate>
                 <DataTemplate>
-                    <ListBox>
-                        <ListBoxItem HorizontalContentAlignment="Stretch">
-                            <Grid >
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="75"/>
-                                    <ColumnDefinition />
-                                </Grid.ColumnDefinitions>
-                                <TextBlock Text="Name:"/>
-                                <TextBlock Grid.Column="1"    
-                                           Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
-                            </Grid>
-                        </ListBoxItem>
-                        <ListBoxItem HorizontalContentAlignment="Stretch">
-                            <Grid >
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="75"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <TextBlock Text="Age:"/>
-                                <TextBlock  Grid.Column="1"
-                                          Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"/>
-                            </Grid>
-                        </ListBoxItem>
-                    </ListBox>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="20"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="75"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Name:"
+                                   Grid.Row="0"
+                                   Grid.Column="0"/>
+                        <TextBlock Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"  
+                                 Grid.Row="0"
+                                 Grid.Column="1"/>
+                        <TextBlock Text="Age:"
+                                   Grid.Row="1"
+                                   Grid.Column="0"/>
+                        <TextBlock Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}"
+                                 Grid.Row="1" 
+                                 Grid.Column="1"/>
+                    </Grid>
                 </DataTemplate>
             </syncfusion:CardView.ItemTemplate>
             <syncfusion:CardView.HeaderTemplate>
