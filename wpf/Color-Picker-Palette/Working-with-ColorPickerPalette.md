@@ -365,7 +365,7 @@ private void ColorPickerPalette_ColorChanged(DependencyObject d, DependencyPrope
 {% endhighlight %}
 {% endtabs %} 
 
-## Custom UI for the ColorPickerPalette header with selected color name
+## Customize the header
 
 You can customize the appearance of the  `ColorPickerPalette` header and can display the selected color name in the header by using the [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~HeaderTemplate.html) property.
 
@@ -431,29 +431,6 @@ Tooltip is used to show the information about the segment, when you mouse over o
 
 ![ColorPickerPalette with tooltip support](Appearance_images/tooltip.gif)
 
-## Open a popup color palette only by dropdown button
-
-By default, you can open a popup color palette to select the color by clicking anywhere on the `ColorPickerPalette`. If you want to open a popup color palette only by using dropdown button, use the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Mode.html) property value as `Split`. The default value of `Mode` property is `DropDown`.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:ColorPickerPalette Mode="Split"
-                               Name="colorPickerPalette"/>
-
-{% endhighlight %}
-{% highlight C# %}
-
-ColorPickerPalette colorPickerPalette = new ColorPickerPalette();
-colorPickerPalette.Mode = PickerMode.Split;
-
-{% endhighlight %}
-{% endtabs %}
-
-![ColorPickerPalette with Split mode](Dealing-with-ColorPickerPalette_images/Split.png)
-
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) in GitHub
-
 ## Expanded mode
 
 If you want to directly use the palette without drop down button, set the `Mode` property value as `Palette`. 
@@ -477,9 +454,11 @@ colorPickerPalette.Mode = PickerMode.Palette;
 
 N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-color-picker-palette-wpf-examples/tree/master/Samples/Getting-Started) in GitHub
 
-## Choose a color without opening a Palette
+## ColorPickerPalette as a command button
 
-If you want to select the last selected color by clicking on left side button and without opening the palette, use the `Mode` property as `Split` mode. It will trigger the color changed event by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~SelectedCommand.html) and it contains the last selected color. 
+By default, you can open a popup color palette by clicking anywhere on the `ColorPickerPalette`. If you want to select the last selected color by click on left side button and without opening the palette, use the [Mode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~Mode.html) property as `Split` mode. It will trigger the color changed event by using the [SelectedCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Tools.Controls.ColorPickerPalette~SelectedCommand.html) and it contains the last selected color. In the `Split` mode, color palette opened only by click on the drop down button.
+
+![ColorPickerPalette in drop down and split mode](Dealing-with-ColorPickerPalette_images/Mode.png)
 
 For example, if you want to apply a last selected color to a any TextEditor's selected text, you need not open the popup or remember the color to be applied and choose it.
 
