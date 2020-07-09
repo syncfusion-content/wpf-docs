@@ -52,6 +52,6 @@ _ribbon.TabPanelItem = _ribbonButton
  
 {% endtabs %}
 
-![](RibbonTabPanelItem_images/RibbonTabPanelItem_img1.jpg)
+![Setting TabPanelItem to the ribbon](RibbonTabPanelItem_images/RibbonTabPanelItem_img1.jpg)
 
 

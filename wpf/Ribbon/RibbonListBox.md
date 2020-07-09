@@ -68,7 +68,7 @@ _ribbonBar2.Items.Add(_ribbonListBox)
 
 {% endtabs %}
 
-![](RibbonListBox_images/RibbonListBox_img1.jpg)
+![Adding ribbon list box](RibbonListBox_images/RibbonListBox_img1.jpg)
 
 ## Add ListBox to the Simplified layout
 

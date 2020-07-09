@@ -51,7 +51,7 @@ _ribbonBar2.Items.Add(_ribbonTextBox)
  
 {% endtabs %}
 
-![](RibbonTextBox_images/RibbonTextBox_img1.jpg)
+![Adding text box to the ribbon](RibbonTextBox_images/RibbonTextBox_img1.jpg)
 
 ## Add TextBox to the Simplified layout
 

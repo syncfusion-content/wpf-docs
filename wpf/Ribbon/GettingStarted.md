@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Getting Started
+# Getting Started with WPF Ribbon
 
 This section explains how to implement a similar UI as Microsoft Outlook using Ribbon. 
 

@@ -64,7 +64,7 @@ _ribbonBar2.Items.Add(_ribbonRadioButton2)
 
 {% endtabs %}
 
-![](RibbonRadioButton_images/RibbonRadioButton_img1.jpg)
+![Adding radio button](RibbonRadioButton_images/RibbonRadioButton_img1.jpg)
 
 ## Add RadioButton to the Simplified layout
 

@@ -70,10 +70,10 @@ _RibbonBar2.Items.Add(_splitbutton)
 
 {% endtabs %}
 
-![](SplitButton_images/SplitButton_img1.jpg)
+![Adding DropDownMenuItem to the SplitButton](SplitButton_images/SplitButton_img1.jpg)
 
 
-## Set various sizes for DropDownButton
+## Set various sizes for SplitButton
 
 SplitButton have three types of size forms. You can set size forms using its `SizeForm` Property.
 
@@ -125,7 +125,7 @@ _ribbonBar2.Items.Add(_splitbutton3)
 
 {% endtabs %}
 
-![](SplitButton_images/SplitButton_img2.jpg)
+![Various size forms in SplitButton](SplitButton_images/SplitButton_img2.jpg)
 
 ## Settings image to SplitButton
 

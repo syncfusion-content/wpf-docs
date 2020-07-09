@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating Ribbon ModalTab in Syncfusion Ribbon control
-description: Creating Ribbon ModalTab in Syncfusion Ribbon control
+description: This section briefly describes the steps involved in creating Ribbon ModalTab in Syncfusion Ribbon control.
 platform: wpf
 control: Ribbon
 documentation: ug
@@ -14,10 +14,10 @@ Modal Tab in Ribbon Control are used to display a collection of commands other t
 
 Print Preview is a Modal Tab which displays Print Preview related commands
 
-![C:/Users/Sugapriyam/Desktop/viji/1.png](CreatingRibbonModelTab_images/CreatingRibbonModelTab_img1.jpeg)
+![Opening modal tab in the run time](CreatingRibbonModelTab_images/CreatingRibbonModelTab_img1.jpeg)
 
 
-![C:/Users/Sugapriyam/Desktop/viji/2.png](CreatingRibbonModelTab_images/CreatingRibbonModelTab_img2.jpeg)
+![Displays modal tab](CreatingRibbonModelTab_images/CreatingRibbonModelTab_img2.jpeg)
 
 
 ## Adding modal tabs to an application

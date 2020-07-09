@@ -78,7 +78,7 @@ _ribbonBar.Items.Add(_ribbonButton6)
 
 {% endtabs %}
 
-![](RibbonSeparator_images/RibbonSeparator_img1.jpg)
+![Adding separator to the ribbon bar](RibbonSeparator_images/RibbonSeparator_img1.jpg)
 
 ## Add Separator to the Simplified layout
 

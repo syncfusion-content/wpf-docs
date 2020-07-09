@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonComboBox
+# RibbonComboBox in WPF Ribbon
 
 RibbonComboBox control is used to display the list of items, as ComboBox.
 

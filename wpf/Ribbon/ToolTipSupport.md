@@ -79,7 +79,7 @@ Ribbon ToolTip  can be set to each Ribbon items by defining ScreenTip inside the
 
 {% endtabs %}
 
-![](UIforToolTip_images/UIforToolTip_img1.jpeg)
+![Adding tooltip for ribbon items](UIforToolTip_images/UIforToolTip_img1.jpeg)
 
 
 ## Setting the ToolTip for the upper and lower half of the split button
@@ -107,10 +107,10 @@ The ToolTip property is used to set the tooltip for the upper half of the Split 
 
 {% endtabs %}
 
-![](UIforToolTip_images/UIforToolTip_img2.jpeg)
+![Displaying tooltip for upper portion of SplitButton](UIforToolTip_images/UIforToolTip_img2.jpeg)
 
 
-![](UIforToolTip_images/UIforToolTip_img3.jpeg)
+![Displaying tooltip for lower portion of SplitButton](UIforToolTip_images/UIforToolTip_img3.jpeg)
 
 
 ## Options for inserting help text in ScreenTip

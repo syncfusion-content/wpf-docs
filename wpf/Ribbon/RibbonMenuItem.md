@@ -54,7 +54,7 @@ _ribbonBar1.Items.Add(_ribbonMenuItem)
 
 {% endtabs %}
 
-![](RibbonMenuItem_images/RibbonMenuItem_img1.jpg)
+![Adding ribbon menu item](RibbonMenuItem_images/RibbonMenuItem_img1.jpg)
 
 
 ## RibbonMenuItem icon
@@ -108,7 +108,7 @@ RibbonMenuItem _ribbonMenuItem = new RibbonMenuItem() { Header = "NEW1", Width =
 
 {% endtabs %}
 
-![](RibbonMenuItem_images/RibbonMenuItem_img2.jpg)
+![Setting icon for menu item](RibbonMenuItem_images/RibbonMenuItem_img2.jpg)
 
 ## Add MenuItem to the Simplified layout
 

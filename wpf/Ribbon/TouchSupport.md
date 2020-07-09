@@ -40,7 +40,7 @@ SkinStorage.SetEnableTouch(_ribbonWindow, True)
 
 {% endtabs %}
 
-![](TouchSupport_images/TouchSupport_img1.jpeg)
+![Enabling touch mode for ribbon](TouchSupport_images/TouchSupport_img1.jpeg)
 
 ## Touch mode in Simplified layout
 
