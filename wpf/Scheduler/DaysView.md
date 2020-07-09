@@ -12,7 +12,7 @@ documentation: ug
 
 ## Change time interval
 You can customize the interval of timeslots in all the day, week, work week views by using the `TimeInterval` property of `DaysViewSettings`.
-{% endhighlight %}
+{% tabs %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.Week;
 Schedule.DaysViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
