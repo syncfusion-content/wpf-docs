@@ -32,15 +32,15 @@ You can check spelling mistakes using `Hunspell` dictionary format. This format 
 
 ### Adding Hunspell Dictionary
 
-1. Add your `HunspellDictionary`'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add your [HunspellDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.HunspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/HunspellAdding.png)
 
-2. Create a `HunspellDictionary` instance and add the basic word & grammar file path to the `HunspellDictionary.DictionaryUri` & `HunspellDictionary.GrammarUri` properties and add the culture to the `HunspellDictionary.Culture` property.
+2. Create a `HunspellDictionary` instance and add the basic word & grammar file path to the [HunspellDictionary.DictionaryUri](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.HunspellDictionary~DictionaryUri.html) & [HunspellDictionary.GrammarUri](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.HunspellDictionary~GrammarUri.html) properties and add the culture to the [HunspellDictionary.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.HunspellDictionary~Culture.html) property.
 
 3. Add the  `HunspellDictionary` into the `SfSpellChecker.Dictionaries` collection
 
-4. Setting the required culture to the `SfSpellChecker.Culture` property.
+4. Setting the required culture to the [SfSpellChecker.Culture](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.SfSpellChecker~Culture.html) property.
 
 N> The following code snippets shows how to add Hunspell dictionary to the `SpellChecker`. Please refer [Adding SfSpellChecker to an application](https://help.syncfusion.com/windowsforms/spell-checker/getting-started#adding-wpf-sfspellchecker-to-an-application) to know how to configure SfSpellChecker.
 
@@ -86,11 +86,11 @@ You can check spelling mistakes using `Ispell` dictionary format. This format co
 
 ### Adding Ispell Dictionary
 
-1. Add your `IspellDictionary`'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add your [IspellDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.IspellDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/IspellAdding.png)
 
-2. Create a `IspellDictionary` instance and add the basic word & grammar file path to the `IspellDictionary.DictionaryUri` & `IspellDictionary.GrammarUri` properties and add the culture to the `IspellDictionary.Culture` property.
+2. Create a `IspellDictionary` instance and add the basic word & grammar file path to the [IspellDictionary.DictionaryUri](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.IspellDictionary~DictionaryUri.html) & [IspellDictionary.GrammarUri](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.IspellDictionary~GrammarUri.html) properties and add the culture to the [IspellDictionary.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.IspellDictionary~Culture.html) property.
 
 3. Add the  `IspellDictionary` into the `SfSpellChecker.Dictionaries` collection
 
@@ -140,11 +140,11 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 
 ### Adding OpenOffice Dictionary
 
-1. Add your `OpenOfficeDictionary`'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
+1. Add your [OpenOfficeDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.OpenOfficeDictionary.html)'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
 
 ![Adding Basic word and Grammar files as resource into the application](Dictionary_images/OpenOfficeAdding.png)
 
-2. Create a `OpenOfficeDictionary` instance and add the basic word & grammar file path to the `OpenOfficeDictionary.DictionaryUri` & `OpenOfficeDictionary.GrammarUri` properties and add the culture to the `OpenOfficeDictionary.Culture` property.
+2. Create a `OpenOfficeDictionary` instance and add the basic word & grammar file path to the [OpenOfficeDictionary.DictionaryUri](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.OpenOfficeDictionary~DictionaryUri.html) & [OpenOfficeDictionary.GrammarUri](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.OpenOfficeDictionary~GrammarUri.html) properties and add the culture to the [OpenOfficeDictionary.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.OpenOfficeDictionary~Culture.html) property.
 
 3. Add the  `OpenOfficeDictionary` into the `SfSpellChecker.Dictionaries` collection
 
@@ -173,7 +173,7 @@ SpellChecker.Dictionaries.Add(
     }
 );
 
-//Setting a French culture for SpellChecker
+//Setting a Spanish culture for SpellChecker
 SpellChecker.Culture = culture;
 
 {% endhighlight %}
@@ -185,7 +185,7 @@ N> You can add multiple `OpenOfficeDictionary` with various culture files into t
 
 ## Add custom words to dictionary
 
-If you want to add words that is not available in dictionary, you can add it using `CustomDictionary`. This dictionary does not has a grammar file, it accepts only dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking `Add to Dictionary` button available in dialog or context menu. 
+If you want to add words that is not available in existing  dictionary, you can add it using [CustomDictionary](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.CustomDictionary.html). This dictionary does not has a grammar file, it accepts only dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking `Add to Dictionary` button available in dialog or context menu. 
 
 ### Adding Custom Dictionary
 
@@ -193,7 +193,7 @@ If you want to add words that is not available in dictionary, you can add it usi
 
 ![Adding custom word files as resource into the application](Dictionary_images/CustomDictionaryAdding.png)
 
-2. Create a `CustomDictionary` instance and add the custom word file path to the `CustomDictionary.DictionaryUri` property and add the culture to the `CustomDictionary.Culture` property.
+2. Create a `CustomDictionary` instance and add the custom word file path to the [CustomDictionary.DictionaryUri](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.CustomDictionary~DictionaryUri.html) property and add the culture to the [CustomDictionary.Culture](https://help.syncfusion.com/cr/wpf/Syncfusion.SfSpellChecker.WPF~Syncfusion.Windows.Controls.CustomDictionary~Culture.html) property.
 
 3. Add the  `CustomDictionary` into the `SfSpellChecker.Dictionaries` collection
 
@@ -212,7 +212,7 @@ SfSpellChecker SpellChecker = new SfSpellChecker();
 // Get the current PROJECT directory
 string projectDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
 
-//Add US culture Custom dictionary
+//Add Custom dictionary for US culture
 SpellChecker.Dictionaries.Add(
     new CustomDictionary()
     {
@@ -221,17 +221,28 @@ SpellChecker.Dictionaries.Add(
     }
 );
 
+//Add US culture OpenOffice dictionary
+SpellChecker.Dictionaries.Add(
+    new OpenOfficeDictionary()
+    {
+        Culture = culture,
+        GrammarUri = new Uri("/CustomSpellCheck;component//US/en-US.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/CustomSpellCheck;component//US/en-US.dic", UriKind.Relative)
+    }
+
 //Setting a US culture for SpellChecker
 SpellChecker.Culture = culture;
 
 {% endhighlight %}
 {% endtabs %}
 
+N> If you only use the custom dictionary, all words that are not included in the dictionary will be shown as error words.
+
 N> You can add multiple `CustomDictionary` with various culture word files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `CustomDictionary` is used for spell check.
 
 ![SpellCheck using Custom dictionary](Dictionary_images/CustomDictionary.png)
 
-N> View [Sample](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/CustomSpellCheck) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/WPF-SpellChecker-examples/tree/master/Samples/CustomSpellCheck) 
 
 ## Switch language(Culture) at runtime
 
@@ -273,8 +284,8 @@ SpellChecker.Dictionaries.Add(
     new HunspellDictionary()
     {
         Culture = new CultureInfo("en-US"),
-        GrammarUri = new Uri("/HunSpellCheck;component//Spanish/en-US.aff", UriKind.Relative),
-        DictionaryUri = new Uri("/HunSpellCheck;component//Spanish/en-US.dic", UriKind.Relative)
+        GrammarUri = new Uri("/HunSpellCheck;component//US/en-US.aff", UriKind.Relative),
+        DictionaryUri = new Uri("/HunSpellCheck;component//US/en-US.dic", UriKind.Relative)
     }
 );
 
