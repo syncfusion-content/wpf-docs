@@ -138,8 +138,6 @@ You can check spelling mistakes using `OpenOffice` dictionary format. This forma
 * Affix file with grammar rules- `*.aff`, 
 * Basic Words file - `*.dic` file.
 
-N> `Ispell` have different rules in the Affix files, so you can't use the `OpenOffice` & `Hunspell` Affix files to the `Ispell` dictionary.
-
 ### Adding OpenOffice Dictionary
 
 1. Add your `OpenOfficeDictionary`'s required culture `*.aff` and `*.dic` files and add them as `Resource` into the application.
