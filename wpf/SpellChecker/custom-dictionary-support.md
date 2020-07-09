@@ -23,6 +23,8 @@ You can add your own dictionary to [SfSpellChecker.Dictionaries](https://help.sy
  * 2.Ispell
  * 3.OpenOffice
  
+N> Built-in dictionary will be disabled once custom dictionary is added to SfSpellChecker
+
 ## SpellCheck using Hunspell dictionary
 
 You can check spelling mistakes using `Hunspell` dictionary format. This format contains files as follows,
@@ -236,7 +238,9 @@ SpellChecker.Culture = culture;
 {% endhighlight %}
 {% endtabs %}
 
-N> If you only use the custom dictionary, all words that are not included in the dictionary will be shown as error words.
+N> As custom dictionary hold extra words that is not available in standard dictionary, it is always used in conjunction with standard dictionary.
+
+N> If you use the custom dictionary without standard dictionary, all words that are not included in the dictionary will be shown as error words.
 
 N> You can add multiple `CustomDictionary` with various culture word files into the `SfSpellChecker.Dictionaries` collection. Based on the `SfSpellChecker.Culture` respective `CustomDictionary` is used for spell check.
 
