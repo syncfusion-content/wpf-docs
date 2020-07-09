@@ -326,9 +326,12 @@ You can customize the default appearance of the week number template in month vi
                 <syncfusion:MonthViewSettings ShowWeekNumber="True">
                     <syncfusion:MonthViewSettings.WeekNumberTemplate>
                         <DataTemplate>
-                            <Border Height="30" VerticalAlignment="Center">
-                                <Label Background = "LightPink" Foreground="Blue" Content="{Binding}"/>
-                            </Border>
+                             <Grid >
+                                <Label  Foreground="Red"
+                                        Content="{Binding}"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"/>
+                            </Grid>
                         </DataTemplate>
                     </syncfusion:MonthViewSettings.WeekNumberTemplate>
                 </syncfusion:MonthViewSettings>
