@@ -185,7 +185,7 @@ N> You can add multiple `OpenOfficeDictionary` with various culture files into t
 
 ## Add custom words to dictionary
 
-If you want to skip or make the error or custom word as correct word, add that word into the custom dictionary text file. You can add that word on before perform spell check by directly adding that words into the custom dictionary text file and also can add the error word into the custom dictionary text file at runtime by clicking the `Add to Dictionary` button. Then, while performing next spell check, Custom dictionary text file contained words are considered as a correct words.  
+If you want to skip the error word or make any custom word as correct word, add that word into the custom dictionary text file. You can add that word on before perform spell check by directly adding that words into the custom dictionary text file and also can add the error word into the custom dictionary text file at runtime by clicking the `Add to Dictionary` button. Then, while performing next spell check, Custom dictionary text file contained words are considered as a correct words.  
 
 ### Adding Custom Dictionary
 
