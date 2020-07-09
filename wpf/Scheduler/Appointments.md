@@ -256,7 +256,8 @@ public class Meeting
 }
 {% endhighlight %}
 {% endtabs %}
-N>You can inherit this class from INotifypropertyChanged for dynamic changes in custom data.
+
+N>You can inherit this class from INotifyPropertyChanged for dynamic changes in custom data.
 
 You can map those properties of Meeting class to schedule appointment by using the `AppointmentMapping` properties.
 
