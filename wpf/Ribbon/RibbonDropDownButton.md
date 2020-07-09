@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RibbonDropDownButton in Syncfusion Ribbon control
-description: RibbonDropDownButton in Syncfusion Ribbon control
+description: This section briefly describes the functionalities of RibbonDropDownButton in Syncfusion Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug

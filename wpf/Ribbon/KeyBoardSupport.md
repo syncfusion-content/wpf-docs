@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KeyBoard support in Syncfusion Ribbon control
-description: This section briefly describes the KeyBoard access to all the items in Ribbon using KeyTip support. 
+description: This section briefly describes the KeyBoard access of all the items in Syncfusion WPF Ribbon using KeyTip support.
 platform: wpf
 control: Ribbon
 documentation: ug

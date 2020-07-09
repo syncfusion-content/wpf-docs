@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonGallery
+# Ribbon Gallery in WPF Ribbon
 
 RibbonGallery provides `VisualMode` property, that helps to display items in two different ways.
 

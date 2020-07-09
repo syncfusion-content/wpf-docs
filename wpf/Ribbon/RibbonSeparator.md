@@ -1,12 +1,12 @@
 ---
 layout: post
 title: RibbonSeperator in Syncfusion Ribbon control
-description: RibbonSeperator in Syncfusion Ribbon control
+description: This section briefly describes the functionalities of RibbonSeperator in Syncfusion WPF Ribbon control
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Ribbon Separator	
+# Ribbon Separator in WPF Ribbon 
 
 `RibbonSeparator` used to separate the similar set of Ribbon elements in Ribbon. It can separate RibbonButtons according to their purpose. 
 

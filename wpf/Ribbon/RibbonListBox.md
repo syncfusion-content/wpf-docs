@@ -1,12 +1,12 @@
 ---
 layout: post
 title: RibbonListBox in Syncfusion Ribbon control
-description: RibbonListBox in Syncfusion Ribbon control
+description: This section briefly describes the functionalities of RibbonListBox in Syncfusion Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonListBox
+# RibbonListBox in WPF Ribbon   
 
 `RibbonListBox` control is used to display a list of items in a Ribbon. It accepts any type of content as RibbonListBox items but `ListBoxItem` by default.
 

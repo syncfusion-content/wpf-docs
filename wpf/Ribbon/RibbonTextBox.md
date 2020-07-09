@@ -1,12 +1,12 @@
 ---
 layout: post
 title: RibbonTextBox for Syncfusion's Ribbon control for WPF
-description: RibbonTextBox for Syncfusion's Ribbon control for WPF
+description: This section briefly describes the functionalities of RibbonTextBox for Syncfusion's Ribbon control for WPF
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonTextBox
+# RibbonTextBox in WPF Ribbon
 
 `RibbonTextBox` control provide similar set of functionalities like normal TextBox control in Ribbon Instance. 
 
