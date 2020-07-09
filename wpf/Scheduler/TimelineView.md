@@ -262,7 +262,7 @@ Schedule.TimelineViewSettings.TimeRulerSize = 100;
 ![Change time ruler size in WPF Scheduler](Timeline_images/adding-Changetimerulersize.png)
 
 ## Minimum appointment duration
-The `MinimumAppointmentDuration` property in `TimelineViewSettings` is to set an arbitrary height to appointments when it has minimum duration, in day, week, work week views, so that the subject can be readable.
+The `MinimumAppointmentDuration` property in `TimelineViewSettings` is to set an arbitrary height to appointments when it has minimum duration, in timeline view, so that the subject can be readable.
 {% tabs %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.Timeline;
