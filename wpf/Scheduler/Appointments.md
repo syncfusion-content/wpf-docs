@@ -68,7 +68,7 @@ N>The CustomAppointment class should contain event start and end date time field
 ## Creating business objects
 You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
 
-{%tabs %}
+{% tabs %}
 {% highlight c# %}
 /// <summary>   
 /// Represents the custom data properties.   
@@ -79,8 +79,8 @@ public class Meeting
 	public DateTime From { get; set; }
 	public DateTime To { get; set; }
 }
-{%endhighlight %}
-{%endtabs%}
+{% endhighlight %}
+{% endtabs %}
 N>You can inherit this class from the INotifyPropertyChanged for dynamic changes in custom data.
 You can map those properties of `Meeting` class to schedule appointment by using `AppointmentMapping` properties.
 {%tabs %}
@@ -111,7 +111,7 @@ Schedule.AppointmentMapping = dataMapping;
 You can schedule meetings for a day by setting `From` and `To` of Meeting class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection Meetings to the `ItemsSource` property which is of IEnumerable type.
 
 {% tabs %}
-{% highlight %}
+{% highlight c# %}
 // Creating an instance for custom appointment class
 Meeting meeting = new Meeting();
 // Setting start time of an event
@@ -137,7 +137,7 @@ Schedule.ItemsSource = Meetings;
 
 Spanned Appointment is an appointment that lasts more than 24 hours. It doesn’t block out time slots in the `SfScheduler`, it will render in `All-Day appointment` panel exclusively.
 
-{%tabs %}
+{% tabs %}
 {% highlight c# %}
 // Creating an instance for collection of custom appointments
 var Meetings = new ObservableCollection<Meeting>();
@@ -254,7 +254,8 @@ public class Meeting
     public Brush Color { get; set; }
     public string RecurrenceRule { get; set; }
 }
-
+{% endhighlight %}
+{% endtabs %}
 N>You can inherit this class from INotifypropertychanged for dynamic changes in custom data.
 
 You can map those properties of Meeting class to schedule appointment by using the `AppointmentMapping` properties.
@@ -458,7 +459,7 @@ public class Meeting
 You should map this custom property `RecurrenceExceptionDates` of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the scheduled appointment.
 
 {% tabs %}
-% highlight xaml %}
+{% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
     <syncfusion:SfScheduler.AppointmentMapping>
         <syncfusion:AppointmentMapping
@@ -521,7 +522,7 @@ public ObservableCollection<Meeting> RecursiveAppointmentCollection
     get;
     set;
 }
-{{% endhighlight %}
+{% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
