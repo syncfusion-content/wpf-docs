@@ -12,7 +12,7 @@ documentation: ug
 
 ## Change time interval
 You can customize the interval of timeslots in the timeline view by using the `TimeInterval` property of `TimelineViewSettings`.
-{% endhighlight %}
+{% tabs %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.Timeline;
 Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 120, 0);
