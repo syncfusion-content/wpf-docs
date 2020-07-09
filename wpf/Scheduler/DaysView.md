@@ -326,7 +326,7 @@ You can customize the height of the ViewHeader in day , week , work week views b
 {% endhighlight %}
 {% highlight c# %}
 Schedule.ViewType = SchedulerViewType.Week;
-Schedule.DaysViewSettings.ViewHeaderDateFormat = "100";
+Schedule.DaysViewSettings.ViewHeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 ![View header height in WPF Scheduler](DaysView_Images/adding-Viewheaderheight.png)
