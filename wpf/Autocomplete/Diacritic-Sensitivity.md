@@ -9,7 +9,7 @@ documentation: ug
 
 # Diacritic sensitivity
 
-The control does not stick with one type of keyboard, so it can be populated the items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Enable or disable the diacritic sensitivity using the [IgnoreDiacritic](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreDiacritic.html) property. The following code example demonstrates how to enable the diacritic sensitivity. The items in the suggestion list will be populated by entering any diacritic character of that alphabet.
+The control does not stick with one type of keyboard, so it can be populated the items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Enable or disable the diacritic sensitivity using the [IgnoreDiacritic](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~IgnoreDiacritic.html) property. The items in the suggestion list will be populated by entering any diacritic character of that alphabet.
 
 {% tabs %}
 

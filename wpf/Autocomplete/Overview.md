@@ -22,14 +22,13 @@ documentation: ug
 * **Filtering suggestion items**: Suggestions can be filtered in 18 different modes like StartsWith, EndWith, Contains, Equals, and Custom. AutoComplete provides the both case-sensitive and insensitive modes.
 * **Popup delay**: The filtering process can be delayed. Displaying filtered suggestions from a drop-down list may also be delayed for a period of time.
 * **Minimum prefix characters**: Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries.
-* **Customize Entry**: AutoComplete provides the options to customize the Entry using the Font, FontSize, and FontFamily.
-* **Customize SuggestionBox**: AutoComplete provides the options to customize the drop-down list.
-* **Diacritic Sense**: The control provides the populating the items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard.
+* **Customization support**: AutoComplete provides the options to customize both text box and drop-down list.
+* **Diacritic sense**: The control provides the populating the items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard.
 * **Highlighting Text**: The control provides the highlighting the matching text in the suggestion list based on the input given in it.
 * **Custom filter**: AutoComplete provides filter the items in the suggestion list based on their filtering condition.
-* **Multi Selection Support**: Selecting multiple items from a suggestion list.
-* **SuggestionBox adjustment**: Adjust the position of popup relative to the control.
-* **EnableAutoSize**: AutoSizing can be enabled in AutoComplete control so that the control will extend its layout based on the token size.
+* **Multi selection support**: Selecting multiple items from a suggestion list.
+* **Suggestion box adjustment**: Adjust the position of popup relative to the control.
+* **Enable auto size**: Auto sizing can be enabled in AutoComplete control so that the control will extend its layout based on the tokens size in wrap mode.
 * **AutoComplete template**: It can be used for own template.
-* **NoResultsFoundTemplate**: Set the desire text, if the typing item does not exists in the collection.
+* **NoResults found template**: Set the desire text, if the typing item does not exists in the collection.
 * **Retrieving the selection**: Retrieve the selected item, index, and value. 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Single and multiple selection 
 
-Selection for the control depends on the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property. There are two ways to perform multi-selection in autocomplete. The default value of MultiSelectMode is None.
+Selection for the control depends on the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) property. There are two ways to perform multi-selection in autocomplete. The default value of [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) is None.
 
 * None
 
@@ -57,7 +57,6 @@ textBoxExt.MultiSelectMode = MultiSelectMode.Token;
 
 Override the style of the token used for customization. 
 
-Please find the code snippet for the Customization of Tokens.
 
 {% tabs %}
 
@@ -111,9 +110,9 @@ Please find the code snippet for the Customization of Tokens.
 
 ### Enable autosize in token mode 
 
-AutoSizing can be enabled in AutoComplete control so that the control will extend its layout based on the token size.
+Auto sizing can be enabled in AutoComplete control so that the control will extend its layout based on the tokens size in wrap mode.
 
-[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the AutoSizing in AutoComplete control. To enable the API, need to set the MultiSelectMode as Token and TokensWrapMode as Wrap and the control height should not be provided. The default value of `EnableAutoSize` is false.
+[EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) property is used to enable the Auto sizing in AutoComplete control. To enable the API, need to set the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) as Token and [TokensWrapMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~TokensWrapMode.html) as Wrap and the control height should not be provided. The default value of [EnableAutoSize](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~EnableAutoSize.html) is false.
 
 {% tabs %}
 
@@ -146,7 +145,7 @@ See also [Multiple selection using tokens ](https://help.syncfusion.com/wpf/auto
 
 ## Multiple selection using delimiter 
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a Delimiter. Delimiter character can be set with the [Delimiter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property. To enable the Delimiter mode, you need to set the MultiSelectMode as Delimiter. The default value of Delimiter is comma.
+When selecting the multiple items, the selected items can be divided with a desired character given for a Delimiter. Delimiter character can be set with the [Delimiter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~Delimiter.html) property. To enable the Delimiter mode, you need to set the [MultiSelectMode](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MultiSelectMode.html) as Delimiter. The default value of Delimiter is comma.
 
 
 {% tabs %}
@@ -176,9 +175,9 @@ textBoxExt.MultiSelectMode = MultiSelectMode.Delimiter;
 
 ## Setting and retrieving SelectedItem 
 
-The [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property is used to select a particular item from the suggestion list. It can either get or set the SelectedItem. SelectedItem property hold the selected item value for single selection. For multi selection the selected items value hold in [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItems.html) property.
+The [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property is used to select a particular item from the suggestion list. [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) property hold the selected item value for single selection. For multi selection the selected items value hold in [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItems.html) property.
 
-The following code snippet demonstrates how to set SelectedItem.
+The following code snippet demonstrates how to set [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html).
 
 Model Class:
 
@@ -207,7 +206,7 @@ public class Employee
 {% endhighlight %}
 {% endtabs %}
 
-In EmployeeViewModel class the SelectedItem updated initially from the Employees collection. 
+In EmployeeViewModel class the [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html) updated initially from the Employees collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -270,7 +269,7 @@ public class EmployeeViewModel
 
 ![selected item](Single_and_multiple_selection_images/Set_SelectedItem.png)
 
-The following code snippet demonstrates how to get SelectedItem.
+The following code snippet demonstrates how to get [SelectedItem](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItem.html).
 
 {% tabs %}
 
@@ -295,7 +294,7 @@ private void TextBoxExt_SelectedItemChanged(DependencyObject d, DependencyProper
 
 ![selected item](Single_and_multiple_selection_images/SelectedItem.png)
 
-The following code snippet demonstrates how to set SelectedItems.
+The following code snippet demonstrates how to set [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItems.html).
 
 Model Class:
 
@@ -324,7 +323,7 @@ public class Employee
 {% endtabs %}
 
 
-In EmployeeViewModel class the SelectedItems updated initially from the Employees collection. 
+In EmployeeViewModel class the [SelectedItems](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SelectedItems.html) updated initially from the Employees collection. 
 
 {% tabs %}
 {% highlight c# %}
@@ -438,9 +437,9 @@ private void AutoComplete_SelectedItemChanged(DependencyObject d, DependencyProp
 
 When an item is selected from suggestion list, their index can be retrieved using the [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property.
 
-The `SuggestionIndex` property, holds the index of selected items in suggestion list.
+The [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html) property, holds the index of selected items in suggestion list.
 
-The following code example demonstrates how to retrieve SuggestionIndex.
+The following code example demonstrates how to retrieve [SuggestionIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~SuggestionIndex.html).
 
 
 {% tabs %}

@@ -255,7 +255,7 @@ In None mode, the search algorithm starts even when the item is not available in
 </tr>
 </table>
 
-The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteModeProperty.html) is None.
+N> The default value of [AutoCompleteMode](https://help.syncfusion.com/cr/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteModeProperty.html) is None.
 
 
 {% tabs %}
@@ -280,8 +280,6 @@ textBoxExt.AutoCompleteMode = AutoCompleteMode.Suggest;
 
 ![GettingStarted](GettingStarted_images/AutoCompleteMode.png)
 
-Filtered suggestions displayed in drop-down list
-{:.caption}
 
 ## Selection 
 

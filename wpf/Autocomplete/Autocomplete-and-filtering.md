@@ -9,7 +9,7 @@ documentation: ug
 
 # AutoComplete and filtering 
 
-The Autocomplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that it can choose from the different options.
+The AutoComplete functionality provides several modes of suggestions while typing. The suggested text can be appended to the original text, or it can be displayed in a drop-down list so that it can choose from the different options.
 
 ## Autocomplete source
 
@@ -59,7 +59,7 @@ textBoxExt.SearchItemPath = "Name";
 
 ![SearchItemPath](AutoComplete_and_filtering_images/SearchItemPath.png)
 
-N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the Autocomplete modes will be provided in the next section.
+N> The default value of the AutoCompleteMode property is None. So, running the control without specifying this property will not show any suggestions. The detailed information about the AutoComplete modes will be provided in the next section.
 
 ## Customize using the ItemTemplate
 
@@ -90,8 +90,6 @@ The [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syn
 
 ![ItemTemplate](AutoComplete_and_filtering_images/ItemTemplate.png)
 
-Drop-down list with image
-{:.caption}
 
 ## Filtering options
 
@@ -269,7 +267,7 @@ textBoxExt.SuggestionMode = SuggestionMode.Contains;
 
 ## Prefix characters constraint
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the [MinimumPrefixCharacter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MinimumPrefixCharacters.html)` property, and their default value is 1.
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done using the [MinimumPrefixCharacter](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~MinimumPrefixCharacters.html) property, and their default value is 1.
 
 {% tabs %}
 
@@ -294,9 +292,6 @@ textBoxExt.MinimumPrefixCharacters = 2;
 {% endtabs %}
 
 ![Minimum Prefix Length](AutoComplete_and_filtering_images/MinimumPrefixCharacters.png)
-
-Minimum Prefix Length case
-{:.caption}
 
 
 ## Working with case sensitivity
@@ -325,12 +320,10 @@ textBoxExt.IgnoreCase = true;
 
 ![Ignore Case](AutoComplete_and_filtering_images/IgnoreCase.png)
 
-Ignore Case
-{:.caption}
 
 ## Showing image in token and drop-down 
 
-To show the image in token using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property and show the image in drop-down by the way of AutoCompleteItemTemplate support. 
+To show the image in token using the [ImageMemberPath](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~ImageMemberPath.html) property and show the image in drop-down by the way of [AutoCompleteItemTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~AutoCompleteItemTemplate.html) support. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -371,7 +364,7 @@ N> View [sample](https://github.com/SyncfusionExamples/wpf-textboxext-examples/t
 
 ## Display a message when suggestions are empty 
 
-When the entered item is not in the suggestion list, Autocomplete displays a text indicating that there is no search results found. You can set the desire text to be displayed for indicating no results found with the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~NoResultsFoundTemplate.html) property.
+When the entered item is not in the suggestion list, AutoComplete displays a text indicating that there is no search results found. You can set the desire text to be displayed for indicating no results found with the [NoResultsFoundTemplate](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfInput.Wpf~Syncfusion.Windows.Controls.Input.SfTextBoxExt~NoResultsFoundTemplate.html) property.
 
 {% tabs %}
 {% highlight xaml %}

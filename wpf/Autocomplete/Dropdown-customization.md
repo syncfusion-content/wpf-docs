@@ -76,9 +76,6 @@ textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 
 ![Top](Dropdown_customization_images/Top.png)
 
-Drop-down list opening at the top.
-{:.caption}
-
 
 ### Bottom
 
@@ -107,8 +104,6 @@ textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
 
 ![Bottom](Dropdown_customization_images/Bottom.png)
 
-Drop-down list opening at the bottom.
-{:.caption}
 
 ### None
 
@@ -137,8 +132,6 @@ textBoxExt.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
 
 ![None](Dropdown_customization_images/None.png)
 
-No drop-down list.
-{:.caption}
 
 ## Setting the maximum height 
 
