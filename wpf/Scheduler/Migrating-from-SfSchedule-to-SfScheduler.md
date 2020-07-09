@@ -41,7 +41,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Scheduler;assembly=Syncfusion
 
 ## Initialization
 
-Both SfSchedule and SfScheduler almost have the same set of features. But the SfScheduler control offers a rich set of features over SfSchedule. 
+Both [SfSchedule](https://help.syncfusion.com/wpf/schedule/overview) and [SfScheduler](https://help.syncfusion.com/wpf/scheduler/overview) almost have the same set of features. But the SfScheduler control offers a rich set of features over SfSchedule. 
 
 ## Major improvements of SfScheduler
 
