@@ -97,7 +97,7 @@ Schedule.ViewType =SchedulerViewType.Month;
 `SfScheduler` has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. You need to allocate the collection generated to `Appointments` property.
 
 ### Adding Appointments
-`ScheduleAppointment` is a class that includes the specific of scheduled appointment. It has some basic properties such as `StartTime`, `EndTime`, `Subject` and some additional information about the appointment can be added with `Notes`, `Location`, `IsAllDay` properties.
+[ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) is a class that includes the specific of scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Location.html), [IsAllDay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~IsAllDay.html) properties.
 
 {% tabs %}   
 {% highlight xaml %}
@@ -348,7 +348,7 @@ By setting `From` and `To` of `Meeting` class, you can schedule meetings for a s
 
 #### Bind to SfScheduler appointment
 
-You can map those properties of `Meeting` class with our `SfScheduler` control by using `SfScheduler.AppointmentMapping` property.  
+You can map those properties of `Meeting` class with our `SfScheduler` control by using [SfScheduler.AppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentMappingProperty.html) property.  
 
 {% tabs %}
 {% highlight xaml %}
