@@ -892,4 +892,6 @@ The following image illustrates how to drag symbol from palette.
 
 ![Drag Symbol from Palette](Swimlane-images/Symbol_palette.gif)
 
+Please find the swimlane sample as below.
+
 [View Swimlane sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Swimlane/Swimlane-Sample)
