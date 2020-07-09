@@ -10,7 +10,7 @@ documentation: ug
 # Date Navigations in WPF Scheduler (SfScheduler)
 
 ## Range for visible dates
-Visible dates can be restricted between certain range of dates, using [MinimumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~MaximumDate.html) and [MaximumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~MinimumDate.html) properties in [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). It is applicable in all the schedule views.
+Visible dates can be restricted between certain range of dates, using [MaximumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~MaximumDate.html) and [MinimumDate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~MinimumDate.html) properties in [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler.html). It is applicable in all the schedule views.
 
 ### Minimum display date
 `MinimumDate` will restrict date navigations features of backward, also cannot swipe the control using touch gesture beyond the minimum date range.
