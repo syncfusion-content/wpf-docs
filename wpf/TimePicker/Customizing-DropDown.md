@@ -18,8 +18,8 @@ The height of drop down can be changed using [DropDownHeight](https://help.syncf
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker DropDownHeight="300" 
-	                     x:Name="sfTimePicker"/>
+<syncfusion:SfTimePicker DropDownHeight="300"
+                         Name="sfTimePicker"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -39,8 +39,8 @@ If we want to restrict the user to selecting a time from a drop down time select
 {% tabs %}
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker ShowDropDownButton="False" 
-	                     x:Name="sfTimePicker"/>
+<syncfusion:SfTimePicker ShowDropDownButton="False"
+                         Name="sfTimePicker"/>
 
 {% endhighlight %}
 {% highlight c# %}
