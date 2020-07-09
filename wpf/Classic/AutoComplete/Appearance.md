@@ -96,7 +96,7 @@ Transparent
 
 ## Show the shadow effect
 
-You can show the shadow effect of AutoComplete by using [DropShadowEffect](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.effects.dropshadoweffect?view=netcore-3.1). You can also set the shadow distance by using [ShadowDepth](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.effects.dropshadoweffect.shadowdepthproperty?view=netcore-3.1) property.
+You can show the shadow effect of AutoComplete by using [DropShadowEffect](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.effects.dropshadoweffect?view=netcore-3.1). You can also set the distance between the control and shadow by using [ShadowDepth](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.effects.dropshadoweffect.shadowdepthproperty?view=netcore-3.1) property.
 
 Refer the below code for your reference.
 
