@@ -110,6 +110,99 @@ RibbonMenuItem _ribbonMenuItem = new RibbonMenuItem() { Header = "NEW1", Width =
 
 ![](RibbonMenuItem_images/RibbonMenuItem_img2.jpg)
 
+## Add MenuItem to the Simplified layout
+
+When the simplified layout is enabled, the RibbonMenuItem can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="RibbonButton_IconTemp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RibbonButton_IconTemp"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        syncfusion:SkinStorage.VisualStyle="Office2013"
+        Title="Untitled 1 - Ribbon Control" Height="450" Width="800">
+    <Grid x:Name="grid">
+        <syncfusion:Ribbon VerticalAlignment="Top" EnableSimplifiedLayoutMode="True" LayoutMode="Simplified">
+            <syncfusion:RibbonTab Caption="Home" IsChecked="True">
+                <syncfusion:RibbonBar Header="Clipboard">
+                    <syncfusion:RibbonMenuItem Header="Cut" IconBarEnabled="True">
+                        <syncfusion:RibbonMenuItem.Icon>
+                            <Image Source="/Resources/Cut16.png"/>
+                        </syncfusion:RibbonMenuItem.Icon>
+                    </syncfusion:RibbonMenuItem>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab> 
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+Ribbon ribbon = new Ribbon();
+ribbon.VerticalAlignment = VerticalAlignment.Top;
+ribbon.EnableSimplifiedLayoutMode = true;
+ribbon.LayoutMode = LayoutMode.Simplified;
+// Creating new tabs
+RibbonTab homeTab = new RibbonTab();
+homeTab.Caption = "Home";
+homeTab.IsChecked = true;
+
+// Creating new bar
+RibbonBar clipboardBar = new RibbonBar();
+clipboardBar.Header = "Clipboard";
+
+// Creating items
+RibbonMenuItem ribbonMenuItem = new RibbonMenuItem();
+ribbonMenuItem.Header = "Cut";
+ribbonMenuItem.IconBarEnabled = true;
+ribbonMenuItem.Icon = new Image { Source = new BitmapImage(new Uri(@"Resources\Cut16.png", UriKind.RelativeOrAbsolute)) };
+// Adding items to the bar
+clipboardBar.Items.Add(ribbonMenuItem);
+homeTab.Items.Add(clipboardBar);
+ribbon.Items.Add(homeTab);
+grid.Children.Add(ribbon);
+
+SkinStorage.SetVisualStyle(this, "Office2013");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RibbonMenuItem during simplified layout](RibbonMenuItem_images/RibbonMenuItem_Simplified.png)
+
+When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonMenuItem can be ignored as it will be resized automatically to the standard width and height. If the RibbonMenuItem is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonMenuItem Header="Menu item" syncfusion:SimplifiedLayoutSettings.DisplayMode="Normal,Simplified" >
+    <syncfusion:RibbonMenuItem.Style>
+        <Style TargetType="syncfusion:RibbonMenuItem" BasedOn="{StaticResource Office2013RibbonMenuItemStyle}">
+            <Style.Triggers>
+                <Trigger Property="syncfusion:SimplifiedLayoutSettings.LayoutMode" Value="Normal">
+                    <Setter Property="Height" Value="48"/>
+                    <Setter Property="Width" Value="100"/>
+                    <Setter Property="Margin" Value="2"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </syncfusion:RibbonMenuItem.Style>
+</syncfusion:RibbonMenuItem >
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## IconSizeChanged event
 
 The event occurs when the IconSize property of the RibbonMenuItem get changed.

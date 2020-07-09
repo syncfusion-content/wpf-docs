@@ -10,6 +10,8 @@ documentation: ug
 
 To invoke any command using KeyBoard, Ribbon control provides KeyTip support to access the RibbonItem. On pressing Alt key, KeyTips for the corresponding RibbonItem gets displayed. 
 
+Ribbon control supports Key Tips to access its items in both normal and simplified layout. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+
 ## Adding KeyTip to the ribbon items
 
 RibbonControl provides with an attached property called `KeyTip` that helps to set the Key tip for the RibbonItem. It also let to set the Key tip for the RibbonTab,Launcher Button,and for the controls that are needed to add in the Ribbon like RibbonButton,SplitButton…etc
