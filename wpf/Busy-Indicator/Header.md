@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
 title: Header | Busy Indicator | wpf | Syncfusion
-description: header
+description: This section describes how to use the header and header template support in Syncfusion SfBusyIndicator control.
 platform: wpf
 control: Busy Indicator
 documentation: ug
 ---
 
-# Header
+# Header in WPF Busy Indicator (SfBusyIndicator)
 
 ## Header
 
@@ -46,7 +46,7 @@ grid1.Children.Add(SfBusyIndicator)
 {% endtabs %}
 
 
-![](Header_images/Header_img1.png)
+![Header](Header_images/Header_img1.png)
 
 Busy Indicator with header
 {:.caption}
@@ -74,7 +74,10 @@ Header template can be used to get or set the template that defines how the head
 
 {% endtabs %}
 
-![](Header_images/Header_img2.png)
+![Header_Template](Header_images/Header_img2.png)
 
 Busy Indicator with header template
 {:.caption}
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/Header) in GitHub
