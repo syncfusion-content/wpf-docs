@@ -1,13 +1,13 @@
 ---
 layout: post
 title: IsBusy | Busy Indicator | wpf | Syncfusion
-description: isbusy
+description: This section describes whether an animation needs to be executed or not in Syncfusion SfBusyIndicator control.
 platform: wpf
 control: Busy Indicator
 documentation: ug
 ---
 
-# IsBusy
+# IsBusy in WPF Busy Indicator (SfBusyIndicator)
 
 The IsBusy property in the BusyIndicator control is used to determine whether an animation needs to be executed or not.
 
@@ -33,7 +33,10 @@ busyIndicator.IsBusy = true;
 
 {% endtabs %}
 
-![](IsBusy_images/IsBusy_img1.png)
+![IsBusy](IsBusy_images/IsBusy_img1.png)
 
 Busy Indicator
 {:.caption}
+
+
+N> View [sample](https://github.com/SyncfusionExamples/wpf-BusyIndicator-examples/tree/master/Samples/IsBusy) in GitHub
