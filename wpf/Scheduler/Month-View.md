@@ -342,23 +342,6 @@ You can customize the default appearance of the week number template in month vi
 
 ![WPF Scheduler month view WeekNumberTemplate](Month-View_Images/WeekNumberTemplate.png)
 
-## First day of week
-You can set first day of week using [FirstDayOfWeek](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~FirstDayOfWeek.html) property of Scheduler in month view, by default `Sunday` as the first day of the week in Scheduler.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" 
-                        FirstDayOfWeek="Monday"/>
-{% endhighlight %}
-{% highlight c#%}
-this.Schedule.ViewType = SchedulerViewType.Month;
-this.Schedule.FirstDayOfWeek = DayOfWeek.Monday;
-{% endhighlight %}
-{% endtabs %}
-
-![WPF Scheduler month view FirstDayOfWeek](Month-View_Images/FirstDayOfWeek.png)
-
 ## Customize month cell appearance 
 
 ### Using DataTemplate 
