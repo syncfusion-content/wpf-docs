@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Month view in Syncfusion WPF SfScheduler | Scheduler
+title: Month view in the Syncfusion WPF SfScheduler | Scheduler
 description: This section explains how to customize the appearance and change the date format for Month view in WPF Scheduler.  
 platform: wpf
 control: SfScheduler
@@ -344,7 +344,7 @@ You can customize the default appearance of a week number template in month view
 
 ## Customize month cell appearance 
 
-### Using DataTemplate 
+### Using the DataTemplate 
 You can customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.MonthViewSettings~MonthCellTemplate.html) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -368,7 +368,7 @@ You can customize the default appearance of the month cell by using the [MonthCe
 
 ![WPF Scheduler month view MonthCellTemplate](Month-View_Images/MonthCellTemplate.png)
 
-### Using DataTemplateSelector 
+### Using the DataTemplateSelector 
 You can customize the default appearance of the month cell by using the [MonthCellTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.MonthViewSettings~MonthCellTemplateSelector.html) property of `MonthViewSettings`.
 The `DataTemplateSelector` can choose a DataTemplate at runtime based on the value of a data-bound to Scheduler month cell using the MonthCellTemplate. It lets you choose a different data template for each month's cell, customizing the appearance of a particular month cell based on certain conditions.
 
@@ -432,7 +432,7 @@ The `DataTemplateSelector` can choose a DataTemplate at runtime based on the val
 
 ## Customize month view appointments
 
-### Using DataTemplate
+### Using the DataTemplate
 You can customize the default appearance of the month cell appointment by using the [AppointmentTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase~AppointmentTemplate.html) property of `MonthViewSettings`.
 
  {% tabs %}
@@ -459,7 +459,7 @@ You can customize the default appearance of the month cell appointment by using 
 
 ![WPF Scheduler month view AppointmentTemplate](Month-View_Images/AppointmentTemplate.png)
 
-### Using DataTemplateSelector
+### Using the DataTemplateSelector
 You can customize the default appearance of the month view appointments by using the [AppointmentTemplateSelector](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase~AppointmentTemplateSelector.html) property of `MonthViewSettings`.
 The `DataTemplateSelector` can choose a DataTemplate at runtime based on the value of a data-bound to Scheduler month appointments using the `AppointmentTemplate`. It lets you choose a different data template for each month's cell, customizing the appearance of a particular appointment based on certain conditions.
 
