@@ -1650,7 +1650,7 @@ private GridModel GetThirdNestedGridWithSharedRowsModel()
             style.BorderMargins.Right = gridLinePen.Thickness / 2;
             style.BorderMargins.Bottom = gridLinePen.Thickness / 2;
             style.Borders.Right = gridLinePen;
-            style.Background = null;// Brushes.White;
+            style.Background = null;
             style.Borders.Bottom = gridLinePen;
             model.Data[i, j] = style.Store;
             if (i == 0 || j == 0)
