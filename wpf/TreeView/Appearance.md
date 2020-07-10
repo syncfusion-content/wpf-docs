@@ -180,12 +180,13 @@ The TreeView allows you to customize the appearance of each item with different 
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <syncfusion:SfTreeView x:Name="sfTreeView" Grid.Row="1"
+        <syncfusion:SfTreeView x:Name="sfTreeView" 
+		                       Grid.Row="1"
                                ChildPropertyName="SubFiles"
                                FullRowSelect="True"
                                ItemTemplateDataContextType="Node"
                                ItemsSource="{Binding ImageNodeInfo}" 
-							   ItemTemplateSelector="{StaticResource itemTemplateSelector}">
+							   ItemTemplateSelector="{StaticResource itemTemplateSelector}" >
         </syncfusion:SfTreeView>
     </Grid>
 </Window>
