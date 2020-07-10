@@ -18,7 +18,7 @@ The [CellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfus
 
 * [Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~Appointment.html) - returns Tapped appointment values.
 
-    1. If [Schedule.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~ItemsSourceProperty.html) added with custom business object then tapped custom Appointment details can get by using Appointment.Data property in Celltapped arguments. 
+    1. If [Schedule.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~ItemsSourceProperty.html) added with custom business object then tapped custom Appointment details can get by using Appointment.Data property in Cell tapped arguments. 
 
     2. The tapped appointment is a Recurrence appointment it will return the parent recurrence appointment values. 
 
