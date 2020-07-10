@@ -16,10 +16,16 @@ This event receives two arguments namely `this` that handles `SfScheduler` an
 
 The [CellTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs.html) object contains the following properties:
 
-* [Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~Appointment.html) - returns Tapped appointment values. The tapped appointment is a Recurrence appointment it will return the parent recurrence appointment values. The appointment data get for month view if AppointmentDisplaymode as Appointment,or else it will be null for month view.It used to get the custom appointment details.
-* [Appointments](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~Appointments.html)- returns Tapped Month cell appointments values. Tapped Month Cell has a Recurrence appointment it will return the parent recurrence appointment values. It will be null for Day or Week or WorkWeek views.
-* [IsMoreAppointments](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~IsMoreAppointments.html)- specifies whether more appointments are tapped or not in month view. It will be applicable for month view cell tapped when appointments are displayed in the month cell.It will be applicable for month view cell tapped when appointments are displayed in the month cell.It will be applicable for month view when set AppointmentDisplaymode as Appointment.
-* [CancelNavigation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~CancelNavigation.html)- specifies whether day view navigation should be disabled when clicking more appointments in month view. It will be applicable for month view cell tapped when appointments are displayed in the month cell.It will be applicable for month view cell tapped when appointments are displayed in the month cell.It will be applicable for month view when set AppointmentDisplaymode as Appointment.
+* [Appointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~Appointment.html) - returns Tapped appointment values.
+
+    1. If [Schedule.ItemsSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~ItemsSourceProperty.html) added with custom business object then tapped custom Appointment details can get by using Appointment.Data property in Celltapped arguments. 
+
+    2. The tapped appointment is a Recurrence appointment it will return the parent recurrence appointment values. 
+
+    3. The appointment details get for month view if AppointmentDisplaymode as Appointment,or else it will be null for month view.
+* [Appointments](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~Appointments.html)- returns Tapped Month cell appointments values if AppointmentDisplayMode as indicator. Tapped Month Cell has a Recurrence appointment it will return the parent recurrence appointment values. It will be null for Day or Week or WorkWeek views.
+* [IsMoreAppointments](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~IsMoreAppointments.html)- specifies whether more appointments are tapped or not in month view.It will be applicable only for Month view has  AppointmentDisplaymode as Appointment.
+* [CancelNavigation](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~CancelNavigation.html)- specifies whether day view navigation should be disabled when clicking more appointments in month view. It will be applicable for month view has AppointmentDisplaymode as Appointment. and click the More appointments in month cell.
 * [DateTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~DateTime.html)- gets the date-time of the tapped cell.
 * [TimeInterval](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.CellTappedEventArgs~TimeInterval.html)- gets the date-time interval of the tapped cell. It is not applicable for month view.
 
@@ -72,8 +78,8 @@ The [WeekNumberTapped](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.
 The [WeekNumberTappedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.WeekNumberTappedEventArgs.html) object contains the following properties:
 
 * [Month](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.WeekNumberTappedEventArgs~Month.html)- gets the corresponding month.
-* [WeekNumber](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.WeekNumberTappedEventArgs~WeekNumber.html)- gets the corresponding year.
-* [Year](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.WeekNumberTappedEventArgs~Year.html)- gets the corresponding week number.
+* [WeekNumber](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.WeekNumberTappedEventArgs~WeekNumber.html)- gets the corresponding week number.
+* [Year](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.WeekNumberTappedEventArgs~Year.html)- gets the corresponding year.
 
 ## AppointmentTapped
 

@@ -87,6 +87,10 @@ Description</th></tr>
 <td>AppointmentMapping</td>
 <td>AppointmentMapping</td>
 <td>Gets or sets the mapping to the appointment.</td></tr>
+<tr>
+<td>Resource</td>
+<td>-</td>
+<td>Gets or sets the Resource grouping for schedule.</td></tr>
 </table>
 
 The following table compares the [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) APIs,
