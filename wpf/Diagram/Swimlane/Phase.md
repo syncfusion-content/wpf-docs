@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Phase
+# Phase in WPF Diagram(SfDiagram)
 
  [Phase](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) are the subprocess which will split each lanes as horizontally or vertically based on the swimlane orientation. The multiple number of phase can be added to swimlane.
 

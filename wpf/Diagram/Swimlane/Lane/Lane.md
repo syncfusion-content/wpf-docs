@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# Lanes
+# Lanes in WPF Diagram(SfDiagram)
 
 [Lane](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
 

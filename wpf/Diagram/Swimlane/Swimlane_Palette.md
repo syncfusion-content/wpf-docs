@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visualize graphical object using Swimlanes | Syncfusion
-description: How to add the Lanes and Phases to the Stencil and drag and drop them over the drawing area?
+description: How to add the lanes and phases to the stencil and drag and drop them over the drawing area and its interaction?
 platform: wpf
 control: SfDiagram
 documentation: ug
