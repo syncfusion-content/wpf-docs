@@ -348,7 +348,7 @@ By setting `From` and `To` of `Meeting` class, you can schedule meetings for a s
 
 #### Bind to SfScheduler appointment
 
-You can map those properties of the `Meeting` class with our `SfScheduler` control by using the [SfScheduler.AppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentMappingProperty.html) property.
+You can map those properties of the `Meeting` class with our `SfScheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentMappingProperty.html) property.
 
 {% tabs %}
 {% highlight xaml %}
