@@ -66,18 +66,13 @@ You can customize header appearance of scheduler by using [HeaderTemplate](https
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule" 
-                        ViewType="Month">
+<syncfusion:SfScheduler x:Name="Schedule">
     <syncfusion:SfScheduler.HeaderTemplate>
         <DataTemplate >
-            <Grid Background="LightCyan" 
-                    HorizontalAlignment="Stretch" 
-                    VerticalAlignment="Stretch">
                 <TextBlock FontStyle="Italic"
                            Foreground="Blue"
                            FontSize="25"
                            Text="{Binding}"/>
-            </Grid>
         </DataTemplate>
     </syncfusion:SfScheduler.HeaderTemplate>
 </syncfusion:SfScheduler>
