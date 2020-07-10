@@ -80,16 +80,16 @@ Description</th></tr>
 <td>ItemsSource</td>
 <td>Gets or sets a items source to the scheduler.</td></tr>
 <tr>
-<td>AppointmentMapping</td>
-<td>AppointmentMapping</td>
-<td>Gets or sets the mapping to the appointment.</td></tr>
+<td>ScheduleAppointment</td>
+<td>ScheduleAppointment</td>
+<td>Gets or sets the appointments data in schedule control.</td></tr>
 <tr>
 <td>AppointmentMapping</td>
 <td>AppointmentMapping</td>
 <td>Gets or sets the mapping to the appointment.</td></tr>
 </table>
 
-The following table compares the `ScheduleAppointment` APIs,
+The following table compares the [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) APIs,
 
 <table>
 <tr>
@@ -167,7 +167,7 @@ Description</th></tr>
 <td>Gets the type of appointment.</td></tr>
 </table>
 
-The following table compares the `AppointmentMapping` APIs,
+The following table compares the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentMapping.html) APIs,
 
 <table>
 <tr>
