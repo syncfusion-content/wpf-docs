@@ -24,7 +24,7 @@ this.Schedule.HeaderHeight = 100;
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler header ViewHeaderHeight](Schedule-Headers_Images/HeaderHeight.png)
+![WPF Scheduler header ViewHeaderHeight](Schedule-Header_Images/HeaderHeight.png)
 
 ## Header date format
 You can change the Scheduler header date format of scheduler by using the  [HeaderDateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~HeaderDateFormat.html) property of SfScheduler. by default the header date format is `MMMM yyyy`.
@@ -40,7 +40,7 @@ this.Schedule.HeaderDateFormat = "MMM/yyyy";
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler header HeaderDateFormat](Schedule-Headers_Images/HeaderDateFormat.png)
+![WPF Scheduler header HeaderDateFormat](Schedule-Header_Images/HeaderDateFormat.png)
 
 ## Appearance
 
@@ -59,29 +59,29 @@ You can style Scheduler header appearance using [SchedulerHeaderControl](https:/
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler header CustomizedHeader](Schedule-Headers_Images/CustomizedHeader.png)
+![WPF Scheduler header CustomizedHeader](Schedule-Header_Images/CustomizedHeader.png)
 
 ### Customize header appearance using DataTemplate
 You can customize header appearance of scheduler by using [HeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~HeaderTemplate.html) property of SfScheduler.
 
 {% tabs %}
 {% highlight xaml %}
-<Style TargetType="syncfusion:SchedulerHeaderControl">
-    <Setter Property="Background" Value="LightCyan"/>
-</Style>
-
 <syncfusion:SfScheduler x:Name="Schedule" 
                         ViewType="Month">
     <syncfusion:SfScheduler.HeaderTemplate>
         <DataTemplate >
-            <TextBlock FontStyle="Italic"
-                       Foreground="Blue"
-                       FontSize="25"
-                       Text="{Binding}"/>
+            <Grid Background="LightCyan" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch">
+                <TextBlock FontStyle="Italic"
+                           Foreground="Blue"
+                           FontSize="25"
+                           Text="{Binding}"/>
+            </Grid>
         </DataTemplate>
     </syncfusion:SfScheduler.HeaderTemplate>
 </syncfusion:SfScheduler>
 {% endhighlight %}
 {% endtabs %}
 
-![WPF Scheduler header HeaderTemplate](Schedule-Headers_Images/HeaderTemplate.png)
+![WPF Scheduler header HeaderTemplate](Schedule-Header_Images/HeaderTemplate.png)
