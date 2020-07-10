@@ -1,7 +1,10 @@
 ---
-title: "Swimlane"
-component: "Diagram"
-description: "Nodes visually represents the geometrical information and process flows."
+layout: post
+title: Visualize graphical object using Swimlanes | Syncfusion
+description: How to visually represent the geometrical information and process flows as swimlanes and how to customize their appearance?
+platform: wpf
+control: SfDiagram
+documentation: ug
 ---
 
 # Swimlane in WPF Diagram(SfDiagram)
@@ -132,7 +135,7 @@ The height and width of swimlane header can be customized with [`UnitWidth`](htt
 
 >Note: By default the swimlane orientation has Horizontal.
 
-The following code example illustrates how to customise the swimlane header.
+The following code example illustrates how to customize the swimlane header.
 
 {% tabs %}
 {% highlight xaml %}
