@@ -70,7 +70,7 @@ _ribbonBar2.Items.Add(_ribbonListBox)
 
 ![Adding ribbon list box](RibbonListBox_images/RibbonListBox_img1.jpg)
 
-## Add ListBox to the Simplified layout
+## Add ListBox to the simplified layout
 
 When the simplified layout is enabled, the RibbonListBox can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

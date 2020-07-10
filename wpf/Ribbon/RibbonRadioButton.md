@@ -66,7 +66,7 @@ _ribbonBar2.Items.Add(_ribbonRadioButton2)
 
 ![Adding radio button](RibbonRadioButton_images/RibbonRadioButton_img1.jpg)
 
-## Add RadioButton to the Simplified layout
+## Add RadioButton to the simplified layout
 
 When the simplified layout is enabled, the RibbonRadioButton can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

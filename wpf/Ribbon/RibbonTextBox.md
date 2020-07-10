@@ -53,7 +53,7 @@ _ribbonBar2.Items.Add(_ribbonTextBox)
 
 ![Adding text box to the ribbon](RibbonTextBox_images/RibbonTextBox_img1.jpg)
 
-## Add TextBox to the Simplified layout
+## Add TextBox to the simplified layout
 
 When the simplified layout is enabled, the RibbonTextBox can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

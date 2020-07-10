@@ -206,7 +206,7 @@ _ribbonBar2.Items.Add(_dropDownButton3)
 
 ![Various size forms in DropDownButton](DropDownButton_images/DropDownButton_img3.jpg)
 
-## Settings image to DropDownButton
+## Setting image to DropDownButton
 
 [`DropDownButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButton.html) allows to display a normal image or vector image using the [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~IconType.html) enumeration property. The default value of the [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonItemsControl~IconType.html) property is "Icon". The [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.IconType.html) enumeration has the following values:
 
@@ -576,7 +576,7 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
 *Simplified layout*
 
-## Add DropDownButton to the Simplified layout
+## Add DropDownButton to the simplified layout
 
 When the simplified layout is enabled, the [`DropDownButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.DropDownButton.html) can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

@@ -102,7 +102,7 @@ _ribbonBar2.Items.Add(_buttonPanel)
 
 ![WPF Ribbon showing added comboboxitems](RibbonComboBox_images/RibbonComboBox_img1.jpg)
 
-## Add ComboBox to the Simplified layout
+## Add ComboBox to the simplified layout
 
 When the simplified layout is enabled, the RibbonComboBox can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

@@ -44,11 +44,11 @@ To display items as DropDown in the ribbon, set `VisualMode` property as `DropDo
 
 ![DropDown Visual mode of Ribbon Gallery](RibbonGallery_images/RibbonGallery_img2.jpg)
 
-## Add Gallery to the Simplified layout
+## Add Gallery to the simplified layout
 
-### InRibbon visual mode
+### Add Gallery in InRibbon visual mode
 
-When the simplified layout is enabled, the RibbonGallery can be added and displayed in a single line in 'InRibbon' VisualMode as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+When the simplified layout is enabled, the RibbonGallery can be added and displayed in a single line in [`InRibbon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.RibbonGalleryVisualMode.html) VisualMode as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 
 {% tabs %}
 
@@ -119,9 +119,9 @@ When the simplified layout is enabled, the RibbonGallery can be added and displa
 
 ![RibbonGallery InRibbon mode during simplified layout](RibbonGallery_images/RibbonGallery_InRibbonSimplified.png)
 
-### DropDown visual mode
+### Add Gallery in DropDown visual mode
 
-When the simplified layout is enabled, the RibbonGallery can be added and displayed in a single line in 'DropDown' VisualMode as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+When the simplified layout is enabled, the RibbonGallery can be added and displayed in a single line in [`DropDown`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.RibbonGalleryVisualMode.html) VisualMode as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 
 {% tabs %}
 
@@ -191,6 +191,8 @@ When the simplified layout is enabled, the RibbonGallery can be added and displa
 {% endtabs %}
 
 ![RibbonGallery DropDown mode during simplified layout](RibbonGallery_images/RibbonGallery_DropDownSimplified.png)
+
+### Arranging between layouts
 
 When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonGallery can be ignored as it will be resized automatically to the standard width and height. If the RibbonGallery is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
 

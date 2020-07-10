@@ -224,7 +224,7 @@ documentation: ug
  *Simplified layout*
  
 
- ## Resizing Ribbon in Simplified layout
+ ## Resizing Ribbon in simplified layout
 
  While re-sizing the Ribbon, when the width of the window decreases and touches the last positioned item in the Ribbon, the appropriate item will be moved inside the overflow menu automatically. The same behavior will continue for each item when the window is resized continuously.
 

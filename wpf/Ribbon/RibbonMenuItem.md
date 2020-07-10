@@ -110,7 +110,7 @@ RibbonMenuItem _ribbonMenuItem = new RibbonMenuItem() { Header = "NEW1", Width =
 
 ![Setting icon for menu item](RibbonMenuItem_images/RibbonMenuItem_img2.jpg)
 
-## Add MenuItem to the Simplified layout
+## Add MenuItem to the simplified layout
 
 When the simplified layout is enabled, the RibbonMenuItem can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

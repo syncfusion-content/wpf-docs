@@ -203,7 +203,7 @@ This ContextTabGroup can also be kept hidden and shown while required cases like
 
 ![ContextTabGroup](GroupingRibbonTabsusingContextTabGroups_images/GroupingRibbonTabsusingContextTabGroups_img1.jpeg)
 
-## Add ContextTabGroup to the Simplified layout
+## Add ContextTabGroup to the simplified layout
 
 When the simplified layout is enabled, the ContextTabGroup can be added and its items will be displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

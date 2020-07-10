@@ -42,7 +42,7 @@ To add RibbonTabs as ModalTabs in an application, use `ModalTabCollection` prope
 
 {% endtabs %}
 
-## Add Modal Tab to the Simplified layout
+## Add Modal Tab to the simplified layout
 
 When the simplified layout is enabled, the Model tab can be added, and its items will be displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

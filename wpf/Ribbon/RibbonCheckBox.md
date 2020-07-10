@@ -59,7 +59,7 @@ ribbonBar2.Items.Add(ribbonCheckBox)
 
 ![Output](RibbonCheckBox_images/RibbonCheckBox_img1.jpg)
 
-## Add CheckBox to the Simplified layout
+## Add CheckBox to the simplified layout
 
 When the simplified layout is enabled, the RibbonCheckBox can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

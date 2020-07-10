@@ -80,7 +80,7 @@ _ribbonBar.Items.Add(_ribbonButton6)
 
 ![Adding separator to the ribbon bar](RibbonSeparator_images/RibbonSeparator_img1.jpg)
 
-## Add Separator to the Simplified layout
+## Add Separator to the simplified layout
 
 When the simplified layout is enabled, the RibbonSeparator can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 

@@ -10,8 +10,6 @@ documentation: ug
 
 Tooltip is used to display small information about the specific element while hovering mouse on it and it is implemented as like in MS Outlook. 
 
-Ribbon control supports ToolTips for its items in both normal and simplified layout. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
-
 `ScreenTip` is an enhanced ToolTip and it is used to show a popup window when the mouse cursor is hovered over `RibbonItem`. The popup is used to provide details of the `RibbonItem’s` function. The difference between ToolTip and ScreenTip is that, ToolTip hosts controls to show a small popup window, whereas ScreenTip includes predefined properties. With these predefined properties, you can create ScreenTip easily.
 
 ScreenTip has four properties.

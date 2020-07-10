@@ -9,9 +9,9 @@ documentation: ug
 
 # State Persistence in WPF Ribbon
 
-State Persistence is the combined process of Serialization and Deserialization. Serialization is the process of converting the state of an object to a format in which it can be persisted as a file in the memory. The serialized format contains the object's state information. Deserialization is the complement process of Serialization, which converts into the object from the stored state information.
+State persistence is a combined process of serialization and deserialization. Serialization is the process of converting the state of the object to the format in which it can be stored as a file in the memory. Deserialization is a complement process of serialization that converts into the object from the stored state information.
 
-Ribbon control has built-in serialization support to serialize the entire Ribbon control state and details of the layout mode. It also provides supports to save and load the Ribbon at any time while running the application and also at the time of application exit and start, with simplified or normal layout. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+The Ribbon control has built-in serialization support to serialize the entire Ribbon control state and details of the layout mode. It also provides supports to save and load the Ribbon at any time while running the application, either with simplified or normal layout.
 
 The following ribbon control states can persist separately.
 
