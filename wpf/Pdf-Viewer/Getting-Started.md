@@ -1,192 +1,182 @@
 ---
 layout: post
-title: Getting Started| PDF Viewer | WPF | Syncfusion
-description: Getting started section will guide through how to use the PDF viewer WPF control in the WPF application, step by step in MVVM pattern.
+title: Getting Started with PDF Viewer | PDF Viewer | WPF | Syncfusion
+description: This section will guide through how to use the PDF viewer WPF control in the WPF application, step by step with MVVM pattern.
 platform: wpf
 control: PDF Viewer
 documentation: ug
 ---
 
-# Getting Started with PDFViewer
+# Getting Started with PDF Viewer
 
-This section demonstrates how to create an application that displays a PDF file using PDF viewer.
+This section explains how to create an application that displays a PDF file using the WPF PDF Viewer.
 
-To get start quickly with WPF PDFViewer, you can check on this video:
+To get started quickly with WPF PDF Viewer, you can check on this video:
 <style>#WPFPDFViewerVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='WPFPDFViewerVideoTutorial' src='https://www.youtube.com/embed/H1YBX_-QWKc'></iframe>
 
 ## Assemblies required
 
-The following assemblies are required in your WPF application to use PDF viewer.
+The following assemblies are required in your WPF application to use the PDF Viewer.
 
 <table>
 <tr>
-<th>
-Required Assemblies</th><th>
-Description</th></tr>
+<th>Required Assemblies</th>
+<th>Description</th>
+</tr>
 <tr>
-<td>
-Syncfusion.Compression.Base</td><td>
-This library handles various compression and decompression operations that are used in the PDF file internally.</td></tr>
+<td>Syncfusion.Compression.Base</td>
+<td>This library handles various compression and decompression operations that are used in the PDF file internally.</td></tr>
 <tr>
-<td>
-Syncfusion.Pdf.Base</td><td>
-This library contains the PDF reader and creator that supports the `PdfViewerControl`.</td></tr>
+<td>Syncfusion.Pdf.Base</td>
+<td>This library contains the PDF reader and creator that supports the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).</td></tr>
 <tr>
-<td>
-Syncfusion.PdfViewer.WPF</td><td>
-This component contains the rendering area and other related UI elements.</td></tr>
+<td>Syncfusion.PdfViewer.WPF</td>
+<td>This component contains the rendering area and other related UI elements.</td>
+</tr>
 <tr>
-<td>
-Syncfusion.Shared.WPF</td><td>
-This component provides various UI styles and themes used in the `PdfViewerControl`.</td></tr>
+<td>Syncfusion.Shared.WPF</td>
+<td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).</td></tr>
 </table>
 
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WPF application to use our components.
 
-## Create a simple PDF viewer application 
+## Create a simple PDF Viewer application 
 
-Following steps demonstrates creating a simple PDF viewer application in WPF:
+You can create a PDF Viewer application by simply drag the control from the Visual Studio toolbox and drop in the designer window of your application or by creating the control manually from code.
 
-### Drag the PdfViewerControl from toolbox
+### Drag and drop the PdfViewerControl from the toolbox
+Follow these steps to drag and drop the PdfViewerControl from the toolbox.
 
 1. After installing the Syncfusion Essential Studio in your machine, create a new WPF application in Visual Studio.
-2. Open the Visual Studio tool box. Navigate to “Syncfusion WPF Toolbox” tab and drag the `PdfViewerControl` toolbox item to the Designer window, it automatically adds the required references to the current application.
+2. Open the Visual Studio toolbox.
+3. Navigate to <b>Syncfusion WPF Toolbox</b> tab and drag the `PdfViewerControl` toolbox item to the Designer window, it automatically adds the required references to the current application.
 
-   ![Getting started](Getting-Started_images/Getting-Started_img3.png)
-
+   ![Getting started](Getting-Started_images/Toolbox.png)
     PDF viewer control in toolbox
     {:.caption}
 
-### Creating PdfViewerControl from code
+### Adding control manually in XAML
+To add control manually in XAML, do the following steps,
 
-1. To add the `PdfViewerControl` using code, add the required assemblies as reference to the project.
-2. Add the following Syncfusion namespace in XAML to make use of the `PdfViewerControl`.
+1. Add the required assemblies as a reference to the project.
+2. Add the following Syncfusion namespace in XAML to make use of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
    ~~~xaml
+	xmlns:Syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF"
+   ~~~
 
-		<Window
+3. Declare the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) in the XAML page.
 
+   ~~~xaml
+	<Window 
+		x:Class="PdfViewerDemo.MainWindow"
 		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		Title="PDF Viewer" WindowState="Maximized"
+		xmlns:syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF">
+		<Grid x:Name="HomeGrid">
+			<syncfusion:PdfViewerControl x:Name="pdfViewer"></syncfusion:PdfViewerControl>
+		</Grid>
+	</Window>
+   ~~~
 
-		xmlns:Syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF" 
+### Adding control manually from code
 
-		x:Class="GettingStartedWPF.MainWindow"
+To add control manually from code, follow these steps,
 
-		Title="MainWindow" Height="350" Width="525">
+1.	Add the required assemblies as a reference to the project.
+2.	Add the following Syncfusion namespace class file.
 
-   ~~~		
+   ~~~csharp
+	using Syncfusion.Windows.PdfViewer;
+   ~~~
 
+3. Create a PdfViewerControl instance and add it to the main window.
 
-3. Add the following code in XAML.
+   ~~~csharp
+	using Syncfusion.Windows.PdfViewer;
+	using System.Windows;
 
-   ~~~xaml
-
-		<Syncfusion:PdfViewerControl Name="pdfViewerControl1"/>
-
-
+	namespace PdfViewerDemo
+	{
+		/// <summary>
+		/// Interaction logic for Window1.xaml
+		/// </summary>
+		public partial class MainWindow : Window
+		{
+			# region Constructor
+			public MainWindow()
+			{
+				InitializeComponent();
+				PdfViewerControl pdfViewer = new PdfViewerControl();
+				HomeGrid.Children.Add(pdfViewer);
+			}
+			#endregion
+		}
+	}
    ~~~
 
 ## Display PDF file
-   
-The PdfViewerControl’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps demonstrates how to display a PDF file using the `PdfViewerControl`:
 
-1. Create a simple class that loads a PDF document  as illustrated in the following code example. Save the class file as PdfReport.cs.
+The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html)’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps explain how to display a PDF file using the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html):
 
-   ~~~csharp
+1.	Create a simple class in the application that implements [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netcore-3.1) and declare a file stream property in the class as shown in the following code sample.
 
+	~~~csharp
+	using System.ComponentModel;
+	using System.IO;
 
+	namespace PdfViewerDemo
+	{
 		public class PdfReport : INotifyPropertyChanged
-
 		{
+			private Stream docStream;
 
+			public event PropertyChangedEventHandler PropertyChanged;
 
+			public Stream DocumentStream
+			{
+				get
+				{
+					return docStream;
+				}
+				set
+				{
+					docStream = value;
+					OnPropertyChanged(new PropertyChangedEventArgs("DocumentStream"));
+				}
+			}
 
-		private Stream docStream;
+			public PdfReport()
+			{
+				//Load the stream from the local system.
+				docStream = new FileStream(@"../../Data/HTTP Succinctly.pdf", FileMode.OpenOrCreate);
+			}
 
-
-
-		public event PropertyChangedEventHandler PropertyChanged;
-
-
-
-		public Stream DocumentStream
-
-		{
-
-		get
-
-		{
-
-		return docStream;
-
+			public void OnPropertyChanged(PropertyChangedEventArgs e)
+			{
+				if (PropertyChanged != null)
+					PropertyChanged(this, e);
+			}
 		}
+	}
+	~~~
 
-		set
+2. Set the [DataContext](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.datacontext?view=netcore-3.1) to the Window for data binding. To add the `DataContext` in XAML, use the following code example.
 
-		{
+	~~~xaml
+	<Window.DataContext>
+		<pdfviewerdemo:PdfReport/>
+	</Window.DataContext>
+	~~~
 
-		docStream = value;
+3.	After setting the `DataContext`, bind the file stream property to the [ItemSource](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) dependency property of [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) using the following code sample in XAML.
 
-		OnPropertyChanged(new PropertyChangedEventArgs("DocumentStream"));
+	~~~xaml
+	<syncfusion:PdfViewerControl x:Name="pdfViewer" ItemSource="{Binding DocumentStream}"/>
+	~~~
 
-		}
+The sample project for displaying PDF files using the PDF Viewer is available in the [GitHub](https://github.com/SyncfusionExamples/WPF-PDFViewer-Examples/tree/master/DisplayPDF).
 
-		}
-
-
-
-
-
-		public PdfReport()
-
-		{
-
-		//Load the stream from the local system.
-
-		docStream = new FileStream("Barcode.pdf", FileMode.OpenOrCreate);           
-
-		}
-
-
-
-
-
-		public void OnPropertyChanged(PropertyChangedEventArgs e)
-
-		{
-
-		if (PropertyChanged != null)
-
-		PropertyChanged(this, e);
-
-		}
-
-		}
-
-
-   ~~~
-
-2. To bind the DocumentStream property of the PdfReport class, set the DataContext to the Window. To add the DataContext in XAML, use the following code example.
-
-   ~~~xaml
-
-		<Window.DataContext>
-
-		<local:PdfReport/>
-
-		</Window.DataContext>
-
-   ~~~
-
-3. After setting the DataContext, you can set the ItemSource dependency property of `PdfViewerControl` by using the following code example in XAML.
-
-   ~~~xaml
-
-		<Syncfusion:PdfViewerControl ItemSource="{Binding DocumentStream}"/>
-
-   ~~~
-
-N> Alternatively, the Open button in the toolbar can also be used to load and display the PDF documents at runtime.
+N> Alternatively, the Open button in the toolbar can also be used to load and display the PDF documents at runtime. Refer to this [link](https://help.syncfusion.com/wpf/pdf-viewer/viewing-pdf-files#open-pdf-file-from-the-local-disk-using-toolbar) for more details.
