@@ -197,7 +197,7 @@ documentation: ug
 
  ![Setting item location using DisplayMode for Simplified layout](SimplifiedLayout_images/RibbonSimplifiedLayout.png)
  
- Click [here](https://github.com/SyncfusionExamples/How-to-customize-the-ribbon-items-within-the-Ribbon-in-simplified-layout-) to access the sample code that displays the simplified layout in the Ribbon control.
+ Click [here](https://github.com/SyncfusionExamples/How-to-customize-the-simplified-layout-in-Ribbon) to access the sample code that displays the simplified layout in the Ribbon control.
 
  ## Customizing the Ribbon during runtime through the QAT window
 
