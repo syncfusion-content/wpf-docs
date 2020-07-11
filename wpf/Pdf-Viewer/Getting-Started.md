@@ -29,14 +29,14 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>This library handles various compression and decompression operations that are used in the PDF file internally.</td></tr>
 <tr>
 <td>Syncfusion.Pdf.Base</td>
-<td>This library contains the PDF reader and creator that supports the `PdfViewerControl`.</td></tr>
+<td>This library contains the PDF reader and creator that supports the PDF Viewer.</td></tr>
 <tr>
 <td>Syncfusion.PdfViewer.WPF</td>
 <td>This component contains the rendering area and other related UI elements.</td>
 </tr>
 <tr>
 <td>Syncfusion.Shared.WPF</td>
-<td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the `PdfViewerControl`.</td></tr>
+<td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the PDF Viewer.</td></tr>
 </table>
 
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WPF application to use our components.
@@ -62,9 +62,11 @@ To add control manually in XAML, do the following steps,
 1. Add the required assemblies as a reference to the project.
 2. Add the following Syncfusion namespace in XAML to make use of the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).
 
-   ~~~xaml
-	xmlns:Syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF"
-   ~~~
+	~~~xaml
+	<Window
+		xmlns:Syncfusion="clr-namespace:Syncfusion.Windows.PdfViewer;assembly=Syncfusion.PdfViewer.WPF">
+	</Window>	
+	~~~
 
 3. Declare the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html) in the XAML page.
 
@@ -88,9 +90,9 @@ To add control manually from code, follow these steps,
 1.	Add the required assemblies as a reference to the project.
 2.	Add the following Syncfusion namespace class file.
 
-   ~~~csharp
+	~~~csharp
 	using Syncfusion.Windows.PdfViewer;
-   ~~~
+	~~~
 
 3. Create a PdfViewerControl instance and add it to the main window.
 
@@ -120,6 +122,8 @@ To add control manually from code, follow these steps,
 ## Display PDF file
 
 The [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html)’s [ItemSource](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ItemSource.html) property allows you to bind PDF documents in XAML. This property accepts a stream input that can be bounded to the viewer during initialization. The following steps explain how to display a PDF file using the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html):
+
+N> From v16.2.0x onwards, PDF Viewer uses PDFium as a default rendering engine to render the PDF pages, which is a more robust and promising rendering engine. Refer to this [link](https://help.syncfusion.com/wpf/pdf-viewer/pdf-rendering-engines) for more details.
 
 1.	Create a simple class in the application that implements [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netcore-3.1) and declare a file stream property in the class as shown in the following code sample.
 
