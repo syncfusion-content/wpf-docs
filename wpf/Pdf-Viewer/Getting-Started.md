@@ -29,14 +29,14 @@ The following assemblies are required in your WPF application to use the PDF Vie
 <td>This library handles various compression and decompression operations that are used in the PDF file internally.</td></tr>
 <tr>
 <td>Syncfusion.Pdf.Base</td>
-<td>This library contains the PDF reader and creator that supports the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).</td></tr>
+<td>This library contains the PDF reader and creator that supports the `PdfViewerControl`.</td></tr>
 <tr>
 <td>Syncfusion.PdfViewer.WPF</td>
 <td>This component contains the rendering area and other related UI elements.</td>
 </tr>
 <tr>
 <td>Syncfusion.Shared.WPF</td>
-<td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the [PdfViewerControl](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl.html).</td></tr>
+<td>This component contains various UI controls (ColorPickerPalette and Numeric UpDown) that are used in the `PdfViewerControl`.</td></tr>
 </table>
 
 N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your WPF application to use our components.
