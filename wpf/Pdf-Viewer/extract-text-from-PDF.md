@@ -97,7 +97,7 @@ namespace TextExtractionDemo
 
 ### Extract lines
 
-You can get the text line by line along with the bounds using the [TextLines](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLines.html) property from the [ExtractText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfDocumentView~ExtractText(Int32,TextLines).html) method. Refer to the following code sample to perfrom the same.
+You can get the text line by line along with the bounds using the [TextLines](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLines.html) property from the [ExtractText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfDocumentView~ExtractText(Int32,TextLines).html) method. Refer to the following code sample to perform the same.
 
 {% tabs %}
 {% highlight C# %}
@@ -147,7 +147,7 @@ namespace TextExtractionDemo
 
 ### Extract words
  
-You can get the words in a line along with the bounds using the [WordCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLine~WordCollection.html) property of the [TextLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLine.html) using [ExtractText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfDocumentView~ExtractText(Int32,TextLines).html) method. Refer to the following code sample to perfrom the same.
+You can get the words in a line along with the bounds using the [WordCollection](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLine~WordCollection.html) property of the [TextLine](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.TextLine.html) using [ExtractText](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfDocumentView~ExtractText(Int32,TextLines).html) method. Refer to the following code sample to perform the same.
 
 {% tabs %}
 {% highlight C# %}
