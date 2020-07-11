@@ -67,11 +67,11 @@ namespace PdfViewerDemo
 N>In the run time, the PDF viewer will check the custom folder path provided in the [ReferencePath](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~ReferencePath.html) property. If you already placed the Pdfium assemblies in the custom folder path, it will refer to the already available assemblies from the location. It won’t generate the assemblies in the folder again.
 You need to place the PDFium assembly in the correct folder structure as mentioned below
 * ThirdPartyBinaries
-  * Pdfium
-    * x86
-      * Pdfium.dll
-    * x64
-      * Pdfium.dll
+	* Pdfium
+		* x86
+			* Pdfium.dll
+		* x64
+			* Pdfium.dll
 
 ## SfPdf
 
