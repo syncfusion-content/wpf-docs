@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
- # RibbonButton in WPF Ribbon
+# RibbonButton in WPF Ribbon
 
  **RibbonButton** provides functionality similar to a normal button. Additionally, it comes in different sizes and can be easily placed inside the **RibbonBar** in the Ribbon control.  
 
- ## Setting various size modes
+## Setting various size modes
 
  [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) supports three types of size modes and it can be set using the [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~SizeForm.html) property. The different [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.SizeForm.html) available are as follows:
 
@@ -537,8 +537,6 @@ documentation: ug
  SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 
  {% endhighlight %}
-
- {% endtabs %}
 
  {% endtabs %}
 
