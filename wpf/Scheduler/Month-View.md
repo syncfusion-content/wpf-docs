@@ -122,7 +122,9 @@ this.Schedule.MonthViewSettings.MonthNavigationDirection = MonthNavigationDirect
 
 ![WPF Scheduler month view MonthNavigationDirection](Month-View_Images/MonthNavigationDirection.png)
 
-## View header day format
+## View header
+You can customize the default appearance of view header in month view by setting `ViewHeaderDayFormat`, `DateFormat` ,`ViewHeaderHeight` and `ViewHeaderTemplate` of TimelineViewSettings.
+### View header day format
 You can customize the day format of the Scheduler view header by using the [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase~ViewHeaderDayFormat.html) property of `MonthViewSettings`. By default, the month view header day format is `ddd`.
 
 {% tabs %}
@@ -142,7 +144,27 @@ this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "dddd";
 
 ![WPF Scheduler month view ViewHeaderDayFormat](Month-View_Images/ViewHeaderDayFormat.png)
 
-## View header height
+### Date format
+You can customize the date format of the scheduler month view by using the [DateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.MonthViewSettings~DateFormat.html) property of `MonthViewSettings`. By default, the month date format is `d`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" >
+    <syncfusion:SfScheduler.MonthViewSettings>
+        <syncfusion:MonthViewSettings DateFormat="dd"/>
+    </syncfusion:SfScheduler.MonthViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+this.Schedule.ViewType = SchedulerViewType.Month;
+this.Schedule.MonthViewSettings.DateFormat = "dd";
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler month view DateFormat](Month-View_Images/DateFormat.png)
+
+### View header height
 You can customize the view header height by using the [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase~ViewHeaderHeight.html) property of `MonthViewSettings`. By default, the `ViewHeaderHeight` is set to 50.
 
 {% tabs %}
@@ -162,7 +184,7 @@ this.Schedule.MonthViewSettings.ViewHeaderHeight = 100;
 
 ![WPF Scheduler month view ViewHeaderHeight](Month-View_Images/ViewHeaderHeight.png)
 
-## View header template
+### View header appearance customization
 You can customize the default appearance of the month view header by using the [ViewHeaderTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase~ViewHeaderTemplate.html) property of `MonthViewSettings`.
 
 {% tabs %}
@@ -193,26 +215,6 @@ You can customize the default appearance of the month view header by using the [
 {% endtabs %}
 
 ![WPF Scheduler month view ViewHeadeTemplate](Month-View_Images/ViewHeaderTemplate.png)
-
-## Date format
-You can customize the date format of the scheduler month view by using the [DateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.MonthViewSettings~DateFormat.html) property of `MonthViewSettings`. By default, the month date format is `d`.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings DateFormat="dd"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
-{% endhighlight %}
-{% highlight c#%}
-this.Schedule.ViewType = SchedulerViewType.Month;
-this.Schedule.MonthViewSettings.DateFormat = "dd";
-{% endhighlight %}
-{% endtabs %}
-
-![WPF Scheduler month view DateFormat](Month-View_Images/DateFormat.png)
 
 ## Leading and Trailing days visibility
 You can customize the leading and trailing days’_ visibility of the scheduler month view by using the [LeadingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.MonthViewSettings~LeadingDaysVisibility.html) and the [TrailingDaysVisibility](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.MonthViewSettings~TrailingDaysVisibility.html) property of `MonthViewSettings.` By default, the `LeadingDaysVisibility` and `TrailingDaysVisibility` is set to `Visible`.
