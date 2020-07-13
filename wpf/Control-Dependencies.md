@@ -1425,6 +1425,7 @@ Syncfusion.SfChart.WPF
 <tr>
 <td> 
 Syncfusion.SfMaps.WPF
+Syncfusion.Shared.WPF
 </td>
 <td> 
 Syncfusion.SfMaps.WPF
