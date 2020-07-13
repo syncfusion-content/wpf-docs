@@ -225,8 +225,8 @@ The TreeView allows customizing the indent spacing of items by setting the [Inde
 {% endhighlight %}
 {% highlight c# %}
 
-SfTreeView treeView = new SfTreeView();
-treeView.Indentation = 40;
+SfTreeView sfTreeView = new SfTreeView();
+sfTreeView.Indentation = 40;
 
 {% endhighlight %}
 {% endtabs %}
@@ -243,8 +243,8 @@ The TreeView allows customizing the width of expander view by setting the [Expan
 {% endhighlight %}
 {% highlight c# %}
 
-SfTreeView treeView = new SfTreeView();
-treeView.ExpanderWidth = "40";
+SfTreeView sfTreeView = new SfTreeView();
+sfTreeView.ExpanderWidth = "40";
 
 {% endhighlight %}
 {% endtabs %}
@@ -259,13 +259,13 @@ End: Allows displaying the expander view at the end position.
 {% tabs %}
 {% highlight xaml %}
 
-<Syncfusion:SfTreeView x:Name="treeView" ExpanderPosition="End">
+<Syncfusion:SfTreeView x:Name="sfTreeView" ExpanderPosition="End">
 
 {% endhighlight %}
 {% highlight c# %}
 
-SfTreeView treeView = new SfTreeView();
-treeView.ExpanderPosition = ExpanderPosition.End;
+SfTreeView sfTreeView = new SfTreeView();
+sfTreeView.ExpanderPosition = ExpanderPosition.End;
 
 {% endhighlight %}
 {% endtabs %}
@@ -324,13 +324,13 @@ The SfTreeView supports to animate expanding or collapsing the [TreeViewNode](ht
 {% tabs %}
 {% highlight xaml %}
 
-<Syncfusion:SfTreeView x:Name="treeView" IsAnimationEnabled="true">
+<Syncfusion:SfTreeView x:Name="sfTreeView" IsAnimationEnabled="true">
 
 {% endhighlight %}
 {% highlight c# %}
 
-SfTreeView treeView = new SfTreeView();
-treeView.IsAnimationEnabled = true;
+SfTreeView sfTreeView = new SfTreeView();
+sfTreeView.IsAnimationEnabled = true;
 
 {% endhighlight %}
 {% endtabs %}
