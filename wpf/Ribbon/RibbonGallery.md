@@ -6,7 +6,7 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# RibbonGallery
+# Ribbon Gallery in WPF Ribbon
 
 RibbonGallery provides `VisualMode` property, that helps to display items in two different ways.
 
@@ -43,6 +43,182 @@ To display items as DropDown in the ribbon, set `VisualMode` property as `DropDo
 {% endtabs %}
 
 ![DropDown Visual mode of Ribbon Gallery](RibbonGallery_images/RibbonGallery_img2.jpg)
+
+## Add Gallery to the simplified layout
+
+### Add Gallery in InRibbon visual mode
+
+When the simplified layout is enabled, the RibbonGallery can be added and displayed in a single line in [`InRibbon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.RibbonGalleryVisualMode.html) VisualMode as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="RibbonButton_IconTemp.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RibbonButton_IconTemp" xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        skin:SfSkinManager.VisualStyle="MaterialLight"
+        Title="Untitled 1 - Ribbon Control" Height="450" Width="800">
+    <Grid x:Name="grid">
+        <syncfusion:Ribbon VerticalAlignment="Top" EnableSimplifiedLayoutMode="True" LayoutMode="Simplified">
+            <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
+                <syncfusion:RibbonBar Header="Options">
+                    <syncfusion:RibbonGallery  VisualMode="InRibbon" Label="Styles" MediumIcon="/Resources/Finalmark20.png" >
+                        <syncfusion:RibbonGalleryItem CheckOnClick="True">
+                            <StackPanel>
+                                <TextBlock
+                                        Margin="0,9,0,0"
+                                        Text="AaBbCc"
+                                        TextAlignment="Center" />
+                                <TextBlock
+                                        Margin="0,11,0,0"
+                                        Text="Normal"
+                                        TextAlignment="Center" />
+                            </StackPanel>
+                        </syncfusion:RibbonGalleryItem>
+                        <syncfusion:RibbonGalleryItem CheckOnClick="True">
+                            <StackPanel>
+                                <TextBlock
+                                        Margin="0,9,0,0"
+                                        Text="AaBbCc"
+                                        TextAlignment="Center" />
+                                <TextBlock
+                                        Margin="0,11,0,0"
+                                        Text="No Spa.."
+                                        TextAlignment="Center" />
+                            </StackPanel>
+                        </syncfusion:RibbonGalleryItem>
+                        <syncfusion:RibbonGalleryItem CheckOnClick="True">
+                            <StackPanel>
+                                <TextBlock
+                                        Margin="0,5,0,0"
+                                        FontSize="18"
+                                        Foreground="DarkBlue"
+                                        Text="AaBbCc"
+                                        TextAlignment="Center" />
+                                <TextBlock
+                                        Margin="0,6,0,0"
+                                        Text="Heading 1"
+                                        TextAlignment="Center" />
+                            </StackPanel>
+                        </syncfusion:RibbonGalleryItem>
+                    </syncfusion:RibbonGallery>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RibbonGallery InRibbon mode during simplified layout](RibbonGallery_images/RibbonGallery_InRibbonSimplified.png)
+
+### Add Gallery in DropDown visual mode
+
+When the simplified layout is enabled, the RibbonGallery can be added and displayed in a single line in [`DropDown`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.RibbonGalleryVisualMode.html) VisualMode as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonWindow x:Class="RibbonButton_IconTemp.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RibbonButton_IconTemp" xmlns:skin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
+        mc:Ignorable="d" xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        skin:SfSkinManager.VisualStyle="MaterialLight"
+        Title="Untitled 1 - Ribbon Control" Height="450" Width="800">
+    <Grid x:Name="grid">
+        <syncfusion:Ribbon VerticalAlignment="Top" EnableSimplifiedLayoutMode="True" LayoutMode="Simplified">
+            <syncfusion:RibbonTab Caption="HOME"  IsChecked="True">
+                <syncfusion:RibbonBar Header="Options">
+                    <syncfusion:RibbonGallery  VisualMode="DropDown" Label="Styles" MediumIcon="/Resources/Finalmark20.png" Width="85">
+                        <syncfusion:RibbonGalleryItem CheckOnClick="True">
+                            <StackPanel>
+                                <TextBlock
+                                        Margin="0,9,0,0"
+                                        Text="AaBbCc"
+                                        TextAlignment="Center" />
+                                <TextBlock
+                                        Margin="0,11,0,0"
+                                        Text="Normal"
+                                        TextAlignment="Center" />
+                            </StackPanel>
+                        </syncfusion:RibbonGalleryItem>
+                        <syncfusion:RibbonGalleryItem CheckOnClick="True">
+                            <StackPanel>
+                                <TextBlock
+                                        Margin="0,9,0,0"
+                                        Text="AaBbCc"
+                                        TextAlignment="Center" />
+                                <TextBlock
+                                        Margin="0,11,0,0"
+                                        Text="No Spa.."
+                                        TextAlignment="Center" />
+                            </StackPanel>
+                        </syncfusion:RibbonGalleryItem>
+                        <syncfusion:RibbonGalleryItem CheckOnClick="True">
+                            <StackPanel>
+                                <TextBlock
+                                        Margin="0,5,0,0"
+                                        FontSize="18"
+                                        Foreground="DarkBlue"
+                                        Text="AaBbCc"
+                                        TextAlignment="Center" />
+                                <TextBlock
+                                        Margin="0,6,0,0"
+                                        Text="Heading 1"
+                                        TextAlignment="Center" />
+                            </StackPanel>
+                        </syncfusion:RibbonGalleryItem>
+                    </syncfusion:RibbonGallery>
+                </syncfusion:RibbonBar>
+            </syncfusion:RibbonTab>
+        </syncfusion:Ribbon>
+    </Grid>
+</syncfusion:RibbonWindow>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RibbonGallery DropDown mode during simplified layout](RibbonGallery_images/RibbonGallery_DropDownSimplified.png)
+
+### Arranging between layouts
+
+When arranging in simplified layout alone, the **Margin**, **Width** and **Height** values of the RibbonGallery can be ignored as it will be resized automatically to the standard width and height. If the RibbonGallery is to be shown in both normal and simplified layout, the **Margin**, **Width** and **Height** properties can be set for normal layout alone using triggers.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:RibbonGallery syncfusion:SimplifiedLayoutSettings.DisplayMode="Normal,Simplified" >
+    <syncfusion:RibbonGalleryItem Content="Item 1"/>
+    <syncfusion:RibbonGalleryItem Content="Item 2"/>
+    <syncfusion:RibbonGallery.Style>
+        <Style TargetType="syncfusion:RibbonGallery" BasedOn="{StaticResource SyncfusionRibbonGalleryStyle}">
+            <Style.Triggers>
+                <Trigger Property="syncfusion:SimplifiedLayoutSettings.LayoutMode" Value="Normal">
+                    <Setter Property="Height" Value="48"/>
+                    <Setter Property="Width" Value="48"/>
+                    <Setter Property="Margin" Value="2"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </syncfusion:RibbonGallery.Style>
+</syncfusion:RibbonGallery >  
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ## Ribbon gallery item

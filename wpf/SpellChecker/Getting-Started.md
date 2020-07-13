@@ -357,14 +357,14 @@ The following dictionary types are used for spell-checking,
  * Ispell
  * OpenOffice
 
- N> Refer the [Dictionary for any culture]
-(https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#spellCheck-dictionaries-for-any-culture) page to know more about how to add and use the Dictionary for any culture to an application.
+ N> Refer the [Load your own dictionaries for any language]
+(https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#load-your-own-dictionaries-for-any-language) page to know more about how to add and use the Dictionary for any culture to an application.
 
 ## Add custom words to dictionary
 
-If you want to add words that is not available in dictionary, you can add it using `CustomDictionary`. This dictionary does not has a grammar file, it accepts only dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking `Add to Dictionary` button available in dialog or context menu.
+If you want to add words that is not available in existing dictionary, you can add it using `CustomDictionary`. This dictionary does not has a grammar file, it accepts only dictionary file that contains a list of words. Users can also add words to this custom dictionary by clicking `Add to Dictionary` button available in dialog or context menu.
 
-N> Refer the [Custom Dictionary](https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#adding-custom-dictionary) page to know more about how to add and use the custom dictionary to an application.
+N> Refer the [Adding Custom Dictionary](https://help.syncfusion.com/wpf/spellchecker/custom-dictionary-support#adding-custom-dictionary) page to know more about how to add and use the custom dictionary to an application.
 
 ## Event to notify when spell check is completed
 
