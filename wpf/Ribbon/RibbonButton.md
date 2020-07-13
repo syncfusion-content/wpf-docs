@@ -6,11 +6,11 @@ platform: wpf
 control: Ribbon
 documentation: ug
 ---
- # RibbonButton in WPF Ribbon
+# RibbonButton in WPF Ribbon
 
  **RibbonButton** provides functionality similar to a normal button. Additionally, it comes in different sizes and can be easily placed inside the **RibbonBar** in the Ribbon control.  
 
- ## Setting various size modes
+## Setting various size modes
 
  [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) supports three types of size modes and it can be set using the [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~SizeForm.html) property. The different [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.SizeForm.html) available are as follows:
 
@@ -138,7 +138,7 @@ documentation: ug
 
  N> When **simplified** layout is set, the image will be automatically resized to 20 * 20 size irrespective of the size form.
 
- ## Setting image to RibbonButton
+## Setting image to RibbonButton
 
  [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) allows to display a normal image or vector image using the [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~IconType.html) enumeration property. The default value of the [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~IconType.html) property is **Icon**. The [`IconType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.IconType.html) enumeration has the following values:
 
@@ -147,7 +147,7 @@ documentation: ug
 
  N> When [`IconTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~IconTemplate.html) property is set to the [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html), the icon path set in [`SmallIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~SmallIcon.html), [`MediumIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~MediumIcon.html), [`LargeIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~LargeIcon.html) and [`VectorImage`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~VectorImage.html) properties will not be utilized. Instead template will be applied.
 
- ### Setting image path
+### Setting image path
 
  [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) allows to set the image according to the different [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.SizeForm.html) values. To set the image to [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html), the following properties are used:
 
@@ -281,14 +281,12 @@ documentation: ug
  {% endtabs %}
 
  ![Image set using icon property in normal layout](RibbonButton_images/RibbonButton_ImageNormal.png)
-
  *Normal layout*
 
  ![Image set using icon property in simplified layout](RibbonButton_images/RibbonButton_ImageSimplified.png)
-
  *Simplified layout*
 
- ### Setting vector image 
+### Setting vector image 
 
  The [`VectorImage`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~VectorImage.html) property is of the type `ObservableCollection<Path>` which allows the image to be set as path type. The [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) will automatically resize the image according to its [`SizeForm`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~SizeForm.html). For simplified layout, the image will be resized to 20 * 20 size which is the standard.
 
@@ -540,17 +538,12 @@ documentation: ug
 
  {% endtabs %}
 
- {% endtabs %}
-
 
  ![Image set using VectorImage property in normal layout](RibbonButton_images/RibbonButton_VectorImageNormal.png)
-
  *Normal layout* 
 
  ![Image set using VectorImage property in simplified layout](RibbonButton_images/RibbonButton_VectorImageSimplified.png)
-
  *Simplified layout*
-
 
 ### Setting icon template
 
@@ -685,7 +678,7 @@ The [`IconTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.To
 
  N> When the [`IconTemplate`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~IconTemplate.html) property is set to the [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html), the icon path set in [`SmallIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~SmallIcon.html), [`MediumIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~MediumIcon.html), [`LargeIcon`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~LargeIcon.html) and [`VectorImage`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton~VectorImage.html) properties will not be utilized. Instead template will be applied.
 
- ## Add RibbonButton to the simplified layout
+## Add RibbonButton to the simplified layout
 
  When the simplified layout is enabled, the [`RibbonButton`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Tools.Wpf~Syncfusion.Windows.Tools.Controls.RibbonButton.html) can be added and displayed in a single line as shown below. To know more about the simplified layout, refer [here](https://help.syncfusion.com/wpf/ribbon/simplifiedlayout).
 
