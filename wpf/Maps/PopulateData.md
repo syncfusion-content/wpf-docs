@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Populate Data of Syncfusion Maps control for wpf platform
-description: How to populate the datasource
+description: A quick tour to populate shape data for providing data input to the maps control and usage of the ItemsSource, ShapeIDPath and ShapeIDTableField property
 platform: wpf
 control: SfMap 
 documentation: ug
 ---
 
-# Populate Data
+# Populate Data with SfMap
 
 This section explains how to populate shape data for providing data input to the maps control and usage of the `ItemsSource` property.
 
