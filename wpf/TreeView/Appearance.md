@@ -213,6 +213,9 @@ class ItemTemplateSelector : DataTemplateSelector
 
 ![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images2.png)
 
+You can also download the entire source code of this demo from [here](
+https://github.com/SyncfusionExamples/How-to-customize-tree-nodes-using-data-template-selector-in-wpf-treeview)
+
 ## Indentation
 
 The TreeView allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~Indentation.html) property. The default value of this property is 20. This property can be customized at runtime.
@@ -316,6 +319,9 @@ public class FontAttributeConverter : IValueConverter
 {% endtabs %}
 
 ![ItemTemplateSelector in SfTreeView ](Appearance_images/Appearance_images3.png)
+
+You can also download the entire source code of this demo from [here](
+https://github.com/SyncfusionExamples/How-to-customize-the-style-of-tree-nodes-based-on-its-level-using-converter-in-wpf-treeview)
 
 ## Animation
 
