@@ -53,14 +53,14 @@ Refer to the following code sample for customizing shapes.
 {% highlight c# %}
 
 			SfMap maps = new SfMap();
-            ShapeFileLayer layer = new ShapeFileLayer();
-            layer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
+            ShapeFileLayer shapeLayer = new ShapeFileLayer();
+            shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
             ShapeSetting shapeSetting = new ShapeSetting();
             shapeSetting.ShapeFill = new SolidColorBrush(Colors.LightBlue);
             shapeSetting.ShapeStroke = new SolidColorBrush(Colors.Black);
             shapeSetting.ShapeStrokeThickness = 1;
-            layer.ShapeSettings = shapeSetting;
-            maps.Layers.Add(layer);
+            shapeLayer.ShapeSettings = shapeSetting;
+            maps.Layers.Add(shapeLayer);
             this.Content = maps;
 
 {% endhighlight %}
@@ -100,15 +100,15 @@ The shape selection is enabled when the [`EnableSelection`] (https://help.syncfu
 {% highlight c# %}
 
             SfMap maps = new SfMap();
-            ShapeFileLayer layer = new ShapeFileLayer();
-            layer.EnableSelection = true;
-            layer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
+            ShapeFileLayer shapeLayer = new ShapeFileLayer();
+            shapeLayer.EnableSelection = true;
+            shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
             ShapeSetting shapeSetting = new ShapeSetting();
             shapeSetting.SelectedShapeColor = new SolidColorBrush(Colors.Green);
             shapeSetting.SelectedShapeStroke = new SolidColorBrush(Colors.Black);
             shapeSetting.SelectedShapeStrokeThickness = 1;
-            layer.ShapeSettings = shapeSetting;
-            maps.Layers.Add(layer);
+            shapeLayer.ShapeSettings = shapeSetting;
+            maps.Layers.Add(shapeLayer);
 
 {% endhighlight %}
 
@@ -142,12 +142,12 @@ The [`ShapesUnSelected`] (https://help.syncfusion.com/cr/wpf/Syncfusion.SfMaps.W
         {
             InitializeComponent();
             SfMap maps = new SfMap();
-            ShapeFileLayer layer = new ShapeFileLayer();
-            layer.ShapesUnSelected += ShapeFileLayer_ShapesUnSelected;
-            layer.ShapesSelected += ShapeFileLayer_ShapesSelected;
-            layer.EnableSelection = true;
-            layer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
-            maps.Layers.Add(layer);
+            ShapeFileLayer shapeLayer = new ShapeFileLayer();
+            shapeLayer.ShapesUnSelected += ShapeFileLayer_ShapesUnSelected;
+            shapeLayer.ShapesSelected += ShapeFileLayer_ShapesSelected;
+            shapeLayer.EnableSelection = true;
+            shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
+            maps.Layers.Add(shapeLayer);
             this.Content = maps;
         }
 
