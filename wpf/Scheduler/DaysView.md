@@ -203,6 +203,9 @@ The `SpecialTimeRegion` background color can be customized by using the `Backgro
     </DataTemplate>
 </Window.Resources>
 {% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
     <syncfusion:SfScheduler.DaysViewSettings>

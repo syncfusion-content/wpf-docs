@@ -589,8 +589,7 @@ Orientation="Horizontal">
 </StackPanel>
 </DataTemplate>
 </Window.Resources>
-{% endhighlight %}
-{% highlight xaml %}
+
 <syncfusion:SfScheduler x:Name="Schedule" ViewType="Week">
 <syncfusion:SfScheduler.DaysViewSettings>
     <syncfusion:DaysViewSettings 
