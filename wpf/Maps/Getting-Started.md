@@ -85,7 +85,7 @@ Add the following namespace.
 
 {% endtabs %}
 
-#### Initializing maps
+## Initializing maps
 
 You can create the SfMap control programmatically through XAML and C#. In the following code example. 
 
@@ -106,7 +106,7 @@ You can create the SfMap control programmatically through XAML and C#. In the fo
 
 {%endtabs%}
 
-#### Adding layers
+## Adding layers
 
 The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapLayer.html). It can accommodate one or more shape file layers.
 
@@ -160,15 +160,15 @@ For more information about the 8.3 naming convention, shape files and their desc
 
 Maps read the main file and create the map shapes. The associated .dbf file contents are then incorporated with the shapes created from the main files.
 
-### Attach the Shape file with Maps
+## Attach the Shape file with Maps
 
 To read the shape file using Maps, the shape file’s main file and .dbf file need to be added as an embedded resource in the application project. Then, the main file’s path has to be given in the Uri file of the shape file layer.
 
-#### About the Uri property
+### About the Uri property
 
 Uri is the string type property that retrieves the location of the shape file that is added as an embedded resource. 
 
-#### Structure of Uri property
+### Structure of Uri property
 
 The Uri property contains the following information:
 
@@ -230,7 +230,7 @@ By giving the URL path of the file to the URI property, a shapefile is read. Her
 
 {% endhighlight %}
 
-### Data Binding in Map
+## Data Binding in Map
 
 Data can be bound to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ItemsSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapeIDPath.html), and [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapeIDTableField.html) properties.
 
@@ -288,7 +288,7 @@ The [`Populate data`](https://help.syncfusion.com/wpf/maps/PopulateData) section
 
 {%endtabs%}
 
-### Adding markers
+## Adding markers
 
 Markers are used to identify the shapes. They can be added to the shape file layers as demonstrated in the following code sample. Markers can be customized using the customization properties in the shape file layer.
 
