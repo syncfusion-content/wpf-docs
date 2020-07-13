@@ -13,7 +13,7 @@ documentation: ug
 
 ## Create an empty Phase
 
-We can create the phase and add into [Phases](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Phases.html) collection of the Swimlane.
+We can create the [Phase](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PhaseViewModel.html) and add into [Phases](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Phases.html) collection of the Swimlane.
 
 >Note: For Horizontal Swimlane, we must set the UnitWidth of the Phase. For Vertical Swimlane, we must set UnitHeight of the Phase.
 
