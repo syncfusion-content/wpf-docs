@@ -288,7 +288,7 @@ Schedule.TimelineViewSettings.TimeInterval = new System.TimeSpan(0, 30, 0);
 
 ![Time text formatting in WPF Scheduler](Timeline_images/adding-Timetextformatting.png)
 
-## ViewHeader
+## View header
 You can customize the default appearance of view header in timeline view by setting `ViewHeaderDateFormat`, `ViewHeaderHeight``ViewHeaderDayFormat`and  `ViewHeaderTemplate` of `TimelineViewSettings`.
 
 ### View header text formatting
@@ -328,7 +328,7 @@ Schedule.TimelineViewSettings.ViewHeaderHeight = 100;
 
 ![View header height in WPF Scheduler](Timeline_images/adding-Viewheaderheight.png)
 
-### ViewHeader appearance customization
+### View header appearance customization
 You can customize the default appearance of view header by setting `ViewHeaderTemplate` property of `TimelineViewSettings` in `SfScheduler`.
 
 {% tabs %}

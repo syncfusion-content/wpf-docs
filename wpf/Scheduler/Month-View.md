@@ -122,29 +122,7 @@ this.Schedule.MonthViewSettings.MonthNavigationDirection = MonthNavigationDirect
 
 ![WPF Scheduler month view MonthNavigationDirection](Month-View_Images/MonthNavigationDirection.png)
 
-## View header
-You can customize the default appearance of view header in month view by setting `ViewHeaderDayFormat`, `DateFormat` ,`ViewHeaderHeight` and `ViewHeaderTemplate` of TimelineViewSettings.
-### View header day format
-You can customize the day format of the Scheduler view header by using the [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase~ViewHeaderDayFormat.html) property of `MonthViewSettings`. By default, the month view header day format is `ddd`.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfScheduler x:Name="Schedule"
-                        ViewType="Month" >
-    <syncfusion:SfScheduler.MonthViewSettings>
-        <syncfusion:MonthViewSettings ViewHeaderDayFormat="dddd"/>
-    </syncfusion:SfScheduler.MonthViewSettings>
-</syncfusion:SfScheduler>
-{% endhighlight %}
-{% highlight c#%}
-this.Schedule.ViewType = SchedulerViewType.Month;
-this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "dddd";
-{% endhighlight %}
-{% endtabs %}
-
-![WPF Scheduler month view ViewHeaderDayFormat](Month-View_Images/ViewHeaderDayFormat.png)
-
-### Date format
+## Date format
 You can customize the date format of the scheduler month view by using the [DateFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.MonthViewSettings~DateFormat.html) property of `MonthViewSettings`. By default, the month date format is `d`.
 
 {% tabs %}
@@ -163,6 +141,29 @@ this.Schedule.MonthViewSettings.DateFormat = "dd";
 {% endtabs %}
 
 ![WPF Scheduler month view DateFormat](Month-View_Images/DateFormat.png)
+
+## View header
+You can customize the default appearance of view header in month view by setting `ViewHeaderDayFormat`, `DateFormat` ,`ViewHeaderHeight` and `ViewHeaderTemplate` of TimelineViewSettings.
+
+### View header text formatting
+You can customize the day format of the Scheduler view header by using the [ViewHeaderDayFormat](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase~ViewHeaderDayFormat.html) property of `MonthViewSettings`. By default, the month view header day format is `ddd`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        ViewType="Month" >
+    <syncfusion:SfScheduler.MonthViewSettings>
+        <syncfusion:MonthViewSettings ViewHeaderDayFormat="dddd"/>
+    </syncfusion:SfScheduler.MonthViewSettings>
+</syncfusion:SfScheduler>
+{% endhighlight %}
+{% highlight c#%}
+this.Schedule.ViewType = SchedulerViewType.Month;
+this.Schedule.MonthViewSettings.ViewHeaderDayFormat = "dddd";
+{% endhighlight %}
+{% endtabs %}
+
+![WPF Scheduler month view ViewHeaderDayFormat](Month-View_Images/ViewHeaderDayFormat.png)
 
 ### View header height
 You can customize the view header height by using the [ViewHeaderHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ViewSettingsBase~ViewHeaderHeight.html) property of `MonthViewSettings`. By default, the `ViewHeaderHeight` is set to 50.
