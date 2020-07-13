@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Overview of Syncfusion Ribbon control for WPF
-description: Features overview of Ribbon control for WPF
+description: This section briefly describes the overview of all the components and key features present in WPF Ribbon control.
 platform: wpf
 control: Ribbon
 documentation: ug
 ---
-# Overview
+# Overview of WPF Ribbon
 
 Ribbon illustrates the implementation of Office UI with Ribbon items and Backstage. Also RibbonWindow has been implemented for giving a themed Office UI look and feel for the traditional window. Functionality of keyboard navigation, Tooltips and Key tips are provided for access to items present in the ribbon. 
 
@@ -23,6 +23,7 @@ Ribbon illustrates the implementation of Office UI with Ribbon items and Backsta
 ## Key features
 
 * Provides a ribbon window that overrides the default window and can set visual styles of ribbon window to different theme styles.
+* The Ribbon control is available in both normal and simplified layout.
 * QuickAccessToolbar provides placing of frequently used items. 
 * RibbonTab is available to add different Tabs like in Microsoft Outlook.
 * RibbonBar is available to structure the layouts.
