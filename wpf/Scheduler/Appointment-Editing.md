@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appointment editing in Syncfusion WPF SfScheduler| SfScheduler | Wpf | Syncfusion
+title: Appointment editing in Syncfusion WPF Scheduler| SfScheduler
 description: This section explains how to handle appointment editing in WPF scheduler and also explains about the appointment resizing operation. 
 platform: wpf
 control: SfScheduler
 documentation: ug
 ---
 
-# Appointment editing in WPF scheduler
+# Appointment editing in WPF scheduler (SfScheduler)
 You can add, edit and delete appointments in WPF scheduler and also you can perform appointment resizing.
 
 ## Adding appointments
