@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started with SfCircularGauge
 
-This section explains the steps required to configure the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) and add basic elements to it using various APIs.
+This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) and add basic elements to it using various APIs.
 
 ## Adding gauge references
 
@@ -34,7 +34,7 @@ You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies) 
 
 ## Initialize gauge
 
-Import  the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) namespace to your respective Window as follows.
+Import  the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) namespace to your respective Window as follows.
 
 {% tabs %}
 
@@ -52,20 +52,20 @@ using Syncfusion.UI.Xaml.Gauges;
 
 {% endtabs %}
 
-You can initialize an empty [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) control.
+You can initialize an empty [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge />
+<gauge:SfCircularGauge />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfCircularGauge sfCircularGauge = new SfCircularGauge();
-    this.Content = sfCircularGauge;
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -73,47 +73,47 @@ You can initialize an empty [`CircularGauge`](https://help.syncfusion.com/cr/cre
 
 ## Adding headers
 
-You can assign a unique header to the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) by using the `GaugeHeader` property.
+You can assign a unique header to the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by using the [`GaugeHeader`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge Height="250"
-                           Width="250"
-                           HeaderAlignment="Custom"
-                           GaugeHeaderPosition="0.63,0.75">
-        <gauge:SfCircularGauge.GaugeHeader>
-            <TextBlock Text="Speedometer"
-                       Height="40"
-                       Width="140"
-                       FontSize="13"
-                       Foreground="Black"
-                       FontWeight="SemiBold" />
-        </gauge:SfCircularGauge.GaugeHeader>
-    </gauge:SfCircularGauge>
+<gauge:SfCircularGauge Height="250"
+                       Width="250"
+                       HeaderAlignment="Custom"
+                       GaugeHeaderPosition="0.63,0.75">
+    <gauge:SfCircularGauge.GaugeHeader>
+        <TextBlock Text="Speedometer"
+                   Height="40"
+                   Width="140"
+                   FontSize="13"
+                   Foreground="Black"
+                   FontWeight="SemiBold" />
+    </gauge:SfCircularGauge.GaugeHeader>
+</gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    //Initializing circular gauge
-    SfCircularGauge sfCircularGauge = new SfCircularGauge();
-    sfCircularGauge.Height = 250;
-    sfCircularGauge.Width = 250;
+//Initializing circular gauge
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+sfCircularGauge.Height = 250;
+sfCircularGauge.Width = 250;
 
-    //Adding header
-    sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
-    sfCircularGauge.GaugeHeaderPosition = new Point(0.63, 0.75);
-    TextBlock textBlock = new TextBlock();
-    textBlock.Text = "Temperature (K)";
-    textBlock.Height = 40;
-    textBlock.Width = 140;
-    textBlock.FontSize = 13;
-    textBlock.Foreground = new SolidColorBrush(Colors.Black);
-    textBlock.FontWeight = FontWeights.SemiBold;
-    sfCircularGauge.GaugeHeader = textBlock;
-    this.Content = sfCircularGauge;
+//Adding header
+sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
+sfCircularGauge.GaugeHeaderPosition = new Point(0.63, 0.75);
+TextBlock textBlock = new TextBlock();
+textBlock.Text = "Temperature (K)";
+textBlock.Height = 40;
+textBlock.Width = 140;
+textBlock.FontSize = 13;
+textBlock.Foreground = new SolidColorBrush(Colors.Black);
+textBlock.FontWeight = FontWeights.SemiBold;
+sfCircularGauge.GaugeHeader = textBlock;
+this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
@@ -121,7 +121,7 @@ You can assign a unique header to the [`CircularGauge`](https://help.syncfusion
 
 ## Configuring scales
 
-You can configure the [`CircularScale`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularScale.html) elements by using the following APIs:
+You can configure the [`CircularScale`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularScale.html) elements by using the following APIs:
 
 * StartAngle
 
@@ -141,16 +141,16 @@ You can configure the [`CircularScale`](https://help.syncfusion.com/cr/cref_file
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge.Scales>
-        <gauge:CircularScale />
-    <gauge:SfCircularGauge.Scales>
+<gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale />
+<gauge:SfCircularGauge.Scales>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    CircularScale mainscale = new CircularScale();
-    sfCircularGauge.Scales.Add(mainscale);
+CircularScale mainscale = new CircularScale();
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
 
@@ -158,34 +158,34 @@ You can configure the [`CircularScale`](https://help.syncfusion.com/cr/cref_file
 
 ## Adding ranges
 
-You can add ranges to the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularGauge.html) by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Gauge.WPF~Syncfusion.Windows.Gauge.CircularRange.html)  property.
+You can add ranges to the [`SfCircularGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.CircularRange.html)  property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge>
-        <gauge:SfCircularGauge.Scales>
-            <gauge:CircularScale>
-                <gauge:CircularScale.Ranges>
-                    <gauge:CircularRange StartValue="0"
-                                         EndValue="60"
-                                         Stroke="Gray" />
-                </gauge:CircularScale.Ranges>
-            </gauge:CircularScale>
-        </gauge:SfCircularGauge.Scales>
-    </gauge:SfCircularGauge>
+<gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Scales>
+        <gauge:CircularScale>
+            <gauge:CircularScale.Ranges>
+                <gauge:CircularRange StartValue="0"
+                                     EndValue="60"
+                                     Stroke="Gray" />
+            </gauge:CircularScale.Ranges>
+        </gauge:CircularScale>
+    </gauge:SfCircularGauge.Scales>
+</gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    CircularScale mainscale = new CircularScale();
-    CircularRange circularRange = new CircularRange();
-    circularRange.StartValue = 0;
-    circularRange.EndValue = 60;
-    circularRange.Stroke = new SolidColorBrush(Colors.Gray);
-    mainscale.Ranges.Add(circularRange);
+CircularScale mainscale = new CircularScale();
+CircularRange circularRange = new CircularRange();
+circularRange.StartValue = 0;
+circularRange.EndValue = 60;
+circularRange.Stroke = new SolidColorBrush(Colors.Gray);
+mainscale.Ranges.Add(circularRange);
 
 {% endhighlight %}
 
@@ -199,38 +199,38 @@ Create a `Needle Pointer`, and associate it with a scale that is to be displayed
 
 {% highlight xaml %}
  
-    <gauge:SfCircularGauge.Scales>
-        <gauge:CircularScale>
-            <gauge:CircularScale.Pointers>
-                <gauge:CircularPointer PointerType="NeedlePointer"
-                                       Value="60"
-                                       NeedleLengthFactor="0.5"
-                                       NeedlePointerType="Triangle"
-                                       PointerCapDiameter="12"
-                                       NeedlePointerStroke="#757575"
-                                       KnobFill="#757575"
-                                       KnobStroke="#757575"
-                                       NeedlePointerStrokeThickness="7" />
-        </gauge:CircularScale>
-    </gauge:SfCircularGauge.Scales>
+<gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale>
+        <gauge:CircularScale.Pointers>
+            <gauge:CircularPointer PointerType="NeedlePointer"
+                                   Value="60"
+                                   NeedleLengthFactor="0.5"
+                                   NeedlePointerType="Triangle"
+                                   PointerCapDiameter="12"
+                                   NeedlePointerStroke="#757575"
+                                   KnobFill="#757575"
+                                   KnobStroke="#757575"
+                                   NeedlePointerStrokeThickness="7" />
+    </gauge:CircularScale>
+</gauge:SfCircularGauge.Scales>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    CircularScale mainscale = new CircularScale();
-    CircularPointer circularPointer = new CircularPointer();
-    circularPointer.PointerType = PointerType.NeedlePointer;
-    circularPointer.Value = 60;
-    circularPointer.NeedleLengthFactor = 0.5;
-    circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
-    circularPointer.PointerCapDiameter = 12;
-    circularPointer.NeedlePointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
-    circularPointer.KnobFill = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
-    circularPointer.KnobStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
-    circularPointer.NeedlePointerStrokeThickness = 7;
-    mainscale.Pointers.Add(circularPointer);
-    sfCircularGauge.Scales.Add(mainscale);
+CircularScale mainscale = new CircularScale();
+CircularPointer circularPointer = new CircularPointer();
+circularPointer.PointerType = PointerType.NeedlePointer;
+circularPointer.Value = 60;
+circularPointer.NeedleLengthFactor = 0.5;
+circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
+circularPointer.PointerCapDiameter = 12;
+circularPointer.NeedlePointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
+circularPointer.KnobFill = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
+circularPointer.KnobStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
+circularPointer.NeedlePointerStrokeThickness = 7;
+mainscale.Pointers.Add(circularPointer);
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
 
@@ -244,28 +244,28 @@ The `Range Pointer` provides an alternative way to indicate the current value.
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge.Scales>
-        <gauge:CircularScale>
-            <gauge:CircularScale.Pointers>
-                <gauge:CircularPointer PointerType="RangePointer"
-                                       Value="40"
-                                       RangePointerStrokeThickness="5"
-                                       RangePointerStroke="#27beb6" />
-        </gauge:CircularScale>
-    </gauge:SfCircularGauge.Scales>
+<gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale>
+        <gauge:CircularScale.Pointers>
+            <gauge:CircularPointer PointerType="RangePointer"
+                                   Value="40"
+                                   RangePointerStrokeThickness="5"
+                                   RangePointerStroke="#27beb6" />
+    </gauge:CircularScale>
+</gauge:SfCircularGauge.Scales>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    CircularScale mainscale = new CircularScale();      
-    CircularPointer circularPointer1 = new CircularPointer();
-    circularPointer1.PointerType = PointerType.RangePointer;
-    circularPointer1.Value = 40;
-    circularPointer1.RangePointerStrokeThickness = 5;
-    circularPointer1.RangePointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#27beb6");
-    mainscale.Pointers.Add(circularPointer1);
-    sfCircularGauge.Scales.Add(mainscale);
+CircularScale mainscale = new CircularScale();      
+CircularPointer circularPointer1 = new CircularPointer();
+circularPointer1.PointerType = PointerType.RangePointer;
+circularPointer1.Value = 40;
+circularPointer1.RangePointerStrokeThickness = 5;
+circularPointer1.RangePointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#27beb6");
+mainscale.Pointers.Add(circularPointer1);
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
 
@@ -279,33 +279,33 @@ The `Symbol Pointer` points to the current value in a scale.
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge.Scales>
-        <gauge:CircularScale>
-            <gauge:CircularScale.Pointers>
-                <gauge:CircularPointer PointerType="SymbolPointer"
-                                       Value="70"
-                                       SymbolPointerHeight="12"
-                                       SymbolPointerWidth="12"
-                                       Symbol="InvertedTriangle"
-                                       SymbolPointerStroke="#757575" />
-            </gauge:CircularScale.Pointers>
-        </gauge:CircularScale>
-    </gauge:SfCircularGauge.Scales>
+<gauge:SfCircularGauge.Scales>
+    <gauge:CircularScale>
+        <gauge:CircularScale.Pointers>
+            <gauge:CircularPointer PointerType="SymbolPointer"
+                                   Value="70"
+                                   SymbolPointerHeight="12"
+                                   SymbolPointerWidth="12"
+                                   Symbol="InvertedTriangle"
+                                   SymbolPointerStroke="#757575" />
+        </gauge:CircularScale.Pointers>
+    </gauge:CircularScale>
+</gauge:SfCircularGauge.Scales>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    CircularScale mainscale = new CircularScale();      
-    CircularPointer circularPointer2 = new CircularPointer();
-    circularPointer2.PointerType = PointerType.SymbolPointer;
-    circularPointer2.Value = 70;
-    circularPointer2.SymbolPointerHeight = 12;
-    circularPointer2.SymbolPointerWidth = 12;
-    circularPointer2.Symbol = Symbol.InvertedTriangle;
-    circularPointer2.SymbolPointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
-    mainscale.Pointers.Add(circularPointer2);
-    sfCircularGauge.Scales.Add(mainscale);
+CircularScale mainscale = new CircularScale();      
+CircularPointer circularPointer2 = new CircularPointer();
+circularPointer2.PointerType = PointerType.SymbolPointer;
+circularPointer2.Value = 70;
+circularPointer2.SymbolPointerHeight = 12;
+circularPointer2.SymbolPointerWidth = 12;
+circularPointer2.Symbol = Symbol.InvertedTriangle;
+circularPointer2.SymbolPointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
+mainscale.Pointers.Add(circularPointer2);
+sfCircularGauge.Scales.Add(mainscale);
 
 {% endhighlight %}
 
@@ -317,143 +317,144 @@ The following code example is the complete code of the previous configurations.
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge Height="250"
-                           Width="250"
-                           HeaderAlignment="Custom"
-                           GaugeHeaderPosition="0.63,0.75">
-        <gauge:SfCircularGauge.GaugeHeader>
-            <TextBlock Text="Speedometer"
-                       Height="40"
-                       Width="140"
-                       FontSize="13"
-                       Foreground="Black"
-                       FontWeight="SemiBold" />
-        </gauge:SfCircularGauge.GaugeHeader>
+<gauge:SfCircularGauge Height="250"
+                       Width="250"
+                       HeaderAlignment="Custom"
+                       GaugeHeaderPosition="0.63,0.75">
 
-        <gauge:SfCircularGauge.Scales>
-            <gauge:CircularScale ShowRim="True"
-                                 RimStroke="LightGray"
-                                 RimStrokeThickness="3"
-                                 LabelOffset="0.1">
+    <gauge:SfCircularGauge.GaugeHeader>
+        <TextBlock Text="Speedometer"
+                   Height="40"
+                   Width="140"
+                   FontSize="13"
+                   Foreground="Black"
+                   FontWeight="SemiBold" />
+    </gauge:SfCircularGauge.GaugeHeader>
 
-                <gauge:CircularScale.MajorTickSettings>
-                    <gauge:MajorTickSetting Length="10"
-                                            StrokeThickness="1" />
-                </gauge:CircularScale.MajorTickSettings>
+    <gauge:SfCircularGauge.Scales>
+        <gauge:CircularScale ShowRim="True"
+                             RimStroke="LightGray"
+                             RimStrokeThickness="3"
+                             LabelOffset="0.1">
 
-                <gauge:CircularScale.MinorTickSettings>
-                    <gauge:MinorTickSetting Length="5"
-                                            StrokeThickness="1" />
-                </gauge:CircularScale.MinorTickSettings>
+            <gauge:CircularScale.MajorTickSettings>
+                <gauge:MajorTickSetting Length="10"
+                                        StrokeThickness="1" />
+            </gauge:CircularScale.MajorTickSettings>
 
-                <gauge:CircularScale.Ranges>
-                    <gauge:CircularRange StartValue="0"
-                                         EndValue="60"
-                                         Stroke="Gray" />
-                </gauge:CircularScale.Ranges>
-                <gauge:CircularScale.Pointers>
-                    <gauge:CircularPointer PointerType="NeedlePointer"
-                                           Value="60"
-                                           NeedleLengthFactor="0.5"
-                                           NeedlePointerType="Triangle"
-                                           PointerCapDiameter="12"
-                                           NeedlePointerStroke="#757575"
-                                           KnobFill="#757575"
-                                           KnobStroke="#757575"
-                                           NeedlePointerStrokeThickness="7" />
-                    <gauge:CircularPointer PointerType="RangePointer"
-                                           Value="40"
-                                           RangePointerStrokeThickness="5"
-                                           RangePointerStroke="#27beb6" />
-                    <gauge:CircularPointer PointerType="SymbolPointer"
-                                           Value="70"
-                                           SymbolPointerHeight="12"
-                                           SymbolPointerWidth="12"
-                                           Symbol="InvertedTriangle"
-                                           SymbolPointerStroke="#757575" />
-                </gauge:CircularScale.Pointers>
-            </gauge:CircularScale>
-        </gauge:SfCircularGauge.Scales>
-    </gauge:SfCircularGauge>
+            <gauge:CircularScale.MinorTickSettings>
+                <gauge:MinorTickSetting Length="5"
+                                        StrokeThickness="1" />
+            </gauge:CircularScale.MinorTickSettings>
+
+            <gauge:CircularScale.Ranges>
+                <gauge:CircularRange StartValue="0"
+                                     EndValue="60"
+                                     Stroke="Gray" />
+            </gauge:CircularScale.Ranges>
+            <gauge:CircularScale.Pointers>
+                <gauge:CircularPointer PointerType="NeedlePointer"
+                                       Value="60"
+                                       NeedleLengthFactor="0.5"
+                                       NeedlePointerType="Triangle"
+                                       PointerCapDiameter="12"
+                                       NeedlePointerStroke="#757575"
+                                       KnobFill="#757575"
+                                       KnobStroke="#757575"
+                                       NeedlePointerStrokeThickness="7" />
+                <gauge:CircularPointer PointerType="RangePointer"
+                                       Value="40"
+                                       RangePointerStrokeThickness="5"
+                                       RangePointerStroke="#27beb6" />
+                <gauge:CircularPointer PointerType="SymbolPointer"
+                                       Value="70"
+                                       SymbolPointerHeight="12"
+                                       SymbolPointerWidth="12"
+                                       Symbol="InvertedTriangle"
+                                       SymbolPointerStroke="#757575" />
+            </gauge:CircularScale.Pointers>
+        </gauge:CircularScale>
+    </gauge:SfCircularGauge.Scales>
+</gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    //Initializing circular gauge
-    SfCircularGauge sfCircularGauge = new SfCircularGauge();
-    sfCircularGauge.Height = 250;
-    sfCircularGauge.Width = 250;
+//Initializing circular gauge
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+sfCircularGauge.Height = 250;
+sfCircularGauge.Width = 250;
 
-    //Adding header
-    sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
-    sfCircularGauge.GaugeHeaderPosition = new Point(0.63, 0.75);
-    TextBlock textBlock = new TextBlock();
-    textBlock.Text = "Temperature (K)";
-    textBlock.Height = 40;
-    textBlock.Width = 140;
-    textBlock.FontSize = 13;
-    textBlock.Foreground = new SolidColorBrush(Colors.Black);
-    textBlock.FontWeight = FontWeights.SemiBold;
-    sfCircularGauge.GaugeHeader = textBlock;
+//Adding header
+sfCircularGauge.HeaderAlignment = HeaderAlignment.Custom;
+sfCircularGauge.GaugeHeaderPosition = new Point(0.63, 0.75);
+TextBlock textBlock = new TextBlock();
+textBlock.Text = "Temperature (K)";
+textBlock.Height = 40;
+textBlock.Width = 140;
+textBlock.FontSize = 13;
+textBlock.Foreground = new SolidColorBrush(Colors.Black);
+textBlock.FontWeight = FontWeights.SemiBold;
+sfCircularGauge.GaugeHeader = textBlock;
 
-    //Initializing scales for circular gauge
-    CircularScale mainscale = new CircularScale();
-    mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
-    mainscale.RimStrokeThickness = 3;
-    mainscale.LabelOffset = 0.1;
+//Initializing scales for circular gauge
+CircularScale mainscale = new CircularScale();
+mainscale.RimStroke = new SolidColorBrush(Colors.LightGray);
+mainscale.RimStrokeThickness = 3;
+mainscale.LabelOffset = 0.1;
 
-    MajorTickSetting majorTickSetting = new MajorTickSetting();
-    majorTickSetting.StrokeThickness = 1;
-    majorTickSetting.Length = 10;
-    mainscale.MajorTickSettings = majorTickSetting;
+MajorTickSetting majorTickSetting = new MajorTickSetting();
+majorTickSetting.StrokeThickness = 1;
+majorTickSetting.Length = 10;
+mainscale.MajorTickSettings = majorTickSetting;
 
-    MinorTickSetting minorTickSetting = new MinorTickSetting();
-    minorTickSetting.StrokeThickness = 1;
-    minorTickSetting.Length = 5;
-    mainscale.MinorTickSettings = minorTickSetting;
+MinorTickSetting minorTickSetting = new MinorTickSetting();
+minorTickSetting.StrokeThickness = 1;
+minorTickSetting.Length = 5;
+mainscale.MinorTickSettings = minorTickSetting;
 
-    //Adding range
-    CircularRange circularRange = new CircularRange();
-    circularRange.StartValue = 0;
-    circularRange.EndValue = 60;
-    circularRange.Stroke = new SolidColorBrush(Colors.Gray);
-    mainscale.Ranges.Add(circularRange);
+//Adding range
+CircularRange circularRange = new CircularRange();
+circularRange.StartValue = 0;
+circularRange.EndValue = 60;
+circularRange.Stroke = new SolidColorBrush(Colors.Gray);
+mainscale.Ranges.Add(circularRange);
 
-    //Adding needle pointer
-    CircularPointer circularPointer = new CircularPointer();
-    circularPointer.PointerType = PointerType.NeedlePointer;
-    circularPointer.Value = 60;
-    circularPointer.NeedleLengthFactor = 0.5;
-    circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
-    circularPointer.PointerCapDiameter = 12;
-    circularPointer.NeedlePointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
-    circularPointer.KnobFill = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
-    circularPointer.KnobStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
-    circularPointer.NeedlePointerStrokeThickness = 7;
-    mainscale.Pointers.Add(circularPointer);
+//Adding needle pointer
+CircularPointer circularPointer = new CircularPointer();
+circularPointer.PointerType = PointerType.NeedlePointer;
+circularPointer.Value = 60;
+circularPointer.NeedleLengthFactor = 0.5;
+circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
+circularPointer.PointerCapDiameter = 12;
+circularPointer.NeedlePointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
+circularPointer.KnobFill = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
+circularPointer.KnobStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
+circularPointer.NeedlePointerStrokeThickness = 7;
+mainscale.Pointers.Add(circularPointer);
 
-    //Adding range pointer
-    CircularPointer circularPointer1 = new CircularPointer();
-    circularPointer1.PointerType = PointerType.RangePointer;
-    circularPointer1.Value = 40;
-    circularPointer1.RangePointerStrokeThickness = 5;
-    circularPointer1.RangePointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#27beb6");
-    mainscale.Pointers.Add(circularPointer1);
+//Adding range pointer
+CircularPointer circularPointer1 = new CircularPointer();
+circularPointer1.PointerType = PointerType.RangePointer;
+circularPointer1.Value = 40;
+circularPointer1.RangePointerStrokeThickness = 5;
+circularPointer1.RangePointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#27beb6");
+mainscale.Pointers.Add(circularPointer1);
 
-    //Adding symbol pointer
-    CircularPointer circularPointer2 = new CircularPointer();
-    circularPointer2.PointerType = PointerType.SymbolPointer;
-    circularPointer2.Value = 70;
-    circularPointer2.SymbolPointerHeight = 12;
-    circularPointer2.SymbolPointerWidth = 12;
-    circularPointer2.Symbol = Symbol.InvertedTriangle;
-    circularPointer2.SymbolPointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
-    mainscale.Pointers.Add(circularPointer2);
+//Adding symbol pointer
+CircularPointer circularPointer2 = new CircularPointer();
+circularPointer2.PointerType = PointerType.SymbolPointer;
+circularPointer2.Value = 70;
+circularPointer2.SymbolPointerHeight = 12;
+circularPointer2.SymbolPointerWidth = 12;
+circularPointer2.Symbol = Symbol.InvertedTriangle;
+circularPointer2.SymbolPointerStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#757575");
+mainscale.Pointers.Add(circularPointer2);
 
-    sfCircularGauge.Scales.Add(mainscale);
+sfCircularGauge.Scales.Add(mainscale);
 
-    this.Content = sfCircularGauge;
+this.Content = sfCircularGauge;
 
 {% endhighlight %}
 
