@@ -55,7 +55,7 @@ We need to initialize the surface chart from the following namespace Syncfusion.
  
 {% endhighlight %}
 
-# Add Surface chart from Toolbox
+## Add Surface chart from Toolbox
 
 Drag and drop the **SfSurfaceChart** control from the Toolbox to the required location, where the surface chart has to be displayed. You can select Toolbox from the View menu, when the toolbox window is not available in the project. Now the Toolbox window appears at the left end of the screen.
 
