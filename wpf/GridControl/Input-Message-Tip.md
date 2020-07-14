@@ -46,7 +46,8 @@ The input message tip can be displayed for any row or column by setting the [Sho
 {% highlight C# %}
 
 //Adding input message tip for specific row
-grid.Model.RowStyles[1].DataValidationTooltip = "Hello";grid.Model.RowStyles[1].ShowDataValidationTooltip = true;
+grid.Model.RowStyles[1].DataValidationTooltip = "Hello";
+grid.Model.RowStyles[1].ShowDataValidationTooltip = true;
 
 //Adding input message tip for specific column
 grid.Model.ColStyles[1].DataValidationTooltip = "Hello";
@@ -67,7 +68,7 @@ An another way to set the input message tip for specific row and column.
 //Add input message tip for specific row
 for (int i = 1; i <= 4; i++)
 {
-    string comment = grid.Model[1, 0].CellValue + " :\nPopulate rate in " + grid.Model[1, i].ColumnIndex + " is " + grid.Model[1, i].CellValue;
+    string comment = grid.Model[1, 0].CellValue + " :\nPopulation rate in " + grid.Model[1, i].ColumnIndex + " is " + grid.Model[1, i].CellValue;
     grid.Model[1, i].DataValidationTooltip = comment;
     grid.Model[1, i].ShowDataValidationTooltip = true;
 }
@@ -75,7 +76,7 @@ for (int i = 1; i <= 4; i++)
 //Add input message tip for specific column
 for (int i = 1; i <= 4; i++)
 {
-    string comment = grid.Model[i, 0].CellValue + " :\nPopulate rate in " + grid.Model[i, 2].RowIndex + " is " + grid.Model[i, 2].CellValue;
+    string comment = grid.Model[i, 0].CellValue + " :\nPopulation rate in " + grid.Model[i, 2].RowIndex + " is " + grid.Model[i, 2].CellValue;
     grid.Model[i, 2].DataValidationTooltip = comment;
     grid.Model[i, 2].ShowDataValidationTooltip = true;
 }
