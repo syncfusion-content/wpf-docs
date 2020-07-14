@@ -1643,8 +1643,7 @@ Syncfusion.SfInput.WPF<br/>
 Syncfusion.SfSkinManager.WPF<br/>
 Syncfusion.SfShared.WPF <br/>
 Syncfusion.Shared.WPF<br/>
-Syncfusion.Themes.MaterialLight.WPF<br/>
-Syncfusion.Shared.WPF
+Syncfusion.Themes.MaterialLight.WPF
 </td>
 <td> 
 Syncfusion.SfScheduler.WPF
