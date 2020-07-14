@@ -33,7 +33,7 @@ The following code example illustrates how to add phase at swimlane.
                             <syncfusion:SwimlaneViewModel.Header>
                                 <syncfusion:SwimlaneHeader UnitHeight="32" >
                                     <syncfusion:SwimlaneHeader.Annotation>
-                                        <syncfusion:AnnotationEditorViewModel Content="Swimlane"></syncfusion:AnnotationEditorViewModel>
+                                        <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"> </syncfusion:AnnotationEditorViewModel>
                                     </syncfusion:SwimlaneHeader.Annotation>
                                 </syncfusion:SwimlaneHeader>
                             </syncfusion:SwimlaneViewModel.Header>
@@ -45,7 +45,7 @@ The following code example illustrates how to add phase at swimlane.
                                 <!--Create a header for Phase-->
                             <syncfusion:SwimlaneHeader UnitHeight="30" >
                                  <syncfusion:SwimlaneHeader.Annotation>
-                                  <syncfusion:AnnotationEditorViewModel Content="Phase"></syncfusion:AnnotationEditorViewModel>
+                                  <syncfusion:AnnotationEditorViewModel Content="Phase1"></syncfusion:AnnotationEditorViewModel>
                                 </syncfusion:SwimlaneHeader.Annotation>
                                  </syncfusion:SwimlaneHeader>
                                   </syncfusion:PhaseViewModel.Header>
@@ -78,7 +78,7 @@ The following code example illustrates how to add phase at swimlane.
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
      {
-      Content = "Swimlane"
+      Content = "SALES PROCESS FLOW CHART"
      },
    };
 
@@ -90,7 +90,7 @@ The following code example illustrates how to add phase at swimlane.
         Header=new SwimlaneHeader()
         {
          UnitHeight=30,
-         Annotation=new AnnotationEditorViewModel(){Content="Phase"},
+         Annotation=new AnnotationEditorViewModel(){Content="Phase1"},
         }
        }
   };
@@ -105,7 +105,7 @@ The following code example illustrates how to add phase at swimlane.
 ![Phse](Swimlane-images/Swimlane_Phase.PNG).
 
 
-## Dynamically add phase to Lane
+## Dynamically add phase to Swimlane
 
  You can add the a phase at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Phases`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Phases.html) Collection. The following code example illustrates how to add and remove phase at run time.
 
@@ -163,7 +163,7 @@ private void InitializeDiagram()
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
      {
-      Content = "Swimlane"
+      Content = "SALES PROCESS FLOW CHART"
      },
    };
 
@@ -175,7 +175,7 @@ private void InitializeDiagram()
      Header=new SwimlaneHeader()
      {
       UnitHeight=24,
-      Annotation=new AnnotationEditorViewModel(){Content="Phase"},
+      Annotation=new AnnotationEditorViewModel(){Content="Phase 1"},
      }
     }
   };
@@ -205,7 +205,7 @@ public ICommand RemoveCommand
   var swimlane = (this.Swimlanes as SwimlaneCollection).FirstOrDefault() as SwimlaneViewModel;
    if (swimlane != null)
     {
-     (swimlane.Phases as PhaseCollection).Add(new PhaseViewModel() { UnitWidth = 100 });
+     (swimlane.Phases as PhaseCollection).Add(new PhaseViewModel() { UnitWidth = 100,Header=new SwimlaneHeader() { Annotation=new AnnotationEditorViewModel() { Content = "Phase"+ " " + ((swimlane.Phases as PhaseCollection).Count + 1) } } });
     }
  }
  //Remove Lane from Lanes collection
@@ -222,17 +222,118 @@ public ICommand RemoveCommand
 {% endhighlight %}
 {% endtabs %}
 
-![Phase Add Remove](Swimlane-images/Phase_Add_Remove.gif).
+![Phase Add Remove](Swimlane-images/Phase_Add_Remove.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Swimlane/Swimlane_Add_Remove_Phase)
 
-## Phase header editing
+## Create Phase Header and Header customization
 
-Diagram provides the support to edit phase headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
+* The [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.PhaseViewModel~Header.html) property of Phase allows you to textually describe the phase and to customize the appearance of the description.
+* The size of Phase header can be controlled by using [`UnitWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitWidth.html) and [`UnitHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitHeight.html) properties of header.
+* The appearance of Phase header can be set by using the [`ShapeStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~ShapeStyle.html) properties.
 
-The following image illustrates how to edit the phase header.
+The following code example illustrates how to define a Phase header and its customization.
 
-![Phase Header Editing](Swimlane-images/Phase_Header_Edit.gif)
+{% tabs %}
+{% highlight xaml %}
+
+<Style x:Key="PhaseHeaderStyle" TargetType="Path">
+   <Setter Property="Fill" Value="CadetBlue"/>
+   <Setter Property="Stretch" Value="Fill"/>
+   <Setter Property="Stroke" Value="#41719C"/>
+   <Setter Property="StrokeThickness" Value="1"/>
+</Style>
+ <!--Template overriding for view template-->
+<DataTemplate x:Key="viewTemplate">
+    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
+               FontStyle="Italic" FontSize="12" 
+               FontFamily="TimesNewRomen" 
+               TextDecorations="Underline" 
+               FontWeight="Bold" 
+               Foreground="AliceBlue"/>
+</DataTemplate>
+
+ <syncfusion:SfDiagram x:Name="diagram" >
+                <syncfusion:SfDiagram.Swimlanes>
+                     <!--Initialize the SwimlaneCollection--> 
+                    <syncfusion:SwimlaneCollection>
+                        <!--Initialize the Swimlane-->
+                        <syncfusion:SwimlaneViewModel OffsetX="300" OffsetY="150"  
+                UnitHeight="120" UnitWidth="450">
+                            <!--Create a header for Swimlane-->
+                            <syncfusion:SwimlaneViewModel.Header>
+                                <syncfusion:SwimlaneHeader UnitHeight="32" >
+                                    <syncfusion:SwimlaneHeader.Annotation>
+                                        <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"> </syncfusion:AnnotationEditorViewModel>
+                                    </syncfusion:SwimlaneHeader.Annotation>
+                                </syncfusion:SwimlaneHeader>
+                            </syncfusion:SwimlaneViewModel.Header>
+                            <syncfusion:SwimlaneViewModel.Phases>
+                            <syncfusion:PhaseCollection>
+                                <!--Initialize the Lane-->
+                                <syncfusion:PhaseViewModel UnitHeight="100">
+                                    <syncfusion:PhaseViewModel.Header>
+                                        <!--Create a header for Lane-->
+                                        <syncfusion:SwimlaneHeader UnitWidth="30" ShapeStyle="{StaticResource phaseHeaderStyle}" >
+                                            <syncfusion:SwimlaneHeader.Annotation>
+                                                <syncfusion:AnnotationEditorViewModel Content="Phase 1" ViewTemplate="{StaticResource viewTemplate}"></syncfusion:AnnotationEditorViewModel>
+                                            </syncfusion:SwimlaneHeader.Annotation>
+                                        </syncfusion:SwimlaneHeader>
+                                    </syncfusion:PhaseViewModel.Header>
+                                </syncfusion:PhaseViewModel>
+                            </syncfusion:PhaseCollection>
+                        </syncfusion:SwimlaneViewModel.Phases>
+                        </syncfusion:SwimlaneViewModel>
+                    </syncfusion:SwimlaneCollection>
+                </syncfusion:SfDiagram.Swimlanes>
+            </syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight c# %}
+  //Initialize the SfDiagram
+  SfDiagram diagram = new SfDiagram();
+ //Initialize SwimlaneCollection to SfDiagram
+  diagram.Swimlanes = new SwimlaneCollection();
+
+ //Creating the SwimlaneViewModel
+ SwimlaneViewModel swimlane = new SwimlaneViewModel()
+ {
+   UnitWidth = 450,
+   UnitHeight = 120,
+   OffsetX = 300,
+   OffsetY = 150,
+   Orientation = Orientation.Horizontal,
+ };
+   //Creating Header for SwimlaneViewModel
+   swimlane.Header = new SwimlaneHeader()
+   {
+     UnitHeight = 32,
+     Annotation = new AnnotationEditorViewModel()
+     {
+      Content = "SALES PROCESS FLOW CHART"
+     },
+   };
+
+  swimlane.Phases = new PhaseCollection()
+  {
+   new PhaseViewModel()
+   {
+    UnitHeight=100,
+    Header=new SwimlaneHeader()
+    {
+        UnitWidth=30,
+        Annotation=new AnnotationEditorViewModel(){Content="Phase 1",ViewTemplate = this.Resources["viewTemplate"] as DataTemplate},
+        ShapeStyle=this.Resources["PhaseHeaderStyle"] as Style,
+    }
+   }
+  };
+
+//Add Swimlane to Swimlanes property of the Diagram
+(diagram.Swimlanes as SwimlaneCollection).Add(swimlane);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Phase Header](Swimlane-images/Swimlane_Phase_Header.PNG).
 
 ## Header Selection and Resize
 
@@ -246,13 +347,20 @@ The following image illustrates how to edit the phase header.
 
 ![Header Select and Resize](Swimlane-images/Header_Selection_Resize.gif).
 
+## Phase header editing
+
+Diagram provides the support to edit phase headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
+
+The following image illustrates how to edit the phase header.
+
+![Phase Header Editing](Swimlane-images/Phase_Header_Edit.gif)
+
+
 ## Phase interaction
 
 ### Select
 
 Phase can be selected by clicking (tap) the header of the phase.
-
-* The `IsSelected` Property is used to select or unselect the phase at runtime.
 
 ### Resizing
 

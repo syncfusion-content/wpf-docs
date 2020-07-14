@@ -15,8 +15,6 @@ Diagram provides support to select, resize, or swap the lane interactively.
 
 Lane can be selected by clicking (tap) the header of the lane.
 
-* The `IsSelected` Property is used to select or unselect the lane at runtime.
-
 ## Resizing lane
 
 * Lane can be resized in the bottom and right direction.

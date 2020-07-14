@@ -65,9 +65,9 @@ Now, swimlane will be as follows.
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Swimlane/SwimlaneCreation)
 
 
-### SwimlaneHeaders
+### Swimlane Header
 
-SwimlaneHeader was the primary element for swimlanes. The [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Header.html) property of swimlane allows you to define its textual description and to customize its appearance.
+Swimlane Header was the primary element for swimlanes. The [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Header.html) property of swimlane allows you to define its textual description and to customize its appearance.
 
 >Note: By using this header,the swimlane interaction will be performed,like selection, dragging,etc.
 
@@ -87,7 +87,7 @@ The following code example illustrates how to define a swimlane header.
                         <syncfusion:SwimlaneViewModel.Header>
                             <syncfusion:SwimlaneHeader UnitHeight="32" >
                                 <syncfusion:SwimlaneHeader.Annotation>
-                                    <syncfusion:AnnotationEditorViewModel Content="Swimlane"></syncfusion:AnnotationEditorViewModel>
+                                    <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"></syncfusion:AnnotationEditorViewModel>
                                 </syncfusion:SwimlaneHeader.Annotation>
                             </syncfusion:SwimlaneHeader>
                         </syncfusion:SwimlaneViewModel.Header>
@@ -116,7 +116,7 @@ The following code example illustrates how to define a swimlane header.
     UnitHeight = 32,
     Annotation = new AnnotationEditorViewModel()
     {
-        Content = "Swimlane"
+        Content = "SALES PROCESS FLOW CHART"
     }
  };
 
@@ -140,11 +140,20 @@ The following code example illustrates how to customize the swimlane header.
 {% highlight xaml %}
 
 <Style x:Key="SwimlaneHeaderStyle" TargetType="Path">
-   <Setter Property="Fill" Value="#FF5B9BD5"/>
+   <Setter Property="Fill" Value="CadetBlue"/>
    <Setter Property="Stretch" Value="Fill"/>
    <Setter Property="Stroke" Value="#41719C"/>
    <Setter Property="StrokeThickness" Value="1"/>
 </Style>
+  <!--Template overriding for view template-->
+ <DataTemplate x:Key="viewTemplate">
+   <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
+               FontStyle="Italic" FontSize="12" 
+               FontFamily="TimesNewRomen" 
+               TextDecorations="Underline" 
+               FontWeight="Bold" 
+               Foreground="AliceBlue"/>
+</DataTemplate>
 
  <!-- Initialize the Sfdiagram -->
  <syncfusion:SfDiagram x:Name="diagram">
@@ -158,7 +167,8 @@ The following code example illustrates how to customize the swimlane header.
                          <!--Initialize the Swimlane Header-->
                             <syncfusion:SwimlaneHeader UnitHeight="32" ShapeStyle="{StaticResource SwimlaneHeaderStyle}">
                                 <syncfusion:SwimlaneHeader.Annotation>
-                                    <syncfusion:AnnotationEditorViewModel Content="Swimlane"></syncfusion:AnnotationEditorViewModel>
+                                    <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART" ViewTemplate="{StaticResource viewTemplate">
+                                    </syncfusion:AnnotationEditorViewModel>
                                 </syncfusion:SwimlaneHeader.Annotation>
                             </syncfusion:SwimlaneHeader>
                         </syncfusion:SwimlaneViewModel.Header>
@@ -188,7 +198,8 @@ The following code example illustrates how to customize the swimlane header.
     UnitHeight = 32,
     Annotation = new AnnotationEditorViewModel()
     {
-        Content = "Swimlane"
+        Content = "SALES PROCESS FLOW CHART",
+        ViewTemplate=this.Resources["viewTemplate"] as DataTemplate
     },
     ShapeStyle=this.Resources["SwimlaneHeaderStyle"] as Style,
  };
@@ -213,6 +224,51 @@ The following image illustrates how to edit the swimlane header.
 The orientation of swimlane can be customized with the [`Orientation`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Orientation.html) property of the header.
 
 >Note: By default the swimlane orientation has Horizontal.
+
+The following code example illustrates how to set the orientation of the swimlane.
+
+{% tabs %}
+{% highlight xaml %}
+<!-- Initialize the Sfdiagram -->
+ <syncfusion:SfDiagram x:Name="diagram">
+    <syncfusion:SfDiagram.Swimlanes>
+        <!-- Initialize the SwimlaneCollection -->
+         <syncfusion:SwimlaneCollection>
+          <!--Initialize the Swimlane-->
+            <syncfusion:SwimlaneViewModel OffsetX="300" OffsetY="150"  Orientation="Horizontal"
+                UnitHeight="120" UnitWidth="450"/>           
+         </syncfusion:SwimlaneCollection>
+    </syncfusion:SfDiagram.Swimlanes>
+</syncfusion:SfDiagram>
+{% endhighlight %}
+{% highlight c# %}
+
+//Initialize the SfDiagram
+SfDiagram diagram = new SfDiagram();
+//Initialize SwimlaneCollection to SfDiagram
+diagram.Swimlanes = new SwimlaneCollection();
+
+//Creating the SwimlaneViewModel
+SwimlaneViewModel swimlane = new SwimlaneViewModel()
+{
+  UnitWidth = 450,
+  UnitHeight = 120,
+  OffsetX = 300,
+  OffsetY = 150,
+  Orientation=Orientation.Horizontal,
+};
+
+//Add Swimlane to Swimlanes property of the Diagram
+(diagram.Swimlanes as SwimlaneCollection).Add(swimlane);
+
+{% endhighlight %}
+{% endtabs %} 
+
+| Orientation | Output |
+|---|---|
+| Horizontal | ![Horizontal](Swimlane-images/Swimlane_Horizontal.PNG) |
+| Vertical | ![Vertical](Swimlane-images/Swimlane_Vertical.PNG) |
+
 
 ## Interaction
 

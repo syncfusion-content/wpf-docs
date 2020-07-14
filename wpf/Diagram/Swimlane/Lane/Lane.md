@@ -35,7 +35,7 @@ The following code example illustrates how to define a swimlane with lane.
                             <syncfusion:SwimlaneViewModel.Header>
                                 <syncfusion:SwimlaneHeader UnitHeight="32" >
                                     <syncfusion:SwimlaneHeader.Annotation>
-                                        <syncfusion:AnnotationEditorViewModel Content="Swimlane"></syncfusion:AnnotationEditorViewModel>
+                                        <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"> </syncfusion:AnnotationEditorViewModel>
                                     </syncfusion:SwimlaneHeader.Annotation>
                                 </syncfusion:SwimlaneHeader>
                             </syncfusion:SwimlaneViewModel.Header>
@@ -72,7 +72,7 @@ The following code example illustrates how to define a swimlane with lane.
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
      {
-      Content = "Swimlane"
+      Content = "SALES PROCESS FLOW CHART"
      },
    };
 
@@ -90,7 +90,7 @@ The following code example illustrates how to define a swimlane with lane.
 {% endhighlight %}
 {% endtabs %}
 
-![Lane](Swimlane-images/Swimlane_Lane.PNG).
+![Lane](../Swimlane-images/Swimlane_Lane.PNG)
 
 ## Create Lane Header and Header customization
 
@@ -104,45 +104,55 @@ The following code example illustrates how to define a lane header and its custo
 {% highlight xaml %}
 
 <Style x:Key="LaneHeaderStyle" TargetType="Path">
-   <Setter Property="Fill" Value="#FF5B9BD5"/>
+   <Setter Property="Fill" Value="CadetBlue"/>
    <Setter Property="Stretch" Value="Fill"/>
    <Setter Property="Stroke" Value="#41719C"/>
    <Setter Property="StrokeThickness" Value="1"/>
 </Style>
+
+ <!--Template overriding for view template-->
+<DataTemplate x:Key="viewTemplate">
+    <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" 
+               FontStyle="Italic" FontSize="12" 
+               FontFamily="TimesNewRomen" 
+               TextDecorations="Underline" 
+               FontWeight="Bold" 
+               Foreground="AliceBlue"/>
+</DataTemplate>
+
  <syncfusion:SfDiagram x:Name="diagram" >
-                <syncfusion:SfDiagram.Swimlanes>
-                     <!--Initialize the SwimlaneCollection--> 
-                    <syncfusion:SwimlaneCollection>
-                        <!--Initialize the Swimlane-->
-                        <syncfusion:SwimlaneViewModel OffsetX="300" OffsetY="150"  
-                UnitHeight="120" UnitWidth="450">
-                            <!--Create a header for Swimlane-->
-                            <syncfusion:SwimlaneViewModel.Header>
-                                <syncfusion:SwimlaneHeader UnitHeight="32" >
-                                    <syncfusion:SwimlaneHeader.Annotation>
-                                        <syncfusion:AnnotationEditorViewModel Content="Swimlane"></syncfusion:AnnotationEditorViewModel>
-                                    </syncfusion:SwimlaneHeader.Annotation>
-                                </syncfusion:SwimlaneHeader>
-                            </syncfusion:SwimlaneViewModel.Header>
-                            <syncfusion:SwimlaneViewModel.Lanes>
-                                <syncfusion:LaneCollection>
-                                    <!--Initialize the Lane-->
-                                    <syncfusion:LaneViewModel UnitHeight="100">
-                                        <syncfusion:LaneViewModel.Header>
-                                            <!--Create a header for Lane-->
-                                            <syncfusion:SwimlaneHeader UnitWidth="30" ShapeStyle="{StaticResource LaneHeaderStyle}" >
-                                                <syncfusion:SwimlaneHeader.Annotation>
-                                                    <syncfusion:AnnotationEditorViewModel Content="Lane"></syncfusion:AnnotationEditorViewModel>
-                                                </syncfusion:SwimlaneHeader.Annotation>
-                                            </syncfusion:SwimlaneHeader>
-                                        </syncfusion:LaneViewModel.Header>
-                                    </syncfusion:LaneViewModel>
-                                </syncfusion:LaneCollection>
-                            </syncfusion:SwimlaneViewModel.Lanes>
-                        </syncfusion:SwimlaneViewModel>
-                    </syncfusion:SwimlaneCollection>
-                </syncfusion:SfDiagram.Swimlanes>
-            </syncfusion:SfDiagram>
+    <syncfusion:SfDiagram.Swimlanes>
+       <!--Initialize the SwimlaneCollection--> 
+        <syncfusion:SwimlaneCollection>
+        <!--Initialize the Swimlane-->
+        <syncfusion:SwimlaneViewModel OffsetX="300" OffsetY="150"  UnitHeight="120" UnitWidth="450">
+       <!--Create a header for Swimlane-->
+        <syncfusion:SwimlaneViewModel.Header>
+           <syncfusion:SwimlaneHeader UnitHeight="32" >
+             <syncfusion:SwimlaneHeader.Annotation>
+               <syncfusion:AnnotationEditorViewModel Content="SALES PROCESS FLOW CHART"> </syncfusion:AnnotationEditorViewModel>
+             </syncfusion:SwimlaneHeader.Annotation>
+        </syncfusion:SwimlaneHeader>
+        </syncfusion:SwimlaneViewModel.Header>
+        <syncfusion:SwimlaneViewModel.Lanes>
+         <syncfusion:LaneCollection>
+          <!--Initialize the Lane-->
+           <syncfusion:LaneViewModel UnitHeight="100">
+             <syncfusion:LaneViewModel.Header>
+              <!--Create a header for Lane-->
+             <syncfusion:SwimlaneHeader UnitWidth="30" ShapeStyle="{StaticResource LaneHeaderStyle}" >
+              <syncfusion:SwimlaneHeader.Annotation>
+               <syncfusion:AnnotationEditorViewModel Content="Consumer" ViewTemplate="{StaticResource viewTemplate}"></syncfusion:AnnotationEditorViewModel>
+               </syncfusion:SwimlaneHeader.Annotation>
+               </syncfusion:SwimlaneHeader>
+             </syncfusion:LaneViewModel.Header>
+           </syncfusion:LaneViewModel>
+         </syncfusion:LaneCollection>
+      </syncfusion:SwimlaneViewModel.Lanes>
+   </syncfusion:SwimlaneViewModel>
+ </syncfusion:SwimlaneCollection>
+</syncfusion:SfDiagram.Swimlanes>
+</syncfusion:SfDiagram>
 {% endhighlight %}
 {% highlight c# %}
   //Initialize the SfDiagram
@@ -165,7 +175,7 @@ The following code example illustrates how to define a lane header and its custo
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
      {
-      Content = "Swimlane"
+      Content = "SALES PROCESS FLOW CHART"
      },
    };
 
@@ -177,7 +187,7 @@ The following code example illustrates how to define a lane header and its custo
     Header=new SwimlaneHeader()
     {
         UnitHeight=30,
-        Annotation=new AnnotationEditorViewModel(){Content="Lane"},
+        Annotation=new AnnotationEditorViewModel(){Content="Consumer", ViewTemplate = this.Resources["viewTemplate"] as DataTemplate},
         ShapeStyle=this.Resources["LaneHeaderStyle"] as Style,
     }
    }
@@ -189,7 +199,7 @@ The following code example illustrates how to define a lane header and its custo
 {% endhighlight %}
 {% endtabs %}
 
-![Lane Header](Swimlane-images/Swimlane_Lane_Header.PNG).
+![Lane Header](../Swimlane-images/Swimlane_Lane_Header.PNG).
 
 
 ## Add and Remove lane at runtime
@@ -202,7 +212,7 @@ The following code example illustrates how to define a lane header and its custo
 <Button Name="RemoveButton" Width="100"  Height="30" IsEnabled="True" Content="Remove Lane" ToolTip="Remove Lane" Command="{Binding RemoveCommand}" Cursor="Hand">
 </Button>
  <syncfusion:SfDiagram x:Name="diagram" Nodes="{Binding Nodes}" 
-    Swimlanes="{Binding Swimlanes}"                            Connectors="{Binding Connectors}"                         SelectedItems="{Binding SelectedItems}"                              SnapSettings="{Binding SnapSettings}"                              HorizontalRuler="{Binding HorizontalRuler}"                              VerticalRuler="{Binding VerticalRuler}"/>
+    Swimlanes="{Binding Swimlanes}" Connectors="{Binding Connectors}" SelectedItems="{Binding SelectedItems}"         SnapSettings="{Binding SnapSettings}"                        HorizontalRuler="{Binding HorizontalRuler}"                  VerticalRuler="{Binding VerticalRuler}"/>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -248,7 +258,7 @@ public class DiagramVM : DiagramViewModel
    UnitHeight = 32,
    Annotation = new AnnotationEditorViewModel()
    {
-     Content = "Swimlane"
+     Content = "SALES PROCESS FLOW CHART"
     },
    };
 
@@ -260,7 +270,7 @@ public class DiagramVM : DiagramViewModel
        Header=new SwimlaneHeader()
        {
         UnitHeight=30,
-        Annotation=new AnnotationEditorViewModel(){Content="Lane"}                        
+        Annotation=new AnnotationEditorViewModel(){Content="Consumer"}                        
        }
      }
     };
@@ -310,7 +320,7 @@ private void OnAdd(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-![Lane Add Remove](../Swimlane-images/Lane_Add_Remove.gif).
+![Lane Add Remove](../Swimlane-images/Lane_Add_Remove.gif)
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Swimlane/Swimlane_Add_Remove_Lane)
 
@@ -343,11 +353,14 @@ The following code example illustrates how to add nodes to lane.
 </Style>
 
  <syncfusion:SfDiagram x:Name="diagram" Nodes="{Binding Nodes}" 
-    Swimlanes="{Binding Swimlanes}"                            Connectors="{Binding Connectors}"                         SelectedItems="{Binding SelectedItems}"                              SnapSettings="{Binding SnapSettings}"                              HorizontalRuler="{Binding HorizontalRuler}"                              VerticalRuler="{Binding VerticalRuler}"/>
+    Swimlanes="{Binding Swimlanes}" Connectors="{Binding Connectors}"         SelectedItems="{Binding SelectedItems}"                              SnapSettings="{Binding SnapSettings}"                              HorizontalRuler="{Binding HorizontalRuler}"                              VerticalRuler="{Binding VerticalRuler}"/>
 
 {% endhighlight %}
 {% highlight c# %}
-
+public class DiagramVM : DiagramViewModel
+{
+ public DiagramVM()
+ {
 SnapSettings = new SnapSettings()
 {
  SnapConstraints = SnapConstraints.None,
@@ -357,11 +370,11 @@ SelectedItems = new SelectorViewModel();
 
 HorizontalRuler = new Ruler() { Orientation = Orientation.Horizontal };
 VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
+InitializeDiagram();
+}
 
-//Add Command
- AddCommand = new Command(OnAdd);
-//Remove Command
- RemoveCommand = new Command(OnRemove);
+private void InitializeDiagram()
+{
 
  //Initialize SwimlaneCollection to SfDiagram
   this.Swimlanes = new SwimlaneCollection();
@@ -381,7 +394,7 @@ VerticalRuler = new Ruler() { Orientation = Orientation.Vertical };
      UnitHeight = 32,
      Annotation = new AnnotationEditorViewModel()
      {
-      Content = "Swimlane"
+      Content = "SALES PROCESS FLOW CHART"
      },
    };
 LaneViewModel lane1 = new LaneViewModel()
@@ -390,7 +403,7 @@ LaneViewModel lane1 = new LaneViewModel()
   Header = new SwimlaneHeader()
   {
     UnitHeight = 30,
-    Annotation = new AnnotationEditorViewModel() { Content = "Lane" }
+    Annotation = new AnnotationEditorViewModel() { Content = "Consumer" }
   }
  };
  swimlane.Lanes = new LaneCollection()
@@ -406,7 +419,8 @@ NodeViewModel node = new NodeViewModel() { UnitHeight = 50, UnitWidth = 50, Lane
 
 //Add Swimlane to Swimlanes property of the Diagram
 (this.Swimlanes as SwimlaneCollection).Add(swimlane);
-
+}
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -430,4 +444,4 @@ NodeViewModel node = new NodeViewModel() { UnitHeight = 50, UnitWidth = 50, Lane
 Diagram provides the support to edit Lane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
 The following image illustrates how to edit the lane header.
 
-![Lane Header Editing](Swimlane-images/Lane_Header_Edit.gif)
+![Lane Header Editing](../Swimlane-images/Lane_Header_Edit.gif)
