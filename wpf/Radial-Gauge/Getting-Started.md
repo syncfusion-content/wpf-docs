@@ -463,4 +463,4 @@ The following screenshot illustrates the result of the previous codes.
 
 ![Getting started image](Getting-Started_images/Getting_Started_img1.png)
 
-You can find the complete getting started sample from this [`link`]().
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedCircularGauge).

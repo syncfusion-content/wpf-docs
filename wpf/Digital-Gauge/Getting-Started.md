@@ -220,4 +220,4 @@ The following screenshot illustrates the result of the previous codes.
 ![Digital gauge getting started](Getting-Started_images/Getting-Started_img7.png)
 
 
-You can find the complete getting started sample from this [`link`]().
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedDigitalGauge).
