@@ -13,7 +13,7 @@ This section explains how to select a date and custom UI of the WPF [CalendarEdi
 
 ## Select a date
 
-You can select a date in the `CalendarEdit` control by mouse click on the specfic date. You can get the selected date by using the `Date` property.
+You can select a date in the `CalendarEdit` control by mouse click on the specific date. You can get the selected date by using the `Date` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -186,7 +186,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 If you want to highlight the today date, change it's foreground, background or border brush by using [TodayCellForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellForeground.html), [TodayCellBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellBackground.html) and [TodayCellBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellBorderBrush.html) properties. You can also change the selected border brush and background of the today date by using the [TodayCellSelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellSelectedBorderBrush.html) and [TodayCellSelectedBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~TodayCellSelectedBackground.html) properties.
 
-![Changing today date's foreground and background to highlight](Working-with-Calendar_images/Highlight_todaydate.png)
+![Changing today dates foreground and background to highlight](Working-with-Calendar_images/Highlight_todaydate.png)
 
 {% tabs %}
 {% highlight XAML %}
@@ -206,7 +206,7 @@ calendarEdit.TodayCellForeground = Brushes.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing today date's selected foreground and background to highlight](Working-with-Calendar_images/HighlightTodaydate.png)
+![Changing today dates selected foreground and background to highlight](Working-with-Calendar_images/HighlightTodaydate.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
@@ -232,9 +232,10 @@ calendarEdit.NotCurrentMonthForeground = Brushes.Red;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-## Change initial display mode
+## Change default calendar mode
 
-You can change the initial display mode as days, week numbers, month, years or years range mode by setting the respective value to the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) property.
+By default, the days are displayed in the `CalendarEdit`.
+You can change the default calendar mode as week numbers, month, years or years range mode by setting the respective value to the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) property. The default value of `VisualMode` property is `Days`.
 
 ![Various initial display mode for CalendarEdit](Working-with-Calendar_images/VisualMode.png)
 
@@ -284,8 +285,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 If you want to highlight the week numbers, change it's foreground, background or border brush by using the [WeekNumberBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberBackground.html), [WeekNumberForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberForeground.html) and [WeekNumberBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberBorderBrush.html) properties. You can also change the mouse hover background, foreground and border brush for the selected day cell by using the [WeekNumberHoverBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberHoverBackground.html), [WeekNumberHoverForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberHoverForeground.html) and [WeekNumberHoverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~WeekNumberHoverBorderBrush.html) properties.
 
-![Changed selected date appearance](Working-with-Calendar_images/SelectionApperance.png)
-
 {% tabs %}
 {% highlight xaml %}
 
@@ -313,49 +312,61 @@ calendarEdit.VisualMode = CalendarVisualMode.WeekNumbers;
 {% endhighlight %}
 {% endtabs %}
 
-![Week number cell's background and foreground changed in CalendarEdit](Working-with-Calendar_images/WeekNumberCustomUI.png)
+![Week number cells background and foreground changed in CalendarEdit](Working-with-Calendar_images/WeekNumberCustomUI.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
-## Highlight the special day
+## Highlight special days
 
 You can differentiate the special day from other days by setting that date value to the [SpecialDate.Date](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~Date.html) property and adding `SpecialDate.Date` into the [SpecialDates](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~SpecialDates.html) collection. You can use the [SpecialDate.CellTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.SpecialDate~CellTemplate.html) property to customize the `SpecialDate` day cell appearance. 
 
 {% tabs %}
 {% highlight XAML %}
 
-<Window.Resources>
-    <DataTemplate x:Key="special_date">
-        <TextBlock Text="{Binding Day}"
-                   Background="Yellow"/>
-    </DataTemplate>
-</Window.Resources>
+    <Window.Resources>
+        <DataTemplate x:Key="WorldEnvironmentDay" >
+            <Image Source="Resources\Icon_Environmental day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="EngineersDay" >
+            <Image Source="Resources\Icon_Engineer day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="PollutionPreventionDay" >
+            <Image Source="Resources\Icon_Pollution day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="NationalMathematicsDay" >
+            <Image Source="Resources\Icon_Mathematics day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="Christmas" >
+            <Image Source="Resources\Christmas.png" />
+        </DataTemplate>
 
-<Grid>
-    <syncfusion:CalendarEdit Name="calendarEdit">
-        <syncfusion:CalendarEdit.SpecialDates>
-
-            <!--Adding special dates into SpecialDates collection for highlight-->
-            <syncfusion:SpecialDate Date="05/11/2020"
-                                    CellTemplate="{StaticResource special_date }"/>
-            <syncfusion:SpecialDate Date="05/22/2020" 
-                                    CellTemplate="{StaticResource special_date }"/>
-            <syncfusion:SpecialDate Date="05/25/2020" 
-                                    CellTemplate="{StaticResource special_date }"/>
-        </syncfusion:CalendarEdit.SpecialDates>
-    </syncfusion:CalendarEdit>
-</Grid>
+        <local:ViewModel x:Key="viewModel">
+            <local:ViewModel.SpecialDates>
+                <syncfusion:SpecialDate Date="06/05/2020" CellTemplate="{StaticResource WorldEnvironmentDay }"/>
+                <syncfusion:SpecialDate Date="09/15/2020" CellTemplate="{StaticResource EngineersDay }"/>
+                <syncfusion:SpecialDate Date="12/02/2020" CellTemplate="{StaticResource PollutionPreventionDay }"/>
+                <syncfusion:SpecialDate Date="12/22/2020" CellTemplate="{StaticResource NationalMathematicsDay }"/>
+                <syncfusion:SpecialDate Date="12/25/2020" CellTemplate="{StaticResource Christmas }"/>
+            </local:ViewModel.SpecialDates>
+        </local:ViewModel>
+    </Window.Resources>
+    
+    <Grid>
+        <syncfusion:CalendarEdit DataContext="{StaticResource viewModel}"                         
+                                 SpecialDates="{Binding SpecialDates}"
+                                 Name="calendarEdit" />
+    </Grid>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Custom appearance for the particular Day cell](Working-with-Calendar_images/SpecialDays.png)
+![Custom appearance for the special Day cell](Working-with-Calendar_images/SpecialDays.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/SpecialDays)
 
 ## Setting Culture
 
-You can use any culture for `CalendarEdit` control by setting the required culture to the `Culture` property.
+You can change the culture for `CalendarEdit` control by setting the required culture to the `Culture` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -420,13 +431,13 @@ calendarEdit.SetToolTip(today, new ToolTip() { Content = "Today" });
 
 ![Tooltip for today and yesterday](Working-with-Calendar_images/Tooltip.png)
 
-## Custom apperance of day cell
+## Custom appearance of day cell
 
-You can customize the apperance of day cell by using styles and templates in the `CalendarEdit` control.
+You can customize the appearance of day cell by using styles and templates in the `CalendarEdit` control.
 
 ### Custom UI for day cell using style
 
-You can customize the apperance of day cell by using the [DayCellsStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayCellsStyle.html) property. The `DataContext` of the `DayCellsStyle` is `DayCell`.
+You can customize the appearance of day cell by using the [DayCellsStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayCellsStyle.html) property. The `DataContext` of the `DayCellsStyle` is `DayCell`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -453,7 +464,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ### Custom UI for day cell using template
 
-You can customize the apperance of day cell by using the [DayCellsDataTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayCellsStyle.html) property. The `DataContext` of the `DayCellsDataTemplate` is `DayCell`.
+You can customize the appearance of day cell by using the [DayCellsDataTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayCellsStyle.html) property. The `DataContext` of the `DayCellsDataTemplate` is `DayCell`.
 
 {% tabs %}
 {% highlight XAML %}
@@ -484,7 +495,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Custom UI for day name cell using style
 
-You can customize the apperance of day name cell by using the [DayNameCellsStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayNameCellsStyle.html) property. The `DataContext` of the `DayNameCellsStyle` is `DayNameCell`.
+You can customize the appearance of day name cell by using the [DayNameCellsStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~DayNameCellsStyle.html) property. The `DataContext` of the `DayNameCellsStyle` is `DayNameCell`.
 
 {% tabs %}
 {% highlight XAML %}

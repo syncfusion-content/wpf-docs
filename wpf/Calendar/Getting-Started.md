@@ -110,7 +110,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Select a date
 
-You can select a date in the `CalendarEdit` control by mouse click on the specfic date. You can get the selected date by using the `Date` property.
+You can select a date in the `CalendarEdit` control by mouse click on the specific date. You can get the selected date by using the `Date` property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -274,38 +274,46 @@ You can differentiate the special day from other days by setting that date value
 {% tabs %}
 {% highlight XAML %}
 
-<Window.Resources>
-    <DataTemplate x:Key="special_date">
-        <TextBlock Text="{Binding Day}"
-                   Background="Yellow"
-                   Foreground="Red"/>
-    </DataTemplate>
-</Window.Resources>
+    <Window.Resources>
+        <DataTemplate x:Key="WorldEnvironmentDay" >
+            <Image Source="Resources\Icon_Environmental day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="EngineersDay" >
+            <Image Source="Resources\Icon_Engineer day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="PollutionPreventionDay" >
+            <Image Source="Resources\Icon_Pollution day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="NationalMathematicsDay" >
+            <Image Source="Resources\Icon_Mathematics day.png" />
+        </DataTemplate>
+        <DataTemplate x:Key="Christmas" >
+            <Image Source="Resources\Christmas.png" />
+        </DataTemplate>
 
-<Grid>
-    <syncfusion:CalendarEdit Name="calendarEdit">
-        <syncfusion:CalendarEdit.SpecialDates>
-
-        <syncfusion:CalendarEdit.SpecialDates>
-
-            <!--Adding special dates into SpecialDates collection for highlight-->
-            <syncfusion:SpecialDate Date="{x:Static system:DateTime.Today}"
-                                CellTemplate="{StaticResource special_date }"/>
-            <syncfusion:SpecialDate Date="07/13/2020" 
-                                CellTemplate="{StaticResource special_date }"/>
-            <syncfusion:SpecialDate Date="07/24/2020" 
-                                CellTemplate="{StaticResource special_date }"/>
-        </syncfusion:CalendarEdit.SpecialDates> 
-    </syncfusion:CalendarEdit>
-
-</Grid>
+        <local:ViewModel x:Key="viewModel">
+            <local:ViewModel.SpecialDates>
+                <syncfusion:SpecialDate Date="06/05/2020" CellTemplate="{StaticResource WorldEnvironmentDay }"/>
+                <syncfusion:SpecialDate Date="09/15/2020" CellTemplate="{StaticResource EngineersDay }"/>
+                <syncfusion:SpecialDate Date="12/02/2020" CellTemplate="{StaticResource PollutionPreventionDay }"/>
+                <syncfusion:SpecialDate Date="12/22/2020" CellTemplate="{StaticResource NationalMathematicsDay }"/>
+                <syncfusion:SpecialDate Date="12/25/2020" CellTemplate="{StaticResource Christmas }"/>
+            </local:ViewModel.SpecialDates>
+        </local:ViewModel>
+    </Window.Resources>
+    
+    <Grid>
+        <syncfusion:CalendarEdit DataContext="{StaticResource viewModel}"                         
+                                 SpecialDates="{Binding SpecialDates}"
+                                 Name="calendarEdit" />
+    </Grid>
 
 {% endhighlight %}
 {% endtabs %}
 
-![Custom appearance for the particular Day cell](Getting-Started_images/SpecialDays.png)
+![Custom appearance for the special Day cell](Working-with-Calendar_images/SpecialDays.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/SpecialDays)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendaredit-examples/tree/master/Samples/SpecialDays)
 
 ## Display week numbers
 
@@ -331,9 +339,34 @@ calendarEdit.ShowWeekNumbers = true;
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
 
+## Change default calendar mode
+
+By default, the days are displayed in the `CalendarEdit`.
+You can change the default calendar mode as week numbers, month, years or years range mode by setting the respective value to the [VisualMode](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~VisualMode.html) property. The default value of `VisualMode` property is `Days`.
+
+![Various initial display mode for CalendarEdit](Working-with-Calendar_images/VisualMode.png)
+
+{% tabs %}
+{% highlight XAML %}
+
+<syncfusion:CalendarEdit Name="calendarEdit" 
+                         VisualMode="YearsRange"/>
+
+{% endhighlight %}
+{% highlight C# %}
+
+calendarEdit.VisualMode = CalendarVisualMode.YearsRange;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changed initial display mode as years range](Working-with-Calendar_images/YearVisualMode.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-calendar-examples/tree/master/Samples/Select-Date)
+
 ## Setting Culture
 
-You can use any culture for `CalendarEdit` control by setting the required culture to the `Culture` property.
+You can change the culture for `CalendarEdit` control by setting the required culture to the `Culture` property.
 
 {% tabs %}
 {% highlight XAML %}

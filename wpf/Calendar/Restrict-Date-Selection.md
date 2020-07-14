@@ -9,9 +9,9 @@ documentation: ug
 
 # Restricting date selection in WPF CalendarEdit
 
-This section explains how to select a date in a particular range by specifying minimum and maximum dates in [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit.html) control.
+This section explains how to restrict a date within a particular range by using [CalendarEdit](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit.html) control.
 
-## Restrict the date selection within minimum and maximum date
+## Restrict date selection within minimum and maximum date
 
 You can restrict the users from selecting a date within the particular range by specifying [MinDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~MaxDate.html) in `CalendarEdit` control.
 
@@ -122,7 +122,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusin-wpf-c
 
 ## Custom appearance of blocked days
 
-You can change the background and cross-mark color of the blockout days by using the [BlackoutDatesBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesBackground.html) and [BlackoutDatesCrossBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesCrossBrush.html) properties. You can also change the foreground and border color of the block out dates by using the [BlackoutDatesForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesForeground.html) and [BlackoutDatesBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesBorderBrush.html) properties. The default value of `BlackoutDatesBackground` is `Transparent` and `BlackoutDatesCrossBrush` is `Black`. The default value of `BlackoutDatesForeground` is `White` and `BlackoutDatesBorderBrush` is `Transparent`.
+You can change the background and cross-mark color of the block out days by using the [BlackoutDatesBackground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesBackground.html) and [BlackoutDatesCrossBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesCrossBrush.html) properties. You can also change the foreground and border color of the block out dates by using the [BlackoutDatesForeground](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesForeground.html) and [BlackoutDatesBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.Shared.Wpf~Syncfusion.Windows.Shared.CalendarEdit~BlackoutDatesBorderBrush.html) properties. The default value of `BlackoutDatesBackground` is `Transparent` and `BlackoutDatesCrossBrush` is `Black`. The default value of `BlackoutDatesForeground` is `White` and `BlackoutDatesBorderBrush` is `Transparent`.
 
 ![Blockout days custom appearance](Restrict-Date-Selection_images/BlockOut.png)
 
