@@ -7,8 +7,8 @@ control: SfScheduler
 documentation: ug
 ---
 
-# Appointment editing in WPF scheduler (SfScheduler)
-You can add, edit and delete appointments in WPF scheduler and also you can perform appointment resizing.
+# Appointment Editing
+This section explains how to handle appointment editing in WPF scheduler and also explains about the appointment resizing.
 
 ## Adding appointments
 Scheduler supports to add new appointment by using [Appointment Editor](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SchedulerAppointmentEditorWindow.html) UI window. You can open this window by double click a time cell.
@@ -153,10 +153,10 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 {% endtabs %}
 
 ## Appointment Resizing
-Scheduler has support to resize the selected appointment. This support is available for all views except 'Month' view.
+Scheduler supports to display the appointment resizing. This support is available for all views except 'Month' view.
 
 ### Disable appointment resize
-You can disable appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property except `Resize`. In this case, you will not be able to perform appointment resizing.
+You can disable the appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property except `Resize`. In this case, you will not be able to perform appointment resizing.
 
 {% tabs %}
 {% highlight c# %}
