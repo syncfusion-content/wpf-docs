@@ -12,16 +12,16 @@ documentation: ug
 This section provides you an overview for working with SfScheduler for WPF and also provides a walk through to configure SfScheduler control in real time scenario.   
 
 ## Assembly deployment
-Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#SfScheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages). You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
+Refer to the section on [control dependencies](https://help.syncfusion.com/wpf/control-dependencies#sfscheduler) for a list of assemblies or NuGet Packages to be used as a guide for using control in any application. Further information on installing the NuGet package can be found in the following link in a WPF application: [How to install nuget packages](https://help.syncfusion.com/wpf/nuget-packages). You can also use [Syncfusion Reference Manager](https://help.syncfusion.com/wpf/visual-studio-integration/visual-studio-extensions/add-references) to refer the scheduler's dependent assemblies.
 
 ## Create simple application with SfScheduler
 
 In this section, you will create WPF application with SfScheduler control.
 
-* [Creating project](#Creating-project)
-* [Adding control via Designer](#Adding-control-via-Designer)
-* [Adding control manually in XAML](#Adding-control-manually-in-XAML)
-* [Adding control manually in C#](#Adding-control-manually-in-C#)  
+* [Creating project](#creating-project)
+* [Adding control via Designer](#adding-control-via-designer)
+* [Adding control manually in XAML](#adding-control-manually-in-xaml)
+* [Adding control manually in C#](#adding-control-manually-in-c)  
 
 ### Creating project
 In Visual Studio, create a new WPF project to show the features of the SfScheduler control and add the following namespace to the added assemblies.
@@ -97,7 +97,7 @@ Schedule.ViewType =SchedulerViewType.Month;
 `SfScheduler` has a built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. You need to allocate the collection generated to `Appointments` property.
 
 ### Adding Appointments
-`ScheduleAppointment` is a class that includes the specific of scheduled appointment. It has some basic properties such as `StartTime`, `EndTime`, `Subject` and some additional information about the appointment can be added with `Notes`, `Location`, `IsAllDay` properties.
+The [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment.html) is a class that includes the specific scheduled appointment. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Subject.html), and some additional information about the appointment can be added with [Notes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~Location.html), and [IsAllDay](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.ScheduleAppointment~IsAllDay.html) properties.
 
 {% tabs %}   
 {% highlight xaml %}
@@ -129,11 +129,10 @@ You can also map custom appointments data to our scheduler.
 
 Here steps to render meetings using `SfScheduler` control with respective custom data properties created in a class `Meeting`.
 
-* [Create an event Data Model](#creating-custom-class-for-appointments) 
+* [Create an event Data Model](#create-an-event-data-model) 
 * [Create view model](#create-view-model)
-* [Bind to Scheduler appointment](#Bind-to-Scheduler-appointment)  
-* [Add Scheduler items source.](#Add-Scheduler-items-source.) 
-* [Bind item source for Scheduler](#Bind-item-source-for-Scheduler)
+* [Bind to SfScheduler appointment](#bind-to-sfscheduler-appointment)  
+* [Bind item source for Scheduler](#bind-item-source-for-sfscheduler)
   
 #### Create an event Data Model 
   
@@ -349,7 +348,7 @@ By setting `From` and `To` of `Meeting` class, you can schedule meetings for a s
 
 #### Bind to SfScheduler appointment
 
-You can map those properties of `Meeting` class with our `SfScheduler` control by using `SfScheduler.AppointmentMapping` property.  
+You can map those properties of the `Meeting` class with our `SfScheduler` control by using the [AppointmentMapping](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentMappingProperty.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -411,7 +410,7 @@ SfScheduler control will be rendered with `Sunday` as the first day of the week,
 {% endhighlight %}   
 {% highlight c# %}
 //setting first day of the week    
-Schedule.FirstDayOfWeek = DayOfWeek.Thursday;   
+Schedule.FirstDayOfWeek = DayOfWeek.Tuesday;   
 {% endhighlight %}  
 {% endtabs %}   
 

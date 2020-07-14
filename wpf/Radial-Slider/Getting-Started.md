@@ -134,7 +134,7 @@ The SmallChange property can be used to control the smallest possible range of v
 
 {% endtabs %}
 
-## Change tick label text formatting
+## Text formatting
 
 You can customize the text format for the specific or all tick labels by handling the [DrawLabel](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.SfRadialSlider~DrawLabel_EV.html) event and setting the [DrawLabelEventArgs.Handled](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~Handled.html) property value as `true`. You can change the content and foreground of the tick labels by using the [DrawLabelEventArgs.Text](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~Text.html) and [DrawLabelEventArgs.Foreground](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~Foreground.html) properties. You can also change the font family and font size of the tick labels by using the [DrawLabelEventArgs.FontFamily](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~FontFamily.html) and [DrawLabelEventArgs.FontSize](https://help.syncfusion.com/cr/wpf/Syncfusion.SfRadialMenu.Wpf~Syncfusion.Windows.Controls.Navigation.DrawLabelEventArgs~FontSize.html) properties.
 
@@ -165,24 +165,21 @@ You can handle the event as follows,
 
 private void sfRadialSlider_DrawLabel(object sender, DrawLabelEventArgs e) {            
     e.Handled = true;
-    if (e.Handled == true) {
-        e.Text += "°C";
-        sfRadialSlider.Content = e.Text;
-        if (e.Value <= 33) {
-            e.FontSize = 8;
-            e.FontFamily = new FontFamily("Arial");
-            e.Foreground = Brushes.Green;
-        }
-        else if (e.Value > 33 && e.Value <= 66) {
-            e.FontSize = 10;
-            e.FontFamily = new FontFamily("Courier");
-            e.Foreground = Brushes.Gold;
-        }
-        else {
-            e.FontSize = 12;
-            e.FontFamily = new FontFamily("Georgia");
-            e.Foreground = Brushes.Red;
-        }
+    e.Text += "°C";
+    if (e.Value <= 33) {
+        e.FontSize = 8;
+        e.FontFamily = new FontFamily("Arial");
+        e.Foreground = Brushes.Green;
+    }
+    else if (e.Value > 33 && e.Value <= 66) {
+        e.FontSize = 10;
+        e.FontFamily = new FontFamily("Courier");
+        e.Foreground = Brushes.Gold;
+    }
+    else {
+        e.FontSize = 12;
+        e.FontFamily = new FontFamily("Georgia");
+        e.Foreground = Brushes.Red;
     }
 }
 
@@ -191,4 +188,4 @@ private void sfRadialSlider_DrawLabel(object sender, DrawLabelEventArgs e) {
 
 ![Change tick label text formatting](Ticks_images/LabelEdit.gif)
 
-N> View [Sample](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Label-Formatting) in GitHub
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/syncfusion-wpf-radial-slider-examples/tree/master/Samples/Label-Formatting) 
