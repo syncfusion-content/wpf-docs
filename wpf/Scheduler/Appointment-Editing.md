@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 
-# Appointment Editing
+# Appointment Editing in WPF Scheduler (SfScheduler)
 This section explains how to handle appointment editing in WPF scheduler and also explains about the appointment resizing.
 
 ## Adding appointments
