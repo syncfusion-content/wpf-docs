@@ -9,6 +9,15 @@ documentation: ug
 # Appointment drag and drop in WPF Scheduler (SfScheduler)
 Scheduler supports to reschedule the appointment by performing the drag and drop operation. This support is available for all views except 'Month' view.
 
+## Disable drag and drop
+Scheduler supports to disable the appointment drag and drop by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property except `DragDrop`. In this case, you will not be able to perform appointment drag & drop.
+
+{% tabs %}
+{% highlight c# %}
+this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.Edit | AppointmentEditFlag.None | AppointmentEditFlag.Resize;
+{% endhighlight %}
+{% endtabs %}
+
 ## AppointmentDragOver event
 Scheduler notifies by [AppointmentDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentDragOver_EV.html) when drag the appointment. [AppointmentDragEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.AppointmentDragEventArgs.html) has following members which provides information for `AppointmentDragOver` event.
 
