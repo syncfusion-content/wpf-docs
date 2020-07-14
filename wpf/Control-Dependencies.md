@@ -1609,26 +1609,6 @@ Syncfusion.SfRichTextRibbon.WPF
 </tr>
 </table>
 
-## SfSchedule
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.SfSchedule.WPF <br/>
-Syncfusion.SfRadialMenu.WPF <br/>
-Syncfusion.SfShared.WPF <br/>
-Syncfusion.Shared.WPF
-</td>
-<td> 
-Syncfusion.SfSchedule.WPF
-</td>
-</tr>
-</table>
-
 ## SfScheduler
 
 <table>
@@ -1643,8 +1623,7 @@ Syncfusion.SfInput.WPF<br/>
 Syncfusion.SfSkinManager.WPF<br/>
 Syncfusion.SfShared.WPF <br/>
 Syncfusion.Shared.WPF<br/>
-Syncfusion.Themes.MaterialLight.WPF<br/>
-Syncfusion.Shared.WPF
+Syncfusion.Themes.MaterialLight.WPF
 </td>
 <td> 
 Syncfusion.SfScheduler.WPF
