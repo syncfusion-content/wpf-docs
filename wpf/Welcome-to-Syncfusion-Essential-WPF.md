@@ -514,7 +514,7 @@ N> The name of the Visual Studio Toolbox entry provided when the common control 
 </td>
 <td>
 <p><a href="https://help.syncfusion.com/wpf/scheduler/getting-started">Scheduler</a>
-<small> - SfSchedule</small></p>
+<small> - SfScheduler</small></p>
 </td>
 </tr>
 
