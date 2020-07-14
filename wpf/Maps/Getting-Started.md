@@ -586,4 +586,4 @@ The following screenshot illustrates the result of the above code sample.
 
 ![Getting started imgage](Getting-Started_images/Getting_Started_image.png)
 
-You can download the complete [`Getting started`]() sample.
+You can download the complete [`Getting started`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedMap) sample.
