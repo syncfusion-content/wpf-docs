@@ -10,14 +10,11 @@ documentation: ug
 Scheduler supports to reschedule the appointment by performing the drag and drop operation. This support is available for all views except 'Month' view.
 
 ## Disable drag and drop
-You can disable appointment drag and drop by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property to `None`. In this case, you will not be able to perform add, edit, resize and drag & drop the appointments.
+You can disable appointment drag and drop by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property except `DragDrop`. In this case, you will not be able to perform appointment drag & drop.
 
 {% tabs %}
-{% highlight XAML %}
- <syncfusion:SfScheduler
-            x:Name="Schedule"
-           AppointmentEditFlag="None">
-        </syncfusion:SfScheduler>
+{% highlight c# %}
+this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.Edit | AppointmentEditFlag.None | AppointmentEditFlag.Resize;
 {% endhighlight %}
 {% endtabs %}
 

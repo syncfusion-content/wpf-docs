@@ -35,6 +35,7 @@ To localize the Scheduler based on `CurrentUICulture` using resource files, foll
 1. Create new folder and named as **Resources** in your application. 
 
 2. Add the default resource file of Scheduler into **Resources** folder. 
+>You can download the **Syncfusion.SfScheduler.WPF.resx** from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/Scheduler/Localization/CS/Resources).
 
 ![Addition of default resource file of WPF Scheduler into Resources folder](Localization_images/Localization_Image1.png)
 
@@ -55,3 +56,5 @@ To localize the Scheduler based on `CurrentUICulture` using resource files, foll
 ![Shows the added resource file name / value pair in the resource designer in WPF Scheduler](Localization_images/Localized_String.png)
 
 ![Shows the localized strings in French for WPF Scheduler](Localization_images/Localized_Scheduler.png)
+
+>Download demo application from [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/Scheduler/Localization)

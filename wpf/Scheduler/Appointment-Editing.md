@@ -156,14 +156,11 @@ private void Schedule_AppointmentDeleting(object sender, AppointmentDeletingEven
 Scheduler has support to resize the selected appointment. This support is available for all views except 'Month' view.
 
 ### Disable appointment resize
-You can disable appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property to `None`. In this case, you will not be able to perform add, edit, resize and drag & drop the appointments.
+You can disable appointment resizing by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property except `Resize`. In this case, you will not be able to perform appointment resizing.
 
 {% tabs %}
-{% highlight XAML %}
- <syncfusion:SfScheduler
-            x:Name="Schedule"
-           AppointmentEditFlag="None">
-        </syncfusion:SfScheduler>
+{% highlight c# %}
+ this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.DragDrop | AppointmentEditFlag.Edit | AppointmentEditFlag.None;
 {% endhighlight %}
 {% endtabs %}
 
