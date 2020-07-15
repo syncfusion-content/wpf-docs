@@ -82,6 +82,23 @@ dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 {% endhighlight %}
 {% endtabs %}
 
+## Retain editing on lost focus
+
+The editing of current cell will be ended by default while the focus is moving from DataGrid to another control. You can set the [LostFocusBehavior](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~LostFocusBehavior.html) property to `LostFocusBehavior.Default` if you want to retain the editing of the current cell even when focus is moved to another control.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowEditing="True"
+                       LostFocusBehavior="Default"
+                       ItemsSource="{Binding Orders}" />
+{% endhighlight %}
+
+{% highlight c# %}
+dataGrid.LostFocusBehavior = LostFocusBehavior.Default;
+{% endhighlight %}
+{% endtabs %}
+
 ## Working with IEditableObject interface
 
 SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface. 
