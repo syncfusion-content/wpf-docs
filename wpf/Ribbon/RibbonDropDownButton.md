@@ -315,11 +315,9 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 {% endtabs %}
 
 ![DropDownButton image during normal layout](DropDownButton_images/RibbonDropDownButton_Icons.png)
-
 *Normal layout*
 
 ![DropDownButton image during simplified layout](DropDownButton_images/RibbonDropDownButton_IconsSimplified.png)
-
 *Simplified layout*
 
 ### Setting vector image 
@@ -569,11 +567,9 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 {% endtabs %}
 
 ![DropDownButton vector image during normal layout](DropDownButton_images/RibbonDropDownButton_Icons.png)
-
 *Normal layout*
 
 ![DropDownButton vector image during simplified layout](DropDownButton_images/RibbonDropDownButton_IconsSimplified.png)
-
 *Simplified layout*
 
 ## Add DropDownButton to the simplified layout
