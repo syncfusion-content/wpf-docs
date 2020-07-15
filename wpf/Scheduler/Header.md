@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 
-# Headers in WPF scheduler (SfScheduler)
+# Header in WPF scheduler (SfScheduler)
 You can change the header height, date format and appearance of [SfScheduler](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler.html).
 
 ## Header height
