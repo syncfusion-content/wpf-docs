@@ -601,4 +601,4 @@ Orientation="Horizontal">
 
 ![Appearance Customization in WPF Scheduler](appointments_images/Adding-AppearanceCustomization.png)
 
-N> Download demo application from [GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-appearance-customization)
+N> [View sample in GitHub](https://github.com/SyncfusionExamples/wpf-scheduler-appearance-customization)
