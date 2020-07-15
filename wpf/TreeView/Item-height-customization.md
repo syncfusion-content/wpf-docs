@@ -62,7 +62,7 @@ private void SfTreeView_QueryNodeSize(object sender, Syncfusion.UI.Xaml.TreeView
 {% endhighlight %}
 {% endtabs %}
 
-## Autofit item height on dynamic changes
+## Autofit item height based on content
 
 The TreeView allows adjusting height of items based on the content measured size while loaded by setting the `Height` argument with value returned from [QueryNodeSizeEventArgs.GetAutoFitNodeHeight](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.QueryNodeSizeEventArgs~GetAutoFitNodeHeight.html) method.
 
