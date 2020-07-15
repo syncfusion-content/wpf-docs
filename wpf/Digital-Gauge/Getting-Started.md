@@ -33,37 +33,9 @@ Location: {Installed location}/{version}/WPF/Assemblies
 
 You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to know about the assemblies required for adding gauge to your project.
 
-## Configuring SfDigitalGauge using Syncfusion Reference Manager
-
-Syncfusion Reference Manager is used to add  Syncfusion Tools.
-
-Follow the below steps to add **SfDigitalGauge** using Syncfusion Reference manager.
-
-Create a simple WPF application using Visual Studio.
-
-![Create a simple WPF application image](Getting-Started_images/Getting-Started_img1.jpeg)
-
-Right Click on the Project and select Syncfusion Reference Manager.
-
-![Select Syncfusion Reference Manager image](Getting-Started_images/Getting-Started_img2.jpeg)
-
-The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
-
-![Syncfusion Reference Manager image](Getting-Started_images/Getting-Started_img3.jpeg)
-
-Search for **SfDigitalGaugeGauge** using Search Box and select SfDigitalGaugeGauge Control. Click on done to add selected SfDigitalGaugeGauge Control.
-
-![Select the  SfDigitalGaugeGauge control image](Getting-Started_images/Getting-Started_img4.jpeg)
-
-The SfDigitalGauge assemblies will be automatically added to the Project after Clicking *OK*.
-
-![SfDigitalGauge assemblies image](Getting-Started_images/Getting-Started_img5.jpeg)
-
-![SfDigitalGauge assemblies added image](Getting-Started_images/Getting-Started_img6.jpeg)
-
 ## Initialize gauge
 
-You can initialize the `SfDigitalGauge` control with a required optimal name using the included namespace.
+You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) control with a required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -100,33 +72,31 @@ initialize digital gauge control.
 
 {% endtabs %}
 
->**Note:-The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version and Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, and 2013,2015.**
-
 Run the above code and now the default **SfDigitalGauge** can be displayed as follows. UI component of the digital gauge can be customized by adding segments and passing Values which will be explained in the next section.
 
 ## Displaying Values 
 
-The `SfDigitalGauge` control provides options to display special characters or values using the `Value` property.
+The [`SfDigitalGauge`](https://help.syncfusion.com/cr/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) control provides options to display special characters or values using the [`Value`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~Value.html) property.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfDigitalGauge Value="1 2 3 4" />    
+<syncfusion:SfDigitalGauge Value="1 2 3 4" />    
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "1 2 3 4";
-    this.Content = digitalgauge;
+SfDigitalGauge digitalgauge = new SfDigitalGauge();
+digitalgauge.Value = "1 2 3 4";
+this.Content = digitalgauge;
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Setting character type
 
-By using the `CharacterType` property, you can set the segments for digital gauge. The digital characters can be drawn in the following four different segments:
+By using the [`CharacterType`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterType.html) property, you can set the segments for digital gauge. The digital characters can be drawn in the following four different segments:
 
 •	EightCrossEightDotMatrix
 
@@ -139,39 +109,39 @@ By using the `CharacterType` property, you can set the segments for digital gaug
 {% tabs %}
 {% highlight xaml %}
 
-    <gauge:SfDigitalGauge Value="1 2 3 4" CharacterType="EightCrossEightDotMatrix"/>
+<gauge:SfDigitalGauge Value="1 2 3 4" CharacterType="EightCrossEightDotMatrix"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
-    this.Content = digitalgauge;
+SfDigitalGauge digitalgauge = new SfDigitalGauge();
+digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
+this.Content = digitalgauge;
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Configuring properties
 
-The `CharacterHeight`, `CharacterWidth`, and `CharacterStroke` properties are used to display characters, which can be customized as shown in the following code snippets
+The [`CharacterHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterHeight.html), [`CharacterWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterWidth.html), and [`CharacterStroke`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGauge.WPF~Syncfusion.UI.Xaml.Gauges.SfDigitalGauge~CharacterStroke.html) properties are used to display characters, which can be customized as shown in the following code snippets
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <gauge:SfDigitalGauge CharacterHeight="60" CharacterWidth="25" 
-                          CharacterStroke="#146CED"/>
+<gauge:SfDigitalGauge CharacterHeight="60" CharacterWidth="25" 
+                      CharacterStroke="#146CED"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.CharacterHeight = 60;
-    digitalgauge.CharacterWidth = 25;
-    digitalgauge.CharacterStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#146CED");
-    this.Content = digitalgauge;
+SfDigitalGauge digitalgauge = new SfDigitalGauge();
+digitalgauge.CharacterHeight = 60;
+digitalgauge.CharacterWidth = 25;
+digitalgauge.CharacterStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#146CED");
+this.Content = digitalgauge;
 
 {% endhighlight %}
 
@@ -183,33 +153,33 @@ The following code example is the complete code of the previous configurations.
 
 {% highlight xaml %}
 
-    <gauge:SfDigitalGauge Value="11:59:50 PM"
-                          Height="100"
-                          Width="375"
-                          DimmedBrush="#F2F2F2"
-                          CharacterHeight="60"
-                          CharacterWidth="25"
-                          HorizontalAlignment="Center"
-                          VerticalAlignment="Center"
-                          CharacterType="EightCrossEightDotMatrix"
-                          CharacterStroke="#146CED" />
+<gauge:SfDigitalGauge Value="11:59:50 PM"
+                      Height="100"
+                      Width="375"
+                      DimmedBrush="#F2F2F2"
+                      CharacterHeight="60"
+                      CharacterWidth="25"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      CharacterType="EightCrossEightDotMatrix"
+                      CharacterStroke="#146CED" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Height = 100;
-    digitalgauge.Width = 375;
-    digitalgauge.Value = "11:59:50 PM";
-    digitalgauge.CharacterHeight = 60;
-    digitalgauge.CharacterWidth = 25;
-    digitalgauge.HorizontalAlignment = HorizontalAlignment.Center;
-    digitalgauge.VerticalAlignment = VerticalAlignment.Center;
-    digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
-    digitalgauge.CharacterStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#146CED");
-    digitalgauge.DimmedBrush = (SolidColorBrush)new BrushConverter().ConvertFrom("#F2F2F2");
-    this.Content = digitalgauge;
+SfDigitalGauge digitalgauge = new SfDigitalGauge();
+digitalgauge.Height = 100;
+digitalgauge.Width = 375;
+digitalgauge.Value = "11:59:50 PM";
+digitalgauge.CharacterHeight = 60;
+digitalgauge.CharacterWidth = 25;
+digitalgauge.HorizontalAlignment = HorizontalAlignment.Center;
+digitalgauge.VerticalAlignment = VerticalAlignment.Center;
+digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
+digitalgauge.CharacterStroke = (SolidColorBrush)new BrushConverter().ConvertFrom("#146CED");
+digitalgauge.DimmedBrush = (SolidColorBrush)new BrushConverter().ConvertFrom("#F2F2F2");
+this.Content = digitalgauge;
 
 {% endhighlight %}
 
@@ -217,7 +187,7 @@ The following code example is the complete code of the previous configurations.
 
 The following screenshot illustrates the result of the previous codes.
 
-![Digital gauge getting started](Getting-Started_images/Getting-Started_img7.png)
+![Digital gauge getting started](Getting-Started_images/Getting-Started.png)
 
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/WPF-UG-getting-started-samples/tree/master/GettingStartedDigitalGauge).
