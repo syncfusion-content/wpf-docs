@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Population in WPF TreeView control | Syncfusion
-description: This section displays about how to populate data in syncfusion wpf TreeView control(sfTreeView).
+description: This section displays about the population of the data in syncfusion wpf TreeView control(sfTreeView) and more details.
 platform: wpf
 control: SfTreeView
 documentation: ug
