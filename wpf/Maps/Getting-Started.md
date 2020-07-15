@@ -33,7 +33,7 @@ Location: {Installed location}/{version}/WPF/Assemblies
 
 You can refer to [this](https://help.syncfusion.com/wpf/control-dependencies) link to know about the assemblies required for adding map to your project.
 
-## Create SfMaps control 
+## Create SfMap control 
 
 There are three possible ways to create a simple SfMap control.
 
@@ -73,13 +73,13 @@ Add the following namespace.
 
 {% highlight xaml %}
 
-		xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Maps;assembly=Syncfusion.SfMaps.WPF"
+xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Maps;assembly=Syncfusion.SfMaps.WPF"
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-		using Syncfusion.UI.Xaml.Maps;
+using Syncfusion.UI.Xaml.Maps;
 
 {% endhighlight %}
 
@@ -93,14 +93,14 @@ You can create the SfMap control programmatically through XAML and C#. In the fo
 
 {% highlight xaml %}
        
-		<syncfusion:SfMap>                            
-		</syncfusion:SfMap>    
+<syncfusion:SfMap>
+</syncfusion:SfMap>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-		SfMap syncMap = new SfMap(); 
+SfMap syncMap = new SfMap(); 
            
 {% endhighlight %}
 
@@ -108,25 +108,25 @@ You can create the SfMap control programmatically through XAML and C#. In the fo
 
 ## Adding layers
 
-The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapLayer.html). It can accommodate one or more shape file layers.
+The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.MapLayer.html). It can be either ShapeFileLayer or ImageryLayer. The following example will show to add ShapeFileLayer on map. 
 
 {%tabs%}
 
 {% highlight xaml %}
 
-		<syncfusion:SfMap>
-			<syncfusion:SfMap.Layers>
-				<syncfusion:ShapeFileLayer></syncfusion:ShapeFileLayer>
-			</syncfusion:SfMap.Layers>
-		</syncfusion:SfMap>   
+<syncfusion:SfMap>
+	<syncfusion:SfMap.Layers>
+		<syncfusion:ShapeFileLayer></syncfusion:ShapeFileLayer>
+	</syncfusion:SfMap.Layers>
+</syncfusion:SfMap>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-		SfMap maps = new SfMap();
-		ShapeFileLayer shapeLayer = new ShapeFileLayer();
-		syncMap.Layers.Add(shapeLayer);  
+SfMap maps = new SfMap();
+ShapeFileLayer shapeLayer = new ShapeFileLayer();
+syncMap.Layers.Add(shapeLayer);
          
 {% endhighlight %}
 
@@ -142,15 +142,11 @@ As mentioned earlier, a shape file can be a set of files or a single file. Gener
 
 Main file (.shp)
 
-Index file (.shx)
-
 dBase file (.dbf)
 
-All files must adhere to the 8.3 naming conventions. The Main file, Index file, and dBase file must have the same prefix, i.e., they must have the same file name. This naming convention allows you to identify specific geographical information.
+All files must adhere to the 8.3 naming conventions. The Main file and dBase file must have the same prefix, i.e., they must have the same file name. This naming convention allows you to identify specific geographical information.
 
 The main file (.shp) contains a fixed-length file header followed by the variable-length records. Each variable-length record is made up of a fixed-length record header followed by the variable-length record contents.  
-
-The index file (.shx) contains a 100-byte header followed by 8-byte, fixed-length records.
 
 The dBase file (.dbf) contains any desired feature attributes or attributes keys, where other tables can be joined. Its format is a standard .dbf file used by many table-based applications in Windows™ and DOS.  Any set of fields can be present in the table.
 
@@ -160,9 +156,9 @@ For more information about the 8.3 naming convention, shape files and their desc
 
 Maps read the main file and create the map shapes. The associated .dbf file contents are then incorporated with the shapes created from the main files.
 
-## Attach the Shape file with Maps
+## Attach the Shape file with Map
 
-To read the shape file using Maps, the shape file’s main file and .dbf file need to be added as an embedded resource in the application project. Then, the main file’s path has to be given in the Uri file of the shape file layer.
+To read the shape file using Map, the shape file’s main file and .dbf file need to be added as an embedded resource in the application project. Then, the main file’s path has to be given in the Uri file of the shape file layer.
 
 ### About the Uri property
 
@@ -179,24 +175,25 @@ Subfolder names
 ShapeFilename.shp
 
 {%tabs%}
+
 {% highlight xaml %}
 
-	<syncfusion:SfMap>
-		<syncfusion:SfMap.Layers>
-			<syncfusion:ShapeFileLayer Uri="GettingStarted.ShapeFiles.usa_state.shp">
-			</syncfusion:ShapeFileLayer>
-		</syncfusion:SfMap.Layers>
-	</syncfusion:SfMap>  
+<syncfusion:SfMap>
+	<syncfusion:SfMap.Layers>
+		<syncfusion:ShapeFileLayer Uri="GettingStarted.ShapeFiles.usa_state.shp">
+		</syncfusion:ShapeFileLayer>
+	</syncfusion:SfMap.Layers>
+</syncfusion:SfMap>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfMap maps = new SfMap();
-	ShapeFileLayer shapeLayer = new ShapeFileLayer();
-	shape.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
-	maps.Layers.Add(shapeLayer);
-    this.Content = maps;  
+SfMap maps = new SfMap();
+ShapeFileLayer shapeLayer = new ShapeFileLayer();
+shape.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
+maps.Layers.Add(shapeLayer);
+this.Content = maps;
          
 {% endhighlight %}
 
@@ -209,27 +206,6 @@ The above code example results in the following output
 ![ShapeFileLayer image](Getting-Started_images/Getting-Started_img3.png)
 
 
-### Load Shapefile as Content File Instead of Embedded Resource
-
-This feature enables the control to read a shapefile from an HTTP path, as a content file, or from shapefiles and DBF files as a stream. It can also be used to render map shapes at run time.
-
-#### From HTTP Path
-
-By giving the URL path of the file to the URI property, a shapefile is read. Here, the file is not downloaded. It only reads the content from the web. 
-
-##### Code Sample
-
-{% highlight xaml %}
-
-	<syncfusion:SfMap>
-        <syncfusion:SfMap.Layers>
-            <syncfusion:ShapeFileLayer  Uri="http://bi.syncfusion.com/shapefiles/world.shp">
-            </syncfusion:ShapeFileLayer>
-        </syncfusion:SfMap.Layers>
-	</syncfusion:SfMap>
-
-{% endhighlight %}
-
 ## Data Binding in Map
 
 Data can be bound to the shape file layer using the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ItemsSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapeIDPath.html), and [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfMaps.WPF~Syncfusion.UI.Xaml.Maps.ShapeFileLayer~ShapeIDTableField.html) properties.
@@ -240,49 +216,49 @@ The [`Populate data`](https://help.syncfusion.com/wpf/maps/PopulateData) section
 
 {% highlight xaml %}
 
-    <Grid>
-        <Grid.DataContext>
-            <local:ViewModel />
-        </Grid.DataContext>
+<Grid>
+    <Grid.DataContext>
+        <local:ViewModel />
+    </Grid.DataContext>
 
-        <syncfusion:SfMap>
-            <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer ItemsSource="{Binding ElectionResults}"
-                                           ShapeIDPath="State"
-                                           ShapeIDTableField="STATE_NAME"
-                                           Uri="GettingStarted.ShapeFiles.usa_states.shp">
-                    <syncfusion:ShapeFileLayer.ShapeSettings>
-                        <syncfusion:ShapeSetting ShapeValuePath="Electors" />
-                    </syncfusion:ShapeFileLayer.ShapeSettings>
-                </syncfusion:ShapeFileLayer>
-            </syncfusion:SfMap.Layers>
-        </syncfusion:SfMap>
-    </Grid>
+    <syncfusion:SfMap>
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ShapeFileLayer ItemsSource="{Binding ElectionResults}"
+                                       ShapeIDPath="State"
+                                       ShapeIDTableField="STATE_NAME"
+                                       Uri="GettingStarted.ShapeFiles.usa_states.shp">
+                <syncfusion:ShapeFileLayer.ShapeSettings>
+                    <syncfusion:ShapeSetting ShapeValuePath="Electors" />
+                </syncfusion:ShapeFileLayer.ShapeSettings>
+            </syncfusion:ShapeFileLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
+</Grid>
 	 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    public partial class MainWindow : Window
+public partial class MainWindow : Window
+{
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-            ViewModel viewModel = new ViewModel();
-            this.DataContext = viewModel;
-            SfMap maps = new SfMap();
-            ShapeFileLayer shapeLayer = new ShapeFileLayer();
-            shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
-            shapeLayer.ItemsSource = ViewModel.ElectionResults;
-            shapeLayer.ShapeIDTableField = "STATE_NAME";
-            shapeLayer.ShapeIDPath = "State";
-            ShapeSetting shapeSetting = new ShapeSetting();
-            shapeSetting.ShapeValuePath = "Electors";
-            shapeLayer.ShapeSettings = shapeSetting;
-            maps.Layers.Add(shapeLayer);
-            this.Content = maps;
-        }
+        InitializeComponent();
+        ViewModel viewModel = new ViewModel();
+        this.DataContext = viewModel;
+        SfMap maps = new SfMap();
+        ShapeFileLayer shapeLayer = new ShapeFileLayer();
+        shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
+        shapeLayer.ItemsSource = ViewModel.ElectionResults;
+        shapeLayer.ShapeIDTableField = "STATE_NAME";
+        shapeLayer.ShapeIDPath = "State";
+        ShapeSetting shapeSetting = new ShapeSetting();
+        shapeSetting.ShapeValuePath = "Electors";
+        shapeLayer.ShapeSettings = shapeSetting;
+        maps.Layers.Add(shapeLayer);
+        this.Content = maps;
     }
+}
 
 {% endhighlight %}
 
@@ -298,32 +274,32 @@ The detailed explanation of marker and its customization are provided under [`Ma
 
 {% highlight xaml %}
 
-    <Grid>
-        <Grid.DataContext>
-            <local:ViewModel />
-        </Grid.DataContext>
+<Grid>
+    <Grid.DataContext>
+        <local:ViewModel />
+    </Grid.DataContext>
 
-        <syncfusion:SfMap>
-            <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer Uri="GettingStarted.ShapeFiles.usa_state.shp"
-                                           Markers="{Binding Models}">
-                </syncfusion:ShapeFileLayer>
-            </syncfusion:SfMap.Layers>
-        </syncfusion:SfMap>
-    </Grid>
+    <syncfusion:SfMap>
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ShapeFileLayer Uri="GettingStarted.ShapeFiles.usa_state.shp"
+                                       Markers="{Binding Models}">
+            </syncfusion:ShapeFileLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
+</Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-    ViewModel viewModel = new ViewModel();
-    this.DataContext = viewModel;
-    SfMap maps = new SfMap();
-    ShapeFileLayer shapeLayer = new ShapeFileLayer();
-    shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
-    shapeLayer.Markers = viewModel.Models;
-    maps.Layers.Add(shapeLayer);
-    this.Content = maps;
+ViewModel viewModel = new ViewModel();
+this.DataContext = viewModel;
+SfMap maps = new SfMap();
+ShapeFileLayer shapeLayer = new ShapeFileLayer();
+shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
+shapeLayer.Markers = viewModel.Models;
+maps.Layers.Add(shapeLayer);
+this.Content = maps;
 
 {% endhighlight %}
 
@@ -335,24 +311,24 @@ The following code sample shows how to define a marker class and add markers.
 
 {% highlight c# %}
 
-    public class Model
-    {
-        public string Label { get; set; }
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-    }
+public class Model
+{
+    public string Label { get; set; }
+    public string Longitude { get; set; }
+    public string Latitude { get; set; }
+}
 
-    public class ViewModel
+public class ViewModel
+{
+    public ObservableCollection<Model> Models { get; set; }
+    public ViewModel()
     {
-        public ObservableCollection<Model> Models { get; set; }
-        public ViewModel()
+        this.Models = new ObservableCollection<Model>
         {
-            this.Models = new ObservableCollection<Model>
-            {
-                new Model() { Label = "California", Latitude = "37", Longitude = "-120" }
-            };
-        }
+            new Model() { Label = "California", Latitude = "37", Longitude = "-120" }
+        };
     }
+}
 
 {% endhighlight %}
 
@@ -368,45 +344,46 @@ The detailed explanation of color mapping is provided in [`Shapes Color Customiz
 
 {% highlight xaml %}
 
-    <syncfusion:ShapeSetting.FillSetting>
-        <syncfusion:ShapeFillSetting AutoFillColors="False">
-            <syncfusion:ShapeFillSetting.ColorMappings>
-                <syncfusion:EqualsColorMapping Value="Romney"
-                                               Color="#D84444" />
-                <syncfusion:EqualsColorMapping Value="Obama"
-                                               Color="#316DB5" />
-            </syncfusion:ShapeFillSetting.ColorMappings>
-        </syncfusion:ShapeFillSetting>
-    </syncfusion:ShapeSetting.FillSetting>       
+<syncfusion:ShapeSetting.FillSetting>
+    <syncfusion:ShapeFillSetting AutoFillColors="False">
+        <syncfusion:ShapeFillSetting.ColorMappings>
+            <syncfusion:EqualsColorMapping Value="Romney"
+                                           Color="#D84444" />
+            <syncfusion:EqualsColorMapping Value="Obama"
+                                           Color="#316DB5" />
+        </syncfusion:ShapeFillSetting.ColorMappings>
+    </syncfusion:ShapeFillSetting>
+</syncfusion:ShapeSetting.FillSetting>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-    // ShapeFillSetting
-    ShapeFillSetting shapeFillSetting = new ShapeFillSetting
-    {
-        AutoFillColors = false
-    }
+// ShapeFillSetting
+ShapeFillSetting shapeFillSetting = new ShapeFillSetting
+{
+    AutoFillColors = false
+}
 
-    // EqualColorMapping
-    EqualsColorMapping romeyColorMapping = new EqualsColorMapping
-    {
-        Color = (Color)new ColorConverter().ConvertFrom("#D84444"),
-        LegendLabel = "Romney",
-        Value = "Romney"
-    }
-    EqualsColorMapping obamaColorMapping = new EqualsColorMapping
-    {
-        Color = (Color)new ColorConverter().ConvertFrom("#316DB5"),
-        LegendLabel = "Obama",
-        Value = "Obama"
-    }
-    // Adding EqualColorMapping to ColorMappings.
-    shapeFillSetting.ColorMappings.Add(romeyColorMapping);
-    shapeFillSetting.ColorMappings.Add(obamaColorMapping)
-    shapeSetting.FillSetting = shapeFillSetting
-    shapeLayer.ShapeSettings = shapeSetting;
+// EqualColorMapping
+EqualsColorMapping romeyColorMapping = new EqualsColorMapping
+{
+    Color = (Color)new ColorConverter().ConvertFrom("#D84444"),
+    LegendLabel = "Romney",
+    Value = "Romney"
+}
+EqualsColorMapping obamaColorMapping = new EqualsColorMapping
+{
+    Color = (Color)new ColorConverter().ConvertFrom("#316DB5"),
+    LegendLabel = "Obama",
+    Value = "Obama"
+}
+
+// Adding EqualColorMapping to ColorMappings.
+shapeFillSetting.ColorMappings.Add(romeyColorMapping);
+shapeFillSetting.ColorMappings.Add(obamaColorMapping)
+shapeSetting.FillSetting = shapeFillSetting
+shapeLayer.ShapeSettings = shapeSetting;
 
 {% endhighlight %}
 
@@ -422,24 +399,24 @@ The detailed explanation of legend is provided under [`Legend`](https://help.syn
 
 {% highlight xaml %}
 
-    <syncfusion:ShapeFileLayer x:Name="shapeLayer"
-                               LegendColumnSplit="2"
-                               LegendPositionX="950"
-                               LegendPositionY="580"
-                               LegendVisibility="Visible"
-                               LegendIcon="Rectangle">
-    </syncfusion:ShapeFileLayer>
+<syncfusion:ShapeFileLayer x:Name="shapeLayer"
+                           LegendColumnSplit="2"
+                           LegendPositionX="950"
+                           LegendPositionY="580"
+                           LegendVisibility="Visible"
+                           LegendIcon="Rectangle">
+</syncfusion:ShapeFileLayer>
 
 {% endhighlight %}
 
 {% highlight c# %}
-	
-    // Adding legend
-    shapeLayer.LegendColumnSplit = 2;
-    shapeLayer.LegendPositionX = 950;
-    shapeLayer.LegendPositionY = 580;
-    shapeLayer.LegendVisibility = Visibility.Visible;
-    shapeLayer.LegendIcon = LegendIcons.Rectangle;
+
+// Adding legend
+shapeLayer.LegendColumnSplit = 2;
+shapeLayer.LegendPositionX = 950;
+shapeLayer.LegendPositionY = 580;
+shapeLayer.LegendVisibility = Visibility.Visible;
+shapeLayer.LegendIcon = LegendIcons.Rectangle;
 
 {% endhighlight %}
 
@@ -451,132 +428,132 @@ The following code sample gives you the complete code for map with markers and l
 
 {% highlight xaml %}
 
-    <Grid>
-        <Grid.DataContext>
-            <local:ViewModel />
-        </Grid.DataContext>
+<Grid>
+    <Grid.DataContext>
+        <local:ViewModel />
+    </Grid.DataContext>
 
-        <syncfusion:SfMap x:Name="map"
-                          EnableZoom="False"
-                          EnablePan="False">
-            <syncfusion:SfMap.Layers>
-                <syncfusion:ShapeFileLayer x:Name="shapeLayer"
-                                           Background="White"
-                                           EnableSelection="True"
-                                           Uri="GettingStarted.ShapeFiles.usa_state.shp"
-                                           ItemsSource="{Binding ElectionResults}"
-                                           MapItemsVisibility="Hidden"
-                                           ShapeIDPath="State"
-                                           ShapeIDTableField="STATE_NAME"
+    <syncfusion:SfMap x:Name="map"
+                      EnableZoom="False"
+                      EnablePan="False">
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ShapeFileLayer x:Name="shapeLayer"
+                                       Background="White"
+                                       EnableSelection="True"
+                                       Uri="GettingStarted.ShapeFiles.usa_state.shp"
+                                       ItemsSource="{Binding ElectionResults}"
+                                       MapItemsVisibility="Hidden"
+                                       ShapeIDPath="State"
+                                       ShapeIDTableField="STATE_NAME"
 
-                                           Markers="{Binding Models}"
-                                           MarkerIconFill="LimeGreen"
-                                           MarkerLabelForeground="White"
+                                       Markers="{Binding Models}"
+                                       MarkerIconFill="LimeGreen"
+                                       MarkerLabelForeground="White"
 
-                                           LegendColumnSplit="2"
-                                           LegendPositionX="370"
-                                           LegendPositionY="240"
-                                           LegendVisibility="Visible"
-                                           LegendIcon="Rectangle">
+                                       LegendColumnSplit="2"
+                                       LegendPositionX="370"
+                                       LegendPositionY="240"
+                                       LegendVisibility="Visible"
+                                       LegendIcon="Rectangle">
 
-                    <syncfusion:ShapeFileLayer.ShapeSettings>
-                        <syncfusion:ShapeSetting ShapeFill="#E5E5E5"
-                                                 ShapeStroke="White"
-                                                 ShapeStrokeThickness="0.5"
-                                                 SelectedShapeColor="#CEBF93"
-                                                 ShapeValuePath="Electors"
-                                                 ShapeColorValuePath="Candidate">
-                            <syncfusion:ShapeSetting.FillSetting>
-                                <syncfusion:ShapeFillSetting AutoFillColors="False">
-                                    <syncfusion:ShapeFillSetting.ColorMappings>
-                                        <syncfusion:EqualsColorMapping Value="Romney"
-                                                                       Color="#D84444" />
-                                        <syncfusion:EqualsColorMapping Value="Obama"
-                                                                       Color="#316DB5" />
-                                    </syncfusion:ShapeFillSetting.ColorMappings>
-                                </syncfusion:ShapeFillSetting>
-                            </syncfusion:ShapeSetting.FillSetting>
-                        </syncfusion:ShapeSetting>
-                    </syncfusion:ShapeFileLayer.ShapeSettings>
-                </syncfusion:ShapeFileLayer>
-            </syncfusion:SfMap.Layers>
-        </syncfusion:SfMap>
-    </Grid>
+                <syncfusion:ShapeFileLayer.ShapeSettings>
+                    <syncfusion:ShapeSetting ShapeFill="#E5E5E5"
+                                             ShapeStroke="White"
+                                             ShapeStrokeThickness="0.5"
+                                             SelectedShapeColor="#CEBF93"
+                                             ShapeValuePath="Electors"
+                                             ShapeColorValuePath="Candidate">
+                        <syncfusion:ShapeSetting.FillSetting>
+                            <syncfusion:ShapeFillSetting AutoFillColors="False">
+                                <syncfusion:ShapeFillSetting.ColorMappings>
+                                    <syncfusion:EqualsColorMapping Value="Romney"
+                                                                   Color="#D84444" />
+                                    <syncfusion:EqualsColorMapping Value="Obama"
+                                                                   Color="#316DB5" />
+                                </syncfusion:ShapeFillSetting.ColorMappings>
+                            </syncfusion:ShapeFillSetting>
+                        </syncfusion:ShapeSetting.FillSetting>
+                    </syncfusion:ShapeSetting>
+                </syncfusion:ShapeFileLayer.ShapeSettings>
+            </syncfusion:ShapeFileLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
+</Grid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    // Setting DataContext.
-    ViewModel viewModel = new ViewModel();
-    this.DataContext = viewModel;
+// Setting DataContext.
+ViewModel viewModel = new ViewModel();
+this.DataContext = viewModel;
 
-    // SfMap.
-    SfMap maps = new SfMap();
+// SfMap.
+SfMap maps = new SfMap();
 
-    // ShapeFileLayer.
-    ShapeFileLayer shapeLayer = new ShapeFileLayer();
-    shapeLayer.Background = new SolidColorBrush(Colors.White);
-    shapeLayer.EnableSelection = true;
-    shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
-    shapeLayer.ItemsSource = viewModel.ElectionResults;
-    shapeLayer.MapItemsVisibility = Visibility.Hidden;
-    shapeLayer.ShapeIDPath = "State";
-    shapeLayer.ShapeIDTableField = "STATE_NAME";
-    shapeLayer.Markers = viewModel.Models;
-    shapeLayer.MarkerIconFill = new SolidColorBrush(Colors.LimeGreen);
-    shapeLayer.MarkerLabelForeground = new SolidColorBrush(Colors.White);
+// ShapeFileLayer.
+ShapeFileLayer shapeLayer = new ShapeFileLayer();
+shapeLayer.Background = new SolidColorBrush(Colors.White);
+shapeLayer.EnableSelection = true;
+shapeLayer.Uri = "GettingStarted.ShapeFiles.usa_state.shp";
+shapeLayer.ItemsSource = viewModel.ElectionResults;
+shapeLayer.MapItemsVisibility = Visibility.Hidden;
+shapeLayer.ShapeIDPath = "State";
+shapeLayer.ShapeIDTableField = "STATE_NAME";
+shapeLayer.Markers = viewModel.Models;
+shapeLayer.MarkerIconFill = new SolidColorBrush(Colors.LimeGreen);
+shapeLayer.MarkerLabelForeground = new SolidColorBrush(Colors.White);
 
-    // Adding legend
-    shapeLayer.LegendColumnSplit = 2;
-    shapeLayer.LegendPositionX = 950;
-    shapeLayer.LegendPositionY = 580;
-    shapeLayer.LegendVisibility = Visibility.Visible;
-    shapeLayer.LegendIcon = LegendIcons.Rectangle;
+// Adding legend
+shapeLayer.LegendColumnSplit = 2;
+shapeLayer.LegendPositionX = 950;
+shapeLayer.LegendPositionY = 580;
+shapeLayer.LegendVisibility = Visibility.Visible;
+shapeLayer.LegendIcon = LegendIcons.Rectangle;
 
-    // ShapeSetting
-    ShapeSetting shapeSetting = new ShapeSetting();
-    shapeSetting.ShapeFill = (SolidColorBrush)new BrushConverter().ConvertFrom("#E5E5E5");
-    shapeSetting.ShapeStroke = new SolidColorBrush(Colors.White);
-    shapeSetting.ShapeStrokeThickness = 0.5;
-    shapeSetting.SelectedShapeColor = (SolidColorBrush)new BrushConverter().ConvertFrom("#CEBF93");
-    shapeSetting.ShapeValuePath = "Electors";
-    shapeSetting.ShapeColorValuePath = "Candidate";
+// ShapeSetting
+ShapeSetting shapeSetting = new ShapeSetting();
+shapeSetting.ShapeFill = (SolidColorBrush)new BrushConverter().ConvertFrom("#E5E5E5");
+shapeSetting.ShapeStroke = new SolidColorBrush(Colors.White);
+shapeSetting.ShapeStrokeThickness = 0.5;
+shapeSetting.SelectedShapeColor = (SolidColorBrush)new BrushConverter().ConvertFrom("#CEBF93");
+shapeSetting.ShapeValuePath = "Electors";
+shapeSetting.ShapeColorValuePath = "Candidate";
 
-    // ShapeFillSetting
-    ShapeFillSetting shapeFillSetting = new ShapeFillSetting
-    {
-        AutoFillColors = false
-    };
+// ShapeFillSetting
+ShapeFillSetting shapeFillSetting = new ShapeFillSetting
+{
+    AutoFillColors = false
+};
+    
+// EqualColorMapping
+EqualsColorMapping romeyColorMapping = new EqualsColorMapping
+{
+    Color = (Color)new ColorConverter().ConvertFrom("#D84444"),
+    LegendLabel = "Romney",
+    Value = "Romney"
+};
 
-    // EqualColorMapping
-    EqualsColorMapping romeyColorMapping = new EqualsColorMapping
-    {
-        Color = (Color)new ColorConverter().ConvertFrom("#D84444"),
-        LegendLabel = "Romney",
-        Value = "Romney"
-    };
+EqualsColorMapping obamaColorMapping = new EqualsColorMapping
+{
+    Color = (Color)new ColorConverter().ConvertFrom("#316DB5"),
+    LegendLabel = "Obama",
+    Value = "Obama"
+};
 
-    EqualsColorMapping obamaColorMapping = new EqualsColorMapping
-    {
-        Color = (Color)new ColorConverter().ConvertFrom("#316DB5"),
-        LegendLabel = "Obama",
-        Value = "Obama"
-    };
+// Adding EqualColorMapping to ColorMappings.
+shapeFillSetting.ColorMappings.Add(romeyColorMapping);
+shapeFillSetting.ColorMappings.Add(obamaColorMapping);
 
-    // Adding EqualColorMapping to ColorMappings.
-    shapeFillSetting.ColorMappings.Add(romeyColorMapping);
-    shapeFillSetting.ColorMappings.Add(obamaColorMapping);
+shapeSetting.FillSetting = shapeFillSetting;
 
-    shapeSetting.FillSetting = shapeFillSetting;
-
-    shapeLayer.ShapeSettings = shapeSetting;
-
-    // Adding ShapeFileLayer into Map.
-    maps.Layers.Add(shapeLayer);
-    maps.EnableZoom = false;
-    maps.EnablePan = false;
-    this.Content = maps;
+shapeLayer.ShapeSettings = shapeSetting;
+    
+// Adding ShapeFileLayer into Map.
+maps.Layers.Add(shapeLayer);
+maps.EnableZoom = false;
+maps.EnablePan = false;
+this.Content = maps;
 
 {% endhighlight %}
 
