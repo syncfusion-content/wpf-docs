@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfSurfaceChart | wpf | Syncfusion
-description: getting started
+description: This section explains about how to getting started with Syncfusion WPF SfSurfaceChart and its keqfeature like Add Header to the surface chart.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with WPF SfSurfaceChart
 
 This section helps you get started with SfSurfaceChart control.
 
@@ -15,7 +15,7 @@ This section helps you get started with SfSurfaceChart control.
 
 The following image helps you understand various elements in SfSurfaceChart when you use it for the first time.
 
-![](surface_chart_images/surface_chart_img2.jpeg)
+![Visual Structure](surface_chart_images/surface_chart_img2.jpeg)
 
 
 * Surface Header – Represents the title of surface chart
@@ -59,14 +59,14 @@ We need to initialize the surface chart from the following namespace Syncfusion.
 
 Drag and drop the **SfSurfaceChart** control from the Toolbox to the required location, where the surface chart has to be displayed. You can select Toolbox from the View menu, when the toolbox window is not available in the project. Now the Toolbox window appears at the left end of the screen.
 
-![](surface_chart_images/surface_chart_img3.jpeg)
+![Surface chart](surface_chart_images/surface_chart_img3.jpeg)
 
 The Syncfusion WPF reference is added to the application reference and the xmlns namespace is added to MainPage.xaml.
 
-![](surface_chart_images/surface_chart_img4.jpeg)
+![Surface chart](surface_chart_images/surface_chart_img4.jpeg)
 
 
-![](surface_chart_images/surface_chart_img5.jpeg)
+![Surface chart](surface_chart_images/surface_chart_img5.jpeg)
 
 
 The following dataset is used to plot the surface chart. 
@@ -289,7 +289,7 @@ Now you have created a simple surface chart. The following code example is for X
 
 The following output is displayed as a result of the above code example.
 
-![](surface_chart_images/surface_chart_img6.jpeg)
+![Add Color bar](surface_chart_images/surface_chart_img6.jpeg)
 
 ## Create a simple surface chart from Code behind.
 
@@ -448,4 +448,4 @@ surface.ColorBar = new ChartColorBar() {DockPosition = ChartDock.Right};
 
 The following output is displayed as a result of the above code example.
 
-![](surface_chart_images/surface_chart_img7.jpeg)
+![Add ColorBar](surface_chart_images/surface_chart_img7.jpeg)
