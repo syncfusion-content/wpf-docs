@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | SfSurfaceChart | wpf | Syncfusion
-description: This section explains about how to getting started with Syncfusion WPF SfSurfaceChart and its keqfeature like Add Header to the surface chart.
+description: This section explains about how to getting started with Syncfusion WPF SfSurfaceChart and its key feature like Add Header to the surface chart.
 platform: wpf
 control: SfSurfaceChart
 documentation: ug
@@ -59,14 +59,14 @@ We need to initialize the surface chart from the following namespace Syncfusion.
 
 Drag and drop the **SfSurfaceChart** control from the Toolbox to the required location, where the surface chart has to be displayed. You can select Toolbox from the View menu, when the toolbox window is not available in the project. Now the Toolbox window appears at the left end of the screen.
 
-![Surface chart](surface_chart_images/surface_chart_img3.jpeg)
+![Add Surface chart from Toolbox](surface_chart_images/surface_chart_img3.jpeg)
 
 The Syncfusion WPF reference is added to the application reference and the xmlns namespace is added to MainPage.xaml.
 
-![Surface chart](surface_chart_images/surface_chart_img4.jpeg)
+![Solution explorer](surface_chart_images/surface_chart_img4.jpeg)
 
 
-![Surface chart](surface_chart_images/surface_chart_img5.jpeg)
+![Data set](surface_chart_images/surface_chart_img5.jpeg)
 
 
 The following dataset is used to plot the surface chart. 
@@ -289,7 +289,7 @@ Now you have created a simple surface chart. The following code example is for X
 
 The following output is displayed as a result of the above code example.
 
-![Add Color bar](surface_chart_images/surface_chart_img6.jpeg)
+![Simple Surface](surface_chart_images/surface_chart_img6.jpeg)
 
 ## Create a simple surface chart from Code behind.
 
@@ -448,4 +448,4 @@ surface.ColorBar = new ChartColorBar() {DockPosition = ChartDock.Right};
 
 The following output is displayed as a result of the above code example.
 
-![Add ColorBar](surface_chart_images/surface_chart_img7.jpeg)
+![simple surface from Code behind](surface_chart_images/surface_chart_img7.jpeg)
