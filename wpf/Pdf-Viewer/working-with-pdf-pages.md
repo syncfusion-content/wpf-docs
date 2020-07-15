@@ -11,13 +11,13 @@ documentation: UG
 
 ## Page Border
 
-The [PageBorder](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PageBorder.html) allows you to customize the visibility and color of the border of the pages which are being displayed in the PDF Viewer.
+The [PageBorder](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PageBorder.html) allows you to customize the border visibility and color of the pages that are being displayed in the PDF Viewer.
 
-N> This border customization applies only when on viewing the PDF file in the PDF viewer and it will not have an effect in the saved or printed file from the PDF Viewer.
+N> This border customization applies only when viewing the PDF file in the PDF viewer and it will not affect the saved or printed file from the PDF Viewer.
 
 ### Color
 
-The [Color](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PageBorder~Color.html) property of the [PageBorder](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PageBorder.html) allows you to customize the border color of the pages which are being displayed in the PDF Viewer. The default border color of the pages is `Black`. Refer to the following code sample to set a different color to the border of the pages.
+The [Color](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PageBorder~Color.html) property of the [PageBorder](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PageBorder.html) allows you to customize the border color of the pages that are being displayed in the PDF Viewer. The default border color of the pages is `Black`. Refer to the following code sample to set a different color to the border of the pages.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,7 +56,7 @@ namespace PdfViewerDemo
 
 ### Visibility
 
-The [PageBorder](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PageBorder.html) property allows you to show or hide the border of the pages which are being displayed in the PDF Viewer. By default, the border of the pages will be visible. Refer to the following code sample to hide the border of the pages.
+The [PageBorder](https://help.syncfusion.com/cr/wpf/Syncfusion.PdfViewer.WPF~Syncfusion.Windows.PdfViewer.PdfViewerControl~PageBorder.html) property allows you to show or hide the border of the pages that are being displayed in the PDF Viewer. By default, the border of the pages will be visible. Refer to the following code sample to hide the border of the pages.
 
 {% tabs %}
 {% highlight c# %}
