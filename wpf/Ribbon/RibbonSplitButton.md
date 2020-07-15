@@ -236,11 +236,9 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 {% endtabs %}
 
 ![SplitButton image during normal layout](SplitButton_images/RibbonSplitButton_Icons.png)
-
 *Normal layout*
 
 ![SplitButton image during simplified layout](SplitButton_images/RibbonSplitButton_IconsSimplified.png)
-
 *Simplified layout*
 
 ### Setting vector image 
@@ -515,11 +513,9 @@ SfSkinManager.SetVisualStyle(this, VisualStyles.MaterialLight);
 {% endtabs %}
 
 ![SplitButton vector image during normal layout](SplitButton_images/RibbonSplitButton_Icons.png)
-
 *Normal layout*
 
 ![SplitButton vector image during simplified layout](SplitButton_images/RibbonSplitButton_IconsSimplified.png)
-
 *Simplified layout*
 
 ## Add SplitButton to the simplified layout
