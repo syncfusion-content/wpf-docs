@@ -292,6 +292,6 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/wpf/
 {% endhighlight %}
 {% endtabs %}
 
-![Populating nodes without data source in SfTreeView ](GettingStarted_images/Gettingstarted_image2.png)
+![Populating nodes without data source in SfTreeView ](DataPopulation_images/DataPopulation_images2.png)
 
 You can also download the entire source code of this demo from here[https://github.com/SyncfusionExamples/How-to-populate-nodes-without-binding-data-as-unbound-mode-in-wpf-treeview].
