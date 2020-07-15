@@ -9,7 +9,7 @@ documentation: ug
 
 # Migrating from SfSchedule to SfScheduler
 
-SfScheduler is a new Scheduler control introduced in 18.1 Version. The SfScheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. This section helps you to identify equivalent SfSchedule features or APIs in SfScheduler.
+SfScheduler is a new Scheduler control introduced in 18.2.0.45 Version. The SfScheduler control is used to schedule and manage appointments through an intuitive user interface, similar to the Outlook calendar. This section helps you to identify equivalent SfSchedule features or APIs in SfScheduler.
 
 ## Adding Reference
 
