@@ -321,6 +321,6 @@ private void ExecuteOnDemandLoading(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire [source code](https://github.com/SyncfusionExamples/How-to-load-child-items-on-demand-in-wpf-treeview) here.
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-load-child-items-on-demand-in-wpf-treeview)
 
 ![WPF TreeView with Load On-Demand](LoadOnDemand_images/LoadOnDemand.gif)

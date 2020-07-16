@@ -1,0 +1,100 @@
+---
+layout: post
+title: TreeLines in WPF TreeView control | Syncfusion
+description: Learn here about how to show the treelines for TreeViewNodes in Syncfusion WPF TreeView (SfTreeView) control and more details.
+platform: wpf
+control: SfTreeView
+documentation: ug
+---
+
+# Tree line for WPF TreeView (SfTreeView)
+
+TreeView allows to show the treelines for treeview nodes by enabling the [ShowLines](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ShowLines.html) property as `true`. The default value is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<treeview:SfTreeView
+    Name="sfTreeView"    
+    ShowLines="True"
+    ChildPropertyName="Childs"
+    ItemTemplate="{StaticResource SfTreeView_ItemTemplate}"
+    ItemsSource="{Binding Nodes1}" />
+
+{% endhighlight %}
+{% highlight c# %}
+sfTreeView.ShowLines = true;
+{% endhighlight %}
+{% endtabs %}
+
+![TreeLines for WPF TreeView](TreeLine_images/TreeLine_image1.png)
+
+## Enable treeline for root nodes
+
+TreeView also supports to show the treelines for root nodes by enabling the [ShowRootLines](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ShowRootLines.html) property as `true`. The default value is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<treeview:SfTreeView
+    Name="sfTreeView"    
+    ShowLines="True"
+    ShowRootLines="True"
+    ChildPropertyName="Childs"
+    ItemTemplate="{StaticResource SfTreeView_ItemTemplate}"
+    ItemsSource="{Binding Nodes1}" />
+
+{% endhighlight %}
+{% highlight c# %}
+sfTreeView.ShowLines = true;
+sfTreeView.ShowRootLines = true;
+{% endhighlight %}
+{% endtabs %}
+
+![TreeLines for WPF TreeView](TreeLine_images/TreeLine_image2.png)
+
+## Customizing the tree lines
+
+### Customizing the line color
+TreeView allows to change the color of treelines by using the [LineStroke](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~LineStroke.html) property. The default value is `System.Windows.Media.Colors.LightSlateGray`.
+
+{% tabs %}
+{% highlight xaml %}
+<treeview:SfTreeView
+    Name="sfTreeView"    
+    ShowLines="True"
+    ShowRootLines="True"
+    LineStroke="DeepSkyBlue"
+    ChildPropertyName="Childs"
+    ItemTemplate="{StaticResource SfTreeView_ItemTemplate}"
+    ItemsSource="{Binding Nodes1}" />
+{% endhighlight %}
+{% highlight c# %}
+sfTreeView.ShowLines = true;
+sfTreeView.ShowRootLines = true;
+sfTreeView.LineStroke = new SolidColorBrush(Colors.DeepSkyBlue);
+{% endhighlight %}
+{% endtabs %}
+
+![TreeLines for WPF TreeView](TreeLine_images/TreeLine_image3.png)
+
+### Customizing the line thickness
+TreeView allows to change the thickness of treelines by using the [LineStrokeThickness](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~LineStrokeThickness.html) property. The default value is `1`.
+
+{% tabs %}
+{% highlight xaml %}
+<treeview:SfTreeView
+            Name="sfTreeView"           
+            ShowLines="True"
+            ShowRootLines="True"
+            LineStrokeThickness="1.5"
+            ChildPropertyName="Childs"
+            ItemTemplate="{StaticResource SfTreeView_ItemTemplate}"
+            ItemsSource="{Binding Nodes1}" />        
+{% endhighlight %}
+{% highlight c# %}
+sfTreeView.ShowLines = true;
+sfTreeView.ShowRootLines = true;
+sfTreeView.LineStrokeThickness = 1.5;
+{% endhighlight %}
+{% endtabs %}
+
+![TreeLines for WPF TreeView](TreeLine_images/TreeLine_image4.png)

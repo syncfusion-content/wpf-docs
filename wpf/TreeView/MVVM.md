@@ -189,7 +189,7 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](https://github.com/SyncfusionExamples/How-to-bind-selected-items-in-wpf-treeview).
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-bind-selected-items-in-wpf-treeview).
 ![WPF TreeView with MVVM selection](MVVM_images/MVVM_image2.png)
 
 
@@ -308,5 +308,5 @@ public class ViewModel : NotificationObject
 {% endhighlight %}
 {% endtabs %}
 
-You can download the example sample [here](https://github.com/SyncfusionExamples/How-to-convert-event-to-command-in-MVVM-pattern-in-wpf-treeview).
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-convert-event-to-command-in-MVVM-pattern-in-wpf-treeview).
 
