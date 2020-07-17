@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Resource ID for Syncfusion Themes| SkinStorage (Classic) | Wpf | Syncfusion
-description: resource id for syncfusion themes
+title: Resource ID for Syncfusion Themes | SkinStorage | Wpf | Syncfusion
+description: The WPF Skin Storage provides a swatch of theme colors that contains all the Syncfusion theme brushes.
 platform: wpf
-control: SkinStorage (Classic)
+control: SkinStorage
 documentation: ug
 ---
 

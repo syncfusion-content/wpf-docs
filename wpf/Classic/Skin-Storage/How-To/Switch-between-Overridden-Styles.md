@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Switch between Overridden Styles| SkinStorage (Classic) | Wpf | Syncfusion
-description: switch between overridden styles
+title: Switch between overridden Styles| SkinStorage | Wpf | Syncfusion
+description: Switching between the overridden styles should be done manually. The overridden styles should be merged into the Resource Dictionary. 
 platform: wpf
-control: SkinStorage (Classic)
+control: SkinStorage
 documentation: ug
 ---
 
@@ -91,7 +91,7 @@ Private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs 
 
 The output is displayed as shown below.
 
-![](Switch-between-Overridden-Styles_images/Switch-between-Overridden-Styles_img1.png)
+![Switch between overriden styles](Switch-between-Overridden-Styles_images/Switch-between-Overridden-Styles_img1.png)
 
 
 
