@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Override Syncfusion Themes| SkinStorage | Wpf | Syncfusion
+title: Override Syncfusion Themes| SkinStorage (Classic) | Wpf | Syncfusion
 description: override syncfusion themes
 platform: wpf
-control: SkinStorage
+control: SkinStorage (Classic)
 documentation: ug
 ---
 

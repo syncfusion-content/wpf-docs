@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Touch UI| SkinStorage | Wpf | Syncfusion
+title: Touch UI| SkinStorage (Classic) | Wpf | Syncfusion
 description: touch ui 
 platform: wpf
-control: SkinStorage
+control: SkinStorage (Classic)
 documentation: ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Switch between Overridden Styles| SkinStorage | Wpf | Syncfusion
+title: Switch between Overridden Styles| SkinStorage (Classic) | Wpf | Syncfusion
 description: switch between overridden styles
 platform: wpf
-control: SkinStorage
+control: SkinStorage (Classic)
 documentation: ug
 ---
 
