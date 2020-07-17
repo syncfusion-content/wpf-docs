@@ -13,8 +13,13 @@ Scheduler supports to reschedule the appointment by performing the drag and drop
 Scheduler supports to disable the appointment drag and drop by setting [AppointmentEditFlag](https://help.syncfusion.com/cr/wpf/Syncfusion.SfScheduler.WPF~Syncfusion.UI.Xaml.Scheduler.SfScheduler~AppointmentEditFlag.html) property except `DragDrop`. In this case, you will not be able to perform appointment drag & drop.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfScheduler x:Name="Schedule"
+                        AppointmentEditFlag="Add,Edit,Resize">
+ </syncfusion:SfScheduler>
+{% endhighlight %}
 {% highlight c# %}
-this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.Edit | AppointmentEditFlag.None | AppointmentEditFlag.Resize;
+this.Schedule.AppointmentEditFlag = AppointmentEditFlag.Add | AppointmentEditFlag.Edit | AppointmentEditFlag.Resize;
 {% endhighlight %}
 {% endtabs %}
 
