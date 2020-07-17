@@ -37,7 +37,7 @@ SfTreeView allows to drag multiple selected items. To enable multiple selection,
 
 SfTreeView triggers the following events when drag and drop:
 
-### Item Drag starting event
+### ItemDragStarting event
 
 [ItemDragStarting](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDragStarting_EV.html) event occurs when you starting to drag the items in treeview. The [TreeViewItemDragStartingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartingEventArgs.html)  has the following member, which provides information for the `ItemDragStarting` event.
 
@@ -57,7 +57,7 @@ private void SfTreeView_ItemDragStarting(object sender, Syncfusion.UI.Xaml.TreeV
 {% endhighlight %}
 {% endtabs %}
 
-### Item Drag Started event
+### ItemDragStarted event
 
 [ItemDragStarted](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDragStarted_EV.html)  event occurs after started the dragging, in treeview. The [TreeViewItemDragStartedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragStartedEventArgs.html)  has the following member, which provides information for the `ItemDragStarted` event.
 
@@ -75,7 +75,7 @@ private void SfTreeView_ItemDragStarted(object sender, Syncfusion.UI.Xaml.TreeVi
 {% endhighlight %}
 {% endtabs %}
 
-### Item Drag Over event
+### ItemDragOver event
 
 [ItemDragOver](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDragOver_EV.html) event occurs continuously while item is dragged within the targeted SfTreeView. The [TreeViewItemDragOverEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDragOverEventArgs.html) has the following members, which provide information for the `ItemDragOver` event.
 
@@ -96,7 +96,7 @@ private void SfTreeView_ItemDragOver(object sender, Syncfusion.UI.Xaml.TreeView.
 {% endtabs %}
 
 
-### Item Dropping event
+### ItemDropping event
 
 [ItemDropping](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDropping_EV.html) event occurs when item is dropping within the targeted SfTreeView. The [TreeViewItemDroppingEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppingEventArgs.html) has the following members, which provide information for the `ItemDropping` event.
 
@@ -118,7 +118,7 @@ private void SfTreeView_ItemDropping(object sender, Syncfusion.UI.Xaml.TreeView.
 {% endhighlight %}
 {% endtabs %}
 
-### Item Dropped event
+### ItemDropped event
 
 [ItemDropped](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.SfTreeView~ItemDropped_EV.html) event occurs when item is dropped within the targeted SfTreeView. The [TreeViewItemDroppedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs.html) has the following members, which provide information for the `Drop` event.
 * [Data](https://help.syncfusion.com/cr/wpf/Syncfusion.SfTreeView.WPF~Syncfusion.UI.Xaml.TreeView.TreeViewItemDroppedEventArgs~Data.html) : Gets a data object that contains the data associated while dragging the items. 
@@ -312,11 +312,9 @@ AssociatedObject.sfTreeView2.ItemDropped += SfTreeView1_ItemDropped;
      }
  }
 
-
-
 {% endhighlight %}
 {% endtabs %}
 
 ![Drag and drop items in wpf treeview](DragDrop_images/DragDrop_image4)
 
-N> View sample in [GitHub]()
+N> View sample in [GitHub](https://github.com/syncfusion/wpf-demos/tree/master/TreeView/DragAndDrop)
