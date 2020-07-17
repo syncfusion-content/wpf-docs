@@ -9,18 +9,18 @@ documentation: ug
 
 # Swimlane in WPF Diagram(SfDiagram)
 
-[Swimlane](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Swimlane.html) is a type of diagram nodes,which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
+A [Swimlane](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.Swimlane.html) is a type of diagram nodes, which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
 
 ![Swimlane Content](Swimlane-images/Swimlane_Default.PNG)
 
 ## Create a swimlane
-A swimlane can be created and added to the Diagram, either programmatically or interactively. 
+A swimlane can be created and added to the diagram, either programmatically or interactively. 
 
-### Add Swimlane through Swimlanes collection 
+### Add Swimlane through the Swimlanes collection 
 
-To create a swimlane, you have to define the swimlane object and add that to [Swimlanes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Swimlanes.html) collection of the Diagram.
+To create a swimlane, you have to define the swimlane object and add that to the [Swimlanes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Swimlanes.html) collection of the diagram.
 
->Note: by default, if we create a swimlane, one lane and phase will be added.
+>Note: By default, if you create a swimlane, one lane and phase will be added.
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,7 +40,7 @@ To create a swimlane, you have to define the swimlane object and add that to [Sw
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize SwimlaneCollection to SfDiagram
+//Initialize the SwimlaneCollection to SfDiagram
 diagram.Swimlanes = new SwimlaneCollection();
 
 //Creating the SwimlaneViewModel
@@ -52,13 +52,13 @@ SwimlaneViewModel swimlane = new SwimlaneViewModel()
   OffsetY = 150,
 };
 
-//Add Swimlane to Swimlanes property of the Diagram
+//Add Swimlane to the Swimlanes property of the Diagram
 (diagram.Swimlanes as SwimlaneCollection).Add(swimlane);
 
 {% endhighlight %}
 {% endtabs %} 
 
-Now, swimlane will be as follows.
+Now, the swimlane will be as follows.
 
 ![Add swimlane](Swimlane-images/Swimlane_Empty.PNG)
 
@@ -67,11 +67,11 @@ Now, swimlane will be as follows.
 
 ### Swimlane Header
 
-Swimlane Header was the primary element for swimlanes. The [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Header.html) property of swimlane allows you to define its textual description and to customize its appearance.
+The Swimlane Header was the primary element for swimlanes. The [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Header.html) property of swimlane allows you to define its textual description and to customize its appearance.
 
->Note: By using this header,the swimlane interaction will be performed,like selection, dragging,etc.
+>Note: By using this header,the swimlane interaction will be performed,like selection, dragging,and more.
 
-The following code example illustrates how to define a swimlane header.
+The following code example explains how to define the swimlane header.
 
 {% tabs %}
 {% highlight xaml %}
@@ -99,7 +99,7 @@ The following code example illustrates how to define a swimlane header.
 {% highlight c# %}
   //Initialize the SfDiagram
   SfDiagram diagram = new SfDiagram();
- //Initialize SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to SfDiagram
  diagram.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel
@@ -110,7 +110,7 @@ The following code example illustrates how to define a swimlane header.
   OffsetX = 300,
   OffsetY = 150,
  };
- //Creating Header for SwimlaneViewModel
+ //Creating header for SwimlaneViewModel
  swimlane.Header = new SwimlaneHeader()
  {
     UnitHeight = 32,
@@ -120,7 +120,7 @@ The following code example illustrates how to define a swimlane header.
     }
  };
 
-//Add Swimlane to Swimlanes property of the Diagram
+//Add Swimlane to the Swimlanes property of the diagram
 (diagram.Swimlanes as SwimlaneCollection).Add(swimlane);
 
 {% endhighlight %}
@@ -132,9 +132,9 @@ The following code example illustrates how to define a swimlane header.
 
 ### Customization of headers
 
-The height and width of swimlane header can be customized with [`UnitWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitWidth.html) and [`UnitHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitHeight.html) properties of swimlane header. Set fill color of header by using the [`ShapeStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~ShapeStyle.html) property. 
+The height and width of swimlane header can be customized with the [`UnitWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitWidth.html) and [`UnitHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitHeight.html) properties of swimlane header. Set fill color of header by using the [`ShapeStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~ShapeStyle.html) property. 
 
-The following code example illustrates how to customize the swimlane header.
+The following code example explains how to customize the swimlane header.
 
 {% tabs %}
 {% highlight xaml %}
@@ -180,7 +180,7 @@ The following code example illustrates how to customize the swimlane header.
 {% highlight c# %}
   //Initialize the SfDiagram
   SfDiagram diagram = new SfDiagram();
- //Initialize SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to SfDiagram
  diagram.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel
@@ -192,7 +192,7 @@ The following code example illustrates how to customize the swimlane header.
   OffsetY = 150,
   Orientation=Orientation.Horizontal,
  };
- //Creating Header for SwimlaneViewModel
+ //Creating header for the SwimlaneViewModel
  swimlane.Header = new SwimlaneHeader()
  {
     UnitHeight = 32,
@@ -204,7 +204,7 @@ The following code example illustrates how to customize the swimlane header.
     ShapeStyle=this.Resources["SwimlaneHeaderStyle"] as Style,
  };
 
-//Add Swimlane to Swimlanes property of the Diagram
+//Add Swimlane to the Swimlanes property of the diagram
 (diagram.Swimlanes as SwimlaneCollection).Add(swimlane);
 
 {% endhighlight %}
@@ -214,8 +214,8 @@ The following code example illustrates how to customize the swimlane header.
 
 ### Header editing
 
-Diagram provides the support to edit swimlane headers at runtime. We achieve the header editing by double click on it. Double clicking the header label will enables the editing mode.
-The following image illustrates how to edit the swimlane header.
+The diagram provides the support to edit swimlane headers at runtime. You can achieve the header editing by double clicking on it. Double clicking the header label will enables the editing mode.
+The following image shows how to edit the swimlane header.
 
 ![Header Editing](Swimlane-images/Header_Edit.gif).
 
@@ -225,7 +225,7 @@ The orientation of swimlane can be customized with the [`Orientation`](https://h
 
 >Note: By default the swimlane orientation has Horizontal.
 
-The following code example illustrates how to set the orientation of the swimlane.
+The following code example explains how to set the orientation of the swimlane.
 
 {% tabs %}
 {% highlight xaml %}
@@ -245,7 +245,7 @@ The following code example illustrates how to set the orientation of the swimlan
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
-//Initialize SwimlaneCollection to SfDiagram
+//Initialize the SwimlaneCollection to SfDiagram
 diagram.Swimlanes = new SwimlaneCollection();
 
 //Creating the SwimlaneViewModel
@@ -258,7 +258,7 @@ SwimlaneViewModel swimlane = new SwimlaneViewModel()
   Orientation=Orientation.Horizontal,
 };
 
-//Add Swimlane to Swimlanes property of the Diagram
+//Add Swimlane to the Swimlanes property of the Diagram
 (diagram.Swimlanes as SwimlaneCollection).Add(swimlane);
 
 {% endhighlight %}
@@ -278,9 +278,9 @@ Swimlane can be selected by clicking (tap) the header of the swimlane.
 
 * The `IsSelected` Property is used to select or unselect the swimlane at runtime.
 
-* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
+* The `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html).
 
-* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
+* The `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source. To explore about arguments, refer to the [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html).
 
 ### Drag  
 
@@ -293,6 +293,6 @@ Swimlane can be selected by clicking (tap) the header of the swimlane.
 ![Drag Node](Swimlane-images/Swimlane_Select_Drag.gif)
 
 
-Please find the swimlane sample as below.
+Please find the swimlane sample as follows.
 
 [View Swimlane sample in GitHub](https://github.com/SyncfusionExamples/WPF-Diagram-Examples/tree/master/Samples/Swimlane/Swimlane-Sample)

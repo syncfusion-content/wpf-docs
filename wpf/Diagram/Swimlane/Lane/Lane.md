@@ -9,17 +9,17 @@ documentation: ug
 
 # Lanes in WPF Diagram(SfDiagram)
 
-[Lane](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
+A [Lane](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LaneViewModel.html) is a functional unit or a responsible department of a business process that helps to map a process within the functional unit or in between other functional units.
 
 The number of lanes can be added to swimlane and rendered in the diagram. The lanes are automatically stacked inside swimlane based on the order they are added.
 
 ## Create an empty lane
 
-* We can create the [Lane]((https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LaneViewModel.html)) and add into [Lanes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Lanes.html) collection of the Swimlane.
+* You can create the [Lane]((https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LaneViewModel.html)) and add into the [Lanes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Lanes.html) collection of the Swimlane.
 
->Note: For Horizontal Swimlane, we must set the UnitHeight of the Lane. For Vertical Swimlane, we must set UnitWidth of the Lane.
+>Note: For the Horizontal Swimlane, you must set the UnitHeight of the Lane. For the Vertical Swimlane, you must set UnitWidth of the Lane.
 
-The following code example illustrates how to define a swimlane with lane.
+The following code example explains how to define a swimlane with lane.
 
 {% tabs %}
 {% highlight xaml %}
@@ -54,7 +54,7 @@ The following code example illustrates how to define a swimlane with lane.
 {% highlight c# %}
   //Initialize the SfDiagram
   SfDiagram diagram = new SfDiagram();
- //Initialize SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to SfDiagram
   diagram.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel
@@ -66,7 +66,7 @@ The following code example illustrates how to define a swimlane with lane.
    OffsetY = 150,
    Orientation = Orientation.Horizontal,
  };
-   //Creating Header for SwimlaneViewModel
+   //Creating the header for SwimlaneViewModel
    swimlane.Header = new SwimlaneHeader()
    {
      UnitHeight = 32,
@@ -84,7 +84,7 @@ The following code example illustrates how to define a swimlane with lane.
    }
 };
 
-//Add Swimlane to Swimlanes property of the Diagram
+//Add Swimlane to the Swimlanes property of the Diagram
 (diagram.Swimlanes as SwimlaneCollection).Add(swimlane);
 
 {% endhighlight %}
@@ -95,10 +95,10 @@ The following code example illustrates how to define a swimlane with lane.
 ## Create Lane Header and Header customization
 
 * The [`Header`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LaneViewModel~Header.html) property of lane allows you to textually describe the lane and to customize the appearance of the description.
-* The size of lane header can be controlled by using [`UnitWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitWidth.html) and [`UnitHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitHeight.html) properties of header.
+* The size of lane header can be controlled by using the [`UnitWidth`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitWidth.html) and [`UnitHeight`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~UnitHeight.html) properties of header.
 * The appearance of lane header can be set by using the [`ShapeStyle`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneChildViewModel~ShapeStyle.html) properties.
 
-The following code example illustrates how to define a lane header and its customization.
+The following code example explains how to define a lane header and its customization.
 
 {% tabs %}
 {% highlight xaml %}
@@ -157,7 +157,7 @@ The following code example illustrates how to define a lane header and its custo
 {% highlight c# %}
   //Initialize the SfDiagram
   SfDiagram diagram = new SfDiagram();
- //Initialize SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to SfDiagram
   diagram.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel
@@ -169,7 +169,7 @@ The following code example illustrates how to define a lane header and its custo
    OffsetY = 150,
    Orientation = Orientation.Horizontal,
  };
-   //Creating Header for SwimlaneViewModel
+   //Creating the header for SwimlaneViewModel
    swimlane.Header = new SwimlaneHeader()
    {
      UnitHeight = 32,
@@ -193,7 +193,7 @@ The following code example illustrates how to define a lane header and its custo
    }
 };
 
-//Add Swimlane to Swimlanes property of the Diagram
+//Add Swimlane to the Swimlanes property of the Diagram
 (diagram.Swimlanes as SwimlaneCollection).Add(swimlane);
 
 {% endhighlight %}
@@ -202,9 +202,9 @@ The following code example illustrates how to define a lane header and its custo
 ![Lane Header](../Swimlane-images/Swimlane_Lane_Header.PNG).
 
 
-## Add and Remove lane at runtime
+## Add and Remove the lane at runtime
 
- You can add and remove the lane at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Lanes`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Lanes.html) Collection. The following code illustrates how to dynamically add and remove lane to swimlane.
+ You can add and remove the lane at runtime by using the `Add` and `Remove` method of the [`SfDiagram.Lanes`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SwimlaneViewModel~Lanes.html) Collection. The following code explains how to dynamically add and remove lane to swimlane.
 
 {% tabs %}
 {% highlight xaml %}
@@ -241,7 +241,7 @@ public class DiagramVM : DiagramViewModel
 
  private void InitializeDiagram()
  {
-  //Initialize SwimlaneCollection to SfDiagram
+  //Initialize the SwimlaneCollection to SfDiagram
   this.Swimlanes = new SwimlaneCollection();
   //Creating the SwimlaneViewModel
   SwimlaneViewModel swimlane = new SwimlaneViewModel()
@@ -252,7 +252,7 @@ public class DiagramVM : DiagramViewModel
     OffsetY = 150,
     Orientation = Orientation.Horizontal,
    };
-   //Creating Header for SwimlaneViewModel
+   //Creating the header for SwimlaneViewModel
   swimlane.Header = new SwimlaneHeader()
   {
    UnitHeight = 32,
@@ -275,7 +275,7 @@ public class DiagramVM : DiagramViewModel
      }
     };
 
- //Add Swimlane to Swimlanes property of the Diagram
+ //Add Swimlane to the Swimlanes property of the Diagram
  (this.Swimlanes as SwimlaneCollection).Add(swimlane);
  }
 
@@ -296,7 +296,7 @@ public ICommand RemoveCommand
 
 #endregion
 #region Helper Methods
-//Add Lane into Lanes collection
+//Add Lane into the Lanes collection
 private void OnAdd(object obj)
 {
  var swimlane = (this.Swimlanes as SwimlaneCollection).FirstOrDefault() as SwimlaneViewModel;
@@ -305,7 +305,7 @@ private void OnAdd(object obj)
    (swimlane.Lanes as LaneCollection).Add(new LaneViewModel() { UnitHeight = 100 });
    }
 }
-//Remove Lane from Lanes collection
+//Remove Lane from the Lanes collection
  private void OnRemove(object obj)
  {
   var swimlane = (this.Swimlanes as SwimlaneCollection).FirstOrDefault() as SwimlaneViewModel;
@@ -326,12 +326,12 @@ private void OnAdd(object obj)
 
 ## Add children to lane
 
- To add nodes to lane,you should add [Nodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Nodes.html) collection of diagram and reference should add [`Children`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LaneViewModel~Children.html) collection of the lane.
+ To add nodes to the lane, you should add the [Nodes](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.SfDiagram~Nodes.html) collection of diagram and reference should add the [`Children`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.LaneViewModel~Children.html) collection of the lane.
 
  The [LaneOffsetX](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeViewModel~LaneOffsetX.html) and [LaneOffsetY](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeViewModel~LaneOffsetY.html) property of the node will position the element in the lane canvas.
 
 
-The following code example illustrates how to add nodes to lane.
+The following code example explains how to add nodes to lane.
 
 {% tabs %}
 {% highlight xaml %}
@@ -376,7 +376,7 @@ InitializeDiagram();
 private void InitializeDiagram()
 {
 
- //Initialize SwimlaneCollection to SfDiagram
+ //Initialize the SwimlaneCollection to SfDiagram
   this.Swimlanes = new SwimlaneCollection();
 
  //Creating the SwimlaneViewModel
@@ -388,7 +388,7 @@ private void InitializeDiagram()
    OffsetY = 150,
    Orientation = Orientation.Horizontal,
  };
-   //Creating Header for SwimlaneViewModel
+   //Creating the header for SwimlaneViewModel
    swimlane.Header = new SwimlaneHeader()
    {
      UnitHeight = 32,
@@ -417,7 +417,7 @@ NodeViewModel node = new NodeViewModel() { UnitHeight = 50, UnitWidth = 50, Lane
 (lane1.Children as LaneChildren).Add(node);
 (lane1.Children as LaneChildren).Add(node1);
 
-//Add Swimlane to Swimlanes property of the Diagram
+//Add Swimlane to the Swimlanes property of the Diagram
 (this.Swimlanes as SwimlaneCollection).Add(swimlane);
 }
 }
@@ -430,18 +430,18 @@ NodeViewModel node = new NodeViewModel() { UnitHeight = 50, UnitWidth = 50, Lane
 
 ## Header Selection and Resize
 
- * We can select the individual lane header by click on Header twice. For first click, the respective lane can select. 
+ * You can select the individual lane header by click on the header twice. For first click, the respective lane can select. 
 
- * We can support to resize the individual lane  header. While resizing lane, it has maintain 20px distances from Lane children.
+ * You can support to resize the individual lane  header. While resizing lane, it has maintain 20px distances from the Lane children.
  * The `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values. Along with that, this event will give information about  interaction state. To explore about arguments, refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) 
 
- The following image illustrates how to select and resize the lane header.
+ The following image shows how to select and resize the lane header.
 
 ![Header Select and Resize](../Swimlane-images/Header_Selection_Resize.gif).
   
 ## Lane header editing
 
-Diagram provides the support to edit Lane headers at runtime. We achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
-The following image illustrates how to edit the lane header.
+Diagram provides the support to edit Lane headers at runtime. You can achieve the header editing by double click event. Double clicking the header label will enables the editing of that.
+The following image shows how to edit the lane header.
 
 ![Lane Header Editing](../Swimlane-images/Lane_Header_Edit.gif)
